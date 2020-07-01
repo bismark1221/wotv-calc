@@ -6441,7 +6441,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6466,7 +6466,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -6516,7 +6516,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6541,7 +6541,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -6591,7 +6591,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6616,7 +6616,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -6666,7 +6666,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6691,7 +6691,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -6741,7 +6741,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6766,7 +6766,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -6816,7 +6816,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_1",
           "effects": [
@@ -6841,7 +6841,7 @@
         {
           "names": {
             "en": "Ice Attack Up Passive",
-            "fr": "Attaque de glace augmentée passive"
+            "fr": "Att de glace ↑ (Passif)"
           },
           "dataId": "SK_LW_AF_ICE_PA_5",
           "effects": [
@@ -26315,7 +26315,8 @@
   },
   "AF_CLT_LW_RAIN_1": {
     "names": {
-      "en": "Rain's Clothes"
+      "en": "Rain's Clothes",
+      "fr": "Tenue de Rain"
     },
     "slug": "rains-clothes",
     "stats": {
@@ -26347,7 +26348,8 @@
       [
         {
           "names": {
-            "en": "Guardian's Fighting Spirit"
+            "en": "Guardian's Fighting Spirit",
+            "fr": "Combativité de gardien"
           },
           "dataId": "SK_CLT_LW_RAIN_1_1",
           "effects": [
@@ -26416,7 +26418,8 @@
   },
   "AF_ACC_LW_FRVA_1": {
     "names": {
-      "en": "Florid Hairpin"
+      "en": "Florid Hairpin",
+      "fr": "Épingle ouvagrée"
     },
     "slug": "florid-hairpin",
     "stats": {
@@ -26456,7 +26459,8 @@
       [
         {
           "names": {
-            "en": "Glacial Mastery"
+            "en": "Glacial Mastery",
+            "fr": "Maîtrise glaciale"
           },
           "dataId": "SK_ACC_LW_FRVA_1_1",
           "effects": [
@@ -27634,7 +27638,8 @@
   },
   "AF_BSW_LW_RAIN_2": {
     "names": {
-      "en": "For Rain"
+      "en": "For Rain",
+      "fr": "Pour Rain"
     },
     "slug": "for-rain",
     "stats": {
@@ -27689,7 +27694,8 @@
   },
   "AF_SWO_LW_FRVA_2": {
     "names": {
-      "en": "For Fryevia"
+      "en": "For Fryevia",
+      "fr": "Pour Fryevia"
     },
     "slug": "for-fryevia",
     "stats": {
@@ -28324,7 +28330,8 @@
   },
   "AF_LOT_LW_BSW_011": {
     "names": {
-      "en": "Crimson Saber"
+      "en": "Crimson Saber",
+      "fr": "Sabre carmin"
     },
     "slug": "crimson-saber",
     "stats": {
@@ -28381,7 +28388,8 @@
       [
         {
           "names": {
-            "en": "Crimson Saber"
+            "en": "Crimson Saber",
+            "fr": "Sabre carmin"
           },
           "dataId": "SK_LW_BSW_011_1",
           "effects": [
@@ -28449,7 +28457,8 @@
         },
         {
           "names": {
-            "en": "Crimson Saber"
+            "en": "Crimson Saber",
+            "fr": "Sabre carmin"
           },
           "dataId": "SK_LW_BSW_011_3",
           "effects": [
@@ -28517,7 +28526,8 @@
         },
         {
           "names": {
-            "en": "Crimson Saber"
+            "en": "Crimson Saber",
+            "fr": "Sabre carmin"
           },
           "dataId": "SK_LW_BSW_011_5",
           "effects": [
