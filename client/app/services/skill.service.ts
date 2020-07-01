@@ -305,7 +305,7 @@ export class SkillService {
       "chktgt": 0,
       "chktiming": 1,
       "type1": 4,
-      "calc1": 22,
+      "calc1": 22, ==> Reduce
       "val1": 50,
       "val11": 50
     },*/
