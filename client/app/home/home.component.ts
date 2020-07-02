@@ -47,6 +47,20 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "02/07",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_SCAL"},
+          {type: "unit", dataId: "UN_LW_P_MRAL"},
+          {type: "unit", dataId: "UN_LW_P_LILS_01"},
+          {type: "unit", dataId: "UN_LW_P_HWLT"},
+          {type: "unit", dataId: "UN_LW_P_CHEL"},
+          {type: "esper", dataId: "UN_LW_S_BLMN"},
+          {type: "card", dataId: "VC_LW_VKTR"},
+          {type: "card", dataId: "VC_FF14_MV3"},
+          {type: "card", dataId: "VC_LW_BLMN"}
+        ]
+      },
+      {
         date: "10/06",
         items: [
           {type: "esper", dataId: "UN_LW_S_TITN"},
@@ -60,14 +74,6 @@ export class HomeComponent {
           {type: "unit", dataId: "UN_LW_P_GRSR"},
           {type: "unit", dataId: "UN_LW_P_LSWL"},
           {type: "unit", dataId: "UN_LW_P_RRIR"}
-        ]
-      },
-      {
-        date: "22/05",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_FNRR"},
-          {type: "card", dataId: "VC_LW_FNRR"},
-          {type: "card", dataId: "VC_LW_ORDR"}
         ]
       }
     ]
