@@ -737,6 +737,9 @@ export class SkillService {
       case "DARK_KILLER" :
         html = "Increase dark killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "PLANT_KILLER" :
+        html = "Increase plant killer" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "FLOAT_KILLER" :
         html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
