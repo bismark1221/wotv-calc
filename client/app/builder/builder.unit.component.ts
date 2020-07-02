@@ -366,6 +366,10 @@ export class BuilderUnitComponent implements OnInit {
     return this.unitService.getAvailableSupportNodes(pos)
   }
 
+  getAvailableCounterNodes() {
+    return this.unitService.getAvailableCounterNodes()
+  }
+
   getAvailableEquipments(pos) {
     this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
     this.equipments[pos] = [...this.equipments[pos]];
@@ -465,6 +469,10 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   changeLimit() {
+    this.unitService.getActiveSkills()
+  }
+
+  changeCounter() {
     this.unitService.getActiveSkills()
   }
 }

@@ -353,6 +353,7 @@ export class UnitService {
         unit.activatedSupport[0],
         unit.activatedSupport[1]
       ],
+      activatedCounter: unit.activatedCounter,
       subjob: unit.subjob,
       esper: null,
       card: null,
@@ -421,6 +422,7 @@ export class UnitService {
       "0",
       "0"
     ]
+    this.unit.activatedCounter = "0"
 
     this.unit.masterSkillLevel = [-1]
     let i = 0;
@@ -493,6 +495,8 @@ export class UnitService {
         unit.activatedSupport[0],
         unit.activatedSupport[1]
       ]
+
+      this.unit.activatedCounter = unit.activatedCounter
 
       this.unit.savedEsper = unit.esper
       this.unit.savedCard = unit.card
@@ -1055,6 +1059,22 @@ export class UnitService {
     return nodes
   }
 
+  getAvailableCounterNodes() {
+    let nodes = []
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      let node = this.unit.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "counter") {
+        nodes.push({
+          nodeId: nodeId.toString(),
+          name: this.nameService.getName(node.skill)
+        })
+      }
+    })
+
+    return nodes
+  }
+
   getAvailableStatType() {
     let findedStats = []
     Object.keys(this.unit.stats).forEach(statType => {
@@ -1236,6 +1256,18 @@ export class UnitService {
 
     if (this.unit.limit) {
       this.unit.limit = this.formatActiveSkill(this.unit.limit)
+    }
+
+    this.unit.activatedSupport.forEach(supportNode => {
+      if (supportNode !== "0") {
+        this.unit.board.nodes[supportNode].skill.level = this.unit.board.nodes[supportNode].level
+        this.unit.board.nodes[supportNode].skill = this.formatActiveSkill(this.unit.board.nodes[supportNode].skill)
+      }
+    })
+
+    if (this.unit.activatedCounter !== "0") {
+      this.unit.board.nodes[this.unit.activatedCounter].skill.level = this.unit.board.nodes[this.unit.activatedCounter].level
+      this.unit.board.nodes[this.unit.activatedCounter].skill = this.formatActiveSkill(this.unit.board.nodes[this.unit.activatedCounter].skill)
     }
   }
 
