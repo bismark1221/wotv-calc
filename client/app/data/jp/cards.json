@@ -3048,7 +3048,7 @@
   "VC_MBFF_MV1": {
     "dataId": "VC_MBFF_MV1",
     "names": {
-      "en": "絶望と真実のメビウス"
+      "en": "絶望と真実のメビウス - Mobius of Despair and Truth"
     },
     "rarity": "UR",
     "stats": {
@@ -3108,7 +3108,7 @@
       "JUMP": {}
     },
     "image": "mbffmv1",
-    "slug": "jue-wangto-zhen-shinomebiusu",
+    "slug": "mobius-of-despair-and-truth",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -4501,6 +4501,367 @@
         "en": "SK_VC_LW_TITN_PMAX"
       },
       "slug": "sk_vc_lw_titn_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_VKTR": {
+    "dataId": "VC_LW_VKTR",
+    "names": {
+      "en": "偽りの仮面"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 305
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 32,
+        "max": 125
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {
+        "min": 14,
+        "max": 55
+      },
+      "AGI": {},
+      "LUCK": {
+        "min": 6,
+        "max": 22
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsvktr",
+    "slug": "weirino-jia-mian",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 6,
+          "maxValue": 12,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_GS"
+      },
+      "slug": "sk_vc_lw_vktr_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_GS_AW"
+      },
+      "slug": "sk_vc_lw_vktr_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_RES",
+          "minValue": 4,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_GSMAX"
+      },
+      "slug": "sk_vc_lw_vktr_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_P"
+      },
+      "slug": "sk_vc_lw_vktr_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_PAW"
+      },
+      "slug": "sk_vc_lw_vktr_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HUMAN_KILLER",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "percent",
+          "rate": 200
+        }
+      ],
+      "dataId": "SK_VC_LW_VKTR_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_VKTR_PMAX"
+      },
+      "slug": "sk_vc_lw_vktr_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_FF14_MV3": {
+    "dataId": "VC_FF14_MV3",
+    "names": {
+      "en": "漆黒の反逆者たち"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 62,
+        "max": 488
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 36,
+        "max": 140
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff14mv3",
+    "slug": "qi-heino-fan-ni-zhetati",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 15,
+          "maxValue": 30,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_GS"
+      },
+      "slug": "sk_vc_ff14_mv3_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 1,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_GSAW"
+      },
+      "slug": "sk_vc_ff14_mv3_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 10,
+          "maxValue": 10,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_GSMAX"
+      },
+      "slug": "sk_vc_ff14_mv3_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_P"
+      },
+      "slug": "sk_vc_ff14_mv3_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_PAW"
+      },
+      "slug": "sk_vc_ff14_mv3_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAG",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF14_MV3_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF14_MV3_PMAX"
+      },
+      "slug": "sk_vc_ff14_mv3_pmax",
       "maxLevel": 1
     }
   },
@@ -6835,7 +7196,7 @@
   "VC_LW_OCHU": {
     "dataId": "VC_LW_OCHU",
     "names": {
-      "en": "豪快植物　オチュー"
+      "en": "豪快植物　オチュー - Vigorous Vegetation, Ochu"
     },
     "rarity": "MR",
     "stats": {
@@ -6895,7 +7256,7 @@
       "JUMP": {}
     },
     "image": "lapsochu",
-    "slug": "hao-kuai-zhi-wu-otiyu",
+    "slug": "vigorous-vegetation-ochu",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -7407,7 +7768,7 @@
   "VC_MBFF_MV2": {
     "dataId": "VC_MBFF_MV2",
     "names": {
-      "en": "希望と幻想のメビウス"
+      "en": "希望と幻想のメビウス - Mobius of Hope and Illusion"
     },
     "rarity": "MR",
     "stats": {
@@ -7467,7 +7828,7 @@
       "JUMP": {}
     },
     "image": "mbffmv2",
-    "slug": "xi-wangto-huan-xiangnomebiusu",
+    "slug": "mobius-of-hope-and-illusion",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -8109,6 +8470,153 @@
         "en": "SK_VC_LW_KING_PAW"
       },
       "slug": "sk_vc_lw_king_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_BLMN": {
+    "dataId": "VC_LW_BLMN",
+    "names": {
+      "en": "魔界紅月　ブラッディムーン"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 44,
+        "max": 352
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 11,
+        "max": 45
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 18,
+        "max": 72
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsblmn",
+    "slug": "mo-jie-hong-yue-buratudeimun",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 5,
+          "maxValue": 10,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_BLMN_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BLMN_GS"
+      },
+      "slug": "sk_vc_lw_blmn_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_BLMN_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BLMN_GSAW"
+      },
+      "slug": "sk_vc_lw_blmn_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "AGI",
+          "minValue": -3,
+          "maxValue": -3,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_LW_BLMN_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BLMN_P"
+      },
+      "slug": "sk_vc_lw_blmn_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACCURACY",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_BLMN_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_BLMN_PAW"
+      },
+      "slug": "sk_vc_lw_blmn_paw",
       "maxLevel": 4
     }
   },

@@ -279,7 +279,10 @@ export class JsonService {
     312: "MAX_DAMAGE",
     313: "EVOCATION_MAGIC",
     314: "DEFENSE_PENETRATION",
-    316: "AP_CONSUMPTION"
+    316: "AP_CONSUMPTION",
+    319: "SPIRIT_PENETRATION",
+    321: "RES_SLASH_ATK_PENETRATION",
+    329: "RES_MAGIC_ATK_PENETRATION"
   }
 
   forceAddBuff = [
@@ -309,6 +312,7 @@ export class JsonService {
     113: "STONE",
     114: "METAL",
     204: "FENNES",
+    301: "FLOAT",
     401: "MALES"
   }
 
@@ -1785,15 +1789,24 @@ export class JsonService {
           skills: [],
           rarity: this.rarity[equipment.rare],
           image: this[this.version].equipments[dataId].asset.toLowerCase(),
-          equippableJobs: []
+          equippableJobs: [],
+          equippableUnits: []
         }
 
         this.getNames(this[this.version].wotvEquipments[rType], "equipment")
 
         if (equipment.equip) {
-          this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
-            this[this.version].wotvEquipments[rType].equippableJobs.push(job)
-          })
+          if (this[this.version].EquipmentCond[equipment.equip].jobs) {
+            this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
+              this[this.version].wotvEquipments[rType].equippableJobs.push(job)
+            })
+          }
+
+          if (this[this.version].EquipmentCond[equipment.equip].units) {
+            this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
+              this[this.version].wotvEquipments[rType].equippableUnits.push(unit)
+            })
+          }
         }
 
         if (equipment.trust) {

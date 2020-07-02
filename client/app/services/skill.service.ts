@@ -737,6 +737,9 @@ export class SkillService {
       case "DARK_KILLER" :
         html = "Increase dark killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "FLOAT_KILLER" :
+        html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "BARRIER" :
         html = "Forms a barrier that reduces damage" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -772,6 +775,15 @@ export class SkillService {
       break
       case "DEFENSE_PENETRATION" :
         html = "Increase defense penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "SPIRIT_PENETRATION" :
+        html = "Increase spirit penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "RES_SLASH_ATK_PENETRATION" :
+        html = "Increase slash attack penetration resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "RES_MAGIC_ATK_PENETRATION" :
+        html = "Increase magic attack penetration resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "AP_CONSUMPTION" :
         html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)

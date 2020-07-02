@@ -35942,7 +35942,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_FIRE": {
     "dataId": "JB_LW_ASS_FIRE",
@@ -36128,7 +36128,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_ICE": {
     "dataId": "JB_LW_ASS_ICE",
@@ -36314,7 +36314,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_WIND": {
     "dataId": "JB_LW_ASS_WIND",
@@ -36500,7 +36500,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_SOIL": {
     "dataId": "JB_LW_ASS_SOIL",
@@ -36686,7 +36686,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_THUN": {
     "dataId": "JB_LW_ASS_THUN",
@@ -36872,7 +36872,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_WATER": {
     "dataId": "JB_LW_ASS_WATER",
@@ -37058,7 +37058,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_SHINE": {
     "dataId": "JB_LW_ASS_SHINE",
@@ -37244,7 +37244,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_ASS_DARK": {
     "dataId": "JB_LW_ASS_DARK",
@@ -37430,7 +37430,7 @@
         "ACC"
       ]
     },
-    "slug": "asasin"
+    "slug": "assassin"
   },
   "JB_LW_RAIN": {
     "dataId": "JB_LW_RAIN",
@@ -37616,7 +37616,7 @@
         "ACC"
       ]
     },
-    "slug": "guransierutono-qi-shi"
+    "slug": "knight-of-grandshelt"
   },
   "JB_FF1_WROL": {
     "dataId": "JB_FF1_WROL",
@@ -41898,5 +41898,1679 @@
       ]
     },
     "slug": "guransierutono-qi-shi"
+  },
+  "JB_LW_MKN": {
+    "dataId": "JB_LW_MKN",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_FIRE": {
+    "dataId": "JB_LW_MKN_FIRE",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_ICE": {
+    "dataId": "JB_LW_MKN_ICE",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_WIND": {
+    "dataId": "JB_LW_MKN_WIND",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_SOIL": {
+    "dataId": "JB_LW_MKN_SOIL",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_THUN": {
+    "dataId": "JB_LW_MKN_THUN",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_WATER": {
+    "dataId": "JB_LW_MKN_WATER",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_SHINE": {
+    "dataId": "JB_LW_MKN_SHINE",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
+  },
+  "JB_LW_MKN_DARK": {
+    "dataId": "JB_LW_MKN_DARK",
+    "names": {
+      "en": "ルーンナイト"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 589,
+        "ATK": 384,
+        "MAG": 1280,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 933,
+        "ATK": 609,
+        "MAG": 2028,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1177,
+        "ATK": 768,
+        "MAG": 2560,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1367,
+        "ATK": 891,
+        "MAG": 2972,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1522,
+        "ATK": 992,
+        "MAG": 3308,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1653,
+        "ATK": 1078,
+        "MAG": 3593,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1766,
+        "ATK": 1152,
+        "MAG": 3839,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1866,
+        "ATK": 1217,
+        "MAG": 4057,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1956,
+        "ATK": 1275,
+        "MAG": 4251,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2037,
+        "ATK": 1328,
+        "MAG": 4427,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2110,
+        "ATK": 1376,
+        "MAG": 4588,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2178,
+        "ATK": 1421,
+        "MAG": 4736,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2241,
+        "ATK": 1462,
+        "MAG": 4873,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 2300,
+        "ATK": 1500,
+        "MAG": 5000,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mkn",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "runnaito"
   }
 }
