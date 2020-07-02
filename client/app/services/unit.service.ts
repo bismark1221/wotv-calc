@@ -1237,7 +1237,7 @@ export class UnitService {
           jobs.push(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2])
         })
 
-        if (jobs.indexOf(mainJob) != -1) {
+        if (jobs.indexOf(mainJob) != -1 || equipment.equippableUnits.indexOf(this.unit.dataId) != -1) {
           availableEquipments.push(equipment)
         }
       }
