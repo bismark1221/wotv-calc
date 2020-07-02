@@ -491,12 +491,16 @@ export class UnitService {
         this.unit.limit.level = unit.limitLv
       }
 
-      this.unit.activatedSupport = [
-        unit.activatedSupport[0],
-        unit.activatedSupport[1]
-      ]
+      if (unit.activatedSupport[0] || unit.activatedSupport[1]) {
+        this.unit.activatedSupport = [
+          unit.activatedSupport[0],
+          unit.activatedSupport[1]
+        ]
+      }
 
-      this.unit.activatedCounter = unit.activatedCounter
+      if (unit.activatedCounter) {
+        this.unit.activatedCounter = unit.activatedCounter
+      }
 
       this.unit.savedEsper = unit.esper
       this.unit.savedCard = unit.card
