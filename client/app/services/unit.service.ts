@@ -852,40 +852,42 @@ export class UnitService {
             skill.level = this.unit.equipments[i].level
 
             skill.effects.forEach(effect => {
-              if (!this.unit.stats[effect.type]) {
-                this.unit.stats[effect.type] = {
-                  baseTotal: 0
+              if (!effect.fromImbue) {
+                if (!this.unit.stats[effect.type]) {
+                  this.unit.stats[effect.type] = {
+                    baseTotal: 0
+                  }
                 }
-              }
 
-              let value = effect.minValue
-              if (skill.level >= skill.maxLevel) {
-                value = effect.maxValue
-              } else if (skill.maxLevel !== 1 || skill.level !== 1) {
-                value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
-              }
-
-              if (this.unit.stats[effect.type]['equipment' + i]) {
-                this.unit.stats[effect.type]['equipment' + i] += value
-              } else {
-                this.unit.stats[effect.type]['equipment' + i] = value
-              }
-
-              if (!this.unit.stats[effect.type].equipmentBuff) {
-                this.unit.stats[effect.type].equipmentBuff = {
-                  positive: 0,
-                  negative: -100000000
+                let value = effect.minValue
+                if (skill.level >= skill.maxLevel) {
+                  value = effect.maxValue
+                } else if (skill.maxLevel !== 1 || skill.level !== 1) {
+                  value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
                 }
+
+                if (this.unit.stats[effect.type]['equipment' + i]) {
+                  this.unit.stats[effect.type]['equipment' + i] += value
+                } else {
+                  this.unit.stats[effect.type]['equipment' + i] = value
+                }
+
+                if (!this.unit.stats[effect.type].equipmentBuff) {
+                  this.unit.stats[effect.type].equipmentBuff = {
+                    positive: 0,
+                    negative: -100000000
+                  }
+                }
+
+                if (value > 0 && value > this.unit.stats[effect.type].equipmentBuff.positive) {
+                  this.unit.stats[effect.type].equipmentBuff.positive = value
+                } else if (value <= 0 && value > this.unit.stats[effect.type].equipmentBuff.negative) {
+                  this.unit.stats[effect.type].equipmentBuff.negative = value
+                }
+
+
+                statsType.push(effect.type)
               }
-
-              if (value > 0 && value > this.unit.stats[effect.type].equipmentBuff.positive) {
-                this.unit.stats[effect.type].equipmentBuff.positive = value
-              } else if (value <= 0 && value > this.unit.stats[effect.type].equipmentBuff.negative) {
-                this.unit.stats[effect.type].equipmentBuff.negative = value
-              }
-
-
-              statsType.push(effect.type)
             })
           }
         })

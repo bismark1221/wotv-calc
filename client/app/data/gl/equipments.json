@@ -59,6 +59,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -147,6 +148,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -412,6 +414,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -680,6 +683,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -804,7 +808,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -829,7 +834,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -853,7 +859,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -904,7 +911,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -928,7 +936,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -979,7 +988,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1003,7 +1013,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1054,7 +1065,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1078,7 +1090,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1129,7 +1142,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1153,7 +1167,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1204,7 +1219,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 25,
-              "turn": 4
+              "turn": 4,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -1231,6 +1247,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -1782,6 +1799,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -1958,6 +1976,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2131,6 +2150,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2195,6 +2215,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2461,6 +2482,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2726,6 +2748,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2782,6 +2805,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -3039,6 +3063,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3299,6 +3324,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3559,6 +3585,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -3796,6 +3823,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3858,6 +3886,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -4118,6 +4147,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4385,6 +4415,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4648,6 +4679,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4706,6 +4738,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -4962,6 +4995,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5225,6 +5259,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5492,6 +5527,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5551,6 +5587,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -5808,6 +5845,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -6068,6 +6106,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -6328,6 +6367,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -6868,6 +6908,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -7423,6 +7464,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -7481,6 +7523,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -7737,6 +7780,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -7996,6 +8040,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8259,6 +8304,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8518,6 +8564,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8576,6 +8623,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -8832,6 +8880,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9091,6 +9140,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9350,6 +9400,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9413,6 +9464,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -9674,6 +9726,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9938,6 +9991,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10202,6 +10256,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10265,6 +10320,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -10522,6 +10578,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10782,6 +10839,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -11046,6 +11104,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -11108,6 +11167,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -11167,6 +11227,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -11427,6 +11488,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -11955,6 +12017,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -12222,6 +12285,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -12485,6 +12549,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "Arena Medal Exchange Shop",
@@ -12543,6 +12608,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -12799,6 +12865,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13062,6 +13129,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13325,6 +13393,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13387,6 +13456,7 @@
     "equippableJobs": [
       "JB_LW_VIK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -13647,6 +13717,7 @@
     "equippableJobs": [
       "JB_LW_VIK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13910,6 +13981,7 @@
     "equippableJobs": [
       "JB_LW_VIK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14173,6 +14245,7 @@
     "equippableJobs": [
       "JB_LW_VIK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14210,6 +14283,7 @@
     "equippableJobs": [
       "JB_LW_PLD_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -14272,6 +14346,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -14507,6 +14582,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14769,6 +14845,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15043,6 +15120,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15313,6 +15391,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "PVP Medal Exchange Shop",
@@ -15379,6 +15458,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -15615,6 +15695,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15878,6 +15959,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16145,6 +16227,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16219,6 +16302,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -16471,6 +16555,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16750,6 +16835,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17029,6 +17115,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17104,6 +17191,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -17377,6 +17465,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17653,6 +17742,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17929,6 +18019,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -18068,6 +18159,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -18640,6 +18732,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -19215,6 +19308,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -19790,6 +19884,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -20239,6 +20334,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": {
         "en": "PVP Medal Exchange Shop",
@@ -20338,6 +20434,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20434,6 +20531,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20530,6 +20628,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20626,6 +20725,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20722,6 +20822,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20818,6 +20919,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20901,6 +21003,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LILS"
@@ -20956,7 +21059,8 @@
               "maxValue": 4,
               "calcType": "percent",
               "rate": 15,
-              "turn": 5
+              "turn": 5,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -20979,6 +21083,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SZRT"
@@ -21059,6 +21164,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_OOOO"
@@ -21135,6 +21241,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MRLK"
@@ -21188,7 +21295,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21211,6 +21319,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RAMD"
@@ -21288,6 +21397,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LRNZ"
@@ -21364,6 +21474,7 @@
     "equippableJobs": [
       "JB_LW_THI_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VSTR"
@@ -21440,6 +21551,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_CLEY"
@@ -21495,7 +21607,8 @@
               "maxValue": 50,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21518,6 +21631,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RIRY"
@@ -21597,6 +21711,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_HLNA"
@@ -21676,6 +21791,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MGRT"
@@ -21729,7 +21845,8 @@
               "type": "DISABLE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21755,6 +21872,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_PRAY"
@@ -21808,7 +21926,8 @@
               "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21830,6 +21949,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_KADI"
@@ -21887,7 +22007,8 @@
               "type": "CHARM_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21910,6 +22031,7 @@
       "JB_LW_HUN_FIRE",
       "JB_LW_FINA"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FINA"
@@ -21969,7 +22091,8 @@
               "maxValue": 80,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -21991,6 +22114,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SDLX"
@@ -22073,6 +22197,7 @@
     "equippableJobs": [
       "JB_LW_PLD_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ENBT"
@@ -22165,6 +22290,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_STRN"
@@ -22264,6 +22390,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ROBB"
@@ -22346,6 +22473,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_BYLO"
@@ -22460,6 +22588,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VRID"
@@ -22552,6 +22681,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_NAIA"
@@ -22644,6 +22774,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SEVR"
@@ -22736,6 +22867,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SRJS"
@@ -22861,6 +22993,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_AILN"
@@ -22981,6 +23114,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MDNA"
@@ -23076,6 +23210,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_UNII"
@@ -23171,6 +23306,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VADM"
@@ -23266,6 +23402,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_PHBE"
@@ -23334,6 +23471,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MICE"
@@ -23402,6 +23540,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MIIA"
@@ -23539,6 +23678,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_AYKA"
@@ -23665,6 +23805,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MACR"
@@ -23776,6 +23917,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ELDE"
@@ -23890,6 +24032,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ZIZA"
@@ -24006,6 +24149,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FDRC"
@@ -24110,6 +24254,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SCIA"
@@ -24214,6 +24359,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MURM"
@@ -24318,6 +24464,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RYER"
@@ -24395,6 +24542,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RART"
@@ -24515,6 +24663,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MONT"
@@ -24592,6 +24741,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ZZAN"
@@ -24693,6 +24843,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_GLMS"
@@ -24789,6 +24940,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF14_P_TNCR"
@@ -24838,7 +24990,8 @@
               "type": "SILENCE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -24864,6 +25017,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF14_P_YSTL"
@@ -24973,6 +25127,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_YERM"
@@ -25026,7 +25181,8 @@
               "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 5
+              "turn": 5,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -25057,6 +25213,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_NASR"
@@ -25134,6 +25291,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ETRE"
@@ -25240,6 +25398,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_RAMZ"
@@ -25293,7 +25452,8 @@
               "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -25324,6 +25484,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_GFGR"
@@ -25414,6 +25575,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_ORND"
@@ -25541,6 +25703,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_KTON"
@@ -25714,6 +25877,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_WHIS"
@@ -25833,6 +25997,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MRND"
@@ -25888,7 +26053,8 @@
               "maxValue": 50,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -25910,6 +26076,7 @@
     "equippableJobs": [
       "JB_LW_VIK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_DRND"
@@ -26024,6 +26191,7 @@
       "JB_LW_VIK_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LUCA"
@@ -26108,6 +26276,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ADLD"
@@ -26207,6 +26376,7 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VKTR"
@@ -26308,6 +26478,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_THLA"
@@ -26411,6 +26582,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RAIN"
@@ -26542,6 +26714,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FRVA"
@@ -26607,6 +26780,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26671,6 +26845,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26735,6 +26910,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26791,6 +26967,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26846,6 +27023,7 @@
     "equippableJobs": [
       "JB_LW_SAM_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26901,6 +27079,7 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -26957,6 +27136,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27013,6 +27193,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27072,6 +27253,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27131,6 +27313,7 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27186,6 +27369,7 @@
     "equippableJobs": [
       "JB_LW_CLR_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27220,6 +27404,7 @@
     "equippableJobs": [
       "JB_LW_PLD_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27284,6 +27469,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27348,6 +27534,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27401,6 +27588,7 @@
     "rarity": "MR",
     "image": "lapswpn_swo_011",
     "equippableJobs": [],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27456,6 +27644,7 @@
     "equippableJobs": [
       "JB_LW_NIN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27520,6 +27709,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27576,6 +27766,7 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27632,6 +27823,7 @@
       "JB_LW_LAN_FIRE",
       "JB_LW_DRG_FIRE"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27688,6 +27880,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27752,6 +27945,7 @@
       "JB_FFT_ORND",
       "JB_FFT_GFGR"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28324,6 +28518,7 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28399,7 +28594,8 @@
               "maxValue": -10,
               "calcType": "fixe",
               "rate": 25,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -28468,7 +28664,8 @@
               "maxValue": -15,
               "calcType": "fixe",
               "rate": 25,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -28537,7 +28734,8 @@
               "maxValue": -20,
               "calcType": "fixe",
               "rate": 25,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -28578,6 +28776,7 @@
       "JB_LW_SWN_FIRE",
       "JB_LW_RAIN"
     ],
+    "equippableUnits": [],
     "acquisition": {
       "type": "Unknown"
     }

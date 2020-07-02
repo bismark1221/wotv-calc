@@ -29002,7 +29002,8 @@
               "type": "SLEEP_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -35490,7 +35491,8 @@
               "maxValue": 50,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -42139,7 +42141,8 @@
               "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -48912,7 +48915,8 @@
               "type": "DISABLE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -51147,7 +51151,8 @@
               "maxValue": 4,
               "calcType": "percent",
               "rate": 15,
-              "turn": 5
+              "turn": 5,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -53465,7 +53470,8 @@
               "type": "CHARM_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -90957,7 +90963,8 @@
               "type": "SILENCE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -97471,7 +97478,8 @@
               "maxValue": 80,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -101850,7 +101858,8 @@
               "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 5
+              "turn": 5,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -108336,7 +108345,8 @@
               "type": "CONFUSION_ATK",
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",
@@ -119592,7 +119602,8 @@
               "maxValue": 50,
               "calcType": "percent",
               "rate": 15,
-              "turn": 3
+              "turn": 3,
+              "fromImbue": true
             }
           ],
           "type": "support",

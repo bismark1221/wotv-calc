@@ -1432,6 +1432,7 @@ export class JsonService {
           let buffs = JSON.parse(JSON.stringify(dataSkill[dataBuffs]))
 
           let buffIndex = 0
+          let fromImbue = []
           while (buffIndex <= buffs.length - 1) {
             let buff = buffs[buffIndex]
             let finished = false;
@@ -1446,7 +1447,9 @@ export class JsonService {
                   }
 
                   if (this[this.version].buffs[buff]["id" + i]) {
-                    buffs.push(this[this.version].buffs[this[this.version].buffs[buff]["id" + i]].iname);
+                    let futurBuffId = this[this.version].buffs[this[this.version].buffs[buff]["id" + i]].iname
+                    fromImbue.push(futurBuffId)
+                    buffs.push(futurBuffId);
                   }
 
                   if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
@@ -1482,14 +1485,20 @@ export class JsonService {
                   }
 
                   if (!nullifyOrDispel && type !== "IMBUE") {
-                    skill.effects.push({
+                    let addedBuff = {
                       type: type,
                       minValue: this[this.version].buffs[buff]["val" + i],
                       maxValue: this[this.version].buffs[buff]["val" + i + "1"],
                       calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
                       rate: this[this.version].buffs[buff].rate,
                       turn: this[this.version].buffs[buff].turn
-                    });
+                    };
+
+                    if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
+                      addedBuff.fromImbue = true;
+                    }
+
+                    skill.effects.push(addedBuff)
                   }
 
                   if (this[this.version].buffs[buff]["type" + i] === 116) {
