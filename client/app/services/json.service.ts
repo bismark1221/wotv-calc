@@ -1491,7 +1491,8 @@ export class JsonService {
                       maxValue: this[this.version].buffs[buff]["val" + i + "1"],
                       calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
                       rate: this[this.version].buffs[buff].rate,
-                      turn: this[this.version].buffs[buff].turn
+                      turn: this[this.version].buffs[buff].turn,
+                      fromImbue: false
                     };
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
