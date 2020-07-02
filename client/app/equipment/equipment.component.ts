@@ -158,6 +158,13 @@ export class EquipmentComponent implements OnInit {
       job.name = this.nameService.getName(job)
       this.equipment.jobs.push(job)
     })
+
+    this.equipment.units = []
+    this.equipment.equippableUnits.forEach(unitId => {
+      let unit = this.getUnit(unitId)
+      unit.name = this.nameService.getName(unit)
+      this.equipment.units.push(unit)
+    })
   }
 
   getEquipementType(type) {

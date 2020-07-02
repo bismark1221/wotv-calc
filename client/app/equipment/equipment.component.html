@@ -59,13 +59,23 @@
     </table>
 
     <table class="equippableJobsTable">
-      <tbody>
+      <tbody *ngIf="equipment.jobs.length > 0">
         <tr>
           <th>Equippable jobs</th>
         </tr>
         <tr>
           <td>
             <img *ngFor="let job of equipment.jobs" src="{{ 'assets/jobs/' + job.image + '.png'}}" class="job" title="{{ job.name }}"/>
+          </td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="equipment.units.length > 0">
+        <tr>
+          <th>Equippable units</th>
+        </tr>
+        <tr>
+          <td>
+            <img *ngFor="let unit of equipment.units" src="{{ 'assets/units/' + unit.image + '_m.png'}}" class="unit" title="{{ unit.name }}"/>
           </td>
         </tr>
       </tbody>
