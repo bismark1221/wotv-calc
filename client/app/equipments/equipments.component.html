@@ -44,6 +44,19 @@
 
         <div><input type="checkbox" (change)="filterList('type', 'ACC', $event.target.checked)"/>Accessory</div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="isCollapsedAcquisition = !isCollapsedAcquisition" [attr.aria-expanded]="!isCollapsedAcquisition">
+        Acquisition
+        <i class="fa fa-chevron-up" *ngIf="!isCollapsedAcquisition" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" *ngIf="isCollapsedAcquisition" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedAcquisition">
+        <div *ngFor="let type of acquisitionTypes">
+          <input type="checkbox" [checked]="isAcquisitionChecked(type)" (change)="filterList('acquisition', type, $event.target.checked)"/>{{ type }}
+        </div>
+      </div>
     </div>
   </div>
 

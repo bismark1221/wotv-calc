@@ -1838,7 +1838,7 @@ export class JsonService {
           }
         } else if (this[this.version].equipmentRecipes[dataId]) {
           let recipe = this[this.version].equipmentRecipes[dataId].recipe;
-          if (this.names.en.itemOther[recipe] != "") {
+          if (this.names.en.itemOther[recipe] && this.names.en.itemOther[recipe] != "") {
             this[this.version].wotvEquipments[rType].acquisition = {
               type: {
                 en: this.names.en.itemOther[recipe],

@@ -56,6 +56,108 @@ export class EquipmentService {
     "ACC": "Accessory"
   }
 
+  private equipmentsAcquisition = {
+    "AF_LW_RNG_005": "RAID",
+    "AF_LW_HLM_005": "RAID",
+    "AF_LW_CLT_005": "RAID",
+    "AF_LW_KAT_008": "RAID",
+
+    "AF_LW_BSW_011": "TOWER",
+    "AF_FFT_SWO_002": "TOWER",
+    "AF_LW_RNG_007": "TOWER",
+
+    "AF_LW_SWO_016": "FREE",
+
+    "AF_LW_ACC_001": "SUMMON_EVENT",
+
+    "AF_SWO_FF14_TNCT": "COLLABORATION",
+    "AF_FFT_SWO_001": "COLLABORATION",
+    "AF_FF14_ARW_001": "COLLABORATION",
+    "AF_FF1_ARM_002": "COLLABORATION",
+
+    "AF_LW_CLT_004": "RECURRENT",
+    "AF_LW_BSW_004": "RECURRENT",
+    "AF_LW_AXE_003": "RECURRENT",
+    "AF_LW_ARM_004": "RECURRENT",
+    "AF_LW_HLM_004": "RECURRENT",
+    "AF_LW_HAT_004": "RECURRENT",
+    "AF_LW_SWO_003": "RECURRENT",
+    "AF_LW_GUN_003": "RECURRENT",
+    "AF_LW_ROD_005": "RECURRENT",
+    "AF_LW_SPE_004": "RECURRENT",
+    "AF_LW_BSW_003": "RECURRENT",
+    "AF_LW_ARM_003": "RECURRENT",
+    "AF_LW_BOW_003": "RECURRENT",
+    "AF_LW_DAG_006": "RECURRENT",
+    "AF_LW_FIS_003": "RECURRENT",
+    "AF_LW_KAT_003": "RECURRENT",
+    "AF_LW_MAC_003": "RECURRENT",
+    "AF_LW_SWO_006": "RECURRENT",
+    "AF_LW_NKN_003": "RECURRENT",
+    "AF_LW_SPE_006": "RECURRENT",
+    "AF_LW_SWO_023": "RECURRENT",
+
+    "AF_LW_SWO_000": "GENERAL_SHOP",
+    "AF_LW_BSW_000": "GENERAL_SHOP",
+    "AF_LW_KAT_000": "GENERAL_SHOP",
+    "AF_LW_FIS_000": "GENERAL_SHOP",
+    "AF_LW_SPE_000": "GENERAL_SHOP",
+    "AF_LW_DAG_000": "GENERAL_SHOP",
+    "AF_LW_NKN_000": "GENERAL_SHOP",
+    "AF_LW_BOW_000": "GENERAL_SHOP",
+    "AF_LW_GUN_000": "GENERAL_SHOP",
+    "AF_LW_ROD_000": "GENERAL_SHOP",
+    "AF_LW_ROD_001": "GENERAL_SHOP",
+    "AF_LW_MAC_000": "GENERAL_SHOP",
+    "AF_LW_AXE_000": "GENERAL_SHOP",
+    "AF_LW_ARM_001": "GENERAL_SHOP",
+    "AF_LW_HLM_001": "GENERAL_SHOP",
+    "AF_LW_HAT_001": "GENERAL_SHOP",
+    "AF_LW_CLT_001": "GENERAL_SHOP",
+    "AF_LW_RNG_001": "GENERAL_SHOP",
+
+    "AF_LW_SWO_007": "PACK"
+  }
+
+  private acquisitionTypesTranslation = {
+    "GENERAL_SHOP": {
+      "en": "General Shop",
+      "fr": "Boutique ordinaire"
+    },
+    "RAID": {
+      "en": "Raid",
+      "fr": "Raid"
+    },
+    "TOWER": {
+      "en": "Tower",
+      "fr": "Tour"
+    },
+    "EVENT": {
+      "en": "Event",
+      "fr": "Évènement"
+    },
+    "SUMMON_EVENT": {
+      "en": "Summon Event",
+      "fr": "Évènement d'Invocation"
+    },
+    "COLLABORATION" : {
+      "en": "Collaboration event",
+      "fr": "Évènement de collaboration"
+    },
+    "RECURRENT": {
+      "en": "Recurrent event",
+      "fr": "Évènement récurrent"
+    },
+    "FREE": {
+      "en": "Free",
+      "fr": "Gratuit"
+    },
+    "PACK": {
+      "en": "Billing pack",
+      "fr": "Pack payant"
+    }
+  }
+
   private savedEquipments = {}
 
   private equipments: Equipment[];
@@ -100,7 +202,15 @@ export class EquipmentService {
     Object.keys(rawEquipments).forEach(equipmentId => {
       let equipment = new Equipment();
       equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
+
+      if (equipment.acquisition.type == "Unknown" && this.equipmentsAcquisition[equipment.dataId]) {
+        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]]
+      }
+
       equipments.push(equipment);
+
+      if (equipment.dataId == "AF_LOT_LW_HLM_005")
+        console.log(equipment)
     });
 
     this.equipments = equipments;
@@ -224,6 +334,7 @@ export class EquipmentService {
       equipments.forEach(equipment => {
         if ((filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
           && (filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
+          && (filters.acquisition.length == 0 || filters.acquisition.indexOf(equipment.acquisition.type) != -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) != -1)
         ) {
           filteredEquipments.push(equipment)
         }
@@ -377,7 +488,6 @@ export class EquipmentService {
   }
 
   private updateMaxStat() {
-    let lang = this.translateService.currentLang
     this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
     this.equipment.passiveSkills = [];
@@ -534,5 +644,22 @@ export class EquipmentService {
     }
 
     this.equipment.category = category
+  }
+
+  getAcquisitionTypes() {
+    this.getEquipments()
+
+    let types = ["Unknown", "tmr"]
+    this.equipments.forEach(equipment => {
+      if (equipment.acquisition.type != "Unknown" && equipment.acquisition.type != "tmr") {
+        let acquisition = equipment.acquisition.type[this.translateService.getDefaultLang()]
+
+        if (types.indexOf(acquisition) == -1) {
+          types.push(acquisition)
+        }
+      }
+    })
+
+    return types;
   }
 }

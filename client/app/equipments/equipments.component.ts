@@ -12,15 +12,18 @@ import { NameService } from '../services/name.service';
 })
 export class EquipmentsComponent implements OnInit {
   equipments;
+  acquisitionTypes;
   searchText = "";
   sort = "rarity"
   order = "asc"
   filters = {
     rarity: [],
-    type: []
+    type: [],
+    acquisition: []
   }
   isCollapsedRarity = false;
   isCollapsedType = false;
+  isCollapsedAcquisition = false;
 
   constructor(
     private equipmentService: EquipmentService,
@@ -34,6 +37,7 @@ export class EquipmentsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getAcquisitionTypes();
     this.getEquipments();
   }
 
@@ -71,5 +75,22 @@ export class EquipmentsComponent implements OnInit {
     }
 
     this.getEquipments()
+  }
+
+  getAcquisitionTypes() {
+    this.acquisitionTypes = this.equipmentService.getAcquisitionTypes()
+    this.acquisitionTypes.forEach(type => {
+      if (type != "Unknown") {
+        this.filters.acquisition.push(type)
+      }
+    })
+  }
+
+  isAcquisitionChecked(type) {
+    if (this.filters.acquisition.indexOf(type) != -1) {
+      return true
+    }
+
+    return false
   }
 }
