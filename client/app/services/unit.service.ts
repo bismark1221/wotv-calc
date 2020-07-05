@@ -802,6 +802,7 @@ export class UnitService {
 
     Object.keys(this.unit.esper.buffs).forEach(statType => {
       if (typeof(this.unit.esper.buffs[statType].total) == "number") {
+        this.updateStat(statType, 0, "esper", "fixe")
         let baseTotal = this.unit.stats[statType].baseTotal ? this.unit.stats[statType].baseTotal : 0
         let value = 0;
 
