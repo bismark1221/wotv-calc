@@ -64,6 +64,43 @@ export class UnitService {
     "MAGIC"
   ]
 
+  private elements = [
+    "FIRE",
+    "ICE",
+    "EARTH",
+    "WIND",
+    "LIGHTNING",
+    "WATER",
+    "LIGHT",
+    "DARK"
+  ]
+
+  private atks = [
+    "SLASH",
+    "PIERCE",
+    "STRIKE",
+    "MISSILE",
+    "MAGIC"
+  ]
+
+  private ailments = [
+    "POISON",
+    "BLIND",
+    "SLEEP",
+    "SILENCE",
+    "PARALYZE",
+    "CONFUSION",
+    "PETRIFY",
+    "TOAD",
+    "CHARM",
+    "SLOW",
+    "STOP",
+    "IMMOBILIZE",
+    "DISABLE",
+    "BERSERK",
+    "DOOM",
+  ]
+
   private statsOrder = [
     "FIRE_RES",
     "ICE_RES",
@@ -663,33 +700,50 @@ export class UnitService {
               value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
             }
 
-            if (!this.unit.stats[stat.type]) {
-              this.unit.stats[stat.type] = {}
-              this.unit.stats[stat.type].base = 0
-              this.unit.stats[stat.type].baseTotal = 0
-            }
-            this.unit.stats[stat.type].guild = value
+            this.updateStat(stat.type, value, "guild", "fixe")
           })
         }
       });
     }
   }
 
-  private updateStat(type, value, statType, calc = "fixe") {
-    if (!this.unit.stats[type]) {
-      this.unit.stats[type] = {}
-      this.unit.stats[type].base = 0;
-      this.unit.stats[type].baseTotal = 0;
-    }
+  private updateStat(type, value, statType, calc = "fixe", reset = false) {
+    switch (type) {
+      case "ALL_ELEMENTS_RES" :
+        this.elements.forEach(element => {
+          this.updateStat(element + "_RES", value, statType, calc)
+        })
+      break
 
-    if (!this.unit.stats[type][statType]) {
-      this.unit.stats[type][statType] = 0
-    }
+      case "ALL_ATTACKS_RES" :
+        this.atks.forEach(atk => {
+          this.updateStat(atk + "_RES", value, statType, calc)
+        })
+      break
 
-    if (calc == "percent") {
-      this.unit.stats[type][statType] += this.unit.stats[type].baseTotal * value / 100
-    } else {
-      this.unit.stats[type][statType] += value
+      case "ALL_AILMENTS_RES" :
+        this.ailments.forEach(ailment => {
+          this.updateStat(ailment + "_RES", value, statType, calc)
+        })
+      break
+
+      default:
+        if (!this.unit.stats[type]) {
+          this.unit.stats[type] = {}
+          this.unit.stats[type].base = 0;
+          this.unit.stats[type].baseTotal = 0;
+        }
+
+        if (!this.unit.stats[type][statType]) {
+          this.unit.stats[type][statType] = 0
+        }
+
+        if (calc == "percent") {
+          this.unit.stats[type][statType] = (reset ? 0 : this.unit.stats[type][statType]) + this.unit.stats[type].baseTotal * value / 100
+        } else {
+          this.unit.stats[type][statType] = (reset ? 0 : this.unit.stats[type][statType]) + value
+        }
+      break
     }
   }
 
@@ -748,23 +802,22 @@ export class UnitService {
 
     Object.keys(this.unit.esper.buffs).forEach(statType => {
       if (typeof(this.unit.esper.buffs[statType].total) == "number") {
-        if (!this.unit.stats[statType]) {
-          this.unit.stats[statType] = {
-            baseTotal: 0
-          }
-        }
+        let baseTotal = this.unit.stats[statType].baseTotal ? this.unit.stats[statType].baseTotal : 0
+        let value = 0;
 
         if (typeof(this.unit.esper.buffs[statType].percent) == "number"
           && this.unit.esper.buffs[statType].percent != 0
         ) {
           if (this.statsType.indexOf(statType) !== -1) {
-            this.unit.stats[statType].esper = Math.floor((this.unit.stats[statType].esper ? this.unit.stats[statType].esper : 0) + (this.unit.stats[statType].baseTotal * this.unit.esper.buffs[statType].percent / 100))
+            value = Math.floor((this.unit.stats[statType].esper ? this.unit.stats[statType].esper : 0) + (baseTotal * this.unit.esper.buffs[statType].percent / 100))
           } else {
-            this.unit.stats[statType].esper = this.unit.esper.buffs[statType].percent
+            value = this.unit.esper.buffs[statType].percent
           }
         } else {
-          this.unit.stats[statType].esper = this.unit.esper.buffs[statType].total
+          value = this.unit.esper.buffs[statType].total
         }
+
+        this.updateStat(statType, value, "esper", "fixe")
       }
     })
   }
@@ -787,12 +840,7 @@ export class UnitService {
         }
       }
 
-      if (!this.unit.stats[statType]) {
-        this.unit.stats[statType] = {
-          baseTotal: 0
-        }
-      }
-      this.unit.stats[statType].card = value
+      this.updateStat(statType, value, "card", "fixe")
     })
 
     Object.keys(this.unit.card.buffs.party).forEach(statType => {
@@ -808,12 +856,7 @@ export class UnitService {
         }
       }
 
-      if (!this.unit.stats[statType]) {
-        this.unit.stats[statType] = {
-          baseTotal: 0
-        }
-      }
-      this.unit.stats[statType].cardParty = value
+      this.updateStat(statType, value, "cardParty", "fixe")
     })
   }
 
@@ -823,13 +866,9 @@ export class UnitService {
     for (let i = 0; i <= 2; i++) {
       if (this.unit.equipments[i]) {
         Object.keys(this.unit.equipments[i].stats).forEach(statType => {
-          if (!this.unit.stats[statType]) {
-            this.unit.stats[statType] = {
-              baseTotal: 0
-            }
-          }
           let value = parseInt(this.unit.equipments[i].stats[statType].selected)
-          this.unit.stats[statType]['equipment' + i] = value
+
+          this.updateStat(statType, value, 'equipment' + i, "fixe", true)
 
           if (!this.unit.stats[statType].equipment) {
             this.unit.stats[statType].equipment = {
@@ -853,12 +892,6 @@ export class UnitService {
 
             skill.effects.forEach(effect => {
               if (!effect.fromImbue) {
-                if (!this.unit.stats[effect.type]) {
-                  this.unit.stats[effect.type] = {
-                    baseTotal: 0
-                  }
-                }
-
                 let value = effect.minValue
                 if (skill.level >= skill.maxLevel) {
                   value = effect.maxValue
@@ -866,10 +899,10 @@ export class UnitService {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
                 }
 
-                if (this.unit.stats[effect.type]['equipment' + i]) {
-                  this.unit.stats[effect.type]['equipment' + i] += value
-                } else {
-                  this.unit.stats[effect.type]['equipment' + i] = value
+                this.updateStat(effect.type, value, 'equipment' + i, "fixe")
+
+                if (!this.unit.stats[effect.type]) {
+                  this.unit.stats[effect.type] = {};
                 }
 
                 if (!this.unit.stats[effect.type].equipmentBuff) {
@@ -885,7 +918,6 @@ export class UnitService {
                   this.unit.stats[effect.type].equipmentBuff.negative = value
                 }
 
-
                 statsType.push(effect.type)
               }
             })
@@ -897,7 +929,7 @@ export class UnitService {
     statsType.forEach(statType => {
       if (this.unit.stats[statType].equipment) {
         let negativeValue = this.unit.stats[statType].equipment.negative !== -100000000 ? this.unit.stats[statType].equipment.negative : 0
-        this.unit.stats[statType].totalEquipment = this.unit.stats[statType].equipment.positive + negativeValue
+        this.updateStat(statType, this.unit.stats[statType].equipment.positive + negativeValue, "totalEquipment", "fixe", true)
       }
 
       if (this.unit.stats[statType].equipmentBuff) {
@@ -906,7 +938,7 @@ export class UnitService {
         if (this.unit.stats[statType].totalEquipment) {
           total = this.unit.stats[statType].totalEquipment
         }
-        this.unit.stats[statType].totalEquipment = total + this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue
+        this.updateStat(statType, total + this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe", true)
       }
     })
   }
@@ -930,6 +962,7 @@ export class UnitService {
       this.calculateEquipmentsStats()
     }
 
+    let statsToRemove = [];
     Object.keys(this.unit.stats).forEach(stat => {
       if (stat == "INITIAL_AP") {
         let initialAPModifier = 100 + this.unit.jobsData[0].statsModifiers[this.unit.jobsData[0].level - 1]["INITIAL_AP"]
@@ -972,6 +1005,14 @@ export class UnitService {
       }
 
       this.unit.stats[stat].total += this.unit.stats[stat].guild ? this.unit.stats[stat].guild : 0
+
+      if (!Number.isInteger(this.unit.stats[stat].total)) {
+        statsToRemove.push(stat)
+      }
+    })
+
+    statsToRemove.forEach(stat => {
+      delete this.unit.stats[stat]
     })
   }
 
