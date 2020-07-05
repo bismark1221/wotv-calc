@@ -203,14 +203,11 @@ export class EquipmentService {
       let equipment = new Equipment();
       equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
 
-      if (equipment.acquisition.type == "Unknown" && this.equipmentsAcquisition[equipment.dataId]) {
+      if (this.equipmentsAcquisition[equipment.dataId]) {
         equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]]
       }
 
       equipments.push(equipment);
-
-      if (equipment.dataId == "AF_LOT_LW_HLM_005")
-        console.log(equipment)
     });
 
     this.equipments = equipments;
