@@ -1010,7 +1010,7 @@ export class JsonService {
       }
     } else {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + "_FIRE"]) {
-        this[this.version].wotvJobs[dataId].names.en = this.names.jp['job'][dataId] ? this.names.jp['job'][dataId] : this.names.jp['job'][dataId + "_FIRE"] + " - " + this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
+        this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
         this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this.names.en['job'][dataId])
       } else if (this.names.jp['job'][dataId] || this.names.jp['job'][dataId + "_FIRE"]) {
         this[this.version].wotvJobs[dataId].names.en = this.names.jp['job'][dataId] ? this.names.jp['job'][dataId] : this.names.jp['job'][dataId + "_FIRE"]
@@ -1109,6 +1109,16 @@ export class JsonService {
         || type == "equipment" && this.names.en[type][item.dataId]) {
         item.names.en = this.names.jp[type][item.dataId] + " - " + this.names.en[type][item.dataId]
         item.slug = this.slug.slugify(this.names.en[type][item.dataId])
+      } else if (type == "job") {
+        if (this.names.en[type][item.dataId]) {
+          console.log(this.names.en[type][item.dataId])
+          item.names.en = this.names.en[type][item.dataId]
+          item.slug = this.slug.slugify(this.names.en[type][item.dataId])
+        } else {
+          console.log(item.dataId)
+          item.names.en = this.names.jp[type][item.dataId]
+          item.slug = slugify(item.names.en)
+        }
       } else if (this.names.jp[type][item.dataId]) {
         item.names.en = this.names.jp[type][item.dataId]
         item.slug = slugify(item.names.en)
