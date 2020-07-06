@@ -45,6 +45,7 @@ import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
+import { BuilderTeamComponent } from './builder/builder.team.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -59,6 +60,7 @@ import { GuildService } from './services/guild.service';
 import { NameService } from './services/name.service';
 import { ThemeService } from './services/theme.service';
 import { RaidService } from './services/raid.service';
+import { TeamService } from './services/team.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -92,7 +94,8 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderCardComponent,
     BuilderEsperComponent,
     BuilderEquipmentComponent,
-    BuilderGuildComponent
+    BuilderGuildComponent,
+    BuilderTeamComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -133,7 +136,8 @@ export function createTranslateLoader(http: HttpClient) {
     GuildService,
     NameService,
     ThemeService,
-    RaidService
+    RaidService,
+    TeamService
   ],
   bootstrap: [
     AppComponent

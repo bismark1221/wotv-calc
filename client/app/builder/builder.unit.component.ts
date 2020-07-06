@@ -133,6 +133,8 @@ export class BuilderUnitComponent implements OnInit {
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
+      this.getEspers();
+      this.getCards();
     });
   }
 
@@ -153,7 +155,7 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private getUnits() {
-    this.units = this.unitService.getUnitsForBuilder(this.translateService);
+    this.units = this.unitService.getUnitsForBuilder();
     this.units = [...this.units];
   }
 
@@ -165,6 +167,11 @@ export class BuilderUnitComponent implements OnInit {
   private getEspers() {
     this.espers = this.esperService.getEspersForBuilder(this.translateService);
     this.espers = [...this.espers];
+  }
+
+  getAvailableEquipments(pos) {
+    this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
+    this.equipments[pos] = [...this.equipments[pos]];
   }
 
   private addEsperToUnit() {
@@ -368,11 +375,6 @@ export class BuilderUnitComponent implements OnInit {
 
   getAvailableCounterNodes() {
     return this.unitService.getAvailableCounterNodes()
-  }
-
-  getAvailableEquipments(pos) {
-    this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
-    this.equipments[pos] = [...this.equipments[pos]];
   }
 
   save() {

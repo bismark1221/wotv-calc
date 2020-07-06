@@ -1,0 +1,411 @@
+import { Component, OnInit } from '@angular/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute, Params } from '@angular/router';
+import { ClipboardService } from 'ngx-clipboard'
+
+import { UnitService } from '../services/unit.service';
+import { JobService } from '../services/job.service';
+import { GuildService } from '../services/guild.service';
+import { GridService } from '../services/grid.service';
+import { EsperService } from '../services/esper.service';
+import { CardService } from '../services/card.service';
+import { EquipmentService } from '../services/equipment.service';
+import { TeamService } from '../services/team.service'
+
+import { BuilderEsperComponent } from './builder.esper.component';
+import { BuilderCardComponent } from './builder.card.component';
+import { BuilderEquipmentComponent } from './builder.equipment.component';
+import { BuilderGuildComponent } from './builder.guild.component';
+
+@Component({
+  selector: 'app-builder-team',
+  templateUrl: './builder.team.component.html',
+  styleUrls: ['./builder.team.component.css']
+})
+export class BuilderTeamComponent implements OnInit {
+  list = {
+    units : [null, null, null, null, null],
+    espers : [null, null, null, null, null],
+    cards : [null, null, null, null, null],
+    equipments : [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+      [null, null, null]
+    ]
+  }
+
+  team = [null, null, null, null, null]
+
+  selected = {
+    units: [null, null, null, null, null],
+    espers: [null, null, null, null, null],
+    cards: [null, null, null, null, null],
+    equipments : [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+      [null, null, null]
+    ]
+  }
+
+  statueNames
+
+  exportableLink = ""
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private unitService: UnitService,
+    private translateService: TranslateService,
+    private guildService: GuildService,
+    private esperService: EsperService,
+    private cardService: CardService,
+    private equipmentService: EquipmentService,
+    private modalService: NgbModal,
+    private clipboardService: ClipboardService,
+    private teamService: TeamService
+  ) {
+    // this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+    //   this.getUnits();
+    //   this.getEspers();
+    //   this.getCards();
+    // });
+  }
+
+  ngOnInit(): void {
+    for (let i = 0; i <= 4; i++) {
+      this.getAvailableUnits(i)
+    }
+
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      let data = params.get('data')
+      if (data) {
+        data = JSON.parse(atob(params.get('data')))
+        // this.loadTeam(data)
+      }
+    });
+  }
+
+  getAvailableUnits(pos) {
+    this.list.units[pos] = this.teamService.getAvailableUnits(pos);
+    this.list.units[pos] = [...this.list.units[pos]];
+  }
+
+  selectUnit() {
+    console.log(this.list.units)
+    console.log(this.selected.units)
+  }
+
+  // private addEsperToUnit() {
+  //   if (this.unit) {
+  //     this.unit.esper = null
+
+  //     if (this.esper) {
+  //       this.unit.esper = this.esper
+  //     }
+
+  //     this.unitService.changeLevel()
+  //   }
+  // }
+
+  // private addCardToUnit() {
+  //   if (this.unit) {
+  //     this.unit.card = null
+
+  //     if (this.card) {
+  //       this.unit.card = this.card
+  //     }
+
+  //     this.unitService.changeLevel()
+  //   }
+  // }
+
+  // private addEquipmentToUnit(pos) {
+  //   if (this.unit) {
+  //     if (!this.unit.equipments) {
+  //       this.unit.equipments = [null, null, null]
+  //     }
+  //     this.unit.equipments[pos] = null
+
+  //     if (this.selectedEquipments[pos]) {
+  //       this.unit.equipments[pos] = this.selectedEquipments[pos]
+  //     }
+
+  //     this.unitService.changeLevel()
+  //   }
+  // }
+
+  // private loadEsper() {
+  //   if (this.unit.savedEsper && this.unit.savedEsper.level) {
+  //     this.selectedEsperId = this.unit.savedEsper.dataId
+  //     this.selectEsper(this.unit.savedEsper)
+  //   } else {
+  //     this.selectedEsperId = null
+  //     this.selectEsper()
+  //   }
+  // }
+
+  // private loadCard() {
+  //   if (this.unit.savedCard && this.unit.savedCard.level) {
+  //     this.selectedCardId = this.unit.savedCard.dataId
+  //     this.selectCard(this.unit.savedCard)
+  //   } else {
+  //     this.selectedCardId = null
+  //     this.selectCard()
+  //   }
+  // }
+
+  // private loadEquipments() {
+  //   for (let i = 0; i <= 2; i++) {
+  //     if (this.unit.savedEquipments && this.unit.savedEquipments[i] && this.unit.savedEquipments[i].level) {
+  //       this.selectedEquipmentsIds[i] = this.unit.savedEquipments[i].dataId
+  //       this.selectEquipment(i, this.unit.savedEquipments[i])
+  //     } else {
+  //       this.selectedEquipmentsIds[i] = null
+  //       this.selectedEquipments[i] = null
+  //       this.selectEquipment(i)
+  //     }
+  //   }
+
+  //   for (let i = 0; i <= 2; i++) {
+  //     this.getAvailableEquipments(i)
+  //   }
+  // }
+
+  // private loadGuild() {
+  //    if (this.unit.savedGuild) {
+  //     this.unit.guild = this.unit.savedGuild
+  //   } else {
+  //     this.unit.guild = this.guildService.getGuild()
+  //   }
+
+  //   this.statueNames = Object.keys(this.unit.guild)
+  //   this.unitService.changeLevel()
+  // }
+
+  // selectUnit(customData = null) {
+  //   if (this.selectedUnitId) {
+  //     this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
+
+  //     this.loadEsper()
+  //     this.loadCard()
+  //     this.loadEquipments()
+  //     this.loadGuild()
+  //   } else {
+  //     this.unit = null
+  //   }
+  // }
+
+  // selectEsper(customData = null) {
+  //   if (this.selectedEsperId) {
+  //     this.esper = this.esperService.selectEsperForBuilder(this.selectedEsperId, customData)
+  //   } else {
+  //     this.esper = null
+  //   }
+
+  //   this.addEsperToUnit()
+  // }
+
+  // selectCard(customData = null) {
+  //   if (this.selectedCardId) {
+  //     this.card = this.cardService.selectCardForBuilder(this.selectedCardId, customData)
+  //   } else {
+  //     this.card = null
+  //   }
+
+  //   this.addCardToUnit()
+  // }
+
+  // selectEquipment(pos, customData = null) {
+  //   if (this.selectedEquipmentsIds[pos]) {
+  //     this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos], customData)
+  //   } else {
+  //     this.selectedEquipments[pos] = null
+  //   }
+
+  //   this.addEquipmentToUnit(pos)
+
+  //   for (let i = 0; i <= 2; i++) {
+  //     this.getAvailableEquipments(i)
+  //   }
+  // }
+
+  // changeStar(value) {
+  //   this.unit.star = value
+  //   this.unitService.changeStar()
+  // }
+
+  // changeLB(value) {
+  //   if (value == this.unit.lb) {
+  //     value = undefined
+  //   }
+  //   this.unit.lb = value
+  //   this.unitService.changeLB()
+
+  //   this.updateSelectedEquipments()
+  // }
+
+  // updateSelectedEquipments() {
+  //   if (this.unit.lb < 4) {
+  //     if (this.selectedEquipmentsIds[2]) {
+  //       this.selectedEquipmentsIds[2] = null;
+  //       this.selectEquipment(2)
+  //     }
+
+  //     if (this.selectedEquipmentsIds[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === "tmr") {
+  //       this.selectedEquipmentsIds[1] = null;
+  //       this.selectEquipment(1)
+  //     }
+
+  //     if (this.selectedEquipmentsIds[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === "tmr") {
+  //       this.selectedEquipmentsIds[0] = null;
+  //       this.selectEquipment(0)
+  //     }
+  //   }
+
+  //   if (this.unit.lb < 2 && this.selectedEquipmentsIds[1]) {
+  //     this.selectedEquipmentsIds[1] = null;
+  //     this.selectEquipment(1)
+  //   }
+
+  //   for (let i = 0; i <= 2; i++) {
+  //     this.getAvailableEquipments(i)
+  //   }
+  // }
+
+  // changeLevel() {
+  //   this.unitService.changeLevel()
+  // }
+
+  // rightClickNode(node) {
+  //   this.unitService.rightClickNode(node)
+  //   this.unitService.getActiveSkills()
+  // }
+
+  // clickNode(node) {
+  //   this.unitService.clickNode(node)
+  //   this.unitService.getActiveSkills()
+  // }
+
+  // canActivateNode(node) {
+  //   return this.unitService.canActivateNode(node)
+  // }
+
+  // getAvailableSupportNodes(pos) {
+  //   return this.unitService.getAvailableSupportNodes(pos)
+  // }
+
+  // getAvailableCounterNodes() {
+  //   return this.unitService.getAvailableCounterNodes()
+  // }
+
+  // getAvailableEquipments(pos) {
+  //   this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
+  //   this.equipments[pos] = [...this.equipments[pos]];
+  // }
+
+  // save() {
+  //   this.unitService.saveUnit(this.unit)
+  // }
+
+  // showHideDetail(type) {
+  //   this["show" + type + "Detail"] = !this["show" + type + "Detail"]
+  // }
+
+  // maxUnit() {
+  //   this.unitService.maxUnit()
+  //   this.updateSelectedEquipments()
+  // }
+
+  // maxLevelAndJobs() {
+  //   this.unitService.maxLevelAndJobs()
+  // }
+
+  // maxNodes() {
+  //   this.unitService.maxNodes()
+  // }
+
+  // showEsperDetail() {
+  //   const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
+
+  //   modalRef.componentInstance.esper = this.unit.esper;
+  //   modalRef.componentInstance.fromUnitBuilder = true;
+
+  //   modalRef.result.then((result) => {
+  //     this.unitService.changeLevel()
+  //   }, (reason) => {
+  //     this.unitService.changeLevel()
+  //   });
+  // }
+
+  // showCardDetail() {
+  //   const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
+
+  //   modalRef.componentInstance.card = this.unit.card;
+  //   modalRef.componentInstance.fromUnitBuilder = true;
+
+  //   modalRef.result.then((result) => {
+  //     this.unitService.changeLevel()
+  //   }, (reason) => {
+  //     this.unitService.changeLevel()
+  //   });
+  // }
+
+  // showEquipmentDetail(position) {
+  //   const modalRef = this.modalService.open(BuilderEquipmentComponent, { windowClass: 'options-modal' });
+
+  //   modalRef.componentInstance.equipment = this.unit.equipments[position];
+  //   modalRef.componentInstance.fromUnitBuilder = true;
+
+  //   modalRef.result.then((result) => {
+  //     this.unitService.changeLevel()
+  //   }, (reason) => {
+  //     this.unitService.changeLevel()
+  //   });
+  // }
+
+  // showGuildDetail() {
+  //   const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
+
+  //   modalRef.componentInstance.guild = this.unit.guild;
+  //   modalRef.componentInstance.fromUnitBuilder = true;
+
+  //   modalRef.result.then((result) => {
+  //     this.unitService.changeLevel()
+  //   }, (reason) => {
+  //     this.unitService.changeLevel()
+  //   });
+  // }
+
+  // openLinkModal(content) {
+  //   this.unitService.getExportableLink().subscribe((data: any) => {
+  //     this.exportableLink = data.shorturl;
+  //   })
+
+  //   const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+  //   modalRef.result.then((result) => {}, (reason) => {})
+  // }
+
+  // closeModal() {
+  //   this.modalService.dismissAll();
+  // }
+
+  // copyLink() {
+  //   this.clipboardService.copyFromContent(this.exportableLink)
+  // }
+
+  // changeSubJob() {
+  //   this.unitService.getActiveSkills()
+  // }
+
+  // changeLimit() {
+  //   this.unitService.getActiveSkills()
+  // }
+
+  // changeCounter() {
+  //   this.unitService.getActiveSkills()
+  // }
+}

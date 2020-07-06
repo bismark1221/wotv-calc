@@ -337,7 +337,7 @@ export class UnitService {
     }
   }
 
-  getUnitsForBuilder(translate) {
+  getUnitsForBuilder() {
     let units = this.getUnitsForListing(null, "rarity", "asc");
 
     let formattedUnitsForBuilder = []

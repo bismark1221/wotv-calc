@@ -1,0 +1,214 @@
+.unitImg {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.unitName {
+  font-weight: bold;
+  margin-left: 10px
+}
+
+.statsTable {
+  width: 1000px;
+}
+
+.unitsCol {
+  width: 200px;
+}
+
+.row {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+tr.disable {
+  display: none;
+}
+
+.star {
+  height: 20px;
+  background: url("assets/icons/star_off.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.star.filled {
+  height: 20px;
+  background: url("assets/icons/star_on.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb {
+  height: 40px;
+  background: url("assets/icons/lb_off.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.lb.filled {
+  height: 40px;
+  background: url("assets/icons/lb_on.png") 0px 0px no-repeat;
+  background-size: 20px;
+  width: 20px;
+}
+
+.mainJob {
+  height: 40px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+}
+
+.buffImg {
+  width: 40px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 250px;
+}
+
+.leftBlock .unitDiv {
+  margin-top: 10px;
+}
+
+.leftBlock .unitTable {
+  display: inline-block;
+}
+
+.leftBlock .starsLbsLevels {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.leftBlock .stars {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.leftBlock .ratingStars {
+  height: 25px;
+}
+
+.leftBlock .lbs {
+  margin-bottom: 10px;
+}
+
+.rightBlock {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.upperBlock {
+  display: block;
+}
+
+.upperBlock .unitDiv {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.upperBlock .unitTable {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.upperBlock .starsLbsLevels {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lowerBlock {}
+
+.lowerBlock .statsTable {
+  margin: auto
+}
+
+.jobsTable, .jobsTable tr, .jobsTable td {
+  border: 0;
+  padding: 0;
+}
+
+.jobsTable td:nth-child(2), .jobsTable td:nth-child(3) {
+  padding-left: 5px;
+}
+
+.jobsTable select {
+  width: 40px;
+}
+
+.unitButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.maxLevelButton {
+  margin-left: 10px;
+}
+
+.equipmentsTable, .equipmentsTable tr, .equipmentsTable td {
+  padding: 0;
+}
+
+.equipmentImg, .selectEquipment {
+  width: 80px;
+}
+
+.esperImg, .selectEsper, .cardImg, .selectCard {
+  width: 120px;
+}
+
+.esperCardTable, .esperCardTable tr, .esperCardTable td {
+  padding: 0;
+}
+
+.esperCardTable td, .equipmentsTable td {
+  vertical-align: top;
+}
+
+.modal-dialog {
+  width: 270px
+}
+
+.textLink {
+  margin: auto;
+  width: 250px;
+}
+
+.background_acc {
+  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
+  background-size: 80px;
+}
+
+.damageImg, .skilImg, .damageSkillImg {
+  height: 32px;
+}
+
+.statueImg {
+  width: 40px;
+}
