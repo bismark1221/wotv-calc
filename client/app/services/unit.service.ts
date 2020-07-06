@@ -863,6 +863,7 @@ export class UnitService {
 
   private calculateEquipmentsStats() {
     let statsType = [];
+    this.unit.imbue = null;
 
     for (let i = 0; i <= 2; i++) {
       if (this.unit.equipments[i]) {
@@ -920,6 +921,9 @@ export class UnitService {
                 }
 
                 statsType.push(effect.type)
+              } else {
+                effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+                this.unit.imbue = effect
               }
             })
           }

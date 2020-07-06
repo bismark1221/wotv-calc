@@ -385,6 +385,7 @@ export class BuilderUnitComponent implements OnInit {
 
   maxUnit() {
     this.unitService.maxUnit()
+    this.updateSelectedEquipments()
   }
 
   maxLevelAndJobs() {

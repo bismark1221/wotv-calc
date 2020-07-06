@@ -392,6 +392,20 @@
   </table>
   <button (click)="showHideDetail('Buffs')">Buffs Detail</button>
 
+
+  <table class="statsTable" *ngIf="unit.imbue">
+    <tbody>
+      <tr>
+        <th colspan="9">Imbue</th>
+      </tr>
+      <tr>
+        <td>
+          {{ unit.imbue.formatHtml }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
   <table class="statsTable">
     <tbody>
       <tr>
