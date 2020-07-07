@@ -37,8 +37,6 @@ export class BuilderTeamComponent implements OnInit {
     ]
   }
 
-  team = [null, null, null, null, null]
-
   selected = {
     units: [null, null, null, null, null],
     espers: [null, null, null, null, null],
@@ -52,8 +50,8 @@ export class BuilderTeamComponent implements OnInit {
     ]
   }
 
+  team = null
   statueNames
-
   exportableLink = ""
 
   constructor(
@@ -80,6 +78,8 @@ export class BuilderTeamComponent implements OnInit {
       this.getAvailableUnits(i)
     }
 
+    this.team = this.teamService.getTeam();
+
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
       if (data) {
@@ -94,9 +94,66 @@ export class BuilderTeamComponent implements OnInit {
     this.list.units[pos] = [...this.list.units[pos]];
   }
 
-  selectUnit() {
-    console.log(this.list.units)
-    console.log(this.selected.units)
+  getAvailableEspers(pos) {
+    this.list.espers[pos] = this.teamService.getAvailableEspers(pos);
+    this.list.espers[pos] = [...this.list.espers[pos]];
+  }
+
+  getAvailableCards(pos) {
+    this.list.cards[pos] = this.teamService.getAvailableCards(pos);
+    this.list.cards[pos] = [...this.list.cards[pos]];
+  }
+
+  getAvailableEquipments(unitPos, equipmentPos = null) {
+    if (equipmentPos === null) {
+      for (let i = 0; i <= 2; i++) {
+        this.list.equipments[unitPos][i] = this.teamService.getAvailableEquipments(unitPos, i);
+      }
+    } else {
+      this.list.equipments[unitPos][equipmentPos] = this.teamService.getAvailableEquipments(unitPos, equipmentPos);
+    }
+  }
+
+  selectUnit(pos, customData = null) {
+    this.teamService.selectUnit(pos, this.selected.units[pos])
+    this.getAvailableEspers(pos)
+    this.getAvailableCards(pos)
+    this.getAvailableEquipments(pos)
+
+    for (let i = 0; i <= 4; i++) {
+      if (i != pos) {
+        this.getAvailableUnits(i)
+      }
+    }
+  }
+
+  selectEsper(pos, customData = null) {
+    this.teamService.selectEsper(pos, this.selected.espers[pos], customData)
+
+    for (let i = 0; i <= 4; i++) {
+      if (i != pos) {
+        this.getAvailableEspers(i)
+      }
+    }
+  }
+
+  selectCard(pos, customData = null) {
+    this.teamService.selectCard(pos, this.selected.cards[pos], customData)
+
+    for (let i = 0; i <= 4; i++) {
+      if (i != pos) {
+        this.getAvailableCards(i)
+      }
+    }
+  }
+
+  selectEquipment(unitPos, equipmentPos, customData = null) {
+    this.teamService.selectEquipment(unitPos, equipmentPos, this.selected.equipments[unitPos][equipmentPos], customData)
+    this.getAvailableEquipments(unitPos)
+  }
+
+  console() {
+    console.log(this.team)
   }
 
   // private addEsperToUnit() {

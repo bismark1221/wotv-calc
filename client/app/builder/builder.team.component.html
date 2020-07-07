@@ -1,10 +1,106 @@
-<div *ngFor="let i of [0, 1, 2, 3, 4]">
-  <ng-select [items]="list.units[i]"
-             bindLabel="name"
-             bindValue="id"
-             groupBy="rarity"
-             placeholder="Units"
-             [(ngModel)]="selected.units[i]"
-             (ngModelChange)="selectUnit()">
-  </ng-select>
+<div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
+  <div>
+    <ng-select [items]="list.units[i]"
+               bindLabel="name"
+               bindValue="id"
+               groupBy="rarity"
+               placeholder="Units"
+               [(ngModel)]="selected.units[i]"
+               (ngModelChange)="selectUnit(i)">
+    </ng-select>
+  </div>
+
+  <div *ngIf="team.units[i]" class="unitDiv">
+    <table class="unitTable">
+      <tbody>
+        <tr>
+          <th colspan="3">{{ team.units[i].name }}</th>
+        </tr>
+        <tr>
+          <td colspan="3"><img class="unitImg" src="{{'assets/units/' + team.units[i].image + '_m.png'}}" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="team.units[i]">
+    <table class="equipmentsTable">
+      <tr>
+        <td *ngFor="let j of [0, 1, 2]">
+          <div *ngIf="j == 0 || (j == 1 && team.units[i].lb >= 2) || (j == 2 && team.units[i].lb >= 4)">
+            <ng-select [items]="list.equipments[i][j]"
+                       bindLabel="name"
+                       bindValue="dataId"
+                       groupBy="rarity"
+                       placeholder="Equipment {{ j + 1}}"
+                       [(ngModel)]="selected.equipments[i][j]"
+                       (ngModelChange)="selectEquipment(i, j)"
+                       class="selectEquipment">
+            </ng-select>
+            <div *ngIf="team.units[i].equipments && selected.equipments[i][j]">
+              <img src="{{'assets/equipments/' + team.units[i].equipments[j].image + '.png'}}" class="equipmentImg background_{{ team.units[i].equipments[j].category }}"/>
+              <!-- <button (click)="showEquipmentDetail(0)">Custom</button> -->
+            </div>
+            <div *ngIf="!selected.equipments[i][j]">
+              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+            </div>
+          </div>
+          <div *ngIf="(j == 1 && team.units[i].lb < 2) || (j == 2 && team.units[i].lb < 4)">
+            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+          </div>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+
+    <table class="esperCardTable">
+      <tr>
+        <td>
+          <ng-select [items]="list.espers[i]"
+                     bindLabel="name"
+                     bindValue="id"
+                     groupBy="rarity"
+                     placeholder="Espers"
+                     [(ngModel)]="selected.espers[i]"
+                     (ngModelChange)="selectEsper(i)"
+                     class="selectEsper">
+          </ng-select>
+
+          <div *ngIf="team.units[i].esper">
+            <img src="{{'assets/units/' + team.units[i].esper.image + '_m.png'}}" class="esperImg"/>
+            <!-- <button (click)="showEsperDetail()">Custom</button> -->
+          </div>
+
+          <div *ngIf="!team.units[i].esper">
+            <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
+          </div>
+        </td>
+        <td>
+          <ng-select [items]="list.cards[i]"
+                     bindLabel="name"
+                     bindValue="id"
+                     groupBy="rarity"
+                     placeholder="Cards"
+                     [(ngModel)]="selected.cards[i]"
+                     (ngModelChange)="selectCard(i)"
+                     class="selectCard">
+          </ng-select>
+
+          <div *ngIf="team.units[i].card">
+            <img src="{{'assets/cards/' + team.units[i].card.image + '_m.png'}}" class="cardImg"/>
+            <!-- <button (click)="showCardDetail()">Custom</button> -->
+          </div>
+
+          <div *ngIf="!team.units[i].card">
+            <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div>
+  <button (click)="console()">CONSOLE</button>
 </div>

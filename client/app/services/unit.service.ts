@@ -468,6 +468,7 @@ export class UnitService {
       i++
     })
     this.unit.masterSkillActivated = -1;
+    this.unit.equipments = []
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
