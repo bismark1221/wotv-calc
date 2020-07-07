@@ -551,7 +551,7 @@ export class UnitService {
   }
 
   changeStar() {
-    this.updateMaxLevel();
+    this.updateMaxLevel()
     this.disableNotAvailableNodes()
   }
 

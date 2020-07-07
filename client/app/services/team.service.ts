@@ -152,9 +152,6 @@ export class TeamService {
   getAvailableEquipments(unitPos, equipmentPos) {
     let armorTypes = []
 
-    console.log(unitPos)
-    console.log(this.team)
-
     this.team.units[unitPos].jobsData[0].equipments.armors.forEach(type => {
       if (type !== "ACC") {
         armorTypes.push(type)
@@ -223,8 +220,6 @@ export class TeamService {
     } else {
       this.team.units[pos].esper = null
     }
-
-    //this.addEsperToUnit()
   }
 
   selectCard(pos, cardId, customData = null) {
@@ -233,8 +228,6 @@ export class TeamService {
     } else {
       this.team.units[pos].card = null
     }
-
-    //this.addEsperToUnit()
   }
 
   selectEquipment(unitPos, equipmentPos, equipmentId, customData = null) {
@@ -243,7 +236,17 @@ export class TeamService {
     } else {
       this.team.units[unitPos].equipments[equipmentPos] = null
     }
+  }
 
-    //this.addEquipmentToUnit(pos)
+  changeStar(pos, value) {
+    this.team.units[pos].updateStar(value)
+  }
+
+  changeLB(pos, value) {
+    this.team.units[pos].updateLB(value)
+  }
+
+  changeLevel(pos) {
+    this.team.units[pos].changeLevel()
   }
 }

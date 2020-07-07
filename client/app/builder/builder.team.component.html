@@ -21,6 +21,50 @@
         </tr>
       </tbody>
     </table>
+
+    <div *ngIf="team.units[i]" class="starsLbsLevels">
+      <div class="stars">
+        <ngb-rating [(rate)]="team.units[i].star" [max]="6" class="ratingStars">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(i, index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
+
+      <div class="lbs">
+        <ngb-rating [(rate)]="team.units[i].lb" [max]="5">
+          <ng-template let-fill="fill" let-index="index">
+            <div class="lb" [class.filled]="fill === 100" (click)="changeLB(i, index + 1)">&nbsp;</div>
+          </ng-template>
+        </ngb-rating>
+      </div>
+
+      <div>
+        Lv
+        <select [(ngModel)]="team.units[i].level" (ngModelChange)="changeLevel(i)">
+          <option *ngFor="let level of team.units[i].tableLevels">{{ level }}</option>
+        </select> / {{ team.units[i].maxLevel }}
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="team.units[i]">
+    <table class="jobsTable">
+      <tr>
+        <td *ngFor="let j of [0, 1, 2]">
+          <img [className]="j == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + team.units[i].jobsData[j].image + '.png'}}" />
+          <select *ngIf="team.units[i].jobsData[j].unlocked" [(ngModel)]="team.units[i].jobsData[j].level" (ngModelChange)="changeLevel(i)">
+            <option *ngFor="let level of team.units[i].tableJobLevels">{{ level }}</option>
+          </select>
+          <select *ngIf="!team.units[i].jobsData[j].unlocked"></select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div *ngIf="team.units[i]" class="unitButtons">
+    <button (click)="maxUnit(i)">Max unit</button>
+    <button (click)="maxLevelAndJobs(i)" class="maxLevelButton">Max level & jobs</button>
   </div>
 
   <div *ngIf="team.units[i]">
