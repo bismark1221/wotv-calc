@@ -13,7 +13,7 @@ export const themes = {
       "--subnav-background": "#555c63",
 
       "--black": "#000",
-      "--white": "#fff",
+      "--white": "#FFF",
       "--dark-grey": "#292b2c",
 
       "--hex-default": "#f5f6f5",
@@ -32,7 +32,7 @@ export const themes = {
       "--hex-counter-color": "#b0b0b0",
       "--hex-counter-activated": "#2649ff",
 
-      "--body-background": "#fff",
+      "--body-background": "var(--white)",
       "--body-color": "#212529",
 
       "--cross-close": "#000",
@@ -41,9 +41,9 @@ export const themes = {
       "--footer-link": "#1D1B1B",
 
       "--card-background": "#E8E6DF",
-      "--card-background-hover": "#FFF",
+      "--card-background-hover": "var(--white)",
       "--card-title-background": "#3D3A41",
-      "--card-title-color": "#FFF",
+      "--card-title-color": "var(--white)",
       "--home-title": "rgba(29, 27, 27, 0.95)",
 
       "--th-background": "#3D3A41",
@@ -56,6 +56,8 @@ export const themes = {
       "--filters-color": "#3D3A41",
 
       "--sortby-color": "rgba(61, 58, 65, 0.5)",
+
+      "--black-vs-white": "var(--black)"
     }
   },
   dark: {
@@ -76,7 +78,7 @@ export const themes = {
       "--dark-grey": "#292b2c",
 
       "--hex-default": "#ababab",
-      "--hex-color-default": "#fff",
+      "--hex-color-default": "var(--white)",
       "--hex-default-activated": "#737272",
       "--hex-buff": "#fff4b8",
       "--hex-buff-color": "#000",
@@ -94,12 +96,12 @@ export const themes = {
       "--body-background": "#242222",
       "--body-color": "#e2e2e2",
 
-      "--cross-close": "#fff",
+      "--cross-close": "var(--white)",
 
       "--nav-background-main": "#1D1B1B",
-      "--footer-link": "#fff",
+      "--footer-link": "var(--white)",
 
-      "--card-background": "#FFF",
+      "--card-background": "var(--white)",
       "--card-background-hover": "#3D3D3D",
       "--card-title-background": "#E9E9E9",
       "--card-title-color": "#1D1B1B",
@@ -112,9 +114,11 @@ export const themes = {
       "--hr-color": "#6b6a68",
 
       "--filters-background": "rgba(29, 27, 27, 0.8)",
-      "--filters-color": "#FFF",
+      "--filters-color": "var(--white)",
 
       "--sortby-color": "rgba(255, 255, 255, 0.5)",
+
+      "--black-vs-white": "var(--white)"
     }
   }
 }

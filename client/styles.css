@@ -58,6 +58,8 @@
   --filters-color: #3D3A41;
 
   --sortby-color: rgba(61, 58, 65, 0.5);
+
+  --black-vs-white: var(--black);
 }
 
 body {
@@ -493,4 +495,38 @@ small {
   outline: none !important;
   border: 0 !important;
   box-shadow: 0 !important;
+}
+
+.selectButton {
+  border: 0;
+  padding: 0;
+  background-color: transparent !important; /* Don't know why but bootstrap css always overwrite it... */
+  color: var(--black-vs-white) !important;
+}
+
+.selectButton:focus {
+  box-shadow: none !important;
+}
+
+.selectList {
+  border-radius: 0;
+  padding: 0;
+}
+
+.selectElement {
+  background-color: #FFF;
+  color: black;
+}
+
+.selectElement:hover, .selectElement:active, .selectElement:focus {
+  background-color: #F2F2F2;
+  color: black;
+  box-shadow: none !important;
+  outline: 0 !important;
+  border: 0 !important;
+}
+
+.selectElement.disable {
+  color: rgba(29, 27, 27, 0.3);
+  font-weight: 500;
 }

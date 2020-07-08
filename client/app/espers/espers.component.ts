@@ -72,4 +72,14 @@ export class EspersComponent implements OnInit {
 
     this.getEspers()
   }
+
+  changeSort(sort) {
+    this.sort = sort
+    this.getEspers()
+  }
+
+  changeOrder(order) {
+    this.order = order
+    this.getEspers()
+  }
 }

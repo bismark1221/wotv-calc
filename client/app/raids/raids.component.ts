@@ -70,4 +70,14 @@ export class RaidsComponent implements OnInit {
 
     this.getRaids()
   }
+
+  changeSort(sort) {
+    this.sort = sort
+    this.getRaids()
+  }
+
+  changeOrder(order) {
+    this.order = order
+    this.getRaids()
+  }
 }

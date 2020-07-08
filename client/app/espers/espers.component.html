@@ -49,17 +49,23 @@
           </div> -->
           <div class="sortBy">
             <span>Sort by :</span>
-            <select [(ngModel)]="sort" (ngModelChange)="getEspers()">
-              <option>rarity</option>
-              <option>name</option>
-            </select>
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ sort | titlecase }}</button>
+              <div ngbDropdownMenu class="selectList">
+                <button class="selectElement" [ngClass]="{'disable': 'rarity' == sort}" ngbDropdownItem (click)="changeSort('rarity')">Rarity</button>
+                <button class="selectElement" [ngClass]="{'disable': 'name' == sort}" ngbDropdownItem (click)="changeSort('name')">Name</button>
+              </div>
+            </div>
           </div>
           <div class="orderBy">
             <span>Order by :</span>
-            <select [(ngModel)]="order" (ngModelChange)="getEspers()">
-              <option>asc</option>
-              <option>desc</option>
-            </select>
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order == 'asc' ? 'Ascending' : 'Descending' }}</button>
+              <div ngbDropdownMenu class="selectList">
+                <button class="selectElement" [ngClass]="{'disable': 'asc' == order}" ngbDropdownItem (click)="changeOrder('asc')">Ascending</button>
+                <button class="selectElement" [ngClass]="{'disable': 'desc' == order}" ngbDropdownItem (click)="changeOrder('desc')">Descending</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

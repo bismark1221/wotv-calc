@@ -90,4 +90,14 @@ export class UnitsComponent implements OnInit {
 
     this.getUnits()
   }
+
+  changeSort(sort) {
+    this.sort = sort
+    this.getUnits()
+  }
+
+  changeOrder(order) {
+    this.order = order
+    this.getUnits()
+  }
 }
