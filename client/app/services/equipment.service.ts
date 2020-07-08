@@ -61,6 +61,7 @@ export class EquipmentService {
     "AF_LW_HLM_005": "RAID",
     "AF_LW_CLT_005": "RAID",
     "AF_LW_KAT_008": "RAID",
+    "AF_FF14_HLM_001": "RAID",
 
     "AF_LW_BSW_011": "TOWER",
     "AF_FFT_SWO_002": "TOWER",

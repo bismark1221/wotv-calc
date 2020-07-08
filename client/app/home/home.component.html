@@ -32,7 +32,7 @@
             </div>
           </div>
           <div>
-            <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type !== 'esper' ? '_m' : '_s' }}.png" />
+            <img class="itemImg" src="assets/{{ item.type !== 'esper' ? item.type : 'unit' }}s/{{ item.image }}{{ item.type === 'esper' ? '_s' : '' }}{{ item.type === 'equipment' || item.type === 'esper' ? '' : '_m' }}.png" />
           </div>
           <div class="cardTitle">
             <span class="itemName">{{ item.name }}</span>

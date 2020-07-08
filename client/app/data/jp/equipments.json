@@ -116,8 +116,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -270,8 +269,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -298,8 +296,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -326,8 +323,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -354,8 +350,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -382,8 +377,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -539,8 +533,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -567,8 +560,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -595,8 +587,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -623,8 +614,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -651,8 +641,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -881,8 +870,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -956,8 +944,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1031,8 +1018,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1106,8 +1092,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1181,8 +1166,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1359,8 +1343,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1384,8 +1367,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1408,8 +1390,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1433,8 +1414,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1459,8 +1439,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1483,8 +1462,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1508,8 +1486,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1534,8 +1511,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1558,8 +1534,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1583,8 +1558,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1609,8 +1583,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1633,8 +1606,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1658,8 +1630,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1684,8 +1655,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1708,8 +1678,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1733,8 +1702,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1759,8 +1727,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1911,8 +1878,7 @@
               "type": "FIRE_ATK",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -1936,8 +1902,7 @@
               "type": "FIRE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2085,8 +2050,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2110,8 +2074,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2134,8 +2097,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2159,8 +2121,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2185,8 +2146,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2209,8 +2169,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2234,8 +2193,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2260,8 +2218,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2284,8 +2241,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2309,8 +2265,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2335,8 +2290,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2359,8 +2313,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2384,8 +2337,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2410,8 +2362,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2434,8 +2385,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2459,8 +2409,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2485,8 +2434,7 @@
               "type": "LIGHTNING_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2702,8 +2650,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2730,8 +2677,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2758,8 +2704,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2786,8 +2731,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2814,8 +2758,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2968,8 +2911,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -2996,8 +2938,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3024,8 +2965,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3052,8 +2992,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3080,8 +3019,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3235,8 +3173,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3263,8 +3200,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3291,8 +3227,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3319,8 +3254,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3347,8 +3281,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3454,15 +3387,13 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "ICE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3483,15 +3414,13 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "ICE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3512,15 +3441,13 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "ICE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3541,15 +3468,13 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "ICE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3754,8 +3679,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3782,8 +3706,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3810,8 +3733,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3838,8 +3760,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -3866,8 +3787,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4012,8 +3932,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4040,8 +3959,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4068,8 +3986,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4096,8 +4013,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4124,8 +4040,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4270,8 +4185,7 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4298,8 +4212,7 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4326,8 +4239,7 @@
               "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4354,8 +4266,7 @@
               "type": "SLASH_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4382,8 +4293,7 @@
               "type": "SLASH_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4506,8 +4416,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4534,8 +4443,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4562,8 +4470,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4590,8 +4497,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4618,8 +4524,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4742,8 +4647,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4764,8 +4668,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4811,8 +4714,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4833,8 +4735,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -4879,8 +4780,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5081,8 +4981,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5109,8 +5008,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5137,8 +5035,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5165,8 +5062,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5193,8 +5089,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5346,8 +5241,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5374,8 +5268,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5402,8 +5295,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5430,8 +5322,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5458,8 +5349,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5607,8 +5497,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5635,8 +5524,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5663,8 +5551,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5691,8 +5578,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5719,8 +5605,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5863,8 +5748,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5888,8 +5772,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5912,8 +5795,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5937,8 +5819,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5963,8 +5844,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -5987,8 +5867,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6012,8 +5891,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6038,8 +5916,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6062,8 +5939,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6087,8 +5963,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6113,8 +5988,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6137,8 +6011,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6162,8 +6035,7 @@
               "type": "SLASH_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6188,8 +6060,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6212,8 +6083,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6237,8 +6107,7 @@
               "type": "SLASH_ATK",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6263,8 +6132,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6455,8 +6323,7 @@
               "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6483,8 +6350,7 @@
               "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6511,8 +6377,7 @@
               "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6539,8 +6404,7 @@
               "type": "STRIKE_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6567,8 +6431,7 @@
               "type": "STRIKE_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6715,8 +6578,7 @@
               "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6743,8 +6605,7 @@
               "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6771,8 +6632,7 @@
               "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6799,8 +6659,7 @@
               "type": "STRIKE_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6827,8 +6686,7 @@
               "type": "STRIKE_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -6979,8 +6837,7 @@
               "type": "STRIKE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7007,8 +6864,7 @@
               "type": "STRIKE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7035,8 +6891,7 @@
               "type": "STRIKE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7063,8 +6918,7 @@
               "type": "STRIKE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7091,8 +6945,7 @@
               "type": "STRIKE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7291,8 +7144,7 @@
               "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7319,8 +7171,7 @@
               "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7347,8 +7198,7 @@
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7375,8 +7225,7 @@
               "type": "PIERCE_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7403,8 +7252,7 @@
               "type": "PIERCE_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7549,8 +7397,7 @@
               "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7577,8 +7424,7 @@
               "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7605,8 +7451,7 @@
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7633,8 +7478,7 @@
               "type": "PIERCE_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7661,8 +7505,7 @@
               "type": "PIERCE_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7807,8 +7650,7 @@
               "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7835,8 +7677,7 @@
               "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7863,8 +7704,7 @@
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7891,8 +7731,7 @@
               "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -7919,8 +7758,7 @@
               "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8061,8 +7899,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8086,8 +7923,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8110,8 +7946,7 @@
               "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8136,8 +7971,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8161,8 +7995,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8185,8 +8018,7 @@
               "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8211,8 +8043,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8236,8 +8067,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8260,8 +8090,7 @@
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8286,8 +8115,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8311,8 +8139,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8335,8 +8162,7 @@
               "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8361,8 +8187,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8386,8 +8211,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8410,8 +8234,7 @@
               "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8436,8 +8259,7 @@
               "type": "ICE_ATK",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8461,8 +8283,7 @@
               "type": "ICE_ATK",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8603,8 +8424,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8629,8 +8449,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8654,8 +8473,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8679,8 +8497,7 @@
               "type": "PIERCE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8706,8 +8523,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8731,8 +8547,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8756,8 +8571,7 @@
               "type": "PIERCE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8783,8 +8597,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8808,8 +8621,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8833,8 +8645,7 @@
               "type": "PIERCE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8860,8 +8671,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8885,8 +8695,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8910,8 +8719,7 @@
               "type": "PIERCE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -8937,8 +8745,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8962,8 +8769,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -8987,8 +8793,7 @@
               "type": "PIERCE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9014,8 +8819,7 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -9211,8 +9015,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9239,8 +9042,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9267,8 +9069,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9295,8 +9096,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9323,8 +9123,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9468,8 +9267,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9496,8 +9294,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9524,8 +9321,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9552,8 +9348,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9580,8 +9375,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9729,8 +9523,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9757,8 +9550,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9785,8 +9577,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9813,8 +9604,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9841,8 +9631,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -9986,8 +9775,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10014,8 +9802,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10042,8 +9829,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10070,8 +9856,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10098,8 +9883,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10297,8 +10081,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10325,8 +10108,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10353,8 +10135,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10381,8 +10162,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10409,8 +10189,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10553,8 +10332,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10581,8 +10359,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10609,8 +10386,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10637,8 +10413,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10665,8 +10440,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10809,8 +10583,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10837,8 +10610,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10865,8 +10637,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10893,8 +10664,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -10921,8 +10691,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11128,8 +10897,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11156,8 +10924,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11184,8 +10951,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11212,8 +10978,7 @@
               "type": "MISSILE_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11240,8 +11005,7 @@
               "type": "MISSILE_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11389,8 +11153,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11417,8 +11180,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11445,8 +11207,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11473,8 +11234,7 @@
               "type": "MISSILE_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11501,8 +11261,7 @@
               "type": "MISSILE_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11650,8 +11409,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11678,8 +11436,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11706,8 +11463,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11734,8 +11490,7 @@
               "type": "MISSILE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11762,8 +11517,7 @@
               "type": "MISSILE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11967,8 +11721,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -11995,8 +11748,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12023,8 +11775,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12051,8 +11802,7 @@
               "type": "MISSILE_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12079,8 +11829,7 @@
               "type": "MISSILE_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12225,8 +11974,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12253,8 +12001,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12281,8 +12028,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12309,8 +12055,7 @@
               "type": "MISSILE_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12337,8 +12082,7 @@
               "type": "MISSILE_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12487,8 +12231,7 @@
               "type": "MISSILE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12515,8 +12258,7 @@
               "type": "MISSILE_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12543,8 +12285,7 @@
               "type": "MISSILE_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12571,8 +12312,7 @@
               "type": "MISSILE_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12599,8 +12339,7 @@
               "type": "MISSILE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12863,8 +12602,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12891,8 +12629,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12919,8 +12656,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12947,8 +12683,7 @@
               "type": "MAGIC_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -12975,8 +12710,7 @@
               "type": "MAGIC_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13123,8 +12857,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13169,8 +12902,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13195,8 +12927,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13241,8 +12972,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13267,8 +12997,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13313,8 +13042,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13339,8 +13067,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13385,8 +13112,7 @@
               "type": "MAGIC_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13411,8 +13137,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13457,8 +13182,7 @@
               "type": "MAGIC_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13483,8 +13207,7 @@
               "type": "HP",
               "minValue": 90,
               "maxValue": 120,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -13654,8 +13377,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13682,8 +13404,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13710,8 +13431,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13738,8 +13458,7 @@
               "type": "MAGIC_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13766,8 +13485,7 @@
               "type": "MAGIC_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13915,8 +13633,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13943,8 +13660,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13971,8 +13687,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -13999,8 +13714,7 @@
               "type": "MAGIC_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14027,8 +13741,7 @@
               "type": "MAGIC_ATK",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14231,8 +13944,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14259,8 +13971,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14287,8 +13998,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14315,8 +14025,7 @@
               "type": "MAGIC_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14343,8 +14052,7 @@
               "type": "MAGIC_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14492,8 +14200,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14520,8 +14227,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14548,8 +14254,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14576,8 +14281,7 @@
               "type": "MAGIC_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14604,8 +14308,7 @@
               "type": "MAGIC_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14753,8 +14456,7 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14781,8 +14483,7 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14809,8 +14510,7 @@
               "type": "MAGIC_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14837,8 +14537,7 @@
               "type": "MAGIC_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -14865,8 +14564,7 @@
               "type": "MAGIC_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15072,8 +14770,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15100,8 +14797,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15128,8 +14824,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15156,8 +14851,7 @@
               "type": "SLASH_ATK",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15184,8 +14878,7 @@
               "type": "SLASH_ATK",
               "minValue": 12,
               "maxValue": 12,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15332,8 +15025,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15360,8 +15052,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15388,8 +15079,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15416,8 +15106,7 @@
               "type": "SLASH_ATK",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15444,8 +15133,7 @@
               "type": "SLASH_ATK",
               "minValue": 13,
               "maxValue": 13,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15592,8 +15280,7 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15620,8 +15307,7 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15648,8 +15334,7 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15676,8 +15361,7 @@
               "type": "SLASH_ATK",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15704,8 +15388,7 @@
               "type": "SLASH_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -15917,8 +15600,7 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -15945,8 +15627,7 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -15973,8 +15654,7 @@
               "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16001,8 +15681,7 @@
               "type": "SLASH_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16029,8 +15708,7 @@
               "type": "SLASH_RES",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16182,8 +15860,7 @@
               "type": "STRIKE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16210,8 +15887,7 @@
               "type": "STRIKE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16238,8 +15914,7 @@
               "type": "STRIKE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16266,8 +15941,7 @@
               "type": "STRIKE_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16294,8 +15968,7 @@
               "type": "STRIKE_RES",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16459,8 +16132,7 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16487,8 +16159,7 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16515,8 +16186,7 @@
               "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16543,8 +16213,7 @@
               "type": "SLASH_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16571,8 +16240,7 @@
               "type": "SLASH_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16732,8 +16400,7 @@
               "type": "STRIKE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16760,8 +16427,7 @@
               "type": "STRIKE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16788,8 +16454,7 @@
               "type": "STRIKE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16816,8 +16481,7 @@
               "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -16844,8 +16508,7 @@
               "type": "STRIKE_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17005,8 +16668,7 @@
               "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17033,8 +16695,7 @@
               "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17061,8 +16722,7 @@
               "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17089,8 +16749,7 @@
               "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17117,8 +16776,7 @@
               "type": "MAGIC_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17311,8 +16969,7 @@
               "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17339,8 +16996,7 @@
               "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17367,8 +17023,7 @@
               "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17395,8 +17050,7 @@
               "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17423,8 +17077,7 @@
               "type": "MISSILE_RES",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17576,8 +17229,7 @@
               "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17604,8 +17256,7 @@
               "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17632,8 +17283,7 @@
               "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17660,8 +17310,7 @@
               "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17688,8 +17337,7 @@
               "type": "MISSILE_RES",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17845,8 +17493,7 @@
               "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17873,8 +17520,7 @@
               "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17901,8 +17547,7 @@
               "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17929,8 +17574,7 @@
               "type": "MISSILE_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -17957,8 +17601,7 @@
               "type": "MISSILE_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18005,7 +17648,7 @@
       }
     }
   },
-  "AF_LOT_LW_HLM_005": {
+  "AF_LW_HLM_005": {
     "names": {
       "en": "プラチナヘルム"
     },
@@ -18118,8 +17761,7 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18146,8 +17788,7 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18174,8 +17815,7 @@
               "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18202,8 +17842,7 @@
               "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18230,8 +17869,7 @@
               "type": "SLASH_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -18442,8 +18080,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18470,8 +18107,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18498,8 +18134,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18526,8 +18161,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18554,8 +18188,7 @@
               "type": "EVADE",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18725,8 +18358,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18753,8 +18385,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18781,8 +18412,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18809,8 +18439,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -18837,8 +18466,7 @@
               "type": "EVADE",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19008,8 +18636,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19036,8 +18663,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19064,8 +18690,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19092,8 +18717,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19120,8 +18744,7 @@
               "type": "EVADE",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -19365,8 +18988,7 @@
               "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19393,8 +19015,7 @@
               "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19421,8 +19042,7 @@
               "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19449,8 +19069,7 @@
               "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19477,8 +19096,7 @@
               "type": "MAGIC_RES",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19645,8 +19263,7 @@
               "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19673,8 +19290,7 @@
               "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19701,8 +19317,7 @@
               "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19729,8 +19344,7 @@
               "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19757,8 +19371,7 @@
               "type": "MAGIC_RES",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19925,8 +19538,7 @@
               "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19953,8 +19565,7 @@
               "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -19981,8 +19592,7 @@
               "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20009,8 +19619,7 @@
               "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20037,8 +19646,7 @@
               "type": "MAGIC_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20209,8 +19817,7 @@
               "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20237,8 +19844,7 @@
               "type": "MISSILE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20265,8 +19871,7 @@
               "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20293,8 +19898,7 @@
               "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20321,8 +19925,7 @@
               "type": "MISSILE_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20434,8 +20037,7 @@
               "type": "POISON_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20459,8 +20061,7 @@
               "type": "POISON_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -20639,8 +20240,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20664,8 +20264,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20688,8 +20287,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20713,8 +20311,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20739,8 +20336,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20763,8 +20359,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20788,8 +20383,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20814,8 +20408,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20838,8 +20431,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20863,8 +20455,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20889,8 +20480,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20913,8 +20503,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20938,8 +20527,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20964,8 +20552,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -20988,8 +20575,7 @@
               "type": "BRAVERY",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21013,8 +20599,7 @@
               "type": "EVADE",
               "minValue": 6,
               "maxValue": 6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21039,8 +20624,7 @@
               "type": "BRAVERY",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21222,8 +20806,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21247,8 +20830,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21271,8 +20853,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21296,8 +20877,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21322,8 +20902,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21346,8 +20925,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21371,8 +20949,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21397,8 +20974,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21421,8 +20997,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21446,8 +21021,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21472,8 +21046,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21496,8 +21069,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21521,8 +21093,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21547,8 +21118,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21571,8 +21141,7 @@
               "type": "SILENCE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21596,8 +21165,7 @@
               "type": "EVADE",
               "minValue": 7,
               "maxValue": 7,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21622,8 +21190,7 @@
               "type": "SILENCE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21805,8 +21372,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21830,8 +21396,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21854,8 +21419,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21879,8 +21443,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21905,8 +21468,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21929,8 +21491,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -21954,8 +21515,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -21980,8 +21540,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22004,8 +21563,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22029,8 +21587,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22055,8 +21612,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22079,8 +21635,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22104,8 +21659,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22130,8 +21684,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22154,8 +21707,7 @@
               "type": "PARALYZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22179,8 +21731,7 @@
               "type": "EVADE",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22205,8 +21756,7 @@
               "type": "PARALYZE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22388,8 +21938,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22416,8 +21965,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22442,8 +21990,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22470,8 +22017,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22496,8 +22042,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22524,8 +22069,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22550,8 +22094,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22578,8 +22121,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22604,8 +22146,7 @@
               "type": "EVADE",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22632,8 +22173,7 @@
               "type": "IMMOBILIZE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22658,8 +22198,7 @@
               "type": "EVADE",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22845,8 +22384,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22870,8 +22408,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22894,8 +22431,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22919,8 +22455,7 @@
               "type": "ACCURACY",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -22945,8 +22480,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22969,8 +22503,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -22994,8 +22527,7 @@
               "type": "ACCURACY",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23020,8 +22552,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23044,8 +22575,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23069,8 +22599,7 @@
               "type": "ACCURACY",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23095,8 +22624,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23119,8 +22647,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23144,8 +22671,7 @@
               "type": "ACCURACY",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23170,8 +22696,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23194,8 +22719,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23219,8 +22743,7 @@
               "type": "ACCURACY",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23245,8 +22768,7 @@
               "type": "ALL_ELEMENTS_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23425,8 +22947,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23450,8 +22971,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23474,8 +22994,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23499,8 +23018,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23525,8 +23043,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23549,8 +23066,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23574,8 +23090,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23600,8 +23115,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23624,8 +23138,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23649,8 +23162,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23675,8 +23187,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23699,8 +23210,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23724,8 +23234,7 @@
               "type": "EVADE",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23750,8 +23259,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23774,8 +23282,7 @@
               "type": "BLIND_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -23799,8 +23306,7 @@
               "type": "EVADE",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -23825,8 +23331,7 @@
               "type": "BLIND_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24425,15 +23930,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24457,15 +23960,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24488,15 +23989,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24520,8 +24019,7 @@
               "type": "EVADE",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -24546,15 +24044,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24577,15 +24073,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24609,8 +24103,7 @@
               "type": "EVADE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -24635,15 +24128,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24666,15 +24157,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24698,8 +24187,7 @@
               "type": "EVADE",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -24724,15 +24212,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24755,15 +24241,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24787,8 +24271,7 @@
               "type": "EVADE",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -24813,15 +24296,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24844,15 +24325,13 @@
               "type": "STOP_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -24876,8 +24355,7 @@
               "type": "EVADE",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -24902,15 +24380,13 @@
               "type": "STOP_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "SLOW_RES",
               "minValue": 15,
               "maxValue": 30,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25039,22 +24515,19 @@
               "type": "FIRE_RES",
               "minValue": 5,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "WATER_RES",
               "minValue": 3,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "EVADE",
               "minValue": -20,
               "maxValue": -20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -25078,22 +24551,19 @@
               "type": "FIRE_RES",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "WATER_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "EVADE",
               "minValue": -20,
               "maxValue": -20,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -25233,8 +24703,7 @@
               "type": "MAGIC_RES",
               "minValue": 1,
               "maxValue": 1,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25261,8 +24730,7 @@
               "type": "MAGIC_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25289,8 +24757,7 @@
               "type": "MAGIC_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25317,8 +24784,7 @@
               "type": "MAGIC_RES",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25345,8 +24811,7 @@
               "type": "MAGIC_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -25407,6 +24872,542 @@
       "JB_LW_GRSR",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_FF14_HLM_001": {
+    "names": {
+      "en": "ベイルバーゴネット"
+    },
+    "slug": "beirubagonetuto",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 684
+      },
+      "DEF": {
+        "min": 0,
+        "max": 18
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "AGI": {
+        "min": -5,
+        "max": -3
+      },
+      "CRITIC_RATE": {
+        "min": -16,
+        "max": -32
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_FF14_HLM_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "刺突攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SPEAR_1",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "ci-tu-gong-ji-nai-xing-1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "刺突攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SPEAR_2",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "ci-tu-gong-ji-nai-xing-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "刺突攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SPEAR_3",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "ci-tu-gong-ji-nai-xing-3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "刺突攻撃耐性+5"
+          },
+          "dataId": "SK_LW_DF_SPEAR_4_UR",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "ci-tu-gong-ji-nai-xing-5",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "刺突攻撃耐性+10"
+          },
+          "dataId": "SK_LW_DF_SPEAR_5_UR",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "ci-tu-gong-ji-nai-xing-10",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_ff14_hlm_001_5",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff14wpn_hlm_001",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25564,8 +25565,7 @@
               "type": "FIRE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -25734,8 +25734,7 @@
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -25810,8 +25809,7 @@
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -25961,8 +25959,7 @@
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -26038,8 +26035,7 @@
               "minValue": 15,
               "maxValue": 15,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -26113,8 +26109,7 @@
               "type": "ICE_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -26266,8 +26261,7 @@
               "type": "TP",
               "minValue": 50,
               "maxValue": 50,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -26345,8 +26339,7 @@
               "type": "ACTIVAITON_TIME",
               "minValue": -50,
               "maxValue": -50,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -26739,8 +26732,7 @@
               "minValue": 55,
               "maxValue": 75,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -26819,8 +26811,7 @@
               "minValue": 20,
               "maxValue": 35,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -26912,15 +26903,13 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "CT",
               "minValue": 250,
               "maxValue": 500,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -27016,8 +27005,7 @@
               "type": "SLEEP_RES",
               "minValue": 25,
               "maxValue": 25,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27107,29 +27095,25 @@
               "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27226,8 +27210,7 @@
               "type": "WATER_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27324,8 +27307,7 @@
               "type": "LIGHTNING_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27422,8 +27404,7 @@
               "type": "FIRE_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27526,8 +27507,7 @@
               "maxValue": 25,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "MACHINA_KILLER",
@@ -27535,8 +27515,7 @@
               "maxValue": 25,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "ATK",
@@ -27544,16 +27523,14 @@
               "maxValue": 30,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "HP",
               "minValue": 5,
               "maxValue": 20,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -27659,24 +27636,21 @@
               "minValue": 20,
               "maxValue": 50,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "ATK",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "MAG",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -27786,8 +27760,7 @@
               "type": "SLOW_RES",
               "minValue": 25,
               "maxValue": 25,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27887,8 +27860,7 @@
               "type": "EARTH_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -27988,8 +27960,7 @@
               "type": "LIGHT_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -28395,8 +28366,7 @@
               "type": "HP",
               "minValue": 180,
               "maxValue": 210,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -28516,8 +28486,7 @@
               "minValue": 20,
               "maxValue": 35,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -28645,8 +28614,7 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -28889,8 +28857,7 @@
               "type": "ICE_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -29003,8 +28970,7 @@
               "type": "WIND_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -29117,8 +29083,7 @@
               "type": "DARK_RES",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -29319,8 +29284,7 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -29536,8 +29500,7 @@
               "minValue": 150,
               "maxValue": 150,
               "calcType": "percent",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             },
             {
               "type": "CT",
@@ -29545,8 +29508,7 @@
               "maxValue": 500,
               "calcType": "unknow",
               "rate": 15,
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "support",
@@ -29641,8 +29603,7 @@
               "type": "LIGHT_RES",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -29819,16 +29780,14 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "ACCURACY",
               "minValue": 30,
               "maxValue": 60,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -30022,16 +29981,14 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "MOVE",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -30217,8 +30174,7 @@
               "type": "AP",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -30343,16 +30299,14 @@
               "minValue": 15,
               "maxValue": 45,
               "calcType": "fixe",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             },
             {
               "type": "SPR",
               "minValue": 15,
               "maxValue": 45,
               "calcType": "fixe",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "skill",
@@ -30387,36 +30341,31 @@
               "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "STRIKE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "PIERCE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "MISSILE_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             },
             {
               "type": "MAGIC_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "resistance",
-              "fromImbue": false
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -30533,24 +30482,21 @@
               "type": "PROVOKE",
               "minValue": -6,
               "maxValue": -8,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "MOVE",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "JUMP",
               "minValue": 1,
               "maxValue": 1,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -30668,8 +30614,7 @@
               "type": "TP",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -30958,16 +30903,14 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "SLASH_ATK",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -31164,16 +31107,14 @@
               "minValue": 1,
               "maxValue": 1,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "AGI",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -31278,8 +31219,7 @@
               "type": "MAGIC_ATK",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -31366,16 +31306,14 @@
               "minValue": 60,
               "maxValue": 80,
               "calcType": "fixe",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             },
             {
               "type": "ACCURACY",
               "minValue": 15,
               "maxValue": 30,
               "calcType": "fixe",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "skill",
@@ -31467,8 +31405,7 @@
               "minValue": 20,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200,
-              "fromImbue": false
+              "rate": 200
             }
           ],
           "type": "support",
@@ -31587,15 +31524,13 @@
               "maxValue": 25,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "PROVOKE",
               "minValue": -6,
               "maxValue": -6,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "skill",
@@ -31700,8 +31635,7 @@
               "type": "ACQUIRED_AP",
               "minValue": 30,
               "maxValue": 30,
-              "calcType": "percent",
-              "fromImbue": false
+              "calcType": "percent"
             }
           ],
           "type": "support",
@@ -31871,8 +31805,7 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -31988,16 +31921,14 @@
               "minValue": 30,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "TP_AUTO_RESTORE",
               "minValue": 5,
               "maxValue": 10,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -32116,16 +32047,14 @@
               "minValue": 15,
               "maxValue": 45,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "AOE_RES",
               "minValue": -10,
               "maxValue": -25,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -32325,16 +32254,14 @@
               "minValue": 5,
               "maxValue": 5,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "DEFENSE_PENETRATION",
               "minValue": 30,
               "maxValue": 50,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -32425,8 +32352,7 @@
               "type": "ACQUIRED_JP",
               "minValue": 30,
               "maxValue": 30,
-              "calcType": "percent",
-              "fromImbue": false
+              "calcType": "percent"
             }
           ],
           "type": "support",
@@ -32513,16 +32439,14 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             },
             {
               "type": "SHELL_ATK",
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -32617,8 +32541,7 @@
               "type": "AP",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             }
           ],
           "type": "skill",
@@ -32803,8 +32726,7 @@
               "type": "QUICKEN_ATK",
               "calcType": "percent",
               "rate": 200,
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "support",
@@ -32903,8 +32825,7 @@
               "minValue": 20,
               "maxValue": 35,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -33003,16 +32924,14 @@
               "type": "AP",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "unknow",
-              "fromImbue": false
+              "calcType": "unknow"
             },
             {
               "type": "SLASH_RES",
               "minValue": 5,
               "maxValue": 15,
               "calcType": "resistance",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -33189,8 +33108,7 @@
               "minValue": 20,
               "maxValue": 40,
               "calcType": "fixe",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -33306,8 +33224,7 @@
               "minValue": 50,
               "maxValue": 80,
               "calcType": "percent",
-              "turn": 3,
-              "fromImbue": false
+              "turn": 3
             }
           ],
           "type": "skill",
@@ -33524,8 +33441,7 @@
               "type": "PHYSIC_EVADE",
               "calcType": "percent",
               "rate": 200,
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "skill",
@@ -33614,16 +33530,14 @@
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             },
             {
               "type": "ATK",
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 1,
-              "fromImbue": false
+              "turn": 1
             }
           ],
           "type": "skill",
@@ -33741,15 +33655,13 @@
               "type": "MAGIC_ATK",
               "minValue": 10,
               "maxValue": 10,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             },
             {
               "type": "SPIRIT_PENETRATION",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "fixe",
-              "fromImbue": false
+              "calcType": "fixe"
             }
           ],
           "type": "support",
@@ -35406,8 +35318,7 @@
     ],
     "equippableUnits": [],
     "acquisition": {
-      "type": "tmr",
-      "unitId": null
+      "type": "Unknown"
     }
   },
   "AF_LW_SHI_003": {

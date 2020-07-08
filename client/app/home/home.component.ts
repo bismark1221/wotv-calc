@@ -7,6 +7,7 @@ import { CardService } from '../services/card.service'
 import { NavService } from '../services/nav.service'
 import { NameService } from '../services/name.service'
 import { JobService } from '../services/job.service'
+import { EquipmentService } from '../services/equipment.service'
 
 
 @Component({
@@ -47,6 +48,15 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "08/07",
+        items: [
+          {type: "card", dataId: "VC_LW_GUREN"},
+          {type: "card", dataId: "VC_LW_AGON"},
+          {type: "esper", dataId: "UN_LW_S_AGON"},
+          {type: "equipment", dataId: "AF_FF14_HLM_001"}
+        ]
+      },
+      {
         date: "02/07",
         items: [
           {type: "unit", dataId: "UN_LW_P_SCAL"},
@@ -67,14 +77,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_TITN"},
           {type: "card", dataId: "VC_LW_KING"}
         ]
-      },
-      {
-        date: "31/05",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_GRSR"},
-          {type: "unit", dataId: "UN_LW_P_LSWL"},
-          {type: "unit", dataId: "UN_LW_P_RRIR"}
-        ]
       }
     ]
   };
@@ -89,6 +91,7 @@ export class HomeComponent {
     private navService: NavService,
     private nameService: NameService,
     private jobService: JobService,
+    private equipmentService: EquipmentService
   ) {
     this.getTranslation();
     this.getUpdate();

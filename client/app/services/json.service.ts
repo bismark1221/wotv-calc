@@ -1111,11 +1111,9 @@ export class JsonService {
         item.slug = this.slug.slugify(this.names.en[type][item.dataId])
       } else if (type == "job") {
         if (this.names.en[type][item.dataId]) {
-          console.log(this.names.en[type][item.dataId])
           item.names.en = this.names.en[type][item.dataId]
           item.slug = this.slug.slugify(this.names.en[type][item.dataId])
         } else {
-          console.log(item.dataId)
           item.names.en = this.names.jp[type][item.dataId]
           item.slug = slugify(item.names.en)
         }
@@ -1507,6 +1505,8 @@ export class JsonService {
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
                       addedBuff.fromImbue = true;
+                    } else {
+                      delete addedBuff.fromImbue
                     }
 
                     skill.effects.push(addedBuff)
@@ -1797,6 +1797,17 @@ export class JsonService {
     let dataId = equipment.iname;
     let rType = equipment.rtype !=="AF_LOT_50" && equipment.rtype !=="AF_LOT_TRUST" ? equipment.rtype : dataId;
 
+    // @TODO Manage via recipe !!
+
+    if (rType == "AF_LOT_LW_HLM_005") {
+      let splitDataId = dataId.split("_")
+      rType = dataId
+      if (splitDataId[splitDataId.length - 1] === "1" || splitDataId[splitDataId.length - 1] === "2" || splitDataId[splitDataId.length - 1] === "3" || splitDataId[splitDataId.length - 1] === "4" || splitDataId[splitDataId.length - 1] === "5") {
+        splitDataId.pop()
+        rType = splitDataId.join("_")
+      }
+    }
+
     if ((this.version == "jp" || this.names.en.equipment[dataId]) && equipment.type !== -1) {
       if (!this[this.version].wotvEquipments[rType]) {
         this[this.version].wotvEquipments[rType] = {
@@ -1842,9 +1853,15 @@ export class JsonService {
             i++;
           }
 
-          this[this.version].wotvEquipments[rType].acquisition = {
-            type: "tmr",
-            unitId: unitId
+          if (unitId) {
+            this[this.version].wotvEquipments[rType].acquisition = {
+              type: "tmr",
+              unitId: unitId
+            }
+          } else {
+            this[this.version].wotvEquipments[rType].acquisition = {
+              type: "Unknown"
+            }
           }
         } else if (this[this.version].equipmentRecipes[dataId]) {
           let recipe = this[this.version].equipmentRecipes[dataId].recipe;
