@@ -61,14 +61,14 @@
             View by :
           </div> -->
           <div class="sortBy">
-            Sort by :
+            <span>Sort by :</span>
             <select [(ngModel)]="sort" (ngModelChange)="getUnits()">
               <option>rarity</option>
               <option>name</option>
             </select>
           </div>
           <div class="orderBy">
-            Order by :
+            <span>Order by :</span>
             <select [(ngModel)]="order" (ngModelChange)="getUnits()">
               <option>asc</option>
               <option>desc</option>

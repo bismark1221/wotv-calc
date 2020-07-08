@@ -6,7 +6,7 @@
 
 :root {
   --link-color: #0275d8;
-  --table-border: #404040;
+  --table-border: #dadada;
   --background-tooltip: #635b52;
   --btn-background-activated: #e6e6e6;
   --btn-border-activated: #adadad;
@@ -44,7 +44,8 @@
   --footer-link: #1D1B1B;
 
   --card-background: #E8E6DF;
-  --card-title: #3D3A41;
+  --card-title-background: #3D3A41;
+  --card-title-color: #FFF;
   --home-title: rgba(29, 27, 27, 0.95);
 
   --th-background: #3D3A41;
@@ -52,11 +53,16 @@
   --tabs-background: #F4F5F9;
 
   --hr-color: rgba(0, 0, 0, 0.1);
+
+  --filters-background: #F6F7F9;
+  --filters-color: #3D3A41;
+
+  --sortby-color: rgba(61, 58, 65, 0.5);
 }
 
 body {
   padding-top: 60px;
-  font-family: Palatino, Helvetica, sans-serif !important;
+  font-family: Roboto, Helvetica, sans-serif !important;
   background-color: var(--body-background);
   color: var(--body-color);
 }
@@ -66,31 +72,37 @@ a {
 }
 
 button, input, optgroup, select, textarea {
-  font-family: Palatino, Helvetica, sans-serif !important;
+  font-family: Roboto, Helvetica, sans-serif !important;
 }
 
 table, tbody, tr, th, td {
-  border: 1px solid grey;
+  border: 1px solid var(--table-border);
 }
 
 th {
   color: var(--white);
   background-color: var(--th-background);
   text-align: center;
-  border: 1px solid var(--table-border);
   padding: 0.3em 0.5em;
 }
 
 th.sub {
   background-color: var(--sub-th-background);
   color: var(--black);
-  font-weight: normal;
+  font-weight: 100;
 }
 
 td {
   text-align: center;
   padding: 0.3em 0.5em;
-  border: 1px solid var(--table-border);
+}
+
+.text-regular {
+  font-weight: 100;
+}
+
+.text-medium {
+  font-weight: 500;
 }
 
 button.close {
@@ -133,6 +145,11 @@ hr {
   width: 52px;
   height: 52px;
   cursor: pointer;
+  border: 1px solid #404040;
+}
+
+.table-skill tbody, .table-skill tr, .table-skill td {
+  border: 1px solid #404040;
 }
 
 .table-skill td {
@@ -470,4 +487,10 @@ small {
 
 .markdownHome p {
   margin-bottom: 2px;
+}
+
+.searchInput:focus {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: 0 !important;
 }

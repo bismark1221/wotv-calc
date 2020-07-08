@@ -3,7 +3,7 @@ export const themes = {
     name: "light",
     properties: {
       "--link-color": "#0275d8",
-      "--table-border": "#404040",
+      "--table-border": "#dadada",
       "--background-tooltip": "#635b52",
       "--btn-background-activated": "#e6e6e6",
       "--btn-border-activated": "#adadad",
@@ -41,14 +41,21 @@ export const themes = {
       "--footer-link": "#1D1B1B",
 
       "--card-background": "#E8E6DF",
-      "--card-title": "#3D3A41",
+      "--card-background-hover": "#FFF",
+      "--card-title-background": "#3D3A41",
+      "--card-title-color": "#FFF",
       "--home-title": "rgba(29, 27, 27, 0.95)",
 
       "--th-background": "#3D3A41",
       "--sub-th-background": "#E8E6DF",
       "--tabs-background": "#F4F5F9",
 
-      "--hr-color": "rgba(0, 0, 0, 0.1)"
+      "--hr-color": "rgba(0, 0, 0, 0.1)",
+
+      "--filters-background": "#F6F7F9",
+      "--filters-color": "#3D3A41",
+
+      "--sortby-color": "rgba(61, 58, 65, 0.5)",
     }
   },
   dark: {
@@ -92,15 +99,22 @@ export const themes = {
       "--nav-background-main": "#1D1B1B",
       "--footer-link": "#fff",
 
-      "--card-background": "#E8E6DF",
-      "--card-title": "#3D3A41",
+      "--card-background": "#FFF",
+      "--card-background-hover": "#3D3D3D",
+      "--card-title-background": "#E9E9E9",
+      "--card-title-color": "#1D1B1B",
       "--home-title": "rgba(29, 27, 27, 0.95)",
 
       "--th-background": "#3D3A41",
       "--sub-th-background": "#E8E6DF",
       "--tabs-background": "#F4F5F9",
 
-      "--hr-color": "#6b6a68"
+      "--hr-color": "#6b6a68",
+
+      "--filters-background": "rgba(29, 27, 27, 0.8)",
+      "--filters-color": "#FFF",
+
+      "--sortby-color": "rgba(255, 255, 255, 0.5)",
     }
   }
 }

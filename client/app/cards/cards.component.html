@@ -32,14 +32,14 @@
             View by :
           </div> -->
           <div class="sortBy">
-            Sort by :
+            <span>Sort by :</span>
             <select [(ngModel)]="sort" (ngModelChange)="getCards()">
               <option>rarity</option>
               <option>name</option>
             </select>
           </div>
           <div class="orderBy">
-            Order by :
+            <span>Order by :</span>
             <select [(ngModel)]="order" (ngModelChange)="getCards()">
               <option>asc</option>
               <option>desc</option>
