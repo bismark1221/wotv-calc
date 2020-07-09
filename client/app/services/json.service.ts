@@ -1976,7 +1976,7 @@ export class JsonService {
     Object.keys(this[this.version].raid).forEach(raidId => {
       let raid = this[this.version].raid[raidId]
 
-      if (raid.home_tex !== "LAPS_RD_0001" && raid.home_tex !== "LAPS_RD_FF14_01") {
+      if (raid.home_tex !== "LAPS_RD_0001" && (raid.home_tex !== "LAPS_RD_FF14_01" || raidId == "RAID_ID_11")) {
         this[this.version].wotvRaids[raidId] = {
           dataId: raidId,
           names: {},
@@ -1997,7 +1997,7 @@ export class JsonService {
       dataId: dataId,
       names: {},
       stats: {},
-      species: this.species[bossUnit.species[0]],
+      species: bossUnit.species ? this.species[bossUnit.species[0]] : "",
       element: this.elements[bossUnit.elem[0]],
       image: bossUnit.charaId.toLowerCase(),
       skills: {},

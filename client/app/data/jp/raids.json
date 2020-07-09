@@ -1313,5 +1313,217 @@
       }
     ],
     "slug": "kingubehimosu"
+  },
+  "RAID_ID_11": {
+    "dataId": "RAID_ID_11",
+    "names": {
+      "en": "フォーギヴン・ディソナンス"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_FF14_RAID_01",
+        "names": {
+          "en": "フォーギヴン・ディソナンス"
+        },
+        "stats": {
+          "HP": {
+            "min": 1200,
+            "max": 110000
+          },
+          "TP": {
+            "min": 80,
+            "max": 292
+          },
+          "AP": {
+            "min": 48,
+            "max": 300
+          },
+          "ATK": {
+            "min": 130,
+            "max": 700
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 40,
+            "max": 40
+          },
+          "MAG": {
+            "min": 55,
+            "max": 129
+          },
+          "DEX": {
+            "min": 100,
+            "max": 269
+          },
+          "AGI": {
+            "min": 27,
+            "max": 80
+          },
+          "LUCK": {
+            "min": 95,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "ICE_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "EARTH_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "WIND_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "LIGHTNING_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "WATER_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "LIGHT_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "DARK_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "",
+        "element": "light",
+        "image": "ff14boss",
+        "skills": {},
+        "slug": "huogivundeisonansu",
+        "attack": {
+          "names": {
+            "en": "通常攻撃スキル"
+          },
+          "effects": [],
+          "dataId": "SK_FF14BOSS_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "slash",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "slug": "tong-chang-gong-jisukiru",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": "huogivundeisonansu"
   }
 }
