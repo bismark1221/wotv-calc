@@ -72,6 +72,7 @@
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
+        <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']">{{ 'nav.team' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']">{{ 'nav.units' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']">{{ 'nav.cards' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">{{ 'nav.espers' | translate }}</a>

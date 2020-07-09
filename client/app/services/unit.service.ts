@@ -640,6 +640,8 @@ export class UnitService {
   }
 
   changeLevel() {
+    this.disableNotAvailableNodes()
+
     if (this.unit) {
       Object.keys(this.unit.stats).forEach(stat => {
         if (typeof(this.unit.stats[stat].min) == "number") {

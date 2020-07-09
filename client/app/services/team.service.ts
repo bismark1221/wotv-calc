@@ -45,6 +45,16 @@ export class TeamService {
     }
   }
 
+  newTeam() {
+    this.team = {
+      name: "",
+      guild: this.guildService.getGuild(),
+      units: [null, null, null, null, null]
+    }
+
+    return this.team
+  }
+
   getTeam() {
     return this.team
   }
@@ -220,6 +230,8 @@ export class TeamService {
     } else {
       this.team.units[pos].esper = null
     }
+
+    this.team.units[pos].changeLevel(false)
   }
 
   selectCard(pos, cardId, customData = null) {
@@ -228,6 +240,8 @@ export class TeamService {
     } else {
       this.team.units[pos].card = null
     }
+
+    this.team.units[pos].changeLevel(false)
   }
 
   selectEquipment(unitPos, equipmentPos, equipmentId, customData = null) {
@@ -236,17 +250,31 @@ export class TeamService {
     } else {
       this.team.units[unitPos].equipments[equipmentPos] = null
     }
+
+    this.team.units[unitPos].changeLevel(false)
   }
 
   changeStar(pos, value) {
-    this.team.units[pos].updateStar(value)
+    this.team.units[pos].updateStar(value, true)
   }
 
   changeLB(pos, value) {
-    this.team.units[pos].updateLB(value)
+    this.team.units[pos].updateLB(value, true)
+  }
+
+  changeJobLevel(pos) {
+    this.team.units[pos].changeLevel(true, true)
   }
 
   changeLevel(pos) {
-    this.team.units[pos].changeLevel()
+    this.team.units[pos].changeLevel(true, true)
+  }
+
+  maxUnit(pos) {
+    this.team.units[pos].maxUnit()
+  }
+
+  maxLevelAndJobs(pos) {
+    this.team.units[pos].maxLevelAndJobs()
   }
 }

@@ -123,23 +123,26 @@ export class Unit {
     return this.name;
   }
 
-  updateStar(value) {
+  updateStar(value, autoGetSkills = false) {
     this.star = value
+
+    if (autoGetSkills) {
+      this.maxNodes()
+    }
 
     this.updateMaxLevel()
   }
 
-  updateLB(value) {
+  updateLB(value, autoGetSkills = false) {
     this.lb = value
+
+    if (autoGetSkills) {
+      this.maxNodes()
+    }
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
   }
-
-
-
-
-
 
   private updateMaxLevel() {
     let levelPerStar = {
@@ -220,52 +223,72 @@ export class Unit {
     this.disableNotAvailableNodes()
   }
 
-  changeLevel() {
-    if (this) {
-      Object.keys(this.stats).forEach(stat => {
-        if (typeof(this.stats[stat].min) == "number") {
-          this.stats[stat] = {
-            min: this.stats[stat].min,
-            max: this.stats[stat].max
-          }
-        } else {
-          delete this.stats[stat]
-        }
-      })
-
-      Object.keys(this.stats).forEach(stat => {
-        let min = this.stats[stat].min
-        let max = this.stats[stat].max
-
-        this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.level - 1)))
-        this.stats[stat].baseTotal = this.stats[stat].base
-      })
-
-      this.jobsData.forEach((job, jobIndex) => {
-        let subJob = jobIndex !== 0
-        Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
-          if (!this.stats[statType]) {
-            this.stats[statType] = {
-              base: 0
-            }
-          }
-          let stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
-
-          this.stats[statType].baseTotal += stat
-        });
-      })
-
-      Object.keys(this.stats).forEach(stat => {
-        if (!this.stats[stat].baseTotal) {
-          this.stats[stat].base = this.stats[stat].min
-          this.stats[stat].baseTotal = this.stats[stat].min
-        } else {
-          this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal)
-        }
-      })
-
-      this.calculateTotalStats()
+  changeLevel(updateUnitStats = true, autoGetSkills = false) {
+    if (updateUnitStats) {
+      this.calculateBaseStats()
     }
+
+    if (autoGetSkills) {
+      this.activateMasterSkill()
+      this.disableNotAvailableNodes()
+      this.maxNodes()
+    }
+
+    this.calculateTotalStats()
+  }
+
+  private activateMasterSkill() {
+    if (this.level >= 80 && this.masterSkillLevel[this.masterSkillLevel.length - 1] == 1) {
+      this.masterSkillActivated = 1
+    } else if (this.level >= 40) {
+      this.masterSkillActivated = 0
+    } else {
+      this.masterSkillActivated = -1
+    }
+  }
+
+  private calculateBaseStats() {
+    Object.keys(this.stats).forEach(stat => {
+      if (typeof(this.stats[stat].min) == "number") {
+        this.stats[stat] = {
+          min: this.stats[stat].min,
+          max: this.stats[stat].max
+        }
+      } else {
+        delete this.stats[stat]
+      }
+    })
+
+    Object.keys(this.stats).forEach(stat => {
+      let min = this.stats[stat].min
+      let max = this.stats[stat].max
+
+      this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.level - 1)))
+      this.stats[stat].baseTotal = this.stats[stat].base
+    })
+
+    this.jobsData.forEach((job, jobIndex) => {
+      let subJob = jobIndex !== 0
+      Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
+        if (!this.stats[statType]) {
+          this.stats[statType] = {
+            base: 0
+          }
+        }
+        let stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
+
+        this.stats[statType].baseTotal += stat
+      });
+    })
+
+    Object.keys(this.stats).forEach(stat => {
+      if (!this.stats[stat].baseTotal) {
+        this.stats[stat].base = this.stats[stat].min
+        this.stats[stat].baseTotal = this.stats[stat].min
+      } else {
+        this.stats[stat].baseTotal = Math.floor(this.stats[stat].baseTotal)
+      }
+    })
   }
 
   private calculateGuildStats() {
@@ -375,7 +398,22 @@ export class Unit {
   }
 
   private calculateEsperStats() {
-    this.statsType.forEach(statType => {
+    let statsType = [
+      "HP",
+      "TP",
+      "AP",
+      "ATK",
+      "DEF",
+      "SPR",
+      "MAG",
+      "DEX",
+      "AGI",
+      "LUCK",
+      "MOVE",
+      "JUMP"
+    ]
+
+    statsType.forEach(statType => {
       if (this.esper.stats[statType].base) {
         this.stats[statType].esper = Math.ceil(this.esper.stats[statType].base * parseInt(this.esper.resonance) / 10)
       }
@@ -390,7 +428,7 @@ export class Unit {
         if (typeof(this.esper.buffs[statType].percent) == "number"
           && this.esper.buffs[statType].percent != 0
         ) {
-          if (this.statsType.indexOf(statType) !== -1) {
+          if (statsType.indexOf(statType) !== -1) {
             value = Math.floor((this.stats[statType].esper ? this.stats[statType].esper : 0) + (baseTotal * this.esper.buffs[statType].percent / 100))
           } else {
             value = this.esper.buffs[statType].percent
@@ -405,6 +443,21 @@ export class Unit {
   }
 
   private calculateCardStats() {
+    let statsType = [
+      "HP",
+      "TP",
+      "AP",
+      "ATK",
+      "DEF",
+      "SPR",
+      "MAG",
+      "DEX",
+      "AGI",
+      "LUCK",
+      "MOVE",
+      "JUMP"
+    ]
+
     this.card.statsType.forEach(statType => {
       this.stats[statType].card = this.card.stats[statType].total
     })
@@ -412,7 +465,7 @@ export class Unit {
     Object.keys(this.card.buffs.self).forEach(statType => {
       let value = this.card.buffs.self[statType].value
 
-      if (this.statsType.indexOf(statType) !== -1) {
+      if (statsType.indexOf(statType) !== -1) {
         if (this.card.buffs.self[statType].calcType === "percent") {
           value = Math.floor(this.stats[statType].baseTotal * value / 100)
         }
@@ -428,7 +481,7 @@ export class Unit {
     Object.keys(this.card.buffs.party).forEach(statType => {
       let value = this.card.buffs.party[statType].value
 
-      if (this.statsType.indexOf(statType) !== -1) {
+      if (statsType.indexOf(statType) !== -1) {
         if (this.card.buffs.party[statType].calcType === "percent") {
           value = Math.floor(this.stats[statType].baseTotal * value / 100)
         }
@@ -693,7 +746,7 @@ export class Unit {
     })
 
     this.maxNodes()
-    this.changeStar()
+    this.updateStar(6)
     this.changeLevel()
   }
 
@@ -717,5 +770,32 @@ export class Unit {
         }
       }
     })
+
+    this.getActiveSkills()
+  }
+
+  getActiveSkills() {
+    this.activeSkills = []
+
+    Object.keys(this.board.nodes).forEach(nodeId => {
+      let node = this.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "skill" &&
+        (node.skill.mainSkill || node.skill.unlockJob == this.subjob + 1)
+      ) {
+        node.skill.level = node.level
+
+        this.activeSkills.push(node.skill)
+      }
+    })
+
+    this.activatedSupport.forEach(supportNode => {
+      if (supportNode !== "0") {
+        this.board.nodes[supportNode].skill.level = this.board.nodes[supportNode].level
+      }
+    })
+
+    if (this.activatedCounter !== "0") {
+      this.board.nodes[this.activatedCounter].skill.level = this.board.nodes[this.activatedCounter].level
+    }
   }
 }

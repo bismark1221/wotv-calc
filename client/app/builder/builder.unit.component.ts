@@ -353,6 +353,7 @@ export class BuilderUnitComponent implements OnInit {
 
   changeLevel() {
     this.unitService.changeLevel()
+    this.unitService.getActiveSkills()
   }
 
   rightClickNode(node) {

@@ -78,7 +78,7 @@ export class BuilderTeamComponent implements OnInit {
       this.getAvailableUnits(i)
     }
 
-    this.team = this.teamService.getTeam();
+    this.team = this.teamService.newTeam();
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
@@ -191,18 +191,81 @@ export class BuilderTeamComponent implements OnInit {
     this.getAvailableEquipments(pos)
   }
 
+  changeJobLevel(pos) {
+    this.teamService.changeJobLevel(pos)
+  }
+
   changeLevel(pos) {
     this.teamService.changeLevel(pos)
   }
 
   maxUnit(pos) {
-
+    this.teamService.maxUnit(pos)
   }
 
   maxLevelAndJobs(pos) {
-
+    this.teamService.maxLevelAndJobs(pos)
   }
 
+
+
+
+
+
+
+
+
+  showEsperDetail(pos) {
+    const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.esper = this.team.units[pos].esper;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      this.unitService.changeLevel()
+    }, (reason) => {
+      this.unitService.changeLevel()
+    });
+  }
+
+  showCardDetail(pos) {
+    const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.card = this.team.units[pos].card;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      this.unitService.changeLevel()
+    }, (reason) => {
+      this.unitService.changeLevel()
+    });
+  }
+
+  showEquipmentDetail(unitPos, equipmentPos) {
+    const modalRef = this.modalService.open(BuilderEquipmentComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.equipment = this.team.units[unitPos].equipments[equipmentPos];
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      this.unitService.changeLevel()
+    }, (reason) => {
+      this.unitService.changeLevel()
+    });
+  }
+
+  showGuildDetail() {
+    const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.guild = this.team.guild;
+    modalRef.componentInstance.fromUnitBuilder = true;
+
+    modalRef.result.then((result) => {
+      this.unitService.changeLevel()
+    }, (reason) => {
+      this.unitService.changeLevel()
+    });
+  }
 
   console() {
     console.log(this.team)

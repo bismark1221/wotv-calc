@@ -53,7 +53,7 @@
       <tr>
         <td *ngFor="let j of [0, 1, 2]">
           <img [className]="j == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + team.units[i].jobsData[j].image + '.png'}}" />
-          <select *ngIf="team.units[i].jobsData[j].unlocked" [(ngModel)]="team.units[i].jobsData[j].level" (ngModelChange)="changeLevel(i)">
+          <select *ngIf="team.units[i].jobsData[j].unlocked" [(ngModel)]="team.units[i].jobsData[j].level" (ngModelChange)="changeJobLevel(i)">
             <option *ngFor="let level of team.units[i].tableJobLevels">{{ level }}</option>
           </select>
           <select *ngIf="!team.units[i].jobsData[j].unlocked"></select>
@@ -83,7 +83,7 @@
             </ng-select>
             <div *ngIf="team.units[i].equipments && selected.equipments[i][j]">
               <img src="{{'assets/equipments/' + team.units[i].equipments[j].image + '.png'}}" class="equipmentImg background_{{ team.units[i].equipments[j].category }}"/>
-              <!-- <button (click)="showEquipmentDetail(0)">Custom</button> -->
+              <button (click)="showEquipmentDetail(i, j)">Custom</button>
             </div>
             <div *ngIf="!selected.equipments[i][j]">
               <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -113,7 +113,11 @@
 
           <div *ngIf="team.units[i].esper">
             <img src="{{'assets/units/' + team.units[i].esper.image + '_m.png'}}" class="esperImg"/>
-            <!-- <button (click)="showEsperDetail()">Custom</button> -->
+            Reso
+            <select [(ngModel)]="team.units[i].esper.resonance" (ngModelChange)="changeLevel(i)">
+              <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
+            </select><br />
+            <button (click)="showEsperDetail(i)">Custom</button>
           </div>
 
           <div *ngIf="!team.units[i].esper">
@@ -133,13 +137,52 @@
 
           <div *ngIf="team.units[i].card">
             <img src="{{'assets/cards/' + team.units[i].card.image + '_m.png'}}" class="cardImg"/>
-            <!-- <button (click)="showCardDetail()">Custom</button> -->
+            <button (click)="showCardDetail(i)">Custom</button>
           </div>
 
           <div *ngIf="!team.units[i].card">
             <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
           </div>
         </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>HP</td>
+        <td>{{ team.units[i].stats.HP.total }}</td>
+        <td>ATK</td>
+        <td>{{ team.units[i].stats.ATK.total }}</td>
+      </tr>
+      <tr>
+        <td>TP</td>
+        <td>{{ team.units[i].stats.TP.total }}</td>
+        <td>MAG</td>
+        <td>{{ team.units[i].stats.MAG.total }}</td>
+      </tr>
+      <tr>
+        <td>AP</td>
+        <td>{{ team.units[i].stats.INITIAL_AP.total }} / {{ team.units[i].stats.AP.total }}</td>
+        <td>AGI</td>
+        <td>{{ team.units[i].stats.AGI.total }}</td>
+      </tr>
+      <tr>
+        <td>Move</td>
+        <td>{{ team.units[i].stats.MOVE.total }}</td>
+        <td>DEX</td>
+        <td>{{ team.units[i].stats.DEX.total }}</td>
+      </tr>
+      <tr>
+        <td>Jump</td>
+        <td>{{ team.units[i].stats.JUMP.total }}</td>
+        <td>Luck</td>
+        <td>{{ team.units[i].stats.LUCK.total }}</td>
+      </tr>
+      <tr>
+        <td>DEF</td>
+        <td>{{ team.units[i].stats.DEF.total }}</td>
+        <td>SPR</td>
+        <td>{{ team.units[i].stats.SPR.total }}</td>
       </tr>
     </table>
   </div>
