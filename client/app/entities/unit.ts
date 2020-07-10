@@ -26,7 +26,9 @@ export class Unit {
   stats = {
     "HP": {},
     "TP": {},
-    "AP": {},
+    "AP": {
+      total: 0
+    },
     "ATK": {},
     "DEF": {},
     "SPR": {},
@@ -34,7 +36,10 @@ export class Unit {
     "DEX": {},
     "AGI": {},
     "LUCK": {},
-    "INITIAL_AP": {},
+    "INITIAL_AP": {
+      base: 0,
+      baseTotal: 0
+    },
     "ACCURACY": {},
     "CRITIC_RATE": {},
     "CRITIC_AVOID": {},
@@ -94,6 +99,30 @@ export class Unit {
   slug;
   board;
   attack;
+
+  // Only for builder
+  star
+  lb
+  maxLevel
+  level
+  tableLevels
+  maxJobLevel
+  jobsData
+  tableJobLevels
+  masterSkillLevel
+  masterSkillActivated
+  activatedCounter
+  activatedSupport
+  activeSkills
+  subjob
+  esper
+  card
+  equipments
+  grid
+  imbue
+  guild
+
+
 
   constructFromJson(unit: Unit, translateService): void {
     this.dataId = unit.dataId;
@@ -292,13 +321,10 @@ export class Unit {
   }
 
   private calculateGuildStats() {
-    let guild = this.guild
-    if (guild) {
-      let statues = this.guildService.getStatues()
-
-      Object.keys(guild).forEach(statue => {
-        if (guild[statue] > 0) {
-          statues[statue][guild[statue] - 1].forEach(stat => {
+    if (this.guild.data) {
+      Object.keys(this.guild.data).forEach(statue => {
+        if (this.guild.data[statue] > 0) {
+          this.guild.statues[statue][this.guild.data[statue] - 1].forEach(stat => {
             let value = stat.value;
             if (stat.calcType == "percent") {
               value = Math.floor(this.stats[stat.type].baseTotal * value / 100)
@@ -314,19 +340,56 @@ export class Unit {
   private updateStat(type, value, statType, calc = "fixe", reset = false) {
     switch (type) {
       case "ALL_ELEMENTS_RES" :
-        this.elements.forEach(element => {
+        let elements = [
+          "FIRE",
+          "ICE",
+          "EARTH",
+          "WIND",
+          "LIGHTNING",
+          "WATER",
+          "LIGHT",
+          "DARK"
+        ]
+
+        elements.forEach(element => {
           this.updateStat(element + "_RES", value, statType, calc)
         })
       break
 
       case "ALL_ATTACKS_RES" :
-        this.atks.forEach(atk => {
+        let atks = [
+          "SLASH",
+          "PIERCE",
+          "STRIKE",
+          "MISSILE",
+          "MAGIC"
+        ]
+
+        atks.forEach(atk => {
           this.updateStat(atk + "_RES", value, statType, calc)
         })
       break
 
       case "ALL_AILMENTS_RES" :
-        this.ailments.forEach(ailment => {
+        let ailments = [
+          "POISON",
+          "BLIND",
+          "SLEEP",
+          "SILENCE",
+          "PARALYZE",
+          "CONFUSION",
+          "PETRIFY",
+          "TOAD",
+          "CHARM",
+          "SLOW",
+          "STOP",
+          "IMMOBILIZE",
+          "DISABLE",
+          "BERSERK",
+          "DOOM",
+        ]
+
+        ailments.forEach(ailment => {
           this.updateStat(ailment + "_RES", value, statType, calc)
         })
       break

@@ -40,7 +40,7 @@ export class TeamService {
   ) {
     this.team = {
       name: "",
-      guild: this.guildService.getGuild(),
+      guild: this.guildService.getGuildForBuilder(),
       units: [null, null, null, null, null]
     }
   }
@@ -48,7 +48,7 @@ export class TeamService {
   newTeam() {
     this.team = {
       name: "",
-      guild: this.guildService.getGuild(),
+      guild: this.guildService.getGuildForBuilder(),
       units: [null, null, null, null, null]
     }
 
@@ -71,7 +71,7 @@ export class TeamService {
   getSavableData(team) {
     let data = {
       name: team.name,
-      guild: team.guild,
+      guild: team.guild.data,
       units: []
     }
 

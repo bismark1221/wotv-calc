@@ -78,6 +78,19 @@ export class GuildService {
     return this.guild
   }
 
+  getGuildForBuilder() {
+    if (this.localStorageService.get(this.getLocalStorage())) {
+      this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
+    } else {
+      this.guild = new Guild();
+    }
+
+    return {
+      data: this.guild,
+      statues: this.statues
+    }
+  }
+
   saveGuild() {
     this.localStorageService.set(this.getLocalStorage(), this.guild);
   }
