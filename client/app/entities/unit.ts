@@ -861,4 +861,36 @@ export class Unit {
       this.board.nodes[this.activatedCounter].skill.level = this.board.nodes[this.activatedCounter].level
     }
   }
+
+  getAvailableSupportNodes(pos, nameService) {
+    let nodes = []
+
+    Object.keys(this.board.nodes).forEach(nodeId => {
+      let node = this.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "support" && this.activatedSupport[(pos == 0 ? 1 : 0)] !== nodeId) {
+        nodes.push({
+          nodeId: nodeId.toString(),
+          name: nameService.getName(node.skill)
+        })
+      }
+    })
+
+    return nodes
+  }
+
+  getAvailableCounterNodes(nameService) {
+    let nodes = []
+
+    Object.keys(this.board.nodes).forEach(nodeId => {
+      let node = this.board.nodes[nodeId]
+      if (node.level && node.level >= 1 && node.skill.type == "counter") {
+        nodes.push({
+          nodeId: nodeId.toString(),
+          name: nameService.getName(node.skill)
+        })
+      }
+    })
+
+    return nodes
+  }
 }

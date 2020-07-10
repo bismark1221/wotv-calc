@@ -115,14 +115,22 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   selectUnit(pos, customData = null) {
+    let removedUnit = !this.selected.units[pos] && this.team.units[pos] ? true : false
     this.teamService.selectUnit(pos, this.selected.units[pos])
-    this.getAvailableEspers(pos)
-    this.getAvailableCards(pos)
-    this.getAvailableEquipments(pos)
+
+    if (this.selected.units[pos]) {
+      this.getAvailableEspers(pos)
+      this.getAvailableCards(pos)
+      this.getAvailableEquipments(pos)
+    }
 
     for (let i = 0; i <= 4; i++) {
       if (i != pos) {
         this.getAvailableUnits(i)
+        if (removedUnit) {
+          this.getAvailableEspers(i)
+          this.getAvailableCards(i)
+        }
       }
     }
   }
@@ -207,9 +215,21 @@ export class BuilderTeamComponent implements OnInit {
     this.teamService.maxLevelAndJobs(pos)
   }
 
+  changeSubJob() {
 
+  }
 
+  changeCounter() {
 
+  }
+
+  getAvailableSupportNodes(unitPos, supportPos) {
+    return this.teamService.getAvailableSupportNodes(unitPos, supportPos)
+  }
+
+  getAvailableCounterNodes(pos) {
+    return this.teamService.getAvailableCounterNodes(pos)
+  }
 
 
 

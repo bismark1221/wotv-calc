@@ -221,7 +221,13 @@ export class TeamService {
   }
 
   selectUnit(pos, unitId) {
-    this.team.units[pos] = this.unitService.selectUnitForBuilder(unitId)
+    if (unitId) {
+      this.team.units[pos] = this.unitService.selectUnitForBuilder(unitId)
+      this.team.units[pos].guild = this.team.guild
+      this.team.units[pos].changeLevel(true, true)
+    } else {
+      this.team.units[pos] = null
+    }
   }
 
   selectEsper(pos, esperId, customData = null) {
@@ -276,5 +282,13 @@ export class TeamService {
 
   maxLevelAndJobs(pos) {
     this.team.units[pos].maxLevelAndJobs()
+  }
+
+  getAvailableSupportNodes(unitPos, supportPos) {
+    return this.team.units[unitPos].getAvailableSupportNodes(supportPos, this.nameService)
+  }
+
+  getAvailableCounterNodes(pos) {
+    return this.team.units[pos].getAvailableCounterNodes(this.nameService)
   }
 }

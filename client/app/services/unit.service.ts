@@ -540,9 +540,26 @@ export class UnitService {
         this.unit.activatedCounter = unit.activatedCounter
       }
 
-      this.unit.savedEsper = unit.esper
-      this.unit.savedCard = unit.card
-      this.unit.savedEquipments = unit.equipments
+      if (unit.esper) {
+        this.unit.esper = this.esperService.selectEsperForBuilder(unit.esper.dataId, unit.esper)
+      } else {
+        this.unit.esper = null
+      }
+
+      if (unit.card) {
+        this.unit.card = this.cardService.selectCardForBuilder(unit.card.dataId, unit.card)
+      } else {
+        this.unit.card = null
+      }
+
+      this.unit.equipments = []
+      for (let i = 0; i<= 2; i++) {
+        if (unit.equipments[i]) {
+          this.unit.equipments[i] = this.equipmentService.selectEquipmentForBuilder(unit.equipments[i].dataId, unit.equipments[i])
+        } else {
+          this.unit.equipments[i] = null
+        }
+      }
 
       if (unit.guild) {
         this.unit.savedGuild = unit.guild

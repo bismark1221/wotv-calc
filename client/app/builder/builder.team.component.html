@@ -149,6 +149,53 @@
 
     <table>
       <tr>
+        <td colspan="2">Support Skills</td>
+      </tr>
+      <tr *ngFor="let j of [0, 1]">
+        <td>
+          <select [(ngModel)]="team.units[i].activatedSupport[j]" (ngModelChange)="changeLevel(i)">
+            <option value="0"></option>
+            <option *ngFor="let node of getAvailableSupportNodes(i, j)" [ngValue]="node.nodeId">
+              {{ node.name }}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>Counter Skill</td>
+      </tr>
+      <tr>
+        <td>
+          <select [(ngModel)]="team.units[i].activatedCounter" (ngModelChange)="changeCounter(i)">
+            <option value="0"></option>
+            <option *ngFor="let node of getAvailableCounterNodes(i)" [ngValue]="node.nodeId">
+              {{ node.name }}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>Sub-job</td>
+      </tr>
+      <tr>
+        <td>
+          <select [(ngModel)]="team.units[i].subjob" (ngModelChange)="changeSubJob(i)">
+            <option *ngFor="let j of [0, 1, 2]" [ngValue]="j">
+              {{ team.units[i].jobsData[j].name }}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
         <td>HP</td>
         <td>{{ team.units[i].stats.HP.total }}</td>
         <td>ATK</td>
