@@ -34,7 +34,7 @@ export class BuilderCardComponent implements OnInit {
   }
 
   private getCards() {
-    this.cards = this.cardService.getCardsForBuilder(this.translateService);
+    this.cards = this.cardService.getCardsForBuilder();
     this.cards = [...this.cards];
   }
 

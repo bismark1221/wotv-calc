@@ -119,6 +119,20 @@ export class BuilderTeamComponent implements OnInit {
     this.teamService.selectUnit(pos, this.selected.units[pos])
 
     if (this.selected.units[pos]) {
+      if (this.team.units[pos].esper) {
+        this.selected.espers[pos] = this.team.units[pos].esper.dataId
+      }
+
+      if (this.team.units[pos].card) {
+        this.selected.cards[pos] = this.team.units[pos].card.dataId
+      }
+
+      this.team.units[pos].equipments.forEach((equipment, equipmentIndex) => {
+        if (equipment) {
+          this.selected.equipments[pos][equipmentIndex] = equipment.dataId
+        }
+      })
+
       this.getAvailableEspers(pos)
       this.getAvailableCards(pos)
       this.getAvailableEquipments(pos)
@@ -289,5 +303,6 @@ export class BuilderTeamComponent implements OnInit {
 
   console() {
     console.log(this.team)
+    console.log(this.selected)
   }
 }

@@ -239,7 +239,7 @@ export class CardService {
   }
 
 
-  getCardsForBuilder(translate) {
+  getCardsForBuilder() {
     let cards = this.getCardsForListing(null, "rarity", "asc");
 
     let formattedCardsForBuilder = []

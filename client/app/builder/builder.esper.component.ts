@@ -73,7 +73,7 @@ export class BuilderEsperComponent implements OnInit {
   }
 
   private getEspers() {
-    this.espers = this.esperService.getEspersForBuilder(this.translateService);
+    this.espers = this.esperService.getEspersForBuilder();
     this.espers = [...this.espers];
   }
 

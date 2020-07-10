@@ -160,12 +160,12 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private getCards() {
-    this.cards = this.cardService.getCardsForBuilder(this.translateService);
+    this.cards = this.cardService.getCardsForBuilder();
     this.cards = [...this.cards];
   }
 
   private getEspers() {
-    this.espers = this.esperService.getEspersForBuilder(this.translateService);
+    this.espers = this.esperService.getEspersForBuilder();
     this.espers = [...this.espers];
   }
 

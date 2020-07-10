@@ -75,6 +75,11 @@ tr.disable {
 .leftBlock {
   display: inline-block;
   width: 250px;
+  vertical-align: top;
+}
+
+.leftBlock:not(:last-child) {
+  margin-right: 10px;
 }
 
 .leftBlock .unitDiv {

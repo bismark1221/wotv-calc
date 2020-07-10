@@ -330,7 +330,7 @@ export class EsperService {
   }
 
 
-  getEspersForBuilder(translate) {
+  getEspersForBuilder() {
     let espers = this.getEspersForListing(null, "rarity", "asc");
 
     let formattedEspersForBuilder = []
