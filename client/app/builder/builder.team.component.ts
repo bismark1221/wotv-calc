@@ -269,9 +269,17 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      this.teamService.changeCardLevel(pos)
+      this.team.units.forEach((unit, unitIndex) => {
+        if (unit) {
+          this.teamService.changeCardLevel(unitIndex)
+        }
+      })
     }, (reason) => {
-      this.teamService.changeCardLevel(pos)
+      this.team.units.forEach((unit, unitIndex) => {
+        if (unit) {
+          this.teamService.changeCardLevel(unitIndex)
+        }
+      })
     });
   }
 
