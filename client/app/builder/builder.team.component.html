@@ -237,4 +237,56 @@
 
 <div>
   <button (click)="console()">CONSOLE</button>
+  <button (click)="openSaveModal(saveModal)">SAVE TEAM</button>
+  <button (click)="openLoadModal(loadModal)">LOAD TEAM</button>
+  <button (click)="openLinkModal(linkModal)">GET LINK</button>
 </div>
+
+
+<ng-template #saveModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div>
+    <h1>Save New team</h1>
+    <input type="text" />
+    <button (click)="saveNewTeam()">Save</button>
+  </div>
+  <div>
+    <h1>If old team possible to save on it</h1>
+    <button (click)="saveOldTeam()">Save</button>
+  </div>
+
+</ng-template>
+
+<ng-template #loadModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div>
+    <h1>List old teams</h1>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="customRadio1">Team 1</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="customRadio2">Team 2</label>
+    </div>
+    <button (click)="loadTeam()">Load</button>
+  </div>
+</ng-template>
+
+<ng-template #linkModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
+  <button (click)="copyLink()">Copy</button>
+</ng-template>

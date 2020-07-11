@@ -245,10 +245,6 @@ export class BuilderTeamComponent implements OnInit {
     return this.teamService.getAvailableCounterNodes(pos)
   }
 
-
-
-
-
   showEsperDetail(pos) {
     const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
 
@@ -312,6 +308,44 @@ export class BuilderTeamComponent implements OnInit {
       }
     });
   }
+
+  openLinkModal(content) {
+    // this.teamService.getExportableLink().subscribe((data: any) => {
+    //   this.exportableLink = data.shorturl;
+    // })
+
+    this.exportableLink = this.teamService.getExportableLink()
+
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  openSaveModal(content) {
+    // this.unitService.getSavedTeam()
+
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  openLoadModal(content) {
+    //this.unitService.getSavedTeam()
+
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  closeModal() {
+    this.modalService.dismissAll();
+  }
+
+  copyLink() {
+    this.clipboardService.copyFromContent(this.exportableLink)
+  }
+
+
+
+
+
 
   console() {
     console.log("=== TEAM ===")

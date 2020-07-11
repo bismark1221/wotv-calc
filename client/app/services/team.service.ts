@@ -93,10 +93,11 @@ export class TeamService {
   }
 
   getExportableLink() {
-    let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + btoa(JSON.stringify(this.getSavableData(this.team)))
-    let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
+    let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" //+ btoa(JSON.stringify(this.getSavableData(this.team)))
+    //let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
 
-    return this.http.get(shortenUrl);
+    return builderLink
+    //return this.http.get(shortenUrl);
   }
 
   getAvailableUnits(pos) {
