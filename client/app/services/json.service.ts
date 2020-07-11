@@ -260,7 +260,7 @@ export class JsonService {
     180: "PROVOKE",
     181: "BRAVERY",
     182: "FAITH",
-    183: "ACTIVAITON_TIME",
+    183: "ACTIVATION_TIME",
     190: "ACQUIRED_AP",
     194: "ACQUIRED_JP",
     191: "EVOCATION_GAUGE_BOOST",

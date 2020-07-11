@@ -224,9 +224,27 @@ export class TeamService {
     if (unitId) {
       this.team.units[pos] = this.unitService.selectUnitForBuilder(unitId)
       this.team.units[pos].guild = this.team.guild
+
+      for (let i = 0; i <= 4; i++) {
+        if (this.team.units[i]) {
+          if (i != pos) {
+            this.team.units[pos].teamCards[i] = this.team.units[i].card
+            this.team.units[i].teamCards[pos] = this.team.units[pos].card
+            this.team.units[i].changeLevel(false)
+          }
+        }
+      }
+
       this.team.units[pos].changeLevel(true, true)
     } else {
       this.team.units[pos] = null
+
+      for (let i = 0; i <= 4; i++) {
+        if (i != pos && this.team.units[i]) {
+          this.team.units[i].teamCards[pos] = null
+          this.team.units[i].changeLevel(false)
+        }
+      }
     }
   }
 
@@ -247,7 +265,14 @@ export class TeamService {
       this.team.units[pos].card = null
     }
 
-    this.team.units[pos].changeLevel(false)
+    for (let i = 0; i <= 4; i++) {
+      if (this.team.units[i]) {
+        if (i != pos) {
+          this.team.units[i].teamCards[pos] = this.team.units[pos].card
+        }
+        this.team.units[i].changeLevel(false)
+      }
+    }
   }
 
   selectEquipment(unitPos, equipmentPos, equipmentId, customData = null) {
@@ -274,6 +299,16 @@ export class TeamService {
 
   changeLevel(pos) {
     this.team.units[pos].changeLevel(true, true)
+  }
+
+  changeCardLevel(pos) {
+    for (let i = 0; i <= 4; i++) {
+      if (i == pos) {
+        this.team.units[pos].changeLevel(true, true)
+      } else {
+        this.team.units[pos].changeLevel(false)
+      }
+    }
   }
 
   maxUnit(pos) {

@@ -121,6 +121,7 @@ export class Unit {
   grid
   imbue
   guild
+  teamCards = []
 
 
 
@@ -253,8 +254,8 @@ export class Unit {
   }
 
   changeLevel(updateUnitStats = true, autoGetSkills = false) {
-    if (updateUnitStats) {
       this.calculateBaseStats()
+    if (updateUnitStats) {
     }
 
     if (autoGetSkills) {
@@ -558,6 +559,43 @@ export class Unit {
     })
   }
 
+  private calculatePartyCardsStats() {
+    let statsType = [
+      "HP",
+      "TP",
+      "AP",
+      "ATK",
+      "DEF",
+      "SPR",
+      "MAG",
+      "DEX",
+      "AGI",
+      "LUCK",
+      "MOVE",
+      "JUMP"
+    ]
+
+    this.teamCards.forEach(card => {
+      if (card) {
+        Object.keys(card.buffs.party).forEach(statType => {
+          let value = card.buffs.party[statType].value
+
+          if (statsType.indexOf(statType) !== -1) {
+            if (card.buffs.party[statType].calcType === "percent") {
+              value = Math.floor(this.stats[statType].baseTotal * value / 100)
+            }
+
+            if (this.stats[statType].cardParty) {
+              value += this.stats[statType].cardParty
+            }
+          }
+
+          this.updateStat(statType, value, "cardParty", "fixe")
+        })
+      }
+    })
+  }
+
   private calculateEquipmentsStats() {
     let statsType = [];
     this.imbue = null;
@@ -650,6 +688,7 @@ export class Unit {
     this.calculateBoardStats()
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
+    this.calculatePartyCardsStats()
 
     if (this.esper) {
       this.calculateEsperStats()

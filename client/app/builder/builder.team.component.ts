@@ -256,9 +256,9 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      this.unitService.changeLevel()
+      this.teamService.changeLevel(pos)
     }, (reason) => {
-      this.unitService.changeLevel()
+      this.teamService.changeLevel(pos)
     });
   }
 
@@ -269,9 +269,9 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      this.unitService.changeLevel()
+      this.teamService.changeCardLevel(pos)
     }, (reason) => {
-      this.unitService.changeLevel()
+      this.teamService.changeCardLevel(pos)
     });
   }
 
@@ -282,9 +282,9 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      this.unitService.changeLevel()
+      this.teamService.changeLevel(unitPos)
     }, (reason) => {
-      this.unitService.changeLevel()
+      this.teamService.changeLevel(unitPos)
     });
   }
 
@@ -295,14 +295,20 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
-      this.unitService.changeLevel()
+      for (let i = 0; i <= 4; i++) {
+        this.teamService.changeLevel(i)
+      }
     }, (reason) => {
-      this.unitService.changeLevel()
+      for (let i = 0; i <= 4; i++) {
+        this.teamService.changeLevel(i)
+      }
     });
   }
 
   console() {
+    console.log("=== TEAM ===")
     console.log(this.team)
+    console.log("=== SELECTED ===")
     console.log(this.selected)
   }
 }
