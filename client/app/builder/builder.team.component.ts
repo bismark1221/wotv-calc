@@ -38,6 +38,7 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   selected = {
+    team: null,
     units: [null, null, null, null, null],
     espers: [null, null, null, null, null],
     cards: [null, null, null, null, null],
@@ -54,6 +55,7 @@ export class BuilderTeamComponent implements OnInit {
   statueNames
   exportableLink = ""
   confirmModal = null
+  savedTeams = null
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -332,10 +334,16 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   openLoadModal(content) {
-    //this.unitService.getSavedTeam()
+    this.savedTeams = Object.keys(this.teamService.getSavedTeams())
 
     const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
     modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  loadTeam() {
+    console.log(this.selected.team)
+    this.teamService.loadTeam(this.selected.team)
+    this.closeModal()
   }
 
   closeConfirmModal() {

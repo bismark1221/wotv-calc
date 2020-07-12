@@ -84,6 +84,14 @@ export class TeamService {
     return data
   }
 
+  getSavedTeam(teamId) {
+    if (!this.savedTeams) {
+      this.getSavedTeams()
+    }
+
+    return this.savedTeams[teamId]
+  }
+
   saveTeam(team) {
     if (!this.savedTeams) {
       this.getSavedTeams()
@@ -112,6 +120,22 @@ export class TeamService {
 
     return builderLink
     //return this.http.get(shortenUrl);
+  }
+
+  loadTeam(teamId) {
+    let team = this.getSavedTeam(teamId)
+
+    this.team.guild.data = team.guild
+    this.team.name = team.name
+
+    team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        this.team.units[unitIndex] = this.unitService.selectUnitForBuilder(unit.dataId, unit)
+      }
+    })
+
+    console.log(team)
+    console.log(this.team)
   }
 
   getAvailableUnits(pos) {

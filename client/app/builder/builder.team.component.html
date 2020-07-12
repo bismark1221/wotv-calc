@@ -1,3 +1,7 @@
+<div *ngIf="team.name">
+  <h1>{{ team.name }}</h1>
+</div>
+
 <div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
   <div>
     <ng-select [items]="list.units[i]"
@@ -276,14 +280,9 @@
     </button>
   </div>
   <div>
-    <h1>List old teams</h1>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio1">Team 1</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio2">Team 2</label>
+    <h3>Teams</h3>
+    <div *ngFor="let savedTeam of savedTeams">
+      <input type="radio" [(ngModel)]="selected.team" value="{{savedTeam}}">{{ savedTeam }}
     </div>
     <button (click)="loadTeam()">Load</button>
   </div>
