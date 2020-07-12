@@ -94,6 +94,18 @@ export class TeamService {
     this.localStorageService.set(this.getLocalStorage(), this.savedTeams);
   }
 
+  teamAlreadyExists(team) {
+    if (!this.savedTeams) {
+      this.getSavedTeams()
+    }
+
+    if (this.savedTeams[team.name]) {
+      return true
+    }
+
+    return false
+  }
+
   getExportableLink() {
     let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + btoa(JSON.stringify(this.getSavableData(this.team)))
     //let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink

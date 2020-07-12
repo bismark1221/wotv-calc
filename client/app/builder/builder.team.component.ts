@@ -53,6 +53,7 @@ export class BuilderTeamComponent implements OnInit {
   team = null
   statueNames
   exportableLink = ""
+  confirmModal = null
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -321,10 +322,13 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   openSaveModal(content) {
-    // this.unitService.getSavedTeam()
-
     const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
     modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  openConfirmModal(content) {
+    this.confirmModal = this.modalService.open(content, {windowClass: 'link-modal'});
+    this.confirmModal.result.then((result) => {}, (reason) => {})
   }
 
   openLoadModal(content) {
@@ -332,6 +336,10 @@ export class BuilderTeamComponent implements OnInit {
 
     const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
     modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  closeConfirmModal() {
+    this.confirmModal.close()
   }
 
   closeModal() {
@@ -342,6 +350,18 @@ export class BuilderTeamComponent implements OnInit {
     this.clipboardService.copyFromContent(this.exportableLink)
   }
 
+  saveTeam(confirmContent) {
+    if (this.teamService.teamAlreadyExists(this.team)) {
+      this.openConfirmModal(confirmContent)
+    } else {
+      this.teamService.saveTeam(this.team)
+    }
+  }
+
+  confirmSave() {
+    this.teamService.saveTeam(this.team)
+    this.closeModal()
+  }
 
 
 

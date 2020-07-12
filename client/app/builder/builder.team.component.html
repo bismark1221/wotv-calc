@@ -250,15 +250,23 @@
     </button>
   </div>
   <div>
-    <h1>Save New team</h1>
-    <input type="text" />
-    <button (click)="saveNewTeam()">Save</button>
+    <h3>Save team</h3>
+    <input type="text" [(ngModel)]="team.name" />
+    <button (click)="saveTeam(confirmSaveModal)">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #confirmSaveModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeConfirmModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
   <div>
-    <h1>If old team possible to save on it</h1>
-    <button (click)="saveOldTeam()">Save</button>
+    <h3>This team already exists, do you whant to replace it ?</h3>
+    <button (click)="confirmSave()">Replace</button>
+    <button (click)="closeConfirmModal()">Cancel</button>
   </div>
-
 </ng-template>
 
 <ng-template #loadModal let-modal>
