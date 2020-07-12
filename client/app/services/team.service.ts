@@ -128,11 +128,13 @@ export class TeamService {
     this.team.guild.data = team.guild
     this.team.name = team.name
 
-    team.units.forEach((unit, unitIndex) => {
-      if (unit) {
-        this.team.units[unitIndex] = this.unitService.selectUnitForBuilder(unit.dataId, unit)
+    for (let i = 0; i <= 4; i++) {
+      if (team.units[i]) {
+        this.team.units[i] = this.unitService.selectUnitForBuilder(team.units[i].dataId, team.units[i])
+      } else {
+        this.team.units[i] = null
       }
-    })
+    }
 
     console.log(team)
     console.log(this.team)

@@ -117,6 +117,58 @@ export class BuilderTeamComponent implements OnInit {
     }
   }
 
+  updateAllAvailable() {
+    this.team.units.forEach((unit, unitIndex) => {
+      this.getAvailableUnits(unitIndex)
+      if (unit) {
+        this.getAvailableEspers(unitIndex)
+        this.getAvailableCards(unitIndex)
+        for (let j = 0; j <= 2; j++) {
+          this.getAvailableEquipments(unitIndex, j)
+        }
+      }
+    })
+  }
+
+  resetSelected() {
+    this.selected = {
+      team: null,
+      units: [null, null, null, null, null],
+      espers: [null, null, null, null, null],
+      cards: [null, null, null, null, null],
+      equipments : [
+        [null, null, null],
+        [null, null, null],
+        [null, null, null],
+        [null, null, null],
+        [null, null, null]
+      ]
+    }
+  }
+
+  updateAllSelected() {
+    this.resetSelected()
+    this.team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        this.selected.units[unitIndex] = unit.dataId
+
+        if (unit.esper) {
+          this.selected.espers[unitIndex] = unit.esper.dataId
+        }
+
+        if (unit.card) {
+          this.selected.cards[unitIndex] = unit.card.dataId
+        }
+
+        unit.equipments.forEach((equipment, equipmentIndex) => {
+          if (equipment) {
+            this.selected.equipments[unitIndex][equipmentIndex] = equipment.dataId
+          }
+        })
+      }
+    })
+  }
+
   selectUnit(pos, customData = null) {
     let removedUnit = !this.selected.units[pos] && this.team.units[pos] ? true : false
     this.teamService.selectUnit(pos, this.selected.units[pos])
@@ -343,6 +395,8 @@ export class BuilderTeamComponent implements OnInit {
   loadTeam() {
     console.log(this.selected.team)
     this.teamService.loadTeam(this.selected.team)
+    this.updateAllAvailable()
+    this.updateAllSelected()
     this.closeModal()
   }
 
@@ -363,6 +417,7 @@ export class BuilderTeamComponent implements OnInit {
       this.openConfirmModal(confirmContent)
     } else {
       this.teamService.saveTeam(this.team)
+      this.closeModal()
     }
   }
 
