@@ -214,9 +214,9 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private loadEsper() {
-    if (this.unit.savedEsper && this.unit.savedEsper.level) {
-      this.selectedEsperId = this.unit.savedEsper.dataId
-      this.selectEsper(this.unit.savedEsper)
+    if (this.unit.esper && this.unit.esper.level) {
+      this.selectedEsperId = this.unit.esper.dataId
+      this.esper = this.unit.esper
     } else {
       this.selectedEsperId = null
       this.selectEsper()
@@ -224,9 +224,9 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private loadCard() {
-    if (this.unit.savedCard && this.unit.savedCard.level) {
-      this.selectedCardId = this.unit.savedCard.dataId
-      this.selectCard(this.unit.savedCard)
+    if (this.unit.card && this.unit.card.level) {
+      this.selectedCardId = this.unit.card.dataId
+      this.card = this.unit.card
     } else {
       this.selectedCardId = null
       this.selectCard()
@@ -235,9 +235,9 @@ export class BuilderUnitComponent implements OnInit {
 
   private loadEquipments() {
     for (let i = 0; i <= 2; i++) {
-      if (this.unit.savedEquipments && this.unit.savedEquipments[i] && this.unit.savedEquipments[i].level) {
-        this.selectedEquipmentsIds[i] = this.unit.savedEquipments[i].dataId
-        this.selectEquipment(i, this.unit.savedEquipments[i])
+      if (this.unit.equipments && this.unit.equipments[i] && this.unit.equipments[i].level) {
+        this.selectedEquipmentsIds[i] = this.unit.equipments[i].dataId
+        this.selectedEquipments[i] = this.unit.equipments[i]
       } else {
         this.selectedEquipmentsIds[i] = null
         this.selectedEquipments[i] = null

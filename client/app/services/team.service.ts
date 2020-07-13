@@ -292,6 +292,26 @@ export class TeamService {
       this.team.units[pos].guild = this.team.guild
 
       for (let i = 0; i <= 4; i++) {
+        if (this.team.units[i] && i != pos) {
+          if (this.team.units[pos].card && this.team.units[i].card && this.team.units[pos].card.dataId == this.team.units[i].card.dataId) {
+            this.team.units[pos].card = null
+          }
+
+          if (this.team.units[pos].esper && this.team.units[i].esper && this.team.units[pos].esper.dataId == this.team.units[i].esper.dataId) {
+            this.team.units[pos].esper = null
+          }
+
+          this.team.units[pos].equipments.forEach(equipment => {
+            for (let j = 0; j <= 2; j++) {
+              if (equipment && this.team.units[i].equipments[j] && equipment.dataId == this.team.units[i].equipments[j].dataId) {
+                equipment = null
+              }
+            }
+          })
+        }
+      }
+
+      for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
           if (i != pos) {
             this.team.units[pos].teamCards[i] = this.team.units[i].card
