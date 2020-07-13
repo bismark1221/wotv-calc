@@ -395,7 +395,7 @@ export class UnitService {
       esper: null,
       card: null,
       equipments: [null, null, null],
-      guild: unit.guild,
+      guild: unit.guild.data,
       limitLv: unit.limit ? unit.limit.level : 0
     }
 
@@ -422,7 +422,7 @@ export class UnitService {
     }
 
     Object.keys(unit.board.nodes).forEach(nodeId => {
-      data.nodes[nodeId] = unit.board.nodes[nodeId].level
+      data.nodes[nodeId] = unit.board.nodes[nodeId].level ? unit.board.nodes[nodeId].level : 0
     })
 
     return data

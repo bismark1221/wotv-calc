@@ -364,7 +364,7 @@ export class EsperService {
     }
 
     Object.keys(esper.board.nodes).forEach(nodeId => {
-      data.nodes[nodeId] = esper.board.nodes[nodeId].level
+      data.nodes[nodeId] = esper.board.nodes[nodeId].level ? esper.board.nodes[nodeId].level : 0
     })
 
     return data

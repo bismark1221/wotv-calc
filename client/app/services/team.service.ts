@@ -3,6 +3,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
 import { GridService } from './grid.service'
@@ -36,7 +37,8 @@ export class TeamService {
     private cardService: CardService,
     private esperService: EsperService,
     private unitService: UnitService,
-    private http: HttpClient
+    private http: HttpClient,
+    private firestore: AngularFirestore
   ) {
     this.team = {
       name: "",
@@ -115,22 +117,31 @@ export class TeamService {
   }
 
   getExportableLink() {
-    let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + btoa(JSON.stringify(this.getSavableData(this.team)))
-    //let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
+    return this.firestore.collection("teams").add(this.getSavableData(this.team)).then(data => {
+      // @ts-ignore
+      return "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + data.pa.path.segments[1]
+    })
+  }
 
-    return builderLink
-    //return this.http.get(shortenUrl);
+  loadStoredTeam(dataId) {
+    let document = this.firestore.collection("teams").doc(dataId)
+
+    document.valueChanges().subscribe(data => {
+      this.updateTeam(data)
+    })
   }
 
   loadTeam(teamId) {
-    let team = this.getSavedTeam(teamId)
+    this.updateTeam(this.getSavedTeam(teamId))
+  }
 
-    this.team.guild.data = team.guild
-    this.team.name = team.name
+  updateTeam(data) {
+    this.team.guild.data = data.guild
+    this.team.name = data.name
 
     for (let i = 0; i <= 4; i++) {
-      if (team.units[i]) {
-        this.team.units[i] = this.unitService.selectUnitForBuilder(team.units[i].dataId, team.units[i])
+      if (data.units[i]) {
+        this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i])
         this.team.units[i].guild = this.team.guild
       } else {
         this.team.units[i] = null
@@ -148,13 +159,10 @@ export class TeamService {
     }
 
     for (let i = 0; i <= 4; i++) {
-      if (team.units[i]) {
+      if (data.units[i]) {
         this.team.units[i].changeLevel(true, true)
       }
     }
-
-    console.log(team)
-    console.log(this.team)
   }
 
   getAvailableUnits(pos) {

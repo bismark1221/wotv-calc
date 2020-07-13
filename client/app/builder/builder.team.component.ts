@@ -87,8 +87,9 @@ export class BuilderTeamComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
       if (data) {
-        data = JSON.parse(atob(params.get('data')))
-        // this.loadTeam(data)
+        this.teamService.loadStoredTeam(data)
+        this.updateAllAvailable()
+        this.updateAllSelected()
       }
     });
   }
@@ -372,14 +373,12 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   openLinkModal(content) {
-    // this.teamService.getExportableLink().subscribe((data: any) => {
-    //   this.exportableLink = data.shorturl;
-    // })
+    this.teamService.getExportableLink().then(link => {
+      this.exportableLink = link
 
-    this.exportableLink = this.teamService.getExportableLink()
-
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
+      const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+      modalRef.result.then((result) => {}, (reason) => {})
+    })
   }
 
   openSaveModal(content) {
@@ -400,7 +399,6 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   loadTeam() {
-    console.log(this.selected.team)
     this.teamService.loadTeam(this.selected.team)
     this.updateAllAvailable()
     this.updateAllSelected()

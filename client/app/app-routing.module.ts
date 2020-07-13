@@ -50,6 +50,7 @@ const ROUTES: Routes = [
       { path: 'equipment', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
       { path: 'team', component: BuilderTeamComponent },
+      { path: 'team/:data', component: BuilderTeamComponent },
     ]
   },
 
@@ -80,6 +81,7 @@ const ROUTES: Routes = [
       { path: 'equipment', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
       { path: 'team', component: BuilderTeamComponent },
+      { path: 'team/:data', component: BuilderTeamComponent },
     ]
   },
 

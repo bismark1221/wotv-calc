@@ -16,6 +16,10 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
+import { environment } from "../environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -121,7 +125,9 @@ export function createTranslateLoader(http: HttpClient) {
     PrettyJsonModule,
     NgSelectModule,
     ClipboardModule,
-    UiSwitchModule
+    UiSwitchModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     UnitService,
