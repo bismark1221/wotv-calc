@@ -82,6 +82,7 @@ export class BuilderTeamComponent implements OnInit {
     }
 
     this.team = this.teamService.newTeam();
+    this.statueNames = Object.keys(this.team.guild.statues)
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
@@ -171,6 +172,12 @@ export class BuilderTeamComponent implements OnInit {
 
   selectUnit(pos, customData = null) {
     let removedUnit = !this.selected.units[pos] && this.team.units[pos] ? true : false
+    this.selected.espers[pos] = null
+    this.selected.cards[pos] = null
+    for (let i = 0; i <= 2; i++) {
+      this.selected.equipments[pos][i] = null
+    }
+
     this.teamService.selectUnit(pos, this.selected.units[pos])
 
     if (this.selected.units[pos]) {
@@ -350,7 +357,7 @@ export class BuilderTeamComponent implements OnInit {
   showGuildDetail() {
     const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.guild = this.team.guild;
+    modalRef.componentInstance.guild = this.team.guild.data;
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {

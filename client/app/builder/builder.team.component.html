@@ -1,3 +1,10 @@
+<div>
+  <button (click)="console()">CONSOLE</button>
+  <button (click)="openSaveModal(saveModal)">SAVE TEAM</button>
+  <button (click)="openLoadModal(loadModal)">LOAD TEAM</button>
+  <button (click)="openLinkModal(linkModal)">GET LINK</button>
+</div>
+
 <div *ngIf="team.name">
   <h1>{{ team.name }}</h1>
 </div>
@@ -239,12 +246,29 @@
   </div>
 </div>
 
-<div>
-  <button (click)="console()">CONSOLE</button>
-  <button (click)="openSaveModal(saveModal)">SAVE TEAM</button>
-  <button (click)="openLoadModal(loadModal)">LOAD TEAM</button>
-  <button (click)="openLinkModal(linkModal)">GET LINK</button>
+<div *ngIf="team">
+  <table style="width: 100%; margin-top: 10px;">
+    <tr>
+      <td colspan="4">Guild</td>
+    </tr>
+    <tr>
+      <td *ngFor="let statue of statueNames">
+        <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+      </td>
+    </tr>
+    <td *ngFor="let statue of statueNames">
+      <div>
+        {{ team.guild.data[statue] }}
+      </div>
+    </td>
+    <tr>
+      <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
+    </tr>
+  </table>
 </div>
+
+
+
 
 
 <ng-template #saveModal let-modal>

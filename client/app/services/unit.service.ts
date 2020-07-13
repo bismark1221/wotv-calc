@@ -396,7 +396,7 @@ export class UnitService {
       card: null,
       equipments: [null, null, null],
       guild: unit.guild,
-      limitLv: unit.limit.level
+      limitLv: unit.limit ? unit.limit.level : 0
     }
 
     if (unit.esper) {

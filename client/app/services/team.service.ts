@@ -131,8 +131,25 @@ export class TeamService {
     for (let i = 0; i <= 4; i++) {
       if (team.units[i]) {
         this.team.units[i] = this.unitService.selectUnitForBuilder(team.units[i].dataId, team.units[i])
+        this.team.units[i].guild = this.team.guild
       } else {
         this.team.units[i] = null
+      }
+    }
+
+    for (let i = 0; i <= 4; i++) {
+      if (this.team.units[i] && this.team.units[i].card) {
+        for (let j = 0; j <= 4; j++) {
+          if (j != i && this.team.units[j]) {
+            this.team.units[j].teamCards[i] = this.team.units[i].card
+          }
+        }
+      }
+    }
+
+    for (let i = 0; i <= 4; i++) {
+      if (team.units[i]) {
+        this.team.units[i].changeLevel(true, true)
       }
     }
 
@@ -327,19 +344,27 @@ export class TeamService {
   }
 
   changeStar(pos, value) {
-    this.team.units[pos].updateStar(value, true)
+    if (this.team.units[pos]) {
+      this.team.units[pos].updateStar(value, true)
+    }
   }
 
   changeLB(pos, value) {
-    this.team.units[pos].updateLB(value, true)
+    if (this.team.units[pos]) {
+      this.team.units[pos].updateLB(value, true)
+    }
   }
 
   changeJobLevel(pos) {
-    this.team.units[pos].changeLevel(true, true)
+    if (this.team.units[pos]) {
+      this.team.units[pos].changeLevel(true, true)
+    }
   }
 
   changeLevel(pos) {
-    this.team.units[pos].changeLevel(true, true)
+    if (this.team.units[pos]) {
+      this.team.units[pos].changeLevel(true, true)
+    }
   }
 
   changeCardLevel(pos) {
