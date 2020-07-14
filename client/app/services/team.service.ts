@@ -73,7 +73,12 @@ export class TeamService {
   getSavableData(team) {
     let data = {
       name: team.name,
-      guild: team.guild.data,
+      guild: {
+        serpent: team.guild.data.serpent,
+        lion: team.guild.data.lion,
+        kirin: team.guild.data.kirin,
+        bull: team.guild.data.bull
+      },
       units: []
     }
 

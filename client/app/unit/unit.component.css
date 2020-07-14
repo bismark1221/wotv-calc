@@ -2,13 +2,15 @@
   width: 1200px;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 10px;
+  padding-top: 70px;
 }
 
 .nav-tabs {
   border-bottom: 0;
   background-color: #F4F5F9;
   height: 55px;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-tabs .nav-item {
