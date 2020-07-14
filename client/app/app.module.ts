@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +22,8 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { SentryErrorHandler } from './sentry.errorHandler';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -143,7 +145,11 @@ export function createTranslateLoader(http: HttpClient) {
     NameService,
     ThemeService,
     RaidService,
-    TeamService
+    TeamService,
+    {
+      provide: ErrorHandler,
+      useClass: SentryErrorHandler
+    }
   ],
   bootstrap: [
     AppComponent
