@@ -466,10 +466,17 @@ export class EquipmentService {
     if (equipment) {
       this.equipment.upgrade = equipment.upgrade;
       this.equipment.grow = equipment.grow;
+
+      if (!this.equipment.grows[this.equipment.grow]) {
+        this.equipment.grow = this.equipment.growIds[0]
+      }
+
       this.equipment.level = equipment.level;
 
       Object.keys(equipment.stats).forEach(stat => {
-        this.equipment.stats[stat].selected = equipment.stats[stat];
+        if (this.equipment.stats[stat]) {
+          this.equipment.stats[stat].selected = equipment.stats[stat];
+        }
       })
 
       Object.keys(equipment.skill).forEach(skillId => {
