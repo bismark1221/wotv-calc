@@ -1,325 +1,348 @@
-<div>
-  <button (click)="console()">CONSOLE</button>
-  <button (click)="openSaveModal(saveModal)">SAVE TEAM</button>
-  <button (click)="openLoadModal(loadModal)">LOAD TEAM</button>
-  <button (click)="openLinkModal(linkModal)">GET LINK</button>
-</div>
-
-<div *ngIf="team.name">
-  <h1>{{ team.name }}</h1>
-</div>
-
-<div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
-  <div>
-    <ng-select [items]="list.units[i]"
-               bindLabel="name"
-               bindValue="id"
-               groupBy="rarity"
-               placeholder="Units"
-               [(ngModel)]="selected.units[i]"
-               (ngModelChange)="selectUnit(i)">
-    </ng-select>
+<div class="row">
+  <div class="masterButtons">
+    <button (click)="openLoadModal(loadModal)">LOAD TEAM</button>
+    <button (click)="openSaveModal(saveModal)">SAVE TEAM</button>
+    <button (click)="openLinkModal(linkModal)">GET LINK</button>
   </div>
 
-  <div *ngIf="team.units[i]" class="unitDiv">
-    <table class="unitTable">
-      <tbody>
-        <tr>
-          <th colspan="3">{{ team.units[i].name }}</th>
-        </tr>
-        <tr>
-          <td colspan="3"><img class="unitImg" src="{{'assets/units/' + team.units[i].image + '_m.png'}}" /></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="teamName">
+    <h1 *ngIf="team.name">{{ team.name }}</h1>
+    <h1 *ngIf="!team.name">New Team</h1>
+  </div>
 
-    <div *ngIf="team.units[i]" class="starsLbsLevels">
-      <div class="stars">
-        <ngb-rating [(rate)]="team.units[i].star" [max]="6" class="ratingStars">
-          <ng-template let-fill="fill" let-index="index">
-            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(i, index + 1)">&nbsp;</div>
-          </ng-template>
-        </ngb-rating>
-      </div>
+  <div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
+    <div>
+      <ng-select [items]="list.units[i]"
+                 bindLabel="name"
+                 bindValue="id"
+                 groupBy="rarity"
+                 placeholder="Units"
+                 [(ngModel)]="selected.units[i]"
+                 (ngModelChange)="selectUnit(i)">
+      </ng-select>
+    </div>
 
-      <div class="lbs">
-        <ngb-rating [(rate)]="team.units[i].lb" [max]="5">
-          <ng-template let-fill="fill" let-index="index">
-            <div class="lb" [class.filled]="fill === 100" (click)="changeLB(i, index + 1)">&nbsp;</div>
-          </ng-template>
-        </ngb-rating>
-      </div>
+    <div *ngIf="team.units[i]" class="unitDiv">
+      <table class="unitTable">
+        <tbody>
+          <tr>
+            <th colspan="3">{{ team.units[i].name }}</th>
+          </tr>
+          <tr>
+            <td colspan="3"><img class="unitImg" src="{{'assets/units/' + team.units[i].image + '_m.png'}}" /></td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div>
-        Lv
-        <select [(ngModel)]="team.units[i].level" (ngModelChange)="changeLevel(i)">
-          <option *ngFor="let level of team.units[i].tableLevels">{{ level }}</option>
-        </select> / {{ team.units[i].maxLevel }}
+      <div *ngIf="team.units[i]" class="starsLbsLevels">
+        <div class="stars">
+          <ngb-rating [(rate)]="team.units[i].star" [max]="6" class="ratingStars">
+            <ng-template let-fill="fill" let-index="index">
+              <div class="star" [class.filled]="fill === 100"  (click)="changeStar(i, index + 1)">&nbsp;</div>
+            </ng-template>
+          </ngb-rating>
+        </div>
+
+        <div class="lbs">
+          <ngb-rating [(rate)]="team.units[i].lb" [max]="5">
+            <ng-template let-fill="fill" let-index="index">
+              <div class="lb" [class.filled]="fill === 100" (click)="changeLB(i, index + 1)">&nbsp;</div>
+            </ng-template>
+          </ngb-rating>
+        </div>
+
+        <div>
+          Lv
+          <select [(ngModel)]="team.units[i].level" (ngModelChange)="changeLevel(i)">
+            <option *ngFor="let level of team.units[i].tableLevels">{{ level }}</option>
+          </select> / {{ team.units[i].maxLevel }}
+        </div>
       </div>
     </div>
-  </div>
 
-  <div *ngIf="team.units[i]">
-    <table class="jobsTable">
-      <tr>
-        <td *ngFor="let j of [0, 1, 2]">
-          <img [className]="j == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + team.units[i].jobsData[j].image + '.png'}}" />
-          <select *ngIf="team.units[i].jobsData[j].unlocked" [(ngModel)]="team.units[i].jobsData[j].level" (ngModelChange)="changeJobLevel(i)">
-            <option *ngFor="let level of team.units[i].tableJobLevels">{{ level }}</option>
-          </select>
-          <select *ngIf="!team.units[i].jobsData[j].unlocked"></select>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <div *ngIf="team.units[i]">
+      <table class="jobsTable">
+        <tr>
+          <td *ngFor="let j of [0, 1, 2]">
+            <img [className]="j == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + team.units[i].jobsData[j].image + '.png'}}" />
+            <select *ngIf="team.units[i].jobsData[j].unlocked" [(ngModel)]="team.units[i].jobsData[j].level" (ngModelChange)="changeJobLevel(i)">
+              <option *ngFor="let level of team.units[i].tableJobLevels">{{ level }}</option>
+            </select>
+            <select *ngIf="!team.units[i].jobsData[j].unlocked"></select>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-  <div *ngIf="team.units[i]" class="unitButtons">
-    <button (click)="maxUnit(i)">Max unit</button>
-    <button (click)="maxLevelAndJobs(i)" class="maxLevelButton">Max level & jobs</button>
-  </div>
+    <div *ngIf="team.units[i]" class="unitButtons">
+      <button (click)="maxUnit(i)">Max unit</button>
+      <button (click)="maxLevelAndJobs(i)" class="maxLevelButton">Max level & jobs</button>
+    </div>
 
-  <div *ngIf="team.units[i]">
-    <table class="equipmentsTable">
-      <tr>
-        <td *ngFor="let j of [0, 1, 2]">
-          <div *ngIf="j == 0 || (j == 1 && team.units[i].lb >= 2) || (j == 2 && team.units[i].lb >= 4)">
-            <ng-select [items]="list.equipments[i][j]"
+    <div *ngIf="team.units[i]">
+      <table class="equipmentsTable">
+        <tr>
+          <td *ngFor="let j of [0, 1, 2]">
+            <div *ngIf="j == 0 || (j == 1 && team.units[i].lb >= 2) || (j == 2 && team.units[i].lb >= 4)">
+              <ng-select [items]="list.equipments[i][j]"
+                         bindLabel="name"
+                         bindValue="dataId"
+                         groupBy="rarity"
+                         placeholder="Equipment {{ j + 1}}"
+                         [(ngModel)]="selected.equipments[i][j]"
+                         (ngModelChange)="selectEquipment(i, j)"
+                         class="selectEquipment">
+              </ng-select>
+              <div *ngIf="team.units[i].equipments && selected.equipments[i][j]">
+                <img src="{{'assets/equipments/' + team.units[i].equipments[j].image + '.png'}}" class="equipmentImg background_{{ team.units[i].equipments[j].category }}"/>
+                <button (click)="showEquipmentDetail(i, j)">Custom</button>
+              </div>
+              <div *ngIf="!selected.equipments[i][j]">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+            </div>
+            <div *ngIf="(j == 1 && team.units[i].lb < 2) || (j == 2 && team.units[i].lb < 4)">
+              <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+            </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+
+      <table class="esperCardTable">
+        <tr>
+          <td>
+            <ng-select [items]="list.espers[i]"
                        bindLabel="name"
-                       bindValue="dataId"
+                       bindValue="id"
                        groupBy="rarity"
-                       placeholder="Equipment {{ j + 1}}"
-                       [(ngModel)]="selected.equipments[i][j]"
-                       (ngModelChange)="selectEquipment(i, j)"
-                       class="selectEquipment">
+                       placeholder="Espers"
+                       [(ngModel)]="selected.espers[i]"
+                       (ngModelChange)="selectEsper(i)"
+                       class="selectEsper">
             </ng-select>
-            <div *ngIf="team.units[i].equipments && selected.equipments[i][j]">
-              <img src="{{'assets/equipments/' + team.units[i].equipments[j].image + '.png'}}" class="equipmentImg background_{{ team.units[i].equipments[j].category }}"/>
-              <button (click)="showEquipmentDetail(i, j)">Custom</button>
+
+            <div *ngIf="team.units[i].esper">
+              <img src="{{'assets/units/' + team.units[i].esper.image + '_m.png'}}" class="esperImg"/>
+              Reso
+              <select [(ngModel)]="team.units[i].esper.resonance" (ngModelChange)="changeLevel(i)">
+                <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
+              </select><br />
+              <button (click)="showEsperDetail(i)">Custom</button>
             </div>
-            <div *ngIf="!selected.equipments[i][j]">
-              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+
+            <div *ngIf="!team.units[i].esper">
+              <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
             </div>
-          </div>
-          <div *ngIf="(j == 1 && team.units[i].lb < 2) || (j == 2 && team.units[i].lb < 4)">
-            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
-          </div>
-        </td>
-        <td>
-        </td>
-      </tr>
-    </table>
+          </td>
+          <td>
+            <ng-select [items]="list.cards[i]"
+                       bindLabel="name"
+                       bindValue="id"
+                       groupBy="rarity"
+                       placeholder="Cards"
+                       [(ngModel)]="selected.cards[i]"
+                       (ngModelChange)="selectCard(i)"
+                       class="selectCard">
+            </ng-select>
 
-    <table class="esperCardTable">
-      <tr>
-        <td>
-          <ng-select [items]="list.espers[i]"
-                     bindLabel="name"
-                     bindValue="id"
-                     groupBy="rarity"
-                     placeholder="Espers"
-                     [(ngModel)]="selected.espers[i]"
-                     (ngModelChange)="selectEsper(i)"
-                     class="selectEsper">
-          </ng-select>
+            <div *ngIf="team.units[i].card">
+              <img src="{{'assets/cards/' + team.units[i].card.image + '_m.png'}}" class="cardImg"/>
+              <button (click)="showCardDetail(i)">Custom</button>
+            </div>
 
-          <div *ngIf="team.units[i].esper">
-            <img src="{{'assets/units/' + team.units[i].esper.image + '_m.png'}}" class="esperImg"/>
-            Reso
-            <select [(ngModel)]="team.units[i].esper.resonance" (ngModelChange)="changeLevel(i)">
-              <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
-            </select><br />
-            <button (click)="showEsperDetail(i)">Custom</button>
-          </div>
+            <div *ngIf="!team.units[i].card">
+              <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
+            </div>
+          </td>
+        </tr>
+      </table>
 
-          <div *ngIf="!team.units[i].esper">
-            <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
-          </div>
-        </td>
-        <td>
-          <ng-select [items]="list.cards[i]"
-                     bindLabel="name"
-                     bindValue="id"
-                     groupBy="rarity"
-                     placeholder="Cards"
-                     [(ngModel)]="selected.cards[i]"
-                     (ngModelChange)="selectCard(i)"
-                     class="selectCard">
-          </ng-select>
+      <table>
+        <tr>
+          <td colspan="2">Support Skills</td>
+        </tr>
+        <tr *ngFor="let j of [0, 1]">
+          <td>
+            <select [(ngModel)]="team.units[i].activatedSupport[j]" (ngModelChange)="changeLevel(i)">
+              <option value="0"></option>
+              <option *ngFor="let node of getAvailableSupportNodes(i, j)" [ngValue]="node.nodeId">
+                {{ node.name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+      </table>
 
-          <div *ngIf="team.units[i].card">
-            <img src="{{'assets/cards/' + team.units[i].card.image + '_m.png'}}" class="cardImg"/>
-            <button (click)="showCardDetail(i)">Custom</button>
-          </div>
+      <table>
+        <tr>
+          <td>Counter Skill</td>
+        </tr>
+        <tr>
+          <td>
+            <select [(ngModel)]="team.units[i].activatedCounter" (ngModelChange)="changeCounter(i)">
+              <option value="0"></option>
+              <option *ngFor="let node of getAvailableCounterNodes(i)" [ngValue]="node.nodeId">
+                {{ node.name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+      </table>
 
-          <div *ngIf="!team.units[i].card">
-            <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
-          </div>
-        </td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <td>Sub-job</td>
+        </tr>
+        <tr>
+          <td>
+            <select [(ngModel)]="team.units[i].subjob" (ngModelChange)="changeSubJob(i)">
+              <option *ngFor="let j of [0, 1, 2]" [ngValue]="j">
+                {{ team.units[i].jobsData[j].name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+      </table>
 
-    <table>
-      <tr>
-        <td colspan="2">Support Skills</td>
-      </tr>
-      <tr *ngFor="let j of [0, 1]">
-        <td>
-          <select [(ngModel)]="team.units[i].activatedSupport[j]" (ngModelChange)="changeLevel(i)">
-            <option value="0"></option>
-            <option *ngFor="let node of getAvailableSupportNodes(i, j)" [ngValue]="node.nodeId">
-              {{ node.name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <td>HP</td>
+          <td>{{ team.units[i].stats.HP.total }}</td>
+          <td>ATK</td>
+          <td>{{ team.units[i].stats.ATK.total }}</td>
+        </tr>
+        <tr>
+          <td>TP</td>
+          <td>{{ team.units[i].stats.TP.total }}</td>
+          <td>MAG</td>
+          <td>{{ team.units[i].stats.MAG.total }}</td>
+        </tr>
+        <tr>
+          <td>AP</td>
+          <td>{{ team.units[i].stats.INITIAL_AP.total }} / {{ team.units[i].stats.AP.total }}</td>
+          <td>AGI</td>
+          <td>{{ team.units[i].stats.AGI.total }}</td>
+        </tr>
+        <tr>
+          <td>Move</td>
+          <td>{{ team.units[i].stats.MOVE.total }}</td>
+          <td>DEX</td>
+          <td>{{ team.units[i].stats.DEX.total }}</td>
+        </tr>
+        <tr>
+          <td>Jump</td>
+          <td>{{ team.units[i].stats.JUMP.total }}</td>
+          <td>Luck</td>
+          <td>{{ team.units[i].stats.LUCK.total }}</td>
+        </tr>
+        <tr>
+          <td>DEF</td>
+          <td>{{ team.units[i].stats.DEF.total }}</td>
+          <td>SPR</td>
+          <td>{{ team.units[i].stats.SPR.total }}</td>
+        </tr>
+        <tr *ngFor="let statType of getAvailableStatType(i).images">
+          <td *ngIf="statType[0]">
+            <img class="buffImg" title="{{ statType[0] }}" src="{{ '/assets/buffs/' + statType[0].toLowerCase() + '.png' }}">
+          </td>
+          <td *ngIf="statType[0]">{{ team.units[i].stats[statType[0]].total }}</td>
 
-    <table>
-      <tr>
-        <td>Counter Skill</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="team.units[i].activatedCounter" (ngModelChange)="changeCounter(i)">
-            <option value="0"></option>
-            <option *ngFor="let node of getAvailableCounterNodes(i)" [ngValue]="node.nodeId">
-              {{ node.name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-
-    <table>
-      <tr>
-        <td>Sub-job</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="team.units[i].subjob" (ngModelChange)="changeSubJob(i)">
-            <option *ngFor="let j of [0, 1, 2]" [ngValue]="j">
-              {{ team.units[i].jobsData[j].name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-
-    <table>
-      <tr>
-        <td>HP</td>
-        <td>{{ team.units[i].stats.HP.total }}</td>
-        <td>ATK</td>
-        <td>{{ team.units[i].stats.ATK.total }}</td>
-      </tr>
-      <tr>
-        <td>TP</td>
-        <td>{{ team.units[i].stats.TP.total }}</td>
-        <td>MAG</td>
-        <td>{{ team.units[i].stats.MAG.total }}</td>
-      </tr>
-      <tr>
-        <td>AP</td>
-        <td>{{ team.units[i].stats.INITIAL_AP.total }} / {{ team.units[i].stats.AP.total }}</td>
-        <td>AGI</td>
-        <td>{{ team.units[i].stats.AGI.total }}</td>
-      </tr>
-      <tr>
-        <td>Move</td>
-        <td>{{ team.units[i].stats.MOVE.total }}</td>
-        <td>DEX</td>
-        <td>{{ team.units[i].stats.DEX.total }}</td>
-      </tr>
-      <tr>
-        <td>Jump</td>
-        <td>{{ team.units[i].stats.JUMP.total }}</td>
-        <td>Luck</td>
-        <td>{{ team.units[i].stats.LUCK.total }}</td>
-      </tr>
-      <tr>
-        <td>DEF</td>
-        <td>{{ team.units[i].stats.DEF.total }}</td>
-        <td>SPR</td>
-        <td>{{ team.units[i].stats.SPR.total }}</td>
-      </tr>
-    </table>
+          <td *ngIf="statType[1]">
+            <img class="buffImg" title="{{ statType[1] }}" src="{{ '/assets/buffs/' + statType[1].toLowerCase() + '.png' }}">
+          </td>
+          <td *ngIf="statType[1]">{{ team.units[i].stats[statType[1]].total }}</td>
+        </tr>
+        <tbody *ngFor="let statType of getAvailableStatType(i).text">
+          <tr>
+            <td colspan="4">{{ statType }}</td>
+          </tr>
+          <tr>
+            <td colspan="4">{{ team.units[i].stats[statType].total }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
 
-<div *ngIf="team">
-  <table style="width: 100%; margin-top: 10px;">
-    <tr>
-      <td colspan="4">Guild</td>
-    </tr>
-    <tr>
+  <div *ngIf="team" class="teamGuild">
+    <table>
+      <tr>
+        <td colspan="4">Guild</td>
+      </tr>
+      <tr>
+        <td *ngFor="let statue of statueNames">
+          <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+        </td>
+      </tr>
       <td *ngFor="let statue of statueNames">
-        <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+        <div>
+          {{ team.guild.data[statue] }}
+        </div>
       </td>
-    </tr>
-    <td *ngFor="let statue of statueNames">
-      <div>
-        {{ team.guild.data[statue] }}
-      </div>
-    </td>
-    <tr>
-      <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
-    </tr>
-  </table>
-</div>
-
-
-
-
-
-<ng-template #saveModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
+      <tr>
+        <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
+      </tr>
+    </table>
   </div>
-  <div>
-    <h3>Save team</h3>
-    <input type="text" [(ngModel)]="team.name" />
-    <button (click)="saveTeam(confirmSaveModal)">Save</button>
-  </div>
-</ng-template>
 
-<ng-template #confirmSaveModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeConfirmModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div>
-    <h3>This team already exists, do you whant to replace it ?</h3>
-    <button (click)="confirmSave()">Replace</button>
-    <button (click)="closeConfirmModal()">Cancel</button>
-  </div>
-</ng-template>
 
-<ng-template #loadModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="teamsListModal">
-    <h3>Teams</h3>
-    <div class="teamList">
-      <div *ngFor="let savedTeam of savedTeams">
-        <input type="radio" [(ngModel)]="selected.team" value="{{savedTeam}}" class="radioList">{{ savedTeam }}
+
+
+
+  <ng-template #saveModal let-modal>
+    <div>
+      <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="teamSaveModal">
+      <h3>Save team</h3>
+      <input type="text" [(ngModel)]="team.name" class="saveNameInput" />
+      <button (click)="saveTeam(confirmSaveModal)" class="saveButton">Save</button>
+    </div>
+  </ng-template>
+
+  <ng-template #confirmSaveModal let-modal>
+    <div>
+      <button type="button" class="close" aria-label="Close" (click)="closeConfirmModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="teamConfirmModal">
+      <span>This team already exists, do you whant to replace it ?</span>
+      <div class="confirmButtons">
+        <button (click)="confirmSave()" class="replaceButton" >Replace</button>
+        <button (click)="closeConfirmModal()" class="cancelButton" >Cancel</button>
       </div>
     </div>
-    <button (click)="loadTeam()" class="loadButton">Load</button>
-  </div>
-</ng-template>
+  </ng-template>
 
-<ng-template #linkModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
-  <button (click)="copyLink()">Copy</button>
-</ng-template>
+  <ng-template #loadModal let-modal>
+    <div>
+      <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="teamsListModal">
+      <h3>Teams</h3>
+      <div class="teamList">
+        <div *ngFor="let savedTeam of savedTeams">
+          <input type="radio" [(ngModel)]="selected.team" value="{{savedTeam}}" class="radioList">{{ savedTeam }}
+        </div>
+      </div>
+      <button (click)="loadTeam()" class="loadButton">Load</button>
+    </div>
+  </ng-template>
+
+  <ng-template #linkModal let-modal>
+    <div>
+      <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
+    <button (click)="copyLink()">Copy</button>
+  </ng-template>
+</div>

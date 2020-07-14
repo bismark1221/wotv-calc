@@ -431,6 +431,10 @@ export class BuilderTeamComponent implements OnInit {
     this.closeModal()
   }
 
+  getAvailableStatType(pos) {
+    return this.teamService.getAvailableStatType(pos)
+  }
+
 
 
 

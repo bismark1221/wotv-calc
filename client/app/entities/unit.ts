@@ -932,4 +932,137 @@ export class Unit {
 
     return nodes
   }
+
+
+  getAvailableStatType() {
+    let statsAtkRes = [
+      "FIRE",
+      "ICE",
+      "EARTH",
+      "WIND",
+      "LIGHTNING",
+      "WATER",
+      "LIGHT",
+      "DARK",
+      "SLASH",
+      "PIERCE",
+      "STRIKE",
+      "MISSILE",
+      "MAGIC"
+    ]
+
+    let statsType = [
+      "HP",
+      "TP",
+      "AP",
+      "ATK",
+      "DEF",
+      "SPR",
+      "MAG",
+      "DEX",
+      "AGI",
+      "LUCK",
+      "MOVE",
+      "JUMP"
+    ]
+
+    let filteredStats = [
+      "INITIAL_AP"
+    ]
+
+    let statsOrder = [
+      "FIRE_RES",
+      "ICE_RES",
+      "EARTH_RES",
+      "WIND_RES",
+      "LIGHTNING_RES",
+      "WATER_RES",
+      "LIGHT_RES",
+      "DARK_RES",
+      "SLASH_RES",
+      "PIERCE_RES",
+      "STRIKE_RES",
+      "MISSILE_RES",
+      "MAGIC_RES",
+      "FIRE_ATK",
+      "ICE_ATK",
+      "EARTH_ATK",
+      "WIND_ATK",
+      "LIGHTNING_ATK",
+      "WATER_ATK",
+      "LIGHT_ATK",
+      "DARK_ATK",
+      "SLASH_ATK",
+      "PIERCE_ATK",
+      "STRIKE_ATK",
+      "MISSILE_ATK",
+      "MAGIC_ATK",
+      "ACCURACY",
+      "CRITIC_RATE",
+      "CRITIC_AVOID",
+      "EVADE",
+      "POISON",
+      "BLIND",
+      "SLEEP",
+      "SILENCE",
+      "PARALYZE",
+      "CONFUSION",
+      "PETRIFY",
+      "TOAD",
+      "CHARM",
+      "SLOW",
+      "STOP",
+      "IMMOBILIZE",
+      "DISABLE",
+      "BERSERK",
+      "DOOM",
+    ]
+
+    let findedStats = []
+    Object.keys(this.stats).forEach(statType => {
+      if (statsAtkRes.indexOf(statType) === -1 && statsType.indexOf(statType) === -1) {
+        findedStats.push(statType)
+      }
+    })
+
+    Object.keys(this.board.nodes).forEach(nodeId => {
+      let skill = this.board.nodes[nodeId].skill
+      this.board.nodes[nodeId].skill.effects.forEach(effect => {
+        if (findedStats.indexOf(effect.type) === -1) {
+          if (skill.type === "buff" || skill.type === "support") {
+            if (statsType.indexOf(effect.type) === -1) {
+              if (!this.stats[effect.type]) {
+                this.stats[effect.type] = {}
+              }
+
+              findedStats.push(effect.type)
+            }
+          }
+        }
+      })
+    })
+
+    let availableStats = [];
+    let addedStats = []
+    let i = 0;
+
+    statsOrder.forEach(statType => {
+      if (findedStats.indexOf(statType) !== -1) {
+        availableStats.push(statType)
+        addedStats.push(statType)
+      }
+    })
+
+    Object.keys(this.stats).forEach(statType => {
+      if (addedStats.indexOf(statType) === -1
+        && statsAtkRes.indexOf(statType) === -1
+        && statsType.indexOf(statType) === -1
+        && filteredStats.indexOf(statType) === -1
+      ) {
+        availableStats.push(statType)
+      }
+    })
+
+    return availableStats;
+  }
 }

@@ -17,7 +17,7 @@
 }
 
 .row {
-  width: 1200px;
+  width: 1300px;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -72,11 +72,15 @@ tr.disable {
   width: 40px;
 }
 
+.teamName {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .leftBlock {
   display: inline-block;
   width: 250px;
   vertical-align: top;
-  margin-top: 10px;
 }
 
 .leftBlock:not(:last-child) {
@@ -219,8 +223,9 @@ tr.disable {
   width: 40px;
 }
 
-.teamsListModal {
+.teamsListModal, .teamSaveModal, .teamConfirmModal {
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .teamList {
@@ -232,7 +237,37 @@ tr.disable {
   margin-right: 10px;
 }
 
-.loadButton {
+.loadButton, .saveButton, .replaceButton, .cancelButton {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.saveNameInput {
+  display: block;
+  width: 100%;
+}
+
+.replaceButton {
+  float: left;
+}
+
+.cancelButton {
+  float: right;
+}
+
+.masterButtons {
+  width: 100%;
+}
+
+.masterButtons > button {
+  margin-right: 10px;
+}
+
+.teamGuild {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.teamGuild > table {
+  width: 100%;
 }
