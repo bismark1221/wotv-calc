@@ -422,7 +422,11 @@ export class EsperService {
     }
   }
 
-  changeStar() {
+  changeStar(esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     this.updateMaxLevel();
     this.changeLevel();
   }
@@ -441,7 +445,11 @@ export class EsperService {
     this.disableNotAvailableNodes()
   }
 
-  changeLevel() {
+  changeLevel(esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     this.statsType.forEach(stat => {
       let min = 0
       let max = 0
@@ -577,14 +585,22 @@ export class EsperService {
     this.disableNotAvailableNodes()
   }
 
-  rightClickNode(node) {
+  rightClickNode(node, esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     if (node !== 0) {
       this.hideNode(node)
       this.updateEsperBuffs()
     }
   }
 
-  clickNode(node) {
+  clickNode(node, esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     if (node !== 0) {
       if (!this.esper.board.nodes[node].activated || this.esper.grid.nodesForGrid[node].subType == "skill") {
         this.showNode(node)
@@ -625,7 +641,11 @@ export class EsperService {
     return node.level
   }
 
-  canActivateNode(node) {
+  canActivateNode(node, esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     let nodeData = this.esper.board.nodes[node]
 
     if (node !== 0) {
@@ -643,7 +663,11 @@ export class EsperService {
     }
   }
 
-  maxEsper() {
+  maxEsper(esper = null) {
+    if (esper) {
+      this.esper = esper
+    }
+
     this.esper.star = 2;
     this.esper.level = 80;
 

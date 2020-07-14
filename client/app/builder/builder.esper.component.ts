@@ -87,23 +87,23 @@ export class BuilderEsperComponent implements OnInit {
 
   changeStar(value) {
     this.esper.star = value
-    this.esperService.changeStar()
+    this.esperService.changeStar(this.esper)
   }
 
   changeLevel() {
-    this.esperService.changeLevel()
+    this.esperService.changeLevel(this.esper)
   }
 
   rightClickNode(node) {
-    this.esperService.rightClickNode(node)
+    this.esperService.rightClickNode(node, this.esper)
   }
 
   clickNode(node) {
-    this.esperService.clickNode(node)
+    this.esperService.clickNode(node, this.esper)
   }
 
   canActivateNode(node) {
-    return this.esperService.canActivateNode(node)
+    return this.esperService.canActivateNode(node, this.esper)
   }
 
   save() {
@@ -111,7 +111,7 @@ export class BuilderEsperComponent implements OnInit {
   }
 
   maxEsper() {
-    this.esperService.maxEsper()
+    this.esperService.maxEsper(this.esper)
   }
 
   close() {

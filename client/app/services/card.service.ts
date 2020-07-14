@@ -309,7 +309,11 @@ export class CardService {
     }
   }
 
-  changeStar() {
+  changeStar(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.updateMaxLevel();
     this.changeLevel()
   }
@@ -328,7 +332,11 @@ export class CardService {
     }
   }
 
-  changeLevel() {
+  changeLevel(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     let maxLevel = this.levelPerStar[this.card.rarity][4]
 
     this.card.statsType.forEach(stat => {
@@ -396,7 +404,11 @@ export class CardService {
     })
   }
 
-  maxCard() {
+  maxCard(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.card.star = 4;
     this.card.level = this.levelPerStar[this.card.rarity][this.card.star];
 
@@ -404,7 +416,11 @@ export class CardService {
     this.changeLevel()
   }
 
-  maxLevel() {
+  maxLevel(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.card.level = this.card.maxLevel;
 
     this.changeLevel()
