@@ -810,7 +810,7 @@ export class UnitService {
           && this.unit.esper.buffs[statType].percent != 0
         ) {
           if (this.statsType.indexOf(statType) !== -1) {
-            value = Math.floor((this.unit.stats[statType].esper ? this.unit.stats[statType].esper : 0) + (baseTotal * this.unit.esper.buffs[statType].percent / 100))
+            value = Math.floor(baseTotal * this.unit.esper.buffs[statType].percent / 100)
           } else {
             value = this.unit.esper.buffs[statType].percent
           }
