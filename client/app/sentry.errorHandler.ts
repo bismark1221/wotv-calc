@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, ErrorHandler, Injectable } from "@angular/core";
 import { HttpErrorResponse } from "@angular/common/http";
+import { Observable, throwError } from 'rxjs';
 
 import { environment } from "../environments/environment";
 import { AppComponent } from "./app.component";
@@ -52,6 +53,7 @@ export class SentryErrorHandler implements ErrorHandler {
   handleError(error) {
     const extractedError = this.extractError(error) || "Handled unknown error";
     const eventId = Sentry.captureException(extractedError);
-    console.error(extractedError);
+
+    throw extractedError
   }
 }

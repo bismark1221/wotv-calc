@@ -117,21 +117,16 @@ export class TeamService {
   }
 
   getExportableLink() {
-
-    console.log(this.getSavableData(this.team))
-
     return this.firestore.collection("teams").add(this.getSavableData(this.team)).then(data => {
       // @ts-ignore
       return "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + data.pa.path.segments[1]
     })
   }
 
-  loadStoredTeam(dataId) {
+  getStoredTeam(dataId) {
     let document = this.firestore.collection("teams").doc(dataId)
 
-    document.valueChanges().subscribe(data => {
-      this.updateTeam(data)
-    })
+    return document.valueChanges()
   }
 
   loadTeam(teamId) {

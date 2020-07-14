@@ -87,9 +87,11 @@ export class BuilderTeamComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
       if (data) {
-        this.teamService.loadStoredTeam(data)
-        this.updateAllAvailable()
-        this.updateAllSelected()
+        this.teamService.getStoredTeam(data).subscribe(teamData => {
+          this.teamService.updateTeam(teamData)
+          this.updateAllAvailable()
+          this.updateAllSelected()
+        })
       }
     });
   }
@@ -433,16 +435,5 @@ export class BuilderTeamComponent implements OnInit {
 
   getAvailableStatType(pos) {
     return this.teamService.getAvailableStatType(pos)
-  }
-
-
-
-
-
-  console() {
-    console.log("=== TEAM ===")
-    console.log(this.team)
-    console.log("=== SELECTED ===")
-    console.log(this.selected)
   }
 }
