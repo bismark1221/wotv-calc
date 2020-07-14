@@ -76,6 +76,7 @@ tr.disable {
   display: inline-block;
   width: 250px;
   vertical-align: top;
+  margin-top: 10px;
 }
 
 .leftBlock:not(:last-child) {
@@ -216,4 +217,22 @@ tr.disable {
 
 .statueImg {
   width: 40px;
+}
+
+.teamsListModal {
+  margin-left: 10px;
+}
+
+.teamList {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.radioList {
+  margin-right: 10px;
+}
+
+.loadButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

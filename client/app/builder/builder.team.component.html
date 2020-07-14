@@ -303,12 +303,14 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div>
+  <div class="teamsListModal">
     <h3>Teams</h3>
-    <div *ngFor="let savedTeam of savedTeams">
-      <input type="radio" [(ngModel)]="selected.team" value="{{savedTeam}}">{{ savedTeam }}
+    <div class="teamList">
+      <div *ngFor="let savedTeam of savedTeams">
+        <input type="radio" [(ngModel)]="selected.team" value="{{savedTeam}}" class="radioList">{{ savedTeam }}
+      </div>
     </div>
-    <button (click)="loadTeam()">Load</button>
+    <button (click)="loadTeam()" class="loadButton">Load</button>
   </div>
 </ng-template>
 
