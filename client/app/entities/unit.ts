@@ -439,7 +439,7 @@ export class Unit {
           if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
             this.updateStat(effect.type, value, "support", effect.calcType === "percent" ? "percent" : "fixe")
           } else {
-            console.log("not manage effect in support percent/fixe")
+            console.log("not manage effect in support percent/fixe -- " + this.dataId)
             console.log(supportNode)
           }
         })
