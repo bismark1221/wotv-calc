@@ -73,7 +73,12 @@ export class TeamService {
   getSavableData(team) {
     let data = {
       name: team.name,
-      guild: team.guild.data,
+      guild: {
+        serpent: team.guild.data.serpent,
+        lion: team.guild.data.lion,
+        kirin: team.guild.data.kirin,
+        bull: team.guild.data.bull
+      },
       units: []
     }
 
@@ -117,9 +122,6 @@ export class TeamService {
   }
 
   getExportableLink() {
-
-    console.log(this.getSavableData(this.team))
-
     return this.firestore.collection("teams").add(this.getSavableData(this.team)).then(data => {
       // @ts-ignore
       return "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + data.pa.path.segments[1]
