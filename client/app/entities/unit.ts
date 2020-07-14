@@ -1029,7 +1029,7 @@ export class Unit {
       let skill = this.board.nodes[nodeId].skill
       this.board.nodes[nodeId].skill.effects.forEach(effect => {
         if (findedStats.indexOf(effect.type) === -1) {
-          if (skill.type === "buff" || skill.type === "support") {
+          if (skill.type === "buff" || (skill.type === "support" && this.activatedSupport.indexOf(nodeId) != -1)) {
             if (statsType.indexOf(effect.type) === -1) {
               if (!this.stats[effect.type]) {
                 this.stats[effect.type] = {}

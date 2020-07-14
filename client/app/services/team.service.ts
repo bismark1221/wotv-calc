@@ -77,7 +77,7 @@ export class TeamService {
         serpent: team.guild.data.serpent,
         lion: team.guild.data.lion,
         kirin: team.guild.data.kirin,
-        bull: team.guild.data.bull,
+        bull: team.guild.data.bull
       },
       units: []
     }
@@ -87,6 +87,8 @@ export class TeamService {
         data.units.push(this.unitService.getSavableData(unit))
       }
     })
+
+    console.log(data)
 
     return data
   }
