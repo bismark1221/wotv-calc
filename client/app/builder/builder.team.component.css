@@ -1,15 +1,12 @@
 .unitImg {
-  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
   margin-top: 10px;
 }
 
 .unitName {
   font-weight: bold;
   margin-left: 10px
-}
-
-.statsTable {
-  width: 1000px;
 }
 
 .unitsCol {
@@ -143,12 +140,6 @@ tr.disable {
   margin-left: 20px;
 }
 
-.lowerBlock {}
-
-.lowerBlock .statsTable {
-  margin: auto
-}
-
 .jobsTable, .jobsTable tr, .jobsTable td {
   border: 0;
   padding: 0;
@@ -171,6 +162,11 @@ tr.disable {
   margin-left: 10px;
 }
 
+.equipmentsTable {
+  margin-top: 5px;
+  width: 250px;
+}
+
 .equipmentsTable, .equipmentsTable tr, .equipmentsTable td {
   padding: 0;
 }
@@ -181,6 +177,10 @@ tr.disable {
 
 .esperImg, .selectEsper, .cardImg, .selectCard {
   width: 120px;
+}
+
+.esperCardTable {
+  width: 250px;
 }
 
 .esperCardTable, .esperCardTable tr, .esperCardTable td {
@@ -269,5 +269,23 @@ tr.disable {
 }
 
 .teamGuild > table {
+  width: 100%;
+}
+
+.equipmentTd {
+  height: 150px;
+  width: 83px;
+}
+
+.esperCardTd {
+  height: 175px;
+}
+
+.supportSkillTable, .counterSkillTable, .subjobSkillTable, .statsTable {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.supportSkillTable select, .counterSkillTable select, .subjobSkillTable select {
   width: 100%;
 }

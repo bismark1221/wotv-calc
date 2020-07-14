@@ -82,7 +82,7 @@
     <div *ngIf="team.units[i]">
       <table class="equipmentsTable">
         <tr>
-          <td *ngFor="let j of [0, 1, 2]">
+          <td *ngFor="let j of [0, 1, 2]" class="equipmentTd">
             <div *ngIf="j == 0 || (j == 1 && team.units[i].lb >= 2) || (j == 2 && team.units[i].lb >= 4)">
               <ng-select [items]="list.equipments[i][j]"
                          bindLabel="name"
@@ -112,7 +112,7 @@
 
       <table class="esperCardTable">
         <tr>
-          <td>
+          <td class="esperCardTd">
             <ng-select [items]="list.espers[i]"
                        bindLabel="name"
                        bindValue="id"
@@ -136,7 +136,7 @@
               <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
             </div>
           </td>
-          <td>
+          <td class="esperCardTd">
             <ng-select [items]="list.cards[i]"
                        bindLabel="name"
                        bindValue="id"
@@ -159,7 +159,7 @@
         </tr>
       </table>
 
-      <table>
+      <table class="supportSkillTable">
         <tr>
           <td colspan="2">Support Skills</td>
         </tr>
@@ -175,7 +175,7 @@
         </tr>
       </table>
 
-      <table>
+      <table class="counterSkillTable">
         <tr>
           <td>Counter Skill</td>
         </tr>
@@ -191,7 +191,7 @@
         </tr>
       </table>
 
-      <table>
+      <table class="subjobSkillTable">
         <tr>
           <td>Sub-job</td>
         </tr>
@@ -206,7 +206,7 @@
         </tr>
       </table>
 
-      <table>
+      <table class="statsTable">
         <tr>
           <td>HP</td>
           <td>{{ team.units[i].stats.HP.total }}</td>
