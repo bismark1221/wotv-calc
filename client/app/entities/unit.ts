@@ -641,8 +641,6 @@ export class Unit {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
                 }
 
-                this.updateStat(effect.type, value, 'equipment' + i, "fixe")
-
                 if (!this.stats[effect.type]) {
                   this.stats[effect.type] = {};
                 }
@@ -678,11 +676,7 @@ export class Unit {
 
       if (this.stats[statType].equipmentBuff) {
         let negativeBuffValue = this.stats[statType].equipmentBuff.negative !== -100000000 ? this.stats[statType].equipmentBuff.negative : 0
-        let total = 0
-        if (this.stats[statType].totalEquipment) {
-          total = this.stats[statType].totalEquipment
-        }
-        this.updateStat(statType, total + this.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe", true)
+        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe", true)
       }
     })
   }

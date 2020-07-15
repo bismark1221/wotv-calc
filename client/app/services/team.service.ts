@@ -88,8 +88,6 @@ export class TeamService {
       }
     })
 
-    console.log(data)
-
     return data
   }
 
