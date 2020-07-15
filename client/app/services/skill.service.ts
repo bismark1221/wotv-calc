@@ -626,7 +626,7 @@ export class SkillService {
       case "FAITH" :
         html = this.getIncrease(effect) + " Faith" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "ACTIVAITON_TIME" :
+      case "ACTIVATION_TIME" :
         html = this.getIncrease(effect) + " Activation Time" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "ACQUIRED_AP" :

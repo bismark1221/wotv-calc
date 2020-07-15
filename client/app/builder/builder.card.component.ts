@@ -34,7 +34,7 @@ export class BuilderCardComponent implements OnInit {
   }
 
   private getCards() {
-    this.cards = this.cardService.getCardsForBuilder(this.translateService);
+    this.cards = this.cardService.getCardsForBuilder();
     this.cards = [...this.cards];
   }
 
@@ -52,11 +52,11 @@ export class BuilderCardComponent implements OnInit {
     }
 
     this.card.star = value
-    this.cardService.changeStar()
+    this.cardService.changeStar(this.card)
   }
 
   changeLevels() {
-    this.cardService.changeLevel()
+    this.cardService.changeLevel(this.card)
   }
 
   save() {
@@ -64,11 +64,11 @@ export class BuilderCardComponent implements OnInit {
   }
 
   maxCard() {
-    this.cardService.maxCard()
+    this.cardService.maxCard(this.card)
   }
 
   maxLevel() {
-    this.cardService.maxLevel()
+    this.cardService.maxLevel(this.card)
   }
 
   close() {

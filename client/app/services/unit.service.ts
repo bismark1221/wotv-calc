@@ -337,7 +337,7 @@ export class UnitService {
     }
   }
 
-  getUnitsForBuilder(translate) {
+  getUnitsForBuilder() {
     let units = this.getUnitsForListing(null, "rarity", "asc");
 
     let formattedUnitsForBuilder = []
@@ -395,8 +395,13 @@ export class UnitService {
       esper: null,
       card: null,
       equipments: [null, null, null],
-      guild: unit.guild,
-      limitLv: unit.limit.level
+      guild: {
+        serpent: unit.guild.data.serpent,
+        lion: unit.guild.data.lion,
+        kirin: unit.guild.data.kirin,
+        bull: unit.guild.data.bull
+      },
+      limitLv: unit.limit ? unit.limit.level : 0
     }
 
     if (unit.esper) {
@@ -422,7 +427,7 @@ export class UnitService {
     }
 
     Object.keys(unit.board.nodes).forEach(nodeId => {
-      data.nodes[nodeId] = unit.board.nodes[nodeId].level
+      data.nodes[nodeId] = unit.board.nodes[nodeId].level ? unit.board.nodes[nodeId].level : 0
     })
 
     return data
@@ -468,6 +473,7 @@ export class UnitService {
       i++
     })
     this.unit.masterSkillActivated = -1;
+    this.unit.equipments = []
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
@@ -481,6 +487,7 @@ export class UnitService {
     }
 
     this.initiateSavedUnit(customData)
+
     this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     this.updateMaxLevel();
@@ -539,9 +546,26 @@ export class UnitService {
         this.unit.activatedCounter = unit.activatedCounter
       }
 
-      this.unit.savedEsper = unit.esper
-      this.unit.savedCard = unit.card
-      this.unit.savedEquipments = unit.equipments
+      if (unit.esper) {
+        this.unit.esper = this.esperService.selectEsperForBuilder(unit.esper.dataId, unit.esper)
+      } else {
+        this.unit.esper = null
+      }
+
+      if (unit.card) {
+        this.unit.card = this.cardService.selectCardForBuilder(unit.card.dataId, unit.card)
+      } else {
+        this.unit.card = null
+      }
+
+      this.unit.equipments = []
+      for (let i = 0; i<= 2; i++) {
+        if (unit.equipments[i]) {
+          this.unit.equipments[i] = this.equipmentService.selectEquipmentForBuilder(unit.equipments[i].dataId, unit.equipments[i])
+        } else {
+          this.unit.equipments[i] = null
+        }
+      }
 
       if (unit.guild) {
         this.unit.savedGuild = unit.guild
@@ -550,7 +574,7 @@ export class UnitService {
   }
 
   changeStar() {
-    this.updateMaxLevel();
+    this.updateMaxLevel()
     this.disableNotAvailableNodes()
   }
 
@@ -639,6 +663,8 @@ export class UnitService {
   }
 
   changeLevel() {
+    this.disableNotAvailableNodes()
+
     if (this.unit) {
       Object.keys(this.unit.stats).forEach(stat => {
         if (typeof(this.unit.stats[stat].min) == "number") {

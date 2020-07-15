@@ -24,8 +24,10 @@ import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
+import { BuilderTeamComponent } from './builder/builder.team.component';
 
 const ROUTES: Routes = [
+  // GL Router
   { path: '', component: HomeComponent },
   { path: 'units', component: UnitsComponent },
   { path: 'unit/:slug', component: UnitComponent },
@@ -44,12 +46,11 @@ const ROUTES: Routes = [
       { path: 'unit', component: BuilderUnitComponent },
       { path: 'unit/:data', component: BuilderUnitComponent },
       { path: 'card', component: BuilderCardComponent },
-      { path: 'card/:slug', component: BuilderCardComponent },
       { path: 'esper', component: BuilderEsperComponent },
-      { path: 'esper/:slug', component: BuilderEsperComponent },
       { path: 'equipment', component: BuilderEquipmentComponent },
-      { path: 'equipment/:slug', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
+      { path: 'team', component: BuilderTeamComponent },
+      { path: 'team/:data', component: BuilderTeamComponent },
     ]
   },
 
@@ -57,8 +58,7 @@ const ROUTES: Routes = [
   { path: 'legal-notices', component: LegalComponent },
   { path: 'json', component: JsonComponent },
 
-
-
+  // JP Router
   { path: 'JP', component: HomeComponent },
   { path: 'JP/units', component: UnitsComponent },
   { path: 'JP/unit/:slug', component: UnitComponent },
@@ -77,19 +77,17 @@ const ROUTES: Routes = [
       { path: 'unit', component: BuilderUnitComponent },
       { path: 'unit/:data', component: BuilderUnitComponent },
       { path: 'card', component: BuilderCardComponent },
-      { path: 'card/:slug', component: BuilderCardComponent },
       { path: 'esper', component: BuilderEsperComponent },
-      { path: 'esper/:slug', component: BuilderEsperComponent },
       { path: 'equipment', component: BuilderEquipmentComponent },
-      { path: 'equipment/:slug', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
+      { path: 'team', component: BuilderTeamComponent },
+      { path: 'team/:data', component: BuilderTeamComponent },
     ]
   },
 
   { path: 'JP/contact', component: ContactComponent },
   { path: 'JP/legal-notices', component: LegalComponent },
   { path: 'JP/json', component: JsonComponent },
-
 
   { path: '**', component: PageNotFoundComponent }
 ];

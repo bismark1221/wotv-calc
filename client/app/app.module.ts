@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,8 +16,14 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
+import { environment } from "../environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { SentryErrorHandler } from './sentry.errorHandler';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -45,6 +51,7 @@ import { BuilderCardComponent } from './builder/builder.card.component';
 import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
+import { BuilderTeamComponent } from './builder/builder.team.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -59,6 +66,7 @@ import { GuildService } from './services/guild.service';
 import { NameService } from './services/name.service';
 import { ThemeService } from './services/theme.service';
 import { RaidService } from './services/raid.service';
+import { TeamService } from './services/team.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -92,7 +100,8 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderCardComponent,
     BuilderEsperComponent,
     BuilderEquipmentComponent,
-    BuilderGuildComponent
+    BuilderGuildComponent,
+    BuilderTeamComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -118,7 +127,9 @@ export function createTranslateLoader(http: HttpClient) {
     PrettyJsonModule,
     NgSelectModule,
     ClipboardModule,
-    UiSwitchModule
+    UiSwitchModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     UnitService,
@@ -133,7 +144,12 @@ export function createTranslateLoader(http: HttpClient) {
     GuildService,
     NameService,
     ThemeService,
-    RaidService
+    RaidService,
+    TeamService,
+    {
+      provide: ErrorHandler,
+      useClass: SentryErrorHandler
+    }
   ],
   bootstrap: [
     AppComponent
