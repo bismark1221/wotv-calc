@@ -90,6 +90,7 @@ tr.disable {
 
 .leftBlock .unitTable {
   display: inline-block;
+  max-width: 120px;
 }
 
 .leftBlock .starsLbsLevels {
