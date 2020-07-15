@@ -560,7 +560,7 @@ export class UnitService {
 
       this.unit.equipments = []
       for (let i = 0; i<= 2; i++) {
-        if (unit.equipments[i]) {
+        if (unit.equipments && unit.equipments[i]) {
           this.unit.equipments[i] = this.equipmentService.selectEquipmentForBuilder(unit.equipments[i].dataId, unit.equipments[i])
         } else {
           this.unit.equipments[i] = null
