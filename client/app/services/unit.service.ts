@@ -396,10 +396,10 @@ export class UnitService {
       card: null,
       equipments: [null, null, null],
       guild: {
-        serpent: unit.guild.data.serpent,
-        lion: unit.guild.data.lion,
-        kirin: unit.guild.data.kirin,
-        bull: unit.guild.data.bull
+        serpent: unit.guild && unit.guild.data ? unit.guild.data.serpent : 0,
+        lion: unit.guild && unit.guild.data ? unit.guild.data.lion : 0,
+        kirin: unit.guild && unit.guild.data ? unit.guild.data.kirin : 0,
+        bull: unit.guild && unit.guild.data ? unit.guild.data.bull : 0
       },
       limitLv: unit.limit ? unit.limit.level : 0
     }

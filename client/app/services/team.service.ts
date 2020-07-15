@@ -74,10 +74,10 @@ export class TeamService {
     let data = {
       name: team.name,
       guild: {
-        serpent: team.guild.data.serpent,
-        lion: team.guild.data.lion,
-        kirin: team.guild.data.kirin,
-        bull: team.guild.data.bull
+        serpent: team.guild && team.guild.data ? team.guild.data.serpent : 0,
+        lion: team.guild && team.guild.data ? team.guild.data.lion : 0,
+        kirin: team.guild && team.guild.data ? team.guild.data.kirin : 0,
+        bull: team.guild && team.guild.data ? team.guild.data.bull : 0
       },
       units: []
     }
