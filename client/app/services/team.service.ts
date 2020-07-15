@@ -302,6 +302,7 @@ export class TeamService {
     if (unitId) {
       this.team.units[pos] = this.unitService.selectUnitForBuilder(unitId)
       this.team.units[pos].guild = this.team.guild
+      this.team.units[pos].maxUnit()
 
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i] && i != pos) {

@@ -492,10 +492,24 @@ export class UnitService {
 
     this.updateMaxLevel();
     this.updateMaxJobLevel();
+
+    this.maxUnit()
+    this.activateMasterSkill()
+
     this.changeLevel();
     this.getActiveSkills();
 
     return this.unit
+  }
+
+  private activateMasterSkill() {
+    if (this.unit.level >= 80 && this.unit.masterSkillLevel[this.unit.masterSkillLevel.length - 1] == 1) {
+      this.unit.masterSkillActivated = 1
+    } else if (this.unit.level >= 40) {
+      this.unit.masterSkillActivated = 0
+    } else {
+      this.unit.masterSkillActivated = -1
+    }
   }
 
   private initiateSavedUnit(customData = null) {
