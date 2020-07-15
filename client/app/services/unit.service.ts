@@ -810,7 +810,12 @@ export class UnitService {
       let masterSkill = this.unit.masterSkill[this.unit.masterSkillActivated]
       masterSkill.effects.forEach(effect => {
         if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
-          this.updateStat(effect.type, effect.minValue, "masterSkill", effect.calcType === "percent" ? "percent" : "fixe")
+          let calc = "fixe"
+          if (effect.calcType === "percent" && !effect.type.includes("KILLER")) {
+            calc = "percent"
+          }
+
+          this.updateStat(effect.type, effect.minValue, "masterSkill", calc)
         } else {
           console.log("not manage effect in masterSkill percent/fixe")
           console.log(masterSkill)
