@@ -38,7 +38,6 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   selected = {
-    team: null,
     units: [null, null, null, null, null],
     espers: [null, null, null, null, null],
     cards: [null, null, null, null, null],
@@ -136,7 +135,6 @@ export class BuilderTeamComponent implements OnInit {
 
   resetSelected() {
     this.selected = {
-      team: null,
       units: [null, null, null, null, null],
       espers: [null, null, null, null, null],
       cards: [null, null, null, null, null],
@@ -400,11 +398,16 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.result.then((result) => {}, (reason) => {})
   }
 
-  loadTeam() {
-    this.teamService.loadTeam(this.selected.team)
+  loadTeam(teamId) {
+    this.teamService.loadTeam(teamId)
     this.updateAllAvailable()
     this.updateAllSelected()
     this.closeModal()
+  }
+
+  deleteTeam(teamId) {
+    this.teamService.deleteTeam(teamId)
+    this.savedTeams = Object.keys(this.teamService.getSavedTeams())
   }
 
   closeConfirmModal() {

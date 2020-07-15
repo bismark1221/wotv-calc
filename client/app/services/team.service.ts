@@ -138,6 +138,15 @@ export class TeamService {
     this.updateTeam(this.getSavedTeam(teamId))
   }
 
+  deleteTeam(teamId) {
+    if (!this.savedTeams) {
+      this.getSavedTeams()
+    }
+
+    delete this.savedTeams[teamId]
+    this.localStorageService.set(this.getLocalStorage(), this.savedTeams);
+  }
+
   updateTeam(data) {
     this.team.guild.data = data.guild
     this.team.name = data.name

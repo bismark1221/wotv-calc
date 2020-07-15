@@ -290,3 +290,7 @@ tr.disable {
 .supportSkillTable select, .counterSkillTable select, .subjobSkillTable select {
   width: 100%;
 }
+
+.teamList .fa {
+  cursor: pointer;
+}
