@@ -2089,8 +2089,8 @@
       [
         {
           "names": {
-            "en": "SK_LW_SWO_006_1",
-            "fr": "SK_LW_SWO_006_1"
+            "en": "Coral Sword",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_006_1",
           "effects": [
@@ -2109,13 +2109,13 @@
             4
           ],
           "grow": "ARTIFACT_50",
-          "slug": "sk_lw_swo_006_1",
+          "slug": "coral-sword",
           "maxLevel": 30
         },
         {
           "names": {
-            "en": "SK_LW_SWO_006_5",
-            "fr": "SK_LW_SWO_006_5"
+            "en": "Coral Sword",
+            "fr": ""
           },
           "dataId": "SK_LW_SWO_006_5",
           "effects": [
@@ -2131,7 +2131,7 @@
             5
           ],
           "grow": "ARTIFACT_50",
-          "slug": "sk_lw_swo_006_5",
+          "slug": "coral-sword",
           "maxLevel": 30
         }
       ]
@@ -7521,7 +7521,8 @@
     "rarity": "N",
     "image": "lapswpn_dag_000",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -7778,7 +7779,8 @@
     "rarity": "R",
     "image": "lapswpn_dag_001",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -8038,7 +8040,8 @@
     "rarity": "SR",
     "image": "lapswpn_dag_002",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -8302,7 +8305,8 @@
     "rarity": "MR",
     "image": "lapswpn_dag_004",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -8562,7 +8566,8 @@
     "rarity": "MR",
     "image": "lapswpn_dag_006",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -16300,7 +16305,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -16553,7 +16559,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -16833,7 +16840,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -17113,7 +17121,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -17189,7 +17198,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -17463,7 +17473,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -17740,7 +17751,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -18017,7 +18029,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -18157,7 +18170,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -18730,7 +18744,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -19306,7 +19321,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -19882,7 +19898,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20332,7 +20349,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20432,7 +20450,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20529,7 +20548,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20626,7 +20646,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20723,7 +20744,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20820,7 +20842,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -20917,7 +20940,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -21472,7 +21496,8 @@
     "rarity": "MR",
     "image": "lapswpn_dag_008",
     "equippableJobs": [
-      "JB_LW_THI_FIRE"
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -22586,7 +22611,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -22679,7 +22705,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -22772,7 +22799,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -22865,7 +22893,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -22991,7 +23020,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23112,7 +23142,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23208,7 +23239,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23304,7 +23336,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23400,7 +23433,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23469,7 +23503,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23538,7 +23573,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23676,7 +23712,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23803,7 +23840,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -23915,7 +23953,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24030,7 +24069,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24147,7 +24187,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24252,7 +24293,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24357,7 +24399,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24462,7 +24505,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24540,7 +24584,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24661,7 +24706,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24739,7 +24785,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -24938,7 +24985,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25125,7 +25173,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25289,7 +25338,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25396,7 +25446,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25701,7 +25752,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25875,7 +25927,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -25995,7 +26048,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -26189,7 +26243,8 @@
       "JB_FF14_YSTL",
       "JB_LW_FINA",
       "JB_LW_VIK_FIRE",
-      "JB_LW_WGN_FIRE"
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -26476,7 +26531,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -26580,7 +26636,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
@@ -26712,12 +26769,289 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FRVA"
+    }
+  },
+  "AF_ACC_LW_VNLA_1": {
+    "names": {
+      "en": "Bewitching Heels"
+    },
+    "slug": "bewitching-heels",
+    "stats": {
+      "HP": {
+        "min": 182,
+        "max": 182
+      },
+      "DEF": {
+        "min": 7,
+        "max": 7
+      },
+      "AGI": {
+        "min": 5,
+        "max": 5
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_VNLA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "False Veil of Darkness"
+          },
+          "dataId": "SK_ACC_LW_VNLA_1_1",
+          "effects": [
+            {
+              "type": "LIGHT_KILLER",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 3
+            },
+            {
+              "type": "PROVOKE",
+              "minValue": -6,
+              "maxValue": -6,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "false-veil-of-darkness",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_015",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_VNLA"
+    }
+  },
+  "AF_SWO_LW_DRIO_1": {
+    "names": {
+      "en": "Glinting Sword"
+    },
+    "slug": "glinting-sword",
+    "stats": {
+      "HP": {
+        "min": 68,
+        "max": 68
+      },
+      "ATK": {
+        "min": 60,
+        "max": 60
+      },
+      "MAG": {
+        "min": 112,
+        "max": 112
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_DRIO_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_SWO_LW_DRIO_1_1",
+            "fr": "SK_SWO_LW_DRIO_1_1"
+          },
+          "dataId": "SK_SWO_LW_DRIO_1_1",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_swo_lw_drio_1_1",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_swo_017",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_DRIO"
+    }
+  },
+  "AF_ACC_LW_TREL_1": {
+    "names": {
+      "en": "Serpent Soldier's Crown"
+    },
+    "slug": "serpent-soldiers-crown",
+    "stats": {
+      "HP": {
+        "min": 264,
+        "max": 264
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_TREL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_020",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_TREL"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -27950,6 +28284,62 @@
       "type": "Unknown"
     }
   },
+  "AF_DAG_LW_VNLA_2": {
+    "names": {
+      "en": "Assassin's Kris"
+    },
+    "slug": "assassins-kris",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 4
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "DAGGER",
+    "dataId": "AF_DAG_LW_VNLA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_dag_009",
+    "equippableJobs": [
+      "JB_LW_THI_FIRE",
+      "JB_LW_ASS_FIRE"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LOT_LW_RNG_005": {
     "names": {
       "en": "Alexandrite Ring",
@@ -28516,7 +28906,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN"
+      "JB_LW_RAIN",
+      "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
