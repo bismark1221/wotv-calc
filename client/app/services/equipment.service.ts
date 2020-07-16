@@ -436,23 +436,26 @@ export class EquipmentService {
 
   selectEquipmentForBuilder(equipmentId, customData = null) {
     this.equipment = this.getEquipment(equipmentId)
-    this.equipment.name = this.equipment.getName(this.translateService)
-    this.equipment.upgrade = 0;
-    this.equipment.level = 1;
-    if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
-      this.equipment.skills[0][0].level = 1
+
+    if (this.equipment) {
+      this.equipment.name = this.equipment.getName(this.translateService)
+      this.equipment.upgrade = 0;
+      this.equipment.level = 1;
+      if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
+        this.equipment.skills[0][0].level = 1
+      }
+      this.equipment.growIds = Object.keys(this.equipment.grows)
+      this.equipment.grow = this.equipment.growIds[0]
+
+      this.initiateSavedEquipment(customData)
+      this.updateMaxStat()
+
+      this.changeLevel()
+      this.changeUpgrade()
+      this.changeGrow()
+
+      this.equipmentCategory()
     }
-    this.equipment.growIds = Object.keys(this.equipment.grows)
-    this.equipment.grow = this.equipment.growIds[0]
-
-    this.initiateSavedEquipment(customData)
-    this.updateMaxStat()
-
-    this.changeLevel()
-    this.changeUpgrade()
-    this.changeGrow()
-
-    this.equipmentCategory()
 
     return this.equipment
   }
