@@ -414,12 +414,14 @@ export class EsperService {
       this.esper.level = esper.level;
       this.esper.resonance = esper.resonance ? esper.resonance : 1;
 
-      Object.keys(esper.nodes).forEach(nodeId => {
-        if (esper.nodes[nodeId]) {
-          this.esper.board.nodes[nodeId].level = esper.nodes[nodeId]
-          this.esper.board.nodes[nodeId].activated = true
-        }
-      })
+      if (esper.nodes) {
+        Object.keys(esper.nodes).forEach(nodeId => {
+          if (esper.nodes[nodeId]) {
+            this.esper.board.nodes[nodeId].level = esper.nodes[nodeId]
+            this.esper.board.nodes[nodeId].activated = true
+          }
+        })
+      }
     }
   }
 
