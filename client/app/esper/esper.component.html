@@ -2,7 +2,7 @@
   <li [ngbNavItem]="1">
     <a ngbNavLink>ESPER</a>
     <ng-template ngbNavContent #esperView>
-      <div class="leftBlock">
+      <div class="leftBlock" *ngIf="esper">
         <table class="esperTable">
           <tbody>
             <tr>
@@ -23,7 +23,7 @@
         </table>
       </div>
 
-      <div class="rightBlock">
+      <div class="rightBlock" *ngIf="esper">
         <table class="statsTable">
           <tbody>
             <tr>
@@ -139,7 +139,7 @@
   <li [ngbNavItem]="2">
     <a ngbNavLink>SKILL TREE</a>
     <ng-template ngbNavContent #tree>
-      <div class="row" *ngIf="grid">
+      <div class="row" *ngIf="esper && grid">
         <div class="esperGridContainer" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">

@@ -65,106 +65,108 @@ export class EquipmentComponent implements OnInit {
   }
 
   private formatEquipment() {
-    this.equipment.name = this.nameService.getName(this.equipment)
-    this.equipment.statsTypes = Object.keys(this.equipment.stats)
+    if (this.equipment) {
+      this.equipment.name = this.nameService.getName(this.equipment)
+      this.equipment.statsTypes = Object.keys(this.equipment.stats)
 
-    let i = 0;
-    this.equipment.countSkills = [];
-    this.equipment.effectTypes = [];
-    this.equipment.passiveSkills = [];
+      let i = 0;
+      this.equipment.countSkills = [];
+      this.equipment.effectTypes = [];
+      this.equipment.passiveSkills = [];
 
-    this.equipment.skills.forEach(equipmentLvl => {
-      this.equipment.countSkills.push(i);
+      this.equipment.skills.forEach(equipmentLvl => {
+        this.equipment.countSkills.push(i);
 
-      this.sortSkills(equipmentLvl)
+        this.sortSkills(equipmentLvl)
 
-      equipmentLvl.forEach(skill => {
-        skill.name = this.nameService.getName(skill)
+        equipmentLvl.forEach(skill => {
+          skill.name = this.nameService.getName(skill)
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEquipmentEffect(this.equipment, skill, effect);
-        });
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEquipmentEffect(this.equipment, skill, effect);
+          });
 
-        if (skill.damage) {
-          skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
-        }
-
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
-        }
-
-        this.skillService.formatRange(this.equipment, skill);
-
-        if (skill.type == "skill") {
-          this.equipment.activeSkill = skill
-        }
-
-        if (skill.type !== "skill") {
-          if (skill.effects[0]) {
-            if (this.equipment.effectTypes.indexOf(skill.effects[0].type) == -1) {
-              this.equipment.effectTypes.push(skill.effects[0].type)
-            }
-            skill.mainEffect = skill.effects[0].type
+          if (skill.damage) {
+            skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
           }
 
-          this.equipment.passiveSkills.push(skill)
-        }
-      });
-      i++;
-    });
+          if (skill.counter) {
+            skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
+          }
 
-    if (this.equipment.acquisition.type === "tmr") {
-      let unit = this.getUnit(this.equipment.acquisition.unitId)
-      if (unit) {
-        this.equipment.acquisition.unit = {
-          name: this.nameService.getName(unit),
-          slug: unit.slug
+          this.skillService.formatRange(this.equipment, skill);
+
+          if (skill.type == "skill") {
+            this.equipment.activeSkill = skill
+          }
+
+          if (skill.type !== "skill") {
+            if (skill.effects[0]) {
+              if (this.equipment.effectTypes.indexOf(skill.effects[0].type) == -1) {
+                this.equipment.effectTypes.push(skill.effects[0].type)
+              }
+              skill.mainEffect = skill.effects[0].type
+            }
+
+            this.equipment.passiveSkills.push(skill)
+          }
+        });
+        i++;
+      });
+
+      if (this.equipment.acquisition.type === "tmr") {
+        let unit = this.getUnit(this.equipment.acquisition.unitId)
+        if (unit) {
+          this.equipment.acquisition.unit = {
+            name: this.nameService.getName(unit),
+            slug: unit.slug
+          }
+        } else {
+          this.equipment.acquisition.unit = {
+            name: "Unknown",
+            slug: "Unknown"
+          }
         }
       } else {
-        this.equipment.acquisition.unit = {
-          name: "Unknown",
-          slug: "Unknown"
+        let acquis = "Unknown"
+        if (this.equipment.acquisition.type !== "Unknown") {
+          if (!this.equipment.acquisition.type[this.translateService.currentLang]) {
+            acquis = this.equipment.acquisition.type[this.translateService.getDefaultLang()];
+          } else {
+            acquis = this.equipment.acquisition.type[this.translateService.currentLang];
+          }
         }
+        this.equipment.acquisition.name = acquis
       }
-    } else {
-      let acquis = "Unknown"
-      if (this.equipment.acquisition.type !== "Unknown") {
-        if (!this.equipment.acquisition.type[this.translateService.currentLang]) {
-          acquis = this.equipment.acquisition.type[this.translateService.getDefaultLang()];
-        } else {
-          acquis = this.equipment.acquisition.type[this.translateService.currentLang];
-        }
-      }
-      this.equipment.acquisition.name = acquis
-    }
 
-    this.equipment.growIds = Object.keys(this.equipment.grows)
-    this.equipment.growIds.forEach(growId => {
-      this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
-      this.equipment.grows[growId].stats = {};
-      this.equipment.statsTypes.forEach(statType => {
-        let maxValue = this.equipment.stats[statType].max
-        if (typeof(this.equipment.grows[growId].curve[statType]) == "number") {
-          this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
-        } else {
-          this.equipment.grows[growId].stats[statType] = maxValue
-        }
+      this.equipment.growIds = Object.keys(this.equipment.grows)
+      this.equipment.growIds.forEach(growId => {
+        this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
+        this.equipment.grows[growId].stats = {};
+        this.equipment.statsTypes.forEach(statType => {
+          let maxValue = this.equipment.stats[statType].max
+          if (typeof(this.equipment.grows[growId].curve[statType]) == "number") {
+            this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+          } else {
+            this.equipment.grows[growId].stats[statType] = maxValue
+          }
+        })
       })
-    })
 
-    this.equipment.jobs = []
-    this.equipment.equippableJobs.forEach(jobId => {
-      let job = this.jobService.getJob(jobId)
-      job.name = this.nameService.getName(job)
-      this.equipment.jobs.push(job)
-    })
+      this.equipment.jobs = []
+      this.equipment.equippableJobs.forEach(jobId => {
+        let job = this.jobService.getJob(jobId)
+        job.name = this.nameService.getName(job)
+        this.equipment.jobs.push(job)
+      })
 
-    this.equipment.units = []
-    this.equipment.equippableUnits.forEach(unitId => {
-      let unit = this.getUnit(unitId)
-      unit.name = this.nameService.getName(unit)
-      this.equipment.units.push(unit)
-    })
+      this.equipment.units = []
+      this.equipment.equippableUnits.forEach(unitId => {
+        let unit = this.getUnit(unitId)
+        unit.name = this.nameService.getName(unit)
+        this.equipment.units.push(unit)
+      })
+    }
   }
 
   getEquipementType(type) {

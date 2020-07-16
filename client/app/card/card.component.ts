@@ -44,16 +44,18 @@ export class CardComponent implements OnInit {
   }
 
   private formatCard() {
-    let lang = this.translateService.currentLang
-    let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
+    if (this.card) {
+      let lang = this.translateService.currentLang
+      let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
 
-    this.card.name = this.nameService.getName(this.card)
-    skills.forEach(skillType => {
-      if (this.card[skillType]) {
-        this.card[skillType].effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.card, this.card[skillType], effect);
-        });
-      }
-    });
+      this.card.name = this.nameService.getName(this.card)
+      skills.forEach(skillType => {
+        if (this.card[skillType]) {
+          this.card[skillType].effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(this.card, this.card[skillType], effect);
+          });
+        }
+      });
+    }
   }
 }

@@ -46,55 +46,57 @@ export class RaidComponent implements OnInit {
   }
 
   private formatRaid() {
-    this.raid.bosses.forEach(boss => {
-      boss.name = this.nameService.getName(boss)
+    if (this.raid) {
+      this.raid.bosses.forEach(boss => {
+        boss.name = this.nameService.getName(boss)
 
-      boss.totalBuffs = {
-        HP: 0,
-        TP: 0,
-        INITIAL_AP: 0,
-        ATK: 0,
-        DEF: 0,
-        MAG: 0,
-        SPR: 0,
-        DEX: 0,
-        AGI: 0,
-        LUCK: 0,
-        CRITIC_RATE: 0,
-      };
-      boss.remainingBuffs = [];
+        boss.totalBuffs = {
+          HP: 0,
+          TP: 0,
+          INITIAL_AP: 0,
+          ATK: 0,
+          DEF: 0,
+          MAG: 0,
+          SPR: 0,
+          DEX: 0,
+          AGI: 0,
+          LUCK: 0,
+          CRITIC_RATE: 0,
+        };
+        boss.remainingBuffs = [];
 
-      boss.skillIds = Object.keys(boss.skills)
+        boss.skillIds = Object.keys(boss.skills)
 
-      boss.skillIds.forEach(skillId => {
-        let skill = boss.skills[skillId]
-        skill.name = this.nameService.getName(skill)
+        boss.skillIds.forEach(skillId => {
+          let skill = boss.skills[skillId]
+          skill.name = this.nameService.getName(skill)
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(boss, skill, effect);
-        });
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(boss, skill, effect);
+          });
 
-        skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
+          skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
 
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
+          if (skill.counter) {
+            skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
+          }
+
+          this.skillService.formatRange(boss, skill);
+        })
+
+        if (boss.attack) {
+          boss.attack.basedHtml = boss.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + boss.attack.based.toLowerCase() + ".png' />" : "";
+
+          boss.attack.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(boss, boss.attack, effect);
+          });
+
+          boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
+
+          this.skillService.formatRange(boss, boss.attack);
         }
-
-        this.skillService.formatRange(boss, skill);
       })
-
-      if (boss.attack) {
-        boss.attack.basedHtml = boss.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + boss.attack.based.toLowerCase() + ".png' />" : "";
-
-        boss.attack.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(boss, boss.attack, effect);
-        });
-
-        boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
-
-        this.skillService.formatRange(boss, boss.attack);
-      }
-    })
+    }
   }
 
   clickSpecialBismark() {

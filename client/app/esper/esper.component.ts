@@ -46,36 +46,38 @@ export class EsperComponent implements OnInit {
   }
 
   private formatEsper() {
-    let lang = this.translateService.currentLang
-    this.esper.name = this.nameService.getName(this.esper)
+    if (this.esper) {
+      let lang = this.translateService.currentLang
+      this.esper.name = this.nameService.getName(this.esper)
 
-    this.esper.skills.forEach(skill => {
-      skill.name = this.nameService.getName(skill)
-      skill.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
+      this.esper.skills.forEach(skill => {
+        skill.name = this.nameService.getName(skill)
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
+        });
+
+        if (skill.damage) {
+          skill.damageHtml = this.skillService.formatDamage(this.esper, skill, skill.damage);
+        }
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.esper, skill, skill.counter);
+        }
+
+        this.skillService.formatRange(this.esper, skill);
       });
 
-      if (skill.damage) {
-        skill.damageHtml = this.skillService.formatDamage(this.esper, skill, skill.damage);
-      }
+      this.esper.rarity = this.esperService.findRarity(this.esper);
 
-      if (skill.counter) {
-        skill.counterHtml = this.skillService.formatCounter(this.esper, skill, skill.counter);
-      }
-
-      this.skillService.formatRange(this.esper, skill);
-    });
-
-    this.esper.rarity = this.esperService.findRarity(this.esper);
-
-    this.esper.maxSP = 0;
-    this.esper.SPs.forEach(awake => {
-      awake.forEach(sp => {
-        this.esper.maxSP += sp;
+      this.esper.maxSP = 0;
+      this.esper.SPs.forEach(awake => {
+        awake.forEach(sp => {
+          this.esper.maxSP += sp;
+        })
       })
-    })
 
-    this.grid = this.gridService.generateEsperGrid(this.esper)
+      this.grid = this.gridService.generateEsperGrid(this.esper)
+    }
   }
 
   clickNode(this, node) {
