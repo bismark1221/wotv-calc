@@ -42,6 +42,7 @@ export class UnitComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.unit = this.unitService.getUnitBySlug(params.get('slug'))
+
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       } else {
@@ -51,117 +52,119 @@ export class UnitComponent implements OnInit {
   }
 
   private formatUnit() {
-    let lang = this.translateService.currentLang
-    this.unit.name = this.nameService.getName(this.unit)
+    if (this.unit) {
+      let lang = this.translateService.currentLang
+      this.unit.name = this.nameService.getName(this.unit)
 
-    this.unit.skills = []
+      this.unit.skills = []
 
-    this.unit.totalBuffs = {
-      HP: 0,
-      TP: 0,
-      INITIAL_AP: 0,
-      ATK: 0,
-      DEF: 0,
-      MAG: 0,
-      SPR: 0,
-      DEX: 0,
-      AGI: 0,
-      LUCK: 0,
-      CRITIC_RATE: 0,
-    };
-    this.unit.remainingBuffs = [];
+      this.unit.totalBuffs = {
+        HP: 0,
+        TP: 0,
+        INITIAL_AP: 0,
+        ATK: 0,
+        DEF: 0,
+        MAG: 0,
+        SPR: 0,
+        DEX: 0,
+        AGI: 0,
+        LUCK: 0,
+        CRITIC_RATE: 0,
+      };
+      this.unit.remainingBuffs = [];
 
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let skill = this.unit.board.nodes[nodeId].skill
-      if (skill.type !== "buff") {
-        skill.name = this.nameService.getName(skill)
+      Object.keys(this.unit.board.nodes).forEach(nodeId => {
+        let skill = this.unit.board.nodes[nodeId].skill
+        if (skill.type !== "buff") {
+          skill.name = this.nameService.getName(skill)
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-        });
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+          });
 
-        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+          skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
 
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
-        }
+          if (skill.counter) {
+            skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
+          }
 
-        this.skillService.formatRange(this.unit, skill);
-        this.unit.skills.push(skill)
-      } else {
-        let effect = skill.effects[0]
-        if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
-          this.unit.totalBuffs[effect.type] += effect.minValue
+          this.skillService.formatRange(this.unit, skill);
+          this.unit.skills.push(skill)
         } else {
-          this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+          let effect = skill.effects[0]
+          if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
+            this.unit.totalBuffs[effect.type] += effect.minValue
+          } else {
+            this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+          }
         }
-      }
-    })
-    this.skillService.sort(this.unit.skills);
-
-    if (this.unit.masterSkill.length > 0) {
-      this.unit.masterSkill.forEach(masterSkill => {
-        masterSkill.name = this.nameService.getName(masterSkill)
-
-        masterSkill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
-        });
       })
-    }
+      this.skillService.sort(this.unit.skills);
 
-    if (this.unit.limit) {
-      this.unit.limit.name = this.nameService.getName(this.unit.limit)
+      if (this.unit.masterSkill.length > 0) {
+        this.unit.masterSkill.forEach(masterSkill => {
+          masterSkill.name = this.nameService.getName(masterSkill)
 
-      this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
+          masterSkill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
+          });
+        })
+      }
 
-      this.unit.limit.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.limit, effect);
-      });
+      if (this.unit.limit) {
+        this.unit.limit.name = this.nameService.getName(this.unit.limit)
 
-      this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
+        this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
 
-      this.skillService.formatRange(this.unit, this.unit.limit);
-    }
-
-    if (this.unit.attack) {
-      this.unit.attack.basedHtml = this.unit.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.attack.based.toLowerCase() + ".png' />" : "";
-
-      this.unit.attack.effects.forEach(effect => {
-        effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.attack, effect);
-      });
-
-      this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
-
-      this.skillService.formatRange(this.unit, this.unit.attack);
-    }
-
-    if (this.unit.tmr) {
-      this.unit.tmr.name = this.nameService.getName(this.unit.tmr)
-      this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)
-
-      this.unit.tmr.skills.forEach(skill => {
-        skill.name = this.nameService.getName(skill)
-        skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
-        this.skillService.formatRange(this.unit, skill);
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+        this.unit.limit.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.limit, effect);
         });
-      });
+
+        this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
+
+        this.skillService.formatRange(this.unit, this.unit.limit);
+      }
+
+      if (this.unit.attack) {
+        this.unit.attack.basedHtml = this.unit.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.attack.based.toLowerCase() + ".png' />" : "";
+
+        this.unit.attack.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.attack, effect);
+        });
+
+        this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
+
+        this.skillService.formatRange(this.unit, this.unit.attack);
+      }
+
+      if (this.unit.tmr) {
+        this.unit.tmr.name = this.nameService.getName(this.unit.tmr)
+        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)
+
+        this.unit.tmr.skills.forEach(skill => {
+          skill.name = this.nameService.getName(skill)
+          skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
+          this.skillService.formatRange(this.unit, skill);
+          skill.effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
+          });
+        });
+      }
+
+      this.unit.jobsStats = [];
+      this.unit.totalJobsStats = {};
+
+      let i = 0
+      this.unit.jobs.forEach(jobId => {
+        let job = this.jobService.getJob(jobId)
+        this.calcJobStat(job, (i > 0 ? true : false))
+        job.name = this.nameService.getName(job)
+        this.jobs.push(job)
+        i++
+      })
+
+      this.grid = this.gridService.generateUnitGrid(this.unit)
     }
-
-    this.unit.jobsStats = [];
-    this.unit.totalJobsStats = {};
-
-    let i = 0
-    this.unit.jobs.forEach(jobId => {
-      let job = this.jobService.getJob(jobId)
-      this.calcJobStat(job, (i > 0 ? true : false))
-      job.name = this.nameService.getName(job)
-      this.jobs.push(job)
-      i++
-    })
-
-    this.grid = this.gridService.generateUnitGrid(this.unit)
   }
 
   private calcJobStat(job, subJob) {
