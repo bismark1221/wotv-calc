@@ -948,6 +948,10 @@ export class UnitService {
 
                 this.updateStat(effect.type, value, 'equipment' + i + "_buff", "fixe", true)
 
+                if (!this.unit.stats[effect.type]) { // Needed for all_res, ...
+                  this.unit.stats[effect.type] = {};
+                }
+
                 if (!this.unit.stats[effect.type].equipmentBuff) {
                   this.unit.stats[effect.type].equipmentBuff = {
                     positive: 0,
