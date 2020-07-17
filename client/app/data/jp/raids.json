@@ -160,7 +160,135 @@
         "species": "aquatic",
         "element": "earth",
         "image": "lapscsli",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_01",
+            "rate": 60,
+            "names": {
+              "en": "ブラウンスフィア"
+            },
+            "slug": "buraunsuhuia",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "slug": "zui-dahpdaun-wu-xiao",
+            "maxLevel": 150,
+            "minLevel": 1
+          },
+          "SK_CSLI_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_02",
+            "rate": 10,
+            "names": {
+              "en": "かぶりつく"
+            },
+            "slug": "kaburituku",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB"
+            },
+            "minLevel": 61
+          },
+          "SK_CSLI_M_03": {
+            "effects": [
+              {
+                "type": "CHARM_ATK",
+                "calcType": "percent",
+                "rate": 10,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_CSLI_M_03",
+            "rate": 30,
+            "names": {
+              "en": "スイートファウンテン"
+            },
+            "slug": "suitohuaunten",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 61
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "slug": "ming-zhong1-999atupu",
+            "maxLevel": 150,
+            "minLevel": 61
+          }
+        },
         "slug": "chocolate-flan",
         "attack": {
           "names": {
@@ -369,7 +497,153 @@
         "species": "aquatic",
         "element": "light",
         "image": "lapscsli_01",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_01_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_01_M_01",
+            "rate": 100,
+            "names": {
+              "en": "マシュマロスルー"
+            },
+            "slug": "masiyumarosuru",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "slug": "zui-dahpdaun-wu-xiao",
+            "maxLevel": 150,
+            "minLevel": 1
+          },
+          "SK_BTL_DF_1-80_U": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_DF_1-80_U",
+            "rate": 100,
+            "names": {
+              "en": "防御1-80アップ"
+            },
+            "slug": "fang-yu1-80atupu",
+            "maxLevel": 150,
+            "minLevel": 31
+          },
+          "SK_BTL_MDF_1-80_U": {
+            "effects": [
+              {
+                "type": "SPR",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_MDF_1-80_U",
+            "rate": 100,
+            "names": {
+              "en": "精神1-80アップ"
+            },
+            "slug": "jing-shen1-80atupu",
+            "maxLevel": 150,
+            "minLevel": 31
+          },
+          "SK_CSLI_01_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_01_M_02",
+            "rate": 100,
+            "names": {
+              "en": "とかす"
+            },
+            "slug": "tokasu",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB"
+            },
+            "minLevel": 61
+          },
+          "SK_CSLI_01_M_03": {
+            "effects": [
+              {
+                "type": "SLEEP_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_CSLI_01_M_03",
+            "rate": 100,
+            "names": {
+              "en": "ホワイトパーティー"
+            },
+            "slug": "howaitopatei",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 61
+          }
+        },
         "slug": "howaitomasiyumaro",
         "attack": {
           "names": {

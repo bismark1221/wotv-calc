@@ -34,6 +34,16 @@ import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_0
 import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
 import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
 
+
+import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
+import { default as jp_raid_2 } from         '../../../data/raid/jp/raid_ev_06_02_set.json';
+import { default as jp_raid_3 } from         '../../../data/raid/jp/raid_ev_06_03_set.json';
+import { default as jp_raid_4 } from         '../../../data/raid/jp/raid_ev_06_04_set.json';
+import { default as jp_raid_5 } from         '../../../data/raid/jp/raid_ev_07_01_set.json';
+import { default as jp_raid_6 } from         '../../../data/raid/jp/raid_ev_07_02_set.json';
+import { default as jp_raid_7 } from         '../../../data/raid/jp/raid_ev_07_03_set.json';
+import { default as jp_raid_8 } from         '../../../data/raid/jp/raid_ev_07_04_set.json';
+
 @Injectable()
 export class JsonService {
   slug = new Slug('default');
@@ -1970,7 +1980,14 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7
       this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8
     } else {
-      // whaiting for jp maps
+      this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1
+      this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2
+      this[this.version].raidMaps[jp_raid_3.wcond.expr] = jp_raid_3
+      this[this.version].raidMaps[jp_raid_4.wcond.expr] = jp_raid_4
+      this[this.version].raidMaps[jp_raid_5.wcond.expr] = jp_raid_5
+      this[this.version].raidMaps[jp_raid_6.wcond.expr] = jp_raid_6
+      this[this.version].raidMaps[jp_raid_7.wcond.expr] = jp_raid_7
+      this[this.version].raidMaps[jp_raid_8.wcond.expr] = jp_raid_8
     }
 
     Object.keys(this[this.version].raid).forEach(raidId => {

@@ -148,31 +148,33 @@ export class TeamService {
   }
 
   updateTeam(data) {
-    this.team.guild.data = data.guild
-    this.team.name = data.name
+    if (this.team) {
+      this.team.guild.data = data.guild
+      this.team.name = data.name
 
-    for (let i = 0; i <= 4; i++) {
-      if (data.units[i]) {
-        this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i])
-        this.team.units[i].guild = this.team.guild
-      } else {
-        this.team.units[i] = null
+      for (let i = 0; i <= 4; i++) {
+        if (data.units[i]) {
+          this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i])
+          this.team.units[i].guild = this.team.guild
+        } else {
+          this.team.units[i] = null
+        }
       }
-    }
 
-    for (let i = 0; i <= 4; i++) {
-      if (this.team.units[i] && this.team.units[i].card) {
-        for (let j = 0; j <= 4; j++) {
-          if (j != i && this.team.units[j]) {
-            this.team.units[j].teamCards[i] = this.team.units[i].card
+      for (let i = 0; i <= 4; i++) {
+        if (this.team.units[i] && this.team.units[i].card) {
+          for (let j = 0; j <= 4; j++) {
+            if (j != i && this.team.units[j]) {
+              this.team.units[j].teamCards[i] = this.team.units[i].card
+            }
           }
         }
       }
-    }
 
-    for (let i = 0; i <= 4; i++) {
-      if (data.units[i]) {
-        this.team.units[i].changeLevel(true, true)
+      for (let i = 0; i <= 4; i++) {
+        if (data.units[i]) {
+          this.team.units[i].changeLevel(true, true)
+        }
       }
     }
   }

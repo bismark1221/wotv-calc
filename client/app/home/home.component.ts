@@ -23,7 +23,7 @@ export class HomeComponent {
   updated = {
     GL: [
       {
-        date: "17/06",
+        date: "17/07",
         items: [
           {type: "unit", dataId: "UN_LW_P_VNLA"},
           {type: "unit", dataId: "UN_LW_P_DRIO"},
