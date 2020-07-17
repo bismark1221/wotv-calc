@@ -915,7 +915,7 @@ export class UnitService {
         Object.keys(this.unit.equipments[i].stats).forEach(statType => {
           let value = parseInt(this.unit.equipments[i].stats[statType].selected)
 
-          this.updateStat(statType, value, 'equipment' + i, "fixe", true)
+          this.updateStat(statType, value, 'equipment' + i + "_stat", "fixe", true)
 
           if (!this.unit.stats[statType].equipment) {
             this.unit.stats[statType].equipment = {
@@ -946,9 +946,7 @@ export class UnitService {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
                 }
 
-                if (!this.unit.stats[effect.type]) {
-                  this.unit.stats[effect.type] = {};
-                }
+                this.updateStat(effect.type, value, 'equipment' + i + "_buff", "fixe", true)
 
                 if (!this.unit.stats[effect.type].equipmentBuff) {
                   this.unit.stats[effect.type].equipmentBuff = {
@@ -982,7 +980,7 @@ export class UnitService {
 
       if (this.unit.stats[statType].equipmentBuff) {
         let negativeBuffValue = this.unit.stats[statType].equipmentBuff.negative !== -100000000 ? this.unit.stats[statType].equipmentBuff.negative : 0
-        this.updateStat(statType, this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe", true)
+        this.updateStat(statType, this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe")
       }
     })
   }

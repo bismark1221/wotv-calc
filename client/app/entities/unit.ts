@@ -610,7 +610,7 @@ export class Unit {
         Object.keys(this.equipments[i].stats).forEach(statType => {
           let value = parseInt(this.equipments[i].stats[statType].selected)
 
-          this.updateStat(statType, value, 'equipment' + i, "fixe", true)
+          this.updateStat(statType, value, 'equipment' + i + "_stat", "fixe", true)
 
           if (!this.stats[statType].equipment) {
             this.stats[statType].equipment = {
@@ -641,9 +641,7 @@ export class Unit {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
                 }
 
-                if (!this.stats[effect.type]) {
-                  this.stats[effect.type] = {};
-                }
+                this.updateStat(effect.type, value, 'equipment' + i + "_buff", "fixe", true)
 
                 if (!this.stats[effect.type].equipmentBuff) {
                   this.stats[effect.type].equipmentBuff = {
@@ -676,7 +674,7 @@ export class Unit {
 
       if (this.stats[statType].equipmentBuff) {
         let negativeBuffValue = this.stats[statType].equipmentBuff.negative !== -100000000 ? this.stats[statType].equipmentBuff.negative : 0
-        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe", true)
+        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe")
       }
     })
   }
