@@ -1,5 +1,5 @@
-<div class="leftBlock">
-  <div>
+<div class="row">
+  <div style="width: 100%;">
     <ng-select [items]="units"
                bindLabel="name"
                bindValue="id"
@@ -8,314 +8,6 @@
                [(ngModel)]="selectedUnitId"
                (ngModelChange)="selectUnit()">
     </ng-select>
-  </div>
-
-  <div *ngIf="unit" class="unitDiv">
-    <table class="unitTable">
-      <tbody>
-        <tr>
-          <th colspan="3">{{ unit.name }}</th>
-        </tr>
-        <tr>
-          <td colspan="3"><img class="unitImg" src="{{'assets/units/' + unit.image + '_m.png'}}" /></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div *ngIf="unit" class="starsLbsLevels">
-      <div class="stars">
-        <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
-          <ng-template let-fill="fill" let-index="index">
-            <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
-          </ng-template>
-        </ngb-rating>
-      </div>
-
-      <div class="lbs">
-        <ngb-rating [(rate)]="unit.lb" [max]="5">
-          <ng-template let-fill="fill" let-index="index">
-            <div class="lb" [class.filled]="fill === 100" (click)="changeLB(index + 1)">&nbsp;</div>
-          </ng-template>
-        </ngb-rating>
-      </div>
-
-      <div>
-        Lv
-        <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
-          <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
-        </select> / {{ unit.maxLevel }}
-      </div>
-    </div>
-  </div>
-
-  <div *ngIf="unit">
-    <table class="jobsTable">
-      <tr>
-        <td *ngFor="let i of [0, 1, 2]">
-          <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
-          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevel()">
-            <option *ngFor="let level of unit.tableJobLevels">{{ level }}</option>
-          </select>
-          <select *ngIf="!unit.jobsData[i].unlocked"></select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit" class="unitButtons">
-    <button (click)="maxUnit()">Max unit</button>
-    <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max level & jobs</button>
-  </div>
-
-
-  <div *ngIf="unit">
-    <table class="equipmentsTable">
-      <tr>
-        <td>
-          <ng-select [items]="equipments[0]"
-                     bindLabel="name"
-                     bindValue="dataId"
-                     groupBy="rarity"
-                     placeholder="Equipment 1"
-                     [(ngModel)]="selectedEquipmentsIds[0]"
-                     (ngModelChange)="selectEquipment(0)"
-                     class="selectEquipment">
-          </ng-select>
-          <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
-            <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
-            <button (click)="showEquipmentDetail(0)">Custom</button>
-          </div>
-          <div *ngIf="!selectedEquipments[0]">
-            <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
-          </div>
-        </td>
-        <td>
-          <div *ngIf="unit && unit.lb >= 2">
-            <ng-select [items]="equipments[1]"
-                       bindLabel="name"
-                       bindValue="dataId"
-                       groupBy="rarity"
-                       placeholder="Equipment 2"
-                       [(ngModel)]="selectedEquipmentsIds[1]"
-                       (ngModelChange)="selectEquipment(1)"
-                       class="selectEquipment">
-            </ng-select>
-          </div>
-
-          <div *ngIf="unit && unit.lb >= 2">
-            <div *ngIf="selectedEquipmentsIds[1]">
-              <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
-              <button (click)="showEquipmentDetail(1)">Custom</button>
-            </div>
-            <div *ngIf="!selectedEquipmentsIds[1]">
-              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
-            </div>
-          </div>
-
-          <div *ngIf="unit && (unit.lb < 2 || !unit.lb)">
-            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
-          </div>
-        </td>
-        <td>
-          <div *ngIf="unit && unit.lb >= 4">
-            <ng-select [items]="equipments[2]"
-                       bindLabel="name"
-                       bindValue="dataId"
-                       groupBy="rarity"
-                       placeholder="Equipment 3"
-                       [(ngModel)]="selectedEquipmentsIds[2]"
-                       (ngModelChange)="selectEquipment(2)"
-                       class="selectEquipment">
-            </ng-select>
-          </div>
-
-          <div *ngIf="unit && unit.lb >= 4">
-            <div *ngIf="selectedEquipmentsIds[2]">
-              <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
-              <button (click)="showEquipmentDetail(2)">Custom</button>
-            </div>
-            <div *ngIf="!selectedEquipmentsIds[2]">
-              <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
-            </div>
-          </div>
-
-          <div *ngIf="unit && (unit.lb < 4 || !unit.lb)">
-            <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
-          </div>
-        </td>
-      </tr>
-    </table>
-
-    <table class="esperCardTable">
-      <tr>
-        <td>
-          <ng-select [items]="espers"
-                     bindLabel="name"
-                     bindValue="id"
-                     groupBy="rarity"
-                     placeholder="Espers"
-                     [(ngModel)]="selectedEsperId"
-                     (ngModelChange)="selectEsper()"
-                     class="selectEsper">
-          </ng-select>
-
-          <div *ngIf="esper">
-            <img src="{{'assets/units/' + esper.image + '_m.png'}}" class="esperImg"/>
-            Reso
-            <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
-              <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
-            </select><br />
-            <button (click)="showEsperDetail()">Custom</button>
-          </div>
-
-          <div *ngIf="!esper">
-            <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
-          </div>
-        </td>
-        <td>
-          <ng-select [items]="cards"
-                     bindLabel="name"
-                     bindValue="id"
-                     groupBy="rarity"
-                     placeholder="Cards"
-                     [(ngModel)]="selectedCardId"
-                     (ngModelChange)="selectCard()"
-                     class="selectCard">
-          </ng-select>
-
-          <div *ngIf="card">
-            <img src="{{'assets/cards/' + card.image + '_m.png'}}" class="cardImg"/>
-            <button (click)="showCardDetail()">Custom</button>
-          </div>
-
-          <div *ngIf="!card">
-            <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-
-
-
-
-  <div *ngIf="unit">
-    <table>
-      <tr>
-        <td colspan="2">Support Skills</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.activatedSupport[0]" (ngModelChange)="changeLevel()">
-            <option value="0"></option>
-            <option *ngFor="let node of getAvailableSupportNodes(0)" [ngValue]="node.nodeId">
-              {{ node.name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.activatedSupport[1]" (ngModelChange)="changeLevel()">
-            <option value="0"></option>
-            <option *ngFor="let node of getAvailableSupportNodes(1)" [ngValue]="node.nodeId">
-              {{ node.name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit">
-    <table>
-      <tr>
-        <td>Counter Skill</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.activatedCounter" (ngModelChange)="changeCounter()">
-            <option value="0"></option>
-            <option *ngFor="let node of getAvailableCounterNodes()" [ngValue]="node.nodeId">
-              {{ node.name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit">
-    <table>
-      <tr>
-        <td>Master Skill Level</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="changeLevel()">
-            <option *ngFor="let i of unit.masterSkillLevel" [ngValue]="i">
-              {{ i + 1 }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit">
-    <table>
-      <tr>
-        <td>Sub-job</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.subjob" (ngModelChange)="changeSubJob()">
-            <option *ngFor="let i of [0, 1, 2]" [ngValue]="i">
-              {{ unit.jobsData[i].name }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit && unit.limit">
-    <table>
-      <tr>
-        <td>Limit lv</td>
-      </tr>
-      <tr>
-        <td>
-          <select [(ngModel)]="unit.limit.level" (ngModelChange)="changeLimit()">
-            <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [ngValue]="i">
-              {{ i }}
-            </option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div *ngIf="unit">
-    <table>
-      <tr>
-        <td colspan="4">Guild</td>
-      </tr>
-      <tr>
-        <td *ngFor="let statue of statueNames">
-          <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
-        </td>
-      </tr>
-      <td *ngFor="let statue of statueNames">
-        <div>
-          {{ unit.guild[statue] }}
-        </div>
-      </td>
-      <tr>
-        <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
-      </tr>
-    </table>
   </div>
 
   <ng-template #builderLink let-modal>
@@ -328,334 +20,643 @@
     <button (click)="copyLink()">Copy</button>
   </ng-template>
 
-  <div *ngIf="unit">
+  <div *ngIf="unit"  style="width: 100%;">
     <button (click)="save()">SAVE</button>
     <button (click)="openLinkModal(builderLink)">Get Build Link</button>
   </div>
-</div>
 
-<div style="width: 70%; display: inline-block; vertical-align: top; padding-left: 15px;" *ngIf="unit">
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="13">Stats</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th *ngFor="let type of statsType">{{ type }}</th>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showStatsDetail">
-      <tr *ngFor="let statFrom of statsFrom">
-        <td>{{ statFrom.translate }}</td>
-        <td *ngFor="let type of statsType">
-          <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
-          <span>{{ unit.stats[type][statFrom.type] }}</span>
-        </td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Total</td>
-        <td *ngFor="let type of statsType">
-          <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
-          <span>{{ unit.stats[type].total }}</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <button (click)="showHideDetail('Stats')">Stats Detail</button>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="9">Buffs</th>
-      </tr>
-    </tbody>
-    <tbody *ngFor="let line of unit.availableStats">
-      <tr>
-        <th></th>
-        <th *ngFor="let statType of line">
-          <img *ngIf="buffsImage.indexOf(statType.toLowerCase()) !== -1" class="buffImg" title="{{ statType }}" src="{{ '/assets/buffs/' + statType.toLowerCase() + '.png' }}">
-          <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
-        </th>
-      </tr>
-      <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of ['board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0_stat', 'equipment0_buff', 'equipment1_stat', 'equipment1_buff', 'equipment2_stat', 'equipment2_buff', 'totalEquipment']">
-        <td>{{ comeFrom }}</td>
-        <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td *ngFor="let statType of line">{{ unit.stats[statType].total }}</td>
-      </tr>
-    </tbody>
-  </table>
-  <button (click)="showHideDetail('Buffs')">Buffs Detail</button>
-
-
-  <table class="statsTable" *ngIf="unit.imbue">
-    <tbody>
-      <tr>
-        <th colspan="9">Imbue</th>
-      </tr>
-      <tr>
-        <td>
-          {{ unit.imbue.formatHtml }}
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="statsTable">
-    <tbody>
-      <tr>
-        <th colspan="9">Active skills</th>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showActiveDetail">
-      <tr>
-        <th class="skillTypeTd">Type</th>
-        <th class="skillNameTd">Name</th>
-        <th>Effects</th>
-        <th class="rangeTd">Range</th>
-        <th class="skillCastTd">Casts</th>
-        <th class="skillHitTd">Hits</th>
-        <th class="skillCostTd">Cost</th>
-      </tr>
-      <tr *ngFor="let skill of unit.activeSkills">
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
-          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-          <div *ngIf="skill.time && skill.time.minValue">
-            <ng-template #tip_time>
+  <div class="leftBlock">
+    <table *ngIf="unit">
+      <tbody>
+        <tr>
+          <th>{{ unit.name }}</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="unitButtons">
+              <button (click)="resetUnit()">Reset</button>
+              <button (click)="maxUnit()">Max unit</button>
+            </div>
+            <div class="cardIcons">
+              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+              <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}"  />
+            </div>
+            <div>
+              <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Level</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="awakeningDiv">
               <div>
-                Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}
+                Awakening
               </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ skill.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ skill.counterHtml }}</div>
-          <div [innerHTML]="skill.damageHtml"></div>
-          <div *ngFor="let effect of skill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-      </tr>
-    </tbody>
-    <tbody *ngFor="let i of [0, 1, 2]">
-      <tr [ngStyle]="{'display': showActiveDetail ? 'table-row' : 'none' }" *ngIf="unit.equipments[i] && unit.equipments[i].activeSkill; let skill">
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/weapon.png'}}" />
-          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-          <div *ngIf="skill.time && skill.time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}
+              <div class="stars">
+                <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
               </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ skill.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ skill.counterHtml }}</div>
-          <div [innerHTML]="skill.damageHtml"></div>
-          <div *ngFor="let effect of skill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showActiveDetail && unit.activatedSupport[0] !== '0'">
-      <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[0]].skill]">
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
-          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-          <div *ngIf="skill.time && skill.time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}
-              </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ skill.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ skill.counterHtml }}</div>
-          <div [innerHTML]="skill.damageHtml"></div>
-          <div *ngFor="let effect of skill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showActiveDetail && unit.activatedSupport[1] !== '0'">
-      <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[1]].skill]">
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
-          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-          <div *ngIf="skill.time && skill.time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}
-              </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ skill.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ skill.counterHtml }}</div>
-          <div [innerHTML]="skill.damageHtml"></div>
-          <div *ngFor="let effect of skill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showActiveDetail && unit.activatedCounter !== '0'">
-      <tr *ngFor="let skill of [unit.board.nodes[unit.activatedCounter].skill]">
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/counter.png'}}" />
-          <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-          <div *ngIf="skill.time && skill.time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ skill.time.minValue }}<br />
-                Max time: {{ skill.time.maxValue }}
-              </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ skill.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ skill.counterHtml }}</div>
-          <div [innerHTML]="skill.damageHtml"></div>
-          <div *ngFor="let effect of skill.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ skill.count }}</td>
-        <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-        <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
-      </tr>
-    </tbody>
-    <tbody *ngIf="showActiveDetail && unit.limit">
-      <tr>
-        <td>
-          <img class="skilImg" title="skill type" src="{{'assets/skill-type/limit.png'}}" />
-          <span *ngIf="unit.limit.based"><img title="{{ unit.limit.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.limit.based + '.png'}}" /></span>
-          <div *ngIf="unit.limit.time && unit.limit.time.minValue">
-            <ng-template #tip_time>
-              <div>
-                Min time: {{ unit.limit.time.minValue }}<br />
-                Max time: {{ unit.limit.time.maxValue }}
-              </div>
-            </ng-template>
-            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-          </div>
-        </td>
-        <td>{{ unit.limit.name }}</td>
-        <td class="skillEffectTd">
-          <div>{{ unit.limit.counterHtml }}</div>
-          <div [innerHTML]="unit.limit.damageHtml"></div>
-          <div *ngFor="let effect of unit.limit.effects">
-            {{ effect.formatHtml }}
-          </div>
-        </td>
-        <td>
-          <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
-          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-            <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
-          </div>
-        </td>
-        <td>{{ unit.limit.count }}</td>
-        <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
-        <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
-      </tr>
-    </tbody>
-  </table>
-  <button (click)="showHideDetail('Active')">Show active skills</button>
-</div>
+            </div>
 
-<div class="row" *ngIf="unit">
-  <div class="unitGridContainer" style="text-align: center;">
-    <ul class="hexGrid" oncontextmenu="return false;">
-      <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-        <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+            <div class="lbDiv">
+              <div>
+                Limit Break
+              </div>
+              <div class="lbs">
+                <ngb-rating [(rate)]="unit.lb" [max]="5">
+                  <ng-template let-fill="fill" let-index="index">
+                    <div class="lb" [class.filled]="fill === 100" (click)="changeLB(index + 1)">&nbsp;</div>
+                  </ng-template>
+                </ngb-rating>
+              </div>
+            </div>
 
-        <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type == 'center'">
-          <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
-        </div>
+            <div class="levelDiv">
+              <div>
+                Level
+              </div>
+              <div>
+                <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
+                  <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
+                </select> / {{ unit.maxLevel }}
+              </div>
+            </div>
 
-        <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type == 'text'"
-             [ngClass]="{
-               'activated': unit.board.nodes[node].activated,
-               'buff': unit.board.nodes[node].type == 'buff',
-               'skill': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'skill',
-               'support': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'support',
-               'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
-               'notActivable': !canActivateNode(node)
-        }" >
-          <i class="fa fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
-          <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
-          <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
-          <i class="fa fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
-        </div>
-      </li>
-    </ul>
+            <div class="masterSkillDiv">
+              <div>
+                Master Skill Level
+              </div>
+              <div>
+                <select [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="changeLevel()">
+                  <option *ngFor="let i of unit.masterSkillLevel" [ngValue]="i">
+                    {{ i + 1 }}
+                  </option>
+                </select>
+              </div>
+            </div>
 
-    <div [innerHTML]="unit.grid.lines"></div>
+            <div class="limitDiv" *ngIf="unit.limit">
+              <div>
+                Limit Level
+              </div>
+              <div>
+                <select [(ngModel)]="unit.limit.level" (ngModelChange)="changeLimit()">
+                  <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [ngValue]="i">
+                    {{ i }}
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <button (click)="resetLevel()" class="maxLevelButton">Reset level</button>
+              <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max level</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Jobs</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let i of [0, 1, 2]" class="jobDiv">
+              <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+              <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevel()">
+                <option *ngFor="let level of unit.tableJobLevels">{{ level }}</option>
+              </select>
+              <select *ngIf="!unit.jobsData[i].unlocked"></select>
+            </div>
+            <div>
+              <button (click)="resetJob()" class="maxLevelButton">Reset Jobs</button>
+              <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max Jobs</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Sub Job</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let i of [0, 1, 2]" class="jobDiv">
+              <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+              {{ unit.jobsData[i].name }}
+            </div>
+            <select [(ngModel)]="unit.subjob" (ngModelChange)="changeSubJob()">
+              <option *ngFor="let i of [0, 1, 2]" [ngValue]="i">
+                {{ unit.jobsData[i].name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Equipments</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="equipmentDiv">
+              Slot 1
+              <ng-select [items]="equipments[0]"
+                         bindLabel="name"
+                         bindValue="dataId"
+                         groupBy="rarity"
+                         placeholder="Equipment 1"
+                         [(ngModel)]="selectedEquipmentsIds[0]"
+                         (ngModelChange)="selectEquipment(0)"
+                         class="selectEquipment">
+              </ng-select>
+              <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
+                <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
+                <button (click)="showEquipmentDetail(0)">Custom</button>
+              </div>
+              <div *ngIf="!selectedEquipments[0]">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
+              Slot 2
+              <ng-select [items]="equipments[1]"
+                         bindLabel="name"
+                         bindValue="dataId"
+                         groupBy="rarity"
+                         placeholder="Equipment 2"
+                         [(ngModel)]="selectedEquipmentsIds[1]"
+                         (ngModelChange)="selectEquipment(1)"
+                         class="selectEquipment">
+              </ng-select>
+
+              <div *ngIf="selectedEquipmentsIds[1]">
+                <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
+                <button (click)="showEquipmentDetail(1)">Custom</button>
+              </div>
+              <div *ngIf="!selectedEquipmentsIds[1]">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && (unit.lb < 2 || !unit.lb)">
+              Slot 2
+              <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && unit.lb >= 4">
+              TMR
+              <ng-select [items]="equipments[2]"
+                         bindLabel="name"
+                         bindValue="dataId"
+                         groupBy="rarity"
+                         placeholder="Equipment 3"
+                         [(ngModel)]="selectedEquipmentsIds[2]"
+                         (ngModelChange)="selectEquipment(2)"
+                         class="selectEquipment">
+              </ng-select>
+
+              <div *ngIf="selectedEquipmentsIds[2]">
+                <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
+                <button (click)="showEquipmentDetail(2)">Custom</button>
+              </div>
+              <div *ngIf="!selectedEquipmentsIds[2]">
+                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
+              </div>
+            </div>
+
+            <div class="equipmentDiv" *ngIf="unit && (unit.lb < 4 || !unit.lb)">
+              TMR
+              <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Esper & Card</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="esparCardDiv">
+              Esper
+              <ng-select [items]="espers"
+                         bindLabel="name"
+                         bindValue="id"
+                         groupBy="rarity"
+                         placeholder="Espers"
+                         [(ngModel)]="selectedEsperId"
+                         (ngModelChange)="selectEsper()"
+                         class="selectEsper">
+              </ng-select>
+
+              <div *ngIf="esper">
+                <img src="{{'assets/units/' + esper.image + '_m.png'}}" class="esperImg"/>
+                Reso
+                <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
+                  <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
+                </select><br />
+                <button (click)="showEsperDetail()">Custom</button>
+              </div>
+
+              <div *ngIf="!esper">
+                <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
+              </div>
+            </div>
+
+            <div class="esparCardDiv">
+              Vision Card
+              <ng-select [items]="cards"
+                         bindLabel="name"
+                         bindValue="id"
+                         groupBy="rarity"
+                         placeholder="Cards"
+                         [(ngModel)]="selectedCardId"
+                         (ngModelChange)="selectCard()"
+                         class="selectCard">
+              </ng-select>
+
+              <div *ngIf="card">
+                <img src="{{'assets/cards/' + card.image + '_m.png'}}" class="cardImg"/>
+                <button (click)="showCardDetail()">Custom</button>
+              </div>
+
+              <div *ngIf="!card">
+                <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Support Skills</th>
+        </tr>
+        <tr *ngFor="let i of [0, 1]">
+          <td>
+            <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevel()" class="supportSelect">
+              <option value="0"></option>
+              <option *ngFor="let node of getAvailableSupportNodes(i)" [ngValue]="node.nodeId">
+                {{ node.name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Counter Skill</th>
+        </tr>
+        <tr>
+          <td>
+            <select [(ngModel)]="unit.activatedCounter" (ngModelChange)="changeCounter()" class="counterSelect">
+              <option value="0"></option>
+              <option *ngFor="let node of getAvailableCounterNodes()" [ngValue]="node.nodeId">
+                {{ node.name }}
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub">Guild</th>
+        </tr>
+        <tr>
+          <td>
+            <div *ngFor="let statue of statueNames" class="guildDiv">
+              <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
+              {{ unit.guild[statue] }}
+            </div>
+            <div>
+              <button (click)="showGuildDetail()">Custom</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+  <div class="rightBlock" *ngIf="unit">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="13">Stats</th>
+        </tr>
+        <tr>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let type of statsType">{{ type }}</th>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showStatsDetail">
+        <tr *ngFor="let statFrom of statsFrom">
+          <td>{{ statFrom.translate }}</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
+            <span>{{ unit.stats[type][statFrom.type] }}</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Total</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
+            <span>{{ unit.stats[type].total }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="showHideDetail('Stats')">Stats Detail</button>
+
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="9">Buffs</th>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let line of unit.availableStats">
+        <tr>
+          <th class="sub"></th>
+          <th class="sub" *ngFor="let statType of line">
+            <img *ngIf="buffsImage.indexOf(statType.toLowerCase()) !== -1" class="buffImg" title="{{ statType }}" src="{{ '/assets/buffs/' + statType.toLowerCase() + '.png' }}">
+            <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
+          </th>
+        </tr>
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of ['board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0_stat', 'equipment0_buff', 'equipment1_stat', 'equipment1_buff', 'equipment2_stat', 'equipment2_buff', 'totalEquipment']">
+          <td>{{ comeFrom }}</td>
+          <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td *ngFor="let statType of line">{{ unit.stats[statType].total }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="showHideDetail('Buffs')">Buffs Detail</button>
+
+
+    <table class="statsTable" *ngIf="unit.imbue">
+      <tbody>
+        <tr>
+          <th colspan="9">Imbue</th>
+        </tr>
+        <tr>
+          <td>
+            {{ unit.imbue.formatHtml }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="9">Active skills</th>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showActiveDetail">
+        <tr>
+          <th class="sub skillTypeTd">Type</th>
+          <th class="sub skillNameTd">Name</th>
+          <th class="sub ">Effects</th>
+          <th class="sub rangeTd">Range</th>
+          <th class="sub skillCastTd">Casts</th>
+          <th class="sub skillHitTd">Hits</th>
+          <th class="sub skillCostTd">Cost</th>
+        </tr>
+        <tr *ngFor="let skill of unit.activeSkills">
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+            <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <div *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ skill.time.minValue }}<br />
+                  Max time: {{ skill.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ skill.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+            <div [innerHTML]="skill.damageHtml"></div>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+      <tbody *ngFor="let i of [0, 1, 2]">
+        <tr [ngStyle]="{'display': showActiveDetail ? 'table-row' : 'none' }" *ngIf="unit.equipments[i] && unit.equipments[i].activeSkill; let skill">
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/weapon.png'}}" />
+            <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <div *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ skill.time.minValue }}<br />
+                  Max time: {{ skill.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ skill.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+            <div [innerHTML]="skill.damageHtml"></div>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showActiveDetail && unit.activatedSupport[0] !== '0'">
+        <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[0]].skill]">
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
+            <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <div *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ skill.time.minValue }}<br />
+                  Max time: {{ skill.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ skill.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+            <div [innerHTML]="skill.damageHtml"></div>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showActiveDetail && unit.activatedSupport[1] !== '0'">
+        <tr *ngFor="let skill of [unit.board.nodes[unit.activatedSupport[1]].skill]">
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" />
+            <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <div *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ skill.time.minValue }}<br />
+                  Max time: {{ skill.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ skill.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+            <div [innerHTML]="skill.damageHtml"></div>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showActiveDetail && unit.activatedCounter !== '0'">
+        <tr *ngFor="let skill of [unit.board.nodes[unit.activatedCounter].skill]">
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/counter.png'}}" />
+            <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+            <div *ngIf="skill.time && skill.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ skill.time.minValue }}<br />
+                  Max time: {{ skill.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ skill.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ skill.counterHtml }}</div>
+            <div [innerHTML]="skill.damageHtml"></div>
+            <div *ngFor="let effect of skill.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ skill.count }}</td>
+          <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+          <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="showActiveDetail && unit.limit">
+        <tr>
+          <td>
+            <img class="skilImg" title="skill type" src="{{'assets/skill-type/limit.png'}}" />
+            <span *ngIf="unit.limit.based"><img title="{{ unit.limit.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.limit.based + '.png'}}" /></span>
+            <div *ngIf="unit.limit.time && unit.limit.time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ unit.limit.time.minValue }}<br />
+                  Max time: {{ unit.limit.time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td>{{ unit.limit.name }}</td>
+          <td class="skillEffectTd">
+            <div>{{ unit.limit.counterHtml }}</div>
+            <div [innerHTML]="unit.limit.damageHtml"></div>
+            <div *ngFor="let effect of unit.limit.effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td>
+            <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
+            </div>
+          </td>
+          <td>{{ unit.limit.count }}</td>
+          <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
+          <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="showHideDetail('Active')">Show active skills</button>
+  </div>
+
+  <div class="row" *ngIf="unit">
+    <div class="unitGridContainer" style="text-align: center;">
+      <ul class="hexGrid" oncontextmenu="return false;">
+        <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+          <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+
+          <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type == 'center'">
+            <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
+          </div>
+
+          <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type == 'text'"
+               [ngClass]="{
+                 'activated': unit.board.nodes[node].activated,
+                 'buff': unit.board.nodes[node].type == 'buff',
+                 'skill': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'skill',
+                 'support': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'support',
+                 'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
+                 'notActivable': !canActivateNode(node)
+          }" >
+            <i class="fa fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
+            <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
+            <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
+            <i class="fa fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+          </div>
+        </li>
+      </ul>
+
+      <div [innerHTML]="unit.grid.lines"></div>
+    </div>
   </div>
 </div>

@@ -1,29 +1,93 @@
-.unitImg {
-  width: 100px;
-  margin-top: 10px;
-}
-
-.unitName {
-  font-weight: bold;
-  margin-left: 10px
-}
-
-.statsTable {
-  width: 1000px;
-}
-
-.unitsCol {
-  width: 200px;
-}
-
 .row {
-  width: 1200px;
+  width: 1300px;
   margin: auto;
   margin-bottom: 20px;
 }
 
-tr.disable {
-  display: none;
+.leftBlock {
+  width: 250px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.leftBlock table {
+  width: 100%
+}
+
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.cardIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.elementImg, .rarityImg {
+  height: 32px;
+}
+
+.rarityImg {
+  float: left;
+}
+
+.elementImg {
+  float: right;
+}
+
+.awakeningDiv, .masterSkillDiv, .limitDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.lbDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .masterSkillDiv div:first-child, .limitDiv div:first-child {
+  float: left;
+}
+
+.lbDiv div:first-child {
+  padding-top: 6px;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .lbDiv div:last-child, .levelDiv div:last-child, .masterSkillDiv div:last-child, .limitDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 95px;
+}
+
+.masterSkillDiv div:last-child {
+  padding-right: 51px;
+}
+
+.limitDiv div:last-child {
+  padding-right: 42px;
 }
 
 .star {
@@ -54,63 +118,86 @@ tr.disable {
   width: 20px;
 }
 
+.jobDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .mainJob {
-  height: 40px;
+  height: 55px;
   background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
-  background-size: 40px;
+  background-size: 55px;
   padding: 5px;
 }
 
 .subJob {
-  height: 40px;
+  height: 55px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
-  background-size: 40px;
+  background-size: 55px;
   padding: 5px;
 }
+
+.equipmentDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg, .selectEquipment {
+  width: 70px;
+}
+
+.esparCardDiv {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.esperImg, .selectEsper, .cardImg, .selectCard {
+  width: 110px;
+}
+
+.supportSelect, .counterSelect {
+  width: 100%;
+}
+
+.guildDiv  {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.statueImg {
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+.statsTable {
+  width: 1000px;
+}
+
+.unitsCol {
+  width: 200px;
+}
+
+tr.disable {
+  display: none;
+}
+
+
 
 .buffImg {
   width: 40px;
 }
 
-.leftBlock {
-  display: inline-block;
-  width: 250px;
-}
-
-.leftBlock .unitDiv {
-  margin-top: 10px;
-}
-
-.leftBlock .unitTable {
-  display: inline-block;
-}
-
-.leftBlock .starsLbsLevels {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-}
-
-.leftBlock .stars {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.leftBlock .ratingStars {
-  height: 25px;
-}
-
-.leftBlock .lbs {
-  margin-bottom: 10px;
-}
-
-.rightBlock {
-  width: 70%;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 15px;
-  margin: auto;
-}
 
 .upperBlock {
   display: block;
@@ -161,25 +248,10 @@ tr.disable {
   margin-left: 10px;
 }
 
-.equipmentsTable, .equipmentsTable tr, .equipmentsTable td {
-  padding: 0;
-}
 
-.equipmentImg, .selectEquipment {
-  width: 80px;
-}
 
-.esperImg, .selectEsper, .cardImg, .selectCard {
-  width: 120px;
-}
 
-.esperCardTable, .esperCardTable tr, .esperCardTable td {
-  padding: 0;
-}
 
-.esperCardTable td, .equipmentsTable td {
-  vertical-align: top;
-}
 
 .modal-dialog {
   width: 270px
@@ -207,8 +279,4 @@ tr.disable {
 
 .damageImg, .skilImg, .damageSkillImg {
   height: 32px;
-}
-
-.statueImg {
-  width: 40px;
 }

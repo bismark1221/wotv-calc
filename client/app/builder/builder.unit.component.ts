@@ -272,6 +272,8 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
     }
+
+    console.log(this.unit)
   }
 
   selectEsper(customData = null) {
