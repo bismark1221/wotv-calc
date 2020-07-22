@@ -23,6 +23,16 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "22/07",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_THDG"},
+          {type: "card", dataId: "VC_LW_THDG"},
+          {type: "card", dataId: "VC_LW_ADLD"},
+          {type: "card", dataId: "VC_LW_WHITEDAY1"},
+          {type: "card", dataId: "VC_LW_VNLA2"}
+        ]
+      },
+      {
         date: "17/07",
         items: [
           {type: "unit", dataId: "UN_LW_P_VNLA"},
@@ -35,13 +45,6 @@ export class HomeComponent {
         items: [
           {type: "unit", dataId: "UN_LW_P_RAIN"},
           {type: "unit", dataId: "UN_LW_P_FRVA"}
-        ]
-      },
-      {
-        date: "24/06",
-        items: [
-          {type: "card", dataId: "VC_MBFF_MV1"},
-          {type: "card", dataId: "VC_MBFF_MV2"}
         ]
       }
     ],
