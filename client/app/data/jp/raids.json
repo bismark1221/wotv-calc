@@ -318,13 +318,13 @@
   "RAID_ID_07": {
     "dataId": "RAID_ID_07",
     "names": {
-      "en": "ホワイトマシュマロ"
+      "en": "ホワイトマシュマロ - White Marshmallow"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_CSLI_01",
         "names": {
-          "en": "ホワイトマシュマロ"
+          "en": "ホワイトマシュマロ - White Marshmallow"
         },
         "stats": {
           "HP": {
@@ -644,7 +644,7 @@
             "minLevel": 61
           }
         },
-        "slug": "howaitomasiyumaro",
+        "slug": "white-marshmallow",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -668,7 +668,7 @@
         }
       }
     ],
-    "slug": "howaitomasiyumaro"
+    "slug": "white-marshmallow"
   },
   "RAID_ID_08": {
     "dataId": "RAID_ID_08",

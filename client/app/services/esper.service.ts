@@ -42,7 +42,8 @@ export class EsperService {
       "UN_FFT_S_CHCB_01",
       "UN_LW_S_MDFY",
       "UN_LW_S_LAMA_01",
-      "UN_LW_S_BLMN"
+      "UN_LW_S_BLMN",
+      "UN_LW_S_CHCB1"
     ],
     UR: [
       "UN_LW_S_IFRT",
