@@ -22575,5 +22575,1266 @@
       ]
     },
     "slug": "two-headed-dragon"
+  },
+  "UN_FF01_S_WRMC": {
+    "dataId": "UN_FF01_S_WRMC",
+    "names": {
+      "en": "Death Machine"
+    },
+    "rarity": "N",
+    "skills": [
+      {
+        "unlockStar": null,
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "FIRE_RES",
+            "minValue": -10,
+            "maxValue": -40,
+            "calcType": "resistance"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "percent"
+          }
+        ],
+        "dataId": "SK_SMN_WRMC",
+        "type": "esper",
+        "mainSkill": false,
+        "names": {
+          "en": "Nuke"
+        },
+        "slug": "nuke",
+        "cost": {
+          "type": "TP"
+        },
+        "count": 1,
+        "maxLevel": 20,
+        "range": {
+          "h": 4,
+          "l": 4,
+          "s": 1,
+          "line": 2
+        },
+        "based": "physic",
+        "aoe": {
+          "s": 1,
+          "l": 2,
+          "h": 2
+        },
+        "hit": 100,
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "missile",
+          "effType": "DAMAGE"
+        },
+        "elem": [
+          "fire"
+        ]
+      }
+    ],
+    "stats": {
+      "HP": [
+        {
+          "min": 91,
+          "max": 459
+        },
+        {
+          "min": 483,
+          "max": 933
+        }
+      ],
+      "TP": [
+        {
+          "min": 20,
+          "max": 27
+        },
+        {
+          "min": 28,
+          "max": 36
+        }
+      ],
+      "AP": [
+        {
+          "min": 21,
+          "max": 26
+        },
+        {
+          "min": 27,
+          "max": 32
+        }
+      ],
+      "ATK": [
+        {
+          "min": 31,
+          "max": 53
+        },
+        {
+          "min": 56,
+          "max": 80
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 21,
+          "max": 33
+        },
+        {
+          "min": 34,
+          "max": 47
+        }
+      ],
+      "DEX": [
+        {
+          "min": 27,
+          "max": 41
+        },
+        {
+          "min": 42,
+          "max": 57
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 10
+        },
+        {
+          "min": 11,
+          "max": 12
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 31,
+          "max": 45
+        },
+        {
+          "min": 47,
+          "max": 64
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {
+          "min": 10,
+          "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
+        }
+      ],
+      "EARTH_RES": [
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {
+          "min": -5,
+          "max": -5
+        },
+        {
+          "min": -5,
+          "max": -5
+        }
+      ],
+      "LIGHT_RES": [
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ],
+    "element": "fire",
+    "image": "ff01wrmc",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_WRMC_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "BUFF_WRMC_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "3": {
+          "dataId": "BUFF_WRMC_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "POISON_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_WRMC_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "BUFF_WRMC_05",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_05",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "6": {
+          "dataId": "BUFF_WRMC_06",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_06",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "BUFF_WRMC_07",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_07",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "8": {
+          "dataId": "BUFF_WRMC_08",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_08",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "BUFF_WRMC_09",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_09",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "10": {
+          "dataId": "BUFF_WRMC_10",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_10",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_WRMC_11",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_11",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_WRMC_12",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "POISON_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_12",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "BUFF_WRMC_13",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_13",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "14": {
+          "dataId": "BUFF_WRMC_14",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_14",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "BUFF_WRMC_15",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_15",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "16": {
+          "dataId": "BUFF_WRMC_16",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_16",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "17": {
+          "dataId": "BUFF_WRMC_17",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "MACHINA_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_17",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "18": {
+          "dataId": "BUFF_WRMC_18",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "MACHINA_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_18",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_WRMC_19",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_19",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "BUFF_WRMC_20",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_20",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "22": {
+          "dataId": "BUFF_WRMC_21",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_21",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "BUFF_WRMC_22",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_22",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "25": {
+          "dataId": "BUFF_WRMC_23",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_23",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "27": {
+          "dataId": "BUFF_WRMC_24",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_24",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "28": {
+          "dataId": "BUFF_WRMC_25",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_25",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_WRMC_26",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_26",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_WRMC_27",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_27",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "BUFF_WRMC_28",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "MACHINA_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_28",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "34": {
+          "dataId": "BUFF_WRMC_29",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "MACHINA_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "BUFF_WRMC_29",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "36": {
+          "dataId": "BUFF_WRMC_30",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_30",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "BUFF_WRMC_31",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_31",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "45": {
+          "dataId": "BUFF_WRMC_32",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_WRMC_32",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "53": {
+          "dataId": "BUFF_WRMC_33",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 80,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "BUFF_WRMC_33",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        23,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117
+      ]
+    },
+    "slug": "death-machine"
   }
 }

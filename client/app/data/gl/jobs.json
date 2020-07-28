@@ -37819,5 +37819,1679 @@
       ]
     },
     "slug": "assassin"
+  },
+  "JB_FF1_WROL": {
+    "dataId": "JB_FF1_WROL",
+    "names": {
+      "en": "Warrior of Light"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 768,
+        "LUCK": 870,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1217,
+        "LUCK": 1379,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 1536,
+        "LUCK": 1741,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 1783,
+        "LUCK": 2021,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 1985,
+        "LUCK": 2250,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 2156,
+        "LUCK": 2443,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 2304,
+        "LUCK": 2611,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 2434,
+        "LUCK": 2759,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 2551,
+        "LUCK": 2891,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 2656,
+        "LUCK": 3011,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 2753,
+        "LUCK": 3120,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 2841,
+        "LUCK": 3220,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 2924,
+        "LUCK": 3313,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 3000,
+        "LUCK": 3400,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "ff01wrol",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "ARMOR",
+        "HELM",
+        "ACC"
+      ]
+    },
+    "slug": "warrior-of-light"
+  },
+  "JB_LW_MST_FIRE": {
+    "dataId": "JB_LW_MST_FIRE",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_WATER": {
+    "dataId": "JB_LW_MST_WATER",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_ICE": {
+    "dataId": "JB_LW_MST_ICE",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_SOIL": {
+    "dataId": "JB_LW_MST_SOIL",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_THUN": {
+    "dataId": "JB_LW_MST_THUN",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_WIND": {
+    "dataId": "JB_LW_MST_WIND",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_SHINE": {
+    "dataId": "JB_LW_MST_SHINE",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
+  },
+  "JB_LW_MST_DARK": {
+    "dataId": "JB_LW_MST_DARK",
+    "names": {
+      "en": "Staff Mage"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mst",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "ROD"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "staff-mage"
   }
 }

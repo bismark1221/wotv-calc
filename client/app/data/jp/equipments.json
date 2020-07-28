@@ -16575,9 +16575,9 @@
   },
   "AF_LOT_FF1_ARM_002": {
     "names": {
-      "en": "アーマーオブライト"
+      "en": "アーマーオブライト - Armor of Light"
     },
-    "slug": "amaoburaito",
+    "slug": "armor-of-light",
     "stats": {
       "HP": {
         "min": 31,
@@ -32484,9 +32484,9 @@
   },
   "AF_ACC_FF1_WROL_1": {
     "names": {
-      "en": "ガントレットオブライト"
+      "en": "ガントレットオブライト - Gauntlets of Light"
     },
-    "slug": "gantoretutooburaito",
+    "slug": "gauntlets-of-light",
     "stats": {
       "HP": {
         "min": 322,
@@ -32615,9 +32615,9 @@
   },
   "AF_ACC_LW_QILF_1": {
     "names": {
-      "en": "杖術士の髪飾り"
+      "en": "杖術士の髪飾り - Staff Mage's Hairpin"
     },
-    "slug": "zhang-shu-shino-fa-shiri",
+    "slug": "staff-mages-hairpin",
     "stats": {
       "HP": {
         "min": 201,
@@ -36086,9 +36086,9 @@
   },
   "AF_SWO_FF1_WROL_2": {
     "names": {
-      "en": "ソードオブライト"
+      "en": "ソードオブライト - Sword of Light"
     },
-    "slug": "sodooburaito",
+    "slug": "sword-of-light",
     "stats": {
       "HP": {
         "min": 4,
@@ -36154,9 +36154,9 @@
   },
   "AF_ROD_LW_QILF_2": {
     "names": {
-      "en": "ファントムケーン"
+      "en": "ファントムケーン - Phantom Cane"
     },
-    "slug": "huantomuken",
+    "slug": "phantom-cane",
     "stats": {
       "HP": {
         "min": 15,
@@ -36936,6 +36936,65 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL"
+    ],
+    "equippableUnits": [],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_ROD_FF4_GLBZ_2": {
+    "names": {
+      "en": "AF_ROD_FF4_GLBZ_2"
+    },
+    "slug": "af_rod_ff4_glbz_2",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_ROD_FF4_GLBZ_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff04wpn_rod_000",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
     "acquisition": {
