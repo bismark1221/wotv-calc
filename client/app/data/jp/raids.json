@@ -673,13 +673,13 @@
   "RAID_ID_08": {
     "dataId": "RAID_ID_08",
     "names": {
-      "en": "デスマシーン"
+      "en": "デスマシーン - Death Machine"
     },
     "bosses": [
       {
         "dataId": "UN_FF01_E_WRMC_RAID",
         "names": {
-          "en": "デスマシーン"
+          "en": "デスマシーン - Death Machine"
         },
         "stats": {
           "HP": {
@@ -825,8 +825,208 @@
         "species": "machine",
         "element": "dark",
         "image": "ff01wrmc",
-        "skills": {},
-        "slug": "desumasin",
+        "skills": {
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "slug": "zui-dahpdaun-wu-xiao",
+            "maxLevel": 80,
+            "minLevel": 61
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "slug": "ming-zhong1-999atupu",
+            "maxLevel": 80,
+            "minLevel": 61
+          },
+          "SK_WRMC_M_01": {
+            "effects": [
+              {
+                "type": "IMMOBILIZE_ATK",
+                "calcType": "percent",
+                "rate": 50,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_WRMC_M_01",
+            "rate": 100,
+            "names": {
+              "en": "かくさんミサイル"
+            },
+            "slug": "kakusanmisairu",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 4,
+              "l": 4,
+              "mh": 1,
+              "s": 1,
+              "line": 2
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 40,
+              "type": "missile",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 61
+          },
+          "SK_WRMC_M_02": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "rate": 50,
+                "turn": 3
+              },
+              {
+                "type": "SPR",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "rate": 50,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_WRMC_M_02",
+            "rate": 100,
+            "names": {
+              "en": "ビームほう"
+            },
+            "slug": "bimuhou",
+            "cost": {
+              "type": "AP",
+              "value": 16
+            },
+            "count": 4,
+            "maxLevel": 80,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 10,
+              "w": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 30,
+              "maxValue": 80,
+              "type": "missile",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 61
+          },
+          "SK_WRMC_M_03": {
+            "effects": [],
+            "dataId": "SK_WRMC_M_03",
+            "rate": 20,
+            "names": {
+              "en": "かくこうげき"
+            },
+            "slug": "kakukougeki",
+            "cost": {
+              "type": "AP",
+              "value": 20
+            },
+            "count": 3,
+            "maxLevel": 80,
+            "range": {
+              "h": 4,
+              "l": 4,
+              "mh": 1,
+              "s": 1,
+              "line": 2
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 65,
+              "maxValue": 200,
+              "type": "missile",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 61
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "calcType": "nullify"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "slug": "ct-bian-dong-wu-xiao",
+            "maxLevel": 80,
+            "minLevel": 61
+          },
+          "SK_BTL_DONMV_1-100_D": {
+            "effects": [
+              {
+                "type": "IMMOBILIZE_ATK",
+                "minValue": -1,
+                "maxValue": -100,
+                "calcType": "fixe",
+                "rate": 200
+              }
+            ],
+            "dataId": "SK_BTL_DONMV_1-100_D",
+            "rate": 100,
+            "names": {
+              "en": "状態異常【ドンムブ】確率1-100ダウン"
+            },
+            "slug": "zhuang-tai-yi-chang-donmubu-que-lu1-100daun",
+            "maxLevel": 80,
+            "minLevel": 61
+          }
+        },
+        "slug": "death-machine",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -852,7 +1052,7 @@
         }
       }
     ],
-    "slug": "desumasin"
+    "slug": "death-machine"
   },
   "RAID_ID_09": {
     "dataId": "RAID_ID_09",

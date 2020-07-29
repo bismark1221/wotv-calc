@@ -928,7 +928,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -1683,7 +1683,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -6441,7 +6441,7 @@
       },
       "effects": [
         {
-          "type": "REDUCE_DAMAGE",
+          "type": "REDUCE_DAMAGE_GENERAL",
           "minValue": 30,
           "maxValue": 50,
           "calcType": "percent",
@@ -9349,7 +9349,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -9720,7 +9720,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -10346,7 +10346,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -20009,7 +20009,7 @@
           },
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 5,
               "maxValue": 20,
               "calcType": "percent",
@@ -22283,7 +22283,7 @@
           },
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
@@ -25164,7 +25164,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -27794,7 +27794,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -28639,7 +28639,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -41669,7 +41669,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -43059,7 +43059,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -49893,7 +49893,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -54010,7 +54010,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -55157,7 +55157,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -56183,7 +56183,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -56575,7 +56575,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -56897,7 +56897,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -65434,7 +65434,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -68284,7 +68284,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -68462,7 +68462,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -83830,7 +83830,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -85190,7 +85190,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -87807,7 +87807,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -92365,7 +92365,7 @@
                 "calcType": "percent"
               },
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -98421,7 +98421,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -100251,7 +100251,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -101284,7 +101284,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -103555,7 +103555,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -104945,7 +104945,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -110127,7 +110127,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -110622,7 +110622,7 @@
           },
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 15,
               "maxValue": 35,
               "calcType": "percent",
@@ -111190,7 +111190,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -112352,7 +112352,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -116922,7 +116922,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -129261,7 +129261,7 @@
             "jp": 15,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 5,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -130334,7 +130334,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -131390,7 +131390,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -132121,7 +132121,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -135926,7 +135926,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -136619,7 +136619,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -136891,7 +136891,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -137070,7 +137070,7 @@
             "jp": 300,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -138110,7 +138110,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -140670,7 +140670,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -141298,7 +141298,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 15,
                 "maxValue": 35,
                 "calcType": "percent",
@@ -141478,7 +141478,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -142453,7 +142453,7 @@
             "jp": 20,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_GENERAL",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
@@ -142839,7 +142839,7 @@
             "jp": 150,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 15,
                 "maxValue": 45,
                 "calcType": "percent",
@@ -143320,7 +143320,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_PHYSIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
@@ -143703,7 +143703,7 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "REDUCE_DAMAGE",
+                "type": "REDUCE_DAMAGE_MAGIC",
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",

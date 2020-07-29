@@ -23705,7 +23705,7 @@
           "dataId": "SK_FTW_LW_AYKA_1_1",
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 5,
               "maxValue": 20,
               "calcType": "percent",
@@ -23846,7 +23846,7 @@
           "dataId": "SK_ACC_LW_MACR_1_1",
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
@@ -25691,7 +25691,7 @@
           "dataId": "SK_ACC_FFT_ORND_1_1",
           "effects": [
             {
-              "type": "REDUCE_DAMAGE",
+              "type": "REDUCE_DAMAGE_GENERAL",
               "minValue": 15,
               "maxValue": 35,
               "calcType": "percent",

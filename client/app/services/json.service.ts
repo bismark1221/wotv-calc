@@ -33,6 +33,9 @@ import { default as gl_raid_5 } from         '../../../data/raid/gl/raid_ev_07_0
 import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_02_set.json';
 import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
 import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
+import { default as gl_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as gl_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as gl_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
 
 
 import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
@@ -43,6 +46,9 @@ import { default as jp_raid_5 } from         '../../../data/raid/jp/raid_ev_07_0
 import { default as jp_raid_6 } from         '../../../data/raid/jp/raid_ev_07_02_set.json';
 import { default as jp_raid_7 } from         '../../../data/raid/jp/raid_ev_07_03_set.json';
 import { default as jp_raid_8 } from         '../../../data/raid/jp/raid_ev_07_04_set.json';
+import { default as jp_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as jp_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as jp_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
 
 @Injectable()
 export class JsonService {
@@ -260,6 +266,7 @@ export class JsonService {
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     144: "IMBUE",
+    148: "GRADUAL_PETRIFY",
     151: "INITIAL_AP",
     152: "RANGE",
     155: "ACCURACY",
@@ -612,6 +619,7 @@ export class JsonService {
     "CONFUSION",
     "CHARM",
     "PETRIFY",
+    "GRADUAL_PETRIFY",
     "TOAD",
     "HASTE",
     "SLOW",
@@ -1383,8 +1391,24 @@ export class JsonService {
     }
 
     if (dataSkill.barrier) {
+      let type = dataSkill.eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE"
+      switch (dataSkill.barrier.tar) {
+        case 1:
+          type = type + "_GENERAL"
+          break;
+        case 2:
+          type = type + "_PHYSIC"
+          break;
+        case 3:
+          type = type + "_MAGIC"
+          break;
+        default:
+          console.log("6 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- barrier : " + dataSkill.barrier.tar)
+          break;
+      }
+
       skill.effects.push({
-        type: dataSkill.eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE",
+        type: type,
         minValue: dataSkill.barrier.scut,
         maxValue: dataSkill.barrier.ecut,
         calcType: "percent",
@@ -1979,6 +2003,9 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6
       this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7
       this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8
+      this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9
+      this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10
+      this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11
     } else {
       this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1
       this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2
@@ -1988,6 +2015,9 @@ export class JsonService {
       this[this.version].raidMaps[jp_raid_6.wcond.expr] = jp_raid_6
       this[this.version].raidMaps[jp_raid_7.wcond.expr] = jp_raid_7
       this[this.version].raidMaps[jp_raid_8.wcond.expr] = jp_raid_8
+      this[this.version].raidMaps[jp_raid_9.wcond.expr] = jp_raid_9
+      this[this.version].raidMaps[jp_raid_10.wcond.expr] = jp_raid_10
+      this[this.version].raidMaps[jp_raid_11.wcond.expr] = jp_raid_11
     }
 
     Object.keys(this[this.version].raid).forEach(raidId => {

@@ -458,6 +458,9 @@ export class SkillService {
       case "PETRIFY_ATK" :
         html = this.getChance(effect) + " petrify" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "GRADUAL_PETRIFY_ATK" :
+        html = this.getChance(effect) + " gradual petrify" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "TOAD_ATK" :
         html = this.getChance(effect) + " toad" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -535,6 +538,9 @@ export class SkillService {
       break
       case "PETRIFY_RES" :
         html = this.getChance(effect) + " petrify resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "GRADUAL_PETRIFY_RES" :
+        html = this.getChance(effect) + " gradual petrify resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "TOAD_RES" :
         html = this.getChance(effect) + " toad resistance" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -743,11 +749,23 @@ export class SkillService {
       case "FLOAT_KILLER" :
         html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "BARRIER" :
-        html = "Forms a barrier that reduces damage" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
-      case "REDUCE_DAMAGE" :
+      case "BARRIER_GENERAL" :
         html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_GENERAL" :
+        html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BARRIER_PHYSIC" :
+        html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_PHYSIC" :
+        html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BARRIER_MAGIC" :
+        html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_MAGIC" :
+        html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "CRITIC_EVADE" :
         html = "Boost critical evasion" + this.getValue(skill, effect) + this.getTurns(effect)
