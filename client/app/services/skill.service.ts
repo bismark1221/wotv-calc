@@ -599,9 +599,6 @@ export class SkillService {
       case "MAGIC_EVADE" :
         html = this.getChance(effect, false) + " to magical evasion" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "CRITIC_BEHIND_GUARENTED" :
-        html = "Guarented critical hit from behind"
-      break
       case "CRITIC_GUARENTED" :
         html = "Guarented critical hit"
       break
@@ -812,8 +809,8 @@ export class SkillService {
       case "IF_KILL_WITH_MAGIC" :
         html = "If kill with magic grants"
       break
-      case "ON_BASIC_ATTACK" :
-        html = "On basic attacks only"
+      case "ON_PHYSIC_ATTACK" :
+        html = "On physic attacks only"
       break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)
@@ -850,6 +847,14 @@ export class SkillService {
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
+    }
+
+    if (effect.condition) {
+      let conditions = {
+        "BEHIND": " when attacking from behind",
+        "MALE": "when attacking male units"
+      }
+      html = html + conditions[effect.condition]
     }
 
     if (effect.side) {

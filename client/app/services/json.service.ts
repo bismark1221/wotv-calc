@@ -253,14 +253,14 @@ export class JsonService {
     113: "IGNORE_FATAL",
     114: "PHYSIC_EVADE",
     115: "MAGIC_EVADE",
-    116: "CRITIC_BEHIND_GUARENTED",
+    116: "CRITIC_GUARENTED",
     117: "CRITIC_GUARENTED",
     119: "DARK_KILLER",
     120: "HUMAN_KILLER",
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
-    126: "ON_BASIC_ATTACK",
+    126: "ON_PHYSIC_ATTACK",
     130: "IF_KILL_WITH_MAGIC",
     134: "BOOST_DAMAGE_AGAINST_METAL",
     140: "ALL_AILMENTS",
@@ -331,6 +331,11 @@ export class JsonService {
     204: "FENNES",
     301: "FLOAT",
     401: "MALES"
+  }
+
+  conditions = {
+    2: "MALE",
+    19: "BEHIND"
   }
 
   damageEffectType = [
@@ -1534,13 +1539,20 @@ export class JsonService {
                       calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
                       rate: this[this.version].buffs[buff].rate,
                       turn: this[this.version].buffs[buff].turn,
-                      fromImbue: false
+                      fromImbue: false,
+                      condition: null
                     };
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
                       addedBuff.fromImbue = true;
                     } else {
                       delete addedBuff.fromImbue
+                    }
+
+                    if (this[this.version].buffs[buff].conds) {
+                      addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
+                    } else {
+                      delete addedBuff.condition
                     }
 
                     skill.effects.push(addedBuff)

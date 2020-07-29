@@ -36901,9 +36901,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4",
@@ -72526,9 +72527,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4",
@@ -81771,9 +81773,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4_SUB",
@@ -83532,9 +83535,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4",
@@ -98993,9 +98997,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4_SUB",
@@ -106696,7 +106701,8 @@
               {
                 "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_FFT_GFGR_S_3",
@@ -125596,9 +125602,10 @@
             "jp": 1250,
             "effects": [
               {
-                "type": "CRITIC_BEHIND_GUARENTED",
+                "type": "CRITIC_GUARENTED",
                 "calcType": "percent",
-                "rate": 200
+                "rate": 200,
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_THI_M_4_SUB",
@@ -133799,7 +133806,8 @@
                 "type": "DEF",
                 "minValue": -30,
                 "maxValue": -50,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "condition": "BEHIND"
               }
             ],
             "dataId": "SK_LW_ASS_M_2",
