@@ -411,8 +411,8 @@ export class EsperService {
     }
 
     if (esper) {
-      this.esper.star = esper.star;
-      this.esper.level = esper.level;
+      this.esper.star = esper.star ? esper.star : 1;
+      this.esper.level = esper.level ? esper.level : 1;
       this.esper.resonance = esper.resonance ? esper.resonance : 1;
 
       if (esper.nodes) {
