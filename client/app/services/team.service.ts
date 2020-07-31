@@ -240,64 +240,7 @@ export class TeamService {
   }
 
   getAvailableEquipments(unitPos, equipmentPos) {
-    let armorTypes = []
-
-    this.team.units[unitPos].jobsData[0].equipments.armors.forEach(type => {
-      if (type !== "ACC") {
-        armorTypes.push(type)
-      }
-    })
-
-    let weaponsTypes = []
-    this.team.units[unitPos].jobsData[0].equipments.weapons.forEach(type => {
-      weaponsTypes.push(type)
-    })
-
-    let hasArmor = false
-    let hasWeapon = false
-    let countAcc = 0
-    let hasTmr = false;
-    for (let i = 0; i <= 2; i++) {
-      if (i !== equipmentPos && this.team.units[unitPos].equipments && this.team.units[unitPos].equipments[i]) {
-        if (this.team.units[unitPos].equipments[i].type === "ACC") {
-          countAcc++
-        } else if (this.equipmentService.isArmor(this.team.units[unitPos].equipments[i].type)) {
-          hasArmor = true
-        } else {
-          hasWeapon = true
-        }
-
-        if (this.team.units[unitPos].equipments[i].acquisition && this.team.units[unitPos].equipments[i].acquisition.type === "tmr") {
-          hasTmr = true
-        }
-      }
-    }
-
-    let equipments = this.equipmentService.getEquipmentsForUnitBuilder()
-    let availableEquipments = []
-    let mainJob = this.team.units[unitPos].jobs[0].split("_")
-    mainJob = mainJob[0] + "_" + mainJob[1] + "_" + mainJob[2]
-    equipments.forEach(equipment => {
-      if (((countAcc < 2 && equipment.type === "ACC")
-        || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
-        || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
-        && (
-          (!hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr" || (equipment.acquisition.type === "tmr" && this.team.units[unitPos].lb >= 4))
-          || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr"))))
-      ) {
-        let jobs = []
-        equipment.equippableJobs.forEach(job => {
-          let tableJob = job.split("_")
-          jobs.push(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2])
-        })
-
-        if (jobs.indexOf(mainJob) != -1 || equipment.equippableUnits.indexOf(this.team.units[unitPos].dataId) != -1) {
-          availableEquipments.push(equipment)
-        }
-      }
-    })
-
-    return availableEquipments
+    return this.team.units[unitPos].getAvailableEquipments(equipmentPos, this.equipmentService)
   }
 
   selectUnit(pos, unitId) {

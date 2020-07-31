@@ -486,30 +486,21 @@ export class UnitService {
       this.unit.limit.level = 1
     }
 
+    this.unit.guild = this.guildService.getGuildForBuilder()
+
     this.initiateSavedUnit(customData)
 
     this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
-    this.updateMaxLevel();
-    this.updateMaxJobLevel();
+    this.unit.updateMaxLevel();
+    this.unit.updateMaxJobLevel();
 
-    this.maxUnit()
-    this.activateMasterSkill()
+    this.unit.maxUnit()
+    this.unit.activateMasterSkill();
 
-    this.changeLevel();
-    this.getActiveSkills();
+    this.unit.changeLevel(true, customData ? false : true);
 
     return this.unit
-  }
-
-  private activateMasterSkill() {
-    if (this.unit.level >= 80 && this.unit.masterSkillLevel[this.unit.masterSkillLevel.length - 1] == 1) {
-      this.unit.masterSkillActivated = 1
-    } else if (this.unit.level >= 40) {
-      this.unit.masterSkillActivated = 0
-    } else {
-      this.unit.masterSkillActivated = -1
-    }
   }
 
   private initiateSavedUnit(customData = null) {
@@ -588,794 +579,67 @@ export class UnitService {
   }
 
   changeStar() {
-    this.updateMaxLevel()
-    this.disableNotAvailableNodes()
+    this.unit.updateMaxLevel()
+    this.unit.disableNotAvailableNodes()
   }
 
   changeLB() {
-    this.updateMaxLevel();
-    this.updateMaxJobLevel();
+    this.unit.updateMaxLevel();
+    this.unit.updateMaxJobLevel();
   }
 
-  private updateMaxLevel() {
-    let levelPerStar = {
-      1: 0,
-      2: 5,
-      3: 10,
-      4: 15,
-      5: 20,
-      6: 34
+  changeLevel(updateUnitStats = true) {
+    if (updateUnitStats) {
+      this.unit.calculateBaseStats()
     }
 
-    let levelPerLB = {
-      0: 0,
-      1: 5,
-      2: 10,
-      3: 15,
-      4: 25,
-      5: 35
-    }
-
-    this.unit.maxLevel = 30 + levelPerStar[this.unit.star] + levelPerLB[this.unit.lb ? this.unit.lb : 0];
-
-    if (this.unit.level > this.unit.maxLevel) {
-      this.unit.level = this.unit.maxLevel
-      this.changeLevel()
-    }
-
-    this.unit.tableLevels = [];
-    for (let i = 1; i <= this.unit.maxLevel; i++) {
-      this.unit.tableLevels.push(i);
-    }
-
-    this.updateMaxJobLevel()
+    this.unit.calculateTotalStats()
+    this.unit.getAvailableStatType()
   }
 
-  private updateMaxJobLevel() {
-    let levelPerLB = {
-      0: 0,
-      1: 3,
-      2: 3,
-      3: 6,
-      4: 6,
-      5: 9
-    }
-
-    let starToUnlock = [
-      1,
-      2,
-      4
-    ]
-
-    this.unit.maxJobLevel = 6 + levelPerLB[this.unit.lb ? this.unit.lb : 0];
-
-    let updated = false;
-    this.unit.jobsData.forEach((job, jobIndex) => {
-      job.unlocked = this.unit.star >= starToUnlock[jobIndex]
-
-      if (job.unlocked) {
-        if (job.level > this.unit.maxJobLevel) {
-          job.level = this.unit.maxJobLevel
-          updated = true
-        }
-      } else {
-        job.level = 1;
-        updated = true
-      }
-    })
-
-    if (updated) {
-      this.changeLevel()
-    }
-
-    this.unit.tableJobLevels = [];
-    for (let i = 1; i <= this.unit.maxJobLevel; i++) {
-      this.unit.tableJobLevels.push(i);
-    }
-
-    this.disableNotAvailableNodes()
-  }
-
-  changeLevel() {
-    this.disableNotAvailableNodes()
-
-    if (this.unit) {
-      Object.keys(this.unit.stats).forEach(stat => {
-        if (typeof(this.unit.stats[stat].min) == "number") {
-          this.unit.stats[stat] = {
-            min: this.unit.stats[stat].min,
-            max: this.unit.stats[stat].max
-          }
-        } else {
-          delete this.unit.stats[stat]
-        }
-      })
-
-      Object.keys(this.unit.stats).forEach(stat => {
-        let min = this.unit.stats[stat].min
-        let max = this.unit.stats[stat].max
-
-        this.unit.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.unit.level - 1)))
-        this.unit.stats[stat].baseTotal = this.unit.stats[stat].base
-      })
-
-      this.unit.jobsData.forEach((job, jobIndex) => {
-        let subJob = jobIndex !== 0
-        Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
-          if (!this.unit.stats[statType]) {
-            this.unit.stats[statType] = {
-              base: 0
-            }
-          }
-          let stat = this.unit.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
-
-          this.unit.stats[statType].baseTotal += stat
-        });
-      })
-
-      Object.keys(this.unit.stats).forEach(stat => {
-        if (!this.unit.stats[stat].baseTotal) {
-          this.unit.stats[stat].base = this.unit.stats[stat].min
-          this.unit.stats[stat].baseTotal = this.unit.stats[stat].min
-        } else {
-          this.unit.stats[stat].baseTotal = Math.floor(this.unit.stats[stat].baseTotal)
-        }
-      })
-
-      this.calculateTotalStats()
-      this.getAvailableStatType();
-    }
-  }
-
-  private calculateGuildStats() {
-    let guild = this.unit.guild
-    if (guild) {
-      let statues = this.guildService.getStatues()
-
-      Object.keys(guild).forEach(statue => {
-        if (guild[statue] > 0) {
-          statues[statue][guild[statue] - 1].forEach(stat => {
-            let value = stat.value;
-            if (stat.calcType == "percent") {
-              value = Math.floor(this.unit.stats[stat.type].baseTotal * value / 100)
-            }
-
-            this.updateStat(stat.type, value, "guild", "fixe")
-          })
-        }
-      });
-    }
-  }
-
-  private updateStat(type, value, statType, calc = "fixe", reset = false) {
-    switch (type) {
-      case "ALL_ELEMENTS_RES" :
-        this.elements.forEach(element => {
-          this.updateStat(element + "_RES", value, statType, calc)
-        })
-      break
-
-      case "ALL_ATTACKS_RES" :
-        this.atks.forEach(atk => {
-          this.updateStat(atk + "_RES", value, statType, calc)
-        })
-      break
-
-      case "ALL_AILMENTS_RES" :
-        this.ailments.forEach(ailment => {
-          this.updateStat(ailment + "_RES", value, statType, calc)
-        })
-      break
-
-      default:
-        if (!this.unit.stats[type]) {
-          this.unit.stats[type] = {}
-          this.unit.stats[type].base = 0;
-          this.unit.stats[type].baseTotal = 0;
-        }
-
-        if (!this.unit.stats[type][statType]) {
-          this.unit.stats[type][statType] = 0
-        }
-
-        if (calc == "percent") {
-          this.unit.stats[type][statType] = (reset ? 0 : this.unit.stats[type][statType]) + this.unit.stats[type].baseTotal * value / 100
-        } else {
-          this.unit.stats[type][statType] = (reset ? 0 : this.unit.stats[type][statType]) + value
-        }
-      break
-    }
-  }
-
-  private calculateBoardStats() {
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let node = this.unit.board.nodes[nodeId]
-      if (node.type == "buff" && node.level) {
-        node.skill.effects.forEach(effect => {
-          if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
-            this.updateStat(effect.type, effect.minValue, "board", effect.calcType === "percent" ? "percent" : "fixe")
-          } else {
-            console.log("not manage effect in board percent/fixe")
-            console.log(node)
-          }
-        })
-      }
-    })
-  }
-
-  private calculateSupportStats() {
-    this.unit.activatedSupport.forEach(supportNode => {
-      if (supportNode != "0") {
-        this.unit.board.nodes[supportNode].skill.effects.forEach(effect => {
-          let value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.unit.board.nodes[supportNode].level - 1))
-          if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
-            this.updateStat(effect.type, value, "support", effect.calcType === "percent" ? "percent" : "fixe")
-          } else {
-            console.log("not manage effect in support percent/fixe")
-            console.log(supportNode)
-          }
-        })
-      }
-    })
-  }
-
-  private calculateMasterSkillStats() {
-    if (this.unit.masterSkillActivated >= 0) {
-      let masterSkill = this.unit.masterSkill[this.unit.masterSkillActivated]
-      masterSkill.effects.forEach(effect => {
-        if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
-          let calc = "fixe"
-          if (effect.calcType === "percent" && !effect.type.includes("KILLER")) {
-            calc = "percent"
-          }
-
-          this.updateStat(effect.type, effect.minValue, "masterSkill", calc)
-        } else {
-          console.log("not manage effect in masterSkill percent/fixe")
-          console.log(masterSkill)
-        }
-      })
-    }
-  }
-
-  private calculateEsperStats() {
-    this.statsType.forEach(statType => {
-      if (this.unit.esper.stats[statType].base) {
-        this.unit.stats[statType].esper = Math.ceil(this.unit.esper.stats[statType].base * parseInt(this.unit.esper.resonance) / 10)
-      }
-    })
-
-    Object.keys(this.unit.esper.buffs).forEach(statType => {
-      if (typeof(this.unit.esper.buffs[statType].total) == "number") {
-        this.updateStat(statType, 0, "esper", "fixe")
-        let baseTotal = this.unit.stats[statType].baseTotal ? this.unit.stats[statType].baseTotal : 0
-        let value = 0;
-
-        if (typeof(this.unit.esper.buffs[statType].percent) == "number"
-          && this.unit.esper.buffs[statType].percent != 0
-        ) {
-          if (this.statsType.indexOf(statType) !== -1) {
-            value = Math.floor(baseTotal * this.unit.esper.buffs[statType].percent / 100)
-          } else {
-            value = this.unit.esper.buffs[statType].percent
-          }
-        } else {
-          value = this.unit.esper.buffs[statType].total
-        }
-
-        this.updateStat(statType, value, "esper", "fixe")
-      }
-    })
-  }
-
-  private calculateCardStats() {
-    this.unit.card.statsType.forEach(statType => {
-      this.unit.stats[statType].card = this.unit.card.stats[statType].total
-    })
-
-    Object.keys(this.unit.card.buffs.self).forEach(statType => {
-      let value = this.unit.card.buffs.self[statType].value
-
-      if (this.statsType.indexOf(statType) !== -1) {
-        if (this.unit.card.buffs.self[statType].calcType === "percent") {
-          value = Math.floor(this.unit.stats[statType].baseTotal * value / 100)
-        }
-
-        if (this.unit.stats[statType].card) {
-          value += this.unit.stats[statType].card
-        }
-      }
-
-      this.updateStat(statType, value, "card", "fixe")
-    })
-
-    Object.keys(this.unit.card.buffs.party).forEach(statType => {
-      let value = this.unit.card.buffs.party[statType].value
-
-      if (this.statsType.indexOf(statType) !== -1) {
-        if (this.unit.card.buffs.party[statType].calcType === "percent") {
-          value = Math.floor(this.unit.stats[statType].baseTotal * value / 100)
-        }
-
-        if (this.unit.stats[statType].cardParty) {
-          value += this.unit.stats[statType].cardParty
-        }
-      }
-
-      this.updateStat(statType, value, "cardParty", "fixe")
-    })
-  }
-
-  private calculateEquipmentsStats() {
-    let statsType = [];
-    this.unit.imbue = null;
-
-    for (let i = 0; i <= 2; i++) {
-      if (this.unit.equipments[i]) {
-        Object.keys(this.unit.equipments[i].stats).forEach(statType => {
-          let value = parseInt(this.unit.equipments[i].stats[statType].selected)
-
-          this.updateStat(statType, value, 'equipment' + i + "_stat", "fixe", true)
-
-          if (!this.unit.stats[statType].equipment) {
-            this.unit.stats[statType].equipment = {
-              positive: 0,
-              negative: -100000000
-            }
-          }
-
-          if (value > 0 && value > this.unit.stats[statType].equipment.positive) {
-            this.unit.stats[statType].equipment.positive = value
-          } else if (value <= 0 && value > this.unit.stats[statType].equipment.negative) {
-            this.unit.stats[statType].equipment.negative = value
-          }
-
-          statsType.push(statType)
-        })
-
-        this.unit.equipments[i].passiveSkills.forEach(skill => {
-          if (skill.type !== "skill") {
-            skill.level = this.unit.equipments[i].level
-
-            skill.effects.forEach(effect => {
-              if (!effect.fromImbue) {
-                let value = effect.minValue
-                if (skill.level >= skill.maxLevel) {
-                  value = effect.maxValue
-                } else if (skill.maxLevel !== 1 || skill.level !== 1) {
-                  value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
-                }
-
-                this.updateStat(effect.type, value, 'equipment' + i + "_buff", "fixe", true)
-
-                if (!this.unit.stats[effect.type]) { // Needed for all_res, ...
-                  this.unit.stats[effect.type] = {};
-                }
-
-                if (!this.unit.stats[effect.type].equipmentBuff) {
-                  this.unit.stats[effect.type].equipmentBuff = {
-                    positive: 0,
-                    negative: -100000000
-                  }
-                }
-
-                if (value > 0 && value > this.unit.stats[effect.type].equipmentBuff.positive) {
-                  this.unit.stats[effect.type].equipmentBuff.positive = value
-                } else if (value <= 0 && value > this.unit.stats[effect.type].equipmentBuff.negative) {
-                  this.unit.stats[effect.type].equipmentBuff.negative = value
-                }
-
-                statsType.push(effect.type)
-              } else {
-                effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-                this.unit.imbue = effect
-              }
-            })
-          }
-        })
-      }
-    }
-
-    statsType.forEach(statType => {
-      if (this.unit.stats[statType].equipment) {
-        let negativeValue = this.unit.stats[statType].equipment.negative !== -100000000 ? this.unit.stats[statType].equipment.negative : 0
-        this.updateStat(statType, this.unit.stats[statType].equipment.positive + negativeValue, "totalEquipment", "fixe", true)
-      }
-
-      if (this.unit.stats[statType].equipmentBuff) {
-        let negativeBuffValue = this.unit.stats[statType].equipmentBuff.negative !== -100000000 ? this.unit.stats[statType].equipmentBuff.negative : 0
-        this.updateStat(statType, this.unit.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe")
-      }
-    })
-  }
-
-
-  private calculateTotalStats() {
-    this.calculateGuildStats()
-    this.calculateBoardStats()
-    this.calculateSupportStats()
-    this.calculateMasterSkillStats()
-
-    if (this.unit.esper) {
-      this.calculateEsperStats()
-    }
-
-    if (this.unit.card) {
-      this.calculateCardStats()
-    }
-
-    if (this.unit.equipments) {
-      this.calculateEquipmentsStats()
-    }
-
-    let statsToRemove = [];
-    Object.keys(this.unit.stats).forEach(stat => {
-      if (stat == "INITIAL_AP") {
-        let initialAPModifier = 100 + this.unit.jobsData[0].statsModifiers[this.unit.jobsData[0].level - 1]["INITIAL_AP"]
-        let initialAP = this.unit.stats["AP"].total * initialAPModifier / 100
-
-        this.unit.stats["INITIAL_AP"].base = Math.floor(initialAP)
-        this.unit.stats["INITIAL_AP"].baseTotal = Math.floor(initialAP)
-      }
-      this.unit.stats[stat].total = this.unit.stats[stat].baseTotal;
-
-      if (this.unit.stats[stat].board) {
-        this.unit.stats[stat].board = Math.floor(this.unit.stats[stat].board)
-        this.unit.stats[stat].total += this.unit.stats[stat].board
-      }
-
-      if (this.unit.stats[stat].support) {
-        this.unit.stats[stat].support = Math.floor(this.unit.stats[stat].support)
-        this.unit.stats[stat].total += this.unit.stats[stat].support
-      }
-
-      if (this.unit.stats[stat].masterSkill) {
-        this.unit.stats[stat].masterSkill = Math.floor(this.unit.stats[stat].masterSkill)
-        this.unit.stats[stat].total += this.unit.stats[stat].masterSkill
-      }
-
-      if (this.unit.stats[stat].esper) {
-        this.unit.stats[stat].total += this.unit.stats[stat].esper
-      }
-
-      if (this.unit.stats[stat].card) {
-        this.unit.stats[stat].total += this.unit.stats[stat].card
-      }
-
-      if (this.unit.stats[stat].cardParty) {
-        this.unit.stats[stat].total += this.unit.stats[stat].cardParty
-      }
-
-      if (this.unit.stats[stat].totalEquipment) {
-        this.unit.stats[stat].total += this.unit.stats[stat].totalEquipment
-      }
-
-      this.unit.stats[stat].total += this.unit.stats[stat].guild ? this.unit.stats[stat].guild : 0
-
-      if (!Number.isInteger(this.unit.stats[stat].total)) {
-        statsToRemove.push(stat)
-      }
-    })
-
-    statsToRemove.forEach(stat => {
-      delete this.unit.stats[stat]
-    })
+  changeJobLevel() {
+    this.unit.disableNotAvailableNodes()
+    this.changeLevel(true)
   }
 
   rightClickNode(node) {
-    if (node !== 0) {
-      this.hideNode(node)
-      this.changeLevel()
-    }
+    this.unit.rightClickNode(node)
   }
 
   clickNode(node) {
-    if (node !== 0) {
-      if (!this.unit.board.nodes[node].activated || this.unit.grid.nodesForGrid[node].subType == "skill") {
-        this.showNode(node)
-      } else {
-        this.hideNode(node)
-      }
-      this.changeLevel()
-    }
-  }
-
-  showNode(node) {
-    if (node !== 0 && this.canActivateNode(node)) {
-      if (!this.unit.board.nodes[node].activated) {
-        this.unit.board.nodes[node].activated = true;
-        let parentNode = this.unit.board.nodes[node].parent
-        if (!this.unit.board.nodes[parentNode].activated) {
-          this.showNode(parentNode)
-        }
-      }
-
-      this.updateSkill(node, true)
-    }
-  }
-
-  hideNode(node, fullHide = false) {
-    if (node !== 0) {
-      let level = this.updateSkill(node, false, fullHide)
-      if (level === 0) {
-        this.unit.board.nodes[node].activated = false;
-        this.unit.board.nodes[node].children.forEach(childNode => {
-          this.hideNode(childNode, true)
-        })
-      }
-    }
-  }
-
-  private updateSkill(nodeId, increase, fullHide = false) {
-    let node = this.unit.board.nodes[nodeId]
-
-    if (this.unit.grid.nodesForGrid[nodeId].subType == "buff") {
-      node.level = increase ? 1 : 0;
-    } else {
-      if (increase) {
-        node.level = typeof(node.level) == "number" ? (node.level == node.skill.maxLevel ? node.skill.maxLevel : node.level + 1) : 1
-      } else {
-        node.level = typeof(node.level) == "number" ? (node.level == 0 || fullHide ? 0 : node.level - 1) : 0
-      }
-    }
-
-    return node.level
+    this.unit.clickNode(node)
   }
 
   canActivateNode(node) {
-    let nodeData = this.unit.board.nodes[node]
-
-    if (node !== 0) {
-      if (nodeData && nodeData.type == "buff") {
-        return this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel
-      } else {
-        return !nodeData || !nodeData.skill.unlockStar || (this.canActivateNode(nodeData.parent) && this.unit.star >= nodeData.skill.unlockStar && this.unit.jobsData[(nodeData.skill.unlockJob - 1)].level >= nodeData.skill.jobLevel)
-      }
-    } else {
-      return true
-    }
+    return this.unit.canActivateNode(node)
   }
 
   getAvailableSupportNodes(pos) {
-    let nodes = []
-
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let node = this.unit.board.nodes[nodeId]
-      if (node.level && node.level >= 1 && node.skill.type == "support" && this.unit.activatedSupport[(pos == 0 ? 1 : 0)] !== nodeId) {
-        nodes.push({
-          nodeId: nodeId.toString(),
-          name: this.nameService.getName(node.skill)
-        })
-      }
-    })
-
-    return nodes
+    return this.unit.getAvailableSupportNodes(pos, this.nameService)
   }
 
   getAvailableCounterNodes() {
-    let nodes = []
-
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let node = this.unit.board.nodes[nodeId]
-      if (node.level && node.level >= 1 && node.skill.type == "counter") {
-        nodes.push({
-          nodeId: nodeId.toString(),
-          name: this.nameService.getName(node.skill)
-        })
-      }
-    })
-
-    return nodes
+    return this.unit.getAvailableCounterNodes(this.nameService)
   }
 
   getAvailableStatType() {
-    let findedStats = []
-    Object.keys(this.unit.stats).forEach(statType => {
-      if (this.statsAtkRes.indexOf(statType) === -1 && this.statsType.indexOf(statType) === -1) {
-        findedStats.push(statType)
-      }
-    })
-
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let skill = this.unit.board.nodes[nodeId].skill
-      this.unit.board.nodes[nodeId].skill.effects.forEach(effect => {
-        if (findedStats.indexOf(effect.type) === -1) {
-          if (skill.type === "buff" || skill.type === "support") {
-            if (this.statsType.indexOf(effect.type) === -1) {
-              if (!this.unit.stats[effect.type]) {
-                this.unit.stats[effect.type] = {}
-              }
-
-              findedStats.push(effect.type)
-            }
-          }
-        }
-      })
-    })
-
-    this.unit.availableStats = [[]];
-    let addedStats = []
-    let i = 0;
-
-    this.statsOrder.forEach(statType => {
-      if (findedStats.indexOf(statType) !== -1) {
-        if (this.unit.availableStats[i].length == 8) {
-          this.unit.availableStats.push([])
-          i++;
-        }
-
-        this.unit.availableStats[i].push(statType)
-        addedStats.push(statType)
-      }
-    })
-
-    Object.keys(this.unit.stats).forEach(statType => {
-      if (addedStats.indexOf(statType) === -1
-        && this.statsAtkRes.indexOf(statType) === -1
-        && this.statsType.indexOf(statType) === -1
-        && this.filteredStats.indexOf(statType) === -1
-      ) {
-        if (this.unit.availableStats[i].length == 8) {
-          this.unit.availableStats.push([])
-          i++;
-        }
-
-        this.unit.availableStats[i].push(statType)
-      }
-    })
+    return this.unit.getAvailableStatType()
   }
 
   maxUnit() {
-    this.unit.star = 6;
-    this.unit.lb = 5;
-    this.unit.level = 99;
-
-    this.unit.jobsData.forEach(job => {
-      job.level = 15
-    })
-
-    this.maxNodes()
-    this.changeStar()
-    this.changeLevel()
+    this.unit.maxUnit()
   }
 
   maxLevelAndJobs() {
-    this.unit.level = this.unit.maxLevel;
-
-    this.unit.jobsData.forEach(job => {
-      job.level = this.unit.maxJobLevel
-    })
-
-    this.maxNodes()
-    this.changeLevel()
-  }
-
-  maxNodes() {
-    Object.keys(this.unit.board.nodes).forEach(node => {
-      if (this.canActivateNode(node)) {
-        this.showNode(node)
-        if (this.unit.board.nodes[node].skill && this.unit.board.nodes[node].skill.maxLevel) {
-          this.unit.board.nodes[node].level = this.unit.board.nodes[node].skill.maxLevel
-        }
-      }
-    })
-
-    this.getActiveSkills();
-  }
-
-  disableNotAvailableNodes() {
-    Object.keys(this.unit.board.nodes).forEach(node => {
-      if (this.unit.board.nodes[node].activated && !this.canActivateNode(node)) {
-        this.hideNode(node, true)
-      }
-    })
-
-    this.getActiveSkills();
+    this.unit.maxLevelAndJobs()
   }
 
   getAvailableEquipments(pos) {
-    let armorTypes = []
-    this.unit.jobsData[0].equipments.armors.forEach(type => {
-      if (type !== "ACC") {
-        armorTypes.push(type)
-      }
-    })
-
-    let weaponsTypes = []
-    this.unit.jobsData[0].equipments.weapons.forEach(type => {
-      weaponsTypes.push(type)
-    })
-
-    let hasArmor = false
-    let hasWeapon = false
-    let countAcc = 0
-    let hasTmr = false;
-    for (let i = 0; i <= 2; i++) {
-      if (i !== pos && this.unit.equipments && this.unit.equipments[i]) {
-        if (this.unit.equipments[i].type === "ACC") {
-          countAcc++
-        } else if (this.equipmentService.isArmor(this.unit.equipments[i].type)) {
-          hasArmor = true
-        } else {
-          hasWeapon = true
-        }
-
-        if (this.unit.equipments[i].acquisition && this.unit.equipments[i].acquisition.type === "tmr") {
-          hasTmr = true
-        }
-      }
-    }
-
-    let equipments = this.equipmentService.getEquipmentsForUnitBuilder()
-    let availableEquipments = []
-    let mainJob = this.unit.jobs[0].split("_")
-    mainJob = mainJob[0] + "_" + mainJob[1] + "_" + mainJob[2]
-    equipments.forEach(equipment => {
-      if (((countAcc < 2 && equipment.type === "ACC")
-        || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
-        || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
-        && (
-          (!hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr" || (equipment.acquisition.type === "tmr" && this.unit.lb >= 4))
-          || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr"))))
-      ) {
-        let jobs = []
-        equipment.equippableJobs.forEach(job => {
-          let tableJob = job.split("_")
-          jobs.push(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2])
-        })
-
-        if (jobs.indexOf(mainJob) != -1 || equipment.equippableUnits.indexOf(this.unit.dataId) != -1) {
-          availableEquipments.push(equipment)
-        }
-      }
-    })
-
-    return availableEquipments
+    return this.unit.getAvailableEquipments(pos, this.equipmentService)
   }
 
   getActiveSkills() {
-    this.unit.activeSkills = []
-
-    Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      let node = this.unit.board.nodes[nodeId]
-      if (node.level && node.level >= 1 && node.skill.type == "skill" &&
-        (node.skill.mainSkill || node.skill.unlockJob == this.unit.subjob + 1)
-      ) {
-        node.skill.level = node.level
-
-        this.unit.activeSkills.push(this.formatActiveSkill(node.skill))
-      }
-    })
-
-    if (this.unit.limit) {
-      this.unit.limit = this.formatActiveSkill(this.unit.limit)
-    }
-
-    this.unit.activatedSupport.forEach(supportNode => {
-      if (supportNode !== "0") {
-        this.unit.board.nodes[supportNode].skill.level = this.unit.board.nodes[supportNode].level
-        this.unit.board.nodes[supportNode].skill = this.formatActiveSkill(this.unit.board.nodes[supportNode].skill)
-      }
-    })
-
-    if (this.unit.activatedCounter !== "0") {
-      this.unit.board.nodes[this.unit.activatedCounter].skill.level = this.unit.board.nodes[this.unit.activatedCounter].level
-      this.unit.board.nodes[this.unit.activatedCounter].skill = this.formatActiveSkill(this.unit.board.nodes[this.unit.activatedCounter].skill)
-    }
-  }
-
-  private formatActiveSkill(skill) {
-    skill.name = this.nameService.getName(skill)
-
-    skill.effects.forEach(effect => {
-      effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-    });
-
-    skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
-
-    this.skillService.formatRange(this.unit, skill);
-
-    return skill
+    this.unit.getActiveSkills(true, this.nameService, this.skillService)
   }
 
   getExportableLink() {

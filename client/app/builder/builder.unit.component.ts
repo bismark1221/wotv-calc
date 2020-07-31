@@ -251,13 +251,13 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private loadGuild() {
+    this.unit.guild = this.guildService.getGuildForBuilder()
+
      if (this.unit.savedGuild) {
-      this.unit.guild = this.unit.savedGuild
-    } else {
-      this.unit.guild = this.guildService.getGuild()
+      this.unit.guild.data = this.unit.savedGuild
     }
 
-    this.statueNames = Object.keys(this.unit.guild)
+    this.statueNames = Object.keys(this.unit.guild.data)
     this.unitService.changeLevel()
   }
 
@@ -269,6 +269,7 @@ export class BuilderUnitComponent implements OnInit {
       this.loadCard()
       this.loadEquipments()
       this.loadGuild()
+      this.unitService.getActiveSkills()
     } else {
       this.unit = null
     }
@@ -311,6 +312,7 @@ export class BuilderUnitComponent implements OnInit {
   changeStar(value) {
     this.unit.star = value
     this.unitService.changeStar()
+    this.unitService.getActiveSkills()
   }
 
   changeLB(value) {
@@ -319,6 +321,7 @@ export class BuilderUnitComponent implements OnInit {
     }
     this.unit.lb = value
     this.unitService.changeLB()
+    this.unitService.getActiveSkills()
 
     this.updateSelectedEquipments()
   }
@@ -356,6 +359,11 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.getActiveSkills()
   }
 
+  changeJobLevel() {
+    this.unitService.changeJobLevel()
+    this.unitService.getActiveSkills()
+  }
+
   rightClickNode(node) {
     this.unitService.rightClickNode(node)
     this.unitService.getActiveSkills()
@@ -389,14 +397,12 @@ export class BuilderUnitComponent implements OnInit {
   maxUnit() {
     this.unitService.maxUnit()
     this.updateSelectedEquipments()
+    this.unitService.getActiveSkills()
   }
 
   maxLevelAndJobs() {
     this.unitService.maxLevelAndJobs()
-  }
-
-  maxNodes() {
-    this.unitService.maxNodes()
+    this.unitService.getActiveSkills()
   }
 
   showEsperDetail() {
@@ -441,7 +447,7 @@ export class BuilderUnitComponent implements OnInit {
   showGuildDetail() {
     const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.guild = this.unit.guild;
+    modalRef.componentInstance.guild = this.unit.guild.data;
     modalRef.componentInstance.fromUnitBuilder = true;
 
     modalRef.result.then((result) => {
@@ -459,19 +465,6 @@ export class BuilderUnitComponent implements OnInit {
     const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
     modalRef.result.then((result) => {}, (reason) => {})
   }
-
-  saveNewTeam() {
-
-  }
-
-  saveOldTeam() {
-
-  }
-
-  loadTeam() {
-
-  }
-
 
   closeModal() {
     this.modalService.dismissAll();
@@ -491,5 +484,21 @@ export class BuilderUnitComponent implements OnInit {
 
   changeCounter() {
     this.unitService.getActiveSkills()
+  }
+
+  getAvailableStatType() {
+    let statTypes = this.unitService.getAvailableStatType()
+
+    let formattedAvailableStatType = [[]]
+
+    statTypes.forEach(type => {
+      if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length == 8) {
+        formattedAvailableStatType.push([])
+      }
+
+      formattedAvailableStatType[formattedAvailableStatType.length - 1].push(type)
+    })
+
+    return formattedAvailableStatType
   }
 }

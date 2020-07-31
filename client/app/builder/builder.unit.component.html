@@ -53,7 +53,7 @@
       <tr>
         <td *ngFor="let i of [0, 1, 2]">
           <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
-          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevel()">
+          <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeJobLevel()">
             <option *ngFor="let level of unit.tableJobLevels">{{ level }}</option>
           </select>
           <select *ngIf="!unit.jobsData[i].unlocked"></select>
@@ -309,7 +309,7 @@
       </tr>
       <td *ngFor="let statue of statueNames">
         <div>
-          {{ unit.guild[statue] }}
+          {{ unit.guild.data[statue] }}
         </div>
       </td>
       <tr>
@@ -372,7 +372,7 @@
         <th colspan="9">Buffs</th>
       </tr>
     </tbody>
-    <tbody *ngFor="let line of unit.availableStats">
+    <tbody *ngFor="let line of getAvailableStatType()">
       <tr>
         <th></th>
         <th *ngFor="let statType of line">
