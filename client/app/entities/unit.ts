@@ -253,10 +253,8 @@ export class Unit {
     this.disableNotAvailableNodes()
   }
 
-  changeLevel(updateUnitStats = true, autoGetSkills = false) {
-    if (updateUnitStats) {
-      this.calculateBaseStats()
-    }
+  changeLevel(autoGetSkills = false) {
+    this.calculateBaseStats()
 
     if (autoGetSkills) {
       this.activateMasterSkill()
@@ -663,6 +661,7 @@ export class Unit {
     }
 
     statsType.forEach(statType => {
+      this.updateStat(statType, 0, "totalEquipment", "fixe", true)
       if (this.stats[statType].equipment) {
         let negativeValue = this.stats[statType].equipment.negative !== -100000000 ? this.stats[statType].equipment.negative : 0
         this.updateStat(statType, this.stats[statType].equipment.positive + negativeValue, "totalEquipment", "fixe", true)

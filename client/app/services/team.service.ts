@@ -173,7 +173,7 @@ export class TeamService {
 
       for (let i = 0; i <= 4; i++) {
         if (data.units[i]) {
-          this.team.units[i].changeLevel(true, true)
+          this.team.units[i].changeLevel(true)
         }
       }
     }
@@ -274,19 +274,19 @@ export class TeamService {
           if (i != pos) {
             this.team.units[pos].teamCards[i] = this.team.units[i].card
             this.team.units[i].teamCards[pos] = this.team.units[pos].card
-            this.team.units[i].changeLevel(false)
+            this.team.units[i].changeLevel()
           }
         }
       }
 
-      this.team.units[pos].changeLevel(true, true)
+      this.team.units[pos].changeLevel(true)
     } else {
       this.team.units[pos] = null
 
       for (let i = 0; i <= 4; i++) {
         if (i != pos && this.team.units[i]) {
           this.team.units[i].teamCards[pos] = null
-          this.team.units[i].changeLevel(false)
+          this.team.units[i].changeLevel()
         }
       }
     }
@@ -299,7 +299,7 @@ export class TeamService {
       this.team.units[pos].esper = null
     }
 
-    this.team.units[pos].changeLevel(false)
+    this.team.units[pos].changeLevel()
   }
 
   selectCard(pos, cardId, customData = null) {
@@ -314,7 +314,7 @@ export class TeamService {
         if (i != pos) {
           this.team.units[i].teamCards[pos] = this.team.units[pos].card
         }
-        this.team.units[i].changeLevel(false)
+        this.team.units[i].changeLevel()
       }
     }
   }
@@ -326,7 +326,7 @@ export class TeamService {
       this.team.units[unitPos].equipments[equipmentPos] = null
     }
 
-    this.team.units[unitPos].changeLevel(false)
+    this.team.units[unitPos].changeLevel()
   }
 
   changeStar(pos, value) {
@@ -343,22 +343,22 @@ export class TeamService {
 
   changeJobLevel(pos) {
     if (this.team.units[pos]) {
-      this.team.units[pos].changeLevel(true, true)
+      this.team.units[pos].changeLevel(true)
     }
   }
 
   changeLevel(pos) {
     if (this.team.units[pos]) {
-      this.team.units[pos].changeLevel(true, true)
+      this.team.units[pos].changeLevel(true)
     }
   }
 
   changeCardLevel(pos) {
     for (let i = 0; i <= 4; i++) {
       if (i == pos) {
-        this.team.units[pos].changeLevel(true, true)
+        this.team.units[pos].changeLevel(true)
       } else {
-        this.team.units[pos].changeLevel(false)
+        this.team.units[pos].changeLevel()
       }
     }
   }

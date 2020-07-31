@@ -498,7 +498,7 @@ export class UnitService {
     this.unit.maxUnit()
     this.unit.activateMasterSkill();
 
-    this.unit.changeLevel(true, customData ? false : true);
+    this.unit.changeLevel(customData ? false : true);
 
     return this.unit
   }
@@ -599,7 +599,7 @@ export class UnitService {
 
   changeJobLevel() {
     this.unit.disableNotAvailableNodes()
-    this.changeLevel(true)
+    this.changeLevel()
   }
 
   rightClickNode(node) {
