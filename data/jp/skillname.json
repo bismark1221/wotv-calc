@@ -3249,6 +3249,98 @@
             "value": "月の民の血"
         },
         {
+            "key": "SK_FF4_KAIN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FF4_KAIN_M_1",
+            "value": "ドラゴンレイド"
+        },
+        {
+            "key": "SK_FF4_KAIN_M_2",
+            "value": "ピアシングブレイン"
+        },
+        {
+            "key": "SK_FF4_KAIN_M_3",
+            "value": "ブラッドランス"
+        },
+        {
+            "key": "SK_FF4_KAIN_S_1",
+            "value": "ピアシングランス"
+        },
+        {
+            "key": "SK_FF4_KAIN_S_2",
+            "value": "フッ、まかせておけ"
+        },
+        {
+            "key": "SK_FF4_KAIN_S_3",
+            "value": "スワイプスピア"
+        },
+        {
+            "key": "SK_FF4_KAIN_S_4",
+            "value": "ハザードスラスト"
+        },
+        {
+            "key": "SK_FF4_KAIN_R_1",
+            "value": "反攻の槍"
+        },
+        {
+            "key": "SK_FF4_KAIN_P_1",
+            "value": "竜騎士団長の誇り"
+        },
+        {
+            "key": "SK_FF4_ROSA_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_FF4_ROSA_M_1",
+            "value": "凍輝の矢"
+        },
+        {
+            "key": "SK_FF4_ROSA_M_1_B",
+            "value": "凍輝の矢"
+        },
+        {
+            "key": "SK_FF4_ROSA_M_2",
+            "value": "ホーリー"
+        },
+        {
+            "key": "SK_FF4_ROSA_M_3",
+            "value": "必中の一矢"
+        },
+        {
+            "key": "SK_FF4_ROSA_S_1",
+            "value": "プロテス"
+        },
+        {
+            "key": "SK_FF4_ROSA_S_2",
+            "value": "サイレスアロー"
+        },
+        {
+            "key": "SK_FF4_ROSA_S_3",
+            "value": "清らかな祈り"
+        },
+        {
+            "key": "SK_FF4_ROSA_S_4",
+            "value": "いのり"
+        },
+        {
+            "key": "SK_FF4_ROSA_S_5",
+            "value": "ヘイルシャワー"
+        },
+        {
+            "key": "SK_FF4_ROSA_R_1",
+            "value": "身をかわす"
+        },
+        {
+            "key": "SK_FF4_ROSA_P_1",
+            "value": "一途な愛"
+        },
+        {
+            "key": "SK_FF4_ROSA_P_2",
+            "value": "氷の祝福"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "ブリザラ"
         },
@@ -3631,6 +3723,14 @@
         {
             "key": "SK_CACT_M_03_CHECK",
             "value": "麻痺針"
+        },
+        {
+            "key": "SK_CACT_M_01_CNTUP",
+            "value": "針千本"
+        },
+        {
+            "key": "SK_CACT_M_02_CNTUP",
+            "value": "針万本"
         },
         {
             "key": "SK_TNBR_ATK",
@@ -4625,6 +4725,14 @@
             "value": "セイクリッドレイジ"
         },
         {
+            "key": "SK_LB_FF04_ROSA",
+            "value": "二つの月の奇跡"
+        },
+        {
+            "key": "SK_LB_FF04_KAIN",
+            "value": "ドラゴンベイン"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "地獄の火炎"
         },
@@ -4675,6 +4783,10 @@
         {
             "key": "SK_SMN_AGON",
             "value": "超電磁大爆発"
+        },
+        {
+            "key": "SK_SMN_DMNW",
+            "value": "土崩激突"
         },
         {
             "key": "SK_SMN_IGNT",
@@ -5194,6 +5306,14 @@
         },
         {
             "key": "SK_MA_FF4_CECL",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FF4_ROSA",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_FF4_KAIN",
             "value": "マスターアビリティ"
         },
         {
@@ -5915,6 +6035,14 @@
         {
             "key": "SK_ACC_FF4_CECL_1_1",
             "value": "聖騎士の激励"
+        },
+        {
+            "key": "SK_ACC_FF4_ROSA_1_1",
+            "value": "優美なる射手"
+        },
+        {
+            "key": "SK_HLM_FF4_KAIN_1_1",
+            "value": "プライドオブドラグーン"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",
@@ -6779,6 +6907,14 @@
         {
             "key": "SK_BTL_STR_ELEMALL_1-100_U",
             "value": "全属性攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_RESDB_DF_1_100_U",
+            "value": "防御弱体耐性1-100アップ"
+        },
+        {
+            "key": "SK_BTL_RESDB_ATK_1_100_U",
+            "value": "攻撃弱体耐性1-100アップ"
         },
         {
             "key": "SK_BTL_JOB_THI_1_15_U",

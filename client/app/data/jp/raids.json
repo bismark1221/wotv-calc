@@ -994,6 +994,7 @@
           "SK_BTL_INV_CTDOWN": {
             "effects": [
               {
+                "type": "IMMUNE_CT_CHANGE",
                 "calcType": "nullify"
               }
             ],

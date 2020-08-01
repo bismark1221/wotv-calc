@@ -260,6 +260,7 @@ export class JsonService {
     121: "FENNES_KILLER",
     122: "GENERIC_KILLER",
     123: "IMBUE",
+    124: "IMMUNE_CT_CHANGE",
     126: "ON_PHYSIC_ATTACK",
     130: "IF_KILL_WITH_MAGIC",
     134: "BOOST_DAMAGE_AGAINST_METAL",
@@ -299,7 +300,8 @@ export class JsonService {
     316: "AP_CONSUMPTION",
     319: "SPIRIT_PENETRATION",
     321: "RES_SLASH_ATK_PENETRATION",
-    329: "RES_MAGIC_ATK_PENETRATION"
+    329: "RES_MAGIC_ATK_PENETRATION",
+    347: "HEAL_POWER"
   }
 
   forceAddBuff = [

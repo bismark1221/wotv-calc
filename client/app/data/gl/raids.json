@@ -326,13 +326,15 @@
   "RAID_GL_02": {
     "dataId": "RAID_GL_02",
     "names": {
-      "en": "White Marshmallow"
+      "en": "White Marshmallow",
+      "fr": "Guimauve blanche"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_CSLI_01",
         "names": {
-          "en": "White Marshmallow"
+          "en": "White Marshmallow",
+          "fr": "Guimauve blanche"
         },
         "stats": {
           "HP": {
@@ -511,7 +513,8 @@
             "dataId": "SK_CSLI_01_M_01",
             "rate": 100,
             "names": {
-              "en": "Marshmallow Throw"
+              "en": "Marshmallow Throw",
+              "fr": "Lancer de guimauve"
             },
             "slug": "marshmallow-throw",
             "cost": {
@@ -596,7 +599,8 @@
             "dataId": "SK_CSLI_01_M_02",
             "rate": 100,
             "names": {
-              "en": "Melt"
+              "en": "Melt",
+              "fr": "Fonte"
             },
             "slug": "melt",
             "cost": {
@@ -631,7 +635,8 @@
             "dataId": "SK_CSLI_01_M_03",
             "rate": 100,
             "names": {
-              "en": "Sweets Party"
+              "en": "Sweets Party",
+              "fr": "Fête sucrée"
             },
             "slug": "sweets-party",
             "cost": {
@@ -658,7 +663,8 @@
         "slug": "white-marshmallow",
         "attack": {
           "names": {
-            "en": "Normal Attack"
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
           },
           "effects": [],
           "dataId": "SK_CSLI_01_ATK",

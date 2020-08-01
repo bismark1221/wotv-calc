@@ -133160,7 +133160,8 @@
   "UN_LW_P_VNLA": {
     "dataId": "UN_LW_P_VNLA",
     "names": {
-      "en": "Vinera Fennes"
+      "en": "Vinera Fennes",
+      "fr": "Vinera Fennes"
     },
     "rarity": "UR",
     "jobs": [
@@ -135243,7 +135244,8 @@
     "slug": "vinera-fennes",
     "limit": {
       "names": {
-        "en": "Dark Art: Hidden in Haze"
+        "en": "Dark Art: Hidden in Haze",
+        "fr": "Art de l'ombre : Nuit de brouillard"
       },
       "effects": [
         {
@@ -135308,7 +135310,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -135331,7 +135334,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Bewitching Heels"
+        "en": "Bewitching Heels",
+        "fr": "Escarpins envoûtants"
       },
       "stats": {
         "HP": 182,
@@ -135345,7 +135349,8 @@
         {
           "dataId": "SK_ACC_LW_VNLA_1_1",
           "names": {
-            "en": "False Veil of Darkness"
+            "en": "False Veil of Darkness",
+            "fr": "Voile altéré nocturne"
           },
           "effects": [
             {
@@ -135380,7 +135385,8 @@
   "UN_LW_P_DRIO": {
     "dataId": "UN_LW_P_DRIO",
     "names": {
-      "en": "Dario Hourne"
+      "en": "Dario Hourne",
+      "fr": "Dario Hourne"
     },
     "rarity": "MR",
     "jobs": [
@@ -137514,7 +137520,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -137537,7 +137544,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Glinting Sword"
+        "en": "Glinting Sword",
+        "fr": "Épée enflammée"
       },
       "stats": {
         "HP": 68,
@@ -137573,7 +137581,8 @@
   "UN_LW_P_TREL": {
     "dataId": "UN_LW_P_TREL",
     "names": {
-      "en": "Tyrrell"
+      "en": "Tyrrell",
+      "fr": "Tyrrell"
     },
     "rarity": "MR",
     "jobs": [
@@ -139681,7 +139690,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -139704,7 +139714,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Serpent Soldier's Crown"
+        "en": "Serpent Soldier's Crown",
+        "fr": "Diadème du soldat serpent"
       },
       "stats": {
         "HP": 264,
@@ -139722,7 +139733,8 @@
   "UN_FF1_P_WROL": {
     "dataId": "UN_FF1_P_WROL",
     "names": {
-      "en": "Warrior of Light"
+      "en": "Warrior of Light",
+      "fr": "Guerrier de la lumière"
     },
     "rarity": "UR",
     "jobs": [
@@ -139886,7 +139898,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Shift Attack"
+              "en": "Shift Attack",
+              "fr": "Attaque en phase"
             },
             "slug": "shift-attack",
             "cost": {
@@ -139992,7 +140005,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Brave Presence"
+              "en": "Brave Presence",
+              "fr": "Présence vaillante"
             },
             "slug": "brave-presence",
             "cost": {
@@ -140112,7 +140126,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "The First Warrior"
+              "en": "The First Warrior",
+              "fr": "Tout premier guerrier"
             },
             "slug": "the-first-warrior",
             "maxLevel": 20
@@ -140144,7 +140159,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "Quelling Chaos"
+              "en": "Quelling Chaos",
+              "fr": "Répression du chaos"
             },
             "slug": "quelling-chaos",
             "maxLevel": 20
@@ -140292,7 +140308,8 @@
             "type": "counter",
             "mainSkill": false,
             "names": {
-              "en": "Warrior's Pride"
+              "en": "Warrior's Pride",
+              "fr": "Fierté guerrière"
             },
             "slug": "warriors-pride",
             "maxLevel": 20,
@@ -140324,7 +140341,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Stop Strike"
+              "en": "Stop Strike",
+              "fr": "Frappe d'arrêt"
             },
             "slug": "stop-strike",
             "cost": {
@@ -140375,7 +140393,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Deterrent Sword"
+              "en": "Deterrent Sword",
+              "fr": "Épée de dissuasion"
             },
             "slug": "deterrent-sword",
             "cost": {
@@ -140984,7 +141003,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Holy Bravery"
+              "en": "Holy Bravery",
+              "fr": "Courage sacré"
             },
             "slug": "holy-bravery",
             "cost": {
@@ -141136,7 +141156,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Breath of Life"
+              "en": "Breath of Life",
+              "fr": "Souffle de vie"
             },
             "slug": "breath-of-life",
             "cost": {
@@ -141318,7 +141339,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Invincible Shield"
+              "en": "Invincible Shield",
+              "fr": "Bouclier invincible"
             },
             "slug": "invincible-shield",
             "cost": {
@@ -141755,7 +141777,8 @@
     "slug": "warrior-of-light",
     "limit": {
       "names": {
-        "en": "Crystal Braver"
+        "en": "Crystal Braver",
+        "fr": "Bravoure de cristal"
       },
       "effects": [
         {
@@ -141807,7 +141830,8 @@
     },
     "attack": {
       "names": {
-        "en": "Normal Attack"
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
       },
       "effects": [],
       "dataId": "SK_FF1_WROL_ATK",
@@ -141829,7 +141853,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -141852,7 +141877,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Gauntlets of Light"
+        "en": "Gauntlets of Light",
+        "fr": "Gantelets de la lumière"
       },
       "stats": {
         "HP": 322,
@@ -141866,7 +141892,8 @@
         {
           "dataId": "SK_ACC_FF1_WROL_1_1",
           "names": {
-            "en": "Divine Light"
+            "en": "Divine Light",
+            "fr": "Lumière divine"
           },
           "effects": [
             {
@@ -141901,7 +141928,8 @@
   "UN_LW_P_QILF": {
     "dataId": "UN_LW_P_QILF",
     "names": {
-      "en": "Kilphe"
+      "en": "Kilphe",
+      "fr": "Kilphe"
     },
     "rarity": "UR",
     "jobs": [
@@ -142072,7 +142100,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Earth Staff"
+              "en": "Earth Staff",
+              "fr": "Bâton de terre"
             },
             "slug": "earth-staff",
             "cost": {
@@ -142179,7 +142208,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Winged Staff"
+              "en": "Winged Staff",
+              "fr": "Bâton ailé"
             },
             "slug": "winged-staff",
             "cost": {
@@ -142298,7 +142328,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "MAG Up Lv. 1"
+              "en": "MAG Up Lv. 1",
+              "fr": "MAGIE ↑<br>Niv. 1"
             },
             "slug": "mag-up-lv-1",
             "maxLevel": 20
@@ -142324,7 +142355,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "DEF Up Lv. 1"
+              "en": "DEF Up Lv. 1",
+              "fr": "DEF ↑ Niv. 1"
             },
             "slug": "def-up-lv-1",
             "maxLevel": 20
@@ -142472,7 +142504,8 @@
             "type": "counter",
             "mainSkill": false,
             "names": {
-              "en": "Anti-Barrier"
+              "en": "Anti-Barrier",
+              "fr": "Anti-barrière"
             },
             "slug": "anti-barrier",
             "maxLevel": 20,
@@ -142502,7 +142535,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Step & Magic"
+              "en": "Step & Magic",
+              "fr": "Virevolte magique"
             },
             "slug": "step-magic",
             "cost": {
@@ -142545,7 +142579,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Confusing Staff"
+              "en": "Confusing Staff",
+              "fr": "Bâton de confusion"
             },
             "slug": "confusing-staff",
             "cost": {
@@ -143179,7 +143214,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Faith Rising"
+              "en": "Faith Rising",
+              "fr": "Élévation de la foi"
             },
             "slug": "faith-rising",
             "cost": {
@@ -143340,7 +143376,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Shield of Staves"
+              "en": "Shield of Staves",
+              "fr": "Bouclier de bâtons"
             },
             "slug": "shield-of-staves",
             "cost": {
@@ -143520,7 +143557,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Energy Buster"
+              "en": "Energy Buster",
+              "fr": "Énergivore"
             },
             "slug": "energy-buster",
             "cost": {
@@ -143806,7 +143844,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Stunning Staff"
+              "en": "Stunning Staff",
+              "fr": "Bâton d'étourdissement"
             },
             "slug": "stunning-staff",
             "cost": {
@@ -144018,7 +144057,8 @@
     "slug": "kilphe",
     "limit": {
       "names": {
-        "en": "Stave Collector"
+        "en": "Stave Collector",
+        "fr": "Collectionneuse de bâtons"
       },
       "effects": [
         {
@@ -144052,7 +144092,8 @@
     },
     "attack": {
       "names": {
-        "en": "Normal Attack"
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
       },
       "effects": [],
       "dataId": "SK_LW_MST_ATK",
@@ -144074,7 +144115,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -144097,7 +144139,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "Staff Mage's Hairpin"
+        "en": "Staff Mage's Hairpin",
+        "fr": "Épingle à cheveux de mage"
       },
       "stats": {
         "HP": 201,
@@ -144110,7 +144153,8 @@
         {
           "dataId": "SK_ACC_LW_QILF_1_1",
           "names": {
-            "en": "Treacherous Pride"
+            "en": "Treacherous Pride",
+            "fr": "Fierté traître"
           },
           "effects": [
             {

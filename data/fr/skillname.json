@@ -2389,6 +2389,126 @@
             "value": "PA acquis ↑ niv. 1"
         },
         {
+            "key": "SK_FF1_WROL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FF1_WROL_M_1",
+            "value": "Courage sacré"
+        },
+        {
+            "key": "SK_FF1_WROL_M_2",
+            "value": "Souffle de vie"
+        },
+        {
+            "key": "SK_FF1_WROL_M_3",
+            "value": "Bouclier invincible"
+        },
+        {
+            "key": "SK_FF1_WROL_S_1",
+            "value": "Attaque en phase"
+        },
+        {
+            "key": "SK_FF1_WROL_S_2",
+            "value": "Présence vaillante"
+        },
+        {
+            "key": "SK_FF1_WROL_S_3",
+            "value": "Épée de dissuasion"
+        },
+        {
+            "key": "SK_FF1_WROL_S_4",
+            "value": "Frappe d'arrêt"
+        },
+        {
+            "key": "SK_FF1_WROL_R_1",
+            "value": "Fierté guerrière"
+        },
+        {
+            "key": "SK_FF1_WROL_P_1",
+            "value": "Tout premier guerrier"
+        },
+        {
+            "key": "SK_FF1_WROL_P_2",
+            "value": "Répression du chaos"
+        },
+        {
+            "key": "SK_LW_MST_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MST_M_1",
+            "value": "Énergivore"
+        },
+        {
+            "key": "SK_LW_MST_M_2",
+            "value": "Bouclier de bâtons"
+        },
+        {
+            "key": "SK_LW_MST_M_3",
+            "value": "Élévation de la foi"
+        },
+        {
+            "key": "SK_LW_MST_FIRE_S_1_INIT",
+            "value": "Bâton de feu"
+        },
+        {
+            "key": "SK_LW_MST_ICE_S_1_INIT",
+            "value": "Bâton de glace"
+        },
+        {
+            "key": "SK_LW_MST_WIND_S_1_INIT",
+            "value": "Bâton de vent"
+        },
+        {
+            "key": "SK_LW_MST_THUN_S_1_INIT",
+            "value": "Bâton de foudre"
+        },
+        {
+            "key": "SK_LW_MST_WATR_S_1_INIT",
+            "value": "Bâton d'eau"
+        },
+        {
+            "key": "SK_LW_MST_SOIL_S_1_INIT",
+            "value": "Bâton de terre"
+        },
+        {
+            "key": "SK_LW_MST_SHIN_S_1_INIT",
+            "value": "Bâton de lumière"
+        },
+        {
+            "key": "SK_LW_MST_DARK_S_1_INIT",
+            "value": "Bâton d'ombre"
+        },
+        {
+            "key": "SK_LW_MST_S_2_INIT",
+            "value": "Bâton ailé"
+        },
+        {
+            "key": "SK_LW_MST_S_3",
+            "value": "Bâton de confusion"
+        },
+        {
+            "key": "SK_LW_MST_S_4",
+            "value": "Bâton d'étourdissement"
+        },
+        {
+            "key": "SK_LW_MST_S_5",
+            "value": "Virevolte magique"
+        },
+        {
+            "key": "SK_LW_MST_R_1",
+            "value": "Anti-barrière"
+        },
+        {
+            "key": "SK_LW_MST_P_1",
+            "value": "MAGIE ↑<br>Niv. 1"
+        },
+        {
+            "key": "SK_LW_MST_P_2",
+            "value": "DEF ↑ Niv. 1"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -2921,6 +3041,22 @@
             "value": "Adorable fontaine"
         },
         {
+            "key": "SK_CSLI_01_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CSLI_01_M_01",
+            "value": "Lancer de guimauve"
+        },
+        {
+            "key": "SK_CSLI_01_M_02",
+            "value": "Fonte"
+        },
+        {
+            "key": "SK_CSLI_01_M_03",
+            "value": "Fête sucrée"
+        },
+        {
             "key": "SK_SLIM_ATK",
             "value": "Attaque normale"
         },
@@ -3141,6 +3277,50 @@
             "value": "Canon à graines"
         },
         {
+            "key": "SK_THDG_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_THDG_R_01",
+            "value": "Voix draconique"
+        },
+        {
+            "key": "SK_THDG_M_01",
+            "value": "Coup de tête"
+        },
+        {
+            "key": "SK_THDG_M_02",
+            "value": "Réserve"
+        },
+        {
+            "key": "SK_THDG_M_03",
+            "value": "Double souffle feu"
+        },
+        {
+            "key": "SK_THDG_M_04",
+            "value": "Double souffle glace"
+        },
+        {
+            "key": "SK_THDG_M_05",
+            "value": "Déchaînement"
+        },
+        {
+            "key": "SK_WRMC_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_WRMC_M_01",
+            "value": "Missile de dispersion"
+        },
+        {
+            "key": "SK_WRMC_M_02",
+            "value": "Canon laser"
+        },
+        {
+            "key": "SK_WRMC_M_03",
+            "value": "Nucléo-attaque"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -3353,6 +3533,18 @@
             "value": "Prison de glace"
         },
         {
+            "key": "SK_LB_LW_VNLA",
+            "value": "Art de l'ombre : Nuit de brouillard"
+        },
+        {
+            "key": "SK_LB_FF1_WROL",
+            "value": "Bravoure de cristal"
+        },
+        {
+            "key": "SK_LB_LW_QILF",
+            "value": "Collectionneuse de bâtons"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -3419,6 +3611,14 @@
         {
             "key": "SK_SMN_OCHU",
             "value": "Canon à graines"
+        },
+        {
+            "key": "SK_SMN_THDG",
+            "value": "Déchaînement"
+        },
+        {
+            "key": "SK_SMN_WRMC",
+            "value": "Nucléo-attaque"
         },
         {
             "key": "SK_US_POTION",
@@ -3777,6 +3977,26 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_VNLA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_DRIO",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_TREL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FF1_WROL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_QILF",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -3947,6 +4167,18 @@
         {
             "key": "SK_ACC_LW_FRVA_1_1",
             "value": "Maîtrise glaciale"
+        },
+        {
+            "key": "SK_ACC_LW_VNLA_1_1",
+            "value": "Voile altéré nocturne"
+        },
+        {
+            "key": "SK_ACC_FF1_WROL_1_1",
+            "value": "Lumière divine"
+        },
+        {
+            "key": "SK_ACC_LW_QILF_1_1",
+            "value": "Fierté traître"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -4125,6 +4357,10 @@
             "value": ""
         },
         {
+            "key": "SK_SWO_LW_DRIO_1_1",
+            "value": ""
+        },
+        {
             "key": "SK_LW_SWO_005_1",
             "value": ""
         },
@@ -4134,11 +4370,11 @@
         },
         {
             "key": "SK_LW_SWO_006_1",
-            "value": ""
+            "value": "Épée de corail"
         },
         {
             "key": "SK_LW_SWO_006_5",
-            "value": ""
+            "value": "Épée de corail"
         },
         {
             "key": "SK_LW_SWO_007_1",
@@ -4510,6 +4746,54 @@
         },
         {
             "key": "SK_VC_MBFF_MV2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ADLD_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ADLD_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_GSMAX",
             "value": ""
         },
         {
@@ -4941,6 +5225,30 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_ADLD_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ADLD_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_CACT_P",
             "value": ""
         },
@@ -5082,6 +5390,30 @@
         },
         {
             "key": "SK_VC_LW_VALE2_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF01_DMAC_PMAX",
             "value": ""
         },
         {

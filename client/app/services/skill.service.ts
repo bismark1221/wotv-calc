@@ -428,6 +428,9 @@ export class SkillService {
       case "ALL_ATTACKS_ATK" :
         html = this.getIncrease(effect) + " all attacks ATK" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "HEAL_POWER" :
+        html = this.getIncrease(effect) + " healing power" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "REGEN_ATK" :
         html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect, true, " health restored by turn") + this.getTurns(effect)
       break
@@ -811,6 +814,9 @@ export class SkillService {
       break
       case "ON_PHYSIC_ATTACK" :
         html = "On physic attacks only"
+      break
+      case "IMMUNE_CT_CHANGE" :
+        html = "Immune to CT change"
       break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)

@@ -5262,6 +5262,203 @@
       "maxLevel": 1
     }
   },
+  "VC_FF4_DMNW": {
+    "dataId": "VC_FF4_DMNW",
+    "names": {
+      "en": "デモンズウォール"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 45,
+        "max": 352
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 34,
+        "max": 132
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 7,
+        "max": 26
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff04ddmnw",
+    "slug": "demonzuuoru",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 3,
+          "maxValue": 6,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GS"
+      },
+      "slug": "sk_vc_ff4_dmnw_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GSAW"
+      },
+      "slug": "sk_vc_ff4_dmnw_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GSMAX"
+      },
+      "slug": "sk_vc_ff4_dmnw_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_P"
+      },
+      "slug": "sk_vc_ff4_dmnw_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_PAW"
+      },
+      "slug": "sk_vc_ff4_dmnw_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_PMAX"
+      },
+      "slug": "sk_vc_ff4_dmnw_pmax",
+      "maxLevel": 1
+    }
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
