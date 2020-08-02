@@ -1001,15 +1001,23 @@ export class SkillService {
     let countLine = 0;
     for(let i = middle; i >= middle - range.l; i--) {
       for (let j = 1; j <= range.l; j++) {
-        if (i === (middle - range.l)) {
-          skillTable[i][middle + j] = "AR"
-          skillTable[i][middle] = "AR"
-          skillTable[i][middle - j] = "AR"
+        if (i != middle) {
+          if (i > middle - range.w || j < range.w) {
+            if (j >= range.w) {
+              skillTable[i][middle + j] = "R"
+              skillTable[i][middle - j] = "R"
+            } else {
+              skillTable[i][middle + j] = "AR"
+              skillTable[i][middle - j] = "AR"
+            }
 
-          skillTable[(middle + countLine)][middle + j] = "R"
+            skillTable[(middle + countLine)][middle + j] = "R"
+            skillTable[(middle + countLine)][middle - j] = "R"
+          }
+
+          skillTable[i][middle] = "AR"
           skillTable[(middle + countLine)][middle] = "R"
-          skillTable[(middle + countLine)][middle - j] = "R"
-        } else if (i === middle) {
+        } else {
           skillTable[i][middle - j] = "R"
           skillTable[i][middle + j] = "R"
         }
