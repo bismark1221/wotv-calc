@@ -70,7 +70,8 @@
           "type": "HP",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GS",
@@ -89,7 +90,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GSAW",
@@ -108,7 +110,8 @@
           "type": "HP",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GSMAX",
@@ -249,7 +252,8 @@
           "type": "ATK",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GS",
@@ -268,7 +272,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GSAW",
@@ -287,7 +292,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GSMAX",
@@ -607,7 +613,8 @@
           "type": "MAG",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GS",
@@ -626,7 +633,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GSAW",
@@ -645,7 +653,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GSMAX",
@@ -786,7 +795,8 @@
           "type": "DEX",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GS",
@@ -805,7 +815,8 @@
           "type": "DEX",
           "minValue": 1,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GSAW",
@@ -824,7 +835,8 @@
           "type": "DEX",
           "minValue": 8,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GSMAX",
@@ -1559,7 +1571,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_P",
@@ -1578,7 +1591,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_PAW",
@@ -1597,7 +1611,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 1,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_PMAX",
@@ -2218,7 +2233,8 @@
           "type": "AGI",
           "minValue": 2,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GS",
@@ -2237,7 +2253,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GSAW",
@@ -2256,7 +2273,8 @@
           "type": "AGI",
           "minValue": 3,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GSMAX",
@@ -2758,7 +2776,8 @@
           "type": "LUCK",
           "minValue": 15,
           "maxValue": 25,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GS",
@@ -2777,7 +2796,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GSAW",
@@ -2796,7 +2816,8 @@
           "type": "LUCK",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GSMAX",
@@ -3173,7 +3194,8 @@
           "type": "MAG",
           "minValue": 3,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_P",
@@ -3192,7 +3214,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_PAW",
@@ -3211,7 +3234,8 @@
           "type": "MAG",
           "minValue": 3,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_PMAX",
@@ -3531,7 +3555,8 @@
           "type": "ATK",
           "minValue": 6,
           "maxValue": 12,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "EVADE",
@@ -3556,7 +3581,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV3_PAW",
@@ -3575,7 +3601,8 @@
           "type": "ATK",
           "minValue": 4,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV3_PMAX",
@@ -3659,7 +3686,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 10,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GS",
@@ -3678,7 +3706,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 2,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GS_AW",
@@ -3697,7 +3726,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GSMAX",
@@ -4259,7 +4289,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_P",
@@ -4278,7 +4309,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_PAW",
@@ -4297,7 +4329,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_PMAX",
@@ -4757,7 +4790,8 @@
           "type": "ATK",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GS",
@@ -4776,7 +4810,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GSAW",
@@ -4795,7 +4830,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GSMAX",
@@ -4814,7 +4850,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_P",
@@ -4833,7 +4870,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_PAW",
@@ -4852,7 +4890,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_PMAX",
@@ -5136,7 +5175,8 @@
           "type": "HP",
           "minValue": 4,
           "maxValue": 9,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "ICE_RES",
@@ -5161,7 +5201,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "ICE_RES",
@@ -5186,7 +5227,8 @@
           "type": "HP",
           "minValue": 3,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "ICE_RES",
@@ -5408,7 +5450,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF4_DMNW_P",
@@ -5427,7 +5470,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF4_DMNW_PAW",
@@ -5446,7 +5490,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF4_DMNW_PMAX",
@@ -5574,7 +5619,8 @@
           "type": "AGI",
           "minValue": -3,
           "maxValue": -3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IGNT_P",
@@ -5723,7 +5769,8 @@
           "minValue": 2,
           "maxValue": 5,
           "calcType": "percent",
-          "rate": 200
+          "rate": 200,
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BHMT_P",
@@ -5968,7 +6015,8 @@
           "type": "LUCK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_GS",
@@ -5987,7 +6035,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 6,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_GSAW",
@@ -6006,7 +6055,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_P",
@@ -6025,7 +6075,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_PAW",
@@ -6147,7 +6198,8 @@
           "type": "AGI",
           "minValue": 5,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "SPR",
@@ -6172,7 +6224,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KTON_PAW",
@@ -6256,7 +6309,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_PROPOSE_GS",
@@ -6275,7 +6329,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_PROPOSE_GSAW",
@@ -6441,7 +6496,8 @@
           "type": "LUCK",
           "minValue": 3,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SDLX_P",
@@ -6460,7 +6516,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SDLX_PAW",
@@ -6544,7 +6601,8 @@
           "type": "HP",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GS",
@@ -6563,7 +6621,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GSAW",
@@ -7162,7 +7221,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_NEWYEAR_P",
@@ -7181,7 +7241,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_NEWYEAR_PAW",
@@ -7458,7 +7519,8 @@
           "type": "HP",
           "minValue": -15,
           "maxValue": -15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUARD_P",
@@ -7754,7 +7816,8 @@
           "minValue": -10,
           "maxValue": -10,
           "calcType": "percent",
-          "rate": 200
+          "rate": 200,
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE2_P",
@@ -7896,7 +7959,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OCHU_P",
@@ -7915,7 +7979,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OCHU_PAW",
@@ -7999,7 +8064,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ADLD_GS",
@@ -8018,7 +8084,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ADLD_GS_AW",
@@ -8468,7 +8535,8 @@
           "type": "AGI",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV2_P",
@@ -8487,7 +8555,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV2_PAW",
@@ -8609,7 +8678,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV2_P",
@@ -8628,7 +8698,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV2_PAW",
@@ -8891,7 +8962,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ORDR_P",
@@ -8910,7 +8982,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ORDR_PAW",
@@ -9035,7 +9108,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KING_P",
@@ -9054,7 +9128,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KING_PAW",
@@ -9182,7 +9257,8 @@
           "type": "AGI",
           "minValue": -3,
           "maxValue": -3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BLMN_P",
@@ -9325,7 +9401,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUREN_P",
@@ -9344,7 +9421,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUREN_PAW",
@@ -9428,7 +9506,8 @@
           "type": "AGI",
           "minValue": 4,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CHCB_GS",
@@ -9447,7 +9526,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CHCB_GSAW",
@@ -9588,7 +9668,8 @@
           "type": "AGI",
           "minValue": 4,
           "maxValue": 12,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "DEF",
@@ -9678,7 +9759,8 @@
           "type": "DEX",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ARMN_01_GS",
@@ -9787,7 +9869,8 @@
           "type": "ATK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ZUUU_GS",
@@ -9916,7 +9999,8 @@
           "type": "AGI",
           "minValue": -5,
           "maxValue": -5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OGRE_P",
@@ -10103,7 +10187,8 @@
           "type": "HP",
           "minValue": 3,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BYLO_GS",
@@ -10128,7 +10213,8 @@
           "type": "AGI",
           "minValue": -5,
           "maxValue": -5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BYLO_P",
@@ -10212,7 +10298,8 @@
           "type": "LUCK",
           "minValue": 5,
           "maxValue": 11,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RART_GS",
@@ -10231,7 +10318,8 @@
           "type": "DEX",
           "minValue": 7,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RART_P",
@@ -10315,7 +10403,8 @@
           "type": "MAG",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RYER_GS",
@@ -10535,7 +10624,8 @@
           "type": "ATK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RIRY_GS",
@@ -10638,7 +10728,8 @@
           "type": "ACQUIRED_JP",
           "minValue": 20,
           "maxValue": 50,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
@@ -10657,7 +10748,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 7,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_P",
@@ -10741,7 +10833,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_LEONIS_GS",
@@ -10844,7 +10937,8 @@
           "type": "DEX",
           "minValue": 3,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_HOURN_GS",
@@ -10947,7 +11041,8 @@
           "type": "HP",
           "minValue": 4,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FENICE_GS",
@@ -11384,13 +11479,15 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "LUCK",
           "minValue": -10,
           "maxValue": -10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_HOURN2_P",
@@ -11789,7 +11886,8 @@
           "type": "HP",
           "minValue": 4,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TRSV_01_GS",
@@ -11892,7 +11990,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TRSV_02_GS",
@@ -11995,7 +12094,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_MIRROR_GS",

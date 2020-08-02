@@ -261,7 +261,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2_INIT",
@@ -325,7 +326,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -377,7 +379,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1_MONT",
@@ -784,7 +787,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -1093,7 +1097,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -1119,7 +1124,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -1266,7 +1272,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -1641,7 +1648,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -1828,7 +1836,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -1906,7 +1915,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -2153,7 +2163,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -2347,7 +2358,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2_INIT",
@@ -2587,7 +2599,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -2695,7 +2708,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -3164,13 +3178,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -3297,7 +3313,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -3960,7 +3977,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -4643,7 +4661,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -4865,7 +4884,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -5329,7 +5349,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -5556,7 +5577,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -6120,7 +6142,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -6503,13 +6526,15 @@
             "type": "HP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ATK",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_ELDE",
@@ -6541,7 +6566,8 @@
               "minValue": 20,
               "maxValue": 35,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -6922,7 +6948,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -6987,7 +7014,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -7053,7 +7081,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -7696,7 +7725,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -8412,7 +8442,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -9179,7 +9210,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -9282,7 +9314,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -9560,7 +9593,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -9606,7 +9640,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -9665,7 +9700,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -9885,7 +9921,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -10235,7 +10272,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -10512,7 +10550,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -10605,7 +10644,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -10633,7 +10673,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -10942,7 +10983,8 @@
               "minValue": 55,
               "maxValue": 75,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -11211,7 +11253,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2_INIT",
@@ -11275,7 +11318,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -11354,7 +11398,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -11722,7 +11767,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -11871,7 +11917,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -12395,7 +12442,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -13388,7 +13436,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -13453,7 +13502,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -13610,7 +13660,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -14210,7 +14261,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -14241,7 +14293,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -14947,7 +15000,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -15274,7 +15328,8 @@
             "type": "TP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_AILN",
@@ -15324,14 +15379,16 @@
               "maxValue": 30,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "HP",
               "minValue": 5,
               "maxValue": 20,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -15744,7 +15801,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -16363,13 +16421,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -16496,7 +16556,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -16894,7 +16955,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -17600,7 +17662,8 @@
             "type": "MAG",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_MDNA",
@@ -17640,14 +17703,16 @@
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "MAG",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -18806,7 +18871,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -19402,7 +19468,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -19973,7 +20040,8 @@
             "type": "HP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "STOP_RES",
@@ -20482,7 +20550,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -20552,7 +20621,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -21056,7 +21126,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -21183,7 +21254,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -21881,7 +21953,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -22247,13 +22320,15 @@
             "type": "TP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_MACR",
@@ -22954,7 +23029,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -23486,7 +23562,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -24564,13 +24641,15 @@
             "type": "MAG",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_HLNA",
@@ -24779,7 +24858,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1_INIT",
@@ -24862,7 +24942,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1_INIT",
@@ -25025,7 +25106,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -25203,7 +25285,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -25249,7 +25332,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -25495,7 +25579,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -26227,21 +26312,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4",
@@ -26417,7 +26505,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -26811,7 +26900,8 @@
             "type": "HP",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_LILS",
@@ -27108,7 +27198,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -27838,7 +27929,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -28519,7 +28611,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -28558,7 +28651,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -28964,7 +29058,8 @@
             "type": "TP",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "PIERCE_ATK",
@@ -29325,7 +29420,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -29377,7 +29473,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -29442,7 +29539,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -29969,13 +30067,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -30102,7 +30202,8 @@
                 "type": "DEX",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_DX_20_PER",
@@ -30493,7 +30594,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -31095,7 +31197,8 @@
             "type": "ATK",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "EVADE",
@@ -31405,7 +31508,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3_INIT",
@@ -31542,7 +31646,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -31620,7 +31725,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -32228,7 +32334,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -33267,7 +33374,8 @@
             "type": "HP",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "DEF",
@@ -33653,7 +33761,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -34274,7 +34383,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -34435,7 +34545,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -34815,7 +34926,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -35445,7 +35557,8 @@
             "type": "DEX",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "CRITIC_DAMAGE",
@@ -35880,7 +35993,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -36057,7 +36171,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -36098,7 +36213,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -36600,7 +36716,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -36631,7 +36748,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -37344,7 +37462,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -38210,7 +38329,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -39391,7 +39511,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -39506,7 +39627,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -39863,7 +39985,8 @@
             "type": "HP",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ACQUIRED_AP",
@@ -40354,7 +40477,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -41061,7 +41185,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -42104,13 +42229,15 @@
             "type": "TP",
             "minValue": 40,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAG",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_KADI",
@@ -42413,7 +42540,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2_INIT",
@@ -42550,7 +42678,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -42628,7 +42757,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -42891,7 +43021,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -42937,7 +43068,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -43005,7 +43137,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -43231,7 +43364,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -43625,7 +43759,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -43951,7 +44086,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -43979,21 +44115,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4_SUB",
@@ -44333,7 +44472,8 @@
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_MRLK",
@@ -45531,7 +45671,8 @@
                 "type": "TP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MP_20_PER",
@@ -46453,7 +46594,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -46568,7 +46710,8 @@
             "type": "TP",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAGIC_ATK",
@@ -47138,7 +47281,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -47451,7 +47595,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -48884,7 +49029,8 @@
             "type": "MAG",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_PRAY",
@@ -49099,7 +49245,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2_INIT",
@@ -49339,7 +49486,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -49447,7 +49595,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -49719,7 +49868,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -49839,7 +49989,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -50460,7 +50611,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -50754,7 +50906,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -51112,7 +51265,8 @@
             "type": "DEX",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "CRITIC_RATE",
@@ -51583,7 +51737,8 @@
                 "type": "MAG",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_FINA_P_2",
@@ -51837,14 +51992,16 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "FAITH",
@@ -52347,7 +52504,8 @@
                 "type": "AP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AP_20_PER",
@@ -52442,7 +52600,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -53432,7 +53591,8 @@
             "type": "DEX",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAGIC_RES",
@@ -53646,7 +53806,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1_INIT",
@@ -53729,7 +53890,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1_INIT",
@@ -53799,7 +53961,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -53878,7 +54041,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -53956,7 +54120,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -54050,7 +54215,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -54096,7 +54262,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -54298,7 +54465,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -54444,7 +54612,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -54571,7 +54740,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -55029,21 +55199,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4",
@@ -55573,13 +55746,15 @@
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "LUCK",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_BYLO",
@@ -56117,7 +56292,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -56386,7 +56562,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -56521,7 +56698,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -56741,7 +56919,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -57128,7 +57307,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -57441,7 +57621,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -57816,7 +57997,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_RYER",
@@ -58115,7 +58297,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3_INIT",
@@ -58173,7 +58356,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -58252,7 +58436,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -58330,7 +58515,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -58920,7 +59106,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -59957,7 +60144,8 @@
             "type": "DEX",
             "minValue": 40,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_SCIA",
@@ -60630,7 +60818,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -61139,7 +61328,8 @@
                 "type": "TP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MP_20_PER",
@@ -62206,7 +62396,8 @@
             "type": "TP",
             "minValue": 45,
             "maxValue": 45,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ACQUIRED_AP",
@@ -64344,7 +64535,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -64476,7 +64668,8 @@
             "type": "MAG",
             "minValue": 40,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ACTIVATION_TIME",
@@ -64772,7 +64965,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -64843,7 +65037,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -65600,7 +65795,8 @@
                 "type": "AGI",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_SD_10_PER",
@@ -65695,7 +65891,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -66480,7 +66677,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -66658,13 +66856,15 @@
             "type": "AGI",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "LUCK",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_SRJS",
@@ -67035,7 +67235,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -67865,7 +68066,8 @@
                 "type": "DEX",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_DX_20_PER",
@@ -68895,7 +69097,8 @@
             "type": "HP",
             "minValue": 30,
             "maxValue": 30,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "SLASH_RES",
@@ -69347,7 +69550,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -69793,7 +69997,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -70085,7 +70290,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -70829,7 +71035,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -71468,7 +71675,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -71526,7 +71734,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -71631,7 +71840,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -71690,7 +71900,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -71731,7 +71942,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -72080,7 +72292,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -72219,7 +72432,8 @@
                 "type": "AP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AP_20_PER",
@@ -72307,7 +72521,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -73610,7 +73825,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -74106,7 +74322,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -75466,7 +75683,8 @@
             "type": "MAG",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_MURM",
@@ -76012,7 +76230,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -76639,7 +76858,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -77290,7 +77510,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -77668,7 +77889,8 @@
             "type": "AGI",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MOVE",
@@ -78226,7 +78448,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -78851,7 +79074,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -80271,7 +80495,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -80323,7 +80548,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -80890,7 +81116,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -81057,7 +81284,8 @@
                 "type": "AP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AP_20_PER",
@@ -81465,7 +81693,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -82518,7 +82747,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -82690,7 +82920,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -82731,7 +82962,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -83233,7 +83465,8 @@
                 "type": "AGI",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_SD_10_PER",
@@ -84139,7 +84372,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -84539,7 +84773,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2_INIT",
@@ -84649,7 +84884,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -84752,7 +84988,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -85010,7 +85247,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -85139,7 +85377,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -85238,7 +85477,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -85365,7 +85605,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -85721,7 +85962,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -85905,7 +86147,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -85944,7 +86187,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -86003,7 +86247,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -86355,7 +86600,8 @@
             "type": "DEX",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MOVE",
@@ -86989,14 +87235,16 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "FAITH",
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GLMS_S_3",
@@ -87513,7 +87761,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -87544,7 +87793,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -88262,7 +88512,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -88320,7 +88571,8 @@
                 "minValue": -10,
                 "maxValue": -40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GLMS_M_1",
@@ -88632,7 +88884,8 @@
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_GLMS",
@@ -88667,7 +88920,8 @@
             "type": "AGI",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_GLMS_2",
@@ -88700,7 +88954,8 @@
               "minValue": 150,
               "maxValue": 150,
               "calcType": "percent",
-              "turn": 1
+              "turn": 1,
+              "increaseMax": true
             },
             {
               "type": "CT",
@@ -89114,7 +89369,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_YSTL_P_1",
@@ -89367,7 +89623,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_YSTL_M_3",
@@ -89830,7 +90087,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -90435,7 +90693,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -90930,7 +91189,8 @@
             "type": "TP",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ACQUIRED_AP",
@@ -91458,7 +91718,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -92060,7 +92321,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -92697,7 +92959,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -93045,7 +93308,8 @@
             "type": "HP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "SLASH_ATK",
@@ -93424,13 +93688,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -94228,7 +94494,8 @@
                 "type": "DEX",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_DX_20_PER",
@@ -95720,13 +95987,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -95860,7 +96129,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -96329,7 +96599,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -96468,7 +96739,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -96556,7 +96828,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -97095,7 +97368,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -97441,7 +97715,8 @@
             "type": "ATK",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "EVADE",
@@ -97766,7 +98041,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_S_2_INIT",
@@ -97875,13 +98151,15 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "ATK",
                 "minValue": 9,
                 "maxValue": 24,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_P_1_2",
@@ -97986,7 +98264,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -98241,7 +98520,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -98370,7 +98650,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -98469,7 +98750,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -98596,7 +98878,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -98955,7 +99238,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -99138,7 +99422,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -99177,7 +99462,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -99236,7 +99522,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -99264,21 +99551,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4_SUB",
@@ -99687,7 +99977,8 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "ACCURACY",
@@ -100090,7 +100381,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -100510,7 +100802,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -100812,7 +101105,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -101537,7 +101831,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -101565,7 +101860,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -101831,7 +102127,8 @@
             "type": "HP",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_P_NASR",
@@ -102134,7 +102431,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2_INIT",
@@ -102271,7 +102569,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -102656,7 +102955,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -102975,7 +103275,8 @@
                 "type": "DEX",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_DX_20_PER",
@@ -103001,7 +103302,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -103150,7 +103452,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -103518,7 +103821,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -103737,7 +104041,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -103865,7 +104170,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_CLR_M_1",
@@ -104408,7 +104714,8 @@
                 "type": "ACQUIRED_JP",
                 "minValue": 50,
                 "maxValue": 100,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_RAMZ_P_1",
@@ -104635,7 +104942,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_RAMZ_S_5",
@@ -104988,13 +105296,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -105121,7 +105431,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -105286,21 +105597,24 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "BRAVERY",
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_RAMZ_M_3",
@@ -105453,14 +105767,16 @@
                 "minValue": -5,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -5,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_RAMZ_M_2",
@@ -106195,7 +106511,8 @@
             "type": "HP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_FFT_RAMZ",
@@ -106560,7 +106877,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_P_1",
@@ -106612,7 +106930,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -106772,7 +107091,8 @@
                 "minValue": 10,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_WAR_M_2",
@@ -107057,7 +107377,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -107344,7 +107665,8 @@
                 "type": "AGI",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_SD_10_PER",
@@ -108073,7 +108395,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -108626,7 +108949,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "NULLIFY",
@@ -108691,7 +109015,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -108755,7 +109080,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -108812,7 +109138,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "JUMP",
@@ -108846,7 +109173,8 @@
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_ORND_S_3",
@@ -109214,7 +109542,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -109527,7 +109856,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -109553,7 +109883,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -109699,7 +110030,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -109820,7 +110152,8 @@
                 "minValue": -10,
                 "maxValue": -30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FFT_ORND_M_2",
@@ -109936,21 +110269,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4_SUB",
@@ -110091,7 +110427,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -110297,7 +110634,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -110425,7 +110763,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -110815,7 +111154,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1_INIT",
@@ -110898,7 +111238,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1_INIT",
@@ -110968,7 +111309,8 @@
                 "type": "ATK",
                 "minValue": 10,
                 "maxValue": 25,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "EVADE",
@@ -111059,7 +111401,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -111235,7 +111578,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -111281,7 +111625,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -111741,7 +112086,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -112229,21 +112575,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4",
@@ -112662,7 +113011,8 @@
                 "minValue": 10,
                 "maxValue": 30,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -113340,13 +113690,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -113873,7 +114225,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -114104,7 +114457,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -114765,7 +115119,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -116064,7 +116419,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -116218,7 +116574,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -116345,7 +116702,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -117389,13 +117747,15 @@
             "type": "ATK",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAG",
             "minValue": 15,
             "maxValue": 15,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "DEF",
@@ -117748,7 +118108,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_S_2_INIT",
@@ -117857,13 +118218,15 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "ATK",
                 "minValue": 9,
                 "maxValue": 24,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_P_1_2",
@@ -117968,7 +118331,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -118560,7 +118924,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -119231,7 +119596,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -119568,7 +119934,8 @@
             "type": "HP",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "CRITIC_RATE",
@@ -120021,7 +120388,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "DEFENSE_PENETRATION",
@@ -120433,7 +120801,8 @@
                 "minValue": 100,
                 "maxValue": 150,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_S_2",
@@ -120725,7 +121094,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -121474,7 +121844,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MNK_P_2",
@@ -121785,7 +122156,8 @@
             "minValue": 10,
             "maxValue": 10,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "increaseMax": true
           },
           {
             "type": "EARTH_KILLER",
@@ -121833,7 +122205,8 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -122990,7 +123363,8 @@
                 "type": "TP",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MP_20_PER",
@@ -123381,7 +123755,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -124056,13 +124431,15 @@
             "type": "MAG",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "DEX",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_P_ADLD",
@@ -124361,7 +124738,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3_INIT",
@@ -124512,7 +124890,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -124975,7 +125354,8 @@
                 "minValue": 30,
                 "maxValue": 50,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_SWN_M_2",
@@ -125082,7 +125462,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -125209,7 +125590,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -125747,7 +126129,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -125786,7 +126169,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -125845,7 +126229,8 @@
                 "type": "ATK",
                 "minValue": 30,
                 "maxValue": 60,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "SLASH_RES",
@@ -126721,7 +127106,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_BLM_P_1",
@@ -127322,13 +127708,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -127455,7 +127843,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -128559,7 +128948,8 @@
             "type": "MAG",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAGIC_ATK",
@@ -128870,7 +129260,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_RAIN_S_2",
@@ -129018,7 +129409,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_RAIN_P_2",
@@ -129209,14 +129601,16 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "DEF",
@@ -129433,7 +129827,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1",
@@ -129756,7 +130151,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -129782,7 +130178,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1",
@@ -129940,7 +130337,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -130302,7 +130700,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -130497,7 +130896,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -131974,7 +132374,8 @@
                 "type": "MAG",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_MA_20_PER",
@@ -132361,7 +132762,8 @@
                 "minValue": 10,
                 "maxValue": 25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_GRM_M_1",
@@ -133086,7 +133488,8 @@
             "type": "HP",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "MAGIC_RES",
@@ -133127,7 +133530,8 @@
               "maxValue": 70,
               "calcType": "percent",
               "rate": 200,
-              "turn": 1
+              "turn": 1,
+              "increaseMax": true
             },
             {
               "type": "MAG",
@@ -133135,7 +133539,8 @@
               "maxValue": 70,
               "calcType": "percent",
               "rate": 200,
-              "turn": 1
+              "turn": 1,
+              "increaseMax": true
             },
             {
               "type": "WIND_KILLER",
@@ -133492,7 +133897,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_P_1",
@@ -134092,7 +134498,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 1
+                "turn": 1,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_R_1",
@@ -134253,7 +134660,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -134640,7 +135048,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_THI_M_2",
@@ -135016,7 +135425,8 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "DEFENSE_PENETRATION",
@@ -135327,7 +135737,8 @@
             "type": "ATK",
             "minValue": 10,
             "maxValue": 10,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           }
         ],
         "dataId": "SK_MA_LW_VNLA",
@@ -135722,13 +136133,15 @@
                 "type": "AGI",
                 "minValue": 3,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "LUCK",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_NIN_P_1",
@@ -136229,7 +136642,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_S_2",
@@ -136379,7 +136793,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_PLD_P_1",
@@ -136506,7 +136921,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -137569,7 +137985,8 @@
               "type": "ACQUIRED_AP",
               "minValue": 30,
               "maxValue": 30,
-              "calcType": "percent"
+              "calcType": "percent",
+              "increaseMax": true
             }
           ],
           "type": "support",
@@ -137746,7 +138163,8 @@
                 "minValue": 5,
                 "maxValue": 20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_1_INIT",
@@ -137829,7 +138247,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_1_INIT",
@@ -137899,13 +138318,15 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               },
               {
                 "type": "ATK",
                 "minValue": 9,
                 "maxValue": 24,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_P_1_2",
@@ -137984,7 +138405,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_P_2",
@@ -138076,7 +138498,8 @@
                 "minValue": 20,
                 "maxValue": 40,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_VIK_S_2",
@@ -138169,7 +138592,8 @@
                 "minValue": -5,
                 "maxValue": -20,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_S_4",
@@ -138215,7 +138639,8 @@
                 "minValue": -20,
                 "maxValue": -43,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_2",
@@ -138368,7 +138793,8 @@
                 "minValue": 20,
                 "maxValue": 38,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "CRITIC_RATE",
@@ -138691,7 +139117,8 @@
                 "type": "ATK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_AT_20_PER",
@@ -139162,21 +139589,24 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "AGI",
                 "minValue": -10,
                 "maxValue": -25,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_KNT_M_4",
@@ -139701,7 +140131,8 @@
             "type": "HP",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "SLASH_ATK",
@@ -140122,7 +140553,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 12,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FF1_WROL_P_1",
@@ -140382,14 +140814,16 @@
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               },
               {
                 "type": "MAG",
                 "minValue": -20,
                 "maxValue": -39,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_FF1_WROL_S_3",
@@ -140865,7 +141299,8 @@
                 "type": "HP",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
@@ -141044,7 +141479,8 @@
                 "minValue": 20,
                 "maxValue": 42,
                 "calcType": "percent",
-                "turn": 3
+                "turn": 3,
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_M_3",
@@ -141574,7 +142010,8 @@
                 "type": "HP",
                 "minValue": 5,
                 "maxValue": 15,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_DRG_P_2",
@@ -141864,7 +142301,8 @@
             "type": "ATK",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "DEF",
@@ -141904,7 +142342,8 @@
               "minValue": 30,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "TP_AUTO_RESTORE",
@@ -142324,7 +142763,8 @@
                 "type": "MAG",
                 "minValue": 10,
                 "maxValue": 30,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "SK_LW_MST_P_1",
@@ -143050,7 +143490,8 @@
                 "type": "LUCK",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_UN_BD_BUFF_LK_20_PER",
@@ -144126,7 +144567,8 @@
             "type": "HP",
             "minValue": 20,
             "maxValue": 20,
-            "calcType": "percent"
+            "calcType": "percent",
+            "increaseMax": true
           },
           {
             "type": "ACTIVATION_TIME",

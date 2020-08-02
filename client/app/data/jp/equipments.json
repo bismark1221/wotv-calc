@@ -27883,7 +27883,8 @@
               "minValue": 55,
               "maxValue": 75,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -28684,14 +28685,16 @@
               "maxValue": 30,
               "calcType": "percent",
               "rate": 200,
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "HP",
               "minValue": 5,
               "maxValue": 20,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -28805,14 +28808,16 @@
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "MAG",
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -29661,7 +29666,8 @@
               "minValue": 20,
               "maxValue": 35,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -30480,7 +30486,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -30702,7 +30709,8 @@
               "minValue": 150,
               "maxValue": 150,
               "calcType": "percent",
-              "turn": 1
+              "turn": 1,
+              "increaseMax": true
             },
             {
               "type": "CT",
@@ -30985,7 +30993,8 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "ACCURACY",
@@ -31188,7 +31197,8 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "MOVE",
@@ -32338,7 +32348,8 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -32870,7 +32881,8 @@
               "type": "ACQUIRED_AP",
               "minValue": 30,
               "maxValue": 30,
-              "calcType": "percent"
+              "calcType": "percent",
+              "increaseMax": true
             }
           ],
           "type": "support",
@@ -33161,7 +33173,8 @@
               "minValue": 30,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "TP_AUTO_RESTORE",
@@ -33599,7 +33612,8 @@
               "type": "ACQUIRED_JP",
               "minValue": 30,
               "maxValue": 30,
-              "calcType": "percent"
+              "calcType": "percent",
+              "increaseMax": true
             }
           ],
           "type": "support",
@@ -34483,7 +34497,8 @@
               "minValue": 50,
               "maxValue": 80,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -34801,7 +34816,8 @@
               "minValue": 10,
               "maxValue": 40,
               "calcType": "percent",
-              "turn": 1
+              "turn": 1,
+              "increaseMax": true
             }
           ],
           "type": "skill",
@@ -35089,7 +35105,8 @@
               "calcType": "percent",
               "rate": 15,
               "turn": 3,
-              "fromImbue": true
+              "fromImbue": true,
+              "increaseMax": true
             }
           ],
           "type": "support",
@@ -35181,14 +35198,16 @@
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "MAG",
               "minValue": 20,
               "maxValue": 30,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "BRAVERY",
@@ -35327,14 +35346,16 @@
               "minValue": 20,
               "maxValue": 50,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             },
             {
               "type": "ATK",
               "minValue": 20,
               "maxValue": 50,
               "calcType": "percent",
-              "turn": 3
+              "turn": 3,
+              "increaseMax": true
             }
           ],
           "type": "skill",

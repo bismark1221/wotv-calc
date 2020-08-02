@@ -1544,7 +1544,8 @@ export class JsonService {
                       rate: this[this.version].buffs[buff].rate,
                       turn: this[this.version].buffs[buff].turn,
                       fromImbue: false,
-                      condition: null
+                      condition: null,
+                      increaseMax: false
                     };
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
@@ -1557,6 +1558,12 @@ export class JsonService {
                       addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
                     } else {
                       delete addedBuff.condition
+                    }
+
+                    if (this[this.version].buffs[buff]["calc" + i] == 2) {
+                      addedBuff.increaseMax = true
+                    } else {
+                      delete addedBuff.increaseMax
                     }
 
                     skill.effects.push(addedBuff)

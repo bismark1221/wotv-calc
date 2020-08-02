@@ -567,7 +567,8 @@
                 "type": "ATK",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_IFRT_05",
@@ -822,7 +823,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_IFRT_16",
@@ -1836,7 +1838,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_GLEM_05",
@@ -2093,7 +2096,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_GLEM_16",
@@ -4321,7 +4325,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_IGNT_04",
@@ -4344,7 +4349,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_IGNT_05",
@@ -4599,7 +4605,8 @@
                 "type": "ATK",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_IGNT_16",
@@ -5558,7 +5565,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BHMT_04",
@@ -5581,7 +5589,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BHMT_05",
@@ -5836,7 +5845,8 @@
                 "type": "ATK",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BHMT_16",
@@ -6760,7 +6770,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_MABR_01",
@@ -6783,7 +6794,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_MABR_02",
@@ -6921,7 +6933,8 @@
                 "type": "TP",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_MABR_08",
@@ -8073,7 +8086,8 @@
                 "type": "MAG",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_04",
@@ -8212,7 +8226,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_10",
@@ -8235,7 +8250,8 @@
                 "type": "TP",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_11",
@@ -8327,7 +8343,8 @@
                 "type": "MAG",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_15",
@@ -8492,7 +8509,8 @@
                 "type": "TP",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_22",
@@ -8515,7 +8533,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_23",
@@ -8584,7 +8603,8 @@
                 "type": "MAG",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_26",
@@ -8607,7 +8627,8 @@
                 "type": "MAG",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_27",
@@ -8724,7 +8745,8 @@
                 "type": "TP",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_32",
@@ -8747,7 +8769,8 @@
                 "type": "MAG",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_CACT_33",
@@ -9323,7 +9346,8 @@
                 "type": "MAG",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_04",
@@ -9462,7 +9486,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_10",
@@ -9485,7 +9510,8 @@
                 "type": "TP",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_11",
@@ -9577,7 +9603,8 @@
                 "type": "MAG",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_15",
@@ -9739,7 +9766,8 @@
                 "type": "TP",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_22",
@@ -9762,7 +9790,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_23",
@@ -9831,7 +9860,8 @@
                 "type": "MAG",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_26",
@@ -9854,7 +9884,8 @@
                 "type": "MAG",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_27",
@@ -9969,7 +10000,8 @@
                 "type": "TP",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_32",
@@ -9992,7 +10024,8 @@
                 "type": "MAG",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ARMN_33",
@@ -10560,7 +10593,8 @@
                 "type": "ATK",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_04",
@@ -10699,7 +10733,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_10",
@@ -10722,7 +10757,8 @@
                 "type": "TP",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_11",
@@ -10814,7 +10850,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_15",
@@ -10979,7 +11016,8 @@
                 "type": "TP",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_22",
@@ -11002,7 +11040,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_23",
@@ -11071,7 +11110,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_26",
@@ -11094,7 +11134,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_27",
@@ -11211,7 +11252,8 @@
                 "type": "TP",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_32",
@@ -11234,7 +11276,8 @@
                 "type": "ATK",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ZUUU_33",
@@ -11803,7 +11846,8 @@
                 "type": "ATK",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_04",
@@ -11942,7 +11986,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_10",
@@ -11965,7 +12010,8 @@
                 "type": "TP",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_11",
@@ -12057,7 +12103,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_15",
@@ -12222,7 +12269,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_22",
@@ -12245,7 +12293,8 @@
                 "type": "TP",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_23",
@@ -12314,7 +12363,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_26",
@@ -12337,7 +12387,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_27",
@@ -12454,7 +12505,8 @@
                 "type": "TP",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_32",
@@ -12477,7 +12529,8 @@
                 "type": "ATK",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OGRE_33",
@@ -13045,7 +13098,8 @@
                 "type": "ATK",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_04",
@@ -13184,7 +13238,8 @@
                 "type": "TP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_10",
@@ -13207,7 +13262,8 @@
                 "type": "TP",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_11",
@@ -13299,7 +13355,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_15",
@@ -13464,7 +13521,8 @@
                 "type": "TP",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_22",
@@ -13487,7 +13545,8 @@
                 "type": "TP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_23",
@@ -13556,7 +13615,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_26",
@@ -13579,7 +13639,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_27",
@@ -13696,7 +13757,8 @@
                 "type": "TP",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_32",
@@ -13719,7 +13781,8 @@
                 "type": "ATK",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_BOMB_33",
@@ -14338,7 +14401,8 @@
                 "type": "MAG",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_SHIV_05",
@@ -14593,7 +14657,8 @@
                 "type": "MAG",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_SHIV_16",
@@ -15609,7 +15674,8 @@
                 "type": "MAG",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_RAMU_05",
@@ -15864,7 +15930,8 @@
                 "type": "MAG",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_RAMU_16",
@@ -16854,7 +16921,8 @@
                 "type": "ATK",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ODIN_05",
@@ -17109,7 +17177,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_ODIN_16",
@@ -18087,7 +18156,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_LAMA_01_04",
@@ -18110,7 +18180,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_LAMA_01_05",
@@ -18365,7 +18436,8 @@
                 "type": "ATK",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_LAMA_01_16",
@@ -19374,7 +19446,8 @@
                 "type": "AP",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_TSLP_05",
@@ -19629,7 +19702,8 @@
                 "type": "AP",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_TSLP_16",
@@ -20599,7 +20673,8 @@
                 "type": "MAG",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OCHU_04",
@@ -20622,7 +20697,8 @@
                 "type": "MAG",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OCHU_05",
@@ -20877,7 +20953,8 @@
                 "type": "MAG",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_OCHU_16",
@@ -22153,7 +22230,8 @@
                 "type": "ATK",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_THDG_17",
@@ -22176,7 +22254,8 @@
                 "type": "ATK",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_THDG_18",
@@ -22410,7 +22489,8 @@
                 "type": "ATK",
                 "minValue": 8,
                 "maxValue": 8,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_THDG_28",
@@ -22433,7 +22513,8 @@
                 "type": "ATK",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent"
+                "calcType": "percent",
+                "increaseMax": true
               }
             ],
             "dataId": "BUFF_THDG_29",

@@ -261,7 +261,11 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== "skill") {
           html = this.getIncrease(effect) + " HP" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
-          html = "Restore HP" + this.getValue(skill, effect) + this.getTurns(effect)
+          if (effect.increaseMax) {
+            html = "Increase max HP & restore HP raised" + this.getValue(skill, effect) + this.getTurns(effect)
+          } else {
+            html = "Restore HP" + this.getValue(skill, effect) + this.getTurns(effect)
+          }
         }
       break
       case "TP" :
