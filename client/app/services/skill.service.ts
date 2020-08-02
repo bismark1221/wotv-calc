@@ -809,8 +809,8 @@ export class SkillService {
       case "AP_CONSUMPTION" :
         html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "IF_KILL_WITH_MAGIC" :
-        html = "If kill with magic grants"
+      case "ON_MAGIC_ATTACK" :
+        html = "On magic attacks only"
       break
       case "ON_PHYSIC_ATTACK" :
         html = "On physic attacks only"

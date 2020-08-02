@@ -255,15 +255,15 @@ export class JsonService {
     115: "MAGIC_EVADE",
     116: "CRITIC_GUARENTED",
     117: "CRITIC_GUARENTED",
-    119: "DARK_KILLER",
-    120: "HUMAN_KILLER",
-    121: "FENNES_KILLER",
-    122: "GENERIC_KILLER",
+    119: "KILLER",
+    120: "KILLER",
+    121: "KILLER",
+    122: "KILLER",
     123: "IMBUE",
     124: "IMMUNE_CT_CHANGE",
     126: "ON_PHYSIC_ATTACK",
-    130: "IF_KILL_WITH_MAGIC",
-    134: "BOOST_DAMAGE_AGAINST_METAL",
+    130: "ON_MAGIC_ATTACK",
+    134: "KILLER",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     144: "IMBUE",
@@ -303,10 +303,6 @@ export class JsonService {
     329: "RES_MAGIC_ATK_PENETRATION",
     347: "HEAL_POWER"
   }
-
-  forceAddBuff = [
-    126
-  ]
 
   killers = {
     2: "FIRE",
@@ -1487,6 +1483,7 @@ export class JsonService {
             let finished = false;
             let i = 1;
             let duplicateFinded = false;
+            let needToAddKiller = false;
 
             while (!finished) {
               if (this[this.version].buffs[buff]["type" + i]) {
@@ -1505,13 +1502,18 @@ export class JsonService {
                     console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
                   }
 
-                  if (this.forceAddBuff.indexOf(this[this.version].buffs[buff]["type" + i]) != -1) {
-                    skill.effects.push({
-                      type: this.buffTypes[this[this.version].buffs[buff]["type" + i]]
-                    })
+                  let type = this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+                  if (this[this.version].buffs[buff]["tag" + i]) {
+                    if (type !== "KILLER" && type !== "IMBUE") {
+                      skill.effects.push({
+                        type: type
+                      })
+                    }
+
+                    type = this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER"
                   }
 
-                  let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+
                   let nullifyOrDispel = false;
                   if (this.statsAtkRes.indexOf(type) !== -1) {
                     type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")

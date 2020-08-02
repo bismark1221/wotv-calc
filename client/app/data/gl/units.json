@@ -128593,6 +128593,9 @@
           },
           "effects": [
             {
+              "type": "ON_MAGIC_ATTACK"
+            },
+            {
               "type": "HUMAN_KILLER",
               "minValue": 20,
               "maxValue": 20,
