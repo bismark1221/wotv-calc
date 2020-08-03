@@ -380,9 +380,9 @@
           <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
         </th>
       </tr>
-      <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of ['board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0_stat', 'equipment0_buff', 'equipment1_stat', 'equipment1_buff', 'equipment2_stat', 'equipment2_buff', 'totalEquipment']">
-        <td>{{ comeFrom }}</td>
-        <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
+      <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of BuffsFrom">
+        <td>{{ comeFrom.translate }}</td>
+        <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom.type] : '' }}</td>
       </tr>
       <tr>
         <td>Total</td>

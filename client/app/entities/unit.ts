@@ -605,13 +605,14 @@ export class Unit {
           if (!this.stats[statType].equipment) {
             this.stats[statType].equipment = {
               positive: 0,
-              negative: -100000000
+              negative: 0
             }
           }
 
+
           if (value > 0 && value > this.stats[statType].equipment.positive) {
             this.stats[statType].equipment.positive = value
-          } else if (value <= 0 && value > this.stats[statType].equipment.negative) {
+          } else if (value <= 0 && value < this.stats[statType].equipment.negative) {
             this.stats[statType].equipment.negative = value
           }
 
@@ -640,13 +641,13 @@ export class Unit {
                 if (!this.stats[effect.type].equipmentBuff) {
                   this.stats[effect.type].equipmentBuff = {
                     positive: 0,
-                    negative: -100000000
+                    negative: 0
                   }
                 }
 
                 if (value > 0 && value > this.stats[effect.type].equipmentBuff.positive) {
                   this.stats[effect.type].equipmentBuff.positive = value
-                } else if (value <= 0 && value > this.stats[effect.type].equipmentBuff.negative) {
+                } else if (value <= 0 && value < this.stats[effect.type].equipmentBuff.negative) {
                   this.stats[effect.type].equipmentBuff.negative = value
                 }
 
