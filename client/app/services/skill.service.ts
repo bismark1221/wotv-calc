@@ -12,6 +12,7 @@ export class SkillService {
     "nullify": "x",
     "dispel": "x",
     "unknow": "x",
+    "decrease": "x",
     undefined: "x"
   }
 
@@ -98,13 +99,21 @@ export class SkillService {
   }
 
   private getIncrease(effect) {
-    if (effect.rate && effect.rate != 200) {
-      return effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
-    } else if (effect.minValue < 0 || effect.value < 0) {
+    let text = ""
+
+    if (effect.calcType == "decrease") {
       return "Decrease"
-    } else {
-      return "Increase"
     }
+
+    if (effect.rate && effect.rate != 200) {
+      text = effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
+    } else if (effect.minValue < 0 || effect.value < 0) {
+      text = "Decrease"
+    } else {
+      text = "Increase"
+    }
+
+    return text
   }
 
   private getPositiveValue(value, getPositiveValue) {
@@ -114,9 +123,6 @@ export class SkillService {
 
     return value
   }
-
-
-
 
   private getDamageValue(skill, effect) {
     let value = "";
@@ -156,8 +162,6 @@ export class SkillService {
     }
   }
 
-
-
   private getValue(skill, effect, getPositiveValue = true, explaination = "", forceCalc = null) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
@@ -193,7 +197,7 @@ export class SkillService {
   }
 
   private getMaxValue(effect, getPositiveValue = true, forceCalc = null) {
-    if (effect.minValue !== effect.maxValue) {
+    if (effect.maxValue && effect.minValue !== effect.maxValue) {
       let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc
@@ -286,34 +290,8 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== "skill") {
           html = this.getIncrease(effect) + " CT" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
-          html = "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = (effect.rate ? effect.rate + "% chance to " : "") + "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
         }
-
-   /* {
-      "iname": "BUFF_LW_YSTL_S_2_S", ==> chance of raising
-      "rate": 50,
-      "turn": 1,
-      "timing": 2,
-      "chktgt": 0,
-      "chktiming": 1,
-      "type1": 4,
-      "calc1": 10,
-      "val1": 100,
-      "val11": 250
-    },
-
-
-
-      "iname": "BUFF_LW_THI_M_2_T", ==> Reduce
-      "timing": 2,
-      "chktgt": 0,
-      "chktiming": 1,
-      "type1": 4,
-      "calc1": 22, ==> Reduce
-      "val1": 50,
-      "val11": 50
-    },*/
-
       break
       case "ATK" :
         html = this.getIncrease(effect) + " ATK" + this.getValue(skill, effect) + this.getTurns(effect)
