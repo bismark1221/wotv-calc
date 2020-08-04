@@ -42,7 +42,8 @@ export class EsperService {
       "UN_FFT_S_CHCB_01",
       "UN_LW_S_MDFY",
       "UN_LW_S_LAMA_01",
-      "UN_LW_S_BLMN"
+      "UN_LW_S_BLMN",
+      "UN_LW_S_CHCB1"
     ],
     UR: [
       "UN_LW_S_IFRT",
@@ -57,7 +58,8 @@ export class EsperService {
       "UN_LW_S_DABL",
       "UN_LW_S_FNRR",
       "UN_LW_S_TITN",
-      "UN_LW_S_AGON"
+      "UN_LW_S_AGON",
+      "UN_FF4_S_DMNW"
     ]
   }
 
@@ -410,8 +412,8 @@ export class EsperService {
     }
 
     if (esper) {
-      this.esper.star = esper.star;
-      this.esper.level = esper.level;
+      this.esper.star = esper.star ? esper.star : 1;
+      this.esper.level = esper.level ? esper.level : 1;
       this.esper.resonance = esper.resonance ? esper.resonance : 1;
 
       if (esper.nodes) {

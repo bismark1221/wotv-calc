@@ -283,15 +283,18 @@ export class CardService {
 
   selectCardForBuilder(cardId, customData = null) {
     this.card = this.getCard(cardId)
-    this.card.name = this.card.getName(this.translateService)
-    this.card.star = 0;
-    this.card.level = 1;
-    this.card.statsType = this.getAvailableStats()
 
-    this.initiateSavedCard(customData)
+    if (this.card) {
+      this.card.name = this.card.getName(this.translateService)
+      this.card.star = 0;
+      this.card.level = 1;
+      this.card.statsType = this.getAvailableStats()
 
-    this.updateMaxLevel();
-    this.changeLevel()
+      this.initiateSavedCard(customData)
+
+      this.updateMaxLevel();
+      this.changeLevel()
+    }
 
     return this.card
   }

@@ -12,6 +12,7 @@ export class SkillService {
     "nullify": "x",
     "dispel": "x",
     "unknow": "x",
+    "decrease": "x",
     undefined: "x"
   }
 
@@ -98,13 +99,21 @@ export class SkillService {
   }
 
   private getIncrease(effect) {
-    if (effect.rate && effect.rate != 200) {
-      return effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
-    } else if (effect.minValue < 0 || effect.value < 0) {
+    let text = ""
+
+    if (effect.calcType == "decrease") {
       return "Decrease"
-    } else {
-      return "Increase"
     }
+
+    if (effect.rate && effect.rate != 200) {
+      text = effect.rate + "% chance" + (effect.minValue < 0 || effect.value < 0 ? " to decrease" : " to increase")
+    } else if (effect.minValue < 0 || effect.value < 0) {
+      text = "Decrease"
+    } else {
+      text = "Increase"
+    }
+
+    return text
   }
 
   private getPositiveValue(value, getPositiveValue) {
@@ -114,9 +123,6 @@ export class SkillService {
 
     return value
   }
-
-
-
 
   private getDamageValue(skill, effect) {
     let value = "";
@@ -156,8 +162,6 @@ export class SkillService {
     }
   }
 
-
-
   private getValue(skill, effect, getPositiveValue = true, explaination = "", forceCalc = null) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
@@ -193,7 +197,7 @@ export class SkillService {
   }
 
   private getMaxValue(effect, getPositiveValue = true, forceCalc = null) {
-    if (effect.minValue !== effect.maxValue) {
+    if (effect.maxValue && effect.minValue !== effect.maxValue) {
       let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc
@@ -261,7 +265,11 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== "skill") {
           html = this.getIncrease(effect) + " HP" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
-          html = "Restore HP" + this.getValue(skill, effect) + this.getTurns(effect)
+          if (effect.increaseMax) {
+            html = "Increase max HP & restore HP raised" + this.getValue(skill, effect) + this.getTurns(effect)
+          } else {
+            html = "Restore HP" + this.getValue(skill, effect) + this.getTurns(effect)
+          }
         }
       break
       case "TP" :
@@ -282,34 +290,8 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== "skill") {
           html = this.getIncrease(effect) + " CT" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
-          html = "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = (effect.rate ? effect.rate + "% chance to " : "") + "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
         }
-
-   /* {
-      "iname": "BUFF_LW_YSTL_S_2_S", ==> chance of raising
-      "rate": 50,
-      "turn": 1,
-      "timing": 2,
-      "chktgt": 0,
-      "chktiming": 1,
-      "type1": 4,
-      "calc1": 10,
-      "val1": 100,
-      "val11": 250
-    },
-
-
-
-      "iname": "BUFF_LW_THI_M_2_T", ==> Reduce
-      "timing": 2,
-      "chktgt": 0,
-      "chktiming": 1,
-      "type1": 4,
-      "calc1": 22, ==> Reduce
-      "val1": 50,
-      "val11": 50
-    },*/
-
       break
       case "ATK" :
         html = this.getIncrease(effect) + " ATK" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -428,6 +410,9 @@ export class SkillService {
       case "ALL_ATTACKS_ATK" :
         html = this.getIncrease(effect) + " all attacks ATK" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "HEAL_POWER" :
+        html = this.getIncrease(effect) + " healing power" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "REGEN_ATK" :
         html = this.getChance(effect, false) + " regen" + this.getValue(skill, effect, true, " health restored by turn") + this.getTurns(effect)
       break
@@ -457,6 +442,9 @@ export class SkillService {
       break
       case "PETRIFY_ATK" :
         html = this.getChance(effect) + " petrify" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "GRADUAL_PETRIFY_ATK" :
+        html = this.getChance(effect) + " gradual petrify" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "TOAD_ATK" :
         html = this.getChance(effect) + " toad" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -536,6 +524,9 @@ export class SkillService {
       case "PETRIFY_RES" :
         html = this.getChance(effect) + " petrify resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "GRADUAL_PETRIFY_RES" :
+        html = this.getChance(effect) + " gradual petrify resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "TOAD_RES" :
         html = this.getChance(effect) + " toad resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -592,9 +583,6 @@ export class SkillService {
       break
       case "MAGIC_EVADE" :
         html = this.getChance(effect, false) + " to magical evasion" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
-      case "CRITIC_BEHIND_GUARENTED" :
-        html = "Guarented critical hit from behind"
       break
       case "CRITIC_GUARENTED" :
         html = "Guarented critical hit"
@@ -743,11 +731,23 @@ export class SkillService {
       case "FLOAT_KILLER" :
         html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "BARRIER" :
-        html = "Forms a barrier that reduces damage" + this.getValue(skill, effect) + this.getTurns(effect)
-      break
-      case "REDUCE_DAMAGE" :
+      case "BARRIER_GENERAL" :
         html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_GENERAL" :
+        html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BARRIER_PHYSIC" :
+        html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_PHYSIC" :
+        html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BARRIER_MAGIC" :
+        html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REDUCE_DAMAGE_MAGIC" :
+        html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "CRITIC_EVADE" :
         html = "Boost critical evasion" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -791,11 +791,14 @@ export class SkillService {
       case "AP_CONSUMPTION" :
         html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)
       break
-      case "IF_KILL_WITH_MAGIC" :
-        html = "If kill with magic grants"
+      case "ON_MAGIC_ATTACK" :
+        html = "On magic attacks only"
       break
-      case "ON_BASIC_ATTACK" :
-        html = "On basic attacks only"
+      case "ON_PHYSIC_ATTACK" :
+        html = "On physic attacks only"
+      break
+      case "IMMUNE_CT_CHANGE" :
+        html = "Immune to CT change"
       break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)
@@ -832,6 +835,14 @@ export class SkillService {
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
+    }
+
+    if (effect.condition) {
+      let conditions = {
+        "BEHIND": " when attacking from behind",
+        "MALE": "when attacking male units"
+      }
+      html = html + conditions[effect.condition]
     }
 
     if (effect.side) {
@@ -968,15 +979,23 @@ export class SkillService {
     let countLine = 0;
     for(let i = middle; i >= middle - range.l; i--) {
       for (let j = 1; j <= range.l; j++) {
-        if (i === (middle - range.l)) {
-          skillTable[i][middle + j] = "AR"
-          skillTable[i][middle] = "AR"
-          skillTable[i][middle - j] = "AR"
+        if (i != middle) {
+          if (i > middle - range.w || j < range.w) {
+            if (j >= range.w) {
+              skillTable[i][middle + j] = "R"
+              skillTable[i][middle - j] = "R"
+            } else {
+              skillTable[i][middle + j] = "AR"
+              skillTable[i][middle - j] = "AR"
+            }
 
-          skillTable[(middle + countLine)][middle + j] = "R"
+            skillTable[(middle + countLine)][middle + j] = "R"
+            skillTable[(middle + countLine)][middle - j] = "R"
+          }
+
+          skillTable[i][middle] = "AR"
           skillTable[(middle + countLine)][middle] = "R"
-          skillTable[(middle + countLine)][middle - j] = "R"
-        } else if (i === middle) {
+        } else {
           skillTable[i][middle - j] = "R"
           skillTable[i][middle + j] = "R"
         }

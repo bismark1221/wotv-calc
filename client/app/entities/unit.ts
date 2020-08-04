@@ -253,10 +253,8 @@ export class Unit {
     this.disableNotAvailableNodes()
   }
 
-  changeLevel(updateUnitStats = true, autoGetSkills = false) {
-      this.calculateBaseStats()
-    if (updateUnitStats) {
-    }
+  changeLevel(autoGetSkills = false) {
+    this.calculateBaseStats()
 
     if (autoGetSkills) {
       this.activateMasterSkill()
@@ -528,7 +526,7 @@ export class Unit {
     ]
 
     this.card.statsType.forEach(statType => {
-      this.stats[statType].card = this.card.stats[statType].total
+      this.updateStat(statType, this.card.stats[statType].total, "card", "fixe")
     })
 
     Object.keys(this.card.buffs.self).forEach(statType => {
@@ -537,10 +535,6 @@ export class Unit {
       if (statsType.indexOf(statType) !== -1) {
         if (this.card.buffs.self[statType].calcType === "percent") {
           value = Math.floor(this.stats[statType].baseTotal * value / 100)
-        }
-
-        if (this.stats[statType].card) {
-          value += this.stats[statType].card
         }
       }
 
@@ -553,10 +547,6 @@ export class Unit {
       if (statsType.indexOf(statType) !== -1) {
         if (this.card.buffs.party[statType].calcType === "percent") {
           value = Math.floor(this.stats[statType].baseTotal * value / 100)
-        }
-
-        if (this.stats[statType].cardParty) {
-          value += this.stats[statType].cardParty
         }
       }
 
@@ -615,13 +605,14 @@ export class Unit {
           if (!this.stats[statType].equipment) {
             this.stats[statType].equipment = {
               positive: 0,
-              negative: -100000000
+              negative: 0
             }
           }
 
+
           if (value > 0 && value > this.stats[statType].equipment.positive) {
             this.stats[statType].equipment.positive = value
-          } else if (value <= 0 && value > this.stats[statType].equipment.negative) {
+          } else if (value <= 0 && value < this.stats[statType].equipment.negative) {
             this.stats[statType].equipment.negative = value
           }
 
@@ -650,13 +641,13 @@ export class Unit {
                 if (!this.stats[effect.type].equipmentBuff) {
                   this.stats[effect.type].equipmentBuff = {
                     positive: 0,
-                    negative: -100000000
+                    negative: 0
                   }
                 }
 
                 if (value > 0 && value > this.stats[effect.type].equipmentBuff.positive) {
                   this.stats[effect.type].equipmentBuff.positive = value
-                } else if (value <= 0 && value > this.stats[effect.type].equipmentBuff.negative) {
+                } else if (value <= 0 && value < this.stats[effect.type].equipmentBuff.negative) {
                   this.stats[effect.type].equipmentBuff.negative = value
                 }
 
@@ -671,6 +662,7 @@ export class Unit {
     }
 
     statsType.forEach(statType => {
+      this.updateStat(statType, 0, "totalEquipment", "fixe", true)
       if (this.stats[statType].equipment) {
         let negativeValue = this.stats[statType].equipment.negative !== -100000000 ? this.stats[statType].equipment.negative : 0
         this.updateStat(statType, this.stats[statType].equipment.positive + negativeValue, "totalEquipment", "fixe", true)
@@ -807,6 +799,8 @@ export class Unit {
         this.hideNode(node, true)
       }
     })
+
+    this.updateSupportAndCounterSkills()
   }
 
   private updateSkill(nodeId, increase, fullHide = false) {
@@ -873,11 +867,9 @@ export class Unit {
         }
       }
     })
-
-    this.getActiveSkills()
   }
 
-  getActiveSkills() {
+  getActiveSkills(formatHtml = false, nameService = null, skillService = null) {
     this.activeSkills = []
 
     Object.keys(this.board.nodes).forEach(nodeId => {
@@ -887,19 +879,43 @@ export class Unit {
       ) {
         node.skill.level = node.level
 
-        this.activeSkills.push(node.skill)
+        this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, nameService, skillService) : node.skill)
       }
     })
+
+    if (this.limit && formatHtml) {
+      this.limit = this.formatActiveSkill(this.limit, nameService, skillService)
+    }
 
     this.activatedSupport.forEach(supportNode => {
       if (supportNode !== "0") {
         this.board.nodes[supportNode].skill.level = this.board.nodes[supportNode].level
+        if (formatHtml) {
+          this.board.nodes[supportNode].skill = this.formatActiveSkill(this.board.nodes[supportNode].skill, nameService, skillService)
+        }
       }
     })
 
     if (this.activatedCounter !== "0") {
       this.board.nodes[this.activatedCounter].skill.level = this.board.nodes[this.activatedCounter].level
+      if (formatHtml) {
+        this.board.nodes[this.activatedCounter].skill = this.formatActiveSkill(this.board.nodes[this.activatedCounter].skill, nameService, skillService)
+      }
     }
+  }
+
+  private formatActiveSkill(skill, nameService = null, skillService = null) {
+    skill.name = nameService.getName(skill)
+
+    skill.effects.forEach(effect => {
+      effect.formatHtml = skillService.formatEffect(this, skill, effect);
+    });
+
+    skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
+
+    skillService.formatRange(this, skill);
+
+    return skill
   }
 
   getAvailableSupportNodes(pos, nameService) {
@@ -934,6 +950,17 @@ export class Unit {
     return nodes
   }
 
+  private updateSupportAndCounterSkills() {
+    this.activatedSupport.forEach((supportNode, supportIndex) => {
+      if (!this.board.nodes[supportNode] || this.board.nodes[supportNode].level == 0) {
+        this.activatedSupport[supportIndex] = "0"
+      }
+    })
+
+    if (!this.board.nodes[this.activatedCounter] || this.board.nodes[this.activatedCounter].level == 0) {
+      this.activatedCounter = "0"
+    }
+  }
 
   getAvailableStatType() {
     let statsAtkRes = [
@@ -1065,5 +1092,66 @@ export class Unit {
     })
 
     return availableStats;
+  }
+
+  getAvailableEquipments(pos, equipmentService) {
+    let armorTypes = []
+
+    this.jobsData[0].equipments.armors.forEach(type => {
+      if (type !== "ACC") {
+        armorTypes.push(type)
+      }
+    })
+
+    let weaponsTypes = []
+    this.jobsData[0].equipments.weapons.forEach(type => {
+      weaponsTypes.push(type)
+    })
+
+    let hasArmor = false
+    let hasWeapon = false
+    let countAcc = 0
+    let hasTmr = false;
+    for (let i = 0; i <= 2; i++) {
+      if (i !== pos && this.equipments && this.equipments[i]) {
+        if (this.equipments[i].type === "ACC") {
+          countAcc++
+        } else if (equipmentService.isArmor(this.equipments[i].type)) {
+          hasArmor = true
+        } else {
+          hasWeapon = true
+        }
+
+        if (this.equipments[i].acquisition && this.equipments[i].acquisition.type === "tmr") {
+          hasTmr = true
+        }
+      }
+    }
+
+    let equipments = equipmentService.getEquipmentsForUnitBuilder()
+    let availableEquipments = []
+    let mainJob = this.jobs[0].split("_")
+    mainJob = mainJob[0] + "_" + mainJob[1] + "_" + mainJob[2]
+    equipments.forEach(equipment => {
+      if (((countAcc < 2 && equipment.type === "ACC")
+        || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
+        || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
+        && (
+          (!hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr" || (equipment.acquisition.type === "tmr" && this.lb >= 4))
+          || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== "tmr"))))
+      ) {
+        let jobs = []
+        equipment.equippableJobs.forEach(job => {
+          let tableJob = job.split("_")
+          jobs.push(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2])
+        })
+
+        if (jobs.indexOf(mainJob) != -1 || equipment.equippableUnits.indexOf(this.dataId) != -1) {
+          availableEquipments.push(equipment)
+        }
+      }
+    })
+
+    return availableEquipments
   }
 }

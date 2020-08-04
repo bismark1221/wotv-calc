@@ -70,7 +70,8 @@
           "type": "HP",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GS",
@@ -89,7 +90,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GSAW",
@@ -108,7 +110,8 @@
           "type": "HP",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GLEM_GSMAX",
@@ -249,7 +252,8 @@
           "type": "ATK",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GS",
@@ -268,7 +272,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GSAW",
@@ -287,7 +292,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IFRT_GSMAX",
@@ -607,7 +613,8 @@
           "type": "MAG",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GS",
@@ -626,7 +633,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GSAW",
@@ -645,7 +653,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RAMU_GSMAX",
@@ -786,7 +795,8 @@
           "type": "DEX",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GS",
@@ -805,7 +815,8 @@
           "type": "DEX",
           "minValue": 1,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GSAW",
@@ -824,7 +835,8 @@
           "type": "DEX",
           "minValue": 8,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SOKYU_GSMAX",
@@ -1559,7 +1571,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_P",
@@ -1578,7 +1591,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_PAW",
@@ -1597,7 +1611,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 1,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GRSR_PMAX",
@@ -2218,7 +2233,8 @@
           "type": "AGI",
           "minValue": 2,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GS",
@@ -2237,7 +2253,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GSAW",
@@ -2256,7 +2273,8 @@
           "type": "AGI",
           "minValue": 3,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV1_GSMAX",
@@ -2758,7 +2776,8 @@
           "type": "LUCK",
           "minValue": 15,
           "maxValue": 25,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GS",
@@ -2777,7 +2796,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GSAW",
@@ -2796,7 +2816,8 @@
           "type": "LUCK",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE1_GSMAX",
@@ -2869,7 +2890,7 @@
   "VC_LW_THDG": {
     "dataId": "VC_LW_THDG",
     "names": {
-      "en": "猛攻双竜　２ヘッドドラゴン"
+      "en": "猛攻双竜　２ヘッドドラゴン - Serpentine Onslaught, Two-Headed Dragon"
     },
     "rarity": "UR",
     "stats": {
@@ -2929,7 +2950,7 @@
       "JUMP": {}
     },
     "image": "lapsthdg",
-    "slug": "meng-gong-shuang-long-2hetudodoragon",
+    "slug": "serpentine-onslaught-two-headed-dragon",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -3173,7 +3194,8 @@
           "type": "MAG",
           "minValue": 3,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_P",
@@ -3192,7 +3214,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_PAW",
@@ -3211,7 +3234,8 @@
           "type": "MAG",
           "minValue": 3,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV1_PMAX",
@@ -3227,7 +3251,7 @@
   "VC_FF01_DMAC": {
     "dataId": "VC_FF01_DMAC",
     "names": {
-      "en": "デスマシーン"
+      "en": "デスマシーン - Death Machine"
     },
     "rarity": "UR",
     "stats": {
@@ -3287,7 +3311,7 @@
       "JUMP": {}
     },
     "image": "ff01dmac",
-    "slug": "desumasin",
+    "slug": "death-machine",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -3531,7 +3555,8 @@
           "type": "ATK",
           "minValue": 6,
           "maxValue": 12,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "EVADE",
@@ -3556,7 +3581,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV3_PAW",
@@ -3575,7 +3601,8 @@
           "type": "ATK",
           "minValue": 4,
           "maxValue": 4,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV3_PMAX",
@@ -3659,7 +3686,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 10,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GS",
@@ -3678,7 +3706,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 2,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GS_AW",
@@ -3697,7 +3726,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_CBVPARTY1_GSMAX",
@@ -4259,7 +4289,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_P",
@@ -4278,7 +4309,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_PAW",
@@ -4297,7 +4329,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 2,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FNRR_PMAX",
@@ -4381,7 +4414,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ON_BASIC_ATTACK"
+          "type": "ON_PHYSIC_ATTACK"
         },
         {
           "type": "HUMAN_KILLER",
@@ -4404,7 +4437,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ON_BASIC_ATTACK"
+          "type": "ON_PHYSIC_ATTACK"
         },
         {
           "type": "HUMAN_KILLER",
@@ -4427,7 +4460,7 @@
       "unlockStar": null,
       "effects": [
         {
-          "type": "ON_BASIC_ATTACK"
+          "type": "ON_PHYSIC_ATTACK"
         },
         {
           "type": "HUMAN_KILLER",
@@ -4757,7 +4790,8 @@
           "type": "ATK",
           "minValue": 15,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GS",
@@ -4776,7 +4810,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GSAW",
@@ -4795,7 +4830,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_GSMAX",
@@ -4814,7 +4850,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_P",
@@ -4833,7 +4870,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_PAW",
@@ -4852,7 +4890,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FF14_MV3_PMAX",
@@ -5065,6 +5104,406 @@
       "maxLevel": 1
     }
   },
+  "VC_LW_GRSR2": {
+    "dataId": "VC_LW_GRSR2",
+    "names": {
+      "en": "穏やかな時間"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 288
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 32,
+        "max": 126
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 20,
+        "max": 78
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsgrsr2",
+    "slug": "wenyakana-shi-jian",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 4,
+          "maxValue": 9,
+          "calcType": "percent",
+          "increaseMax": true
+        },
+        {
+          "type": "ICE_RES",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_GS"
+      },
+      "slug": "sk_vc_lw_grsr2_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "percent",
+          "increaseMax": true
+        },
+        {
+          "type": "ICE_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_GS_AW"
+      },
+      "slug": "sk_vc_lw_grsr2_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "HP",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "percent",
+          "increaseMax": true
+        },
+        {
+          "type": "ICE_RES",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_GSMAX"
+      },
+      "slug": "sk_vc_lw_grsr2_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_P"
+      },
+      "slug": "sk_vc_lw_grsr2_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_PAW"
+      },
+      "slug": "sk_vc_lw_grsr2_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AOE_RES",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_GRSR2_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_GRSR2_PMAX"
+      },
+      "slug": "sk_vc_lw_grsr2_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_FF4_DMNW": {
+    "dataId": "VC_FF4_DMNW",
+    "names": {
+      "en": "デモンズウォール"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 45,
+        "max": 352
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 34,
+        "max": 132
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 7,
+        "max": 26
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff04ddmnw",
+    "slug": "demonzuuoru",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 3,
+          "maxValue": 6,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GS"
+      },
+      "slug": "sk_vc_ff4_dmnw_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GSAW"
+      },
+      "slug": "sk_vc_ff4_dmnw_gsaw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "PIERCE_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "SLASH_RES",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_GSMAX"
+      },
+      "slug": "sk_vc_ff4_dmnw_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_P"
+      },
+      "slug": "sk_vc_ff4_dmnw_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_PAW"
+      },
+      "slug": "sk_vc_ff4_dmnw_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_FF4_DMNW_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_FF4_DMNW_PMAX"
+      },
+      "slug": "sk_vc_ff4_dmnw_pmax",
+      "maxLevel": 1
+    }
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -5180,7 +5619,8 @@
           "type": "AGI",
           "minValue": -3,
           "maxValue": -3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_IGNT_P",
@@ -5329,7 +5769,8 @@
           "minValue": 2,
           "maxValue": 5,
           "calcType": "percent",
-          "rate": 200
+          "rate": 200,
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BHMT_P",
@@ -5574,7 +6015,8 @@
           "type": "LUCK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_GS",
@@ -5593,7 +6035,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 6,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_GSAW",
@@ -5612,7 +6055,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_P",
@@ -5631,7 +6075,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FAMILY_PAW",
@@ -5753,7 +6198,8 @@
           "type": "AGI",
           "minValue": 5,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "SPR",
@@ -5778,7 +6224,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KTON_PAW",
@@ -5862,7 +6309,8 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_PROPOSE_GS",
@@ -5881,7 +6329,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_PROPOSE_GSAW",
@@ -6047,7 +6496,8 @@
           "type": "LUCK",
           "minValue": 3,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SDLX_P",
@@ -6066,7 +6516,8 @@
           "type": "LUCK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_SDLX_PAW",
@@ -6150,7 +6601,8 @@
           "type": "HP",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GS",
@@ -6169,7 +6621,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TEAPARTY_GSAW",
@@ -6768,7 +7221,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_NEWYEAR_P",
@@ -6787,7 +7241,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_NEWYEAR_PAW",
@@ -7064,7 +7519,8 @@
           "type": "HP",
           "minValue": -15,
           "maxValue": -15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUARD_P",
@@ -7360,7 +7816,8 @@
           "minValue": -10,
           "maxValue": -10,
           "calcType": "percent",
-          "rate": 200
+          "rate": 200,
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_VALE2_P",
@@ -7502,7 +7959,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OCHU_P",
@@ -7521,7 +7979,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OCHU_PAW",
@@ -7537,7 +7996,7 @@
   "VC_LW_ADLD": {
     "dataId": "VC_LW_ADLD",
     "names": {
-      "en": "嫉心の魔術師"
+      "en": "嫉心の魔術師 - Envious Magician"
     },
     "rarity": "MR",
     "stats": {
@@ -7597,7 +8056,7 @@
       "JUMP": {}
     },
     "image": "lapsadld",
-    "slug": "ji-xinno-mo-shu-shi",
+    "slug": "envious-magician",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -7605,7 +8064,8 @@
           "type": "MAG",
           "minValue": 10,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ADLD_GS",
@@ -7624,7 +8084,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ADLD_GS_AW",
@@ -7684,7 +8145,7 @@
   "VC_LW_WHITEDAY1": {
     "dataId": "VC_LW_WHITEDAY1",
     "names": {
-      "en": "見栄の代償"
+      "en": "見栄の代償 - The Perks of Having Charm"
     },
     "rarity": "MR",
     "stats": {
@@ -7744,7 +8205,7 @@
       "JUMP": {}
     },
     "image": "lapswday1",
-    "slug": "jian-rongno-dai-chang",
+    "slug": "the-perks-of-having-charm",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -7827,7 +8288,7 @@
   "VC_LW_VNLA2": {
     "dataId": "VC_LW_VNLA2",
     "names": {
-      "en": "偽りの契り、偽れぬ魂"
+      "en": "偽りの契り、偽れぬ魂 - Deceptive Vows, Honest Souls"
     },
     "rarity": "MR",
     "stats": {
@@ -7887,7 +8348,7 @@
       "JUMP": {}
     },
     "image": "lapsvnla2",
-    "slug": "weirino-qiri-weirenu-hun",
+    "slug": "deceptive-vows-honest-souls",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -8074,7 +8535,8 @@
           "type": "AGI",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV2_P",
@@ -8093,7 +8555,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_MBFF_MV2_PAW",
@@ -8215,7 +8678,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV2_P",
@@ -8234,7 +8698,8 @@
           "type": "MAG",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_FFT_MV2_PAW",
@@ -8497,7 +8962,8 @@
           "type": "HP",
           "minValue": 2,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ORDR_P",
@@ -8516,7 +8982,8 @@
           "type": "HP",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ORDR_PAW",
@@ -8641,7 +9108,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KING_P",
@@ -8660,7 +9128,8 @@
           "type": "ATK",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_KING_PAW",
@@ -8788,7 +9257,8 @@
           "type": "AGI",
           "minValue": -3,
           "maxValue": -3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BLMN_P",
@@ -8931,7 +9401,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUREN_P",
@@ -8950,7 +9421,8 @@
           "type": "AGI",
           "minValue": 1,
           "maxValue": 3,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_GUREN_PAW",
@@ -8960,6 +9432,149 @@
         "en": "SK_VC_LW_GUREN_PAW"
       },
       "slug": "sk_vc_lw_guren_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_CHCB": {
+    "dataId": "VC_LW_CHCB",
+    "names": {
+      "en": "愛しき相棒　チョコボ"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 36,
+        "max": 288
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 72
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 18,
+        "max": 72
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapschcb",
+    "slug": "aisiki-xiang-bang-tiyokobo",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 4,
+          "maxValue": 8,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_LW_CHCB_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CHCB_GS"
+      },
+      "slug": "sk_vc_lw_chcb_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "AGI",
+          "minValue": 1,
+          "maxValue": 2,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_LW_CHCB_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CHCB_GSAW"
+      },
+      "slug": "sk_vc_lw_chcb_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": 2,
+          "maxValue": 7,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_CHCB_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CHCB_P"
+      },
+      "slug": "sk_vc_lw_chcb_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_CHCB_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_CHCB_PAW"
+      },
+      "slug": "sk_vc_lw_chcb_paw",
       "maxLevel": 4
     }
   },
@@ -9053,7 +9668,8 @@
           "type": "AGI",
           "minValue": 4,
           "maxValue": 12,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "DEF",
@@ -9143,7 +9759,8 @@
           "type": "DEX",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ARMN_01_GS",
@@ -9252,7 +9869,8 @@
           "type": "ATK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_ZUUU_GS",
@@ -9381,7 +9999,8 @@
           "type": "AGI",
           "minValue": -5,
           "maxValue": -5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_OGRE_P",
@@ -9568,7 +10187,8 @@
           "type": "HP",
           "minValue": 3,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BYLO_GS",
@@ -9593,7 +10213,8 @@
           "type": "AGI",
           "minValue": -5,
           "maxValue": -5,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_BYLO_P",
@@ -9677,7 +10298,8 @@
           "type": "LUCK",
           "minValue": 5,
           "maxValue": 11,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RART_GS",
@@ -9696,7 +10318,8 @@
           "type": "DEX",
           "minValue": 7,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RART_P",
@@ -9780,7 +10403,8 @@
           "type": "MAG",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RYER_GS",
@@ -10000,7 +10624,8 @@
           "type": "ATK",
           "minValue": 7,
           "maxValue": 15,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_RIRY_GS",
@@ -10103,7 +10728,8 @@
           "type": "ACQUIRED_JP",
           "minValue": 20,
           "maxValue": 50,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
@@ -10122,7 +10748,8 @@
           "type": "ACQUIRED_AP",
           "minValue": 7,
           "maxValue": 20,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_JOBCRYSTAL_P",
@@ -10206,7 +10833,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_LEONIS_GS",
@@ -10309,7 +10937,8 @@
           "type": "DEX",
           "minValue": 3,
           "maxValue": 7,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_HOURN_GS",
@@ -10412,7 +11041,8 @@
           "type": "HP",
           "minValue": 4,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_FENICE_GS",
@@ -10849,13 +11479,15 @@
           "type": "ATK",
           "minValue": 10,
           "maxValue": 30,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         },
         {
           "type": "LUCK",
           "minValue": -10,
           "maxValue": -10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_HOURN2_P",
@@ -11254,7 +11886,8 @@
           "type": "HP",
           "minValue": 4,
           "maxValue": 8,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TRSV_01_GS",
@@ -11357,7 +11990,8 @@
           "type": "ATK",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_TRSV_02_GS",
@@ -11460,7 +12094,8 @@
           "type": "MAG",
           "minValue": 5,
           "maxValue": 10,
-          "calcType": "percent"
+          "calcType": "percent",
+          "increaseMax": true
         }
       ],
       "dataId": "SK_VC_LW_MIRROR_GS",

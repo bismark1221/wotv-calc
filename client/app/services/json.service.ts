@@ -33,6 +33,9 @@ import { default as gl_raid_5 } from         '../../../data/raid/gl/raid_ev_07_0
 import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_02_set.json';
 import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
 import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
+import { default as gl_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as gl_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as gl_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
 
 
 import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
@@ -43,6 +46,9 @@ import { default as jp_raid_5 } from         '../../../data/raid/jp/raid_ev_07_0
 import { default as jp_raid_6 } from         '../../../data/raid/jp/raid_ev_07_02_set.json';
 import { default as jp_raid_7 } from         '../../../data/raid/jp/raid_ev_07_03_set.json';
 import { default as jp_raid_8 } from         '../../../data/raid/jp/raid_ev_07_04_set.json';
+import { default as jp_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as jp_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as jp_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
 
 @Injectable()
 export class JsonService {
@@ -247,19 +253,21 @@ export class JsonService {
     113: "IGNORE_FATAL",
     114: "PHYSIC_EVADE",
     115: "MAGIC_EVADE",
-    116: "CRITIC_BEHIND_GUARENTED",
+    116: "CRITIC_GUARENTED",
     117: "CRITIC_GUARENTED",
-    119: "DARK_KILLER",
-    120: "HUMAN_KILLER",
-    121: "FENNES_KILLER",
-    122: "GENERIC_KILLER",
+    119: "KILLER",
+    120: "KILLER",
+    121: "KILLER",
+    122: "KILLER",
     123: "IMBUE",
-    126: "ON_BASIC_ATTACK",
-    130: "IF_KILL_WITH_MAGIC",
-    134: "BOOST_DAMAGE_AGAINST_METAL",
+    124: "IMMUNE_CT_CHANGE",
+    126: "ON_PHYSIC_ATTACK",
+    130: "ON_MAGIC_ATTACK",
+    134: "KILLER",
     140: "ALL_AILMENTS",
     142: "ALL_DEBUFFS",
     144: "IMBUE",
+    148: "GRADUAL_PETRIFY",
     151: "INITIAL_AP",
     152: "RANGE",
     155: "ACCURACY",
@@ -292,12 +300,9 @@ export class JsonService {
     316: "AP_CONSUMPTION",
     319: "SPIRIT_PENETRATION",
     321: "RES_SLASH_ATK_PENETRATION",
-    329: "RES_MAGIC_ATK_PENETRATION"
+    329: "RES_MAGIC_ATK_PENETRATION",
+    347: "HEAL_POWER"
   }
-
-  forceAddBuff = [
-    126
-  ]
 
   killers = {
     2: "FIRE",
@@ -324,6 +329,11 @@ export class JsonService {
     204: "FENNES",
     301: "FLOAT",
     401: "MALES"
+  }
+
+  conditions = {
+    2: "MALE",
+    19: "BEHIND"
   }
 
   damageEffectType = [
@@ -565,6 +575,7 @@ export class JsonService {
     2: "percent",
     3: "resistance",
     11: "percent",
+    22: "decrease",
     30: "percent",
     31: "dispel",
     32: "dispel",
@@ -612,6 +623,7 @@ export class JsonService {
     "CONFUSION",
     "CHARM",
     "PETRIFY",
+    "GRADUAL_PETRIFY",
     "TOAD",
     "HASTE",
     "SLOW",
@@ -1383,8 +1395,24 @@ export class JsonService {
     }
 
     if (dataSkill.barrier) {
+      let type = dataSkill.eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE"
+      switch (dataSkill.barrier.tar) {
+        case 1:
+          type = type + "_GENERAL"
+          break;
+        case 2:
+          type = type + "_PHYSIC"
+          break;
+        case 3:
+          type = type + "_MAGIC"
+          break;
+        default:
+          console.log("6 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- barrier : " + dataSkill.barrier.tar)
+          break;
+      }
+
       skill.effects.push({
-        type: dataSkill.eff === "ef_com_guard_02" ? "BARRIER" : "REDUCE_DAMAGE",
+        type: type,
         minValue: dataSkill.barrier.scut,
         maxValue: dataSkill.barrier.ecut,
         calcType: "percent",
@@ -1456,6 +1484,7 @@ export class JsonService {
             let finished = false;
             let i = 1;
             let duplicateFinded = false;
+            let needToAddKiller = false;
 
             while (!finished) {
               if (this[this.version].buffs[buff]["type" + i]) {
@@ -1474,13 +1503,18 @@ export class JsonService {
                     console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
                   }
 
-                  if (this.forceAddBuff.indexOf(this[this.version].buffs[buff]["type" + i]) != -1) {
-                    skill.effects.push({
-                      type: this.buffTypes[this[this.version].buffs[buff]["type" + i]]
-                    })
+                  let type = this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+                  if (this[this.version].buffs[buff]["tag" + i]) {
+                    if (type !== "KILLER" && type !== "IMBUE") {
+                      skill.effects.push({
+                        type: type
+                      })
+                    }
+
+                    type = this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER"
                   }
 
-                  let type = this[this.version].buffs[buff]["tag" + i] ? this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER" : this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+
                   let nullifyOrDispel = false;
                   if (this.statsAtkRes.indexOf(type) !== -1) {
                     type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
@@ -1510,13 +1544,27 @@ export class JsonService {
                       calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
                       rate: this[this.version].buffs[buff].rate,
                       turn: this[this.version].buffs[buff].turn,
-                      fromImbue: false
+                      fromImbue: false,
+                      condition: null,
+                      increaseMax: false
                     };
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
                       addedBuff.fromImbue = true;
                     } else {
                       delete addedBuff.fromImbue
+                    }
+
+                    if (this[this.version].buffs[buff].conds) {
+                      addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
+                    } else {
+                      delete addedBuff.condition
+                    }
+
+                    if (this[this.version].buffs[buff]["calc" + i] == 2) {
+                      addedBuff.increaseMax = true
+                    } else {
+                      delete addedBuff.increaseMax
                     }
 
                     skill.effects.push(addedBuff)
@@ -1979,6 +2027,9 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6
       this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7
       this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8
+      this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9
+      this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10
+      this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11
     } else {
       this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1
       this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2
@@ -1988,6 +2039,9 @@ export class JsonService {
       this[this.version].raidMaps[jp_raid_6.wcond.expr] = jp_raid_6
       this[this.version].raidMaps[jp_raid_7.wcond.expr] = jp_raid_7
       this[this.version].raidMaps[jp_raid_8.wcond.expr] = jp_raid_8
+      this[this.version].raidMaps[jp_raid_9.wcond.expr] = jp_raid_9
+      this[this.version].raidMaps[jp_raid_10.wcond.expr] = jp_raid_10
+      this[this.version].raidMaps[jp_raid_11.wcond.expr] = jp_raid_11
     }
 
     Object.keys(this[this.version].raid).forEach(raidId => {
