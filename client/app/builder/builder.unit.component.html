@@ -34,8 +34,8 @@
         <tr>
           <td>
             <div class="unitButtons">
-              <button (click)="resetUnit()">Reset</button>
-              <button (click)="maxUnit()">Max unit</button>
+              <button class="btn btn-available btn-left" (click)="resetUnit()">Reset</button>
+              <button class="btn btn-available btn-right" (click)="maxUnit()">Max unit</button>
             </div>
             <div class="cardIcons">
               <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
@@ -81,10 +81,11 @@
               <div>
                 Level
               </div>
-              <div>
-                <select [(ngModel)]="unit.level" (ngModelChange)="changeLevel()">
-                  <option *ngFor="let level of unit.tableLevels">{{ level }}</option>
-                </select> / {{ unit.maxLevel }}
+              <div ngbDropdown class="dropdownDiv">
+                <button class="btn btn-select" ngbDropdownToggle>{{ unit.level }}</button>
+                <div ngbDropdownMenu class="selectList">
+                  <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem (click)="selectLevel(level)">{{ level }}</button>
+                </div> / {{ unit.maxLevel }}
               </div>
             </div>
 
@@ -92,12 +93,11 @@
               <div>
                 Master Skill Level
               </div>
-              <div>
-                <select [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="changeLevel()">
-                  <option *ngFor="let i of unit.masterSkillLevel" [ngValue]="i">
-                    {{ i + 1 }}
-                  </option>
-                </select>
+              <div ngbDropdown class="dropdownDiv">
+                <button class="btn btn-select" ngbDropdownToggle>{{ unit.masterSkillActivated + 1 }}</button>
+                <div ngbDropdownMenu class="selectList">
+                  <button *ngFor="let level of unit.masterSkillLevel" class="selectLevel" ngbDropdownItem (click)="selectMasterSkillLevel(level)">{{ level + 1 }}</button>
+                </div>
               </div>
             </div>
 
@@ -105,18 +105,17 @@
               <div>
                 Limit Level
               </div>
-              <div>
-                <select [(ngModel)]="unit.limit.level" (ngModelChange)="changeLimit()">
-                  <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [ngValue]="i">
-                    {{ i }}
-                  </option>
-                </select>
+              <div ngbDropdown class="dropdownDiv">
+                <button class="btn btn-select" ngbDropdownToggle>{{ unit.limit.level + 1 }}</button>
+                <div ngbDropdownMenu class="selectList">
+                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" ngbDropdownItem (click)="selectLimitLevel(level)">{{ level + 1 }}</button>
+                </div>
               </div>
             </div>
 
             <div>
-              <button (click)="resetLevel()" class="maxLevelButton">Reset level</button>
-              <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max level</button>
+              <button class="btn btn-available btn-left" (click)="resetLevel()">Reset level</button>
+              <button class="btn btn-available btn-right" (click)="maxLevelAndJobs()">Max level</button>
             </div>
           </td>
         </tr>
@@ -125,16 +124,19 @@
         </tr>
         <tr>
           <td>
-            <div *ngFor="let i of [0, 1, 2]" class="jobDiv">
+            <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
               <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
-              <select *ngIf="unit.jobsData[i].unlocked" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="changeLevel()">
-                <option *ngFor="let level of unit.tableJobLevels">{{ level }}</option>
-              </select>
-              <select *ngIf="!unit.jobsData[i].unlocked"></select>
+
+              <div ngbDropdown class="dropdownDiv">
+                <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
+                <div ngbDropdownMenu class="selectList">
+                  <button *ngFor="let level of unit.tableJobLevels" class="selectLevel" ngbDropdownItem (click)="selectJobLevel(i, level)">{{ level }}</button>
+                </div>
+              </div>
             </div>
-            <div>
-              <button (click)="resetJob()" class="maxLevelButton">Reset Jobs</button>
-              <button (click)="maxLevelAndJobs()" class="maxLevelButton">Max Jobs</button>
+            <div class="jobsButton">
+              <button class="btn btn-available btn-left" (click)="resetJob()">Reset Jobs</button>
+              <button class="btn btn-available btn-right" (click)="maxLevelAndJobs()">Max Jobs</button>
             </div>
           </td>
         </tr>
@@ -142,16 +144,11 @@
           <th class="sub">Sub Job</th>
         </tr>
         <tr>
-          <td>
-            <div *ngFor="let i of [0, 1, 2]" class="jobDiv">
+          <td class="subJobColumn">
+            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" (click)="changeSubJob(i)">
               <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
               {{ unit.jobsData[i].name }}
             </div>
-            <select [(ngModel)]="unit.subjob" (ngModelChange)="changeSubJob()">
-              <option *ngFor="let i of [0, 1, 2]" [ngValue]="i">
-                {{ unit.jobsData[i].name }}
-              </option>
-            </select>
           </td>
         </tr>
         <tr>
@@ -172,7 +169,7 @@
               </ng-select>
               <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
                 <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
-                <button (click)="showEquipmentDetail(0)">Custom</button>
+                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(0)">Custom</button>
               </div>
               <div *ngIf="!selectedEquipments[0]">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -193,7 +190,7 @@
 
               <div *ngIf="selectedEquipmentsIds[1]">
                 <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
-                <button (click)="showEquipmentDetail(1)">Custom</button>
+                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(1)">Custom</button>
               </div>
               <div *ngIf="!selectedEquipmentsIds[1]">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -219,7 +216,7 @@
 
               <div *ngIf="selectedEquipmentsIds[2]">
                 <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
-                <button (click)="showEquipmentDetail(2)">Custom</button>
+                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(2)">Custom</button>
               </div>
               <div *ngIf="!selectedEquipmentsIds[2]">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -255,7 +252,7 @@
                 <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
                   <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
                 </select><br />
-                <button (click)="showEsperDetail()">Custom</button>
+                <button class="btn btn-available btn-esper" (click)="showEsperDetail()">Custom</button>
               </div>
 
               <div *ngIf="!esper">
@@ -277,7 +274,7 @@
 
               <div *ngIf="card">
                 <img src="{{'assets/cards/' + card.image + '_m.png'}}" class="cardImg"/>
-                <button (click)="showCardDetail()">Custom</button>
+                <button class="btn btn-available btn-card" (click)="showCardDetail()">Custom</button>
               </div>
 
               <div *ngIf="!card">
@@ -291,12 +288,14 @@
         </tr>
         <tr *ngFor="let i of [0, 1]">
           <td>
-            <select [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="changeLevel()" class="supportSelect">
-              <option value="0"></option>
-              <option *ngFor="let node of getAvailableSupportNodes(i)" [ngValue]="node.nodeId">
-                {{ node.name }}
-              </option>
-            </select>
+            <div ngbDropdown class="dropdownFull">
+              <button class="btn btn-select" ngbDropdownToggle>
+                {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
+              </button>
+              <div ngbDropdownMenu class="selectList">
+                <button *ngFor="let node of getAvailableSupportNodes(i)" class="selectLevel" ngbDropdownItem (click)="selectSupportSkill(i, node.nodeId)">{{ node.name }}</button>
+              </div>
+            </div>
           </td>
         </tr>
         <tr>
@@ -304,12 +303,14 @@
         </tr>
         <tr>
           <td>
-            <select [(ngModel)]="unit.activatedCounter" (ngModelChange)="changeCounter()" class="counterSelect">
-              <option value="0"></option>
-              <option *ngFor="let node of getAvailableCounterNodes()" [ngValue]="node.nodeId">
-                {{ node.name }}
-              </option>
-            </select>
+            <div ngbDropdown class="dropdownFull">
+              <button class="btn btn-select" ngbDropdownToggle>
+                {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
+              </button>
+              <div ngbDropdownMenu class="selectList">
+                <button *ngFor="let node of getAvailableCounterNodes()" class="selectLevel" ngbDropdownItem (click)="selectCounterSkill(node.nodeId)">{{ node.name }}</button>
+              </div>
+            </div>
           </td>
         </tr>
         <tr>
@@ -319,10 +320,10 @@
           <td>
             <div *ngFor="let statue of statueNames" class="guildDiv">
               <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
-              {{ unit.guild[statue] }}
+              {{ unit.guild.data[statue] }}
             </div>
             <div>
-              <button (click)="showGuildDetail()">Custom</button>
+              <button class="btn btn-available btn-guild" (click)="showGuildDetail()">Custom</button>
             </div>
           </td>
         </tr>

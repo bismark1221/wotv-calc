@@ -362,6 +362,36 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
+  selectLevel(level) {
+    this.unit.level = level
+    this.changeLevel()
+  }
+
+  selectMasterSkillLevel(level) {
+    this.unit.masterSkillActivated = level
+    this.changeLevel()
+  }
+
+  selectLimitLevel(level) {
+    this.unit.limit.level = level
+    this.changeLimit()
+  }
+
+  selectJobLevel(job, level) {
+    this.unit.jobsData[job].level = level
+    this.changeLevel()
+  }
+
+  selectSupportSkill(pos, nodeId) {
+    this.unit.activatedSupport[pos] = nodeId
+    this.changeLevel()
+  }
+
+  selectCounterSkill(nodeId) {
+    this.unit.activatedCounter = nodeId
+    this.changeCounter()
+  }
+
   changeLevel() {
     this.unitService.changeLevel()
     this.unitService.getActiveSkills()
@@ -482,8 +512,11 @@ export class BuilderUnitComponent implements OnInit {
     this.clipboardService.copyFromContent(this.exportableLink)
   }
 
-  changeSubJob() {
-    this.unitService.getActiveSkills()
+  changeSubJob(subjob) {
+    if (this.unit.jobsData[subjob].unlocked && subjob != this.unit.subjob){
+      this.unit.subjob = subjob
+      this.unitService.getActiveSkills()
+    }
   }
 
   changeLimit() {

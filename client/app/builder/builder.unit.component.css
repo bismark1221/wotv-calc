@@ -82,12 +82,8 @@
   width: 95px;
 }
 
-.masterSkillDiv div:last-child {
-  padding-right: 51px;
-}
-
-.limitDiv div:last-child {
-  padding-right: 42px;
+.masterSkillDiv div:last-child, .limitDiv div:last-child {
+  padding-right: 38px;
 }
 
 .star {
@@ -119,9 +115,42 @@
 }
 
 .jobDiv {
-  width: 33%;
+  width: 72px;
   display: inline-block;
   vertical-align: top;
+  margin-right: 5px;
+}
+
+.lastJobDiv {
+  margin: 0px;
+}
+
+.subJobColumn .jobDiv {
+  padding: 5px;
+}
+
+.subjobDiv {
+  border: 2px solid transparent;
+}
+
+.selectedSubJob, .subjobDiv:hover {
+  cursor: pointer;
+  border: 2px solid #72767A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subJobColumn .subjobDisable {
+  border: 2px solid transparent !important;
+}
+
+.subjobDisable {
+  opacity: 0.2;
+  cursor: default !important;
+}
+
+.jobsButton {
+  margin-top: 5px;
 }
 
 .mainJob {
@@ -171,6 +200,102 @@
 .statueImg {
   width: 50px;
 }
+
+.btn {
+  padding: 6px;
+}
+
+.btn-available {
+  color: #fff;
+  background-color: #6D757D;
+  border-color: #6D757D;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.btn-disable {
+  color: rgba(29, 27, 27, 0.2);
+  background-color: #FAFAFA;
+  border-color: #FAFAFA;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.btn-selected {
+  color: #fff;
+  background-color: #157FFB;
+  border-color: #157FFB;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.btn-esper, .btn-card {
+  width: 110px;
+}
+
+.btn-equipment {
+  width: 70px;
+}
+
+.btn-guild {
+  width: 100%;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.dropdownFull {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-select {
+  background: #F5F6F8;
+  border-radius: 2px;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 50px;
+}
+
+.dropdownFull .btn-select {
+  width: 100%;
+}
+
+.dropdown-menu {
+  max-height: 200px;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
