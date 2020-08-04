@@ -276,6 +276,24 @@ small {
 /* Grid */
 .esperGridContainer {
   margin: auto;
+  height: 600px;
+  width: 800px;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 50px;
+}
+
+.unitGridContainer {
+  margin: auto;
+  height: 650px;
+  width: 800px;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 50px;
+}
+
+.builderEsperGridContainer {
+  margin: auto;
   height: 720px;
   width: 1000px;
   position: relative;
@@ -283,7 +301,7 @@ small {
   left: 50px;
 }
 
-.unitGridContainer {
+.builderUnitGridContainer {
   margin: auto;
   height: 800px;
   width: 1000px;
@@ -463,6 +481,10 @@ small {
 
 .hex .fullIcon img {
   width: 100px;
+}
+
+.hex .text {
+  padding: 5px;
 }
 
 .modal-dialog {

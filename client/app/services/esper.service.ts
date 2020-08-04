@@ -399,7 +399,7 @@ export class EsperService {
     this.updateMaxLevel();
     this.changeLevel();
     this.updateEsperBuffs();
-    this.esper.grid = this.gridService.generateEsperGrid(this.esper)
+    this.esper.grid = this.gridService.generateEsperGrid(this.esper, 1000)
 
     return this.esper
   }

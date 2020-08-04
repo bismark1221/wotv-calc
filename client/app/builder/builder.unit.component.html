@@ -628,10 +628,8 @@
       </tbody>
     </table>
     <button (click)="showHideDetail('Active')">Show active skills</button>
-  </div>
 
-  <div class="row" *ngIf="unit">
-    <div class="unitGridContainer" style="text-align: center;">
+    <div class="builderUnitGridContainer" style="text-align: center;">
       <ul class="hexGrid" oncontextmenu="return false;">
         <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
           <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>

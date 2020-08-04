@@ -139,7 +139,28 @@
   <li [ngbNavItem]="2">
     <a ngbNavLink>SKILL TREE</a>
     <ng-template ngbNavContent #tree>
-      <div class="row" *ngIf="esper && grid">
+      <div class="leftBlock" *ngIf="esper">
+        <table class="esperTable">
+          <tbody>
+            <tr>
+              <th colspan="2">{{ esper.name }}</th>
+            </tr>
+            <tr>
+              <td colspan="2"><img class="esperImg" src="{{'assets/units/' + esper.image + '_m.png'}}" /></td>
+            </tr>
+            <tr>
+              <th class="sub">Rarity</th>
+              <th class="sub">Element</th>
+            </tr>
+            <tr>
+              <td><img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" /></td>
+              <td><img class="rarityImg" src="{{'assets/elements/' + esper.element + '.png'}}" (click)="clickSpecialBismark()"/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rightBlock" *ngIf="esper && grid">
         <div class="esperGridContainer" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
@@ -151,7 +172,6 @@
 
               <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
                 <span class="text">{{ grid.nodesForGrid[node].value }}</span>
-                <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
               </div>
             </li>
           </ul>

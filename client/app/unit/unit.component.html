@@ -626,7 +626,65 @@
   <li [ngbNavItem]="4">
     <a ngbNavLink>SKILL TREE</a>
     <ng-template ngbNavContent #tree>
-      <div *ngIf="unit && grid">
+      <div class="leftBlock" *ngIf="!specialBismark && unit">
+        <table class="unitTable">
+          <tbody>
+            <tr>
+              <th colspan="6">{{ unit.name }}</th>
+            </tr>
+            <tr>
+              <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '.png'}}" /></td>
+            </tr>
+            <tr>
+              <th class="sub" colspan="3">Rarity</th>
+              <th class="sub" colspan="3">Element</th>
+            </tr>
+            <tr>
+              <td colspan="3"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" /></td>
+              <td colspan="3"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" /></td>
+            </tr>
+            <tr>
+              <th class="sub" colspan="3">Move</th>
+              <th class="sub" colspan="3">Jump</th>
+            </tr>
+            <tr>
+              <td colspan="3" class="bigText">{{ unit.stats.MOVE.min }}</td>
+              <td colspan="3" class="bigText">{{ unit.stats.JUMP.min }}</td>
+            </tr>
+            <tr>
+              <th class="sub" colspan="6">Jobs</th>
+            </tr>
+            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+              <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
+                <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                {{ jobs[i].name }}
+              </td>
+            </tr>
+            <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
+              <th class="sub" colspan="6">Weapons</th>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
+                  <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="sub" colspan="6">Armors</th>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
+                  <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rightBlock" *ngIf="unit && grid">
         <div class="unitGridContainer" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">

@@ -76,7 +76,7 @@ export class EsperComponent implements OnInit {
         })
       })
 
-      this.grid = this.gridService.generateEsperGrid(this.esper)
+      this.grid = this.gridService.generateEsperGrid(this.esper, 800)
     }
   }
 

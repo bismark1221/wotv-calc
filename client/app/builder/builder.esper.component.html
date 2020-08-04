@@ -97,7 +97,7 @@
 </div>
 
 <div class="row" *ngIf="esper && esper.grid">
-  <div class="esperGridContainer" style="text-align: center;">
+  <div class="builderEsperGridContainer" style="text-align: center;">
     <ul class="hexGrid" oncontextmenu="return false;">
       <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
         <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>

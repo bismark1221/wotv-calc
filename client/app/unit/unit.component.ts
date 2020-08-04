@@ -163,7 +163,7 @@ export class UnitComponent implements OnInit {
         i++
       })
 
-      this.grid = this.gridService.generateUnitGrid(this.unit)
+      this.grid = this.gridService.generateUnitGrid(this.unit, 800)
     }
   }
 

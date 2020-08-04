@@ -490,7 +490,7 @@ export class UnitService {
 
     this.initiateSavedUnit(customData)
 
-    this.unit.grid = this.gridService.generateUnitGrid(this.unit)
+    this.unit.grid = this.gridService.generateUnitGrid(this.unit, 1000)
 
     this.unit.updateMaxLevel();
     this.unit.updateMaxJobLevel();

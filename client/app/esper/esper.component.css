@@ -11,6 +11,7 @@
   height: 55px;
   position: fixed;
   width: 100%;
+  z-index: 20;
 }
 
 .nav-tabs .nav-item {
