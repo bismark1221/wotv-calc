@@ -337,7 +337,7 @@ export class EquipmentService {
       equipments.forEach(equipment => {
         if ((filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
           && (filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
-          && (filters.acquisition.length == 0 || filters.acquisition.indexOf(equipment.acquisition.type) != -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) != -1)
+          && (!filters.acquisition || filters.acquisition.length == 0 || filters.acquisition.indexOf(equipment.acquisition.type) != -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) != -1)
         ) {
           filteredEquipments.push(equipment)
         }

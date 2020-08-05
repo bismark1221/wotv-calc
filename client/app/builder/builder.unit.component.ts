@@ -18,6 +18,8 @@ import { BuilderCardComponent } from './builder.card.component';
 import { BuilderEquipmentComponent } from './builder.equipment.component';
 import { BuilderGuildComponent } from './builder.guild.component';
 
+import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
+
 @Component({
   selector: 'app-builder-unit',
   templateUrl: './builder.unit.component.html',
@@ -279,8 +281,6 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
     }
-
-    console.log(this.unit)
   }
 
   selectEsper(customData = null) {
@@ -360,36 +360,6 @@ export class BuilderUnitComponent implements OnInit {
     for (let i = 0; i <= 2; i++) {
       this.getAvailableEquipments(i)
     }
-  }
-
-  selectLevel(level) {
-    this.unit.level = level
-    this.changeLevel()
-  }
-
-  selectMasterSkillLevel(level) {
-    this.unit.masterSkillActivated = level
-    this.changeLevel()
-  }
-
-  selectLimitLevel(level) {
-    this.unit.limit.level = level
-    this.changeLimit()
-  }
-
-  selectJobLevel(job, level) {
-    this.unit.jobsData[job].level = level
-    this.changeLevel()
-  }
-
-  selectSupportSkill(pos, nodeId) {
-    this.unit.activatedSupport[pos] = nodeId
-    this.changeLevel()
-  }
-
-  selectCounterSkill(nodeId) {
-    this.unit.activatedCounter = nodeId
-    this.changeCounter()
   }
 
   changeLevel() {
@@ -495,6 +465,16 @@ export class BuilderUnitComponent implements OnInit {
     });
   }
 
+  openEquipmentsModal() {
+    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'options-modal' });
+
+    modalRef.result.then((result) => {
+      console.log(result)
+    }, (reason) => {
+      console.log(reason)
+    });
+  }
+
   openLinkModal(content) {
     this.unitService.getExportableLink().subscribe((data: any) => {
       this.exportableLink = data.shorturl;
@@ -512,11 +492,8 @@ export class BuilderUnitComponent implements OnInit {
     this.clipboardService.copyFromContent(this.exportableLink)
   }
 
-  changeSubJob(subjob) {
-    if (this.unit.jobsData[subjob].unlocked && subjob != this.unit.subjob){
-      this.unit.subjob = subjob
-      this.unitService.getActiveSkills()
-    }
+  changeSubJob() {
+    this.unitService.getActiveSkills()
   }
 
   changeLimit() {
