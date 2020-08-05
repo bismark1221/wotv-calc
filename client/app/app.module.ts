@@ -52,8 +52,6 @@ import { BuilderEquipmentComponent } from './builder/builder.equipment.component
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
 
-import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
-
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
@@ -102,8 +100,7 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderEsperComponent,
     BuilderEquipmentComponent,
     BuilderGuildComponent,
-    BuilderTeamComponent,
-    ModalEquipmentsComponent
+    BuilderTeamComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

@@ -107,37 +107,8 @@
               <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
               <button (click)="showEquipmentDetail(1)">Custom</button>
             </div>
-<<<<<<< Updated upstream
             <div *ngIf="!selectedEquipmentsIds[1]">
               <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
-=======
-          </td>
-        </tr>
-        <tr>
-          <th class="sub">Equipments</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="equipmentDiv">
-              Slot 1
-              <button (click)="openEquipmentsModal()">OPEN</button>
-              <ng-select [items]="equipments[0]"
-                         bindLabel="name"
-                         bindValue="dataId"
-                         groupBy="rarity"
-                         placeholder="Equipment 1"
-                         [(ngModel)]="selectedEquipmentsIds[0]"
-                         (ngModelChange)="selectEquipment(0)"
-                         class="selectEquipment">
-              </ng-select>
-              <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
-                <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
-                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(0)">Custom</button>
-              </div>
-              <div *ngIf="!selectedEquipments[0]">
-                <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
-              </div>
->>>>>>> Stashed changes
             </div>
           </div>
 
@@ -217,65 +188,11 @@
             <button (click)="showCardDetail()">Custom</button>
           </div>
 
-<<<<<<< Updated upstream
           <div *ngIf="!card">
             <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
           </div>
         </td>
       </tr>
-=======
-              <div *ngIf="!card">
-                <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th class="sub">Support Skills</th>
-        </tr>
-        <tr *ngFor="let i of [0, 1]">
-          <td>
-            <div ngbDropdown class="dropdownFull">
-              <button class="btn btn-select" ngbDropdownToggle>
-                {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
-              </button>
-              <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableSupportNodes(i)" class="selectLevel" ngbDropdownItem (click)="selectSupportSkill(i, node.nodeId)">{{ node.name }}</button>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th class="sub">Counter Skill</th>
-        </tr>
-        <tr>
-          <td>
-            <div ngbDropdown class="dropdownFull">
-              <button class="btn btn-select" ngbDropdownToggle>
-                {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
-              </button>
-              <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableCounterNodes()" class="selectLevel" ngbDropdownItem (click)="selectCounterSkill(node.nodeId)">{{ node.name }}</button>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th class="sub">Guild</th>
-        </tr>
-        <tr>
-          <td>
-            <div *ngFor="let statue of statueNames" class="guildDiv">
-              <img class="statueImg" src="{{ 'assets/statues/' + statue + '.png' }}"/>
-              {{ unit.guild.data[statue] }}
-            </div>
-            <div>
-              <button class="btn btn-available btn-guild" (click)="showGuildDetail()">Custom</button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
->>>>>>> Stashed changes
     </table>
   </div>
 
