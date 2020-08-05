@@ -311,7 +311,7 @@ export class EquipmentService {
     return equipments
   }
 
-  getEquipmentsForListing(filters, sort, order = "asc") {
+  getEquipmentsForListing(filters, sort = "rarity", order = "asc") {
     this.getEquipments();
     this.equipments = this.filterEquipments(this.equipments, filters);
 

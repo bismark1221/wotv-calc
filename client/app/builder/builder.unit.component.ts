@@ -18,6 +18,8 @@ import { BuilderCardComponent } from './builder.card.component';
 import { BuilderEquipmentComponent } from './builder.equipment.component';
 import { BuilderGuildComponent } from './builder.guild.component';
 
+import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
+
 @Component({
   selector: 'app-builder-unit',
   templateUrl: './builder.unit.component.html',
@@ -460,6 +462,16 @@ export class BuilderUnitComponent implements OnInit {
       this.unitService.changeLevel()
     }, (reason) => {
       this.unitService.changeLevel()
+    });
+  }
+
+  openEquipmentsModal() {
+    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'options-modal' });
+
+    modalRef.result.then((result) => {
+      console.log(result)
+    }, (reason) => {
+      console.log(reason)
     });
   }
 

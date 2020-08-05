@@ -302,6 +302,9 @@
             "type": "strike",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -657,6 +660,9 @@
             "type": "strike",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -842,7 +848,7 @@
             },
             "slug": "zui-dahpdaun-wu-xiao",
             "maxLevel": 80,
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_BTL_HIT_1_999_U": {
             "effects": [
@@ -860,7 +866,7 @@
             },
             "slug": "ming-zhong1-999atupu",
             "maxLevel": 80,
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_WRMC_M_01": {
             "effects": [
@@ -902,7 +908,7 @@
               "type": "missile",
               "effType": "DAMAGE"
             },
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_WRMC_M_02": {
             "effects": [
@@ -951,7 +957,7 @@
             "elem": [
               "fire"
             ],
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_WRMC_M_03": {
             "effects": [],
@@ -989,7 +995,7 @@
             "elem": [
               "fire"
             ],
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_BTL_INV_CTDOWN": {
             "effects": [
@@ -1005,7 +1011,7 @@
             },
             "slug": "ct-bian-dong-wu-xiao",
             "maxLevel": 80,
-            "minLevel": 61
+            "minLevel": 1
           },
           "SK_BTL_DONMV_1-100_D": {
             "effects": [
@@ -1024,7 +1030,7 @@
             },
             "slug": "zhuang-tai-yi-chang-donmubu-que-lu1-100daun",
             "maxLevel": 80,
-            "minLevel": 61
+            "minLevel": 1
           }
         },
         "slug": "death-machine",
@@ -1040,6 +1046,9 @@
             "type": "missile",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -1230,6 +1239,9 @@
             "type": "strike",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -1409,6 +1421,9 @@
             "type": "pierce",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -1597,6 +1612,9 @@
             "type": "strike",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {
@@ -1776,6 +1794,9 @@
             "type": "pierce",
             "effType": "DAMAGE"
           },
+          "elem": [
+            "neutral"
+          ],
           "slug": "tong-chang-gong-ji",
           "maxLevel": 20,
           "range": {

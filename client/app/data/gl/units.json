@@ -142281,6 +142281,9 @@
         "type": "slash",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {
@@ -144547,6 +144550,9 @@
         "type": "magic",
         "effType": "DAMAGE"
       },
+      "elem": [
+        "neutral"
+      ],
       "slug": "normal-attack",
       "maxLevel": 20,
       "range": {

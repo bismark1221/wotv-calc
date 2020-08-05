@@ -107,9 +107,76 @@ tr.disable {
 .rightBlock {
   width: 70%;
   display: inline-block;
+<<<<<<< Updated upstream
   vertical-align: top;
   padding-left: 15px;
   margin: auto;
+=======
+  width: 100%;
+}
+
+.btn-select {
+  background: #F5F6F8;
+  border-radius: 2px;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 50px;
+}
+
+.dropdownFull .btn-select {
+  width: 100%;
+}
+
+.dropdown-menu {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.selectListFull {
+  width: 232px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.statsTable {
+  width: 1000px;
+}
+
+.unitsCol {
+  width: 200px;
+}
+
+tr.disable {
+  display: none;
+}
+
+
+
+.buffImg {
+  width: 40px;
+>>>>>>> Stashed changes
 }
 
 .upperBlock {

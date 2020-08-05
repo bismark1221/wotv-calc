@@ -1659,8 +1659,10 @@ export class JsonService {
         attack.damage.minValue = 0
         attack.damage.maxValue = 0
         attack.elem = ["neutral"]
-      } else if (attack.elem.length == 0) {
-        delete(attack.elem)
+      }
+
+      if (attack.elem.length == 0) {
+        attack.elem = ["neutral"]
       }
 
       unit.attack = attack
