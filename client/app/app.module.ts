@@ -20,7 +20,6 @@ import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 
-
 import { AppRoutingModule } from './app-routing.module';
 
 import { SentryErrorHandler } from './sentry.errorHandler';
@@ -52,6 +51,8 @@ import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
+
+import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -101,7 +102,8 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderEsperComponent,
     BuilderEquipmentComponent,
     BuilderGuildComponent,
-    BuilderTeamComponent
+    BuilderTeamComponent,
+    ModalEquipmentsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

@@ -1,0 +1,34 @@
+<div class="equipments">
+  <div class="upperBlock">
+    <div class="searchBlock">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
+    </div>
+    <div class="filtersBlock">
+      <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
+      <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
+      <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
+      <div><input type="checkbox" (change)="filterList('rarity', 'R', $event.target.checked)"/>R</div>
+      <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
+
+      <div><input type="checkbox" (change)="filterList('type', 'weapon', $event.target.checked)"/>Weapon</div>
+      <div><input type="checkbox" (change)="filterList('type', 'armor', $event.target.checked)"/>Armor</div>
+      <div><input type="checkbox" (change)="filterList('type', 'acc', $event.target.checked)"/>Accessory</div>
+    </div>
+  </div>
+  <div class="equipmentsList">
+    <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
+      <a [routerLink]="[getRoute('/equipment/' + equipment.slug)]" [routerLinkActive]="['active']">
+        <div class="cardIcons">
+          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+        </div>
+        <div>
+          <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+        </div>
+        <div class="cardTitle">
+          <span class="equipmentName">{{ equipment.name }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
