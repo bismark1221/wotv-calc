@@ -488,17 +488,19 @@ export class UnitService {
 
     this.unit.guild = this.guildService.getGuildForBuilder()
 
-    this.initiateSavedUnit(customData)
+    let existingUnit = this.initiateSavedUnit(customData)
 
     this.unit.grid = this.gridService.generateUnitGrid(this.unit)
 
     this.unit.updateMaxLevel();
     this.unit.updateMaxJobLevel();
 
-    this.unit.maxUnit()
-    this.unit.activateMasterSkill();
+    if (!existingUnit) {
+      this.unit.maxUnit()
+      this.unit.activateMasterSkill();
+    }
 
-    this.unit.changeLevel(customData ? false : true);
+    this.unit.changeLevel(customData || existingUnit ? false : true);
 
     return this.unit
   }
@@ -575,7 +577,11 @@ export class UnitService {
       if (unit.guild) {
         this.unit.savedGuild = unit.guild
       }
+
+      return true
     }
+
+    return false
   }
 
   changeStar() {
