@@ -1,3 +1,14 @@
+<div class="titleBlock">
+  <div class="title">
+    EQUIPEMENTS
+  </div>
+  <div class="closeButton">
+    <button type="button" class="close" aria-label="Close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+
 <div class="equipments">
   <div class="upperBlock">
     <div class="searchBlock">
@@ -5,19 +16,39 @@
       <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
     </div>
     <div class="filtersBlock">
-      <button class="btn" (click)="filterList('rarity', 'UR')">UR</button>
-      <button class="btn" (click)="filterList('rarity', 'MR')">MR</button>
-      <button class="btn" (click)="filterList('rarity', 'SR')">SR</button>
-      <button class="btn" (click)="filterList('rarity', 'R')">R</button>
-      <button class="btn" (click)="filterList('rarity', 'N')">N</button>
-      <button class="btn" (click)="filterList('type', 'weapon')">Weapon</button>
-      <button class="btn" (click)="filterList('type', 'armor')">Armor</button>
-      <button class="btn" (click)="filterList('type', 'acc')">Accessory</button>
+      Filter by :
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
+        <img class="filterRarity" src="assets/rarity/UR.png" />
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
+        <img class="filterRarity" src="assets/rarity/MR.png" />
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
+        <img class="filterRarity" src="assets/rarity/SR.png" />
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'R')}" (click)="filterList('rarity', 'R')">
+        <img class="filterRarity" src="assets/rarity/R.png" />
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'N')}" (click)="filterList('rarity', 'N')">
+        <img class="filterRarity" src="assets/rarity/N.png" />
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'weapon')}" (click)="filterList('category', 'weapon')">
+        Weapon
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'armor')}" (click)="filterList('category', 'armor')">
+        Armor
+      </button>
+      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'acc')}" (click)="filterList('category', 'acc')">
+        Accessory
+      </button>
     </div>
   </div>
+
+  <hr class="separator" />
+
   <div class="equipmentsList">
     <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
-      <a>
+      <a (click)="selectEquipment(equipment)">
         <div class="cardIcons">
           <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
         </div>

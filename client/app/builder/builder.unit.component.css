@@ -221,6 +221,7 @@
   height: 30px;
   line-height: 10px;
   border-radius: 2px;
+  cursor: initial;
 }
 
 .btn-selected {
@@ -284,7 +285,11 @@
   width: 232px;
 }
 
-
+.equipmentPointer {
+  cursor: pointer;
+  width: 70px;
+  margin: auto;
+}
 
 
 

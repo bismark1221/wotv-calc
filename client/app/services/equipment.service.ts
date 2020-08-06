@@ -335,9 +335,10 @@ export class EquipmentService {
       let filteredEquipments = []
 
       equipments.forEach(equipment => {
-        if ((filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
-          && (filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
+        if ((!filters.type || filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
+          && (!filters.rarity || filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
           && (!filters.acquisition || filters.acquisition.length == 0 || filters.acquisition.indexOf(equipment.acquisition.type) != -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) != -1)
+          && (!filters.category || filters.category.length == 0 || filters.category.length == 3 || (filters.category.indexOf("acc") != -1 && equipment.type == "ACC") || (filters.category.indexOf("weapon") != -1 && this.isWeapon(equipment.type)) || (filters.category.indexOf("armor") != -1 && this.isArmor(equipment.type, true)))
         ) {
           filteredEquipments.push(equipment)
         }
@@ -365,8 +366,8 @@ export class EquipmentService {
     return this.weaponTypes.indexOf(type) !== -1 ? true : false;
   }
 
-  isArmor(type) {
-    return this.armorTypes.indexOf(type) !== -1 ? true : false;
+  isArmor(type, excludeAcc = false) {
+    return this.armorTypes.indexOf(type) !== -1 && (!excludeAcc || (excludeAcc && type !== "ACC")) ? true : false;
   }
 
   getFormatType(type) {

@@ -158,75 +158,47 @@
           <td>
             <div class="equipmentDiv">
               Slot 1
-              <button (click)="openEquipmentsModal()">OPEN</button>
-              <ng-select [items]="equipments[0]"
-                         bindLabel="name"
-                         bindValue="dataId"
-                         groupBy="rarity"
-                         placeholder="Equipment 1"
-                         [(ngModel)]="selectedEquipmentsIds[0]"
-                         (ngModelChange)="selectEquipment(0)"
-                         class="selectEquipment">
-              </ng-select>
-              <div *ngIf="unit && unit.equipments && selectedEquipments[0]">
+              <div *ngIf="unit && unit.equipments && unit.equipments[0]" (click)="openEquipmentsModal(0)" class="equipmentPointer">
                 <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
-                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(0)">Custom</button>
               </div>
-              <div *ngIf="!selectedEquipments[0]">
+              <div *ngIf="!unit.equipments || !unit.equipments[0]" (click)="openEquipmentsModal(0)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[0], 'btn-disable': !unit.equipments || !unit.equipments[0]}" (click)="unit && unit.equipments && unit.equipments[0] ? showEquipmentDetail(0) : false">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
               Slot 2
-              <ng-select [items]="equipments[1]"
-                         bindLabel="name"
-                         bindValue="dataId"
-                         groupBy="rarity"
-                         placeholder="Equipment 2"
-                         [(ngModel)]="selectedEquipmentsIds[1]"
-                         (ngModelChange)="selectEquipment(1)"
-                         class="selectEquipment">
-              </ng-select>
-
-              <div *ngIf="selectedEquipmentsIds[1]">
+              <div *ngIf="unit && unit.equipments && unit.equipments[1]" (click)="openEquipmentsModal(1)" class="equipmentPointer">
                 <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
-                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(1)">Custom</button>
               </div>
-              <div *ngIf="!selectedEquipmentsIds[1]">
+              <div *ngIf="!unit.equipments || !unit.equipments[1]" (click)="openEquipmentsModal(1)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[1], 'btn-disable': !unit.equipments || !unit.equipments[1]}" (click)="unit && unit.equipments && unit.equipments[1] ? showEquipmentDetail(1) : false">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && (unit.lb < 2 || !unit.lb)">
               Slot 2
               <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+              <button class="btn btn-disable btn-equipment">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && unit.lb >= 4">
               TMR
-              <ng-select [items]="equipments[2]"
-                         bindLabel="name"
-                         bindValue="dataId"
-                         groupBy="rarity"
-                         placeholder="Equipment 3"
-                         [(ngModel)]="selectedEquipmentsIds[2]"
-                         (ngModelChange)="selectEquipment(2)"
-                         class="selectEquipment">
-              </ng-select>
-
-              <div *ngIf="selectedEquipmentsIds[2]">
+              <div *ngIf="unit && unit.equipments && unit.equipments[2]" (click)="openEquipmentsModal(2)" class="equipmentPointer">
                 <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
-                <button class="btn btn-available btn-equipment" (click)="showEquipmentDetail(2)">Custom</button>
               </div>
-              <div *ngIf="!selectedEquipmentsIds[2]">
+              <div *ngIf="!unit.equipments || !unit.equipments[2]" (click)="openEquipmentsModal(2)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[2], 'btn-disable': !unit.equipments || !unit.equipments[2]}" (click)="unit && unit.equipments && unit.equipments[2] ? showEquipmentDetail(2) : false">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && (unit.lb < 4 || !unit.lb)">
               TMR
               <img src="{{'assets/builder/lock_artifact.png'}}" class="equipmentImg"/>
+              <button class="btn btn-disable btn-equipment">Custom</button>
             </div>
           </td>
         </tr>

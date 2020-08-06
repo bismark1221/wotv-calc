@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { EquipmentService } from '../../services/equipment.service';
 import { NavService } from '../../services/nav.service';
@@ -16,13 +17,17 @@ export class ModalEquipmentsComponent implements OnInit {
   searchText = "";
   filters = {
     rarity: [],
-    type: []
+    category: []
   }
+
+  @Input() public unit;
+  @Input() public equipmentPos;
 
   constructor(
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
-    private nameService: NameService
+    private nameService: NameService,
+    private modal: NgbActiveModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
@@ -34,7 +39,7 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   getEquipments() {
-    this.equipments = this.equipmentService.getEquipmentsForListing(this.filters);
+    this.equipments = this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService)
     this.translateEquipments();
   }
 
@@ -63,5 +68,21 @@ export class ModalEquipmentsComponent implements OnInit {
     }
 
     this.getEquipments()
+  }
+
+  isFilterSelected(type, value) {
+    if (this.filters[type].indexOf(value) == -1) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  close() {
+    this.modal.dismiss();
+  }
+
+  selectEquipment(equipment) {
+    this.modal.close(equipment.dataId)
   }
 }

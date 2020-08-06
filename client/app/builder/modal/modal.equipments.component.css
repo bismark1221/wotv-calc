@@ -1,23 +1,27 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+}
+
 .equipments {
   width: 100%;
   text-align: center;
   padding: 5px;
-}
-
-.leftBlock {
-  vertical-align: top;
-  display: inline-block;
-  width: 250px;
-  float: left;
-  text-align: left;
-  background: var(--filters-background);
-  color: var(--filters-color);
-  padding-top: 15px;
-  padding-left: 10px;
-}
-
-.leftBlock h1 {
-  font-size: 20px;
 }
 
 .filters {
@@ -30,6 +34,16 @@
 
 .collapsedFilters input {
   margin-right: 5px;
+}
+
+.filtersBlock {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.separator {
+  margin-left: 20px;
+  margin-right: 30px;
 }
 
 .fa-chevron-up, .fa-chevron-down {
@@ -55,12 +69,14 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
+  width: 1040px;
+  margin-left: 18px;
 }
 
 .searchInput {
   background: none;
   border: 0;
-  width: 750px;
+  width: 1000px;
 }
 
 .fa-search {
@@ -151,4 +167,28 @@
   display: table-cell;
   vertical-align: middle;
   color: var(--card-title-color);
+}
+
+.btn {
+  color: #fff;
+  border: 1px solid #E8E6DF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  margin-right: 10px;
+}
+
+.btn img {
+  height: 25px;
+}
+
+.btn-selected {
+  color: #fff;
+  background: #E8E6DF;
+  border: 1px solid #E8E6DF;
+  box-sizing: border-box;
+  border-radius: 4px;
 }

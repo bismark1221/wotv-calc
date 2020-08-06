@@ -465,13 +465,17 @@ export class BuilderUnitComponent implements OnInit {
     });
   }
 
-  openEquipmentsModal() {
-    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'options-modal' });
+  openEquipmentsModal(pos) {
+    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
+    modalRef.componentInstance.unit = this.unit;
+    modalRef.componentInstance.equipmentPos = pos
 
     modalRef.result.then((result) => {
-      console.log(result)
+      if (result) {
+        this.selectedEquipmentsIds[pos] = result
+        this.selectEquipment(pos)
+      }
     }, (reason) => {
-      console.log(reason)
     });
   }
 
