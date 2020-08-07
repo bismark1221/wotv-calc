@@ -1,0 +1,7549 @@
+{
+  "IT_US_POTION": {
+    "dataId": "IT_US_POTION",
+    "names": {
+      "en": "ポーション"
+    },
+    "slug": "posiyon"
+  },
+  "IT_US_HIPOTION": {
+    "dataId": "IT_US_HIPOTION",
+    "names": {
+      "en": "ハイポーション"
+    },
+    "slug": "haiposiyon"
+  },
+  "IT_US_EXPOTION": {
+    "dataId": "IT_US_EXPOTION",
+    "names": {
+      "en": "エクスポーション"
+    },
+    "slug": "ekusuposiyon"
+  },
+  "IT_US_ETHER": {
+    "dataId": "IT_US_ETHER",
+    "names": {
+      "en": "エーテル"
+    },
+    "slug": "eteru"
+  },
+  "IT_US_ETHERTURBO": {
+    "dataId": "IT_US_ETHERTURBO",
+    "names": {
+      "en": "エーテルターボ"
+    },
+    "slug": "eterutabo"
+  },
+  "IT_US_ELIXIR": {
+    "dataId": "IT_US_ELIXIR",
+    "names": {
+      "en": "エリクサー"
+    },
+    "slug": "erikusa"
+  },
+  "IT_US_PNXFEATHER": {
+    "dataId": "IT_US_PNXFEATHER",
+    "names": {
+      "en": "フェニックスの尾"
+    },
+    "slug": "huenitukusuno-wei"
+  },
+  "IT_US_ANTIDOTE": {
+    "dataId": "IT_US_ANTIDOTE",
+    "names": {
+      "en": "毒消し"
+    },
+    "slug": "du-xiaosi"
+  },
+  "IT_US_EYEDROPS": {
+    "dataId": "IT_US_EYEDROPS",
+    "names": {
+      "en": "目薬"
+    },
+    "slug": "mu-yao"
+  },
+  "IT_US_REMINDER": {
+    "dataId": "IT_US_REMINDER",
+    "names": {
+      "en": "気付け薬"
+    },
+    "slug": "qi-fuke-yao"
+  },
+  "IT_US_ECHODROP": {
+    "dataId": "IT_US_ECHODROP",
+    "names": {
+      "en": "やまびこ草"
+    },
+    "slug": "yamabiko-cao"
+  },
+  "IT_US_UNICORNHORN": {
+    "dataId": "IT_US_UNICORNHORN",
+    "names": {
+      "en": "ユニコーンの角"
+    },
+    "slug": "yunikonno-jiao"
+  },
+  "IT_US_MAIDENKISS": {
+    "dataId": "IT_US_MAIDENKISS",
+    "names": {
+      "en": "乙女のキッス"
+    },
+    "slug": "yi-nunokitusu"
+  },
+  "IT_US_GOLDNEEDLE": {
+    "dataId": "IT_US_GOLDNEEDLE",
+    "names": {
+      "en": "金の針"
+    },
+    "slug": "jinno-zhen"
+  },
+  "IT_US_REMEDY": {
+    "dataId": "IT_US_REMEDY",
+    "names": {
+      "en": "万能薬"
+    },
+    "slug": "wan-neng-yao"
+  },
+  "IT_US_ENCHANTDRAG": {
+    "dataId": "IT_US_ENCHANTDRAG",
+    "names": {
+      "en": "増強薬"
+    },
+    "slug": "zeng-qiang-yao"
+  },
+  "IT_US_HOLYTORCH": {
+    "dataId": "IT_US_HOLYTORCH",
+    "names": {
+      "en": "聖なるトーチ"
+    },
+    "slug": "shengnarutoti"
+  },
+  "IT_US_HERODRINK": {
+    "dataId": "IT_US_HERODRINK",
+    "names": {
+      "en": "英雄の薬"
+    },
+    "slug": "ying-xiongno-yao"
+  },
+  "IT_US_BACCHUS": {
+    "dataId": "IT_US_BACCHUS",
+    "names": {
+      "en": "バッカスの酒"
+    },
+    "slug": "batukasuno-jiu"
+  },
+  "IT_US_SHELL": {
+    "dataId": "IT_US_SHELL",
+    "names": {
+      "en": "シェルドリンク"
+    },
+    "slug": "sierudorinku"
+  },
+  "IT_US_PROTECT": {
+    "dataId": "IT_US_PROTECT",
+    "names": {
+      "en": "プロテスドリンク"
+    },
+    "slug": "purotesudorinku"
+  },
+  "IT_US_HEALWATER": {
+    "dataId": "IT_US_HEALWATER",
+    "names": {
+      "en": "回復の泉"
+    },
+    "slug": "hui-funo-quan"
+  },
+  "IT_US_HPPOTION": {
+    "dataId": "IT_US_HPPOTION",
+    "names": {
+      "en": "体力の薬"
+    },
+    "slug": "ti-lino-yao"
+  },
+  "IT_US_ATKPOTION": {
+    "dataId": "IT_US_ATKPOTION",
+    "names": {
+      "en": "力の薬"
+    },
+    "slug": "lino-yao"
+  },
+  "IT_US_MAGPOTION": {
+    "dataId": "IT_US_MAGPOTION",
+    "names": {
+      "en": "魔力の薬"
+    },
+    "slug": "mo-lino-yao"
+  },
+  "IT_US_SPDPOTION": {
+    "dataId": "IT_US_SPDPOTION",
+    "names": {
+      "en": "迅速の薬"
+    },
+    "slug": "xun-suno-yao"
+  },
+  "IT_US_DEXPOTION": {
+    "dataId": "IT_US_DEXPOTION",
+    "names": {
+      "en": "手練の薬"
+    },
+    "slug": "shou-lianno-yao"
+  },
+  "IT_ACTP_01": {
+    "dataId": "IT_ACTP_01",
+    "names": {
+      "en": "体力回復薬（小）"
+    },
+    "slug": "ti-li-hui-fu-yao-xiao"
+  },
+  "IT_ACTP_02": {
+    "dataId": "IT_ACTP_02",
+    "names": {
+      "en": "体力回復薬（中）"
+    },
+    "slug": "ti-li-hui-fu-yao-zhong"
+  },
+  "IT_ACTP_03": {
+    "dataId": "IT_ACTP_03",
+    "names": {
+      "en": "体力回復薬（大）"
+    },
+    "slug": "ti-li-hui-fu-yao-da"
+  },
+  "IT_ACTP_04": {
+    "dataId": "IT_ACTP_04",
+    "names": {
+      "en": "体力回復薬（極）"
+    },
+    "slug": "ti-li-hui-fu-yao-ji"
+  },
+  "IT_ARENAP_02": {
+    "dataId": "IT_ARENAP_02",
+    "names": {
+      "en": "アリーナオーブ回復薬（全回復）"
+    },
+    "slug": "arinaobu-hui-fu-yao-quan-hui-fu"
+  },
+  "IT_RAIDAP_01": {
+    "dataId": "IT_RAIDAP_01",
+    "names": {
+      "en": "マルチレイド回復薬（全回復）"
+    },
+    "slug": "marutireido-hui-fu-yao-quan-hui-fu"
+  },
+  "IT_RANKMP_02": {
+    "dataId": "IT_RANKMP_02",
+    "names": {
+      "en": "クラスマッチポイント回復薬（全回復）"
+    },
+    "slug": "kurasumatutipointo-hui-fu-yao-quan-hui-fu"
+  },
+  "IT_CG_01": {
+    "dataId": "IT_CG_01",
+    "names": {
+      "en": "ギルガメ（小）"
+    },
+    "slug": "girugame-xiao"
+  },
+  "IT_CG_02": {
+    "dataId": "IT_CG_02",
+    "names": {
+      "en": "ギルガメ（中）"
+    },
+    "slug": "girugame-zhong"
+  },
+  "IT_CG_03": {
+    "dataId": "IT_CG_03",
+    "names": {
+      "en": "ギルガメ（大）"
+    },
+    "slug": "girugame-da"
+  },
+  "IT_CG_04": {
+    "dataId": "IT_CG_04",
+    "names": {
+      "en": "ギルガメ（極）"
+    },
+    "slug": "girugame-ji"
+  },
+  "IT_US_EXP_01": {
+    "dataId": "IT_US_EXP_01",
+    "names": {
+      "en": "経験キューブ（小）"
+    },
+    "slug": "jing-yankiyubu-xiao"
+  },
+  "IT_US_EXP_02": {
+    "dataId": "IT_US_EXP_02",
+    "names": {
+      "en": "経験キューブ（中）"
+    },
+    "slug": "jing-yankiyubu-zhong"
+  },
+  "IT_US_EXP_03": {
+    "dataId": "IT_US_EXP_03",
+    "names": {
+      "en": "経験キューブ（大）"
+    },
+    "slug": "jing-yankiyubu-da"
+  },
+  "IT_US_EXP_04": {
+    "dataId": "IT_US_EXP_04",
+    "names": {
+      "en": "経験キューブ（極）"
+    },
+    "slug": "jing-yankiyubu-ji"
+  },
+  "IT_LB_EXP_01": {
+    "dataId": "IT_LB_EXP_01",
+    "names": {
+      "en": "ミニバーストポット"
+    },
+    "slug": "minibasutopotuto"
+  },
+  "IT_LB_EXP_02": {
+    "dataId": "IT_LB_EXP_02",
+    "names": {
+      "en": "バーストポット"
+    },
+    "slug": "basutopotuto"
+  },
+  "IT_LB_EXP_03": {
+    "dataId": "IT_LB_EXP_03",
+    "names": {
+      "en": "キングバーストポット"
+    },
+    "slug": "kingubasutopotuto"
+  },
+  "IT_JB_MM_ALL": {
+    "dataId": "IT_JB_MM_ALL",
+    "names": {
+      "en": "微かな記憶・翠"
+    },
+    "slug": "weikana-ji-yi-cui"
+  },
+  "IT_JB_MM_ALL_2": {
+    "dataId": "IT_JB_MM_ALL_2",
+    "names": {
+      "en": "微かな記憶・碧"
+    },
+    "slug": "weikana-ji-yi-bi"
+  },
+  "IT_JB_MM_ALL_3": {
+    "dataId": "IT_JB_MM_ALL_3",
+    "names": {
+      "en": "微かな記憶・紫"
+    },
+    "slug": "weikana-ji-yi-zi"
+  },
+  "IT_JB_MM_ALL_4": {
+    "dataId": "IT_JB_MM_ALL_4",
+    "names": {
+      "en": "微かな記憶・橘"
+    },
+    "slug": "weikana-ji-yi-ju"
+  },
+  "IT_JB_MM_ALL_5": {
+    "dataId": "IT_JB_MM_ALL_5",
+    "names": {
+      "en": "微かな記憶・緋"
+    },
+    "slug": "weikana-ji-yi-fei"
+  },
+  "IT_JB_SWORD_01": {
+    "dataId": "IT_JB_SWORD_01",
+    "names": {
+      "en": "剣のジェダイト"
+    },
+    "slug": "jiannoziedaito"
+  },
+  "IT_JB_SWORD_02": {
+    "dataId": "IT_JB_SWORD_02",
+    "names": {
+      "en": "剣のアズライト"
+    },
+    "slug": "jiannoazuraito"
+  },
+  "IT_JB_SWORD_03": {
+    "dataId": "IT_JB_SWORD_03",
+    "names": {
+      "en": "剣のチャロアイト"
+    },
+    "slug": "jiannotiyaroaito"
+  },
+  "IT_JB_SWORD_04": {
+    "dataId": "IT_JB_SWORD_04",
+    "names": {
+      "en": "剣のシトリン"
+    },
+    "slug": "jiannositorin"
+  },
+  "IT_JB_SWORD_05": {
+    "dataId": "IT_JB_SWORD_05",
+    "names": {
+      "en": "剣のスピネル"
+    },
+    "slug": "jiannosupineru"
+  },
+  "IT_JB_LSWORD_01": {
+    "dataId": "IT_JB_LSWORD_01",
+    "names": {
+      "en": "大剣のジェダイト"
+    },
+    "slug": "da-jiannoziedaito"
+  },
+  "IT_JB_LSWORD_02": {
+    "dataId": "IT_JB_LSWORD_02",
+    "names": {
+      "en": "大剣のアズライト"
+    },
+    "slug": "da-jiannoazuraito"
+  },
+  "IT_JB_LSWORD_03": {
+    "dataId": "IT_JB_LSWORD_03",
+    "names": {
+      "en": "大剣のチャロアイト"
+    },
+    "slug": "da-jiannotiyaroaito"
+  },
+  "IT_JB_LSWORD_04": {
+    "dataId": "IT_JB_LSWORD_04",
+    "names": {
+      "en": "大剣のシトリン"
+    },
+    "slug": "da-jiannositorin"
+  },
+  "IT_JB_LSWORD_05": {
+    "dataId": "IT_JB_LSWORD_05",
+    "names": {
+      "en": "大剣のスピネル"
+    },
+    "slug": "da-jiannosupineru"
+  },
+  "IT_JB_JSWORD_01": {
+    "dataId": "IT_JB_JSWORD_01",
+    "names": {
+      "en": "刀のジェダイト"
+    },
+    "slug": "daonoziedaito"
+  },
+  "IT_JB_JSWORD_02": {
+    "dataId": "IT_JB_JSWORD_02",
+    "names": {
+      "en": "刀のアズライト"
+    },
+    "slug": "daonoazuraito"
+  },
+  "IT_JB_JSWORD_03": {
+    "dataId": "IT_JB_JSWORD_03",
+    "names": {
+      "en": "刀のチャロアイト"
+    },
+    "slug": "daonotiyaroaito"
+  },
+  "IT_JB_JSWORD_04": {
+    "dataId": "IT_JB_JSWORD_04",
+    "names": {
+      "en": "刀のシトリン"
+    },
+    "slug": "daonositorin"
+  },
+  "IT_JB_JSWORD_05": {
+    "dataId": "IT_JB_JSWORD_05",
+    "names": {
+      "en": "刀のスピネル"
+    },
+    "slug": "daonosupineru"
+  },
+  "IT_JB_FIST_01": {
+    "dataId": "IT_JB_FIST_01",
+    "names": {
+      "en": "拳のジェダイト"
+    },
+    "slug": "quannoziedaito"
+  },
+  "IT_JB_FIST_02": {
+    "dataId": "IT_JB_FIST_02",
+    "names": {
+      "en": "拳のアズライト"
+    },
+    "slug": "quannoazuraito"
+  },
+  "IT_JB_FIST_03": {
+    "dataId": "IT_JB_FIST_03",
+    "names": {
+      "en": "拳のチャロアイト"
+    },
+    "slug": "quannotiyaroaito"
+  },
+  "IT_JB_FIST_04": {
+    "dataId": "IT_JB_FIST_04",
+    "names": {
+      "en": "拳のシトリン"
+    },
+    "slug": "quannositorin"
+  },
+  "IT_JB_FIST_05": {
+    "dataId": "IT_JB_FIST_05",
+    "names": {
+      "en": "拳のスピネル"
+    },
+    "slug": "quannosupineru"
+  },
+  "IT_JB_SPEAR_01": {
+    "dataId": "IT_JB_SPEAR_01",
+    "names": {
+      "en": "槍のジェダイト"
+    },
+    "slug": "qiangnoziedaito"
+  },
+  "IT_JB_SPEAR_02": {
+    "dataId": "IT_JB_SPEAR_02",
+    "names": {
+      "en": "槍のアズライト"
+    },
+    "slug": "qiangnoazuraito"
+  },
+  "IT_JB_SPEAR_03": {
+    "dataId": "IT_JB_SPEAR_03",
+    "names": {
+      "en": "槍のチャロアイト"
+    },
+    "slug": "qiangnotiyaroaito"
+  },
+  "IT_JB_SPEAR_04": {
+    "dataId": "IT_JB_SPEAR_04",
+    "names": {
+      "en": "槍のシトリン"
+    },
+    "slug": "qiangnositorin"
+  },
+  "IT_JB_SPEAR_05": {
+    "dataId": "IT_JB_SPEAR_05",
+    "names": {
+      "en": "槍のスピネル"
+    },
+    "slug": "qiangnosupineru"
+  },
+  "IT_JB_SSWORD_01": {
+    "dataId": "IT_JB_SSWORD_01",
+    "names": {
+      "en": "短剣のジェダイト"
+    },
+    "slug": "duan-jiannoziedaito"
+  },
+  "IT_JB_SSWORD_02": {
+    "dataId": "IT_JB_SSWORD_02",
+    "names": {
+      "en": "短剣のアズライト"
+    },
+    "slug": "duan-jiannoazuraito"
+  },
+  "IT_JB_SSWORD_03": {
+    "dataId": "IT_JB_SSWORD_03",
+    "names": {
+      "en": "短剣のチャロアイト"
+    },
+    "slug": "duan-jiannotiyaroaito"
+  },
+  "IT_JB_SSWORD_04": {
+    "dataId": "IT_JB_SSWORD_04",
+    "names": {
+      "en": "短剣のシトリン"
+    },
+    "slug": "duan-jiannositorin"
+  },
+  "IT_JB_SSWORD_05": {
+    "dataId": "IT_JB_SSWORD_05",
+    "names": {
+      "en": "短剣のスピネル"
+    },
+    "slug": "duan-jiannosupineru"
+  },
+  "IT_JB_KUNAI_01": {
+    "dataId": "IT_JB_KUNAI_01",
+    "names": {
+      "en": "忍刀のジェダイト"
+    },
+    "slug": "ren-daonoziedaito"
+  },
+  "IT_JB_KUNAI_02": {
+    "dataId": "IT_JB_KUNAI_02",
+    "names": {
+      "en": "忍刀のアズライト"
+    },
+    "slug": "ren-daonoazuraito"
+  },
+  "IT_JB_KUNAI_03": {
+    "dataId": "IT_JB_KUNAI_03",
+    "names": {
+      "en": "忍刀のチャロアイト"
+    },
+    "slug": "ren-daonotiyaroaito"
+  },
+  "IT_JB_KUNAI_04": {
+    "dataId": "IT_JB_KUNAI_04",
+    "names": {
+      "en": "忍刀のシトリン"
+    },
+    "slug": "ren-daonositorin"
+  },
+  "IT_JB_KUNAI_05": {
+    "dataId": "IT_JB_KUNAI_05",
+    "names": {
+      "en": "忍刀のスピネル"
+    },
+    "slug": "ren-daonosupineru"
+  },
+  "IT_JB_BOW_01": {
+    "dataId": "IT_JB_BOW_01",
+    "names": {
+      "en": "弓のジェダイト"
+    },
+    "slug": "gongnoziedaito"
+  },
+  "IT_JB_BOW_02": {
+    "dataId": "IT_JB_BOW_02",
+    "names": {
+      "en": "弓のアズライト"
+    },
+    "slug": "gongnoazuraito"
+  },
+  "IT_JB_BOW_03": {
+    "dataId": "IT_JB_BOW_03",
+    "names": {
+      "en": "弓のチャロアイト"
+    },
+    "slug": "gongnotiyaroaito"
+  },
+  "IT_JB_BOW_04": {
+    "dataId": "IT_JB_BOW_04",
+    "names": {
+      "en": "弓のシトリン"
+    },
+    "slug": "gongnositorin"
+  },
+  "IT_JB_BOW_05": {
+    "dataId": "IT_JB_BOW_05",
+    "names": {
+      "en": "弓のスピネル"
+    },
+    "slug": "gongnosupineru"
+  },
+  "IT_JB_GUN_01": {
+    "dataId": "IT_JB_GUN_01",
+    "names": {
+      "en": "銃のジェダイト"
+    },
+    "slug": "chongnoziedaito"
+  },
+  "IT_JB_GUN_02": {
+    "dataId": "IT_JB_GUN_02",
+    "names": {
+      "en": "銃のアズライト"
+    },
+    "slug": "chongnoazuraito"
+  },
+  "IT_JB_GUN_03": {
+    "dataId": "IT_JB_GUN_03",
+    "names": {
+      "en": "銃のチャロアイト"
+    },
+    "slug": "chongnotiyaroaito"
+  },
+  "IT_JB_GUN_04": {
+    "dataId": "IT_JB_GUN_04",
+    "names": {
+      "en": "銃のシトリン"
+    },
+    "slug": "chongnositorin"
+  },
+  "IT_JB_GUN_05": {
+    "dataId": "IT_JB_GUN_05",
+    "names": {
+      "en": "銃のスピネル"
+    },
+    "slug": "chongnosupineru"
+  },
+  "IT_JB_STAFF_01": {
+    "dataId": "IT_JB_STAFF_01",
+    "names": {
+      "en": "杖のジェダイト"
+    },
+    "slug": "zhangnoziedaito"
+  },
+  "IT_JB_STAFF_02": {
+    "dataId": "IT_JB_STAFF_02",
+    "names": {
+      "en": "杖のアズライト"
+    },
+    "slug": "zhangnoazuraito"
+  },
+  "IT_JB_STAFF_03": {
+    "dataId": "IT_JB_STAFF_03",
+    "names": {
+      "en": "杖のチャロアイト"
+    },
+    "slug": "zhangnotiyaroaito"
+  },
+  "IT_JB_STAFF_04": {
+    "dataId": "IT_JB_STAFF_04",
+    "names": {
+      "en": "杖のシトリン"
+    },
+    "slug": "zhangnositorin"
+  },
+  "IT_JB_STAFF_05": {
+    "dataId": "IT_JB_STAFF_05",
+    "names": {
+      "en": "杖のスピネル"
+    },
+    "slug": "zhangnosupineru"
+  },
+  "IT_JB_MACE_01": {
+    "dataId": "IT_JB_MACE_01",
+    "names": {
+      "en": "メイスのジェダイト"
+    },
+    "slug": "meisunoziedaito"
+  },
+  "IT_JB_MACE_02": {
+    "dataId": "IT_JB_MACE_02",
+    "names": {
+      "en": "メイスのアズライト"
+    },
+    "slug": "meisunoazuraito"
+  },
+  "IT_JB_MACE_03": {
+    "dataId": "IT_JB_MACE_03",
+    "names": {
+      "en": "メイスのチャロアイト"
+    },
+    "slug": "meisunotiyaroaito"
+  },
+  "IT_JB_MACE_04": {
+    "dataId": "IT_JB_MACE_04",
+    "names": {
+      "en": "メイスのシトリン"
+    },
+    "slug": "meisunositorin"
+  },
+  "IT_JB_MACE_05": {
+    "dataId": "IT_JB_MACE_05",
+    "names": {
+      "en": "メイスのスピネル"
+    },
+    "slug": "meisunosupineru"
+  },
+  "IT_JB_AXE_01": {
+    "dataId": "IT_JB_AXE_01",
+    "names": {
+      "en": "斧のジェダイト"
+    },
+    "slug": "funoziedaito"
+  },
+  "IT_JB_AXE_02": {
+    "dataId": "IT_JB_AXE_02",
+    "names": {
+      "en": "斧のアズライト"
+    },
+    "slug": "funoazuraito"
+  },
+  "IT_JB_AXE_03": {
+    "dataId": "IT_JB_AXE_03",
+    "names": {
+      "en": "斧のチャロアイト"
+    },
+    "slug": "funotiyaroaito"
+  },
+  "IT_JB_AXE_04": {
+    "dataId": "IT_JB_AXE_04",
+    "names": {
+      "en": "斧のシトリン"
+    },
+    "slug": "funositorin"
+  },
+  "IT_JB_AXE_05": {
+    "dataId": "IT_JB_AXE_05",
+    "names": {
+      "en": "斧のスピネル"
+    },
+    "slug": "funosupineru"
+  },
+  "IT_JB_MM_COMMON": {
+    "dataId": "IT_JB_MM_COMMON",
+    "names": {
+      "en": "名もなき英雄の記憶・翠"
+    },
+    "slug": "mingmonaki-ying-xiongno-ji-yi-cui"
+  },
+  "IT_JB_MM_COMMON_2": {
+    "dataId": "IT_JB_MM_COMMON_2",
+    "names": {
+      "en": "名もなき英雄の記憶・碧"
+    },
+    "slug": "mingmonaki-ying-xiongno-ji-yi-bi"
+  },
+  "IT_JB_MM_COMMON_3": {
+    "dataId": "IT_JB_MM_COMMON_3",
+    "names": {
+      "en": "名もなき英雄の記憶・紫"
+    },
+    "slug": "mingmonaki-ying-xiongno-ji-yi-zi"
+  },
+  "IT_JB_MM_COMMON_4": {
+    "dataId": "IT_JB_MM_COMMON_4",
+    "names": {
+      "en": "名もなき英雄の記憶・橘"
+    },
+    "slug": "mingmonaki-ying-xiongno-ji-yi-ju"
+  },
+  "IT_JB_MM_COMMON_5": {
+    "dataId": "IT_JB_MM_COMMON_5",
+    "names": {
+      "en": "名もなき英雄の記憶・緋"
+    },
+    "slug": "mingmonaki-ying-xiongno-ji-yi-fei"
+  },
+  "IT_JB_MM_WAR": {
+    "dataId": "IT_JB_MM_WAR",
+    "names": {
+      "en": "戦士の記憶・翠"
+    },
+    "slug": "zhan-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_WAR_2": {
+    "dataId": "IT_JB_MM_WAR_2",
+    "names": {
+      "en": "戦士の記憶・碧"
+    },
+    "slug": "zhan-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_WAR_3": {
+    "dataId": "IT_JB_MM_WAR_3",
+    "names": {
+      "en": "戦士の記憶・紫"
+    },
+    "slug": "zhan-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_WAR_4": {
+    "dataId": "IT_JB_MM_WAR_4",
+    "names": {
+      "en": "戦士の記憶・橘"
+    },
+    "slug": "zhan-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_WAR_5": {
+    "dataId": "IT_JB_MM_WAR_5",
+    "names": {
+      "en": "戦士の記憶・緋"
+    },
+    "slug": "zhan-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_KNT": {
+    "dataId": "IT_JB_MM_KNT",
+    "names": {
+      "en": "ナイトの記憶・翠"
+    },
+    "slug": "naitono-ji-yi-cui"
+  },
+  "IT_JB_MM_KNT_2": {
+    "dataId": "IT_JB_MM_KNT_2",
+    "names": {
+      "en": "ナイトの記憶・碧"
+    },
+    "slug": "naitono-ji-yi-bi"
+  },
+  "IT_JB_MM_KNT_3": {
+    "dataId": "IT_JB_MM_KNT_3",
+    "names": {
+      "en": "ナイトの記憶・紫"
+    },
+    "slug": "naitono-ji-yi-zi"
+  },
+  "IT_JB_MM_KNT_4": {
+    "dataId": "IT_JB_MM_KNT_4",
+    "names": {
+      "en": "ナイトの記憶・橘"
+    },
+    "slug": "naitono-ji-yi-ju"
+  },
+  "IT_JB_MM_KNT_5": {
+    "dataId": "IT_JB_MM_KNT_5",
+    "names": {
+      "en": "ナイトの記憶・緋"
+    },
+    "slug": "naitono-ji-yi-fei"
+  },
+  "IT_JB_MM_PLD": {
+    "dataId": "IT_JB_MM_PLD",
+    "names": {
+      "en": "パラディンの記憶・翠"
+    },
+    "slug": "paradeinno-ji-yi-cui"
+  },
+  "IT_JB_MM_PLD_2": {
+    "dataId": "IT_JB_MM_PLD_2",
+    "names": {
+      "en": "パラディンの記憶・碧"
+    },
+    "slug": "paradeinno-ji-yi-bi"
+  },
+  "IT_JB_MM_PLD_3": {
+    "dataId": "IT_JB_MM_PLD_3",
+    "names": {
+      "en": "パラディンの記憶・紫"
+    },
+    "slug": "paradeinno-ji-yi-zi"
+  },
+  "IT_JB_MM_PLD_4": {
+    "dataId": "IT_JB_MM_PLD_4",
+    "names": {
+      "en": "パラディンの記憶・橘"
+    },
+    "slug": "paradeinno-ji-yi-ju"
+  },
+  "IT_JB_MM_PLD_5": {
+    "dataId": "IT_JB_MM_PLD_5",
+    "names": {
+      "en": "パラディンの記憶・緋"
+    },
+    "slug": "paradeinno-ji-yi-fei"
+  },
+  "IT_JB_MM_SWN": {
+    "dataId": "IT_JB_MM_SWN",
+    "names": {
+      "en": "ソルジャーの記憶・翠"
+    },
+    "slug": "soruziyano-ji-yi-cui"
+  },
+  "IT_JB_MM_SWN_2": {
+    "dataId": "IT_JB_MM_SWN_2",
+    "names": {
+      "en": "ソルジャーの記憶・碧"
+    },
+    "slug": "soruziyano-ji-yi-bi"
+  },
+  "IT_JB_MM_SWN_3": {
+    "dataId": "IT_JB_MM_SWN_3",
+    "names": {
+      "en": "ソルジャーの記憶・紫"
+    },
+    "slug": "soruziyano-ji-yi-zi"
+  },
+  "IT_JB_MM_SWN_4": {
+    "dataId": "IT_JB_MM_SWN_4",
+    "names": {
+      "en": "ソルジャーの記憶・橘"
+    },
+    "slug": "soruziyano-ji-yi-ju"
+  },
+  "IT_JB_MM_SWN_5": {
+    "dataId": "IT_JB_MM_SWN_5",
+    "names": {
+      "en": "ソルジャーの記憶・緋"
+    },
+    "slug": "soruziyano-ji-yi-fei"
+  },
+  "IT_JB_MM_MNK": {
+    "dataId": "IT_JB_MM_MNK",
+    "names": {
+      "en": "モンクの記憶・翠"
+    },
+    "slug": "monkuno-ji-yi-cui"
+  },
+  "IT_JB_MM_MNK_2": {
+    "dataId": "IT_JB_MM_MNK_2",
+    "names": {
+      "en": "モンクの記憶・碧"
+    },
+    "slug": "monkuno-ji-yi-bi"
+  },
+  "IT_JB_MM_MNK_3": {
+    "dataId": "IT_JB_MM_MNK_3",
+    "names": {
+      "en": "モンクの記憶・紫"
+    },
+    "slug": "monkuno-ji-yi-zi"
+  },
+  "IT_JB_MM_MNK_4": {
+    "dataId": "IT_JB_MM_MNK_4",
+    "names": {
+      "en": "モンクの記憶・橘"
+    },
+    "slug": "monkuno-ji-yi-ju"
+  },
+  "IT_JB_MM_MNK_5": {
+    "dataId": "IT_JB_MM_MNK_5",
+    "names": {
+      "en": "モンクの記憶・緋"
+    },
+    "slug": "monkuno-ji-yi-fei"
+  },
+  "IT_JB_MM_SAM": {
+    "dataId": "IT_JB_MM_SAM",
+    "names": {
+      "en": "侍の記憶・翠"
+    },
+    "slug": "shino-ji-yi-cui"
+  },
+  "IT_JB_MM_SAM_2": {
+    "dataId": "IT_JB_MM_SAM_2",
+    "names": {
+      "en": "侍の記憶・碧"
+    },
+    "slug": "shino-ji-yi-bi"
+  },
+  "IT_JB_MM_SAM_3": {
+    "dataId": "IT_JB_MM_SAM_3",
+    "names": {
+      "en": "侍の記憶・紫"
+    },
+    "slug": "shino-ji-yi-zi"
+  },
+  "IT_JB_MM_SAM_4": {
+    "dataId": "IT_JB_MM_SAM_4",
+    "names": {
+      "en": "侍の記憶・橘"
+    },
+    "slug": "shino-ji-yi-ju"
+  },
+  "IT_JB_MM_SAM_5": {
+    "dataId": "IT_JB_MM_SAM_5",
+    "names": {
+      "en": "侍の記憶・緋"
+    },
+    "slug": "shino-ji-yi-fei"
+  },
+  "IT_JB_MM_LAN": {
+    "dataId": "IT_JB_MM_LAN",
+    "names": {
+      "en": "槍術士の記憶・翠"
+    },
+    "slug": "qiang-shu-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_LAN_2": {
+    "dataId": "IT_JB_MM_LAN_2",
+    "names": {
+      "en": "槍術士の記憶・碧"
+    },
+    "slug": "qiang-shu-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_LAN_3": {
+    "dataId": "IT_JB_MM_LAN_3",
+    "names": {
+      "en": "槍術士の記憶・紫"
+    },
+    "slug": "qiang-shu-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_LAN_4": {
+    "dataId": "IT_JB_MM_LAN_4",
+    "names": {
+      "en": "槍術士の記憶・橘"
+    },
+    "slug": "qiang-shu-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_LAN_5": {
+    "dataId": "IT_JB_MM_LAN_5",
+    "names": {
+      "en": "槍術士の記憶・緋"
+    },
+    "slug": "qiang-shu-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_DRG": {
+    "dataId": "IT_JB_MM_DRG",
+    "names": {
+      "en": "竜騎士の記憶・翠"
+    },
+    "slug": "long-qi-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_DRG_2": {
+    "dataId": "IT_JB_MM_DRG_2",
+    "names": {
+      "en": "竜騎士の記憶・碧"
+    },
+    "slug": "long-qi-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_DRG_3": {
+    "dataId": "IT_JB_MM_DRG_3",
+    "names": {
+      "en": "竜騎士の記憶・紫"
+    },
+    "slug": "long-qi-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_DRG_4": {
+    "dataId": "IT_JB_MM_DRG_4",
+    "names": {
+      "en": "竜騎士の記憶・橘"
+    },
+    "slug": "long-qi-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_DRG_5": {
+    "dataId": "IT_JB_MM_DRG_5",
+    "names": {
+      "en": "竜騎士の記憶・緋"
+    },
+    "slug": "long-qi-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_THI": {
+    "dataId": "IT_JB_MM_THI",
+    "names": {
+      "en": "シーフの記憶・翠"
+    },
+    "slug": "sihuno-ji-yi-cui"
+  },
+  "IT_JB_MM_THI_2": {
+    "dataId": "IT_JB_MM_THI_2",
+    "names": {
+      "en": "シーフの記憶・碧"
+    },
+    "slug": "sihuno-ji-yi-bi"
+  },
+  "IT_JB_MM_THI_3": {
+    "dataId": "IT_JB_MM_THI_3",
+    "names": {
+      "en": "シーフの記憶・紫"
+    },
+    "slug": "sihuno-ji-yi-zi"
+  },
+  "IT_JB_MM_THI_4": {
+    "dataId": "IT_JB_MM_THI_4",
+    "names": {
+      "en": "シーフの記憶・橘"
+    },
+    "slug": "sihuno-ji-yi-ju"
+  },
+  "IT_JB_MM_THI_5": {
+    "dataId": "IT_JB_MM_THI_5",
+    "names": {
+      "en": "シーフの記憶・緋"
+    },
+    "slug": "sihuno-ji-yi-fei"
+  },
+  "IT_JB_MM_NIN": {
+    "dataId": "IT_JB_MM_NIN",
+    "names": {
+      "en": "忍者の記憶・翠"
+    },
+    "slug": "ren-zheno-ji-yi-cui"
+  },
+  "IT_JB_MM_NIN_2": {
+    "dataId": "IT_JB_MM_NIN_2",
+    "names": {
+      "en": "忍者の記憶・碧"
+    },
+    "slug": "ren-zheno-ji-yi-bi"
+  },
+  "IT_JB_MM_NIN_3": {
+    "dataId": "IT_JB_MM_NIN_3",
+    "names": {
+      "en": "忍者の記憶・紫"
+    },
+    "slug": "ren-zheno-ji-yi-zi"
+  },
+  "IT_JB_MM_NIN_4": {
+    "dataId": "IT_JB_MM_NIN_4",
+    "names": {
+      "en": "忍者の記憶・橘"
+    },
+    "slug": "ren-zheno-ji-yi-ju"
+  },
+  "IT_JB_MM_NIN_5": {
+    "dataId": "IT_JB_MM_NIN_5",
+    "names": {
+      "en": "忍者の記憶・緋"
+    },
+    "slug": "ren-zheno-ji-yi-fei"
+  },
+  "IT_JB_MM_HUN": {
+    "dataId": "IT_JB_MM_HUN",
+    "names": {
+      "en": "狩人の記憶・翠"
+    },
+    "slug": "shou-renno-ji-yi-cui"
+  },
+  "IT_JB_MM_HUN_2": {
+    "dataId": "IT_JB_MM_HUN_2",
+    "names": {
+      "en": "狩人の記憶・碧"
+    },
+    "slug": "shou-renno-ji-yi-bi"
+  },
+  "IT_JB_MM_HUN_3": {
+    "dataId": "IT_JB_MM_HUN_3",
+    "names": {
+      "en": "狩人の記憶・紫"
+    },
+    "slug": "shou-renno-ji-yi-zi"
+  },
+  "IT_JB_MM_HUN_4": {
+    "dataId": "IT_JB_MM_HUN_4",
+    "names": {
+      "en": "狩人の記憶・橘"
+    },
+    "slug": "shou-renno-ji-yi-ju"
+  },
+  "IT_JB_MM_HUN_5": {
+    "dataId": "IT_JB_MM_HUN_5",
+    "names": {
+      "en": "狩人の記憶・緋"
+    },
+    "slug": "shou-renno-ji-yi-fei"
+  },
+  "IT_JB_MM_GUN": {
+    "dataId": "IT_JB_MM_GUN",
+    "names": {
+      "en": "ガンナーの記憶・翠"
+    },
+    "slug": "gannano-ji-yi-cui"
+  },
+  "IT_JB_MM_GUN_2": {
+    "dataId": "IT_JB_MM_GUN_2",
+    "names": {
+      "en": "ガンナーの記憶・碧"
+    },
+    "slug": "gannano-ji-yi-bi"
+  },
+  "IT_JB_MM_GUN_3": {
+    "dataId": "IT_JB_MM_GUN_3",
+    "names": {
+      "en": "ガンナーの記憶・紫"
+    },
+    "slug": "gannano-ji-yi-zi"
+  },
+  "IT_JB_MM_GUN_4": {
+    "dataId": "IT_JB_MM_GUN_4",
+    "names": {
+      "en": "ガンナーの記憶・橘"
+    },
+    "slug": "gannano-ji-yi-ju"
+  },
+  "IT_JB_MM_GUN_5": {
+    "dataId": "IT_JB_MM_GUN_5",
+    "names": {
+      "en": "ガンナーの記憶・緋"
+    },
+    "slug": "gannano-ji-yi-fei"
+  },
+  "IT_JB_MM_WHM": {
+    "dataId": "IT_JB_MM_WHM",
+    "names": {
+      "en": "白魔道士の記憶・翠"
+    },
+    "slug": "bai-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_WHM_2": {
+    "dataId": "IT_JB_MM_WHM_2",
+    "names": {
+      "en": "白魔道士の記憶・碧"
+    },
+    "slug": "bai-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_WHM_3": {
+    "dataId": "IT_JB_MM_WHM_3",
+    "names": {
+      "en": "白魔道士の記憶・紫"
+    },
+    "slug": "bai-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_WHM_4": {
+    "dataId": "IT_JB_MM_WHM_4",
+    "names": {
+      "en": "白魔道士の記憶・橘"
+    },
+    "slug": "bai-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_WHM_5": {
+    "dataId": "IT_JB_MM_WHM_5",
+    "names": {
+      "en": "白魔道士の記憶・緋"
+    },
+    "slug": "bai-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_BLM": {
+    "dataId": "IT_JB_MM_BLM",
+    "names": {
+      "en": "黒魔道士の記憶・翠"
+    },
+    "slug": "hei-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_BLM_2": {
+    "dataId": "IT_JB_MM_BLM_2",
+    "names": {
+      "en": "黒魔道士の記憶・碧"
+    },
+    "slug": "hei-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_BLM_3": {
+    "dataId": "IT_JB_MM_BLM_3",
+    "names": {
+      "en": "黒魔道士の記憶・紫"
+    },
+    "slug": "hei-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_BLM_4": {
+    "dataId": "IT_JB_MM_BLM_4",
+    "names": {
+      "en": "黒魔道士の記憶・橘"
+    },
+    "slug": "hei-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_BLM_5": {
+    "dataId": "IT_JB_MM_BLM_5",
+    "names": {
+      "en": "黒魔道士の記憶・緋"
+    },
+    "slug": "hei-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_RDM": {
+    "dataId": "IT_JB_MM_RDM",
+    "names": {
+      "en": "赤魔道士の記憶・翠"
+    },
+    "slug": "chi-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_RDM_2": {
+    "dataId": "IT_JB_MM_RDM_2",
+    "names": {
+      "en": "赤魔道士の記憶・碧"
+    },
+    "slug": "chi-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_RDM_3": {
+    "dataId": "IT_JB_MM_RDM_3",
+    "names": {
+      "en": "赤魔道士の記憶・紫"
+    },
+    "slug": "chi-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_RDM_4": {
+    "dataId": "IT_JB_MM_RDM_4",
+    "names": {
+      "en": "赤魔道士の記憶・橘"
+    },
+    "slug": "chi-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_RDM_5": {
+    "dataId": "IT_JB_MM_RDM_5",
+    "names": {
+      "en": "赤魔道士の記憶・緋"
+    },
+    "slug": "chi-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_GRM": {
+    "dataId": "IT_JB_MM_GRM",
+    "names": {
+      "en": "緑魔道士の記憶・翠"
+    },
+    "slug": "lu-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_GRM_2": {
+    "dataId": "IT_JB_MM_GRM_2",
+    "names": {
+      "en": "緑魔道士の記憶・碧"
+    },
+    "slug": "lu-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_GRM_3": {
+    "dataId": "IT_JB_MM_GRM_3",
+    "names": {
+      "en": "緑魔道士の記憶・紫"
+    },
+    "slug": "lu-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_GRM_4": {
+    "dataId": "IT_JB_MM_GRM_4",
+    "names": {
+      "en": "緑魔道士の記憶・橘"
+    },
+    "slug": "lu-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_GRM_5": {
+    "dataId": "IT_JB_MM_GRM_5",
+    "names": {
+      "en": "緑魔道士の記憶・緋"
+    },
+    "slug": "lu-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_TIM": {
+    "dataId": "IT_JB_MM_TIM",
+    "names": {
+      "en": "時魔道士の記憶・翠"
+    },
+    "slug": "shi-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_TIM_2": {
+    "dataId": "IT_JB_MM_TIM_2",
+    "names": {
+      "en": "時魔道士の記憶・碧"
+    },
+    "slug": "shi-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_TIM_3": {
+    "dataId": "IT_JB_MM_TIM_3",
+    "names": {
+      "en": "時魔道士の記憶・紫"
+    },
+    "slug": "shi-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_TIM_4": {
+    "dataId": "IT_JB_MM_TIM_4",
+    "names": {
+      "en": "時魔道士の記憶・橘"
+    },
+    "slug": "shi-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_TIM_5": {
+    "dataId": "IT_JB_MM_TIM_5",
+    "names": {
+      "en": "時魔道士の記憶・緋"
+    },
+    "slug": "shi-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_MGK": {
+    "dataId": "IT_JB_MM_MGK",
+    "names": {
+      "en": "魔法剣士の記憶・翠"
+    },
+    "slug": "mo-fa-jian-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_MGK_2": {
+    "dataId": "IT_JB_MM_MGK_2",
+    "names": {
+      "en": "魔法剣士の記憶・碧"
+    },
+    "slug": "mo-fa-jian-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_MGK_3": {
+    "dataId": "IT_JB_MM_MGK_3",
+    "names": {
+      "en": "魔法剣士の記憶・紫"
+    },
+    "slug": "mo-fa-jian-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_MGK_4": {
+    "dataId": "IT_JB_MM_MGK_4",
+    "names": {
+      "en": "魔法剣士の記憶・橘"
+    },
+    "slug": "mo-fa-jian-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_MGK_5": {
+    "dataId": "IT_JB_MM_MGK_5",
+    "names": {
+      "en": "魔法剣士の記憶・緋"
+    },
+    "slug": "mo-fa-jian-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_CLR": {
+    "dataId": "IT_JB_MM_CLR",
+    "names": {
+      "en": "クレリックの記憶・翠"
+    },
+    "slug": "kureritukuno-ji-yi-cui"
+  },
+  "IT_JB_MM_CLR_2": {
+    "dataId": "IT_JB_MM_CLR_2",
+    "names": {
+      "en": "クレリックの記憶・碧"
+    },
+    "slug": "kureritukuno-ji-yi-bi"
+  },
+  "IT_JB_MM_CLR_3": {
+    "dataId": "IT_JB_MM_CLR_3",
+    "names": {
+      "en": "クレリックの記憶・紫"
+    },
+    "slug": "kureritukuno-ji-yi-zi"
+  },
+  "IT_JB_MM_CLR_4": {
+    "dataId": "IT_JB_MM_CLR_4",
+    "names": {
+      "en": "クレリックの記憶・橘"
+    },
+    "slug": "kureritukuno-ji-yi-ju"
+  },
+  "IT_JB_MM_CLR_5": {
+    "dataId": "IT_JB_MM_CLR_5",
+    "names": {
+      "en": "クレリックの記憶・緋"
+    },
+    "slug": "kureritukuno-ji-yi-fei"
+  },
+  "IT_JB_MM_LW_GLMS": {
+    "dataId": "IT_JB_MM_LW_GLMS",
+    "names": {
+      "en": "翼ある者の記憶・翠"
+    },
+    "slug": "yiaru-zheno-ji-yi-cui"
+  },
+  "IT_JB_MM_LW_GLMS_2": {
+    "dataId": "IT_JB_MM_LW_GLMS_2",
+    "names": {
+      "en": "翼ある者の記憶・碧"
+    },
+    "slug": "yiaru-zheno-ji-yi-bi"
+  },
+  "IT_JB_MM_LW_GLMS_3": {
+    "dataId": "IT_JB_MM_LW_GLMS_3",
+    "names": {
+      "en": "翼ある者の記憶・紫"
+    },
+    "slug": "yiaru-zheno-ji-yi-zi"
+  },
+  "IT_JB_MM_LW_GLMS_4": {
+    "dataId": "IT_JB_MM_LW_GLMS_4",
+    "names": {
+      "en": "翼ある者の記憶・橘"
+    },
+    "slug": "yiaru-zheno-ji-yi-ju"
+  },
+  "IT_JB_MM_LW_GLMS_5": {
+    "dataId": "IT_JB_MM_LW_GLMS_5",
+    "names": {
+      "en": "翼ある者の記憶・緋"
+    },
+    "slug": "yiaru-zheno-ji-yi-fei"
+  },
+  "IT_JB_MM_FF14_YSTL": {
+    "dataId": "IT_JB_MM_FF14_YSTL",
+    "names": {
+      "en": "魔女の記憶・翠"
+    },
+    "slug": "mo-nuno-ji-yi-cui"
+  },
+  "IT_JB_MM_FF14_YSTL_2": {
+    "dataId": "IT_JB_MM_FF14_YSTL_2",
+    "names": {
+      "en": "魔女の記憶・碧"
+    },
+    "slug": "mo-nuno-ji-yi-bi"
+  },
+  "IT_JB_MM_FF14_YSTL_3": {
+    "dataId": "IT_JB_MM_FF14_YSTL_3",
+    "names": {
+      "en": "魔女の記憶・紫"
+    },
+    "slug": "mo-nuno-ji-yi-zi"
+  },
+  "IT_JB_MM_FF14_YSTL_4": {
+    "dataId": "IT_JB_MM_FF14_YSTL_4",
+    "names": {
+      "en": "魔女の記憶・橘"
+    },
+    "slug": "mo-nuno-ji-yi-ju"
+  },
+  "IT_JB_MM_FF14_YSTL_5": {
+    "dataId": "IT_JB_MM_FF14_YSTL_5",
+    "names": {
+      "en": "魔女の記憶・緋"
+    },
+    "slug": "mo-nuno-ji-yi-fei"
+  },
+  "IT_JB_MM_FF14_TNCR": {
+    "dataId": "IT_JB_MM_FF14_TNCR",
+    "names": {
+      "en": "ガンブレイカーの記憶・翠"
+    },
+    "slug": "ganbureikano-ji-yi-cui"
+  },
+  "IT_JB_MM_FF14_TNCR_2": {
+    "dataId": "IT_JB_MM_FF14_TNCR_2",
+    "names": {
+      "en": "ガンブレイカーの記憶・碧"
+    },
+    "slug": "ganbureikano-ji-yi-bi"
+  },
+  "IT_JB_MM_FF14_TNCR_3": {
+    "dataId": "IT_JB_MM_FF14_TNCR_3",
+    "names": {
+      "en": "ガンブレイカーの記憶・紫"
+    },
+    "slug": "ganbureikano-ji-yi-zi"
+  },
+  "IT_JB_MM_FF14_TNCR_4": {
+    "dataId": "IT_JB_MM_FF14_TNCR_4",
+    "names": {
+      "en": "ガンブレイカーの記憶・橘"
+    },
+    "slug": "ganbureikano-ji-yi-ju"
+  },
+  "IT_JB_MM_FF14_TNCR_5": {
+    "dataId": "IT_JB_MM_FF14_TNCR_5",
+    "names": {
+      "en": "ガンブレイカーの記憶・緋"
+    },
+    "slug": "ganbureikano-ji-yi-fei"
+  },
+  "IT_JB_MM_VIK": {
+    "dataId": "IT_JB_MM_VIK",
+    "names": {
+      "en": "バイキングの記憶・翠"
+    },
+    "slug": "baikinguno-ji-yi-cui"
+  },
+  "IT_JB_MM_VIK_2": {
+    "dataId": "IT_JB_MM_VIK_2",
+    "names": {
+      "en": "バイキングの記憶・碧"
+    },
+    "slug": "baikinguno-ji-yi-bi"
+  },
+  "IT_JB_MM_VIK_3": {
+    "dataId": "IT_JB_MM_VIK_3",
+    "names": {
+      "en": "バイキングの記憶・紫"
+    },
+    "slug": "baikinguno-ji-yi-zi"
+  },
+  "IT_JB_MM_VIK_4": {
+    "dataId": "IT_JB_MM_VIK_4",
+    "names": {
+      "en": "バイキングの記憶・橘"
+    },
+    "slug": "baikinguno-ji-yi-ju"
+  },
+  "IT_JB_MM_VIK_5": {
+    "dataId": "IT_JB_MM_VIK_5",
+    "names": {
+      "en": "バイキングの記憶・緋"
+    },
+    "slug": "baikinguno-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_GFGR": {
+    "dataId": "IT_JB_MM_FFT_GFGR",
+    "names": {
+      "en": "ダークナイトの記憶・翠"
+    },
+    "slug": "dakunaitono-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_GFGR_2": {
+    "dataId": "IT_JB_MM_FFT_GFGR_2",
+    "names": {
+      "en": "ダークナイトの記憶・碧"
+    },
+    "slug": "dakunaitono-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_GFGR_3": {
+    "dataId": "IT_JB_MM_FFT_GFGR_3",
+    "names": {
+      "en": "ダークナイトの記憶・紫"
+    },
+    "slug": "dakunaitono-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_GFGR_4": {
+    "dataId": "IT_JB_MM_FFT_GFGR_4",
+    "names": {
+      "en": "ダークナイトの記憶・橘"
+    },
+    "slug": "dakunaitono-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_GFGR_5": {
+    "dataId": "IT_JB_MM_FFT_GFGR_5",
+    "names": {
+      "en": "ダークナイトの記憶・緋"
+    },
+    "slug": "dakunaitono-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_RAMZ": {
+    "dataId": "IT_JB_MM_FFT_RAMZ",
+    "names": {
+      "en": "見習い戦士（ラムザ）の記憶・翠"
+    },
+    "slug": "jian-xii-zhan-shi-ramuza-no-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_RAMZ_2": {
+    "dataId": "IT_JB_MM_FFT_RAMZ_2",
+    "names": {
+      "en": "見習い戦士（ラムザ）の記憶・碧"
+    },
+    "slug": "jian-xii-zhan-shi-ramuza-no-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_RAMZ_3": {
+    "dataId": "IT_JB_MM_FFT_RAMZ_3",
+    "names": {
+      "en": "見習い戦士（ラムザ）の記憶・紫"
+    },
+    "slug": "jian-xii-zhan-shi-ramuza-no-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_RAMZ_4": {
+    "dataId": "IT_JB_MM_FFT_RAMZ_4",
+    "names": {
+      "en": "見習い戦士（ラムザ）の記憶・橘"
+    },
+    "slug": "jian-xii-zhan-shi-ramuza-no-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_RAMZ_5": {
+    "dataId": "IT_JB_MM_FFT_RAMZ_5",
+    "names": {
+      "en": "見習い戦士（ラムザ）の記憶・緋"
+    },
+    "slug": "jian-xii-zhan-shi-ramuza-no-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_ORND": {
+    "dataId": "IT_JB_MM_FFT_ORND",
+    "names": {
+      "en": "剣聖の記憶・翠"
+    },
+    "slug": "jian-shengno-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_ORND_2": {
+    "dataId": "IT_JB_MM_FFT_ORND_2",
+    "names": {
+      "en": "剣聖の記憶・碧"
+    },
+    "slug": "jian-shengno-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_ORND_3": {
+    "dataId": "IT_JB_MM_FFT_ORND_3",
+    "names": {
+      "en": "剣聖の記憶・紫"
+    },
+    "slug": "jian-shengno-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_ORND_4": {
+    "dataId": "IT_JB_MM_FFT_ORND_4",
+    "names": {
+      "en": "剣聖の記憶・橘"
+    },
+    "slug": "jian-shengno-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_ORND_5": {
+    "dataId": "IT_JB_MM_FFT_ORND_5",
+    "names": {
+      "en": "剣聖の記憶・緋"
+    },
+    "slug": "jian-shengno-ji-yi-fei"
+  },
+  "IT_JB_MM_WGN": {
+    "dataId": "IT_JB_MM_WGN",
+    "names": {
+      "en": "ダブルガンナーの記憶・翠"
+    },
+    "slug": "daburugannano-ji-yi-cui"
+  },
+  "IT_JB_MM_WGN_2": {
+    "dataId": "IT_JB_MM_WGN_2",
+    "names": {
+      "en": "ダブルガンナーの記憶・碧"
+    },
+    "slug": "daburugannano-ji-yi-bi"
+  },
+  "IT_JB_MM_WGN_3": {
+    "dataId": "IT_JB_MM_WGN_3",
+    "names": {
+      "en": "ダブルガンナーの記憶・紫"
+    },
+    "slug": "daburugannano-ji-yi-zi"
+  },
+  "IT_JB_MM_WGN_4": {
+    "dataId": "IT_JB_MM_WGN_4",
+    "names": {
+      "en": "ダブルガンナーの記憶・橘"
+    },
+    "slug": "daburugannano-ji-yi-ju"
+  },
+  "IT_JB_MM_WGN_5": {
+    "dataId": "IT_JB_MM_WGN_5",
+    "names": {
+      "en": "ダブルガンナーの記憶・緋"
+    },
+    "slug": "daburugannano-ji-yi-fei"
+  },
+  "IT_JB_MM_ASS": {
+    "dataId": "IT_JB_MM_ASS",
+    "names": {
+      "en": "アサシンの記憶・翠"
+    },
+    "slug": "asasinno-ji-yi-cui"
+  },
+  "IT_JB_MM_ASS_2": {
+    "dataId": "IT_JB_MM_ASS_2",
+    "names": {
+      "en": "アサシンの記憶・碧"
+    },
+    "slug": "asasinno-ji-yi-bi"
+  },
+  "IT_JB_MM_ASS_3": {
+    "dataId": "IT_JB_MM_ASS_3",
+    "names": {
+      "en": "アサシンの記憶・紫"
+    },
+    "slug": "asasinno-ji-yi-zi"
+  },
+  "IT_JB_MM_ASS_4": {
+    "dataId": "IT_JB_MM_ASS_4",
+    "names": {
+      "en": "アサシンの記憶・橘"
+    },
+    "slug": "asasinno-ji-yi-ju"
+  },
+  "IT_JB_MM_ASS_5": {
+    "dataId": "IT_JB_MM_ASS_5",
+    "names": {
+      "en": "アサシンの記憶・緋"
+    },
+    "slug": "asasinno-ji-yi-fei"
+  },
+  "IT_JB_MM_LW_RAIN": {
+    "dataId": "IT_JB_MM_LW_RAIN",
+    "names": {
+      "en": "グランシェルトの騎士（炎）の記憶・翠"
+    },
+    "slug": "guransierutono-qi-shi-yan-no-ji-yi-cui"
+  },
+  "IT_JB_MM_LW_RAIN_2": {
+    "dataId": "IT_JB_MM_LW_RAIN_2",
+    "names": {
+      "en": "グランシェルトの騎士（炎）の記憶・碧"
+    },
+    "slug": "guransierutono-qi-shi-yan-no-ji-yi-bi"
+  },
+  "IT_JB_MM_LW_RAIN_3": {
+    "dataId": "IT_JB_MM_LW_RAIN_3",
+    "names": {
+      "en": "グランシェルトの騎士（炎）の記憶・紫"
+    },
+    "slug": "guransierutono-qi-shi-yan-no-ji-yi-zi"
+  },
+  "IT_JB_MM_LW_RAIN_4": {
+    "dataId": "IT_JB_MM_LW_RAIN_4",
+    "names": {
+      "en": "グランシェルトの騎士（炎）の記憶・橘"
+    },
+    "slug": "guransierutono-qi-shi-yan-no-ji-yi-ju"
+  },
+  "IT_JB_MM_LW_RAIN_5": {
+    "dataId": "IT_JB_MM_LW_RAIN_5",
+    "names": {
+      "en": "グランシェルトの騎士（炎）の記憶・緋"
+    },
+    "slug": "guransierutono-qi-shi-yan-no-ji-yi-fei"
+  },
+  "IT_JB_MM_FF1_WROL": {
+    "dataId": "IT_JB_MM_FF1_WROL",
+    "names": {
+      "en": "光の戦士の記憶・翠"
+    },
+    "slug": "guangno-zhan-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_FF1_WROL_2": {
+    "dataId": "IT_JB_MM_FF1_WROL_2",
+    "names": {
+      "en": "光の戦士の記憶・碧"
+    },
+    "slug": "guangno-zhan-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_FF1_WROL_3": {
+    "dataId": "IT_JB_MM_FF1_WROL_3",
+    "names": {
+      "en": "光の戦士の記憶・紫"
+    },
+    "slug": "guangno-zhan-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_FF1_WROL_4": {
+    "dataId": "IT_JB_MM_FF1_WROL_4",
+    "names": {
+      "en": "光の戦士の記憶・橘"
+    },
+    "slug": "guangno-zhan-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_FF1_WROL_5": {
+    "dataId": "IT_JB_MM_FF1_WROL_5",
+    "names": {
+      "en": "光の戦士の記憶・緋"
+    },
+    "slug": "guangno-zhan-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_MST": {
+    "dataId": "IT_JB_MM_MST",
+    "names": {
+      "en": "魔杖術士の記憶・翠"
+    },
+    "slug": "mo-zhang-shu-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_MST_2": {
+    "dataId": "IT_JB_MM_MST_2",
+    "names": {
+      "en": "魔杖術士の記憶・碧"
+    },
+    "slug": "mo-zhang-shu-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_MST_3": {
+    "dataId": "IT_JB_MM_MST_3",
+    "names": {
+      "en": "魔杖術士の記憶・紫"
+    },
+    "slug": "mo-zhang-shu-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_MST_4": {
+    "dataId": "IT_JB_MM_MST_4",
+    "names": {
+      "en": "魔杖術士の記憶・橘"
+    },
+    "slug": "mo-zhang-shu-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_MST_5": {
+    "dataId": "IT_JB_MM_MST_5",
+    "names": {
+      "en": "魔杖術士の記憶・緋"
+    },
+    "slug": "mo-zhang-shu-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_AGRA": {
+    "dataId": "IT_JB_MM_FFT_AGRA",
+    "names": {
+      "en": "ホーリーナイトの記憶・翠"
+    },
+    "slug": "horinaitono-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_AGRA_2": {
+    "dataId": "IT_JB_MM_FFT_AGRA_2",
+    "names": {
+      "en": "ホーリーナイトの記憶・碧"
+    },
+    "slug": "horinaitono-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_AGRA_3": {
+    "dataId": "IT_JB_MM_FFT_AGRA_3",
+    "names": {
+      "en": "ホーリーナイトの記憶・紫"
+    },
+    "slug": "horinaitono-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_AGRA_4": {
+    "dataId": "IT_JB_MM_FFT_AGRA_4",
+    "names": {
+      "en": "ホーリーナイトの記憶・橘"
+    },
+    "slug": "horinaitono-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_AGRA_5": {
+    "dataId": "IT_JB_MM_FFT_AGRA_5",
+    "names": {
+      "en": "ホーリーナイトの記憶・緋"
+    },
+    "slug": "horinaitono-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_DELT": {
+    "dataId": "IT_JB_MM_FFT_DELT",
+    "names": {
+      "en": "見習い戦士（ディリータ）の記憶・翠"
+    },
+    "slug": "jian-xii-zhan-shi-deirita-no-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_DELT_2": {
+    "dataId": "IT_JB_MM_FFT_DELT_2",
+    "names": {
+      "en": "見習い戦士（ディリータ）の記憶・碧"
+    },
+    "slug": "jian-xii-zhan-shi-deirita-no-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_DELT_3": {
+    "dataId": "IT_JB_MM_FFT_DELT_3",
+    "names": {
+      "en": "見習い戦士（ディリータ）の記憶・紫"
+    },
+    "slug": "jian-xii-zhan-shi-deirita-no-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_DELT_4": {
+    "dataId": "IT_JB_MM_FFT_DELT_4",
+    "names": {
+      "en": "見習い戦士（ディリータ）の記憶・橘"
+    },
+    "slug": "jian-xii-zhan-shi-deirita-no-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_DELT_5": {
+    "dataId": "IT_JB_MM_FFT_DELT_5",
+    "names": {
+      "en": "見習い戦士（ディリータ）の記憶・緋"
+    },
+    "slug": "jian-xii-zhan-shi-deirita-no-ji-yi-fei"
+  },
+  "IT_JB_MM_FFT_MSTD": {
+    "dataId": "IT_JB_MM_FFT_MSTD",
+    "names": {
+      "en": "機工士の記憶・翠"
+    },
+    "slug": "ji-gong-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_FFT_MSTD_2": {
+    "dataId": "IT_JB_MM_FFT_MSTD_2",
+    "names": {
+      "en": "機工士の記憶・碧"
+    },
+    "slug": "ji-gong-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_FFT_MSTD_3": {
+    "dataId": "IT_JB_MM_FFT_MSTD_3",
+    "names": {
+      "en": "機工士の記憶・紫"
+    },
+    "slug": "ji-gong-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_FFT_MSTD_4": {
+    "dataId": "IT_JB_MM_FFT_MSTD_4",
+    "names": {
+      "en": "機工士の記憶・橘"
+    },
+    "slug": "ji-gong-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_FFT_MSTD_5": {
+    "dataId": "IT_JB_MM_FFT_MSTD_5",
+    "names": {
+      "en": "機工士の記憶・緋"
+    },
+    "slug": "ji-gong-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_CAL": {
+    "dataId": "IT_JB_MM_CAL",
+    "names": {
+      "en": "算術士の記憶・翠"
+    },
+    "slug": "suan-shu-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_CAL_2": {
+    "dataId": "IT_JB_MM_CAL_2",
+    "names": {
+      "en": "算術士の記憶・碧"
+    },
+    "slug": "suan-shu-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_CAL_3": {
+    "dataId": "IT_JB_MM_CAL_3",
+    "names": {
+      "en": "算術士の記憶・紫"
+    },
+    "slug": "suan-shu-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_CAL_4": {
+    "dataId": "IT_JB_MM_CAL_4",
+    "names": {
+      "en": "算術士の記憶・橘"
+    },
+    "slug": "suan-shu-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_CAL_5": {
+    "dataId": "IT_JB_MM_CAL_5",
+    "names": {
+      "en": "算術士の記憶・緋"
+    },
+    "slug": "suan-shu-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_LW_STRN": {
+    "dataId": "IT_JB_MM_LW_STRN",
+    "names": {
+      "en": "破滅の騎士の記憶・翠"
+    },
+    "slug": "po-mieno-qi-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_LW_STRN_2": {
+    "dataId": "IT_JB_MM_LW_STRN_2",
+    "names": {
+      "en": "破滅の騎士の記憶・碧"
+    },
+    "slug": "po-mieno-qi-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_LW_STRN_3": {
+    "dataId": "IT_JB_MM_LW_STRN_3",
+    "names": {
+      "en": "破滅の騎士の記憶・紫"
+    },
+    "slug": "po-mieno-qi-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_LW_STRN_4": {
+    "dataId": "IT_JB_MM_LW_STRN_4",
+    "names": {
+      "en": "破滅の騎士の記憶・橘"
+    },
+    "slug": "po-mieno-qi-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_LW_STRN_5": {
+    "dataId": "IT_JB_MM_LW_STRN_5",
+    "names": {
+      "en": "破滅の騎士の記憶・緋"
+    },
+    "slug": "po-mieno-qi-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_LW_GRSR": {
+    "dataId": "IT_JB_MM_LW_GRSR",
+    "names": {
+      "en": "ヴァルキリーの記憶・翠"
+    },
+    "slug": "vuarukirino-ji-yi-cui"
+  },
+  "IT_JB_MM_LW_GRSR_2": {
+    "dataId": "IT_JB_MM_LW_GRSR_2",
+    "names": {
+      "en": "ヴァルキリーの記憶・碧"
+    },
+    "slug": "vuarukirino-ji-yi-bi"
+  },
+  "IT_JB_MM_LW_GRSR_3": {
+    "dataId": "IT_JB_MM_LW_GRSR_3",
+    "names": {
+      "en": "ヴァルキリーの記憶・紫"
+    },
+    "slug": "vuarukirino-ji-yi-zi"
+  },
+  "IT_JB_MM_LW_GRSR_4": {
+    "dataId": "IT_JB_MM_LW_GRSR_4",
+    "names": {
+      "en": "ヴァルキリーの記憶・橘"
+    },
+    "slug": "vuarukirino-ji-yi-ju"
+  },
+  "IT_JB_MM_LW_GRSR_5": {
+    "dataId": "IT_JB_MM_LW_GRSR_5",
+    "names": {
+      "en": "ヴァルキリーの記憶・緋"
+    },
+    "slug": "vuarukirino-ji-yi-fei"
+  },
+  "IT_JB_MM_LW_LSWL": {
+    "dataId": "IT_JB_MM_LW_LSWL",
+    "names": {
+      "en": "グランシェルトの騎士（氷）の記憶・翠"
+    },
+    "slug": "guransierutono-qi-shi-bing-no-ji-yi-cui"
+  },
+  "IT_JB_MM_LW_LSWL_2": {
+    "dataId": "IT_JB_MM_LW_LSWL_2",
+    "names": {
+      "en": "グランシェルトの騎士（氷）の記憶・碧"
+    },
+    "slug": "guransierutono-qi-shi-bing-no-ji-yi-bi"
+  },
+  "IT_JB_MM_LW_LSWL_3": {
+    "dataId": "IT_JB_MM_LW_LSWL_3",
+    "names": {
+      "en": "グランシェルトの騎士（氷）の記憶・紫"
+    },
+    "slug": "guransierutono-qi-shi-bing-no-ji-yi-zi"
+  },
+  "IT_JB_MM_LW_LSWL_4": {
+    "dataId": "IT_JB_MM_LW_LSWL_4",
+    "names": {
+      "en": "グランシェルトの騎士（氷）の記憶・橘"
+    },
+    "slug": "guransierutono-qi-shi-bing-no-ji-yi-ju"
+  },
+  "IT_JB_MM_LW_LSWL_5": {
+    "dataId": "IT_JB_MM_LW_LSWL_5",
+    "names": {
+      "en": "グランシェルトの騎士（氷）の記憶・緋"
+    },
+    "slug": "guransierutono-qi-shi-bing-no-ji-yi-fei"
+  },
+  "IT_JB_MM_MKN": {
+    "dataId": "IT_JB_MM_MKN",
+    "names": {
+      "en": "ルーンナイトの記憶・翠"
+    },
+    "slug": "runnaitono-ji-yi-cui"
+  },
+  "IT_JB_MM_MKN_2": {
+    "dataId": "IT_JB_MM_MKN_2",
+    "names": {
+      "en": "ルーンナイトの記憶・碧"
+    },
+    "slug": "runnaitono-ji-yi-bi"
+  },
+  "IT_JB_MM_MKN_3": {
+    "dataId": "IT_JB_MM_MKN_3",
+    "names": {
+      "en": "ルーンナイトの記憶・紫"
+    },
+    "slug": "runnaitono-ji-yi-zi"
+  },
+  "IT_JB_MM_MKN_4": {
+    "dataId": "IT_JB_MM_MKN_4",
+    "names": {
+      "en": "ルーンナイトの記憶・橘"
+    },
+    "slug": "runnaitono-ji-yi-ju"
+  },
+  "IT_JB_MM_MKN_5": {
+    "dataId": "IT_JB_MM_MKN_5",
+    "names": {
+      "en": "ルーンナイトの記憶・緋"
+    },
+    "slug": "runnaitono-ji-yi-fei"
+  },
+  "IT_JB_MM_FF4_CECL": {
+    "dataId": "IT_JB_MM_FF4_CECL",
+    "names": {
+      "en": "月のパラディンの記憶・翠"
+    },
+    "slug": "yuenoparadeinno-ji-yi-cui"
+  },
+  "IT_JB_MM_FF4_CECL_2": {
+    "dataId": "IT_JB_MM_FF4_CECL_2",
+    "names": {
+      "en": "月のパラディンの記憶・碧"
+    },
+    "slug": "yuenoparadeinno-ji-yi-bi"
+  },
+  "IT_JB_MM_FF4_CECL_3": {
+    "dataId": "IT_JB_MM_FF4_CECL_3",
+    "names": {
+      "en": "月のパラディンの記憶・紫"
+    },
+    "slug": "yuenoparadeinno-ji-yi-zi"
+  },
+  "IT_JB_MM_FF4_CECL_4": {
+    "dataId": "IT_JB_MM_FF4_CECL_4",
+    "names": {
+      "en": "月のパラディンの記憶・橘"
+    },
+    "slug": "yuenoparadeinno-ji-yi-ju"
+  },
+  "IT_JB_MM_FF4_CECL_5": {
+    "dataId": "IT_JB_MM_FF4_CECL_5",
+    "names": {
+      "en": "月のパラディンの記憶・緋"
+    },
+    "slug": "yuenoparadeinno-ji-yi-fei"
+  },
+  "IT_JB_MM_FF4_ROSA": {
+    "dataId": "IT_JB_MM_FF4_ROSA",
+    "names": {
+      "en": "バロンの白魔道士の記憶・翠"
+    },
+    "slug": "baronno-bai-mo-dao-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_FF4_ROSA_2": {
+    "dataId": "IT_JB_MM_FF4_ROSA_2",
+    "names": {
+      "en": "バロンの白魔道士の記憶・碧"
+    },
+    "slug": "baronno-bai-mo-dao-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_FF4_ROSA_3": {
+    "dataId": "IT_JB_MM_FF4_ROSA_3",
+    "names": {
+      "en": "バロンの白魔道士の記憶・紫"
+    },
+    "slug": "baronno-bai-mo-dao-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_FF4_ROSA_4": {
+    "dataId": "IT_JB_MM_FF4_ROSA_4",
+    "names": {
+      "en": "バロンの白魔道士の記憶・橘"
+    },
+    "slug": "baronno-bai-mo-dao-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_FF4_ROSA_5": {
+    "dataId": "IT_JB_MM_FF4_ROSA_5",
+    "names": {
+      "en": "バロンの白魔道士の記憶・緋"
+    },
+    "slug": "baronno-bai-mo-dao-shino-ji-yi-fei"
+  },
+  "IT_JB_MM_FF4_KAIN": {
+    "dataId": "IT_JB_MM_FF4_KAIN",
+    "names": {
+      "en": "バロンの竜騎士の記憶・翠"
+    },
+    "slug": "baronno-long-qi-shino-ji-yi-cui"
+  },
+  "IT_JB_MM_FF4_KAIN_2": {
+    "dataId": "IT_JB_MM_FF4_KAIN_2",
+    "names": {
+      "en": "バロンの竜騎士の記憶・碧"
+    },
+    "slug": "baronno-long-qi-shino-ji-yi-bi"
+  },
+  "IT_JB_MM_FF4_KAIN_3": {
+    "dataId": "IT_JB_MM_FF4_KAIN_3",
+    "names": {
+      "en": "バロンの竜騎士の記憶・紫"
+    },
+    "slug": "baronno-long-qi-shino-ji-yi-zi"
+  },
+  "IT_JB_MM_FF4_KAIN_4": {
+    "dataId": "IT_JB_MM_FF4_KAIN_4",
+    "names": {
+      "en": "バロンの竜騎士の記憶・橘"
+    },
+    "slug": "baronno-long-qi-shino-ji-yi-ju"
+  },
+  "IT_JB_MM_FF4_KAIN_5": {
+    "dataId": "IT_JB_MM_FF4_KAIN_5",
+    "names": {
+      "en": "バロンの竜騎士の記憶・緋"
+    },
+    "slug": "baronno-long-qi-shino-ji-yi-fei"
+  },
+  "IT_JB_EM_FIRE_1": {
+    "dataId": "IT_JB_EM_FIRE_1",
+    "names": {
+      "en": "火の輝石・翠"
+    },
+    "slug": "huono-hui-shi-cui"
+  },
+  "IT_JB_EM_FIRE_2": {
+    "dataId": "IT_JB_EM_FIRE_2",
+    "names": {
+      "en": "火の輝石・碧"
+    },
+    "slug": "huono-hui-shi-bi"
+  },
+  "IT_JB_EM_FIRE_3": {
+    "dataId": "IT_JB_EM_FIRE_3",
+    "names": {
+      "en": "火の輝石・紫"
+    },
+    "slug": "huono-hui-shi-zi"
+  },
+  "IT_JB_EM_FIRE_4": {
+    "dataId": "IT_JB_EM_FIRE_4",
+    "names": {
+      "en": "火の輝石・橘"
+    },
+    "slug": "huono-hui-shi-ju"
+  },
+  "IT_JB_EM_FIRE_5": {
+    "dataId": "IT_JB_EM_FIRE_5",
+    "names": {
+      "en": "火の輝石・緋"
+    },
+    "slug": "huono-hui-shi-fei"
+  },
+  "IT_JB_EM_ICE_1": {
+    "dataId": "IT_JB_EM_ICE_1",
+    "names": {
+      "en": "氷の輝石・翠"
+    },
+    "slug": "bingno-hui-shi-cui"
+  },
+  "IT_JB_EM_ICE_2": {
+    "dataId": "IT_JB_EM_ICE_2",
+    "names": {
+      "en": "氷の輝石・碧"
+    },
+    "slug": "bingno-hui-shi-bi"
+  },
+  "IT_JB_EM_ICE_3": {
+    "dataId": "IT_JB_EM_ICE_3",
+    "names": {
+      "en": "氷の輝石・紫"
+    },
+    "slug": "bingno-hui-shi-zi"
+  },
+  "IT_JB_EM_ICE_4": {
+    "dataId": "IT_JB_EM_ICE_4",
+    "names": {
+      "en": "氷の輝石・橘"
+    },
+    "slug": "bingno-hui-shi-ju"
+  },
+  "IT_JB_EM_ICE_5": {
+    "dataId": "IT_JB_EM_ICE_5",
+    "names": {
+      "en": "氷の輝石・緋"
+    },
+    "slug": "bingno-hui-shi-fei"
+  },
+  "IT_JB_EM_WIND_1": {
+    "dataId": "IT_JB_EM_WIND_1",
+    "names": {
+      "en": "風の輝石・翠"
+    },
+    "slug": "fengno-hui-shi-cui"
+  },
+  "IT_JB_EM_WIND_2": {
+    "dataId": "IT_JB_EM_WIND_2",
+    "names": {
+      "en": "風の輝石・碧"
+    },
+    "slug": "fengno-hui-shi-bi"
+  },
+  "IT_JB_EM_WIND_3": {
+    "dataId": "IT_JB_EM_WIND_3",
+    "names": {
+      "en": "風の輝石・紫"
+    },
+    "slug": "fengno-hui-shi-zi"
+  },
+  "IT_JB_EM_WIND_4": {
+    "dataId": "IT_JB_EM_WIND_4",
+    "names": {
+      "en": "風の輝石・橘"
+    },
+    "slug": "fengno-hui-shi-ju"
+  },
+  "IT_JB_EM_WIND_5": {
+    "dataId": "IT_JB_EM_WIND_5",
+    "names": {
+      "en": "風の輝石・緋"
+    },
+    "slug": "fengno-hui-shi-fei"
+  },
+  "IT_JB_EM_SOIL_1": {
+    "dataId": "IT_JB_EM_SOIL_1",
+    "names": {
+      "en": "土の輝石・翠"
+    },
+    "slug": "tuno-hui-shi-cui"
+  },
+  "IT_JB_EM_SOIL_2": {
+    "dataId": "IT_JB_EM_SOIL_2",
+    "names": {
+      "en": "土の輝石・碧"
+    },
+    "slug": "tuno-hui-shi-bi"
+  },
+  "IT_JB_EM_SOIL_3": {
+    "dataId": "IT_JB_EM_SOIL_3",
+    "names": {
+      "en": "土の輝石・紫"
+    },
+    "slug": "tuno-hui-shi-zi"
+  },
+  "IT_JB_EM_SOIL_4": {
+    "dataId": "IT_JB_EM_SOIL_4",
+    "names": {
+      "en": "土の輝石・橘"
+    },
+    "slug": "tuno-hui-shi-ju"
+  },
+  "IT_JB_EM_SOIL_5": {
+    "dataId": "IT_JB_EM_SOIL_5",
+    "names": {
+      "en": "土の輝石・緋"
+    },
+    "slug": "tuno-hui-shi-fei"
+  },
+  "IT_JB_EM_THUNDER_1": {
+    "dataId": "IT_JB_EM_THUNDER_1",
+    "names": {
+      "en": "雷の輝石・翠"
+    },
+    "slug": "leino-hui-shi-cui"
+  },
+  "IT_JB_EM_THUNDER_2": {
+    "dataId": "IT_JB_EM_THUNDER_2",
+    "names": {
+      "en": "雷の輝石・碧"
+    },
+    "slug": "leino-hui-shi-bi"
+  },
+  "IT_JB_EM_THUNDER_3": {
+    "dataId": "IT_JB_EM_THUNDER_3",
+    "names": {
+      "en": "雷の輝石・紫"
+    },
+    "slug": "leino-hui-shi-zi"
+  },
+  "IT_JB_EM_THUNDER_4": {
+    "dataId": "IT_JB_EM_THUNDER_4",
+    "names": {
+      "en": "雷の輝石・橘"
+    },
+    "slug": "leino-hui-shi-ju"
+  },
+  "IT_JB_EM_THUNDER_5": {
+    "dataId": "IT_JB_EM_THUNDER_5",
+    "names": {
+      "en": "雷の輝石・緋"
+    },
+    "slug": "leino-hui-shi-fei"
+  },
+  "IT_JB_EM_WATER_1": {
+    "dataId": "IT_JB_EM_WATER_1",
+    "names": {
+      "en": "水の輝石・翠"
+    },
+    "slug": "shuino-hui-shi-cui"
+  },
+  "IT_JB_EM_WATER_2": {
+    "dataId": "IT_JB_EM_WATER_2",
+    "names": {
+      "en": "水の輝石・碧"
+    },
+    "slug": "shuino-hui-shi-bi"
+  },
+  "IT_JB_EM_WATER_3": {
+    "dataId": "IT_JB_EM_WATER_3",
+    "names": {
+      "en": "水の輝石・紫"
+    },
+    "slug": "shuino-hui-shi-zi"
+  },
+  "IT_JB_EM_WATER_4": {
+    "dataId": "IT_JB_EM_WATER_4",
+    "names": {
+      "en": "水の輝石・橘"
+    },
+    "slug": "shuino-hui-shi-ju"
+  },
+  "IT_JB_EM_WATER_5": {
+    "dataId": "IT_JB_EM_WATER_5",
+    "names": {
+      "en": "水の輝石・緋"
+    },
+    "slug": "shuino-hui-shi-fei"
+  },
+  "IT_JB_EM_SHINE_1": {
+    "dataId": "IT_JB_EM_SHINE_1",
+    "names": {
+      "en": "光の輝石・翠"
+    },
+    "slug": "guangno-hui-shi-cui"
+  },
+  "IT_JB_EM_SHINE_2": {
+    "dataId": "IT_JB_EM_SHINE_2",
+    "names": {
+      "en": "光の輝石・碧"
+    },
+    "slug": "guangno-hui-shi-bi"
+  },
+  "IT_JB_EM_SHINE_3": {
+    "dataId": "IT_JB_EM_SHINE_3",
+    "names": {
+      "en": "光の輝石・紫"
+    },
+    "slug": "guangno-hui-shi-zi"
+  },
+  "IT_JB_EM_SHINE_4": {
+    "dataId": "IT_JB_EM_SHINE_4",
+    "names": {
+      "en": "光の輝石・橘"
+    },
+    "slug": "guangno-hui-shi-ju"
+  },
+  "IT_JB_EM_SHINE_5": {
+    "dataId": "IT_JB_EM_SHINE_5",
+    "names": {
+      "en": "光の輝石・緋"
+    },
+    "slug": "guangno-hui-shi-fei"
+  },
+  "IT_JB_EM_DARK_1": {
+    "dataId": "IT_JB_EM_DARK_1",
+    "names": {
+      "en": "闇の輝石・翠"
+    },
+    "slug": "anno-hui-shi-cui"
+  },
+  "IT_JB_EM_DARK_2": {
+    "dataId": "IT_JB_EM_DARK_2",
+    "names": {
+      "en": "闇の輝石・碧"
+    },
+    "slug": "anno-hui-shi-bi"
+  },
+  "IT_JB_EM_DARK_3": {
+    "dataId": "IT_JB_EM_DARK_3",
+    "names": {
+      "en": "闇の輝石・紫"
+    },
+    "slug": "anno-hui-shi-zi"
+  },
+  "IT_JB_EM_DARK_4": {
+    "dataId": "IT_JB_EM_DARK_4",
+    "names": {
+      "en": "闇の輝石・橘"
+    },
+    "slug": "anno-hui-shi-ju"
+  },
+  "IT_JB_EM_DARK_5": {
+    "dataId": "IT_JB_EM_DARK_5",
+    "names": {
+      "en": "闇の輝石・緋"
+    },
+    "slug": "anno-hui-shi-fei"
+  },
+  "IT_JB_IM_ANGEL_1": {
+    "dataId": "IT_JB_IM_ANGEL_1",
+    "names": {
+      "en": "祈る天使像・翠"
+    },
+    "slug": "qiru-tian-shi-xiang-cui"
+  },
+  "IT_JB_IM_ANGEL_2": {
+    "dataId": "IT_JB_IM_ANGEL_2",
+    "names": {
+      "en": "祈る天使像・碧"
+    },
+    "slug": "qiru-tian-shi-xiang-bi"
+  },
+  "IT_JB_IM_ANGEL_3": {
+    "dataId": "IT_JB_IM_ANGEL_3",
+    "names": {
+      "en": "祈る天使像・紫"
+    },
+    "slug": "qiru-tian-shi-xiang-zi"
+  },
+  "IT_JB_IM_ANGEL_4": {
+    "dataId": "IT_JB_IM_ANGEL_4",
+    "names": {
+      "en": "祈る天使像・橘"
+    },
+    "slug": "qiru-tian-shi-xiang-ju"
+  },
+  "IT_JB_IM_ANGEL_5": {
+    "dataId": "IT_JB_IM_ANGEL_5",
+    "names": {
+      "en": "祈る天使像・緋"
+    },
+    "slug": "qiru-tian-shi-xiang-fei"
+  },
+  "IT_JB_IM_DRAGON_1": {
+    "dataId": "IT_JB_IM_DRAGON_1",
+    "names": {
+      "en": "佇む地竜像・翠"
+    },
+    "slug": "zhumu-di-long-xiang-cui"
+  },
+  "IT_JB_IM_DRAGON_2": {
+    "dataId": "IT_JB_IM_DRAGON_2",
+    "names": {
+      "en": "佇む地竜像・碧"
+    },
+    "slug": "zhumu-di-long-xiang-bi"
+  },
+  "IT_JB_IM_DRAGON_3": {
+    "dataId": "IT_JB_IM_DRAGON_3",
+    "names": {
+      "en": "佇む地竜像・紫"
+    },
+    "slug": "zhumu-di-long-xiang-zi"
+  },
+  "IT_JB_IM_DRAGON_4": {
+    "dataId": "IT_JB_IM_DRAGON_4",
+    "names": {
+      "en": "佇む地竜像・橘"
+    },
+    "slug": "zhumu-di-long-xiang-ju"
+  },
+  "IT_JB_IM_DRAGON_5": {
+    "dataId": "IT_JB_IM_DRAGON_5",
+    "names": {
+      "en": "佇む地竜像・緋"
+    },
+    "slug": "zhumu-di-long-xiang-fei"
+  },
+  "IT_UN_AW_FIRE": {
+    "dataId": "IT_UN_AW_FIRE",
+    "names": {
+      "en": "火の覚醒輝源"
+    },
+    "slug": "huono-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_ICE": {
+    "dataId": "IT_UN_AW_ICE",
+    "names": {
+      "en": "氷の覚醒輝源"
+    },
+    "slug": "bingno-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_WIND": {
+    "dataId": "IT_UN_AW_WIND",
+    "names": {
+      "en": "風の覚醒輝源"
+    },
+    "slug": "fengno-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_SOIL": {
+    "dataId": "IT_UN_AW_SOIL",
+    "names": {
+      "en": "土の覚醒輝源"
+    },
+    "slug": "tuno-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_THUNDER": {
+    "dataId": "IT_UN_AW_THUNDER",
+    "names": {
+      "en": "雷の覚醒輝源"
+    },
+    "slug": "leino-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_WATER": {
+    "dataId": "IT_UN_AW_WATER",
+    "names": {
+      "en": "水の覚醒輝源"
+    },
+    "slug": "shuino-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_SHINE": {
+    "dataId": "IT_UN_AW_SHINE",
+    "names": {
+      "en": "光の覚醒輝源"
+    },
+    "slug": "guangno-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_DARK": {
+    "dataId": "IT_UN_AW_DARK",
+    "names": {
+      "en": "闇の覚醒輝源"
+    },
+    "slug": "anno-jue-xing-hui-yuan"
+  },
+  "IT_UN_AW_FIRE_R2": {
+    "dataId": "IT_UN_AW_FIRE_R2",
+    "names": {
+      "en": "火の覚醒魂（★2）"
+    },
+    "slug": "huono-jue-xing-hun-2"
+  },
+  "IT_UN_AW_FIRE_R3": {
+    "dataId": "IT_UN_AW_FIRE_R3",
+    "names": {
+      "en": "火の覚醒魂（★3）"
+    },
+    "slug": "huono-jue-xing-hun-3"
+  },
+  "IT_UN_AW_FIRE_R4": {
+    "dataId": "IT_UN_AW_FIRE_R4",
+    "names": {
+      "en": "火の覚醒魂（★4）"
+    },
+    "slug": "huono-jue-xing-hun-4"
+  },
+  "IT_UN_AW_FIRE_R5": {
+    "dataId": "IT_UN_AW_FIRE_R5",
+    "names": {
+      "en": "火の覚醒魂（★5）"
+    },
+    "slug": "huono-jue-xing-hun-5"
+  },
+  "IT_UN_AW_FIRE_R6": {
+    "dataId": "IT_UN_AW_FIRE_R6",
+    "names": {
+      "en": "火の覚醒魂（★6）"
+    },
+    "slug": "huono-jue-xing-hun-6"
+  },
+  "IT_UN_AW_ICE_R2": {
+    "dataId": "IT_UN_AW_ICE_R2",
+    "names": {
+      "en": "氷の覚醒魂（★2）"
+    },
+    "slug": "bingno-jue-xing-hun-2"
+  },
+  "IT_UN_AW_ICE_R3": {
+    "dataId": "IT_UN_AW_ICE_R3",
+    "names": {
+      "en": "氷の覚醒魂（★3）"
+    },
+    "slug": "bingno-jue-xing-hun-3"
+  },
+  "IT_UN_AW_ICE_R4": {
+    "dataId": "IT_UN_AW_ICE_R4",
+    "names": {
+      "en": "氷の覚醒魂（★4）"
+    },
+    "slug": "bingno-jue-xing-hun-4"
+  },
+  "IT_UN_AW_ICE_R5": {
+    "dataId": "IT_UN_AW_ICE_R5",
+    "names": {
+      "en": "氷の覚醒魂（★5）"
+    },
+    "slug": "bingno-jue-xing-hun-5"
+  },
+  "IT_UN_AW_ICE_R6": {
+    "dataId": "IT_UN_AW_ICE_R6",
+    "names": {
+      "en": "氷の覚醒魂（★6）"
+    },
+    "slug": "bingno-jue-xing-hun-6"
+  },
+  "IT_UN_AW_WIND_R2": {
+    "dataId": "IT_UN_AW_WIND_R2",
+    "names": {
+      "en": "風の覚醒魂（★2）"
+    },
+    "slug": "fengno-jue-xing-hun-2"
+  },
+  "IT_UN_AW_WIND_R3": {
+    "dataId": "IT_UN_AW_WIND_R3",
+    "names": {
+      "en": "風の覚醒魂（★3）"
+    },
+    "slug": "fengno-jue-xing-hun-3"
+  },
+  "IT_UN_AW_WIND_R4": {
+    "dataId": "IT_UN_AW_WIND_R4",
+    "names": {
+      "en": "風の覚醒魂（★4）"
+    },
+    "slug": "fengno-jue-xing-hun-4"
+  },
+  "IT_UN_AW_WIND_R5": {
+    "dataId": "IT_UN_AW_WIND_R5",
+    "names": {
+      "en": "風の覚醒魂（★5）"
+    },
+    "slug": "fengno-jue-xing-hun-5"
+  },
+  "IT_UN_AW_WIND_R6": {
+    "dataId": "IT_UN_AW_WIND_R6",
+    "names": {
+      "en": "風の覚醒魂（★6）"
+    },
+    "slug": "fengno-jue-xing-hun-6"
+  },
+  "IT_UN_AW_SOIL_R2": {
+    "dataId": "IT_UN_AW_SOIL_R2",
+    "names": {
+      "en": "土の覚醒魂（★2）"
+    },
+    "slug": "tuno-jue-xing-hun-2"
+  },
+  "IT_UN_AW_SOIL_R3": {
+    "dataId": "IT_UN_AW_SOIL_R3",
+    "names": {
+      "en": "土の覚醒魂（★3）"
+    },
+    "slug": "tuno-jue-xing-hun-3"
+  },
+  "IT_UN_AW_SOIL_R4": {
+    "dataId": "IT_UN_AW_SOIL_R4",
+    "names": {
+      "en": "土の覚醒魂（★4）"
+    },
+    "slug": "tuno-jue-xing-hun-4"
+  },
+  "IT_UN_AW_SOIL_R5": {
+    "dataId": "IT_UN_AW_SOIL_R5",
+    "names": {
+      "en": "土の覚醒魂（★5）"
+    },
+    "slug": "tuno-jue-xing-hun-5"
+  },
+  "IT_UN_AW_SOIL_R6": {
+    "dataId": "IT_UN_AW_SOIL_R6",
+    "names": {
+      "en": "土の覚醒魂（★6）"
+    },
+    "slug": "tuno-jue-xing-hun-6"
+  },
+  "IT_UN_AW_THUNDER_R2": {
+    "dataId": "IT_UN_AW_THUNDER_R2",
+    "names": {
+      "en": "雷の覚醒魂（★2）"
+    },
+    "slug": "leino-jue-xing-hun-2"
+  },
+  "IT_UN_AW_THUNDER_R3": {
+    "dataId": "IT_UN_AW_THUNDER_R3",
+    "names": {
+      "en": "雷の覚醒魂（★3）"
+    },
+    "slug": "leino-jue-xing-hun-3"
+  },
+  "IT_UN_AW_THUNDER_R4": {
+    "dataId": "IT_UN_AW_THUNDER_R4",
+    "names": {
+      "en": "雷の覚醒魂（★4）"
+    },
+    "slug": "leino-jue-xing-hun-4"
+  },
+  "IT_UN_AW_THUNDER_R5": {
+    "dataId": "IT_UN_AW_THUNDER_R5",
+    "names": {
+      "en": "雷の覚醒魂（★5）"
+    },
+    "slug": "leino-jue-xing-hun-5"
+  },
+  "IT_UN_AW_THUNDER_R6": {
+    "dataId": "IT_UN_AW_THUNDER_R6",
+    "names": {
+      "en": "雷の覚醒魂（★6）"
+    },
+    "slug": "leino-jue-xing-hun-6"
+  },
+  "IT_UN_AW_WATER_R2": {
+    "dataId": "IT_UN_AW_WATER_R2",
+    "names": {
+      "en": "水の覚醒魂（★2）"
+    },
+    "slug": "shuino-jue-xing-hun-2"
+  },
+  "IT_UN_AW_WATER_R3": {
+    "dataId": "IT_UN_AW_WATER_R3",
+    "names": {
+      "en": "水の覚醒魂（★3）"
+    },
+    "slug": "shuino-jue-xing-hun-3"
+  },
+  "IT_UN_AW_WATER_R4": {
+    "dataId": "IT_UN_AW_WATER_R4",
+    "names": {
+      "en": "水の覚醒魂（★4）"
+    },
+    "slug": "shuino-jue-xing-hun-4"
+  },
+  "IT_UN_AW_WATER_R5": {
+    "dataId": "IT_UN_AW_WATER_R5",
+    "names": {
+      "en": "水の覚醒魂（★5）"
+    },
+    "slug": "shuino-jue-xing-hun-5"
+  },
+  "IT_UN_AW_WATER_R6": {
+    "dataId": "IT_UN_AW_WATER_R6",
+    "names": {
+      "en": "水の覚醒魂（★6）"
+    },
+    "slug": "shuino-jue-xing-hun-6"
+  },
+  "IT_UN_AW_SHINE_R2": {
+    "dataId": "IT_UN_AW_SHINE_R2",
+    "names": {
+      "en": "光の覚醒魂（★2）"
+    },
+    "slug": "guangno-jue-xing-hun-2"
+  },
+  "IT_UN_AW_SHINE_R3": {
+    "dataId": "IT_UN_AW_SHINE_R3",
+    "names": {
+      "en": "光の覚醒魂（★3）"
+    },
+    "slug": "guangno-jue-xing-hun-3"
+  },
+  "IT_UN_AW_SHINE_R4": {
+    "dataId": "IT_UN_AW_SHINE_R4",
+    "names": {
+      "en": "光の覚醒魂（★4）"
+    },
+    "slug": "guangno-jue-xing-hun-4"
+  },
+  "IT_UN_AW_SHINE_R5": {
+    "dataId": "IT_UN_AW_SHINE_R5",
+    "names": {
+      "en": "光の覚醒魂（★5）"
+    },
+    "slug": "guangno-jue-xing-hun-5"
+  },
+  "IT_UN_AW_SHINE_R6": {
+    "dataId": "IT_UN_AW_SHINE_R6",
+    "names": {
+      "en": "光の覚醒魂（★6）"
+    },
+    "slug": "guangno-jue-xing-hun-6"
+  },
+  "IT_UN_AW_DARK_R2": {
+    "dataId": "IT_UN_AW_DARK_R2",
+    "names": {
+      "en": "闇の覚醒魂（★2）"
+    },
+    "slug": "anno-jue-xing-hun-2"
+  },
+  "IT_UN_AW_DARK_R3": {
+    "dataId": "IT_UN_AW_DARK_R3",
+    "names": {
+      "en": "闇の覚醒魂（★3）"
+    },
+    "slug": "anno-jue-xing-hun-3"
+  },
+  "IT_UN_AW_DARK_R4": {
+    "dataId": "IT_UN_AW_DARK_R4",
+    "names": {
+      "en": "闇の覚醒魂（★4）"
+    },
+    "slug": "anno-jue-xing-hun-4"
+  },
+  "IT_UN_AW_DARK_R5": {
+    "dataId": "IT_UN_AW_DARK_R5",
+    "names": {
+      "en": "闇の覚醒魂（★5）"
+    },
+    "slug": "anno-jue-xing-hun-5"
+  },
+  "IT_UN_AW_DARK_R6": {
+    "dataId": "IT_UN_AW_DARK_R6",
+    "names": {
+      "en": "闇の覚醒魂（★6）"
+    },
+    "slug": "anno-jue-xing-hun-6"
+  },
+  "IT_AW_VBALL_N": {
+    "dataId": "IT_AW_VBALL_N",
+    "names": {
+      "en": "赤銅の幻球"
+    },
+    "slug": "chi-tongno-huan-qiu"
+  },
+  "IT_AW_VBALL_R": {
+    "dataId": "IT_AW_VBALL_R",
+    "names": {
+      "en": "白銀の幻球"
+    },
+    "slug": "bai-yinno-huan-qiu"
+  },
+  "IT_AW_VBALL_SR": {
+    "dataId": "IT_AW_VBALL_SR",
+    "names": {
+      "en": "黄金の幻球"
+    },
+    "slug": "huang-jinno-huan-qiu"
+  },
+  "IT_AW_VBALL_SSR": {
+    "dataId": "IT_AW_VBALL_SSR",
+    "names": {
+      "en": "蒼輝の幻球"
+    },
+    "slug": "cang-huino-huan-qiu"
+  },
+  "IT_AW_VBALL_UR": {
+    "dataId": "IT_AW_VBALL_UR",
+    "names": {
+      "en": "星虹の幻球"
+    },
+    "slug": "xing-hongno-huan-qiu"
+  },
+  "IT_PI_COM_FIRE": {
+    "dataId": "IT_PI_COM_FIRE",
+    "names": {
+      "en": "火の想いの欠片"
+    },
+    "slug": "huono-xiangino-qian-pian"
+  },
+  "IT_PI_COM_ICE": {
+    "dataId": "IT_PI_COM_ICE",
+    "names": {
+      "en": "氷の想いの欠片"
+    },
+    "slug": "bingno-xiangino-qian-pian"
+  },
+  "IT_PI_COM_WIND": {
+    "dataId": "IT_PI_COM_WIND",
+    "names": {
+      "en": "風の想いの欠片"
+    },
+    "slug": "fengno-xiangino-qian-pian"
+  },
+  "IT_PI_COM_SOIL": {
+    "dataId": "IT_PI_COM_SOIL",
+    "names": {
+      "en": "土の想いの欠片"
+    },
+    "slug": "tuno-xiangino-qian-pian"
+  },
+  "IT_PI_COM_THUNDER": {
+    "dataId": "IT_PI_COM_THUNDER",
+    "names": {
+      "en": "雷の想いの欠片"
+    },
+    "slug": "leino-xiangino-qian-pian"
+  },
+  "IT_PI_COM_WATER": {
+    "dataId": "IT_PI_COM_WATER",
+    "names": {
+      "en": "水の想いの欠片"
+    },
+    "slug": "shuino-xiangino-qian-pian"
+  },
+  "IT_PI_COM_SHINE": {
+    "dataId": "IT_PI_COM_SHINE",
+    "names": {
+      "en": "光の想いの欠片"
+    },
+    "slug": "guangno-xiangino-qian-pian"
+  },
+  "IT_PI_COM_DARK": {
+    "dataId": "IT_PI_COM_DARK",
+    "names": {
+      "en": "闇の想いの欠片"
+    },
+    "slug": "anno-xiangino-qian-pian"
+  },
+  "IT_PI_COM_ALL": {
+    "dataId": "IT_PI_COM_ALL",
+    "names": {
+      "en": "虹の想いの欠片"
+    },
+    "slug": "hongno-xiangino-qian-pian"
+  },
+  "IT_PI_LW_MONT": {
+    "dataId": "IT_PI_LW_MONT",
+    "names": {
+      "en": "モント・リオニスの欠片"
+    },
+    "slug": "montorionisuno-qian-pian"
+  },
+  "IT_PI_LW_STRN": {
+    "dataId": "IT_PI_LW_STRN",
+    "names": {
+      "en": "シュテル・リオニスの欠片"
+    },
+    "slug": "siyuterurionisuno-qian-pian"
+  },
+  "IT_PI_LW_ELDE": {
+    "dataId": "IT_PI_LW_ELDE",
+    "names": {
+      "en": "エルデ・リオニスの欠片"
+    },
+    "slug": "eruderionisuno-qian-pian"
+  },
+  "IT_PI_LW_ROBB": {
+    "dataId": "IT_PI_LW_ROBB",
+    "names": {
+      "en": "ロブ・ホルンの欠片"
+    },
+    "slug": "robuhorunno-qian-pian"
+  },
+  "IT_PI_LW_ENBT": {
+    "dataId": "IT_PI_LW_ENBT",
+    "names": {
+      "en": "エンゲルベルトの欠片"
+    },
+    "slug": "engeruberutono-qian-pian"
+  },
+  "IT_PI_LW_ZIZA": {
+    "dataId": "IT_PI_LW_ZIZA",
+    "names": {
+      "en": "ジザの欠片"
+    },
+    "slug": "zizano-qian-pian"
+  },
+  "IT_PI_LW_AILN": {
+    "dataId": "IT_PI_LW_AILN",
+    "names": {
+      "en": "アイリーンの欠片"
+    },
+    "slug": "airinno-qian-pian"
+  },
+  "IT_PI_LW_MDNA": {
+    "dataId": "IT_PI_LW_MDNA",
+    "names": {
+      "en": "メディエナの欠片"
+    },
+    "slug": "medeienano-qian-pian"
+  },
+  "IT_PI_LW_AYKA": {
+    "dataId": "IT_PI_LW_AYKA",
+    "names": {
+      "en": "アヤカの欠片"
+    },
+    "slug": "ayakano-qian-pian"
+  },
+  "IT_PI_LW_MACR": {
+    "dataId": "IT_PI_LW_MACR",
+    "names": {
+      "en": "マシュリー・ホルンの欠片"
+    },
+    "slug": "masiyurihorunno-qian-pian"
+  },
+  "IT_PI_LW_FDRC": {
+    "dataId": "IT_PI_LW_FDRC",
+    "names": {
+      "en": "フェデリカの欠片"
+    },
+    "slug": "huederikano-qian-pian"
+  },
+  "IT_PI_LW_YERM": {
+    "dataId": "IT_PI_LW_YERM",
+    "names": {
+      "en": "イェルマの欠片"
+    },
+    "slug": "ierumano-qian-pian"
+  },
+  "IT_PI_LW_RAMD_01": {
+    "dataId": "IT_PI_LW_RAMD_01",
+    "names": {
+      "en": "ラマダ（Xmas）の欠片"
+    },
+    "slug": "ramada-xmas-no-qian-pian"
+  },
+  "IT_PI_LW_MACR_01": {
+    "dataId": "IT_PI_LW_MACR_01",
+    "names": {
+      "en": "マシュリー（Xmas）の欠片"
+    },
+    "slug": "masiyuri-xmas-no-qian-pian"
+  },
+  "IT_PI_LW_MRND": {
+    "dataId": "IT_PI_LW_MRND",
+    "names": {
+      "en": "ミランダの欠片"
+    },
+    "slug": "mirandano-qian-pian"
+  },
+  "IT_PI_LW_VKTR": {
+    "dataId": "IT_PI_LW_VKTR",
+    "names": {
+      "en": "ヴィクトラの欠片"
+    },
+    "slug": "vuikutorano-qian-pian"
+  },
+  "IT_PI_LW_HLNA": {
+    "dataId": "IT_PI_LW_HLNA",
+    "names": {
+      "en": "ヘレナ・リオニスの欠片"
+    },
+    "slug": "herenarionisuno-qian-pian"
+  },
+  "IT_PI_LW_LILS": {
+    "dataId": "IT_PI_LW_LILS",
+    "names": {
+      "en": "リリシュの欠片"
+    },
+    "slug": "ririsiyuno-qian-pian"
+  },
+  "IT_PI_LW_RAMD": {
+    "dataId": "IT_PI_LW_RAMD",
+    "names": {
+      "en": "ラマダの欠片"
+    },
+    "slug": "ramadano-qian-pian"
+  },
+  "IT_PI_LW_OOOO": {
+    "dataId": "IT_PI_LW_OOOO",
+    "names": {
+      "en": "オーの欠片"
+    },
+    "slug": "ono-qian-pian"
+  },
+  "IT_PI_LW_LRNZ": {
+    "dataId": "IT_PI_LW_LRNZ",
+    "names": {
+      "en": "ロレンツォの欠片"
+    },
+    "slug": "rorentuono-qian-pian"
+  },
+  "IT_PI_LW_RIRY": {
+    "dataId": "IT_PI_LW_RIRY",
+    "names": {
+      "en": "ライリュウの欠片"
+    },
+    "slug": "rairiyuuno-qian-pian"
+  },
+  "IT_PI_LW_VSTR": {
+    "dataId": "IT_PI_LW_VSTR",
+    "names": {
+      "en": "ヴィストラールの欠片"
+    },
+    "slug": "vuisutoraruno-qian-pian"
+  },
+  "IT_PI_LW_CLEY": {
+    "dataId": "IT_PI_LW_CLEY",
+    "names": {
+      "en": "クーリ・ウェズエットの欠片"
+    },
+    "slug": "kuriuezuetutono-qian-pian"
+  },
+  "IT_PI_LW_KADI": {
+    "dataId": "IT_PI_LW_KADI",
+    "names": {
+      "en": "カディアの欠片"
+    },
+    "slug": "kadeiano-qian-pian"
+  },
+  "IT_PI_LW_MRLK": {
+    "dataId": "IT_PI_LW_MRLK",
+    "names": {
+      "en": "メリルークの欠片"
+    },
+    "slug": "merirukuno-qian-pian"
+  },
+  "IT_PI_LW_MGRT": {
+    "dataId": "IT_PI_LW_MGRT",
+    "names": {
+      "en": "マルグリットの欠片"
+    },
+    "slug": "maruguritutono-qian-pian"
+  },
+  "IT_PI_LW_PRAY": {
+    "dataId": "IT_PI_LW_PRAY",
+    "names": {
+      "en": "≪祈り≫の欠片"
+    },
+    "slug": "qirino-qian-pian"
+  },
+  "IT_PI_LW_SZRT": {
+    "dataId": "IT_PI_LW_SZRT",
+    "names": {
+      "en": "シュゼルトの欠片"
+    },
+    "slug": "siyuzerutono-qian-pian"
+  },
+  "IT_PI_LW_FINA": {
+    "dataId": "IT_PI_LW_FINA",
+    "names": {
+      "en": "フィーナの欠片"
+    },
+    "slug": "huinano-qian-pian"
+  },
+  "IT_PI_LW_SDLX": {
+    "dataId": "IT_PI_LW_SDLX",
+    "names": {
+      "en": "シャドウリンクスの欠片"
+    },
+    "slug": "siyadourinkusuno-qian-pian"
+  },
+  "IT_PI_LW_NASR": {
+    "dataId": "IT_PI_LW_NASR",
+    "names": {
+      "en": "ナーシアの欠片"
+    },
+    "slug": "nasiano-qian-pian"
+  },
+  "IT_PI_LW_DRND": {
+    "dataId": "IT_PI_LW_DRND",
+    "names": {
+      "en": "ドランドの欠片"
+    },
+    "slug": "dorandono-qian-pian"
+  },
+  "IT_PI_LW_BYLO": {
+    "dataId": "IT_PI_LW_BYLO",
+    "names": {
+      "en": "ベイロの欠片"
+    },
+    "slug": "beirono-qian-pian"
+  },
+  "IT_PI_LW_RYER": {
+    "dataId": "IT_PI_LW_RYER",
+    "names": {
+      "en": "リレルリラの欠片"
+    },
+    "slug": "rirerurirano-qian-pian"
+  },
+  "IT_PI_LW_SCIA": {
+    "dataId": "IT_PI_LW_SCIA",
+    "names": {
+      "en": "ソシアの欠片"
+    },
+    "slug": "sosiano-qian-pian"
+  },
+  "IT_PI_LW_VRID": {
+    "dataId": "IT_PI_LW_VRID",
+    "names": {
+      "en": "ヴァライドの欠片"
+    },
+    "slug": "vuaraidono-qian-pian"
+  },
+  "IT_PI_LW_NAIA": {
+    "dataId": "IT_PI_LW_NAIA",
+    "names": {
+      "en": "ナイアの欠片"
+    },
+    "slug": "naiano-qian-pian"
+  },
+  "IT_PI_LW_SRJS": {
+    "dataId": "IT_PI_LW_SRJS",
+    "names": {
+      "en": "サージェスの欠片"
+    },
+    "slug": "saziesuno-qian-pian"
+  },
+  "IT_PI_LW_UNII": {
+    "dataId": "IT_PI_LW_UNII",
+    "names": {
+      "en": "ユニの欠片"
+    },
+    "slug": "yunino-qian-pian"
+  },
+  "IT_PI_LW_SEVR": {
+    "dataId": "IT_PI_LW_SEVR",
+    "names": {
+      "en": "セヴェロの欠片"
+    },
+    "slug": "sevuerono-qian-pian"
+  },
+  "IT_PI_LW_VADM": {
+    "dataId": "IT_PI_LW_VADM",
+    "names": {
+      "en": "ヴァジムの欠片"
+    },
+    "slug": "vuazimuno-qian-pian"
+  },
+  "IT_PI_LW_MURM": {
+    "dataId": "IT_PI_LW_MURM",
+    "names": {
+      "en": "≪呟き≫の欠片"
+    },
+    "slug": "quankino-qian-pian"
+  },
+  "IT_PI_LW_PHBE": {
+    "dataId": "IT_PI_LW_PHBE",
+    "names": {
+      "en": "フィービーの欠片"
+    },
+    "slug": "huibino-qian-pian"
+  },
+  "IT_PI_LW_ETRE": {
+    "dataId": "IT_PI_LW_ETRE",
+    "names": {
+      "en": "エトアの欠片"
+    },
+    "slug": "etoano-qian-pian"
+  },
+  "IT_PI_LW_THLA": {
+    "dataId": "IT_PI_LW_THLA",
+    "names": {
+      "en": "サリアの欠片"
+    },
+    "slug": "sariano-qian-pian"
+  },
+  "IT_PI_LW_RART": {
+    "dataId": "IT_PI_LW_RART",
+    "names": {
+      "en": "リアートの欠片"
+    },
+    "slug": "riatono-qian-pian"
+  },
+  "IT_PI_LW_MICE": {
+    "dataId": "IT_PI_LW_MICE",
+    "names": {
+      "en": "ミーチェの欠片"
+    },
+    "slug": "mitieno-qian-pian"
+  },
+  "IT_PI_LW_MIIA": {
+    "dataId": "IT_PI_LW_MIIA",
+    "names": {
+      "en": "ミーアの欠片"
+    },
+    "slug": "miano-qian-pian"
+  },
+  "IT_PI_LW_ZZAN": {
+    "dataId": "IT_PI_LW_ZZAN",
+    "names": {
+      "en": "ザザンの欠片"
+    },
+    "slug": "zazanno-qian-pian"
+  },
+  "IT_PI_LW_GLMS": {
+    "dataId": "IT_PI_LW_GLMS",
+    "names": {
+      "en": "ギルガメッシュの欠片"
+    },
+    "slug": "girugametusiyuno-qian-pian"
+  },
+  "IT_PI_FF14_YSTL": {
+    "dataId": "IT_PI_FF14_YSTL",
+    "names": {
+      "en": "ヤ・シュトラの欠片"
+    },
+    "slug": "yasiyutorano-qian-pian"
+  },
+  "IT_PI_FF14_TNCR": {
+    "dataId": "IT_PI_FF14_TNCR",
+    "names": {
+      "en": "サンクレッドの欠片"
+    },
+    "slug": "sankuretudono-qian-pian"
+  },
+  "IT_PI_FFT_GFGR": {
+    "dataId": "IT_PI_FFT_GFGR",
+    "names": {
+      "en": "ガフガリオンの欠片"
+    },
+    "slug": "gahugarionno-qian-pian"
+  },
+  "IT_PI_FFT_RAMZ": {
+    "dataId": "IT_PI_FFT_RAMZ",
+    "names": {
+      "en": "ラムザの欠片"
+    },
+    "slug": "ramuzano-qian-pian"
+  },
+  "IT_PI_FFT_ORND": {
+    "dataId": "IT_PI_FFT_ORND",
+    "names": {
+      "en": "オルランドゥの欠片"
+    },
+    "slug": "orurandouno-qian-pian"
+  },
+  "IT_PI_LW_WHIS": {
+    "dataId": "IT_PI_LW_WHIS",
+    "names": {
+      "en": "≪囁き≫の欠片"
+    },
+    "slug": "niekino-qian-pian"
+  },
+  "IT_PI_LW_KTON": {
+    "dataId": "IT_PI_LW_KTON",
+    "names": {
+      "en": "キトンの欠片"
+    },
+    "slug": "kitonno-qian-pian"
+  },
+  "IT_PI_LW_LUCA": {
+    "dataId": "IT_PI_LW_LUCA",
+    "names": {
+      "en": "ル・シアの欠片"
+    },
+    "slug": "rusiano-qian-pian"
+  },
+  "IT_PI_LW_ADLD": {
+    "dataId": "IT_PI_LW_ADLD",
+    "names": {
+      "en": "アドラードの欠片"
+    },
+    "slug": "adoradono-qian-pian"
+  },
+  "IT_PI_LW_VNLA": {
+    "dataId": "IT_PI_LW_VNLA",
+    "names": {
+      "en": "ヴィネラ・フェネスの欠片"
+    },
+    "slug": "vuinerahuenesuno-qian-pian"
+  },
+  "IT_PI_LW_DRIO": {
+    "dataId": "IT_PI_LW_DRIO",
+    "names": {
+      "en": "ダリオ・ホルンの欠片"
+    },
+    "slug": "dariohorunno-qian-pian"
+  },
+  "IT_PI_LW_TREL": {
+    "dataId": "IT_PI_LW_TREL",
+    "names": {
+      "en": "ティレルの欠片"
+    },
+    "slug": "teireruno-qian-pian"
+  },
+  "IT_PI_LW_RAIN": {
+    "dataId": "IT_PI_LW_RAIN",
+    "names": {
+      "en": "レインの欠片"
+    },
+    "slug": "reinno-qian-pian"
+  },
+  "IT_PI_FF1_WROL": {
+    "dataId": "IT_PI_FF1_WROL",
+    "names": {
+      "en": "光の戦士の欠片"
+    },
+    "slug": "guangno-zhan-shino-qian-pian"
+  },
+  "IT_PI_LW_QILF": {
+    "dataId": "IT_PI_LW_QILF",
+    "names": {
+      "en": "キルフェの欠片"
+    },
+    "slug": "kiruhueno-qian-pian"
+  },
+  "IT_PI_LW_SIMR": {
+    "dataId": "IT_PI_LW_SIMR",
+    "names": {
+      "en": "シムールの欠片"
+    },
+    "slug": "simuruno-qian-pian"
+  },
+  "IT_PI_LW_ORDR": {
+    "dataId": "IT_PI_LW_ORDR",
+    "names": {
+      "en": "オルドアの欠片"
+    },
+    "slug": "orudoano-qian-pian"
+  },
+  "IT_PI_LW_LVES": {
+    "dataId": "IT_PI_LW_LVES",
+    "names": {
+      "en": "ラヴィエスの欠片"
+    },
+    "slug": "ravuiesuno-qian-pian"
+  },
+  "IT_PI_FFT_AGRA": {
+    "dataId": "IT_PI_FFT_AGRA",
+    "names": {
+      "en": "アグリアスの欠片"
+    },
+    "slug": "aguriasuno-qian-pian"
+  },
+  "IT_PI_FFT_DELT": {
+    "dataId": "IT_PI_FFT_DELT",
+    "names": {
+      "en": "ディリータの欠片"
+    },
+    "slug": "deiritano-qian-pian"
+  },
+  "IT_PI_FFT_MSTD": {
+    "dataId": "IT_PI_FFT_MSTD",
+    "names": {
+      "en": "ムスタディオの欠片"
+    },
+    "slug": "musutadeiono-qian-pian"
+  },
+  "IT_PI_LW_IRDL": {
+    "dataId": "IT_PI_LW_IRDL",
+    "names": {
+      "en": "イルディラの欠片"
+    },
+    "slug": "irudeirano-qian-pian"
+  },
+  "IT_PI_LW_STRN_01": {
+    "dataId": "IT_PI_LW_STRN_01",
+    "names": {
+      "en": "シュテル（破滅の騎士）の欠片"
+    },
+    "slug": "siyuteru-po-mieno-qi-shi-no-qian-pian"
+  },
+  "IT_PI_LW_GRSR": {
+    "dataId": "IT_PI_LW_GRSR",
+    "names": {
+      "en": "グラセラ・ウェズエットの欠片"
+    },
+    "slug": "guraserauezuetutono-qian-pian"
+  },
+  "IT_PI_LW_RRIR": {
+    "dataId": "IT_PI_LW_RRIR",
+    "names": {
+      "en": "ロレイラの欠片"
+    },
+    "slug": "roreirano-qian-pian"
+  },
+  "IT_PI_LW_LSWL": {
+    "dataId": "IT_PI_LW_LSWL",
+    "names": {
+      "en": "ラスウェルの欠片"
+    },
+    "slug": "rasuueruno-qian-pian"
+  },
+  "IT_PI_LW_SCAL": {
+    "dataId": "IT_PI_LW_SCAL",
+    "names": {
+      "en": "スカールの欠片"
+    },
+    "slug": "sukaruno-qian-pian"
+  },
+  "IT_PI_LW_MRAL": {
+    "dataId": "IT_PI_LW_MRAL",
+    "names": {
+      "en": "マリアルの欠片"
+    },
+    "slug": "mariaruno-qian-pian"
+  },
+  "IT_PI_LW_LILS_01": {
+    "dataId": "IT_PI_LW_LILS_01",
+    "names": {
+      "en": "リリシュ（水着）の欠片"
+    },
+    "slug": "ririsiyu-shui-zhao-no-qian-pian"
+  },
+  "IT_PI_LW_HWLT": {
+    "dataId": "IT_PI_LW_HWLT",
+    "names": {
+      "en": "ハウレットの欠片"
+    },
+    "slug": "hauretutono-qian-pian"
+  },
+  "IT_PI_LW_CHEL": {
+    "dataId": "IT_PI_LW_CHEL",
+    "names": {
+      "en": "チェルの欠片"
+    },
+    "slug": "tieruno-qian-pian"
+  },
+  "IT_PI_LW_LATH": {
+    "dataId": "IT_PI_LW_LATH",
+    "names": {
+      "en": "ルアーサの欠片"
+    },
+    "slug": "ruasano-qian-pian"
+  },
+  "IT_PI_LW_TITU": {
+    "dataId": "IT_PI_LW_TITU",
+    "names": {
+      "en": "タイタスの欠片"
+    },
+    "slug": "taitasuno-qian-pian"
+  },
+  "IT_PI_FF4_CECL": {
+    "dataId": "IT_PI_FF4_CECL",
+    "names": {
+      "en": "セシルの欠片"
+    },
+    "slug": "sesiruno-qian-pian"
+  },
+  "IT_PI_FF4_ROSA": {
+    "dataId": "IT_PI_FF4_ROSA",
+    "names": {
+      "en": "ローザの欠片"
+    },
+    "slug": "rozano-qian-pian"
+  },
+  "IT_PI_FF4_KAIN": {
+    "dataId": "IT_PI_FF4_KAIN",
+    "names": {
+      "en": "カインの欠片"
+    },
+    "slug": "kainno-qian-pian"
+  },
+  "IT_SB_EXP_FIRE_01": {
+    "dataId": "IT_SB_EXP_FIRE_01",
+    "names": {
+      "en": "赤の魔石（小）"
+    },
+    "slug": "chino-mo-shi-xiao"
+  },
+  "IT_SB_EXP_FIRE_02": {
+    "dataId": "IT_SB_EXP_FIRE_02",
+    "names": {
+      "en": "赤の魔石（中）"
+    },
+    "slug": "chino-mo-shi-zhong"
+  },
+  "IT_SB_EXP_FIRE_03": {
+    "dataId": "IT_SB_EXP_FIRE_03",
+    "names": {
+      "en": "赤の魔石（大）"
+    },
+    "slug": "chino-mo-shi-da"
+  },
+  "IT_SB_EXP_FIRE_04": {
+    "dataId": "IT_SB_EXP_FIRE_04",
+    "names": {
+      "en": "赤の魔石（極）"
+    },
+    "slug": "chino-mo-shi-ji"
+  },
+  "IT_SB_EXP_ICE_01": {
+    "dataId": "IT_SB_EXP_ICE_01",
+    "names": {
+      "en": "青の魔石（小）"
+    },
+    "slug": "qingno-mo-shi-xiao"
+  },
+  "IT_SB_EXP_ICE_02": {
+    "dataId": "IT_SB_EXP_ICE_02",
+    "names": {
+      "en": "青の魔石（中）"
+    },
+    "slug": "qingno-mo-shi-zhong"
+  },
+  "IT_SB_EXP_ICE_03": {
+    "dataId": "IT_SB_EXP_ICE_03",
+    "names": {
+      "en": "青の魔石（大）"
+    },
+    "slug": "qingno-mo-shi-da"
+  },
+  "IT_SB_EXP_ICE_04": {
+    "dataId": "IT_SB_EXP_ICE_04",
+    "names": {
+      "en": "青の魔石（極）"
+    },
+    "slug": "qingno-mo-shi-ji"
+  },
+  "IT_SB_EXP_WIND_01": {
+    "dataId": "IT_SB_EXP_WIND_01",
+    "names": {
+      "en": "緑の魔石（小）"
+    },
+    "slug": "luno-mo-shi-xiao"
+  },
+  "IT_SB_EXP_WIND_02": {
+    "dataId": "IT_SB_EXP_WIND_02",
+    "names": {
+      "en": "緑の魔石（中）"
+    },
+    "slug": "luno-mo-shi-zhong"
+  },
+  "IT_SB_EXP_WIND_03": {
+    "dataId": "IT_SB_EXP_WIND_03",
+    "names": {
+      "en": "緑の魔石（大）"
+    },
+    "slug": "luno-mo-shi-da"
+  },
+  "IT_SB_EXP_WIND_04": {
+    "dataId": "IT_SB_EXP_WIND_04",
+    "names": {
+      "en": "緑の魔石（極）"
+    },
+    "slug": "luno-mo-shi-ji"
+  },
+  "IT_SB_EXP_THUNDER_01": {
+    "dataId": "IT_SB_EXP_THUNDER_01",
+    "names": {
+      "en": "黄の魔石（小）"
+    },
+    "slug": "huangno-mo-shi-xiao"
+  },
+  "IT_SB_EXP_THUNDER_02": {
+    "dataId": "IT_SB_EXP_THUNDER_02",
+    "names": {
+      "en": "黄の魔石（中）"
+    },
+    "slug": "huangno-mo-shi-zhong"
+  },
+  "IT_SB_EXP_THUNDER_03": {
+    "dataId": "IT_SB_EXP_THUNDER_03",
+    "names": {
+      "en": "黄の魔石（大）"
+    },
+    "slug": "huangno-mo-shi-da"
+  },
+  "IT_SB_EXP_THUNDER_04": {
+    "dataId": "IT_SB_EXP_THUNDER_04",
+    "names": {
+      "en": "黄の魔石（極）"
+    },
+    "slug": "huangno-mo-shi-ji"
+  },
+  "IT_SB_EXP_SOIL_01": {
+    "dataId": "IT_SB_EXP_SOIL_01",
+    "names": {
+      "en": "橙の魔石（小）"
+    },
+    "slug": "chengno-mo-shi-xiao"
+  },
+  "IT_SB_EXP_SOIL_02": {
+    "dataId": "IT_SB_EXP_SOIL_02",
+    "names": {
+      "en": "橙の魔石（中）"
+    },
+    "slug": "chengno-mo-shi-zhong"
+  },
+  "IT_SB_EXP_SOIL_03": {
+    "dataId": "IT_SB_EXP_SOIL_03",
+    "names": {
+      "en": "橙の魔石（大）"
+    },
+    "slug": "chengno-mo-shi-da"
+  },
+  "IT_SB_EXP_SOIL_04": {
+    "dataId": "IT_SB_EXP_SOIL_04",
+    "names": {
+      "en": "橙の魔石（極）"
+    },
+    "slug": "chengno-mo-shi-ji"
+  },
+  "IT_SB_EXP_WATER_01": {
+    "dataId": "IT_SB_EXP_WATER_01",
+    "names": {
+      "en": "水の魔石（小）"
+    },
+    "slug": "shuino-mo-shi-xiao"
+  },
+  "IT_SB_EXP_WATER_02": {
+    "dataId": "IT_SB_EXP_WATER_02",
+    "names": {
+      "en": "水の魔石（中）"
+    },
+    "slug": "shuino-mo-shi-zhong"
+  },
+  "IT_SB_EXP_WATER_03": {
+    "dataId": "IT_SB_EXP_WATER_03",
+    "names": {
+      "en": "水の魔石（大）"
+    },
+    "slug": "shuino-mo-shi-da"
+  },
+  "IT_SB_EXP_WATER_04": {
+    "dataId": "IT_SB_EXP_WATER_04",
+    "names": {
+      "en": "水の魔石（極）"
+    },
+    "slug": "shuino-mo-shi-ji"
+  },
+  "IT_SB_EXP_SHINE_01": {
+    "dataId": "IT_SB_EXP_SHINE_01",
+    "names": {
+      "en": "白の魔石（小）"
+    },
+    "slug": "baino-mo-shi-xiao"
+  },
+  "IT_SB_EXP_SHINE_02": {
+    "dataId": "IT_SB_EXP_SHINE_02",
+    "names": {
+      "en": "白の魔石（中）"
+    },
+    "slug": "baino-mo-shi-zhong"
+  },
+  "IT_SB_EXP_SHINE_03": {
+    "dataId": "IT_SB_EXP_SHINE_03",
+    "names": {
+      "en": "白の魔石（大）"
+    },
+    "slug": "baino-mo-shi-da"
+  },
+  "IT_SB_EXP_SHINE_04": {
+    "dataId": "IT_SB_EXP_SHINE_04",
+    "names": {
+      "en": "白の魔石（極）"
+    },
+    "slug": "baino-mo-shi-ji"
+  },
+  "IT_SB_EXP_DARK_01": {
+    "dataId": "IT_SB_EXP_DARK_01",
+    "names": {
+      "en": "紫の魔石（小）"
+    },
+    "slug": "zino-mo-shi-xiao"
+  },
+  "IT_SB_EXP_DARK_02": {
+    "dataId": "IT_SB_EXP_DARK_02",
+    "names": {
+      "en": "紫の魔石（中）"
+    },
+    "slug": "zino-mo-shi-zhong"
+  },
+  "IT_SB_EXP_DARK_03": {
+    "dataId": "IT_SB_EXP_DARK_03",
+    "names": {
+      "en": "紫の魔石（大）"
+    },
+    "slug": "zino-mo-shi-da"
+  },
+  "IT_SB_EXP_DARK_04": {
+    "dataId": "IT_SB_EXP_DARK_04",
+    "names": {
+      "en": "紫の魔石（極）"
+    },
+    "slug": "zino-mo-shi-ji"
+  },
+  "IT_SB_AW_FIRE": {
+    "dataId": "IT_SB_AW_FIRE",
+    "names": {
+      "en": "火の獣醒石"
+    },
+    "slug": "huono-swu-xing-shi"
+  },
+  "IT_SB_AW_ICE": {
+    "dataId": "IT_SB_AW_ICE",
+    "names": {
+      "en": "氷の獣醒石"
+    },
+    "slug": "bingno-swu-xing-shi"
+  },
+  "IT_SB_AW_THUNDER": {
+    "dataId": "IT_SB_AW_THUNDER",
+    "names": {
+      "en": "雷の獣醒石"
+    },
+    "slug": "leino-swu-xing-shi"
+  },
+  "IT_SB_AW_WATER": {
+    "dataId": "IT_SB_AW_WATER",
+    "names": {
+      "en": "水の獣醒石"
+    },
+    "slug": "shuino-swu-xing-shi"
+  },
+  "IT_SB_AW_WIND": {
+    "dataId": "IT_SB_AW_WIND",
+    "names": {
+      "en": "風の獣醒石"
+    },
+    "slug": "fengno-swu-xing-shi"
+  },
+  "IT_SB_AW_SOIL": {
+    "dataId": "IT_SB_AW_SOIL",
+    "names": {
+      "en": "土の獣醒石"
+    },
+    "slug": "tuno-swu-xing-shi"
+  },
+  "IT_SB_AW_SHINE": {
+    "dataId": "IT_SB_AW_SHINE",
+    "names": {
+      "en": "光の獣醒石"
+    },
+    "slug": "guangno-swu-xing-shi"
+  },
+  "IT_SB_AW_DARK": {
+    "dataId": "IT_SB_AW_DARK",
+    "names": {
+      "en": "闇の獣醒石"
+    },
+    "slug": "anno-swu-xing-shi"
+  },
+  "IT_SB_AW_IFRT_R2": {
+    "dataId": "IT_SB_AW_IFRT_R2",
+    "names": {
+      "en": "イフリートの獣醒石（★2）"
+    },
+    "slug": "ihuritono-swu-xing-shi-2"
+  },
+  "IT_SB_AW_IFRT_R3": {
+    "dataId": "IT_SB_AW_IFRT_R3",
+    "names": {
+      "en": "イフリートの獣醒石（★3）"
+    },
+    "slug": "ihuritono-swu-xing-shi-3"
+  },
+  "IT_SB_AW_GLEM_R2": {
+    "dataId": "IT_SB_AW_GLEM_R2",
+    "names": {
+      "en": "ゴーレムの獣醒石（★2）"
+    },
+    "slug": "goremuno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_GLEM_R3": {
+    "dataId": "IT_SB_AW_GLEM_R3",
+    "names": {
+      "en": "ゴーレムの獣醒石（★3）"
+    },
+    "slug": "goremuno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_SIRE_R2": {
+    "dataId": "IT_SB_AW_SIRE_R2",
+    "names": {
+      "en": "セイレーンの獣醒石（★2）"
+    },
+    "slug": "seirenno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_SIRE_R3": {
+    "dataId": "IT_SB_AW_SIRE_R3",
+    "names": {
+      "en": "セイレーンの獣醒石（★3）"
+    },
+    "slug": "seirenno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_SHIV_R2": {
+    "dataId": "IT_SB_AW_SHIV_R2",
+    "names": {
+      "en": "シヴァの獣醒石（★2）"
+    },
+    "slug": "sivuano-swu-xing-shi-2"
+  },
+  "IT_SB_AW_SHIV_R3": {
+    "dataId": "IT_SB_AW_SHIV_R3",
+    "names": {
+      "en": "シヴァの獣醒石（★3）"
+    },
+    "slug": "sivuano-swu-xing-shi-3"
+  },
+  "IT_SB_AW_IGNT_R2": {
+    "dataId": "IT_SB_AW_IGNT_R2",
+    "names": {
+      "en": "鉄巨人の獣醒石（★2）"
+    },
+    "slug": "tie-ju-renno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_IGNT_R3": {
+    "dataId": "IT_SB_AW_IGNT_R3",
+    "names": {
+      "en": "鉄巨人の獣醒石（★3）"
+    },
+    "slug": "tie-ju-renno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_BHMT_R2": {
+    "dataId": "IT_SB_AW_BHMT_R2",
+    "names": {
+      "en": "ベヒーモスの獣醒石（★2）"
+    },
+    "slug": "behimosuno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_BHMT_R3": {
+    "dataId": "IT_SB_AW_BHMT_R3",
+    "names": {
+      "en": "ベヒーモスの獣醒石（★3）"
+    },
+    "slug": "behimosuno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_MABR_R2": {
+    "dataId": "IT_SB_AW_MABR_R2",
+    "names": {
+      "en": "モルボルの獣醒石（★2）"
+    },
+    "slug": "moruboruno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_MABR_R3": {
+    "dataId": "IT_SB_AW_MABR_R3",
+    "names": {
+      "en": "モルボルの獣醒石（★3）"
+    },
+    "slug": "moruboruno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_RAMU_R2": {
+    "dataId": "IT_SB_AW_RAMU_R2",
+    "names": {
+      "en": "ラムウの獣醒石（★2）"
+    },
+    "slug": "ramuuno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_RAMU_R3": {
+    "dataId": "IT_SB_AW_RAMU_R3",
+    "names": {
+      "en": "ラムウの獣醒石（★3）"
+    },
+    "slug": "ramuuno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_MOGL_R2": {
+    "dataId": "IT_SB_AW_MOGL_R2",
+    "names": {
+      "en": "モーグリ（Xmas）の獣醒石（★2）"
+    },
+    "slug": "moguri-xmas-no-swu-xing-shi-2"
+  },
+  "IT_SB_AW_MOGL_R3": {
+    "dataId": "IT_SB_AW_MOGL_R3",
+    "names": {
+      "en": "モーグリ（Xmas）の獣醒石（★3）"
+    },
+    "slug": "moguri-xmas-no-swu-xing-shi-3"
+  },
+  "IT_SB_AW_ODIN_R2": {
+    "dataId": "IT_SB_AW_ODIN_R2",
+    "names": {
+      "en": "オーディンの獣醒石（★2）"
+    },
+    "slug": "odeinno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_ODIN_R3": {
+    "dataId": "IT_SB_AW_ODIN_R3",
+    "names": {
+      "en": "オーディンの獣醒石（★3）"
+    },
+    "slug": "odeinno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_LAMA_01_R2": {
+    "dataId": "IT_SB_AW_LAMA_01_R2",
+    "names": {
+      "en": "ラミアクイーンの獣醒石（★2）"
+    },
+    "slug": "ramiakuinno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_LAMA_01_R3": {
+    "dataId": "IT_SB_AW_LAMA_01_R3",
+    "names": {
+      "en": "ラミアクイーンの獣醒石（★3）"
+    },
+    "slug": "ramiakuinno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_TSLP_R2": {
+    "dataId": "IT_SB_AW_TSLP_R2",
+    "names": {
+      "en": "テトラシルフィードの獣醒石（★2）"
+    },
+    "slug": "tetorasiruhuidono-swu-xing-shi-2"
+  },
+  "IT_SB_AW_TSLP_R3": {
+    "dataId": "IT_SB_AW_TSLP_R3",
+    "names": {
+      "en": "テトラシルフィードの獣醒石（★3）"
+    },
+    "slug": "tetorasiruhuidono-swu-xing-shi-3"
+  },
+  "IT_SB_AW_OCHU_R2": {
+    "dataId": "IT_SB_AW_OCHU_R2",
+    "names": {
+      "en": "オチューの獣醒石（★2）"
+    },
+    "slug": "otiyuno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_OCHU_R3": {
+    "dataId": "IT_SB_AW_OCHU_R3",
+    "names": {
+      "en": "オチューの獣醒石（★3）"
+    },
+    "slug": "otiyuno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_THDG_R2": {
+    "dataId": "IT_SB_AW_THDG_R2",
+    "names": {
+      "en": "２ヘッドドラゴンの獣醒石（★2）"
+    },
+    "slug": "2hetudodoragonno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_THDG_R3": {
+    "dataId": "IT_SB_AW_THDG_R3",
+    "names": {
+      "en": "２ヘッドドラゴンの獣醒石（★3）"
+    },
+    "slug": "2hetudodoragonno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_DABL_R2": {
+    "dataId": "IT_SB_AW_DABL_R2",
+    "names": {
+      "en": "ディアボロスの獣醒石（★2）"
+    },
+    "slug": "deiaborosuno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_DABL_R3": {
+    "dataId": "IT_SB_AW_DABL_R3",
+    "names": {
+      "en": "ディアボロスの獣醒石（★3）"
+    },
+    "slug": "deiaborosuno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_MDFY_R2": {
+    "dataId": "IT_SB_AW_MDFY_R2",
+    "names": {
+      "en": "マインドフレイアの獣醒石（★2）"
+    },
+    "slug": "maindohureiano-swu-xing-shi-2"
+  },
+  "IT_SB_AW_MDFY_R3": {
+    "dataId": "IT_SB_AW_MDFY_R3",
+    "names": {
+      "en": "マインドフレイアの獣醒石（★3）"
+    },
+    "slug": "maindohureiano-swu-xing-shi-3"
+  },
+  "IT_SB_AW_FNRR_R2": {
+    "dataId": "IT_SB_AW_FNRR_R2",
+    "names": {
+      "en": "フェンリルの獣醒石（★2）"
+    },
+    "slug": "huenriruno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_FNRR_R3": {
+    "dataId": "IT_SB_AW_FNRR_R3",
+    "names": {
+      "en": "フェンリルの獣醒石（★3）"
+    },
+    "slug": "huenriruno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_TITN_R2": {
+    "dataId": "IT_SB_AW_TITN_R2",
+    "names": {
+      "en": "タイタンの獣醒石（★2）"
+    },
+    "slug": "taitanno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_TITN_R3": {
+    "dataId": "IT_SB_AW_TITN_R3",
+    "names": {
+      "en": "タイタンの獣醒石（★3）"
+    },
+    "slug": "taitanno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_BLMN_R2": {
+    "dataId": "IT_SB_AW_BLMN_R2",
+    "names": {
+      "en": "ブラッディムーンの獣醒石（★2）"
+    },
+    "slug": "buratudeimunno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_BLMN_R3": {
+    "dataId": "IT_SB_AW_BLMN_R3",
+    "names": {
+      "en": "ブラッディムーンの獣醒石（★3）"
+    },
+    "slug": "buratudeimunno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_AGON_R2": {
+    "dataId": "IT_SB_AW_AGON_R2",
+    "names": {
+      "en": "アイガイオンの獣醒石（★2）"
+    },
+    "slug": "aigaionno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_AGON_R3": {
+    "dataId": "IT_SB_AW_AGON_R3",
+    "names": {
+      "en": "アイガイオンの獣醒石（★3）"
+    },
+    "slug": "aigaionno-swu-xing-shi-3"
+  },
+  "IT_SB_AW_CHCB1_R2": {
+    "dataId": "IT_SB_AW_CHCB1_R2",
+    "names": {
+      "en": "チョコボの獣醒石（★2）"
+    },
+    "slug": "tiyokobono-swu-xing-shi-2"
+  },
+  "IT_SB_AW_CHCB1_R3": {
+    "dataId": "IT_SB_AW_CHCB1_R3",
+    "names": {
+      "en": "チョコボの獣醒石（★3）"
+    },
+    "slug": "tiyokobono-swu-xing-shi-3"
+  },
+  "IT_TICKET_STORY": {
+    "dataId": "IT_TICKET_STORY",
+    "names": {
+      "en": "ストーリースキップチケット"
+    },
+    "slug": "sutorisukituputiketuto"
+  },
+  "IT_TICKET_EVENT": {
+    "dataId": "IT_TICKET_EVENT",
+    "names": {
+      "en": "イベントスキップチケット"
+    },
+    "slug": "ibentosukituputiketuto"
+  },
+  "IT_PT_SKIP_001": {
+    "dataId": "IT_PT_SKIP_001",
+    "names": {
+      "en": "裁きの試練クエストスキップチケット"
+    },
+    "slug": "caikino-shi-liankuesutosukituputiketuto"
+  },
+  "IT_PT_BSSKIP_001": {
+    "dataId": "IT_PT_BSSKIP_001",
+    "names": {
+      "en": "裁きの試練ボススキップチケット"
+    },
+    "slug": "caikino-shi-lianbosusukituputiketuto"
+  },
+  "IT_PT_BOSS_001": {
+    "dataId": "IT_PT_BOSS_001",
+    "names": {
+      "en": "ボスバトルチケット"
+    },
+    "slug": "bosubatorutiketuto"
+  },
+  "IT_PT_SKIP_FF4_1": {
+    "dataId": "IT_PT_SKIP_FF4_1",
+    "names": {
+      "en": "【FFⅣ】試練クエストスキップチケット"
+    },
+    "slug": "ffiv-shi-liankuesutosukituputiketuto"
+  },
+  "IT_PT_BSSKIP_FF4_1": {
+    "dataId": "IT_PT_BSSKIP_FF4_1",
+    "names": {
+      "en": "【FFⅣ】試練ボススキップチケット"
+    },
+    "slug": "ffiv-shi-lianbosusukituputiketuto"
+  },
+  "IT_PT_BOSS_FF4_1": {
+    "dataId": "IT_PT_BOSS_FF4_1",
+    "names": {
+      "en": "【FFⅣ】ボスバトルチケット"
+    },
+    "slug": "ffiv-bosubatorutiketuto"
+  },
+  "IT_AF_EXP_01": {
+    "dataId": "IT_AF_EXP_01",
+    "names": {
+      "en": "アダマンタイト（小）"
+    },
+    "slug": "adamantaito-xiao"
+  },
+  "IT_AF_EXP_02": {
+    "dataId": "IT_AF_EXP_02",
+    "names": {
+      "en": "アダマンタイト（中）"
+    },
+    "slug": "adamantaito-zhong"
+  },
+  "IT_AF_EXP_03": {
+    "dataId": "IT_AF_EXP_03",
+    "names": {
+      "en": "アダマンタイト（大）"
+    },
+    "slug": "adamantaito-da"
+  },
+  "IT_AF_EXP_04": {
+    "dataId": "IT_AF_EXP_04",
+    "names": {
+      "en": "アダマンタイト（極）"
+    },
+    "slug": "adamantaito-ji"
+  },
+  "IT_AF_AW_SWORD": {
+    "dataId": "IT_AF_AW_SWORD",
+    "names": {
+      "en": "精錬の秘伝書（剣）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-jian"
+  },
+  "IT_AF_AW_LSWORD": {
+    "dataId": "IT_AF_AW_LSWORD",
+    "names": {
+      "en": "精錬の秘伝書（大剣）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-da-jian"
+  },
+  "IT_AF_AW_FIST": {
+    "dataId": "IT_AF_AW_FIST",
+    "names": {
+      "en": "精錬の秘伝書（拳）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-quan"
+  },
+  "IT_AF_AW_JSWORD": {
+    "dataId": "IT_AF_AW_JSWORD",
+    "names": {
+      "en": "精錬の秘伝書（刀）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-dao"
+  },
+  "IT_AF_AW_SPEAR": {
+    "dataId": "IT_AF_AW_SPEAR",
+    "names": {
+      "en": "精錬の秘伝書（槍）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-qiang"
+  },
+  "IT_AF_AW_SSWORD": {
+    "dataId": "IT_AF_AW_SSWORD",
+    "names": {
+      "en": "精錬の秘伝書（短剣）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-duan-jian"
+  },
+  "IT_AF_AW_KUNAI": {
+    "dataId": "IT_AF_AW_KUNAI",
+    "names": {
+      "en": "精錬の秘伝書（忍刀）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-ren-dao"
+  },
+  "IT_AF_AW_BOW": {
+    "dataId": "IT_AF_AW_BOW",
+    "names": {
+      "en": "精錬の秘伝書（弓）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-gong"
+  },
+  "IT_AF_AW_GUN": {
+    "dataId": "IT_AF_AW_GUN",
+    "names": {
+      "en": "精錬の秘伝書（銃）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-chong"
+  },
+  "IT_AF_AW_STAFF": {
+    "dataId": "IT_AF_AW_STAFF",
+    "names": {
+      "en": "精錬の秘伝書（杖）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-zhang"
+  },
+  "IT_AF_AW_MACE": {
+    "dataId": "IT_AF_AW_MACE",
+    "names": {
+      "en": "精錬の秘伝書（メイス）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-meisu"
+  },
+  "IT_AF_AW_AXE": {
+    "dataId": "IT_AF_AW_AXE",
+    "names": {
+      "en": "精錬の秘伝書（斧）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-fu"
+  },
+  "IT_AF_AW_ARMOR": {
+    "dataId": "IT_AF_AW_ARMOR",
+    "names": {
+      "en": "精錬の秘伝書（防具）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-fang-ju"
+  },
+  "IT_AF_AW_ACCE": {
+    "dataId": "IT_AF_AW_ACCE",
+    "names": {
+      "en": "精錬の秘伝書（アクセサリ）"
+    },
+    "slug": "jing-lianno-mi-chuan-shu-akusesari"
+  },
+  "IT_AF_MAT_FIRE_01": {
+    "dataId": "IT_AF_MAT_FIRE_01",
+    "names": {
+      "en": "火の結晶"
+    },
+    "slug": "huono-jie-jing"
+  },
+  "IT_AF_MAT_ICE_01": {
+    "dataId": "IT_AF_MAT_ICE_01",
+    "names": {
+      "en": "氷の結晶"
+    },
+    "slug": "bingno-jie-jing"
+  },
+  "IT_AF_MAT_THUNDER_01": {
+    "dataId": "IT_AF_MAT_THUNDER_01",
+    "names": {
+      "en": "雷の結晶"
+    },
+    "slug": "leino-jie-jing"
+  },
+  "IT_AF_MAT_WATER_01": {
+    "dataId": "IT_AF_MAT_WATER_01",
+    "names": {
+      "en": "水の結晶"
+    },
+    "slug": "shuino-jie-jing"
+  },
+  "IT_AF_MAT_SOIL_01": {
+    "dataId": "IT_AF_MAT_SOIL_01",
+    "names": {
+      "en": "土の結晶"
+    },
+    "slug": "tuno-jie-jing"
+  },
+  "IT_AF_MAT_WIND_01": {
+    "dataId": "IT_AF_MAT_WIND_01",
+    "names": {
+      "en": "風の結晶"
+    },
+    "slug": "fengno-jie-jing"
+  },
+  "IT_AF_MAT_SHINE_01": {
+    "dataId": "IT_AF_MAT_SHINE_01",
+    "names": {
+      "en": "光の結晶"
+    },
+    "slug": "guangno-jie-jing"
+  },
+  "IT_AF_MAT_DARK_01": {
+    "dataId": "IT_AF_MAT_DARK_01",
+    "names": {
+      "en": "闇の結晶"
+    },
+    "slug": "anno-jie-jing"
+  },
+  "IT_AF_MAT_LESS_01": {
+    "dataId": "IT_AF_MAT_LESS_01",
+    "names": {
+      "en": "無の結晶"
+    },
+    "slug": "wuno-jie-jing"
+  },
+  "IT_AF_MAT_FIRE_02": {
+    "dataId": "IT_AF_MAT_FIRE_02",
+    "names": {
+      "en": "火の大結晶"
+    },
+    "slug": "huono-da-jie-jing"
+  },
+  "IT_AF_MAT_ICE_02": {
+    "dataId": "IT_AF_MAT_ICE_02",
+    "names": {
+      "en": "氷の大結晶"
+    },
+    "slug": "bingno-da-jie-jing"
+  },
+  "IT_AF_MAT_THUNDER_02": {
+    "dataId": "IT_AF_MAT_THUNDER_02",
+    "names": {
+      "en": "雷の大結晶"
+    },
+    "slug": "leino-da-jie-jing"
+  },
+  "IT_AF_MAT_WATER_02": {
+    "dataId": "IT_AF_MAT_WATER_02",
+    "names": {
+      "en": "水の大結晶"
+    },
+    "slug": "shuino-da-jie-jing"
+  },
+  "IT_AF_MAT_SOIL_02": {
+    "dataId": "IT_AF_MAT_SOIL_02",
+    "names": {
+      "en": "土の大結晶"
+    },
+    "slug": "tuno-da-jie-jing"
+  },
+  "IT_AF_MAT_WIND_02": {
+    "dataId": "IT_AF_MAT_WIND_02",
+    "names": {
+      "en": "風の大結晶"
+    },
+    "slug": "fengno-da-jie-jing"
+  },
+  "IT_AF_MAT_SHINE_02": {
+    "dataId": "IT_AF_MAT_SHINE_02",
+    "names": {
+      "en": "光の大結晶"
+    },
+    "slug": "guangno-da-jie-jing"
+  },
+  "IT_AF_MAT_DARK_02": {
+    "dataId": "IT_AF_MAT_DARK_02",
+    "names": {
+      "en": "闇の大結晶"
+    },
+    "slug": "anno-da-jie-jing"
+  },
+  "IT_AF_MAT_LESS_02": {
+    "dataId": "IT_AF_MAT_LESS_02",
+    "names": {
+      "en": "無の大結晶"
+    },
+    "slug": "wuno-da-jie-jing"
+  },
+  "IT_AF_MAT_HEART_01": {
+    "dataId": "IT_AF_MAT_HEART_01",
+    "names": {
+      "en": "悲哀の心"
+    },
+    "slug": "bei-aino-xin"
+  },
+  "IT_AF_MAT_HEART_02": {
+    "dataId": "IT_AF_MAT_HEART_02",
+    "names": {
+      "en": "憤怒の心"
+    },
+    "slug": "fen-nuno-xin"
+  },
+  "IT_AF_MAT_HEART_03": {
+    "dataId": "IT_AF_MAT_HEART_03",
+    "names": {
+      "en": "愉楽の心"
+    },
+    "slug": "yu-leno-xin"
+  },
+  "IT_AF_MAT_HEART_04": {
+    "dataId": "IT_AF_MAT_HEART_04",
+    "names": {
+      "en": "歓喜の心"
+    },
+    "slug": "huan-xino-xin"
+  },
+  "IT_AF_MAT_LIQUID_01": {
+    "dataId": "IT_AF_MAT_LIQUID_01",
+    "names": {
+      "en": "ドロドロした液体"
+    },
+    "slug": "dorodorosita-ye-ti"
+  },
+  "IT_AF_MAT_LIQUID_02": {
+    "dataId": "IT_AF_MAT_LIQUID_02",
+    "names": {
+      "en": "ネバネバした液体"
+    },
+    "slug": "nebanebasita-ye-ti"
+  },
+  "IT_AF_MAT_LIQUID_03": {
+    "dataId": "IT_AF_MAT_LIQUID_03",
+    "names": {
+      "en": "サラサラした液体"
+    },
+    "slug": "sarasarasita-ye-ti"
+  },
+  "IT_AF_MAT_LIQUID_04": {
+    "dataId": "IT_AF_MAT_LIQUID_04",
+    "names": {
+      "en": "ヌルヌルした液体"
+    },
+    "slug": "nurunurusita-ye-ti"
+  },
+  "IT_AF_MAT_SAP_01": {
+    "dataId": "IT_AF_MAT_SAP_01",
+    "names": {
+      "en": "濁った樹液塊"
+    },
+    "slug": "zhuotuta-shu-ye-kuai"
+  },
+  "IT_AF_MAT_SAP_02": {
+    "dataId": "IT_AF_MAT_SAP_02",
+    "names": {
+      "en": "透き通った樹液塊"
+    },
+    "slug": "touki-tongtuta-shu-ye-kuai"
+  },
+  "IT_AF_MAT_SAP_03": {
+    "dataId": "IT_AF_MAT_SAP_03",
+    "names": {
+      "en": "謎めいた樹液塊"
+    },
+    "slug": "mimeita-shu-ye-kuai"
+  },
+  "IT_AF_MAT_SAP_04": {
+    "dataId": "IT_AF_MAT_SAP_04",
+    "names": {
+      "en": "霊木の樹液塊"
+    },
+    "slug": "ling-muno-shu-ye-kuai"
+  },
+  "IT_AF_MAT_SAND_01": {
+    "dataId": "IT_AF_MAT_SAND_01",
+    "names": {
+      "en": "灰色の霊砂"
+    },
+    "slug": "hui-seno-ling-sha"
+  },
+  "IT_AF_MAT_SAND_02": {
+    "dataId": "IT_AF_MAT_SAND_02",
+    "names": {
+      "en": "青色の霊砂"
+    },
+    "slug": "qing-seno-ling-sha"
+  },
+  "IT_AF_MAT_SAND_03": {
+    "dataId": "IT_AF_MAT_SAND_03",
+    "names": {
+      "en": "黒色の霊砂"
+    },
+    "slug": "hei-seno-ling-sha"
+  },
+  "IT_AF_MAT_SAND_04": {
+    "dataId": "IT_AF_MAT_SAND_04",
+    "names": {
+      "en": "白色の霊砂"
+    },
+    "slug": "bai-seno-ling-sha"
+  },
+  "IT_AF_MAT_OGRE": {
+    "dataId": "IT_AF_MAT_OGRE",
+    "names": {
+      "en": "オーガの剛毛"
+    },
+    "slug": "ogano-gang-mao"
+  },
+  "IT_AF_MAT_BOMB": {
+    "dataId": "IT_AF_MAT_BOMB",
+    "names": {
+      "en": "ボムの灰"
+    },
+    "slug": "bomuno-hui"
+  },
+  "IT_AF_MAT_MABR": {
+    "dataId": "IT_AF_MAT_MABR",
+    "names": {
+      "en": "モルボルの触手"
+    },
+    "slug": "moruboruno-chu-shou"
+  },
+  "IT_AF_MAT_WOLF": {
+    "dataId": "IT_AF_MAT_WOLF",
+    "names": {
+      "en": "狼の牙"
+    },
+    "slug": "langno-ya"
+  },
+  "IT_AF_MAT_ZUUU": {
+    "dataId": "IT_AF_MAT_ZUUU",
+    "names": {
+      "en": "ズーのくちばし"
+    },
+    "slug": "zunokutibasi"
+  },
+  "IT_AF_MAT_BONE": {
+    "dataId": "IT_AF_MAT_BONE",
+    "names": {
+      "en": "骨くず"
+    },
+    "slug": "gukuzu"
+  },
+  "IT_AF_MAT_ARMN": {
+    "dataId": "IT_AF_MAT_ARMN",
+    "names": {
+      "en": "アーリマンの涙"
+    },
+    "slug": "arimanno-lei"
+  },
+  "IT_AF_MAT_MYTHRIL": {
+    "dataId": "IT_AF_MAT_MYTHRIL",
+    "names": {
+      "en": "ミスリル鉱"
+    },
+    "slug": "misuriru-kuang"
+  },
+  "IT_AF_MAT_WATER_03": {
+    "dataId": "IT_AF_MAT_WATER_03",
+    "names": {
+      "en": "水の紋脈鉱"
+    },
+    "slug": "shuino-wen-mo-kuang"
+  },
+  "IT_AF_LW_SWO_001": {
+    "dataId": "IT_AF_LW_SWO_001",
+    "names": {
+      "en": "ロングソードのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "rongusodonokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_002": {
+    "dataId": "IT_AF_LW_SWO_002",
+    "names": {
+      "en": "ミスリルソードのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misurirusodonokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_003": {
+    "dataId": "IT_AF_LW_SWO_003",
+    "names": {
+      "en": "眠りの剣のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "mianrino-jiannokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_004": {
+    "dataId": "IT_AF_LW_SWO_004",
+    "names": {
+      "en": "アイスブランドのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aisuburandonokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_005": {
+    "dataId": "IT_AF_LW_SWO_005",
+    "names": {
+      "en": "フレイムタンのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "hureimutannokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_006": {
+    "dataId": "IT_AF_LW_SWO_006",
+    "names": {
+      "en": "サンゴの剣のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "sangono-jiannokurahutoresipi"
+  },
+  "IT_AF_LW_SWO_023": {
+    "dataId": "IT_AF_LW_SWO_023",
+    "names": {
+      "en": "ローエングリンのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "roengurinnokurahutoresipi"
+  },
+  "IT_AF_LW_BSW_001": {
+    "dataId": "IT_AF_LW_BSW_001",
+    "names": {
+      "en": "クレイモアのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "kureimoanokurahutoresipi"
+  },
+  "IT_AF_LW_BSW_002": {
+    "dataId": "IT_AF_LW_BSW_002",
+    "names": {
+      "en": "ミスリルセイバーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misuriruseibanokurahutoresipi"
+  },
+  "IT_AF_LW_BSW_003": {
+    "dataId": "IT_AF_LW_BSW_003",
+    "names": {
+      "en": "ルーンブレイドのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "runbureidonokurahutoresipi"
+  },
+  "IT_AF_LW_BSW_004": {
+    "dataId": "IT_AF_LW_BSW_004",
+    "names": {
+      "en": "ゴールドブレイドのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "gorudobureidonokurahutoresipi"
+  },
+  "IT_AF_LW_KAT_001": {
+    "dataId": "IT_AF_LW_KAT_001",
+    "names": {
+      "en": "虎鉄のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "hu-tienokurahutoresipi"
+  },
+  "IT_AF_LW_KAT_002": {
+    "dataId": "IT_AF_LW_KAT_002",
+    "names": {
+      "en": "菊一文字のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "ju-yi-wen-zinokurahutoresipi"
+  },
+  "IT_AF_LW_KAT_003": {
+    "dataId": "IT_AF_LW_KAT_003",
+    "names": {
+      "en": "備前長船のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "bei-qian-chang-chuannokurahutoresipi"
+  },
+  "IT_AF_LW_KAT_008": {
+    "dataId": "IT_AF_LW_KAT_008",
+    "names": {
+      "en": "紫電のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "zi-diannokurahutoresipi"
+  },
+  "IT_AF_LW_FIS_001": {
+    "dataId": "IT_AF_LW_FIS_001",
+    "names": {
+      "en": "メタルナックルのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "metarunatukurunokurahutoresipi"
+  },
+  "IT_AF_LW_FIS_002": {
+    "dataId": "IT_AF_LW_FIS_002",
+    "names": {
+      "en": "ミスリルクローのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misurirukuronokurahutoresipi"
+  },
+  "IT_AF_LW_FIS_003": {
+    "dataId": "IT_AF_LW_FIS_003",
+    "names": {
+      "en": "猫の爪のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "maono-zhuanokurahutoresipi"
+  },
+  "IT_AF_LW_SPE_001": {
+    "dataId": "IT_AF_LW_SPE_001",
+    "names": {
+      "en": "パルチザンのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "parutizannokurahutoresipi"
+  },
+  "IT_AF_LW_SPE_002": {
+    "dataId": "IT_AF_LW_SPE_002",
+    "names": {
+      "en": "ミスリルスピアのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misurirusupianokurahutoresipi"
+  },
+  "IT_AF_LW_SPE_003": {
+    "dataId": "IT_AF_LW_SPE_003",
+    "names": {
+      "en": "ウィンドスピアのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "uindosupianokurahutoresipi"
+  },
+  "IT_AF_LW_SPE_004": {
+    "dataId": "IT_AF_LW_SPE_004",
+    "names": {
+      "en": "アイスランスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aisuransunokurahutoresipi"
+  },
+  "IT_AF_LW_SPE_006": {
+    "dataId": "IT_AF_LW_SPE_006",
+    "names": {
+      "en": "竜角の槍のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "long-jiaono-qiangnokurahutoresipi"
+  },
+  "IT_AF_LW_DAG_001": {
+    "dataId": "IT_AF_LW_DAG_001",
+    "names": {
+      "en": "ダガーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "daganokurahutoresipi"
+  },
+  "IT_AF_LW_DAG_002": {
+    "dataId": "IT_AF_LW_DAG_002",
+    "names": {
+      "en": "ミスリルダガーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misurirudaganokurahutoresipi"
+  },
+  "IT_AF_LW_DAG_004": {
+    "dataId": "IT_AF_LW_DAG_004",
+    "names": {
+      "en": "マインゴーシュのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "maingosiyunokurahutoresipi"
+  },
+  "IT_AF_LW_DAG_006": {
+    "dataId": "IT_AF_LW_DAG_006",
+    "names": {
+      "en": "メイジマッシャーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "meizimatusiyanokurahutoresipi"
+  },
+  "IT_AF_LW_NKN_001": {
+    "dataId": "IT_AF_LW_NKN_001",
+    "names": {
+      "en": "くないのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "kunainokurahutoresipi"
+  },
+  "IT_AF_LW_NKN_002": {
+    "dataId": "IT_AF_LW_NKN_002",
+    "names": {
+      "en": "小太刀のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "xiao-tai-daonokurahutoresipi"
+  },
+  "IT_AF_LW_NKN_003": {
+    "dataId": "IT_AF_LW_NKN_003",
+    "names": {
+      "en": "佐助の刀のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "zuo-zhuno-daonokurahutoresipi"
+  },
+  "IT_AF_LW_BOW_001": {
+    "dataId": "IT_AF_LW_BOW_001",
+    "names": {
+      "en": "ロングボウのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "rongubounokurahutoresipi"
+  },
+  "IT_AF_LW_BOW_002": {
+    "dataId": "IT_AF_LW_BOW_002",
+    "names": {
+      "en": "グレートボウのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "guretobounokurahutoresipi"
+  },
+  "IT_AF_LW_BOW_003": {
+    "dataId": "IT_AF_LW_BOW_003",
+    "names": {
+      "en": "ルーンの弓のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "runno-gongnokurahutoresipi"
+  },
+  "IT_AF_LW_GUN_001": {
+    "dataId": "IT_AF_LW_GUN_001",
+    "names": {
+      "en": "カペラのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "kaperanokurahutoresipi"
+  },
+  "IT_AF_LW_GUN_002": {
+    "dataId": "IT_AF_LW_GUN_002",
+    "names": {
+      "en": "ヴェガのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "vueganokurahutoresipi"
+  },
+  "IT_AF_LW_GUN_003": {
+    "dataId": "IT_AF_LW_GUN_003",
+    "names": {
+      "en": "ラス・アルゲテイのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "rasuarugeteinokurahutoresipi"
+  },
+  "IT_AF_LW_ROD_002": {
+    "dataId": "IT_AF_LW_ROD_002",
+    "names": {
+      "en": "アイアンロッドのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aianrotudonokurahutoresipi"
+  },
+  "IT_AF_LW_ROD_004": {
+    "dataId": "IT_AF_LW_ROD_004",
+    "names": {
+      "en": "癒しの杖のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "yusino-zhangnokurahutoresipi"
+  },
+  "IT_AF_LW_ROD_005": {
+    "dataId": "IT_AF_LW_ROD_005",
+    "names": {
+      "en": "プラチナロッドのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "puratinarotudonokurahutoresipi"
+  },
+  "IT_AF_LW_MAC_001": {
+    "dataId": "IT_AF_LW_MAC_001",
+    "names": {
+      "en": "アイアンメイスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aianmeisunokurahutoresipi"
+  },
+  "IT_AF_LW_MAC_002": {
+    "dataId": "IT_AF_LW_MAC_002",
+    "names": {
+      "en": "ミスリルメイスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misurirumeisunokurahutoresipi"
+  },
+  "IT_AF_LW_MAC_003": {
+    "dataId": "IT_AF_LW_MAC_003",
+    "names": {
+      "en": "プラチナメイスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "puratinameisunokurahutoresipi"
+  },
+  "IT_AF_LW_ARM_002": {
+    "dataId": "IT_AF_LW_ARM_002",
+    "names": {
+      "en": "アイアンプレートのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aianpuretonokurahutoresipi"
+  },
+  "IT_AF_LW_ARM_003": {
+    "dataId": "IT_AF_LW_ARM_003",
+    "names": {
+      "en": "ミスリルアーマーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misuriruamanokurahutoresipi"
+  },
+  "IT_AF_LW_ARM_004": {
+    "dataId": "IT_AF_LW_ARM_004",
+    "names": {
+      "en": "ゴールドアーマーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "gorudoamanokurahutoresipi"
+  },
+  "IT_AF_LW_HAT_002": {
+    "dataId": "IT_AF_LW_HAT_002",
+    "names": {
+      "en": "三角帽子のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "san-jiao-mao-zinokurahutoresipi"
+  },
+  "IT_AF_LW_HAT_003": {
+    "dataId": "IT_AF_LW_HAT_003",
+    "names": {
+      "en": "サークレットのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "sakuretutonokurahutoresipi"
+  },
+  "IT_AF_LW_HAT_004": {
+    "dataId": "IT_AF_LW_HAT_004",
+    "names": {
+      "en": "賢者の帽子のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "xian-zheno-mao-zinokurahutoresipi"
+  },
+  "IT_AF_LW_CLT_001": {
+    "dataId": "IT_AF_LW_CLT_001",
+    "names": {
+      "en": "皮の服のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "pino-funokurahutoresipi"
+  },
+  "IT_AF_LW_CLT_002": {
+    "dataId": "IT_AF_LW_CLT_002",
+    "names": {
+      "en": "学者の服のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "xue-zheno-funokurahutoresipi"
+  },
+  "IT_AF_LW_CLT_003": {
+    "dataId": "IT_AF_LW_CLT_003",
+    "names": {
+      "en": "ミラージュベストのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "miraziyubesutonokurahutoresipi"
+  },
+  "IT_AF_LW_CLT_004": {
+    "dataId": "IT_AF_LW_CLT_004",
+    "names": {
+      "en": "インテリコートのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "interikotonokurahutoresipi"
+  },
+  "IT_AF_LW_CLT_005": {
+    "dataId": "IT_AF_LW_CLT_005",
+    "names": {
+      "en": "プラチナローブのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "puratinarobunokurahutoresipi"
+  },
+  "IT_AF_LW_HLM_002": {
+    "dataId": "IT_AF_LW_HLM_002",
+    "names": {
+      "en": "アイアンヘルムのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "aianherumunokurahutoresipi"
+  },
+  "IT_AF_LW_HLM_003": {
+    "dataId": "IT_AF_LW_HLM_003",
+    "names": {
+      "en": "ミスリルヘルムのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misuriruherumunokurahutoresipi"
+  },
+  "IT_AF_LW_HLM_004": {
+    "dataId": "IT_AF_LW_HLM_004",
+    "names": {
+      "en": "ゴールドヘルムのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "gorudoherumunokurahutoresipi"
+  },
+  "IT_AF_LW_HLM_005": {
+    "dataId": "IT_AF_LW_HLM_005",
+    "names": {
+      "en": "プラチナヘルムのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "puratinaherumunokurahutoresipi"
+  },
+  "IT_AF_LW_RNG_002": {
+    "dataId": "IT_AF_LW_RNG_002",
+    "names": {
+      "en": "ブレイブリングのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "bureiburingunokurahutoresipi"
+  },
+  "IT_AF_LW_RNG_003": {
+    "dataId": "IT_AF_LW_RNG_003",
+    "names": {
+      "en": "フェアリーリングのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "hueariringunokurahutoresipi"
+  },
+  "IT_AF_LW_RNG_004": {
+    "dataId": "IT_AF_LW_RNG_004",
+    "names": {
+      "en": "ジュエルリングのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "ziyueruringunokurahutoresipi"
+  },
+  "IT_AF_SWO_FF14_TNCT": {
+    "dataId": "IT_AF_SWO_FF14_TNCT",
+    "names": {
+      "en": "ライオンハート・イミテイトのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "raionhatoimiteitonokurahutoresipi"
+  },
+  "IT_AF_LW_ROD_007": {
+    "dataId": "IT_AF_LW_ROD_007",
+    "names": {
+      "en": "賢者の杖のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "xian-zheno-zhangnokurahutoresipi"
+  },
+  "IT_AF_LW_ARM_005": {
+    "dataId": "IT_AF_LW_ARM_005",
+    "names": {
+      "en": "プラチナアーマーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "puratinaamanokurahutoresipi"
+  },
+  "IT_AF_LW_FTW_001": {
+    "dataId": "IT_AF_LW_FTW_001",
+    "names": {
+      "en": "エルメスの靴のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "erumesuno-xuenokurahutoresipi"
+  },
+  "IT_AF_LW_RNG_005": {
+    "dataId": "IT_AF_LW_RNG_005",
+    "names": {
+      "en": "アレキサンドライトの指輪のクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "arekisandoraitono-zhi-lunnokurahutoresipi"
+  },
+  "IT_AF_LW_AXE_001": {
+    "dataId": "IT_AF_LW_AXE_001",
+    "names": {
+      "en": "オーガキラーのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "ogakiranokurahutoresipi"
+  },
+  "IT_AF_LW_AXE_002": {
+    "dataId": "IT_AF_LW_AXE_002",
+    "names": {
+      "en": "ミスリルアクスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "misuriruakusunokurahutoresipi"
+  },
+  "IT_AF_LW_AXE_003": {
+    "dataId": "IT_AF_LW_AXE_003",
+    "names": {
+      "en": "ゴールドアックスのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "gorudoatukusunokurahutoresipi"
+  },
+  "IT_AF_FFT_SWO_001": {
+    "dataId": "IT_AF_FFT_SWO_001",
+    "names": {
+      "en": "ナグラロクのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "nagurarokunokurahutoresipi"
+  },
+  "IT_AF_FF1_ARM_002": {
+    "dataId": "IT_AF_FF1_ARM_002",
+    "names": {
+      "en": "アーマーオブライトのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "amaoburaitonokurahutoresipi"
+  },
+  "IT_AF_FFT_ACC_001": {
+    "dataId": "IT_AF_FFT_ACC_001",
+    "names": {
+      "en": "ソルティレージュのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "soruteireziyunokurahutoresipi"
+  },
+  "IT_AF_LW_ACC_001": {
+    "dataId": "IT_AF_LW_ACC_001",
+    "names": {
+      "en": "リボンのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "ribonnokurahutoresipi"
+  },
+  "IT_AF_FF14_ARW_001": {
+    "dataId": "IT_AF_FF14_ARW_001",
+    "names": {
+      "en": "ベイルガントレットのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "beirugantoretutonokurahutoresipi"
+  },
+  "IT_AF_FF14_HLM_001": {
+    "dataId": "IT_AF_FF14_HLM_001",
+    "names": {
+      "en": "ベイルバーゴネットのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "beirubagonetutonokurahutoresipi"
+  },
+  "IT_AF_LW_HAT_005": {
+    "dataId": "IT_AF_LW_HAT_005",
+    "names": {
+      "en": "ウルフマスクのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "uruhumasukunokurahutoresipi"
+  },
+  "IT_AF_FF4_ARM_001": {
+    "dataId": "IT_AF_FF4_ARM_001",
+    "names": {
+      "en": "聖騎士の肩当てのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "sheng-qi-shino-jian-dangtenokurahutoresipi"
+  },
+  "IT_AF_FF4_SPE_000": {
+    "dataId": "IT_AF_FF4_SPE_000",
+    "names": {
+      "en": "ウィンドスピアのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "uindosupianokurahutoresipi"
+  },
+  "IT_AF_FF4_BOW_000": {
+    "dataId": "IT_AF_FF4_BOW_000",
+    "names": {
+      "en": "エルフィンボウのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "eruhuinbounokurahutoresipi"
+  },
+  "IT_AF_SUP_HP": {
+    "dataId": "IT_AF_SUP_HP",
+    "names": {
+      "en": "命の刻印"
+    },
+    "slug": "mingno-ke-yin"
+  },
+  "IT_AF_SUP_ATK": {
+    "dataId": "IT_AF_SUP_ATK",
+    "names": {
+      "en": "攻の刻印"
+    },
+    "slug": "gongno-ke-yin"
+  },
+  "IT_AF_SUP_MAG": {
+    "dataId": "IT_AF_SUP_MAG",
+    "names": {
+      "en": "魔の刻印"
+    },
+    "slug": "mono-ke-yin"
+  },
+  "IT_AF_SUP_MND": {
+    "dataId": "IT_AF_SUP_MND",
+    "names": {
+      "en": "精の刻印"
+    },
+    "slug": "jingno-ke-yin"
+  },
+  "IT_AF_SUP_DEF": {
+    "dataId": "IT_AF_SUP_DEF",
+    "names": {
+      "en": "防の刻印"
+    },
+    "slug": "fangno-ke-yin"
+  },
+  "IT_AF_SUP_AVO": {
+    "dataId": "IT_AF_SUP_AVO",
+    "names": {
+      "en": "避の刻印"
+    },
+    "slug": "bino-ke-yin"
+  },
+  "IT_AF_SUP_HIT": {
+    "dataId": "IT_AF_SUP_HIT",
+    "names": {
+      "en": "巧の刻印"
+    },
+    "slug": "qiaono-ke-yin"
+  },
+  "IT_AF_SUP_CRI": {
+    "dataId": "IT_AF_SUP_CRI",
+    "names": {
+      "en": "撃の刻印"
+    },
+    "slug": "jino-ke-yin"
+  },
+  "IT_AF_PT_ATK": {
+    "dataId": "IT_AF_PT_ATK",
+    "names": {
+      "en": "攻撃のドワーフ鎚"
+    },
+    "slug": "gong-jinodowahu-chui"
+  },
+  "IT_AF_PT_MAG": {
+    "dataId": "IT_AF_PT_MAG",
+    "names": {
+      "en": "魔力のドワーフ鎚"
+    },
+    "slug": "mo-linodowahu-chui"
+  },
+  "IT_AF_PT_DEF": {
+    "dataId": "IT_AF_PT_DEF",
+    "names": {
+      "en": "防御のドワーフ鎚"
+    },
+    "slug": "fang-yunodowahu-chui"
+  },
+  "IT_AF_PT_MND": {
+    "dataId": "IT_AF_PT_MND",
+    "names": {
+      "en": "精神のドワーフ鎚"
+    },
+    "slug": "jing-shennodowahu-chui"
+  },
+  "IT_AF_PT_HIT": {
+    "dataId": "IT_AF_PT_HIT",
+    "names": {
+      "en": "命中のドワーフ鎚"
+    },
+    "slug": "ming-zhongnodowahu-chui"
+  },
+  "IT_AF_PT_CRI": {
+    "dataId": "IT_AF_PT_CRI",
+    "names": {
+      "en": "必殺のドワーフ鎚"
+    },
+    "slug": "bi-shanodowahu-chui"
+  },
+  "IT_AF_PT_AVO": {
+    "dataId": "IT_AF_PT_AVO",
+    "names": {
+      "en": "回避のドワーフ鎚"
+    },
+    "slug": "hui-binodowahu-chui"
+  },
+  "IT_AF_PT_HP": {
+    "dataId": "IT_AF_PT_HP",
+    "names": {
+      "en": "HPのドワーフ鎚"
+    },
+    "slug": "hpnodowahu-chui"
+  },
+  "IT_AF_PT_SPD": {
+    "dataId": "IT_AF_PT_SPD",
+    "names": {
+      "en": "素早さのドワーフ鎚"
+    },
+    "slug": "su-zaosanodowahu-chui"
+  },
+  "IT_WA_EXP_01": {
+    "dataId": "IT_WA_EXP_01",
+    "names": {
+      "en": "ミニアムポット"
+    },
+    "slug": "miniamupotuto"
+  },
+  "IT_WA_EXP_02": {
+    "dataId": "IT_WA_EXP_02",
+    "names": {
+      "en": "アムポット"
+    },
+    "slug": "amupotuto"
+  },
+  "IT_WA_EXP_03": {
+    "dataId": "IT_WA_EXP_03",
+    "names": {
+      "en": "キングアムポット"
+    },
+    "slug": "kinguamupotuto"
+  },
+  "IT_AF_RESET": {
+    "dataId": "IT_AF_RESET",
+    "names": {
+      "en": "打ち直しの金槌"
+    },
+    "slug": "dati-zhisino-jin-chui"
+  },
+  "IT_EC_STARQUARTZ": {
+    "dataId": "IT_EC_STARQUARTZ",
+    "names": {
+      "en": "スタークォーツ"
+    },
+    "slug": "sutakuotu"
+  },
+  "IT_EC_ARENA": {
+    "dataId": "IT_EC_ARENA",
+    "names": {
+      "en": "アリーナメダル"
+    },
+    "slug": "arinamedaru"
+  },
+  "IT_EC_MULTI": {
+    "dataId": "IT_EC_MULTI",
+    "names": {
+      "en": "マルチメダル"
+    },
+    "slug": "marutimedaru"
+  },
+  "IT_EC_RAID": {
+    "dataId": "IT_EC_RAID",
+    "names": {
+      "en": "レイドメダル"
+    },
+    "slug": "reidomedaru"
+  },
+  "IT_EC_RAID_02": {
+    "dataId": "IT_EC_RAID_02",
+    "names": {
+      "en": "バレンタインレイドメダル"
+    },
+    "slug": "barentainreidomedaru"
+  },
+  "IT_EC_RAID_03": {
+    "dataId": "IT_EC_RAID_03",
+    "names": {
+      "en": "ホワイトデーレイドメダル"
+    },
+    "slug": "howaitodereidomedaru"
+  },
+  "IT_EC_RAID_05": {
+    "dataId": "IT_EC_RAID_05",
+    "names": {
+      "en": "【5月】レイドメダル"
+    },
+    "slug": "5-yue-reidomedaru"
+  },
+  "IT_EC_RAID_06": {
+    "dataId": "IT_EC_RAID_06",
+    "names": {
+      "en": "【6月】レイドメダル"
+    },
+    "slug": "6-yue-reidomedaru"
+  },
+  "IT_EC_RAID_FF14": {
+    "dataId": "IT_EC_RAID_FF14",
+    "names": {
+      "en": "【復刻】FFXIVコラボレイドメダル"
+    },
+    "slug": "fu-ke-ffxivkoraboreidomedaru"
+  },
+  "IT_EC_MATCH": {
+    "dataId": "IT_EC_MATCH",
+    "names": {
+      "en": "PVPメダル"
+    },
+    "slug": "pvpmedaru"
+  },
+  "IT_EC_GUILD": {
+    "dataId": "IT_EC_GUILD",
+    "names": {
+      "en": "ギルドメダル"
+    },
+    "slug": "girudomedaru"
+  },
+  "IT_EC_SOUL": {
+    "dataId": "IT_EC_SOUL",
+    "names": {
+      "en": "ソウルメダル"
+    },
+    "slug": "sourumedaru"
+  },
+  "IT_EC_SOUL_N": {
+    "dataId": "IT_EC_SOUL_N",
+    "names": {
+      "en": "ソウルメダル（N）"
+    },
+    "slug": "sourumedaru-n"
+  },
+  "IT_EC_SOUL_R": {
+    "dataId": "IT_EC_SOUL_R",
+    "names": {
+      "en": "ソウルメダル（R）"
+    },
+    "slug": "sourumedaru-r"
+  },
+  "IT_EC_SOUL_SR": {
+    "dataId": "IT_EC_SOUL_SR",
+    "names": {
+      "en": "ソウルメダル（SR）"
+    },
+    "slug": "sourumedaru-sr"
+  },
+  "IT_EC_SOUL_SSR": {
+    "dataId": "IT_EC_SOUL_SSR",
+    "names": {
+      "en": "ソウルメダル（SSR）"
+    },
+    "slug": "sourumedaru-ssr"
+  },
+  "IT_EC_SOUL_UR": {
+    "dataId": "IT_EC_SOUL_UR",
+    "names": {
+      "en": "ソウルメダル（UR）"
+    },
+    "slug": "sourumedaru-ur"
+  },
+  "IT_EC_MOOGLE": {
+    "dataId": "IT_EC_MOOGLE",
+    "names": {
+      "en": "モグメダル"
+    },
+    "slug": "mogumedaru"
+  },
+  "IT_EC_TOWER": {
+    "dataId": "IT_EC_TOWER",
+    "names": {
+      "en": "タワーメダル"
+    },
+    "slug": "tawamedaru"
+  },
+  "IT_EC_TOWER_001": {
+    "dataId": "IT_EC_TOWER_001",
+    "names": {
+      "en": "タワーメダル（β）"
+    },
+    "slug": "tawamedaru-v"
+  },
+  "IT_EC_TOWER_002": {
+    "dataId": "IT_EC_TOWER_002",
+    "names": {
+      "en": "タワーメダル"
+    },
+    "slug": "tawamedaru"
+  },
+  "IT_EC_SUMMON": {
+    "dataId": "IT_EC_SUMMON",
+    "names": {
+      "en": "召喚メダル"
+    },
+    "slug": "zhao-huanmedaru"
+  },
+  "IT_EC_SUMMON_11_A": {
+    "dataId": "IT_EC_SUMMON_11_A",
+    "names": {
+      "en": "【11月】召喚メダルA"
+    },
+    "slug": "11-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_12_A": {
+    "dataId": "IT_EC_SUMMON_12_A",
+    "names": {
+      "en": "【12月】召喚メダルA"
+    },
+    "slug": "12-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_12_B": {
+    "dataId": "IT_EC_SUMMON_12_B",
+    "names": {
+      "en": "【12月】召喚メダルB"
+    },
+    "slug": "12-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_01_A": {
+    "dataId": "IT_EC_SUMMON_01_A",
+    "names": {
+      "en": "【1月】召喚メダルA"
+    },
+    "slug": "1-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_01_B": {
+    "dataId": "IT_EC_SUMMON_01_B",
+    "names": {
+      "en": "【1月】召喚メダルB"
+    },
+    "slug": "1-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_02_A": {
+    "dataId": "IT_EC_SUMMON_02_A",
+    "names": {
+      "en": "【2月】召喚メダルA"
+    },
+    "slug": "2-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_02_B": {
+    "dataId": "IT_EC_SUMMON_02_B",
+    "names": {
+      "en": "【2月】召喚メダルB"
+    },
+    "slug": "2-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_03_A": {
+    "dataId": "IT_EC_SUMMON_03_A",
+    "names": {
+      "en": "【3月】召喚メダルA"
+    },
+    "slug": "3-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_03_B": {
+    "dataId": "IT_EC_SUMMON_03_B",
+    "names": {
+      "en": "【3月】召喚メダルB"
+    },
+    "slug": "3-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_04_A": {
+    "dataId": "IT_EC_SUMMON_04_A",
+    "names": {
+      "en": "【4月】召喚メダルA"
+    },
+    "slug": "4-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_04_B": {
+    "dataId": "IT_EC_SUMMON_04_B",
+    "names": {
+      "en": "【4月】召喚メダルB"
+    },
+    "slug": "4-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_05_A": {
+    "dataId": "IT_EC_SUMMON_05_A",
+    "names": {
+      "en": "【5月】召喚メダルA"
+    },
+    "slug": "5-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_05_B": {
+    "dataId": "IT_EC_SUMMON_05_B",
+    "names": {
+      "en": "【5月】召喚メダルB"
+    },
+    "slug": "5-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_06_A": {
+    "dataId": "IT_EC_SUMMON_06_A",
+    "names": {
+      "en": "【6月】召喚メダルA"
+    },
+    "slug": "6-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_06_B": {
+    "dataId": "IT_EC_SUMMON_06_B",
+    "names": {
+      "en": "【6月】召喚メダルB"
+    },
+    "slug": "6-yue-zhao-huanmedarub"
+  },
+  "IT_EC_SUMMON_07_A": {
+    "dataId": "IT_EC_SUMMON_07_A",
+    "names": {
+      "en": "【7月】召喚メダルA"
+    },
+    "slug": "7-yue-zhao-huanmedarua"
+  },
+  "IT_EC_SUMMON_07_B": {
+    "dataId": "IT_EC_SUMMON_07_B",
+    "names": {
+      "en": "【7月】召喚メダルB"
+    },
+    "slug": "7-yue-zhao-huanmedarub"
+  },
+  "IT_EC_VISION": {
+    "dataId": "IT_EC_VISION",
+    "names": {
+      "en": "ビジョンメダル"
+    },
+    "slug": "biziyonmedaru"
+  },
+  "IT_EC_VISION_N": {
+    "dataId": "IT_EC_VISION_N",
+    "names": {
+      "en": "ビジョンメダル（N）"
+    },
+    "slug": "biziyonmedaru-n"
+  },
+  "IT_EC_VISION_R": {
+    "dataId": "IT_EC_VISION_R",
+    "names": {
+      "en": "ビジョンメダル（R）"
+    },
+    "slug": "biziyonmedaru-r"
+  },
+  "IT_EC_VISION_SR": {
+    "dataId": "IT_EC_VISION_SR",
+    "names": {
+      "en": "ビジョンメダル（SR）"
+    },
+    "slug": "biziyonmedaru-sr"
+  },
+  "IT_EC_VISION_SSR": {
+    "dataId": "IT_EC_VISION_SSR",
+    "names": {
+      "en": "ビジョンメダル（SSR）"
+    },
+    "slug": "biziyonmedaru-ssr"
+  },
+  "IT_EC_VISION_UR": {
+    "dataId": "IT_EC_VISION_UR",
+    "names": {
+      "en": "ビジョンメダル（UR）"
+    },
+    "slug": "biziyonmedaru-ur"
+  },
+  "IT_EC_FRIEND": {
+    "dataId": "IT_EC_FRIEND",
+    "names": {
+      "en": "フレンドメダル"
+    },
+    "slug": "hurendomedaru"
+  },
+  "IT_EC_EV02_1": {
+    "dataId": "IT_EC_EV02_1",
+    "names": {
+      "en": "西の脅威ランダルメダル"
+    },
+    "slug": "xino-xie-weirandarumedaru"
+  },
+  "IT_EC_EV03_1": {
+    "dataId": "IT_EC_EV03_1",
+    "names": {
+      "en": "【3月】イベントメダル"
+    },
+    "slug": "3-yue-ibentomedaru"
+  },
+  "IT_EC_EV04_1": {
+    "dataId": "IT_EC_EV04_1",
+    "names": {
+      "en": "【4月】イベントメダル"
+    },
+    "slug": "4-yue-ibentomedaru"
+  },
+  "IT_EC_EV05_1": {
+    "dataId": "IT_EC_EV05_1",
+    "names": {
+      "en": "【前編】ゴウガとサイガメダル"
+    },
+    "slug": "qian-bian-gougatosaigamedaru"
+  },
+  "IT_EC_EV06_1": {
+    "dataId": "IT_EC_EV06_1",
+    "names": {
+      "en": "囚われの姫君 メダル"
+    },
+    "slug": "qiuwareno-ji-jun-medaru"
+  },
+  "IT_EC_FF14_1": {
+    "dataId": "IT_EC_FF14_1",
+    "names": {
+      "en": "トームストーン魔典"
+    },
+    "slug": "tomusuton-mo-dian"
+  },
+  "IT_EC_FF14_1_R": {
+    "dataId": "IT_EC_FF14_1_R",
+    "names": {
+      "en": "【復刻】トームストーン魔典"
+    },
+    "slug": "fu-ke-tomusuton-mo-dian"
+  },
+  "IT_EC_FF14_2": {
+    "dataId": "IT_EC_FF14_2",
+    "names": {
+      "en": "コラボ召喚メダル"
+    },
+    "slug": "korabo-zhao-huanmedaru"
+  },
+  "IT_EC_FF14_2_R": {
+    "dataId": "IT_EC_FF14_2_R",
+    "names": {
+      "en": "【復刻】FFXIVコラボ召喚メダル"
+    },
+    "slug": "fu-ke-ffxivkorabo-zhao-huanmedaru"
+  },
+  "IT_US_G_FF14_01": {
+    "dataId": "IT_US_G_FF14_01",
+    "names": {
+      "en": "FFXIVコラボイベント召喚券"
+    },
+    "slug": "ffxivkoraboibento-zhao-huan-quan"
+  },
+  "IT_US_G_FF14_01_R": {
+    "dataId": "IT_US_G_FF14_01_R",
+    "names": {
+      "en": "【復刻】FFXIVコラボイベント召喚券"
+    },
+    "slug": "fu-ke-ffxivkoraboibento-zhao-huan-quan"
+  },
+  "IT_EC_FFT_1": {
+    "dataId": "IT_EC_FFT_1",
+    "names": {
+      "en": "FFTコラボイベントメダル"
+    },
+    "slug": "fftkoraboibentomedaru"
+  },
+  "IT_EC_FFT_3": {
+    "dataId": "IT_EC_FFT_3",
+    "names": {
+      "en": "【第2弾】FFTコラボイベントメダル"
+    },
+    "slug": "di2-dan-fftkoraboibentomedaru"
+  },
+  "IT_EC_POINT_001": {
+    "dataId": "IT_EC_POINT_001",
+    "names": {
+      "en": "裁きの試練メダル"
+    },
+    "slug": "caikino-shi-lianmedaru"
+  },
+  "IT_EC_FFT_2_A": {
+    "dataId": "IT_EC_FFT_2_A",
+    "names": {
+      "en": "FFTコラボ召喚メダルA"
+    },
+    "slug": "fftkorabo-zhao-huanmedarua"
+  },
+  "IT_EC_FFT_2_B": {
+    "dataId": "IT_EC_FFT_2_B",
+    "names": {
+      "en": "FFTコラボ召喚メダルB"
+    },
+    "slug": "fftkorabo-zhao-huanmedarub"
+  },
+  "IT_US_G_FFT_01": {
+    "dataId": "IT_US_G_FFT_01",
+    "names": {
+      "en": "FFTコラボイベント召喚券"
+    },
+    "slug": "fftkoraboibento-zhao-huan-quan"
+  },
+  "IT_EC_FF1_1": {
+    "dataId": "IT_EC_FF1_1",
+    "names": {
+      "en": "FF1コラボイベントメダル"
+    },
+    "slug": "ff1koraboibentomedaru"
+  },
+  "IT_EC_FF1_2": {
+    "dataId": "IT_EC_FF1_2",
+    "names": {
+      "en": "FF1コラボ召喚メダル"
+    },
+    "slug": "ff1korabo-zhao-huanmedaru"
+  },
+  "IT_US_G_FF1_01": {
+    "dataId": "IT_US_G_FF1_01",
+    "names": {
+      "en": "FF1コラボイベント召喚券"
+    },
+    "slug": "ff1koraboibento-zhao-huan-quan"
+  },
+  "IT_EC_FFT_2_2A": {
+    "dataId": "IT_EC_FFT_2_2A",
+    "names": {
+      "en": "【第2弾】FFTコラボ召喚メダルA"
+    },
+    "slug": "di2-dan-fftkorabo-zhao-huanmedarua"
+  },
+  "IT_EC_FFT_2_2B": {
+    "dataId": "IT_EC_FFT_2_2B",
+    "names": {
+      "en": "【第2弾】FFTコラボ召喚メダルB"
+    },
+    "slug": "di2-dan-fftkorabo-zhao-huanmedarub"
+  },
+  "IT_EC_FFT_2_A_R": {
+    "dataId": "IT_EC_FFT_2_A_R",
+    "names": {
+      "en": "【復刻】FFTコラボ召喚メダルA"
+    },
+    "slug": "fu-ke-fftkorabo-zhao-huanmedarua"
+  },
+  "IT_EC_FFT_2_B_R": {
+    "dataId": "IT_EC_FFT_2_B_R",
+    "names": {
+      "en": "【復刻】FFTコラボ召喚メダルB"
+    },
+    "slug": "fu-ke-fftkorabo-zhao-huanmedarub"
+  },
+  "IT_EC_FF4_1": {
+    "dataId": "IT_EC_FF4_1",
+    "names": {
+      "en": "FFⅣコラボイベントメダル"
+    },
+    "slug": "ffivkoraboibentomedaru"
+  },
+  "IT_EC_FF4_2_A": {
+    "dataId": "IT_EC_FF4_2_A",
+    "names": {
+      "en": "FFⅣコラボ召喚メダルA"
+    },
+    "slug": "ffivkorabo-zhao-huanmedarua"
+  },
+  "IT_EC_FF4_2_B": {
+    "dataId": "IT_EC_FF4_2_B",
+    "names": {
+      "en": "FFⅣコラボ召喚メダルB"
+    },
+    "slug": "ffivkorabo-zhao-huanmedarub"
+  },
+  "IT_US_G_FF4_01": {
+    "dataId": "IT_US_G_FF4_01",
+    "names": {
+      "en": "FFⅣコラボイベント召喚券"
+    },
+    "slug": "ffivkoraboibento-zhao-huan-quan"
+  },
+  "IT_EC_FF4_3": {
+    "dataId": "IT_EC_FF4_3",
+    "names": {
+      "en": "【FFⅣ】裁きの試練メダル"
+    },
+    "slug": "ffiv-caikino-shi-lianmedaru"
+  },
+  "IT_AD_TICKET_2": {
+    "dataId": "IT_AD_TICKET_2",
+    "names": {
+      "en": "探検チケット（2h）"
+    },
+    "slug": "tan-jiantiketuto-2h"
+  },
+  "IT_AD_TICKET_5": {
+    "dataId": "IT_AD_TICKET_5",
+    "names": {
+      "en": "探検チケット（5h）"
+    },
+    "slug": "tan-jiantiketuto-5h"
+  },
+  "IT_AD_TICKET_10": {
+    "dataId": "IT_AD_TICKET_10",
+    "names": {
+      "en": "探検チケット（10h）"
+    },
+    "slug": "tan-jiantiketuto-10h"
+  },
+  "IT_US_GACHA_01": {
+    "dataId": "IT_US_GACHA_01",
+    "names": {
+      "en": "レア召喚券"
+    },
+    "slug": "rea-zhao-huan-quan"
+  },
+  "IT_US_GACHA_10": {
+    "dataId": "IT_US_GACHA_10",
+    "names": {
+      "en": "レア１０連召喚券"
+    },
+    "slug": "rea10-lian-zhao-huan-quan"
+  },
+  "IT_US_N_GACHA_10": {
+    "dataId": "IT_US_N_GACHA_10",
+    "names": {
+      "en": "ノーマル10連召喚券"
+    },
+    "slug": "nomaru10-lian-zhao-huan-quan"
+  },
+  "IT_US_G_N_TW_10": {
+    "dataId": "IT_US_G_N_TW_10",
+    "names": {
+      "en": "【白磁の塔（β）】ノーマル10連召喚券"
+    },
+    "slug": "bai-cino-ta-v-nomaru10-lian-zhao-huan-quan"
+  },
+  "IT_US_G_AF_N_10": {
+    "dataId": "IT_US_G_AF_N_10",
+    "names": {
+      "en": "武具強化素材ノーマル10連召喚券"
+    },
+    "slug": "wu-ju-qiang-hua-su-cainomaru10-lian-zhao-huan-quan"
+  },
+  "IT_US_G_SUMMER_01": {
+    "dataId": "IT_US_G_SUMMER_01",
+    "names": {
+      "en": "スペシャルサマー10連召喚券"
+    },
+    "slug": "supesiyarusama10-lian-zhao-huan-quan"
+  },
+  "IT_US_10_U_SSR_UR_01": {
+    "dataId": "IT_US_10_U_SSR_UR_01",
+    "names": {
+      "en": "SSR以上１体確定10連召喚券A"
+    },
+    "slug": "ssr-yi-shang1-ti-que-ding10-lian-zhao-huan-quana"
+  },
+  "IT_US_G_10_UR_01": {
+    "dataId": "IT_US_G_10_UR_01",
+    "names": {
+      "en": "【初心者限定】UR1枠確定10連召喚券A"
+    },
+    "slug": "chu-xin-zhe-xian-ding-ur1-waku-que-ding10-lian-zhao-huan-quana"
+  },
+  "IT_US_G_V_SR_UR_01": {
+    "dataId": "IT_US_G_V_SR_UR_01",
+    "names": {
+      "en": "SR以上確定Vカード召喚券A"
+    },
+    "slug": "sr-yi-shang-que-dingvkado-zhao-huan-quana"
+  },
+  "IT_US_G_V_SSR_UR_01": {
+    "dataId": "IT_US_G_V_SSR_UR_01",
+    "names": {
+      "en": "SSR以上確定Vカード召喚券A"
+    },
+    "slug": "ssr-yi-shang-que-dingvkado-zhao-huan-quana"
+  },
+  "IT_US_G_U_SSR_UR_01": {
+    "dataId": "IT_US_G_U_SSR_UR_01",
+    "names": {
+      "en": "SSR以上確定ユニット召喚券A"
+    },
+    "slug": "ssr-yi-shang-que-dingyunituto-zhao-huan-quana"
+  },
+  "IT_US_SE_AW-ITEM_01": {
+    "dataId": "IT_US_SE_AW-ITEM_01",
+    "names": {
+      "en": "覚醒輝源×10選択召喚券"
+    },
+    "slug": "jue-xing-hui-yuanx10-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AW-ITEM_02": {
+    "dataId": "IT_US_SE_AW-ITEM_02",
+    "names": {
+      "en": "覚醒輝源×100選択召喚券"
+    },
+    "slug": "jue-xing-hui-yuanx100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AW-ITEM_03": {
+    "dataId": "IT_US_SE_AW-ITEM_03",
+    "names": {
+      "en": "覚醒輝源×50選択召喚券"
+    },
+    "slug": "jue-xing-hui-yuanx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AW-ITEM_04": {
+    "dataId": "IT_US_SE_AW-ITEM_04",
+    "names": {
+      "en": "覚醒輝源×30選択召喚券"
+    },
+    "slug": "jue-xing-hui-yuanx30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AW-ITEM_05": {
+    "dataId": "IT_US_SE_AW-ITEM_05",
+    "names": {
+      "en": "覚醒輝源×200選択召喚券"
+    },
+    "slug": "jue-xing-hui-yuanx200-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_COM_01": {
+    "dataId": "IT_US_SE_PI_COM_01",
+    "names": {
+      "en": "属性の想いの欠片×50選択召喚券"
+    },
+    "slug": "shu-xingno-xiangino-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_COM_02": {
+    "dataId": "IT_US_SE_PI_COM_02",
+    "names": {
+      "en": "属性の想いの欠片×100選択召喚券"
+    },
+    "slug": "shu-xingno-xiangino-qian-pianx100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_COM_03": {
+    "dataId": "IT_US_SE_PI_COM_03",
+    "names": {
+      "en": "属性の想いの欠片×10選択召喚券"
+    },
+    "slug": "shu-xingno-xiangino-qian-pianx10-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_COM_04": {
+    "dataId": "IT_US_SE_PI_COM_04",
+    "names": {
+      "en": "属性の想いの欠片×200選択召喚券"
+    },
+    "slug": "shu-xingno-xiangino-qian-pianx200-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_01_01": {
+    "dataId": "IT_US_SE_JB_EM_01_01",
+    "names": {
+      "en": "属性の輝石・翠×30選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-cuix30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_02_02": {
+    "dataId": "IT_US_SE_JB_EM_02_02",
+    "names": {
+      "en": "属性の輝石・碧×70選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-bix70-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_03_01": {
+    "dataId": "IT_US_SE_JB_EM_03_01",
+    "names": {
+      "en": "属性の輝石・紫×70選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-zix70-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_02_01": {
+    "dataId": "IT_US_SE_JB_EM_02_01",
+    "names": {
+      "en": "属性の輝石・碧×10選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-bix10-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_05_01": {
+    "dataId": "IT_US_SE_JB_EM_05_01",
+    "names": {
+      "en": "属性の輝石・緋×70選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-feix70-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_EM_04_01": {
+    "dataId": "IT_US_SE_JB_EM_04_01",
+    "names": {
+      "en": "属性の輝石・橘×70選択召喚券"
+    },
+    "slug": "shu-xingno-hui-shi-jux70-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_AW_01": {
+    "dataId": "IT_US_SE_SB_AW_01",
+    "names": {
+      "en": "属性の獣醒石×20選択召喚券"
+    },
+    "slug": "shu-xingno-swu-xing-shix20-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_01": {
+    "dataId": "IT_US_SE_SB_EXP_01",
+    "names": {
+      "en": "属性の魔石（大）×50選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-da-x50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_02": {
+    "dataId": "IT_US_SE_SB_EXP_02",
+    "names": {
+      "en": "属性の魔石（極）×10選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-ji-x10-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_03": {
+    "dataId": "IT_US_SE_SB_EXP_03",
+    "names": {
+      "en": "属性の魔石（中）×50選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-zhong-x50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_04": {
+    "dataId": "IT_US_SE_SB_EXP_04",
+    "names": {
+      "en": "属性の魔石（中）×1000選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-zhong-x1000-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_05": {
+    "dataId": "IT_US_SE_SB_EXP_05",
+    "names": {
+      "en": "属性の魔石（極）×30選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-ji-x30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_06": {
+    "dataId": "IT_US_SE_SB_EXP_06",
+    "names": {
+      "en": "属性の魔石（中）×500選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-zhong-x500-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SB_EXP_07": {
+    "dataId": "IT_US_SE_SB_EXP_07",
+    "names": {
+      "en": "属性の魔石（大）×150選択召喚券"
+    },
+    "slug": "shu-xingno-mo-shi-da-x150-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_G_U_UR_01": {
+    "dataId": "IT_US_G_U_UR_01",
+    "names": {
+      "en": "UR確定ユニット召喚券A"
+    },
+    "slug": "ur-que-dingyunituto-zhao-huan-quana"
+  },
+  "IT_US_G_UR_01": {
+    "dataId": "IT_US_G_UR_01",
+    "names": {
+      "en": "UR確定召喚券A"
+    },
+    "slug": "ur-que-ding-zhao-huan-quana"
+  },
+  "IT_US_G_UR_02": {
+    "dataId": "IT_US_G_UR_02",
+    "names": {
+      "en": "UR確定召喚券B"
+    },
+    "slug": "ur-que-ding-zhao-huan-quanb"
+  },
+  "IT_US_G_U_R_UR_01": {
+    "dataId": "IT_US_G_U_R_UR_01",
+    "names": {
+      "en": "ユニット確定召喚券A"
+    },
+    "slug": "yunituto-que-ding-zhao-huan-quana"
+  },
+  "IT_US_G_V_R_UR_01": {
+    "dataId": "IT_US_G_V_R_UR_01",
+    "names": {
+      "en": "Vカード確定召喚券A"
+    },
+    "slug": "vkado-que-ding-zhao-huan-quana"
+  },
+  "IT_US_G_V_UR_01": {
+    "dataId": "IT_US_G_V_UR_01",
+    "names": {
+      "en": "URVカード確定召喚券A"
+    },
+    "slug": "urvkado-que-ding-zhao-huan-quana"
+  },
+  "IT_US_SE_JB_MM_01": {
+    "dataId": "IT_US_SE_JB_MM_01",
+    "names": {
+      "en": "ジョブの記憶・翠×1選択召喚券"
+    },
+    "slug": "ziyobuno-ji-yi-cuix1-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_02": {
+    "dataId": "IT_US_SE_JB_MM_02",
+    "names": {
+      "en": "ジョブの記憶・碧×2選択召喚券"
+    },
+    "slug": "ziyobuno-ji-yi-bix2-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_03": {
+    "dataId": "IT_US_SE_JB_MM_03",
+    "names": {
+      "en": "ジョブの記憶・紫×3選択召喚券"
+    },
+    "slug": "ziyobuno-ji-yi-zix3-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_04": {
+    "dataId": "IT_US_SE_JB_MM_04",
+    "names": {
+      "en": "ジョブの記憶・橘×4選択召喚券"
+    },
+    "slug": "ziyobuno-ji-yi-jux4-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_05": {
+    "dataId": "IT_US_SE_JB_MM_05",
+    "names": {
+      "en": "ジョブの記憶・緋×5選択召喚券"
+    },
+    "slug": "ziyobuno-ji-yi-feix5-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_04_2": {
+    "dataId": "IT_US_SE_JB_MM_04_2",
+    "names": {
+      "en": "【HA記念】ジョブの記憶・橘×4選択召喚券"
+    },
+    "slug": "ha-ji-nian-ziyobuno-ji-yi-jux4-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_05_2": {
+    "dataId": "IT_US_SE_JB_MM_05_2",
+    "names": {
+      "en": "【HA記念】ジョブの記憶・緋×5選択召喚券"
+    },
+    "slug": "ha-ji-nian-ziyobuno-ji-yi-feix5-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_01_2": {
+    "dataId": "IT_US_SE_JB_MM_01_2",
+    "names": {
+      "en": "【1100万DL記念】ジョブの記憶・翠×1選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziyobuno-ji-yi-cuix1-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_02_2": {
+    "dataId": "IT_US_SE_JB_MM_02_2",
+    "names": {
+      "en": "【1100万DL記念】ジョブの記憶・碧×2選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziyobuno-ji-yi-bix2-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_03_2": {
+    "dataId": "IT_US_SE_JB_MM_03_2",
+    "names": {
+      "en": "【1100万DL記念】ジョブの記憶・紫×3選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziyobuno-ji-yi-zix3-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_04_3": {
+    "dataId": "IT_US_SE_JB_MM_04_3",
+    "names": {
+      "en": "【1100万DL記念】ジョブの記憶・橘×4選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziyobuno-ji-yi-jux4-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_05_3": {
+    "dataId": "IT_US_SE_JB_MM_05_3",
+    "names": {
+      "en": "【1100万DL記念】ジョブの記憶・緋×5選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziyobuno-ji-yi-feix5-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_01_3": {
+    "dataId": "IT_US_SE_JB_MM_01_3",
+    "names": {
+      "en": "【CM記念】ジョブの記憶・翠×1選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziyobuno-ji-yi-cuix1-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_02_3": {
+    "dataId": "IT_US_SE_JB_MM_02_3",
+    "names": {
+      "en": "【CM記念】ジョブの記憶・碧×2選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziyobuno-ji-yi-bix2-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_03_3": {
+    "dataId": "IT_US_SE_JB_MM_03_3",
+    "names": {
+      "en": "【CM記念】ジョブの記憶・紫×3選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziyobuno-ji-yi-zix3-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_04_4": {
+    "dataId": "IT_US_SE_JB_MM_04_4",
+    "names": {
+      "en": "【CM記念】ジョブの記憶・橘×4選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziyobuno-ji-yi-jux4-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_MM_05_4": {
+    "dataId": "IT_US_SE_JB_MM_05_4",
+    "names": {
+      "en": "【CM記念】ジョブの記憶・緋×5選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziyobuno-ji-yi-feix5-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_01": {
+    "dataId": "IT_US_SE_VPI_01",
+    "names": {
+      "en": "【2月】URVカード欠片×50選択召喚券"
+    },
+    "slug": "2-yue-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_02": {
+    "dataId": "IT_US_SE_VPI_02",
+    "names": {
+      "en": "【3月】URVカード欠片×50選択召喚券"
+    },
+    "slug": "3-yue-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_03": {
+    "dataId": "IT_US_SE_VPI_03",
+    "names": {
+      "en": "【GW記念】URVカード欠片×25選択召喚券"
+    },
+    "slug": "gw-ji-nian-urvkado-qian-pianx25-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_04": {
+    "dataId": "IT_US_SE_VPI_04",
+    "names": {
+      "en": "【HA記念】URVカード欠片×25選択召喚券"
+    },
+    "slug": "ha-ji-nian-urvkado-qian-pianx25-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_05": {
+    "dataId": "IT_US_SE_VPI_05",
+    "names": {
+      "en": "【HA記念】URVカード欠片×50選択召喚券"
+    },
+    "slug": "ha-ji-nian-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_06": {
+    "dataId": "IT_US_SE_VPI_06",
+    "names": {
+      "en": "【2020夏CP】URVカード欠片×50選択召喚券"
+    },
+    "slug": "2020-xiacp-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_07": {
+    "dataId": "IT_US_SE_VPI_07",
+    "names": {
+      "en": "【高難度応援】SSRVカード欠片×40選択召喚券"
+    },
+    "slug": "gao-nan-du-ying-yuan-ssrvkado-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_VPI_08": {
+    "dataId": "IT_US_SE_VPI_08",
+    "names": {
+      "en": "【灼熱CP】URVカード欠片×25選択召喚券"
+    },
+    "slug": "zhuo-recp-urvkado-qian-pianx25-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_01": {
+    "dataId": "IT_US_SE_PI_01",
+    "names": {
+      "en": "【GW記念】URユニット欠片×40選択召喚券"
+    },
+    "slug": "gw-ji-nian-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_02": {
+    "dataId": "IT_US_SE_PI_02",
+    "names": {
+      "en": "【HA記念】URユニット欠片×40選択召喚券"
+    },
+    "slug": "ha-ji-nian-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_03": {
+    "dataId": "IT_US_SE_PI_03",
+    "names": {
+      "en": "【1100万DL記念】URユニット欠片×40選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_04": {
+    "dataId": "IT_US_SE_PI_04",
+    "names": {
+      "en": "【2020夏CP】URユニット欠片×40選択召喚券"
+    },
+    "slug": "2020-xiacp-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_05": {
+    "dataId": "IT_US_SE_PI_05",
+    "names": {
+      "en": "【高難度応援】SSRユニット欠片×40選択召喚券"
+    },
+    "slug": "gao-nan-du-ying-yuan-ssryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_06": {
+    "dataId": "IT_US_SE_PI_06",
+    "names": {
+      "en": "【初心者限定】URユニット欠片×40選択召喚券"
+    },
+    "slug": "chu-xin-zhe-xian-ding-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_07": {
+    "dataId": "IT_US_SE_PI_07",
+    "names": {
+      "en": "【灼熱CP】URユニット欠片×20選択召喚券"
+    },
+    "slug": "zhuo-recp-uryunituto-qian-pianx20-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_PI_08": {
+    "dataId": "IT_US_SE_PI_08",
+    "names": {
+      "en": "【CM記念】URユニット欠片×40選択召喚券"
+    },
+    "slug": "cm-ji-nian-uryunituto-qian-pianx40-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_R_UR_U_03": {
+    "dataId": "IT_US_SE_R_UR_U_03",
+    "names": {
+      "en": "【HA記念】ユニット選択召喚券"
+    },
+    "slug": "ha-ji-nian-yunituto-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_R_UR_V_02": {
+    "dataId": "IT_US_SE_R_UR_V_02",
+    "names": {
+      "en": "【HA記念】Vカード選択召喚券"
+    },
+    "slug": "ha-ji-nian-vkado-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_R_UR_V_03": {
+    "dataId": "IT_US_SE_R_UR_V_03",
+    "names": {
+      "en": "【灼熱CP】召喚獣付きURVカード選択召喚券"
+    },
+    "slug": "zhuo-recp-zhao-huan-swu-fukiurvkado-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_01": {
+    "dataId": "IT_US_SE_AF_AW_01",
+    "names": {
+      "en": "【HA記念】秘伝書×100選択召喚券"
+    },
+    "slug": "ha-ji-nian-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_02": {
+    "dataId": "IT_US_SE_AF_AW_02",
+    "names": {
+      "en": "【2020夏CP】秘伝書×100選択召喚券"
+    },
+    "slug": "2020-xiacp-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_03": {
+    "dataId": "IT_US_SE_AF_AW_03",
+    "names": {
+      "en": "【高難度応援】秘伝書×100選択召喚券"
+    },
+    "slug": "gao-nan-du-ying-yuan-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_04": {
+    "dataId": "IT_US_SE_AF_AW_04",
+    "names": {
+      "en": "【灼熱CP】秘伝書×100選択召喚券"
+    },
+    "slug": "zhuo-recp-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_SUP_01": {
+    "dataId": "IT_US_SE_AF_SUP_01",
+    "names": {
+      "en": "武具の刻印×20選択召喚券"
+    },
+    "slug": "wu-juno-ke-yinx20-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_05_01": {
+    "dataId": "IT_US_SE_JB_05_01",
+    "names": {
+      "en": "【1100万DL記念】スピネル×30選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-supinerux30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_04_01": {
+    "dataId": "IT_US_SE_JB_04_01",
+    "names": {
+      "en": "【1100万DL記念】シトリン×30選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-sitorinx30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_03_01": {
+    "dataId": "IT_US_SE_JB_03_01",
+    "names": {
+      "en": "【1100万DL記念】チャロアイト×30選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-tiyaroaitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_02_01": {
+    "dataId": "IT_US_SE_JB_02_01",
+    "names": {
+      "en": "【1100万DL記念】アズライト×30選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-azuraitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_01_01": {
+    "dataId": "IT_US_SE_JB_01_01",
+    "names": {
+      "en": "【1100万DL記念】ジェダイト×15選択召喚券"
+    },
+    "slug": "1100-wandl-ji-nian-ziedaitox15-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_05_02": {
+    "dataId": "IT_US_SE_JB_05_02",
+    "names": {
+      "en": "【レイド応援】スピネル×30選択召喚券"
+    },
+    "slug": "reido-ying-yuan-supinerux30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_04_02": {
+    "dataId": "IT_US_SE_JB_04_02",
+    "names": {
+      "en": "【レイド応援】シトリン×30選択召喚券"
+    },
+    "slug": "reido-ying-yuan-sitorinx30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_03_02": {
+    "dataId": "IT_US_SE_JB_03_02",
+    "names": {
+      "en": "【レイド応援】チャロアイト×30選択召喚券"
+    },
+    "slug": "reido-ying-yuan-tiyaroaitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_02_02": {
+    "dataId": "IT_US_SE_JB_02_02",
+    "names": {
+      "en": "【レイド応援】アズライト×30選択召喚券"
+    },
+    "slug": "reido-ying-yuan-azuraitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_01_02": {
+    "dataId": "IT_US_SE_JB_01_02",
+    "names": {
+      "en": "【レイド応援】ジェダイト×15選択召喚券"
+    },
+    "slug": "reido-ying-yuan-ziedaitox15-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_04_03": {
+    "dataId": "IT_US_SE_JB_04_03",
+    "names": {
+      "en": "【初心者限定】シトリン×30選択召喚券"
+    },
+    "slug": "chu-xin-zhe-xian-ding-sitorinx30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_03_03": {
+    "dataId": "IT_US_SE_JB_03_03",
+    "names": {
+      "en": "【初心者限定】チャロアイト×30選択召喚券"
+    },
+    "slug": "chu-xin-zhe-xian-ding-tiyaroaitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_02_03": {
+    "dataId": "IT_US_SE_JB_02_03",
+    "names": {
+      "en": "【初心者限定】アズライト×30選択召喚券"
+    },
+    "slug": "chu-xin-zhe-xian-ding-azuraitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_01_03": {
+    "dataId": "IT_US_SE_JB_01_03",
+    "names": {
+      "en": "【初心者限定】ジェダイト×15選択召喚券"
+    },
+    "slug": "chu-xin-zhe-xian-ding-ziedaitox15-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_05_03": {
+    "dataId": "IT_US_SE_JB_05_03",
+    "names": {
+      "en": "【CM記念】スピネル×30選択召喚券"
+    },
+    "slug": "cm-ji-nian-supinerux30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_04_04": {
+    "dataId": "IT_US_SE_JB_04_04",
+    "names": {
+      "en": "【CM記念】シトリン×30選択召喚券"
+    },
+    "slug": "cm-ji-nian-sitorinx30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_03_04": {
+    "dataId": "IT_US_SE_JB_03_04",
+    "names": {
+      "en": "【CM記念】チャロアイト×30選択召喚券"
+    },
+    "slug": "cm-ji-nian-tiyaroaitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_02_04": {
+    "dataId": "IT_US_SE_JB_02_04",
+    "names": {
+      "en": "【CM記念】アズライト×30選択召喚券"
+    },
+    "slug": "cm-ji-nian-azuraitox30-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_JB_01_04": {
+    "dataId": "IT_US_SE_JB_01_04",
+    "names": {
+      "en": "【CM記念】ジェダイト×15選択召喚券"
+    },
+    "slug": "cm-ji-nian-ziedaitox15-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_UR_U_02": {
+    "dataId": "IT_US_SE_UR_U_02",
+    "names": {
+      "en": "おすすめURユニット選択召喚券"
+    },
+    "slug": "osusumeuryunituto-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_SSR_U_01": {
+    "dataId": "IT_US_SE_SSR_U_01",
+    "names": {
+      "en": "おすすめSSRユニット選択召喚券"
+    },
+    "slug": "osusumessryunituto-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_UR_U_01": {
+    "dataId": "IT_US_SE_UR_U_01",
+    "names": {
+      "en": "URユニット選択召喚券A"
+    },
+    "slug": "uryunituto-xuan-ze-zhao-huan-quana"
+  },
+  "IT_US_G_U_SSR_UR_02": {
+    "dataId": "IT_US_G_U_SSR_UR_02",
+    "names": {
+      "en": "SSR以上確定ユニット召喚券B"
+    },
+    "slug": "ssr-yi-shang-que-dingyunituto-zhao-huan-quanb"
+  },
+  "IT_US_G_U_SSR_UR_03": {
+    "dataId": "IT_US_G_U_SSR_UR_03",
+    "names": {
+      "en": "SSR以上確定ユニット召喚券C"
+    },
+    "slug": "ssr-yi-shang-que-dingyunituto-zhao-huan-quanc"
+  },
+  "IT_US_G_U_SSR_UR_04": {
+    "dataId": "IT_US_G_U_SSR_UR_04",
+    "names": {
+      "en": "SSR以上確定ユニット召喚券D"
+    },
+    "slug": "ssr-yi-shang-que-dingyunituto-zhao-huan-quand"
+  },
+  "IT_US_SE_UR_V_01": {
+    "dataId": "IT_US_SE_UR_V_01",
+    "names": {
+      "en": "URVカード選択召喚券A"
+    },
+    "slug": "urvkado-xuan-ze-zhao-huan-quana"
+  },
+  "IT_JP_UP_01": {
+    "dataId": "IT_JP_UP_01",
+    "names": {
+      "en": "オーバル（小）"
+    },
+    "slug": "obaru-xiao"
+  },
+  "IT_JP_UP_02": {
+    "dataId": "IT_JP_UP_02",
+    "names": {
+      "en": "オーバル（中）"
+    },
+    "slug": "obaru-zhong"
+  },
+  "IT_JP_UP_03": {
+    "dataId": "IT_JP_UP_03",
+    "names": {
+      "en": "オーバル（大）"
+    },
+    "slug": "obaru-da"
+  },
+  "IT_JP_UP_04": {
+    "dataId": "IT_JP_UP_04",
+    "names": {
+      "en": "オーバル（極）"
+    },
+    "slug": "obaru-ji"
+  },
+  "IT_VPI_LW_GLEM": {
+    "dataId": "IT_VPI_LW_GLEM",
+    "names": {
+      "en": "岩壁の巨人　ゴーレムの欠片"
+    },
+    "slug": "yan-bino-ju-ren-goremuno-qian-pian"
+  },
+  "IT_VPI_LW_IFRT": {
+    "dataId": "IT_VPI_LW_IFRT",
+    "names": {
+      "en": "猛き炎の叫び　イフリートの欠片"
+    },
+    "slug": "mengki-yanno-jiaobi-ihuritono-qian-pian"
+  },
+  "IT_VPI_LW_SIRE": {
+    "dataId": "IT_VPI_LW_SIRE",
+    "names": {
+      "en": "水界に響く魔音 セイレーンの欠片"
+    },
+    "slug": "shui-jieni-xiangku-mo-yin-seirenno-qian-pian"
+  },
+  "IT_VPI_LW_SOKYU": {
+    "dataId": "IT_VPI_LW_SOKYU",
+    "names": {
+      "en": "リオニス王国第二部隊≪蒼穹≫の欠片"
+    },
+    "slug": "rionisu-wang-guo-di-er-bu-dui-cang-qiongno-qian-pian"
+  },
+  "IT_VPI_LW_TRAINING": {
+    "dataId": "IT_VPI_LW_TRAINING",
+    "names": {
+      "en": "誰よりも強くなるためにの欠片"
+    },
+    "slug": "shuiyorimo-qiangkunarutamenino-qian-pian"
+  },
+  "IT_VPI_LW_MACR": {
+    "dataId": "IT_VPI_LW_MACR",
+    "names": {
+      "en": "嫁入り道具の欠片"
+    },
+    "slug": "jia-ruri-dao-juno-qian-pian"
+  },
+  "IT_VPI_LW_MURG": {
+    "dataId": "IT_VPI_LW_MURG",
+    "names": {
+      "en": "鳴り響く悲鳴の欠片"
+    },
+    "slug": "mingri-xiangku-bei-mingno-qian-pian"
+  },
+  "IT_VPI_LW_GRSR": {
+    "dataId": "IT_VPI_LW_GRSR",
+    "names": {
+      "en": "雪原を駆けるの欠片"
+    },
+    "slug": "xue-yuanwo-qukeruno-qian-pian"
+  },
+  "IT_VPI_FF14_MV1": {
+    "dataId": "IT_VPI_FF14_MV1",
+    "names": {
+      "en": "漆黒の群像の欠片"
+    },
+    "slug": "qi-heino-qun-xiangno-qian-pian"
+  },
+  "IT_VPI_LW_SHIV": {
+    "dataId": "IT_VPI_LW_SHIV",
+    "names": {
+      "en": "全てを凍らせし者　シヴァの欠片"
+    },
+    "slug": "quantewo-dongrasesi-zhe-sivuano-qian-pian"
+  },
+  "IT_VPI_LW_RAMU": {
+    "dataId": "IT_VPI_LW_RAMU",
+    "names": {
+      "en": "空に轟く雷鳴　ラムウの欠片"
+    },
+    "slug": "kongni-hongku-lei-ming-ramuuno-qian-pian"
+  },
+  "IT_VPI_LW_HOLYNIGHT": {
+    "dataId": "IT_VPI_LW_HOLYNIGHT",
+    "names": {
+      "en": "聖夜の二人の欠片"
+    },
+    "slug": "sheng-yeno-er-renno-qian-pian"
+  },
+  "IT_VPI_FFT_MV1": {
+    "dataId": "IT_VPI_FFT_MV1",
+    "names": {
+      "en": "ベオルブの名を継ぐ者の欠片"
+    },
+    "slug": "beorubuno-mingwo-jigu-zheno-qian-pian"
+  },
+  "IT_VPI_LW_ODIN": {
+    "dataId": "IT_VPI_LW_ODIN",
+    "names": {
+      "en": "次元切断　オーディンの欠片"
+    },
+    "slug": "ci-yuan-qie-duan-odeinno-qian-pian"
+  },
+  "IT_VPI_LW_TSLP": {
+    "dataId": "IT_VPI_LW_TSLP",
+    "names": {
+      "en": "四天烈風　テトラシルフィードの欠片"
+    },
+    "slug": "si-tian-lie-feng-tetorasiruhuidono-qian-pian"
+  },
+  "IT_VPI_LW_VALE1": {
+    "dataId": "IT_VPI_LW_VALE1",
+    "names": {
+      "en": "伝えられない気持ちの欠片"
+    },
+    "slug": "chuanerarenai-qi-chitino-qian-pian"
+  },
+  "IT_VPI_LW_THDG": {
+    "dataId": "IT_VPI_LW_THDG",
+    "names": {
+      "en": "猛攻双竜　２ヘッドドラゴンの欠片"
+    },
+    "slug": "meng-gong-shuang-long-2hetudodoragonno-qian-pian"
+  },
+  "IT_VPI_MBFF_MV1": {
+    "dataId": "IT_VPI_MBFF_MV1",
+    "names": {
+      "en": "絶望と真実のメビウスの欠片"
+    },
+    "slug": "jue-wangto-zhen-shinomebiusuno-qian-pian"
+  },
+  "IT_VPI_LW_CBVPARTY1": {
+    "dataId": "IT_VPI_LW_CBVPARTY1",
+    "names": {
+      "en": "徒桜の宴の欠片"
+    },
+    "slug": "tu-yingno-yanno-qian-pian"
+  },
+  "IT_VPI_LW_DABL": {
+    "dataId": "IT_VPI_LW_DABL",
+    "names": {
+      "en": "夢幻魔人　ディアボロスの欠片"
+    },
+    "slug": "meng-huan-mo-ren-deiaborosuno-qian-pian"
+  },
+  "IT_VPI_FF01_DMAC": {
+    "dataId": "IT_VPI_FF01_DMAC",
+    "names": {
+      "en": "デスマシーンの欠片"
+    },
+    "slug": "desumasinno-qian-pian"
+  },
+  "IT_VPI_FFT_MV3": {
+    "dataId": "IT_VPI_FFT_MV3",
+    "names": {
+      "en": "草笛の欠片"
+    },
+    "slug": "cao-dino-qian-pian"
+  },
+  "IT_VPI_LW_ROBUST": {
+    "dataId": "IT_VPI_LW_ROBUST",
+    "names": {
+      "en": "ホルン王国第一部隊≪堅牢≫の欠片"
+    },
+    "slug": "horun-wang-guo-di-yi-bu-dui-jian-laono-qian-pian"
+  },
+  "IT_VPI_LW_FNRR": {
+    "dataId": "IT_VPI_LW_FNRR",
+    "names": {
+      "en": "月影狼牙　フェンリルの欠片"
+    },
+    "slug": "yue-ying-lang-ya-huenriruno-qian-pian"
+  },
+  "IT_VPI_LW_TITN": {
+    "dataId": "IT_VPI_LW_TITN",
+    "names": {
+      "en": "猛る大地　タイタンの欠片"
+    },
+    "slug": "mengru-da-di-taitanno-qian-pian"
+  },
+  "IT_VPI_LW_VKTR": {
+    "dataId": "IT_VPI_LW_VKTR",
+    "names": {
+      "en": "偽りの仮面の欠片"
+    },
+    "slug": "weirino-jia-mianno-qian-pian"
+  },
+  "IT_VPI_FF14_MV3": {
+    "dataId": "IT_VPI_FF14_MV3",
+    "names": {
+      "en": "漆黒の反逆者たちの欠片"
+    },
+    "slug": "qi-heino-fan-ni-zhetatino-qian-pian"
+  },
+  "IT_VPI_LW_AGON": {
+    "dataId": "IT_VPI_LW_AGON",
+    "names": {
+      "en": "破壊鋼人　アイガイオンの欠片"
+    },
+    "slug": "po-huai-gang-ren-aigaionno-qian-pian"
+  },
+  "IT_VPI_LW_GRSR2": {
+    "dataId": "IT_VPI_LW_GRSR2",
+    "names": {
+      "en": "穏やかな時間の欠片"
+    },
+    "slug": "wenyakana-shi-jianno-qian-pian"
+  },
+  "IT_VPI_FF4_DMNW": {
+    "dataId": "IT_VPI_FF4_DMNW",
+    "names": {
+      "en": "デモンズウォールの欠片"
+    },
+    "slug": "demonzuuoruno-qian-pian"
+  },
+  "IT_VPI_LW_IGNT": {
+    "dataId": "IT_VPI_LW_IGNT",
+    "names": {
+      "en": "鋼の魔人　鉄巨人の欠片"
+    },
+    "slug": "gangno-mo-ren-tie-ju-renno-qian-pian"
+  },
+  "IT_VPI_LW_BHMT": {
+    "dataId": "IT_VPI_LW_BHMT",
+    "names": {
+      "en": "荒ぶる魔獣　ベヒーモスの欠片"
+    },
+    "slug": "huangburu-mo-swu-behimosuno-qian-pian"
+  },
+  "IT_VPI_LW_MABR": {
+    "dataId": "IT_VPI_LW_MABR",
+    "names": {
+      "en": "穢れの呪い　モルボルの欠片"
+    },
+    "slug": "huireno-zhoui-moruboruno-qian-pian"
+  },
+  "IT_VPI_LW_FAMILY": {
+    "dataId": "IT_VPI_LW_FAMILY",
+    "names": {
+      "en": "新しき生命の誕生の欠片"
+    },
+    "slug": "xinsiki-sheng-mingno-dan-shengno-qian-pian"
+  },
+  "IT_VPI_LW_KTON": {
+    "dataId": "IT_VPI_LW_KTON",
+    "names": {
+      "en": "密命の欠片"
+    },
+    "slug": "mi-mingno-qian-pian"
+  },
+  "IT_VPI_LW_PROPOSE": {
+    "dataId": "IT_VPI_LW_PROPOSE",
+    "names": {
+      "en": "愛の誓いの欠片"
+    },
+    "slug": "aino-shiino-qian-pian"
+  },
+  "IT_VPI_LW_SDLX": {
+    "dataId": "IT_VPI_LW_SDLX",
+    "names": {
+      "en": "心の洗濯の欠片"
+    },
+    "slug": "xinno-xi-zhuono-qian-pian"
+  },
+  "IT_VPI_LW_TEAPARTY": {
+    "dataId": "IT_VPI_LW_TEAPARTY",
+    "names": {
+      "en": "ひとときの安らぎの欠片"
+    },
+    "slug": "hitotokino-anragino-qian-pian"
+  },
+  "IT_VPI_LW_HUNT": {
+    "dataId": "IT_VPI_LW_HUNT",
+    "names": {
+      "en": "研ぎ澄まされた集中力の欠片"
+    },
+    "slug": "yangi-chengmasareta-ji-zhong-lino-qian-pian"
+  },
+  "IT_VPI_FF14_MV2": {
+    "dataId": "IT_VPI_FF14_MV2",
+    "names": {
+      "en": "SHADOWBRINGERSの欠片"
+    },
+    "slug": "shadowbringersno-qian-pian"
+  },
+  "IT_VPI_LW_MOGL": {
+    "dataId": "IT_VPI_LW_MOGL",
+    "names": {
+      "en": "聖夜のモーグリの欠片"
+    },
+    "slug": "sheng-yenomogurino-qian-pian"
+  },
+  "IT_VPI_LW_NEWYEAR": {
+    "dataId": "IT_VPI_LW_NEWYEAR",
+    "names": {
+      "en": "謹賀新年2020の欠片"
+    },
+    "slug": "jin-he-xin-nian2020no-qian-pian"
+  },
+  "IT_VPI_LW_LAMA_01": {
+    "dataId": "IT_VPI_LW_LAMA_01",
+    "names": {
+      "en": "蠱惑大蛇　ラミアクイーンの欠片"
+    },
+    "slug": "gu-huo-da-she-ramiakuinno-qian-pian"
+  },
+  "IT_VPI_LW_GUARD": {
+    "dataId": "IT_VPI_LW_GUARD",
+    "names": {
+      "en": "純白の親衛隊の欠片"
+    },
+    "slug": "chun-baino-qin-wei-duino-qian-pian"
+  },
+  "IT_VPI_LW_LILS": {
+    "dataId": "IT_VPI_LW_LILS",
+    "names": {
+      "en": "復讐の旅の欠片"
+    },
+    "slug": "fu-chouno-luno-qian-pian"
+  },
+  "IT_VPI_LW_VALE2": {
+    "dataId": "IT_VPI_LW_VALE2",
+    "names": {
+      "en": "イケメン争奪戦！！の欠片"
+    },
+    "slug": "ikemen-zheng-duo-zhan-no-qian-pian"
+  },
+  "IT_VPI_LW_OCHU": {
+    "dataId": "IT_VPI_LW_OCHU",
+    "names": {
+      "en": "豪快植物　オチューの欠片"
+    },
+    "slug": "hao-kuai-zhi-wu-otiyuno-qian-pian"
+  },
+  "IT_VPI_LW_ADLD": {
+    "dataId": "IT_VPI_LW_ADLD",
+    "names": {
+      "en": "嫉心の魔術師の欠片"
+    },
+    "slug": "ji-xinno-mo-shu-shino-qian-pian"
+  },
+  "IT_VPI_LW_WHITEDAY1": {
+    "dataId": "IT_VPI_LW_WHITEDAY1",
+    "names": {
+      "en": "見栄の代償の欠片"
+    },
+    "slug": "jian-rongno-dai-changno-qian-pian"
+  },
+  "IT_VPI_LW_VNLA2": {
+    "dataId": "IT_VPI_LW_VNLA2",
+    "names": {
+      "en": "偽りの契り、偽れぬ魂の欠片"
+    },
+    "slug": "weirino-qiri-weirenu-hunno-qian-pian"
+  },
+  "IT_VPI_MBFF_MV2": {
+    "dataId": "IT_VPI_MBFF_MV2",
+    "names": {
+      "en": "希望と幻想のメビウスの欠片"
+    },
+    "slug": "xi-wangto-huan-xiangnomebiusuno-qian-pian"
+  },
+  "IT_VPI_FFT_MV2": {
+    "dataId": "IT_VPI_FFT_MV2",
+    "names": {
+      "en": "赤チョコボの欠片"
+    },
+    "slug": "chitiyokobono-qian-pian"
+  },
+  "IT_VPI_LW_MDFY": {
+    "dataId": "IT_VPI_LW_MDFY",
+    "names": {
+      "en": "決壊精神　マインドフレイアの欠片"
+    },
+    "slug": "jue-huai-jing-shen-maindohureiano-qian-pian"
+  },
+  "IT_VPI_LW_ORDR": {
+    "dataId": "IT_VPI_LW_ORDR",
+    "names": {
+      "en": "届かぬ想いの欠片"
+    },
+    "slug": "jiekanu-xiangino-qian-pian"
+  },
+  "IT_VPI_LW_KING": {
+    "dataId": "IT_VPI_LW_KING",
+    "names": {
+      "en": "戦乱四君の欠片"
+    },
+    "slug": "zhan-luan-si-junno-qian-pian"
+  },
+  "IT_VPI_LW_BLMN": {
+    "dataId": "IT_VPI_LW_BLMN",
+    "names": {
+      "en": "魔界紅月　ブラッディムーンの欠片"
+    },
+    "slug": "mo-jie-hong-yue-buratudeimunno-qian-pian"
+  },
+  "IT_VPI_LW_GUREN": {
+    "dataId": "IT_VPI_LW_GUREN",
+    "names": {
+      "en": "義賊≪紅蓮≫の欠片"
+    },
+    "slug": "yi-zei-hong-lianno-qian-pian"
+  },
+  "IT_VPI_LW_CHCB": {
+    "dataId": "IT_VPI_LW_CHCB",
+    "names": {
+      "en": "愛しき相棒　チョコボの欠片"
+    },
+    "slug": "aisiki-xiang-bang-tiyokobono-qian-pian"
+  },
+  "IT_VPI_LW_CACT": {
+    "dataId": "IT_VPI_LW_CACT",
+    "names": {
+      "en": "瞬間千本　サボテンダーの欠片"
+    },
+    "slug": "shun-jian-qian-ben-sabotendano-qian-pian"
+  },
+  "IT_VPI_LW_ARMN_01": {
+    "dataId": "IT_VPI_LW_ARMN_01",
+    "names": {
+      "en": "魔眼光線　フロータイボールの欠片"
+    },
+    "slug": "mo-yan-guang-xian-hurotaiboruno-qian-pian"
+  },
+  "IT_VPI_LW_ZUUU": {
+    "dataId": "IT_VPI_LW_ZUUU",
+    "names": {
+      "en": "巨大怪鳥　ズーの欠片"
+    },
+    "slug": "ju-da-guai-niao-zuno-qian-pian"
+  },
+  "IT_VPI_LW_OGRE": {
+    "dataId": "IT_VPI_LW_OGRE",
+    "names": {
+      "en": "剛力鬼人　オーガの欠片"
+    },
+    "slug": "gang-li-gui-ren-ogano-qian-pian"
+  },
+  "IT_VPI_LW_BOMB": {
+    "dataId": "IT_VPI_LW_BOMB",
+    "names": {
+      "en": "爆裂弾丸　ボムの欠片"
+    },
+    "slug": "bao-lie-dan-wan-bomuno-qian-pian"
+  },
+  "IT_VPI_LW_BYLO": {
+    "dataId": "IT_VPI_LW_BYLO",
+    "names": {
+      "en": "暴食王出現の欠片"
+    },
+    "slug": "bao-shi-wang-chu-xianno-qian-pian"
+  },
+  "IT_VPI_LW_RART": {
+    "dataId": "IT_VPI_LW_RART",
+    "names": {
+      "en": "久しぶりの休暇の欠片"
+    },
+    "slug": "jiusiburino-xiu-xiano-qian-pian"
+  },
+  "IT_VPI_LW_RYER": {
+    "dataId": "IT_VPI_LW_RYER",
+    "names": {
+      "en": "名探偵リレルリラの欠片"
+    },
+    "slug": "ming-tan-zhenrirerurirano-qian-pian"
+  },
+  "IT_VPI_LW_VNLA": {
+    "dataId": "IT_VPI_LW_VNLA",
+    "names": {
+      "en": "妖艶魔女の欠片"
+    },
+    "slug": "yao-yan-mo-nuno-qian-pian"
+  },
+  "IT_VPI_LW_RIRY": {
+    "dataId": "IT_VPI_LW_RIRY",
+    "names": {
+      "en": "お楽しみタイムの欠片"
+    },
+    "slug": "o-lesimitaimuno-qian-pian"
+  },
+  "IT_VPI_LW_JOBCRYSTAL": {
+    "dataId": "IT_VPI_LW_JOBCRYSTAL",
+    "names": {
+      "en": "ジョブクリスタルの欠片"
+    },
+    "slug": "ziyobukurisutaruno-qian-pian"
+  },
+  "IT_VPI_LW_LEONIS": {
+    "dataId": "IT_VPI_LW_LEONIS",
+    "names": {
+      "en": "リオニス旗の欠片"
+    },
+    "slug": "rionisu-qino-qian-pian"
+  },
+  "IT_VPI_LW_HOURN": {
+    "dataId": "IT_VPI_LW_HOURN",
+    "names": {
+      "en": "ホルン旗の欠片"
+    },
+    "slug": "horun-qino-qian-pian"
+  },
+  "IT_VPI_LW_FENICE": {
+    "dataId": "IT_VPI_LW_FENICE",
+    "names": {
+      "en": "フェネス旗の欠片"
+    },
+    "slug": "huenesu-qino-qian-pian"
+  },
+  "IT_VPI_LW_WEZETT": {
+    "dataId": "IT_VPI_LW_WEZETT",
+    "names": {
+      "en": "ウェズエット旗の欠片"
+    },
+    "slug": "uezuetuto-qino-qian-pian"
+  },
+  "IT_VPI_LW_CRYSTAL": {
+    "dataId": "IT_VPI_LW_CRYSTAL",
+    "names": {
+      "en": "クリスタル教会旗の欠片"
+    },
+    "slug": "kurisutaru-jiao-hui-qino-qian-pian"
+  },
+  "IT_VPI_LW_LEONIS2": {
+    "dataId": "IT_VPI_LW_LEONIS2",
+    "names": {
+      "en": "リオニス城の欠片"
+    },
+    "slug": "rionisu-chengno-qian-pian"
+  },
+  "IT_VPI_LW_HOURN2": {
+    "dataId": "IT_VPI_LW_HOURN2",
+    "names": {
+      "en": "ホルン城の欠片"
+    },
+    "slug": "horun-chengno-qian-pian"
+  },
+  "IT_VPI_LW_FENICE2": {
+    "dataId": "IT_VPI_LW_FENICE2",
+    "names": {
+      "en": "フェネス城の欠片"
+    },
+    "slug": "huenesu-chengno-qian-pian"
+  },
+  "IT_VPI_LW_WEZETT2": {
+    "dataId": "IT_VPI_LW_WEZETT2",
+    "names": {
+      "en": "ウェズエット城の欠片"
+    },
+    "slug": "uezuetuto-chengno-qian-pian"
+  },
+  "IT_VPI_LW_DYNVERK": {
+    "dataId": "IT_VPI_LW_DYNVERK",
+    "names": {
+      "en": "ダインヴェルク教会の欠片"
+    },
+    "slug": "dainvueruku-jiao-huino-qian-pian"
+  },
+  "IT_VPI_LW_TRSV_01": {
+    "dataId": "IT_VPI_LW_TRSV_01",
+    "names": {
+      "en": "遠話装置・天の欠片"
+    },
+    "slug": "yuan-hua-zhuang-zhi-tianno-qian-pian"
+  },
+  "IT_VPI_LW_TRSV_02": {
+    "dataId": "IT_VPI_LW_TRSV_02",
+    "names": {
+      "en": "遠話装置・地の欠片"
+    },
+    "slug": "yuan-hua-zhuang-zhi-dino-qian-pian"
+  },
+  "IT_VPI_LW_MIRROR": {
+    "dataId": "IT_VPI_LW_MIRROR",
+    "names": {
+      "en": "遠見の鏡の欠片"
+    },
+    "slug": "yuan-jianno-jingno-qian-pian"
+  },
+  "IT_VC_EXP_01": {
+    "dataId": "IT_VC_EXP_01",
+    "names": {
+      "en": "グロウエッグ（N）"
+    },
+    "slug": "gurouetugu-n"
+  },
+  "IT_VC_EXP_02": {
+    "dataId": "IT_VC_EXP_02",
+    "names": {
+      "en": "グロウエッグ（R）"
+    },
+    "slug": "gurouetugu-r"
+  },
+  "IT_VC_EXP_03": {
+    "dataId": "IT_VC_EXP_03",
+    "names": {
+      "en": "グロウエッグ（SR）"
+    },
+    "slug": "gurouetugu-sr"
+  },
+  "IT_VC_EXP_04": {
+    "dataId": "IT_VC_EXP_04",
+    "names": {
+      "en": "グロウエッグ（SSR）"
+    },
+    "slug": "gurouetugu-ssr"
+  },
+  "IT_GU_FOOD_01": {
+    "dataId": "IT_GU_FOOD_01",
+    "names": {
+      "en": "べっこうあめ"
+    },
+    "slug": "betukouame"
+  },
+  "IT_GU_FOOD_02": {
+    "dataId": "IT_GU_FOOD_02",
+    "names": {
+      "en": "ほしにく"
+    },
+    "slug": "hosiniku"
+  },
+  "IT_GU_FOOD_03": {
+    "dataId": "IT_GU_FOOD_03",
+    "names": {
+      "en": "チョコボまんじゅう"
+    },
+    "slug": "tiyokobomanziyuu"
+  },
+  "IT_GU_FOOD_04": {
+    "dataId": "IT_GU_FOOD_04",
+    "names": {
+      "en": "ズーの手羽先"
+    },
+    "slug": "zuno-shou-yu-xian"
+  },
+  "IT_GU_FOOD_05": {
+    "dataId": "IT_GU_FOOD_05",
+    "names": {
+      "en": "ボムのスープ"
+    },
+    "slug": "bomunosupu"
+  },
+  "IT_GU_FOOD_06": {
+    "dataId": "IT_GU_FOOD_06",
+    "names": {
+      "en": "ベヒーモスのステーキ"
+    },
+    "slug": "behimosunosuteki"
+  },
+  "IT_GU_EXP_S2_01": {
+    "dataId": "IT_GU_EXP_S2_01",
+    "names": {
+      "en": "大蛇の毒牙（小）"
+    },
+    "slug": "da-sheno-du-ya-xiao"
+  },
+  "IT_GU_EXP_S2_02": {
+    "dataId": "IT_GU_EXP_S2_02",
+    "names": {
+      "en": "大蛇の毒牙（中）"
+    },
+    "slug": "da-sheno-du-ya-zhong"
+  },
+  "IT_GU_EXP_S2_03": {
+    "dataId": "IT_GU_EXP_S2_03",
+    "names": {
+      "en": "大蛇の毒牙（大）"
+    },
+    "slug": "da-sheno-du-ya-da"
+  },
+  "IT_GU_EXP_S3_01": {
+    "dataId": "IT_GU_EXP_S3_01",
+    "names": {
+      "en": "牡牛の大角（小）"
+    },
+    "slug": "mu-niuno-da-jiao-xiao"
+  },
+  "IT_GU_EXP_S3_02": {
+    "dataId": "IT_GU_EXP_S3_02",
+    "names": {
+      "en": "牡牛の大角（中）"
+    },
+    "slug": "mu-niuno-da-jiao-zhong"
+  },
+  "IT_GU_EXP_S3_03": {
+    "dataId": "IT_GU_EXP_S3_03",
+    "names": {
+      "en": "牡牛の大角（大）"
+    },
+    "slug": "mu-niuno-da-jiao-da"
+  },
+  "IT_GU_EXP_S4_01": {
+    "dataId": "IT_GU_EXP_S4_01",
+    "names": {
+      "en": "麒麟のたてがみ（小）"
+    },
+    "slug": "qi-linnotategami-xiao"
+  },
+  "IT_GU_EXP_S4_02": {
+    "dataId": "IT_GU_EXP_S4_02",
+    "names": {
+      "en": "麒麟のたてがみ（中）"
+    },
+    "slug": "qi-linnotategami-zhong"
+  },
+  "IT_GU_EXP_S4_03": {
+    "dataId": "IT_GU_EXP_S4_03",
+    "names": {
+      "en": "麒麟のたてがみ（大）"
+    },
+    "slug": "qi-linnotategami-da"
+  },
+  "IT_GU_EXP_S1_01": {
+    "dataId": "IT_GU_EXP_S1_01",
+    "names": {
+      "en": "獅子の強咢（小）"
+    },
+    "slug": "shi-zino-qiang-e-xiao"
+  },
+  "IT_GU_EXP_S1_02": {
+    "dataId": "IT_GU_EXP_S1_02",
+    "names": {
+      "en": "獅子の強咢（中）"
+    },
+    "slug": "shi-zino-qiang-e-zhong"
+  },
+  "IT_GU_EXP_S1_03": {
+    "dataId": "IT_GU_EXP_S1_03",
+    "names": {
+      "en": "獅子の強咢（大）"
+    },
+    "slug": "shi-zino-qiang-e-da"
+  }
+}

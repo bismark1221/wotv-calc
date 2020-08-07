@@ -1,0 +1,4308 @@
+{
+    "infos": [
+        {
+            "key": "IT_US_POTION",
+            "value": "ポーション"
+        },
+        {
+            "key": "IT_US_HIPOTION",
+            "value": "ハイポーション"
+        },
+        {
+            "key": "IT_US_EXPOTION",
+            "value": "エクスポーション"
+        },
+        {
+            "key": "IT_US_ETHER",
+            "value": "エーテル"
+        },
+        {
+            "key": "IT_US_ETHERTURBO",
+            "value": "エーテルターボ"
+        },
+        {
+            "key": "IT_US_ELIXIR",
+            "value": "エリクサー"
+        },
+        {
+            "key": "IT_US_PNXFEATHER",
+            "value": "フェニックスの尾"
+        },
+        {
+            "key": "IT_US_ANTIDOTE",
+            "value": "毒消し"
+        },
+        {
+            "key": "IT_US_EYEDROPS",
+            "value": "目薬"
+        },
+        {
+            "key": "IT_US_REMINDER",
+            "value": "気付け薬"
+        },
+        {
+            "key": "IT_US_ECHODROP",
+            "value": "やまびこ草"
+        },
+        {
+            "key": "IT_US_UNICORNHORN",
+            "value": "ユニコーンの角"
+        },
+        {
+            "key": "IT_US_MAIDENKISS",
+            "value": "乙女のキッス"
+        },
+        {
+            "key": "IT_US_GOLDNEEDLE",
+            "value": "金の針"
+        },
+        {
+            "key": "IT_US_REMEDY",
+            "value": "万能薬"
+        },
+        {
+            "key": "IT_US_ENCHANTDRAG",
+            "value": "増強薬"
+        },
+        {
+            "key": "IT_US_HOLYTORCH",
+            "value": "聖なるトーチ"
+        },
+        {
+            "key": "IT_US_HERODRINK",
+            "value": "英雄の薬"
+        },
+        {
+            "key": "IT_US_BACCHUS",
+            "value": "バッカスの酒"
+        },
+        {
+            "key": "IT_US_SHELL",
+            "value": "シェルドリンク"
+        },
+        {
+            "key": "IT_US_PROTECT",
+            "value": "プロテスドリンク"
+        },
+        {
+            "key": "IT_US_HEALWATER",
+            "value": "回復の泉"
+        },
+        {
+            "key": "IT_US_HPPOTION",
+            "value": "体力の薬"
+        },
+        {
+            "key": "IT_US_ATKPOTION",
+            "value": "力の薬"
+        },
+        {
+            "key": "IT_US_MAGPOTION",
+            "value": "魔力の薬"
+        },
+        {
+            "key": "IT_US_SPDPOTION",
+            "value": "迅速の薬"
+        },
+        {
+            "key": "IT_US_DEXPOTION",
+            "value": "手練の薬"
+        },
+        {
+            "key": "IT_ACTP_01",
+            "value": "体力回復薬（小）"
+        },
+        {
+            "key": "IT_ACTP_02",
+            "value": "体力回復薬（中）"
+        },
+        {
+            "key": "IT_ACTP_03",
+            "value": "体力回復薬（大）"
+        },
+        {
+            "key": "IT_ACTP_04",
+            "value": "体力回復薬（極）"
+        },
+        {
+            "key": "IT_ARENAP_02",
+            "value": "アリーナオーブ回復薬（全回復）"
+        },
+        {
+            "key": "IT_RAIDAP_01",
+            "value": "マルチレイド回復薬（全回復）"
+        },
+        {
+            "key": "IT_RANKMP_02",
+            "value": "クラスマッチポイント回復薬（全回復）"
+        },
+        {
+            "key": "IT_CG_01",
+            "value": "ギルガメ（小）"
+        },
+        {
+            "key": "IT_CG_02",
+            "value": "ギルガメ（中）"
+        },
+        {
+            "key": "IT_CG_03",
+            "value": "ギルガメ（大）"
+        },
+        {
+            "key": "IT_CG_04",
+            "value": "ギルガメ（極）"
+        },
+        {
+            "key": "IT_US_EXP_01",
+            "value": "経験キューブ（小）"
+        },
+        {
+            "key": "IT_US_EXP_02",
+            "value": "経験キューブ（中）"
+        },
+        {
+            "key": "IT_US_EXP_03",
+            "value": "経験キューブ（大）"
+        },
+        {
+            "key": "IT_US_EXP_04",
+            "value": "経験キューブ（極）"
+        },
+        {
+            "key": "IT_LB_EXP_01",
+            "value": "ミニバーストポット"
+        },
+        {
+            "key": "IT_LB_EXP_02",
+            "value": "バーストポット"
+        },
+        {
+            "key": "IT_LB_EXP_03",
+            "value": "キングバーストポット"
+        },
+        {
+            "key": "IT_JB_MM_ALL",
+            "value": "微かな記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_ALL_2",
+            "value": "微かな記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_ALL_3",
+            "value": "微かな記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_ALL_4",
+            "value": "微かな記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_ALL_5",
+            "value": "微かな記憶・緋"
+        },
+        {
+            "key": "IT_JB_SWORD_01",
+            "value": "剣のジェダイト"
+        },
+        {
+            "key": "IT_JB_SWORD_02",
+            "value": "剣のアズライト"
+        },
+        {
+            "key": "IT_JB_SWORD_03",
+            "value": "剣のチャロアイト"
+        },
+        {
+            "key": "IT_JB_SWORD_04",
+            "value": "剣のシトリン"
+        },
+        {
+            "key": "IT_JB_SWORD_05",
+            "value": "剣のスピネル"
+        },
+        {
+            "key": "IT_JB_LSWORD_01",
+            "value": "大剣のジェダイト"
+        },
+        {
+            "key": "IT_JB_LSWORD_02",
+            "value": "大剣のアズライト"
+        },
+        {
+            "key": "IT_JB_LSWORD_03",
+            "value": "大剣のチャロアイト"
+        },
+        {
+            "key": "IT_JB_LSWORD_04",
+            "value": "大剣のシトリン"
+        },
+        {
+            "key": "IT_JB_LSWORD_05",
+            "value": "大剣のスピネル"
+        },
+        {
+            "key": "IT_JB_JSWORD_01",
+            "value": "刀のジェダイト"
+        },
+        {
+            "key": "IT_JB_JSWORD_02",
+            "value": "刀のアズライト"
+        },
+        {
+            "key": "IT_JB_JSWORD_03",
+            "value": "刀のチャロアイト"
+        },
+        {
+            "key": "IT_JB_JSWORD_04",
+            "value": "刀のシトリン"
+        },
+        {
+            "key": "IT_JB_JSWORD_05",
+            "value": "刀のスピネル"
+        },
+        {
+            "key": "IT_JB_FIST_01",
+            "value": "拳のジェダイト"
+        },
+        {
+            "key": "IT_JB_FIST_02",
+            "value": "拳のアズライト"
+        },
+        {
+            "key": "IT_JB_FIST_03",
+            "value": "拳のチャロアイト"
+        },
+        {
+            "key": "IT_JB_FIST_04",
+            "value": "拳のシトリン"
+        },
+        {
+            "key": "IT_JB_FIST_05",
+            "value": "拳のスピネル"
+        },
+        {
+            "key": "IT_JB_SPEAR_01",
+            "value": "槍のジェダイト"
+        },
+        {
+            "key": "IT_JB_SPEAR_02",
+            "value": "槍のアズライト"
+        },
+        {
+            "key": "IT_JB_SPEAR_03",
+            "value": "槍のチャロアイト"
+        },
+        {
+            "key": "IT_JB_SPEAR_04",
+            "value": "槍のシトリン"
+        },
+        {
+            "key": "IT_JB_SPEAR_05",
+            "value": "槍のスピネル"
+        },
+        {
+            "key": "IT_JB_SSWORD_01",
+            "value": "短剣のジェダイト"
+        },
+        {
+            "key": "IT_JB_SSWORD_02",
+            "value": "短剣のアズライト"
+        },
+        {
+            "key": "IT_JB_SSWORD_03",
+            "value": "短剣のチャロアイト"
+        },
+        {
+            "key": "IT_JB_SSWORD_04",
+            "value": "短剣のシトリン"
+        },
+        {
+            "key": "IT_JB_SSWORD_05",
+            "value": "短剣のスピネル"
+        },
+        {
+            "key": "IT_JB_KUNAI_01",
+            "value": "忍刀のジェダイト"
+        },
+        {
+            "key": "IT_JB_KUNAI_02",
+            "value": "忍刀のアズライト"
+        },
+        {
+            "key": "IT_JB_KUNAI_03",
+            "value": "忍刀のチャロアイト"
+        },
+        {
+            "key": "IT_JB_KUNAI_04",
+            "value": "忍刀のシトリン"
+        },
+        {
+            "key": "IT_JB_KUNAI_05",
+            "value": "忍刀のスピネル"
+        },
+        {
+            "key": "IT_JB_BOW_01",
+            "value": "弓のジェダイト"
+        },
+        {
+            "key": "IT_JB_BOW_02",
+            "value": "弓のアズライト"
+        },
+        {
+            "key": "IT_JB_BOW_03",
+            "value": "弓のチャロアイト"
+        },
+        {
+            "key": "IT_JB_BOW_04",
+            "value": "弓のシトリン"
+        },
+        {
+            "key": "IT_JB_BOW_05",
+            "value": "弓のスピネル"
+        },
+        {
+            "key": "IT_JB_GUN_01",
+            "value": "銃のジェダイト"
+        },
+        {
+            "key": "IT_JB_GUN_02",
+            "value": "銃のアズライト"
+        },
+        {
+            "key": "IT_JB_GUN_03",
+            "value": "銃のチャロアイト"
+        },
+        {
+            "key": "IT_JB_GUN_04",
+            "value": "銃のシトリン"
+        },
+        {
+            "key": "IT_JB_GUN_05",
+            "value": "銃のスピネル"
+        },
+        {
+            "key": "IT_JB_STAFF_01",
+            "value": "杖のジェダイト"
+        },
+        {
+            "key": "IT_JB_STAFF_02",
+            "value": "杖のアズライト"
+        },
+        {
+            "key": "IT_JB_STAFF_03",
+            "value": "杖のチャロアイト"
+        },
+        {
+            "key": "IT_JB_STAFF_04",
+            "value": "杖のシトリン"
+        },
+        {
+            "key": "IT_JB_STAFF_05",
+            "value": "杖のスピネル"
+        },
+        {
+            "key": "IT_JB_MACE_01",
+            "value": "メイスのジェダイト"
+        },
+        {
+            "key": "IT_JB_MACE_02",
+            "value": "メイスのアズライト"
+        },
+        {
+            "key": "IT_JB_MACE_03",
+            "value": "メイスのチャロアイト"
+        },
+        {
+            "key": "IT_JB_MACE_04",
+            "value": "メイスのシトリン"
+        },
+        {
+            "key": "IT_JB_MACE_05",
+            "value": "メイスのスピネル"
+        },
+        {
+            "key": "IT_JB_AXE_01",
+            "value": "斧のジェダイト"
+        },
+        {
+            "key": "IT_JB_AXE_02",
+            "value": "斧のアズライト"
+        },
+        {
+            "key": "IT_JB_AXE_03",
+            "value": "斧のチャロアイト"
+        },
+        {
+            "key": "IT_JB_AXE_04",
+            "value": "斧のシトリン"
+        },
+        {
+            "key": "IT_JB_AXE_05",
+            "value": "斧のスピネル"
+        },
+        {
+            "key": "IT_JB_MM_COMMON",
+            "value": "名もなき英雄の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_2",
+            "value": "名もなき英雄の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_3",
+            "value": "名もなき英雄の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_4",
+            "value": "名もなき英雄の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_5",
+            "value": "名もなき英雄の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_WAR",
+            "value": "戦士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_WAR_2",
+            "value": "戦士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_WAR_3",
+            "value": "戦士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_WAR_4",
+            "value": "戦士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_WAR_5",
+            "value": "戦士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_KNT",
+            "value": "ナイトの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_KNT_2",
+            "value": "ナイトの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_KNT_3",
+            "value": "ナイトの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_KNT_4",
+            "value": "ナイトの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_KNT_5",
+            "value": "ナイトの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_PLD",
+            "value": "パラディンの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_PLD_2",
+            "value": "パラディンの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_PLD_3",
+            "value": "パラディンの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_PLD_4",
+            "value": "パラディンの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_PLD_5",
+            "value": "パラディンの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_SWN",
+            "value": "ソルジャーの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_SWN_2",
+            "value": "ソルジャーの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_SWN_3",
+            "value": "ソルジャーの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_SWN_4",
+            "value": "ソルジャーの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_SWN_5",
+            "value": "ソルジャーの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_MNK",
+            "value": "モンクの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MNK_2",
+            "value": "モンクの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MNK_3",
+            "value": "モンクの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MNK_4",
+            "value": "モンクの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MNK_5",
+            "value": "モンクの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_SAM",
+            "value": "侍の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_SAM_2",
+            "value": "侍の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_SAM_3",
+            "value": "侍の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_SAM_4",
+            "value": "侍の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_SAM_5",
+            "value": "侍の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LAN",
+            "value": "槍術士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LAN_2",
+            "value": "槍術士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LAN_3",
+            "value": "槍術士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LAN_4",
+            "value": "槍術士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LAN_5",
+            "value": "槍術士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_DRG",
+            "value": "竜騎士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_DRG_2",
+            "value": "竜騎士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_DRG_3",
+            "value": "竜騎士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_DRG_4",
+            "value": "竜騎士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_DRG_5",
+            "value": "竜騎士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_THI",
+            "value": "シーフの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_THI_2",
+            "value": "シーフの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_THI_3",
+            "value": "シーフの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_THI_4",
+            "value": "シーフの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_THI_5",
+            "value": "シーフの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_NIN",
+            "value": "忍者の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_NIN_2",
+            "value": "忍者の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_NIN_3",
+            "value": "忍者の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_NIN_4",
+            "value": "忍者の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_NIN_5",
+            "value": "忍者の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_HUN",
+            "value": "狩人の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_HUN_2",
+            "value": "狩人の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_HUN_3",
+            "value": "狩人の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_HUN_4",
+            "value": "狩人の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_HUN_5",
+            "value": "狩人の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_GUN",
+            "value": "ガンナーの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_GUN_2",
+            "value": "ガンナーの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_GUN_3",
+            "value": "ガンナーの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_GUN_4",
+            "value": "ガンナーの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_GUN_5",
+            "value": "ガンナーの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_WHM",
+            "value": "白魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_WHM_2",
+            "value": "白魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_WHM_3",
+            "value": "白魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_WHM_4",
+            "value": "白魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_WHM_5",
+            "value": "白魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_BLM",
+            "value": "黒魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_BLM_2",
+            "value": "黒魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_BLM_3",
+            "value": "黒魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_BLM_4",
+            "value": "黒魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_BLM_5",
+            "value": "黒魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_RDM",
+            "value": "赤魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_RDM_2",
+            "value": "赤魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_RDM_3",
+            "value": "赤魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_RDM_4",
+            "value": "赤魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_RDM_5",
+            "value": "赤魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_GRM",
+            "value": "緑魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_GRM_2",
+            "value": "緑魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_GRM_3",
+            "value": "緑魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_GRM_4",
+            "value": "緑魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_GRM_5",
+            "value": "緑魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_TIM",
+            "value": "時魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_TIM_2",
+            "value": "時魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_TIM_3",
+            "value": "時魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_TIM_4",
+            "value": "時魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_TIM_5",
+            "value": "時魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_MGK",
+            "value": "魔法剣士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MGK_2",
+            "value": "魔法剣士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MGK_3",
+            "value": "魔法剣士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MGK_4",
+            "value": "魔法剣士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MGK_5",
+            "value": "魔法剣士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_CLR",
+            "value": "クレリックの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_CLR_2",
+            "value": "クレリックの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_CLR_3",
+            "value": "クレリックの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_CLR_4",
+            "value": "クレリックの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_CLR_5",
+            "value": "クレリックの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS",
+            "value": "翼ある者の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_2",
+            "value": "翼ある者の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_3",
+            "value": "翼ある者の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_4",
+            "value": "翼ある者の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_5",
+            "value": "翼ある者の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL",
+            "value": "魔女の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_2",
+            "value": "魔女の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_3",
+            "value": "魔女の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_4",
+            "value": "魔女の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_5",
+            "value": "魔女の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR",
+            "value": "ガンブレイカーの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_2",
+            "value": "ガンブレイカーの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_3",
+            "value": "ガンブレイカーの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_4",
+            "value": "ガンブレイカーの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_5",
+            "value": "ガンブレイカーの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_VIK",
+            "value": "バイキングの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_VIK_2",
+            "value": "バイキングの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_VIK_3",
+            "value": "バイキングの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_VIK_4",
+            "value": "バイキングの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_VIK_5",
+            "value": "バイキングの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR",
+            "value": "ダークナイトの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_2",
+            "value": "ダークナイトの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_3",
+            "value": "ダークナイトの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_4",
+            "value": "ダークナイトの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_5",
+            "value": "ダークナイトの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ",
+            "value": "見習い戦士（ラムザ）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_2",
+            "value": "見習い戦士（ラムザ）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_3",
+            "value": "見習い戦士（ラムザ）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_4",
+            "value": "見習い戦士（ラムザ）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_5",
+            "value": "見習い戦士（ラムザ）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND",
+            "value": "剣聖の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_2",
+            "value": "剣聖の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_3",
+            "value": "剣聖の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_4",
+            "value": "剣聖の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_5",
+            "value": "剣聖の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_WGN",
+            "value": "ダブルガンナーの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_WGN_2",
+            "value": "ダブルガンナーの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_WGN_3",
+            "value": "ダブルガンナーの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_WGN_4",
+            "value": "ダブルガンナーの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_WGN_5",
+            "value": "ダブルガンナーの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_ASS",
+            "value": "アサシンの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_ASS_2",
+            "value": "アサシンの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_ASS_3",
+            "value": "アサシンの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_ASS_4",
+            "value": "アサシンの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_ASS_5",
+            "value": "アサシンの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN",
+            "value": "グランシェルトの騎士（炎）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_2",
+            "value": "グランシェルトの騎士（炎）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_3",
+            "value": "グランシェルトの騎士（炎）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_4",
+            "value": "グランシェルトの騎士（炎）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_5",
+            "value": "グランシェルトの騎士（炎）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL",
+            "value": "光の戦士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_2",
+            "value": "光の戦士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_3",
+            "value": "光の戦士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_4",
+            "value": "光の戦士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_5",
+            "value": "光の戦士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_MST",
+            "value": "魔杖術士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MST_2",
+            "value": "魔杖術士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MST_3",
+            "value": "魔杖術士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MST_4",
+            "value": "魔杖術士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MST_5",
+            "value": "魔杖術士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA",
+            "value": "ホーリーナイトの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_2",
+            "value": "ホーリーナイトの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_3",
+            "value": "ホーリーナイトの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_4",
+            "value": "ホーリーナイトの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_5",
+            "value": "ホーリーナイトの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT",
+            "value": "見習い戦士（ディリータ）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_2",
+            "value": "見習い戦士（ディリータ）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_3",
+            "value": "見習い戦士（ディリータ）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_4",
+            "value": "見習い戦士（ディリータ）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_5",
+            "value": "見習い戦士（ディリータ）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD",
+            "value": "機工士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_2",
+            "value": "機工士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_3",
+            "value": "機工士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_4",
+            "value": "機工士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_5",
+            "value": "機工士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_CAL",
+            "value": "算術士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_CAL_2",
+            "value": "算術士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_CAL_3",
+            "value": "算術士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_CAL_4",
+            "value": "算術士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_CAL_5",
+            "value": "算術士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN",
+            "value": "破滅の騎士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_2",
+            "value": "破滅の騎士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_3",
+            "value": "破滅の騎士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_4",
+            "value": "破滅の騎士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_5",
+            "value": "破滅の騎士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR",
+            "value": "ヴァルキリーの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_2",
+            "value": "ヴァルキリーの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_3",
+            "value": "ヴァルキリーの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_4",
+            "value": "ヴァルキリーの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_5",
+            "value": "ヴァルキリーの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL",
+            "value": "グランシェルトの騎士（氷）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_2",
+            "value": "グランシェルトの騎士（氷）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_3",
+            "value": "グランシェルトの騎士（氷）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_4",
+            "value": "グランシェルトの騎士（氷）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_5",
+            "value": "グランシェルトの騎士（氷）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_MKN",
+            "value": "ルーンナイトの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MKN_2",
+            "value": "ルーンナイトの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MKN_3",
+            "value": "ルーンナイトの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MKN_4",
+            "value": "ルーンナイトの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MKN_5",
+            "value": "ルーンナイトの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL",
+            "value": "月のパラディンの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_2",
+            "value": "月のパラディンの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_3",
+            "value": "月のパラディンの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_4",
+            "value": "月のパラディンの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_5",
+            "value": "月のパラディンの記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA",
+            "value": "バロンの白魔道士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_2",
+            "value": "バロンの白魔道士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_3",
+            "value": "バロンの白魔道士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_4",
+            "value": "バロンの白魔道士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_5",
+            "value": "バロンの白魔道士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN",
+            "value": "バロンの竜騎士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_2",
+            "value": "バロンの竜騎士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_3",
+            "value": "バロンの竜騎士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_4",
+            "value": "バロンの竜騎士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_5",
+            "value": "バロンの竜騎士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_1",
+            "value": "火の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_2",
+            "value": "火の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_3",
+            "value": "火の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_4",
+            "value": "火の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_5",
+            "value": "火の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_ICE_1",
+            "value": "氷の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_ICE_2",
+            "value": "氷の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_ICE_3",
+            "value": "氷の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_ICE_4",
+            "value": "氷の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_ICE_5",
+            "value": "氷の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_WIND_1",
+            "value": "風の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_WIND_2",
+            "value": "風の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_WIND_3",
+            "value": "風の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_WIND_4",
+            "value": "風の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_WIND_5",
+            "value": "風の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_1",
+            "value": "土の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_2",
+            "value": "土の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_3",
+            "value": "土の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_4",
+            "value": "土の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_5",
+            "value": "土の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_1",
+            "value": "雷の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_2",
+            "value": "雷の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_3",
+            "value": "雷の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_4",
+            "value": "雷の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_5",
+            "value": "雷の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_WATER_1",
+            "value": "水の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_WATER_2",
+            "value": "水の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_WATER_3",
+            "value": "水の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_WATER_4",
+            "value": "水の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_WATER_5",
+            "value": "水の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_1",
+            "value": "光の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_2",
+            "value": "光の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_3",
+            "value": "光の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_4",
+            "value": "光の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_5",
+            "value": "光の輝石・緋"
+        },
+        {
+            "key": "IT_JB_EM_DARK_1",
+            "value": "闇の輝石・翠"
+        },
+        {
+            "key": "IT_JB_EM_DARK_2",
+            "value": "闇の輝石・碧"
+        },
+        {
+            "key": "IT_JB_EM_DARK_3",
+            "value": "闇の輝石・紫"
+        },
+        {
+            "key": "IT_JB_EM_DARK_4",
+            "value": "闇の輝石・橘"
+        },
+        {
+            "key": "IT_JB_EM_DARK_5",
+            "value": "闇の輝石・緋"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_1",
+            "value": "祈る天使像・翠"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_2",
+            "value": "祈る天使像・碧"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_3",
+            "value": "祈る天使像・紫"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_4",
+            "value": "祈る天使像・橘"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_5",
+            "value": "祈る天使像・緋"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_1",
+            "value": "佇む地竜像・翠"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_2",
+            "value": "佇む地竜像・碧"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_3",
+            "value": "佇む地竜像・紫"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_4",
+            "value": "佇む地竜像・橘"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_5",
+            "value": "佇む地竜像・緋"
+        },
+        {
+            "key": "IT_UN_AW_FIRE",
+            "value": "火の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_ICE",
+            "value": "氷の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_WIND",
+            "value": "風の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_SOIL",
+            "value": "土の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER",
+            "value": "雷の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_WATER",
+            "value": "水の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_SHINE",
+            "value": "光の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_DARK",
+            "value": "闇の覚醒輝源"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R2",
+            "value": "火の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R3",
+            "value": "火の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R4",
+            "value": "火の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R5",
+            "value": "火の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R6",
+            "value": "火の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R2",
+            "value": "氷の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R3",
+            "value": "氷の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R4",
+            "value": "氷の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R5",
+            "value": "氷の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R6",
+            "value": "氷の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R2",
+            "value": "風の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R3",
+            "value": "風の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R4",
+            "value": "風の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R5",
+            "value": "風の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R6",
+            "value": "風の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R2",
+            "value": "土の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R3",
+            "value": "土の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R4",
+            "value": "土の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R5",
+            "value": "土の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R6",
+            "value": "土の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R2",
+            "value": "雷の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R3",
+            "value": "雷の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R4",
+            "value": "雷の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R5",
+            "value": "雷の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R6",
+            "value": "雷の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R2",
+            "value": "水の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R3",
+            "value": "水の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R4",
+            "value": "水の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R5",
+            "value": "水の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R6",
+            "value": "水の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R2",
+            "value": "光の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R3",
+            "value": "光の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R4",
+            "value": "光の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R5",
+            "value": "光の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R6",
+            "value": "光の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R2",
+            "value": "闇の覚醒魂（★2）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R3",
+            "value": "闇の覚醒魂（★3）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R4",
+            "value": "闇の覚醒魂（★4）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R5",
+            "value": "闇の覚醒魂（★5）"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R6",
+            "value": "闇の覚醒魂（★6）"
+        },
+        {
+            "key": "IT_AW_VBALL_N",
+            "value": "赤銅の幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_R",
+            "value": "白銀の幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_SR",
+            "value": "黄金の幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_SSR",
+            "value": "蒼輝の幻球"
+        },
+        {
+            "key": "IT_AW_VBALL_UR",
+            "value": "星虹の幻球"
+        },
+        {
+            "key": "IT_PI_COM_FIRE",
+            "value": "火の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_ICE",
+            "value": "氷の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_WIND",
+            "value": "風の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_SOIL",
+            "value": "土の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_THUNDER",
+            "value": "雷の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_WATER",
+            "value": "水の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_SHINE",
+            "value": "光の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_DARK",
+            "value": "闇の想いの欠片"
+        },
+        {
+            "key": "IT_PI_COM_ALL",
+            "value": "虹の想いの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MONT",
+            "value": "モント・リオニスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_STRN",
+            "value": "シュテル・リオニスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ELDE",
+            "value": "エルデ・リオニスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ROBB",
+            "value": "ロブ・ホルンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ENBT",
+            "value": "エンゲルベルトの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ZIZA",
+            "value": "ジザの欠片"
+        },
+        {
+            "key": "IT_PI_LW_AILN",
+            "value": "アイリーンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MDNA",
+            "value": "メディエナの欠片"
+        },
+        {
+            "key": "IT_PI_LW_AYKA",
+            "value": "アヤカの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MACR",
+            "value": "マシュリー・ホルンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_FDRC",
+            "value": "フェデリカの欠片"
+        },
+        {
+            "key": "IT_PI_LW_YERM",
+            "value": "イェルマの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RAMD_01",
+            "value": "ラマダ（Xmas）の欠片"
+        },
+        {
+            "key": "IT_PI_LW_MACR_01",
+            "value": "マシュリー（Xmas）の欠片"
+        },
+        {
+            "key": "IT_PI_LW_MRND",
+            "value": "ミランダの欠片"
+        },
+        {
+            "key": "IT_PI_LW_VKTR",
+            "value": "ヴィクトラの欠片"
+        },
+        {
+            "key": "IT_PI_LW_HLNA",
+            "value": "ヘレナ・リオニスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LILS",
+            "value": "リリシュの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RAMD",
+            "value": "ラマダの欠片"
+        },
+        {
+            "key": "IT_PI_LW_OOOO",
+            "value": "オーの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LRNZ",
+            "value": "ロレンツォの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RIRY",
+            "value": "ライリュウの欠片"
+        },
+        {
+            "key": "IT_PI_LW_VSTR",
+            "value": "ヴィストラールの欠片"
+        },
+        {
+            "key": "IT_PI_LW_CLEY",
+            "value": "クーリ・ウェズエットの欠片"
+        },
+        {
+            "key": "IT_PI_LW_KADI",
+            "value": "カディアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MRLK",
+            "value": "メリルークの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MGRT",
+            "value": "マルグリットの欠片"
+        },
+        {
+            "key": "IT_PI_LW_PRAY",
+            "value": "≪祈り≫の欠片"
+        },
+        {
+            "key": "IT_PI_LW_SZRT",
+            "value": "シュゼルトの欠片"
+        },
+        {
+            "key": "IT_PI_LW_FINA",
+            "value": "フィーナの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SDLX",
+            "value": "シャドウリンクスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_NASR",
+            "value": "ナーシアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_DRND",
+            "value": "ドランドの欠片"
+        },
+        {
+            "key": "IT_PI_LW_BYLO",
+            "value": "ベイロの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RYER",
+            "value": "リレルリラの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SCIA",
+            "value": "ソシアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_VRID",
+            "value": "ヴァライドの欠片"
+        },
+        {
+            "key": "IT_PI_LW_NAIA",
+            "value": "ナイアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SRJS",
+            "value": "サージェスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_UNII",
+            "value": "ユニの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SEVR",
+            "value": "セヴェロの欠片"
+        },
+        {
+            "key": "IT_PI_LW_VADM",
+            "value": "ヴァジムの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MURM",
+            "value": "≪呟き≫の欠片"
+        },
+        {
+            "key": "IT_PI_LW_PHBE",
+            "value": "フィービーの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ETRE",
+            "value": "エトアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_THLA",
+            "value": "サリアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RART",
+            "value": "リアートの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MICE",
+            "value": "ミーチェの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MIIA",
+            "value": "ミーアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ZZAN",
+            "value": "ザザンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_GLMS",
+            "value": "ギルガメッシュの欠片"
+        },
+        {
+            "key": "IT_PI_FF14_YSTL",
+            "value": "ヤ・シュトラの欠片"
+        },
+        {
+            "key": "IT_PI_FF14_TNCR",
+            "value": "サンクレッドの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_GFGR",
+            "value": "ガフガリオンの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_RAMZ",
+            "value": "ラムザの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_ORND",
+            "value": "オルランドゥの欠片"
+        },
+        {
+            "key": "IT_PI_LW_WHIS",
+            "value": "≪囁き≫の欠片"
+        },
+        {
+            "key": "IT_PI_LW_KTON",
+            "value": "キトンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LUCA",
+            "value": "ル・シアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ADLD",
+            "value": "アドラードの欠片"
+        },
+        {
+            "key": "IT_PI_LW_VNLA",
+            "value": "ヴィネラ・フェネスの欠片"
+        },
+        {
+            "key": "IT_PI_LW_DRIO",
+            "value": "ダリオ・ホルンの欠片"
+        },
+        {
+            "key": "IT_PI_LW_TREL",
+            "value": "ティレルの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RAIN",
+            "value": "レインの欠片"
+        },
+        {
+            "key": "IT_PI_FF1_WROL",
+            "value": "光の戦士の欠片"
+        },
+        {
+            "key": "IT_PI_LW_QILF",
+            "value": "キルフェの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SIMR",
+            "value": "シムールの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ORDR",
+            "value": "オルドアの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LVES",
+            "value": "ラヴィエスの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_AGRA",
+            "value": "アグリアスの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_DELT",
+            "value": "ディリータの欠片"
+        },
+        {
+            "key": "IT_PI_FFT_MSTD",
+            "value": "ムスタディオの欠片"
+        },
+        {
+            "key": "IT_PI_LW_IRDL",
+            "value": "イルディラの欠片"
+        },
+        {
+            "key": "IT_PI_LW_STRN_01",
+            "value": "シュテル（破滅の騎士）の欠片"
+        },
+        {
+            "key": "IT_PI_LW_GRSR",
+            "value": "グラセラ・ウェズエットの欠片"
+        },
+        {
+            "key": "IT_PI_LW_RRIR",
+            "value": "ロレイラの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LSWL",
+            "value": "ラスウェルの欠片"
+        },
+        {
+            "key": "IT_PI_LW_SCAL",
+            "value": "スカールの欠片"
+        },
+        {
+            "key": "IT_PI_LW_MRAL",
+            "value": "マリアルの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LILS_01",
+            "value": "リリシュ（水着）の欠片"
+        },
+        {
+            "key": "IT_PI_LW_HWLT",
+            "value": "ハウレットの欠片"
+        },
+        {
+            "key": "IT_PI_LW_CHEL",
+            "value": "チェルの欠片"
+        },
+        {
+            "key": "IT_PI_LW_LATH",
+            "value": "ルアーサの欠片"
+        },
+        {
+            "key": "IT_PI_LW_TITU",
+            "value": "タイタスの欠片"
+        },
+        {
+            "key": "IT_PI_FF4_CECL",
+            "value": "セシルの欠片"
+        },
+        {
+            "key": "IT_PI_FF4_ROSA",
+            "value": "ローザの欠片"
+        },
+        {
+            "key": "IT_PI_FF4_KAIN",
+            "value": "カインの欠片"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_01",
+            "value": "赤の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_02",
+            "value": "赤の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_03",
+            "value": "赤の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_04",
+            "value": "赤の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_01",
+            "value": "青の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_02",
+            "value": "青の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_03",
+            "value": "青の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_04",
+            "value": "青の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_01",
+            "value": "緑の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_02",
+            "value": "緑の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_03",
+            "value": "緑の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_04",
+            "value": "緑の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_01",
+            "value": "黄の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_02",
+            "value": "黄の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_03",
+            "value": "黄の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_04",
+            "value": "黄の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_01",
+            "value": "橙の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_02",
+            "value": "橙の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_03",
+            "value": "橙の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_04",
+            "value": "橙の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_01",
+            "value": "水の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_02",
+            "value": "水の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_03",
+            "value": "水の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_04",
+            "value": "水の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_01",
+            "value": "白の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_02",
+            "value": "白の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_03",
+            "value": "白の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_04",
+            "value": "白の魔石（極）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_01",
+            "value": "紫の魔石（小）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_02",
+            "value": "紫の魔石（中）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_03",
+            "value": "紫の魔石（大）"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_04",
+            "value": "紫の魔石（極）"
+        },
+        {
+            "key": "IT_SB_AW_FIRE",
+            "value": "火の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_ICE",
+            "value": "氷の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_THUNDER",
+            "value": "雷の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_WATER",
+            "value": "水の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_WIND",
+            "value": "風の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_SOIL",
+            "value": "土の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_SHINE",
+            "value": "光の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_DARK",
+            "value": "闇の獣醒石"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R2",
+            "value": "イフリートの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R3",
+            "value": "イフリートの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R2",
+            "value": "ゴーレムの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R3",
+            "value": "ゴーレムの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R2",
+            "value": "セイレーンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R3",
+            "value": "セイレーンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R2",
+            "value": "シヴァの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R3",
+            "value": "シヴァの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R2",
+            "value": "鉄巨人の獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R3",
+            "value": "鉄巨人の獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R2",
+            "value": "ベヒーモスの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R3",
+            "value": "ベヒーモスの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R2",
+            "value": "モルボルの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R3",
+            "value": "モルボルの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R2",
+            "value": "ラムウの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R3",
+            "value": "ラムウの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R2",
+            "value": "モーグリ（Xmas）の獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R3",
+            "value": "モーグリ（Xmas）の獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R2",
+            "value": "オーディンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R3",
+            "value": "オーディンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R2",
+            "value": "ラミアクイーンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R3",
+            "value": "ラミアクイーンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R2",
+            "value": "テトラシルフィードの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R3",
+            "value": "テトラシルフィードの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R2",
+            "value": "オチューの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R3",
+            "value": "オチューの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R2",
+            "value": "２ヘッドドラゴンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R3",
+            "value": "２ヘッドドラゴンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R2",
+            "value": "ディアボロスの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R3",
+            "value": "ディアボロスの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R2",
+            "value": "マインドフレイアの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R3",
+            "value": "マインドフレイアの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R2",
+            "value": "フェンリルの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R3",
+            "value": "フェンリルの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R2",
+            "value": "タイタンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R3",
+            "value": "タイタンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R2",
+            "value": "ブラッディムーンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R3",
+            "value": "ブラッディムーンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_AGON_R2",
+            "value": "アイガイオンの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_AGON_R3",
+            "value": "アイガイオンの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R2",
+            "value": "チョコボの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R3",
+            "value": "チョコボの獣醒石（★3）"
+        },
+        {
+            "key": "IT_TICKET_STORY",
+            "value": "ストーリースキップチケット"
+        },
+        {
+            "key": "IT_TICKET_EVENT",
+            "value": "イベントスキップチケット"
+        },
+        {
+            "key": "IT_PT_SKIP_001",
+            "value": "裁きの試練クエストスキップチケット"
+        },
+        {
+            "key": "IT_PT_BSSKIP_001",
+            "value": "裁きの試練ボススキップチケット"
+        },
+        {
+            "key": "IT_PT_BOSS_001",
+            "value": "ボスバトルチケット"
+        },
+        {
+            "key": "IT_PT_SKIP_FF4_1",
+            "value": "【FFⅣ】試練クエストスキップチケット"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF4_1",
+            "value": "【FFⅣ】試練ボススキップチケット"
+        },
+        {
+            "key": "IT_PT_BOSS_FF4_1",
+            "value": "【FFⅣ】ボスバトルチケット"
+        },
+        {
+            "key": "IT_AF_EXP_01",
+            "value": "アダマンタイト（小）"
+        },
+        {
+            "key": "IT_AF_EXP_02",
+            "value": "アダマンタイト（中）"
+        },
+        {
+            "key": "IT_AF_EXP_03",
+            "value": "アダマンタイト（大）"
+        },
+        {
+            "key": "IT_AF_EXP_04",
+            "value": "アダマンタイト（極）"
+        },
+        {
+            "key": "IT_AF_AW_SWORD",
+            "value": "精錬の秘伝書（剣）"
+        },
+        {
+            "key": "IT_AF_AW_LSWORD",
+            "value": "精錬の秘伝書（大剣）"
+        },
+        {
+            "key": "IT_AF_AW_FIST",
+            "value": "精錬の秘伝書（拳）"
+        },
+        {
+            "key": "IT_AF_AW_JSWORD",
+            "value": "精錬の秘伝書（刀）"
+        },
+        {
+            "key": "IT_AF_AW_SPEAR",
+            "value": "精錬の秘伝書（槍）"
+        },
+        {
+            "key": "IT_AF_AW_SSWORD",
+            "value": "精錬の秘伝書（短剣）"
+        },
+        {
+            "key": "IT_AF_AW_KUNAI",
+            "value": "精錬の秘伝書（忍刀）"
+        },
+        {
+            "key": "IT_AF_AW_BOW",
+            "value": "精錬の秘伝書（弓）"
+        },
+        {
+            "key": "IT_AF_AW_GUN",
+            "value": "精錬の秘伝書（銃）"
+        },
+        {
+            "key": "IT_AF_AW_STAFF",
+            "value": "精錬の秘伝書（杖）"
+        },
+        {
+            "key": "IT_AF_AW_MACE",
+            "value": "精錬の秘伝書（メイス）"
+        },
+        {
+            "key": "IT_AF_AW_AXE",
+            "value": "精錬の秘伝書（斧）"
+        },
+        {
+            "key": "IT_AF_AW_ARMOR",
+            "value": "精錬の秘伝書（防具）"
+        },
+        {
+            "key": "IT_AF_AW_ACCE",
+            "value": "精錬の秘伝書（アクセサリ）"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_01",
+            "value": "火の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_01",
+            "value": "氷の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_01",
+            "value": "雷の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_01",
+            "value": "水の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_01",
+            "value": "土の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_01",
+            "value": "風の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_01",
+            "value": "光の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_01",
+            "value": "闇の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_01",
+            "value": "無の結晶"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_02",
+            "value": "火の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_02",
+            "value": "氷の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_02",
+            "value": "雷の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_02",
+            "value": "水の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_02",
+            "value": "土の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_02",
+            "value": "風の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_02",
+            "value": "光の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_02",
+            "value": "闇の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_02",
+            "value": "無の大結晶"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_01",
+            "value": "悲哀の心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_02",
+            "value": "憤怒の心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_03",
+            "value": "愉楽の心"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_04",
+            "value": "歓喜の心"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_01",
+            "value": "ドロドロした液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_02",
+            "value": "ネバネバした液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_03",
+            "value": "サラサラした液体"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_04",
+            "value": "ヌルヌルした液体"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_01",
+            "value": "濁った樹液塊"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_02",
+            "value": "透き通った樹液塊"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_03",
+            "value": "謎めいた樹液塊"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_04",
+            "value": "霊木の樹液塊"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_01",
+            "value": "灰色の霊砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_02",
+            "value": "青色の霊砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_03",
+            "value": "黒色の霊砂"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_04",
+            "value": "白色の霊砂"
+        },
+        {
+            "key": "IT_AF_MAT_OGRE",
+            "value": "オーガの剛毛"
+        },
+        {
+            "key": "IT_AF_MAT_BOMB",
+            "value": "ボムの灰"
+        },
+        {
+            "key": "IT_AF_MAT_MABR",
+            "value": "モルボルの触手"
+        },
+        {
+            "key": "IT_AF_MAT_WOLF",
+            "value": "狼の牙"
+        },
+        {
+            "key": "IT_AF_MAT_ZUUU",
+            "value": "ズーのくちばし"
+        },
+        {
+            "key": "IT_AF_MAT_BONE",
+            "value": "骨くず"
+        },
+        {
+            "key": "IT_AF_MAT_ARMN",
+            "value": "アーリマンの涙"
+        },
+        {
+            "key": "IT_AF_MAT_MYTHRIL",
+            "value": "ミスリル鉱"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_03",
+            "value": "水の紋脈鉱"
+        },
+        {
+            "key": "IT_AF_LW_SWO_001",
+            "value": "ロングソードのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_002",
+            "value": "ミスリルソードのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_003",
+            "value": "眠りの剣のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_004",
+            "value": "アイスブランドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_005",
+            "value": "フレイムタンのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_006",
+            "value": "サンゴの剣のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SWO_023",
+            "value": "ローエングリンのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BSW_001",
+            "value": "クレイモアのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BSW_002",
+            "value": "ミスリルセイバーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BSW_003",
+            "value": "ルーンブレイドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BSW_004",
+            "value": "ゴールドブレイドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_KAT_001",
+            "value": "虎鉄のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_KAT_002",
+            "value": "菊一文字のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_KAT_003",
+            "value": "備前長船のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_KAT_008",
+            "value": "紫電のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_FIS_001",
+            "value": "メタルナックルのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_FIS_002",
+            "value": "ミスリルクローのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_FIS_003",
+            "value": "猫の爪のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SPE_001",
+            "value": "パルチザンのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SPE_002",
+            "value": "ミスリルスピアのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SPE_003",
+            "value": "ウィンドスピアのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SPE_004",
+            "value": "アイスランスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_SPE_006",
+            "value": "竜角の槍のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_DAG_001",
+            "value": "ダガーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_DAG_002",
+            "value": "ミスリルダガーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_DAG_004",
+            "value": "マインゴーシュのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_DAG_006",
+            "value": "メイジマッシャーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_NKN_001",
+            "value": "くないのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_NKN_002",
+            "value": "小太刀のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_NKN_003",
+            "value": "佐助の刀のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BOW_001",
+            "value": "ロングボウのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BOW_002",
+            "value": "グレートボウのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_BOW_003",
+            "value": "ルーンの弓のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_GUN_001",
+            "value": "カペラのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_GUN_002",
+            "value": "ヴェガのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_GUN_003",
+            "value": "ラス・アルゲテイのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ROD_002",
+            "value": "アイアンロッドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ROD_004",
+            "value": "癒しの杖のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ROD_005",
+            "value": "プラチナロッドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_MAC_001",
+            "value": "アイアンメイスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_MAC_002",
+            "value": "ミスリルメイスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_MAC_003",
+            "value": "プラチナメイスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ARM_002",
+            "value": "アイアンプレートのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ARM_003",
+            "value": "ミスリルアーマーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ARM_004",
+            "value": "ゴールドアーマーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HAT_002",
+            "value": "三角帽子のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HAT_003",
+            "value": "サークレットのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HAT_004",
+            "value": "賢者の帽子のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_001",
+            "value": "皮の服のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_002",
+            "value": "学者の服のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_003",
+            "value": "ミラージュベストのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_004",
+            "value": "インテリコートのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_005",
+            "value": "プラチナローブのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HLM_002",
+            "value": "アイアンヘルムのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HLM_003",
+            "value": "ミスリルヘルムのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HLM_004",
+            "value": "ゴールドヘルムのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HLM_005",
+            "value": "プラチナヘルムのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_RNG_002",
+            "value": "ブレイブリングのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_RNG_003",
+            "value": "フェアリーリングのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_RNG_004",
+            "value": "ジュエルリングのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_SWO_FF14_TNCT",
+            "value": "ライオンハート・イミテイトのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ROD_007",
+            "value": "賢者の杖のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ARM_005",
+            "value": "プラチナアーマーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_FTW_001",
+            "value": "エルメスの靴のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_RNG_005",
+            "value": "アレキサンドライトの指輪のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_AXE_001",
+            "value": "オーガキラーのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_AXE_002",
+            "value": "ミスリルアクスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_AXE_003",
+            "value": "ゴールドアックスのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FFT_SWO_001",
+            "value": "ナグラロクのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF1_ARM_002",
+            "value": "アーマーオブライトのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FFT_ACC_001",
+            "value": "ソルティレージュのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ACC_001",
+            "value": "リボンのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF14_ARW_001",
+            "value": "ベイルガントレットのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF14_HLM_001",
+            "value": "ベイルバーゴネットのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_HAT_005",
+            "value": "ウルフマスクのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF4_ARM_001",
+            "value": "聖騎士の肩当てのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF4_SPE_000",
+            "value": "ウィンドスピアのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF4_BOW_000",
+            "value": "エルフィンボウのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_ACC_002",
+            "value": "ソウルオブサマサのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_SUP_HP",
+            "value": "命の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_ATK",
+            "value": "攻の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_MAG",
+            "value": "魔の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_MND",
+            "value": "精の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_DEF",
+            "value": "防の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_AVO",
+            "value": "避の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_HIT",
+            "value": "巧の刻印"
+        },
+        {
+            "key": "IT_AF_SUP_CRI",
+            "value": "撃の刻印"
+        },
+        {
+            "key": "IT_AF_PT_ATK",
+            "value": "攻撃のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_MAG",
+            "value": "魔力のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_DEF",
+            "value": "防御のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_MND",
+            "value": "精神のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_HIT",
+            "value": "命中のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_CRI",
+            "value": "必殺のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_AVO",
+            "value": "回避のドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_HP",
+            "value": "HPのドワーフ鎚"
+        },
+        {
+            "key": "IT_AF_PT_SPD",
+            "value": "素早さのドワーフ鎚"
+        },
+        {
+            "key": "IT_WA_EXP_01",
+            "value": "ミニアムポット"
+        },
+        {
+            "key": "IT_WA_EXP_02",
+            "value": "アムポット"
+        },
+        {
+            "key": "IT_WA_EXP_03",
+            "value": "キングアムポット"
+        },
+        {
+            "key": "IT_AF_RESET",
+            "value": "打ち直しの金槌"
+        },
+        {
+            "key": "IT_EC_STARQUARTZ",
+            "value": "スタークォーツ"
+        },
+        {
+            "key": "IT_EC_ARENA",
+            "value": "アリーナメダル"
+        },
+        {
+            "key": "IT_EC_MULTI",
+            "value": "マルチメダル"
+        },
+        {
+            "key": "IT_EC_RAID",
+            "value": "レイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_02",
+            "value": "バレンタインレイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_03",
+            "value": "ホワイトデーレイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_05",
+            "value": "【5月】レイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_06",
+            "value": "【6月】レイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_08",
+            "value": "【8月】レイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_FF14",
+            "value": "【復刻】FFXIVコラボレイドメダル"
+        },
+        {
+            "key": "IT_EC_MATCH",
+            "value": "PVPメダル"
+        },
+        {
+            "key": "IT_EC_GUILD",
+            "value": "ギルドメダル"
+        },
+        {
+            "key": "IT_EC_SOUL",
+            "value": "ソウルメダル"
+        },
+        {
+            "key": "IT_EC_SOUL_N",
+            "value": "ソウルメダル（N）"
+        },
+        {
+            "key": "IT_EC_SOUL_R",
+            "value": "ソウルメダル（R）"
+        },
+        {
+            "key": "IT_EC_SOUL_SR",
+            "value": "ソウルメダル（SR）"
+        },
+        {
+            "key": "IT_EC_SOUL_SSR",
+            "value": "ソウルメダル（SSR）"
+        },
+        {
+            "key": "IT_EC_SOUL_UR",
+            "value": "ソウルメダル（UR）"
+        },
+        {
+            "key": "IT_EC_MOOGLE",
+            "value": "モグメダル"
+        },
+        {
+            "key": "IT_EC_TOWER",
+            "value": "タワーメダル"
+        },
+        {
+            "key": "IT_EC_TOWER_001",
+            "value": "タワーメダル（β）"
+        },
+        {
+            "key": "IT_EC_TOWER_002",
+            "value": "タワーメダル"
+        },
+        {
+            "key": "IT_EC_SUMMON",
+            "value": "召喚メダル"
+        },
+        {
+            "key": "IT_EC_SUMMON_11_A",
+            "value": "【11月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_A",
+            "value": "【12月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_B",
+            "value": "【12月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_01_A",
+            "value": "【1月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_01_B",
+            "value": "【1月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_A",
+            "value": "【2月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_B",
+            "value": "【2月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_A",
+            "value": "【3月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_B",
+            "value": "【3月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_A",
+            "value": "【4月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_B",
+            "value": "【4月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_A",
+            "value": "【5月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_B",
+            "value": "【5月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_A",
+            "value": "【6月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_B",
+            "value": "【6月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_A",
+            "value": "【7月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_B",
+            "value": "【7月】召喚メダルB"
+        },
+        {
+            "key": "IT_EC_SUMMON_08_A",
+            "value": "【8月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_VISION",
+            "value": "ビジョンメダル"
+        },
+        {
+            "key": "IT_EC_VISION_N",
+            "value": "ビジョンメダル（N）"
+        },
+        {
+            "key": "IT_EC_VISION_R",
+            "value": "ビジョンメダル（R）"
+        },
+        {
+            "key": "IT_EC_VISION_SR",
+            "value": "ビジョンメダル（SR）"
+        },
+        {
+            "key": "IT_EC_VISION_SSR",
+            "value": "ビジョンメダル（SSR）"
+        },
+        {
+            "key": "IT_EC_VISION_UR",
+            "value": "ビジョンメダル（UR）"
+        },
+        {
+            "key": "IT_EC_FRIEND",
+            "value": "フレンドメダル"
+        },
+        {
+            "key": "IT_EC_EV02_1",
+            "value": "西の脅威ランダルメダル"
+        },
+        {
+            "key": "IT_EC_EV03_1",
+            "value": "【3月】イベントメダル"
+        },
+        {
+            "key": "IT_EC_EV04_1",
+            "value": "【4月】イベントメダル"
+        },
+        {
+            "key": "IT_EC_EV05_1",
+            "value": "【前編】ゴウガとサイガメダル"
+        },
+        {
+            "key": "IT_EC_EV06_1",
+            "value": "囚われの姫君 メダル"
+        },
+        {
+            "key": "IT_EC_FF14_1",
+            "value": "トームストーン魔典"
+        },
+        {
+            "key": "IT_EC_FF14_1_R",
+            "value": "【復刻】トームストーン魔典"
+        },
+        {
+            "key": "IT_EC_FF14_2",
+            "value": "コラボ召喚メダル"
+        },
+        {
+            "key": "IT_EC_FF14_2_R",
+            "value": "【復刻】FFXIVコラボ召喚メダル"
+        },
+        {
+            "key": "IT_US_G_FF14_01",
+            "value": "FFXIVコラボイベント召喚券"
+        },
+        {
+            "key": "IT_US_G_FF14_01_R",
+            "value": "【復刻】FFXIVコラボイベント召喚券"
+        },
+        {
+            "key": "IT_EC_FFT_1",
+            "value": "FFTコラボイベントメダル"
+        },
+        {
+            "key": "IT_EC_FFT_3",
+            "value": "【第2弾】FFTコラボイベントメダル"
+        },
+        {
+            "key": "IT_EC_POINT_001",
+            "value": "裁きの試練メダル"
+        },
+        {
+            "key": "IT_EC_FFT_2_A",
+            "value": "FFTコラボ召喚メダルA"
+        },
+        {
+            "key": "IT_EC_FFT_2_B",
+            "value": "FFTコラボ召喚メダルB"
+        },
+        {
+            "key": "IT_US_G_FFT_01",
+            "value": "FFTコラボイベント召喚券"
+        },
+        {
+            "key": "IT_EC_FF1_1",
+            "value": "FF1コラボイベントメダル"
+        },
+        {
+            "key": "IT_EC_FF1_2",
+            "value": "FF1コラボ召喚メダル"
+        },
+        {
+            "key": "IT_US_G_FF1_01",
+            "value": "FF1コラボイベント召喚券"
+        },
+        {
+            "key": "IT_EC_FFT_2_2A",
+            "value": "【第2弾】FFTコラボ召喚メダルA"
+        },
+        {
+            "key": "IT_EC_FFT_2_2B",
+            "value": "【第2弾】FFTコラボ召喚メダルB"
+        },
+        {
+            "key": "IT_EC_FFT_2_A_R",
+            "value": "【復刻】FFTコラボ召喚メダルA"
+        },
+        {
+            "key": "IT_EC_FFT_2_B_R",
+            "value": "【復刻】FFTコラボ召喚メダルB"
+        },
+        {
+            "key": "IT_EC_FF4_1",
+            "value": "FFⅣコラボイベントメダル"
+        },
+        {
+            "key": "IT_EC_FF4_2_A",
+            "value": "FFⅣコラボ召喚メダルA"
+        },
+        {
+            "key": "IT_EC_FF4_2_B",
+            "value": "FFⅣコラボ召喚メダルB"
+        },
+        {
+            "key": "IT_US_G_FF4_01",
+            "value": "FFⅣコラボイベント召喚券"
+        },
+        {
+            "key": "IT_EC_FF4_3",
+            "value": "【FFⅣ】裁きの試練メダル"
+        },
+        {
+            "key": "IT_AD_TICKET_2",
+            "value": "探検チケット（2h）"
+        },
+        {
+            "key": "IT_AD_TICKET_5",
+            "value": "探検チケット（5h）"
+        },
+        {
+            "key": "IT_AD_TICKET_10",
+            "value": "探検チケット（10h）"
+        },
+        {
+            "key": "IT_US_GACHA_01",
+            "value": "レア召喚券"
+        },
+        {
+            "key": "IT_US_GACHA_10",
+            "value": "レア１０連召喚券"
+        },
+        {
+            "key": "IT_US_N_GACHA_10",
+            "value": "ノーマル10連召喚券"
+        },
+        {
+            "key": "IT_US_G_N_TW_10",
+            "value": "【白磁の塔（β）】ノーマル10連召喚券"
+        },
+        {
+            "key": "IT_US_G_AF_N_10",
+            "value": "武具強化素材ノーマル10連召喚券"
+        },
+        {
+            "key": "IT_US_G_SUMMER_01",
+            "value": "スペシャルサマー10連召喚券"
+        },
+        {
+            "key": "IT_US_10_U_SSR_UR_01",
+            "value": "SSR以上１体確定10連召喚券A"
+        },
+        {
+            "key": "IT_US_G_10_UR_01",
+            "value": "【初心者限定】UR1枠確定10連召喚券A"
+        },
+        {
+            "key": "IT_US_G_V_SR_UR_01",
+            "value": "SR以上確定Vカード召喚券A"
+        },
+        {
+            "key": "IT_US_G_V_SSR_UR_01",
+            "value": "SSR以上確定Vカード召喚券A"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_01",
+            "value": "SSR以上確定ユニット召喚券A"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_01",
+            "value": "覚醒輝源×10選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_02",
+            "value": "覚醒輝源×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_03",
+            "value": "覚醒輝源×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_04",
+            "value": "覚醒輝源×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_05",
+            "value": "覚醒輝源×200選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_01",
+            "value": "属性の想いの欠片×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_02",
+            "value": "属性の想いの欠片×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_03",
+            "value": "属性の想いの欠片×10選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_04",
+            "value": "属性の想いの欠片×200選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_01_01",
+            "value": "属性の輝石・翠×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_02",
+            "value": "属性の輝石・碧×70選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_03_01",
+            "value": "属性の輝石・紫×70選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_01",
+            "value": "属性の輝石・碧×10選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_01",
+            "value": "属性の輝石・緋×70選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_04_01",
+            "value": "属性の輝石・橘×70選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_AW_01",
+            "value": "属性の獣醒石×20選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_01",
+            "value": "属性の魔石（大）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_02",
+            "value": "属性の魔石（極）×10選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_03",
+            "value": "属性の魔石（中）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_04",
+            "value": "属性の魔石（中）×1000選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_05",
+            "value": "属性の魔石（極）×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_06",
+            "value": "属性の魔石（中）×500選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_07",
+            "value": "属性の魔石（大）×150選択召喚券"
+        },
+        {
+            "key": "IT_US_G_U_UR_01",
+            "value": "UR確定ユニット召喚券A"
+        },
+        {
+            "key": "IT_US_G_UR_01",
+            "value": "UR確定召喚券A"
+        },
+        {
+            "key": "IT_US_G_UR_02",
+            "value": "UR確定召喚券B"
+        },
+        {
+            "key": "IT_US_G_U_R_UR_01",
+            "value": "ユニット確定召喚券A"
+        },
+        {
+            "key": "IT_US_G_V_R_UR_01",
+            "value": "Vカード確定召喚券A"
+        },
+        {
+            "key": "IT_US_G_V_UR_01",
+            "value": "URVカード確定召喚券A"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01",
+            "value": "ジョブの記憶・翠×1選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02",
+            "value": "ジョブの記憶・碧×2選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03",
+            "value": "ジョブの記憶・紫×3選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04",
+            "value": "ジョブの記憶・橘×4選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05",
+            "value": "ジョブの記憶・緋×5選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_2",
+            "value": "【HA記念】ジョブの記憶・橘×4選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_2",
+            "value": "【HA記念】ジョブの記憶・緋×5選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_2",
+            "value": "【1100万DL記念】ジョブの記憶・翠×1選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_2",
+            "value": "【1100万DL記念】ジョブの記憶・碧×2選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_2",
+            "value": "【1100万DL記念】ジョブの記憶・紫×3選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_3",
+            "value": "【1100万DL記念】ジョブの記憶・橘×4選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_3",
+            "value": "【1100万DL記念】ジョブの記憶・緋×5選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_3",
+            "value": "【CM記念】ジョブの記憶・翠×1選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_3",
+            "value": "【CM記念】ジョブの記憶・碧×2選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_3",
+            "value": "【CM記念】ジョブの記憶・紫×3選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_4",
+            "value": "【CM記念】ジョブの記憶・橘×4選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_4",
+            "value": "【CM記念】ジョブの記憶・緋×5選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_01",
+            "value": "【2月】URVカード欠片×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_02",
+            "value": "【3月】URVカード欠片×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_03",
+            "value": "【GW記念】URVカード欠片×25選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_04",
+            "value": "【HA記念】URVカード欠片×25選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_05",
+            "value": "【HA記念】URVカード欠片×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_06",
+            "value": "【2020夏CP】URVカード欠片×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_07",
+            "value": "【高難度応援】SSRVカード欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_VPI_08",
+            "value": "【灼熱CP】URVカード欠片×25選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_01",
+            "value": "【GW記念】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_02",
+            "value": "【HA記念】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_03",
+            "value": "【1100万DL記念】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_04",
+            "value": "【2020夏CP】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_05",
+            "value": "【高難度応援】SSRユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_06",
+            "value": "【初心者限定】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_07",
+            "value": "【灼熱CP】URユニット欠片×20選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_08",
+            "value": "【CM記念】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_09",
+            "value": "【夏休みCP】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_10",
+            "value": "おすすめURユニット欠片×120選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_11",
+            "value": "FFⅣコラボユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_03",
+            "value": "【HA記念】ユニット選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_02",
+            "value": "【HA記念】Vカード選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_03",
+            "value": "【灼熱CP】召喚獣付きURVカード選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_01",
+            "value": "【HA記念】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_02",
+            "value": "【2020夏CP】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_03",
+            "value": "【高難度応援】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_04",
+            "value": "【灼熱CP】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_05",
+            "value": "【夏休みCP】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_01",
+            "value": "武具の刻印×20選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_05_01",
+            "value": "【1100万DL記念】スピネル×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_01",
+            "value": "【1100万DL記念】シトリン×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_01",
+            "value": "【1100万DL記念】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_01",
+            "value": "【1100万DL記念】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_01",
+            "value": "【1100万DL記念】ジェダイト×15選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_05_02",
+            "value": "【レイド応援】スピネル×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_02",
+            "value": "【レイド応援】シトリン×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_02",
+            "value": "【レイド応援】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_02",
+            "value": "【レイド応援】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_02",
+            "value": "【レイド応援】ジェダイト×15選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_03",
+            "value": "【初心者限定】シトリン×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_03",
+            "value": "【初心者限定】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_03",
+            "value": "【初心者限定】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_03",
+            "value": "【初心者限定】ジェダイト×15選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_05_03",
+            "value": "【CM記念】スピネル×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_04",
+            "value": "【CM記念】シトリン×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_04",
+            "value": "【CM記念】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_04",
+            "value": "【CM記念】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_04",
+            "value": "【CM記念】ジェダイト×15選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_UR_U_02",
+            "value": "おすすめURユニット選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_01",
+            "value": "おすすめSSRユニット選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_UR_U_01",
+            "value": "URユニット選択召喚券A"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_02",
+            "value": "SSR以上確定ユニット召喚券B"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_03",
+            "value": "SSR以上確定ユニット召喚券C"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_04",
+            "value": "SSR以上確定ユニット召喚券D"
+        },
+        {
+            "key": "IT_US_SE_UR_V_01",
+            "value": "URVカード選択召喚券A"
+        },
+        {
+            "key": "IT_JP_UP_01",
+            "value": "オーバル（小）"
+        },
+        {
+            "key": "IT_JP_UP_02",
+            "value": "オーバル（中）"
+        },
+        {
+            "key": "IT_JP_UP_03",
+            "value": "オーバル（大）"
+        },
+        {
+            "key": "IT_JP_UP_04",
+            "value": "オーバル（極）"
+        },
+        {
+            "key": "IT_VPI_LW_GLEM",
+            "value": "岩壁の巨人　ゴーレムの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_IFRT",
+            "value": "猛き炎の叫び　イフリートの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_SIRE",
+            "value": "水界に響く魔音 セイレーンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_SOKYU",
+            "value": "リオニス王国第二部隊≪蒼穹≫の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TRAINING",
+            "value": "誰よりも強くなるためにの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MACR",
+            "value": "嫁入り道具の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MURG",
+            "value": "鳴り響く悲鳴の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR",
+            "value": "雪原を駆けるの欠片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV1",
+            "value": "漆黒の群像の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_SHIV",
+            "value": "全てを凍らせし者　シヴァの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_RAMU",
+            "value": "空に轟く雷鳴　ラムウの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_HOLYNIGHT",
+            "value": "聖夜の二人の欠片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV1",
+            "value": "ベオルブの名を継ぐ者の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ODIN",
+            "value": "次元切断　オーディンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TSLP",
+            "value": "四天烈風　テトラシルフィードの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_VALE1",
+            "value": "伝えられない気持ちの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_THDG",
+            "value": "猛攻双竜　２ヘッドドラゴンの欠片"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV1",
+            "value": "絶望と真実のメビウスの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_CBVPARTY1",
+            "value": "徒桜の宴の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_DABL",
+            "value": "夢幻魔人　ディアボロスの欠片"
+        },
+        {
+            "key": "IT_VPI_FF01_DMAC",
+            "value": "デスマシーンの欠片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV3",
+            "value": "草笛の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ROBUST",
+            "value": "ホルン王国第一部隊≪堅牢≫の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_FNRR",
+            "value": "月影狼牙　フェンリルの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TITN",
+            "value": "猛る大地　タイタンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_VKTR",
+            "value": "偽りの仮面の欠片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV3",
+            "value": "漆黒の反逆者たちの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_AGON",
+            "value": "破壊鋼人　アイガイオンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR2",
+            "value": "穏やかな時間の欠片"
+        },
+        {
+            "key": "IT_VPI_FF4_DMNW",
+            "value": "デモンズウォールの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LUCA",
+            "value": "新たな研究対象の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_IGNT",
+            "value": "鋼の魔人　鉄巨人の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_BHMT",
+            "value": "荒ぶる魔獣　ベヒーモスの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MABR",
+            "value": "穢れの呪い　モルボルの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_FAMILY",
+            "value": "新しき生命の誕生の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_KTON",
+            "value": "密命の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_PROPOSE",
+            "value": "愛の誓いの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_SDLX",
+            "value": "心の洗濯の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TEAPARTY",
+            "value": "ひとときの安らぎの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_HUNT",
+            "value": "研ぎ澄まされた集中力の欠片"
+        },
+        {
+            "key": "IT_VPI_FF14_MV2",
+            "value": "SHADOWBRINGERSの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MOGL",
+            "value": "聖夜のモーグリの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_NEWYEAR",
+            "value": "謹賀新年2020の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LAMA_01",
+            "value": "蠱惑大蛇　ラミアクイーンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_GUARD",
+            "value": "純白の親衛隊の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LILS",
+            "value": "復讐の旅の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_VALE2",
+            "value": "イケメン争奪戦！！の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_OCHU",
+            "value": "豪快植物　オチューの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ADLD",
+            "value": "嫉心の魔術師の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_WHITEDAY1",
+            "value": "見栄の代償の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA2",
+            "value": "偽りの契り、偽れぬ魂の欠片"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV2",
+            "value": "希望と幻想のメビウスの欠片"
+        },
+        {
+            "key": "IT_VPI_FFT_MV2",
+            "value": "赤チョコボの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MDFY",
+            "value": "決壊精神　マインドフレイアの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ORDR",
+            "value": "届かぬ想いの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_KING",
+            "value": "戦乱四君の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_BLMN",
+            "value": "魔界紅月　ブラッディムーンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_GUREN",
+            "value": "義賊≪紅蓮≫の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_CHCB",
+            "value": "愛しき相棒　チョコボの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_FIGHT",
+            "value": "激突の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_CACT",
+            "value": "瞬間千本　サボテンダーの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ARMN_01",
+            "value": "魔眼光線　フロータイボールの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_ZUUU",
+            "value": "巨大怪鳥　ズーの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_OGRE",
+            "value": "剛力鬼人　オーガの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_BOMB",
+            "value": "爆裂弾丸　ボムの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_BYLO",
+            "value": "暴食王出現の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_RART",
+            "value": "久しぶりの休暇の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_RYER",
+            "value": "名探偵リレルリラの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA",
+            "value": "妖艶魔女の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_RIRY",
+            "value": "お楽しみタイムの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_JOBCRYSTAL",
+            "value": "ジョブクリスタルの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS",
+            "value": "リオニス旗の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN",
+            "value": "ホルン旗の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE",
+            "value": "フェネス旗の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT",
+            "value": "ウェズエット旗の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_CRYSTAL",
+            "value": "クリスタル教会旗の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS2",
+            "value": "リオニス城の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN2",
+            "value": "ホルン城の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE2",
+            "value": "フェネス城の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT2",
+            "value": "ウェズエット城の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_DYNVERK",
+            "value": "ダインヴェルク教会の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_01",
+            "value": "遠話装置・天の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_02",
+            "value": "遠話装置・地の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MIRROR",
+            "value": "遠見の鏡の欠片"
+        },
+        {
+            "key": "IT_VC_EXP_01",
+            "value": "グロウエッグ（N）"
+        },
+        {
+            "key": "IT_VC_EXP_02",
+            "value": "グロウエッグ（R）"
+        },
+        {
+            "key": "IT_VC_EXP_03",
+            "value": "グロウエッグ（SR）"
+        },
+        {
+            "key": "IT_VC_EXP_04",
+            "value": "グロウエッグ（SSR）"
+        },
+        {
+            "key": "IT_GU_FOOD_01",
+            "value": "べっこうあめ"
+        },
+        {
+            "key": "IT_GU_FOOD_02",
+            "value": "ほしにく"
+        },
+        {
+            "key": "IT_GU_FOOD_03",
+            "value": "チョコボまんじゅう"
+        },
+        {
+            "key": "IT_GU_FOOD_04",
+            "value": "ズーの手羽先"
+        },
+        {
+            "key": "IT_GU_FOOD_05",
+            "value": "ボムのスープ"
+        },
+        {
+            "key": "IT_GU_FOOD_06",
+            "value": "ベヒーモスのステーキ"
+        },
+        {
+            "key": "IT_GU_EXP_S2_01",
+            "value": "大蛇の毒牙（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S2_02",
+            "value": "大蛇の毒牙（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S2_03",
+            "value": "大蛇の毒牙（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_01",
+            "value": "牡牛の大角（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_02",
+            "value": "牡牛の大角（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S3_03",
+            "value": "牡牛の大角（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_01",
+            "value": "麒麟のたてがみ（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_02",
+            "value": "麒麟のたてがみ（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S4_03",
+            "value": "麒麟のたてがみ（大）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_01",
+            "value": "獅子の強咢（小）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_02",
+            "value": "獅子の強咢（中）"
+        },
+        {
+            "key": "IT_GU_EXP_S1_03",
+            "value": "獅子の強咢（大）"
+        }
+    ]
+}
