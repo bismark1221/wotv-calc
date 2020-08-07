@@ -14,6 +14,7 @@ export class JsonComponent implements OnInit {
   GLequipments = [];
   GLjobs = [];
   GLRaids = [];
+  GLItems = [];
 
   JPunits = [];
   JPvisionCards = [];
@@ -21,6 +22,7 @@ export class JsonComponent implements OnInit {
   JPequipments = [];
   JPjobs = [];
   JPRaids = [];
+  JPItems = [];
 
   constructor(private jsonService: JsonService) {}
 
@@ -45,6 +47,10 @@ export class JsonComponent implements OnInit {
       this.GLRaids = response.gl.raids;
 
       // @ts-ignore
+      this.GLItems = response.gl.items;
+
+
+      // @ts-ignore
       this.JPunits = response.jp.units;
 
       // @ts-ignore
@@ -61,6 +67,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPRaids = response.jp.raids;
+
+      // @ts-ignore
+      this.JPItems = response.jp.items;
     });
   }
 }

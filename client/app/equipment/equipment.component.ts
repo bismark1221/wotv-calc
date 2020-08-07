@@ -8,6 +8,7 @@ import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { JobService } from '../services/job.service';
+import { ItemService } from '../services/item.service';
 
 @Component({
   selector: 'app-equipment',
@@ -16,6 +17,8 @@ import { JobService } from '../services/job.service';
 })
 export class EquipmentComponent implements OnInit {
   equipment = null;
+  specialBismark = false;
+  activeTab;
 
   constructor(
     private equipmentService: EquipmentService,
@@ -26,7 +29,8 @@ export class EquipmentComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
-    private jobService: JobService
+    private jobService: JobService,
+    private itemService: ItemService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatEquipment();
@@ -166,6 +170,20 @@ export class EquipmentComponent implements OnInit {
         unit.name = this.nameService.getName(unit)
         this.equipment.units.push(unit)
       })
+
+      this.equipment.formattedMaterials = []
+      if (this.equipment.materials.length > 0) {
+        this.equipment.materials.forEach((items, index) => {
+          this.equipment.formattedMaterials.push([])
+          Object.keys(items).forEach(itemId => {
+            let item = JSON.parse(JSON.stringify(this.itemService.getItem(itemId)))
+
+            item.image = item.dataId.toLowerCase()
+            item.count = items[itemId]
+            this.equipment.formattedMaterials[index].push(item)
+          })
+        })
+      }
     }
   }
 
@@ -179,5 +197,9 @@ export class EquipmentComponent implements OnInit {
 
   private getUnit(unitId) {
     return this.unitService.getUnit(unitId)
+  }
+
+  clickSpecialBismark() {
+    this.specialBismark = !this.specialBismark
   }
 }

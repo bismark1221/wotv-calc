@@ -13,6 +13,7 @@ import { default as FR_JobName } from        '../../../data/fr/jobname.json';
 import { default as FR_SkillName } from      '../../../data/fr/skillname.json';
 import { default as FR_UnitName } from       '../../../data/fr/unitname.json';
 import { default as FR_VisionCardName } from '../../../data/fr/visioncardname.json';
+import { default as FR_ItemName } from       '../../../data/fr/itemname.json';
 
 
 import { default as JP_ArtifactGrow } from   '../../../data/jp/artifactgrow.json';
@@ -23,6 +24,7 @@ import { default as JP_JobName } from        '../../../data/jp/jobname.json';
 import { default as JP_SkillName } from      '../../../data/jp/skillname.json';
 import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
+import { default as JP_ItemName } from       '../../../data/jp/itemname.json';
 
 
 import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
@@ -76,10 +78,13 @@ export class JsonService {
     wotvEspers: {},
     wotvEquipments: {},
     wotvJobs: {},
+    wotvItems: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
-    wotvRaids: {}
+    wotvRaids: {},
+    equipmentAwakes: {},
+    items: {}
   }
 
   jp = {
@@ -103,10 +108,13 @@ export class JsonService {
     wotvEspers: {},
     wotvEquipments: {},
     wotvJobs: {},
+    wotvItems: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
-    wotvRaids: {}
+    wotvRaids: {},
+    equipmentAwakes: {},
+    items: {}
   }
 
   names = {
@@ -118,7 +126,8 @@ export class JsonService {
       equipment: {},
       visionCard: {},
       equipmentGrow: {},
-      itemOther: {}
+      itemOther: {},
+      item: {}
     },
     fr: {
       skill: {},
@@ -128,7 +137,8 @@ export class JsonService {
       equipment: {},
       visionCard: {},
       equipmentGrow: {},
-      itemOther: {}
+      itemOther: {},
+      item: {}
     },
     jp: {
       skill: {},
@@ -138,7 +148,8 @@ export class JsonService {
       equipment: {},
       visionCard: {},
       equipmentGrow: {},
-      itemOther: {}
+      itemOther: {},
+      item: {}
     }
   }
 
@@ -713,6 +724,15 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBoss.json').toPromise();
   }
 
+  private GLArtifactAwake() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactAwake.json').toPromise();
+  }
+
+  private GLItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Item.json').toPromise();
+  }
+
+
   /* JP */
   private JPUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
@@ -782,6 +802,15 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBoss.json').toPromise();
   }
 
+  private JPArtifactAwake() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactAwake.json').toPromise();
+  }
+
+  private JPItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Item.json').toPromise();
+  }
+
+
   /* Translation */
   private TranslateUnitNames() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/UnitName.json').toPromise();
@@ -813,6 +842,10 @@ export class JsonService {
 
   private TranslateEquipmentGrow() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactGrow.json').toPromise();
+  }
+
+  private TranslateItemName() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemName.json').toPromise();
   }
 
 
@@ -866,6 +899,14 @@ export class JsonService {
       this.GLRaidBoss(),
       this.JPRaid(),
       this.JPRaidBoss(),
+
+      this.GLArtifactAwake(),
+      this.JPArtifactAwake(),
+
+      this.TranslateItemName(),
+
+      this.GLItem(),
+      this.JPItem(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -884,6 +925,8 @@ export class JsonService {
       this.gl.EquipmentCond = this.formatJson(responses[36]);
       this.gl.raid = this.formatJson(responses[38]);
       this.gl.raidBoss = this.formatJson(responses[39]);
+      this.gl.equipmentAwakes = this.formatJson(responses[42]);
+      this.gl.items = this.formatJson(responses[45]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -902,6 +945,8 @@ export class JsonService {
       this.jp.EquipmentCond = this.formatJson(responses[37]);
       this.jp.raid = this.formatJson(responses[40]);
       this.jp.raidBoss = this.formatJson(responses[41]);
+      this.jp.equipmentAwakes = this.formatJson(responses[43]);
+      this.jp.items = this.formatJson(responses[46]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -911,6 +956,7 @@ export class JsonService {
       this.names.en.visionCard = this.formatNames(responses[31]);
       this.names.en.itemOther = this.formatNames(responses[32]);
       this.names.en.equipmentGrow = this.formatNames(responses[33]);
+      this.names.en.item = this.formatNames(responses[44]);
 
       this.names.fr.unit = this.formatNames(FR_UnitName)
       this.names.fr.skill = this.formatNames(FR_SkillName)
@@ -920,6 +966,7 @@ export class JsonService {
       this.names.fr.visionCard = this.formatNames(FR_VisionCardName)
       this.names.fr.itemOther = this.formatNames(FR_ItemOther)
       this.names.fr.equipmentGrow = this.formatNames(FR_ArtifactGrow)
+      this.names.fr.item = this.formatNames(FR_ItemName)
 
       this.names.jp.unit = this.formatNames(JP_UnitName)
       this.names.jp.skill = this.formatNames(JP_SkillName)
@@ -929,6 +976,7 @@ export class JsonService {
       this.names.jp.visionCard = this.formatNames(JP_VisionCardName)
       this.names.jp.itemOther = this.formatNames(JP_ItemOther)
       this.names.jp.equipmentGrow = this.formatNames(JP_ArtifactGrow)
+      this.names.jp.item = this.formatNames(JP_ItemName)
 
       this.formatJsons();
 
@@ -939,7 +987,8 @@ export class JsonService {
           espers: this.gl.wotvEspers,
           equipments: this.gl.wotvEquipments,
           jobs: this.gl.wotvJobs,
-          raids: this.gl.wotvRaids
+          raids: this.gl.wotvRaids,
+          items: this.gl.wotvItems,
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -947,7 +996,8 @@ export class JsonService {
           espers: this.jp.wotvEspers,
           equipments: this.jp.wotvEquipments,
           jobs: this.jp.wotvJobs,
-          raids: this.jp.wotvRaids
+          raids: this.jp.wotvRaids,
+          items: this.jp.wotvItems,
         }
       };
     });
@@ -1001,6 +1051,10 @@ export class JsonService {
       });
 
       this.formatRaid();
+
+      Object.keys(this[this.version].items).forEach(itemId => {
+        this.addItem(this[this.version].items[itemId]);
+      });
     }
   }
 
@@ -1114,36 +1168,41 @@ export class JsonService {
     }
   }
 
-  private getNames(item, type) {
+  private getNames(item, type, dataId = null) {
+    let id = item.dataId
+    if (dataId) {
+      id = dataId
+    }
+
     if (this.version == "gl") {
-      if (this.names.en[type][item.dataId]) {
-        item.names.en = this.names.en[type][item.dataId]
-        item.names.fr = this.names.fr[type][item.dataId]
+      if (this.names.en[type][id]) {
+        item.names.en = this.names.en[type][id]
+        item.names.fr = this.names.fr[type][id]
         item.slug = this.slug.slugify(item.names.en)
       } else {
-        item.names.en = item.dataId;
-        item.names.fr = item.dataId;
+        item.names.en = id;
+        item.names.fr = id;
         item.slug = this.slug.slugify(item.names.en)
       }
     } else {
-      if (type == "unit" && this.names.en[type][item.dataId]
-        || type == "visionCard" && this.names.en[type][item.dataId]
-        || type == "equipment" && this.names.en[type][item.dataId]) {
-        item.names.en = this.names.jp[type][item.dataId] + " - " + this.names.en[type][item.dataId]
-        item.slug = this.slug.slugify(this.names.en[type][item.dataId])
+      if (type == "unit" && this.names.en[type][id]
+        || type == "visionCard" && this.names.en[type][id]
+        || type == "equipment" && this.names.en[type][id]) {
+        item.names.en = this.names.jp[type][id] + " - " + this.names.en[type][id]
+        item.slug = this.slug.slugify(this.names.en[type][id])
       } else if (type == "job") {
-        if (this.names.en[type][item.dataId]) {
-          item.names.en = this.names.en[type][item.dataId]
-          item.slug = this.slug.slugify(this.names.en[type][item.dataId])
+        if (this.names.en[type][id]) {
+          item.names.en = this.names.en[type][id]
+          item.slug = this.slug.slugify(this.names.en[type][id])
         } else {
-          item.names.en = this.names.jp[type][item.dataId]
+          item.names.en = this.names.jp[type][id]
           item.slug = slugify(item.names.en)
         }
-      } else if (this.names.jp[type][item.dataId]) {
-        item.names.en = this.names.jp[type][item.dataId]
+      } else if (this.names.jp[type][id]) {
+        item.names.en = this.names.jp[type][id]
         item.slug = slugify(item.names.en)
       } else {
-        item.names.en = item.dataId;
+        item.names.en = id;
         item.slug = this.slug.slugify(item.names.en)
       }
     }
@@ -1881,7 +1940,8 @@ export class JsonService {
           rarity: this.rarity[equipment.rare],
           image: this[this.version].equipments[dataId].asset.toLowerCase(),
           equippableJobs: [],
-          equippableUnits: []
+          equippableUnits: [],
+          materials: []
         }
 
         this.getNames(this[this.version].wotvEquipments[rType], "equipment")
@@ -1924,15 +1984,18 @@ export class JsonService {
             }
           }
         } else if (this[this.version].equipmentRecipes[dataId]) {
-          let recipe = this[this.version].equipmentRecipes[dataId].recipe;
-          if (this.names.en.itemOther[recipe] && this.names.en.itemOther[recipe] != "") {
+          let recipe = this[this.version].equipmentRecipes[dataId];
+          if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] != "") {
             this[this.version].wotvEquipments[rType].acquisition = {
               type: {
-                en: this.names.en.itemOther[recipe],
-                fr: this.names.fr.itemOther[recipe]
+                en: this.names.en.itemOther[recipe.recipe],
+                fr: this.names.fr.itemOther[recipe.recipe]
               }
             }
           }
+        } else {
+          //console.log("NO RECEIPE !!!")
+          //console.log(this[this.version].wotvEquipments[rType])
         }
 
         if (!this[this.version].wotvEquipments[rType].acquisition) {
@@ -1975,6 +2038,8 @@ export class JsonService {
         })
       }
 
+      this[this.version].wotvEquipments[rType].materials.push(this.getEquipmentMaterials(dataId))
+
       let skills = [];
       let countSkill = 0;
       let skillsPos = {};
@@ -2003,6 +2068,59 @@ export class JsonService {
 
       this[this.version].wotvEquipments[rType].skills.push(skills)
     }
+  }
+
+  private getEquipmentMaterials(dataId, level = 50) {
+    let materials = {}
+
+    let recipe = this[this.version].equipmentRecipes[dataId]
+    if (recipe) {
+      recipe.craft.forEach(material => {
+        if (material.type == 0) {
+          if (materials[material.id]) {
+            materials[material.id] += material.num
+          } else {
+            materials[material.id] = material.num
+          }
+        } else {
+          let previousUpgradeMaterials = this.getEquipmentMaterials(material.id, material.lv)
+
+          Object.keys(previousUpgradeMaterials).forEach(materialId => {
+            if (materials[materialId]) {
+              materials[materialId] += previousUpgradeMaterials[materialId]
+            } else {
+              materials[materialId] = previousUpgradeMaterials[materialId]
+            }
+          })
+        }
+      })
+    }
+
+    let awake = this[this.version].equipmentAwakes[dataId]
+    if (awake) {
+      awake.awakes.forEach(awake => {
+        if (awake.lv <= level) {
+          let index = 1;
+          while (awake['mat' + index] && index <= 9) {
+            let mat = awake['mat' + index].split(',');
+            let id = mat[0]
+            let count = mat[1]
+
+            if (materials[id]) {
+              materials[id] += parseInt(count)
+            } else {
+              materials[id] = parseInt(count)
+            }
+
+            index++;
+          }
+        }
+      });
+    }
+
+
+
+    return materials
   }
 
   private cleanUnits() {
@@ -2123,5 +2241,22 @@ export class JsonService {
         }
       })
     }
+  }
+
+  private addItem(item) {
+    let dataId = item.iname;
+    this[this.version].wotvItems[dataId] = {
+      dataId: dataId,
+      names: {},
+      recipe: false
+    };
+
+    if (item.type == 13) {
+      this[this.version].wotvItems[dataId].recipe = true
+    } else {
+      delete this[this.version].wotvItems[dataId].recipe
+    }
+
+    this.getNames(this[this.version].wotvItems[dataId], 'item');
   }
 }

@@ -61,6 +61,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -151,6 +154,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -418,6 +424,38 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_001": 1,
+        "IT_AF_MAT_HEART_01": 42,
+        "IT_AF_AW_SWORD": 75
+      },
+      {
+        "IT_AF_LW_SWO_001": 3,
+        "IT_AF_MAT_HEART_01": 62,
+        "IT_AF_AW_SWORD": 75
+      },
+      {
+        "IT_AF_LW_SWO_001": 7,
+        "IT_AF_MAT_HEART_01": 102,
+        "IT_AF_AW_SWORD": 75
+      },
+      {
+        "IT_AF_LW_SWO_001": 15,
+        "IT_AF_MAT_HEART_01": 186,
+        "IT_AF_AW_SWORD": 95
+      },
+      {
+        "IT_AF_LW_SWO_001": 31,
+        "IT_AF_MAT_HEART_01": 364,
+        "IT_AF_AW_SWORD": 165
+      },
+      {
+        "IT_AF_LW_SWO_001": 63,
+        "IT_AF_MAT_HEART_01": 740,
+        "IT_AF_AW_SWORD": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -688,6 +726,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_002": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 90,
+        "IT_AF_AW_SWORD": 175,
+        "IT_AF_MAT_MYTHRIL": 1
+      },
+      {
+        "IT_AF_LW_SWO_002": 3,
+        "IT_AF_MAT_HEART_01": 30,
+        "IT_AF_MAT_HEART_02": 140,
+        "IT_AF_AW_SWORD": 175,
+        "IT_AF_MAT_MYTHRIL": 1
+      },
+      {
+        "IT_AF_LW_SWO_002": 7,
+        "IT_AF_MAT_HEART_01": 70,
+        "IT_AF_MAT_HEART_02": 240,
+        "IT_AF_AW_SWORD": 175,
+        "IT_AF_MAT_MYTHRIL": 1
+      },
+      {
+        "IT_AF_LW_SWO_002": 15,
+        "IT_AF_MAT_HEART_01": 150,
+        "IT_AF_MAT_HEART_02": 450,
+        "IT_AF_AW_SWORD": 215,
+        "IT_AF_MAT_MYTHRIL": 1
+      },
+      {
+        "IT_AF_LW_SWO_002": 31,
+        "IT_AF_MAT_HEART_01": 310,
+        "IT_AF_MAT_HEART_02": 890,
+        "IT_AF_AW_SWORD": 355,
+        "IT_AF_MAT_MYTHRIL": 1
+      },
+      {
+        "IT_AF_LW_SWO_002": 63,
+        "IT_AF_MAT_HEART_01": 630,
+        "IT_AF_MAT_HEART_02": 1810,
+        "IT_AF_AW_SWORD": 735,
+        "IT_AF_MAT_MYTHRIL": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -1253,6 +1335,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_003": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_003": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_003": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_003": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_LW_SWO_003": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_LW_SWO_003": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_SWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -1806,6 +1932,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_004": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_WOLF": 5,
+        "IT_AF_MAT_ICE_01": 11,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_004": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_WOLF": 15,
+        "IT_AF_MAT_ICE_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_004": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_WOLF": 35,
+        "IT_AF_MAT_ICE_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_004": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_WOLF": 75,
+        "IT_AF_MAT_ICE_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_LW_SWO_004": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_WOLF": 155,
+        "IT_AF_MAT_ICE_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_LW_SWO_004": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_WOLF": 315,
+        "IT_AF_MAT_ICE_01": 323,
+        "IT_AF_AW_SWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -1984,6 +2154,18 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_005": 1,
+        "IT_AF_LW_SWO_002": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 40,
+        "IT_AF_AW_SWORD": 305,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_FIRE_01": 11
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2159,6 +2341,18 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SWO_006": 1,
+        "IT_AF_LW_SWO_002": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 40,
+        "IT_AF_AW_SWORD": 305,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_THUNDER_01": 11
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2225,6 +2419,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2493,6 +2690,44 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_SWO_FF14_TNCT": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_SWO_FF14_TNCT": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_SWO_FF14_TNCT": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_SWO_FF14_TNCT": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_AW_SWORD": 95,
+        "IT_AF_MAT_HEART_01": 36
+      },
+      {
+        "IT_AF_SWO_FF14_TNCT": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_AW_SWORD": 165,
+        "IT_AF_MAT_HEART_01": 54
+      },
+      {
+        "IT_AF_SWO_FF14_TNCT": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_AW_SWORD": 345,
+        "IT_AF_MAT_HEART_01": 110
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2760,6 +2995,44 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FFT_SWO_001": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_FFT_SWO_001": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_FFT_SWO_001": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_AW_SWORD": 75,
+        "IT_AF_MAT_HEART_01": 32
+      },
+      {
+        "IT_AF_FFT_SWO_001": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_AW_SWORD": 95,
+        "IT_AF_MAT_HEART_01": 36
+      },
+      {
+        "IT_AF_FFT_SWO_001": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_AW_SWORD": 165,
+        "IT_AF_MAT_HEART_01": 54
+      },
+      {
+        "IT_AF_FFT_SWO_001": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_AW_SWORD": 345,
+        "IT_AF_MAT_HEART_01": 110
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -2817,6 +3090,9 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -3075,6 +3351,38 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BSW_001": 1,
+        "IT_AF_MAT_SAP_01": 42,
+        "IT_AF_AW_LSWORD": 75
+      },
+      {
+        "IT_AF_LW_BSW_001": 3,
+        "IT_AF_MAT_SAP_01": 62,
+        "IT_AF_AW_LSWORD": 75
+      },
+      {
+        "IT_AF_LW_BSW_001": 7,
+        "IT_AF_MAT_SAP_01": 102,
+        "IT_AF_AW_LSWORD": 75
+      },
+      {
+        "IT_AF_LW_BSW_001": 15,
+        "IT_AF_MAT_SAP_01": 186,
+        "IT_AF_AW_LSWORD": 95
+      },
+      {
+        "IT_AF_LW_BSW_001": 31,
+        "IT_AF_MAT_SAP_01": 364,
+        "IT_AF_AW_LSWORD": 165
+      },
+      {
+        "IT_AF_LW_BSW_001": 63,
+        "IT_AF_MAT_SAP_01": 740,
+        "IT_AF_AW_LSWORD": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3336,6 +3644,50 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BSW_002": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_MAT_SAP_02": 90,
+        "IT_AF_AW_LSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BSW_002": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_MAT_SAP_02": 140,
+        "IT_AF_AW_LSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BSW_002": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_MAT_SAP_02": 240,
+        "IT_AF_AW_LSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BSW_002": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_MAT_SAP_02": 450,
+        "IT_AF_AW_LSWORD": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BSW_002": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_MAT_SAP_02": 890,
+        "IT_AF_AW_LSWORD": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BSW_002": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_MAT_SAP_02": 1810,
+        "IT_AF_AW_LSWORD": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3597,6 +3949,50 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BSW_003": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_BONE": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_003": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_BONE": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_003": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_BONE": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_003": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_BONE": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_LSWORD": 315
+      },
+      {
+        "IT_AF_LW_BSW_003": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_BONE": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_LSWORD": 535
+      },
+      {
+        "IT_AF_LW_BSW_003": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_BONE": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_LSWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -3835,6 +4231,50 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BSW_004": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_004": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_004": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_LW_BSW_004": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_LSWORD": 315
+      },
+      {
+        "IT_AF_LW_BSW_004": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_LSWORD": 535
+      },
+      {
+        "IT_AF_LW_BSW_004": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_LSWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -3898,6 +4338,9 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -4159,6 +4602,38 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_KAT_001": 1,
+        "IT_AF_MAT_SAP_01": 42,
+        "IT_AF_AW_JSWORD": 75
+      },
+      {
+        "IT_AF_LW_KAT_001": 3,
+        "IT_AF_MAT_SAP_01": 62,
+        "IT_AF_AW_JSWORD": 75
+      },
+      {
+        "IT_AF_LW_KAT_001": 7,
+        "IT_AF_MAT_SAP_01": 102,
+        "IT_AF_AW_JSWORD": 75
+      },
+      {
+        "IT_AF_LW_KAT_001": 15,
+        "IT_AF_MAT_SAP_01": 186,
+        "IT_AF_AW_JSWORD": 95
+      },
+      {
+        "IT_AF_LW_KAT_001": 31,
+        "IT_AF_MAT_SAP_01": 364,
+        "IT_AF_AW_JSWORD": 165
+      },
+      {
+        "IT_AF_LW_KAT_001": 63,
+        "IT_AF_MAT_SAP_01": 740,
+        "IT_AF_AW_JSWORD": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4427,6 +4902,50 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_KAT_002": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_MAT_SAP_02": 90,
+        "IT_AF_AW_JSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_KAT_002": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_MAT_SAP_02": 140,
+        "IT_AF_AW_JSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_KAT_002": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_MAT_SAP_02": 240,
+        "IT_AF_AW_JSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_KAT_002": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_MAT_SAP_02": 450,
+        "IT_AF_AW_JSWORD": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_KAT_002": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_MAT_SAP_02": 890,
+        "IT_AF_AW_JSWORD": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_KAT_002": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_MAT_SAP_02": 1810,
+        "IT_AF_AW_JSWORD": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4691,6 +5210,50 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_KAT_003": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_JSWORD": 255
+      },
+      {
+        "IT_AF_LW_KAT_003": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_BOMB": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_JSWORD": 255
+      },
+      {
+        "IT_AF_LW_KAT_003": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_BOMB": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_JSWORD": 255
+      },
+      {
+        "IT_AF_LW_KAT_003": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_BOMB": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_JSWORD": 315
+      },
+      {
+        "IT_AF_LW_KAT_003": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_BOMB": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_JSWORD": 535
+      },
+      {
+        "IT_AF_LW_KAT_003": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_BOMB": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_JSWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -4750,6 +5313,9 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -5007,6 +5573,38 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_FIS_001": 1,
+        "IT_AF_MAT_SAND_01": 42,
+        "IT_AF_AW_FIST": 75
+      },
+      {
+        "IT_AF_LW_FIS_001": 3,
+        "IT_AF_MAT_SAND_01": 62,
+        "IT_AF_AW_FIST": 75
+      },
+      {
+        "IT_AF_LW_FIS_001": 7,
+        "IT_AF_MAT_SAND_01": 102,
+        "IT_AF_AW_FIST": 75
+      },
+      {
+        "IT_AF_LW_FIS_001": 15,
+        "IT_AF_MAT_SAND_01": 186,
+        "IT_AF_AW_FIST": 95
+      },
+      {
+        "IT_AF_LW_FIS_001": 31,
+        "IT_AF_MAT_SAND_01": 364,
+        "IT_AF_AW_FIST": 165
+      },
+      {
+        "IT_AF_LW_FIS_001": 63,
+        "IT_AF_MAT_SAND_01": 740,
+        "IT_AF_AW_FIST": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5271,6 +5869,50 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_FIS_002": 1,
+        "IT_AF_MAT_SAND_01": 10,
+        "IT_AF_MAT_SAND_02": 90,
+        "IT_AF_AW_FIST": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_FIS_002": 3,
+        "IT_AF_MAT_SAND_01": 30,
+        "IT_AF_MAT_SAND_02": 140,
+        "IT_AF_AW_FIST": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_FIS_002": 7,
+        "IT_AF_MAT_SAND_01": 70,
+        "IT_AF_MAT_SAND_02": 240,
+        "IT_AF_AW_FIST": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_FIS_002": 15,
+        "IT_AF_MAT_SAND_01": 150,
+        "IT_AF_MAT_SAND_02": 450,
+        "IT_AF_AW_FIST": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_FIS_002": 31,
+        "IT_AF_MAT_SAND_01": 310,
+        "IT_AF_MAT_SAND_02": 890,
+        "IT_AF_AW_FIST": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_FIS_002": 63,
+        "IT_AF_MAT_SAND_01": 630,
+        "IT_AF_MAT_SAND_02": 1810,
+        "IT_AF_AW_FIST": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5539,6 +6181,50 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_FIS_003": 1,
+        "IT_AF_MAT_SAND_03": 170,
+        "IT_AF_MAT_MABR": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_FIST": 255
+      },
+      {
+        "IT_AF_LW_FIS_003": 3,
+        "IT_AF_MAT_SAND_03": 230,
+        "IT_AF_MAT_MABR": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_FIST": 255
+      },
+      {
+        "IT_AF_LW_FIS_003": 7,
+        "IT_AF_MAT_SAND_03": 350,
+        "IT_AF_MAT_MABR": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_FIST": 255
+      },
+      {
+        "IT_AF_LW_FIS_003": 15,
+        "IT_AF_MAT_SAND_03": 630,
+        "IT_AF_MAT_MABR": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_FIST": 315
+      },
+      {
+        "IT_AF_LW_FIS_003": 31,
+        "IT_AF_MAT_SAND_03": 1250,
+        "IT_AF_MAT_MABR": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_FIST": 535
+      },
+      {
+        "IT_AF_LW_FIS_003": 63,
+        "IT_AF_MAT_SAND_03": 2570,
+        "IT_AF_MAT_MABR": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_FIST": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -5599,6 +6285,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -5857,6 +6546,38 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SPE_001": 1,
+        "IT_AF_MAT_LIQUID_01": 42,
+        "IT_AF_AW_SPEAR": 75
+      },
+      {
+        "IT_AF_LW_SPE_001": 3,
+        "IT_AF_MAT_LIQUID_01": 62,
+        "IT_AF_AW_SPEAR": 75
+      },
+      {
+        "IT_AF_LW_SPE_001": 7,
+        "IT_AF_MAT_LIQUID_01": 102,
+        "IT_AF_AW_SPEAR": 75
+      },
+      {
+        "IT_AF_LW_SPE_001": 15,
+        "IT_AF_MAT_LIQUID_01": 186,
+        "IT_AF_AW_SPEAR": 95
+      },
+      {
+        "IT_AF_LW_SPE_001": 31,
+        "IT_AF_MAT_LIQUID_01": 364,
+        "IT_AF_AW_SPEAR": 165
+      },
+      {
+        "IT_AF_LW_SPE_001": 63,
+        "IT_AF_MAT_LIQUID_01": 740,
+        "IT_AF_AW_SPEAR": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -6118,6 +6839,50 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SPE_002": 1,
+        "IT_AF_MAT_LIQUID_01": 10,
+        "IT_AF_MAT_LIQUID_02": 90,
+        "IT_AF_AW_SPEAR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_SPE_002": 3,
+        "IT_AF_MAT_LIQUID_01": 30,
+        "IT_AF_MAT_LIQUID_02": 140,
+        "IT_AF_AW_SPEAR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_SPE_002": 7,
+        "IT_AF_MAT_LIQUID_01": 70,
+        "IT_AF_MAT_LIQUID_02": 240,
+        "IT_AF_AW_SPEAR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_SPE_002": 15,
+        "IT_AF_MAT_LIQUID_01": 150,
+        "IT_AF_MAT_LIQUID_02": 450,
+        "IT_AF_AW_SPEAR": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_SPE_002": 31,
+        "IT_AF_MAT_LIQUID_01": 310,
+        "IT_AF_MAT_LIQUID_02": 890,
+        "IT_AF_AW_SPEAR": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_SPE_002": 63,
+        "IT_AF_MAT_LIQUID_01": 630,
+        "IT_AF_MAT_LIQUID_02": 1810,
+        "IT_AF_AW_SPEAR": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -6379,6 +7144,50 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SPE_003": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_BONE": 5,
+        "IT_AF_MAT_WIND_01": 11,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_003": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_BONE": 15,
+        "IT_AF_MAT_WIND_01": 21,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_003": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_BONE": 35,
+        "IT_AF_MAT_WIND_01": 41,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_003": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_BONE": 75,
+        "IT_AF_MAT_WIND_01": 81,
+        "IT_AF_AW_SPEAR": 315
+      },
+      {
+        "IT_AF_LW_SPE_003": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_BONE": 155,
+        "IT_AF_MAT_WIND_01": 161,
+        "IT_AF_AW_SPEAR": 535
+      },
+      {
+        "IT_AF_LW_SPE_003": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_BONE": 315,
+        "IT_AF_MAT_WIND_01": 323,
+        "IT_AF_AW_SPEAR": 1125
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -6920,6 +7729,50 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SPE_004": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_ZUUU": 5,
+        "IT_AF_MAT_ICE_01": 11,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_004": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_ZUUU": 15,
+        "IT_AF_MAT_ICE_01": 21,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_004": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_ZUUU": 35,
+        "IT_AF_MAT_ICE_01": 41,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_004": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_ZUUU": 75,
+        "IT_AF_MAT_ICE_01": 81,
+        "IT_AF_AW_SPEAR": 315
+      },
+      {
+        "IT_AF_LW_SPE_004": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_ZUUU": 155,
+        "IT_AF_MAT_ICE_01": 161,
+        "IT_AF_AW_SPEAR": 535
+      },
+      {
+        "IT_AF_LW_SPE_004": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_ZUUU": 315,
+        "IT_AF_MAT_ICE_01": 323,
+        "IT_AF_AW_SPEAR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -7476,6 +8329,50 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_SPE_006": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_WOLF": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_006": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_WOLF": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_006": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_WOLF": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_SPEAR": 255
+      },
+      {
+        "IT_AF_LW_SPE_006": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_WOLF": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_SPEAR": 315
+      },
+      {
+        "IT_AF_LW_SPE_006": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_WOLF": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_SPEAR": 535
+      },
+      {
+        "IT_AF_LW_SPE_006": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_WOLF": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_SPEAR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -7536,6 +8433,9 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -7794,6 +8694,38 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_DAG_001": 1,
+        "IT_AF_MAT_HEART_01": 42,
+        "IT_AF_AW_SSWORD": 75
+      },
+      {
+        "IT_AF_LW_DAG_001": 3,
+        "IT_AF_MAT_HEART_01": 62,
+        "IT_AF_AW_SSWORD": 75
+      },
+      {
+        "IT_AF_LW_DAG_001": 7,
+        "IT_AF_MAT_HEART_01": 102,
+        "IT_AF_AW_SSWORD": 75
+      },
+      {
+        "IT_AF_LW_DAG_001": 15,
+        "IT_AF_MAT_HEART_01": 186,
+        "IT_AF_AW_SSWORD": 95
+      },
+      {
+        "IT_AF_LW_DAG_001": 31,
+        "IT_AF_MAT_HEART_01": 364,
+        "IT_AF_AW_SSWORD": 165
+      },
+      {
+        "IT_AF_LW_DAG_001": 63,
+        "IT_AF_MAT_HEART_01": 740,
+        "IT_AF_AW_SSWORD": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8055,6 +8987,50 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_DAG_002": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 90,
+        "IT_AF_AW_SSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_DAG_002": 3,
+        "IT_AF_MAT_HEART_01": 30,
+        "IT_AF_MAT_HEART_02": 140,
+        "IT_AF_AW_SSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_DAG_002": 7,
+        "IT_AF_MAT_HEART_01": 70,
+        "IT_AF_MAT_HEART_02": 240,
+        "IT_AF_AW_SSWORD": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_DAG_002": 15,
+        "IT_AF_MAT_HEART_01": 150,
+        "IT_AF_MAT_HEART_02": 450,
+        "IT_AF_AW_SSWORD": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_DAG_002": 31,
+        "IT_AF_MAT_HEART_01": 310,
+        "IT_AF_MAT_HEART_02": 890,
+        "IT_AF_AW_SSWORD": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_DAG_002": 63,
+        "IT_AF_MAT_HEART_01": 630,
+        "IT_AF_MAT_HEART_02": 1810,
+        "IT_AF_AW_SSWORD": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8320,6 +9296,50 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_DAG_004": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_004": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_004": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_004": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_SSWORD": 315
+      },
+      {
+        "IT_AF_LW_DAG_004": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_SSWORD": 535
+      },
+      {
+        "IT_AF_LW_DAG_004": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_SSWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8581,6 +9601,50 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_DAG_006": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_ZUUU": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_006": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ZUUU": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_006": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ZUUU": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_SSWORD": 255
+      },
+      {
+        "IT_AF_LW_DAG_006": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ZUUU": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_SSWORD": 315
+      },
+      {
+        "IT_AF_LW_DAG_006": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ZUUU": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_SSWORD": 535
+      },
+      {
+        "IT_AF_LW_DAG_006": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ZUUU": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_SSWORD": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -8640,6 +9704,9 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -8897,6 +9964,38 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_NKN_001": 1,
+        "IT_AF_MAT_SAP_01": 42,
+        "IT_AF_AW_KUNAI": 75
+      },
+      {
+        "IT_AF_LW_NKN_001": 3,
+        "IT_AF_MAT_SAP_01": 62,
+        "IT_AF_AW_KUNAI": 75
+      },
+      {
+        "IT_AF_LW_NKN_001": 7,
+        "IT_AF_MAT_SAP_01": 102,
+        "IT_AF_AW_KUNAI": 75
+      },
+      {
+        "IT_AF_LW_NKN_001": 15,
+        "IT_AF_MAT_SAP_01": 186,
+        "IT_AF_AW_KUNAI": 95
+      },
+      {
+        "IT_AF_LW_NKN_001": 31,
+        "IT_AF_MAT_SAP_01": 364,
+        "IT_AF_AW_KUNAI": 165
+      },
+      {
+        "IT_AF_LW_NKN_001": 63,
+        "IT_AF_MAT_SAP_01": 740,
+        "IT_AF_AW_KUNAI": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9157,6 +10256,50 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_NKN_002": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_MAT_SAP_02": 90,
+        "IT_AF_AW_KUNAI": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_NKN_002": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_MAT_SAP_02": 140,
+        "IT_AF_AW_KUNAI": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_NKN_002": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_MAT_SAP_02": 240,
+        "IT_AF_AW_KUNAI": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_NKN_002": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_MAT_SAP_02": 450,
+        "IT_AF_AW_KUNAI": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_NKN_002": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_MAT_SAP_02": 890,
+        "IT_AF_AW_KUNAI": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_NKN_002": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_MAT_SAP_02": 1810,
+        "IT_AF_AW_KUNAI": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9417,6 +10560,50 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_NKN_003": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_MABR": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_KUNAI": 255
+      },
+      {
+        "IT_AF_LW_NKN_003": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_MABR": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_KUNAI": 255
+      },
+      {
+        "IT_AF_LW_NKN_003": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_MABR": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_KUNAI": 255
+      },
+      {
+        "IT_AF_LW_NKN_003": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_MABR": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_KUNAI": 315
+      },
+      {
+        "IT_AF_LW_NKN_003": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_MABR": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_KUNAI": 535
+      },
+      {
+        "IT_AF_LW_NKN_003": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_MABR": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_KUNAI": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -9481,6 +10668,9 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -9743,6 +10933,38 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BOW_001": 1,
+        "IT_AF_MAT_LIQUID_01": 42,
+        "IT_AF_AW_BOW": 75
+      },
+      {
+        "IT_AF_LW_BOW_001": 3,
+        "IT_AF_MAT_LIQUID_01": 62,
+        "IT_AF_AW_BOW": 75
+      },
+      {
+        "IT_AF_LW_BOW_001": 7,
+        "IT_AF_MAT_LIQUID_01": 102,
+        "IT_AF_AW_BOW": 75
+      },
+      {
+        "IT_AF_LW_BOW_001": 15,
+        "IT_AF_MAT_LIQUID_01": 186,
+        "IT_AF_AW_BOW": 95
+      },
+      {
+        "IT_AF_LW_BOW_001": 31,
+        "IT_AF_MAT_LIQUID_01": 364,
+        "IT_AF_AW_BOW": 165
+      },
+      {
+        "IT_AF_LW_BOW_001": 63,
+        "IT_AF_MAT_LIQUID_01": 740,
+        "IT_AF_AW_BOW": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10008,6 +11230,50 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BOW_002": 1,
+        "IT_AF_MAT_LIQUID_01": 10,
+        "IT_AF_MAT_LIQUID_02": 90,
+        "IT_AF_AW_BOW": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BOW_002": 3,
+        "IT_AF_MAT_LIQUID_01": 30,
+        "IT_AF_MAT_LIQUID_02": 140,
+        "IT_AF_AW_BOW": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BOW_002": 7,
+        "IT_AF_MAT_LIQUID_01": 70,
+        "IT_AF_MAT_LIQUID_02": 240,
+        "IT_AF_AW_BOW": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BOW_002": 15,
+        "IT_AF_MAT_LIQUID_01": 150,
+        "IT_AF_MAT_LIQUID_02": 450,
+        "IT_AF_AW_BOW": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BOW_002": 31,
+        "IT_AF_MAT_LIQUID_01": 310,
+        "IT_AF_MAT_LIQUID_02": 890,
+        "IT_AF_AW_BOW": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_BOW_002": 63,
+        "IT_AF_MAT_LIQUID_01": 630,
+        "IT_AF_MAT_LIQUID_02": 1810,
+        "IT_AF_AW_BOW": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10273,6 +11539,50 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_BOW_003": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_WOLF": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_BOW": 255
+      },
+      {
+        "IT_AF_LW_BOW_003": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_WOLF": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_BOW": 255
+      },
+      {
+        "IT_AF_LW_BOW_003": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_WOLF": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_BOW": 255
+      },
+      {
+        "IT_AF_LW_BOW_003": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_WOLF": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_BOW": 315
+      },
+      {
+        "IT_AF_LW_BOW_003": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_WOLF": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_BOW": 535
+      },
+      {
+        "IT_AF_LW_BOW_003": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_WOLF": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_BOW": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10337,6 +11647,9 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -10595,6 +11908,38 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_GUN_001": 1,
+        "IT_AF_MAT_SAND_01": 42,
+        "IT_AF_AW_GUN": 75
+      },
+      {
+        "IT_AF_LW_GUN_001": 3,
+        "IT_AF_MAT_SAND_01": 62,
+        "IT_AF_AW_GUN": 75
+      },
+      {
+        "IT_AF_LW_GUN_001": 7,
+        "IT_AF_MAT_SAND_01": 102,
+        "IT_AF_AW_GUN": 75
+      },
+      {
+        "IT_AF_LW_GUN_001": 15,
+        "IT_AF_MAT_SAND_01": 186,
+        "IT_AF_AW_GUN": 95
+      },
+      {
+        "IT_AF_LW_GUN_001": 31,
+        "IT_AF_MAT_SAND_01": 364,
+        "IT_AF_AW_GUN": 165
+      },
+      {
+        "IT_AF_LW_GUN_001": 63,
+        "IT_AF_MAT_SAND_01": 740,
+        "IT_AF_AW_GUN": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -10856,6 +12201,50 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_GUN_002": 1,
+        "IT_AF_MAT_SAND_01": 10,
+        "IT_AF_MAT_SAND_02": 90,
+        "IT_AF_AW_GUN": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_GUN_002": 3,
+        "IT_AF_MAT_SAND_01": 30,
+        "IT_AF_MAT_SAND_02": 140,
+        "IT_AF_AW_GUN": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_GUN_002": 7,
+        "IT_AF_MAT_SAND_01": 70,
+        "IT_AF_MAT_SAND_02": 240,
+        "IT_AF_AW_GUN": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_GUN_002": 15,
+        "IT_AF_MAT_SAND_01": 150,
+        "IT_AF_MAT_SAND_02": 450,
+        "IT_AF_AW_GUN": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_GUN_002": 31,
+        "IT_AF_MAT_SAND_01": 310,
+        "IT_AF_MAT_SAND_02": 890,
+        "IT_AF_AW_GUN": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_GUN_002": 63,
+        "IT_AF_MAT_SAND_01": 630,
+        "IT_AF_MAT_SAND_02": 1810,
+        "IT_AF_AW_GUN": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -11121,6 +12510,50 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_GUN_003": 1,
+        "IT_AF_MAT_SAND_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_003": 3,
+        "IT_AF_MAT_SAND_03": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_003": 7,
+        "IT_AF_MAT_SAND_03": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_003": 15,
+        "IT_AF_MAT_SAND_03": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_GUN": 315
+      },
+      {
+        "IT_AF_LW_GUN_003": 31,
+        "IT_AF_MAT_SAND_03": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_GUN": 535
+      },
+      {
+        "IT_AF_LW_GUN_003": 63,
+        "IT_AF_MAT_SAND_03": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_GUN": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -11185,6 +12618,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -11246,6 +12682,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -11508,6 +12947,38 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ROD_002": 1,
+        "IT_AF_MAT_LIQUID_01": 42,
+        "IT_AF_AW_STAFF": 75
+      },
+      {
+        "IT_AF_LW_ROD_002": 3,
+        "IT_AF_MAT_LIQUID_01": 62,
+        "IT_AF_AW_STAFF": 75
+      },
+      {
+        "IT_AF_LW_ROD_002": 7,
+        "IT_AF_MAT_LIQUID_01": 102,
+        "IT_AF_AW_STAFF": 75
+      },
+      {
+        "IT_AF_LW_ROD_002": 15,
+        "IT_AF_MAT_LIQUID_01": 186,
+        "IT_AF_AW_STAFF": 95
+      },
+      {
+        "IT_AF_LW_ROD_002": 31,
+        "IT_AF_MAT_LIQUID_01": 364,
+        "IT_AF_AW_STAFF": 165
+      },
+      {
+        "IT_AF_LW_ROD_002": 63,
+        "IT_AF_MAT_LIQUID_01": 740,
+        "IT_AF_AW_STAFF": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -12038,6 +13509,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ROD_004": 1,
+        "IT_AF_MAT_LIQUID_01": 10,
+        "IT_AF_MAT_LIQUID_02": 90,
+        "IT_AF_AW_STAFF": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ROD_004": 3,
+        "IT_AF_MAT_LIQUID_01": 30,
+        "IT_AF_MAT_LIQUID_02": 140,
+        "IT_AF_AW_STAFF": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ROD_004": 7,
+        "IT_AF_MAT_LIQUID_01": 70,
+        "IT_AF_MAT_LIQUID_02": 240,
+        "IT_AF_AW_STAFF": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ROD_004": 15,
+        "IT_AF_MAT_LIQUID_01": 150,
+        "IT_AF_MAT_LIQUID_02": 450,
+        "IT_AF_AW_STAFF": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ROD_004": 31,
+        "IT_AF_MAT_LIQUID_01": 310,
+        "IT_AF_MAT_LIQUID_02": 890,
+        "IT_AF_AW_STAFF": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ROD_004": 63,
+        "IT_AF_MAT_LIQUID_01": 630,
+        "IT_AF_MAT_LIQUID_02": 1810,
+        "IT_AF_AW_STAFF": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -12307,6 +13822,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ROD_005": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_MABR": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_005": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_MABR": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_005": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_MABR": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_005": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_MABR": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_STAFF": 315
+      },
+      {
+        "IT_AF_LW_ROD_005": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_MABR": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_STAFF": 535
+      },
+      {
+        "IT_AF_LW_ROD_005": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_MABR": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_STAFF": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -12572,6 +14131,56 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ROD_007": 1,
+        "IT_AF_MAT_LIQUID_03": 30,
+        "IT_AF_MAT_LIQUID_04": 235,
+        "IT_AF_MAT_ZUUU": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_STAFF": 375
+      },
+      {
+        "IT_AF_LW_ROD_007": 3,
+        "IT_AF_MAT_LIQUID_03": 90,
+        "IT_AF_MAT_LIQUID_04": 335,
+        "IT_AF_MAT_ZUUU": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_STAFF": 375
+      },
+      {
+        "IT_AF_LW_ROD_007": 7,
+        "IT_AF_MAT_LIQUID_03": 210,
+        "IT_AF_MAT_LIQUID_04": 535,
+        "IT_AF_MAT_ZUUU": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_STAFF": 375
+      },
+      {
+        "IT_AF_LW_ROD_007": 15,
+        "IT_AF_MAT_LIQUID_03": 450,
+        "IT_AF_MAT_LIQUID_04": 985,
+        "IT_AF_MAT_ZUUU": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_STAFF": 475
+      },
+      {
+        "IT_AF_LW_ROD_007": 31,
+        "IT_AF_MAT_LIQUID_03": 930,
+        "IT_AF_MAT_LIQUID_04": 1955,
+        "IT_AF_MAT_ZUUU": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_STAFF": 825
+      },
+      {
+        "IT_AF_LW_ROD_007": 63,
+        "IT_AF_MAT_LIQUID_03": 1890,
+        "IT_AF_MAT_LIQUID_04": 3995,
+        "IT_AF_MAT_ZUUU": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_STAFF": 1725
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "Arena Medal Exchange Shop",
@@ -12631,6 +14240,9 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -12888,6 +14500,38 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_MAC_001": 1,
+        "IT_AF_MAT_SAP_01": 42,
+        "IT_AF_AW_MACE": 75
+      },
+      {
+        "IT_AF_LW_MAC_001": 3,
+        "IT_AF_MAT_SAP_01": 62,
+        "IT_AF_AW_MACE": 75
+      },
+      {
+        "IT_AF_LW_MAC_001": 7,
+        "IT_AF_MAT_SAP_01": 102,
+        "IT_AF_AW_MACE": 75
+      },
+      {
+        "IT_AF_LW_MAC_001": 15,
+        "IT_AF_MAT_SAP_01": 186,
+        "IT_AF_AW_MACE": 95
+      },
+      {
+        "IT_AF_LW_MAC_001": 31,
+        "IT_AF_MAT_SAP_01": 364,
+        "IT_AF_AW_MACE": 165
+      },
+      {
+        "IT_AF_LW_MAC_001": 63,
+        "IT_AF_MAT_SAP_01": 740,
+        "IT_AF_AW_MACE": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13152,6 +14796,50 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_MAC_002": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_MAT_SAP_02": 90,
+        "IT_AF_AW_MACE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_MAC_002": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_MAT_SAP_02": 140,
+        "IT_AF_AW_MACE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_MAC_002": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_MAT_SAP_02": 240,
+        "IT_AF_AW_MACE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_MAC_002": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_MAT_SAP_02": 450,
+        "IT_AF_AW_MACE": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_MAC_002": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_MAT_SAP_02": 890,
+        "IT_AF_AW_MACE": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_MAC_002": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_MAT_SAP_02": 1810,
+        "IT_AF_AW_MACE": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13416,6 +15104,50 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_MAC_003": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_003": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_003": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_003": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_MACE": 315
+      },
+      {
+        "IT_AF_LW_MAC_003": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_MACE": 535
+      },
+      {
+        "IT_AF_LW_MAC_003": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_MACE": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -13479,6 +15211,9 @@
       "JB_LW_VIK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -13740,6 +15475,38 @@
       "JB_LW_VIK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_AXE_001": 1,
+        "IT_AF_MAT_SAP_01": 42,
+        "IT_AF_AW_AXE": 75
+      },
+      {
+        "IT_AF_LW_AXE_001": 3,
+        "IT_AF_MAT_SAP_01": 62,
+        "IT_AF_AW_AXE": 75
+      },
+      {
+        "IT_AF_LW_AXE_001": 7,
+        "IT_AF_MAT_SAP_01": 102,
+        "IT_AF_AW_AXE": 75
+      },
+      {
+        "IT_AF_LW_AXE_001": 15,
+        "IT_AF_MAT_SAP_01": 186,
+        "IT_AF_AW_AXE": 95
+      },
+      {
+        "IT_AF_LW_AXE_001": 31,
+        "IT_AF_MAT_SAP_01": 364,
+        "IT_AF_AW_AXE": 165
+      },
+      {
+        "IT_AF_LW_AXE_001": 63,
+        "IT_AF_MAT_SAP_01": 740,
+        "IT_AF_AW_AXE": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14004,6 +15771,50 @@
       "JB_LW_VIK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_AXE_002": 1,
+        "IT_AF_MAT_SAP_01": 10,
+        "IT_AF_MAT_SAP_02": 90,
+        "IT_AF_AW_AXE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_AXE_002": 3,
+        "IT_AF_MAT_SAP_01": 30,
+        "IT_AF_MAT_SAP_02": 140,
+        "IT_AF_AW_AXE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_AXE_002": 7,
+        "IT_AF_MAT_SAP_01": 70,
+        "IT_AF_MAT_SAP_02": 240,
+        "IT_AF_AW_AXE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_AXE_002": 15,
+        "IT_AF_MAT_SAP_01": 150,
+        "IT_AF_MAT_SAP_02": 450,
+        "IT_AF_AW_AXE": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_AXE_002": 31,
+        "IT_AF_MAT_SAP_01": 310,
+        "IT_AF_MAT_SAP_02": 890,
+        "IT_AF_AW_AXE": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_AXE_002": 63,
+        "IT_AF_MAT_SAP_01": 630,
+        "IT_AF_MAT_SAP_02": 1810,
+        "IT_AF_AW_AXE": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14268,6 +16079,56 @@
       "JB_LW_VIK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_AXE_003": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_BONE": 5,
+        "IT_AF_MAT_SHINE_01": 5,
+        "IT_AF_AW_AXE": 255,
+        "IT_AF_MAT_LESS_01": 6
+      },
+      {
+        "IT_AF_LW_AXE_003": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_BONE": 15,
+        "IT_AF_MAT_SHINE_01": 15,
+        "IT_AF_AW_AXE": 255,
+        "IT_AF_MAT_LESS_01": 6
+      },
+      {
+        "IT_AF_LW_AXE_003": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_BONE": 35,
+        "IT_AF_MAT_SHINE_01": 35,
+        "IT_AF_AW_AXE": 255,
+        "IT_AF_MAT_LESS_01": 6
+      },
+      {
+        "IT_AF_LW_AXE_003": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_BONE": 75,
+        "IT_AF_MAT_SHINE_01": 75,
+        "IT_AF_AW_AXE": 315,
+        "IT_AF_MAT_LESS_01": 6
+      },
+      {
+        "IT_AF_LW_AXE_003": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_BONE": 155,
+        "IT_AF_MAT_SHINE_01": 155,
+        "IT_AF_AW_AXE": 535,
+        "IT_AF_MAT_LESS_01": 6
+      },
+      {
+        "IT_AF_LW_AXE_003": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_BONE": 315,
+        "IT_AF_MAT_SHINE_01": 315,
+        "IT_AF_AW_AXE": 1125,
+        "IT_AF_MAT_LESS_01": 8
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14306,6 +16167,9 @@
       "JB_LW_PLD_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -14370,6 +16234,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -14607,6 +16474,38 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ARM_002": 1,
+        "IT_AF_MAT_HEART_01": 42,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_ARM_002": 3,
+        "IT_AF_MAT_HEART_01": 62,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_ARM_002": 7,
+        "IT_AF_MAT_HEART_01": 102,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_ARM_002": 15,
+        "IT_AF_MAT_HEART_01": 186,
+        "IT_AF_AW_ARMOR": 95
+      },
+      {
+        "IT_AF_LW_ARM_002": 31,
+        "IT_AF_MAT_HEART_01": 364,
+        "IT_AF_AW_ARMOR": 165
+      },
+      {
+        "IT_AF_LW_ARM_002": 63,
+        "IT_AF_MAT_HEART_01": 740,
+        "IT_AF_AW_ARMOR": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -14871,6 +16770,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ARM_003": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 90,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ARM_003": 3,
+        "IT_AF_MAT_HEART_01": 30,
+        "IT_AF_MAT_HEART_02": 140,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ARM_003": 7,
+        "IT_AF_MAT_HEART_01": 70,
+        "IT_AF_MAT_HEART_02": 240,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ARM_003": 15,
+        "IT_AF_MAT_HEART_01": 150,
+        "IT_AF_MAT_HEART_02": 450,
+        "IT_AF_AW_ARMOR": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ARM_003": 31,
+        "IT_AF_MAT_HEART_01": 310,
+        "IT_AF_MAT_HEART_02": 890,
+        "IT_AF_AW_ARMOR": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_ARM_003": 63,
+        "IT_AF_MAT_HEART_01": 630,
+        "IT_AF_MAT_HEART_02": 1810,
+        "IT_AF_AW_ARMOR": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15147,6 +17090,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ARM_004": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_ARM_004": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_ARM_004": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_ARM_004": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_ARM_004": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_ARM_004": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15419,6 +17406,56 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ARM_005": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_BONE": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_005": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_BONE": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_005": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_BONE": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_005": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_BONE": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_ARM_005": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_BONE": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_ARM_005": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_BONE": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "PVP Medal Exchange Shop",
@@ -15487,6 +17524,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -15725,6 +17765,38 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HLM_002": 1,
+        "IT_AF_MAT_LIQUID_01": 42,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HLM_002": 3,
+        "IT_AF_MAT_LIQUID_01": 62,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HLM_002": 7,
+        "IT_AF_MAT_LIQUID_01": 102,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HLM_002": 15,
+        "IT_AF_MAT_LIQUID_01": 186,
+        "IT_AF_AW_ARMOR": 95
+      },
+      {
+        "IT_AF_LW_HLM_002": 31,
+        "IT_AF_MAT_LIQUID_01": 364,
+        "IT_AF_AW_ARMOR": 165
+      },
+      {
+        "IT_AF_LW_HLM_002": 63,
+        "IT_AF_MAT_LIQUID_01": 740,
+        "IT_AF_AW_ARMOR": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -15990,6 +18062,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HLM_003": 1,
+        "IT_AF_MAT_LIQUID_01": 10,
+        "IT_AF_MAT_LIQUID_02": 90,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HLM_003": 3,
+        "IT_AF_MAT_LIQUID_01": 30,
+        "IT_AF_MAT_LIQUID_02": 140,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HLM_003": 7,
+        "IT_AF_MAT_LIQUID_01": 70,
+        "IT_AF_MAT_LIQUID_02": 240,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HLM_003": 15,
+        "IT_AF_MAT_LIQUID_01": 150,
+        "IT_AF_MAT_LIQUID_02": 450,
+        "IT_AF_AW_ARMOR": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HLM_003": 31,
+        "IT_AF_MAT_LIQUID_01": 310,
+        "IT_AF_MAT_LIQUID_02": 890,
+        "IT_AF_AW_ARMOR": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HLM_003": 63,
+        "IT_AF_MAT_LIQUID_01": 630,
+        "IT_AF_MAT_LIQUID_02": 1810,
+        "IT_AF_AW_ARMOR": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16259,6 +18375,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HLM_004": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HLM_004": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_BOMB": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HLM_004": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_BOMB": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HLM_004": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_BOMB": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_HLM_004": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_BOMB": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_HLM_004": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_BOMB": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16336,6 +18496,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -16591,6 +18754,38 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HAT_002": 1,
+        "IT_AF_MAT_LIQUID_01": 42,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HAT_002": 3,
+        "IT_AF_MAT_LIQUID_01": 62,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HAT_002": 7,
+        "IT_AF_MAT_LIQUID_01": 102,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_HAT_002": 15,
+        "IT_AF_MAT_LIQUID_01": 186,
+        "IT_AF_AW_ARMOR": 95
+      },
+      {
+        "IT_AF_LW_HAT_002": 31,
+        "IT_AF_MAT_LIQUID_01": 364,
+        "IT_AF_AW_ARMOR": 165
+      },
+      {
+        "IT_AF_LW_HAT_002": 63,
+        "IT_AF_MAT_LIQUID_01": 740,
+        "IT_AF_AW_ARMOR": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -16873,6 +19068,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HAT_003": 1,
+        "IT_AF_MAT_LIQUID_01": 10,
+        "IT_AF_MAT_LIQUID_02": 90,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HAT_003": 3,
+        "IT_AF_MAT_LIQUID_01": 30,
+        "IT_AF_MAT_LIQUID_02": 140,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HAT_003": 7,
+        "IT_AF_MAT_LIQUID_01": 70,
+        "IT_AF_MAT_LIQUID_02": 240,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HAT_003": 15,
+        "IT_AF_MAT_LIQUID_01": 150,
+        "IT_AF_MAT_LIQUID_02": 450,
+        "IT_AF_AW_ARMOR": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HAT_003": 31,
+        "IT_AF_MAT_LIQUID_01": 310,
+        "IT_AF_MAT_LIQUID_02": 890,
+        "IT_AF_AW_ARMOR": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_HAT_003": 63,
+        "IT_AF_MAT_LIQUID_01": 630,
+        "IT_AF_MAT_LIQUID_02": 1810,
+        "IT_AF_AW_ARMOR": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17155,6 +19394,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HAT_004": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_004": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_004": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_004": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_HAT_004": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_HAT_004": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17233,6 +19516,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -17509,6 +19795,38 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_002": 1,
+        "IT_AF_MAT_SAND_01": 42,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_CLT_002": 3,
+        "IT_AF_MAT_SAND_01": 62,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_CLT_002": 7,
+        "IT_AF_MAT_SAND_01": 102,
+        "IT_AF_AW_ARMOR": 75
+      },
+      {
+        "IT_AF_LW_CLT_002": 15,
+        "IT_AF_MAT_SAND_01": 186,
+        "IT_AF_AW_ARMOR": 95
+      },
+      {
+        "IT_AF_LW_CLT_002": 31,
+        "IT_AF_MAT_SAND_01": 364,
+        "IT_AF_AW_ARMOR": 165
+      },
+      {
+        "IT_AF_LW_CLT_002": 63,
+        "IT_AF_MAT_SAND_01": 740,
+        "IT_AF_AW_ARMOR": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -17788,6 +20106,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_003": 1,
+        "IT_AF_MAT_SAND_01": 10,
+        "IT_AF_MAT_SAND_02": 90,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_CLT_003": 3,
+        "IT_AF_MAT_SAND_01": 30,
+        "IT_AF_MAT_SAND_02": 140,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_CLT_003": 7,
+        "IT_AF_MAT_SAND_01": 70,
+        "IT_AF_MAT_SAND_02": 240,
+        "IT_AF_AW_ARMOR": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_CLT_003": 15,
+        "IT_AF_MAT_SAND_01": 150,
+        "IT_AF_MAT_SAND_02": 450,
+        "IT_AF_AW_ARMOR": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_CLT_003": 31,
+        "IT_AF_MAT_SAND_01": 310,
+        "IT_AF_MAT_SAND_02": 890,
+        "IT_AF_AW_ARMOR": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_CLT_003": 63,
+        "IT_AF_MAT_SAND_01": 630,
+        "IT_AF_MAT_SAND_02": 1810,
+        "IT_AF_AW_ARMOR": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -18067,6 +20429,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_004": 1,
+        "IT_AF_MAT_SAND_03": 170,
+        "IT_AF_MAT_BONE": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_004": 3,
+        "IT_AF_MAT_SAND_03": 230,
+        "IT_AF_MAT_BONE": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_004": 7,
+        "IT_AF_MAT_SAND_03": 350,
+        "IT_AF_MAT_BONE": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_004": 15,
+        "IT_AF_MAT_SAND_03": 630,
+        "IT_AF_MAT_BONE": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_CLT_004": 31,
+        "IT_AF_MAT_SAND_03": 1250,
+        "IT_AF_MAT_BONE": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_CLT_004": 63,
+        "IT_AF_MAT_SAND_03": 2570,
+        "IT_AF_MAT_BONE": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -18210,6 +20616,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -18786,6 +21195,38 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_RNG_002": 1,
+        "IT_AF_MAT_HEART_01": 42,
+        "IT_AF_AW_ACCE": 75
+      },
+      {
+        "IT_AF_LW_RNG_002": 3,
+        "IT_AF_MAT_HEART_01": 62,
+        "IT_AF_AW_ACCE": 75
+      },
+      {
+        "IT_AF_LW_RNG_002": 7,
+        "IT_AF_MAT_HEART_01": 102,
+        "IT_AF_AW_ACCE": 75
+      },
+      {
+        "IT_AF_LW_RNG_002": 15,
+        "IT_AF_MAT_HEART_01": 186,
+        "IT_AF_AW_ACCE": 95
+      },
+      {
+        "IT_AF_LW_RNG_002": 31,
+        "IT_AF_MAT_HEART_01": 364,
+        "IT_AF_AW_ACCE": 165
+      },
+      {
+        "IT_AF_LW_RNG_002": 63,
+        "IT_AF_MAT_HEART_01": 740,
+        "IT_AF_AW_ACCE": 345
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -19365,6 +21806,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_RNG_003": 1,
+        "IT_AF_MAT_HEART_01": 10,
+        "IT_AF_MAT_HEART_02": 90,
+        "IT_AF_AW_ACCE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_RNG_003": 3,
+        "IT_AF_MAT_HEART_01": 30,
+        "IT_AF_MAT_HEART_02": 140,
+        "IT_AF_AW_ACCE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_RNG_003": 7,
+        "IT_AF_MAT_HEART_01": 70,
+        "IT_AF_MAT_HEART_02": 240,
+        "IT_AF_AW_ACCE": 175,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_RNG_003": 15,
+        "IT_AF_MAT_HEART_01": 150,
+        "IT_AF_MAT_HEART_02": 450,
+        "IT_AF_AW_ACCE": 215,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_RNG_003": 31,
+        "IT_AF_MAT_HEART_01": 310,
+        "IT_AF_MAT_HEART_02": 890,
+        "IT_AF_AW_ACCE": 355,
+        "IT_AF_MAT_LESS_01": 1
+      },
+      {
+        "IT_AF_LW_RNG_003": 63,
+        "IT_AF_MAT_HEART_01": 630,
+        "IT_AF_MAT_HEART_02": 1810,
+        "IT_AF_AW_ACCE": 735,
+        "IT_AF_MAT_LESS_01": 1
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -19944,6 +22429,50 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_RNG_004": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_ZUUU": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_RNG_004": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ZUUU": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_RNG_004": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ZUUU": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_RNG_004": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ZUUU": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ACCE": 315
+      },
+      {
+        "IT_AF_LW_RNG_004": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ZUUU": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ACCE": 535
+      },
+      {
+        "IT_AF_LW_RNG_004": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ZUUU": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ACCE": 1125
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "General Shop",
@@ -20397,6 +22926,56 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_FTW_001": 1,
+        "IT_AF_MAT_HEART_03": 215,
+        "IT_AF_MAT_HEART_04": 50,
+        "IT_AF_MAT_ARMN": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_FTW_001": 3,
+        "IT_AF_MAT_HEART_03": 275,
+        "IT_AF_MAT_HEART_04": 150,
+        "IT_AF_MAT_ARMN": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_FTW_001": 7,
+        "IT_AF_MAT_HEART_03": 395,
+        "IT_AF_MAT_HEART_04": 350,
+        "IT_AF_MAT_ARMN": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_FTW_001": 15,
+        "IT_AF_MAT_HEART_03": 685,
+        "IT_AF_MAT_HEART_04": 750,
+        "IT_AF_MAT_ARMN": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_FTW_001": 31,
+        "IT_AF_MAT_HEART_03": 1335,
+        "IT_AF_MAT_HEART_04": 1550,
+        "IT_AF_MAT_ARMN": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_FTW_001": 63,
+        "IT_AF_MAT_HEART_03": 2735,
+        "IT_AF_MAT_HEART_04": 3150,
+        "IT_AF_MAT_ARMN": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
     "acquisition": {
       "type": {
         "en": "PVP Medal Exchange Shop",
@@ -20500,6 +23079,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20600,6 +23182,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20700,6 +23285,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20800,6 +23388,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -20900,6 +23491,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -21000,6 +23594,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -21085,6 +23682,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LILS"
@@ -21165,6 +23765,9 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SZRT"
@@ -21246,6 +23849,9 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_OOOO"
@@ -21323,6 +23929,9 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MRLK"
@@ -21401,6 +24010,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RAMD"
@@ -21479,6 +24091,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LRNZ"
@@ -21557,6 +24172,9 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VSTR"
@@ -21634,6 +24252,9 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_CLEY"
@@ -21714,6 +24335,9 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RIRY"
@@ -21795,6 +24419,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_HLNA"
@@ -21876,6 +24503,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MGRT"
@@ -21958,6 +24588,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_PRAY"
@@ -22035,6 +24668,9 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_KADI"
@@ -22117,6 +24753,9 @@
       "JB_LW_FINA"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FINA"
@@ -22200,6 +24839,9 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SDLX"
@@ -22284,6 +24926,9 @@
       "JB_LW_PLD_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ENBT"
@@ -22378,6 +25023,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_STRN"
@@ -22479,6 +25127,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ROBB"
@@ -22563,6 +25214,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_BYLO"
@@ -22680,6 +25334,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VRID"
@@ -22775,6 +25432,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_NAIA"
@@ -22870,6 +25530,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SEVR"
@@ -22965,6 +25628,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SRJS"
@@ -23095,6 +25761,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_AILN"
@@ -23220,6 +25889,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MDNA"
@@ -23318,6 +25990,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_UNII"
@@ -23416,6 +26091,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VADM"
@@ -23514,6 +26192,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_PHBE"
@@ -23585,6 +26266,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MICE"
@@ -23656,6 +26340,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MIIA"
@@ -23797,6 +26484,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_AYKA"
@@ -23927,6 +26617,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MACR"
@@ -24043,6 +26736,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ELDE"
@@ -24161,6 +26857,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ZIZA"
@@ -24281,6 +26980,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FDRC"
@@ -24389,6 +27091,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SCIA"
@@ -24497,6 +27202,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MURM"
@@ -24605,6 +27313,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RYER"
@@ -24686,6 +27397,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RART"
@@ -24811,6 +27525,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MONT"
@@ -24892,6 +27609,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ZZAN"
@@ -24996,6 +27716,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_GLMS"
@@ -25095,6 +27818,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF14_P_TNCR"
@@ -25173,6 +27899,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF14_P_YSTL"
@@ -25286,6 +28015,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_YERM"
@@ -25373,6 +28105,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_NASR"
@@ -25454,6 +28189,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ETRE"
@@ -25563,6 +28301,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_RAMZ"
@@ -25650,6 +28391,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_GFGR"
@@ -25741,6 +28485,9 @@
       "JB_FFT_GFGR"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_ORND"
@@ -25872,6 +28619,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_KTON"
@@ -26049,6 +28799,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_WHIS"
@@ -26171,6 +28924,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_MRND"
@@ -26250,6 +29006,9 @@
       "JB_LW_VIK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_DRND"
@@ -26368,6 +29127,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_LUCA"
@@ -26454,6 +29216,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ADLD"
@@ -26555,6 +29320,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VKTR"
@@ -26663,6 +29431,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_THLA"
@@ -26769,6 +29540,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_RAIN"
@@ -26906,6 +29680,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_FRVA"
@@ -27023,6 +29800,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VNLA"
@@ -27110,6 +29890,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_DRIO"
@@ -27191,6 +29974,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_TREL"
@@ -27317,6 +30103,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF1_P_WROL"
@@ -27438,6 +30227,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_QILF"
@@ -27520,6 +30312,9 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SIMR"
@@ -27587,6 +30382,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27653,6 +30451,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27719,6 +30520,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27776,6 +30580,9 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27832,6 +30639,9 @@
       "JB_LW_SAM_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27888,6 +30698,9 @@
       "JB_LW_MNK_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -27945,6 +30758,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28002,6 +30818,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28063,6 +30882,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28124,6 +30946,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28180,6 +31005,9 @@
       "JB_LW_CLR_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28215,6 +31043,9 @@
       "JB_LW_PLD_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28281,6 +31112,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28347,6 +31181,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28401,6 +31238,9 @@
     "image": "lapswpn_swo_011",
     "equippableJobs": [],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28457,6 +31297,9 @@
       "JB_LW_NIN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28523,6 +31366,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28580,6 +31426,9 @@
       "JB_LW_WGN_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28637,6 +31486,9 @@
       "JB_LW_DRG_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28694,6 +31546,9 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28760,6 +31615,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28817,6 +31675,9 @@
       "JB_LW_ASS_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -28883,6 +31744,9 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -29459,6 +32323,56 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_RNG_005": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_BONE": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_RNG_005": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_BONE": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_RNG_005": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_BONE": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_RNG_005": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_BONE": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_RNG_005": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_BONE": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_RNG_005": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_BONE": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -29717,6 +32631,13 @@
       "JB_LW_RAIN"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_AW_LSWORD": 375,
+        "IT_AF_MAT_SAP_04": 185,
+        "IT_AF_MAT_FIRE_02": 6
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -29997,6 +32918,56 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_005": 1,
+        "IT_AF_MAT_SAND_03": 30,
+        "IT_AF_MAT_SAND_04": 235,
+        "IT_AF_MAT_BONE": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_005": 3,
+        "IT_AF_MAT_SAND_03": 90,
+        "IT_AF_MAT_SAND_04": 335,
+        "IT_AF_MAT_BONE": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_005": 7,
+        "IT_AF_MAT_SAND_03": 210,
+        "IT_AF_MAT_SAND_04": 535,
+        "IT_AF_MAT_BONE": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_005": 15,
+        "IT_AF_MAT_SAND_03": 450,
+        "IT_AF_MAT_SAND_04": 985,
+        "IT_AF_MAT_BONE": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_CLT_005": 31,
+        "IT_AF_MAT_SAND_03": 930,
+        "IT_AF_MAT_SAND_04": 1955,
+        "IT_AF_MAT_BONE": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_CLT_005": 63,
+        "IT_AF_MAT_SAND_03": 1890,
+        "IT_AF_MAT_SAND_04": 3995,
+        "IT_AF_MAT_BONE": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -30266,6 +33237,50 @@
       "JB_FF1_WROL"
     ],
     "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF1_ARM_002": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_MYTHRIL": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_FF1_ARM_002": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_MYTHRIL": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_FF1_ARM_002": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_MYTHRIL": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_FF1_ARM_002": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_MYTHRIL": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_FF1_ARM_002": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_MYTHRIL": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_FF1_ARM_002": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_MYTHRIL": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
     "acquisition": {
       "type": "Unknown"
     }
@@ -30327,6 +33342,9 @@
       "JB_LW_MST_FIRE"
     ],
     "equippableUnits": [],
+    "materials": [
+      {}
+    ],
     "acquisition": {
       "type": "Unknown"
     }
