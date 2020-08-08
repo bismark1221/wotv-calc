@@ -596,7 +596,7 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    if (this.equipment.growIds.length == 1) {
+    if (this.equipment.growIds.length == 1 && this.equipment.grows[this.equipment.growIds[0]].dataId == "ARTIFACT_50") {
       Object.keys(this.equipment.stats).forEach(statType => {
         let minValue = this.equipment.stats[statType].min
         let maxValue = this.equipment.grows[this.equipment.growIds[0]].stats[statType][this.equipment.grows[this.equipment.growIds[0]].stats[statType].length - 1]

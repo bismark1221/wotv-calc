@@ -1,64 +1,250 @@
-<div class="titleBlock">
-  <div class="title">
-    EQUIPEMENTS
+<div *ngIf="modalStep == 'select'">
+  <div class="titleBlock">
+    <div class="title">
+      EQUIPEMENTS
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
-  <div class="closeButton">
-    <button type="button" class="close" aria-label="Close" (click)="close()">
-      <span aria-hidden="true">&times;</span>
-    </button>
+
+  <div class="equipments">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
+      </div>
+      <div class="filtersBlock">
+        Filter by :
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
+          <img class="filterRarity" src="assets/rarity/UR.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
+          <img class="filterRarity" src="assets/rarity/MR.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
+          <img class="filterRarity" src="assets/rarity/SR.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'R')}" (click)="filterList('rarity', 'R')">
+          <img class="filterRarity" src="assets/rarity/R.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'N')}" (click)="filterList('rarity', 'N')">
+          <img class="filterRarity" src="assets/rarity/N.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'weapon')}" (click)="filterList('category', 'weapon')">
+          Weapon
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'armor')}" (click)="filterList('category', 'armor')">
+          Armor
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'acc')}" (click)="filterList('category', 'acc')">
+          Accessory
+        </button>
+      </div>
+    </div>
+
+    <hr class="separator" />
+
+    <div class="equipmentsList">
+      <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
+        <a (click)="selectEquipment(equipment)">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+          </div>
+          <div>
+            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+          </div>
+          <div class="cardTitle">
+            <span class="equipmentName">{{ equipment.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="equipments">
-  <div class="upperBlock">
-    <div class="searchBlock">
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
+<div *ngIf="modalStep == 'saved'">
+  <div class="titleBlock">
+    <div class="title">
+      Load equipement ?
     </div>
-    <div class="filtersBlock">
-      Filter by :
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
-        <img class="filterRarity" src="assets/rarity/UR.png" />
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
       </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
-        <img class="filterRarity" src="assets/rarity/MR.png" />
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
-        <img class="filterRarity" src="assets/rarity/SR.png" />
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'R')}" (click)="filterList('rarity', 'R')">
-        <img class="filterRarity" src="assets/rarity/R.png" />
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'N')}" (click)="filterList('rarity', 'N')">
-        <img class="filterRarity" src="assets/rarity/N.png" />
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'weapon')}" (click)="filterList('category', 'weapon')">
-        Weapon
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'armor')}" (click)="filterList('category', 'armor')">
-        Armor
-      </button>
-      <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'acc')}" (click)="filterList('category', 'acc')">
-        Accessory
+    </div>
+  </div>
+</div>
+
+<div *ngIf="modalStep == 'custom'">
+  <div class="titleBlock">
+    <div class="title">
+      {{ equipment.name }} - Custom
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
       </button>
     </div>
   </div>
 
-  <hr class="separator" />
+  <div>
+    <button (click)="back()">Back to Equipments</button>
+  </div>
 
-  <div class="equipmentsList">
-    <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
-      <a (click)="selectEquipment(equipment)">
-        <div class="cardIcons">
-          <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
-        </div>
-        <div>
-          <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
-        </div>
-        <div class="cardTitle">
-          <span class="equipmentName">{{ equipment.name }}</span>
-        </div>
-      </a>
+  <div class="leftBlock">
+    <table class="equipmentTable">
+      <tbody>
+        <tr>
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
+          </div>
+          <div>
+            <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
+          </div>
+        </tr>
+        <tr>
+          <th>{{ equipment.name }}</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="upgradeTypeDiv">
+      <div *ngIf="equipment && equipment.skills.length > 1">
+        Upgrade
+        <select [(ngModel)]="equipment.upgrade" (ngModelChange)="changeUpgrade()">
+          <option value="0">0</option>
+          <option value="1">+1</option>
+          <option value="2">+2</option>
+          <option value="3">+3</option>
+          <option value="4">+4</option>
+          <option value="5">+5</option>
+        </select>
+      </div>
+
+      <div *ngIf="equipment && equipment.growIds.length > 1">
+        Type
+        <select [(ngModel)]="equipment.grow" (ngModelChange)="changeGrow()">
+          <option *ngFor="let growId of equipment.growIds" [ngValue]="growId">{{ equipment.grows[growId].name }}</option>
+        </select>
+      </div>
+
+      <button (click)="save()">SAVE</button>
     </div>
   </div>
+
+  <div class="rightBlock">
+    <table class="statsTable">
+      <tbody>
+        <tr>
+          <th colspan="13">Stats</th>
+        </tr>
+        <tr>
+          <th>Level</th>
+          <th *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
+        </tr>
+        <tr>
+          <td>
+            <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevel()">
+              <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>
+            </select> / {{ equipment.maxLevel }}
+          </td>
+          <td *ngFor="let statType of equipment.statsTypes">
+            <span *ngIf="equipment.growIds.length > 1">
+              <select [(ngModel)]="equipment.stats[statType].selected">
+                <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
+              </select>
+            </span>
+            <span *ngIf="equipment.growIds.length == 1 && equipment.grows[equipment.growIds[0]].dataId == 'ARTIFACT_50'">
+              {{ equipment.stats[statType].selected }}
+            </span> / {{ equipment.tableStats[statType][equipment.tableStats[statType].length - 1] }}
+          </td>
+        </tr>
+        <tr *ngIf="equipment.acquisition && equipment.acquisition.type === 'tmr'">
+          <td *ngFor="let statType of equipment.statsTypes">
+            {{ equipment.stats[statType].min }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="statsTable" *ngIf="equipment.skill[0]">
+      <tbody *ngIf="equipment.activeSkill">
+        <tr>
+          <th colspan="7">Skill</th>
+        </tr>
+        <tr>
+          <th>Level</th>
+          <th>Name</th>
+          <th>Effects</th>
+          <th>Range</th>
+          <th>Casts</th>
+          <th>Hits</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>
+            <select [(ngModel)]="equipment.skill[0].level" (ngModelChange)="changeSkillLevel()">
+              <option *ngFor="let level of equipment.skill[0].tableLevel">{{ level }}</option>
+            </select>
+          </td>
+          <td class="skillNameTd">
+            {{ equipment.skill[0].name }}
+            <span *ngIf="equipment.skill[0].based">
+              <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skill[0].based + '.png'}}" />
+            </span>
+            <div *ngIf="equipment.skill[0].time && equipment.skill[0].time.minValue">
+              <ng-template #tip_time>
+                <div>
+                  Min time: {{ equipment.skill[0].time.minValue }}<br />
+                  Max time: {{ equipment.skill[0].time.maxValue }}
+                </div>
+              </ng-template>
+              <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+            </div>
+          </td>
+          <td class="skillEffectTd">
+            <div>{{ equipment.skill[0].counterHtml }}</div>
+            <div>{{ equipment.skill[0].damageHtml }}</div>
+            <div *ngFor="let effect of equipment.skill[0].effects">
+              {{ effect.formatHtml }}
+            </div>
+          </td>
+          <td class="rangeTd">
+            <ng-template #tip_table><div [innerHTML]="equipment.skill[0].skillTableHtml"></div></ng-template>
+            <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+              <div class="divSkillTableHtml" [innerHTML]="equipment.skill[0].skillTableHtml"></div>
+            </div>
+          </td>
+          <td class="skillCastTd">
+            {{ equipment.skill[0].count }}
+          </td>
+          <td class="skillHitTd">
+            <span *ngIf="equipment.skill[0].combo">{{ equipment.skill[0].combo.num }}</span>
+          </td>
+          <td class="skillCostTd">
+            <span *ngIf="equipment.skill[0].cost">{{ equipment.skill[0].cost.value }} {{ equipment.skill[0].cost.type }}</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody  *ngIf="equipment.passiveSkills.length > 0">
+        <tr>
+          <th colspan="6">Effects</th>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <div *ngFor="let skill of equipment.passiveSkills">
+              <div *ngFor="let effect of skill.effects">
+                {{ effect.formatHtml }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>

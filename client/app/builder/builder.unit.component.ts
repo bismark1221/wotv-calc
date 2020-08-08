@@ -470,10 +470,16 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.unit = this.unit;
     modalRef.componentInstance.equipmentPos = pos
 
-    modalRef.result.then((result) => {
-      if (result) {
-        this.selectedEquipmentsIds[pos] = result
-        this.selectEquipment(pos)
+    modalRef.result.then((equipment) => {
+      if (equipment) {
+        this.selectedEquipmentsIds[pos] = equipment.dataId
+        this.selectedEquipments[pos] = equipment
+
+        this.addEquipmentToUnit(pos)
+
+        for (let i = 0; i <= 2; i++) {
+          this.getAvailableEquipments(i)
+        }
       }
     }, (reason) => {
     });
