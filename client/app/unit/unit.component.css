@@ -65,8 +65,9 @@
 }
 
 .unitImg {
-  height: 250px;
+  max-height: 250px;
   margin-top: 10px;
+  max-width: 330px;
 }
 
 .mainJob {

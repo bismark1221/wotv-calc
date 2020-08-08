@@ -25,6 +25,7 @@ export class Equipment {
   grows;
   equippableJobs;
   equippableUnits;
+  materials;
 
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
@@ -41,6 +42,7 @@ export class Equipment {
     this.grows = equipment.grows
     this.equippableJobs = equipment.equippableJobs;
     this.equippableUnits = equipment.equippableUnits;
+    this.materials = equipment.materials;
   }
 
   getName(translateService: TranslateService): string {

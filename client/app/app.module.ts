@@ -68,6 +68,7 @@ import { NameService } from './services/name.service';
 import { ThemeService } from './services/theme.service';
 import { RaidService } from './services/raid.service';
 import { TeamService } from './services/team.service';
+import { ItemService } from './services/item.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 
@@ -148,6 +149,7 @@ export function createTranslateLoader(http: HttpClient) {
     ThemeService,
     RaidService,
     TeamService,
+    ItemService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

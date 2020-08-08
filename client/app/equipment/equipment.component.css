@@ -1,8 +1,33 @@
-.row {
+.tab-content {
   width: 1200px;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 10px;
+  padding-top: 70px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background-color: #F4F5F9;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  height: 100%;
+  padding-top: 15px;
+  color: var(--th-background);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid var(--th-background);
+  background-color: #F4F5F9;
 }
 
 .leftBlock {
@@ -79,4 +104,19 @@
 .unit {
   height: 100px;
   margin-right: 5px;
+}
+
+.materialImg {
+  height: 51px;
+}
+
+.recipe {
+  height: 50px;
+  background: url("assets/items/recipe.png") 0px 0px no-repeat;
+  background-size: 50px;
+  padding: 5px;
+}
+
+.materialCount {
+  font-weight: 600;
 }
