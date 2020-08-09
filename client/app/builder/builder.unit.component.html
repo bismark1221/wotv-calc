@@ -164,7 +164,7 @@
               <div *ngIf="!unit.equipments || !unit.equipments[0]" (click)="openEquipmentsModal(0)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
-              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[0], 'btn-disable': !unit.equipments || !unit.equipments[0]}" (click)="unit && unit.equipments && unit.equipments[0] ? showEquipmentDetail(0) : false">Custom</button>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[0], 'btn-disable': !unit.equipments || !unit.equipments[0]}" (click)="openEquipmentsModal(0)">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
@@ -175,7 +175,7 @@
               <div *ngIf="!unit.equipments || !unit.equipments[1]" (click)="openEquipmentsModal(1)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
-              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[1], 'btn-disable': !unit.equipments || !unit.equipments[1]}" (click)="unit && unit.equipments && unit.equipments[1] ? showEquipmentDetail(1) : false">Custom</button>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[1], 'btn-disable': !unit.equipments || !unit.equipments[1]}" (click)="openEquipmentsModal(1)">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && (unit.lb < 2 || !unit.lb)">
@@ -192,7 +192,7 @@
               <div *ngIf="!unit.equipments || !unit.equipments[2]" (click)="openEquipmentsModal(2)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
               </div>
-              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[2], 'btn-disable': !unit.equipments || !unit.equipments[2]}" (click)="unit && unit.equipments && unit.equipments[2] ? showEquipmentDetail(2) : false">Custom</button>
+              <button class="btn btn-equipment" [ngClass]="{'btn-available': unit && unit.equipments && unit.equipments[2], 'btn-disable': !unit.equipments || !unit.equipments[2]}" (click)="openEquipmentsModal(2)">Custom</button>
             </div>
 
             <div class="equipmentDiv" *ngIf="unit && (unit.lb < 4 || !unit.lb)">

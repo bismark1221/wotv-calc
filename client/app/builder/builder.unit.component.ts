@@ -439,19 +439,6 @@ export class BuilderUnitComponent implements OnInit {
     });
   }
 
-  showEquipmentDetail(position) {
-    const modalRef = this.modalService.open(BuilderEquipmentComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.equipment = this.unit.equipments[position];
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.unitService.changeLevel()
-    }, (reason) => {
-      this.unitService.changeLevel()
-    });
-  }
-
   showGuildDetail() {
     const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
 
@@ -469,6 +456,11 @@ export class BuilderUnitComponent implements OnInit {
     const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
     modalRef.componentInstance.unit = this.unit;
     modalRef.componentInstance.equipmentPos = pos
+
+    if (this.selectedEquipmentsIds[pos]) {
+      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]))
+      modalRef.componentInstance.modalStep = "custom"
+    }
 
     modalRef.result.then((equipment) => {
       if (equipment) {

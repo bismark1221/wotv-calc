@@ -51,15 +51,6 @@
   margin-right: 10px;
 }
 
-.rightBlock {
-  vertical-align: top;
-  display: inline-block;
-  width: 900px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
 .upperBlock {
   padding-right: 10px;
 }
@@ -191,4 +182,91 @@
   border: 1px solid #E8E6DF;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+
+/* Specific for custom */
+.backButtonDiv, .customDiv {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.btn-back {
+  color: #fff;
+  background-color: #6D757D;
+  border-color: #6D757D;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.btn-back i {
+  margin-right: 10px;
+}
+
+.customDiv {
+  margin-bottom: 10px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 200px;
+}
+
+.leftBlock .equipmentsCol:hover {
+  box-shadow: 0;
+  background-color: var(--card-background)
+}
+
+.upgradeTypeDiv {
+  padding-left: 5px;
+}
+
+.upgradeTypeDiv div {
+  margin-bottom: 5px;
+}
+
+.titleSelect {
+  width: 70px;
+  display: inline-block;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.btn-select {
+  background: #F5F6F8;
+  border-radius: 2px;
+  color: #000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 50px;
+}
+
+.btn-select-grow {
+  width: 100px;
+}
+
+.btn-save {
+  color: #fff;
+  background-color: #157FFB;
+  border-color: #157FFB;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.rightBlock {
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  margin: auto;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
 }

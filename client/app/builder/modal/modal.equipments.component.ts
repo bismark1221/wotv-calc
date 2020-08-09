@@ -13,7 +13,6 @@ import { NameService } from '../../services/name.service';
 })
 export class ModalEquipmentsComponent implements OnInit {
   equipments;
-  equipment
 
   searchText = "";
   filters = {
@@ -24,6 +23,7 @@ export class ModalEquipmentsComponent implements OnInit {
   @Input() public unit;
   @Input() public equipmentPos;
   @Input() public modalStep = "select";
+  @Input() public equipment
 
   constructor(
     private equipmentService: EquipmentService,
@@ -42,7 +42,9 @@ export class ModalEquipmentsComponent implements OnInit {
 
   getEquipments() {
     this.equipments = this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService)
-    this.translateEquipments();
+    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters)
+    this.getFilteredEquipments()
+    this.translateEquipments()
   }
 
   private translateEquipments() {
@@ -94,11 +96,13 @@ export class ModalEquipmentsComponent implements OnInit {
     this.modalStep = "custom"
   }
 
-  changeUpgrade() {
+  selectUpgrade(upgrade) {
+    this.equipment.upgrade = upgrade
     this.equipmentService.changeUpgrade(this.equipment)
   }
 
-  changeGrow() {
+  selectGrow(grow) {
+    this.equipment.grow = grow
     this.equipmentService.changeGrow(this.equipment)
   }
 
