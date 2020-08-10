@@ -18,14 +18,8 @@
       </div>
       <div class="filtersBlock">
         Filter by :
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
-          <img class="filterRarity" src="assets/rarity/UR.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
-          <img class="filterRarity" src="assets/rarity/MR.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
-          <img class="filterRarity" src="assets/rarity/SR.png" />
+        <button *ngFor="let rarity of ['UR', 'MR', 'SR']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
         </button>
         <button *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('element', element)}" (click)="filterList('element', element)">
           <img src="assets/elements/{{element}}.png" />

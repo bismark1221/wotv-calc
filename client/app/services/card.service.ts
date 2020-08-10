@@ -189,7 +189,7 @@ export class CardService {
     return cards
   }
 
-  getCardsForListing(filters, sort, order = "asc") {
+  getCardsForListing(filters, sort = "rarity", order = "asc") {
     this.getCards();
     this.cards = this.filterCards(this.cards, filters);
 

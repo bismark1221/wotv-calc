@@ -226,23 +226,14 @@
 
             <div class="esparCardDiv">
               Vision Card
-              <ng-select [items]="cards"
-                         bindLabel="name"
-                         bindValue="id"
-                         groupBy="rarity"
-                         placeholder="Cards"
-                         [(ngModel)]="selectedCardId"
-                         (ngModelChange)="selectCard()"
-                         class="selectCard">
-              </ng-select>
-
-              <div *ngIf="card">
-                <img src="{{'assets/cards/' + card.image + '_m.png'}}" class="cardImg"/>
-                <button class="btn btn-available btn-card" (click)="showCardDetail()">Custom</button>
+              <div *ngIf="unit.card">
+                <img src="{{'assets/cards/' + unit.card.image + '_m.png'}}" class="cardImg" (click)="openCardsModal()"/>
+                <button class="btn btn-available btn-card" (click)="openCardsModal()">Custom</button>
               </div>
 
-              <div *ngIf="!card">
-                <img src="{{'assets/builder/no_card.png'}}" class="cardImg"/>
+              <div *ngIf="!unit.card">
+                <img src="{{'assets/builder/no_card.png'}}" class="cardImg" (click)="openCardsModal()"/>
+                <button class="btn btn-disable btn-card" (click)="openCardsModal()">Custom</button>
               </div>
             </div>
           </td>

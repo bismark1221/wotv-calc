@@ -18,29 +18,11 @@
       </div>
       <div class="filtersBlock">
         Filter by :
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
-          <img class="filterRarity" src="assets/rarity/UR.png" />
+        <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
+          <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
         </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
-          <img class="filterRarity" src="assets/rarity/MR.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
-          <img class="filterRarity" src="assets/rarity/SR.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'R')}" (click)="filterList('rarity', 'R')">
-          <img class="filterRarity" src="assets/rarity/R.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'N')}" (click)="filterList('rarity', 'N')">
-          <img class="filterRarity" src="assets/rarity/N.png" />
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'weapon')}" (click)="filterList('category', 'weapon')">
-          Weapon
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'armor')}" (click)="filterList('category', 'armor')">
-          Armor
-        </button>
-        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', 'acc')}" (click)="filterList('category', 'acc')">
-          Accessory
+        <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
+          {{ category | titlecase }}
         </button>
       </div>
     </div>

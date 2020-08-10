@@ -20,6 +20,7 @@ import { BuilderGuildComponent } from './builder.guild.component';
 
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
+import { ModalCardsComponent } from './modal/modal.cards.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -32,10 +33,6 @@ export class BuilderUnitComponent implements OnInit {
   selectedUnitId = null
 
   statueNames
-
-  cards
-  card = null
-  selectedCardId = null
 
   showStatsDetail = false
   showBuffsDetail = false
@@ -134,13 +131,11 @@ export class BuilderUnitComponent implements OnInit {
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
-      this.getCards();
     });
   }
 
   ngOnInit(): void {
     this.getUnits();
-    this.getCards();
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
@@ -158,33 +153,6 @@ export class BuilderUnitComponent implements OnInit {
     this.units = [...this.units];
   }
 
-  private getCards() {
-    this.cards = this.cardService.getCardsForBuilder();
-    this.cards = [...this.cards];
-  }
-
-  private addCardToUnit() {
-    if (this.unit) {
-      this.unit.card = null
-
-      if (this.card) {
-        this.unit.card = this.card
-      }
-
-      this.unitService.changeLevel()
-    }
-  }
-
-  private loadCard() {
-    if (this.unit.card && this.unit.card.level) {
-      this.selectedCardId = this.unit.card.dataId
-      this.card = this.unit.card
-    } else {
-      this.selectedCardId = null
-      this.selectCard()
-    }
-  }
-
   private loadGuild() {
     this.unit.guild = this.guildService.getGuildForBuilder()
 
@@ -200,22 +168,11 @@ export class BuilderUnitComponent implements OnInit {
     if (this.selectedUnitId) {
       this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
 
-      this.loadCard()
       this.loadGuild()
       this.unitService.getActiveSkills()
     } else {
       this.unit = null
     }
-  }
-
-  selectCard(customData = null) {
-    if (this.selectedCardId) {
-      this.card = this.cardService.selectCardForBuilder(this.selectedCardId, customData)
-    } else {
-      this.card = null
-    }
-
-    this.addCardToUnit()
   }
 
   changeStar(value) {
@@ -305,19 +262,6 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.getActiveSkills()
   }
 
-  showCardDetail() {
-    const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.card = this.unit.card;
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.unitService.changeLevel()
-    }, (reason) => {
-      this.unitService.changeLevel()
-    });
-  }
-
   showGuildDetail() {
     const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
 
@@ -362,6 +306,24 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.result.then((esper) => {
       if (esper) {
         this.unit.esper = esper
+
+        this.unitService.changeLevel()
+      }
+    }, (reason) => {
+    });
+  }
+
+  openCardsModal() {
+    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
+
+    if (this.unit.card) {
+      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card))
+      modalRef.componentInstance.modalStep = "custom"
+    }
+
+    modalRef.result.then((card) => {
+      if (card) {
+        this.unit.card = card
 
         this.unitService.changeLevel()
       }

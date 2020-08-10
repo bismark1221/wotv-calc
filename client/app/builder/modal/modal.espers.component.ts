@@ -78,7 +78,6 @@ export class ModalEspersComponent implements OnInit {
   ngOnInit() {
     this.getEspers();
 
-    console.log(this.esper)
     if (this.esper) {
       this.changeLevel()
     }
@@ -148,7 +147,12 @@ export class ModalEspersComponent implements OnInit {
     this.esperService.changeStar(this.esper)
   }
 
-  changeLevel() {
+  changeLevel () {
+    this.esperService.changeLevel(this.esper)
+  }
+
+  selectLevel(level) {
+    this.esper.level = level
     this.esperService.changeLevel(this.esper)
   }
 
