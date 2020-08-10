@@ -290,7 +290,7 @@ export class UnitService {
     return units
   }
 
-  getUnitsForListing(filters, sort, order = "asc") {
+  getUnitsForListing(filters = null, sort = "rarity", order = "asc") {
     this.getUnits();
     this.units = this.filterUnits(this.units, filters);
 

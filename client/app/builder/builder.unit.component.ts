@@ -12,6 +12,7 @@ import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service'
+import { NameService } from '../services/name.service'
 
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
@@ -29,6 +30,7 @@ import { ModalCardsComponent } from './modal/modal.cards.component';
 })
 export class BuilderUnitComponent implements OnInit {
   units
+  filteredUnits
   unit = null
   selectedUnitId = null
 
@@ -116,6 +118,7 @@ export class BuilderUnitComponent implements OnInit {
   ]
 
   exportableLink = ""
+  searchText = ""
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -127,7 +130,8 @@ export class BuilderUnitComponent implements OnInit {
     private equipmentService: EquipmentService,
     private modalService: NgbModal,
     private navService: NavService,
-    private clipboardService: ClipboardService
+    private clipboardService: ClipboardService,
+    private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -142,15 +146,46 @@ export class BuilderUnitComponent implements OnInit {
       if (data) {
         data = JSON.parse(atob(params.get('data')))
 
-        this.selectedUnitId = data.dataId
-        this.selectUnit(data)
+        this.selectUnit(data.dataId, data)
       }
     });
   }
 
   private getUnits() {
-    this.units = this.unitService.getUnitsForBuilder();
-    this.units = [...this.units];
+    this.units = this.formatUnits(this.unitService.getUnitsForListing())
+    this.updateFilteredUnits()
+    this.translateUnits();
+  }
+
+  private translateUnits() {
+    Object.keys(this.units).forEach(rarity => {
+      this.units[rarity].forEach(unit => {
+        unit.name = this.nameService.getName(unit)
+      })
+    });
+  }
+
+  private formatUnits(units) {
+    let formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    units.forEach(unit => {
+      formattedUnits[unit.rarity].push(unit)
+    })
+
+    return formattedUnits
+  }
+
+  updateFilteredUnits() {
+    let text = this.searchText.toLowerCase();
+    this.filteredUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    Object.keys(this.units).forEach(rarity => {
+      this.filteredUnits[rarity] = this.units[rarity].filter(unit => {
+        return unit.name.toLowerCase().includes(text);
+      })
+    })
+
+
   }
 
   private loadGuild() {
@@ -164,9 +199,9 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.changeLevel()
   }
 
-  selectUnit(customData = null) {
-    if (this.selectedUnitId) {
-      this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
+  selectUnit(dataId, customData = null) {
+    if (dataId) {
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
 
       this.loadGuild()
       this.unitService.getActiveSkills()

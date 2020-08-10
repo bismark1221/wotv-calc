@@ -4,6 +4,44 @@
   margin-bottom: 20px;
 }
 
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1000px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.rarityBlock {
+  width: 100%;
+}
+
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+}
+
+.unitBlock {
+  border: 2px solid #E8E6DF;
+}
+
+
+
+
+
+
+
 .leftBlock {
   width: 250px;
   margin-right: 20px;
@@ -290,8 +328,6 @@
   width: 70px;
   margin: auto;
 }
-
-
 
 
 

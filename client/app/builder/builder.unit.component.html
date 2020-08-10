@@ -1,32 +1,39 @@
+<ng-template #builderLink let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
+  <button (click)="copyLink()">Copy</button>
+</ng-template>
+
 <div class="row">
-  <div style="width: 100%;">
-    <ng-select [items]="units"
-               bindLabel="name"
-               bindValue="id"
-               groupBy="rarity"
-               placeholder="Units"
-               [(ngModel)]="selectedUnitId"
-               (ngModelChange)="selectUnit()">
-    </ng-select>
+  <div class="searchBlock">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()">
   </div>
 
-  <ng-template #builderLink let-modal>
-    <div>
-      <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-        <span aria-hidden="true">&times;</span>
-      </button>
+  <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+    <div class="rarityLine" *ngIf="!unit && filteredUnits[rarity].length > 0">
+      {{ rarity }}
     </div>
-    <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
-    <button (click)="copyLink()">Copy</button>
-  </ng-template>
+    <div class="unitBlock" *ngIf="!unit && filteredUnits[rarity].length > 0">
+      <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index" (click)="selectUnit(filteredUnit.dataId)">
+        {{ filteredUnit.name }}
 
-  <div *ngIf="unit"  style="width: 100%;">
+        <hr *ngIf="j != filteredUnits[rarity].length"/>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="unit" style="width: 100%;">
     <button (click)="save()">SAVE</button>
     <button (click)="openLinkModal(builderLink)">Get Build Link</button>
   </div>
 
-  <div class="leftBlock">
-    <table *ngIf="unit">
+  <div class="leftBlock" *ngIf="unit">
+    <table>
       <tbody>
         <tr>
           <th>{{ unit.name }}</th>
