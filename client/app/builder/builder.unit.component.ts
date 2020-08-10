@@ -19,6 +19,7 @@ import { BuilderEquipmentComponent } from './builder.equipment.component';
 import { BuilderGuildComponent } from './builder.guild.component';
 
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
+import { ModalEspersComponent } from './modal/modal.espers.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -32,17 +33,9 @@ export class BuilderUnitComponent implements OnInit {
 
   statueNames
 
-  espers
-  esper = null
-  selectedEsperId = null
-
   cards
   card = null
   selectedCardId = null
-
-  equipments = [[], [], []]
-  selectedEquipments = [null, null, null]
-  selectedEquipmentsIds = [null, null, null]
 
   showStatsDetail = false
   showBuffsDetail = false
@@ -141,14 +134,12 @@ export class BuilderUnitComponent implements OnInit {
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
-      this.getEspers();
       this.getCards();
     });
   }
 
   ngOnInit(): void {
     this.getUnits();
-    this.getEspers();
     this.getCards();
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -172,28 +163,6 @@ export class BuilderUnitComponent implements OnInit {
     this.cards = [...this.cards];
   }
 
-  private getEspers() {
-    this.espers = this.esperService.getEspersForBuilder();
-    this.espers = [...this.espers];
-  }
-
-  getAvailableEquipments(pos) {
-    this.equipments[pos] = this.unitService.getAvailableEquipments(pos);
-    this.equipments[pos] = [...this.equipments[pos]];
-  }
-
-  private addEsperToUnit() {
-    if (this.unit) {
-      this.unit.esper = null
-
-      if (this.esper) {
-        this.unit.esper = this.esper
-      }
-
-      this.unitService.changeLevel()
-    }
-  }
-
   private addCardToUnit() {
     if (this.unit) {
       this.unit.card = null
@@ -206,31 +175,6 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
-  private addEquipmentToUnit(pos) {
-    if (this.unit) {
-      if (!this.unit.equipments) {
-        this.unit.equipments = [null, null, null]
-      }
-      this.unit.equipments[pos] = null
-
-      if (this.selectedEquipments[pos]) {
-        this.unit.equipments[pos] = this.selectedEquipments[pos]
-      }
-
-      this.unitService.changeLevel()
-    }
-  }
-
-  private loadEsper() {
-    if (this.unit.esper && this.unit.esper.level) {
-      this.selectedEsperId = this.unit.esper.dataId
-      this.esper = this.unit.esper
-    } else {
-      this.selectedEsperId = null
-      this.selectEsper()
-    }
-  }
-
   private loadCard() {
     if (this.unit.card && this.unit.card.level) {
       this.selectedCardId = this.unit.card.dataId
@@ -238,23 +182,6 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.selectedCardId = null
       this.selectCard()
-    }
-  }
-
-  private loadEquipments() {
-    for (let i = 0; i <= 2; i++) {
-      if (this.unit.equipments && this.unit.equipments[i] && this.unit.equipments[i].level) {
-        this.selectedEquipmentsIds[i] = this.unit.equipments[i].dataId
-        this.selectedEquipments[i] = this.unit.equipments[i]
-      } else {
-        this.selectedEquipmentsIds[i] = null
-        this.selectedEquipments[i] = null
-        this.selectEquipment(i)
-      }
-    }
-
-    for (let i = 0; i <= 2; i++) {
-      this.getAvailableEquipments(i)
     }
   }
 
@@ -273,24 +200,12 @@ export class BuilderUnitComponent implements OnInit {
     if (this.selectedUnitId) {
       this.unit = this.unitService.selectUnitForBuilder(this.selectedUnitId, customData)
 
-      this.loadEsper()
       this.loadCard()
-      this.loadEquipments()
       this.loadGuild()
       this.unitService.getActiveSkills()
     } else {
       this.unit = null
     }
-  }
-
-  selectEsper(customData = null) {
-    if (this.selectedEsperId) {
-      this.esper = this.esperService.selectEsperForBuilder(this.selectedEsperId, customData)
-    } else {
-      this.esper = null
-    }
-
-    this.addEsperToUnit()
   }
 
   selectCard(customData = null) {
@@ -301,20 +216,6 @@ export class BuilderUnitComponent implements OnInit {
     }
 
     this.addCardToUnit()
-  }
-
-  selectEquipment(pos, customData = null) {
-    if (this.selectedEquipmentsIds[pos]) {
-      this.selectedEquipments[pos] = this.equipmentService.selectEquipmentForBuilder(this.selectedEquipmentsIds[pos], customData)
-    } else {
-      this.selectedEquipments[pos] = null
-    }
-
-    this.addEquipmentToUnit(pos)
-
-    for (let i = 0; i <= 2; i++) {
-      this.getAvailableEquipments(i)
-    }
   }
 
   changeStar(value) {
@@ -336,29 +237,21 @@ export class BuilderUnitComponent implements OnInit {
 
   updateSelectedEquipments() {
     if (this.unit.lb < 4) {
-      if (this.selectedEquipmentsIds[2]) {
-        this.selectedEquipmentsIds[2] = null;
-        this.selectEquipment(2)
+      if (this.unit.equipments[2]) {
+        this.unit.equipments[2] = null;
       }
 
-      if (this.selectedEquipmentsIds[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === "tmr") {
-        this.selectedEquipmentsIds[1] = null;
-        this.selectEquipment(1)
+      if (this.unit.equipments[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === "tmr") {
+        this.unit.equipments[1] = null;
       }
 
-      if (this.selectedEquipmentsIds[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === "tmr") {
-        this.selectedEquipmentsIds[0] = null;
-        this.selectEquipment(0)
+      if (this.unit.equipments[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === "tmr") {
+        this.unit.equipments[0] = null;
       }
     }
 
-    if (this.unit.lb < 2 && this.selectedEquipmentsIds[1]) {
-      this.selectedEquipmentsIds[1] = null;
-      this.selectEquipment(1)
-    }
-
-    for (let i = 0; i <= 2; i++) {
-      this.getAvailableEquipments(i)
+    if (this.unit.lb < 2 && this.unit.equipments[1]) {
+      this.unit.equipments[1] = null;
     }
   }
 
@@ -404,26 +297,12 @@ export class BuilderUnitComponent implements OnInit {
 
   maxUnit() {
     this.unitService.maxUnit()
-    this.updateSelectedEquipments()
     this.unitService.getActiveSkills()
   }
 
   maxLevelAndJobs() {
     this.unitService.maxLevelAndJobs()
     this.unitService.getActiveSkills()
-  }
-
-  showEsperDetail() {
-    const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.esper = this.unit.esper;
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.unitService.changeLevel()
-    }, (reason) => {
-      this.unitService.changeLevel()
-    });
   }
 
   showCardDetail() {
@@ -457,21 +336,34 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.unit = this.unit;
     modalRef.componentInstance.equipmentPos = pos
 
-    if (this.selectedEquipmentsIds[pos]) {
+    if (this.unit.equipments[pos]) {
       modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]))
       modalRef.componentInstance.modalStep = "custom"
     }
 
     modalRef.result.then((equipment) => {
       if (equipment) {
-        this.selectedEquipmentsIds[pos] = equipment.dataId
-        this.selectedEquipments[pos] = equipment
+        this.unit.equipments[pos] = equipment
 
-        this.addEquipmentToUnit(pos)
+        this.unitService.changeLevel()
+      }
+    }, (reason) => {
+    });
+  }
 
-        for (let i = 0; i <= 2; i++) {
-          this.getAvailableEquipments(i)
-        }
+  openEspersModal() {
+    const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
+
+    if (this.unit.esper) {
+      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.unit.esper))
+      modalRef.componentInstance.modalStep = "custom"
+    }
+
+    modalRef.result.then((esper) => {
+      if (esper) {
+        this.unit.esper = esper
+
+        this.unitService.changeLevel()
       }
     }, (reason) => {
     });

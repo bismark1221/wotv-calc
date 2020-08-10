@@ -209,27 +209,18 @@
           <td>
             <div class="esparCardDiv">
               Esper
-              <ng-select [items]="espers"
-                         bindLabel="name"
-                         bindValue="id"
-                         groupBy="rarity"
-                         placeholder="Espers"
-                         [(ngModel)]="selectedEsperId"
-                         (ngModelChange)="selectEsper()"
-                         class="selectEsper">
-              </ng-select>
-
-              <div *ngIf="esper">
-                <img src="{{'assets/units/' + esper.image + '_m.png'}}" class="esperImg"/>
+              <div *ngIf="unit.esper">
+                <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" (click)="openEspersModal()"/>
                 Reso
-                <select [(ngModel)]="esper.resonance" (ngModelChange)="changeLevel()">
+                <select [(ngModel)]="unit.esper.resonance" (ngModelChange)="changeLevel()">
                   <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ i }}</option>
                 </select><br />
-                <button class="btn btn-available btn-esper" (click)="showEsperDetail()">Custom</button>
+                <button class="btn btn-available btn-esper" (click)="openEspersModal()">Custom</button>
               </div>
 
-              <div *ngIf="!esper">
-                <img src="{{'assets/builder/no_esper.png'}}" class="esperImg"/>
+              <div *ngIf="!unit.esper">
+                <img src="{{'assets/builder/no_esper.png'}}" class="esperImg" (click)="openEspersModal()"/>
+                <button class="btn btn-disable btn-esper" (click)="openEspersModal()">Custom</button>
               </div>
             </div>
 
@@ -628,7 +619,7 @@
         </li>
       </ul>
 
-      <div [innerHTML]="unit.grid.lines"></div>
+      <div [innerHTML]="unit.grid.lines | safeHtml"></div>
     </div>
   </div>
 </div>

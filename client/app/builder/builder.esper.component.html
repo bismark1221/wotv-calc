@@ -118,6 +118,6 @@
       </li>
     </ul>
 
-    <div [innerHTML]="esper.grid.lines"></div>
+    <div [innerHTML]="esper.grid.lines | safeHtml"></div>
   </div>
 </div>

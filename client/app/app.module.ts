@@ -53,6 +53,7 @@ import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
 
 import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
+import { ModalEspersComponent } from './builder/modal/modal.espers.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -71,6 +72,7 @@ import { TeamService } from './services/team.service';
 import { ItemService } from './services/item.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
+import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -97,6 +99,7 @@ export function createTranslateLoader(http: HttpClient) {
     RaidsComponent,
     RaidComponent,
     RoundDownPipe,
+    SafeHtmlPipe,
     BuilderComponent,
     BuilderUnitComponent,
     BuilderCardComponent,
@@ -104,7 +107,8 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderEquipmentComponent,
     BuilderGuildComponent,
     BuilderTeamComponent,
-    ModalEquipmentsComponent
+    ModalEquipmentsComponent,
+    ModalEspersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

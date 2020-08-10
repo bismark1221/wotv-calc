@@ -1,0 +1,196 @@
+<div *ngIf="modalStep == 'select'">
+  <div class="titleBlock">
+    <div class="title">
+      ESPERS
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="espers">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText">
+      </div>
+      <div class="filtersBlock">
+        Filter by :
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'UR')}" (click)="filterList('rarity', 'UR')">
+          <img class="filterRarity" src="assets/rarity/UR.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'MR')}" (click)="filterList('rarity', 'MR')">
+          <img class="filterRarity" src="assets/rarity/MR.png" />
+        </button>
+        <button class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', 'SR')}" (click)="filterList('rarity', 'SR')">
+          <img class="filterRarity" src="assets/rarity/SR.png" />
+        </button>
+        <button *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('element', element)}" (click)="filterList('element', element)">
+          <img src="assets/elements/{{element}}.png" />
+        </button>
+      </div>
+    </div>
+
+    <hr class="separator" />
+
+    <div class="espersList">
+      <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
+        <a (click)="selectEsper(esper)">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+          </div>
+          <div>
+            <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="esperName">{{ esper.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="modalStep == 'saved'">
+  <div class="titleBlock">
+    <div class="title">
+      Load esper ?
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="modalStep == 'custom'">
+  <div class="titleBlock">
+    <div class="title">
+      {{ esper.name }} - Custom
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="backButtonDiv">
+    <button class="btn btn-back" (click)="back()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Back to Espers</button>
+  </div>
+
+  <div class="customDiv">
+    <div class="leftBlock">
+      <div class="espersCol">
+        <div class="cardIcons">
+          <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
+          <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
+        </div>
+        <div>
+          <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
+        </div>
+        <div class="cardTitle">
+          <span class="esperName">{{ esper.name }}</span>
+        </div>
+      </div>
+
+      <div class="starLevelDiv">
+        <div>
+          <ngb-rating [(rate)]="esper.star" [max]="2">
+            <ng-template let-fill="fill" let-index="index">
+              <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+            </ng-template>
+          </ngb-rating>
+        </div>
+
+        <div>
+          <div class="titleSelect">
+            Level
+          </div>
+          <div ngbDropdown class="dropdownDiv">
+            <button class="btn btn-select" ngbDropdownToggle>{{ esper.level }}</button>
+            <div ngbDropdownMenu class="selectList">
+              <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem (click)="selectLevel(level)">{{ level }}</button>
+            </div> / {{ esper.maxLevel }}
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-available" (click)="maxEsper()">Max Esper</button>
+      <button class="btn btn-save" (click)="save()">SAVE</button>
+    </div>
+
+    <div class="rightBlock">
+      <table class="statsTable">
+        <tbody>
+          <tr>
+            <th colspan="13">Stats</th>
+          </tr>
+          <tr>
+            <th *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']" class="statTd sub">{{ type }}</th>
+          </tr>
+          <tr>
+            <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
+              {{ esper.stats[type].base }} / {{ esper.stats[type][1].max }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="statsTable">
+        <tbody>
+          <tr>
+            <th colspan="9">buffs</th>
+          </tr>
+        </tbody>
+        <tbody *ngFor="let line of esper.possibleBuffs">
+          <tr>
+            <th class="sub" *ngFor="let buffType of line">
+              <img *ngIf="buffsImage.indexOf(buffType.toLowerCase()) !== -1" class="buffImg" title="{{ buffType }}" src="{{ '/assets/buffs/' + buffType.toLowerCase() + '.png' }}">
+              <span *ngIf="buffsImage.indexOf(buffType.toLowerCase()) === -1">{{ buffType.replace("_", " ") }}</span>
+            </th>
+          </tr>
+          <tr>
+            <td *ngFor="let buffType of line">{{ esper.buffs[buffType].percent >= 0 ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType].total }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div *ngIf="esper && esper.grid">
+        <div class="countSPs">
+          SPs: {{ esper.usedSPs }} / {{ esper.maxSPs }}
+        </div>
+      </div>
+
+      <div *ngIf="esper && esper.grid">
+        <div class="builderEsperGridContainer" style="text-align: center;">
+          <ul class="hexGrid" oncontextmenu="return false;">
+            <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+              <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+
+              <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type == 'center'">
+                <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
+              </div>
+
+              <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type == 'text'"
+                   [ngClass]="{
+                     'activated': esper.board.nodes[node].activated,
+                     'buff': esper.board.nodes[node].type == 'buff',
+                     'notActivable': !canActivateNode(node)
+              }" >
+                <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>
+                <span class="cost">{{ esper.board.nodes[node].skill.sp }} SP</span>
+              </div>
+            </li>
+          </ul>
+
+          <div [innerHTML]="esper.grid.lines | safeHtml"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

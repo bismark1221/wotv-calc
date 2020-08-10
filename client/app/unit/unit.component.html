@@ -700,7 +700,7 @@
             </li>
           </ul>
 
-          <div [innerHTML]="grid.lines"></div>
+          <div [innerHTML]="grid.lines | safeHtml"></div>
         </div>
       </div>
     </ng-template>

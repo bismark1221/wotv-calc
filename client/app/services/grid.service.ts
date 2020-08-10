@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser'
 import { TranslateService } from '@ngx-translate/core';
 
 import { SkillService } from './skill.service'
@@ -394,7 +393,6 @@ export class GridService {
   ]
 
   constructor(
-    private sanitizer: DomSanitizer,
     private skillService: SkillService,
     private translateService: TranslateService,
     private nameService: NameService
@@ -435,7 +433,7 @@ export class GridService {
     this.generateNodesHierachy(esper)
 
     return {
-      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml),
+      lines: linesHtml,
       nodesForGrid: nodesForGrid,
       gridNodes: this.gridNodes
     }
@@ -484,7 +482,7 @@ export class GridService {
     this.generateNodesHierachy(unit)
 
     return {
-      lines: this.sanitizer.bypassSecurityTrustHtml(linesHtml),
+      lines: linesHtml,
       nodesForGrid: nodesForGrid,
       gridNodes: this.gridNodes
     }

@@ -272,7 +272,7 @@ export class EsperService {
     return espers
   }
 
-  getEspersForListing(filters, sort, order = "asc") {
+  getEspersForListing(filters, sort = "rarity", order = "asc") {
     this.getEspers();
     this.espers = this.filterEspers(this.espers, filters);
 
