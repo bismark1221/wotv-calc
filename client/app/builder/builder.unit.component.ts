@@ -76,6 +76,14 @@ export class BuilderUnitComponent implements OnInit {
     {type: "totalEquipment", translate: "Total Equipement"}
   ]
 
+  rarityTranslate = {
+    UR: "Ultra Rare",
+    MR: "Mega Rare",
+    SR: "Super Rare",
+    R: "Rare",
+    N: "Normal"
+  }
+
   buffsImage = [
     "dark_atk",
     "dark_killer",
@@ -202,11 +210,13 @@ export class BuilderUnitComponent implements OnInit {
   selectUnit(dataId, customData = null) {
     if (dataId) {
       this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
+      this.searchText = this.unit.name
 
       this.loadGuild()
       this.unitService.getActiveSkills()
     } else {
       this.unit = null
+      this.searchText = ""
     }
   }
 

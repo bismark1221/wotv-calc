@@ -14,12 +14,17 @@
 .searchInput {
   background: none;
   border: 0;
-  width: 1000px;
+  width: 1250px;
 }
 
 .fa-search {
   padding-right: 8px;
   color: #000;
+}
+
+.fa-close {
+  color: #000;
+  cursor: pointer;
 }
 
 .rarityBlock {
@@ -30,14 +35,58 @@
   padding: 5px;
   background: #E8E6DF;
   color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
 }
 
 .unitBlock {
-  border: 2px solid #E8E6DF;
+  border-left: 2px solid #E8E6DF;
+  border-right: 2px solid #E8E6DF;
+  border-bottom: 2px solid #E8E6DF;
+  padding-left: 10px;
 }
 
+.unitLine {
+  padding-top: 10px;
+  cursor: pointer;
+}
 
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
 
+.unitLogo img {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.unitName {
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 1276px;
+}
 
 
 

@@ -74,6 +74,7 @@ import { ItemService } from './services/item.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
+import { HighlightSearchPipe } from './pipes/highlightSearch.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -101,6 +102,7 @@ export function createTranslateLoader(http: HttpClient) {
     RaidComponent,
     RoundDownPipe,
     SafeHtmlPipe,
+    HighlightSearchPipe,
     BuilderComponent,
     BuilderUnitComponent,
     BuilderCardComponent,

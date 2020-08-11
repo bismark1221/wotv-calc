@@ -556,3 +556,11 @@ small {
   color: rgba(29, 27, 27, 0.3);
   font-weight: 500;
 }
+
+.notHighlightSearch {
+  opacity: 0.5;
+}
+
+.highlightSearch {
+  opacity: 1;
+}

@@ -12,17 +12,20 @@
   <div class="searchBlock">
     <i class="fa fa-search" aria-hidden="true"></i>
     <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()">
+    <i class="fa fa-close" aria-hidden="true" (click)="selectUnit('')"></i>
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
     <div class="rarityLine" *ngIf="!unit && filteredUnits[rarity].length > 0">
-      {{ rarity }}
+      <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
     <div class="unitBlock" *ngIf="!unit && filteredUnits[rarity].length > 0">
       <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index" (click)="selectUnit(filteredUnit.dataId)">
-        {{ filteredUnit.name }}
-
-        <hr *ngIf="j != filteredUnits[rarity].length"/>
+        <div class="unitLogo">
+          <img src="assets/units/{{ filteredUnit.image }}_m.png" />
+        </div>
+        <div class="unitName" innerHTML="{{ filteredUnit.name | highlight: searchText }}"></div>
+        <hr *ngIf="j != filteredUnits[rarity].length - 1"/>
       </div>
     </div>
   </div>
