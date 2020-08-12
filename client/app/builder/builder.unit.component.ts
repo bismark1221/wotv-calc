@@ -217,6 +217,7 @@ export class BuilderUnitComponent implements OnInit {
     } else {
       this.unit = null
       this.searchText = ""
+      this.updateFilteredUnits()
     }
   }
 
