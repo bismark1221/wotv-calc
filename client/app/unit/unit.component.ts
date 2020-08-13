@@ -163,6 +163,14 @@ export class UnitComponent implements OnInit {
         i++
       })
 
+      Object.keys(this.unit.totalJobsStats).forEach(stat => {
+        this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat])
+        if (this.unit.totalJobsStats[stat] != (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
+          this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])
+        }
+
+      })
+
       this.grid = this.gridService.generateUnitGrid(this.unit, 800)
     }
   }
@@ -174,9 +182,9 @@ export class UnitComponent implements OnInit {
       stats[stat] = Math.floor(this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1))
 
       if (!subJob) {
-        this.unit.totalJobsStats[stat] = stats[stat]
+        this.unit.totalJobsStats[stat] = this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1)
       } else {
-        this.unit.totalJobsStats[stat] += stats[stat]
+        this.unit.totalJobsStats[stat] += this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1)
       }
     });
 

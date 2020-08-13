@@ -3618,7 +3618,7 @@
   "VC_LW_CBVPARTY1": {
     "dataId": "VC_LW_CBVPARTY1",
     "names": {
-      "en": "徒桜の宴"
+      "en": "徒桜の宴 - Fleeting Blossom Banquet"
     },
     "rarity": "UR",
     "stats": {
@@ -3678,7 +3678,7 @@
       "JUMP": {}
     },
     "image": "lapscbvp1",
-    "slug": "tu-yingno-yan",
+    "slug": "fleeting-blossom-banquet",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -3800,7 +3800,7 @@
   "VC_LW_DABL": {
     "dataId": "VC_LW_DABL",
     "names": {
-      "en": "夢幻魔人　ディアボロス"
+      "en": "夢幻魔人　ディアボロス - Dream Fiend, Diabolos"
     },
     "rarity": "UR",
     "stats": {
@@ -3860,7 +3860,7 @@
       "JUMP": {}
     },
     "image": "lapsdabl",
-    "slug": "meng-huan-mo-ren-deiaborosu",
+    "slug": "dream-fiend-diabolos",
     "partyBuffsClassic": {
       "unlockStar": null,
       "effects": [
@@ -5501,6 +5501,209 @@
         "en": "SK_VC_FF4_DMNW_PMAX"
       },
       "slug": "sk_vc_ff4_dmnw_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_LUCA": {
+    "dataId": "VC_LW_LUCA",
+    "names": {
+      "en": "新たな研究対象"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 272
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 42,
+        "max": 164
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 4,
+        "max": 12
+      },
+      "DEX": {
+        "min": 18,
+        "max": 70
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsluca",
+    "slug": "xintana-yan-jiu-dui-xiang",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 7,
+          "maxValue": 15,
+          "calcType": "fixe"
+        },
+        {
+          "type": "ATTACK_RES",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_GS"
+      },
+      "slug": "sk_vc_lw_luca_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "ATTACK_RES",
+          "minValue": 1,
+          "maxValue": 4,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_GS_AW"
+      },
+      "slug": "sk_vc_lw_luca_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MISSILE_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        },
+        {
+          "type": "ATTACK_RES",
+          "minValue": 3,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_GSMAX"
+      },
+      "slug": "sk_vc_lw_luca_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 10,
+          "maxValue": 20,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_P"
+      },
+      "slug": "sk_vc_lw_luca_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_PAW"
+      },
+      "slug": "sk_vc_lw_luca_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "ACQUIRED_AP",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "percent",
+          "increaseMax": true
+        }
+      ],
+      "dataId": "SK_VC_LW_LUCA_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_LUCA_PMAX"
+      },
+      "slug": "sk_vc_lw_luca_pmax",
       "maxLevel": 1
     }
   },
@@ -9575,6 +9778,150 @@
         "en": "SK_VC_LW_CHCB_PAW"
       },
       "slug": "sk_vc_lw_chcb_paw",
+      "maxLevel": 4
+    }
+  },
+  "VC_LW_FIGHT": {
+    "dataId": "VC_LW_FIGHT",
+    "names": {
+      "en": "激突"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 252
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 21,
+        "max": 84
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 11,
+        "max": 46
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 5,
+        "max": 16
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsfight",
+    "slug": "ji-tu",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 10,
+          "maxValue": 15,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_FIGHT_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FIGHT_GS"
+      },
+      "slug": "sk_vc_lw_fight_gs",
+      "maxLevel": 70
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_FIGHT_GSAW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FIGHT_GSAW"
+      },
+      "slug": "sk_vc_lw_fight_gsaw",
+      "maxLevel": 4
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CHARM_RES",
+          "minValue": 3,
+          "maxValue": 10,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_FIGHT_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FIGHT_P"
+      },
+      "slug": "sk_vc_lw_fight_p",
+      "maxLevel": 70
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "CHARM_RES",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "resistance"
+        }
+      ],
+      "dataId": "SK_VC_LW_FIGHT_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_FIGHT_PAW"
+      },
+      "slug": "sk_vc_lw_fight_paw",
       "maxLevel": 4
     }
   },

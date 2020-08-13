@@ -176,11 +176,21 @@ export class EquipmentComponent implements OnInit {
         this.equipment.materials.forEach((items, index) => {
           this.equipment.formattedMaterials.push([])
           Object.keys(items).forEach(itemId => {
-            let item = JSON.parse(JSON.stringify(this.itemService.getItem(itemId)))
+            let item = this.itemService.getItem(itemId)
 
-            item.image = item.dataId.toLowerCase()
-            item.count = items[itemId]
-            this.equipment.formattedMaterials[index].push(item)
+            if (item) {
+              item = JSON.parse(JSON.stringify(item))
+
+              item.image = item.dataId.toLowerCase()
+              item.count = items[itemId]
+              this.equipment.formattedMaterials[index].push(item)
+            } else {
+              this.equipment.formattedMaterials[index].push({
+                image: itemId.toLowerCase(),
+                count: items[itemId],
+                name: itemId
+              })
+            }
           })
         })
       }

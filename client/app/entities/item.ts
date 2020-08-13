@@ -6,6 +6,8 @@ export class Item {
   name = 'New Item'
   recipe = false
   //slug = 'new-item'
+  image
+  count
 
   constructFromJson(item: Item): void {
     this.dataId = item.dataId;

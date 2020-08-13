@@ -29865,41 +29865,25 @@
       "type": "Unknown"
     }
   },
-  "AF_LW_ACC_002": {
+  "AF_LOT_LW_ACC_002": {
     "names": {
       "en": "ソウルオブサマサ - Soul of Thamasa"
     },
     "slug": "soul-of-thamasa",
     "stats": {
       "HP": {
-        "min": 10,
-        "max": 196
+        "min": 12,
+        "max": 232
       },
       "TP": {
         "min": 2,
-        "max": 21
+        "max": 40
       },
-      "AP": {
-        "min": 1,
-        "max": 20
-      },
-      "DEF": {
-        "min": 1,
-        "max": 6
+      "MAG": {
+        "min": 6,
+        "max": 120
       },
       "SPR": {
-        "min": 1,
-        "max": 6
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 12
-      },
-      "EVADE": {
-        "min": 1,
-        "max": 9
-      },
-      "CRITIC_RATE": {
         "min": 1,
         "max": 12
       }
@@ -29907,19 +29891,609 @@
     "type": "ACC",
     "dataId": "AF_LW_ACC_002",
     "grows": {
-      "ARTIFACT_50": {
-        "dataId": "ARTIFACT_50",
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
         "names": {
-          "en": "ARTIFACT_50"
+          "en": "ヴァイタル"
         },
         "curve": {
-          "MAX_LV": 30
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
         },
-        "slug": "artifact_50"
+        "slug": "vuaitaru"
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "マジック"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "mazituku"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
       }
     },
     "skills": [
-      []
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_MAGIC_1",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性貫通率+1"
+          },
+          "dataId": "SK_LW_PIERCEMAGIC_1",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-guan-tong-lu-1",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_MAGIC_2",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性貫通率+2"
+          },
+          "dataId": "SK_LW_PIERCEMAGIC_2",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-guan-tong-lu-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_MAGIC_3",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性貫通率+4"
+          },
+          "dataId": "SK_LW_PIERCEMAGIC_3",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-guan-tong-lu-4",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+4"
+          },
+          "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-4",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性貫通率+6"
+          },
+          "dataId": "SK_LW_PIERCEMAGIC_4",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 6,
+              "maxValue": 6,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-guan-tong-lu-6",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_1",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+8"
+          },
+          "dataId": "SK_LW_DF_MAGIC_5_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-8",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性貫通率+10"
+          },
+          "dataId": "SK_LW_PIERCEMAGIC_5",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-nai-xing-guan-tong-lu-10",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソウルオブサマサ"
+          },
+          "dataId": "SK_LW_ACC_002_5",
+          "effects": [
+            {
+              "type": "SILENCE_RES",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "souruobusamasa",
+          "maxLevel": 30
+        }
+      ]
     ],
     "rarity": "UR",
     "image": "lapswpn_acc_002",
@@ -29971,7 +30545,54 @@
     ],
     "equippableUnits": [],
     "materials": [
-      {}
+      {
+        "IT_AF_LW_ACC_002": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_ZUUU": 10,
+        "IT_AF_MAT_SOIL_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_002": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_ZUUU": 30,
+        "IT_AF_MAT_SOIL_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_002": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_ZUUU": 70,
+        "IT_AF_MAT_SOIL_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_002": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_ZUUU": 150,
+        "IT_AF_MAT_SOIL_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_ACC_002": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_ZUUU": 310,
+        "IT_AF_MAT_SOIL_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_ACC_002": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_ZUUU": 630,
+        "IT_AF_MAT_SOIL_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
     ],
     "acquisition": {
       "type": "Unknown"

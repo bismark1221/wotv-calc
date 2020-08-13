@@ -783,10 +783,10 @@ export class SkillService {
         html = "Increase spirit penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "RES_SLASH_ATK_PENETRATION" :
-        html = "Increase slash attack penetration resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase slash attack resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "RES_MAGIC_ATK_PENETRATION" :
-        html = "Increase magic attack penetration resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase magic attack resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "AP_CONSUMPTION" :
         html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)

@@ -23,6 +23,14 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "12/08",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_DABL"},
+          {type: "card", dataId: "VC_LW_DABL"},
+          {type: "card", dataId: "VC_LW_CBVPARTY1"}
+        ]
+      },
+      {
         date: "05/08",
         items: [
           {type: "unit", dataId: "UN_LW_P_QILF"},
@@ -36,19 +44,17 @@ export class HomeComponent {
           {type: "esper", dataId: "UN_FF01_S_WRMC"},
           {type: "card", dataId: "VC_FF01_DMAC"}
         ]
-      },
-      {
-        date: "22/07",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_THDG"},
-          {type: "card", dataId: "VC_LW_THDG"},
-          {type: "card", dataId: "VC_LW_ADLD"},
-          {type: "card", dataId: "VC_LW_WHITEDAY1"},
-          {type: "card", dataId: "VC_LW_VNLA2"}
-        ]
       }
     ],
     JP: [
+      {
+        date: "08/07",
+        items: [
+          {type: "card", dataId: "VC_LW_LUCA"},
+          {type: "card", dataId: "VC_LW_FIGHT"},
+          {type: "equipment", dataId: "AF_LW_ACC_002"}
+        ]
+      },
       {
         date: "01/08",
         items: [
@@ -69,15 +75,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_GRSR2"},
           {type: "esper", dataId: "UN_LW_S_CHCB1"},
           {type: "card", dataId: "VC_LW_CHCB"},
-        ]
-      },
-      {
-        date: "08/07",
-        items: [
-          {type: "card", dataId: "VC_LW_GUREN"},
-          {type: "card", dataId: "VC_LW_AGON"},
-          {type: "esper", dataId: "UN_LW_S_AGON"},
-          {type: "equipment", dataId: "AF_FF14_HLM_001"}
         ]
       }
     ]
