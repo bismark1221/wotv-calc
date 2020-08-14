@@ -399,18 +399,6 @@ export class BuilderUnitComponent implements OnInit {
     this.clipboardService.copyFromContent(this.exportableLink)
   }
 
-  changeSubJob() {
-    this.unitService.getActiveSkills()
-  }
-
-  changeLimit() {
-    this.unitService.getActiveSkills()
-  }
-
-  changeCounter() {
-    this.unitService.getActiveSkills()
-  }
-
   getAvailableStatType() {
     let statTypes = this.unitService.getAvailableStatType()
 
@@ -425,6 +413,26 @@ export class BuilderUnitComponent implements OnInit {
     })
 
     return formattedAvailableStatType
+  }
+
+  selectLevel(level) {
+    this.unit.level = level
+    this.unitService.changeLevel()
+  }
+
+  selectMasterSkillLevel(level) {
+    this.unit.masterSkillActivated = level
+    this.unitService.changeLevel()
+  }
+
+  selectLimitLevel(level) {
+    this.unit.limit.level = level
+    this.unitService.getActiveSkills()
+  }
+
+  selectSubJob(jobNum) {
+    this.unit.subjob = jobNum
+    this.unitService.getActiveSkills()
   }
 
   selectSupportSkill(pos, nodeId) {
@@ -454,5 +462,17 @@ export class BuilderUnitComponent implements OnInit {
     }
 
     return skills;
+  }
+
+  resetUnit() {
+    this.unitService.resetUnit()
+  }
+
+  resetLevel() {
+    this.unitService.resetLevel()
+  }
+
+  resetJob() {
+    this.unitService.resetJob()
   }
 }

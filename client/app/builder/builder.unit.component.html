@@ -155,7 +155,7 @@
         </tr>
         <tr>
           <td class="subJobColumn">
-            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" (click)="changeSubJob(i)">
+            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" (click)="selectSubJob(i)">
               <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
               {{ unit.jobsData[i].name }}
             </div>
