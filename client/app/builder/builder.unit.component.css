@@ -382,24 +382,97 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.statsTable {
-  width: 1000px;
+.statsTable, .skillsTable {
+  width: 100%;
 }
+
+.btn-detail {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.buffsTable, .imbueTable, .skillsBlock {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skillTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.skillSubTitle {
+  width: 100%;
+  height: 33px;
+  color: var(--black);
+  background-color: var(--sub-th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid var(--table-border);
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  cursor: pointer;
+}
+
+.skillSubTitle .fa {
+  float: right;
+}
+
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.treeTitle {
+  margin-top: 20px;
+  width: 100%;
+  height: 33px;
+  color: var(--white);
+  background-color: var(--th-background);
+  text-align: center;
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--table-border);
+  font-weight: bold;
+}
+
+.builderUnitGridContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
 
 .unitsCol {
   width: 200px;

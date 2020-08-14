@@ -38,7 +38,10 @@ export class BuilderUnitComponent implements OnInit {
 
   showStatsDetail = false
   showBuffsDetail = false
-  showActiveDetail = false
+
+  isCollapsedMainJob = true
+  isCollapsedSubJob = true
+  isCollapsedOther = true
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -219,6 +222,8 @@ export class BuilderUnitComponent implements OnInit {
       this.searchText = ""
       this.updateFilteredUnits()
     }
+
+    console.log(this.unit)
   }
 
   changeStar(value) {
@@ -420,5 +425,34 @@ export class BuilderUnitComponent implements OnInit {
     })
 
     return formattedAvailableStatType
+  }
+
+  selectSupportSkill(pos, nodeId) {
+    this.unit.activatedSupport[pos] = nodeId
+    this.unitService.getActiveSkills()
+  }
+
+  selectCounterSkill(nodeId) {
+    this.unit.activatedCounter = nodeId
+    this.unitService.getActiveSkills()
+  }
+
+  getSkillsPerJob(job) {
+    let skills = [];
+    if (job === "main") {
+      this.unit.activeSkills.forEach(skill => {
+        if (skill.mainSkill) {
+          skills.push(skill)
+        }
+      })
+    } else {
+      this.unit.activeSkills.forEach(skill => {
+        if (!skill.mainSkill) {
+          skills.push(skill)
+        }
+      })
+    }
+
+    return skills;
   }
 }
