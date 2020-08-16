@@ -18,10 +18,10 @@
       </div>
       <div class="filtersBlock">
         Filter by :
-        <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
+        <button *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('rarity', rarity)}" (click)="filterList('rarity', rarity)">
           <img class="filterRarity" src="assets/rarity/{{rarity}}.png" />
         </button>
-        <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn" [ngClass]="{'btn-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
+        <button *ngFor="let category of ['weapon', 'armor', 'acc']" class="btn-filter" [ngClass]="{'btn-filter-selected': isFilterSelected('category', category)}" (click)="filterList('category', category)">
           {{ category | titlecase }}
         </button>
       </div>
@@ -73,7 +73,7 @@
   </div>
 
   <div class="backButtonDiv">
-    <button class="btn btn-back" (click)="back()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Back to Equipments</button>
+    <button class="btn btn-sub" (click)="back()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Back to Equipments</button>
   </div>
 
   <div class="customDiv">
@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <button class="btn btn-save" (click)="save()">SAVE</button>
+      <button class="btn btn-main btn-save" (click)="save()">SAVE</button>
     </div>
 
     <div class="rightBlock">

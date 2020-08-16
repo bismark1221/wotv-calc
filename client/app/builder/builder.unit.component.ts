@@ -445,6 +445,11 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.getActiveSkills()
   }
 
+  selectEsperResonance(level) {
+    this.unit.esper.resonance = level
+    this.unitService.changeLevel()
+  }
+
   getSkillsPerJob(job) {
     let skills = [];
     if (job === "main") {

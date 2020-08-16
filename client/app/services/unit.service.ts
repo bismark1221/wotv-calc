@@ -648,6 +648,18 @@ export class UnitService {
     this.unit.getActiveSkills(true, this.nameService, this.skillService)
   }
 
+  resetUnit() {
+    this.unit.resetUnit()
+  }
+
+  resetLevel() {
+    this.unit.resetLevel()
+  }
+
+  resetJob() {
+    this.unit.resetJob()
+  }
+
   getExportableLink() {
     let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.getSavableData(this.unit)))
     let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink

@@ -50,6 +50,7 @@ export class Skill {
   counterHtml;
   basedHtml;
   based;
+  level;
 
   constructFromJson(ability: Skill, translateService: TranslateService): void {
 

@@ -165,48 +165,10 @@
   color: var(--card-title-color);
 }
 
-.btn {
-  color: #fff;
-  border: 1px solid #E8E6DF;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 2px;
-  padding-top: 2px;
-  margin-right: 10px;
-}
-
-.btn img {
-  height: 25px;
-}
-
-.btn-selected {
-  color: #fff;
-  background: #E8E6DF;
-  border: 1px solid #E8E6DF;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-
 /* Specific for custom */
 .backButtonDiv, .customDiv {
   margin-left: 25px;
   margin-top: 15px;
-}
-
-.btn-back {
-  color: #fff;
-  background-color: #6D757D;
-  border-color: #6D757D;
-  height: 30px;
-  line-height: 10px;
-  border-radius: 2px;
-}
-
-.btn-back i {
-  margin-right: 10px;
 }
 
 .customDiv {
@@ -236,40 +198,11 @@
   display: inline-block;
 }
 
-.dropdownDiv {
-  display: inline-block;
-}
-
-.btn-select {
-  background: #F5F6F8;
-  border-radius: 2px;
-  color: #000;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 50px;
-}
-
-.btn-save {
-  color: #fff;
-  background-color: #157FFB;
-  border-color: #157FFB;
-  height: 30px;
-  line-height: 10px;
-  border-radius: 2px;
+.btn-card {
   width: 100%;
   margin-top: 10px;
 }
 
-.btn-available {
-  color: #fff;
-  background-color: #6D757D;
-  border-color: #6D757D;
-  height: 30px;
-  line-height: 10px;
-  border-radius: 2px;
-  width: 100%;
-  margin-top: 10px;
-}
 
 .rightBlock {
   width: 850px;

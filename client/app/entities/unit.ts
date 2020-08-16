@@ -238,6 +238,10 @@ export class Unit {
       } else {
         job.level = 1;
         updated = true
+
+        if (this.subjob == jobIndex) {
+          this.subjob = 0
+        }
       }
     })
 
@@ -844,7 +848,7 @@ export class Unit {
 
     this.maxNodes()
     this.updateStar(6)
-    this.changeLevel()
+    this.changeLevel(true)
   }
 
   maxLevelAndJobs() {
@@ -856,6 +860,59 @@ export class Unit {
 
     this.maxNodes()
     this.changeLevel()
+  }
+
+  resetUnit() {
+    this.star = 1;
+    this.lb = 0;
+    this.level = 1;
+    this.masterSkillActivated = -1;
+
+    this.esper = null
+    this.card = null
+    for (let i = 0; i <= 2; i++) {
+      this.equipments[i] = null
+    }
+
+    Object.keys(this.guild.data).forEach(statue => {
+      this.guild.data[statue] = 0
+    })
+
+    this.jobsData.forEach(job => {
+      job.level = 1
+    })
+
+    if (this.limit) {
+      this.limit.level = 1
+    }
+
+    this.resetNodes()
+    this.updateStar(1)
+    this.changeLevel()
+  }
+
+  resetLevel() {
+    this.level = 1;
+    this.disableNotAvailableNodes()
+    this.changeLevel()
+  }
+
+  resetJob() {
+    this.jobsData.forEach(job => {
+      job.level = 1
+    })
+    this.disableNotAvailableNodes()
+    this.changeLevel()
+  }
+
+  resetNodes() {
+    Object.keys(this.board.nodes).forEach(node => {
+      if (this.board.nodes[node].activated) {
+        this.hideNode(node, true)
+      }
+    })
+
+    this.updateSupportAndCounterSkills()
   }
 
   maxNodes() {
