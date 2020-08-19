@@ -66,6 +66,14 @@
   <div class="them">
     <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
   </div>
+
+  <div>
+    <button (click)="openLoginModal()">LOGIN</button>
+  </div>
+
+  <div *ngIf="user">
+    <button (click)="logout()">LOGOUT</button>
+  </div>
 </nav>
 
 <nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false" *ngIf="showBuilderNav || inBuilder">

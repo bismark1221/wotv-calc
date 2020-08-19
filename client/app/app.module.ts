@@ -18,6 +18,7 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { LegalComponent } from './legal/legal.component';
 import { JsonComponent } from './json/json.component';
+
+import { LoginComponent } from './auth/login.component';
 
 import { UnitsComponent } from './units/units.component';
 import { UnitComponent } from './unit/unit.component';
@@ -71,6 +74,7 @@ import { ThemeService } from './services/theme.service';
 import { RaidService } from './services/raid.service';
 import { TeamService } from './services/team.service';
 import { ItemService } from './services/item.service';
+import { AuthService } from './services/auth.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -112,7 +116,8 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderTeamComponent,
     ModalEquipmentsComponent,
     ModalEspersComponent,
-    ModalCardsComponent
+    ModalCardsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -140,6 +145,7 @@ export function createTranslateLoader(http: HttpClient) {
     ClipboardModule,
     UiSwitchModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     AngularFirestoreModule
   ],
   providers: [
@@ -158,6 +164,7 @@ export function createTranslateLoader(http: HttpClient) {
     RaidService,
     TeamService,
     ItemService,
+    AuthService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

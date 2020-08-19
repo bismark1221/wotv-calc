@@ -3,9 +3,13 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { NavService } from '../services/nav.service'
 import { ThemeService } from '../services/theme.service'
+import { AuthService } from '../services/auth.service'
+
+import { LoginComponent } from '../auth/login.component'
 
 @Component({
   selector: 'app-nav',
@@ -29,6 +33,7 @@ export class NavComponent {
   version = null;
   theme = null;
   lang = null;
+  user = null
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -36,7 +41,9 @@ export class NavComponent {
     private translateService: TranslateService,
     private navService: NavService,
     private router: Router,
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private modalService: NgbModal,
+    private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.lang = this.translateService.currentLang
@@ -48,6 +55,10 @@ export class NavComponent {
     this.menuDisabled = this.navService.menuDisabled;
     this.version = this.navService.getVersion();
     this.lang = this.translateService.currentLang
+
+    this.user = this.authService.getUser()
+    console.log("FOOOO")
+    console.log(this.user)
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
@@ -125,5 +136,19 @@ export class NavComponent {
 
   toggleTheme() {
     this.theme = this.themeService.toogleTheme()
+  }
+
+  openLoginModal() {
+    const modalRef = this.modalService.open(LoginComponent, { windowClass: 'builder-modal' });
+
+    modalRef.result.then((user) => {
+      console.log("MODAL RESULT :")
+      console.log(user)
+    }, (reason) => {
+    });
+  }
+
+  logout() {
+    this.authService.logout()
   }
 }
