@@ -8708,8 +8708,8 @@
         },
         {
           "type": "PROVOKE",
-          "minValue": -4,
-          "maxValue": -4,
+          "minValue": -2,
+          "maxValue": -2,
           "calcType": "fixe"
         }
       ],
@@ -25814,7 +25814,8 @@
                 "type": "FENNES_KILLER",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_UN_KL_FENE_20",
@@ -28057,7 +28058,8 @@
                 "type": "FENNES_KILLER",
                 "minValue": 20,
                 "maxValue": 20,
-                "calcType": "percent"
+                "calcType": "percent",
+                "rate": 200
               }
             ],
             "dataId": "BUFF_UN_KL_FENE_20",
@@ -146790,6 +146792,4445 @@
       ],
       "image": "lapswpn_kat_009",
       "slug": "odachi-of-destruction"
+    }
+  },
+  "UN_LW_P_ORDR": {
+    "dataId": "UN_LW_P_ORDR",
+    "names": {
+      "en": "Oldoa"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_SWN_WIND",
+      "JB_LW_VIK_WIND",
+      "JB_LW_ASS_WIND"
+    ],
+    "stats": {
+      "HP": {
+        "min": 217,
+        "max": 755
+      },
+      "TP": {
+        "min": 59,
+        "max": 92
+      },
+      "AP": {
+        "min": 71,
+        "max": 87
+      },
+      "ATK": {
+        "min": 92,
+        "max": 155
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 31,
+        "max": 53
+      },
+      "DEX": {
+        "min": 66,
+        "max": 99
+      },
+      "AGI": {
+        "min": 31,
+        "max": 36
+      },
+      "LUCK": {
+        "min": 63,
+        "max": 88
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "EARTH_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "DOOM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "wind",
+    "image": "lapsordr",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "SK_LW_SWN_M_2_INIT",
+          "type": "skill",
+          "skill": {
+            "unlockStar": null,
+            "unlockJob": 1,
+            "jp": 0,
+            "effects": [
+              {
+                "type": "HP_COST",
+                "value": 10,
+                "calcType": "percent"
+              },
+              {
+                "type": "ATK",
+                "minValue": 30,
+                "maxValue": 50,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_SWN_M_2_INIT",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Hazard Form",
+              "fr": "Forme dangereuse"
+            },
+            "slug": "hazard-form",
+            "cost": {
+              "type": "TP",
+              "value": 12
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "3": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "SK_LW_SWN_M_5_INIT",
+          "type": "skill",
+          "skill": {
+            "unlockStar": null,
+            "unlockJob": 1,
+            "jp": 0,
+            "effects": [],
+            "dataId": "SK_LW_SWN_M_5_INIT",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Osmose Force",
+              "fr": "Force synergique"
+            },
+            "slug": "osmose-force",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 0
+            },
+            "damage": {
+              "minValue": -80,
+              "maxValue": -60,
+              "type": "all",
+              "pool": "TP",
+              "effType": "ABSORB"
+            },
+            "elem": [
+              "neutral"
+            ]
+          }
+        },
+        "6": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "SK_LW_VIK_P_1_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 5,
+                "maxValue": 12,
+                "calcType": "percent",
+                "increaseMax": true
+              },
+              {
+                "type": "ATK",
+                "minValue": 9,
+                "maxValue": 24,
+                "calcType": "percent",
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_VIK_P_1_2",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Viking Lore",
+              "fr": "Savoir viking"
+            },
+            "slug": "viking-lore",
+            "maxLevel": 20
+          }
+        },
+        "8": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "SK_LW_SWN_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 20,
+            "effects": [],
+            "dataId": "SK_LW_SWN_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Counter Slash",
+              "fr": "Riposte"
+            },
+            "slug": "counter-slash",
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "counter": {
+              "minValue": 15,
+              "maxValue": 30,
+              "reactDamage": "PHYSIC",
+              "calcType": "percent"
+            },
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "slash",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "neutral"
+            ]
+          }
+        },
+        "10": {
+          "dataId": "SK_LW_SWN_P_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 20,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 30,
+                "maxValue": 60,
+                "calcType": "percent",
+                "increaseMax": true
+              },
+              {
+                "type": "SLASH_RES",
+                "minValue": -20,
+                "maxValue": -8,
+                "calcType": "resistance"
+              },
+              {
+                "type": "PIERCE_RES",
+                "minValue": -20,
+                "maxValue": -8,
+                "calcType": "resistance"
+              },
+              {
+                "type": "STRIKE_RES",
+                "minValue": -20,
+                "maxValue": -8,
+                "calcType": "resistance"
+              },
+              {
+                "type": "MISSILE_RES",
+                "minValue": -20,
+                "maxValue": -8,
+                "calcType": "resistance"
+              },
+              {
+                "type": "MAGIC_RES",
+                "minValue": -20,
+                "maxValue": -8,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "SK_LW_SWN_P_1",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Self-Sacrifice",
+              "fr": "Sacrifice ultime"
+            },
+            "slug": "self-sacrifice",
+            "maxLevel": 20
+          }
+        },
+        "11": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "SK_LW_VIK_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 5,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "turn": 3
+              },
+              {
+                "type": "EVADE",
+                "minValue": -30,
+                "maxValue": -15,
+                "calcType": "fixe",
+                "turn": 3
+              },
+              {
+                "type": "ATK",
+                "minValue": 20,
+                "maxValue": 40,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_VIK_S_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Rebellious Spirit",
+              "fr": "Esprit rebelle"
+            },
+            "slug": "rebellious-spirit",
+            "cost": {
+              "type": "TP",
+              "value": 15
+            },
+            "count": 2,
+            "maxLevel": 20
+          }
+        },
+        "14": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "SK_LW_SWN_S_4",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 100,
+            "effects": [
+              {
+                "type": "HP_COST",
+                "value": 25,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "SK_LW_SWN_S_4",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Hazard Spin",
+              "fr": "Coup dangereux"
+            },
+            "slug": "hazard-spin",
+            "cost": {
+              "type": "AP",
+              "value": 38
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 0
+            },
+            "damage": {
+              "minValue": 100,
+              "maxValue": 135,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "16": {
+          "dataId": "SK_LW_SWN_M_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 15,
+            "effects": [],
+            "dataId": "SK_LW_SWN_M_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Hard Slash",
+              "fr": "Tranchant sévère"
+            },
+            "slug": "hard-slash",
+            "cost": {
+              "type": "AP",
+              "value": 17
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 75,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "17": {
+          "dataId": "SK_LW_SWN_S_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 100,
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_SWN_S_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Paralyzing Edge",
+              "fr": "Lame paralysante"
+            },
+            "slug": "paralyzing-edge",
+            "cost": {
+              "type": "AP",
+              "value": 14
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -40,
+              "maxValue": -14,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "18": {
+          "dataId": "BUFF_UN_BD_BUFF_HP_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 20,
+                "maxValue": 20,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_HP_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "20": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "SK_LW_VIK_S_3",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 200,
+            "effects": [
+              {
+                "type": "BRAVERY",
+                "minValue": 4,
+                "maxValue": 10,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_VIK_S_3",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "War Cry",
+              "fr": "Cri de guerre"
+            },
+            "slug": "war-cry",
+            "cost": {
+              "type": "TP",
+              "value": 12
+            },
+            "count": 1,
+            "maxLevel": 20
+          }
+        },
+        "22": {
+          "dataId": "SK_LW_ASS_M_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 150,
+                "maxValue": 200,
+                "calcType": "unknow"
+              }
+            ],
+            "dataId": "SK_LW_ASS_M_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Pillaging Blade",
+              "fr": "Lame pilleuse"
+            },
+            "slug": "pillaging-blade",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "range": {
+              "h": 0,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 35,
+              "maxValue": 70,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "23": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "SK_LW_VIK_S_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 100,
+            "effects": [
+              {
+                "type": "IMMOBILIZE_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_VIK_S_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Knee Breaker",
+              "fr": "Brise-rotule"
+            },
+            "slug": "knee-breaker",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 0,
+              "l": 3,
+              "s": 0,
+              "line": 1
+            },
+            "based": "physic",
+            "pierce": 1,
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "25": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "26": {
+          "dataId": "SK_LW_VIK_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 180,
+                "maxValue": 210,
+                "calcType": "unknow",
+                "turn": 3
+              },
+              {
+                "type": "BERSERK_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_VIK_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Fighting Spirit",
+              "fr": "Esprit combatif"
+            },
+            "slug": "fighting-spirit",
+            "maxLevel": 20,
+            "counter": {
+              "minValue": 10,
+              "maxValue": 20,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            }
+          }
+        },
+        "27": {
+          "dataId": "SK_LW_ASS_P_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 5,
+                "maxValue": 15,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_ASS_P_1",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Evasion Up Lv. 1",
+              "fr": "Esquive ↑ Niv. 1"
+            },
+            "slug": "evasion-up-lv-1",
+            "maxLevel": 20
+          }
+        },
+        "28": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "29": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "32": {
+          "dataId": "BUFF_UN_BD_BUFF_AP_20_PER",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 800,
+            "effects": [
+              {
+                "type": "AP",
+                "minValue": 20,
+                "maxValue": 20,
+                "calcType": "percent",
+                "increaseMax": true
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AP_20_PER",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "SK_LW_ASS_S_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 200,
+            "effects": [
+              {
+                "type": "POISON_ATK",
+                "minValue": 5,
+                "maxValue": 15,
+                "calcType": "unknow",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_ASS_S_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Poison Sting",
+              "fr": "Piqûre toxique"
+            },
+            "slug": "poison-sting",
+            "cost": {
+              "type": "AP",
+              "value": 13
+            },
+            "count": 5,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 0,
+              "line": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "34": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "35": {
+          "dataId": "SK_LW_ASS_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 400,
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_ASS_S_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Bind",
+              "fr": "Entrave"
+            },
+            "slug": "bind",
+            "cost": {
+              "type": "TP",
+              "value": 14
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 0
+            },
+            "based": "physic"
+          }
+        },
+        "36": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "SK_LW_SWN_S_3",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "DOOM_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 5
+              }
+            ],
+            "dataId": "SK_LW_SWN_S_3",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Grim Reaper",
+              "fr": "Faucheur sombre"
+            },
+            "slug": "grim-reaper",
+            "cost": {
+              "type": "AP",
+              "value": 23
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 75,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "38": {
+          "dataId": "SK_LW_ASS_M_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 500,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": -30,
+                "maxValue": -50,
+                "calcType": "fixe",
+                "condition": "BEHIND"
+              }
+            ],
+            "dataId": "SK_LW_ASS_M_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Marauder's Blade",
+              "fr": "Lame maraudeuse"
+            },
+            "slug": "marauders-blade",
+            "cost": {
+              "type": "AP",
+              "value": 17
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 75,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "39": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "42": {
+          "dataId": "SK_LW_SWN_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 1250,
+            "effects": [],
+            "dataId": "SK_LW_SWN_S_2",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Drain Force",
+              "fr": "Force vampirique"
+            },
+            "slug": "drain-force",
+            "cost": {
+              "type": "AP",
+              "value": 20
+            },
+            "count": 5,
+            "maxLevel": 20,
+            "range": {
+              "h": 0,
+              "l": 3,
+              "s": 0
+            },
+            "damage": {
+              "minValue": -80,
+              "maxValue": -63,
+              "type": "all",
+              "pool": "HP",
+              "effType": "ABSORB"
+            },
+            "elem": [
+              "neutral"
+            ]
+          }
+        },
+        "43": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "44": {
+          "dataId": "SK_LW_VIK_S_4",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 300,
+            "effects": [],
+            "dataId": "SK_LW_VIK_S_4",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Launch",
+              "fr": "Lancement"
+            },
+            "slug": "launch",
+            "cost": {
+              "type": "AP",
+              "value": 16
+            },
+            "count": 5,
+            "maxLevel": 20,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "45": {
+          "dataId": "SK_LW_ASS_M_4_SUB",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_ASS_M_4_SUB",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Armor Cleaver",
+              "fr": "Lacération d'armure"
+            },
+            "slug": "armor-cleaver",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 2,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 75,
+              "maxValue": 110,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "46": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "47": {
+          "dataId": "SK_LW_SWN_M_4",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "HP_COST",
+                "value": 25,
+                "calcType": "percent"
+              }
+            ],
+            "dataId": "SK_LW_SWN_M_4",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Hazard Break",
+              "fr": "Brise danger"
+            },
+            "slug": "hazard-break",
+            "cost": {
+              "type": "AP",
+              "value": 29
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 0
+            },
+            "damage": {
+              "minValue": 90,
+              "maxValue": 125,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "48": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "49": {
+          "dataId": "SK_LW_ASS_S_3",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 500,
+            "effects": [],
+            "dataId": "SK_LW_ASS_S_3",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Seize AP",
+              "fr": "Saisie de PA"
+            },
+            "slug": "seize-ap",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 0,
+              "l": 2,
+              "s": 0
+            },
+            "damage": {
+              "minValue": -85,
+              "maxValue": -75,
+              "pool": "AP",
+              "effType": "ABSORB"
+            },
+            "elem": [
+              "neutral"
+            ]
+          }
+        },
+        "50": {
+          "dataId": "SK_LW_ASS_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 4,
+                "maxValue": 8,
+                "calcType": "fixe",
+                "rate": 100,
+                "turn": 3
+              },
+              {
+                "type": "CT",
+                "minValue": 100,
+                "maxValue": 200,
+                "calcType": "unknow",
+                "rate": 100,
+                "turn": 1
+              }
+            ],
+            "dataId": "SK_LW_ASS_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Dark Shadow",
+              "fr": "Ombre ténébreuse"
+            },
+            "slug": "dark-shadow",
+            "maxLevel": 20,
+            "based": "physic",
+            "counter": {
+              "minValue": 10,
+              "maxValue": 20,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            }
+          }
+        },
+        "51": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "52": {
+          "dataId": "SK_LW_VIK_P_2_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 200,
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 5,
+                "maxValue": 15,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "SK_LW_VIK_P_2_2",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Unyielding Protection",
+              "fr": "Protection inébranlable"
+            },
+            "slug": "unyielding-protection",
+            "maxLevel": 20
+          }
+        },
+        "53": {
+          "dataId": "SK_LW_VIK_M_1_SUB",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "HUMAN_KILLER",
+                "minValue": 25,
+                "maxValue": 25,
+                "calcType": "unknow"
+              }
+            ],
+            "dataId": "SK_LW_VIK_M_1_SUB",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Killing Axe",
+              "fr": "Hache meurtrière"
+            },
+            "slug": "killing-axe",
+            "cost": {
+              "type": "AP",
+              "value": 34
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 10,
+              "w": 2
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 70,
+              "maxValue": 105,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "54": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "SK_LW_ASS_P_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 400,
+            "effects": [
+              {
+                "type": "ACQUIRED_AP",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_ASS_P_2",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Acquired AP Up Lv. 1",
+              "fr": "PA acquis ↑ niv. 1"
+            },
+            "slug": "acquired-ap-up-lv-1",
+            "maxLevel": 20
+          }
+        },
+        "56": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "57": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "58": {
+          "dataId": "BUFF_UN_BD_BUFF_HP_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 40,
+                "maxValue": 40,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_HP_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "59": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "60": {
+          "dataId": "BUFF_UN_BD_BUFF_HP_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 40,
+                "maxValue": 40,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_HP_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        7,
+        1,
+        8,
+        10,
+        4,
+        11,
+        41,
+        31,
+        14,
+        33,
+        18,
+        35,
+        36,
+        22,
+        23,
+        38,
+        27,
+        40,
+        42,
+        74,
+        45,
+        75,
+        77,
+        50,
+        78,
+        54,
+        81,
+        57,
+        82,
+        84,
+        63,
+        85,
+        87,
+        68,
+        88,
+        72,
+        131,
+        133,
+        93,
+        134,
+        97,
+        136,
+        100,
+        138,
+        104,
+        105,
+        141,
+        109,
+        143,
+        145,
+        114,
+        116,
+        117,
+        120,
+        149,
+        151,
+        124,
+        152,
+        128,
+        154
+      ]
+    },
+    "slug": "oldoa",
+    "limit": {
+      "names": {
+        "en": "Oldoan Bomber"
+      },
+      "effects": [
+        {
+          "type": "DEF",
+          "minValue": -15,
+          "maxValue": -35,
+          "calcType": "fixe",
+          "turn": 3
+        }
+      ],
+      "dataId": "SK_LB_LW_ORDR",
+      "slug": "oldoan-bomber",
+      "cost": {
+        "type": "AP",
+        "value": 43
+      },
+      "count": 1,
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 1
+      },
+      "based": "physic",
+      "damage": {
+        "minValue": 65,
+        "maxValue": 100,
+        "type": "slash",
+        "effType": "DAMAGE"
+      }
+    },
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
+      "slug": "normal-attack",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    },
+    "masterSkill": [
+      {
+        "names": {
+          "en": "Master Ability"
+        },
+        "effects": [
+          {
+            "type": "ACQUIRED_AP",
+            "minValue": 30,
+            "maxValue": 30,
+            "calcType": "fixe"
+          },
+          {
+            "type": "SLASH_RES",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "resistance"
+          },
+          {
+            "type": "PIERCE_RES",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "resistance"
+          },
+          {
+            "type": "STRIKE_RES",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "resistance"
+          },
+          {
+            "type": "MISSILE_RES",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_MA_LW_ORDR",
+        "slug": "master-ability",
+        "maxLevel": 1
+      }
+    ],
+    "tmr": {
+      "names": {
+        "en": "Oldoan Apron"
+      },
+      "stats": {
+        "HP": 158,
+        "ACCURACY": 12,
+        "CRITIC_RATE": 9
+      },
+      "type": "ACC",
+      "dataId": "AF_ACC_LW_ORDR_1",
+      "skills": [
+        {
+          "dataId": "SK_ACC_LW_ORDR_1_1",
+          "names": {
+            "en": "Inherited Tyranny"
+          },
+          "effects": [
+            {
+              "type": "AUTO_RESTORE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "turn": 3
+            },
+            {
+              "type": "DEFENSE_PENETRATION",
+              "minValue": 30,
+              "maxValue": 50,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "slug": "inherited-tyranny",
+          "cost": {
+            "type": "TP",
+            "value": 30
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ],
+      "image": "lapswpn_acc_018",
+      "slug": "oldoan-apron"
+    }
+  },
+  "UN_LW_P_LVES": {
+    "dataId": "UN_LW_P_LVES",
+    "names": {
+      "en": "Raviesse"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_PLD_THUN",
+      "JB_LW_THI_THUN",
+      "JB_LW_SAM_THUN"
+    ],
+    "stats": {
+      "HP": {
+        "min": 261,
+        "max": 1027
+      },
+      "TP": {
+        "min": 46,
+        "max": 72
+      },
+      "AP": {
+        "min": 63,
+        "max": 77
+      },
+      "ATK": {
+        "min": 58,
+        "max": 97
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 26,
+        "max": 43
+      },
+      "DEX": {
+        "min": 58,
+        "max": 86
+      },
+      "AGI": {
+        "min": 23,
+        "max": 27
+      },
+      "LUCK": {
+        "min": 60,
+        "max": 85
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "PIERCE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "STRIKE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MISSILE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "MAGIC_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "BLIND_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapslves",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "SK_LW_PLD_M_1_INIT",
+          "type": "skill",
+          "skill": {
+            "unlockStar": null,
+            "unlockJob": 1,
+            "jp": 0,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 90,
+                "maxValue": 120,
+                "calcType": "unknow"
+              }
+            ],
+            "dataId": "SK_LW_PLD_M_1_INIT",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Saintly Healing",
+              "fr": "Guérison sacrée"
+            },
+            "slug": "saintly-healing",
+            "cost": {
+              "type": "TP",
+              "value": 12
+            },
+            "count": 8,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "3": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "SK_LW_PLD_S_5_INIT",
+          "type": "skill",
+          "skill": {
+            "unlockStar": null,
+            "unlockJob": 1,
+            "jp": 0,
+            "effects": [
+              {
+                "type": "STUN_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 1
+              }
+            ],
+            "dataId": "SK_LW_PLD_S_5_INIT",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Blade Bash",
+              "fr": "Revers de lame"
+            },
+            "slug": "blade-bash",
+            "cost": {
+              "type": "AP",
+              "value": 20
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 91,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "6": {
+          "dataId": "BUFF_UN_BD_BUFF_DF_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 1,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DF_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "SK_LW_THI_P_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe"
+              },
+              {
+                "type": "AGI",
+                "minValue": 3,
+                "maxValue": 12,
+                "calcType": "percent",
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_THI_P_1",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Thief Lore",
+              "fr": "Voie du voleur"
+            },
+            "slug": "thief-lore",
+            "maxLevel": 20
+          }
+        },
+        "8": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "SK_LW_PLD_P_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 20,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 5,
+                "maxValue": 12,
+                "calcType": "fixe"
+              },
+              {
+                "type": "HP",
+                "minValue": 5,
+                "maxValue": 12,
+                "calcType": "percent",
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_PLD_P_1",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Holy Knight's Protection",
+              "fr": "Protection du chevalier sacré"
+            },
+            "slug": "holy-knights-protection",
+            "maxLevel": 20
+          }
+        },
+        "10": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "SK_LW_THI_S_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": -20,
+                "maxValue": -43,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_THI_S_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Steal Vision",
+              "fr": "Vision dérobée"
+            },
+            "slug": "steal-vision",
+            "cost": {
+              "type": "TP",
+              "value": 12
+            },
+            "count": 8,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic"
+          }
+        },
+        "14": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "SK_LW_PLD_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 20,
+            "effects": [
+              {
+                "type": "REDUCE_DAMAGE_PHYSIC",
+                "minValue": 15,
+                "maxValue": 45,
+                "calcType": "percent",
+                "turnType": "TURNS"
+              }
+            ],
+            "dataId": "SK_LW_PLD_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Paladin's Guard",
+              "fr": "Paladin protecteur"
+            },
+            "slug": "paladins-guard",
+            "maxLevel": 20,
+            "based": "physic",
+            "counter": {
+              "minValue": 10,
+              "maxValue": 20,
+              "reactDamage": "PHYSIC",
+              "calcType": "percent"
+            }
+          }
+        },
+        "16": {
+          "dataId": "SK_LW_PLD_M_3",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 100,
+            "effects": [
+              {
+                "type": "PROVOKE",
+                "minValue": 8,
+                "maxValue": 12,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_PLD_M_3",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Taunting Blade",
+              "fr": "Lame railleuse"
+            },
+            "slug": "taunting-blade",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 1
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 65,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "17": {
+          "dataId": "SK_LW_PLD_S_6",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 1,
+            "unlockJob": 1,
+            "jobLevel": 3,
+            "jp": 15,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 15,
+                "maxValue": 45,
+                "calcType": "fixe",
+                "turn": 1
+              },
+              {
+                "type": "SPR",
+                "minValue": 15,
+                "maxValue": 45,
+                "calcType": "fixe",
+                "turn": 1
+              },
+              {
+                "type": "EVADE",
+                "minValue": -80,
+                "maxValue": -60,
+                "calcType": "fixe",
+                "turn": 1
+              }
+            ],
+            "dataId": "SK_LW_PLD_S_6",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Sentinel",
+              "fr": "Sentinelle"
+            },
+            "slug": "sentinel",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "18": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_UN_BD_BUFF_DF_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DF_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "20": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "SK_LW_THI_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 200,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 20,
+                "maxValue": 42,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_THI_S_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Shadowcast",
+              "fr": "Sort obscur"
+            },
+            "slug": "shadowcast",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "22": {
+          "dataId": "SK_LW_SAM_S_3",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "BRAVERY",
+                "minValue": 4,
+                "maxValue": 10,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_SAM_S_3",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Meditation",
+              "fr": "Méditation "
+            },
+            "slug": "meditation",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 1,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 0
+            }
+          }
+        },
+        "23": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "SK_LW_THI_M_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 100,
+            "effects": [
+              {
+                "type": "STEAL",
+                "minValue": 125,
+                "maxValue": 150,
+                "calcType": "unknow"
+              }
+            ],
+            "dataId": "SK_LW_THI_M_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Steal",
+              "fr": "Vol"
+            },
+            "slug": "steal",
+            "cost": {
+              "type": "TP",
+              "value": 15
+            },
+            "count": 5,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic"
+          }
+        },
+        "25": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "26": {
+          "dataId": "SK_LW_THI_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 20,
+                "maxValue": 40,
+                "calcType": "percent",
+                "turn": 1,
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_THI_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Quick Action",
+              "fr": "Action rapide"
+            },
+            "slug": "quick-action",
+            "maxLevel": 20,
+            "based": "physic",
+            "counter": {
+              "minValue": 10,
+              "maxValue": 20,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            }
+          }
+        },
+        "27": {
+          "dataId": "SK_LW_SAM_P_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 10,
+                "maxValue": 25,
+                "calcType": "percent",
+                "increaseMax": true
+              },
+              {
+                "type": "EVADE",
+                "minValue": 5,
+                "maxValue": 12,
+                "calcType": "fixe"
+              },
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_SAM_P_1",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Blade Soul",
+              "fr": "Lame d'âmes"
+            },
+            "slug": "blade-soul",
+            "maxLevel": 20
+          }
+        },
+        "28": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "29": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 2,
+            "jobLevel": 3,
+            "jp": 60,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "32": {
+          "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 800,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "percent",
+                "increaseMax": true
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_HP_15_PER",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "SK_LW_SAM_M_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 200,
+            "effects": [],
+            "dataId": "SK_LW_SAM_M_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Hien",
+              "fr": "Hien"
+            },
+            "slug": "hien",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 8,
+            "maxLevel": 20,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 20,
+              "maxValue": 37,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "34": {
+          "dataId": "BUFF_UN_BD_BUFF_DF_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 3,
+            "unlockJob": 1,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DF_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "35": {
+          "dataId": "SK_LW_SAM_S_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 400,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 10,
+                "maxValue": 30,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true
+              },
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 15,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_SAM_S_1",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Devotion",
+              "fr": "Dévotion"
+            },
+            "slug": "devotion",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "36": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 4,
+            "unlockJob": 3,
+            "jobLevel": 5,
+            "jp": 150,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "SK_LW_PLD_S_7",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [],
+            "dataId": "SK_LW_PLD_S_7",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Saintly Cross",
+              "fr": "Croix sacrée"
+            },
+            "slug": "saintly-cross",
+            "cost": {
+              "type": "AP",
+              "value": 40
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 35,
+              "maxValue": 96,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "38": {
+          "dataId": "SK_LW_SAM_M_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 500,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 10,
+                "maxValue": 25,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_SAM_M_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Illusion",
+              "fr": "Illusion"
+            },
+            "slug": "illusion",
+            "cost": {
+              "type": "TP",
+              "value": 29
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 0
+            }
+          }
+        },
+        "39": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "42": {
+          "dataId": "SK_LW_PLD_M_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "IGNORE_FATAL",
+                "calcType": "percent",
+                "rate": 200
+              }
+            ],
+            "dataId": "SK_LW_PLD_M_2",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Immortal Spirit",
+              "fr": "Esprit immortel"
+            },
+            "slug": "immortal-spirit",
+            "cost": {
+              "type": "TP",
+              "value": 29
+            },
+            "count": 1,
+            "maxLevel": 1,
+            "based": "physic"
+          }
+        },
+        "43": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "44": {
+          "dataId": "SK_LW_THI_M_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "CT",
+                "minValue": 50,
+                "maxValue": 50,
+                "calcType": "decrease"
+              },
+              {
+                "type": "AGI",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_THI_M_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Steal Time",
+              "fr": "Vol temps"
+            },
+            "slug": "steal-time",
+            "cost": {
+              "type": "TP",
+              "value": 22
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic"
+          }
+        },
+        "45": {
+          "dataId": "SK_LW_SAM_M_4_SUB",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "MACHINA_KILLER",
+                "minValue": 25,
+                "maxValue": 25,
+                "calcType": "unknow"
+              },
+              {
+                "type": "STONE_KILLER",
+                "minValue": 25,
+                "maxValue": 25,
+                "calcType": "unknow"
+              }
+            ],
+            "dataId": "SK_LW_SAM_M_4_SUB",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Kongou",
+              "fr": "Kongō"
+            },
+            "slug": "kongou",
+            "cost": {
+              "type": "AP",
+              "value": 36
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 10
+            },
+            "based": "physic",
+            "pierce": 1,
+            "damage": {
+              "minValue": 65,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "46": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "DEX",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_DX_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "47": {
+          "dataId": "SK_LW_PLD_M_4",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "REDUCE_DAMAGE_PHYSIC",
+                "minValue": 30,
+                "maxValue": 50,
+                "calcType": "percent",
+                "turn": 3,
+                "turnType": "COUNT"
+              }
+            ],
+            "dataId": "SK_LW_PLD_M_4",
+            "type": "skill",
+            "mainSkill": true,
+            "names": {
+              "en": "Saintly Wall",
+              "fr": "Mur sacré"
+            },
+            "slug": "saintly-wall",
+            "cost": {
+              "type": "TP",
+              "value": 40
+            },
+            "count": 2,
+            "maxLevel": 20,
+            "based": "physic"
+          }
+        },
+        "48": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "49": {
+          "dataId": "SK_LW_SAM_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 500,
+            "effects": [
+              {
+                "type": "BLIND_ATK",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_SAM_S_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Nightveil",
+              "fr": "Voile de la nuit"
+            },
+            "slug": "nightveil",
+            "cost": {
+              "type": "AP",
+              "value": 16
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 5,
+              "maxValue": 40,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "50": {
+          "dataId": "SK_LW_SAM_R_1",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 5,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_SAM_R_1",
+            "type": "counter",
+            "mainSkill": false,
+            "names": {
+              "en": "Third Eye",
+              "fr": "Troisième œil"
+            },
+            "slug": "third-eye",
+            "maxLevel": 20,
+            "based": "physic",
+            "counter": {
+              "minValue": 10,
+              "maxValue": 20,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            }
+          }
+        },
+        "51": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "LUCK",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_LK_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "52": {
+          "dataId": "SK_LW_THI_P_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 200,
+            "effects": [
+              {
+                "type": "ACQUIRED_AP",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_THI_P_2",
+            "type": "support",
+            "mainSkill": false,
+            "names": {
+              "en": "Acquired AP Up Lv. 1",
+              "fr": "PA acquis ↑ niv. 1"
+            },
+            "slug": "acquired-ap-up-lv-1",
+            "maxLevel": 20
+          }
+        },
+        "53": {
+          "dataId": "SK_LW_THI_S_3_SUB",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 12,
+            "jp": 1250,
+            "effects": [
+              {
+                "type": "CHARM_ATK",
+                "calcType": "percent",
+                "rate": 50,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_THI_S_3_SUB",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Steal Heart",
+              "fr": "Vol cœur"
+            },
+            "slug": "steal-heart",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 5,
+            "maxLevel": 1,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic"
+          }
+        },
+        "54": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_SD_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "56": {
+          "dataId": "SK_LW_PLD_S_2",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 1,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 5,
+                "maxValue": 20,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true
+              }
+            ],
+            "dataId": "SK_LW_PLD_S_2",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Divine Grace",
+              "fr": "Grâce divine"
+            },
+            "slug": "divine-grace",
+            "cost": {
+              "type": "TP",
+              "value": 20
+            },
+            "count": 3,
+            "maxLevel": 20,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            }
+          }
+        },
+        "57": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "58": {
+          "dataId": "SK_LW_THI_S_4",
+          "type": "skill",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 300,
+            "effects": [
+              {
+                "type": "CONFUSION_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_LW_THI_S_4",
+            "type": "skill",
+            "mainSkill": false,
+            "names": {
+              "en": "Snipe Dagger",
+              "fr": "Dague de précision"
+            },
+            "slug": "snipe-dagger",
+            "cost": {
+              "type": "AP",
+              "value": 31
+            },
+            "count": 4,
+            "maxLevel": 20,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "slash",
+              "effType": "DAMAGE"
+            }
+          }
+        },
+        "59": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 5,
+            "unlockJob": 3,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_AT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "60": {
+          "dataId": "BUFF_UN_BD_BUFF_CR_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 6,
+            "unlockJob": 2,
+            "jobLevel": 7,
+            "jp": 225,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "BUFF_UN_BD_BUFF_CR_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        7,
+        1,
+        8,
+        10,
+        4,
+        11,
+        41,
+        31,
+        14,
+        33,
+        18,
+        35,
+        36,
+        22,
+        23,
+        38,
+        27,
+        40,
+        42,
+        74,
+        45,
+        75,
+        77,
+        50,
+        78,
+        54,
+        81,
+        57,
+        82,
+        84,
+        63,
+        85,
+        87,
+        68,
+        88,
+        72,
+        131,
+        133,
+        93,
+        134,
+        97,
+        136,
+        100,
+        138,
+        104,
+        105,
+        141,
+        109,
+        143,
+        145,
+        114,
+        116,
+        117,
+        120,
+        149,
+        151,
+        124,
+        152,
+        128,
+        154
+      ]
+    },
+    "slug": "raviesse",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_PLD_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE"
+      },
+      "elem": [
+        "neutral"
+      ],
+      "slug": "normal-attack",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    },
+    "masterSkill": [
+      {
+        "names": {
+          "en": "Master Ability"
+        },
+        "effects": [
+          {
+            "type": "EVADE",
+            "minValue": 10,
+            "maxValue": 10,
+            "calcType": "fixe"
+          },
+          {
+            "type": "AP_CONSUMPTION",
+            "minValue": 20,
+            "maxValue": 20,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_MA_LW_LVES",
+        "slug": "master-ability",
+        "maxLevel": 1
+      }
+    ],
+    "tmr": {
+      "names": {
+        "en": "Hollow Slave"
+      },
+      "stats": {
+        "HP": 66,
+        "ATK": 117,
+        "EVADE": 10
+      },
+      "type": "SWORD",
+      "dataId": "AF_SWO_LW_LVES_1",
+      "skills": [
+        {
+          "dataId": "SK_SWO_LW_LVES_1_1",
+          "names": {
+            "en": "SK_SWO_LW_LVES_1_1",
+            "fr": "SK_SWO_LW_LVES_1_1"
+          },
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "type": "support",
+          "slug": "sk_swo_lw_lves_1_1",
+          "maxLevel": 1
+        }
+      ],
+      "image": "lapswpn_swo_020",
+      "slug": "hollow-slave"
     }
   }
 }

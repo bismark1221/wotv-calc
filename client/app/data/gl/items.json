@@ -3583,6 +3583,20 @@
     },
     "slug": "seymore-unit-shard"
   },
+  "IT_PI_LW_ORDR": {
+    "dataId": "IT_PI_LW_ORDR",
+    "names": {
+      "en": "Oldoa Unit Shard"
+    },
+    "slug": "oldoa-unit-shard"
+  },
+  "IT_PI_LW_LVES": {
+    "dataId": "IT_PI_LW_LVES",
+    "names": {
+      "en": "Raviesse Unit Shard"
+    },
+    "slug": "raviesse-unit-shard"
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -5608,6 +5622,14 @@
     },
     "slug": "ffxiv-summon-medal"
   },
+  "IT_US_G_FF14_01": {
+    "dataId": "IT_US_G_FF14_01",
+    "names": {
+      "en": "FFXIV Summon Ticket",
+      "fr": "Ticket d'invocation FFXIV"
+    },
+    "slug": "ffxiv-summon-ticket"
+  },
   "IT_EC_SUMMON_03_A": {
     "dataId": "IT_EC_SUMMON_03_A",
     "names": {
@@ -5688,6 +5710,13 @@
     },
     "slug": "august-summon-medal-a"
   },
+  "IT_EC_SUMMON_08_B": {
+    "dataId": "IT_EC_SUMMON_08_B",
+    "names": {
+      "en": "August Summon Medal B"
+    },
+    "slug": "august-summon-medal-b"
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -5723,10 +5752,10 @@
   "IT_EC_EV02_1": {
     "dataId": "IT_EC_EV02_1",
     "names": {
-      "en": "June Event Medal",
+      "en": "Threat to the West, Rundall Medal",
       "fr": "Médaille d'événement de juin"
     },
-    "slug": "june-event-medal"
+    "slug": "threat-to-the-west-rundall-medal"
   },
   "IT_EC_EV03_1": {
     "dataId": "IT_EC_EV03_1",
@@ -5744,22 +5773,6 @@
     },
     "slug": "august-event-medal"
   },
-  "IT_EC_RAID_02": {
-    "dataId": "IT_EC_RAID_02",
-    "names": {
-      "en": "Chocolate Flan Raid Medal",
-      "fr": "Médaille de raid du Chocoflan"
-    },
-    "slug": "chocolate-flan-raid-medal"
-  },
-  "IT_EC_RAID_03": {
-    "dataId": "IT_EC_RAID_03",
-    "names": {
-      "en": "White Marshmallow Raid Medal",
-      "fr": "Médaille de raid de la Guimauve blanche"
-    },
-    "slug": "white-marshmallow-raid-medal"
-  },
   "IT_EC_FF1_1": {
     "dataId": "IT_EC_FF1_1",
     "names": {
@@ -5775,6 +5788,14 @@
       "fr": "Médaille d’invocation FFI"
     },
     "slug": "ffi-summon-medal"
+  },
+  "IT_US_G_FFT_01": {
+    "dataId": "IT_US_G_FFT_01",
+    "names": {
+      "en": "FFT Summon Ticket",
+      "fr": "Ticket d'invocation FFT"
+    },
+    "slug": "fft-summon-ticket"
   },
   "IT_AD_TICKET_2": {
     "dataId": "IT_AD_TICKET_2",
@@ -5896,6 +5917,14 @@
     },
     "slug": "select-awakening-prism-x50-summon-ticket"
   },
+  "IT_US_GL_SE_AW-ITEM_01": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_01",
+    "names": {
+      "en": "Select Awakening Prism x200 Summon Ticket",
+      "fr": "Ticket sélectionneur de 200 prismes d'éveil"
+    },
+    "slug": "select-awakening-prism-x200-summon-ticket"
+  },
   "IT_US_SE_PI_COM_01": {
     "dataId": "IT_US_SE_PI_COM_01",
     "names": {
@@ -5968,173 +5997,6 @@
     },
     "slug": "select-element-magicite-m-x50-summon-ticket"
   },
-  "IT_US_SE_JB_MM_01": {
-    "dataId": "IT_US_SE_JB_MM_01",
-    "names": {
-      "en": "Select Job Memory (Green) x1 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Vert) x1"
-    },
-    "slug": "select-job-memory-green-x1-summon-ticket"
-  },
-  "IT_US_SE_JB_MM_02": {
-    "dataId": "IT_US_SE_JB_MM_02",
-    "names": {
-      "en": "Select Job Memory (Blue) x2 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Bleu) x2"
-    },
-    "slug": "select-job-memory-blue-x2-summon-ticket"
-  },
-  "IT_US_SE_JB_MM_03": {
-    "dataId": "IT_US_SE_JB_MM_03",
-    "names": {
-      "en": "Select Job Memory (Purple) x3 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Violet) x3"
-    },
-    "slug": "select-job-memory-purple-x3-summon-ticket"
-  },
-  "IT_US_SE_JB_MM_04": {
-    "dataId": "IT_US_SE_JB_MM_04",
-    "names": {
-      "en": "Select Job Memory (Yellow) x4 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Jaune) x4"
-    },
-    "slug": "select-job-memory-yellow-x4-summon-ticket"
-  },
-  "IT_US_SE_JB_MM_05": {
-    "dataId": "IT_US_SE_JB_MM_05",
-    "names": {
-      "en": "Select Job Memory (Red) x5 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Rouge) x5"
-    },
-    "slug": "select-job-memory-red-x5-summon-ticket"
-  },
-  "IT_US_SE_UR_U_01": {
-    "dataId": "IT_US_SE_UR_U_01",
-    "names": {
-      "en": "Select UR Unit Summon Ticket A",
-      "fr": "Ticket sélectionneur d'unité UR [A]"
-    },
-    "slug": "select-ur-unit-summon-ticket-a"
-  },
-  "IT_US_SE_AW-ITEM_01": {
-    "dataId": "IT_US_SE_AW-ITEM_01",
-    "names": {
-      "en": "Select Awakening Prism x10 Summon Ticket",
-      "fr": "Ticket sélectionneur de 10 prismes d'éveil"
-    },
-    "slug": "select-awakening-prism-x10-summon-ticket"
-  },
-  "IT_US_GL_SE_SB_EXP_1": {
-    "dataId": "IT_US_GL_SE_SB_EXP_1",
-    "names": {
-      "en": "Select Element Magicite (M) x500 Summon Ticket",
-      "fr": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
-    },
-    "slug": "select-element-magicite-m-x500-summon-ticket"
-  },
-  "IT_US_GL_SE_SB_EXP_2": {
-    "dataId": "IT_US_GL_SE_SB_EXP_2",
-    "names": {
-      "en": "Select Element Magicite (M) x10 Summon Ticket",
-      "fr": "Ticket sélectionneur de 10 magilithes élémentaires (M)"
-    },
-    "slug": "select-element-magicite-m-x10-summon-ticket"
-  },
-  "IT_US_GL_SE_SB_EXP_3": {
-    "dataId": "IT_US_GL_SE_SB_EXP_3",
-    "names": {
-      "en": "Select Element Magicite (M) x25 Summon Ticket",
-      "fr": "Ticket sélectionneur de 25 magilithes élémentaires (M)"
-    },
-    "slug": "select-element-magicite-m-x25-summon-ticket"
-  },
-  "IT_US_GL_SE_SB_EXP_4": {
-    "dataId": "IT_US_GL_SE_SB_EXP_4",
-    "names": {
-      "en": "Select Element Magicite (L) x100 Summon Ticket",
-      "fr": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
-    },
-    "slug": "select-element-magicite-l-x100-summon-ticket"
-  },
-  "IT_US_GL_SE_VPI_01": {
-    "dataId": "IT_US_GL_SE_VPI_01",
-    "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-    },
-    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
-  },
-  "IT_US_GL_SE_VPI_02": {
-    "dataId": "IT_US_GL_SE_VPI_02",
-    "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-    },
-    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
-  },
-  "IT_US_GL_SE_VPI_03": {
-    "dataId": "IT_US_GL_SE_VPI_03",
-    "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-    },
-    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
-  },
-  "IT_US_GL_SE_VPI_04": {
-    "dataId": "IT_US_GL_SE_VPI_04",
-    "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-    },
-    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
-  },
-  "IT_US_GL_SE_VPI_05": {
-    "dataId": "IT_US_GL_SE_VPI_05",
-    "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket"
-    },
-    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
-  },
-  "IT_US_SE_UR_U_02": {
-    "dataId": "IT_US_SE_UR_U_02",
-    "names": {
-      "en": "Select Recommended UR Unit Summon Ticket",
-      "fr": "Ticket sélectionneur d'unité UR recommandée [A]"
-    },
-    "slug": "select-recommended-ur-unit-summon-ticket"
-  },
-  "IT_US_SE_SSR_U_01": {
-    "dataId": "IT_US_SE_SSR_U_01",
-    "names": {
-      "en": "Select Recommended MR Unit Summon Ticket",
-      "fr": "Ticket sélectionneur d'unité MR recommandée"
-    },
-    "slug": "select-recommended-mr-unit-summon-ticket"
-  },
-  "IT_US_SE_SSR_U_GL01": {
-    "dataId": "IT_US_SE_SSR_U_GL01",
-    "names": {
-      "en": "Select MR Unit Summon Ticket A",
-      "fr": "Ticket sélectionneur d'unité MR [A]"
-    },
-    "slug": "select-mr-unit-summon-ticket-a"
-  },
-  "IT_US_SE_PI_GL00": {
-    "dataId": "IT_US_SE_PI_GL00",
-    "names": {
-      "en": "Select UR Unit Shard x40 Summon Ticket",
-      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
-    },
-    "slug": "select-ur-unit-shard-x40-summon-ticket"
-  },
-  "IT_US_SE_PI_GL01": {
-    "dataId": "IT_US_SE_PI_GL01",
-    "names": {
-      "en": "Select UR Unit Shard x40 Summon Ticket",
-      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
-    },
-    "slug": "select-ur-unit-shard-x40-summon-ticket"
-  },
   "IT_US_G_U_UR_01": {
     "dataId": "IT_US_G_U_UR_01",
     "names": {
@@ -6191,29 +6053,61 @@
     },
     "slug": "ur-guaranteed-vision-card-summon-ticket-a"
   },
-  "IT_US_G_FFT_01": {
-    "dataId": "IT_US_G_FFT_01",
+  "IT_US_SE_JB_MM_01": {
+    "dataId": "IT_US_SE_JB_MM_01",
     "names": {
-      "en": "FFT Summon Ticket",
-      "fr": "Ticket d'invocation FFT"
+      "en": "Select Job Memory (Green) x1 Summon Ticket",
+      "fr": "Ticket sélectionneur de Souvenir de Job (Vert) x1"
     },
-    "slug": "fft-summon-ticket"
+    "slug": "select-job-memory-green-x1-summon-ticket"
   },
-  "IT_US_G_FF14_01": {
-    "dataId": "IT_US_G_FF14_01",
+  "IT_US_SE_JB_MM_02": {
+    "dataId": "IT_US_SE_JB_MM_02",
     "names": {
-      "en": "FFXIV Summon Ticket",
-      "fr": "Ticket d'invocation FFXIV"
+      "en": "Select Job Memory (Blue) x2 Summon Ticket",
+      "fr": "Ticket sélectionneur de Souvenir de Job (Bleu) x2"
     },
-    "slug": "ffxiv-summon-ticket"
+    "slug": "select-job-memory-blue-x2-summon-ticket"
   },
-  "IT_US_G_N_TW_10": {
-    "dataId": "IT_US_G_N_TW_10",
+  "IT_US_SE_JB_MM_03": {
+    "dataId": "IT_US_SE_JB_MM_03",
     "names": {
-      "en": "[Porcelain Tower] Normal 10x Summon Ticket",
-      "fr": "[Tour de porcelaine] Ticket d'invocation x10 normale"
+      "en": "Select Job Memory (Purple) x3 Summon Ticket",
+      "fr": "Ticket sélectionneur de Souvenir de Job (Violet) x3"
     },
-    "slug": "porcelain-tower-normal-10x-summon-ticket"
+    "slug": "select-job-memory-purple-x3-summon-ticket"
+  },
+  "IT_US_SE_JB_MM_04": {
+    "dataId": "IT_US_SE_JB_MM_04",
+    "names": {
+      "en": "Select Job Memory (Yellow) x4 Summon Ticket",
+      "fr": "Ticket sélectionneur de Souvenir de Job (Jaune) x4"
+    },
+    "slug": "select-job-memory-yellow-x4-summon-ticket"
+  },
+  "IT_US_SE_JB_MM_05": {
+    "dataId": "IT_US_SE_JB_MM_05",
+    "names": {
+      "en": "Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "Ticket sélectionneur de Souvenir de Job (Rouge) x5"
+    },
+    "slug": "select-job-memory-red-x5-summon-ticket"
+  },
+  "IT_US_SE_UR_U_01": {
+    "dataId": "IT_US_SE_UR_U_01",
+    "names": {
+      "en": "Select UR Unit Summon Ticket A",
+      "fr": "Ticket sélectionneur d'unité UR [A]"
+    },
+    "slug": "select-ur-unit-summon-ticket-a"
+  },
+  "IT_US_SE_AW-ITEM_01": {
+    "dataId": "IT_US_SE_AW-ITEM_01",
+    "names": {
+      "en": "Select Awakening Prism x10 Summon Ticket",
+      "fr": "Ticket sélectionneur de 10 prismes d'éveil"
+    },
+    "slug": "select-awakening-prism-x10-summon-ticket"
   },
   "IT_US_G_U_SSR_UR_02": {
     "dataId": "IT_US_G_U_SSR_UR_02",
@@ -6262,14 +6156,6 @@
       "fr": "Ticket sélectionneur de prisme d'éveil (xNN)"
     },
     "slug": "select-awakening-prism-xnn-summon-ticket"
-  },
-  "IT_US_GL_SE_AW-ITEM_01": {
-    "dataId": "IT_US_GL_SE_AW-ITEM_01",
-    "names": {
-      "en": "Select Awakening Prism x200 Summon Ticket",
-      "fr": "Ticket sélectionneur de 200 prismes d'éveil"
-    },
-    "slug": "select-awakening-prism-x200-summon-ticket"
   },
   "IT_VPI_LW_GLEM": {
     "dataId": "IT_VPI_LW_GLEM",
@@ -6735,14 +6621,6 @@
     },
     "slug": "admirers-rivalry-vision-card-shard"
   },
-  "IT_VPI_LW_THDG": {
-    "dataId": "IT_VPI_LW_THDG",
-    "names": {
-      "en": "\"Serpentine Onslaught, Two-Headed Dragon\" Vision Card Shard",
-      "fr": "Fragment de l'atout-vision : Dragon à deux têtes, le Ravageur écaillé"
-    },
-    "slug": "serpentine-onslaught-two-headed-dragon-vision-card-shard"
-  },
   "IT_VPI_LW_ADLD": {
     "dataId": "IT_VPI_LW_ADLD",
     "names": {
@@ -6766,6 +6644,14 @@
       "fr": "Fragment de l'atout-vision : Faux-semblant"
     },
     "slug": "deceptive-vows-honest-souls-vision-card-shard"
+  },
+  "IT_VPI_LW_THDG": {
+    "dataId": "IT_VPI_LW_THDG",
+    "names": {
+      "en": "\"Serpentine Onslaught, Two-Headed Dragon\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Dragon à deux têtes, le Ravageur écaillé"
+    },
+    "slug": "serpentine-onslaught-two-headed-dragon-vision-card-shard"
   },
   "IT_VPI_FF01_DMAC": {
     "dataId": "IT_VPI_FF01_DMAC",
@@ -6964,5 +6850,140 @@
       "fr": "Puissante mâchoire de lion (L)"
     },
     "slug": "lions-mighty-jaw-l"
+  },
+  "IT_EC_RAID_02": {
+    "dataId": "IT_EC_RAID_02",
+    "names": {
+      "en": "Chocolate Flan Raid Medal",
+      "fr": "Médaille de raid du Chocoflan"
+    },
+    "slug": "chocolate-flan-raid-medal"
+  },
+  "IT_EC_RAID_03": {
+    "dataId": "IT_EC_RAID_03",
+    "names": {
+      "en": "White Marshmallow Raid Medal",
+      "fr": "Médaille de raid de la Guimauve blanche"
+    },
+    "slug": "white-marshmallow-raid-medal"
+  },
+  "IT_US_GL_SE_SB_EXP_1": {
+    "dataId": "IT_US_GL_SE_SB_EXP_1",
+    "names": {
+      "en": "Select Element Magicite (M) x500 Summon Ticket",
+      "fr": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
+    },
+    "slug": "select-element-magicite-m-x500-summon-ticket"
+  },
+  "IT_US_GL_SE_SB_EXP_2": {
+    "dataId": "IT_US_GL_SE_SB_EXP_2",
+    "names": {
+      "en": "Select Element Magicite (M) x10 Summon Ticket",
+      "fr": "Ticket sélectionneur de 10 magilithes élémentaires (M)"
+    },
+    "slug": "select-element-magicite-m-x10-summon-ticket"
+  },
+  "IT_US_GL_SE_SB_EXP_3": {
+    "dataId": "IT_US_GL_SE_SB_EXP_3",
+    "names": {
+      "en": "Select Element Magicite (M) x25 Summon Ticket",
+      "fr": "Ticket sélectionneur de 25 magilithes élémentaires (M)"
+    },
+    "slug": "select-element-magicite-m-x25-summon-ticket"
+  },
+  "IT_US_GL_SE_SB_EXP_4": {
+    "dataId": "IT_US_GL_SE_SB_EXP_4",
+    "names": {
+      "en": "Select Element Magicite (L) x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
+    },
+    "slug": "select-element-magicite-l-x100-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_01": {
+    "dataId": "IT_US_GL_SE_VPI_01",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_02": {
+    "dataId": "IT_US_GL_SE_VPI_02",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_03": {
+    "dataId": "IT_US_GL_SE_VPI_03",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_04": {
+    "dataId": "IT_US_GL_SE_VPI_04",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_05": {
+    "dataId": "IT_US_GL_SE_VPI_05",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_SE_UR_U_02": {
+    "dataId": "IT_US_SE_UR_U_02",
+    "names": {
+      "en": "Select Recommended UR Unit Summon Ticket",
+      "fr": "Ticket sélectionneur d'unité UR recommandée [A]"
+    },
+    "slug": "select-recommended-ur-unit-summon-ticket"
+  },
+  "IT_US_SE_SSR_U_01": {
+    "dataId": "IT_US_SE_SSR_U_01",
+    "names": {
+      "en": "Select Recommended MR Unit Summon Ticket",
+      "fr": "Ticket sélectionneur d'unité MR recommandée"
+    },
+    "slug": "select-recommended-mr-unit-summon-ticket"
+  },
+  "IT_US_SE_SSR_U_GL01": {
+    "dataId": "IT_US_SE_SSR_U_GL01",
+    "names": {
+      "en": "Select MR Unit Summon Ticket A",
+      "fr": "Ticket sélectionneur d'unité MR [A]"
+    },
+    "slug": "select-mr-unit-summon-ticket-a"
+  },
+  "IT_US_SE_PI_GL00": {
+    "dataId": "IT_US_SE_PI_GL00",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
+    },
+    "slug": "select-ur-unit-shard-x40-summon-ticket"
+  },
+  "IT_US_SE_PI_GL01": {
+    "dataId": "IT_US_SE_PI_GL01",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
+    },
+    "slug": "select-ur-unit-shard-x40-summon-ticket"
+  },
+  "IT_US_G_N_TW_10": {
+    "dataId": "IT_US_G_N_TW_10",
+    "names": {
+      "en": "[Porcelain Tower] Normal 10x Summon Ticket",
+      "fr": "[Tour de porcelaine] Ticket d'invocation x10 normale"
+    },
+    "slug": "porcelain-tower-normal-10x-summon-ticket"
   }
 }

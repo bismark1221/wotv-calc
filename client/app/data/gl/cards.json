@@ -2999,192 +2999,6 @@
       "maxLevel": 1
     }
   },
-  "VC_LW_THDG": {
-    "dataId": "VC_LW_THDG",
-    "names": {
-      "en": "Serpentine Onslaught, Two-Headed Dragon",
-      "fr": "Dragon à deux têtes, le Ravageur écaillé"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 38,
-        "max": 300
-      },
-      "TP": {},
-      "AP": {},
-      "ATK": {
-        "min": 46,
-        "max": 180
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 5,
-        "max": 18
-      },
-      "DEX": {},
-      "AGI": {},
-      "LUCK": {},
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {},
-      "STRIKE_RES": {},
-      "MISSILE_RES": {},
-      "MAGIC_RES": {},
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "MOVE": {},
-      "JUMP": {}
-    },
-    "image": "lapsthdg",
-    "slug": "serpentine-onslaught-two-headed-dragon",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAX_DAMAGE",
-          "minValue": 750,
-          "maxValue": 1500,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_GS",
-        "fr": "SK_VC_LW_THDG_GS"
-      },
-      "slug": "sk_vc_lw_thdg_gs",
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAX_DAMAGE",
-          "minValue": 100,
-          "maxValue": 500,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_GS_AW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_GS_AW",
-        "fr": "SK_VC_LW_THDG_GS_AW"
-      },
-      "slug": "sk_vc_lw_thdg_gs_aw",
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "MAX_DAMAGE",
-          "minValue": 500,
-          "maxValue": 500,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_GSMAX",
-        "fr": "SK_VC_LW_THDG_GSMAX"
-      },
-      "slug": "sk_vc_lw_thdg_gsmax",
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_P",
-        "fr": "SK_VC_LW_THDG_P"
-      },
-      "slug": "sk_vc_lw_thdg_p",
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_PAW",
-        "fr": "SK_VC_LW_THDG_PAW"
-      },
-      "slug": "sk_vc_lw_thdg_paw",
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_THDG_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_THDG_PMAX",
-        "fr": "SK_VC_LW_THDG_PMAX"
-      },
-      "slug": "sk_vc_lw_thdg_pmax",
-      "maxLevel": 1
-    }
-  },
   "VC_MBFF_MV1": {
     "dataId": "VC_MBFF_MV1",
     "names": {
@@ -3371,6 +3185,192 @@
         "fr": "SK_VC_MBFF_MV1_PMAX"
       },
       "slug": "sk_vc_mbff_mv1_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_THDG": {
+    "dataId": "VC_LW_THDG",
+    "names": {
+      "en": "Serpentine Onslaught, Two-Headed Dragon",
+      "fr": "Dragon à deux têtes, le Ravageur écaillé"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 300
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 46,
+        "max": 180
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 5,
+        "max": 18
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsthdg",
+    "slug": "serpentine-onslaught-two-headed-dragon",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAX_DAMAGE",
+          "minValue": 750,
+          "maxValue": 1500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GS",
+        "fr": "SK_VC_LW_THDG_GS"
+      },
+      "slug": "sk_vc_lw_thdg_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAX_DAMAGE",
+          "minValue": 100,
+          "maxValue": 500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GS_AW",
+        "fr": "SK_VC_LW_THDG_GS_AW"
+      },
+      "slug": "sk_vc_lw_thdg_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "MAX_DAMAGE",
+          "minValue": 500,
+          "maxValue": 500,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_GSMAX",
+        "fr": "SK_VC_LW_THDG_GSMAX"
+      },
+      "slug": "sk_vc_lw_thdg_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_P",
+        "fr": "SK_VC_LW_THDG_P"
+      },
+      "slug": "sk_vc_lw_thdg_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_PAW",
+        "fr": "SK_VC_LW_THDG_PAW"
+      },
+      "slug": "sk_vc_lw_thdg_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_THDG_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_THDG_PMAX",
+        "fr": "SK_VC_LW_THDG_PMAX"
+      },
+      "slug": "sk_vc_lw_thdg_pmax",
       "maxLevel": 1
     }
   },
@@ -3745,6 +3745,191 @@
         "fr": "SK_VC_LW_CBVPARTY1_PMAX"
       },
       "slug": "sk_vc_lw_cbvparty1_pmax",
+      "maxLevel": 1
+    }
+  },
+  "VC_LW_DABL": {
+    "dataId": "VC_LW_DABL",
+    "names": {
+      "en": "Dream Fiend, Diabolos"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 32,
+        "max": 252
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 42,
+        "max": 164
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 14,
+        "max": 52
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsdabl",
+    "slug": "dream-fiend-diabolos",
+    "partyBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 15,
+          "maxValue": 25,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GS",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GS",
+        "fr": "SK_VC_LW_DABL_GS"
+      },
+      "slug": "sk_vc_lw_dabl_gs",
+      "maxLevel": 99
+    },
+    "partyBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 1,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GS_AW",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GS_AW",
+        "fr": "SK_VC_LW_DABL_GS_AW"
+      },
+      "slug": "sk_vc_lw_dabl_gs_aw",
+      "maxLevel": 4
+    },
+    "partyBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 5,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_GSMAX",
+      "type": "party",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_GSMAX",
+        "fr": "SK_VC_LW_DABL_GSMAX"
+      },
+      "slug": "sk_vc_lw_dabl_gsmax",
+      "maxLevel": 1
+    },
+    "unitBuffsClassic": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 2,
+          "maxValue": 5,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_P",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_P",
+        "fr": "SK_VC_LW_DABL_P"
+      },
+      "slug": "sk_vc_lw_dabl_p",
+      "maxLevel": 99
+    },
+    "unitBuffsAwake": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 1,
+          "maxValue": 3,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_PAW",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_PAW",
+        "fr": "SK_VC_LW_DABL_PAW"
+      },
+      "slug": "sk_vc_lw_dabl_paw",
+      "maxLevel": 4
+    },
+    "unitBuffsMax": {
+      "unlockStar": null,
+      "effects": [
+        {
+          "type": "DARK_ATK",
+          "minValue": 2,
+          "maxValue": 2,
+          "calcType": "fixe"
+        }
+      ],
+      "dataId": "SK_VC_LW_DABL_PMAX",
+      "type": "support",
+      "mainSkill": false,
+      "names": {
+        "en": "SK_VC_LW_DABL_PMAX",
+        "fr": "SK_VC_LW_DABL_PMAX"
+      },
+      "slug": "sk_vc_lw_dabl_pmax",
       "maxLevel": 1
     }
   },
@@ -9389,191 +9574,6 @@
       },
       "slug": "sk_vc_lw_mirror_p",
       "maxLevel": 30
-    }
-  },
-  "VC_LW_DABL": {
-    "dataId": "VC_LW_DABL",
-    "names": {
-      "en": "Dream Fiend, Diabolos"
-    },
-    "rarity": "UR",
-    "stats": {
-      "HP": {
-        "min": 32,
-        "max": 252
-      },
-      "TP": {},
-      "AP": {},
-      "ATK": {
-        "min": 42,
-        "max": 164
-      },
-      "DEF": {},
-      "SPR": {},
-      "MAG": {
-        "min": 14,
-        "max": 52
-      },
-      "DEX": {},
-      "AGI": {},
-      "LUCK": {},
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {},
-      "STRIKE_RES": {},
-      "MISSILE_RES": {},
-      "MAGIC_RES": {},
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "MOVE": {},
-      "JUMP": {}
-    },
-    "image": "lapsdabl",
-    "slug": "dream-fiend-diabolos",
-    "partyBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 15,
-          "maxValue": 25,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_GS",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_GS",
-        "fr": "SK_VC_LW_DABL_GS"
-      },
-      "slug": "sk_vc_lw_dabl_gs",
-      "maxLevel": 99
-    },
-    "partyBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 1,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_GS_AW",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_GS_AW",
-        "fr": "SK_VC_LW_DABL_GS_AW"
-      },
-      "slug": "sk_vc_lw_dabl_gs_aw",
-      "maxLevel": 4
-    },
-    "partyBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 5,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_GSMAX",
-      "type": "party",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_GSMAX",
-        "fr": "SK_VC_LW_DABL_GSMAX"
-      },
-      "slug": "sk_vc_lw_dabl_gsmax",
-      "maxLevel": 1
-    },
-    "unitBuffsClassic": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 2,
-          "maxValue": 5,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_P",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_P",
-        "fr": "SK_VC_LW_DABL_P"
-      },
-      "slug": "sk_vc_lw_dabl_p",
-      "maxLevel": 99
-    },
-    "unitBuffsAwake": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 1,
-          "maxValue": 3,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_PAW",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_PAW",
-        "fr": "SK_VC_LW_DABL_PAW"
-      },
-      "slug": "sk_vc_lw_dabl_paw",
-      "maxLevel": 4
-    },
-    "unitBuffsMax": {
-      "unlockStar": null,
-      "effects": [
-        {
-          "type": "DARK_ATK",
-          "minValue": 2,
-          "maxValue": 2,
-          "calcType": "fixe"
-        }
-      ],
-      "dataId": "SK_VC_LW_DABL_PMAX",
-      "type": "support",
-      "mainSkill": false,
-      "names": {
-        "en": "SK_VC_LW_DABL_PMAX",
-        "fr": "SK_VC_LW_DABL_PMAX"
-      },
-      "slug": "sk_vc_lw_dabl_pmax",
-      "maxLevel": 1
     }
   }
 }
