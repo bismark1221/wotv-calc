@@ -1225,7 +1225,208 @@
         "species": "netherBeast",
         "element": "fire",
         "image": "lapsifrt",
-        "skills": {},
+        "skills": {
+          "SK_IFRT_M_01": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "ファイア"
+            },
+            "slug": "huaia",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 20,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_02": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_02",
+            "rate": 50,
+            "names": {
+              "en": "ファイガ"
+            },
+            "slug": "huaiga",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_03": {
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 1
+              }
+            ],
+            "dataId": "SK_IFRT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "熱を集める"
+            },
+            "slug": "rewo-jimeru",
+            "cost": {
+              "type": "TP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_IFRT_M_04": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_04",
+            "rate": 0,
+            "names": {
+              "en": "地獄の火炎"
+            },
+            "slug": "di-yuno-huo-yan",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 200,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "slug": "ming-zhong1-999atupu",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_ICE_1_80_U": {
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "SK_BTL_RES_ICE_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "氷属性耐性1-80アップ"
+            },
+            "slug": "bing-shu-xing-nai-xing1-80atupu",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "slug": "zui-dahpdaun-wu-xiao",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_MOVE_1-20_U": {
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_MOVE_1-20_U",
+            "rate": 100,
+            "names": {
+              "en": "Move1-20アップ"
+            },
+            "slug": "move1-20atupu",
+            "maxLevel": 100,
+            "minLevel": 31
+          }
+        },
         "slug": "ihurito",
         "attack": {
           "names": {
@@ -1404,10 +1605,189 @@
           },
           "MAX_LV": {}
         },
-        "species": "plane",
+        "species": "plant",
         "element": "earth",
         "image": "lapscact_02",
-        "skills": {},
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "針千本"
+            },
+            "slug": "zhen-qian-ben",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 5,
+            "names": {
+              "en": "針万本"
+            },
+            "slug": "zhen-wan-ben",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 60,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_CACT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "麻痺針"
+            },
+            "slug": "ma-bei-zhen",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "slug": "zui-dahpdaun-wu-xiao",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "slug": "ct-bian-dong-wu-xiao",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_N_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_N_R",
+            "rate": 100,
+            "names": {
+              "en": "命中率+10"
+            },
+            "slug": "ming-zhong-lu-10",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_SSR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_SSR",
+            "rate": 100,
+            "names": {
+              "en": "命中率+15"
+            },
+            "slug": "ming-zhong-lu-15",
+            "maxLevel": 6,
+            "minLevel": 4
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "slug": "ming-zhong1-999atupu",
+            "maxLevel": 10,
+            "minLevel": 7
+          }
+        },
         "slug": "gorudosaboten",
         "attack": {
           "names": {

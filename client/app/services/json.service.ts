@@ -38,6 +38,12 @@ import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_0
 import { default as gl_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
 import { default as gl_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
 import { default as gl_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
+import { default as gl_raid_12 } from         '../../../data/raid/gl/raid_ev_09_01_set.json';
+import { default as gl_raid_13 } from         '../../../data/raid/gl/raid_ev_09_02_set.json';
+import { default as gl_raid_14 } from         '../../../data/raid/gl/raid_ev_09_03_set.json';
+import { default as gl_raid_15 } from         '../../../data/raid/gl/raid_ev_09_04_set.json';
+import { default as gl_raid_16 } from         '../../../data/raid/gl/raid_ev_09_05_set.json';
+import { default as gl_raid_17 } from         '../../../data/raid/gl/raid_ev_09_06_set.json';
 
 
 import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
@@ -51,6 +57,12 @@ import { default as jp_raid_8 } from         '../../../data/raid/jp/raid_ev_07_0
 import { default as jp_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
 import { default as jp_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
 import { default as jp_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
+import { default as jp_raid_12 } from         '../../../data/raid/gl/raid_ev_09_01_set.json';
+import { default as jp_raid_13 } from         '../../../data/raid/gl/raid_ev_09_02_set.json';
+import { default as jp_raid_14 } from         '../../../data/raid/gl/raid_ev_09_03_set.json';
+import { default as jp_raid_15 } from         '../../../data/raid/gl/raid_ev_09_04_set.json';
+import { default as jp_raid_16 } from         '../../../data/raid/gl/raid_ev_09_05_set.json';
+import { default as jp_raid_17 } from         '../../../data/raid/gl/raid_ev_09_06_set.json';
 
 @Injectable()
 export class JsonService {
@@ -180,7 +192,7 @@ export class JsonService {
     'beast',
     'demon',
     'dragon',
-    'plane',
+    'plant',
     'bird',
     'insect',
     'aquatic',
@@ -2150,6 +2162,12 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9
       this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10
       this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11
+      this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12
+      this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13
+      this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14
+      this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15
+      this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16
+      this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17
     } else {
       this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1
       this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2
@@ -2162,6 +2180,12 @@ export class JsonService {
       this[this.version].raidMaps[jp_raid_9.wcond.expr] = jp_raid_9
       this[this.version].raidMaps[jp_raid_10.wcond.expr] = jp_raid_10
       this[this.version].raidMaps[jp_raid_11.wcond.expr] = jp_raid_11
+      this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12
+      this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13
+      this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14
+      this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15
+      this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16
+      this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17
     }
 
     Object.keys(this[this.version].raid).forEach(raidId => {
