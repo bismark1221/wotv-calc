@@ -45,8 +45,6 @@ export class EquipmentComponent implements OnInit {
       } else {
         this.formatEquipment();
       }
-
-      console.log(this.equipment)
     });
   }
 
