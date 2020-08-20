@@ -163,7 +163,7 @@
     "dataId": "IT_US_PROTECT",
     "names": {
       "en": "Protect Drink",
-      "fr": "Reconstituant"
+      "fr": "Boisson Bouclier"
     },
     "slug": "protect-drink"
   },
@@ -3211,7 +3211,7 @@
     "dataId": "IT_PI_LW_MRLK",
     "names": {
       "en": "Meriluke Unit Shard",
-      "fr": "Fragment d'unité de Marie-luke"
+      "fr": "Fragment d'unité de Marie-Luke"
     },
     "slug": "meriluke-unit-shard"
   },
@@ -3586,14 +3586,16 @@
   "IT_PI_LW_ORDR": {
     "dataId": "IT_PI_LW_ORDR",
     "names": {
-      "en": "Oldoa Unit Shard"
+      "en": "Oldoa Unit Shard",
+      "fr": "Fragment d'unité d'Oldoa"
     },
     "slug": "oldoa-unit-shard"
   },
   "IT_PI_LW_LVES": {
     "dataId": "IT_PI_LW_LVES",
     "names": {
-      "en": "Raviesse Unit Shard"
+      "en": "Raviesse Unit Shard",
+      "fr": "Fragment d'unité de Raviesse"
     },
     "slug": "raviesse-unit-shard"
   },
@@ -4128,14 +4130,16 @@
   "IT_SB_AW_DABL_R2": {
     "dataId": "IT_SB_AW_DABL_R2",
     "names": {
-      "en": "Diabolos's Awakening Stone (2★)"
+      "en": "Diabolos's Awakening Stone (2★)",
+      "fr": "Pierre d’éveil de Diabolos (2★)"
     },
     "slug": "diaboloss-awakening-stone-2"
   },
   "IT_SB_AW_DABL_R3": {
     "dataId": "IT_SB_AW_DABL_R3",
     "names": {
-      "en": "Diabolos's Awakening Stone (3★)"
+      "en": "Diabolos's Awakening Stone (3★)",
+      "fr": "Pierre d’éveil de Diabolos (3★)"
     },
     "slug": "diaboloss-awakening-stone-3"
   },
@@ -4711,7 +4715,7 @@
     "dataId": "IT_AF_LW_BSW_003",
     "names": {
       "en": "Rune Blade Crafting Recipe",
-      "fr": "Recette d'artisanat : Lame runique"
+      "fr": "Recette d'artisanat : Épée runique"
     },
     "recipe": true,
     "slug": "rune-blade-crafting-recipe"
@@ -5713,7 +5717,8 @@
   "IT_EC_SUMMON_08_B": {
     "dataId": "IT_EC_SUMMON_08_B",
     "names": {
-      "en": "August Summon Medal B"
+      "en": "August Summon Medal B",
+      "fr": "Médaille d’invocation B [Août]"
     },
     "slug": "august-summon-medal-b"
   },
@@ -5753,7 +5758,7 @@
     "dataId": "IT_EC_EV02_1",
     "names": {
       "en": "Threat to the West, Rundall Medal",
-      "fr": "Médaille d'événement de juin"
+      "fr": "Médaille de « Rundall, menace à l'ouest »"
     },
     "slug": "threat-to-the-west-rundall-medal"
   },
@@ -5913,7 +5918,7 @@
     "dataId": "IT_US_SE_AW-ITEM_03",
     "names": {
       "en": "Select Awakening Prism x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de prisme d'éveil (x50)"
+      "fr": "Ticket sélectionneur de 50 prismes d'éveil"
     },
     "slug": "select-awakening-prism-x50-summon-ticket"
   },
@@ -5929,7 +5934,7 @@
     "dataId": "IT_US_SE_PI_COM_01",
     "names": {
       "en": "Select Element Fragment of Thought x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de fragment de pensée élémentaire x50"
+      "fr": "Ticket sélectionneur de 50 fragments de pensée élémentaires"
     },
     "slug": "select-element-fragment-of-thought-x50-summon-ticket"
   },
@@ -5969,7 +5974,7 @@
     "dataId": "IT_US_SE_SB_AW_01",
     "names": {
       "en": "Select Element Awakening Stone x20 Summon Ticket",
-      "fr": "Ticket sélectionneur de pierre d'éveil élémentaire x20"
+      "fr": "Ticket sélectionneur de 20 pierres d'éveil élémentaires"
     },
     "slug": "select-element-awakening-stone-x20-summon-ticket"
   },
@@ -5977,7 +5982,7 @@
     "dataId": "IT_US_SE_SB_EXP_01",
     "names": {
       "en": "Select Element Magicite (L) x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de Magilithe élémentaire (L) x50"
+      "fr": "Ticket sélectionneur de 50 magilithes élémentaires (L)"
     },
     "slug": "select-element-magicite-l-x50-summon-ticket"
   },
@@ -5993,7 +5998,7 @@
     "dataId": "IT_US_SE_SB_EXP_03",
     "names": {
       "en": "Select Element Magicite (M) x50 Summon Ticket",
-      "fr": "Ticket sélectionneur de Magilithe élémentaire (M) x50"
+      "fr": "Ticket sélectionneur de 50 magilithes élémentaires (M)"
     },
     "slug": "select-element-magicite-m-x50-summon-ticket"
   },
@@ -6057,7 +6062,7 @@
     "dataId": "IT_US_SE_JB_MM_01",
     "names": {
       "en": "Select Job Memory (Green) x1 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Vert) x1"
+      "fr": "Ticket sélectionneur d'un souvenir de job (vert)"
     },
     "slug": "select-job-memory-green-x1-summon-ticket"
   },
@@ -6065,7 +6070,7 @@
     "dataId": "IT_US_SE_JB_MM_02",
     "names": {
       "en": "Select Job Memory (Blue) x2 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Bleu) x2"
+      "fr": "Ticket sélectionneur de 2 souvenirs de job (bleus)"
     },
     "slug": "select-job-memory-blue-x2-summon-ticket"
   },
@@ -6073,7 +6078,7 @@
     "dataId": "IT_US_SE_JB_MM_03",
     "names": {
       "en": "Select Job Memory (Purple) x3 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Violet) x3"
+      "fr": "Ticket sélectionneur de 3 souvenirs de job (violets)"
     },
     "slug": "select-job-memory-purple-x3-summon-ticket"
   },
@@ -6081,7 +6086,7 @@
     "dataId": "IT_US_SE_JB_MM_04",
     "names": {
       "en": "Select Job Memory (Yellow) x4 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Jaune) x4"
+      "fr": "Ticket sélectionneur de 4 souvenirs de job (jaunes)"
     },
     "slug": "select-job-memory-yellow-x4-summon-ticket"
   },
@@ -6089,7 +6094,7 @@
     "dataId": "IT_US_SE_JB_MM_05",
     "names": {
       "en": "Select Job Memory (Red) x5 Summon Ticket",
-      "fr": "Ticket sélectionneur de Souvenir de Job (Rouge) x5"
+      "fr": "Ticket sélectionneur de 5 souvenirs de job (rouges)"
     },
     "slug": "select-job-memory-red-x5-summon-ticket"
   },
@@ -6145,7 +6150,7 @@
     "dataId": "IT_US_SE_AW-ITEM_04",
     "names": {
       "en": "Select Awakening Prism x30 Summon Ticket",
-      "fr": "Ticket sélectionneur de prisme d'éveil (x30)"
+      "fr": "Ticket sélectionneur de 30 prismes d'éveil"
     },
     "slug": "select-awakening-prism-x30-summon-ticket"
   },
@@ -6664,14 +6669,16 @@
   "IT_VPI_LW_DABL": {
     "dataId": "IT_VPI_LW_DABL",
     "names": {
-      "en": "\"Dream Fiend, Diabolos\" Vision Card Shard"
+      "en": "\"Dream Fiend, Diabolos\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Diabolos, le démon des rêves"
     },
     "slug": "dream-fiend-diabolos-vision-card-shard"
   },
   "IT_VPI_LW_CBVPARTY1": {
     "dataId": "IT_VPI_LW_CBVPARTY1",
     "names": {
-      "en": "\"Fleeting Blossom Banquet\" Vision Card Shard"
+      "en": "\"Fleeting Blossom Banquet\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Le banquet des floraisons éphémères"
     },
     "slug": "fleeting-blossom-banquet-vision-card-shard"
   },
@@ -6934,7 +6941,8 @@
   "IT_US_GL_SE_VPI_05": {
     "dataId": "IT_US_GL_SE_VPI_05",
     "names": {
-      "en": "Select UR Vision Card Shard x50 Summon Ticket"
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
     },
     "slug": "select-ur-vision-card-shard-x50-summon-ticket"
   },

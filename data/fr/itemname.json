@@ -82,7 +82,7 @@
         },
         {
             "key": "IT_US_PROTECT",
-            "value": "Reconstituant"
+            "value": "Boisson Bouclier"
         },
         {
             "key": "IT_US_HEALWATER",
@@ -1606,7 +1606,7 @@
         },
         {
             "key": "IT_PI_LW_MRLK",
-            "value": "Fragment d'unité de Marie-luke"
+            "value": "Fragment d'unité de Marie-Luke"
         },
         {
             "key": "IT_PI_LW_MGRT",
@@ -1791,6 +1791,14 @@
         {
             "key": "IT_PI_LW_SIMR",
             "value": "Fragment d'unité de Seymore"
+        },
+        {
+            "key": "IT_PI_LW_ORDR",
+            "value": "Fragment d'unité d'Oldoa"
+        },
+        {
+            "key": "IT_PI_LW_LVES",
+            "value": "Fragment d'unité de Raviesse"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -2055,6 +2063,14 @@
         {
             "key": "IT_SB_AW_THDG_R3",
             "value": "Pierre d’éveil du Dragon à deux têtes (3★)"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R2",
+            "value": "Pierre d’éveil de Diabolos (2★)"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R3",
+            "value": "Pierre d’éveil de Diabolos (3★)"
         },
         {
             "key": "IT_TICKET_STORY",
@@ -2338,7 +2354,7 @@
         },
         {
             "key": "IT_AF_LW_BSW_003",
-            "value": "Recette d'artisanat : Lame runique"
+            "value": "Recette d'artisanat : Épée runique"
         },
         {
             "key": "IT_AF_LW_BSW_004",
@@ -2765,6 +2781,10 @@
             "value": "Médaille d’invocation de FFXIV"
         },
         {
+            "key": "IT_US_G_FF14_01",
+            "value": "Ticket d'invocation FFXIV"
+        },
+        {
             "key": "IT_EC_SUMMON_03_A",
             "value": "Médaille d’invocation A [Mars]"
         },
@@ -2805,6 +2825,10 @@
             "value": "Médaille d’invocation A [Août]"
         },
         {
+            "key": "IT_EC_SUMMON_08_B",
+            "value": "Médaille d’invocation B [Août]"
+        },
+        {
             "key": "IT_EC_FFT_1",
             "value": "Médaille d'événement FFT"
         },
@@ -2822,7 +2846,7 @@
         },
         {
             "key": "IT_EC_EV02_1",
-            "value": "Médaille d'événement de juin"
+            "value": "Médaille de « Rundall, menace à l'ouest »"
         },
         {
             "key": "IT_EC_EV03_1",
@@ -2833,20 +2857,16 @@
             "value": "Médaille d'événement d'août"
         },
         {
-            "key": "IT_EC_RAID_02",
-            "value": "Médaille de raid du Chocoflan"
-        },
-        {
-            "key": "IT_EC_RAID_03",
-            "value": "Médaille de raid de la Guimauve blanche"
-        },
-        {
             "key": "IT_EC_FF1_1",
             "value": "Médaille d'événement FFI"
         },
         {
             "key": "IT_EC_FF1_2",
             "value": "Médaille d’invocation FFI"
+        },
+        {
+            "key": "IT_US_G_FFT_01",
+            "value": "Ticket d'invocation FFT"
         },
         {
             "key": "IT_AD_TICKET_2",
@@ -2906,11 +2926,15 @@
         },
         {
             "key": "IT_US_SE_AW-ITEM_03",
-            "value": "Ticket sélectionneur de prisme d'éveil (x50)"
+            "value": "Ticket sélectionneur de 50 prismes d'éveil"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_01",
+            "value": "Ticket sélectionneur de 200 prismes d'éveil"
         },
         {
             "key": "IT_US_SE_PI_COM_01",
-            "value": "Ticket sélectionneur de fragment de pensée élémentaire x50"
+            "value": "Ticket sélectionneur de 50 fragments de pensée élémentaires"
         },
         {
             "key": "IT_US_SE_JB_EM_01_01",
@@ -2930,11 +2954,11 @@
         },
         {
             "key": "IT_US_SE_SB_AW_01",
-            "value": "Ticket sélectionneur de pierre d'éveil élémentaire x20"
+            "value": "Ticket sélectionneur de 20 pierres d'éveil élémentaires"
         },
         {
             "key": "IT_US_SE_SB_EXP_01",
-            "value": "Ticket sélectionneur de Magilithe élémentaire (L) x50"
+            "value": "Ticket sélectionneur de 50 magilithes élémentaires (L)"
         },
         {
             "key": "IT_US_SE_SB_EXP_02",
@@ -2942,87 +2966,7 @@
         },
         {
             "key": "IT_US_SE_SB_EXP_03",
-            "value": "Ticket sélectionneur de Magilithe élémentaire (M) x50"
-        },
-        {
-            "key": "IT_US_SE_JB_MM_01",
-            "value": "Ticket sélectionneur de Souvenir de Job (Vert) x1"
-        },
-        {
-            "key": "IT_US_SE_JB_MM_02",
-            "value": "Ticket sélectionneur de Souvenir de Job (Bleu) x2"
-        },
-        {
-            "key": "IT_US_SE_JB_MM_03",
-            "value": "Ticket sélectionneur de Souvenir de Job (Violet) x3"
-        },
-        {
-            "key": "IT_US_SE_JB_MM_04",
-            "value": "Ticket sélectionneur de Souvenir de Job (Jaune) x4"
-        },
-        {
-            "key": "IT_US_SE_JB_MM_05",
-            "value": "Ticket sélectionneur de Souvenir de Job (Rouge) x5"
-        },
-        {
-            "key": "IT_US_SE_UR_U_01",
-            "value": "Ticket sélectionneur d'unité UR [A]"
-        },
-        {
-            "key": "IT_US_SE_AW-ITEM_01",
-            "value": "Ticket sélectionneur de 10 prismes d'éveil"
-        },
-        {
-            "key": "IT_US_GL_SE_SB_EXP_1",
-            "value": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
-        },
-        {
-            "key": "IT_US_GL_SE_SB_EXP_2",
-            "value": "Ticket sélectionneur de 10 magilithes élémentaires (M)"
-        },
-        {
-            "key": "IT_US_GL_SE_SB_EXP_3",
-            "value": "Ticket sélectionneur de 25 magilithes élémentaires (M)"
-        },
-        {
-            "key": "IT_US_GL_SE_SB_EXP_4",
-            "value": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
-        },
-        {
-            "key": "IT_US_GL_SE_VPI_01",
-            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-        },
-        {
-            "key": "IT_US_GL_SE_VPI_02",
-            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-        },
-        {
-            "key": "IT_US_GL_SE_VPI_03",
-            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-        },
-        {
-            "key": "IT_US_GL_SE_VPI_04",
-            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
-        },
-        {
-            "key": "IT_US_SE_UR_U_02",
-            "value": "Ticket sélectionneur d'unité UR recommandée [A]"
-        },
-        {
-            "key": "IT_US_SE_SSR_U_01",
-            "value": "Ticket sélectionneur d'unité MR recommandée"
-        },
-        {
-            "key": "IT_US_SE_SSR_U_GL01",
-            "value": "Ticket sélectionneur d'unité MR [A]"
-        },
-        {
-            "key": "IT_US_SE_PI_GL00",
-            "value": "Ticket sélectionneur de 40 fragments d'unité UR"
-        },
-        {
-            "key": "IT_US_SE_PI_GL01",
-            "value": "Ticket sélectionneur de 40 fragments d'unité UR"
+            "value": "Ticket sélectionneur de 50 magilithes élémentaires (M)"
         },
         {
             "key": "IT_US_G_U_UR_01",
@@ -3053,16 +2997,32 @@
             "value": "Ticket d'invocation d'atout-vision UR garanti [A]"
         },
         {
-            "key": "IT_US_G_FFT_01",
-            "value": "Ticket d'invocation FFT"
+            "key": "IT_US_SE_JB_MM_01",
+            "value": "Ticket sélectionneur d'un souvenir de job (vert)"
         },
         {
-            "key": "IT_US_G_FF14_01",
-            "value": "Ticket d'invocation FFXIV"
+            "key": "IT_US_SE_JB_MM_02",
+            "value": "Ticket sélectionneur de 2 souvenirs de job (bleus)"
         },
         {
-            "key": "IT_US_G_N_TW_10",
-            "value": "[Tour de porcelaine] Ticket d'invocation x10 normale"
+            "key": "IT_US_SE_JB_MM_03",
+            "value": "Ticket sélectionneur de 3 souvenirs de job (violets)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04",
+            "value": "Ticket sélectionneur de 4 souvenirs de job (jaunes)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05",
+            "value": "Ticket sélectionneur de 5 souvenirs de job (rouges)"
+        },
+        {
+            "key": "IT_US_SE_UR_U_01",
+            "value": "Ticket sélectionneur d'unité UR [A]"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_01",
+            "value": "Ticket sélectionneur de 10 prismes d'éveil"
         },
         {
             "key": "IT_US_G_U_SSR_UR_02",
@@ -3082,15 +3042,11 @@
         },
         {
             "key": "IT_US_SE_AW-ITEM_04",
-            "value": "Ticket sélectionneur de prisme d'éveil (x30)"
+            "value": "Ticket sélectionneur de 30 prismes d'éveil"
         },
         {
             "key": "IT_US_SE_AW-ITEM_05",
             "value": "Ticket sélectionneur de prisme d'éveil (xNN)"
-        },
-        {
-            "key": "IT_US_GL_SE_AW-ITEM_01",
-            "value": "Ticket sélectionneur de 200 prismes d'éveil"
         },
         {
             "key": "IT_VPI_LW_GLEM",
@@ -3325,10 +3281,6 @@
             "value": "Fragment de l'atout-vision : Admiratrices rivales"
         },
         {
-            "key": "IT_VPI_LW_THDG",
-            "value": "Fragment de l'atout-vision : Dragon à deux têtes, le Ravageur écaillé"
-        },
-        {
             "key": "IT_VPI_LW_ADLD",
             "value": "Fragment de l'atout-vision : La Magicienne jalouse"
         },
@@ -3341,8 +3293,20 @@
             "value": "Fragment de l'atout-vision : Faux-semblant"
         },
         {
+            "key": "IT_VPI_LW_THDG",
+            "value": "Fragment de l'atout-vision : Dragon à deux têtes, le Ravageur écaillé"
+        },
+        {
             "key": "IT_VPI_FF01_DMAC",
             "value": "Fragment de l'atout-vision : Sentinelle"
+        },
+        {
+            "key": "IT_VPI_LW_DABL",
+            "value": "Fragment de l'atout-vision : Diabolos, le démon des rêves"
+        },
+        {
+            "key": "IT_VPI_LW_CBVPARTY1",
+            "value": "Fragment de l'atout-vision : Le banquet des floraisons éphémères"
         },
         {
             "key": "IT_VC_EXP_01",
@@ -3431,6 +3395,74 @@
         {
             "key": "IT_GU_EXP_S1_03",
             "value": "Puissante mâchoire de lion (L)"
+        },
+        {
+            "key": "IT_EC_RAID_02",
+            "value": "Médaille de raid du Chocoflan"
+        },
+        {
+            "key": "IT_EC_RAID_03",
+            "value": "Médaille de raid de la Guimauve blanche"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_1",
+            "value": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_2",
+            "value": "Ticket sélectionneur de 10 magilithes élémentaires (M)"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_3",
+            "value": "Ticket sélectionneur de 25 magilithes élémentaires (M)"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_4",
+            "value": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_01",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_02",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_03",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_04",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_05",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_SE_UR_U_02",
+            "value": "Ticket sélectionneur d'unité UR recommandée [A]"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_01",
+            "value": "Ticket sélectionneur d'unité MR recommandée"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL01",
+            "value": "Ticket sélectionneur d'unité MR [A]"
+        },
+        {
+            "key": "IT_US_SE_PI_GL00",
+            "value": "Ticket sélectionneur de 40 fragments d'unité UR"
+        },
+        {
+            "key": "IT_US_SE_PI_GL01",
+            "value": "Ticket sélectionneur de 40 fragments d'unité UR"
+        },
+        {
+            "key": "IT_US_G_N_TW_10",
+            "value": "[Tour de porcelaine] Ticket d'invocation x10 normale"
         }
     ]
 }
