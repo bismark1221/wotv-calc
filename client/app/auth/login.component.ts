@@ -28,8 +28,6 @@ export class LoginComponent {
 
   login(provider) {
     this.authService.login(provider).then(user => {
-      console.log('USER')
-      console.log(user)
       this.modal.close(user)
     })
   }

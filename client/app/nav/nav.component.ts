@@ -55,10 +55,7 @@ export class NavComponent {
     this.menuDisabled = this.navService.menuDisabled;
     this.version = this.navService.getVersion();
     this.lang = this.translateService.currentLang
-
     this.user = this.authService.getUser()
-    console.log("FOOOO")
-    console.log(this.user)
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
@@ -105,6 +102,10 @@ export class NavComponent {
     this.navService.$menuDisabled.subscribe(menuDisabled => {
       this.menuDisabled = menuDisabled;
     });
+
+    this.authService.$user.subscribe(user => {
+      this.user = user;
+    });
   }
 
   changeLang(lang: string) {
@@ -141,11 +142,7 @@ export class NavComponent {
   openLoginModal() {
     const modalRef = this.modalService.open(LoginComponent, { windowClass: 'builder-modal' });
 
-    modalRef.result.then((user) => {
-      console.log("MODAL RESULT :")
-      console.log(user)
-    }, (reason) => {
-    });
+    modalRef.result.then((user) => {}, (reason) => {});
   }
 
   logout() {

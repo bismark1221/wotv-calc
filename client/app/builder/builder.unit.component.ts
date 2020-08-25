@@ -222,8 +222,6 @@ export class BuilderUnitComponent implements OnInit {
       this.searchText = ""
       this.updateFilteredUnits()
     }
-
-    console.log(this.unit)
   }
 
   changeStar(value) {

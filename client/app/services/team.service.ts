@@ -16,6 +16,7 @@ import { EquipmentService } from './equipment.service'
 import { CardService } from './card.service'
 import { EsperService } from './esper.service'
 import { UnitService } from './unit.service'
+import { AuthService } from './auth.service'
 
 @Injectable()
 export class TeamService {
@@ -38,7 +39,8 @@ export class TeamService {
     private esperService: EsperService,
     private unitService: UnitService,
     private http: HttpClient,
-    private firestore: AngularFirestore
+    private firestore: AngularFirestore,
+    private authService: AuthService
   ) {
     this.team = {
       name: "",
@@ -71,6 +73,8 @@ export class TeamService {
   }
 
   getSavableData(team) {
+    let user = this.authService.getUser()
+
     let data = {
       name: team.name,
       guild: {
@@ -79,7 +83,8 @@ export class TeamService {
         kirin: team.guild && team.guild.data ? team.guild.data.kirin : 0,
         bull: team.guild && team.guild.data ? team.guild.data.bull : 0
       },
-      units: []
+      units: [],
+      user: user ? user.uid : null
     }
 
     team.units.forEach(unit => {
