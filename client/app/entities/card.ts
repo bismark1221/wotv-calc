@@ -17,12 +17,8 @@ export class Card {
 
   image = "ITEMcrst";
 
-  unitBuffsClassic = new Skill();
-  unitBuffsAwake = new Skill();
-  unitBuffsMax = new Skill();
-  partyBuffsClassic = new Skill();
-  partyBuffsAwake = new Skill();
-  partyBuffsMax = new Skill();
+  unitBuffs = [];
+  partyBuffs;
   slug;
 
 
@@ -32,12 +28,8 @@ export class Card {
     this.names = card.names;
     this.stats = card.stats;
     this.image = card.image;
-    this.unitBuffsClassic = card.unitBuffsClassic;
-    this.unitBuffsAwake = card.unitBuffsAwake;
-    this.unitBuffsMax = card.unitBuffsMax;
-    this.partyBuffsClassic = card.partyBuffsClassic;
-    this.partyBuffsAwake = card.partyBuffsAwake;
-    this.partyBuffsMax = card.partyBuffsMax;
+    this.unitBuffs = card.unitBuffs;
+    this.partyBuffs = card.partyBuffs;
     this.slug = card.slug;
   }
 

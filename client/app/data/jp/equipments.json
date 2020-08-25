@@ -24493,6 +24493,324 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_LW_CLT_006": {
+    "names": {
+      "en": "フィデースラケルナ"
+    },
+    "slug": "huidesurakeruna",
+    "stats": {
+      "HP": {
+        "min": 26,
+        "max": 522
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 1,
+        "max": 16
+      },
+      "CRITIC_AVOID": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_LW_CLT_006",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-1",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-2",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-3",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+4"
+          },
+          "dataId": "SK_LW_DF_SLASH_4_N_SSR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-4",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+8"
+          },
+          "dataId": "SK_LW_DF_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-8",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_clt_006",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_006": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_DARK_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_BOMB": 15,
+        "IT_AF_MAT_DARK_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_BOMB": 35,
+        "IT_AF_MAT_DARK_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_BOMB": 75,
+        "IT_AF_MAT_DARK_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_CLT_006": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_BOMB": 155,
+        "IT_AF_MAT_DARK_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_CLT_006": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_BOMB": 315,
+        "IT_AF_MAT_DARK_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_RNG_001": {
     "names": {
       "en": "ラインストーンリング - Rhinestone Ring"

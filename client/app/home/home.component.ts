@@ -47,6 +47,17 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "25/08",
+        items: [
+          {type: "card", dataId: "VC_LW_SCAL"},
+          {type: "card", dataId: "VC_FFCC_MV1"},
+          {type: "card", dataId: "VC_FFCC_MV2"},
+          {type: "card", dataId: "VC_LW_TNBR"},
+          {type: "esper", dataId: "UN_LW_S_TNBR"},
+          {type: "equipment", dataId: "AF_LW_CLT_006"}
+        ]
+      },
+      {
         date: "20/08",
         items: [
           {type: "unit", dataId: "UN_LW_P_KTON_01"},
@@ -59,17 +70,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_LUCA"},
           {type: "card", dataId: "VC_LW_FIGHT"},
           {type: "equipment", dataId: "AF_LW_ACC_002"}
-        ]
-      },
-      {
-        date: "01/08",
-        items: [
-          {type: "unit", dataId: "UN_FF4_P_ROSA"},
-          {type: "unit", dataId: "UN_FF4_P_KAIN"},
-          {type: "esper", dataId: "UN_FF4_S_DMNW"},
-          {type: "card", dataId: "VC_FF4_DMNW"},
-          {type: "equipment", dataId: "AF_FF4_SPE_000"},
-          {type: "equipment", dataId: "AF_FF4_BOW_000"}
         ]
       }
     ]

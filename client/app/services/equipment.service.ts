@@ -104,6 +104,7 @@ export class EquipmentService {
     "AF_LW_SWO_023": "RECURRENT",
     "AF_LW_HAT_005": "RECURRENT",
     "AF_LW_MAC_009": "RECURRENT",
+    "AF_LW_CLT_006": "RECURRENT",
 
     "AF_LW_SWO_000": "GENERAL_SHOP",
     "AF_LW_BSW_000": "GENERAL_SHOP",

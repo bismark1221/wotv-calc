@@ -96,7 +96,8 @@ export class JsonService {
     raidMaps: {},
     wotvRaids: {},
     equipmentAwakes: {},
-    items: {}
+    items: {},
+    cardConditions: {}
   }
 
   jp = {
@@ -126,7 +127,8 @@ export class JsonService {
     raidMaps: {},
     wotvRaids: {},
     equipmentAwakes: {},
-    items: {}
+    items: {},
+    cardConditions: {}
   }
 
   names = {
@@ -218,6 +220,39 @@ export class JsonService {
     "plant",
     "spirit"
   ];
+
+  births = [
+    "",
+    "Unknown",
+    "Leonis",
+    "Hourn",
+    "Fenice",
+    "Wezett",
+    "CrystalFaith",
+    "Allyare",
+    "Rundall",
+    "Cyga",
+    "Guren",
+    "Owis",
+    "Hyndra",
+    "FFBE",
+    "FF1",
+    "FF2",
+    "FF3",
+    "FF4",
+    "FF5",
+    "FF6",
+    "FF7",
+    "FF8",
+    "FF9",
+    "FF10",
+    "FF11",
+    "FF12",
+    "FF13",
+    "FF14",
+    "FF15",
+    "FFT",
+  ]
 
   buffTypes = {
     1: "HP",
@@ -744,6 +779,15 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Item.json').toPromise();
   }
 
+  private GLCardCond() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCardLimitedCondition.json').toPromise()
+      .then(data => {
+        return data
+      }).catch(function(error) {
+        return {items:[]}
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -820,6 +864,10 @@ export class JsonService {
 
   private JPItem() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Item.json').toPromise();
+  }
+
+  private JPCardCond() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/VisionCardLimitedCondition.json').toPromise();
   }
 
 
@@ -919,6 +967,9 @@ export class JsonService {
 
       this.GLItem(),
       this.JPItem(),
+
+      this.GLCardCond(),
+      this.JPCardCond(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -939,6 +990,7 @@ export class JsonService {
       this.gl.raidBoss = this.formatJson(responses[39]);
       this.gl.equipmentAwakes = this.formatJson(responses[42]);
       this.gl.items = this.formatJson(responses[45]);
+      this.gl.cardConditions = this.formatJson(responses[47]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -959,6 +1011,7 @@ export class JsonService {
       this.jp.raidBoss = this.formatJson(responses[41]);
       this.jp.equipmentAwakes = this.formatJson(responses[43]);
       this.jp.items = this.formatJson(responses[46]);
+      this.jp.cardConditions = this.formatJson(responses[48]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1241,44 +1294,76 @@ export class JsonService {
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
     // party
     if (rawVisionCard.card_skill) {
-      visionCard.partyBuffsClassic = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill})
-    }
-
-    if (rawVisionCard.add_card_skill_buff_awake) {
-      visionCard.partyBuffsAwake = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake})
-    }
-
-    if (rawVisionCard.add_card_skill_buff_lvmax) {
-      visionCard.partyBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax})
+      visionCard.partyBuffs = {
+        classic: this.addSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill}),
+        awake: rawVisionCard.add_card_skill_buff_awake ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake}) : null,
+        lvmax: rawVisionCard.add_card_skill_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax}) : null
+      }
     }
 
     // self GL
     if (rawVisionCard.self_buff) {
-      visionCard.unitBuffsClassic = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff})
-    }
-
-    if (rawVisionCard.add_self_buff_awake) {
-      visionCard.unitBuffsAwake = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake})
-    }
-
-    if (rawVisionCard.add_self_buff_lvmax) {
-      visionCard.unitBuffsMax = this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax})
+      visionCard.unitBuffs = [{
+        classic: this.addSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff}),
+        awake: rawVisionCard.add_self_buff_awake ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake}) : null,
+        lvmax: rawVisionCard.add_self_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax}) : null
+      }]
     }
 
     // self JP
     if (rawVisionCard.self_buffs) {
-      let buffs = rawVisionCard.self_buffs[0]
-      if (buffs.self_buff) {
-        visionCard.unitBuffsClassic = this.addSkill(visionCard, {slot: 0, value: buffs.self_buff})
+      visionCard.unitBuffs = []
+      rawVisionCard.self_buffs.forEach(dataBuff => {
+        let buff = {
+          classic: dataBuff.self_buff ? this.addSkill(visionCard, {slot: 0, value: dataBuff.self_buff}) : null,
+          awake: dataBuff.add_self_buff_awake ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_awake}) : null,
+          lvmax: dataBuff.add_self_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_lvmax}) : null,
+          cond : dataBuff.buff_cond ? this.addCardCond(dataBuff.buff_cond) : null
+        }
+
+        visionCard.unitBuffs.push(buff)
+      })
+    }
+  }
+
+  private addCardCond(cond) {
+    let cardCond = this[this.version].cardConditions[cond]
+
+    if (cardCond) {
+      let formattedCond = {
+        type: null,
+        items: []
       }
 
-      if (buffs.add_self_buff_awake) {
-        visionCard.unitBuffsAwake = this.addSkill(visionCard, {slot: 0, value: buffs.add_self_buff_awake})
+      if (cardCond.births) {
+        formattedCond.type = "birth"
+        cardCond.births.forEach(birth => {
+          formattedCond.items.push(this.births[birth])
+        })
       }
 
-      if (buffs.add_self_buff_lvmax) {
-        visionCard.unitBuffsMax = this.addSkill(visionCard, {slot: 0, value: buffs.add_self_buff_lvmax})
+      if (cardCond.elem) {
+        formattedCond.type = "elem"
+        cardCond.elem.forEach(elem => {
+          formattedCond.items.push(this.elements[elem])
+        })
       }
+
+      if (cardCond.mainjobs) {
+        formattedCond.type = "job"
+        cardCond.mainjobs.forEach(job => {
+          formattedCond.items.push(job)
+        })
+      }
+
+      if (formattedCond.type === null) {
+        console.log("7 @@@@@ " + cond)
+        return null
+      }
+
+      return formattedCond
+    } else {
+      return null
     }
   }
 

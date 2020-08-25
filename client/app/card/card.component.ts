@@ -6,6 +6,7 @@ import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { JobService } from '../services/job.service';
 
 
 @Component({
@@ -15,6 +16,7 @@ import { NameService } from '../services/name.service';
 })
 export class CardComponent implements OnInit {
   card = null;
+  jobs = [];
 
   constructor(
     private cardService: CardService,
@@ -23,11 +25,13 @@ export class CardComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (this.card) {
         this.formatCard();
+        console.log(this.card)
       }
     });
   }
@@ -46,16 +50,51 @@ export class CardComponent implements OnInit {
   private formatCard() {
     if (this.card) {
       let lang = this.translateService.currentLang
-      let skills = ["unitBuffsClassic", "unitBuffsAwake", "unitBuffsMax", "partyBuffsClassic", "partyBuffsAwake", "partyBuffsMax"];
+      let skills = ["classic", "awake", "lvmax"];
 
       this.card.name = this.nameService.getName(this.card)
+
       skills.forEach(skillType => {
-        if (this.card[skillType]) {
-          this.card[skillType].effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(this.card, this.card[skillType], effect);
+        if (this.card.partyBuffs[skillType]) {
+          this.card.partyBuffs[skillType].effects.forEach(effect => {
+            effect.formatHtml = this.skillService.formatEffect(this.card, this.card.partyBuffs[skillType], effect);
           });
         }
-      });
+
+        this.card.unitBuffs.forEach(buff => {
+          if (buff[skillType]) {
+            if (buff[skillType].type !== "buff") {
+              buff[skillType].name = this.nameService.getName(buff[skillType])
+
+              buff[skillType].effects.forEach(effect => {
+                effect.formatHtml = this.skillService.formatEffect(this.unit, buff[skillType], effect);
+              });
+
+              buff[skillType].damageHtml = this.skillService.formatDamage(this.unit, buff[skillType], buff[skillType].damage);
+
+              if (buff[skillType].counter) {
+                buff[skillType].counterHtml = this.skillService.formatCounter(this.unit, buff[skillType], buff[skillType].counter);
+              }
+
+              this.skillService.formatRange(this.unit, buff[skillType]);
+            } else {
+              buff[skillType].effects.forEach(effect => {
+                effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
+              });
+            }
+          }
+        })
+      })
+
+
+      this.card.unitBuffs.forEach(buff => {
+        if (buff.cond && buff.cond.type == 'job') {
+          buff.cond.items.forEach((jobId, jobIndex) => {
+            let job = this.jobService.getJob(jobId)
+            buff.cond.items[jobIndex] = job ? job : buff.cond.items[jobIndex]
+          })
+        }
+      })
     }
   }
 }
