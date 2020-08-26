@@ -28,7 +28,7 @@ export class BuilderGuildComponent implements OnInit {
     }
 
     this.statues = this.guildService.getStatues()
-    this.statueNames = Object.keys(this.guild)
+    this.statueNames = Object.keys(this.statues)
   }
 
   saveGuild() {

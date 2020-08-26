@@ -14,7 +14,7 @@ import { NavService } from "./nav.service";
 })
 
 export class AuthService {
-  user: any;
+  user = null;
 
   private userDataSubject = new BehaviorSubject<any[]>(this.user);
   $user = this.userDataSubject.asObservable();
@@ -26,7 +26,6 @@ export class AuthService {
     private navService: NavService
   ) {
     this.fireauth.authState.subscribe(user => {
-      console.log("-------")
       this.updateUser(user)
     })
   }
@@ -34,45 +33,53 @@ export class AuthService {
   private updateUser(user, newLogin = false) {
     let result = null;
 
-    if (user) {
-      console.log("barr : " + newLogin)
-      console.log(user)
+    if (user && this.user == null) {
       this.user = new User(user.displayName, user.email, user.uid);
       result = this.loadUserData(newLogin)
-    } else {
+    } else if (user == null && this.user != null) {
       this.user = null
     }
 
     this.userDataSubject.next(this.user);
-
     return result
   }
 
   private loadUserData(newLogin = false) {
-    console.log("LOAD USER DATA : " + newLogin)
     return Promise.all(
-      this.loadSavedData(newLogin)
+      this.loadSavedData()
     ).then(responses => {
       let result = {
-        syncNotPossible: false
+        syncPossible: true
       }
 
       for (let i = 0; i <= 11; i++) {
+        // @ts-ignore
         if (responses[i].data.length > 0) {
-          result.syncNotPossible = true
+          result.syncPossible = false
         }
       }
 
-      console.log("newLogin : " + newLogin)
-      console.log("result.syncNotPossible : " + result.syncNotPossible)
-
-      if (!newLogin || result.syncNotPossible) {
-        console.log("SAVE TO LOCAL")
+      if (!newLogin || !result.syncPossible) {
         for (let i = 0; i <= 11; i++) {
-          this.localStorageService.set(responses[i].type, responses[i].data);
+          let data = {}
+
+          // @ts-ignore
+          responses[i].data.forEach(item => {
+            if (i == 5 || i == 11) {
+              data = item
+            } else if (i == 0 || i == 6) {
+              data[item.name] = item
+            } else {
+              if (!data[item.dataId]) {
+                data[item.dataId] = []
+              }
+              data[item.dataId].push(item)
+            }
+          })
+
+          // @ts-ignore
+          this.localStorageService.set(responses[i].type, data);
         }
-      } else {
-        console.log("ASK TO INITIATE SYNC ?")
       }
 
       return result
@@ -123,14 +130,15 @@ export class AuthService {
     return this.fireauth.signInWithPopup(authProvider).then(result => {
       let token = result.credential;
 
-      this.updateUser(result.user, true)
-
-      return this.user;
+      return this.updateUser(result.user, true)
     }).catch(function(error) {
       let errorCode = error.code;
       let errorMessage = error.message;
       let email = error.email;
       let credential = error.credential;
+      console.log(error)
+
+      return null
     });
 
     /*
@@ -144,7 +152,7 @@ export class AuthService {
   }
 
   logout() {
-    return this.fireauth.signOut().then(() => {
+    return this.fireauth.signOut().then(result => {
       this.updateUser(null)
       this.emptyLocalStorage()
     }).catch(function(error) {});
@@ -155,6 +163,45 @@ export class AuthService {
   }
 
   firstSync() {
+    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+    let promises = []
 
+    types.forEach(type => {
+      let data = this.localStorageService.get(type)
+
+      if (type !== 'guild' && type !== 'jp_guild') {
+        Object.keys(data).forEach(itemId => {
+          data[itemId].customName = "1"
+          data[itemId].user = this.user.uid
+
+          promises.push(this.firestore.collection(type).add(data[itemId]))
+        })
+      } else {
+        // @ts-ignore
+        data.user = this.user.uid
+
+        promises.push(this.firestore.collection(type).add(data))
+      }
+    })
+
+    return Promise.all(
+      promises
+    ).then(responses => {
+      console.log("FINISH SYNC")
+      this.emptyLocalStorage()
+      return this.loadUserData()
+    })
+  }
+
+  getAvailableSync() {
+    let data = {}
+    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+    let promises = []
+
+    types.forEach(type => {
+      data[type] = this.localStorageService.get(type)
+    })
+
+    return data
   }
 }

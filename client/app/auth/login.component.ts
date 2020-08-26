@@ -14,7 +14,8 @@ import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class LoginComponent {
-
+  step = 'login'
+  availableSync = []
 
   constructor(
     private authService: AuthService,
@@ -27,8 +28,39 @@ export class LoginComponent {
   }
 
   login(provider) {
-    this.authService.login(provider).then(user => {
-      this.modal.close(user)
+    this.authService.login(provider).then(result => {
+      if (result && result.syncPossible) {
+        this.step = 'sync'
+        let availableSync = this.authService.getAvailableSync()
+
+        let somethingToSync = false
+
+        Object.keys(availableSync).forEach(type => {
+          if (Object.keys(availableSync[type]).length > 0) {
+            this.availableSync.push({
+              type: type,
+              count: Object.keys(availableSync[type]).length
+            })
+            somethingToSync = true
+          }
+        })
+
+        if (!somethingToSync) {
+          this.modal.close()
+        }
+      } else {
+        this.modal.close()
+      }
     })
+  }
+
+  validateSync() {
+    this.authService.firstSync().then(result => {
+      this.modal.close()
+    })
+  }
+
+  dontSync() {
+    this.modal.close()
   }
 }

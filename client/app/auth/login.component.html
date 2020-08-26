@@ -1,5 +1,35 @@
-<div>
+<div *ngIf="step == 'login'">
   <button (click)="login('google')">GOOGLE</button><br/>
   <button (click)="login('facebook')">FACEBOOK</button><br/>
   <button (click)="login('twitter')">TWITTER</button>
+</div>
+
+<div *ngIf="step == 'sync'">
+  Do you want to sync your local data into your account ?
+  Be careful you will only need be able to sync the data from 1 brower only !
+  <table>
+    <tr>
+      <th colspan="2">
+        Synchronisable data
+      </th>
+    </tr>
+    <tr>
+      <th class="sub">
+        Type
+      </th>
+      <th class="sub">
+        Count
+      </th>
+    </tr>
+    <tr *ngFor="let type of availableSync">
+      <td>
+        {{ type.type }}
+      </td>
+      <td>
+        {{ type.count }}
+      </td>
+    </tr>
+  </table>
+  <button (click)="validateSync()">YES</button><br/>
+  <button (click)="dontSync()">NO</button><br/>
 </div>

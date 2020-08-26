@@ -30,7 +30,6 @@ export class UnitService {
   private oFyNcL: any;
   private savedVersion = null;
 
-  savedUnits
   unit
 
   private statsType = [
@@ -369,8 +368,7 @@ export class UnitService {
   }
 
   getSavedUnits() {
-    this.savedUnits = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
-    return this.savedUnits;
+    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
   }
 
   getSavableData(unit) {
@@ -434,13 +432,11 @@ export class UnitService {
   }
 
   saveUnit(unit) {
-    if (!this.savedUnits) {
-      this.getSavedUnits()
-    }
+    let savedUnits = this.getSavedUnits()
 
-    this.savedUnits[unit.dataId] = this.getSavableData(unit)
+    savedUnits[unit.dataId] = this.getSavableData(unit)
 
-    this.localStorageService.set(this.getLocalStorage(), this.savedUnits);
+    this.localStorageService.set(this.getLocalStorage(), savedUnits);
   }
 
   selectUnitForBuilder(unitId, customData = null) {
