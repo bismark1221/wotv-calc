@@ -2159,6 +2159,111 @@
     },
     "slug": "staff-mages-memory-red"
   },
+  "IT_JB_MM_FFT_AGRA": {
+    "dataId": "IT_JB_MM_FFT_AGRA",
+    "names": {
+      "en": "Holy Knight's Memory (Green)"
+    },
+    "slug": "holy-knights-memory-green"
+  },
+  "IT_JB_MM_FFT_AGRA_2": {
+    "dataId": "IT_JB_MM_FFT_AGRA_2",
+    "names": {
+      "en": "Holy Knight's Memory (Blue)"
+    },
+    "slug": "holy-knights-memory-blue"
+  },
+  "IT_JB_MM_FFT_AGRA_3": {
+    "dataId": "IT_JB_MM_FFT_AGRA_3",
+    "names": {
+      "en": "Holy Knight's Memory (Purple)"
+    },
+    "slug": "holy-knights-memory-purple"
+  },
+  "IT_JB_MM_FFT_AGRA_4": {
+    "dataId": "IT_JB_MM_FFT_AGRA_4",
+    "names": {
+      "en": "Holy Knight's Memory (Yellow)"
+    },
+    "slug": "holy-knights-memory-yellow"
+  },
+  "IT_JB_MM_FFT_AGRA_5": {
+    "dataId": "IT_JB_MM_FFT_AGRA_5",
+    "names": {
+      "en": "Holy Knight's Memory (Red)"
+    },
+    "slug": "holy-knights-memory-red"
+  },
+  "IT_JB_MM_FFT_DELT": {
+    "dataId": "IT_JB_MM_FFT_DELT",
+    "names": {
+      "en": "Squire's Memory (Delita: Green)"
+    },
+    "slug": "squires-memory-delita-green"
+  },
+  "IT_JB_MM_FFT_DELT_2": {
+    "dataId": "IT_JB_MM_FFT_DELT_2",
+    "names": {
+      "en": "Squire's Memory (Delita: Blue)"
+    },
+    "slug": "squires-memory-delita-blue"
+  },
+  "IT_JB_MM_FFT_DELT_3": {
+    "dataId": "IT_JB_MM_FFT_DELT_3",
+    "names": {
+      "en": "Squire's Memory (Delita: Purple)"
+    },
+    "slug": "squires-memory-delita-purple"
+  },
+  "IT_JB_MM_FFT_DELT_4": {
+    "dataId": "IT_JB_MM_FFT_DELT_4",
+    "names": {
+      "en": "Squire's Memory (Delita: Yellow)"
+    },
+    "slug": "squires-memory-delita-yellow"
+  },
+  "IT_JB_MM_FFT_DELT_5": {
+    "dataId": "IT_JB_MM_FFT_DELT_5",
+    "names": {
+      "en": "Squire's Memory (Delita: Red)"
+    },
+    "slug": "squires-memory-delita-red"
+  },
+  "IT_JB_MM_FFT_MSTD": {
+    "dataId": "IT_JB_MM_FFT_MSTD",
+    "names": {
+      "en": "Machinist's Memory (Green)"
+    },
+    "slug": "machinists-memory-green"
+  },
+  "IT_JB_MM_FFT_MSTD_2": {
+    "dataId": "IT_JB_MM_FFT_MSTD_2",
+    "names": {
+      "en": "Machinist's Memory (Blue)"
+    },
+    "slug": "machinists-memory-blue"
+  },
+  "IT_JB_MM_FFT_MSTD_3": {
+    "dataId": "IT_JB_MM_FFT_MSTD_3",
+    "names": {
+      "en": "Machinist's Memory (Purple)"
+    },
+    "slug": "machinists-memory-purple"
+  },
+  "IT_JB_MM_FFT_MSTD_4": {
+    "dataId": "IT_JB_MM_FFT_MSTD_4",
+    "names": {
+      "en": "Machinist's Memory (Yellow)"
+    },
+    "slug": "machinists-memory-yellow"
+  },
+  "IT_JB_MM_FFT_MSTD_5": {
+    "dataId": "IT_JB_MM_FFT_MSTD_5",
+    "names": {
+      "en": "Machinist's Memory (Red)"
+    },
+    "slug": "machinists-memory-red"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3598,6 +3703,27 @@
       "fr": "Fragment d'unité de Raviesse"
     },
     "slug": "raviesse-unit-shard"
+  },
+  "IT_PI_FFT_AGRA": {
+    "dataId": "IT_PI_FFT_AGRA",
+    "names": {
+      "en": "Agrias Unit Shard"
+    },
+    "slug": "agrias-unit-shard"
+  },
+  "IT_PI_FFT_DELT": {
+    "dataId": "IT_PI_FFT_DELT",
+    "names": {
+      "en": "Delita Unit Shard"
+    },
+    "slug": "delita-unit-shard"
+  },
+  "IT_PI_FFT_MSTD": {
+    "dataId": "IT_PI_FFT_MSTD",
+    "names": {
+      "en": "Mustadio Unit Shard"
+    },
+    "slug": "mustadio-unit-shard"
   },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
@@ -5242,6 +5368,14 @@
     "recipe": true,
     "slug": "armor-of-light-crafting-recipe"
   },
+  "IT_AF_FFT_ACC_001": {
+    "dataId": "IT_AF_FFT_ACC_001",
+    "names": {
+      "en": "Sortilége Crafting Recipe"
+    },
+    "recipe": true,
+    "slug": "sortilege-crafting-recipe"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5746,6 +5880,27 @@
     },
     "slug": "fft-summon-medal-b"
   },
+  "IT_EC_FFT_3": {
+    "dataId": "IT_EC_FFT_3",
+    "names": {
+      "en": "FFT Part II Event Medal"
+    },
+    "slug": "fft-part-ii-event-medal"
+  },
+  "IT_EC_FFT_2_2A": {
+    "dataId": "IT_EC_FFT_2_2A",
+    "names": {
+      "en": "FFT Part II Summon Medal A"
+    },
+    "slug": "fft-part-ii-summon-medal-a"
+  },
+  "IT_EC_FFT_2_2B": {
+    "dataId": "IT_EC_FFT_2_2B",
+    "names": {
+      "en": "FFT Part II Summon Medal B"
+    },
+    "slug": "fft-part-ii-summon-medal-b"
+  },
   "IT_EC_TOWER_001": {
     "dataId": "IT_EC_TOWER_001",
     "names": {
@@ -5969,6 +6124,20 @@
       "fr": "Ticket sélectionneur de 70 alcrists élémentaires (violets)"
     },
     "slug": "select-element-alcryst-purple-x70-summon-ticket"
+  },
+  "IT_US_SE_JB_EM_04_01": {
+    "dataId": "IT_US_SE_JB_EM_04_01",
+    "names": {
+      "en": "Select Element Alcryst (Yellow) x70 Summon Ticket"
+    },
+    "slug": "select-element-alcryst-yellow-x70-summon-ticket"
+  },
+  "IT_US_SE_JB_EM_05_01": {
+    "dataId": "IT_US_SE_JB_EM_05_01",
+    "names": {
+      "en": "Select Element Alcryst (Red) x70 Summon Ticket"
+    },
+    "slug": "select-element-alcryst-red-x70-summon-ticket"
   },
   "IT_US_SE_SB_AW_01": {
     "dataId": "IT_US_SE_SB_AW_01",
@@ -6682,6 +6851,20 @@
     },
     "slug": "fleeting-blossom-banquet-vision-card-shard"
   },
+  "IT_VPI_FFT_MV2": {
+    "dataId": "IT_VPI_FFT_MV2",
+    "names": {
+      "en": "\"Red Chocobo\" Vision Card Shard"
+    },
+    "slug": "red-chocobo-vision-card-shard"
+  },
+  "IT_VPI_FFT_MV3": {
+    "dataId": "IT_VPI_FFT_MV3",
+    "names": {
+      "en": "\"Blades of Grass\" Vision Card Shard"
+    },
+    "slug": "blades-of-grass-vision-card-shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -6986,6 +7169,13 @@
     },
     "slug": "select-ur-unit-shard-x40-summon-ticket"
   },
+  "IT_US_SE_PI_GL02": {
+    "dataId": "IT_US_SE_PI_GL02",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket"
+    },
+    "slug": "select-ur-unit-shard-x40-summon-ticket"
+  },
   "IT_US_G_N_TW_10": {
     "dataId": "IT_US_G_N_TW_10",
     "names": {
@@ -6993,5 +7183,13 @@
       "fr": "[Tour de porcelaine] Ticket d'invocation x10 normale"
     },
     "slug": "porcelain-tower-normal-10x-summon-ticket"
+  },
+  "IT_US_N_GACHA_10": {
+    "dataId": "IT_US_N_GACHA_10",
+    "names": {
+      "en": "IT_US_N_GACHA_10",
+      "fr": "IT_US_N_GACHA_10"
+    },
+    "slug": "it_us_n_gacha_10"
   }
 }

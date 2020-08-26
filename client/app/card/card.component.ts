@@ -67,16 +67,16 @@ export class CardComponent implements OnInit {
               buff[skillType].name = this.nameService.getName(buff[skillType])
 
               buff[skillType].effects.forEach(effect => {
-                effect.formatHtml = this.skillService.formatEffect(this.unit, buff[skillType], effect);
+                effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
               });
 
-              buff[skillType].damageHtml = this.skillService.formatDamage(this.unit, buff[skillType], buff[skillType].damage);
+              buff[skillType].damageHtml = this.skillService.formatDamage(this.card, buff[skillType], buff[skillType].damage);
 
               if (buff[skillType].counter) {
-                buff[skillType].counterHtml = this.skillService.formatCounter(this.unit, buff[skillType], buff[skillType].counter);
+                buff[skillType].counterHtml = this.skillService.formatCounter(this.card, buff[skillType], buff[skillType].counter);
               }
 
-              this.skillService.formatRange(this.unit, buff[skillType]);
+              this.skillService.formatRange(this.card, buff[skillType]);
             } else {
               buff[skillType].effects.forEach(effect => {
                 effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);

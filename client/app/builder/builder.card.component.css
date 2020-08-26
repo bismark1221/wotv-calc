@@ -78,3 +78,29 @@
   background-size: 40px;
   width: 40px;
 }
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 150px;
+}
+
+.timeImg {
+  height: 32px;
+  cursor: pointer;
+  margin-top: 2px;
+}

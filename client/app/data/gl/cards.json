@@ -4061,6 +4061,206 @@
       }
     ]
   },
+  "VC_FFT_MV3": {
+    "dataId": "VC_FFT_MV3",
+    "names": {
+      "en": "Blades of Grass"
+    },
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 331
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 39,
+        "max": 154
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 36
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "fftmv3",
+    "slug": "blades-of-grass",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV3_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFT_MV3_GS",
+          "fr": "SK_VC_FFT_MV3_GS"
+        },
+        "slug": "sk_vc_fft_mv3_gs",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV3_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFT_MV3_GSAW",
+          "fr": "SK_VC_FFT_MV3_GSAW"
+        },
+        "slug": "sk_vc_fft_mv3_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ACCURACY",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV3_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFT_MV3_GSMAX",
+          "fr": "SK_VC_FFT_MV3_GSMAX"
+        },
+        "slug": "sk_vc_fft_mv3_gsmax",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "percent",
+              "increaseMax": true
+            },
+            {
+              "type": "EVADE",
+              "minValue": -5,
+              "maxValue": -5,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_FFT_MV3_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFT_MV3_P",
+            "fr": "SK_VC_FFT_MV3_P"
+          },
+          "slug": "sk_vc_fft_mv3_p",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFT_MV3_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFT_MV3_PAW",
+            "fr": "SK_VC_FFT_MV3_PAW"
+          },
+          "slug": "sk_vc_fft_mv3_paw",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFT_MV3_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFT_MV3_PMAX",
+            "fr": "SK_VC_FFT_MV3_PMAX"
+          },
+          "slug": "sk_vc_fft_mv3_pmax",
+          "maxLevel": 1
+        }
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -7237,6 +7437,161 @@
             "fr": "SK_VC_LW_VNLA2_PAW"
           },
           "slug": "sk_vc_lw_vnla2_paw",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ]
+  },
+  "VC_FFT_MV2": {
+    "dataId": "VC_FFT_MV2",
+    "names": {
+      "en": "Red Chocobo"
+    },
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 273
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 10,
+        "max": 42
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 32,
+        "max": 127
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "fftmv2",
+    "slug": "red-chocobo",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV2_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFT_MV2_GS",
+          "fr": "SK_VC_FFT_MV2_GS"
+        },
+        "slug": "sk_vc_fft_mv2_gs",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "LIGHT_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFT_MV2_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFT_MV2_GSAW",
+          "fr": "SK_VC_FFT_MV2_GSAW"
+        },
+        "slug": "sk_vc_fft_mv2_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFT_MV2_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFT_MV2_P",
+            "fr": "SK_VC_FFT_MV2_P"
+          },
+          "slug": "sk_vc_fft_mv2_p",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFT_MV2_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFT_MV2_PAW",
+            "fr": "SK_VC_FFT_MV2_PAW"
+          },
+          "slug": "sk_vc_fft_mv2_paw",
           "maxLevel": 4
         },
         "lvmax": null

@@ -25218,7 +25218,7 @@
   "UN_FFT_S_CHCB_01": {
     "dataId": "UN_FFT_S_CHCB_01",
     "names": {
-      "en": "赤チョコボ"
+      "en": "赤チョコボ - Red Chocobo"
     },
     "rarity": "N",
     "skills": [
@@ -26456,7 +26456,7 @@
         117
       ]
     },
-    "slug": "chitiyokobo"
+    "slug": "red-chocobo"
   },
   "UN_LW_S_MDFY": {
     "dataId": "UN_LW_S_MDFY",
@@ -30992,10 +30992,7 @@
             "sp": 35,
             "effects": [
               {
-                "type": "WATER"
-              },
-              {
-                "type": "WATER_KILLER",
+                "type": "WATER_KILLER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -31252,10 +31249,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "WATER"
-              },
-              {
-                "type": "WATER_KILLER",
+                "type": "WATER_KILLER_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance"
@@ -31278,10 +31272,7 @@
             "sp": 50,
             "effects": [
               {
-                "type": "WATER"
-              },
-              {
-                "type": "WATER_KILLER",
+                "type": "WATER_KILLER_RES",
                 "minValue": 3,
                 "maxValue": 3,
                 "calcType": "resistance"
@@ -31422,10 +31413,7 @@
             "sp": 80,
             "effects": [
               {
-                "type": "WATER"
-              },
-              {
-                "type": "WATER_KILLER",
+                "type": "WATER_KILLER_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance"

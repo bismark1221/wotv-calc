@@ -731,6 +731,78 @@ export class SkillService {
       case "FLOAT_KILLER" :
         html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "HUMAN_KILLER_RES" :
+        html = "Increase human killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FENNES_KILLER_RES" :
+        html = "Increase fennes killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "REAPER_KILLER_RES" :
+        html = "Increase reaper killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BEAST_KILLER_RES" :
+        html = "Increase beast killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DEMON_KILLER_RES" :
+        html = "Increase demon killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "AQUATIC_KILLER_RES" :
+        html = "Increase aquatic killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ELEMENTAL_KILLER_RES" :
+        html = "Increase elemental killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "AVIAN_KILLER_RES" :
+        html = "Increase avian killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MALES_KILLER_RES" :
+        html = "Increase male killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DRAGON_KILLER_RES" :
+        html = "Increase dragon killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "METAL_KILLER_RES" :
+        html = "Increase metal killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "MACHINA_KILLER_RES" :
+        html = "Increase machina killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ESPER_KILLER_RES" :
+        html = "Increase Nether Beast killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "STONE_KILLER_RES" :
+        html = "Increase stone killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "EARTH_KILLER_RES" :
+        html = "Increase earth killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FIRE_KILLER_RES" :
+        html = "Increase fire killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "ICE_KILLER_RES" :
+        html = "Increase ice killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "LIGHTNING_KILLER_RES" :
+        html = "Increase ligthning killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "WIND_KILLER_RES" :
+        html = "Increase wind killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "WATER_KILLER_RES" :
+        html = "Increase water killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "LIGHT_KILLER_RES" :
+        html = "Increase light killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "DARK_KILLER_RES" :
+        html = "Increase dark killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "PLANT_KILLER_RES" :
+        html = "Increase plant killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "FLOAT_KILLER_RES" :
+        html = "Increase float killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "BARRIER_GENERAL" :
         html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break

@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { SkillService } from './skill.service'
 import { NavService } from './nav.service'
+import { NameService } from './name.service'
 import { Card } from '../entities/card';
 import { default as GL_CARDS } from '../data/gl/cards.json';
 import { default as JP_CARDS } from '../data/jp/cards.json';
@@ -65,7 +66,8 @@ export class CardService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private skillService: SkillService,
-    private navService: NavService
+    private navService: NavService,
+    private nameService: NameService
   ) {}
 
   private i(s: any) {
@@ -354,39 +356,61 @@ export class CardService {
       party: {}
     }
 
-    this.card.unitBuffsClassic.effects.forEach(effect => {
-      buffs.self[effect.type] = {}
-      buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (maxLevel - 1) * (this.card.level - 1)))
-      buffs.self[effect.type].calcType = effect.calcType
+    this.card.skills = []
+
+    this.card.unitBuffs.forEach(buff => {
+      if (buff.classic.type == 'support') {
+        buff.classic.effects.forEach(effect => {
+          buffs.self[effect.type] = {}
+          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (maxLevel - 1) * (this.card.level - 1)))
+          buffs.self[effect.type].calcType = effect.calcType
+        })
+
+        if (buff.awake && this.card.star > 0) {
+          buff.awake.effects.forEach(effect => {
+            buffs.self[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.card.star - 1)))
+          })
+        }
+
+        if (buff.lvmax && this.card.level == maxLevel) {
+          buff.lvmax.effects.forEach(effect => {
+            buffs.self[effect.type].value += effect.minValue
+          })
+        }
+      } else {
+        let skill = buff.classic
+        skill.level = this.card.level
+        skill.name = this.nameService.getName(skill)
+
+        skill.effects.forEach(effect => {
+          effect.formatHtml = this.skillService.formatEffect(this.card, skill, effect);
+        });
+
+        skill.damageHtml = this.skillService.formatDamage(this.card, skill, skill.damage);
+
+        if (skill.counter) {
+          skill.counterHtml = this.skillService.formatCounter(this.card, skill, skill.counter);
+        }
+
+        this.skillService.formatRange(this.card, skill);
+        this.card.skills.push(skill)
+      }
     })
 
-    if (this.card.unitBuffsAwake && this.card.star > 0) {
-      this.card.unitBuffsAwake.effects.forEach(effect => {
-        buffs.self[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.card.star - 1)))
-      })
-    }
-
-    if (this.card.unitBuffsMax && this.card.level == maxLevel) {
-      this.card.unitBuffsMax.effects.forEach(effect => {
-        buffs.self[effect.type].value += effect.minValue
-      })
-    }
-
-
-    this.card.partyBuffsClassic.effects.forEach(effect => {
+    this.card.partyBuffs.classic.effects.forEach(effect => {
       buffs.party[effect.type] = {}
       buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (maxLevel - 1) * (this.card.level - 1)))
       buffs.party[effect.type].calcType = effect.calcType
     })
 
-    if (this.card.partyBuffsAwake && this.card.star > 0) {
-      this.card.partyBuffsAwake.effects.forEach(effect => {
+    if (this.card.partyBuffs.awake && this.card.star > 0) {
+      this.card.partyBuffs.awake.effects.forEach(effect => {
         buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.card.star - 1)))
       })
     }
 
-    if (this.card.partyBuffsMax && this.card.level == maxLevel) {
-      this.card.partyBuffsMax.effects.forEach(effect => {
+    if (this.card.partyBuffs.lvmax && this.card.level == maxLevel) {
+      this.card.partyBuffs.lvmax.effects.forEach(effect => {
         buffs.party[effect.type].value += effect.minValue
       })
     }

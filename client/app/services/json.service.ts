@@ -1661,13 +1661,17 @@ export class JsonService {
 
                   let type = this.buffTypes[this[this.version].buffs[buff]["type" + i]]
                   if (this[this.version].buffs[buff]["tag" + i]) {
-                    if (type !== "KILLER" && type !== "IMBUE") {
+                    if (type !== "KILLER" && type !== "IMBUE" && type !== "WATER") {
                       skill.effects.push({
                         type: type
                       })
                     }
 
                     type = this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER"
+
+                    if (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance") {
+                      type = type + "_RES"
+                    }
                   }
 
 
