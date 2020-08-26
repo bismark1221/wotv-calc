@@ -16201,7 +16201,8 @@
     "image": "lapswpn_mac_000",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -16453,7 +16454,8 @@
     "image": "lapswpn_mac_001",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -16741,7 +16743,8 @@
     "image": "lapswpn_mac_002",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -17041,7 +17044,8 @@
     "image": "lapswpn_mac_003",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -17093,6 +17097,525 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
+    }
+  },
+  "AF_LOT_LW_MAC_009": {
+    "names": {
+      "en": "癒しのメイス"
+    },
+    "slug": "yusinomeisu",
+    "stats": {
+      "HP": {
+        "min": 8,
+        "max": 152
+      },
+      "ATK": {
+        "min": 6,
+        "max": 120
+      },
+      "MAG": {
+        "min": 8,
+        "max": 157
+      },
+      "ACCURACY": {
+        "min": 0,
+        "max": 32
+      }
+    },
+    "type": "MACE",
+    "dataId": "AF_LW_MAC_009",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "アサルト"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "asaruto"
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "マジック"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "mazituku"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃力+2"
+          },
+          "dataId": "SK_LW_MAGIC_1",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-li-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃力+3"
+          },
+          "dataId": "SK_LW_MAGIC_2",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-li-3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃力+5"
+          },
+          "dataId": "SK_LW_MAGIC_3",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-li-5",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃力+8"
+          },
+          "dataId": "SK_LW_MAGIC_4_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-li-8",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "魔法攻撃力+15"
+          },
+          "dataId": "SK_LW_MAGIC_5_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "mo-fa-gong-ji-li-15",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ケアルダ"
+          },
+          "dataId": "SK_LW_MAC_009_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "kearuda",
+          "cost": {
+            "type": "TP",
+            "value": 17
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 4,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 160,
+            "maxValue": 360
+          }
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_mac_009",
+    "equippableJobs": [
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_MAC_009": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_BONE": 5,
+        "IT_AF_MAT_WATER_01": 11,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_009": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_BONE": 15,
+        "IT_AF_MAT_WATER_01": 21,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_009": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_BONE": 35,
+        "IT_AF_MAT_WATER_01": 41,
+        "IT_AF_AW_MACE": 255
+      },
+      {
+        "IT_AF_LW_MAC_009": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_BONE": 75,
+        "IT_AF_MAT_WATER_01": 81,
+        "IT_AF_AW_MACE": 315
+      },
+      {
+        "IT_AF_LW_MAC_009": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_BONE": 155,
+        "IT_AF_MAT_WATER_01": 161,
+        "IT_AF_AW_MACE": 535
+      },
+      {
+        "IT_AF_LW_MAC_009": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_BONE": 315,
+        "IT_AF_MAT_WATER_01": 323,
+        "IT_AF_AW_MACE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
     }
   },
   "AF_LW_AXE_000": {
@@ -21339,7 +21862,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21595,7 +22119,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21906,7 +22431,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22229,7 +22755,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22552,7 +23079,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22675,7 +23203,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22951,7 +23480,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23259,7 +23789,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23579,7 +24110,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23903,7 +24435,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23954,6 +24487,324 @@
         "IT_AF_MAT_BONE": 630,
         "IT_AF_MAT_LESS_02": 638,
         "IT_AF_AW_ARMOR": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LOT_LW_CLT_006": {
+    "names": {
+      "en": "フィデースラケルナ"
+    },
+    "slug": "huidesurakeruna",
+    "stats": {
+      "HP": {
+        "min": 26,
+        "max": 522
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 1,
+        "max": 16
+      },
+      "CRITIC_AVOID": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_LW_CLT_006",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vuaitaru"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "sirudo"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "baria"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-1",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-2",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-3",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+4"
+          },
+          "dataId": "SK_LW_DF_SLASH_4_N_SSR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-4",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "斬撃攻撃耐性+8"
+          },
+          "dataId": "SK_LW_DF_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "zhan-ji-gong-ji-nai-xing-8",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_clt_006",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_006": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_DARK_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_BOMB": 15,
+        "IT_AF_MAT_DARK_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_BOMB": 35,
+        "IT_AF_MAT_DARK_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_CLT_006": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_BOMB": 75,
+        "IT_AF_MAT_DARK_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_CLT_006": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_BOMB": 155,
+        "IT_AF_MAT_DARK_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_CLT_006": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_BOMB": 315,
+        "IT_AF_MAT_DARK_01": 323,
+        "IT_AF_AW_ARMOR": 1125
       }
     ],
     "acquisition": {
@@ -24100,7 +24951,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24669,7 +25521,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25270,7 +26123,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25883,7 +26737,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26376,7 +27231,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26995,7 +27851,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27054,9 +27911,9 @@
   },
   "AF_LOT_FFT_ACC_001": {
     "names": {
-      "en": "ソルティレージュ"
+      "en": "ソルティレージュ - Sortilége"
     },
-    "slug": "soruteireziyu",
+    "slug": "sortilege",
     "stats": {
       "HP": {
         "min": 8,
@@ -27611,7 +28468,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27764,7 +28622,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27876,7 +28735,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27988,7 +28848,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28100,7 +28961,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28737,7 +29599,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29226,7 +30089,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30541,7 +31405,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31636,7 +32501,8 @@
     "image": "lapswpn_mac_005",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32309,7 +33175,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32410,7 +33277,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32511,7 +33379,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32612,7 +33481,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32748,7 +33618,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32879,7 +33750,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32983,7 +33855,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33087,7 +33960,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33191,7 +34065,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33269,7 +34144,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33347,7 +34223,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33500,7 +34377,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33641,7 +34519,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33768,7 +34647,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33897,7 +34777,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34028,7 +34909,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34147,7 +35029,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34266,7 +35149,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34385,7 +35269,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34478,7 +35363,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34614,7 +35500,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34707,7 +35594,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34922,7 +35810,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35119,7 +36008,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35412,7 +36302,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35545,7 +36436,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35732,7 +36624,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35874,7 +36767,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35989,7 +36883,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36301,7 +37196,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36502,7 +37398,8 @@
       "JB_FFT_AGRA",
       "JB_LW_CAL_FIRE",
       "JB_LW_GRSR",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36819,7 +37716,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36940,7 +37838,8 @@
       "JB_FFT_AGRA",
       "JB_LW_CAL_FIRE",
       "JB_LW_GRSR",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37124,7 +38023,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37236,7 +38136,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37373,7 +38274,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37505,7 +38407,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37602,9 +38505,9 @@
   },
   "AF_ACC_LW_ORDR_1": {
     "names": {
-      "en": "オルドアンエプロン"
+      "en": "オルドアンエプロン - Oldoan Apron"
     },
-    "slug": "orudoanepuron",
+    "slug": "oldoan-apron",
     "stats": {
       "HP": {
         "min": 158,
@@ -37705,9 +38608,9 @@
   },
   "AF_SWO_LW_LVES_1": {
     "names": {
-      "en": "ホロウスレイヴ"
+      "en": "ホロウスレイヴ - Hollow Slave"
     },
-    "slug": "horousureivu",
+    "slug": "hollow-slave",
     "stats": {
       "HP": {
         "min": 66,
@@ -37796,9 +38699,9 @@
   },
   "AF_ACC_FFT_AGRA_1": {
     "names": {
-      "en": "ホーリーナイトアーマー"
+      "en": "ホーリーナイトアーマー - Holy Knight Armor"
     },
-    "slug": "horinaitoama",
+    "slug": "holy-knight-armor",
     "stats": {
       "HP": {
         "min": 488,
@@ -37904,9 +38807,9 @@
   },
   "AF_ARM_FFT_DELT_1": {
     "names": {
-      "en": "エンデュランスベスト"
+      "en": "エンデュランスベスト - Endurance Vest"
     },
-    "slug": "endeyuransubesuto",
+    "slug": "endurance-vest",
     "stats": {
       "HP": {
         "min": 388,
@@ -38009,9 +38912,9 @@
   },
   "AF_GUN_FFT_MSTD_2": {
     "names": {
-      "en": "ベスロディオ"
+      "en": "ベスロディオ - Besrudio"
     },
-    "slug": "besurodeio",
+    "slug": "besrudio",
     "stats": {
       "HP": {
         "min": 107,
@@ -38186,7 +39089,8 @@
       "JB_LW_MST_FIRE",
       "JB_LW_CAL_FIRE",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38594,7 +39498,8 @@
       "JB_LW_CAL_FIRE",
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38734,7 +39639,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38924,7 +39830,8 @@
       "JB_LW_MST_FIRE",
       "JB_LW_CAL_FIRE",
       "JB_LW_MKN_FIRE",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39057,7 +39964,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39476,7 +40384,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39610,7 +40519,8 @@
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
       "JB_FF4_KAIN",
-      "JB_FF4_ROSA"
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39727,6 +40637,150 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FF4_P_KAIN"
+    }
+  },
+  "AF_ACC_LW_KTON_01_1": {
+    "names": {
+      "en": "夏の髪飾り"
+    },
+    "slug": "xiano-fa-shiri",
+    "stats": {
+      "HP": {
+        "min": 314,
+        "max": 314
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_KTON_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "夏華不惑の術"
+          },
+          "dataId": "SK_ACC_LW_KTON_01_1_1",
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "turn": 3
+            },
+            {
+              "type": "NULLIFY",
+              "ailments": [
+                "SILENCE",
+                "CHARM",
+                "IMMOBILIZE"
+              ]
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "xia-hua-bu-huono-shu",
+          "cost": {
+            "type": "TP",
+            "value": 28
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 3,
+            "s": 1
+          },
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_024",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_KTON_01"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -40408,7 +41462,8 @@
     "image": "lapswpn_mac_006",
     "equippableJobs": [
       "JB_LW_CLR_FIRE",
-      "JB_LW_CAL_FIRE"
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41397,9 +42452,9 @@
   },
   "AF_BSW_LW_ORDR_2": {
     "names": {
-      "en": "オルドアンソード"
+      "en": "オルドアンソード - Oldoan Sword"
     },
-    "slug": "orudoansodo",
+    "slug": "oldoan-sword",
     "stats": {
       "HP": {
         "min": 5,
@@ -41456,9 +42511,9 @@
   },
   "AF_LW_SHI_003": {
     "names": {
-      "en": "ラヴィエス盾"
+      "en": "ラヴィエス盾 - Raviesse's Shield"
     },
-    "slug": "ravuiesu-dun",
+    "slug": "raviesses-shield",
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_003",
@@ -41492,9 +42547,9 @@
   },
   "AF_SWO_FFT_AGRA_2": {
     "names": {
-      "en": "FFTアグリアス"
+      "en": "FFTアグリアス - FFT Agrias"
     },
-    "slug": "fftaguriasu",
+    "slug": "fft-agrias",
     "stats": {
       "HP": {
         "min": 4,
@@ -41563,9 +42618,9 @@
   },
   "AF_SWO_FFT_DELT_2": {
     "names": {
-      "en": "FFTディリータ"
+      "en": "FFTディリータ - FFT Delita"
     },
-    "slug": "fftdeirita",
+    "slug": "fft-delita",
     "stats": {
       "HP": {
         "min": 4,
@@ -42338,6 +43393,65 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_MAC_LW_KTON_01_2": {
+    "names": {
+      "en": "さざなみの棍"
+    },
+    "slug": "sazanamino-gun",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "MACE",
+    "dataId": "AF_MAC_LW_KTON_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_mac_008",
+    "equippableJobs": [
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [

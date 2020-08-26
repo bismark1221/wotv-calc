@@ -81,6 +81,62 @@
           <div *ngFor="let buff of card.buff.self">{{ buff }}</div>
         </td>
       </tr>
+    </tbody>
+  </table>
+  <table class="statsTable">
+    <tbody>
+      <tr *ngIf="card.skills.length > 0">
+        <th colspan="10">Skill</th>
+      </tr>
+      <tr *ngIf="card.skills.length > 0">
+        <th class="sub">name</th>
+        <th class="sub">Effects</th>
+        <th class="sub">Range</th>
+        <th class="sub">Casts</th>
+        <th class="sub">Hits</th>
+        <th class="sub">Cost</th>
+      </tr>
+    </tbody>
+    <tbody *ngFor="let skill of card.skills">
+      <tr>
+        <td class="skillNameTd">
+          <span>{{ skill.name }}</span>
+          <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+          <div *ngIf="skill.time && skill.time.minValue">
+            <ng-template #tip_time>
+              <div>
+                Min time: {{ skill.time.minValue }}<br />
+                Max time: {{ skill.time.maxValue }}
+              </div>
+            </ng-template>
+            <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+          </div>
+        </td>
+        <td class="skillEffectTd">
+          <div>{{ skill.counterHtml }}</div>
+          <div [innerHTML]="skill.damageHtml"></div>
+          <div *ngFor="let effect of skill.effects">
+            {{ effect.formatHtml }}
+          </div>
+        </td>
+        <td class="rangeTd">
+          <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
+          <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+            <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+          </div>
+        </td>
+        <td class="skillCastTd">
+          {{ skill.count }}
+        </td>
+        <td class="skillHitTd">
+          <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
+        </td>
+        <td class="skillCostTd">
+          <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+        </td>
+      </tr>
+    </tbody>
+    <tbody>
       <tr>
         <th colspan="10">Party Buff</th>
       </tr>

@@ -23,58 +23,57 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "26/08",
+        items: [
+          {type: "unit", dataId: "UN_FFT_P_AGRA"},
+          {type: "unit", dataId: "UN_FFT_P_DELT"},
+          {type: "unit", dataId: "UN_FFT_P_MSTD"},
+          {type: "card", dataId: "VC_FFT_MV3"},
+          {type: "card", dataId: "VC_FFT_MV2"},
+          {type: "esper", dataId: "UN_FFT_S_CHCB_01"}
+        ]
+      },
+      {
+        date: "19/08",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_ORDR"},
+          {type: "unit", dataId: "UN_LW_P_LVES"}
+        ]
+      },
+      {
         date: "12/08",
         items: [
           {type: "esper", dataId: "UN_LW_S_DABL"},
           {type: "card", dataId: "VC_LW_DABL"},
           {type: "card", dataId: "VC_LW_CBVPARTY1"}
         ]
-      },
-      {
-        date: "05/08",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_QILF"},
-          {type: "unit", dataId: "UN_LW_P_SIMR"}
-        ]
-      },
-      {
-        date: "29/07",
-        items: [
-          {type: "unit", dataId: "UN_FF1_P_WROL"},
-          {type: "esper", dataId: "UN_FF01_S_WRMC"},
-          {type: "card", dataId: "VC_FF01_DMAC"}
-        ]
       }
     ],
     JP: [
+      {
+        date: "25/08",
+        items: [
+          {type: "card", dataId: "VC_LW_SCAL"},
+          {type: "card", dataId: "VC_FFCC_MV1"},
+          {type: "card", dataId: "VC_FFCC_MV2"},
+          {type: "card", dataId: "VC_LW_TNBR"},
+          {type: "esper", dataId: "UN_LW_S_TNBR"},
+          {type: "equipment", dataId: "AF_LW_CLT_006"}
+        ]
+      },
+      {
+        date: "20/08",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_KTON_01"},
+          {type: "equipment", dataId: "AF_LW_MAC_009"}
+        ]
+      },
       {
         date: "08/07",
         items: [
           {type: "card", dataId: "VC_LW_LUCA"},
           {type: "card", dataId: "VC_LW_FIGHT"},
           {type: "equipment", dataId: "AF_LW_ACC_002"}
-        ]
-      },
-      {
-        date: "01/08",
-        items: [
-          {type: "unit", dataId: "UN_FF4_P_ROSA"},
-          {type: "unit", dataId: "UN_FF4_P_KAIN"},
-          {type: "esper", dataId: "UN_FF4_S_DMNW"},
-          {type: "card", dataId: "VC_FF4_DMNW"},
-          {type: "equipment", dataId: "AF_FF4_SPE_000"},
-          {type: "equipment", dataId: "AF_FF4_BOW_000"}
-        ]
-      },
-      {
-        date: "22/07",
-        items: [
-          {type: "unit", dataId: "UN_FF4_P_CECL"},
-          {type: "unit", dataId: "UN_LW_P_LATH"},
-          {type: "unit", dataId: "UN_LW_P_TITU"},
-          {type: "card", dataId: "VC_LW_GRSR2"},
-          {type: "esper", dataId: "UN_LW_S_CHCB1"},
-          {type: "card", dataId: "VC_LW_CHCB"},
         ]
       }
     ]

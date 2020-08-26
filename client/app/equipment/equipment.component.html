@@ -84,78 +84,77 @@
           </tbody>
         </table>
 
-        <table class="skillsTable" *ngIf="equipment.countSkills.length > 0">
-          <tbody *ngIf="equipment.activeSkill">
-            <tr>
-              <th colspan="6">Skill</th>
-            </tr>
-            <tr>
-              <th class="sub">Name</th>
-              <th class="sub">Effects</th>
-              <th class="sub">Range</th>
-              <th class="sub">Casts</th>
-              <th class="sub">Hits</th>
-              <th class="sub">Cost</th>
-            </tr>
-            <tr>
-              <td class="skillNameTd">
-                {{ equipment.skills[0][0].name }}
-                <span *ngIf="equipment.skills[0][0].based">
-                  <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
-                </span>
-                <div *ngIf="equipment.skills[0][0].time && equipment.skills[0][0].time.minValue">
-                  <ng-template #tip_time>
-                    <div>
-                      Min time: {{ equipment.skills[0][0].time.minValue }}<br />
-                      Max time: {{ equipment.skills[0][0].time.maxValue }}
-                    </div>
-                  </ng-template>
-                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+        <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.activeSkill">
+          <tr>
+            <th colspan="6">Skill</th>
+          </tr>
+          <tr>
+            <th class="sub">Name</th>
+            <th class="sub">Effects</th>
+            <th class="sub">Range</th>
+            <th class="sub">Casts</th>
+            <th class="sub">Hits</th>
+            <th class="sub">Cost</th>
+          </tr>
+          <tr>
+            <td class="skillNameTd">
+              {{ equipment.skills[0][0].name }}
+              <span *ngIf="equipment.skills[0][0].based">
+                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
+              </span>
+              <div *ngIf="equipment.skills[0][0].time && equipment.skills[0][0].time.minValue">
+                <ng-template #tip_time>
+                  <div>
+                    Min time: {{ equipment.skills[0][0].time.minValue }}<br />
+                    Max time: {{ equipment.skills[0][0].time.maxValue }}
+                  </div>
+                </ng-template>
+                <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+              </div>
+            </td>
+            <td class="skillEffectTd">
+              <div>{{ equipment.skills[0][0].counterHtml }}</div>
+              <div>{{ equipment.skills[0][0].damageHtml }}</div>
+              <div *ngFor="let effect of equipment.skills[0][0].effects">
+                <span [innerHTML]="effect.formatHtml"></span>
+              </div>
+            </td>
+            <td class="rangeTd">
+              <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
+              <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
+              </div>
+            </td>
+            <td class="skillCastTd">
+              {{ equipment.skills[0][0].count }}
+            </td>
+            <td class="skillHitTd">
+              <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
+            </td>
+            <td class="skillCostTd">
+              <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
+            </td>
+          </tr>
+        </table>
+
+        <table class="skillsTable" *ngIf="equipment.countSkills.length > 0 && equipment.passiveSkills.length > 0">
+          <tr>
+            <th colspan="6">Passive Effects</th>
+          </tr>
+          <tr *ngIf="equipment.countSkills.length > 1">
+            <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
+          </tr>
+          <tr *ngFor="let effectType of equipment.effectTypes">
+            <td *ngFor="let i of equipment.countSkills">
+              <div *ngFor="let skill of equipment.skills[i]">
+                <div *ngIf="skill.mainEffect == effectType">
+                  <div *ngFor="let effect of skill.effects">
+                    <span [innerHTML]="effect.formatHtml"></span>
+                  </div>
                 </div>
-              </td>
-              <td class="skillEffectTd">
-                <div>{{ equipment.skills[0][0].counterHtml }}</div>
-                <div>{{ equipment.skills[0][0].damageHtml }}</div>
-                <div *ngFor="let effect of equipment.skills[0][0].effects">
-                  <span [innerHTML]="effect.formatHtml"></span>
-                </div>
-              </td>
-              <td class="rangeTd">
-                <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
-                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                  <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
-                </div>
-              </td>
-              <td class="skillCastTd">
-                {{ equipment.skills[0][0].count }}
-              </td>
-              <td class="skillHitTd">
-                <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
-              </td>
-              <td class="skillCostTd">
-                <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
-              </td>
-            </tr>
-          </tbody>
-          <tbody *ngIf="equipment.passiveSkills.length > 0">
-            <tr>
-              <th colspan="6">Passive Effects</th>
-            </tr>
-            <tr *ngIf="equipment.countSkills.length > 1">
-              <td *ngFor="let i of equipment.countSkills"><span *ngIf="i > 0">+ </span>{{ i }}</td>
-            </tr>
-            <tr *ngFor="let effectType of equipment.effectTypes">
-              <td *ngFor="let i of equipment.countSkills" [attr.colspan]="equipment.activeSkill ? '6' : '1'">
-                <div *ngFor="let skill of equipment.skills[i]">
-                  <diV *ngIf="skill.mainEffect == effectType">
-                    <div *ngFor="let effect of skill.effects">
-                      <span [innerHTML]="effect.formatHtml"></span>
-                    </div>
-                  </diV>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+              </div>
+            </td>
+          </tr>
         </table>
       </div>
     </ng-template>

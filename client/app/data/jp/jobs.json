@@ -39295,7 +39295,7 @@
   "JB_FFT_AGRA": {
     "dataId": "JB_FFT_AGRA",
     "names": {
-      "en": "ホーリーナイト"
+      "en": "Holy Knight"
     },
     "statsModifiers": [
       {
@@ -39476,12 +39476,12 @@
         "ACC"
       ]
     },
-    "slug": "horinaito"
+    "slug": "holy-knight"
   },
   "JB_FFT_DELT": {
     "dataId": "JB_FFT_DELT",
     "names": {
-      "en": "見習い戦士"
+      "en": "Squire"
     },
     "statsModifiers": [
       {
@@ -39664,12 +39664,12 @@
         "ACC"
       ]
     },
-    "slug": "jian-xii-zhan-shi"
+    "slug": "squire"
   },
   "JB_FFT_MSTD": {
     "dataId": "JB_FFT_MSTD",
     "names": {
-      "en": "機工士"
+      "en": "Machinist"
     },
     "statsModifiers": [
       {
@@ -39850,7 +39850,7 @@
         "ACC"
       ]
     },
-    "slug": "ji-gong-shi"
+    "slug": "machinist"
   },
   "JB_LW_CAL_FIRE": {
     "dataId": "JB_LW_CAL_FIRE",
@@ -44130,5 +44130,191 @@
       ]
     },
     "slug": "baronno-long-qi-shi"
+  },
+  "JB_LW_MMC_FIRE": {
+    "dataId": "JB_LW_MMC_FIRE",
+    "names": {
+      "en": "言霊使い"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 768,
+        "ATK": 384,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 1217,
+        "ATK": 609,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 1536,
+        "ATK": 768,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 1783,
+        "ATK": 891,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 1985,
+        "ATK": 992,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 2156,
+        "ATK": 1078,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 2304,
+        "ATK": 1152,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 2434,
+        "ATK": 1217,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 2551,
+        "ATK": 1275,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 2656,
+        "ATK": 1328,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 2753,
+        "ATK": 1376,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 2841,
+        "ATK": 1421,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 2924,
+        "ATK": 1462,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -50
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 3000,
+        "ATK": 1500,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -50
+      }
+    ],
+    "image": "mmc",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "yan-ling-shii"
   }
 }

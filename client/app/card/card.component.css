@@ -34,3 +34,46 @@
 .effectsTable {
   margin-top: 10px;
 }
+
+.subJob {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.elementImg {
+  height: 40px;
+  margin-right: 5px;
+}
+
+.separatorLine {
+  height: 10px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.skillNameTd {
+  width: 150px;
+}
+
+.timeImg {
+  height: 32px;
+  cursor: pointer;
+  margin-top: 2px;
+}

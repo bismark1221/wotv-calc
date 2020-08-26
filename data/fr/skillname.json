@@ -54,7 +54,7 @@
         },
         {
             "key": "SK_LW_WAR_P_1",
-            "value": "ATT ↑ Niv. 1"
+            "value": "ATT ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_WAR_P_1_MONT",
@@ -666,7 +666,7 @@
         },
         {
             "key": "SK_LW_THI_P_2",
-            "value": "PA acquis ↑ niv. 1"
+            "value": "PA acquis ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_THI_M_3_SUB",
@@ -1194,7 +1194,7 @@
         },
         {
             "key": "SK_LW_BLM_P_1",
-            "value": "MAGIE ↑ Niv. 1"
+            "value": "MAGIE ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_BLM_M_7_SUB",
@@ -1662,7 +1662,7 @@
         },
         {
             "key": "SK_LW_RDM_P_1",
-            "value": "PA initiaux ↑ Niv. 1"
+            "value": "PA initiaux ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_RDM_P_2",
@@ -1834,7 +1834,7 @@
         },
         {
             "key": "SK_LW_GLMS_P_1",
-            "value": "PA acquis ↑ niv. 1"
+            "value": "PA acquis ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_GLMS_P_2",
@@ -2362,7 +2362,7 @@
         },
         {
             "key": "SK_LW_ASS_P_1",
-            "value": "Esquive ↑ Niv. 1"
+            "value": "Esquive ↑<br>Niv. 1"
         },
         {
             "key": "SK_LW_ASS_M_4_SUB",
@@ -2386,7 +2386,7 @@
         },
         {
             "key": "SK_LW_ASS_P_2",
-            "value": "PA acquis ↑ niv. 1"
+            "value": "PA acquis ↑<br>Niv. 1"
         },
         {
             "key": "SK_FF1_WROL_ATK",
@@ -3041,22 +3041,6 @@
             "value": "Adorable fontaine"
         },
         {
-            "key": "SK_CSLI_01_ATK",
-            "value": "Attaque normale"
-        },
-        {
-            "key": "SK_CSLI_01_M_01",
-            "value": "Lancer de guimauve"
-        },
-        {
-            "key": "SK_CSLI_01_M_02",
-            "value": "Fonte"
-        },
-        {
-            "key": "SK_CSLI_01_M_03",
-            "value": "Fête sucrée"
-        },
-        {
             "key": "SK_SLIM_ATK",
             "value": "Attaque normale"
         },
@@ -3071,6 +3055,22 @@
         {
             "key": "SK_SLIM_M_03",
             "value": "Propagation liquide"
+        },
+        {
+            "key": "SK_CSLI_01_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CSLI_01_M_01",
+            "value": "Lancer de guimauve"
+        },
+        {
+            "key": "SK_CSLI_01_M_02",
+            "value": "Fonte"
+        },
+        {
+            "key": "SK_CSLI_01_M_03",
+            "value": "Fête sucrée"
         },
         {
             "key": "SK_IFRT_ATK",
@@ -3277,6 +3277,22 @@
             "value": "Canon à graines"
         },
         {
+            "key": "SK_WRMC_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_WRMC_M_01",
+            "value": "Missile de dispersion"
+        },
+        {
+            "key": "SK_WRMC_M_02",
+            "value": "Canon laser"
+        },
+        {
+            "key": "SK_WRMC_M_03",
+            "value": "Nucléo-attaque"
+        },
+        {
             "key": "SK_THDG_ATK",
             "value": "Attaque normale"
         },
@@ -3305,20 +3321,24 @@
             "value": "Déchaînement"
         },
         {
-            "key": "SK_WRMC_ATK",
+            "key": "SK_DABL_ATK",
             "value": "Attaque normale"
         },
         {
-            "key": "SK_WRMC_M_01",
-            "value": "Missile de dispersion"
+            "key": "SK_DABL_M_01",
+            "value": "Terreur pourpre"
         },
         {
-            "key": "SK_WRMC_M_02",
-            "value": "Canon laser"
+            "key": "SK_DABL_M_02",
+            "value": "Gravité"
         },
         {
-            "key": "SK_WRMC_M_03",
-            "value": "Nucléo-attaque"
+            "key": "SK_DABL_M_03",
+            "value": "Soin Max"
+        },
+        {
+            "key": "SK_DABL_M_04",
+            "value": "Messager des ténèbres"
         },
         {
             "key": "SK_LW_E_VIK_ATK",
@@ -3355,26 +3375,6 @@
         {
             "key": "SK_LW_E_VIK_S_3",
             "value": "Esprit rebelle"
-        },
-        {
-            "key": "SK_GMK_ATK_NEEDLE",
-            "value": "Piège"
-        },
-        {
-            "key": "SK_GMK_ATK_FIRE",
-            "value": "Piège"
-        },
-        {
-            "key": "SK_GMK_ATK_ARROW",
-            "value": "Piège"
-        },
-        {
-            "key": "SK_GMK_ATK_KATA_1",
-            "value": "Jet de pierre"
-        },
-        {
-            "key": "SK_GMK_ATK_KATA_2",
-            "value": "Averse de pierres"
         },
         {
             "key": "SK_LB_LW_MONT",
@@ -3545,6 +3545,10 @@
             "value": "Collectionneuse de bâtons"
         },
         {
+            "key": "SK_LB_LW_ORDR",
+            "value": "Bomboldoa"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -3619,6 +3623,10 @@
         {
             "key": "SK_SMN_WRMC",
             "value": "Nucléo-attaque"
+        },
+        {
+            "key": "SK_SMN_DABL",
+            "value": "Messager des ténèbres"
         },
         {
             "key": "SK_US_POTION",
@@ -3997,6 +4005,18 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_SIMR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ORDR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_LVES",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -4079,6 +4099,90 @@
         {
             "key": "SK_LW_RNG_005_5",
             "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_005_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_005_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SWO_006_1",
+            "value": "Épée de corail"
+        },
+        {
+            "key": "SK_LW_SWO_006_5",
+            "value": "Épée de corail"
+        },
+        {
+            "key": "SK_LW_SWO_007_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_1",
+            "value": "Att de glace ↑ (Passif)"
+        },
+        {
+            "key": "SK_LW_AF_ICE_PA_5",
+            "value": "Att de glace ↑ (Passif)"
+        },
+        {
+            "key": "SK_LW_SPE_006_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_SPE_006_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_004_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_FTW_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_001_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_002_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_002_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_BSW_011_1",
+            "value": "Sabre carmin"
+        },
+        {
+            "key": "SK_LW_BSW_011_3",
+            "value": "Sabre carmin"
+        },
+        {
+            "key": "SK_LW_BSW_011_5",
+            "value": "Sabre carmin"
         },
         {
             "key": "SK_ACC_LW_MONT_1_1",
@@ -4179,6 +4283,14 @@
         {
             "key": "SK_ACC_LW_QILF_1_1",
             "value": "Fierté traître"
+        },
+        {
+            "key": "SK_ACC_LW_ORDR_1_1",
+            "value": "Tyrannie héréditaire"
+        },
+        {
+            "key": "SK_SWO_LW_LVES_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -4357,96 +4469,16 @@
             "value": ""
         },
         {
-            "key": "SK_SWO_LW_DRIO_1_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_SWO_005_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_SWO_005_5",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_SWO_006_1",
-            "value": "Épée de corail"
-        },
-        {
-            "key": "SK_LW_SWO_006_5",
-            "value": "Épée de corail"
-        },
-        {
-            "key": "SK_LW_SWO_007_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_AF_ICE_PA_1",
-            "value": "Att de glace ↑ (Passif)"
-        },
-        {
-            "key": "SK_LW_AF_ICE_PA_5",
-            "value": "Att de glace ↑ (Passif)"
-        },
-        {
             "key": "SK_KAT_LW_DIAA_1_1",
             "value": ""
         },
         {
-            "key": "SK_LW_SPE_006_1",
+            "key": "SK_SWO_LW_DRIO_1_1",
             "value": ""
         },
         {
-            "key": "SK_LW_SPE_006_5",
+            "key": "SK_KAT_LW_SIMR_1_1",
             "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_004_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_004_5",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_FTW_001_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_001_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_001_5",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_002_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_002_5",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_003_1",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_RNG_003_5",
-            "value": ""
-        },
-        {
-            "key": "SK_LW_BSW_011_1",
-            "value": "Sabre carmin"
-        },
-        {
-            "key": "SK_LW_BSW_011_3",
-            "value": "Sabre carmin"
-        },
-        {
-            "key": "SK_LW_BSW_011_5",
-            "value": "Sabre carmin"
         },
         {
             "key": "SK_VC_LW_GLEM_GS",
@@ -4749,18 +4781,6 @@
             "value": ""
         },
         {
-            "key": "SK_VC_LW_THDG_GS",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_THDG_GS_AW",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_THDG_GSMAX",
-            "value": ""
-        },
-        {
             "key": "SK_VC_LW_ADLD_GS",
             "value": ""
         },
@@ -4785,6 +4805,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_THDG_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_THDG_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_FF01_DMAC_GS",
             "value": ""
         },
@@ -4794,6 +4826,30 @@
         },
         {
             "key": "SK_VC_FF01_DMAC_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBVPARTY1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBVPARTY1_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBVPARTY1_GSMAX",
             "value": ""
         },
         {
@@ -5225,27 +5281,15 @@
             "value": ""
         },
         {
-            "key": "SK_VC_LW_ADLD_P",
+            "key": "SK_VC_LW_CBVPARTY1_P",
             "value": ""
         },
         {
-            "key": "SK_VC_LW_ADLD_PAW",
+            "key": "SK_VC_LW_CBVPARTY1_PAW",
             "value": ""
         },
         {
-            "key": "SK_VC_LW_WHITEDAY1_P",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_WHITEDAY1_PAW",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_VNLA2_P",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_VNLA2_PAW",
+            "key": "SK_VC_LW_CBVPARTY1_PMAX",
             "value": ""
         },
         {
@@ -5393,6 +5437,30 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_ADLD_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ADLD_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_WHITEDAY1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VNLA2_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_THDG_P",
             "value": ""
         },
@@ -5414,6 +5482,18 @@
         },
         {
             "key": "SK_VC_FF01_DMAC_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DABL_PMAX",
             "value": ""
         },
         {
@@ -5475,6 +5555,10 @@
         {
             "key": "SK_BTL_RANGE_1-20_U",
             "value": "Portée ↑ 1 - 20"
+        },
+        {
+            "key": "SK_BTL_RANGE_1-20_U_PA",
+            "value": "Portée ↑ 1 - 15"
         },
         {
             "key": "SK_BTL_HP_100-99900_D",
@@ -5997,6 +6081,74 @@
             "value": "Toutes les Rés élémentaires ↓ 1 - 80 (base)"
         },
         {
+            "key": "SK_BTL_RES_OTFIRE_1_80_U",
+            "value": "Toutes les Rés (sauf Rés feu) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWATER_1_80_U",
+            "value": "Toutes les Rés (sauf Rés eau) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWIND_1_80_U",
+            "value": "Toutes les Rés (sauf Rés vent) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTTHUNDER_1_80_U",
+            "value": "Toutes les Rés (sauf Rés foudre) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTICE_1_80_U",
+            "value": "Toutes les Rés (sauf Rés glace) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSOIL_1_80_U",
+            "value": "Toutes les Rés (sauf Rés terre) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTDARK_1_80_U",
+            "value": "Toutes les Rés (sauf Rés ombre) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSHINE_1_80_U",
+            "value": "Toutes les Rés (sauf Rés glace) ↑ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTFIRE_1_80_D",
+            "value": "Toutes les Rés (sauf Rés feu) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWATER_1_80_D",
+            "value": "Toutes les Rés (sauf Rés eau) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTWIND_1_80_D",
+            "value": "Toutes les Rés (sauf Rés vent) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTTHUNDER_1_80_D",
+            "value": "Toutes les Rés (sauf Rés foudre) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTICE_1_80_D",
+            "value": "Toutes les Rés (sauf Rés glace) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSOIL_1_80_D",
+            "value": "Toutes les Rés (sauf Rés terre) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTDARK_1_80_D",
+            "value": "Toutes les Rés (sauf Rés ombre) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTSHINE_1_80_D",
+            "value": "Toutes les Rés (sauf Rés lumière) ↓ 1 - 80 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_OTELEMALL_1_80_D",
+            "value": "Toutes les Rés (sauf Rés élémentaires) ↓ 1 - 80 (base)"
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U_PA",
             "value": "PV max ↑ 100 - 99 900 (Passif)"
         },
@@ -6095,6 +6247,14 @@
         {
             "key": "SK_BTL_KILLER_SHINE_1-100_U",
             "value": "Luminophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_CHARM_1-100_U",
+            "value": "Chance d'altération d'état [Charme] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_POIS_1-100_U",
+            "value": "Chance d'altération d'état [Poison] ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_TOAD_1-100_U",
@@ -6219,6 +6379,26 @@
         {
             "key": "SK_GMK_ATK_TEST_KATA_2",
             "value": "Attaque de Gadget provisoire (Zone de catapulte)"
+        },
+        {
+            "key": "SK_GMK_ATK_NEEDLE",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_FIRE",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_ARROW",
+            "value": "Piège"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_1",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_2",
+            "value": "Averse de pierres"
         },
         {
             "key": "SK_LW_WAR_P_2",

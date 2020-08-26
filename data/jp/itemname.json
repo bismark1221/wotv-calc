@@ -1301,6 +1301,26 @@
             "value": "バロンの竜騎士の記憶・緋"
         },
         {
+            "key": "IT_JB_MM_MMC",
+            "value": "言霊使いの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MMC_2",
+            "value": "言霊使いの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MMC_3",
+            "value": "言霊使いの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MMC_4",
+            "value": "言霊使いの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MMC_5",
+            "value": "言霊使いの記憶・緋"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "火の輝石・翠"
         },
@@ -2097,6 +2117,10 @@
             "value": "カインの欠片"
         },
         {
+            "key": "IT_PI_LW_KTON_01",
+            "value": "キトン（水着）の欠片"
+        },
+        {
             "key": "IT_SB_EXP_FIRE_01",
             "value": "赤の魔石（小）"
         },
@@ -2423,6 +2447,14 @@
         {
             "key": "IT_SB_AW_CHCB1_R3",
             "value": "チョコボの獣醒石（★3）"
+        },
+        {
+            "key": "IT_SB_AW_TNBR_R2",
+            "value": "トンベリの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_TNBR_R3",
+            "value": "トンベリの獣醒石（★3）"
         },
         {
             "key": "IT_TICKET_STORY",
@@ -2869,6 +2901,10 @@
             "value": "プラチナメイスのクラフトレシピ"
         },
         {
+            "key": "IT_AF_LW_MAC_009",
+            "value": "癒しのメイスのクラフトレシピ"
+        },
+        {
             "key": "IT_AF_LW_ARM_002",
             "value": "アイアンプレートのクラフトレシピ"
         },
@@ -3015,6 +3051,10 @@
         {
             "key": "IT_AF_LW_ACC_002",
             "value": "ソウルオブサマサのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_006",
+            "value": "フィデースラケルナのクラフトレシピ"
         },
         {
             "key": "IT_AF_SUP_HP",
@@ -3265,6 +3305,10 @@
             "value": "【8月】召喚メダルA"
         },
         {
+            "key": "IT_EC_SUMMON_08_B",
+            "value": "【8月】召喚メダルB"
+        },
+        {
             "key": "IT_EC_VISION",
             "value": "ビジョンメダル"
         },
@@ -3445,6 +3489,10 @@
             "value": "スペシャルサマー10連召喚券"
         },
         {
+            "key": "IT_US_G_SUMMER_02",
+            "value": "サマーバケーションノーマル10連召喚券"
+        },
+        {
             "key": "IT_US_10_U_SSR_UR_01",
             "value": "SSR以上１体確定10連召喚券A"
         },
@@ -3463,6 +3511,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_01",
             "value": "SSR以上確定ユニット召喚券A"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_05",
+            "value": "【11章公開】SSR以上確定ユニット召喚券"
         },
         {
             "key": "IT_US_SE_AW-ITEM_01",
@@ -3649,6 +3701,26 @@
             "value": "【CM記念】ジョブの記憶・緋×5選択召喚券"
         },
         {
+            "key": "IT_US_SE_JB_MM_01_4",
+            "value": "【11章公開】ジョブの記憶・翠×1選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_4",
+            "value": "【11章公開】ジョブの記憶・碧×2選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_4",
+            "value": "【11章公開】ジョブの記憶・紫×3選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_5",
+            "value": "【11章公開】ジョブの記憶・橘×4選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_5",
+            "value": "【11章公開】ジョブの記憶・緋×5選択召喚券"
+        },
+        {
             "key": "IT_US_SE_VPI_01",
             "value": "【2月】URVカード欠片×50選択召喚券"
         },
@@ -3723,6 +3795,18 @@
         {
             "key": "IT_US_SE_PI_11",
             "value": "FFⅣコラボユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_12",
+            "value": "【8属性強化】URユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_13",
+            "value": "【8属性強化】SSRユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_14",
+            "value": "おすすめURユニット欠片×40選択召喚券"
         },
         {
             "key": "IT_US_SE_R_UR_U_03",
@@ -3835,6 +3919,26 @@
         {
             "key": "IT_US_SE_JB_01_04",
             "value": "【CM記念】ジェダイト×15選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_05_04",
+            "value": "【11章公開】スピネル×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_05",
+            "value": "【11章公開】シトリン×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_05",
+            "value": "【11章公開】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_05",
+            "value": "【11章公開】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_05",
+            "value": "【11章公開】ジェダイト×15選択召喚券"
         },
         {
             "key": "IT_US_SE_UR_U_02",
@@ -4005,6 +4109,14 @@
             "value": "新たな研究対象の欠片"
         },
         {
+            "key": "IT_VPI_LW_SCAL",
+            "value": "闇夜に咲く花の欠片"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV1",
+            "value": "クリスタルを継ぐものたちの欠片"
+        },
+        {
             "key": "IT_VPI_LW_IGNT",
             "value": "鋼の魔人　鉄巨人の欠片"
         },
@@ -4119,6 +4231,14 @@
         {
             "key": "IT_VPI_LW_FIGHT",
             "value": "激突の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_TNBR",
+            "value": "怨嗟の灯　トンベリの欠片"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV2",
+            "value": "しずくをもとめての欠片"
         },
         {
             "key": "IT_VPI_LW_CACT",
