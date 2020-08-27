@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
@@ -38,7 +37,6 @@ export class TeamService {
     private cardService: CardService,
     private esperService: EsperService,
     private unitService: UnitService,
-    private http: HttpClient,
     private firestore: AngularFirestore,
     private authService: AuthService
   ) {

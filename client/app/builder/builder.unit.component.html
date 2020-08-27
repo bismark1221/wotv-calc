@@ -8,6 +8,57 @@
   <button (click)="copyLink()">Copy</button>
 </ng-template>
 
+<ng-template #loadModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="unitsListModal">
+    <h3>Units</h3>
+    <div class="unitList">
+      <table *ngIf="savedUnits[selectedUnitId] && savedUnits[selectedUnitId].length > 0">
+        <tr *ngFor="let savedUnit of savedUnits[selectedUnitId]">
+          <td>{{ savedUnit ? savedUnit.customName : '' }}</td>
+          <td><a (click)="loadUnit(savedUnit)"><i class="fa fa-download"></i></a></td>
+          <td><a (click)="deleteUnit(savedUnit)"><i class="fa fa-trash"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #saveModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="teamSaveModal">
+    <h3>Save unit</h3>
+    <input type="text" [(ngModel)]="unit.customName" class="saveNameInput" />
+    <button (click)="saveUnit(confirmSaveModal)" class="saveButton">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #confirmSaveModal let-modal>
+  <div>
+    <button type="button" class="close" aria-label="Close" (click)="closeConfirmModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="unitConfirmModal">
+    <span>This unit already exists, do you whant to replace it ?</span>
+    <div class="confirmButtons">
+      <button (click)="confirmSave()" class="replaceButton" >Replace</button>
+      <button (click)="closeConfirmModal()" class="cancelButton" >Cancel</button>
+    </div>
+  </div>
+</ng-template>
+
+
+
+
 <div class="row">
   <div class="searchBlock">
     <i class="fa fa-search" aria-hidden="true"></i>
@@ -20,18 +71,23 @@
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
     <div class="unitBlock" *ngIf="!unit && filteredUnits[rarity].length > 0">
-      <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index" (click)="selectUnit(filteredUnit.dataId)">
-        <div class="unitLogo">
-          <img src="assets/units/{{ filteredUnit.image }}_m.png" />
+      <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
+        <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': savedUnits[filteredUnit.dataId]}" (click)="selectUnit(filteredUnit.dataId)">
+          <div class="unitLogo">
+            <img src="assets/units/{{ filteredUnit.image }}_m.png" />
+          </div>
+          <div class="unitName" innerHTML="{{ filteredUnit.name | highlight: searchText }}"></div>
         </div>
-        <div class="unitName" innerHTML="{{ filteredUnit.name | highlight: searchText }}"></div>
+        <div class="loadDiv" *ngIf="savedUnits[filteredUnit.dataId] && savedUnits[filteredUnit.dataId].length > 0">
+          <a (click)="openLoadModal(loadModal, filteredUnit.dataId)"><i class="fa fa-download"></i></a>
+        </div>
         <hr *ngIf="j != filteredUnits[rarity].length - 1"/>
       </div>
     </div>
   </div>
 
   <div *ngIf="unit" style="width: 100%;">
-    <button (click)="save()">SAVE</button>
+    <button (click)="openSaveModal(saveModal)">SAVE</button>
     <button (click)="openLinkModal(builderLink)">Get Build Link</button>
   </div>
 
@@ -39,7 +95,7 @@
     <table>
       <tbody>
         <tr>
-          <th>{{ unit.name }}</th>
+          <th>{{ unit.name }}<span *ngIf="unit.customName"> - {{ unit.customName }}</span></th>
         </tr>
         <tr>
           <td>

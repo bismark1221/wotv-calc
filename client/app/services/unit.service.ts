@@ -3,6 +3,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { HttpClient } from '@angular/common/http';
 
 import { TranslateService } from '@ngx-translate/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
 import GL_UNITS from '../data/gl/units.json';
@@ -16,6 +17,7 @@ import { NameService } from './name.service'
 import { EquipmentService } from './equipment.service'
 import { CardService } from './card.service'
 import { EsperService } from './esper.service'
+import { AuthService } from './auth.service'
 
 @Injectable()
 export class UnitService {
@@ -164,7 +166,9 @@ export class UnitService {
     private equipmentService: EquipmentService,
     private cardService: CardService,
     private esperService: EsperService,
-    private http: HttpClient
+    private http: HttpClient,
+    private firestore: AngularFirestore,
+    private authService: AuthService
   ) {}
 
   private i(s: any) {
@@ -372,6 +376,8 @@ export class UnitService {
   }
 
   getSavableData(unit) {
+    let user = this.authService.getUser()
+
     let data = {
       dataId: unit.dataId,
       star: unit.star,
@@ -399,7 +405,9 @@ export class UnitService {
         kirin: unit.guild && unit.guild.data ? unit.guild.data.kirin : 0,
         bull: unit.guild && unit.guild.data ? unit.guild.data.bull : 0
       },
-      limitLv: unit.limit ? unit.limit.level : 0
+      limitLv: unit.limit ? unit.limit.level : 0,
+      user: user ? user.uid : null,
+      customName: unit.customName ? unit.customName : ''
     }
 
     if (unit.esper) {
@@ -429,14 +437,6 @@ export class UnitService {
     })
 
     return data
-  }
-
-  saveUnit(unit) {
-    let savedUnits = this.getSavedUnits()
-
-    savedUnits[unit.dataId] = this.getSavableData(unit)
-
-    this.localStorageService.set(this.getLocalStorage(), savedUnits);
   }
 
   selectUnitForBuilder(unitId, customData = null) {
@@ -503,15 +503,13 @@ export class UnitService {
 
   private initiateSavedUnit(customData = null) {
     let unit = customData
-    if (!unit) {
-      let savedUnits = this.getSavedUnits()
-      unit = savedUnits[this.unit.dataId]
-    }
 
     if (unit) {
-      this.unit.star = unit.star;
-      this.unit.lb = unit.lb;
-      this.unit.level = parseInt(unit.level);
+      this.unit.star = unit.star
+      this.unit.lb = unit.lb
+      this.unit.level = parseInt(unit.level)
+      this.unit.customName = unit.customName
+      this.unit.storeId = unit.storeId
 
       this.unit.jobs.forEach((jobId, jobIndex) => {
         this.unit.jobsData[jobIndex].level = unit.jobs[jobIndex]
@@ -578,6 +576,55 @@ export class UnitService {
     }
 
     return false
+  }
+
+  unitAlreadyExists(unit) {
+    let savedUnits = this.getSavedUnits()
+    let unitFinded = false
+
+    if (savedUnits[unit.dataId]) {
+      savedUnits[unit.dataId].forEach((savedUnit, savedUnitIndex) => {
+        if (savedUnit.customName == unit.customName) {
+          unitFinded = true
+        }
+      })
+    }
+
+    return unitFinded
+  }
+
+  saveUnit(unit, overwrite) {
+    let savableData = this.getSavableData(unit)
+
+    if (!overwrite) {
+      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
+        let savedUnits = this.getSavedUnits()
+
+        if (savedUnits[unit.dataId]) {
+          savedUnits[unit.dataId].push(savableData)
+        } else {
+          savedUnits[unit.dataId] = [savableData]
+        }
+
+        this.localStorageService.set(this.getLocalStorage(), savedUnits);
+      })
+    } else {
+      // update
+    }
+  }
+
+  deleteUnit(unit) {
+    this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).delete()
+
+    let savedUnits = this.getSavedUnits()
+
+    savedUnits[unit.dataId].forEach((savedUnit, savedUnitIndex) => {
+      if (savedUnit.storeId == unit.storeId) {
+        savedUnits[unit.dataId].splice(savedUnitIndex, 1)
+      }
+    })
+
+    this.localStorageService.set(this.getLocalStorage(), savedUnits);
   }
 
   changeStar() {

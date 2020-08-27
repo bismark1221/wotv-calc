@@ -467,6 +467,28 @@ tr.disable {
   display: inline-block;
 }
 
+.unitSelector {
+  display: block;
+}
+
+.unitSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  height: 72px;
+  padding-top: 20px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
+}
+
 .upperBlock .starsLbsLevels {
   display: inline-block;
   vertical-align: top;

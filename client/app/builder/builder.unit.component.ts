@@ -32,7 +32,6 @@ export class BuilderUnitComponent implements OnInit {
   units
   filteredUnits
   unit = null
-  selectedUnitId = null
 
   statueNames
 
@@ -131,6 +130,10 @@ export class BuilderUnitComponent implements OnInit {
   exportableLink = ""
   searchText = ""
 
+  savedUnits = {}
+  selectedUnitId = ""
+  confirmModal = null
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
@@ -166,6 +169,8 @@ export class BuilderUnitComponent implements OnInit {
     this.units = this.formatUnits(this.unitService.getUnitsForListing())
     this.updateFilteredUnits()
     this.translateUnits();
+
+    this.savedUnits = this.unitService.getSavedUnits()
   }
 
   private translateUnits() {
@@ -195,8 +200,6 @@ export class BuilderUnitComponent implements OnInit {
         return unit.name.toLowerCase().includes(text);
       })
     })
-
-
   }
 
   private loadGuild() {
@@ -206,7 +209,7 @@ export class BuilderUnitComponent implements OnInit {
       this.unit.guild.data = this.unit.savedGuild
     }
 
-    this.statueNames = Object.keys(this.unit.guild.data)
+    this.statueNames = Object.keys(this.unit.guild.statues)
     this.unitService.changeLevel()
   }
 
@@ -291,10 +294,6 @@ export class BuilderUnitComponent implements OnInit {
 
   getAvailableCounterNodes() {
     return this.unitService.getAvailableCounterNodes()
-  }
-
-  save() {
-    this.unitService.saveUnit(this.unit)
   }
 
   showHideDetail(type) {
@@ -389,6 +388,13 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.result.then((result) => {}, (reason) => {})
   }
 
+  openLoadModal(content, unitId) {
+    this.selectedUnitId = unitId
+
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
+  }
+
   closeModal() {
     this.modalService.dismissAll();
   }
@@ -477,5 +483,54 @@ export class BuilderUnitComponent implements OnInit {
 
   resetJob() {
     this.unitService.resetJob()
+  }
+
+  loadUnit(unit) {
+    this.selectUnit(unit.dataId, unit)
+    this.closeModal()
+  }
+
+  deleteUnit(unit) {
+    this.unitService.deleteUnit(unit)
+
+    this.savedUnits = this.unitService.getSavedUnits()
+
+    if (this.savedUnits[unit.dataId].length == 0) {
+      this.closeModal()
+    }
+  }
+
+  openSaveModal(content) {
+    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
+    modalRef.result.then((result) => {}, (reason) => {})
+  }
+
+  openConfirmModal(content) {
+    this.confirmModal = this.modalService.open(content, {windowClass: 'link-modal'});
+    this.confirmModal.result.then((result) => {}, (reason) => {})
+  }
+
+  closeConfirmModal() {
+    this.confirmModal.close()
+  }
+
+  saveUnit(confirmContent) {
+    if (this.unitService.unitAlreadyExists(this.unit)) {
+      this.openConfirmModal(confirmContent)
+    } else {
+      this.unitService.saveUnit(this.unit, false).then(result => {
+        // End loading
+        this.savedUnits = this.unitService.getSavedUnits()
+        this.closeModal()
+      })
+    }
+  }
+
+  confirmSave() {
+    this.unitService.saveUnit(this.unit, true).then(result => {
+      // End loading
+      this.savedUnits = this.unitService.getSavedUnits()
+      this.closeModal()
+    })
   }
 }

@@ -91,10 +91,19 @@ export class AuthService {
 
     ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild'].forEach(type => {
       promises.push(new Promise((resolve, reject) => {
-        this.firestore.collection(type, ref => ref.where('user', '==', this.user.uid)).valueChanges().subscribe(data => {
+        this.firestore.collection(type, ref => ref.where('user', '==', this.user.uid)).snapshotChanges().subscribe(data => {
+          let items = []
+
+          data.forEach(item => {
+            let itemData = item.payload.doc.data()
+          // @ts-ignore
+            itemData.storeId = item.payload.doc.id
+            items.push(itemData)
+          })
+
           resolve({
             type: type,
-            data: data
+            data: items
           })
         })
       }))
@@ -136,7 +145,8 @@ export class AuthService {
       let errorMessage = error.message;
       let email = error.email;
       let credential = error.credential;
-      console.log(error)
+
+      console.error(error)
 
       return null
     });
@@ -187,7 +197,6 @@ export class AuthService {
     return Promise.all(
       promises
     ).then(responses => {
-      console.log("FINISH SYNC")
       this.emptyLocalStorage()
       return this.loadUserData()
     })

@@ -67,7 +67,7 @@
     <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
   </div>
 
-  <div>
+  <div *ngIf="!user">
     <button (click)="openLoginModal()">LOGIN</button>
   </div>
 
