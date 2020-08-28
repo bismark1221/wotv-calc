@@ -13,6 +13,7 @@ import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service'
 import { NameService } from '../services/name.service'
+import { AuthService } from '../services/auth.service'
 
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
@@ -146,7 +147,8 @@ export class BuilderUnitComponent implements OnInit {
     private modalService: NgbModal,
     private navService: NavService,
     private clipboardService: ClipboardService,
-    private nameService: NameService
+    private nameService: NameService,
+    private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
@@ -163,6 +165,12 @@ export class BuilderUnitComponent implements OnInit {
 
         this.selectUnit(data.dataId, data)
       }
+    });
+  }
+
+  ngAfterViewInit() {
+    this.authService.$load.subscribe(user => {
+      this.savedUnits = this.unitService.getSavedUnits()
     });
   }
 
@@ -506,10 +514,6 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.result.then((result) => {}, (reason) => {})
   }
 
-  closeConfirmModal() {
-    this.confirmModal.close()
-  }
-
   saveUnit(confirmContent) {
     if (this.unitService.unitAlreadyExists(this.unit)) {
       this.saveStep = "confirm"
@@ -517,7 +521,7 @@ export class BuilderUnitComponent implements OnInit {
       this.saveStep = "loading"
       this.unitService.saveUnit(this.unit, false).then(result => {
         this.savedUnits = this.unitService.getSavedUnits()
-        //this.closeModal()
+        this.closeModal()
       })
     }
   }
@@ -526,7 +530,7 @@ export class BuilderUnitComponent implements OnInit {
     this.saveStep = "loading"
     this.unitService.saveUnit(this.unit, true).then(result => {
       this.savedUnits = this.unitService.getSavedUnits()
-      //this.closeModal()
+      this.closeModal()
     })
   }
 
@@ -534,7 +538,7 @@ export class BuilderUnitComponent implements OnInit {
     if (this.saveStep == 'confirm') {
       this.saveStep = "save"
     } else {
-      //this.closeModal()
+      this.closeModal()
     }
   }
 }

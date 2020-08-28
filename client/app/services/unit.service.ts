@@ -400,10 +400,10 @@ export class UnitService {
       card: null,
       equipments: [null, null, null],
       guild: {
-        serpent: unit.guild && unit.guild.data ? unit.guild.data.serpent : 0,
-        lion: unit.guild && unit.guild.data ? unit.guild.data.lion : 0,
-        kirin: unit.guild && unit.guild.data ? unit.guild.data.kirin : 0,
-        bull: unit.guild && unit.guild.data ? unit.guild.data.bull : 0
+        serpent: unit.guild && unit.guild.data && unit.guild.data.serpent ? unit.guild.data.serpent : 0,
+        lion: unit.guild && unit.guild.data && unit.guild.data.lion ? unit.guild.data.lion : 0,
+        kirin: unit.guild && unit.guild.data && unit.guild.data.kirin ? unit.guild.data.kirin : 0,
+        bull: unit.guild && unit.guild.data && unit.guild.data.bull ? unit.guild.data.bull : 0
       },
       limitLv: unit.limit ? unit.limit.level : 0,
       user: user ? user.uid : null,
@@ -598,6 +598,8 @@ export class UnitService {
 
     if (!overwrite) {
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
+        // @ts-ignore
+        savableData.storeId = data.id
         let savedUnits = this.getSavedUnits()
 
         if (savedUnits[unit.dataId]) {
@@ -609,7 +611,17 @@ export class UnitService {
         this.localStorageService.set(this.getLocalStorage(), savedUnits);
       })
     } else {
-      // update
+      return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
+        let savedUnits = this.getSavedUnits()
+
+        savedUnits[unit.dataId].forEach(savedUnit => {
+          if (savedUnit.storeId == unit.storeId) {
+            savedUnit = savableData
+          }
+        })
+
+        this.localStorageService.set(this.getLocalStorage(), savedUnits);
+      })
     }
   }
 

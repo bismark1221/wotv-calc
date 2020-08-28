@@ -15,9 +15,13 @@ import { NavService } from "./nav.service";
 
 export class AuthService {
   user = null;
+  load = 0;
 
-  private userDataSubject = new BehaviorSubject<any[]>(this.user);
+  private userDataSubject = new BehaviorSubject(this.user);
   $user = this.userDataSubject.asObservable();
+
+  private loadDataSubject = new BehaviorSubject(this.load);
+  $load = this.loadDataSubject.asObservable();
 
   constructor(
     private fireauth: AngularFireAuth,
@@ -59,6 +63,22 @@ export class AuthService {
         }
       }
 
+      if (result.syncPossible) {
+        let localDataFound = false
+        let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+
+        types.forEach(type => {
+          let savedData = this.localStorageService.get(type)
+          if (savedData && Object.keys(savedData).length > 0) {
+            localDataFound = true
+          }
+        })
+
+        if (!localDataFound) {
+          result.syncPossible = false
+        }
+      }
+
       if (!newLogin || !result.syncPossible) {
         for (let i = 0; i <= 11; i++) {
           let data = {}
@@ -80,6 +100,9 @@ export class AuthService {
           // @ts-ignore
           this.localStorageService.set(responses[i].type, data);
         }
+
+        this.load++
+        this.loadDataSubject.next(this.load)
       }
 
       return result
@@ -116,6 +139,9 @@ export class AuthService {
     ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild'].forEach(type => {
       this.localStorageService.remove(type)
     })
+
+    this.load++
+    this.loadDataSubject.next(this.load)
   }
 
   login(provider) {
@@ -178,19 +204,20 @@ export class AuthService {
 
     types.forEach(type => {
       let data = this.localStorageService.get(type)
+      if (data && Object.keys(data).length > 0) {
+        if (type !== 'guild' && type !== 'jp_guild') {
+          Object.keys(data).forEach(itemId => {
+            data[itemId].customName = "1"
+            data[itemId].user = this.user.uid
 
-      if (type !== 'guild' && type !== 'jp_guild') {
-        Object.keys(data).forEach(itemId => {
-          data[itemId].customName = "1"
-          data[itemId].user = this.user.uid
+            promises.push(this.firestore.collection(type).add(data[itemId]))
+          })
+        } else {
+          // @ts-ignore
+          data.user = this.user.uid
 
-          promises.push(this.firestore.collection(type).add(data[itemId]))
-        })
-      } else {
-        // @ts-ignore
-        data.user = this.user.uid
-
-        promises.push(this.firestore.collection(type).add(data))
+          promises.push(this.firestore.collection(type).add(data))
+        }
       }
     })
 

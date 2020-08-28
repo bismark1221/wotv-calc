@@ -32,11 +32,10 @@ export class LoginComponent {
       if (result && result.syncPossible) {
         this.step = 'sync'
         let availableSync = this.authService.getAvailableSync()
-
         let somethingToSync = false
 
         Object.keys(availableSync).forEach(type => {
-          if (Object.keys(availableSync[type]).length > 0) {
+          if (availableSync[type] && Object.keys(availableSync[type]).length > 0) {
             this.availableSync.push({
               type: type,
               count: Object.keys(availableSync[type]).length
