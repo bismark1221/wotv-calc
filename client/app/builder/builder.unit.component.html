@@ -30,31 +30,28 @@
 
 <ng-template #saveModal let-modal>
   <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <button type="button" class="close" aria-label="Close" (click)="closeSave()" *ngIf="saveStep != 'loading'">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="teamSaveModal">
+  <div class="teamSaveModal" *ngIf="saveStep == 'save'">
     <h3>Save unit</h3>
     <input type="text" [(ngModel)]="unit.customName" class="saveNameInput" />
     <button (click)="saveUnit(confirmSaveModal)" class="saveButton">Save</button>
   </div>
-</ng-template>
-
-<ng-template #confirmSaveModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeConfirmModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="unitConfirmModal">
+  <div class="unitConfirmModal" *ngIf="saveStep == 'confirm'">
     <span>This unit already exists, do you whant to replace it ?</span>
     <div class="confirmButtons">
       <button (click)="confirmSave()" class="replaceButton" >Replace</button>
-      <button (click)="closeConfirmModal()" class="cancelButton" >Cancel</button>
+      <button (click)="closeSave()" class="cancelButton" >Cancel</button>
     </div>
   </div>
+  <div class="unitConfirmModal" *ngIf="saveStep == 'loading'">
+    <span>Save in progress</span>
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
 </ng-template>
+
 
 
 

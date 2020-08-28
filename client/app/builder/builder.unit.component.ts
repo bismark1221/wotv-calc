@@ -132,7 +132,8 @@ export class BuilderUnitComponent implements OnInit {
 
   savedUnits = {}
   selectedUnitId = ""
-  confirmModal = null
+  saveStep = "save"
+  confirmLoading = false
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -505,32 +506,35 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.result.then((result) => {}, (reason) => {})
   }
 
-  openConfirmModal(content) {
-    this.confirmModal = this.modalService.open(content, {windowClass: 'link-modal'});
-    this.confirmModal.result.then((result) => {}, (reason) => {})
-  }
-
   closeConfirmModal() {
     this.confirmModal.close()
   }
 
   saveUnit(confirmContent) {
     if (this.unitService.unitAlreadyExists(this.unit)) {
-      this.openConfirmModal(confirmContent)
+      this.saveStep = "confirm"
     } else {
+      this.saveStep = "loading"
       this.unitService.saveUnit(this.unit, false).then(result => {
-        // End loading
         this.savedUnits = this.unitService.getSavedUnits()
-        this.closeModal()
+        //this.closeModal()
       })
     }
   }
 
   confirmSave() {
+    this.saveStep = "loading"
     this.unitService.saveUnit(this.unit, true).then(result => {
-      // End loading
       this.savedUnits = this.unitService.getSavedUnits()
-      this.closeModal()
+      //this.closeModal()
     })
+  }
+
+  closeSave() {
+    if (this.saveStep == 'confirm') {
+      this.saveStep = "save"
+    } else {
+      //this.closeModal()
+    }
   }
 }
