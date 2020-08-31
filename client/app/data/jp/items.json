@@ -2309,6 +2309,41 @@
     },
     "slug": "yan-ling-shiino-ji-yi-fei"
   },
+  "IT_JB_MM_ARC": {
+    "dataId": "IT_JB_MM_ARC",
+    "names": {
+      "en": "スナイパーの記憶・翠"
+    },
+    "slug": "sunaipano-ji-yi-cui"
+  },
+  "IT_JB_MM_ARC_2": {
+    "dataId": "IT_JB_MM_ARC_2",
+    "names": {
+      "en": "スナイパーの記憶・碧"
+    },
+    "slug": "sunaipano-ji-yi-bi"
+  },
+  "IT_JB_MM_ARC_3": {
+    "dataId": "IT_JB_MM_ARC_3",
+    "names": {
+      "en": "スナイパーの記憶・紫"
+    },
+    "slug": "sunaipano-ji-yi-zi"
+  },
+  "IT_JB_MM_ARC_4": {
+    "dataId": "IT_JB_MM_ARC_4",
+    "names": {
+      "en": "スナイパーの記憶・橘"
+    },
+    "slug": "sunaipano-ji-yi-ju"
+  },
+  "IT_JB_MM_ARC_5": {
+    "dataId": "IT_JB_MM_ARC_5",
+    "names": {
+      "en": "スナイパーの記憶・緋"
+    },
+    "slug": "sunaipano-ji-yi-fei"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3708,6 +3743,20 @@
       "en": "キトン（水着）の欠片"
     },
     "slug": "kiton-shui-zhao-no-qian-pian"
+  },
+  "IT_PI_LW_NIVL": {
+    "dataId": "IT_PI_LW_NIVL",
+    "names": {
+      "en": "ニヴ・ルの欠片"
+    },
+    "slug": "nivuruno-qian-pian"
+  },
+  "IT_PI_LW_RVAL": {
+    "dataId": "IT_PI_LW_RVAL",
+    "names": {
+      "en": "リヴィアルの欠片"
+    },
+    "slug": "rivuiaruno-qian-pian"
   },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
@@ -5428,6 +5477,14 @@
     "recipe": true,
     "slug": "huidesurakerunanokurahutoresipi"
   },
+  "IT_AF_LW_BOW_004": {
+    "dataId": "IT_AF_LW_BOW_004",
+    "names": {
+      "en": "キラーボウのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "kirabounokurahutoresipi"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5869,6 +5926,13 @@
     },
     "slug": "8-yue-zhao-huanmedarub"
   },
+  "IT_EC_SUMMON_09_A": {
+    "dataId": "IT_EC_SUMMON_09_A",
+    "names": {
+      "en": "【9月】召喚メダルA"
+    },
+    "slug": "9-yue-zhao-huanmedarua"
+  },
   "IT_EC_VISION": {
     "dataId": "IT_EC_VISION",
     "names": {
@@ -5952,6 +6016,13 @@
       "en": "囚われの姫君 メダル"
     },
     "slug": "qiuwareno-ji-jun-medaru"
+  },
+  "IT_EC_EV07_1": {
+    "dataId": "IT_EC_EV07_1",
+    "names": {
+      "en": "【後編】ゴウガとサイガメダル"
+    },
+    "slug": "hou-bian-gougatosaigamedaru"
   },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
@@ -6233,6 +6304,20 @@
     },
     "slug": "11-zhang-gong-kai-ssr-yi-shang-que-dingyunituto-zhao-huan-quan"
   },
+  "IT_US_G_U_SSR_UR_06": {
+    "dataId": "IT_US_G_U_SSR_UR_06",
+    "names": {
+      "en": "【1200万DL】SSR以上確定ユニット召喚券"
+    },
+    "slug": "1200-wandl-ssr-yi-shang-que-dingyunituto-zhao-huan-quan"
+  },
+  "IT_US_G_PI_UR_U_01": {
+    "dataId": "IT_US_G_PI_UR_U_01",
+    "names": {
+      "en": "【1200万DL】URユニット欠片×200召喚券"
+    },
+    "slug": "1200-wandl-uryunituto-qian-pianx200-zhao-huan-quan"
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -6401,6 +6486,13 @@
     },
     "slug": "ur-que-dingyunituto-zhao-huan-quana"
   },
+  "IT_US_G_U_UR_02": {
+    "dataId": "IT_US_G_U_UR_02",
+    "names": {
+      "en": "UR確定ユニット召喚券B"
+    },
+    "slug": "ur-que-dingyunituto-zhao-huan-quanb"
+  },
   "IT_US_G_UR_01": {
     "dataId": "IT_US_G_UR_01",
     "names": {
@@ -6435,6 +6527,13 @@
       "en": "URVカード確定召喚券A"
     },
     "slug": "urvkado-que-ding-zhao-huan-quana"
+  },
+  "IT_US_G_PU_NIVL_01": {
+    "dataId": "IT_US_G_PU_NIVL_01",
+    "names": {
+      "en": "【ニヴ・ル】ピックアップ召喚券"
+    },
+    "slug": "nivuru-pitukuatupu-zhao-huan-quan"
   },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
@@ -6646,6 +6745,13 @@
     },
     "slug": "zhuo-recp-urvkado-qian-pianx25-xuan-ze-zhao-huan-quan"
   },
+  "IT_US_SE_VPI_09": {
+    "dataId": "IT_US_SE_VPI_09",
+    "names": {
+      "en": "【1200万DL】URVカード欠片×50選択召喚券"
+    },
+    "slug": "1200-wandl-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
+  },
   "IT_US_SE_PI_01": {
     "dataId": "IT_US_SE_PI_01",
     "names": {
@@ -6799,6 +6905,13 @@
       "en": "【夏休みCP】秘伝書×100選択召喚券"
     },
     "slug": "xia-xiumicp-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_06": {
+    "dataId": "IT_US_SE_AF_AW_06",
+    "names": {
+      "en": "【ギルド】秘伝書×100選択召喚券"
+    },
+    "slug": "girudo-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
   },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
