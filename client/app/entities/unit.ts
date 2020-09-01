@@ -73,7 +73,8 @@ export class Unit {
     "BERSERK": {},
     "DOOM": {},
     "MOVE": {},
-    "JUMP": {}
+    "JUMP": {},
+    "COST": {}
   }
 
   element = "fire";
@@ -122,6 +123,7 @@ export class Unit {
   imbue
   guild
   teamCards = []
+  cost
 
 
 
@@ -141,6 +143,7 @@ export class Unit {
     this.slug = unit.slug;
     this.board = unit.board;
     this.attack = unit.attack;
+    this.cost = unit.cost;
   }
 
   getName(translateService): string {
@@ -682,6 +685,7 @@ export class Unit {
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
     this.calculatePartyCardsStats()
+    this.updateCost()
 
     if (this.esper) {
       this.calculateEsperStats()
@@ -1153,5 +1157,19 @@ export class Unit {
     })
 
     return availableEquipments
+  }
+
+  updateCost() {
+    console.log("updateCost")
+
+    this.calcCost = {
+      baseTotal: this.cost,
+      esper: this.esper ? this.esper.cost : 0,
+      card: this.card ? this.card.cost : 0
+    }
+
+    this.calcCost.total = this.calcCost.baseTotal + this.calcCost.esper + this.calcCost.card
+
+    console.log(this.calcCost)
   }
 }

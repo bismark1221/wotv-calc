@@ -51,7 +51,8 @@ export class TeamService {
     this.team = {
       name: "",
       guild: this.guildService.getGuildForBuilder(),
-      units: [null, null, null, null, null]
+      units: [null, null, null, null, null],
+      cost: 0
     }
 
     return this.team
@@ -177,6 +178,8 @@ export class TeamService {
         }
       }
     }
+
+    this.updateTeamCost()
   }
 
   getAvailableUnits(pos) {
@@ -289,6 +292,8 @@ export class TeamService {
         }
       }
     }
+
+    this.updateTeamCost()
   }
 
   selectEsper(pos, esperId, customData = null) {
@@ -299,6 +304,7 @@ export class TeamService {
     }
 
     this.team.units[pos].changeLevel()
+    this.updateTeamCost()
   }
 
   selectCard(pos, cardId, customData = null) {
@@ -316,6 +322,7 @@ export class TeamService {
         this.team.units[i].changeLevel()
       }
     }
+    this.updateTeamCost()
   }
 
   selectEquipment(unitPos, equipmentPos, equipmentId, customData = null) {
@@ -438,5 +445,14 @@ export class TeamService {
     })
 
     return formattedAvailableStatType
+  }
+
+  updateTeamCost() {
+    this.team.cost = 0
+    this.team.units.forEach(unit => {
+      if (unit) {
+        this.team.cost += unit.calcCost.total
+      }
+    })
   }
 }

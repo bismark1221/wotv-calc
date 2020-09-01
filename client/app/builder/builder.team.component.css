@@ -9,6 +9,15 @@
   margin-left: 10px
 }
 
+.h1TeamName {
+  display: inline-block;
+}
+
+.teamCost {
+  display: inline-block;
+  float: right;
+}
+
 .unitsCol {
   width: 200px;
 }

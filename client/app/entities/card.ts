@@ -20,6 +20,7 @@ export class Card {
   unitBuffs = [];
   partyBuffs;
   slug;
+  cost;
 
 
   constructFromJson(card: Card, translateService: TranslateService): void {
@@ -31,6 +32,7 @@ export class Card {
     this.unitBuffs = card.unitBuffs;
     this.partyBuffs = card.partyBuffs;
     this.slug = card.slug;
+    this.cost = card.cost;
   }
 
   getName(translateService: TranslateService): string {

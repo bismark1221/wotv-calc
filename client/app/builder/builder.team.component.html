@@ -6,8 +6,9 @@
   </div>
 
   <div class="teamName">
-    <h1 *ngIf="team.name">{{ team.name }}</h1>
-    <h1 *ngIf="!team.name">New Team</h1>
+    <h1 class="h1TeamName" *ngIf="team.name">{{ team.name }}</h1>
+    <h1 class="h1TeamName" *ngIf="!team.name">New Team</h1>
+    <h1 class="teamCost">Cost : {{ team.cost }}</h1>
   </div>
 
   <div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">

@@ -20,12 +20,14 @@
               <td colspan="3"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" (click)="clickSpecialBismark()"/></td>
             </tr>
             <tr>
-              <th class="sub" colspan="3">Move</th>
-              <th class="sub" colspan="3">Jump</th>
+              <th class="sub" colspan="2">Move</th>
+              <th class="sub" colspan="2">Jump</th>
+              <th class="sub" colspan="2">Cost</th>
             </tr>
             <tr>
-              <td colspan="3" class="bigText">{{ unit.stats.MOVE.min }}</td>
-              <td colspan="3" class="bigText">{{ unit.stats.JUMP.min }}</td>
+              <td colspan="2" class="bigText">{{ unit.stats.MOVE.min }}</td>
+              <td colspan="2" class="bigText">{{ unit.stats.JUMP.min }}</td>
+              <td colspan="2" class="bigText">{{ unit.cost }}</td>
             </tr>
             <tr>
               <th class="sub" colspan="6">Jobs</th>

@@ -338,11 +338,12 @@
   <table class="statsTable">
     <tbody>
       <tr>
-        <th colspan="13">Stats</th>
+        <th colspan="14">Stats</th>
       </tr>
       <tr>
         <th></th>
         <th *ngFor="let type of statsType">{{ type }}</th>
+        <th>COST</th>
       </tr>
     </tbody>
     <tbody *ngIf="showStatsDetail">
@@ -351,6 +352,9 @@
         <td *ngFor="let type of statsType">
           <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
           <span>{{ unit.stats[type][statFrom.type] }}</span>
+        </td>
+        <td>
+          <span *ngIf="unit.calcCost[statFrom.type]">{{ unit.calcCost[statFrom.type] }}</span>
         </td>
       </tr>
     </tbody>
@@ -361,6 +365,7 @@
           <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
           <span>{{ unit.stats[type].total }}</span>
         </td>
+        <td>{{ unit.calcCost.total }}</td>
       </tr>
     </tbody>
   </table>

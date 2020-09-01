@@ -67,6 +67,7 @@ export class Esper {
   slug;
   SPs;
   board;
+  cost;
 
 
   constructFromJson(esper: Esper, translateService: TranslateService): void {
@@ -80,6 +81,7 @@ export class Esper {
     this.slug = esper.slug;
     this.SPs = esper.SPs;
     this.board = esper.board;
+    this.cost = esper.cost;
   }
 
   getName(translateService: TranslateService): string {
