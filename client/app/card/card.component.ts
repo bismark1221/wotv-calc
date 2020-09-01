@@ -31,7 +31,6 @@ export class CardComponent implements OnInit {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (this.card) {
         this.formatCard();
-        console.log(this.card)
       }
     });
   }

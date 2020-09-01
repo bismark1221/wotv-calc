@@ -432,10 +432,8 @@ export class BuilderUnitComponent implements OnInit {
 
     modalRef.result.then((result) => {
       this.unitService.changeLevel()
-      console.log(this.unit.card)
     }, (reason) => {
       this.unitService.changeLevel()
-      console.log(this.unit.card)
     });
   }
 

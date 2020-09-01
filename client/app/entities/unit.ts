@@ -124,6 +124,7 @@ export class Unit {
   guild
   teamCards = []
   cost
+  calcCost
 
 
 
@@ -1160,8 +1161,6 @@ export class Unit {
   }
 
   updateCost() {
-    console.log("updateCost")
-
     this.calcCost = {
       baseTotal: this.cost,
       esper: this.esper ? this.esper.cost : 0,
@@ -1169,7 +1168,5 @@ export class Unit {
     }
 
     this.calcCost.total = this.calcCost.baseTotal + this.calcCost.esper + this.calcCost.card
-
-    console.log(this.calcCost)
   }
 }
