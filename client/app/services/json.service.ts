@@ -1188,6 +1188,7 @@ export class JsonService {
       rarity: this.rarity[unit.rare],
       jobs: unit.jobsets,
       stats: {},
+      cost: unit.cost,
       element: this.elements[unit.elem[0]],
       image: unit.charaId.toLowerCase(),
       board: {
@@ -1221,6 +1222,7 @@ export class JsonService {
       this[this.version].wotvVisionCards[dataId] = {
         dataId: dataId,
         names: {},
+        cost: visionCard.cost,
         rarity: this.rarity[visionCard.rare],
         stats: {},
         image: visionCard.icon.toLowerCase()
@@ -1904,6 +1906,7 @@ export class JsonService {
       dataId: dataId,
       names: {},
       rarity: this.rarity[esper.rare],
+      cost: esper.cost,
       skills: [],
       stats: {},
       SPs : [],

@@ -3,16 +3,18 @@
     <table class="cardTable">
       <tbody>
         <tr>
-          <th>{{ card.name }}</th>
+          <th colspan="2">{{ card.name }}</th>
         </tr>
         <tr>
-          <td><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
+          <td colspan="2"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
         </tr>
         <tr>
           <th class="sub">Rarity</th>
+          <th class="sub">Cost</th>
         </tr>
         <tr>
           <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
+          <td>{{ card.cost }}</td>
         </tr>
       </tbody>
     </table>
