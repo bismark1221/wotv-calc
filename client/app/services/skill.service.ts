@@ -246,10 +246,10 @@ export class SkillService {
 
     if (skill.upgrade.length !== 5) {
       if (skill.maxLevel < (skill.upgrade[0] * 10 - 10)) {
-        html += "<b>Acquired at " + skill.upgrade[0] + " <i class='fa fa-star'></i></b><br />"
+        html += "<b>Acquired at " + skill.upgrade[0] + " <i class='fas fa-star'></i></b><br />"
         effect.minValue = effect.maxValue
       } else {
-        html += "<b>From " + skill.upgrade[0] + " to " + skill.upgrade[skill.upgrade.length - 1] + " <i class='fa fa-star'></i></b><br />"
+        html += "<b>From " + skill.upgrade[0] + " to " + skill.upgrade[skill.upgrade.length - 1] + " <i class='fas fa-star'></i></b><br />"
       }
     }
 

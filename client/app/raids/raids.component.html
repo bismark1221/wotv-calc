@@ -4,8 +4,8 @@
     <div class="filters">
       <div class="boldText" (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
         Elements
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
         <div><input type="checkbox" (change)="filterList('element', 'fire', $event.target.checked)"/>Fire</div>
@@ -23,7 +23,7 @@
   <div class="rightBlock">
     <div class="upperBlock">
       <div class="searchBlock">
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fas fa-search" aria-hidden="true"></i>
         <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
       </div>
       <div class="underSearchBlock">

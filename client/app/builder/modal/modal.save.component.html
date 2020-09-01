@@ -1,0 +1,31 @@
+<div>
+  <div class="titleBlock">
+    <div class="title">
+      SAVE {{ type | uppercase }}
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="saveBlock" *ngIf="saveStep == 'save'">
+    <input class="nameInput" type="text" [(ngModel)]="item.customName" />
+    <button class="btn btn-main saveButton" (click)="save()">Save</button>
+  </div>
+
+  <div class="confirmBlock" *ngIf="saveStep == 'confirm'">
+    <span>This {{ type }} already exists, do you whant to replace it ?</span>
+    <div class="confirmButtons">
+      <button class="btn btn-main replaceButton" (click)="confirmSave()">Replace</button>
+      <button class="btn btn-sub cancelButton" (click)="closeSave()">Cancel</button>
+    </div>
+  </div>
+
+  <div class="loadingBlock" *ngIf="saveStep == 'loading'">
+    <span class="loadingText">Save in progress</span>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
+</div>
+

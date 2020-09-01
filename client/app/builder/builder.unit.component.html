@@ -1,66 +1,8 @@
-<ng-template #builderLink let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <textarea rows="10" class="textLink">{{ exportableLink }}</textarea>
-  <button (click)="copyLink()">Copy</button>
-</ng-template>
-
-<ng-template #loadModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="unitsListModal">
-    <h3>Units</h3>
-    <div class="unitList">
-      <table *ngIf="savedUnits[selectedUnitId] && savedUnits[selectedUnitId].length > 0">
-        <tr *ngFor="let savedUnit of savedUnits[selectedUnitId]">
-          <td>{{ savedUnit ? savedUnit.customName : '' }}</td>
-          <td><a (click)="loadUnit(savedUnit)"><i class="fa fa-download"></i></a></td>
-          <td><a (click)="deleteUnit(savedUnit)"><i class="fa fa-trash"></i></a></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</ng-template>
-
-<ng-template #saveModal let-modal>
-  <div>
-    <button type="button" class="close" aria-label="Close" (click)="closeSave()" *ngIf="saveStep != 'loading'">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="teamSaveModal" *ngIf="saveStep == 'save'">
-    <h3>Save unit</h3>
-    <input type="text" [(ngModel)]="unit.customName" class="saveNameInput" />
-    <button (click)="saveUnit(confirmSaveModal)" class="saveButton">Save</button>
-  </div>
-  <div class="unitConfirmModal" *ngIf="saveStep == 'confirm'">
-    <span>This unit already exists, do you whant to replace it ?</span>
-    <div class="confirmButtons">
-      <button (click)="confirmSave()" class="replaceButton" >Replace</button>
-      <button (click)="closeSave()" class="cancelButton" >Cancel</button>
-    </div>
-  </div>
-  <div class="unitConfirmModal" *ngIf="saveStep == 'loading'">
-    <span>Save in progress</span>
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
-  </div>
-</ng-template>
-
-
-
-
-
 <div class="row">
   <div class="searchBlock">
-    <i class="fa fa-search" aria-hidden="true"></i>
+    <i class="fas fa-search" aria-hidden="true"></i>
     <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()">
-    <i class="fa fa-close" aria-hidden="true" (click)="selectUnit('')"></i>
+    <i class="fas fa-close" aria-hidden="true" (click)="selectUnit('')"></i>
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
@@ -76,7 +18,7 @@
           <div class="unitName" innerHTML="{{ filteredUnit.name | highlight: searchText }}"></div>
         </div>
         <div class="loadDiv" *ngIf="savedUnits[filteredUnit.dataId] && savedUnits[filteredUnit.dataId].length > 0">
-          <a (click)="openLoadModal(loadModal, filteredUnit.dataId)"><i class="fa fa-download"></i></a>
+          <a (click)="openLoadModal(filteredUnit.dataId)"><i class="fas fa-download"></i></a>
         </div>
         <hr *ngIf="j != filteredUnits[rarity].length - 1"/>
       </div>
@@ -376,7 +318,7 @@
             <span>{{ unit.stats[type][statFrom.type] }}</span>
           </td>
           <td>
-            <span *ngIf="unit.calcCost[statFrom.type]">{{ unit.calcCost[statFrom.type] }}</span>
+            <span *ngIf="unit.calcCost && unit.calcCost[statFrom.type]">{{ unit.calcCost[statFrom.type] }}</span>
           </td>
         </tr>
       </tbody>
@@ -387,7 +329,7 @@
             <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
             <span>{{ unit.stats[type].total }}</span>
           </td>
-          <td>{{ unit.calcCost.total }}</td>
+          <td>{{ unit.calcCost ? unit.calcCost.total : 0 }}</td>
         </tr>
       </tbody>
     </table>
@@ -439,8 +381,8 @@
       </div>
       <div class="skillSubTitle" (click)="isCollapsedMainJob = !isCollapsedMainJob" [attr.aria-expanded]="!isCollapsedMainJob">
         Main Job
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedMainJob" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedMainJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedMainJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedMainJob" aria-hidden="true"></i>
       </div>
       <div class="collapsedSkills" [ngbCollapse]="isCollapsedMainJob">
         <table class="skillsTable">
@@ -489,8 +431,8 @@
       </div>
       <div class="skillSubTitle" (click)="isCollapsedSubJob = !isCollapsedSubJob" [attr.aria-expanded]="!isCollapsedSubJob">
         Sub Job
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedSubJob" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedSubJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedSubJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedSubJob" aria-hidden="true"></i>
       </div>
       <div class="collapsedSkills" [ngbCollapse]="isCollapsedSubJob">
         <table class="skillsTable">
@@ -540,8 +482,8 @@
 
       <div class="skillSubTitle" (click)="isCollapsedOther = !isCollapsedOther" [attr.aria-expanded]="!isCollapsedOther">
         Other Skills
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedOther" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedOther" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedOther" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedOther" aria-hidden="true"></i>
       </div>
       <div class="collapsedSkills" [ngbCollapse]="isCollapsedOther">
         <table class="skillsTable">
@@ -750,10 +692,10 @@
                  'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
                  'notActivable': !canActivateNode(node)
           }" >
-            <i class="fa fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
+            <i class="fas fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
             <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
             <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
-            <i class="fa fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+            <i class="fas fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
           </div>
         </li>
       </ul>

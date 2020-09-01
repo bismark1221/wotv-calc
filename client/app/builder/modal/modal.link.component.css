@@ -1,0 +1,39 @@
+.titleBlock {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #fff;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.closeButton {
+  float: right;
+}
+
+.closeButton button {
+  padding: 10px;
+}
+
+.linkBlock, .loadingBlock {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 800px;
+}
+
+.textLink, .copyButton {
+  width: 100%
+}
+
+.loadingBlock {
+  text-align: center;
+}
+
+.loadingText {
+  display: block;
+  margin-bottom: 10px;
+}

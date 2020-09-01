@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
-import { ClipboardService } from 'ngx-clipboard'
 
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
@@ -23,6 +22,9 @@ import { BuilderGuildComponent } from './builder.guild.component';
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
 import { ModalCardsComponent } from './modal/modal.cards.component';
+import { ModalLoadComponent } from './modal/modal.load.component';
+import { ModalSaveComponent } from './modal/modal.save.component';
+import { ModalLinkComponent } from './modal/modal.link.component';
 
 @Component({
   selector: 'app-builder-unit',
@@ -146,7 +148,6 @@ export class BuilderUnitComponent implements OnInit {
     private equipmentService: EquipmentService,
     private modalService: NgbModal,
     private navService: NavService,
-    private clipboardService: ClipboardService,
     private nameService: NameService,
     private authService: AuthService
   ) {
@@ -388,28 +389,32 @@ export class BuilderUnitComponent implements OnInit {
     });
   }
 
-  openLinkModal(content) {
-    this.unitService.getExportableLink().subscribe((data: any) => {
-      this.exportableLink = data.shorturl;
-    })
+  openLoadModal(unitId) {
+    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
 
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
+    modalRef.componentInstance.type = 'unit'
+    modalRef.componentInstance.savedItems = this.savedUnits[unitId]
+
+    modalRef.result.then((unit) => {
+      if (unit) {
+        this.selectUnit(unit.dataId, unit)
+      }
+    }, (reason) => {
+    });
   }
 
-  openLoadModal(content, unitId) {
-    this.selectedUnitId = unitId
+  openSaveModal() {
+    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
 
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
+    modalRef.componentInstance.type = 'unit'
+    modalRef.componentInstance.item = this.unit
   }
 
-  closeModal() {
-    this.modalService.dismissAll();
-  }
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
 
-  copyLink() {
-    this.clipboardService.copyFromContent(this.exportableLink)
+    modalRef.componentInstance.type = 'unit'
+    modalRef.componentInstance.item = this.unit
   }
 
   getAvailableStatType() {
@@ -492,53 +497,5 @@ export class BuilderUnitComponent implements OnInit {
 
   resetJob() {
     this.unitService.resetJob()
-  }
-
-  loadUnit(unit) {
-    this.selectUnit(unit.dataId, unit)
-    this.closeModal()
-  }
-
-  deleteUnit(unit) {
-    this.unitService.deleteUnit(unit)
-
-    this.savedUnits = this.unitService.getSavedUnits()
-
-    if (this.savedUnits[unit.dataId].length == 0) {
-      this.closeModal()
-    }
-  }
-
-  openSaveModal(content) {
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
-  }
-
-  saveUnit(confirmContent) {
-    if (this.unitService.unitAlreadyExists(this.unit)) {
-      this.saveStep = "confirm"
-    } else {
-      this.saveStep = "loading"
-      this.unitService.saveUnit(this.unit, false).then(result => {
-        this.savedUnits = this.unitService.getSavedUnits()
-        this.closeModal()
-      })
-    }
-  }
-
-  confirmSave() {
-    this.saveStep = "loading"
-    this.unitService.saveUnit(this.unit, true).then(result => {
-      this.savedUnits = this.unitService.getSavedUnits()
-      this.closeModal()
-    })
-  }
-
-  closeSave() {
-    if (this.saveStep == 'confirm') {
-      this.saveStep = "save"
-    } else {
-      this.closeModal()
-    }
   }
 }

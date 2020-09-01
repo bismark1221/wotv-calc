@@ -4,8 +4,8 @@
     <div class="filters">
       <div class="boldText" (click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
         Rarity
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
         <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
@@ -19,8 +19,8 @@
 
       <div class="boldText" (click)="isCollapsedType = !isCollapsedType" [attr.aria-expanded]="!isCollapsedType">
         Types
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedType" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedType" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedType">
         <div><input type="checkbox" (change)="filterList('type', 'AXE', $event.target.checked)"/>Axe</div>
@@ -49,8 +49,8 @@
 
       <div class="boldText" (click)="isCollapsedAcquisition = !isCollapsedAcquisition" [attr.aria-expanded]="!isCollapsedAcquisition">
         Acquisition
-        <i class="fa fa-chevron-up" *ngIf="!isCollapsedAcquisition" aria-hidden="true"></i>
-        <i class="fa fa-chevron-down" *ngIf="isCollapsedAcquisition" aria-hidden="true"></i>
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedAcquisition" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedAcquisition" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedAcquisition">
         <div *ngFor="let type of acquisitionTypes">
@@ -63,7 +63,7 @@
   <div class="rightBlock">
     <div class="upperBlock">
       <div class="searchBlock">
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fas fa-search" aria-hidden="true"></i>
         <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText">
       </div>
       <div class="underSearchBlock">

@@ -1,0 +1,28 @@
+<div>
+  <div class="titleBlock">
+    <div class="title">
+      LOAD {{ type | uppercase }}
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="listModal">
+    <table class="tableList" *ngIf="savedItems && savedItems.length > 0">
+      <tr>
+        <th>{{ type | titlecase }}</th>
+        <th>Load</th>
+        <th>Delete</th>
+      </tr>
+      <tr *ngFor="let item of savedItems">
+        <td *ngIf="type == 'team'">{{ item ? item.name : '' }}</td>
+        <td *ngIf="type != 'team'">{{ item ? item.customName : '' }}</td>
+        <td><a (click)="load(item)"><i class="fas fa-download"></i></a></td>
+        <td><a (click)="delete(item)"><i class="fas fa-trash"></i></a></td>
+      </tr>
+    </table>
+  </div>
+</div>
