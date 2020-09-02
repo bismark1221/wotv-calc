@@ -3056,6 +3056,206 @@
       "type": "Unknown"
     }
   },
+  "AF_FFT_SWO_002": {
+    "names": {
+      "en": "Lesalia Royal Guard Standard-Issue Sword"
+    },
+    "slug": "lesalia-royal-guard-standard-issue-sword",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 64
+      },
+      "ATK": {
+        "min": 24,
+        "max": 232
+      },
+      "MAG": {
+        "min": 15,
+        "max": 132
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 20
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FFT_SWO_002",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "aim"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_2",
+            "fr": "SK_FFT_SWO_002_2"
+          },
+          "dataId": "SK_FFT_SWO_002_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            2
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_3",
+            "fr": "SK_FFT_SWO_002_3"
+          },
+          "dataId": "SK_FFT_SWO_002_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_4",
+            "fr": "SK_FFT_SWO_002_4"
+          },
+          "dataId": "SK_FFT_SWO_002_4",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_4",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_5",
+            "fr": "SK_FFT_SWO_002_5"
+          },
+          "dataId": "SK_FFT_SWO_002_5",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_5",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "fft0wpn_swo_002",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_AW_SWORD": 375,
+        "IT_AF_MAT_LIQUID_04": 185,
+        "IT_AF_MAT_ICE_02": 16
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_BSW_000": {
     "names": {
       "en": "Greatsword",
