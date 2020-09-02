@@ -77,6 +77,7 @@ export class UnitComponent implements OnInit {
         let skill = this.unit.board.nodes[nodeId].skill
         if (skill.type !== "buff") {
           skill.name = this.nameService.getName(skill)
+          skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
           skill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
@@ -89,6 +90,10 @@ export class UnitComponent implements OnInit {
           }
 
           this.skillService.formatRange(this.unit, skill);
+
+          skill.upgrades = []
+          skill = this.addUpgrade(skill)
+
           this.unit.skills.push(skill)
         } else {
           let effect = skill.effects[0]
@@ -104,15 +109,20 @@ export class UnitComponent implements OnInit {
       if (this.unit.masterSkill.length > 0) {
         this.unit.masterSkill.forEach(masterSkill => {
           masterSkill.name = this.nameService.getName(masterSkill)
+          masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);
 
           masterSkill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
           });
+
+          masterSkill.upgrades = []
+          masterSkill = this.addUpgrade(masterSkill)
         })
       }
 
       if (this.unit.limit) {
         this.unit.limit.name = this.nameService.getName(this.unit.limit)
+        this.unit.limit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.limit);
 
         this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
 
@@ -123,6 +133,9 @@ export class UnitComponent implements OnInit {
         this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
 
         this.skillService.formatRange(this.unit, this.unit.limit);
+
+        this.unit.limit.upgrades = []
+        this.unit.limit = this.addUpgrade(this.unit.limit)
       }
 
       if (this.unit.attack) {
@@ -173,6 +186,66 @@ export class UnitComponent implements OnInit {
 
       this.grid = this.gridService.generateUnitGrid(this.unit)
     }
+  }
+
+  private addUpgrade(skill) {
+    if (this.unit.replacedSkills) {
+      Object.keys(this.unit.replacedSkills).forEach(upgradeSkillId => {
+        let activatedBy = this.findActivatedByName(upgradeSkillId)
+        this.unit.replacedSkills[upgradeSkillId].forEach(upgrade => {
+          if (upgrade.oldSkill == skill.dataId) {
+            let newSkill = upgrade.newSkill
+            newSkill.name = this.nameService.getName(newSkill)
+
+            newSkill.effects.forEach(effect => {
+              effect.formatHtml = this.skillService.formatEffect(this.unit, newSkill, effect);
+            });
+
+            newSkill.damageHtml = this.skillService.formatDamage(this.unit, newSkill, newSkill.damage);
+
+            if (newSkill.counter) {
+              newSkill.counterHtml = this.skillService.formatCounter(this.unit, newSkill, newSkill.counter);
+            }
+
+            this.skillService.formatRange(this.unit, newSkill);
+            newSkill = this.addUpgrade(newSkill)
+
+
+            newSkill.activatedBy = activatedBy
+
+            skill.upgrades.push(newSkill)
+          }
+        })
+      })
+    }
+
+    return skill
+  }
+
+  private findActivatedByName(upgradeSkillId) {
+    let name = ""
+
+    Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      if (this.unit.board.nodes[nodeId].skill.dataId == upgradeSkillId) {
+        name = this.nameService.getName(this.unit.board.nodes[nodeId].skill)
+      }
+    })
+
+    if (name == "" && this.unit.masterSkill.length > 0) {
+      this.unit.masterSkill.forEach(masterSkill => {
+        if (masterSkill.dataId == upgradeSkillId) {
+          name = this.nameService.getName(masterSkill)
+        }
+      })
+    }
+
+    if (name == "" && this.unit.limit) {
+      if (this.unit.limit.dataId == upgradeSkillId) {
+        name = this.nameService.getName(this.unit.limit)
+      }
+    }
+
+    return name
   }
 
   private calcJobStat(job, subJob) {

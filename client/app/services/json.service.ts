@@ -1194,7 +1194,8 @@ export class JsonService {
       board: {
         nodes: {},
         lines: []
-      }
+      },
+      replacedSkills : {}
     };
 
     this.getUnitImage(this[this.version].wotvUnits[dataId])
@@ -1206,7 +1207,7 @@ export class JsonService {
     this.getAttackSkill(this[this.version].wotvUnits[dataId], unit.atkskl)
     this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl)
     this.getTMR(this[this.version].wotvUnits[dataId], unit.trust)
-    this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId]);
+    this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId])
   }
 
   private getUnitImage(unit) {
@@ -1290,8 +1291,25 @@ export class JsonService {
         unit.board.lines.push(line.line_id)
       })
     }
-  }
 
+    Object.keys(unit.replacedSkills).forEach(replace => {
+      unit.replacedSkills[replace].forEach(upgrade => {
+        let previousSkillType = "skill"
+        Object.keys(unit.board.nodes).forEach(nodeId => {
+          if (unit.board.nodes[nodeId].dataId == upgrade.oldSkill) {
+            previousSkillType = unit.board.nodes[nodeId].type
+          }
+        })
+
+        let fakePanelSkill = {
+          value: upgrade.newSkill,
+          slot: this.slots.indexOf(previousSkillType)
+        }
+
+        upgrade.newSkill = this.addSkill(unit, fakePanelSkill)
+      })
+    })
+  }
 
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
     // party
@@ -1442,7 +1460,8 @@ export class JsonService {
       stl_val1 : null,
       names: null,
       atk_rev: null,
-      grow: null
+      grow: null,
+      replace: null
     };
 
     if (skill.type == "buff") {
@@ -1598,6 +1617,19 @@ export class JsonService {
         maxValue: dataSkill.stl_val1,
         calcType: "unknow"
       });
+    }
+
+    if (dataSkill.replace) {
+      if (!unit.replacedSkills[skillId]) {
+        unit.replacedSkills[skillId] = []
+      }
+
+      dataSkill.replace.forEach(change => {
+        unit.replacedSkills[skillId].push({
+          oldSkill: change.skill_base,
+          newSkill: change.skill_after
+        })
+      })
     }
 
 

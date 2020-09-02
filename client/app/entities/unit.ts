@@ -125,7 +125,7 @@ export class Unit {
   teamCards = []
   cost
   calcCost
-
+  replacedSkills
 
 
   constructFromJson(unit: Unit, translateService): void {
@@ -145,6 +145,7 @@ export class Unit {
     this.board = unit.board;
     this.attack = unit.attack;
     this.cost = unit.cost;
+    this.replacedSkills = unit.replacedSkills;
   }
 
   getName(translateService): string {

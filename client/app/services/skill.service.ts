@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser'
 import { TranslateService } from '@ngx-translate/core';
 
+import { NameService } from './name.service'
+
 @Injectable()
 export class SkillService {
   calcTypeFormat = {
@@ -33,7 +35,8 @@ export class SkillService {
 
   constructor(
     private sanitizer: DomSanitizer,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private nameService: NameService
   ) {}
 
   private i(s: any) {
@@ -950,7 +953,7 @@ export class SkillService {
     }
 
     if (skill.hit) {
-      html += (skill.damage ? "<br />" : "") + "+" + skill.hit + "% Accuracy"
+      html += (skill.damage ? "<br />" : "") + "Hit chance set to " + skill.hit + "%"
     }
 
     if (skill.pierce) {
@@ -968,6 +971,38 @@ export class SkillService {
     return "Chance to counter " + this.counterType[counter.reactDamage] + " damage " + this.getValue(skill, counter)
   }
 
+  formatUpgrade(unit, skill) {
+    let html = ""
+
+    if (unit.replacedSkills && unit.replacedSkills[skill.dataId]) {
+      let replacedSkills = unit.replacedSkills[skill.dataId]
+      html = "Upgrade skill" + (replacedSkills.length > 1 ? "s" : "") + " : "
+
+      replacedSkills.forEach((replacedSkill, skillIndex) => {
+        if (this.isSkillExistForUnit(unit, replacedSkill.oldSkill)) {
+          if (skillIndex != 0) {
+            html += ", "
+          }
+
+          html += this.nameService.getName(replacedSkill.newSkill)
+        }
+      })
+    }
+
+    return html
+  }
+
+  isSkillExistForUnit(unit, skillId) {
+    let exist = false
+
+    Object.keys(unit.board.nodes).forEach(nodeId => {
+      if (unit.board.nodes[nodeId].skill.dataId == skillId) {
+        exist = true
+      }
+    })
+
+    return exist
+  }
 
   formatDiamond(skillTable, range) {
     let middle = 8;
