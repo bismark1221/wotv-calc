@@ -1,12 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
+import { ClipboardService } from 'ngx-clipboard';
+
 import { CardService } from '../../services/card.service';
 import { UnitService } from '../../services/unit.service';
 import { EsperService } from '../../services/esper.service';
 import { EquipmentService } from '../../services/equipment.service';
 import { TeamService } from '../../services/team.service';
-import { ClipboardService } from 'ngx-clipboard';
+import { NavService } from '../../services/nav.service';
 
 @Component({
   selector: 'app-modal-link',
@@ -27,15 +29,19 @@ export class ModalLinkComponent implements OnInit {
     private equipmentService: EquipmentService,
     private teamService: TeamService,
     private clipboardService: ClipboardService,
+    private navService: NavService,
     private modal: NgbActiveModal
   ) {
   }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
     switch(this.type) {
       case 'unit' :
-        this.unitService.getExportableLink().subscribe((data: any) => {
-          this.exportableLink = data.shorturl;
+        this.unitService.getExportableLink().then(link => {
+          this.exportableLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + link;
           this.saveStep = "link"
         })
         break

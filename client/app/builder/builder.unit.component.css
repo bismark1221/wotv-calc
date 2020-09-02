@@ -22,9 +22,15 @@
   color: #000;
 }
 
-.fa-close {
+.fa-times {
   color: #000;
   cursor: pointer;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .rarityBlock {

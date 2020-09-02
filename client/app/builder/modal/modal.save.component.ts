@@ -42,7 +42,7 @@ export class ModalSaveComponent implements OnInit {
       this.saveStep = "confirm"
     } else {
       this.saveStep = "loading"
-      this.saveItem(false)
+      this.saveItem("new")
     }
   }
 
@@ -73,24 +73,24 @@ export class ModalSaveComponent implements OnInit {
     return alreadyExists
   }
 
-  private saveItem(overwrite) {
+  private saveItem(method) {
     let savePromise = null
 
     switch(this.type) {
       case 'unit' :
-        savePromise = this.unitService.saveUnit(this.item, overwrite)
+        savePromise = this.unitService.saveUnit(this.item, method)
         break
       case 'card' :
-        //savePromise = this.cardService.saveCard(this.item, overwrite)
+        //savePromise = this.cardService.saveCard(this.item, method)
         break
       case 'esper' :
-        //savePromise = this.esperService.saveEsper(this.item, overwrite)
+        //savePromise = this.esperService.saveEsper(this.item, method)
         break
       case 'equipment' :
-        //savePromise = this.equipmentService.saveEquipment(this.item, overwrite)
+        //savePromise = this.equipmentService.saveEquipment(this.item, method)
         break
       case 'team' :
-        savePromise = this.teamService.saveTeam(this.item)//, overwrite)
+        savePromise = this.teamService.saveTeam(this.item)//, method)
         break
       default :
         console.log("Trying to save something not managed : " + this.type)
@@ -108,7 +108,7 @@ export class ModalSaveComponent implements OnInit {
 
   confirmSave() {
     this.saveStep = "loading"
-    this.saveItem(true)
+    this.saveItem("overwrite")
   }
 
   closeSave() {

@@ -2,14 +2,19 @@
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
     <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()">
-    <i class="fas fa-close" aria-hidden="true" (click)="selectUnit('')"></i>
+    <i class="fas fa-times" aria-hidden="true" (click)="selectUnit('')"></i>
+  </div>
+
+  <div class="loadingBlock" *ngIf="loadingBuild">
+    <h1>Your build is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="!unit && filteredUnits[rarity].length > 0">
+    <div class="rarityLine" *ngIf="!unit && !loadingBuild && filteredUnits[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="unitBlock" *ngIf="!unit && filteredUnits[rarity].length > 0">
+    <div class="unitBlock" *ngIf="!unit && !loadingBuild filteredUnits[rarity].length > 0">
       <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
         <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': savedUnits[filteredUnit.dataId]}" (click)="selectUnit(filteredUnit.dataId)">
           <div class="unitLogo">

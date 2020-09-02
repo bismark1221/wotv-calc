@@ -134,9 +134,7 @@ export class BuilderUnitComponent implements OnInit {
   searchText = ""
 
   savedUnits = {}
-  selectedUnitId = ""
-  saveStep = "save"
-  confirmLoading = false
+  loadingBuild = false
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -162,9 +160,20 @@ export class BuilderUnitComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
       if (data) {
-        data = JSON.parse(atob(params.get('data')))
-
-        this.selectUnit(data.dataId, data)
+        this.loadingBuild = true
+        try {
+          let parsedData = JSON.parse(atob(data))
+          this.selectUnit(parsedData.dataId, parsedData)
+          this.loadingBuild = false
+        } catch(err) {
+          this.unitService.getStoredUnit(data).subscribe(unitData => {
+            if (unitData) {
+              // @ts-ignore
+              this.selectUnit(unitData.dataId, unitData)
+            }
+            this.loadingBuild = false
+          })
+        }
       }
     });
   }

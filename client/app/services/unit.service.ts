@@ -18,18 +18,11 @@ import { EquipmentService } from './equipment.service'
 import { CardService } from './card.service'
 import { EsperService } from './esper.service'
 import { AuthService } from './auth.service'
+import { ToolService } from './tool.service'
 
 @Injectable()
 export class UnitService {
   private units: Unit[];
-  private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
-  private sre = /^\s+|\s+$/g;
-  private snre = /\s+/g;
-  private dre = /(^([\w ]+,?[\w ]+)?[\w ]+,?[\w ]+\d+:\d+(:\d+)?[\w ]?|^\d{1,4}[\/\-]\d{1,4}[\/\-]\d{1,4}|^\w+, \w+ \d+, \d{4})/;
-  private hre = /^0x[0-9a-f]+$/i;
-  private ore = /^0/;
-  private oFxNcL: any;
-  private oFyNcL: any;
   private savedVersion = null;
 
   unit
@@ -168,16 +161,9 @@ export class UnitService {
     private esperService: EsperService,
     private http: HttpClient,
     private firestore: AngularFirestore,
-    private authService: AuthService
+    private authService: AuthService,
+    private toolService: ToolService
   ) {}
-
-  private i(s: any) {
-      return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
-  }
-
-  private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
-  }
 
   private getRaw() {
     this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()))
@@ -202,107 +188,16 @@ export class UnitService {
     return units;
   }
 
-  sortByName(units, order = "asc") {
-    units.sort((a: any, b: any) => {
-      let x = this.i(a.getName(this.translateService));
-      let y = this.i(b.getName(this.translateService));
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-        if (xD < yD) {
-          return order == "asc" ? -1 : 1;
-        } else if (xD > yD) {
-          return order == "asc" ? 1 : -1;
-        }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-          if (isNaN(this.oFxNcL)) {
-            return order == "asc" ? 1 : -1;
-          } else {
-            return order == "asc" ? -1 : 1;
-          }
-        }
-
-        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-          return comp / Math.abs(comp);
-        }
-
-        if (this.oFxNcL < this.oFyNcL) {
-          return order == "asc" ? -1 : 1;
-        } else if (this.oFxNcL > this.oFyNcL) {
-          return order == "asc" ? 1 : -1;
-        }
-      }
-    });
-
-    return units;
-  }
-
-  sortByRarity(units, order = "asc") {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    if (order == "desc") {
-      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
-    }
-
-    units.sort((a: any, b: any) => {
-      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
-        return -1
-      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
-        return 1
-      } else {
-        let x = this.i(a.getName(this.translateService));
-        let y = this.i(b.getName(this.translateService));
-
-        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-        if (yD) {
-            if (xD < yD) { return -1; }
-            else if (xD > yD) { return 1; }
-        }
-
-        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-                return isNaN(this.oFxNcL) ? 1 : -1;
-            }
-            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-                return comp / Math.abs(comp);
-            }
-            if (this.oFxNcL < this.oFyNcL) { return -1; }
-            else if (this.oFxNcL > this.oFyNcL) { return 1; }
-        }
-      }
-    })
-
-    return units
-  }
-
   getUnitsForListing(filters = null, sort = "rarity", order = "asc") {
     this.getUnits();
     this.units = this.filterUnits(this.units, filters);
 
     switch (sort) {
       case "rarity" :
-        this.sortByRarity(this.units, order)
+        this.toolService.sortByRarity(this.units, order)
       break
       case "name" :
-        this.sortByName(this.units, order)
+        this.toolService.sortByName(this.units, order)
       break
       default :
         console.log("not managed sort")
@@ -593,10 +488,14 @@ export class UnitService {
     return unitFinded
   }
 
-  saveUnit(unit, overwrite) {
+  saveUnit(unit, method) {
     let savableData = this.getSavableData(unit)
 
-    if (!overwrite) {
+    if (method == "new" || method == "share") {
+      if (method == "share") {
+        delete savableData.user
+      }
+
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
         // @ts-ignore
         savableData.storeId = data.id
@@ -609,18 +508,22 @@ export class UnitService {
         }
 
         this.localStorageService.set(this.getLocalStorage(), savedUnits);
+
+        return data.id
       })
     } else {
       return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
         let savedUnits = this.getSavedUnits()
-
-        savedUnits[unit.dataId].forEach(savedUnit => {
+        savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {
           if (savedUnit.storeId == unit.storeId) {
-            savedUnit = savableData
+            savedUnits[unit.dataId][unitIndex] = savableData
+            savedUnits[unit.dataId][unitIndex].storeId = unit.storeId
           }
         })
 
         this.localStorageService.set(this.getLocalStorage(), savedUnits);
+
+        return unit.storeId
       })
     }
   }
@@ -637,6 +540,12 @@ export class UnitService {
     })
 
     this.localStorageService.set(this.getLocalStorage(), savedUnits);
+  }
+
+  getStoredUnit(dataId) {
+    let document = this.firestore.collection(this.getLocalStorage()).doc(dataId)
+
+    return document.valueChanges()
   }
 
   changeStar() {
@@ -716,9 +625,30 @@ export class UnitService {
   }
 
   getExportableLink() {
-    let builderLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/unit") + "/" + btoa(JSON.stringify(this.getSavableData(this.unit)))
-    let shortenUrl = "https://build.wotv-calc.com/yourls-api.php?signature=96c1bdf29a&action=shorturl&format=json&url=" + builderLink
+    if (!this.unit.storeId || this.hasChangeBeenMade()) {
+      return this.saveUnit(this.unit, "share")
+    }
 
-    return this.http.get(shortenUrl);
+    return new Promise((resolve, reject) => {
+      resolve(this.unit.storeId)
+    })
+  }
+
+  hasChangeBeenMade() {
+    let result = true
+    if (this.unit.storeId) {
+      let newData = this.getSavableData(this.unit)
+      let oldData = null
+      this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
+        if (savedUnit.storeId == this.unit.storeId) {
+          oldData = savedUnit
+          delete oldData.storeId
+        }
+      })
+
+      return !this.toolService.equal(oldData, newData)
+    }
+
+    return result
   }
 }
