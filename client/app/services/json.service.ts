@@ -394,6 +394,19 @@ export class JsonService {
     19: "BEHIND"
   }
 
+  strengthType = {
+    1: "DEAD_UNITS",
+    53: "UNIT_LEVEL",
+    72: "HEIGHT",
+    73: "TARGET_LEVEL"
+  }
+
+  strengthFormulaCondition = {
+    0: "COUNT",
+    1: "CURVE",
+    22: "RATIO"
+  }
+
   damageEffectType = [
     "0",
     "DAMAGE",
@@ -1461,7 +1474,9 @@ export class JsonService {
       names: null,
       atk_rev: null,
       grow: null,
-      replace: null
+      replace: null,
+      strength: null,
+      ctave: null
     };
 
     if (skill.type == "buff") {
@@ -1610,6 +1625,12 @@ export class JsonService {
       });
     }
 
+    if (dataSkill.ctave) {
+      skill.effects.push({
+        type: "AVG_CT"
+      });
+    }
+
     if (dataSkill.stl_val) {
       skill.effects.push({
         type: "STEAL",
@@ -1629,6 +1650,27 @@ export class JsonService {
           oldSkill: change.skill_base,
           newSkill: change.skill_after
         })
+      })
+    }
+
+    if (dataSkill.strength) {
+      skill.maths = []
+
+      dataSkill.strength.forEach(strength => {
+        if (!this.strengthType[strength.type]) {
+          console.log("10 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH TYPE : " + strength.type)
+        } if (!this.strengthFormulaCondition[strength.formula]) {
+          console.log("11 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH FORMULA : " + strength.type)
+        } else {
+          let math = {
+            type: this.strengthType[strength.type],
+            formula: this.strengthFormulaCondition[strength.formula],
+            condition : strength.val1,
+            value: strength.rate1
+          }
+
+          skill.maths.push(math)
+        }
       })
     }
 

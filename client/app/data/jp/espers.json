@@ -30283,6 +30283,14 @@
         },
         "based": "physic",
         "hit": 100,
+        "maths": [
+          {
+            "type": "DEAD_UNITS",
+            "formula": "COUNT",
+            "condition": 5,
+            "value": 200
+          }
+        ],
         "damage": {
           "minValue": 65,
           "maxValue": 100,
