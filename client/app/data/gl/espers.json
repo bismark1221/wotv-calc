@@ -16,21 +16,24 @@
             "type": "FIRE_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_FIRE"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_FIRE02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_FIRE02"
           }
         ],
         "dataId": "SK_SMN_IFRT",
@@ -58,6 +61,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -482,6 +486,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -506,6 +511,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -529,6 +535,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -553,6 +560,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -577,6 +585,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -600,6 +609,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -623,6 +633,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -646,6 +657,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -669,6 +681,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -692,6 +705,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -716,6 +730,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -739,6 +754,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -762,6 +778,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -785,6 +802,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -809,6 +827,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -833,6 +852,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -856,6 +876,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -879,6 +900,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -902,6 +924,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -925,6 +948,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -948,6 +972,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -972,6 +997,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -996,6 +1022,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1019,6 +1046,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1042,6 +1070,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1066,6 +1095,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1090,6 +1120,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1113,6 +1144,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1136,6 +1168,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1159,6 +1192,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1182,6 +1216,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1206,6 +1241,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1230,6 +1266,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1290,21 +1327,24 @@
             "type": "EARTH_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_SOIL"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_SOIL02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_SOIL02"
           }
         ],
         "dataId": "SK_SMN_GLEM",
@@ -1332,6 +1372,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -1756,6 +1797,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1779,6 +1821,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1802,6 +1845,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1825,6 +1869,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1849,6 +1894,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1872,6 +1918,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1895,6 +1942,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1918,6 +1966,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1942,6 +1991,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1966,6 +2016,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -1989,6 +2040,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2012,6 +2064,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2036,6 +2089,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2060,6 +2114,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2083,6 +2138,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2107,6 +2163,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2130,6 +2187,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2153,6 +2211,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2176,6 +2235,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2200,6 +2260,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2224,6 +2285,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2247,6 +2309,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2270,6 +2333,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2294,6 +2358,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2318,6 +2383,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2341,6 +2407,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2364,6 +2431,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2387,6 +2455,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2410,6 +2479,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2433,6 +2503,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2456,6 +2527,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2479,6 +2551,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2502,6 +2575,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -2562,21 +2636,24 @@
             "type": "WATER_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_WATR"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_WATR02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_WATR02"
           }
         ],
         "dataId": "SK_SMN_SIRE",
@@ -2604,6 +2681,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -3028,6 +3106,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3051,6 +3130,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3074,6 +3154,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3098,6 +3179,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3121,6 +3203,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3144,6 +3227,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3167,6 +3251,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3190,6 +3275,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3214,6 +3300,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3238,6 +3325,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3261,6 +3349,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3284,6 +3373,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3307,6 +3397,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3330,6 +3421,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3354,6 +3446,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3377,6 +3470,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3400,6 +3494,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3423,6 +3518,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3446,6 +3542,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3470,6 +3567,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3494,6 +3592,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3517,6 +3616,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3540,6 +3640,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3563,6 +3664,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3586,6 +3688,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3610,6 +3713,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3634,6 +3738,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3657,6 +3762,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3680,6 +3786,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3703,6 +3810,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3726,6 +3834,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3749,6 +3858,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3773,6 +3883,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -3849,6 +3960,7 @@
         },
         "based": "physic",
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -4267,6 +4379,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4291,6 +4404,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4314,6 +4428,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4338,6 +4453,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4362,6 +4478,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4385,6 +4502,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4408,6 +4526,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4431,6 +4550,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4454,6 +4574,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4477,6 +4598,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4501,6 +4623,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4524,6 +4647,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4547,6 +4671,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4570,6 +4695,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4594,6 +4720,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4618,6 +4745,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4641,6 +4769,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4664,6 +4793,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4687,6 +4817,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4710,6 +4841,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4733,6 +4865,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4757,6 +4890,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4781,6 +4915,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4804,6 +4939,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4827,6 +4963,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4851,6 +4988,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4875,6 +5013,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4898,6 +5037,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4921,6 +5061,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4944,6 +5085,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4967,6 +5109,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -4991,6 +5134,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5015,6 +5159,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5090,6 +5235,7 @@
           "h": 0
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -5508,6 +5654,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5532,6 +5679,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5555,6 +5703,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5579,6 +5728,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5603,6 +5753,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5626,6 +5777,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5649,6 +5801,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5672,6 +5825,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5695,6 +5849,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5718,6 +5873,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5742,6 +5898,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5765,6 +5922,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5788,6 +5946,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5811,6 +5970,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5835,6 +5995,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5859,6 +6020,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5882,6 +6044,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5905,6 +6068,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5928,6 +6092,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5951,6 +6116,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5974,6 +6140,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -5998,6 +6165,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6022,6 +6190,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6045,6 +6214,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6068,6 +6238,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6092,6 +6263,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6116,6 +6288,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6139,6 +6312,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6162,6 +6336,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6185,6 +6360,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6208,6 +6384,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6232,6 +6409,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6256,6 +6434,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6785,6 +6964,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6809,6 +6989,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6832,6 +7013,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6855,6 +7037,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6878,6 +7061,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6901,6 +7085,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6924,6 +7109,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6948,6 +7134,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6971,6 +7158,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -6994,6 +7182,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7018,6 +7207,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7041,6 +7231,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7064,6 +7255,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7087,6 +7279,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7110,6 +7303,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7133,6 +7327,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7157,6 +7352,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7181,6 +7377,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7204,6 +7401,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7227,6 +7425,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7250,6 +7449,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7274,6 +7474,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7298,6 +7499,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7321,6 +7523,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7344,6 +7547,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7367,6 +7571,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7390,6 +7595,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7414,6 +7620,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7438,6 +7645,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7461,6 +7669,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7484,6 +7693,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7508,6 +7718,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7531,6 +7742,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -7606,6 +7818,7 @@
         },
         "based": "physic",
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 1000,
           "maxValue": 1000,
@@ -8031,6 +8244,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8055,6 +8269,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8078,6 +8293,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8102,6 +8318,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8125,6 +8342,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8148,6 +8366,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8171,6 +8390,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8194,6 +8414,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8218,6 +8439,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8242,6 +8464,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8266,6 +8489,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8289,6 +8513,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8312,6 +8537,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8335,6 +8561,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8359,6 +8586,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8382,6 +8610,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8406,6 +8635,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8430,6 +8660,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8453,6 +8684,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8477,6 +8709,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8501,6 +8734,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8525,6 +8759,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8549,6 +8784,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8572,6 +8808,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8595,6 +8832,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8619,6 +8857,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8643,6 +8882,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8667,6 +8907,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8691,6 +8932,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8714,6 +8956,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8737,6 +8980,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8761,6 +9005,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8785,6 +9030,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -8869,6 +9115,7 @@
         },
         "based": "physic",
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": -5,
           "maxValue": 17,
@@ -9293,6 +9540,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9316,6 +9564,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9339,6 +9588,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9363,6 +9613,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9387,6 +9638,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9410,6 +9662,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9433,6 +9686,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9456,6 +9710,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9479,6 +9734,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9503,6 +9759,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9527,6 +9784,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9550,6 +9808,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9573,6 +9832,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9596,6 +9856,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9620,6 +9881,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9644,6 +9906,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9667,6 +9930,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9690,6 +9954,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9713,6 +9978,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9736,6 +10002,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9759,6 +10026,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9783,6 +10051,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9807,6 +10076,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9830,6 +10100,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9853,6 +10124,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9877,6 +10149,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9901,6 +10174,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9924,6 +10198,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9947,6 +10222,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9970,6 +10246,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -9993,6 +10270,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10017,6 +10295,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10041,6 +10320,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10116,6 +10396,7 @@
           "h": 1
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -10540,6 +10821,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10564,6 +10846,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10587,6 +10870,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10611,6 +10895,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10634,6 +10919,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10657,6 +10943,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10680,6 +10967,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10703,6 +10991,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10727,6 +11016,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10751,6 +11041,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10775,6 +11066,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10798,6 +11090,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10821,6 +11114,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10844,6 +11138,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10868,6 +11163,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10891,6 +11187,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10915,6 +11212,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10939,6 +11237,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10962,6 +11261,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -10986,6 +11286,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11010,6 +11311,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11034,6 +11336,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11058,6 +11361,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11081,6 +11385,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11104,6 +11409,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11128,6 +11434,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11152,6 +11459,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11176,6 +11484,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11200,6 +11509,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11223,6 +11533,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11246,6 +11557,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11270,6 +11582,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11294,6 +11607,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11370,6 +11684,7 @@
         },
         "based": "physic",
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -11794,6 +12109,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11818,6 +12134,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11841,6 +12158,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11865,6 +12183,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11888,6 +12207,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11911,6 +12231,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11934,6 +12255,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11957,6 +12279,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -11981,6 +12304,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12005,6 +12329,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12029,6 +12354,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12052,6 +12378,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12075,6 +12402,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12098,6 +12426,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12122,6 +12451,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12145,6 +12475,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12169,6 +12500,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12193,6 +12525,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12216,6 +12549,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12240,6 +12574,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12264,6 +12599,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12288,6 +12624,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12312,6 +12649,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12335,6 +12673,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12358,6 +12697,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12382,6 +12722,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12406,6 +12747,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12430,6 +12772,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12454,6 +12797,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12477,6 +12821,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12500,6 +12845,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12524,6 +12870,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12548,6 +12895,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -12623,6 +12971,7 @@
           "h": 1
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 200,
           "maxValue": 230,
@@ -13047,6 +13396,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13071,6 +13421,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13094,6 +13445,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13118,6 +13470,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13141,6 +13494,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13164,6 +13518,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13187,6 +13542,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13210,6 +13566,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13234,6 +13591,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13258,6 +13616,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13282,6 +13641,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13305,6 +13665,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13328,6 +13689,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13351,6 +13713,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13375,6 +13738,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13398,6 +13762,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13422,6 +13787,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13446,6 +13812,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13469,6 +13836,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13493,6 +13861,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13517,6 +13886,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13541,6 +13911,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13565,6 +13936,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13588,6 +13960,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13611,6 +13984,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13635,6 +14009,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13659,6 +14034,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13683,6 +14059,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13707,6 +14084,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13730,6 +14108,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13753,6 +14132,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13777,6 +14157,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13801,6 +14182,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -13861,21 +14243,24 @@
             "type": "ICE_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_ICE"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_ICE02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_ICE02"
           }
         ],
         "dataId": "SK_SMN_SHIV",
@@ -13903,6 +14288,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -14327,6 +14713,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14351,6 +14738,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14374,6 +14762,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14398,6 +14787,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14422,6 +14812,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14445,6 +14836,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14468,6 +14860,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14491,6 +14884,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14514,6 +14908,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14537,6 +14932,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14561,6 +14957,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14584,6 +14981,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14607,6 +15005,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14630,6 +15029,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14654,6 +15054,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14678,6 +15079,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14701,6 +15103,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14724,6 +15127,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14747,6 +15151,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14770,6 +15175,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14793,6 +15199,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14817,6 +15224,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14841,6 +15249,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14864,6 +15273,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14887,6 +15297,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14911,6 +15322,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14935,6 +15347,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14958,6 +15371,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -14981,6 +15395,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15004,6 +15419,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15027,6 +15443,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15051,6 +15468,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15075,6 +15493,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15135,21 +15554,24 @@
             "type": "LIGHTNING_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_THUN"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_THUN02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_THUN02"
           }
         ],
         "dataId": "SK_SMN_RAMU",
@@ -15177,6 +15599,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -15601,6 +16024,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15625,6 +16049,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15648,6 +16073,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15672,6 +16098,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15696,6 +16123,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15719,6 +16147,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15742,6 +16171,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15765,6 +16195,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15788,6 +16219,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15811,6 +16243,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15835,6 +16268,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15858,6 +16292,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15881,6 +16316,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15904,6 +16340,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15928,6 +16365,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15952,6 +16390,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15975,6 +16414,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -15998,6 +16438,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16021,6 +16462,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16044,6 +16486,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16067,6 +16510,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16091,6 +16535,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16115,6 +16560,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16138,6 +16584,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16161,6 +16608,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16185,6 +16633,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16209,6 +16658,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16232,6 +16682,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16255,6 +16706,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16278,6 +16730,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16301,6 +16754,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16325,6 +16779,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16349,6 +16804,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16409,7 +16865,8 @@
             "type": "CRITIC_RATE",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "dataId": "BUFF_WTH_NONE"
           }
         ],
         "dataId": "SK_SMN_ODIN",
@@ -16437,6 +16894,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -16849,6 +17307,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16873,6 +17332,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16896,6 +17356,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16920,6 +17381,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16944,6 +17406,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16967,6 +17430,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -16990,6 +17454,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17013,6 +17478,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17036,6 +17502,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17059,6 +17526,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17083,6 +17551,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17106,6 +17575,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17129,6 +17599,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17152,6 +17623,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17176,6 +17648,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17200,6 +17673,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17223,6 +17697,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17246,6 +17721,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17269,6 +17745,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17292,6 +17769,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17315,6 +17793,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17339,6 +17818,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17363,6 +17843,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17386,6 +17867,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17409,6 +17891,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17433,6 +17916,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17457,6 +17941,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17480,6 +17965,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17503,6 +17989,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17526,6 +18013,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17549,6 +18037,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17573,6 +18062,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -17597,6 +18087,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18109,6 +18600,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18133,6 +18625,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18156,6 +18649,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18180,6 +18674,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18204,6 +18699,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18227,6 +18723,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18250,6 +18747,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18273,6 +18771,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18296,6 +18795,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18319,6 +18819,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18343,6 +18844,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18366,6 +18868,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18389,6 +18892,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18412,6 +18916,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18436,6 +18941,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18460,6 +18966,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18483,6 +18990,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18506,6 +19014,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18529,6 +19038,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18552,6 +19062,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18575,6 +19086,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18599,6 +19111,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18623,6 +19136,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18646,6 +19160,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18669,6 +19184,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18693,6 +19209,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18717,6 +19234,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18740,6 +19258,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18763,6 +19282,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18786,6 +19306,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18809,6 +19330,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18833,6 +19355,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18857,6 +19380,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -18917,14 +19441,16 @@
             "type": "WIND_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_WIND"
           },
           {
             "side": "TEAM",
             "type": "EVADE",
             "minValue": 10,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "dataId": "BUFF_WTH_WIND02"
           }
         ],
         "dataId": "SK_SMN_TSLP",
@@ -18952,6 +19478,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -19376,6 +19903,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19400,6 +19928,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19423,6 +19952,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19447,6 +19977,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19471,6 +20002,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19494,6 +20026,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19517,6 +20050,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19540,6 +20074,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19563,6 +20098,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19586,6 +20122,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19610,6 +20147,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19633,6 +20171,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19656,6 +20195,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19679,6 +20219,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19703,6 +20244,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19727,6 +20269,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19750,6 +20293,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19773,6 +20317,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19796,6 +20341,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19819,6 +20365,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19842,6 +20389,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19866,6 +20414,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19890,6 +20439,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19913,6 +20463,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19936,6 +20487,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19960,6 +20512,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -19984,6 +20537,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20007,6 +20561,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20030,6 +20585,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20053,6 +20609,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20076,6 +20633,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20100,6 +20658,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20124,6 +20683,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20204,6 +20764,7 @@
           "h": 1
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -20628,6 +21189,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20652,6 +21214,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20675,6 +21238,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20699,6 +21263,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20723,6 +21288,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20746,6 +21312,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20769,6 +21336,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20792,6 +21360,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20815,6 +21384,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20838,6 +21408,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20862,6 +21433,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20885,6 +21457,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20908,6 +21481,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20931,6 +21505,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20955,6 +21530,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -20979,6 +21555,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21002,6 +21579,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21025,6 +21603,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21048,6 +21627,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21071,6 +21651,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21094,6 +21675,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21118,6 +21700,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21142,6 +21725,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21165,6 +21749,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21188,6 +21773,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21212,6 +21798,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21236,6 +21823,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21259,6 +21847,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21282,6 +21871,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21305,6 +21895,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21328,6 +21919,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21352,6 +21944,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21376,6 +21969,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21466,6 +22060,7 @@
           "h": 1
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -21884,6 +22479,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21908,6 +22504,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21931,6 +22528,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21955,6 +22553,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -21978,6 +22577,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22001,6 +22601,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22024,6 +22625,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22047,6 +22649,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22070,6 +22673,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22093,6 +22697,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22117,6 +22722,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22140,6 +22746,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22163,6 +22770,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22186,6 +22794,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22210,6 +22819,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22233,6 +22843,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22257,6 +22868,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22281,6 +22893,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22304,6 +22917,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22327,6 +22941,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22350,6 +22965,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22374,6 +22990,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22398,6 +23015,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22421,6 +23039,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22444,6 +23063,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22468,6 +23088,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22492,6 +23113,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22516,6 +23138,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22540,6 +23163,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22563,6 +23187,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22586,6 +23211,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22610,6 +23236,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22634,6 +23261,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -22694,14 +23322,16 @@
             "type": "FIRE_RES",
             "minValue": -10,
             "maxValue": -40,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_FIRE03"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 30,
             "maxValue": 60,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_FIRE04"
           }
         ],
         "dataId": "SK_SMN_WRMC",
@@ -22730,6 +23360,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -23154,6 +23785,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23177,6 +23809,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23200,6 +23833,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23223,6 +23857,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23246,6 +23881,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23269,6 +23905,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23292,6 +23929,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23315,6 +23953,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23338,6 +23977,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23361,6 +24001,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23384,6 +24025,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23407,6 +24049,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23431,6 +24074,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23455,6 +24099,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23478,6 +24123,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23501,6 +24147,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23525,6 +24172,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23549,6 +24197,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23572,6 +24221,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23595,6 +24245,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23618,6 +24269,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23641,6 +24293,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23664,6 +24317,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23688,6 +24342,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23712,6 +24367,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23735,6 +24391,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23758,6 +24415,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23782,6 +24440,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23806,6 +24465,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23829,6 +24489,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23852,6 +24513,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23875,6 +24537,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23898,6 +24561,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -23958,21 +24622,24 @@
             "type": "DARK_RES",
             "minValue": -30,
             "maxValue": -60,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_DARK"
           },
           {
             "side": "TEAM",
             "type": "ATK",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_DARK02"
           },
           {
             "side": "TEAM",
             "type": "MAG",
             "minValue": 10,
             "maxValue": 40,
-            "calcType": "percent"
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_DARK02"
           }
         ],
         "dataId": "SK_SMN_DABL",
@@ -24000,6 +24667,7 @@
           "h": 2
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 135,
           "maxValue": 175,
@@ -24418,6 +25086,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24442,6 +25111,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24465,6 +25135,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24489,6 +25160,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24513,6 +25185,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24536,6 +25209,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24559,6 +25233,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24582,6 +25257,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24605,6 +25281,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24628,6 +25305,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24652,6 +25330,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24675,6 +25354,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24698,6 +25378,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24721,6 +25402,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24745,6 +25427,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24769,6 +25452,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24793,6 +25477,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24817,6 +25502,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24840,6 +25526,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24863,6 +25550,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24886,6 +25574,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24910,6 +25599,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24934,6 +25624,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24957,6 +25648,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -24980,6 +25672,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25004,6 +25697,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25028,6 +25722,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25052,6 +25747,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25076,6 +25772,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25099,6 +25796,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25122,6 +25820,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25146,6 +25845,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25170,6 +25870,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25250,6 +25951,7 @@
           "h": 1
         },
         "hit": 100,
+        "crt_hit": -15,
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -25668,6 +26370,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25692,6 +26395,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25715,6 +26419,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25739,6 +26444,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25763,6 +26469,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25786,6 +26493,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25809,6 +26517,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25832,6 +26541,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25855,6 +26565,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25878,6 +26589,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25902,6 +26614,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25925,6 +26638,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25948,6 +26662,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25971,6 +26686,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -25995,6 +26711,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26019,6 +26736,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26042,6 +26760,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26065,6 +26784,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26088,6 +26808,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26111,6 +26832,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26134,6 +26856,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26158,6 +26881,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26182,6 +26906,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26205,6 +26930,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26228,6 +26954,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26252,6 +26979,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26276,6 +27004,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26299,6 +27028,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26322,6 +27052,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26345,6 +27076,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26368,6 +27100,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26392,6 +27125,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }
@@ -26416,6 +27150,7 @@
             "count": null,
             "maxLevel": null,
             "hit": null,
+            "crt_hit": null,
             "pierce": null,
             "ctbreak": null
           }

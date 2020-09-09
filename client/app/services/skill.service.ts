@@ -942,15 +942,17 @@ export class SkillService {
     }
 
     if (effect.side) {
-      html = html + " for 3 turns " + (effect.side == "TEAM" ? "to all units" : "to all ennemies")
+      html = html + " for 3 turns to all "
+
+      if (effect.elements) {
+        html += effect.elements.join(" ,") + " "
+      }
+
+      html += (effect.side == "TEAM" ? "units" : "ennemies")
     }
 
     if (skill.maths) {
-      console.log("====")
-      console.log(effect)
-      console.log(html)
       html = this.formatMaths(skill, html)
-      console.log("====")
     }
 
     return html;
@@ -983,6 +985,10 @@ export class SkillService {
 
     if (skill.hit) {
       html += (skill.damage ? "<br />" : "") + "Hit chance set to " + skill.hit + "%"
+    }
+
+    if (skill.crt_hit) {
+      html += (skill.damage ? "<br />" : "") + "Critic chance " + skill.crt_hit + "%"
     }
 
     if (skill.pierce) {

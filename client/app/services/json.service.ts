@@ -1476,7 +1476,8 @@ export class JsonService {
       grow: null,
       replace: null,
       strength: null,
-      ctave: null
+      ctave: null,
+      crt_hit: null
     };
 
     if (skill.type == "buff") {
@@ -1543,6 +1544,7 @@ export class JsonService {
     }
 
     skill.hit = dataSkill.hit
+    skill.crt_hit = dataSkill.crt_hit
     skill.pierce = dataSkill.pierce
     skill.ctbreak = dataSkill.ctbreak // Cancel ability activation
 
@@ -1705,7 +1707,10 @@ export class JsonService {
 
 
     if (dataSkill.t_buffs || dataSkill.s_buffs) {
-      ["t_buffs", "s_buffs"].forEach(dataBuffs => {
+      let alreadyAddedBuffs = []
+      let possibleBuffs = ["t_buffs", "s_buffs"]
+
+      possibleBuffs.forEach(dataBuffs => {
         if (dataSkill[dataBuffs]) {
           let buffs = JSON.parse(JSON.stringify(dataSkill[dataBuffs]))
 
@@ -1718,102 +1723,107 @@ export class JsonService {
             let duplicateFinded = false;
             let needToAddKiller = false;
 
-            while (!finished) {
-              if (this[this.version].buffs[buff]["type" + i]) {
-                if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
-                  if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
-                    console.log("3 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
-                  }
-
-                  if (this[this.version].buffs[buff]["id" + i]) {
-                    let futurBuffId = this[this.version].buffs[this[this.version].buffs[buff]["id" + i]].iname
-                    fromImbue.push(futurBuffId)
-                    buffs.push(futurBuffId);
-                  }
-
-                  if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
-                    console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
-                  }
-
-                  let type = this.buffTypes[this[this.version].buffs[buff]["type" + i]]
-                  if (this[this.version].buffs[buff]["tag" + i]) {
-                    if (type !== "KILLER" && type !== "IMBUE" && type !== "WATER") {
-                      skill.effects.push({
-                        type: type
-                      })
+            if (alreadyAddedBuffs.indexOf(buff) == -1) {
+              while (!finished) {
+                if (this[this.version].buffs[buff]["type" + i]) {
+                  if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
+                    if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
+                      console.log("3 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- EFFECT : " + this[this.version].buffs[buff]["type" + i])
                     }
 
-                    type = this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER"
-
-                    if (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance") {
-                      type = type + "_RES"
+                    if (this[this.version].buffs[buff]["id" + i]) {
+                      let futurBuffId = this[this.version].buffs[this[this.version].buffs[buff]["id" + i]].iname
+                      fromImbue.push(futurBuffId)
+                      buffs.push(futurBuffId);
                     }
-                  }
 
+                    if (this[this.version].buffs[buff]["tag" + i] && !this.killers[this[this.version].buffs[buff]["tag" + i]]) {
+                      console.log("4 @@@@@ " + (unit.names ? unit.names.en : unit.dataId) + " -- " + (skill.names ? skill.names.en : skill.dataId) + " -- KILLER : " + this[this.version].buffs[buff]["tag" + i])
+                    }
 
-                  let nullifyOrDispel = false;
-                  if (this.statsAtkRes.indexOf(type) !== -1) {
-                    type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
-                  } else if (this.ailmentStatus.indexOf(type) !== -1) {
-                    let calcType = this.calcType[this[this.version].buffs[buff]["calc" + i]]
-                    if (calcType == "nullify" || calcType == "dispel") {
-                      nullifyOrDispel = true
-                      let effect = this.findEffect(skill, calcType.toUpperCase())
-                      if (!effect) {
-                        effect = {
-                          type: calcType.toUpperCase(),
-                          ailments: []
-                        }
-                        skill.effects.push(effect)
+                    let type = this.buffTypes[this[this.version].buffs[buff]["type" + i]]
+                    if (this[this.version].buffs[buff]["tag" + i]) {
+                      if (type !== "KILLER" && type !== "IMBUE" && type !== "WATER") {
+                        skill.effects.push({
+                          type: type
+                        })
+                        alreadyAddedBuffs.push(buff)
                       }
-                      effect.ailments.push(type)
-                    } else {
+
+                      type = this.killers[this[this.version].buffs[buff]["tag" + i]] + "_KILLER"
+
+                      if (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance") {
+                        type = type + "_RES"
+                      }
+                    }
+
+
+                    let nullifyOrDispel = false;
+                    if (this.statsAtkRes.indexOf(type) !== -1) {
                       type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                    } else if (this.ailmentStatus.indexOf(type) !== -1) {
+                      let calcType = this.calcType[this[this.version].buffs[buff]["calc" + i]]
+                      if (calcType == "nullify" || calcType == "dispel") {
+                        nullifyOrDispel = true
+                        let effect = this.findEffect(skill, calcType.toUpperCase())
+                        if (!effect) {
+                          effect = {
+                            type: calcType.toUpperCase(),
+                            ailments: []
+                          }
+                          skill.effects.push(effect)
+                          alreadyAddedBuffs.push(buff)
+                        }
+                        effect.ailments.push(type)
+                      } else {
+                        type = type + "_" + (this.calcType[this[this.version].buffs[buff]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                      }
+                    }
+
+                    if (!nullifyOrDispel && type !== "IMBUE") {
+                      let addedBuff = {
+                        type: type,
+                        minValue: this[this.version].buffs[buff]["val" + i],
+                        maxValue: this[this.version].buffs[buff]["val" + i + "1"],
+                        calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
+                        rate: this[this.version].buffs[buff].rate,
+                        turn: this[this.version].buffs[buff].turn,
+                        fromImbue: false,
+                        condition: null,
+                        increaseMax: false
+                      };
+
+                      if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
+                        addedBuff.fromImbue = true;
+                      } else {
+                        delete addedBuff.fromImbue
+                      }
+
+                      if (this[this.version].buffs[buff].conds) {
+                        addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
+                      } else {
+                        delete addedBuff.condition
+                      }
+
+                      if (this[this.version].buffs[buff]["calc" + i] == 2) {
+                        addedBuff.increaseMax = true
+                      } else {
+                        delete addedBuff.increaseMax
+                      }
+
+                      skill.effects.push(addedBuff)
+                      alreadyAddedBuffs.push(buff)
+                    }
+
+                    if (this[this.version].buffs[buff]["type" + i] === 116) {
+                      duplicateFinded = true;
                     }
                   }
 
-                  if (!nullifyOrDispel && type !== "IMBUE") {
-                    let addedBuff = {
-                      type: type,
-                      minValue: this[this.version].buffs[buff]["val" + i],
-                      maxValue: this[this.version].buffs[buff]["val" + i + "1"],
-                      calcType: this.calcType[this[this.version].buffs[buff]["calc" + i]] ? this.calcType[this[this.version].buffs[buff]["calc" + i]] : "unknow",
-                      rate: this[this.version].buffs[buff].rate,
-                      turn: this[this.version].buffs[buff].turn,
-                      fromImbue: false,
-                      condition: null,
-                      increaseMax: false
-                    };
-
-                    if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
-                      addedBuff.fromImbue = true;
-                    } else {
-                      delete addedBuff.fromImbue
-                    }
-
-                    if (this[this.version].buffs[buff].conds) {
-                      addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
-                    } else {
-                      delete addedBuff.condition
-                    }
-
-                    if (this[this.version].buffs[buff]["calc" + i] == 2) {
-                      addedBuff.increaseMax = true
-                    } else {
-                      delete addedBuff.increaseMax
-                    }
-
-                    skill.effects.push(addedBuff)
-                  }
-
-                  if (this[this.version].buffs[buff]["type" + i] === 116) {
-                    duplicateFinded = true;
-                  }
+                  i++;
+                } else {
+                  finished = true;
                 }
-
-                i++;
-              } else {
-                finished = true;
               }
             }
             buffIndex++
@@ -2040,36 +2050,66 @@ export class JsonService {
   }
 
   private addWeather(unit, skill, weatherId) {
+    let alreadyAddedBuffs = []
+
     this[this.version].weathers[weatherId].buffs.forEach(buff => {
       let weatherFinished = false;
       let j = 1;
       while (!weatherFinished) {
         if (buff["buff" + j]) {
-          let finished = false;
-          let i = 1;
-          while (!finished) {
-            if (this[this.version].buffs[buff["buff" + j]]["type" + i]) {
+          if (alreadyAddedBuffs.indexOf(buff["buff" + j]) == -1) {
+            let finished = false;
+            let i = 1;
+            while (!finished) {
+              if (this[this.version].buffs[buff["buff" + j]]["type" + i]) {
 
-              if (!this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]) {
-                console.log("5 @@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
+                if (!this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]) {
+                  console.log("5 @@@@@ " + unit.names.en + " -- EFFECT : " + this[this.version].buffs[buff["buff" + j]]["type" + i])
+                }
+
+                let type = this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]
+                if (this.statsAtkRes.indexOf(type) !== -1) {
+                  type = type + "_" + (this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] == "resistance" ? "RES" : "ATK")
+                }
+
+                let formattedBuff = {
+                  side: buff.side === 1 ? "TEAM" : "ENNEMIES",
+                  type: type,
+                  minValue: this[this.version].buffs[buff["buff" + j]]["val" + i],
+                  maxValue: this[this.version].buffs[buff["buff" + j]]["val" + i + "1"],
+                  calcType: this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] : "unknow",
+                  turn: this[this.version].buffs[buff["buff" + j]].turn,
+                  dataId: buff["buff" + j]
+                }
+
+                if (buff.elem) {
+                  formattedBuff.elements = []
+                  buff.elem.forEach(element => {
+                    formattedBuff.elements.push(this.elements[element])
+                  })
+                }
+
+                skill.effects.push(formattedBuff)
+                alreadyAddedBuffs.push(buff["buff" + j])
+
+                i++;
+              } else {
+                finished = true;
               }
-
-              let type = this.buffTypes[this[this.version].buffs[buff["buff" + j]]["type" + i]]
-              if (this.statsAtkRes.indexOf(type) !== -1) {
-                type = type + "_" + (this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] == "resistance" ? "RES" : "ATK")
-              }
-
-              skill.effects.push({
-                side: buff.side === 1 ? "TEAM" : "ENNEMIES",
-                type: type,
-                minValue: this[this.version].buffs[buff["buff" + j]]["val" + i],
-                maxValue: this[this.version].buffs[buff["buff" + j]]["val" + i + "1"],
-                calcType: this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] ? this.calcType[this[this.version].buffs[buff["buff" + j]]["calc" + i]] : "unknow",
-                turn: this[this.version].buffs[buff["buff" + j]].turn
-              });
-              i++;
-            } else {
-              finished = true;
+            }
+          } else {
+            if (buff.elem) {
+              skill.effects.forEach(effect => {
+                if (effect.dataId == buff["buff" + j]) {
+                  buff.elem.forEach(element => {
+                    if (!effect.elements) {
+                      effect.elements = [this.elements[element]]
+                    } else if (effect.elements.indexOf(this.elements[element]) == -1) {
+                      effect.elements.push(this.elements[element])
+                    }
+                  })
+                }
+              })
             }
           }
           j++;
