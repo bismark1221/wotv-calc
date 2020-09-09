@@ -969,7 +969,7 @@ export class SkillService {
 
     if (skill.damage) {
       if (damage.type) {
-        let elem = skill.elem ? skill.elem : unit.element
+        let elem = skill.elem ? skill.elem : (unit.element ? unit.element : "neutral")
         let image = elem + "_" + damage.type.toLowerCase();
         html = html + "<img title='" + elem + " " + damage.type.toLowerCase() + "' class='damageSkillImg' src='assets/damage/" + image + ".png' />&nbsp;"
       }
