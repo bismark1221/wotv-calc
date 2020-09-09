@@ -1970,7 +1970,7 @@ export class JsonService {
                 dataId: this[this.version].equipments[tmrId]["skl" + i][j],
                 names: {},
                 effects: [],
-                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]["skl" + i][j]].s_buffs ? 3 : 1]
+                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]["skl" + i][j]].slot == 1 ? 1 : 3]
               }
               this.updateSkill(unit, skill, this[this.version].equipments[tmrId]["skl" + i][j]);
               tmr.skills.push(skill)
@@ -2271,7 +2271,7 @@ export class JsonService {
                 names: {},
                 dataId: skillId,
                 effects: [],
-                type: this.slots[this[this.version].skills[skillId].s_buffs || this[this.version].skills[skillId].type === 6 ? 3 : 1],
+                type: this.slots[this[this.version].skills[skillId].slot === 1 ? 1 : 3],
                 upgrade: [i],
                 grow: this[this.version].skills[skillId].grow
               }
