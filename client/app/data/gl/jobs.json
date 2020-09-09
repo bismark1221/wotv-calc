@@ -39506,7 +39506,8 @@
   "JB_FFT_AGRA": {
     "dataId": "JB_FFT_AGRA",
     "names": {
-      "en": "Holy Knight"
+      "en": "Holy Knight",
+      "fr": "Chevalier sacré"
     },
     "statsModifiers": [
       {
@@ -39692,7 +39693,8 @@
   "JB_FFT_DELT": {
     "dataId": "JB_FFT_DELT",
     "names": {
-      "en": "Squire"
+      "en": "Squire",
+      "fr": "Écuyer"
     },
     "statsModifiers": [
       {
@@ -39880,7 +39882,8 @@
   "JB_FFT_MSTD": {
     "dataId": "JB_FFT_MSTD",
     "names": {
-      "en": "Machinist"
+      "en": "Machinist",
+      "fr": "Machiniste"
     },
     "statsModifiers": [
       {
@@ -40062,5 +40065,1501 @@
       ]
     },
     "slug": "machinist"
+  },
+  "JB_LW_CAL_FIRE": {
+    "dataId": "JB_LW_CAL_FIRE",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_ICE": {
+    "dataId": "JB_LW_CAL_ICE",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_WIND": {
+    "dataId": "JB_LW_CAL_WIND",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_SOIL": {
+    "dataId": "JB_LW_CAL_SOIL",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_THUN": {
+    "dataId": "JB_LW_CAL_THUN",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_WATER": {
+    "dataId": "JB_LW_CAL_WATER",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_SHINE": {
+    "dataId": "JB_LW_CAL_SHINE",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
+  },
+  "JB_LW_CAL_DARK": {
+    "dataId": "JB_LW_CAL_DARK",
+    "names": {
+      "en": "Arithmetician",
+      "fr": "Arithméticien"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 200,
+        "TP": 1075,
+        "AP": 1075,
+        "ATK": 205,
+        "MAG": 1075,
+        "DEX": 870,
+        "AGI": 768,
+        "LUCK": 768,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 800,
+        "TP": 1704,
+        "AP": 1704,
+        "ATK": 325,
+        "MAG": 1704,
+        "DEX": 1379,
+        "AGI": 1217,
+        "LUCK": 1217,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1040,
+        "TP": 2150,
+        "AP": 2150,
+        "ATK": 410,
+        "MAG": 2150,
+        "DEX": 1741,
+        "AGI": 1536,
+        "LUCK": 1536,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 1280,
+        "TP": 2496,
+        "AP": 2496,
+        "ATK": 475,
+        "MAG": 2496,
+        "DEX": 2021,
+        "AGI": 1783,
+        "LUCK": 1783,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2000,
+        "TP": 2779,
+        "AP": 2779,
+        "ATK": 529,
+        "MAG": 2779,
+        "DEX": 2250,
+        "AGI": 1985,
+        "LUCK": 1985,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2240,
+        "TP": 3018,
+        "AP": 3018,
+        "ATK": 575,
+        "MAG": 3018,
+        "DEX": 2443,
+        "AGI": 2156,
+        "LUCK": 2156,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 2480,
+        "TP": 3225,
+        "AP": 3225,
+        "ATK": 614,
+        "MAG": 3225,
+        "DEX": 2611,
+        "AGI": 2304,
+        "LUCK": 2304,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3200,
+        "TP": 3408,
+        "AP": 3408,
+        "ATK": 649,
+        "MAG": 3408,
+        "DEX": 2759,
+        "AGI": 2434,
+        "LUCK": 2434,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3440,
+        "TP": 3571,
+        "AP": 3571,
+        "ATK": 680,
+        "MAG": 3571,
+        "DEX": 2891,
+        "AGI": 2551,
+        "LUCK": 2551,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 3680,
+        "TP": 3719,
+        "AP": 3719,
+        "ATK": 708,
+        "MAG": 3719,
+        "DEX": 3011,
+        "AGI": 2656,
+        "LUCK": 2656,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4400,
+        "TP": 3854,
+        "AP": 3854,
+        "ATK": 734,
+        "MAG": 3854,
+        "DEX": 3120,
+        "AGI": 2753,
+        "LUCK": 2753,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4666,
+        "TP": 3978,
+        "AP": 3978,
+        "ATK": 758,
+        "MAG": 3978,
+        "DEX": 3220,
+        "AGI": 2841,
+        "LUCK": 2841,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 4932,
+        "TP": 4093,
+        "AP": 4093,
+        "ATK": 780,
+        "MAG": 4093,
+        "DEX": 3313,
+        "AGI": 2924,
+        "LUCK": 2924,
+        "INITIAL_AP": -25
+      },
+      {
+        "HP": 6000,
+        "TP": 4200,
+        "AP": 4200,
+        "ATK": 800,
+        "MAG": 4200,
+        "DEX": 3400,
+        "AGI": 3000,
+        "LUCK": 3000,
+        "INITIAL_AP": -25
+      }
+    ],
+    "image": "cal",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "MACE"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "slug": "arithmetician"
   }
 }

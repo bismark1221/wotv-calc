@@ -98,7 +98,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1_INIT",
-            "value": "Longévité divine"
+            "value": "Guérison divine"
         },
         {
             "key": "SK_LW_KNT_M_1_INIT",
@@ -142,7 +142,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1",
-            "value": "Longévité divine"
+            "value": "Guérison divine"
         },
         {
             "key": "SK_LW_KNT_M_1",
@@ -254,7 +254,7 @@
         },
         {
             "key": "SK_LW_MGK_S_4",
-            "value": "Lame Silence "
+            "value": "Lame Silence"
         },
         {
             "key": "SK_LW_MGK_M_3",
@@ -378,7 +378,7 @@
         },
         {
             "key": "SK_LW_MGK_S_4_SUB",
-            "value": "Lame Silence "
+            "value": "Lame Silence"
         },
         {
             "key": "SK_LW_MGK_M_3_SUB",
@@ -522,7 +522,7 @@
         },
         {
             "key": "SK_LW_MNK_R_1",
-            "value": "Contre-poing"
+            "value": "Contre poing"
         },
         {
             "key": "SK_LW_MNK_P_1",
@@ -618,7 +618,7 @@
         },
         {
             "key": "SK_LW_SAM_S_3",
-            "value": "Méditation "
+            "value": "Méditation"
         },
         {
             "key": "SK_LW_THI_ATK",
@@ -654,7 +654,7 @@
         },
         {
             "key": "SK_LW_THI_M_2",
-            "value": "Vol temps"
+            "value": "Vole-temps"
         },
         {
             "key": "SK_LW_THI_R_1",
@@ -822,7 +822,7 @@
         },
         {
             "key": "SK_LW_LAN_R_1",
-            "value": "Contre-perçant"
+            "value": "Contre perçant"
         },
         {
             "key": "SK_LW_LAN_P_2",
@@ -962,7 +962,7 @@
         },
         {
             "key": "SK_LW_HUN_S_3",
-            "value": "Charge augmentée"
+            "value": "Super charge"
         },
         {
             "key": "SK_LW_HUN_R_1",
@@ -1090,7 +1090,7 @@
         },
         {
             "key": "SK_LW_BLM_SOIL_M_5",
-            "value": "Omnipierre"
+            "value": "Terre X"
         },
         {
             "key": "SK_LW_BLM_THUN_M_5",
@@ -1218,7 +1218,7 @@
         },
         {
             "key": "SK_LW_BLM_SOIL_M_5_SUB",
-            "value": "Omnipierre"
+            "value": "Terre X"
         },
         {
             "key": "SK_LW_BLM_THUN_M_5_SUB",
@@ -1350,7 +1350,7 @@
         },
         {
             "key": "SK_LW_WHM_M_2",
-            "value": "Guérison "
+            "value": "Guérison"
         },
         {
             "key": "SK_LW_CLR_ATK",
@@ -1370,7 +1370,7 @@
         },
         {
             "key": "SK_LW_CLR_M_2_INIT",
-            "value": "Banissement"
+            "value": "Bannissement"
         },
         {
             "key": "SK_LW_CLR_S_1_INIT",
@@ -1450,7 +1450,7 @@
         },
         {
             "key": "SK_LW_GRM_SHIN_M_3",
-            "value": "Antilumi"
+            "value": "Anti-Lumière +"
         },
         {
             "key": "SK_LW_GRM_DARK_M_3",
@@ -1682,7 +1682,7 @@
         },
         {
             "key": "SK_LW_RDM_M_2",
-            "value": "Guérison "
+            "value": "Guérison"
         },
         {
             "key": "SK_LW_RDM_S_2",
@@ -1730,7 +1730,7 @@
         },
         {
             "key": "SK_LW_TIM_S_2",
-            "value": "Stop "
+            "value": "Stop"
         },
         {
             "key": "SK_LW_TIM_M_4",
@@ -1758,15 +1758,15 @@
         },
         {
             "key": "SK_LW_TIM_S_1",
-            "value": "Lenteur "
+            "value": "Lenteur"
         },
         {
             "key": "SK_LW_TIM_R_1",
-            "value": "Contre-lent"
+            "value": "Contre lent"
         },
         {
             "key": "SK_LW_TIM_P_2",
-            "value": "Annule changements CT"
+            "value": "Annule changements de CT"
         },
         {
             "key": "SK_LW_TIM_P_1",
@@ -1778,7 +1778,7 @@
         },
         {
             "key": "SK_LW_TIM_S_2_SUB",
-            "value": "Stop "
+            "value": "Stop"
         },
         {
             "key": "SK_LW_TIM_M_4_SUB",
@@ -1870,7 +1870,7 @@
         },
         {
             "key": "SK_LW_FINA_S_3",
-            "value": "Guérison "
+            "value": "Guérison"
         },
         {
             "key": "SK_LW_FINA_S_4",
@@ -2134,7 +2134,7 @@
         },
         {
             "key": "SK_FFT_GFGR_S_3",
-            "value": "Lame taître"
+            "value": "Lame traître"
         },
         {
             "key": "SK_FFT_GFGR_S_4",
@@ -2509,6 +2509,218 @@
             "value": "DEF ↑ Niv. 1"
         },
         {
+            "key": "SK_FFT_AGRA_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_1",
+            "value": "Ignorance indéfectible"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_2",
+            "value": "Éclair inimitable"
+        },
+        {
+            "key": "SK_FFT_AGRA_M_3",
+            "value": "Talisman"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_1",
+            "value": "Frappe de l'étoile polaire"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_2",
+            "value": "Garde royale princière"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_3",
+            "value": "Protection du garde royal"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_4",
+            "value": "Je crois en toi !"
+        },
+        {
+            "key": "SK_FFT_AGRA_S_5",
+            "value": "Brise-tout"
+        },
+        {
+            "key": "SK_FFT_AGRA_R_1",
+            "value": "Défensive"
+        },
+        {
+            "key": "SK_FFT_AGRA_P_1",
+            "value": "Chevalerie"
+        },
+        {
+            "key": "SK_FFT_AGRA_P_2",
+            "value": "Code d'honneur du chevalier"
+        },
+        {
+            "key": "SK_FFT_DELT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_DELT_M_1",
+            "value": "Frappe purifiante"
+        },
+        {
+            "key": "SK_FFT_DELT_M_2",
+            "value": "Broyage d'accessoire"
+        },
+        {
+            "key": "SK_FFT_DELT_M_3",
+            "value": "Lame-karma"
+        },
+        {
+            "key": "SK_FFT_DELT_S_1",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_FFT_DELT_S_2",
+            "value": "Abnégation"
+        },
+        {
+            "key": "SK_FFT_DELT_S_3",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_FFT_DELT_S_4",
+            "value": "Méditation"
+        },
+        {
+            "key": "SK_FFT_DELT_S_5",
+            "value": "Ignorance indéfectible"
+        },
+        {
+            "key": "SK_FFT_DELT_R_1",
+            "value": "Contre-plaquage"
+        },
+        {
+            "key": "SK_FFT_DELT_P_1",
+            "value": "Déplacement +1"
+        },
+        {
+            "key": "SK_FFT_DELT_P_2",
+            "value": "PA acquis"
+        },
+        {
+            "key": "SK_FFT_MSTD_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_1",
+            "value": "Critiques multiples"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_2",
+            "value": "Claustration impie"
+        },
+        {
+            "key": "SK_FFT_MSTD_M_3",
+            "value": "Décharge rapide"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_1",
+            "value": "Tir puissant"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_2",
+            "value": "Résilience"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_3",
+            "value": "Camouflage"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_4",
+            "value": "Tir dans le pied"
+        },
+        {
+            "key": "SK_FFT_MSTD_S_5",
+            "value": "Tir dans le bras"
+        },
+        {
+            "key": "SK_FFT_MSTD_R_1",
+            "value": "Auto-potion"
+        },
+        {
+            "key": "SK_FFT_MSTD_P_1",
+            "value": "Visée"
+        },
+        {
+            "key": "SK_FFT_MSTD_P_2",
+            "value": "Att projectile ↑"
+        },
+        {
+            "key": "SK_LW_CAL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_CAL_M_1",
+            "value": "Hauteur 3 Sidéral"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_B",
+            "value": "Hauteur 2 Sidéral"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2",
+            "value": "Eau X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_B",
+            "value": "Eau X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_M_3",
+            "value": "Soin + [H. 3]"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_B",
+            "value": "Soin + [H. 2]"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_1_INIT",
+            "value": "Eau d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_S_2_INIT",
+            "value": "Soin d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_S_3",
+            "value": "Hauteur 3 Incapacité"
+        },
+        {
+            "key": "SK_LW_CAL_S_3_B",
+            "value": "Hauteur 2 Incapacité"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_4",
+            "value": "Eau + niv.4"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_4_B",
+            "value": "Eau + niv.3"
+        },
+        {
+            "key": "SK_LW_CAL_S_5",
+            "value": "CT moyenne"
+        },
+        {
+            "key": "SK_LW_CAL_R_1",
+            "value": "Répartition des dégâts"
+        },
+        {
+            "key": "SK_LW_CAL_P_1",
+            "value": "De Hauteur 3 à Hauteur 2"
+        },
+        {
+            "key": "SK_LW_CAL_P_2",
+            "value": "Niv. 4 à niv. 3"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -2526,7 +2738,7 @@
         },
         {
             "key": "SK_LW_TU_CLR_M_2",
-            "value": "Banissement"
+            "value": "Bannissement"
         },
         {
             "key": "SK_TU_BHMT_M_01",
@@ -2770,7 +2982,7 @@
         },
         {
             "key": "SK_ARMN_M_03",
-            "value": "Glas"
+            "value": "Peine de mort"
         },
         {
             "key": "SK_OGRE_ATK",
@@ -2782,7 +2994,7 @@
         },
         {
             "key": "SK_OGRE_M_02",
-            "value": "Projection violente "
+            "value": "Projection violente"
         },
         {
             "key": "SK_OGRE_M_03",
@@ -2934,7 +3146,7 @@
         },
         {
             "key": "SK_ELEM_M_13",
-            "value": "Banissement"
+            "value": "Bannissement"
         },
         {
             "key": "SK_ELEM_M_14",
@@ -3162,7 +3374,7 @@
         },
         {
             "key": "SK_GLEM_M_02",
-            "value": "Omnipierre"
+            "value": "Terre X"
         },
         {
             "key": "SK_GLEM_M_03",
@@ -3518,7 +3730,7 @@
         },
         {
             "key": "SK_LB_FFT_ORND",
-            "value": "Tech. d'épée : Dieu foudroyant"
+            "value": "Tech. d'épée : Dieu-foudre"
         },
         {
             "key": "SK_LB_LW_VKTR",
@@ -3549,6 +3761,18 @@
             "value": "Bomboldoa"
         },
         {
+            "key": "SK_LB_FFT_AGRA_01",
+            "value": "Entaille céleste"
+        },
+        {
+            "key": "SK_LB_FFT_DELT_01",
+            "value": "Éclair inimitable en 3 coups - véritable"
+        },
+        {
+            "key": "SK_LB_LW_IRDL",
+            "value": "Théorème d'Ildyra"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -3574,7 +3798,7 @@
         },
         {
             "key": "SK_SMN_IGNT",
-            "value": "Fauchage"
+            "value": "Faucheur"
         },
         {
             "key": "SK_SMN_BHMT",
@@ -3598,7 +3822,7 @@
         },
         {
             "key": "SK_SMN_OGRE",
-            "value": "Projection violente "
+            "value": "Projection violente"
         },
         {
             "key": "SK_SMN_BOMB",
@@ -3627,6 +3851,10 @@
         {
             "key": "SK_SMN_DABL",
             "value": "Messager des ténèbres"
+        },
+        {
+            "key": "SK_SMN_CHCB_01",
+            "value": "Choco-météore"
         },
         {
             "key": "SK_US_POTION",
@@ -3682,7 +3910,7 @@
         },
         {
             "key": "SK_US_GOLDNEEDLE",
-            "value": " Défigeur"
+            "value": " Aiguille d'or"
         },
         {
             "key": "SK_US_REMEDY",
@@ -4017,6 +4245,22 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_FFT_AGRA",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FFT_DELT",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_FFT_MSTD",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_IRDL",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -4069,12 +4313,32 @@
             "value": "Att tranchante +20"
         },
         {
+            "key": "SK_LW_AVOID_1",
+            "value": "Taux d'esquive +1"
+        },
+        {
+            "key": "SK_LW_AVOID_2",
+            "value": "Taux d'esquive +2"
+        },
+        {
+            "key": "SK_LW_AVOID_3",
+            "value": "Taux d'esquive +3"
+        },
+        {
+            "key": "SK_LW_AVOID_4_N_SSR",
+            "value": "Taux d'esquive +4"
+        },
+        {
+            "key": "SK_LW_AVOID_5_SSR",
+            "value": "Taux d'esquive +8"
+        },
+        {
             "key": "SK_LW_SWO_003_1",
             "value": "Lame Morphée"
         },
         {
             "key": "SK_LW_SWO_003_5",
-            "value": "Lame Sommeil"
+            "value": "Lame Morphée"
         },
         {
             "key": "SK_LW_ROD_003_1",
@@ -4185,6 +4449,30 @@
             "value": "Sabre carmin"
         },
         {
+            "key": "SK_FFT_SWO_002_2",
+            "value": ""
+        },
+        {
+            "key": "SK_FFT_SWO_002_3",
+            "value": ""
+        },
+        {
+            "key": "SK_FFT_SWO_002_4",
+            "value": ""
+        },
+        {
+            "key": "SK_FFT_SWO_002_5",
+            "value": ""
+        },
+        {
+            "key": "SK_FFT_ACC_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_FFT_ACC_001_5",
+            "value": ""
+        },
+        {
             "key": "SK_ACC_LW_MONT_1_1",
             "value": "Cri de ralliement"
         },
@@ -4291,6 +4579,22 @@
         {
             "key": "SK_SWO_LW_LVES_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_FFT_AGRA_1_1",
+            "value": "Fierté de la chevalerie royale"
+        },
+        {
+            "key": "SK_ARM_FFT_DELT_1_1",
+            "value": "Confier"
+        },
+        {
+            "key": "SK_GUN_FFT_MSTD_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_IRDL_1_1",
+            "value": "Rapide transposition"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -4989,6 +5293,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_FFT_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_P",
             "value": ""
         },
@@ -5497,6 +5821,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_FFT_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV2_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFT_MV3_PMAX",
+            "value": ""
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "PV max ↑ 100 - 99 900"
         },
@@ -5638,7 +5982,7 @@
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_U",
-            "value": "Ttoutes Rés d'attaque ↑ 1 - 80"
+            "value": "Rés à toutes les attaques ↑ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_D",
@@ -5662,7 +6006,7 @@
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_D",
-            "value": "Toutes les Rés d'attaque ↓ 1 - 80"
+            "value": "Rés à toutes les attaques ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_RES_FIRE_1_80_U",
@@ -5734,7 +6078,7 @@
         },
         {
             "key": "SK_BTL_RES_ELEMALL_1_80_D",
-            "value": "Toutes les Rés élémentaires ↓ 1 - 80"
+            "value": "Rés tous éléments ↓ 1 - 80"
         },
         {
             "key": "SK_BTL_HIT_1_999_U",
@@ -5882,7 +6226,7 @@
         },
         {
             "key": "SK_BTL_RES_BERSK_1_100_U",
-            "value": "Rés [Berserker] ↑"
+            "value": "Rés [Berserk] ↑"
         },
         {
             "key": "SK_BTL_RES_POISON_1_100_D",
@@ -5950,7 +6294,7 @@
         },
         {
             "key": "SK_BTL_RES_BERSK_1_100_D",
-            "value": "Rés [Berserker] ↓"
+            "value": "Rés [Berserk] ↓"
         },
         {
             "key": "SK_BTL_FAP_1-999_U",
@@ -5982,7 +6326,7 @@
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_U_KISO",
-            "value": "Toutes Rés d'attaque ↑ 1 - 80 (base)"
+            "value": "Rés à toutes les attaques ↑ 1 - 80 (base)"
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_D_KISO",
@@ -6006,7 +6350,7 @@
         },
         {
             "key": "SK_BTL_RES_ATKALL_1_80_D_KISO",
-            "value": "Toutes les Rés d'attaque ↓ 1 - 80 (base)"
+            "value": "Rés à toutes les attaques ↓ 1 - 80 (base)"
         },
         {
             "key": "SK_BTL_RES_FIRE_1_80_U_KISO",
@@ -6194,7 +6538,7 @@
         },
         {
             "key": "SK_BTL_HATE_1-100_U_PA",
-            "value": "Haine ↑ 1 - 999 (Passif)"
+            "value": "Haine ↑ 1 - 100 (Passif)"
         },
         {
             "key": "SK_BTL_SATK_1-100_U",
@@ -6258,11 +6602,11 @@
         },
         {
             "key": "SK_BTL_TOAD_1-100_U",
-            "value": "Chance de Rés [Crapaud] ↑ 1 - 100"
+            "value": "Chance d'altération d'état [Crapaud] ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STONE_1-100_U",
-            "value": "Chance de Rés [Pétrification] ↑ 1 - 100"
+            "value": "Chance d'altération d'état [Pétrification] ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_DONMV_1-100_D",
@@ -6270,7 +6614,7 @@
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
-            "value": "Perforation de la DEF ↑ 1 - 100"
+            "value": "Taux de perforation de la DEF ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_INV_DEATH",
@@ -6418,7 +6762,7 @@
         },
         {
             "key": "SK_LW_HUN_P_3",
-            "value": "Précision ↑"
+            "value": "Taux de précision ↑"
         },
         {
             "key": "SK_LW_WHM_P_2",

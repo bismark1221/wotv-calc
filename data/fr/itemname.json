@@ -82,7 +82,7 @@
         },
         {
             "key": "IT_US_PROTECT",
-            "value": "Boisson Bouclier"
+            "value": "Reconstituant"
         },
         {
             "key": "IT_US_HEALWATER",
@@ -1081,6 +1081,86 @@
             "value": "Souvenir du Mage au bâton (Rouge)"
         },
         {
+            "key": "IT_JB_MM_FFT_AGRA",
+            "value": "Souvenir de Chevalier sacré (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_2",
+            "value": "Souvenir de Chevalier sacré (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_3",
+            "value": "Souvenir de Chevalier sacré (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_4",
+            "value": "Souvenir de Chevalier sacré (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_5",
+            "value": "Souvenir de Chevalier sacré (Rouge)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT",
+            "value": "Souvenir d'Écuyer (Delita : vert)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_2",
+            "value": "Souvenir d'Écuyer (Delita : bleu)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_3",
+            "value": "Souvenir d'Écuyer (Delita : violet)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_4",
+            "value": "Souvenir d'Écuyer (Delita : jaune)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_5",
+            "value": "Souvenir d'Écuyer (Delita : rouge)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD",
+            "value": "Souvenir de Machiniste (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_2",
+            "value": "Souvenir de Machiniste (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_3",
+            "value": "Souvenir de Machiniste (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_4",
+            "value": "Souvenir de Machiniste (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_5",
+            "value": "Souvenir de Machiniste (Rouge)"
+        },
+        {
+            "key": "IT_JB_MM_CAL",
+            "value": "Souvenir d'Arithméticien (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_2",
+            "value": "Souvenir d'Arithméticien (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_3",
+            "value": "Souvenir d'Arithméticien (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_4",
+            "value": "Souvenir d'Arithméticien (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_5",
+            "value": "Souvenir d'Arithméticien (Rouge)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de feu (Vert)"
         },
@@ -1799,6 +1879,22 @@
         {
             "key": "IT_PI_LW_LVES",
             "value": "Fragment d'unité de Raviesse"
+        },
+        {
+            "key": "IT_PI_FFT_AGRA",
+            "value": "Fragment d'unité d'Agrias"
+        },
+        {
+            "key": "IT_PI_FFT_DELT",
+            "value": "Fragment d'unité de Delita"
+        },
+        {
+            "key": "IT_PI_FFT_MSTD",
+            "value": "Fragment d'unité de Mustadio"
+        },
+        {
+            "key": "IT_PI_LW_IRDL",
+            "value": "Fragment d'unité d'Ildyra"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -2589,6 +2685,10 @@
             "value": "Recette d'artisanat : Armure de la lumière"
         },
         {
+            "key": "IT_AF_FFT_ACC_001",
+            "value": "Recette d'artisanat : Sortilège"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "Sceau de vie"
         },
@@ -2829,6 +2929,10 @@
             "value": "Médaille d’invocation B [Août]"
         },
         {
+            "key": "IT_EC_SUMMON_09_A",
+            "value": "Médailles d'invocation A (Septembre)"
+        },
+        {
             "key": "IT_EC_FFT_1",
             "value": "Médaille d'événement FFT"
         },
@@ -2839,6 +2943,26 @@
         {
             "key": "IT_EC_FFT_2_B",
             "value": "Médaille d’invocation B de FFT"
+        },
+        {
+            "key": "IT_EC_FFT_3",
+            "value": "Médaille d'événement FFT [Partie II]"
+        },
+        {
+            "key": "IT_EC_FFT_2_2A",
+            "value": "Médaille d’invocation A de FFT [Partie II]"
+        },
+        {
+            "key": "IT_EC_FFT_2_2B",
+            "value": "Médaille d’invocation B de FFT [Partie II]"
+        },
+        {
+            "key": "IT_EC_FFT_2_A_R",
+            "value": "Médaille d’invocation A de FFT [Réédition]"
+        },
+        {
+            "key": "IT_EC_FFT_2_B_R",
+            "value": "Médaille d’invocation B de FFT [Réédition]"
         },
         {
             "key": "IT_EC_TOWER_001",
@@ -2953,6 +3077,14 @@
             "value": "Ticket sélectionneur de 70 alcrists élémentaires (violets)"
         },
         {
+            "key": "IT_US_SE_JB_EM_04_01",
+            "value": "Ticket sélectionneur de 70 alcrists élémentaires (jaunes)"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_01",
+            "value": "Ticket sélectionneur de 70 alcrists élémentaires (rouges)"
+        },
+        {
             "key": "IT_US_SE_SB_AW_01",
             "value": "Ticket sélectionneur de 20 pierres d'éveil élémentaires"
         },
@@ -2974,6 +3106,10 @@
         },
         {
             "key": "IT_US_G_U_UR_02",
+            "value": "Ticket d'invocation d'unité UR garantie"
+        },
+        {
+            "key": "IT_US_G_U_UR_03",
             "value": "Ticket d'invocation d'unité UR garantie"
         },
         {
@@ -3035,6 +3171,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_04",
             "value": "Ticket d'invocation d'unité MR+ garantie [D]"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_05",
+            "value": "Ticket d'inv. d'unité MR+ garantie du Compte à rebours de l'Anniv. des 6 mois [Partie III]"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -3302,11 +3442,19 @@
         },
         {
             "key": "IT_VPI_LW_DABL",
-            "value": "Fragment de l'atout-vision : Diabolos, le démon des rêves"
+            "value": "Fragment de l'atout-vision : Diabolos, le Démon des rêves"
         },
         {
             "key": "IT_VPI_LW_CBVPARTY1",
             "value": "Fragment de l'atout-vision : Le banquet des floraisons éphémères"
+        },
+        {
+            "key": "IT_VPI_FFT_MV2",
+            "value": "Fragment de l'atout-vision : Chocobo rouge"
+        },
+        {
+            "key": "IT_VPI_FFT_MV3",
+            "value": "Fragment de l'atout-vision : Un simple brin d'herbe"
         },
         {
             "key": "IT_VC_EXP_01",
@@ -3461,8 +3609,16 @@
             "value": "Ticket sélectionneur de 40 fragments d'unité UR"
         },
         {
+            "key": "IT_US_SE_PI_GL02",
+            "value": "Ticket sélectionneur de 40 fragments d'unité UR"
+        },
+        {
             "key": "IT_US_G_N_TW_10",
             "value": "[Tour de porcelaine] Ticket d'invocation x10 normale"
+        },
+        {
+            "key": "IT_US_N_GACHA_10",
+            "value": "Ticket d'invocation x10 normale"
         }
     ]
 }

@@ -4346,6 +4346,20 @@
     },
     "slug": "tonberino-swu-xing-shi-3"
   },
+  "IT_SB_AW_LVAT_R2": {
+    "dataId": "IT_SB_AW_LVAT_R2",
+    "names": {
+      "en": "リヴァイアサンの獣醒石（★2）"
+    },
+    "slug": "rivuaiasanno-swu-xing-shi-2"
+  },
+  "IT_SB_AW_LVAT_R3": {
+    "dataId": "IT_SB_AW_LVAT_R3",
+    "names": {
+      "en": "リヴァイアサンの獣醒石（★3）"
+    },
+    "slug": "rivuaiasanno-swu-xing-shi-3"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -5485,6 +5499,14 @@
     "recipe": true,
     "slug": "kirabounokurahutoresipi"
   },
+  "IT_AF_LW_CLK_001": {
+    "dataId": "IT_AF_LW_CLK_001",
+    "names": {
+      "en": "エルフのマントのクラフトレシピ"
+    },
+    "recipe": true,
+    "slug": "eruhunomantonokurahutoresipi"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5694,6 +5716,13 @@
       "en": "【8月】レイドメダル"
     },
     "slug": "8-yue-reidomedaru"
+  },
+  "IT_EC_RAID_09": {
+    "dataId": "IT_EC_RAID_09",
+    "names": {
+      "en": "【9月】レイドメダル"
+    },
+    "slug": "9-yue-reidomedaru"
   },
   "IT_EC_RAID_FF14": {
     "dataId": "IT_EC_RAID_FF14",
@@ -6311,6 +6340,13 @@
     },
     "slug": "1200-wandl-ssr-yi-shang-que-dingyunituto-zhao-huan-quan"
   },
+  "IT_US_G_U_SSR_UR_07": {
+    "dataId": "IT_US_G_U_SSR_UR_07",
+    "names": {
+      "en": "【2020秋CP】SSR以上確定ビジョンカード召喚券"
+    },
+    "slug": "2020-qiucp-ssr-yi-shang-que-dingbiziyonkado-zhao-huan-quan"
+  },
   "IT_US_G_PI_UR_U_01": {
     "dataId": "IT_US_G_PI_UR_U_01",
     "names": {
@@ -6752,6 +6788,13 @@
     },
     "slug": "1200-wandl-urvkado-qian-pianx50-xuan-ze-zhao-huan-quan"
   },
+  "IT_US_SE_VPI_10": {
+    "dataId": "IT_US_SE_VPI_10",
+    "names": {
+      "en": "【2020秋CP】おすすめVカード欠片×75選択召喚券"
+    },
+    "slug": "2020-qiucp-osusumevkado-qian-pianx75-xuan-ze-zhao-huan-quan"
+  },
   "IT_US_SE_PI_01": {
     "dataId": "IT_US_SE_PI_01",
     "names": {
@@ -6912,6 +6955,13 @@
       "en": "【ギルド】秘伝書×100選択召喚券"
     },
     "slug": "girudo-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
+  },
+  "IT_US_SE_AF_AW_07": {
+    "dataId": "IT_US_SE_AF_AW_07",
+    "names": {
+      "en": "【2020秋CP】秘伝書×100選択召喚券"
+    },
+    "slug": "2020-qiucp-mi-chuan-shux100-xuan-ze-zhao-huan-quan"
   },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
@@ -7396,6 +7446,13 @@
     },
     "slug": "kurisutaruwo-jigumonotatino-qian-pian"
   },
+  "IT_VPI_LW_LVAT": {
+    "dataId": "IT_VPI_LW_LVAT",
+    "names": {
+      "en": "水神激渦　リヴァイアサンの欠片"
+    },
+    "slug": "shui-shen-ji-wo-rivuaiasanno-qian-pian"
+  },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
     "names": {
@@ -7612,6 +7669,13 @@
       "en": "しずくをもとめての欠片"
     },
     "slug": "sizukuwomotometeno-qian-pian"
+  },
+  "IT_VPI_LW_ASSASIN": {
+    "dataId": "IT_VPI_LW_ASSASIN",
+    "names": {
+      "en": "教会の刺客の欠片"
+    },
+    "slug": "jiao-huino-ci-keno-qian-pian"
   },
   "IT_VPI_LW_CACT": {
     "dataId": "IT_VPI_LW_CACT",
@@ -7934,5 +7998,12 @@
       "en": "獅子の強咢（大）"
     },
     "slug": "shi-zino-qiang-e-da"
+  },
+  "IT_KEY_QE_001": {
+    "dataId": "IT_KEY_QE_001",
+    "names": {
+      "en": "挑戦へ導く鍵"
+    },
+    "slug": "tiao-zhanhe-daoku-jian"
   }
 }

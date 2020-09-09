@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser'
 import { TranslateService } from '@ngx-translate/core';
 
+import { NameService } from './name.service'
+
 @Injectable()
 export class SkillService {
   calcTypeFormat = {
@@ -33,7 +35,8 @@ export class SkillService {
 
   constructor(
     private sanitizer: DomSanitizer,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private nameService: NameService
   ) {}
 
   private i(s: any) {
@@ -127,10 +130,19 @@ export class SkillService {
   private getDamageValue(skill, effect) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
-      let minValue = 100 + (typeof(effect.minValue) === "number" ? effect.minValue : effect.value);
+      let maxReduceValueFromMath = 0
+      if (skill.maths) {
+        skill.maths.forEach(math => {
+          if (math.value < maxReduceValueFromMath) {
+            maxReduceValueFromMath = math.value
+          }
+        })
+      }
+
+      let minValue = 100 + (typeof(effect.minValue) === "number" ? effect.minValue : effect.value) + maxReduceValueFromMath;
 
       if (!skill.level) {
-        value = " (" + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect) + ")"
+        value = " (" + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect, maxReduceValueFromMath) + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)))
@@ -144,9 +156,9 @@ export class SkillService {
     return value;
   }
 
-  private getDamageMaxValue(effect, getPositiveValue = true) {
+  private getDamageMaxValue(effect, maxReduceValueFromMath) {
     if (effect.minValue !== effect.maxValue) {
-      let maxValue = 100 + effect.maxValue;
+      let maxValue = 100 + effect.maxValue + maxReduceValueFromMath;
 
       return " => " + maxValue + this.getDamageCalc(effect);
     }
@@ -165,7 +177,16 @@ export class SkillService {
   private getValue(skill, effect, getPositiveValue = true, explaination = "", forceCalc = null) {
     let value = "";
     if (typeof(effect.minValue) === "number" || typeof(effect.value) === "number") {
-      let minValue = typeof(effect.minValue) === "number" ? effect.minValue : effect.value;
+      let maxReduceValueFromMath = 0
+      if (skill.maths) {
+        skill.maths.forEach(math => {
+          if (math.value < maxReduceValueFromMath) {
+            maxReduceValueFromMath = math.value
+          }
+        })
+      }
+
+      let minValue = (typeof(effect.minValue) === "number" ? effect.minValue : effect.value) + maxReduceValueFromMath;
       minValue = this.getPositiveValue(minValue, getPositiveValue);
 
       if (forceCalc) {
@@ -174,7 +195,7 @@ export class SkillService {
       let calc = this.getCalc(effect)
 
       if (!skill.level) {
-        value = " (" + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc) + explaination + ")"
+        value = " (" + minValue + calc + this.getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) + explaination + ")"
       } else {
         if (effect.minValue !== effect.maxValue) {
           let valueForLevel = 0;
@@ -196,9 +217,9 @@ export class SkillService {
     return value;
   }
 
-  private getMaxValue(effect, getPositiveValue = true, forceCalc = null) {
+  private getMaxValue(effect, getPositiveValue, forceCalc, maxReduceValueFromMath) {
     if (effect.maxValue && effect.minValue !== effect.maxValue) {
-      let maxValue = this.getPositiveValue(effect.maxValue, getPositiveValue);
+      let maxValue = this.getPositiveValue(effect.maxValue + maxReduceValueFromMath, getPositiveValue);
       if (forceCalc) {
         effect.calcType = forceCalc
       }
@@ -872,6 +893,9 @@ export class SkillService {
       case "IMMUNE_CT_CHANGE" :
         html = "Immune to CT change"
       break
+      case "AVG_CT" :
+        html = "Average CT of all units within the range"
+      break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)
         effect.ailments.forEach((ailment, index) => {
@@ -918,7 +942,17 @@ export class SkillService {
     }
 
     if (effect.side) {
-      html = html + " for 3 turns " + (effect.side == "TEAM" ? "to all units" : "to all ennemies")
+      html = html + " for 3 turns to all "
+
+      if (effect.elements) {
+        html += effect.elements.join(" ,") + " "
+      }
+
+      html += (effect.side == "TEAM" ? "units" : "ennemies")
+    }
+
+    if (skill.maths) {
+      html = this.formatMaths(skill, html)
     }
 
     return html;
@@ -937,7 +971,7 @@ export class SkillService {
 
     if (skill.damage) {
       if (damage.type) {
-        let elem = skill.elem ? skill.elem : unit.element
+        let elem = skill.elem ? skill.elem : (unit.element ? unit.element : "neutral")
         let image = elem + "_" + damage.type.toLowerCase();
         html = html + "<img title='" + elem + " " + damage.type.toLowerCase() + "' class='damageSkillImg' src='assets/damage/" + image + ".png' />&nbsp;"
       }
@@ -950,7 +984,11 @@ export class SkillService {
     }
 
     if (skill.hit) {
-      html += (skill.damage ? "<br />" : "") + "+" + skill.hit + "% Accuracy"
+      html += (skill.damage ? "<br />" : "") + "Hit chance set to " + skill.hit + "%"
+    }
+
+    if (skill.crt_hit) {
+      html += (skill.damage ? "<br />" : "") + "Critic chance " + skill.crt_hit + "%"
     }
 
     if (skill.pierce) {
@@ -961,6 +999,88 @@ export class SkillService {
       html += (skill.damage ? "<br />" : "") + "Cancel Ability Activation"
     }
 
+    if (html != "") {
+      html = this.formatMaths(skill, html)
+    }
+
+    return html
+  }
+
+  formatMaths(skill, html) {
+    if (skill.maths) {
+      skill.maths.forEach(math => {
+        html += " + Increase modifier by "
+
+        switch (math.formula) {
+          case "CURVE" :
+            html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + "% "
+            break
+          default:
+            html += math.value + "% "
+            break;
+        }
+
+        switch (math.type) {
+          case "DEAD_UNITS" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " for each dead unit (max: " + this.getPositiveValue(math.value, true) + "%)"
+                break
+              case "COUNT" :
+                html += " if there is " + math.condition + " dead unit"
+                break
+              case "RATIO" :
+                html += " if the dead units is a multiple of " + math.condition
+                break
+            }
+            break
+          case "UNIT_LEVEL" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " for each unit level (max: " + this.getPositiveValue(math.value, true) + "%)"
+                break
+              case "COUNT" :
+                html += " if the unit level is " + math.condition
+                break
+              case "RATIO" :
+                html += " if the unit level is a multiple of " + math.condition
+                break
+            }
+            break
+          case "HEIGHT" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " for each height difference between unit and target (max: " + this.getPositiveValue(math.value, true) + "%)"
+                break
+              case "COUNT" :
+                html += " if target height is " + math.condition
+                break
+              case "RATIO" :
+                html += " if the target height is a multiple of " + math.condition
+                break
+            }
+            break
+          case "TARGET_LEVEL" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " for each target level (max: " + this.getPositiveValue(math.value, true) + "%)"
+                break
+              case "COUNT" :
+                html += " if the target level is " + math.condition + " dead unit"
+                break
+              case "RATIO" :
+                html += " if the target level is a multiple of " + math.condition
+                break
+            }
+            break
+            break
+          default :
+            console.log("Not manage math type : " + math.type)
+            break
+        }
+      })
+    }
+
     return html
   }
 
@@ -968,6 +1088,38 @@ export class SkillService {
     return "Chance to counter " + this.counterType[counter.reactDamage] + " damage " + this.getValue(skill, counter)
   }
 
+  formatUpgrade(unit, skill) {
+    let html = ""
+
+    if (unit.replacedSkills && unit.replacedSkills[skill.dataId]) {
+      let replacedSkills = unit.replacedSkills[skill.dataId]
+      html = "Upgrade skill" + (replacedSkills.length > 1 ? "s" : "") + " : "
+
+      replacedSkills.forEach((replacedSkill, skillIndex) => {
+        if (this.isSkillExistForUnit(unit, replacedSkill.oldSkill)) {
+          if (skillIndex != 0) {
+            html += ", "
+          }
+
+          html += this.nameService.getName(replacedSkill.newSkill)
+        }
+      })
+    }
+
+    return html
+  }
+
+  isSkillExistForUnit(unit, skillId) {
+    let exist = false
+
+    Object.keys(unit.board.nodes).forEach(nodeId => {
+      if (unit.board.nodes[nodeId].skill.dataId == skillId) {
+        exist = true
+      }
+    })
+
+    return exist
+  }
 
   formatDiamond(skillTable, range) {
     let middle = 8;

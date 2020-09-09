@@ -60,7 +60,8 @@ export class EsperService {
       "UN_LW_S_FNRR",
       "UN_LW_S_TITN",
       "UN_LW_S_AGON",
-      "UN_FF4_S_DMNW"
+      "UN_FF4_S_DMNW",
+      "UN_LW_S_LVAT"
     ]
   }
 

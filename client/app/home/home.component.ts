@@ -23,6 +23,14 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "09/09",
+        items: [
+
+          {type: "unit", dataId: "UN_LW_P_IRDL"},
+          {type: "equipment", dataId: "AF_LW_SWO_006"}
+        ]
+      },
+      {
         date: "26/08",
         items: [
           {type: "unit", dataId: "UN_FFT_P_AGRA"},
@@ -39,17 +47,18 @@ export class HomeComponent {
           {type: "unit", dataId: "UN_LW_P_ORDR"},
           {type: "unit", dataId: "UN_LW_P_LVES"}
         ]
-      },
-      {
-        date: "12/08",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_DABL"},
-          {type: "card", dataId: "VC_LW_DABL"},
-          {type: "card", dataId: "VC_LW_CBVPARTY1"}
-        ]
       }
     ],
     JP: [
+      {
+        date: "09/09",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_LVAT"},
+          {type: "card", dataId: "VC_LW_LVAT"},
+          {type: "card", dataId: "VC_LW_ASSASIN"},
+          {type: "equipment", dataId: "AF_LW_CLK_001"}
+        ]
+      },
       {
         date: "31/08",
         items: [
@@ -67,13 +76,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_TNBR"},
           {type: "esper", dataId: "UN_LW_S_TNBR"},
           {type: "equipment", dataId: "AF_LW_CLT_006"}
-        ]
-      },
-      {
-        date: "20/08",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_KTON_01"},
-          {type: "equipment", dataId: "AF_LW_MAC_009"}
         ]
       }
     ]

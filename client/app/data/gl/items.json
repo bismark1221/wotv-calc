@@ -163,7 +163,7 @@
     "dataId": "IT_US_PROTECT",
     "names": {
       "en": "Protect Drink",
-      "fr": "Boisson Bouclier"
+      "fr": "Reconstituant"
     },
     "slug": "protect-drink"
   },
@@ -2162,107 +2162,162 @@
   "IT_JB_MM_FFT_AGRA": {
     "dataId": "IT_JB_MM_FFT_AGRA",
     "names": {
-      "en": "Holy Knight's Memory (Green)"
+      "en": "Holy Knight's Memory (Green)",
+      "fr": "Souvenir de Chevalier sacré (Vert)"
     },
     "slug": "holy-knights-memory-green"
   },
   "IT_JB_MM_FFT_AGRA_2": {
     "dataId": "IT_JB_MM_FFT_AGRA_2",
     "names": {
-      "en": "Holy Knight's Memory (Blue)"
+      "en": "Holy Knight's Memory (Blue)",
+      "fr": "Souvenir de Chevalier sacré (Bleu)"
     },
     "slug": "holy-knights-memory-blue"
   },
   "IT_JB_MM_FFT_AGRA_3": {
     "dataId": "IT_JB_MM_FFT_AGRA_3",
     "names": {
-      "en": "Holy Knight's Memory (Purple)"
+      "en": "Holy Knight's Memory (Purple)",
+      "fr": "Souvenir de Chevalier sacré (Violet)"
     },
     "slug": "holy-knights-memory-purple"
   },
   "IT_JB_MM_FFT_AGRA_4": {
     "dataId": "IT_JB_MM_FFT_AGRA_4",
     "names": {
-      "en": "Holy Knight's Memory (Yellow)"
+      "en": "Holy Knight's Memory (Yellow)",
+      "fr": "Souvenir de Chevalier sacré (Jaune)"
     },
     "slug": "holy-knights-memory-yellow"
   },
   "IT_JB_MM_FFT_AGRA_5": {
     "dataId": "IT_JB_MM_FFT_AGRA_5",
     "names": {
-      "en": "Holy Knight's Memory (Red)"
+      "en": "Holy Knight's Memory (Red)",
+      "fr": "Souvenir de Chevalier sacré (Rouge)"
     },
     "slug": "holy-knights-memory-red"
   },
   "IT_JB_MM_FFT_DELT": {
     "dataId": "IT_JB_MM_FFT_DELT",
     "names": {
-      "en": "Squire's Memory (Delita: Green)"
+      "en": "Squire's Memory (Delita: Green)",
+      "fr": "Souvenir d'Écuyer (Delita : vert)"
     },
     "slug": "squires-memory-delita-green"
   },
   "IT_JB_MM_FFT_DELT_2": {
     "dataId": "IT_JB_MM_FFT_DELT_2",
     "names": {
-      "en": "Squire's Memory (Delita: Blue)"
+      "en": "Squire's Memory (Delita: Blue)",
+      "fr": "Souvenir d'Écuyer (Delita : bleu)"
     },
     "slug": "squires-memory-delita-blue"
   },
   "IT_JB_MM_FFT_DELT_3": {
     "dataId": "IT_JB_MM_FFT_DELT_3",
     "names": {
-      "en": "Squire's Memory (Delita: Purple)"
+      "en": "Squire's Memory (Delita: Purple)",
+      "fr": "Souvenir d'Écuyer (Delita : violet)"
     },
     "slug": "squires-memory-delita-purple"
   },
   "IT_JB_MM_FFT_DELT_4": {
     "dataId": "IT_JB_MM_FFT_DELT_4",
     "names": {
-      "en": "Squire's Memory (Delita: Yellow)"
+      "en": "Squire's Memory (Delita: Yellow)",
+      "fr": "Souvenir d'Écuyer (Delita : jaune)"
     },
     "slug": "squires-memory-delita-yellow"
   },
   "IT_JB_MM_FFT_DELT_5": {
     "dataId": "IT_JB_MM_FFT_DELT_5",
     "names": {
-      "en": "Squire's Memory (Delita: Red)"
+      "en": "Squire's Memory (Delita: Red)",
+      "fr": "Souvenir d'Écuyer (Delita : rouge)"
     },
     "slug": "squires-memory-delita-red"
   },
   "IT_JB_MM_FFT_MSTD": {
     "dataId": "IT_JB_MM_FFT_MSTD",
     "names": {
-      "en": "Machinist's Memory (Green)"
+      "en": "Machinist's Memory (Green)",
+      "fr": "Souvenir de Machiniste (Vert)"
     },
     "slug": "machinists-memory-green"
   },
   "IT_JB_MM_FFT_MSTD_2": {
     "dataId": "IT_JB_MM_FFT_MSTD_2",
     "names": {
-      "en": "Machinist's Memory (Blue)"
+      "en": "Machinist's Memory (Blue)",
+      "fr": "Souvenir de Machiniste (Bleu)"
     },
     "slug": "machinists-memory-blue"
   },
   "IT_JB_MM_FFT_MSTD_3": {
     "dataId": "IT_JB_MM_FFT_MSTD_3",
     "names": {
-      "en": "Machinist's Memory (Purple)"
+      "en": "Machinist's Memory (Purple)",
+      "fr": "Souvenir de Machiniste (Violet)"
     },
     "slug": "machinists-memory-purple"
   },
   "IT_JB_MM_FFT_MSTD_4": {
     "dataId": "IT_JB_MM_FFT_MSTD_4",
     "names": {
-      "en": "Machinist's Memory (Yellow)"
+      "en": "Machinist's Memory (Yellow)",
+      "fr": "Souvenir de Machiniste (Jaune)"
     },
     "slug": "machinists-memory-yellow"
   },
   "IT_JB_MM_FFT_MSTD_5": {
     "dataId": "IT_JB_MM_FFT_MSTD_5",
     "names": {
-      "en": "Machinist's Memory (Red)"
+      "en": "Machinist's Memory (Red)",
+      "fr": "Souvenir de Machiniste (Rouge)"
     },
     "slug": "machinists-memory-red"
+  },
+  "IT_JB_MM_CAL": {
+    "dataId": "IT_JB_MM_CAL",
+    "names": {
+      "en": "Arithmetician's Memory (Green)",
+      "fr": "Souvenir d'Arithméticien (Vert)"
+    },
+    "slug": "arithmeticians-memory-green"
+  },
+  "IT_JB_MM_CAL_2": {
+    "dataId": "IT_JB_MM_CAL_2",
+    "names": {
+      "en": "Arithmetician's Memory (Blue)",
+      "fr": "Souvenir d'Arithméticien (Bleu)"
+    },
+    "slug": "arithmeticians-memory-blue"
+  },
+  "IT_JB_MM_CAL_3": {
+    "dataId": "IT_JB_MM_CAL_3",
+    "names": {
+      "en": "Arithmetician's Memory (Purple)",
+      "fr": "Souvenir d'Arithméticien (Violet)"
+    },
+    "slug": "arithmeticians-memory-purple"
+  },
+  "IT_JB_MM_CAL_4": {
+    "dataId": "IT_JB_MM_CAL_4",
+    "names": {
+      "en": "Arithmetician's Memory (Yellow)",
+      "fr": "Souvenir d'Arithméticien (Jaune)"
+    },
+    "slug": "arithmeticians-memory-yellow"
+  },
+  "IT_JB_MM_CAL_5": {
+    "dataId": "IT_JB_MM_CAL_5",
+    "names": {
+      "en": "Arithmetician's Memory (Red)",
+      "fr": "Souvenir d'Arithméticien (Rouge)"
+    },
+    "slug": "arithmeticians-memory-red"
   },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
@@ -3707,23 +3762,34 @@
   "IT_PI_FFT_AGRA": {
     "dataId": "IT_PI_FFT_AGRA",
     "names": {
-      "en": "Agrias Unit Shard"
+      "en": "Agrias Unit Shard",
+      "fr": "Fragment d'unité d'Agrias"
     },
     "slug": "agrias-unit-shard"
   },
   "IT_PI_FFT_DELT": {
     "dataId": "IT_PI_FFT_DELT",
     "names": {
-      "en": "Delita Unit Shard"
+      "en": "Delita Unit Shard",
+      "fr": "Fragment d'unité de Delita"
     },
     "slug": "delita-unit-shard"
   },
   "IT_PI_FFT_MSTD": {
     "dataId": "IT_PI_FFT_MSTD",
     "names": {
-      "en": "Mustadio Unit Shard"
+      "en": "Mustadio Unit Shard",
+      "fr": "Fragment d'unité de Mustadio"
     },
     "slug": "mustadio-unit-shard"
+  },
+  "IT_PI_LW_IRDL": {
+    "dataId": "IT_PI_LW_IRDL",
+    "names": {
+      "en": "Ildyra Unit Shard",
+      "fr": "Fragment d'unité d'Ildyra"
+    },
+    "slug": "ildyra-unit-shard"
   },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
@@ -5371,7 +5437,8 @@
   "IT_AF_FFT_ACC_001": {
     "dataId": "IT_AF_FFT_ACC_001",
     "names": {
-      "en": "Sortilége Crafting Recipe"
+      "en": "Sortilége Crafting Recipe",
+      "fr": "Recette d'artisanat : Sortilège"
     },
     "recipe": true,
     "slug": "sortilege-crafting-recipe"
@@ -5856,6 +5923,14 @@
     },
     "slug": "august-summon-medal-b"
   },
+  "IT_EC_SUMMON_09_A": {
+    "dataId": "IT_EC_SUMMON_09_A",
+    "names": {
+      "en": "September Summon Medal A",
+      "fr": "Médailles d'invocation A (Septembre)"
+    },
+    "slug": "september-summon-medal-a"
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -5883,23 +5958,42 @@
   "IT_EC_FFT_3": {
     "dataId": "IT_EC_FFT_3",
     "names": {
-      "en": "FFT Part II Event Medal"
+      "en": "FFT Part II Event Medal",
+      "fr": "Médaille d'événement FFT [Partie II]"
     },
     "slug": "fft-part-ii-event-medal"
   },
   "IT_EC_FFT_2_2A": {
     "dataId": "IT_EC_FFT_2_2A",
     "names": {
-      "en": "FFT Part II Summon Medal A"
+      "en": "FFT Part II Summon Medal A",
+      "fr": "Médaille d’invocation A de FFT [Partie II]"
     },
     "slug": "fft-part-ii-summon-medal-a"
   },
   "IT_EC_FFT_2_2B": {
     "dataId": "IT_EC_FFT_2_2B",
     "names": {
-      "en": "FFT Part II Summon Medal B"
+      "en": "FFT Part II Summon Medal B",
+      "fr": "Médaille d’invocation B de FFT [Partie II]"
     },
     "slug": "fft-part-ii-summon-medal-b"
+  },
+  "IT_EC_FFT_2_A_R": {
+    "dataId": "IT_EC_FFT_2_A_R",
+    "names": {
+      "en": "FFT Reissue Summon Medal A",
+      "fr": "Médaille d’invocation A de FFT [Réédition]"
+    },
+    "slug": "fft-reissue-summon-medal-a"
+  },
+  "IT_EC_FFT_2_B_R": {
+    "dataId": "IT_EC_FFT_2_B_R",
+    "names": {
+      "en": "FFT Reissue Summon Medal B",
+      "fr": "Médaille d’invocation B de FFT [Réédition]"
+    },
+    "slug": "fft-reissue-summon-medal-b"
   },
   "IT_EC_TOWER_001": {
     "dataId": "IT_EC_TOWER_001",
@@ -6128,14 +6222,16 @@
   "IT_US_SE_JB_EM_04_01": {
     "dataId": "IT_US_SE_JB_EM_04_01",
     "names": {
-      "en": "Select Element Alcryst (Yellow) x70 Summon Ticket"
+      "en": "Select Element Alcryst (Yellow) x70 Summon Ticket",
+      "fr": "Ticket sélectionneur de 70 alcrists élémentaires (jaunes)"
     },
     "slug": "select-element-alcryst-yellow-x70-summon-ticket"
   },
   "IT_US_SE_JB_EM_05_01": {
     "dataId": "IT_US_SE_JB_EM_05_01",
     "names": {
-      "en": "Select Element Alcryst (Red) x70 Summon Ticket"
+      "en": "Select Element Alcryst (Red) x70 Summon Ticket",
+      "fr": "Ticket sélectionneur de 70 alcrists élémentaires (rouges)"
     },
     "slug": "select-element-alcryst-red-x70-summon-ticket"
   },
@@ -6181,6 +6277,14 @@
   },
   "IT_US_G_U_UR_02": {
     "dataId": "IT_US_G_U_UR_02",
+    "names": {
+      "en": "UR Guaranteed Unit Summon Ticket",
+      "fr": "Ticket d'invocation d'unité UR garantie"
+    },
+    "slug": "ur-guaranteed-unit-summon-ticket"
+  },
+  "IT_US_G_U_UR_03": {
+    "dataId": "IT_US_G_U_UR_03",
     "names": {
       "en": "UR Guaranteed Unit Summon Ticket",
       "fr": "Ticket d'invocation d'unité UR garantie"
@@ -6306,6 +6410,14 @@
       "fr": "Ticket d'invocation d'unité MR+ garantie [D]"
     },
     "slug": "mr-guaranteed-unit-summon-ticket-d"
+  },
+  "IT_US_G_U_SSR_UR_05": {
+    "dataId": "IT_US_G_U_SSR_UR_05",
+    "names": {
+      "en": "[Six-Month Anniversary Countdown Part III] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "Ticket d'inv. d'unité MR+ garantie du Compte à rebours de l'Anniv. des 6 mois [Partie III]"
+    },
+    "slug": "six-month-anniversary-countdown-part-iii-mr-guaranteed-unit-summon-ticket"
   },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
@@ -6839,7 +6951,7 @@
     "dataId": "IT_VPI_LW_DABL",
     "names": {
       "en": "\"Dream Fiend, Diabolos\" Vision Card Shard",
-      "fr": "Fragment de l'atout-vision : Diabolos, le démon des rêves"
+      "fr": "Fragment de l'atout-vision : Diabolos, le Démon des rêves"
     },
     "slug": "dream-fiend-diabolos-vision-card-shard"
   },
@@ -6854,14 +6966,16 @@
   "IT_VPI_FFT_MV2": {
     "dataId": "IT_VPI_FFT_MV2",
     "names": {
-      "en": "\"Red Chocobo\" Vision Card Shard"
+      "en": "\"Red Chocobo\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Chocobo rouge"
     },
     "slug": "red-chocobo-vision-card-shard"
   },
   "IT_VPI_FFT_MV3": {
     "dataId": "IT_VPI_FFT_MV3",
     "names": {
-      "en": "\"Blades of Grass\" Vision Card Shard"
+      "en": "\"Blades of Grass\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Un simple brin d'herbe"
     },
     "slug": "blades-of-grass-vision-card-shard"
   },
@@ -7172,7 +7286,8 @@
   "IT_US_SE_PI_GL02": {
     "dataId": "IT_US_SE_PI_GL02",
     "names": {
-      "en": "Select UR Unit Shard x40 Summon Ticket"
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
     },
     "slug": "select-ur-unit-shard-x40-summon-ticket"
   },
@@ -7187,9 +7302,9 @@
   "IT_US_N_GACHA_10": {
     "dataId": "IT_US_N_GACHA_10",
     "names": {
-      "en": "IT_US_N_GACHA_10",
-      "fr": "IT_US_N_GACHA_10"
+      "en": "Normal 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 normale"
     },
-    "slug": "it_us_n_gacha_10"
+    "slug": "normal-10x-summon-ticket"
   }
 }

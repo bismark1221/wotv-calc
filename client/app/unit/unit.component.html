@@ -145,6 +145,9 @@
             </tr>
             <tr *ngFor="let masterSkill of unit.masterSkill">
               <td>
+                <div *ngIf="masterSkill.upgradeHtml !== ''">
+                  {{ masterSkill.upgradeHtml }}
+                </div>
                 <div *ngFor="let effect of masterSkill.effects">
                   {{ effect.formatHtml }}
                 </div>
@@ -473,6 +476,9 @@
               <td>{{ skill.unlockStar }}</td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
+                <div *ngIf="skill.upgradeHtml !== ''">
+                  {{ skill.upgradeHtml }}
+                </div>
                 <div>{{ skill.counterHtml }}</div>
                 <div [innerHTML]="skill.damageHtml"></div>
                 <div *ngFor="let effect of skill.effects">
@@ -542,7 +548,9 @@
               <th class="sub skillHitTd">Hits</th>
               <th class="sub skillCostTd">Cost</th>
             </tr>
-            <tr *ngFor="let skill of getSkillsPerJob(i)">
+          </tbody>
+          <tbody *ngFor="let skill of getSkillsPerJob(i)">
+            <tr>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
               <td>
@@ -560,6 +568,9 @@
               </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
+                <div *ngIf="skill.upgradeHtml !== ''">
+                  {{ skill.upgradeHtml }}
+                </div>
                 <div>{{ skill.counterHtml }}</div>
                 <div [innerHTML]="skill.damageHtml"></div>
                 <div *ngFor="let effect of skill.effects">
@@ -575,6 +586,41 @@
               <td>{{ skill.count }}</td>
               <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
               <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+            </tr>
+
+            <tr *ngFor="let upgradedSkill of skill.upgrades">
+              <td colspan="2">Upgrade</td>
+              <td>
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + upgradedSkill.type + '.png'}}" />
+                <span *ngIf="upgradedSkill.based"><img title="{{ upgradedSkill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + upgradedSkill.based + '.png'}}" /></span>
+                <div *ngIf="upgradedSkill.time && upgradedSkill.time.minValue">
+                  <ng-template #tip_time>
+                    <div>
+                      Min time: {{ upgradedSkill.time.minValue }}<br />
+                      Max time: {{ upgradedSkill.time.maxValue }}
+                    </div>
+                  </ng-template>
+                  <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                </div>
+              </td>
+              <td>{{ upgradedSkill.name }}</td>
+              <td class="skillEffectTd">
+                <div>Activated by : {{ upgradedSkill.activatedBy }}</div>
+                <div>{{ upgradedSkill.counterHtml }}</div>
+                <div [innerHTML]="upgradedSkill.damageHtml"></div>
+                <div *ngFor="let effect of upgradedSkill.effects">
+                  {{ effect.formatHtml }}
+                </div>
+              </td>
+              <td>
+                <ng-template #tip_table><div [innerHTML]="upgradedSkill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="upgradedSkill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td>{{ upgradedSkill.count }}</td>
+              <td><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
+              <td><span *ngIf="upgradedSkill.cost">{{ upgradedSkill.cost.value }} {{ upgradedSkill.cost.type }}</span></td>
             </tr>
           </tbody>
         </table>
@@ -606,6 +652,9 @@
                 </div>
               </td>
               <td [className]="unit.limit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
+                <div *ngIf="unit.limit.upgradeHtml !== ''">
+                  {{ unit.limit.upgradeHtml }}
+                </div>
                 <div class="limitDamageDiv" [innerHTML]="unit.limit.damageHtml"></div>
                 <div *ngFor="let effect of unit.limit.effects">
                   {{ effect.formatHtml }}

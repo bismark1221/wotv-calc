@@ -86,7 +86,7 @@
         },
         {
             "key": "UN_LW_P_PRAY",
-            "value": "« Grâce »"
+            "value": "« Grâce »"
         },
         {
             "key": "UN_LW_P_SZRT",
@@ -134,7 +134,7 @@
         },
         {
             "key": "UN_LW_P_MURM",
-            "value": "« Murmure »"
+            "value": "« Murmure »"
         },
         {
             "key": "UN_LW_P_PHBE",
@@ -275,6 +275,26 @@
         {
             "key": "UN_LW_P_LVES",
             "value": "Raviesse"
+        },
+        {
+            "key": "UN_FFT_P_AGRA",
+            "value": "Agrias"
+        },
+        {
+            "key": "UN_FFT_P_DELT",
+            "value": "Delita"
+        },
+        {
+            "key": "UN_FFT_P_MSTD",
+            "value": "Mustadio"
+        },
+        {
+            "key": "UN_LW_P_IRDL",
+            "value": "Ildyra"
+        },
+        {
+            "key": "UN_LW_E_IRDL",
+            "value": "Ildyra"
         },
         {
             "key": "UN_LW_E_MONT",
@@ -1102,7 +1122,7 @@
         },
         {
             "key": "UN_LW_E_ELEM_04",
-            "value": "Élémentaire d'eau"
+            "value": "Élémentaire de glace"
         },
         {
             "key": "UN_LW_E_ELEM_05",
@@ -1167,6 +1187,14 @@
         {
             "key": "UN_FFT_E_GFGR",
             "value": "Gaffgarion"
+        },
+        {
+            "key": "UN_FFT_E_MSTD",
+            "value": "Mustadio"
+        },
+        {
+            "key": "UN_FFT_E_AGRA",
+            "value": "Agrias"
         },
         {
             "key": "UN_LW_E_IGNT_TW_EX2",
@@ -1403,6 +1431,22 @@
         {
             "key": "UN_FFT_E_RAMZ_ARENA",
             "value": "Ramza"
+        },
+        {
+            "key": "UN_LW_E_IRDL_MOGI",
+            "value": "Ildyra"
+        },
+        {
+            "key": "UN_LW_E_VKTR_MOGI",
+            "value": "Viktora"
+        },
+        {
+            "key": "UN_LW_E_AYKA_MOGI",
+            "value": "Ayaka"
+        },
+        {
+            "key": "UN_LW_E_QILF_MOGI",
+            "value": "Kilphe"
         },
         {
             "key": "UN_LW_TU_MONT",
@@ -1837,6 +1881,18 @@
             "value": "Diabolos"
         },
         {
+            "key": "UN_FFT_S_CHCB_01",
+            "value": "Chocobo rouge"
+        },
+        {
+            "key": "UN_FFT_S_CHCB_01_AW1",
+            "value": "Chocobo rouge"
+        },
+        {
+            "key": "UN_FFT_S_CHCB_01_AW2",
+            "value": "Chocobo rouge"
+        },
+        {
             "key": "UN_GM_TREASURE",
             "value": "Coffre au trésor"
         },
@@ -1850,19 +1906,19 @@
         },
         {
             "key": "UN_GM_SWITCH",
-            "value": "Interrupteur (Rouge)"
+            "value": "Permutation (Rouge)"
         },
         {
             "key": "UN_GM_SWITCH_01",
-            "value": "Interrupteur (Jaune)"
+            "value": "Permutation (Jaune)"
         },
         {
             "key": "UN_GM_SWITCH_02",
-            "value": "Interrupteur (Vert)"
+            "value": "Permutation (Verte)"
         },
         {
             "key": "UN_GM_SWITCH_03",
-            "value": "Interrupteur (Bleu)"
+            "value": "Permutation (Bleue)"
         },
         {
             "key": "UN_GM_MGSW",

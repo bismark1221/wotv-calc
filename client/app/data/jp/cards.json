@@ -6424,6 +6424,270 @@
       }
     ]
   },
+  "VC_LW_LVAT": {
+    "dataId": "VC_LW_LVAT",
+    "names": {
+      "en": "水神激渦　リヴァイアサン"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 306
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 42,
+        "max": 164
+      },
+      "DEF": {
+        "min": 2,
+        "max": 4
+      },
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapslvat",
+    "slug": "shui-shen-ji-wo-rivuaiasan",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "PIERCE_RES",
+            "minValue": 6,
+            "maxValue": 12,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_LVAT_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_LVAT_GS"
+        },
+        "slug": "sk_vc_lw_lvat_gs",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "PIERCE_RES",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_LVAT_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_LVAT_GS_AW"
+        },
+        "slug": "sk_vc_lw_lvat_gs_aw",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "PIERCE_RES",
+            "minValue": 4,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_LVAT_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_LVAT_GSMAX"
+        },
+        "slug": "sk_vc_lw_lvat_gsmax",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_P"
+          },
+          "slug": "sk_vc_lw_lvat_p",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_PAW"
+          },
+          "slug": "sk_vc_lw_lvat_paw",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_PMAX"
+          },
+          "slug": "sk_vc_lw_lvat_pmax",
+          "maxLevel": 1
+        },
+        "cond": {
+          "type": "job",
+          "items": [
+            "JB_LW_WAR_FIRE",
+            "JB_LW_KNT_FIRE",
+            "JB_LW_PLD_FIRE",
+            "JB_LW_MGK_FIRE",
+            "JB_LW_RDM_FIRE",
+            "JB_LW_GLMS",
+            "JB_LW_WAR",
+            "JB_FFT_RAMZ",
+            "JB_FFT_ORND",
+            "JB_FFT_GFGR",
+            "JB_FF1_WROL",
+            "JB_FFT_AGRA",
+            "JB_FFT_DELT",
+            "JB_LW_MKN_FIRE",
+            "JB_FF4_CECL",
+            "JB_FF14_TNCR"
+          ]
+        }
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [],
+          "dataId": "SK_VC_LW_LVAT_PVA",
+          "type": "skill",
+          "mainSkill": true,
+          "names": {
+            "en": "クラッシュエッジ"
+          },
+          "slug": "kuratusiyuetuzi",
+          "cost": {
+            "type": "AP",
+            "value": 30
+          },
+          "count": 2,
+          "maxLevel": 99,
+          "range": {
+            "h": 1,
+            "l": 2,
+            "s": 1
+          },
+          "based": "physic",
+          "damage": {
+            "minValue": 60,
+            "maxValue": 95,
+            "type": "slash",
+            "effType": "DAMAGE"
+          }
+        },
+        "awake": null,
+        "lvmax": null,
+        "cond": {
+          "type": "job",
+          "items": [
+            "JB_LW_WAR_FIRE",
+            "JB_LW_KNT_FIRE",
+            "JB_LW_PLD_FIRE",
+            "JB_LW_MGK_FIRE",
+            "JB_LW_RDM_FIRE",
+            "JB_LW_GLMS",
+            "JB_LW_WAR",
+            "JB_FFT_RAMZ",
+            "JB_FFT_ORND",
+            "JB_FFT_GFGR",
+            "JB_FF1_WROL",
+            "JB_FFT_AGRA",
+            "JB_FFT_DELT",
+            "JB_LW_MKN_FIRE",
+            "JB_FF4_CECL",
+            "JB_FF14_TNCR"
+          ]
+        }
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -11234,6 +11498,160 @@
             "en": "SK_VC_FFCC_MV2_PAW"
           },
           "slug": "sk_vc_ffcc_mv2_paw",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": null
+      }
+    ]
+  },
+  "VC_LW_ASSASIN": {
+    "dataId": "VC_LW_ASSASIN",
+    "names": {
+      "en": "教会の刺客"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 187
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 21,
+        "max": 86
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 21,
+        "max": 86
+      },
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsassn",
+    "slug": "jiao-huino-ci-ke",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ATTACK_RES",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_ASSASIN_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ASSASIN_GS"
+        },
+        "slug": "sk_vc_lw_assasin_gs",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ATTACK_RES",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_ASSASIN_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ASSASIN_GSAW"
+        },
+        "slug": "sk_vc_lw_assasin_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_P"
+          },
+          "slug": "sk_vc_lw_assasin_p",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_PAW"
+          },
+          "slug": "sk_vc_lw_assasin_paw",
           "maxLevel": 4
         },
         "lvmax": null,

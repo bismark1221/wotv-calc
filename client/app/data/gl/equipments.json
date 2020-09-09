@@ -920,7 +920,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -997,7 +997,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -1074,7 +1074,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -1151,7 +1151,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -1228,7 +1228,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -1305,7 +1305,7 @@
         {
           "names": {
             "en": "Sleep Blade",
-            "fr": "Lame Sommeil"
+            "fr": "Lame Morphée"
           },
           "dataId": "SK_LW_SWO_003_5",
           "effects": [
@@ -2337,6 +2337,381 @@
           "slug": "coral-sword",
           "maxLevel": 30
         }
+      ],
+      [
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "slash-atk-2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "slash-atk-3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "slash-atk-5",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
+          },
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "slash-atk-8",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_1",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
+          },
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "slash-atk-15",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Coral Sword",
+            "fr": "Épée de corail"
+          },
+          "dataId": "SK_LW_SWO_006_5",
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "coral-sword",
+          "maxLevel": 30
+        }
       ]
     ],
     "rarity": "MR",
@@ -2364,6 +2739,41 @@
         "IT_AF_MAT_ARMN": 5,
         "IT_AF_MAT_THUNDER_01": 11,
         "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_006": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_THUNDER_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_006": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_THUNDER_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_LW_SWO_006": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_THUNDER_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_LW_SWO_006": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_THUNDER_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_LW_SWO_006": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_THUNDER_01": 323,
+        "IT_AF_AW_SWORD": 1125
       }
     ],
     "acquisition": {
@@ -3050,6 +3460,207 @@
         "IT_AF_MAT_SAP_01": 630,
         "IT_AF_AW_SWORD": 345,
         "IT_AF_MAT_HEART_01": 110
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_FFT_SWO_002": {
+    "names": {
+      "en": "Lesalia Royal Guard Standard-Issue Sword",
+      "fr": "Épée de service de la Garde royale de Lesalia"
+    },
+    "slug": "lesalia-royal-guard-standard-issue-sword",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 64
+      },
+      "ATK": {
+        "min": 24,
+        "max": 232
+      },
+      "MAG": {
+        "min": 15,
+        "max": 132
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 20
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FFT_SWO_002",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "aim"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_2",
+            "fr": "SK_FFT_SWO_002_2"
+          },
+          "dataId": "SK_FFT_SWO_002_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            2
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_2",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_3",
+            "fr": "SK_FFT_SWO_002_3"
+          },
+          "dataId": "SK_FFT_SWO_002_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_3",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_4",
+            "fr": "SK_FFT_SWO_002_4"
+          },
+          "dataId": "SK_FFT_SWO_002_4",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_4",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FFT_SWO_002_5",
+            "fr": "SK_FFT_SWO_002_5"
+          },
+          "dataId": "SK_FFT_SWO_002_5",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            },
+            {
+              "type": "ICE_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_fft_swo_002_5",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "fft0wpn_swo_002",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_AW_SWORD": 375,
+        "IT_AF_MAT_LIQUID_04": 185,
+        "IT_AF_MAT_ICE_02": 16
       }
     ],
     "acquisition": {
@@ -14260,7 +14871,8 @@
     "rarity": "N",
     "image": "lapswpn_mac_000",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14520,7 +15132,8 @@
     "rarity": "R",
     "image": "lapswpn_mac_001",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14816,7 +15429,8 @@
     "rarity": "SR",
     "image": "lapswpn_mac_002",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15124,7 +15738,8 @@
     "rarity": "MR",
     "image": "lapswpn_mac_003",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -18851,7 +19466,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -18946,7 +19562,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -18973,7 +19590,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -19000,7 +19618,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -19027,7 +19646,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -19107,7 +19727,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19258,7 +19879,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -19285,7 +19907,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -19312,7 +19935,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -19339,7 +19963,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -19419,7 +20044,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19582,7 +20208,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -19609,7 +20236,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -19636,7 +20264,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -19663,7 +20292,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -19690,7 +20320,8 @@
       [
         {
           "names": {
-            "en": "Evasion Rate +8"
+            "en": "Evasion Rate +8",
+            "fr": "Taux d'esquive +8"
           },
           "dataId": "SK_LW_AVOID_5_SSR",
           "effects": [
@@ -19742,7 +20373,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19866,7 +20498,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -20147,7 +20780,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -20460,7 +21094,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -20785,7 +21420,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21114,7 +21750,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21307,7 +21944,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21503,7 +22141,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -21577,7 +22216,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -21651,7 +22291,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -21725,7 +22366,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -21885,7 +22527,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22113,7 +22756,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -22187,7 +22831,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -22261,7 +22906,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -22335,7 +22981,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -22495,7 +23142,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22735,7 +23383,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -22809,7 +23458,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -22883,7 +23533,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -22957,7 +23608,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -23031,7 +23683,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +8"
+            "en": "Evasion Rate +8",
+            "fr": "Taux d'esquive +8"
           },
           "dataId": "SK_LW_AVOID_5_SSR",
           "effects": [
@@ -23116,7 +23769,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23336,7 +23990,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -23389,7 +24044,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -23442,7 +24098,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -23613,7 +24270,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23769,7 +24427,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23875,7 +24534,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23981,7 +24641,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24087,7 +24748,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24193,7 +24855,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24299,7 +24962,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25376,7 +26040,8 @@
     "rarity": "MR",
     "image": "lapswpn_mac_005",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26050,7 +26715,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26150,7 +26816,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26250,7 +26917,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26350,7 +27018,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26485,7 +27154,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26615,7 +27285,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26718,7 +27389,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26821,7 +27493,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26924,7 +27597,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27000,7 +27674,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27076,7 +27751,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27223,7 +27899,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27359,7 +28036,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27481,7 +28159,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27605,7 +28284,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27731,7 +28411,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27845,7 +28526,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27959,7 +28641,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28073,7 +28756,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28160,7 +28844,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28291,7 +28976,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28378,7 +29064,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28591,7 +29278,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28790,7 +29478,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28969,7 +29658,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29083,7 +29773,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29407,7 +30098,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29590,7 +30282,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29717,7 +30410,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29921,7 +30615,8 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA"
+      "JB_FFT_AGRA",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30232,7 +30927,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30343,7 +31039,8 @@
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30486,7 +31183,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30607,7 +31305,8 @@
       "JB_LW_WGN_FIRE",
       "JB_LW_ASS_FIRE",
       "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA"
+      "JB_FFT_AGRA",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30786,7 +31485,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30918,7 +31618,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31045,7 +31746,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31339,7 +32041,8 @@
   },
   "AF_ACC_FFT_AGRA_1": {
     "names": {
-      "en": "Holy Knight Armor"
+      "en": "Holy Knight Armor",
+      "fr": "Armure de chevalier sacré"
     },
     "slug": "holy-knight-armor",
     "stats": {
@@ -31375,7 +32078,8 @@
       [
         {
           "names": {
-            "en": "Royal Knighthood's Pride"
+            "en": "Royal Knighthood's Pride",
+            "fr": "Fierté de la chevalerie royale"
           },
           "dataId": "SK_ACC_FFT_AGRA_1_1",
           "effects": [
@@ -31443,7 +32147,8 @@
   },
   "AF_ARM_FFT_DELT_1": {
     "names": {
-      "en": "Endurance Vest"
+      "en": "Endurance Vest",
+      "fr": "Veste d'endurance"
     },
     "slug": "endurance-vest",
     "stats": {
@@ -31479,7 +32184,8 @@
       [
         {
           "names": {
-            "en": "Relegate"
+            "en": "Relegate",
+            "fr": "Confier"
           },
           "dataId": "SK_ARM_FFT_DELT_1_1",
           "effects": [
@@ -31542,9 +32248,116 @@
       "unitId": "UN_FFT_P_DELT"
     }
   },
+  "AF_ACC_LW_IRDL_1": {
+    "names": {
+      "en": "Calculator Robe",
+      "fr": "Robe de calculateur"
+    },
+    "slug": "calculator-robe",
+    "stats": {
+      "HP": {
+        "min": 322,
+        "max": 322
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_ACC_LW_IRDL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Swift Transposition",
+            "fr": "Rapide transposition"
+          },
+          "dataId": "SK_ACC_LW_IRDL_1_1",
+          "effects": [
+            {
+              "type": "SWITCH_POS"
+            },
+            {
+              "type": "QUICKEN_ATK",
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 1
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "swift-transposition",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "range": {
+            "h": 5,
+            "l": 2,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 120,
+            "maxValue": 200
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_017",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_IRDL"
+    }
+  },
   "AF_GUN_FFT_MSTD_2": {
     "names": {
-      "en": "Besrudio"
+      "en": "Besrudio",
+      "fr": "Besrudio"
     },
     "slug": "besrudio",
     "stats": {
@@ -32317,7 +33130,8 @@
     "rarity": "UR",
     "image": "lapswpn_mac_006",
     "equippableJobs": [
-      "JB_LW_CLR_FIRE"
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33241,7 +34055,8 @@
   },
   "AF_SWO_FFT_AGRA_2": {
     "names": {
-      "en": "FFT Agrias"
+      "en": "FFT Agrias",
+      "fr": "FFT Agrias"
     },
     "slug": "fft-agrias",
     "stats": {
@@ -33311,7 +34126,8 @@
   },
   "AF_SWO_FFT_DELT_2": {
     "names": {
-      "en": "FFT Delita"
+      "en": "FFT Delita",
+      "fr": "FFT Delita"
     },
     "slug": "fft-delita",
     "stats": {
@@ -33370,6 +34186,66 @@
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
       "JB_FFT_DELT"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_MAC_LW_IRDL_2": {
+    "names": {
+      "en": "For Ildyra",
+      "fr": "Pour Ildyra"
+    },
+    "slug": "for-ildyra",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_MAC_LW_IRDL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_mac_007",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33951,7 +34827,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34275,7 +35152,8 @@
   },
   "AF_LOT_FFT_ACC_001": {
     "names": {
-      "en": "Sortilége"
+      "en": "Sortilége",
+      "fr": "Sortilège"
     },
     "slug": "sortilege",
     "stats": {
@@ -34458,7 +35336,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +1"
+            "en": "Evasion Rate +1",
+            "fr": "Taux d'esquive +1"
           },
           "dataId": "SK_LW_AVOID_1",
           "effects": [
@@ -34532,7 +35411,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +2"
+            "en": "Evasion Rate +2",
+            "fr": "Taux d'esquive +2"
           },
           "dataId": "SK_LW_AVOID_2",
           "effects": [
@@ -34606,7 +35486,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +3"
+            "en": "Evasion Rate +3",
+            "fr": "Taux d'esquive +3"
           },
           "dataId": "SK_LW_AVOID_3",
           "effects": [
@@ -34680,7 +35561,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +4"
+            "en": "Evasion Rate +4",
+            "fr": "Taux d'esquive +4"
           },
           "dataId": "SK_LW_AVOID_4_N_SSR",
           "effects": [
@@ -34754,7 +35636,8 @@
         },
         {
           "names": {
-            "en": "Evasion Rate +8"
+            "en": "Evasion Rate +8",
+            "fr": "Taux d'esquive +8"
           },
           "dataId": "SK_LW_AVOID_5_SSR",
           "effects": [
@@ -34839,7 +35722,8 @@
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
       "JB_FFT_DELT",
-      "JB_FFT_MSTD"
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
