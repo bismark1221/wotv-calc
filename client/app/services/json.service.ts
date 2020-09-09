@@ -2083,8 +2083,10 @@ export class JsonService {
                 }
 
                 if (buff.elem) {
+                  // @ts-ignore
                   formattedBuff.elements = []
                   buff.elem.forEach(element => {
+                    // @ts-ignore
                     formattedBuff.elements.push(this.elements[element])
                   })
                 }
