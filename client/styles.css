@@ -115,6 +115,10 @@ hr {
   border-color: var(--hr-color);
 }
 
+label {
+  margin-bottom: 0;
+}
+
 .boldText {
   font-weight: bold;
 }

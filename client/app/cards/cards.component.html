@@ -8,11 +8,11 @@
         <i class="fa fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
-        <div><input type="checkbox" (change)="filterList('rarity', 'UR', $event.target.checked)"/>UR</div>
-        <div><input type="checkbox" (change)="filterList('rarity', 'MR', $event.target.checked)"/>MR</div>
-        <div><input type="checkbox" (change)="filterList('rarity', 'SR', $event.target.checked)"/>SR</div>
-        <div><input type="checkbox" (change)="filterList('rarity', 'R', $event.target.checked)"/>R</div>
-        <div><input type="checkbox" (change)="filterList('rarity', 'N', $event.target.checked)"/>N</div>
+        <div><input type="checkbox" id="rarityUR" (change)="filterList('rarity', 'UR')"/><label for="rarityUR">UR</label></div>
+        <div><input type="checkbox" id="rarityMR" (change)="filterList('rarity', 'MR')"/><label for="rarityMR">MR</label></div>
+        <div><input type="checkbox" id="raritySR" (change)="filterList('rarity', 'SR')"/><label for="raritySR">SR</label></div>
+        <div><input type="checkbox" id="rarityR" (change)="filterList('rarity', 'R')"/><label for="rarityR">R</label></div>
+        <div><input type="checkbox" id="rarityN" (change)="filterList('rarity', 'N')"/><label for="rarityN">N</label></div>
       </div>
     </div>
   </div>
