@@ -63,7 +63,7 @@ export class EspersComponent implements OnInit {
     }
   }
 
-  filterList(type, value, checked) {
+  filterList(type, value) {
     if (this.filters[type].indexOf(value) == -1) {
       this.filters[type].push(value)
     } else {
