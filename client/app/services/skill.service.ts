@@ -1050,7 +1050,7 @@ export class SkillService {
           case "HEIGHT" :
             switch (math.formula) {
               case "CURVE" :
-                html += " for each height difference between unit and target (max: " + this.getPositiveValue(math.value, true) + "%)"
+                html += " for each height level of the target (max: " + this.getPositiveValue(math.value, true) + "%)"
                 break
               case "COUNT" :
                 html += " if target height is " + math.condition
