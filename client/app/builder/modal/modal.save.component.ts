@@ -54,13 +54,15 @@ export class ModalSaveComponent implements OnInit {
         alreadyExists = this.unitService.unitAlreadyExists(this.item)
         break
       case 'card' :
-        //alreadyExists = this.cardService.cardAlreadyExists(this.item)
+        alreadyExists = this.cardService.cardAlreadyExists(this.item)
         break
       case 'esper' :
         //alreadyExists = this.esperService.esperAlreadyExists(this.item)
+        console.log("Trying to save something not managed : " + this.type)
         break
       case 'equipment' :
         //alreadyExists = this.equipmentService.equipmentAlreadyExists(this.item)
+        console.log("Trying to save something not managed : " + this.type)
         break
       case 'team' :
         alreadyExists = this.teamService.teamAlreadyExists(this.item)
@@ -81,16 +83,19 @@ export class ModalSaveComponent implements OnInit {
         savePromise = this.unitService.saveUnit(this.item, method)
         break
       case 'card' :
-        //savePromise = this.cardService.saveCard(this.item, method)
+        savePromise = this.cardService.saveCard(this.item, method)
         break
       case 'esper' :
         //savePromise = this.esperService.saveEsper(this.item, method)
+        console.log("Trying to save something not managed : " + this.type)
         break
       case 'equipment' :
         //savePromise = this.equipmentService.saveEquipment(this.item, method)
+        console.log("Trying to save something not managed : " + this.type)
         break
       case 'team' :
         savePromise = this.teamService.saveTeam(this.item)//, method)
+        console.log("Trying to save something not managed : " + this.type)
         break
       default :
         console.log("Trying to save something not managed : " + this.type)

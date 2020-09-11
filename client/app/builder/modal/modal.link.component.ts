@@ -46,28 +46,31 @@ export class ModalLinkComponent implements OnInit {
         })
         break
       case 'card' :
-        /*this.cardService.getExportableLink().subscribe((data: any) => {
-          this.exportableLink = data.shorturl;
+        this.cardService.getExportableLink().then(link => {
+          this.exportableLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/card") + "/" + link;
           this.saveStep = "link"
-        })*/
+        })
         break
       case 'esper' :
         /*this.esperService.getExportableLink().subscribe((data: any) => {
           this.exportableLink = data.shorturl;
           this.saveStep = "link"
         })*/
+        console.log("Trying to link something not managed : " + this.type)
         break
       case 'equipment' :
         /*this.equipmentService.getExportableLink().subscribe((data: any) => {
           this.exportableLink = data.shorturl;
           this.saveStep = "link"
         })*/
+        console.log("Trying to link something not managed : " + this.type)
         break
       case 'team' :
         this.teamService.getExportableLink().then(link => {
           this.exportableLink = link
           this.saveStep = "link"
         })
+        console.log("Trying to link something not managed : " + this.type)
         break
       default :
         console.log("Trying to link something not managed : " + this.type)

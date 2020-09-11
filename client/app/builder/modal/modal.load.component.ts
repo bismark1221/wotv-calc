@@ -50,7 +50,7 @@ export class ModalLoadComponent implements OnInit {
         break
       case 'card' :
         dataId = item.dataId
-        //this.cardService.deleteCard(item)
+        this.cardService.deleteCard(item)
         this.savedItems = this.cardService.getSavedCards()[dataId]
         break
       case 'esper' :

@@ -35,6 +35,9 @@ export class BuilderUnitComponent implements OnInit {
   units
   filteredUnits
   unit = null
+  searchText = ""
+  savedUnits = {}
+  loadingBuild = false
 
   statueNames
 
@@ -129,12 +132,6 @@ export class BuilderUnitComponent implements OnInit {
     "strike_atk",
     "strike_res",
   ]
-
-  exportableLink = ""
-  searchText = ""
-
-  savedUnits = {}
-  loadingBuild = false
 
   constructor(
     private activatedRoute: ActivatedRoute,

@@ -294,6 +294,11 @@ hr {
   display: inline-block;
 }
 
+.dropdown-menu {
+  max-height: 200px;
+  overflow: auto;
+}
+
 
 /* Toogle switch theme */
 .switch .switch-pane > span {

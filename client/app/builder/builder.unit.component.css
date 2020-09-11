@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.unitLine hr {
+  margin: 0;
+  width: 1276px;
+}
+
 .unitLogo {
   padding: 5px;
   display: inline-block;
@@ -89,14 +94,6 @@
   vertical-align: middle;
 }
 
-.unitLine hr {
-  margin: 0;
-  width: 1276px;
-}
-
-
-
-
 .leftBlock {
   width: 250px;
   margin-right: 20px;
@@ -104,14 +101,14 @@
   vertical-align: top;
 }
 
+.leftBlock table {
+  width: 100%
+}
+
 .rightBlock {
   width: 1030px;
   display: inline-block;
   vertical-align: top;
-}
-
-.leftBlock table {
-  width: 100%
 }
 
 .unitImg {
@@ -125,15 +122,13 @@
   padding: 5px;
 }
 
-.elementImg, .rarityImg {
-  height: 32px;
-}
-
 .rarityImg {
+  height: 32px;
   float: left;
 }
 
 .elementImg {
+  height: 32px;
   float: right;
 }
 
@@ -143,16 +138,16 @@
   margin-bottom: 10px;
 }
 
-.levelDiv {
-  width: 100%;
-  height: 35px;
-  margin-bottom: 10px;
-}
-
 .lbDiv {
   width: 100%;
   height: 35px;
   margin-bottom: 5px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
 }
 
 .awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .masterSkillDiv div:first-child, .limitDiv div:first-child {
@@ -266,7 +261,7 @@
   vertical-align: top;
 }
 
-.equipmentImg, .selectEquipment {
+.equipmentImg {
   width: 70px;
 }
 
@@ -276,12 +271,8 @@
   vertical-align: top;
 }
 
-.esperImg, .selectEsper, .cardImg, .selectCard {
+.esperImg, .cardImg {
   width: 110px;
-}
-
-.supportSelect, .counterSelect {
-  width: 100%;
 }
 
 .guildDiv  {
@@ -303,12 +294,8 @@
   width: 110px;
 }
 
-.btn-esper {
+.btn-esper, .btn-card {
   margin-top: 5px;
-  width: 110px;
-}
-
-.btn-card {
   width: 110px;
 }
 
@@ -331,11 +318,6 @@
 
 .dropdownFull .btn-select {
   width: 100%;
-}
-
-.dropdown-menu {
-  max-height: 200px;
-  overflow: auto;
 }
 
 .selectListFull {
@@ -392,17 +374,20 @@
   cursor: pointer;
 }
 
-.skillSubTitle .fa {
+.skillSubTitle .fas {
   float: right;
-}
-
-
-.rangeTd {
-  width: 69px;
 }
 
 .skillTypeTd {
   width: 85px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.rangeTd {
+  width: 69px;
 }
 
 .skillCastTd {
@@ -415,10 +400,6 @@
 
 .skillCostTd {
   width: 60px;
-}
-
-.skillNameTd {
-  width: 200px;
 }
 
 .treeTitle {
@@ -438,39 +419,12 @@
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-.unitsCol {
-  width: 200px;
-}
-
 tr.disable {
   display: none;
 }
 
-
-
 .buffImg {
   width: 40px;
-}
-
-
-.upperBlock {
-  display: block;
-}
-
-.upperBlock .unitDiv {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.upperBlock .unitTable {
-  margin-left: 10px;
-  display: inline-block;
 }
 
 .unitSelector {
@@ -495,53 +449,9 @@ tr.disable {
   font-size: 40px;
 }
 
-.upperBlock .starsLbsLevels {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin-left: 20px;
-}
-
-.lowerBlock {}
-
-.lowerBlock .statsTable {
-  margin: auto
-}
-
-.jobsTable, .jobsTable tr, .jobsTable td {
-  border: 0;
-  padding: 0;
-}
-
-.jobsTable td:nth-child(2), .jobsTable td:nth-child(3) {
-  padding-left: 5px;
-}
-
-.jobsTable select {
-  width: 40px;
-}
-
 .unitButtons {
   text-align: center;
   border-top: 10px;
-}
-
-.maxLevelButton {
-  margin-left: 10px;
-}
-
-
-
-
-
-
-.modal-dialog {
-  width: 270px
-}
-
-.textLink {
-  margin: auto;
-  width: 250px;
 }
 
 .background_acc {

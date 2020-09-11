@@ -6,8 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
-import GL_UNITS from '../data/gl/units.json';
-import JP_UNITS from '../data/jp/units.json';
+
 import { GridService } from './grid.service'
 import { SkillService } from './skill.service'
 import { JobService } from './job.service'
@@ -20,11 +19,12 @@ import { EsperService } from './esper.service'
 import { AuthService } from './auth.service'
 import { ToolService } from './tool.service'
 
+import GL_UNITS from '../data/gl/units.json';
+import JP_UNITS from '../data/jp/units.json';
+
 @Injectable()
 export class UnitService {
   private units: Unit[];
-  private savedVersion = null;
-
   unit
 
   private statsType = [
@@ -166,15 +166,14 @@ export class UnitService {
   ) {}
 
   private getRaw() {
-    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()))
-    if (this.savedVersion == "GL") {
+    if (this.navService.getVersion() == "GL") {
       return GL_UNITS
     } else {
       return JP_UNITS
     }
   }
 
-  getUnits(): Unit[] {
+  getUnits() {
     let units: Unit[] = [];
     let rawUnits = JSON.parse(JSON.stringify(this.getRaw()))
 
@@ -250,13 +249,13 @@ export class UnitService {
     return formattedUnitsForBuilder;
   }
 
-  getUnit(id: string): Unit {
+  getUnit(id) {
     this.getUnits();
 
     return this.units.find(unit => unit.dataId === id);
   }
 
-  getUnitBySlug(slug: string): Unit {
+  getUnitBySlug(slug) {
     this.getUnits();
 
     return this.units.find(unit => unit.slug === slug);
@@ -314,7 +313,7 @@ export class UnitService {
     }
 
     if (unit.card) {
-      data.card = this.cardService.getSavableData(unit.card)
+      data.card = this.cardService.getSavableData(unit.card, false)
     } else {
       data.card = null
     }
@@ -508,6 +507,7 @@ export class UnitService {
         }
 
         this.localStorageService.set(this.getLocalStorage(), savedUnits);
+        this.unit.storeId = data.id
 
         return data.id
       })
@@ -546,6 +546,34 @@ export class UnitService {
     let document = this.firestore.collection(this.getLocalStorage()).doc(dataId)
 
     return document.valueChanges()
+  }
+
+  getExportableLink() {
+    if (!this.unit.storeId || this.hasChangeBeenMade()) {
+      return this.saveUnit(this.unit, "share")
+    }
+
+    return new Promise((resolve, reject) => {
+      resolve(this.unit.storeId)
+    })
+  }
+
+  hasChangeBeenMade() {
+    let result = true
+    if (this.unit.storeId) {
+      let newData = this.getSavableData(this.unit)
+      let oldData = null
+      this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
+        if (savedUnit.storeId == this.unit.storeId) {
+          oldData = savedUnit
+          delete oldData.storeId
+        }
+      })
+
+      return !this.toolService.equal(oldData, newData)
+    }
+
+    return result
   }
 
   changeStar() {
@@ -622,33 +650,5 @@ export class UnitService {
 
   resetJob() {
     this.unit.resetJob()
-  }
-
-  getExportableLink() {
-    if (!this.unit.storeId || this.hasChangeBeenMade()) {
-      return this.saveUnit(this.unit, "share")
-    }
-
-    return new Promise((resolve, reject) => {
-      resolve(this.unit.storeId)
-    })
-  }
-
-  hasChangeBeenMade() {
-    let result = true
-    if (this.unit.storeId) {
-      let newData = this.getSavableData(this.unit)
-      let oldData = null
-      this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
-        if (savedUnit.storeId == this.unit.storeId) {
-          oldData = savedUnit
-          delete oldData.storeId
-        }
-      })
-
-      return !this.toolService.equal(oldData, newData)
-    }
-
-    return result
   }
 }

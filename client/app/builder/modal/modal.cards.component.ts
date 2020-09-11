@@ -102,19 +102,19 @@ export class ModalCardsComponent implements OnInit {
 
   changeStar(value) {
     this.card.star = value
-    this.cardService.changeStar(this.card)
+    this.cardService.changeStar()
   }
 
   changeLevel () {
-    this.cardService.changeLevel(this.card)
+    this.cardService.changeLevel()
   }
 
   selectLevel(level) {
     this.card.level = level
-    this.cardService.changeLevel(this.card)
+    this.cardService.changeLevel()
   }
 
   maxCard() {
-    this.cardService.maxCard(this.card)
+    this.cardService.maxCard()
   }
 }
