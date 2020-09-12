@@ -18,6 +18,8 @@ export class ModalCardsComponent implements OnInit {
   filters = {
     rarity: []
   }
+  savedCards = {}
+  loadCardId = null
 
   @Input() public modalStep = "select";
   @Input() public card
@@ -45,6 +47,8 @@ export class ModalCardsComponent implements OnInit {
     this.cards = this.cardService.getCardsForListing(this.filters);
     this.getFilteredCards()
     this.translateCards()
+
+    this.savedCards = this.cardService.getSavedCards()
   }
 
   private translateCards() {
@@ -90,10 +94,16 @@ export class ModalCardsComponent implements OnInit {
     this.modalStep = "select"
   }
 
-  selectCard(card) {
-    this.card = this.card = this.cardService.selectCardForBuilder(card.dataId, null)
+  selectCard(cardId, customData = null, forceNewBuild = false) {
+    if (!forceNewBuild && !customData && this.savedCards[cardId].length > 0) {
+      this.loadCardId = cardId
 
-    this.modalStep = "custom"
+      this.modalStep = "load"
+    } else {
+      this.card = this.cardService.selectCardForBuilder(cardId, customData)
+
+      this.modalStep = "custom"
+    }
   }
 
   save() {

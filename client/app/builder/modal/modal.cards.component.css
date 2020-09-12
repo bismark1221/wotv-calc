@@ -10,6 +10,10 @@
   display: inline-block;
 }
 
+.titleLoad {
+  padding-left: 30px;
+}
+
 .closeButton {
   float: right;
 }
@@ -163,6 +167,21 @@
   display: table-cell;
   vertical-align: middle;
   color: var(--card-title-color);
+}
+
+/* Load modal */
+.listModal {
+  margin: 10px;
+}
+
+.newBuildDiv {
+  width: 135px;
+  margin: auto;
+}
+
+.tableList {
+  margin: auto;
+  margin-top: 10px
 }
 
 /* Specific for custom */

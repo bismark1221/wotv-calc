@@ -28,7 +28,7 @@
 
     <div class="cardsList">
       <div class="cardsCol" *ngFor="let card of getFilteredCards()">
-        <a (click)="selectCard(card)">
+        <a (click)="selectCard(card.dataId)">
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
           </div>
@@ -44,9 +44,9 @@
   </div>
 </div>
 
-<div *ngIf="modalStep == 'saved'">
+<div *ngIf="modalStep == 'load'">
   <div class="titleBlock">
-    <div class="title">
+    <div class="title titleLoad">
       Load card ?
     </div>
     <div class="closeButton">
@@ -54,6 +54,22 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+  </div>
+
+  <div class="listModal">
+    <div class="newBuildDiv">
+      <button class="btn btn-sub" (click)="selectCard(loadCardId, null, true)">Create new build</button>
+    </div>
+    <table class="tableList">
+      <tr>
+        <th>Name</th>
+        <th>Load</th>
+      </tr>
+      <tr *ngFor="let card of savedCards[loadCardId]">
+        <td *ngIf="type != 'team'">{{ card ? card.customName : '' }}</td>
+        <td><a (click)="selectCard(loadCardId, card)"><i class="fas fa-download"></i></a></td>
+      </tr>
+    </table>
   </div>
 </div>
 
@@ -70,7 +86,7 @@
   </div>
 
   <div class="backButtonDiv">
-    <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-left" aria-hidden="true"></i>Back to Cards</button>
+    <button class="btn btn-sub" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Cards</button>
   </div>
 
   <div class="customDiv">
