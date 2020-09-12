@@ -124,11 +124,6 @@
   float: left;
 }
 
-.elementImg {
-  height: 32px;
-  float: right;
-}
-
 .cardsCol {
   background-color: var(--card-background);
   width: 200px;
@@ -137,6 +132,7 @@
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .cardsCol:hover {
@@ -175,13 +171,20 @@
 }
 
 .newBuildDiv {
-  width: 135px;
-  margin: auto;
+  text-align: center;
+}
+
+.btn-back {
+  margin-right: 25px;
 }
 
 .tableList {
   margin: auto;
   margin-top: 10px
+}
+
+.fa-download {
+  cursor: pointer;
 }
 
 /* Specific for custom */
@@ -260,4 +263,8 @@
   background: url("assets/icons/star_on.png") 0px 0px no-repeat;
   background-size: 40px;
   width: 40px;
+}
+
+.levelDiv {
+  margin-top: 10px;
 }

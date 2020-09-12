@@ -95,7 +95,7 @@ export class ModalCardsComponent implements OnInit {
   }
 
   selectCard(cardId, customData = null, forceNewBuild = false) {
-    if (!forceNewBuild && !customData && this.savedCards[cardId].length > 0) {
+    if (!forceNewBuild && !customData && this.savedCards[cardId] && this.savedCards[cardId].length > 0) {
       this.loadCardId = cardId
 
       this.modalStep = "load"

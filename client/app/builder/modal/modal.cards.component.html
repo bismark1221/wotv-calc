@@ -58,8 +58,10 @@
 
   <div class="listModal">
     <div class="newBuildDiv">
+      <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Cards</button>
       <button class="btn btn-sub" (click)="selectCard(loadCardId, null, true)">Create new build</button>
     </div>
+
     <table class="tableList">
       <tr>
         <th>Name</th>
@@ -94,10 +96,9 @@
       <div class="cardsCol">
         <div class="cardIcons">
           <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
-          <img class="elementImg" src="{{'assets/elements/' + card.element + '.png'}}" *ngIf="card.element" />
         </div>
         <div>
-          <img class="cardImg" src="assets/units/{{ card.image }}_s.png" />
+          <img class="cardImg" src="assets/cards/{{ card.image }}_m.png" />
         </div>
         <div class="cardTitle">
           <span class="cardName">{{ card.name }}</span>
@@ -113,7 +114,7 @@
           </ngb-rating>
         </div>
 
-        <div>
+        <div class="levelDiv">
           <div class="titleSelect">
             Level
           </div>

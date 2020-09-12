@@ -273,6 +273,7 @@
 
 .esperImg, .cardImg {
   width: 110px;
+  cursor: pointer;
 }
 
 .guildDiv  {
@@ -301,6 +302,7 @@
 
 .btn-equipment {
   width: 70px;
+  margin-top: 5px;
 }
 
 .btn-guild {
