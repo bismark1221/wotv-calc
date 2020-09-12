@@ -24,6 +24,7 @@ export class BuilderCardComponent implements OnInit {
   searchText = ""
   savedCards = {}
   loadingBuild = false
+  showSave = false
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -54,26 +55,28 @@ export class BuilderCardComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         this.loadingBuild = true
-        try {
-          let parsedData = JSON.parse(atob(data))
-          this.selectCard(parsedData.dataId, parsedData)
+        this.cardService.getStoredCard(data).subscribe(cardData => {
+          if (cardData) {
+            // @ts-ignore
+            this.selectCard(cardData.dataId, cardData)
+          }
           this.loadingBuild = false
-        } catch(err) {
-          this.cardService.getStoredCard(data).subscribe(cardData => {
-            if (cardData) {
-              // @ts-ignore
-              this.selectCard(cardData.dataId, cardData)
-            }
-            this.loadingBuild = false
-          })
-        }
+        })
       }
     });
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(user => {
+    this.authService.$load.subscribe(load => {
       this.savedCards = this.cardService.getSavedCards()
+    });
+
+    this.authService.$user.subscribe(user => {
+      if (user) {
+        this.showSave = true
+      } else {
+        this.showSave = false
+      }
     });
   }
 

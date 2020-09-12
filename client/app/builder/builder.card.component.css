@@ -33,6 +33,10 @@
   text-align: center;
 }
 
+/**********/
+/* Search */
+/**********/
+
 .rarityBlock {
   width: 100%;
 }
@@ -92,6 +96,20 @@
   display: inline-block;
   font-size: 22px;
   vertical-align: middle;
+}
+
+/***********/
+/* Builder */
+/***********/
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
 }
 
 .leftBlock {

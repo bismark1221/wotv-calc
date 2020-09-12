@@ -41,6 +41,7 @@ export class BuilderUnitComponent implements OnInit {
 
   statueNames
 
+  showSave = false
   showStatsDetail = false
   showBuffsDetail = false
 
@@ -176,8 +177,16 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(user => {
+    this.authService.$load.subscribe(load => {
       this.savedUnits = this.unitService.getSavedUnits()
+    });
+
+    this.authService.$user.subscribe(user => {
+      if (user) {
+        this.showSave = true
+      } else {
+        this.showSave = false
+      }
     });
   }
 

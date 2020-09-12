@@ -30,9 +30,9 @@
     </div>
   </div>
 
-  <div *ngIf="card" style="width: 100%;">
-    <button (click)="openSaveModal(saveModal)">SAVE</button>
-    <button (click)="openLinkModal(builderLink)">Get Build Link</button>
+  <div class="saveBlock" *ngIf="card">
+    <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
   <div class="leftBlock" *ngIf="card">
