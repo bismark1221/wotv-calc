@@ -165,7 +165,10 @@
   color: var(--card-title-color);
 }
 
-/* Load modal */
+/********/
+/* Load */
+/********/
+
 .listModal {
   margin: 10px;
 }
@@ -187,7 +190,10 @@
   cursor: pointer;
 }
 
-/* Specific for custom */
+/**********/
+/* Custom */
+/**********/
+
 .backButtonDiv, .customDiv {
   margin-left: 25px;
   margin-top: 15px;

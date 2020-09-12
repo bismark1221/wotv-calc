@@ -184,7 +184,7 @@ export class CardService {
     let cardFinded = false
 
     if (savedCards[card.dataId]) {
-      savedCards[card.dataId].forEach((savedCard, savedCardIndex) => {
+      savedCards[card.dataId].forEach(savedCard => {
         if (savedCard.customName == card.customName) {
           cardFinded = true
         }
@@ -284,21 +284,36 @@ export class CardService {
     return result
   }
 
-  resetCard() {
+  resetCard(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.card.resetCard(this.nameService, this.skillService)
   }
 
-  changeStar() {
+  changeStar(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.card.updateMaxLevel();
     this.card.changeLevel(this.nameService, this.skillService)
   }
 
+  changeLevel(card = null) {
+    if (card) {
+      this.card = card
+    }
 
-  changeLevel() {
     this.card.changeLevel(this.nameService, this.skillService)
   }
 
-  maxCard() {
+  maxCard(card = null) {
+    if (card) {
+      this.card = card
+    }
+
     this.card.maxCard(this.nameService, this.skillService)
   }
 

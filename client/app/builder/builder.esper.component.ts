@@ -1,8 +1,15 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { EsperService } from '../services/esper.service';
+import { NameService } from '../services/name.service';
+import { AuthService } from '../services/auth.service';
+
+import { ModalLoadComponent } from './modal/modal.load.component';
+import { ModalSaveComponent } from './modal/modal.save.component';
+import { ModalLinkComponent } from './modal/modal.link.component';
 
 @Component({
   selector: 'app-builder-esper',
@@ -10,12 +17,13 @@ import { EsperService } from '../services/esper.service';
   styleUrls: ['./builder.esper.component.css']
 })
 export class BuilderEsperComponent implements OnInit {
-  @Input() public esper;
-  @Input() public fromUnitBuilder = false;
-  @Output() passEntry: EventEmitter<any> = new EventEmitter();
-
-  selectedId
   espers
+  filteredEspers
+  esper
+  searchText = ""
+  savedEspers = {}
+  loadingBuild = false
+  showSave = false
 
   buffsImage = [
     "dark_atk",
@@ -58,30 +66,104 @@ export class BuilderEsperComponent implements OnInit {
     "strike_res",
   ]
 
+  rarityTranslate = {
+    UR: "Ultra Rare",
+    MR: "Mega Rare",
+    SR: "Super Rare",
+    R: "Rare",
+    N: "Normal"
+  }
+
   constructor(
+    private activatedRoute: ActivatedRoute,
     private esperService: EsperService,
     private translateService: TranslateService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private nameService: NameService,
+    private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.getEspers();
+      this.translateEspers();
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getEspers();
+
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      let data = params.get('data')
+      if (data) {
+        this.loadingBuild = true
+        this.esperService.getStoredEsper(data).subscribe(esperData => {
+          if (esperData) {
+            // @ts-ignore
+            this.selectEsper(esperData.dataId, esperData)
+          }
+          this.loadingBuild = false
+        })
+      }
+    });
+  }
+
+  ngAfterViewInit() {
+    this.authService.$load.subscribe(load => {
+      this.savedEspers = this.esperService.getSavedEspers()
+    });
+
+    this.authService.$user.subscribe(user => {
+      if (user) {
+        this.showSave = true
+      } else {
+        this.showSave = false
+      }
+    });
   }
 
   private getEspers() {
-    this.espers = this.esperService.getEspersForBuilder();
-    this.espers = [...this.espers];
+    this.espers = this.formatEspers(this.esperService.getEspersForListing())
+    this.updateFilteredEspers()
+    this.translateEspers();
+
+    this.savedEspers = this.esperService.getSavedEspers()
   }
 
-  selectEsper() {
-    if (this.selectedId) {
-      this.esper = this.esperService.selectEsperForBuilder(this.selectedId)
+  private translateEspers() {
+    Object.keys(this.espers).forEach(rarity => {
+      this.espers[rarity].forEach(esper => {
+        esper.name = this.nameService.getName(esper)
+      })
+    });
+  }
+
+  private formatEspers(espers) {
+    let formattedEspers = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    espers.forEach(esper => {
+      formattedEspers[esper.rarity].push(esper)
+    })
+
+    return formattedEspers
+  }
+
+  updateFilteredEspers() {
+    let text = this.searchText.toLowerCase();
+    this.filteredEspers = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    Object.keys(this.espers).forEach(rarity => {
+      this.filteredEspers[rarity] = this.espers[rarity].filter(esper => {
+        return esper.name.toLowerCase().includes(text);
+      })
+    })
+  }
+
+  selectEsper(dataId, customData = null) {
+    if (dataId) {
+      this.esper = this.esperService.selectEsperForBuilder(dataId, customData)
+      this.searchText = this.esper.name
     } else {
       this.esper = null
+      this.searchText = ""
+      this.updateFilteredEspers()
     }
   }
 
@@ -90,7 +172,8 @@ export class BuilderEsperComponent implements OnInit {
     this.esperService.changeStar(this.esper)
   }
 
-  changeLevel() {
+  selectLevel(level) {
+    this.esper.level = level
     this.esperService.changeLevel(this.esper)
   }
 
@@ -106,15 +189,39 @@ export class BuilderEsperComponent implements OnInit {
     return this.esperService.canActivateNode(node, this.esper)
   }
 
-  save() {
-    this.esperService.saveEsper(this.esper)
-  }
-
   maxEsper() {
     this.esperService.maxEsper(this.esper)
   }
 
-  close() {
-    this.modalService.dismissAll();
+  resetEsper() {
+    this.esperService.resetEsper(this.esper)
+  }
+
+  openLoadModal(esperId) {
+    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'esper'
+    modalRef.componentInstance.savedItems = this.savedEspers[esperId]
+
+    modalRef.result.then((esper) => {
+      if (esper) {
+        this.selectEsper(esper.dataId, esper)
+      }
+    }, (reason) => {
+    });
+  }
+
+  openSaveModal() {
+    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'esper'
+    modalRef.componentInstance.item = this.esper
+  }
+
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'esper'
+    modalRef.componentInstance.item = this.esper
   }
 }

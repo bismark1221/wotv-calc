@@ -19,6 +19,8 @@ export class ModalEspersComponent implements OnInit {
     rarity: [],
     element: []
   }
+  savedEspers = {}
+  loadEsperId = null
 
   buffsImage = [
     "dark_atk",
@@ -87,6 +89,8 @@ export class ModalEspersComponent implements OnInit {
     this.espers = this.esperService.getEspersForListing(this.filters);
     this.getFilteredEspers()
     this.translateEspers()
+
+    this.savedEspers = this.esperService.getSavedEspers()
   }
 
   private translateEspers() {
@@ -132,10 +136,16 @@ export class ModalEspersComponent implements OnInit {
     this.modalStep = "select"
   }
 
-  selectEsper(esper) {
-    this.esper = this.esper = this.esperService.selectEsperForBuilder(esper.dataId, null)
+  selectEsper(esperId, customData = null, forceNewBuild = false) {
+    if (!forceNewBuild && !customData && this.savedEspers[esperId] && this.savedEspers[esperId].length > 0) {
+      this.loadEsperId = esperId
 
-    this.modalStep = "custom"
+      this.modalStep = "load"
+    } else {
+      this.esper = this.esperService.selectEsperForBuilder(esperId, customData)
+
+      this.modalStep = "custom"
+    }
   }
 
   save() {

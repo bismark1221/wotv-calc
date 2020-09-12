@@ -31,7 +31,7 @@
 
     <div class="espersList">
       <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
-        <a (click)="selectEsper(esper)">
+        <a (click)="selectEsper(esper.dataId)">
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
             <img class="elementImg" src="{{'assets/elements/' + esper.element + '.png'}}" *ngIf="esper.element" />
@@ -48,7 +48,7 @@
   </div>
 </div>
 
-<div *ngIf="modalStep == 'saved'">
+<div *ngIf="modalStep == 'load'">
   <div class="titleBlock">
     <div class="title">
       Load esper ?
@@ -58,6 +58,24 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+  </div>
+
+  <div class="listModal">
+    <div class="newBuildDiv">
+      <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Espers</button>
+      <button class="btn btn-sub" (click)="selectEsper(loadEsperId, null, true)">Create new build</button>
+    </div>
+
+    <table class="tableList">
+      <tr>
+        <th>Name</th>
+        <th>Load</th>
+      </tr>
+      <tr *ngFor="let esper of savedEspers[loadEsperId]">
+        <td *ngIf="type != 'team'">{{ esper ? esper.customName : '' }}</td>
+        <td><a (click)="selectEsper(loadEsperId, esper)"><i class="fas fa-download"></i></a></td>
+      </tr>
+    </table>
   </div>
 </div>
 

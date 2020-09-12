@@ -4,7 +4,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
-import { SkillService } from '../services/skill.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
 
@@ -38,17 +37,16 @@ export class BuilderCardComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private cardService: CardService,
     private translateService: TranslateService,
-    private skillService: SkillService,
     private modalService: NgbModal,
     private nameService: NameService,
     private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.getCards();
+      this.translateCards();
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getCards();
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -134,20 +132,20 @@ export class BuilderCardComponent implements OnInit {
     }
 
     this.card.star = value
-    this.cardService.changeStar()
+    this.cardService.changeStar(this.card)
   }
 
   selectLevel(level) {
     this.card.level = level
-    this.cardService.changeLevel()
+    this.cardService.changeLevel(this.card)
   }
 
   maxCard() {
-    this.cardService.maxCard()
+    this.cardService.maxCard(this.card)
   }
 
   resetCard() {
-    this.cardService.resetCard()
+    this.cardService.resetCard(this.card)
   }
 
   openLoadModal(cardId) {

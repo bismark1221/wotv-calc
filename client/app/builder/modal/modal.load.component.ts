@@ -55,7 +55,7 @@ export class ModalLoadComponent implements OnInit {
         break
       case 'esper' :
         dataId = item.dataId
-        //this.esperService.deleteEsper(item)
+        this.esperService.deleteEsper(item)
         this.savedItems = this.esperService.getSavedEspers()[dataId]
         break
       case 'equipment' :
