@@ -58,10 +58,10 @@ export class ModalLinkComponent implements OnInit {
         })
         break
       case 'equipment' :
-        /*this.equipmentService.getExportableLink().subscribe((data: any) => {
-          this.exportableLink = data.shorturl;
+        this.equipmentService.getExportableLink().then(link => {
+          this.exportableLink = "https://wotv-calc.com" + this.navService.getRoute("/builder/equipment") + "/" + link;
           this.saveStep = "link"
-        })*/
+        })
         console.log("Trying to link something not managed : " + this.type)
         break
       case 'team' :

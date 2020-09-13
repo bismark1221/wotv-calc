@@ -31,7 +31,7 @@
 
     <div class="equipmentsList">
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
-        <a (click)="selectEquipment(equipment)">
+        <a (click)="selectEquipment(equipment.dataId)">
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
           </div>
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div *ngIf="modalStep == 'saved'">
+<div *ngIf="modalStep == 'load'">
   <div class="titleBlock">
     <div class="title">
       Load equipement ?
@@ -57,6 +57,24 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+  </div>
+
+  <div class="listModal">
+    <div class="newBuildDiv">
+      <button class="btn btn-sub btn-back" (click)="back()"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Back to Equipments</button>
+      <button class="btn btn-sub" (click)="selectEquipment(loadEquipmentId, null, true)">Create new build</button>
+    </div>
+
+    <table class="tableList">
+      <tr>
+        <th>Name</th>
+        <th>Load</th>
+      </tr>
+      <tr *ngFor="let equipment of savedEquipments[loadEquipmentId]">
+        <td *ngIf="type != 'team'">{{ equipment ? equipment.customName : '' }}</td>
+        <td><a (click)="selectEquipment(loadEquipmentId, equipment)"><i class="fas fa-download"></i></a></td>
+      </tr>
+    </table>
   </div>
 </div>
 
@@ -86,7 +104,7 @@
           <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
         </div>
         <div class="cardTitle">
-          <span class="equipmentName">{{ equipment.name }}</span>
+          <span class="equipmentName">{{ equipment.name }} - {{ equipment.customName }}</span>
         </div>
       </div>
 

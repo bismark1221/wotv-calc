@@ -128,6 +128,7 @@
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .equipmentsCol:hover {
@@ -160,7 +161,34 @@
   color: var(--card-title-color);
 }
 
-/* Specific for custom */
+/********/
+/* Load */
+/********/
+
+.listModal {
+  margin: 10px;
+}
+
+.newBuildDiv {
+  text-align: center;
+}
+
+.btn-back {
+  margin-right: 25px;
+}
+
+.tableList {
+  margin: auto;
+  margin-top: 10px
+}
+
+.fa-download {
+  cursor: pointer;
+}
+
+/**********/
+/* Custom */
+/**********/
 .backButtonDiv, .customDiv {
   margin-left: 25px;
   margin-top: 15px;

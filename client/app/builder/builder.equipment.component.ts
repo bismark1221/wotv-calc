@@ -1,8 +1,15 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
+import { NameService } from '../services/name.service';
+import { AuthService } from '../services/auth.service';
+
+import { ModalLoadComponent } from './modal/modal.load.component';
+import { ModalSaveComponent } from './modal/modal.save.component';
+import { ModalLinkComponent } from './modal/modal.link.component';
 
 @Component({
   selector: 'app-builder-equipment',
@@ -10,45 +17,123 @@ import { EquipmentService } from '../services/equipment.service';
   styleUrls: ['./builder.equipment.component.css']
 })
 export class BuilderEquipmentComponent implements OnInit {
-  @Input() public equipment;
-  @Input() public fromUnitBuilder = false;
-  @Output() passEntry: EventEmitter<any> = new EventEmitter();
-
-  selectedId
+  equipment
+  filteredEquipments
   equipments
+  searchText = ""
+  savedEquipments = {}
+  loadingBuild = false
+  showSave = false
+
+
+  rarityTranslate = {
+    UR: "Ultra Rare",
+    MR: "Mega Rare",
+    SR: "Super Rare",
+    R: "Rare",
+    N: "Normal"
+  }
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private nameService: NameService,
+    private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.getEquipments();
+      this.translateEquipments();
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getEquipments();
+
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      let data = params.get('data')
+      if (data) {
+        this.loadingBuild = true
+        this.equipmentService.getStoredEquipment(data).subscribe(equipmentData => {
+          if (equipmentData) {
+            // @ts-ignore
+            this.selectEquipment(equipmentData.dataId, equipmentData)
+          }
+          this.loadingBuild = false
+        })
+      }
+    });
+  }
+
+  ngAfterViewInit() {
+    this.authService.$load.subscribe(load => {
+      this.savedEquipments = this.equipmentService.getSavedEquipments()
+    });
+
+    this.authService.$user.subscribe(user => {
+      if (user) {
+        this.showSave = true
+      } else {
+        this.showSave = false
+      }
+    });
   }
 
   private getEquipments() {
-    this.equipments = this.equipmentService.getEquipmentsForBuilder();
-    this.equipments = [...this.equipments];
+    this.equipments = this.formatEquipments(this.equipmentService.getEquipmentsForListing())
+    this.updateFilteredEquipments()
+    this.translateEquipments();
+
+    this.savedEquipments = this.equipmentService.getSavedEquipments()
   }
 
-  selectEquipment() {
-    if (this.selectedId) {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(this.selectedId)
+  private translateEquipments() {
+    Object.keys(this.equipments).forEach(rarity => {
+      this.equipments[rarity].forEach(equipment => {
+        equipment.name = this.nameService.getName(equipment)
+      })
+    });
+  }
+
+  private formatEquipments(equipments) {
+    let formattedEquipments = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    equipments.forEach(equipment => {
+      formattedEquipments[equipment.rarity].push(equipment)
+    })
+
+    return formattedEquipments
+  }
+
+  updateFilteredEquipments() {
+    let text = this.searchText.toLowerCase();
+    this.filteredEquipments = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    Object.keys(this.equipments).forEach(rarity => {
+      this.filteredEquipments[rarity] = this.equipments[rarity].filter(equipment => {
+        return equipment.name.toLowerCase().includes(text);
+      })
+    })
+  }
+
+  selectEquipment(dataId, customData = null) {
+    if (dataId) {
+      this.equipment = this.equipmentService.selectEquipmentForBuilder(dataId, customData)
+      this.searchText = this.equipment.name
     } else {
-      this.equipment = null;
+      this.equipment = null
+      this.searchText = ""
+      this.updateFilteredEquipments()
     }
   }
 
-  changeUpgrade() {
+  selectUpgrade(upgrade) {
+    this.equipment.upgrade = upgrade
     this.equipmentService.changeUpgrade(this.equipment)
   }
 
-  changeGrow() {
+  selectGrow(grow) {
+    this.equipment.grow = grow
     this.equipmentService.changeGrow(this.equipment)
   }
 
@@ -60,11 +145,31 @@ export class BuilderEquipmentComponent implements OnInit {
     this.equipmentService.changeSkillLevel(this.equipment)
   }
 
-  save() {
-    this.equipmentService.saveEquipment(this.equipment)
+  openLoadModal(equipmentId) {
+    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'equipment'
+    modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId]
+
+    modalRef.result.then((equipment) => {
+      if (equipment) {
+        this.selectEquipment(equipment.dataId, equipment)
+      }
+    }, (reason) => {
+    });
   }
 
-  close() {
-    this.modalService.dismissAll();
+  openSaveModal() {
+    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'equipment'
+    modalRef.componentInstance.item = this.equipment
+  }
+
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'equipment'
+    modalRef.componentInstance.item = this.equipment
   }
 }

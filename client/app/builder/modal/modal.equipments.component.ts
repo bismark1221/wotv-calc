@@ -19,6 +19,8 @@ export class ModalEquipmentsComponent implements OnInit {
     rarity: [],
     category: []
   }
+  savedEquipments = {}
+  loadEquipmentId = null
 
   @Input() public unit;
   @Input() public equipmentPos;
@@ -45,6 +47,8 @@ export class ModalEquipmentsComponent implements OnInit {
     this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters)
     this.getFilteredEquipments()
     this.translateEquipments()
+
+    this.savedEquipments = this.equipmentService.getSavedEquipments()
   }
 
   private translateEquipments() {
@@ -90,10 +94,16 @@ export class ModalEquipmentsComponent implements OnInit {
     this.modalStep = "select"
   }
 
-  selectEquipment(equipment) {
-    this.equipment = this.equipmentService.selectEquipmentForBuilder(equipment.dataId, null)
+  selectEquipment(equipmentId, customData = null, forceNewBuild = false) {
+    if (!forceNewBuild && !customData && this.savedEquipments[equipmentId] && this.savedEquipments[equipmentId].length > 0) {
+      this.loadEquipmentId = equipmentId
 
-    this.modalStep = "custom"
+      this.modalStep = "load"
+    } else {
+      this.equipment = this.equipmentService.selectEquipmentForBuilder(equipmentId, customData)
+
+      this.modalStep = "custom"
+    }
   }
 
   selectUpgrade(upgrade) {

@@ -14,7 +14,7 @@
     <div class="rarityLine" *ngIf="!card && !loadingBuild && filteredCards[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="cardBlock" *ngIf="!card && !loadingBuild filteredCards[rarity].length > 0">
+    <div class="cardBlock" *ngIf="!card && !loadingBuild && filteredCards[rarity].length > 0">
       <div class="cardLine" *ngFor="let filteredCard of filteredCards[rarity]; let j = index">
         <div class="cardSelector" [ngClass]="{'cardSelectorWithSave': savedCards[filteredCard.dataId]}" (click)="selectCard(filteredCard.dataId)">
           <div class="cardLogo">

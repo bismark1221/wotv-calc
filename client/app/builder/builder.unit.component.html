@@ -14,7 +14,7 @@
     <div class="rarityLine" *ngIf="!unit && !loadingBuild && filteredUnits[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="unitBlock" *ngIf="!unit && !loadingBuild filteredUnits[rarity].length > 0">
+    <div class="unitBlock" *ngIf="!unit && !loadingBuild && filteredUnits[rarity].length > 0">
       <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
         <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': savedUnits[filteredUnit.dataId]}" (click)="selectUnit(filteredUnit.dataId)">
           <div class="unitLogo">

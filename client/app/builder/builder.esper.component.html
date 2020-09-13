@@ -14,7 +14,7 @@
     <div class="rarityLine" *ngIf="!esper && !loadingBuild && filteredEspers[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="esperBlock" *ngIf="!esper && !loadingBuild filteredEspers[rarity].length > 0">
+    <div class="esperBlock" *ngIf="!esper && !loadingBuild && filteredEspers[rarity].length > 0">
       <div class="esperLine" *ngFor="let filteredEsper of filteredEspers[rarity]; let j = index">
         <div class="esperSelector" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
           <div class="esperLogo">

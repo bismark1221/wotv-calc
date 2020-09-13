@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
-import { Equipment } from '../entities/equipment';
-import { default as GL_EQUIPMENTS } from '../data/gl/equipments.json';
-import { default as JP_EQUIPMENTS } from '../data/jp/equipments.json';
+import { TranslateService } from '@ngx-translate/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+
 import { SkillService } from './skill.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
+import { ToolService } from './tool.service'
+import { AuthService } from './auth.service'
+
+import { Equipment } from '../entities/equipment';
+
+import { default as GL_EQUIPMENTS } from '../data/gl/equipments.json';
+import { default as JP_EQUIPMENTS } from '../data/jp/equipments.json';
 
 @Injectable()
 export class EquipmentService {
@@ -171,31 +177,18 @@ export class EquipmentService {
   private savedEquipments = {}
 
   private equipments: Equipment[];
-  private equipment
-  private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
-  private sre = /^\s+|\s+$/g;
-  private snre = /\s+/g;
-  private dre = /(^([\w ]+,?[\w ]+)?[\w ]+,?[\w ]+\d+:\d+(:\d+)?[\w ]?|^\d{1,4}[\/\-]\d{1,4}[\/\-]\d{1,4}|^\w+, \w+ \d+, \d{4})/;
-  private hre = /^0x[0-9a-f]+$/i;
-  private ore = /^0/;
-  private oFxNcL: any;
-  private oFyNcL: any;
+  equipment
 
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private skillService: SkillService,
     private navService: NavService,
-    private nameService: NameService
+    private toolService: ToolService,
+    private authService: AuthService,
+    private nameService: NameService,
+    private firestore: AngularFirestore
   ) {}
-
-  private i(s: any) {
-      return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
-  }
-
-  private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
-  }
 
   private getRaw() {
     if (this.navService.getVersion() == "GL") {
@@ -205,7 +198,7 @@ export class EquipmentService {
     }
   }
 
-  getEquipments(sortBy = null): Equipment[] {
+  getEquipments(): Equipment[] {
     let equipments: Equipment[] = [];
     let rawEquipments = JSON.parse(JSON.stringify(this.getRaw()))
 
@@ -224,107 +217,16 @@ export class EquipmentService {
     return equipments;
   }
 
-  sortByName(equipments, order = "asc") {
-    equipments.sort((a: any, b: any) => {
-      let x = this.i(a.getName(this.translateService));
-      let y = this.i(b.getName(this.translateService));
-
-      const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-      const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-      const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-      const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-      if (yD) {
-        if (xD < yD) {
-          return order == "asc" ? -1 : 1;
-        } else if (xD > yD) {
-          return order == "asc" ? 1 : -1;
-        }
-      }
-
-      for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-        this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-        this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-        if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-          if (isNaN(this.oFxNcL)) {
-            return order == "asc" ? 1 : -1;
-          } else {
-            return order == "asc" ? -1 : 1;
-          }
-        }
-
-        if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-          var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-          return comp / Math.abs(comp);
-        }
-
-        if (this.oFxNcL < this.oFyNcL) {
-          return order == "asc" ? -1 : 1;
-        } else if (this.oFxNcL > this.oFyNcL) {
-          return order == "asc" ? 1 : -1;
-        }
-      }
-    });
-
-    return equipments;
-  }
-
-  sortByRarity(equipments, order = "asc") {
-    let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    if (order == "desc") {
-      rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
-    }
-
-    equipments.sort((a: any, b: any) => {
-      if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
-        return -1
-      } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
-        return 1
-      } else {
-        let x = this.i(a.getName(this.translateService));
-        let y = this.i(b.getName(this.translateService));
-
-        const xN = x.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-        const yN = y.replace(this.re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
-
-        const xD = parseInt((<any>x).match(this.hre), 16) || (xN.length !== 1 && Date.parse(x));
-        const yD = parseInt((<any>y).match(this.hre), 16) || xD && y.match(this.dre) && Date.parse(y) || null;
-
-        if (yD) {
-            if (xD < yD) { return -1; }
-            else if (xD > yD) { return 1; }
-        }
-
-        for(var cLoc = 0, xNl = xN.length, yNl = yN.length, numS = Math.max(xNl, yNl); cLoc < numS; cLoc++) {
-            this.oFxNcL = this.normChunk(xN[cLoc] || '', xNl);
-            this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
-            if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
-                return isNaN(this.oFxNcL) ? 1 : -1;
-            }
-            if (/[^\x00-\x80]/.test(this.oFxNcL + this.oFyNcL) && this.oFxNcL.localeCompare) {
-                var comp = this.oFxNcL.localeCompare(this.oFyNcL);
-                return comp / Math.abs(comp);
-            }
-            if (this.oFxNcL < this.oFyNcL) { return -1; }
-            else if (this.oFxNcL > this.oFyNcL) { return 1; }
-        }
-      }
-    })
-
-    return equipments
-  }
-
-  getEquipmentsForListing(filters, sort = "rarity", order = "asc") {
+  getEquipmentsForListing(filters = null, sort = "rarity", order = "asc") {
     this.getEquipments();
     this.equipments = this.filterEquipments(this.equipments, filters);
 
     switch (sort) {
       case "rarity" :
-        this.sortByRarity(this.equipments, order)
+        this.toolService.sortByRarity(this.equipments, order)
       break
       case "name" :
-        this.sortByName(this.equipments, order)
+        this.toolService.sortByName(this.equipments, order)
       break
       default :
         console.log("not managed sort")
@@ -409,11 +311,10 @@ export class EquipmentService {
   }
 
   getSavedEquipments() {
-    this.savedEquipments = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
-    return this.savedEquipments;
+    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
   }
 
-  getSavableData(equipment) {
+  getSavableData(equipment, onlyEquipment = true) {
     let data = {
       dataId: equipment.dataId,
       upgrade: equipment.upgrade,
@@ -431,55 +332,51 @@ export class EquipmentService {
       data.skill[skill.dataId] = skill.level
     })
 
+    if (onlyEquipment) {
+      let user = this.authService.getUser()
+      // @ts-ignore
+      data.user = user ? user.uid : null
+      // @ts-ignore
+      data.customName = equipment.customName ? equipment.customName : ''
+    }
+
     return data
   }
 
-  saveEquipment(equipment) {
-    if (!this.savedEquipments) {
-      this.getSavedEquipments()
-    }
-
-    this.savedEquipments[equipment.dataId] = this.getSavableData(equipment)
-
-    this.localStorageService.set(this.getLocalStorage(), this.savedEquipments);
-  }
-
   selectEquipmentForBuilder(equipmentId, customData = null) {
-    this.equipment = this.getEquipment(equipmentId)
+    this.equipment = new Equipment()
+    this.equipment.constructFromJson(JSON.parse(JSON.stringify(this.getEquipment(equipmentId))), this.translateService)
+    this.equipment.name = this.equipment.getName(this.translateService)
 
-    if (this.equipment) {
-      this.equipment.name = this.equipment.getName(this.translateService)
-      this.equipment.upgrade = 0;
-      this.equipment.level = 1;
-      if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
-        this.equipment.skills[0][0].level = 1
-      }
-      this.equipment.growIds = Object.keys(this.equipment.grows)
-      this.equipment.grow = this.equipment.growIds[0]
-
-      this.initiateSavedEquipment(customData)
-      this.updateMaxStat()
-
-      this.changeLevel()
-      this.changeUpgrade()
-      this.changeGrow()
-
-      this.equipmentCategory()
+    this.equipment.name = this.equipment.getName(this.translateService)
+    this.equipment.upgrade = 0;
+    this.equipment.level = 1;
+    if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == "skill") {
+      this.equipment.skills[0][0].level = 1
     }
+    this.equipment.growIds = Object.keys(this.equipment.grows)
+    this.equipment.grow = this.equipment.growIds[0]
+
+    this.initiateSavedEquipment(customData)
+    this.equipment.updateMaxStat(this.nameService, this.skillService)
+
+    this.equipment.changeLevel(this.skillService)
+    this.equipment.changeUpgrade(this.skillService)
+    this.equipment.changeGrow()
+
+    this.equipmentCategory()
 
     return this.equipment
   }
 
   private initiateSavedEquipment(customData = null) {
     let equipment = customData
-    if (!equipment) {
-      let savedEquipments = this.getSavedEquipments()
-      equipment = savedEquipments[this.equipment.dataId]
-    }
 
     if (equipment) {
       this.equipment.upgrade = equipment.upgrade;
       this.equipment.grow = equipment.grow;
+      this.equipment.storeId = equipment.storeId ? equipment.storeId : null
+      this.equipment.customName = equipment.customName ? equipment.customName : ""
 
       if (!this.equipment.grows[this.equipment.grow]) {
         this.equipment.grow = this.equipment.growIds[0]
@@ -505,54 +402,109 @@ export class EquipmentService {
     }
   }
 
-  private updateMaxStat() {
-    this.equipment.statsTypes = Object.keys(this.equipment.stats)
+  equipmentAlreadyExists(equipment) {
+    let savedEquipments = this.getSavedEquipments()
+    let equipmentFinded = false
 
-    this.equipment.passiveSkills = [];
-    this.equipment.skills.forEach(equipmentLvl => {
-      equipmentLvl.forEach(skill => {
-        skill.name = this.nameService.getName(skill)
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
-        });
-
-        if (skill.damage) {
-          skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
-        }
-
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
-        }
-
-        this.skillService.formatRange(this.equipment, skill);
-
-        if (skill.type == "skill") {
-          this.equipment.activeSkill = skill
-        } else {
-          this.equipment.passiveSkills.push(skill)
+    if (savedEquipments[equipment.dataId]) {
+      savedEquipments[equipment.dataId].forEach(savedEquipment => {
+        if (savedEquipment.customName == equipment.customName) {
+          equipmentFinded = true
         }
       })
-    })
-
-    Object.keys(this.equipment.grows).forEach(growId => {
-      this.equipment.grows[growId].name = this.nameService.getName(this.equipment.grows[growId])
-      this.equipment.grows[growId].stats = {};
-      this.equipment.statsTypes.forEach(statType => {
-        let maxValue = this.equipment.stats[statType].max
-        let growMax = this.equipment.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100)) : maxValue
-
-        this.equipment.grows[growId].stats[statType] = []
-        for (let i = this.equipment.stats[statType].min; i <= growMax; i++) {
-          this.equipment.grows[growId].stats[statType].push(i)
-        }
-      })
-    })
-
-    this.equipment.maxLevel = this.equipment.grows[this.equipment.grow].curve.MAX_LV
-    this.equipment.tableLevel = []
-    for (let i = 1; i <= this.equipment.maxLevel; i++) {
-      this.equipment.tableLevel.push(i)
     }
+
+    return equipmentFinded
+  }
+
+  saveEquipment(equipment, method) {
+    let savableData = this.getSavableData(equipment)
+
+    if (method == "new" || method == "share") {
+      if (method == "share") {
+        // @ts-ignore
+        delete savableData.user
+      }
+
+      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
+        // @ts-ignore
+        savableData.storeId = data.id
+        let savedEquipments = this.getSavedEquipments()
+
+        if (savedEquipments[equipment.dataId]) {
+          savedEquipments[equipment.dataId].push(savableData)
+        } else {
+          savedEquipments[equipment.dataId] = [savableData]
+        }
+
+        this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+        this.equipment.storeId = data.id
+
+        return data.id
+      })
+    } else {
+      return this.firestore.collection(this.getLocalStorage()).doc(equipment.storeId).set(savableData).then(data => {
+        let savedEquipments = this.getSavedEquipments()
+        savedEquipments[equipment.dataId].forEach((savedEquipment, equipmentIndex) => {
+          if (savedEquipment.storeId == equipment.storeId) {
+            savedEquipments[equipment.dataId][equipmentIndex] = savableData
+            savedEquipments[equipment.dataId][equipmentIndex].storeId = equipment.storeId
+          }
+        })
+
+        this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+
+        return equipment.storeId
+      })
+    }
+  }
+
+  deleteEquipment(equipment) {
+    this.firestore.collection(this.getLocalStorage()).doc(equipment.storeId).delete()
+
+    let savedEquipments = this.getSavedEquipments()
+
+    savedEquipments[equipment.dataId].forEach((savedEquipment, savedEquipmentIndex) => {
+      if (savedEquipment.storeId == equipment.storeId) {
+        savedEquipments[equipment.dataId].splice(savedEquipmentIndex, 1)
+      }
+    })
+
+    this.localStorageService.set(this.getLocalStorage(), savedEquipments);
+  }
+
+  getStoredEquipment(dataId) {
+    let document = this.firestore.collection(this.getLocalStorage()).doc(dataId)
+
+    return document.valueChanges()
+  }
+
+  getExportableLink() {
+    if (!this.equipment.storeId || this.hasChangeBeenMade()) {
+      return this.saveEquipment(this.equipment, "share")
+    }
+
+    return new Promise((resolve, reject) => {
+      resolve(this.equipment.storeId)
+    })
+  }
+
+  hasChangeBeenMade() {
+    let result = true
+    if (this.equipment.storeId) {
+      let newData = this.getSavableData(this.equipment)
+      let oldData = null
+      this.getSavedEquipments()[this.equipment.dataId].forEach(savedEquipment => {
+        if (savedEquipment.storeId == this.equipment.storeId) {
+          oldData = savedEquipment
+          delete oldData.storeId
+        }
+      })
+
+      return !this.toolService.equal(oldData, newData)
+    }
+
+    return result
   }
 
   changeUpgrade(equipment = null) {
@@ -560,22 +512,7 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    this.equipment.skill = this.equipment.skills[this.equipment.upgrade]
-
-    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type == "skill") {
-      this.equipment.skill[0].tableLevel = [];
-      for (let i = 1; i <= this.equipment.skill[0].maxLevel; i++) {
-        this.equipment.skill[0].tableLevel.push(i)
-      }
-    }
-
-    if (this.equipment.skill && this.equipment.skill[0] && this.equipment.skill[0].type !== "skill") {
-      this.equipment.skill.forEach(skill => {
-        skill.level = this.equipment.level
-      })
-    }
-
-    this.changeSkillLevel();
+    this.equipment.changeUpgrade(this.skillService)
   }
 
   changeGrow(equipment = null) {
@@ -583,16 +520,7 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    this.equipment.tableStats = {}
-    this.equipment.statsTypes.forEach(statType => {
-      this.equipment.tableStats[statType] = this.equipment.grows[this.equipment.grow].stats[statType]
-
-      if (!this.equipment.stats[statType].selected) {
-        this.equipment.stats[statType].selected = this.equipment.tableStats[statType][0]
-      } else if (this.equipment.stats[statType].selected > this.equipment.tableStats[statType][this.equipment.tableStats[statType].length - 1]) {
-        this.equipment.stats[statType].selected = this.equipment.tableStats[statType][this.equipment.tableStats[statType].length - 1]
-      }
-    })
+    this.equipment.changeGrow()
   }
 
   changeLevel(equipment = null) {
@@ -600,17 +528,7 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    if (this.equipment.growIds.length == 1 && this.equipment.grows[this.equipment.growIds[0]].dataId == "ARTIFACT_50") {
-      Object.keys(this.equipment.stats).forEach(statType => {
-        let minValue = this.equipment.stats[statType].min
-        let maxValue = this.equipment.grows[this.equipment.growIds[0]].stats[statType][this.equipment.grows[this.equipment.growIds[0]].stats[statType].length - 1]
-        this.equipment.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.equipment.maxLevel - 1) * (this.equipment.level - 1)))
-      })
-    }
-
-    if (this.equipment.skill) {
-      this.changeSkillLevel()
-    }
+    this.equipment.changeLevel(this.skillService)
   }
 
   changeSkillLevel(equipment = null) {
@@ -618,35 +536,7 @@ export class EquipmentService {
       this.equipment = equipment
     }
 
-    this.equipment.passiveSkills = [];
-    this.equipment.skill.forEach(skill => {
-      if (skill.type !== "skill") {
-        skill.level = this.equipment.level
-      }
-
-      if (skill.level >= (skill.upgrade[0] * 10 - 10)
-        && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level == this.equipment.maxLevel && skill.upgrade[skill.upgrade.length - 1] == 5))) {
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.equipment, skill, effect);
-        });
-
-        if (skill.damage) {
-          skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);
-        }
-
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
-        }
-
-        this.skillService.formatRange(this.equipment, skill);
-
-        if (skill.type == "skill") {
-          this.equipment.activeSkill = skill
-        } else {
-          this.equipment.passiveSkills.push(skill)
-        }
-      }
-    });
+    this.equipment.changeSkillLevel(this.skillService)
   }
 
   private equipmentCategory() {

@@ -27,6 +27,17 @@ export class Equipment {
   equippableUnits;
   materials;
 
+  // for builder
+  passiveSkills
+  skill
+  level
+  maxLevel
+  growIds
+  tableStats
+  grow
+  upgrade
+  tableLevel
+  activeSkill
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
     this.dataId = equipment.dataId;
@@ -53,5 +64,133 @@ export class Equipment {
     }
 
     return this.name;
+  }
+
+  updateMaxStat(nameService, skillService) {
+    this.statsTypes = Object.keys(this.stats)
+
+    this.passiveSkills = [];
+    this.skills.forEach(equipmentLvl => {
+      equipmentLvl.forEach(skill => {
+        skill.name = nameService.getName(skill)
+        skill.effects.forEach(effect => {
+          effect.formatHtml = skillService.formatEffect(this, skill, effect);
+        });
+
+        if (skill.damage) {
+          skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
+        }
+
+        if (skill.counter) {
+          skill.counterHtml = skillService.formatCounter(this, skill, skill.counter);
+        }
+
+        skillService.formatRange(this, skill);
+
+        if (skill.type == "skill") {
+          this.activeSkill = skill
+        } else {
+          this.passiveSkills.push(skill)
+        }
+      })
+    })
+
+    Object.keys(this.grows).forEach(growId => {
+      this.grows[growId].name = nameService.getName(this.grows[growId])
+      this.grows[growId].stats = {};
+      this.statsTypes.forEach(statType => {
+        let maxValue = this.stats[statType].max
+        let growMax = this.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100)) : maxValue
+
+        this.grows[growId].stats[statType] = []
+        for (let i = this.stats[statType].min; i <= growMax; i++) {
+          this.grows[growId].stats[statType].push(i)
+        }
+      })
+    })
+
+    this.maxLevel = this.grows[this.grow].curve.MAX_LV
+    this.tableLevel = []
+    for (let i = 1; i <= this.maxLevel; i++) {
+      this.tableLevel.push(i)
+    }
+  }
+
+  changeUpgrade(skillService) {
+    this.skill = this.skills[this.upgrade]
+
+    if (this.skill && this.skill[0] && this.skill[0].type == "skill") {
+      this.skill[0].tableLevel = [];
+      for (let i = 1; i <= this.skill[0].maxLevel; i++) {
+        this.skill[0].tableLevel.push(i)
+      }
+    }
+
+    if (this.skill && this.skill[0] && this.skill[0].type !== "skill") {
+      this.skill.forEach(skill => {
+        skill.level = this.level
+      })
+    }
+
+    this.changeSkillLevel(skillService);
+  }
+
+  changeGrow() {
+    this.tableStats = {}
+    this.statsTypes.forEach(statType => {
+      this.tableStats[statType] = this.grows[this.grow].stats[statType]
+
+      if (!this.stats[statType].selected) {
+        this.stats[statType].selected = this.tableStats[statType][0]
+      } else if (this.stats[statType].selected > this.tableStats[statType][this.tableStats[statType].length - 1]) {
+        this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1]
+      }
+    })
+  }
+
+  changeLevel(skillService) {
+    if (this.growIds.length == 1 && this.grows[this.growIds[0]].dataId == "ARTIFACT_50") {
+      Object.keys(this.stats).forEach(statType => {
+        let minValue = this.stats[statType].min
+        let maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1]
+        this.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)))
+      })
+    }
+
+    if (this.skill) {
+      this.changeSkillLevel(skillService)
+    }
+  }
+
+  changeSkillLevel(skillService) {
+    this.passiveSkills = [];
+    this.skill.forEach(skill => {
+      if (skill.type !== "skill") {
+        skill.level = this.level
+      }
+
+      if (skill.level >= (skill.upgrade[0] * 10 - 10)
+        && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level == this.maxLevel && skill.upgrade[skill.upgrade.length - 1] == 5))) {
+        skill.effects.forEach(effect => {
+          effect.formatHtml = skillService.formatEffect(this, skill, effect);
+        });
+
+        if (skill.damage) {
+          skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
+        }
+
+        if (skill.counter) {
+          skill.counterHtml = skillService.formatCounter(this, skill, skill.counter);
+        }
+
+        skillService.formatRange(this, skill);
+
+        if (skill.type == "skill") {
+          this.activeSkill = skill
+        } else {
+          this.passiveSkills.push(skill)
+        }
+      }
+    });
   }
 }

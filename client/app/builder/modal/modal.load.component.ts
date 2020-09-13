@@ -60,7 +60,7 @@ export class ModalLoadComponent implements OnInit {
         break
       case 'equipment' :
         dataId = item.dataId
-        //this.equipmentService.deleteEquipment(item)
+        this.equipmentService.deleteEquipment(item)
         this.savedItems = this.equipmentService.getSavedEquipments()[dataId]
         break
       case 'team' :

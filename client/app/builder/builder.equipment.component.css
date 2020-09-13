@@ -1,55 +1,247 @@
-.equipmentImg {
-  height: 200px;
-}
-
-.statsTable {
-  width: 1000px;
-}
-
-.leftBlock {
-  display: inline-block;
-  width: 250px;
-}
-
-.leftBlock .equipmentTable {
+.row {
+  width: 1300px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
-.rightBlock {
-  width: 70%;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 15px;
-  margin: auto;
-}
-
-.closeButton button {
-  padding: 10px;
-}
-
-.upperBlock {
-  display: block;
-}
-
-.upperBlock .equipmentDiv {
+.searchBlock {
+  background: #F5F6F8;
   margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 1250px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.fa-times {
+  color: #000;
+  cursor: pointer;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
   text-align: center;
 }
 
-.upperBlock .equipmentTable {
-  margin-left: 10px;
-  display: inline-block;
+/**********/
+/* Search */
+/**********/
+
+.rarityBlock {
+  width: 100%;
 }
 
-.upperBlock .upgradeTypeDiv {
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.equipmentBlock {
+  border-left: 2px solid #E8E6DF;
+  border-right: 2px solid #E8E6DF;
+  border-bottom: 2px solid #E8E6DF;
+  padding-left: 10px;
+}
+
+.equipmentLine {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.equipmentLine hr {
+  margin: 0;
+  width: 1276px;
+}
+
+.equipmentLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.equipmentLogo img {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.equipmentName {
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/***********/
+/* Builder */
+/***********/
+
+.saveBlock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.btn-buildLink {
+  margin-right: 10px;
+}
+
+.leftBlock {
+  width: 250px;
+  margin-right: 20px;
   display: inline-block;
   vertical-align: top;
-  text-align: left;
-  margin-left: 20px;
 }
 
-.lowerBlock {}
+.leftBlock table {
+  width: 100%
+}
 
-.lowerBlock .statsTable {
-  margin: auto
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.equipmentIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.awakeningDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.awakeningDiv div:first-child, .levelDiv div:first-child {
+  float: left;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .levelDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 95px;
+}
+
+.btn-select-grow {
+  width: 100px;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.statsTable {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.skillNameTd {
+  width: 200px;
+}
+
+.rangeTd {
+  width: 69px;
+}
+
+.skillCastTd {
+  width: 61px;
+}
+
+.skillHitTd {
+  width: 50px;
+}
+
+.skillCostTd {
+  width: 60px;
+}
+
+.equipmentSelector {
+  display: block;
+}
+
+.equipmentSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  height: 72px;
+  padding-top: 20px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
+}
+
+.equipmentButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.damageImg, .skilImg, .damageSkillImg {
+  height: 32px;
 }
