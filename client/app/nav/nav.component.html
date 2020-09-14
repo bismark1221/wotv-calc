@@ -68,11 +68,11 @@
   </div>
 
   <div *ngIf="!user">
-    <button (click)="openLoginModal()">LOGIN</button>
+    <button class="btn btn-main btn-login" (click)="openLoginModal()">LOGIN</button>
   </div>
 
   <div *ngIf="user">
-    <button (click)="logout()">LOGOUT</button>
+    <button class="btn btn-sub btn-logout" (click)="logout()">LOGOUT</button>
   </div>
 </nav>
 

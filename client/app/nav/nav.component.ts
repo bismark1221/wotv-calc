@@ -140,7 +140,7 @@ export class NavComponent {
   }
 
   openLoginModal() {
-    const modalRef = this.modalService.open(LoginComponent, { windowClass: 'builder-modal' });
+    const modalRef = this.modalService.open(LoginComponent, { windowClass: 'login-modal' });
 
     modalRef.result.then((user) => {}, (reason) => {});
   }

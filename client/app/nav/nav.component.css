@@ -197,3 +197,8 @@
   height: 100%;
   margin-left: 5px;
 }
+
+/* Login/Logout */
+.btn-login, .btn-logout {
+  margin-left: 10px;
+}
