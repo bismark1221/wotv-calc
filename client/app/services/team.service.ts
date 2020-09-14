@@ -76,12 +76,7 @@ export class TeamService {
 
     let data = {
       name: team.name,
-      guild: {
-        serpent: team.guild && team.guild.data ? team.guild.data.serpent : 0,
-        lion: team.guild && team.guild.data ? team.guild.data.lion : 0,
-        kirin: team.guild && team.guild.data ? team.guild.data.kirin : 0,
-        bull: team.guild && team.guild.data ? team.guild.data.bull : 0
-      },
+      guild: this.guildService.getSavableData(team.guild, false),
       units: [],
       user: user ? user.uid : null
     }

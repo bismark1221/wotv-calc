@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
+import { AngularFirestore } from '@angular/fire/firestore';
+
 import { Guild } from '../entities/guild';
 import { NavService } from './nav.service';
+import { AuthService } from './auth.service';
 
 @Injectable()
 export class GuildService {
@@ -61,7 +64,9 @@ export class GuildService {
 
   constructor(
     private localStorageService: LocalStorageService,
-    private navService: NavService
+    private navService: NavService,
+    private authService: AuthService,
+    private firestore: AngularFirestore
   ) {}
 
   getLocalStorage() {
@@ -71,6 +76,11 @@ export class GuildService {
   getGuild() {
     if (this.localStorageService.get(this.getLocalStorage())) {
       this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
+      Object.keys(this.statues).forEach(statue => {
+        if (!this.guild[statue]) {
+          this.guild[statue] = 0
+        }
+      })
     } else {
       this.guild = new Guild();
     }
@@ -96,8 +106,61 @@ export class GuildService {
     }
   }
 
-  saveGuild() {
-    this.localStorageService.set(this.getLocalStorage(), this.guild);
+  getSavableData(guild, onlyGuild = true) {
+    let data = {}
+
+    Object.keys(this.statues).forEach(statue => {
+      let value = guild[statue]
+
+      if (!value) {
+        value = 0
+      }
+
+      data[statue] = value
+    })
+
+    if (onlyGuild) {
+      let user = this.authService.getUser()
+      // @ts-ignore
+      data.user = user ? user.uid : null
+    }
+
+    return data
+  }
+
+  guildAlreadyExists(guild) {
+    let localStoredGuild = this.localStorageService.get(this.getLocalStorage())
+    // @ts-ignore
+    if (localStoredGuild && localStoredGuild.storeId) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  saveGuild(guild) {
+    let savableData = this.getSavableData(guild)
+
+    if (this.guildAlreadyExists(guild)) {
+      return this.firestore.collection(this.getLocalStorage()).doc(guild.storeId).set(savableData).then(data => {
+        // @ts-ignore
+        savableData.storeId = guild.storeId
+
+        this.localStorageService.set(this.getLocalStorage(), savableData);
+
+        return guild.storeId
+      })
+    } else {
+      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
+        // @ts-ignore
+        savableData.storeId = data.id
+
+        this.localStorageService.set(this.getLocalStorage(), savableData);
+        this.guild.storeId = data.id
+
+        return data.id
+      })
+    }
   }
 
   getStatues() {

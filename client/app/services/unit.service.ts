@@ -293,19 +293,14 @@ export class UnitService {
       esper: null,
       card: null,
       equipments: [null, null, null],
-      guild: {
-        serpent: unit.guild && unit.guild.data && unit.guild.data.serpent ? unit.guild.data.serpent : 0,
-        lion: unit.guild && unit.guild.data && unit.guild.data.lion ? unit.guild.data.lion : 0,
-        kirin: unit.guild && unit.guild.data && unit.guild.data.kirin ? unit.guild.data.kirin : 0,
-        bull: unit.guild && unit.guild.data && unit.guild.data.bull ? unit.guild.data.bull : 0
-      },
+      guild: this.guildService.getSavableData(unit.guild, false),
       limitLv: unit.limit ? unit.limit.level : 0,
       user: user ? user.uid : null,
       customName: unit.customName ? unit.customName : ''
     }
 
     if (unit.esper) {
-      let savedEsper = this.esperService.getSavableData(unit.esper)
+      let savedEsper = this.esperService.getSavableData(unit.esper, false)
       savedEsper.resonance = unit.esper.resonance
       data.esper = savedEsper
     } else {
@@ -320,7 +315,7 @@ export class UnitService {
 
     for (let i = 0; i <= 2; i++) {
       if (unit.equipments && unit.equipments[i]) {
-        data.equipments[i] = this.equipmentService.getSavableData(unit.equipments[i])
+        data.equipments[i] = this.equipmentService.getSavableData(unit.equipments[i], false)
       } else {
         data.equipments[i] = null
       }
