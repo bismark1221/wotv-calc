@@ -394,7 +394,7 @@
         },
         {
             "key": "UN_LW_E_STRN_01",
-            "value": "Sterne"
+            "value": "Sterne (Chevalier déchu)"
         },
         {
             "key": "UN_LW_E_DRND",
@@ -475,6 +475,10 @@
         {
             "key": "UN_LW_E_QILF",
             "value": "Kilphe"
+        },
+        {
+            "key": "UN_LW_E_RART",
+            "value": "Learte"
         },
         {
             "key": "UN_FF01_E_WRMC",
@@ -1309,11 +1313,35 @@
             "value": "Guimauve blanche"
         },
         {
+            "key": "UN_LW_E_00_BLM_RA",
+            "value": "Mage noir"
+        },
+        {
+            "key": "UN_LW_E_CACT_03",
+            "value": "Pampor"
+        },
+        {
+            "key": "UN_LW_E_CACT_RAID",
+            "value": "Pampinator"
+        },
+        {
+            "key": "UN_LW_E_IFRT_RAID",
+            "value": "Ifrit"
+        },
+        {
             "key": "UN_LW_E_THDG",
             "value": "Dragon à deux têtes"
         },
         {
             "key": "UN_LW_E_THDG_QE",
+            "value": "Dragon à deux têtes"
+        },
+        {
+            "key": "UN_LW_E_THDG_PT_NO",
+            "value": "Dragon à deux têtes"
+        },
+        {
+            "key": "UN_LW_E_THDG_PT_HA",
             "value": "Dragon à deux têtes"
         },
         {
@@ -1379,6 +1407,14 @@
         {
             "key": "UN_FF01_E_WRMC_SIREN",
             "value": "Sentinelle"
+        },
+        {
+            "key": "UN_LW_E_MDFY",
+            "value": "Ensorceleur"
+        },
+        {
+            "key": "UN_LW_E_MDFY_SIREN",
+            "value": "Ensorceleur"
         },
         {
             "key": "UN_LW_E_ENBT",
@@ -1893,6 +1929,18 @@
             "value": "Chocobo rouge"
         },
         {
+            "key": "UN_LW_S_MDFY",
+            "value": "Ensorceleur"
+        },
+        {
+            "key": "UN_LW_S_MDFY_AW1",
+            "value": "Ensorceleur"
+        },
+        {
+            "key": "UN_LW_S_MDFY_AW2",
+            "value": "Ensorceleur"
+        },
+        {
             "key": "UN_GM_TREASURE",
             "value": "Coffre au trésor"
         },
@@ -1955,6 +2003,14 @@
         {
             "key": "UN_GM_TARU_02",
             "value": "Baril de poudre (L)"
+        },
+        {
+            "key": "UN_GM_OPOT_01",
+            "value": "Jarre d'huile"
+        },
+        {
+            "key": "UN_GM_FIRE_01",
+            "value": "Torche"
         }
     ]
 }

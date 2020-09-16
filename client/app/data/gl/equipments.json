@@ -3109,8 +3109,8 @@
       "JB_LW_RDM_FIRE",
       "JB_LW_GLMS",
       "JB_LW_WAR",
-      "JB_FFT_ORND",
       "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
       "JB_FFT_GFGR",
       "JB_FF1_WROL",
       "JB_FFT_AGRA",
@@ -4333,16 +4333,16 @@
     "slug": "rune-blade",
     "stats": {
       "HP": {
-        "min": 3,
-        "max": 69
+        "min": 4,
+        "max": 71
       },
       "ATK": {
-        "min": 9,
-        "max": 189
+        "min": 10,
+        "max": 202
       },
       "MAG": {
         "min": 1,
-        "max": 21
+        "max": 13
       },
       "ACCURACY": {
         "min": 1,
@@ -4434,16 +4434,44 @@
       [
         {
           "names": {
-            "en": "Slash ATK +2",
-            "fr": "Att tranchante +2"
+            "en": "SK_LW_DF_SLASH_1",
+            "fr": "SK_LW_DF_SLASH_1"
           },
-          "dataId": "SK_LW_SLASH_1",
+          "dataId": "SK_LW_DF_SLASH_1",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_1",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_2",
+            "fr": "SK_LW_DF_SLASH_2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4455,23 +4483,23 @@
             5
           ],
           "grow": "ARTIFACT_50",
-          "slug": "slash-atk-2",
+          "slug": "sk_lw_df_slash_2",
           "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "Slash ATK +3",
-            "fr": "Att tranchante +3"
+            "en": "SK_LW_DF_SLASH_3",
+            "fr": "SK_LW_DF_SLASH_3"
           },
-          "dataId": "SK_LW_SLASH_2",
+          "dataId": "SK_LW_DF_SLASH_3",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4483,23 +4511,23 @@
             5
           ],
           "grow": "ARTIFACT_50",
-          "slug": "slash-atk-3",
+          "slug": "sk_lw_df_slash_3",
           "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "Slash ATK +5",
-            "fr": "Att tranchante +5"
+            "en": "SK_LW_DF_SLASH_4_N_SSR",
+            "fr": "SK_LW_DF_SLASH_4_N_SSR"
           },
-          "dataId": "SK_LW_SLASH_3",
+          "dataId": "SK_LW_DF_SLASH_4_N_SSR",
           "effects": [
             {
-              "type": "SLASH_ATK",
-              "minValue": 5,
-              "maxValue": 5,
-              "calcType": "fixe"
+              "type": "SLASH_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4511,23 +4539,23 @@
             5
           ],
           "grow": "ARTIFACT_50",
-          "slug": "slash-atk-5",
+          "slug": "sk_lw_df_slash_4_n_ssr",
           "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "Slash ATK +8",
-            "fr": "Att tranchante +8"
+            "en": "SK_LW_DF_SLASH_5_SSR",
+            "fr": "SK_LW_DF_SLASH_5_SSR"
           },
-          "dataId": "SK_LW_SLASH_4_SSR",
+          "dataId": "SK_LW_DF_SLASH_5_SSR",
           "effects": [
             {
-              "type": "SLASH_ATK",
+              "type": "SLASH_RES",
               "minValue": 8,
               "maxValue": 8,
-              "calcType": "fixe"
+              "calcType": "resistance"
             }
           ],
           "type": "support",
@@ -4539,35 +4567,7 @@
             5
           ],
           "grow": "ARTIFACT_50",
-          "slug": "slash-atk-8",
-          "maxLevel": 30
-        }
-      ],
-      [
-        {
-          "names": {
-            "en": "Slash ATK +15",
-            "fr": "Att tranchante +15"
-          },
-          "dataId": "SK_LW_SLASH_5_SSR",
-          "effects": [
-            {
-              "type": "SLASH_ATK",
-              "minValue": 15,
-              "maxValue": 15,
-              "calcType": "fixe"
-            }
-          ],
-          "type": "support",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "slug": "slash-atk-15",
+          "slug": "sk_lw_df_slash_5_ssr",
           "maxLevel": 30
         }
       ]
@@ -19462,8 +19462,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -19723,8 +19723,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -20040,8 +20040,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -20369,8 +20369,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -20494,8 +20494,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -20776,8 +20776,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -21090,8 +21090,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -21416,8 +21416,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -21746,8 +21746,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -21938,8 +21938,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -22521,8 +22521,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -23136,8 +23136,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -23763,8 +23763,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24264,8 +24264,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24421,8 +24421,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24528,8 +24528,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24635,8 +24635,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24742,8 +24742,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24849,8 +24849,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -24956,8 +24956,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -26711,8 +26711,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -26812,8 +26812,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -26913,8 +26913,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27014,8 +27014,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27150,8 +27150,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27281,8 +27281,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27385,8 +27385,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27489,8 +27489,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27593,8 +27593,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27670,8 +27670,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27747,8 +27747,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -27893,8 +27893,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28030,8 +28030,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28153,8 +28153,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28278,8 +28278,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28405,8 +28405,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28520,8 +28520,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28635,8 +28635,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28750,8 +28750,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28838,8 +28838,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -28970,8 +28970,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -29058,8 +29058,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -29137,7 +29137,7 @@
               "turn": 1
             }
           ],
-          "type": "support",
+          "type": "skill",
           "upgrade": [
             1,
             2,
@@ -29274,8 +29274,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -29474,8 +29474,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -29652,8 +29652,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -29769,8 +29769,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -30092,8 +30092,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -30276,8 +30276,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -30406,8 +30406,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -30921,8 +30921,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -31035,8 +31035,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_ORND",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_LW_MST_FIRE",
       "JB_FFT_DELT",
       "JB_FFT_MSTD",
@@ -31177,8 +31177,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -31479,8 +31479,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -31612,8 +31612,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -31740,8 +31740,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -32248,112 +32248,6 @@
       "unitId": "UN_FFT_P_DELT"
     }
   },
-  "AF_ACC_LW_IRDL_1": {
-    "names": {
-      "en": "Calculator Robe",
-      "fr": "Robe de calculateur"
-    },
-    "slug": "calculator-robe",
-    "stats": {
-      "HP": {
-        "min": 322,
-        "max": 322
-      },
-      "SPR": {
-        "min": 10,
-        "max": 10
-      },
-      "CRITIC_AVOID": {
-        "min": 12,
-        "max": 12
-      }
-    },
-    "type": "CLOTH",
-    "dataId": "AF_ACC_LW_IRDL_1",
-    "grows": {
-      "ARTIFACT_TRUST": {
-        "dataId": "ARTIFACT_TRUST",
-        "names": {
-          "en": "ARTIFACT_TRUST",
-          "fr": "ARTIFACT_TRUST"
-        },
-        "curve": {
-          "MAX_LV": 1
-        },
-        "slug": "artifact_trust"
-      }
-    },
-    "skills": [
-      [
-        {
-          "names": {
-            "en": "Swift Transposition",
-            "fr": "Rapide transposition"
-          },
-          "dataId": "SK_ACC_LW_IRDL_1_1",
-          "effects": [
-            {
-              "type": "SWITCH_POS"
-            },
-            {
-              "type": "QUICKEN_ATK",
-              "calcType": "percent",
-              "rate": 200,
-              "turn": 1
-            }
-          ],
-          "type": "support",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "grow": "SKILL_DEFAULT",
-          "slug": "swift-transposition",
-          "cost": {
-            "type": "TP",
-            "value": 24
-          },
-          "count": 1,
-          "maxLevel": 20,
-          "range": {
-            "h": 5,
-            "l": 2,
-            "s": 1
-          },
-          "based": "magic",
-          "time": {
-            "minValue": 120,
-            "maxValue": 200
-          }
-        }
-      ]
-    ],
-    "rarity": "UR",
-    "image": "lapswpn_acc_017",
-    "equippableJobs": [
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_LW_FINA",
-      "JB_LW_MST_FIRE",
-      "JB_LW_CAL_FIRE"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {}
-    ],
-    "acquisition": {
-      "type": "tmr",
-      "unitId": "UN_LW_P_IRDL"
-    }
-  },
   "AF_GUN_FFT_MSTD_2": {
     "names": {
       "en": "Besrudio",
@@ -32440,6 +32334,172 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_FFT_P_MSTD"
+    }
+  },
+  "AF_ACC_LW_IRDL_1": {
+    "names": {
+      "en": "Calculator Robe",
+      "fr": "Robe de calculateur"
+    },
+    "slug": "calculator-robe",
+    "stats": {
+      "HP": {
+        "min": 322,
+        "max": 322
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_ACC_LW_IRDL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        },
+        "slug": "artifact_trust"
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Swift Transposition",
+            "fr": "Rapide transposition"
+          },
+          "dataId": "SK_ACC_LW_IRDL_1_1",
+          "effects": [
+            {
+              "type": "SWITCH_POS"
+            },
+            {
+              "type": "QUICKEN_ATK",
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 1
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "slug": "swift-transposition",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "range": {
+            "h": 5,
+            "l": 2,
+            "s": 1
+          },
+          "based": "magic",
+          "time": {
+            "minValue": 120,
+            "maxValue": 200
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_017",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_IRDL"
+    }
+  },
+  "AF_MAC_LW_IRDL_2": {
+    "names": {
+      "en": "For Ildyra",
+      "fr": "Pour Ildyra"
+    },
+    "slug": "for-ildyra",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_MAC_LW_IRDL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        },
+        "slug": "artifact_50"
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_mac_007",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -34195,66 +34255,6 @@
       "type": "Unknown"
     }
   },
-  "AF_MAC_LW_IRDL_2": {
-    "names": {
-      "en": "For Ildyra",
-      "fr": "Pour Ildyra"
-    },
-    "slug": "for-ildyra",
-    "stats": {
-      "HP": {
-        "min": 4,
-        "max": 69
-      },
-      "ATK": {
-        "min": 10,
-        "max": 189
-      },
-      "MAG": {
-        "min": 2,
-        "max": 21
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 17
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 15
-      }
-    },
-    "type": "GREATSWORD",
-    "dataId": "AF_MAC_LW_IRDL_2",
-    "grows": {
-      "ARTIFACT_50": {
-        "dataId": "ARTIFACT_50",
-        "names": {
-          "en": "ARTIFACT_50",
-          "fr": "ARTIFACT_50"
-        },
-        "curve": {
-          "MAX_LV": 30
-        },
-        "slug": "artifact_50"
-      }
-    },
-    "skills": [
-      []
-    ],
-    "rarity": "MR",
-    "image": "lapswpn_mac_007",
-    "equippableJobs": [
-      "JB_LW_SWN_FIRE",
-      "JB_LW_RAIN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {}
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    }
-  },
   "AF_LOT_LW_RNG_005": {
     "names": {
       "en": "Alexandrite Ring",
@@ -34821,8 +34821,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -35716,8 +35716,8 @@
       "JB_FFT_RAMZ",
       "JB_FFT_GFGR",
       "JB_LW_WGN_FIRE",
-      "JB_LW_RAIN",
       "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
       "JB_FF1_WROL",
       "JB_LW_MST_FIRE",
       "JB_FFT_AGRA",
@@ -35768,6 +35768,328 @@
         "IT_AF_MAT_BOMB": 315,
         "IT_AF_MAT_WATER_01": 323,
         "IT_AF_AW_ACCE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_HLM_005": {
+    "names": {
+      "en": "Platinum Helm",
+      "fr": "Casque de platine"
+    },
+    "slug": "platinum-helm",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 698
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 1,
+        "max": 18
+      },
+      "AGI": {
+        "min": -5,
+        "max": 0
+      },
+      "EVADE": {
+        "min": -8,
+        "max": 0
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_LW_HLM_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "vital"
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "shield"
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "Barrier",
+          "fr": "Barrière"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        },
+        "slug": "barrier"
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_1",
+            "fr": "SK_LW_DF_SLASH_1"
+          },
+          "dataId": "SK_LW_DF_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_1",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_2",
+            "fr": "SK_LW_DF_SLASH_2"
+          },
+          "dataId": "SK_LW_DF_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_2",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_3",
+            "fr": "SK_LW_DF_SLASH_3"
+          },
+          "dataId": "SK_LW_DF_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_3",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_4_UR",
+            "fr": "SK_LW_DF_SLASH_4_UR"
+          },
+          "dataId": "SK_LW_DF_SLASH_4_UR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_4_ur",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SLASH_5_UR",
+            "fr": "SK_LW_DF_SLASH_5_UR"
+          },
+          "dataId": "SK_LW_DF_SLASH_5_UR",
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "slug": "sk_lw_df_slash_5_ur",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_hlm_005",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HLM_005": 1,
+        "IT_AF_MAT_SAP_03": 30,
+        "IT_AF_MAT_SAP_04": 235,
+        "IT_AF_MAT_OGRE": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_HLM_005": 3,
+        "IT_AF_MAT_SAP_03": 90,
+        "IT_AF_MAT_SAP_04": 335,
+        "IT_AF_MAT_OGRE": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_HLM_005": 7,
+        "IT_AF_MAT_SAP_03": 210,
+        "IT_AF_MAT_SAP_04": 535,
+        "IT_AF_MAT_OGRE": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_HLM_005": 15,
+        "IT_AF_MAT_SAP_03": 450,
+        "IT_AF_MAT_SAP_04": 985,
+        "IT_AF_MAT_OGRE": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_HLM_005": 31,
+        "IT_AF_MAT_SAP_03": 930,
+        "IT_AF_MAT_SAP_04": 1955,
+        "IT_AF_MAT_OGRE": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_HLM_005": 63,
+        "IT_AF_MAT_SAP_03": 1890,
+        "IT_AF_MAT_SAP_04": 3995,
+        "IT_AF_MAT_OGRE": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ARMOR": 1725
       }
     ],
     "acquisition": {

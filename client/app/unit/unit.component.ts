@@ -48,7 +48,26 @@ export class UnitComponent implements OnInit {
       } else {
         this.formatUnit();
       }
-    });
+    })
+
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      switch (fragment) {
+        case "character":
+          this.activeTab = 1
+          break;
+        case "stats":
+          this.activeTab = 2
+          break;
+        case "skills":
+          this.activeTab = 3
+          break;
+        case "tree":
+          this.activeTab = 4
+          break;
+        default:
+          break;
+      }
+    })
   }
 
   private formatUnit() {

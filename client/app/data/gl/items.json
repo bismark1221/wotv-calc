@@ -2319,6 +2319,46 @@
     },
     "slug": "arithmeticians-memory-red"
   },
+  "IT_JB_MM_LW_STRN": {
+    "dataId": "IT_JB_MM_LW_STRN",
+    "names": {
+      "en": "Knight of Ruin's Memory (Green)",
+      "fr": "Souvenir de Chevalier déchu (vert)"
+    },
+    "slug": "knight-of-ruins-memory-green"
+  },
+  "IT_JB_MM_LW_STRN_2": {
+    "dataId": "IT_JB_MM_LW_STRN_2",
+    "names": {
+      "en": "Knight of Ruin's Memory (Blue)",
+      "fr": "Chevalier déchu's Memory ((Bleu))"
+    },
+    "slug": "knight-of-ruins-memory-blue"
+  },
+  "IT_JB_MM_LW_STRN_3": {
+    "dataId": "IT_JB_MM_LW_STRN_3",
+    "names": {
+      "en": "Knight of Ruin's Memory (Purple)",
+      "fr": "Souvenir de Chevalier déchu (violet)"
+    },
+    "slug": "knight-of-ruins-memory-purple"
+  },
+  "IT_JB_MM_LW_STRN_4": {
+    "dataId": "IT_JB_MM_LW_STRN_4",
+    "names": {
+      "en": "Knight of Ruin's Memory (Yellow)",
+      "fr": "Souvenir de Chevalier déchu (jaune)"
+    },
+    "slug": "knight-of-ruins-memory-yellow"
+  },
+  "IT_JB_MM_LW_STRN_5": {
+    "dataId": "IT_JB_MM_LW_STRN_5",
+    "names": {
+      "en": "Knight of Ruin's Memory (Red)",
+      "fr": "Souvenir de Chevalier déchu (rouge)"
+    },
+    "slug": "knight-of-ruins-memory-red"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -4335,6 +4375,22 @@
     },
     "slug": "diaboloss-awakening-stone-3"
   },
+  "IT_SB_AW_MDFY_R2": {
+    "dataId": "IT_SB_AW_MDFY_R2",
+    "names": {
+      "en": "Mindflayer's Awakening Stone (2★)",
+      "fr": "Pierre d’éveil d'Ensorceleur (2★)"
+    },
+    "slug": "mindflayers-awakening-stone-2"
+  },
+  "IT_SB_AW_MDFY_R3": {
+    "dataId": "IT_SB_AW_MDFY_R3",
+    "names": {
+      "en": "Mindflayer's Awakening Stone (3★)",
+      "fr": "Pierre d’éveil d'Ensorceleur (3★)"
+    },
+    "slug": "mindflayers-awakening-stone-3"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -5927,7 +5983,7 @@
     "dataId": "IT_EC_SUMMON_09_A",
     "names": {
       "en": "September Summon Medal A",
-      "fr": "Médailles d'invocation A (Septembre)"
+      "fr": "Médaille d'invocation A (Septembre)"
     },
     "slug": "september-summon-medal-a"
   },
@@ -6267,6 +6323,14 @@
     },
     "slug": "select-element-magicite-m-x50-summon-ticket"
   },
+  "IT_US_SE_SB_EXP_05": {
+    "dataId": "IT_US_SE_SB_EXP_05",
+    "names": {
+      "en": "Select Element Magicite (XL) x30 Summon Ticket",
+      "fr": "Ticket sélectionneur de 30 magilithes élémentaires (XL)"
+    },
+    "slug": "select-element-magicite-xl-x30-summon-ticket"
+  },
   "IT_US_G_U_UR_01": {
     "dataId": "IT_US_G_U_UR_01",
     "names": {
@@ -6419,6 +6483,14 @@
     },
     "slug": "six-month-anniversary-countdown-part-iii-mr-guaranteed-unit-summon-ticket"
   },
+  "IT_US_G_U_SSR_UR_06": {
+    "dataId": "IT_US_G_U_SSR_UR_06",
+    "names": {
+      "en": "[Six-Month Anniversary Countdown Part IV] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "Ticket d'inv. d'unité MR+ garantie du Compte à rebours de l'Anniv. des 6 mois [Partie IV]"
+    },
+    "slug": "six-month-anniversary-countdown-part-iv-mr-guaranteed-unit-summon-ticket"
+  },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
     "names": {
@@ -6538,6 +6610,14 @@
       "fr": "Fragment de l'atout-vision : Odin, le Saccageur"
     },
     "slug": "realm-reaver-odin-vision-card-shard"
+  },
+  "IT_VPI_FFCC_MV1": {
+    "dataId": "IT_VPI_FFCC_MV1",
+    "names": {
+      "en": "\"Keepers of the Crystal\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Les gardiens des cristaux"
+    },
+    "slug": "keepers-of-the-crystal-vision-card-shard"
   },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
@@ -6979,6 +7059,30 @@
     },
     "slug": "blades-of-grass-vision-card-shard"
   },
+  "IT_VPI_FFCC_MV2": {
+    "dataId": "IT_VPI_FFCC_MV2",
+    "names": {
+      "en": "\"In Search of Myrrh\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : En quête de myrrhe"
+    },
+    "slug": "in-search-of-myrrh-vision-card-shard"
+  },
+  "IT_VPI_LW_ROBUST": {
+    "dataId": "IT_VPI_LW_ROBUST",
+    "names": {
+      "en": "\"Hourne's First Division, «Solidus»\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : « Solidus », première division de Hourne"
+    },
+    "slug": "hournes-first-division-solidus-vision-card-shard"
+  },
+  "IT_VPI_LW_MDFY": {
+    "dataId": "IT_VPI_LW_MDFY",
+    "names": {
+      "en": "\"Bursting Spirit, Mindflayer\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Ensorceleur, l'Esprit incoercible"
+    },
+    "slug": "bursting-spirit-mindflayer-vision-card-shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7171,6 +7275,14 @@
     },
     "slug": "white-marshmallow-raid-medal"
   },
+  "IT_EC_RAID_05": {
+    "dataId": "IT_EC_RAID_05",
+    "names": {
+      "en": "September Raid Medal",
+      "fr": "Médaille de raid du mois de septembre"
+    },
+    "slug": "september-raid-medal"
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -7202,6 +7314,14 @@
       "fr": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
     },
     "slug": "select-element-magicite-l-x100-summon-ticket"
+  },
+  "IT_US_GL_SE_SB_EXP_5": {
+    "dataId": "IT_US_GL_SE_SB_EXP_5",
+    "names": {
+      "en": "Select Element Magicite (L) x20 Summon Ticket",
+      "fr": "Ticket sélectionneur de 20 magilithes élémentaires (L)"
+    },
+    "slug": "select-element-magicite-l-x20-summon-ticket"
   },
   "IT_US_GL_SE_VPI_01": {
     "dataId": "IT_US_GL_SE_VPI_01",
@@ -7237,6 +7357,14 @@
   },
   "IT_US_GL_SE_VPI_05": {
     "dataId": "IT_US_GL_SE_VPI_05",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x50-summon-ticket"
+  },
+  "IT_US_GL_SE_VPI_06": {
+    "dataId": "IT_US_GL_SE_VPI_06",
     "names": {
       "en": "Select UR Vision Card Shard x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
@@ -7291,6 +7419,14 @@
     },
     "slug": "select-ur-unit-shard-x40-summon-ticket"
   },
+  "IT_US_N_GACHA_10": {
+    "dataId": "IT_US_N_GACHA_10",
+    "names": {
+      "en": "Normal 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 normale"
+    },
+    "slug": "normal-10x-summon-ticket"
+  },
   "IT_US_G_N_TW_10": {
     "dataId": "IT_US_G_N_TW_10",
     "names": {
@@ -7299,12 +7435,54 @@
     },
     "slug": "porcelain-tower-normal-10x-summon-ticket"
   },
-  "IT_US_N_GACHA_10": {
-    "dataId": "IT_US_N_GACHA_10",
+  "IT_PT_SKIP_001": {
+    "dataId": "IT_PT_SKIP_001",
     "names": {
-      "en": "Normal 10x Summon Ticket",
-      "fr": "Ticket d'invocation x10 normale"
+      "en": "Trials of Reckoning Quest Skip Ticket",
+      "fr": "Ticket évit'quête des Épreuves du Jugement"
     },
-    "slug": "normal-10x-summon-ticket"
+    "slug": "trials-of-reckoning-quest-skip-ticket"
+  },
+  "IT_PT_BSSKIP_001": {
+    "dataId": "IT_PT_BSSKIP_001",
+    "names": {
+      "en": "Trials of Reckoning Boss Skip Ticket",
+      "fr": "Ticket évit'boss des Épreuves du Jugement"
+    },
+    "slug": "trials-of-reckoning-boss-skip-ticket"
+  },
+  "IT_PT_BOSS_001": {
+    "dataId": "IT_PT_BOSS_001",
+    "names": {
+      "en": "Boss Battle Ticket",
+      "fr": "Ticket de combat de boss"
+    },
+    "slug": "boss-battle-ticket"
+  },
+  "IT_EC_POINT_001": {
+    "dataId": "IT_EC_POINT_001",
+    "names": {
+      "en": "Trials of Reckoning Medal",
+      "fr": "Médaille des Épreuves du Jugement"
+    },
+    "slug": "trials-of-reckoning-medal"
+  },
+  "IT_AF_LW_HLM_005": {
+    "dataId": "IT_AF_LW_HLM_005",
+    "names": {
+      "en": "Platinum Helm Crafting Recipe",
+      "fr": "Recette d'artisanat : Casque de platine"
+    },
+    "recipe": true,
+    "slug": "platinum-helm-crafting-recipe"
+  },
+  "IT_AF_LW_ACC_001": {
+    "dataId": "IT_AF_LW_ACC_001",
+    "names": {
+      "en": "Ribbon Crafting Recipe",
+      "fr": "Recettes d'artisanat : Ruban"
+    },
+    "recipe": true,
+    "slug": "ribbon-crafting-recipe"
   }
 }

@@ -677,6 +677,9 @@ export class SkillService {
       case "SPR_DEBUFF_RES" :
         html = this.getIncrease(effect) + " SPR Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "AGI_DEBUFF_RES" :
+        html = this.getIncrease(effect) + " AGI Debuff Resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "EVOCATION_GAUGE_BOOST" :
         html = this.getIncrease(effect) + " Evocation Gauge Boost" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -1050,7 +1053,7 @@ export class SkillService {
           case "HEIGHT" :
             switch (math.formula) {
               case "CURVE" :
-                html += " for each height difference between unit and target (max: " + this.getPositiveValue(math.value, true) + "%)"
+                html += " for each height level of the target (max: " + this.getPositiveValue(math.value, true) + "%)"
                 break
               case "COUNT" :
                 html += " if target height is " + math.condition

@@ -1090,5 +1090,779 @@
       }
     ],
     "slug": "death-machine"
+  },
+  "RAID_GL_04": {
+    "dataId": "RAID_GL_04",
+    "names": {
+      "en": "Ifrit",
+      "fr": "Ifrit"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_IFRT_RAID",
+        "names": {
+          "en": "Ifrit",
+          "fr": "Ifrit"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 130,
+            "max": 630
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 150,
+            "max": 650
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 99
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 2,
+            "max": 2
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "netherBeast",
+        "element": "fire",
+        "image": "lapsifrt",
+        "skills": {
+          "SK_IFRT_M_01": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Fire",
+              "fr": "Feu"
+            },
+            "slug": "fire",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 20,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_02": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_02",
+            "rate": 50,
+            "names": {
+              "en": "Firaga",
+              "fr": "Feu X"
+            },
+            "slug": "firaga",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_03": {
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 1
+              }
+            ],
+            "dataId": "SK_IFRT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Boil",
+              "fr": "Incandescence"
+            },
+            "slug": "boil",
+            "cost": {
+              "type": "TP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_IFRT_M_04": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_04",
+            "rate": 0,
+            "names": {
+              "en": "Hellfire",
+              "fr": "Flammes de l'enfer"
+            },
+            "slug": "hellfire",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 200,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "slug": "accuracy-1-999-up",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_ICE_1_80_U": {
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance"
+              }
+            ],
+            "dataId": "SK_BTL_RES_ICE_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "Ice Res 1-80 Up",
+              "fr": "Rés glace ↑ 1 - 80"
+            },
+            "slug": "ice-res-1-80-up",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "slug": "null-max-hp-down",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_MOVE_1-20_U": {
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_MOVE_1-20_U",
+            "rate": 100,
+            "names": {
+              "en": "Move 1-20 Up",
+              "fr": "Déplacement ↑ 1 - 20"
+            },
+            "slug": "move-1-20-up",
+            "maxLevel": 100,
+            "minLevel": 31
+          }
+        },
+        "slug": "ifrit",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_IFRT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "slug": "normal-attack",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_CACT_03",
+        "names": {
+          "en": "Gold Cactuar",
+          "fr": "Pampor"
+        },
+        "stats": {
+          "HP": {
+            "min": 5000,
+            "max": 100000
+          },
+          "TP": {
+            "min": 40,
+            "max": 73
+          },
+          "AP": {
+            "min": 48,
+            "max": 75
+          },
+          "ATK": {
+            "min": 450,
+            "max": 467
+          },
+          "DEF": {
+            "min": 80,
+            "max": 80
+          },
+          "SPR": {
+            "min": 80,
+            "max": 80
+          },
+          "MAG": {
+            "min": 23,
+            "max": 59
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MISSILE_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "MAGIC_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {},
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "plant",
+        "element": "earth",
+        "image": "lapscact_02",
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "1,000 Needles",
+              "fr": "1 000 épines"
+            },
+            "slug": "1000-needles",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 5,
+            "names": {
+              "en": "10,000 Needles",
+              "fr": "10 000 épines"
+            },
+            "slug": "10000-needles",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 60,
+                "turn": 3
+              }
+            ],
+            "dataId": "SK_CACT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Paralyzing Needle",
+              "fr": "Aiguille paralysante"
+            },
+            "slug": "paralyzing-needle",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "slug": "null-max-hp-down",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "slug": "nullify-ct-changes",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_N_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_N_R",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_N_R",
+              "fr": "SK_LW_HIT_5_N_R"
+            },
+            "slug": "sk_lw_hit_5_n_r",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_SSR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_SSR",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_SSR",
+              "fr": "SK_LW_HIT_5_SSR"
+            },
+            "slug": "sk_lw_hit_5_ssr",
+            "maxLevel": 6,
+            "minLevel": 4
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "slug": "accuracy-1-999-up",
+            "maxLevel": 10,
+            "minLevel": 7
+          }
+        },
+        "slug": "gold-cactuar",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_CACT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "slug": "normal-attack",
+          "maxLevel": 20,
+          "range": {
+            "h": 0,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": "ifrit"
   }
 }
