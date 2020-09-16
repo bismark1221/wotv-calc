@@ -1,6 +1,6 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
   <li [ngbNavItem]="1">
-    <a ngbNavLink>CHARACTER</a>
+    <a ngbNavLink routerLink="." fragment="character">CHARACTER</a>
     <ng-template ngbNavContent #character>
       <div class="leftBlock" *ngIf="unit">
         <table class="unitTable">
@@ -159,7 +159,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="2">
-    <a ngbNavLink>STATS</a>
+    <a ngbNavLink routerLink="." fragment="stats">STATS</a>
     <ng-template ngbNavContent #stats>
       <div class="leftBlock" *ngIf="!specialBismark && unit">
         <table class="unitTable">
@@ -451,7 +451,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="3">
-    <a ngbNavLink>SKILLS</a>
+    <a ngbNavLink routerLink="." fragment="skills">SKILLS</a>
     <ng-template ngbNavContent #skills>
       <div *ngIf="unit">
         <table class="skillsTable" *ngFor="let i of ['support', 'counter']">
@@ -675,7 +675,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="4">
-    <a ngbNavLink>SKILL TREE</a>
+    <a ngbNavLink routerLink="." fragment="tree">SKILL TREE</a>
     <ng-template ngbNavContent #tree>
       <div *ngIf="unit && grid">
         <div class="unitGridContainer" style="text-align: center;">

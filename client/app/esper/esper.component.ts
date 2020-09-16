@@ -43,6 +43,19 @@ export class EsperComponent implements OnInit {
         this.formatEsper();
       }
     });
+
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      switch (fragment) {
+        case "esper":
+          this.activeTab = 1
+          break;
+        case "tree":
+          this.activeTab = 2
+          break;
+        default:
+          break;
+      }
+    })
   }
 
   private formatEsper() {

@@ -46,6 +46,19 @@ export class EquipmentComponent implements OnInit {
         this.formatEquipment();
       }
     });
+
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      switch (fragment) {
+        case "equipment":
+          this.activeTab = 1
+          break;
+        case "craft":
+          this.activeTab = 2
+          break;
+        default:
+          break;
+      }
+    })
   }
 
   private sortSkills(skills) {

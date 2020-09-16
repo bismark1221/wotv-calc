@@ -43,6 +43,19 @@ export class RaidComponent implements OnInit {
         this.formatRaid();
       }
     });
+
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      switch (fragment) {
+        case "boss":
+          this.activeTab = 1
+          break;
+        case "skills":
+          this.activeTab = 2
+          break;
+        default:
+          break;
+      }
+    })
   }
 
   private formatRaid() {

@@ -1,6 +1,6 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
   <li [ngbNavItem]="1">
-    <a ngbNavLink>ESPER</a>
+    <a ngbNavLink routerLink="." fragment="esper">ESPER</a>
     <ng-template ngbNavContent #esperView>
       <div class="leftBlock" *ngIf="esper">
         <table class="esperTable">
@@ -139,7 +139,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="2">
-    <a ngbNavLink>SKILL TREE</a>
+    <a ngbNavLink routerLink="." fragment="tree">SKILL TREE</a>
     <ng-template ngbNavContent #tree>
       <div class="row" *ngIf="esper && grid">
         <div class="esperGridContainer" style="text-align: center;">

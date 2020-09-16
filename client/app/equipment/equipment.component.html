@@ -1,6 +1,6 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill" [(activeId)]="activeTab">
   <li [ngbNavItem]="1">
-    <a ngbNavLink>EQUIPMENT</a>
+    <a ngbNavLink routerLink="." fragment="equipment">EQUIPMENT</a>
     <ng-template ngbNavContent #equipmentView>
       <div class="leftBlock" *ngIf="equipment">
         <table class="equipmentTable">
@@ -160,7 +160,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="2">
-    <a ngbNavLink>CRAFT</a>
+    <a ngbNavLink routerLink="." fragment="craft">CRAFT</a>
     <ng-template ngbNavContent #craft>
       <div class="leftBlock" *ngIf="equipment">
         <table class="equipmentTable">
