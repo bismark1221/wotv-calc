@@ -106,7 +106,7 @@
           <img class="esperImg" src="assets/units/{{ esper.image }}_s.png" />
         </div>
         <div class="cardTitle">
-          <span class="esperName">{{ esper.name }} - {{ esper.customName }}</span>
+          <span class="esperName">{{ esper.customName ? esper.name + ' - ' + esper.customName : esper.name }}</span>
         </div>
       </div>
 

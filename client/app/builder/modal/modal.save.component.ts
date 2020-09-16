@@ -100,7 +100,7 @@ export class ModalSaveComponent implements OnInit {
 
     if (savePromise) {
       savePromise.then(result => {
-        this.modal.dismiss()
+        this.modal.close()
       })
     } else {
       this.modal.dismiss()

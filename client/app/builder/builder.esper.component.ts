@@ -203,9 +203,13 @@ export class BuilderEsperComponent implements OnInit {
     modalRef.componentInstance.type = 'esper'
     modalRef.componentInstance.savedItems = this.savedEspers[esperId]
 
-    modalRef.result.then((esper) => {
-      if (esper) {
-        this.selectEsper(esper.dataId, esper)
+    modalRef.result.then(result => {
+      if (result.type == 'load' && result.item) {
+        this.selectEsper(result.item.dataId, result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedEspers[esperId] = []
       }
     }, (reason) => {
     });
@@ -216,6 +220,11 @@ export class BuilderEsperComponent implements OnInit {
 
     modalRef.componentInstance.type = 'esper'
     modalRef.componentInstance.item = this.esper
+
+    modalRef.result.then(result => {
+      this.savedEspers = this.esperService.getSavedEspers()
+    }, (reason) => {
+    });
   }
 
   openLinkModal() {

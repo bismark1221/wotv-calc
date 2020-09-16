@@ -101,7 +101,7 @@
           <img class="cardImg" src="assets/cards/{{ card.image }}_m.png" />
         </div>
         <div class="cardTitle">
-          <span class="cardName">{{ card.name }}</span>
+          <span class="cardName">{{ card.customName ? card.name + ' - ' + card.customName : card.name }}</span>
         </div>
       </div>
 

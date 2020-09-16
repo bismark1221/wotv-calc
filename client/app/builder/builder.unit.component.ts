@@ -410,9 +410,13 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.type = 'unit'
     modalRef.componentInstance.savedItems = this.savedUnits[unitId]
 
-    modalRef.result.then((unit) => {
-      if (unit) {
-        this.selectUnit(unit.dataId, unit)
+    modalRef.result.then(result => {
+      if (result.type == 'load' && result.item) {
+        this.selectUnit(result.item.dataId, result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedUnits[unitId] = []
       }
     }, (reason) => {
     });
@@ -423,6 +427,11 @@ export class BuilderUnitComponent implements OnInit {
 
     modalRef.componentInstance.type = 'unit'
     modalRef.componentInstance.item = this.unit
+
+    modalRef.result.then(result => {
+      this.savedUnits = this.unitService.getSavedUnits()
+    }, (reason) => {
+    });
   }
 
   openLinkModal() {

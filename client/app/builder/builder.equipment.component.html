@@ -51,12 +51,14 @@
             </div>
           </td>
         </tr>
+      </tbody>
+      <tbody *ngIf="equipment.skills.length > 1 || equipment.growIds.length > 1">
         <tr>
           <th class="sub">Level</th>
         </tr>
         <tr>
           <td>
-            <div class="awakeningDiv">
+            <div class="awakeningDiv" *ngIf="equipment.skills.length > 1">
               <div>
                 Upgrade
               </div>
@@ -68,7 +70,7 @@
               </div>
             </div>
 
-            <div class="levelDiv">
+            <div class="levelDiv" *ngIf="equipment.growIds.length > 1">
               <div>
                 Type
               </div>

@@ -36,7 +36,7 @@ export class ModalLoadComponent implements OnInit {
   }
 
   load(item) {
-    this.modal.close(item)
+    this.modal.close({type: 'load', item: item})
   }
 
   delete(item) {
@@ -73,7 +73,7 @@ export class ModalLoadComponent implements OnInit {
     }
 
     if (this.savedItems.length == 0) {
-      this.modal.dismiss()
+      this.modal.close({type: 'fullDelete'})
     }
   }
 }

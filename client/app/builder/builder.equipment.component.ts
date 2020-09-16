@@ -151,9 +151,13 @@ export class BuilderEquipmentComponent implements OnInit {
     modalRef.componentInstance.type = 'equipment'
     modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId]
 
-    modalRef.result.then((equipment) => {
-      if (equipment) {
-        this.selectEquipment(equipment.dataId, equipment)
+    modalRef.result.then(result => {
+      if (result.type == 'load' && result.item) {
+        this.selectEquipment(result.item.dataId, result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedEquipments[equipmentId] = []
       }
     }, (reason) => {
     });
@@ -164,6 +168,11 @@ export class BuilderEquipmentComponent implements OnInit {
 
     modalRef.componentInstance.type = 'equipment'
     modalRef.componentInstance.item = this.equipment
+
+    modalRef.result.then(result => {
+      this.savedEquipments = this.equipmentService.getSavedEquipments()
+    }, (reason) => {
+    });
   }
 
   openLinkModal() {

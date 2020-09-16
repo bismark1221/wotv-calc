@@ -154,9 +154,13 @@ export class BuilderCardComponent implements OnInit {
     modalRef.componentInstance.type = 'card'
     modalRef.componentInstance.savedItems = this.savedCards[cardId]
 
-    modalRef.result.then((card) => {
-      if (card) {
-        this.selectCard(card.dataId, card)
+    modalRef.result.then(result => {
+      if (result.type == 'load' && result.item) {
+        this.selectCard(result.item.dataId, result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedCards[cardId] = []
       }
     }, (reason) => {
     });
@@ -167,6 +171,11 @@ export class BuilderCardComponent implements OnInit {
 
     modalRef.componentInstance.type = 'card'
     modalRef.componentInstance.item = this.card
+
+    modalRef.result.then(result => {
+      this.savedCards = this.cardService.getSavedCards()
+    }, (reason) => {
+    });
   }
 
   openLinkModal() {

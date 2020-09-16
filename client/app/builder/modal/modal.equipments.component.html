@@ -104,7 +104,7 @@
           <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
         </div>
         <div class="cardTitle">
-          <span class="equipmentName">{{ equipment.name }} - {{ equipment.customName }}</span>
+          <span class="equipmentName">{{ equipment.customName ? equipment.name + ' - ' + equipment.customName : equipment.name }}</span>
         </div>
       </div>
 
