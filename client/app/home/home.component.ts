@@ -23,6 +23,17 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "16/09",
+        items: [
+          {type: "card", dataId: "VC_FFCC_MV1"},
+          {type: "card", dataId: "VC_LW_ROBUST"},
+          {type: "card", dataId: "VC_FFCC_MV2"},
+          {type: "card", dataId: "VC_LW_MDFY"},
+          {type: "equipment", dataId: "AF_LW_HLM_005"},
+          {type: "equipment", dataId: "AF_LW_BSW_003"}
+        ]
+      },
+      {
         date: "09/09",
         items: [
 
@@ -39,13 +50,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_FFT_MV3"},
           {type: "card", dataId: "VC_FFT_MV2"},
           {type: "esper", dataId: "UN_FFT_S_CHCB_01"}
-        ]
-      },
-      {
-        date: "19/08",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_ORDR"},
-          {type: "unit", dataId: "UN_LW_P_LVES"}
         ]
       }
     ],

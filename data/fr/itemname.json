@@ -1161,6 +1161,26 @@
             "value": "Souvenir d'Arithméticien (Rouge)"
         },
         {
+            "key": "IT_JB_MM_LW_STRN",
+            "value": "Souvenir de Chevalier déchu (vert)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_2",
+            "value": "Chevalier déchu's Memory ((Bleu))"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_3",
+            "value": "Souvenir de Chevalier déchu (violet)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_4",
+            "value": "Souvenir de Chevalier déchu (jaune)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_5",
+            "value": "Souvenir de Chevalier déchu (rouge)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de feu (Vert)"
         },
@@ -2169,6 +2189,14 @@
             "value": "Pierre d’éveil de Diabolos (3★)"
         },
         {
+            "key": "IT_SB_AW_MDFY_R2",
+            "value": "Pierre d’éveil d'Ensorceleur (2★)"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R3",
+            "value": "Pierre d’éveil d'Ensorceleur (3★)"
+        },
+        {
             "key": "IT_TICKET_STORY",
             "value": "Ticket évit'quête (Histoire)"
         },
@@ -2930,7 +2958,7 @@
         },
         {
             "key": "IT_EC_SUMMON_09_A",
-            "value": "Médailles d'invocation A (Septembre)"
+            "value": "Médaille d'invocation A (Septembre)"
         },
         {
             "key": "IT_EC_FFT_1",
@@ -3101,6 +3129,10 @@
             "value": "Ticket sélectionneur de 50 magilithes élémentaires (M)"
         },
         {
+            "key": "IT_US_SE_SB_EXP_05",
+            "value": "Ticket sélectionneur de 30 magilithes élémentaires (XL)"
+        },
+        {
             "key": "IT_US_G_U_UR_01",
             "value": "Ticket d'invocation d'unité UR garantie [A]"
         },
@@ -3177,6 +3209,10 @@
             "value": "Ticket d'inv. d'unité MR+ garantie du Compte à rebours de l'Anniv. des 6 mois [Partie III]"
         },
         {
+            "key": "IT_US_G_U_SSR_UR_06",
+            "value": "Ticket d'inv. d'unité MR+ garantie du Compte à rebours de l'Anniv. des 6 mois [Partie IV]"
+        },
+        {
             "key": "IT_US_SE_UR_V_01",
             "value": "Ticket sélectionneur d'atout-vision UR [A]"
         },
@@ -3235,6 +3271,10 @@
         {
             "key": "IT_VPI_LW_ODIN",
             "value": "Fragment de l'atout-vision : Odin, le Saccageur"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV1",
+            "value": "Fragment de l'atout-vision : Les gardiens des cristaux"
         },
         {
             "key": "IT_VPI_LW_IGNT",
@@ -3457,6 +3497,18 @@
             "value": "Fragment de l'atout-vision : Un simple brin d'herbe"
         },
         {
+            "key": "IT_VPI_FFCC_MV2",
+            "value": "Fragment de l'atout-vision : En quête de myrrhe"
+        },
+        {
+            "key": "IT_VPI_LW_ROBUST",
+            "value": "Fragment de l'atout-vision : « Solidus », première division de Hourne"
+        },
+        {
+            "key": "IT_VPI_LW_MDFY",
+            "value": "Fragment de l'atout-vision : Ensorceleur, l'Esprit incoercible"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "Œuf de croissance (N)"
         },
@@ -3553,6 +3605,10 @@
             "value": "Médaille de raid de la Guimauve blanche"
         },
         {
+            "key": "IT_EC_RAID_05",
+            "value": "Médaille de raid du mois de septembre"
+        },
+        {
             "key": "IT_US_GL_SE_SB_EXP_1",
             "value": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
         },
@@ -3567,6 +3623,10 @@
         {
             "key": "IT_US_GL_SE_SB_EXP_4",
             "value": "Ticket sélectionneur de 100 magilithes élémentaires (L)"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_5",
+            "value": "Ticket sélectionneur de 20 magilithes élémentaires (L)"
         },
         {
             "key": "IT_US_GL_SE_VPI_01",
@@ -3586,6 +3646,10 @@
         },
         {
             "key": "IT_US_GL_SE_VPI_05",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_06",
             "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
         },
         {
@@ -3613,12 +3677,36 @@
             "value": "Ticket sélectionneur de 40 fragments d'unité UR"
         },
         {
+            "key": "IT_US_N_GACHA_10",
+            "value": "Ticket d'invocation x10 normale"
+        },
+        {
             "key": "IT_US_G_N_TW_10",
             "value": "[Tour de porcelaine] Ticket d'invocation x10 normale"
         },
         {
-            "key": "IT_US_N_GACHA_10",
-            "value": "Ticket d'invocation x10 normale"
+            "key": "IT_PT_SKIP_001",
+            "value": "Ticket évit'quête des Épreuves du Jugement"
+        },
+        {
+            "key": "IT_PT_BSSKIP_001",
+            "value": "Ticket évit'boss des Épreuves du Jugement"
+        },
+        {
+            "key": "IT_PT_BOSS_001",
+            "value": "Ticket de combat de boss"
+        },
+        {
+            "key": "IT_EC_POINT_001",
+            "value": "Médaille des Épreuves du Jugement"
+        },
+        {
+            "key": "IT_AF_LW_HLM_005",
+            "value": "Recette d'artisanat : Casque de platine"
+        },
+        {
+            "key": "IT_AF_LW_ACC_001",
+            "value": "Recettes d'artisanat : Ruban"
         }
     ]
 }

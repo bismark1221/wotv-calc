@@ -191,7 +191,8 @@
           },
           "slug": "sk_vc_lw_glem_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -387,7 +388,8 @@
           },
           "slug": "sk_vc_lw_ifrt_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -580,7 +582,8 @@
           },
           "slug": "sk_vc_lw_sire_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -776,7 +779,8 @@
           },
           "slug": "sk_vc_lw_sokyu_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -969,7 +973,8 @@
           },
           "slug": "sk_vc_lw_training_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -1162,7 +1167,8 @@
           },
           "slug": "sk_vc_lw_macr_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -1355,7 +1361,8 @@
           },
           "slug": "sk_vc_lw_murg_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -1551,7 +1558,8 @@
           },
           "slug": "sk_vc_lw_grsr_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -1744,7 +1752,8 @@
           },
           "slug": "sk_vc_ff14_mv1_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -1937,7 +1946,8 @@
           },
           "slug": "sk_vc_lw_holynight_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -2133,7 +2143,8 @@
           },
           "slug": "sk_vc_lw_vale1_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -2326,7 +2337,8 @@
           },
           "slug": "sk_vc_lw_shiv_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -2522,7 +2534,8 @@
           },
           "slug": "sk_vc_lw_ramu_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -2718,7 +2731,8 @@
           },
           "slug": "sk_vc_fft_mv1_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -2914,7 +2928,8 @@
           },
           "slug": "sk_vc_lw_odin_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -3107,7 +3122,8 @@
           },
           "slug": "sk_vc_lw_tslp_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -3303,7 +3319,8 @@
           },
           "slug": "sk_vc_mbff_mv1_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -3496,7 +3513,8 @@
           },
           "slug": "sk_vc_lw_thdg_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -3689,7 +3707,8 @@
           },
           "slug": "sk_vc_ff01_dmac_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -3885,7 +3904,8 @@
           },
           "slug": "sk_vc_lw_cbvparty1_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -4078,7 +4098,8 @@
           },
           "slug": "sk_vc_lw_dabl_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
       }
     ]
   },
@@ -4280,7 +4301,402 @@
           },
           "slug": "sk_vc_fft_mv3_pmax",
           "maxLevel": 1
-        }
+        },
+        "cond": null
+      }
+    ]
+  },
+  "VC_FFCC_MV1": {
+    "dataId": "VC_FFCC_MV1",
+    "names": {
+      "en": "Keepers of the Crystal",
+      "fr": "Les gardiens des cristaux"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 278
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 5,
+        "max": 18
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 42,
+        "max": 171
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ffccmv1",
+    "slug": "keepers-of-the-crystal",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 15,
+            "maxValue": 25,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFCC_MV1_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFCC_MV1_GS",
+          "fr": "SK_VC_FFCC_MV1_GS"
+        },
+        "slug": "sk_vc_ffcc_mv1_gs",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFCC_MV1_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFCC_MV1_GS_AW",
+          "fr": "SK_VC_FFCC_MV1_GS_AW"
+        },
+        "slug": "sk_vc_ffcc_mv1_gs_aw",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "FIRE_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_FFCC_MV1_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFCC_MV1_GSMAX",
+          "fr": "SK_VC_FFCC_MV1_GSMAX"
+        },
+        "slug": "sk_vc_ffcc_mv1_gsmax",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe"
+            },
+            {
+              "type": "EVADE",
+              "minValue": -5,
+              "maxValue": -5,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_FFCC_MV1_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFCC_MV1_P",
+            "fr": "SK_VC_FFCC_MV1_P"
+          },
+          "slug": "sk_vc_ffcc_mv1_p",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_FFCC_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFCC_MV1_PAW",
+            "fr": "SK_VC_FFCC_MV1_PAW"
+          },
+          "slug": "sk_vc_ffcc_mv1_paw",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_FFCC_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFCC_MV1_PMAX",
+            "fr": "SK_VC_FFCC_MV1_PMAX"
+          },
+          "slug": "sk_vc_ffcc_mv1_pmax",
+          "maxLevel": 1
+        },
+        "cond": null
+      }
+    ]
+  },
+  "VC_LW_ROBUST": {
+    "dataId": "VC_LW_ROBUST",
+    "names": {
+      "en": "Hourne’s First Division, «Solidus»",
+      "fr": "« Solidus », première division de Hourne"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 292
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 6,
+        "max": 22
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 45,
+        "max": 178
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsrobust",
+    "slug": "hournes-first-division-solidus",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_RES",
+            "minValue": 6,
+            "maxValue": 12,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_ROBUST_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ROBUST_GS",
+          "fr": "SK_VC_LW_ROBUST_GS"
+        },
+        "slug": "sk_vc_lw_robust_gs",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_RES",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_ROBUST_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ROBUST_GS_AW",
+          "fr": "SK_VC_LW_ROBUST_GS_AW"
+        },
+        "slug": "sk_vc_lw_robust_gs_aw",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_RES",
+            "minValue": 4,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_ROBUST_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ROBUST_GSMAX",
+          "fr": "SK_VC_LW_ROBUST_GSMAX"
+        },
+        "slug": "sk_vc_lw_robust_gsmax",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROBUST_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ROBUST_P",
+            "fr": "SK_VC_LW_ROBUST_P"
+          },
+          "slug": "sk_vc_lw_robust_p",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROBUST_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ROBUST_PAW",
+            "fr": "SK_VC_LW_ROBUST_PAW"
+          },
+          "slug": "sk_vc_lw_robust_paw",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROBUST_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ROBUST_PMAX",
+            "fr": "SK_VC_LW_ROBUST_PMAX"
+          },
+          "slug": "sk_vc_lw_robust_pmax",
+          "maxLevel": 1
+        },
+        "cond": null
       }
     ]
   },
@@ -4442,7 +4858,8 @@
           "slug": "sk_vc_lw_ignt_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -4607,7 +5024,8 @@
           "slug": "sk_vc_lw_bhmt_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -4762,7 +5180,8 @@
           "slug": "sk_vc_lw_mabr_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -4927,7 +5346,8 @@
           "slug": "sk_vc_lw_vale2_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5086,7 +5506,8 @@
           "slug": "sk_vc_lw_family_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5249,7 +5670,8 @@
           "slug": "sk_vc_lw_kton_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5412,7 +5834,8 @@
           "slug": "sk_vc_lw_propose_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5569,7 +5992,8 @@
           "slug": "sk_vc_lw_sdlx_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5726,7 +6150,8 @@
           "slug": "sk_vc_lw_teaparty_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -5887,7 +6312,8 @@
           "slug": "sk_vc_lw_hunt_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6048,7 +6474,8 @@
           "slug": "sk_vc_ff14_mv2_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6207,7 +6634,8 @@
           "slug": "sk_vc_lw_newyear_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6364,7 +6792,8 @@
           "slug": "sk_vc_lw_lama_01_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6538,7 +6967,8 @@
           "slug": "sk_vc_lw_guard_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6693,7 +7123,8 @@
           "slug": "sk_vc_lw_lils_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -6850,7 +7281,8 @@
           "slug": "sk_vc_lw_ochu_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7007,7 +7439,8 @@
           "slug": "sk_vc_mbff_mv2_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7170,7 +7603,8 @@
           "slug": "sk_vc_lw_adld_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7327,7 +7761,8 @@
           "slug": "sk_vc_lw_whiteday1_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7482,7 +7917,8 @@
           "slug": "sk_vc_lw_vnla2_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7639,7 +8075,324 @@
           "slug": "sk_vc_fft_mv2_paw",
           "maxLevel": 4
         },
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
+      }
+    ]
+  },
+  "VC_FFCC_MV2": {
+    "dataId": "VC_FFCC_MV2",
+    "names": {
+      "en": "In Search of Myrrh",
+      "fr": "En quête de myrrhe"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 211
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 20,
+        "max": 81
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 14,
+        "max": 56
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ffccmv2",
+    "slug": "in-search-of-myrrh",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 10,
+            "maxValue": 20,
+            "calcType": "percent",
+            "increaseMax": true
+          }
+        ],
+        "dataId": "SK_VC_FFCC_MV2_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFCC_MV2_GS",
+          "fr": "SK_VC_FFCC_MV2_GS"
+        },
+        "slug": "sk_vc_ffcc_mv2_gs",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ATK",
+            "minValue": 1,
+            "maxValue": 10,
+            "calcType": "percent",
+            "increaseMax": true
+          }
+        ],
+        "dataId": "SK_VC_FFCC_MV2_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_FFCC_MV2_GSAW",
+          "fr": "SK_VC_FFCC_MV2_GSAW"
+        },
+        "slug": "sk_vc_ffcc_mv2_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 15,
+              "maxValue": 35,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFCC_MV2_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFCC_MV2_P",
+            "fr": "SK_VC_FFCC_MV2_P"
+          },
+          "slug": "sk_vc_ffcc_mv2_p",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_FFCC_MV2_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FFCC_MV2_PAW",
+            "fr": "SK_VC_FFCC_MV2_PAW"
+          },
+          "slug": "sk_vc_ffcc_mv2_paw",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": null
+      }
+    ]
+  },
+  "VC_LW_MDFY": {
+    "dataId": "VC_LW_MDFY",
+    "names": {
+      "en": "Bursting Spirit, Mindflayer",
+      "fr": "Ensorceleur, l'Esprit incoercible"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 281
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 15,
+        "max": 61
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 24,
+        "max": 97
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmdfy",
+    "slug": "bursting-spirit-mindflayer",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "MAX_DAMAGE",
+            "minValue": 1000,
+            "maxValue": 1500,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MDFY_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_MDFY_GS",
+          "fr": "SK_VC_LW_MDFY_GS"
+        },
+        "slug": "sk_vc_lw_mdfy_gs",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "MAX_DAMAGE",
+            "minValue": 100,
+            "maxValue": 500,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_MDFY_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_MDFY_GSAW",
+          "fr": "SK_VC_LW_MDFY_GSAW"
+        },
+        "slug": "sk_vc_lw_mdfy_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_MDFY_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MDFY_P",
+            "fr": "SK_VC_LW_MDFY_P"
+          },
+          "slug": "sk_vc_lw_mdfy_p",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_MDFY_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MDFY_PAW",
+            "fr": "SK_VC_LW_MDFY_PAW"
+          },
+          "slug": "sk_vc_lw_mdfy_paw",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7763,7 +8516,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -7887,7 +8641,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8006,7 +8761,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8130,7 +8886,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8247,7 +9004,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8366,7 +9124,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8491,7 +9250,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8610,7 +9370,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8734,7 +9495,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8859,7 +9621,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -8977,7 +9740,8 @@
           "maxLevel": 60
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9095,7 +9859,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9213,7 +9978,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9331,7 +10097,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9448,7 +10215,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9565,7 +10333,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9688,7 +10457,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9813,7 +10583,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -9930,7 +10701,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -10053,7 +10825,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -10170,7 +10943,8 @@
           "maxLevel": 40
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -10288,7 +11062,8 @@
           "maxLevel": 30
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -10406,7 +11181,8 @@
           "maxLevel": 30
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   },
@@ -10524,7 +11300,8 @@
           "maxLevel": 30
         },
         "awake": null,
-        "lvmax": null
+        "lvmax": null,
+        "cond": null
       }
     ]
   }

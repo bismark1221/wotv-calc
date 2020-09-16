@@ -3553,6 +3553,26 @@
             "value": "Messager des ténèbres"
         },
         {
+            "key": "SK_MDFY_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_MDFY_M_01",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_MDFY_M_02",
+            "value": "Saignée"
+        },
+        {
+            "key": "SK_MDFY_M_03",
+            "value": "Tribulations"
+        },
+        {
+            "key": "SK_MDFY_M_04",
+            "value": "Explosion mentale"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -3855,6 +3875,10 @@
         {
             "key": "SK_SMN_CHCB_01",
             "value": "Choco-météore"
+        },
+        {
+            "key": "SK_SMN_MDFY",
+            "value": "Explosion mentale"
         },
         {
             "key": "SK_US_POTION",
@@ -4961,6 +4985,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_FFCC_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV1_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV1_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_IGNT_GS",
             "value": ""
         },
@@ -5154,6 +5190,34 @@
         },
         {
             "key": "SK_VC_LW_CBVPARTY1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MDFY_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MDFY_GSAW",
             "value": ""
         },
         {
@@ -5478,6 +5542,38 @@
         },
         {
             "key": "SK_VC_FFT_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_ROBUST_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MDFY_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MDFY_PAW",
             "value": ""
         },
         {
@@ -5806,6 +5902,14 @@
         },
         {
             "key": "SK_VC_FF01_DMAC_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FFCC_MV2_PAW",
             "value": ""
         },
         {
@@ -6249,6 +6353,10 @@
             "value": "Annule les changements de CT"
         },
         {
+            "key": "SK_BTL_INV_SPDDOWN",
+            "value": "Annule AGI ↓"
+        },
+        {
             "key": "SK_BTL_RES_SLEEP_1_100_D",
             "value": "Rés [Sommeil] ↓"
         },
@@ -6559,6 +6667,10 @@
         {
             "key": "SK_BTL_KILLER_MAN_1-100_U",
             "value": "Anthropophage ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_MKILLER_MAN_1-100_U",
+            "value": "Anthropophage dès qu'une attaque magique est lancée ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_KILLER_FIRE_1-100_U",

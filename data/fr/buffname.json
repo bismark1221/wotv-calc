@@ -1481,6 +1481,18 @@
             "value": ""
         },
         {
+            "key": "BUFF_MDFY_M_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MDFY_M_03",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MDFY_M_04",
+            "value": ""
+        },
+        {
             "key": "BUFF_LB_LW_MONT_B",
             "value": ""
         },
@@ -1690,6 +1702,10 @@
         },
         {
             "key": "BUFF_SMN_THDG",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SMN_MDFY",
             "value": ""
         },
         {
@@ -2273,6 +2289,18 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_FFCC_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV1_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV1_GSMAX",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_IGNT_GS",
             "value": ""
         },
@@ -2545,6 +2573,34 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_FFCC_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV2_GSAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_MDFY_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_MDFY_GSAW",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_CACT_GS",
             "value": ""
         },
@@ -2794,6 +2850,26 @@
         },
         {
             "key": "BUFF_VC_FFT_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FFCC_MV2_PAW",
             "value": ""
         },
         {
@@ -3078,6 +3154,26 @@
         },
         {
             "key": "BUFF_VC_FFT_MV3_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_ROBUST_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_MDFY_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_MDFY_PAW",
             "value": ""
         },
         {
@@ -4177,22 +4273,6 @@
             "value": ""
         },
         {
-            "key": "BUFF_SWO_LW_DRIO_1_1",
-            "value": ""
-        },
-        {
-            "key": "BUFF_KAT_LW_SIMR_1_1",
-            "value": ""
-        },
-        {
-            "key": "BUFF_KAT_LW_SIMR_1_1_EN",
-            "value": "Attaque normale (Lenteur)"
-        },
-        {
-            "key": "BUFF_SWO_LW_LVES_1_1",
-            "value": ""
-        },
-        {
             "key": "BUFF_ACC_LW_IRDL_1_1",
             "value": ""
         },
@@ -4210,6 +4290,22 @@
         },
         {
             "key": "BUFF_FFT_SWO_002_5",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SWO_LW_DRIO_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_KAT_LW_SIMR_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_KAT_LW_SIMR_1_1_EN",
+            "value": "Attaque normale (Lenteur)"
+        },
+        {
+            "key": "BUFF_SWO_LW_LVES_1_1",
             "value": ""
         },
         {
@@ -5053,6 +5149,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_BTL_INV_SPDDOWN",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_INV_MKBT",
             "value": ""
         },
@@ -5090,6 +5190,10 @@
         },
         {
             "key": "BUFF_BTL_KILLER_MAN_1-100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_MKILLER_MAN_1-100_U",
             "value": ""
         },
         {
@@ -6322,11 +6426,11 @@
         },
         {
             "key": "BUFF_MABR_09",
-            "value": "Rés att magiques +3 %"
+            "value": "Rés magique +3 %"
         },
         {
             "key": "BUFF_MABR_10",
-            "value": "Rés att magiques +3 %"
+            "value": "Rés magique +3 %"
         },
         {
             "key": "BUFF_MABR_11",
@@ -6366,11 +6470,11 @@
         },
         {
             "key": "BUFF_MABR_20",
-            "value": "Rés att magiques +5 %"
+            "value": "Rés magique +5 %"
         },
         {
             "key": "BUFF_MABR_21",
-            "value": "Rés att magiques +4 %"
+            "value": "Rés magique +4 %"
         },
         {
             "key": "BUFF_MABR_22",
@@ -6454,11 +6558,11 @@
         },
         {
             "key": "BUFF_MOGL_09",
-            "value": "Rés att magiques +3 %"
+            "value": "Rés magique +3 %"
         },
         {
             "key": "BUFF_MOGL_10",
-            "value": "Rés att magiques +3 %"
+            "value": "Rés magique +3 %"
         },
         {
             "key": "BUFF_MOGL_11",
@@ -6498,11 +6602,11 @@
         },
         {
             "key": "BUFF_MOGL_20",
-            "value": "Rés att magiques +5 %"
+            "value": "Rés magique +5 %"
         },
         {
             "key": "BUFF_MOGL_21",
-            "value": "Rés att magiques +4 %"
+            "value": "Rés magique +4 %"
         },
         {
             "key": "BUFF_MOGL_22",
@@ -6554,7 +6658,7 @@
         },
         {
             "key": "BUFF_LAMA_01_01",
-            "value": "Précision +3 %"
+            "value": "Taux de précision +3"
         },
         {
             "key": "BUFF_LAMA_01_02",
@@ -6582,7 +6686,7 @@
         },
         {
             "key": "BUFF_LAMA_01_08",
-            "value": "Précision +4 %"
+            "value": "Taux de précision +4"
         },
         {
             "key": "BUFF_LAMA_01_09",
@@ -6950,7 +7054,7 @@
         },
         {
             "key": "BUFF_OCHU_01",
-            "value": "Précision +3 %"
+            "value": "Taux de précision +3"
         },
         {
             "key": "BUFF_OCHU_02",
@@ -6978,7 +7082,7 @@
         },
         {
             "key": "BUFF_OCHU_08",
-            "value": "Précision +4 %"
+            "value": "Taux de précision +4"
         },
         {
             "key": "BUFF_OCHU_09",
@@ -7609,6 +7713,138 @@
             "value": "Noctophage +5 %"
         },
         {
+            "key": "BUFF_MDFY_01",
+            "value": "Taux de précision +3"
+        },
+        {
+            "key": "BUFF_MDFY_02",
+            "value": "Anthropophage +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_03",
+            "value": "Taux d'esquive +3"
+        },
+        {
+            "key": "BUFF_MDFY_04",
+            "value": "MAGIE +4 %"
+        },
+        {
+            "key": "BUFF_MDFY_05",
+            "value": "MAGIE +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_06",
+            "value": "Magie d'invocation niv. 2"
+        },
+        {
+            "key": "BUFF_MDFY_07",
+            "value": "Magie d'invocation niv. 3"
+        },
+        {
+            "key": "BUFF_MDFY_08",
+            "value": "Taux de précision +4"
+        },
+        {
+            "key": "BUFF_MDFY_09",
+            "value": "Rés att perçantes +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_10",
+            "value": "Rés att perçantes +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_11",
+            "value": "Anthropophage +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_12",
+            "value": "Taux d'esquive +4"
+        },
+        {
+            "key": "BUFF_MDFY_13",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_14",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_15",
+            "value": "Pyrophage +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_16",
+            "value": "MAGIE +8 %"
+        },
+        {
+            "key": "BUFF_MDFY_17",
+            "value": "Rés foudre +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_18",
+            "value": "Rés foudre +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_19",
+            "value": "Magie d'invocation niv. 4"
+        },
+        {
+            "key": "BUFF_MDFY_20",
+            "value": "Rés att perçantes +5 %"
+        },
+        {
+            "key": "BUFF_MDFY_21",
+            "value": "Rés att perçantes +4 %"
+        },
+        {
+            "key": "BUFF_MDFY_22",
+            "value": "Anthropophage +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_23",
+            "value": "Anthropophage +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_24",
+            "value": "Attaque magique +4 %"
+        },
+        {
+            "key": "BUFF_MDFY_25",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_26",
+            "value": "Pyrophage +4 %"
+        },
+        {
+            "key": "BUFF_MDFY_27",
+            "value": "Pyrophage +3 %"
+        },
+        {
+            "key": "BUFF_MDFY_28",
+            "value": "Rés foudre +4 %"
+        },
+        {
+            "key": "BUFF_MDFY_29",
+            "value": "Rés foudre +2 %"
+        },
+        {
+            "key": "BUFF_MDFY_30",
+            "value": "Magie d'invocation niv. 6"
+        },
+        {
+            "key": "BUFF_MDFY_31",
+            "value": "Magie d'invocation niv. 10"
+        },
+        {
+            "key": "BUFF_MDFY_32",
+            "value": "Anthropophage +5 %"
+        },
+        {
+            "key": "BUFF_MDFY_33",
+            "value": "Pyrophage +5 %"
+        },
+        {
             "key": "BUFF_ARMN_01",
             "value": "Attaque projectile +3 %"
         },
@@ -7742,7 +7978,7 @@
         },
         {
             "key": "BUFF_ZUUU_01",
-            "value": "Rés att magiques +3 %"
+            "value": "Rés magique +3 %"
         },
         {
             "key": "BUFF_ZUUU_02",
@@ -7770,7 +8006,7 @@
         },
         {
             "key": "BUFF_ZUUU_08",
-            "value": "Rés att magiques +4 %"
+            "value": "Rés magique +4 %"
         },
         {
             "key": "BUFF_ZUUU_09",
