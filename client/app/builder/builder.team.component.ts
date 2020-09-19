@@ -12,6 +12,7 @@ import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { TeamService } from '../services/team.service'
+import { NameService } from '../services/name.service';
 
 import { BuilderEsperComponent } from './builder.esper.component';
 import { BuilderCardComponent } from './builder.card.component';
@@ -26,6 +27,7 @@ import { BuilderGuildComponent } from './builder.guild.component';
 export class BuilderTeamComponent implements OnInit {
   units = [null, null, null, null, null]
   filteredUnits = [null, null, null, null, null]
+  showList = [false, false, false, false, false]
 
   searchText = ['', '', '', '', '']
 
@@ -58,23 +60,31 @@ export class BuilderTeamComponent implements OnInit {
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
+    private nameService: NameService,
     private modalService: NgbModal,
     private clipboardService: ClipboardService,
     private teamService: TeamService
   ) {
-    // this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-    //   this.getUnits();
-    //   this.getEspers();
-    //   this.getCards();
-    // });
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      for (let i = 0; i <= 4; i++) {
+        this.translateUnits(i)
+      }
+    })
+
+    //   this.getUnits()
+    //   this.getEspers()
+    //   this.getCards()
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     for (let i = 0; i <= 4; i++) {
       this.getAvailableUnits(i)
     }
 
     this.saved.units = this.unitService.getSavedUnits()
+    this.saved.espers = this.esperService.getSavedEspers()
+    this.saved.cards = this.cardService.getSavedCards()
+    this.saved.equipments = this.equipmentService.getSavedEquipments()
 
     this.team = this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues)
@@ -91,10 +101,35 @@ export class BuilderTeamComponent implements OnInit {
     });
   }
 
+  focusSearch(pos) {
+    this.showList[pos] = true
+  }
+
+  blurSearch(pos) {
+    console.log("fooo")
+    if (this.team.units[pos]) {
+      this.searchText[pos] = this.team.units[pos].name
+    }
+
+    this.showList[pos] = false
+  }
+
+  toogleList(pos) {
+    this.showList[pos] = !this.showList[pos]
+  }
+
   getAvailableUnits(pos) {
     this.units[pos] = this.formatUnits(this.teamService.getAvailableUnits(pos))
     this.updateFilteredUnits(pos)
-    //this.translateUnits(pos);
+    this.translateUnits(pos)
+  }
+
+  private translateUnits(pos) {
+    Object.keys(this.units[pos]).forEach(rarity => {
+      this.units[pos][rarity].forEach(unit => {
+        unit.name = this.nameService.getName(unit)
+      })
+    });
   }
 
   private formatUnits(units) {
@@ -116,9 +151,45 @@ export class BuilderTeamComponent implements OnInit {
         return item.name.toLowerCase().includes(text);
       })
     })
-
-    console.log(this.filteredUnits[pos])
   }
+
+  selectUnit(pos, dataId, customData = null) {
+    this.teamService.selectUnit(pos, dataId, customData)
+
+    if (this.team.units[pos]) {
+      this.searchText[pos] = this.team.units[pos].name
+    }
+
+    this.showList[pos] = false
+
+    console.log(this.team)
+    console.log(dataId)
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   getAvailableEspers(pos) {
     this.list.espers[pos] = this.teamService.getAvailableEspers(pos);
@@ -191,46 +262,24 @@ export class BuilderTeamComponent implements OnInit {
     })
   }
 
-  selectUnit(pos, customData = null) {
-    let removedUnit = !this.selected.units[pos] && this.team.units[pos] ? true : false
-    this.selected.espers[pos] = null
-    this.selected.cards[pos] = null
-    for (let i = 0; i <= 2; i++) {
-      this.selected.equipments[pos][i] = null
-    }
 
-    this.teamService.selectUnit(pos, this.selected.units[pos])
 
-    if (this.selected.units[pos]) {
-      if (this.team.units[pos].esper) {
-        this.selected.espers[pos] = this.team.units[pos].esper.dataId
-      }
 
-      if (this.team.units[pos].card) {
-        this.selected.cards[pos] = this.team.units[pos].card.dataId
-      }
 
-      this.team.units[pos].equipments.forEach((equipment, equipmentIndex) => {
-        if (equipment) {
-          this.selected.equipments[pos][equipmentIndex] = equipment.dataId
-        }
-      })
 
-      this.getAvailableEspers(pos)
-      this.getAvailableCards(pos)
-      this.getAvailableEquipments(pos)
-    }
 
-    for (let i = 0; i <= 4; i++) {
-      if (i != pos) {
-        this.getAvailableUnits(i)
-        if (removedUnit) {
-          this.getAvailableEspers(i)
-          this.getAvailableCards(i)
-        }
-      }
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   selectEsper(pos, customData = null) {
     this.teamService.selectEsper(pos, this.selected.espers[pos], customData)

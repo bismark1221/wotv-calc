@@ -12,16 +12,20 @@
   </div>
 
   <div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
-    <div ngbDropdown class="dropdownDiv">
-      <input type="text" placeholder="Search an unit" [(ngModel)]="searchText[i]" (ngModelChange)="updateFilteredUnits(i)" ngbDropdownToggle />
-      <div ngbDropdownMenu class="selectListUnit">
+    <div class="searchBlock" (blur)="blurSearch(i)" (focus)="focusSearch(i)">
+      <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText[i]" (ngModelChange)="updateFilteredUnits(i)" />
+      <i class="fas fa-times" aria-hidden="true" (click)="selectUnit(i, null)"></i>
+      <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList(i)" *ngIf="showList[i]"></i>
+      <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList(i)" *ngIf="!showList[i]"></i>
+
+      <div class="selectListUnit" *ngIf="showList[i]">
         <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
           <div class="rarityLine" *ngIf="filteredUnits[i][rarity].length > 0">
             <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
           </div>
           <div class="unitBlock" *ngIf="filteredUnits[i][rarity].length > 0">
             <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[i][rarity]; let j = index">
-              <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': saved.units[filteredUnit.dataId]}" ngbDropdownItem (click)="selectUnit(filteredUnit.dataId)">
+              <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': saved.units[filteredUnit.dataId]}" ngbDropdownItem (click)="selectUnit(i, filteredUnit.dataId)">
                 <div class="unitLogo">
                   <img src="assets/units/{{ filteredUnit.image }}_m.png" />
                 </div>

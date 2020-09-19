@@ -2,9 +2,33 @@
 /***************/
 /* Search Unit */
 /***************/
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 205px;
+}
+
+.fa-times {
+  margin-right: 10px;
+}
+
+.fa-times, .fa-chevron-up, .fa-chevron-down {
+  color: #000;
+  cursor: pointer;
+}
+
 .selectListUnit {
   width: 250px;
   max-height: 500px;
+  overflow-y: auto;
+  background-color: #fff;
 }
 
 .rarityBlock {
@@ -92,6 +116,10 @@
 
 .loadDiv .fa-download {
   font-size: 20px;
+}
+
+.fa-download {
+  color: #000;
 }
 
 

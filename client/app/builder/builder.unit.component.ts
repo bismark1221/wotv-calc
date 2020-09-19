@@ -253,6 +253,10 @@ export class BuilderUnitComponent implements OnInit {
     }
   }
 
+  toogleList() {
+    this.showList = !this.showList
+  }
+
   selectUnit(dataId, customData = null) {
     if (dataId) {
       this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
@@ -267,10 +271,6 @@ export class BuilderUnitComponent implements OnInit {
       this.updateFilteredUnits()
       this.showList = true
     }
-  }
-
-  toogleList() {
-    this.showList = !this.showList
   }
 
   changeStar(value) {
