@@ -257,9 +257,13 @@
                   </div>
                 </td>
                 <td>
-                  <ng-template #tip_table *ngIf="boss.skills[skillId].damage"><div [innerHTML]="boss.skills[skillId].skillTableHtml"></div></ng-template>
-                  <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true" *ngIf="boss.skills[skillId].damage">
-                    <div class="divSkillTableHtml" [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
+                  <div *ngIf="boss.skills[skillId].damage">
+                    <ng-template #tip_table>
+                      <div [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
+                    </ng-template>
+                    <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                      <div class="divSkillTableHtml" [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
+                    </div>
                   </div>
                 </td>
                 <td>{{ boss.skills[skillId].count }}</td>
