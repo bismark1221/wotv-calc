@@ -20,26 +20,27 @@ export class BuilderGuildComponent implements OnInit {
   ) {
   }
 
+  ngOnInit(): void {
+    this.guild = this.guildService.getGuild()
+
+    this.statues = this.guildService.getStatues()
+    this.statueNames = Object.keys(this.statues)
+  }
+
   ngAfterViewInit() {
     this.authService.$load.subscribe(load => {
       this.guild = this.guildService.getGuild()
     });
 
-    this.authService.$user.subscribe(user => {
-      if (user) {
-        this.showSave = true
-      } else {
-        this.showSave = false
-      }
-    });
-  }
-
-  ngOnInit(): void {
-    this.guild = this.guildService.getGuild()
-    console.log(this.guild)
-
-    this.statues = this.guildService.getStatues()
-    this.statueNames = Object.keys(this.statues)
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   saveGuild() {
