@@ -126,7 +126,7 @@
           <div ngbDropdown class="dropdownDiv">
             <button class="btn btn-select" ngbDropdownToggle>{{ esper.level }}</button>
             <div ngbDropdownMenu class="selectList">
-              <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem (click)="selectLevel(level)">{{ level }}</button>
+              <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
             </div> / {{ esper.maxLevel }}
           </div>
         </div>

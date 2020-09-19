@@ -294,7 +294,8 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.getActiveSkills()
   }
 
-  changeJobLevel() {
+  selectJobLevel(jobNumber, level) {
+    this.unit.jobsData[jobNumber].level = level
     this.unitService.changeJobLevel()
     this.unitService.getActiveSkills()
   }

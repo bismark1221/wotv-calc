@@ -66,17 +66,21 @@ export class BuilderEquipmentComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(load => {
-      this.savedEquipments = this.equipmentService.getSavedEquipments()
-    });
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.savedEquipments = this.equipmentService.getSavedEquipments()
+      });
+    })
 
-    this.authService.$user.subscribe(user => {
-      if (user) {
-        this.showSave = true
-      } else {
-        this.showSave = false
-      }
-    });
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   private getEquipments() {

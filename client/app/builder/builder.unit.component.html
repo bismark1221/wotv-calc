@@ -94,7 +94,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ unit.level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem (click)="selectLevel(level)">{{ level }}</button>
+                  <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
                 </div> / {{ unit.maxLevel }}
               </div>
             </div>
@@ -106,7 +106,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ unit.masterSkillActivated + 1 }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.masterSkillLevel" class="selectLevel" ngbDropdownItem (click)="selectMasterSkillLevel(level)">{{ level + 1 }}</button>
+                  <button *ngFor="let level of unit.masterSkillLevel" class="selectLevel" ngbDropdownItem (focus)="selectMasterSkillLevel(level)">{{ level + 1 }}</button>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ unit.limit.level + 1 }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" ngbDropdownItem (click)="selectLimitLevel(level)">{{ level }}</button>
+                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" ngbDropdownItem (focus)="selectLimitLevel(level)">{{ level }}</button>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.tableJobLevels" class="selectLevel" ngbDropdownItem (click)="selectJobLevel(i, level)">{{ level }}</button>
+                  <button *ngFor="let level of unit.tableJobLevels" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(i, level)">{{ level }}</button>
                 </div>
               </div>
             </div>
@@ -225,7 +225,7 @@
                 <div ngbDropdown class="dropdownDiv">
                   <button class="btn btn-select" ngbDropdownToggle>{{ unit.esper.resonance }}</button>
                   <div ngbDropdownMenu class="selectList">
-                    <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" ngbDropdownItem (click)="selectEsperResonance(level)">{{ level }}</button>
+                    <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" ngbDropdownItem (focus)="selectEsperResonance(level)">{{ level }}</button>
                   </div>
                 </div>
                 <button class="btn btn-sub btn-esper" (click)="openEspersModal()">Custom</button>
@@ -261,7 +261,7 @@
                 {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
               </button>
               <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableSupportNodes(i)" class="selectLevel" ngbDropdownItem (click)="selectSupportSkill(i, node.nodeId)">{{ node.name }}</button>
+                <button *ngFor="let node of getAvailableSupportNodes(i)" class="selectLevel" ngbDropdownItem (focus)="selectSupportSkill(i, node.nodeId)">{{ node.name }}</button>
               </div>
             </div>
           </td>
@@ -276,7 +276,7 @@
                 {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
               </button>
               <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableCounterNodes()" class="selectLevel" ngbDropdownItem (click)="selectCounterSkill(node.nodeId)">{{ node.name }}</button>
+                <button *ngFor="let node of getAvailableCounterNodes()" class="selectLevel" ngbDropdownItem (focus)="selectCounterSkill(node.nodeId)">{{ node.name }}</button>
               </div>
             </div>
           </td>

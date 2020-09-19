@@ -28,9 +28,11 @@ export class BuilderGuildComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(load => {
-      this.guild = this.guildService.getGuild()
-    });
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.guild = this.guildService.getGuild()
+      });
+    })
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {

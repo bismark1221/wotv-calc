@@ -80,7 +80,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ card.level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of card.tableLevels" class="selectLevel" ngbDropdownItem (click)="selectLevel(level)">{{ level }}</button>
+                  <button *ngFor="let level of card.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
                 </div> / {{ card.maxLevel }}
               </div>
             </div>

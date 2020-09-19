@@ -116,7 +116,7 @@
           <div ngbDropdown class="dropdownDiv">
             <button class="btn btn-select" ngbDropdownToggle>{{ equipment.upgrade == 0 ? equipment.upgrade : '+' + equipment.upgrade }}</button>
             <div ngbDropdownMenu class="selectList">
-              <button *ngFor="let level of [0, 1, 2, 3, 4, 5]" class="selectLevel" ngbDropdownItem (click)="selectUpgrade(level)">{{ level == 0 ? level : '+' + level }}</button>
+              <button *ngFor="let level of [0, 1, 2, 3, 4, 5]" class="selectLevel" ngbDropdownItem (focus)="selectUpgrade(level)">{{ level == 0 ? level : '+' + level }}</button>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
           <div ngbDropdown class="dropdownDiv">
             <button class="btn btn-select btn-select-grow" ngbDropdownToggle>{{ equipment.grows[equipment.grow].name }}</button>
             <div ngbDropdownMenu class="selectList">
-              <button *ngFor="let growId of equipment.growIds" class="selectLevel" ngbDropdownItem (click)="selectGrow(growId)">{{ equipment.grows[growId].name }}</button>
+              <button *ngFor="let growId of equipment.growIds" class="selectLevel" ngbDropdownItem (focus)="selectGrow(growId)">{{ equipment.grows[growId].name }}</button>
             </div>
           </div>
         </div>

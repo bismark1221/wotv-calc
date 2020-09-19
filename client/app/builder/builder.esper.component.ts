@@ -106,17 +106,21 @@ export class BuilderEsperComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(load => {
-      this.savedEspers = this.esperService.getSavedEspers()
-    });
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.savedEspers = this.esperService.getSavedEspers()
+      });
+    })
 
-    this.authService.$user.subscribe(user => {
-      if (user) {
-        this.showSave = true
-      } else {
-        this.showSave = false
-      }
-    });
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   private getEspers() {

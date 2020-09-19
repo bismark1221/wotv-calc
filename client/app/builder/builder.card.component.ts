@@ -65,17 +65,21 @@ export class BuilderCardComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(load => {
-      this.savedCards = this.cardService.getSavedCards()
-    });
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.savedCards = this.cardService.getSavedCards()
+      });
+    })
 
-    this.authService.$user.subscribe(user => {
-      if (user) {
-        this.showSave = true
-      } else {
-        this.showSave = false
-      }
-    });
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   private getCards() {
