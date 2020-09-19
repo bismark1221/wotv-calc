@@ -81,6 +81,15 @@
   width: 1276px;
 }
 
+.unitSelector {
+  display: block;
+}
+
+.unitSelectorWithSave {
+  display: inline-block;
+  width: 1200px;
+}
+
 .unitLogo {
   padding: 5px;
   display: inline-block;
@@ -101,6 +110,19 @@
   display: inline-block;
   font-size: 22px;
   vertical-align: middle;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  text-align: center;
+  height: 72px;
+  padding-top: 20px;
+}
+
+.loadDiv .fa-download {
+  font-size: 40px;
 }
 
 /***********/
@@ -450,28 +472,6 @@ tr.disable {
 
 .buffImg {
   width: 40px;
-}
-
-.unitSelector {
-  display: block;
-}
-
-.unitSelectorWithSave {
-  display: inline-block;
-  width: 1200px;
-}
-
-.loadDiv {
-  display: inline-block;
-  vertical-align: middle;
-  width: 80px;
-  text-align: center;
-  height: 72px;
-  padding-top: 20px;
-}
-
-.loadDiv .fa-download {
-  font-size: 40px;
 }
 
 .unitButtons {

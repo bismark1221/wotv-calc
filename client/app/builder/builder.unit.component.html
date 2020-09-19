@@ -1,7 +1,7 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()" (blur)="blurSearch()" (focus)="focusSearch()">
+    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()" (blur)="blurSearch()" (focus)="focusSearch()" />
     <i class="fas fa-times" aria-hidden="true" (click)="selectUnit('')"></i>
     <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
     <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>

@@ -1,3 +1,116 @@
+
+/***************/
+/* Search Unit */
+/***************/
+.selectListUnit {
+  width: 250px;
+  max-height: 500px;
+}
+
+.rarityBlock {
+  width: 100%;
+}
+
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.unitBlock {
+  padding-left: 5px;
+}
+
+.unitLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 240px;
+}
+
+.unitSelector {
+  padding: 0;
+  display: block;
+}
+
+.unitSelectorWithSave {
+  display: inline-block;
+  width: 200px;
+}
+
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.unitLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.unitNameSelector {
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.unitNameSelectorWithSave {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.loadDiv {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  padding-top: 5px;
+}
+
+.loadDiv .fa-download {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .unitImg {
   max-width: 100px;
   max-height: 100px;

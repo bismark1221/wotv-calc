@@ -188,7 +188,7 @@ export class TeamService {
       }
     })
 
-    let units = this.unitService.getUnitsForBuilder()
+    let units = this.unitService.getUnitsForListing()
     let availableUnits = []
 
     units.forEach(unit => {

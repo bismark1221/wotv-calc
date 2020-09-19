@@ -12,15 +12,29 @@
   </div>
 
   <div class="leftBlock" *ngFor="let i of [0, 1, 2, 3, 4]">
-    <div>
-      <ng-select [items]="list.units[i]"
-                 bindLabel="name"
-                 bindValue="id"
-                 groupBy="rarity"
-                 placeholder="Units"
-                 [(ngModel)]="selected.units[i]"
-                 (ngModelChange)="selectUnit(i)">
-      </ng-select>
+    <div ngbDropdown class="dropdownDiv">
+      <input type="text" placeholder="Search an unit" [(ngModel)]="searchText[i]" (ngModelChange)="updateFilteredUnits(i)" ngbDropdownToggle />
+      <div ngbDropdownMenu class="selectListUnit">
+        <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
+          <div class="rarityLine" *ngIf="filteredUnits[i][rarity].length > 0">
+            <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
+          </div>
+          <div class="unitBlock" *ngIf="filteredUnits[i][rarity].length > 0">
+            <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[i][rarity]; let j = index">
+              <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': saved.units[filteredUnit.dataId]}" ngbDropdownItem (click)="selectUnit(filteredUnit.dataId)">
+                <div class="unitLogo">
+                  <img src="assets/units/{{ filteredUnit.image }}_m.png" />
+                </div>
+                <div class="unitNameSelector" [ngClass]="{'unitNameSelectorWithSave': saved.units[filteredUnit.dataId]}" innerHTML="{{ filteredUnit.name | highlight: searchText[i] }}"></div>
+              </div>
+              <div class="loadDiv" *ngIf="saved.units[filteredUnit.dataId] && saved.units[filteredUnit.dataId].length > 0">
+                <a (click)="openLoadModal(filteredUnit.dataId)"><i class="fas fa-download"></i></a>
+              </div>
+              <hr *ngIf="j != filteredUnits[i][rarity].length - 1"/>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div *ngIf="team.units[i]" class="unitDiv">

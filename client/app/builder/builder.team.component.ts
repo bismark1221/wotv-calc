@@ -24,30 +24,16 @@ import { BuilderGuildComponent } from './builder.guild.component';
   styleUrls: ['./builder.team.component.css']
 })
 export class BuilderTeamComponent implements OnInit {
-  list = {
-    units : [null, null, null, null, null],
-    espers : [null, null, null, null, null],
-    cards : [null, null, null, null, null],
-    equipments : [
-      [null, null, null],
-      [null, null, null],
-      [null, null, null],
-      [null, null, null],
-      [null, null, null]
-    ]
-  }
+  units = [null, null, null, null, null]
+  filteredUnits = [null, null, null, null, null]
 
-  selected = {
-    units: [null, null, null, null, null],
-    espers: [null, null, null, null, null],
-    cards: [null, null, null, null, null],
-    equipments : [
-      [null, null, null],
-      [null, null, null],
-      [null, null, null],
-      [null, null, null],
-      [null, null, null]
-    ]
+  searchText = ['', '', '', '', '']
+
+  saved = {
+    units: {},
+    espers: {},
+    cards: {},
+    equipments : {}
   }
 
   team = null
@@ -55,6 +41,14 @@ export class BuilderTeamComponent implements OnInit {
   exportableLink = ""
   confirmModal = null
   savedTeams = null
+
+  rarityTranslate = {
+    UR: "Ultra Rare",
+    MR: "Mega Rare",
+    SR: "Super Rare",
+    R: "Rare",
+    N: "Normal"
+  }
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -80,6 +74,8 @@ export class BuilderTeamComponent implements OnInit {
       this.getAvailableUnits(i)
     }
 
+    this.saved.units = this.unitService.getSavedUnits()
+
     this.team = this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues)
 
@@ -96,8 +92,32 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   getAvailableUnits(pos) {
-    this.list.units[pos] = this.teamService.getAvailableUnits(pos);
-    this.list.units[pos] = [...this.list.units[pos]];
+    this.units[pos] = this.formatUnits(this.teamService.getAvailableUnits(pos))
+    this.updateFilteredUnits(pos)
+    //this.translateUnits(pos);
+  }
+
+  private formatUnits(units) {
+    let formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    units.forEach(unit => {
+      formattedUnits[unit.rarity].push(unit)
+    })
+
+    return formattedUnits
+  }
+
+  updateFilteredUnits(pos) {
+    let text = this.searchText[pos].toLowerCase();
+    this.filteredUnits[pos] = { UR: [], MR: [], SR: [], R: [], N: [] }
+
+    Object.keys(this.units[pos]).forEach(rarity => {
+      this.filteredUnits[pos][rarity] = this.units[pos][rarity].filter(item => {
+        return item.name.toLowerCase().includes(text);
+      })
+    })
+
+    console.log(this.filteredUnits[pos])
   }
 
   getAvailableEspers(pos) {
