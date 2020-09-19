@@ -24,6 +24,7 @@ export class BuilderEsperComponent implements OnInit {
   savedEspers = {}
   loadingBuild = false
   showSave = false
+  showList = true
 
   buffsImage = [
     "dark_atk",
@@ -160,15 +161,35 @@ export class BuilderEsperComponent implements OnInit {
     })
   }
 
+  focusSearch() {
+    if (!this.showList) {
+      this.updateFilteredEspers()
+      this.showList = true
+    }
+  }
+
+  blurSearch() {
+    if (this.esper) {
+      this.searchText = this.esper.name
+      this.showList = false
+    }
+  }
+
   selectEsper(dataId, customData = null) {
     if (dataId) {
       this.esper = this.esperService.selectEsperForBuilder(dataId, customData)
       this.searchText = this.esper.name
+      this.showList = false
     } else {
       this.esper = null
       this.searchText = ""
       this.updateFilteredEspers()
+      this.showList = true
     }
+  }
+
+  toogleList() {
+    this.showList = !this.showList
   }
 
   changeStar(value) {

@@ -1,8 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEspers()">
+    <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEspers()" (blur)="blurSearch()" (focus)="focusSearch()">
     <i class="fas fa-times" aria-hidden="true" (click)="selectEsper('')"></i>
+    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -11,10 +13,10 @@
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="!esper && !loadingBuild && filteredEspers[rarity].length > 0">
+    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredEspers[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="esperBlock" *ngIf="!esper && !loadingBuild && filteredEspers[rarity].length > 0">
+    <div class="esperBlock" *ngIf="showList && !loadingBuild && filteredEspers[rarity].length > 0">
       <div class="esperLine" *ngFor="let filteredEsper of filteredEspers[rarity]; let j = index">
         <div class="esperSelector" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
           <div class="esperLogo">
@@ -30,12 +32,12 @@
     </div>
   </div>
 
-  <div class="saveBlock" *ngIf="esper">
+  <div class="saveBlock" *ngIf="!showList && esper">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="esper">
+  <div class="leftBlock" *ngIf="!showList && esper">
     <table>
       <tbody>
         <tr>
@@ -91,7 +93,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="esper">
+  <div class="rightBlock" *ngIf="!showList && esper">
     <table class="statsTable">
       <tbody>
         <tr>

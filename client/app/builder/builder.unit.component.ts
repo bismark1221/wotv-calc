@@ -41,6 +41,7 @@ export class BuilderUnitComponent implements OnInit {
 
   statueNames
 
+  showList = true
   showSave = false
   showStatsDetail = false
   showBuffsDetail = false
@@ -238,6 +239,20 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.changeLevel()
   }
 
+  focusSearch() {
+    if (!this.showList) {
+      this.updateFilteredUnits()
+      this.showList = true
+    }
+  }
+
+  blurSearch() {
+    if (this.unit) {
+      this.searchText = this.unit.name
+      this.showList = false
+    }
+  }
+
   selectUnit(dataId, customData = null) {
     if (dataId) {
       this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
@@ -245,11 +260,17 @@ export class BuilderUnitComponent implements OnInit {
 
       this.loadGuild()
       this.unitService.getActiveSkills()
+      this.showList = false
     } else {
       this.unit = null
       this.searchText = ""
       this.updateFilteredUnits()
+      this.showList = true
     }
+  }
+
+  toogleList() {
+    this.showList = !this.showList
   }
 
   changeStar(value) {

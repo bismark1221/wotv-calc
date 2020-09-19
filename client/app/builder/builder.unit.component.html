@@ -1,8 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()">
+    <input class="searchInput" type="text" placeholder="Search for an unit by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredUnits()" (blur)="blurSearch()" (focus)="focusSearch()">
     <i class="fas fa-times" aria-hidden="true" (click)="selectUnit('')"></i>
+    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -11,10 +13,10 @@
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="!unit && !loadingBuild && filteredUnits[rarity].length > 0">
+    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredUnits[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="unitBlock" *ngIf="!unit && !loadingBuild && filteredUnits[rarity].length > 0">
+    <div class="unitBlock" *ngIf="showList && !loadingBuild && filteredUnits[rarity].length > 0">
       <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
         <div class="unitSelector" [ngClass]="{'unitSelectorWithSave': savedUnits[filteredUnit.dataId]}" (click)="selectUnit(filteredUnit.dataId)">
           <div class="unitLogo">
@@ -30,12 +32,12 @@
     </div>
   </div>
 
-  <div class="saveBlock" *ngIf="unit">
+  <div class="saveBlock" *ngIf="!showList && unit">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="unit">
+  <div class="leftBlock" *ngIf="!showList && unit">
     <table>
       <tbody>
         <tr>
@@ -299,7 +301,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="unit">
+  <div class="rightBlock" *ngIf="!showList && unit">
     <table class="statsTable">
       <tbody>
         <tr>

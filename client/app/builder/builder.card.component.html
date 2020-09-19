@@ -1,8 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredCards()">
+    <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredCards()" (blur)="blurSearch()" (focus)="focusSearch()">
     <i class="fas fa-times" aria-hidden="true" (click)="selectCard('')"></i>
+    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -11,10 +13,10 @@
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="!card && !loadingBuild && filteredCards[rarity].length > 0">
+    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredCards[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="cardBlock" *ngIf="!card && !loadingBuild && filteredCards[rarity].length > 0">
+    <div class="cardBlock" *ngIf="showList && !loadingBuild && filteredCards[rarity].length > 0">
       <div class="cardLine" *ngFor="let filteredCard of filteredCards[rarity]; let j = index">
         <div class="cardSelector" [ngClass]="{'cardSelectorWithSave': savedCards[filteredCard.dataId]}" (click)="selectCard(filteredCard.dataId)">
           <div class="cardLogo">
@@ -30,12 +32,12 @@
     </div>
   </div>
 
-  <div class="saveBlock" *ngIf="card">
+  <div class="saveBlock" *ngIf="!showList && card">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="card">
+  <div class="leftBlock" *ngIf="!showList && card">
     <table>
       <tbody>
         <tr>
@@ -90,7 +92,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="card">
+  <div class="rightBlock" *ngIf="!showList && card">
     <table class="statsTable">
       <tbody>
         <tr>

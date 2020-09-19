@@ -14,15 +14,20 @@
 .searchInput {
   background: none;
   border: 0;
-  width: 1250px;
+  width: 1220px;
 }
 
 .fa-search {
+  padding-left: 5px;
   padding-right: 8px;
   color: #000;
 }
 
 .fa-times {
+  margin-right: 10px;
+}
+
+.fa-times, .fa-chevron-up, .fa-chevron-down {
   color: #000;
   cursor: pointer;
 }

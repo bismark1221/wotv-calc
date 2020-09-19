@@ -24,7 +24,7 @@ export class BuilderEquipmentComponent implements OnInit {
   savedEquipments = {}
   loadingBuild = false
   showSave = false
-
+  showList = true
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -120,15 +120,35 @@ export class BuilderEquipmentComponent implements OnInit {
     })
   }
 
+  focusSearch() {
+    if (!this.showList) {
+      this.updateFilteredEquipments()
+      this.showList = true
+    }
+  }
+
+  blurSearch() {
+    if (this.equipment) {
+      this.searchText = this.equipment.name
+      this.showList = false
+    }
+  }
+
   selectEquipment(dataId, customData = null) {
     if (dataId) {
       this.equipment = this.equipmentService.selectEquipmentForBuilder(dataId, customData)
       this.searchText = this.equipment.name
+      this.showList = false
     } else {
       this.equipment = null
       this.searchText = ""
       this.updateFilteredEquipments()
+      this.showList = true
     }
+  }
+
+  toogleList() {
+    this.showList = !this.showList
   }
 
   selectUpgrade(upgrade) {

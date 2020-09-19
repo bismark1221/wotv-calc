@@ -24,6 +24,7 @@ export class BuilderCardComponent implements OnInit {
   savedCards = {}
   loadingBuild = false
   showSave = false
+  showList = true
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -119,15 +120,35 @@ export class BuilderCardComponent implements OnInit {
     })
   }
 
+  focusSearch() {
+    if (!this.showList) {
+      this.updateFilteredCards()
+      this.showList = true
+    }
+  }
+
+  blurSearch() {
+    if (this.card) {
+      this.searchText = this.card.name
+      this.showList = false
+    }
+  }
+
   selectCard(dataId, customData = null) {
     if (dataId) {
       this.card = this.cardService.selectCardForBuilder(dataId, customData)
       this.searchText = this.card.name
+      this.showList = false
     } else {
       this.card = null
       this.searchText = ""
       this.updateFilteredCards()
+      this.showList = true
     }
+  }
+
+  toogleList() {
+    this.showList = !this.showList
   }
 
   changeStar(value) {

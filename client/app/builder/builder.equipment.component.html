@@ -1,8 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEquipments()">
+    <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEquipments()" (blur)="blurSearch()" (focus)="focusSearch()">
     <i class="fas fa-times" aria-hidden="true" (click)="selectEquipment('')"></i>
+    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -11,10 +13,10 @@
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="!equipment && !loadingBuild && filteredEquipments[rarity].length > 0">
+    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredEquipments[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="equipmentBlock" *ngIf="!equipment && !loadingBuild && filteredEquipments[rarity].length > 0">
+    <div class="equipmentBlock" *ngIf="showList && !loadingBuild && filteredEquipments[rarity].length > 0">
       <div class="equipmentLine" *ngFor="let filteredEquipment of filteredEquipments[rarity]; let j = index">
         <div class="equipmentSelector" [ngClass]="{'equipmentSelectorWithSave': savedEquipments[filteredEquipment.dataId]}" (click)="selectEquipment(filteredEquipment.dataId)">
           <div class="equipmentLogo">
@@ -30,12 +32,12 @@
     </div>
   </div>
 
-  <div class="saveBlock" *ngIf="equipment">
+  <div class="saveBlock" *ngIf="!showList && equipment">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
-  <div class="leftBlock" *ngIf="equipment">
+  <div class="leftBlock" *ngIf="!showList && equipment">
     <table>
       <tbody>
         <tr>
@@ -87,7 +89,7 @@
     </table>
   </div>
 
-  <div class="rightBlock" *ngIf="equipment">
+  <div class="rightBlock" *ngIf="!showList && equipment">
     <table class="statsTable">
       <tbody>
         <tr>
