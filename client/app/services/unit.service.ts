@@ -491,22 +491,25 @@ export class UnitService {
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id
-        let savedUnits = this.getSavedUnits()
+        if (method == "new") {
+          // @ts-ignore
+          savableData.storeId = data.id
+          let savedUnits = this.getSavedUnits()
 
-        if (savedUnits[unit.dataId]) {
-          savedUnits[unit.dataId].push(savableData)
-        } else {
-          savedUnits[unit.dataId] = [savableData]
+          if (savedUnits[unit.dataId]) {
+            savedUnits[unit.dataId].push(savableData)
+          } else {
+            savedUnits[unit.dataId] = [savableData]
+          }
+
+          this.localStorageService.set(this.getLocalStorage(), savedUnits);
         }
-
-        this.localStorageService.set(this.getLocalStorage(), savedUnits);
         this.unit.storeId = data.id
 
         return data.id
       })
     } else {
+      console.log(unit)
       return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
         let savedUnits = this.getSavedUnits()
         savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {

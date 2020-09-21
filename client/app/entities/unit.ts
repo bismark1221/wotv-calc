@@ -782,7 +782,7 @@ export class Unit {
       if (!this.board.nodes[node].activated) {
         this.board.nodes[node].activated = true;
         let parentNode = this.board.nodes[node].parent
-        if (!this.board.nodes[parentNode].activated) {
+        if (this.board.nodes[parentNode] && !this.board.nodes[parentNode].activated) {
           this.showNode(parentNode)
         }
       }

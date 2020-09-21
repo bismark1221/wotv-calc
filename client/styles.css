@@ -646,3 +646,30 @@ small {
 .highlightSearch {
   opacity: 1;
 }
+
+
+
+
+
+
+
+.ng-select {
+  width: 250px;
+}
+
+.ng-input input {
+  cursor: text !important;
+}
+
+.ng-dropdown-panel-items {
+  max-height: 400px !important;
+}
+
+.ng-optgroup {
+  padding: 0 !important;
+}
+
+.ng-option {
+  padding: 0 !important;
+  padding-left: 5px !important;
+}

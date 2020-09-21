@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { CardService } from '../../services/card.service';
+import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
 import { NameService } from '../../services/name.service';
 
@@ -23,9 +24,11 @@ export class ModalCardsComponent implements OnInit {
 
   @Input() public modalStep = "select";
   @Input() public card
+  @Input() public teamUnitPos
 
   constructor(
     private cardService: CardService,
+    private teamService: TeamService,
     private translateService: TranslateService,
     private nameService: NameService,
     private modal: NgbActiveModal
@@ -39,12 +42,17 @@ export class ModalCardsComponent implements OnInit {
     this.getCards();
 
     if (this.card) {
-      this.changeLevel()
+      this.card = this.cardService.selectCardForBuilder(this.card.dataId, this.card)
     }
   }
 
   getCards() {
-    this.cards = this.cardService.getCardsForListing(this.filters);
+    if (isNaN(this.teamUnitPos)) {
+      this.cards = this.cardService.getCardsForListing(this.filters)
+    } else {
+      this.cards = this.teamService.getAvailableCards(this.teamUnitPos, this.filters)
+    }
+
     this.getFilteredCards()
     this.translateCards()
 

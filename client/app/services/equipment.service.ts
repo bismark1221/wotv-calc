@@ -428,17 +428,20 @@ export class EquipmentService {
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id
-        let savedEquipments = this.getSavedEquipments()
+        if (method == "new") {
+          // @ts-ignore
+          savableData.storeId = data.id
+          let savedEquipments = this.getSavedEquipments()
 
-        if (savedEquipments[equipment.dataId]) {
-          savedEquipments[equipment.dataId].push(savableData)
-        } else {
-          savedEquipments[equipment.dataId] = [savableData]
+          if (savedEquipments[equipment.dataId]) {
+            savedEquipments[equipment.dataId].push(savableData)
+          } else {
+            savedEquipments[equipment.dataId] = [savableData]
+          }
+
+          this.localStorageService.set(this.getLocalStorage(), savedEquipments);
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedEquipments);
         this.equipment.storeId = data.id
 
         return data.id

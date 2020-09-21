@@ -13,11 +13,16 @@ import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
 import { TeamService } from '../services/team.service'
 import { NameService } from '../services/name.service';
+import { AuthService } from '../services/auth.service';
 
-import { BuilderEsperComponent } from './builder.esper.component';
-import { BuilderCardComponent } from './builder.card.component';
-import { BuilderEquipmentComponent } from './builder.equipment.component';
 import { BuilderGuildComponent } from './builder.guild.component';
+
+import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
+import { ModalEspersComponent } from './modal/modal.espers.component';
+import { ModalCardsComponent } from './modal/modal.cards.component';
+import { ModalLoadComponent } from './modal/modal.load.component';
+import { ModalSaveComponent } from './modal/modal.save.component';
+import { ModalLinkComponent } from './modal/modal.link.component';
 
 @Component({
   selector: 'app-builder-team',
@@ -25,24 +30,16 @@ import { BuilderGuildComponent } from './builder.guild.component';
   styleUrls: ['./builder.team.component.css']
 })
 export class BuilderTeamComponent implements OnInit {
-  units = [null, null, null, null, null]
-  filteredUnits = [null, null, null, null, null]
-  showList = [false, false, false, false, false]
-
-  searchText = ['', '', '', '', '']
-
-  saved = {
-    units: {},
-    espers: {},
-    cards: {},
-    equipments : {}
-  }
+  availableUnits = [null, null, null, null, null]
+  selectedUnits = [null, null, null, null, null]
+  savedUnits: {}
 
   team = null
   statueNames
   exportableLink = ""
   confirmModal = null
   savedTeams = null
+  showSave = false
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -63,28 +60,20 @@ export class BuilderTeamComponent implements OnInit {
     private nameService: NameService,
     private modalService: NgbModal,
     private clipboardService: ClipboardService,
-    private teamService: TeamService
+    private teamService: TeamService,
+    private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       for (let i = 0; i <= 4; i++) {
         this.translateUnits(i)
       }
     })
-
-    //   this.getUnits()
-    //   this.getEspers()
-    //   this.getCards()
   }
 
   ngOnInit() {
     for (let i = 0; i <= 4; i++) {
       this.getAvailableUnits(i)
     }
-
-    this.saved.units = this.unitService.getSavedUnits()
-    this.saved.espers = this.esperService.getSavedEspers()
-    this.saved.cards = this.cardService.getSavedCards()
-    this.saved.equipments = this.equipmentService.getSavedEquipments()
 
     this.team = this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues)
@@ -94,216 +83,97 @@ export class BuilderTeamComponent implements OnInit {
       if (data) {
         this.teamService.getStoredTeam(data).subscribe(teamData => {
           this.teamService.updateTeam(teamData)
-          this.updateAllAvailable()
-          this.updateAllSelected()
+          this.team.units.forEach((unit, unitIndex) => {
+            if (unit) {
+              this.selectedUnits[unitIndex] = unit.dataId
+              this.getAvailableUnits(unitIndex)
+            }
+          })
         })
       }
     });
   }
 
-  focusSearch(pos) {
-    this.showList[pos] = true
-  }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.savedUnits = this.unitService.getSavedUnits()
+        this.savedTeams = this.teamService.getSavedTeams()
+      });
+    })
 
-  blurSearch(pos) {
-    console.log("fooo")
-    if (this.team.units[pos]) {
-      this.searchText[pos] = this.team.units[pos].name
-    }
-
-    this.showList[pos] = false
-  }
-
-  toogleList(pos) {
-    this.showList[pos] = !this.showList[pos]
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   getAvailableUnits(pos) {
-    this.units[pos] = this.formatUnits(this.teamService.getAvailableUnits(pos))
-    this.updateFilteredUnits(pos)
+    this.availableUnits[pos] = this.teamService.getAvailableUnits(pos)
     this.translateUnits(pos)
   }
 
   private translateUnits(pos) {
-    Object.keys(this.units[pos]).forEach(rarity => {
-      this.units[pos][rarity].forEach(unit => {
-        unit.name = this.nameService.getName(unit)
-      })
+    this.availableUnits[pos].forEach(unit => {
+      unit.name = this.nameService.getName(unit)
     });
   }
 
-  private formatUnits(units) {
-    let formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+  selectUnit(pos, forceSelect = false, customData = null) {
+    let dataId = this.selectedUnits[pos]
 
-    units.forEach(unit => {
-      formattedUnits[unit.rarity].push(unit)
-    })
-
-    return formattedUnits
-  }
-
-  updateFilteredUnits(pos) {
-    let text = this.searchText[pos].toLowerCase();
-    this.filteredUnits[pos] = { UR: [], MR: [], SR: [], R: [], N: [] }
-
-    Object.keys(this.units[pos]).forEach(rarity => {
-      this.filteredUnits[pos][rarity] = this.units[pos][rarity].filter(item => {
-        return item.name.toLowerCase().includes(text);
-      })
-    })
-  }
-
-  selectUnit(pos, dataId, customData = null) {
-    this.teamService.selectUnit(pos, dataId, customData)
-
-    if (this.team.units[pos]) {
-      this.searchText[pos] = this.team.units[pos].name
-    }
-
-    this.showList[pos] = false
-
-    console.log(this.team)
-    console.log(dataId)
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  getAvailableEspers(pos) {
-    this.list.espers[pos] = this.teamService.getAvailableEspers(pos);
-    this.list.espers[pos] = [...this.list.espers[pos]];
-  }
-
-  getAvailableCards(pos) {
-    this.list.cards[pos] = this.teamService.getAvailableCards(pos);
-    this.list.cards[pos] = [...this.list.cards[pos]];
-  }
-
-  getAvailableEquipments(unitPos, equipmentPos = null) {
-    if (equipmentPos === null) {
-      for (let i = 0; i <= 2; i++) {
-        this.list.equipments[unitPos][i] = this.teamService.getAvailableEquipments(unitPos, i);
-      }
+    if (!forceSelect && this.savedUnits[dataId] && this.savedUnits[dataId].length > 0) {
+      this.openLoadModalUnits(pos, dataId)
     } else {
-      this.list.equipments[unitPos][equipmentPos] = this.teamService.getAvailableEquipments(unitPos, equipmentPos);
-    }
-  }
+      this.teamService.selectUnit(pos, dataId, customData)
 
-  updateAllAvailable() {
-    this.team.units.forEach((unit, unitIndex) => {
-      this.getAvailableUnits(unitIndex)
-      if (unit) {
-        this.getAvailableEspers(unitIndex)
-        this.getAvailableCards(unitIndex)
-        for (let j = 0; j <= 2; j++) {
-          this.getAvailableEquipments(unitIndex, j)
+      Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
+        if (this.team.units[pos].board.nodes[nodeId].skill.type !== "buff") {
+          this.team.units[pos].board.nodes[nodeId].skill.name = this.nameService.getName(this.team.units[pos].board.nodes[nodeId].skill)
         }
-      }
-    })
-  }
+      })
 
-  resetSelected() {
-    this.selected = {
-      units: [null, null, null, null, null],
-      espers: [null, null, null, null, null],
-      cards: [null, null, null, null, null],
-      equipments : [
-        [null, null, null],
-        [null, null, null],
-        [null, null, null],
-        [null, null, null],
-        [null, null, null]
-      ]
-    }
-  }
-
-  updateAllSelected() {
-    this.resetSelected()
-    this.team.units.forEach((unit, unitIndex) => {
-      if (unit) {
-        this.selected.units[unitIndex] = unit.dataId
-
-        if (unit.esper) {
-          this.selected.espers[unitIndex] = unit.esper.dataId
-        }
-
-        if (unit.card) {
-          this.selected.cards[unitIndex] = unit.card.dataId
-        }
-
-        unit.equipments.forEach((equipment, equipmentIndex) => {
-          if (equipment) {
-            this.selected.equipments[unitIndex][equipmentIndex] = equipment.dataId
+      if (this.team.units[pos]) {
+        this.team.units.forEach((unit, unitIndex) => {
+          if (unitIndex !== pos) {
+            this.getAvailableUnits(unitIndex)
           }
         })
       }
-    })
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  selectEsper(pos, customData = null) {
-    this.teamService.selectEsper(pos, this.selected.espers[pos], customData)
-
-    for (let i = 0; i <= 4; i++) {
-      if (i != pos) {
-        this.getAvailableEspers(i)
-      }
     }
   }
 
-  selectCard(pos, customData = null) {
-    this.teamService.selectCard(pos, this.selected.cards[pos], customData)
+  openLoadModalUnits(pos, unitId) {
+    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
 
-    for (let i = 0; i <= 4; i++) {
-      if (i != pos) {
-        this.getAvailableCards(i)
+    modalRef.componentInstance.type = 'unit'
+    modalRef.componentInstance.savedItems = this.savedUnits[unitId]
+    modalRef.componentInstance.allowNew = true
+
+    modalRef.result.then(result => {
+      if (result.type == 'new') {
+        this.selectUnit(pos, true)
       }
-    }
-  }
 
-  selectEquipment(unitPos, equipmentPos, customData = null) {
-    this.teamService.selectEquipment(unitPos, equipmentPos, this.selected.equipments[unitPos][equipmentPos], customData)
-    this.getAvailableEquipments(unitPos)
+      if (result.type == 'load' && result.item) {
+        this.selectUnit(pos, true, result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedUnits[unitId] = []
+      }
+    }, (reason) => {
+      if (this.team.units[pos]) {
+        this.selectedUnits[pos] = this.team.units[pos].dataId
+      } else {
+        this.selectedUnits[pos] = null
+      }
+    });
   }
 
   changeStar(pos, value) {
@@ -317,56 +187,38 @@ export class BuilderTeamComponent implements OnInit {
 
     this.teamService.changeLB(pos, value)
     this.updateSelectedEquipments(pos)
+    this.changeLevel(pos)
   }
 
   updateSelectedEquipments(pos) {
-    if (this.team.units[pos].lb < 4) {
-      if (this.selected.equipments[pos][2]) {
-        this.selected.equipments[pos][2] = null;
-        this.selectEquipment(pos, 2)
+    let unit = this.team.units[pos]
+
+    if (unit.lb < 4) {
+      if (unit.equipments[2]) {
+        unit.equipments[2] = null;
       }
 
-      if (this.selected.equipments[pos][1] && this.team.units[pos].equipments[1].acquisition && this.team.units[pos].equipments[1].acquisition.type === "tmr") {
-        this.selected.equipments[pos][1] = null;
-        this.selectEquipment(pos, 1)
+      if (unit.equipments[1] && unit.equipments[1].acquisition && unit.equipments[1].acquisition.type === "tmr") {
+        unit.equipments[1] = null;
       }
 
-      if (this.selected.equipments[pos][0] && this.team.units[pos].equipments[0].acquisition && this.team.units[pos].equipments[0].acquisition.type === "tmr") {
-        this.selected.equipments[pos][0] = null;
-        this.selectEquipment(pos, 0)
+      if (unit.equipments[0] && unit.equipments[0].acquisition && unit.equipments[0].acquisition.type === "tmr") {
+        unit.equipments[0] = null;
       }
     }
 
-    if (this.team.units[pos].lb < 2 && this.selected.equipments[pos][1]) {
-      this.selected.equipments[pos][1] = null;
-      this.selectEquipment(pos, 1)
+    if (unit.lb < 2 && unit.equipments[1]) {
+      unit.equipments[1] = null;
     }
-
-    this.getAvailableEquipments(pos)
-  }
-
-  changeJobLevel(pos) {
-    this.teamService.changeJobLevel(pos)
   }
 
   changeLevel(pos) {
     this.teamService.changeLevel(pos)
   }
 
-  maxUnit(pos) {
-    this.teamService.maxUnit(pos)
-  }
-
-  maxLevelAndJobs(pos) {
-    this.teamService.maxLevelAndJobs(pos)
-  }
-
-  changeSubJob() {
-
-  }
-
-  changeCounter() {
-
+  selectJobLevel(pos, jobNumber, level) {
+    this.team.units[pos].jobsData[jobNumber].level = level
+    this.teamService.changeJobLevel(pos)
   }
 
   getAvailableSupportNodes(unitPos, supportPos) {
@@ -377,51 +229,12 @@ export class BuilderTeamComponent implements OnInit {
     return this.teamService.getAvailableCounterNodes(pos)
   }
 
-  showEsperDetail(pos) {
-    const modalRef = this.modalService.open(BuilderEsperComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.esper = this.team.units[pos].esper;
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.teamService.changeLevel(pos)
-    }, (reason) => {
-      this.teamService.changeLevel(pos)
-    });
+  maxUnit(pos) {
+    this.teamService.maxUnit(pos)
   }
 
-  showCardDetail(pos) {
-    const modalRef = this.modalService.open(BuilderCardComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.card = this.team.units[pos].card;
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.team.units.forEach((unit, unitIndex) => {
-        if (unit) {
-          this.teamService.changeCardLevel(unitIndex)
-        }
-      })
-    }, (reason) => {
-      this.team.units.forEach((unit, unitIndex) => {
-        if (unit) {
-          this.teamService.changeCardLevel(unitIndex)
-        }
-      })
-    });
-  }
-
-  showEquipmentDetail(unitPos, equipmentPos) {
-    const modalRef = this.modalService.open(BuilderEquipmentComponent, { windowClass: 'options-modal' });
-
-    modalRef.componentInstance.equipment = this.team.units[unitPos].equipments[equipmentPos];
-    modalRef.componentInstance.fromUnitBuilder = true;
-
-    modalRef.result.then((result) => {
-      this.teamService.changeLevel(unitPos)
-    }, (reason) => {
-      this.teamService.changeLevel(unitPos)
-    });
+  maxLevelAndJobs(pos) {
+    this.teamService.maxLevelAndJobs(pos)
   }
 
   showGuildDetail() {
@@ -432,80 +245,197 @@ export class BuilderTeamComponent implements OnInit {
 
     modalRef.result.then((result) => {
       for (let i = 0; i <= 4; i++) {
-        this.teamService.changeLevel(i)
+        if (this.team.units[i]) {
+          this.teamService.changeLevel(i)
+        }
       }
     }, (reason) => {
       for (let i = 0; i <= 4; i++) {
-        this.teamService.changeLevel(i)
+        if (this.team.units[i]) {
+          this.teamService.changeLevel(i)
+        }
       }
     });
   }
 
-  openLinkModal(content) {
-    this.teamService.getExportableLink().then(link => {
-      this.exportableLink = link
+  openEquipmentsModal(unitPos, equipmentPos) {
+    const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
+    modalRef.componentInstance.unit = this.team.units[unitPos];
+    modalRef.componentInstance.equipmentPos = equipmentPos
 
-      const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-      modalRef.result.then((result) => {}, (reason) => {})
+    if (this.team.units[unitPos].equipments[equipmentPos]) {
+      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.team.units[unitPos].equipments[equipmentPos]))
+      modalRef.componentInstance.modalStep = "custom"
+    }
+
+    modalRef.result.then((equipment) => {
+      console.log(equipment)
+      if (equipment) {
+        this.team.units[unitPos].equipments[equipmentPos] = equipment
+        this.teamService.changeLevel(unitPos)
+        console.log(this.team.units[unitPos].equipments)
+      }
+    }, (reason) => {
+    });
+  }
+
+  openEspersModal(pos) {
+    const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.teamUnitPos = pos
+    if (this.team.units[pos].esper) {
+      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.team.units[pos].esper))
+      modalRef.componentInstance.modalStep = "custom"
+    }
+
+    modalRef.result.then((esper) => {
+      if (esper) {
+        this.team.units[pos].esper = esper
+        this.teamService.changeLevel(pos)
+      }
+    }, (reason) => {
+    });
+  }
+
+  openCardsModal(pos) {
+    const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.teamUnitPos = pos
+    if (this.team.units[pos].card) {
+      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.team.units[pos].card))
+      modalRef.componentInstance.modalStep = "custom"
+    }
+
+    modalRef.result.then((card) => {
+      if (card) {
+        this.team.units[pos].card = card
+        this.teamService.changeLevel(pos)
+
+        this.team.units.forEach((unit, unitIndex) => {
+          if (unit && unitIndex != pos) {
+            this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card
+            this.team.units[unitIndex].changeLevel()
+          }
+        })
+      }
+    }, (reason) => {
+    });
+  }
+
+  openLoadModal() {
+    const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'team'
+    modalRef.componentInstance.savedItems = this.savedTeams
+
+    modalRef.result.then(result => {
+      if (result.type == 'load' && result.item) {
+        console.log(result.item)
+
+        this.loadTeam(result.item)
+      }
+
+      if (result.type == 'fullDelete') {
+        this.savedTeams = []
+      }
+    }, (reason) => {
+    });
+  }
+
+  loadTeam(teamData) {
+    this.teamService.updateTeam(teamData)
+    this.updateAllAvailable()
+    this.updateAllSelected()
+  }
+
+  updateAllAvailable() {
+    this.team.units.forEach((unit, unitIndex) => {
+      this.getAvailableUnits(unitIndex)
     })
   }
 
-  openSaveModal(content) {
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
+  updateAllSelected() {
+    this.selectedUnits = [null, null, null, null, null]
+
+    this.team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        this.selectedUnits[unitIndex] = unit.dataId
+      }
+    })
   }
 
-  openConfirmModal(content) {
-    this.confirmModal = this.modalService.open(content, {windowClass: 'link-modal'});
-    this.confirmModal.result.then((result) => {}, (reason) => {})
+  openSaveModal() {
+    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
+
+    modalRef.componentInstance.type = 'team'
+    modalRef.componentInstance.item = this.team
+
+    modalRef.result.then(result => {
+      this.savedTeams = this.teamService.getSavedTeams()
+    }, (reason) => {
+    });
   }
 
-  openLoadModal(content) {
-    this.savedTeams = Object.keys(this.teamService.getSavedTeams())
+  openLinkModal() {
+    const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
 
-    const modalRef = this.modalService.open(content, {windowClass: 'link-modal'});
-    modalRef.result.then((result) => {}, (reason) => {})
-  }
-
-  loadTeam(teamId) {
-    this.teamService.loadTeam(teamId)
-    this.updateAllAvailable()
-    this.updateAllSelected()
-    this.closeModal()
-  }
-
-  deleteTeam(teamId) {
-    this.teamService.deleteTeam(teamId)
-    this.savedTeams = Object.keys(this.teamService.getSavedTeams())
-  }
-
-  closeConfirmModal() {
-    this.confirmModal.close()
-  }
-
-  closeModal() {
-    this.modalService.dismissAll();
-  }
-
-  copyLink() {
-    this.clipboardService.copyFromContent(this.exportableLink)
-  }
-
-  saveTeam(confirmContent) {
-    if (this.teamService.teamAlreadyExists(this.team)) {
-      this.openConfirmModal(confirmContent)
-    } else {
-      this.teamService.saveTeam(this.team)
-      this.closeModal()
-    }
-  }
-
-  confirmSave() {
-    this.teamService.saveTeam(this.team)
-    this.closeModal()
+    modalRef.componentInstance.type = 'team'
+    modalRef.componentInstance.item = this.team
   }
 
   getAvailableStatType(pos) {
     return this.teamService.getAvailableStatType(pos)
+  }
+
+  selectLevel(pos, level) {
+    this.team.units[pos].level = level
+    this.changeLevel(pos)
+  }
+
+  // selectMasterSkillLevel(pos, level) {
+  //   this.team.units[pos].masterSkillActivated = level
+  //   this.changeLevel(pos)
+  // }
+
+  selectLimitLevel(pos, level) {
+    this.team.units[pos].limit.level = level
+  }
+
+  selectSubJob(pos, jobNum) {
+    this.team.units[pos].subjob = jobNum
+  }
+
+  selectSupportSkill(unitPos, supportPos, nodeId) {
+    this.team.units[unitPos].activatedSupport[supportPos] = nodeId
+    this.changeLevel(unitPos)
+    console.log(this.team.units[unitPos])
+  }
+
+  selectCounterSkill(pos, nodeId) {
+    this.team.units[pos].activatedCounter = nodeId
+    console.log(this.team.units[pos])
+  }
+
+  selectEsperResonance(pos, level) {
+    this.team.units[pos].esper.resonance = level
+    this.changeLevel(pos)
+  }
+
+  resetUnit(pos) {
+    this.teamService.resetUnit(pos)
+  }
+
+  resetLevel(pos) {
+    this.teamService.resetLevel(pos)
+  }
+
+  resetJob(pos) {
+    this.teamService.resetJob(pos)
+  }
+
+  newTeam() {
+    this.team = this.teamService.newTeam();
+    this.updateAllSelected()
+    this.updateAllAvailable()
   }
 }

@@ -16,6 +16,7 @@ import { TeamService } from '../../services/team.service';
 export class ModalLoadComponent implements OnInit {
   @Input() public savedItems
   @Input() public type
+  @Input() public allowNew = false
 
   constructor(
     private cardService: CardService,
@@ -29,6 +30,14 @@ export class ModalLoadComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (this.type == "team") {
+      let formattedItems = []
+      Object.keys(this.savedItems).forEach(itemName => {
+        formattedItems.push(this.savedItems[itemName])
+      })
+
+      this.savedItems = formattedItems
+    }
   }
 
   close() {
@@ -36,7 +45,11 @@ export class ModalLoadComponent implements OnInit {
   }
 
   load(item) {
-    this.modal.close({type: 'load', item: item})
+    if (item) {
+      this.modal.close({type: 'load', item: item})
+    } else {
+      this.modal.close({type: 'new'})
+    }
   }
 
   delete(item) {
@@ -65,7 +78,11 @@ export class ModalLoadComponent implements OnInit {
         break
       case 'team' :
         this.teamService.deleteTeam(item)
-        this.savedItems = this.teamService.getSavedTeams()
+        let savedTeams = this.teamService.getSavedTeams()
+        this.savedItems = []
+        Object.keys(savedTeams).forEach(teamName => {
+          this.savedItems.push(savedTeams[teamName])
+        })
         break
       default :
         console.log("Trying to delete something not managed : " + this.type)

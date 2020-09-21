@@ -90,8 +90,7 @@ export class ModalSaveComponent implements OnInit {
         savePromise = this.equipmentService.saveEquipment(this.item, method)
         break
       case 'team' :
-        savePromise = this.teamService.saveTeam(this.item)//, method)
-        console.log("Trying to save something not managed : " + this.type)
+        savePromise = this.teamService.saveTeam(this.item, method)
         break
       default :
         console.log("Trying to save something not managed : " + this.type)

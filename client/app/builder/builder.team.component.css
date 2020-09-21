@@ -1,40 +1,12 @@
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
 /***************/
 /* Search Unit */
 /***************/
-.searchBlock {
-  background: #F5F6F8;
-  margin-top: 10px;
-  padding: 5px;
-  width: 100%;
-}
-
-.searchInput {
-  background: none;
-  border: 0;
-  width: 205px;
-}
-
-.fa-times {
-  margin-right: 10px;
-}
-
-.fa-times, .fa-chevron-up, .fa-chevron-down {
-  color: #000;
-  cursor: pointer;
-}
-
-.selectListUnit {
-  width: 250px;
-  max-height: 500px;
-  overflow-y: auto;
-  background-color: #fff;
-}
-
-.rarityBlock {
-  width: 100%;
-}
-
 .rarityLine {
   padding: 5px;
   background: #E8E6DF;
@@ -53,10 +25,6 @@
   position: relative;
 }
 
-.unitBlock {
-  padding-left: 5px;
-}
-
 .unitLine {
   padding-top: 5px;
   cursor: pointer;
@@ -70,11 +38,7 @@
 .unitSelector {
   padding: 0;
   display: block;
-}
-
-.unitSelectorWithSave {
-  display: inline-block;
-  width: 200px;
+  height: 50px;
 }
 
 .unitLogo {
@@ -95,82 +59,89 @@
 
 .unitNameSelector {
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
   vertical-align: middle;
 }
 
-.unitNameSelectorWithSave {
-  width: 140px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.loadDiv {
+/****************/
+/* Unit Builder */
+/****************/
+.leftBlock {
   display: inline-block;
-  vertical-align: middle;
-  width: 30px;
-  text-align: center;
-  height: 30px;
-  padding-top: 5px;
+  width: 250px;
+  vertical-align: top;
 }
 
-.loadDiv .fa-download {
-  font-size: 20px;
+.leftBlock:not(:last-child) {
+  margin-right: 10px;
 }
 
-.fa-download {
-  color: #000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.unitImg {
-  max-width: 100px;
-  max-height: 100px;
+.builderTable {
+  width: 100%;
   margin-top: 10px;
 }
 
-.unitName {
-  font-weight: bold;
-  margin-left: 10px
+.unitImg {
+  height: 150px;
+  margin-top: 10px;
 }
 
-.h1TeamName {
-  display: inline-block;
+.cardIcons {
+  position: absolute;
+  width: 230px;
+  padding: 5px;
 }
 
-.teamCost {
-  display: inline-block;
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.elementImg {
+  height: 32px;
   float: right;
 }
 
-.unitsCol {
-  width: 200px;
+.awakeningDiv, .masterSkillDiv, .limitDiv {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
 }
 
-.row {
-  width: 1300px;
-  margin: auto;
-  margin-bottom: 20px;
+.lbDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
 }
 
-tr.disable {
-  display: none;
+.levelDiv {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.awakeningDiv div:first-child, .lbDiv div:first-child, .levelDiv div:first-child, .masterSkillDiv div:first-child, .limitDiv div:first-child {
+  float: left;
+}
+
+.lbDiv div:first-child {
+  padding-top: 6px;
+}
+
+.levelDiv div:first-child {
+  padding-top: 5px;
+}
+
+.awakeningDiv div:last-child, .lbDiv div:last-child, .levelDiv div:last-child, .masterSkillDiv div:last-child, .limitDiv div:last-child {
+  float: right;
+}
+
+.levelDiv div:last-child {
+  width: 95px;
+}
+
+.masterSkillDiv div:last-child, .limitDiv div:last-child {
+  padding-right: 38px;
 }
 
 .star {
@@ -201,145 +172,166 @@ tr.disable {
   width: 20px;
 }
 
+.jobDiv {
+  width: 72px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.lastJobDiv {
+  margin: 0px;
+}
+
+.subJobColumn .jobDiv {
+  padding: 5px;
+}
+
+.subjobDiv {
+  border: 2px solid transparent;
+}
+
+.selectedSubJob, .subjobDiv:hover {
+  cursor: pointer;
+  border: 2px solid #72767A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subJobColumn .subjobDisable {
+  border: 2px solid transparent !important;
+}
+
+.subjobDisable {
+  opacity: 0.2;
+  cursor: default !important;
+}
+
+.jobsButton {
+  margin-top: 5px;
+}
+
 .mainJob {
-  height: 40px;
+  height: 55px;
   background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
-  background-size: 40px;
+  background-size: 55px;
   padding: 5px;
 }
 
 .subJob {
-  height: 40px;
+  height: 55px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
-  background-size: 40px;
+  background-size: 55px;
   padding: 5px;
 }
 
-.buffImg {
-  width: 40px;
+.equipmentDiv {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.equipmentImg {
+  width: 70px;
+}
+
+.esparCardDiv {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.esperImg, .cardImg {
+  width: 110px;
+  cursor: pointer;
+}
+
+.btn-left {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 110px;
+}
+
+.btn-esper, .btn-card {
+  margin-top: 5px;
+  width: 110px;
+}
+
+.btn-equipment {
+  width: 70px;
+  margin-top: 5px;
+}
+
+.dropdownDiv {
+  display: inline-block;
+}
+
+.dropdownFull {
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdownFull .btn-select {
+  width: 100%;
+}
+
+.selectListFull {
+  width: 232px;
+}
+
+.equipmentPointer {
+  cursor: pointer;
+  width: 70px;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.h1TeamName {
+  display: inline-block;
+}
+
+.teamCost {
+  display: inline-block;
+  float: right;
 }
 
 .teamName {
   width: 100%;
   margin-top: 10px;
-}
-
-.leftBlock {
-  display: inline-block;
-  width: 250px;
-  vertical-align: top;
-}
-
-.leftBlock:not(:last-child) {
-  margin-right: 10px;
-}
-
-.leftBlock .unitDiv {
-  margin-top: 10px;
-}
-
-.leftBlock .unitTable {
-  display: inline-block;
-  max-width: 120px;
-}
-
-.leftBlock .starsLbsLevels {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-}
-
-.leftBlock .stars {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.leftBlock .ratingStars {
-  height: 25px;
-}
-
-.leftBlock .lbs {
-  margin-bottom: 10px;
-}
-
-.rightBlock {
-  width: 70%;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 15px;
-  margin: auto;
-}
-
-.upperBlock {
-  display: block;
-}
-
-.upperBlock .unitDiv {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.upperBlock .unitTable {
-  margin-left: 10px;
-  display: inline-block;
-}
-
-.upperBlock .starsLbsLevels {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin-left: 20px;
-}
-
-.jobsTable, .jobsTable tr, .jobsTable td {
-  border: 0;
-  padding: 0;
-}
-
-.jobsTable td:nth-child(2), .jobsTable td:nth-child(3) {
-  padding-left: 5px;
-}
-
-.jobsTable select {
-  width: 40px;
-}
-
-.unitButtons {
-  text-align: center;
-  border-top: 10px;
-}
-
-.maxLevelButton {
-  margin-left: 10px;
-}
-
-.equipmentsTable {
-  margin-top: 5px;
-  width: 250px;
-}
-
-.equipmentsTable, .equipmentsTable tr, .equipmentsTable td {
-  padding: 0;
-}
-
-.equipmentImg, .selectEquipment {
-  width: 80px;
-}
-
-.esperImg, .selectEsper, .cardImg, .selectCard {
-  width: 120px;
-}
-
-.esperCardTable {
-  width: 250px;
-}
-
-.esperCardTable, .esperCardTable tr, .esperCardTable td {
-  padding: 0;
-}
-
-.esperCardTable td, .equipmentsTable td {
-  vertical-align: top;
 }
 
 .modal-dialog {
@@ -349,25 +341,6 @@ tr.disable {
 .textLink {
   margin: auto;
   width: 250px;
-}
-
-.background_acc {
-  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
-  background-size: 80px;
-}
-
-.background_weapon {
-  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
-  background-size: 80px;
-}
-
-.background_armor {
-  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
-  background-size: 80px;
-}
-
-.damageImg, .skilImg, .damageSkillImg {
-  height: 32px;
 }
 
 .statueImg {
@@ -384,11 +357,7 @@ tr.disable {
   overflow: auto;
 }
 
-.radioList {
-  margin-right: 10px;
-}
-
-.loadButton, .saveButton, .replaceButton, .cancelButton {
+.saveButton, .replaceButton, .cancelButton {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -423,21 +392,8 @@ tr.disable {
   width: 100%;
 }
 
-.equipmentTd {
-  height: 150px;
-  width: 83px;
-}
-
-.esperCardTd {
-  height: 175px;
-}
-
-.supportSkillTable, .counterSkillTable, .subjobSkillTable, .statsTable {
+.statsTable {
   margin-top: 5px;
-  width: 100%;
-}
-
-.supportSkillTable select, .counterSkillTable select, .subjobSkillTable select {
   width: 100%;
 }
 

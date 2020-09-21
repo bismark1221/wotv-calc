@@ -282,17 +282,20 @@ export class EsperService {
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id
-        let savedEspers = this.getSavedEspers()
+        if (method == "new") {
+          // @ts-ignore
+          savableData.storeId = data.id
+          let savedEspers = this.getSavedEspers()
 
-        if (savedEspers[esper.dataId]) {
-          savedEspers[esper.dataId].push(savableData)
-        } else {
-          savedEspers[esper.dataId] = [savableData]
+          if (savedEspers[esper.dataId]) {
+            savedEspers[esper.dataId].push(savableData)
+          } else {
+            savedEspers[esper.dataId] = [savableData]
+          }
+
+          this.localStorageService.set(this.getLocalStorage(), savedEspers);
         }
 
-        this.localStorageService.set(this.getLocalStorage(), savedEspers);
         this.esper.storeId = data.id
 
         return data.id
@@ -367,7 +370,7 @@ export class EsperService {
       this.esper = esper
     }
 
-    this.esper.resetEsper(this.nameService, this.skillService)
+    this.esper.resetEsper()
   }
 
   changeStar(esper = null) {
@@ -383,7 +386,7 @@ export class EsperService {
       this.esper = esper
     }
 
-    this.esper.changeLevel(this.nameService, this.skillService)
+    this.esper.changeLevel()
   }
 
   rightClickNode(node, esper = null) {

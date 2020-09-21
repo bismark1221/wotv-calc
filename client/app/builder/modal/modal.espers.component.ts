@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { EsperService } from '../../services/esper.service';
+import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
 import { NameService } from '../../services/name.service';
 
@@ -65,9 +66,11 @@ export class ModalEspersComponent implements OnInit {
 
   @Input() public modalStep = "select";
   @Input() public esper
+  @Input() public teamUnitPos
 
   constructor(
     private esperService: EsperService,
+    private teamService: TeamService,
     private translateService: TranslateService,
     private nameService: NameService,
     private modal: NgbActiveModal
@@ -81,12 +84,17 @@ export class ModalEspersComponent implements OnInit {
     this.getEspers();
 
     if (this.esper) {
-      this.changeLevel()
+      this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper)
     }
   }
 
   getEspers() {
-    this.espers = this.esperService.getEspersForListing(this.filters);
+    if (isNaN(this.teamUnitPos)) {
+      this.espers = this.esperService.getEspersForListing(this.filters);
+    } else {
+      this.espers = this.teamService.getAvailableEspers(this.teamUnitPos, this.filters)
+    }
+
     this.getFilteredEspers()
     this.translateEspers()
 

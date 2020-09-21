@@ -150,12 +150,6 @@
   width: 100%
 }
 
-.rightBlock {
-  width: 1030px;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .unitImg {
   height: 150px;
   margin-top: 10px;
@@ -377,9 +371,14 @@
   margin: auto;
 }
 
-
-
-
+/***************/
+/* Right Block */
+/***************/
+.rightBlock {
+  width: 1030px;
+  display: inline-block;
+  vertical-align: top;
+}
 
 .statsTable, .skillsTable {
   width: 100%;

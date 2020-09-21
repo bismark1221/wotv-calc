@@ -11,6 +11,10 @@
   </div>
 
   <div class="listModal">
+    <div class="newBuildBlock" *ngIf="allowNew">
+      <button class="btn btn-sub" (click)="load(null)">Create new build</button>
+    </div>
+
     <table class="tableList" *ngIf="savedItems && savedItems.length > 0">
       <tr>
         <th>{{ type | titlecase }}</th>

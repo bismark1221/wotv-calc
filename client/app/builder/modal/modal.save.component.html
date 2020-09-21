@@ -11,7 +11,8 @@
   </div>
 
   <div class="saveBlock" *ngIf="saveStep == 'save'">
-    <input class="nameInput" type="text" [(ngModel)]="item.customName" />
+    <input class="nameInput" type="text" [(ngModel)]="item.customName" *ngIf="type != 'team'"/>
+    <input class="nameInput" type="text" [(ngModel)]="item.name" *ngIf="type == 'team'"/>
     <button class="btn btn-main saveButton" (click)="save()">Save</button>
   </div>
 

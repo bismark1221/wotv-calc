@@ -14,9 +14,6 @@ import { NavService } from '../services/nav.service'
 import { NameService } from '../services/name.service'
 import { AuthService } from '../services/auth.service'
 
-import { BuilderEsperComponent } from './builder.esper.component';
-import { BuilderCardComponent } from './builder.card.component';
-import { BuilderEquipmentComponent } from './builder.equipment.component';
 import { BuilderGuildComponent } from './builder.guild.component';
 
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
@@ -178,17 +175,21 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.authService.$load.subscribe(load => {
-      this.savedUnits = this.unitService.getSavedUnits()
-    });
+    setTimeout(() => {
+      this.authService.$load.subscribe(load => {
+        this.savedUnits = this.unitService.getSavedUnits()
+      });
+    })
 
-    this.authService.$user.subscribe(user => {
-      if (user) {
-        this.showSave = true
-      } else {
-        this.showSave = false
-      }
-    });
+    setTimeout(() => {
+      this.authService.$user.subscribe(user => {
+        if (user) {
+          this.showSave = true
+        } else {
+          this.showSave = false
+        }
+      });
+    })
   }
 
   private getUnits() {
@@ -231,7 +232,7 @@ export class BuilderUnitComponent implements OnInit {
   private loadGuild() {
     this.unit.guild = this.guildService.getGuildForBuilder()
 
-     if (this.unit.savedGuild) {
+    if (this.unit.savedGuild) {
       this.unit.guild.data = this.unit.savedGuild
     }
 
@@ -284,10 +285,12 @@ export class BuilderUnitComponent implements OnInit {
       value = undefined
     }
     this.unit.lb = value
+
     this.unitService.changeLB()
     this.unitService.getActiveSkills()
 
     this.updateSelectedEquipments()
+    this.changeLevel()
   }
 
   updateSelectedEquipments() {

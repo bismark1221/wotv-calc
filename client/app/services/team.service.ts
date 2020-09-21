@@ -16,6 +16,7 @@ import { CardService } from './card.service'
 import { EsperService } from './esper.service'
 import { UnitService } from './unit.service'
 import { AuthService } from './auth.service'
+import { ToolService } from './tool.service'
 
 @Injectable()
 export class TeamService {
@@ -38,6 +39,7 @@ export class TeamService {
     private esperService: EsperService,
     private unitService: UnitService,
     private firestore: AngularFirestore,
+    private toolService: ToolService,
     private authService: AuthService
   ) {
     this.team = {
@@ -67,8 +69,7 @@ export class TeamService {
   }
 
   getSavedTeams() {
-    this.savedTeams = this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
-    return this.savedTeams;
+    return this.localStorageService.get(this.getLocalStorage()) ? this.localStorageService.get(this.getLocalStorage()) : {};
   }
 
   getSavableData(team) {
@@ -90,66 +91,114 @@ export class TeamService {
     return data
   }
 
-  getSavedTeam(teamId) {
-    if (!this.savedTeams) {
-      this.getSavedTeams()
-    }
+  saveTeam(team, method) {
+    let savableData = this.getSavableData(team)
 
-    return this.savedTeams[teamId]
+    if (method == "new" || method == "share") {
+      if (method == "share") {
+        delete savableData.user
+      }
+
+      return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
+        if (method == "new") {
+          // @ts-ignore
+          savableData.storeId = data.id
+          let savedTeams = this.getSavedTeams()
+          savedTeams[team.name] = savableData
+
+          this.localStorageService.set(this.getLocalStorage(), savedTeams);
+        }
+
+        this.team.storeId = data.id
+
+        return data.id
+      })
+    } else {
+      console.log(team)
+      return this.firestore.collection(this.getLocalStorage()).doc(team.storeId).set(savableData).then(data => {
+        let savedTeams = this.getSavedTeams()
+        Object.keys(savedTeams).forEach((teamName, teamIndex) => {
+          if (savedTeams[teamName].storeId == team.storeId) {
+            savedTeams[teamName] = savableData
+            savedTeams[teamName].storeId = team.storeId
+          }
+        })
+
+        this.localStorageService.set(this.getLocalStorage(), savedTeams);
+
+        return team.storeId
+      })
+    }
   }
 
-  saveTeam(team) {
-    if (!this.savedTeams) {
-      this.getSavedTeams()
-    }
+  deleteTeam(team) {
+    this.firestore.collection(this.getLocalStorage()).doc(team.storeId).delete()
 
-    this.savedTeams[team.name] = this.getSavableData(team)
+    let savedTeams = this.getSavedTeams()
 
-    this.localStorageService.set(this.getLocalStorage(), this.savedTeams);
-  }
-
-  teamAlreadyExists(team) {
-    if (!this.savedTeams) {
-      this.getSavedTeams()
-    }
-
-    if (this.savedTeams[team.name]) {
-      return true
-    }
-
-    return false
-  }
-
-  getExportableLink() {
-    return this.firestore.collection("teams").add(this.getSavableData(this.team)).then(data => {
-      // @ts-ignore
-      return "https://wotv-calc.com" + this.navService.getRoute("/builder/team") + "/" + data.pa.path.segments[1]
+    Object.keys(savedTeams).forEach((teamName, savedTeamIndex) => {
+      if (savedTeams[teamName].storeId == team.storeId) {
+        delete savedTeams[teamName]
+      }
     })
+
+    this.localStorageService.set(this.getLocalStorage(), savedTeams);
   }
 
-  getStoredTeam(dataId) {
-    let document = this.firestore.collection("teams").doc(dataId)
+  getStoredTeam(storeId) {
+    let document = this.firestore.collection("teams").doc(storeId)
 
     return document.valueChanges()
   }
 
-  loadTeam(teamId) {
-    this.updateTeam(this.getSavedTeam(teamId))
-  }
-
-  deleteTeam(teamId) {
-    if (!this.savedTeams) {
-      this.getSavedTeams()
+  getExportableLink() {
+    if (!this.team.storeId || this.hasChangeBeenMade()) {
+      return this.saveTeam(this.team, "share")
     }
 
-    delete this.savedTeams[teamId]
-    this.localStorageService.set(this.getLocalStorage(), this.savedTeams);
+    return new Promise((resolve, reject) => {
+      resolve(this.team.storeId)
+    })
+  }
+
+  hasChangeBeenMade() {
+    let result = true
+    if (this.team.storeId) {
+      let newData = this.getSavableData(this.team)
+      let oldData = null
+      let savedTeams = this.getSavedTeams()
+
+      Object.keys(savedTeams).forEach(teamName => {
+        if (savedTeams[teamName].storeId == this.team.storeId) {
+          oldData = savedTeams[teamName]
+          delete oldData.storeId
+        }
+      })
+
+      return !this.toolService.equal(oldData, newData)
+    }
+
+    return result
+  }
+
+  teamAlreadyExists(team) {
+    let savedTeams = this.getSavedTeams()
+    let teamFinded = false
+
+    Object.keys(savedTeams).forEach(teamName => {
+      if (savedTeams[teamName].name == team.name) {
+        teamFinded = true
+      }
+    })
+
+    return teamFinded
   }
 
   updateTeam(data) {
     if (this.team) {
       this.team.guild.data = data.guild
       this.team.name = data.name
+      this.team.storeId = data.storeId
 
       for (let i = 0; i <= 4; i++) {
         if (data.units[i]) {
@@ -192,7 +241,7 @@ export class TeamService {
     let availableUnits = []
 
     units.forEach(unit => {
-      if (alreadyUsedUnitIds.indexOf(unit.id) == -1) {
+      if (alreadyUsedUnitIds.indexOf(unit.dataId) == -1) {
         availableUnits.push(unit)
       }
     })
@@ -200,7 +249,7 @@ export class TeamService {
     return availableUnits
   }
 
-  getAvailableCards(pos) {
+  getAvailableCards(pos, filters) {
     let alreadyUsedCardIds = []
     this.team.units.forEach((unit, unitIndex) => {
       if (unit && unitIndex != pos && unit.card) {
@@ -208,11 +257,11 @@ export class TeamService {
       }
     })
 
-    let cards = this.cardService.getCardsForBuilder()
+    let cards = this.cardService.getCardsForListing(filters)
     let availableCards = []
 
     cards.forEach(card => {
-      if (alreadyUsedCardIds.indexOf(card.id) == -1) {
+      if (alreadyUsedCardIds.indexOf(card.dataId) == -1) {
         availableCards.push(card)
       }
     })
@@ -220,7 +269,7 @@ export class TeamService {
     return availableCards
   }
 
-  getAvailableEspers(pos) {
+  getAvailableEspers(pos, filters) {
     let alreadyUsedEsperIds = []
     this.team.units.forEach((unit, unitIndex) => {
       if (unit && unitIndex != pos && unit.esper) {
@@ -228,11 +277,11 @@ export class TeamService {
       }
     })
 
-    let cards = this.esperService.getEspersForBuilder()
+    let espers = this.esperService.getEspersForListing(filters)
     let availableEspers = []
 
-    cards.forEach(esper => {
-      if (alreadyUsedEsperIds.indexOf(esper.id) == -1) {
+    espers.forEach(esper => {
+      if (alreadyUsedEsperIds.indexOf(esper.dataId) == -1) {
         availableEspers.push(esper)
       }
     })
@@ -432,5 +481,17 @@ export class TeamService {
         this.team.cost += unit.calcCost.total
       }
     })
+  }
+
+  resetUnit(pos) {
+    this.team.units[pos].resetUnit()
+  }
+
+  resetLevel(pos) {
+    this.team.units[pos].resetLevel()
+  }
+
+  resetJob(pos) {
+    this.team.units[pos].resetJob()
   }
 }

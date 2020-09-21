@@ -204,17 +204,19 @@ export class CardService {
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        // @ts-ignore
-        savableData.storeId = data.id
-        let savedCards = this.getSavedCards()
+        if (method == "new") {
+          // @ts-ignore
+          savableData.storeId = data.id
+          let savedCards = this.getSavedCards()
 
-        if (savedCards[card.dataId]) {
-          savedCards[card.dataId].push(savableData)
-        } else {
-          savedCards[card.dataId] = [savableData]
+          if (savedCards[card.dataId]) {
+            savedCards[card.dataId].push(savableData)
+          } else {
+            savedCards[card.dataId] = [savableData]
+          }
+
+          this.localStorageService.set(this.getLocalStorage(), savedCards);
         }
-
-        this.localStorageService.set(this.getLocalStorage(), savedCards);
         this.card.storeId = data.id
 
         return data.id
