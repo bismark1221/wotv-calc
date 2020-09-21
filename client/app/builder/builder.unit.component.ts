@@ -19,6 +19,7 @@ import { BuilderGuildComponent } from './builder.guild.component';
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
 import { ModalCardsComponent } from './modal/modal.cards.component';
+import { ModalGuildComponent } from './modal/modal.guild.component';
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
@@ -361,15 +362,14 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.guild = this.unit.guild.data;
-    modalRef.componentInstance.fromUnitBuilder = true;
+    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data))
 
-    modalRef.result.then((result) => {
+    modalRef.result.then((guild) => {
+      this.unit.guild.data = guild
       this.unitService.changeLevel()
     }, (reason) => {
-      this.unitService.changeLevel()
     });
   }
 

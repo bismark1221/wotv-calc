@@ -5,9 +5,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
-import { GridService } from './grid.service'
-import { SkillService } from './skill.service'
-import { JobService } from './job.service'
 import { GuildService } from './guild.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
@@ -28,9 +25,6 @@ export class TeamService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
-    private gridService: GridService,
-    private skillService: SkillService,
-    private jobService: JobService,
     private guildService: GuildService,
     private navService: NavService,
     private nameService: NameService,
@@ -77,7 +71,7 @@ export class TeamService {
 
     let data = {
       name: team.name,
-      guild: this.guildService.getSavableData(team.guild, false),
+      guild: this.guildService.getSavableData(team.guild.data, false),
       units: [],
       user: user ? user.uid : null
     }
@@ -321,45 +315,6 @@ export class TeamService {
     }
 
     this.updateTeamCost()
-  }
-
-  selectEsper(pos, esperId, customData = null) {
-    if (esperId) {
-      this.team.units[pos].esper = this.esperService.selectEsperForBuilder(esperId, customData)
-    } else {
-      this.team.units[pos].esper = null
-    }
-
-    this.team.units[pos].changeLevel()
-    this.updateTeamCost()
-  }
-
-  selectCard(pos, cardId, customData = null) {
-    if (cardId) {
-      this.team.units[pos].card = this.cardService.selectCardForBuilder(cardId, customData)
-    } else {
-      this.team.units[pos].card = null
-    }
-
-    for (let i = 0; i <= 4; i++) {
-      if (this.team.units[i]) {
-        if (i != pos) {
-          this.team.units[i].teamCards[pos] = this.team.units[pos].card
-        }
-        this.team.units[i].changeLevel()
-      }
-    }
-    this.updateTeamCost()
-  }
-
-  selectEquipment(unitPos, equipmentPos, equipmentId, customData = null) {
-    if (equipmentId) {
-      this.team.units[unitPos].equipments[equipmentPos] = this.equipmentService.selectEquipmentForBuilder(equipmentId, customData)
-    } else {
-      this.team.units[unitPos].equipments[equipmentPos] = null
-    }
-
-    this.team.units[unitPos].changeLevel()
   }
 
   changeStar(pos, value) {

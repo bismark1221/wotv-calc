@@ -293,7 +293,7 @@ export class UnitService {
       esper: null,
       card: null,
       equipments: [null, null, null],
-      guild: this.guildService.getSavableData(unit.guild, false),
+      guild: this.guildService.getSavableData(unit.guild.data, false),
       limitLv: unit.limit ? unit.limit.level : 0,
       user: user ? user.uid : null,
       customName: unit.customName ? unit.customName : ''

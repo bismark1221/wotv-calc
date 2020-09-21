@@ -4,6 +4,24 @@
   margin-bottom: 20px;
 }
 
+.teamName {
+  width: 100%;
+}
+
+.masterButtons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.masterButtons > button {
+  margin-right: 10px;
+}
+
+.teamCost {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
 /***************/
 /* Search Unit */
 /***************/
@@ -66,13 +84,13 @@
 /****************/
 /* Unit Builder */
 /****************/
-.leftBlock {
+.unitCol {
   display: inline-block;
   width: 250px;
   vertical-align: top;
 }
 
-.leftBlock:not(:last-child) {
+.unitCol:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -288,101 +306,17 @@
   margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.h1TeamName {
-  display: inline-block;
-}
-
-.teamCost {
-  display: inline-block;
-  float: right;
-}
-
-.teamName {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.modal-dialog {
-  width: 270px
-}
-
-.textLink {
-  margin: auto;
-  width: 250px;
-}
-
-.statueImg {
-  width: 40px;
-}
-
-.teamsListModal, .teamSaveModal, .teamConfirmModal {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.teamList {
-  max-height: 300px;
-  overflow: auto;
-}
-
-.saveButton, .replaceButton, .cancelButton {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.saveNameInput {
-  display: block;
+/**********/
+/* Stats */
+/**********/
+.statsTable {
+  margin-top: 5px;
   width: 100%;
 }
 
-.replaceButton {
-  float: left;
-}
-
-.cancelButton {
-  float: right;
-}
-
-.masterButtons {
-  width: 100%;
-}
-
-.masterButtons > button {
-  margin-right: 10px;
-}
-
+/*********/
+/* Guild */
+/*********/
 .teamGuild {
   width: 100%;
   margin-top: 10px;
@@ -392,11 +326,21 @@
   width: 100%;
 }
 
-.statsTable {
-  margin-top: 5px;
-  width: 100%;
+.teamGuild tr {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
 }
 
-.teamList .fa {
-  cursor: pointer;
+.teamGuild td {
+  border: 0;
+}
+
+.statueImg {
+  width: 60px;
+}
+
+.btn-guild {
+  width: 100%;
 }

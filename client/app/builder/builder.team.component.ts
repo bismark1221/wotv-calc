@@ -20,6 +20,7 @@ import { BuilderGuildComponent } from './builder.guild.component';
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
 import { ModalCardsComponent } from './modal/modal.cards.component';
+import { ModalGuildComponent } from './modal/modal.guild.component';
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
@@ -132,19 +133,19 @@ export class BuilderTeamComponent implements OnInit {
     } else {
       this.teamService.selectUnit(pos, dataId, customData)
 
-      Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
-        if (this.team.units[pos].board.nodes[nodeId].skill.type !== "buff") {
-          this.team.units[pos].board.nodes[nodeId].skill.name = this.nameService.getName(this.team.units[pos].board.nodes[nodeId].skill)
-        }
-      })
-
       if (this.team.units[pos]) {
-        this.team.units.forEach((unit, unitIndex) => {
-          if (unitIndex !== pos) {
-            this.getAvailableUnits(unitIndex)
+        Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
+          if (this.team.units[pos].board.nodes[nodeId].skill.type !== "buff") {
+            this.team.units[pos].board.nodes[nodeId].skill.name = this.nameService.getName(this.team.units[pos].board.nodes[nodeId].skill)
           }
         })
       }
+
+      this.team.units.forEach((unit, unitIndex) => {
+        if (unitIndex !== pos) {
+          this.getAvailableUnits(unitIndex)
+        }
+      })
     }
   }
 
@@ -238,23 +239,18 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   showGuildDetail() {
-    const modalRef = this.modalService.open(BuilderGuildComponent, { windowClass: 'options-modal' });
+    const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.guild = this.team.guild.data;
-    modalRef.componentInstance.fromUnitBuilder = true;
+    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.team.guild.data))
 
-    modalRef.result.then((result) => {
+    modalRef.result.then((guild) => {
+      this.team.guild.data = guild
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
           this.teamService.changeLevel(i)
         }
       }
     }, (reason) => {
-      for (let i = 0; i <= 4; i++) {
-        if (this.team.units[i]) {
-          this.teamService.changeLevel(i)
-        }
-      }
     });
   }
 
@@ -293,6 +289,8 @@ export class BuilderTeamComponent implements OnInit {
         this.team.units[pos].esper = esper
         this.teamService.changeLevel(pos)
       }
+
+      this.teamService.updateTeamCost()
     }, (reason) => {
     });
   }
@@ -317,6 +315,8 @@ export class BuilderTeamComponent implements OnInit {
             this.team.units[unitIndex].changeLevel()
           }
         })
+
+        this.teamService.updateTeamCost()
       }
     }, (reason) => {
     });
@@ -408,12 +408,10 @@ export class BuilderTeamComponent implements OnInit {
   selectSupportSkill(unitPos, supportPos, nodeId) {
     this.team.units[unitPos].activatedSupport[supportPos] = nodeId
     this.changeLevel(unitPos)
-    console.log(this.team.units[unitPos])
   }
 
   selectCounterSkill(pos, nodeId) {
     this.team.units[pos].activatedCounter = nodeId
-    console.log(this.team.units[pos])
   }
 
   selectEsperResonance(pos, level) {

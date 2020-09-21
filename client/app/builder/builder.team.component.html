@@ -1,19 +1,18 @@
 <div class="row">
+  <div class="teamName">
+    <h1 *ngIf="team.name">{{ team.name }}</h1>
+    <h1 *ngIf="!team.name">New Team</h1>
+  </div>
 
   <div class="masterButtons">
-    <button (click)="openLoadModal()" *ngIf="showSave">LOAD TEAM</button>
-    <button (click)="openSaveModal()" *ngIf="showSave">SAVE TEAM</button>
-    <button (click)="openLinkModal()">GET LINK</button>
-    <button (click)="newTeam()">New Team</button>
+    <button class="btn btn-sub" (click)="newTeam()">New Team</button>
+    <button class="btn btn-sub" (click)="openLinkModal()">Get Link</button>
+    <button class="btn btn-sub" (click)="openLoadModal()" *ngIf="showSave">Load Team</button>
+    <button class="btn btn-sub" (click)="openSaveModal()" *ngIf="showSave">Save Team</button>
+    <span class="teamCost">Cost : {{ team.cost }}</span>
   </div>
 
-  <div class="teamName">
-    <h1 class="h1TeamName" *ngIf="team.name">{{ team.name }}</h1>
-    <h1 class="h1TeamName" *ngIf="!team.name">New Team</h1>
-    <h1 class="teamCost">Cost : {{ team.cost }}</h1>
-  </div>
-
-  <div class="leftBlock" *ngFor="let unitPos of [0, 1, 2, 3, 4]">
+  <div class="unitCol" *ngFor="let unitPos of [0, 1, 2, 3, 4]">
     <ng-select placeholder="Select an unit" [items]="availableUnits[unitPos]" groupBy="rarity" [(ngModel)]="selectedUnits[unitPos]" (ngModelChange)="selectUnit(unitPos)" bindLabel="name" bindValue="dataId" [editableSearchTerm]="true">
       <ng-template ng-label-tmp let-item="item">
         {{item.name}}
@@ -286,6 +285,9 @@
 
     <table class="statsTable" *ngIf="team.units[unitPos]; let unit">
       <tr>
+        <th colspan="4">STATS</th>
+      </tr>
+      <tr>
         <td>HP</td>
         <td>{{ unit.stats.HP.total }}</td>
         <td>ATK</td>
@@ -346,7 +348,7 @@
   <div *ngIf="team" class="teamGuild">
     <table>
       <tr>
-        <td colspan="4">Guild</td>
+        <th colspan="4">Guild</th>
       </tr>
       <tr>
         <td *ngFor="let statue of statueNames">
@@ -359,7 +361,7 @@
         </div>
       </td>
       <tr>
-        <td colspan="4"><button (click)="showGuildDetail()">Custom</button></td>
+        <td colspan="4"><button class="btn btn-sub btn-guild" (click)="showGuildDetail()">Custom</button></td>
       </tr>
     </table>
   </div>

@@ -58,6 +58,7 @@ import { BuilderTeamComponent } from './builder/builder.team.component';
 import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
 import { ModalEspersComponent } from './builder/modal/modal.espers.component';
 import { ModalCardsComponent } from './builder/modal/modal.cards.component';
+import { ModalGuildComponent } from './builder/modal/modal.guild.component';
 import { ModalLoadComponent } from './builder/modal/modal.load.component';
 import { ModalSaveComponent } from './builder/modal/modal.save.component';
 import { ModalLinkComponent } from './builder/modal/modal.link.component';
@@ -121,6 +122,7 @@ export function createTranslateLoader(http: HttpClient) {
     ModalEquipmentsComponent,
     ModalEspersComponent,
     ModalCardsComponent,
+    ModalGuildComponent,
     ModalLoadComponent,
     ModalSaveComponent,
     ModalLinkComponent,
