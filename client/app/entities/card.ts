@@ -123,7 +123,7 @@ export class Card {
       let min = this.stats[stat].min
       let max = this.stats[stat].max
 
-      this.stats[stat].total = Math.floor(min + ((max - min) / (this.maxLevel - 1) * (this.level - 1)))
+      this.stats[stat].total = Math.floor(min + ((max - min) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
     })
 
     let buffs = {
@@ -137,7 +137,7 @@ export class Card {
       if (buff.classic.type == 'support') {
         buff.classic.effects.forEach(effect => {
           buffs.self[effect.type] = {}
-          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.maxLevel - 1) * (this.level - 1)))
+          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
           buffs.self[effect.type].calcType = effect.calcType
         })
 
@@ -147,7 +147,7 @@ export class Card {
           })
         }
 
-        if (buff.lvmax && this.level == this.maxLevel) {
+        if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
           buff.lvmax.effects.forEach(effect => {
             buffs.self[effect.type].value += effect.minValue
           })
@@ -174,7 +174,7 @@ export class Card {
 
     this.partyBuffs.classic.effects.forEach(effect => {
       buffs.party[effect.type] = {}
-      buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.maxLevel - 1) * (this.level - 1)))
+      buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
       buffs.party[effect.type].calcType = effect.calcType
     })
 
@@ -184,7 +184,7 @@ export class Card {
       })
     }
 
-    if (this.partyBuffs.lvmax && this.level == this.maxLevel) {
+    if (this.partyBuffs.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
       this.partyBuffs.lvmax.effects.forEach(effect => {
         buffs.party[effect.type].value += effect.minValue
       })
