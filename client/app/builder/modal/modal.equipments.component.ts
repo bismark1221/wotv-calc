@@ -40,6 +40,10 @@ export class ModalEquipmentsComponent implements OnInit {
 
   ngOnInit() {
     this.getEquipments();
+
+    if (this.equipment) {
+      this.equipment = this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment))
+    }
   }
 
   getEquipments() {
