@@ -2331,7 +2331,7 @@
     "dataId": "IT_JB_MM_LW_STRN_2",
     "names": {
       "en": "Knight of Ruin's Memory (Blue)",
-      "fr": "Chevalier déchu's Memory ((Bleu))"
+      "fr": "Souvenir de Chevalier déchu (bleu)"
     },
     "slug": "knight-of-ruins-memory-blue"
   },
@@ -3831,6 +3831,14 @@
     },
     "slug": "ildyra-unit-shard"
   },
+  "IT_PI_LW_STRN_01": {
+    "dataId": "IT_PI_LW_STRN_01",
+    "names": {
+      "en": "Sterne (Knight of Ruin) Unit Shard",
+      "fr": "Fragments d'unité de Sterne (Chevalier déchu)"
+    },
+    "slug": "sterne-knight-of-ruin-unit-shard"
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -4401,6 +4409,14 @@
   },
   "IT_TICKET_EVENT": {
     "dataId": "IT_TICKET_EVENT",
+    "names": {
+      "en": "Event Skip Ticket",
+      "fr": "Ticket évit'quête (Événement)"
+    },
+    "slug": "event-skip-ticket"
+  },
+  "IT_GL_TICKET_EVENT": {
+    "dataId": "IT_GL_TICKET_EVENT",
     "names": {
       "en": "Event Skip Ticket",
       "fr": "Ticket évit'quête (Événement)"
@@ -5859,6 +5875,14 @@
     },
     "slug": "vision-medal-ur"
   },
+  "IT_EC_UNIT_UR": {
+    "dataId": "IT_EC_UNIT_UR",
+    "names": {
+      "en": "UR Unit Piece",
+      "fr": "Pièce d'unité UR"
+    },
+    "slug": "ur-unit-piece"
+  },
   "IT_EC_FRIEND": {
     "dataId": "IT_EC_FRIEND",
     "names": {
@@ -5986,6 +6010,14 @@
       "fr": "Médaille d'invocation A (Septembre)"
     },
     "slug": "september-summon-medal-a"
+  },
+  "IT_EC_SUMMON_09_B": {
+    "dataId": "IT_EC_SUMMON_09_B",
+    "names": {
+      "en": "September Summon Medal B",
+      "fr": "Médaille d'invocation B (Septembre)"
+    },
+    "slug": "september-summon-medal-b"
   },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
@@ -6443,6 +6475,14 @@
     },
     "slug": "select-ur-unit-summon-ticket-a"
   },
+  "IT_US_SE_R_UR_U_03": {
+    "dataId": "IT_US_SE_R_UR_U_03",
+    "names": {
+      "en": "[Six-Month Anniversay] Select Unit Summon Ticket",
+      "fr": "[Anniversaire des 6 mois] Ticket sélectionneur d'unité UR"
+    },
+    "slug": "six-month-anniversay-select-unit-summon-ticket"
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -6498,6 +6538,14 @@
       "fr": "Ticket sélectionneur d'atout-vision UR [A]"
     },
     "slug": "select-ur-vision-card-summon-ticket-a"
+  },
+  "IT_US_SE_R_UR_V_GL01": {
+    "dataId": "IT_US_SE_R_UR_V_GL01",
+    "names": {
+      "en": "[Six-Month Anniversary] Select Vision Card Summon Ticket",
+      "fr": "[Anniversaire des 6 mois] Ticket sélectionneur d'atout-vision"
+    },
+    "slug": "six-month-anniversary-select-vision-card-summon-ticket"
   },
   "IT_US_SE_AW-ITEM_04": {
     "dataId": "IT_US_SE_AW-ITEM_04",
@@ -7371,6 +7419,14 @@
     },
     "slug": "select-ur-vision-card-shard-x50-summon-ticket"
   },
+  "IT_US_GL_SE_VPI_07": {
+    "dataId": "IT_US_GL_SE_VPI_07",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    },
+    "slug": "select-ur-vision-card-shard-x100-summon-ticket"
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7413,6 +7469,14 @@
   },
   "IT_US_SE_PI_GL02": {
     "dataId": "IT_US_SE_PI_GL02",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
+    },
+    "slug": "select-ur-unit-shard-x40-summon-ticket"
+  },
+  "IT_US_SE_PI_GL03": {
+    "dataId": "IT_US_SE_PI_GL03",
     "names": {
       "en": "Select UR Unit Shard x40 Summon Ticket",
       "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
