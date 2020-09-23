@@ -139,7 +139,7 @@ export class TeamService {
   }
 
   getStoredTeam(storeId) {
-    let document = this.firestore.collection("teams").doc(storeId)
+    let document = this.firestore.collection(this.getLocalStorage()).doc(storeId)
 
     return document.valueChanges()
   }
@@ -188,7 +188,7 @@ export class TeamService {
   }
 
   updateTeam(data) {
-    if (this.team) {
+    if (this.team && data) {
       this.team.guild.data = data.guild
       this.team.name = data.name
       this.team.storeId = data.storeId
