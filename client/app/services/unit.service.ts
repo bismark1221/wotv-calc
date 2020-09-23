@@ -509,7 +509,6 @@ export class UnitService {
         return data.id
       })
     } else {
-      console.log(unit)
       return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
         let savedUnits = this.getSavedUnits()
         savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {

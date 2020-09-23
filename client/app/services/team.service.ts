@@ -108,7 +108,6 @@ export class TeamService {
         return data.id
       })
     } else {
-      console.log(team)
       return this.firestore.collection(this.getLocalStorage()).doc(team.storeId).set(savableData).then(data => {
         let savedTeams = this.getSavedTeams()
         Object.keys(savedTeams).forEach((teamName, teamIndex) => {

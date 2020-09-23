@@ -265,11 +265,9 @@ export class BuilderTeamComponent implements OnInit {
     }
 
     modalRef.result.then((equipment) => {
-      console.log(equipment)
       if (equipment) {
         this.team.units[unitPos].equipments[equipmentPos] = equipment
         this.teamService.changeLevel(unitPos)
-        console.log(this.team.units[unitPos].equipments)
       }
     }, (reason) => {
     });
@@ -330,8 +328,6 @@ export class BuilderTeamComponent implements OnInit {
 
     modalRef.result.then(result => {
       if (result.type == 'load' && result.item) {
-        console.log(result.item)
-
         this.loadTeam(result.item)
       }
 
