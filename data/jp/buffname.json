@@ -113,6 +113,10 @@
             "value": "命中率・範囲攻撃耐性アップ"
         },
         {
+            "key": "BUFF_ARENA_00009",
+            "value": "光属性アビリティ攻撃アップ"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "闇属性アビリティ攻撃アップ"
         },
@@ -143,6 +147,14 @@
         {
             "key": "BUFF_CLASSMATCH_002",
             "value": "Cost制限500以下"
+        },
+        {
+            "key": "BUFF_CLASSMATCH_004",
+            "value": "Cost制限540以下、クイック無効、CTアップ/ダウン無効、治癒力50%ダウン"
+        },
+        {
+            "key": "BUFF_FREEMATCH_004",
+            "value": "クイック無効、CTアップ/ダウン無効、治癒力50%ダウン"
         },
         {
             "key": "BUFF_IFRT_01",
@@ -4235,6 +4247,138 @@
         {
             "key": "BUFF_TNBR_33",
             "value": "水耐性+5%"
+        },
+        {
+            "key": "BUFF_GCAL_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_GCAL_02",
+            "value": "水棲キラー+2%"
+        },
+        {
+            "key": "BUFF_GCAL_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_GCAL_04",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_GCAL_05",
+            "value": "攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_GCAL_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_GCAL_07",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_GCAL_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_GCAL_09",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_GCAL_10",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_GCAL_11",
+            "value": "水棲キラー+2%"
+        },
+        {
+            "key": "BUFF_GCAL_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_GCAL_13",
+            "value": "氷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_GCAL_14",
+            "value": "氷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_GCAL_15",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_GCAL_16",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_GCAL_17",
+            "value": "風耐性+2%"
+        },
+        {
+            "key": "BUFF_GCAL_18",
+            "value": "風耐性+2%"
+        },
+        {
+            "key": "BUFF_GCAL_19",
+            "value": "召喚魔法Lv7"
+        },
+        {
+            "key": "BUFF_GCAL_20",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_GCAL_21",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_GCAL_22",
+            "value": "水棲キラー+3%"
+        },
+        {
+            "key": "BUFF_GCAL_23",
+            "value": "水棲キラー+3%"
+        },
+        {
+            "key": "BUFF_GCAL_24",
+            "value": "氷属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_GCAL_25",
+            "value": "氷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_GCAL_26",
+            "value": "風属性キラー+4%"
+        },
+        {
+            "key": "BUFF_GCAL_27",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_GCAL_28",
+            "value": "風耐性+4%"
+        },
+        {
+            "key": "BUFF_GCAL_29",
+            "value": "風耐性+2%"
+        },
+        {
+            "key": "BUFF_GCAL_30",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_GCAL_31",
+            "value": "召喚魔法Lv15"
+        },
+        {
+            "key": "BUFF_GCAL_32",
+            "value": "水棲キラー+5%"
+        },
+        {
+            "key": "BUFF_GCAL_33",
+            "value": "風属性キラー+5%"
         },
         {
             "key": "BUFF_UN_BD_BUFF_HP_01",

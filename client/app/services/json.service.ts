@@ -2151,7 +2151,7 @@ export class JsonService {
 
     // @TODO Manage via recipe !!
 
-    if (rType == "AF_LOT_LW_HLM_005") {
+    if (rType == "AF_LOT_LW_HLM_005" || rType == "AF_LOT_LW_RNG_007") {
       let splitDataId = dataId.split("_")
       rType = dataId
       if (splitDataId[splitDataId.length - 1] === "1" || splitDataId[splitDataId.length - 1] === "2" || splitDataId[splitDataId.length - 1] === "3" || splitDataId[splitDataId.length - 1] === "4" || splitDataId[splitDataId.length - 1] === "5") {

@@ -6174,7 +6174,8 @@
             "JB_LW_GRM_FIRE",
             "JB_LW_TIM_FIRE",
             "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE"
+            "JB_LW_MST_FIRE",
+            "JB_LW_SAKR"
           ]
         }
       },
@@ -6225,7 +6226,8 @@
             "JB_LW_GRM_FIRE",
             "JB_LW_TIM_FIRE",
             "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE"
+            "JB_LW_MST_FIRE",
+            "JB_LW_SAKR"
           ]
         }
       }
@@ -6683,6 +6685,271 @@
             "JB_LW_MKN_FIRE",
             "JB_FF4_CECL",
             "JB_FF14_TNCR"
+          ]
+        }
+      }
+    ]
+  },
+  "VC_LW_HLNA": {
+    "dataId": "VC_LW_HLNA",
+    "names": {
+      "en": "戦場の黒き薔薇"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 32,
+        "max": 252
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 0,
+        "max": 0
+      },
+      "DEF": {},
+      "SPR": {
+        "min": 2,
+        "max": 4
+      },
+      "MAG": {
+        "min": 47,
+        "max": 184
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapshlna",
+    "slug": "zhan-changno-heiki-qiang-wei",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 2,
+            "maxValue": 8,
+            "calcType": "percent",
+            "increaseMax": true
+          }
+        ],
+        "dataId": "SK_VC_LW_HLNA_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_HLNA_GS"
+        },
+        "slug": "sk_vc_lw_hlna_gs",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "percent",
+            "increaseMax": true
+          }
+        ],
+        "dataId": "SK_VC_LW_HLNA_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_HLNA_GS_AW"
+        },
+        "slug": "sk_vc_lw_hlna_gs_aw",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "AGI",
+            "minValue": 3,
+            "maxValue": 3,
+            "calcType": "percent",
+            "increaseMax": true
+          }
+        ],
+        "dataId": "SK_VC_LW_HLNA_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_HLNA_GSMAX"
+        },
+        "slug": "sk_vc_lw_hlna_gsmax",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_P"
+          },
+          "slug": "sk_vc_lw_hlna_p",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_PAW"
+          },
+          "slug": "sk_vc_lw_hlna_paw",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_PMAX"
+          },
+          "slug": "sk_vc_lw_hlna_pmax",
+          "maxLevel": 1
+        },
+        "cond": {
+          "type": "job",
+          "items": [
+            "JB_LW_WHM_FIRE",
+            "JB_LW_BLM_FIRE",
+            "JB_LW_GRM_FIRE",
+            "JB_LW_TIM_FIRE",
+            "JB_FF14_YSTL",
+            "JB_LW_MST_FIRE",
+            "JB_LW_SAKR"
+          ]
+        }
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": -10,
+              "maxValue": -20,
+              "calcType": "fixe",
+              "turn": 3
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PVA",
+          "type": "skill",
+          "mainSkill": true,
+          "names": {
+            "en": "シャドウフレア"
+          },
+          "slug": "siyadouhurea",
+          "cost": {
+            "type": "AP",
+            "value": 35
+          },
+          "count": 2,
+          "maxLevel": 99,
+          "range": {
+            "h": 1,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 1,
+            "l": 2,
+            "h": 1
+          },
+          "damage": {
+            "minValue": -5,
+            "maxValue": 21,
+            "type": "magic",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ]
+        },
+        "awake": null,
+        "lvmax": null,
+        "cond": {
+          "type": "job",
+          "items": [
+            "JB_LW_WHM_FIRE",
+            "JB_LW_BLM_FIRE",
+            "JB_LW_GRM_FIRE",
+            "JB_LW_TIM_FIRE",
+            "JB_FF14_YSTL",
+            "JB_LW_MST_FIRE",
+            "JB_LW_SAKR"
           ]
         }
       }
@@ -11652,6 +11919,157 @@
             "en": "SK_VC_LW_ASSASIN_PAW"
           },
           "slug": "sk_vc_lw_assasin_paw",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": null
+      }
+    ]
+  },
+  "VC_LW_GCAL": {
+    "dataId": "VC_LW_GCAL",
+    "names": {
+      "en": "凍結氷鳥　グラシアール"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 272
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 72
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 21,
+        "max": 84
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsgcal",
+    "slug": "dong-jie-bing-niao-gurasiaru",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_GCAL_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_GCAL_GS"
+        },
+        "slug": "sk_vc_lw_gcal_gs",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ICE_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_GCAL_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_GCAL_GSAW"
+        },
+        "slug": "sk_vc_lw_gcal_gsaw",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_P"
+          },
+          "slug": "sk_vc_lw_gcal_p",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_PAW"
+          },
+          "slug": "sk_vc_lw_gcal_paw",
           "maxLevel": 4
         },
         "lvmax": null,

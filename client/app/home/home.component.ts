@@ -23,7 +23,7 @@ export class HomeComponent {
   updated = {
     GL: [
       {
-        date: "23/08",
+        date: "23/09",
         items: [
           {type: "unit", dataId: "UN_LW_P_STRN_01"},
           {type: "equipment", dataId: "AF_LW_ACC_001"}
@@ -52,6 +52,18 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "23/09",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_SAKR"},
+          {type: "unit", dataId: "UN_LW_P_ALIM"},
+          {type: "card", dataId: "VC_LW_HLNA"},
+          {type: "card", dataId: "VC_LW_GCAL"},
+          {type: "esper", dataId: "UN_LW_S_GCAL"},
+          {type: "equipment", dataId: "AF_LW_ARW_005"},
+          {type: "equipment", dataId: "AF_LW_ROD_019"}
+        ]
+      },
+      {
         date: "09/09",
         items: [
           {type: "esper", dataId: "UN_LW_S_LVAT"},
@@ -66,17 +78,6 @@ export class HomeComponent {
           {type: "unit", dataId: "UN_LW_P_NIVL"},
           {type: "unit", dataId: "UN_LW_P_RVAL"},
           {type: "equipment", dataId: "AF_LW_BOW_004"}
-        ]
-      },
-      {
-        date: "25/08",
-        items: [
-          {type: "card", dataId: "VC_LW_SCAL"},
-          {type: "card", dataId: "VC_FFCC_MV1"},
-          {type: "card", dataId: "VC_FFCC_MV2"},
-          {type: "card", dataId: "VC_LW_TNBR"},
-          {type: "esper", dataId: "UN_LW_S_TNBR"},
-          {type: "equipment", dataId: "AF_LW_CLT_006"}
         ]
       }
     ]
