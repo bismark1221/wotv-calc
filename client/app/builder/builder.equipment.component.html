@@ -106,7 +106,7 @@
             </select> / {{ equipment.maxLevel }}
           </td>
           <td *ngFor="let statType of equipment.statsTypes">
-            <span *ngIf="equipment.growIds.length > 1">
+            <span *ngIf="equipment.growIds.length > 1 || equipment.grows[equipment.growIds[0]].dataId != 'ARTIFACT_50'">
               <select [(ngModel)]="equipment.stats[statType].selected">
                 <option *ngFor="let stat of equipment.tableStats[statType]">{{ stat }}</option>
               </select>
