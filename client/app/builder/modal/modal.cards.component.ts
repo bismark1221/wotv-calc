@@ -119,6 +119,10 @@ export class ModalCardsComponent implements OnInit {
   }
 
   changeStar(value) {
+    if (value == this.card.star) {
+      value = undefined
+    }
+
     this.card.star = value
     this.cardService.changeStar(this.card)
   }
