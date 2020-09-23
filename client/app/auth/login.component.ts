@@ -62,4 +62,8 @@ export class LoginComponent {
   dontSync() {
     this.modal.close()
   }
+
+  close() {
+    this.modal.dismiss();
+  }
 }
