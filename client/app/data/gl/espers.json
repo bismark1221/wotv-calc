@@ -3961,6 +3961,10 @@
         "based": "physic",
         "hit": 100,
         "crt_hit": -15,
+        "knockback": {
+          "rate": 100,
+          "value": 1
+        },
         "damage": {
           "minValue": 65,
           "maxValue": 100,
@@ -10397,6 +10401,10 @@
         },
         "hit": 100,
         "crt_hit": -15,
+        "knockback": {
+          "rate": 100,
+          "value": 1
+        },
         "damage": {
           "minValue": 65,
           "maxValue": 100,

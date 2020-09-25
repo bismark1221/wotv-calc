@@ -504,6 +504,7 @@ export class BuilderUnitComponent implements OnInit {
 
   selectSupportSkill(pos, nodeId) {
     this.unit.activatedSupport[pos] = nodeId
+    this.unitService.changeLevel()
     this.unitService.getActiveSkills()
   }
 
