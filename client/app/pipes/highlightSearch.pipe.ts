@@ -9,7 +9,9 @@ export class HighlightSearchPipe implements PipeTransform {
       return text
     }
 
-    searchText = searchText.replace(/[()]/g, '')
+    if (searchText) {
+      searchText = searchText.replace(/[()]/g, '')
+    }
 
     text = text.replace(new RegExp(searchText, 'gi'), "</span><span class='highlightSearch'>$&</span><span class='notHighlightSearch'>")
     text = "<span class='notHighlightSearch'>" + text + "</span>"
