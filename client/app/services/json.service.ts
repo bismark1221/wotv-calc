@@ -1506,7 +1506,8 @@ export class JsonService {
       replace: null,
       strength: null,
       ctave: null,
-      crt_hit: null
+      crt_hit: null,
+      kback: null
     };
 
     if (skill.type == "buff") {
@@ -1584,12 +1585,10 @@ export class JsonService {
       }
     }
 
-    if (dataSkill.vat) {
+    if (dataSkill.kback) {
       skill.knockback = {
-        rate: dataSkill.rate,
-        value: dataSkill.vat,
-        direction: dataSkill.dir,
-        ds: dataSkill.ds
+        rate: dataSkill.kback.rate,
+        value: dataSkill.kback.val
       }
     }
 

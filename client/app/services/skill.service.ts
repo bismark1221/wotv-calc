@@ -248,7 +248,7 @@ export class SkillService {
     } else if (effect.calcType === "dispel") {
       return "Dispel"
     } else if (effect.calcType === "resistance") {
-      return "Increase"
+      return this.getIncrease(effect)
     } else {
       return inflict ? "Inflict" : "Grant"
     }
@@ -941,6 +941,11 @@ export class SkillService {
         "BEHIND": " when attacking from behind",
         "MALE": "when attacking male units"
       }
+
+      if (!conditions[effect.condition]) {
+        console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- Unknow condition : " + effect.condition)
+      }
+
       html = html + conditions[effect.condition]
     }
 
@@ -1000,6 +1005,10 @@ export class SkillService {
 
     if (skill.ctbreak) {
       html += (skill.damage ? "<br />" : "") + "Cancel Ability Activation"
+    }
+
+    if (skill.knockback) {
+      html += (skill.damage ? "<br />" : "") + skill.knockback.rate + "% chance to Knockback target" + (skill.aoe ? "s" : "") + " by " + skill.knockback.value + " square" + (skill.knockback.value > 1 ? "s" : "")
     }
 
     if (html != "") {

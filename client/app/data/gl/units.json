@@ -652,6 +652,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -4664,6 +4668,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -7479,6 +7487,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -12474,6 +12486,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -14039,6 +14055,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -14154,6 +14174,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -28018,6 +28042,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -30337,6 +30365,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -32491,6 +32523,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -35414,6 +35450,10 @@
             },
             "based": "physic",
             "crt_hit": 35,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 30,
               "maxValue": 65,
@@ -48858,6 +48898,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -55229,6 +55273,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -59676,6 +59724,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -66362,6 +66414,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -73212,6 +73268,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -76001,6 +76061,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -79937,6 +80001,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -86457,6 +86525,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -96297,6 +96369,10 @@
             },
             "based": "physic",
             "crt_hit": 35,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 30,
               "maxValue": 65,
@@ -106529,6 +106605,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 50,
+              "value": 1
+            },
             "counter": {
               "minValue": 15,
               "maxValue": 30,
@@ -109008,6 +109088,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 40,
               "maxValue": 75,
@@ -121225,6 +121309,10 @@
             },
             "based": "physic",
             "crt_hit": 35,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 30,
               "maxValue": 65,
@@ -141502,6 +141590,10 @@
             },
             "based": "physic",
             "pierce": 1,
+            "knockback": {
+              "rate": 100,
+              "value": 1
+            },
             "damage": {
               "minValue": 35,
               "maxValue": 70,
@@ -156505,6 +156597,10 @@
               "s": 0
             },
             "based": "physic",
+            "knockback": {
+              "rate": 50,
+              "value": 1
+            },
             "counter": {
               "minValue": 15,
               "maxValue": 30,
