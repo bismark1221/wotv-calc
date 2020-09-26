@@ -80,6 +80,7 @@ import { TeamService } from './services/team.service';
 import { ItemService } from './services/item.service';
 import { AuthService } from './services/auth.service';
 import { ToolService } from './services/tool.service';
+import { JpTranslateService } from './services/jptranslate.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -175,6 +176,7 @@ export function createTranslateLoader(http: HttpClient) {
     ItemService,
     AuthService,
     ToolService,
+    JpTranslateService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EquipmentService } from './equipment.service'
 import { Slug } from 'ng2-slugify';
-import { transliterate as tr, slugify } from 'transliteration';
+
+import { JpTranslateService } from './jptranslate.service'
 
 // Translations
 import { default as FR_ArtifactGrow } from   '../../../data/fr/artifactgrow.json';
@@ -727,7 +728,11 @@ export class JsonService {
   ]
 
 
-  constructor(private http: HttpClient, private equipmentService: EquipmentService) {}
+  constructor(
+    private http: HttpClient,
+    private equipmentService: EquipmentService,
+    private jpTranslateService: JpTranslateService
+  ) {}
 
   private GLUnits() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Unit.json').toPromise();
@@ -996,6 +1001,8 @@ export class JsonService {
 
       this.GLCardCond(),
       this.JPCardCond(),
+
+      this.jpTranslateService.init()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1048,6 +1055,8 @@ export class JsonService {
       this.names.en.itemOther = this.formatNames(responses[32]);
       this.names.en.equipmentGrow = this.formatNames(responses[33]);
       this.names.en.item = this.formatNames(responses[44]);
+
+      // responses[49] ==> Use to load JP dict
 
       this.names.fr.unit = this.formatNames(FR_UnitName)
       this.names.fr.skill = this.formatNames(FR_SkillName)
@@ -1163,28 +1172,23 @@ export class JsonService {
       }
     };
 
-    this.getNames(this[this.version].wotvJobs[dataId], 'job');
+    this.getNames(this[this.version].wotvJobs[dataId], 'job', false);
 
     if (this.version == "gl") {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + "_FIRE"]) {
         this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
         this[this.version].wotvJobs[dataId].names.fr = this.names.fr['job'][dataId] ? this.names.fr['job'][dataId] : this.names.fr['job'][dataId + "_FIRE"]
-        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
       } else {
         this[this.version].wotvJobs[dataId].names.en = dataId;
         this[this.version].wotvJobs[dataId].names.fr = dataId;
-        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
       }
     } else {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + "_FIRE"]) {
         this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + "_FIRE"]
-        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this.names.en['job'][dataId])
       } else if (this.names.jp['job'][dataId] || this.names.jp['job'][dataId + "_FIRE"]) {
         this[this.version].wotvJobs[dataId].names.en = this.names.jp['job'][dataId] ? this.names.jp['job'][dataId] : this.names.jp['job'][dataId + "_FIRE"]
-        this[this.version].wotvJobs[dataId].slug = slugify(this[this.version].wotvJobs[dataId].names.en)
       } else {
         this[this.version].wotvJobs[dataId].names.en = dataId;
-        this[this.version].wotvJobs[dataId].slug = this.slug.slugify(this[this.version].wotvJobs[dataId].names.en)
       }
     }
 
@@ -1262,42 +1266,54 @@ export class JsonService {
     }
   }
 
-  private getNames(item, type, dataId = null) {
+  private getNames(item, type, getSlug = true) {
     let id = item.dataId
-    if (dataId) {
-      id = dataId
-    }
 
     if (this.version == "gl") {
       if (this.names.en[type][id]) {
         item.names.en = this.names.en[type][id]
         item.names.fr = this.names.fr[type][id]
-        item.slug = this.slug.slugify(item.names.en)
       } else {
         item.names.en = id;
         item.names.fr = id;
+      }
+
+      if (getSlug) {
         item.slug = this.slug.slugify(item.names.en)
       }
     } else {
+      let slug = null
+      let slugJP = false
+
       if (type == "unit" && this.names.en[type][id]
         || type == "visionCard" && this.names.en[type][id]
         || type == "equipment" && this.names.en[type][id]) {
         item.names.en = this.names.jp[type][id] + " - " + this.names.en[type][id]
-        item.slug = this.slug.slugify(this.names.en[type][id])
+        slug = this.names.en[type][id]
       } else if (type == "job") {
         if (this.names.en[type][id]) {
           item.names.en = this.names.en[type][id]
-          item.slug = this.slug.slugify(this.names.en[type][id])
+          slug = this.names.en[type][id]
         } else {
           item.names.en = this.names.jp[type][id]
-          item.slug = slugify(item.names.en)
+          slug = item.names.en
+          slugJP = true
         }
       } else if (this.names.jp[type][id]) {
         item.names.en = this.names.jp[type][id]
-        item.slug = slugify(item.names.en)
+        slug = item.names.en
+        slugJP = true
       } else {
         item.names.en = id;
-        item.slug = this.slug.slugify(item.names.en)
+        slug = item.names.en
+      }
+
+      if (getSlug) {
+        if (slugJP) {
+          item.slug = this.slug.slugify(this.jpTranslateService.convert(slug, { to: "romaji", mode: "spaced", romajiSystem: "nippon" }))
+        } else {
+          item.slug = this.slug.slugify(slug)
+        }
       }
     }
   }
@@ -1498,7 +1514,7 @@ export class JsonService {
     } else {
       dataSkill = this[this.version].skills[skillId]
       skill.names = {}
-      this.getNames(skill, 'skill')
+      this.getNames(skill, 'skill', false)
       dataSkill.names = skill.names
     }
 
@@ -1968,7 +1984,7 @@ export class JsonService {
         image: this[this.version].equipments[tmrId].asset.toLowerCase()
       }
 
-      this.getNames(tmr, "equipment")
+      this.getNames(tmr, "equipment", false)
 
       Object.keys(this[this.version].equipments[tmrId].status[0]).forEach(stat => {
         tmr.stats[this.stats.unit[stat]] = this[this.version].equipments[tmrId].status[0][stat]
@@ -2246,7 +2262,7 @@ export class JsonService {
                 names: {},
                 curve: {}
               }
-              this.getNames(this[this.version].wotvEquipments[rType].grows[growId], "equipmentGrow")
+              this.getNames(this[this.version].wotvEquipments[rType].grows[growId], "equipmentGrow", false)
 
               Object.keys(this[this.version].grows[growId].curve[0]).forEach(stat => {
                 if (this.stats.unit[stat]) {
@@ -2514,6 +2530,6 @@ export class JsonService {
       delete this[this.version].wotvItems[dataId].recipe
     }
 
-    this.getNames(this[this.version].wotvItems[dataId], 'item');
+    this.getNames(this[this.version].wotvItems[dataId], 'item', false);
   }
 }
