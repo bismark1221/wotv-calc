@@ -27,6 +27,10 @@ export class UnitService {
   private units: Unit[];
   unit
 
+  private glExUnits = [
+    "UN_LW_P_FRVA"
+  ]
+
   private statsType = [
     "HP",
     "TP",
@@ -187,6 +191,26 @@ export class UnitService {
     return units;
   }
 
+  getUnitsForJPBuilder() {
+    this.getUnits()
+
+    if (this.navService.getVersion() == "JP") {
+      let rawUnits = JSON.parse(JSON.stringify(GL_UNITS))
+      Object.keys(rawUnits).forEach(unitId => {
+        if (this.glExUnits.indexOf(unitId) != -1) {
+          let unit = new Unit();
+          unit.constructFromJson(rawUnits[unitId], this.translateService);
+          this.units.push(unit);
+        }
+      });
+    }
+
+    this.units = this.filterUnits(this.units, null);
+    this.toolService.sortByRarity(this.units, "asc")
+
+    return this.units;
+  }
+
   getUnitsForListing(filters = null, sort = "rarity", order = "asc") {
     this.getUnits();
     this.units = this.filterUnits(this.units, filters);
@@ -234,23 +258,19 @@ export class UnitService {
     }
   }
 
-  getUnitsForBuilder() {
-    let units = this.getUnitsForListing(null, "rarity", "asc");
-
-    let formattedUnitsForBuilder = []
-    units.forEach(unit => {
-      formattedUnitsForBuilder.push({
-        id: unit.dataId,
-        name: unit.getName(this.translateService),
-        rarity: unit.rarity
-      })
-    })
-
-    return formattedUnitsForBuilder;
-  }
-
   getUnit(id) {
     this.getUnits();
+
+    if (this.navService.getVersion() == "JP") {
+      let rawUnits = JSON.parse(JSON.stringify(GL_UNITS))
+      Object.keys(rawUnits).forEach(unitId => {
+        if (this.glExUnits.indexOf(unitId) != -1) {
+          let unit = new Unit();
+          unit.constructFromJson(rawUnits[unitId], this.translateService);
+          this.units.push(unit);
+        }
+      });
+    }
 
     return this.units.find(unit => unit.dataId === id);
   }

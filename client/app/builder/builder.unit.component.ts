@@ -194,7 +194,7 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   private getUnits() {
-    this.units = this.formatUnits(this.unitService.getUnitsForListing())
+    this.units = this.formatUnits(this.unitService.getUnitsForJPBuilder())
     this.updateFilteredUnits()
     this.translateUnits();
 

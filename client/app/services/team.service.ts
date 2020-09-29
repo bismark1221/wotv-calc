@@ -230,7 +230,7 @@ export class TeamService {
       }
     })
 
-    let units = this.unitService.getUnitsForListing()
+    let units = this.unitService.getUnitsForJPBuilder()
     let availableUnits = []
 
     units.forEach(unit => {

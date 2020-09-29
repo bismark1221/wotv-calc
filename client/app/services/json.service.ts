@@ -1313,12 +1313,16 @@ export class JsonService {
       }
 
       if (getSlug) {
-        if (slugJP && !this.jpRomaji[slug]) {
-          this.jpTranslateService.convert(slug).then(translatedText => {
-            this.jpRomaji[slug] = translatedText
-            item.slug = this.slug.slugify(translatedText)
-            console.log('New JP Translate ==> "' + slug + '": "' + translatedText + '",')
-          })
+        if (slugJP) {
+          if (!this.jpRomaji[slug]) {
+            this.jpTranslateService.convert(slug).then(translatedText => {
+              this.jpRomaji[slug] = translatedText
+              item.slug = this.slug.slugify(translatedText)
+              console.log('New JP Translate ==> "' + slug + '": "' + translatedText + '",')
+            })
+          } else {
+            item.slug = this.slug.slugify(this.jpRomaji[slug])
+          }
         } else {
           item.slug = this.slug.slugify(slug)
         }
