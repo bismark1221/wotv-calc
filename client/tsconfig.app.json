@@ -7,6 +7,14 @@
     "types": [],
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "paths": {
+      "timers": [
+        "../node_modules/timers-browserify"
+      ],
+      "stream": [
+        "../node_modules/stream-browserify"
+      ],
+    }
   },
   "exclude": [
     "test.ts",

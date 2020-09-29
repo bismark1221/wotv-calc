@@ -171,7 +171,6 @@
               "en": "Brown Sphere",
               "fr": "Sphère marron"
             },
-            "slug": "brown-sphere",
             "cost": {
               "type": "AP",
               "value": 10
@@ -207,7 +206,6 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
-            "slug": "null-max-hp-down",
             "maxLevel": 150,
             "minLevel": 1
           },
@@ -219,7 +217,6 @@
               "en": "Bite Into",
               "fr": "Mordre à pleines dents"
             },
-            "slug": "bite-into",
             "cost": {
               "type": "AP",
               "value": 18
@@ -255,7 +252,6 @@
               "en": "Sweet Fountain",
               "fr": "Adorable fontaine"
             },
-            "slug": "sweet-fountain",
             "cost": {
               "type": "AP",
               "value": 24
@@ -291,7 +287,6 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
-            "slug": "accuracy-1-999-up",
             "maxLevel": 150,
             "minLevel": 61
           }
@@ -313,7 +308,6 @@
           "elem": [
             "neutral"
           ],
-          "slug": "normal-attack",
           "maxLevel": 20,
           "range": {
             "h": 1,
@@ -519,7 +513,6 @@
               "en": "Marshmallow Throw",
               "fr": "Lancer de guimauve"
             },
-            "slug": "marshmallow-throw",
             "cost": {
               "type": "AP",
               "value": 10
@@ -555,7 +548,6 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
-            "slug": "null-max-hp-down",
             "maxLevel": 150,
             "minLevel": 1
           },
@@ -574,7 +566,6 @@
               "en": "DEF 1-80 Up",
               "fr": "DEF ↑ 1 - 80"
             },
-            "slug": "def-1-80-up",
             "maxLevel": 150,
             "minLevel": 31
           },
@@ -593,7 +584,6 @@
               "en": "SPR 1-80 Up",
               "fr": "PSY ↑ 1 - 80"
             },
-            "slug": "spr-1-80-up",
             "maxLevel": 150,
             "minLevel": 31
           },
@@ -605,7 +595,6 @@
               "en": "Melt",
               "fr": "Fonte"
             },
-            "slug": "melt",
             "cost": {
               "type": "AP",
               "value": 18
@@ -641,7 +630,6 @@
               "en": "Sweets Party",
               "fr": "Fête sucrée"
             },
-            "slug": "sweets-party",
             "cost": {
               "type": "AP",
               "value": 24
@@ -680,7 +668,6 @@
           "elem": [
             "neutral"
           ],
-          "slug": "normal-attack",
           "maxLevel": 20,
           "range": {
             "h": 1,
@@ -866,7 +853,6 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
-            "slug": "null-max-hp-down",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -885,7 +871,6 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
-            "slug": "accuracy-1-999-up",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -904,7 +889,6 @@
               "en": "Missile Scatter",
               "fr": "Missile de dispersion"
             },
-            "slug": "missile-scatter",
             "cost": {
               "type": "AP",
               "value": 12
@@ -957,7 +941,6 @@
               "en": "Beam Cannon",
               "fr": "Canon laser"
             },
-            "slug": "beam-cannon",
             "cost": {
               "type": "AP",
               "value": 16
@@ -990,7 +973,6 @@
               "en": "Nuke",
               "fr": "Nucléo-attaque"
             },
-            "slug": "nuke",
             "cost": {
               "type": "AP",
               "value": 20
@@ -1034,7 +1016,6 @@
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
             },
-            "slug": "nullify-ct-changes",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -1054,7 +1035,6 @@
               "en": "Status Ailment [Immobilize] Chance 1-100 Down",
               "fr": "Chance [Immobilisation] ↓ 1 - 100"
             },
-            "slug": "status-ailment-immobilize-chance-1-100-down",
             "maxLevel": 80,
             "minLevel": 1
           }
@@ -1076,7 +1056,6 @@
           "elem": [
             "neutral"
           ],
-          "slug": "normal-attack",
           "maxLevel": 20,
           "range": {
             "h": 4,
@@ -1263,7 +1242,6 @@
               "en": "Fire",
               "fr": "Feu"
             },
-            "slug": "fire",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1295,7 +1273,6 @@
               "en": "Firaga",
               "fr": "Feu X"
             },
-            "slug": "firaga",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1340,7 +1317,6 @@
               "en": "Boil",
               "fr": "Incandescence"
             },
-            "slug": "boil",
             "cost": {
               "type": "TP",
               "value": 5
@@ -1358,7 +1334,6 @@
               "en": "Hellfire",
               "fr": "Flammes de l'enfer"
             },
-            "slug": "hellfire",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1402,7 +1377,6 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
-            "slug": "accuracy-1-999-up",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1421,7 +1395,6 @@
               "en": "Ice Res 1-80 Up",
               "fr": "Rés glace ↑ 1 - 80"
             },
-            "slug": "ice-res-1-80-up",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1440,7 +1413,6 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
-            "slug": "null-max-hp-down",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1459,7 +1431,6 @@
               "en": "Move 1-20 Up",
               "fr": "Déplacement ↑ 1 - 20"
             },
-            "slug": "move-1-20-up",
             "maxLevel": 100,
             "minLevel": 31
           }
@@ -1481,7 +1452,6 @@
           "elem": [
             "neutral"
           ],
-          "slug": "normal-attack",
           "maxLevel": 20,
           "range": {
             "h": 2,
@@ -1656,7 +1626,6 @@
               "en": "1,000 Needles",
               "fr": "1 000 épines"
             },
-            "slug": "1000-needles",
             "cost": {
               "type": "AP",
               "value": 24
@@ -1686,7 +1655,6 @@
               "en": "10,000 Needles",
               "fr": "10 000 épines"
             },
-            "slug": "10000-needles",
             "cost": {
               "type": "AP",
               "value": 44
@@ -1725,7 +1693,6 @@
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
             },
-            "slug": "paralyzing-needle",
             "maxLevel": 10,
             "range": {
               "h": 1,
@@ -1756,7 +1723,6 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
-            "slug": "null-max-hp-down",
             "maxLevel": 10,
             "minLevel": 1
           },
@@ -1773,7 +1739,6 @@
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
             },
-            "slug": "nullify-ct-changes",
             "maxLevel": 10,
             "minLevel": 1
           },
@@ -1792,7 +1757,6 @@
               "en": "SK_LW_HIT_5_N_R",
               "fr": "SK_LW_HIT_5_N_R"
             },
-            "slug": "sk_lw_hit_5_n_r",
             "maxLevel": 3,
             "minLevel": 1
           },
@@ -1811,7 +1775,6 @@
               "en": "SK_LW_HIT_5_SSR",
               "fr": "SK_LW_HIT_5_SSR"
             },
-            "slug": "sk_lw_hit_5_ssr",
             "maxLevel": 6,
             "minLevel": 4
           },
@@ -1830,7 +1793,6 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
-            "slug": "accuracy-1-999-up",
             "maxLevel": 10,
             "minLevel": 7
           }
@@ -1852,7 +1814,6 @@
           "elem": [
             "neutral"
           ],
-          "slug": "normal-attack",
           "maxLevel": 20,
           "range": {
             "h": 0,

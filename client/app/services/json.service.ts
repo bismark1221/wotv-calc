@@ -27,6 +27,8 @@ import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
 import { default as JP_ItemName } from       '../../../data/jp/itemname.json';
 
+import { default as JP_Romaji } from         '../../../data/jp_romaji.json';
+
 
 import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
 import { default as gl_raid_2 } from         '../../../data/raid/gl/raid_ev_06_02_set.json';
@@ -143,6 +145,8 @@ export class JsonService {
     items: {},
     cardConditions: {}
   }
+
+  jpRomaji = {}
 
   names = {
     en : {
@@ -939,7 +943,6 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemName.json').toPromise();
   }
 
-
   getJsons(): Promise<any[]> {
     // @ts-ignore
     return Promise.all([
@@ -1001,8 +1004,6 @@ export class JsonService {
 
       this.GLCardCond(),
       this.JPCardCond(),
-
-      this.jpTranslateService.init()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1056,8 +1057,6 @@ export class JsonService {
       this.names.en.equipmentGrow = this.formatNames(responses[33]);
       this.names.en.item = this.formatNames(responses[44]);
 
-      // responses[49] ==> Use to load JP dict
-
       this.names.fr.unit = this.formatNames(FR_UnitName)
       this.names.fr.skill = this.formatNames(FR_SkillName)
       this.names.fr.job = this.formatNames(FR_JobName)
@@ -1077,6 +1076,8 @@ export class JsonService {
       this.names.jp.itemOther = this.formatNames(JP_ItemOther)
       this.names.jp.equipmentGrow = this.formatNames(JP_ArtifactGrow)
       this.names.jp.item = this.formatNames(JP_ItemName)
+
+      this.jpRomaji = JP_Romaji
 
       this.formatJsons();
 
@@ -1098,6 +1099,9 @@ export class JsonService {
           jobs: this.jp.wotvJobs,
           raids: this.jp.wotvRaids,
           items: this.jp.wotvItems,
+        },
+        translate : {
+          jpRomaji : this.jpRomaji
         }
       };
     });
@@ -1309,8 +1313,12 @@ export class JsonService {
       }
 
       if (getSlug) {
-        if (slugJP) {
-          item.slug = this.slug.slugify(this.jpTranslateService.convert(slug, { to: "romaji", mode: "spaced", romajiSystem: "nippon" }))
+        if (slugJP && !this.jpRomaji[slug]) {
+          this.jpTranslateService.convert(slug).then(translatedText => {
+            this.jpRomaji[slug] = translatedText
+            item.slug = this.slug.slugify(translatedText)
+            console.log('New JP Translate ==> "' + slug + '": "' + translatedText + '",')
+          })
         } else {
           item.slug = this.slug.slugify(slug)
         }

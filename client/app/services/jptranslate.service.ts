@@ -1,24 +1,15 @@
 import { Injectable } from '@angular/core';
-
-import kuromoji from "../../../data/kuromoji";
+import { HttpClient } from '@angular/common/http';
+import * as xml2js from 'xml2js';
 
 @Injectable()
 export class JpTranslateService {
   KATAKANA_HIRAGANA_SHIFT = "\u3041".charCodeAt(0) - "\u30a1".charCodeAt(0);
   HIRAGANA_KATAKANA_SHIFT = "\u30a1".charCodeAt(0) - "\u3041".charCodeAt(0);
-  ROMANIZATION_SYSTEM = {
-    NIPPON: "nippon",
-    PASSPORT: "passport",
-    HEPBURN: "hepburn"
-  };
-  dictPath = "assets/jpdict/"
-
-  analyzer = null
-  initializing = false
 
   constructor(
+    private http: HttpClient
   ) {}
-
 
   isHiragana(ch) {
     ch = ch[0];
@@ -103,172 +94,63 @@ export class JpTranslateService {
     }).join("");
   };
 
-  toRawRomaji(str, system) {
-    system = system || this.ROMANIZATION_SYSTEM.HEPBURN;
-
+  toRawRomaji(str) {
     const romajiSystem = {
-      nippon: {
-        // 数字と記号
-        "１": "1", "２": "2", "３": "3", "４": "4", "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", "０": "0", "！": "!", "“": "\"", "”": "\"", "＃": "#", "＄": "$", "％": "%", "＆": "&", "’": "'", "（": "(", "）": ")", "＝": "=", "～": "~", "｜": "|", "＠": "@", "‘": "`", "＋": "+", "＊": "*", "；": ";", "：": ":", "＜": "<", "＞": ">", "、": ",", "。": ".", "／": "/", "？": "?", "＿": "_", "・": "･", "「": "\"", "」": "\"", "｛": "{", "｝": "}", "￥": "\\", "＾": "^",
+      // 数字と記号
+      "１": "1", "２": "2", "３": "3", "４": "4", "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", "０": "0", "！": "!", "“": "\"", "”": "\"", "＃": "#", "＄": "$", "％": "%", "＆": "&", "’": "'", "（": "(", "）": ")", "＝": "=", "～": "~", "｜": "|", "＠": "@", "‘": "`", "＋": "+", "＊": "*", "；": ";", "：": ":", "＜": "<", "＞": ">", "、": ",", "。": ".", "／": "/", "？": "?", "＿": "_", "・": "･", "「": "\"", "」": "\"", "｛": "{", "｝": "}", "￥": "\\", "＾": "^",
 
-        // 直音-清音(ア～ノ)
-        あ: "a", い: "i", う: "u", え: "e", お: "o", ア: "a", イ: "i", ウ: "u", エ: "e", オ: "o",
+      // 直音-清音(ア～ノ)
+      あ: "a", い: "i", う: "u", え: "e", お: "o", ア: "a", イ: "i", ウ: "u", エ: "e", オ: "o",
 
-        か: "ka", き: "ki", く: "ku", け: "ke", こ: "ko", カ: "ka", キ: "ki", ク: "ku", ケ: "ke", コ: "ko",
+      か: "ka", き: "ki", く: "ku", け: "ke", こ: "ko", カ: "ka", キ: "ki", ク: "ku", ケ: "ke", コ: "ko",
 
-        さ: "sa", し: "si", す: "su", せ: "se", そ: "so", サ: "sa", シ: "si", ス: "su", セ: "se", ソ: "so",
+      さ: "sa", し: "shi", す: "su", せ: "se", そ: "so", サ: "sa", シ: "shi", ス: "su", セ: "se", ソ: "so",
 
-        た: "ta", ち: "ti", つ: "tu", て: "te", と: "to", タ: "ta", チ: "ti", ツ: "tu", テ: "te", ト: "to",
+      た: "ta", ち: "chi", つ: "tsu", て: "te", と: "to", タ: "ta", チ: "chi", ツ: "tsu", テ: "te", ト: "to",
 
-        な: "na", に: "ni", ぬ: "nu", ね: "ne", の: "no", ナ: "na", ニ: "ni", ヌ: "nu", ネ: "ne", ノ: "no",
+      な: "na", に: "ni", ぬ: "nu", ね: "ne", の: "no", ナ: "na", ニ: "ni", ヌ: "nu", ネ: "ne", ノ: "no",
 
-        // 直音-清音(ハ～ヲ)
-        は: "ha", ひ: "hi", ふ: "hu", へ: "he", ほ: "ho", ハ: "ha", ヒ: "hi", フ: "hu", ヘ: "he", ホ: "ho",
+      // 直音-清音(ハ～ヲ)
+      は: "ha", ひ: "hi", ふ: "fu", へ: "he", ほ: "ho", ハ: "ha", ヒ: "hi", フ: "fu", ヘ: "he", ホ: "ho",
 
-        ま: "ma", み: "mi", む: "mu", め: "me", も: "mo", マ: "ma", ミ: "mi", ム: "mu", メ: "me", モ: "mo",
+      ま: "ma", み: "mi", む: "mu", め: "me", も: "mo", マ: "ma", ミ: "mi", ム: "mu", メ: "me", モ: "mo",
 
-        や: "ya", ゆ: "yu", よ: "yo", ヤ: "ya", ユ: "yu", ヨ: "yo",
+      や: "ya", ゆ: "yu", よ: "yo", ヤ: "ya", ユ: "yu", ヨ: "yo",
 
-        ら: "ra", り: "ri", る: "ru", れ: "re", ろ: "ro", ラ: "ra", リ: "ri", ル: "ru", レ: "re", ロ: "ro",
+      ら: "ra", り: "ri", る: "ru", れ: "re", ろ: "ro", ラ: "ra", リ: "ri", ル: "ru", レ: "re", ロ: "ro",
 
-        わ: "wa", ゐ: "wi", ゑ: "we", を: "wo", ワ: "wa", ヰ: "wi", ヱ: "we", ヲ: "wo",
+      わ: "wa", ゐ: "i", ゑ: "e", を: "o", ワ: "wa", ヰ: "i", ヱ: "e", ヲ: "o",
 
-        // 直音-濁音(ガ～ボ)、半濁音(パ～ポ)
-        が: "ga", ぎ: "gi", ぐ: "gu", げ: "ge", ご: "go", ガ: "ga", ギ: "gi", グ: "gu", ゲ: "ge", ゴ: "go",
+      // 直音-濁音(ガ～ボ)、半濁音(パ～ポ)
+      が: "ga", ぎ: "gi", ぐ: "gu", げ: "ge", ご: "go", ガ: "ga", ギ: "gi", グ: "gu", ゲ: "ge", ゴ: "go",
 
-        ざ: "za", じ: "zi", ず: "zu", ぜ: "ze", ぞ: "zo", ザ: "za", ジ: "zi", ズ: "zu", ゼ: "ze", ゾ: "zo",
+      ざ: "za", じ: "ji", ず: "zu", ぜ: "ze", ぞ: "zo", ザ: "za", ジ: "ji", ズ: "zu", ゼ: "ze", ゾ: "zo",
 
-        だ: "da", ぢ: "di", づ: "du", で: "de", ど: "do", ダ: "da", ヂ: "di", ヅ: "du", デ: "de", ド: "do",
+      だ: "da", ぢ: "ji", づ: "zu", で: "de", ど: "do", ダ: "da", ヂ: "ji", ヅ: "zu", デ: "de", ド: "do",
 
-        ば: "ba", び: "bi", ぶ: "bu", べ: "be", ぼ: "bo", バ: "ba", ビ: "bi", ブ: "bu", ベ: "be", ボ: "bo",
+      ば: "ba", び: "bi", ぶ: "bu", べ: "be", ぼ: "bo", バ: "ba", ビ: "bi", ブ: "bu", ベ: "be", ボ: "bo",
 
-        ぱ: "pa", ぴ: "pi", ぷ: "pu", ぺ: "pe", ぽ: "po", パ: "pa", ピ: "pi", プ: "pu", ペ: "pe", ポ: "po",
+      ぱ: "pa", ぴ: "pi", ぷ: "pu", ぺ: "pe", ぽ: "po", パ: "pa", ピ: "pi", プ: "pu", ペ: "pe", ポ: "po",
 
-        // 拗音-清音(キャ～リョ)
-        きゃ: "kya", きゅ: "kyu", きょ: "kyo", しゃ: "sya", しゅ: "syu", しょ: "syo", ちゃ: "tya", ちゅ: "tyu", ちょ: "tyo", にゃ: "nya", にゅ: "nyu", にょ: "nyo", ひゃ: "hya", ひゅ: "hyu", ひょ: "hyo", みゃ: "mya", みゅ: "myu", みょ: "myo", りゃ: "rya", りゅ: "ryu", りょ: "ryo", キャ: "kya", キュ: "kyu", キョ: "kyo", シャ: "sya", シュ: "syu", ショ: "syo", チャ: "tya", チュ: "tyu", チョ: "tyo", ニャ: "nya", ニュ: "nyu", ニョ: "nyo", ヒャ: "hya", ヒュ: "hyu", ヒョ: "hyo", ミャ: "mya", ミュ: "myu", ミョ: "myo", リャ: "rya", リュ: "ryu", リョ: "ryo",
+      // 拗音-清音(キャ～リョ)
+      きゃ: "kya", きゅ: "kyu", きょ: "kyo", しゃ: "sha", しゅ: "shu", しょ: "sho", ちゃ: "cha", ちゅ: "chu", ちょ: "cho", にゃ: "nya", にゅ: "nyu", にょ: "nyo", ひゃ: "hya", ひゅ: "hyu", ひょ: "hyo", みゃ: "mya", みゅ: "myu", みょ: "myo", りゃ: "rya", りゅ: "ryu", りょ: "ryo", キャ: "kya", キュ: "kyu", キョ: "kyo", シャ: "sha", シュ: "shu", ショ: "sho", チャ: "cha", チュ: "chu", チョ: "cho", ニャ: "nya", ニュ: "nyu", ニョ: "nyo", ヒャ: "hya", ヒュ: "hyu", ヒョ: "hyo", ミャ: "mya", ミュ: "myu", ミョ: "myo", リャ: "rya", リュ: "ryu", リョ: "ryo",
 
-        // 拗音-濁音(ギャ～ビョ)、半濁音(ピャ～ピョ)、合拗音(クヮ、グヮ)
-        ぎゃ: "gya", ぎゅ: "gyu", ぎょ: "gyo", じゃ: "zya", じゅ: "zyu", じょ: "zyo", ぢゃ: "dya", ぢゅ: "dyu", ぢょ: "dyo", びゃ: "bya", びゅ: "byu", びょ: "byo", ぴゃ: "pya", ぴゅ: "pyu", ぴょ: "pyo", くゎ: "kwa", ぐゎ: "gwa", ギャ: "gya", ギュ: "gyu", ギョ: "gyo", ジャ: "zya", ジュ: "zyu", ジョ: "zyo", ヂャ: "dya", ヂュ: "dyu", ヂョ: "dyo", ビャ: "bya", ビュ: "byu", ビョ: "byo", ピャ: "pya", ピュ: "pyu", ピョ: "pyo", クヮ: "kwa", グヮ: "gwa",
+      // 拗音-濁音(ギャ～ビョ)、半濁音(ピャ～ピョ)、合拗音(クヮ、グヮ)
+      ぎゃ: "gya", ぎゅ: "gyu", ぎょ: "gyo", じゃ: "ja", じゅ: "ju", じょ: "jo", ぢゃ: "ja", ぢゅ: "ju", ぢょ: "jo", びゃ: "bya", びゅ: "byu", びょ: "byo", ぴゃ: "pya", ぴゅ: "pyu", ぴょ: "pyo", // くゎ: "", // ぐゎ: "",
+      ギャ: "gya", ギュ: "gyu", ギョ: "gyo", ジャ: "ja", ジュ: "ju", ジョ: "jo", ヂャ: "ja", ヂュ: "ju", ヂョ: "jo", ビャ: "bya", ビュ: "byu", ビョ: "byo", ピャ: "pya", ピュ: "pyu", ピョ: "pyo", // クヮ: "", // グヮ: "",
 
-        // 小書きの仮名、符号
-        ぁ: "a", ぃ: "i", ぅ: "u", ぇ: "e", ぉ: "o", ゃ: "ya", ゅ: "yu", ょ: "yo", ゎ: "wa", ァ: "a", ィ: "i", ゥ: "u", ェ: "e", ォ: "o", ャ: "ya", ュ: "yu", ョ: "yo", ヮ: "wa", ヵ: "ka", ヶ: "ke", ん: "n", ン: "n",
-        // ー: "",
-        "　": " ",
+      // 小書きの仮名、符号
+      ぁ: "a", ぃ: "i", ぅ: "u", ぇ: "e", ぉ: "o", ゃ: "ya", ゅ: "yu", ょ: "yo", ゎ: "wa", ァ: "a", ィ: "i", ゥ: "u", ェ: "e", ォ: "o", ャ: "ya", ュ: "yu", ョ: "yo", ヮ: "wa", ヵ: "ka", ヶ: "ke", ん: "n", ン: "n",
+      // ー: "",
+      "　": " ",
 
-        // 外来音(イェ～グォ)
-        いぇ: "ye", // うぃ: "", // うぇ: "", // うぉ: "", きぇ: "kye", // くぁ: "", くぃ: "kwi", くぇ: "kwe", くぉ: "kwo", // ぐぁ: "", ぐぃ: "gwi", ぐぇ: "gwe", ぐぉ: "gwo", イェ: "ye", // ウィ: "", // ウェ: "", // ウォ: "", // ヴ: "", // ヴァ: "", // ヴィ: "", // ヴェ: "", // ヴォ: "", // ヴュ: "", // ヴョ: "", キェ: "kya", // クァ: "", クィ: "kwi", クェ: "kwe", クォ: "kwo", // グァ: "", グィ: "gwi", グェ: "gwe", グォ: "gwo",
+      // 外来音(イェ～グォ)
+      いぇ: "ye", うぃ: "wi", うぇ: "we", うぉ: "wo", きぇ: "kye", くぁ: "kwa", くぃ: "kwi", くぇ: "kwe", くぉ: "kwo", ぐぁ: "gwa", ぐぃ: "gwi", ぐぇ: "gwe", ぐぉ: "gwo", イェ: "ye", ウィ: "wi", ウェ: "we", ウォ: "wo", ヴ: "vu", ヴァ: "va", ヴィ: "vi", ヴェ: "ve", ヴォ: "vo", ヴュ: "vyu", ヴョ: "vyo", キェ: "kya", クァ: "kwa", クィ: "kwi", クェ: "kwe", クォ: "kwo", グァ: "gwa", グィ: "gwi", グェ: "gwe", グォ: "gwo",
 
-        // 外来音(シェ～フョ)
-        しぇ: "sye", じぇ: "zye", すぃ: "swi", ずぃ: "zwi", ちぇ: "tye", つぁ: "twa", つぃ: "twi", つぇ: "twe", つぉ: "two", // てぃ: "ti", // てゅ: "tyu", // でぃ: "di", // でゅ: "dyu", // とぅ: "tu", // どぅ: "du", にぇ: "nye", ひぇ: "hye", ふぁ: "hwa", ふぃ: "hwi", ふぇ: "hwe", ふぉ: "hwo", ふゅ: "hwyu", ふょ: "hwyo", シェ: "sye", ジェ: "zye", スィ: "swi", ズィ: "zwi", チェ: "tye", ツァ: "twa", ツィ: "twi", ツェ: "twe", ツォ: "two", // ティ: "ti", // テュ: "tyu", // ディ: "di", // デュ: "dyu", // トゥ: "tu", // ドゥ: "du", ニェ: "nye", ヒェ: "hye", ファ: "hwa", フィ: "hwi", フェ: "hwe", フォ: "hwo", フュ: "hwyu", フョ: "hwyo"
-      },
-      passport: {
-        // 数字と記号
-        "１": "1", "２": "2", "３": "3", "４": "4", "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", "０": "0", "！": "!", "“": "\"", "”": "\"", "＃": "#", "＄": "$", "％": "%", "＆": "&", "’": "'", "（": "(", "）": ")", "＝": "=", "～": "~", "｜": "|", "＠": "@", "‘": "`", "＋": "+", "＊": "*", "；": ";", "：": ":", "＜": "<", "＞": ">", "、": ",", "。": ".", "／": "/", "？": "?", "＿": "_", "・": "･", "「": "\"", "」": "\"", "｛": "{", "｝": "}", "￥": "\\", "＾": "^",
-
-        // 直音-清音(ア～ノ)
-        あ: "a", い: "i", う: "u", え: "e", お: "o", ア: "a", イ: "i", ウ: "u", エ: "e", オ: "o",
-
-        か: "ka", き: "ki", く: "ku", け: "ke", こ: "ko", カ: "ka", キ: "ki", ク: "ku", ケ: "ke", コ: "ko",
-
-        さ: "sa", し: "shi", す: "su", せ: "se", そ: "so", サ: "sa", シ: "shi", ス: "su", セ: "se", ソ: "so",
-
-        た: "ta", ち: "chi", つ: "tsu", て: "te", と: "to", タ: "ta", チ: "chi", ツ: "tsu", テ: "te", ト: "to",
-
-        な: "na", に: "ni", ぬ: "nu", ね: "ne", の: "no", ナ: "na", ニ: "ni", ヌ: "nu", ネ: "ne", ノ: "no",
-
-        // 直音-清音(ハ～ヲ)
-        は: "ha", ひ: "hi", ふ: "fu", へ: "he", ほ: "ho", ハ: "ha", ヒ: "hi", フ: "fu", ヘ: "he", ホ: "ho",
-
-        ま: "ma", み: "mi", む: "mu", め: "me", も: "mo", マ: "ma", ミ: "mi", ム: "mu", メ: "me", モ: "mo",
-
-        や: "ya", ゆ: "yu", よ: "yo", ヤ: "ya", ユ: "yu", ヨ: "yo",
-
-        ら: "ra", り: "ri", る: "ru", れ: "re", ろ: "ro", ラ: "ra", リ: "ri", ル: "ru", レ: "re", ロ: "ro",
-
-        わ: "wa", ゐ: "i", ゑ: "e", を: "o", ワ: "wa", ヰ: "i", ヱ: "e", ヲ: "o",
-
-        // 直音-濁音(ガ～ボ)、半濁音(パ～ポ)
-        が: "ga", ぎ: "gi", ぐ: "gu", げ: "ge", ご: "go", ガ: "ga", ギ: "gi", グ: "gu", ゲ: "ge", ゴ: "go",
-
-        ざ: "za", じ: "ji", ず: "zu", ぜ: "ze", ぞ: "zo", ザ: "za", ジ: "ji", ズ: "zu", ゼ: "ze", ゾ: "zo",
-
-        だ: "da", ぢ: "ji", づ: "zu", で: "de", ど: "do", ダ: "da", ヂ: "ji", ヅ: "zu", デ: "de", ド: "do",
-
-        ば: "ba", び: "bi", ぶ: "bu", べ: "be", ぼ: "bo", バ: "ba", ビ: "bi", ブ: "bu", ベ: "be", ボ: "bo",
-
-        ぱ: "pa", ぴ: "pi", ぷ: "pu", ぺ: "pe", ぽ: "po", パ: "pa", ピ: "pi", プ: "pu", ペ: "pe", ポ: "po",
-
-        // 拗音-清音(キャ～リョ)
-        きゃ: "kya", きゅ: "kyu", きょ: "kyo", しゃ: "sha", しゅ: "shu", しょ: "sho", ちゃ: "cha", ちゅ: "chu", ちょ: "cho", にゃ: "nya", にゅ: "nyu", にょ: "nyo", ひゃ: "hya", ひゅ: "hyu", ひょ: "hyo", みゃ: "mya", みゅ: "myu", みょ: "myo", りゃ: "rya", りゅ: "ryu", りょ: "ryo", キャ: "kya", キュ: "kyu", キョ: "kyo", シャ: "sha", シュ: "shu", ショ: "sho", チャ: "cha", チュ: "chu", チョ: "cho", ニャ: "nya", ニュ: "nyu", ニョ: "nyo", ヒャ: "hya", ヒュ: "hyu", ヒョ: "hyo", ミャ: "mya", ミュ: "myu", ミョ: "myo", リャ: "rya", リュ: "ryu", リョ: "ryo",
-
-        // 拗音-濁音(ギャ～ビョ)、半濁音(ピャ～ピョ)、合拗音(クヮ、グヮ)
-        ぎゃ: "gya", ぎゅ: "gyu", ぎょ: "gyo", じゃ: "ja", じゅ: "ju", じょ: "jo", ぢゃ: "ja", ぢゅ: "ju", ぢょ: "jo", びゃ: "bya", びゅ: "byu", びょ: "byo", ぴゃ: "pya", ぴゅ: "pyu", ぴょ: "pyo", // くゎ: "", // ぐゎ: "", ギャ: "gya", ギュ: "gyu", ギョ: "gyo", ジャ: "ja", ジュ: "ju", ジョ: "jo", ヂャ: "ja", ヂュ: "ju", ヂョ: "jo", ビャ: "bya", ビュ: "byu", ビョ: "byo", ピャ: "pya", ピュ: "pyu", ピョ: "pyo", // クヮ: "", // グヮ: "",
-
-        // 小書きの仮名、符号
-        ぁ: "a", ぃ: "i", ぅ: "u", ぇ: "e", ぉ: "o", ゃ: "ya", ゅ: "yu", ょ: "yo", ゎ: "wa", ァ: "a", ィ: "i", ゥ: "u", ェ: "e", ォ: "o", ャ: "ya", ュ: "yu", ョ: "yo", ヮ: "wa", ヵ: "ka", ヶ: "ke", ん: "n", ン: "n",
-        // ー: "",
-        "　": " ",
-
-        // 外来音(イェ～グォ)
-        // いぇ: "", // うぃ: "", // うぇ: "", // うぉ: "", // きぇ: "", // くぁ: "", // くぃ: "", // くぇ: "", // くぉ: "", // ぐぁ: "", // ぐぃ: "", // ぐぇ: "", // ぐぉ: "", // イェ: "", // ウィ: "", // ウェ: "", // ウォ: "", ヴ: "b" // ヴァ: "", // ヴィ: "", // ヴェ: "", // ヴォ: "", // ヴュ: "", // ヴョ: "", // キェ: "", // クァ: "", // クィ: "", // クェ: "", // クォ: "", // グァ: "", // グィ: "", // グェ: "", // グォ: "",
-
-        // 外来音(シェ～フョ)
-        // しぇ: "", // じぇ: "", // すぃ: "", // ずぃ: "", // ちぇ: "", // つぁ: "", // つぃ: "", // つぇ: "", // つぉ: "", // てぃ: "", // てゅ: "", // でぃ: "", // でゅ: "", // とぅ: "", // どぅ: "", // にぇ: "", // ひぇ: "", // ふぁ: "", // ふぃ: "", // ふぇ: "", // ふぉ: "", // ふゅ: "", // ふょ: "", // シェ: "", // ジェ: "", // スィ: "", // ズィ: "", // チェ: "", // ツァ: "", // ツィ: "", // ツェ: "", // ツォ: "", // ティ: "", // テュ: "", // ディ: "", // デュ: "", // トゥ: "", // ドゥ: "", // ニェ: "", // ヒェ: "", // ファ: "", // フィ: "", // フェ: "", // フォ: "", // フュ: "", // フョ: ""
-      },
-      hepburn: {
-        // 数字と記号
-        "１": "1", "２": "2", "３": "3", "４": "4", "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", "０": "0", "！": "!", "“": "\"", "”": "\"", "＃": "#", "＄": "$", "％": "%", "＆": "&", "’": "'", "（": "(", "）": ")", "＝": "=", "～": "~", "｜": "|", "＠": "@", "‘": "`", "＋": "+", "＊": "*", "；": ";", "：": ":", "＜": "<", "＞": ">", "、": ",", "。": ".", "／": "/", "？": "?", "＿": "_", "・": "･", "「": "\"", "」": "\"", "｛": "{", "｝": "}", "￥": "\\", "＾": "^",
-
-        // 直音-清音(ア～ノ)
-        あ: "a", い: "i", う: "u", え: "e", お: "o", ア: "a", イ: "i", ウ: "u", エ: "e", オ: "o",
-
-        か: "ka", き: "ki", く: "ku", け: "ke", こ: "ko", カ: "ka", キ: "ki", ク: "ku", ケ: "ke", コ: "ko",
-
-        さ: "sa", し: "shi", す: "su", せ: "se", そ: "so", サ: "sa", シ: "shi", ス: "su", セ: "se", ソ: "so",
-
-        た: "ta", ち: "chi", つ: "tsu", て: "te", と: "to", タ: "ta", チ: "chi", ツ: "tsu", テ: "te", ト: "to",
-
-        な: "na", に: "ni", ぬ: "nu", ね: "ne", の: "no", ナ: "na", ニ: "ni", ヌ: "nu", ネ: "ne", ノ: "no",
-
-        // 直音-清音(ハ～ヲ)
-        は: "ha", ひ: "hi", ふ: "fu", へ: "he", ほ: "ho", ハ: "ha", ヒ: "hi", フ: "fu", ヘ: "he", ホ: "ho",
-
-        ま: "ma", み: "mi", む: "mu", め: "me", も: "mo", マ: "ma", ミ: "mi", ム: "mu", メ: "me", モ: "mo",
-
-        や: "ya", ゆ: "yu", よ: "yo", ヤ: "ya", ユ: "yu", ヨ: "yo",
-
-        ら: "ra", り: "ri", る: "ru", れ: "re", ろ: "ro", ラ: "ra", リ: "ri", ル: "ru", レ: "re", ロ: "ro",
-
-        わ: "wa", ゐ: "i", ゑ: "e", を: "o", ワ: "wa", ヰ: "i", ヱ: "e", ヲ: "o",
-
-        // 直音-濁音(ガ～ボ)、半濁音(パ～ポ)
-        が: "ga", ぎ: "gi", ぐ: "gu", げ: "ge", ご: "go", ガ: "ga", ギ: "gi", グ: "gu", ゲ: "ge", ゴ: "go",
-
-        ざ: "za", じ: "ji", ず: "zu", ぜ: "ze", ぞ: "zo", ザ: "za", ジ: "ji", ズ: "zu", ゼ: "ze", ゾ: "zo",
-
-        だ: "da", ぢ: "ji", づ: "zu", で: "de", ど: "do", ダ: "da", ヂ: "ji", ヅ: "zu", デ: "de", ド: "do",
-
-        ば: "ba", び: "bi", ぶ: "bu", べ: "be", ぼ: "bo", バ: "ba", ビ: "bi", ブ: "bu", ベ: "be", ボ: "bo",
-
-        ぱ: "pa", ぴ: "pi", ぷ: "pu", ぺ: "pe", ぽ: "po", パ: "pa", ピ: "pi", プ: "pu", ペ: "pe", ポ: "po",
-
-        // 拗音-清音(キャ～リョ)
-        きゃ: "kya", きゅ: "kyu", きょ: "kyo", しゃ: "sha", しゅ: "shu", しょ: "sho", ちゃ: "cha", ちゅ: "chu", ちょ: "cho", にゃ: "nya", にゅ: "nyu", にょ: "nyo", ひゃ: "hya", ひゅ: "hyu", ひょ: "hyo", みゃ: "mya", みゅ: "myu", みょ: "myo", りゃ: "rya", りゅ: "ryu", りょ: "ryo", キャ: "kya", キュ: "kyu", キョ: "kyo", シャ: "sha", シュ: "shu", ショ: "sho", チャ: "cha", チュ: "chu", チョ: "cho", ニャ: "nya", ニュ: "nyu", ニョ: "nyo", ヒャ: "hya", ヒュ: "hyu", ヒョ: "hyo", ミャ: "mya", ミュ: "myu", ミョ: "myo", リャ: "rya", リュ: "ryu", リョ: "ryo",
-
-        // 拗音-濁音(ギャ～ビョ)、半濁音(ピャ～ピョ)、合拗音(クヮ、グヮ)
-        ぎゃ: "gya", ぎゅ: "gyu", ぎょ: "gyo", じゃ: "ja", じゅ: "ju", じょ: "jo", ぢゃ: "ja", ぢゅ: "ju", ぢょ: "jo", びゃ: "bya", びゅ: "byu", びょ: "byo", ぴゃ: "pya", ぴゅ: "pyu", ぴょ: "pyo", // くゎ: "", // ぐゎ: "", ギャ: "gya", ギュ: "gyu", ギョ: "gyo", ジャ: "ja", ジュ: "ju", ジョ: "jo", ヂャ: "ja", ヂュ: "ju", ヂョ: "jo", ビャ: "bya", ビュ: "byu", ビョ: "byo", ピャ: "pya", ピュ: "pyu", ピョ: "pyo", // クヮ: "", // グヮ: "",
-
-        // 小書きの仮名、符号
-        ぁ: "a", ぃ: "i", ぅ: "u", ぇ: "e", ぉ: "o", ゃ: "ya", ゅ: "yu", ょ: "yo", ゎ: "wa", ァ: "a", ィ: "i", ゥ: "u", ェ: "e", ォ: "o", ャ: "ya", ュ: "yu", ョ: "yo", ヮ: "wa", ヵ: "ka", ヶ: "ke", ん: "n", ン: "n",
-        // ー: "",
-        "　": " ",
-
-        // 外来音(イェ～グォ)
-        いぇ: "ye", うぃ: "wi", うぇ: "we", うぉ: "wo", きぇ: "kye", くぁ: "kwa", くぃ: "kwi", くぇ: "kwe", くぉ: "kwo", ぐぁ: "gwa", ぐぃ: "gwi", ぐぇ: "gwe", ぐぉ: "gwo", イェ: "ye", ウィ: "wi", ウェ: "we", ウォ: "wo", ヴ: "vu", ヴァ: "va", ヴィ: "vi", ヴェ: "ve", ヴォ: "vo", ヴュ: "vyu", ヴョ: "vyo", キェ: "kya", クァ: "kwa", クィ: "kwi", クェ: "kwe", クォ: "kwo", グァ: "gwa", グィ: "gwi", グェ: "gwe", グォ: "gwo",
-
-        // 外来音(シェ～フョ)
-        しぇ: "she", じぇ: "je", // すぃ: "", // ずぃ: "", ちぇ: "che", つぁ: "tsa", つぃ: "tsi", つぇ: "tse", つぉ: "tso", てぃ: "ti", てゅ: "tyu", でぃ: "di", でゅ: "dyu", とぅ: "tu", どぅ: "du", にぇ: "nye", ひぇ: "hye", ふぁ: "fa", ふぃ: "fi", ふぇ: "fe", ふぉ: "fo", ふゅ: "fyu", ふょ: "fyo", シェ: "she", ジェ: "je", // スィ: "", // ズィ: "", チェ: "che", ツァ: "tsa", ツィ: "tsi", ツェ: "tse", ツォ: "tso", ティ: "ti", テュ: "tyu", ディ: "di", デュ: "dyu", トゥ: "tu", ドゥ: "du", ニェ: "nye", ヒェ: "hye", ファ: "fa", フィ: "fi", フェ: "fe", フォ: "fo", フュ: "fyu", フョ: "fyo"
-      }
+      // 外来音(シェ～フョ)
+      しぇ: "she", じぇ: "je", // すぃ: "", // ずぃ: "",
+      ちぇ: "che", つぁ: "tsa", つぃ: "tsi", つぇ: "tse", つぉ: "tso", てぃ: "ti", てゅ: "tyu", でぃ: "di", でゅ: "dyu", とぅ: "tu", どぅ: "du", にぇ: "nye", ひぇ: "hye", ふぁ: "fa", ふぃ: "fi", ふぇ: "fe", ふぉ: "fo", ふゅ: "fyu", ふょ: "fyo", シェ: "she", ジェ: "je", // スィ: "", // ズィ: "",
+      チェ: "che", ツァ: "tsa", ツィ: "tsi", ツェ: "tse", ツォ: "tso", ティ: "ti", テュ: "tyu", ディ: "di", デュ: "dyu", トゥ: "tu", ドゥ: "du", ニェ: "nye", ヒェ: "hye", ファ: "fa", フィ: "fi", フェ: "fe", フォ: "fo", フュ: "fyu", フョ: "fyo"
     };
 
     const reg_tsu = /(っ|ッ)([bcdfghijklmnopqrstuvwyz])/gm;
@@ -279,78 +161,54 @@ export class JpTranslateService {
     let r;
     let result = "";
 
-    // [PASSPORT] 長音省略 「―」の場合
-    if (system === this.ROMANIZATION_SYSTEM.PASSPORT) {
-      str = str.replace(/ー/gm, "");
+    const reg_hatu = new RegExp(/(ん|ン)(?=あ|い|う|え|お|ア|イ|ウ|エ|オ|ぁ|ぃ|ぅ|ぇ|ぉ|ァ|ィ|ゥ|ェ|ォ|や|ゆ|よ|ヤ|ユ|ヨ|ゃ|ゅ|ょ|ャ|ュ|ョ)/g);
+    let match;
+    const indices = [];
+    while ((match = reg_hatu.exec(str)) !== null) {
+      indices.push(match.index + 1);
     }
 
-    // [NIPPON|HEPBURN] 撥音の特殊表記 a、i、u、e、o、y
-    if (system === this.ROMANIZATION_SYSTEM.NIPPON || system === this.ROMANIZATION_SYSTEM.HEPBURN) {
-      const reg_hatu = new RegExp(/(ん|ン)(?=あ|い|う|え|お|ア|イ|ウ|エ|オ|ぁ|ぃ|ぅ|ぇ|ぉ|ァ|ィ|ゥ|ェ|ォ|や|ゆ|よ|ヤ|ユ|ヨ|ゃ|ゅ|ょ|ャ|ュ|ョ)/g);
-      let match;
-      const indices = [];
-      while ((match = reg_hatu.exec(str)) !== null) {
-        indices.push(match.index + 1);
-      }
-
-      if (indices.length !== 0) {
-        let mStr = "";
-        for (let i = 0; i < indices.length; i++) {
-          if (i === 0) {
-            mStr += `${str.slice(0, indices[i])}'`;
-          } else {
-            mStr += `${str.slice(indices[i - 1], indices[i])}'`;
-          }
+    if (indices.length !== 0) {
+      let mStr = "";
+      for (let i = 0; i < indices.length; i++) {
+        if (i === 0) {
+          mStr += `${str.slice(0, indices[i])}'`;
+        } else {
+          mStr += `${str.slice(indices[i - 1], indices[i])}'`;
         }
-        mStr += str.slice(indices[indices.length - 1]);
-        str = mStr;
       }
+      mStr += str.slice(indices[indices.length - 1]);
+      str = mStr;
     }
 
     // [ALL] kana to roman chars
     const max = str.length;
     while (pnt <= max) {
-      if (r = romajiSystem[system][str.substring(pnt, pnt + 2)]) {
+      if (r = romajiSystem[str.substring(pnt, pnt + 2)]) {
         result += r;
         pnt += 2;
       } else {
-        result += (r = romajiSystem[system][ch = str.substring(pnt, pnt + 1)]) ? r : ch;
+        result += (r = romajiSystem[ch = str.substring(pnt, pnt + 1)]) ? r : ch;
         pnt += 1;
       }
     }
     result = result.replace(reg_tsu, "$2$2");
 
-    // [PASSPORT|HEPBURN] 子音を重ねて特殊表記
-    if (system === this.ROMANIZATION_SYSTEM.PASSPORT || system === this.ROMANIZATION_SYSTEM.HEPBURN) {
-      result = result.replace(/cc/gm, "tc");
-    }
-
+    // 子音を重ねて特殊表記
+    result = result.replace(/cc/gm, "tc");
     result = result.replace(reg_xtsu, "tsu");
 
-    // [PASSPORT|HEPBURN] 撥音の特殊表記 b、m、p
-    if (system === this.ROMANIZATION_SYSTEM.PASSPORT || system === this.ROMANIZATION_SYSTEM.HEPBURN) {
-      result = result.replace(/nm/gm, "mm");
-      result = result.replace(/nb/gm, "mb");
-      result = result.replace(/np/gm, "mp");
-    }
+    // 撥音の特殊表記 b、m、p
+    result = result.replace(/nm/gm, "mm");
+    result = result.replace(/nb/gm, "mb");
+    result = result.replace(/np/gm, "mp");
 
-    // [NIPPON] 長音変換
-    if (system === this.ROMANIZATION_SYSTEM.NIPPON) {
-      result = result.replace(/aー/gm, "â");
-      result = result.replace(/iー/gm, "î");
-      result = result.replace(/uー/gm, "û");
-      result = result.replace(/eー/gm, "ê");
-      result = result.replace(/oー/gm, "ô");
-    }
-
-    // [HEPBURN] 長音変換
-    if (system === this.ROMANIZATION_SYSTEM.HEPBURN) {
-      result = result.replace(/aー/gm, "ā");
-      result = result.replace(/iー/gm, "ī");
-      result = result.replace(/uー/gm, "ū");
-      result = result.replace(/eー/gm, "ē");
-      result = result.replace(/oー/gm, "ō");
-    }
+    // 長音変換
+    result = result.replace(/aー/gm, "ā");
+    result = result.replace(/iー/gm, "ī");
+    result = result.replace(/uー/gm, "ū");
+    result = result.replace(/eー/gm, "ē");
+    result = result.replace(/oー/gm, "ō");
 
     return result;
   };
@@ -442,78 +300,53 @@ export class JpTranslateService {
     return this.toRawKatakana(str);
   };
 
-  kanaToRomaji(str, system) {
-    return this.toRawRomaji(str, system);
+  kanaToRomaji(str) {
+    return this.toRawRomaji(str);
   };
 
-  init () {
-    return new Promise((resolve, reject) => {
-      kuromoji.builder({ dicPath: this.dictPath }).build((err, newAnalyzer) => {
-        this.analyzer = newAnalyzer;
-        resolve()
-      })
-    })
+  yahooAnalyse(str) {
+    let API_URL = "api";
+    let appId = "dj00aiZpPWFPYTZ6Y29RZkh5aSZzPWNvbnN1bWVyc2VjcmV0Jng9MjU-"
+
+    let result = [];
+
+    return this.http.get(API_URL + "?appid=" + appId + "&sentence=" + str + "&results=ma", { responseType: 'text' })
   }
 
-  parseSync(str = "") {
-    if (str.trim() === "") return [];
-
-    const result = this.analyzer.tokenize(str);
-    for (let i = 0; i < result.length; i++) {
-      result[i].verbose = {};
-      result[i].verbose.word_id = result[i].word_id;
-      result[i].verbose.word_type = result[i].word_type;
-      result[i].verbose.word_position = result[i].word_position;
-      delete result[i].word_id;
-      delete result[i].word_type;
-      delete result[i].word_position;
-    }
-
-    return result;
-  }
-
-  convert(str, options) {
-    //this.init()
-    options = options || {};
-    options.to = options.to || "hiragana";
-    options.mode = options.mode || "normal";
-    options.romajiSystem = options.romajiSystem || this.ROMANIZATION_SYSTEM.HEPBURN;
-    options.delimiter_start = options.delimiter_start || "(";
-    options.delimiter_end = options.delimiter_end || ")";
+  convert(str) {
     str = str || "";
 
-    if (["hiragana", "katakana", "romaji"].indexOf(options.to) === -1) {
-      throw new Error("Invalid Target Syllabary.");
-    }
+    return this.yahooAnalyse(str).toPromise().then(response => {
+      let rawTokens = []
 
-    if (["normal", "spaced", "okurigana", "furigana"].indexOf(options.mode) === -1) {
-      throw new Error("Invalid Conversion Mode.");
-    }
+      let parser = new xml2js.Parser({ strict: false, trim: true });
+      parser.parseString(response, (err, data) => {
+        if (data.RESULTSET.MA_RESULT[0].TOTAL_COUNT > 0) {
+          for (let i = 0; i < data.RESULTSET.MA_RESULT[0].WORD_LIST[0].WORD.length; i++) {
+            rawTokens.push({
+              surface_form: data.RESULTSET.MA_RESULT[0].WORD_LIST[0].WORD[i].SURFACE[0],
+              pos: data.RESULTSET.MA_RESULT[0].WORD_LIST[0].WORD[i].POS[0],
+              reading: data.RESULTSET.MA_RESULT[0].WORD_LIST[0].WORD[i].READING[0]
+            })
+          }
+        }
+      })
 
-    const ROMAJI_SYSTEMS = Object.keys(this.ROMANIZATION_SYSTEM).map(e => this.ROMANIZATION_SYSTEM[e]);
-    if (ROMAJI_SYSTEMS.indexOf(options.romajiSystem) === -1) {
-      throw new Error("Invalid Romanization System.");
-    }
+      const tokens = this.patchTokens(rawTokens);
 
-    const rawTokens = this.parseSync(str);
-    const tokens = this.patchTokens(rawTokens);
+      const romajiConv = (token) => {
+        let preToken;
+        if (this.hasJapanese(token.surface_form)) {
+          preToken = token.pronunciation || token.reading;
+        } else {
+          preToken = token.surface_form;
+        }
 
-    const romajiConv = (token) => {
-      let preToken;
-      if (this.hasJapanese(token.surface_form)) {
-        preToken = token.pronunciation || token.reading;
-      } else {
-        preToken = token.surface_form;
+        return this.toRawRomaji(preToken);
       }
 
-      return this.toRawRomaji(preToken, options.romajiSystem);
-    };
-
-    if (options.mode === "normal") {
-      return tokens.map(romajiConv).join("");
-    }
-
-    return tokens.map(romajiConv).join(" ");
+      return tokens.map(romajiConv).join(" ");
+    })
   }
 }
 

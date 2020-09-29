@@ -1,0 +1,11 @@
+{
+  "/api/*": {
+    "target": "https://jlp.yahooapis.jp/MAService/V1/parse",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

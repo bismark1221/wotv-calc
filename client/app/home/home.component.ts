@@ -9,7 +9,6 @@ import { NameService } from '../services/name.service'
 import { JobService } from '../services/job.service'
 import { EquipmentService } from '../services/equipment.service'
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

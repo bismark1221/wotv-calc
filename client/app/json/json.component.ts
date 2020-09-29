@@ -8,21 +8,23 @@ import { JsonService } from '../services/json.service';
   styleUrls: ['./json.component.css']
 })
 export class JsonComponent implements OnInit {
-  GLunits = [];
-  GLvisionCards = [];
-  GLespers = [];
-  GLequipments = [];
-  GLjobs = [];
-  GLRaids = [];
-  GLItems = [];
+  GLunits = {};
+  GLvisionCards = {};
+  GLespers = {};
+  GLequipments = {};
+  GLjobs = {};
+  GLRaids = {};
+  GLItems = {};
 
-  JPunits = [];
-  JPvisionCards = [];
-  JPespers = [];
-  JPequipments = [];
-  JPjobs = [];
-  JPRaids = [];
-  JPItems = [];
+  JPunits = {};
+  JPvisionCards = {};
+  JPespers = {};
+  JPequipments = {};
+  JPjobs = {};
+  JPRaids = {};
+  JPItems = {};
+
+  JPRomaji = {};
 
   constructor(private jsonService: JsonService) {}
 
@@ -70,6 +72,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPItems = response.jp.items;
+
+      // @ts-ignore
+      this.JPRomaji = response.translate.jpRomaji;
     });
   }
 }
