@@ -32371,6 +32371,171 @@
       "unitId": "UN_LW_P_STRN_01"
     }
   },
+  "AF_ARM_LW_GRSR_1": {
+    "names": {
+      "en": "White Wolf's Armor"
+    },
+    "slug": "white-wolfs-armor",
+    "stats": {
+      "HP": {
+        "min": 424,
+        "max": 424
+      },
+      "DEF": {
+        "min": 9,
+        "max": 9
+      },
+      "SPR": {
+        "min": 4,
+        "max": 4
+      },
+      "ACCURACY": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_GRSR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "War Maiden's Vitality"
+          },
+          "dataId": "SK_ARM_LW_GRSR_1_1",
+          "effects": [
+            {
+              "type": "AP",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "unknow"
+            },
+            {
+              "type": "SLASH_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "turn": 3
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "cost": {
+            "type": "TP",
+            "value": 20
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_027",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_GRSR"
+    }
+  },
+  "AF_SPE_LW_GRSR_2": {
+    "names": {
+      "en": "For Glaciela"
+    },
+    "slug": "for-glaciela",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_GRSR_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_spe_014",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_STRN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_BSW_LW_STRN_01_2": {
     "names": {
       "en": "Sterne (Knight of Ruin) Specific Weapon",

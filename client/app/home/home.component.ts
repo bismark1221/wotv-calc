@@ -22,6 +22,15 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "30/09",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_FNRR"},
+          {type: "card", dataId: "VC_LW_FNRR"},
+          {type: "card", dataId: "VC_LW_ORDR"},
+          {type: "unit", dataId: "UN_LW_P_GRSR"},
+        ]
+      },
+      {
         date: "23/09",
         items: [
           {type: "unit", dataId: "UN_LW_P_STRN_01"},
@@ -38,14 +47,6 @@ export class HomeComponent {
           {type: "esper", dataId: "UN_LW_S_MDFY"},
           {type: "equipment", dataId: "AF_LW_HLM_005"},
           {type: "equipment", dataId: "AF_LW_BSW_003"}
-        ]
-      },
-      {
-        date: "09/09",
-        items: [
-
-          {type: "unit", dataId: "UN_LW_P_IRDL"},
-          {type: "equipment", dataId: "AF_LW_SWO_006"}
         ]
       }
     ],

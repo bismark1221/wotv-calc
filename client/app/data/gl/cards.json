@@ -4556,6 +4556,202 @@
       }
     ]
   },
+  "VC_LW_FNRR": {
+    "dataId": "VC_LW_FNRR",
+    "names": {
+      "en": "Moonlit Fang, Fenrir"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 362
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 31,
+        "max": 120
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 0,
+        "max": 0
+      },
+      "DEX": {
+        "min": 13,
+        "max": 50
+      },
+      "AGI": {
+        "min": 1,
+        "max": 4
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsfnrr",
+    "slug": "moonlit-fang-fenrir",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "MAGIC_RES",
+            "minValue": 6,
+            "maxValue": 12,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_FNRR_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_FNRR_GS",
+          "fr": "SK_VC_LW_FNRR_GS"
+        },
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "MAGIC_RES",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_FNRR_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_FNRR_GS_AW",
+          "fr": "SK_VC_LW_FNRR_GS_AW"
+        },
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "MAGIC_RES",
+            "minValue": 4,
+            "maxValue": 4,
+            "calcType": "resistance"
+          }
+        ],
+        "dataId": "SK_VC_LW_FNRR_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_FNRR_GSMAX",
+          "fr": "SK_VC_LW_FNRR_GSMAX"
+        },
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_FNRR_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_FNRR_P",
+            "fr": "SK_VC_LW_FNRR_P"
+          },
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_FNRR_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_FNRR_PAW",
+            "fr": "SK_VC_LW_FNRR_PAW"
+          },
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_FNRR_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_FNRR_PMAX",
+            "fr": "SK_VC_LW_FNRR_PMAX"
+          },
+          "maxLevel": 1
+        },
+        "cond": null
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -8152,6 +8348,159 @@
           "names": {
             "en": "SK_VC_LW_MDFY_PAW",
             "fr": "SK_VC_LW_MDFY_PAW"
+          },
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": null
+      }
+    ]
+  },
+  "VC_LW_ORDR": {
+    "dataId": "VC_LW_ORDR",
+    "names": {
+      "en": "Unreaching Affection"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 33,
+        "max": 268
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 22,
+        "max": 91
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 22,
+        "max": 89
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsordr",
+    "slug": "unreaching-affection",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "WIND_ATK",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_ORDR_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ORDR_GS",
+          "fr": "SK_VC_LW_ORDR_GS"
+        },
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "WIND_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe"
+          }
+        ],
+        "dataId": "SK_VC_LW_ORDR_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_ORDR_GSAW",
+          "fr": "SK_VC_LW_ORDR_GSAW"
+        },
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_ORDR_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ORDR_P",
+            "fr": "SK_VC_LW_ORDR_P"
+          },
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true
+            }
+          ],
+          "dataId": "SK_VC_LW_ORDR_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ORDR_PAW",
+            "fr": "SK_VC_LW_ORDR_PAW"
           },
           "maxLevel": 4
         },
