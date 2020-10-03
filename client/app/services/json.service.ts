@@ -414,6 +414,7 @@ export class JsonService {
 
   strengthType = {
     1: "DEAD_UNITS",
+    51: "COUNT_DAMAGE_RECEIVED",
     53: "UNIT_LEVEL",
     72: "HEIGHT",
     73: "TARGET_LEVEL"
@@ -1702,7 +1703,7 @@ export class JsonService {
         if (!this.strengthType[strength.type]) {
           console.log("10 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH TYPE : " + strength.type)
         } if (!this.strengthFormulaCondition[strength.formula]) {
-          console.log("11 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH FORMULA : " + strength.type)
+          console.log("11 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH FORMULA : " + strength.formula)
         } else {
           let math = {
             type: this.strengthType[strength.type],

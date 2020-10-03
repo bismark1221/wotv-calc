@@ -1078,13 +1078,25 @@ export class SkillService {
                 html += " for each target level (max: " + this.getPositiveValue(math.value, true) + "%)"
                 break
               case "COUNT" :
-                html += " if the target level is " + math.condition + " dead unit"
+                html += " if the target level is " + math.condition
                 break
               case "RATIO" :
                 html += " if the target level is a multiple of " + math.condition
                 break
             }
             break
+          case "COUNT_DAMAGE_RECEIVED" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " for each time you received damage (max: " + this.getPositiveValue(math.value, true) + "%)"
+                break
+              case "COUNT" :
+                html += " if the number of times you received damage is " + math.condition
+                break
+              case "RATIO" :
+                html += " if the number of time you received damage is a multiple of " + math.condition
+                break
+            }
             break
           default :
             console.log("Not manage math type : " + math.type)

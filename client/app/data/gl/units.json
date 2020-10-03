@@ -163138,7 +163138,8 @@
   "UN_LW_P_GRSR": {
     "dataId": "UN_LW_P_GRSR",
     "names": {
-      "en": "Glaciela Wezette"
+      "en": "Glaciela Wezette",
+      "fr": "Graziella Wezett"
     },
     "rarity": "UR",
     "jobs": [
@@ -163300,7 +163301,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Javelin Claw"
+              "en": "Javelin Claw",
+              "fr": "Griffe javelot"
             },
             "cost": {
               "type": "AP",
@@ -163403,7 +163405,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "War Maiden's Acuity"
+              "en": "War Maiden's Acuity",
+              "fr": "Acuité de guerrière"
             },
             "cost": {
               "type": "TP",
@@ -163519,7 +163522,8 @@
             "type": "support",
             "mainSkill": false,
             "names": {
-              "en": "Jab Mastery"
+              "en": "Jab Mastery",
+              "fr": "Maîtrise des coups directs"
             },
             "maxLevel": 20
           }
@@ -163684,7 +163688,8 @@
             "type": "counter",
             "mainSkill": false,
             "names": {
-              "en": "Counter Sting"
+              "en": "Counter Sting",
+              "fr": "Contre-dard"
             },
             "maxLevel": 20,
             "range": {
@@ -163731,7 +163736,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Paralyzing Cross"
+              "en": "Paralyzing Cross",
+              "fr": "Croix paralysante"
             },
             "cost": {
               "type": "AP",
@@ -163766,7 +163772,8 @@
             "type": "skill",
             "mainSkill": false,
             "names": {
-              "en": "Cross Impact"
+              "en": "Cross Impact",
+              "fr": "Impact en croix"
             },
             "cost": {
               "type": "AP",
@@ -164385,7 +164392,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Triple Piercer"
+              "en": "Triple Piercer",
+              "fr": "Triple perforation"
             },
             "cost": {
               "type": "AP",
@@ -164543,7 +164551,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Surefire Burst"
+              "en": "Surefire Burst",
+              "fr": "Implosion infaillible"
             },
             "cost": {
               "type": "AP",
@@ -164717,7 +164726,8 @@
             "type": "skill",
             "mainSkill": true,
             "names": {
-              "en": "Leap Strike"
+              "en": "Leap Strike",
+              "fr": "Frappe sautée"
             },
             "cost": {
               "type": "AP",
@@ -165202,7 +165212,8 @@
     "slug": "glaciela-wezette",
     "limit": {
       "names": {
-        "en": "Valkyrie Drive"
+        "en": "Valkyrie Drive",
+        "fr": "Offensive de Valkyrie"
       },
       "effects": [
         {
@@ -165236,7 +165247,8 @@
     },
     "attack": {
       "names": {
-        "en": "Normal Attack"
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
       },
       "effects": [],
       "dataId": "SK_LW_GRSR_ATK",
@@ -165262,7 +165274,8 @@
     "masterSkill": [
       {
         "names": {
-          "en": "Master Ability"
+          "en": "Master Ability",
+          "fr": "Aptitude maître"
         },
         "effects": [
           {
@@ -165285,7 +165298,8 @@
     ],
     "tmr": {
       "names": {
-        "en": "White Wolf's Armor"
+        "en": "White Wolf's Armor",
+        "fr": "Armure du Loup blanc"
       },
       "stats": {
         "HP": 424,
@@ -165299,7 +165313,8 @@
         {
           "dataId": "SK_ARM_LW_GRSR_1_1",
           "names": {
-            "en": "War Maiden's Vitality"
+            "en": "War Maiden's Vitality",
+            "fr": "Vitalité de guerrière"
           },
           "effects": [
             {

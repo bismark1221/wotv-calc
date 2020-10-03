@@ -74,6 +74,7 @@ export class EquipmentService {
     "AF_LW_BSW_011": "TOWER",
     "AF_FFT_SWO_002": "TOWER",
     "AF_LW_RNG_007": "TOWER",
+    "AF_LW_ARW_005": "TOWER",
 
     "AF_LW_SWO_016": "FREE",
 
@@ -113,6 +114,8 @@ export class EquipmentService {
     "AF_LW_MAC_009": "RECURRENT",
     "AF_LW_CLT_006": "RECURRENT",
     "AF_LW_BOW_004": "RECURRENT",
+    "AF_LW_FIS_004": "RECURRENT",
+    "AF_LW_ROD_019": "RECURRENT",
 
     "AF_LW_SWO_000": "GENERAL_SHOP",
     "AF_LW_BSW_000": "GENERAL_SHOP",
