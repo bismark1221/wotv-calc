@@ -35,6 +35,9 @@
   <div class="saveBlock" *ngIf="!showList && unit">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <div *ngIf="showCumulative">
+      <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="cumulativeStats == true"></ui-switch>
+    </div>
   </div>
 
   <div class="leftBlock" *ngIf="!showList && unit">

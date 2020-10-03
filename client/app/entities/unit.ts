@@ -604,26 +604,43 @@ export class Unit {
     let statsType = [];
     this.imbue = null;
 
+    let cumulativeRatio = {
+      HP: [100, 50, 30],
+      ATK: [100, 60, 30],
+      MAG: [100, 60, 30],
+      DEF: [100, 20, 10],
+      SPR: [100, 20, 10],
+      AGI: [100, 40, 20],
+      DEX: [100, 40, 20]
+    }
+
     for (let i = 0; i <= 2; i++) {
       if (this.equipments[i]) {
         Object.keys(this.equipments[i].stats).forEach(statType => {
           let value = parseInt(this.equipments[i].stats[statType].selected)
 
-          this.updateStat(statType, value, 'equipment' + i + "_stat", "fixe", true)
-
-          if (!this.stats[statType].equipment) {
-            this.stats[statType].equipment = {
-              positive: 0,
-              negative: 0
+          console.log(statType)
+          console.log(this.stats)
+          if (!this.stats[statType]) {
+            this.stats[statType] = {
+              base: 0,
+              baseTotal: 0
             }
           }
 
-
-          if (value > 0 && value > this.stats[statType].equipment.positive) {
-            this.stats[statType].equipment.positive = value
-          } else if (value <= 0 && value < this.stats[statType].equipment.negative) {
-            this.stats[statType].equipment.negative = value
+          if (!this.stats[statType].equipments) {
+            this.stats[statType].equipments = {
+              0: 0,
+              1: 0,
+              2: 0,
+              total: {
+                positive: 0,
+                negative: 0
+              }
+            }
           }
+
+          this.stats[statType].equipments[i] = value
 
           statsType.push(statType)
         })
@@ -672,14 +689,61 @@ export class Unit {
 
     statsType.forEach(statType => {
       this.updateStat(statType, 0, "totalEquipment", "fixe", true)
-      if (this.stats[statType].equipment) {
-        let negativeValue = this.stats[statType].equipment.negative !== -100000000 ? this.stats[statType].equipment.negative : 0
-        this.updateStat(statType, this.stats[statType].equipment.positive + negativeValue, "totalEquipment", "fixe", true)
+      if (this.stats[statType].equipments) {
+        if (this.cumulativeStats && cumulativeRatio[statType]) {
+          let statOrder = []
+          if (this.stats[statType].equipments[0] >= this.stats[statType].equipments[1] && this.stats[statType].equipments[0] >= this.stats[statType].equipments[2]) {
+            statOrder.push(this.stats[statType].equipments[0])
+
+            if (this.stats[statType].equipments[1] >= this.stats[statType].equipments[2]) {
+              statOrder.push(this.stats[statType].equipments[1])
+              statOrder.push(this.stats[statType].equipments[2])
+            } else {
+              statOrder.push(this.stats[statType].equipments[2])
+              statOrder.push(this.stats[statType].equipments[1])
+            }
+          } else if (this.stats[statType].equipments[1] >= this.stats[statType].equipments[0] && this.stats[statType].equipments[1] >= this.stats[statType].equipments[2]) {
+            statOrder.push(this.stats[statType].equipments[1])
+
+            if (this.stats[statType].equipments[0] >= this.stats[statType].equipments[2]) {
+              statOrder.push(this.stats[statType].equipments[0])
+              statOrder.push(this.stats[statType].equipments[2])
+            } else {
+              statOrder.push(this.stats[statType].equipments[2])
+              statOrder.push(this.stats[statType].equipments[0])
+            }
+          } else {
+            statOrder.push(this.stats[statType].equipments[2])
+
+            if (this.stats[statType].equipments[0] >= this.stats[statType].equipments[1]) {
+              statOrder.push(this.stats[statType].equipments[0])
+              statOrder.push(this.stats[statType].equipments[1])
+            } else {
+              statOrder.push(this.stats[statType].equipments[1])
+              statOrder.push(this.stats[statType].equipments[0])
+            }
+          }
+
+          let value = statOrder[0]
+            + Math.floor((statOrder[1] * cumulativeRatio[statType][1] / 100))
+            + Math.floor((statOrder[2] * cumulativeRatio[statType][2] / 100))
+
+          this.updateStat(statType, value, "totalEquipment", "fixe", true)
+        } else {
+          for (let i = 0; i < 3; i++) {
+            if (this.stats[statType].equipments[i] > 0 && this.stats[statType].equipments[i] > this.stats[statType].equipments.total.positive) {
+              this.stats[statType].equipments.total.positive = this.stats[statType].equipments[i]
+            } else if (this.stats[statType].equipments[i] <= 0 && this.stats[statType].equipments[i] < this.stats[statType].equipments.total.negative) {
+              this.stats[statType].equipments.total.negative = this.stats[statType].equipments[i]
+            }
+          }
+
+          this.updateStat(statType, this.stats[statType].equipments.total.positive + this.stats[statType].equipments.total.negative, "totalEquipment", "fixe", true)
+        }
       }
 
       if (this.stats[statType].equipmentBuff) {
-        let negativeBuffValue = this.stats[statType].equipmentBuff.negative !== -100000000 ? this.stats[statType].equipmentBuff.negative : 0
-        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + negativeBuffValue, "totalEquipment", "fixe")
+        this.updateStat(statType, this.stats[statType].equipmentBuff.positive + this.stats[statType].equipmentBuff.negative, "totalEquipment", "fixe")
       }
     })
   }

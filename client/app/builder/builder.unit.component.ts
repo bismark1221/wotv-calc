@@ -43,10 +43,12 @@ export class BuilderUnitComponent implements OnInit {
   showSave = false
   showStatsDetail = false
   showBuffsDetail = false
+  showCumulative = false
 
   isCollapsedMainJob = true
   isCollapsedSubJob = true
   isCollapsedOther = true
+  cumulativeStats = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -173,6 +175,11 @@ export class BuilderUnitComponent implements OnInit {
         }
       }
     });
+
+    if (this.navService.getVersion() == "JP") {
+      this.showCumulative = true
+      this.cumulativeStats = true
+    }
   }
 
   ngAfterViewInit() {
@@ -261,12 +268,15 @@ export class BuilderUnitComponent implements OnInit {
 
   selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData, this.cumulativeStats)
       this.searchText = this.unit.name
 
       this.loadGuild()
       this.unitService.getActiveSkills()
       this.showList = false
+
+      console.log(this.unit)
+
     } else {
       this.unit = null
       this.searchText = ""
