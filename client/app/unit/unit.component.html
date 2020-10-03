@@ -472,7 +472,9 @@
               <th *ngIf="i == 'counter'" class="sub rangeTd">Range</th>
               <th *ngIf="i == 'counter'" class="sub skillHitTd">Hits</th>
             </tr>
-            <tr *ngFor="let skill of getSkillsPerType(i)">
+          </tbody>
+          <tbody *ngFor="let skill of getSkillsPerType(i)">
+            <tr>
               <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
@@ -494,6 +496,28 @@
                 </div>
               </td>
               <td *ngIf="i == 'counter'"><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+            </tr>
+
+            <tr *ngFor="let upgradedSkill of skill.upgrades">
+              <td colspan="3">Upgrade</td>
+              <td>{{ upgradedSkill.name }}</td>
+              <td class="skillEffectTd">
+                <div *ngIf="upgradedSkill.upgradeHtml !== ''">
+                  {{ upgradedSkill.upgradeHtml }}
+                </div>
+                <div>{{ upgradedSkill.counterHtml }}</div>
+                <div [innerHTML]="upgradedSkill.damageHtml"></div>
+                <div *ngFor="let effect of upgradedSkill.effects">
+                  {{ effect.formatHtml }}
+                </div>
+              </td>
+              <td *ngIf="i == 'counter'">
+                <ng-template #tip_table><div [innerHTML]="upgradedSkill.skillTableHtml"></div></ng-template>
+                <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                  <div class="divSkillTableHtml" [innerHTML]="upgradedSkill.skillTableHtml"></div>
+                </div>
+              </td>
+              <td *ngIf="i == 'counter'"><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
             </tr>
           </tbody>
         </table>
