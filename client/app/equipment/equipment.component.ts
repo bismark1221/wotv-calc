@@ -163,12 +163,32 @@ export class EquipmentComponent implements OnInit {
         this.equipment.statsTypes.forEach(statType => {
           let maxValue = this.equipment.stats[statType].max
           if (typeof(this.equipment.grows[growId].curve[statType]) == "number") {
-            this.equipment.grows[growId].stats[statType] = Math.floor(maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100))
+            let value = maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100)
+            if (value < 0 && value > -1) {
+              this.equipment.grows[growId].stats[statType] = 0
+            } else {
+              this.equipment.grows[growId].stats[statType] = Math.floor(value)
+            }
           } else {
             this.equipment.grows[growId].stats[statType] = maxValue
           }
         })
       })
+
+      let usableStatsTypes = []
+      this.equipment.statsTypes.forEach(statType => {
+        let maxDifferentZero = false;
+        this.equipment.growIds.forEach(growId => {
+          if (this.equipment.grows[growId].stats[statType] != 0) {
+            maxDifferentZero = true
+          }
+        })
+
+        if (maxDifferentZero || this.equipment.stats[statType].min != 0) {
+          usableStatsTypes.push(statType)
+        }
+      })
+      this.equipment.statsTypes = usableStatsTypes
 
       this.equipment.jobs = []
       this.equipment.equippableJobs.forEach(jobId => {
