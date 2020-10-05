@@ -126,6 +126,7 @@ export class Unit {
   cost
   calcCost
   replacedSkills
+  cumulativeStats
 
 
   constructFromJson(unit: Unit, translateService): void {
@@ -611,7 +612,9 @@ export class Unit {
       DEF: [100, 20, 10],
       SPR: [100, 20, 10],
       AGI: [100, 40, 20],
-      DEX: [100, 40, 20]
+      DEX: [100, 40, 20],
+      ACCURACY: [100, 50, 30],
+      EVADE: [100, 30, 30],
     }
 
     for (let i = 0; i <= 2; i++) {

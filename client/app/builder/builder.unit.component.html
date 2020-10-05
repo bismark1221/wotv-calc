@@ -327,6 +327,35 @@
             <span *ngIf="unit.calcCost && unit.calcCost[statFrom.type]">{{ unit.calcCost[statFrom.type] }}</span>
           </td>
         </tr>
+
+        <tr *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Stats</td>
+          <td *ngFor="let type of statsType">
+            <div *ngIf="unit.stats[type].equipments">
+              <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
+              <span>{{ unit.stats[type].equipments[statFrom] }}</span>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Buffs</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP']['equipment' + statFrom + '_buff']">{{ unit.stats["INITIAL_AP"]['equipment' + statFrom + '_buff'] }} / </span>
+            <span>{{ unit.stats[type]['equipment' + statFrom + '_buff'] }}</span>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Total Equipement</td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP']['totalEquipment']">{{ unit.stats["INITIAL_AP"]['totalEquipment'] }} / </span>
+            <span>{{ unit.stats[type]['totalEquipment'] }}</span>
+          </td>
+          <td></td>
+        </tr>
       </tbody>
       <tbody>
         <tr>

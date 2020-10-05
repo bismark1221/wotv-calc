@@ -59,14 +59,7 @@ export class BuilderUnitComponent implements OnInit {
     {type: "masterSkill", translate: "Master Skill"},
     {type: "esper", translate: "Esper"},
     {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"},
-    {type: "equipment0_stat", translate: "Equipment 1 Stats"},
-    {type: "equipment0_buff", translate: "Equipment 1 Buffs"},
-    {type: "equipment1_stat", translate: "Equipment 2 Stats"},
-    {type: "equipment1_buff", translate: "Equipment 2 Buffs"},
-    {type: "equipment2_stat", translate: "Equipment 3 Stats"},
-    {type: "equipment2_buff", translate: "Equipment 3 Buffs"},
-    {type: "totalEquipment", translate: "Total Equipement"}
+    {type: "cardParty", translate: "Card Party"}
   ]
 
   BuffsFrom = [
@@ -76,14 +69,7 @@ export class BuilderUnitComponent implements OnInit {
     {type: "masterSkill", translate: "Master Skill"},
     {type: "esper", translate: "Esper"},
     {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"},
-    {type: "equipment0_stat", translate: "Equipment 1 Stats"},
-    {type: "equipment0_buff", translate: "Equipment 1 Buffs"},
-    {type: "equipment1_stat", translate: "Equipment 2 Stats"},
-    {type: "equipment1_buff", translate: "Equipment 2 Buffs"},
-    {type: "equipment2_stat", translate: "Equipment 3 Stats"},
-    {type: "equipment2_buff", translate: "Equipment 3 Buffs"},
-    {type: "totalEquipment", translate: "Total Equipement"}
+    {type: "cardParty", translate: "Card Party"}
   ]
 
   rarityTranslate = {
