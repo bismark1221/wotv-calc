@@ -41,6 +41,8 @@ export class EsperComponent implements OnInit {
         this.router.navigate([this.navService.getRoute('/esper-not-found')]);
       } else {
         this.formatEsper();
+
+        this.navService.setTitle(this.esper.name);
       }
     });
 

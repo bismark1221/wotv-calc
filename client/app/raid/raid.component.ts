@@ -41,6 +41,8 @@ export class RaidComponent implements OnInit {
         this.router.navigate([this.navService.getRoute('/raid-not-found')]);
       } else {
         this.formatRaid();
+
+        this.navService.setTitle(this.raid.bosses[0].name);
       }
     });
 

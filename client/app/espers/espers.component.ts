@@ -34,6 +34,8 @@ export class EspersComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navService.setTitle("Espers");
+
     this.getEspers();
   }
 

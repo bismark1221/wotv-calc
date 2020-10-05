@@ -6,6 +6,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { EsperService } from '../services/esper.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
+import { NavService } from '../services/nav.service';
 
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
@@ -81,7 +82,8 @@ export class BuilderEsperComponent implements OnInit {
     private translateService: TranslateService,
     private modalService: NgbModal,
     private nameService: NameService,
-    private authService: AuthService
+    private authService: AuthService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEspers();
@@ -104,6 +106,8 @@ export class BuilderEsperComponent implements OnInit {
         })
       }
     });
+
+    this.navService.setTitle("Esper Builder");
   }
 
   ngAfterViewInit() {

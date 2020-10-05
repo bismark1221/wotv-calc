@@ -96,6 +96,8 @@ export class HomeComponent {
     private jobService: JobService,
     private equipmentService: EquipmentService
   ) {
+    this.navService.setTitle(null);
+
     this.getTranslation();
     this.getUpdate();
 

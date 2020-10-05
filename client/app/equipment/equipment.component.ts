@@ -44,6 +44,8 @@ export class EquipmentComponent implements OnInit {
         this.router.navigate([this.navService.getRoute('/equipment-not-found')]);
       } else {
         this.formatEquipment();
+
+        this.navService.setTitle(this.equipment.name);
       }
     });
 

@@ -32,6 +32,8 @@ export class CardsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navService.setTitle("Cards");
+
     this.getCards();
   }
 

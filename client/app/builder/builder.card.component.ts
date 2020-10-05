@@ -6,6 +6,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { CardService } from '../services/card.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
+import { NavService } from '../services/nav.service';
 
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
@@ -40,7 +41,8 @@ export class BuilderCardComponent implements OnInit {
     private translateService: TranslateService,
     private modalService: NgbModal,
     private nameService: NameService,
-    private authService: AuthService
+    private authService: AuthService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
@@ -63,6 +65,8 @@ export class BuilderCardComponent implements OnInit {
         })
       }
     });
+
+    this.navService.setTitle("Card Builder");
   }
 
   ngAfterViewInit() {

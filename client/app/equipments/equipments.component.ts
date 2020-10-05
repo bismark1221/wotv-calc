@@ -37,6 +37,8 @@ export class EquipmentsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navService.setTitle("Equipment");
+
     this.getAcquisitionTypes();
     this.getEquipments();
   }

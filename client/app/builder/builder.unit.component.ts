@@ -173,6 +173,8 @@ export class BuilderUnitComponent implements OnInit {
         }
       }
     });
+
+    this.navService.setTitle("Unit Builder");
   }
 
   ngAfterViewInit() {

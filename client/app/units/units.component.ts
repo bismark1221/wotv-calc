@@ -40,6 +40,8 @@ export class UnitsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navService.setTitle("Units");
+
     this.getUnits();
     this.getJobs();
   }

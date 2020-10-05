@@ -14,6 +14,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { TeamService } from '../services/team.service'
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
+import { NavService } from '../services/nav.service';
 
 import { BuilderGuildComponent } from './builder.guild.component';
 
@@ -62,7 +63,8 @@ export class BuilderTeamComponent implements OnInit {
     private modalService: NgbModal,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
-    private authService: AuthService
+    private authService: AuthService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       for (let i = 0; i <= 4; i++) {
@@ -93,6 +95,8 @@ export class BuilderTeamComponent implements OnInit {
         })
       }
     });
+
+    this.navService.setTitle("Team Builder");
   }
 
   ngAfterViewInit() {

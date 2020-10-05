@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { Title } from '@angular/platform-browser';
 
 import { BehaviorSubject } from "rxjs";
 
@@ -12,7 +13,8 @@ export class NavService {
   $menuDisabled = this.menuDataSubject.asObservable();
 
   constructor(
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private titleService: Title
   ) {}
 
   updateMenu(status: boolean) {
@@ -43,5 +45,13 @@ export class NavService {
     }
 
     return formattedRoute
+  }
+
+  setTitle(title) {
+    if (title) {
+      this.titleService.setTitle(title + " - WOTV-CALC");
+    } else {
+      this.titleService.setTitle("WOTV-CALC");
+    }
   }
 }

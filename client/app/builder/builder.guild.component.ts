@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { GuildService } from '../services/guild.service';
 import { AuthService } from '../services/auth.service';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-builder-guild',
@@ -16,7 +17,8 @@ export class BuilderGuildComponent implements OnInit {
 
   constructor(
     private guildService: GuildService,
-    private authService: AuthService
+    private authService: AuthService,
+    private navService: NavService
   ) {
   }
 
@@ -25,6 +27,8 @@ export class BuilderGuildComponent implements OnInit {
 
     this.statues = this.guildService.getStatues()
     this.statueNames = Object.keys(this.statues)
+
+    this.navService.setTitle("Guild Builder");
   }
 
   ngAfterViewInit() {

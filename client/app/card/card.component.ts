@@ -42,6 +42,8 @@ export class CardComponent implements OnInit {
         this.router.navigate([this.navService.getRoute('/card-not-found')]);
       } else {
         this.formatCard();
+
+        this.navService.setTitle(this.card.name);
       }
     });
   }

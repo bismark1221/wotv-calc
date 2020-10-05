@@ -31,11 +31,13 @@ export class RaidsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.navService.setTitle("Raids");
+
     this.getRaids();
   }
 
-  getRaids(): void {
+  getRaids() {
     this.raids = this.raidService.getRaidsForListing(this.filters, this.sort, this.order);
     this.translateRaids();
   }
