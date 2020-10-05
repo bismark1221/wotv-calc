@@ -100,7 +100,13 @@ export class Equipment {
       this.grows[growId].stats = {};
       this.statsTypes.forEach(statType => {
         let maxValue = this.stats[statType].max
-        let growMax = this.grows[growId].curve[statType] ? Math.floor(maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100)) : maxValue
+
+        let growMax = this.grows[growId].curve[statType] ? maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100) : maxValue
+        if (growMax < 0 && growMax > -1) {
+          growMax = 0
+        } else {
+          growMax = Math.floor(growMax)
+        }
 
         this.grows[growId].stats[statType] = []
         for (let i = this.stats[statType].min; i <= growMax; i++) {
@@ -108,6 +114,21 @@ export class Equipment {
         }
       })
     })
+
+    let usableStatsTypes = []
+    this.statsTypes.forEach(statType => {
+      let maxDifferentZero = false;
+      Object.keys(this.grows).forEach(growId => {
+        if (this.grows[growId].stats[statType][this.grows[growId].stats[statType].length - 1] != 0) {
+          maxDifferentZero = true
+        }
+      })
+
+      if (maxDifferentZero || this.stats[statType].min != 0) {
+        usableStatsTypes.push(statType)
+      }
+    })
+    this.statsTypes = usableStatsTypes
 
     this.maxLevel = this.grows[this.grow].curve.MAX_LV
     this.tableLevel = []
