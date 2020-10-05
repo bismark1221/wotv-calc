@@ -409,6 +409,14 @@ export class JsonService {
 
   conditions = {
     2: "MALE",
+    11: "FIRE_ELEMENT",
+    12: "ICE_ELEMENT",
+    13: "WIND_ELEMENT",
+    14: "EARTH_ELEMENT",
+    15: "LIGHTNING_ELEMENT",
+    16: "WATER_ELEMENT",
+    17: "LIGHT_ELEMENT",
+    18: "DARK_ELEMENT",
     19: "BEHIND"
   }
 
@@ -1841,7 +1849,15 @@ export class JsonService {
                       }
 
                       if (this[this.version].buffs[buff].conds) {
+                        if (buff == "BUFF_MA_LW_RARD") {
+                          console.log(this[this.version].buffs[buff])
+                        }
+
                         addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
+
+                        if (buff == "BUFF_MA_LW_RARD") {
+                          console.log(addedBuff)
+                        }
                       } else {
                         delete addedBuff.condition
                       }
