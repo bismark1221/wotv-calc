@@ -14,6 +14,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { TeamService } from '../services/team.service'
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
+import { NavService } from '../services/nav.service';
 
 import { BuilderGuildComponent } from './builder.guild.component';
 
@@ -41,6 +42,9 @@ export class BuilderTeamComponent implements OnInit {
   confirmModal = null
   savedTeams = null
   showSave = false
+  showStatsStacking = false
+
+  statsStack = false
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -62,7 +66,8 @@ export class BuilderTeamComponent implements OnInit {
     private modalService: NgbModal,
     private clipboardService: ClipboardService,
     private teamService: TeamService,
-    private authService: AuthService
+    private authService: AuthService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       for (let i = 0; i <= 4; i++) {
@@ -79,11 +84,16 @@ export class BuilderTeamComponent implements OnInit {
     this.team = this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues)
 
+    if (this.navService.getVersion() == "JP") {
+      this.showStatsStacking = true
+      this.statsStack = true
+    }
+
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       let data = params.get('data')
       if (data) {
         this.teamService.getStoredTeam(data).subscribe(teamData => {
-          this.teamService.updateTeam(teamData)
+          this.teamService.updateTeam(teamData, this.statsStack)
           this.team.units.forEach((unit, unitIndex) => {
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId
@@ -125,13 +135,22 @@ export class BuilderTeamComponent implements OnInit {
     });
   }
 
+  toggleStatsStacking() {
+    for (let i = 0; i <= 4; i++) {
+      if (this.team.units[i]) {
+        this.team.units[i].statsStack = !this.team.units[i].statsStack
+        this.changeLevel(i)
+      }
+    }
+  }
+
   selectUnit(pos, forceSelect = false, customData = null) {
     let dataId = this.selectedUnits[pos]
 
     if (!forceSelect && this.savedUnits[dataId] && this.savedUnits[dataId].length > 0) {
       this.openLoadModalUnits(pos, dataId)
     } else {
-      this.teamService.selectUnit(pos, dataId, customData)
+      this.teamService.selectUnit(pos, dataId, customData, this.statsStack)
 
       if (this.team.units[pos]) {
         Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
@@ -339,7 +358,7 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   loadTeam(teamData) {
-    this.teamService.updateTeam(teamData)
+    this.teamService.updateTeam(teamData, this.statsStack)
     this.updateAllAvailable()
     this.updateAllSelected()
   }

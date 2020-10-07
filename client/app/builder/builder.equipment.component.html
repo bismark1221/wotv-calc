@@ -96,10 +96,10 @@
           <th colspan="13">Stats</th>
         </tr>
         <tr>
-          <th class="sub">Level</th>
+          <th class="sub" *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">Level</th>
           <th class="sub" *ngFor="let statType of equipment.statsTypes">{{ statType }}</th>
         </tr>
-        <tr>
+        <tr *ngIf="!equipment.acquisition || equipment.acquisition.type !== 'tmr'">
           <td>
             <select [(ngModel)]="equipment.level" (ngModelChange)="changeLevel()">
               <option *ngFor="let level of equipment.tableLevel">{{ level }}</option>

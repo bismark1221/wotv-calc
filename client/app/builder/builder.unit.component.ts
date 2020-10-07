@@ -43,12 +43,12 @@ export class BuilderUnitComponent implements OnInit {
   showSave = false
   showStatsDetail = false
   showBuffsDetail = false
-  showCumulative = false
+  showStatsStacking = false
 
   isCollapsedMainJob = true
   isCollapsedSubJob = true
   isCollapsedOther = true
-  cumulativeStats = false
+  statsStack = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -62,7 +62,7 @@ export class BuilderUnitComponent implements OnInit {
     {type: "cardParty", translate: "Card Party"}
   ]
 
-  BuffsFrom = [
+  buffsFrom = [
     {type: "base", translate: "Base"},
     {type: "board", translate: "Board"},
     {type: "support", translate: "Support"},
@@ -163,8 +163,8 @@ export class BuilderUnitComponent implements OnInit {
     });
 
     if (this.navService.getVersion() == "JP") {
-      this.showCumulative = true
-      this.cumulativeStats = true
+      this.showStatsStacking = true
+      this.statsStack = true
     }
   }
 
@@ -254,21 +254,23 @@ export class BuilderUnitComponent implements OnInit {
 
   selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData, this.cumulativeStats)
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData, this.statsStack)
       this.searchText = this.unit.name
 
       this.loadGuild()
       this.unitService.getActiveSkills()
       this.showList = false
-
-      console.log(this.unit)
-
     } else {
       this.unit = null
       this.searchText = ""
       this.updateFilteredUnits()
       this.showList = true
     }
+  }
+
+  toggleStatsStacking() {
+    this.unit.statsStack = !this.unit.statsStack
+    this.changeLevel()
   }
 
   changeStar(value) {

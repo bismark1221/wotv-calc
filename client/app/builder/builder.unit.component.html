@@ -35,9 +35,10 @@
   <div class="saveBlock" *ngIf="!showList && unit">
     <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
     <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
-    <div *ngIf="showCumulative">
-      <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="cumulativeStats == true"></ui-switch>
-    </div>
+    <span class="stackingBlock" *ngIf="showStatsStacking">
+      Stats stacking ?
+      <ui-switch class="switchStatsStack" (click)="toggleStatsStacking()" checkedLabel="yes" uncheckedLabel="no" [checked]="statsStack == true"></ui-switch>
+    </span>
   </div>
 
   <div class="leftBlock" *ngIf="!showList && unit">
@@ -384,10 +385,34 @@
             <span *ngIf="buffsImage.indexOf(statType.toLowerCase()) === -1">{{ statType }}</span>
           </th>
         </tr>
-        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of ['board', 'support', 'masterSkill', 'esper', 'card', 'cardParty', 'equipment0_stat', 'equipment0_buff', 'equipment1_stat', 'equipment1_buff', 'equipment2_stat', 'equipment2_buff', 'totalEquipment']">
-          <td>{{ comeFrom }}</td>
-          <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom] : '' }}</td>
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let comeFrom of buffsFrom">
+          <td>{{ comeFrom.translate }}</td>
+          <td *ngFor="let statType of line">{{ unit.stats[statType] ? unit.stats[statType][comeFrom.type] : '' }}</td>
         </tr>
+
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Stats</td>
+          <td *ngFor="let statType of line">
+            <div *ngIf="unit.stats[statType].equipments">
+              <span>{{ unit.stats[statType].equipments[statFrom] }}</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
+          <td>Equipment {{ statFrom }} Buffs</td>
+          <td *ngFor="let statType of line">
+            <span>{{ unit.stats[statType]['equipment' + statFrom + '_buff'] }}</span>
+          </td>
+        </tr>
+
+        <tr  [ngClass]="{'disable': !showBuffsDetail}" >
+          <td>Total Equipement</td>
+          <td *ngFor="let statType of line">
+            <span>{{ unit.stats[statType]['totalEquipment'] }}</span>
+          </td>
+        </tr>
+
         <tr>
           <td>Total</td>
           <td *ngFor="let statType of line">{{ unit.stats[statType].total }}</td>

@@ -304,23 +304,9 @@ label {
 }
 
 
-/* Toogle switch theme */
+/* Toogle switch */
 .switch .switch-pane > span {
   min-height: 0 !important;
-}
-
-.switch-label-unchecked {
-  width: 65px !important;
-  padding-top: 5px !important;
-  padding-right: 5px !important;
-  content: url(assets/nav/moon.png);
-}
-
-.switch-label-checked {
-  padding-top: 5px !important;
-  padding-left: 5px !important;
-  height: 25px !important;
-  content: url(assets/nav/sun.png);
 }
 
 .switch {
@@ -348,6 +334,29 @@ small {
 .switch small {
   left: 4px !important;
   top: 2px !important;
+}
+
+/* Switch Theme*/
+.switchTheme .switch-label-unchecked {
+  width: 65px !important;
+  padding-top: 5px !important;
+  padding-right: 5px !important;
+  content: url(assets/nav/moon.png);
+}
+
+.switchTheme .switch-label-checked {
+  padding-top: 5px !important;
+  padding-left: 5px !important;
+  height: 25px !important;
+  content: url(assets/nav/sun.png);
+}
+
+.switchStatsStack .switch {
+  margin: 0 !important;
+}
+
+.switchStatsStack .switch-label-unchecked {
+  color: white;
 }
 
 

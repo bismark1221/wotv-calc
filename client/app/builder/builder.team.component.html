@@ -10,6 +10,10 @@
     <button class="btn btn-sub" (click)="openLoadModal()" *ngIf="showSave">Load Team</button>
     <button class="btn btn-sub" (click)="openSaveModal()" *ngIf="showSave">Save Team</button>
     <span class="teamCost">Cost : {{ team.cost }}</span>
+    <span class="stackingBlock" *ngIf="showStatsStacking">
+      Stats stacking ?
+      <ui-switch class="switchStatsStack" (click)="toggleStatsStacking()" checkedLabel="yes" uncheckedLabel="no" [checked]="statsStack == true"></ui-switch>
+    </span>
   </div>
 
   <div class="unitCol" *ngFor="let unitPos of [0, 1, 2, 3, 4]">
