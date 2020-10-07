@@ -64,7 +64,7 @@
   </div>
 
   <div class="them">
-    <ui-switch (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
+    <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
   </div>
 
   <div *ngIf="!user">

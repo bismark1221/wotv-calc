@@ -348,10 +348,12 @@ export class UnitService {
     return data
   }
 
-  selectUnitForBuilder(unitId, customData = null) {
+  selectUnitForBuilder(unitId, customData = null, statsStack = false) {
     this.unit = new Unit()
     this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService)
     this.unit.name = this.unit.getName(this.translateService)
+
+    this.unit.statsStack = statsStack
 
     this.unit.jobsData = []
     this.unit.jobs.forEach((jobId, jobIndex) => {

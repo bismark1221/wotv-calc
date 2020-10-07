@@ -43,10 +43,12 @@ export class BuilderUnitComponent implements OnInit {
   showSave = false
   showStatsDetail = false
   showBuffsDetail = false
+  showStatsStacking = false
 
   isCollapsedMainJob = true
   isCollapsedSubJob = true
   isCollapsedOther = true
+  statsStack = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -57,31 +59,17 @@ export class BuilderUnitComponent implements OnInit {
     {type: "masterSkill", translate: "Master Skill"},
     {type: "esper", translate: "Esper"},
     {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"},
-    {type: "equipment0_stat", translate: "Equipment 1 Stats"},
-    {type: "equipment0_buff", translate: "Equipment 1 Buffs"},
-    {type: "equipment1_stat", translate: "Equipment 2 Stats"},
-    {type: "equipment1_buff", translate: "Equipment 2 Buffs"},
-    {type: "equipment2_stat", translate: "Equipment 3 Stats"},
-    {type: "equipment2_buff", translate: "Equipment 3 Buffs"},
-    {type: "totalEquipment", translate: "Total Equipement"}
+    {type: "cardParty", translate: "Card Party"}
   ]
 
-  BuffsFrom = [
+  buffsFrom = [
     {type: "base", translate: "Base"},
     {type: "board", translate: "Board"},
     {type: "support", translate: "Support"},
     {type: "masterSkill", translate: "Master Skill"},
     {type: "esper", translate: "Esper"},
     {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"},
-    {type: "equipment0_stat", translate: "Equipment 1 Stats"},
-    {type: "equipment0_buff", translate: "Equipment 1 Buffs"},
-    {type: "equipment1_stat", translate: "Equipment 2 Stats"},
-    {type: "equipment1_buff", translate: "Equipment 2 Buffs"},
-    {type: "equipment2_stat", translate: "Equipment 3 Stats"},
-    {type: "equipment2_buff", translate: "Equipment 3 Buffs"},
-    {type: "totalEquipment", translate: "Total Equipement"}
+    {type: "cardParty", translate: "Card Party"}
   ]
 
   rarityTranslate = {
@@ -175,6 +163,11 @@ export class BuilderUnitComponent implements OnInit {
     });
 
     this.navService.setTitle("Unit Builder");
+
+    if (this.navService.getVersion() == "JP") {
+      this.showStatsStacking = true
+      this.statsStack = true
+    }
   }
 
   ngAfterViewInit() {
@@ -263,7 +256,7 @@ export class BuilderUnitComponent implements OnInit {
 
   selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData, this.statsStack)
       this.searchText = this.unit.name
 
       this.loadGuild()
@@ -275,6 +268,11 @@ export class BuilderUnitComponent implements OnInit {
       this.updateFilteredUnits()
       this.showList = true
     }
+  }
+
+  toggleStatsStacking() {
+    this.unit.statsStack = !this.unit.statsStack
+    this.changeLevel()
   }
 
   changeStar(value) {
