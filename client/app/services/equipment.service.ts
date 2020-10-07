@@ -329,7 +329,7 @@ export class EquipmentService {
     }
 
     Object.keys(equipment.stats).forEach(stat => {
-      data.stats[stat] = equipment.stats[stat].selected
+      data.stats[stat] = equipment.stats[stat].selected ? equipment.stats[stat].selected : 0
     })
 
     equipment.skill.forEach(skill => {
