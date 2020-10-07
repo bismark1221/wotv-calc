@@ -41711,5 +41711,192 @@
         "ACC"
       ]
     }
+  },
+  "JB_LW_LSWL": {
+    "dataId": "JB_LW_LSWL",
+    "names": {
+      "en": "Knight of Grandshelt",
+      "fr": "Chevalier de Grandshelt"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 589,
+        "AP": 589,
+        "ATK": 1203,
+        "MAG": 205,
+        "DEX": 768,
+        "AGI": 870,
+        "LUCK": 870,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 933,
+        "AP": 933,
+        "ATK": 1907,
+        "MAG": 325,
+        "DEX": 1217,
+        "AGI": 1379,
+        "LUCK": 1379,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 1177,
+        "AP": 1177,
+        "ATK": 2406,
+        "MAG": 410,
+        "DEX": 1536,
+        "AGI": 1741,
+        "LUCK": 1741,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 1367,
+        "AP": 1367,
+        "ATK": 2793,
+        "MAG": 475,
+        "DEX": 1783,
+        "AGI": 2021,
+        "LUCK": 2021,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 1522,
+        "AP": 1522,
+        "ATK": 3110,
+        "MAG": 529,
+        "DEX": 1985,
+        "AGI": 2250,
+        "LUCK": 2250,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1653,
+        "AP": 1653,
+        "ATK": 3377,
+        "MAG": 575,
+        "DEX": 2156,
+        "AGI": 2443,
+        "LUCK": 2443,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1766,
+        "AP": 1766,
+        "ATK": 3609,
+        "MAG": 614,
+        "DEX": 2304,
+        "AGI": 2611,
+        "LUCK": 2611,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1866,
+        "AP": 1866,
+        "ATK": 3813,
+        "MAG": 649,
+        "DEX": 2434,
+        "AGI": 2759,
+        "LUCK": 2759,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1956,
+        "AP": 1956,
+        "ATK": 3996,
+        "MAG": 680,
+        "DEX": 2551,
+        "AGI": 2891,
+        "LUCK": 2891,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 2037,
+        "AP": 2037,
+        "ATK": 4162,
+        "MAG": 708,
+        "DEX": 2656,
+        "AGI": 3011,
+        "LUCK": 3011,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 2110,
+        "AP": 2110,
+        "ATK": 4313,
+        "MAG": 734,
+        "DEX": 2753,
+        "AGI": 3120,
+        "LUCK": 3120,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 2178,
+        "AP": 2178,
+        "ATK": 4452,
+        "MAG": 758,
+        "DEX": 2841,
+        "AGI": 3220,
+        "LUCK": 3220,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 2241,
+        "AP": 2241,
+        "ATK": 4580,
+        "MAG": 780,
+        "DEX": 2924,
+        "AGI": 3313,
+        "LUCK": 3313,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 2300,
+        "AP": 2300,
+        "ATK": 4700,
+        "MAG": 800,
+        "DEX": 3000,
+        "AGI": 3400,
+        "LUCK": 3400,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "lapslswl",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "KATANA"
+      ],
+      "armors": [
+        "ARMOR",
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    }
   }
 }
