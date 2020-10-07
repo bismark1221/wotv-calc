@@ -112,7 +112,10 @@ export class CardService {
   getCardBySlug(slug) {
     this.getCards();
     this.card = this.cards.find(card => card.slug === slug)
-    this.card.statsType = this.getAvailableStats()
+
+    if (this.card) {
+      this.card.statsType = this.getAvailableStats()
+    }
 
     return this.card;
   }
