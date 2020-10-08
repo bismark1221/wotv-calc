@@ -1542,8 +1542,49 @@ export class JsonService {
       ctave: null,
       crt_hit: null,
       kback: null,
-      target: null
+      target: null,
+      hp_bonus: null,
+      invtag: null,
+      acbst: null,
+      eff_w: null,
+      bbrk: null,
+
+      // not used
+      timing: null,
+      atk_base: null,
+      elem_pri: null,
+      lvup_cost_rate: null,
+      motnm: null,
+      effnm: null,
+      collaboType: null,
+      cam_dir: null,
+      gdupli: null,
+      atk_formula: null,
+      atk_formula_t1: null,
+      atk_formula_t2: null,
+      atk_formula_t3: null,
+      selfsel: null,
+      hp_cost_rate: null,
+      def_wep: null,
+      ischa: null,
+      ct_type: null,
+      ct_lock: null,
+      exp: null,
+      dupli: null,
+      scn: null,
+      force_eq: null,
+      range_bns: null,
+      def_shi: null,
+      range_buff: null,
+
+      // managed not here
+      iname: null,
+      slot: null,
+      type: null,
+      movie: null,
+      wth: null
     };
+    let managedData = Object.keys(dataSkill)
 
     if (skill.type == "buff") {
       dataSkill.s_buffs = [skillId]
@@ -1552,6 +1593,20 @@ export class JsonService {
       skill.names = {}
       this.getNames(skill, 'skill', false)
       dataSkill.names = skill.names
+
+      Object.keys(dataSkill).forEach(key => {
+        if (managedData.indexOf(key) == -1) {
+          console.log("NOT MANAGED KEY : " + key)
+        }
+      })
+    }
+
+    if (dataSkill.range_buff && dataSkill.range_buff != 1) {
+      console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- range buff != 1")
+    }
+
+    if (dataSkill.eff_w && dataSkill.eff_w != 1) {
+      console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- eff_w != 1")
     }
 
     if (dataSkill.target) {
@@ -1574,6 +1629,35 @@ export class JsonService {
         type: "HP_COST",
         value: dataSkill.hp_cost,
         calcType: "percent"
+      });
+    }
+
+    if (dataSkill.bbrk) {
+      let type = "BREAK_BARRIER"
+      switch (dataSkill.bbrk) {
+        case 1:
+          type = type + "_GENERAL"
+          break;
+        case 2:
+          type = type + "_PHYSIC"
+          break;
+        case 3:
+          type = type + "_MAGIC"
+          break;
+        default:
+          console.log("6 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- barrier : " + dataSkill.bbrk)
+          break;
+      }
+
+      skill.effects.push({
+        type: type
+      })
+    }
+
+    if (dataSkill.acbst) {
+      skill.effects.push({
+        type: "STOP_CHAIN_INCREASE_DAMAGE",
+        value: dataSkill.acbst
       });
     }
 
@@ -1644,17 +1728,29 @@ export class JsonService {
       }
     }
 
-    if (dataSkill.klsp) {
-      if (!this.killers[dataSkill.klsp[0]]) {
-        console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + dataSkill.klsp[0])
-      }
+    if (dataSkill.invtag) {
+      dataSkill.invtag.forEach(ignore => {
+        if (!this.killers[ignore]) {
+          console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + ignore)
+        }
 
+        skill.effects.push({
+          type: "IGNORE_" + this.killers[ignore],
+        });
+      });
+    }
+
+    if (dataSkill.klsp) {
       dataSkill.klsp.forEach(killer => {
+        if (!this.killers[killer]) {
+          console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + killer)
+        }
+
         skill.effects.push({
           type: this.killers[killer] + "_KILLER",
           minValue: dataSkill.klspr,
           maxValue: dataSkill.klspr,
-          calcType: "unknow",
+          calcType: "unknow"
         });
       });
     }
@@ -1701,6 +1797,13 @@ export class JsonService {
     if (dataSkill.ctave) {
       skill.effects.push({
         type: "AVG_CT"
+      });
+    }
+
+    if (dataSkill.hp_bonus) {
+      skill.effects.push({
+        type: "INCREASE_DAMAGE_DECREASED_HP",
+        value: 100
       });
     }
 
@@ -1840,7 +1943,8 @@ export class JsonService {
                         if (!effect) {
                           effect = {
                             type: calcType.toUpperCase(),
-                            ailments: []
+                            ailments: [],
+                            target: dataBuffsIndex == 0 ? skill.target : "self"
                           }
                           skill.effects.push(effect)
                           alreadyAddedBuffs.push(buff)
@@ -1861,7 +1965,8 @@ export class JsonService {
                         turn: this[this.version].buffs[buff].turn,
                         fromImbue: false,
                         condition: null,
-                        increaseMax: false
+                        increaseMax: false,
+                        target: dataBuffsIndex == 0 ? skill.target : "self"
                       };
 
                       if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
@@ -1871,15 +1976,7 @@ export class JsonService {
                       }
 
                       if (this[this.version].buffs[buff].conds) {
-                        if (buff == "BUFF_MA_LW_RARD") {
-                          console.log(this[this.version].buffs[buff])
-                        }
-
                         addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]]
-
-                        if (buff == "BUFF_MA_LW_RARD") {
-                          console.log(addedBuff)
-                        }
                       } else {
                         delete addedBuff.condition
                       }
