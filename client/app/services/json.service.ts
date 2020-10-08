@@ -470,6 +470,19 @@ export class JsonService {
     "hybrid"
   ]
 
+  targetTypes = {
+    0:  "self",
+    1:  "target",
+    2:  "allyNotSelf",
+    10: "selfSide",
+    11: "ennemySide",
+    12: "all",
+    20: "deadAlly",
+    21: "deadEnnemy",
+    22: "deadAll",
+    90: "panel"
+  }
+
   stats = {
     unit: {
       "hp": "HP",
@@ -1528,7 +1541,8 @@ export class JsonService {
       strength: null,
       ctave: null,
       crt_hit: null,
-      kback: null
+      kback: null,
+      target: null
     };
 
     if (skill.type == "buff") {
@@ -1538,6 +1552,14 @@ export class JsonService {
       skill.names = {}
       this.getNames(skill, 'skill', false)
       dataSkill.names = skill.names
+    }
+
+    if (dataSkill.target) {
+      if (!this.targetTypes[dataSkill.target]) {
+        console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- target : " + dataSkill.target)
+      }
+
+      skill.target = this.targetTypes[dataSkill.target]
     }
 
     if (typeof(dataSkill.cost_type) == "number") {
@@ -1759,7 +1781,7 @@ export class JsonService {
       let alreadyAddedBuffs = []
       let possibleBuffs = ["t_buffs", "s_buffs"]
 
-      possibleBuffs.forEach(dataBuffs => {
+      possibleBuffs.forEach((dataBuffs, dataBuffsIndex) => {
         if (dataSkill[dataBuffs]) {
           let buffs = JSON.parse(JSON.stringify(dataSkill[dataBuffs]))
 

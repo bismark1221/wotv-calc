@@ -992,7 +992,7 @@ export class SkillService {
     }
 
     if (skill.hit) {
-      html += (skill.damage ? "<br />" : "") + "Hit chance set to " + skill.hit + "%"
+      html += (skill.damage ? "<br />" : "") + (skill.hit > 0 ? "+" : "") + skill.hit + "% hit chance"
     }
 
     if (skill.crt_hit) {
