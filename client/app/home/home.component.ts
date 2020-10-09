@@ -47,6 +47,15 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "09/10",
+        items: [
+          {type: "card", dataId: "VC_LW_TYPN"},
+          {type: "esper", dataId: "UN_LW_S_TYPN"},
+          {type: "card", dataId: "VC_LW_APPLE"},
+          {type: "equipment", dataId: "AF_LW_ARW_001"}
+        ]
+      },
+      {
         date: "31/08",
         items: [
           {type: "unit", dataId: "UN_LW_P_RYER_01"},
@@ -65,15 +74,6 @@ export class HomeComponent {
           {type: "esper", dataId: "UN_LW_S_GCAL"},
           {type: "equipment", dataId: "AF_LW_ARW_005"},
           {type: "equipment", dataId: "AF_LW_ROD_019"}
-        ]
-      },
-      {
-        date: "09/09",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_LVAT"},
-          {type: "card", dataId: "VC_LW_LVAT"},
-          {type: "card", dataId: "VC_LW_ASSASIN"},
-          {type: "equipment", dataId: "AF_LW_CLK_001"}
         ]
       }
     ]

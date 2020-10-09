@@ -60,6 +60,10 @@
             <div *ngIf="buff.cond.type == 'job'">
               <img *ngFor="let job of buff.cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
             </div>
+
+            <div *ngIf="buff.cond.type == 'unit'">
+              <img *ngFor="let unit of buff.cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+            </div>
           </td>
         </tr>
         <tr *ngIf="buff.classic && buff.classic.type == 'support'">

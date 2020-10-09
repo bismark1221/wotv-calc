@@ -74,7 +74,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GLEM_GS",
@@ -84,6 +85,7 @@
           "en": "SK_VC_LW_GLEM_GS",
           "fr": "SK_VC_LW_GLEM_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -94,7 +96,8 @@
             "minValue": 1,
             "maxValue": 5,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GLEM_GSAW",
@@ -104,6 +107,7 @@
           "en": "SK_VC_LW_GLEM_GSAW",
           "fr": "SK_VC_LW_GLEM_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -114,7 +118,8 @@
             "minValue": 5,
             "maxValue": 5,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GLEM_GSMAX",
@@ -124,6 +129,7 @@
           "en": "SK_VC_LW_GLEM_GSMAX",
           "fr": "SK_VC_LW_GLEM_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -136,7 +142,8 @@
               "type": "EARTH_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GLEM_P",
@@ -146,6 +153,7 @@
             "en": "SK_VC_LW_GLEM_P",
             "fr": "SK_VC_LW_GLEM_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -155,7 +163,8 @@
               "type": "EARTH_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GLEM_PAW",
@@ -165,6 +174,7 @@
             "en": "SK_VC_LW_GLEM_PAW",
             "fr": "SK_VC_LW_GLEM_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -174,7 +184,8 @@
               "type": "EARTH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GLEM_PMAX",
@@ -184,6 +195,7 @@
             "en": "SK_VC_LW_GLEM_PMAX",
             "fr": "SK_VC_LW_GLEM_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -265,7 +277,8 @@
             "minValue": 15,
             "maxValue": 30,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_IFRT_GS",
@@ -275,6 +288,7 @@
           "en": "SK_VC_LW_IFRT_GS",
           "fr": "SK_VC_LW_IFRT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -285,7 +299,8 @@
             "minValue": 1,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_IFRT_GSAW",
@@ -295,6 +310,7 @@
           "en": "SK_VC_LW_IFRT_GSAW",
           "fr": "SK_VC_LW_IFRT_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -305,7 +321,8 @@
             "minValue": 10,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_IFRT_GSMAX",
@@ -315,6 +332,7 @@
           "en": "SK_VC_LW_IFRT_GSMAX",
           "fr": "SK_VC_LW_IFRT_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -327,7 +345,8 @@
               "type": "FIRE_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_IFRT_P",
@@ -337,6 +356,7 @@
             "en": "SK_VC_LW_IFRT_P",
             "fr": "SK_VC_LW_IFRT_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -346,7 +366,8 @@
               "type": "FIRE_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_IFRT_PAW",
@@ -356,6 +377,7 @@
             "en": "SK_VC_LW_IFRT_PAW",
             "fr": "SK_VC_LW_IFRT_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -365,7 +387,8 @@
               "type": "FIRE_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_IFRT_PMAX",
@@ -375,6 +398,7 @@
             "en": "SK_VC_LW_IFRT_PMAX",
             "fr": "SK_VC_LW_IFRT_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -455,7 +479,8 @@
             "type": "WATER_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SIRE_GS",
@@ -465,6 +490,7 @@
           "en": "SK_VC_LW_SIRE_GS",
           "fr": "SK_VC_LW_SIRE_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -474,7 +500,8 @@
             "type": "WATER_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SIRE_GSAW",
@@ -484,6 +511,7 @@
           "en": "SK_VC_LW_SIRE_GSAW",
           "fr": "SK_VC_LW_SIRE_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -493,7 +521,8 @@
             "type": "WATER_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SIRE_GSMAX",
@@ -503,6 +532,7 @@
           "en": "SK_VC_LW_SIRE_GSMAX",
           "fr": "SK_VC_LW_SIRE_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -515,7 +545,8 @@
               "type": "WATER_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SIRE_P",
@@ -525,6 +556,7 @@
             "en": "SK_VC_LW_SIRE_P",
             "fr": "SK_VC_LW_SIRE_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -534,7 +566,8 @@
               "type": "WATER_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SIRE_PAW",
@@ -544,6 +577,7 @@
             "en": "SK_VC_LW_SIRE_PAW",
             "fr": "SK_VC_LW_SIRE_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -553,7 +587,8 @@
               "type": "WATER_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SIRE_PMAX",
@@ -563,6 +598,7 @@
             "en": "SK_VC_LW_SIRE_PMAX",
             "fr": "SK_VC_LW_SIRE_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -644,7 +680,8 @@
             "minValue": 10,
             "maxValue": 20,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SOKYU_GS",
@@ -654,6 +691,7 @@
           "en": "SK_VC_LW_SOKYU_GS",
           "fr": "SK_VC_LW_SOKYU_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -664,7 +702,8 @@
             "minValue": 1,
             "maxValue": 7,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SOKYU_GSAW",
@@ -674,6 +713,7 @@
           "en": "SK_VC_LW_SOKYU_GSAW",
           "fr": "SK_VC_LW_SOKYU_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -684,7 +724,8 @@
             "minValue": 8,
             "maxValue": 8,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SOKYU_GSMAX",
@@ -694,6 +735,7 @@
           "en": "SK_VC_LW_SOKYU_GSMAX",
           "fr": "SK_VC_LW_SOKYU_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -706,7 +748,8 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SOKYU_P",
@@ -716,6 +759,7 @@
             "en": "SK_VC_LW_SOKYU_P",
             "fr": "SK_VC_LW_SOKYU_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -725,7 +769,8 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SOKYU_PAW",
@@ -735,6 +780,7 @@
             "en": "SK_VC_LW_SOKYU_PAW",
             "fr": "SK_VC_LW_SOKYU_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -744,7 +790,8 @@
               "type": "SLASH_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SOKYU_PMAX",
@@ -754,6 +801,7 @@
             "en": "SK_VC_LW_SOKYU_PMAX",
             "fr": "SK_VC_LW_SOKYU_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -834,7 +882,8 @@
             "type": "ACTIVATION_TIME",
             "minValue": -25,
             "maxValue": -50,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TRAINING_GS",
@@ -844,6 +893,7 @@
           "en": "SK_VC_LW_TRAINING_GS",
           "fr": "SK_VC_LW_TRAINING_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -853,7 +903,8 @@
             "type": "ACTIVATION_TIME",
             "minValue": -5,
             "maxValue": -25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TRAINING_GSAW",
@@ -863,6 +914,7 @@
           "en": "SK_VC_LW_TRAINING_GSAW",
           "fr": "SK_VC_LW_TRAINING_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -872,7 +924,8 @@
             "type": "ACTIVATION_TIME",
             "minValue": -25,
             "maxValue": -25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TRAINING_GSMAX",
@@ -882,6 +935,7 @@
           "en": "SK_VC_LW_TRAINING_GSMAX",
           "fr": "SK_VC_LW_TRAINING_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -894,7 +948,8 @@
               "type": "CRITIC_DAMAGE",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TRAINING_P",
@@ -904,6 +959,7 @@
             "en": "SK_VC_LW_TRAINING_P",
             "fr": "SK_VC_LW_TRAINING_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -913,7 +969,8 @@
               "type": "CRITIC_DAMAGE",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TRAINING_PAW",
@@ -923,6 +980,7 @@
             "en": "SK_VC_LW_TRAINING_PAW",
             "fr": "SK_VC_LW_TRAINING_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -932,7 +990,8 @@
               "type": "CRITIC_DAMAGE",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TRAINING_PMAX",
@@ -942,6 +1001,7 @@
             "en": "SK_VC_LW_TRAINING_PMAX",
             "fr": "SK_VC_LW_TRAINING_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1022,7 +1082,8 @@
             "type": "MAGIC_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MACR_GS",
@@ -1032,6 +1093,7 @@
           "en": "SK_VC_LW_MACR_GS",
           "fr": "SK_VC_LW_MACR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1041,7 +1103,8 @@
             "type": "MAGIC_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MACR_GSAW",
@@ -1051,6 +1114,7 @@
           "en": "SK_VC_LW_MACR_GSAW",
           "fr": "SK_VC_LW_MACR_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -1060,7 +1124,8 @@
             "type": "MAGIC_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MACR_GSMAX",
@@ -1070,6 +1135,7 @@
           "en": "SK_VC_LW_MACR_GSMAX",
           "fr": "SK_VC_LW_MACR_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -1082,7 +1148,8 @@
               "type": "DARK_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MACR_P",
@@ -1092,6 +1159,7 @@
             "en": "SK_VC_LW_MACR_P",
             "fr": "SK_VC_LW_MACR_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -1101,7 +1169,8 @@
               "type": "DARK_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MACR_PAW",
@@ -1111,6 +1180,7 @@
             "en": "SK_VC_LW_MACR_PAW",
             "fr": "SK_VC_LW_MACR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -1120,7 +1190,8 @@
               "type": "DARK_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MACR_PMAX",
@@ -1130,6 +1201,7 @@
             "en": "SK_VC_LW_MACR_PMAX",
             "fr": "SK_VC_LW_MACR_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1210,7 +1282,8 @@
             "type": "SLASH_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MURG_GS",
@@ -1220,6 +1293,7 @@
           "en": "SK_VC_LW_MURG_GS",
           "fr": "SK_VC_LW_MURG_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1229,7 +1303,8 @@
             "type": "SLASH_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MURG_GSAW",
@@ -1239,6 +1314,7 @@
           "en": "SK_VC_LW_MURG_GSAW",
           "fr": "SK_VC_LW_MURG_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -1248,7 +1324,8 @@
             "type": "SLASH_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MURG_GSMAX",
@@ -1258,6 +1335,7 @@
           "en": "SK_VC_LW_MURG_GSMAX",
           "fr": "SK_VC_LW_MURG_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -1270,7 +1348,8 @@
               "type": "ATK_DEBUFF_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MURG_P",
@@ -1280,6 +1359,7 @@
             "en": "SK_VC_LW_MURG_P",
             "fr": "SK_VC_LW_MURG_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -1289,7 +1369,8 @@
               "type": "ATK_DEBUFF_RES",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MURG_PAW",
@@ -1299,6 +1380,7 @@
             "en": "SK_VC_LW_MURG_PAW",
             "fr": "SK_VC_LW_MURG_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -1308,7 +1390,8 @@
               "type": "ATK_DEBUFF_RES",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MURG_PMAX",
@@ -1318,6 +1401,7 @@
             "en": "SK_VC_LW_MURG_PMAX",
             "fr": "SK_VC_LW_MURG_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1398,7 +1482,8 @@
             "type": "PIERCE_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GRSR_GS",
@@ -1408,6 +1493,7 @@
           "en": "SK_VC_LW_GRSR_GS",
           "fr": "SK_VC_LW_GRSR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1417,7 +1503,8 @@
             "type": "PIERCE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GRSR_GSAW",
@@ -1427,6 +1514,7 @@
           "en": "SK_VC_LW_GRSR_GSAW",
           "fr": "SK_VC_LW_GRSR_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -1436,7 +1524,8 @@
             "type": "PIERCE_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GRSR_GSMAX",
@@ -1446,6 +1535,7 @@
           "en": "SK_VC_LW_GRSR_GSMAX",
           "fr": "SK_VC_LW_GRSR_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -1459,7 +1549,8 @@
               "minValue": 1,
               "maxValue": 2,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GRSR_P",
@@ -1469,6 +1560,7 @@
             "en": "SK_VC_LW_GRSR_P",
             "fr": "SK_VC_LW_GRSR_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -1479,7 +1571,8 @@
               "minValue": 1,
               "maxValue": 2,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GRSR_PAW",
@@ -1489,6 +1582,7 @@
             "en": "SK_VC_LW_GRSR_PAW",
             "fr": "SK_VC_LW_GRSR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -1499,7 +1593,8 @@
               "minValue": 1,
               "maxValue": 1,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GRSR_PMAX",
@@ -1509,6 +1604,7 @@
             "en": "SK_VC_LW_GRSR_PMAX",
             "fr": "SK_VC_LW_GRSR_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1589,7 +1685,8 @@
             "type": "LIGHT_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF14_MV1_GS",
@@ -1599,6 +1696,7 @@
           "en": "SK_VC_FF14_MV1_GS",
           "fr": "SK_VC_FF14_MV1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1608,7 +1706,8 @@
             "type": "LIGHT_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF14_MV1_GSAW",
@@ -1618,6 +1717,7 @@
           "en": "SK_VC_FF14_MV1_GSAW",
           "fr": "SK_VC_FF14_MV1_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -1627,7 +1727,8 @@
             "type": "LIGHT_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF14_MV1_GSMAX",
@@ -1637,6 +1738,7 @@
           "en": "SK_VC_FF14_MV1_GSMAX",
           "fr": "SK_VC_FF14_MV1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -1649,7 +1751,8 @@
               "type": "DARK_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF14_MV1_P",
@@ -1659,6 +1762,7 @@
             "en": "SK_VC_FF14_MV1_P",
             "fr": "SK_VC_FF14_MV1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -1668,7 +1772,8 @@
               "type": "DARK_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF14_MV1_PAW",
@@ -1678,6 +1783,7 @@
             "en": "SK_VC_FF14_MV1_PAW",
             "fr": "SK_VC_FF14_MV1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -1687,7 +1793,8 @@
               "type": "DARK_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF14_MV1_PMAX",
@@ -1697,6 +1804,7 @@
             "en": "SK_VC_FF14_MV1_PMAX",
             "fr": "SK_VC_FF14_MV1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1777,7 +1885,8 @@
             "type": "MISSILE_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HOLYNIGHT_GS",
@@ -1787,6 +1896,7 @@
           "en": "SK_VC_LW_HOLYNIGHT_GS",
           "fr": "SK_VC_LW_HOLYNIGHT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1796,7 +1906,8 @@
             "type": "MISSILE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HOLYNIGHT_GSAW",
@@ -1806,6 +1917,7 @@
           "en": "SK_VC_LW_HOLYNIGHT_GSAW",
           "fr": "SK_VC_LW_HOLYNIGHT_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -1815,7 +1927,8 @@
             "type": "MISSILE_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HOLYNIGHT_GSMAX",
@@ -1825,6 +1938,7 @@
           "en": "SK_VC_LW_HOLYNIGHT_GSMAX",
           "fr": "SK_VC_LW_HOLYNIGHT_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -1837,7 +1951,8 @@
               "type": "LIGHTNING_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HOLYNIGHT_P",
@@ -1847,6 +1962,7 @@
             "en": "SK_VC_LW_HOLYNIGHT_P",
             "fr": "SK_VC_LW_HOLYNIGHT_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -1856,7 +1972,8 @@
               "type": "LIGHTNING_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HOLYNIGHT_PAW",
@@ -1866,6 +1983,7 @@
             "en": "SK_VC_LW_HOLYNIGHT_PAW",
             "fr": "SK_VC_LW_HOLYNIGHT_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -1875,7 +1993,8 @@
               "type": "LIGHTNING_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HOLYNIGHT_PMAX",
@@ -1885,6 +2004,7 @@
             "en": "SK_VC_LW_HOLYNIGHT_PMAX",
             "fr": "SK_VC_LW_HOLYNIGHT_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -1966,7 +2086,8 @@
             "minValue": 15,
             "maxValue": 25,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VALE1_GS",
@@ -1976,6 +2097,7 @@
           "en": "SK_VC_LW_VALE1_GS",
           "fr": "SK_VC_LW_VALE1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -1986,7 +2108,8 @@
             "minValue": 1,
             "maxValue": 5,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VALE1_GSAW",
@@ -1996,6 +2119,7 @@
           "en": "SK_VC_LW_VALE1_GSAW",
           "fr": "SK_VC_LW_VALE1_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2006,7 +2130,8 @@
             "minValue": 5,
             "maxValue": 5,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VALE1_GSMAX",
@@ -2016,6 +2141,7 @@
           "en": "SK_VC_LW_VALE1_GSMAX",
           "fr": "SK_VC_LW_VALE1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2028,7 +2154,8 @@
               "type": "EARTH_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VALE1_P",
@@ -2038,6 +2165,7 @@
             "en": "SK_VC_LW_VALE1_P",
             "fr": "SK_VC_LW_VALE1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2047,7 +2175,8 @@
               "type": "EARTH_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VALE1_PAW",
@@ -2057,6 +2186,7 @@
             "en": "SK_VC_LW_VALE1_PAW",
             "fr": "SK_VC_LW_VALE1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -2066,7 +2196,8 @@
               "type": "EARTH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VALE1_PMAX",
@@ -2076,6 +2207,7 @@
             "en": "SK_VC_LW_VALE1_PMAX",
             "fr": "SK_VC_LW_VALE1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -2156,7 +2288,8 @@
             "type": "EVADE",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SHIV_GS",
@@ -2166,6 +2299,7 @@
           "en": "SK_VC_LW_SHIV_GS",
           "fr": "SK_VC_LW_SHIV_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -2175,7 +2309,8 @@
             "type": "EVADE",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SHIV_GSAW",
@@ -2185,6 +2320,7 @@
           "en": "SK_VC_LW_SHIV_GSAW",
           "fr": "SK_VC_LW_SHIV_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2194,7 +2330,8 @@
             "type": "EVADE",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SHIV_GSMAX",
@@ -2204,6 +2341,7 @@
           "en": "SK_VC_LW_SHIV_GSMAX",
           "fr": "SK_VC_LW_SHIV_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2216,7 +2354,8 @@
               "type": "ICE_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SHIV_P",
@@ -2226,6 +2365,7 @@
             "en": "SK_VC_LW_SHIV_P",
             "fr": "SK_VC_LW_SHIV_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2235,7 +2375,8 @@
               "type": "ICE_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SHIV_PAW",
@@ -2245,6 +2386,7 @@
             "en": "SK_VC_LW_SHIV_PAW",
             "fr": "SK_VC_LW_SHIV_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -2254,7 +2396,8 @@
               "type": "ICE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SHIV_PMAX",
@@ -2264,6 +2407,7 @@
             "en": "SK_VC_LW_SHIV_PMAX",
             "fr": "SK_VC_LW_SHIV_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -2345,7 +2489,8 @@
             "minValue": 15,
             "maxValue": 30,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RAMU_GS",
@@ -2355,6 +2500,7 @@
           "en": "SK_VC_LW_RAMU_GS",
           "fr": "SK_VC_LW_RAMU_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -2365,7 +2511,8 @@
             "minValue": 1,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RAMU_GSAW",
@@ -2375,6 +2522,7 @@
           "en": "SK_VC_LW_RAMU_GSAW",
           "fr": "SK_VC_LW_RAMU_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2385,7 +2533,8 @@
             "minValue": 10,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RAMU_GSMAX",
@@ -2395,6 +2544,7 @@
           "en": "SK_VC_LW_RAMU_GSMAX",
           "fr": "SK_VC_LW_RAMU_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2407,7 +2557,8 @@
               "type": "LIGHTNING_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RAMU_P",
@@ -2417,6 +2568,7 @@
             "en": "SK_VC_LW_RAMU_P",
             "fr": "SK_VC_LW_RAMU_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2426,7 +2578,8 @@
               "type": "LIGHTNING_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RAMU_PAW",
@@ -2436,6 +2589,7 @@
             "en": "SK_VC_LW_RAMU_PAW",
             "fr": "SK_VC_LW_RAMU_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -2445,7 +2599,8 @@
               "type": "LIGHTNING_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RAMU_PMAX",
@@ -2455,6 +2610,7 @@
             "en": "SK_VC_LW_RAMU_PMAX",
             "fr": "SK_VC_LW_RAMU_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -2536,7 +2692,8 @@
             "minValue": 2,
             "maxValue": 8,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV1_GS",
@@ -2546,6 +2703,7 @@
           "en": "SK_VC_FFT_MV1_GS",
           "fr": "SK_VC_FFT_MV1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -2556,7 +2714,8 @@
             "minValue": 1,
             "maxValue": 4,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV1_GSAW",
@@ -2566,6 +2725,7 @@
           "en": "SK_VC_FFT_MV1_GSAW",
           "fr": "SK_VC_FFT_MV1_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2576,7 +2736,8 @@
             "minValue": 3,
             "maxValue": 3,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV1_GSMAX",
@@ -2586,6 +2747,7 @@
           "en": "SK_VC_FFT_MV1_GSMAX",
           "fr": "SK_VC_FFT_MV1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2598,7 +2760,8 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV1_P",
@@ -2608,6 +2771,7 @@
             "en": "SK_VC_FFT_MV1_P",
             "fr": "SK_VC_FFT_MV1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2617,7 +2781,8 @@
               "type": "SLASH_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV1_PAW",
@@ -2627,6 +2792,7 @@
             "en": "SK_VC_FFT_MV1_PAW",
             "fr": "SK_VC_FFT_MV1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -2636,7 +2802,8 @@
               "type": "SLASH_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV1_PMAX",
@@ -2646,6 +2813,7 @@
             "en": "SK_VC_FFT_MV1_PMAX",
             "fr": "SK_VC_FFT_MV1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -2726,7 +2894,8 @@
             "type": "ATTACK_RES",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ODIN_GS",
@@ -2736,6 +2905,7 @@
           "en": "SK_VC_LW_ODIN_GS",
           "fr": "SK_VC_LW_ODIN_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -2745,7 +2915,8 @@
             "type": "ATTACK_RES",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ODIN_GSAW",
@@ -2755,6 +2926,7 @@
           "en": "SK_VC_LW_ODIN_GSAW",
           "fr": "SK_VC_LW_ODIN_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2764,7 +2936,8 @@
             "type": "ATTACK_RES",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ODIN_GSMAX",
@@ -2774,6 +2947,7 @@
           "en": "SK_VC_LW_ODIN_GSMAX",
           "fr": "SK_VC_LW_ODIN_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2787,7 +2961,8 @@
               "minValue": 2,
               "maxValue": 5,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ODIN_P",
@@ -2797,6 +2972,7 @@
             "en": "SK_VC_LW_ODIN_P",
             "fr": "SK_VC_LW_ODIN_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2807,7 +2983,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ODIN_PAW",
@@ -2817,6 +2994,7 @@
             "en": "SK_VC_LW_ODIN_PAW",
             "fr": "SK_VC_LW_ODIN_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -2827,7 +3005,8 @@
               "minValue": 2,
               "maxValue": 2,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ODIN_PMAX",
@@ -2837,6 +3016,7 @@
             "en": "SK_VC_LW_ODIN_PMAX",
             "fr": "SK_VC_LW_ODIN_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -2917,7 +3097,8 @@
             "type": "WIND_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TSLP_GS",
@@ -2927,6 +3108,7 @@
           "en": "SK_VC_LW_TSLP_GS",
           "fr": "SK_VC_LW_TSLP_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -2936,7 +3118,8 @@
             "type": "WIND_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TSLP_GSAW",
@@ -2946,6 +3129,7 @@
           "en": "SK_VC_LW_TSLP_GSAW",
           "fr": "SK_VC_LW_TSLP_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -2955,7 +3139,8 @@
             "type": "WIND_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TSLP_GSMAX",
@@ -2965,6 +3150,7 @@
           "en": "SK_VC_LW_TSLP_GSMAX",
           "fr": "SK_VC_LW_TSLP_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -2977,7 +3163,8 @@
               "type": "ACCURACY",
               "minValue": 3,
               "maxValue": 8,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TSLP_P",
@@ -2987,6 +3174,7 @@
             "en": "SK_VC_LW_TSLP_P",
             "fr": "SK_VC_LW_TSLP_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -2996,7 +3184,8 @@
               "type": "ACCURACY",
               "minValue": 1,
               "maxValue": 4,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TSLP_PAW",
@@ -3006,6 +3195,7 @@
             "en": "SK_VC_LW_TSLP_PAW",
             "fr": "SK_VC_LW_TSLP_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3015,7 +3205,8 @@
               "type": "ACCURACY",
               "minValue": 3,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TSLP_PMAX",
@@ -3025,6 +3216,7 @@
             "en": "SK_VC_LW_TSLP_PMAX",
             "fr": "SK_VC_LW_TSLP_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -3105,7 +3297,8 @@
             "type": "MISSILE_RES",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_MBFF_MV1_GS",
@@ -3115,6 +3308,7 @@
           "en": "SK_VC_MBFF_MV1_GS",
           "fr": "SK_VC_MBFF_MV1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -3124,7 +3318,8 @@
             "type": "MISSILE_RES",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_MBFF_MV1_GSAW",
@@ -3134,6 +3329,7 @@
           "en": "SK_VC_MBFF_MV1_GSAW",
           "fr": "SK_VC_MBFF_MV1_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -3143,7 +3339,8 @@
             "type": "MISSILE_RES",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_MBFF_MV1_GSMAX",
@@ -3153,6 +3350,7 @@
           "en": "SK_VC_MBFF_MV1_GSMAX",
           "fr": "SK_VC_MBFF_MV1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -3166,7 +3364,8 @@
               "minValue": 3,
               "maxValue": 8,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_MBFF_MV1_P",
@@ -3176,6 +3375,7 @@
             "en": "SK_VC_MBFF_MV1_P",
             "fr": "SK_VC_MBFF_MV1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -3186,7 +3386,8 @@
               "minValue": 1,
               "maxValue": 4,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_MBFF_MV1_PAW",
@@ -3196,6 +3397,7 @@
             "en": "SK_VC_MBFF_MV1_PAW",
             "fr": "SK_VC_MBFF_MV1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3206,7 +3408,8 @@
               "minValue": 3,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_MBFF_MV1_PMAX",
@@ -3216,6 +3419,7 @@
             "en": "SK_VC_MBFF_MV1_PMAX",
             "fr": "SK_VC_MBFF_MV1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -3296,7 +3500,8 @@
             "type": "MAX_DAMAGE",
             "minValue": 750,
             "maxValue": 1500,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_THDG_GS",
@@ -3306,6 +3511,7 @@
           "en": "SK_VC_LW_THDG_GS",
           "fr": "SK_VC_LW_THDG_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -3315,7 +3521,8 @@
             "type": "MAX_DAMAGE",
             "minValue": 100,
             "maxValue": 500,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_THDG_GS_AW",
@@ -3325,6 +3532,7 @@
           "en": "SK_VC_LW_THDG_GS_AW",
           "fr": "SK_VC_LW_THDG_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -3334,7 +3542,8 @@
             "type": "MAX_DAMAGE",
             "minValue": 500,
             "maxValue": 500,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_THDG_GSMAX",
@@ -3344,6 +3553,7 @@
           "en": "SK_VC_LW_THDG_GSMAX",
           "fr": "SK_VC_LW_THDG_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -3356,7 +3566,8 @@
               "type": "DARK_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_THDG_P",
@@ -3366,6 +3577,7 @@
             "en": "SK_VC_LW_THDG_P",
             "fr": "SK_VC_LW_THDG_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -3375,7 +3587,8 @@
               "type": "DARK_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_THDG_PAW",
@@ -3385,6 +3598,7 @@
             "en": "SK_VC_LW_THDG_PAW",
             "fr": "SK_VC_LW_THDG_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3394,7 +3608,8 @@
               "type": "DARK_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_THDG_PMAX",
@@ -3404,6 +3619,7 @@
             "en": "SK_VC_LW_THDG_PMAX",
             "fr": "SK_VC_LW_THDG_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -3484,7 +3700,8 @@
             "type": "AOE_RES",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF01_DMAC_GS",
@@ -3494,6 +3711,7 @@
           "en": "SK_VC_FF01_DMAC_GS",
           "fr": "SK_VC_FF01_DMAC_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -3503,7 +3721,8 @@
             "type": "AOE_RES",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF01_DMAC_GSAW",
@@ -3513,6 +3732,7 @@
           "en": "SK_VC_FF01_DMAC_GSAW",
           "fr": "SK_VC_FF01_DMAC_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -3522,7 +3742,8 @@
             "type": "AOE_RES",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF01_DMAC_GSMAX",
@@ -3532,6 +3753,7 @@
           "en": "SK_VC_FF01_DMAC_GSMAX",
           "fr": "SK_VC_FF01_DMAC_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -3544,7 +3766,8 @@
               "type": "PIERCE_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF01_DMAC_P",
@@ -3554,6 +3777,7 @@
             "en": "SK_VC_FF01_DMAC_P",
             "fr": "SK_VC_FF01_DMAC_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -3563,7 +3787,8 @@
               "type": "PIERCE_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF01_DMAC_PAW",
@@ -3573,6 +3798,7 @@
             "en": "SK_VC_FF01_DMAC_PAW",
             "fr": "SK_VC_FF01_DMAC_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3582,7 +3808,8 @@
               "type": "PIERCE_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF01_DMAC_PMAX",
@@ -3592,6 +3819,7 @@
             "en": "SK_VC_FF01_DMAC_PMAX",
             "fr": "SK_VC_FF01_DMAC_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -3673,7 +3901,8 @@
             "minValue": 10,
             "maxValue": 30,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_CBVPARTY1_GS",
@@ -3683,6 +3912,7 @@
           "en": "SK_VC_LW_CBVPARTY1_GS",
           "fr": "SK_VC_LW_CBVPARTY1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -3693,7 +3923,8 @@
             "minValue": 2,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_CBVPARTY1_GS_AW",
@@ -3703,6 +3934,7 @@
           "en": "SK_VC_LW_CBVPARTY1_GS_AW",
           "fr": "SK_VC_LW_CBVPARTY1_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -3713,7 +3945,8 @@
             "minValue": 10,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_CBVPARTY1_GSMAX",
@@ -3723,6 +3956,7 @@
           "en": "SK_VC_LW_CBVPARTY1_GSMAX",
           "fr": "SK_VC_LW_CBVPARTY1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -3735,7 +3969,8 @@
               "type": "LIGHT_RES",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_CBVPARTY1_P",
@@ -3745,6 +3980,7 @@
             "en": "SK_VC_LW_CBVPARTY1_P",
             "fr": "SK_VC_LW_CBVPARTY1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -3754,7 +3990,8 @@
               "type": "LIGHT_RES",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_CBVPARTY1_PAW",
@@ -3764,6 +4001,7 @@
             "en": "SK_VC_LW_CBVPARTY1_PAW",
             "fr": "SK_VC_LW_CBVPARTY1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3773,7 +4011,8 @@
               "type": "LIGHT_RES",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_CBVPARTY1_PMAX",
@@ -3783,6 +4022,7 @@
             "en": "SK_VC_LW_CBVPARTY1_PMAX",
             "fr": "SK_VC_LW_CBVPARTY1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -3863,7 +4103,8 @@
             "type": "DARK_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_DABL_GS",
@@ -3873,6 +4114,7 @@
           "en": "SK_VC_LW_DABL_GS",
           "fr": "SK_VC_LW_DABL_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -3882,7 +4124,8 @@
             "type": "DARK_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_DABL_GS_AW",
@@ -3892,6 +4135,7 @@
           "en": "SK_VC_LW_DABL_GS_AW",
           "fr": "SK_VC_LW_DABL_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -3901,7 +4145,8 @@
             "type": "DARK_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_DABL_GSMAX",
@@ -3911,6 +4156,7 @@
           "en": "SK_VC_LW_DABL_GSMAX",
           "fr": "SK_VC_LW_DABL_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -3923,7 +4169,8 @@
               "type": "DARK_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_DABL_P",
@@ -3933,6 +4180,7 @@
             "en": "SK_VC_LW_DABL_P",
             "fr": "SK_VC_LW_DABL_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -3942,7 +4190,8 @@
               "type": "DARK_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_DABL_PAW",
@@ -3952,6 +4201,7 @@
             "en": "SK_VC_LW_DABL_PAW",
             "fr": "SK_VC_LW_DABL_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -3961,7 +4211,8 @@
               "type": "DARK_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_DABL_PMAX",
@@ -3971,6 +4222,7 @@
             "en": "SK_VC_LW_DABL_PMAX",
             "fr": "SK_VC_LW_DABL_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -4051,7 +4303,8 @@
             "type": "ACCURACY",
             "minValue": 7,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV3_GS",
@@ -4061,6 +4314,7 @@
           "en": "SK_VC_FFT_MV3_GS",
           "fr": "SK_VC_FFT_MV3_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -4070,7 +4324,8 @@
             "type": "ACCURACY",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV3_GSAW",
@@ -4080,6 +4335,7 @@
           "en": "SK_VC_FFT_MV3_GSAW",
           "fr": "SK_VC_FFT_MV3_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -4089,7 +4345,8 @@
             "type": "ACCURACY",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV3_GSMAX",
@@ -4099,6 +4356,7 @@
           "en": "SK_VC_FFT_MV3_GSMAX",
           "fr": "SK_VC_FFT_MV3_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -4112,13 +4370,15 @@
               "minValue": 6,
               "maxValue": 12,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             },
             {
               "type": "EVADE",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV3_P",
@@ -4128,6 +4388,7 @@
             "en": "SK_VC_FFT_MV3_P",
             "fr": "SK_VC_FFT_MV3_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -4138,7 +4399,8 @@
               "minValue": 1,
               "maxValue": 4,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV3_PAW",
@@ -4148,6 +4410,7 @@
             "en": "SK_VC_FFT_MV3_PAW",
             "fr": "SK_VC_FFT_MV3_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -4158,7 +4421,8 @@
               "minValue": 4,
               "maxValue": 4,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV3_PMAX",
@@ -4168,6 +4432,7 @@
             "en": "SK_VC_FFT_MV3_PMAX",
             "fr": "SK_VC_FFT_MV3_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -4248,7 +4513,8 @@
             "type": "FIRE_ATK",
             "minValue": 15,
             "maxValue": 25,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFCC_MV1_GS",
@@ -4258,6 +4524,7 @@
           "en": "SK_VC_FFCC_MV1_GS",
           "fr": "SK_VC_FFCC_MV1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -4267,7 +4534,8 @@
             "type": "FIRE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFCC_MV1_GS_AW",
@@ -4277,6 +4545,7 @@
           "en": "SK_VC_FFCC_MV1_GS_AW",
           "fr": "SK_VC_FFCC_MV1_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -4286,7 +4555,8 @@
             "type": "FIRE_ATK",
             "minValue": 5,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFCC_MV1_GSMAX",
@@ -4296,6 +4566,7 @@
           "en": "SK_VC_FFCC_MV1_GSMAX",
           "fr": "SK_VC_FFCC_MV1_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -4308,13 +4579,15 @@
               "type": "DEF",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "EVADE",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFCC_MV1_P",
@@ -4324,6 +4597,7 @@
             "en": "SK_VC_FFCC_MV1_P",
             "fr": "SK_VC_FFCC_MV1_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -4333,7 +4607,8 @@
               "type": "DEF",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFCC_MV1_PAW",
@@ -4343,6 +4618,7 @@
             "en": "SK_VC_FFCC_MV1_PAW",
             "fr": "SK_VC_FFCC_MV1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -4352,7 +4628,8 @@
               "type": "DEF",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFCC_MV1_PMAX",
@@ -4362,6 +4639,7 @@
             "en": "SK_VC_FFCC_MV1_PMAX",
             "fr": "SK_VC_FFCC_MV1_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -4442,7 +4720,8 @@
             "type": "SLASH_RES",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ROBUST_GS",
@@ -4452,6 +4731,7 @@
           "en": "SK_VC_LW_ROBUST_GS",
           "fr": "SK_VC_LW_ROBUST_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -4461,7 +4741,8 @@
             "type": "SLASH_RES",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ROBUST_GS_AW",
@@ -4471,6 +4752,7 @@
           "en": "SK_VC_LW_ROBUST_GS_AW",
           "fr": "SK_VC_LW_ROBUST_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -4480,7 +4762,8 @@
             "type": "SLASH_RES",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ROBUST_GSMAX",
@@ -4490,6 +4773,7 @@
           "en": "SK_VC_LW_ROBUST_GSMAX",
           "fr": "SK_VC_LW_ROBUST_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -4502,7 +4786,8 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ROBUST_P",
@@ -4512,6 +4797,7 @@
             "en": "SK_VC_LW_ROBUST_P",
             "fr": "SK_VC_LW_ROBUST_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -4521,7 +4807,8 @@
               "type": "MAGIC_ATK",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ROBUST_PAW",
@@ -4531,6 +4818,7 @@
             "en": "SK_VC_LW_ROBUST_PAW",
             "fr": "SK_VC_LW_ROBUST_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -4540,7 +4828,8 @@
               "type": "MAGIC_ATK",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ROBUST_PMAX",
@@ -4550,6 +4839,7 @@
             "en": "SK_VC_LW_ROBUST_PMAX",
             "fr": "SK_VC_LW_ROBUST_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -4636,7 +4926,8 @@
             "type": "MAGIC_RES",
             "minValue": 6,
             "maxValue": 12,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FNRR_GS",
@@ -4646,6 +4937,7 @@
           "en": "SK_VC_LW_FNRR_GS",
           "fr": "SK_VC_LW_FNRR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 99
       },
       "awake": {
@@ -4655,7 +4947,8 @@
             "type": "MAGIC_RES",
             "minValue": 1,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FNRR_GS_AW",
@@ -4665,6 +4958,7 @@
           "en": "SK_VC_LW_FNRR_GS_AW",
           "fr": "SK_VC_LW_FNRR_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": {
@@ -4674,7 +4968,8 @@
             "type": "MAGIC_RES",
             "minValue": 4,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FNRR_GSMAX",
@@ -4684,6 +4979,7 @@
           "en": "SK_VC_LW_FNRR_GSMAX",
           "fr": "SK_VC_LW_FNRR_GSMAX"
         },
+        "target": "selfSide",
         "maxLevel": 1
       }
     },
@@ -4697,7 +4993,8 @@
               "minValue": 2,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FNRR_P",
@@ -4707,6 +5004,7 @@
             "en": "SK_VC_LW_FNRR_P",
             "fr": "SK_VC_LW_FNRR_P"
           },
+          "target": "self",
           "maxLevel": 99
         },
         "awake": {
@@ -4717,7 +5015,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FNRR_PAW",
@@ -4727,6 +5026,7 @@
             "en": "SK_VC_LW_FNRR_PAW",
             "fr": "SK_VC_LW_FNRR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": {
@@ -4737,7 +5037,8 @@
               "minValue": 2,
               "maxValue": 2,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FNRR_PMAX",
@@ -4747,6 +5048,7 @@
             "en": "SK_VC_LW_FNRR_PMAX",
             "fr": "SK_VC_LW_FNRR_PMAX"
           },
+          "target": "self",
           "maxLevel": 1
         },
         "cond": null
@@ -4827,7 +5129,8 @@
             "type": "SLASH_RES",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_IGNT_GS",
@@ -4837,6 +5140,7 @@
           "en": "SK_VC_LW_IGNT_GS",
           "fr": "SK_VC_LW_IGNT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -4846,7 +5150,8 @@
             "type": "SLASH_RES",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_IGNT_GSAW",
@@ -4856,6 +5161,7 @@
           "en": "SK_VC_LW_IGNT_GSAW",
           "fr": "SK_VC_LW_IGNT_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -4869,14 +5175,16 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "AGI",
               "minValue": -3,
               "maxValue": -3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_IGNT_P",
@@ -4886,6 +5194,7 @@
             "en": "SK_VC_LW_IGNT_P",
             "fr": "SK_VC_LW_IGNT_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -4895,7 +5204,8 @@
               "type": "SLASH_ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_IGNT_PAW",
@@ -4905,6 +5215,7 @@
             "en": "SK_VC_LW_IGNT_PAW",
             "fr": "SK_VC_LW_IGNT_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -4986,7 +5297,8 @@
             "type": "PIERCE_RES",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_BHMT_GS",
@@ -4996,6 +5308,7 @@
           "en": "SK_VC_LW_BHMT_GS",
           "fr": "SK_VC_LW_BHMT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5005,7 +5318,8 @@
             "type": "PIERCE_RES",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_BHMT_GSAW",
@@ -5015,6 +5329,7 @@
           "en": "SK_VC_LW_BHMT_GSAW",
           "fr": "SK_VC_LW_BHMT_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5029,7 +5344,8 @@
               "minValue": 2,
               "maxValue": 7,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             },
             {
               "type": "AGI",
@@ -5037,7 +5353,8 @@
               "maxValue": 5,
               "calcType": "percent",
               "rate": 200,
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_BHMT_P",
@@ -5047,6 +5364,7 @@
             "en": "SK_VC_LW_BHMT_P",
             "fr": "SK_VC_LW_BHMT_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5057,7 +5375,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_BHMT_PAW",
@@ -5067,6 +5386,7 @@
             "en": "SK_VC_LW_BHMT_PAW",
             "fr": "SK_VC_LW_BHMT_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5148,7 +5468,8 @@
             "type": "STRIKE_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MABR_GS",
@@ -5158,6 +5479,7 @@
           "en": "SK_VC_LW_MABR_GS",
           "fr": "SK_VC_LW_MABR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5167,7 +5489,8 @@
             "type": "STRIKE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MABR_GSAW",
@@ -5177,6 +5500,7 @@
           "en": "SK_VC_LW_MABR_GSAW",
           "fr": "SK_VC_LW_MABR_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5190,7 +5514,8 @@
               "type": "CONFUSION_RES",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MABR_P",
@@ -5200,6 +5525,7 @@
             "en": "SK_VC_LW_MABR_P",
             "fr": "SK_VC_LW_MABR_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5209,7 +5535,8 @@
               "type": "CONFUSION_RES",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MABR_PAW",
@@ -5219,6 +5546,7 @@
             "en": "SK_VC_LW_MABR_PAW",
             "fr": "SK_VC_LW_MABR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5300,7 +5628,8 @@
             "type": "DEF_DEBUFF_RES",
             "minValue": 10,
             "maxValue": 20,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VALE2_GS",
@@ -5310,6 +5639,7 @@
           "en": "SK_VC_LW_VALE2_GS",
           "fr": "SK_VC_LW_VALE2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5319,7 +5649,8 @@
             "type": "DEF_DEBUFF_RES",
             "minValue": 1,
             "maxValue": 10,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VALE2_GSAW",
@@ -5329,6 +5660,7 @@
           "en": "SK_VC_LW_VALE2_GSAW",
           "fr": "SK_VC_LW_VALE2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5343,7 +5675,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             },
             {
               "type": "DEX",
@@ -5351,7 +5684,8 @@
               "maxValue": -10,
               "calcType": "percent",
               "rate": 200,
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VALE2_P",
@@ -5361,6 +5695,7 @@
             "en": "SK_VC_LW_VALE2_P",
             "fr": "SK_VC_LW_VALE2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5371,7 +5706,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VALE2_PAW",
@@ -5381,6 +5717,7 @@
             "en": "SK_VC_LW_VALE2_PAW",
             "fr": "SK_VC_LW_VALE2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5463,7 +5800,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FAMILY_GS",
@@ -5473,6 +5811,7 @@
           "en": "SK_VC_LW_FAMILY_GS",
           "fr": "SK_VC_LW_FAMILY_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5483,7 +5822,8 @@
             "minValue": 1,
             "maxValue": 6,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FAMILY_GSAW",
@@ -5493,6 +5833,7 @@
           "en": "SK_VC_LW_FAMILY_GSAW",
           "fr": "SK_VC_LW_FAMILY_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5507,7 +5848,8 @@
               "minValue": 2,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FAMILY_P",
@@ -5517,6 +5859,7 @@
             "en": "SK_VC_LW_FAMILY_P",
             "fr": "SK_VC_LW_FAMILY_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5527,7 +5870,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FAMILY_PAW",
@@ -5537,6 +5881,7 @@
             "en": "SK_VC_LW_FAMILY_PAW",
             "fr": "SK_VC_LW_FAMILY_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5618,7 +5963,8 @@
             "type": "SLASH_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_KTON_GS",
@@ -5628,6 +5974,7 @@
           "en": "SK_VC_LW_KTON_GS",
           "fr": "SK_VC_LW_KTON_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5637,7 +5984,8 @@
             "type": "SLASH_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_KTON_GSAW",
@@ -5647,6 +5995,7 @@
           "en": "SK_VC_LW_KTON_GSAW",
           "fr": "SK_VC_LW_KTON_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5661,13 +6010,15 @@
               "minValue": 5,
               "maxValue": 7,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             },
             {
               "type": "SPR",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_KTON_P",
@@ -5677,6 +6028,7 @@
             "en": "SK_VC_LW_KTON_P",
             "fr": "SK_VC_LW_KTON_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5687,7 +6039,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_KTON_PAW",
@@ -5697,6 +6050,7 @@
             "en": "SK_VC_LW_KTON_PAW",
             "fr": "SK_VC_LW_KTON_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5779,7 +6133,8 @@
             "minValue": 10,
             "maxValue": 20,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_PROPOSE_GS",
@@ -5789,6 +6144,7 @@
           "en": "SK_VC_LW_PROPOSE_GS",
           "fr": "SK_VC_LW_PROPOSE_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5799,7 +6155,8 @@
             "minValue": 1,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_PROPOSE_GSAW",
@@ -5809,6 +6166,7 @@
           "en": "SK_VC_LW_PROPOSE_GSAW",
           "fr": "SK_VC_LW_PROPOSE_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5822,13 +6180,15 @@
               "type": "SLASH_ATK",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "PROVOKE",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_PROPOSE_P",
@@ -5838,6 +6198,7 @@
             "en": "SK_VC_LW_PROPOSE_P",
             "fr": "SK_VC_LW_PROPOSE_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -5847,7 +6208,8 @@
               "type": "SLASH_ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_PROPOSE_PAW",
@@ -5857,6 +6219,7 @@
             "en": "SK_VC_LW_PROPOSE_PAW",
             "fr": "SK_VC_LW_PROPOSE_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -5938,7 +6301,8 @@
             "type": "MISSILE_RES",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SDLX_GS",
@@ -5948,6 +6312,7 @@
           "en": "SK_VC_LW_SDLX_GS",
           "fr": "SK_VC_LW_SDLX_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -5957,7 +6322,8 @@
             "type": "MISSILE_RES",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_SDLX_GSAW",
@@ -5967,6 +6333,7 @@
           "en": "SK_VC_LW_SDLX_GSAW",
           "fr": "SK_VC_LW_SDLX_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -5981,7 +6348,8 @@
               "minValue": 3,
               "maxValue": 10,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SDLX_P",
@@ -5991,6 +6359,7 @@
             "en": "SK_VC_LW_SDLX_P",
             "fr": "SK_VC_LW_SDLX_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6001,7 +6370,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_SDLX_PAW",
@@ -6011,6 +6381,7 @@
             "en": "SK_VC_LW_SDLX_PAW",
             "fr": "SK_VC_LW_SDLX_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6093,7 +6464,8 @@
             "minValue": 5,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TEAPARTY_GS",
@@ -6103,6 +6475,7 @@
           "en": "SK_VC_LW_TEAPARTY_GS",
           "fr": "SK_VC_LW_TEAPARTY_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6113,7 +6486,8 @@
             "minValue": 1,
             "maxValue": 5,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TEAPARTY_GSAW",
@@ -6123,6 +6497,7 @@
           "en": "SK_VC_LW_TEAPARTY_GSAW",
           "fr": "SK_VC_LW_TEAPARTY_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6136,7 +6511,8 @@
               "type": "CHARM_RES",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TEAPARTY_P",
@@ -6146,6 +6522,7 @@
             "en": "SK_VC_LW_TEAPARTY_P",
             "fr": "SK_VC_LW_TEAPARTY_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6155,7 +6532,8 @@
               "type": "CHARM_RES",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TEAPARTY_PAW",
@@ -6165,6 +6543,7 @@
             "en": "SK_VC_LW_TEAPARTY_PAW",
             "fr": "SK_VC_LW_TEAPARTY_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6246,7 +6625,8 @@
             "type": "MISSILE_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HUNT_GS",
@@ -6256,6 +6636,7 @@
           "en": "SK_VC_LW_HUNT_GS",
           "fr": "SK_VC_LW_HUNT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6265,7 +6646,8 @@
             "type": "MISSILE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HUNT_GSAW",
@@ -6275,6 +6657,7 @@
           "en": "SK_VC_LW_HUNT_GSAW",
           "fr": "SK_VC_LW_HUNT_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6288,13 +6671,15 @@
               "type": "ACCURACY",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "SPR",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HUNT_P",
@@ -6304,6 +6689,7 @@
             "en": "SK_VC_LW_HUNT_P",
             "fr": "SK_VC_LW_HUNT_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6313,7 +6699,8 @@
               "type": "ACCURACY",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HUNT_PAW",
@@ -6323,6 +6710,7 @@
             "en": "SK_VC_LW_HUNT_PAW",
             "fr": "SK_VC_LW_HUNT_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6404,7 +6792,8 @@
             "type": "DARK_RES",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF14_MV2_GS",
@@ -6414,6 +6803,7 @@
           "en": "SK_VC_FF14_MV2_GS",
           "fr": "SK_VC_FF14_MV2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6423,7 +6813,8 @@
             "type": "DARK_RES",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FF14_MV2_GSAW",
@@ -6433,6 +6824,7 @@
           "en": "SK_VC_FF14_MV2_GSAW",
           "fr": "SK_VC_FF14_MV2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6446,13 +6838,15 @@
               "type": "DARK_ATK",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "LIGHT_RES",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF14_MV2_P",
@@ -6462,6 +6856,7 @@
             "en": "SK_VC_FF14_MV2_P",
             "fr": "SK_VC_FF14_MV2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6471,7 +6866,8 @@
               "type": "DARK_ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FF14_MV2_PAW",
@@ -6481,6 +6877,7 @@
             "en": "SK_VC_FF14_MV2_PAW",
             "fr": "SK_VC_FF14_MV2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6563,7 +6960,8 @@
             "minValue": 10,
             "maxValue": 15,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_NEWYEAR_GS",
@@ -6573,6 +6971,7 @@
           "en": "SK_VC_LW_NEWYEAR_GS",
           "fr": "SK_VC_LW_NEWYEAR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6583,7 +6982,8 @@
             "minValue": 1,
             "maxValue": 5,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_NEWYEAR_GSAW",
@@ -6593,6 +6993,7 @@
           "en": "SK_VC_LW_NEWYEAR_GSAW",
           "fr": "SK_VC_LW_NEWYEAR_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6607,7 +7008,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_NEWYEAR_P",
@@ -6617,6 +7019,7 @@
             "en": "SK_VC_LW_NEWYEAR_P",
             "fr": "SK_VC_LW_NEWYEAR_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6627,7 +7030,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_NEWYEAR_PAW",
@@ -6637,6 +7041,7 @@
             "en": "SK_VC_LW_NEWYEAR_PAW",
             "fr": "SK_VC_LW_NEWYEAR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6718,7 +7123,8 @@
             "type": "FIRE_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LAMA_01_GS",
@@ -6728,6 +7134,7 @@
           "en": "SK_VC_LW_LAMA_01_GS",
           "fr": "SK_VC_LW_LAMA_01_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6737,7 +7144,8 @@
             "type": "FIRE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LAMA_01_GSAW",
@@ -6747,6 +7155,7 @@
           "en": "SK_VC_LW_LAMA_01_GSAW",
           "fr": "SK_VC_LW_LAMA_01_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6761,7 +7170,8 @@
               "minValue": 3,
               "maxValue": 10,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LAMA_01_P",
@@ -6771,6 +7181,7 @@
             "en": "SK_VC_LW_LAMA_01_P",
             "fr": "SK_VC_LW_LAMA_01_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6781,7 +7192,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LAMA_01_PAW",
@@ -6791,6 +7203,7 @@
             "en": "SK_VC_LW_LAMA_01_PAW",
             "fr": "SK_VC_LW_LAMA_01_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -6872,7 +7285,8 @@
             "type": "CRITIC_DAMAGE",
             "minValue": 5,
             "maxValue": 12,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GUARD_GS",
@@ -6882,6 +7296,7 @@
           "en": "SK_VC_LW_GUARD_GS",
           "fr": "SK_VC_LW_GUARD_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -6891,7 +7306,8 @@
             "type": "CRITIC_DAMAGE",
             "minValue": 1,
             "maxValue": 6,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_GUARD_GSAW",
@@ -6901,6 +7317,7 @@
           "en": "SK_VC_LW_GUARD_GSAW",
           "fr": "SK_VC_LW_GUARD_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -6914,20 +7331,23 @@
               "type": "SLASH_RES",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             },
             {
               "type": "MISSILE_RES",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             },
             {
               "type": "HP",
               "minValue": -15,
               "maxValue": -15,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GUARD_P",
@@ -6937,6 +7357,7 @@
             "en": "SK_VC_LW_GUARD_P",
             "fr": "SK_VC_LW_GUARD_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -6946,13 +7367,15 @@
               "type": "SLASH_RES",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             },
             {
               "type": "MISSILE_RES",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_GUARD_PAW",
@@ -6962,6 +7385,7 @@
             "en": "SK_VC_LW_GUARD_PAW",
             "fr": "SK_VC_LW_GUARD_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7043,7 +7467,8 @@
             "type": "SLASH_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LILS_GS",
@@ -7053,6 +7478,7 @@
           "en": "SK_VC_LW_LILS_GS",
           "fr": "SK_VC_LW_LILS_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7062,7 +7488,8 @@
             "type": "SLASH_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LILS_GSAW",
@@ -7072,6 +7499,7 @@
           "en": "SK_VC_LW_LILS_GSAW",
           "fr": "SK_VC_LW_LILS_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7085,7 +7513,8 @@
               "type": "DEF",
               "minValue": 2,
               "maxValue": 7,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LILS_P",
@@ -7095,6 +7524,7 @@
             "en": "SK_VC_LW_LILS_P",
             "fr": "SK_VC_LW_LILS_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7104,7 +7534,8 @@
               "type": "DEF",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LILS_PAW",
@@ -7114,6 +7545,7 @@
             "en": "SK_VC_LW_LILS_PAW",
             "fr": "SK_VC_LW_LILS_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7195,7 +7627,8 @@
             "type": "PIERCE_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_OCHU_GS",
@@ -7205,6 +7638,7 @@
           "en": "SK_VC_LW_OCHU_GS",
           "fr": "SK_VC_LW_OCHU_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7214,7 +7648,8 @@
             "type": "PIERCE_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_OCHU_GSAW",
@@ -7224,6 +7659,7 @@
           "en": "SK_VC_LW_OCHU_GSAW",
           "fr": "SK_VC_LW_OCHU_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7238,7 +7674,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_OCHU_P",
@@ -7248,6 +7685,7 @@
             "en": "SK_VC_LW_OCHU_P",
             "fr": "SK_VC_LW_OCHU_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7258,7 +7696,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_OCHU_PAW",
@@ -7268,6 +7707,7 @@
             "en": "SK_VC_LW_OCHU_PAW",
             "fr": "SK_VC_LW_OCHU_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7349,7 +7789,8 @@
             "type": "ICE_RES",
             "minValue": 5,
             "maxValue": 10,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_MBFF_MV2_GS",
@@ -7359,6 +7800,7 @@
           "en": "SK_VC_MBFF_MV2_GS",
           "fr": "SK_VC_MBFF_MV2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7368,7 +7810,8 @@
             "type": "ICE_RES",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_MBFF_MV2_GSAW",
@@ -7378,6 +7821,7 @@
           "en": "SK_VC_MBFF_MV2_GSAW",
           "fr": "SK_VC_MBFF_MV2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7392,7 +7836,8 @@
               "minValue": 2,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_MBFF_MV2_P",
@@ -7402,6 +7847,7 @@
             "en": "SK_VC_MBFF_MV2_P",
             "fr": "SK_VC_MBFF_MV2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7412,7 +7858,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_MBFF_MV2_PAW",
@@ -7422,6 +7869,7 @@
             "en": "SK_VC_MBFF_MV2_PAW",
             "fr": "SK_VC_MBFF_MV2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7504,7 +7952,8 @@
             "minValue": 10,
             "maxValue": 20,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ADLD_GS",
@@ -7514,6 +7963,7 @@
           "en": "SK_VC_LW_ADLD_GS",
           "fr": "SK_VC_LW_ADLD_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7524,7 +7974,8 @@
             "minValue": 1,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ADLD_GS_AW",
@@ -7534,6 +7985,7 @@
           "en": "SK_VC_LW_ADLD_GS_AW",
           "fr": "SK_VC_LW_ADLD_GS_AW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7547,13 +7999,15 @@
               "type": "ACTIVATION_TIME",
               "minValue": -25,
               "maxValue": -70,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "DEF",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ADLD_P",
@@ -7563,6 +8017,7 @@
             "en": "SK_VC_LW_ADLD_P",
             "fr": "SK_VC_LW_ADLD_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7572,7 +8027,8 @@
               "type": "ACTIVATION_TIME",
               "minValue": -10,
               "maxValue": -30,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ADLD_PAW",
@@ -7582,6 +8038,7 @@
             "en": "SK_VC_LW_ADLD_PAW",
             "fr": "SK_VC_LW_ADLD_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7664,7 +8121,8 @@
             "minValue": 10,
             "maxValue": 15,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_WHITEDAY1_GS",
@@ -7674,6 +8132,7 @@
           "en": "SK_VC_LW_WHITEDAY1_GS",
           "fr": "SK_VC_LW_WHITEDAY1_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7684,7 +8143,8 @@
             "minValue": 1,
             "maxValue": 5,
             "calcType": "percent",
-            "rate": 200
+            "rate": 200,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_WHITEDAY1_GSAW",
@@ -7694,6 +8154,7 @@
           "en": "SK_VC_LW_WHITEDAY1_GSAW",
           "fr": "SK_VC_LW_WHITEDAY1_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7707,7 +8168,8 @@
               "type": "MAX_DAMAGE",
               "minValue": 300,
               "maxValue": 1000,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_WHITEDAY1_P",
@@ -7717,6 +8179,7 @@
             "en": "SK_VC_LW_WHITEDAY1_P",
             "fr": "SK_VC_LW_WHITEDAY1_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7726,7 +8189,8 @@
               "type": "MAX_DAMAGE",
               "minValue": 100,
               "maxValue": 500,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_WHITEDAY1_PAW",
@@ -7736,6 +8200,7 @@
             "en": "SK_VC_LW_WHITEDAY1_PAW",
             "fr": "SK_VC_LW_WHITEDAY1_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7817,7 +8282,8 @@
             "type": "EVADE",
             "minValue": 3,
             "maxValue": 7,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VNLA2_GS",
@@ -7827,6 +8293,7 @@
           "en": "SK_VC_LW_VNLA2_GS",
           "fr": "SK_VC_LW_VNLA2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7836,7 +8303,8 @@
             "type": "EVADE",
             "minValue": 1,
             "maxValue": 3,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VNLA2_GSAW",
@@ -7846,6 +8314,7 @@
           "en": "SK_VC_LW_VNLA2_GSAW",
           "fr": "SK_VC_LW_VNLA2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -7859,7 +8328,8 @@
               "type": "SLASH_ATK",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VNLA2_P",
@@ -7869,6 +8339,7 @@
             "en": "SK_VC_LW_VNLA2_P",
             "fr": "SK_VC_LW_VNLA2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -7878,7 +8349,8 @@
               "type": "SLASH_ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VNLA2_PAW",
@@ -7888,6 +8360,7 @@
             "en": "SK_VC_LW_VNLA2_PAW",
             "fr": "SK_VC_LW_VNLA2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -7969,7 +8442,8 @@
             "type": "LIGHT_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV2_GS",
@@ -7979,6 +8453,7 @@
           "en": "SK_VC_FFT_MV2_GS",
           "fr": "SK_VC_FFT_MV2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -7988,7 +8463,8 @@
             "type": "LIGHT_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFT_MV2_GSAW",
@@ -7998,6 +8474,7 @@
           "en": "SK_VC_FFT_MV2_GSAW",
           "fr": "SK_VC_FFT_MV2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -8012,7 +8489,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV2_P",
@@ -8022,6 +8500,7 @@
             "en": "SK_VC_FFT_MV2_P",
             "fr": "SK_VC_FFT_MV2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -8032,7 +8511,8 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFT_MV2_PAW",
@@ -8042,6 +8522,7 @@
             "en": "SK_VC_FFT_MV2_PAW",
             "fr": "SK_VC_FFT_MV2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -8124,7 +8605,8 @@
             "minValue": 10,
             "maxValue": 20,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFCC_MV2_GS",
@@ -8134,6 +8616,7 @@
           "en": "SK_VC_FFCC_MV2_GS",
           "fr": "SK_VC_FFCC_MV2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -8144,7 +8627,8 @@
             "minValue": 1,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_FFCC_MV2_GSAW",
@@ -8154,6 +8638,7 @@
           "en": "SK_VC_FFCC_MV2_GSAW",
           "fr": "SK_VC_FFCC_MV2_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -8168,7 +8653,8 @@
               "minValue": 15,
               "maxValue": 35,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFCC_MV2_P",
@@ -8178,6 +8664,7 @@
             "en": "SK_VC_FFCC_MV2_P",
             "fr": "SK_VC_FFCC_MV2_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -8188,7 +8675,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_FFCC_MV2_PAW",
@@ -8198,6 +8686,7 @@
             "en": "SK_VC_FFCC_MV2_PAW",
             "fr": "SK_VC_FFCC_MV2_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -8279,7 +8768,8 @@
             "type": "MAX_DAMAGE",
             "minValue": 1000,
             "maxValue": 1500,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MDFY_GS",
@@ -8289,6 +8779,7 @@
           "en": "SK_VC_LW_MDFY_GS",
           "fr": "SK_VC_LW_MDFY_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -8298,7 +8789,8 @@
             "type": "MAX_DAMAGE",
             "minValue": 100,
             "maxValue": 500,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MDFY_GSAW",
@@ -8308,6 +8800,7 @@
           "en": "SK_VC_LW_MDFY_GSAW",
           "fr": "SK_VC_LW_MDFY_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -8321,7 +8814,8 @@
               "type": "MAGIC_ATK",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MDFY_P",
@@ -8331,6 +8825,7 @@
             "en": "SK_VC_LW_MDFY_P",
             "fr": "SK_VC_LW_MDFY_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -8340,7 +8835,8 @@
               "type": "MAGIC_ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MDFY_PAW",
@@ -8350,6 +8846,7 @@
             "en": "SK_VC_LW_MDFY_PAW",
             "fr": "SK_VC_LW_MDFY_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -8431,7 +8928,8 @@
             "type": "WIND_ATK",
             "minValue": 10,
             "maxValue": 15,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ORDR_GS",
@@ -8441,6 +8939,7 @@
           "en": "SK_VC_LW_ORDR_GS",
           "fr": "SK_VC_LW_ORDR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 70
       },
       "awake": {
@@ -8450,7 +8949,8 @@
             "type": "WIND_ATK",
             "minValue": 1,
             "maxValue": 5,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ORDR_GSAW",
@@ -8460,6 +8960,7 @@
           "en": "SK_VC_LW_ORDR_GSAW",
           "fr": "SK_VC_LW_ORDR_GSAW"
         },
+        "target": "selfSide",
         "maxLevel": 4
       },
       "lvmax": null
@@ -8474,7 +8975,8 @@
               "minValue": 2,
               "maxValue": 5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ORDR_P",
@@ -8484,6 +8986,7 @@
             "en": "SK_VC_LW_ORDR_P",
             "fr": "SK_VC_LW_ORDR_P"
           },
+          "target": "self",
           "maxLevel": 70
         },
         "awake": {
@@ -8494,7 +8997,8 @@
               "minValue": 1,
               "maxValue": 3,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ORDR_PAW",
@@ -8504,6 +9008,7 @@
             "en": "SK_VC_LW_ORDR_PAW",
             "fr": "SK_VC_LW_ORDR_PAW"
           },
+          "target": "self",
           "maxLevel": 4
         },
         "lvmax": null,
@@ -8585,7 +9090,8 @@
             "type": "CRITIC_RATE",
             "minValue": 4,
             "maxValue": 9,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_CACT_GS",
@@ -8595,6 +9101,7 @@
           "en": "SK_VC_LW_CACT_GS",
           "fr": "SK_VC_LW_CACT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -8610,13 +9117,15 @@
               "minValue": 4,
               "maxValue": 12,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             },
             {
               "type": "DEF",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_CACT_P",
@@ -8626,6 +9135,7 @@
             "en": "SK_VC_LW_CACT_P",
             "fr": "SK_VC_LW_CACT_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -8709,7 +9219,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ARMN_01_GS",
@@ -8719,6 +9230,7 @@
           "en": "SK_VC_LW_ARMN_01_GS",
           "fr": "SK_VC_LW_ARMN_01_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -8733,13 +9245,15 @@
               "type": "SLOW_RES",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             },
             {
               "type": "ACCURACY",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ARMN_01_P",
@@ -8749,6 +9263,7 @@
             "en": "SK_VC_LW_ARMN_01_P",
             "fr": "SK_VC_LW_ARMN_01_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -8832,7 +9347,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_ZUUU_GS",
@@ -8842,6 +9358,7 @@
           "en": "SK_VC_LW_ZUUU_GS",
           "fr": "SK_VC_LW_ZUUU_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -8857,7 +9374,8 @@
               "minValue": 7,
               "maxValue": 20,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_ZUUU_P",
@@ -8867,6 +9385,7 @@
             "en": "SK_VC_LW_ZUUU_P",
             "fr": "SK_VC_LW_ZUUU_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -8949,7 +9468,8 @@
             "type": "STRIKE_RES",
             "minValue": 3,
             "maxValue": 7,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_OGRE_GS",
@@ -8959,6 +9479,7 @@
           "en": "SK_VC_LW_OGRE_GS",
           "fr": "SK_VC_LW_OGRE_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -8973,14 +9494,16 @@
               "type": "PETRIFY_RES",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             },
             {
               "type": "AGI",
               "minValue": -5,
               "maxValue": -5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_OGRE_P",
@@ -8990,6 +9513,7 @@
             "en": "SK_VC_LW_OGRE_P",
             "fr": "SK_VC_LW_OGRE_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9072,7 +9596,8 @@
             "type": "FIRE_RES",
             "minValue": 3,
             "maxValue": 7,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_BOMB_GS",
@@ -9082,6 +9607,7 @@
           "en": "SK_VC_LW_BOMB_GS",
           "fr": "SK_VC_LW_BOMB_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9096,7 +9622,8 @@
               "type": "CRITIC_RATE",
               "minValue": 7,
               "maxValue": 20,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_BOMB_P",
@@ -9106,6 +9633,7 @@
             "en": "SK_VC_LW_BOMB_P",
             "fr": "SK_VC_LW_BOMB_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9189,7 +9717,8 @@
             "minValue": 20,
             "maxValue": 50,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_JOBCRYSTAL_GS",
@@ -9199,6 +9728,7 @@
           "en": "SK_VC_LW_JOBCRYSTAL_GS",
           "fr": "SK_VC_LW_JOBCRYSTAL_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9214,7 +9744,8 @@
               "minValue": 7,
               "maxValue": 20,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_JOBCRYSTAL_P",
@@ -9224,6 +9755,7 @@
             "en": "SK_VC_LW_JOBCRYSTAL_P",
             "fr": "SK_VC_LW_JOBCRYSTAL_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9307,7 +9839,8 @@
             "minValue": 3,
             "maxValue": 7,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_BYLO_GS",
@@ -9317,6 +9850,7 @@
           "en": "SK_VC_LW_BYLO_GS",
           "fr": "SK_VC_LW_BYLO_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9331,14 +9865,16 @@
               "type": "CRITIC_DAMAGE",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "AGI",
               "minValue": -5,
               "maxValue": -5,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_BYLO_P",
@@ -9348,6 +9884,7 @@
             "en": "SK_VC_LW_BYLO_P",
             "fr": "SK_VC_LW_BYLO_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9431,7 +9968,8 @@
             "minValue": 5,
             "maxValue": 11,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RART_GS",
@@ -9441,6 +9979,7 @@
           "en": "SK_VC_LW_RART_GS",
           "fr": "SK_VC_LW_RART_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9456,7 +9995,8 @@
               "minValue": 7,
               "maxValue": 20,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RART_P",
@@ -9466,6 +10006,7 @@
             "en": "SK_VC_LW_RART_P",
             "fr": "SK_VC_LW_RART_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9549,7 +10090,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RYER_GS",
@@ -9559,6 +10101,7 @@
           "en": "SK_VC_LW_RYER_GS",
           "fr": "SK_VC_LW_RYER_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9573,13 +10116,15 @@
               "type": "ACCURACY",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "DEF",
               "minValue": -5,
               "maxValue": -5,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RYER_P",
@@ -9589,6 +10134,7 @@
             "en": "SK_VC_LW_RYER_P",
             "fr": "SK_VC_LW_RYER_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9671,7 +10217,8 @@
             "type": "ACTIVATION_TIME",
             "minValue": -15,
             "maxValue": -30,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_VNLA_GS",
@@ -9681,6 +10228,7 @@
           "en": "SK_VC_LW_VNLA_GS",
           "fr": "SK_VC_LW_VNLA_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9696,14 +10244,16 @@
               "minValue": 8,
               "maxValue": 25,
               "calcType": "percent",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             },
             {
               "type": "DEF",
               "minValue": -5,
               "maxValue": -5,
               "calcType": "fixe",
-              "rate": 200
+              "rate": 200,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_VNLA_P",
@@ -9713,6 +10263,7 @@
             "en": "SK_VC_LW_VNLA_P",
             "fr": "SK_VC_LW_VNLA_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9796,7 +10347,8 @@
             "minValue": 7,
             "maxValue": 15,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_RIRY_GS",
@@ -9806,6 +10358,7 @@
           "en": "SK_VC_LW_RIRY_GS",
           "fr": "SK_VC_LW_RIRY_GS"
         },
+        "target": "selfSide",
         "maxLevel": 60
       },
       "awake": null,
@@ -9820,7 +10373,8 @@
               "type": "CRITIC_RATE",
               "minValue": 7,
               "maxValue": 20,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_RIRY_P",
@@ -9830,6 +10384,7 @@
             "en": "SK_VC_LW_RIRY_P",
             "fr": "SK_VC_LW_RIRY_P"
           },
+          "target": "self",
           "maxLevel": 60
         },
         "awake": null,
@@ -9913,7 +10468,8 @@
             "minValue": 5,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LEONIS_GS",
@@ -9923,6 +10479,7 @@
           "en": "SK_VC_LW_LEONIS_GS",
           "fr": "SK_VC_LW_LEONIS_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -9937,7 +10494,8 @@
               "type": "STOP_RES",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LEONIS_P",
@@ -9947,6 +10505,7 @@
             "en": "SK_VC_LW_LEONIS_P",
             "fr": "SK_VC_LW_LEONIS_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10030,7 +10589,8 @@
             "minValue": 3,
             "maxValue": 7,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HOURN_GS",
@@ -10040,6 +10600,7 @@
           "en": "SK_VC_LW_HOURN_GS",
           "fr": "SK_VC_LW_HOURN_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10054,7 +10615,8 @@
               "type": "BERSERK_RES",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HOURN_P",
@@ -10064,6 +10626,7 @@
             "en": "SK_VC_LW_HOURN_P",
             "fr": "SK_VC_LW_HOURN_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10147,7 +10710,8 @@
             "minValue": 4,
             "maxValue": 8,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FENICE_GS",
@@ -10157,6 +10721,7 @@
           "en": "SK_VC_LW_FENICE_GS",
           "fr": "SK_VC_LW_FENICE_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10171,7 +10736,8 @@
               "type": "ATK_DEBUFF_RES",
               "minValue": 17,
               "maxValue": 50,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FENICE_P",
@@ -10181,6 +10747,7 @@
             "en": "SK_VC_LW_FENICE_P",
             "fr": "SK_VC_LW_FENICE_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10263,7 +10830,8 @@
             "type": "EVOCATION_GAUGE_BOOST",
             "minValue": 10,
             "maxValue": 30,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_WEZETT_GS",
@@ -10273,6 +10841,7 @@
           "en": "SK_VC_LW_WEZETT_GS",
           "fr": "SK_VC_LW_WEZETT_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10287,7 +10856,8 @@
               "type": "TOAD_RES",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_WEZETT_P",
@@ -10297,6 +10867,7 @@
             "en": "SK_VC_LW_WEZETT_P",
             "fr": "SK_VC_LW_WEZETT_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10379,7 +10950,8 @@
             "type": "ACCURACY",
             "minValue": 3,
             "maxValue": 6,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_CRYSTAL_GS",
@@ -10389,6 +10961,7 @@
           "en": "SK_VC_LW_CRYSTAL_GS",
           "fr": "SK_VC_LW_CRYSTAL_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10403,7 +10976,8 @@
               "type": "ACCURACY",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_CRYSTAL_P",
@@ -10413,6 +10987,7 @@
             "en": "SK_VC_LW_CRYSTAL_P",
             "fr": "SK_VC_LW_CRYSTAL_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10495,7 +11070,8 @@
             "type": "CRITIC_RATE",
             "minValue": 3,
             "maxValue": 6,
-            "calcType": "fixe"
+            "calcType": "fixe",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_LEONIS2_GS",
@@ -10505,6 +11081,7 @@
           "en": "SK_VC_LW_LEONIS2_GS",
           "fr": "SK_VC_LW_LEONIS2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10519,13 +11096,15 @@
               "type": "DEF",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "SPR",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_LEONIS2_P",
@@ -10535,6 +11114,7 @@
             "en": "SK_VC_LW_LEONIS2_P",
             "fr": "SK_VC_LW_LEONIS2_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10617,7 +11197,8 @@
             "type": "SLASH_RES",
             "minValue": 2,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_HOURN2_GS",
@@ -10627,6 +11208,7 @@
           "en": "SK_VC_LW_HOURN2_GS",
           "fr": "SK_VC_LW_HOURN2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10642,14 +11224,16 @@
               "minValue": 10,
               "maxValue": 30,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             },
             {
               "type": "LUCK",
               "minValue": -10,
               "maxValue": -10,
               "calcType": "percent",
-              "increaseMax": true
+              "increaseMax": true,
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_HOURN2_P",
@@ -10659,6 +11243,7 @@
             "en": "SK_VC_LW_HOURN2_P",
             "fr": "SK_VC_LW_HOURN2_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10741,7 +11326,8 @@
             "type": "STRIKE_RES",
             "minValue": 2,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_FENICE2_GS",
@@ -10751,6 +11337,7 @@
           "en": "SK_VC_LW_FENICE2_GS",
           "fr": "SK_VC_LW_FENICE2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10765,7 +11352,8 @@
               "type": "DEX",
               "minValue": 6,
               "maxValue": 18,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_FENICE2_P",
@@ -10775,6 +11363,7 @@
             "en": "SK_VC_LW_FENICE2_P",
             "fr": "SK_VC_LW_FENICE2_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10857,7 +11446,8 @@
             "type": "PIERCE_RES",
             "minValue": 2,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_WEZETT2_GS",
@@ -10867,6 +11457,7 @@
           "en": "SK_VC_LW_WEZETT2_GS",
           "fr": "SK_VC_LW_WEZETT2_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -10881,13 +11472,15 @@
               "type": "DEF",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             },
             {
               "type": "SPR",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_WEZETT2_P",
@@ -10897,6 +11490,7 @@
             "en": "SK_VC_LW_WEZETT2_P",
             "fr": "SK_VC_LW_WEZETT2_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -10979,7 +11573,8 @@
             "type": "MISSILE_RES",
             "minValue": 2,
             "maxValue": 4,
-            "calcType": "resistance"
+            "calcType": "resistance",
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_DYNVERK_GS",
@@ -10989,6 +11584,7 @@
           "en": "SK_VC_LW_DYNVERK_GS",
           "fr": "SK_VC_LW_DYNVERK_GS"
         },
+        "target": "selfSide",
         "maxLevel": 40
       },
       "awake": null,
@@ -11003,7 +11599,8 @@
               "type": "BLIND_RES",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "resistance"
+              "calcType": "resistance",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_DYNVERK_P",
@@ -11013,6 +11610,7 @@
             "en": "SK_VC_LW_DYNVERK_P",
             "fr": "SK_VC_LW_DYNVERK_P"
           },
+          "target": "self",
           "maxLevel": 40
         },
         "awake": null,
@@ -11096,7 +11694,8 @@
             "minValue": 4,
             "maxValue": 8,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TRSV_01_GS",
@@ -11106,6 +11705,7 @@
           "en": "SK_VC_LW_TRSV_01_GS",
           "fr": "SK_VC_LW_TRSV_01_GS"
         },
+        "target": "selfSide",
         "maxLevel": 30
       },
       "awake": null,
@@ -11120,7 +11720,8 @@
               "type": "ATK",
               "minValue": 10,
               "maxValue": 30,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TRSV_01_P",
@@ -11130,6 +11731,7 @@
             "en": "SK_VC_LW_TRSV_01_P",
             "fr": "SK_VC_LW_TRSV_01_P"
           },
+          "target": "self",
           "maxLevel": 30
         },
         "awake": null,
@@ -11213,7 +11815,8 @@
             "minValue": 5,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_TRSV_02_GS",
@@ -11223,6 +11826,7 @@
           "en": "SK_VC_LW_TRSV_02_GS",
           "fr": "SK_VC_LW_TRSV_02_GS"
         },
+        "target": "selfSide",
         "maxLevel": 30
       },
       "awake": null,
@@ -11237,7 +11841,8 @@
               "type": "LUCK",
               "minValue": 10,
               "maxValue": 30,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_TRSV_02_P",
@@ -11247,6 +11852,7 @@
             "en": "SK_VC_LW_TRSV_02_P",
             "fr": "SK_VC_LW_TRSV_02_P"
           },
+          "target": "self",
           "maxLevel": 30
         },
         "awake": null,
@@ -11330,7 +11936,8 @@
             "minValue": 5,
             "maxValue": 10,
             "calcType": "percent",
-            "increaseMax": true
+            "increaseMax": true,
+            "target": "selfSide"
           }
         ],
         "dataId": "SK_VC_LW_MIRROR_GS",
@@ -11340,6 +11947,7 @@
           "en": "SK_VC_LW_MIRROR_GS",
           "fr": "SK_VC_LW_MIRROR_GS"
         },
+        "target": "selfSide",
         "maxLevel": 30
       },
       "awake": null,
@@ -11354,7 +11962,8 @@
               "type": "DEX",
               "minValue": 10,
               "maxValue": 30,
-              "calcType": "fixe"
+              "calcType": "fixe",
+              "target": "self"
             }
           ],
           "dataId": "SK_VC_LW_MIRROR_P",
@@ -11364,6 +11973,7 @@
             "en": "SK_VC_LW_MIRROR_P",
             "fr": "SK_VC_LW_MIRROR_P"
           },
+          "target": "self",
           "maxLevel": 30
         },
         "awake": null,

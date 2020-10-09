@@ -24,6 +24,19 @@ export class SkillService {
     "MAGIC": "magical"
   }
 
+  targets = {
+    "self": "caster",
+    "target": "target",
+    "allyNotSelf": "ally",
+    "selfSide": "all allies",
+    "ennemySide": "all ennemies",
+    "all": "everyone on map",
+    "deadAlly": "dead ally",
+    "deadEnnemy": "dead ennemy",
+    "deadAll": "everyone dead",
+    "panel": "panel"
+  }
+
   private re = /(^([+\-]?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?(?=\D|\s|$))|^0x[\da-fA-F]+$|\d+)/g;
   private sre = /^\s+|\s+$/g;
   private snre = /\s+/g;
@@ -279,7 +292,7 @@ export class SkillService {
     return this.sanitizer.bypassSecurityTrustHtml(html)
   }
 
-  formatEffect(unit, skill, effect) {
+  formatEffect(unit, skill, effect, getTarget = true) {
     let html = "";
     switch (effect.type) {
       case "HP" :
@@ -755,6 +768,9 @@ export class SkillService {
       case "FLOAT_KILLER" :
         html = "Increase killer against unit with float" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "IGNORE_FLOAT" :
+        html = "Ignore float"
+      break
       case "HUMAN_KILLER_RES" :
         html = "Increase human killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
@@ -830,17 +846,26 @@ export class SkillService {
       case "BARRIER_GENERAL" :
         html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "BREAK_BARRIER_GENERAL" :
+        html = "Break general barrier" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "REDUCE_DAMAGE_GENERAL" :
         html = "Reduces the damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "BARRIER_PHYSIC" :
         html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
+      case "BREAK_BARRIER_PHYSIC" :
+        html = "Break physic barrier" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
       case "REDUCE_DAMAGE_PHYSIC" :
         html = "Reduces the physic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "BARRIER_MAGIC" :
         html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "BREAK_BARRIER_MAGIC" :
+        html = "Break magic barrier" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "REDUCE_DAMAGE_MAGIC" :
         html = "Reduces the magic damage taken" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -914,7 +939,7 @@ export class SkillService {
 
           html += this.upperCaseFirst(ailment.replace("_", " "))
         })
-      break
+        break
       case "DISPEL" :
         html = "Dispel " + this.getValue(skill, effect)
         effect.ailments.forEach((ailment, index) => {
@@ -930,7 +955,10 @@ export class SkillService {
 
           html += this.upperCaseFirst(ailment.replace("_", " "))
         })
-      break
+        break
+      case "STOP_CHAIN_INCREASE_DAMAGE" :
+        html = "The chain break if the combo count is greater than 5 but increase modifier by " + effect.value + "%"
+        break
       default:
         console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- NOT TRANSLATED : " + effect.type)
       break
@@ -939,14 +967,12 @@ export class SkillService {
     if (effect.condition) {
       let conditions = {
         "BEHIND": " when attacking from behind",
-        "MALE": "when attacking male units"
+        "MALE": "when attacking male units",
       }
 
-      if (!conditions[effect.condition]) {
-        console.log("@@@@@ " + unit.names.en + " -- skill : " + skill.dataId + " -- Unknow condition : " + effect.condition)
+      if (conditions[effect.condition]) {
+        html = html + conditions[effect.condition]
       }
-
-      html = html + conditions[effect.condition]
     }
 
     if (effect.side) {
@@ -961,6 +987,10 @@ export class SkillService {
 
     if (skill.maths) {
       html = this.formatMaths(skill, html)
+    }
+
+    if (getTarget) {
+      html = this.formatTaget(skill, effect, html)
     }
 
     return html;
@@ -992,23 +1022,27 @@ export class SkillService {
     }
 
     if (skill.hit) {
-      html += (skill.damage ? "<br />" : "") + (skill.hit > 0 ? "+" : "") + skill.hit + "% hit chance"
+      html += (html != "" ? "<br />" : "") + (skill.hit > 0 ? "+" : "") + skill.hit + "% hit chance"
     }
 
     if (skill.crt_hit) {
-      html += (skill.damage ? "<br />" : "") + "Critic chance " + skill.crt_hit + "%"
+      html += (html != "" ? "<br />" : "") + "Critic chance " + skill.crt_hit + "%"
     }
 
     if (skill.pierce) {
-      html += (skill.damage ? "<br />" : "") + "Piercing"
+      html += (html != "" ? "<br />" : "") + "Piercing"
     }
 
     if (skill.ctbreak) {
-      html += (skill.damage ? "<br />" : "") + "Cancel Ability Activation"
+      html += (html != "" ? "<br />" : "") + "Cancel Ability Activation"
     }
 
     if (skill.knockback) {
-      html += (skill.damage ? "<br />" : "") + skill.knockback.rate + "% chance to Knockback target" + (skill.aoe ? "s" : "") + " by " + skill.knockback.value + " square" + (skill.knockback.value > 1 ? "s" : "")
+      html += (html != "" ? "<br />" : "") + skill.knockback.rate + "% chance to Knockback target" + (skill.aoe ? "s" : "") + " by " + skill.knockback.value + " square" + (skill.knockback.value > 1 ? "s" : "")
+    }
+
+    if (skill.increaseDamageOnDecreaseHp) {
+      html += (html != "" ? "<br />" : "") + "Increase damage as HP decreases"
     }
 
     if (html != "") {
@@ -1106,6 +1140,109 @@ export class SkillService {
     }
 
     return html
+  }
+
+  formatTaget(skill, effect, html) {
+    let conditions = {
+      "FIRE_ELEMENT": " for fire ",
+      "ICE_ELEMENT": " for ice ",
+      "WIND_ELEMENT": " for wind ",
+      "EARTH_ELEMENT": " for earth ",
+      "LIGHTNING_ELEMENT": " for lightning ",
+      "WATER_ELEMENT": " for water ",
+      "LIGHT_ELEMENT": " for light ",
+      "DARK_ELEMENT": " for dark ",
+    }
+
+    if (!effect.target) {
+      effect.target = ""
+    }
+
+    if (conditions[effect.condition]) {
+      switch (effect.target) {
+        case "self" :
+          console.log("Target self should not be used in target condition")
+          return html
+          break
+        case "target" :
+          return html + conditions[effect.condition] + "target" + (skill.aoe ? "s" : "")
+          break
+        case "allyNotSelf" :
+          return html + conditions[effect.condition] + "all" + (skill.aoe ? "ies" : "y") + " not self"
+          break
+        case "selfSide" :
+          return html + conditions[effect.condition] + "all" + (skill.aoe ? "ies" : "y")
+          break
+        case "ennemySide" :
+          return html + conditions[effect.condition] + "ennem" + (skill.aoe ? "ies" : "y")
+          break
+        case "all" :
+          return html + conditions[effect.condition] + "target" + (skill.aoe ? "s" : "")
+          break
+        case "deadAlly" :
+          return html + conditions[effect.condition] + "dead all" + (skill.aoe ? "ies" : "y")
+          break
+        case "deadEnnemy" :
+          return html + conditions[effect.condition] + "dead ennem" + (skill.aoe ? "ies" : "y")
+          break
+        case "deadAll" :
+          return html + conditions[effect.condition] + "dead target" + (skill.aoe ? "s" : "")
+          break
+        case "panel" :
+          console.log("Target panel should not be used in target condition")
+          return html
+          break
+        case "" :
+          return html
+          break
+        default :
+          console.log("Not manage target in condition : " + effect.target)
+          console.log(skill)
+          return html
+          break
+      }
+    } else {
+      switch (effect.target) {
+        case "self" :
+          return html + " for self"
+          break
+        case "target" :
+          return html + " for target" + (skill.aoe ? "s" : "")
+          break
+        case "allyNotSelf" :
+          return html + " for all" + (skill.aoe ? "ies" : "y") + " not self"
+          break
+        case "selfSide" :
+          return html + " for all" + (skill.aoe ? "ies" : "y")
+          break
+        case "ennemySide" :
+          return html + " for ennem" + (skill.aoe ? "ies" : "y")
+          break
+        case "all" :
+          return html + " for target" + (skill.aoe ? "s" : "")
+          break
+        case "deadAlly" :
+          return html + " for dead all" + (skill.aoe ? "ies" : "y")
+          break
+        case "deadEnnemy" :
+          return html + " for dead ennem" + (skill.aoe ? "ies" : "y")
+          break
+        case "deadAll" :
+          return html + " for dead target" + (skill.aoe ? "s" : "")
+          break
+        case "panel" :
+          return html
+          break
+        case "" :
+          return html
+          break
+        default :
+          console.log("Not manage target : " + effect.target)
+          console.log(skill)
+          return html
+          break
+      }
+    }
   }
 
   formatCounter(unit, skill, counter) {

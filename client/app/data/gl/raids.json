@@ -171,6 +171,7 @@
               "en": "Brown Sphere",
               "fr": "Sphère marron"
             },
+            "target": "ennemySide",
             "cost": {
               "type": "AP",
               "value": 10
@@ -197,7 +198,8 @@
                 "type": "MAX_HP_DOWN_RES",
                 "minValue": 999,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
@@ -206,6 +208,7 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
+            "target": "self",
             "maxLevel": 150,
             "minLevel": 1
           },
@@ -217,6 +220,7 @@
               "en": "Bite Into",
               "fr": "Mordre à pleines dents"
             },
+            "target": "ennemySide",
             "cost": {
               "type": "AP",
               "value": 18
@@ -243,7 +247,8 @@
                 "type": "CHARM_ATK",
                 "calcType": "percent",
                 "rate": 10,
-                "turn": 3
+                "turn": 3,
+                "target": "target"
               }
             ],
             "dataId": "SK_CSLI_M_03",
@@ -252,6 +257,7 @@
               "en": "Sweet Fountain",
               "fr": "Adorable fontaine"
             },
+            "target": "target",
             "cost": {
               "type": "AP",
               "value": 24
@@ -278,7 +284,8 @@
                 "type": "ACCURACY",
                 "minValue": 1,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
@@ -287,6 +294,7 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
+            "target": "self",
             "maxLevel": 150,
             "minLevel": 61
           }
@@ -308,6 +316,7 @@
           "elem": [
             "neutral"
           ],
+          "target": "ennemySide",
           "maxLevel": 20,
           "range": {
             "h": 1,
@@ -513,6 +522,7 @@
               "en": "Marshmallow Throw",
               "fr": "Lancer de guimauve"
             },
+            "target": "ennemySide",
             "cost": {
               "type": "AP",
               "value": 10
@@ -539,7 +549,8 @@
                 "type": "MAX_HP_DOWN_RES",
                 "minValue": 999,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
@@ -548,6 +559,7 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
+            "target": "self",
             "maxLevel": 150,
             "minLevel": 1
           },
@@ -557,7 +569,8 @@
                 "type": "DEF",
                 "minValue": 1,
                 "maxValue": 80,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_DF_1-80_U",
@@ -566,6 +579,7 @@
               "en": "DEF 1-80 Up",
               "fr": "DEF ↑ 1 - 80"
             },
+            "target": "self",
             "maxLevel": 150,
             "minLevel": 31
           },
@@ -575,7 +589,8 @@
                 "type": "SPR",
                 "minValue": 1,
                 "maxValue": 80,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_MDF_1-80_U",
@@ -584,6 +599,7 @@
               "en": "SPR 1-80 Up",
               "fr": "PSY ↑ 1 - 80"
             },
+            "target": "self",
             "maxLevel": 150,
             "minLevel": 31
           },
@@ -595,6 +611,7 @@
               "en": "Melt",
               "fr": "Fonte"
             },
+            "target": "ennemySide",
             "cost": {
               "type": "AP",
               "value": 18
@@ -621,7 +638,8 @@
                 "type": "SLEEP_ATK",
                 "calcType": "percent",
                 "rate": 30,
-                "turn": 3
+                "turn": 3,
+                "target": "target"
               }
             ],
             "dataId": "SK_CSLI_01_M_03",
@@ -630,6 +648,7 @@
               "en": "Sweets Party",
               "fr": "Fête sucrée"
             },
+            "target": "target",
             "cost": {
               "type": "AP",
               "value": 24
@@ -668,6 +687,7 @@
           "elem": [
             "neutral"
           ],
+          "target": "ennemySide",
           "maxLevel": 20,
           "range": {
             "h": 1,
@@ -844,7 +864,8 @@
                 "type": "MAX_HP_DOWN_RES",
                 "minValue": 999,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
@@ -853,6 +874,7 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
+            "target": "self",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -862,7 +884,8 @@
                 "type": "ACCURACY",
                 "minValue": 1,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
@@ -871,6 +894,7 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
+            "target": "self",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -880,7 +904,8 @@
                 "type": "IMMOBILIZE_ATK",
                 "calcType": "percent",
                 "rate": 50,
-                "turn": 3
+                "turn": 3,
+                "target": "all"
               }
             ],
             "dataId": "SK_WRMC_M_01",
@@ -889,6 +914,7 @@
               "en": "Missile Scatter",
               "fr": "Missile de dispersion"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 12
@@ -924,7 +950,8 @@
                 "maxValue": -30,
                 "calcType": "fixe",
                 "rate": 50,
-                "turn": 3
+                "turn": 3,
+                "target": "all"
               },
               {
                 "type": "SPR",
@@ -932,7 +959,8 @@
                 "maxValue": -30,
                 "calcType": "fixe",
                 "rate": 50,
-                "turn": 3
+                "turn": 3,
+                "target": "all"
               }
             ],
             "dataId": "SK_WRMC_M_02",
@@ -941,6 +969,7 @@
               "en": "Beam Cannon",
               "fr": "Canon laser"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 16
@@ -973,6 +1002,7 @@
               "en": "Nuke",
               "fr": "Nucléo-attaque"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 20
@@ -1007,7 +1037,8 @@
             "effects": [
               {
                 "type": "IMMUNE_CT_CHANGE",
-                "calcType": "nullify"
+                "calcType": "nullify",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
@@ -1016,6 +1047,7 @@
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
             },
+            "target": "self",
             "maxLevel": 80,
             "minLevel": 1
           },
@@ -1026,7 +1058,8 @@
                 "minValue": -1,
                 "maxValue": -100,
                 "calcType": "fixe",
-                "rate": 200
+                "rate": 200,
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_DONMV_1-100_D",
@@ -1035,6 +1068,7 @@
               "en": "Status Ailment [Immobilize] Chance 1-100 Down",
               "fr": "Chance [Immobilisation] ↓ 1 - 100"
             },
+            "target": "self",
             "maxLevel": 80,
             "minLevel": 1
           }
@@ -1056,6 +1090,7 @@
           "elem": [
             "neutral"
           ],
+          "target": "all",
           "maxLevel": 20,
           "range": {
             "h": 4,
@@ -1242,6 +1277,7 @@
               "en": "Fire",
               "fr": "Feu"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1273,6 +1309,7 @@
               "en": "Firaga",
               "fr": "Feu X"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1308,7 +1345,8 @@
                 "minValue": 1,
                 "maxValue": 20,
                 "calcType": "fixe",
-                "turn": 1
+                "turn": 1,
+                "target": "self"
               }
             ],
             "dataId": "SK_IFRT_M_03",
@@ -1317,6 +1355,7 @@
               "en": "Boil",
               "fr": "Incandescence"
             },
+            "target": "self",
             "cost": {
               "type": "TP",
               "value": 5
@@ -1334,6 +1373,7 @@
               "en": "Hellfire",
               "fr": "Flammes de l'enfer"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 5
@@ -1368,7 +1408,8 @@
                 "type": "ACCURACY",
                 "minValue": 1,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
@@ -1377,6 +1418,7 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
+            "target": "self",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1386,7 +1428,8 @@
                 "type": "ICE_RES",
                 "minValue": 1,
                 "maxValue": 80,
-                "calcType": "resistance"
+                "calcType": "resistance",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_RES_ICE_1_80_U",
@@ -1395,6 +1438,7 @@
               "en": "Ice Res 1-80 Up",
               "fr": "Rés glace ↑ 1 - 80"
             },
+            "target": "self",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1404,7 +1448,8 @@
                 "type": "MAX_HP_DOWN_RES",
                 "minValue": 999,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
@@ -1413,6 +1458,7 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
+            "target": "self",
             "maxLevel": 100,
             "minLevel": 1
           },
@@ -1422,7 +1468,8 @@
                 "type": "MOVE",
                 "minValue": 1,
                 "maxValue": 20,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_MOVE_1-20_U",
@@ -1431,6 +1478,7 @@
               "en": "Move 1-20 Up",
               "fr": "Déplacement ↑ 1 - 20"
             },
+            "target": "self",
             "maxLevel": 100,
             "minLevel": 31
           }
@@ -1452,6 +1500,7 @@
           "elem": [
             "neutral"
           ],
+          "target": "all",
           "maxLevel": 20,
           "range": {
             "h": 2,
@@ -1626,6 +1675,7 @@
               "en": "1,000 Needles",
               "fr": "1 000 épines"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 24
@@ -1655,6 +1705,7 @@
               "en": "10,000 Needles",
               "fr": "10 000 épines"
             },
+            "target": "all",
             "cost": {
               "type": "AP",
               "value": 44
@@ -1684,7 +1735,8 @@
                 "maxValue": 80,
                 "calcType": "percent",
                 "rate": 60,
-                "turn": 3
+                "turn": 3,
+                "target": "all"
               }
             ],
             "dataId": "SK_CACT_M_03",
@@ -1693,6 +1745,7 @@
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
             },
+            "target": "all",
             "maxLevel": 10,
             "range": {
               "h": 1,
@@ -1714,7 +1767,8 @@
                 "type": "MAX_HP_DOWN_RES",
                 "minValue": 999,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
@@ -1723,6 +1777,7 @@
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
             },
+            "target": "self",
             "maxLevel": 10,
             "minLevel": 1
           },
@@ -1730,7 +1785,8 @@
             "effects": [
               {
                 "type": "IMMUNE_CT_CHANGE",
-                "calcType": "nullify"
+                "calcType": "nullify",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
@@ -1739,6 +1795,7 @@
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
             },
+            "target": "self",
             "maxLevel": 10,
             "minLevel": 1
           },
@@ -1748,7 +1805,8 @@
                 "type": "ACCURACY",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_LW_HIT_5_N_R",
@@ -1757,6 +1815,7 @@
               "en": "SK_LW_HIT_5_N_R",
               "fr": "SK_LW_HIT_5_N_R"
             },
+            "target": "self",
             "maxLevel": 3,
             "minLevel": 1
           },
@@ -1766,7 +1825,8 @@
                 "type": "ACCURACY",
                 "minValue": 15,
                 "maxValue": 15,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_LW_HIT_5_SSR",
@@ -1775,6 +1835,7 @@
               "en": "SK_LW_HIT_5_SSR",
               "fr": "SK_LW_HIT_5_SSR"
             },
+            "target": "self",
             "maxLevel": 6,
             "minLevel": 4
           },
@@ -1784,7 +1845,8 @@
                 "type": "ACCURACY",
                 "minValue": 1,
                 "maxValue": 999,
-                "calcType": "fixe"
+                "calcType": "fixe",
+                "target": "self"
               }
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
@@ -1793,6 +1855,7 @@
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
             },
+            "target": "self",
             "maxLevel": 10,
             "minLevel": 7
           }
@@ -1814,6 +1877,7 @@
           "elem": [
             "neutral"
           ],
+          "target": "all",
           "maxLevel": 20,
           "range": {
             "h": 0,

@@ -1452,6 +1452,13 @@ export class JsonService {
         })
       }
 
+      if (cardCond.units) {
+        formattedCond.type = "unit"
+        cardCond.units.forEach(unit => {
+          formattedCond.items.push(unit)
+        })
+      }
+
       if (formattedCond.type === null) {
         console.log("7 @@@@@ " + cond)
         return null
@@ -1588,6 +1595,7 @@ export class JsonService {
 
     if (skill.type == "buff") {
       dataSkill.s_buffs = [skillId]
+      //dataSkill.target = 0
     } else {
       dataSkill = this[this.version].skills[skillId]
       skill.names = {}
@@ -1609,7 +1617,7 @@ export class JsonService {
       console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- eff_w != 1")
     }
 
-    if (dataSkill.target) {
+    if (Number.isInteger(dataSkill.target)) {
       if (!this.targetTypes[dataSkill.target]) {
         console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- target : " + dataSkill.target)
       }
@@ -1650,7 +1658,8 @@ export class JsonService {
       }
 
       skill.effects.push({
-        type: type
+        type: type,
+        target: this.targetTypes[dataSkill.target]
       })
     }
 
@@ -1719,6 +1728,10 @@ export class JsonService {
       }
     }
 
+    if (dataSkill.hp_bonus) {
+      skill.increaseDamageOnDecreaseHp = dataSkill.hp_bonus
+    }
+
     if (skill.type === "counter") {
       skill.counter = {
         minValue: dataSkill.eff_rate,
@@ -1730,7 +1743,7 @@ export class JsonService {
 
     if (dataSkill.invtag) {
       dataSkill.invtag.forEach(ignore => {
-        if (!this.killers[ignore]) {
+        if (!this.killers[ignore] || ignore != 301) {
           console.log("1 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- KLSP : " + ignore)
         }
 
@@ -1779,6 +1792,7 @@ export class JsonService {
         calcType: "percent",
         turn: dataSkill.barrier.val,
         turnType: dataSkill.barrier.type !== 3 ? "TURNS" : "COUNT",
+        target: this.targetTypes[dataSkill.target]
       });
     }
 
@@ -1796,14 +1810,8 @@ export class JsonService {
 
     if (dataSkill.ctave) {
       skill.effects.push({
-        type: "AVG_CT"
-      });
-    }
-
-    if (dataSkill.hp_bonus) {
-      skill.effects.push({
-        type: "INCREASE_DAMAGE_DECREASED_HP",
-        value: 100
+        type: "AVG_CT",
+        target: this.targetTypes[dataSkill.target]
       });
     }
 
@@ -1812,7 +1820,8 @@ export class JsonService {
         type: "STEAL",
         minValue: dataSkill.stl_val,
         maxValue: dataSkill.stl_val1,
-        calcType: "unknow"
+        calcType: "unknow",
+        target: this.targetTypes[dataSkill.target]
       });
     }
 
@@ -2148,6 +2157,7 @@ export class JsonService {
                 effects: [],
                 type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]["skl" + i][j]].slot == 1 ? 1 : 3]
               }
+
               this.updateSkill(unit, skill, this[this.version].equipments[tmrId]["skl" + i][j]);
               tmr.skills.push(skill)
               lastSkillId[j] = this[this.version].equipments[tmrId]["skl" + i][j]

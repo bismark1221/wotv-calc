@@ -122,10 +122,14 @@ export class NavComponent {
   changeVersion(version) {
     if (version == "GL" && this.actualRoute.length >= 2 && this.actualRoute[1] === "JP") {
       this.actualRoute.splice(1, 1)
-      this.router.navigate([this.actualRoute.join("/") == "" ? "/" : this.actualRoute.join("/")])
+
+      let route = this.actualRoute.join("/").split("#")
+      this.router.navigate([this.actualRoute.join("/") == "" ? "/" : route[0]], { preserveFragment: true })
     } else if (version == "JP" && this.actualRoute.length >= 2 && this.actualRoute[1] !== "JP") {
       this.actualRoute.splice(1, 0, "JP");
-      this.router.navigate([this.actualRoute.join("/")])
+
+      let route = this.actualRoute.join("/").split("#")
+      this.router.navigate([route[0]], { preserveFragment: true })
     }
 
     this.showVersionSelector = false
