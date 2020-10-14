@@ -369,6 +369,16 @@ export class BuilderTeamComponent implements OnInit {
     this.teamService.updateTeam(teamData, this.statsStack)
     this.updateAllAvailable()
     this.updateAllSelected()
+
+    this.team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        Object.keys(unit.board.nodes).forEach(nodeId => {
+          if (unit.board.nodes[nodeId].skill.type !== "buff") {
+            unit.board.nodes[nodeId].skill.name = this.nameService.getName(unit.board.nodes[nodeId].skill)
+          }
+        })
+      }
+    })
   }
 
   updateAllAvailable() {
