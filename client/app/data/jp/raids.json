@@ -1845,13 +1845,13 @@
   "RAID_ID_10": {
     "dataId": "RAID_ID_10",
     "names": {
-      "en": "キングベヒーモス"
+      "en": "キングベヒーモス - Behemoth King"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_BHMT_01_RAID",
         "names": {
-          "en": "キングベヒーモス"
+          "en": "キングベヒーモス - Behemoth King"
         },
         "stats": {
           "HP": {
@@ -2167,7 +2167,7 @@
             "minLevel": 1
           }
         },
-        "slug": "kingu-behmosu",
+        "slug": "behemoth-king",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -2196,7 +2196,7 @@
       {
         "dataId": "UN_LW_E_TNBR_RAID",
         "names": {
-          "en": "トンベリ"
+          "en": "トンベリ - Tonberry"
         },
         "stats": {
           "HP": {
@@ -2558,7 +2558,7 @@
             "minLevel": 1
           }
         },
-        "slug": "ton-beri",
+        "slug": "tonberry",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -2585,7 +2585,7 @@
         }
       }
     ],
-    "slug": "kingu-behmosu"
+    "slug": "behemoth-king"
   },
   "RAID_ID_11": {
     "dataId": "RAID_ID_11",

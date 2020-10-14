@@ -25896,6 +25896,598 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_LW_KAT_008": {
+    "names": {
+      "en": "Purple Lightning"
+    },
+    "slug": "purple-lightning",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 74
+      },
+      "ATK": {
+        "min": 8,
+        "max": 159
+      },
+      "MAG": {
+        "min": 1,
+        "max": 9
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "KATANA",
+    "dataId": "AF_LW_KAT_008",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "Assault",
+          "fr": "Assaut"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +10",
+            "fr": "Att tranchante +10"
+          },
+          "dataId": "SK_LW_SLASH_4_UR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Slash ATK +20",
+            "fr": "Att tranchante +20"
+          },
+          "dataId": "SK_LW_SLASH_5_UR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Purple Lightning (Ice Attack Up)"
+          },
+          "dataId": "SK_LW_KAT_008_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_kat_008",
+    "equippableJobs": [
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LSWL"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_KAT_008": 1,
+        "IT_AF_MAT_SAND_03": 30,
+        "IT_AF_MAT_SAND_04": 235,
+        "IT_AF_MAT_MYTHRIL": 10,
+        "IT_AF_MAT_ICE_02": 16,
+        "IT_AF_AW_JSWORD": 375
+      },
+      {
+        "IT_AF_LW_KAT_008": 3,
+        "IT_AF_MAT_SAND_03": 90,
+        "IT_AF_MAT_SAND_04": 335,
+        "IT_AF_MAT_MYTHRIL": 30,
+        "IT_AF_MAT_ICE_02": 36,
+        "IT_AF_AW_JSWORD": 375
+      },
+      {
+        "IT_AF_LW_KAT_008": 7,
+        "IT_AF_MAT_SAND_03": 210,
+        "IT_AF_MAT_SAND_04": 535,
+        "IT_AF_MAT_MYTHRIL": 70,
+        "IT_AF_MAT_ICE_02": 76,
+        "IT_AF_AW_JSWORD": 375
+      },
+      {
+        "IT_AF_LW_KAT_008": 15,
+        "IT_AF_MAT_SAND_03": 450,
+        "IT_AF_MAT_SAND_04": 985,
+        "IT_AF_MAT_MYTHRIL": 150,
+        "IT_AF_MAT_ICE_02": 156,
+        "IT_AF_AW_JSWORD": 475
+      },
+      {
+        "IT_AF_LW_KAT_008": 31,
+        "IT_AF_MAT_SAND_03": 930,
+        "IT_AF_MAT_SAND_04": 1955,
+        "IT_AF_MAT_MYTHRIL": 310,
+        "IT_AF_MAT_ICE_02": 316,
+        "IT_AF_AW_JSWORD": 825
+      },
+      {
+        "IT_AF_LW_KAT_008": 63,
+        "IT_AF_MAT_SAND_03": 1890,
+        "IT_AF_MAT_SAND_04": 3995,
+        "IT_AF_MAT_MYTHRIL": 630,
+        "IT_AF_MAT_ICE_02": 638,
+        "IT_AF_AW_JSWORD": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_SWO_LW_LILS_1": {
     "names": {
       "en": "Flame Blade",

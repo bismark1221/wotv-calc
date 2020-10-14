@@ -1889,5 +1889,759 @@
       }
     ],
     "slug": "ifrit"
+  },
+  "RAID_GL_05": {
+    "dataId": "RAID_GL_05",
+    "names": {
+      "en": "Behemoth King"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_BHMT_01_RAID",
+        "names": {
+          "en": "Behemoth King"
+        },
+        "stats": {
+          "HP": {
+            "min": 1200,
+            "max": 120000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 130,
+            "max": 630
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 500
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 90
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "PIERCE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "STRIKE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "beast",
+        "element": "dark",
+        "image": "lapsbhmt",
+        "skills": {
+          "SK_BHMT_M_01_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_01_02",
+            "rate": 100,
+            "names": {
+              "en": "Haymaker"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 17
+            },
+            "count": 4,
+            "maxLevel": 30,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 80,
+              "type": "pierce",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BHMT_M_02_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_02_02",
+            "rate": 100,
+            "names": {
+              "en": "Rampage"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 3,
+            "maxLevel": 30,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 0
+            },
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BHMT_M_03_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_03_02",
+            "rate": 70,
+            "names": {
+              "en": "Heave"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 3,
+            "maxLevel": 30,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 1,
+              "line": 1
+            },
+            "based": "physic",
+            "crt_hit": -10,
+            "damage": {
+              "minValue": 100,
+              "maxValue": 140,
+              "type": "slash",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_MOVE_1-20_U": {
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_MOVE_1-20_U",
+            "rate": 100,
+            "names": {
+              "en": "Move 1-20 Up",
+              "fr": "Déplacement ↑ 1 - 20"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          }
+        },
+        "slug": "behemoth-king",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_BHMT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 0,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_TNBR_RAID",
+        "names": {
+          "en": "Tonberry"
+        },
+        "stats": {
+          "HP": {
+            "min": 5000,
+            "max": 100000
+          },
+          "TP": {
+            "min": 40,
+            "max": 73
+          },
+          "AP": {
+            "min": 48,
+            "max": 75
+          },
+          "ATK": {
+            "min": 430,
+            "max": 450
+          },
+          "DEF": {
+            "min": 40,
+            "max": 40
+          },
+          "SPR": {
+            "min": 40,
+            "max": 40
+          },
+          "MAG": {
+            "min": 300,
+            "max": 350
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "EARTH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {},
+          "STRIKE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 1,
+            "max": 1
+          },
+          "JUMP": {
+            "min": 2,
+            "max": 2
+          },
+          "MAX_LV": {}
+        },
+        "species": "human",
+        "element": "wind",
+        "image": "lapstnbr",
+        "skills": {
+          "SK_TNBR_M_01": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Knife"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "pierce",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_02": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_02",
+            "rate": 100,
+            "names": {
+              "en": "Grudge Knife"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "damage": {
+              "minValue": 150,
+              "maxValue": 180,
+              "type": "pierce",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_03": {
+            "effects": [
+              {
+                "type": "STOP_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 30,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_TNBR_M_03",
+            "rate": 50,
+            "names": {
+              "en": "Deep-Seated Grudge"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 10,
+              "w": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_04_R": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_04_R",
+            "rate": 30,
+            "names": {
+              "en": "Everyone's Grudge"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 45
+            },
+            "count": 2,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "maths": [
+              {
+                "type": "DEAD_UNITS",
+                "formula": "COUNT",
+                "condition": 4,
+                "value": 2000
+              }
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_UR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 20,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_UR",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_UR",
+              "fr": "SK_LW_HIT_5_UR"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          }
+        },
+        "slug": "tonberry",
+        "attack": {
+          "names": {
+            "en": "Normal Attack"
+          },
+          "effects": [],
+          "dataId": "SK_TNBR_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": "behemoth-king"
   }
 }

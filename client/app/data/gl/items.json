@@ -3954,6 +3954,18 @@
       "fr": "Pierre d’éveil de Fenrir (3★)"
     }
   },
+  "IT_SB_AW_TITN_R2": {
+    "dataId": "IT_SB_AW_TITN_R2",
+    "names": {
+      "en": "Titan's Awakening Stone (2★)"
+    }
+  },
+  "IT_SB_AW_TITN_R3": {
+    "dataId": "IT_SB_AW_TITN_R3",
+    "names": {
+      "en": "Titan's Awakening Stone (3★)"
+    }
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -6395,6 +6407,18 @@
       "fr": "Fragment de l'atout-vision : Fenrir, les Crocs de la nuit"
     }
   },
+  "IT_VPI_LW_TITN": {
+    "dataId": "IT_VPI_LW_TITN",
+    "names": {
+      "en": "\"Raging Earth, Titan\" Vision Card Shard"
+    }
+  },
+  "IT_VPI_LW_KING": {
+    "dataId": "IT_VPI_LW_KING",
+    "names": {
+      "en": "\"The Four Warring Lords\" Vision Card Shard"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -6570,6 +6594,12 @@
       "fr": "Médaille de raid du mois de septembre"
     }
   },
+  "IT_EC_RAID_06": {
+    "dataId": "IT_EC_RAID_06",
+    "names": {
+      "en": "October Raid Medal"
+    }
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -6610,6 +6640,12 @@
     "names": {
       "en": "Select Element Magicite (XL) x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 magilithes élémentaires (XL)"
+    }
+  },
+  "IT_US_GL_SE_SB_EXP_7": {
+    "dataId": "IT_US_GL_SE_SB_EXP_7",
+    "names": {
+      "en": "Select Element Magicite (L) x150 Summon Ticket"
     }
   },
   "IT_US_GL_SE_VPI_01": {
@@ -6666,6 +6702,18 @@
     "names": {
       "en": "Select UR Vision Card Shard x100 Summon Ticket",
       "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    }
+  },
+  "IT_US_GL_SE_VPI_09": {
+    "dataId": "IT_US_GL_SE_VPI_09",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket"
+    }
+  },
+  "IT_US_GL_SE_VPI_10": {
+    "dataId": "IT_US_GL_SE_VPI_10",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket"
     }
   },
   "IT_US_SE_UR_U_02": {
@@ -6793,6 +6841,13 @@
     "names": {
       "en": "Ribbon Crafting Recipe",
       "fr": "Recettes d'artisanat : Ruban"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_KAT_008": {
+    "dataId": "IT_AF_LW_KAT_008",
+    "names": {
+      "en": "Purple Lightning Crafting Recipe"
     },
     "recipe": true
   }
