@@ -98,6 +98,12 @@ export class BuilderTeamComponent implements OnInit {
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId
               this.getAvailableUnits(unitIndex)
+
+              Object.keys(unit.board.nodes).forEach(nodeId => {
+                if (unit.board.nodes[nodeId].skill.type !== "buff") {
+                  unit.board.nodes[nodeId].skill.name = this.nameService.getName(unit.board.nodes[nodeId].skill)
+                }
+              })
             }
           })
         })
