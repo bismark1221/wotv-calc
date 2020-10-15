@@ -5275,7 +5275,7 @@
               "type": "ATK",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "fixe",
+              "calcType": "percent",
               "target": "self"
             }
           ],
@@ -5296,7 +5296,7 @@
               "type": "ATK",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "fixe",
+              "calcType": "percent",
               "target": "self"
             }
           ],
@@ -5317,7 +5317,7 @@
               "type": "ATK",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "fixe",
+              "calcType": "percent",
               "target": "self"
             }
           ],
