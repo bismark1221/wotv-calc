@@ -321,6 +321,7 @@ export class JsonService {
     101: "BERSERK",
     102: "DOOM",
     103: "REVIVE",
+    104: "RERAISE",
     105: "PROTECT",
     106: "SHELL",
     110: "FLOAT",

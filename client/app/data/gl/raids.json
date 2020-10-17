@@ -1893,13 +1893,15 @@
   "RAID_GL_05": {
     "dataId": "RAID_GL_05",
     "names": {
-      "en": "Behemoth King"
+      "en": "Behemoth King",
+      "fr": "Roi Béhémoth"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_BHMT_01_RAID",
         "names": {
-          "en": "Behemoth King"
+          "en": "Behemoth King",
+          "fr": "Roi Béhémoth"
         },
         "stats": {
           "HP": {
@@ -2057,7 +2059,8 @@
             "dataId": "SK_BHMT_M_01_02",
             "rate": 100,
             "names": {
-              "en": "Haymaker"
+              "en": "Haymaker",
+              "fr": "Uppercut magistral"
             },
             "target": "all",
             "cost": {
@@ -2085,7 +2088,8 @@
             "dataId": "SK_BHMT_M_02_02",
             "rate": 100,
             "names": {
-              "en": "Rampage"
+              "en": "Rampage",
+              "fr": "Rage"
             },
             "target": "target",
             "cost": {
@@ -2113,7 +2117,8 @@
             "dataId": "SK_BHMT_M_03_02",
             "rate": 70,
             "names": {
-              "en": "Heave"
+              "en": "Heave",
+              "fr": "Ravager"
             },
             "target": "target",
             "cost": {
@@ -2249,7 +2254,8 @@
       {
         "dataId": "UN_LW_E_TNBR_RAID",
         "names": {
-          "en": "Tonberry"
+          "en": "Tonberry",
+          "fr": "Tomberry"
         },
         "stats": {
           "HP": {
@@ -2407,7 +2413,8 @@
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
             "names": {
-              "en": "Knife"
+              "en": "Knife",
+              "fr": "Couteau"
             },
             "target": "ennemySide",
             "cost": {
@@ -2438,7 +2445,8 @@
             "dataId": "SK_TNBR_M_02",
             "rate": 100,
             "names": {
-              "en": "Grudge Knife"
+              "en": "Grudge Knife",
+              "fr": "Couteau de la rancune"
             },
             "target": "ennemySide",
             "cost": {
@@ -2478,7 +2486,8 @@
             "dataId": "SK_TNBR_M_03",
             "rate": 50,
             "names": {
-              "en": "Deep-Seated Grudge"
+              "en": "Deep-Seated Grudge",
+              "fr": "Profonde rancune"
             },
             "target": "target",
             "cost": {
@@ -2510,7 +2519,8 @@
             "dataId": "SK_TNBR_M_04_R",
             "rate": 30,
             "names": {
-              "en": "Everyone's Grudge"
+              "en": "Everyone's Grudge",
+              "fr": "Rancune commune"
             },
             "target": "target",
             "cost": {
@@ -2618,7 +2628,8 @@
         "slug": "tonberry",
         "attack": {
           "names": {
-            "en": "Normal Attack"
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
           },
           "effects": [],
           "dataId": "SK_TNBR_ATK",

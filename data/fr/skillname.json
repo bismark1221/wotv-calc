@@ -98,7 +98,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1_INIT",
-            "value": "Guérison divine"
+            "value": "Longévité divine"
         },
         {
             "key": "SK_LW_KNT_M_1_INIT",
@@ -142,7 +142,7 @@
         },
         {
             "key": "SK_LW_KNT_S_1",
-            "value": "Guérison divine"
+            "value": "Longévité divine"
         },
         {
             "key": "SK_LW_KNT_M_1",
@@ -3725,6 +3725,66 @@
             "value": "Hurlement mystique"
         },
         {
+            "key": "SK_TITN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_TITN_M_01",
+            "value": "Glisse-roche"
+        },
+        {
+            "key": "SK_TITN_M_02",
+            "value": "Déposition de roches"
+        },
+        {
+            "key": "SK_TITN_M_03",
+            "value": "Croissance gigantesque"
+        },
+        {
+            "key": "SK_TITN_M_04",
+            "value": "Colère de Gaïa"
+        },
+        {
+            "key": "SK_BHMT_ATK_02",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BHMT_M_01_02",
+            "value": "Uppercut magistral"
+        },
+        {
+            "key": "SK_BHMT_M_02_02",
+            "value": "Rage"
+        },
+        {
+            "key": "SK_BHMT_M_03_02",
+            "value": "Ravager"
+        },
+        {
+            "key": "SK_TNBR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_TNBR_M_01",
+            "value": "Couteau"
+        },
+        {
+            "key": "SK_TNBR_M_02",
+            "value": "Couteau de la rancune"
+        },
+        {
+            "key": "SK_TNBR_M_03",
+            "value": "Profonde rancune"
+        },
+        {
+            "key": "SK_TNBR_M_04",
+            "value": "Rancune commune"
+        },
+        {
+            "key": "SK_TNBR_M_04_R",
+            "value": "Rancune commune"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -4047,6 +4107,10 @@
         {
             "key": "SK_SMN_FNRR",
             "value": "Hurlement mystique"
+        },
+        {
+            "key": "SK_SMN_TITN",
+            "value": "Colère de Gaïa"
         },
         {
             "key": "SK_US_POTION",
@@ -4687,6 +4751,14 @@
         {
             "key": "SK_LW_ACC_001_5",
             "value": ""
+        },
+        {
+            "key": "SK_LW_KAT_008_1",
+            "value": "Éclair pourpre (Att de glace ↑)"
+        },
+        {
+            "key": "SK_LW_KAT_008_5",
+            "value": "Éclair pourpre (Att de glace ↑)"
         },
         {
             "key": "SK_ACC_LW_MONT_1_1",
@@ -5605,6 +5677,34 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_TITN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KING_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KING_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KING_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_KING_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_P",
             "value": ""
         },
@@ -6193,6 +6293,30 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_TITN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2MAX",
+            "value": ""
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "PV max ↑ 100 - 99 900"
         },
@@ -6474,7 +6598,7 @@
         },
         {
             "key": "SK_BTL_STR_MAGIC_1_100_U",
-            "value": "AttM ↑ 1 - 100"
+            "value": "Att magique ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SLASH_1_100_U",
@@ -6494,7 +6618,7 @@
         },
         {
             "key": "SK_BTL_STR_MAGIC_1_100_D",
-            "value": "AttM ↓ 1 - 100"
+            "value": "Att magique ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STR_SLASH_1_100_D",
@@ -7066,23 +7190,23 @@
         },
         {
             "key": "SK_GMK_ATK_TEST",
-            "value": "Attaque de Gadget provisoire"
+            "value": "Attaque mécanique provisoire"
         },
         {
             "key": "SK_GMK_ATK_TEST_FIRE",
-            "value": "Attaque de Gadget provisoire (Feu)"
+            "value": "Attaque mécanique provisoire (Feu)"
         },
         {
             "key": "SK_GMK_ATK_TEST_ARROW",
-            "value": "Attaque de Gadget provisoire (Arc)"
+            "value": "Attaque mécanique provisoire (Arc)"
         },
         {
             "key": "SK_GMK_ATK_TEST_KATA_1",
-            "value": "Attaque de Gadget provisoire (Unité de catapulte simple)"
+            "value": "Attaque mécanique provisoire (Unité de catapulte simple)"
         },
         {
             "key": "SK_GMK_ATK_TEST_KATA_2",
-            "value": "Attaque de Gadget provisoire (Zone de catapulte)"
+            "value": "Attaque mécanique provisoire (Zone de catapulte)"
         },
         {
             "key": "SK_GMK_ATK_NEEDLE",

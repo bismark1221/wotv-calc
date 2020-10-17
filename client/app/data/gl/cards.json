@@ -5058,7 +5058,8 @@
   "VC_LW_TITN": {
     "dataId": "VC_LW_TITN",
     "names": {
-      "en": "Raging Earth, Titan"
+      "en": "Raging Earth, Titan",
+      "fr": "Titan, le Colosse rugissant"
     },
     "cost": 70,
     "rarity": "UR",
@@ -5276,6 +5277,7 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "percent",
+              "increaseMax": true,
               "target": "self"
             }
           ],
@@ -5297,6 +5299,7 @@
               "minValue": 1,
               "maxValue": 5,
               "calcType": "percent",
+              "increaseMax": true,
               "target": "self"
             }
           ],
@@ -5318,6 +5321,7 @@
               "minValue": 5,
               "maxValue": 5,
               "calcType": "percent",
+              "increaseMax": true,
               "target": "self"
             }
           ],
@@ -9307,7 +9311,8 @@
   "VC_LW_KING": {
     "dataId": "VC_LW_KING",
     "names": {
-      "en": "The Four Warring Lords"
+      "en": "The Four Warring Lords",
+      "fr": "Les Quatre seigneurs de guerre"
     },
     "cost": 50,
     "rarity": "MR",

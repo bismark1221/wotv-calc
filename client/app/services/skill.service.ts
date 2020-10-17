@@ -510,6 +510,9 @@ export class SkillService {
       case "REVIVE_ATK" :
         html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect, true, " HP regained") + this.getTurns(effect)
       break
+      case "RERAISE" :
+        html = "Grant auto-revive" + this.getValue(skill, effect, true, " HP regained") + this.getTurns(effect)
+      break
       case "PROTECT_ATK" :
         html = this.getChance(effect, false) + " protect" + this.getValue(skill, effect, true, " reduced physical damage") + this.getTurns(effect)
       break

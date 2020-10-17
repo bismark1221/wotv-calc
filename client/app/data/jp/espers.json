@@ -16,6 +16,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_FIRE"
           },
           {
@@ -24,6 +25,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_FIRE02"
           },
           {
@@ -32,6 +34,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_FIRE02"
           }
         ],
@@ -1358,6 +1361,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL"
           },
           {
@@ -1366,6 +1370,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL02"
           },
           {
@@ -1374,6 +1379,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL02"
           }
         ],
@@ -2698,6 +2704,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR"
           },
           {
@@ -2706,6 +2713,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR02"
           },
           {
@@ -2714,6 +2722,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR02"
           }
         ],
@@ -4037,6 +4046,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE"
           },
           {
@@ -4045,6 +4055,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE02"
           },
           {
@@ -4053,6 +4064,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE02"
           }
         ],
@@ -5379,6 +5391,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_THUN"
           },
           {
@@ -5387,6 +5400,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_THUN02"
           },
           {
@@ -5395,6 +5409,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_THUN02"
           }
         ],
@@ -6721,6 +6736,7 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "fixe",
+            "turn": 1,
             "dataId": "BUFF_WTH_NONE"
           }
         ],
@@ -8035,6 +8051,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND"
           },
           {
@@ -8043,6 +8060,7 @@
             "minValue": 15,
             "maxValue": 15,
             "calcType": "fixe",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND02"
           }
         ],
@@ -10694,6 +10712,7 @@
             "minValue": -30,
             "maxValue": -30,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_FIRE03"
           },
           {
@@ -10702,6 +10721,7 @@
             "minValue": 40,
             "maxValue": 40,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_FIRE04"
           }
         ],
@@ -12025,6 +12045,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_DARK"
           },
           {
@@ -12033,6 +12054,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_DARK02"
           },
           {
@@ -12041,6 +12063,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_DARK02"
           }
         ],
@@ -13374,6 +13397,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE"
           },
           {
@@ -13382,6 +13406,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE02"
           },
           {
@@ -13390,6 +13415,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_ICE02"
           }
         ],
@@ -14723,6 +14749,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL"
           },
           {
@@ -14731,6 +14758,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL02"
           },
           {
@@ -14739,6 +14767,7 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_SOIL02"
           }
         ],
@@ -17386,6 +17415,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_DARK03"
           },
           {
@@ -17394,6 +17424,7 @@
             "minValue": 40,
             "maxValue": 40,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_DARK04"
           }
         ],
@@ -18715,6 +18746,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR03"
           },
           {
@@ -18723,6 +18755,7 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
             "elements": [
               "fire",
@@ -18740,6 +18773,7 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
             "elements": [
               "fire",
@@ -18757,6 +18791,7 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_WATER",
             "elements": [
               "water"
@@ -18768,6 +18803,7 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_WATER",
             "elements": [
               "water"
@@ -20098,6 +20134,7 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND"
           },
           {
@@ -20106,6 +20143,7 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
             "elements": [
               "fire",
@@ -20123,6 +20161,7 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
             "elements": [
               "fire",
@@ -20140,6 +20179,7 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_WIND",
             "elements": [
               "wind"
@@ -20151,6 +20191,7 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
+            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_WIND",
             "elements": [
               "wind"

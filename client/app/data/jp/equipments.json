@@ -31245,7 +31245,8 @@
       "UN_LW_P_MRND",
       "UN_LW_P_TREL",
       "UN_LW_P_IRDL",
-      "UN_LW_P_GRSR"
+      "UN_LW_P_GRSR",
+      "UN_LW_P_CRIS"
     ],
     "materials": [
       {
@@ -44627,6 +44628,182 @@
       "unitId": "UN_LW_P_ELSI"
     }
   },
+  "AF_ACC_LW_RIRY_01_1": {
+    "names": {
+      "en": "ゾンビマスク"
+    },
+    "slug": "zombi-masuku",
+    "stats": {
+      "HP": {
+        "min": 288,
+        "max": 288
+      },
+      "MAG": {
+        "min": 42,
+        "max": 42
+      },
+      "ACCURACY": {
+        "min": 8,
+        "max": 8
+      },
+      "CRITIC_RATE": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_RIRY_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "屍人変化"
+          },
+          "dataId": "SK_ACC_LW_RIRY_01_1_1",
+          "effects": [
+            {
+              "type": "RERAISE",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "rate": 200,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 32
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_025",
+    "equippableJobs": [
+      "JB_LW_CLR_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MKN_FIRE",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_SAKR",
+      "JB_FF4_ROSA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_RIRY_01"
+    }
+  },
+  "AF_GUN_LW_CRIS_1": {
+    "names": {
+      "en": "マスケトン・カスタム"
+    },
+    "slug": "masu-keton-kasutamu",
+    "stats": {
+      "HP": {
+        "min": 107,
+        "max": 107
+      },
+      "ATK": {
+        "min": 106,
+        "max": 106
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_CRIS_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_GUN_LW_CRIS_1_1"
+          },
+          "dataId": "SK_GUN_LW_CRIS_1_1",
+          "effects": [
+            {
+              "type": "PROVOKE",
+              "minValue": -6,
+              "maxValue": -6,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_gun_009",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_CRIS"
+    }
+  },
   "AF_SWO_LW_MONT_2": {
     "names": {
       "en": "リオンズソード - Lion Sword"
@@ -47495,6 +47672,76 @@
     "equippableJobs": [
       "JB_LW_MNK_FIRE",
       "JB_LW_BEA_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_LW_RIRY_01_2": {
+    "names": {
+      "en": "解体の剣"
+    },
+    "slug": "kaitai-no-ken",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_RIRY_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_swo_026",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL"
     ],
     "equippableUnits": [],
     "materials": [
