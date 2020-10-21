@@ -18,6 +18,7 @@ import { EquipmentService } from '../services/equipment.service'
 export class HomeComponent {
   markdown = '';
   thanks = '';
+  lang = 'en';
 
   updated = {
     GL: [
@@ -109,7 +110,7 @@ export class HomeComponent {
   }
 
   private getUpdate() {
-    let lang = this.translateService.currentLang
+    this.lang = this.translateService.currentLang
     let version = this.navService.getVersion()
 
     this.updated[version].forEach((update, updateIndex) => {
