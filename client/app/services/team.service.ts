@@ -187,7 +187,7 @@ export class TeamService {
     return teamFinded
   }
 
-  updateTeam(data, statsStack = false) {
+  updateTeam(data) {
     if (this.team && data) {
       this.team.guild.data = data.guild
       this.team.name = data.name
@@ -195,7 +195,7 @@ export class TeamService {
 
       for (let i = 0; i <= 4; i++) {
         if (data.units[i]) {
-          this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i], statsStack)
+          this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i])
           this.team.units[i].guild = this.team.guild
         } else {
           this.team.units[i] = null
@@ -286,9 +286,9 @@ export class TeamService {
     return this.team.units[unitPos].getAvailableEquipments(equipmentPos, this.equipmentService)
   }
 
-  selectUnit(pos, dataId, customData = null, statsStack) {
+  selectUnit(pos, dataId, customData = null) {
     if (dataId) {
-      this.team.units[pos] = this.unitService.selectUnitForBuilder(dataId, customData, statsStack)
+      this.team.units[pos] = this.unitService.selectUnitForBuilder(dataId, customData)
       this.team.units[pos].guild = this.team.guild
 
       for (let i = 0; i <= 4; i++) {

@@ -126,7 +126,6 @@ export class Unit {
   cost
   calcCost
   replacedSkills
-  statsStack
 
 
   constructFromJson(unit: Unit, translateService): void {
@@ -695,7 +694,7 @@ export class Unit {
     statsType.forEach(statType => {
       this.updateStat(statType, 0, "totalEquipment", "fixe", true)
       if (this.stats[statType].equipments) {
-        if (this.statsStack && cumulativeRatio[statType]) {
+        if (cumulativeRatio[statType]) {
           let statOrder = {
             positive: [],
             negative: []

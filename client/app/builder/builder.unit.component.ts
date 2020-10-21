@@ -43,12 +43,10 @@ export class BuilderUnitComponent implements OnInit {
   showSave = false
   showStatsDetail = false
   showBuffsDetail = false
-  showStatsStacking = false
 
   isCollapsedMainJob = true
   isCollapsedSubJob = true
   isCollapsedOther = true
-  statsStack = false
 
   statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
   statsFrom = [
@@ -163,11 +161,6 @@ export class BuilderUnitComponent implements OnInit {
     });
 
     this.navService.setTitle("Unit Builder");
-
-    if (this.navService.getVersion() == "JP") {
-      this.showStatsStacking = true
-      this.statsStack = true
-    }
   }
 
   ngAfterViewInit() {
@@ -256,7 +249,7 @@ export class BuilderUnitComponent implements OnInit {
 
   selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData, this.statsStack)
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
       this.searchText = this.unit.name
 
       this.loadGuild()
@@ -268,11 +261,6 @@ export class BuilderUnitComponent implements OnInit {
       this.updateFilteredUnits()
       this.showList = true
     }
-  }
-
-  toggleStatsStacking() {
-    this.unit.statsStack = !this.unit.statsStack
-    this.changeLevel()
   }
 
   changeStar(value) {
