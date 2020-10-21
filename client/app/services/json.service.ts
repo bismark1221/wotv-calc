@@ -2353,7 +2353,7 @@ export class JsonService {
 
         this.getNames(this[this.version].wotvEquipments[rType], "equipment")
 
-        if (equipment.equip) {
+        if (equipment.equip && this[this.version].EquipmentCond[equipment.equip]) {
           if (this[this.version].EquipmentCond[equipment.equip].jobs) {
             this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
               this[this.version].wotvEquipments[rType].equippableJobs.push(job)
