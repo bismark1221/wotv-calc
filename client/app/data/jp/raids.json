@@ -2769,7 +2769,201 @@
         "species": "",
         "element": "light",
         "image": "ff14boss",
-        "skills": {},
+        "skills": {
+          "SK_FF14BOSS_M_01": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_01",
+            "rate": 100,
+            "names": {
+              "en": "ブレストリッパー"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_02": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_02",
+            "rate": 40,
+            "names": {
+              "en": "ペア・オブ・アングウィッシュ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 60,
+              "maxValue": 80,
+              "type": "slash",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_03": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_03",
+            "rate": 0,
+            "names": {
+              "en": "ウッデンホース"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 10,
+              "w": 2
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_KILLER_DARK_1-100_U": {
+            "effects": [
+              {
+                "type": "DARK_KILLER",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_KILLER_DARK_1-100_U",
+            "rate": 100,
+            "names": {
+              "en": "闇属性キラー1-100アップ"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_DEFPIERCE_1-100_U_KISO": {
+            "effects": [
+              {
+                "type": "DEFENSE_PENETRATION",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "防御貫通率1-100アップ(基礎ステ)"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          }
+        },
         "slug": "fo-givun-disonansu",
         "attack": {
           "names": {

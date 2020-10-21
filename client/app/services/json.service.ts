@@ -53,6 +53,21 @@ import { default as gl_raid_20 } from         '../../../data/raid/gl/raid_ev_10_
 import { default as gl_raid_21 } from         '../../../data/raid/gl/raid_ev_10_04_set.json';
 import { default as gl_raid_22 } from         '../../../data/raid/gl/raid_ev_10_05_set.json';
 import { default as gl_raid_23 } from         '../../../data/raid/gl/raid_ev_10_06_set.json';
+import { default as gl_raid_24 } from         '../../../data/raid/gl/raid_ff14_01_set.json';
+import { default as gl_raid_25 } from         '../../../data/raid/gl/raid_ff14_2_01_set.json';
+import { default as gl_raid_26 } from         '../../../data/raid/gl/raid_ff14_2_02_set.json';
+import { default as gl_raid_27 } from         '../../../data/raid/gl/raid_ff14_2_03_set.json';
+import { default as gl_raid_28 } from         '../../../data/raid/gl/raid_ff14_02_set.json';
+import { default as gl_raid_29 } from         '../../../data/raid/gl/raid_ff14_03_set.json';
+import { default as gl_raid_30 } from         '../../../data/raid/gl/raid_ff14_04_set.json';
+import { default as gl_raid_31 } from         '../../../data/raid/gl/raid_ff14_05_set.json';
+import { default as gl_raid_32 } from         '../../../data/raid/gl/raid_ignt_01_set.json';
+import { default as gl_raid_33 } from         '../../../data/raid/gl/raid_ignt_02_set.json';
+import { default as gl_raid_34 } from         '../../../data/raid/gl/raid_ignt_03_set.json';
+import { default as gl_raid_35 } from         '../../../data/raid/gl/raid_ignt01_01_set.json';
+import { default as gl_raid_36 } from         '../../../data/raid/gl/raid_ignt01_02_set.json';
+import { default as gl_raid_37 } from         '../../../data/raid/gl/raid_ignt01_03_set.json';
+
 
 
 import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
@@ -2590,6 +2605,20 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21
       this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22
       this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23
+      this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24
+      this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25
+      this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26
+      this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27
+      this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28
+      this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29
+      this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30
+      this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31
+      this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32
+      this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33
+      this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34
+      this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35
+      this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36
+      this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37
     } else {
       this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1
       this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2
@@ -2614,6 +2643,20 @@ export class JsonService {
       this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21
       this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22
       this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23
+      this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24
+      this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25
+      this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26
+      this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27
+      this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28
+      this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29
+      this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30
+      this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31
+      this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32
+      this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33
+      this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34
+      this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35
+      this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36
+      this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37
     }
 
     Object.keys(this[this.version].raid).forEach(raidId => {
