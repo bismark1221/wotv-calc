@@ -198,7 +198,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -401,7 +401,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -601,7 +601,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -804,7 +804,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1004,7 +1004,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1204,7 +1204,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1404,7 +1404,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1607,7 +1607,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1807,7 +1807,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2007,7 +2007,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2210,7 +2210,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2410,7 +2410,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2613,7 +2613,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2816,7 +2816,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3019,7 +3019,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3219,7 +3219,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3422,7 +3422,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3622,7 +3622,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3822,7 +3822,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4025,7 +4025,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4225,7 +4225,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4435,7 +4435,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4642,7 +4642,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4842,7 +4842,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5051,7 +5051,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5266,7 +5266,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       },
       {
         "classic": {
@@ -5335,15 +5335,23 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "unit",
-          "items": [
-            "UN_LW_P_GRSR",
-            "UN_LW_P_AILN",
-            "UN_LW_P_RAMD",
-            "UN_LW_P_LRNZ"
-          ]
-        }
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water",
+              "earth"
+            ]
+          },
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_GRSR",
+              "JB_LW_LAN_FIRE",
+              "JB_LW_DRG_FIRE"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -5511,7 +5519,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5682,7 +5690,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5842,7 +5850,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6013,7 +6021,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6177,7 +6185,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6346,7 +6354,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6515,7 +6523,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6677,7 +6685,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6839,7 +6847,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7006,7 +7014,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7173,7 +7181,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7337,7 +7345,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7499,7 +7507,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7681,7 +7689,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7841,7 +7849,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8003,7 +8011,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8165,7 +8173,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8334,7 +8342,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8496,7 +8504,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8656,7 +8664,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8818,7 +8826,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8982,7 +8990,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9142,7 +9150,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9304,7 +9312,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9469,7 +9477,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9597,7 +9605,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9725,7 +9733,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9847,7 +9855,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9975,7 +9983,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10095,7 +10103,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10217,7 +10225,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10346,7 +10354,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10468,7 +10476,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10596,7 +10604,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10725,7 +10733,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10846,7 +10854,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10967,7 +10975,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11088,7 +11096,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11209,7 +11217,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11329,7 +11337,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11449,7 +11457,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11576,7 +11584,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11705,7 +11713,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11825,7 +11833,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11952,7 +11960,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12072,7 +12080,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12193,7 +12201,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12314,7 +12322,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12435,7 +12443,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   }

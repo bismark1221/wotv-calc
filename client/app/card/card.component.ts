@@ -92,17 +92,19 @@ export class CardComponent implements OnInit {
 
       this.card.unitBuffs.forEach(buff => {
         if (buff.cond) {
-          if (buff.cond.type == 'job') {
-            buff.cond.items.forEach((jobId, jobIndex) => {
-              let job = this.jobService.getJob(jobId)
-              buff.cond.items[jobIndex] = job ? job : buff.cond.items[jobIndex]
-            })
-          } else if (buff.cond.type == 'unit') {
-            buff.cond.items.forEach((unitId, unitIndex) => {
-              let unit = this.unitService.getUnit(unitId)
-              buff.cond.items[unitIndex] = unit ? unit : buff.cond.items[unitIndex]
-            })
-          }
+          buff.cond.forEach(cond => {
+            if (cond.type == 'job') {
+              cond.items.forEach((jobId, jobIndex) => {
+                let job = this.jobService.getJob(jobId)
+                cond.items[jobIndex] = job ? job : cond.items[jobIndex]
+              })
+            } else if (cond.type == 'unit') {
+              cond.items.forEach((unitId, unitIndex) => {
+                let unit = this.unitService.getUnit(unitId)
+                cond.items[unitIndex] = unit ? unit : cond.items[unitIndex]
+              })
+            }
+          })
         }
       })
     }

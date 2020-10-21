@@ -191,7 +191,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -387,7 +387,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -580,7 +580,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -776,7 +776,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -972,7 +972,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1165,7 +1165,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1358,7 +1358,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1551,7 +1551,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1747,7 +1747,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -1940,7 +1940,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2133,7 +2133,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2326,7 +2326,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2522,7 +2522,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2718,7 +2718,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -2911,7 +2911,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3107,7 +3107,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3300,7 +3300,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3496,7 +3496,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3689,7 +3689,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -3892,7 +3892,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4088,7 +4088,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4281,7 +4281,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4474,7 +4474,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4676,7 +4676,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -4884,7 +4884,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5083,7 +5083,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5279,12 +5279,14 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "elem",
-          "items": [
-            "fire"
-          ]
-        }
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -5501,7 +5503,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5718,7 +5720,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -5935,12 +5937,14 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "elem",
-          "items": [
-            "dark"
-          ]
-        }
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6160,7 +6164,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6371,18 +6375,20 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WHM_FIRE",
-            "JB_LW_BLM_FIRE",
-            "JB_LW_GRM_FIRE",
-            "JB_LW_TIM_FIRE",
-            "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE",
-            "JB_LW_SAKR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
       },
       {
         "classic": {
@@ -6423,18 +6429,20 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WHM_FIRE",
-            "JB_LW_BLM_FIRE",
-            "JB_LW_GRM_FIRE",
-            "JB_LW_TIM_FIRE",
-            "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE",
-            "JB_LW_SAKR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6634,7 +6642,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -6830,27 +6838,29 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WAR_FIRE",
-            "JB_LW_KNT_FIRE",
-            "JB_LW_PLD_FIRE",
-            "JB_LW_MGK_FIRE",
-            "JB_LW_RDM_FIRE",
-            "JB_LW_GLMS",
-            "JB_LW_WAR",
-            "JB_FFT_RAMZ",
-            "JB_FFT_ORND",
-            "JB_FFT_GFGR",
-            "JB_FF1_WROL",
-            "JB_FFT_AGRA",
-            "JB_FFT_DELT",
-            "JB_LW_MKN_FIRE",
-            "JB_FF4_CECL",
-            "JB_FF14_TNCR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_GLMS",
+              "JB_LW_WAR",
+              "JB_FFT_RAMZ",
+              "JB_FFT_ORND",
+              "JB_FFT_GFGR",
+              "JB_FF1_WROL",
+              "JB_FFT_AGRA",
+              "JB_FFT_DELT",
+              "JB_LW_MKN_FIRE",
+              "JB_FF4_CECL",
+              "JB_FF14_TNCR"
+            ]
+          }
+        ]
       },
       {
         "classic": {
@@ -6885,27 +6895,29 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WAR_FIRE",
-            "JB_LW_KNT_FIRE",
-            "JB_LW_PLD_FIRE",
-            "JB_LW_MGK_FIRE",
-            "JB_LW_RDM_FIRE",
-            "JB_LW_GLMS",
-            "JB_LW_WAR",
-            "JB_FFT_RAMZ",
-            "JB_FFT_ORND",
-            "JB_FFT_GFGR",
-            "JB_FF1_WROL",
-            "JB_FFT_AGRA",
-            "JB_FFT_DELT",
-            "JB_LW_MKN_FIRE",
-            "JB_FF4_CECL",
-            "JB_FF14_TNCR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_GLMS",
+              "JB_LW_WAR",
+              "JB_FFT_RAMZ",
+              "JB_FFT_ORND",
+              "JB_FFT_GFGR",
+              "JB_FF1_WROL",
+              "JB_FFT_AGRA",
+              "JB_FFT_DELT",
+              "JB_LW_MKN_FIRE",
+              "JB_FF4_CECL",
+              "JB_FF14_TNCR"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -7104,18 +7116,20 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WHM_FIRE",
-            "JB_LW_BLM_FIRE",
-            "JB_LW_GRM_FIRE",
-            "JB_LW_TIM_FIRE",
-            "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE",
-            "JB_LW_SAKR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
       },
       {
         "classic": {
@@ -7170,18 +7184,20 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": {
-          "type": "job",
-          "items": [
-            "JB_LW_WHM_FIRE",
-            "JB_LW_BLM_FIRE",
-            "JB_LW_GRM_FIRE",
-            "JB_LW_TIM_FIRE",
-            "JB_FF14_YSTL",
-            "JB_LW_MST_FIRE",
-            "JB_LW_SAKR"
-          ]
-        }
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -7398,7 +7414,7 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": null
+        "cond": []
       },
       {
         "classic": {
@@ -7464,12 +7480,14 @@
           "target": "self",
           "maxLevel": 1
         },
-        "cond": {
-          "type": "elem",
-          "items": [
-            "wind"
-          ]
-        }
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -7632,7 +7650,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7798,7 +7816,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -7953,7 +7971,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8112,7 +8130,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8276,7 +8294,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8440,7 +8458,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8597,7 +8615,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8754,7 +8772,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -8916,7 +8934,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9078,7 +9096,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9235,7 +9253,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9394,7 +9412,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9551,7 +9569,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9728,7 +9746,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -9883,7 +9901,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10049,7 +10067,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10206,7 +10224,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10370,7 +10388,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10527,7 +10545,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10682,7 +10700,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10839,7 +10857,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -10996,7 +11014,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11151,7 +11169,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11308,7 +11326,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11468,7 +11486,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11631,7 +11649,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11790,7 +11808,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -11947,7 +11965,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12105,7 +12123,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12263,7 +12281,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12422,7 +12440,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12580,7 +12598,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12735,7 +12753,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -12895,7 +12913,7 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": null
+        "cond": []
       },
       {
         "classic": {
@@ -12960,12 +12978,14 @@
           "maxLevel": 4
         },
         "lvmax": null,
-        "cond": {
-          "type": "unit",
-          "items": [
-            "UN_LW_P_DRND"
-          ]
-        }
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_DRND"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -13090,7 +13110,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13215,7 +13235,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13334,7 +13354,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13459,7 +13479,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13576,7 +13596,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13702,7 +13722,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13821,7 +13841,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -13946,7 +13966,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14072,7 +14092,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14190,7 +14210,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14309,7 +14329,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14427,7 +14447,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14545,7 +14565,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14663,7 +14683,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14780,7 +14800,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -14897,7 +14917,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15021,7 +15041,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15147,7 +15167,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15264,7 +15284,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15388,7 +15408,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15505,7 +15525,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15623,7 +15643,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15741,7 +15761,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   },
@@ -15859,7 +15879,7 @@
         },
         "awake": null,
         "lvmax": null,
-        "cond": null
+        "cond": []
       }
     ]
   }

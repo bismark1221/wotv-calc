@@ -1415,7 +1415,7 @@ export class JsonService {
           classic: dataBuff.self_buff ? this.addSkill(visionCard, {slot: 0, value: dataBuff.self_buff}) : null,
           awake: dataBuff.add_self_buff_awake ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_awake}) : null,
           lvmax: dataBuff.add_self_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_lvmax}) : null,
-          cond : dataBuff.buff_cond ? this.addCardCond(dataBuff.buff_cond) : null
+          cond : dataBuff.buff_cond ? this.addCardCond(dataBuff.buff_cond) : []
         }
 
         visionCard.unitBuffs.push(buff)
@@ -1427,40 +1427,61 @@ export class JsonService {
     let cardCond = this[this.version].cardConditions[cond]
 
     if (cardCond) {
-      let formattedCond = {
-        type: null,
-        items: []
-      }
+      let formattedCond = []
 
       if (cardCond.births) {
-        formattedCond.type = "birth"
+        let newCond = {
+          type: "birth",
+          items: []
+        }
+
         cardCond.births.forEach(birth => {
-          formattedCond.items.push(this.births[birth])
+          newCond.items.push(this.births[birth])
         })
+
+        formattedCond.push(newCond)
       }
 
       if (cardCond.elem) {
-        formattedCond.type = "elem"
+        let newCond = {
+          type: "elem",
+          items: []
+        }
+
         cardCond.elem.forEach(elem => {
-          formattedCond.items.push(this.elements[elem])
+          newCond.items.push(this.elements[elem])
         })
+
+        formattedCond.push(newCond)
       }
 
       if (cardCond.mainjobs) {
-        formattedCond.type = "job"
+        let newCond = {
+          type: "job",
+          items: []
+        }
+
         cardCond.mainjobs.forEach(job => {
-          formattedCond.items.push(job)
+          newCond.items.push(job)
         })
+
+        formattedCond.push(newCond)
       }
 
       if (cardCond.units) {
-        formattedCond.type = "unit"
+        let newCond = {
+          type: "unit",
+          items: []
+        }
+
         cardCond.units.forEach(unit => {
-          formattedCond.items.push(unit)
+          newCond.items.push(unit)
         })
+
+        formattedCond.push(newCond)
       }
 
-      if (formattedCond.type === null) {
+      if (formattedCond.length == 0) {
         console.log("7 @@@@@ " + cond)
         return null
       }
