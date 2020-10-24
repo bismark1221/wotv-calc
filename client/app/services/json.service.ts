@@ -219,40 +219,6 @@ export class JsonService {
     'dark'
   ];
 
-  species = [
-    '',
-    'human',
-    'netherBeast',
-    'beast',
-    'demon',
-    'dragon',
-    'plant',
-    'bird',
-    'insect',
-    'aquatic',
-    'machine',
-    'spirit',
-    'undead',
-    'stone',
-    'metal'
-  ]
-
-  killerRaces = [
-    "",
-    "beast",
-    "bird",
-    "aquatic",
-    "demon",
-    "human",
-    "machine",
-    "dragon",
-    "undead",
-    "insect",
-    "stone",
-    "plant",
-    "spirit"
-  ];
-
   births = [
     "",
     "Unknown",
@@ -395,6 +361,23 @@ export class JsonService {
     329: "RES_MAGIC_ATK_PENETRATION",
     347: "HEAL_POWER"
   }
+  species = [
+    '',
+    'human',
+    'netherBeast',
+    'beast',
+    'demon',
+    'dragon',
+    'plant',
+    'bird',
+    'insect',
+    'aquatic',
+    'machine',
+    'fairy',
+    'undead',
+    'stone',
+    'metal'
+  ]
 
   killers = {
     2: "FIRE",
@@ -406,15 +389,16 @@ export class JsonService {
     8: "LIGHT",
     9: "DARK",
     101: "HUMAN",
-    103: "BEAST",
     102: "ESPER",
+    103: "BEAST",
     104: "DEMON",
     105: "DRAGON",
-    106: "ELEMENTAL",
+    106: "PLANT",
     107: "AVIAN",
+    108: "INSECT",
     109: "AQUATIC",
     110: "MACHINA",
-    111: "PLANT",
+    111: "FAIRY",
     112: "REAPER",
     113: "STONE",
     114: "METAL",
