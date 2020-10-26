@@ -2373,17 +2373,30 @@ export class JsonService {
 
         this.getNames(this[this.version].wotvEquipments[rType], "equipment")
 
-        if (equipment.equip && this[this.version].EquipmentCond[equipment.equip]) {
-          if (this[this.version].EquipmentCond[equipment.equip].jobs) {
-            this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
-              this[this.version].wotvEquipments[rType].equippableJobs.push(job)
-            })
-          }
+        if (equipment.equip) {
+          if (this[this.version].EquipmentCond[equipment.equip]) {
+            if (this[this.version].EquipmentCond[equipment.equip].jobs) {
+              this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
+                this[this.version].wotvEquipments[rType].equippableJobs.push(job)
+              })
+            }
 
-          if (this[this.version].EquipmentCond[equipment.equip].units) {
-            this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
-              this[this.version].wotvEquipments[rType].equippableUnits.push(unit)
-            })
+            if (this[this.version].EquipmentCond[equipment.equip].units) {
+              this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
+                this[this.version].wotvEquipments[rType].equippableUnits.push(unit)
+              })
+            }
+          } else {
+            let uniqJobs = []
+            Object.keys(this[this.version].wotvJobs).forEach(jobId => {
+              let tableJob = jobId.split("_")
+              let genericDataId = tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2]
+
+              if (uniqJobs.indexOf(genericDataId) == -1) {
+                uniqJobs.push(genericDataId)
+                this[this.version].wotvEquipments[rType].equippableJobs.push(jobId)
+              }
+            });
           }
         }
 

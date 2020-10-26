@@ -754,7 +754,7 @@ export class SkillService {
         html = "Increase ice killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "LIGHTNING_KILLER" :
-        html = "Increase ligthning killer" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase lightning killer" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "WIND_KILLER" :
         html = "Increase wind killer" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -832,7 +832,7 @@ export class SkillService {
         html = "Increase ice killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "LIGHTNING_KILLER_RES" :
-        html = "Increase ligthning killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase lightning killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "WIND_KILLER_RES" :
         html = "Increase wind killer resistance" + this.getValue(skill, effect) + this.getTurns(effect)
@@ -913,10 +913,10 @@ export class SkillService {
         html = "Increase spirit penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "RES_SLASH_ATK_PENETRATION" :
-        html = "Increase slash attack resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase slash resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "RES_MAGIC_ATK_PENETRATION" :
-        html = "Increase magic attack resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase magic resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "AP_CONSUMPTION" :
         html = "Decrease AP consumption" + this.getValue(skill, effect) + this.getTurns(effect)
