@@ -579,6 +579,8 @@ export class Unit {
       "JUMP"
     ]
 
+    let teamBuffs = {}
+
     this.teamCards.forEach(card => {
       if (card) {
         Object.keys(card.buffs.party).forEach(statType => {
@@ -588,15 +590,20 @@ export class Unit {
             if (card.buffs.party[statType].calcType === "percent") {
               value = Math.floor(this.stats[statType].baseTotal * value / 100)
             }
-
-            if (this.stats[statType].cardParty) {
-              value += this.stats[statType].cardParty
-            }
           }
 
-          this.updateStat(statType, value, "cardParty", "fixe")
+          if ((!teamBuffs[statType] || value > teamBuffs[statType])
+            && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
+          ) {
+            teamBuffs[statType] = value
+          }
         })
       }
+    })
+
+    Object.keys(teamBuffs).forEach(statType => {
+      this.updateStat(statType, 0, "cardParty", "fixe", true)
+      this.updateStat(statType, teamBuffs[statType], "cardParty", "fixe")
     })
   }
 
@@ -742,14 +749,11 @@ export class Unit {
     })
   }
 
-
   private calculateTotalStats() {
     this.calculateGuildStats()
     this.calculateBoardStats()
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
-    this.calculatePartyCardsStats()
-    this.updateCost()
 
     if (this.esper) {
       this.calculateEsperStats()
@@ -762,6 +766,9 @@ export class Unit {
     if (this.equipments) {
       this.calculateEquipmentsStats()
     }
+
+    this.calculatePartyCardsStats()
+    this.updateCost()
 
     let statsToRemove = [];
     Object.keys(this.stats).forEach(stat => {
