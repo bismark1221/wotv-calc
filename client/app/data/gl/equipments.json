@@ -34256,6 +34256,103 @@
       "unitId": "UN_LW_P_RIRY_01"
     }
   },
+  "AF_CLT_LW_HWLT_1": {
+    "names": {
+      "en": "Sowilo Coat"
+    },
+    "slug": "sowilo-coat",
+    "stats": {
+      "HP": {
+        "min": 320,
+        "max": 320
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "SPR": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_HWLT_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Fresh Blood Rune"
+          },
+          "dataId": "SK_CLT_LW_HWLT_1_1",
+          "effects": [
+            {
+              "type": "HP_COST",
+              "value": 20,
+              "calcType": "percent"
+            },
+            {
+              "type": "PHYSIC_EVADE",
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 1,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_013",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MKN_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_HWLT"
+    }
+  },
   "AF_SWO_LW_MONT_2": {
     "names": {
       "en": "Lion Sword",
@@ -36365,6 +36462,76 @@
       "type": "Unknown"
     }
   },
+  "AF_SWO_LW_HWLT_2": {
+    "names": {
+      "en": "Sword of Raidho"
+    },
+    "slug": "sword-of-raidho",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_LW_HWLT_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_swo_021",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LOT_LW_RNG_005": {
     "names": {
       "en": "Alexandrite Ring",
@@ -37007,6 +37174,165 @@
         "IT_AF_MAT_BONE": 630,
         "IT_AF_MAT_LESS_02": 638,
         "IT_AF_AW_ACCE": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_RNG_007": {
+    "names": {
+      "en": "Tide Ring"
+    },
+    "slug": "tide-ring",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 346
+      },
+      "ATK": {
+        "min": 5,
+        "max": 100
+      },
+      "DEF": {
+        "min": 1,
+        "max": 24
+      },
+      "MAG": {
+        "min": 5,
+        "max": 100
+      },
+      "SPR": {
+        "min": 1,
+        "max": 24
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_RNG_007",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_007_1",
+            "fr": "SK_LW_RNG_007_1"
+          },
+          "dataId": "SK_LW_RNG_007_1",
+          "effects": [
+            {
+              "type": "FIRE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "WATER_RES",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": -20,
+              "maxValue": -20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_007_5",
+            "fr": "SK_LW_RNG_007_5"
+          },
+          "dataId": "SK_LW_RNG_007_5",
+          "effects": [
+            {
+              "type": "FIRE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "WATER_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": -20,
+              "maxValue": -20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_rng_007",
+    "equippableJobs": [],
+    "equippableUnits": [
+      "UN_LW_P_RAMD",
+      "UN_LW_P_UNII",
+      "UN_LW_P_SEVR",
+      "UN_LW_P_ZZAN",
+      "UN_LW_P_MRND",
+      "UN_LW_P_TREL",
+      "UN_LW_P_IRDL",
+      "UN_LW_P_GRSR"
+    ],
+    "materials": [
+      {
+        "IT_AF_AW_ACCE": 375,
+        "IT_AF_MAT_WATER_03": 185,
+        "IT_AF_MAT_WATER_02": 6
       }
     ],
     "acquisition": {
