@@ -467,6 +467,7 @@
               <th class="sub skillJobTd">Job</th>
               <th class="sub skillJobTd">Job lvl</th>
               <th class="sub skillStarTd">Star lvl</th>
+              <th *ngIf="i == 'counter'" class="sub rangeTd">Type</th>
               <th class="sub skillNameTd">Name</th>
               <th class="sub">Effects</th>
               <th *ngIf="i == 'counter'" class="sub rangeTd">Range</th>
@@ -478,6 +479,9 @@
               <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
+              <td *ngIf="i == 'counter'">
+                <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+              </td>
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
                 <div *ngIf="skill.upgradeHtml !== ''">
