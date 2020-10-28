@@ -580,7 +580,7 @@ export class Unit {
             conditionChecked = false
           }
           break;
-        case "element":
+        case "elem":
           if (condition.items.indexOf(this.element) == -1) {
             conditionChecked = false
           }
