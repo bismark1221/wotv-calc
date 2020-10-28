@@ -139,6 +139,10 @@ export class Card {
           buffs.self[effect.type] = {}
           buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
           buffs.self[effect.type].calcType = effect.calcType
+
+          if (buff.cond) {
+            buffs.self[effect.type].cond = buff.cond
+          }
         })
 
         if (buff.awake && this.star > 0) {
@@ -168,6 +172,11 @@ export class Card {
         }
 
         skillService.formatRange(this, skill);
+
+        if (buff.cond) {
+          skill.cond = buff.cond
+        }
+
         this.skills.push(skill)
       }
     })

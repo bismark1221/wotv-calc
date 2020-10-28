@@ -539,15 +539,17 @@ export class Unit {
     })
 
     Object.keys(this.card.buffs.self).forEach(statType => {
-      let value = this.card.buffs.self[statType].value
+      if (!this.card.buffs.self[statType].cond || this.checkCondition(this.card.buffs.self[statType].cond)) {
+        let value = this.card.buffs.self[statType].value
 
-      if (statsType.indexOf(statType) !== -1) {
-        if (this.card.buffs.self[statType].calcType === "percent") {
-          value = Math.floor(this.stats[statType].baseTotal * value / 100)
+        if (statsType.indexOf(statType) !== -1) {
+          if (this.card.buffs.self[statType].calcType === "percent") {
+            value = Math.floor(this.stats[statType].baseTotal * value / 100)
+          }
         }
-      }
 
-      this.updateStat(statType, value, "card", "fixe")
+        this.updateStat(statType, value, "card", "fixe")
+      }
     })
 
     Object.keys(this.card.buffs.party).forEach(statType => {
@@ -561,6 +563,35 @@ export class Unit {
 
       this.updateStat(statType, value, "cardParty", "fixe")
     })
+  }
+
+  private checkCondition(conditions) {
+    let conditionChecked = true
+
+    conditions.forEach(condition => {
+      switch (condition.type) {
+        case "unit":
+          if (condition.items.indexOf(this.dataId) == -1) {
+            conditionChecked = false
+          }
+          break;
+        case "job":
+          if (condition.items.indexOf(this.jobs[0]) == -1) {
+            conditionChecked = false
+          }
+          break;
+        case "element":
+          if (condition.items.indexOf(this.element) == -1) {
+            conditionChecked = false
+          }
+          break;
+        default:
+          console.log("Card condition not manage : " + condition.type)
+          break;
+      }
+    })
+
+    return conditionChecked
   }
 
   private calculatePartyCardsStats() {
