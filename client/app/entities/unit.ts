@@ -123,6 +123,7 @@ export class Unit {
   imbue
   guild
   teamCards = []
+  teamMasterAbility = []
   cost
   calcCost
   replacedSkills
@@ -473,6 +474,26 @@ export class Unit {
     }
   }
 
+  private calculateTeamMasterSkillStats() {
+    this.teamMasterAbility.forEach(masterSkill => {
+      if (masterSkill) {
+        masterSkill.forEach(effect => {
+          if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
+            let calc = "fixe"
+            if (effect.calcType === "percent" && !effect.type.includes("KILLER")) {
+              calc = "percent"
+            }
+
+            this.updateStat(effect.type, effect.minValue, "teamMasterSkill", calc)
+          } else {
+            console.log("not manage effect in team masterSkill percent/fixe")
+            console.log(masterSkill)
+          }
+        })
+      }
+    })
+  }
+
   private calculateEsperStats() {
     let statsType = [
       "HP",
@@ -650,7 +671,7 @@ export class Unit {
       MAG:          [100, 50, 30],
       DEF:          [100, 20, 10],
       SPR:          [100, 20, 10],
-      AGI:          [100, 50, 30],
+      AGI:          [100, 40, 30],
       DEX:          [100, 50, 30],
       ACCURACY:     [100, 50, 30],
       EVADE:        [100, 40, 20],
@@ -756,9 +777,11 @@ export class Unit {
 
           let value = 0
           for (let i = 0; i < 3; i++) {
-            value += statOrder.positive[i] != 0 && statOrder.positive[i] * cumulativeRatio[statType][i] / 100 < 1 ? 1 : Math.floor(statOrder.positive[i] * cumulativeRatio[statType][i] / 100)
-            value += statOrder.negative[i] != 0 && statOrder.negative[i] * cumulativeRatio[statType][i] / 100 > -1 ? -1 : Math.floor(statOrder.negative[i] * cumulativeRatio[statType][i] / 100)
+            value += statOrder.positive[i] != 0 && statOrder.positive[i] * cumulativeRatio[statType][i] / 100 < 1 ? 1 : statOrder.positive[i] * cumulativeRatio[statType][i] / 100
+            value += statOrder.negative[i] != 0 && statOrder.negative[i] * cumulativeRatio[statType][i] / 100 > -1 ? -1 : statOrder.negative[i] * cumulativeRatio[statType][i] / 100
           }
+
+          value = Math.floor(value)
 
           this.updateStat(statType, value, "totalEquipment", "fixe", true)
         } else {
@@ -785,6 +808,7 @@ export class Unit {
     this.calculateBoardStats()
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
+    this.calculateTeamMasterSkillStats()
 
     if (this.esper) {
       this.calculateEsperStats()
@@ -825,6 +849,11 @@ export class Unit {
       if (this.stats[stat].masterSkill) {
         this.stats[stat].masterSkill = Math.floor(this.stats[stat].masterSkill)
         this.stats[stat].total += this.stats[stat].masterSkill
+      }
+
+      if (this.stats[stat].teamMasterSkill) {
+        this.stats[stat].teamMasterSkill = Math.floor(this.stats[stat].teamMasterSkill)
+        this.stats[stat].total += this.stats[stat].teamMasterSkill
       }
 
       if (this.stats[stat].esper) {

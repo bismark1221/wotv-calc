@@ -505,7 +505,7 @@ export class SkillService {
         html = this.getChance(effect) + " berserk" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "DOOM_ATK" :
-        html = this.getChance(effect) + " doom" + this.getValue(skill, effect, true, " turns before death", "fixe") + this.getTurns(effect)
+        html = this.getChance(effect) + " doom" + this.getValue(skill, effect, true, " turns before death", "fixe")
       break
       case "REVIVE_ATK" :
         html = this.getChance(effect, false) + " to revive" + this.getValue(skill, effect, true, " HP regained") + this.getTurns(effect)

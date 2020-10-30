@@ -210,6 +210,12 @@ export class TeamService {
             }
           }
         }
+
+        for (let j = 0; j <= 4; j++) {
+          if (this.team.units[i] && this.team.units[j] && j != i) {
+            this.addMasterAbility(i, j)
+          }
+        }
       }
 
       for (let i = 0; i <= 4; i++) {
@@ -296,6 +302,10 @@ export class TeamService {
           if (i != pos) {
             this.team.units[pos].teamCards[i] = this.team.units[i].card
             this.team.units[i].teamCards[pos] = this.team.units[pos].card
+
+            this.addMasterAbility(pos, i)
+            this.addMasterAbility(i, pos)
+
             this.team.units[i].changeLevel()
           }
         }
@@ -308,12 +318,70 @@ export class TeamService {
       for (let i = 0; i <= 4; i++) {
         if (i != pos && this.team.units[i]) {
           this.team.units[i].teamCards[pos] = null
+          this.team.units[i].teamMasterAbility[pos] = null
           this.team.units[i].changeLevel()
         }
       }
     }
 
     this.updateTeamCost()
+  }
+
+  addMasterAbility(unitPos, friendPos) {
+    let masterSkill = this.team.units[friendPos].masterSkill[this.team.units[friendPos].masterSkill.length - 1]
+    let effects = []
+
+    masterSkill.effects.forEach(effect => {
+      if (effect.target == "selfSide") {
+        switch (effect.condition) {
+          case "FIRE_ELEMENT":
+            if (this.team.units[unitPos].element == "fire") {
+              effects.push(effect)
+            }
+            break;
+          case "ICE_ELEMENT":
+            if (this.team.units[unitPos].element == "ice") {
+              effects.push(effect)
+            }
+            break;
+          case "WIND_ELEMENT":
+            if (this.team.units[unitPos].element == "wind") {
+              effects.push(effect)
+            }
+            break;
+          case "EARTH_ELEMENT":
+            if (this.team.units[unitPos].element == "earth") {
+              effects.push(effect)
+            }
+            break;
+          case "LIGHTNING_ELEMENT":
+            if (this.team.units[unitPos].element == "lightning") {
+              effects.push(effect)
+            }
+            break;
+          case "WATER_ELEMENT":
+            if (this.team.units[unitPos].element == "water") {
+              effects.push(effect)
+            }
+            break;
+          case "LIGHT_ELEMENT":
+            if (this.team.units[unitPos].element == "light") {
+              effects.push(effect)
+            }
+            break;
+          case "DARK_ELEMENT":
+            if (this.team.units[unitPos].element == "dark") {
+              effects.push(effect)
+            }
+            break;
+          default:
+            console.log("Not manaaged condition in master skill : " + masterSkill.dataId)
+            break;
+        }
+      }
+    })
+
+    this.team.units[unitPos].teamMasterAbility[friendPos] = effects
   }
 
   changeStar(pos, value) {
