@@ -1261,6 +1261,38 @@
             "value": ""
         },
         {
+            "key": "BUFF_LW_MKN_S_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_S_3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_WIND_S_4",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_SOIL_S_4",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_R_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_WIND_P_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_SOIL_P_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MKN_P_2",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_GETSP_1-999_U",
             "value": ""
         },
@@ -1402,6 +1434,14 @@
         },
         {
             "key": "BUFF_GLSP_R_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GLSP_M_02_TOW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GLSP_R_01_TOW",
             "value": ""
         },
         {
@@ -1581,23 +1621,11 @@
             "value": ""
         },
         {
-            "key": "BUFF_VC_LW_KING_GS",
-            "value": ""
-        },
-        {
-            "key": "BUFF_VC_LW_KING_GSAW",
-            "value": ""
-        },
-        {
-            "key": "BUFF_VC_LW_KING_P",
-            "value": ""
-        },
-        {
-            "key": "BUFF_VC_LW_KING_PAW",
-            "value": ""
-        },
-        {
             "key": "BUFF_TNBR_M_03",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BLMN_M_02",
             "value": ""
         },
         {
@@ -1793,6 +1821,18 @@
             "value": ""
         },
         {
+            "key": "BUFF_LB_LW_RYER_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LB_LW_RIRY_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LB_LW_HWLT",
+            "value": ""
+        },
+        {
             "key": "BUFF_SMN_MABR",
             "value": ""
         },
@@ -1830,6 +1870,10 @@
         },
         {
             "key": "BUFF_SMN_TITN",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SMN_BLMN",
             "value": ""
         },
         {
@@ -2258,6 +2302,26 @@
         },
         {
             "key": "BUFF_MA_LW_RRIR",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_RYER_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_RYER_01_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_RIRY_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_RIRY_01_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_HWLT",
             "value": ""
         },
         {
@@ -2770,6 +2834,46 @@
         },
         {
             "key": "BUFF_VC_LW_TITN_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_KING_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_KING_GSAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_BLMN_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_BLMN_GSAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_GSMAX",
             "value": ""
         },
         {
@@ -3393,6 +3497,94 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_LW_HALL_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_P2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_P2AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_HALL_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_HALL_P2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_HALL_P2AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_HALL_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_KING_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_KING_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_VKTR_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P2AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P3AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_VKTR_P3MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_BLMN_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_BLMN_PAW",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_CACT_P",
             "value": ""
         },
@@ -3570,6 +3762,10 @@
         },
         {
             "key": "BUFF_LW_SWO_005_5_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_SWO_006_1_S",
             "value": ""
         },
         {
@@ -4517,6 +4713,22 @@
             "value": "Attaque normale (Peine de mort)"
         },
         {
+            "key": "BUFF_ACC_LW_RIRY_01_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_ACC_LW_RYER_01_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_ACC_LW_RYER_01_1_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_CLT_LW_HWLT_1_1",
+            "value": ""
+        },
+        {
             "key": "BUFF_FFT_SWO_002_2",
             "value": ""
         },
@@ -4570,6 +4782,14 @@
         },
         {
             "key": "BUFF_LW_KAT_008_5",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_RNG_007_1_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_RNG_007_5_S",
             "value": ""
         },
         {
@@ -5449,6 +5669,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_BTL_PKILLER_MAN_1-100_U",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_MKILLER_MAN_1-100_U",
             "value": ""
         },
@@ -5489,6 +5713,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_BTL_SILENCE_1-100_U",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_POIS_1-100_U",
             "value": ""
         },
@@ -5501,7 +5729,59 @@
             "value": ""
         },
         {
+            "key": "BUFF_BTL_DONMV_1-100_U",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_DONMV_1-100_D",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STUN_1-100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STUN_1-100_D",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_MDFPIERCE_1-100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_FIRE_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_ICE_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_WIND_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_SOIL_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_THUNDER_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_WATER_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_SHINE_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_DARK_1_100_U",
+            "value": ""
+        },
+        {
+            "key": "BUFF_BTL_STR_ELEMALL_1_100_U",
             "value": ""
         },
         {
@@ -8365,6 +8645,138 @@
             "value": "PSY +5 %"
         },
         {
+            "key": "BUFF_BLMN_01",
+            "value": "Taux de précision +3"
+        },
+        {
+            "key": "BUFF_BLMN_02",
+            "value": "Tue-esprits +2 %"
+        },
+        {
+            "key": "BUFF_BLMN_03",
+            "value": "Taux d'esquive +3"
+        },
+        {
+            "key": "BUFF_BLMN_04",
+            "value": "MAGIE +4 %"
+        },
+        {
+            "key": "BUFF_BLMN_05",
+            "value": "MAGIE +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_06",
+            "value": "Magie d'invocation niv. 2"
+        },
+        {
+            "key": "BUFF_BLMN_07",
+            "value": "Magie d'invocation niv. 3"
+        },
+        {
+            "key": "BUFF_BLMN_08",
+            "value": "Taux de précision +4"
+        },
+        {
+            "key": "BUFF_BLMN_09",
+            "value": "Rés att projectiles +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_10",
+            "value": "Rés att projectiles +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_11",
+            "value": "Tue-esprits +2 %"
+        },
+        {
+            "key": "BUFF_BLMN_12",
+            "value": "Taux d'esquive +4"
+        },
+        {
+            "key": "BUFF_BLMN_13",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_BLMN_14",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_BLMN_15",
+            "value": "Rés charme +4 %"
+        },
+        {
+            "key": "BUFF_BLMN_16",
+            "value": "MAGIE +8 %"
+        },
+        {
+            "key": "BUFF_BLMN_17",
+            "value": "Rés ombre +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_18",
+            "value": "Rés ombre +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_19",
+            "value": "Magie d'invocation niv. 4"
+        },
+        {
+            "key": "BUFF_BLMN_20",
+            "value": "Rés att projectiles +5 %"
+        },
+        {
+            "key": "BUFF_BLMN_21",
+            "value": "Rés att projectiles +4 %"
+        },
+        {
+            "key": "BUFF_BLMN_22",
+            "value": "Tue-esprits +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_23",
+            "value": "Tue-esprits +3 %"
+        },
+        {
+            "key": "BUFF_BLMN_24",
+            "value": "Attaque magique +4 %"
+        },
+        {
+            "key": "BUFF_BLMN_25",
+            "value": "Attaque magique +2 %"
+        },
+        {
+            "key": "BUFF_BLMN_26",
+            "value": "Rés charme +6 %"
+        },
+        {
+            "key": "BUFF_BLMN_27",
+            "value": "Rés charme +5 %"
+        },
+        {
+            "key": "BUFF_BLMN_28",
+            "value": "Rés ombre +5 %"
+        },
+        {
+            "key": "BUFF_BLMN_29",
+            "value": "Rés ombre +4 %"
+        },
+        {
+            "key": "BUFF_BLMN_30",
+            "value": "Magie d'invocation niv. 6"
+        },
+        {
+            "key": "BUFF_BLMN_31",
+            "value": "Magie d'invocation niv. 10"
+        },
+        {
+            "key": "BUFF_BLMN_32",
+            "value": "Tue-esprits +5 %"
+        },
+        {
+            "key": "BUFF_BLMN_33",
+            "value": "Rés charme +10 %"
+        },
+        {
             "key": "BUFF_ARMN_01",
             "value": "Attaque projectile +3 %"
         },
@@ -9185,6 +9597,10 @@
             "value": "Rés aux attaques d'unité ↑"
         },
         {
+            "key": "BUFF_ARENA_00010",
+            "value": "Rés att projectiles/MAGIE ↑"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "Att d'ombre ↑"
         },
@@ -9199,6 +9615,14 @@
         {
             "key": "BUFF_GVG_004",
             "value": "Attaque perçante ↑"
+        },
+        {
+            "key": "BUFF_GVG_007",
+            "value": "Attaque magique ↑"
+        },
+        {
+            "key": "BUFF_CLASSMATCH_001",
+            "value": "Coût maximum : 540"
         }
     ]
 }

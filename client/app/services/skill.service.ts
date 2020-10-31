@@ -146,7 +146,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.value < maxReduceValueFromMath) {
+          if (math.type != "MODIFY_ABSORB" && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value
           }
         })
@@ -193,7 +193,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.value < maxReduceValueFromMath) {
+          if (math.type != "MODIFY_ABSORB" && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value
           }
         })
@@ -1025,8 +1025,19 @@ export class SkillService {
 
       let pool = damage.pool && damage.pool !== "HP" ? " " + damage.pool + " " : "";
 
-      html = html + this.upperCaseFirst((damage.effType ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage")
-      + (pool === "" && damage.effType === "ABSORB" ? " HP " : pool)
+      let hasModifyAbsorb = false
+      if (damage.effType && damage.effType == "ABSORB") {
+        if (skill.maths) {
+          skill.maths.forEach(math => {
+            if (math.type == "MODIFY_ABSORB") {
+              hasModifyAbsorb = true
+            }
+          })
+        }
+      }
+
+      html = html + this.upperCaseFirst((damage.effType && !hasModifyAbsorb ? this.upperCaseFirst(damage.effType.toLowerCase()) + " " : "Damage")
+      + (pool === "" && damage.effType === "ABSORB" && !hasModifyAbsorb ? " HP " : pool)
       + this.getDamageValue(skill, damage));
     }
 
@@ -1064,11 +1075,17 @@ export class SkillService {
   formatMaths(skill, html) {
     if (skill.maths) {
       skill.maths.forEach(math => {
-        html += " + Increase modifier by "
+        if (math.type != "UNIT_ACTIONS" && math.type != "MODIFY_ABSORB") {
+          html += " + Increase modifier by "
+        }
 
         switch (math.formula) {
           case "CURVE" :
-            html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + "% "
+            if (math.type != "UNIT_ACTIONS") {
+              html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + "% "
+            }
+            break
+          case "PERCENT" :
             break
           default:
             html += math.value + "% "
@@ -1087,6 +1104,9 @@ export class SkillService {
               case "RATIO" :
                 html += " if the dead units is a multiple of " + math.condition
                 break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
+                break
             }
             break
           case "UNIT_LEVEL" :
@@ -1099,6 +1119,9 @@ export class SkillService {
                 break
               case "RATIO" :
                 html += " if the unit level is a multiple of " + math.condition
+                break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
                 break
             }
             break
@@ -1113,6 +1136,9 @@ export class SkillService {
               case "RATIO" :
                 html += " if the target height is a multiple of " + math.condition
                 break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
+                break
             }
             break
           case "TARGET_LEVEL" :
@@ -1126,6 +1152,9 @@ export class SkillService {
               case "RATIO" :
                 html += " if the target level is a multiple of " + math.condition
                 break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
+                break
             }
             break
           case "COUNT_DAMAGE_RECEIVED" :
@@ -1138,6 +1167,41 @@ export class SkillService {
                 break
               case "RATIO" :
                 html += " if the number of time you received damage is a multiple of " + math.condition
+                break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
+                break
+            }
+            break
+          case "UNIT_ACTIONS" :
+            switch (math.formula) {
+              case "CURVE" :
+                html += " + Increase chance up to " + math.value + "% (-" + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + "% for each action done by the unit)"
+                break
+              case "COUNT" :
+                console.log("Not manage math formula right now...")
+                break
+              case "RATIO" :
+                console.log("Not manage math formula right now...")
+                break
+              case "PERCENT" :
+                console.log("Not manage math formula right now...")
+                break
+            }
+            break
+          case "MODIFY_ABSORB" :
+            switch (math.formula) {
+              case "CURVE" :
+                console.log("Not manage math formula right now...")
+                break
+              case "COUNT" :
+                console.log("Not manage math formula right now...")
+                break
+              case "RATIO" :
+                console.log("Not manage math formula right now...")
+                break
+              case "PERCENT" :
+                html += " + Absorb " + this.getPositiveValue(100 + math.value, true) + "% of the damage done"
                 break
             }
             break

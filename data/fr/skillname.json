@@ -2602,7 +2602,7 @@
         },
         {
             "key": "SK_FFT_DELT_P_2",
-            "value": "PA acquis"
+            "value": "PA acquis ↑"
         },
         {
             "key": "SK_FFT_MSTD_ATK",
@@ -2665,12 +2665,68 @@
             "value": "Hauteur 2 Sidéral"
         },
         {
+            "key": "SK_LW_CAL_FIRE_M_2",
+            "value": "Feu X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_B",
+            "value": "Feu X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2",
+            "value": "Glace X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_B",
+            "value": "Glace X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2",
+            "value": "Vent X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_B",
+            "value": "Vent X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2",
+            "value": "Terre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_B",
+            "value": "Terre X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2",
+            "value": "Foudre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_B",
+            "value": "Foudre X niv. 3"
+        },
+        {
             "key": "SK_LW_CAL_WATER_M_2",
             "value": "Eau X niv. 4"
         },
         {
             "key": "SK_LW_CAL_WATER_M_2_B",
             "value": "Eau X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2",
+            "value": "Bannissement X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_B",
+            "value": "Bannissement X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2",
+            "value": "Ombre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_B",
+            "value": "Ombre X niv. 3"
         },
         {
             "key": "SK_LW_CAL_M_3",
@@ -2681,8 +2737,36 @@
             "value": "Soin + [H. 2]"
         },
         {
+            "key": "SK_LW_CAL_FIRE_S_1_INIT",
+            "value": "Feu d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_1_INIT",
+            "value": "Glace d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_1_INIT",
+            "value": "Vent d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_1_INIT",
+            "value": "Terre d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_1_INIT",
+            "value": "Foudre d'altitude"
+        },
+        {
             "key": "SK_LW_CAL_WATER_S_1_INIT",
             "value": "Eau d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_1_INIT",
+            "value": "Bannissement d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_1_INIT",
+            "value": "Ombre d'altitude"
         },
         {
             "key": "SK_LW_CAL_S_2_INIT",
@@ -2697,12 +2781,68 @@
             "value": "Hauteur 2 Incapacité"
         },
         {
+            "key": "SK_LW_CAL_FIRE_S_4",
+            "value": "Feu + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_S_4_B",
+            "value": "Feu + niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_4",
+            "value": "Glace + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_4_B",
+            "value": "Glace + niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_4",
+            "value": "Vent + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_4_B",
+            "value": "Vent + niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_4",
+            "value": "Terre + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_4_B",
+            "value": "Terre + niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_4",
+            "value": "Foudre + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_4_B",
+            "value": "Foudre + niv. 3"
+        },
+        {
             "key": "SK_LW_CAL_WATER_S_4",
             "value": "Eau + niv.4"
         },
         {
             "key": "SK_LW_CAL_WATER_S_4_B",
             "value": "Eau + niv.3"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_4",
+            "value": "Bannissement + niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_4_B",
+            "value": "Bannissement + niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_4",
+            "value": "Ombre + niv.4"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_4_B",
+            "value": "Ombre + niv.3"
         },
         {
             "key": "SK_LW_CAL_S_5",
@@ -2719,6 +2859,122 @@
         {
             "key": "SK_LW_CAL_P_2",
             "value": "Niv. 4 à niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_SUB",
+            "value": "Hauteur 3 Sidéral"
+        },
+        {
+            "key": "SK_LW_CAL_M_1_B_SUB",
+            "value": "Hauteur 2 Sidéral"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_SUB",
+            "value": "Feu X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_M_2_B_SUB",
+            "value": "Feu X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_SUB",
+            "value": "Glace X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_M_2_B_SUB",
+            "value": "Glace X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_SUB",
+            "value": "Vent X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_M_2_B_SUB",
+            "value": "Vent X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_SUB",
+            "value": "Terre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_M_2_B_SUB",
+            "value": "Terre X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_SUB",
+            "value": "Foudre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_M_2_B_SUB",
+            "value": "Foudre X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_SUB",
+            "value": "Eau X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_M_2_B_SUB",
+            "value": "Eau X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_SUB",
+            "value": "Bannissement X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_M_2_B_SUB",
+            "value": "Bannissement X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_SUB",
+            "value": "Ombre X niv. 4"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_M_2_B_SUB",
+            "value": "Ombre X niv. 3"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_SUB",
+            "value": "Soin + [H. 3]"
+        },
+        {
+            "key": "SK_LW_CAL_M_3_B_SUB",
+            "value": "Soin + [H. 2]"
+        },
+        {
+            "key": "SK_LW_CAL_FIRE_S_1",
+            "value": "Feu d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_ICE_S_1",
+            "value": "Glace d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_WIND_S_1",
+            "value": "Vent d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_SOIL_S_1",
+            "value": "Terre d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_THUN_S_1",
+            "value": "Foudre d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_WATER_S_1",
+            "value": "Eau d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_SHIN_S_1",
+            "value": "Bannissement d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_DARK_S_1",
+            "value": "Ombre d'altitude"
+        },
+        {
+            "key": "SK_LW_CAL_S_2",
+            "value": "Soin d'altitude"
         },
         {
             "key": "SK_LW_STRN_ATK",
@@ -2849,6 +3105,66 @@
             "value": "Indifférence sereine"
         },
         {
+            "key": "SK_LW_MKN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_M_1",
+            "value": "Lame Vent X"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_M_1",
+            "value": "Lame Terre X"
+        },
+        {
+            "key": "SK_LW_MKN_M_2",
+            "value": "Tranchant dangereux"
+        },
+        {
+            "key": "SK_LW_MKN_M_3",
+            "value": "Lame volante"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_S_1_INIT",
+            "value": "Lame Vent"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_S_1_INIT",
+            "value": "Lame Terre"
+        },
+        {
+            "key": "SK_LW_MKN_S_3_INIT",
+            "value": "Saignée rituelle"
+        },
+        {
+            "key": "SK_LW_MKN_S_2",
+            "value": "Sort dangereux"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_S_4",
+            "value": "Rune d'affaiblissement : vent"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_S_4",
+            "value": "Rune d'affaiblissement : terre"
+        },
+        {
+            "key": "SK_LW_MKN_R_1",
+            "value": "Conversion magique"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_P_1",
+            "value": "Rune de renforcement : vent"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_P_1",
+            "value": "Rune de renforcement : terre"
+        },
+        {
+            "key": "SK_LW_MKN_P_2",
+            "value": "Esprit affûté"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -2862,7 +3178,7 @@
         },
         {
             "key": "SK_IFRT_M_03_01_100_U",
-            "value": ""
+            "value": "Concentration thermique"
         },
         {
             "key": "SK_LW_TU_WAR_M_4",
@@ -3218,6 +3534,14 @@
         },
         {
             "key": "SK_GLSP_R_01",
+            "value": "Carapace de tortue"
+        },
+        {
+            "key": "SK_GLSP_M_02_TOW",
+            "value": "Aplatir"
+        },
+        {
+            "key": "SK_GLSP_R_01_TOW",
             "value": "Carapace de tortue"
         },
         {
@@ -3745,6 +4069,22 @@
             "value": "Colère de Gaïa"
         },
         {
+            "key": "SK_BLMN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_BLMN_M_01",
+            "value": "Météore lunaire"
+        },
+        {
+            "key": "SK_BLMN_M_02",
+            "value": "Mépris de la lune mortelle"
+        },
+        {
+            "key": "SK_BLMN_M_03",
+            "value": "Descente de la lune de sang"
+        },
+        {
             "key": "SK_BHMT_ATK_02",
             "value": "Attaque normale"
         },
@@ -4017,6 +4357,18 @@
             "value": "Ciel azur"
         },
         {
+            "key": "SK_LB_LW_RYER_01",
+            "value": "Spiritrouille"
+        },
+        {
+            "key": "SK_LB_LW_RIRY_01",
+            "value": "Terreur malsaine"
+        },
+        {
+            "key": "SK_LB_LW_HWLT",
+            "value": "Stella Artis"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -4111,6 +4463,10 @@
         {
             "key": "SK_SMN_TITN",
             "value": "Colère de Gaïa"
+        },
+        {
+            "key": "SK_SMN_BLMN",
+            "value": "Mépris de la lune mortelle"
         },
         {
             "key": "SK_US_POTION",
@@ -4533,6 +4889,18 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_RYER_01",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_RIRY_01",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_HWLT",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -4761,6 +5129,14 @@
             "value": "Éclair pourpre (Att de glace ↑)"
         },
         {
+            "key": "SK_LW_RNG_007_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_007_5",
+            "value": ""
+        },
+        {
             "key": "SK_ACC_LW_MONT_1_1",
             "value": "Cri de ralliement"
         },
@@ -4899,6 +5275,18 @@
         {
             "key": "SK_BOW_LW_RRIR_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_RIRY_01_1_1",
+            "value": "Zombification"
+        },
+        {
+            "key": "SK_ACC_LW_RYER_01_1_1",
+            "value": "Énergie de la pleine lune"
+        },
+        {
+            "key": "SK_CLT_LW_HWLT_1_1",
+            "value": "Rune de sang"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -5697,11 +6085,147 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_VKTR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VKTR_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VKTR_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BLMN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BLMN_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TITN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_TITN_P2MAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_KING_P",
             "value": ""
         },
         {
             "key": "SK_VC_LW_KING_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VKTR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VKTR_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_VKTR_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P3",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P3AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_VKTR_P3MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HALL_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HALL_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HALL_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BLMN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_BLMN_PAW",
             "value": ""
         },
         {
@@ -6293,30 +6817,6 @@
             "value": ""
         },
         {
-            "key": "SK_VC_LW_TITN_P",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_TITN_PAW",
-            "value": ""
-        },
-        {
-            "key": "SK_VC_LW_TITN_PMAX",
-            "value": ""
-        },
-        {
-            "key": "SK_GL_VC_LW_TITN_P2",
-            "value": ""
-        },
-        {
-            "key": "SK_GL_VC_LW_TITN_P2AW",
-            "value": ""
-        },
-        {
-            "key": "SK_GL_VC_LW_TITN_P2MAX",
-            "value": ""
-        },
-        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "PV max ↑ 100 - 99 900"
         },
@@ -6786,7 +7286,7 @@
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_U_KISO",
-            "value": "RésM ↑ 1 - 80 (base)"
+            "value": "Rés magique ↑ 1 - 80 (base)"
         },
         {
             "key": "SK_BTL_RES_SLASH_1_80_U_KISO",
@@ -6810,7 +7310,7 @@
         },
         {
             "key": "SK_BTL_RES_MAGIC_1_80_D_KISO",
-            "value": "RésM ↓ 1 - 80 (base)"
+            "value": "Rés magique ↓ 1 - 80 (base)"
         },
         {
             "key": "SK_BTL_RES_SLASH_1_80_D_KISO",
@@ -7037,6 +7537,10 @@
             "value": "Rés aux attaques de zone ↓ 1 - 100"
         },
         {
+            "key": "SK_BTL_PKILLER_MAN_1-100_U",
+            "value": "Anthropophage dès qu'une attaque physique est lancée ↑ 1-100"
+        },
+        {
             "key": "SK_BTL_KILLER_MAN_1-100_U",
             "value": "Anthropophage ↑ 1 - 100"
         },
@@ -7085,6 +7589,10 @@
             "value": "Chance d'altération d'état [Poison] ↑ 1 - 100"
         },
         {
+            "key": "SK_BTL_SILENCE_1-100_U",
+            "value": "Chance d'altération d'état [Silence] ↑ 1 - 100"
+        },
+        {
             "key": "SK_BTL_TOAD_1-100_U",
             "value": "Chance d'altération d'état [Crapaud] ↑ 1 - 100"
         },
@@ -7093,12 +7601,36 @@
             "value": "Chance d'altération d'état [Pétrification] ↑ 1 - 100"
         },
         {
+            "key": "SK_BTL_DONMV_1-100_U",
+            "value": "Chance d'altération d'état [Immobilisation] ↑ 1 - 100"
+        },
+        {
             "key": "SK_BTL_DONMV_1-100_D",
             "value": "Chance [Immobilisation] ↓ 1 - 100"
         },
         {
+            "key": "SK_BTL_STUN_1-100_U",
+            "value": "Chance d'altération d'état [Étourdissement] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_STUN_1-100_D",
+            "value": "Chance d'altération d'état [Étourdissement] ↓ 1 - 100"
+        },
+        {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
             "value": "Taux de perforation de la DEF ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_DEFPIERCE_1-100_U_KISO",
+            "value": "Perforation de la DEF ↑ 1-100 (Base)"
+        },
+        {
+            "key": "SK_BTL_MDFPIERCE_1-100_U",
+            "value": "Perforation de la PSY ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_MDFPIERCE_1-100_U_KISO",
+            "value": "Perforation de la PSY ↑ 1-100 (Base)"
         },
         {
             "key": "SK_BTL_INV_DEATH",
@@ -7111,6 +7643,42 @@
         {
             "key": "SK_BTL_INV_POISON",
             "value": "Annule poison"
+        },
+        {
+            "key": "SK_BTL_STR_FIRE_1-100_U",
+            "value": "Attaques de feu ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_ICE_1-100_U",
+            "value": "Attaques de glace ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_WIND_1-100_U",
+            "value": "Attaques de vent ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_SOIL_1-100_U",
+            "value": "Attaques de terre ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_THUNDER_1-100_U",
+            "value": "Attaques de foudre ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_WATER_1-100_U",
+            "value": "Attaques d'eau ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_SHINE_1-100_U",
+            "value": "Attaques de lumière ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_DARK_1-100_U",
+            "value": "Attaques d'ombre ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_STR_ELEMALL_1-100_U",
+            "value": "Toutes attaques élémentaires ↑ 1-100"
         },
         {
             "key": "SK_BTL_JOB_THI_1_15_U",
@@ -7227,6 +7795,10 @@
         {
             "key": "SK_GMK_ATK_KATA_2",
             "value": "Averse de pierres"
+        },
+        {
+            "key": "SK_GMK_ATK_KENZAN",
+            "value": "Zone dévastée"
         },
         {
             "key": "SK_LW_WAR_P_2",

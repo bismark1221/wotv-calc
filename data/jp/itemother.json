@@ -293,6 +293,26 @@
             "value": "通常ショップ"
         },
         {
+            "key": "IT_JB_GLOVE_01",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_JB_GLOVE_02",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_JB_GLOVE_03",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_JB_GLOVE_04",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_JB_GLOVE_05",
+            "value": "通常ショップ"
+        },
+        {
             "key": "IT_JB_MM_COMMON_2",
             "value": "ソウルメダル【R】交換所"
         },
@@ -850,6 +870,38 @@
         },
         {
             "key": "IT_JB_MM_BEA_5",
+            "value": "ソウルメダル【UR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_PSI_2",
+            "value": "ソウルメダル【R】交換所"
+        },
+        {
+            "key": "IT_JB_MM_PSI_3",
+            "value": "ソウルメダル【SR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_PSI_4",
+            "value": "ソウルメダル【SSR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_PSI_5",
+            "value": "ソウルメダル【UR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_MSW_2",
+            "value": "ソウルメダル【R】交換所"
+        },
+        {
+            "key": "IT_JB_MM_MSW_3",
+            "value": "ソウルメダル【SR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_MSW_4",
+            "value": "ソウルメダル【SSR】交換所"
+        },
+        {
+            "key": "IT_JB_MM_MSW_5",
             "value": "ソウルメダル【UR】交換所"
         },
         {
@@ -1518,7 +1570,7 @@
         },
         {
             "key": "IT_PI_LW_LUCA",
-            "value": "通常ショップ/気まぐれ屋/探検チョコボ/ギルドメダル交換所"
+            "value": "通常ショップ/気まぐれ屋/探検チョコボ"
         },
         {
             "key": "IT_PI_LW_ADLD",
@@ -1534,7 +1586,7 @@
         },
         {
             "key": "IT_PI_LW_RAIN",
-            "value": "通常ショップ/気まぐれ屋/探検チョコボ/ギルドメダル交換所/ソウルメダル【UR】交換所"
+            "value": "通常ショップ/気まぐれ屋/探検チョコボ/ソウルメダル【UR】交換所"
         },
         {
             "key": "IT_PI_LW_QILF",
@@ -1623,6 +1675,14 @@
         {
             "key": "IT_PI_LW_CRIS",
             "value": "クレイス獲得クエストのミッション"
+        },
+        {
+            "key": "IT_PI_LW_GABL",
+            "value": "通常ショップ/気まぐれ屋/探検チョコボ"
+        },
+        {
+            "key": "IT_PI_LW_ELSR",
+            "value": "通常ショップ/気まぐれ屋/探検チョコボ"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -1849,6 +1909,10 @@
             "value": "強敵の間テュポーン戦"
         },
         {
+            "key": "IT_SB_AW_MRLT_R2",
+            "value": "強敵の間マリリス戦"
+        },
+        {
             "key": "IT_AF_EXP_01",
             "value": "通常ショップ/気まぐれ屋/探検チョコボ"
         },
@@ -1906,6 +1970,10 @@
         },
         {
             "key": "IT_AF_AW_AXE",
+            "value": "アリーナメダル交換所/PVPメダル交換所"
+        },
+        {
+            "key": "IT_AF_AW_GLOVE",
             "value": "アリーナメダル交換所/PVPメダル交換所"
         },
         {
@@ -2114,6 +2182,10 @@
         },
         {
             "key": "IT_AF_LW_BSW_002",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_AF_LW_BSW_003",
             "value": "通常ショップ"
         },
         {
@@ -2329,6 +2401,18 @@
             "value": "通常ショップ"
         },
         {
+            "key": "IT_AF_LW_GLO_001",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_AF_LW_GLO_002",
+            "value": "通常ショップ"
+        },
+        {
+            "key": "IT_AF_LW_GLO_003",
+            "value": "通常ショップ"
+        },
+        {
             "key": "IT_AF_LW_HAT_005",
             "value": "通常ショップ"
         },
@@ -2534,7 +2618,11 @@
         },
         {
             "key": "IT_VPI_LW_TYPN",
-            "value": "通常ショップ"
+            "value": "通常ショップ/ビジョンメダル【UR】交換所"
+        },
+        {
+            "key": "IT_VPI_LW_RAMD",
+            "value": "通常ショップ/ビジョンメダル【UR】交換所"
         },
         {
             "key": "IT_VPI_LW_IGNT",
@@ -2638,7 +2726,15 @@
         },
         {
             "key": "IT_VPI_LW_APPLE",
-            "value": "通常ショップ"
+            "value": "通常ショップ/ビジョンメダル【SSR】交換所"
+        },
+        {
+            "key": "IT_VPI_LW_OOOO",
+            "value": "通常ショップ/ビジョンメダル【SSR】交換所"
+        },
+        {
+            "key": "IT_VPI_LW_MRLT",
+            "value": "通常ショップ/ビジョンメダル【SSR】交換所"
         },
         {
             "key": "IT_VPI_LW_CACT",

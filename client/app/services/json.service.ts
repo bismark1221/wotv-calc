@@ -422,16 +422,19 @@ export class JsonService {
 
   strengthType = {
     1: "DEAD_UNITS",
+    50: "UNIT_ACTIONS",
     51: "COUNT_DAMAGE_RECEIVED",
     53: "UNIT_LEVEL",
     72: "HEIGHT",
-    73: "TARGET_LEVEL"
+    73: "TARGET_LEVEL",
+    99: "MODIFY_ABSORB"
   }
 
   strengthFormulaCondition = {
     0: "COUNT",
     1: "CURVE",
-    22: "RATIO"
+    22: "RATIO",
+    50: "PERCENT"
   }
 
   damageEffectType = [
@@ -666,7 +669,8 @@ export class JsonService {
     "HAT",
     "HELM",
     "CLOTH",
-    "ACC"
+    "ACC",
+    "GLOVE"
   ]
 
   jobStats = [
@@ -1865,7 +1869,7 @@ export class JsonService {
       dataSkill.strength.forEach(strength => {
         if (!this.strengthType[strength.type]) {
           console.log("10 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH TYPE : " + strength.type)
-        } if (!this.strengthFormulaCondition[strength.formula]) {
+        } else if (!this.strengthFormulaCondition[strength.formula]) {
           console.log("11 @@@@@ " + unit.names.en + " -- " + skill.names.en + " -- STRENGTH FORMULA : " + strength.formula)
         } else {
           let math = {

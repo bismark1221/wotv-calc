@@ -441,6 +441,26 @@
             "value": "斧のスピネル"
         },
         {
+            "key": "IT_JB_GLOVE_01",
+            "value": "グローブのジェダイト"
+        },
+        {
+            "key": "IT_JB_GLOVE_02",
+            "value": "グローブのアズライト"
+        },
+        {
+            "key": "IT_JB_GLOVE_03",
+            "value": "グローブのチャロアイト"
+        },
+        {
+            "key": "IT_JB_GLOVE_04",
+            "value": "グローブのシトリン"
+        },
+        {
+            "key": "IT_JB_GLOVE_05",
+            "value": "グローブのスピネル"
+        },
+        {
             "key": "IT_JB_MM_COMMON",
             "value": "名もなき英雄の記憶・翠"
         },
@@ -1381,6 +1401,46 @@
             "value": "格闘士の記憶・緋"
         },
         {
+            "key": "IT_JB_MM_PSI",
+            "value": "操気士の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_PSI_2",
+            "value": "操気士の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_PSI_3",
+            "value": "操気士の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_PSI_4",
+            "value": "操気士の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_PSI_5",
+            "value": "操気士の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_MSW",
+            "value": "ナイトブレードの記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_MSW_2",
+            "value": "ナイトブレードの記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_MSW_3",
+            "value": "ナイトブレードの記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_MSW_4",
+            "value": "ナイトブレードの記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_MSW_5",
+            "value": "ナイトブレードの記憶・緋"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "火の輝石・翠"
         },
@@ -2237,6 +2297,14 @@
             "value": "クレイスの欠片"
         },
         {
+            "key": "IT_PI_LW_GABL",
+            "value": "ガーブルの欠片"
+        },
+        {
+            "key": "IT_PI_LW_ELSR",
+            "value": "エルシレールの欠片"
+        },
+        {
             "key": "IT_SB_EXP_FIRE_01",
             "value": "赤の魔石（小）"
         },
@@ -2597,6 +2665,14 @@
             "value": "テュポーンの獣醒石（★3）"
         },
         {
+            "key": "IT_SB_AW_MRLT_R2",
+            "value": "マリリスの獣醒石（★2）"
+        },
+        {
+            "key": "IT_SB_AW_MRLT_R3",
+            "value": "マリリスの獣醒石（★3）"
+        },
+        {
             "key": "IT_TICKET_STORY",
             "value": "ストーリースキップチケット"
         },
@@ -2691,6 +2767,10 @@
         {
             "key": "IT_AF_AW_AXE",
             "value": "精錬の秘伝書（斧）"
+        },
+        {
+            "key": "IT_AF_AW_GLOVE",
+            "value": "精錬の秘伝書（グローブ）"
         },
         {
             "key": "IT_AF_AW_ARMOR",
@@ -3153,6 +3233,18 @@
             "value": "ゴールドアックスのクラフトレシピ"
         },
         {
+            "key": "IT_AF_LW_GLO_001",
+            "value": "パワーグローブのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_GLO_002",
+            "value": "バトルグローブのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_GLO_003",
+            "value": "ダークグローブのクラフトレシピ"
+        },
+        {
             "key": "IT_AF_FFT_SWO_001",
             "value": "ナグラロクのクラフトレシピ"
         },
@@ -3219,6 +3311,10 @@
         {
             "key": "IT_AF_LW_ARW_001",
             "value": "守りの腕輪のクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_LW_CLT_015",
+            "value": "ガルミアカレアのクラフトレシピ"
         },
         {
             "key": "IT_AF_SUP_HP",
@@ -3347,6 +3443,10 @@
         {
             "key": "IT_EC_RAID_10",
             "value": "【10月】レイドメダル"
+        },
+        {
+            "key": "IT_EC_RAID_11",
+            "value": "【11月】レイドメダル"
         },
         {
             "key": "IT_EC_RAID_FF14",
@@ -3497,6 +3597,14 @@
             "value": "【10月】召喚メダルB"
         },
         {
+            "key": "IT_EC_SUMMON_11_02_A",
+            "value": "【11月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_HALL_01",
+            "value": "【2020ハロウィン】召喚メダル"
+        },
+        {
             "key": "IT_EC_VISION",
             "value": "ビジョンメダル"
         },
@@ -3551,6 +3659,10 @@
         {
             "key": "IT_EC_EV08_1",
             "value": "儚きものメダル"
+        },
+        {
+            "key": "IT_EC_EV09_1",
+            "value": "扇動せし者メダル"
         },
         {
             "key": "IT_EC_FF14_1",
@@ -3733,8 +3845,40 @@
             "value": "【12章公開】SSR以上確定ビジョンカード召喚券"
         },
         {
+            "key": "IT_US_G_V_SSR_UR_04",
+            "value": "【1st記念前夜祭】SSR以上確定ビジョンカード召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_01",
+            "value": "【1日目】1周年記念前夜祭召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_02",
+            "value": "【2日目】1周年記念前夜祭召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_03",
+            "value": "【3日目】1周年記念前夜祭召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_04",
+            "value": "【4日目】1周年記念前夜祭召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_05",
+            "value": "【5日目】1周年記念前夜祭召喚券"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_06",
+            "value": "【6日目】1周年記念前夜祭召喚券"
+        },
+        {
             "key": "IT_US_G_PI_UR_U_01",
             "value": "【1200万DL】URユニット欠片×200召喚券"
+        },
+        {
+            "key": "IT_US_G_PI_U_FFBE_01",
+            "value": "【FFBE5周年】UR FFBEユニット欠片召喚券"
         },
         {
             "key": "IT_US_SE_AW-ITEM_01",
@@ -3835,6 +3979,10 @@
         {
             "key": "IT_US_SE_SB_EXP_07",
             "value": "属性の魔石（大）×150選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_08",
+            "value": "属性の魔石（極）×50選択召喚券"
         },
         {
             "key": "IT_US_G_U_UR_01",
@@ -4029,6 +4177,10 @@
             "value": "【12章公開】おすすめVカード欠片×75選択召喚券"
         },
         {
+            "key": "IT_US_SE_VPI_13",
+            "value": "【1st記念前夜祭】URVカード欠片×50選択召喚券"
+        },
+        {
             "key": "IT_US_SE_PI_01",
             "value": "【GW記念】URユニット欠片×40選択召喚券"
         },
@@ -4095,6 +4247,10 @@
         {
             "key": "IT_US_SE_PI_17",
             "value": "【ハロウィンCP】SSRユニット欠片×40選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_18",
+            "value": "【1st記念前夜祭】URユニット欠片×40選択召喚券"
         },
         {
             "key": "IT_US_SE_R_UR_U_03",
@@ -4457,6 +4613,14 @@
             "value": "暴嵐災禍　テュポーンの欠片"
         },
         {
+            "key": "IT_VPI_LW_HALL",
+            "value": "悪霊を祓う者の欠片"
+        },
+        {
+            "key": "IT_VPI_LW_RAMD",
+            "value": "幻視する星読みの欠片"
+        },
+        {
             "key": "IT_VPI_LW_IGNT",
             "value": "鋼の魔人　鉄巨人の欠片"
         },
@@ -4591,6 +4755,14 @@
         {
             "key": "IT_VPI_LW_APPLE",
             "value": "思い出のリンゴの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_OOOO",
+            "value": "剣豪の嗜みの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_MRLT",
+            "value": "殺戮炎舞　マリリスの欠片"
         },
         {
             "key": "IT_VPI_LW_CACT",
@@ -4787,6 +4959,10 @@
         {
             "key": "IT_STAMP_2010",
             "value": "10月印章"
+        },
+        {
+            "key": "IT_STAMP_2011",
+            "value": "11月印章"
         }
     ]
 }

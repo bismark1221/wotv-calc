@@ -74,6 +74,7 @@ export class UnitComponent implements OnInit {
   private formatUnit() {
     if (this.unit) {
       let lang = this.translateService.currentLang
+      this.jobs = []
       this.unit.name = this.nameService.getName(this.unit)
 
       this.unit.skills = []

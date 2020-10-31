@@ -29,7 +29,8 @@ export class EquipmentService {
     "SPEAR",
     "GUN",
     "MACE",
-    "FIST"
+    "FIST",
+    "GLOVE"
   ]
 
   private armorTypes = [
@@ -59,7 +60,8 @@ export class EquipmentService {
     "HAT": "Hat",
     "HELM": "Helm",
     "CLOTH": "Cloth",
-    "ACC": "Accessory"
+    "ACC": "Accessory",
+    "GLOVE": "Glove"
   }
 
   private equipmentsAcquisition = {
@@ -71,6 +73,7 @@ export class EquipmentService {
     "AF_LW_ACC_002": "RAID",
     "AF_LW_CLK_001": "RAID",
     "AF_LW_ARW_001": "RAID",
+    "AF_LW_CLT_015": "RAID",
 
     "AF_LW_BSW_011": "TOWER",
     "AF_FFT_SWO_002": "TOWER",
@@ -117,6 +120,7 @@ export class EquipmentService {
     "AF_LW_BOW_004": "RECURRENT",
     "AF_LW_FIS_004": "RECURRENT",
     "AF_LW_ROD_019": "RECURRENT",
+    "AF_LW_GLO_003": "RECURRENT",
 
     "AF_LW_SWO_000": "GENERAL_SHOP",
     "AF_LW_BSW_000": "GENERAL_SHOP",
@@ -136,6 +140,9 @@ export class EquipmentService {
     "AF_LW_HAT_001": "GENERAL_SHOP",
     "AF_LW_CLT_001": "GENERAL_SHOP",
     "AF_LW_RNG_001": "GENERAL_SHOP",
+    "AF_LW_GLO_000": "GENERAL_SHOP",
+    "AF_LW_GLO_001": "GENERAL_SHOP",
+    "AF_LW_GLO_002": "GENERAL_SHOP",
 
     "AF_LW_SWO_007": "PACK"
   }
