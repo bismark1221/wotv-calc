@@ -23,6 +23,16 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "14/10",
+        items: [
+          {type: "unit", dataId: "UN_LW_P_HWLT"},
+          {type: "unit", dataId: "UN_LW_P_SCAL"},
+          {type: "unit", dataId: "UN_LW_P_MRAL"},
+          {type: "unit", dataId: "UN_LW_P_CHEL"},
+          {type: "equipment", dataId: "AF_LW_SWO_023"}
+        ]
+      },
+      {
         date: "28/10",
         items: [
           {type: "card", dataId: "VC_LW_VKTR"},
@@ -30,7 +40,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_BLMN"},
           {type: "esper", dataId: "UN_LW_S_BLMN"},
           {type: "equipment", dataId: "AF_LW_RNG_007"},
-          {type: "unit", dataId: "UN_LW_P_HWLT"},
         ]
       },
       {
@@ -38,15 +47,6 @@ export class HomeComponent {
         items: [
           {type: "unit", dataId: "UN_LW_P_RYER_01"},
           {type: "unit", dataId: "UN_LW_P_RIRY_01"},
-        ]
-      },
-      {
-        date: "14/10",
-        items: [
-          {type: "esper", dataId: "UN_LW_S_TITN"},
-          {type: "card", dataId: "VC_LW_TITN"},
-          {type: "card", dataId: "VC_LW_KING"},
-          {type: "equipment", dataId: "AF_LW_KAT_008"}
         ]
       }
     ],
@@ -70,6 +70,7 @@ export class HomeComponent {
         items: [
           {type: "card", dataId: "VC_LW_HALL"},
           {type: "card", dataId: "VC_LW_MRLT"},
+          {type: "esper", dataId: "UN_LW_S_MRLT"}
         ]
       },
       {
@@ -77,15 +78,6 @@ export class HomeComponent {
         items: [
           {type: "unit", dataId: "UN_LW_P_RIRY_01"},
           {type: "unit", dataId: "UN_LW_P_CRIS"}
-        ]
-      },
-      {
-        date: "09/10",
-        items: [
-          {type: "card", dataId: "VC_LW_TYPN"},
-          {type: "esper", dataId: "UN_LW_S_TYPN"},
-          {type: "card", dataId: "VC_LW_APPLE"},
-          {type: "equipment", dataId: "AF_LW_ARW_001"}
         ]
       }
     ]

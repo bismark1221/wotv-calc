@@ -2820,9 +2820,9 @@
   },
   "AF_LOT_LW_SWO_023": {
     "names": {
-      "en": "ローエングリン"
+      "en": "ローエングリン - Lohengrin"
     },
-    "slug": "roengurin",
+    "slug": "lohengrin",
     "stats": {
       "HP": {
         "min": 4,
@@ -3123,7 +3123,9 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop"
+      }
     }
   },
   "AF_SWO_FF14_TNCT": {
@@ -20071,6 +20073,7 @@
         "max": 3
       }
     },
+    "type": "GLOVE",
     "dataId": "AF_LW_GLO_000",
     "grows": {
       "ARTIFACT_50": {
@@ -20126,6 +20129,7 @@
         "max": 20
       }
     },
+    "type": "GLOVE",
     "dataId": "AF_LW_GLO_001",
     "grows": {
       "AFGROW_ASS_50": {
@@ -20407,6 +20411,7 @@
         "max": 18
       }
     },
+    "type": "GLOVE",
     "dataId": "AF_LW_GLO_002",
     "grows": {
       "AFGROW_ASS_50": {
@@ -20700,6 +20705,7 @@
         "max": 12
       }
     },
+    "type": "GLOVE",
     "dataId": "AF_LW_GLO_003",
     "grows": {
       "AFGROW_MAG_50": {
@@ -43958,9 +43964,9 @@
   },
   "AF_ACC_LW_SCAL_1": {
     "names": {
-      "en": "雷鳴の籠手"
+      "en": "雷鳴の籠手 - Gauntlet of Thunder"
     },
-    "slug": "raimei-no-kote",
+    "slug": "gauntlet-of-thunder",
     "stats": {
       "HP": {
         "min": 250,
@@ -44104,9 +44110,9 @@
   },
   "AF_SWO_LW_MRAL_1": {
     "names": {
-      "en": "飛舞蜘蛛"
+      "en": "飛舞蜘蛛 - Prancing Spider"
     },
-    "slug": "hi-mai-gumo",
+    "slug": "prancing-spider",
     "stats": {
       "HP": {
         "min": 62,
@@ -44437,9 +44443,9 @@
   },
   "AF_ROD_LW_CHEL_1": {
     "names": {
-      "en": "イングズステッキ"
+      "en": "イングズステッキ - Inguz Staff"
     },
-    "slug": "in-guzu-sutekki",
+    "slug": "inguz-staff",
     "stats": {
       "HP": {
         "min": 102,
@@ -48581,9 +48587,9 @@
   },
   "AF_ROD_LW_SCAL_2": {
     "names": {
-      "en": "妖蜂杖"
+      "en": "妖蜂杖 - Feywasp Staff"
     },
-    "slug": "you-hachi-tsue",
+    "slug": "feywasp-staff",
     "stats": {
       "HP": {
         "min": 15,
@@ -49446,6 +49452,7 @@
         "max": 9
       }
     },
+    "type": "GLOVE",
     "dataId": "AF_GLO_LW_GABL_2",
     "grows": {
       "ARTIFACT_50": {

@@ -3506,6 +3506,24 @@
       "fr": "Fragments d'unité de Howlet"
     }
   },
+  "IT_PI_LW_SCAL": {
+    "dataId": "IT_PI_LW_SCAL",
+    "names": {
+      "en": "Skahal Unit Shard"
+    }
+  },
+  "IT_PI_LW_MRAL": {
+    "dataId": "IT_PI_LW_MRAL",
+    "names": {
+      "en": "Mariale Unit Shard"
+    }
+  },
+  "IT_PI_LW_CHEL": {
+    "dataId": "IT_PI_LW_CHEL",
+    "names": {
+      "en": "Chel Unit Shard"
+    }
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -4534,6 +4552,13 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_SWO_023": {
+    "dataId": "IT_AF_LW_SWO_023",
+    "names": {
+      "en": "Lohengrin Crafting Recipe"
+    },
+    "recipe": true
+  },
   "IT_AF_LW_BSW_001": {
     "dataId": "IT_AF_LW_BSW_001",
     "names": {
@@ -5282,13 +5307,6 @@
       "fr": "Médaille d'invocation"
     }
   },
-  "IT_EC_SUMMON_11_A": {
-    "dataId": "IT_EC_SUMMON_11_A",
-    "names": {
-      "en": "November Summon Medal A",
-      "fr": "Médaille d'invocation A [Novembre]"
-    }
-  },
   "IT_EC_SUMMON_12_A": {
     "dataId": "IT_EC_SUMMON_12_A",
     "names": {
@@ -5485,6 +5503,13 @@
       "fr": "Médaille d'invocation B (Octobre)"
     }
   },
+  "IT_EC_SUMMON_11_A": {
+    "dataId": "IT_EC_SUMMON_11_A",
+    "names": {
+      "en": "November Summon Medal A",
+      "fr": "Médaille d'invocation A [Novembre]"
+    }
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -5581,6 +5606,12 @@
     "names": {
       "en": "Gouga and Saiga: Part I Medal",
       "fr": "Médaille de Gouga et Saiga : Partie I"
+    }
+  },
+  "IT_EC_EV06_1": {
+    "dataId": "IT_EC_EV06_1",
+    "names": {
+      "en": "A Damsel in Distress Medal"
     }
   },
   "IT_EC_FF1_1": {
@@ -6001,6 +6032,12 @@
     "names": {
       "en": "[Autumn 2020 Campaign Part I] MR+ Guaranteed Unit Summon Ticket",
       "fr": "[Spécial automne 2020 - Partie I] Ticket d'invocation d'unité MR+ garantie"
+    }
+  },
+  "IT_US_G_U_SSR_UR_08": {
+    "dataId": "IT_US_G_U_SSR_UR_08",
+    "names": {
+      "en": "[Autumn 2020 Campaign Part II] MR+ Guaranteed Unit Summon Ticket"
     }
   },
   "IT_US_SE_UR_V_01": {
