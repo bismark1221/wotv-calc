@@ -241,7 +241,7 @@ export class UnitService {
           if (filters.job.length == 0) {
             filteredUnits.push(unit)
           } else {
-            for (let i = 0; i <= 2; i++) {
+            for (let i = 0; i <= (filters.mainJob ? 0 : 2); i++) {
               let tableJob = unit.jobs[i].split("_")
               if (filters.job.indexOf(tableJob[0] + "_" + tableJob[1] + "_" + tableJob[2]) != -1) {
                 filteredUnits.push(unit)

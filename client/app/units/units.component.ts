@@ -20,7 +20,8 @@ export class UnitsComponent implements OnInit {
   filters = {
     rarity: [],
     element: [],
-    job: []
+    job: [],
+    mainJob: true
   }
   isCollapsedRarity = false;
   isCollapsedElement = false;
@@ -100,6 +101,11 @@ export class UnitsComponent implements OnInit {
 
   changeOrder(order) {
     this.order = order
+    this.getUnits()
+  }
+
+  toggleMainJob() {
+    this.filters.mainJob = !this.filters.mainJob
     this.getUnits()
   }
 }

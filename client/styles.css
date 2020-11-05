@@ -351,12 +351,23 @@ small {
   content: url(assets/nav/sun.png);
 }
 
-.switchStatsStack .switch {
+.switchMainJob .switch {
   margin: 0 !important;
+  height: 24px !important;
 }
 
-.switchStatsStack .switch-label-unchecked {
+.switchMainJob .switch-label-unchecked {
   color: white;
+  line-height: 24px !important;
+}
+
+.switchMainJob .switch-label-checked {
+  line-height: 24px !important;
+}
+
+.switchMainJob small {
+  height: 18px !important;
+  width: 18px !important;
 }
 
 
