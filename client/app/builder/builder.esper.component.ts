@@ -97,13 +97,20 @@ export class BuilderEsperComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         this.loadingBuild = true
-        this.esperService.getStoredEsper(data).subscribe(esperData => {
-          if (esperData) {
-            // @ts-ignore
-            this.selectEsper(esperData.dataId, esperData)
-          }
-          this.loadingBuild = false
-        })
+
+        let esper = this.esperService.getEsperBySlug(data)
+        if (esper) {
+          this.selectEsper(esper.dataId)
+        } else {
+          this.esperService.getStoredEsper(data).subscribe(esperData => {
+            if (esperData) {
+              // @ts-ignore
+              this.selectEsper(esperData.dataId, esperData)
+            }
+          })
+        }
+
+        this.loadingBuild = false
       }
     });
 

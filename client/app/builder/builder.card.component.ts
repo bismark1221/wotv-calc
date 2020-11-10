@@ -56,13 +56,20 @@ export class BuilderCardComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         this.loadingBuild = true
-        this.cardService.getStoredCard(data).subscribe(cardData => {
-          if (cardData) {
-            // @ts-ignore
-            this.selectCard(cardData.dataId, cardData)
-          }
-          this.loadingBuild = false
-        })
+
+        let card = this.cardService.getCardBySlug(data)
+        if (card) {
+          this.selectCard(card.dataId)
+        } else {
+          this.cardService.getStoredCard(data).subscribe(cardData => {
+            if (cardData) {
+              // @ts-ignore
+              this.selectCard(cardData.dataId, cardData)
+            }
+          })
+        }
+
+        this.loadingBuild = false
       }
     });
 

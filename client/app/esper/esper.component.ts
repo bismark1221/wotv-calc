@@ -124,4 +124,8 @@ export class EsperComponent implements OnInit {
   clickSpecialBismark() {
     this.specialBismark = !this.specialBismark
   }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
+  }
 }

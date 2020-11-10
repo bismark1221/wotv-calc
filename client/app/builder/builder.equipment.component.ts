@@ -56,13 +56,20 @@ export class BuilderEquipmentComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         this.loadingBuild = true
-        this.equipmentService.getStoredEquipment(data).subscribe(equipmentData => {
-          if (equipmentData) {
-            // @ts-ignore
-            this.selectEquipment(equipmentData.dataId, equipmentData)
-          }
-          this.loadingBuild = false
-        })
+
+        let equipment = this.equipmentService.getEquipmentBySlug(data)
+        if (equipment) {
+          this.selectEquipment(equipment.dataId)
+        } else {
+          this.equipmentService.getStoredEquipment(data).subscribe(equipmentData => {
+            if (equipmentData) {
+              // @ts-ignore
+              this.selectEquipment(equipmentData.dataId, equipmentData)
+            }
+          })
+        }
+
+        this.loadingBuild = false
       }
     });
 

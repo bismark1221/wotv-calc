@@ -109,4 +109,8 @@ export class CardComponent implements OnInit {
       })
     }
   }
+
+  getRoute(route) {
+    return this.navService.getRoute(route)
+  }
 }

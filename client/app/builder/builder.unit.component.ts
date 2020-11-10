@@ -144,19 +144,20 @@ export class BuilderUnitComponent implements OnInit {
       let data = params.get('data')
       if (data) {
         this.loadingBuild = true
-        try {
-          let parsedData = JSON.parse(atob(data))
-          this.selectUnit(parsedData.dataId, parsedData)
-          this.loadingBuild = false
-        } catch(err) {
+
+        let unit = this.unitService.getUnitBySlug(data)
+        if (unit) {
+          this.selectUnit(unit.dataId)
+        } else {
           this.unitService.getStoredUnit(data).subscribe(unitData => {
             if (unitData) {
               // @ts-ignore
               this.selectUnit(unitData.dataId, unitData)
             }
-            this.loadingBuild = false
           })
         }
+
+        this.loadingBuild = false
       }
     });
 

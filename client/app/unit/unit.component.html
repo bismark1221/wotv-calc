@@ -788,6 +788,9 @@
       </div>
     </ng-template>
   </li>
+  <li [ngbNavItem]="5">
+    <a ngbNavLink [routerLink]="[getRoute('/builder/unit/' + unit.slug)]">GO TO BUILDER >>></a>
+  </li>
 </ul>
 
 <div [ngbNavOutlet]="nav"></div>

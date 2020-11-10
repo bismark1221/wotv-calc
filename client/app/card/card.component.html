@@ -16,6 +16,11 @@
           <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
           <td>{{ card.cost }}</td>
         </tr>
+        <tr>
+          <td colspan="2">
+            <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>

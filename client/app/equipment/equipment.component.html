@@ -225,6 +225,9 @@
       </div>
     </ng-template>
   </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink [routerLink]="[getRoute('/builder/equipment/' + equipment.slug)]">GO TO BUILDER >>></a>
+  </li>
 </ul>
 
 <div [ngbNavOutlet]="nav"></div>
