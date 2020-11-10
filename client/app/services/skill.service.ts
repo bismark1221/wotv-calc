@@ -287,12 +287,12 @@ export class SkillService {
       }
     }
 
-    html += this.formatEffect(unit, skill, effect)
+    html += this.formatEffect(unit, skill, effect, true, true)
 
     return this.sanitizer.bypassSecurityTrustHtml(html)
   }
 
-  formatEffect(unit, skill, effect, getTarget = true) {
+  formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false) {
     let html = "";
     switch (effect.type) {
       case "HP" :
@@ -999,7 +999,7 @@ export class SkillService {
     }
 
     if (getTarget) {
-      html = this.formatTaget(skill, effect, html)
+      html = this.formatTarget(skill, effect, html, fromEquipment)
     }
 
     return html;
@@ -1215,7 +1215,7 @@ export class SkillService {
     return html
   }
 
-  formatTaget(skill, effect, html) {
+  formatTarget(skill, effect, html, fromEquipment = false) {
     let conditions = {
       "FIRE_ELEMENT": " for fire ",
       "ICE_ELEMENT": " for ice ",
@@ -1277,7 +1277,11 @@ export class SkillService {
     } else {
       switch (effect.target) {
         case "self" :
-          return html + " for self"
+          if (effect.rate) {
+            return html + " on basic attack" + (effect.rate == 200 ? "" : " for target")
+          } else {
+            return html + " for self"
+          }
           break
         case "target" :
           return html + " for target" + (skill.aoe ? "s" : "")
