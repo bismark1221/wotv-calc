@@ -3124,7 +3124,8 @@
     ],
     "acquisition": {
       "type": {
-        "en": "General Shop"
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
       }
     }
   },
@@ -25267,9 +25268,9 @@
   },
   "AF_LOT_LW_HAT_005": {
     "names": {
-      "en": "ウルフマスク"
+      "en": "ウルフマスク - Wolf Mask"
     },
-    "slug": "urufu-masuku",
+    "slug": "wolf-mask",
     "stats": {
       "HP": {
         "min": 11,
@@ -25589,7 +25590,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_CLT_001": {

@@ -23,6 +23,15 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "11/11",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_AGON"},
+          {type: "card", dataId: "VC_LW_AGON"},
+          {type: "card", dataId: "VC_LW_GUREN"},
+          {type: "equipment", dataId: "AF_LW_HAT_005"},
+        ]
+      },
+      {
         date: "14/10",
         items: [
           {type: "unit", dataId: "UN_LW_P_HWLT"},
@@ -40,13 +49,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_BLMN"},
           {type: "esper", dataId: "UN_LW_S_BLMN"},
           {type: "equipment", dataId: "AF_LW_RNG_007"},
-        ]
-      },
-      {
-        date: "21/10",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_RYER_01"},
-          {type: "unit", dataId: "UN_LW_P_RIRY_01"},
         ]
       }
     ],

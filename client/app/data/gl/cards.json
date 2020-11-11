@@ -6016,6 +6016,316 @@
       }
     ]
   },
+  "VC_LW_AGON": {
+    "dataId": "VC_LW_AGON",
+    "names": {
+      "en": "Steel-Plated Destruction, Aigaion",
+      "fr": "Égéon, l'Exterminateur d'acier"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 298
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 38,
+        "max": 148
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 8,
+        "max": 30
+      },
+      "DEX": {
+        "min": 8,
+        "max": 28
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsagon",
+    "slug": "steel-plated-destruction-aigaion",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 7,
+            "maxValue": 15,
+            "calcType": "fixe",
+            "target": "selfSide"
+          },
+          {
+            "type": "ACCURACY",
+            "minValue": 2,
+            "maxValue": 8,
+            "calcType": "fixe",
+            "target": "selfSide"
+          }
+        ],
+        "dataId": "SK_VC_LW_AGON_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_AGON_GS",
+          "fr": "SK_VC_LW_AGON_GS"
+        },
+        "target": "selfSide",
+        "maxLevel": 99
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "fixe",
+            "target": "selfSide"
+          },
+          {
+            "type": "ACCURACY",
+            "minValue": 1,
+            "maxValue": 4,
+            "calcType": "fixe",
+            "target": "selfSide"
+          }
+        ],
+        "dataId": "SK_VC_LW_AGON_GS_AW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_AGON_GS_AW",
+          "fr": "SK_VC_LW_AGON_GS_AW"
+        },
+        "target": "selfSide",
+        "maxLevel": 4
+      },
+      "lvmax": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": 5,
+            "maxValue": 5,
+            "calcType": "fixe",
+            "target": "selfSide"
+          },
+          {
+            "type": "ACCURACY",
+            "minValue": 3,
+            "maxValue": 3,
+            "calcType": "fixe",
+            "target": "selfSide"
+          }
+        ],
+        "dataId": "SK_VC_LW_AGON_GSMAX",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_AGON_GSMAX",
+          "fr": "SK_VC_LW_AGON_GSMAX"
+        },
+        "target": "selfSide",
+        "maxLevel": 1
+      }
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_AGON_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_AGON_P",
+            "fr": "SK_VC_LW_AGON_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_AGON_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_AGON_PAW",
+            "fr": "SK_VC_LW_AGON_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_AGON_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_AGON_PMAX",
+            "fr": "SK_VC_LW_AGON_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": []
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_AGON_P2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_AGON_P2",
+            "fr": "SK_GL_VC_LW_AGON_P2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_AGON_P2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_AGON_P2AW",
+            "fr": "SK_GL_VC_LW_AGON_P2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_AGON_P2MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_AGON_P2MAX",
+            "fr": "SK_GL_VC_LW_AGON_P2MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "lightning",
+              "wind"
+            ]
+          },
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_MKN_FIRE",
+              "JB_FFT_ORND"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -10301,6 +10611,170 @@
           "names": {
             "en": "SK_VC_LW_BLMN_PAW",
             "fr": "SK_VC_LW_BLMN_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      }
+    ]
+  },
+  "VC_LW_GUREN": {
+    "dataId": "VC_LW_GUREN",
+    "names": {
+      "en": "Chivalrous Outlaws, «Rubeus»",
+      "fr": "« Rubeus », Brigands au grand cœur"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 285
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 17,
+        "max": 70
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 21,
+        "max": 85
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsguren",
+    "slug": "chivalrous-outlaws-rubeus",
+    "partyBuffs": {
+      "classic": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ICE_KILLER",
+            "minValue": 10,
+            "maxValue": 15,
+            "calcType": "percent",
+            "rate": 200,
+            "target": "selfSide"
+          }
+        ],
+        "dataId": "SK_VC_LW_GUREN_GS",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_GUREN_GS",
+          "fr": "SK_VC_LW_GUREN_GS"
+        },
+        "target": "selfSide",
+        "maxLevel": 70
+      },
+      "awake": {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "ICE_KILLER",
+            "minValue": 1,
+            "maxValue": 5,
+            "calcType": "percent",
+            "rate": 200,
+            "target": "selfSide"
+          }
+        ],
+        "dataId": "SK_VC_LW_GUREN_GSAW",
+        "type": "party",
+        "mainSkill": false,
+        "names": {
+          "en": "SK_VC_LW_GUREN_GSAW",
+          "fr": "SK_VC_LW_GUREN_GSAW"
+        },
+        "target": "selfSide",
+        "maxLevel": 4
+      },
+      "lvmax": null
+    },
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GUREN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GUREN_P",
+            "fr": "SK_VC_LW_GUREN_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GUREN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GUREN_PAW",
+            "fr": "SK_VC_LW_GUREN_PAW"
           },
           "target": "self",
           "maxLevel": 4

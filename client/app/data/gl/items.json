@@ -3509,19 +3509,22 @@
   "IT_PI_LW_SCAL": {
     "dataId": "IT_PI_LW_SCAL",
     "names": {
-      "en": "Skahal Unit Shard"
+      "en": "Skahal Unit Shard",
+      "fr": "Fragment d'unité de Skahal"
     }
   },
   "IT_PI_LW_MRAL": {
     "dataId": "IT_PI_LW_MRAL",
     "names": {
-      "en": "Mariale Unit Shard"
+      "en": "Mariale Unit Shard",
+      "fr": "Fragment d'unité de Mariale"
     }
   },
   "IT_PI_LW_CHEL": {
     "dataId": "IT_PI_LW_CHEL",
     "names": {
-      "en": "Chel Unit Shard"
+      "en": "Chel Unit Shard",
+      "fr": "Fragment d'unité de Chel"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -4056,6 +4059,20 @@
       "fr": "Pierre d'éveil de Lune de sang (3★)"
     }
   },
+  "IT_SB_AW_AGON_R2": {
+    "dataId": "IT_SB_AW_AGON_R2",
+    "names": {
+      "en": "Aigaion's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil d'Égéon (2★)"
+    }
+  },
+  "IT_SB_AW_AGON_R3": {
+    "dataId": "IT_SB_AW_AGON_R3",
+    "names": {
+      "en": "Aigaion's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil d'Égéon (3★)"
+    }
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -4555,7 +4572,8 @@
   "IT_AF_LW_SWO_023": {
     "dataId": "IT_AF_LW_SWO_023",
     "names": {
-      "en": "Lohengrin Crafting Recipe"
+      "en": "Lohengrin Crafting Recipe",
+      "fr": "Recette d'artisanat : Lohengrin"
     },
     "recipe": true
   },
@@ -4876,6 +4894,14 @@
     "names": {
       "en": "Sage's Hat Crafting Recipe",
       "fr": "Recette d'artisanat : Chapeau de sage"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_HAT_005": {
+    "dataId": "IT_AF_LW_HAT_005",
+    "names": {
+      "en": "Wolf Mask Crafting Recipe",
+      "fr": "Recette d'artisanat : Masque de loup"
     },
     "recipe": true
   },
@@ -5611,7 +5637,8 @@
   "IT_EC_EV06_1": {
     "dataId": "IT_EC_EV06_1",
     "names": {
-      "en": "A Damsel in Distress Medal"
+      "en": "A Damsel in Distress Medal",
+      "fr": "Médaille Une damoiselle en détresse"
     }
   },
   "IT_EC_FF1_1": {
@@ -6031,13 +6058,21 @@
     "dataId": "IT_US_G_U_SSR_UR_07",
     "names": {
       "en": "[Autumn 2020 Campaign Part I] MR+ Guaranteed Unit Summon Ticket",
-      "fr": "[Spécial automne 2020 - Partie I] Ticket d'invocation d'unité MR+ garantie"
+      "fr": "Spécial automne 2020 [Partie I] - Ticket d'invocation d'unité MR+ garantie"
     }
   },
   "IT_US_G_U_SSR_UR_08": {
     "dataId": "IT_US_G_U_SSR_UR_08",
     "names": {
-      "en": "[Autumn 2020 Campaign Part II] MR+ Guaranteed Unit Summon Ticket"
+      "en": "[Autumn 2020 Campaign Part II] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "Spécial automne 2020 [Partie II] - Ticket d'invocation d'unité MR+ garantie"
+    }
+  },
+  "IT_US_G_U_SSR_UR_09": {
+    "dataId": "IT_US_G_U_SSR_UR_09",
+    "names": {
+      "en": "[Chapter 10 Release] MR+ Guaranteed Vision Card Summon Ticket",
+      "fr": "[Sortie du chapitre 10 !] Ticket d'invocation d'atout-vision MR+ garanti"
     }
   },
   "IT_US_SE_UR_V_01": {
@@ -6614,6 +6649,20 @@
       "fr": "Fragment de l'atout-vision : « Exorciser les démons »"
     }
   },
+  "IT_VPI_LW_AGON": {
+    "dataId": "IT_VPI_LW_AGON",
+    "names": {
+      "en": "\"Steel-Plated Destruction, Aigaion\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Égéon, l'Exterminateur d'acier"
+    }
+  },
+  "IT_VPI_LW_GUREN": {
+    "dataId": "IT_VPI_LW_GUREN",
+    "names": {
+      "en": "\"Chivalrous Outlaws, «Rubeus»\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : « Rubeus », Brigands au grand cœur"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -6915,6 +6964,20 @@
       "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_11": {
+    "dataId": "IT_US_GL_SE_VPI_11",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    }
+  },
+  "IT_US_GL_SE_VPI_12": {
+    "dataId": "IT_US_GL_SE_VPI_12",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7046,7 +7109,7 @@
     "dataId": "IT_AF_LW_ACC_001",
     "names": {
       "en": "Ribbon Crafting Recipe",
-      "fr": "Recettes d'artisanat : Ruban"
+      "fr": "Recette d'artisanat : Ruban"
     },
     "recipe": true
   },

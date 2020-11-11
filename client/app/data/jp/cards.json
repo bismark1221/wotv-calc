@@ -5293,7 +5293,7 @@
   "VC_LW_AGON": {
     "dataId": "VC_LW_AGON",
     "names": {
-      "en": "破壊鋼人　アイガイオン"
+      "en": "破壊鋼人　アイガイオン - Steel-Plated Destruction, Aigaion"
     },
     "cost": 70,
     "rarity": "UR",
@@ -5357,7 +5357,7 @@
       "JUMP": {}
     },
     "image": "lapsagon",
-    "slug": "hakai-hagane-jin-aiga-ion",
+    "slug": "steel-plated-destruction-aigaion",
     "partyBuffs": {
       "classic": {
         "unlockStar": null,
@@ -7815,6 +7815,7 @@
       "JUMP": {}
     },
     "image": "lapsramd",
+    "slug": "genshi-suru-hoshi-yomi",
     "partyBuffs": {
       "classic": {
         "unlockStar": null,
@@ -8031,8 +8032,7 @@
           }
         ]
       }
-    ],
-    "slug": "genshi-suru-hoshi-yomi"
+    ]
   },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
@@ -12199,7 +12199,7 @@
   "VC_LW_GUREN": {
     "dataId": "VC_LW_GUREN",
     "names": {
-      "en": "義賊≪紅蓮≫"
+      "en": "義賊≪紅蓮≫ - Chivalrous Outlaws, «Rubeus»"
     },
     "cost": 50,
     "rarity": "MR",
@@ -12260,7 +12260,7 @@
       "JUMP": {}
     },
     "image": "lapsguren",
-    "slug": "gizoku-guren",
+    "slug": "chivalrous-outlaws-rubeus",
     "partyBuffs": {
       "classic": {
         "unlockStar": null,
@@ -13596,6 +13596,7 @@
       "JUMP": {}
     },
     "image": "lapsmrlt",
+    "slug": "satsuriku-en-mai-mari-risu",
     "partyBuffs": {
       "classic": {
         "unlockStar": null,
@@ -13684,8 +13685,7 @@
         "lvmax": null,
         "cond": []
       }
-    ],
-    "slug": "satsuriku-en-mai-mari-risu"
+    ]
   },
   "VC_LW_OOOO": {
     "dataId": "VC_LW_OOOO",
@@ -13751,6 +13751,7 @@
       "JUMP": {}
     },
     "image": "lapsoooo",
+    "slug": "kengou-no-tashinami",
     "partyBuffs": {
       "classic": {
         "unlockStar": null,
@@ -13907,8 +13908,7 @@
           }
         ]
       }
-    ],
-    "slug": "kengou-no-tashinami"
+    ]
   },
   "VC_LW_CACT": {
     "dataId": "VC_LW_CACT",

@@ -2509,6 +2509,54 @@
             "value": "DEF ↑ Niv. 1"
         },
         {
+            "key": "SK_LW_MST_M_1_SUB",
+            "value": "Énergivore"
+        },
+        {
+            "key": "SK_LW_MST_M_2_SUB",
+            "value": "Bouclier de bâtons"
+        },
+        {
+            "key": "SK_LW_MST_M_3_SUB",
+            "value": "Élévation de la foi"
+        },
+        {
+            "key": "SK_LW_MST_FIRE_S_1",
+            "value": "Bâton de feu"
+        },
+        {
+            "key": "SK_LW_MST_ICE_S_1",
+            "value": "Bâton de glace"
+        },
+        {
+            "key": "SK_LW_MST_WIND_S_1",
+            "value": "Bâton de vent"
+        },
+        {
+            "key": "SK_LW_MST_THUN_S_1",
+            "value": "Bâton de foudre"
+        },
+        {
+            "key": "SK_LW_MST_WATR_S_1",
+            "value": "Bâton d'eau"
+        },
+        {
+            "key": "SK_LW_MST_SOIL_S_1",
+            "value": "Bâton de terre"
+        },
+        {
+            "key": "SK_LW_MST_SHIN_S_1",
+            "value": "Bâton de lumière"
+        },
+        {
+            "key": "SK_LW_MST_DARK_S_1",
+            "value": "Bâton d'ombre"
+        },
+        {
+            "key": "SK_LW_MST_S_2",
+            "value": "Bâton ailé"
+        },
+        {
             "key": "SK_FFT_AGRA_ATK",
             "value": "Attaque normale"
         },
@@ -3178,7 +3226,7 @@
         },
         {
             "key": "SK_IFRT_M_03_01_100_U",
-            "value": "Concentration thermique"
+            "value": "Incandescence"
         },
         {
             "key": "SK_LW_TU_WAR_M_4",
@@ -4049,6 +4097,10 @@
             "value": "Hurlement mystique"
         },
         {
+            "key": "SK_FNRR_M_04_2",
+            "value": "Hurlement mystique"
+        },
+        {
             "key": "SK_TITN_ATK",
             "value": "Attaque normale"
         },
@@ -4123,6 +4175,38 @@
         {
             "key": "SK_TNBR_M_04_R",
             "value": "Rancune commune"
+        },
+        {
+            "key": "SK_AGON_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_AGON_M_01",
+            "value": "Laser central"
+        },
+        {
+            "key": "SK_AGON_M_02",
+            "value": "Éclate-bras"
+        },
+        {
+            "key": "SK_AGON_M_03",
+            "value": "Explosion électromagnétique"
+        },
+        {
+            "key": "SK_AGON_M_04",
+            "value": "Haut voltage"
+        },
+        {
+            "key": "SK_AGON_M_05",
+            "value": "Manteau de fer"
+        },
+        {
+            "key": "SK_AGON_M_06",
+            "value": "Mode Agilité Max"
+        },
+        {
+            "key": "SK_AGON_R_01",
+            "value": "Bras foreur"
         },
         {
             "key": "SK_LW_E_VIK_ATK",
@@ -4369,6 +4453,10 @@
             "value": "Stella Artis"
         },
         {
+            "key": "SK_LB_LW_SCAL",
+            "value": "Invocation de la foudre divine"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -4467,6 +4555,10 @@
         {
             "key": "SK_SMN_BLMN",
             "value": "Mépris de la lune mortelle"
+        },
+        {
+            "key": "SK_SMN_AGON",
+            "value": "Explosion électromagnétique"
         },
         {
             "key": "SK_US_POTION",
@@ -4901,6 +4993,18 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_SCAL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_MRAL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_CHEL",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -5287,6 +5391,18 @@
         {
             "key": "SK_CLT_LW_HWLT_1_1",
             "value": "Rune de sang"
+        },
+        {
+            "key": "SK_ACC_LW_SCAL_1_1",
+            "value": "Vague magicodémoniaque"
+        },
+        {
+            "key": "SK_SWO_LW_MRAL_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_ROD_LW_CHEL_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -6117,6 +6233,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_AGON_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_AGON_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_AGON_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUREN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUREN_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_TITN_P",
             "value": ""
         },
@@ -6226,6 +6362,38 @@
         },
         {
             "key": "SK_VC_LW_BLMN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_AGON_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_AGON_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_AGON_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_AGON_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_AGON_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_AGON_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUREN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GUREN_PAW",
             "value": ""
         },
         {
@@ -7799,6 +7967,22 @@
         {
             "key": "SK_GMK_ATK_KENZAN",
             "value": "Zone dévastée"
+        },
+        {
+            "key": "SK_GMK_ATK_CANN_1",
+            "value": "Bombardement"
+        },
+        {
+            "key": "SK_GMK_ATK_CANN_2",
+            "value": "Balle grenade"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_1_EN",
+            "value": "Jet de pierre"
+        },
+        {
+            "key": "SK_GMK_ATK_KATA_2_EN",
+            "value": "Averse de pierres"
         },
         {
             "key": "SK_LW_WAR_P_2",

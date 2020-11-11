@@ -20659,6 +20659,339 @@
       }
     }
   },
+  "AF_LOT_LW_HAT_005": {
+    "names": {
+      "en": "Wolf Mask",
+      "fr": "Masque de loup"
+    },
+    "slug": "wolf-mask",
+    "stats": {
+      "HP": {
+        "min": 11,
+        "max": 217
+      },
+      "ATK": {
+        "min": 1,
+        "max": 20
+      },
+      "DEF": {
+        "min": 1,
+        "max": 14
+      },
+      "DEX": {
+        "min": 1,
+        "max": 20
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "HAT",
+    "dataId": "AF_LW_HAT_005",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "SK_LW_HIT_1",
+            "fr": "SK_LW_HIT_1"
+          },
+          "dataId": "SK_LW_HIT_1",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_HIT_2",
+            "fr": "SK_LW_HIT_2"
+          },
+          "dataId": "SK_LW_HIT_2",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_HIT_3",
+            "fr": "SK_LW_HIT_3"
+          },
+          "dataId": "SK_LW_HIT_3",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_HIT_4_N_SSR",
+            "fr": "SK_LW_HIT_4_N_SSR"
+          },
+          "dataId": "SK_LW_HIT_4_N_SSR",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_HIT_5_SSR",
+            "fr": "SK_LW_HIT_5_SSR"
+          },
+          "dataId": "SK_LW_HIT_5_SSR",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_hat_005",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_HAT_005": 1,
+        "IT_AF_MAT_HEART_03": 170,
+        "IT_AF_MAT_MABR": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_005": 3,
+        "IT_AF_MAT_HEART_03": 230,
+        "IT_AF_MAT_MABR": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_005": 7,
+        "IT_AF_MAT_HEART_03": 350,
+        "IT_AF_MAT_MABR": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ARMOR": 255
+      },
+      {
+        "IT_AF_LW_HAT_005": 15,
+        "IT_AF_MAT_HEART_03": 630,
+        "IT_AF_MAT_MABR": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ARMOR": 315
+      },
+      {
+        "IT_AF_LW_HAT_005": 31,
+        "IT_AF_MAT_HEART_03": 1250,
+        "IT_AF_MAT_MABR": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ARMOR": 535
+      },
+      {
+        "IT_AF_LW_HAT_005": 63,
+        "IT_AF_MAT_HEART_03": 2570,
+        "IT_AF_MAT_MABR": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ARMOR": 1125
+      }
+    ],
+    "acquisition": {
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
+    }
+  },
   "AF_LW_CLT_001": {
     "names": {
       "en": "Leather Clothing",
@@ -34361,7 +34694,8 @@
   },
   "AF_ACC_LW_SCAL_1": {
     "names": {
-      "en": "Gauntlet of Thunder"
+      "en": "Gauntlet of Thunder",
+      "fr": "Gantelet de la foudre"
     },
     "slug": "gauntlet-of-thunder",
     "stats": {
@@ -34400,7 +34734,8 @@
       [
         {
           "names": {
-            "en": "Magic Surge"
+            "en": "Magic Surge",
+            "fr": "Vague magicodémoniaque"
           },
           "dataId": "SK_ACC_LW_SCAL_1_1",
           "effects": [
@@ -34499,7 +34834,8 @@
   },
   "AF_SWO_LW_MRAL_1": {
     "names": {
-      "en": "Prancing Spider"
+      "en": "Prancing Spider",
+      "fr": "Araignée dansante"
     },
     "slug": "prancing-spider",
     "stats": {
@@ -34593,7 +34929,8 @@
   },
   "AF_ROD_LW_CHEL_1": {
     "names": {
-      "en": "Inguz Staff"
+      "en": "Inguz Staff",
+      "fr": "Bâton inguz"
     },
     "slug": "inguz-staff",
     "stats": {
@@ -36865,7 +37202,8 @@
   },
   "AF_ROD_LW_SCAL_2": {
     "names": {
-      "en": "Feywasp Staff"
+      "en": "Feywasp Staff",
+      "fr": "Sceptre des lucioles"
     },
     "slug": "feywasp-staff",
     "stats": {
@@ -39581,7 +39919,8 @@
   },
   "AF_LOT_LW_SWO_023": {
     "names": {
-      "en": "Lohengrin"
+      "en": "Lohengrin",
+      "fr": "Lohengrin"
     },
     "slug": "lohengrin",
     "stats": {
@@ -39892,7 +40231,8 @@
     ],
     "acquisition": {
       "type": {
-        "en": "General Shop"
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
       }
     }
   }

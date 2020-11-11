@@ -1605,6 +1605,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_FNRR_M_04_2",
+            "value": ""
+        },
+        {
             "key": "BUFF_TITN_M_01",
             "value": ""
         },
@@ -1626,6 +1630,38 @@
         },
         {
             "key": "BUFF_BLMN_M_02",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_03",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_04_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_04_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_05",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_06_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_06_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_M_06_3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_AGON_R_01",
             "value": ""
         },
         {
@@ -1833,6 +1869,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_LB_LW_SCAL",
+            "value": ""
+        },
+        {
             "key": "BUFF_SMN_MABR",
             "value": ""
         },
@@ -1874,6 +1914,10 @@
         },
         {
             "key": "BUFF_SMN_BLMN",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SMN_AGON",
             "value": ""
         },
         {
@@ -2322,6 +2366,18 @@
         },
         {
             "key": "BUFF_MA_LW_HWLT",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_SCAL",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_MRAL",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_CHEL",
             "value": ""
         },
         {
@@ -2874,6 +2930,26 @@
         },
         {
             "key": "BUFF_VC_LW_HALL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_GUREN_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_GUREN_GSAW",
             "value": ""
         },
         {
@@ -3582,6 +3658,38 @@
         },
         {
             "key": "BUFF_VC_LW_BLMN_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_AGON_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_AGON_P2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_AGON_P2AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_AGON_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_GUREN_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_GUREN_PAW",
             "value": ""
         },
         {
@@ -4726,6 +4834,22 @@
         },
         {
             "key": "BUFF_CLT_LW_HWLT_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_ACC_LW_SCAL_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SWO_LW_MRAL_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SWO_LW_MRAL_1_1_EN",
+            "value": "Attaque normale (PSY ↓)"
+        },
+        {
+            "key": "BUFF_ROD_LW_CHEL_1_1",
             "value": ""
         },
         {
@@ -7318,7 +7442,7 @@
         },
         {
             "key": "BUFF_LAMA_01_32",
-            "value": "Tue-faucheur +5 %"
+            "value": "Tue-faucheurs +5 %"
         },
         {
             "key": "BUFF_LAMA_01_33",
@@ -8777,6 +8901,138 @@
             "value": "Rés charme +10 %"
         },
         {
+            "key": "BUFF_AGON_01",
+            "value": "Taux de précision +3"
+        },
+        {
+            "key": "BUFF_AGON_02",
+            "value": "Tue-oiseaux +2 %"
+        },
+        {
+            "key": "BUFF_AGON_03",
+            "value": "Taux de coups critiques +3"
+        },
+        {
+            "key": "BUFF_AGON_04",
+            "value": "Hydrophage +2 %"
+        },
+        {
+            "key": "BUFF_AGON_05",
+            "value": "MAGIE +2 %"
+        },
+        {
+            "key": "BUFF_AGON_06",
+            "value": "Magie d'invocation niv. 2"
+        },
+        {
+            "key": "BUFF_AGON_07",
+            "value": "Magie d'invocation niv. 3"
+        },
+        {
+            "key": "BUFF_AGON_08",
+            "value": "Taux de précision +4"
+        },
+        {
+            "key": "BUFF_AGON_09",
+            "value": "Rés magique +3 %"
+        },
+        {
+            "key": "BUFF_AGON_10",
+            "value": "Rés magique +3 %"
+        },
+        {
+            "key": "BUFF_AGON_11",
+            "value": "Tue-oiseaux +3 %"
+        },
+        {
+            "key": "BUFF_AGON_12",
+            "value": "Taux de coups critiques +4"
+        },
+        {
+            "key": "BUFF_AGON_13",
+            "value": "Attaque tranchante +3 %"
+        },
+        {
+            "key": "BUFF_AGON_14",
+            "value": "Attaque tranchante +3 %"
+        },
+        {
+            "key": "BUFF_AGON_15",
+            "value": "Hydrophage +3 %"
+        },
+        {
+            "key": "BUFF_AGON_16",
+            "value": "MAGIE +5 %"
+        },
+        {
+            "key": "BUFF_AGON_17",
+            "value": "Rés att perçantes +3 %"
+        },
+        {
+            "key": "BUFF_AGON_18",
+            "value": "Rés att perçantes +3 %"
+        },
+        {
+            "key": "BUFF_AGON_19",
+            "value": "Magie d'invocation niv. 4"
+        },
+        {
+            "key": "BUFF_AGON_20",
+            "value": "Rés magique +5 %"
+        },
+        {
+            "key": "BUFF_AGON_21",
+            "value": "Rés magique +4 %"
+        },
+        {
+            "key": "BUFF_AGON_22",
+            "value": "Tue-oiseaux +4 %"
+        },
+        {
+            "key": "BUFF_AGON_23",
+            "value": "Tue-oiseaux +6 %"
+        },
+        {
+            "key": "BUFF_AGON_24",
+            "value": "Attaque tranchante +5 %"
+        },
+        {
+            "key": "BUFF_AGON_25",
+            "value": "Attaque tranchante +4 %"
+        },
+        {
+            "key": "BUFF_AGON_26",
+            "value": "Hydrophage +6 %"
+        },
+        {
+            "key": "BUFF_AGON_27",
+            "value": "Hydrophage +4 %"
+        },
+        {
+            "key": "BUFF_AGON_28",
+            "value": "Rés att perçantes +5 %"
+        },
+        {
+            "key": "BUFF_AGON_29",
+            "value": "Rés att perçantes +4 %"
+        },
+        {
+            "key": "BUFF_AGON_30",
+            "value": "Magie d'invocation niv. 6"
+        },
+        {
+            "key": "BUFF_AGON_31",
+            "value": "Magie d'invocation niv. 10"
+        },
+        {
+            "key": "BUFF_AGON_32",
+            "value": "Tue-oiseaux +10 %"
+        },
+        {
+            "key": "BUFF_AGON_33",
+            "value": "Hydrophage +10 %"
+        },
+        {
             "key": "BUFF_ARMN_01",
             "value": "Attaque projectile +3 %"
         },
@@ -9601,6 +9857,10 @@
             "value": "Rés att projectiles/MAGIE ↑"
         },
         {
+            "key": "BUFF_ARENA_GL_00001",
+            "value": "Rés att projectiles ↑"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "Att d'ombre ↑"
         },
@@ -9619,6 +9879,10 @@
         {
             "key": "BUFF_GVG_007",
             "value": "Attaque magique ↑"
+        },
+        {
+            "key": "BUFF_GVG_GL_001",
+            "value": "Attaque de vent ↑"
         },
         {
             "key": "BUFF_CLASSMATCH_001",
