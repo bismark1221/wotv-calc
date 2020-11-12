@@ -26,6 +26,7 @@ export class NavComponent {
   inEsper = false;
   inEquipment = false;
   inRaid = false;
+  inIndex = false;
   showBuilderNav = false;
   showVersionSelector = false;
   showLangSelector = false;
@@ -77,6 +78,7 @@ export class NavComponent {
         this.inEsper = false;
         this.inEquipment = false;
         this.inRaid = false;
+        this.inIndex = false;
 
         let url = event.url.split("/")
 
@@ -93,6 +95,8 @@ export class NavComponent {
           this.inEquipment = true;
         } else if (url.length >= 2 && (url[1] == "raid" || url[1] == "raids" || (url[1] == "JP" && (url[2] == "raid" || url[2] == "raids")))) {
           this.inRaid = true;
+        } else if (url.length >= 2 && (url[1] == "index" || (url[1] == "JP" && url[2] == "index"))) {
+          this.inIndex = true;
         }
       }
     });

@@ -348,7 +348,7 @@ export class UnitService {
     return data
   }
 
-  selectUnitForBuilder(unitId, customData = null) {
+  selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false) {
     this.unit = new Unit()
     this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService)
     this.unit.name = this.unit.getName(this.translateService)
@@ -391,7 +391,7 @@ export class UnitService {
       this.unit.limit.level = 1
     }
 
-    this.unit.guild = this.guildService.getGuildForBuilder()
+    this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild)
 
     let existingUnit = this.initiateSavedUnit(customData)
 

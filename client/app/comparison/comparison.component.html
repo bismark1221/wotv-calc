@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="loadingBlock" *ngIf="loading">
+    <h1>The list is loading</h1>
+    <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
+  </div>
+
+  <table class="statsTable" *ngIf="!loading">
+    <tr>
+      <th>
+        <div (click)="changeSort('name')" class="divTH">
+          Unit
+          <span class="spanArrow">
+            <i class="fas" [ngClass]="{
+              'arrowActivated': sort == 'name',
+              'fa-arrow-up': sort != 'name' || (sort == 'name' && order == 'asc'),
+              'fa-arrow-down': sort == 'name' && order == 'desc'
+            }"></i>
+          </span>
+        </div>
+      </th>
+      <th *ngFor="let type of statsType">
+        <div (click)="changeSort(type)" class="divTH">
+          {{ type }}
+          <span class="spanArrow">
+            <i class="fas" [ngClass]="{
+              'arrowActivated': sort == type,
+              'fa-arrow-up': sort == type && order == 'asc',
+              'fa-arrow-down': sort != type || (sort == type && order == 'desc')
+            }"></i>
+          </span>
+        </div>
+      </th>
+    </tr>
+    <tbody *ngFor="let unit of units">
+      <tr>
+        <td>
+          <img class="unitImg" src="assets/units/{{unit.image}}_m.png"/>
+          {{ unit.name }}
+        </td>
+        <td *ngFor="let type of statsType">
+          <span *ngIf="unit.stats[type]">{{ unit.stats[type].total }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

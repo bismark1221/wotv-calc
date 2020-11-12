@@ -46,6 +46,7 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
+import { ComparisonComponent } from './comparison/comparison.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -127,7 +128,8 @@ export function createTranslateLoader(http: HttpClient) {
     ModalLoadComponent,
     ModalSaveComponent,
     ModalLinkComponent,
-    LoginComponent
+    LoginComponent,
+    ComparisonComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

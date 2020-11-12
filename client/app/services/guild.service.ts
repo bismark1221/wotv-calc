@@ -88,8 +88,8 @@ export class GuildService {
     return this.guild
   }
 
-  getGuildForBuilder() {
-    if (this.localStorageService.get(this.getLocalStorage())) {
+  getGuildForBuilder(forceEmptyGuild = false) {
+    if (!forceEmptyGuild && this.localStorageService.get(this.getLocalStorage())) {
       this.guild = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
       Object.keys(this.statues).forEach(statue => {
         if (!this.guild[statue]) {

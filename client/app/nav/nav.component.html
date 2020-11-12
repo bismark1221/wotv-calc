@@ -20,6 +20,9 @@
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inRaid}">
           {{ 'nav.raids' | translate }}
         </a>
+        <a class="nav-link" [routerLink]="[getRoute('/index')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inIndex}">
+          {{ 'nav.index' | translate }}
+        </a>
         <a class="nav-link" [routerLink]="[getRoute('/builder')]" (mouseover)="showBuilderNav=true" [ngClass]="{'active': inBuilder}">
           {{ 'nav.builder' | translate }}
         </a>
