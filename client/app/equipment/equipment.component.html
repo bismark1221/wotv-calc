@@ -226,7 +226,7 @@
     </ng-template>
   </li>
   <li [ngbNavItem]="3">
-    <a ngbNavLink [routerLink]="[getRoute('/builder/equipment/' + equipment.slug)]">GO TO BUILDER >>></a>
+    <a *ngIf="equipment" ngbNavLink [routerLink]="[getRoute('/builder/equipment/' + equipment.slug)]">GO TO BUILDER >>></a>
   </li>
 </ul>
 
