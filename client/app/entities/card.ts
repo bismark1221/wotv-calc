@@ -181,23 +181,30 @@ export class Card {
       }
     })
 
-    this.partyBuffs.classic.effects.forEach(effect => {
-      buffs.party[effect.type] = {}
-      buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
-      buffs.party[effect.type].calcType = effect.calcType
+    this.partyBuffs.forEach(buff => {
+      buff.classic.effects.forEach(effect => {
+        buffs.party[effect.type] = {}
+        buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
+        buffs.party[effect.type].calcType = effect.calcType
+
+        if (buff.cond) {
+          buffs.party[effect.type].cond = buff.cond
+        }
+      })
+
+      if (buff.awake && this.star > 0) {
+        buff.awake.effects.forEach(effect => {
+          buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)))
+        })
+      }
+
+      if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
+        buff.lvmax.effects.forEach(effect => {
+          buffs.party[effect.type].value += effect.minValue
+        })
+      }
     })
 
-    if (this.partyBuffs.awake && this.star > 0) {
-      this.partyBuffs.awake.effects.forEach(effect => {
-        buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)))
-      })
-    }
-
-    if (this.partyBuffs.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
-      this.partyBuffs.lvmax.effects.forEach(effect => {
-        buffs.party[effect.type].value += effect.minValue
-      })
-    }
     this.buffs = buffs
 
     this.buff = {}

@@ -574,15 +574,17 @@ export class Unit {
     })
 
     Object.keys(this.card.buffs.party).forEach(statType => {
-      let value = this.card.buffs.party[statType].value
+      if (!this.card.buffs.party[statType].cond || this.checkCondition(this.card.buffs.party[statType].cond)) {
+        let value = this.card.buffs.party[statType].value
 
-      if (statsType.indexOf(statType) !== -1) {
-        if (this.card.buffs.party[statType].calcType === "percent") {
-          value = Math.floor(this.stats[statType].baseTotal * value / 100)
+        if (statsType.indexOf(statType) !== -1) {
+          if (this.card.buffs.party[statType].calcType === "percent") {
+            value = Math.floor(this.stats[statType].baseTotal * value / 100)
+          }
         }
-      }
 
-      this.updateStat(statType, value, "cardParty", "fixe")
+        this.updateStat(statType, value, "cardParty", "fixe")
+      }
     })
   }
 

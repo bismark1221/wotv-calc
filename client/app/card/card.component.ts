@@ -58,54 +58,53 @@ export class CardComponent implements OnInit {
       this.card.name = this.nameService.getName(this.card)
 
       skills.forEach(skillType => {
-        if (this.card.partyBuffs[skillType]) {
-          this.card.partyBuffs[skillType].effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(this.card, this.card.partyBuffs[skillType], effect, false);
-          });
-        }
+        let buffTypes = ["unitBuffs", "partyBuffs"]
+        buffTypes.forEach(buffType => {
+          this.card[buffType].forEach(buff => {
+            if (buff[skillType]) {
+              if (buff[skillType].type !== "buff" && buff[skillType].type !== "support") {
+                buff[skillType].name = this.nameService.getName(buff[skillType])
 
-        this.card.unitBuffs.forEach(buff => {
-          if (buff[skillType]) {
-            if (buff[skillType].type !== "buff" && buff[skillType].type !== "support") {
-              buff[skillType].name = this.nameService.getName(buff[skillType])
+                buff[skillType].effects.forEach(effect => {
+                  effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
+                });
 
-              buff[skillType].effects.forEach(effect => {
-                effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
-              });
+                buff[skillType].damageHtml = this.skillService.formatDamage(this.card, buff[skillType], buff[skillType].damage);
 
-              buff[skillType].damageHtml = this.skillService.formatDamage(this.card, buff[skillType], buff[skillType].damage);
+                if (buff[skillType].counter) {
+                  buff[skillType].counterHtml = this.skillService.formatCounter(this.card, buff[skillType], buff[skillType].counter);
+                }
 
-              if (buff[skillType].counter) {
-                buff[skillType].counterHtml = this.skillService.formatCounter(this.card, buff[skillType], buff[skillType].counter);
+                this.skillService.formatRange(this.card, buff[skillType]);
+              } else {
+                buff[skillType].effects.forEach(effect => {
+                  effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect, false);
+                });
               }
-
-              this.skillService.formatRange(this.card, buff[skillType]);
-            } else {
-              buff[skillType].effects.forEach(effect => {
-                effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect, false);
-              });
             }
-          }
+          })
         })
       })
 
-
-      this.card.unitBuffs.forEach(buff => {
-        if (buff.cond) {
-          buff.cond.forEach(cond => {
-            if (cond.type == 'job') {
-              cond.items.forEach((jobId, jobIndex) => {
-                let job = this.jobService.getJob(jobId)
-                cond.items[jobIndex] = job ? job : cond.items[jobIndex]
-              })
-            } else if (cond.type == 'unit') {
-              cond.items.forEach((unitId, unitIndex) => {
-                let unit = this.unitService.getUnit(unitId)
-                cond.items[unitIndex] = unit ? unit : cond.items[unitIndex]
-              })
-            }
-          })
-        }
+      let buffTypes = ["unitBuffs", "partyBuffs"]
+      buffTypes.forEach(buffType => {
+        this.card[buffType].forEach(buff => {
+          if (buff.cond) {
+            buff.cond.forEach(cond => {
+              if (cond.type == 'job') {
+                cond.items.forEach((jobId, jobIndex) => {
+                  let job = this.jobService.getJob(jobId)
+                  cond.items[jobIndex] = job ? job : cond.items[jobIndex]
+                })
+              } else if (cond.type == 'unit') {
+                cond.items.forEach((unitId, unitIndex) => {
+                  let unit = this.unitService.getUnit(unitId)
+                  cond.items[unitIndex] = unit ? unit : cond.items[unitIndex]
+                })
+              }
+            })
+          }
+        })
       })
     }
   }

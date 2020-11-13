@@ -1392,13 +1392,28 @@ export class JsonService {
   }
 
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
-    // party
+    // party GL
     if (rawVisionCard.card_skill) {
-      visionCard.partyBuffs = {
+      visionCard.partyBuffs = [{
         classic: this.addSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill}),
         awake: rawVisionCard.add_card_skill_buff_awake ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake}) : null,
         lvmax: rawVisionCard.add_card_skill_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax}) : null
-      }
+      }]
+    }
+
+    // party JP
+    if (rawVisionCard.card_buffs) {
+      visionCard.partyBuffs = []
+      rawVisionCard.card_buffs.forEach(dataBuff => {
+        let buff = {
+          classic: dataBuff.card_skill ? this.addSkill(visionCard, {slot: 0, value: dataBuff.card_skill}) : null,
+          awake: dataBuff.add_card_skill_buff_awake ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_awake}) : null,
+          lvmax: dataBuff.add_card_skill_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_lvmax}) : null,
+          cond : dataBuff.cnds_iname ? this.addCardCond(dataBuff.cnds_iname) : []
+        }
+
+        visionCard.partyBuffs.push(buff)
+      })
     }
 
     // self GL

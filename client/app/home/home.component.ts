@@ -60,6 +60,9 @@ export class HomeComponent {
           {type: "esper", dataId: "UN_LW_S_IFRT"},
           {type: "esper", dataId: "UN_LW_S_BHMT"},
           {type: "esper", dataId: "UN_LW_S_CACT"},
+          {type: "card", dataId: "VC_LW_BAHM"},
+          {type: "equipment", dataId: "AF_FF10_SWO_001"},
+          {type: "equipment", dataId: "AF_FF10_ROD_000"},
         ]
       },
       {
