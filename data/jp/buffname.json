@@ -121,6 +121,10 @@
             "value": "射撃攻撃耐性・魔力アップ"
         },
         {
+            "key": "BUFF_ARENA_00011",
+            "value": "斬撃攻撃アップ"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "闇属性アビリティ攻撃アップ"
         },
@@ -165,12 +169,20 @@
             "value": "ユニットのCost制限220以下、射撃・魔法攻撃耐性+50"
         },
         {
+            "key": "BUFF_CLASSMATCH_006",
+            "value": "ユニットのCost制限220以下、睡眠・魅了・ストップ・ドンムブ・ドンアク耐性+50"
+        },
+        {
             "key": "BUFF_FREEMATCH_004",
             "value": "クイック無効、CTアップ/ダウン無効、治癒力50%ダウン"
         },
         {
             "key": "BUFF_FREEMATCH_005",
             "value": "射撃・魔法攻撃耐性+50"
+        },
+        {
+            "key": "BUFF_FREEMATCH_006",
+            "value": "睡眠・魅了・ストップ・ドンムブ・ドンアク耐性+50"
         },
         {
             "key": "BUFF_IFRT_01",
@@ -303,6 +315,38 @@
         {
             "key": "BUFF_IFRT_33",
             "value": "氷属性キラー+10%"
+        },
+        {
+            "key": "BUFF_IFRT_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_IFRT_35",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_IFRT_36",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_IFRT_37",
+            "value": "クリティカル発生率+6"
+        },
+        {
+            "key": "BUFF_IFRT_38",
+            "value": "火属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_IFRT_39",
+            "value": "火属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_IFRT_40",
+            "value": "火属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_IFRT_41",
+            "value": "火属性アビリティ攻撃UP+10%"
         },
         {
             "key": "BUFF_RAMU_01",
@@ -2285,6 +2329,170 @@
             "value": "土属性キラー+10%"
         },
         {
+            "key": "BUFF_BAHM_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_BAHM_02",
+            "value": "獣キラー+2%"
+        },
+        {
+            "key": "BUFF_BAHM_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_BAHM_04",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_BAHM_05",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_BAHM_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_BAHM_07",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_BAHM_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_BAHM_09",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_BAHM_10",
+            "value": "打撃耐性+3%"
+        },
+        {
+            "key": "BUFF_BAHM_11",
+            "value": "獣キラー+3%"
+        },
+        {
+            "key": "BUFF_BAHM_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_BAHM_13",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BAHM_14",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_BAHM_15",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_BAHM_16",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_BAHM_17",
+            "value": "魔法耐性+3%"
+        },
+        {
+            "key": "BUFF_BAHM_18",
+            "value": "魔法耐性+3%"
+        },
+        {
+            "key": "BUFF_BAHM_19",
+            "value": "召喚魔法Lv7"
+        },
+        {
+            "key": "BUFF_BAHM_20",
+            "value": "打撃耐性+5%"
+        },
+        {
+            "key": "BUFF_BAHM_21",
+            "value": "打撃耐性+4%"
+        },
+        {
+            "key": "BUFF_BAHM_22",
+            "value": "獣キラー+4%"
+        },
+        {
+            "key": "BUFF_BAHM_23",
+            "value": "獣キラー+6%"
+        },
+        {
+            "key": "BUFF_BAHM_24",
+            "value": "魔法攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_BAHM_25",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_BAHM_26",
+            "value": "人キラー+6%"
+        },
+        {
+            "key": "BUFF_BAHM_27",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_BAHM_28",
+            "value": "魔法耐性+5%"
+        },
+        {
+            "key": "BUFF_BAHM_29",
+            "value": "魔法耐性+4%"
+        },
+        {
+            "key": "BUFF_BAHM_30",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_BAHM_31",
+            "value": "召喚魔法Lv15"
+        },
+        {
+            "key": "BUFF_BAHM_32",
+            "value": "獣キラー+10%"
+        },
+        {
+            "key": "BUFF_BAHM_33",
+            "value": "人キラー+10%"
+        },
+        {
+            "key": "BUFF_BAHM_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_BAHM_35",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_BAHM_36",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_BAHM_37",
+            "value": "クリティカル発生率+6"
+        },
+        {
+            "key": "BUFF_BAHM_38",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_BAHM_39",
+            "value": "魔力UP+5%"
+        },
+        {
+            "key": "BUFF_BAHM_40",
+            "value": "魔力UP+7%"
+        },
+        {
+            "key": "BUFF_BAHM_41",
+            "value": "魔力UP+8%"
+        },
+        {
             "key": "BUFF_IGNT_01",
             "value": "命中率+3"
         },
@@ -2547,6 +2755,38 @@
         {
             "key": "BUFF_BHMT_33",
             "value": "光属性キラー+5%"
+        },
+        {
+            "key": "BUFF_BHMT_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_BHMT_35",
+            "value": "クリティカルダメージ+4%"
+        },
+        {
+            "key": "BUFF_BHMT_36",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_BHMT_37",
+            "value": "クリティカルダメージ+6%"
+        },
+        {
+            "key": "BUFF_BHMT_38",
+            "value": "闇属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_BHMT_39",
+            "value": "闇属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_BHMT_40",
+            "value": "闇属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_BHMT_41",
+            "value": "闇属性アビリティ攻撃UP+10%"
         },
         {
             "key": "BUFF_MABR_01",
@@ -3339,6 +3579,34 @@
         {
             "key": "BUFF_CACT_33",
             "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_CACT_34",
+            "value": "人キラー+2%"
+        },
+        {
+            "key": "BUFF_CACT_35",
+            "value": "人キラー+3%"
+        },
+        {
+            "key": "BUFF_CACT_36",
+            "value": "人キラー+4%"
+        },
+        {
+            "key": "BUFF_CACT_37",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_CACT_38",
+            "value": "土耐性+3%"
+        },
+        {
+            "key": "BUFF_CACT_39",
+            "value": "土耐性+4%"
+        },
+        {
+            "key": "BUFF_CACT_40",
+            "value": "土耐性+5%"
         },
         {
             "key": "BUFF_ARMN_01",
@@ -4659,6 +4927,1894 @@
         {
             "key": "BUFF_MRLT_33",
             "value": "氷属性キラー+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_1",
+            "value": "火属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_2",
+            "value": "火属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_3",
+            "value": "火属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_4",
+            "value": "火属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_5",
+            "value": "火属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_6",
+            "value": "火属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_8",
+            "value": "火属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_ELEM_10",
+            "value": "火属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_FIRE_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_1",
+            "value": "氷属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_2",
+            "value": "氷属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_3",
+            "value": "氷属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_4",
+            "value": "氷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_5",
+            "value": "氷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_6",
+            "value": "氷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_8",
+            "value": "氷属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_ELEM_10",
+            "value": "氷属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_ICE_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_1",
+            "value": "風属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_2",
+            "value": "風属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_3",
+            "value": "風属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_4",
+            "value": "風属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_5",
+            "value": "風属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_6",
+            "value": "風属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_8",
+            "value": "風属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_ELEM_10",
+            "value": "風属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_WIND_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_1",
+            "value": "土属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_2",
+            "value": "土属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_3",
+            "value": "土属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_4",
+            "value": "土属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_5",
+            "value": "土属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_6",
+            "value": "土属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_8",
+            "value": "土属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_ELEM_10",
+            "value": "土属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_SOIL_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_1",
+            "value": "雷属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_2",
+            "value": "雷属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_3",
+            "value": "雷属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_4",
+            "value": "雷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_5",
+            "value": "雷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_6",
+            "value": "雷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_8",
+            "value": "雷属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_ELEM_10",
+            "value": "雷属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_THUNDER_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_1",
+            "value": "水属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_2",
+            "value": "水属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_3",
+            "value": "水属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_4",
+            "value": "水属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_5",
+            "value": "水属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_6",
+            "value": "水属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_8",
+            "value": "水属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_ELEM_10",
+            "value": "水属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_WATER_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_1",
+            "value": "光属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_2",
+            "value": "光属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_3",
+            "value": "光属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_4",
+            "value": "光属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_5",
+            "value": "光属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_6",
+            "value": "光属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_8",
+            "value": "光属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_ELEM_10",
+            "value": "光属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_SHINE_CRT_10",
+            "value": "クリティカルダメージ+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_1",
+            "value": "HP+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_2",
+            "value": "HP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_4",
+            "value": "HP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_6",
+            "value": "HP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_7",
+            "value": "HP+7%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_8",
+            "value": "HP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_HP_10",
+            "value": "HP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_1",
+            "value": "TP+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_2",
+            "value": "TP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_4",
+            "value": "TP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_6",
+            "value": "TP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_7",
+            "value": "TP+7%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_8",
+            "value": "TP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_TP_10",
+            "value": "TP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_1",
+            "value": "AP+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_2",
+            "value": "AP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_4",
+            "value": "AP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_6",
+            "value": "AP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_7",
+            "value": "AP+7%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_8",
+            "value": "AP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_AP_10",
+            "value": "AP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ATK_2",
+            "value": "攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ATK_4",
+            "value": "攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ATK_6",
+            "value": "攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ATK_8",
+            "value": "攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ATK_10",
+            "value": "攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_MAG_2",
+            "value": "魔力UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_MAG_4",
+            "value": "魔力UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_MAG_6",
+            "value": "魔力UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_MAG_8",
+            "value": "魔力UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_MAG_10",
+            "value": "魔力UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_1",
+            "value": "器用さ+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_2",
+            "value": "器用さ+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_4",
+            "value": "器用さ+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_5",
+            "value": "器用さ+5%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_6",
+            "value": "器用さ+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_8",
+            "value": "器用さ+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_DEX_10",
+            "value": "器用さ+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_1",
+            "value": "運+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_2",
+            "value": "運+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_4",
+            "value": "運+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_5",
+            "value": "運+5%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_6",
+            "value": "運+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_8",
+            "value": "運+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_LUK_10",
+            "value": "運+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_1",
+            "value": "闇属性アビリティ攻撃UP+1%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_2",
+            "value": "闇属性アビリティ攻撃UP+2%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_3",
+            "value": "闇属性アビリティ攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_4",
+            "value": "闇属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_5",
+            "value": "闇属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_6",
+            "value": "闇属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_8",
+            "value": "闇属性アビリティ攻撃UP+8%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_ELEM_10",
+            "value": "闇属性アビリティ攻撃UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_SP_5",
+            "value": "召喚ゲージ効果量UP+5%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_SP_10",
+            "value": "召喚ゲージ効果量UP+10%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_SP_15",
+            "value": "召喚ゲージ効果量UP+15%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_SP_20",
+            "value": "召喚ゲージ効果量UP+20%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_CRT_5",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MRE_DARK_CRT_10",
+            "value": "クリティカルダメージ+10%"
         },
         {
             "key": "BUFF_UN_BD_BUFF_HP_01",
