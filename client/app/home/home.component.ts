@@ -54,6 +54,15 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: "13/11",
+        items: [
+          {type: "esper", dataId: "UN_LW_S_BAHM"},
+          {type: "esper", dataId: "UN_LW_S_IFRT"},
+          {type: "esper", dataId: "UN_LW_S_BHMT"},
+          {type: "esper", dataId: "UN_LW_S_CACT"},
+        ]
+      },
+      {
         date: "31/10",
         items: [
           {type: "unit", dataId: "UN_LW_P_GABL"},
@@ -73,13 +82,6 @@ export class HomeComponent {
           {type: "card", dataId: "VC_LW_HALL"},
           {type: "card", dataId: "VC_LW_MRLT"},
           {type: "esper", dataId: "UN_LW_S_MRLT"}
-        ]
-      },
-      {
-        date: "17/10",
-        items: [
-          {type: "unit", dataId: "UN_LW_P_RIRY_01"},
-          {type: "unit", dataId: "UN_LW_P_CRIS"}
         ]
       }
     ]

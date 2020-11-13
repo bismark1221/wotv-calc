@@ -22,6 +22,7 @@ export class ModalEspersComponent implements OnInit {
   }
   savedEspers = {}
   loadEsperId = null
+  maxStar = 1;
 
   buffsImage = [
     "dark_atk",
@@ -85,6 +86,7 @@ export class ModalEspersComponent implements OnInit {
 
     if (this.esper) {
       this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper)
+      this.maxStar = this.esper.SPs.length;
     }
   }
 
@@ -151,6 +153,7 @@ export class ModalEspersComponent implements OnInit {
       this.modalStep = "load"
     } else {
       this.esper = this.esperService.selectEsperForBuilder(esperId, customData)
+      this.maxStar = this.esper.SPs.length;
 
       this.modalStep = "custom"
     }

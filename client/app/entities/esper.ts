@@ -107,7 +107,8 @@ export class Esper {
   updateMaxLevel() {
     let maxLevelPerStar = {
       1: 50,
-      2: 80
+      2: 80,
+      3: 99
     }
 
     this.maxLevel = maxLevelPerStar[this.star];
@@ -126,7 +127,8 @@ export class Esper {
   changeLevel() {
     let maxLevelPerStar = {
       1: 50,
-      2: 80
+      2: 80,
+      3: 99
     }
 
     let statsType = [
@@ -334,9 +336,19 @@ export class Esper {
   }
 
   private calculateSPs() {
+    let maxLevelPerStar = {
+      1: 50,
+      2: 80,
+      3: 99
+    }
     this.maxSPs = 0;
+
     for (let i = 1; i <= this.star; i++) {
-      let level = this.star == 2 && i == 1 ? 50 : this.level
+      let level = this.level
+      if (i < this.star) {
+        level = maxLevelPerStar[i]
+      }
+
       for (let j = 0; j <= level - 1; j++) {
         this.maxSPs += this.SPs[i - 1][j]
       }
@@ -424,8 +436,14 @@ export class Esper {
   }
 
   maxEsper() {
-    this.star = 2;
-    this.level = 80;
+    let maxLevelPerStar = {
+      1: 50,
+      2: 80,
+      3: 99
+    }
+
+    this.star = this.SPs.length;
+    this.level = maxLevelPerStar[this.star];
 
     this.changeStar()
     this.changeLevel()

@@ -68,7 +68,7 @@
                 Awakening
               </div>
               <div class="stars">
-                <ngb-rating [(rate)]="esper.star" [max]="2" class="ratingStars">
+                <ngb-rating [(rate)]="esper.star" [max]="maxStar" class="ratingStars">
                   <ng-template let-fill="fill" let-index="index">
                     <div class="star" [class.filled]="fill === 100" (click)="changeStar(index + 1)">&nbsp;</div>
                   </ng-template>
@@ -104,7 +104,7 @@
         </tr>
         <tr>
           <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-            {{ esper.stats[type].base }} / {{ esper.stats[type][1].max }}
+            {{ esper.stats[type].base }} / {{ esper.stats[type][maxStar - 1].max }}
           </td>
         </tr>
         <tr>

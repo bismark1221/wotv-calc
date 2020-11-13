@@ -1165,7 +1165,7 @@ export class JsonService {
           this.addUnit(this[this.version].units[unitId]);
         }
 
-        if (this[this.version].units[unitId].type === 1) {
+        if (this[this.version].units[unitId].type === 1 && unitId != "UN_FF10_S_VLFR") {
           this.addEsper(this[this.version].units[unitId]);
         }
       });
@@ -1932,7 +1932,7 @@ export class JsonService {
             let needToAddKiller = false;
 
             if (alreadyAddedBuffs.indexOf(buff) == -1) {
-              while (!finished) {
+              while (!finished && buff) {
                 if (this[this.version].buffs[buff]["type" + i]) {
                   if (duplicateFinded && this[this.version].buffs[buff]["type" + i] === 117) {} else {
                     if (!this.buffTypes[this[this.version].buffs[buff]["type" + i]]) {
@@ -2221,13 +2221,13 @@ export class JsonService {
 
     this.getEsperStats(esper, 'esper')
     this.getEspersSkillsAndBuffs(this[this.version].wotvEspers[dataId]);
-    this.getEspersSPs(this[this.version].wotvEspers[dataId], esper.nb_lv_tbl);
+    this.getEspersSPs(this[this.version].wotvEspers[dataId], esper, esper.nb_lv_tbl);
   }
 
   private getEsperStats(esper, type) {
     let maxUnit = esper;
-    while (maxUnit.nb_awake_id) {
-      maxUnit = this[this.version].units[maxUnit.nb_awake_id[0]]
+    if (maxUnit.nb_awake_id) {
+      maxUnit = this[this.version].units[maxUnit.nb_awake_id[maxUnit.nb_awake_id.length - 1]]
     }
 
     Object.keys(this.stats[type]).forEach(stat => {
@@ -2235,12 +2235,15 @@ export class JsonService {
         {
           min: esper.status[0][stat],
           max: esper.status[1][stat]
-        },
-        {
-          min: maxUnit.status[0][stat],
-          max: maxUnit.status[1][stat]
         }
       ]
+
+      esper.nb_awake_id.forEach(esperId => {
+        this[this.version].wotvEspers[esper.iname].stats[this.stats[type][stat]].push({
+          min: this[this.version].units[esperId].status[0][stat],
+          max: this[this.version].units[esperId].status[1][stat]
+        })
+      })
     })
   }
 
@@ -2333,8 +2336,8 @@ export class JsonService {
     });
   }
 
-  private getEspersSPs(esper, tblId) {
-    for (let awake = 1; awake <= 2; awake++) {
+  private getEspersSPs(esper, dataEsper, tblId) {
+    for (let awake = 1; awake <= dataEsper.nb_awake_id.length + 1; awake++) {
       esper.SPs.push([]);
 
       this[this.version].espersTbl[tblId]["awake" + awake].forEach(SP => {
