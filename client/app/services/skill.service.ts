@@ -933,6 +933,9 @@ export class SkillService {
       case "AVG_CT" :
         html = "Average CT of all units within the range"
       break
+      case "INCREASE_UNIT_LEVEL" :
+        html = "Increase max level of unit by " + this.getValue(skill, effect)
+      break
       case "NULLIFY" :
         html = "Nullify " + this.getValue(skill, effect)
         effect.ailments.forEach((ailment, index) => {
@@ -1569,9 +1572,17 @@ export class SkillService {
     let countLine = 0;
 
     for(let i = maxLine - aoe.l; i <= maxLine; i++) {
-      if (i !== maxLine && !onlyHorizontal) {
-        skillTable[i][middle] = skillTable[i][middle] === "N" || skillTable[i][middle] === "A" ? "A" : "AR"
-        skillTable[(maxLine + countLine + 1)][middle] = skillTable[(maxLine + countLine + 1)][middle] === "N" || skillTable[(maxLine + countLine + 1)][middle] === "A" ? "A" : "AR"
+      if (i !== maxLine) {
+        if (!onlyHorizontal) {
+          skillTable[i][middle] = skillTable[i][middle] === "N" || skillTable[i][middle] === "A" ? "A" : "AR"
+          skillTable[(maxLine + countLine + 1)][middle] = skillTable[(maxLine + countLine + 1)][middle] === "N" || skillTable[(maxLine + countLine + 1)][middle] === "A" ? "A" : "AR"
+        } else if (aoe.w == 2) {
+          skillTable[i][middle] = skillTable[i][middle] === "N" || skillTable[i][middle] === "A" ? "A" : "AR"
+          for (let j = 0; j <= aoe.l; j++) {
+            skillTable[i][middle - j] = skillTable[i][middle - j] === "N" || skillTable[i][middle - j] === "A" ? "A" : "AR"
+            skillTable[i][middle + j] = skillTable[i][middle + j] === "N" || skillTable[i][middle + j] === "A" ? "A" : "AR"
+          }
+        }
       } else {
         for (let j = 0; j <= aoe.l; j++) {
           skillTable[maxLine][middle - j] = skillTable[maxLine][middle - j] === "N" || skillTable[maxLine][middle - j] === "A" ? "A" : "AR"

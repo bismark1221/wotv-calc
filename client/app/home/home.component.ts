@@ -19,6 +19,7 @@ export class HomeComponent {
   markdown = '';
   thanks = '';
   lang = 'en';
+  version = 'GL'
 
   updated = {
     GL: [
@@ -56,6 +57,17 @@ export class HomeComponent {
       {
         date: "13/11",
         items: [
+          {type: "unit", dataId: "UN_FF10_P_TIDU"},
+          {type: "unit", dataId: "UN_FF10_P_YUNA"},
+
+          {type: "unit", dataId: "UN_LW_P_STRN"},
+          {type: "unit", dataId: "UN_LW_P_ELDE"},
+          {type: "unit", dataId: "UN_LW_P_ROBB"},
+          {type: "unit", dataId: "UN_LW_P_ORDR"},
+          {type: "unit", dataId: "UN_LW_P_MONT"},
+          {type: "unit", dataId: "UN_LW_P_BYLO"},
+          {type: "unit", dataId: "UN_LW_P_RART"},
+
           {type: "esper", dataId: "UN_LW_S_BAHM"},
           {type: "esper", dataId: "UN_LW_S_IFRT"},
           {type: "esper", dataId: "UN_LW_S_BHMT"},
@@ -125,9 +137,9 @@ export class HomeComponent {
 
   private getUpdate() {
     this.lang = this.translateService.currentLang
-    let version = this.navService.getVersion()
+    this.version = this.navService.getVersion()
 
-    this.updated[version].forEach((update, updateIndex) => {
+    this.updated[this.version].forEach((update, updateIndex) => {
       this.updatedFormatted[updateIndex] = {
         date: update.date,
         items: []

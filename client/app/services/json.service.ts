@@ -706,7 +706,8 @@ export class JsonService {
     "esper",
     "limit",
     "master",
-    "party"
+    "party",
+    "ex_buff"
   ]
 
   private statsAtkRes = [
@@ -1247,6 +1248,7 @@ export class JsonService {
       names: {},
       rarity: this.rarity[unit.rare],
       jobs: unit.jobsets,
+      exJobs: [],
       stats: {},
       cost: unit.cost,
       element: this.elements[unit.elem[0]],
@@ -1257,6 +1259,12 @@ export class JsonService {
       },
       replacedSkills : {}
     };
+
+    if (unit.ccsets) {
+      unit.ccsets.forEach(exJob => {
+        this[this.version].wotvUnits[dataId].exJobs.push(exJob.m)
+      })
+    }
 
     this.getUnitImage(this[this.version].wotvUnits[dataId])
     this.getNames(this[this.version].wotvUnits[dataId], 'unit');
@@ -1520,8 +1528,16 @@ export class JsonService {
       effects: [],
       dataId: panelSkill.value,
       type: this.slots[(this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot ? this[this.version].skills[panelSkill.value].slot : 0)],
-      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot == 1
+      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot == 1,
+      increaseUnitLevel: panelSkill.ival
     };
+
+    if (panelSkill.ival) {
+      skill.effects.push({
+        type: "INCREASE_UNIT_LEVEL",
+        value: panelSkill.ival
+      });
+    }
 
     this.updateSkill(unit, skill, panelSkill.value);
 
@@ -1653,7 +1669,7 @@ export class JsonService {
       console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- range buff != 1")
     }
 
-    if (dataSkill.eff_w && dataSkill.eff_w != 1) {
+    if (dataSkill.eff_w && dataSkill.eff_w != 1 && dataSkill.eff_w != 2) {
       console.log("@@@@@ " + unit.names.en + " -- " + skill.names.en + " -- eff_w != 1")
     }
 
@@ -1738,7 +1754,8 @@ export class JsonService {
       skill.aoe = {
         s: dataSkill.eff_s,
         l: dataSkill.eff_l,
-        h: dataSkill.eff_h
+        h: dataSkill.eff_h,
+        w: dataSkill.eff_w
       }
     }
 
@@ -2076,18 +2093,24 @@ export class JsonService {
         min: stats[0][stat],
         max: stats[1][stat]
       }
+
+      if (stats[2]) {
+        unit.stats[this.stats[type][stat]].ex = stats[2][stat]
+      }
     })
   }
 
   private getMoveJumpUnit(unit) {
     unit.stats.JUMP = {
       "min": this[this.version].jobs[unit.jobs[0]].jump,
-      "max": this[this.version].jobs[unit.jobs[0]].jump
+      "max": this[this.version].jobs[unit.jobs[0]].jump,
+      "ex": this[this.version].jobs[unit.exJobs[0]] ? this[this.version].jobs[unit.exJobs[0]].jump : null
     }
 
     unit.stats.MOVE = {
       "min": this[this.version].jobs[unit.jobs[0]].move,
-      "max": this[this.version].jobs[unit.jobs[0]].move
+      "max": this[this.version].jobs[unit.jobs[0]].move,
+      "ex": this[this.version].jobs[unit.exJobs[0]] ? this[this.version].jobs[unit.exJobs[0]].move : null
     }
   }
 

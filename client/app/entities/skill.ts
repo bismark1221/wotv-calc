@@ -51,6 +51,7 @@ export class Skill {
   basedHtml;
   based;
   level;
+  increaseUnitLevel;
 
   constructFromJson(ability: Skill, translateService: TranslateService): void {
 

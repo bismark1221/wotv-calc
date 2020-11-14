@@ -390,6 +390,15 @@ small {
   left: 50px;
 }
 
+.EXunitGridContainer {
+  margin: auto;
+  height: 1100px;
+  width: 800px;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 50px;
+}
+
 .builderEsperGridContainer {
   margin: auto;
   height: 720px;

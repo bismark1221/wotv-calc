@@ -456,11 +456,14 @@
     <a ngbNavLink routerLink="." fragment="skills">SKILLS</a>
     <ng-template ngbNavContent #skills>
       <div *ngIf="unit">
-        <table class="skillsTable" *ngFor="let i of ['support', 'counter']">
+        <table class="skillsTable" *ngFor="let i of possibleSkillTypes">
           <tbody>
             <tr>
-              <th colspan="20">
-                <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" /> {{ i | titlecase }}
+              <th colspan="20" *ngIf="i != 'ex_buff'">
+                <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" />&nbsp;{{ i | titlecase }}
+              </th>
+              <th colspan="20" *ngIf="i == 'ex_buff'">
+                <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '_ec.png'}}" />&nbsp;EX Buffs
               </th>
             </tr>
             <tr>
@@ -504,6 +507,7 @@
 
             <tr *ngFor="let upgradedSkill of skill.upgrades">
               <td colspan="3">Upgrade</td>
+              <td *ngIf="i == 'counter'"></td>
               <td>{{ upgradedSkill.name }}</td>
               <td class="skillEffectTd">
                 <div *ngIf="upgradedSkill.upgradeHtml !== ''">
@@ -768,7 +772,7 @@
       </div>
 
       <div class="rightBlock" *ngIf="unit && grid">
-        <div class="unitGridContainer" style="text-align: center;">
+        <div [ngClass]="{'unitGridContainer': !unit.exJobs || unit.exJobs.length == 0, 'EXunitGridContainer': unit.exJobs && unit.exJobs.length > 0}" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
               <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>

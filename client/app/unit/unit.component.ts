@@ -18,9 +18,11 @@ import { NameService } from '../services/name.service';
 export class UnitComponent implements OnInit {
   unit = null;
   jobs = [];
+  exJobs = [];
   grid = null;
   specialBismark = false;
   activeTab;
+  possibleSkillTypes = ['support', 'counter']
 
   constructor(
     private unitService: UnitService,
@@ -42,6 +44,9 @@ export class UnitComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.unit = this.unitService.getUnitBySlug(params.get('slug'))
+      if (this.unit.exJobs && this.unit.exJobs.length > 0) {
+        this.possibleSkillTypes = ['support', 'counter', 'ex_buff']
+      }
 
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
@@ -118,6 +123,7 @@ export class UnitComponent implements OnInit {
           this.unit.skills.push(skill)
         } else {
           let effect = skill.effects[0]
+
           if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
             this.unit.totalBuffs[effect.type] += effect.minValue
           } else {
@@ -197,6 +203,16 @@ export class UnitComponent implements OnInit {
         i++
       })
 
+      if (this.unit.exJobs) {
+        this.unit.exJobs.forEach(jobId => {
+          let job = this.jobService.getJob(jobId)
+          // this.calcJobStat(job, (i > 0 ? true : false))
+          // job.name = this.nameService.getName(job)
+          this.exJobs.push(job)
+          i++
+        })
+      }
+
       Object.keys(this.unit.totalJobsStats).forEach(stat => {
         this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat])
         if (this.unit.totalJobsStats[stat] != (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
@@ -205,7 +221,7 @@ export class UnitComponent implements OnInit {
 
       })
 
-      this.grid = this.gridService.generateUnitGrid(this.unit, 800)
+      this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0)
     }
   }
 

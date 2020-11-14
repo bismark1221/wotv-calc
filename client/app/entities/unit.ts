@@ -20,6 +20,7 @@ export class Unit {
       en: 'Job 3'
     }
   ];
+  exJobs = [];
 
   skills: Skill[] = [new Skill()];
   buffs: Buff[] = [new Buff()];
@@ -134,6 +135,7 @@ export class Unit {
     this.rarity = unit.rarity;
     this.names = unit.names;
     this.jobs = unit.jobs;
+    this.exJobs = unit.exJobs;
     this.skills = unit.skills;
     this.buffs = unit.buffs;
     this.stats = unit.stats;

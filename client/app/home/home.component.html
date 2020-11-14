@@ -21,6 +21,13 @@
   <div class="lastUpdate">
     Last Updates
   </div>
+  <div *ngIf="version == 'JP'">
+    Like you know there has been a major update on JP version. I try to update the website as fast a possible but some stuffs are still missing<br/>
+    - Show stats for EX Units<br/>
+    - Builder with EX Jobs<br/>
+    - Status ailment resistance for 3* espers<br/>
+    If you see other stuffs broken to hesitate to contact me ^
+  </div>
   <div *ngFor="let line of updatedFormatted">
     <div class="itemsTable">
       <div class="date">
