@@ -250,8 +250,10 @@
               <td>{{ unit.stats.DEX.min }}</td>
               <td>{{ unit.stats.AGI.min }}</td>
               <td>{{ unit.stats.LUCK.min }}</td>
-              <td rowspan="2">{{ unit.stats.MOVE.min }}</td>
-              <td rowspan="2">{{ unit.stats.JUMP.min }}</td>
+              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length == 0">{{ unit.stats.MOVE.min }}</td>
+              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length == 0">{{ unit.stats.JUMP.min }}</td>
+              <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.MOVE.min }}</td>
+              <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.JUMP.min }}</td>
             </tr>
             <tr>
               <td>Max</td>
@@ -263,6 +265,17 @@
               <td>{{ unit.stats.DEX.max }}</td>
               <td>{{ unit.stats.AGI.max }}</td>
               <td>{{ unit.stats.LUCK.max }}</td>
+            </tr>
+            <tr *ngIf="unit.exJobs && unit.exJobs.length > 0">
+              <td>EX</td>
+              <td>{{ unit.stats.HP.ex }}</td>
+              <td>{{ unit.stats.TP.ex }}</td>
+              <td>{{ unit.stats.AP.ex }}</td>
+              <td>{{ unit.stats.ATK.ex }}</td>
+              <td>{{ unit.stats.MAG.ex }}</td>
+              <td>{{ unit.stats.DEX.ex }}</td>
+              <td>{{ unit.stats.AGI.ex }}</td>
+              <td>{{ unit.stats.LUCK.ex }}</td>
             </tr>
           </tbody>
         </table>
@@ -304,6 +317,43 @@
             <tr>
               <td colspan="11" *ngIf="unit.remainingBuffs.length > 0">
                 <div *ngFor="let buff of unit.remainingBuffs">{{ buff }}</div>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="11">EX Board Stats</th>
+            </tr>
+            <tr>
+              <th class="sub">HP</th>
+              <th class="sub">TP</th>
+              <th class="sub">INITIAL AP</th>
+              <th class="sub">ATK</th>
+              <th class="sub">DEF</th>
+              <th class="sub">MAG</th>
+              <th class="sub">SPR</th>
+              <th class="sub">DEX</th>
+              <th class="sub">AGI</th>
+              <th class="sub">LUCK</th>
+              <th class="sub">CRITIC RATE</th>
+            </tr>
+            <tr>
+              <td>{{ unit.exBuffs.HP }}</td>
+              <td>{{ unit.exBuffs.TP }}</td>
+              <td>{{ unit.exBuffs.INITIAL_AP }}</td>
+              <td>{{ unit.exBuffs.ATK }}</td>
+              <td>{{ unit.exBuffs.DEF }}</td>
+              <td>{{ unit.exBuffs.MAG }}</td>
+              <td>{{ unit.exBuffs.SPR }}</td>
+              <td>{{ unit.exBuffs.DEX }}</td>
+              <td>{{ unit.exBuffs.AGI }}</td>
+              <td>{{ unit.exBuffs.LUCK }}</td>
+              <td>{{ unit.exBuffs.CRITIC_RATE }}</td>
+            </tr>
+            <tr>
+              <th class="sub" colspan="11" *ngIf="unit.remainingExBuffs.length > 0">OTHERS</th>
+            </tr>
+            <tr>
+              <td colspan="11" *ngIf="unit.remainingExBuffs.length > 0">
+                <div *ngFor="let buff of unit.remainingExBuffs">{{ buff }}</div>
               </td>
             </tr>
           </tbody>
@@ -348,6 +398,32 @@
               <td>{{ unit.totalJobsStats.DEX }}</td>
               <td>{{ unit.totalJobsStats.AGI }}</td>
               <td>{{ unit.totalJobsStats.LUCK }}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0">
+            <tr class="jobsStatsLine">
+              <td>
+                <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '_ec.png'}}" />
+              </td>
+              <td>{{ unit.EXJobsStats[0].HP }}</td>
+              <td>{{ unit.EXJobsStats[0].TP }}</td>
+              <td>{{ unit.EXJobsStats[0].AP }}</td>
+              <td>{{ unit.EXJobsStats[0].ATK }}</td>
+              <td>{{ unit.EXJobsStats[0].MAG }}</td>
+              <td>{{ unit.EXJobsStats[0].DEX }}</td>
+              <td>{{ unit.EXJobsStats[0].AGI }}</td>
+              <td>{{ unit.EXJobsStats[0].LUCK }}</td>
+            </tr>
+            <tr class="jobsStatsLine jobsStatsTotal">
+              <td>Total + EX</td>
+              <td>{{ unit.totalEXJobsStats.HP }}</td>
+              <td>{{ unit.totalEXJobsStats.TP }}</td>
+              <td>{{ unit.totalEXJobsStats.AP }}</td>
+              <td>{{ unit.totalEXJobsStats.ATK }}</td>
+              <td>{{ unit.totalEXJobsStats.MAG }}</td>
+              <td>{{ unit.totalEXJobsStats.DEX }}</td>
+              <td>{{ unit.totalEXJobsStats.AGI }}</td>
+              <td>{{ unit.totalEXJobsStats.LUCK }}</td>
             </tr>
           </tbody>
         </table>

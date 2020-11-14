@@ -1234,7 +1234,12 @@ export class JsonService {
       }
     });
 
-    job.ranks.forEach(rank => {
+    let ranks = job.ranks
+    if (ranks.length < 10 && job.origin && this[this.version].jobs[job.origin]) {
+      ranks = this[this.version].jobs[job.origin].ranks
+    }
+
+    ranks.forEach(rank => {
       let rankModifiers = {};
       this.jobStats.forEach(stat => {
         rankModifiers[this.stats.unit[stat]] = rank[stat];
@@ -1538,7 +1543,8 @@ export class JsonService {
     if (panelSkill.ival) {
       skill.effects.push({
         type: "INCREASE_UNIT_LEVEL",
-        value: panelSkill.ival
+        value: panelSkill.ival,
+        calcType: "fixe"
       });
     }
 

@@ -97,7 +97,22 @@ export class UnitComponent implements OnInit {
         LUCK: 0,
         CRITIC_RATE: 0,
       };
+
+      this.unit.exBuffs = {
+        HP: 0,
+        TP: 0,
+        INITIAL_AP: 0,
+        ATK: 0,
+        DEF: 0,
+        MAG: 0,
+        SPR: 0,
+        DEX: 0,
+        AGI: 0,
+        LUCK: 0,
+        CRITIC_RATE: 0,
+      };
       this.unit.remainingBuffs = [];
+      this.unit.remainingExBuffs = [];
 
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill
@@ -125,9 +140,17 @@ export class UnitComponent implements OnInit {
           let effect = skill.effects[0]
 
           if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
-            this.unit.totalBuffs[effect.type] += effect.minValue
+            if (skill.jobLevel <= 15) {
+              this.unit.totalBuffs[effect.type] += effect.minValue
+            } else {
+              this.unit.exBuffs[effect.type] += effect.maxValue
+            }
           } else {
-            this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+            if (skill.jobLevel <= 15) {
+              this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+            } else {
+              this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+            }
           }
         }
       })
@@ -194,6 +217,9 @@ export class UnitComponent implements OnInit {
       this.unit.jobsStats = [];
       this.unit.totalJobsStats = {};
 
+      this.unit.EXJobsStats = [];
+      this.unit.totalEXJobsStats = {};
+
       let i = 0
       this.unit.jobs.forEach(jobId => {
         let job = this.jobService.getJob(jobId)
@@ -206,8 +232,8 @@ export class UnitComponent implements OnInit {
       if (this.unit.exJobs) {
         this.unit.exJobs.forEach(jobId => {
           let job = this.jobService.getJob(jobId)
-          // this.calcJobStat(job, (i > 0 ? true : false))
-          // job.name = this.nameService.getName(job)
+          this.calcEXJobStat(job, false)
+          job.name = this.nameService.getName(job)
           this.exJobs.push(job)
           i++
         })
@@ -218,7 +244,10 @@ export class UnitComponent implements OnInit {
         if (this.unit.totalJobsStats[stat] != (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
           this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])
         }
+      })
 
+      Object.keys(this.unit.totalEXJobsStats).forEach(stat => {
+        this.unit.totalEXJobsStats[stat] = Math.floor(this.unit.totalEXJobsStats[stat])
       })
 
       this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0)
@@ -299,6 +328,22 @@ export class UnitComponent implements OnInit {
     });
 
     this.unit.jobsStats.push(stats)
+  }
+
+  private calcEXJobStat(job, subJob) {
+    let stats = {};
+
+    Object.keys(job.statsModifiers[9]).forEach(stat => {
+      stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1))
+
+      if (!subJob) {
+        this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
+      } else {
+        this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
+      }
+    });
+
+    this.unit.EXJobsStats.push(stats)
   }
 
   isWeapon(type) {
