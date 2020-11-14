@@ -324,7 +324,8 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== "skill") {
           html = this.getIncrease(effect) + " CT" + this.getValue(skill, effect) + this.getTurns(effect)
         } else {
-          html = (effect.rate ? effect.rate + "% chance to " : "") + "Restore CT" + this.getValue(skill, effect) + this.getTurns(effect)
+          html = (effect.rate ? effect.rate + "% chance to " : "") +
+          (effect.calcType == "decrease" ? "Decrease" : "Restore") + " CT" + this.getValue(skill, effect) + this.getTurns(effect)
         }
       break
       case "ATK" :
@@ -914,6 +915,15 @@ export class SkillService {
       break
       case "RES_SLASH_ATK_PENETRATION" :
         html = "Increase slash resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "RES_PIERCE_ATK_PENETRATION" :
+        html = "Increase pierce resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "RES_STRIKE_ATK_PENETRATION" :
+        html = "Increase strike resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
+      break
+      case "RES_MISSILE_ATK_PENETRATION" :
+        html = "Increase missile resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "RES_MAGIC_ATK_PENETRATION" :
         html = "Increase magic resistance penetration" + this.getValue(skill, effect) + this.getTurns(effect)

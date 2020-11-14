@@ -358,6 +358,9 @@ export class JsonService {
     316: "AP_CONSUMPTION",
     319: "SPIRIT_PENETRATION",
     321: "RES_SLASH_ATK_PENETRATION",
+    323: "RES_PIERCE_ATK_PENETRATION",
+    325: "RES_STRIKE_ATK_PENETRATION",
+    327: "RES_MISSILE_ATK_PENETRATION",
     329: "RES_MAGIC_ATK_PENETRATION",
     347: "HEAL_POWER"
   }
@@ -1568,6 +1571,7 @@ export class JsonService {
       eff_s: null,
       eff_l: null,
       eff_h: null,
+      eff_w: null,
       ct_spd: null,
       ct_spd1: null,
       hit: null,
@@ -1609,7 +1613,6 @@ export class JsonService {
       hp_bonus: null,
       invtag: null,
       acbst: null,
-      eff_w: null,
       bbrk: null,
 
       // not used
