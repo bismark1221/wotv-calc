@@ -13,6 +13,7 @@ export class BuilderMasterRanksComponent implements OnInit {
   masterRanks
   ranks
   showSave = false
+  version = 'GL'
 
   constructor(
     private masterRanksService: MasterRanksService,
@@ -24,6 +25,7 @@ export class BuilderMasterRanksComponent implements OnInit {
   ngOnInit() {
     this.masterRanks = this.masterRanksService.getMasterRanks()
     this.ranks = this.masterRanksService.getRanks()
+    this.version = this.navService.getVersion()
 
     this.navService.setTitle("Master Ranks Builder");
   }
@@ -37,7 +39,7 @@ export class BuilderMasterRanksComponent implements OnInit {
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {
-        if (user && this.navService.getVersion() == 'JP') {
+        if (user && this.version == 'JP') {
           this.showSave = true
         } else {
           this.showSave = false

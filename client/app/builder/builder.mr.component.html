@@ -1,4 +1,4 @@
-<div class="row" *ngIf="masterRanks">
+<div class="row" *ngIf="masterRanks && version == 'JP'">
   <table class="masterRanksTable">
     <tr>
       <td colspan="4"><h1>Master Ranks</h1></td>
@@ -28,6 +28,17 @@
       <td colspan="4">
         <button class="btn btn-main" (click)="saveMasterRanks()">SAVE</button>
       </td>
+    </tr>
+  </table>
+</div>
+
+<div class="row" *ngIf="version == 'GL'">
+  <table class="masterRanksTable">
+    <tr>
+      <td><h1>Master Ranks</h1></td>
+    </tr>
+    <tr>
+      <td>Not available in GL version</td>
     </tr>
   </table>
 </div>
