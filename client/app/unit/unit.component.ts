@@ -114,9 +114,12 @@ export class UnitComponent implements OnInit {
       this.unit.remainingBuffs = [];
       this.unit.remainingExBuffs = [];
 
+      let maxExLevel = 0
+      let exempleSkillMaxExLevel = null
+
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill
-        if (skill.type !== "buff") {
+        if (skill.type !== "buff" && skill.type != "ex_buff") {
           skill.name = this.nameService.getName(skill)
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
@@ -136,7 +139,7 @@ export class UnitComponent implements OnInit {
           skill = this.addUpgrade(skill)
 
           this.unit.skills.push(skill)
-        } else {
+        } else if (this.unit.board.nodes[nodeId].type != "skill") {
           let effect = skill.effects[0]
 
           if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
@@ -149,11 +152,25 @@ export class UnitComponent implements OnInit {
             if (skill.jobLevel <= 15) {
               this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
             } else {
-              this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+              if (effect && effect.type == "INCREASE_UNIT_LEVEL") {
+                maxExLevel += effect.value
+                exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill))
+              } else {
+                if (skill.maxLevel > 1) {
+                  skill.level = skill.maxLevel
+                }
+                this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+              }
             }
           }
         }
       })
+
+      if (maxExLevel > 0) {
+        exempleSkillMaxExLevel.effects[0].value = maxExLevel
+        this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, exempleSkillMaxExLevel, exempleSkillMaxExLevel.effects[0]))
+      }
+
       this.skillService.sort(this.unit.skills);
 
       if (this.unit.masterSkill.length > 0) {

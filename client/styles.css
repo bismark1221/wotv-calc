@@ -417,6 +417,15 @@ small {
   left: 50px;
 }
 
+.builderEXUnitGridContainer {
+  margin: auto;
+  height: 1350px;
+  width: 1000px;
+  position: relative;
+  transform-origin: 50% 50%;
+  left: 50px;
+}
+
 .hexGrid {
   padding: 0;
 }
@@ -507,6 +516,26 @@ small {
 .hexGrid li .hex.counter.activated {
   background: var(--hex-counter-activated);
   color: var(--white);
+}
+
+.hexGrid li .hex.ex_buff {
+  background: #ffb568;
+  color: var(--black);
+}
+
+.hexGrid li .hex.ex_buff.activated {
+  background: #ff8100;
+  color: var(--black);
+}
+
+.hexGrid li .hex.unit_level {
+  background: #91d6ff;
+  color: var(--black);
+}
+
+.hexGrid li .hex.unit_level.activated {
+  background: #00a1ff;
+  color: var(--black);
 }
 
 .hexGrid li .hex.activated {

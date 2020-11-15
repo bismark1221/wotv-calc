@@ -905,7 +905,7 @@ export class SkillService {
         html = "Auto restore TP" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "MAX_DAMAGE" :
-        html = "Increase maximum damage" + this.getValue(skill, effect) + this.getTurns(effect)
+        html = "Increase max damage" + this.getValue(skill, effect) + this.getTurns(effect)
       break
       case "DEFENSE_PENETRATION" :
         html = "Increase defense penetration" + this.getValue(skill, effect) + this.getTurns(effect)

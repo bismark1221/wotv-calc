@@ -31,126 +31,6 @@ export class UnitService {
     "UN_LW_P_FRVA"
   ]
 
-  private statsType = [
-    "HP",
-    "TP",
-    "AP",
-    "ATK",
-    "DEF",
-    "SPR",
-    "MAG",
-    "DEX",
-    "AGI",
-    "LUCK",
-    "MOVE",
-    "JUMP"
-  ]
-
-  private statsAtkRes = [
-    "FIRE",
-    "ICE",
-    "EARTH",
-    "WIND",
-    "LIGHTNING",
-    "WATER",
-    "LIGHT",
-    "DARK",
-    "SLASH",
-    "PIERCE",
-    "STRIKE",
-    "MISSILE",
-    "MAGIC"
-  ]
-
-  private elements = [
-    "FIRE",
-    "ICE",
-    "EARTH",
-    "WIND",
-    "LIGHTNING",
-    "WATER",
-    "LIGHT",
-    "DARK"
-  ]
-
-  private atks = [
-    "SLASH",
-    "PIERCE",
-    "STRIKE",
-    "MISSILE",
-    "MAGIC"
-  ]
-
-  private ailments = [
-    "POISON",
-    "BLIND",
-    "SLEEP",
-    "SILENCE",
-    "PARALYZE",
-    "CONFUSION",
-    "PETRIFY",
-    "TOAD",
-    "CHARM",
-    "SLOW",
-    "STOP",
-    "IMMOBILIZE",
-    "DISABLE",
-    "BERSERK",
-    "DOOM",
-  ]
-
-  private statsOrder = [
-    "FIRE_RES",
-    "ICE_RES",
-    "EARTH_RES",
-    "WIND_RES",
-    "LIGHTNING_RES",
-    "WATER_RES",
-    "LIGHT_RES",
-    "DARK_RES",
-    "SLASH_RES",
-    "PIERCE_RES",
-    "STRIKE_RES",
-    "MISSILE_RES",
-    "MAGIC_RES",
-    "FIRE_ATK",
-    "ICE_ATK",
-    "EARTH_ATK",
-    "WIND_ATK",
-    "LIGHTNING_ATK",
-    "WATER_ATK",
-    "LIGHT_ATK",
-    "DARK_ATK",
-    "SLASH_ATK",
-    "PIERCE_ATK",
-    "STRIKE_ATK",
-    "MISSILE_ATK",
-    "MAGIC_ATK",
-    "ACCURACY",
-    "CRITIC_RATE",
-    "CRITIC_AVOID",
-    "EVADE",
-    "POISON",
-    "BLIND",
-    "SLEEP",
-    "SILENCE",
-    "PARALYZE",
-    "CONFUSION",
-    "PETRIFY",
-    "TOAD",
-    "CHARM",
-    "SLOW",
-    "STOP",
-    "IMMOBILIZE",
-    "DISABLE",
-    "BERSERK",
-    "DOOM",
-  ]
-
-  private filteredStats = [
-    "INITIAL_AP"
-  ]
-
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -354,13 +234,19 @@ export class UnitService {
     this.unit.name = this.unit.getName(this.translateService)
 
     this.unit.jobsData = []
-    this.unit.jobs.forEach((jobId, jobIndex) => {
+    this.unit.jobs.forEach(jobId => {
       let job = this.jobService.getJob(jobId)
       job.name = job.getName(this.translateService)
       job.level = 1;
       this.unit.jobsData.push(job)
     })
     this.unit.subjob = 0;
+
+    this.unit.exJobsData = []
+    this.unit.exJobs.forEach(jobId => {
+      let job = this.jobService.getJob(jobId)
+      this.unit.exJobsData.push(job)
+    })
 
     this.unit.star = 1;
     this.unit.lb = 0;

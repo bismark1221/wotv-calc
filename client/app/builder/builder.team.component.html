@@ -140,7 +140,7 @@
             <div ngbDropdown class="dropdownDiv">
               <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.tableJobLevels" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(unitPos, i, level)">{{ level }}</button>
+                <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(unitPos, i, level)">{{ level }}</button>
               </div>
             </div>
           </div>

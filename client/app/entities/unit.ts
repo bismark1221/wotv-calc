@@ -110,6 +110,7 @@ export class Unit {
   tableLevels
   maxJobLevel
   jobsData
+  exJobsData
   tableJobLevels
   masterSkillLevel
   masterSkillActivated
@@ -179,10 +180,9 @@ export class Unit {
     }
 
     this.updateMaxLevel();
-    this.updateMaxJobLevel();
   }
 
-  private updateMaxLevel() {
+  private updateMaxLevel(onlyLevel = false) {
     let levelPerStar = {
       1: 0,
       2: 5,
@@ -203,6 +203,16 @@ export class Unit {
 
     this.maxLevel = 30 + levelPerStar[this.star] + levelPerLB[this.lb ? this.lb : 0];
 
+    if (this.maxLevel == 99 && this.exJobs.length > 0){
+      Object.keys(this.board.nodes).forEach(nodeId => {
+        let node = this.board.nodes[nodeId]
+
+        if (node.skill && node.skill.effects && node.skill.effects[0] && node.skill.effects[0].type == "INCREASE_UNIT_LEVEL" && node.activated) {
+          this.maxLevel += node.skill.effects[0].value
+        }
+      })
+    }
+
     if (this.level > this.maxLevel) {
       this.level = this.maxLevel
       this.changeLevel()
@@ -213,7 +223,9 @@ export class Unit {
       this.tableLevels.push(i);
     }
 
-    this.updateMaxJobLevel()
+    if (!onlyLevel) {
+      this.updateMaxJobLevel()
+    }
   }
 
   private updateMaxJobLevel() {
@@ -232,7 +244,11 @@ export class Unit {
       4
     ]
 
-    this.maxJobLevel = 6 + levelPerLB[this.lb ? this.lb : 0];
+    this.maxJobLevel = [
+      6 + levelPerLB[this.lb ? this.lb : 0] == 15 && this.exJobs.length > 0 ? 25 : 6 + levelPerLB[this.lb ? this.lb : 0],
+      6 + levelPerLB[this.lb ? this.lb : 0],
+      6 + levelPerLB[this.lb ? this.lb : 0]
+    ]
 
     let updated = false;
     this.jobsData.forEach((job, jobIndex) => {
@@ -257,9 +273,11 @@ export class Unit {
       this.changeLevel()
     }
 
-    this.tableJobLevels = [];
-    for (let i = 1; i <= this.maxJobLevel; i++) {
-      this.tableJobLevels.push(i);
+    this.tableJobLevels = [[], [], []];
+    for (let i = 0; i <= 2; i++) {
+      for (let j = 1; j <= this.maxJobLevel[i]; j++) {
+        this.tableJobLevels[i].push(j);
+      }
     }
 
     this.disableNotAvailableNodes()
@@ -309,16 +327,33 @@ export class Unit {
 
     this.jobsData.forEach((job, jobIndex) => {
       let subJob = jobIndex !== 0
-      Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
+      let level = !subJob && job.level > 15 ? 14 : job.level - 1
+      Object.keys(job.statsModifiers[level]).forEach(statType => {
         if (!this.stats[statType]) {
           this.stats[statType] = {
             base: 0
           }
         }
-        let stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
+        let stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000) * (subJob ? 0.5 : 1)
 
         this.stats[statType].baseTotal += stat
       });
+    })
+
+    this.exJobsData.forEach(job => {
+      if (this.jobsData[0].level > 15) {
+        let level = this.jobsData[0].level - 16
+        Object.keys(job.statsModifiers[level]).forEach(statType => {
+          if (!this.stats[statType]) {
+            this.stats[statType] = {
+              base: 0
+            }
+          }
+          let stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000)
+
+          this.stats[statType].baseTotal += stat
+        });
+      }
     })
 
     Object.keys(this.stats).forEach(stat => {
@@ -431,7 +466,12 @@ export class Unit {
       if (node.type == "buff" && node.level) {
         node.skill.effects.forEach(effect => {
           if (effect.calcType === "percent" || effect.calcType === "fixe" || effect.calcType === "resistance") {
-            this.updateStat(effect.type, effect.minValue, "board", effect.calcType === "percent" ? "percent" : "fixe")
+            let value = effect.minValue
+            if (node.skill.maxLevel > 1) {
+              value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (node.skill.maxLevel - 1) * (node.level - 1)))
+            }
+
+            this.updateStat(effect.type, value, "board", effect.calcType === "percent" ? "percent" : "fixe")
           } else {
             console.log("not manage effect in board percent/fixe")
             console.log(node)
@@ -832,7 +872,14 @@ export class Unit {
     let statsToRemove = [];
     Object.keys(this.stats).forEach(stat => {
       if (stat == "INITIAL_AP") {
-        let initialAPModifier = 100 + this.jobsData[0].statsModifiers[this.jobsData[0].level - 1]["INITIAL_AP"]
+        let jobModifier = 0
+        if (this.jobsData[0].level <= 15) {
+          jobModifier = this.jobsData[0].statsModifiers[this.jobsData[0].level - 1]["INITIAL_AP"]
+        } else {
+          jobModifier = this.exJobsData[0].statsModifiers[this.jobsData[0].level - 16]["INITIAL_AP"]
+        }
+
+        let initialAPModifier = 100 + jobModifier
         let initialAP = this.stats["AP"].total * initialAPModifier / 100
 
         this.stats["INITIAL_AP"].base = Math.floor(initialAP)
@@ -893,17 +940,21 @@ export class Unit {
       this.hideNode(node)
       this.changeLevel()
     }
+
+    this.updateMaxLevel(true)
   }
 
   clickNode(node) {
     if (node !== 0) {
-      if (!this.board.nodes[node].activated || this.grid.nodesForGrid[node].subType == "skill") {
+      if (!this.board.nodes[node].activated || (this.board.nodes[node].skill.maxLevel && this.board.nodes[node].skill.maxLevel > 1)) {
         this.showNode(node)
       } else {
         this.hideNode(node)
       }
       this.changeLevel()
     }
+
+    this.updateMaxLevel(true)
   }
 
   showNode(node) {
@@ -923,6 +974,7 @@ export class Unit {
   hideNode(node, fullHide = false) {
     if (node !== 0) {
       let level = this.updateSkill(node, false, fullHide)
+
       if (level === 0) {
         this.board.nodes[node].activated = false;
         this.board.nodes[node].children.forEach(childNode => {
@@ -945,7 +997,7 @@ export class Unit {
   private updateSkill(nodeId, increase, fullHide = false) {
     let node = this.board.nodes[nodeId]
 
-    if (this.grid.nodesForGrid[nodeId].subType == "buff") {
+    if (this.grid.nodesForGrid[nodeId].subType == "buff" && (!node.skill.maxLevel || node.skill.maxLevel <= 1)) {
       node.level = increase ? 1 : 0;
     } else {
       if (increase) {
@@ -975,13 +1027,17 @@ export class Unit {
   maxUnit() {
     this.star = 6;
     this.lb = 5;
-    this.level = 99;
 
-    this.jobsData.forEach(job => {
-      job.level = 15
+    this.updateMaxJobLevel()
+    this.jobsData.forEach((job, jobIndex) => {
+      job.level = this.maxJobLevel[jobIndex]
     })
 
     this.maxNodes()
+
+    this.updateMaxLevel()
+    this.level = this.maxLevel
+
     this.updateStar(6)
     this.changeLevel(true)
   }
@@ -989,8 +1045,8 @@ export class Unit {
   maxLevelAndJobs() {
     this.level = this.maxLevel;
 
-    this.jobsData.forEach(job => {
-      job.level = this.maxJobLevel
+    this.jobsData.forEach((job, jobIndex) => {
+      job.level = this.maxJobLevel[jobIndex]
     })
 
     this.maxNodes()
@@ -1054,7 +1110,7 @@ export class Unit {
     Object.keys(this.board.nodes).forEach(node => {
       if (this.canActivateNode(node)) {
         this.showNode(node)
-        if (this.board.nodes[node].skill && this.board.nodes[node].skill.maxLevel) {
+        if (this.board.nodes[node].skill.maxLevel) {
           this.board.nodes[node].level = this.board.nodes[node].skill.maxLevel
         }
       }
@@ -1072,6 +1128,11 @@ export class Unit {
         node.skill.level = node.level
 
         this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, nameService, skillService) : node.skill)
+      }
+
+      if (node.type == "buff" && node.skill.type == "ex_buff" && node.skill.maxLevel > 1 && node.level >= 1 && this.grid) {
+        node.skill.level = node.level
+        this.grid.nodesForGrid[nodeId].value = skillService.formatEffect(this, node.skill, node.skill.effects[0], false)
       }
     })
 
@@ -1187,7 +1248,8 @@ export class Unit {
     ]
 
     let filteredStats = [
-      "INITIAL_AP"
+      "INITIAL_AP",
+      "INCREASE_UNIT_LEVEL"
     ]
 
     let statsOrder = [

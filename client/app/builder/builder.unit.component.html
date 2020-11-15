@@ -142,7 +142,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.tableJobLevels" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(i, level)">{{ level }}</button>
+                  <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(i, level)">{{ level }}</button>
                 </div>
               </div>
             </div>
@@ -730,7 +730,7 @@
       Skill Tree
     </div>
 
-    <div class="builderUnitGridContainer">
+    <div [className]="unit.exJobs.length > 0 ? 'builderEXUnitGridContainer' : 'builderUnitGridContainer'">
       <ul class="hexGrid" oncontextmenu="return false;">
         <li *ngFor="let node of unit.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
           <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
@@ -742,16 +742,20 @@
           <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type == 'text'"
                [ngClass]="{
                  'activated': unit.board.nodes[node].activated,
-                 'buff': unit.board.nodes[node].type == 'buff',
+                 'buff': unit.board.nodes[node].type == 'buff' && (!unit.board.nodes[node].skill.type || unit.board.nodes[node].skill.type != 'ex_buff'),
                  'skill': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'skill',
                  'support': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'support',
                  'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
+                 'ex_buff':
+                   (unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'ex_buff') ||
+                   (unit.board.nodes[node].type == 'buff' && unit.board.nodes[node].skill.type && unit.board.nodes[node].skill.type == 'ex_buff'),
+                 'unit_level': unit.board.nodes[node].type == 'buff' && unit.board.nodes[node].skill.effects.length > 0 && unit.board.nodes[node].skill.effects[0].type == 'INCREASE_UNIT_LEVEL',
                  'notActivable': !canActivateNode(node)
           }" >
-            <i class="fas fa-plus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated"></i>
+            <i class="fas fa-plus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated"></i>
             <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
-            <span class="skillLevel" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
-            <i class="fas fa-minus" *ngIf="unit.grid.nodesForGrid[node].subType == 'skill' && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
+            <span class="skillLevel" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
+            <i class="fas fa-minus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated" (click)="rightClickNode(node); $event.stopPropagation()"></i>
           </div>
         </li>
       </ul>

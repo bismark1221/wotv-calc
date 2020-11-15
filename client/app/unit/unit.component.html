@@ -320,7 +320,7 @@
               </td>
             </tr>
             <tr>
-              <th colspan="11">EX Board Stats</th>
+              <th colspan="11">EX Board Stats (Max Value)</th>
             </tr>
             <tr>
               <th class="sub">HP</th>
@@ -403,7 +403,7 @@
           <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0">
             <tr class="jobsStatsLine">
               <td>
-                <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '_ec.png'}}" />
+                <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />
               </td>
               <td>{{ unit.EXJobsStats[0].HP }}</td>
               <td>{{ unit.EXJobsStats[0].TP }}</td>
@@ -539,7 +539,7 @@
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" />&nbsp;{{ i | titlecase }}
               </th>
               <th colspan="20" *ngIf="i == 'ex_buff'">
-                <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '_ec.png'}}" />&nbsp;EX Buffs
+                <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />&nbsp;EX Buffs
               </th>
             </tr>
             <tr>

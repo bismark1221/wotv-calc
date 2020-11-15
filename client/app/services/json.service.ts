@@ -1243,7 +1243,7 @@ export class JsonService {
       dataId: dataId,
       names: {},
       statsModifiers: [],
-      image: job.mdl.toLowerCase(),
+      image: job.cc_icon ? job.cc_icon.toLowerCase() : job.mdl.toLowerCase(),
       subRate: job.sub_rate,
       equipments: {
         weapons: [],
@@ -2888,7 +2888,7 @@ export class JsonService {
           rank.effects = fakeSkill.effects
         }
 
-        this[this.version].wotvMasterRanks[mrId].ranks.push(rank)
+        this[this.version].wotvMasterRanks[this.elements[mr.condition.elems[0]]].ranks.push(rank)
 
         i++;
         if (i > 4) {
