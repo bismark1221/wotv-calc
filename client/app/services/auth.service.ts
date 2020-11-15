@@ -56,7 +56,7 @@ export class AuthService {
         syncPossible: true
       }
 
-      for (let i = 0; i <= 11; i++) {
+      for (let i = 0; i <= 13; i++) {
         // @ts-ignore
         if (responses[i].data.length > 0) {
           result.syncPossible = false
@@ -65,7 +65,7 @@ export class AuthService {
 
       if (result.syncPossible) {
         let localDataFound = false
-        let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+        let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank']
 
         types.forEach(type => {
           let savedData = this.localStorageService.get(type)
@@ -80,12 +80,12 @@ export class AuthService {
       }
 
       if (!newLogin || !result.syncPossible) {
-        for (let i = 0; i <= 11; i++) {
+        for (let i = 0; i <= 13; i++) {
           let data = {}
 
           // @ts-ignore
           responses[i].data.forEach(item => {
-            if (i == 5 || i == 11) {
+            if (i == 5 || i == 11 || i == 12 || i == 13) {
               data = item
             } else if (i == 0 || i == 6) {
               data[item.name] = item
@@ -112,7 +112,7 @@ export class AuthService {
   private loadSavedData() {
     let promises = [];
 
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild'].forEach(type => {
+    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'].forEach(type => {
       promises.push(new Promise((resolve, reject) => {
         this.firestore.collection(type, ref => ref.where('user', '==', this.user.uid)).snapshotChanges().subscribe(data => {
           let items = []
@@ -136,7 +136,7 @@ export class AuthService {
   }
 
   private emptyLocalStorage() {
-    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild'].forEach(type => {
+    ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank'].forEach(type => {
       this.localStorageService.remove(type)
     })
 
@@ -199,13 +199,13 @@ export class AuthService {
   }
 
   firstSync() {
-    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank']
     let promises = []
 
     types.forEach(type => {
       let data = this.localStorageService.get(type)
       if (data && Object.keys(data).length > 0) {
-        if (type !== 'guild' && type !== 'jp_guild') {
+        if (type !== 'guild' && type !== 'jp_guild' && type !== 'jp_masterRank' && type !== 'masterRank') {
           Object.keys(data).forEach(itemId => {
             data[itemId].customName = "1"
             data[itemId].user = this.user.uid
@@ -231,7 +231,7 @@ export class AuthService {
 
   getAvailableSync() {
     let data = {}
-    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild']
+    let types = ['teams', 'units', 'espers', 'cards', 'equipments', 'guild', 'jp_teams', 'jp_units', 'jp_espers', 'jp_cards', 'jp_equipments', 'jp_guild', 'jp_masterRank', 'masterRank']
     let promises = []
 
     types.forEach(type => {

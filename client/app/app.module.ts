@@ -55,6 +55,7 @@ import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
+import { BuilderMasterRanksComponent } from './builder/builder.mr.component';
 
 import { ModalEquipmentsComponent } from './builder/modal/modal.equipments.component';
 import { ModalEspersComponent } from './builder/modal/modal.espers.component';
@@ -82,6 +83,7 @@ import { ItemService } from './services/item.service';
 import { AuthService } from './services/auth.service';
 import { ToolService } from './services/tool.service';
 import { JpTranslateService } from './services/jptranslate.service';
+import { MasterRanksService } from './services/mr.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -121,6 +123,7 @@ export function createTranslateLoader(http: HttpClient) {
     BuilderEquipmentComponent,
     BuilderGuildComponent,
     BuilderTeamComponent,
+    BuilderMasterRanksComponent,
     ModalEquipmentsComponent,
     ModalEspersComponent,
     ModalCardsComponent,
@@ -179,6 +182,7 @@ export function createTranslateLoader(http: HttpClient) {
     AuthService,
     ToolService,
     JpTranslateService,
+    MasterRanksService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

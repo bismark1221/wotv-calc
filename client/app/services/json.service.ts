@@ -121,13 +121,16 @@ export class JsonService {
     wotvEquipments: {},
     wotvJobs: {},
     wotvItems: {},
+    wotvMasterRanks: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
     wotvRaids: {},
     equipmentAwakes: {},
     items: {},
-    cardConditions: {}
+    cardConditions: {},
+    masterRanks: {},
+    masterRanksEffects: {},
   }
 
   jp = {
@@ -152,13 +155,16 @@ export class JsonService {
     wotvEquipments: {},
     wotvJobs: {},
     wotvItems: {},
+    wotvMasterRanks: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
     wotvRaids: {},
     equipmentAwakes: {},
     items: {},
-    cardConditions: {}
+    cardConditions: {},
+    masterRanks: {},
+    masterRanksEffects: {},
   }
 
   jpRomaji = {}
@@ -853,6 +859,24 @@ export class JsonService {
       });
   }
 
+  private GLMasterRank() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/MasterRank.json').toPromise()
+      .then(data => {
+        return data
+      }).catch(function(error) {
+        return {items:[]}
+      });
+  }
+
+  private GLMasterRankEffect() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/MasterRankEffect.json').toPromise()
+      .then(data => {
+        return data
+      }).catch(function(error) {
+        return {items:[]}
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -933,6 +957,14 @@ export class JsonService {
 
   private JPCardCond() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/VisionCardLimitedCondition.json').toPromise();
+  }
+
+  private JPMasterRank() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/MasterRank.json').toPromise();
+  }
+
+  private JPMasterRankEffect() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/MasterRankEffect.json').toPromise();
   }
 
 
@@ -1034,6 +1066,11 @@ export class JsonService {
 
       this.GLCardCond(),
       this.JPCardCond(),
+
+      this.GLMasterRank(),
+      this.GLMasterRankEffect(),
+      this.JPMasterRank(),
+      this.JPMasterRankEffect(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1055,6 +1092,8 @@ export class JsonService {
       this.gl.equipmentAwakes = this.formatJson(responses[42]);
       this.gl.items = this.formatJson(responses[45]);
       this.gl.cardConditions = this.formatJson(responses[47]);
+      this.gl.masterRanks = this.formatJson(responses[49]);
+      this.gl.masterRanksEffects = this.formatJson(responses[50]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1076,6 +1115,8 @@ export class JsonService {
       this.jp.equipmentAwakes = this.formatJson(responses[43]);
       this.jp.items = this.formatJson(responses[46]);
       this.jp.cardConditions = this.formatJson(responses[48]);
+      this.jp.masterRanks = this.formatJson(responses[51]);
+      this.jp.masterRanksEffects = this.formatJson(responses[52]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1120,6 +1161,7 @@ export class JsonService {
           jobs: this.gl.wotvJobs,
           raids: this.gl.wotvRaids,
           items: this.gl.wotvItems,
+          masterRanks: this.gl.wotvMasterRanks,
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1129,6 +1171,7 @@ export class JsonService {
           jobs: this.jp.wotvJobs,
           raids: this.jp.wotvRaids,
           items: this.jp.wotvItems,
+          masterRanks: this.jp.wotvMasterRanks,
         },
         translate : {
           jpRomaji : this.jpRomaji
@@ -1189,6 +1232,8 @@ export class JsonService {
       Object.keys(this[this.version].items).forEach(itemId => {
         this.addItem(this[this.version].items[itemId]);
       });
+
+      this.formatMasterRanks();
     }
   }
 
@@ -1660,7 +1705,8 @@ export class JsonService {
 
     if (skill.type == "buff") {
       dataSkill.s_buffs = [skillId]
-      //dataSkill.target = 0
+    } else if (skill.type == "MR") {
+      dataSkill.s_buffs = skill.buffIds
     } else {
       dataSkill = this[this.version].skills[skillId]
       skill.names = {}
@@ -2804,5 +2850,51 @@ export class JsonService {
     }
 
     this.getNames(this[this.version].wotvItems[dataId], 'item', false);
+  }
+
+  formatMasterRanks() {
+    Object.keys(this[this.version].masterRanks).forEach(mrId => {
+      let mr = this[this.version].masterRanks[mrId]
+
+      this[this.version].wotvMasterRanks[this.elements[mr.condition.elems[0]]] = {
+        dataId: mrId,
+        condition: this.elements[mr.condition.elems[0]],
+        ranks: []
+      }
+
+      let i = 0
+      mr.ranks.forEach(dataRank => {
+        let rank = {
+          images: {
+            emblem: dataRank.emblem_img.toLowerCase(),
+            background: dataRank.back_img.toLowerCase(),
+            stars: i
+          },
+          effects: []
+        }
+
+        if (dataRank.mr_effect_id) {
+          let fakeSkill = {
+            type: "MR",
+            buffIds: [],
+            effects: []
+          }
+
+          this[this.version].masterRanksEffects[dataRank.mr_effect_id].effects.forEach(effect => {
+            fakeSkill.buffIds.push(effect.effect_id)
+          })
+
+          this.updateSkill(rank, fakeSkill, dataRank.mr_effect_id)
+          rank.effects = fakeSkill.effects
+        }
+
+        this[this.version].wotvMasterRanks[mrId].ranks.push(rank)
+
+        i++;
+        if (i > 4) {
+          i = 0
+        }
+      })
+    })
   }
 }

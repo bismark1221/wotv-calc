@@ -26,6 +26,7 @@ import { BuilderEsperComponent } from './builder/builder.esper.component';
 import { BuilderEquipmentComponent } from './builder/builder.equipment.component';
 import { BuilderGuildComponent } from './builder/builder.guild.component';
 import { BuilderTeamComponent } from './builder/builder.team.component';
+import { BuilderMasterRanksComponent } from './builder/builder.mr.component';
 
 const ROUTES: Routes = [
   // GL Router
@@ -54,6 +55,7 @@ const ROUTES: Routes = [
       { path: 'equipment', component: BuilderEquipmentComponent },
       { path: 'equipment/:data', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
+      { path: 'master-ranks', component: BuilderMasterRanksComponent },
       { path: 'team', component: BuilderTeamComponent },
       { path: 'team/:data', component: BuilderTeamComponent },
     ]
@@ -89,6 +91,7 @@ const ROUTES: Routes = [
       { path: 'equipment', component: BuilderEquipmentComponent },
       { path: 'equipment/:data', component: BuilderEquipmentComponent },
       { path: 'guild', component: BuilderGuildComponent },
+      { path: 'master-ranks', component: BuilderMasterRanksComponent },
       { path: 'team', component: BuilderTeamComponent },
       { path: 'team/:data', component: BuilderTeamComponent },
     ]

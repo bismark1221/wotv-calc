@@ -15,6 +15,7 @@ export class JsonComponent implements OnInit {
   GLjobs = {};
   GLRaids = {};
   GLItems = {};
+  GLMasterRanks = {};
 
   JPunits = {};
   JPvisionCards = {};
@@ -23,6 +24,7 @@ export class JsonComponent implements OnInit {
   JPjobs = {};
   JPRaids = {};
   JPItems = {};
+  JPMasterRanks = {};
 
   JPRomaji = {};
 
@@ -51,6 +53,9 @@ export class JsonComponent implements OnInit {
       // @ts-ignore
       this.GLItems = response.gl.items;
 
+      // @ts-ignore
+      this.GLMasterRanks = response.gl.masterRanks;
+
 
       // @ts-ignore
       this.JPunits = response.jp.units;
@@ -72,6 +77,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPItems = response.jp.items;
+
+      // @ts-ignore
+      this.JPMasterRanks = response.jp.masterRanks;
 
       // @ts-ignore
       this.JPRomaji = response.translate.jpRomaji;
