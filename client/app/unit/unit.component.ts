@@ -44,13 +44,14 @@ export class UnitComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       this.unit = this.unitService.getUnitBySlug(params.get('slug'))
-      if (this.unit.exJobs && this.unit.exJobs.length > 0) {
-        this.possibleSkillTypes = ['support', 'counter', 'ex_buff']
-      }
 
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       } else {
+        if (this.unit.exJobs && this.unit.exJobs.length > 0) {
+          this.possibleSkillTypes = ['support', 'counter', 'ex_buff']
+        }
+
         this.formatUnit();
         this.navService.setTitle(this.unit.name);
       }
