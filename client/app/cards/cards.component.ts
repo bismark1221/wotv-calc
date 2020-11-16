@@ -16,9 +16,11 @@ export class CardsComponent implements OnInit {
   sort = "rarity"
   order = "asc"
   filters = {
-    rarity: []
+    rarity: [],
+    element: []
   }
   isCollapsedRarity = false;
+  version = 'GL'
 
   constructor(
     private cardService: CardService,
@@ -29,6 +31,8 @@ export class CardsComponent implements OnInit {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
     });
+
+    this.version = this.navService.getVersion()
   }
 
   ngOnInit() {
