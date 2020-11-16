@@ -79,7 +79,7 @@ export class CardService {
       cards.forEach(card => {
         if (filters.rarity.length == 0 || filters.rarity.indexOf(card.rarity) != -1) {
           let needToAddCard = false
-          if (filters.element.length == 0) {
+          if (filters.element && filters.element.length == 0) {
             needToAddCard = true
           } else {
             card.partyBuffs.forEach(buff => {
