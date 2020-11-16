@@ -1,0 +1,46 @@
+<div>
+  <div class="titleBlock">
+    <div class="title">
+      GUILD
+    </div>
+    <div class="closeButton">
+      <button type="button" class="close" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="customDiv">
+    <table class="masterRanksTable">
+      <tr>
+        <td colspan="4"><h1>Master Ranks</h1></td>
+      </tr>
+      <tbody *ngFor="let elementsLine of [['fire', 'ice', 'wind', 'earth'], ['lightning', 'water', 'light', 'dark']]">
+        <tr>
+          <td *ngFor="let element of elementsLine">
+            <img class="masterRankImg" src="{{ 'assets/masterRanks/' + ranks[element].ranks[(masterRanks[element] - 1)].images.background + '_' + ranks[element].ranks[(masterRanks[element] - 1)].images.emblem + '_' + ranks[element].ranks[(masterRanks[element] - 1)].images.stars + '.png' }}"/>
+          </td>
+        </tr>
+        <tr>
+          <td *ngFor="let element of elementsLine" class="elementTd">
+            <div>
+              lv. <select [(ngModel)]="masterRanks[element]">
+                <option *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]">{{ level }}</option>
+              </select>
+            </div>
+            <div *ngIf="masterRanks[element] > 1">
+              <div *ngFor="let effect of ranks[element].ranks[(masterRanks[element] - 1)].effects">
+                {{ effect.minValue }}% {{ effect.type }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tr>
+        <td colspan="4">
+          <button class="btn btn-main" (click)="save()">SAVE</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

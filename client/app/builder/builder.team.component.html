@@ -365,3 +365,24 @@
       </tr>
     </table>
   </div>
+
+  <div *ngIf="team && version == 'JP'" class="teamGuild">
+    <table>
+      <tr>
+        <th colspan="8">Master Ranks</th>
+      </tr>
+      <tr>
+        <td *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']">
+          <img class="statueImg" src="{{ 'assets/masterRanks/' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.background + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.emblem + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.stars + '.png' }}"/>
+        </td>
+      </tr>
+      <td *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']">
+        <div>
+          {{ team.masterRanks.data[element] }}
+        </div>
+      </td>
+      <tr>
+        <td colspan="8"><button class="btn btn-sub btn-guild" (click)="showMasterRanksDetail()">Custom</button></td>
+      </tr>
+    </table>
+  </div>

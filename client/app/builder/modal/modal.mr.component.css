@@ -18,20 +18,20 @@
   padding: 10px;
 }
 
-.guildTable {
+.masterRanksTable {
   width: 820px;
   margin: auto;
 }
 
-.guildTable, tbody, tr, th, td {
+.masterRanksTable, tbody, tr, th, td {
   border: 0;
 }
 
-.statueImg {
-  height: 250px;
+.masterRankImg {
+  width: 128px;
   margin-top: 10px;
 }
 
-.statsTd {
+.elementTd {
   vertical-align: top;
 }

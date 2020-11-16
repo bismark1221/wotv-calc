@@ -124,6 +124,7 @@ export class Unit {
   grid
   imbue
   guild
+  masterRanks
   teamCards = []
   teamMasterAbility = []
   cost
@@ -394,6 +395,20 @@ export class Unit {
           })
         }
       });
+    }
+  }
+
+  private calculateMasterRanksStats() {
+    if (this.masterRanks && this.masterRanks.data && this.masterRanks.ranks && this.masterRanks.ranks[this.element] && this.masterRanks.data[this.element] > 0) {
+      this.masterRanks.ranks[this.element].ranks[this.masterRanks.data[this.element] - 1].effects.forEach(effect => {
+        let value = effect.minValue;
+
+        if (effect.calcType == "percent") {
+          value = Math.floor(this.stats[effect.type].baseTotal * value / 100)
+        }
+
+        this.updateStat(effect.type, value, "masterRanks", "fixe")
+      })
     }
   }
 
@@ -863,6 +878,7 @@ export class Unit {
 
   private calculateTotalStats() {
     this.calculateGuildStats()
+    this.calculateMasterRanksStats()
     this.calculateBoardStats()
     this.calculateSupportStats()
     this.calculateMasterSkillStats()
@@ -938,6 +954,7 @@ export class Unit {
       }
 
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0
+      this.stats[stat].total += this.stats[stat].masterRanks ? this.stats[stat].masterRanks : 0
 
       if (!Number.isInteger(this.stats[stat].total)) {
         statsToRemove.push(stat)
@@ -1081,6 +1098,10 @@ export class Unit {
 
     Object.keys(this.guild.data).forEach(statue => {
       this.guild.data[statue] = 0
+    })
+
+    Object.keys(this.masterRanks.data).forEach(element => {
+      this.masterRanks.data[element] = 0
     })
 
     this.jobsData.forEach(job => {

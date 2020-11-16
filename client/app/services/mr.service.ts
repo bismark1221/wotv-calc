@@ -42,11 +42,10 @@ export class MasterRanksService {
   }
 
   getMRs() {
-    let MRs = [];
     let rawMRs = JSON.parse(JSON.stringify(this.getRaw()))
 
     this.dataMasterRanks = rawMRs;
-    return MRs;
+    return this.dataMasterRanks;
   }
 
   getLocalStorage() {
@@ -74,7 +73,7 @@ export class MasterRanksService {
   }
 
   getMasterRanksForBuilder(forceEmptyMasterRanks = false) {
-    if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage())) {
+    if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
       this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
     } else {
       this.masterRanks = {
@@ -91,8 +90,8 @@ export class MasterRanksService {
     }
 
     return {
-      masterRanks: this.masterRanks,
-      data: this.dataMasterRanks
+      data: this.masterRanks,
+      ranks: this.getMRs()
     }
   }
 

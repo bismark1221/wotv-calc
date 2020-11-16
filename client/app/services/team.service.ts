@@ -6,6 +6,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 
 import { Unit } from '../entities/unit';
 import { GuildService } from './guild.service'
+import { MasterRanksService } from './mr.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
 import { EquipmentService } from './equipment.service'
@@ -26,6 +27,7 @@ export class TeamService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private guildService: GuildService,
+    private masterRanksService: MasterRanksService,
     private navService: NavService,
     private nameService: NameService,
     private equipmentService: EquipmentService,
@@ -39,6 +41,7 @@ export class TeamService {
     this.team = {
       name: "",
       guild: this.guildService.getGuildForBuilder(),
+      masterRanks: this.masterRanksService.getMasterRanksForBuilder(),
       units: [null, null, null, null, null]
     }
   }
@@ -47,6 +50,7 @@ export class TeamService {
     this.team = {
       name: "",
       guild: this.guildService.getGuildForBuilder(),
+      masterRanks: this.masterRanksService.getMasterRanksForBuilder(),
       units: [null, null, null, null, null],
       cost: 0
     }
@@ -72,6 +76,7 @@ export class TeamService {
     let data = {
       name: team.name,
       guild: this.guildService.getSavableData(team.guild.data, false),
+      masterRanks: this.masterRanksService.getSavableData(team.masterRanks.data, false),
       units: [],
       user: user ? user.uid : null
     }
@@ -190,6 +195,7 @@ export class TeamService {
   updateTeam(data) {
     if (this.team && data) {
       this.team.guild.data = data.guild
+      this.team.masterRanks.data = data.masterRanks
       this.team.name = data.name
       this.team.storeId = data.storeId
 
@@ -197,6 +203,7 @@ export class TeamService {
         if (data.units[i]) {
           this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i])
           this.team.units[i].guild = this.team.guild
+          this.team.units[i].masterRanks = this.team.masterRanks
         } else {
           this.team.units[i] = null
         }
@@ -296,6 +303,7 @@ export class TeamService {
     if (dataId) {
       this.team.units[pos] = this.unitService.selectUnitForBuilder(dataId, customData)
       this.team.units[pos].guild = this.team.guild
+      this.team.units[pos].masterRanks = this.team.masterRanks
 
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {

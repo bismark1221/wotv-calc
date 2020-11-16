@@ -315,7 +315,7 @@
   cursor: pointer;
 }
 
-.guildDiv  {
+.guildDiv, .oneMasterRankDiv {
   width: 25%;
   display: inline-block;
   vertical-align: top;
@@ -344,7 +344,7 @@
   margin-top: 5px;
 }
 
-.btn-guild {
+.btn-guild, .btn-masterRanks {
   width: 100%;
 }
 

@@ -11,6 +11,7 @@ import { GridService } from './grid.service'
 import { SkillService } from './skill.service'
 import { JobService } from './job.service'
 import { GuildService } from './guild.service'
+import { MasterRanksService } from './mr.service'
 import { NavService } from './nav.service'
 import { NameService } from './name.service'
 import { EquipmentService } from './equipment.service'
@@ -38,6 +39,7 @@ export class UnitService {
     private skillService: SkillService,
     private jobService: JobService,
     private guildService: GuildService,
+    private masterRanksService: MasterRanksService,
     private navService: NavService,
     private nameService: NameService,
     private equipmentService: EquipmentService,
@@ -194,6 +196,7 @@ export class UnitService {
       card: null,
       equipments: [null, null, null],
       guild: this.guildService.getSavableData(unit.guild.data, false),
+      masterRanks: this.masterRanksService.getSavableData(unit.masterRanks.data, false),
       limitLv: unit.limit ? unit.limit.level : 0,
       user: user ? user.uid : null,
       customName: unit.customName ? unit.customName : ''
@@ -278,6 +281,7 @@ export class UnitService {
     }
 
     this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild)
+    this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild)
 
     let existingUnit = this.initiateSavedUnit(customData)
 
@@ -365,6 +369,10 @@ export class UnitService {
 
       if (unit.guild) {
         this.unit.savedGuild = unit.guild
+      }
+
+      if (unit.masterRanks) {
+        this.unit.savedMasterRanks = unit.masterRanks
       }
 
       return true

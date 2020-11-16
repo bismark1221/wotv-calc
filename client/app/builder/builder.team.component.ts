@@ -7,6 +7,7 @@ import { ClipboardService } from 'ngx-clipboard'
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
 import { GuildService } from '../services/guild.service';
+import { MasterRanksService } from '../services/mr.service';
 import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
@@ -22,6 +23,7 @@ import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
 import { ModalCardsComponent } from './modal/modal.cards.component';
 import { ModalGuildComponent } from './modal/modal.guild.component';
+import { ModalMasterRanksComponent } from './modal/modal.mr.component';
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
@@ -42,6 +44,7 @@ export class BuilderTeamComponent implements OnInit {
   confirmModal = null
   savedTeams = null
   showSave = false
+  version = 'GL'
 
   rarityTranslate = {
     UR: "Ultra Rare",
@@ -56,6 +59,7 @@ export class BuilderTeamComponent implements OnInit {
     private unitService: UnitService,
     private translateService: TranslateService,
     private guildService: GuildService,
+    private masterRanksService: MasterRanksService,
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
@@ -71,6 +75,8 @@ export class BuilderTeamComponent implements OnInit {
         this.translateUnits(i)
       }
     })
+
+    this.version = this.navService.getVersion()
   }
 
   ngOnInit() {
@@ -255,6 +261,22 @@ export class BuilderTeamComponent implements OnInit {
 
     modalRef.result.then((guild) => {
       this.team.guild.data = guild
+      for (let i = 0; i <= 4; i++) {
+        if (this.team.units[i]) {
+          this.teamService.changeLevel(i)
+        }
+      }
+    }, (reason) => {
+    });
+  }
+
+  showMasterRanksDetail() {
+    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.team.masterRanks.data))
+
+    modalRef.result.then((masterRanks) => {
+      this.team.masterRanks.data = masterRanks
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
           this.teamService.changeLevel(i)

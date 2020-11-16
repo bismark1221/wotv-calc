@@ -64,6 +64,7 @@ import { ModalGuildComponent } from './builder/modal/modal.guild.component';
 import { ModalLoadComponent } from './builder/modal/modal.load.component';
 import { ModalSaveComponent } from './builder/modal/modal.save.component';
 import { ModalLinkComponent } from './builder/modal/modal.link.component';
+import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
@@ -128,6 +129,7 @@ export function createTranslateLoader(http: HttpClient) {
     ModalEspersComponent,
     ModalCardsComponent,
     ModalGuildComponent,
+    ModalMasterRanksComponent,
     ModalLoadComponent,
     ModalSaveComponent,
     ModalLinkComponent,

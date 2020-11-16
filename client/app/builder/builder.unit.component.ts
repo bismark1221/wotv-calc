@@ -6,6 +6,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { UnitService } from '../services/unit.service';
 import { JobService } from '../services/job.service';
 import { GuildService } from '../services/guild.service';
+import { MasterRanksService } from '../services/mr.service';
 import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
@@ -14,12 +15,11 @@ import { NavService } from '../services/nav.service'
 import { NameService } from '../services/name.service'
 import { AuthService } from '../services/auth.service'
 
-import { BuilderGuildComponent } from './builder.guild.component';
-
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
 import { ModalCardsComponent } from './modal/modal.cards.component';
 import { ModalGuildComponent } from './modal/modal.guild.component';
+import { ModalMasterRanksComponent } from './modal/modal.mr.component';
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
 import { ModalLinkComponent } from './modal/modal.link.component';
@@ -36,6 +36,7 @@ export class BuilderUnitComponent implements OnInit {
   searchText = ""
   savedUnits = {}
   loadingBuild = false
+  version = 'GL'
 
   statueNames
 
@@ -52,6 +53,7 @@ export class BuilderUnitComponent implements OnInit {
   statsFrom = [
     {type: "baseTotal", translate: "Base"},
     {type: "guild", translate: "Guild Statues"},
+    {type: "masterRanks", translate: "Master Ranks"},
     {type: "board", translate: "Board"},
     {type: "support", translate: "Support"},
     {type: "masterSkill", translate: "Master Skill"},
@@ -124,6 +126,7 @@ export class BuilderUnitComponent implements OnInit {
     private unitService: UnitService,
     private translateService: TranslateService,
     private guildService: GuildService,
+    private masterRanksService: MasterRanksService,
     private esperService: EsperService,
     private cardService: CardService,
     private equipmentService: EquipmentService,
@@ -135,6 +138,8 @@ export class BuilderUnitComponent implements OnInit {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getUnits();
     });
+
+    this.version = this.navService.getVersion()
   }
 
   ngOnInit(): void {
@@ -230,6 +235,16 @@ export class BuilderUnitComponent implements OnInit {
     this.unitService.changeLevel()
   }
 
+  private loadMasterRanks() {
+    this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder()
+
+    if (this.unit.savedMasterRanks) {
+      this.unit.masterRanks.data = this.unit.savedMasterRanks
+    }
+
+    this.unitService.changeLevel()
+  }
+
   focusSearch() {
     if (!this.showList) {
       this.updateFilteredUnits()
@@ -254,6 +269,7 @@ export class BuilderUnitComponent implements OnInit {
       this.searchText = this.unit.name
 
       this.loadGuild()
+      this.loadMasterRanks()
       this.unitService.getActiveSkills()
       this.showList = false
     } else {
@@ -357,6 +373,18 @@ export class BuilderUnitComponent implements OnInit {
 
     modalRef.result.then((guild) => {
       this.unit.guild.data = guild
+      this.unitService.changeLevel()
+    }, (reason) => {
+    });
+  }
+
+  showMasterRanksDetail() {
+    const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'options-modal' });
+
+    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data))
+
+    modalRef.result.then((masterRanks) => {
+      this.unit.masterRanks.data = masterRanks
       this.unitService.changeLevel()
     }, (reason) => {
     });

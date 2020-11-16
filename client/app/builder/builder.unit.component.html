@@ -297,6 +297,24 @@
             </div>
           </td>
         </tr>
+        <tr *ngIf="version == 'JP'">
+          <th class="sub">Master Ranks</th>
+        </tr>
+        <tr *ngIf="version == 'JP'">
+          <td>
+            <div *ngFor="let elementsLine of [['fire', 'ice', 'wind', 'earth'], ['lightning', 'water', 'light', 'dark']]" class="masterRanksDiv">
+              <div *ngFor="let element of elementsLine" class="oneMasterRankDiv">
+                <div>
+                  <img class="statueImg" src="{{ 'assets/masterRanks/' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.background + '_' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.emblem + '_' + unit.masterRanks.ranks[element].ranks[(unit.masterRanks.data[element] - 1)].images.stars + '.png' }}"/>
+                  {{ unit.masterRanks.data[element] }}
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-sub btn-masterRanks" (click)="showMasterRanksDetail()">Custom</button>
+            </div>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
