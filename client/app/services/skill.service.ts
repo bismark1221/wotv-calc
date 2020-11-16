@@ -1290,7 +1290,7 @@ export class SkillService {
     } else {
       switch (effect.target) {
         case "self" :
-          if (effect.rate) {
+          if (effect.rate && fromEquipment) {
             return html + " on basic attack" + (effect.rate == 200 ? "" : " for target")
           } else {
             return html + " for self"
