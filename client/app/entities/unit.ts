@@ -306,8 +306,6 @@ export class Unit {
   }
 
   private calculateBaseStats() {
-        console.log(this.stats)
-
     Object.keys(this.stats).forEach(stat => {
       if (typeof(this.stats[stat].min) == "number") {
         let exStat = 0
@@ -325,30 +323,20 @@ export class Unit {
       }
     })
 
-    console.log(this.level - 99 - 1)
-
     Object.keys(this.stats).forEach(stat => {
       let min = this.stats[stat].min
       let max = this.stats[stat].max
       let ex = this.stats[stat].ex
 
-
+      this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.level - 1)))
 
       if (this.exJobs.length > 0 && this.jobsData[0].level > 15 && this.level > 99) {
-        this.stats[stat].base = Math.floor(max + ((ex - max) / (21 - 1) * (this.level - 99 - 1)))
-      } else {
-        this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.level - 1)))
+        this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)))
       }
 
       this.stats[stat].baseTotal = this.stats[stat].base
-
-
-      //console.log("============== BASE ====================")
-      //console.log(stat)
-      //console.log(this.stats[stat].base)
     })
 
-    console.log("============== CLASSIC ====================") // 494
     this.jobsData.forEach((job, jobIndex) => {
       let subJob = jobIndex !== 0
 
@@ -361,17 +349,11 @@ export class Unit {
           }
           let stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1)
 
-          console.log(statType)
-          console.log(this.stats[statType].base)
-          console.log(job.statsModifiers[job.level - 1][statType] / 10000)
-          console.log(this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000))
-
           this.stats[statType].baseTotal += stat
         });
       }
     })
 
-    console.log("============== EX ====================") // 531
     this.exJobsData.forEach(job => {
       if (this.jobsData[0].level > 15) {
         let level = this.jobsData[0].level - 16
@@ -382,11 +364,6 @@ export class Unit {
             }
           }
           let stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000)
-
-          console.log(statType)
-          console.log(this.stats[statType].base)
-          console.log(job.statsModifiers[level][statType] / 10000)
-          console.log(this.stats[statType].base * (job.statsModifiers[level][statType] / 10000))
 
           this.stats[statType].baseTotal += stat
         });
