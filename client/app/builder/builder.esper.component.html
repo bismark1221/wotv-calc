@@ -119,7 +119,9 @@
           </th>
         </tr>
         <tr>
-          <td *ngFor="let buffType of line">{{ esper.buffs[buffType].percent >= 0 ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType].total }}</td>
+          <td *ngFor="let buffType of line">
+            {{ esper.buffs[buffType] && esper.buffs[buffType].percent >= 0 ? esper.buffs[buffType].percent + '%' : esper.buffs[buffType] && esper.buffs[buffType].total >= 0 ? esper.buffs[buffType].total : '' }}
+          </td>
         </tr>
       </tbody>
     </table>
