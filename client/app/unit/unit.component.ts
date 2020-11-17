@@ -120,7 +120,7 @@ export class UnitComponent implements OnInit {
 
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill
-        if (skill.type !== "buff" && skill.type != "ex_buff") {
+        if (skill.type !== "buff" && !(this.unit.board.nodes[nodeId].type == "buff" && skill.type == "ex_buff")) {
           skill.name = this.nameService.getName(skill)
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
