@@ -410,6 +410,7 @@ export class TeamService {
   changeJobLevel(pos) {
     if (this.team.units[pos]) {
       this.team.units[pos].changeLevel(true)
+      this.team.units[pos].updateMaxLevel(true)
     }
   }
 

@@ -508,6 +508,7 @@ export class UnitService {
 
   changeJobLevel() {
     this.unit.disableNotAvailableNodes()
+    this.unit.updateMaxLevel(true)
     this.changeLevel()
   }
 
