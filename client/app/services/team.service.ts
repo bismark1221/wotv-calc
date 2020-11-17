@@ -195,7 +195,10 @@ export class TeamService {
   updateTeam(data) {
     if (this.team && data) {
       this.team.guild.data = data.guild
-      this.team.masterRanks.data = data.masterRanks
+      if (data.masterRanks) {
+        this.team.masterRanks.data = data.masterRanks
+      }
+
       this.team.name = data.name
       this.team.storeId = data.storeId
 
