@@ -141,23 +141,40 @@ export class Esper {
       "MAG",
       "DEX",
       "AGI",
-      "LUCK"
+      "LUCK",
+      "POISON_RES",
+      "BLIND_RES",
+      "SLEEP_RES",
+      "SILENCE_RES",
+      "PARALYZE_RES",
+      "CONFUSION_RES",
+      "CHARM_RES",
+      "PETRIFY_RES",
+      "TOAD_RES",
+      "HASTE_RES",
+      "SLOW_RES",
+      "STOP_RES",
+      "STUN_RES",
+      "IMMOBILIZE_RES",
+      "DISABLE_RES",
+      "BERSERK_RES",
+      "DOOM_RES"
     ]
 
     statsType.forEach(stat => {
-      let min = 0
-      let max = 0
-
       if (this.stats[stat]) {
+        let min = 0
+        let max = 0
+
         min = this.stats[stat][(this.star - 1)].min
         max = this.stats[stat][(this.star - 1)].max
-      }
 
-      let maxLevel = maxLevelPerStar[this.star]
-      this.stats[stat].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.level - 1)))
+        let maxLevel = maxLevelPerStar[this.star]
+        this.stats[stat].base = Math.floor(min + ((max - min) / (maxLevel - 1) * (this.level - 1)))
+      }
     })
 
-    this.calculateSPs()
+    this.updateEsperBuffs()
   }
 
   updateEsperBuffs() {
@@ -171,7 +188,7 @@ export class Esper {
       "MAG",
       "DEX",
       "AGI",
-      "LUCK"
+      "LUCK",
     ]
 
     this.buffs = {}
@@ -179,7 +196,7 @@ export class Esper {
     Object.keys(this.stats).forEach(stat => {
       if (statsType.indexOf(stat) === -1 && this.stats[stat][(this.star - 1)].min) {
         this.buffs[stat] = {}
-        this.buffs[stat].base = this.stats[stat][(this.star - 1)].min
+        this.buffs[stat].base = this.stats[stat] && this.stats[stat].base ? this.stats[stat].base : this.stats[stat][(this.star - 1)].min
       }
     })
 

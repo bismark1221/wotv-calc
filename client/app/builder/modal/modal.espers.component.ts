@@ -85,8 +85,15 @@ export class ModalEspersComponent implements OnInit {
     this.getEspers();
 
     if (this.esper) {
+      this.esper.nodes = {}
+      Object.keys(this.esper.board.nodes).forEach(nodeId => {
+        this.esper.nodes[nodeId] = this.esper.board.nodes[nodeId].activated ? 1 : 0;
+      })
+
       this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper)
       this.maxStar = this.esper.SPs.length;
+
+
     }
   }
 
