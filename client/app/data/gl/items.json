@@ -2169,6 +2169,41 @@
       "fr": "Souvenir de Chevalier runique (Rouge)"
     }
   },
+  "IT_JB_MM_FF4_CECL": {
+    "dataId": "IT_JB_MM_FF4_CECL",
+    "names": {
+      "en": "Lunar Paladin's Memory (Green)",
+      "fr": "Souvenir de Paladin lunaire (Vert)"
+    }
+  },
+  "IT_JB_MM_FF4_CECL_2": {
+    "dataId": "IT_JB_MM_FF4_CECL_2",
+    "names": {
+      "en": "Lunar Paladin's Memory (Blue)",
+      "fr": "Souvenir de Paladin lunaire (Bleu)"
+    }
+  },
+  "IT_JB_MM_FF4_CECL_3": {
+    "dataId": "IT_JB_MM_FF4_CECL_3",
+    "names": {
+      "en": "Lunar Paladin's Memory (Purple)",
+      "fr": "Souvenir de Paladin lunaire (Violet)"
+    }
+  },
+  "IT_JB_MM_FF4_CECL_4": {
+    "dataId": "IT_JB_MM_FF4_CECL_4",
+    "names": {
+      "en": "Lunar Paladin's Memory (Yellow)",
+      "fr": "Souvenir de Paladin lunaire (Jaune)"
+    }
+  },
+  "IT_JB_MM_FF4_CECL_5": {
+    "dataId": "IT_JB_MM_FF4_CECL_5",
+    "names": {
+      "en": "Lunar Paladin's Memory (Red)",
+      "fr": "Souvenir de Paladin lunaire (Rouge)"
+    }
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3527,6 +3562,13 @@
       "fr": "Fragment d'unité de Chel"
     }
   },
+  "IT_PI_FF4_CECL": {
+    "dataId": "IT_PI_FF4_CECL",
+    "names": {
+      "en": "Cecil Unit Shard",
+      "fr": "Fragment d'unité de Cécil"
+    }
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -4071,6 +4113,20 @@
     "names": {
       "en": "Aigaion's Awakening Stone (3★)",
       "fr": "Pierre d'éveil d'Égéon (3★)"
+    }
+  },
+  "IT_SB_AW_CHCB1_R2": {
+    "dataId": "IT_SB_AW_CHCB1_R2",
+    "names": {
+      "en": "Chocobo's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Chocobo (2★)"
+    }
+  },
+  "IT_SB_AW_CHCB1_R3": {
+    "dataId": "IT_SB_AW_CHCB1_R3",
+    "names": {
+      "en": "Chocobo's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Chocobo (3★)"
     }
   },
   "IT_TICKET_STORY": {
@@ -4897,14 +4953,6 @@
     },
     "recipe": true
   },
-  "IT_AF_LW_HAT_005": {
-    "dataId": "IT_AF_LW_HAT_005",
-    "names": {
-      "en": "Wolf Mask Crafting Recipe",
-      "fr": "Recette d'artisanat : Masque de loup"
-    },
-    "recipe": true
-  },
   "IT_AF_LW_CLT_001": {
     "dataId": "IT_AF_LW_CLT_001",
     "names": {
@@ -5078,6 +5126,46 @@
     "names": {
       "en": "Sortilége Crafting Recipe",
       "fr": "Recette d'artisanat : Sortilège"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_HLM_005": {
+    "dataId": "IT_AF_LW_HLM_005",
+    "names": {
+      "en": "Platinum Helm Crafting Recipe",
+      "fr": "Recette d'artisanat : Casque de platine"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_ACC_001": {
+    "dataId": "IT_AF_LW_ACC_001",
+    "names": {
+      "en": "Ribbon Crafting Recipe",
+      "fr": "Recette d'artisanat : Ruban"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_KAT_008": {
+    "dataId": "IT_AF_LW_KAT_008",
+    "names": {
+      "en": "Purple Lightning Crafting Recipe",
+      "fr": "Recette d'artisanat : Éclair pourpre"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_HAT_005": {
+    "dataId": "IT_AF_LW_HAT_005",
+    "names": {
+      "en": "Wolf Mask Crafting Recipe",
+      "fr": "Recette d'artisanat : Masque de loup"
+    },
+    "recipe": true
+  },
+  "IT_AF_FF4_ARM_001": {
+    "dataId": "IT_AF_FF4_ARM_001",
+    "names": {
+      "en": "Holy Knight's Shoulder Plate Crafting Recipe",
+      "fr": "Recette d'artisanat : Épaulière de paladin"
     },
     "recipe": true
   },
@@ -5536,6 +5624,13 @@
       "fr": "Médaille d'invocation A [Novembre]"
     }
   },
+  "IT_EC_SUMMON_11_B": {
+    "dataId": "IT_EC_SUMMON_11_B",
+    "names": {
+      "en": "November Summon Medal B",
+      "fr": "Médaille d'invocation B [Novembre]"
+    }
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -5653,6 +5748,20 @@
     "names": {
       "en": "FFI Summon Medal",
       "fr": "Médaille d'invocation FFI"
+    }
+  },
+  "IT_EC_FF4_1": {
+    "dataId": "IT_EC_FF4_1",
+    "names": {
+      "en": "FFIV Event Medal",
+      "fr": "Médaille d'événement de FFIV"
+    }
+  },
+  "IT_EC_FF4_2_A": {
+    "dataId": "IT_EC_FF4_2_A",
+    "names": {
+      "en": "FFIV Summon Medal A",
+      "fr": "Médaille d'invocation A [FFIV]"
     }
   },
   "IT_US_G_FFT_01": {
@@ -5849,6 +5958,13 @@
     "names": {
       "en": "Select Element Magicite (M) x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 magilithes élémentaires (M)"
+    }
+  },
+  "IT_US_SE_SB_EXP_04": {
+    "dataId": "IT_US_SE_SB_EXP_04",
+    "names": {
+      "en": "Select Element Magicite (M) x1,000 Summon Ticket",
+      "fr": "Ticket sélectionneur de 1 000 magilithes élémentaires (M)"
     }
   },
   "IT_US_SE_SB_EXP_05": {
@@ -6663,6 +6779,13 @@
       "fr": "Fragment de l'atout-vision : « Rubeus », Brigands au grand cœur"
     }
   },
+  "IT_VPI_LW_CHCB": {
+    "dataId": "IT_VPI_LW_CHCB",
+    "names": {
+      "en": "\"Beloved Sidekick, Chocobo\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Chocobo, compagnon adoré"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -6978,6 +7101,13 @@
       "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_13": {
+    "dataId": "IT_US_GL_SE_VPI_13",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7097,28 +7227,32 @@
       "fr": "Médaille des Épreuves du Jugement"
     }
   },
-  "IT_AF_LW_HLM_005": {
-    "dataId": "IT_AF_LW_HLM_005",
+  "IT_JP_UP_01": {
+    "dataId": "IT_JP_UP_01",
     "names": {
-      "en": "Platinum Helm Crafting Recipe",
-      "fr": "Recette d'artisanat : Casque de platine"
-    },
-    "recipe": true
+      "en": "Ovalite (S)",
+      "fr": "Ovalithe (S)"
+    }
   },
-  "IT_AF_LW_ACC_001": {
-    "dataId": "IT_AF_LW_ACC_001",
+  "IT_JP_UP_02": {
+    "dataId": "IT_JP_UP_02",
     "names": {
-      "en": "Ribbon Crafting Recipe",
-      "fr": "Recette d'artisanat : Ruban"
-    },
-    "recipe": true
+      "en": "Ovalite (M)",
+      "fr": "Ovalithe (M)"
+    }
   },
-  "IT_AF_LW_KAT_008": {
-    "dataId": "IT_AF_LW_KAT_008",
+  "IT_JP_UP_03": {
+    "dataId": "IT_JP_UP_03",
     "names": {
-      "en": "Purple Lightning Crafting Recipe",
-      "fr": "Recette d'artisanat : Éclair pourpre"
-    },
-    "recipe": true
+      "en": "Ovalite (L)",
+      "fr": "Ovalithe (L)"
+    }
+  },
+  "IT_JP_UP_04": {
+    "dataId": "IT_JP_UP_04",
+    "names": {
+      "en": "Ovalite (XL)",
+      "fr": "Ovalithe (XL)"
+    }
   }
 }

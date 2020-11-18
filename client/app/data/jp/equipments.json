@@ -2753,7 +2753,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_SWO_016": {
@@ -23307,9 +23310,9 @@
   },
   "AF_LOT_FF4_ARM_001": {
     "names": {
-      "en": "聖騎士の肩当て"
+      "en": "聖騎士の肩当て - Holy Knight's Shoulder Plate"
     },
-    "slug": "seikishi-no-kataate",
+    "slug": "holy-knights-shoulder-plate",
     "stats": {
       "HP": {
         "min": 39,
@@ -34409,7 +34412,7 @@
   },
   "AF_LOT_LW_ACC_002": {
     "names": {
-      "en": "ソウルオブサマサ - Soul of Thamasa"
+      "en": "ソウルオブサマサ"
     },
     "slug": "soul-of-thamasa",
     "stats": {
@@ -45543,9 +45546,9 @@
   },
   "AF_ACC_FF4_CECL_1": {
     "names": {
-      "en": "セイントサークレット"
+      "en": "セイントサークレット - Saint's Circlet"
     },
-    "slug": "seinto-skuretto",
+    "slug": "saints-circlet",
     "stats": {
       "HP": {
         "min": 362,
@@ -49977,9 +49980,9 @@
   },
   "AF_SWO_FF4_CECL_2": {
     "names": {
-      "en": "伝説の剣"
+      "en": "伝説の剣 - Mythgraven Blade"
     },
-    "slug": "densetsu-no-ken",
+    "slug": "mythgraven-blade",
     "stats": {
       "HP": {
         "min": 4,
@@ -50166,9 +50169,9 @@
   },
   "AF_ROD_FF4_GLBZ_2": {
     "names": {
-      "en": "ゴルベーザ専用武器"
+      "en": "ゴルベーザ専用武器 - Golbez Specific Weapon"
     },
-    "slug": "gorubza-senyou-buki",
+    "slug": "golbez-specific-weapon",
     "stats": {
       "HP": {
         "min": 15,

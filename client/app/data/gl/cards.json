@@ -10896,6 +10896,170 @@
       }
     ]
   },
+  "VC_LW_CHCB": {
+    "dataId": "VC_LW_CHCB",
+    "names": {
+      "en": "Beloved Sidekick, Chocobo",
+      "fr": "Chocobo, compagnon adoré"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 36,
+        "max": 288
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 72
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 18,
+        "max": 72
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapschcb",
+    "slug": "beloved-sidekick-chocobo",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 4,
+              "maxValue": 8,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CHCB_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CHCB_GS",
+            "fr": "SK_VC_LW_CHCB_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CHCB_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CHCB_GSAW",
+            "fr": "SK_VC_LW_CHCB_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CHCB_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CHCB_P",
+            "fr": "SK_VC_LW_CHCB_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CHCB_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CHCB_PAW",
+            "fr": "SK_VC_LW_CHCB_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      }
+    ]
+  },
   "VC_LW_CACT": {
     "dataId": "VC_LW_CACT",
     "names": {

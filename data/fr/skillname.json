@@ -13,6 +13,10 @@
             "value": "Effet cristal"
         },
         {
+            "key": "SK_CRYSTAL_04",
+            "value": "Effet cristal"
+        },
+        {
             "key": "SK_LW_WAR_ATK",
             "value": "Attaque normale"
         },
@@ -3213,6 +3217,50 @@
             "value": "Esprit affûté"
         },
         {
+            "key": "SK_FF4_CECL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_FF4_CECL_M_1",
+            "value": "Lame du paladin - ATT"
+        },
+        {
+            "key": "SK_FF4_CECL_M_2",
+            "value": "Protection de la lumière"
+        },
+        {
+            "key": "SK_FF4_CECL_M_3",
+            "value": "Dévouement défensif"
+        },
+        {
+            "key": "SK_FF4_CECL_S_1",
+            "value": "Vitesse de la lumière"
+        },
+        {
+            "key": "SK_FF4_CECL_S_3",
+            "value": "Double éclat"
+        },
+        {
+            "key": "SK_FF4_CECL_S_2",
+            "value": "Aura divine"
+        },
+        {
+            "key": "SK_FF4_CECL_S_4",
+            "value": "Dévotion protectrice"
+        },
+        {
+            "key": "SK_FF4_CECL_S_5",
+            "value": "Illuminateur"
+        },
+        {
+            "key": "SK_FF4_CECL_R_1",
+            "value": "Supplices surmontés"
+        },
+        {
+            "key": "SK_FF4_CECL_P_1",
+            "value": "Le sang des Sélénites"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -3567,6 +3615,14 @@
         {
             "key": "SK_CACT_M_03_CHECK",
             "value": "Aiguille paralysante"
+        },
+        {
+            "key": "SK_CACT_M_01_CNTUP",
+            "value": "1 000 épines"
+        },
+        {
+            "key": "SK_CACT_M_02_CNTUP",
+            "value": "10 000 épines"
         },
         {
             "key": "SK_GLSP_ATK",
@@ -4037,6 +4093,14 @@
             "value": "Déchaînement"
         },
         {
+            "key": "SK_THDG_R_01_RA",
+            "value": "Voix draconique"
+        },
+        {
+            "key": "SK_THDG_M_01_RA",
+            "value": "Coup de tête"
+        },
+        {
             "key": "SK_DABL_ATK",
             "value": "Attaque normale"
         },
@@ -4077,6 +4141,10 @@
             "value": "Explosion mentale"
         },
         {
+            "key": "SK_FNRR_M_04_2",
+            "value": "Hurlement mystique"
+        },
+        {
             "key": "SK_FNRR_ATK",
             "value": "Attaque normale"
         },
@@ -4094,10 +4162,6 @@
         },
         {
             "key": "SK_FNRR_M_04",
-            "value": "Hurlement mystique"
-        },
-        {
-            "key": "SK_FNRR_M_04_2",
             "value": "Hurlement mystique"
         },
         {
@@ -4153,30 +4217,6 @@
             "value": "Ravager"
         },
         {
-            "key": "SK_TNBR_ATK",
-            "value": "Attaque normale"
-        },
-        {
-            "key": "SK_TNBR_M_01",
-            "value": "Couteau"
-        },
-        {
-            "key": "SK_TNBR_M_02",
-            "value": "Couteau de la rancune"
-        },
-        {
-            "key": "SK_TNBR_M_03",
-            "value": "Profonde rancune"
-        },
-        {
-            "key": "SK_TNBR_M_04",
-            "value": "Rancune commune"
-        },
-        {
-            "key": "SK_TNBR_M_04_R",
-            "value": "Rancune commune"
-        },
-        {
             "key": "SK_AGON_ATK",
             "value": "Attaque normale"
         },
@@ -4207,6 +4247,50 @@
         {
             "key": "SK_AGON_R_01",
             "value": "Bras foreur"
+        },
+        {
+            "key": "SK_TNBR_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_TNBR_M_01",
+            "value": "Couteau"
+        },
+        {
+            "key": "SK_TNBR_M_02",
+            "value": "Couteau de la rancune"
+        },
+        {
+            "key": "SK_TNBR_M_03",
+            "value": "Profonde rancune"
+        },
+        {
+            "key": "SK_TNBR_M_04",
+            "value": "Rancune commune"
+        },
+        {
+            "key": "SK_TNBR_M_04_R",
+            "value": "Rancune commune"
+        },
+        {
+            "key": "SK_CHCB2_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CHCB2_M_01",
+            "value": "Revers de chocobo"
+        },
+        {
+            "key": "SK_CHCB2_M_02",
+            "value": "Toilettage"
+        },
+        {
+            "key": "SK_CHCB2_M_03",
+            "value": "Chocobombardement"
+        },
+        {
+            "key": "SK_CHCB2_R_01",
+            "value": "Contre-attaque"
         },
         {
             "key": "SK_LW_E_VIK_ATK",
@@ -4243,6 +4327,58 @@
         {
             "key": "SK_LW_E_VIK_S_3",
             "value": "Esprit rebelle"
+        },
+        {
+            "key": "SK_DMNW_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_DMNW_M_1",
+            "value": "Regard pétrifiant"
+        },
+        {
+            "key": "SK_DMNW_M_2",
+            "value": "Mur démonique"
+        },
+        {
+            "key": "SK_DMNW_M_3",
+            "value": "Collision tellurique"
+        },
+        {
+            "key": "SK_DMNW_M_4_1",
+            "value": "Approche"
+        },
+        {
+            "key": "SK_DMNW_M_4_2",
+            "value": "Approche"
+        },
+        {
+            "key": "SK_DMNW_M_4_3",
+            "value": "Approche"
+        },
+        {
+            "key": "SK_DMNW_M_5",
+            "value": "Compression"
+        },
+        {
+            "key": "SK_GLBZ_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_GLBZ_M_1",
+            "value": "Toxine"
+        },
+        {
+            "key": "SK_GLBZ_M_2",
+            "value": "Saignée"
+        },
+        {
+            "key": "SK_GLBZ_M_3",
+            "value": "Crocs sombres"
+        },
+        {
+            "key": "SK_GLBZ_M_4",
+            "value": "Crocs d'ébène "
         },
         {
             "key": "SK_LB_LW_MONT",
@@ -4457,6 +4593,10 @@
             "value": "Invocation de la foudre divine"
         },
         {
+            "key": "SK_LB_FF04_CECL",
+            "value": "Colère sacrée"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -4559,6 +4699,10 @@
         {
             "key": "SK_SMN_AGON",
             "value": "Explosion électromagnétique"
+        },
+        {
+            "key": "SK_SMN_CHCB_02",
+            "value": "Apaisement de chocobo"
         },
         {
             "key": "SK_US_POTION",
@@ -5005,6 +5149,10 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_FF4_CECL",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -5075,6 +5223,26 @@
         {
             "key": "SK_LW_AVOID_5_SSR",
             "value": "Taux d'esquive +8"
+        },
+        {
+            "key": "SK_LW_PIERCEMAGIC_1",
+            "value": "Taux de perforation de la rés att magiques +1"
+        },
+        {
+            "key": "SK_LW_PIERCEMAGIC_2",
+            "value": "Taux de perforation de la rés att magiques +2"
+        },
+        {
+            "key": "SK_LW_PIERCEMAGIC_3",
+            "value": "Taux de perforation de la rés att magiques +4"
+        },
+        {
+            "key": "SK_LW_PIERCEMAGIC_4",
+            "value": "Taux de perforation de la rés att magiques +6"
+        },
+        {
+            "key": "SK_LW_PIERCEMAGIC_5",
+            "value": "Taux de perforation de la rés att magiques +10"
         },
         {
             "key": "SK_LW_SWO_003_1",
@@ -5403,6 +5571,10 @@
         {
             "key": "SK_ROD_LW_CHEL_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_FF4_CECL_1_1",
+            "value": "Encouragement de paladin"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -6253,6 +6425,14 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CHCB_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CHCB_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_TITN_P",
             "value": ""
         },
@@ -6394,6 +6574,14 @@
         },
         {
             "key": "SK_VC_LW_GUREN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CHCB_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CHCB_PAW",
             "value": ""
         },
         {
@@ -7847,6 +8035,14 @@
         {
             "key": "SK_BTL_STR_ELEMALL_1-100_U",
             "value": "Toutes attaques élémentaires ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_RESDB_DF_1_100_U",
+            "value": "Rés aux malus de DEF ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_RESDB_ATK_1_100_U",
+            "value": "Rés aux malus d'ATT ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_JOB_THI_1_15_U",

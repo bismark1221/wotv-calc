@@ -24,6 +24,15 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: "18/11",
+        items: [
+          {type: "unit", dataId: "UN_FF4_P_CECL"},
+          {type: "card", dataId: "VC_LW_CHCB"},
+          {type: "esper", dataId: "UN_LW_S_CHCB1"},
+          {type: "equipment", dataId: "AF_FF4_ARM_001"},
+        ]
+      },
+      {
         date: "11/11",
         items: [
           {type: "esper", dataId: "UN_LW_S_AGON"},
@@ -40,16 +49,6 @@ export class HomeComponent {
           {type: "unit", dataId: "UN_LW_P_MRAL"},
           {type: "unit", dataId: "UN_LW_P_CHEL"},
           {type: "equipment", dataId: "AF_LW_SWO_023"}
-        ]
-      },
-      {
-        date: "28/10",
-        items: [
-          {type: "card", dataId: "VC_LW_VKTR"},
-          {type: "card", dataId: "VC_LW_HALL"},
-          {type: "card", dataId: "VC_LW_BLMN"},
-          {type: "esper", dataId: "UN_LW_S_BLMN"},
-          {type: "equipment", dataId: "AF_LW_RNG_007"},
         ]
       }
     ],

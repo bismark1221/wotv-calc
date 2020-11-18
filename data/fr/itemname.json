@@ -1241,6 +1241,26 @@
             "value": "Souvenir de Chevalier runique (Rouge)"
         },
         {
+            "key": "IT_JB_MM_FF4_CECL",
+            "value": "Souvenir de Paladin lunaire (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_2",
+            "value": "Souvenir de Paladin lunaire (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_3",
+            "value": "Souvenir de Paladin lunaire (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_4",
+            "value": "Souvenir de Paladin lunaire (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_5",
+            "value": "Souvenir de Paladin lunaire (Rouge)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de feu (Vert)"
         },
@@ -2017,6 +2037,10 @@
             "value": "Fragment d'unité de Chel"
         },
         {
+            "key": "IT_PI_FF4_CECL",
+            "value": "Fragment d'unité de Cécil"
+        },
+        {
             "key": "IT_SB_EXP_FIRE_01",
             "value": "Magilithe rouge (S)"
         },
@@ -2327,6 +2351,14 @@
         {
             "key": "IT_SB_AW_AGON_R3",
             "value": "Pierre d'éveil d'Égéon (3★)"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R2",
+            "value": "Pierre d'éveil de Chocobo (2★)"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R3",
+            "value": "Pierre d'éveil de Chocobo (3★)"
         },
         {
             "key": "IT_TICKET_STORY",
@@ -2773,10 +2805,6 @@
             "value": "Recette d'artisanat : Chapeau de sage"
         },
         {
-            "key": "IT_AF_LW_HAT_005",
-            "value": "Recette d'artisanat : Masque de loup"
-        },
-        {
             "key": "IT_AF_LW_CLT_001",
             "value": "Recette d'artisanat : Chemise en cuir"
         },
@@ -2863,6 +2891,26 @@
         {
             "key": "IT_AF_FFT_ACC_001",
             "value": "Recette d'artisanat : Sortilège"
+        },
+        {
+            "key": "IT_AF_LW_HLM_005",
+            "value": "Recette d'artisanat : Casque de platine"
+        },
+        {
+            "key": "IT_AF_LW_ACC_001",
+            "value": "Recette d'artisanat : Ruban"
+        },
+        {
+            "key": "IT_AF_LW_KAT_008",
+            "value": "Recette d'artisanat : Éclair pourpre"
+        },
+        {
+            "key": "IT_AF_LW_HAT_005",
+            "value": "Recette d'artisanat : Masque de loup"
+        },
+        {
+            "key": "IT_AF_FF4_ARM_001",
+            "value": "Recette d'artisanat : Épaulière de paladin"
         },
         {
             "key": "IT_AF_SUP_HP",
@@ -3125,6 +3173,10 @@
             "value": "Médaille d'invocation A [Novembre]"
         },
         {
+            "key": "IT_EC_SUMMON_11_B",
+            "value": "Médaille d'invocation B [Novembre]"
+        },
+        {
             "key": "IT_EC_FFT_1",
             "value": "Médaille d'événement FFT"
         },
@@ -3191,6 +3243,14 @@
         {
             "key": "IT_EC_FF1_2",
             "value": "Médaille d'invocation FFI"
+        },
+        {
+            "key": "IT_EC_FF4_1",
+            "value": "Médaille d'événement de FFIV"
+        },
+        {
+            "key": "IT_EC_FF4_2_A",
+            "value": "Médaille d'invocation A [FFIV]"
         },
         {
             "key": "IT_US_G_FFT_01",
@@ -3303,6 +3363,10 @@
         {
             "key": "IT_US_SE_SB_EXP_03",
             "value": "Ticket sélectionneur de 50 magilithes élémentaires (M)"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_04",
+            "value": "Ticket sélectionneur de 1 000 magilithes élémentaires (M)"
         },
         {
             "key": "IT_US_SE_SB_EXP_05",
@@ -3431,6 +3495,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_09",
             "value": "[Sortie du chapitre 10 !] Ticket d'invocation d'atout-vision MR+ garanti"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_10",
+            "value": "Spécial automne 2020 [Partie III] - Ticket d'invocation d'unité MR+ garantie"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -3769,6 +3837,10 @@
             "value": "Fragment de l'atout-vision : « Rubeus », Brigands au grand cœur"
         },
         {
+            "key": "IT_VPI_LW_CHCB",
+            "value": "Fragment de l'atout-vision : Chocobo, compagnon adoré"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "Œuf de croissance (N)"
         },
@@ -3949,6 +4021,10 @@
             "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
         },
         {
+            "key": "IT_US_GL_SE_VPI_13",
+            "value": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+        },
+        {
             "key": "IT_US_SE_UR_U_02",
             "value": "Ticket sélectionneur d'unité UR recommandée [A]"
         },
@@ -4017,16 +4093,20 @@
             "value": "Médaille des Épreuves du Jugement"
         },
         {
-            "key": "IT_AF_LW_HLM_005",
-            "value": "Recette d'artisanat : Casque de platine"
+            "key": "IT_JP_UP_01",
+            "value": "Ovalithe (S)"
         },
         {
-            "key": "IT_AF_LW_ACC_001",
-            "value": "Recette d'artisanat : Ruban"
+            "key": "IT_JP_UP_02",
+            "value": "Ovalithe (M)"
         },
         {
-            "key": "IT_AF_LW_KAT_008",
-            "value": "Recette d'artisanat : Éclair pourpre"
+            "key": "IT_JP_UP_03",
+            "value": "Ovalithe (L)"
+        },
+        {
+            "key": "IT_JP_UP_04",
+            "value": "Ovalithe (XL)"
         }
     ]
 }
