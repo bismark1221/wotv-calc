@@ -8,7 +8,7 @@ export class CheckHashService {
 
   constructor(private http: HttpClient) {}
 
-  public initHashCheck(url, frequency = 1000 * 60 * 30) {
+  public initHashCheck(url, frequency = 1000 * 60 * 10) {
     setInterval(() => {
       this.checkHash(url);
     }, frequency);
@@ -24,8 +24,6 @@ export class CheckHashService {
           if (hashChanged) {
             location.reload();
           }
-
-          this.currentHash = hash;
         },
         (err) => {
           console.error(err, 'Could not get version');
@@ -34,7 +32,7 @@ export class CheckHashService {
   }
 
   private hasHashChanged(currentHash, newHash) {
-    if (!currentHash || currentHash === '{{POST_BUILD_ENTERS_HASH_HERE}}') {
+    if (!newHash) {
       return false;
     }
 
