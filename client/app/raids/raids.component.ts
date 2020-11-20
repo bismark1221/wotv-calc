@@ -56,7 +56,7 @@ export class RaidsComponent implements OnInit {
     if (this.searchText !== "") {
       let text = this.searchText.toLowerCase();
       return this.raids.filter(raid => {
-        return raid.name.toLowerCase().includes(text);
+        return raid.name.toLowerCase().includes(text) || raid.slug.toLowerCase().includes(text);
       });
     } else {
       return this.raids

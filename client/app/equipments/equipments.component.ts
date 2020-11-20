@@ -62,7 +62,7 @@ export class EquipmentsComponent implements OnInit {
     if (this.searchText !== "") {
       let text = this.searchText.toLowerCase();
       return this.equipments.filter(equipment => {
-        return equipment.name.toLowerCase().includes(text);
+        return equipment.name.toLowerCase().includes(text) || equipment.slug.toLowerCase().includes(text);
       });
     } else {
       return this.equipments

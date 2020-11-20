@@ -120,7 +120,7 @@ export class ModalEspersComponent implements OnInit {
     if (this.searchText !== "") {
       let text = this.searchText.toLowerCase();
       return this.espers.filter(esper => {
-        return esper.name.toLowerCase().includes(text);
+        return esper.name.toLowerCase().includes(text) || esper.slug.toLowerCase().includes(text);
       });
     } else {
       return this.espers

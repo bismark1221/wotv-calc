@@ -69,7 +69,7 @@ export class ModalCardsComponent implements OnInit {
     if (this.searchText !== "") {
       let text = this.searchText.toLowerCase();
       return this.cards.filter(card => {
-        return card.name.toLowerCase().includes(text);
+        return card.name.toLowerCase().includes(text) || card.slug.toLowerCase().includes(text);
       });
     } else {
       return this.cards

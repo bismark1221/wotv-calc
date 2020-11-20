@@ -58,7 +58,7 @@ export class EspersComponent implements OnInit {
     if (this.searchText !== "") {
       let text = this.searchText.toLowerCase();
       return this.espers.filter(unit => {
-        return unit.name.toLowerCase().includes(text);
+        return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
       });
     } else {
       return this.espers
