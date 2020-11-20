@@ -32,6 +32,23 @@ export class UnitService {
     "UN_LW_P_FRVA"
   ]
 
+  private limitedUnits = [
+    "UN_LW_P_FRVA",
+    "UN_FF14_P_YSTL",
+    "UN_FF14_P_TNCR",
+    "UN_FFT_P_RAMZ",
+    "UN_FFT_P_GFGR",
+    "UN_FFT_P_ORND",
+    "UN_FFT_P_AGRA",
+    "UN_FFT_P_DELT",
+    "UN_FFT_P_MSTD",
+    "UN_FF4_P_CECL",
+    "UN_FF4_P_ROSA",
+    "UN_FF4_P_KAIN",
+    "UN_FF10_P_TIDU",
+    "UN_FF10_P_YUNA"
+  ]
+
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -119,6 +136,7 @@ export class UnitService {
       units.forEach(unit => {
         if ((filters.element.length == 0 || filters.element.indexOf(unit.element) != -1)
           && (filters.rarity.length == 0 || filters.rarity.indexOf(unit.rarity) != -1)
+          && (!filters.limited || filters.limited.length == 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) != -1)
         ) {
           if (filters.job.length == 0) {
             filteredUnits.push(unit)
@@ -155,6 +173,10 @@ export class UnitService {
     }
 
     return this.units.find(unit => unit.dataId === id);
+  }
+
+  isLimited(id) {
+    return this.limitedUnits.indexOf(id) != -1
   }
 
   getUnitBySlug(slug) {

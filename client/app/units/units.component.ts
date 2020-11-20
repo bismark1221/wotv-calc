@@ -21,10 +21,12 @@ export class UnitsComponent implements OnInit {
     rarity: [],
     element: [],
     job: [],
+    limited: [],
     mainJob: true
   }
   isCollapsedRarity = false;
   isCollapsedElement = false;
+  isCollapsedLimited = false;
   isCollapsedJob = false;
 
   constructor(

@@ -82,6 +82,7 @@ export class UnitComponent implements OnInit {
       let lang = this.translateService.currentLang
       this.jobs = []
       this.unit.name = this.nameService.getName(this.unit)
+      this.unit.limited = this.unitService.isLimited(this.unit.dataId)
 
       this.unit.skills = []
 
