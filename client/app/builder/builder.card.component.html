@@ -1,10 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredCards()" (blur)="blurSearch()" (focus)="focusSearch()">
-    <i class="fas fa-times" aria-hidden="true" (click)="selectCard('')"></i>
-    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
+    <input class="searchInput" type="text" placeholder="Search for a card by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredCards()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()">
+    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectCard('')"></i>
+    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -18,14 +18,14 @@
     </div>
     <div class="cardBlock" *ngIf="showList && !loadingBuild && filteredCards[rarity].length > 0">
       <div class="cardLine" *ngFor="let filteredCard of filteredCards[rarity]; let j = index">
-        <div class="cardSelector" [ngClass]="{'cardSelectorWithSave': savedCards[filteredCard.dataId]}" (click)="selectCard(filteredCard.dataId)">
+        <div class="cardSelector" id="selector_{{filteredCard.slug}}" [ngClass]="{'cardSelectorWithSave': savedCards[filteredCard.dataId]}" (click)="selectCard(filteredCard.dataId)">
           <div class="cardLogo">
             <img src="assets/cards/{{ filteredCard.image }}_m.png" />
           </div>
           <div class="cardName" innerHTML="{{ filteredCard.name | highlight: searchText }}"></div>
         </div>
         <div class="loadDiv" *ngIf="savedCards[filteredCard.dataId] && savedCards[filteredCard.dataId].length > 0">
-          <a (click)="openLoadModal(filteredCard.dataId)"><i class="fas fa-download"></i></a>
+          <a id="load_{{filteredCard.slug}}" (click)="openLoadModal(filteredCard.dataId)"><i class="fas fa-download"></i></a>
         </div>
         <hr *ngIf="j != filteredCards[rarity].length - 1"/>
       </div>
@@ -33,8 +33,8 @@
   </div>
 
   <div class="saveBlock" *ngIf="!showList && card">
-    <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
-    <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
   <div class="leftBlock" *ngIf="!showList && card">
@@ -46,8 +46,8 @@
         <tr>
           <td>
             <div class="cardButtons">
-              <button class="btn btn-sub btn-left" (click)="resetCard()">Reset</button>
-              <button class="btn btn-main btn-right" (click)="maxCard()">Max card</button>
+              <button class="btn btn-sub btn-left" id="reset_card" (click)="resetCard()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_card" (click)="maxCard()">Max card</button>
             </div>
             <div class="cardIcons">
               <img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" />
@@ -69,7 +69,7 @@
               <div class="stars">
                 <ngb-rating [(rate)]="card.star" [max]="4" class="ratingStars">
                   <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" (click)="changeStar(index + 1)">&nbsp;</div>
+                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
                   </ng-template>
                 </ngb-rating>
               </div>
@@ -82,7 +82,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ card.level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of card.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
+                  <button *ngFor="let level of card.tableLevels" class="selectLevel" id="select_level_{{level}}" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
                 </div> / {{ card.maxLevel }}
               </div>
             </div>

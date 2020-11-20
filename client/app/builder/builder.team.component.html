@@ -5,10 +5,10 @@
   </div>
 
   <div class="masterButtons">
-    <button class="btn btn-sub" (click)="newTeam()">New Team</button>
-    <button class="btn btn-sub" (click)="openLinkModal()">Get Link</button>
-    <button class="btn btn-sub" (click)="openLoadModal()" *ngIf="showSave">Load Team</button>
-    <button class="btn btn-sub" (click)="openSaveModal()" *ngIf="showSave">Save Team</button>
+    <button class="btn btn-sub" id="newTeam" (click)="newTeam()">New Team</button>
+    <button class="btn btn-sub" id="openLinkModal" (click)="openLinkModal()">Get Link</button>
+    <button class="btn btn-sub" id="openLoadModal" (click)="openLoadModal()" *ngIf="showSave">Load Team</button>
+    <button class="btn btn-sub" id="openSaveModal" (click)="openSaveModal()" *ngIf="showSave">Save Team</button>
     <span class="teamCost">Cost : {{ team.cost }}</span>
   </div>
 
@@ -25,8 +25,8 @@
       </ng-template>
 
       <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
-        <div class="unitLine">
-          <div class="unitSelector">
+        <div class="unitLine" id="unit_{{item.dataId}}">
+          <div class="unitSelector" id="unitSelector_{{item.dataId}}">
             <div class="unitLogo">
               <img src="assets/units/{{ item.image }}_m.png" />
             </div>
@@ -44,8 +44,8 @@
       <tr>
         <td>
           <div class="unitButtons">
-            <button class="btn btn-sub btn-left" (click)="resetUnit(unitPos)">Reset</button>
-            <button class="btn btn-main btn-right" (click)="maxUnit(unitPos)">Max unit</button>
+            <button class="btn btn-sub btn-left" id="resetUnit_{{unitPos}}" (click)="resetUnit(unitPos)">Reset</button>
+            <button class="btn btn-main btn-right" id="maxUnit_{{unitPos}}" (click)="maxUnit(unitPos)">Max unit</button>
           </div>
           <div class="cardIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
@@ -68,7 +68,7 @@
             <div class="stars">
               <ngb-rating [(rate)]="unit.star" [max]="6" class="ratingStars">
                 <ng-template let-fill="fill" let-index="index">
-                  <div class="star" [class.filled]="fill === 100"  (click)="changeStar(unitPos, index + 1)">&nbsp;</div>
+                  <div class="star" [class.filled]="fill === 100" id="changeStar_{{unitPos}}_{{index + 1}}" (click)="changeStar(unitPos, index + 1)">&nbsp;</div>
                 </ng-template>
               </ngb-rating>
             </div>
@@ -81,7 +81,7 @@
             <div class="lbs">
               <ngb-rating [(rate)]="unit.lb" [max]="5">
                 <ng-template let-fill="fill" let-index="index">
-                  <div class="lb" [class.filled]="fill === 100" (click)="changeLB(unitPos, index + 1)">&nbsp;</div>
+                  <div class="lb" [class.filled]="fill === 100" id="changeLB_{{unitPos}}_{{index + 1}}" (click)="changeLB(unitPos, index + 1)">&nbsp;</div>
                 </ng-template>
               </ngb-rating>
             </div>
@@ -94,22 +94,10 @@
             <div ngbDropdown class="dropdownDiv">
               <button class="btn btn-select" ngbDropdownToggle>{{ unit.level }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(unitPos, level)">{{ level }}</button>
+                <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem id="selectLevel_{{unitPos}}_{{level}}" (focus)="selectLevel(unitPos, level)">{{ level }}</button>
               </div> / {{ unit.maxLevel }}
             </div>
           </div>
-
-          <!-- <div class="masterSkillDiv">
-            <div>
-              Master Skill Level
-            </div>
-            <div ngbDropdown class="dropdownDiv">
-              <button class="btn btn-select" ngbDropdownToggle>{{ unit.masterSkillActivated + 1 }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.masterSkillLevel" class="selectLevel" ngbDropdownItem (focus)="selectMasterSkillLevel(unitPos, level)">{{ level + 1 }}</button>
-              </div>
-            </div>
-          </div> -->
 
           <div class="limitDiv" *ngIf="unit.limit">
             <div>
@@ -118,14 +106,14 @@
             <div ngbDropdown class="dropdownDiv">
               <button class="btn btn-select" ngbDropdownToggle>{{ unit.limit.level }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" ngbDropdownItem (focus)="selectLimitLevel(unitPos, level)">{{ level }}</button>
+                <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" id= "selectLimitLevel_{{unitPos}}_{{level}}" ngbDropdownItem (focus)="selectLimitLevel(unitPos, level)">{{ level }}</button>
               </div>
             </div>
           </div>
 
           <div>
-            <button class="btn btn-sub btn-left" (click)="resetLevel(unitPos)">Reset level</button>
-            <button class="btn btn-main btn-right" (click)="maxLevelAndJobs(unitPos)">Max level</button>
+            <button class="btn btn-sub btn-left" id="resetLevel_{{unitPos}}" (click)="resetLevel(unitPos)">Reset level</button>
+            <button class="btn btn-main btn-right" id="maxLevelAndJobs_{{unitPos}}" (click)="maxLevelAndJobs(unitPos)">Max level</button>
           </div>
         </td>
       </tr>
@@ -140,13 +128,13 @@
             <div ngbDropdown class="dropdownDiv">
               <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem (focus)="selectJobLevel(unitPos, i, level)">{{ level }}</button>
+                <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem id="selectJobLevel_{{unitPos}}_{{i}}_{{level}}" (focus)="selectJobLevel(unitPos, i, level)">{{ level }}</button>
               </div>
             </div>
           </div>
           <div class="jobsButton">
-            <button class="btn btn-sub btn-left" (click)="resetJob(unitPos)">Reset Jobs</button>
-            <button class="btn btn-main btn-right" (click)="maxLevelAndJobs(unitPos)">Max Jobs</button>
+            <button class="btn btn-sub btn-left" id="resetJob_{{unitPos}}" (click)="resetJob(unitPos)">Reset Jobs</button>
+            <button class="btn btn-main btn-right" id="maxLevelAndJobs_{{unitPos}}" (click)="maxLevelAndJobs(unitPos)">Max Jobs</button>
           </div>
         </td>
       </tr>
@@ -155,7 +143,7 @@
       </tr>
       <tr>
         <td class="subJobColumn">
-          <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" (click)="selectSubJob(unitPos, i)">
+          <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="selectSubJob_{{unitPos}}_{{i}}" (click)="selectSubJob(unitPos, i)">
             <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
             {{ unit.jobsData[i].name }}
           </div>
@@ -168,24 +156,24 @@
         <td>
           <div class="equipmentDiv">
             Slot 1
-            <div *ngIf="unit && unit.equipments && unit.equipments[0]" (click)="openEquipmentsModal(unitPos, 0)" class="equipmentPointer">
+            <div *ngIf="unit && unit.equipments && unit.equipments[0]" id="openEquipmentsModal_{{unitPos}}_0_{{unit.equipments[0].dataId}}" (click)="openEquipmentsModal(unitPos, 0)" class="equipmentPointer">
               <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
             </div>
-            <div *ngIf="!unit.equipments || !unit.equipments[0]" (click)="openEquipmentsModal(unitPos, 0)" class="equipmentPointer">
+            <div *ngIf="!unit.equipments || !unit.equipments[0]" id="openEquipmentsModal_{{unitPos}}_0_new" (click)="openEquipmentsModal(unitPos, 0)" class="equipmentPointer">
               <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
             </div>
-            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[0]}" (click)="openEquipmentsModal(unitPos, 0)">Custom</button>
+            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[0]}" id="openEquipmentsModal_{{unitPos}}_0_custom" (click)="openEquipmentsModal(unitPos, 0)">Custom</button>
           </div>
 
           <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
             Slot 2
-            <div *ngIf="unit && unit.equipments && unit.equipments[1]" (click)="openEquipmentsModal(unitPos, 1)" class="equipmentPointer">
+            <div *ngIf="unit && unit.equipments && unit.equipments[1]" id="openEquipmentsModal_{{unitPos}}_1_{{unit.equipments[1].dataId}}" (click)="openEquipmentsModal(unitPos, 1)" class="equipmentPointer">
               <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
             </div>
-            <div *ngIf="!unit.equipments || !unit.equipments[1]" (click)="openEquipmentsModal(unitPos, 1)" class="equipmentPointer">
+            <div *ngIf="!unit.equipments || !unit.equipments[1]" id="openEquipmentsModal_{{unitPos}}_1_new" (click)="openEquipmentsModal(unitPos, 1)" class="equipmentPointer">
               <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
             </div>
-            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[1]}" (click)="openEquipmentsModal(unitPos, 1)">Custom</button>
+            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[1]}" id="openEquipmentsModal_{{unitPos}}_1_custom" (click)="openEquipmentsModal(unitPos, 1)">Custom</button>
           </div>
 
           <div class="equipmentDiv" *ngIf="unit && (unit.lb < 2 || !unit.lb)">
@@ -196,13 +184,13 @@
 
           <div class="equipmentDiv" *ngIf="unit && unit.lb >= 4">
             TMR
-            <div *ngIf="unit && unit.equipments && unit.equipments[2]" (click)="openEquipmentsModal(unitPos, 2)" class="equipmentPointer">
+            <div *ngIf="unit && unit.equipments && unit.equipments[2]" id="openEquipmentsModal_{{unitPos}}_2_{{unit.equipments[2].dataId}}" (click)="openEquipmentsModal(unitPos, 2)" class="equipmentPointer">
               <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
             </div>
-            <div *ngIf="!unit.equipments || !unit.equipments[2]" (click)="openEquipmentsModal(unitPos, 2)" class="equipmentPointer">
+            <div *ngIf="!unit.equipments || !unit.equipments[2]" id="openEquipmentsModal_{{unitPos}}_2_new" (click)="openEquipmentsModal(unitPos, 2)" class="equipmentPointer">
               <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
             </div>
-            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[2]}" (click)="openEquipmentsModal(unitPos, 2)">Custom</button>
+            <button class="btn btn-sub btn-equipment" [ngClass]="{'btn-disable': !unit.equipments || !unit.equipments[2]}" id="openEquipmentsModal_{{unitPos}}_2_custom" (click)="openEquipmentsModal(unitPos, 2)">Custom</button>
           </div>
 
           <div class="equipmentDiv" *ngIf="unit && (unit.lb < 4 || !unit.lb)">
@@ -220,33 +208,33 @@
           <div class="esparCardDiv">
             Esper
             <div *ngIf="unit.esper">
-              <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" (click)="openEspersModal(unitPos)"/>
+              <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" id="openEspersModal_{{unitPos}}" (click)="openEspersModal(unitPos)"/>
               Reso
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ unit.esper.resonance }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" ngbDropdownItem (focus)="selectEsperResonance(unitPos, level)">{{ level }}</button>
+                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" ngbDropdownItem id="selectEsperResonance_{{unitPos}}_{{level}}" (focus)="selectEsperResonance(unitPos, level)">{{ level }}</button>
                 </div>
               </div>
-              <button class="btn btn-sub btn-esper" (click)="openEspersModal(unitPos)">Custom</button>
+              <button class="btn btn-sub btn-esper" id="openEspersModal_{{unitPos}}_custom" (click)="openEspersModal(unitPos)">Custom</button>
             </div>
 
             <div *ngIf="!unit.esper">
-              <img src="{{'assets/builder/no_esper.png'}}" class="esperImg" (click)="openEspersModal(unitPos)"/>
-              <button class="btn btn-sub btn-disable btn-esper" (click)="openEspersModal(unitPos)">Custom</button>
+              <img src="{{'assets/builder/no_esper.png'}}" class="esperImg" id="openEspersModal_{{unitPos}}_new" (click)="openEspersModal(unitPos)"/>
+              <button class="btn btn-sub btn-disable btn-esper" id="openEspersModal_{{unitPos}}_custom_new" (click)="openEspersModal(unitPos)">Custom</button>
             </div>
           </div>
 
           <div class="esparCardDiv">
             Vision Card
             <div *ngIf="unit.card">
-              <img src="{{'assets/cards/' + unit.card.image + '_m.png'}}" class="cardImg" (click)="openCardsModal(unitPos)"/>
-              <button class="btn btn-sub btn-card" (click)="openCardsModal(unitPos)">Custom</button>
+              <img src="{{'assets/cards/' + unit.card.image + '_m.png'}}" class="cardImg" id="openCardsModal_{{unitPos}}" (click)="openCardsModal(unitPos)"/>
+              <button class="btn btn-sub btn-card" id="openCardsModal_{{unitPos}}_custom" (click)="openCardsModal(unitPos)">Custom</button>
             </div>
 
             <div *ngIf="!unit.card">
-              <img src="{{'assets/builder/no_card.png'}}" class="cardImg" (click)="openCardsModal(unitPos)"/>
-              <button class="btn btn-sub btn-disable btn-card" (click)="openCardsModal(unitPos)">Custom</button>
+              <img src="{{'assets/builder/no_card.png'}}" class="cardImg" id="openCardsModal_{{unitPos}}_new" (click)="openCardsModal(unitPos)"/>
+              <button class="btn btn-sub btn-disable btn-card" id="openCardsModal_{{unitPos}}_custom_new" (click)="openCardsModal(unitPos)">Custom</button>
             </div>
           </div>
         </td>
@@ -261,7 +249,7 @@
               {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
             </button>
             <div ngbDropdownMenu class="selectList selectListFull">
-              <button *ngFor="let node of getAvailableSupportNodes(unitPos, i)" class="selectLevel" ngbDropdownItem (focus)="selectSupportSkill(unitPos, i, node.nodeId)">{{ node.name }}</button>
+              <button *ngFor="let node of getAvailableSupportNodes(unitPos, i)" class="selectLevel" ngbDropdownItem id="selectSupportSkill_{{unitPos}}_{{i}}_{{node.nodeId}}" (focus)="selectSupportSkill(unitPos, i, node.nodeId)">{{ node.name }}</button>
             </div>
           </div>
         </td>
@@ -276,7 +264,7 @@
               {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
             </button>
             <div ngbDropdownMenu class="selectList selectListFull">
-              <button *ngFor="let node of getAvailableCounterNodes(unitPos)" class="selectLevel" ngbDropdownItem (focus)="selectCounterSkill(unitPos, node.nodeId)">{{ node.name }}</button>
+              <button *ngFor="let node of getAvailableCounterNodes(unitPos)" class="selectLevel" ngbDropdownItem id="selectCounterSkill_{{unitPos}}_{{node.nodeId}}" (focus)="selectCounterSkill(unitPos, node.nodeId)">{{ node.name }}</button>
             </div>
           </div>
         </td>
@@ -361,7 +349,7 @@
         </div>
       </td>
       <tr>
-        <td colspan="4"><button class="btn btn-sub btn-guild" (click)="showGuildDetail()">Custom</button></td>
+        <td colspan="4"><button class="btn btn-sub btn-guild" id="showGuildDetail" (click)="showGuildDetail()">Custom</button></td>
       </tr>
     </table>
   </div>
@@ -382,7 +370,7 @@
         </div>
       </td>
       <tr>
-        <td colspan="8"><button class="btn btn-sub btn-guild" (click)="showMasterRanksDetail()">Custom</button></td>
+        <td colspan="8"><button class="btn btn-sub btn-guild" id="showMasterRanksDetail" (click)="showMasterRanksDetail()">Custom</button></td>
       </tr>
     </table>
   </div>

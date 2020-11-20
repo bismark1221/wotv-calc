@@ -1,10 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEquipments()" (blur)="blurSearch()" (focus)="focusSearch()">
-    <i class="fas fa-times" aria-hidden="true" (click)="selectEquipment('')"></i>
-    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
+    <input class="searchInput" type="text" placeholder="Search for an equipment by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEquipments()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()">
+    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectEquipment('')"></i>
+    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -18,14 +18,14 @@
     </div>
     <div class="equipmentBlock" *ngIf="showList && !loadingBuild && filteredEquipments[rarity].length > 0">
       <div class="equipmentLine" *ngFor="let filteredEquipment of filteredEquipments[rarity]; let j = index">
-        <div class="equipmentSelector" [ngClass]="{'equipmentSelectorWithSave': savedEquipments[filteredEquipment.dataId]}" (click)="selectEquipment(filteredEquipment.dataId)">
+        <div class="equipmentSelector" id="selector_{{filteredEquipment.slug}}" [ngClass]="{'equipmentSelectorWithSave': savedEquipments[filteredEquipment.dataId]}" (click)="selectEquipment(filteredEquipment.dataId)">
           <div class="equipmentLogo">
             <img src="assets/equipments/{{ filteredEquipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';"/>
           </div>
           <div class="equipmentName" innerHTML="{{ filteredEquipment.name | highlight: searchText }}"></div>
         </div>
         <div class="loadDiv" *ngIf="savedEquipments[filteredEquipment.dataId] && savedEquipments[filteredEquipment.dataId].length > 0">
-          <a (click)="openLoadModal(filteredEquipment.dataId)"><i class="fas fa-download"></i></a>
+          <a id="load_{{filteredEquipment.slug}}" (click)="openLoadModal(filteredEquipment.dataId)"><i class="fas fa-download"></i></a>
         </div>
         <hr *ngIf="j != filteredEquipments[rarity].length - 1"/>
       </div>
@@ -33,8 +33,8 @@
   </div>
 
   <div class="saveBlock" *ngIf="!showList && equipment">
-    <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
-    <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <button class="btn btn-sub btn-buildLink" id="open_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="open_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
   <div class="leftBlock" *ngIf="!showList && equipment">
@@ -67,7 +67,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ equipment.upgrade == 0 ? equipment.upgrade : '+' + equipment.upgrade }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [0, 1, 2, 3, 4, 5]" class="selectLevel" ngbDropdownItem (focus)="selectUpgrade(level)">{{ level == 0 ? level : '+' + level }}</button>
+                  <button *ngFor="let level of [0, 1, 2, 3, 4, 5]" class="selectLevel" ngbDropdownItem (focus)="selectUpgrade(level)" id="select_upgrade_{{level}}">{{ level == 0 ? level : '+' + level }}</button>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select btn-select-grow" ngbDropdownToggle>{{ equipment.grows[equipment.grow].name }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let growId of equipment.growIds" class="selectLevel" ngbDropdownItem (focus)="selectGrow(growId)">{{ equipment.grows[growId].name }}</button>
+                  <button *ngFor="let growId of equipment.growIds" class="selectLevel" ngbDropdownItem (focus)="selectGrow(growId)" id="select_grow_{{growId}}">{{ equipment.grows[growId].name }}</button>
                 </div>
               </div>
             </div>

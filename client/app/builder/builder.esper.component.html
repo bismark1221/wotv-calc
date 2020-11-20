@@ -1,10 +1,10 @@
 <div class="row">
   <div class="searchBlock">
     <i class="fas fa-search" aria-hidden="true"></i>
-    <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEspers()" (blur)="blurSearch()" (focus)="focusSearch()">
-    <i class="fas fa-times" aria-hidden="true" (click)="selectEsper('')"></i>
-    <i class="fas fa-chevron-up" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
-    <i class="fas fa-chevron-down" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
+    <input class="searchInput" type="text" placeholder="Search for an esper by name" [(ngModel)]="searchText" (ngModelChange)="updateFilteredEspers()" id="click_search" (blur)="blurSearch()" (focus)="focusSearch()">
+    <i class="fas fa-times" id="reset_search" aria-hidden="true" (click)="selectEsper('')"></i>
+    <i class="fas fa-chevron-up" id="open_search" aria-hidden="true" (click)="toogleList()" *ngIf="showList"></i>
+    <i class="fas fa-chevron-down" id="hide_search" aria-hidden="true" (click)="toogleList()" *ngIf="!showList"></i>
   </div>
 
   <div class="loadingBlock" *ngIf="loadingBuild">
@@ -18,14 +18,14 @@
     </div>
     <div class="esperBlock" *ngIf="showList && !loadingBuild && filteredEspers[rarity].length > 0">
       <div class="esperLine" *ngFor="let filteredEsper of filteredEspers[rarity]; let j = index">
-        <div class="esperSelector" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
+        <div class="esperSelector" id="selector_{{filteredEsper.slug}}" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
           <div class="esperLogo">
             <img src="assets/units/{{ filteredEsper.image }}_m.png" />
           </div>
           <div class="esperName" innerHTML="{{ filteredEsper.name | highlight: searchText }}"></div>
         </div>
         <div class="loadDiv" *ngIf="savedEspers[filteredEsper.dataId] && savedEspers[filteredEsper.dataId].length > 0">
-          <a (click)="openLoadModal(filteredEsper.dataId)"><i class="fas fa-download"></i></a>
+          <a id="load_{{filteredEsper.slug}}" (click)="openLoadModal(filteredEsper.dataId)"><i class="fas fa-download"></i></a>
         </div>
         <hr *ngIf="j != filteredEspers[rarity].length - 1"/>
       </div>
@@ -33,8 +33,8 @@
   </div>
 
   <div class="saveBlock" *ngIf="!showList && esper">
-    <button class="btn btn-sub btn-buildLink" (click)="openLinkModal(builderLink)">Get Build Link</button>
-    <button class="btn btn-sub" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
+    <button class="btn btn-sub btn-buildLink" id="opene_generatelink" (click)="openLinkModal(builderLink)">Get Build Link</button>
+    <button class="btn btn-sub" id="opene_savebuild" (click)="openSaveModal(saveModal)" *ngIf="showSave">Save</button>
   </div>
 
   <div class="leftBlock" *ngIf="!showList && esper">
@@ -46,8 +46,8 @@
         <tr>
           <td>
             <div class="esperButtons">
-              <button class="btn btn-sub btn-left" (click)="resetEsper()">Reset</button>
-              <button class="btn btn-main btn-right" (click)="maxEsper()">Max esper</button>
+              <button class="btn btn-sub btn-left" id="reset_esper" (click)="resetEsper()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_esper" (click)="maxEsper()">Max esper</button>
             </div>
             <div class="esperIcons">
               <img class="rarityImg" src="{{'assets/rarity/' + esper.rarity + '.png'}}" />
@@ -70,7 +70,7 @@
               <div class="stars">
                 <ngb-rating [(rate)]="esper.star" [max]="maxStar" class="ratingStars">
                   <ng-template let-fill="fill" let-index="index">
-                    <div class="star" [class.filled]="fill === 100" (click)="changeStar(index + 1)">&nbsp;</div>
+                    <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
                   </ng-template>
                 </ngb-rating>
               </div>
@@ -83,7 +83,7 @@
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle>{{ esper.level }}</button>
                 <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
+                  <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem id="select_level_{{level}}" (focus)="selectLevel(level)">{{ level }}</button>
                 </div> / {{ esper.maxLevel }}
               </div>
             </div>
@@ -135,7 +135,7 @@
     <div *ngIf="esper.grid">
       <div class="builderEsperGridContainer" style="text-align: center;">
         <ul class="hexGrid" oncontextmenu="return false;">
-          <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
+          <li *ngFor="let node of esper.grid.gridNodes; let index;" id="click_node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
             <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
 
             <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type == 'center'">

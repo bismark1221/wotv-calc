@@ -11,8 +11,8 @@
     <tr>
       <td *ngFor="let statue of statueNames" class="statsTd">
         <div>
-          lv. <select [(ngModel)]="guild[statue]">
-            <option *ngFor="let level of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">{{ level }}</option>
+          lv. <select [(ngModel)]="guild[statue]" id="statue_{{statue}}">
+            <option *ngFor="let level of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"  id="level_{{level}}">{{ level }}</option>
           </select>
         </div>
         <div *ngIf="guild[statue] > 0">
@@ -24,7 +24,7 @@
     </tr>
     <tr *ngIf="showSave">
       <td colspan="4">
-        <button class="btn btn-main" (click)="saveGuild()">SAVE</button>
+        <button class="btn btn-main" id="saveGuild" (click)="saveGuild()">SAVE</button>
       </td>
     </tr>
   </table>
