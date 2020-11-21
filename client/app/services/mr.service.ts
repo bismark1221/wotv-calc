@@ -75,6 +75,13 @@ export class MasterRanksService {
   getMasterRanksForBuilder(forceEmptyMasterRanks = false) {
     if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
       this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
+
+      let elements = ["fire", "ice", "water", "wind", "light", "dark", "earth", "lightning"]
+      elements.forEach(element => {
+        if (!this.masterRanks[element] || isNaN(this.masterRanks[element]) || this.masterRanks[element] < 1 || this.masterRanks[element] > 40) {
+          this.masterRanks[element] = 1
+        }
+      })
     } else {
       this.masterRanks = {
         fire: 1,
