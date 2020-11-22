@@ -492,21 +492,22 @@ export class UnitService {
   }
 
   hasChangeBeenMade() {
-    let result = true
     if (this.unit.storeId) {
       let newData = this.getSavableData(this.unit)
       let oldData = null
-      this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
-        if (savedUnit.storeId == this.unit.storeId) {
-          oldData = savedUnit
-          delete oldData.storeId
-        }
-      })
+      if (this.getSavedUnits()[this.unit.dataId]) {
+        this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
+          if (savedUnit.storeId == this.unit.storeId) {
+            oldData = savedUnit
+            delete oldData.storeId
+          }
+        })
 
-      return !this.toolService.equal(oldData, newData)
+        return !this.toolService.equal(oldData, newData)
+      }
     }
 
-    return result
+    return true
   }
 
   changeStar() {
