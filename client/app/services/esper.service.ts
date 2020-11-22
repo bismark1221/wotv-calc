@@ -352,21 +352,22 @@ export class EsperService {
   }
 
   hasChangeBeenMade() {
-    let result = true
     if (this.esper.storeId) {
       let newData = this.getSavableData(this.esper)
       let oldData = null
-      this.getSavedEspers()[this.esper.dataId].forEach(savedEsper => {
-        if (savedEsper.storeId == this.esper.storeId) {
-          oldData = savedEsper
-          delete oldData.storeId
-        }
-      })
+      if (this.getSavedEspers()[this.esper.dataId]) {
+        this.getSavedEspers()[this.esper.dataId].forEach(savedEsper => {
+          if (savedEsper.storeId == this.esper.storeId) {
+            oldData = savedEsper
+            delete oldData.storeId
+          }
+        })
 
-      return !this.toolService.equal(oldData, newData)
+        return !this.toolService.equal(oldData, newData)
+      }
     }
 
-    return result
+    return true
   }
 
   resetEsper(esper = null) {

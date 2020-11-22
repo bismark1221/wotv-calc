@@ -505,21 +505,23 @@ export class EquipmentService {
   }
 
   hasChangeBeenMade() {
-    let result = true
     if (this.equipment.storeId) {
       let newData = this.getSavableData(this.equipment)
       let oldData = null
-      this.getSavedEquipments()[this.equipment.dataId].forEach(savedEquipment => {
-        if (savedEquipment.storeId == this.equipment.storeId) {
-          oldData = savedEquipment
-          delete oldData.storeId
-        }
-      })
 
-      return !this.toolService.equal(oldData, newData)
+      if (this.getSavedEquipments()[this.equipment.dataId]) {
+        this.getSavedEquipments()[this.equipment.dataId].forEach(savedEquipment => {
+          if (savedEquipment.storeId == this.equipment.storeId) {
+            oldData = savedEquipment
+            delete oldData.storeId
+          }
+        })
+
+        return !this.toolService.equal(oldData, newData)
+      }
     }
 
-    return result
+    return true
   }
 
   changeUpgrade(equipment = null) {

@@ -289,21 +289,23 @@ export class CardService {
   }
 
   hasChangeBeenMade() {
-    let result = true
     if (this.card.storeId) {
       let newData = this.getSavableData(this.card)
       let oldData = null
-      this.getSavedCards()[this.card.dataId].forEach(savedCard => {
-        if (savedCard.storeId == this.card.storeId) {
-          oldData = savedCard
-          delete oldData.storeId
-        }
-      })
 
-      return !this.toolService.equal(oldData, newData)
+      if (this.getSavedCards()[this.card.dataId]) {
+        this.getSavedCards()[this.card.dataId].forEach(savedCard => {
+          if (savedCard.storeId == this.card.storeId) {
+            oldData = savedCard
+            delete oldData.storeId
+          }
+        })
+
+        return !this.toolService.equal(oldData, newData)
+      }
     }
 
-    return result
+    return true
   }
 
   resetCard(card = null) {
