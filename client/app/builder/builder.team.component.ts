@@ -155,6 +155,15 @@ export class BuilderTeamComponent implements OnInit {
             this.team.units[pos].board.nodes[nodeId].skill.name = this.nameService.getName(this.team.units[pos].board.nodes[nodeId].skill)
           }
         })
+
+        if (this.team.units[pos].replacedSkills) {
+          Object.keys(this.team.units[pos].replacedSkills).forEach(upgradeId => {
+            this.team.units[pos].replacedSkills[upgradeId].forEach(upgrade => {
+              upgrade.newSkill.name = this.nameService.getName(upgrade.newSkill)
+              upgrade.oldSkillData.name = this.nameService.getName(upgrade.oldSkillData)
+            })
+          })
+        }
       }
 
       this.team.units.forEach((unit, unitIndex) => {

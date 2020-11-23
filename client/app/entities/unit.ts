@@ -1040,6 +1040,36 @@ export class Unit {
       }
     }
 
+    if (this.replacedSkills[node.dataId]) {
+      if (node.level == 0) {
+        this.replacedSkills[node.dataId].forEach(upgrade => {
+          let newSkill = JSON.parse(JSON.stringify(upgrade.oldSkillData))
+
+          Object.keys(this.board.nodes).forEach(oldNodeId => {
+            if (this.board.nodes[oldNodeId].dataId == upgrade.oldSkill) {
+              let oldSkill = this.board.nodes[oldNodeId].skill
+              newSkill.level = this.board.nodes[oldNodeId].level
+              this.board.nodes[oldNodeId].skill = newSkill
+              this.getAvailableStatType()
+            }
+          })
+        })
+      } else {
+        this.replacedSkills[node.dataId].forEach(upgrade => {
+          let newSkill = JSON.parse(JSON.stringify(upgrade.newSkill))
+
+          Object.keys(this.board.nodes).forEach(oldNodeId => {
+            if (this.board.nodes[oldNodeId].dataId == upgrade.oldSkill) {
+              let oldSkill = this.board.nodes[oldNodeId].skill
+              newSkill.level = this.board.nodes[oldNodeId].level
+              this.board.nodes[oldNodeId].skill = newSkill
+              this.getAvailableStatType()
+            }
+          })
+        })
+      }
+    }
+
     return node.level
   }
 
@@ -1346,7 +1376,8 @@ export class Unit {
 
     Object.keys(this.board.nodes).forEach(nodeId => {
       let skill = this.board.nodes[nodeId].skill
-      this.board.nodes[nodeId].skill.effects.forEach(effect => {
+
+      skill.effects.forEach(effect => {
         if (findedStats.indexOf(effect.type) === -1) {
           if (skill.type === "buff" || (skill.type === "support" && this.activatedSupport.indexOf(nodeId) != -1)) {
             if (statsType.indexOf(effect.type) === -1) {
@@ -1454,5 +1485,28 @@ export class Unit {
     }
 
     this.calcCost.total = this.calcCost.baseTotal + this.calcCost.esper + this.calcCost.card
+  }
+
+  formatUpgrades() {
+    Object.keys(this.replacedSkills).forEach(upgradeId => {
+      this.replacedSkills[upgradeId].forEach(upgrade => {
+        let oldSkillData = this.getSkillById(upgrade.oldSkill)
+        if (oldSkillData) {
+          upgrade.oldSkillData = JSON.parse(JSON.stringify(oldSkillData.skill))
+        }
+      })
+    })
+  }
+
+  getSkillById(skillId) {
+    let skill = null
+
+    Object.keys(this.board.nodes).forEach(nodeId => {
+      if (this.board.nodes[nodeId].skill && this.board.nodes[nodeId].skill.dataId == skillId) {
+        skill = this.board.nodes[nodeId]
+      }
+    })
+
+    return skill
   }
 }

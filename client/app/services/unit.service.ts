@@ -27,6 +27,7 @@ import JP_UNITS from '../data/jp/units.json';
 export class UnitService {
   private units: Unit[];
   unit
+  availableStatType
 
   private glExUnits = [
     "UN_LW_P_FRVA"
@@ -257,6 +258,7 @@ export class UnitService {
     this.unit = new Unit()
     this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService)
     this.unit.name = this.unit.getName(this.translateService)
+    this.unit.formatUpgrades();
 
     this.unit.jobsData = []
     this.unit.jobs.forEach(jobId => {
@@ -340,6 +342,20 @@ export class UnitService {
         if (unit.nodes[nodeId]) {
           this.unit.board.nodes[nodeId].level = unit.nodes[nodeId]
           this.unit.board.nodes[nodeId].activated = true
+
+          if (this.unit.replacedSkills[this.unit.board.nodes[nodeId].dataId]) {
+            this.unit.replacedSkills[this.unit.board.nodes[nodeId].dataId].forEach(upgrade => {
+              let newSkill = JSON.parse(JSON.stringify(upgrade.newSkill))
+
+              Object.keys(unit.nodes).forEach(oldNodeId => {
+                if (this.unit.board.nodes[oldNodeId].dataId == upgrade.oldSkill) {
+                  let oldSkill = this.unit.board.nodes[oldNodeId].skill
+                  newSkill.level = this.unit.board.nodes[oldNodeId].level
+                  this.unit.board.nodes[oldNodeId].skill = newSkill
+                }
+              })
+            })
+          }
         }
       })
 
@@ -526,7 +542,7 @@ export class UnitService {
     }
 
     this.unit.calculateTotalStats()
-    this.unit.getAvailableStatType()
+    this.availableStatType = this.unit.getAvailableStatType()
   }
 
   changeJobLevel() {
@@ -556,7 +572,7 @@ export class UnitService {
   }
 
   getAvailableStatType() {
-    return this.unit.getAvailableStatType()
+    return this.availableStatType
   }
 
   maxUnit() {
