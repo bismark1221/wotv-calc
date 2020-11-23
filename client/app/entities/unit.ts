@@ -709,18 +709,20 @@ export class Unit {
     this.teamCards.forEach(card => {
       if (card) {
         Object.keys(card.buffs.party).forEach(statType => {
-          let value = card.buffs.party[statType].value
+          if (!card.buffs.party[statType].cond || this.checkCondition(card.buffs.party[statType].cond)) {
+            let value = card.buffs.party[statType].value
 
-          if (statsType.indexOf(statType) !== -1) {
-            if (card.buffs.party[statType].calcType === "percent") {
-              value = Math.floor(this.stats[statType].baseTotal * value / 100)
+            if (statsType.indexOf(statType) !== -1) {
+              if (card.buffs.party[statType].calcType === "percent") {
+                value = Math.floor(this.stats[statType].baseTotal * value / 100)
+              }
             }
-          }
 
-          if ((!teamBuffs[statType] || value > teamBuffs[statType])
-            && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
-          ) {
-            teamBuffs[statType] = value
+            if ((!teamBuffs[statType] || value > teamBuffs[statType])
+              && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
+            ) {
+              teamBuffs[statType] = value
+            }
           }
         })
       }
