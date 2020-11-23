@@ -15,7 +15,10 @@ import { default as FR_SkillName } from      '../../../data/fr/skillname.json';
 import { default as FR_UnitName } from       '../../../data/fr/unitname.json';
 import { default as FR_VisionCardName } from '../../../data/fr/visioncardname.json';
 import { default as FR_ItemName } from       '../../../data/fr/itemname.json';
-
+import { default as FR_PlayerTitleName } from       '../../../data/fr/playerawardsname.json';
+import { default as FR_PlayerTitleDesc } from       '../../../data/fr/playerawardsdescription.json';
+import { default as FR_GuildTitleName } from       '../../../data/fr/guildawardsname.json';
+import { default as FR_GuildTitleDesc } from       '../../../data/fr/guildawardsdescription.json';
 
 import { default as JP_ArtifactGrow } from   '../../../data/jp/artifactgrow.json';
 import { default as JP_ArtifactName } from   '../../../data/jp/artifactname.json';
@@ -26,9 +29,14 @@ import { default as JP_SkillName } from      '../../../data/jp/skillname.json';
 import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
 import { default as JP_ItemName } from       '../../../data/jp/itemname.json';
+import { default as JP_PlayerTitleName } from       '../../../data/jp/playerawardsname.json';
+import { default as JP_PlayerTitleDesc } from       '../../../data/jp/playerawardsdescription.json';
+import { default as JP_GuildTitleName } from       '../../../data/fr/guildawardsname.json';
+import { default as JP_GuildTitleDesc } from       '../../../data/fr/guildawardsdescription.json';
 
 import { default as JP_Romaji } from         '../../../data/jp_romaji.json';
-
+import { default as JP_Titles_Name } from         '../../../data/jp_titles_name.json';
+import { default as JP_Titles_Desc } from         '../../../data/jp_titles_desc.json';
 
 import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
 import { default as gl_raid_2 } from         '../../../data/raid/gl/raid_ev_06_02_set.json';
@@ -128,6 +136,8 @@ export class JsonService {
     wotvJobs: {},
     wotvItems: {},
     wotvMasterRanks: {},
+    wotvPlayerTitles: {},
+    wotvGuildTitles: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -137,6 +147,8 @@ export class JsonService {
     cardConditions: {},
     masterRanks: {},
     masterRanksEffects: {},
+    playerTitles : {},
+    guildTitles : {},
   }
 
   jp = {
@@ -162,6 +174,8 @@ export class JsonService {
     wotvJobs: {},
     wotvItems: {},
     wotvMasterRanks: {},
+    wotvPlayerTitles: {},
+    wotvGuildTitles: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -171,9 +185,13 @@ export class JsonService {
     cardConditions: {},
     masterRanks: {},
     masterRanksEffects: {},
+    playerTitles : {},
+    guildTitles : {},
   }
 
   jpRomaji = {}
+  jpTitlesName = {}
+  jpTitlesDesc = {}
 
   names = {
     en : {
@@ -185,7 +203,11 @@ export class JsonService {
       visionCard: {},
       equipmentGrow: {},
       itemOther: {},
-      item: {}
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
     },
     fr: {
       skill: {},
@@ -196,7 +218,11 @@ export class JsonService {
       visionCard: {},
       equipmentGrow: {},
       itemOther: {},
-      item: {}
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
     },
     jp: {
       skill: {},
@@ -207,7 +233,11 @@ export class JsonService {
       visionCard: {},
       equipmentGrow: {},
       itemOther: {},
-      item: {}
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
     }
   }
 
@@ -883,6 +913,14 @@ export class JsonService {
       });
   }
 
+  private GLPlayersAward() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/PlayersAward.json').toPromise();
+  }
+
+  private GLGuildsAward() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/GuildsAward.json').toPromise();
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -973,6 +1011,14 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/MasterRankEffect.json').toPromise();
   }
 
+  private JPPlayersAward() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/PlayersAward.json').toPromise();
+  }
+
+  private JPGuildsAward() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/GuildsAward.json').toPromise();
+  }
+
 
   /* Translation */
   private TranslateUnitNames() {
@@ -1009,6 +1055,22 @@ export class JsonService {
 
   private TranslateItemName() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemName.json').toPromise();
+  }
+
+  private TranslatePlayerAwardsName() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/PlayerAwardsName.json').toPromise();
+  }
+
+  private TranslatePlayerAwardsDescription() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/PlayerAwardsDescription.json').toPromise();
+  }
+
+  private TranslateGuildAwardsName() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsName.json').toPromise();
+  }
+
+  private TranslateGuildAwardsDescription() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsDescription.json').toPromise();
   }
 
   getJsons(): Promise<any[]> {
@@ -1077,6 +1139,15 @@ export class JsonService {
       this.GLMasterRankEffect(),
       this.JPMasterRank(),
       this.JPMasterRankEffect(),
+
+      this.GLPlayersAward(),
+      this.GLGuildsAward(),
+      this.JPPlayersAward(),
+      this.JPGuildsAward(),
+      this.TranslatePlayerAwardsName(),
+      this.TranslatePlayerAwardsDescription(),
+      this.TranslateGuildAwardsName(),
+      this.TranslateGuildAwardsDescription(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1100,6 +1171,8 @@ export class JsonService {
       this.gl.cardConditions = this.formatJson(responses[47]);
       this.gl.masterRanks = this.formatJson(responses[49]);
       this.gl.masterRanksEffects = this.formatJson(responses[50]);
+      this.gl.playerTitles = this.formatJson(responses[53]);
+      this.gl.guildTitles = this.formatJson(responses[54]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1123,6 +1196,8 @@ export class JsonService {
       this.jp.cardConditions = this.formatJson(responses[48]);
       this.jp.masterRanks = this.formatJson(responses[51]);
       this.jp.masterRanksEffects = this.formatJson(responses[52]);
+      this.jp.playerTitles = this.formatJson(responses[55]);
+      this.jp.guildTitles = this.formatJson(responses[56]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1133,6 +1208,10 @@ export class JsonService {
       this.names.en.itemOther = this.formatNames(responses[32]);
       this.names.en.equipmentGrow = this.formatNames(responses[33]);
       this.names.en.item = this.formatNames(responses[44]);
+      this.names.en.playerTitleName = this.formatNames(responses[57]);
+      this.names.en.playerTitleDesc = this.formatNames(responses[58]);
+      this.names.en.guildTitleName = this.formatNames(responses[59]);
+      this.names.en.guildTitleDesc = this.formatNames(responses[60]);
 
       this.names.fr.unit = this.formatNames(FR_UnitName)
       this.names.fr.skill = this.formatNames(FR_SkillName)
@@ -1143,6 +1222,10 @@ export class JsonService {
       this.names.fr.itemOther = this.formatNames(FR_ItemOther)
       this.names.fr.equipmentGrow = this.formatNames(FR_ArtifactGrow)
       this.names.fr.item = this.formatNames(FR_ItemName)
+      this.names.fr.playerTitleName = this.formatNames(FR_PlayerTitleName);
+      this.names.fr.playerTitleDesc = this.formatNames(FR_PlayerTitleDesc);
+      this.names.fr.guildTitleName = this.formatNames(FR_GuildTitleName);
+      this.names.fr.guildTitleDesc = this.formatNames(FR_GuildTitleDesc);
 
       this.names.jp.unit = this.formatNames(JP_UnitName)
       this.names.jp.skill = this.formatNames(JP_SkillName)
@@ -1153,8 +1236,14 @@ export class JsonService {
       this.names.jp.itemOther = this.formatNames(JP_ItemOther)
       this.names.jp.equipmentGrow = this.formatNames(JP_ArtifactGrow)
       this.names.jp.item = this.formatNames(JP_ItemName)
+      this.names.jp.playerTitleName = this.formatNames(JP_PlayerTitleName);
+      this.names.jp.playerTitleDesc = this.formatNames(JP_PlayerTitleDesc);
+      this.names.jp.guildTitleName = this.formatNames(JP_GuildTitleName);
+      this.names.jp.guildTitleDesc = this.formatNames(JP_GuildTitleDesc);
 
       this.jpRomaji = JP_Romaji
+      this.jpTitlesName = JP_Titles_Name
+      this.jpTitlesDesc = JP_Titles_Desc
 
       this.formatJsons();
 
@@ -1168,6 +1257,8 @@ export class JsonService {
           raids: this.gl.wotvRaids,
           items: this.gl.wotvItems,
           masterRanks: this.gl.wotvMasterRanks,
+          playerTitles: this.gl.wotvPlayerTitles,
+          guildTitles: this.gl.wotvGuildTitles,
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1178,9 +1269,11 @@ export class JsonService {
           raids: this.jp.wotvRaids,
           items: this.jp.wotvItems,
           masterRanks: this.jp.wotvMasterRanks,
+          playerTitles: this.jp.wotvPlayerTitles,
+          guildTitles: this.jp.wotvGuildTitles,
         },
-        translate : {
-          jpRomaji : this.jpRomaji
+        translate: {
+          jpRomaji: this.jpRomaji
         }
       };
     });
@@ -1240,6 +1333,8 @@ export class JsonService {
       });
 
       this.formatMasterRanks();
+
+      this.formatTitles();
     }
   }
 
@@ -1411,7 +1506,7 @@ export class JsonService {
             this.jpTranslateService.convert(slug).then(translatedText => {
               this.jpRomaji[slug] = translatedText
               item.slug = this.slug.slugify(translatedText)
-              console.log('New JP Translate ==> "' + slug + '": "' + translatedText + '",')
+              console.log('New JP Translate for ' + type + ' ==> "' + slug + '": "' + translatedText + '",')
             })
           } else {
             item.slug = this.slug.slugify(this.jpRomaji[slug])
@@ -2914,5 +3009,74 @@ export class JsonService {
         }
       })
     })
+  }
+
+  private upperCaseFirst(text) {
+    if (text) {
+      return text[0].toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+    return "";
+  }
+
+  formatTitles() {
+    Object.keys(this[this.version].playerTitles).forEach(titleId => {
+      this.addTitle("player", titleId)
+    })
+
+    Object.keys(this[this.version].guildTitles).forEach(titleId => {
+      this.addTitle("guild", titleId)
+    })
+  }
+
+  addTitle(type, titleId) {
+    let titleData = this[this.version][type + "Titles"][titleId]
+
+    this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId] = {
+      dataId: titleId,
+      names: {}
+    }
+
+    this.getNames(this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId], type + "TitleName", false);
+
+    if (this.version == "gl") {
+      if (!this.names.en[type + "TitleDesc"][titleId]) {
+        this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].howToGet = {
+          en: titleId,
+          fr: titleId
+        }
+      } else {
+        this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].howToGet = {
+          en: this.names.en[type + "TitleDesc"][titleId],
+          fr: this.names.fr[type + "TitleDesc"][titleId] ? this.names.fr[type + "TitleDesc"][titleId] : this.names.fr[type + "TitleDesc"][titleId]
+        }
+      }
+    } else {
+      if (!this.names.jp[type + "TitleDesc"][titleId]) {
+        this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].howToGet = {
+          en: titleId
+        }
+      } else {
+        if (this.names.en[type + "TitleDesc"][titleId]) {
+          this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].howToGet = {
+            en: this.names.en[type + "TitleDesc"][titleId]
+          }
+        } else if (!this.jpTitlesDesc[titleId]) {
+          console.log("Need Google Translate for '" + titleId + "' ==> '" + this.names.jp[type + "TitleDesc"][titleId]) + "'"
+        } else {
+          this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].howToGet = {
+            en: this.jpTitlesDesc[titleId]
+          }
+        }
+
+        if (this.names.en[type + "TitleName"][titleId]) {
+          this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].names.en = this.names.en[type + "TitleName"][titleId]
+        } else if (!this.jpTitlesName[titleId]) {
+          console.log("Need Google Translate for '" + titleId + "' ==> '" + this.names.jp[type + "TitleName"][titleId]) + "'"
+        } else {
+          this[this.version]["wotv" + this.upperCaseFirst(type) + "Titles"][titleId].names.en = this.jpTitlesName[titleId]
+        }
+      }
+    }
   }
 }

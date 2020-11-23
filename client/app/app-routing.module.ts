@@ -19,6 +19,10 @@ import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
 import { ComparisonComponent } from './comparison/comparison.component';
 
+
+import { OtherComponent } from './other/other.component';
+import { OtherTitlesComponent } from './other/other.titles.component';
+
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
 import { BuilderCardComponent } from './builder/builder.card.component';
@@ -42,6 +46,13 @@ const ROUTES: Routes = [
   { path: 'raids', component: RaidsComponent },
   { path: 'raid/:slug', component: RaidComponent },
   { path: 'index', component: ComparisonComponent },
+
+  { path: 'other', component: OtherComponent,
+    children: [
+      { path: '', redirectTo: 'titles', pathMatch: 'full' },
+      { path: 'titles', component: OtherTitlesComponent },
+    ]
+  },
 
   { path: 'builder', component: BuilderComponent,
     children: [
@@ -78,6 +89,13 @@ const ROUTES: Routes = [
   { path: 'JP/raids', component: RaidsComponent },
   { path: 'JP/raid/:slug', component: RaidComponent },
   { path: 'JP/index', component: ComparisonComponent },
+
+  { path: 'JP/other', component: OtherComponent,
+    children: [
+      { path: '', redirectTo: 'titles', pathMatch: 'full' },
+      { path: 'titles', component: OtherTitlesComponent },
+    ]
+  },
 
   { path: 'JP/builder', component: BuilderComponent,
     children: [

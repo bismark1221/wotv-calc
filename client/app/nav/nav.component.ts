@@ -21,6 +21,7 @@ export class NavComponent {
   displayLink: boolean = false;
   menuDisabled: boolean;
   inBuilder = false;
+  inOther = false;
   inUnit = false;
   inCard = false;
   inEsper = false;
@@ -28,6 +29,7 @@ export class NavComponent {
   inRaid = false;
   inIndex = false;
   showBuilderNav = false;
+  showOtherNav = false;
   showVersionSelector = false;
   showLangSelector = false;
   actualRoute = null;
@@ -72,6 +74,7 @@ export class NavComponent {
       }
 
       if (event instanceof NavigationEnd) {
+        this.inOther = false
         this.inBuilder = false
         this.inUnit = false;
         this.inCard = false;
@@ -85,6 +88,9 @@ export class NavComponent {
         if ((url.length >= 2 && url[1] == "builder")
           || (url.length >= 3 && url[2] == "builder")) {
           this.inBuilder = true
+        } else if ((url.length >= 2 && url[1] == "other")
+          || (url.length >= 3 && url[2] == "other")) {
+          this.inOther = true
         } else if (url.length >= 2 && (url[1] == "unit" || url[1] == "units" || (url[1] == "JP" && (url[2] == "unit" || url[2] == "units")))) {
           this.inUnit = true;
         } else if (url.length >= 2 && (url[1] == "card" || url[1] == "cards" || (url[1] == "JP" && (url[2] == "card" || url[2] == "cards")))) {

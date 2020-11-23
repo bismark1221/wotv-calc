@@ -16,6 +16,8 @@ export class JsonComponent implements OnInit {
   GLRaids = {};
   GLItems = {};
   GLMasterRanks = {};
+  GLPlayerTitles = {};
+  GLGuildTitles = {};
 
   JPunits = {};
   JPvisionCards = {};
@@ -25,6 +27,8 @@ export class JsonComponent implements OnInit {
   JPRaids = {};
   JPItems = {};
   JPMasterRanks = {};
+  JPPlayerTitles = {};
+  JPGuildTitles = {};
 
   JPRomaji = {};
 
@@ -56,6 +60,12 @@ export class JsonComponent implements OnInit {
       // @ts-ignore
       this.GLMasterRanks = response.gl.masterRanks;
 
+      // @ts-ignore
+      this.GLPlayerTitles = response.gl.playerTitles;
+
+      // @ts-ignore
+      this.GLGuildTitles = response.gl.guildTitles;
+
 
       // @ts-ignore
       this.JPunits = response.jp.units;
@@ -80,6 +90,12 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPMasterRanks = response.jp.masterRanks;
+
+      // @ts-ignore
+      this.JPPlayerTitles = response.jp.playerTitles;
+
+      // @ts-ignore
+      this.JPGuildTitles = response.jp.guildTitles;
 
       // @ts-ignore
       this.JPRomaji = response.translate.jpRomaji;

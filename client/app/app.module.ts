@@ -48,6 +48,9 @@ import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
 import { ComparisonComponent } from './comparison/comparison.component';
 
+import { OtherComponent } from './other/other.component';
+import { OtherTitlesComponent } from './other/other.titles.component';
+
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
 import { BuilderCardComponent } from './builder/builder.card.component';
@@ -86,6 +89,7 @@ import { ToolService } from './services/tool.service';
 import { JpTranslateService } from './services/jptranslate.service';
 import { MasterRanksService } from './services/mr.service';
 import { CheckHashService } from './services/checkHash.service';
+import { TitleService } from './services/title.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -135,7 +139,9 @@ export function createTranslateLoader(http: HttpClient) {
     ModalSaveComponent,
     ModalLinkComponent,
     LoginComponent,
-    ComparisonComponent
+    ComparisonComponent,
+    OtherComponent,
+    OtherTitlesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -187,6 +193,7 @@ export function createTranslateLoader(http: HttpClient) {
     JpTranslateService,
     MasterRanksService,
     CheckHashService,
+    TitleService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

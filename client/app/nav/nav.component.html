@@ -5,28 +5,31 @@
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="[getRoute('/units')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inUnit}">
+        <a class="nav-link" [routerLink]="[getRoute('/units')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inUnit}">
           {{ 'nav.units' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/cards')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inCard}">
+        <a class="nav-link" [routerLink]="[getRoute('/cards')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inCard}">
           {{ 'nav.cards' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/espers')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inEsper}">
+        <a class="nav-link" [routerLink]="[getRoute('/espers')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inEsper}">
           {{ 'nav.espers' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inEquipment}">
+        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inEquipment}">
           {{ 'nav.equipments' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inRaid}">
+        <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inRaid}">
           {{ 'nav.raids' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/index')]" (mouseover)="showBuilderNav=false" [ngClass]="{'active': inIndex}">
+        <a class="nav-link" [routerLink]="[getRoute('/index')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inIndex}">
           {{ 'nav.index' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/builder')]" (mouseover)="showBuilderNav=true" [ngClass]="{'active': inBuilder}">
+        <a class="nav-link" [routerLink]="[getRoute('/builder')]" (mouseover)="showBuilderNav=true; showOtherNav=false" [ngClass]="{'active': inBuilder}">
           {{ 'nav.builder' | translate }}
         </a>
-        <div class="inlineBlock" (mouseover)="showBuilderNav=false">&nbsp;</div>
+        <a class="nav-link" [routerLink]="[getRoute('/other')]" (mouseover)="showBuilderNav=false; showOtherNav=true" [ngClass]="{'active': inOther}">
+          {{ 'nav.titles' | translate }}
+        </a>
+        <div class="inlineBlock" (mouseover)="showBuilderNav=false; showOtherNav=false">&nbsp;</div>
       </li>
     </ul>
   </div>
@@ -79,7 +82,7 @@
   </div>
 </nav>
 
-<nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false" *ngIf="showBuilderNav || inBuilder">
+<nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false; showOtherNav=false" *ngIf="showBuilderNav || inBuilder">
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
@@ -94,3 +97,14 @@
     </ul>
   </div>
 </nav>
+
+<!-- <nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false; showOtherNav=false" *ngIf="showOtherNav || inOther">
+  <div class="centerNav">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
+        <a class="nav-link" [routerLink]="[getRoute('/other/titles')]" [routerLinkActive]="['active']">{{ 'nav.titles' | translate }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ -->
