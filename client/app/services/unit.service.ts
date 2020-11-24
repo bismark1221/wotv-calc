@@ -27,7 +27,6 @@ import JP_UNITS from '../data/jp/units.json';
 export class UnitService {
   private units: Unit[];
   unit
-  availableStatType
 
   private glExUnits = [
     "UN_LW_P_FRVA"
@@ -544,7 +543,6 @@ export class UnitService {
     }
 
     this.unit.calculateTotalStats()
-    this.availableStatType = this.unit.getAvailableStatType()
   }
 
   changeJobLevel() {
@@ -574,7 +572,7 @@ export class UnitService {
   }
 
   getAvailableStatType() {
-    return this.availableStatType
+    return this.unit.getAvailableStatType()
   }
 
   maxUnit() {

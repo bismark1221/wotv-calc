@@ -130,6 +130,7 @@ export class Unit {
   cost
   calcCost
   replacedSkills
+  availableStatTypes = []
 
 
   constructFromJson(unit: Unit, translateService): void {
@@ -294,6 +295,7 @@ export class Unit {
     }
 
     this.calculateTotalStats()
+    this.getAvailableStatTypes()
   }
 
   private activateMasterSkill() {
@@ -1050,7 +1052,6 @@ export class Unit {
               let oldSkill = this.board.nodes[oldNodeId].skill
               newSkill.level = this.board.nodes[oldNodeId].level
               this.board.nodes[oldNodeId].skill = newSkill
-              this.getAvailableStatType()
             }
           })
         })
@@ -1063,7 +1064,6 @@ export class Unit {
               let oldSkill = this.board.nodes[oldNodeId].skill
               newSkill.level = this.board.nodes[oldNodeId].level
               this.board.nodes[oldNodeId].skill = newSkill
-              this.getAvailableStatType()
             }
           })
         })
@@ -1133,7 +1133,7 @@ export class Unit {
     })
 
     Object.keys(this.masterRanks.data).forEach(element => {
-      this.masterRanks.data[element] = 0
+      this.masterRanks.data[element] = 1
     })
 
     this.jobsData.forEach(job => {
@@ -1283,6 +1283,10 @@ export class Unit {
   }
 
   getAvailableStatType() {
+    return this.availableStatTypes;
+  }
+
+  getAvailableStatTypes() {
     let statsAtkRes = [
       "FIRE",
       "ICE",
@@ -1392,13 +1396,13 @@ export class Unit {
       })
     })
 
-    let availableStats = [];
+    this.availableStatTypes = [];
     let addedStats = []
     let i = 0;
 
     statsOrder.forEach(statType => {
       if (findedStats.indexOf(statType) !== -1) {
-        availableStats.push(statType)
+        this.availableStatTypes.push(statType)
         addedStats.push(statType)
       }
     })
@@ -1409,11 +1413,9 @@ export class Unit {
         && statsType.indexOf(statType) === -1
         && filteredStats.indexOf(statType) === -1
       ) {
-        availableStats.push(statType)
+        this.availableStatTypes.push(statType)
       }
     })
-
-    return availableStats;
   }
 
   getAvailableEquipments(pos, equipmentService) {
