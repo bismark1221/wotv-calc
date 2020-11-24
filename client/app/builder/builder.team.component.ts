@@ -159,8 +159,13 @@ export class BuilderTeamComponent implements OnInit {
         if (this.team.units[pos].replacedSkills) {
           Object.keys(this.team.units[pos].replacedSkills).forEach(upgradeId => {
             this.team.units[pos].replacedSkills[upgradeId].forEach(upgrade => {
-              upgrade.newSkill.name = this.nameService.getName(upgrade.newSkill)
-              upgrade.oldSkillData.name = this.nameService.getName(upgrade.oldSkillData)
+              if (upgrade.newSkill) {
+                upgrade.newSkill.name = this.nameService.getName(upgrade.newSkill)
+              }
+
+              if (upgrade.oldSkillData) {
+                upgrade.oldSkillData.name = this.nameService.getName(upgrade.oldSkillData)
+              }
             })
           })
         }
