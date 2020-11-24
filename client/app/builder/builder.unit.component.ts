@@ -484,17 +484,19 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   getAvailableStatType() {
-    let statTypes = this.unitService.getAvailableStatType()
-
     let formattedAvailableStatType = [[]]
 
-    statTypes.forEach(type => {
-      if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length == 8) {
-        formattedAvailableStatType.push([])
-      }
+    if (this.unit) {
+      let statTypes = this.unit.availableStatTypes
 
-      formattedAvailableStatType[formattedAvailableStatType.length - 1].push(type)
-    })
+      statTypes.forEach(type => {
+        if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length == 8) {
+          formattedAvailableStatType.push([])
+        }
+
+        formattedAvailableStatType[formattedAvailableStatType.length - 1].push(type)
+      })
+    }
 
     return formattedAvailableStatType
   }
