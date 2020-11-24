@@ -407,7 +407,7 @@
         <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
           <td>Equipment {{ statFrom }} Stats</td>
           <td *ngFor="let statType of line">
-            <div *ngIf="unit.stats[statType].equipments">
+            <div *ngIf="unit.stats[statType] && unit.stats[statType].equipments">
               <span>{{ unit.stats[statType].equipments[statFrom] }}</span>
             </div>
           </td>
@@ -416,20 +416,20 @@
         <tr [ngClass]="{'disable': !showBuffsDetail}" *ngFor="let statFrom of [0, 1, 2]">
           <td>Equipment {{ statFrom }} Buffs</td>
           <td *ngFor="let statType of line">
-            <span>{{ unit.stats[statType]['equipment' + statFrom + '_buff'] }}</span>
+            <span *ngIf="unit.stats[statType]">{{ unit.stats[statType]['equipment' + statFrom + '_buff'] }}</span>
           </td>
         </tr>
 
         <tr  [ngClass]="{'disable': !showBuffsDetail}" >
           <td>Total Equipement</td>
           <td *ngFor="let statType of line">
-            <span>{{ unit.stats[statType]['totalEquipment'] }}</span>
+            <span *ngIf="unit.stats[statType]">{{ unit.stats[statType]['totalEquipment'] }}</span>
           </td>
         </tr>
 
         <tr>
           <td>Total</td>
-          <td *ngFor="let statType of line">{{ unit.stats[statType].total }}</td>
+          <td *ngFor="let statType of line"><span *ngIf="unit.stats[statType]">{{ unit.stats[statType].total }}</span></td>
         </tr>
       </tbody>
     </table>

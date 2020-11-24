@@ -1,0 +1,51 @@
+name: Build & Deploy Beta
+
+on:
+  workflow_dispatch
+
+jobs:
+  build-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12.10.0'
+      - run: npm install -g @angular/cli
+      - run: npm --version
+      - run: ng --version
+      - run: npm i -f
+        
+      - name: Build prod
+        run: ng build --prod
+        
+      - name: Check Hash
+        run: npm run post-build
+
+      - name: Sentry Release
+        uses: getsentry/action-release@v1.1.4
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+        with:
+          sourcemaps: "${{ secrets.SSH_TARGET }}/dist/browser"
+          version: "prod"
+          set_commits: "skip"
+
+      - name: Remove sourcemaps
+        run : rm dist/browser/*.map
+        
+      - name: Compress build
+        run : tar -czvf build.tar.gz ./dist
+        
+      - name: Copy New Files to server
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} scp -v -o StrictHostKeyChecking=no -P ${{ secrets.SSH_PORT }} -r build.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}:${{ secrets.SSH_TARGET }}
+      
+      - name: Delete Existing Files
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'rm -rf ${{ secrets.SSH_TARGET }}/dist/*'
+        continue-on-error: true
+        
+      - name: Uncompress new Files
+        run : sudo sshpass -p ${{ secrets.SSH_PASS }} -v ssh -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT}} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} 'cd ${{ secrets.SSH_TARGET }} && tar -xzvf build.tar.gz && rm build.tar.gz'
+        
