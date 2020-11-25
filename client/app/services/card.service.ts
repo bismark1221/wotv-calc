@@ -32,7 +32,7 @@ export class CardService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_CARDS;
     } else {
       return JP_CARDS;
@@ -77,15 +77,15 @@ export class CardService {
       const filteredCards = [];
 
       cards.forEach(card => {
-        if (filters.rarity.length == 0 || filters.rarity.indexOf(card.rarity) != -1) {
+        if (filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1) {
           let needToAddCard = false;
-          if (!filters.element || filters.element.length == 0) {
+          if (!filters.element || filters.element.length === 0) {
             needToAddCard = true;
           } else {
             card.partyBuffs.forEach(buff => {
-              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type == 'elem') {
+              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
                 filters.element.forEach(elem => {
-                  if (buff.cond[0].items.indexOf(elem) != -1) {
+                  if (buff.cond[0].items.indexOf(elem) !== -1) {
                     needToAddCard = true;
                   }
                 });
@@ -138,7 +138,7 @@ export class CardService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_cards' : 'cards';
+    return this.navService.getVersion() === 'JP' ? 'jp_cards' : 'cards';
   }
 
   getSavedCards() {
@@ -205,7 +205,7 @@ export class CardService {
 
     if (savedCards[card.dataId]) {
       savedCards[card.dataId].forEach(savedCard => {
-        if (savedCard.customName == card.customName) {
+        if (savedCard.customName === card.customName) {
           cardFinded = true;
         }
       });
@@ -217,14 +217,14 @@ export class CardService {
   saveCard(card, method) {
     const savableData = this.getSavableData(card);
 
-    if (method == 'new' || method == 'share') {
-      if (method == 'share') {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         // @ts-ignore
         delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == 'new') {
+        if (method === 'new') {
           // @ts-ignore
           savableData.storeId = data.id;
           const savedCards = this.getSavedCards();
@@ -245,7 +245,7 @@ export class CardService {
       return this.firestore.collection(this.getLocalStorage()).doc(card.storeId).set(savableData).then(data => {
         const savedCards = this.getSavedCards();
         savedCards[card.dataId].forEach((savedCard, cardIndex) => {
-          if (savedCard.storeId == card.storeId) {
+          if (savedCard.storeId === card.storeId) {
             savedCards[card.dataId][cardIndex] = savableData;
             savedCards[card.dataId][cardIndex].storeId = card.storeId;
           }
@@ -264,7 +264,7 @@ export class CardService {
     const savedCards = this.getSavedCards();
 
     savedCards[card.dataId].forEach((savedCard, savedCardIndex) => {
-      if (savedCard.storeId == card.storeId) {
+      if (savedCard.storeId === card.storeId) {
         savedCards[card.dataId].splice(savedCardIndex, 1);
       }
     });
@@ -295,7 +295,7 @@ export class CardService {
 
       if (this.getSavedCards()[this.card.dataId]) {
         this.getSavedCards()[this.card.dataId].forEach(savedCard => {
-          if (savedCard.storeId == this.card.storeId) {
+          if (savedCard.storeId === this.card.storeId) {
             oldData = savedCard;
             delete oldData.storeId;
           }

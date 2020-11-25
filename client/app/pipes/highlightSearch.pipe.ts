@@ -5,7 +5,7 @@ export class HighlightSearchPipe implements PipeTransform {
 
   transform(text, searchText) {
 
-    if (searchText == '' || text == '') {
+    if (searchText === '' || text === '') {
       return text;
     }
 

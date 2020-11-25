@@ -1,4 +1,4 @@
-<div *ngIf="modalStep == 'select'">
+<div *ngIf="modalStep === 'select'">
   <div class="titleBlock">
     <div class="title">
       ESPERS
@@ -48,7 +48,7 @@
   </div>
 </div>
 
-<div *ngIf="modalStep == 'load'">
+<div *ngIf="modalStep === 'load'">
   <div class="titleBlock">
     <div class="title">
       Load esper ?
@@ -72,14 +72,14 @@
         <th>Load</th>
       </tr>
       <tr *ngFor="let esper of savedEspers[loadEsperId]">
-        <td *ngIf="type != 'team'">{{ esper ? esper.customName : '' }}</td>
+        <td *ngIf="type !== 'team'">{{ esper ? esper.customName : '' }}</td>
         <td><a (click)="selectEsper(loadEsperId, esper)"><i class="fas fa-download"></i></a></td>
       </tr>
     </table>
   </div>
 </div>
 
-<div *ngIf="modalStep == 'custom'">
+<div *ngIf="modalStep === 'custom'">
   <div class="titleBlock">
     <div class="title">
       {{ esper.name }} - Custom
@@ -184,16 +184,16 @@
         <div class="builderEsperGridContainer" style="text-align: center;">
           <ul class="hexGrid" oncontextmenu="return false;">
             <li *ngFor="let node of esper.grid.gridNodes; let index;" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-              <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+              <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-              <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type == 'center'">
+              <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
                 <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
               </div>
 
-              <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type == 'text'"
+              <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
                    [ngClass]="{
                      'activated': esper.board.nodes[node].activated,
-                     'buff': esper.board.nodes[node].type == 'buff',
+                     'buff': esper.board.nodes[node].type === 'buff',
                      'notActivable': !canActivateNode(node)
               }" >
                 <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>

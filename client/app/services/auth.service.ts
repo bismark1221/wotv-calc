@@ -37,10 +37,10 @@ export class AuthService {
   private updateUser(user, newLogin = false) {
     let result = null;
 
-    if (user && this.user == null) {
+    if (user && this.user === null) {
       this.user = new User(user.displayName, user.email, user.uid);
       result = this.loadUserData(newLogin);
-    } else if (user == null && this.user != null) {
+    } else if (user === null && this.user !== null) {
       this.user = null;
     }
 
@@ -85,9 +85,9 @@ export class AuthService {
 
           // @ts-ignore
           responses[i].data.forEach(item => {
-            if (i == 5 || i == 11 || i == 12 || i == 13) {
+            if (i === 5 || i === 11 || i === 12 || i === 13) {
               data = item;
-            } else if (i == 0 || i == 6) {
+            } else if (i === 0 || i === 6) {
               data[item.name] = item;
             } else {
               if (!data[item.dataId]) {

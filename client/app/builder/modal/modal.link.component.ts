@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 import { ClipboardService } from 'ngx-clipboard';
@@ -15,7 +15,7 @@ import { NavService } from '../../services/nav.service';
   templateUrl: './modal.link.component.html',
   styleUrls: ['./modal.link.component.css']
 })
-export class ModalLinkComponent implements OnInit {
+export class ModalLinkComponent implements AfterViewInit {
   item;
   exportableLink = '';
   saveStep = 'loading';
@@ -32,9 +32,6 @@ export class ModalLinkComponent implements OnInit {
     private navService: NavService,
     private modal: NgbActiveModal
   ) {
-  }
-
-  ngOnInit() {
   }
 
   ngAfterViewInit() {

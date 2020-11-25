@@ -24,7 +24,7 @@ export class JobService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_JOBS;
     } else {
       return JP_JOBS;
@@ -36,7 +36,7 @@ export class JobService {
   }
 
   private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
+      return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
   sortByName(jobs, order = 'asc') {
@@ -52,9 +52,9 @@ export class JobService {
 
       if (yD) {
         if (xD < yD) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (xD > yD) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
 
@@ -63,9 +63,9 @@ export class JobService {
         this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
         if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
           if (isNaN(this.oFxNcL)) {
-            return order == 'asc' ? 1 : -1;
+            return order === 'asc' ? 1 : -1;
           } else {
-            return order == 'asc' ? -1 : 1;
+            return order === 'asc' ? -1 : 1;
           }
         }
 
@@ -75,9 +75,9 @@ export class JobService {
         }
 
         if (this.oFxNcL < this.oFyNcL) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (this.oFxNcL > this.oFyNcL) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
     });
@@ -112,7 +112,7 @@ export class JobService {
       const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
       job.dataId = genericDataId;
 
-      if (uniqJobs.indexOf(genericDataId) == -1) {
+      if (uniqJobs.indexOf(genericDataId) === -1) {
         jobs.push(job);
         uniqJobs.push(genericDataId);
       }

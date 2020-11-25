@@ -71,7 +71,7 @@ export class UnitService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_UNITS;
     } else {
       return JP_UNITS;
@@ -95,10 +95,10 @@ export class UnitService {
   getUnitsForJPBuilder() {
     this.getUnits();
 
-    if (this.navService.getVersion() == 'JP') {
+    if (this.navService.getVersion() === 'JP') {
       const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
       Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExUnits.indexOf(unitId) != -1) {
+        if (this.glExUnits.indexOf(unitId) !== -1) {
           const unit = new Unit();
           unit.constructFromJson(rawUnits[unitId], this.translateService);
           this.units.push(unit);
@@ -136,16 +136,16 @@ export class UnitService {
       const filteredUnits = [];
 
       units.forEach(unit => {
-        if ((filters.element.length == 0 || filters.element.indexOf(unit.element) != -1)
-          && (filters.rarity.length == 0 || filters.rarity.indexOf(unit.rarity) != -1)
-          && (!filters.limited || filters.limited.length == 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) != -1)
+        if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
+          && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
+          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
         ) {
-          if (filters.job.length == 0) {
+          if (filters.job.length === 0) {
             filteredUnits.push(unit);
           } else {
             for (let i = 0; i <= (filters.mainJob ? 0 : 2); i++) {
               const tableJob = unit.jobs[i].split('_');
-              if (filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) != -1) {
+              if (filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) !== -1) {
                 filteredUnits.push(unit);
                 break;
               }
@@ -163,10 +163,10 @@ export class UnitService {
   getUnit(id) {
     this.getUnits();
 
-    if (this.navService.getVersion() == 'JP') {
+    if (this.navService.getVersion() === 'JP') {
       const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
       Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExUnits.indexOf(unitId) != -1) {
+        if (this.glExUnits.indexOf(unitId) !== -1) {
           const unit = new Unit();
           unit.constructFromJson(rawUnits[unitId], this.translateService);
           this.units.push(unit);
@@ -178,7 +178,7 @@ export class UnitService {
   }
 
   isLimited(id) {
-    return this.limitedUnits.indexOf(id) != -1;
+    return this.limitedUnits.indexOf(id) !== -1;
   }
 
   getUnitBySlug(slug) {
@@ -188,7 +188,7 @@ export class UnitService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_units' : 'units';
+    return this.navService.getVersion() === 'JP' ? 'jp_units' : 'units';
   }
 
   getSavedUnits() {
@@ -331,7 +331,7 @@ export class UnitService {
     if (unit) {
       this.unit.star = unit.star;
       this.unit.lb = unit.lb;
-      this.unit.level = parseInt(unit.level);
+      this.unit.level = parseInt(unit.level, 10);
       this.unit.customName = unit.customName;
       this.unit.storeId = unit.storeId;
 
@@ -349,7 +349,7 @@ export class UnitService {
               const newSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
 
               Object.keys(unit.nodes).forEach(oldNodeId => {
-                if (this.unit.board.nodes[oldNodeId].dataId == upgrade.oldSkill) {
+                if (this.unit.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
                   const oldSkill = this.unit.board.nodes[oldNodeId].skill;
                   newSkill.level = this.unit.board.nodes[oldNodeId].level;
                   this.unit.board.nodes[oldNodeId].skill = newSkill;
@@ -362,7 +362,7 @@ export class UnitService {
 
       if (unit.masterSkill === true) {
         this.unit.masterSkillActivated = 0;
-      } else if (typeof(unit.masterSkill) == 'number') {
+      } else if (typeof(unit.masterSkill) === 'number') {
         this.unit.masterSkillActivated = unit.masterSkill;
       }
 
@@ -426,7 +426,7 @@ export class UnitService {
 
     if (savedUnits[unit.dataId]) {
       savedUnits[unit.dataId].forEach((savedUnit, savedUnitIndex) => {
-        if (savedUnit.customName == unit.customName) {
+        if (savedUnit.customName === unit.customName) {
           unitFinded = true;
         }
       });
@@ -438,13 +438,13 @@ export class UnitService {
   saveUnit(unit, method) {
     const savableData = this.getSavableData(unit);
 
-    if (method == 'new' || method == 'share') {
-      if (method == 'share') {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == 'new') {
+        if (method === 'new') {
           // @ts-ignore
           savableData.storeId = data.id;
           const savedUnits = this.getSavedUnits();
@@ -465,7 +465,7 @@ export class UnitService {
       return this.firestore.collection(this.getLocalStorage()).doc(unit.storeId).set(savableData).then(data => {
         const savedUnits = this.getSavedUnits();
         savedUnits[unit.dataId].forEach((savedUnit, unitIndex) => {
-          if (savedUnit.storeId == unit.storeId) {
+          if (savedUnit.storeId === unit.storeId) {
             savedUnits[unit.dataId][unitIndex] = savableData;
             savedUnits[unit.dataId][unitIndex].storeId = unit.storeId;
           }
@@ -484,7 +484,7 @@ export class UnitService {
     const savedUnits = this.getSavedUnits();
 
     savedUnits[unit.dataId].forEach((savedUnit, savedUnitIndex) => {
-      if (savedUnit.storeId == unit.storeId) {
+      if (savedUnit.storeId === unit.storeId) {
         savedUnits[unit.dataId].splice(savedUnitIndex, 1);
       }
     });
@@ -514,7 +514,7 @@ export class UnitService {
       let oldData = null;
       if (this.getSavedUnits()[this.unit.dataId]) {
         this.getSavedUnits()[this.unit.dataId].forEach(savedUnit => {
-          if (savedUnit.storeId == this.unit.storeId) {
+          if (savedUnit.storeId === this.unit.storeId) {
             oldData = savedUnit;
             delete oldData.storeId;
           }

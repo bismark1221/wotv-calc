@@ -13,7 +13,7 @@ import { CheckHashService } from './services/checkHash.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translate: TranslateService,

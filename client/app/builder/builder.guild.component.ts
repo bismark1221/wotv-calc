@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 
 import { GuildService } from '../services/guild.service';
 import { AuthService } from '../services/auth.service';
@@ -9,7 +9,7 @@ import { NavService } from '../services/nav.service';
   templateUrl: './builder.guild.component.html',
   styleUrls: ['./builder.guild.component.css']
 })
-export class BuilderGuildComponent implements OnInit {
+export class BuilderGuildComponent implements OnInit, AfterViewInit {
   guild;
   statues;
   statueNames;

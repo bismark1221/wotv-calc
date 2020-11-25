@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -17,7 +17,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.equipment.component.html',
   styleUrls: ['./builder.equipment.component.css']
 })
-export class BuilderEquipmentComponent implements OnInit {
+export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   equipment;
   filteredEquipments;
   equipments;
@@ -187,11 +187,11 @@ export class BuilderEquipmentComponent implements OnInit {
     modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId];
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.selectEquipment(result.item.dataId, result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedEquipments[equipmentId] = [];
       }
     }, (reason) => {

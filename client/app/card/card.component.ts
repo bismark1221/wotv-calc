@@ -54,11 +54,11 @@ export class CardComponent implements OnInit {
     if (this.card) {
       const lang = this.translateService.currentLang;
       const skills = ['classic', 'awake', 'lvmax'];
+      const buffTypes = ['unitBuffs', 'partyBuffs'];
 
       this.card.name = this.nameService.getName(this.card);
 
       skills.forEach(skillType => {
-        const buffTypes = ['unitBuffs', 'partyBuffs'];
         buffTypes.forEach(buffType => {
           this.card[buffType].forEach(buff => {
             if (buff[skillType]) {
@@ -86,17 +86,16 @@ export class CardComponent implements OnInit {
         });
       });
 
-      const buffTypes = ['unitBuffs', 'partyBuffs'];
       buffTypes.forEach(buffType => {
         this.card[buffType].forEach(buff => {
           if (buff.cond) {
             buff.cond.forEach(cond => {
-              if (cond.type == 'job') {
+              if (cond.type === 'job') {
                 cond.items.forEach((jobId, jobIndex) => {
                   const job = this.jobService.getJob(jobId);
                   cond.items[jobIndex] = job ? job : cond.items[jobIndex];
                 });
-              } else if (cond.type == 'unit') {
+              } else if (cond.type === 'unit') {
                 cond.items.forEach((unitId, unitIndex) => {
                   const unit = this.unitService.getUnit(unitId);
                   cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];

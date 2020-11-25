@@ -34,7 +34,7 @@ export class MasterRanksService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_MRS;
     } else {
       return JP_MRS;
@@ -49,7 +49,7 @@ export class MasterRanksService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_masterRank' : 'masterRank';
+    return this.navService.getVersion() === 'JP' ? 'jp_masterRank' : 'masterRank';
   }
 
   getMasterRanks() {

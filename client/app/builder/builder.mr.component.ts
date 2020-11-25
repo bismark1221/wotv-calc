@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 
 import { MasterRanksService } from '../services/mr.service';
 import { AuthService } from '../services/auth.service';
@@ -9,7 +9,7 @@ import { NavService } from '../services/nav.service';
   templateUrl: './builder.mr.component.html',
   styleUrls: ['./builder.mr.component.css']
 })
-export class BuilderMasterRanksComponent implements OnInit {
+export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
   masterRanks;
   ranks;
   showSave = false;
@@ -39,7 +39,7 @@ export class BuilderMasterRanksComponent implements OnInit {
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {
-        if (user && this.version == 'JP') {
+        if (user && this.version === 'JP') {
           this.showSave = true;
         } else {
           this.showSave = false;

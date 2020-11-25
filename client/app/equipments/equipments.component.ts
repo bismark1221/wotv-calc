@@ -70,7 +70,7 @@ export class EquipmentsComponent implements OnInit {
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
+    if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
@@ -82,14 +82,14 @@ export class EquipmentsComponent implements OnInit {
   getAcquisitionTypes() {
     this.acquisitionTypes = this.equipmentService.getAcquisitionTypes();
     this.acquisitionTypes.forEach(type => {
-      if (type != 'Unknown') {
+      if (type !== 'Unknown') {
         this.filters.acquisition.push(type);
       }
     });
   }
 
   isAcquisitionChecked(type) {
-    if (this.filters.acquisition.indexOf(type) != -1) {
+    if (this.filters.acquisition.indexOf(type) !== -1) {
       return true;
     }
 

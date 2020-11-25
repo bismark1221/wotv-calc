@@ -208,7 +208,7 @@ export class Esper {
   private calculateTotalBuffs() {
     Object.keys(this.board.nodes).forEach(nodeId => {
       const node = this.board.nodes[nodeId];
-      if (node.type == 'buff' && node.level) {
+      if (node.type === 'buff' && node.level) {
         node.skill.effects.forEach(effect => {
           if (effect.calcType === 'percent' || effect.calcType === 'fixe' ||  effect.calcType === 'resistance') {
             this.updateBuff(effect.type, effect.minValue, effect.calcType === 'percent' ? 'percent' : 'board');
@@ -329,7 +329,7 @@ export class Esper {
 
       esperBuffsOrder.forEach(buffType => {
         if (findedBuffs.indexOf(buffType) !== -1) {
-          if (this.possibleBuffs[i].length == 8) {
+          if (this.possibleBuffs[i].length === 8) {
             this.possibleBuffs.push([]);
             i++;
           }
@@ -341,7 +341,7 @@ export class Esper {
 
       Object.keys(this.buffs).forEach(buffType => {
         if (addedBuffs.indexOf(buffType) === -1) {
-          if (this.possibleBuffs[i].length == 8) {
+          if (this.possibleBuffs[i].length === 8) {
             this.possibleBuffs.push([]);
             i++;
           }
@@ -390,7 +390,7 @@ export class Esper {
 
   clickNode(node) {
     if (node !== 0) {
-      if (!this.board.nodes[node].activated || this.grid.nodesForGrid[node].subType == 'skill') {
+      if (!this.board.nodes[node].activated || this.grid.nodesForGrid[node].subType === 'skill') {
         this.showNode(node);
       } else {
         this.hideNode(node);

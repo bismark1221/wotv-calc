@@ -54,24 +54,24 @@
         <tr *ngFor="let cond of buff.cond">
           <td>Condition</td>
           <td colspan="10">
-            <div *ngIf="cond.type == 'birth'">
+            <div *ngIf="cond.type === 'birth'">
               <span *ngFor="let birth of cond.items">{{ birth }}</span>
             </div>
 
-            <div *ngIf="cond.type == 'elem'">
+            <div *ngIf="cond.type === 'elem'">
               <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
             </div>
 
-            <div *ngIf="cond.type == 'job'">
+            <div *ngIf="cond.type === 'job'">
               <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
             </div>
 
-            <div *ngIf="cond.type == 'unit'">
+            <div *ngIf="cond.type === 'unit'">
               <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
             </div>
           </td>
         </tr>
-        <tr *ngIf="buff.classic && buff.classic.type == 'support'">
+        <tr *ngIf="buff.classic && buff.classic.type === 'support'">
           <td>Classic</td>
           <td colspan="10">
             <div *ngFor="let effect of buff.classic.effects">
@@ -79,7 +79,7 @@
             </div>
           </td>
         </tr>
-        <tr *ngIf="buff.awake && buff.classic.type == 'support'">
+        <tr *ngIf="buff.awake && buff.classic.type === 'support'">
           <td>Awake</td>
           <td colspan="10">
             <div *ngFor="let effect of buff.awake.effects">
@@ -87,7 +87,7 @@
             </div>
           </td>
         </tr>
-        <tr *ngIf="buff.lvmax && buff.classic.type == 'support'">
+        <tr *ngIf="buff.lvmax && buff.classic.type === 'support'">
           <td>Max</td>
           <td colspan="10">
             <div *ngFor="let effect of buff.lvmax.effects">
@@ -95,7 +95,7 @@
             </div>
           </td>
         </tr>
-        <tr *ngIf="buff.classic && buff.classic.type != 'support'">
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
           <th class="sub">name</th>
           <th class="sub">Effects</th>
           <th class="sub">Range</th>
@@ -103,7 +103,7 @@
           <th class="sub">Hits</th>
           <th class="sub">Cost</th>
         </tr>
-        <tr *ngIf="buff.classic && buff.classic.type != 'support'">
+        <tr *ngIf="buff.classic && buff.classic.type !== 'support'">
           <td class="skillNameTd">
             <span>{{ buff.classic.name }}</span>
             <span *ngIf="buff.classic.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + buff.classic.based + '.png'}}" /></span>
@@ -179,19 +179,19 @@
         <tr *ngFor="let cond of buff.cond">
           <td>Condition</td>
           <td colspan="10">
-            <div *ngIf="cond.type == 'birth'">
+            <div *ngIf="cond.type === 'birth'">
               <span *ngFor="let birth of cond.items">{{ birth }}</span>
             </div>
 
-            <div *ngIf="cond.type == 'elem'">
+            <div *ngIf="cond.type === 'elem'">
               <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
             </div>
 
-            <div *ngIf="cond.type == 'job'">
+            <div *ngIf="cond.type === 'job'">
               <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
             </div>
 
-            <div *ngIf="cond.type == 'unit'">
+            <div *ngIf="cond.type === 'unit'">
               <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
             </div>
           </td>

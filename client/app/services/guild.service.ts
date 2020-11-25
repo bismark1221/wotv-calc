@@ -82,7 +82,7 @@ export class GuildService {
   ) {}
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_guild' : 'guild';
+    return this.navService.getVersion() === 'JP' ? 'jp_guild' : 'guild';
   }
 
   getGuild() {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -29,7 +29,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.unit.component.html',
   styleUrls: ['./builder.unit.component.css']
 })
-export class BuilderUnitComponent implements OnInit {
+export class BuilderUnitComponent implements OnInit, AfterViewInit {
   units;
   filteredUnits;
   unit = null;
@@ -287,7 +287,7 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   changeLB(value) {
-    if (value == this.unit.lb) {
+    if (value === this.unit.lb) {
       value = undefined;
     }
     this.unit.lb = value;
@@ -453,11 +453,11 @@ export class BuilderUnitComponent implements OnInit {
     modalRef.componentInstance.savedItems = this.savedUnits[unitId];
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.selectUnit(result.item.dataId, result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedUnits[unitId] = [];
       }
     }, (reason) => {
@@ -490,7 +490,7 @@ export class BuilderUnitComponent implements OnInit {
       const statTypes = this.unit.availableStatTypes;
 
       statTypes.forEach(type => {
-        if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length == 8) {
+        if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length === 8) {
           formattedAvailableStatType.push([]);
         }
 

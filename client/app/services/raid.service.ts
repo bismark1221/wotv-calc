@@ -31,7 +31,7 @@ export class RaidService {
   }
 
   private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
+      return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
   sortByName(raids, order = 'asc') {
@@ -47,9 +47,9 @@ export class RaidService {
 
       if (yD) {
         if (xD < yD) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (xD > yD) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
 
@@ -58,9 +58,9 @@ export class RaidService {
         this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
         if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
           if (isNaN(this.oFxNcL)) {
-            return order == 'asc' ? 1 : -1;
+            return order === 'asc' ? 1 : -1;
           } else {
-            return order == 'asc' ? -1 : 1;
+            return order === 'asc' ? -1 : 1;
           }
         }
 
@@ -70,9 +70,9 @@ export class RaidService {
         }
 
         if (this.oFxNcL < this.oFyNcL) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (this.oFxNcL > this.oFyNcL) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
     });
@@ -82,7 +82,7 @@ export class RaidService {
 
   private getRaw() {
     this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
-    if (this.savedVersion == 'GL') {
+    if (this.savedVersion === 'GL') {
       return GL_RAIDS;
     } else {
       return JP_RAIDS;
@@ -136,7 +136,7 @@ export class RaidService {
       const filteredRaids = [];
 
       raids.forEach(raid => {
-        if (filters.element.length == 0 || filters.element.indexOf(raid.bosses[0].element) != -1) {
+        if (filters.element.length === 0 || filters.element.indexOf(raid.bosses[0].element) !== -1) {
           filteredRaids.push(raid);
         }
       });

@@ -1,4 +1,4 @@
-<div *ngIf="modalStep == 'select'">
+<div *ngIf="modalStep === 'select'">
   <div class="titleBlock">
     <div class="title">
       CARDS
@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div *ngIf="modalStep == 'load'">
+<div *ngIf="modalStep === 'load'">
   <div class="titleBlock">
     <div class="title titleLoad">
       Load card ?
@@ -68,14 +68,14 @@
         <th>Load</th>
       </tr>
       <tr *ngFor="let card of savedCards[loadCardId]">
-        <td *ngIf="type != 'team'">{{ card ? card.customName : '' }}</td>
+        <td *ngIf="type !== 'team'">{{ card ? card.customName : '' }}</td>
         <td><a (click)="selectCard(loadCardId, card)"><i class="fas fa-download"></i></a></td>
       </tr>
     </table>
   </div>
 </div>
 
-<div *ngIf="modalStep == 'custom'">
+<div *ngIf="modalStep === 'custom'">
   <div class="titleBlock">
     <div class="title">
       {{ card.name }} - Custom

@@ -121,7 +121,7 @@ export class UnitComponent implements OnInit {
 
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
         let skill = this.unit.board.nodes[nodeId].skill;
-        if (skill.type !== 'buff' && !(this.unit.board.nodes[nodeId].type == 'buff' && skill.type == 'ex_buff')) {
+        if (skill.type !== 'buff' && !(this.unit.board.nodes[nodeId].type === 'buff' && skill.type === 'ex_buff')) {
           skill.name = this.nameService.getName(skill);
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
@@ -141,7 +141,7 @@ export class UnitComponent implements OnInit {
           skill = this.addUpgrade(skill);
 
           this.unit.skills.push(skill);
-        } else if (this.unit.board.nodes[nodeId].type != 'skill') {
+        } else if (this.unit.board.nodes[nodeId].type !== 'skill') {
           const effect = skill.effects[0];
 
           if (typeof(this.unit.totalBuffs[effect.type]) === 'number' && effect.calcType === 'fixe') {
@@ -154,7 +154,7 @@ export class UnitComponent implements OnInit {
             if (skill.jobLevel <= 15) {
               this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
             } else {
-              if (effect && effect.type == 'INCREASE_UNIT_LEVEL') {
+              if (effect && effect.type === 'INCREASE_UNIT_LEVEL') {
                 maxExLevel += effect.value;
                 exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill));
               } else {
@@ -260,7 +260,7 @@ export class UnitComponent implements OnInit {
 
       Object.keys(this.unit.totalJobsStats).forEach(stat => {
         this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat]);
-        if (this.unit.totalJobsStats[stat] != (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
+        if (this.unit.totalJobsStats[stat] !== (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
           this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat]);
         }
       });
@@ -278,7 +278,7 @@ export class UnitComponent implements OnInit {
       Object.keys(this.unit.replacedSkills).forEach(upgradeSkillId => {
         const activatedBy = this.findActivatedByName(upgradeSkillId);
         this.unit.replacedSkills[upgradeSkillId].forEach(upgrade => {
-          if (upgrade.oldSkill == skill.dataId) {
+          if (upgrade.oldSkill === skill.dataId) {
             let newSkill = upgrade.newSkill;
             newSkill.name = this.nameService.getName(newSkill);
 
@@ -311,21 +311,21 @@ export class UnitComponent implements OnInit {
     let name = '';
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      if (this.unit.board.nodes[nodeId].skill.dataId == upgradeSkillId) {
+      if (this.unit.board.nodes[nodeId].skill.dataId === upgradeSkillId) {
         name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
       }
     });
 
-    if (name == '' && this.unit.masterSkill.length > 0) {
+    if (name === '' && this.unit.masterSkill.length > 0) {
       this.unit.masterSkill.forEach(masterSkill => {
-        if (masterSkill.dataId == upgradeSkillId) {
+        if (masterSkill.dataId === upgradeSkillId) {
           name = this.nameService.getName(masterSkill);
         }
       });
     }
 
-    if (name == '' && this.unit.limit) {
-      if (this.unit.limit.dataId == upgradeSkillId) {
+    if (name === '' && this.unit.limit) {
+      if (this.unit.limit.dataId === upgradeSkillId) {
         name = this.nameService.getName(this.unit.limit);
       }
     }
@@ -373,13 +373,13 @@ export class UnitComponent implements OnInit {
     const skills = [];
     if (job === 0) {
       this.unit.skills.forEach(skill => {
-        if (skill.mainSkill && skill.type == 'skill') {
+        if (skill.mainSkill && skill.type === 'skill') {
           skills.push(skill);
         }
       });
     } else {
       this.unit.skills.forEach(skill => {
-        if (skill.unlockJob === job && !skill.mainSkill && skill.type == 'skill') {
+        if (skill.unlockJob === job && !skill.mainSkill && skill.type === 'skill') {
           skills.push(skill);
         }
       });
@@ -391,7 +391,7 @@ export class UnitComponent implements OnInit {
   getSkillsPerType(type) {
     const skills = [];
     this.unit.skills.forEach(skill => {
-      if (skill.type == type) {
+      if (skill.type === type) {
         skills.push(skill);
       }
     });

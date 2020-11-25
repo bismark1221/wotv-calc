@@ -203,7 +203,7 @@ export class EquipmentService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_EQUIPMENTS;
     } else {
       return JP_EQUIPMENTS;
@@ -253,10 +253,10 @@ export class EquipmentService {
       const filteredEquipments = [];
 
       equipments.forEach(equipment => {
-        if ((!filters.type || filters.type.length == 0 || filters.type.indexOf(equipment.type) != -1)
-          && (!filters.rarity || filters.rarity.length == 0 || filters.rarity.indexOf(equipment.rarity) != -1)
-          && (!filters.acquisition || filters.acquisition.length == 0 || filters.acquisition.indexOf(equipment.acquisition.type) != -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) != -1)
-          && (!filters.category || filters.category.length == 0 || filters.category.length == 3 || (filters.category.indexOf('acc') != -1 && equipment.type == 'ACC') || (filters.category.indexOf('weapon') != -1 && this.isWeapon(equipment.type)) || (filters.category.indexOf('armor') != -1 && this.isArmor(equipment.type, true)))
+        if ((!filters.type || filters.type.length === 0 || filters.type.indexOf(equipment.type) !== -1)
+          && (!filters.rarity || filters.rarity.length === 0 || filters.rarity.indexOf(equipment.rarity) !== -1)
+          && (!filters.acquisition || filters.acquisition.length === 0 || filters.acquisition.indexOf(equipment.acquisition.type) !== -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) !== -1)
+          && (!filters.category || filters.category.length === 0 || filters.category.length === 3 || (filters.category.indexOf('acc') !== -1 && equipment.type === 'ACC') || (filters.category.indexOf('weapon') !== -1 && this.isWeapon(equipment.type)) || (filters.category.indexOf('armor') !== -1 && this.isArmor(equipment.type, true)))
         ) {
           filteredEquipments.push(equipment);
         }
@@ -319,7 +319,7 @@ export class EquipmentService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_equipments' : 'equipments';
+    return this.navService.getVersion() === 'JP' ? 'jp_equipments' : 'equipments';
   }
 
   getSavedEquipments() {
@@ -363,7 +363,7 @@ export class EquipmentService {
     this.equipment.name = this.equipment.getName(this.translateService);
     this.equipment.upgrade = 0;
     this.equipment.level = 1;
-    if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type == 'skill') {
+    if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type === 'skill') {
       this.equipment.skills[0][0].level = 1;
     }
     this.equipment.growIds = Object.keys(this.equipment.grows);
@@ -405,7 +405,7 @@ export class EquipmentService {
       Object.keys(equipment.skill).forEach(skillId => {
         this.equipment.skills.forEach(skill => {
           skill.forEach(subSkill => {
-            if (subSkill.dataId == skillId) {
+            if (subSkill.dataId === skillId) {
               subSkill.level = equipment.skill[skillId];
             }
           });
@@ -420,7 +420,7 @@ export class EquipmentService {
 
     if (savedEquipments[equipment.dataId]) {
       savedEquipments[equipment.dataId].forEach(savedEquipment => {
-        if (savedEquipment.customName == equipment.customName) {
+        if (savedEquipment.customName === equipment.customName) {
           equipmentFinded = true;
         }
       });
@@ -432,14 +432,14 @@ export class EquipmentService {
   saveEquipment(equipment, method) {
     const savableData = this.getSavableData(equipment);
 
-    if (method == 'new' || method == 'share') {
-      if (method == 'share') {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         // @ts-ignore
         delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == 'new') {
+        if (method === 'new') {
           // @ts-ignore
           savableData.storeId = data.id;
           const savedEquipments = this.getSavedEquipments();
@@ -461,7 +461,7 @@ export class EquipmentService {
       return this.firestore.collection(this.getLocalStorage()).doc(equipment.storeId).set(savableData).then(data => {
         const savedEquipments = this.getSavedEquipments();
         savedEquipments[equipment.dataId].forEach((savedEquipment, equipmentIndex) => {
-          if (savedEquipment.storeId == equipment.storeId) {
+          if (savedEquipment.storeId === equipment.storeId) {
             savedEquipments[equipment.dataId][equipmentIndex] = savableData;
             savedEquipments[equipment.dataId][equipmentIndex].storeId = equipment.storeId;
           }
@@ -480,7 +480,7 @@ export class EquipmentService {
     const savedEquipments = this.getSavedEquipments();
 
     savedEquipments[equipment.dataId].forEach((savedEquipment, savedEquipmentIndex) => {
-      if (savedEquipment.storeId == equipment.storeId) {
+      if (savedEquipment.storeId === equipment.storeId) {
         savedEquipments[equipment.dataId].splice(savedEquipmentIndex, 1);
       }
     });
@@ -511,7 +511,7 @@ export class EquipmentService {
 
       if (this.getSavedEquipments()[this.equipment.dataId]) {
         this.getSavedEquipments()[this.equipment.dataId].forEach(savedEquipment => {
-          if (savedEquipment.storeId == this.equipment.storeId) {
+          if (savedEquipment.storeId === this.equipment.storeId) {
             oldData = savedEquipment;
             delete oldData.storeId;
           }
@@ -561,7 +561,7 @@ export class EquipmentService {
     if (this.isWeapon(this.equipment.type)) {
       category = 'weapon';
     } else {
-      if (this.equipment.type == 'ACC') {
+      if (this.equipment.type === 'ACC') {
         category = 'acc';
       } else {
         category = 'armor';
@@ -576,10 +576,10 @@ export class EquipmentService {
 
     const types = ['Unknown', 'tmr'];
     this.equipments.forEach(equipment => {
-      if (equipment.acquisition.type != 'Unknown' && equipment.acquisition.type != 'tmr') {
+      if (equipment.acquisition.type !== 'Unknown' && equipment.acquisition.type !== 'tmr') {
         const acquisition = equipment.acquisition.type[this.translateService.getDefaultLang()];
 
-        if (types.indexOf(acquisition) == -1) {
+        if (types.indexOf(acquisition) === -1) {
           types.push(acquisition);
         }
       }

@@ -15,14 +15,14 @@
         <div><input type="checkbox" id="rarityN" (change)="filterList('rarity', 'N')"/><label for="rarityN">N</label></div>
       </div>
 
-      <hr *ngIf="version == 'JP'"/>
+      <hr *ngIf="version === 'JP'"/>
 
-      <div *ngIf="version == 'JP'" class="boldText"(click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
+      <div *ngIf="version === 'JP'" class="boldText"(click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
         Party effects elements
         <i class="fas fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
         <i class="fas fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
       </div>
-      <div *ngIf="version == 'JP'" class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
+      <div *ngIf="version === 'JP'" class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
         <div><input type="checkbox" id="elementfire" (change)="filterList('element', 'fire')"/><label for="elementfire">Fire</label></div>
         <div><input type="checkbox" id="elementice" (change)="filterList('element', 'ice')"/><label for="elementice">Ice</label></div>
         <div><input type="checkbox" id="elementwind" (change)="filterList('element', 'wind')"/><label for="elementwind">Wind</label></div>
@@ -54,18 +54,18 @@
             <div ngbDropdown class="d-inline-block">
               <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ sort | titlecase }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'rarity' == sort}" ngbDropdownItem (focus)="changeSort('rarity')">Rarity</button>
-                <button class="selectElement" [ngClass]="{'disable': 'name' == sort}" ngbDropdownItem (focus)="changeSort('name')">Name</button>
+                <button class="selectElement" [ngClass]="{'disable': 'rarity' === sort}" ngbDropdownItem (focus)="changeSort('rarity')">Rarity</button>
+                <button class="selectElement" [ngClass]="{'disable': 'name' === sort}" ngbDropdownItem (focus)="changeSort('name')">Name</button>
               </div>
             </div>
           </div>
           <div class="orderBy">
             <span>Order by :</span>
             <div ngbDropdown class="d-inline-block">
-              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order == 'asc' ? 'Ascending' : 'Descending' }}</button>
+              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order === 'asc' ? 'Ascending' : 'Descending' }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'asc' == order}" ngbDropdownItem (focus)="changeOrder('asc')">Ascending</button>
-                <button class="selectElement" [ngClass]="{'disable': 'desc' == order}" ngbDropdownItem (focus)="changeOrder('desc')">Descending</button>
+                <button class="selectElement" [ngClass]="{'disable': 'asc' === order}" ngbDropdownItem (focus)="changeOrder('asc')">Ascending</button>
+                <button class="selectElement" [ngClass]="{'disable': 'desc' === order}" ngbDropdownItem (focus)="changeOrder('desc')">Descending</button>
               </div>
             </div>
           </div>

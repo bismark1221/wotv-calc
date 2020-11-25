@@ -8,7 +8,7 @@ import { ThemeService } from '../services/theme.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent implements OnInit, AfterViewInit {
   theme = null;
 
   constructor(
@@ -25,7 +25,6 @@ export class FooterComponent implements OnInit {
       this.theme = active;
     });
   }
-
 
   getRoute(route) {
     return this.navService.getRoute(route);

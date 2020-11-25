@@ -17,7 +17,7 @@ export class TitleService {
 
   private getRaw() {
     this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
-    if (this.savedVersion == 'GL') {
+    if (this.savedVersion === 'GL') {
       return {
         player: GL_PLAYER_TITLES,
         guild: GL_GUILD_TITLES

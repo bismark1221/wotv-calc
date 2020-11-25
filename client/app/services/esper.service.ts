@@ -80,7 +80,7 @@ export class EsperService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == 'GL') {
+    if (this.navService.getVersion() === 'GL') {
       return GL_ESPERS;
     } else {
       return JP_ESPERS;
@@ -126,8 +126,8 @@ export class EsperService {
       const filteredEspers = [];
 
       espers.forEach(esper => {
-        if ((filters.element.length == 0 || filters.element.indexOf(esper.element) != -1)
-          && (filters.rarity.length == 0 || filters.rarity.indexOf(esper.rarity) != -1)
+        if ((filters.element.length === 0 || filters.element.indexOf(esper.element) !== -1)
+          && (filters.rarity.length === 0 || filters.rarity.indexOf(esper.rarity) !== -1)
         ) {
           filteredEspers.push(esper);
         }
@@ -178,7 +178,7 @@ export class EsperService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_espers' : 'espers';
+    return this.navService.getVersion() === 'JP' ? 'jp_espers' : 'espers';
   }
 
   getSavedEspers() {
@@ -267,7 +267,7 @@ export class EsperService {
 
     if (savedEspers[esper.dataId]) {
       savedEspers[esper.dataId].forEach(savedEsper => {
-        if (savedEsper.customName == esper.customName) {
+        if (savedEsper.customName === esper.customName) {
           esperFinded = true;
         }
       });
@@ -279,14 +279,14 @@ export class EsperService {
   saveEsper(esper, method) {
     const savableData = this.getSavableData(esper);
 
-    if (method == 'new' || method == 'share') {
-      if (method == 'share') {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         // @ts-ignore
         delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == 'new') {
+        if (method === 'new') {
           // @ts-ignore
           savableData.storeId = data.id;
           const savedEspers = this.getSavedEspers();
@@ -308,7 +308,7 @@ export class EsperService {
       return this.firestore.collection(this.getLocalStorage()).doc(esper.storeId).set(savableData).then(data => {
         const savedEspers = this.getSavedEspers();
         savedEspers[esper.dataId].forEach((savedEsper, esperIndex) => {
-          if (savedEsper.storeId == esper.storeId) {
+          if (savedEsper.storeId === esper.storeId) {
             savedEspers[esper.dataId][esperIndex] = savableData;
             savedEspers[esper.dataId][esperIndex].storeId = esper.storeId;
           }
@@ -327,7 +327,7 @@ export class EsperService {
     const savedEspers = this.getSavedEspers();
 
     savedEspers[esper.dataId].forEach((savedEsper, savedEsperIndex) => {
-      if (savedEsper.storeId == esper.storeId) {
+      if (savedEsper.storeId === esper.storeId) {
         savedEspers[esper.dataId].splice(savedEsperIndex, 1);
       }
     });
@@ -357,7 +357,7 @@ export class EsperService {
       let oldData = null;
       if (this.getSavedEspers()[this.esper.dataId]) {
         this.getSavedEspers()[this.esper.dataId].forEach(savedEsper => {
-          if (savedEsper.storeId == this.esper.storeId) {
+          if (savedEsper.storeId === this.esper.storeId) {
             oldData = savedEsper;
             delete oldData.storeId;
           }

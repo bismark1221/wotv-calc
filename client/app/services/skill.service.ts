@@ -57,7 +57,7 @@ export class SkillService {
   }
 
   private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
+      return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
   public sortEffectBuffs(effects) {
@@ -115,11 +115,11 @@ export class SkillService {
   private getIncrease(effect) {
     let text = '';
 
-    if (effect.calcType == 'decrease') {
+    if (effect.calcType === 'decrease') {
       return 'Decrease';
     }
 
-    if (effect.rate && effect.rate != 200) {
+    if (effect.rate && effect.rate !== 200) {
       text = effect.rate + '% chance' + (effect.minValue < 0 || effect.value < 0 ? ' to decrease' : ' to increase');
     } else if (effect.minValue < 0 || effect.value < 0) {
       text = 'Decrease';
@@ -144,7 +144,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0;
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.type != 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
+          if (math.type !== 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value;
           }
         });
@@ -191,7 +191,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0;
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.type != 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
+          if (math.type !== 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value;
           }
         });
@@ -242,7 +242,7 @@ export class SkillService {
   }
 
   private getTurns(effect) {
-    if (effect.type == 'STOP_ATK') {
+    if (effect.type === 'STOP_ATK') {
       return ' for ' + effect.turn + '% of remaining actions';
     } else if (effect.turn) {
       return ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
@@ -323,7 +323,7 @@ export class SkillService {
           html = this.getIncrease(effect) + ' CT' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
           html = (effect.rate ? effect.rate + '% chance to ' : '') +
-          (effect.calcType == 'decrease' ? 'Decrease' : 'Restore') + ' CT' + this.getValue(skill, effect) + this.getTurns(effect);
+          (effect.calcType === 'decrease' ? 'Decrease' : 'Restore') + ' CT' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'ATK' :
@@ -947,7 +947,7 @@ export class SkillService {
       case 'NULLIFY' :
         html = 'Nullify ' + this.getValue(skill, effect);
         effect.ailments.forEach((ailment, index) => {
-          if (index == effect.ailments.length - 1) {
+          if (index === effect.ailments.length - 1) {
             if (index !== 0) {
               html += ' and ';
             }
@@ -963,7 +963,7 @@ export class SkillService {
       case 'DISPEL' :
         html = 'Dispel ' + this.getValue(skill, effect);
         effect.ailments.forEach((ailment, index) => {
-          if (index == effect.ailments.length - 1) {
+          if (index === effect.ailments.length - 1) {
             if (index !== 0) {
               html += ' and ';
             }
@@ -1002,7 +1002,7 @@ export class SkillService {
         html += effect.elements.join(' ,') + ' ';
       }
 
-      html += (effect.side == 'TEAM' ? 'units' : 'ennemies');
+      html += (effect.side === 'TEAM' ? 'units' : 'ennemies');
     }
 
     if (skill.maths) {
@@ -1037,10 +1037,10 @@ export class SkillService {
       const pool = damage.pool && damage.pool !== 'HP' ? ' ' + damage.pool + ' ' : '';
 
       let hasModifyAbsorb = false;
-      if (damage.effType && damage.effType == 'ABSORB') {
+      if (damage.effType && damage.effType === 'ABSORB') {
         if (skill.maths) {
           skill.maths.forEach(math => {
-            if (math.type == 'MODIFY_ABSORB') {
+            if (math.type === 'MODIFY_ABSORB') {
               hasModifyAbsorb = true;
             }
           });
@@ -1053,30 +1053,30 @@ export class SkillService {
     }
 
     if (skill.hit) {
-      html += (html != '' ? '<br />' : '') + (skill.hit > 0 ? '+' : '') + skill.hit + '% hit chance';
+      html += (html !== '' ? '<br />' : '') + (skill.hit > 0 ? '+' : '') + skill.hit + '% hit chance';
     }
 
     if (skill.crt_hit) {
-      html += (html != '' ? '<br />' : '') + 'Critic chance ' + skill.crt_hit + '%';
+      html += (html !== '' ? '<br />' : '') + 'Critic chance ' + skill.crt_hit + '%';
     }
 
     if (skill.pierce) {
-      html += (html != '' ? '<br />' : '') + 'Piercing';
+      html += (html !== '' ? '<br />' : '') + 'Piercing';
     }
 
     if (skill.ctbreak) {
-      html += (html != '' ? '<br />' : '') + 'Cancel Ability Activation';
+      html += (html !== '' ? '<br />' : '') + 'Cancel Ability Activation';
     }
 
     if (skill.knockback) {
-      html += (html != '' ? '<br />' : '') + skill.knockback.rate + '% chance to Knockback target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
+      html += (html !== '' ? '<br />' : '') + skill.knockback.rate + '% chance to Knockback target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
     }
 
     if (skill.increaseDamageOnDecreaseHp) {
-      html += (html != '' ? '<br />' : '') + 'Increase damage as HP decreases';
+      html += (html !== '' ? '<br />' : '') + 'Increase damage as HP decreases';
     }
 
-    if (html != '') {
+    if (html !== '') {
       html = this.formatMaths(skill, html);
     }
 
@@ -1086,13 +1086,13 @@ export class SkillService {
   formatMaths(skill, html) {
     if (skill.maths) {
       skill.maths.forEach(math => {
-        if (math.type != 'UNIT_ACTIONS' && math.type != 'MODIFY_ABSORB') {
+        if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB') {
           html += ' + Increase modifier by ';
         }
 
         switch (math.formula) {
           case 'CURVE' :
-            if (math.type != 'UNIT_ACTIONS') {
+            if (math.type !== 'UNIT_ACTIONS') {
               html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% ';
             }
             break;
@@ -1289,7 +1289,7 @@ export class SkillService {
       switch (effect.target) {
         case 'self' :
           if (effect.rate && fromEquipment) {
-            return html + ' on basic attack' + (effect.rate == 200 ? '' : ' for target');
+            return html + ' on basic attack' + (effect.rate === 200 ? '' : ' for target');
           } else {
             return html + ' for self';
           }
@@ -1346,7 +1346,7 @@ export class SkillService {
 
       replacedSkills.forEach((replacedSkill, skillIndex) => {
         if (this.isSkillExistForUnit(unit, replacedSkill.oldSkill)) {
-          if (skillIndex != 0) {
+          if (skillIndex !== 0) {
             html += ', ';
           }
 
@@ -1362,7 +1362,7 @@ export class SkillService {
     let exist = false;
 
     Object.keys(unit.board.nodes).forEach(nodeId => {
-      if (unit.board.nodes[nodeId].skill.dataId == skillId) {
+      if (unit.board.nodes[nodeId].skill.dataId === skillId) {
         exist = true;
       }
     });
@@ -1452,7 +1452,7 @@ export class SkillService {
     let countLine = 0;
     for (let i = middle; i >= middle - range.l; i--) {
       for (let j = 1; j <= range.l; j++) {
-        if (i != middle) {
+        if (i !== middle) {
           if (i > middle - range.w || j < range.w) {
             if (j >= range.w) {
               skillTable[i][middle + j] = 'R';
@@ -1485,7 +1485,7 @@ export class SkillService {
     let countLine = 0;
 
     for (let i = middle - 1; i >= middle - range.l; i--) {
-      if (i + 1 == middle) {
+      if (i + 1 === middle) {
         for (let j = 1; j <= range.l; j++) {
           if (j === 1) {
             skillTable[i][middle + j] = 'AR';
@@ -1518,7 +1518,7 @@ export class SkillService {
 
     for (let i = middle; i >= middle - range.l; i--) {
 
-      if (i == middle) {
+      if (i === middle) {
         for (let j = 1; j <= range.l; j++) {
           skillTable[i][middle + j] = 'R';
           skillTable[i][middle - j] = 'R';
@@ -1584,7 +1584,7 @@ export class SkillService {
         if (!onlyHorizontal) {
           skillTable[i][middle] = skillTable[i][middle] === 'N' || skillTable[i][middle] === 'A' ? 'A' : 'AR';
           skillTable[(maxLine + countLine + 1)][middle] = skillTable[(maxLine + countLine + 1)][middle] === 'N' || skillTable[(maxLine + countLine + 1)][middle] === 'A' ? 'A' : 'AR';
-        } else if (aoe.w == 2) {
+        } else if (aoe.w === 2) {
           skillTable[i][middle] = skillTable[i][middle] === 'N' || skillTable[i][middle] === 'A' ? 'A' : 'AR';
           for (let j = 0; j <= aoe.l; j++) {
             skillTable[i][middle - j] = skillTable[i][middle - j] === 'N' || skillTable[i][middle - j] === 'A' ? 'A' : 'AR';
@@ -1629,7 +1629,7 @@ export class SkillService {
 
     for (let i = middle; i >= middle - aoe.l; i--) {
 
-      if (i == middle) {
+      if (i === middle) {
         skillTable[i][middle] = skillTable[i][middle] === 'N' ? 'A' : 'AR';
       } else {
         for (let j = 0; j <= aoe.l; j++) {

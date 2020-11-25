@@ -38,7 +38,7 @@ export class NavService {
 
   getRoute(route) {
     let formattedRoute = route;
-    if (this.version == 'JP') {
+    if (this.version === 'JP') {
       route = route.split('/');
       route.splice(1, 0, 'JP');
       formattedRoute = route.join('/');

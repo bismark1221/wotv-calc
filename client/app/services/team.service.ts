@@ -63,7 +63,7 @@ export class TeamService {
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == 'JP' ? 'jp_teams' : 'teams';
+    return this.navService.getVersion() === 'JP' ? 'jp_teams' : 'teams';
   }
 
   getSavedTeams() {
@@ -93,13 +93,13 @@ export class TeamService {
   saveTeam(team, method) {
     const savableData = this.getSavableData(team);
 
-    if (method == 'new' || method == 'share') {
-      if (method == 'share') {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == 'new') {
+        if (method === 'new') {
           // @ts-ignore
           savableData.storeId = data.id;
           const savedTeams = this.getSavedTeams();
@@ -116,7 +116,7 @@ export class TeamService {
       return this.firestore.collection(this.getLocalStorage()).doc(team.storeId).set(savableData).then(data => {
         const savedTeams = this.getSavedTeams();
         Object.keys(savedTeams).forEach((teamName, teamIndex) => {
-          if (savedTeams[teamName].storeId == team.storeId) {
+          if (savedTeams[teamName].storeId === team.storeId) {
             savedTeams[teamName] = savableData;
             savedTeams[teamName].storeId = team.storeId;
           }
@@ -135,7 +135,7 @@ export class TeamService {
     const savedTeams = this.getSavedTeams();
 
     Object.keys(savedTeams).forEach((teamName, savedTeamIndex) => {
-      if (savedTeams[teamName].storeId == team.storeId) {
+      if (savedTeams[teamName].storeId === team.storeId) {
         delete savedTeams[teamName];
       }
     });
@@ -167,7 +167,7 @@ export class TeamService {
       const savedTeams = this.getSavedTeams();
 
       Object.keys(savedTeams).forEach(teamName => {
-        if (savedTeams[teamName].storeId == this.team.storeId) {
+        if (savedTeams[teamName].storeId === this.team.storeId) {
           oldData = savedTeams[teamName];
           delete oldData.storeId;
         }
@@ -184,7 +184,7 @@ export class TeamService {
     let teamFinded = false;
 
     Object.keys(savedTeams).forEach(teamName => {
-      if (savedTeams[teamName].name == team.name) {
+      if (savedTeams[teamName].name === team.name) {
         teamFinded = true;
       }
     });
@@ -215,14 +215,14 @@ export class TeamService {
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i] && this.team.units[i].card) {
           for (let j = 0; j <= 4; j++) {
-            if (j != i && this.team.units[j]) {
+            if (j !== i && this.team.units[j]) {
               this.team.units[j].teamCards[i] = this.team.units[i].card;
             }
           }
         }
 
         for (let j = 0; j <= 4; j++) {
-          if (this.team.units[i] && this.team.units[j] && j != i) {
+          if (this.team.units[i] && this.team.units[j] && j !== i) {
             this.addMasterAbility(i, j);
           }
         }
@@ -241,7 +241,7 @@ export class TeamService {
   getAvailableUnits(pos) {
     const alreadyUsedUnitIds = [];
     this.team.units.forEach((unit, unitIndex) => {
-      if (unit && unitIndex != pos) {
+      if (unit && unitIndex !== pos) {
         alreadyUsedUnitIds.push(unit.dataId);
       }
     });
@@ -250,7 +250,7 @@ export class TeamService {
     const availableUnits = [];
 
     units.forEach(unit => {
-      if (alreadyUsedUnitIds.indexOf(unit.dataId) == -1) {
+      if (alreadyUsedUnitIds.indexOf(unit.dataId) === -1) {
         availableUnits.push(unit);
       }
     });
@@ -261,7 +261,7 @@ export class TeamService {
   getAvailableCards(pos, filters) {
     const alreadyUsedCardIds = [];
     this.team.units.forEach((unit, unitIndex) => {
-      if (unit && unitIndex != pos && unit.card) {
+      if (unit && unitIndex !== pos && unit.card) {
         alreadyUsedCardIds.push(unit.card.dataId);
       }
     });
@@ -270,7 +270,7 @@ export class TeamService {
     const availableCards = [];
 
     cards.forEach(card => {
-      if (alreadyUsedCardIds.indexOf(card.dataId) == -1) {
+      if (alreadyUsedCardIds.indexOf(card.dataId) === -1) {
         availableCards.push(card);
       }
     });
@@ -281,7 +281,7 @@ export class TeamService {
   getAvailableEspers(pos, filters) {
     const alreadyUsedEsperIds = [];
     this.team.units.forEach((unit, unitIndex) => {
-      if (unit && unitIndex != pos && unit.esper) {
+      if (unit && unitIndex !== pos && unit.esper) {
         alreadyUsedEsperIds.push(unit.esper.dataId);
       }
     });
@@ -290,7 +290,7 @@ export class TeamService {
     const availableEspers = [];
 
     espers.forEach(esper => {
-      if (alreadyUsedEsperIds.indexOf(esper.dataId) == -1) {
+      if (alreadyUsedEsperIds.indexOf(esper.dataId) === -1) {
         availableEspers.push(esper);
       }
     });
@@ -310,7 +310,7 @@ export class TeamService {
 
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
-          if (i != pos) {
+          if (i !== pos) {
             this.team.units[pos].teamCards[i] = this.team.units[i].card;
             this.team.units[i].teamCards[pos] = this.team.units[pos].card;
 
@@ -327,7 +327,7 @@ export class TeamService {
       this.team.units[pos] = null;
 
       for (let i = 0; i <= 4; i++) {
-        if (i != pos && this.team.units[i]) {
+        if (i !== pos && this.team.units[i]) {
           this.team.units[i].teamCards[pos] = null;
           this.team.units[i].teamMasterAbility[pos] = null;
           this.team.units[i].changeLevel();
@@ -343,45 +343,45 @@ export class TeamService {
     const effects = [];
 
     masterSkill.effects.forEach(effect => {
-      if (effect.target == 'selfSide') {
+      if (effect.target === 'selfSide') {
         switch (effect.condition) {
           case 'FIRE_ELEMENT':
-            if (this.team.units[unitPos].element == 'fire') {
+            if (this.team.units[unitPos].element === 'fire') {
               effects.push(effect);
             }
             break;
           case 'ICE_ELEMENT':
-            if (this.team.units[unitPos].element == 'ice') {
+            if (this.team.units[unitPos].element === 'ice') {
               effects.push(effect);
             }
             break;
           case 'WIND_ELEMENT':
-            if (this.team.units[unitPos].element == 'wind') {
+            if (this.team.units[unitPos].element === 'wind') {
               effects.push(effect);
             }
             break;
           case 'EARTH_ELEMENT':
-            if (this.team.units[unitPos].element == 'earth') {
+            if (this.team.units[unitPos].element === 'earth') {
               effects.push(effect);
             }
             break;
           case 'LIGHTNING_ELEMENT':
-            if (this.team.units[unitPos].element == 'lightning') {
+            if (this.team.units[unitPos].element === 'lightning') {
               effects.push(effect);
             }
             break;
           case 'WATER_ELEMENT':
-            if (this.team.units[unitPos].element == 'water') {
+            if (this.team.units[unitPos].element === 'water') {
               effects.push(effect);
             }
             break;
           case 'LIGHT_ELEMENT':
-            if (this.team.units[unitPos].element == 'light') {
+            if (this.team.units[unitPos].element === 'light') {
               effects.push(effect);
             }
             break;
           case 'DARK_ELEMENT':
-            if (this.team.units[unitPos].element == 'dark') {
+            if (this.team.units[unitPos].element === 'dark') {
               effects.push(effect);
             }
             break;
@@ -422,7 +422,7 @@ export class TeamService {
 
   changeCardLevel(pos) {
     for (let i = 0; i <= 4; i++) {
-      if (i == pos) {
+      if (i === pos) {
         this.team.units[pos].changeLevel(true);
       } else {
         this.team.units[pos].changeLevel();
@@ -495,8 +495,8 @@ export class TeamService {
     };
 
     availableStatType.forEach(statType => {
-      if (buffsImage.indexOf(statType.toLowerCase()) != -1) {
-        if (formattedAvailableStatType.images[formattedAvailableStatType.images.length - 1].length == 2) {
+      if (buffsImage.indexOf(statType.toLowerCase()) !== -1) {
+        if (formattedAvailableStatType.images[formattedAvailableStatType.images.length - 1].length === 2) {
           formattedAvailableStatType.images.push([]);
         }
         formattedAvailableStatType.images[formattedAvailableStatType.images.length - 1].push(statType);

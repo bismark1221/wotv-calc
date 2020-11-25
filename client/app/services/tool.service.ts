@@ -23,7 +23,7 @@ export class ToolService {
   }
 
   private normChunk(s: any, l: any) {
-      return (!s.match(this.ore) || l == 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
+      return (!s.match(this.ore) || l === 1) && parseFloat(s) || s.replace(this.snre, ' ').replace(this.sre, '') || 0;
   }
 
   sortByName(items, order = 'asc') {
@@ -39,9 +39,9 @@ export class ToolService {
 
       if (yD) {
         if (xD < yD) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (xD > yD) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
 
@@ -50,9 +50,9 @@ export class ToolService {
         this.oFyNcL = this.normChunk(yN[cLoc] || '', yNl);
         if (isNaN(this.oFxNcL) !== isNaN(this.oFyNcL)) {
           if (isNaN(this.oFxNcL)) {
-            return order == 'asc' ? 1 : -1;
+            return order === 'asc' ? 1 : -1;
           } else {
-            return order == 'asc' ? -1 : 1;
+            return order === 'asc' ? -1 : 1;
           }
         }
 
@@ -62,9 +62,9 @@ export class ToolService {
         }
 
         if (this.oFxNcL < this.oFyNcL) {
-          return order == 'asc' ? -1 : 1;
+          return order === 'asc' ? -1 : 1;
         } else if (this.oFxNcL > this.oFyNcL) {
-          return order == 'asc' ? 1 : -1;
+          return order === 'asc' ? 1 : -1;
         }
       }
     });
@@ -74,7 +74,7 @@ export class ToolService {
 
   sortByRarity(items, order = 'asc') {
     let rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
-    if (order == 'desc') {
+    if (order === 'desc') {
       rarityOrder = ['N', 'R', 'SR', 'MR', 'UR'];
     }
 
@@ -116,11 +116,11 @@ export class ToolService {
   }
 
   equal(a, b) {
-    if (a && b && typeof a == 'object' && typeof b == 'object') {
+    if (a && b && typeof a === 'object' && typeof b === 'object') {
       let length, i, keys;
       if (Array.isArray(a)) {
         length = a.length;
-        if (length != b.length) { return false; }
+        if (length !== b.length) { return false; }
         for (i = length; i-- !== 0;) {
           if (!this.equal(a[i], b[i])) { return false; }
         }

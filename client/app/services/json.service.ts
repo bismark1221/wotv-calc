@@ -6,107 +6,105 @@ import { Slug } from 'ng2-slugify';
 import { JpTranslateService } from './jptranslate.service';
 
 // Translations
-import { default as FR_ArtifactGrow } from   '../../../data/fr/artifactgrow.json';
-import { default as FR_ArtifactName } from   '../../../data/fr/artifactname.json';
-import { default as FR_BuffName } from       '../../../data/fr/buffname.json';
-import { default as FR_ItemOther } from      '../../../data/fr/itemother.json';
-import { default as FR_JobName } from        '../../../data/fr/jobname.json';
-import { default as FR_SkillName } from      '../../../data/fr/skillname.json';
-import { default as FR_UnitName } from       '../../../data/fr/unitname.json';
+import { default as FR_ArtifactGrow } from '../../../data/fr/artifactgrow.json';
+import { default as FR_ArtifactName } from '../../../data/fr/artifactname.json';
+import { default as FR_BuffName } from '../../../data/fr/buffname.json';
+import { default as FR_ItemOther } from '../../../data/fr/itemother.json';
+import { default as FR_JobName } from '../../../data/fr/jobname.json';
+import { default as FR_SkillName } from '../../../data/fr/skillname.json';
+import { default as FR_UnitName } from '../../../data/fr/unitname.json';
 import { default as FR_VisionCardName } from '../../../data/fr/visioncardname.json';
-import { default as FR_ItemName } from       '../../../data/fr/itemname.json';
-import { default as FR_PlayerTitleName } from       '../../../data/fr/playerawardsname.json';
-import { default as FR_PlayerTitleDesc } from       '../../../data/fr/playerawardsdescription.json';
-import { default as FR_GuildTitleName } from       '../../../data/fr/guildawardsname.json';
-import { default as FR_GuildTitleDesc } from       '../../../data/fr/guildawardsdescription.json';
+import { default as FR_ItemName } from '../../../data/fr/itemname.json';
+import { default as FR_PlayerTitleName } from '../../../data/fr/playerawardsname.json';
+import { default as FR_PlayerTitleDesc } from '../../../data/fr/playerawardsdescription.json';
+import { default as FR_GuildTitleName } from '../../../data/fr/guildawardsname.json';
+import { default as FR_GuildTitleDesc } from '../../../data/fr/guildawardsdescription.json';
 
-import { default as JP_ArtifactGrow } from   '../../../data/jp/artifactgrow.json';
-import { default as JP_ArtifactName } from   '../../../data/jp/artifactname.json';
-import { default as JP_BuffName } from       '../../../data/jp/buffname.json';
-import { default as JP_ItemOther } from      '../../../data/jp/itemother.json';
-import { default as JP_JobName } from        '../../../data/jp/jobname.json';
-import { default as JP_SkillName } from      '../../../data/jp/skillname.json';
-import { default as JP_UnitName } from       '../../../data/jp/unitname.json';
+import { default as JP_ArtifactGrow } from '../../../data/jp/artifactgrow.json';
+import { default as JP_ArtifactName } from '../../../data/jp/artifactname.json';
+import { default as JP_BuffName } from '../../../data/jp/buffname.json';
+import { default as JP_ItemOther } from '../../../data/jp/itemother.json';
+import { default as JP_JobName } from '../../../data/jp/jobname.json';
+import { default as JP_SkillName } from '../../../data/jp/skillname.json';
+import { default as JP_UnitName } from '../../../data/jp/unitname.json';
 import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
-import { default as JP_ItemName } from       '../../../data/jp/itemname.json';
-import { default as JP_PlayerTitleName } from       '../../../data/jp/playerawardsname.json';
-import { default as JP_PlayerTitleDesc } from       '../../../data/jp/playerawardsdescription.json';
-import { default as JP_GuildTitleName } from       '../../../data/fr/guildawardsname.json';
-import { default as JP_GuildTitleDesc } from       '../../../data/fr/guildawardsdescription.json';
+import { default as JP_ItemName } from '../../../data/jp/itemname.json';
+import { default as JP_PlayerTitleName } from '../../../data/jp/playerawardsname.json';
+import { default as JP_PlayerTitleDesc } from '../../../data/jp/playerawardsdescription.json';
+import { default as JP_GuildTitleName } from '../../../data/fr/guildawardsname.json';
+import { default as JP_GuildTitleDesc } from '../../../data/fr/guildawardsdescription.json';
 
-import { default as JP_Romaji } from         '../../../data/jp_romaji.json';
-import { default as JP_Titles_Name } from         '../../../data/jp_titles_name.json';
-import { default as JP_Titles_Desc } from         '../../../data/jp_titles_desc.json';
+import { default as JP_Romaji } from '../../../data/jp_romaji.json';
+import { default as JP_Titles_Name } from '../../../data/jp_titles_name.json';
+import { default as JP_Titles_Desc } from '../../../data/jp_titles_desc.json';
 
-import { default as gl_raid_1 } from         '../../../data/raid/gl/raid_ev_06_01_set.json';
-import { default as gl_raid_2 } from         '../../../data/raid/gl/raid_ev_06_02_set.json';
-import { default as gl_raid_3 } from         '../../../data/raid/gl/raid_ev_06_03_set.json';
-import { default as gl_raid_4 } from         '../../../data/raid/gl/raid_ev_06_04_set.json';
-import { default as gl_raid_5 } from         '../../../data/raid/gl/raid_ev_07_01_set.json';
-import { default as gl_raid_6 } from         '../../../data/raid/gl/raid_ev_07_02_set.json';
-import { default as gl_raid_7 } from         '../../../data/raid/gl/raid_ev_07_03_set.json';
-import { default as gl_raid_8 } from         '../../../data/raid/gl/raid_ev_07_04_set.json';
-import { default as gl_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
-import { default as gl_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
-import { default as gl_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
-import { default as gl_raid_12 } from         '../../../data/raid/gl/raid_ev_09_01_set.json';
-import { default as gl_raid_13 } from         '../../../data/raid/gl/raid_ev_09_02_set.json';
-import { default as gl_raid_14 } from         '../../../data/raid/gl/raid_ev_09_03_set.json';
-import { default as gl_raid_15 } from         '../../../data/raid/gl/raid_ev_09_04_set.json';
-import { default as gl_raid_16 } from         '../../../data/raid/gl/raid_ev_09_05_set.json';
-import { default as gl_raid_17 } from         '../../../data/raid/gl/raid_ev_09_06_set.json';
-import { default as gl_raid_18 } from         '../../../data/raid/gl/raid_ev_10_01_set.json';
-import { default as gl_raid_19 } from         '../../../data/raid/gl/raid_ev_10_02_set.json';
-import { default as gl_raid_20 } from         '../../../data/raid/gl/raid_ev_10_03_set.json';
-import { default as gl_raid_21 } from         '../../../data/raid/gl/raid_ev_10_04_set.json';
-import { default as gl_raid_22 } from         '../../../data/raid/gl/raid_ev_10_05_set.json';
-import { default as gl_raid_23 } from         '../../../data/raid/gl/raid_ev_10_06_set.json';
-import { default as gl_raid_24 } from         '../../../data/raid/gl/raid_ff14_01_set.json';
-import { default as gl_raid_25 } from         '../../../data/raid/gl/raid_ff14_2_01_set.json';
-import { default as gl_raid_26 } from         '../../../data/raid/gl/raid_ff14_2_02_set.json';
-import { default as gl_raid_27 } from         '../../../data/raid/gl/raid_ff14_2_03_set.json';
-import { default as gl_raid_28 } from         '../../../data/raid/gl/raid_ff14_02_set.json';
-import { default as gl_raid_29 } from         '../../../data/raid/gl/raid_ff14_03_set.json';
-import { default as gl_raid_30 } from         '../../../data/raid/gl/raid_ff14_04_set.json';
-import { default as gl_raid_31 } from         '../../../data/raid/gl/raid_ff14_05_set.json';
-import { default as gl_raid_32 } from         '../../../data/raid/gl/raid_ignt_01_set.json';
-import { default as gl_raid_33 } from         '../../../data/raid/gl/raid_ignt_02_set.json';
-import { default as gl_raid_34 } from         '../../../data/raid/gl/raid_ignt_03_set.json';
-import { default as gl_raid_35 } from         '../../../data/raid/gl/raid_ignt01_01_set.json';
-import { default as gl_raid_36 } from         '../../../data/raid/gl/raid_ignt01_02_set.json';
-import { default as gl_raid_37 } from         '../../../data/raid/gl/raid_ignt01_03_set.json';
-import { default as gl_raid_38 } from         '../../../data/raid/gl/raid_ev_12_01_set.json';
-import { default as gl_raid_39 } from         '../../../data/raid/gl/raid_ev_12_02_set.json';
-import { default as gl_raid_40 } from         '../../../data/raid/gl/raid_ev_12_03_set.json';
-import { default as gl_raid_41 } from         '../../../data/raid/gl/raid_ev_12_04_set.json';
-import { default as gl_raid_42 } from         '../../../data/raid/gl/raid_ev_12_05_set.json';
-import { default as gl_raid_43 } from         '../../../data/raid/gl/raid_ev_12_06_set.json';
+import { default as gl_raid_1 } from '../../../data/raid/gl/raid_ev_06_01_set.json';
+import { default as gl_raid_2 } from '../../../data/raid/gl/raid_ev_06_02_set.json';
+import { default as gl_raid_3 } from '../../../data/raid/gl/raid_ev_06_03_set.json';
+import { default as gl_raid_4 } from '../../../data/raid/gl/raid_ev_06_04_set.json';
+import { default as gl_raid_5 } from '../../../data/raid/gl/raid_ev_07_01_set.json';
+import { default as gl_raid_6 } from '../../../data/raid/gl/raid_ev_07_02_set.json';
+import { default as gl_raid_7 } from '../../../data/raid/gl/raid_ev_07_03_set.json';
+import { default as gl_raid_8 } from '../../../data/raid/gl/raid_ev_07_04_set.json';
+import { default as gl_raid_9 } from '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as gl_raid_10 } from '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as gl_raid_11 } from '../../../data/raid/gl/raid_ev_08_03_set.json';
+import { default as gl_raid_12 } from '../../../data/raid/gl/raid_ev_09_01_set.json';
+import { default as gl_raid_13 } from '../../../data/raid/gl/raid_ev_09_02_set.json';
+import { default as gl_raid_14 } from '../../../data/raid/gl/raid_ev_09_03_set.json';
+import { default as gl_raid_15 } from '../../../data/raid/gl/raid_ev_09_04_set.json';
+import { default as gl_raid_16 } from '../../../data/raid/gl/raid_ev_09_05_set.json';
+import { default as gl_raid_17 } from '../../../data/raid/gl/raid_ev_09_06_set.json';
+import { default as gl_raid_18 } from '../../../data/raid/gl/raid_ev_10_01_set.json';
+import { default as gl_raid_19 } from '../../../data/raid/gl/raid_ev_10_02_set.json';
+import { default as gl_raid_20 } from '../../../data/raid/gl/raid_ev_10_03_set.json';
+import { default as gl_raid_21 } from '../../../data/raid/gl/raid_ev_10_04_set.json';
+import { default as gl_raid_22 } from '../../../data/raid/gl/raid_ev_10_05_set.json';
+import { default as gl_raid_23 } from '../../../data/raid/gl/raid_ev_10_06_set.json';
+import { default as gl_raid_24 } from '../../../data/raid/gl/raid_ff14_01_set.json';
+import { default as gl_raid_25 } from '../../../data/raid/gl/raid_ff14_2_01_set.json';
+import { default as gl_raid_26 } from '../../../data/raid/gl/raid_ff14_2_02_set.json';
+import { default as gl_raid_27 } from '../../../data/raid/gl/raid_ff14_2_03_set.json';
+import { default as gl_raid_28 } from '../../../data/raid/gl/raid_ff14_02_set.json';
+import { default as gl_raid_29 } from '../../../data/raid/gl/raid_ff14_03_set.json';
+import { default as gl_raid_30 } from '../../../data/raid/gl/raid_ff14_04_set.json';
+import { default as gl_raid_31 } from '../../../data/raid/gl/raid_ff14_05_set.json';
+import { default as gl_raid_32 } from '../../../data/raid/gl/raid_ignt_01_set.json';
+import { default as gl_raid_33 } from '../../../data/raid/gl/raid_ignt_02_set.json';
+import { default as gl_raid_34 } from '../../../data/raid/gl/raid_ignt_03_set.json';
+import { default as gl_raid_35 } from '../../../data/raid/gl/raid_ignt01_01_set.json';
+import { default as gl_raid_36 } from '../../../data/raid/gl/raid_ignt01_02_set.json';
+import { default as gl_raid_37 } from '../../../data/raid/gl/raid_ignt01_03_set.json';
+import { default as gl_raid_38 } from '../../../data/raid/gl/raid_ev_12_01_set.json';
+import { default as gl_raid_39 } from '../../../data/raid/gl/raid_ev_12_02_set.json';
+import { default as gl_raid_40 } from '../../../data/raid/gl/raid_ev_12_03_set.json';
+import { default as gl_raid_41 } from '../../../data/raid/gl/raid_ev_12_04_set.json';
+import { default as gl_raid_42 } from '../../../data/raid/gl/raid_ev_12_05_set.json';
+import { default as gl_raid_43 } from '../../../data/raid/gl/raid_ev_12_06_set.json';
 
-
-
-import { default as jp_raid_1 } from         '../../../data/raid/jp/raid_ev_06_01_set.json';
-import { default as jp_raid_2 } from         '../../../data/raid/jp/raid_ev_06_02_set.json';
-import { default as jp_raid_3 } from         '../../../data/raid/jp/raid_ev_06_03_set.json';
-import { default as jp_raid_4 } from         '../../../data/raid/jp/raid_ev_06_04_set.json';
-import { default as jp_raid_5 } from         '../../../data/raid/jp/raid_ev_07_01_set.json';
-import { default as jp_raid_6 } from         '../../../data/raid/jp/raid_ev_07_02_set.json';
-import { default as jp_raid_7 } from         '../../../data/raid/jp/raid_ev_07_03_set.json';
-import { default as jp_raid_8 } from         '../../../data/raid/jp/raid_ev_07_04_set.json';
-import { default as jp_raid_9 } from         '../../../data/raid/gl/raid_ev_08_01_set.json';
-import { default as jp_raid_10 } from         '../../../data/raid/gl/raid_ev_08_02_set.json';
-import { default as jp_raid_11 } from         '../../../data/raid/gl/raid_ev_08_03_set.json';
-import { default as jp_raid_12 } from         '../../../data/raid/gl/raid_ev_09_01_set.json';
-import { default as jp_raid_13 } from         '../../../data/raid/gl/raid_ev_09_02_set.json';
-import { default as jp_raid_14 } from         '../../../data/raid/gl/raid_ev_09_03_set.json';
-import { default as jp_raid_15 } from         '../../../data/raid/gl/raid_ev_09_04_set.json';
-import { default as jp_raid_16 } from         '../../../data/raid/gl/raid_ev_09_05_set.json';
-import { default as jp_raid_17 } from         '../../../data/raid/gl/raid_ev_09_06_set.json';
-import { default as jp_raid_18 } from         '../../../data/raid/gl/raid_ev_10_01_set.json';
-import { default as jp_raid_19 } from         '../../../data/raid/gl/raid_ev_10_02_set.json';
-import { default as jp_raid_20 } from         '../../../data/raid/gl/raid_ev_10_03_set.json';
-import { default as jp_raid_21 } from         '../../../data/raid/gl/raid_ev_10_04_set.json';
-import { default as jp_raid_22 } from         '../../../data/raid/gl/raid_ev_10_05_set.json';
-import { default as jp_raid_23 } from         '../../../data/raid/gl/raid_ev_10_06_set.json';
+import { default as jp_raid_1 } from '../../../data/raid/jp/raid_ev_06_01_set.json';
+import { default as jp_raid_2 } from '../../../data/raid/jp/raid_ev_06_02_set.json';
+import { default as jp_raid_3 } from '../../../data/raid/jp/raid_ev_06_03_set.json';
+import { default as jp_raid_4 } from '../../../data/raid/jp/raid_ev_06_04_set.json';
+import { default as jp_raid_5 } from '../../../data/raid/jp/raid_ev_07_01_set.json';
+import { default as jp_raid_6 } from '../../../data/raid/jp/raid_ev_07_02_set.json';
+import { default as jp_raid_7 } from '../../../data/raid/jp/raid_ev_07_03_set.json';
+import { default as jp_raid_8 } from '../../../data/raid/jp/raid_ev_07_04_set.json';
+import { default as jp_raid_9 } from '../../../data/raid/gl/raid_ev_08_01_set.json';
+import { default as jp_raid_10 } from '../../../data/raid/gl/raid_ev_08_02_set.json';
+import { default as jp_raid_11 } from '../../../data/raid/gl/raid_ev_08_03_set.json';
+import { default as jp_raid_12 } from '../../../data/raid/gl/raid_ev_09_01_set.json';
+import { default as jp_raid_13 } from '../../../data/raid/gl/raid_ev_09_02_set.json';
+import { default as jp_raid_14 } from '../../../data/raid/gl/raid_ev_09_03_set.json';
+import { default as jp_raid_15 } from '../../../data/raid/gl/raid_ev_09_04_set.json';
+import { default as jp_raid_16 } from '../../../data/raid/gl/raid_ev_09_05_set.json';
+import { default as jp_raid_17 } from '../../../data/raid/gl/raid_ev_09_06_set.json';
+import { default as jp_raid_18 } from '../../../data/raid/gl/raid_ev_10_01_set.json';
+import { default as jp_raid_19 } from '../../../data/raid/gl/raid_ev_10_02_set.json';
+import { default as jp_raid_20 } from '../../../data/raid/gl/raid_ev_10_03_set.json';
+import { default as jp_raid_21 } from '../../../data/raid/gl/raid_ev_10_04_set.json';
+import { default as jp_raid_22 } from '../../../data/raid/gl/raid_ev_10_05_set.json';
+import { default as jp_raid_23 } from '../../../data/raid/gl/raid_ev_10_06_set.json';
 
 @Injectable()
 export class JsonService {
@@ -1311,7 +1309,7 @@ export class JsonService {
           this.addUnit(this[this.version].units[unitId]);
         }
 
-        if (this[this.version].units[unitId].type === 1 && unitId != 'UN_FF10_S_VLFR') {
+        if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
           this.addEsper(this[this.version].units[unitId]);
         }
       });
@@ -1354,7 +1352,7 @@ export class JsonService {
 
     this.getNames(this[this.version].wotvJobs[dataId], 'job', false);
 
-    if (this.version == 'gl') {
+    if (this.version === 'gl') {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + '_FIRE']) {
         this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + '_FIRE'];
         this[this.version].wotvJobs[dataId].names.fr = this.names.fr['job'][dataId] ? this.names.fr['job'][dataId] : this.names.fr['job'][dataId + '_FIRE'];
@@ -1461,7 +1459,7 @@ export class JsonService {
   private getNames(item, type, getSlug = true) {
     const id = item.dataId;
 
-    if (this.version == 'gl') {
+    if (this.version === 'gl') {
       if (this.names.en[type][id]) {
         item.names.en = this.names.en[type][id];
         item.names.fr = this.names.fr[type][id];
@@ -1477,12 +1475,12 @@ export class JsonService {
       let slug = null;
       let slugJP = false;
 
-      if (type == 'unit' && this.names.en[type][id]
-        || type == 'visionCard' && this.names.en[type][id]
-        || type == 'equipment' && this.names.en[type][id]) {
+      if (type === 'unit' && this.names.en[type][id]
+        || type === 'visionCard' && this.names.en[type][id]
+        || type === 'equipment' && this.names.en[type][id]) {
         item.names.en = this.names.jp[type][id] + ' - ' + this.names.en[type][id];
         slug = this.names.en[type][id];
-      } else if (type == 'job') {
+      } else if (type === 'job') {
         if (this.names.en[type][id]) {
           item.names.en = this.names.en[type][id];
           slug = this.names.en[type][id];
@@ -1521,8 +1519,8 @@ export class JsonService {
       let i = 0;
 
       Object.keys(this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's']).forEach(itemId => {
-        if (this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug == item.slug
-          || this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug == item.slug + '-' + i
+        if (this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug === item.slug
+          || this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug === item.slug + '-' + i
         ) {
           i++;
         }
@@ -1540,7 +1538,7 @@ export class JsonService {
 
         unit.board.nodes[item.panel_id] = {
           dataId: item.value,
-          type: item.panel_effect_type == 1 ? 'skill' : 'buff',
+          type: item.panel_effect_type === 1 ? 'skill' : 'buff',
           skill: this.addSkill(unit, item)
         };
       });
@@ -1554,7 +1552,7 @@ export class JsonService {
       unit.replacedSkills[replace].forEach(upgrade => {
         let previousSkillType = 'skill';
         Object.keys(unit.board.nodes).forEach(nodeId => {
-          if (unit.board.nodes[nodeId].dataId == upgrade.oldSkill) {
+          if (unit.board.nodes[nodeId].dataId === upgrade.oldSkill) {
             previousSkillType = unit.board.nodes[nodeId].type;
           }
         });
@@ -1677,7 +1675,7 @@ export class JsonService {
         formattedCond.push(newCond);
       }
 
-      if (formattedCond.length == 0) {
+      if (formattedCond.length === 0) {
         console.log('7 @@@@@ ' + cond);
         return null;
       }
@@ -1698,7 +1696,7 @@ export class JsonService {
       effects: [],
       dataId: panelSkill.value,
       type: this.slots[(this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot ? this[this.version].skills[panelSkill.value].slot : 0)],
-      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot == 1,
+      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot === 1,
       increaseUnitLevel: panelSkill.ival
     };
 
@@ -1820,9 +1818,9 @@ export class JsonService {
     };
     const managedData = Object.keys(dataSkill);
 
-    if (skill.type == 'buff') {
+    if (skill.type === 'buff') {
       dataSkill.s_buffs = [skillId];
-    } else if (skill.type == 'MR') {
+    } else if (skill.type === 'MR') {
       dataSkill.s_buffs = skill.buffIds;
     } else {
       dataSkill = this[this.version].skills[skillId];
@@ -1831,18 +1829,18 @@ export class JsonService {
       dataSkill.names = skill.names;
 
       Object.keys(dataSkill).forEach(key => {
-        if (managedData.indexOf(key) == -1) {
+        if (managedData.indexOf(key) === -1) {
           console.log('NOT MANAGED KEY : ' + key);
         }
       });
     }
 
-    if (dataSkill.range_buff && dataSkill.range_buff != 1) {
-      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- range buff != 1');
+    if (dataSkill.range_buff && dataSkill.range_buff !== 1) {
+      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- range buff !== 1');
     }
 
-    if (dataSkill.eff_w && dataSkill.eff_w != 1 && dataSkill.eff_w != 2) {
-      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- eff_w != 1');
+    if (dataSkill.eff_w && dataSkill.eff_w !== 1 && dataSkill.eff_w !== 2) {
+      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- eff_w !== 1');
     }
 
     if (Number.isInteger(dataSkill.target)) {
@@ -1853,10 +1851,10 @@ export class JsonService {
       skill.target = this.targetTypes[dataSkill.target];
     }
 
-    if (typeof(dataSkill.cost_type) == 'number') {
+    if (typeof(dataSkill.cost_type) === 'number') {
       skill.cost = {
-        type: dataSkill.cost_type == 0 ? 'AP' : 'TP',
-        value: dataSkill.cost_type == 0 ? dataSkill.cost_ap : dataSkill.cost_mp
+        type: dataSkill.cost_type === 0 ? 'AP' : 'TP',
+        value: dataSkill.cost_type === 0 ? dataSkill.cost_ap : dataSkill.cost_mp
       };
     }
 
@@ -1972,7 +1970,7 @@ export class JsonService {
 
     if (dataSkill.invtag) {
       dataSkill.invtag.forEach(ignore => {
-        if (!this.killers[ignore] || ignore != 301) {
+        if (!this.killers[ignore] || ignore !== 301) {
           console.log('1 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- KLSP : ' + ignore);
         }
 
@@ -2089,8 +2087,8 @@ export class JsonService {
     }
 
 
-    if (((typeof(dataSkill.eff_val) == 'number' && dataSkill.eff_val != 0)
-      || (typeof(dataSkill.eff_val1) == 'number' && dataSkill.eff_val1 != 0))
+    if (((typeof(dataSkill.eff_val) === 'number' && dataSkill.eff_val !== 0)
+      || (typeof(dataSkill.eff_val1) === 'number' && dataSkill.eff_val1 !== 0))
       && dataSkill.eff_type !== 10
     ) {
       skill.damage = {
@@ -2101,7 +2099,7 @@ export class JsonService {
         effType: this.damageEffectType[dataSkill.eff_type]
       };
 
-      if (dataSkill.atk_rev && dataSkill.atk_rev == 1) {
+      if (dataSkill.atk_rev && dataSkill.atk_rev === 1) {
         skill.damage.fixedDamage = true;
       }
 
@@ -2135,7 +2133,7 @@ export class JsonService {
             let duplicateFinded = false;
             const needToAddKiller = false;
 
-            if (alreadyAddedBuffs.indexOf(buff) == -1) {
+            if (alreadyAddedBuffs.indexOf(buff) === -1) {
               while (!finished && buff) {
                 if (this[this.version].buffs[buff]['type' + i]) {
                   if (duplicateFinded && this[this.version].buffs[buff]['type' + i] === 117) {} else {
@@ -2164,7 +2162,7 @@ export class JsonService {
 
                       type = this.killers[this[this.version].buffs[buff]['tag' + i]] + '_KILLER';
 
-                      if (this.calcType[this[this.version].buffs[buff]['calc' + i]] == 'resistance') {
+                      if (this.calcType[this[this.version].buffs[buff]['calc' + i]] === 'resistance') {
                         type = type + '_RES';
                       }
                     }
@@ -2172,24 +2170,24 @@ export class JsonService {
 
                     let nullifyOrDispel = false;
                     if (this.statsAtkRes.indexOf(type) !== -1) {
-                      type = type + '_' + (this.calcType[this[this.version].buffs[buff]['calc' + i]] == 'resistance' ? 'RES' : 'ATK');
+                      type = type + '_' + (this.calcType[this[this.version].buffs[buff]['calc' + i]] === 'resistance' ? 'RES' : 'ATK');
                     } else if (this.ailmentStatus.indexOf(type) !== -1) {
                       const calcType = this.calcType[this[this.version].buffs[buff]['calc' + i]];
-                      if (calcType == 'nullify' || calcType == 'dispel') {
+                      if (calcType === 'nullify' || calcType === 'dispel') {
                         nullifyOrDispel = true;
                         let effect = this.findEffect(skill, calcType.toUpperCase());
                         if (!effect) {
                           effect = {
                             type: calcType.toUpperCase(),
                             ailments: [],
-                            target: dataBuffsIndex == 0 ? skill.target : 'self'
+                            target: dataBuffsIndex === 0 ? skill.target : 'self'
                           };
                           skill.effects.push(effect);
                           alreadyAddedBuffs.push(buff);
                         }
                         effect.ailments.push(type);
                       } else {
-                        type = type + '_' + (this.calcType[this[this.version].buffs[buff]['calc' + i]] == 'resistance' ? 'RES' : 'ATK');
+                        type = type + '_' + (this.calcType[this[this.version].buffs[buff]['calc' + i]] === 'resistance' ? 'RES' : 'ATK');
                       }
                     }
 
@@ -2204,7 +2202,7 @@ export class JsonService {
                         fromImbue: false,
                         condition: null,
                         increaseMax: false,
-                        target: dataBuffsIndex == 0 ? skill.target : 'self'
+                        target: dataBuffsIndex === 0 ? skill.target : 'self'
                       };
 
                       if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
@@ -2219,7 +2217,7 @@ export class JsonService {
                         delete addedBuff.condition;
                       }
 
-                      if (this[this.version].buffs[buff]['calc' + i] == 2) {
+                      if (this[this.version].buffs[buff]['calc' + i] === 2) {
                         addedBuff.increaseMax = true;
                       } else {
                         delete addedBuff.increaseMax;
@@ -2251,7 +2249,7 @@ export class JsonService {
     let findedEffect = null;
 
     skill.effects.forEach(effect => {
-      if (effect.type == type) {
+      if (effect.type === type) {
         findedEffect = effect;
       }
     });
@@ -2327,7 +2325,7 @@ export class JsonService {
         attack.elem = ['neutral'];
       }
 
-      if (attack.elem.length == 0) {
+      if (attack.elem.length === 0) {
         attack.elem = ['neutral'];
       }
 
@@ -2339,7 +2337,6 @@ export class JsonService {
     if (skillId) {
       if (Array.isArray(skillId)) {
         unit.masterSkill = [];
-        const masterSkill = null;
 
         skillId.forEach(id => {
           const masterSkill = {
@@ -2390,7 +2387,7 @@ export class JsonService {
                 dataId: this[this.version].equipments[tmrId]['skl' + i][j],
                 names: {},
                 effects: [],
-                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]['skl' + i][j]].slot == 1 ? 1 : 3]
+                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]['skl' + i][j]].slot === 1 ? 1 : 3]
               };
 
               this.updateSkill(unit, skill, this[this.version].equipments[tmrId]['skl' + i][j]);
@@ -2481,7 +2478,7 @@ export class JsonService {
       let j = 1;
       while (!weatherFinished) {
         if (buff['buff' + j]) {
-          if (alreadyAddedBuffs.indexOf(buff['buff' + j]) == -1) {
+          if (alreadyAddedBuffs.indexOf(buff['buff' + j]) === -1) {
             let finished = false;
             let i = 1;
             while (!finished) {
@@ -2493,7 +2490,7 @@ export class JsonService {
 
                 let type = this.buffTypes[this[this.version].buffs[buff['buff' + j]]['type' + i]];
                 if (this.statsAtkRes.indexOf(type) !== -1) {
-                  type = type + '_' + (this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] == 'resistance' ? 'RES' : 'ATK');
+                  type = type + '_' + (this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] === 'resistance' ? 'RES' : 'ATK');
                 }
 
                 const formattedBuff = {
@@ -2526,11 +2523,11 @@ export class JsonService {
           } else {
             if (buff.elem) {
               skill.effects.forEach(effect => {
-                if (effect.dataId == buff['buff' + j]) {
+                if (effect.dataId === buff['buff' + j]) {
                   buff.elem.forEach(element => {
                     if (!effect.elements) {
                       effect.elements = [this.elements[element]];
-                    } else if (effect.elements.indexOf(this.elements[element]) == -1) {
+                    } else if (effect.elements.indexOf(this.elements[element]) === -1) {
                       effect.elements.push(this.elements[element]);
                     }
                   });
@@ -2562,7 +2559,7 @@ export class JsonService {
 
     // @TODO Manage via recipe !!
 
-    if (rType == 'AF_LOT_LW_HLM_005' || rType == 'AF_LOT_LW_RNG_007') {
+    if (rType === 'AF_LOT_LW_HLM_005' || rType === 'AF_LOT_LW_RNG_007') {
       const splitDataId = dataId.split('_');
       rType = dataId;
       if (splitDataId[splitDataId.length - 1] === '1' || splitDataId[splitDataId.length - 1] === '2' || splitDataId[splitDataId.length - 1] === '3' || splitDataId[splitDataId.length - 1] === '4' || splitDataId[splitDataId.length - 1] === '5') {
@@ -2571,7 +2568,7 @@ export class JsonService {
       }
     }
 
-    if ((this.version == 'jp' || this.names.en.equipment[dataId]) && equipment.type !== -1) {
+    if ((this.version === 'jp' || this.names.en.equipment[dataId]) && equipment.type !== -1) {
       if (!this[this.version].wotvEquipments[rType]) {
         this[this.version].wotvEquipments[rType] = {
           names: {},
@@ -2609,7 +2606,7 @@ export class JsonService {
               const tableJob = jobId.split('_');
               const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
 
-              if (uniqJobs.indexOf(genericDataId) == -1) {
+              if (uniqJobs.indexOf(genericDataId) === -1) {
                 uniqJobs.push(genericDataId);
                 this[this.version].wotvEquipments[rType].equippableJobs.push(jobId);
               }
@@ -2642,7 +2639,7 @@ export class JsonService {
           }
         } else if (this[this.version].equipmentRecipes[dataId]) {
           const recipe = this[this.version].equipmentRecipes[dataId];
-          if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] != '') {
+          if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] !== '') {
             this[this.version].wotvEquipments[rType].acquisition = {
               type: {
                 en: this.names.en.itemOther[recipe.recipe],
@@ -2684,7 +2681,7 @@ export class JsonService {
         Object.keys(this[this.version].equipments[dataId].status[0]).forEach(stat => {
           if (this[this.version].equipments[dataId].status[0][stat] !== 0
             || (this[this.version].equipments[dataId].status[1]
-              && typeof(this[this.version].equipments[dataId].status[1][stat]) == 'number'
+              && typeof(this[this.version].equipments[dataId].status[1][stat]) === 'number'
               && this[this.version].equipments[dataId].status[1][stat] !== 0)
           ) {
             this[this.version].wotvEquipments[rType].stats[this.stats.unit[stat]] = {
@@ -2733,7 +2730,7 @@ export class JsonService {
     const recipe = this[this.version].equipmentRecipes[dataId];
     if (recipe) {
       recipe.craft.forEach(material => {
-        if (material.type == 0) {
+        if (material.type === 0) {
           if (materials[material.id]) {
             materials[material.id] += material.num;
           } else {
@@ -2753,9 +2750,9 @@ export class JsonService {
       });
     }
 
-    const awake = this[this.version].equipmentAwakes[dataId];
-    if (awake) {
-      awake.awakes.forEach(awake => {
+    const dataAwake = this[this.version].equipmentAwakes[dataId];
+    if (dataAwake) {
+      dataAwake.awakes.forEach(awake => {
         if (awake.lv <= level) {
           let index = 1;
           while (awake['mat' + index] && index <= 9) {
@@ -2764,9 +2761,9 @@ export class JsonService {
             const count = mat[1];
 
             if (materials[id]) {
-              materials[id] += parseInt(count);
+              materials[id] += parseInt(count, 10);
             } else {
-              materials[id] = parseInt(count);
+              materials[id] = parseInt(count, 10);
             }
 
             index++;
@@ -2795,7 +2792,7 @@ export class JsonService {
   }
 
   private formatRaid() {
-    if (this.version == 'gl') {
+    if (this.version === 'gl') {
       this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1;
       this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2;
       this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3;
@@ -2888,7 +2885,7 @@ export class JsonService {
     Object.keys(this[this.version].raid).forEach(raidId => {
       const raid = this[this.version].raid[raidId];
 
-      if (raid.home_tex !== 'LAPS_RD_0001' && (raid.home_tex !== 'LAPS_RD_FF14_01' || raidId == 'RAID_ID_11')) {
+      if (raid.home_tex !== 'LAPS_RD_0001' && (raid.home_tex !== 'LAPS_RD_FF14_01' || raidId === 'RAID_ID_11')) {
         this[this.version].wotvRaids[raidId] = {
           dataId: raidId,
           names: {},
@@ -2941,7 +2938,7 @@ export class JsonService {
     const quest = this[this.version].raidMaps[questId];
     if (quest) {
       quest.enemy.forEach(enemy => {
-        if (enemy.iname == boss.dataId) {
+        if (enemy.iname === boss.dataId) {
           enemy.skills.forEach(skill => {
             const skillId = skill.iname;
             if (!boss.skills[skillId]) {
@@ -2972,7 +2969,7 @@ export class JsonService {
       recipe: false
     };
 
-    if (item.type == 13) {
+    if (item.type === 13) {
       this[this.version].wotvItems[dataId].recipe = true;
     } else {
       delete this[this.version].wotvItems[dataId].recipe;
@@ -3055,7 +3052,7 @@ export class JsonService {
 
     this.getNames(this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId], type + 'TitleName', false);
 
-    if (this.version == 'gl') {
+    if (this.version === 'gl') {
       if (!this.names.en[type + 'TitleDesc'][titleId]) {
         this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].howToGet = {
           en: titleId,
@@ -3078,7 +3075,7 @@ export class JsonService {
             en: this.names.en[type + 'TitleDesc'][titleId]
           };
         } else if (!this.jpTitlesDesc[titleId]) {
-          console.log('Need Google Translate for \'' + titleId + '\' ==> \'' + this.names.jp[type + 'TitleDesc'][titleId]) + '\'';
+          console.log('Need Google Translate for "' + titleId + '" ==> "' + this.names.jp[type + 'TitleDesc'][titleId] + '"');
         } else {
           this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].howToGet = {
             en: this.jpTitlesDesc[titleId]
@@ -3088,7 +3085,7 @@ export class JsonService {
         if (this.names.en[type + 'TitleName'][titleId]) {
           this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].names.en = this.names.en[type + 'TitleName'][titleId];
         } else if (!this.jpTitlesName[titleId]) {
-          console.log('Need Google Translate for \'' + titleId + '\' ==> \'' + this.names.jp[type + 'TitleName'][titleId]) + '\'';
+          console.log('Need Google Translate for "' + titleId + '" ==> "' + this.names.jp[type + 'TitleName'][titleId] + '"');
         } else {
           this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].names.en = this.jpTitlesName[titleId];
         }

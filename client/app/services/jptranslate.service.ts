@@ -224,9 +224,14 @@ export class JpTranslateService {
       }
     }
 
-    if (hasKJ && hasHK) { return 1; }
-    else if (hasKJ) { return 0; }
-    else if (hasHK) { return 2; }
+    if (hasKJ && hasHK) {
+      return 1;
+    } else if (hasKJ) {
+      return 0;
+    } else if (hasHK) {
+      return 2;
+    }
+
     return 3;
   }
 

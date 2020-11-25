@@ -87,7 +87,7 @@ export class Equipment {
 
         skillService.formatRange(this, skill);
 
-        if (skill.type == 'skill') {
+        if (skill.type === 'skill') {
           this.activeSkill = skill;
         } else {
           this.passiveSkills.push(skill);
@@ -119,12 +119,12 @@ export class Equipment {
     this.statsTypes.forEach(statType => {
       let maxDifferentZero = false;
       Object.keys(this.grows).forEach(growId => {
-        if (this.grows[growId].stats[statType][this.grows[growId].stats[statType].length - 1] != 0) {
+        if (this.grows[growId].stats[statType][this.grows[growId].stats[statType].length - 1] !== 0) {
           maxDifferentZero = true;
         }
       });
 
-      if (maxDifferentZero || this.stats[statType].min != 0) {
+      if (maxDifferentZero || this.stats[statType].min !== 0) {
         usableStatsTypes.push(statType);
       }
     });
@@ -140,7 +140,7 @@ export class Equipment {
   changeUpgrade(skillService) {
     this.skill = this.skills[this.upgrade];
 
-    if (this.skill && this.skill[0] && this.skill[0].type == 'skill') {
+    if (this.skill && this.skill[0] && this.skill[0].type === 'skill') {
       this.skill[0].tableLevel = [];
       for (let i = 1; i <= this.skill[0].maxLevel; i++) {
         this.skill[0].tableLevel.push(i);
@@ -170,7 +170,7 @@ export class Equipment {
   }
 
   changeLevel(skillService) {
-    if (this.growIds.length == 1 && this.grows[this.growIds[0]].dataId == 'ARTIFACT_50') {
+    if (this.growIds.length === 1 && this.grows[this.growIds[0]].dataId === 'ARTIFACT_50') {
       Object.keys(this.stats).forEach(statType => {
         const minValue = this.stats[statType].min;
         const maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1];
@@ -191,7 +191,7 @@ export class Equipment {
       }
 
       if (skill.level >= (skill.upgrade[0] * 10 - 10)
-        && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level == this.maxLevel && skill.upgrade[skill.upgrade.length - 1] == 5))) {
+        && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level === this.maxLevel && skill.upgrade[skill.upgrade.length - 1] === 5))) {
         skill.effects.forEach(effect => {
           effect.formatHtml = skillService.formatEffect(this, skill, effect);
         });
@@ -206,7 +206,7 @@ export class Equipment {
 
         skillService.formatRange(this, skill);
 
-        if (skill.type == 'skill') {
+        if (skill.type === 'skill') {
           this.activeSkill = skill;
         } else {
           this.passiveSkills.push(skill);

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -17,7 +17,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.esper.component.html',
   styleUrls: ['./builder.esper.component.css']
 })
-export class BuilderEsperComponent implements OnInit {
+export class BuilderEsperComponent implements OnInit, AfterViewInit {
   espers;
   filteredEspers;
   esper;
@@ -243,11 +243,11 @@ export class BuilderEsperComponent implements OnInit {
     modalRef.componentInstance.savedItems = this.savedEspers[esperId];
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.selectEsper(result.item.dataId, result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedEspers[esperId] = [];
       }
     }, (reason) => {

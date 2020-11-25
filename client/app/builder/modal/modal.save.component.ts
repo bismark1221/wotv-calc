@@ -112,7 +112,7 @@ export class ModalSaveComponent implements OnInit {
   }
 
   closeSave() {
-    if (this.saveStep == 'confirm') {
+    if (this.saveStep === 'confirm') {
       this.saveStep = 'save';
     } else {
       this.modal.dismiss();

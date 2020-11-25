@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
@@ -17,7 +17,7 @@ import { LoginComponent } from '../auth/login.component';
   styleUrls: ['./nav.component.css']
 })
 
-export class NavComponent {
+export class NavComponent implements OnInit, AfterViewInit {
   displayLink = false;
   menuDisabled: boolean;
   inBuilder = false;
@@ -63,7 +63,7 @@ export class NavComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         const url = event.url.split('/');
-        if (url.length >= 2 && url[1] == 'JP') {
+        if (url.length >= 2 && url[1] === 'JP') {
           this.navService.setVersion('JP');
           this.version = 'JP';
         } else {
@@ -85,23 +85,23 @@ export class NavComponent {
 
         const url = event.url.split('/');
 
-        if ((url.length >= 2 && url[1] == 'builder')
-          || (url.length >= 3 && url[2] == 'builder')) {
+        if ((url.length >= 2 && url[1] === 'builder')
+          || (url.length >= 3 && url[2] === 'builder')) {
           this.inBuilder = true;
-        } else if ((url.length >= 2 && url[1] == 'other')
-          || (url.length >= 3 && url[2] == 'other')) {
+        } else if ((url.length >= 2 && url[1] === 'other')
+          || (url.length >= 3 && url[2] === 'other')) {
           this.inOther = true;
-        } else if (url.length >= 2 && (url[1] == 'unit' || url[1] == 'units' || (url[1] == 'JP' && (url[2] == 'unit' || url[2] == 'units')))) {
+        } else if (url.length >= 2 && (url[1] === 'unit' || url[1] === 'units' || (url[1] === 'JP' && (url[2] === 'unit' || url[2] === 'units')))) {
           this.inUnit = true;
-        } else if (url.length >= 2 && (url[1] == 'card' || url[1] == 'cards' || (url[1] == 'JP' && (url[2] == 'card' || url[2] == 'cards')))) {
+        } else if (url.length >= 2 && (url[1] === 'card' || url[1] === 'cards' || (url[1] === 'JP' && (url[2] === 'card' || url[2] === 'cards')))) {
           this.inCard = true;
-        } else if (url.length >= 2 && (url[1] == 'esper' || url[1] == 'espers' || (url[1] == 'JP' && (url[2] == 'esper' || url[2] == 'espers')))) {
+        } else if (url.length >= 2 && (url[1] === 'esper' || url[1] === 'espers' || (url[1] === 'JP' && (url[2] === 'esper' || url[2] === 'espers')))) {
           this.inEsper = true;
-        } else if (url.length >= 2 && (url[1] == 'equipment' || url[1] == 'equipments' || (url[1] == 'JP' && (url[2] == 'equipment' || url[2] == 'equipments')))) {
+        } else if (url.length >= 2 && (url[1] === 'equipment' || url[1] === 'equipments' || (url[1] === 'JP' && (url[2] === 'equipment' || url[2] === 'equipments')))) {
           this.inEquipment = true;
-        } else if (url.length >= 2 && (url[1] == 'raid' || url[1] == 'raids' || (url[1] == 'JP' && (url[2] == 'raid' || url[2] == 'raids')))) {
+        } else if (url.length >= 2 && (url[1] === 'raid' || url[1] === 'raids' || (url[1] === 'JP' && (url[2] === 'raid' || url[2] === 'raids')))) {
           this.inRaid = true;
-        } else if (url.length >= 2 && (url[1] == 'index' || (url[1] == 'JP' && url[2] == 'index'))) {
+        } else if (url.length >= 2 && (url[1] === 'index' || (url[1] === 'JP' && url[2] === 'index'))) {
           this.inIndex = true;
         }
       }
@@ -130,12 +130,12 @@ export class NavComponent {
   }
 
   changeVersion(version) {
-    if (version == 'GL' && this.actualRoute.length >= 2 && this.actualRoute[1] === 'JP') {
+    if (version === 'GL' && this.actualRoute.length >= 2 && this.actualRoute[1] === 'JP') {
       this.actualRoute.splice(1, 1);
 
       const route = this.actualRoute.join('/').split('#');
-      this.router.navigate([this.actualRoute.join('/') == '' ? '/' : route[0]], { preserveFragment: true });
-    } else if (version == 'JP' && this.actualRoute.length >= 2 && this.actualRoute[1] !== 'JP') {
+      this.router.navigate([this.actualRoute.join('/') === '' ? '/' : route[0]], { preserveFragment: true });
+    } else if (version === 'JP' && this.actualRoute.length >= 2 && this.actualRoute[1] !== 'JP') {
       this.actualRoute.splice(1, 0, 'JP');
 
       const route = this.actualRoute.join('/').split('#');

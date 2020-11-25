@@ -36,7 +36,7 @@ export class OtherTitlesComponent implements OnInit {
     types.forEach(type => {
       this.titles[type].forEach(title => {
         title.name = this.nameService.getName(title);
-        title.translatedHowToGet = title.howToGet.fr && this.translateService.currentLang == 'fr' ? title.howToGet.fr : title.howToGet.en;
+        title.translatedHowToGet = title.howToGet.fr && this.translateService.currentLang === 'fr' ? title.howToGet.fr : title.howToGet.en;
       });
     });
   }

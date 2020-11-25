@@ -15,9 +15,9 @@
           Unit
           <span class="spanArrow">
             <i class="fas" [ngClass]="{
-              'arrowActivated': sort == 'name',
-              'fa-arrow-up': sort != 'name' || (sort == 'name' && order == 'asc'),
-              'fa-arrow-down': sort == 'name' && order == 'desc'
+              'arrowActivated': sort === 'name',
+              'fa-arrow-up': sort !== 'name' || (sort === 'name' && order === 'asc'),
+              'fa-arrow-down': sort === 'name' && order === 'desc'
             }"></i>
           </span>
         </div>
@@ -27,9 +27,9 @@
           {{ type }}
           <span class="spanArrow">
             <i class="fas" [ngClass]="{
-              'arrowActivated': sort == type,
-              'fa-arrow-up': sort == type && order == 'asc',
-              'fa-arrow-down': sort != type || (sort == type && order == 'desc')
+              'arrowActivated': sort === type,
+              'fa-arrow-up': sort === type && order === 'asc',
+              'fa-arrow-down': sort !== type || (sort === type && order === 'desc')
             }"></i>
           </span>
         </div>

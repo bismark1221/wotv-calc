@@ -20,7 +20,7 @@ export class ItemService {
 
   private getRaw() {
     this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
-    if (this.savedVersion == 'GL') {
+    if (this.savedVersion === 'GL') {
       return GL_ITEMS;
     } else {
       return JP_ITEMS;
@@ -28,7 +28,7 @@ export class ItemService {
   }
 
   getItems() {
-    if (!this.items || this.items.length == 0) {
+    if (!this.items || this.items.length === 0) {
       const items: Item[] = [];
       const rawItems = JSON.parse(JSON.stringify(this.getRaw()));
 
@@ -45,7 +45,7 @@ export class ItemService {
   getItem(id: string): Item {
     this.getItems();
 
-    const item = this.items.find(item => item.dataId === id);
+    const item = this.items.find(itemData => itemData.dataId === id);
 
     if (item) {
       item.getName(this.translateService);

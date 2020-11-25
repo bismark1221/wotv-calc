@@ -27,7 +27,7 @@
         <div class="loadDiv" *ngIf="savedCards[filteredCard.dataId] && savedCards[filteredCard.dataId].length > 0">
           <a id="load_{{filteredCard.slug}}" (click)="openLoadModal(filteredCard.dataId)"><i class="fas fa-download"></i></a>
         </div>
-        <hr *ngIf="j != filteredCards[rarity].length - 1"/>
+        <hr *ngIf="j !== filteredCards[rarity].length - 1"/>
       </div>
     </div>
   </div>

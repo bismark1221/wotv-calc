@@ -55,7 +55,7 @@
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedJob">
         <div>
           Only main job ?
-          <ui-switch class="switchMainJob" (click)="toggleMainJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.mainJob == true"></ui-switch>
+          <ui-switch class="switchMainJob" (click)="toggleMainJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.mainJob === true"></ui-switch>
         </div>
         <div *ngFor="let job of jobs"><input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)"/><label for="job{{job.dataId}}">{{ job.name }}</label></div>
       </div>
@@ -81,18 +81,18 @@
             <div ngbDropdown class="d-inline-block">
               <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ sort | titlecase }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'rarity' == sort}" ngbDropdownItem (focus)="changeSort('rarity')">Rarity</button>
-                <button class="selectElement" [ngClass]="{'disable': 'name' == sort}" ngbDropdownItem (focus)="changeSort('name')">Name</button>
+                <button class="selectElement" [ngClass]="{'disable': 'rarity' === sort}" ngbDropdownItem (focus)="changeSort('rarity')">Rarity</button>
+                <button class="selectElement" [ngClass]="{'disable': 'name' === sort}" ngbDropdownItem (focus)="changeSort('name')">Name</button>
               </div>
             </div>
           </div>
           <div class="orderBy">
             <span>Order by :</span>
             <div ngbDropdown class="d-inline-block">
-              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order == 'asc' ? 'Ascending' : 'Descending' }}</button>
+              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order === 'asc' ? 'Ascending' : 'Descending' }}</button>
               <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'asc' == order}" ngbDropdownItem (focus)="changeOrder('asc')">Ascending</button>
-                <button class="selectElement" [ngClass]="{'disable': 'desc' == order}" ngbDropdownItem (focus)="changeOrder('desc')">Descending</button>
+                <button class="selectElement" [ngClass]="{'disable': 'asc' === order}" ngbDropdownItem (focus)="changeOrder('asc')">Ascending</button>
+                <button class="selectElement" [ngClass]="{'disable': 'desc' === order}" ngbDropdownItem (focus)="changeOrder('desc')">Descending</button>
               </div>
             </div>
           </div>

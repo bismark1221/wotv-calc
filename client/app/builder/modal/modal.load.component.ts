@@ -30,7 +30,7 @@ export class ModalLoadComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.type == 'team') {
+    if (this.type === 'team') {
       const formattedItems = [];
       Object.keys(this.savedItems).forEach(itemName => {
         formattedItems.push(this.savedItems[itemName]);
@@ -89,7 +89,7 @@ export class ModalLoadComponent implements OnInit {
         break;
     }
 
-    if (this.savedItems.length == 0) {
+    if (this.savedItems.length === 0) {
       this.modal.close({type: 'fullDelete'});
     }
   }

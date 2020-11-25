@@ -52,10 +52,10 @@ export class ComparisonComponent implements OnInit {
   }
 
   changeSort(sort) {
-    if (sort == this.sort) {
-      this.order = this.order == 'asc' ? 'desc' : 'asc';
+    if (sort === this.sort) {
+      this.order = this.order === 'asc' ? 'desc' : 'asc';
     } else {
-      if (sort == 'name') {
+      if (sort === 'name') {
         this.order = 'asc';
       } else {
         this.order = 'desc';
@@ -67,26 +67,26 @@ export class ComparisonComponent implements OnInit {
   }
 
   sortTable() {
-    this.toolService.sortByName(this.units, this.sort == 'name' ? this.order : 'asc');
+    this.toolService.sortByName(this.units, this.sort === 'name' ? this.order : 'asc');
 
-    if (this.sort != 'name') {
+    if (this.sort !== 'name') {
       this.units.sort((a, b) => {
         if (!a.stats[this.sort] && !b.stats[this.sort]) {
           return 0;
         }
 
         if (!a.stats[this.sort]) {
-          return this.order == 'asc' ? -1 : 1;
+          return this.order === 'asc' ? -1 : 1;
         }
 
         if (!b.stats[this.sort]) {
-          return this.order == 'asc' ? 1 : -1;
+          return this.order === 'asc' ? 1 : -1;
         }
 
         if (a.stats[this.sort].total > b.stats[this.sort].total) {
-          return this.order == 'asc' ? 1 : -1;
+          return this.order === 'asc' ? 1 : -1;
         } else if (a.stats[this.sort].total < b.stats[this.sort].total) {
-          return this.order == 'asc' ? -1 : 1;
+          return this.order === 'asc' ? -1 : 1;
         }
 
         return 0;

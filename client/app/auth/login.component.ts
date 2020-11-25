@@ -24,9 +24,6 @@ export class LoginComponent {
 
   }
 
-  ngOnInit() {
-  }
-
   login(provider) {
     this.authService.login(provider).then(result => {
       if (result && result.syncPossible) {

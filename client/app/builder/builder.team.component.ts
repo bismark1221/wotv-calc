@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -33,7 +33,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.team.component.html',
   styleUrls: ['./builder.team.component.css']
 })
-export class BuilderTeamComponent implements OnInit {
+export class BuilderTeamComponent implements OnInit, AfterViewInit {
   availableUnits = [null, null, null, null, null];
   selectedUnits = [null, null, null, null, null];
   savedUnits: {};
@@ -187,15 +187,15 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.allowNew = true;
 
     modalRef.result.then(result => {
-      if (result.type == 'new') {
+      if (result.type === 'new') {
         this.selectUnit(pos, true);
       }
 
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.selectUnit(pos, true, result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedUnits[unitId] = [];
       }
     }, (reason) => {
@@ -212,7 +212,7 @@ export class BuilderTeamComponent implements OnInit {
   }
 
   changeLB(pos, value) {
-    if (value == this.team.units[pos].lb) {
+    if (value === this.team.units[pos].lb) {
       value = undefined;
     }
 
@@ -354,7 +354,7 @@ export class BuilderTeamComponent implements OnInit {
         this.teamService.changeLevel(pos);
 
         this.team.units.forEach((unit, unitIndex) => {
-          if (unit && unitIndex != pos) {
+          if (unit && unitIndex !== pos) {
             this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
             this.team.units[unitIndex].changeLevel();
           }
@@ -373,11 +373,11 @@ export class BuilderTeamComponent implements OnInit {
     modalRef.componentInstance.savedItems = this.savedTeams;
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.loadTeam(result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedTeams = [];
       }
     }, (reason) => {

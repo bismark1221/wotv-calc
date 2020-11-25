@@ -1197,7 +1197,7 @@ export class GridService {
           const skill = unit.board.nodes[node.toString()].skill;
           let text = '';
 
-          if (unit.board.nodes[node.toString()].type == 'buff') {
+          if (unit.board.nodes[node.toString()].type === 'buff') {
             text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
             text = this.nameService.getName(skill);
@@ -1224,7 +1224,7 @@ export class GridService {
           const skill = unit.board.nodes[node.toString()].skill;
           let text = '';
 
-          if (unit.board.nodes[node.toString()].type == 'buff') {
+          if (unit.board.nodes[node.toString()].type === 'buff') {
             text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
             text = this.nameService.getName(skill);

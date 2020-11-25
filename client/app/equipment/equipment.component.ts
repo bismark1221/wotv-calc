@@ -115,13 +115,13 @@ export class EquipmentComponent implements OnInit {
 
           this.skillService.formatRange(this.equipment, skill);
 
-          if (skill.type == 'skill') {
+          if (skill.type === 'skill') {
             this.equipment.activeSkill = skill;
           }
 
           if (skill.type !== 'skill') {
             if (skill.effects[0]) {
-              if (this.equipment.effectTypes.indexOf(skill.effects[0].type) == -1) {
+              if (this.equipment.effectTypes.indexOf(skill.effects[0].type) === -1) {
                 this.equipment.effectTypes.push(skill.effects[0].type);
               }
               skill.mainEffect = skill.effects[0].type;
@@ -164,7 +164,7 @@ export class EquipmentComponent implements OnInit {
         this.equipment.grows[growId].stats = {};
         this.equipment.statsTypes.forEach(statType => {
           const maxValue = this.equipment.stats[statType].max;
-          if (typeof(this.equipment.grows[growId].curve[statType]) == 'number') {
+          if (typeof(this.equipment.grows[growId].curve[statType]) === 'number') {
             const value = maxValue + ((maxValue * this.equipment.grows[growId].curve[statType]) / 100);
             if (value < 0 && value > -1) {
               this.equipment.grows[growId].stats[statType] = 0;
@@ -181,12 +181,12 @@ export class EquipmentComponent implements OnInit {
       this.equipment.statsTypes.forEach(statType => {
         let maxDifferentZero = false;
         this.equipment.growIds.forEach(growId => {
-          if (this.equipment.grows[growId].stats[statType] != 0) {
+          if (this.equipment.grows[growId].stats[statType] !== 0) {
             maxDifferentZero = true;
           }
         });
 
-        if (maxDifferentZero || this.equipment.stats[statType].min != 0) {
+        if (maxDifferentZero || this.equipment.stats[statType].min !== 0) {
           usableStatsTypes.push(statType);
         }
       });

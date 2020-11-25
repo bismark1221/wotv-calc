@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -17,7 +17,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.card.component.html',
   styleUrls: ['./builder.card.component.css']
 })
-export class BuilderCardComponent implements OnInit {
+export class BuilderCardComponent implements OnInit, AfterViewInit {
   cards;
   filteredCards;
   card;
@@ -163,7 +163,7 @@ export class BuilderCardComponent implements OnInit {
   }
 
   changeStar(value) {
-    if (value == this.card.star) {
+    if (value === this.card.star) {
       value = undefined;
     }
 
@@ -191,11 +191,11 @@ export class BuilderCardComponent implements OnInit {
     modalRef.componentInstance.savedItems = this.savedCards[cardId];
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
+      if (result.type === 'load' && result.item) {
         this.selectCard(result.item.dataId, result.item);
       }
 
-      if (result.type == 'fullDelete') {
+      if (result.type === 'fullDelete') {
         this.savedCards[cardId] = [];
       }
     }, (reason) => {

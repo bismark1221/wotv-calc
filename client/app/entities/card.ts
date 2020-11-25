@@ -134,7 +134,7 @@ export class Card {
     this.skills = [];
 
     this.unitBuffs.forEach(buff => {
-      if (buff.classic.type == 'support') {
+      if (buff.classic.type === 'support') {
         buff.classic.effects.forEach(effect => {
           buffs.self[effect.type] = {};
           buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
@@ -151,7 +151,7 @@ export class Card {
           });
         }
 
-        if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
+        if (buff.lvmax && this.level === this.getLevelPerStar(this.rarity, 4)) {
           buff.lvmax.effects.forEach(effect => {
             buffs.self[effect.type].value += effect.minValue;
           });
@@ -198,7 +198,7 @@ export class Card {
         });
       }
 
-      if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
+      if (buff.lvmax && this.level === this.getLevelPerStar(this.rarity, 4)) {
         buff.lvmax.effects.forEach(effect => {
           buffs.party[effect.type].value += effect.minValue;
         });
@@ -234,7 +234,7 @@ export class Card {
     const availableStats = [];
 
     Object.keys(this.stats).forEach(stat => {
-      if (typeof(this.stats[stat].min) == 'number') {
+      if (typeof(this.stats[stat].min) === 'number') {
         availableStats.push(stat);
       }
     });
