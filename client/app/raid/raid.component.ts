@@ -36,7 +36,7 @@ export class RaidComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.raid = this.raidService.getRaidBySlug(params.get('slug'))
+      this.raid = this.raidService.getRaidBySlug(params.get('slug'));
       if (!this.raid) {
         this.router.navigate([this.navService.getRoute('/raid-not-found')]);
       } else {
@@ -48,22 +48,22 @@ export class RaidComponent implements OnInit {
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
       switch (fragment) {
-        case "boss":
-          this.activeTab = 1
+        case 'boss':
+          this.activeTab = 1;
           break;
-        case "skills":
-          this.activeTab = 2
+        case 'skills':
+          this.activeTab = 2;
           break;
         default:
           break;
       }
-    })
+    });
   }
 
   private formatRaid() {
     if (this.raid) {
       this.raid.bosses.forEach(boss => {
-        boss.name = this.nameService.getName(boss)
+        boss.name = this.nameService.getName(boss);
 
         boss.totalBuffs = {
           HP: 0,
@@ -80,11 +80,11 @@ export class RaidComponent implements OnInit {
         };
         boss.remainingBuffs = [];
 
-        boss.skillIds = Object.keys(boss.skills)
+        boss.skillIds = Object.keys(boss.skills);
 
         boss.skillIds.forEach(skillId => {
-          let skill = boss.skills[skillId]
-          skill.name = this.nameService.getName(skill)
+          const skill = boss.skills[skillId];
+          skill.name = this.nameService.getName(skill);
 
           skill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(boss, skill, effect);
@@ -97,10 +97,10 @@ export class RaidComponent implements OnInit {
           }
 
           this.skillService.formatRange(boss, skill);
-        })
+        });
 
         if (boss.attack) {
-          boss.attack.basedHtml = boss.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + boss.attack.based.toLowerCase() + ".png' />" : "";
+          boss.attack.basedHtml = boss.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.attack.based.toLowerCase() + '.png\' />' : '';
 
           boss.attack.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(boss, boss.attack, effect);
@@ -110,11 +110,11 @@ export class RaidComponent implements OnInit {
 
           this.skillService.formatRange(boss, boss.attack);
         }
-      })
+      });
     }
   }
 
   clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark
+    this.specialBismark = !this.specialBismark;
   }
 }

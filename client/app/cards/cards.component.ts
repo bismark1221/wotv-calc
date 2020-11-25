@@ -12,15 +12,15 @@ import { NameService } from '../services/name.service';
 })
 export class CardsComponent implements OnInit {
   cards;
-  searchText = "";
-  sort = "rarity"
-  order = "asc"
+  searchText = '';
+  sort = 'rarity';
+  order = 'asc';
   filters = {
     rarity: [],
     element: []
-  }
+  };
   isCollapsedRarity = false;
-  version = 'GL'
+  version = 'GL';
 
   constructor(
     private cardService: CardService,
@@ -32,11 +32,11 @@ export class CardsComponent implements OnInit {
       this.translateCards();
     });
 
-    this.version = this.navService.getVersion()
+    this.version = this.navService.getVersion();
   }
 
   ngOnInit() {
-    this.navService.setTitle("Cards");
+    this.navService.setTitle('Cards');
 
     this.getCards();
   }
@@ -48,42 +48,42 @@ export class CardsComponent implements OnInit {
 
   private translateCards() {
     this.cards.forEach(card => {
-      card.name = this.nameService.getName(card)
+      card.name = this.nameService.getName(card);
     });
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   getFilteredCards() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.cards.filter(card => {
         return card.name.toLowerCase().includes(text) || card.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.cards
+      return this.cards;
     }
   }
 
   filterList(type, value) {
     if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getCards()
+    this.getCards();
   }
 
   changeSort(sort) {
-    this.sort = sort
-    this.getCards()
+    this.sort = sort;
+    this.getCards();
   }
 
   changeOrder(order) {
-    this.order = order
-    this.getCards()
+    this.order = order;
+    this.getCards();
   }
 }

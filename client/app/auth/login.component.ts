@@ -4,7 +4,7 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 
-import { AuthService } from '../services/auth.service'
+import { AuthService } from '../services/auth.service';
 import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -14,8 +14,8 @@ import { NgbActiveModal  } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class LoginComponent {
-  step = 'login'
-  availableSync = []
+  step = 'login';
+  availableSync = [];
 
   constructor(
     private authService: AuthService,
@@ -30,37 +30,37 @@ export class LoginComponent {
   login(provider) {
     this.authService.login(provider).then(result => {
       if (result && result.syncPossible) {
-        this.step = 'sync'
-        let availableSync = this.authService.getAvailableSync()
-        let somethingToSync = false
+        this.step = 'sync';
+        const availableSync = this.authService.getAvailableSync();
+        let somethingToSync = false;
 
         Object.keys(availableSync).forEach(type => {
           if (availableSync[type] && Object.keys(availableSync[type]).length > 0) {
             this.availableSync.push({
               type: type,
               count: Object.keys(availableSync[type]).length
-            })
-            somethingToSync = true
+            });
+            somethingToSync = true;
           }
-        })
+        });
 
         if (!somethingToSync) {
-          this.modal.close()
+          this.modal.close();
         }
       } else {
-        this.modal.close()
+        this.modal.close();
       }
-    })
+    });
   }
 
   validateSync() {
     this.authService.firstSync().then(result => {
-      this.modal.close()
-    })
+      this.modal.close();
+    });
   }
 
   dontSync() {
-    this.modal.close()
+    this.modal.close();
   }
 
   close() {

@@ -3,9 +3,9 @@ export class Raid {
   names = {
     en: 'New Raid'
   };
-  name = 'New Raid'
+  name = 'New Raid';
   bosses = [];
-  slug = 'new-raid'
+  slug = 'new-raid';
 
   constructFromJson(raid: Raid, translateService): void {
     this.dataId = raid.dataId;

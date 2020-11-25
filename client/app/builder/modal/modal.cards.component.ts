@@ -15,16 +15,16 @@ import { NameService } from '../../services/name.service';
 export class ModalCardsComponent implements OnInit {
   cards;
 
-  searchText = "";
+  searchText = '';
   filters = {
     rarity: []
-  }
-  savedCards = {}
-  loadCardId = null
+  };
+  savedCards = {};
+  loadCardId = null;
 
-  @Input() public modalStep = "select";
-  @Input() public card
-  @Input() public teamUnitPos
+  @Input() public modalStep = 'select';
+  @Input() public card;
+  @Input() public teamUnitPos;
 
   constructor(
     private cardService: CardService,
@@ -42,55 +42,55 @@ export class ModalCardsComponent implements OnInit {
     this.getCards();
 
     if (this.card) {
-      this.card = this.cardService.selectCardForBuilder(this.card.dataId, this.card)
+      this.card = this.cardService.selectCardForBuilder(this.card.dataId, this.card);
     }
   }
 
   getCards() {
     if (isNaN(this.teamUnitPos)) {
-      this.cards = this.cardService.getCardsForListing(this.filters)
+      this.cards = this.cardService.getCardsForListing(this.filters);
     } else {
-      this.cards = this.teamService.getAvailableCards(this.teamUnitPos, this.filters)
+      this.cards = this.teamService.getAvailableCards(this.teamUnitPos, this.filters);
     }
 
-    this.getFilteredCards()
-    this.translateCards()
+    this.getFilteredCards();
+    this.translateCards();
 
-    this.savedCards = this.cardService.getSavedCards()
+    this.savedCards = this.cardService.getSavedCards();
   }
 
   private translateCards() {
     this.cards.forEach(card => {
-      card.name = this.nameService.getName(card)
+      card.name = this.nameService.getName(card);
     });
   }
 
   getFilteredCards() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.cards.filter(card => {
         return card.name.toLowerCase().includes(text) || card.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.cards
+      return this.cards;
     }
   }
 
   filterList(type, value) {
     if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getCards()
+    this.getCards();
   }
 
   isFilterSelected(type, value) {
     if (this.filters[type].indexOf(value) == -1) {
-      return false
+      return false;
     } else {
-      return true
+      return true;
     }
   }
 
@@ -99,44 +99,44 @@ export class ModalCardsComponent implements OnInit {
   }
 
   back() {
-    this.modalStep = "select"
+    this.modalStep = 'select';
   }
 
   selectCard(cardId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedCards[cardId] && this.savedCards[cardId].length > 0) {
-      this.loadCardId = cardId
+      this.loadCardId = cardId;
 
-      this.modalStep = "load"
+      this.modalStep = 'load';
     } else {
-      this.card = this.cardService.selectCardForBuilder(cardId, customData)
+      this.card = this.cardService.selectCardForBuilder(cardId, customData);
 
-      this.modalStep = "custom"
+      this.modalStep = 'custom';
     }
   }
 
   save() {
-    this.modal.close(this.card)
+    this.modal.close(this.card);
   }
 
   changeStar(value) {
     if (value == this.card.star) {
-      value = undefined
+      value = undefined;
     }
 
-    this.card.star = value
-    this.cardService.changeStar(this.card)
+    this.card.star = value;
+    this.cardService.changeStar(this.card);
   }
 
   changeLevel () {
-    this.cardService.changeLevel(this.card)
+    this.cardService.changeLevel(this.card);
   }
 
   selectLevel(level) {
-    this.card.level = level
-    this.cardService.changeLevel(this.card)
+    this.card.level = level;
+    this.cardService.changeLevel(this.card);
   }
 
   maxCard() {
-    this.cardService.maxCard(this.card)
+    this.cardService.maxCard(this.card);
   }
 }

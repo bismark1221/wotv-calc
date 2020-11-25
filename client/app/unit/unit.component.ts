@@ -22,7 +22,7 @@ export class UnitComponent implements OnInit {
   grid = null;
   specialBismark = false;
   activeTab;
-  possibleSkillTypes = ['support', 'counter']
+  possibleSkillTypes = ['support', 'counter'];
 
   constructor(
     private unitService: UnitService,
@@ -43,48 +43,48 @@ export class UnitComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.unit = this.unitService.getUnitBySlug(params.get('slug'))
+      this.unit = this.unitService.getUnitBySlug(params.get('slug'));
 
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       } else {
         if (this.unit.exJobs && this.unit.exJobs.length > 0) {
-          this.possibleSkillTypes = ['support', 'counter', 'ex_buff']
+          this.possibleSkillTypes = ['support', 'counter', 'ex_buff'];
         }
 
         this.formatUnit();
         this.navService.setTitle(this.unit.name);
       }
-    })
+    });
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
       switch (fragment) {
-        case "character":
-          this.activeTab = 1
+        case 'character':
+          this.activeTab = 1;
           break;
-        case "stats":
-          this.activeTab = 2
+        case 'stats':
+          this.activeTab = 2;
           break;
-        case "skills":
-          this.activeTab = 3
+        case 'skills':
+          this.activeTab = 3;
           break;
-        case "tree":
-          this.activeTab = 4
+        case 'tree':
+          this.activeTab = 4;
           break;
         default:
           break;
       }
-    })
+    });
   }
 
   private formatUnit() {
     if (this.unit) {
-      let lang = this.translateService.currentLang
-      this.jobs = []
-      this.unit.name = this.nameService.getName(this.unit)
-      this.unit.limited = this.unitService.isLimited(this.unit.dataId)
+      const lang = this.translateService.currentLang;
+      this.jobs = [];
+      this.unit.name = this.nameService.getName(this.unit);
+      this.unit.limited = this.unitService.isLimited(this.unit.dataId);
 
-      this.unit.skills = []
+      this.unit.skills = [];
 
       this.unit.totalBuffs = {
         HP: 0,
@@ -116,13 +116,13 @@ export class UnitComponent implements OnInit {
       this.unit.remainingBuffs = [];
       this.unit.remainingExBuffs = [];
 
-      let maxExLevel = 0
-      let exempleSkillMaxExLevel = null
+      let maxExLevel = 0;
+      let exempleSkillMaxExLevel = null;
 
       Object.keys(this.unit.board.nodes).forEach(nodeId => {
-        let skill = this.unit.board.nodes[nodeId].skill
-        if (skill.type !== "buff" && !(this.unit.board.nodes[nodeId].type == "buff" && skill.type == "ex_buff")) {
-          skill.name = this.nameService.getName(skill)
+        let skill = this.unit.board.nodes[nodeId].skill;
+        if (skill.type !== 'buff' && !(this.unit.board.nodes[nodeId].type == 'buff' && skill.type == 'ex_buff')) {
+          skill.name = this.nameService.getName(skill);
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
           skill.effects.forEach(effect => {
@@ -137,63 +137,63 @@ export class UnitComponent implements OnInit {
 
           this.skillService.formatRange(this.unit, skill);
 
-          skill.upgrades = []
-          skill = this.addUpgrade(skill)
+          skill.upgrades = [];
+          skill = this.addUpgrade(skill);
 
-          this.unit.skills.push(skill)
-        } else if (this.unit.board.nodes[nodeId].type != "skill") {
-          let effect = skill.effects[0]
+          this.unit.skills.push(skill);
+        } else if (this.unit.board.nodes[nodeId].type != 'skill') {
+          const effect = skill.effects[0];
 
-          if (typeof(this.unit.totalBuffs[effect.type]) === "number" && effect.calcType === "fixe") {
+          if (typeof(this.unit.totalBuffs[effect.type]) === 'number' && effect.calcType === 'fixe') {
             if (skill.jobLevel <= 15) {
-              this.unit.totalBuffs[effect.type] += effect.minValue
+              this.unit.totalBuffs[effect.type] += effect.minValue;
             } else {
-              this.unit.exBuffs[effect.type] += effect.maxValue
+              this.unit.exBuffs[effect.type] += effect.maxValue;
             }
           } else {
             if (skill.jobLevel <= 15) {
-              this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+              this.unit.remainingBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
             } else {
-              if (effect && effect.type == "INCREASE_UNIT_LEVEL") {
-                maxExLevel += effect.value
-                exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill))
+              if (effect && effect.type == 'INCREASE_UNIT_LEVEL') {
+                maxExLevel += effect.value;
+                exempleSkillMaxExLevel = JSON.parse(JSON.stringify(skill));
               } else {
                 if (skill.maxLevel > 1) {
-                  skill.level = skill.maxLevel
+                  skill.level = skill.maxLevel;
                 }
-                this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect))
+                this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, skill, effect));
               }
             }
           }
         }
-      })
+      });
 
       if (maxExLevel > 0) {
-        exempleSkillMaxExLevel.effects[0].value = maxExLevel
-        this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, exempleSkillMaxExLevel, exempleSkillMaxExLevel.effects[0]))
+        exempleSkillMaxExLevel.effects[0].value = maxExLevel;
+        this.unit.remainingExBuffs.push(this.skillService.formatEffect(this.unit, exempleSkillMaxExLevel, exempleSkillMaxExLevel.effects[0]));
       }
 
       this.skillService.sort(this.unit.skills);
 
       if (this.unit.masterSkill.length > 0) {
         this.unit.masterSkill.forEach(masterSkill => {
-          masterSkill.name = this.nameService.getName(masterSkill)
+          masterSkill.name = this.nameService.getName(masterSkill);
           masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);
 
           masterSkill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
           });
 
-          masterSkill.upgrades = []
-          masterSkill = this.addUpgrade(masterSkill)
-        })
+          masterSkill.upgrades = [];
+          masterSkill = this.addUpgrade(masterSkill);
+        });
       }
 
       if (this.unit.limit) {
-        this.unit.limit.name = this.nameService.getName(this.unit.limit)
+        this.unit.limit.name = this.nameService.getName(this.unit.limit);
         this.unit.limit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.limit);
 
-        this.unit.limit.basedHtml = this.unit.limit.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.limit.based.toLowerCase() + ".png' />" : "";
+        this.unit.limit.basedHtml = this.unit.limit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.limit.based.toLowerCase() + '.png\' />' : '';
 
         this.unit.limit.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.limit, effect);
@@ -203,12 +203,12 @@ export class UnitComponent implements OnInit {
 
         this.skillService.formatRange(this.unit, this.unit.limit);
 
-        this.unit.limit.upgrades = []
-        this.unit.limit = this.addUpgrade(this.unit.limit)
+        this.unit.limit.upgrades = [];
+        this.unit.limit = this.addUpgrade(this.unit.limit);
       }
 
       if (this.unit.attack) {
-        this.unit.attack.basedHtml = this.unit.attack.based ? "<img class='atkBasedImg' src='assets/atkBased/" + this.unit.attack.based.toLowerCase() + ".png' />" : "";
+        this.unit.attack.basedHtml = this.unit.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.attack.based.toLowerCase() + '.png\' />' : '';
 
         this.unit.attack.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.attack, effect);
@@ -220,11 +220,11 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.tmr) {
-        this.unit.tmr.name = this.nameService.getName(this.unit.tmr)
-        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats)
+        this.unit.tmr.name = this.nameService.getName(this.unit.tmr);
+        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats);
 
         this.unit.tmr.skills.forEach(skill => {
-          skill.name = this.nameService.getName(skill)
+          skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.skillService.formatRange(this.unit, skill);
           skill.effects.forEach(effect => {
@@ -239,48 +239,48 @@ export class UnitComponent implements OnInit {
       this.unit.EXJobsStats = [];
       this.unit.totalEXJobsStats = {};
 
-      let i = 0
+      let i = 0;
       this.unit.jobs.forEach(jobId => {
-        let job = this.jobService.getJob(jobId)
-        this.calcJobStat(job, (i > 0 ? true : false))
-        job.name = this.nameService.getName(job)
-        this.jobs.push(job)
-        i++
-      })
+        const job = this.jobService.getJob(jobId);
+        this.calcJobStat(job, (i > 0 ? true : false));
+        job.name = this.nameService.getName(job);
+        this.jobs.push(job);
+        i++;
+      });
 
       if (this.unit.exJobs) {
         this.unit.exJobs.forEach(jobId => {
-          let job = this.jobService.getJob(jobId)
-          this.calcEXJobStat(job, false)
-          job.name = this.nameService.getName(job)
-          this.exJobs.push(job)
-          i++
-        })
+          const job = this.jobService.getJob(jobId);
+          this.calcEXJobStat(job, false);
+          job.name = this.nameService.getName(job);
+          this.exJobs.push(job);
+          i++;
+        });
       }
 
       Object.keys(this.unit.totalJobsStats).forEach(stat => {
-        this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat])
+        this.unit.totalJobsStats[stat] = Math.floor(this.unit.totalJobsStats[stat]);
         if (this.unit.totalJobsStats[stat] != (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])) {
-          this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat])
+          this.unit.jobsStats[0][stat] += this.unit.totalJobsStats[stat] - (this.unit.jobsStats[0][stat] + this.unit.jobsStats[1][stat] + this.unit.jobsStats[2][stat]);
         }
-      })
+      });
 
       Object.keys(this.unit.totalEXJobsStats).forEach(stat => {
-        this.unit.totalEXJobsStats[stat] = Math.floor(this.unit.totalEXJobsStats[stat])
-      })
+        this.unit.totalEXJobsStats[stat] = Math.floor(this.unit.totalEXJobsStats[stat]);
+      });
 
-      this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0)
+      this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0);
     }
   }
 
   private addUpgrade(skill) {
     if (this.unit.replacedSkills) {
       Object.keys(this.unit.replacedSkills).forEach(upgradeSkillId => {
-        let activatedBy = this.findActivatedByName(upgradeSkillId)
+        const activatedBy = this.findActivatedByName(upgradeSkillId);
         this.unit.replacedSkills[upgradeSkillId].forEach(upgrade => {
           if (upgrade.oldSkill == skill.dataId) {
-            let newSkill = upgrade.newSkill
-            newSkill.name = this.nameService.getName(newSkill)
+            let newSkill = upgrade.newSkill;
+            newSkill.name = this.nameService.getName(newSkill);
 
             newSkill.effects.forEach(effect => {
               effect.formatHtml = this.skillService.formatEffect(this.unit, newSkill, effect);
@@ -293,122 +293,122 @@ export class UnitComponent implements OnInit {
             }
 
             this.skillService.formatRange(this.unit, newSkill);
-            newSkill = this.addUpgrade(newSkill)
+            newSkill = this.addUpgrade(newSkill);
 
 
-            newSkill.activatedBy = activatedBy
+            newSkill.activatedBy = activatedBy;
 
-            skill.upgrades.push(newSkill)
+            skill.upgrades.push(newSkill);
           }
-        })
-      })
+        });
+      });
     }
 
-    return skill
+    return skill;
   }
 
   private findActivatedByName(upgradeSkillId) {
-    let name = ""
+    let name = '';
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
       if (this.unit.board.nodes[nodeId].skill.dataId == upgradeSkillId) {
-        name = this.nameService.getName(this.unit.board.nodes[nodeId].skill)
+        name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
       }
-    })
+    });
 
-    if (name == "" && this.unit.masterSkill.length > 0) {
+    if (name == '' && this.unit.masterSkill.length > 0) {
       this.unit.masterSkill.forEach(masterSkill => {
         if (masterSkill.dataId == upgradeSkillId) {
-          name = this.nameService.getName(masterSkill)
+          name = this.nameService.getName(masterSkill);
         }
-      })
+      });
     }
 
-    if (name == "" && this.unit.limit) {
+    if (name == '' && this.unit.limit) {
       if (this.unit.limit.dataId == upgradeSkillId) {
-        name = this.nameService.getName(this.unit.limit)
+        name = this.nameService.getName(this.unit.limit);
       }
     }
 
-    return name
+    return name;
   }
 
   private calcJobStat(job, subJob) {
-    let stats = {};
+    const stats = {};
 
     Object.keys(job.statsModifiers[14]).forEach(stat => {
-      stats[stat] = Math.floor(this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1))
+      stats[stat] = Math.floor(this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1));
 
       if (!subJob) {
-        this.unit.totalJobsStats[stat] = this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1)
+        this.unit.totalJobsStats[stat] = this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1);
       } else {
-        this.unit.totalJobsStats[stat] += this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1)
+        this.unit.totalJobsStats[stat] += this.unit.stats[stat].max * (job.statsModifiers[14][stat] / 10000) * (subJob ? 0.5 : 1);
       }
     });
 
-    this.unit.jobsStats.push(stats)
+    this.unit.jobsStats.push(stats);
   }
 
   private calcEXJobStat(job, subJob) {
-    let stats = {};
+    const stats = {};
 
     Object.keys(job.statsModifiers[9]).forEach(stat => {
-      stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1))
+      stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1));
 
       if (!subJob) {
-        this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
+        this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1);
       } else {
-        this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
+        this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1);
       }
     });
 
-    this.unit.EXJobsStats.push(stats)
+    this.unit.EXJobsStats.push(stats);
   }
 
   isWeapon(type) {
-    return this.equipmentService.isWeapon(type)
+    return this.equipmentService.isWeapon(type);
   }
 
   getSkillsPerJob(job) {
-    let skills = [];
+    const skills = [];
     if (job === 0) {
       this.unit.skills.forEach(skill => {
-        if (skill.mainSkill && skill.type == "skill") {
-          skills.push(skill)
+        if (skill.mainSkill && skill.type == 'skill') {
+          skills.push(skill);
         }
-      })
+      });
     } else {
       this.unit.skills.forEach(skill => {
-        if (skill.unlockJob === job && !skill.mainSkill && skill.type == "skill") {
-          skills.push(skill)
+        if (skill.unlockJob === job && !skill.mainSkill && skill.type == 'skill') {
+          skills.push(skill);
         }
-      })
+      });
     }
 
     return skills;
   }
 
   getSkillsPerType(type) {
-    let skills = [];
+    const skills = [];
     this.unit.skills.forEach(skill => {
       if (skill.type == type) {
-        skills.push(skill)
+        skills.push(skill);
       }
-    })
+    });
 
     return skills;
   }
 
   getEquipementType(type) {
-    return this.equipmentService.getFormatType(type)
+    return this.equipmentService.getFormatType(type);
   }
 
   clickNode(this, node) {
     if (node !== 0) {
       if (!this.unit.board.nodes[node].activated) {
-        this.showNode(node)
+        this.showNode(node);
       } else {
-        this.hideNode(node)
+        this.hideNode(node);
       }
     }
   }
@@ -416,7 +416,7 @@ export class UnitComponent implements OnInit {
   showNode(node) {
     if (node !== 0) {
       this.unit.board.nodes[node].activated = true;
-      this.showNode(this.unit.board.nodes[node].parent)
+      this.showNode(this.unit.board.nodes[node].parent);
     }
   }
 
@@ -424,16 +424,16 @@ export class UnitComponent implements OnInit {
     if (node !== 0) {
       this.unit.board.nodes[node].activated = false;
       this.unit.board.nodes[node].children.forEach(childNode => {
-        this.hideNode(childNode)
-      })
+        this.hideNode(childNode);
+      });
     }
   }
 
   clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark
+    this.specialBismark = !this.specialBismark;
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 }

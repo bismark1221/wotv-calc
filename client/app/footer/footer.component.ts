@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.theme = this.themeService.active
+    this.theme = this.themeService.active;
   }
 
   ngAfterViewInit() {
@@ -28,6 +28,6 @@ export class FooterComponent implements OnInit {
 
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 }

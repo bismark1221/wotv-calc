@@ -4,14 +4,14 @@ import { TranslateService } from '@ngx-translate/core';
 import { Item } from '../entities/item';
 import GL_ITEMS from '../data/gl/items.json';
 import JP_ITEMS from '../data/jp/items.json';
-import { NavService } from './nav.service'
+import { NavService } from './nav.service';
 
 @Injectable()
 export class ItemService {
   private items: Item[];
 
-  savedVersion
-  item
+  savedVersion;
+  item;
 
   constructor(
     private translateService: TranslateService,
@@ -19,21 +19,21 @@ export class ItemService {
   ) {}
 
   private getRaw() {
-    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()))
-    if (this.savedVersion == "GL") {
-      return GL_ITEMS
+    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
+    if (this.savedVersion == 'GL') {
+      return GL_ITEMS;
     } else {
-      return JP_ITEMS
+      return JP_ITEMS;
     }
   }
 
   getItems() {
     if (!this.items || this.items.length == 0) {
-      let items: Item[] = [];
-      let rawItems = JSON.parse(JSON.stringify(this.getRaw()))
+      const items: Item[] = [];
+      const rawItems = JSON.parse(JSON.stringify(this.getRaw()));
 
       Object.keys(rawItems).forEach(itemId => {
-        let item = new Item();
+        const item = new Item();
         item.constructFromJson(rawItems[itemId]);
         items.push(item);
       });
@@ -45,10 +45,10 @@ export class ItemService {
   getItem(id: string): Item {
     this.getItems();
 
-    let item = this.items.find(item => item.dataId === id)
+    const item = this.items.find(item => item.dataId === id);
 
     if (item) {
-      item.getName(this.translateService)
+      item.getName(this.translateService);
     }
 
     return item;

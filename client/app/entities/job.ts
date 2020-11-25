@@ -5,7 +5,7 @@ export class Job {
   names: any = {
     en: 'New Job'
   };
-  name = "New Job";
+  name = 'New Job';
 
   statsModifiers = [];
   image;
@@ -17,9 +17,9 @@ export class Job {
     this.dataId = job.dataId;
     this.names = job.names;
     this.statsModifiers = job.statsModifiers;
-    this.image = job.image
-    this.subRate = job.subRate
-    this.equipments = job.equipments
+    this.image = job.image;
+    this.subRate = job.subRate;
+    this.equipments = job.equipments;
   }
 
   getName(translateService: TranslateService): string {

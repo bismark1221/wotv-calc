@@ -8,16 +8,16 @@ export class Equipment {
   stats;
 
   dataId?;
-  rarity = "N";
+  rarity = 'N';
   names: any = {
     en: 'New Equipment'
   };
-  name = "New Equipment";
+  name = 'New Equipment';
 
   skills;
   buffs;
 
-  image = "ITEMcrst";
+  image = 'ITEMcrst';
   type;
   countSkills;
   slug;
@@ -28,16 +28,16 @@ export class Equipment {
   materials;
 
   // for builder
-  passiveSkills
-  skill
-  level
-  maxLevel
-  growIds
-  tableStats
-  grow
-  upgrade
-  tableLevel
-  activeSkill
+  passiveSkills;
+  skill;
+  level;
+  maxLevel;
+  growIds;
+  tableStats;
+  grow;
+  upgrade;
+  tableLevel;
+  activeSkill;
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
     this.dataId = equipment.dataId;
@@ -50,7 +50,7 @@ export class Equipment {
     this.type = equipment.type;
     this.slug = equipment.slug;
     this.acquisition = equipment.acquisition;
-    this.grows = equipment.grows
+    this.grows = equipment.grows;
     this.equippableJobs = equipment.equippableJobs;
     this.equippableUnits = equipment.equippableUnits;
     this.materials = equipment.materials;
@@ -67,12 +67,12 @@ export class Equipment {
   }
 
   updateMaxStat(nameService, skillService) {
-    this.statsTypes = Object.keys(this.stats)
+    this.statsTypes = Object.keys(this.stats);
 
     this.passiveSkills = [];
     this.skills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
-        skill.name = nameService.getName(skill)
+        skill.name = nameService.getName(skill);
         skill.effects.forEach(effect => {
           effect.formatHtml = skillService.formatEffect(this, skill, effect);
         });
@@ -87,107 +87,107 @@ export class Equipment {
 
         skillService.formatRange(this, skill);
 
-        if (skill.type == "skill") {
-          this.activeSkill = skill
+        if (skill.type == 'skill') {
+          this.activeSkill = skill;
         } else {
-          this.passiveSkills.push(skill)
+          this.passiveSkills.push(skill);
         }
-      })
-    })
+      });
+    });
 
     Object.keys(this.grows).forEach(growId => {
-      this.grows[growId].name = nameService.getName(this.grows[growId])
+      this.grows[growId].name = nameService.getName(this.grows[growId]);
       this.grows[growId].stats = {};
       this.statsTypes.forEach(statType => {
-        let maxValue = this.stats[statType].max
+        const maxValue = this.stats[statType].max;
 
-        let growMax = this.grows[growId].curve[statType] ? maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100) : maxValue
+        let growMax = this.grows[growId].curve[statType] ? maxValue + ((maxValue * this.grows[growId].curve[statType]) / 100) : maxValue;
         if (growMax < 0 && growMax > -1) {
-          growMax = 0
+          growMax = 0;
         } else {
-          growMax = Math.floor(growMax)
+          growMax = Math.floor(growMax);
         }
 
-        this.grows[growId].stats[statType] = []
+        this.grows[growId].stats[statType] = [];
         for (let i = this.stats[statType].min; i <= growMax; i++) {
-          this.grows[growId].stats[statType].push(i)
+          this.grows[growId].stats[statType].push(i);
         }
-      })
-    })
+      });
+    });
 
-    let usableStatsTypes = []
+    const usableStatsTypes = [];
     this.statsTypes.forEach(statType => {
       let maxDifferentZero = false;
       Object.keys(this.grows).forEach(growId => {
         if (this.grows[growId].stats[statType][this.grows[growId].stats[statType].length - 1] != 0) {
-          maxDifferentZero = true
+          maxDifferentZero = true;
         }
-      })
+      });
 
       if (maxDifferentZero || this.stats[statType].min != 0) {
-        usableStatsTypes.push(statType)
+        usableStatsTypes.push(statType);
       }
-    })
-    this.statsTypes = usableStatsTypes
+    });
+    this.statsTypes = usableStatsTypes;
 
-    this.maxLevel = this.grows[this.grow].curve.MAX_LV
-    this.tableLevel = []
+    this.maxLevel = this.grows[this.grow].curve.MAX_LV;
+    this.tableLevel = [];
     for (let i = 1; i <= this.maxLevel; i++) {
-      this.tableLevel.push(i)
+      this.tableLevel.push(i);
     }
   }
 
   changeUpgrade(skillService) {
-    this.skill = this.skills[this.upgrade]
+    this.skill = this.skills[this.upgrade];
 
-    if (this.skill && this.skill[0] && this.skill[0].type == "skill") {
+    if (this.skill && this.skill[0] && this.skill[0].type == 'skill') {
       this.skill[0].tableLevel = [];
       for (let i = 1; i <= this.skill[0].maxLevel; i++) {
-        this.skill[0].tableLevel.push(i)
+        this.skill[0].tableLevel.push(i);
       }
     }
 
-    if (this.skill && this.skill[0] && this.skill[0].type !== "skill") {
+    if (this.skill && this.skill[0] && this.skill[0].type !== 'skill') {
       this.skill.forEach(skill => {
-        skill.level = this.level
-      })
+        skill.level = this.level;
+      });
     }
 
     this.changeSkillLevel(skillService);
   }
 
   changeGrow() {
-    this.tableStats = {}
+    this.tableStats = {};
     this.statsTypes.forEach(statType => {
-      this.tableStats[statType] = this.grows[this.grow].stats[statType]
+      this.tableStats[statType] = this.grows[this.grow].stats[statType];
 
       if (!this.stats[statType].selected) {
-        this.stats[statType].selected = this.tableStats[statType][0]
+        this.stats[statType].selected = this.tableStats[statType][0];
       } else if (this.stats[statType].selected > this.tableStats[statType][this.tableStats[statType].length - 1]) {
-        this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1]
+        this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
       }
-    })
+    });
   }
 
   changeLevel(skillService) {
-    if (this.growIds.length == 1 && this.grows[this.growIds[0]].dataId == "ARTIFACT_50") {
+    if (this.growIds.length == 1 && this.grows[this.growIds[0]].dataId == 'ARTIFACT_50') {
       Object.keys(this.stats).forEach(statType => {
-        let minValue = this.stats[statType].min
-        let maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1]
-        this.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)))
-      })
+        const minValue = this.stats[statType].min;
+        const maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1];
+        this.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)));
+      });
     }
 
     if (this.skill) {
-      this.changeSkillLevel(skillService)
+      this.changeSkillLevel(skillService);
     }
   }
 
   changeSkillLevel(skillService) {
     this.passiveSkills = [];
     this.skill.forEach(skill => {
-      if (skill.type !== "skill") {
-        skill.level = this.level
+      if (skill.type !== 'skill') {
+        skill.level = this.level;
       }
 
       if (skill.level >= (skill.upgrade[0] * 10 - 10)
@@ -206,10 +206,10 @@ export class Equipment {
 
         skillService.formatRange(this, skill);
 
-        if (skill.type == "skill") {
-          this.activeSkill = skill
+        if (skill.type == 'skill') {
+          this.activeSkill = skill;
         } else {
-          this.passiveSkills.push(skill)
+          this.passiveSkills.push(skill);
         }
       }
     });

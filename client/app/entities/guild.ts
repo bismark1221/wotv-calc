@@ -7,5 +7,5 @@ export class Guild {
   lion = 0;
 
   // for builder
-  storeId
+  storeId;
 }

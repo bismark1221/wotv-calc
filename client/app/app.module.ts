@@ -15,10 +15,10 @@ import { NgxMdModule } from 'ngx-md';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { ClipboardModule } from 'ngx-clipboard';
 import { UiSwitchModule } from 'ngx-ui-switch';
-import { environment } from "../environments/environment";
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 import { AppRoutingModule } from './app-routing.module';

@@ -21,9 +21,9 @@ export class MasterRanksService {
     earth: 1,
     lightning: 1,
     storeId: null
-  }
+  };
 
-  private dataMasterRanks
+  private dataMasterRanks;
 
 
   constructor(
@@ -34,27 +34,27 @@ export class MasterRanksService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == "GL") {
-      return GL_MRS
+    if (this.navService.getVersion() == 'GL') {
+      return GL_MRS;
     } else {
-      return JP_MRS
+      return JP_MRS;
     }
   }
 
   getMRs() {
-    let rawMRs = JSON.parse(JSON.stringify(this.getRaw()))
+    const rawMRs = JSON.parse(JSON.stringify(this.getRaw()));
 
     this.dataMasterRanks = rawMRs;
     return this.dataMasterRanks;
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == "JP" ? "jp_masterRank" : "masterRank"
+    return this.navService.getVersion() == 'JP' ? 'jp_masterRank' : 'masterRank';
   }
 
   getMasterRanks() {
     if (this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
-      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
+      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
     } else {
       this.masterRanks = {
         fire: 1,
@@ -66,22 +66,22 @@ export class MasterRanksService {
         earth: 1,
         lightning: 1,
         storeId: null
-      }
+      };
     }
 
-    return this.masterRanks
+    return this.masterRanks;
   }
 
   getMasterRanksForBuilder(forceEmptyMasterRanks = false) {
     if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
-      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())))
+      this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
 
-      let elements = ["fire", "ice", "water", "wind", "light", "dark", "earth", "lightning"]
+      const elements = ['fire', 'ice', 'water', 'wind', 'light', 'dark', 'earth', 'lightning'];
       elements.forEach(element => {
         if (!this.masterRanks[element] || isNaN(this.masterRanks[element]) || this.masterRanks[element] < 1 || this.masterRanks[element] > 40) {
-          this.masterRanks[element] = 1
+          this.masterRanks[element] = 1;
         }
-      })
+      });
     } else {
       this.masterRanks = {
         fire: 1,
@@ -93,17 +93,17 @@ export class MasterRanksService {
         earth: 1,
         lightning: 1,
         storeId: null
-      }
+      };
     }
 
     return {
       data: this.masterRanks,
       ranks: this.getMRs()
-    }
+    };
   }
 
   getSavableData(masterRanks, onlyMasterRanks = false) {
-    let data = {
+    const data = {
       fire: masterRanks['fire'],
       ice: masterRanks['ice'],
       water: masterRanks['water'],
@@ -112,55 +112,55 @@ export class MasterRanksService {
       dark: masterRanks['dark'],
       earth: masterRanks['earth'],
       lightning: masterRanks['lightning'],
-    }
+    };
 
     if (!onlyMasterRanks) {
-      let user = this.authService.getUser()
+      const user = this.authService.getUser();
       // @ts-ignore
-      data.user = user ? user.uid : null
+      data.user = user ? user.uid : null;
     }
 
-    return data
+    return data;
   }
 
   masterRanksdAlreadyExists() {
-    let localStoredMasterRanks = this.localStorageService.get(this.getLocalStorage())
+    const localStoredMasterRanks = this.localStorageService.get(this.getLocalStorage());
     // @ts-ignore
     if (localStoredMasterRanks && localStoredMasterRanks.storeId) {
-      return true
+      return true;
     } else {
-      return false
+      return false;
     }
   }
 
   saveMasterRanks(masterRanks) {
-    let savableData = this.getSavableData(masterRanks)
+    const savableData = this.getSavableData(masterRanks);
 
     if (this.masterRanksdAlreadyExists()) {
       return this.firestore.collection(this.getLocalStorage()).doc(masterRanks.storeId).set(savableData).then(data => {
         // @ts-ignore
-        savableData.storeId = masterRanks.storeId
+        savableData.storeId = masterRanks.storeId;
 
         this.localStorageService.set(this.getLocalStorage(), savableData);
 
-        return masterRanks.storeId
-      })
+        return masterRanks.storeId;
+      });
     } else {
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
         // @ts-ignore
-        savableData.storeId = data.id
+        savableData.storeId = data.id;
 
         this.localStorageService.set(this.getLocalStorage(), savableData);
-        this.masterRanks.storeId = data.id
+        this.masterRanks.storeId = data.id;
 
-        return data.id
-      })
+        return data.id;
+      });
     }
   }
 
   getRanks() {
     this.getMRs();
 
-    return this.dataMasterRanks
+    return this.dataMasterRanks;
   }
 }

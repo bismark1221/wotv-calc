@@ -12,12 +12,12 @@ import { NameService } from '../services/name.service';
 })
 export class RaidsComponent implements OnInit {
   raids;
-  searchText = "";
-  sort = "name"
-  order = "asc"
+  searchText = '';
+  sort = 'name';
+  order = 'asc';
   filters = {
     element: []
-  }
+  };
   isCollapsedElement = false;
 
   constructor(
@@ -32,7 +32,7 @@ export class RaidsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle("Raids");
+    this.navService.setTitle('Raids');
 
     this.getRaids();
   }
@@ -44,42 +44,42 @@ export class RaidsComponent implements OnInit {
 
   private translateRaids() {
     this.raids.forEach(raid => {
-      raid.name = this.nameService.getName(raid)
+      raid.name = this.nameService.getName(raid);
     });
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   getFilteredRaids() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.raids.filter(raid => {
         return raid.name.toLowerCase().includes(text) || raid.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.raids
+      return this.raids;
     }
   }
 
   filterList(type, value) {
     if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getRaids()
+    this.getRaids();
   }
 
   changeSort(sort) {
-    this.sort = sort
-    this.getRaids()
+    this.sort = sort;
+    this.getRaids();
   }
 
   changeOrder(order) {
-    this.order = order
-    this.getRaids()
+    this.order = order;
+    this.getRaids();
   }
 }

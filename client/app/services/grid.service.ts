@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-import { SkillService } from './skill.service'
-import { NameService } from './name.service'
+import { SkillService } from './skill.service';
+import { NameService } from './name.service';
 
 @Injectable()
 export class GridService {
@@ -18,7 +18,7 @@ export class GridService {
     75, 53, 30, 14, 13, 12, 25, 45, 70,
     74, 52, 29, 28, 27, 26, 46, 71, 104,
     105, 73, 51, 50, 49, 48, 47, 72, 106
-  ]
+  ];
 
   private lines = [
     {top: 370, left: 430, transform: -55},
@@ -217,181 +217,181 @@ export class GridService {
     {top: 730, left: 730, transform: -55},
     {top: 730, left: 130, transform: -55},
     {top: 730, left: 30, transform: -55},
-  ]
+  ];
 
   private nodeLine = [
-    { "node1": 0, "node2": 1 },
-    { "node1": 0, "node2": 2 },
-    { "node1": 0, "node2": 3 },
-    { "node1": 0, "node2": 4 },
-    { "node1": 0, "node2": 5 },
-    { "node1": 0, "node2": 6 },
-    { "node1": 6, "node2": 1 },
-    { "node1": 1, "node2": 2 },
-    { "node1": 2, "node2": 3 },
-    { "node1": 3, "node2": 4 },
+    { 'node1': 0, 'node2': 1 },
+    { 'node1': 0, 'node2': 2 },
+    { 'node1': 0, 'node2': 3 },
+    { 'node1': 0, 'node2': 4 },
+    { 'node1': 0, 'node2': 5 },
+    { 'node1': 0, 'node2': 6 },
+    { 'node1': 6, 'node2': 1 },
+    { 'node1': 1, 'node2': 2 },
+    { 'node1': 2, 'node2': 3 },
+    { 'node1': 3, 'node2': 4 },
 
-    { "node1": 4, "node2": 5 }, //10
-    { "node1": 5, "node2": 6 },
-    { "node1": 1, "node2": 7 },
-    { "node1": 1, "node2": 8 },
-    { "node1": 1, "node2": 9 },
-    { "node1": 2, "node2": 9 },
-    { "node1": 2, "node2": 10 },
-    { "node1": 2, "node2": 11 },
-    { "node1": 3, "node2": 11 },
-    { "node1": 3, "node2": 12 },
+    { 'node1': 4, 'node2': 5 }, // 10
+    { 'node1': 5, 'node2': 6 },
+    { 'node1': 1, 'node2': 7 },
+    { 'node1': 1, 'node2': 8 },
+    { 'node1': 1, 'node2': 9 },
+    { 'node1': 2, 'node2': 9 },
+    { 'node1': 2, 'node2': 10 },
+    { 'node1': 2, 'node2': 11 },
+    { 'node1': 3, 'node2': 11 },
+    { 'node1': 3, 'node2': 12 },
 
-    { "node1": 3, "node2": 13 }, //20
-    { "node1": 4, "node2": 13 },
-    { "node1": 4, "node2": 14 },
-    { "node1": 4, "node2": 15 },
-    { "node1": 5, "node2": 15 },
-    { "node1": 5, "node2": 16 },
-    { "node1": 5, "node2": 17 },
-    { "node1": 6, "node2": 17 },
-    { "node1": 6, "node2": 18 },
-    { "node1": 6, "node2": 7 },
+    { 'node1': 3, 'node2': 13 }, // 20
+    { 'node1': 4, 'node2': 13 },
+    { 'node1': 4, 'node2': 14 },
+    { 'node1': 4, 'node2': 15 },
+    { 'node1': 5, 'node2': 15 },
+    { 'node1': 5, 'node2': 16 },
+    { 'node1': 5, 'node2': 17 },
+    { 'node1': 6, 'node2': 17 },
+    { 'node1': 6, 'node2': 18 },
+    { 'node1': 6, 'node2': 7 },
 
-    { "node1": 7, "node2": 8 }, //30
-    { "node1": 8, "node2": 9 },
-    { "node1": 9, "node2": 10 },
-    { "node1": 10, "node2": 11 },
-    { "node1": 11, "node2": 12 },
-    { "node1": 12, "node2": 13 },
-    { "node1": 13, "node2": 14 },
-    { "node1": 14, "node2": 15 },
-    { "node1": 15, "node2": 16 },
-    { "node1": 16, "node2": 17 },
+    { 'node1': 7, 'node2': 8 }, // 30
+    { 'node1': 8, 'node2': 9 },
+    { 'node1': 9, 'node2': 10 },
+    { 'node1': 10, 'node2': 11 },
+    { 'node1': 11, 'node2': 12 },
+    { 'node1': 12, 'node2': 13 },
+    { 'node1': 13, 'node2': 14 },
+    { 'node1': 14, 'node2': 15 },
+    { 'node1': 15, 'node2': 16 },
+    { 'node1': 16, 'node2': 17 },
 
-    { "node1": 17, "node2": 18 }, //40
-    { "node1": 18, "node2": 7 },
-    { "node1": 7, "node2": 19 }, //42
-    { "node1": 8, "node2": 19 },
-    { "node1": 8, "node2": 20 },
-    { "node1": 8, "node2": 21 },
-    { "node1": 9, "node2": 21 },
-    { "node1": 9, "node2": 22 },
-    { "node1": 10, "node2": 22 },
-    { "node1": 10, "node2": 23 },
+    { 'node1': 17, 'node2': 18 }, // 40
+    { 'node1': 18, 'node2': 7 },
+    { 'node1': 7, 'node2': 19 }, // 42
+    { 'node1': 8, 'node2': 19 },
+    { 'node1': 8, 'node2': 20 },
+    { 'node1': 8, 'node2': 21 },
+    { 'node1': 9, 'node2': 21 },
+    { 'node1': 9, 'node2': 22 },
+    { 'node1': 10, 'node2': 22 },
+    { 'node1': 10, 'node2': 23 },
 
-    { "node1": 10, "node2": 24 }, //50
-    { "node1": 11, "node2": 24 },
-    { "node1": 11, "node2": 25 },
-    { "node1": 12, "node2": 25 },
-    { "node1": 12, "node2": 26 },
-    { "node1": 12, "node2": 27 },
-    { "node1": 13, "node2": 27 },
-    { "node1": 13, "node2": 28 },
-    { "node1": 14, "node2": 28 },
-    { "node1": 14, "node2": 29 },
+    { 'node1': 10, 'node2': 24 }, // 50
+    { 'node1': 11, 'node2': 24 },
+    { 'node1': 11, 'node2': 25 },
+    { 'node1': 12, 'node2': 25 },
+    { 'node1': 12, 'node2': 26 },
+    { 'node1': 12, 'node2': 27 },
+    { 'node1': 13, 'node2': 27 },
+    { 'node1': 13, 'node2': 28 },
+    { 'node1': 14, 'node2': 28 },
+    { 'node1': 14, 'node2': 29 },
 
-    { "node1": 14, "node2": 30 }, //60
-    { "node1": 15, "node2": 30 },
-    { "node1": 15, "node2": 31 },
-    { "node1": 16, "node2": 31 },
-    { "node1": 16, "node2": 32 },
-    { "node1": 16, "node2": 33 },
-    { "node1": 17, "node2": 33 },
-    { "node1": 17, "node2": 34 },
-    { "node1": 18, "node2": 34 },
-    { "node1": 18, "node2": 35 },
+    { 'node1': 14, 'node2': 30 }, // 60
+    { 'node1': 15, 'node2': 30 },
+    { 'node1': 15, 'node2': 31 },
+    { 'node1': 16, 'node2': 31 },
+    { 'node1': 16, 'node2': 32 },
+    { 'node1': 16, 'node2': 33 },
+    { 'node1': 17, 'node2': 33 },
+    { 'node1': 17, 'node2': 34 },
+    { 'node1': 18, 'node2': 34 },
+    { 'node1': 18, 'node2': 35 },
 
-    { "node1": 18, "node2": 36 }, //70
-    { "node1": 7, "node2": 36 }, //71
-    { "node1": 36, "node2": 19 },
-    { "node1": 19, "node2": 20 },
-    { "node1": 20, "node2": 21 },
-    { "node1": 21, "node2": 22 },
-    { "node1": 22, "node2": 23 },
-    { "node1": 23, "node2": 24 },
-    { "node1": 24, "node2": 25 },
-    { "node1": 25, "node2": 26 },
+    { 'node1': 18, 'node2': 36 }, // 70
+    { 'node1': 7, 'node2': 36 }, // 71
+    { 'node1': 36, 'node2': 19 },
+    { 'node1': 19, 'node2': 20 },
+    { 'node1': 20, 'node2': 21 },
+    { 'node1': 21, 'node2': 22 },
+    { 'node1': 22, 'node2': 23 },
+    { 'node1': 23, 'node2': 24 },
+    { 'node1': 24, 'node2': 25 },
+    { 'node1': 25, 'node2': 26 },
 
-    { "node1": 26, "node2": 27 }, //80
-    { "node1": 27, "node2": 28 },
-    { "node1": 28, "node2": 29 },
-    { "node1": 29, "node2": 30 },
-    { "node1": 30, "node2": 31 },
-    { "node1": 31, "node2": 32 },
-    { "node1": 32, "node2": 33 },
-    { "node1": 33, "node2": 34 },
-    { "node1": 34, "node2": 35 },
-    { "node1": 35, "node2": 36 },
+    { 'node1': 26, 'node2': 27 }, // 80
+    { 'node1': 27, 'node2': 28 },
+    { 'node1': 28, 'node2': 29 },
+    { 'node1': 29, 'node2': 30 },
+    { 'node1': 30, 'node2': 31 },
+    { 'node1': 31, 'node2': 32 },
+    { 'node1': 32, 'node2': 33 },
+    { 'node1': 33, 'node2': 34 },
+    { 'node1': 34, 'node2': 35 },
+    { 'node1': 35, 'node2': 36 },
 
-    { "node1": 19, "node2": 37 }, //90
-    { "node1": 19, "node2": 38 },
-    { "node1": 20, "node2": 38 },
-    { "node1": 20, "node2": 39 },
-    { "node1": 20, "node2": 40 },
-    { "node1": 21, "node2": 40 },
-    { "node1": 21, "node2": 41 },
-    { "node1": 22, "node2": 41 },
-    { "node1": 22, "node2": 42 },
-    { "node1": 23, "node2": 42 },
+    { 'node1': 19, 'node2': 37 }, // 90
+    { 'node1': 19, 'node2': 38 },
+    { 'node1': 20, 'node2': 38 },
+    { 'node1': 20, 'node2': 39 },
+    { 'node1': 20, 'node2': 40 },
+    { 'node1': 21, 'node2': 40 },
+    { 'node1': 21, 'node2': 41 },
+    { 'node1': 22, 'node2': 41 },
+    { 'node1': 22, 'node2': 42 },
+    { 'node1': 23, 'node2': 42 },
 
-    { "node1": 23, "node2": 43 }, //100
-    { "node1": 23, "node2": 44 },
-    { "node1": 24, "node2": 44 },
-    { "node1": 24, "node2": 45 },
-    { "node1": 25, "node2": 45 },
-    { "node1": 25, "node2": 46 },
-    { "node1": 26, "node2": 46 },
-    { "node1": 26, "node2": 47 },
-    { "node1": 26, "node2": 48 },
-    { "node1": 27, "node2": 48 },
+    { 'node1': 23, 'node2': 43 }, // 100
+    { 'node1': 23, 'node2': 44 },
+    { 'node1': 24, 'node2': 44 },
+    { 'node1': 24, 'node2': 45 },
+    { 'node1': 25, 'node2': 45 },
+    { 'node1': 25, 'node2': 46 },
+    { 'node1': 26, 'node2': 46 },
+    { 'node1': 26, 'node2': 47 },
+    { 'node1': 26, 'node2': 48 },
+    { 'node1': 27, 'node2': 48 },
 
-    { "node1": 27, "node2": 49 }, //110
-    { "node1": 28, "node2": 49 },
-    { "node1": 28, "node2": 50 },
-    { "node1": 29, "node2": 50 },
-    { "node1": 29, "node2": 51 },
-    { "node1": 29, "node2": 52 },
-    { "node1": 30, "node2": 52 },
-    { "node1": 30, "node2": 53 },
-    { "node1": 31, "node2": 53 },
-    { "node1": 31, "node2": 54 },
+    { 'node1': 27, 'node2': 49 }, // 110
+    { 'node1': 28, 'node2': 49 },
+    { 'node1': 28, 'node2': 50 },
+    { 'node1': 29, 'node2': 50 },
+    { 'node1': 29, 'node2': 51 },
+    { 'node1': 29, 'node2': 52 },
+    { 'node1': 30, 'node2': 52 },
+    { 'node1': 30, 'node2': 53 },
+    { 'node1': 31, 'node2': 53 },
+    { 'node1': 31, 'node2': 54 },
 
-    { "node1": 32, "node2": 54 }, //120
-    { "node1": 32, "node2": 55 },
-    { "node1": 32, "node2": 56 },
-    { "node1": 33, "node2": 56 },
-    { "node1": 33, "node2": 57 },
-    { "node1": 34, "node2": 57 },
-    { "node1": 34, "node2": 58 },
-    { "node1": 35, "node2": 58 },
-    { "node1": 35, "node2": 59 },
-    { "node1": 35, "node2": 60 },
+    { 'node1': 32, 'node2': 54 }, // 120
+    { 'node1': 32, 'node2': 55 },
+    { 'node1': 32, 'node2': 56 },
+    { 'node1': 33, 'node2': 56 },
+    { 'node1': 33, 'node2': 57 },
+    { 'node1': 34, 'node2': 57 },
+    { 'node1': 34, 'node2': 58 },
+    { 'node1': 35, 'node2': 58 },
+    { 'node1': 35, 'node2': 59 },
+    { 'node1': 35, 'node2': 60 },
 
-    { "node1": 36, "node2": 60 }, //130
-    { "node1": 36, "node2": 37 },
-    { "node1": 37, "node2": 38 }, //132
-    { "node1": 38, "node2": 39 },
-    { "node1": 39, "node2": 40 },
-    { "node1": 40, "node2": 41 },
-    { "node1": 41, "node2": 42 },
-    { "node1": 42, "node2": 43 },
-    { "node1": 43, "node2": 44 },
-    { "node1": 44, "node2": 45 },
+    { 'node1': 36, 'node2': 60 }, // 130
+    { 'node1': 36, 'node2': 37 },
+    { 'node1': 37, 'node2': 38 }, // 132
+    { 'node1': 38, 'node2': 39 },
+    { 'node1': 39, 'node2': 40 },
+    { 'node1': 40, 'node2': 41 },
+    { 'node1': 41, 'node2': 42 },
+    { 'node1': 42, 'node2': 43 },
+    { 'node1': 43, 'node2': 44 },
+    { 'node1': 44, 'node2': 45 },
 
-    { "node1": 45, "node2": 46 }, //140
-    { "node1": 46, "node2": 47 },
-    { "node1": 47, "node2": 48 },
-    { "node1": 48, "node2": 49 },
-    { "node1": 49, "node2": 50 },
-    { "node1": 50, "node2": 51 },
-    { "node1": 51, "node2": 52 },
-    { "node1": 52, "node2": 53 },
-    { "node1": 53, "node2": 54 },
-    { "node1": 54, "node2": 55 },
+    { 'node1': 45, 'node2': 46 }, // 140
+    { 'node1': 46, 'node2': 47 },
+    { 'node1': 47, 'node2': 48 },
+    { 'node1': 48, 'node2': 49 },
+    { 'node1': 49, 'node2': 50 },
+    { 'node1': 50, 'node2': 51 },
+    { 'node1': 51, 'node2': 52 },
+    { 'node1': 52, 'node2': 53 },
+    { 'node1': 53, 'node2': 54 },
+    { 'node1': 54, 'node2': 55 },
 
-    { "node1": 55, "node2": 56 }, //150
-    { "node1": 56, "node2": 57 },
-    { "node1": 57, "node2": 58 },
-    { "node1": 58, "node2": 59 },
-    { "node1": 59, "node2": 60 },
-    { "node1": 60, "node2": 37 }, // 155
-  ]
+    { 'node1': 55, 'node2': 56 }, // 150
+    { 'node1': 56, 'node2': 57 },
+    { 'node1': 57, 'node2': 58 },
+    { 'node1': 58, 'node2': 59 },
+    { 'node1': 59, 'node2': 60 },
+    { 'node1': 60, 'node2': 37 }, // 155
+  ];
 
 
   /****** GRID FOR EX ********/
@@ -411,7 +411,7 @@ export class GridService {
      75,  53,  30,  14,  13,  12,  25,  45,  70,
      74,  52,  29,  28,  27,  26,  46,  71, 104,
     105,  73,  51,  50,  49,  48,  47,  72, 106
-  ]
+  ];
 
   private EXlines = {
       0: {top: 895, left: 430, transform: -55},
@@ -744,9 +744,9 @@ export class GridService {
     606: {top: 175, left: 730, transform: -55},
     607: {top: 175, left: 780, transform: 55},
 
-    //459: {top: 125, left: 100},
-    //460: {top: 125, left: 200},
-    //461: {top: 125, left: 300},
+    // 459: {top: 125, left: 100},
+    // 460: {top: 125, left: 200},
+    // 461: {top: 125, left: 300},
     702: {top: 125, left: 400},
     703: {top: 125, left: 500},
     704: {top: 125, left: 600},
@@ -805,310 +805,310 @@ export class GridService {
     // 193: {top: 1270, left: 730, transform: -55},
     // 194: {top: 1270, left: 130, transform: -55},
     // 195: {top: 1270, left: 30, transform: -55},
-  }
+  };
 
   private EXnodeLine = {
-      0: { "node1": 0, "node2": 1 },
-      1: { "node1": 0, "node2": 2 },
-      2: { "node1": 0, "node2": 3 },
-      3: { "node1": 0, "node2": 4 },
-      4: { "node1": 0, "node2": 5 },
-      5: { "node1": 0, "node2": 6 },
-      6: { "node1": 6, "node2": 1 },
-      7: { "node1": 1, "node2": 2 },
-      8: { "node1": 2, "node2": 3 },
-      9: { "node1": 3, "node2": 4 },
-     10: { "node1": 4, "node2": 5 }, //10
-     11: { "node1": 5, "node2": 6 },
-     12: { "node1": 1, "node2": 7 },
-     13: { "node1": 1, "node2": 8 },
-     14: { "node1": 1, "node2": 9 },
-     15: { "node1": 2, "node2": 9 },
-     16: { "node1": 2, "node2": 10 },
-     17: { "node1": 2, "node2": 11 },
-     18: { "node1": 3, "node2": 11 },
-     19: { "node1": 3, "node2": 12 },
-     20: { "node1": 3, "node2": 13 }, //20
-     21: { "node1": 4, "node2": 13 },
-     22: { "node1": 4, "node2": 14 },
-     23: { "node1": 4, "node2": 15 },
-     24: { "node1": 5, "node2": 15 },
-     25: { "node1": 5, "node2": 16 },
-     26: { "node1": 5, "node2": 17 },
-     27: { "node1": 6, "node2": 17 },
-     28: { "node1": 6, "node2": 18 },
-     29: { "node1": 6, "node2": 7 },
-     30: { "node1": 7, "node2": 8 }, //30
-     31: { "node1": 8, "node2": 9 },
-     32: { "node1": 9, "node2": 10 },
-     33: { "node1": 10, "node2": 11 },
-     34: { "node1": 11, "node2": 12 },
-     35: { "node1": 12, "node2": 13 },
-     36: { "node1": 13, "node2": 14 },
-     37: { "node1": 14, "node2": 15 },
-     38: { "node1": 15, "node2": 16 },
-     39: { "node1": 16, "node2": 17 },
-     40: { "node1": 17, "node2": 18 }, //40
-     41: { "node1": 18, "node2": 7 },
-     42: { "node1": 7, "node2": 19 }, //42
-     43: { "node1": 8, "node2": 19 },
-     44: { "node1": 8, "node2": 20 },
-     45: { "node1": 8, "node2": 21 },
-     46: { "node1": 9, "node2": 21 },
-     47: { "node1": 9, "node2": 22 },
-     48: { "node1": 10, "node2": 22 },
-     49: { "node1": 10, "node2": 23 },
-     50: { "node1": 10, "node2": 24 }, //50
-     51: { "node1": 11, "node2": 24 },
-     52: { "node1": 11, "node2": 25 },
-     53: { "node1": 12, "node2": 25 },
-     54: { "node1": 12, "node2": 26 },
-     55: { "node1": 12, "node2": 27 },
-     56: { "node1": 13, "node2": 27 },
-     57: { "node1": 13, "node2": 28 },
-     58: { "node1": 14, "node2": 28 },
-     59: { "node1": 14, "node2": 29 },
-     60: { "node1": 14, "node2": 30 }, //60
-     61: { "node1": 15, "node2": 30 },
-     62: { "node1": 15, "node2": 31 },
-     63: { "node1": 16, "node2": 31 },
-     64: { "node1": 16, "node2": 32 },
-     65: { "node1": 16, "node2": 33 },
-     66: { "node1": 17, "node2": 33 },
-     67: { "node1": 17, "node2": 34 },
-     68: { "node1": 18, "node2": 34 },
-     69: { "node1": 18, "node2": 35 },
-     70: { "node1": 18, "node2": 36 }, //70
-     71: { "node1": 7, "node2": 36 }, //71
-     72: { "node1": 36, "node2": 19 },
-     73: { "node1": 19, "node2": 20 },
-     74: { "node1": 20, "node2": 21 },
-     75: { "node1": 21, "node2": 22 },
-     76: { "node1": 22, "node2": 23 },
-     77: { "node1": 23, "node2": 24 },
-     78: { "node1": 24, "node2": 25 },
-     79: { "node1": 25, "node2": 26 },
-     80: { "node1": 26, "node2": 27 }, //80
-     81: { "node1": 27, "node2": 28 },
-     82: { "node1": 28, "node2": 29 },
-     83: { "node1": 29, "node2": 30 },
-     84: { "node1": 30, "node2": 31 },
-     85: { "node1": 31, "node2": 32 },
-     86: { "node1": 32, "node2": 33 },
-     87: { "node1": 33, "node2": 34 },
-     88: { "node1": 34, "node2": 35 },
-     89: { "node1": 35, "node2": 36 },
-     90: { "node1": 19, "node2": 37 }, //90
-     91: { "node1": 19, "node2": 38 },
-     92: { "node1": 20, "node2": 38 },
-     93: { "node1": 20, "node2": 39 },
-     94: { "node1": 20, "node2": 40 },
-     95: { "node1": 21, "node2": 40 },
-     96: { "node1": 21, "node2": 41 },
-     97: { "node1": 22, "node2": 41 },
-     98: { "node1": 22, "node2": 42 },
-     99: { "node1": 23, "node2": 42 },
-    100: { "node1": 23, "node2": 43 }, //100
-    101: { "node1": 23, "node2": 44 },
-    102: { "node1": 24, "node2": 44 },
-    103: { "node1": 24, "node2": 45 },
-    104: { "node1": 25, "node2": 45 },
-    105: { "node1": 25, "node2": 46 },
-    106: { "node1": 26, "node2": 46 },
-    107: { "node1": 26, "node2": 47 },
-    108: { "node1": 26, "node2": 48 },
-    109: { "node1": 27, "node2": 48 },
-    110: { "node1": 27, "node2": 49 }, //110
-    111: { "node1": 28, "node2": 49 },
-    112: { "node1": 28, "node2": 50 },
-    113: { "node1": 29, "node2": 50 },
-    114: { "node1": 29, "node2": 51 },
-    115: { "node1": 29, "node2": 52 },
-    116: { "node1": 30, "node2": 52 },
-    117: { "node1": 30, "node2": 53 },
-    118: { "node1": 31, "node2": 53 },
-    119: { "node1": 31, "node2": 54 },
-    120: { "node1": 32, "node2": 54 }, //120
-    121: { "node1": 32, "node2": 55 },
-    122: { "node1": 32, "node2": 56 },
-    123: { "node1": 33, "node2": 56 },
-    124: { "node1": 33, "node2": 57 },
-    125: { "node1": 34, "node2": 57 },
-    126: { "node1": 34, "node2": 58 },
-    127: { "node1": 35, "node2": 58 },
-    128: { "node1": 35, "node2": 59 },
-    129: { "node1": 35, "node2": 60 },
-    130: { "node1": 36, "node2": 60 }, //130
-    131: { "node1": 36, "node2": 37 },
-    132: { "node1": 37, "node2": 38 }, //132
-    133: { "node1": 38, "node2": 39 },
-    134: { "node1": 39, "node2": 40 },
-    135: { "node1": 40, "node2": 41 },
-    136: { "node1": 41, "node2": 42 },
-    137: { "node1": 42, "node2": 43 },
-    138: { "node1": 43, "node2": 44 },
-    139: { "node1": 44, "node2": 45 },
-    140: { "node1": 45, "node2": 46 }, //140
-    141: { "node1": 46, "node2": 47 },
-    142: { "node1": 47, "node2": 48 },
-    143: { "node1": 48, "node2": 49 },
-    144: { "node1": 49, "node2": 50 },
-    145: { "node1": 50, "node2": 51 },
-    146: { "node1": 51, "node2": 52 },
-    147: { "node1": 52, "node2": 53 },
-    148: { "node1": 53, "node2": 54 },
-    149: { "node1": 54, "node2": 55 },
-    150: { "node1": 55, "node2": 56 }, //150
-    151: { "node1": 56, "node2": 57 },
-    152: { "node1": 57, "node2": 58 },
-    153: { "node1": 58, "node2": 59 },
-    154: { "node1": 59, "node2": 60 },
-    155: { "node1": 60, "node2": 37 }, // 155
+      0: { 'node1': 0, 'node2': 1 },
+      1: { 'node1': 0, 'node2': 2 },
+      2: { 'node1': 0, 'node2': 3 },
+      3: { 'node1': 0, 'node2': 4 },
+      4: { 'node1': 0, 'node2': 5 },
+      5: { 'node1': 0, 'node2': 6 },
+      6: { 'node1': 6, 'node2': 1 },
+      7: { 'node1': 1, 'node2': 2 },
+      8: { 'node1': 2, 'node2': 3 },
+      9: { 'node1': 3, 'node2': 4 },
+     10: { 'node1': 4, 'node2': 5 }, // 10
+     11: { 'node1': 5, 'node2': 6 },
+     12: { 'node1': 1, 'node2': 7 },
+     13: { 'node1': 1, 'node2': 8 },
+     14: { 'node1': 1, 'node2': 9 },
+     15: { 'node1': 2, 'node2': 9 },
+     16: { 'node1': 2, 'node2': 10 },
+     17: { 'node1': 2, 'node2': 11 },
+     18: { 'node1': 3, 'node2': 11 },
+     19: { 'node1': 3, 'node2': 12 },
+     20: { 'node1': 3, 'node2': 13 }, // 20
+     21: { 'node1': 4, 'node2': 13 },
+     22: { 'node1': 4, 'node2': 14 },
+     23: { 'node1': 4, 'node2': 15 },
+     24: { 'node1': 5, 'node2': 15 },
+     25: { 'node1': 5, 'node2': 16 },
+     26: { 'node1': 5, 'node2': 17 },
+     27: { 'node1': 6, 'node2': 17 },
+     28: { 'node1': 6, 'node2': 18 },
+     29: { 'node1': 6, 'node2': 7 },
+     30: { 'node1': 7, 'node2': 8 }, // 30
+     31: { 'node1': 8, 'node2': 9 },
+     32: { 'node1': 9, 'node2': 10 },
+     33: { 'node1': 10, 'node2': 11 },
+     34: { 'node1': 11, 'node2': 12 },
+     35: { 'node1': 12, 'node2': 13 },
+     36: { 'node1': 13, 'node2': 14 },
+     37: { 'node1': 14, 'node2': 15 },
+     38: { 'node1': 15, 'node2': 16 },
+     39: { 'node1': 16, 'node2': 17 },
+     40: { 'node1': 17, 'node2': 18 }, // 40
+     41: { 'node1': 18, 'node2': 7 },
+     42: { 'node1': 7, 'node2': 19 }, // 42
+     43: { 'node1': 8, 'node2': 19 },
+     44: { 'node1': 8, 'node2': 20 },
+     45: { 'node1': 8, 'node2': 21 },
+     46: { 'node1': 9, 'node2': 21 },
+     47: { 'node1': 9, 'node2': 22 },
+     48: { 'node1': 10, 'node2': 22 },
+     49: { 'node1': 10, 'node2': 23 },
+     50: { 'node1': 10, 'node2': 24 }, // 50
+     51: { 'node1': 11, 'node2': 24 },
+     52: { 'node1': 11, 'node2': 25 },
+     53: { 'node1': 12, 'node2': 25 },
+     54: { 'node1': 12, 'node2': 26 },
+     55: { 'node1': 12, 'node2': 27 },
+     56: { 'node1': 13, 'node2': 27 },
+     57: { 'node1': 13, 'node2': 28 },
+     58: { 'node1': 14, 'node2': 28 },
+     59: { 'node1': 14, 'node2': 29 },
+     60: { 'node1': 14, 'node2': 30 }, // 60
+     61: { 'node1': 15, 'node2': 30 },
+     62: { 'node1': 15, 'node2': 31 },
+     63: { 'node1': 16, 'node2': 31 },
+     64: { 'node1': 16, 'node2': 32 },
+     65: { 'node1': 16, 'node2': 33 },
+     66: { 'node1': 17, 'node2': 33 },
+     67: { 'node1': 17, 'node2': 34 },
+     68: { 'node1': 18, 'node2': 34 },
+     69: { 'node1': 18, 'node2': 35 },
+     70: { 'node1': 18, 'node2': 36 }, // 70
+     71: { 'node1': 7, 'node2': 36 }, // 71
+     72: { 'node1': 36, 'node2': 19 },
+     73: { 'node1': 19, 'node2': 20 },
+     74: { 'node1': 20, 'node2': 21 },
+     75: { 'node1': 21, 'node2': 22 },
+     76: { 'node1': 22, 'node2': 23 },
+     77: { 'node1': 23, 'node2': 24 },
+     78: { 'node1': 24, 'node2': 25 },
+     79: { 'node1': 25, 'node2': 26 },
+     80: { 'node1': 26, 'node2': 27 }, // 80
+     81: { 'node1': 27, 'node2': 28 },
+     82: { 'node1': 28, 'node2': 29 },
+     83: { 'node1': 29, 'node2': 30 },
+     84: { 'node1': 30, 'node2': 31 },
+     85: { 'node1': 31, 'node2': 32 },
+     86: { 'node1': 32, 'node2': 33 },
+     87: { 'node1': 33, 'node2': 34 },
+     88: { 'node1': 34, 'node2': 35 },
+     89: { 'node1': 35, 'node2': 36 },
+     90: { 'node1': 19, 'node2': 37 }, // 90
+     91: { 'node1': 19, 'node2': 38 },
+     92: { 'node1': 20, 'node2': 38 },
+     93: { 'node1': 20, 'node2': 39 },
+     94: { 'node1': 20, 'node2': 40 },
+     95: { 'node1': 21, 'node2': 40 },
+     96: { 'node1': 21, 'node2': 41 },
+     97: { 'node1': 22, 'node2': 41 },
+     98: { 'node1': 22, 'node2': 42 },
+     99: { 'node1': 23, 'node2': 42 },
+    100: { 'node1': 23, 'node2': 43 }, // 100
+    101: { 'node1': 23, 'node2': 44 },
+    102: { 'node1': 24, 'node2': 44 },
+    103: { 'node1': 24, 'node2': 45 },
+    104: { 'node1': 25, 'node2': 45 },
+    105: { 'node1': 25, 'node2': 46 },
+    106: { 'node1': 26, 'node2': 46 },
+    107: { 'node1': 26, 'node2': 47 },
+    108: { 'node1': 26, 'node2': 48 },
+    109: { 'node1': 27, 'node2': 48 },
+    110: { 'node1': 27, 'node2': 49 }, // 110
+    111: { 'node1': 28, 'node2': 49 },
+    112: { 'node1': 28, 'node2': 50 },
+    113: { 'node1': 29, 'node2': 50 },
+    114: { 'node1': 29, 'node2': 51 },
+    115: { 'node1': 29, 'node2': 52 },
+    116: { 'node1': 30, 'node2': 52 },
+    117: { 'node1': 30, 'node2': 53 },
+    118: { 'node1': 31, 'node2': 53 },
+    119: { 'node1': 31, 'node2': 54 },
+    120: { 'node1': 32, 'node2': 54 }, // 120
+    121: { 'node1': 32, 'node2': 55 },
+    122: { 'node1': 32, 'node2': 56 },
+    123: { 'node1': 33, 'node2': 56 },
+    124: { 'node1': 33, 'node2': 57 },
+    125: { 'node1': 34, 'node2': 57 },
+    126: { 'node1': 34, 'node2': 58 },
+    127: { 'node1': 35, 'node2': 58 },
+    128: { 'node1': 35, 'node2': 59 },
+    129: { 'node1': 35, 'node2': 60 },
+    130: { 'node1': 36, 'node2': 60 }, // 130
+    131: { 'node1': 36, 'node2': 37 },
+    132: { 'node1': 37, 'node2': 38 }, // 132
+    133: { 'node1': 38, 'node2': 39 },
+    134: { 'node1': 39, 'node2': 40 },
+    135: { 'node1': 40, 'node2': 41 },
+    136: { 'node1': 41, 'node2': 42 },
+    137: { 'node1': 42, 'node2': 43 },
+    138: { 'node1': 43, 'node2': 44 },
+    139: { 'node1': 44, 'node2': 45 },
+    140: { 'node1': 45, 'node2': 46 }, // 140
+    141: { 'node1': 46, 'node2': 47 },
+    142: { 'node1': 47, 'node2': 48 },
+    143: { 'node1': 48, 'node2': 49 },
+    144: { 'node1': 49, 'node2': 50 },
+    145: { 'node1': 50, 'node2': 51 },
+    146: { 'node1': 51, 'node2': 52 },
+    147: { 'node1': 52, 'node2': 53 },
+    148: { 'node1': 53, 'node2': 54 },
+    149: { 'node1': 54, 'node2': 55 },
+    150: { 'node1': 55, 'node2': 56 }, // 150
+    151: { 'node1': 56, 'node2': 57 },
+    152: { 'node1': 57, 'node2': 58 },
+    153: { 'node1': 58, 'node2': 59 },
+    154: { 'node1': 59, 'node2': 60 },
+    155: { 'node1': 60, 'node2': 37 }, // 155
 
 
 
 
-    204: { "node1": 81, "node2": 59 },
-    297: { "node1": 100, "node2": 81 },
-    248: { "node1": 64, "node2": 102 },
-    161: { "node1": 39, "node2": 64 },
-    //200: { "node1": 60, "node2": 37 },
-    //199: { "node1": 60, "node2": 37 },
-    //165: { "node1": 60, "node2": 37 },
-    //166: { "node1": 60, "node2": 37 },
-    //167: { "node1": 60, "node2": 37 },
+    204: { 'node1': 81, 'node2': 59 },
+    297: { 'node1': 100, 'node2': 81 },
+    248: { 'node1': 64, 'node2': 102 },
+    161: { 'node1': 39, 'node2': 64 },
+    // 200: { "node1": 60, "node2": 37 },
+    // 199: { "node1": 60, "node2": 37 },
+    // 165: { "node1": 60, "node2": 37 },
+    // 166: { "node1": 60, "node2": 37 },
+    // 167: { "node1": 60, "node2": 37 },
 
 
 
-    337: { "node1": 100, "node2": 87 },
-    298: { "node1": 87, "node2": 81 },
-    237: { "node1": 81, "node2": 88 },
-    205: { "node1": 88, "node2": 59 },
-    206: { "node1": 59, "node2": 89 },
-    207: { "node1": 89, "node2": 60 },
-    208: { "node1": 60, "node2": 90 },
-    209: { "node1": 90, "node2": 37 }, //////////
-    156: { "node1": 37, "node2": 61 }, //////////
-    157: { "node1": 61, "node2": 38 },
-    158: { "node1": 38, "node2": 62 },
-    159: { "node1": 62, "node2": 39 },
-    160: { "node1": 39, "node2": 63 },
-    213: { "node1": 63, "node2": 64 },
-    247: { "node1": 64, "node2": 95 },
-    310: { "node1": 95, "node2": 102 },
+    337: { 'node1': 100, 'node2': 87 },
+    298: { 'node1': 87, 'node2': 81 },
+    237: { 'node1': 81, 'node2': 88 },
+    205: { 'node1': 88, 'node2': 59 },
+    206: { 'node1': 59, 'node2': 89 },
+    207: { 'node1': 89, 'node2': 60 },
+    208: { 'node1': 60, 'node2': 90 },
+    209: { 'node1': 90, 'node2': 37 }, //////////
+    156: { 'node1': 37, 'node2': 61 }, //////////
+    157: { 'node1': 61, 'node2': 38 },
+    158: { 'node1': 38, 'node2': 62 },
+    159: { 'node1': 62, 'node2': 39 },
+    160: { 'node1': 39, 'node2': 63 },
+    213: { 'node1': 63, 'node2': 64 },
+    247: { 'node1': 64, 'node2': 95 },
+    310: { 'node1': 95, 'node2': 102 },
 
-    299: { "node1": 87, "node2": 88 },
-    238: { "node1": 88, "node2": 89 },
-    239: { "node1": 89, "node2": 90 },
-    210: { "node1": 90, "node2": 61 },
-    211: { "node1": 61, "node2": 62 },
-    212: { "node1": 62, "node2": 63 },
-    246: { "node1": 63, "node2": 95 },
-    351: { "node1": 95, "node2": 102 },
+    299: { 'node1': 87, 'node2': 88 },
+    238: { 'node1': 88, 'node2': 89 },
+    239: { 'node1': 89, 'node2': 90 },
+    210: { 'node1': 90, 'node2': 61 },
+    211: { 'node1': 61, 'node2': 62 },
+    212: { 'node1': 62, 'node2': 63 },
+    246: { 'node1': 63, 'node2': 95 },
+    351: { 'node1': 95, 'node2': 102 },
 
-    411: { "node1": 123, "node2": 87 },
-    338: { "node1":  87, "node2": 124 },
-    300: { "node1": 124, "node2": 88 },
-    301: { "node1":  88, "node2": 125 },
-    302: { "node1": 125, "node2": 89 },
-    303: { "node1":  89, "node2": 126 },
-    304: { "node1": 126, "node2": 90 },
-    305: { "node1":  90, "node2": 91 },
-    240: { "node1":  91, "node2": 61 },
-    241: { "node1":  61, "node2": 92 },
-    242: { "node1":  92, "node2": 62 },
-    243: { "node1":  62, "node2": 93 },
-    244: { "node1":  93, "node2": 63 },
-    245: { "node1":  63, "node2": 94 },
-    309: { "node1":  94, "node2": 95 },
-    350: { "node1":  95, "node2": 131 },
+    411: { 'node1': 123, 'node2': 87 },
+    338: { 'node1':  87, 'node2': 124 },
+    300: { 'node1': 124, 'node2': 88 },
+    301: { 'node1':  88, 'node2': 125 },
+    302: { 'node1': 125, 'node2': 89 },
+    303: { 'node1':  89, 'node2': 126 },
+    304: { 'node1': 126, 'node2': 90 },
+    305: { 'node1':  90, 'node2': 91 },
+    240: { 'node1':  91, 'node2': 61 },
+    241: { 'node1':  61, 'node2': 92 },
+    242: { 'node1':  92, 'node2': 62 },
+    243: { 'node1':  62, 'node2': 93 },
+    244: { 'node1':  93, 'node2': 63 },
+    245: { 'node1':  63, 'node2': 94 },
+    309: { 'node1':  94, 'node2': 95 },
+    350: { 'node1':  95, 'node2': 131 },
 
-    412: { "node1": 123, "node2": 124 },
-    339: { "node1": 124, "node2": 125 },
-    340: { "node1": 125, "node2": 126 },
-    341: { "node1": 126, "node2": 91 },
-    306: { "node1": 91, "node2": 92 },
-    307: { "node1": 92, "node2": 93 },
-    308: { "node1": 93, "node2": 94 },
-    349: { "node1": 94, "node2": 131 },
+    412: { 'node1': 123, 'node2': 124 },
+    339: { 'node1': 124, 'node2': 125 },
+    340: { 'node1': 125, 'node2': 126 },
+    341: { 'node1': 126, 'node2': 91 },
+    306: { 'node1': 91, 'node2': 92 },
+    307: { 'node1': 92, 'node2': 93 },
+    308: { 'node1': 93, 'node2': 94 },
+    349: { 'node1': 94, 'node2': 131 },
 
-    458: { "node1": 123, "node2": 165 },
-    413: { "node1": 165, "node2": 124 },
-    414: { "node1": 124, "node2": 166 },
-    415: { "node1": 166, "node2": 125 },
-    416: { "node1": 125, "node2": 167 },
-    417: { "node1": 167, "node2": 126 },
-    418: { "node1": 126, "node2": 168 },
-    419: { "node1": 168, "node2": 91 },
-    342: { "node1":  91, "node2": 127 },
-    343: { "node1": 127, "node2": 92 },
-    344: { "node1":  92, "node2": 128 },
-    345: { "node1": 128, "node2": 93 },
-    346: { "node1":  93, "node2": 129 },
-    347: { "node1": 129, "node2": 94 },
-    348: { "node1":  94, "node2": 130 },
-    424: { "node1": 130, "node2": 131 },
+    458: { 'node1': 123, 'node2': 165 },
+    413: { 'node1': 165, 'node2': 124 },
+    414: { 'node1': 124, 'node2': 166 },
+    415: { 'node1': 166, 'node2': 125 },
+    416: { 'node1': 125, 'node2': 167 },
+    417: { 'node1': 167, 'node2': 126 },
+    418: { 'node1': 126, 'node2': 168 },
+    419: { 'node1': 168, 'node2': 91 },
+    342: { 'node1':  91, 'node2': 127 },
+    343: { 'node1': 127, 'node2': 92 },
+    344: { 'node1':  92, 'node2': 128 },
+    345: { 'node1': 128, 'node2': 93 },
+    346: { 'node1':  93, 'node2': 129 },
+    347: { 'node1': 129, 'node2': 94 },
+    348: { 'node1':  94, 'node2': 130 },
+    424: { 'node1': 130, 'node2': 131 },
 
-    459: { "node1": 165, "node2": 166 },
-    460: { "node1": 166, "node2": 167 },
-    461: { "node1": 167, "node2": 168 },
-    420: { "node1": 168, "node2": 127 },
-    421: { "node1": 127, "node2": 128 },
-    422: { "node1": 128, "node2": 129 },
-    423: { "node1": 129, "node2": 130 },
-    470: { "node1": 130, "node2": 174 },
+    459: { 'node1': 165, 'node2': 166 },
+    460: { 'node1': 166, 'node2': 167 },
+    461: { 'node1': 167, 'node2': 168 },
+    420: { 'node1': 168, 'node2': 127 },
+    421: { 'node1': 127, 'node2': 128 },
+    422: { 'node1': 128, 'node2': 129 },
+    423: { 'node1': 129, 'node2': 130 },
+    470: { 'node1': 130, 'node2': 174 },
 
-    544: { "node1": 213, "node2": 165 },
-    545: { "node1": 165, "node2": 214 },
-    546: { "node1": 214, "node2": 166 },
-    547: { "node1": 166, "node2": 215 },
-    548: { "node1": 215, "node2": 167 },
-    549: { "node1": 167, "node2": 216 },
-    550: { "node1": 216, "node2": 168 },
-    551: { "node1": 168, "node2": 169 },
-    462: { "node1": 169, "node2": 127 },
-    463: { "node1": 127, "node2": 170 },
-    464: { "node1": 170, "node2": 128 },
-    465: { "node1": 128, "node2": 171 },
-    466: { "node1": 171, "node2": 129 },
-    467: { "node1": 129, "node2": 172 },
-    468: { "node1": 172, "node2": 130 },
-    469: { "node1": 130, "node2": 173 },
+    544: { 'node1': 213, 'node2': 165 },
+    545: { 'node1': 165, 'node2': 214 },
+    546: { 'node1': 214, 'node2': 166 },
+    547: { 'node1': 166, 'node2': 215 },
+    548: { 'node1': 215, 'node2': 167 },
+    549: { 'node1': 167, 'node2': 216 },
+    550: { 'node1': 216, 'node2': 168 },
+    551: { 'node1': 168, 'node2': 169 },
+    462: { 'node1': 169, 'node2': 127 },
+    463: { 'node1': 127, 'node2': 170 },
+    464: { 'node1': 170, 'node2': 128 },
+    465: { 'node1': 128, 'node2': 171 },
+    466: { 'node1': 171, 'node2': 129 },
+    467: { 'node1': 129, 'node2': 172 },
+    468: { 'node1': 172, 'node2': 130 },
+    469: { 'node1': 130, 'node2': 173 },
 
-    596: { "node1": 213, "node2": 214 },
-    597: { "node1": 214, "node2": 215 },
-    598: { "node1": 215, "node2": 216 },
-    599: { "node1": 216, "node2": 169 },
-    552: { "node1": 169, "node2": 170 },
-    553: { "node1": 170, "node2": 171 },
-    554: { "node1": 171, "node2": 172 },
-    555: { "node1": 172, "node2": 173 },
+    596: { 'node1': 213, 'node2': 214 },
+    597: { 'node1': 214, 'node2': 215 },
+    598: { 'node1': 215, 'node2': 216 },
+    599: { 'node1': 216, 'node2': 169 },
+    552: { 'node1': 169, 'node2': 170 },
+    553: { 'node1': 170, 'node2': 171 },
+    554: { 'node1': 171, 'node2': 172 },
+    555: { 'node1': 172, 'node2': 173 },
 
-    694: { "node1": 213, "node2": 267 },
-    695: { "node1": 267, "node2": 214 },
-    696: { "node1": 214, "node2": 268 },
-    697: { "node1": 268, "node2": 215 },
-    698: { "node1": 215, "node2": 269 },
-    699: { "node1": 269, "node2": 216 },
-    700: { "node1": 216, "node2": 270 },
-    701: { "node1": 270, "node2": 169 },
-    600: { "node1": 169, "node2": 217 },
-    601: { "node1": 217, "node2": 170 },
-    602: { "node1": 170, "node2": 218 },
-    603: { "node1": 218, "node2": 171 },
-    604: { "node1": 171, "node2": 219 },
-    605: { "node1": 219, "node2": 172 },
-    606: { "node1": 172, "node2": 220 },
-    607: { "node1": 220, "node2": 173 },
+    694: { 'node1': 213, 'node2': 267 },
+    695: { 'node1': 267, 'node2': 214 },
+    696: { 'node1': 214, 'node2': 268 },
+    697: { 'node1': 268, 'node2': 215 },
+    698: { 'node1': 215, 'node2': 269 },
+    699: { 'node1': 269, 'node2': 216 },
+    700: { 'node1': 216, 'node2': 270 },
+    701: { 'node1': 270, 'node2': 169 },
+    600: { 'node1': 169, 'node2': 217 },
+    601: { 'node1': 217, 'node2': 170 },
+    602: { 'node1': 170, 'node2': 218 },
+    603: { 'node1': 218, 'node2': 171 },
+    604: { 'node1': 171, 'node2': 219 },
+    605: { 'node1': 219, 'node2': 172 },
+    606: { 'node1': 172, 'node2': 220 },
+    607: { 'node1': 220, 'node2': 173 },
 
-    //459: {top: 125, left: 100},
-    //460: {top: 125, left: 200},
-    //461: {top: 125, left: 300},
-    702: { "node1": 270, "node2": 217 },
-    703: { "node1": 217, "node2": 218 },
-    704: { "node1": 218, "node2": 219 },
-    705: { "node1": 219, "node2": 220 },
-    706: { "node1": 220, "node2": 276 },
+    // 459: {top: 125, left: 100},
+    // 460: {top: 125, left: 200},
+    // 461: {top: 125, left: 300},
+    702: { 'node1': 270, 'node2': 217 },
+    703: { 'node1': 217, 'node2': 218 },
+    704: { 'node1': 218, 'node2': 219 },
+    705: { 'node1': 219, 'node2': 220 },
+    706: { 'node1': 220, 'node2': 276 },
 
     // 544: {top: 85, left: 30, transform: 55},
     // 545: {top: 85, left: 80, transform: -55},
@@ -1117,7 +1117,7 @@ export class GridService {
     // 548: {top: 85, left: 230, transform: 55},
     // 549: {top: 85, left: 280, transform: -55},
     // 550: {top: 85, left: 330, transform: 55},
-    869: { "node1": 270, "node2": 271 },
+    869: { 'node1': 270, 'node2': 271 },
     // 462: {top: 85, left: 430, transform: 55},
     // 463: {top: 85, left: 480, transform: -55},
     // 464: {top: 85, left: 530, transform: 55},
@@ -1135,7 +1135,7 @@ export class GridService {
     // 553: {top: 35, left: 560},
     // 554: {top: 35, left: 663},
     // 555: {top: 35, left: 766},
-  }
+  };
 
 
 
@@ -1148,207 +1148,207 @@ export class GridService {
   ) {}
 
   generateEsperGrid(esper, size) {
-    let nodesForGrid = []
+    const nodesForGrid = [];
 
     this.gridNodes.forEach(node => {
       if (esper.board.nodes[node.toString()]) {
-        let buff = esper.board.nodes[node.toString()].skill
+        const buff = esper.board.nodes[node.toString()].skill;
 
         nodesForGrid[node] = {
-          type: "text",
+          type: 'text',
           value: this.skillService.formatEffect(esper, buff, buff.effects[0], false)
-        }
+        };
       } else if (node === 0) {
         nodesForGrid[node] = {
-          type: "center"
-        }
+          type: 'center'
+        };
       } else {
         nodesForGrid[node] = {
-          type: "hidden"
-        }
+          type: 'hidden'
+        };
       }
-    })
+    });
 
     let linesHtml = '';
     esper.board.lines.forEach(line => {
-      let html = '<div class="line" style="top: ' + (this.lines[line].top * size / 1000) + 'px; left: ' + (this.lines[line].left * size / 1000) + 'px;'
+      let html = '<div class="line" style="top: ' + (this.lines[line].top * size / 1000) + 'px; left: ' + (this.lines[line].left * size / 1000) + 'px;';
       if (this.lines[line].transform) {
-        html = html + 'transform: rotate(' + this.lines[line].transform + 'deg);'
+        html = html + 'transform: rotate(' + this.lines[line].transform + 'deg);';
       }
-      html = html + '"></div>'
-      linesHtml += html
-    })
+      html = html + '"></div>';
+      linesHtml += html;
+    });
 
-    this.generateNodesHierachy(esper)
+    this.generateNodesHierachy(esper);
 
     return {
       lines: linesHtml,
       nodesForGrid: nodesForGrid,
       gridNodes: this.gridNodes
-    }
+    };
   }
 
   generateUnitGrid(unit, size, exJob = false) {
-    let nodesForGrid = []
+    const nodesForGrid = [];
 
     if (exJob) {
       this.EXgridNodes.forEach(node => {
         if (unit.board.nodes[node.toString()]) {
-          let skill = unit.board.nodes[node.toString()].skill
-          let text = ""
+          const skill = unit.board.nodes[node.toString()].skill;
+          let text = '';
 
-          if (unit.board.nodes[node.toString()].type == "buff") {
-            text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
+          if (unit.board.nodes[node.toString()].type == 'buff') {
+            text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
-            text = this.nameService.getName(skill)
+            text = this.nameService.getName(skill);
           }
 
           nodesForGrid[node] = {
-            type: "text",
+            type: 'text',
             subType: unit.board.nodes[node.toString()].type,
             value: text
-          }
+          };
         } else if (node === 0) {
           nodesForGrid[node] = {
-            type: "center"
-          }
+            type: 'center'
+          };
         } else {
           nodesForGrid[node] = {
-            type: "hidden"
-          }
+            type: 'hidden'
+          };
         }
-      })
+      });
     } else {
       this.gridNodes.forEach(node => {
         if (unit.board.nodes[node.toString()]) {
-          let skill = unit.board.nodes[node.toString()].skill
-          let text = ""
+          const skill = unit.board.nodes[node.toString()].skill;
+          let text = '';
 
-          if (unit.board.nodes[node.toString()].type == "buff") {
-            text = this.skillService.formatEffect(unit, skill, skill.effects[0], false)
+          if (unit.board.nodes[node.toString()].type == 'buff') {
+            text = this.skillService.formatEffect(unit, skill, skill.effects[0], false);
           } else {
-            text = this.nameService.getName(skill)
+            text = this.nameService.getName(skill);
           }
 
           nodesForGrid[node] = {
-            type: "text",
+            type: 'text',
             subType: unit.board.nodes[node.toString()].type,
             value: text
-          }
+          };
         } else if (node === 0) {
           nodesForGrid[node] = {
-            type: "center"
-          }
+            type: 'center'
+          };
         } else {
           nodesForGrid[node] = {
-            type: "hidden"
-          }
+            type: 'hidden'
+          };
         }
-      })
+      });
     }
 
     let linesHtml = '';
-    let lines = exJob ? this.EXlines : this.lines
+    const lines = exJob ? this.EXlines : this.lines;
 
     unit.board.lines.forEach(line => {
       if (lines[line]) {
-        let html = '<div class="line" style="top: ' + (lines[line].top * size / 1000) + 'px; left: ' + (lines[line].left * size / 1000) + 'px;'
+        let html = '<div class="line" style="top: ' + (lines[line].top * size / 1000) + 'px; left: ' + (lines[line].left * size / 1000) + 'px;';
         if (lines[line].transform) {
-          html = html + 'transform: rotate(' + lines[line].transform + 'deg);'
+          html = html + 'transform: rotate(' + lines[line].transform + 'deg);';
         }
-        html = html + '"></div>'
-        linesHtml += html
+        html = html + '"></div>';
+        linesHtml += html;
       }
-    })
+    });
 
     if (exJob) {
-      this.generateNodesHierachyEX(unit)
+      this.generateNodesHierachyEX(unit);
     } else {
-      this.generateNodesHierachy(unit)
+      this.generateNodesHierachy(unit);
     }
 
     return {
       lines: linesHtml,
       nodesForGrid: nodesForGrid,
       gridNodes: exJob ? this.EXgridNodes : this.gridNodes
-    }
+    };
   }
 
   generateNodesHierachyEX(item, lines = null, node = 0) {
     if (!lines) {
-      lines = JSON.parse(JSON.stringify(item.board.lines))
+      lines = JSON.parse(JSON.stringify(item.board.lines));
     }
 
-    let childNodes = this.searchChildNodesEX(lines, node)
+    const childNodes = this.searchChildNodesEX(lines, node);
     if (node !== 0) {
-      item.board.nodes[node].children = childNodes
+      item.board.nodes[node].children = childNodes;
     }
 
     childNodes.forEach(childNode => {
-      item.board.nodes[childNode].parent = node
-      this.generateNodesHierachyEX(item, lines, childNode)
-    })
+      item.board.nodes[childNode].parent = node;
+      this.generateNodesHierachyEX(item, lines, childNode);
+    });
   }
 
   private searchChildNodesEX(lines, node) {
-    let childNodes = []
-    let linesToRemove = []
+    const childNodes = [];
+    const linesToRemove = [];
 
     lines.forEach((line, lineIndex) => {
       if (this.EXnodeLine[line].node1 === node) {
-        childNodes.push(this.EXnodeLine[line].node2)
-        linesToRemove.push(lineIndex)
+        childNodes.push(this.EXnodeLine[line].node2);
+        linesToRemove.push(lineIndex);
 
       } else if (this.EXnodeLine[line].node2 === node) {
-        childNodes.push(this.EXnodeLine[line].node1)
-        linesToRemove.push(lineIndex)
+        childNodes.push(this.EXnodeLine[line].node1);
+        linesToRemove.push(lineIndex);
       }
-    })
+    });
 
-    linesToRemove.sort(function(a, b){return b-a});
+    linesToRemove.sort(function(a, b) {return b - a; });
     linesToRemove.forEach(line => {
-      lines.splice(line, 1)
-    })
+      lines.splice(line, 1);
+    });
 
-    return childNodes
+    return childNodes;
   }
 
   generateNodesHierachy(item, lines = null, node = 0) {
     if (!lines) {
-      lines = JSON.parse(JSON.stringify(item.board.lines))
+      lines = JSON.parse(JSON.stringify(item.board.lines));
     }
 
-    let childNodes = this.searchChildNodes(lines, node)
+    const childNodes = this.searchChildNodes(lines, node);
     if (node !== 0) {
-      item.board.nodes[node].children = childNodes
+      item.board.nodes[node].children = childNodes;
     }
 
     childNodes.forEach(childNode => {
-      item.board.nodes[childNode].parent = node
-      this.generateNodesHierachy(item, lines, childNode)
-    })
+      item.board.nodes[childNode].parent = node;
+      this.generateNodesHierachy(item, lines, childNode);
+    });
   }
 
   private searchChildNodes(lines, node) {
-    let childNodes = []
-    let linesToRemove = []
+    const childNodes = [];
+    const linesToRemove = [];
 
     lines.forEach((line, lineIndex) => {
       if (this.nodeLine[line].node1 === node) {
-        childNodes.push(this.nodeLine[line].node2)
-        linesToRemove.push(lineIndex)
+        childNodes.push(this.nodeLine[line].node2);
+        linesToRemove.push(lineIndex);
 
       } else if (this.nodeLine[line].node2 === node) {
-        childNodes.push(this.nodeLine[line].node1)
-        linesToRemove.push(lineIndex)
+        childNodes.push(this.nodeLine[line].node1);
+        linesToRemove.push(lineIndex);
       }
-    })
+    });
 
-    linesToRemove.sort(function(a, b){return b-a});
+    linesToRemove.sort(function(a, b) {return b - a; });
     linesToRemove.forEach(line => {
-      lines.splice(line, 1)
-    })
+      lines.splice(line, 1);
+    });
 
-    return childNodes
+    return childNodes;
   }
 }

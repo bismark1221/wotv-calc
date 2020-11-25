@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { NavService } from '../services/nav.service'
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-contact',
@@ -25,7 +25,7 @@ export class ContactComponent {
       this.getTranslation();
     });
 
-    this.navService.setTitle("Contact");
+    this.navService.setTitle('Contact');
   }
 
   private getTranslation() {

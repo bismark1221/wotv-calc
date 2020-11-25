@@ -3,19 +3,19 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class Card {
   dataId?;
-  rarity = "N";
+  rarity = 'N';
   names: any = {
     en: 'New Vision Card'
   };
-  name = "New Vision Card";
+  name = 'New Vision Card';
 
   stats = {
-    "HP": {},
-    "ATK": {},
-    "MAG": {}
-  }
+    'HP': {},
+    'ATK': {},
+    'MAG': {}
+  };
 
-  image = "ITEMcrst";
+  image = 'ITEMcrst';
 
   unitBuffs = [];
   partyBuffs;
@@ -23,14 +23,14 @@ export class Card {
   cost;
 
   // For builder
-  buffs
-  buff
-  maxLevel
-  star
-  level
-  tableLevels
-  statsType
-  skills
+  buffs;
+  buff;
+  maxLevel;
+  star;
+  level;
+  tableLevels;
+  statsType;
+  skills;
 
 
   constructFromJson(card: Card, translateService: TranslateService): void {
@@ -59,12 +59,12 @@ export class Card {
     this.star = 0;
     this.level = 1;
 
-    this.updateMaxLevel()
-    this.changeLevel(nameService, skillService)
+    this.updateMaxLevel();
+    this.changeLevel(nameService, skillService);
   }
 
   private getLevelPerStar(rarity, star) {
-    let levelPerStar = {
+    const levelPerStar = {
       'UR' : {
         0: 40,
         1: 55,
@@ -100,16 +100,16 @@ export class Card {
         3: 25,
         4: 30
       }
-    }
+    };
 
-    return star ? levelPerStar[rarity][star] : levelPerStar[rarity][0]
+    return star ? levelPerStar[rarity][star] : levelPerStar[rarity][0];
   }
 
   private updateMaxLevel() {
-    this.maxLevel = this.getLevelPerStar(this.rarity, this.star)
+    this.maxLevel = this.getLevelPerStar(this.rarity, this.star);
 
     if (this.level > this.maxLevel) {
-      this.level = this.maxLevel
+      this.level = this.maxLevel;
     }
 
     this.tableLevels = [];
@@ -120,46 +120,46 @@ export class Card {
 
   changeLevel(nameService, skillService) {
     this.statsType.forEach(stat => {
-      let min = this.stats[stat].min
-      let max = this.stats[stat].max
+      const min = this.stats[stat].min;
+      const max = this.stats[stat].max;
 
-      this.stats[stat].total = Math.floor(min + ((max - min) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
-    })
+      this.stats[stat].total = Math.floor(min + ((max - min) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
+    });
 
-    let buffs = {
+    const buffs = {
       self: {},
       party: {}
-    }
+    };
 
-    this.skills = []
+    this.skills = [];
 
     this.unitBuffs.forEach(buff => {
       if (buff.classic.type == 'support') {
         buff.classic.effects.forEach(effect => {
-          buffs.self[effect.type] = {}
-          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
-          buffs.self[effect.type].calcType = effect.calcType
+          buffs.self[effect.type] = {};
+          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
+          buffs.self[effect.type].calcType = effect.calcType;
 
           if (buff.cond) {
-            buffs.self[effect.type].cond = buff.cond
+            buffs.self[effect.type].cond = buff.cond;
           }
-        })
+        });
 
         if (buff.awake && this.star > 0) {
           buff.awake.effects.forEach(effect => {
-            buffs.self[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)))
-          })
+            buffs.self[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
+          });
         }
 
         if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
           buff.lvmax.effects.forEach(effect => {
-            buffs.self[effect.type].value += effect.minValue
-          })
+            buffs.self[effect.type].value += effect.minValue;
+          });
         }
       } else {
-        let skill = buff.classic
-        skill.level = this.level
-        skill.name = nameService.getName(skill)
+        const skill = buff.classic;
+        skill.level = this.level;
+        skill.name = nameService.getName(skill);
 
         skill.effects.forEach(effect => {
           effect.formatHtml = skillService.formatEffect(this, skill, effect);
@@ -174,71 +174,71 @@ export class Card {
         skillService.formatRange(this, skill);
 
         if (buff.cond) {
-          skill.cond = buff.cond
+          skill.cond = buff.cond;
         }
 
-        this.skills.push(skill)
+        this.skills.push(skill);
       }
-    })
+    });
 
     this.partyBuffs.forEach(buff => {
       buff.classic.effects.forEach(effect => {
-        buffs.party[effect.type] = {}
-        buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)))
-        buffs.party[effect.type].calcType = effect.calcType
+        buffs.party[effect.type] = {};
+        buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
+        buffs.party[effect.type].calcType = effect.calcType;
 
         if (buff.cond) {
-          buffs.party[effect.type].cond = buff.cond
+          buffs.party[effect.type].cond = buff.cond;
         }
-      })
+      });
 
       if (buff.awake && this.star > 0) {
         buff.awake.effects.forEach(effect => {
-          buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)))
-        })
+          buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
+        });
       }
 
       if (buff.lvmax && this.level == this.getLevelPerStar(this.rarity, 4)) {
         buff.lvmax.effects.forEach(effect => {
-          buffs.party[effect.type].value += effect.minValue
-        })
+          buffs.party[effect.type].value += effect.minValue;
+        });
       }
-    })
+    });
 
-    this.buffs = buffs
+    this.buffs = buffs;
 
-    this.buff = {}
-    let types = ['self', 'party']
+    this.buff = {};
+    const types = ['self', 'party'];
     types.forEach(type => {
       this.buff[type] = [];
       Object.keys(buffs[type]).forEach(effect => {
-        let formattedEffect = {
+        const formattedEffect = {
           type: effect,
           value: buffs[type][effect].value,
           calcType: buffs[type][effect].calcType
-        }
+        };
         this.buff[type].push(skillService.formatEffect(this, {}, formattedEffect));
-      })
-    })
+      });
+    });
   }
 
   maxCard(nameService, skillService) {
-    this.star = 4
-    this.level = this.getLevelPerStar(this.rarity, this.star)
+    this.star = 4;
+    this.level = this.getLevelPerStar(this.rarity, this.star);
 
-    this.updateMaxLevel()
-    this.changeLevel(nameService, skillService)
+    this.updateMaxLevel();
+    this.changeLevel(nameService, skillService);
   }
 
   getAvailableStats() {
-    let availableStats = []
+    const availableStats = [];
 
     Object.keys(this.stats).forEach(stat => {
-      if (typeof(this.stats[stat].min) == "number") {
-        availableStats.push(stat)
+      if (typeof(this.stats[stat].min) == 'number') {
+        availableStats.push(stat);
       }
-    })
+    });
 
-    return availableStats
+    return availableStats;
   }
 }
