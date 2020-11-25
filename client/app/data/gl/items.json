@@ -2204,6 +2204,76 @@
       "fr": "Souvenir de Paladin lunaire (Rouge)"
     }
   },
+  "IT_JB_MM_FF4_ROSA": {
+    "dataId": "IT_JB_MM_FF4_ROSA",
+    "names": {
+      "en": "White Mage of Baron's Memory (Green)",
+      "fr": "Souvenir du Mage blanc de Baron (Vert)"
+    }
+  },
+  "IT_JB_MM_FF4_ROSA_2": {
+    "dataId": "IT_JB_MM_FF4_ROSA_2",
+    "names": {
+      "en": "White Mage of Baron's Memory (Blue)",
+      "fr": "Souvenir du Mage blanc de Baron (Bleu)"
+    }
+  },
+  "IT_JB_MM_FF4_ROSA_3": {
+    "dataId": "IT_JB_MM_FF4_ROSA_3",
+    "names": {
+      "en": "White Mage of Baron's Memory (Purple)",
+      "fr": "Souvenir du Mage blanc de Baron (Violet)"
+    }
+  },
+  "IT_JB_MM_FF4_ROSA_4": {
+    "dataId": "IT_JB_MM_FF4_ROSA_4",
+    "names": {
+      "en": "White Mage of Baron's Memory (Yellow)",
+      "fr": "Souvenir du Mage blanc de Baron (Jaune)"
+    }
+  },
+  "IT_JB_MM_FF4_ROSA_5": {
+    "dataId": "IT_JB_MM_FF4_ROSA_5",
+    "names": {
+      "en": "White Mage of Baron's Memory (Red)",
+      "fr": "Souvenir du Mage blanc de Baron (Rouge)"
+    }
+  },
+  "IT_JB_MM_FF4_KAIN": {
+    "dataId": "IT_JB_MM_FF4_KAIN",
+    "names": {
+      "en": "Dragoon of Baron's Memory (Green)",
+      "fr": "Souvenir du Dragonnier de Baron (Vert)"
+    }
+  },
+  "IT_JB_MM_FF4_KAIN_2": {
+    "dataId": "IT_JB_MM_FF4_KAIN_2",
+    "names": {
+      "en": "Dragoon of Baron's Memory (Blue)",
+      "fr": "Souvenir du Dragonnier de Baron (Bleu)"
+    }
+  },
+  "IT_JB_MM_FF4_KAIN_3": {
+    "dataId": "IT_JB_MM_FF4_KAIN_3",
+    "names": {
+      "en": "Dragoon of Baron's Memory (Purple)",
+      "fr": "Souvenir du Dragonnier de Baron (Violet)"
+    }
+  },
+  "IT_JB_MM_FF4_KAIN_4": {
+    "dataId": "IT_JB_MM_FF4_KAIN_4",
+    "names": {
+      "en": "Dragoon of Baron's Memory (Yellow)",
+      "fr": "Souvenir du Dragonnier de Baron (Jaune)"
+    }
+  },
+  "IT_JB_MM_FF4_KAIN_5": {
+    "dataId": "IT_JB_MM_FF4_KAIN_5",
+    "names": {
+      "en": "Dragoon of Baron's Memory (Red)",
+      "fr": "Souvenir du Dragonnier de Baron (Rouge)"
+    }
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3567,6 +3637,20 @@
     "names": {
       "en": "Cecil Unit Shard",
       "fr": "Fragment d'unité de Cécil"
+    }
+  },
+  "IT_PI_FF4_ROSA": {
+    "dataId": "IT_PI_FF4_ROSA",
+    "names": {
+      "en": "Rosa Unit Shard",
+      "fr": "Fragment d'unité de Rosa"
+    }
+  },
+  "IT_PI_FF4_KAIN": {
+    "dataId": "IT_PI_FF4_KAIN",
+    "names": {
+      "en": "Kain Unit Shard",
+      "fr": "Fragments d'unité de Kaïn"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -5169,6 +5253,22 @@
     },
     "recipe": true
   },
+  "IT_AF_FF4_SPE_000": {
+    "dataId": "IT_AF_FF4_SPE_000",
+    "names": {
+      "en": "Wind Spear Crafting Recipe",
+      "fr": "Recette d'artisanat : Lance zéphyr"
+    },
+    "recipe": true
+  },
+  "IT_AF_FF4_BOW_000": {
+    "dataId": "IT_AF_FF4_BOW_000",
+    "names": {
+      "en": "Elven Bow Crafting Recipe",
+      "fr": "Recette d'artisanat : Arc elfique"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5491,6 +5591,13 @@
       "fr": "Médaille d'ami"
     }
   },
+  "IT_EC_MEDAL_BF": {
+    "dataId": "IT_EC_MEDAL_BF",
+    "names": {
+      "en": "Black Friday Medal",
+      "fr": "Médaille du Black Friday"
+    }
+  },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
     "names": {
@@ -5764,6 +5871,20 @@
       "fr": "Médaille d'invocation A [FFIV]"
     }
   },
+  "IT_EC_FF4_2_B": {
+    "dataId": "IT_EC_FF4_2_B",
+    "names": {
+      "en": "FFIV Summon Medal B",
+      "fr": "Médaille d'invocation B [FFIV]"
+    }
+  },
+  "IT_EC_FF4_3": {
+    "dataId": "IT_EC_FF4_3",
+    "names": {
+      "en": "[FFIV] Trials of Reckoning Medal",
+      "fr": "[FFIV] Médaille des Épreuves du Jugement"
+    }
+  },
   "IT_US_G_FFT_01": {
     "dataId": "IT_US_G_FFT_01",
     "names": {
@@ -5855,6 +5976,13 @@
       "fr": "Ticket sélectionneur de 200 fragments de pensée élémentaires"
     }
   },
+  "IT_US_GL_SE_PI_COM_3": {
+    "dataId": "IT_US_GL_SE_PI_COM_3",
+    "names": {
+      "en": "Select Element Fragment of Thought x340 Summon Ticket",
+      "fr": "Ticket sélectionneur de 340 fragments de pensée élémentaires"
+    }
+  },
   "IT_US_SE_PI_COM_02": {
     "dataId": "IT_US_SE_PI_COM_02",
     "names": {
@@ -5881,6 +6009,48 @@
     "names": {
       "en": "Select Awakening Prism x200 Summon Ticket",
       "fr": "Ticket sélectionneur de 200 prismes d'éveil"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_02": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_02",
+    "names": {
+      "en": "Select Awakening Prism x370 Summon Ticket",
+      "fr": "Ticket sélectionneur de 370 prismes d'éveil"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_03": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_03",
+    "names": {
+      "en": "Select Awakening Soul (6★) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 âmes d'éveil (6★)"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_04": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_04",
+    "names": {
+      "en": "Select Awakening Soul (5★) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 âmes d'éveil (5★)"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_05": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_05",
+    "names": {
+      "en": "Select Awakening Soul (4★) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 âmes d'éveil (4★)"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_06": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_06",
+    "names": {
+      "en": "Select Awakening Soul (3★) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 âmes d'éveil (3★)"
+    }
+  },
+  "IT_US_GL_SE_AW-ITEM_07": {
+    "dataId": "IT_US_GL_SE_AW-ITEM_07",
+    "names": {
+      "en": "Select Awakening Soul (2★) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 âmes d'éveil (2★)"
     }
   },
   "IT_US_SE_PI_COM_01": {
@@ -6128,6 +6298,20 @@
       "fr": "[Anniversaire des 6 mois] Ticket sélectionneur d'unité"
     }
   },
+  "IT_US_SE_R_UR_U_04": {
+    "dataId": "IT_US_SE_R_UR_U_04",
+    "names": {
+      "en": "[Black Friday Celebration] Select Unit Summon Ticket",
+      "fr": "[Black Friday] Ticket sélectionneur d'unité"
+    }
+  },
+  "IT_US_SE_R_UR_U_05": {
+    "dataId": "IT_US_SE_R_UR_U_05",
+    "names": {
+      "en": "[Cyber Monday] Select Unit Summon Ticket",
+      "fr": "[Cyber Monday] Ticket sélectionneur d'unité"
+    }
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -6191,6 +6375,13 @@
       "fr": "[Sortie du chapitre 10 !] Ticket d'invocation d'atout-vision MR+ garanti"
     }
   },
+  "IT_US_G_U_SSR_UR_10": {
+    "dataId": "IT_US_G_U_SSR_UR_10",
+    "names": {
+      "en": "[Black Friday Celebration] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "[Black Friday] Ticket d'invocation d'unité MR+ garantie"
+    }
+  },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
     "names": {
@@ -6203,6 +6394,20 @@
     "names": {
       "en": "[Six-Month Anniversary] Select Vision Card Summon Ticket",
       "fr": "[Anniversaire des 6 mois] Ticket sélectionneur d'atout-vision"
+    }
+  },
+  "IT_US_SE_R_UR_V_GL02": {
+    "dataId": "IT_US_SE_R_UR_V_GL02",
+    "names": {
+      "en": "[Black Friday Celebration] Select Vision Card Summon Ticket",
+      "fr": "[Black Friday] Ticket sélectionneur d'atout-vision"
+    }
+  },
+  "IT_US_SE_R_UR_V_GL03": {
+    "dataId": "IT_US_SE_R_UR_V_GL03",
+    "names": {
+      "en": "[Cyber Monday] Select Vision Card Summon Ticket",
+      "fr": "[Cyber Monday] Ticket sélectionneur d'atout-vision"
     }
   },
   "IT_US_SE_AW-ITEM_04": {
@@ -6786,6 +6991,13 @@
       "fr": "Fragment de l'atout-vision : Chocobo, compagnon adoré"
     }
   },
+  "IT_VPI_FF4_DMNW": {
+    "dataId": "IT_VPI_FF4_DMNW",
+    "names": {
+      "en": "\"Demon Wall\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Mur démonique"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7017,6 +7229,13 @@
       "fr": "Ticket sélectionneur de 150 magilithes élémentaires (L)"
     }
   },
+  "IT_US_GL_SE_SB_EXP_8": {
+    "dataId": "IT_US_GL_SE_SB_EXP_8",
+    "names": {
+      "en": "Select Element Magicite (XL) x270 Summon Ticket",
+      "fr": "Ticket sélectionneur de 270 magilithes élémentaires (XL)"
+    }
+  },
   "IT_US_GL_SE_VPI_01": {
     "dataId": "IT_US_GL_SE_VPI_01",
     "names": {
@@ -7108,6 +7327,13 @@
       "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_14": {
+    "dataId": "IT_US_GL_SE_VPI_14",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7178,6 +7404,13 @@
       "fr": "[Halloween] Ticket sélectionneur de 40 fragments d'unité UR"
     }
   },
+  "IT_US_SE_PI_GL06": {
+    "dataId": "IT_US_SE_PI_GL06",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
+    }
+  },
   "IT_US_N_GACHA_10": {
     "dataId": "IT_US_N_GACHA_10",
     "names": {
@@ -7190,6 +7423,13 @@
     "names": {
       "en": "[Six-Month Anniversary] Select Secret Book of Refinement x100 Summon Ticket",
       "fr": "[Anniversaire des 6 mois] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
+  "IT_US_SE_AF_AW_02": {
+    "dataId": "IT_US_SE_AF_AW_02",
+    "names": {
+      "en": "Select Secret Book of Refinement x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 livres secrets de l'amélioration"
     }
   },
   "IT_US_G_N_TW_10": {
@@ -7225,6 +7465,27 @@
     "names": {
       "en": "Trials of Reckoning Medal",
       "fr": "Médaille des Épreuves du Jugement"
+    }
+  },
+  "IT_PT_SKIP_FF4_1": {
+    "dataId": "IT_PT_SKIP_FF4_1",
+    "names": {
+      "en": "[FFIV] Trials of Reckoning Quest Skip Ticket",
+      "fr": "[FFIV] Ticket évit'quête des Épreuves du Jugement"
+    }
+  },
+  "IT_PT_BSSKIP_FF4_1": {
+    "dataId": "IT_PT_BSSKIP_FF4_1",
+    "names": {
+      "en": "[FFIV] Trials of Reckoning Boss Skip Ticket",
+      "fr": "[FFIV] Ticket évit'boss des Épreuves du Jugement"
+    }
+  },
+  "IT_PT_BOSS_FF4_1": {
+    "dataId": "IT_PT_BOSS_FF4_1",
+    "names": {
+      "en": "[FFIV] Boss Battle Ticket",
+      "fr": "[FFIV] Ticket de combat de boss"
     }
   },
   "IT_JP_UP_01": {

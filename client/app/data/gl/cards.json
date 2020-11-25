@@ -6384,6 +6384,389 @@
       }
     ]
   },
+  "VC_FF4_DMNW": {
+    "dataId": "VC_FF4_DMNW",
+    "names": {
+      "en": "Demon Wall",
+      "fr": "Mur démonique"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 45,
+        "max": 352
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 34,
+        "max": 132
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 7,
+        "max": 26
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff04ddmnw",
+    "slug": "demon-wall",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 7,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 6,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_GS",
+            "fr": "SK_VC_FF4_DMNW_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_GSAW",
+            "fr": "SK_VC_FF4_DMNW_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "SLASH_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_GSMAX",
+            "fr": "SK_VC_FF4_DMNW_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        }
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_P",
+            "fr": "SK_VC_FF4_DMNW_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_PAW",
+            "fr": "SK_VC_FF4_DMNW_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF4_DMNW_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF4_DMNW_PMAX",
+            "fr": "SK_VC_FF4_DMNW_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_FF4_P_KAIN"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P2",
+            "fr": "SK_GL_VC_FF4_DMNW_P2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P2AW",
+            "fr": "SK_GL_VC_FF4_DMNW_P2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P2MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P2MAX",
+            "fr": "SK_GL_VC_FF4_DMNW_P2MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_FF4_P_CECL",
+              "UN_FF4_P_ROSA"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P3",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P3",
+            "fr": "SK_GL_VC_FF4_DMNW_P3"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P3AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P3AW",
+            "fr": "SK_GL_VC_FF4_DMNW_P3AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_FF4_DMNW_P3MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_FF4_DMNW_P3MAX",
+            "fr": "SK_GL_VC_FF4_DMNW_P3MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -8071,7 +8454,7 @@
     "dataId": "VC_FF14_MV2",
     "names": {
       "en": "Shadowbringers",
-      "fr": "Guerriers des Ténèbres"
+      "fr": "Shadowbringers"
     },
     "cost": 50,
     "rarity": "MR",

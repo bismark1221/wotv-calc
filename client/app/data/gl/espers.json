@@ -27931,7 +27931,7 @@
         "mainSkill": false,
         "names": {
           "en": "Mind Blast",
-          "fr": "Explosion mentale"
+          "fr": "Psychochoc"
         },
         "target": "all",
         "cost": {
@@ -35916,5 +35916,1327 @@
       ]
     },
     "slug": "chocobo"
+  },
+  "UN_FF4_S_DMNW": {
+    "dataId": "UN_FF4_S_DMNW",
+    "names": {
+      "en": "Demon Wall",
+      "fr": "Mur démonique"
+    },
+    "rarity": "N",
+    "cost": 40,
+    "skills": [
+      {
+        "unlockStar": null,
+        "effects": [
+          {
+            "side": "ENNEMIES",
+            "type": "DARK_RES",
+            "minValue": -30,
+            "maxValue": -60,
+            "calcType": "resistance",
+            "dataId": "BUFF_WTH_DARK03"
+          },
+          {
+            "side": "TEAM",
+            "type": "ATK",
+            "minValue": 30,
+            "maxValue": 60,
+            "calcType": "percent",
+            "dataId": "BUFF_WTH_DARK04"
+          }
+        ],
+        "dataId": "SK_SMN_DMNW",
+        "type": "esper",
+        "mainSkill": false,
+        "names": {
+          "en": "Landslide Crash",
+          "fr": "Collision tellurique"
+        },
+        "target": "target",
+        "cost": {
+          "type": "TP"
+        },
+        "count": 1,
+        "maxLevel": 20,
+        "range": {
+          "h": 5,
+          "l": 3,
+          "s": 10,
+          "w": 2
+        },
+        "based": "physic",
+        "hit": 100,
+        "crt_hit": -15,
+        "damage": {
+          "minValue": 65,
+          "maxValue": 100,
+          "type": "strike",
+          "effType": "DAMAGE"
+        },
+        "elem": [
+          "neutral"
+        ]
+      }
+    ],
+    "stats": {
+      "HP": [
+        {
+          "min": 95,
+          "max": 479
+        },
+        {
+          "min": 504,
+          "max": 974
+        }
+      ],
+      "TP": [
+        {
+          "min": 16,
+          "max": 21
+        },
+        {
+          "min": 22,
+          "max": 28
+        }
+      ],
+      "AP": [
+        {
+          "min": 23,
+          "max": 28
+        },
+        {
+          "min": 29,
+          "max": 35
+        }
+      ],
+      "ATK": [
+        {
+          "min": 31,
+          "max": 53
+        },
+        {
+          "min": 55,
+          "max": 80
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 13,
+          "max": 20
+        },
+        {
+          "min": 21,
+          "max": 29
+        }
+      ],
+      "DEX": [
+        {
+          "min": 25,
+          "max": 37
+        },
+        {
+          "min": 39,
+          "max": 53
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 10
+        },
+        {
+          "min": 11,
+          "max": 12
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 28,
+          "max": 40
+        },
+        {
+          "min": 42,
+          "max": 57
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {},
+        {}
+      ],
+      "EARTH_RES": [
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {},
+        {}
+      ],
+      "LIGHT_RES": [
+        {
+          "min": -5,
+          "max": -5
+        },
+        {
+          "min": -5,
+          "max": -5
+        }
+      ],
+      "DARK_RES": [
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ],
+    "element": "dark",
+    "image": "ff04dmnw1",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_DMNW_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "BUFF_DMNW_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "LIGHT_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "3": {
+          "dataId": "BUFF_DMNW_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_DMNW_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "SLASH_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "BUFF_DMNW_05",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "STOP_RES",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_05",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "6": {
+          "dataId": "BUFF_DMNW_06",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_06",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "BUFF_DMNW_07",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_07",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "8": {
+          "dataId": "BUFF_DMNW_08",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_08",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "BUFF_DMNW_09",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STONE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_09",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "10": {
+          "dataId": "BUFF_DMNW_10",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STONE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_10",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_DMNW_11",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "LIGHT_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_11",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_DMNW_12",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_12",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "BUFF_DMNW_13",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "LIGHT_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_13",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "14": {
+          "dataId": "BUFF_DMNW_14",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "LIGHT_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_14",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "BUFF_DMNW_15",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "SLASH_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_15",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "16": {
+          "dataId": "BUFF_DMNW_16",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "STOP_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_16",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "17": {
+          "dataId": "BUFF_DMNW_17",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "DARK_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_17",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "18": {
+          "dataId": "BUFF_DMNW_18",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "DARK_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_18",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_DMNW_19",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_19",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "BUFF_DMNW_20",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "STONE_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_20",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "22": {
+          "dataId": "BUFF_DMNW_21",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "STONE_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_21",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "BUFF_DMNW_22",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "LIGHT_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_22",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "25": {
+          "dataId": "BUFF_DMNW_23",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "LIGHT_RES",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_23",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "27": {
+          "dataId": "BUFF_DMNW_24",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "LIGHT_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_24",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "28": {
+          "dataId": "BUFF_DMNW_25",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "LIGHT_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_25",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_DMNW_26",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "SLASH_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_26",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_DMNW_27",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "SLASH_RES",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_27",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "BUFF_DMNW_28",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "DARK_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_28",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "34": {
+          "dataId": "BUFF_DMNW_29",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "DARK_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_29",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "36": {
+          "dataId": "BUFF_DMNW_30",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_30",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "BUFF_DMNW_31",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_31",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "45": {
+          "dataId": "BUFF_DMNW_32",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "LIGHT_RES",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_32",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "53": {
+          "dataId": "BUFF_DMNW_33",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 80,
+            "effects": [
+              {
+                "type": "SLASH_RES",
+                "minValue": 7,
+                "maxValue": 7,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_DMNW_33",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        23,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117
+      ]
+    },
+    "slug": "demon-wall"
   }
 }
