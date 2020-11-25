@@ -1472,22 +1472,6 @@ export class JsonService {
 
       if (getSlug) {
         item.slug = this.slug.slugify(item.names.en)
-
-        let i = 0
-
-        Object.keys(this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"]).forEach(itemId => {
-          if (this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug
-            || this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug + "-" + i
-          ) {
-            i++;
-          }
-        })
-
-        if (i > 1) {
-          console.log("===== " + type)
-          console.log(item.slug)
-          item.slug =  item.slug + "-" + (i - 1)
-        }
       }
     } else {
       let slug = null
@@ -1532,6 +1516,22 @@ export class JsonService {
         }
       }
     }
+
+    if (getSlug) {
+      let i = 0
+
+      Object.keys(this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"]).forEach(itemId => {
+        if (this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug
+          || this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug + "-" + i
+        ) {
+          i++;
+        }
+      })
+
+      if (i > 1) {
+        item.slug =  item.slug + "-" + (i - 1)
+      }
+      }
   }
 
   private getSkillsAndBuffs(unit) {
