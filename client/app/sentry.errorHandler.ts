@@ -7,6 +7,7 @@ import { environment } from "../environments/environment";
 import { AppComponent } from "./app.component";
 
 import * as Sentry from "@sentry/browser";
+import { Integrations } from "@sentry/tracing";
 
 Sentry.init({
   dsn: "https://f611768edae94682b4a13e7d0923334d@o420310.ingest.sentry.io/5338340",
@@ -14,9 +15,13 @@ Sentry.init({
   // http module exceptions manually in Angular's ErrorHandler and we don't want it to capture the same error twice.
   // Please note that TryCatch configuration requires at least @sentry/browser v5.16.0.
   release: "prod",
-  integrations: [new Sentry.Integrations.TryCatch({
-    XMLHttpRequest: false,
-  })],
+  integrations: [
+    new Sentry.Integrations.TryCatch({
+      XMLHttpRequest: false,
+    }),
+    new Integrations.BrowserTracing()
+  ],
+  tracesSampleRate: 1
 });
 
 @Injectable()
