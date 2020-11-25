@@ -1472,6 +1472,22 @@ export class JsonService {
 
       if (getSlug) {
         item.slug = this.slug.slugify(item.names.en)
+
+        let i = 0
+
+        Object.keys(this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"]).forEach(itemId => {
+          if (this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug
+            || this[this.version]["wotv" + this.upperCaseFirst(type, false) + "s"][itemId].slug == item.slug + "-" + i
+          ) {
+            i++;
+          }
+        })
+
+        if (i > 1) {
+          console.log("===== " + type)
+          console.log(item.slug)
+          item.slug =  item.slug + "-" + (i - 1)
+        }
       }
     } else {
       let slug = null
@@ -3011,9 +3027,9 @@ export class JsonService {
     })
   }
 
-  private upperCaseFirst(text) {
+  private upperCaseFirst(text, fullLowerCase = true) {
     if (text) {
-      return text[0].toUpperCase() + text.slice(1).toLowerCase();
+      return text[0].toUpperCase() + (fullLowerCase ? text.slice(1).toLowerCase() : text.slice(1));
     }
 
     return "";
