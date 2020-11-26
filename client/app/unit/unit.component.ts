@@ -267,6 +267,13 @@ export class UnitComponent implements OnInit {
 
       Object.keys(this.unit.totalEXJobsStats).forEach(stat => {
         this.unit.totalEXJobsStats[stat] = Math.floor(this.unit.totalEXJobsStats[stat])
+        if (this.unit.totalEXJobsStats[stat] != (this.unit.totalJobsStats[stat] + this.unit.EXJobsStats[0][stat])) {
+          if (this.unit.EXJobsStats[0][stat] === 0) {
+            this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat]
+          } else {
+            this.unit.EXJobsStats[0][stat] = this.unit.totalEXJobsStats[stat] - this.unit.totalJobsStats[stat]
+          }
+        }
       })
 
       this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0)
@@ -353,10 +360,15 @@ export class UnitComponent implements OnInit {
     let stats = {};
 
     Object.keys(job.statsModifiers[9]).forEach(stat => {
-      stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1))
+      let existingStat = this.unit.jobsStats[0][stat]
+      stats[stat] = Math.floor(this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat
+      if (stats[stat] < 0) {
+        stats[stat] = 0
+      }
 
       if (!subJob) {
-        this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
+        let newStat = (this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)) - existingStat
+        this.unit.totalEXJobsStats[stat] = this.unit.totalJobsStats[stat] + (newStat < 0 ? 0 : newStat)
       } else {
         this.unit.totalEXJobsStats[stat] += this.unit.stats[stat].ex * (job.statsModifiers[9][stat] / 10000) * (subJob ? 0.5 : 1)
       }
