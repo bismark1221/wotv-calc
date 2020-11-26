@@ -17,7 +17,7 @@
         </div>
         <div *ngIf="guild[statue] > 0">
           <div *ngFor="let stats of statues[statue][guild[statue] - 1]">
-            {{ stats.value + (stats.calcType == "percent" ? "% " : " ") + stats.type }}
+            {{ stats.value + (stats.calcType === "percent" ? "% " : " ") + stats.type }}
           </div>
         </div>
       </td>

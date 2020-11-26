@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
 
 import { MasterRanksService } from '../services/mr.service';
 import { AuthService } from '../services/auth.service';
@@ -9,11 +9,11 @@ import { NavService } from '../services/nav.service';
   templateUrl: './builder.mr.component.html',
   styleUrls: ['./builder.mr.component.css']
 })
-export class BuilderMasterRanksComponent implements OnInit {
-  masterRanks
-  ranks
-  showSave = false
-  version = 'GL'
+export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
+  masterRanks;
+  ranks;
+  showSave = false;
+  version = 'GL';
 
   constructor(
     private masterRanksService: MasterRanksService,
@@ -23,32 +23,32 @@ export class BuilderMasterRanksComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.masterRanks = this.masterRanksService.getMasterRanks()
-    this.ranks = this.masterRanksService.getRanks()
-    this.version = this.navService.getVersion()
+    this.masterRanks = this.masterRanksService.getMasterRanks();
+    this.ranks = this.masterRanksService.getRanks();
+    this.version = this.navService.getVersion();
 
-    this.navService.setTitle("Master Ranks Builder");
+    this.navService.setTitle('Master Ranks Builder');
   }
 
   ngAfterViewInit() {
     setTimeout(() => {
       this.authService.$load.subscribe(load => {
-        this.masterRanks = this.masterRanksService.getMasterRanks()
+        this.masterRanks = this.masterRanksService.getMasterRanks();
       });
-    })
+    });
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {
-        if (user && this.version == 'JP') {
-          this.showSave = true
+        if (user && this.version === 'JP') {
+          this.showSave = true;
         } else {
-          this.showSave = false
+          this.showSave = false;
         }
       });
-    })
+    });
   }
 
   saveMasterRanks() {
-    this.masterRanksService.saveMasterRanks(this.masterRanks)
+    this.masterRanksService.saveMasterRanks(this.masterRanks);
   }
 }

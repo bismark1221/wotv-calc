@@ -10,12 +10,12 @@
     </div>
   </div>
 
-  <div class="loadingBlock" *ngIf="saveStep == 'loading'">
+  <div class="loadingBlock" *ngIf="saveStep === 'loading'">
     <span class="loadingText">Generating link...</span>
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
-  <div class="linkBlock" *ngIf="saveStep == 'link'">
+  <div class="linkBlock" *ngIf="saveStep === 'link'">
     <textarea class="textLink" rows="2">{{ exportableLink }}</textarea>
     <button class="btn btn-main copyButton" (click)="copyLink()">Copy</button>
   </div>

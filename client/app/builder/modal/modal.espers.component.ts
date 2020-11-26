@@ -15,59 +15,59 @@ import { NameService } from '../../services/name.service';
 export class ModalEspersComponent implements OnInit {
   espers;
 
-  searchText = "";
+  searchText = '';
   filters = {
     rarity: [],
     element: []
-  }
-  savedEspers = {}
-  loadEsperId = null
+  };
+  savedEspers = {};
+  loadEsperId = null;
   maxStar = 1;
 
   buffsImage = [
-    "dark_atk",
-    "dark_killer",
-    "dark_res",
-    "earth_atk",
-    "earth_killer",
-    "earth_res",
-    "fire_atk",
-    "fire_killer",
-    "fire_res",
-    "ice_atk",
-    "ice_killer",
-    "ice_res",
-    "light_atk",
-    "light_killer",
-    "light_res",
-    "lightning_atk",
-    "lightning_killer",
-    "lightning_res",
-    "neutral_atk",
-    "neutral_killer",
-    "neutral_res",
-    "water_atk",
-    "water_killer",
-    "water_res",
-    "wind_atk",
-    "wind_killer",
-    "wind_res",
+    'dark_atk',
+    'dark_killer',
+    'dark_res',
+    'earth_atk',
+    'earth_killer',
+    'earth_res',
+    'fire_atk',
+    'fire_killer',
+    'fire_res',
+    'ice_atk',
+    'ice_killer',
+    'ice_res',
+    'light_atk',
+    'light_killer',
+    'light_res',
+    'lightning_atk',
+    'lightning_killer',
+    'lightning_res',
+    'neutral_atk',
+    'neutral_killer',
+    'neutral_res',
+    'water_atk',
+    'water_killer',
+    'water_res',
+    'wind_atk',
+    'wind_killer',
+    'wind_res',
 
-    "magic_atk",
-    "magic_res",
-    "missile_atk",
-    "missile_res",
-    "pierce_atk",
-    "pierce_res",
-    "slash_atk",
-    "slash_res",
-    "strike_atk",
-    "strike_res",
-  ]
+    'magic_atk',
+    'magic_res',
+    'missile_atk',
+    'missile_res',
+    'pierce_atk',
+    'pierce_res',
+    'slash_atk',
+    'slash_res',
+    'strike_atk',
+    'strike_res',
+  ];
 
-  @Input() public modalStep = "select";
-  @Input() public esper
-  @Input() public teamUnitPos
+  @Input() public modalStep = 'select';
+  @Input() public esper;
+  @Input() public teamUnitPos;
 
   constructor(
     private esperService: EsperService,
@@ -85,12 +85,12 @@ export class ModalEspersComponent implements OnInit {
     this.getEspers();
 
     if (this.esper) {
-      this.esper.nodes = {}
+      this.esper.nodes = {};
       Object.keys(this.esper.board.nodes).forEach(nodeId => {
         this.esper.nodes[nodeId] = this.esper.board.nodes[nodeId].activated ? 1 : 0;
-      })
+      });
 
-      this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper)
+      this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper);
       this.maxStar = this.esper.SPs.length;
 
 
@@ -101,47 +101,47 @@ export class ModalEspersComponent implements OnInit {
     if (isNaN(this.teamUnitPos)) {
       this.espers = this.esperService.getEspersForListing(this.filters);
     } else {
-      this.espers = this.teamService.getAvailableEspers(this.teamUnitPos, this.filters)
+      this.espers = this.teamService.getAvailableEspers(this.teamUnitPos, this.filters);
     }
 
-    this.getFilteredEspers()
-    this.translateEspers()
+    this.getFilteredEspers();
+    this.translateEspers();
 
-    this.savedEspers = this.esperService.getSavedEspers()
+    this.savedEspers = this.esperService.getSavedEspers();
   }
 
   private translateEspers() {
     this.espers.forEach(esper => {
-      esper.name = this.nameService.getName(esper)
+      esper.name = this.nameService.getName(esper);
     });
   }
 
   getFilteredEspers() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.espers.filter(esper => {
         return esper.name.toLowerCase().includes(text) || esper.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.espers
+      return this.espers;
     }
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEspers()
+    this.getEspers();
   }
 
   isFilterSelected(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      return false
+    if (this.filters[type].indexOf(value) === -1) {
+      return false;
     } else {
-      return true
+      return true;
     }
   }
 
@@ -150,53 +150,53 @@ export class ModalEspersComponent implements OnInit {
   }
 
   back() {
-    this.modalStep = "select"
+    this.modalStep = 'select';
   }
 
   selectEsper(esperId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedEspers[esperId] && this.savedEspers[esperId].length > 0) {
-      this.loadEsperId = esperId
+      this.loadEsperId = esperId;
 
-      this.modalStep = "load"
+      this.modalStep = 'load';
     } else {
-      this.esper = this.esperService.selectEsperForBuilder(esperId, customData)
+      this.esper = this.esperService.selectEsperForBuilder(esperId, customData);
       this.maxStar = this.esper.SPs.length;
 
-      this.modalStep = "custom"
+      this.modalStep = 'custom';
     }
   }
 
   save() {
-    this.modal.close(this.esper)
+    this.modal.close(this.esper);
   }
 
   changeStar(value) {
-    this.esper.star = value
-    this.esperService.changeStar(this.esper)
+    this.esper.star = value;
+    this.esperService.changeStar(this.esper);
   }
 
   changeLevel () {
-    this.esperService.changeLevel(this.esper)
+    this.esperService.changeLevel(this.esper);
   }
 
   selectLevel(level) {
-    this.esper.level = level
-    this.esperService.changeLevel(this.esper)
+    this.esper.level = level;
+    this.esperService.changeLevel(this.esper);
   }
 
   rightClickNode(node) {
-    this.esperService.rightClickNode(node, this.esper)
+    this.esperService.rightClickNode(node, this.esper);
   }
 
   clickNode(node) {
-    this.esperService.clickNode(node, this.esper)
+    this.esperService.clickNode(node, this.esper);
   }
 
   canActivateNode(node) {
-    return this.esperService.canActivateNode(node, this.esper)
+    return this.esperService.canActivateNode(node, this.esper);
   }
 
   maxEsper() {
-    this.esperService.maxEsper(this.esper)
+    this.esperService.maxEsper(this.esper);
   }
 }

@@ -175,7 +175,7 @@
               </tbody>
             </table>
           </div>
-          <hr class="bossSeparator" *ngIf="j != raid.bosses.length - 1"/>
+          <hr class="bossSeparator" *ngIf="j !== raid.bosses.length - 1"/>
         </div>
       </div>
     </ng-template>
@@ -278,7 +278,7 @@
               </tr>
             </tbody>
           </table>
-          <hr class="bossSeparator" *ngIf="j != raid.bosses.length - 1"/>
+          <hr class="bossSeparator" *ngIf="j !== raid.bosses.length - 1"/>
         </div>
       </div>
     </ng-template>
@@ -287,6 +287,6 @@
 
 <div [ngbNavOutlet]="nav"></div>
 
-<div *ngIf="specialBismark && activeTab == 1" class="tab-content">
-  <div *ngIf="activeTab == 2 else skills"></div>
+<div *ngIf="specialBismark && activeTab === 1" class="tab-content">
+  <div *ngIf="activeTab === 2 else skills"></div>
 </div>

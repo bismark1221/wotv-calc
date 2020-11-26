@@ -12,13 +12,13 @@ import { NameService } from '../services/name.service';
 })
 export class EspersComponent implements OnInit {
   espers;
-  searchText = "";
-  sort = "rarity"
-  order = "asc"
+  searchText = '';
+  sort = 'rarity';
+  order = 'asc';
   filters = {
     rarity: [],
     element: []
-  }
+  };
   isCollapsedRarity = false;
   isCollapsedElement = false;
 
@@ -34,7 +34,7 @@ export class EspersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle("Espers");
+    this.navService.setTitle('Espers');
 
     this.getEspers();
   }
@@ -46,42 +46,42 @@ export class EspersComponent implements OnInit {
 
   private translateEspers() {
     this.espers.forEach(esper => {
-      esper.name = this.nameService.getName(esper)
+      esper.name = this.nameService.getName(esper);
     });
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   getFilteredEspers() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.espers.filter(unit => {
         return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.espers
+      return this.espers;
     }
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEspers()
+    this.getEspers();
   }
 
   changeSort(sort) {
-    this.sort = sort
-    this.getEspers()
+    this.sort = sort;
+    this.getEspers();
   }
 
   changeOrder(order) {
-    this.order = order
-    this.getEspers()
+    this.order = order;
+    this.getEspers();
   }
 }

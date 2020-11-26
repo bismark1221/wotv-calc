@@ -27,7 +27,7 @@
         <div class="loadDiv" *ngIf="savedEspers[filteredEsper.dataId] && savedEspers[filteredEsper.dataId].length > 0">
           <a id="load_{{filteredEsper.slug}}" (click)="openLoadModal(filteredEsper.dataId)"><i class="fas fa-download"></i></a>
         </div>
-        <hr *ngIf="j != filteredEspers[rarity].length - 1"/>
+        <hr *ngIf="j !== filteredEspers[rarity].length - 1"/>
       </div>
     </div>
   </div>
@@ -136,16 +136,16 @@
       <div class="builderEsperGridContainer" style="text-align: center;">
         <ul class="hexGrid" oncontextmenu="return false;">
           <li *ngFor="let node of esper.grid.gridNodes; let index;" id="click_node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-            <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+            <div class="hex hideNode" *ngIf="esper.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-            <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type == 'center'">
+            <div class="hex activated" *ngIf="esper.grid.nodesForGrid[node].type === 'center'">
               <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
             </div>
 
-            <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type == 'text'"
+            <div class="hex" *ngIf="esper.grid.nodesForGrid[node].type === 'text'"
                  [ngClass]="{
                    'activated': esper.board.nodes[node].activated,
-                   'buff': esper.board.nodes[node].type == 'buff',
+                   'buff': esper.board.nodes[node].type === 'buff',
                    'notActivable': !canActivateNode(node)
             }" >
               <span class="text">{{ esper.grid.nodesForGrid[node].value }}</span>

@@ -3,9 +3,9 @@ import { Angulartics2 } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { environment } from "../environments/environment";
+import { environment } from '../environments/environment';
 
-import { CheckHashService } from './services/checkHash.service'
+import { CheckHashService } from './services/checkHash.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,7 @@ import { CheckHashService } from './services/checkHash.service'
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     translate: TranslateService,
@@ -23,7 +23,7 @@ export class AppComponent {
   ) {
     angulartics2GoogleAnalytics.startTracking();
 
-    translate.addLangs(["en", "fr"]); //"en", "fr", "tw", "es", "de", "kr"
+    translate.addLangs(['en', 'fr']); // "en", "fr", "tw", "es", "de", "kr"
     translate.setDefaultLang('en');
 
     let lang = this.localStorageService.get<any[]>('lang') ? this.localStorageService.get<any[]>('lang').toString() : translate.getDefaultLang();
@@ -36,10 +36,10 @@ export class AppComponent {
   }
 
   onActivate(event) {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }
 
   ngOnInit() {
-    this.checkHashService.initHashCheck(environment.versionCheckURL)
+    this.checkHashService.initHashCheck(environment.versionCheckURL);
   }
 }

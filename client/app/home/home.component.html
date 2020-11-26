@@ -7,11 +7,11 @@
         <img class='buy_coffee' src='assets/home/buy_coffee_en.png' alt='Buy Me a Coffee at ko-fi.com' />
       </a>
 
-      <a class="amazonLink" href='https://amzn.to/34j2dig' target='_blank' *ngIf="lang == 'fr'">
+      <a class="amazonLink" href='https://amzn.to/34j2dig' target='_blank' *ngIf="lang === 'fr'">
         <img src='assets/home/amazon_appstore.png' alt='amazon_appstore' />
       </a>
 
-      <a class="amazonLink" href='https://www.amazon.com/dp/B0096E8EPY/ref=twister_B009CDKIA8?_encoding=UTF8&psc=1&_encoding=UTF8&tag=bismarktv-20&linkCode=ur2&linkId=6d5adabc497e55270b7b56ed660f0bce&camp=1789&creative=9325' target='_blank' *ngIf="lang != 'fr'">
+      <a class="amazonLink" href='https://www.amazon.com/dp/B0096E8EPY/ref=twister_B009CDKIA8?_encoding=UTF8&psc=1&_encoding=UTF8&tag=bismarktv-20&linkCode=ur2&linkId=6d5adabc497e55270b7b56ed660f0bce&camp=1789&creative=9325' target='_blank' *ngIf="lang !== 'fr'">
         <img src='assets/home/amazon_appstore.png' alt='amazon_appstore' />
       </a>
     </div>
@@ -21,7 +21,7 @@
   <div class="lastUpdate">
     Last Updates
   </div>
-  <div *ngIf="version == 'JP'">
+  <div *ngIf="version === 'JP'">
   </div>
   <div *ngFor="let line of updatedFormatted">
     <div class="itemsTable">
@@ -36,8 +36,8 @@
             <div *ngIf="item.jobs">
               <img *ngFor="let job of item.jobs; let j = index" src="{{'assets/jobs/' + job.image + '.png'}}"
                 [ngClass]="{
-                  'mainJob': j == 0,
-                  'subJob': j != 0
+                  'mainJob': j === 0,
+                  'subJob': j !== 0
                 }"/>
             </div>
           </div>

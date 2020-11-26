@@ -14,18 +14,18 @@ import { NameService } from '../../services/name.service';
 export class ModalEquipmentsComponent implements OnInit {
   equipments;
 
-  searchText = "";
+  searchText = '';
   filters = {
     rarity: [],
     category: []
-  }
-  savedEquipments = {}
-  loadEquipmentId = null
+  };
+  savedEquipments = {};
+  loadEquipmentId = null;
 
   @Input() public unit;
   @Input() public equipmentPos;
-  @Input() public modalStep = "select";
-  @Input() public equipment
+  @Input() public modalStep = 'select';
+  @Input() public equipment;
 
   constructor(
     private equipmentService: EquipmentService,
@@ -42,51 +42,51 @@ export class ModalEquipmentsComponent implements OnInit {
     this.getEquipments();
 
     if (this.equipment) {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment))
+      this.equipment = this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
     }
   }
 
   getEquipments() {
-    this.equipments = this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService)
-    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters)
-    this.getFilteredEquipments()
-    this.translateEquipments()
+    this.equipments = this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
+    this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
+    this.getFilteredEquipments();
+    this.translateEquipments();
 
-    this.savedEquipments = this.equipmentService.getSavedEquipments()
+    this.savedEquipments = this.equipmentService.getSavedEquipments();
   }
 
   private translateEquipments() {
     this.equipments.forEach(equipment => {
-      equipment.name = this.nameService.getName(equipment)
+      equipment.name = this.nameService.getName(equipment);
     });
   }
 
   getFilteredEquipments() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.equipments.filter(equipment => {
         return equipment.name.toLowerCase().includes(text) || equipment.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.equipments
+      return this.equipments;
     }
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEquipments()
+    this.getEquipments();
   }
 
   isFilterSelected(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      return false
+    if (this.filters[type].indexOf(value) === -1) {
+      return false;
     } else {
-      return true
+      return true;
     }
   }
 
@@ -95,40 +95,40 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   back() {
-    this.modalStep = "select"
+    this.modalStep = 'select';
   }
 
   selectEquipment(equipmentId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedEquipments[equipmentId] && this.savedEquipments[equipmentId].length > 0) {
-      this.loadEquipmentId = equipmentId
+      this.loadEquipmentId = equipmentId;
 
-      this.modalStep = "load"
+      this.modalStep = 'load';
     } else {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(equipmentId, customData)
+      this.equipment = this.equipmentService.selectEquipmentForBuilder(equipmentId, customData);
 
-      this.modalStep = "custom"
+      this.modalStep = 'custom';
     }
   }
 
   selectUpgrade(upgrade) {
-    this.equipment.upgrade = upgrade
-    this.equipmentService.changeUpgrade(this.equipment)
+    this.equipment.upgrade = upgrade;
+    this.equipmentService.changeUpgrade(this.equipment);
   }
 
   selectGrow(grow) {
-    this.equipment.grow = grow
-    this.equipmentService.changeGrow(this.equipment)
+    this.equipment.grow = grow;
+    this.equipmentService.changeGrow(this.equipment);
   }
 
   changeLevel() {
-    this.equipmentService.changeLevel(this.equipment)
+    this.equipmentService.changeLevel(this.equipment);
   }
 
   changeSkillLevel() {
-    this.equipmentService.changeSkillLevel(this.equipment)
+    this.equipmentService.changeSkillLevel(this.equipment);
   }
 
   save() {
-    this.modal.close(this.equipment)
+    this.modal.close(this.equipment);
   }
 }

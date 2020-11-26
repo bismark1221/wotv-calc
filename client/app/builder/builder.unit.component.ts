@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -11,9 +11,9 @@ import { GridService } from '../services/grid.service';
 import { EsperService } from '../services/esper.service';
 import { CardService } from '../services/card.service';
 import { EquipmentService } from '../services/equipment.service';
-import { NavService } from '../services/nav.service'
-import { NameService } from '../services/name.service'
-import { AuthService } from '../services/auth.service'
+import { NavService } from '../services/nav.service';
+import { NameService } from '../services/name.service';
+import { AuthService } from '../services/auth.service';
 
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
@@ -29,97 +29,97 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   templateUrl: './builder.unit.component.html',
   styleUrls: ['./builder.unit.component.css']
 })
-export class BuilderUnitComponent implements OnInit {
-  units
-  filteredUnits
-  unit = null
-  searchText = ""
-  savedUnits = {}
-  loadingBuild = false
-  version = 'GL'
+export class BuilderUnitComponent implements OnInit, AfterViewInit {
+  units;
+  filteredUnits;
+  unit = null;
+  searchText = '';
+  savedUnits = {};
+  loadingBuild = false;
+  version = 'GL';
 
-  statueNames
+  statueNames;
 
-  showList = true
-  showSave = false
-  showStatsDetail = false
-  showBuffsDetail = false
+  showList = true;
+  showSave = false;
+  showStatsDetail = false;
+  showBuffsDetail = false;
 
-  isCollapsedMainJob = true
-  isCollapsedSubJob = true
-  isCollapsedOther = true
+  isCollapsedMainJob = true;
+  isCollapsedSubJob = true;
+  isCollapsedOther = true;
 
-  statsType = ['HP','TP','AP','ATK','DEF','MAG','SPR','AGI','DEX','LUCK','MOVE','JUMP']
+  statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'MOVE', 'JUMP'];
   statsFrom = [
-    {type: "baseTotal", translate: "Base"},
-    {type: "guild", translate: "Guild Statues"},
-    {type: "masterRanks", translate: "Master Ranks"},
-    {type: "board", translate: "Board"},
-    {type: "support", translate: "Support"},
-    {type: "masterSkill", translate: "Master Skill"},
-    {type: "esper", translate: "Esper"},
-    {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"}
-  ]
+    {type: 'baseTotal', translate: 'Base'},
+    {type: 'guild', translate: 'Guild Statues'},
+    {type: 'masterRanks', translate: 'Master Ranks'},
+    {type: 'board', translate: 'Board'},
+    {type: 'support', translate: 'Support'},
+    {type: 'masterSkill', translate: 'Master Skill'},
+    {type: 'esper', translate: 'Esper'},
+    {type: 'card', translate: 'Card'},
+    {type: 'cardParty', translate: 'Card Party'}
+  ];
 
   buffsFrom = [
-    {type: "base", translate: "Base"},
-    {type: "board", translate: "Board"},
-    {type: "support", translate: "Support"},
-    {type: "masterSkill", translate: "Master Skill"},
-    {type: "esper", translate: "Esper"},
-    {type: "card", translate: "Card"},
-    {type: "cardParty", translate: "Card Party"}
-  ]
+    {type: 'base', translate: 'Base'},
+    {type: 'board', translate: 'Board'},
+    {type: 'support', translate: 'Support'},
+    {type: 'masterSkill', translate: 'Master Skill'},
+    {type: 'esper', translate: 'Esper'},
+    {type: 'card', translate: 'Card'},
+    {type: 'cardParty', translate: 'Card Party'}
+  ];
 
   rarityTranslate = {
-    UR: "Ultra Rare",
-    MR: "Mega Rare",
-    SR: "Super Rare",
-    R: "Rare",
-    N: "Normal"
-  }
+    UR: 'Ultra Rare',
+    MR: 'Mega Rare',
+    SR: 'Super Rare',
+    R: 'Rare',
+    N: 'Normal'
+  };
 
   buffsImage = [
-    "dark_atk",
-    "dark_killer",
-    "dark_res",
-    "earth_atk",
-    "earth_killer",
-    "earth_res",
-    "fire_atk",
-    "fire_killer",
-    "fire_res",
-    "ice_atk",
-    "ice_killer",
-    "ice_res",
-    "light_atk",
-    "light_killer",
-    "light_res",
-    "lightning_atk",
-    "lightning_killer",
-    "lightning_res",
-    "neutral_atk",
-    "neutral_killer",
-    "neutral_res",
-    "water_atk",
-    "water_killer",
-    "water_res",
-    "wind_atk",
-    "wind_killer",
-    "wind_res",
+    'dark_atk',
+    'dark_killer',
+    'dark_res',
+    'earth_atk',
+    'earth_killer',
+    'earth_res',
+    'fire_atk',
+    'fire_killer',
+    'fire_res',
+    'ice_atk',
+    'ice_killer',
+    'ice_res',
+    'light_atk',
+    'light_killer',
+    'light_res',
+    'lightning_atk',
+    'lightning_killer',
+    'lightning_res',
+    'neutral_atk',
+    'neutral_killer',
+    'neutral_res',
+    'water_atk',
+    'water_killer',
+    'water_res',
+    'wind_atk',
+    'wind_killer',
+    'wind_res',
 
-    "magic_atk",
-    "magic_res",
-    "missile_atk",
-    "missile_res",
-    "pierce_atk",
-    "pierce_res",
-    "slash_atk",
-    "slash_res",
-    "strike_atk",
-    "strike_res",
-  ]
+    'magic_atk',
+    'magic_res',
+    'missile_atk',
+    'missile_res',
+    'pierce_atk',
+    'pierce_res',
+    'slash_atk',
+    'slash_res',
+    'strike_atk',
+    'strike_res',
+  ];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -139,164 +139,164 @@ export class BuilderUnitComponent implements OnInit {
       this.getUnits();
     });
 
-    this.version = this.navService.getVersion()
+    this.version = this.navService.getVersion();
   }
 
   ngOnInit(): void {
     this.getUnits();
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      let data = params.get('data')
+      const data = params.get('data');
       if (data) {
-        this.loadingBuild = true
+        this.loadingBuild = true;
 
-        let unit = this.unitService.getUnitBySlug(data)
+        const unit = this.unitService.getUnitBySlug(data);
         if (unit) {
-          this.selectUnit(unit.dataId)
+          this.selectUnit(unit.dataId);
         } else {
           this.unitService.getStoredUnit(data).subscribe(unitData => {
             if (unitData) {
               // @ts-ignore
-              this.selectUnit(unitData.dataId, unitData)
+              this.selectUnit(unitData.dataId, unitData);
             }
-          })
+          });
         }
 
-        this.loadingBuild = false
+        this.loadingBuild = false;
       }
     });
 
-    this.navService.setTitle("Unit Builder");
+    this.navService.setTitle('Unit Builder');
   }
 
   ngAfterViewInit() {
     setTimeout(() => {
       this.authService.$load.subscribe(load => {
-        this.savedUnits = this.unitService.getSavedUnits()
+        this.savedUnits = this.unitService.getSavedUnits();
       });
-    })
+    });
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {
         if (user) {
-          this.showSave = true
+          this.showSave = true;
         } else {
-          this.showSave = false
+          this.showSave = false;
         }
       });
-    })
+    });
   }
 
   private getUnits() {
-    this.units = this.formatUnits(this.unitService.getUnitsForJPBuilder())
-    this.updateFilteredUnits()
+    this.units = this.formatUnits(this.unitService.getUnitsForJPBuilder());
+    this.updateFilteredUnits();
     this.translateUnits();
 
-    this.savedUnits = this.unitService.getSavedUnits()
+    this.savedUnits = this.unitService.getSavedUnits();
   }
 
   private translateUnits() {
     Object.keys(this.units).forEach(rarity => {
       this.units[rarity].forEach(unit => {
-        unit.name = this.nameService.getName(unit)
-      })
+        unit.name = this.nameService.getName(unit);
+      });
     });
   }
 
   private formatUnits(units) {
-    let formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+    const formattedUnits = { UR: [], MR: [], SR: [], R: [], N: [] };
 
     units.forEach(unit => {
-      formattedUnits[unit.rarity].push(unit)
-    })
+      formattedUnits[unit.rarity].push(unit);
+    });
 
-    return formattedUnits
+    return formattedUnits;
   }
 
   updateFilteredUnits() {
-    let text = this.searchText.toLowerCase();
-    this.filteredUnits = { UR: [], MR: [], SR: [], R: [], N: [] }
+    const text = this.searchText.toLowerCase();
+    this.filteredUnits = { UR: [], MR: [], SR: [], R: [], N: [] };
 
     Object.keys(this.units).forEach(rarity => {
       this.filteredUnits[rarity] = this.units[rarity].filter(unit => {
         return unit.name.toLowerCase().includes(text);
-      })
-    })
+      });
+    });
   }
 
   private loadGuild() {
-    this.unit.guild = this.guildService.getGuildForBuilder()
+    this.unit.guild = this.guildService.getGuildForBuilder();
 
     if (this.unit.savedGuild) {
-      this.unit.guild.data = this.unit.savedGuild
+      this.unit.guild.data = this.unit.savedGuild;
     }
 
-    this.statueNames = Object.keys(this.unit.guild.statues)
-    this.unitService.changeLevel()
+    this.statueNames = Object.keys(this.unit.guild.statues);
+    this.unitService.changeLevel();
   }
 
   private loadMasterRanks() {
-    this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder()
+    this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder();
 
     if (this.unit.savedMasterRanks) {
-      this.unit.masterRanks.data = this.unit.savedMasterRanks
+      this.unit.masterRanks.data = this.unit.savedMasterRanks;
     }
 
-    this.unitService.changeLevel()
+    this.unitService.changeLevel();
   }
 
   focusSearch() {
     if (!this.showList) {
-      this.updateFilteredUnits()
-      this.showList = true
+      this.updateFilteredUnits();
+      this.showList = true;
     }
   }
 
   blurSearch() {
     if (this.unit) {
-      this.searchText = this.unit.name
-      this.showList = false
+      this.searchText = this.unit.name;
+      this.showList = false;
     }
   }
 
   toogleList() {
-    this.showList = !this.showList
+    this.showList = !this.showList;
   }
 
   selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData)
-      this.searchText = this.unit.name
+      this.unit = this.unitService.selectUnitForBuilder(dataId, customData);
+      this.searchText = this.unit.name;
 
-      this.loadGuild()
-      this.loadMasterRanks()
-      this.unitService.getActiveSkills()
-      this.showList = false
+      this.loadGuild();
+      this.loadMasterRanks();
+      this.unitService.getActiveSkills();
+      this.showList = false;
     } else {
-      this.unit = null
-      this.searchText = ""
-      this.updateFilteredUnits()
-      this.showList = true
+      this.unit = null;
+      this.searchText = '';
+      this.updateFilteredUnits();
+      this.showList = true;
     }
   }
 
   changeStar(value) {
-    this.unit.star = value
-    this.unitService.changeStar()
-    this.unitService.getActiveSkills()
+    this.unit.star = value;
+    this.unitService.changeStar();
+    this.unitService.getActiveSkills();
   }
 
   changeLB(value) {
-    if (value == this.unit.lb) {
-      value = undefined
+    if (value === this.unit.lb) {
+      value = undefined;
     }
-    this.unit.lb = value
+    this.unit.lb = value;
 
-    this.unitService.changeLB()
-    this.unitService.getActiveSkills()
+    this.unitService.changeLB();
+    this.unitService.getActiveSkills();
 
-    this.updateSelectedEquipments()
-    this.changeLevel()
+    this.updateSelectedEquipments();
+    this.changeLevel();
   }
 
   updateSelectedEquipments() {
@@ -305,11 +305,11 @@ export class BuilderUnitComponent implements OnInit {
         this.unit.equipments[2] = null;
       }
 
-      if (this.unit.equipments[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === "tmr") {
+      if (this.unit.equipments[1] && this.unit.equipments[1].acquisition && this.unit.equipments[1].acquisition.type === 'tmr') {
         this.unit.equipments[1] = null;
       }
 
-      if (this.unit.equipments[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === "tmr") {
+      if (this.unit.equipments[0] && this.unit.equipments[0].acquisition && this.unit.equipments[0].acquisition.type === 'tmr') {
         this.unit.equipments[0] = null;
       }
     }
@@ -320,60 +320,60 @@ export class BuilderUnitComponent implements OnInit {
   }
 
   changeLevel() {
-    this.unitService.changeLevel()
-    this.unitService.getActiveSkills()
+    this.unitService.changeLevel();
+    this.unitService.getActiveSkills();
   }
 
   selectJobLevel(jobNumber, level) {
-    this.unit.jobsData[jobNumber].level = level
-    this.unitService.changeJobLevel()
-    this.unitService.getActiveSkills()
+    this.unit.jobsData[jobNumber].level = level;
+    this.unitService.changeJobLevel();
+    this.unitService.getActiveSkills();
   }
 
   rightClickNode(node) {
-    this.unitService.rightClickNode(node)
-    this.unitService.getActiveSkills()
+    this.unitService.rightClickNode(node);
+    this.unitService.getActiveSkills();
   }
 
   clickNode(node) {
-    this.unitService.clickNode(node)
-    this.unitService.getActiveSkills()
+    this.unitService.clickNode(node);
+    this.unitService.getActiveSkills();
   }
 
   canActivateNode(node) {
-    return this.unitService.canActivateNode(node)
+    return this.unitService.canActivateNode(node);
   }
 
   getAvailableSupportNodes(pos) {
-    return this.unitService.getAvailableSupportNodes(pos)
+    return this.unitService.getAvailableSupportNodes(pos);
   }
 
   getAvailableCounterNodes() {
-    return this.unitService.getAvailableCounterNodes()
+    return this.unitService.getAvailableCounterNodes();
   }
 
   showHideDetail(type) {
-    this["show" + type + "Detail"] = !this["show" + type + "Detail"]
+    this['show' + type + 'Detail'] = !this['show' + type + 'Detail'];
   }
 
   maxUnit() {
-    this.unitService.maxUnit()
-    this.unitService.getActiveSkills()
+    this.unitService.maxUnit();
+    this.unitService.getActiveSkills();
   }
 
   maxLevelAndJobs() {
-    this.unitService.maxLevelAndJobs()
-    this.unitService.getActiveSkills()
+    this.unitService.maxLevelAndJobs();
+    this.unitService.getActiveSkills();
   }
 
   showGuildDetail() {
     const modalRef = this.modalService.open(ModalGuildComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data))
+    modalRef.componentInstance.guild = JSON.parse(JSON.stringify(this.unit.guild.data));
 
     modalRef.result.then((guild) => {
-      this.unit.guild.data = guild
-      this.unitService.changeLevel()
+      this.unit.guild.data = guild;
+      this.unitService.changeLevel();
     }, (reason) => {
     });
   }
@@ -381,11 +381,11 @@ export class BuilderUnitComponent implements OnInit {
   showMasterRanksDetail() {
     const modalRef = this.modalService.open(ModalMasterRanksComponent, { windowClass: 'options-modal' });
 
-    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data))
+    modalRef.componentInstance.masterRanks = JSON.parse(JSON.stringify(this.unit.masterRanks.data));
 
     modalRef.result.then((masterRanks) => {
-      this.unit.masterRanks.data = masterRanks
-      this.unitService.changeLevel()
+      this.unit.masterRanks.data = masterRanks;
+      this.unitService.changeLevel();
     }, (reason) => {
     });
   }
@@ -393,18 +393,18 @@ export class BuilderUnitComponent implements OnInit {
   openEquipmentsModal(pos) {
     const modalRef = this.modalService.open(ModalEquipmentsComponent, { windowClass: 'builder-modal' });
     modalRef.componentInstance.unit = this.unit;
-    modalRef.componentInstance.equipmentPos = pos
+    modalRef.componentInstance.equipmentPos = pos;
 
     if (this.unit.equipments[pos]) {
-      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]))
-      modalRef.componentInstance.modalStep = "custom"
+      modalRef.componentInstance.equipment = JSON.parse(JSON.stringify(this.unit.equipments[pos]));
+      modalRef.componentInstance.modalStep = 'custom';
     }
 
     modalRef.result.then((equipment) => {
       if (equipment) {
-        this.unit.equipments[pos] = equipment
+        this.unit.equipments[pos] = equipment;
 
-        this.unitService.changeLevel()
+        this.unitService.changeLevel();
       }
     }, (reason) => {
     });
@@ -414,15 +414,15 @@ export class BuilderUnitComponent implements OnInit {
     const modalRef = this.modalService.open(ModalEspersComponent, { windowClass: 'builder-modal' });
 
     if (this.unit.esper) {
-      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.unit.esper))
-      modalRef.componentInstance.modalStep = "custom"
+      modalRef.componentInstance.esper = JSON.parse(JSON.stringify(this.unit.esper));
+      modalRef.componentInstance.modalStep = 'custom';
     }
 
     modalRef.result.then((esper) => {
       if (esper) {
-        this.unit.esper = esper
+        this.unit.esper = esper;
 
-        this.unitService.changeLevel()
+        this.unitService.changeLevel();
       }
     }, (reason) => {
     });
@@ -432,15 +432,15 @@ export class BuilderUnitComponent implements OnInit {
     const modalRef = this.modalService.open(ModalCardsComponent, { windowClass: 'builder-modal' });
 
     if (this.unit.card) {
-      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card))
-      modalRef.componentInstance.modalStep = "custom"
+      modalRef.componentInstance.card = JSON.parse(JSON.stringify(this.unit.card));
+      modalRef.componentInstance.modalStep = 'custom';
     }
 
     modalRef.result.then((card) => {
       if (card) {
-        this.unit.card = card
+        this.unit.card = card;
 
-        this.unitService.changeLevel()
+        this.unitService.changeLevel();
       }
     }, (reason) => {
     });
@@ -449,16 +449,16 @@ export class BuilderUnitComponent implements OnInit {
   openLoadModal(unitId) {
     const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
 
-    modalRef.componentInstance.type = 'unit'
-    modalRef.componentInstance.savedItems = this.savedUnits[unitId]
+    modalRef.componentInstance.type = 'unit';
+    modalRef.componentInstance.savedItems = this.savedUnits[unitId];
 
     modalRef.result.then(result => {
-      if (result.type == 'load' && result.item) {
-        this.selectUnit(result.item.dataId, result.item)
+      if (result.type === 'load' && result.item) {
+        this.selectUnit(result.item.dataId, result.item);
       }
 
-      if (result.type == 'fullDelete') {
-        this.savedUnits[unitId] = []
+      if (result.type === 'fullDelete') {
+        this.savedUnits[unitId] = [];
       }
     }, (reason) => {
     });
@@ -467,11 +467,11 @@ export class BuilderUnitComponent implements OnInit {
   openSaveModal() {
     const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
 
-    modalRef.componentInstance.type = 'unit'
-    modalRef.componentInstance.item = this.unit
+    modalRef.componentInstance.type = 'unit';
+    modalRef.componentInstance.item = this.unit;
 
     modalRef.result.then(result => {
-      this.savedUnits = this.unitService.getSavedUnits()
+      this.savedUnits = this.unitService.getSavedUnits();
     }, (reason) => {
     });
   }
@@ -479,92 +479,92 @@ export class BuilderUnitComponent implements OnInit {
   openLinkModal() {
     const modalRef = this.modalService.open(ModalLinkComponent, { windowClass: 'builder-modal' });
 
-    modalRef.componentInstance.type = 'unit'
-    modalRef.componentInstance.item = this.unit
+    modalRef.componentInstance.type = 'unit';
+    modalRef.componentInstance.item = this.unit;
   }
 
   getAvailableStatType() {
-    let formattedAvailableStatType = [[]]
+    const formattedAvailableStatType = [[]];
 
     if (this.unit) {
-      let statTypes = this.unit.availableStatTypes
+      const statTypes = this.unit.availableStatTypes;
 
       statTypes.forEach(type => {
-        if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length == 8) {
-          formattedAvailableStatType.push([])
+        if (formattedAvailableStatType[formattedAvailableStatType.length - 1].length === 8) {
+          formattedAvailableStatType.push([]);
         }
 
-        formattedAvailableStatType[formattedAvailableStatType.length - 1].push(type)
-      })
+        formattedAvailableStatType[formattedAvailableStatType.length - 1].push(type);
+      });
     }
 
-    return formattedAvailableStatType
+    return formattedAvailableStatType;
   }
 
   selectLevel(level) {
-    this.unit.level = level
-    this.unitService.changeLevel()
+    this.unit.level = level;
+    this.unitService.changeLevel();
   }
 
   selectMasterSkillLevel(level) {
-    this.unit.masterSkillActivated = level
-    this.unitService.changeLevel()
+    this.unit.masterSkillActivated = level;
+    this.unitService.changeLevel();
   }
 
   selectLimitLevel(level) {
-    this.unit.limit.level = level
-    this.unitService.getActiveSkills()
+    this.unit.limit.level = level;
+    this.unitService.getActiveSkills();
   }
 
   selectSubJob(jobNum) {
-    this.unit.subjob = jobNum
-    this.unitService.getActiveSkills()
+    this.unit.subjob = jobNum;
+    this.unitService.getActiveSkills();
   }
 
   selectSupportSkill(pos, nodeId) {
-    this.unit.activatedSupport[pos] = nodeId
-    this.unitService.changeLevel()
-    this.unitService.getActiveSkills()
+    this.unit.activatedSupport[pos] = nodeId;
+    this.unitService.changeLevel();
+    this.unitService.getActiveSkills();
   }
 
   selectCounterSkill(nodeId) {
-    this.unit.activatedCounter = nodeId
-    this.unitService.getActiveSkills()
+    this.unit.activatedCounter = nodeId;
+    this.unitService.getActiveSkills();
   }
 
   selectEsperResonance(level) {
-    this.unit.esper.resonance = level
-    this.unitService.changeLevel()
+    this.unit.esper.resonance = level;
+    this.unitService.changeLevel();
   }
 
   getSkillsPerJob(job) {
-    let skills = [];
-    if (job === "main") {
+    const skills = [];
+    if (job === 'main') {
       this.unit.activeSkills.forEach(skill => {
         if (skill.mainSkill) {
-          skills.push(skill)
+          skills.push(skill);
         }
-      })
+      });
     } else {
       this.unit.activeSkills.forEach(skill => {
         if (!skill.mainSkill) {
-          skills.push(skill)
+          skills.push(skill);
         }
-      })
+      });
     }
 
     return skills;
   }
 
   resetUnit() {
-    this.unitService.resetUnit()
+    this.unitService.resetUnit();
   }
 
   resetLevel() {
-    this.unitService.resetLevel()
+    this.unitService.resetLevel();
   }
 
   resetJob() {
-    this.unitService.resetJob()
+    this.unitService.resetJob();
   }
 }

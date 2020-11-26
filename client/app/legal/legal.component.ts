@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { NavService } from '../services/nav.service'
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-legal',
@@ -16,7 +16,7 @@ export class LegalComponent {
     private translateService: TranslateService,
     private navService: NavService,
   ) {
-    this.navService.setTitle("Legal");
+    this.navService.setTitle('Legal');
 
     this.getTranslation();
 

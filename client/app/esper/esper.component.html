@@ -158,7 +158,7 @@
               <td>
                 <img class="skilImg" src="{{'assets/skill-type/' + esper.skills[0].type + '.png'}}" />
               </td>
-              <td *ngIf="esper.skills[0].type == 'esper'">
+              <td *ngIf="esper.skills[0].type === 'esper'">
                 {{ esper.skills[0].name }}
               </td>
               <td class="skillEffectTd">
@@ -213,13 +213,13 @@
         <div class="esperGridContainer" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
-              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'">
                 <span class="fullIcon"><img src="{{ '/assets/units/' + esper.image + '_s.png' }}"></span>
               </div>
 
-              <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+              <div class="hex" [ngClass]="{'activated': esper.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
                 <span class="text">{{ grid.nodesForGrid[node].value }}</span>
               </div>
             </li>
@@ -237,6 +237,6 @@
 
 <div [ngbNavOutlet]="nav"></div>
 
-<div *ngIf="specialBismark && activeTab == 1" class="tab-content">
-  <div *ngIf="activeTab == 2 else tree"></div>
+<div *ngIf="specialBismark && activeTab === 1" class="tab-content">
+  <div *ngIf="activeTab === 2 else tree"></div>
 </div>

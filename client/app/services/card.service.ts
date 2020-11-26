@@ -4,11 +4,11 @@ import { LocalStorageService } from 'angular-2-local-storage';
 import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
-import { SkillService } from './skill.service'
-import { NavService } from './nav.service'
-import { NameService } from './name.service'
-import { ToolService } from './tool.service'
-import { AuthService } from './auth.service'
+import { SkillService } from './skill.service';
+import { NavService } from './nav.service';
+import { NameService } from './name.service';
+import { ToolService } from './tool.service';
+import { AuthService } from './auth.service';
 
 import { Card } from '../entities/card';
 
@@ -18,7 +18,7 @@ import { default as JP_CARDS } from '../data/jp/cards.json';
 @Injectable()
 export class CardService {
   private cards: Card[];
-  card
+  card;
 
   constructor(
     private translateService: TranslateService,
@@ -32,19 +32,19 @@ export class CardService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() == "GL") {
-      return GL_CARDS
+    if (this.navService.getVersion() === 'GL') {
+      return GL_CARDS;
     } else {
-      return JP_CARDS
+      return JP_CARDS;
     }
   }
 
   getCards() {
-    let cards: Card[] = [];
-    let rawCards = JSON.parse(JSON.stringify(this.getRaw()))
+    const cards: Card[] = [];
+    const rawCards = JSON.parse(JSON.stringify(this.getRaw()));
 
     Object.keys(rawCards).forEach(cardId => {
-      let card = new Card();
+      const card = new Card();
       card.constructFromJson(rawCards[cardId], this.translateService);
       cards.push(card);
     });
@@ -53,20 +53,20 @@ export class CardService {
     return cards;
   }
 
-  getCardsForListing(filters = null, sort = "rarity", order = "asc") {
+  getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
     this.getCards();
     this.cards = this.filterCards(this.cards, filters);
 
     switch (sort) {
-      case "rarity" :
-        this.toolService.sortByRarity(this.cards, order)
-      break
-      case "name" :
-        this.toolService.sortByName(this.cards, order)
-      break
+      case 'rarity' :
+        this.toolService.sortByRarity(this.cards, order);
+      break;
+      case 'name' :
+        this.toolService.sortByName(this.cards, order);
+      break;
       default :
-        console.log("not managed sort")
-      break
+        console.log('not managed sort');
+      break;
     }
 
     return this.cards;
@@ -74,48 +74,48 @@ export class CardService {
 
   filterCards(cards, filters) {
     if (filters) {
-      let filteredCards = []
+      const filteredCards = [];
 
       cards.forEach(card => {
-        if (filters.rarity.length == 0 || filters.rarity.indexOf(card.rarity) != -1) {
-          let needToAddCard = false
-          if (!filters.element || filters.element.length == 0) {
-            needToAddCard = true
+        if (filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1) {
+          let needToAddCard = false;
+          if (!filters.element || filters.element.length === 0) {
+            needToAddCard = true;
           } else {
             card.partyBuffs.forEach(buff => {
-              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type == "elem") {
+              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
                 filters.element.forEach(elem => {
-                  if (buff.cond[0].items.indexOf(elem) != -1) {
-                    needToAddCard = true
+                  if (buff.cond[0].items.indexOf(elem) !== -1) {
+                    needToAddCard = true;
                   }
-                })
+                });
               }
-            })
+            });
           }
 
           if (needToAddCard) {
-            filteredCards.push(card)
+            filteredCards.push(card);
           }
         }
-      })
+      });
 
-      return filteredCards
+      return filteredCards;
     } else {
-      return cards
+      return cards;
     }
   }
 
   getCardsForBuilder() {
-    let cards = this.getCardsForListing(null, "rarity", "asc");
+    const cards = this.getCardsForListing(null, 'rarity', 'asc');
 
-    let formattedCardsForBuilder = []
+    const formattedCardsForBuilder = [];
     cards.forEach(card => {
       formattedCardsForBuilder.push({
         id: card.dataId,
         name: card.getName(this.translateService),
         rarity: card.rarity
-      })
-    })
+      });
+    });
 
     return formattedCardsForBuilder;
   }
@@ -128,17 +128,17 @@ export class CardService {
 
   getCardBySlug(slug) {
     this.getCards();
-    this.card = this.cards.find(card => card.slug === slug)
+    this.card = this.cards.find(card => card.slug === slug);
 
     if (this.card) {
-      this.card.statsType = this.getAvailableStats()
+      this.card.statsType = this.getAvailableStats();
     }
 
     return this.card;
   }
 
   getLocalStorage() {
-    return this.navService.getVersion() == "JP" ? "jp_cards" : "cards"
+    return this.navService.getVersion() === 'JP' ? 'jp_cards' : 'cards';
   }
 
   getSavedCards() {
@@ -146,202 +146,202 @@ export class CardService {
   }
 
   getSavableData(card, onlyCard = true) {
-    let data = {
+    const data = {
       dataId: card.dataId,
       star: card.star,
       level: card.level
-    }
+    };
 
     if (onlyCard) {
-      let user = this.authService.getUser()
+      const user = this.authService.getUser();
       // @ts-ignore
-      data.user = user ? user.uid : null
+      data.user = user ? user.uid : null;
       // @ts-ignore
-      data.customName = card.customName ? card.customName : ''
+      data.customName = card.customName ? card.customName : '';
     }
 
-    return data
+    return data;
   }
 
   selectCardForBuilder(cardId, customData = null) {
-    this.card = new Card()
-    this.card.constructFromJson(JSON.parse(JSON.stringify(this.getCard(cardId))), this.translateService)
-    this.card.name = this.card.getName(this.translateService)
+    this.card = new Card();
+    this.card.constructFromJson(JSON.parse(JSON.stringify(this.getCard(cardId))), this.translateService);
+    this.card.name = this.card.getName(this.translateService);
 
     this.card.star = 0;
     this.card.level = 1;
-    this.card.statsType = this.card.getAvailableStats()
+    this.card.statsType = this.card.getAvailableStats();
 
-    let existingCard = this.initiateSavedCard(customData)
+    const existingCard = this.initiateSavedCard(customData);
 
     if (!existingCard) {
-      this.maxCard()
+      this.maxCard();
     } else {
       this.card.updateMaxLevel();
-      this.card.changeLevel(this.nameService, this.skillService)
+      this.card.changeLevel(this.nameService, this.skillService);
     }
 
-    return this.card
+    return this.card;
   }
 
   private initiateSavedCard(customData = null) {
-    let card = customData
+    const card = customData;
 
     if (card) {
-      this.card.star = card.star
-      this.card.level = card.level
-      this.card.storeId = card.storeId
-      this.card.customName = card.customName
+      this.card.star = card.star;
+      this.card.level = card.level;
+      this.card.storeId = card.storeId;
+      this.card.customName = card.customName;
 
-      return true
+      return true;
     }
 
-    return false
+    return false;
   }
 
   cardAlreadyExists(card) {
-    let savedCards = this.getSavedCards()
-    let cardFinded = false
+    const savedCards = this.getSavedCards();
+    let cardFinded = false;
 
     if (savedCards[card.dataId]) {
       savedCards[card.dataId].forEach(savedCard => {
-        if (savedCard.customName == card.customName) {
-          cardFinded = true
+        if (savedCard.customName === card.customName) {
+          cardFinded = true;
         }
-      })
+      });
     }
 
-    return cardFinded
+    return cardFinded;
   }
 
   saveCard(card, method) {
-    let savableData = this.getSavableData(card)
+    const savableData = this.getSavableData(card);
 
-    if (method == "new" || method == "share") {
-      if (method == "share") {
+    if (method === 'new' || method === 'share') {
+      if (method === 'share') {
         // @ts-ignore
-        delete savableData.user
+        delete savableData.user;
       }
 
       return this.firestore.collection(this.getLocalStorage()).add(savableData).then(data => {
-        if (method == "new") {
+        if (method === 'new') {
           // @ts-ignore
-          savableData.storeId = data.id
-          let savedCards = this.getSavedCards()
+          savableData.storeId = data.id;
+          const savedCards = this.getSavedCards();
 
           if (savedCards[card.dataId]) {
-            savedCards[card.dataId].push(savableData)
+            savedCards[card.dataId].push(savableData);
           } else {
-            savedCards[card.dataId] = [savableData]
+            savedCards[card.dataId] = [savableData];
           }
 
           this.localStorageService.set(this.getLocalStorage(), savedCards);
         }
-        this.card.storeId = data.id
+        this.card.storeId = data.id;
 
-        return data.id
-      })
+        return data.id;
+      });
     } else {
       return this.firestore.collection(this.getLocalStorage()).doc(card.storeId).set(savableData).then(data => {
-        let savedCards = this.getSavedCards()
+        const savedCards = this.getSavedCards();
         savedCards[card.dataId].forEach((savedCard, cardIndex) => {
-          if (savedCard.storeId == card.storeId) {
-            savedCards[card.dataId][cardIndex] = savableData
-            savedCards[card.dataId][cardIndex].storeId = card.storeId
+          if (savedCard.storeId === card.storeId) {
+            savedCards[card.dataId][cardIndex] = savableData;
+            savedCards[card.dataId][cardIndex].storeId = card.storeId;
           }
-        })
+        });
 
         this.localStorageService.set(this.getLocalStorage(), savedCards);
 
-        return card.storeId
-      })
+        return card.storeId;
+      });
     }
   }
 
   deleteCard(card) {
-    this.firestore.collection(this.getLocalStorage()).doc(card.storeId).delete()
+    this.firestore.collection(this.getLocalStorage()).doc(card.storeId).delete();
 
-    let savedCards = this.getSavedCards()
+    const savedCards = this.getSavedCards();
 
     savedCards[card.dataId].forEach((savedCard, savedCardIndex) => {
-      if (savedCard.storeId == card.storeId) {
-        savedCards[card.dataId].splice(savedCardIndex, 1)
+      if (savedCard.storeId === card.storeId) {
+        savedCards[card.dataId].splice(savedCardIndex, 1);
       }
-    })
+    });
 
     this.localStorageService.set(this.getLocalStorage(), savedCards);
   }
 
   getStoredCard(dataId) {
-    let document = this.firestore.collection(this.getLocalStorage()).doc(dataId)
+    const document = this.firestore.collection(this.getLocalStorage()).doc(dataId);
 
-    return document.valueChanges()
+    return document.valueChanges();
   }
 
   getExportableLink() {
     if (!this.card.storeId || this.hasChangeBeenMade()) {
-      return this.saveCard(this.card, "share")
+      return this.saveCard(this.card, 'share');
     }
 
     return new Promise((resolve, reject) => {
-      resolve(this.card.storeId)
-    })
+      resolve(this.card.storeId);
+    });
   }
 
   hasChangeBeenMade() {
     if (this.card.storeId) {
-      let newData = this.getSavableData(this.card)
-      let oldData = null
+      const newData = this.getSavableData(this.card);
+      let oldData = null;
 
       if (this.getSavedCards()[this.card.dataId]) {
         this.getSavedCards()[this.card.dataId].forEach(savedCard => {
-          if (savedCard.storeId == this.card.storeId) {
-            oldData = savedCard
-            delete oldData.storeId
+          if (savedCard.storeId === this.card.storeId) {
+            oldData = savedCard;
+            delete oldData.storeId;
           }
-        })
+        });
 
-        return !this.toolService.equal(oldData, newData)
+        return !this.toolService.equal(oldData, newData);
       }
     }
 
-    return true
+    return true;
   }
 
   resetCard(card = null) {
     if (card) {
-      this.card = card
+      this.card = card;
     }
 
-    this.card.resetCard(this.nameService, this.skillService)
+    this.card.resetCard(this.nameService, this.skillService);
   }
 
   changeStar(card = null) {
     if (card) {
-      this.card = card
+      this.card = card;
     }
 
     this.card.updateMaxLevel();
-    this.card.changeLevel(this.nameService, this.skillService)
+    this.card.changeLevel(this.nameService, this.skillService);
   }
 
   changeLevel(card = null) {
     if (card) {
-      this.card = card
+      this.card = card;
     }
 
-    this.card.changeLevel(this.nameService, this.skillService)
+    this.card.changeLevel(this.nameService, this.skillService);
   }
 
   maxCard(card = null) {
     if (card) {
-      this.card = card
+      this.card = card;
     }
 
-    this.card.maxCard(this.nameService, this.skillService)
+    this.card.maxCard(this.nameService, this.skillService);
   }
 
   getAvailableStats() {
-    return this.card.getAvailableStats()
+    return this.card.getAvailableStats();
   }
 }

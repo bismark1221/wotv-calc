@@ -10,9 +10,9 @@ import { MasterRanksService } from '../../services/mr.service';
   styleUrls: ['./modal.mr.component.css']
 })
 export class ModalMasterRanksComponent implements OnInit {
-  ranks
+  ranks;
 
-  @Input() public masterRanks
+  @Input() public masterRanks;
 
   constructor(
     private masterRanksService: MasterRanksService,
@@ -20,8 +20,8 @@ export class ModalMasterRanksComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.masterRanks = this.masterRanksService.getMasterRanks()
-    this.ranks = this.masterRanksService.getRanks()
+    this.masterRanks = this.masterRanksService.getMasterRanks();
+    this.ranks = this.masterRanksService.getRanks();
   }
 
   close() {
@@ -29,6 +29,6 @@ export class ModalMasterRanksComponent implements OnInit {
   }
 
   save() {
-    this.modal.close(this.masterRanks)
+    this.modal.close(this.masterRanks);
   }
 }

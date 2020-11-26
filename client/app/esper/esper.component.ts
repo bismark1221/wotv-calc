@@ -36,7 +36,7 @@ export class EsperComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.esper = this.esperService.getEsperBySlug(params.get('slug'))
+      this.esper = this.esperService.getEsperBySlug(params.get('slug'));
       if (!this.esper) {
         this.router.navigate([this.navService.getRoute('/esper-not-found')]);
       } else {
@@ -48,25 +48,25 @@ export class EsperComponent implements OnInit {
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
       switch (fragment) {
-        case "esper":
-          this.activeTab = 1
+        case 'esper':
+          this.activeTab = 1;
           break;
-        case "tree":
-          this.activeTab = 2
+        case 'tree':
+          this.activeTab = 2;
           break;
         default:
           break;
       }
-    })
+    });
   }
 
   private formatEsper() {
     if (this.esper) {
-      let lang = this.translateService.currentLang
-      this.esper.name = this.nameService.getName(this.esper)
+      const lang = this.translateService.currentLang;
+      this.esper.name = this.nameService.getName(this.esper);
 
       this.esper.skills.forEach(skill => {
-        skill.name = this.nameService.getName(skill)
+        skill.name = this.nameService.getName(skill);
         skill.effects.forEach(effect => {
           effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
         });
@@ -88,19 +88,19 @@ export class EsperComponent implements OnInit {
       this.esper.SPs.forEach(awake => {
         awake.forEach(sp => {
           this.esper.maxSP += sp;
-        })
-      })
+        });
+      });
 
-      this.grid = this.gridService.generateEsperGrid(this.esper, 800)
+      this.grid = this.gridService.generateEsperGrid(this.esper, 800);
     }
   }
 
   clickNode(this, node) {
     if (node !== 0) {
       if (!this.esper.board.nodes[node].activated) {
-        this.showNode(node)
+        this.showNode(node);
       } else {
-        this.hideNode(node)
+        this.hideNode(node);
       }
     }
   }
@@ -108,7 +108,7 @@ export class EsperComponent implements OnInit {
   showNode(node) {
     if (node !== 0) {
       this.esper.board.nodes[node].activated = true;
-      this.showNode(this.esper.board.nodes[node].parent)
+      this.showNode(this.esper.board.nodes[node].parent);
     }
   }
 
@@ -116,16 +116,16 @@ export class EsperComponent implements OnInit {
     if (node !== 0) {
       this.esper.board.nodes[node].activated = false;
       this.esper.board.nodes[node].children.forEach(childNode => {
-        this.hideNode(childNode)
-      })
+        this.hideNode(childNode);
+      });
     }
   }
 
   clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark
+    this.specialBismark = !this.specialBismark;
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 }

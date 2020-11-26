@@ -13,14 +13,14 @@ import { NameService } from '../services/name.service';
 export class EquipmentsComponent implements OnInit {
   equipments;
   acquisitionTypes;
-  searchText = "";
-  sort = "rarity"
-  order = "asc"
+  searchText = '';
+  sort = 'rarity';
+  order = 'asc';
   filters = {
     rarity: [],
     type: [],
     acquisition: []
-  }
+  };
   isCollapsedRarity = false;
   isCollapsedType = false;
   isCollapsedAcquisition = false;
@@ -37,7 +37,7 @@ export class EquipmentsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle("Equipment");
+    this.navService.setTitle('Equipment');
 
     this.getAcquisitionTypes();
     this.getEquipments();
@@ -50,59 +50,59 @@ export class EquipmentsComponent implements OnInit {
 
   private translateEquipments() {
     this.equipments.forEach(equipment => {
-      equipment.name = this.nameService.getName(equipment)
+      equipment.name = this.nameService.getName(equipment);
     });
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   getFilteredEquipments() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.equipments.filter(equipment => {
         return equipment.name.toLowerCase().includes(text) || equipment.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.equipments
+      return this.equipments;
     }
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEquipments()
+    this.getEquipments();
   }
 
   getAcquisitionTypes() {
-    this.acquisitionTypes = this.equipmentService.getAcquisitionTypes()
+    this.acquisitionTypes = this.equipmentService.getAcquisitionTypes();
     this.acquisitionTypes.forEach(type => {
-      if (type != "Unknown") {
-        this.filters.acquisition.push(type)
+      if (type !== 'Unknown') {
+        this.filters.acquisition.push(type);
       }
-    })
+    });
   }
 
   isAcquisitionChecked(type) {
-    if (this.filters.acquisition.indexOf(type) != -1) {
-      return true
+    if (this.filters.acquisition.indexOf(type) !== -1) {
+      return true;
     }
 
-    return false
+    return false;
   }
 
   changeSort(sort) {
-    this.sort = sort
-    this.getEquipments()
+    this.sort = sort;
+    this.getEquipments();
   }
 
   changeOrder(order) {
-    this.order = order
-    this.getEquipments()
+    this.order = order;
+    this.getEquipments();
   }
 }

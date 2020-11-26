@@ -13,9 +13,9 @@ import { JobService } from '../services/job.service';
 })
 export class UnitsComponent implements OnInit {
   units;
-  searchText = "";
-  sort = "rarity"
-  order = "asc"
+  searchText = '';
+  sort = 'rarity';
+  order = 'asc';
   jobs = [];
   filters = {
     rarity: [],
@@ -23,7 +23,7 @@ export class UnitsComponent implements OnInit {
     job: [],
     limited: [],
     mainJob: true
-  }
+  };
   isCollapsedRarity = false;
   isCollapsedElement = false;
   isCollapsedLimited = false;
@@ -43,7 +43,7 @@ export class UnitsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle("Units");
+    this.navService.setTitle('Units');
 
     this.getUnits();
     this.getJobs();
@@ -55,59 +55,59 @@ export class UnitsComponent implements OnInit {
   }
 
   getJobs() {
-    this.jobs = this.jobService.getUniqJobs()
-    this.translateJobs()
+    this.jobs = this.jobService.getUniqJobs();
+    this.translateJobs();
   }
 
   private translateUnits() {
     this.units.forEach(unit => {
-      unit.name = this.nameService.getName(unit)
+      unit.name = this.nameService.getName(unit);
     });
   }
 
   private translateJobs() {
     this.jobs.forEach(job => {
-      job.name = this.nameService.getName(job)
+      job.name = this.nameService.getName(job);
     });
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   getFilteredUnits() {
-    if (this.searchText !== "") {
-      let text = this.searchText.toLowerCase();
+    if (this.searchText !== '') {
+      const text = this.searchText.toLowerCase();
       return this.units.filter(unit => {
         return unit.name.toLowerCase().includes(text) || unit.slug.toLowerCase().includes(text);
       });
     } else {
-      return this.units
+      return this.units;
     }
   }
 
   filterList(type, value) {
-    if (this.filters[type].indexOf(value) == -1) {
-      this.filters[type].push(value)
+    if (this.filters[type].indexOf(value) === -1) {
+      this.filters[type].push(value);
     } else {
-      this.filters[type].splice(this.filters[type].indexOf(value), 1)
+      this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getUnits()
+    this.getUnits();
   }
 
   changeSort(sort) {
-    this.sort = sort
-    this.getUnits()
+    this.sort = sort;
+    this.getUnits();
   }
 
   changeOrder(order) {
-    this.order = order
-    this.getUnits()
+    this.order = order;
+    this.getUnits();
   }
 
   toggleMainJob() {
-    this.filters.mainJob = !this.filters.mainJob
-    this.getUnits()
+    this.filters.mainJob = !this.filters.mainJob;
+    this.getUnits();
   }
 }

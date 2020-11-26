@@ -1,24 +1,24 @@
 import { TranslateService } from '@ngx-translate/core';
 
 export class Skill {
-  id: number = 1;
+  id = 1;
   dataId?;
   names: any = {
     en: 'New ability'
   };
-  name: string = 'New ability';
+  name = 'New ability';
 
-  type?: string = 'chain';
-  damage?: string = 'physic';
+  type = 'chain';
+  damage = 'physic';
   magicType?: string = null;
 
-  castTime?: number = 0;
-  offset?: number = 0;
-  ignore?: number = 0;
-  base: number = 0;
+  castTime = 0;
+  offset = 0;
+  ignore = 0;
+  base = 0;
 
-  dualable?: boolean = true;
-  isLB?: boolean = false;
+  dualable = true;
+  isLB = false;
 
   framesList?: any[] = [0];
   elements?: string[] = [];
@@ -29,15 +29,15 @@ export class Skill {
   range?: any = {
     min: 0,
     max: 20
-  }
-  breaks? = [];
-  buffs? = [];
-  killers? = [];
-  imbues? = [];
-  effectOrder? = [];
-  lbDamage?: number = 0;
-  jumpDamage?: number = 0;
-  canDualSkill?: boolean = true;
+  };
+  breaks ? = [];
+  buffs ? = [];
+  killers ? = [];
+  imbues ? = [];
+  effectOrder ? = [];
+  lbDamage = 0;
+  jumpDamage = 0;
+  canDualSkill = true;
   jump?;
   delayAttack?;
   dot?;

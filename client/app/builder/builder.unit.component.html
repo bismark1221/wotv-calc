@@ -27,7 +27,7 @@
         <div class="loadDiv" *ngIf="savedUnits[filteredUnit.dataId] && savedUnits[filteredUnit.dataId].length > 0">
           <a id="load_{{filteredUnit.slug}}" (click)="openLoadModal(filteredUnit.dataId)"><i class="fas fa-download"></i></a>
         </div>
-        <hr *ngIf="j != filteredUnits[rarity].length - 1"/>
+        <hr *ngIf="j !== filteredUnits[rarity].length - 1"/>
       </div>
     </div>
   </div>
@@ -136,8 +136,8 @@
         </tr>
         <tr>
           <td>
-            <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
-              <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+            <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
+              <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
 
               <div ngbDropdown class="dropdownDiv">
                 <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
@@ -157,7 +157,7 @@
         </tr>
         <tr>
           <td class="subJobColumn">
-            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="select_subjob_{{i}}" (click)="selectSubJob(i)">
+            <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'selectedSubJob': i === unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="select_subjob_{{i}}" (click)="selectSubJob(i)">
               <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
               {{ unit.jobsData[i].name }}
             </div>
@@ -297,10 +297,10 @@
             </div>
           </td>
         </tr>
-        <tr *ngIf="version == 'JP'">
+        <tr *ngIf="version === 'JP'">
           <th class="sub">Master Ranks</th>
         </tr>
-        <tr *ngIf="version == 'JP'">
+        <tr *ngIf="version === 'JP'">
           <td>
             <div *ngFor="let elementsLine of [['fire', 'ice', 'wind', 'earth'], ['lightning', 'water', 'light', 'dark']]" class="masterRanksDiv">
               <div *ngFor="let element of elementsLine" class="oneMasterRankDiv">
@@ -335,7 +335,7 @@
         <tr *ngFor="let statFrom of statsFrom">
           <td>{{ statFrom.translate }}</td>
           <td *ngFor="let type of statsType">
-            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'][statFrom.type]">{{ unit.stats["INITIAL_AP"][statFrom.type] }} / </span>
             <span>{{ unit.stats[type][statFrom.type] }}</span>
           </td>
           <td>
@@ -347,7 +347,7 @@
           <td>Equipment {{ statFrom }} Stats</td>
           <td *ngFor="let type of statsType">
             <div *ngIf="unit.stats[type].equipments">
-              <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
+              <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP'].equipments[statFrom]">{{ unit.stats["INITIAL_AP"].equipments[statFrom] }} / </span>
               <span>{{ unit.stats[type].equipments[statFrom] }}</span>
             </div>
           </td>
@@ -357,7 +357,7 @@
         <tr *ngFor="let statFrom of [0, 1, 2]">
           <td>Equipment {{ statFrom }} Buffs</td>
           <td *ngFor="let type of statsType">
-            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP']['equipment' + statFrom + '_buff']">{{ unit.stats["INITIAL_AP"]['equipment' + statFrom + '_buff'] }} / </span>
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP']['equipment' + statFrom + '_buff']">{{ unit.stats["INITIAL_AP"]['equipment' + statFrom + '_buff'] }} / </span>
             <span>{{ unit.stats[type]['equipment' + statFrom + '_buff'] }}</span>
           </td>
           <td></td>
@@ -366,7 +366,7 @@
         <tr>
           <td>Total Equipement</td>
           <td *ngFor="let type of statsType">
-            <span *ngIf="type == 'AP' && unit.stats['INITIAL_AP']['totalEquipment']">{{ unit.stats["INITIAL_AP"]['totalEquipment'] }} / </span>
+            <span *ngIf="type === 'AP' && unit.stats['INITIAL_AP']['totalEquipment']">{{ unit.stats["INITIAL_AP"]['totalEquipment'] }} / </span>
             <span>{{ unit.stats[type]['totalEquipment'] }}</span>
           </td>
           <td></td>
@@ -376,7 +376,7 @@
         <tr>
           <td>Total</td>
           <td *ngFor="let type of statsType">
-            <span *ngIf="type == 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
+            <span *ngIf="type === 'AP'">{{ unit.stats["INITIAL_AP"].total }} / </span>
             <span>{{ unit.stats[type].total }}</span>
           </td>
           <td>{{ unit.calcCost ? unit.calcCost.total : 0 }}</td>
@@ -751,28 +751,28 @@
     <div [className]="unit.exJobs.length > 0 ? 'builderEXUnitGridContainer' : 'builderUnitGridContainer'">
       <ul class="hexGrid" oncontextmenu="return false;">
         <li *ngFor="let node of unit.grid.gridNodes; let index;" id="node_{{node}}" (click)="clickNode(node)" (contextmenu)="rightClickNode(node)">
-          <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+          <div class="hex hideNode" *ngIf="unit.grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-          <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type == 'center'">
+          <div class="hex activated" *ngIf="unit.grid.nodesForGrid[node].type === 'center'">
             <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
           </div>
 
-          <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type == 'text'"
+          <div class="hex" *ngIf="unit.grid.nodesForGrid[node].type === 'text'"
                [ngClass]="{
                  'activated': unit.board.nodes[node].activated,
-                 'buff': unit.board.nodes[node].type == 'buff' && (!unit.board.nodes[node].skill.type || unit.board.nodes[node].skill.type != 'ex_buff'),
-                 'skill': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'skill',
-                 'support': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'support',
-                 'counter': unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'counter',
+                 'buff': unit.board.nodes[node].type === 'buff' && (!unit.board.nodes[node].skill.type || unit.board.nodes[node].skill.type !== 'ex_buff'),
+                 'skill': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'skill',
+                 'support': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'support',
+                 'counter': unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'counter',
                  'ex_buff':
-                   (unit.board.nodes[node].type == 'skill' && unit.board.nodes[node].skill.type == 'ex_buff') ||
-                   (unit.board.nodes[node].type == 'buff' && unit.board.nodes[node].skill.type && unit.board.nodes[node].skill.type == 'ex_buff'),
-                 'unit_level': unit.board.nodes[node].type == 'buff' && unit.board.nodes[node].skill.effects.length > 0 && unit.board.nodes[node].skill.effects[0].type == 'INCREASE_UNIT_LEVEL',
+                   (unit.board.nodes[node].type === 'skill' && unit.board.nodes[node].skill.type === 'ex_buff') ||
+                   (unit.board.nodes[node].type === 'buff' && unit.board.nodes[node].skill.type && unit.board.nodes[node].skill.type === 'ex_buff'),
+                 'unit_level': unit.board.nodes[node].type === 'buff' && unit.board.nodes[node].skill.effects.length > 0 && unit.board.nodes[node].skill.effects[0].type === 'INCREASE_UNIT_LEVEL',
                  'notActivable': !canActivateNode(node)
           }" >
             <i class="fas fa-plus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated"></i>
             <span class="text">{{ unit.grid.nodesForGrid[node].value }}</span>
-            <span class="skillLevel" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level == unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
+            <span class="skillLevel" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated">lv. {{ unit.board.nodes[node].level === unit.board.nodes[node].skill.maxLevel ? 'MAX' : unit.board.nodes[node].level }}</span>
             <i class="fas fa-minus" *ngIf="unit.board.nodes[node].skill.maxLevel && unit.board.nodes[node].skill.maxLevel > 1 && unit.board.nodes[node].activated" id="minus_node_{{node}}" (click)="rightClickNode(node); $event.stopPropagation()"></i>
           </div>
         </li>

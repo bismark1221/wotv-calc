@@ -39,7 +39,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.card = this.cardService.getCardBySlug(params.get('slug'))
+      this.card = this.cardService.getCardBySlug(params.get('slug'));
       if (!this.card) {
         this.router.navigate([this.navService.getRoute('/card-not-found')]);
       } else {
@@ -52,18 +52,18 @@ export class CardComponent implements OnInit {
 
   private formatCard() {
     if (this.card) {
-      let lang = this.translateService.currentLang
-      let skills = ["classic", "awake", "lvmax"];
+      const lang = this.translateService.currentLang;
+      const skills = ['classic', 'awake', 'lvmax'];
+      const buffTypes = ['unitBuffs', 'partyBuffs'];
 
-      this.card.name = this.nameService.getName(this.card)
+      this.card.name = this.nameService.getName(this.card);
 
       skills.forEach(skillType => {
-        let buffTypes = ["unitBuffs", "partyBuffs"]
         buffTypes.forEach(buffType => {
           this.card[buffType].forEach(buff => {
             if (buff[skillType]) {
-              if (buff[skillType].type !== "buff" && buff[skillType].type !== "support") {
-                buff[skillType].name = this.nameService.getName(buff[skillType])
+              if (buff[skillType].type !== 'buff' && buff[skillType].type !== 'support') {
+                buff[skillType].name = this.nameService.getName(buff[skillType]);
 
                 buff[skillType].effects.forEach(effect => {
                   effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
@@ -82,34 +82,33 @@ export class CardComponent implements OnInit {
                 });
               }
             }
-          })
-        })
-      })
+          });
+        });
+      });
 
-      let buffTypes = ["unitBuffs", "partyBuffs"]
       buffTypes.forEach(buffType => {
         this.card[buffType].forEach(buff => {
           if (buff.cond) {
             buff.cond.forEach(cond => {
-              if (cond.type == 'job') {
+              if (cond.type === 'job') {
                 cond.items.forEach((jobId, jobIndex) => {
-                  let job = this.jobService.getJob(jobId)
-                  cond.items[jobIndex] = job ? job : cond.items[jobIndex]
-                })
-              } else if (cond.type == 'unit') {
+                  const job = this.jobService.getJob(jobId);
+                  cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+                });
+              } else if (cond.type === 'unit') {
                 cond.items.forEach((unitId, unitIndex) => {
-                  let unit = this.unitService.getUnit(unitId)
-                  cond.items[unitIndex] = unit ? unit : cond.items[unitIndex]
-                })
+                  const unit = this.unitService.getUnit(unitId);
+                  cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+                });
               }
-            })
+            });
           }
-        })
-      })
+        });
+      });
     }
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 }

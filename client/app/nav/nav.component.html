@@ -36,19 +36,19 @@
 
   <div class="lang" (mouseover)="showLangSelector=true" (mouseleave)="showLangSelector=false">
     <div class="actualLang">
-      <div *ngIf="lang == 'fr'">
+      <div *ngIf="lang === 'fr'">
         <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
       </div>
-      <div *ngIf="lang == 'en'">
+      <div *ngIf="lang === 'en'">
         <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
       </div>
     </div>
-    <div class="otherLang" *ngIf="lang != 'fr' && showLangSelector" >
+    <div class="otherLang" *ngIf="lang !== 'fr' && showLangSelector" >
       <a class="pointer" (click)="changeLang('fr')">
         <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
       </a>
     </div>
-    <div class="otherLang" *ngIf="lang != 'en' && showLangSelector">
+    <div class="otherLang" *ngIf="lang !== 'en' && showLangSelector">
       <a class="pointer" (click)="changeLang('en')">
         <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
       </a>
@@ -59,18 +59,18 @@
 
   <div class="versions" (mouseover)="showVersionSelector=true" (mouseleave)="showVersionSelector=false">
     <div class="actualVersion">
-      {{ version == 'GL' ? 'Global' : 'Japan' }}
+      {{ version === 'GL' ? 'Global' : 'Japan' }}
     </div>
-    <div class="otherVersion" *ngIf="version != 'GL' && showVersionSelector" >
+    <div class="otherVersion" *ngIf="version !== 'GL' && showVersionSelector" >
       <a (click)="changeVersion('GL')">Global</a>
     </div>
-    <div class="otherVersion" *ngIf="version != 'JP' && showVersionSelector">
+    <div class="otherVersion" *ngIf="version !== 'JP' && showVersionSelector">
       <a (click)="changeVersion('JP')">Japan</a>
     </div>
   </div>
 
   <div class="them">
-    <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme == 'light'"></ui-switch>
+    <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
   </div>
 
   <div *ngIf="!user">
@@ -92,7 +92,7 @@
         <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">{{ 'nav.espers' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']">{{ 'nav.equipments' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']">{{ 'nav.guild' | translate }}</a>
-        <a *ngIf="version == 'JP'" class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">{{ 'nav.masterRanks' | translate }}</a>
+        <a *ngIf="version === 'JP'" class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">{{ 'nav.masterRanks' | translate }}</a>
       </li>
     </ul>
   </div>

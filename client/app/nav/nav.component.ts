@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Angulartics2 } from 'angulartics2';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { NavService } from '../services/nav.service'
-import { ThemeService } from '../services/theme.service'
-import { AuthService } from '../services/auth.service'
+import { NavService } from '../services/nav.service';
+import { ThemeService } from '../services/theme.service';
+import { AuthService } from '../services/auth.service';
 
-import { LoginComponent } from '../auth/login.component'
+import { LoginComponent } from '../auth/login.component';
 
 @Component({
   selector: 'app-nav',
@@ -17,8 +17,8 @@ import { LoginComponent } from '../auth/login.component'
   styleUrls: ['./nav.component.css']
 })
 
-export class NavComponent {
-  displayLink: boolean = false;
+export class NavComponent implements OnInit, AfterViewInit {
+  displayLink = false;
   menuDisabled: boolean;
   inBuilder = false;
   inOther = false;
@@ -36,7 +36,7 @@ export class NavComponent {
   version = null;
   theme = null;
   lang = null;
-  user = null
+  user = null;
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -49,33 +49,33 @@ export class NavComponent {
     private authService: AuthService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.lang = this.translateService.currentLang
+      this.lang = this.translateService.currentLang;
     });
   }
 
   ngOnInit() {
-    this.theme = this.themeService.initTheme()
+    this.theme = this.themeService.initTheme();
     this.menuDisabled = this.navService.menuDisabled;
     this.version = this.navService.getVersion();
-    this.lang = this.translateService.currentLang
-    this.user = this.authService.getUser()
+    this.lang = this.translateService.currentLang;
+    this.user = this.authService.getUser();
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
-        let url = event.url.split("/")
-        if (url.length >= 2 && url[1] == "JP") {
-          this.navService.setVersion("JP")
-          this.version = "JP"
+        const url = event.url.split('/');
+        if (url.length >= 2 && url[1] === 'JP') {
+          this.navService.setVersion('JP');
+          this.version = 'JP';
         } else {
-          this.navService.setVersion("GL")
-          this.version = "GL"
+          this.navService.setVersion('GL');
+          this.version = 'GL';
         }
-        this.actualRoute = url
+        this.actualRoute = url;
       }
 
       if (event instanceof NavigationEnd) {
-        this.inOther = false
-        this.inBuilder = false
+        this.inOther = false;
+        this.inBuilder = false;
         this.inUnit = false;
         this.inCard = false;
         this.inEsper = false;
@@ -83,25 +83,25 @@ export class NavComponent {
         this.inRaid = false;
         this.inIndex = false;
 
-        let url = event.url.split("/")
+        const url = event.url.split('/');
 
-        if ((url.length >= 2 && url[1] == "builder")
-          || (url.length >= 3 && url[2] == "builder")) {
-          this.inBuilder = true
-        } else if ((url.length >= 2 && url[1] == "other")
-          || (url.length >= 3 && url[2] == "other")) {
-          this.inOther = true
-        } else if (url.length >= 2 && (url[1] == "unit" || url[1] == "units" || (url[1] == "JP" && (url[2] == "unit" || url[2] == "units")))) {
+        if ((url.length >= 2 && url[1] === 'builder')
+          || (url.length >= 3 && url[2] === 'builder')) {
+          this.inBuilder = true;
+        } else if ((url.length >= 2 && url[1] === 'other')
+          || (url.length >= 3 && url[2] === 'other')) {
+          this.inOther = true;
+        } else if (url.length >= 2 && (url[1] === 'unit' || url[1] === 'units' || (url[1] === 'JP' && (url[2] === 'unit' || url[2] === 'units')))) {
           this.inUnit = true;
-        } else if (url.length >= 2 && (url[1] == "card" || url[1] == "cards" || (url[1] == "JP" && (url[2] == "card" || url[2] == "cards")))) {
+        } else if (url.length >= 2 && (url[1] === 'card' || url[1] === 'cards' || (url[1] === 'JP' && (url[2] === 'card' || url[2] === 'cards')))) {
           this.inCard = true;
-        } else if (url.length >= 2 && (url[1] == "esper" || url[1] == "espers" || (url[1] == "JP" && (url[2] == "esper" || url[2] == "espers")))) {
+        } else if (url.length >= 2 && (url[1] === 'esper' || url[1] === 'espers' || (url[1] === 'JP' && (url[2] === 'esper' || url[2] === 'espers')))) {
           this.inEsper = true;
-        } else if (url.length >= 2 && (url[1] == "equipment" || url[1] == "equipments" || (url[1] == "JP" && (url[2] == "equipment" || url[2] == "equipments")))) {
+        } else if (url.length >= 2 && (url[1] === 'equipment' || url[1] === 'equipments' || (url[1] === 'JP' && (url[2] === 'equipment' || url[2] === 'equipments')))) {
           this.inEquipment = true;
-        } else if (url.length >= 2 && (url[1] == "raid" || url[1] == "raids" || (url[1] == "JP" && (url[2] == "raid" || url[2] == "raids")))) {
+        } else if (url.length >= 2 && (url[1] === 'raid' || url[1] === 'raids' || (url[1] === 'JP' && (url[2] === 'raid' || url[2] === 'raids')))) {
           this.inRaid = true;
-        } else if (url.length >= 2 && (url[1] == "index" || (url[1] == "JP" && url[2] == "index"))) {
+        } else if (url.length >= 2 && (url[1] === 'index' || (url[1] === 'JP' && url[2] === 'index'))) {
           this.inIndex = true;
         }
       }
@@ -126,31 +126,31 @@ export class NavComponent {
       this.angulartics.eventTrack.next({ action: lang, properties: { category: 'change_lang' }});
     }
 
-    this.showLangSelector = false
+    this.showLangSelector = false;
   }
 
   changeVersion(version) {
-    if (version == "GL" && this.actualRoute.length >= 2 && this.actualRoute[1] === "JP") {
-      this.actualRoute.splice(1, 1)
+    if (version === 'GL' && this.actualRoute.length >= 2 && this.actualRoute[1] === 'JP') {
+      this.actualRoute.splice(1, 1);
 
-      let route = this.actualRoute.join("/").split("#")
-      this.router.navigate([this.actualRoute.join("/") == "" ? "/" : route[0]], { preserveFragment: true })
-    } else if (version == "JP" && this.actualRoute.length >= 2 && this.actualRoute[1] !== "JP") {
-      this.actualRoute.splice(1, 0, "JP");
+      const route = this.actualRoute.join('/').split('#');
+      this.router.navigate([this.actualRoute.join('/') === '' ? '/' : route[0]], { preserveFragment: true });
+    } else if (version === 'JP' && this.actualRoute.length >= 2 && this.actualRoute[1] !== 'JP') {
+      this.actualRoute.splice(1, 0, 'JP');
 
-      let route = this.actualRoute.join("/").split("#")
-      this.router.navigate([route[0]], { preserveFragment: true })
+      const route = this.actualRoute.join('/').split('#');
+      this.router.navigate([route[0]], { preserveFragment: true });
     }
 
-    this.showVersionSelector = false
+    this.showVersionSelector = false;
   }
 
   getRoute(route) {
-    return this.navService.getRoute(route)
+    return this.navService.getRoute(route);
   }
 
   toggleTheme() {
-    this.theme = this.themeService.toogleTheme()
+    this.theme = this.themeService.toogleTheme();
   }
 
   openLoginModal() {
@@ -160,6 +160,6 @@ export class NavComponent {
   }
 
   logout() {
-    this.authService.logout()
+    this.authService.logout();
   }
 }

@@ -10,10 +10,10 @@ import { GuildService } from '../../services/guild.service';
   styleUrls: ['./modal.guild.component.css']
 })
 export class ModalGuildComponent implements OnInit {
-  statues
-  statueNames
+  statues;
+  statueNames;
 
-  @Input() public guild
+  @Input() public guild;
 
   constructor(
     private guildService: GuildService,
@@ -21,8 +21,8 @@ export class ModalGuildComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.statues = this.guildService.getStatues()
-    this.statueNames = Object.keys(this.statues)
+    this.statues = this.guildService.getStatues();
+    this.statueNames = Object.keys(this.statues);
   }
 
   close() {
@@ -30,6 +30,6 @@ export class ModalGuildComponent implements OnInit {
   }
 
   save() {
-    this.modal.close(this.guild)
+    this.modal.close(this.guild);
   }
 }

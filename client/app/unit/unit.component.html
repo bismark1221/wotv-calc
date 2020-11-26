@@ -36,7 +36,7 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
                 {{ jobs[i].name }}
               </td>
             </tr>
@@ -86,22 +86,22 @@
         <table class="tmrSkillTable">
           <tbody>
             <tr *ngIf="unit.tmr.skills[0]">
-              <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type == 'skill' ? '7' : '2'">TMR Skill</th>
+              <th [attr.colspan]="unit.tmr.skills[0] && unit.tmr.skills[0].type === 'skill' ? '7' : '2'">TMR Skill</th>
             </tr>
             <tr *ngIf="unit.tmr.skills[0]">
               <th class="sub">Type</th>
-              <th class="sub" *ngIf="unit.tmr.skills[0].type == 'skill'">name</th>
+              <th class="sub" *ngIf="unit.tmr.skills[0].type === 'skill'">name</th>
               <th class="sub">Effects</th>
-              <th class="sub" *ngIf="unit.tmr.skills[0].type == 'skill'">Range</th>
-              <th class="sub" *ngIf="unit.tmr.skills[0].type == 'skill'">Casts</th>
-              <th class="sub" *ngIf="unit.tmr.skills[0].type == 'skill'">Hits</th>
-              <th class="sub" *ngIf="unit.tmr.skills[0].type == 'skill'">Cost</th>
+              <th class="sub" *ngIf="unit.tmr.skills[0].type === 'skill'">Range</th>
+              <th class="sub" *ngIf="unit.tmr.skills[0].type === 'skill'">Casts</th>
+              <th class="sub" *ngIf="unit.tmr.skills[0].type === 'skill'">Hits</th>
+              <th class="sub" *ngIf="unit.tmr.skills[0].type === 'skill'">Cost</th>
             </tr>
             <tr *ngIf="unit.tmr.skills[0]">
               <td class="tmrTypeTd">
                 <img class="skilImg" src="{{'assets/skill-type/' + unit.tmr.skills[0].type + '.png'}}" />
               </td>
-              <td class="tmrNameTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
+              <td class="tmrNameTd" *ngIf="unit.tmr.skills[0].type === 'skill'">
                 <span>{{ unit.tmr.skills[0].name }}</span>
                 <span *ngIf="unit.tmr.skills[0].based"><img class='atkBasedImg' src="{{'assets/atkBased/' + unit.tmr.skills[0].based + '.png'}}" /></span>
                 <div *ngIf="unit.tmr.skills[0].time && unit.tmr.skills[0].time.minValue">
@@ -121,19 +121,19 @@
                   {{ effect.formatHtml }}
                 </div>
               </td>
-              <td class="rangeTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
+              <td class="rangeTd" *ngIf="unit.tmr.skills[0].type === 'skill'">
                 <ng-template #tip_table><div [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
                   <div class="divSkillTableHtml" [innerHTML]="unit.tmr.skills[0].skillTableHtml"></div>
                 </div>
               </td>
-              <td class="skillCastTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
+              <td class="skillCastTd" *ngIf="unit.tmr.skills[0].type === 'skill'">
                 {{ unit.tmr.skills[0].count }}
               </td>
-              <td class="skillHitTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
+              <td class="skillHitTd" *ngIf="unit.tmr.skills[0].type === 'skill'">
                 <span *ngIf="unit.tmr.skills[0].combo">{{ unit.tmr.skills[0].combo.num }}</span>
               </td>
-              <td class="skillCostTd" *ngIf="unit.tmr.skills[0].type == 'skill'">
+              <td class="skillCostTd" *ngIf="unit.tmr.skills[0].type === 'skill'">
                 <span *ngIf="unit.tmr.skills[0].cost">{{ unit.tmr.skills[0].cost.value }} {{ unit.tmr.skills[0].cost.type }}</span>
               </td>
             </tr>
@@ -195,7 +195,7 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
                 {{ jobs[i].name }}
               </td>
             </tr>
@@ -252,8 +252,8 @@
               <td>{{ unit.stats.DEX.min }}</td>
               <td>{{ unit.stats.AGI.min }}</td>
               <td>{{ unit.stats.LUCK.min }}</td>
-              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length == 0">{{ unit.stats.MOVE.min }}</td>
-              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length == 0">{{ unit.stats.JUMP.min }}</td>
+              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length === 0">{{ unit.stats.MOVE.min }}</td>
+              <td rowspan="2" *ngIf="unit.exJobs && unit.exJobs.length === 0">{{ unit.stats.JUMP.min }}</td>
               <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.MOVE.min }}</td>
               <td rowspan="3" *ngIf="unit.exJobs && unit.exJobs.length > 0">{{ unit.stats.JUMP.min }}</td>
             </tr>
@@ -379,7 +379,7 @@
             </tr>
             <tr *ngFor="let i of [0, 1, 2]" class="jobsStatsLine">
               <td>
-                <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
               </td>
               <td>{{ unit.jobsStats[i].HP }}</td>
               <td>{{ unit.jobsStats[i].TP }}</td>
@@ -537,10 +537,10 @@
         <table class="skillsTable" *ngFor="let i of possibleSkillTypes">
           <tbody>
             <tr>
-              <th colspan="20" *ngIf="i != 'ex_buff'">
+              <th colspan="20" *ngIf="i !== 'ex_buff'">
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" />&nbsp;{{ i | titlecase }}
               </th>
-              <th colspan="20" *ngIf="i == 'ex_buff'">
+              <th colspan="20" *ngIf="i === 'ex_buff'">
                 <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />&nbsp;EX Buffs
               </th>
             </tr>
@@ -548,11 +548,11 @@
               <th class="sub skillJobTd">Job</th>
               <th class="sub skillJobTd">Job lvl</th>
               <th class="sub skillStarTd">Star lvl</th>
-              <th *ngIf="i == 'counter'" class="sub rangeTd">Type</th>
+              <th *ngIf="i === 'counter'" class="sub rangeTd">Type</th>
               <th class="sub skillNameTd">Name</th>
               <th class="sub">Effects</th>
-              <th *ngIf="i == 'counter'" class="sub rangeTd">Range</th>
-              <th *ngIf="i == 'counter'" class="sub skillHitTd">Hits</th>
+              <th *ngIf="i === 'counter'" class="sub rangeTd">Range</th>
+              <th *ngIf="i === 'counter'" class="sub skillHitTd">Hits</th>
             </tr>
           </tbody>
           <tbody *ngFor="let skill of getSkillsPerType(i)">
@@ -560,7 +560,7 @@
               <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
-              <td *ngIf="i == 'counter'">
+              <td *ngIf="i === 'counter'">
                 <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
               </td>
               <td>{{ skill.name }}</td>
@@ -574,18 +574,18 @@
                   {{ effect.formatHtml }}
                 </div>
               </td>
-              <td *ngIf="i == 'counter'">
+              <td *ngIf="i === 'counter'">
                 <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
-              <td *ngIf="i == 'counter'"><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+              <td *ngIf="i === 'counter'"><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
             </tr>
 
             <tr *ngFor="let upgradedSkill of skill.upgrades">
               <td colspan="3">Upgrade</td>
-              <td *ngIf="i == 'counter'"></td>
+              <td *ngIf="i === 'counter'"></td>
               <td>{{ upgradedSkill.name }}</td>
               <td class="skillEffectTd">
                 <div *ngIf="upgradedSkill.upgradeHtml !== ''">
@@ -597,13 +597,13 @@
                   {{ effect.formatHtml }}
                 </div>
               </td>
-              <td *ngIf="i == 'counter'">
+              <td *ngIf="i === 'counter'">
                 <ng-template #tip_table><div [innerHTML]="upgradedSkill.skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
                   <div class="divSkillTableHtml" [innerHTML]="upgradedSkill.skillTableHtml"></div>
                 </div>
               </td>
-              <td *ngIf="i == 'counter'"><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
+              <td *ngIf="i === 'counter'"><span *ngIf="upgradedSkill.combo">{{ upgradedSkill.combo.num }}</span></td>
             </tr>
           </tbody>
         </table>
@@ -642,10 +642,10 @@
         <table class="skillsTable" *ngFor="let i of [0, 1, 2, 3]">
           <tbody>
             <tr>
-              <th *ngIf="i == 0 && jobs[0]" colspan="9">
+              <th *ngIf="i === 0 && jobs[0]" colspan="9">
                 <img class="mainJob" src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />&nbsp;Main Job
               </th>
-              <th *ngIf="i != 0 && jobs[i - 1]" colspan="9">
+              <th *ngIf="i !== 0 && jobs[i - 1]" colspan="9">
                 <img class="subJob" src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />&nbsp;{{ jobs[i - 1].name }}
               </th>
             </tr>
@@ -821,7 +821,7 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
                 {{ jobs[i].name }}
               </td>
             </tr>
@@ -850,16 +850,16 @@
       </div>
 
       <div class="rightBlock" *ngIf="unit && grid">
-        <div [ngClass]="{'unitGridContainer': !unit.exJobs || unit.exJobs.length == 0, 'EXunitGridContainer': unit.exJobs && unit.exJobs.length > 0}" style="text-align: center;">
+        <div [ngClass]="{'unitGridContainer': !unit.exJobs || unit.exJobs.length === 0, 'EXunitGridContainer': unit.exJobs && unit.exJobs.length > 0}" style="text-align: center;">
           <ul class="hexGrid">
             <li *ngFor="let node of grid.gridNodes; let index;" (click)="clickNode(node)">
-              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type == 'hidden'">{{ node }}</div>
+              <div class="hex hideNode" *ngIf="grid.nodesForGrid[node].type === 'hidden'">{{ node }}</div>
 
-              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type == 'center'">
+              <div class="hex activated" *ngIf="grid.nodesForGrid[node].type === 'center'">
                 <span class="fullIcon"><img src="{{ '/assets/units/' + unit.image + '_m.png' }}"></span>
               </div>
 
-              <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type == 'text'">
+              <div class="hex" [ngClass]="{'activated': unit.board.nodes[node].activated}" *ngIf="grid.nodesForGrid[node].type === 'text'">
                 <span class="text">{{ grid.nodesForGrid[node].value }}</span>
               </div>
             </li>
@@ -877,8 +877,8 @@
 
 <div [ngbNavOutlet]="nav"></div>
 
-<div *ngIf="specialBismark && activeTab == 1" class="tab-content">
-  <div *ngIf="activeTab == 2 else stats"></div>
-  <div *ngIf="activeTab == 3 else skills"></div>
-  <div *ngIf="activeTab == 4 else tree"></div>
+<div *ngIf="specialBismark && activeTab === 1" class="tab-content">
+  <div *ngIf="activeTab === 2 else stats"></div>
+  <div *ngIf="activeTab === 3 else skills"></div>
+  <div *ngIf="activeTab === 4 else tree"></div>
 </div>

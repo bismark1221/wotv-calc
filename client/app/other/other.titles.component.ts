@@ -14,7 +14,7 @@ export class OtherTitlesComponent implements OnInit {
   titles = {
     player: [],
     guild: []
-  }
+  };
 
   constructor(
     private titleService: TitleService,
@@ -27,17 +27,17 @@ export class OtherTitlesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titles = this.titleService.getTitles()
-    this.formatTitles()
+    this.titles = this.titleService.getTitles();
+    this.formatTitles();
   }
 
   private formatTitles() {
-    let types = ['player', 'guild']
+    const types = ['player', 'guild'];
     types.forEach(type => {
       this.titles[type].forEach(title => {
-        title.name = this.nameService.getName(title)
-        title.translatedHowToGet = title.howToGet.fr && this.translateService.currentLang == "fr" ? title.howToGet.fr : title.howToGet.en
+        title.name = this.nameService.getName(title);
+        title.translatedHowToGet = title.howToGet.fr && this.translateService.currentLang === 'fr' ? title.howToGet.fr : title.howToGet.en;
       });
-    })
+    });
   }
 }

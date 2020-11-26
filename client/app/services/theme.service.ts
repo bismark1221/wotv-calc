@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
-import { BehaviorSubject } from "rxjs";
+import { BehaviorSubject } from 'rxjs';
 
-import { themes } from "../entities/theme";
+import { themes } from '../entities/theme';
 
 @Injectable()
 export class ThemeService {
@@ -16,29 +16,29 @@ export class ThemeService {
   ) {}
 
   initTheme() {
-    let theme = "light"
-    if (this.localStorageService.get("theme")) {
-      theme = this.localStorageService.get("theme")
+    let theme = 'light';
+    if (this.localStorageService.get('theme')) {
+      theme = this.localStorageService.get('theme');
     }
-    this.setActiveTheme(theme)
+    this.setActiveTheme(theme);
 
-    return theme
+    return theme;
   }
 
   toogleTheme() {
-    let theme = "light"
-    if (this.active === "light") {
-      theme = "dark"
+    let theme = 'light';
+    if (this.active === 'light') {
+      theme = 'dark';
     }
-    this.setActiveTheme(theme)
+    this.setActiveTheme(theme);
 
-    return theme
+    return theme;
   }
 
   setActiveTheme(theme) {
     this.active = theme;
     this.activeDataSubject.next(this.active);
-    this.localStorageService.set("theme", theme);
+    this.localStorageService.set('theme', theme);
 
     Object.keys(themes[theme].properties).forEach(property => {
       document.documentElement.style.setProperty(
@@ -51,6 +51,6 @@ export class ThemeService {
   }
 
   getTheme() {
-    return this.active
+    return this.active;
   }
 }

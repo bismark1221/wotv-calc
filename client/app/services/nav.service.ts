@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Title } from '@angular/platform-browser';
 
-import { BehaviorSubject } from "rxjs";
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class NavService {
@@ -24,34 +24,34 @@ export class NavService {
 
   getVersion() {
     if (!this.version) {
-      this.version = this.localStorageService.get('version') ? this.localStorageService.get('version') : "GL";
+      this.version = this.localStorageService.get('version') ? this.localStorageService.get('version') : 'GL';
       this.localStorageService.set('version', this.version);
     }
 
-    return this.version
+    return this.version;
   }
 
   setVersion(version) {
-    this.version = version
+    this.version = version;
     this.localStorageService.set('version', this.version);
   }
 
   getRoute(route) {
-    let formattedRoute = route
-    if (this.version == "JP") {
-      route = route.split("/")
-      route.splice(1, 0, "JP");
-      formattedRoute = route.join("/")
+    let formattedRoute = route;
+    if (this.version === 'JP') {
+      route = route.split('/');
+      route.splice(1, 0, 'JP');
+      formattedRoute = route.join('/');
     }
 
-    return formattedRoute
+    return formattedRoute;
   }
 
   setTitle(title) {
     if (title) {
-      this.titleService.setTitle(title + " - WOTV-CALC");
+      this.titleService.setTitle(title + ' - WOTV-CALC');
     } else {
-      this.titleService.setTitle("WOTV-CALC");
+      this.titleService.setTitle('WOTV-CALC');
     }
   }
 }

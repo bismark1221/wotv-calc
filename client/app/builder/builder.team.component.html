@@ -122,8 +122,8 @@
       </tr>
       <tr>
         <td>
-          <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
-            <img [className]="i == 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
+          <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
+            <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
 
             <div ngbDropdown class="dropdownDiv">
               <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
@@ -143,7 +143,7 @@
       </tr>
       <tr>
         <td class="subJobColumn">
-          <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i == 2, 'selectedSubJob': i == unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="selectSubJob_{{unitPos}}_{{i}}" (click)="selectSubJob(unitPos, i)">
+          <div *ngFor="let i of [0, 1, 2]" class="subjobDiv jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'selectedSubJob': i === unit.subjob, 'subjobDisable': !unit.jobsData[i].unlocked}" id="selectSubJob_{{unitPos}}_{{i}}" (click)="selectSubJob(unitPos, i)">
             <img class="subJob" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
             {{ unit.jobsData[i].name }}
           </div>
@@ -354,7 +354,7 @@
     </table>
   </div>
 
-  <div *ngIf="team && version == 'JP'" class="teamGuild">
+  <div *ngIf="team && version === 'JP'" class="teamGuild">
     <table>
       <tr>
         <th colspan="8">Master Ranks</th>
