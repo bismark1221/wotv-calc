@@ -10520,7 +10520,8 @@
               "JB_LW_SWN_FIRE",
               "JB_LW_RAIN",
               "JB_LW_STRN",
-              "JB_LW_MSW_FIRE"
+              "JB_LW_MSW_FIRE",
+              "JB_FF10_ARON"
             ]
           }
         ]
@@ -10577,7 +10578,8 @@
               "JB_LW_SWN_FIRE",
               "JB_LW_RAIN",
               "JB_LW_STRN",
-              "JB_LW_MSW_FIRE"
+              "JB_LW_MSW_FIRE",
+              "JB_FF10_ARON"
             ]
           }
         ]
@@ -11259,6 +11261,325 @@
             "type": "elem",
             "items": [
               "light"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_FF10_MV1": {
+    "dataId": "VC_FF10_MV1",
+    "names": {
+      "en": "素敵だね"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 364
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 40,
+        "max": 156
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {
+        "min": 11,
+        "max": 40
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff10mv1",
+    "slug": "suteki-da-ne",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV1_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
             ]
           }
         ]
@@ -20175,6 +20496,278 @@
         },
         "lvmax": null,
         "cond": []
+      }
+    ]
+  },
+  "VC_FF10_MV2": {
+    "dataId": "VC_FF10_MV2",
+    "names": {
+      "en": "見知らぬ世界"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 21,
+        "max": 167
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 24,
+        "max": 97
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 19,
+        "max": 78
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 6,
+        "max": 20
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff10mv2",
+    "slug": "mishiranu-sekai",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_GSAW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_GSAW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 18,
+              "maxValue": 18,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 8,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF10_MV2_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF10_MV2_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
       }
     ]
   },
