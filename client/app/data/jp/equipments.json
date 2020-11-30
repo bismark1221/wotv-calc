@@ -36934,6 +36934,641 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_FF10_ACCE_001": {
+    "names": {
+      "en": "ティーダのネックレス"
+    },
+    "slug": "tidus-no-nekkuresu",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 464
+      },
+      "DEF": {
+        "min": -3,
+        "max": 0
+      },
+      "SPR": {
+        "min": 3,
+        "max": 16
+      },
+      "DEX": {
+        "min": 3,
+        "max": 20
+      },
+      "ACCURACY": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_FF10_ACCE_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_MAGIC_1",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_MAGIC_2",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_MAGIC_3",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+5"
+          },
+          "dataId": "SK_LW_DF_MAGIC_4_UR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "魔法攻撃耐性+10"
+          },
+          "dataId": "SK_LW_DF_MAGIC_5_UR",
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ティーダのネックレス(クリティカルダメージアップ)"
+          },
+          "dataId": "SK_FF10_ACCE_001_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_acc_002",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF10_ACCE_001": 1,
+        "IT_AF_MAT_SAND_03": 30,
+        "IT_AF_MAT_SAND_04": 235,
+        "IT_AF_MAT_MYTHRIL": 10,
+        "IT_AF_MAT_WATER_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 3,
+        "IT_AF_MAT_SAND_03": 90,
+        "IT_AF_MAT_SAND_04": 335,
+        "IT_AF_MAT_MYTHRIL": 30,
+        "IT_AF_MAT_WATER_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 7,
+        "IT_AF_MAT_SAND_03": 210,
+        "IT_AF_MAT_SAND_04": 535,
+        "IT_AF_MAT_MYTHRIL": 70,
+        "IT_AF_MAT_WATER_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 15,
+        "IT_AF_MAT_SAND_03": 450,
+        "IT_AF_MAT_SAND_04": 985,
+        "IT_AF_MAT_MYTHRIL": 150,
+        "IT_AF_MAT_WATER_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 31,
+        "IT_AF_MAT_SAND_03": 930,
+        "IT_AF_MAT_SAND_04": 1955,
+        "IT_AF_MAT_MYTHRIL": 310,
+        "IT_AF_MAT_WATER_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_FF10_ACCE_001": 63,
+        "IT_AF_MAT_SAND_03": 1890,
+        "IT_AF_MAT_SAND_04": 3995,
+        "IT_AF_MAT_MYTHRIL": 630,
+        "IT_AF_MAT_WATER_02": 638,
+        "IT_AF_AW_ACCE": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_SWO_LW_LILS_1": {
     "names": {
       "en": "焔の剣 - Flame Blade"
@@ -43134,7 +43769,8 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_MSW_FIRE",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_BEA_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -43590,7 +44226,8 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_MSW_FIRE",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_BEA_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48273,6 +48910,131 @@
       "unitId": "UN_FF10_P_ARON"
     }
   },
+  "AF_HAT_LW_VNLA_01_1": {
+    "names": {
+      "en": "ネコサンタずきん"
+    },
+    "slug": "neko-santa-zukin",
+    "stats": {
+      "HP": {
+        "min": 443,
+        "max": 443
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "EVADE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "HAT",
+    "dataId": "AF_HAT_LW_VNLA_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "聖夜のいたずら"
+          },
+          "dataId": "SK_ACC_LW_VNLA_01_1",
+          "effects": [
+            {
+              "type": "MOVE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 1,
+              "target": "self"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 30,
+              "maxValue": 70,
+              "calcType": "fixe",
+              "turn": 1,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 2,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_hat_015",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_VNLA_01"
+    }
+  },
   "AF_SWO_LW_MONT_2": {
     "names": {
       "en": "リオンズソード - Lion Sword"
@@ -51553,6 +52315,63 @@
       "JB_LW_STRN",
       "JB_LW_MSW_FIRE",
       "JB_FF10_ARON"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_FIS_LW_VNLA_01_2": {
+    "names": {
+      "en": "ネコサンタクロー"
+    },
+    "slug": "neko-santaku-ro",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "FIST",
+    "dataId": "AF_FIS_LW_VNLA_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_fis_008",
+    "equippableJobs": [
+      "JB_LW_MNK_FIRE",
+      "JB_LW_BEA_FIRE"
     ],
     "equippableUnits": [],
     "materials": [

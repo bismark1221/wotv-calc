@@ -48,7 +48,10 @@ export class UnitService {
     'UN_FF10_P_TIDU',
     'UN_FF10_P_YUNA',
     'UN_LW_P_RYER_01',
-    'UN_LW_P_RIRY_01'
+    'UN_LW_P_RIRY_01',
+    'UN_LW_P_VNLA_01',
+    'UN_LW_P_RAMD_01',
+    'UN_LW_P_MACR_01'
   ];
 
   constructor(

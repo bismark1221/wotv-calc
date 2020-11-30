@@ -3701,6 +3701,12 @@
       "en": "アーロンの欠片"
     }
   },
+  "IT_PI_LW_VNLA_01": {
+    "dataId": "IT_PI_LW_VNLA_01",
+    "names": {
+      "en": "ヴィネラ（Xmas）の欠片"
+    }
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -4269,6 +4275,12 @@
     "dataId": "IT_SP_FF10_UR",
     "names": {
       "en": "【FFⅩ】ユニットの思珠（UR）"
+    }
+  },
+  "IT_SP_LW_VNLA_01": {
+    "dataId": "IT_SP_LW_VNLA_01",
+    "names": {
+      "en": "ヴィネラ（Xmas）の思珠"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -4899,6 +4911,24 @@
     "dataId": "IT_PT_BOSS_FF4_1",
     "names": {
       "en": "【FFⅣ】ボスバトルチケット"
+    }
+  },
+  "IT_PT_SKIP_FFX_1": {
+    "dataId": "IT_PT_SKIP_FFX_1",
+    "names": {
+      "en": "【FFⅩ】試練クエストスキップチケット"
+    }
+  },
+  "IT_PT_BSSKIP_FF10_1": {
+    "dataId": "IT_PT_BSSKIP_FF10_1",
+    "names": {
+      "en": "【FFⅩ】試練ボススキップチケット"
+    }
+  },
+  "IT_PT_BOSS_FF10_1": {
+    "dataId": "IT_PT_BOSS_FF10_1",
+    "names": {
+      "en": "【FFⅩ】ボスバトルチケット"
     }
   },
   "IT_AF_EXP_01": {
@@ -5923,6 +5953,13 @@
     },
     "recipe": true
   },
+  "IT_AF_FF10_ACCE_001": {
+    "dataId": "IT_AF_FF10_ACCE_001",
+    "names": {
+      "en": "ティーダのネックレスのクラフトレシピ"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -6355,6 +6392,12 @@
       "en": "【11月】召喚メダルB"
     }
   },
+  "IT_EC_SUMMON_12_02_A": {
+    "dataId": "IT_EC_SUMMON_12_02_A",
+    "names": {
+      "en": "【12月】召喚メダルA"
+    }
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -6619,6 +6662,12 @@
       "en": "FFⅩコラボ召喚メダルB"
     }
   },
+  "IT_EC_FF10_3": {
+    "dataId": "IT_EC_FF10_3",
+    "names": {
+      "en": "【FFⅩ】裁きの試練メダル"
+    }
+  },
   "IT_AD_TICKET_2": {
     "dataId": "IT_AD_TICKET_2",
     "names": {
@@ -6725,6 +6774,12 @@
     "dataId": "IT_US_G_U_SSR_UR_08",
     "names": {
       "en": "【2020秋CP3】SSR以上確定ユニット召喚券"
+    }
+  },
+  "IT_US_G_U_SSR_UR_09": {
+    "dataId": "IT_US_G_U_SSR_UR_09",
+    "names": {
+      "en": "【1周年】SSR以上確定ユニット召喚券"
     }
   },
   "IT_US_G_U_SSR_UR_07": {
@@ -7469,6 +7524,12 @@
     "dataId": "IT_US_SE_PI_21",
     "names": {
       "en": "FFⅩコラボユニット欠片×120選択召喚券"
+    }
+  },
+  "IT_US_SE_PI_22": {
+    "dataId": "IT_US_SE_PI_22",
+    "names": {
+      "en": "Xmasユニット欠片×120選択召喚券"
     }
   },
   "IT_US_SE_UR_U_02": {
@@ -8645,6 +8706,12 @@
     "dataId": "IT_STAMP_2011",
     "names": {
       "en": "11月印章"
+    }
+  },
+  "IT_STAMP_2012": {
+    "dataId": "IT_STAMP_2012",
+    "names": {
+      "en": "12月印章"
     }
   }
 }

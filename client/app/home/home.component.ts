@@ -55,6 +55,15 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '30/11',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_VNLA_01'},
+          {type: 'unit', dataId: 'UN_LW_P_RAMD_01'},
+          {type: 'unit', dataId: 'UN_LW_P_MACR_01'},
+          {type: 'equipment', dataId: 'AF_FF10_ACCE_001'}
+        ]
+      },
+      {
         date: '24/11',
         items: [
           {type: 'unit', dataId: 'UN_FF10_P_ARON'},
@@ -87,20 +96,6 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_BAHM'},
           {type: 'equipment', dataId: 'AF_FF10_SWO_001'},
           {type: 'equipment', dataId: 'AF_FF10_ROD_000'},
-        ]
-      },
-      {
-        date: '31/10',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_GABL'},
-          {type: 'unit', dataId: 'UN_LW_P_ELSR'},
-          {type: 'card', dataId: 'VC_LW_RAMD'},
-          {type: 'card', dataId: 'VC_LW_OOOO'},
-          {type: 'equipment', dataId: 'AF_LW_GLO_000'},
-          {type: 'equipment', dataId: 'AF_LW_GLO_001'},
-          {type: 'equipment', dataId: 'AF_LW_GLO_002'},
-          {type: 'equipment', dataId: 'AF_LW_GLO_003'},
-          {type: 'equipment', dataId: 'AF_LW_CLT_015'}
         ]
       }
     ]

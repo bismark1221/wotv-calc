@@ -2469,6 +2469,10 @@
             "value": "アーロンの欠片"
         },
         {
+            "key": "IT_PI_LW_VNLA_01",
+            "value": "ヴィネラ（Xmas）の欠片"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "モント・リオニスの思珠"
         },
@@ -2847,6 +2851,10 @@
         {
             "key": "IT_SP_FF10_UR",
             "value": "【FFⅩ】ユニットの思珠（UR）"
+        },
+        {
+            "key": "IT_SP_LW_VNLA_01",
+            "value": "ヴィネラ（Xmas）の思珠"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -3267,6 +3275,18 @@
         {
             "key": "IT_PT_BOSS_FF4_1",
             "value": "【FFⅣ】ボスバトルチケット"
+        },
+        {
+            "key": "IT_PT_SKIP_FFX_1",
+            "value": "【FFⅩ】試練クエストスキップチケット"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF10_1",
+            "value": "【FFⅩ】試練ボススキップチケット"
+        },
+        {
+            "key": "IT_PT_BOSS_FF10_1",
+            "value": "【FFⅩ】ボスバトルチケット"
         },
         {
             "key": "IT_AF_EXP_01",
@@ -3889,6 +3909,10 @@
             "value": "陽炎のクラフトレシピ"
         },
         {
+            "key": "IT_AF_FF10_ACCE_001",
+            "value": "ティーダのネックレスのクラフトレシピ"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "命の刻印"
         },
@@ -4177,6 +4201,10 @@
             "value": "【11月】召喚メダルB"
         },
         {
+            "key": "IT_EC_SUMMON_12_02_A",
+            "value": "【12月】召喚メダルA"
+        },
+        {
             "key": "IT_EC_SUMMON_HALL_01",
             "value": "【2020ハロウィン】召喚メダル"
         },
@@ -4353,6 +4381,10 @@
             "value": "FFⅩコラボ召喚メダルB"
         },
         {
+            "key": "IT_EC_FF10_3",
+            "value": "【FFⅩ】裁きの試練メダル"
+        },
+        {
             "key": "IT_AD_TICKET_2",
             "value": "探検チケット（2h）"
         },
@@ -4423,6 +4455,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_08",
             "value": "【2020秋CP3】SSR以上確定ユニット召喚券"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_09",
+            "value": "【1周年】SSR以上確定ユニット召喚券"
         },
         {
             "key": "IT_US_G_U_SSR_UR_07",
@@ -4919,6 +4955,10 @@
         {
             "key": "IT_US_SE_PI_21",
             "value": "FFⅩコラボユニット欠片×120選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_22",
+            "value": "Xmasユニット欠片×120選択召喚券"
         },
         {
             "key": "IT_US_SE_UR_U_02",
@@ -5703,6 +5743,10 @@
         {
             "key": "IT_STAMP_2011",
             "value": "11月印章"
+        },
+        {
+            "key": "IT_STAMP_2012",
+            "value": "12月印章"
         }
     ]
 }
