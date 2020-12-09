@@ -5700,5 +5700,393 @@
       }
     ],
     "slug": "diaborosu"
+  },
+  "RAID_ID_16": {
+    "dataId": "RAID_ID_16",
+    "names": {
+      "en": "ホーリープリン"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_CSLI_03",
+        "names": {
+          "en": "ホーリープリン"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 130,
+            "max": 630
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 150,
+            "max": 340
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 78
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 242
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {},
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 2,
+            "max": 2
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "lightning",
+        "image": "lapscsli_03",
+        "skills": {},
+        "slug": "hor-purin",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_03_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_CACT_03_R_01",
+        "names": {
+          "en": "ゴールドサボテン"
+        },
+        "stats": {
+          "HP": {
+            "min": 6000,
+            "max": 60000
+          },
+          "TP": {
+            "min": 60,
+            "max": 254
+          },
+          "AP": {
+            "min": 72,
+            "max": 247
+          },
+          "ATK": {
+            "min": 180,
+            "max": 520
+          },
+          "DEF": {
+            "min": 40,
+            "max": 40
+          },
+          "SPR": {
+            "min": 40,
+            "max": 40
+          },
+          "MAG": {
+            "min": 23,
+            "max": 59
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "ICE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "EARTH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WIND_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHT_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "DARK_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {},
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "plant",
+        "element": "fire",
+        "image": "lapscact_02",
+        "skills": {},
+        "slug": "gorudo-saboten",
+        "attack": {
+          "names": {
+            "en": "通常攻撃"
+          },
+          "effects": [],
+          "dataId": "SK_CACT_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 0,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": ""
   }
 }

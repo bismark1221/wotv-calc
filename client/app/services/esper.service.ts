@@ -63,7 +63,8 @@ export class EsperService {
       'UN_FF4_S_DMNW',
       'UN_LW_S_LVAT',
       'UN_LW_S_TYPN',
-      'UN_LW_S_BAHM'
+      'UN_LW_S_BAHM',
+      'UN_LW_S_OMEG'
     ]
   };
 
