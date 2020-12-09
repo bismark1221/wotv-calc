@@ -3653,6 +3653,20 @@
       "fr": "Fragments d'unité de Kaïn"
     }
   },
+  "IT_PI_LW_RAMD_01": {
+    "dataId": "IT_PI_LW_RAMD_01",
+    "names": {
+      "en": "Ramada (Winter) Unit Shard",
+      "fr": "Fragment d'unité de Ramada (Hiver)"
+    }
+  },
+  "IT_PI_LW_MACR_01": {
+    "dataId": "IT_PI_LW_MACR_01",
+    "names": {
+      "en": "Machérie (Winter) Unit Shard",
+      "fr": "Fragment d'unité de Machalie (Hiver)"
+    }
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -4211,6 +4225,20 @@
     "names": {
       "en": "Chocobo's Awakening Stone (3★)",
       "fr": "Pierre d'éveil de Chocobo (3★)"
+    }
+  },
+  "IT_SB_AW_MOGL_R2": {
+    "dataId": "IT_SB_AW_MOGL_R2",
+    "names": {
+      "en": "Moogle (Winter)'s Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Mog (Hiver) 2★"
+    }
+  },
+  "IT_SB_AW_MOGL_R3": {
+    "dataId": "IT_SB_AW_MOGL_R3",
+    "names": {
+      "en": "Moogle (Winter)'s Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Mog (Hiver) 3★"
     }
   },
   "IT_TICKET_STORY": {
@@ -4816,8 +4844,8 @@
   "IT_AF_LW_SPE_003": {
     "dataId": "IT_AF_LW_SPE_003",
     "names": {
-      "en": "Wind Spear Crafting Recipe",
-      "fr": "Recette d'artisanat : Lance zéphyr"
+      "en": "Gust Spear Crafting Recipe",
+      "fr": "Recette d'artisanat : Rafalance"
     },
     "recipe": true
   },
@@ -5256,8 +5284,8 @@
   "IT_AF_FF4_SPE_000": {
     "dataId": "IT_AF_FF4_SPE_000",
     "names": {
-      "en": "Wind Spear Crafting Recipe",
-      "fr": "Recette d'artisanat : Lance zéphyr"
+      "en": "Gust Spear Crafting Recipe",
+      "fr": "Recette d'artisanat : Rafalance"
     },
     "recipe": true
   },
@@ -5521,13 +5549,6 @@
       "fr": "Médaille d'invocation"
     }
   },
-  "IT_EC_SUMMON_12_A": {
-    "dataId": "IT_EC_SUMMON_12_A",
-    "names": {
-      "en": "December Summon Medal A",
-      "fr": "Médaille d'invocation A [Décembre]"
-    }
-  },
   "IT_EC_SUMMON_12_B": {
     "dataId": "IT_EC_SUMMON_12_B",
     "names": {
@@ -5596,6 +5617,13 @@
     "names": {
       "en": "Black Friday Medal",
       "fr": "Médaille du Black Friday"
+    }
+  },
+  "IT_EC_MEDAL_WH": {
+    "dataId": "IT_EC_MEDAL_WH",
+    "names": {
+      "en": "Winter Festivities Medal",
+      "fr": "Médaille des Fêtes hivernales"
     }
   },
   "IT_EC_FF14_1": {
@@ -5736,6 +5764,13 @@
     "names": {
       "en": "November Summon Medal B",
       "fr": "Médaille d'invocation B [Novembre]"
+    }
+  },
+  "IT_EC_SUMMON_12_A": {
+    "dataId": "IT_EC_SUMMON_12_A",
+    "names": {
+      "en": "December Summon Medal A",
+      "fr": "Médaille d'invocation A [Décembre]"
     }
   },
   "IT_EC_FFT_1": {
@@ -6382,6 +6417,13 @@
       "fr": "[Black Friday] Ticket d'invocation d'unité MR+ garantie"
     }
   },
+  "IT_US_G_U_SSR_UR_11": {
+    "dataId": "IT_US_G_U_SSR_UR_11",
+    "names": {
+      "en": "[Winter Festivities Part I] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "[Fêtes hivernales - Partie I] Ticket d'invocation d'unité MR+ garantie"
+    }
+  },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
     "names": {
@@ -6998,6 +7040,20 @@
       "fr": "Fragment de l'atout-vision : Mur démonique"
     }
   },
+  "IT_VPI_LW_MOGL": {
+    "dataId": "IT_VPI_LW_MOGL",
+    "names": {
+      "en": "\"Holy Night's Visitor, Winter Moogle\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Mog de la nuit hivernale"
+    }
+  },
+  "IT_VPI_LW_XMAS": {
+    "dataId": "IT_VPI_LW_XMAS",
+    "names": {
+      "en": "\"Winter Holiday Party\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Célébration de l'hiver"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7332,6 +7388,13 @@
     "names": {
       "en": "Select UR Vision Card Shard x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    }
+  },
+  "IT_US_GL_SE_VPI_15": {
+    "dataId": "IT_US_GL_SE_VPI_15",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
     }
   },
   "IT_US_SE_UR_U_02": {

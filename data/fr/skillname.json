@@ -3818,11 +3818,11 @@
         },
         {
             "key": "SK_FF14BOSS_M_01",
-            "value": "Éventreur"
+            "value": "Pilori"
         },
         {
             "key": "SK_FF14BOSS_M_02",
-            "value": "Poire d'angoisse"
+            "value": "Gibet de fer"
         },
         {
             "key": "SK_FF14BOSS_M_03",
@@ -3977,6 +3977,18 @@
             "value": "Voix ensorcelante"
         },
         {
+            "key": "SK_SIRE_M_01_RA",
+            "value": "Eau"
+        },
+        {
+            "key": "SK_SIRE_M_02_RA",
+            "value": "Eau X"
+        },
+        {
+            "key": "SK_SIRE_M_04_RA",
+            "value": "Voix ensorcelante"
+        },
+        {
             "key": "SK_SHIV_ATK",
             "value": "Attaque normale"
         },
@@ -3990,6 +4002,10 @@
         },
         {
             "key": "SK_SHIV_M_03",
+            "value": "Tir de grêle"
+        },
+        {
+            "key": "SK_SHIV_M_03_B",
             "value": "Tir de grêle"
         },
         {
@@ -4098,6 +4114,10 @@
         },
         {
             "key": "SK_GL_LAMA_M_03",
+            "value": "Queue ensorceleuse"
+        },
+        {
+            "key": "SK_LAMA_M_03_EX",
             "value": "Queue ensorceleuse"
         },
         {
@@ -4230,6 +4250,10 @@
         },
         {
             "key": "SK_MDFY_M_04",
+            "value": "Psychochoc"
+        },
+        {
+            "key": "SK_MDFY_M_04_B",
             "value": "Psychochoc"
         },
         {
@@ -4609,6 +4633,14 @@
             "value": "Hache viking +"
         },
         {
+            "key": "SK_LB_LW_RAMD_01",
+            "value": "Jugement de la nuit hivernale"
+        },
+        {
+            "key": "SK_LB_LW_MACR_01",
+            "value": "Cadeau de la nuit hivernale"
+        },
+        {
             "key": "SK_LB_FFT_RAMZ",
             "value": "Ultima"
         },
@@ -4731,6 +4763,10 @@
         {
             "key": "SK_SMN_MABR",
             "value": "Haleine fétide"
+        },
+        {
+            "key": "SK_SMN_MOGL",
+            "value": "Danse hivernale de Mog"
         },
         {
             "key": "SK_SMN_CACT",
@@ -5109,7 +5145,23 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_P_RAMD_01",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_GL_MA_LW_P_RAMD_01_2",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_MA_LW_P_NASR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_P_MACR_01",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_GL_MA_LW_P_MACR_01_2",
             "value": "Aptitude maître"
         },
         {
@@ -5575,6 +5627,14 @@
         {
             "key": "SK_BLT_LW_YERM_1_1",
             "value": "Sang chaud"
+        },
+        {
+            "key": "SK_CLT_LW_RAMD_01_1_1",
+            "value": "Exaltation"
+        },
+        {
+            "key": "SK_ACC_LW_MACR_01_1",
+            "value": "Harmonie hivernale"
         },
         {
             "key": "SK_ARM_FFT_RAMZ_1_1",
@@ -6153,6 +6213,14 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_MOGL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MOGL_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_LAMA_01_GS",
             "value": ""
         },
@@ -6565,6 +6633,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_XMAS_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_TITN_P",
             "value": ""
         },
@@ -6667,6 +6747,10 @@
         {
             "key": "SK_GL_VC_LW_HALL_P2MAX",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HALL_PVA",
+            "value": "Farce triple"
         },
         {
             "key": "SK_VC_LW_BLMN_P",
@@ -7053,6 +7137,22 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_MOGL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MOGL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MOGL_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_MOGL_P2AW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_LAMA_01_P",
             "value": ""
         },
@@ -7099,6 +7199,38 @@
         {
             "key": "SK_VC_LW_CBVPARTY1_PMAX",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_XMAS_PVA",
+            "value": "Purge de la nuit hivernale [H. 3]"
+        },
+        {
+            "key": "SK_VC_LW_XMAS_PVA_B",
+            "value": "Purge de la nuit hivernale [H. 2]"
         },
         {
             "key": "SK_VC_LW_CACT_P",
@@ -8046,11 +8178,11 @@
         },
         {
             "key": "SK_BTL_SATK_1-100_U",
-            "value": "Rés attaques d'unité ↑ 1 - 100"
+            "value": "Rés attaques à cible unique ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_SATK_1-100_D",
-            "value": "Rés aux attaques d'unité ↓ 1 - 100"
+            "value": "Rés aux attaques à cible unique ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_RATK_1-100_U",
@@ -8211,6 +8343,14 @@
         {
             "key": "SK_BTL_RESDB_ATK_1_100_U",
             "value": "Rés aux malus d'ATT ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RESDB_SLASH_1_100_U",
+            "value": "Rés malus att tranchantes ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_RESDB_ELEMALL1_1_100_U",
+            "value": "Rés malus tous éléments ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_JOB_THI_1_15_U",

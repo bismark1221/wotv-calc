@@ -81,6 +81,18 @@ import { default as gl_raid_40 } from '../../../data/raid/gl/raid_ev_12_03_set.j
 import { default as gl_raid_41 } from '../../../data/raid/gl/raid_ev_12_04_set.json';
 import { default as gl_raid_42 } from '../../../data/raid/gl/raid_ev_12_05_set.json';
 import { default as gl_raid_43 } from '../../../data/raid/gl/raid_ev_12_06_set.json';
+import { default as gl_raid_44 } from '../../../data/raid/gl/raid_ev_13_01_set.json';
+import { default as gl_raid_45 } from '../../../data/raid/gl/raid_ev_13_02_set.json';
+import { default as gl_raid_46 } from '../../../data/raid/gl/raid_ev_13_03_set.json';
+import { default as gl_raid_47 } from '../../../data/raid/gl/raid_ev_13_04_set.json';
+import { default as gl_raid_48 } from '../../../data/raid/gl/raid_ev_13_05_set.json';
+import { default as gl_raid_49 } from '../../../data/raid/gl/raid_ev_13_06_set.json';
+import { default as gl_raid_50 } from '../../../data/raid/gl/raid_ev_14_01_set.json';
+import { default as gl_raid_51 } from '../../../data/raid/gl/raid_ev_14_02_set.json';
+import { default as gl_raid_52 } from '../../../data/raid/gl/raid_ev_14_03_set.json';
+import { default as gl_raid_53 } from '../../../data/raid/gl/raid_ev_14_04_set.json';
+import { default as gl_raid_54 } from '../../../data/raid/gl/raid_ev_14_05_set.json';
+import { default as gl_raid_55 } from '../../../data/raid/gl/raid_ev_14_06_set.json';
 
 import { default as jp_raid_1 } from '../../../data/raid/jp/raid_ev_06_01_set.json';
 import { default as jp_raid_2 } from '../../../data/raid/jp/raid_ev_06_02_set.json';
@@ -388,6 +400,8 @@ export class JsonService {
     204: 'MAG_DEBUFF_RES',
     205: 'SPR_DEBUFF_RES',
     207: 'AGI_DEBUFF_RES',
+    272: 'RES_SLASH_DEBUFF_RES',
+    278: 'RES_ALL_DEBUFF_RES',
     300: 'BUFFS_DURATION',
     301: 'DEBUFFS_DURATION',
     310: 'ATTACK_RES',
@@ -2792,95 +2806,61 @@ export class JsonService {
   }
 
   private formatRaid() {
-    if (this.version === 'gl') {
-      this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1;
-      this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2;
-      this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3;
-      this[this.version].raidMaps[gl_raid_4.wcond.expr] = gl_raid_4;
-      this[this.version].raidMaps[gl_raid_5.wcond.expr] = gl_raid_5;
-      this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6;
-      this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7;
-      this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8;
-      this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9;
-      this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10;
-      this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11;
-      this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12;
-      this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13;
-      this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14;
-      this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15;
-      this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16;
-      this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17;
-      this[this.version].raidMaps[gl_raid_18.wcond.expr] = gl_raid_18;
-      this[this.version].raidMaps[gl_raid_19.wcond.expr] = gl_raid_19;
-      this[this.version].raidMaps[gl_raid_20.wcond.expr] = gl_raid_20;
-      this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21;
-      this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22;
-      this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23;
-      this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24;
-      this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25;
-      this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26;
-      this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27;
-      this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28;
-      this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29;
-      this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30;
-      this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31;
-      this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32;
-      this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33;
-      this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34;
-      this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35;
-      this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36;
-      this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37;
-      this[this.version].raidMaps[gl_raid_38.wcond.expr] = gl_raid_38;
-      this[this.version].raidMaps[gl_raid_39.wcond.expr] = gl_raid_39;
-      this[this.version].raidMaps[gl_raid_40.wcond.expr] = gl_raid_40;
-      this[this.version].raidMaps[gl_raid_41.wcond.expr] = gl_raid_41;
-      this[this.version].raidMaps[gl_raid_42.wcond.expr] = gl_raid_42;
-      this[this.version].raidMaps[gl_raid_43.wcond.expr] = gl_raid_43;
-    } else {
-      this[this.version].raidMaps[jp_raid_1.wcond.expr] = jp_raid_1;
-      this[this.version].raidMaps[jp_raid_2.wcond.expr] = jp_raid_2;
-      this[this.version].raidMaps[jp_raid_3.wcond.expr] = jp_raid_3;
-      this[this.version].raidMaps[jp_raid_4.wcond.expr] = jp_raid_4;
-      this[this.version].raidMaps[jp_raid_5.wcond.expr] = jp_raid_5;
-      this[this.version].raidMaps[jp_raid_6.wcond.expr] = jp_raid_6;
-      this[this.version].raidMaps[jp_raid_7.wcond.expr] = jp_raid_7;
-      this[this.version].raidMaps[jp_raid_8.wcond.expr] = jp_raid_8;
-      this[this.version].raidMaps[jp_raid_9.wcond.expr] = jp_raid_9;
-      this[this.version].raidMaps[jp_raid_10.wcond.expr] = jp_raid_10;
-      this[this.version].raidMaps[jp_raid_11.wcond.expr] = jp_raid_11;
-      this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12;
-      this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13;
-      this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14;
-      this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15;
-      this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16;
-      this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17;
-      this[this.version].raidMaps[gl_raid_18.wcond.expr] = gl_raid_18;
-      this[this.version].raidMaps[gl_raid_19.wcond.expr] = gl_raid_19;
-      this[this.version].raidMaps[gl_raid_20.wcond.expr] = gl_raid_20;
-      this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21;
-      this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22;
-      this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23;
-      this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24;
-      this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25;
-      this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26;
-      this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27;
-      this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28;
-      this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29;
-      this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30;
-      this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31;
-      this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32;
-      this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33;
-      this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34;
-      this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35;
-      this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36;
-      this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37;
-      this[this.version].raidMaps[gl_raid_38.wcond.expr] = gl_raid_38;
-      this[this.version].raidMaps[gl_raid_39.wcond.expr] = gl_raid_39;
-      this[this.version].raidMaps[gl_raid_40.wcond.expr] = gl_raid_40;
-      this[this.version].raidMaps[gl_raid_41.wcond.expr] = gl_raid_41;
-      this[this.version].raidMaps[gl_raid_42.wcond.expr] = gl_raid_42;
-      this[this.version].raidMaps[gl_raid_43.wcond.expr] = gl_raid_43;
-    }
+    this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1;
+    this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2;
+    this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3;
+    this[this.version].raidMaps[gl_raid_4.wcond.expr] = gl_raid_4;
+    this[this.version].raidMaps[gl_raid_5.wcond.expr] = gl_raid_5;
+    this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6;
+    this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7;
+    this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8;
+    this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9;
+    this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10;
+    this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11;
+    this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12;
+    this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13;
+    this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14;
+    this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15;
+    this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16;
+    this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17;
+    this[this.version].raidMaps[gl_raid_18.wcond.expr] = gl_raid_18;
+    this[this.version].raidMaps[gl_raid_19.wcond.expr] = gl_raid_19;
+    this[this.version].raidMaps[gl_raid_20.wcond.expr] = gl_raid_20;
+    this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21;
+    this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22;
+    this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23;
+    this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24;
+    this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25;
+    this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26;
+    this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27;
+    this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28;
+    this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29;
+    this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30;
+    this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31;
+    this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32;
+    this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33;
+    this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34;
+    this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35;
+    this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36;
+    this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37;
+    this[this.version].raidMaps[gl_raid_38.wcond.expr] = gl_raid_38;
+    this[this.version].raidMaps[gl_raid_39.wcond.expr] = gl_raid_39;
+    this[this.version].raidMaps[gl_raid_40.wcond.expr] = gl_raid_40;
+    this[this.version].raidMaps[gl_raid_41.wcond.expr] = gl_raid_41;
+    this[this.version].raidMaps[gl_raid_42.wcond.expr] = gl_raid_42;
+    this[this.version].raidMaps[gl_raid_43.wcond.expr] = gl_raid_43;
+    this[this.version].raidMaps[gl_raid_44.wcond.expr] = gl_raid_44;
+    this[this.version].raidMaps[gl_raid_45.wcond.expr] = gl_raid_45;
+    this[this.version].raidMaps[gl_raid_46.wcond.expr] = gl_raid_46;
+    this[this.version].raidMaps[gl_raid_47.wcond.expr] = gl_raid_47;
+    this[this.version].raidMaps[gl_raid_48.wcond.expr] = gl_raid_48;
+    this[this.version].raidMaps[gl_raid_49.wcond.expr] = gl_raid_49;
+    this[this.version].raidMaps[gl_raid_50.wcond.expr] = gl_raid_50;
+    this[this.version].raidMaps[gl_raid_51.wcond.expr] = gl_raid_51;
+    this[this.version].raidMaps[gl_raid_52.wcond.expr] = gl_raid_52;
+    this[this.version].raidMaps[gl_raid_53.wcond.expr] = gl_raid_53;
+    this[this.version].raidMaps[gl_raid_54.wcond.expr] = gl_raid_54;
+    this[this.version].raidMaps[gl_raid_55.wcond.expr] = gl_raid_55;
 
     Object.keys(this[this.version].raid).forEach(raidId => {
       const raid = this[this.version].raid[raidId];

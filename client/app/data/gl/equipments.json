@@ -7639,10 +7639,10 @@
   },
   "AF_LOT_LW_SPE_003": {
     "names": {
-      "en": "Wind Spear",
-      "fr": "Lance zéphyr"
+      "en": "Gust Spear",
+      "fr": "Rafalance"
     },
-    "slug": "wind-spear",
+    "slug": "gust-spear",
     "stats": {
       "HP": {
         "min": 3,
@@ -25058,119 +25058,6 @@
       "type": "Unknown"
     }
   },
-  "AF_LW_CLK_001": {
-    "names": {
-      "en": "Elf's Cloak",
-      "fr": "Tunique d'Elfe"
-    },
-    "slug": "elfs-cloak",
-    "stats": {
-      "HP": {
-        "min": 10,
-        "max": 196
-      },
-      "TP": {
-        "min": 2,
-        "max": 21
-      },
-      "AP": {
-        "min": 1,
-        "max": 20
-      },
-      "DEF": {
-        "min": 1,
-        "max": 6
-      },
-      "SPR": {
-        "min": 1,
-        "max": 6
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 12
-      },
-      "EVADE": {
-        "min": 1,
-        "max": 9
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 12
-      }
-    },
-    "type": "ACC",
-    "dataId": "AF_LW_CLK_001",
-    "grows": {
-      "ARTIFACT_50": {
-        "dataId": "ARTIFACT_50",
-        "names": {
-          "en": "ARTIFACT_50",
-          "fr": "ARTIFACT_50"
-        },
-        "curve": {
-          "MAX_LV": 30
-        }
-      }
-    },
-    "skills": [
-      []
-    ],
-    "rarity": "UR",
-    "image": "lapswpn_clk_001",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_SWN_FIRE",
-      "JB_LW_MNK_FIRE",
-      "JB_LW_SAM_FIRE",
-      "JB_LW_LAN_FIRE",
-      "JB_LW_DRG_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_THI_FIRE",
-      "JB_LW_NIN_FIRE",
-      "JB_LW_HUN_FIRE",
-      "JB_LW_GUN_FIRE",
-      "JB_LW_WHM_FIRE",
-      "JB_LW_BLM_FIRE",
-      "JB_LW_GRM_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_TIM_FIRE",
-      "JB_LW_CLR_FIRE",
-      "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_LW_FINA",
-      "JB_LW_VIK_FIRE",
-      "JB_FFT_ORND",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_LW_WGN_FIRE",
-      "JB_LW_ASS_FIRE",
-      "JB_LW_RAIN",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL_FIRE",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {}
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    }
-  },
   "AF_LOT_LW_ACC_001": {
     "names": {
       "en": "Ribbon",
@@ -30668,6 +30555,119 @@
       "unitId": "UN_LW_P_NASR"
     }
   },
+  "AF_CLT_LW_RAMD_01_1": {
+    "names": {
+      "en": "Sagewood Hairpin",
+      "fr": "Bois décoratifs"
+    },
+    "slug": "sagewood-hairpin",
+    "stats": {
+      "HP": {
+        "min": 542,
+        "max": 542
+      },
+      "DEF": {
+        "min": 7,
+        "max": 7
+      },
+      "CRITIC_AVOID": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_CLT_LW_RAMD_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Exaltation",
+            "fr": "Exaltation"
+          },
+          "dataId": "SK_CLT_LW_RAMD_01_1_1",
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 40,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "MOVE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_010",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_RAMD_01"
+    }
+  },
   "AF_ACC_LW_ETRE_1": {
     "names": {
       "en": "Boxer's Badge",
@@ -30760,6 +30760,142 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ETRE"
+    }
+  },
+  "AF_ACC_LW_MACR_01_1": {
+    "names": {
+      "en": "Angel Ribbon",
+      "fr": "Serre-tête à grelots"
+    },
+    "slug": "angel-ribbon",
+    "stats": {
+      "HP": {
+        "min": 342,
+        "max": 342
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "SPR": {
+        "min": 5,
+        "max": 5
+      },
+      "CRITIC_RATE": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_MACR_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Winter Harmony",
+            "fr": "Harmonie hivernale"
+          },
+          "dataId": "SK_ACC_LW_MACR_01_1",
+          "effects": [
+            {
+              "type": "AP",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "unknow",
+              "target": "target"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "target",
+          "cost": {
+            "type": "TP",
+            "value": 36
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_014",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_MACR_01"
     }
   },
   "AF_ARM_FFT_RAMZ_1": {
@@ -35925,6 +36061,58 @@
       "type": "Unknown"
     }
   },
+  "AF_BSW_LW_RAMD_01_2": {
+    "names": {
+      "en": "Sagewood Greatsword",
+      "fr": "Spathe hivernale"
+    },
+    "slug": "sagewood-greatsword",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_RAMD_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_swo_008",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_STRN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_SHI_003": {
     "names": {
       "en": "Raviesse's Shield",
@@ -35953,6 +36141,67 @@
     "image": "lapswpn_shi_003",
     "equippableJobs": [
       "JB_LW_PLD_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SPE_LW_MACR_01_2": {
+    "names": {
+      "en": "Angel Spear",
+      "fr": "Lance hivernale"
+    },
+    "slug": "angel-spear",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 17
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_MACR_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_spe_012",
+    "equippableJobs": [
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR",
+      "JB_FF4_KAIN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37585,7 +37834,7 @@
       "en": "Wind Spear",
       "fr": "Lance zéphyr"
     },
-    "slug": "wind-spear-1",
+    "slug": "wind-spear",
     "stats": {
       "HP": {
         "min": 4,
@@ -38502,7 +38751,8 @@
       "UN_LW_P_MRND",
       "UN_LW_P_TREL",
       "UN_LW_P_IRDL",
-      "UN_LW_P_GRSR"
+      "UN_LW_P_GRSR",
+      "UN_LW_P_RAMD_01"
     ],
     "materials": [
       {
@@ -41347,7 +41597,7 @@
       "en": "Wind Spear",
       "fr": "Lance zéphyr"
     },
-    "slug": "wind-spear-2",
+    "slug": "wind-spear-1",
     "stats": {
       "HP": {
         "min": 3,

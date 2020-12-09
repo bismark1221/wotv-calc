@@ -1670,7 +1670,7 @@
           "SK_CACT_M_01": {
             "effects": [],
             "dataId": "SK_CACT_M_01",
-            "rate": 100,
+            "rate": 80,
             "names": {
               "en": "1,000 Needles",
               "fr": "1 000 épines"
@@ -1695,12 +1695,12 @@
               "effType": "DAMAGE",
               "fixedDamage": true
             },
-            "minLevel": 1
+            "minLevel": 4
           },
           "SK_CACT_M_02": {
             "effects": [],
             "dataId": "SK_CACT_M_02",
-            "rate": 5,
+            "rate": 7,
             "names": {
               "en": "10,000 Needles",
               "fr": "10 000 épines"
@@ -1725,7 +1725,7 @@
               "effType": "DAMAGE",
               "fixedDamage": true
             },
-            "minLevel": 1
+            "minLevel": 4
           },
           "SK_CACT_M_03": {
             "effects": [
@@ -1759,7 +1759,7 @@
               "type": "pierce",
               "effType": "DAMAGE"
             },
-            "minLevel": 1
+            "minLevel": 4
           },
           "SK_BTL_INV_HPDOWN": {
             "effects": [
@@ -1779,7 +1779,7 @@
             },
             "target": "self",
             "maxLevel": 10,
-            "minLevel": 1
+            "minLevel": 4
           },
           "SK_BTL_INV_CTDOWN": {
             "effects": [
@@ -1797,27 +1797,7 @@
             },
             "target": "self",
             "maxLevel": 10,
-            "minLevel": 1
-          },
-          "SK_LW_HIT_5_N_R": {
-            "effects": [
-              {
-                "type": "ACCURACY",
-                "minValue": 10,
-                "maxValue": 10,
-                "calcType": "fixe",
-                "target": "self"
-              }
-            ],
-            "dataId": "SK_LW_HIT_5_N_R",
-            "rate": 100,
-            "names": {
-              "en": "SK_LW_HIT_5_N_R",
-              "fr": "SK_LW_HIT_5_N_R"
-            },
-            "target": "self",
-            "maxLevel": 3,
-            "minLevel": 1
+            "minLevel": 4
           },
           "SK_LW_HIT_5_SSR": {
             "effects": [

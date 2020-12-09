@@ -695,6 +695,12 @@ export class SkillService {
       case 'AGI_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' AGI Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_SLASH_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Slash resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_ALL_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' All resistances Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'EVOCATION_GAUGE_BOOST' :
         html = this.getIncrease(effect) + ' Evocation Gauge Boost' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
