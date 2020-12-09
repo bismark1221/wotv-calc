@@ -18,10 +18,8 @@ Sentry.init({
   integrations: [
     new Sentry.Integrations.TryCatch({
       XMLHttpRequest: false,
-    }),
-    new Integrations.BrowserTracing()
-  ],
-  tracesSampleRate: 0.2
+    })
+  ]
 });
 
 @Injectable()
