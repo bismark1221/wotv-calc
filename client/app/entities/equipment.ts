@@ -190,7 +190,7 @@ export class Equipment {
         skill.level = this.level;
       }
 
-      skill.level = parseInt(skill.level);
+      skill.level = parseInt(skill.level, 10);
 
       if (skill.level >= (skill.upgrade[0] * 10 - 10)
         && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level === this.maxLevel && skill.upgrade[skill.upgrade.length - 1] === 5))) {

@@ -156,7 +156,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       this.card = this.cardService.selectCardForBuilder(dataId, customData);
       this.searchText = this.card.name;
       this.showList = false;
-      this.formatCardBuffs()
+      this.formatCardBuffs();
     } else {
       this.card = null;
       this.searchText = '';
@@ -176,32 +176,32 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
-    this.formatCardBuffs()
+    this.formatCardBuffs();
   }
 
   selectLevel(level) {
     this.card.level = level;
     this.cardService.changeLevel(this.card);
-    this.formatCardBuffs()
+    this.formatCardBuffs();
   }
 
   maxCard() {
     this.cardService.maxCard(this.card);
-    this.formatCardBuffs()
+    this.formatCardBuffs();
   }
 
   resetCard() {
     this.cardService.resetCard(this.card);
-    this.formatCardBuffs()
+    this.formatCardBuffs();
   }
 
   private formatCardBuffs() {
     this.card.formattedBuffs = {
       self: [],
       party: []
-    }
+    };
 
-    const buffTypes = ['self', 'party']
+    const buffTypes = ['self', 'party'];
 
     buffTypes.forEach(buffType => {
       Object.keys(this.card.buffs[buffType]).forEach(statType => {
@@ -215,7 +215,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           const formattedBuff = {
             effect: this.skillService.formatEffect(this.card, {}, formattedEffect),
             cond: buff.cond
-          }
+          };
 
           if (formattedBuff.cond) {
             formattedBuff.cond.forEach(cond => {
@@ -233,7 +233,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
             });
           }
 
-          this.card.formattedBuffs[buffType].push(formattedBuff)
+          this.card.formattedBuffs[buffType].push(formattedBuff);
         });
       });
     });
@@ -254,7 +254,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           }
         });
       }
-    })
+    });
   }
 
   openLoadModal(cardId) {

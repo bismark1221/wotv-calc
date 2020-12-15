@@ -142,17 +142,17 @@ export class Card {
             buffs.self[effect.type] = [];
           }
 
-          let newBuff = {
+          const newBuff = {
             value: Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1))),
             calcType: effect.calcType
-          }
+          };
 
           if (buff.cond) {
             // @ts-ignore
             newBuff.cond = buff.cond;
           }
 
-          buffs.self[effect.type].push(newBuff)
+          buffs.self[effect.type].push(newBuff);
         });
 
         if (buff.awake && this.star > 0) {
@@ -197,17 +197,17 @@ export class Card {
           buffs.party[effect.type] = [];
         }
 
-        let newBuff = {
+        const newBuff = {
           value: Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1))),
           calcType: effect.calcType
-        }
+        };
 
         if (buff.cond) {
           // @ts-ignore
           newBuff.cond = buff.cond;
         }
 
-        buffs.party[effect.type].push(newBuff)
+        buffs.party[effect.type].push(newBuff);
       });
 
       if (buff.awake && this.star > 0) {
