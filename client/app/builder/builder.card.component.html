@@ -109,14 +109,36 @@
       </tbody>
     </table>
 
-    <table class="statsTable">
+    <table class="statsTable" *ngIf="card.formattedBuffs">
       <tbody>
         <tr>
           <th colspan="10">Unit Buff</th>
         </tr>
-        <tr>
+        <tr *ngFor="let buff of card.formattedBuffs.self">
           <td colspan="10">
-            <div *ngFor="let buff of card.buff.self">{{ buff }}</div>
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
           </td>
         </tr>
       </tbody>
@@ -135,12 +157,33 @@
           <th class="sub">Hits</th>
           <th class="sub">Cost</th>
         </tr>
-        <tr>
+      </tbody>
+      <tbody *ngFor="let skill of card.skills">
+        <tr *ngIf="skill.cond">
+          <td>
+            Condition
+          </td>
           <td colspan="10">
-            <div *ngFor="let buff of card.buff.self">{{ buff }}</div>
+            <div *ngFor="let cond of skill.cond">
+              <div *ngIf="cond.type === 'birth'">
+                <span *ngFor="let birth of cond.items">{{ birth }}</span>
+              </div>
+
+              <div *ngIf="cond.type === 'elem'">
+                <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+              </div>
+
+              <div *ngIf="cond.type === 'job'">
+                <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+              </div>
+
+              <div *ngIf="cond.type === 'unit'">
+                <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+              </div>
+            </div>
           </td>
         </tr>
-        <tr *ngFor="let skill of card.skills">
+        <tr>
           <td class="skillNameTd">
             <span>{{ skill.name }}</span>
             <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
@@ -180,14 +223,36 @@
       </tbody>
     </table>
 
-    <table class="statsTable">
+    <table class="statsTable" *ngIf="card.formattedBuffs">
       <tbody>
         <tr>
           <th colspan="10">Party Buff</th>
         </tr>
-        <tr>
+        <tr *ngFor="let buff of card.formattedBuffs.party">
           <td colspan="10">
-            <div *ngFor="let buff of card.buff.party">{{ buff }}</div>
+            <div *ngIf="buff.cond">
+              <div *ngFor="let cond of buff.cond">
+                <div *ngIf="cond.type === 'birth'">
+                  <span *ngFor="let birth of cond.items">{{ birth }}</span>
+                </div>
+
+                <div *ngIf="cond.type === 'elem'">
+                  <img class="elementImg" src="{{'assets/elements/' + elem + '.png'}}" *ngFor="let elem of cond.items"/>
+                </div>
+
+                <div *ngIf="cond.type === 'job'">
+                  <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+
+                <div *ngIf="cond.type === 'unit'">
+                  <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              {{ buff.effect }}
+            </div>
           </td>
         </tr>
       </tbody>

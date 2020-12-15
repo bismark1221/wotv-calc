@@ -525,7 +525,7 @@ export class SkillService {
         html = this.getChance(effect, false) + ' quicken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_AILMENTS_ATK' :
-        html = this.getChance(effect, false) + ' all status ailments' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_DEBUFFS_ATK' :
         html = 'Dispel all debuffs' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -606,7 +606,7 @@ export class SkillService {
         html = this.getChance(effect, false) + ' quicken resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_AILMENTS_RES' :
-        html = this.getChance(effect, false) + ' all status ailments resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ALL_DEBUFFS_RES' :
         html = this.getChance(effect, false) + ' all debuffs resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -649,6 +649,12 @@ export class SkillService {
       break;
       case 'FAITH' :
         html = this.getIncrease(effect) + ' Faith' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'BRAVERY_FIGHT' :
+        html = this.getIncrease(effect) + ' Bravery' + this.getValue(skill, effect);
+      break;
+      case 'FAITH_FIGHT' :
+        html = this.getIncrease(effect) + ' Faith' + this.getValue(skill, effect);
       break;
       case 'ACTIVATION_TIME' :
         html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);

@@ -7,6 +7,9 @@ import { CardService } from '../services/card.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
+import { SkillService } from '../services/skill.service';
+import { JobService } from '../services/job.service';
+import { UnitService } from '../services/unit.service';
 
 import { ModalLoadComponent } from './modal/modal.load.component';
 import { ModalSaveComponent } from './modal/modal.save.component';
@@ -42,7 +45,10 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     private modalService: NgbModal,
     private nameService: NameService,
     private authService: AuthService,
-    private navService: NavService
+    private navService: NavService,
+    private skillService: SkillService,
+    private jobService: JobService,
+    private unitService: UnitService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateCards();
@@ -150,6 +156,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       this.card = this.cardService.selectCardForBuilder(dataId, customData);
       this.searchText = this.card.name;
       this.showList = false;
+      this.formatCardBuffs()
     } else {
       this.card = null;
       this.searchText = '';
@@ -169,19 +176,85 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
+    this.formatCardBuffs()
   }
 
   selectLevel(level) {
     this.card.level = level;
     this.cardService.changeLevel(this.card);
+    this.formatCardBuffs()
   }
 
   maxCard() {
     this.cardService.maxCard(this.card);
+    this.formatCardBuffs()
   }
 
   resetCard() {
     this.cardService.resetCard(this.card);
+    this.formatCardBuffs()
+  }
+
+  private formatCardBuffs() {
+    this.card.formattedBuffs = {
+      self: [],
+      party: []
+    }
+
+    const buffTypes = ['self', 'party']
+
+    buffTypes.forEach(buffType => {
+      Object.keys(this.card.buffs[buffType]).forEach(statType => {
+        this.card.buffs[buffType][statType].forEach(buff => {
+          const formattedEffect = {
+            type: statType,
+            value: buff.value,
+            calcType: buff.calcType
+          };
+
+          const formattedBuff = {
+            effect: this.skillService.formatEffect(this.card, {}, formattedEffect),
+            cond: buff.cond
+          }
+
+          if (formattedBuff.cond) {
+            formattedBuff.cond.forEach(cond => {
+              if (cond.type === 'job') {
+                cond.items.forEach((jobId, jobIndex) => {
+                  const job = this.jobService.getJob(jobId);
+                  cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+                });
+              } else if (cond.type === 'unit') {
+                cond.items.forEach((unitId, unitIndex) => {
+                  const unit = this.unitService.getUnit(unitId);
+                  cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+                });
+              }
+            });
+          }
+
+          this.card.formattedBuffs[buffType].push(formattedBuff)
+        });
+      });
+    });
+
+    this.card.skills.forEach(skill => {
+      if (skill.cond) {
+        skill.cond.forEach(cond => {
+          if (cond.type === 'job') {
+            cond.items.forEach((jobId, jobIndex) => {
+              const job = this.jobService.getJob(jobId);
+              cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+            });
+          } else if (cond.type === 'unit') {
+            cond.items.forEach((unitId, unitIndex) => {
+              const unit = this.unitService.getUnit(unitId);
+              cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+            });
+          }
+        });
+      }
+    })
   }
 
   openLoadModal(cardId) {

@@ -295,7 +295,6 @@ export class Unit {
     }
 
     this.calculateTotalStats();
-    this.getAvailableStatTypes();
   }
 
   private activateMasterSkill() {
@@ -633,31 +632,35 @@ export class Unit {
     });
 
     Object.keys(this.card.buffs.self).forEach(statType => {
-      if (!this.card.buffs.self[statType].cond || this.checkCondition(this.card.buffs.self[statType].cond)) {
-        let value = this.card.buffs.self[statType].value;
+      this.card.buffs.self[statType].forEach(selfBuff => {
+        if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
+          let value = selfBuff.value;
 
-        if (statsType.indexOf(statType) !== -1) {
-          if (this.card.buffs.self[statType].calcType === 'percent') {
-            value = Math.floor(this.stats[statType].baseTotal * value / 100);
+          if (statsType.indexOf(statType) !== -1) {
+            if (selfBuff.calcType === 'percent') {
+              value = Math.floor(this.stats[statType].baseTotal * value / 100);
+            }
           }
-        }
 
-        this.updateStat(statType, value, 'card', 'fixe');
-      }
+          this.updateStat(statType, value, 'card', 'fixe');
+        }
+      });
     });
 
     Object.keys(this.card.buffs.party).forEach(statType => {
-      if (!this.card.buffs.party[statType].cond || this.checkCondition(this.card.buffs.party[statType].cond)) {
-        let value = this.card.buffs.party[statType].value;
+      this.card.buffs.party[statType].forEach(partyBuff => {
+        if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+          let value = partyBuff.value;
 
-        if (statsType.indexOf(statType) !== -1) {
-          if (this.card.buffs.party[statType].calcType === 'percent') {
-            value = Math.floor(this.stats[statType].baseTotal * value / 100);
+          if (statsType.indexOf(statType) !== -1) {
+            if (partyBuff.calcType === 'percent') {
+              value = Math.floor(this.stats[statType].baseTotal * value / 100);
+            }
           }
-        }
 
-        this.updateStat(statType, value, 'cardParty', 'fixe');
-      }
+          this.updateStat(statType, value, 'cardParty', 'fixe');
+        }
+      });
     });
   }
 
@@ -711,21 +714,23 @@ export class Unit {
     this.teamCards.forEach(card => {
       if (card) {
         Object.keys(card.buffs.party).forEach(statType => {
-          if (!card.buffs.party[statType].cond || this.checkCondition(card.buffs.party[statType].cond)) {
-            let value = card.buffs.party[statType].value;
+          card.buffs.party[statType].forEach(partyBuff => {
+            if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+              let value = partyBuff.value;
 
-            if (statsType.indexOf(statType) !== -1) {
-              if (card.buffs.party[statType].calcType === 'percent') {
-                value = Math.floor(this.stats[statType].baseTotal * value / 100);
+              if (statsType.indexOf(statType) !== -1) {
+                if (partyBuff.calcType === 'percent') {
+                  value = Math.floor(this.stats[statType].baseTotal * value / 100);
+                }
+              }
+
+              if ((!teamBuffs[statType] || value > teamBuffs[statType])
+                && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
+              ) {
+                teamBuffs[statType] = value;
               }
             }
-
-            if ((!teamBuffs[statType] || value > teamBuffs[statType])
-              && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
-            ) {
-              teamBuffs[statType] = value;
-            }
-          }
+          });
         });
       }
     });
@@ -968,6 +973,8 @@ export class Unit {
     statsToRemove.forEach(stat => {
       delete this.stats[stat];
     });
+
+    this.getAvailableStatTypes();
   }
 
   rightClickNode(node) {

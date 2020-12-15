@@ -123,7 +123,9 @@ export class Card {
       const min = this.stats[stat].min;
       const max = this.stats[stat].max;
 
-      this.stats[stat].total = Math.floor(min + ((max - min) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
+      if (Number.isInteger(min) && Number.isInteger(max)) {
+        this.stats[stat].total = Math.floor(min + ((max - min) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
+      }
     });
 
     const buffs = {
@@ -136,24 +138,32 @@ export class Card {
     this.unitBuffs.forEach(buff => {
       if (buff.classic.type === 'support') {
         buff.classic.effects.forEach(effect => {
-          buffs.self[effect.type] = {};
-          buffs.self[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
-          buffs.self[effect.type].calcType = effect.calcType;
+          if (!buffs.self[effect.type]) {
+            buffs.self[effect.type] = [];
+          }
+
+          let newBuff = {
+            value: Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1))),
+            calcType: effect.calcType
+          }
 
           if (buff.cond) {
-            buffs.self[effect.type].cond = buff.cond;
+            // @ts-ignore
+            newBuff.cond = buff.cond;
           }
+
+          buffs.self[effect.type].push(newBuff)
         });
 
         if (buff.awake && this.star > 0) {
           buff.awake.effects.forEach(effect => {
-            buffs.self[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
+            buffs.self[effect.type][buffs.self[effect.type].length - 1].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
           });
         }
 
         if (buff.lvmax && this.level === this.getLevelPerStar(this.rarity, 4)) {
           buff.lvmax.effects.forEach(effect => {
-            buffs.self[effect.type].value += effect.minValue;
+            buffs.self[effect.type][buffs.self[effect.type].length - 1].value += effect.minValue;
           });
         }
       } else {
@@ -183,43 +193,37 @@ export class Card {
 
     this.partyBuffs.forEach(buff => {
       buff.classic.effects.forEach(effect => {
-        buffs.party[effect.type] = {};
-        buffs.party[effect.type].value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1)));
-        buffs.party[effect.type].calcType = effect.calcType;
+        if (!buffs.party[effect.type]) {
+          buffs.party[effect.type] = [];
+        }
+
+        let newBuff = {
+          value: Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (this.getLevelPerStar(this.rarity, 4) - 1) * (this.level - 1))),
+          calcType: effect.calcType
+        }
 
         if (buff.cond) {
-          buffs.party[effect.type].cond = buff.cond;
+          // @ts-ignore
+          newBuff.cond = buff.cond;
         }
+
+        buffs.party[effect.type].push(newBuff)
       });
 
       if (buff.awake && this.star > 0) {
         buff.awake.effects.forEach(effect => {
-          buffs.party[effect.type].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
+          buffs.party[effect.type][buffs.party[effect.type].length - 1].value += Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (4 - 1) * (this.star - 1)));
         });
       }
 
       if (buff.lvmax && this.level === this.getLevelPerStar(this.rarity, 4)) {
         buff.lvmax.effects.forEach(effect => {
-          buffs.party[effect.type].value += effect.minValue;
+          buffs.party[effect.type][buffs.party[effect.type].length - 1].value += effect.minValue;
         });
       }
     });
 
     this.buffs = buffs;
-
-    this.buff = {};
-    const types = ['self', 'party'];
-    types.forEach(type => {
-      this.buff[type] = [];
-      Object.keys(buffs[type]).forEach(effect => {
-        const formattedEffect = {
-          type: effect,
-          value: buffs[type][effect].value,
-          calcType: buffs[type][effect].calcType
-        };
-        this.buff[type].push(skillService.formatEffect(this, {}, formattedEffect));
-      });
-    });
   }
 
   maxCard(nameService, skillService) {
@@ -234,7 +238,7 @@ export class Card {
     const availableStats = [];
 
     Object.keys(this.stats).forEach(stat => {
-      if (typeof(this.stats[stat].min) === 'number') {
+      if (Number.isInteger(this.stats[stat].min) && Number.isInteger(this.stats[stat].max)) {
         availableStats.push(stat);
       }
     });

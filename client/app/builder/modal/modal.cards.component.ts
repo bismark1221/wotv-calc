@@ -6,6 +6,9 @@ import { CardService } from '../../services/card.service';
 import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
 import { NameService } from '../../services/name.service';
+import { SkillService } from '../../services/skill.service';
+import { JobService } from '../../services/job.service';
+import { UnitService } from '../../services/unit.service';
 
 @Component({
   selector: 'app-modal-cards',
@@ -31,6 +34,9 @@ export class ModalCardsComponent implements OnInit {
     private teamService: TeamService,
     private translateService: TranslateService,
     private nameService: NameService,
+    private skillService: SkillService,
+    private jobService: JobService,
+    private unitService: UnitService,
     private modal: NgbActiveModal
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -43,6 +49,7 @@ export class ModalCardsComponent implements OnInit {
 
     if (this.card) {
       this.card = this.cardService.selectCardForBuilder(this.card.dataId, this.card);
+      this.formatCardBuffs()
     }
   }
 
@@ -109,6 +116,7 @@ export class ModalCardsComponent implements OnInit {
       this.modalStep = 'load';
     } else {
       this.card = this.cardService.selectCardForBuilder(cardId, customData);
+      this.formatCardBuffs()
 
       this.modalStep = 'custom';
     }
@@ -125,18 +133,83 @@ export class ModalCardsComponent implements OnInit {
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
-  }
-
-  changeLevel () {
-    this.cardService.changeLevel(this.card);
+    this.formatCardBuffs()
   }
 
   selectLevel(level) {
     this.card.level = level;
     this.cardService.changeLevel(this.card);
+    this.formatCardBuffs()
   }
 
   maxCard() {
     this.cardService.maxCard(this.card);
+    this.formatCardBuffs()
+  }
+
+  private formatCardBuffs() {
+    this.card.formattedBuffs = {
+      self: [],
+      party: []
+    }
+
+    const buffTypes = ['self', 'party']
+
+    buffTypes.forEach(buffType => {
+      Object.keys(this.card.buffs[buffType]).forEach(statType => {
+        this.card.buffs[buffType][statType].forEach(buff => {
+          const formattedEffect = {
+            type: statType,
+            value: buff.value,
+            calcType: buff.calcType
+          };
+
+          const formattedBuff = {
+            effect: this.skillService.formatEffect(this.card, {}, formattedEffect),
+            cond: buff.cond
+          }
+
+          if (formattedBuff.cond) {
+            formattedBuff.cond.forEach(cond => {
+              if (cond.type === 'job') {
+                cond.formattedItems = [];
+                cond.items.forEach((jobId, jobIndex) => {
+                  const job = this.jobService.getJob(jobId);
+                  cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
+                });
+              } else if (cond.type === 'unit') {
+                cond.formattedItems = [];
+                cond.items.forEach((unitId, unitIndex) => {
+                  const unit = this.unitService.getUnit(unitId);
+                  cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
+                });
+              }
+            });
+          }
+
+          this.card.formattedBuffs[buffType].push(formattedBuff)
+        });
+      });
+    });
+
+    this.card.skills.forEach(skill => {
+      if (skill.cond) {
+        skill.cond.forEach(cond => {
+          if (cond.type === 'job') {
+            cond.formattedItems = [];
+            cond.items.forEach((jobId, jobIndex) => {
+              const job = this.jobService.getJob(jobId);
+              cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
+            });
+          } else if (cond.type === 'unit') {
+            cond.formattedItems = [];
+            cond.items.forEach((unitId, unitIndex) => {
+              const unit = this.unitService.getUnit(unitId);
+              cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
+            });
+          }
+        });
+      }
+    })
   }
 }
