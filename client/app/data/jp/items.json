@@ -3707,6 +3707,12 @@
       "en": "ヴィネラ（Xmas）の欠片"
     }
   },
+  "IT_PI_LW_VKTR_01": {
+    "dataId": "IT_PI_LW_VKTR_01",
+    "names": {
+      "en": "ヴィクトラ（Xmas）の欠片"
+    }
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -4281,6 +4287,12 @@
     "dataId": "IT_SP_LW_VNLA_01",
     "names": {
       "en": "ヴィネラ（Xmas）の思珠"
+    }
+  },
+  "IT_SP_LW_VKTR_01": {
+    "dataId": "IT_SP_LW_VKTR_01",
+    "names": {
+      "en": "ヴィクトラ（Xmas）の思珠"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -5979,6 +5991,13 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_BOW_012": {
+    "dataId": "IT_AF_LW_BOW_012",
+    "names": {
+      "en": "プラチナボウのクラフトレシピ"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -6423,6 +6442,12 @@
       "en": "【12月】召喚メダルA"
     }
   },
+  "IT_EC_SUMMON_12_02_B": {
+    "dataId": "IT_EC_SUMMON_12_02_B",
+    "names": {
+      "en": "【12月】召喚メダルB"
+    }
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -6763,6 +6788,12 @@
     "dataId": "IT_US_G_10_UR_01",
     "names": {
       "en": "【初心者限定】UR1枠確定10連召喚券A"
+    }
+  },
+  "IT_US_G_10_UR_02": {
+    "dataId": "IT_US_G_10_UR_02",
+    "names": {
+      "en": "【12/20国営放送】UR1枠確定10連召喚券"
     }
   },
   "IT_US_G_V_SR_UR_01": {
@@ -7335,6 +7366,24 @@
       "en": "【1周年記念】ジョブの記憶・緋×5選択召喚券"
     }
   },
+  "IT_US_SE_JB_MM_03_8": {
+    "dataId": "IT_US_SE_JB_MM_03_8",
+    "names": {
+      "en": "【2020Xmas】ジョブの記憶・紫×3選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_MM_04_9": {
+    "dataId": "IT_US_SE_JB_MM_04_9",
+    "names": {
+      "en": "【2020Xmas】ジョブの記憶・橘×4選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_MM_05_9": {
+    "dataId": "IT_US_SE_JB_MM_05_9",
+    "names": {
+      "en": "【2020Xmas】ジョブの記憶・緋×5選択召喚券"
+    }
+  },
   "IT_US_SE_VPI_01": {
     "dataId": "IT_US_SE_VPI_01",
     "names": {
@@ -7569,6 +7618,18 @@
       "en": "【1周年記念】URユニット欠片×120選択召喚券"
     }
   },
+  "IT_US_SE_PI_24": {
+    "dataId": "IT_US_SE_PI_24",
+    "names": {
+      "en": "Xmasユニット欠片×40選択召喚券"
+    }
+  },
+  "IT_US_SE_PI_25": {
+    "dataId": "IT_US_SE_PI_25",
+    "names": {
+      "en": "Xmasユニット欠片×120選択召喚券Ⅱ"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7665,10 +7726,22 @@
       "en": "【ハロウィンCP】秘伝書×100選択召喚券"
     }
   },
+  "IT_US_SE_AF_AW_09": {
+    "dataId": "IT_US_SE_AF_AW_09",
+    "names": {
+      "en": "【不使用】秘伝書×ＮＮＮ選択召喚券"
+    }
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
       "en": "武具の刻印×20選択召喚券"
+    }
+  },
+  "IT_US_SE_AF_SUP_02": {
+    "dataId": "IT_US_SE_AF_SUP_02",
+    "names": {
+      "en": "武具の刻印×50選択召喚券"
     }
   },
   "IT_US_SE_AF_PT_01": {
@@ -7887,6 +7960,24 @@
       "en": "【1周年記念】ジェダイト×15選択召喚券"
     }
   },
+  "IT_US_SE_JB_05_08": {
+    "dataId": "IT_US_SE_JB_05_08",
+    "names": {
+      "en": "【2020Xmas】スピネル×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_04_09": {
+    "dataId": "IT_US_SE_JB_04_09",
+    "names": {
+      "en": "【2020Xmas】シトリン×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_03_09": {
+    "dataId": "IT_US_SE_JB_03_09",
+    "names": {
+      "en": "【2020Xmas】チャロアイト×30選択召喚券"
+    }
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -7897,6 +7988,12 @@
     "dataId": "IT_US_SE_JBEX_EM_02",
     "names": {
       "en": "輝石像×150選択召喚券"
+    }
+  },
+  "IT_US_SE_JBEX_EM_03": {
+    "dataId": "IT_US_SE_JBEX_EM_03",
+    "names": {
+      "en": "輝石像×50選択召喚券"
     }
   },
   "IT_US_SE_JBEX_AF_01": {
@@ -7915,6 +8012,24 @@
     "dataId": "IT_US_SE_JBEX_AF_03",
     "names": {
       "en": "【Royal】焦印石×300選択召喚券"
+    }
+  },
+  "IT_US_SE_JBEX_AF_04": {
+    "dataId": "IT_US_SE_JBEX_AF_04",
+    "names": {
+      "en": "【焦印石パック】焦印石×50選択召喚券"
+    }
+  },
+  "IT_US_SE_SP_LW_01": {
+    "dataId": "IT_US_SE_SP_LW_01",
+    "names": {
+      "en": "Xmasユニット思珠×10選択召喚券"
+    }
+  },
+  "IT_US_SE_SP_LW_02": {
+    "dataId": "IT_US_SE_SP_LW_02",
+    "names": {
+      "en": "Xmasユニット思珠×40選択召喚券"
     }
   },
   "IT_US_G_U_SSR_UR_02": {
@@ -8215,6 +8330,12 @@
     "dataId": "IT_VPI_LW_ROBB",
     "names": {
       "en": "刹那の閃光の欠片"
+    }
+  },
+  "IT_VPI_LW_XMAS": {
+    "dataId": "IT_VPI_LW_XMAS",
+    "names": {
+      "en": "ウィンターホリデーパーティーの欠片"
     }
   },
   "IT_VPI_LW_IGNT": {

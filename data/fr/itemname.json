@@ -2978,11 +2978,15 @@
         },
         {
             "key": "IT_AF_FF4_SPE_000",
-            "value": "Recette d'artisanat : Rafalance"
+            "value": "Recette d'artisanat : Lance zéphyr"
         },
         {
             "key": "IT_AF_FF4_BOW_000",
             "value": "Recette d'artisanat : Arc elfique"
+        },
+        {
+            "key": "IT_AF_LW_ACC_002",
+            "value": "Recette d'artisanat : Âme de Thamasa"
         },
         {
             "key": "IT_AF_SUP_HP",
@@ -3130,7 +3134,7 @@
         },
         {
             "key": "IT_EC_SUMMON_12_B",
-            "value": "Médaille d'invocation B [Décembre]"
+            "value": ""
         },
         {
             "key": "IT_EC_VISION",
@@ -3989,6 +3993,14 @@
             "value": "Fragment de l'atout-vision : Célébration de l'hiver"
         },
         {
+            "key": "IT_VPI_LW_LUCA",
+            "value": "Fragment de l'atout-vision : Nouveau sujet de recherche"
+        },
+        {
+            "key": "IT_VPI_LW_FIGHT",
+            "value": "Fragment de l'atout-vision : Affrontement fatal"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "Œuf de croissance (N)"
         },
@@ -4093,6 +4105,10 @@
             "value": "Médaille du raid d'octobre"
         },
         {
+            "key": "IT_EC_RAID_08",
+            "value": "Médaille du raid de décembre"
+        },
+        {
             "key": "IT_US_GL_SE_SB_EXP_1",
             "value": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
         },
@@ -4185,6 +4201,14 @@
             "value": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
         },
         {
+            "key": "IT_US_GL_SE_VPI_16",
+            "value": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_17",
+            "value": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+        },
+        {
             "key": "IT_US_SE_UR_U_02",
             "value": "Ticket sélectionneur d'unité UR recommandée [A]"
         },
@@ -4239,6 +4263,14 @@
         {
             "key": "IT_US_SE_AF_AW_02",
             "value": "Ticket sélectionneur de 100 livres secrets de l'amélioration"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_05",
+            "value": "[Fêtes hivernales - Partie II] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_01",
+            "value": "Ticket sélectionneur de 20 sceaux d'équipement"
         },
         {
             "key": "IT_US_G_N_TW_10",

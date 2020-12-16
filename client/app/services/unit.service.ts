@@ -51,7 +51,8 @@ export class UnitService {
     'UN_LW_P_RIRY_01',
     'UN_LW_P_VNLA_01',
     'UN_LW_P_RAMD_01',
-    'UN_LW_P_MACR_01'
+    'UN_LW_P_MACR_01',
+    'UN_LW_P_VKTR_01'
   ];
 
   constructor(

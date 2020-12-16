@@ -8246,7 +8246,7 @@
   "VC_LW_LUCA": {
     "dataId": "VC_LW_LUCA",
     "names": {
-      "en": "新たな研究対象"
+      "en": "新たな研究対象 - New Test Subjects"
     },
     "cost": 70,
     "rarity": "UR",
@@ -8310,7 +8310,7 @@
       "JUMP": {}
     },
     "image": "lapsluca",
-    "slug": "arata-na-kenkyuu-taishou",
+    "slug": "new-test-subjects",
     "partyBuffs": [
       {
         "classic": {
@@ -12261,6 +12261,404 @@
             "items": [
               "JB_LW_SAM_FIRE",
               "JB_LW_LSWL"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_XMAS": {
+    "dataId": "VC_LW_XMAS",
+    "names": {
+      "en": "ウィンターホリデーパーティー - Winter Holiday Party"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 44,
+        "max": 346
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 43,
+        "max": 170
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsxmas",
+    "slug": "winter-holiday-party",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "AOE_RES",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "AOE_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "AOE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 35,
+              "maxValue": 35,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_XMAS_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": -20,
+              "maxValue": -39,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "all"
+            },
+            {
+              "type": "MAG",
+              "minValue": -20,
+              "maxValue": -39,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "all"
+            },
+            {
+              "type": "IMMOBILIZE_ATK",
+              "calcType": "percent",
+              "rate": 25,
+              "turn": 3,
+              "target": "all"
+            }
+          ],
+          "dataId": "SK_VC_LW_XMAS_PVA",
+          "type": "skill",
+          "mainSkill": true,
+          "names": {
+            "en": "ハイト2聖夜の粛清"
+          },
+          "target": "all",
+          "cost": {
+            "type": "AP",
+            "value": 34
+          },
+          "count": 2,
+          "maxLevel": 99,
+          "range": {
+            "h": 3,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          },
+          "maths": [
+            {
+              "type": "HEIGHT",
+              "formula": "RATIO",
+              "condition": 2,
+              "value": 60
+            }
+          ],
+          "damage": {
+            "minValue": 30,
+            "maxValue": 65,
+            "type": "magic",
+            "effType": "DAMAGE"
+          }
+        },
+        "awake": null,
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_CLR_FIRE",
+              "JB_LW_CAL_FIRE",
+              "JB_LW_MMC_FIRE"
             ]
           }
         ]
@@ -18927,7 +19325,7 @@
   "VC_LW_FIGHT": {
     "dataId": "VC_LW_FIGHT",
     "names": {
-      "en": "激突"
+      "en": "激突 - Fated Clash"
     },
     "cost": 50,
     "rarity": "MR",
@@ -18991,7 +19389,7 @@
       "JUMP": {}
     },
     "image": "lapsfight",
-    "slug": "gekitotsu",
+    "slug": "fated-clash",
     "partyBuffs": [
       {
         "classic": {

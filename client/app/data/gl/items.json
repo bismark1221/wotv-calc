@@ -5284,8 +5284,8 @@
   "IT_AF_FF4_SPE_000": {
     "dataId": "IT_AF_FF4_SPE_000",
     "names": {
-      "en": "Gust Spear Crafting Recipe",
-      "fr": "Recette d'artisanat : Rafalance"
+      "en": "Wind Spear Crafting Recipe",
+      "fr": "Recette d'artisanat : Lance zéphyr"
     },
     "recipe": true
   },
@@ -5294,6 +5294,14 @@
     "names": {
       "en": "Elven Bow Crafting Recipe",
       "fr": "Recette d'artisanat : Arc elfique"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_ACC_002": {
+    "dataId": "IT_AF_LW_ACC_002",
+    "names": {
+      "en": "Soul of Thamasa Crafting Recipe",
+      "fr": "Recette d'artisanat : Âme de Thamasa"
     },
     "recipe": true
   },
@@ -5552,8 +5560,8 @@
   "IT_EC_SUMMON_12_B": {
     "dataId": "IT_EC_SUMMON_12_B",
     "names": {
-      "en": "December Summon Medal B",
-      "fr": "Médaille d'invocation B [Décembre]"
+      "en": "IT_EC_SUMMON_12_B",
+      "fr": "IT_EC_SUMMON_12_B"
     }
   },
   "IT_EC_VISION": {
@@ -7054,6 +7062,20 @@
       "fr": "Fragment de l'atout-vision : Célébration de l'hiver"
     }
   },
+  "IT_VPI_LW_LUCA": {
+    "dataId": "IT_VPI_LW_LUCA",
+    "names": {
+      "en": "“New Test Subjects” Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Nouveau sujet de recherche"
+    }
+  },
+  "IT_VPI_LW_FIGHT": {
+    "dataId": "IT_VPI_LW_FIGHT",
+    "names": {
+      "en": "\"Fated Clash\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Affrontement fatal"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7236,6 +7258,13 @@
       "fr": "Médaille du raid d'octobre"
     }
   },
+  "IT_EC_RAID_08": {
+    "dataId": "IT_EC_RAID_08",
+    "names": {
+      "en": "December Raid Medal",
+      "fr": "Médaille du raid de décembre"
+    }
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -7397,6 +7426,20 @@
       "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_16": {
+    "dataId": "IT_US_GL_SE_VPI_16",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    }
+  },
+  "IT_US_GL_SE_VPI_17": {
+    "dataId": "IT_US_GL_SE_VPI_17",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7493,6 +7536,20 @@
     "names": {
       "en": "Select Secret Book of Refinement x100 Summon Ticket",
       "fr": "Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
+  "IT_US_SE_AF_AW_05": {
+    "dataId": "IT_US_SE_AF_AW_05",
+    "names": {
+      "en": "[Winter Festivities Part II] Select Secret Book of Refinement x100 Summon Ticket",
+      "fr": "[Fêtes hivernales - Partie II] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
+  "IT_US_SE_AF_SUP_01": {
+    "dataId": "IT_US_SE_AF_SUP_01",
+    "names": {
+      "en": "Select Equipment Seal x20 Summon Ticket",
+      "fr": "Ticket sélectionneur de 20 sceaux d'équipement"
     }
   },
   "IT_US_G_N_TW_10": {

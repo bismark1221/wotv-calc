@@ -2634,5 +2634,1005 @@
       }
     ],
     "slug": "behemoth-king"
+  },
+  "RAID_GL_06": {
+    "dataId": "RAID_GL_06",
+    "names": {
+      "en": "Two-Headed Dragon",
+      "fr": "Dragon à deux têtes"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_THDG_RAID",
+        "names": {
+          "en": "Two-Headed Dragon",
+          "fr": "Dragon à deux têtes"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 140,
+            "max": 640
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 20,
+            "max": 20
+          },
+          "MAG": {
+            "min": 140,
+            "max": 640
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 30,
+            "max": 85
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "ICE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "EARTH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "WIND_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "LIGHTNING_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "WATER_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "LIGHT_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "DARK_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "SLASH_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "PIERCE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "STRIKE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {},
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "dragon",
+        "element": "light",
+        "image": "lapsthdg",
+        "skills": {
+          "SK_THDG_R_01_RA": {
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "percent",
+                "turn": 2,
+                "increaseMax": true,
+                "target": "ennemySide"
+              },
+              {
+                "type": "MAG",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "percent",
+                "turn": 2,
+                "increaseMax": true,
+                "target": "ennemySide"
+              },
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -10,
+                "calcType": "fixe",
+                "turn": 2,
+                "target": "ennemySide"
+              },
+              {
+                "type": "SPR",
+                "minValue": -10,
+                "maxValue": -10,
+                "calcType": "fixe",
+                "turn": 2,
+                "target": "ennemySide"
+              }
+            ],
+            "dataId": "SK_THDG_R_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Dragon Voice",
+              "fr": "Voix draconique"
+            },
+            "target": "ennemySide",
+            "maxLevel": 30,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 30,
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_THDG_M_01_RA": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Head Rush",
+              "fr": "Coup de tête"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 5,
+            "maxLevel": 30,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 0,
+              "w": 1
+            },
+            "based": "physic",
+            "combo": {
+              "num": 2,
+              "rate": 59
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_03": {
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": -38,
+                "maxValue": -38,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Double Break Fire Breath",
+              "fr": "Double souffle feu"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 30,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_04": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": -38,
+                "maxValue": -38,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_04",
+            "rate": 100,
+            "names": {
+              "en": "Double Break Ice Breath",
+              "fr": "Double souffle glace"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 30,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "ice"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_05": {
+            "effects": [
+              {
+                "type": "BLIND_ATK",
+                "minValue": 50,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              },
+              {
+                "type": "SILENCE_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_THDG_M_05",
+            "rate": 70,
+            "names": {
+              "en": "Unleash",
+              "fr": "Déchaînement"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 30,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 3,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 100,
+              "effType": "DAMAGE"
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 30,
+            "minLevel": 1
+          }
+        },
+        "slug": "two-headed-dragon",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_THDG_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_CSLI_02",
+        "names": {
+          "en": "Flan Princess",
+          "fr": "Princesse flan"
+        },
+        "stats": {
+          "HP": {
+            "min": 7000,
+            "max": 110000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 430,
+            "max": 450
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 300,
+            "max": 350
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {
+            "min": -38,
+            "max": -58
+          },
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "ICE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "EARTH_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "WIND_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "LIGHTNING_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "WATER_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "LIGHT_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "DARK_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "STRIKE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MISSILE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "SLEEP_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "wind",
+        "image": "lapscsli_02",
+        "skills": {
+          "SK_CSLI_02_M_01_RA": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Pink Sphere",
+              "fr": "Sphère rose"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 3,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_02",
+            "rate": 100,
+            "names": {
+              "en": "Time to Eat!",
+              "fr": "À table !"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB"
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_03": {
+            "effects": [
+              {
+                "type": "CONFUSION_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_02_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Let’s Dance!",
+              "fr": "En piste !"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 3,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE"
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_OTICE_1_80_U": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WATER_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WIND_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHTNING_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "EARTH_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "DARK_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHT_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_OTICE_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "All Res Except Ice 1-80 Up (Base)",
+              "fr": "Toutes les Rés (sauf Rés glace) ↑ 1 - 80 (base)"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_MAGIC_1_80_U_KISO": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "Magic Res 1-80 Up (Base)",
+              "fr": "Rés magique ↑ 1 - 80 (base)"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          }
+        },
+        "slug": "flan-princess",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_02_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE"
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": "two-headed-dragon"
   }
 }

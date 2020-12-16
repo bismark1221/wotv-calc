@@ -24,6 +24,14 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '16/12',
+        items: [
+          {type: 'card', dataId: 'VC_LW_LUCA'},
+          {type: 'card', dataId: 'VC_LW_FIGHT'},
+          {type: 'equipment', dataId: 'AF_LW_ACC_002'}
+        ]
+      },
+      {
         date: '09/12',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_RAMD_01'},
@@ -44,18 +52,18 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_FF4_SPE_000'},
           {type: 'equipment', dataId: 'AF_FF4_BOW_000'}
         ]
-      },
-      {
-        date: '18/11',
-        items: [
-          {type: 'unit', dataId: 'UN_FF4_P_CECL'},
-          {type: 'card', dataId: 'VC_LW_CHCB'},
-          {type: 'esper', dataId: 'UN_LW_S_CHCB1'},
-          {type: 'equipment', dataId: 'AF_FF4_ARM_001'},
-        ]
       }
     ],
     JP: [
+      {
+        date: '16/12',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_VKTR_01'},
+          {type: 'card', dataId: 'VC_LW_XMAS'},
+          {type: 'equipment', dataId: 'AF_LW_BOW_012'},
+          {type: 'esper', dataId: 'UN_LW_S_MOGL'}
+        ]
+      },
       {
         date: '09/12',
         items: [
@@ -77,18 +85,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_RAMD_01'},
           {type: 'unit', dataId: 'UN_LW_P_MACR_01'},
           {type: 'equipment', dataId: 'AF_FF10_ACCE_001'}
-        ]
-      },
-      {
-        date: '24/11',
-        items: [
-          {type: 'unit', dataId: 'UN_FF10_P_ARON'},
-          {type: 'unit', dataId: 'UN_LW_P_ZIZA'},
-          {type: 'unit', dataId: 'UN_LW_P_AILN'},
-          {type: 'unit', dataId: 'UN_LW_P_ZZAN'},
-          {type: 'card', dataId: 'VC_FF10_MV1'},
-          {type: 'card', dataId: 'VC_FF10_MV2'},
-          {type: 'equipment', dataId: 'AF_FF10_BSW_000'},
         ]
       }
     ]
