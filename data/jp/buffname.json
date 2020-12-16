@@ -125,6 +125,10 @@
             "value": "斬撃攻撃アップ"
         },
         {
+            "key": "BUFF_ARENA_00012",
+            "value": "射撃攻撃アップ"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "闇属性アビリティ攻撃アップ"
         },
@@ -177,6 +181,10 @@
             "value": "ユニットのCost制限220以下、睡眠・魅了・ストップ・ドンムブ・ドンアク耐性+50"
         },
         {
+            "key": "BUFF_CLASSMATCH_007",
+            "value": "Cost制限540以下、治癒力50%ダウン"
+        },
+        {
             "key": "BUFF_FREEMATCH_004",
             "value": "クイック無効、CTアップ/ダウン無効、治癒力50%ダウン"
         },
@@ -187,6 +195,10 @@
         {
             "key": "BUFF_FREEMATCH_006",
             "value": "睡眠・魅了・ストップ・ドンムブ・ドンアク耐性+50"
+        },
+        {
+            "key": "BUFF_FREEMATCH_007",
+            "value": "治癒力50%ダウン"
         },
         {
             "key": "BUFF_IFRT_01",
@@ -3251,6 +3263,38 @@
         {
             "key": "BUFF_MOGL_33",
             "value": "ドンムブ耐性+5%"
+        },
+        {
+            "key": "BUFF_MOGL_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_MOGL_35",
+            "value": "クリティカルダメージ+4%"
+        },
+        {
+            "key": "BUFF_MOGL_36",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_MOGL_37",
+            "value": "クリティカルダメージ+6%"
+        },
+        {
+            "key": "BUFF_MOGL_38",
+            "value": "氷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MOGL_39",
+            "value": "氷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MOGL_40",
+            "value": "氷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MOGL_41",
+            "value": "氷属性アビリティ攻撃UP+10%"
         },
         {
             "key": "BUFF_LAMA_01_01",
