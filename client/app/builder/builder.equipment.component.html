@@ -64,24 +64,30 @@
               <div>
                 Upgrade
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ equipment.upgrade === 0 ? equipment.upgrade : '+' + equipment.upgrade }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [0, 1, 2, 3, 4, 5]" class="selectLevel" ngbDropdownItem (focus)="selectUpgrade(level)" id="select_upgrade_{{level}}">{{ level === 0 ? level : '+' + level }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select an upgrade" class="select-upgrade" [items]="[0, 1, 2, 3, 4, 5]" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item === 0 ? 0 : '+' + item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item === 0 ? 0 : '+' + item }}
+                </ng-template>
+              </ng-select>
             </div>
 
             <div class="levelDiv" *ngIf="equipment.growIds.length > 1">
               <div>
                 Type
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select btn-select-grow" ngbDropdownToggle>{{ equipment.grows[equipment.grow].name }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let growId of equipment.growIds" class="selectLevel" ngbDropdownItem (focus)="selectGrow(growId)" id="select_grow_{{growId}}">{{ equipment.grows[growId].name }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select a grow" class="select-grow" [items]="equipment.growIds" [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()" [clearable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ equipment.grows[item].name }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ equipment.grows[item].name }}
+                </ng-template>
+              </ng-select>
             </div>
           </td>
         </tr>

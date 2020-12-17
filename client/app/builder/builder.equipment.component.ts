@@ -162,13 +162,11 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     this.showList = !this.showList;
   }
 
-  selectUpgrade(upgrade) {
-    this.equipment.upgrade = upgrade;
+  updateUpgrade() {
     this.equipmentService.changeUpgrade(this.equipment);
   }
 
-  selectGrow(grow) {
-    this.equipment.grow = grow;
+  updateGrow() {
     this.equipmentService.changeGrow(this.equipment);
   }
 

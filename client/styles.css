@@ -709,25 +709,50 @@ small {
 
 
 
-
-
-.ng-select {
-  width: 250px;
-}
-
-.ng-input input {
-  cursor: text !important;
-}
-
 .ng-dropdown-panel-items {
   max-height: 400px !important;
 }
 
-.ng-optgroup {
+
+
+.select-unit-team {
+  width: 250px;
+}
+
+.select-unit-team .ng-input input {
+  cursor: text !important;
+}
+
+.select-unit-team .ng-optgroup {
   padding: 0 !important;
 }
 
-.ng-option {
+.select-unit-team .ng-option {
   padding: 0 !important;
   padding-left: 5px !important;
+}
+
+
+
+
+
+.select-grow .ng-value, .select-upgrade .ng-value {
+  width: 100%;
+}
+
+.select-grow .ng-select-container, .select-upgrade .ng-select-container {
+  height: 26px !important;
+  min-height: 26px;
+}
+
+.select-grow .ng-input, .select-upgrade .ng-input {
+  top: 0 !important;
+}
+
+.select-grow .ng-dropdown-panel, .select-upgrade .ng-dropdown-panel {
+  text-align: left;
+}
+
+.select-grow .ng-option, .select-upgrade .ng-option {
+  padding-left: 10px !important;
 }
