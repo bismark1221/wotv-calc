@@ -66,7 +66,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "fire"
@@ -1410,7 +1411,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "earth"
@@ -2752,7 +2754,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "water"
@@ -4068,7 +4071,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "slash",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "light"
@@ -5376,7 +5380,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "dark"
@@ -8031,6 +8036,7 @@
           "maxValue": 1000,
           "type": "all",
           "effType": "DAMAGE",
+          "formula": {},
           "fixedDamage": true
         },
         "elem": [
@@ -9361,7 +9367,8 @@
           "minValue": -5,
           "maxValue": 17,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "ice"
@@ -10679,7 +10686,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "slash",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "wind"
@@ -12000,7 +12008,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "lightning"
@@ -13320,7 +13329,8 @@
           "minValue": 200,
           "maxValue": 230,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "fire"
@@ -14670,7 +14680,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "ice"
@@ -16014,7 +16025,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "lightning"
@@ -17342,7 +17354,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "slash",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "neutral"
@@ -18657,7 +18670,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "fire"
@@ -19993,7 +20007,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "wind"
@@ -21312,7 +21327,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "earth"
@@ -22643,7 +22659,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "all",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "light"
@@ -23976,7 +23993,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "missile",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "fire"
@@ -25316,7 +25334,8 @@
           "minValue": 135,
           "maxValue": 175,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "dark"
@@ -26633,7 +26652,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "light"
@@ -27956,7 +27976,8 @@
           "minValue": 50,
           "maxValue": 85,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "water"
@@ -29309,7 +29330,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "ice"
@@ -30660,7 +30682,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "earth"
@@ -31983,7 +32006,8 @@
           "minValue": 70,
           "maxValue": 105,
           "type": "magic",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "dark"
@@ -33297,7 +33321,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "all",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "lightning"
@@ -35972,7 +35997,8 @@
           "minValue": 65,
           "maxValue": 100,
           "type": "strike",
-          "effType": "DAMAGE"
+          "effType": "DAMAGE",
+          "formula": {}
         },
         "elem": [
           "neutral"

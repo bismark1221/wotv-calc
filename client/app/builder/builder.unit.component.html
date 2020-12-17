@@ -486,7 +486,18 @@
             <td>{{ skill.name }}</td>
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
-              <div [innerHTML]="skill.damageHtml"></div>
+
+              <div *ngIf="skill.damageHtml.value">
+                <ng-template #tip_damage>
+                  <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                  <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                  <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                  <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                </ng-template>
+                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+              </div>
+
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
@@ -536,7 +547,18 @@
             <td>{{ skill.name }}</td>
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
-              <div [innerHTML]="skill.damageHtml"></div>
+
+              <div *ngIf="skill.damageHtml.value">
+                <ng-template #tip_damage>
+                  <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                  <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                  <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                  <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                </ng-template>
+                <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+              </div>
+
               <div *ngFor="let effect of skill.effects">
                 {{ effect.formatHtml }}
               </div>
@@ -588,7 +610,18 @@
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
-                <div [innerHTML]="skill.damageHtml"></div>
+
+                <div *ngIf="skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                    <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                    <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of skill.effects">
                   {{ effect.formatHtml }}
                 </div>
@@ -622,7 +655,18 @@
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
-                <div [innerHTML]="skill.damageHtml"></div>
+
+                <div *ngIf="skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                    <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                    <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of skill.effects">
                   {{ effect.formatHtml }}
                 </div>
@@ -656,7 +700,18 @@
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
-                <div [innerHTML]="skill.damageHtml"></div>
+
+                <div *ngIf="skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                    <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                    <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of skill.effects">
                   {{ effect.formatHtml }}
                 </div>
@@ -690,7 +745,18 @@
               <td>{{ skill.name }}</td>
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
-                <div [innerHTML]="skill.damageHtml"></div>
+
+                <div *ngIf="skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
+                    <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
+                    <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of skill.effects">
                   {{ effect.formatHtml }}
                 </div>
@@ -724,7 +790,18 @@
               <td>{{ unit.limit.name }}</td>
               <td class="skillEffectTd">
                 <div>{{ unit.limit.counterHtml }}</div>
-                <div [innerHTML]="unit.limit.damageHtml"></div>
+
+                <div *ngIf="unit.limit.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (unit.limit.based === 'physic' ? '100% ATK' : (unit.limit.based === 'magic' ? '100% MAG' : (unit.limit.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="unit.limit.damage.formula[1] > 0">{{ unit.limit.damage.formula[1] }}% DEX</div>
+                    <div *ngIf="unit.limit.damage.formula[2] > 0">{{ unit.limit.damage.formula[2] }}% AGI</div>
+                    <div *ngIf="unit.limit.damage.formula[3] > 0">{{ unit.limit.damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ unit.limit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.limit.damageHtml.type.image }}.png" />&nbsp; {{ unit.limit.damageHtml.effType }} {{ unit.limit.damageHtml.pool }} {{ unit.limit.damageHtml.value }}
+                  <div [innerHTML]="unit.limit.damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of unit.limit.effects">
                   {{ effect.formatHtml }}
                 </div>

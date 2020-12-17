@@ -188,7 +188,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -237,7 +238,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "ABSORB"
+              "effType": "ABSORB",
+              "formula": {}
             },
             "minLevel": 61
           },
@@ -274,7 +276,8 @@
               "minValue": 20,
               "maxValue": 50,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 61
           },
@@ -311,7 +314,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -539,7 +543,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -628,7 +633,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "ABSORB"
+              "effType": "ABSORB",
+              "formula": {}
             },
             "minLevel": 61
           },
@@ -665,7 +671,8 @@
               "minValue": 20,
               "maxValue": 50,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 61
           }
@@ -682,7 +689,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -938,7 +946,8 @@
               "minValue": 10,
               "maxValue": 40,
               "type": "missile",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -987,7 +996,8 @@
               "minValue": 30,
               "maxValue": 80,
               "type": "missile",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -1026,7 +1036,8 @@
               "minValue": 65,
               "maxValue": 200,
               "type": "missile",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -1085,7 +1096,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "missile",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -1294,7 +1306,8 @@
               "minValue": 0,
               "maxValue": 40,
               "type": "magic",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -1331,7 +1344,8 @@
               "minValue": 20,
               "maxValue": 80,
               "type": "magic",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -1395,7 +1409,8 @@
               "minValue": 10,
               "maxValue": 200,
               "type": "magic",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -1495,7 +1510,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -1693,6 +1709,7 @@
               "maxValue": 1000,
               "type": "all",
               "effType": "DAMAGE",
+              "formula": {},
               "fixedDamage": true
             },
             "minLevel": 4
@@ -1723,6 +1740,7 @@
               "maxValue": 10000,
               "type": "all",
               "effType": "DAMAGE",
+              "formula": {},
               "fixedDamage": true
             },
             "minLevel": 4
@@ -1757,7 +1775,8 @@
               "minValue": -5,
               "maxValue": 10,
               "type": "pierce",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 4
           },
@@ -1852,7 +1871,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "pierce",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -2059,7 +2079,8 @@
               "minValue": 40,
               "maxValue": 80,
               "type": "pierce",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -2088,7 +2109,8 @@
               "minValue": 50,
               "maxValue": 80,
               "type": "strike",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -2119,7 +2141,8 @@
               "minValue": 100,
               "maxValue": 140,
               "type": "slash",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -2216,7 +2239,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -2413,7 +2437,8 @@
               "minValue": 50,
               "maxValue": 80,
               "type": "pierce",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "neutral"
@@ -2446,7 +2471,8 @@
               "minValue": 150,
               "maxValue": 180,
               "type": "pierce",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "neutral"
@@ -2487,7 +2513,8 @@
               "minValue": 50,
               "maxValue": 80,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -2617,7 +2644,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "pierce",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -2871,7 +2899,8 @@
             "damage": {
               "minValue": 0,
               "maxValue": 30,
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -2915,7 +2944,8 @@
               "minValue": 20,
               "maxValue": 80,
               "type": "strike",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "light"
@@ -2961,7 +2991,8 @@
               "minValue": 0,
               "maxValue": 40,
               "type": "magic",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "fire"
@@ -3007,7 +3038,8 @@
               "minValue": 0,
               "maxValue": 40,
               "type": "magic",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "ice"
@@ -3055,7 +3087,8 @@
             "damage": {
               "minValue": 10,
               "maxValue": 100,
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "elem": [
               "light"
@@ -3153,7 +3186,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"
@@ -3374,7 +3408,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -3403,7 +3438,8 @@
               "minValue": -5,
               "maxValue": 21,
               "type": "all",
-              "effType": "ABSORB"
+              "effType": "ABSORB",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -3440,7 +3476,8 @@
               "minValue": 20,
               "maxValue": 50,
               "type": "all",
-              "effType": "DAMAGE"
+              "effType": "DAMAGE",
+              "formula": {}
             },
             "minLevel": 1
           },
@@ -3617,7 +3654,8 @@
             "minValue": -30,
             "maxValue": -30,
             "type": "strike",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {}
           },
           "elem": [
             "neutral"

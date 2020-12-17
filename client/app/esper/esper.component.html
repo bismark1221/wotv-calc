@@ -163,7 +163,18 @@
               </td>
               <td class="skillEffectTd">
                 <div>{{ esper.skills[0].counterHtml }}</div>
-                <div [innerHTML]="esper.skills[0].damageHtml"></div>
+
+                <div *ngIf="esper.skills[0].damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div>{{ (esper.skills[0].based === 'physic' ? '100% ATK' : (esper.skills[0].based === 'magic' ? '100% MAG' : (esper.skills[0].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                    <div *ngIf="esper.skills[0].damage.formula[1] > 0">{{ esper.skills[0].damage.formula[1] }}% DEX</div>
+                    <div *ngIf="esper.skills[0].damage.formula[2] > 0">{{ esper.skills[0].damage.formula[2] }}% AGI</div>
+                    <div *ngIf="esper.skills[0].damage.formula[3] > 0">{{ esper.skills[0].damage.formula[3] }}% LUCK</div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ esper.skills[0].damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ esper.skills[0].damageHtml.type.image }}.png" />&nbsp; {{ esper.skills[0].damageHtml.effType }} {{ esper.skills[0].damageHtml.pool }} {{ esper.skills[0].damageHtml.value }}
+                  <div [innerHTML]="esper.skills[0].damageHtml.others | safeHtml"></div>
+                </div>
+
                 <div *ngFor="let effect of esper.skills[0].effects">
                   {{ effect.formatHtml }}
                 </div>

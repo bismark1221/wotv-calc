@@ -201,7 +201,18 @@
                   <span *ngIf="boss.attack.based"><img title="{{ boss.attack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.attack.based + '.png'}}" /></span>
                 </td>
                 <td class="skillEffectTd">
-                  <div [innerHTML]="boss.attack.damageHtml"></div>
+
+                  <div *ngIf="boss.attack.damageHtml.value">
+                    <ng-template #tip_damage>
+                      <div>{{ (boss.attack.based === 'physic' ? '100% ATK' : (boss.attack.based === 'magic' ? '100% MAG' : (boss.attack.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                      <div *ngIf="boss.attack.damage.formula[1] > 0">{{ boss.attack.damage.formula[1] }}% DEX</div>
+                      <div *ngIf="boss.attack.damage.formula[2] > 0">{{ boss.attack.damage.formula[2] }}% AGI</div>
+                      <div *ngIf="boss.attack.damage.formula[3] > 0">{{ boss.attack.damage.formula[3] }}% LUCK</div>
+                    </ng-template>
+                    <img [ngbTooltip]="tip_damage" title="{{ boss.attack.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ boss.attack.damageHtml.type.image }}.png" />&nbsp; {{ boss.attack.damageHtml.effType }} {{ boss.attack.damageHtml.pool }} {{ boss.attack.damageHtml.value }}
+                    <div [innerHTML]="boss.attack.damageHtml.others | safeHtml"></div>
+                  </div>
+
                   <div *ngFor="let effect of boss.attack.effects">
                     {{ effect.formatHtml }}
                   </div>
@@ -257,7 +268,18 @@
                 <td>{{ boss.skills[skillId].name }}</td>
                 <td class="skillEffectTd">
                   <div>{{ boss.skills[skillId].counterHtml }}</div>
-                  <div [innerHTML]="boss.skills[skillId].damageHtml"></div>
+
+                  <div *ngIf="boss.skills[skillId].damageHtml.value">
+                    <ng-template #tip_damage>
+                      <div>{{ (boss.skills[skillId].based === 'physic' ? '100% ATK' : (boss.skills[skillId].based === 'magic' ? '100% MAG' : (boss.skills[skillId].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                      <div *ngIf="boss.skills[skillId].damage.formula[1] > 0">{{ boss.skills[skillId].damage.formula[1] }}% DEX</div>
+                      <div *ngIf="boss.skills[skillId].damage.formula[2] > 0">{{ boss.skills[skillId].damage.formula[2] }}% AGI</div>
+                      <div *ngIf="boss.skills[skillId].damage.formula[3] > 0">{{ boss.skills[skillId].damage.formula[3] }}% LUCK</div>
+                    </ng-template>
+                    <img [ngbTooltip]="tip_damage" title="{{ boss.skills[skillId].damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ boss.skills[skillId].damageHtml.type.image }}.png" />&nbsp; {{ boss.skills[skillId].damageHtml.effType }} {{ boss.skills[skillId].damageHtml.pool }} {{ boss.skills[skillId].damageHtml.value }}
+                    <div [innerHTML]="boss.skills[skillId].damageHtml.others | safeHtml"></div>
+                  </div>
+
                   <div *ngFor="let effect of boss.skills[skillId].effects">
                     {{ effect.formatHtml }}
                   </div>

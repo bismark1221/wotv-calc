@@ -6111,7 +6111,10 @@
             "minValue": 35,
             "maxValue": 70,
             "type": "slash",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 20
+            }
           }
         },
         "awake": null,
@@ -7102,7 +7105,12 @@
             "minValue": 30,
             "maxValue": 65,
             "type": "magic",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 15,
+              "2": 10,
+              "3": 5
+            }
           }
         },
         "awake": null,

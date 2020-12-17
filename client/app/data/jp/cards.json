@@ -8869,7 +8869,11 @@
             "minValue": 120,
             "maxValue": 160,
             "type": "magic",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 5,
+              "3": 15
+            }
           },
           "elem": [
             "neutral"
@@ -9492,7 +9496,12 @@
             "minValue": 60,
             "maxValue": 95,
             "type": "slash",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 25,
+              "2": 10,
+              "3": 10
+            }
           }
         },
         "awake": null,
@@ -9856,7 +9865,12 @@
             "minValue": -5,
             "maxValue": 21,
             "type": "magic",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 15,
+              "2": 10,
+              "3": 5
+            }
           },
           "elem": [
             "neutral"
@@ -10566,7 +10580,10 @@
             "minValue": 35,
             "maxValue": 70,
             "type": "slash",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 20
+            }
           }
         },
         "awake": null,
@@ -10926,7 +10943,12 @@
             "minValue": -5,
             "maxValue": 21,
             "type": "pierce",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 20,
+              "2": 10,
+              "3": 15
+            }
           }
         },
         "awake": null,
@@ -12250,7 +12272,10 @@
             "minValue": 100,
             "maxValue": 140,
             "type": "slash",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 20
+            }
           }
         },
         "awake": null,
@@ -12647,7 +12672,12 @@
             "minValue": 30,
             "maxValue": 65,
             "type": "magic",
-            "effType": "DAMAGE"
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 15,
+              "2": 10,
+              "3": 5
+            }
           }
         },
         "awake": null,

@@ -119,7 +119,18 @@
           </td>
           <td class="skillEffectTd">
             <div>{{ buff.classic.counterHtml }}</div>
-            <div [innerHTML]="buff.classic.damageHtml"></div>
+
+            <div *ngIf="buff.classic.damageHtml.value">
+              <ng-template #tip_damage>
+                <div>{{ (buff.classic.based === 'physic' ? '100% ATK' : (buff.classic.based === 'magic' ? '100% MAG' : (buff.classic.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
+                <div *ngIf="buff.classic.damage.formula[1] > 0">{{ buff.classic.damage.formula[1] }}% DEX</div>
+                <div *ngIf="buff.classic.damage.formula[2] > 0">{{ buff.classic.damage.formula[2] }}% AGI</div>
+                <div *ngIf="buff.classic.damage.formula[3] > 0">{{ buff.classic.damage.formula[3] }}% LUCK</div>
+              </ng-template>
+              <img [ngbTooltip]="tip_damage" title="{{ buff.classic.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ buff.classic.damageHtml.type.image }}.png" />&nbsp; {{ buff.classic.damageHtml.effType }} {{ buff.classic.damageHtml.pool }} {{ buff.classic.damageHtml.value }}
+              <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
+            </div>
+
             <div *ngFor="let effect of buff.classic.effects">
               {{ effect.formatHtml }}
             </div>

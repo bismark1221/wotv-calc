@@ -2100,7 +2100,6 @@ export class JsonService {
       });
     }
 
-
     if (((typeof(dataSkill.eff_val) === 'number' && dataSkill.eff_val !== 0)
       || (typeof(dataSkill.eff_val1) === 'number' && dataSkill.eff_val1 !== 0))
       && dataSkill.eff_type !== 10
@@ -2110,7 +2109,8 @@ export class JsonService {
         maxValue: dataSkill.eff_val1,
         type: this.damageTypes[dataSkill.atk_det],
         pool: this.damagePool[dataSkill.eff_dst],
-        effType: this.damageEffectType[dataSkill.eff_type]
+        effType: this.damageEffectType[dataSkill.eff_type],
+        formula: {}
       };
 
       if (dataSkill.atk_rev && dataSkill.atk_rev === 1) {
@@ -2126,6 +2126,18 @@ export class JsonService {
         dataSkill.elem.forEach(elem => {
           skill.elem.push(this.elements[elem]);
         });
+      }
+
+      if (dataSkill.atk_formula_t1 > 0) {
+        skill.damage.formula[1] = dataSkill.atk_formula_t1;
+      }
+
+      if (dataSkill.atk_formula_t2 > 0) {
+        skill.damage.formula[2] = dataSkill.atk_formula_t2;
+      }
+
+      if (dataSkill.atk_formula_t3 > 0) {
+        skill.damage.formula[3] = dataSkill.atk_formula_t3;
       }
     }
 

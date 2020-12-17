@@ -1037,13 +1037,29 @@ export class SkillService {
   }
 
   formatDamage(unit, skill, damage) {
-    let html = '';
+    let formattedDamage = {
+      type: {
+        title: null,
+        image: null
+      },
+      effType: null,
+      pool: null,
+      value: null,
+      others : ''
+    };
+
 
     if (skill.damage) {
       if (damage.type) {
+        //html = html + '<ng-template #tip_damage><div>' + (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : '50% ATK + 50% MAG')) + '</div><br />' + (skill.damage.formula[1] > 0 ? ('<div>' + skill.damage.formula[1] + '% DEX</div><br />') : '') + (skill.damage.formula[2] > 0 ? ('<div>' + skill.damage.formula[2] + '% AGI</div><br />') : '') + (skill.damage.formula[3] > 0 ? ('<div>' + skill.damage.formula[3] + '% LUCK</div><br />') : '') + '</ng-template>';
+
         const elem = skill.elem ? skill.elem : (unit.element ? unit.element : 'neutral');
         const image = elem + '_' + damage.type.toLowerCase();
-        html = html + '<img title=\'' + elem + ' ' + damage.type.toLowerCase() + '\' class=\'damageSkillImg\' src=\'assets/damage/' + image + '.png\' />&nbsp;';
+
+        formattedDamage.type.title = elem + ' ' + damage.type.toLowerCase();
+        formattedDamage.type.image = image;
+
+        //html = html + '<img [ngbTooltip]="tip_damage" title=\'' + elem + ' ' + damage.type.toLowerCase() + '\' class=\'damageSkillImg\' src=\'assets/damage/' + image + '.png\' />&nbsp;';
       }
 
       const pool = damage.pool && damage.pool !== 'HP' ? ' ' + damage.pool + ' ' : '';
@@ -1059,40 +1075,42 @@ export class SkillService {
         }
       }
 
-      html = html + this.upperCaseFirst((damage.effType && !hasModifyAbsorb ? this.upperCaseFirst(damage.effType.toLowerCase()) + ' ' : 'Damage')
-      + (pool === '' && damage.effType === 'ABSORB' && !hasModifyAbsorb ? ' HP ' : pool)
-      + this.getDamageValue(skill, damage));
+      formattedDamage.effType = this.upperCaseFirst((damage.effType && !hasModifyAbsorb ? this.upperCaseFirst(damage.effType.toLowerCase()) + ' ' : 'Damage'));
+      formattedDamage.pool = pool === '' && damage.effType === 'ABSORB' && !hasModifyAbsorb ? ' HP ' : pool;
+      formattedDamage.value = this.getDamageValue(skill, damage);
+
+      //html = html + this.upperCaseFirst((damage.effType && !hasModifyAbsorb ? this.upperCaseFirst(damage.effType.toLowerCase()) + ' ' : 'Damage')+ (pool === '' && damage.effType === 'ABSORB' && !hasModifyAbsorb ? ' HP ' : pool)+ this.getDamageValue(skill, damage));
     }
 
     if (skill.hit) {
-      html += (html !== '' ? '<br />' : '') + (skill.hit > 0 ? '+' : '') + skill.hit + '% hit chance';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + (skill.hit > 0 ? '+' : '') + skill.hit + '% hit chance';
     }
 
     if (skill.crt_hit) {
-      html += (html !== '' ? '<br />' : '') + 'Critic chance ' + skill.crt_hit + '%';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Critic chance ' + skill.crt_hit + '%';
     }
 
     if (skill.pierce) {
-      html += (html !== '' ? '<br />' : '') + 'Piercing';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Piercing';
     }
 
     if (skill.ctbreak) {
-      html += (html !== '' ? '<br />' : '') + 'Cancel Ability Activation';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Cancel Ability Activation';
     }
 
     if (skill.knockback) {
-      html += (html !== '' ? '<br />' : '') + skill.knockback.rate + '% chance to Knockback target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + skill.knockback.rate + '% chance to Knockback target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
     }
 
     if (skill.increaseDamageOnDecreaseHp) {
-      html += (html !== '' ? '<br />' : '') + 'Increase damage as HP decreases';
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Increase damage as HP decreases';
     }
 
-    if (html !== '') {
-      html = this.formatMaths(skill, html);
+    if (formattedDamage.others !== '') {
+      formattedDamage.others = this.formatMaths(skill, formattedDamage.others);
     }
 
-    return html;
+    return formattedDamage;
   }
 
   formatMaths(skill, html) {
