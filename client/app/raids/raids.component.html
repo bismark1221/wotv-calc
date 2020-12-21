@@ -36,22 +36,27 @@
           </div> -->
           <div class="sortBy">
             <span>Sort by :</span>
-            <div ngbDropdown class="d-inline-block">
-              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ sort | titlecase }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'name' === sort}" ngbDropdownItem (focus)="changeSort('name')">Name</button>
-              </div>
-            </div>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name']" [(ngModel)]="sort" (ngModelChange)="getRaids()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+            </ng-select>
           </div>
           <div class="orderBy">
             <span>Order by :</span>
-            <div ngbDropdown class="d-inline-block">
-              <button class="btn btn-outline-primary selectButton" ngbDropdownToggle>{{ order === 'asc' ? 'Ascending' : 'Descending' }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button class="selectElement" [ngClass]="{'disable': 'asc' === order}" ngbDropdownItem (focus)="changeOrder('asc')">Ascending</button>
-                <button class="selectElement" [ngClass]="{'disable': 'desc' === order}" ngbDropdownItem (focus)="changeOrder('desc')">Descending</button>
-              </div>
-            </div>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getRaids()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
           </div>
         </div>
       </div>

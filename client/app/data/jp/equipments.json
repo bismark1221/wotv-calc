@@ -49996,6 +49996,14 @@
               "calcType": "fixe",
               "turn": 1,
               "target": "allyNotSelf"
+            },
+            {
+              "type": "JUMP",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "turn": 1,
+              "target": "self"
             }
           ],
           "type": "skill",

@@ -247,17 +247,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.teamService.changeLevel(pos);
   }
 
-  selectJobLevel(pos, jobNumber, level) {
-    this.team.units[pos].jobsData[jobNumber].level = level;
+  updateJobLevel(pos, jobNumber) {
     this.teamService.changeJobLevel(pos);
-  }
-
-  getAvailableSupportNodes(unitPos, supportPos) {
-    return this.teamService.getAvailableSupportNodes(unitPos, supportPos);
-  }
-
-  getAvailableCounterNodes(pos) {
-    return this.teamService.getAvailableCounterNodes(pos);
   }
 
   maxUnit(pos) {
@@ -439,35 +430,19 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     return this.teamService.getAvailableStatType(pos);
   }
 
-  selectLevel(pos, level) {
-    this.team.units[pos].level = level;
+  updateLevel(pos) {
     this.changeLevel(pos);
-  }
-
-  // selectMasterSkillLevel(pos, level) {
-  //   this.team.units[pos].masterSkillActivated = level
-  //   this.changeLevel(pos)
-  // }
-
-  selectLimitLevel(pos, level) {
-    this.team.units[pos].limit.level = level;
   }
 
   selectSubJob(pos, jobNum) {
     this.team.units[pos].subjob = jobNum;
   }
 
-  selectSupportSkill(unitPos, supportPos, nodeId) {
-    this.team.units[unitPos].activatedSupport[supportPos] = nodeId;
+  updateSupportSkill(unitPos) {
     this.changeLevel(unitPos);
   }
 
-  selectCounterSkill(pos, nodeId) {
-    this.team.units[pos].activatedCounter = nodeId;
-  }
-
-  selectEsperResonance(pos, level) {
-    this.team.units[pos].esper.resonance = level;
+  updateEsperResonance(pos) {
     this.changeLevel(pos);
   }
 

@@ -567,14 +567,6 @@ export class UnitService {
     return this.unit.canActivateNode(node);
   }
 
-  getAvailableSupportNodes(pos) {
-    return this.unit.getAvailableSupportNodes(pos, this.nameService);
-  }
-
-  getAvailableCounterNodes() {
-    return this.unit.getAvailableCounterNodes(this.nameService);
-  }
-
   getAvailableStatType() {
     return this.unit.getAvailableStatType();
   }

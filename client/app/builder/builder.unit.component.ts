@@ -272,6 +272,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       this.loadMasterRanks();
       this.unitService.getActiveSkills();
       this.showList = false;
+
+      Object.keys(this.unit.board.nodes).forEach(nodeId => {
+        if (this.unit.board.nodes[nodeId].skill.type !== 'buff') {
+          this.unit.board.nodes[nodeId].skill.name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
+        }
+      });
     } else {
       this.unit = null;
       this.searchText = '';
@@ -342,14 +348,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   canActivateNode(node) {
     return this.unitService.canActivateNode(node);
-  }
-
-  getAvailableSupportNodes(pos) {
-    return this.unitService.getAvailableSupportNodes(pos);
-  }
-
-  getAvailableCounterNodes() {
-    return this.unitService.getAvailableCounterNodes();
   }
 
   showHideDetail(type) {
@@ -501,18 +499,15 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     return formattedAvailableStatType;
   }
 
-  selectLevel(level) {
-    this.unit.level = level;
+  updateLevel() {
     this.unitService.changeLevel();
   }
 
-  selectMasterSkillLevel(level) {
-    this.unit.masterSkillActivated = level;
+  updateMasterSkillLevel() {
     this.unitService.changeLevel();
   }
 
-  selectLimitLevel(level) {
-    this.unit.limit.level = level;
+  updateLimitLevel() {
     this.unitService.getActiveSkills();
   }
 
@@ -521,19 +516,16 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.unitService.getActiveSkills();
   }
 
-  selectSupportSkill(pos, nodeId) {
-    this.unit.activatedSupport[pos] = nodeId;
+  updateSupportSkill() {
     this.unitService.changeLevel();
     this.unitService.getActiveSkills();
   }
 
-  selectCounterSkill(nodeId) {
-    this.unit.activatedCounter = nodeId;
+  updateCounterSkill() {
     this.unitService.getActiveSkills();
   }
 
-  selectEsperResonance(level) {
-    this.unit.esper.resonance = level;
+  updateEsperResonance() {
     this.unitService.changeLevel();
   }
 

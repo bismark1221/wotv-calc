@@ -91,11 +91,16 @@
             <div>
               Level
             </div>
-            <div ngbDropdown class="dropdownDiv">
-              <button class="btn btn-select" ngbDropdownToggle>{{ unit.level }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.tableLevels" class="selectLevel" ngbDropdownItem id="selectLevel_{{unitPos}}_{{level}}" (focus)="selectLevel(unitPos, level)">{{ level }}</button>
-              </div> / {{ unit.maxLevel }}
+            <div class="zone-select-level">
+              <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="unit.tableLevels" [(ngModel)]="unit.level" (ngModelChange)="updateLevel(unitPos)" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select> / {{ unit.maxLevel }}
             </div>
           </div>
 
@@ -103,12 +108,15 @@
             <div>
               Limit Level
             </div>
-            <div ngbDropdown class="dropdownDiv">
-              <button class="btn btn-select" ngbDropdownToggle>{{ unit.limit.level }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" id= "selectLimitLevel_{{unitPos}}_{{level}}" ngbDropdownItem (focus)="selectLimitLevel(unitPos, level)">{{ level }}</button>
-              </div>
-            </div>
+            <ng-select placeholder="Select a limit level" class="select-limit-level select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [(ngModel)]="unit.limit.level" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+            </ng-select>
           </div>
 
           <div>
@@ -125,12 +133,15 @@
           <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
             <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
 
-            <div ngbDropdown class="dropdownDiv">
-              <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
-              <div ngbDropdownMenu class="selectList">
-                <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem id="selectJobLevel_{{unitPos}}_{{i}}_{{level}}" (focus)="selectJobLevel(unitPos, i, level)">{{ level }}</button>
-              </div>
-            </div>
+            <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(unitPos, i)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+            </ng-select>
           </div>
           <div class="jobsButton">
             <button class="btn btn-sub btn-left" id="resetJob_{{unitPos}}" (click)="resetJob(unitPos)">Reset Jobs</button>
@@ -210,12 +221,16 @@
             <div *ngIf="unit.esper">
               <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" id="openEspersModal_{{unitPos}}" (click)="openEspersModal(unitPos)"/>
               Reso
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ unit.esper.resonance }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" ngbDropdownItem id="selectEsperResonance_{{unitPos}}_{{level}}" (focus)="selectEsperResonance(unitPos, level)">{{ level }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select a level" class="select-resonance select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" [(ngModel)]="unit.esper.resonance" (ngModelChange)="updateEsperResonance(unitPos)" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
+
               <button class="btn btn-sub btn-esper" id="openEspersModal_{{unitPos}}_custom" (click)="openEspersModal(unitPos)">Custom</button>
             </div>
 
@@ -244,14 +259,15 @@
       </tr>
       <tr *ngFor="let i of [0, 1]">
         <td>
-          <div ngbDropdown class="dropdownFull">
-            <button class="btn btn-select" ngbDropdownToggle>
+          <ng-select placeholder="Select a skill" class="select-support select-left-builder" [items]="unit.availableSupportNodes[i]" [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="updateSupportSkill(unitPos)" [clearable]="false" [searchable]="false">
+            <ng-template ng-label-tmp let-item="item">
               {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
-            </button>
-            <div ngbDropdownMenu class="selectList selectListFull">
-              <button *ngFor="let node of getAvailableSupportNodes(unitPos, i)" class="selectLevel" ngbDropdownItem id="selectSupportSkill_{{unitPos}}_{{i}}_{{node.nodeId}}" (focus)="selectSupportSkill(unitPos, i, node.nodeId)">{{ node.name }}</button>
-            </div>
-          </div>
+            </ng-template>
+
+            <ng-template ng-option-tmp let-item="item">
+              {{ unit.board.nodes[item].skill.name }}
+            </ng-template>
+          </ng-select>
         </td>
       </tr>
       <tr>
@@ -259,14 +275,15 @@
       </tr>
       <tr>
         <td>
-          <div ngbDropdown class="dropdownFull">
-            <button class="btn btn-select" ngbDropdownToggle>
+          <ng-select placeholder="Select a skill" class="select-counter select-left-builder" [items]="unit.availableCounterNodes" [(ngModel)]="unit.activatedCounter" [clearable]="false" [searchable]="false">
+            <ng-template ng-label-tmp let-item="item">
               {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
-            </button>
-            <div ngbDropdownMenu class="selectList selectListFull">
-              <button *ngFor="let node of getAvailableCounterNodes(unitPos)" class="selectLevel" ngbDropdownItem id="selectCounterSkill_{{unitPos}}_{{node.nodeId}}" (focus)="selectCounterSkill(unitPos, node.nodeId)">{{ node.name }}</button>
-            </div>
-          </div>
+            </ng-template>
+
+            <ng-template ng-option-tmp let-item="item">
+              {{ unit.board.nodes[item].skill.name }}
+            </ng-template>
+          </ng-select>
         </td>
       </tr>
     </table>

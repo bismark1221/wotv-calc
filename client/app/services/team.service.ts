@@ -386,7 +386,7 @@ export class TeamService {
             }
             break;
           default:
-            console.log('Not manaaged condition in master skill : ' + masterSkill.dataId);
+            console.log('Not managed condition in master skill : ' + masterSkill.dataId);
             break;
         }
       }
@@ -436,14 +436,6 @@ export class TeamService {
 
   maxLevelAndJobs(pos) {
     this.team.units[pos].maxLevelAndJobs();
-  }
-
-  getAvailableSupportNodes(unitPos, supportPos) {
-    return this.team.units[unitPos].getAvailableSupportNodes(supportPos, this.nameService);
-  }
-
-  getAvailableCounterNodes(pos) {
-    return this.team.units[pos].getAvailableCounterNodes(this.nameService);
   }
 
   getAvailableStatType(pos) {

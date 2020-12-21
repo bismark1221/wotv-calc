@@ -115,7 +115,7 @@
             <td class="skillEffectTd">
               <div>{{ equipment.skills[0][0].counterHtml }}</div>
 
-              <div *ngIf="equipment.skills[0][0].damageHtml.value">
+              <div *ngIf="equipment.skills[0][0].damageHtml && equipment.skills[0][0].damageHtml.value">
                 <ng-template #tip_damage>
                   <div>{{ (equipment.skills[0][0].based === 'physic' ? '100% ATK' : (equipment.skills[0][0].based === 'magic' ? '100% MAG' : (equipment.skills[0][0].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                   <div *ngIf="equipment.skills[0][0].damage.formula[1] > 0">{{ equipment.skills[0][0].damage.formula[1] }}% DEX</div>

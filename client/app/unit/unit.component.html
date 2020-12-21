@@ -117,7 +117,7 @@
               <td class="skillEffectTd">
                 <div>{{ unit.tmr.skills[0].counterHtml }}</div>
 
-                <div *ngIf="unit.tmr.skills[0].damageHtml.value">
+                <div *ngIf="unit.tmr.skills[0].damageHtml && unit.tmr.skills[0].damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (unit.tmr.skills[0].based === 'physic' ? '100% ATK' : (unit.tmr.skills[0].based === 'magic' ? '100% MAG' : (unit.tmr.skills[0].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="unit.tmr.skills[0].damage.formula[1] > 0">{{ unit.tmr.skills[0].damage.formula[1] }}% DEX</div>
@@ -581,7 +581,7 @@
                 </div>
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -615,7 +615,7 @@
                 </div>
                 <div>{{ upgradedSkill.counterHtml }}</div>
 
-                <div *ngIf="upgradedSkill.damageHtml.value">
+                <div *ngIf="upgradedSkill.damageHtml && upgradedSkill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (upgradedSkill.based === 'physic' ? '100% ATK' : (upgradedSkill.based === 'magic' ? '100% MAG' : (upgradedSkill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="upgradedSkill.damage.formula[1] > 0">{{ upgradedSkill.damage.formula[1] }}% DEX</div>
@@ -657,7 +657,7 @@
               </td>
               <td class="skillEffectTd">
 
-                <div *ngIf="unit.attack.damageHtml.value">
+                <div *ngIf="unit.attack.damageHtml && unit.attack.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (unit.attack.based === 'physic' ? '100% ATK' : (unit.attack.based === 'magic' ? '100% MAG' : (unit.attack.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="unit.attack.damage.formula[1] > 0">{{ unit.attack.damage.formula[1] }}% DEX</div>
@@ -729,7 +729,7 @@
                 </div>
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -775,7 +775,7 @@
                 <div>Activated by : {{ upgradedSkill.activatedBy }}</div>
                 <div>{{ upgradedSkill.counterHtml }}</div>
 
-                <div *ngIf="upgradedSkill.damageHtml.value">
+                <div *ngIf="upgradedSkill.damageHtml && upgradedSkill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (upgradedSkill.based === 'physic' ? '100% ATK' : (upgradedSkill.based === 'magic' ? '100% MAG' : (upgradedSkill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="upgradedSkill.damage.formula[1] > 0">{{ upgradedSkill.damage.formula[1] }}% DEX</div>
@@ -834,7 +834,7 @@
                   {{ unit.limit.upgradeHtml }}
                 </div>
 
-                <div *ngIf="unit.limit.damageHtml.value">
+                <div *ngIf="unit.limit.damageHtml && unit.limit.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (unit.limit.based === 'physic' ? '100% ATK' : (unit.limit.based === 'magic' ? '100% MAG' : (unit.limit.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="unit.limit.damage.formula[1] > 0">{{ unit.limit.damage.formula[1] }}% DEX</div>

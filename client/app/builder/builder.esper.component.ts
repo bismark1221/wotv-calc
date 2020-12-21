@@ -211,8 +211,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     this.esperService.changeStar(this.esper);
   }
 
-  selectLevel(level) {
-    this.esper.level = level;
+  updateLevel(level) {
     this.esperService.changeLevel(this.esper);
   }
 

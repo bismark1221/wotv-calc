@@ -496,3 +496,26 @@ tr.disable {
 .damageImg, .skilImg, .damageSkillImg {
   height: 32px;
 }
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level, .select-limit-level, .select-job, .select-resonance, .select-master-skill {
+  display: inline-block;
+  width: 60px;
+}
+
+.select-limit-level {
+  margin-left: 30px;
+}
+
+.masterSkillDiv {
+  text-align: left;
+}
+
+.select-master-skill {
+  margin-left: 14px;
+  text-align: center;
+}

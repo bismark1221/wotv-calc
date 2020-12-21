@@ -164,7 +164,6 @@
 .levelDiv {
   width: 100%;
   height: 35px;
-  margin-bottom: 10px;
 }
 
 .awakeningDiv div:first-child, .levelDiv div:first-child {
@@ -268,4 +267,14 @@
 
 .buffImg {
   width: 40px
+}
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 60px;
 }

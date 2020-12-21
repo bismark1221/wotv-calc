@@ -136,8 +136,7 @@ export class ModalCardsComponent implements OnInit {
     this.formatCardBuffs();
   }
 
-  selectLevel(level) {
-    this.card.level = level;
+  updateLevel() {
     this.cardService.changeLevel(this.card);
     this.formatCardBuffs();
   }

@@ -120,7 +120,7 @@
           <td class="skillEffectTd">
             <div>{{ buff.classic.counterHtml }}</div>
 
-            <div *ngIf="buff.classic.damageHtml.value">
+            <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
               <ng-template #tip_damage>
                 <div>{{ (buff.classic.based === 'physic' ? '100% ATK' : (buff.classic.based === 'magic' ? '100% MAG' : (buff.classic.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                 <div *ngIf="buff.classic.damage.formula[1] > 0">{{ buff.classic.damage.formula[1] }}% DEX</div>

@@ -179,8 +179,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     this.formatCardBuffs();
   }
 
-  selectLevel(level) {
-    this.card.level = level;
+  updateLevel(level) {
     this.cardService.changeLevel(this.card);
     this.formatCardBuffs();
   }

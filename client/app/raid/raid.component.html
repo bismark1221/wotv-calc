@@ -202,7 +202,7 @@
                 </td>
                 <td class="skillEffectTd">
 
-                  <div *ngIf="boss.attack.damageHtml.value">
+                  <div *ngIf="boss.attack.damageHtml && boss.attack.damageHtml.value">
                     <ng-template #tip_damage>
                       <div>{{ (boss.attack.based === 'physic' ? '100% ATK' : (boss.attack.based === 'magic' ? '100% MAG' : (boss.attack.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                       <div *ngIf="boss.attack.damage.formula[1] > 0">{{ boss.attack.damage.formula[1] }}% DEX</div>
@@ -269,7 +269,7 @@
                 <td class="skillEffectTd">
                   <div>{{ boss.skills[skillId].counterHtml }}</div>
 
-                  <div *ngIf="boss.skills[skillId].damageHtml.value">
+                  <div *ngIf="boss.skills[skillId].damageHtml && boss.skills[skillId].damageHtml.value">
                     <ng-template #tip_damage>
                       <div>{{ (boss.skills[skillId].based === 'physic' ? '100% ATK' : (boss.skills[skillId].based === 'magic' ? '100% MAG' : (boss.skills[skillId].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                       <div *ngIf="boss.skills[skillId].damage.formula[1] > 0">{{ boss.skills[skillId].damage.formula[1] }}% DEX</div>

@@ -228,6 +228,9 @@ export class Unit {
     if (!onlyLevel) {
       this.updateMaxJobLevel();
     }
+
+    this.getAvailableSupportNodes();
+    this.getAvailableCounterNodes();
   }
 
   private updateMaxJobLevel() {
@@ -257,8 +260,8 @@ export class Unit {
       job.unlocked = this.star >= starToUnlock[jobIndex];
 
       if (job.unlocked) {
-        if (job.level > this.maxJobLevel) {
-          job.level = this.maxJobLevel;
+        if (job.level > this.maxJobLevel[jobIndex]) {
+          job.level = this.maxJobLevel[jobIndex];
           updated = true;
         }
       } else {
@@ -295,6 +298,8 @@ export class Unit {
     }
 
     this.calculateTotalStats();
+    this.getAvailableSupportNodes();
+    this.getAvailableCounterNodes();
   }
 
   private activateMasterSkill() {
@@ -1245,36 +1250,33 @@ export class Unit {
     return skill;
   }
 
-  getAvailableSupportNodes(pos, nameService) {
-    const nodes = [];
+  getAvailableSupportNodes() {
+    const nodes = [[], []];
 
-    Object.keys(this.board.nodes).forEach(nodeId => {
-      const node = this.board.nodes[nodeId];
-      if (node.level && node.level >= 1 && node.skill.type === 'support' && this.activatedSupport[(pos === 0 ? 1 : 0)] !== nodeId) {
-        nodes.push({
-          nodeId: nodeId.toString(),
-          name: nameService.getName(node.skill)
-        });
-      }
-    });
+    for (let i = 0; i <= 1; i++) {
+      Object.keys(this.board.nodes).forEach(nodeId => {
+        const node = this.board.nodes[nodeId];
+        if (node.level && node.level >= 1 && node.skill.type === 'support' && this.activatedSupport[(i === 0 ? 1 : 0)] !== nodeId) {
 
-    return nodes;
+          nodes[i].push(nodeId.toString());
+        }
+      });
+    }
+
+    this.availableSupportNodes = nodes;
   }
 
-  getAvailableCounterNodes(nameService) {
+  getAvailableCounterNodes() {
     const nodes = [];
 
     Object.keys(this.board.nodes).forEach(nodeId => {
       const node = this.board.nodes[nodeId];
       if (node.level && node.level >= 1 && node.skill.type === 'counter') {
-        nodes.push({
-          nodeId: nodeId.toString(),
-          name: nameService.getName(node.skill)
-        });
+        nodes.push(nodeId.toString());
       }
     });
 
-    return nodes;
+    this.availableCounterNodes = nodes;
   }
 
   private updateSupportAndCounterSkills() {

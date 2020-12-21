@@ -293,3 +293,13 @@
   height: 40px;
   margin-right: 5px;
 }
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 60px;
+}

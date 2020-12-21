@@ -64,7 +64,7 @@
               <div>
                 Upgrade
               </div>
-              <ng-select placeholder="Select an upgrade" class="select-upgrade" [items]="[0, 1, 2, 3, 4, 5]" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false">
+              <ng-select placeholder="Select an upgrade" class="select-upgrade select-left-builder" [items]="[0, 1, 2, 3, 4, 5]" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ item === 0 ? 0 : '+' + item }}
                 </ng-template>
@@ -79,7 +79,7 @@
               <div>
                 Type
               </div>
-              <ng-select placeholder="Select a grow" class="select-grow" [items]="equipment.growIds" [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()" [clearable]="false">
+              <ng-select placeholder="Select a grow" class="select-grow select-left-builder" [items]="equipment.growIds" [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()" [clearable]="false" [searchable]="false">
                 <ng-template ng-label-tmp let-item="item">
                   {{ equipment.grows[item].name }}
                 </ng-template>
@@ -168,7 +168,7 @@
           <td class="skillEffectTd">
             <div>{{ equipment.skill[0].counterHtml }}</div>
 
-            <div *ngIf="equipment.skill[0].damageHtml.value">
+            <div *ngIf="equipment.skill[0].damageHtml && equipment.skill[0].damageHtml.value">
               <ng-template #tip_damage>
                 <div>{{ (equipment.skill[0].based === 'physic' ? '100% ATK' : (equipment.skill[0].based === 'magic' ? '100% MAG' : (equipment.skill[0].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                 <div *ngIf="equipment.skill[0].damage.formula[1] > 0">{{ equipment.skill[0].damage.formula[1] }}% DEX</div>

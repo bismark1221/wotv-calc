@@ -123,11 +123,16 @@
           <div class="titleSelect">
             Level
           </div>
-          <div ngbDropdown class="dropdownDiv">
-            <button class="btn btn-select" ngbDropdownToggle>{{ esper.level }}</button>
-            <div ngbDropdownMenu class="selectList">
-              <button *ngFor="let level of esper.tableLevels" class="selectLevel" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
-            </div> / {{ esper.maxLevel }}
+          <div class="zone-select-level">
+            <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="esper.tableLevels" [(ngModel)]="esper.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item }}
+              </ng-template>
+            </ng-select> / {{ esper.maxLevel }}
           </div>
         </div>
       </div>

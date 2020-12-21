@@ -79,11 +79,16 @@
               <div>
                 Level
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ card.level }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of card.tableLevels" class="selectLevel" id="select_level_{{level}}" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
-                </div> / {{ card.maxLevel }}
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="card.tableLevels" [(ngModel)]="card.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ card.maxLevel }}
               </div>
             </div>
           </td>
@@ -200,7 +205,7 @@
           <td class="skillEffectTd">
             <div>{{ skill.counterHtml }}</div>
 
-            <div *ngIf="skill.damageHtml.value">
+            <div *ngIf="skill.damageHtml && skill.damageHtml.value">
               <ng-template #tip_damage>
                 <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                 <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>

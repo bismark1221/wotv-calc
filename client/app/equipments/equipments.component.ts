@@ -95,14 +95,4 @@ export class EquipmentsComponent implements OnInit {
 
     return false;
   }
-
-  changeSort(sort) {
-    this.sort = sort;
-    this.getEquipments();
-  }
-
-  changeOrder(order) {
-    this.order = order;
-    this.getEquipments();
-  }
 }

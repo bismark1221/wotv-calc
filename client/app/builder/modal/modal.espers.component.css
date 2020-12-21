@@ -274,3 +274,13 @@
   background-size: 40px;
   width: 40px;
 }
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level {
+  display: inline-block;
+  width: 60px;
+}

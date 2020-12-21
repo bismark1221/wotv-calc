@@ -93,11 +93,16 @@
               <div>
                 Level
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ unit.level }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.tableLevels" class="selectLevel" id="select_level_{{level}}" ngbDropdownItem (focus)="selectLevel(level)">{{ level }}</button>
-                </div> / {{ unit.maxLevel }}
+              <div class="zone-select-level">
+                <ng-select placeholder="Select a level" class="select-level select-left-builder" [items]="unit.tableLevels" [(ngModel)]="unit.level" (ngModelChange)="updateLevel()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select> / {{ unit.maxLevel }}
               </div>
             </div>
 
@@ -105,24 +110,30 @@
               <div>
                 Master Skill Level
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ unit.masterSkillActivated + 1 }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.masterSkillLevel" class="selectLevel" ngbDropdownItem id="select_masterSkill_{{level}}" (focus)="selectMasterSkillLevel(level)">{{ level + 1 }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select a level" class="select-master-skill select-left-builder" [items]="unit.masterSkillLevel" [(ngModel)]="unit.masterSkillActivated" (ngModelChange)="updateMasterSkillLevel()" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item + 1}}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item + 1 }}
+                </ng-template>
+              </ng-select>
             </div>
 
             <div class="limitDiv" *ngIf="unit.limit">
               <div>
                 Limit Level
               </div>
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle>{{ unit.limit.level }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" class="selectLevel" ngbDropdownItem id="select_limit_{{level}}" (focus)="selectLimitLevel(level)">{{ level }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select a limit level" class="select-limit-level select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" (ngModelChange)="updateLimitLevel()" [(ngModel)]="unit.limit.level" [clearable]="false" [searchable]="false">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
             </div>
 
             <div>
@@ -139,12 +150,15 @@
             <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
               <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
 
-              <div ngbDropdown class="dropdownDiv">
-                <button class="btn btn-select" ngbDropdownToggle [disabled]="!unit.jobsData[i].unlocked">{{ unit.jobsData[i].level }}</button>
-                <div ngbDropdownMenu class="selectList">
-                  <button *ngFor="let level of unit.tableJobLevels[i]" class="selectLevel" ngbDropdownItem id="selectJobLevel_{{i}}_{{level}}" (focus)="selectJobLevel(i, level)">{{ level }}</button>
-                </div>
-              </div>
+              <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(i)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
+                <ng-template ng-label-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item }}
+                </ng-template>
+              </ng-select>
             </div>
             <div class="jobsButton">
               <button class="btn btn-sub btn-left" id="reset_job" (click)="resetJob()">Reset Jobs</button>
@@ -224,12 +238,16 @@
               <div *ngIf="unit.esper">
                 <img src="{{'assets/units/' + unit.esper.image + '_m.png'}}" class="esperImg" id="openModalEsper_{{unit.esper.dataId}}" (click)="openEspersModal()"/>
                 Reso
-                <div ngbDropdown class="dropdownDiv">
-                  <button class="btn btn-select" ngbDropdownToggle>{{ unit.esper.resonance }}</button>
-                  <div ngbDropdownMenu class="selectList">
-                    <button *ngFor="let level of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="selectLevel" id="selectEsperResonance_{{level}}" ngbDropdownItem (focus)="selectEsperResonance(level)">{{ level }}</button>
-                  </div>
-                </div>
+                <ng-select placeholder="Select a level" class="select-resonance select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" [(ngModel)]="unit.esper.resonance" (ngModelChange)="updateEsperResonance()" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+
                 <button class="btn btn-sub btn-esper" id="openModalEsper_custom_{{unit.esper.dataId}}" (click)="openEspersModal()">Custom</button>
               </div>
 
@@ -258,14 +276,15 @@
         </tr>
         <tr *ngFor="let i of [0, 1]">
           <td>
-            <div ngbDropdown class="dropdownFull">
-              <button class="btn btn-select" ngbDropdownToggle>
+            <ng-select placeholder="Select a skill" class="select-support select-left-builder" [items]="unit.availableSupportNodes[i]" [(ngModel)]="unit.activatedSupport[i]" (ngModelChange)="updateSupportSkill()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
                 {{ unit.activatedSupport[i] && unit.activatedSupport[i] > 0 ? unit.board.nodes[unit.activatedSupport[i]].skill.name : "Select a skill" }}
-              </button>
-              <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableSupportNodes(i)" class="selectLevel" id="selectSupportSkill_{{i}}_{{node.nodeId}}" ngbDropdownItem (focus)="selectSupportSkill(i, node.nodeId)">{{ node.name }}</button>
-              </div>
-            </div>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ unit.board.nodes[item].skill.name }}
+              </ng-template>
+            </ng-select>
           </td>
         </tr>
         <tr>
@@ -273,14 +292,15 @@
         </tr>
         <tr>
           <td>
-            <div ngbDropdown class="dropdownFull">
-              <button class="btn btn-select" ngbDropdownToggle>
+            <ng-select placeholder="Select a skill" class="select-counter select-left-builder" [items]="unit.availableCounterNodes" [(ngModel)]="unit.activatedCounter" (ngModelChange)="updateCounterSkill()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
                 {{ unit.activatedCounter && unit.activatedCounter > 0 ? unit.board.nodes[unit.activatedCounter].skill.name : "Select a skill" }}
-              </button>
-              <div ngbDropdownMenu class="selectList selectListFull">
-                <button *ngFor="let node of getAvailableCounterNodes()" class="selectLevel" ngbDropdownItem id="selectCounterSkill_{{node.nodeId}}" (focus)="selectCounterSkill(node.nodeId)">{{ node.name }}</button>
-              </div>
-            </div>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ unit.board.nodes[item].skill.name }}
+              </ng-template>
+            </ng-select>
           </td>
         </tr>
         <tr>
@@ -487,7 +507,7 @@
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
 
-              <div *ngIf="skill.damageHtml.value">
+              <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                   <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -548,7 +568,7 @@
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
 
-              <div *ngIf="skill.damageHtml.value">
+              <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                   <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -611,7 +631,7 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -656,7 +676,7 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -701,7 +721,7 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
@@ -746,7 +766,7 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
-                <div *ngIf="skill.damageHtml.value">
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                     <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
                     <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>

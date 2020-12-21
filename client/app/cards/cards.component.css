@@ -152,3 +152,7 @@
   vertical-align: middle;
   color: var(--card-title-color);
 }
+
+.select-sort, .select-order {
+  display: inline-block;
+}

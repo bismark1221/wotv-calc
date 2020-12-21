@@ -344,3 +344,17 @@
 .btn-guild {
   width: 100%;
 }
+
+.zone-select-level {
+  display: inline-block;
+  float: right;
+}
+
+.select-level, .select-limit-level, .select-job, .select-resonance {
+  display: inline-block;
+  width: 60px;
+}
+
+.select-limit-level {
+  margin-left: 30px;
+}

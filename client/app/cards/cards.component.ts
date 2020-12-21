@@ -76,14 +76,4 @@ export class CardsComponent implements OnInit {
 
     this.getCards();
   }
-
-  changeSort(sort) {
-    this.sort = sort;
-    this.getCards();
-  }
-
-  changeOrder(order) {
-    this.order = order;
-    this.getCards();
-  }
 }

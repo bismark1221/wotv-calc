@@ -179,8 +179,7 @@ export class ModalEspersComponent implements OnInit {
     this.esperService.changeLevel(this.esper);
   }
 
-  selectLevel(level) {
-    this.esper.level = level;
+  updateLevel() {
     this.esperService.changeLevel(this.esper);
   }
 

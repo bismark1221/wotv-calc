@@ -277,8 +277,6 @@ export class UnitComponent implements OnInit {
       });
 
       this.grid = this.gridService.generateUnitGrid(this.unit, 800, this.unit.exJobs && this.unit.exJobs.length > 0);
-
-      console.log(this.unit)
     }
   }
 
