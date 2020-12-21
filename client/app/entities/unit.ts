@@ -131,6 +131,8 @@ export class Unit {
   calcCost;
   replacedSkills;
   availableStatTypes = [];
+  availableSupportNodes = [[], []];
+  availableCounterNodes = [];
 
 
   constructFromJson(unit: Unit, translateService): void {
