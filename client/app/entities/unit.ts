@@ -684,11 +684,11 @@ export class Unit {
         case 'job':
           const jobs = [];
           condition.items.forEach(job => {
-            const tableJob = job.split('_');
-            jobs.push(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2])
-          })
+            const tempJob = job.split('_');
+            jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
+          });
 
-          const tableJob = this.jobs[0].split('_')
+          const tableJob = this.jobs[0].split('_');
           if (jobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
             conditionChecked = false;
           }
