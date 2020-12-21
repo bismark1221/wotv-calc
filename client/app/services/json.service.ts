@@ -2205,8 +2205,7 @@ export class JsonService {
                         effect = {
                           type: calcType.toUpperCase(),
                           ailments: [],
-                          target: dataBuffsIndex === 0 ? skill.target : 'self',
-                          dataId: buff
+                          target: dataBuffsIndex === 0 ? skill.target : 'self'
                         };
 
                         skill.effects.push(effect);
@@ -2229,8 +2228,7 @@ export class JsonService {
                       fromImbue: false,
                       condition: null,
                       increaseMax: false,
-                      target: dataBuffsIndex === 0 ? skill.target : 'self',
-                      dataId: buff
+                      target: dataBuffsIndex === 0 ? skill.target : 'self'
                     };
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
@@ -2268,10 +2266,6 @@ export class JsonService {
 
             buffIndex++;
           }
-
-          skill.effects.forEach(effect => {
-            delete effect.dataId
-          })
         }
       });
     }
