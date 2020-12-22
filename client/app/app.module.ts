@@ -50,6 +50,7 @@ import { RaidComponent } from './raid/raid.component';
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
+import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -141,7 +142,8 @@ export function createTranslateLoader(http: HttpClient) {
     LoginComponent,
     OtherComponent,
     OtherTitlesComponent,
-    OtherIndexComponent
+    OtherIndexComponent,
+    OtherJobPlannerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

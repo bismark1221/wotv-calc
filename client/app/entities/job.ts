@@ -12,6 +12,7 @@ export class Job {
   subRate;
   equipments;
   level;
+  materials;
 
   constructFromJson(job: Job): void {
     this.dataId = job.dataId;
@@ -20,6 +21,7 @@ export class Job {
     this.image = job.image;
     this.subRate = job.subRate;
     this.equipments = job.equipments;
+    this.materials = job.materials;
   }
 
   getName(translateService: TranslateService): string {
