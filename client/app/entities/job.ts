@@ -13,6 +13,10 @@ export class Job {
   equipments;
   level;
   materials;
+  start;
+  goal;
+  maxLevel;
+  tableLevel;
 
   constructFromJson(job: Job): void {
     this.dataId = job.dataId;

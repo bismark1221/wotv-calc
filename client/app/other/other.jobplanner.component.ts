@@ -59,16 +59,32 @@ export class OtherJobPlannerComponent implements OnInit {
     }
 
     if (this.selectedUnits[pos]) {
-      this.jobbedUnits[pos] = this.unitService.getUnit(this.selectedUnits[pos]);
-      this.jobbedUnits[pos].jobsData = [];
-      this.jobbedUnits[pos].jobs.forEach(jobId => {
+      const unit = this.unitService.getUnit(this.selectedUnits[pos]);
+      unit.jobsData = [];
+      unit.jobs.forEach(jobId => {
         const job = this.jobService.getJob(jobId);
         job.name = job.getName(this.translateService);
-        job.level = 1;
-        this.jobbedUnits[pos].jobsData.push(job);
+        job.start = 1;
+        job.goal = 1;
+        job.maxLevel = 15;
+        job.tableLevel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        unit.jobsData.push(job);
       });
 
-      console.log(this.jobbedUnits[pos]);
+      if (unit.exJobs.length > 0) {
+        unit.exJobs.forEach((exJobId, jobIndex) => {
+          const exJob = this.jobService.getJob(unit.exJobs[0]);
+          unit.jobsData[jobIndex].maxLevel = 25;
+          exJob.materials.forEach((materials, matIndex) => {
+            unit.jobsData[jobIndex].materials.push(materials);
+            unit.jobsData[jobIndex].tableLevel.push(16 + matIndex);
+          });
+        });
+      }
+
+      this.jobbedUnits[pos] = unit;
+
+      console.log(unit);
 
 
 
@@ -76,5 +92,10 @@ export class OtherJobPlannerComponent implements OnInit {
       delete this.jobbedUnits[pos];
       delete this.selectedUnits[pos];
     }
+  }
+
+  changeLevel(type, pos) {
+    console.log(type);
+    console.log(pos);
   }
 }
