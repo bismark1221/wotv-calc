@@ -20,15 +20,20 @@
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inRaid}">
           {{ 'nav.raids' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/index')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inIndex}">
-          {{ 'nav.index' | translate }}
-        </a>
         <a class="nav-link" [routerLink]="[getRoute('/builder')]" (mouseover)="showBuilderNav=true; showOtherNav=false" [ngClass]="{'active': inBuilder}">
           {{ 'nav.builder' | translate }}
         </a>
-        <a class="nav-link" [routerLink]="[getRoute('/other')]" (mouseover)="showBuilderNav=false; showOtherNav=true" [ngClass]="{'active': inOther}">
-          {{ 'nav.titles' | translate }}
-        </a>
+        <div class="inlineBlock otherBlock" (mouseleave)="showOtherNav=false" (mouseover)="showBuilderNav=false; showOtherNav=true">
+          <a class="nav-link" [ngClass]="{'active': inOther || showOtherNav}">
+            OTHER
+          </a>
+          <div class="otherIndex" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/index')]" (click)="showOtherNav=false">Index</a>
+          </div>
+          <div class="otherTitles" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/titles')]" (click)="showOtherNav=false">Titles</a>
+          </div>
+        </div>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false; showOtherNav=false">&nbsp;</div>
       </li>
     </ul>

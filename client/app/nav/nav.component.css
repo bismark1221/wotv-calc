@@ -192,6 +192,34 @@
   background-color: #4e4e4e;
 }
 
+.otherBlock {
+  cursor: pointer;
+  height: 100%;
+}
+
+.otherIndex, .otherTitles {
+  position: fixed;
+  padding: 5px;
+  width: 150px;
+  background-color: var(--nav-background-main);
+  z-index: 20;
+  text-align: left;
+}
+
+.otherIndex a, .otherTitles a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.otherIndex a:hover, .otherTitles a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.otherTitles {
+  margin-top: 34px;
+}
+
 /* Theme toogle switch */
 .them {
   height: 100%;

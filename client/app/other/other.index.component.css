@@ -1,0 +1,46 @@
+th {
+  padding-right: 0;
+}
+
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.loadingBlock {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.statsTable {
+  width: 100%;
+}
+
+.unitImg {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.spanArrow {
+  width: 18px;
+  display: inline-block;
+}
+
+.fa-arrow-up, .fa-arrow-down {
+  display: none;
+}
+
+.arrowActivated {
+  display: inline-block;
+}
+
+.divTH {
+  cursor: pointer;
+}
+
+.divTH:hover .fas {
+  display: inline-block !important;
+}

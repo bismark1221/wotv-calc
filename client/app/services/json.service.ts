@@ -159,6 +159,8 @@ export class JsonService {
     masterRanksEffects: {},
     playerTitles : {},
     guildTitles : {},
+    jobsTbl: {},
+    jobsMaterials: {}
   };
 
   jp = {
@@ -197,6 +199,8 @@ export class JsonService {
     masterRanksEffects: {},
     playerTitles : {},
     guildTitles : {},
+    jobsTbl: {},
+    jobsMaterials: {}
   };
 
   jpRomaji = {};
@@ -933,6 +937,19 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/GuildsAward.json').toPromise();
   }
 
+  private GLJobLvTbl() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/JobLvTbl.json').toPromise();
+  }
+
+  private GLJobMaterialItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/JobMaterialItem.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1029,6 +1046,14 @@ export class JsonService {
 
   private JPGuildsAward() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/GuildsAward.json').toPromise();
+  }
+
+  private JPJobLvTbl() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/JobLvTbl.json').toPromise();
+  }
+
+  private JPJobMaterialItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/JobMaterialItem.json').toPromise();
   }
 
 
@@ -1160,6 +1185,12 @@ export class JsonService {
       this.TranslatePlayerAwardsDescription(),
       this.TranslateGuildAwardsName(),
       this.TranslateGuildAwardsDescription(),
+
+      this.GLJobLvTbl(),
+      this.JPJobLvTbl(),
+
+      this.GLJobMaterialItem(),
+      this.JPJobMaterialItem(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1185,6 +1216,8 @@ export class JsonService {
       this.gl.masterRanksEffects = this.formatJson(responses[50]);
       this.gl.playerTitles = this.formatJson(responses[53]);
       this.gl.guildTitles = this.formatJson(responses[54]);
+      this.gl.jobsTbl = this.formatJson(responses[61]);
+      this.gl.jobsMaterials = this.formatJson(responses[63]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1210,6 +1243,8 @@ export class JsonService {
       this.jp.masterRanksEffects = this.formatJson(responses[52]);
       this.jp.playerTitles = this.formatJson(responses[55]);
       this.jp.guildTitles = this.formatJson(responses[56]);
+      this.jp.jobsTbl = this.formatJson(responses[62]);
+      this.jp.jobsMaterials = this.formatJson(responses[64]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1361,7 +1396,8 @@ export class JsonService {
       equipments: {
         weapons: [],
         armors: []
-      }
+      },
+      materials: this.getJobMaterials(job)
     };
 
     this.getNames(this[this.version].wotvJobs[dataId], 'job', false);
@@ -1405,6 +1441,43 @@ export class JsonService {
 
       this[this.version].wotvJobs[dataId].statsModifiers.push(rankModifiers);
     });
+  }
+
+  private getJobMaterials(job) {
+    const materials = [];
+    const dataId = job.lvtbl_main;
+
+    if (this[this.version].jobsTbl[dataId] && this[this.version].jobsTbl[dataId].items) {
+      if (this.version === 'gl') {
+        this[this.version].jobsTbl[dataId].items.forEach(level => {
+          const levelMaterials = {};
+          for (let i = 1; i <= 10; i++) {
+            if (level['eq' + i]) {
+              levelMaterials[level['eq' + i].iname] = level['eq' + i].num;
+            }
+          }
+          materials.push(levelMaterials);
+        });
+      } else {
+        for (let i = 1; i <= 10; i++) {
+          if (this[this.version].jobsTbl[dataId].items['m' + i]) {
+            const materialTbl = this[this.version].jobsMaterials[this[this.version].jobsTbl[dataId].items['m' + i]];
+
+            materialTbl.items.forEach((level, levelIndex) => {
+              if (i === 1) {
+                materials.push({});
+              }
+
+              if (level['m1'].iname) {
+                materials[levelIndex][level['m1'].iname] = level['m1'].num;
+              }
+            });
+          }
+        }
+      }
+    }
+
+    return materials;
   }
 
   private addUnit(unit) {

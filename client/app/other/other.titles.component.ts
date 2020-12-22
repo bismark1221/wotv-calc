@@ -3,6 +3,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { TitleService } from '../services/title.service';
 import { NameService } from '../services/name.service';
+import { NavService } from '../services/nav.service';
 
 
 @Component({
@@ -19,7 +20,8 @@ export class OtherTitlesComponent implements OnInit {
   constructor(
     private titleService: TitleService,
     private translateService: TranslateService,
-    private nameService: NameService
+    private nameService: NameService,
+    private navService: NavService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatTitles();
@@ -27,6 +29,8 @@ export class OtherTitlesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navService.setTitle('Titles');
+
     this.titles = this.titleService.getTitles();
     this.formatTitles();
   }

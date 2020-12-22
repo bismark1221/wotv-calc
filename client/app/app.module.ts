@@ -46,10 +46,10 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
-import { ComparisonComponent } from './comparison/comparison.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
+import { OtherIndexComponent } from './other/other.index.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -139,9 +139,9 @@ export function createTranslateLoader(http: HttpClient) {
     ModalSaveComponent,
     ModalLinkComponent,
     LoginComponent,
-    ComparisonComponent,
     OtherComponent,
-    OtherTitlesComponent
+    OtherTitlesComponent,
+    OtherIndexComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
