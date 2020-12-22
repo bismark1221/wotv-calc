@@ -24,6 +24,22 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '23/12',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_DEAN'},
+          {type: 'unit', dataId: 'UN_LW_P_LATH'},
+          {type: 'unit', dataId: 'UN_LW_P_NIVL'},
+          {type: 'unit', dataId: 'UN_LW_P_TITU'},
+          {type: 'card', dataId: 'VC_LW_DEAN'},
+          {type: 'card', dataId: 'VC_LW_GRSR2'},
+          {type: 'card', dataId: 'VC_LW_SCAL'},
+          {type: 'card', dataId: 'VC_LW_TNBR'},
+          {type: 'esper', dataId: 'UN_LW_S_TNBR'},
+          {type: 'equipment', dataId: 'AF_LW_CLT_006'},
+          {type: 'equipment', dataId: 'AF_LW_MAC_009'}
+        ]
+      },
+      {
         date: '16/12',
         items: [
           {type: 'card', dataId: 'VC_LW_LUCA'},
@@ -40,17 +56,6 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_MOGL'},
           {type: 'esper', dataId: 'UN_LW_S_MOGL'},
           {type: 'card', dataId: 'VC_LW_HALL'},
-        ]
-      },
-      {
-        date: '14/10',
-        items: [
-          {type: 'unit', dataId: 'UN_FF4_P_ROSA'},
-          {type: 'unit', dataId: 'UN_FF4_P_KAIN'},
-          {type: 'card', dataId: 'VC_FF4_DMNW'},
-          {type: 'esper', dataId: 'UN_FF4_S_DMNW'},
-          {type: 'equipment', dataId: 'AF_FF4_SPE_000'},
-          {type: 'equipment', dataId: 'AF_FF4_BOW_000'}
         ]
       }
     ],

@@ -2274,6 +2274,66 @@
       "fr": "Souvenir du Dragonnier de Baron (Rouge)"
     }
   },
+  "IT_JB_MM_LW_DEAN": {
+    "dataId": "IT_JB_MM_LW_DEAN",
+    "names": {
+      "en": "Dark Knight of Remorse's Memory (Green)"
+    }
+  },
+  "IT_JB_MM_LW_DEAN_2": {
+    "dataId": "IT_JB_MM_LW_DEAN_2",
+    "names": {
+      "en": "Dark Knight of Remorse's Memory (Blue)"
+    }
+  },
+  "IT_JB_MM_LW_DEAN_3": {
+    "dataId": "IT_JB_MM_LW_DEAN_3",
+    "names": {
+      "en": "Dark Knight of Remorse's Memory (Purple)"
+    }
+  },
+  "IT_JB_MM_LW_DEAN_4": {
+    "dataId": "IT_JB_MM_LW_DEAN_4",
+    "names": {
+      "en": "Dark Knight of Remorse's Memory (Yellow)"
+    }
+  },
+  "IT_JB_MM_LW_DEAN_5": {
+    "dataId": "IT_JB_MM_LW_DEAN_5",
+    "names": {
+      "en": "Dark Knight of Remorse's Memory (Red)"
+    }
+  },
+  "IT_JB_MM_ARC": {
+    "dataId": "IT_JB_MM_ARC",
+    "names": {
+      "en": "Sniper's Memory (Green)"
+    }
+  },
+  "IT_JB_MM_ARC_2": {
+    "dataId": "IT_JB_MM_ARC_2",
+    "names": {
+      "en": "Sniper's Memory (Blue)"
+    }
+  },
+  "IT_JB_MM_ARC_3": {
+    "dataId": "IT_JB_MM_ARC_3",
+    "names": {
+      "en": "Sniper's Memory (Purple)"
+    }
+  },
+  "IT_JB_MM_ARC_4": {
+    "dataId": "IT_JB_MM_ARC_4",
+    "names": {
+      "en": "Sniper's Memory (Yellow)"
+    }
+  },
+  "IT_JB_MM_ARC_5": {
+    "dataId": "IT_JB_MM_ARC_5",
+    "names": {
+      "en": "Sniper's Memory (Red)"
+    }
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3667,6 +3727,30 @@
       "fr": "Fragment d'unité de Machalie (Hiver)"
     }
   },
+  "IT_PI_LW_LATH": {
+    "dataId": "IT_PI_LW_LATH",
+    "names": {
+      "en": "Luartha Unit Shard"
+    }
+  },
+  "IT_PI_LW_TITU": {
+    "dataId": "IT_PI_LW_TITU",
+    "names": {
+      "en": "Tyytas Unit Shard"
+    }
+  },
+  "IT_PI_LW_DEAN": {
+    "dataId": "IT_PI_LW_DEAN",
+    "names": {
+      "en": "Duane Unit Shard"
+    }
+  },
+  "IT_PI_LW_NIVL": {
+    "dataId": "IT_PI_LW_NIVL",
+    "names": {
+      "en": "Niv'Lu Unit Shard"
+    }
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -4239,6 +4323,18 @@
     "names": {
       "en": "Moogle (Winter)'s Awakening Stone (3★)",
       "fr": "Pierre d'éveil de Mog (Hiver) 3★"
+    }
+  },
+  "IT_SB_AW_TNBR_R2": {
+    "dataId": "IT_SB_AW_TNBR_R2",
+    "names": {
+      "en": "Tonberry's Awakening Stone (2★)"
+    }
+  },
+  "IT_SB_AW_TNBR_R3": {
+    "dataId": "IT_SB_AW_TNBR_R3",
+    "names": {
+      "en": "Tonberry's Awakening Stone (3★)"
     }
   },
   "IT_TICKET_STORY": {
@@ -5305,6 +5401,20 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_CLT_006": {
+    "dataId": "IT_AF_LW_CLT_006",
+    "names": {
+      "en": "Fides Lacerna Crafting Recipe"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_MAC_009": {
+    "dataId": "IT_AF_LW_MAC_009",
+    "names": {
+      "en": "Healing Mace Crafting Recipe"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5557,13 +5667,6 @@
       "fr": "Médaille d'invocation"
     }
   },
-  "IT_EC_SUMMON_12_B": {
-    "dataId": "IT_EC_SUMMON_12_B",
-    "names": {
-      "en": "IT_EC_SUMMON_12_B",
-      "fr": "IT_EC_SUMMON_12_B"
-    }
-  },
   "IT_EC_VISION": {
     "dataId": "IT_EC_VISION",
     "names": {
@@ -5632,6 +5735,12 @@
     "names": {
       "en": "Winter Festivities Medal",
       "fr": "Médaille des Fêtes hivernales"
+    }
+  },
+  "IT_EC_MEDAL_GF_A": {
+    "dataId": "IT_EC_MEDAL_GF_A",
+    "names": {
+      "en": "Global Festival Medal A"
     }
   },
   "IT_EC_FF14_1": {
@@ -5779,6 +5888,13 @@
     "names": {
       "en": "December Summon Medal A",
       "fr": "Médaille d'invocation A [Décembre]"
+    }
+  },
+  "IT_EC_SUMMON_12_B": {
+    "dataId": "IT_EC_SUMMON_12_B",
+    "names": {
+      "en": "December Summon Medal B",
+      "fr": ""
     }
   },
   "IT_EC_FFT_1": {
@@ -6292,6 +6408,36 @@
       "fr": "[Anniversaire des 6 mois] Ticket sélectionneur de 5 souvenirs de job (rouges)"
     }
   },
+  "IT_US_SE_JB_MM_05_5": {
+    "dataId": "IT_US_SE_JB_MM_05_5",
+    "names": {
+      "en": "[New Year's Greetings] Select Job Memory (Red) x5 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_MM_04_5": {
+    "dataId": "IT_US_SE_JB_MM_04_5",
+    "names": {
+      "en": "[New Year's Greetings] Select Job Memory (Yellow) x4 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_MM_03_4": {
+    "dataId": "IT_US_SE_JB_MM_03_4",
+    "names": {
+      "en": "[New Year's Greetings] Select Job Memory (Purple) x3 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_MM_02_4": {
+    "dataId": "IT_US_SE_JB_MM_02_4",
+    "names": {
+      "en": "[New Year's Greetings] Select Job Memory (Blue) x2 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_MM_01_4": {
+    "dataId": "IT_US_SE_JB_MM_01_4",
+    "names": {
+      "en": "[New Year's Greetings] Select Job Memory (Green) x1 Summon Ticket"
+    }
+  },
   "IT_US_SE_JB_05_01": {
     "dataId": "IT_US_SE_JB_05_01",
     "names": {
@@ -6327,6 +6473,36 @@
       "fr": "[Halloween] Ticket sélectionneur de 15 jades"
     }
   },
+  "IT_US_SE_JB_05_04": {
+    "dataId": "IT_US_SE_JB_05_04",
+    "names": {
+      "en": "[New Year's Greetings] Select Spinel x30 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_04_05": {
+    "dataId": "IT_US_SE_JB_04_05",
+    "names": {
+      "en": "[New Year's Greetings] Select Citrine x30 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_03_05": {
+    "dataId": "IT_US_SE_JB_03_05",
+    "names": {
+      "en": "[New Year's Greetings] Select Charoite x30 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_02_05": {
+    "dataId": "IT_US_SE_JB_02_05",
+    "names": {
+      "en": "[New Year's Greetings] Select Azurite x30 Summon Ticket"
+    }
+  },
+  "IT_US_SE_JB_01_05": {
+    "dataId": "IT_US_SE_JB_01_05",
+    "names": {
+      "en": "[New Year's Greetings] Select Jadeite x15 Summon Ticket"
+    }
+  },
   "IT_US_SE_UR_U_01": {
     "dataId": "IT_US_SE_UR_U_01",
     "names": {
@@ -6353,6 +6529,12 @@
     "names": {
       "en": "[Cyber Monday] Select Unit Summon Ticket",
       "fr": "[Cyber Monday] Ticket sélectionneur d'unité"
+    }
+  },
+  "IT_US_SE_R_UR_U_06": {
+    "dataId": "IT_US_SE_R_UR_U_06",
+    "names": {
+      "en": "[Winter Festivities Part III] Select Unit Summon Ticket"
     }
   },
   "IT_US_SE_AW-ITEM_01": {
@@ -6458,6 +6640,12 @@
     "names": {
       "en": "[Cyber Monday] Select Vision Card Summon Ticket",
       "fr": "[Cyber Monday] Ticket sélectionneur d'atout-vision"
+    }
+  },
+  "IT_US_SE_R_UR_V_GL04": {
+    "dataId": "IT_US_SE_R_UR_V_GL04",
+    "names": {
+      "en": "[Winter Festivities Part III] Select Vision Card Summon Ticket"
     }
   },
   "IT_US_SE_AW-ITEM_04": {
@@ -7076,6 +7264,30 @@
       "fr": "Fragment de l'atout-vision : Affrontement fatal"
     }
   },
+  "IT_VPI_LW_DEAN": {
+    "dataId": "IT_VPI_LW_DEAN",
+    "names": {
+      "en": "\"Irresistible Darkness\" Vision Card Shard"
+    }
+  },
+  "IT_VPI_LW_GRSR2": {
+    "dataId": "IT_VPI_LW_GRSR2",
+    "names": {
+      "en": "\"Downtime\" Vision Card Shard"
+    }
+  },
+  "IT_VPI_LW_SCAL": {
+    "dataId": "IT_VPI_LW_SCAL",
+    "names": {
+      "en": "\"Blossoms in the Dark\" Vision Card Shard"
+    }
+  },
+  "IT_VPI_LW_TNBR": {
+    "dataId": "IT_VPI_LW_TNBR",
+    "names": {
+      "en": "\"Grudge-Filled Lantern, Tonberry\" Vision Card Shard"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7440,6 +7652,18 @@
       "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_18": {
+    "dataId": "IT_US_GL_SE_VPI_18",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket"
+    }
+  },
+  "IT_US_SE_VPI_11": {
+    "dataId": "IT_US_SE_VPI_11",
+    "names": {
+      "en": "[New Year's] Select UR Vision Card Shard x75 Summon Ticket"
+    }
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -7466,6 +7690,12 @@
     "names": {
       "en": "Select FFBE UR Unit Shard x40 Summon Ticket",
       "fr": "Ticket sélectionneur de 40 fragments d'unité FFBE UR garantie"
+    }
+  },
+  "IT_US_SE_PI_16": {
+    "dataId": "IT_US_SE_PI_16",
+    "names": {
+      "en": "[New Year's] Select UR Unit Shard x80 Summon Ticket"
     }
   },
   "IT_US_SE_PI_GL00": {
@@ -7543,6 +7773,12 @@
     "names": {
       "en": "[Winter Festivities Part II] Select Secret Book of Refinement x100 Summon Ticket",
       "fr": "[Fêtes hivernales - Partie II] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
+  "IT_US_SE_AF_AW_06": {
+    "dataId": "IT_US_SE_AF_AW_06",
+    "names": {
+      "en": "Select Secret Book of Refinement x100 Summon Ticket"
     }
   },
   "IT_US_SE_AF_SUP_01": {
