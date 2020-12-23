@@ -751,6 +751,7 @@ export class JsonService {
     2: 'percent',
     3: 'resistance',
     11: 'percent',
+    20: 'decrease',
     22: 'decrease',
     30: 'percent',
     31: 'dispel',

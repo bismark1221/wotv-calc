@@ -510,7 +510,7 @@ export class SkillService {
         html = this.getChance(effect, false) + ' to revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'RERAISE' :
-        html = 'Grant auto-revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' auto-revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
       break;
       case 'PROTECT_ATK' :
         html = this.getChance(effect, false) + ' protect' + this.getValue(skill, effect, true, ' reduced physical damage') + this.getTurns(effect);
@@ -1100,7 +1100,7 @@ export class SkillService {
       formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + 'Increase damage as HP decreases';
     }
 
-    if (formattedDamage.others !== '') {
+    if (skill.maths) {
       formattedDamage.others = this.formatMaths(skill, formattedDamage.others);
     }
 
