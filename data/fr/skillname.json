@@ -3353,6 +3353,98 @@
             "value": "Bénédiction glacée"
         },
         {
+            "key": "SK_LW_DEAN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_DEAN_M_1",
+            "value": "Sortilège ténébreux"
+        },
+        {
+            "key": "SK_LW_DEAN_M_2",
+            "value": "Ténèbres"
+        },
+        {
+            "key": "SK_LW_DEAN_M_3",
+            "value": "Expiation"
+        },
+        {
+            "key": "SK_LW_DEAN_S_1",
+            "value": "Pénombre grandissante"
+        },
+        {
+            "key": "SK_LW_DEAN_S_2",
+            "value": "Manteau de ténèbres"
+        },
+        {
+            "key": "SK_LW_DEAN_S_3",
+            "value": "Mangeur d'épées"
+        },
+        {
+            "key": "SK_LW_DEAN_S_4",
+            "value": "Mangeur de sorts"
+        },
+        {
+            "key": "SK_LW_DEAN_R_1",
+            "value": "Contre-sorcellerie"
+        },
+        {
+            "key": "SK_LW_DEAN_P_1",
+            "value": "Ombre rapide"
+        },
+        {
+            "key": "SK_LW_DEAN_P_2",
+            "value": "Capuche opaque"
+        },
+        {
+            "key": "SK_LW_ARC_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_ARC_M_1",
+            "value": "Flèche ralentie"
+        },
+        {
+            "key": "SK_LW_ARC_M_2",
+            "value": "Contre-propagation"
+        },
+        {
+            "key": "SK_LW_ARC_M_3",
+            "value": "Flèche anti-barrière"
+        },
+        {
+            "key": "SK_LW_ARC_S_1_INIT",
+            "value": "Tir décomposé"
+        },
+        {
+            "key": "SK_LW_ARC_S_2_INIT",
+            "value": "Cible"
+        },
+        {
+            "key": "SK_LW_ARC_S_3",
+            "value": "Tir dans le bras"
+        },
+        {
+            "key": "SK_LW_ARC_S_4",
+            "value": "Piège paralysant"
+        },
+        {
+            "key": "SK_LW_ARC_S_5",
+            "value": "Cible partagée"
+        },
+        {
+            "key": "SK_LW_ARC_R_1",
+            "value": "Fumée de riposte"
+        },
+        {
+            "key": "SK_LW_ARC_P_1",
+            "value": "Longue portée"
+        },
+        {
+            "key": "SK_LW_ARC_P_2",
+            "value": "Sniper de haut vol"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -4749,6 +4841,18 @@
             "value": "Fléau draconique"
         },
         {
+            "key": "SK_LB_LW_LATH",
+            "value": "Tir brise-vitesse"
+        },
+        {
+            "key": "SK_LB_LW_DEAN",
+            "value": "Faux de la Mort"
+        },
+        {
+            "key": "SK_LB_LW_NIVL",
+            "value": "Pluie arachnéenne"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -4863,6 +4967,10 @@
         {
             "key": "SK_SMN_DMNW",
             "value": "Collision tellurique"
+        },
+        {
+            "key": "SK_SMN_TNBR",
+            "value": "Rancune commune"
         },
         {
             "key": "SK_US_POTION",
@@ -5337,6 +5445,22 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_LATH",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_TITU",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_DEAN",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_NIVL",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -5543,6 +5667,10 @@
         {
             "key": "SK_LW_BSW_011_5",
             "value": "Sabre carmin"
+        },
+        {
+            "key": "SK_LW_MAC_009_5",
+            "value": "Soin X"
         },
         {
             "key": "SK_FFT_SWO_002_2",
@@ -5783,6 +5911,22 @@
         {
             "key": "SK_HLM_FF4_KAIN_1_1",
             "value": "Orgueil des dragonniers"
+        },
+        {
+            "key": "SK_GUN_LW_LATH_2_1",
+            "value": ""
+        },
+        {
+            "key": "SK_SWO_LW_TITU_1_1",
+            "value": ""
+        },
+        {
+            "key": "SK_HLM_LW_DEAN_1_1",
+            "value": "Anti-magie"
+        },
+        {
+            "key": "SK_ACC_LW_NIVL_1_1",
+            "value": "Art d'enchantement ancestral"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -6693,6 +6837,50 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_DEAN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TNBR_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TNBR_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_TITN_P",
             "value": ""
         },
@@ -7310,6 +7498,114 @@
         },
         {
             "key": "SK_VC_LW_FIGHT_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_DEAN_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GRSR2_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_PAW2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_PMAX2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_P3",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_PAW3",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_GRSR2_PMAX3",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_SCAL_PVA",
+            "value": "Ruinja"
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_PAW2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_PMAX2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_P3",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_PAW3",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_SCAL_PMAX3",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TNBR_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_TNBR_PAW",
             "value": ""
         },
         {
