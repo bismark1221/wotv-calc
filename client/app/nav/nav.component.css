@@ -197,7 +197,7 @@
   height: 100%;
 }
 
-.otherIndex, .otherTitles {
+.otherIndex, .otherTitles, .otherJobPlanner {
   position: fixed;
   padding: 5px;
   width: 150px;
@@ -206,18 +206,22 @@
   text-align: left;
 }
 
-.otherIndex a, .otherTitles a {
+.otherIndex a, .otherTitles a, .otherJobPlanner a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.otherIndex a:hover, .otherTitles a:hover {
+.otherIndex a:hover, .otherTitles a:hover, .otherJobPlanner a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
 
 .otherTitles {
   margin-top: 34px;
+}
+
+.otherJobPlanner {
+  margin-top: 68px;
 }
 
 /* Theme toogle switch */

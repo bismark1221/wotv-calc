@@ -16,7 +16,8 @@ export class Job {
   start;
   goal;
   maxLevel;
-  tableLevel;
+  startTableLevel;
+  goalTableLevel;
 
   constructFromJson(job: Job): void {
     this.dataId = job.dataId;

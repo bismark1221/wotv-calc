@@ -160,7 +160,9 @@ export class JsonService {
     playerTitles : {},
     guildTitles : {},
     jobsTbl: {},
-    jobsMaterials: {}
+    jobsMaterials: {},
+    unitsMaterials: {},
+    unitClassChangeCondition: {}
   };
 
   jp = {
@@ -200,7 +202,9 @@ export class JsonService {
     playerTitles : {},
     guildTitles : {},
     jobsTbl: {},
-    jobsMaterials: {}
+    jobsMaterials: {},
+    unitsMaterials: {},
+    unitClassChangeCondition: {}
   };
 
   jpRomaji = {};
@@ -951,6 +955,24 @@ export class JsonService {
       });
   }
 
+  private GLUnitMaterialItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitMaterialItem.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private GLUnitClassChangeCondition() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitClassChangeCondition.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1055,6 +1077,14 @@ export class JsonService {
 
   private JPJobMaterialItem() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/JobMaterialItem.json').toPromise();
+  }
+
+  private JPUnitMaterialItem() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitMaterialItem.json').toPromise();
+  }
+
+  private JPUnitClassChangeCondition() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitClassChangeCondition.json').toPromise();
   }
 
 
@@ -1192,6 +1222,12 @@ export class JsonService {
 
       this.GLJobMaterialItem(),
       this.JPJobMaterialItem(),
+
+      this.GLUnitMaterialItem(),
+      this.JPUnitMaterialItem(),
+
+      this.GLUnitClassChangeCondition(),
+      this.JPUnitClassChangeCondition()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1219,6 +1255,8 @@ export class JsonService {
       this.gl.guildTitles = this.formatJson(responses[54]);
       this.gl.jobsTbl = this.formatJson(responses[61]);
       this.gl.jobsMaterials = this.formatJson(responses[63]);
+      this.gl.unitsMaterials = this.formatJson(responses[65]);
+      this.gl.unitClassChangeCondition = this.formatJson(responses[67]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1246,6 +1284,8 @@ export class JsonService {
       this.jp.guildTitles = this.formatJson(responses[56]);
       this.jp.jobsTbl = this.formatJson(responses[62]);
       this.jp.jobsMaterials = this.formatJson(responses[64]);
+      this.jp.unitsMaterials = this.formatJson(responses[66]);
+      this.jp.unitClassChangeCondition = this.formatJson(responses[68]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1475,8 +1515,34 @@ export class JsonService {
             });
           }
         }
+
+        if (this[this.version].unitClassChangeCondition[job.iname]) {
+          const materialItemId = this[this.version].unitClassChangeCondition[job.iname].material_item_id;
+          const unitMaterials = this[this.version].unitsMaterials[materialItemId];
+
+          for (let i = 1; i <= 10; i++) {
+            if (unitMaterials.items[0]['m' + i]) {
+              if (!materials[0][unitMaterials.items[0]['m' + i].iname]) {
+                materials[0][unitMaterials.items[0]['m' + i].iname] = unitMaterials.items[0]['m' + i].num;
+              } else {
+                materials[0][unitMaterials.items[0]['m' + i].iname] += unitMaterials.items[0]['m' + i].num;
+              }
+            }
+          }
+        }
       }
     }
+
+    job.ranks.forEach((rank, rankIndex) => {
+      if (rank.eqid1) {
+        const material = rank.eqid1.split(',');
+        if (!materials[rankIndex][material[0]]) {
+          materials[rankIndex][material[0]] = parseInt(material[1], 10);
+        } else {
+          materials[rankIndex][material[0]] += parseInt(material[1], 10);
+        }
+      }
+    });
 
     return materials;
   }

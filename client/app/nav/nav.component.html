@@ -33,6 +33,9 @@
           <div class="otherTitles" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/titles')]" (click)="showOtherNav=false">Titles</a>
           </div>
+          <div class="otherJobPlanner" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/jobplanner')]" (click)="showOtherNav=false">Job Planner</a>
+          </div>
         </div>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false; showOtherNav=false">&nbsp;</div>
       </li>
