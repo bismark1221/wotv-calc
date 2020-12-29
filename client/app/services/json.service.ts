@@ -1490,13 +1490,17 @@ export class JsonService {
 
     if (this[this.version].jobsTbl[dataId] && this[this.version].jobsTbl[dataId].items) {
       if (this.version === 'gl') {
-        this[this.version].jobsTbl[dataId].items.forEach(level => {
+        this[this.version].jobsTbl[dataId].items.forEach((level, levelIndex) => {
           const levelMaterials = {};
-          for (let i = 1; i <= 10; i++) {
-            if (level['eq' + i]) {
-              levelMaterials[level['eq' + i].iname] = level['eq' + i].num;
+
+          if (levelIndex !== 0) {
+            for (let i = 1; i <= 10; i++) {
+              if (level['eq' + i]) {
+                levelMaterials[level['eq' + i].iname] = level['eq' + i].num;
+              }
             }
           }
+
           materials.push(levelMaterials);
         });
       } else {
@@ -1509,8 +1513,10 @@ export class JsonService {
                 materials.push({});
               }
 
-              if (level['m1'].iname) {
-                materials[levelIndex][level['m1'].iname] = level['m1'].num;
+              if (levelIndex !== 0) {
+                if (level['m1'].iname) {
+                  materials[levelIndex][level['m1'].iname] = level['m1'].num;
+                }
               }
             });
           }
