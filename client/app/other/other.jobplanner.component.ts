@@ -100,6 +100,9 @@ export class OtherJobPlannerComponent implements OnInit {
   changeLevel(type, unitPos, jobPos) {
     const job = this.jobbedUnits[unitPos].jobsData[jobPos];
 
+    job.start = parseInt(job.start, 10);
+    job.goal = parseInt(job.goal, 10);
+
     if (type === 'start') {
       if (job.start > job.goal) {
         job.goal = job.start;

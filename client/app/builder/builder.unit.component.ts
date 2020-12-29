@@ -330,8 +330,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.unitService.getActiveSkills();
   }
 
-  selectJobLevel(jobNumber, level) {
-    this.unit.jobsData[jobNumber].level = level;
+  updateJobLevel(jobNumber) {
     this.unitService.changeJobLevel();
     this.unitService.getActiveSkills();
   }
