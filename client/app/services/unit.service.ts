@@ -29,11 +29,13 @@ export class UnitService {
   unit;
 
   private glExUnits = [
-    'UN_LW_P_FRVA'
+    'UN_LW_P_FRVA',
+    'UN_LW_P_DEAN'
   ];
 
   private limitedUnits = [
     'UN_LW_P_FRVA',
+    'UN_LW_P_DEAN',
     'UN_FF14_P_YSTL',
     'UN_FF14_P_TNCR',
     'UN_FFT_P_RAMZ',

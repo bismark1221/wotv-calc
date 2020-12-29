@@ -769,8 +769,9 @@ export class Unit {
       SPR:          [100, 20, 10],
       AGI:          [100, 40, 30],
       DEX:          [100, 50, 30],
+      LUCK:         [100, 50, 30],
       ACCURACY:     [100, 50, 30],
-      EVADE:        [100, 40, 20],
+      EVADE:        [100, 30, 20],
       CRITIC_RATE:  [100, 50, 30],
       CRITIC_AVOID: [100, 50, 30]
     };
