@@ -128,42 +128,40 @@ export class OtherJobPlannerComponent implements OnInit {
     this.jobbedUnits.forEach(unit => {
       unit.jobsData.forEach(job => {
         if (job.goal > job.start) {
-          for (let i = job.start - 1; i < job.goal; i ++) {
-            if (i !== 0) {
-              Object.keys(job.materials[i]).forEach(itemId => {
-                if (!this.materials[itemId]) {
-                  this.materials[itemId] = this.itemService.getItem(itemId);
-                  this.materials[itemId].count = job.materials[i][itemId];
-                  this.materials[itemId].image = itemId.toLowerCase();
-                  this.materials[itemId].activated = true;
+          for (let i = job.start; i < job.goal; i ++) {
+            Object.keys(job.materials[i]).forEach(itemId => {
+              if (!this.materials[itemId]) {
+                this.materials[itemId] = this.itemService.getItem(itemId);
+                this.materials[itemId].count = job.materials[i][itemId];
+                this.materials[itemId].image = itemId.toLowerCase();
+                this.materials[itemId].activated = true;
 
-                  if (this.materials[itemId].image.substring(0, 8) === 'it_jb_mm' && this.materials[itemId].image.substring(0, 12) !== 'it_jb_mm_all') {
-                    switch (this.materials[itemId].image.substring(this.materials[itemId].image.length - 2, this.materials[itemId].image.length)) {
-                      case '_2':
-                        this.materials[itemId].type = 'imgOrbBlue';
-                        break;
-                      case '_3':
-                        this.materials[itemId].type = 'imgOrbViolet';
-                        break;
-                      case '_4':
-                        this.materials[itemId].type = 'imgOrbYellow';
-                        break;
-                      case '_5':
-                        this.materials[itemId].type = 'imgOrbPink';
-                        break;
-                      default:
-                        this.materials[itemId].type = 'imgOrbGreen';
-                        break;
-                    }
-                    this.materials[itemId].image = job.image;
-                  } else {
-                    this.materials[itemId].type = 'classic';
+                if (this.materials[itemId].image.substring(0, 8) === 'it_jb_mm' && this.materials[itemId].image.substring(0, 12) !== 'it_jb_mm_all') {
+                  switch (this.materials[itemId].image.substring(this.materials[itemId].image.length - 2, this.materials[itemId].image.length)) {
+                    case '_2':
+                      this.materials[itemId].type = 'imgOrbBlue';
+                      break;
+                    case '_3':
+                      this.materials[itemId].type = 'imgOrbViolet';
+                      break;
+                    case '_4':
+                      this.materials[itemId].type = 'imgOrbYellow';
+                      break;
+                    case '_5':
+                      this.materials[itemId].type = 'imgOrbPink';
+                      break;
+                    default:
+                      this.materials[itemId].type = 'imgOrbGreen';
+                      break;
                   }
+                  this.materials[itemId].image = job.image;
                 } else {
-                  this.materials[itemId].count += job.materials[i][itemId];
+                  this.materials[itemId].type = 'classic';
                 }
-              });
-            }
+              } else {
+                this.materials[itemId].count += job.materials[i][itemId];
+              }
+            });
           }
         }
       });
