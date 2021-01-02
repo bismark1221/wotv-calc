@@ -28,7 +28,7 @@ export class UnitService {
   private units: Unit[];
   unit;
 
-  private glExUnits = [
+  private glExcluUnits = [
     'UN_LW_P_FRVA',
     'UN_LW_P_DEAN'
   ];
@@ -104,7 +104,7 @@ export class UnitService {
     if (this.navService.getVersion() === 'JP') {
       const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
       Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExUnits.indexOf(unitId) !== -1) {
+        if (this.glExcluUnits.indexOf(unitId) !== -1) {
           const unit = new Unit();
           unit.constructFromJson(rawUnits[unitId], this.translateService);
           this.units.push(unit);
@@ -172,7 +172,7 @@ export class UnitService {
     if (this.navService.getVersion() === 'JP') {
       const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
       Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExUnits.indexOf(unitId) !== -1) {
+        if (this.glExcluUnits.indexOf(unitId) !== -1) {
           const unit = new Unit();
           unit.constructFromJson(rawUnits[unitId], this.translateService);
           this.units.push(unit);
