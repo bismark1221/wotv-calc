@@ -32,11 +32,11 @@ hr {
   float: right;
 }
 
-.links a {
+.links a, .reportBug {
   color: var(----footer-link);
   text-decoration: underline;
 }
 
-.twitter, .youtube, .contact, .legal {
+.twitter, .youtube, .contact, .legal, .discord {
   padding: 5px;
 }

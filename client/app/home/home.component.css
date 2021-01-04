@@ -136,6 +136,17 @@
   color: var(--white);
 }
 
+.left_zone {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.discord_img {
+  width: 80px;
+  border-radius: 10%;
+}
+
 .right_zone {
   position: absolute;
   top: 10px;
