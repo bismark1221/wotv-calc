@@ -298,7 +298,11 @@ export class SkillService {
           html = this.getIncrease(effect) + ' HP' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
           if (effect.increaseMax) {
-            html = 'Increase max HP & restore HP raised' + this.getValue(skill, effect) + this.getTurns(effect);
+            if (effect.minValue < 0) {
+              html = 'Decrease max HP' + this.getValue(skill, effect) + this.getTurns(effect);
+            } else {
+              html = 'Increase max HP & restore HP raised' + this.getValue(skill, effect) + this.getTurns(effect);
+            }
           } else {
             html = 'Restore HP' + this.getValue(skill, effect) + this.getTurns(effect);
           }
