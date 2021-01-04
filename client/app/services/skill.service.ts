@@ -531,8 +531,8 @@ export class SkillService {
       case 'ALL_AILMENTS_ATK' :
         html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
-      case 'ALL_DEBUFFS_ATK' :
-        html = 'Dispel all debuffs' + this.getValue(skill, effect) + this.getTurns(effect);
+      case 'MASS_DISPEL' :
+        html = 'Dispel all ' + effect.calcType + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'REGEN_RES' :
         html = this.getChance(effect, false) + ' regen resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -611,9 +611,6 @@ export class SkillService {
       break;
       case 'ALL_AILMENTS_RES' :
         html = this.getChance(effect, false) + ' Poison, Blind, Sleep, Silence, Paralysis, Confusion, Petrify, Gradual Petrify, Toad, Immobilize, Disable, Berserk and Stun resistance' + this.getValue(skill, effect) + this.getTurns(effect);
-      break;
-      case 'ALL_DEBUFFS_RES' :
-        html = this.getChance(effect, false) + ' all debuffs resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'IGNORE_FATAL' :
         html = this.getChance(effect, false) + ' to ignore fatal damage' + this.getValue(skill, effect) + this.getTurns(effect);

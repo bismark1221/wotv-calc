@@ -382,7 +382,7 @@ export class JsonService {
     130: 'ON_MAGIC_ATTACK',
     134: 'KILLER',
     140: 'ALL_AILMENTS',
-    142: 'ALL_DEBUFFS',
+    142: 'MASS_DISPEL',
     144: 'IMBUE',
     148: 'GRADUAL_PETRIFY',
     151: 'INITIAL_AP',
@@ -820,8 +820,7 @@ export class JsonService {
     'SHELL',
     'FLOAT',
     'QUICKEN',
-    'ALL_AILMENTS',
-    'ALL_DEBUFFS'
+    'ALL_AILMENTS'
   ];
 
 
@@ -2376,6 +2375,17 @@ export class JsonService {
                       increaseMax: false,
                       target: dataBuffsIndex === 0 ? skill.target : 'self'
                     };
+
+                    if (type == "MASS_DISPEL") {
+                      switch (this[this.version].buffs[buff]['calc' + i]) {
+                        case 32 :
+                          addedBuff.calcType = "buffs"
+                          break;
+                        case 33 :
+                          addedBuff.calcType = "debuffs"
+                          break;
+                      }
+                    }
 
                     if (fromImbue.indexOf(this[this.version].buffs[buff].iname) !== -1) {
                       addedBuff.fromImbue = true;
