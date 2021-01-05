@@ -2376,13 +2376,13 @@ export class JsonService {
                       target: dataBuffsIndex === 0 ? skill.target : 'self'
                     };
 
-                    if (type == "MASS_DISPEL") {
+                    if (type === 'MASS_DISPEL') {
                       switch (this[this.version].buffs[buff]['calc' + i]) {
                         case 32 :
-                          addedBuff.calcType = "buffs"
+                          addedBuff.calcType = 'buffs';
                           break;
                         case 33 :
-                          addedBuff.calcType = "debuffs"
+                          addedBuff.calcType = 'debuffs';
                           break;
                       }
                     }
