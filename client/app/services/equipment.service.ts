@@ -74,6 +74,7 @@ export class EquipmentService {
     'AF_LW_CLK_001': 'RAID',
     'AF_LW_ARW_001': 'RAID',
     'AF_LW_CLT_015': 'RAID',
+    'AF_LW_CLT_016': 'RAID',
 
     'AF_LW_BSW_011': 'TOWER',
     'AF_FFT_SWO_002': 'TOWER',
@@ -125,7 +126,6 @@ export class EquipmentService {
     'AF_LW_FIS_004': 'RECURRENT',
     'AF_LW_ROD_019': 'RECURRENT',
     'AF_LW_GLO_003': 'RECURRENT',
-    'AF_LW_CLT_016': 'RECURRENT',
     'AF_LW_SWO_005': 'RECURRENT',
     'AF_LW_BOW_012': 'RECURRENT',
     'AF_LW_SPE_003': 'RECURRENT',

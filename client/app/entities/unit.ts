@@ -980,6 +980,10 @@ export class Unit {
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0;
       this.stats[stat].total += this.stats[stat].masterRanks ? this.stats[stat].masterRanks : 0;
 
+      if (stat == "HP" && this.stats[stat].total > 9999) {
+        this.stats[stat].total = 9999;
+      }
+
       if (!Number.isInteger(this.stats[stat].total)) {
         statsToRemove.push(stat);
       }
@@ -1073,6 +1077,10 @@ export class Unit {
             if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
               const oldSkill = this.board.nodes[oldNodeId].skill;
               newSkill.level = this.board.nodes[oldNodeId].level;
+              newSkill.jobLevel = oldSkill.jobLevel;
+              newSkill.unlockJob = oldSkill.unlockJob;
+              newSkill.unlockStar = oldSkill.unlockStar;
+
               this.board.nodes[oldNodeId].skill = newSkill;
             }
           });
@@ -1085,6 +1093,10 @@ export class Unit {
             if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
               const oldSkill = this.board.nodes[oldNodeId].skill;
               newSkill.level = this.board.nodes[oldNodeId].level;
+              newSkill.jobLevel = oldSkill.jobLevel;
+              newSkill.unlockJob = oldSkill.unlockJob;
+              newSkill.unlockStar = oldSkill.unlockStar;
+
               this.board.nodes[oldNodeId].skill = newSkill;
             }
           });
