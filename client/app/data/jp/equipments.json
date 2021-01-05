@@ -14473,9 +14473,9 @@
   },
   "AF_LOT_LW_BOW_004": {
     "names": {
-      "en": "キラーボウ"
+      "en": "キラーボウ - Killer Bow"
     },
-    "slug": "kir-bou",
+    "slug": "killer-bow",
     "stats": {
       "HP": {
         "min": 3,
@@ -14769,7 +14769,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_FF4_BOW_000": {
@@ -20013,9 +20016,9 @@
   },
   "AF_LOT_LW_MAC_009": {
     "names": {
-      "en": "癒しのメイス"
+      "en": "癒しのメイス - Healing Mace"
     },
-    "slug": "iyashi-no-meisu",
+    "slug": "healing-mace",
     "stats": {
       "HP": {
         "min": 8,
@@ -20535,7 +20538,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LW_AXE_000": {
@@ -28465,9 +28471,9 @@
   },
   "AF_LOT_LW_CLT_006": {
     "names": {
-      "en": "フィデースラケルナ"
+      "en": "フィデースラケルナ - Fides Lacerna"
     },
-    "slug": "fidsurakeruna",
+    "slug": "fides-lacerna",
     "stats": {
       "HP": {
         "min": 26,
@@ -28787,7 +28793,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_LW_CLT_015": {
@@ -34868,9 +34877,9 @@
   },
   "AF_LOT_FF14_ARW_001": {
     "names": {
-      "en": "ベイルガントレット"
+      "en": "ベイルガントレット - Bale Gauntlet"
     },
-    "slug": "beiru-gantoretto",
+    "slug": "bale-gauntlet",
     "stats": {
       "HP": {
         "min": 9,
@@ -47444,9 +47453,9 @@
   },
   "AF_GUN_LW_LATH_2": {
     "names": {
-      "en": "アケーディアガン"
+      "en": "アケーディアガン - Arcadia Gun"
     },
-    "slug": "akdiagan",
+    "slug": "arcadia-gun",
     "stats": {
       "HP": {
         "min": 167,
@@ -47527,9 +47536,9 @@
   },
   "AF_SWO_LW_TITU_1": {
     "names": {
-      "en": "ソードオブエイワズ"
+      "en": "ソードオブエイワズ - Sword of Ehwaz"
     },
-    "slug": "sodo-obu-ei-wazu",
+    "slug": "sword-of-ehwaz",
     "stats": {
       "HP": {
         "min": 310,
@@ -48196,9 +48205,9 @@
   },
   "AF_ACC_LW_NIVL_1": {
     "names": {
-      "en": "ヴ族のマスク"
+      "en": "ヴ族のマスク - V Clan Mask"
     },
-    "slug": "vu-zoku-no-masuku",
+    "slug": "v-clan-mask",
     "stats": {
       "HP": {
         "min": 312,
@@ -48285,9 +48294,9 @@
   },
   "AF_ROD_LW_RVAL_1": {
     "names": {
-      "en": "サイガの御杖"
+      "en": "サイガの御杖 - Staff of Saiga"
     },
-    "slug": "saiga-no-mitsue",
+    "slug": "staff-of-saiga",
     "stats": {
       "HP": {
         "min": 89,
@@ -52424,9 +52433,9 @@
   },
   "AF_LW_SHI_004": {
     "names": {
-      "en": "タイタス盾"
+      "en": "タイタス盾 - Tyytas's Shield"
     },
-    "slug": "tai-tasu-date",
+    "slug": "tyytass-shield",
     "stats": {},
     "type": "SHIELD",
     "dataId": "AF_LW_SHI_004",
@@ -52769,9 +52778,9 @@
   },
   "AF_BOW_LW_NIVL_2": {
     "names": {
-      "en": "ヴ族の強弓"
+      "en": "ヴ族の強弓 - V Clan Compound Bow"
     },
-    "slug": "vu-zoku-no-goukyuu",
+    "slug": "v-clan-compound-bow",
     "stats": {
       "HP": {
         "min": 4,

@@ -980,7 +980,9 @@ export class Unit {
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0;
       this.stats[stat].total += this.stats[stat].masterRanks ? this.stats[stat].masterRanks : 0;
 
+      // @ts-ignore
       if (stat == "HP" && this.stats[stat].total > 9999) {
+        // @ts-ignore
         this.stats[stat].total = 9999;
       }
 

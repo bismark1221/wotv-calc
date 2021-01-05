@@ -2349,6 +2349,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_MA_FF14_MV1_2",
+            "value": ""
+        },
+        {
             "key": "BUFF_MA_LW_HLNA",
             "value": ""
         },
@@ -2690,6 +2694,10 @@
         },
         {
             "key": "BUFF_MA_LW_NIVL",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_RVAL",
             "value": ""
         },
         {
@@ -3358,6 +3366,18 @@
         },
         {
             "key": "BUFF_VC_LW_TNBR_GSAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_GSAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_GSMAX",
             "value": ""
         },
         {
@@ -4322,6 +4342,18 @@
         },
         {
             "key": "BUFF_VC_LW_TNBR_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_FF14_MV3_PMAX",
             "value": ""
         },
         {
@@ -5577,6 +5609,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_ROD_LW_RVAL_1_1",
+            "value": ""
+        },
+        {
             "key": "BUFF_FFT_ACC_001_1_S",
             "value": ""
         },
@@ -6754,11 +6790,11 @@
         },
         {
             "key": "BUFF_IFRT_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_IFRT_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_IFRT_08",
@@ -6806,7 +6842,7 @@
         },
         {
             "key": "BUFF_IFRT_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_IFRT_20",
@@ -6850,11 +6886,11 @@
         },
         {
             "key": "BUFF_IFRT_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_IFRT_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_IFRT_32",
@@ -6886,11 +6922,11 @@
         },
         {
             "key": "BUFF_RAMU_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_RAMU_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_RAMU_08",
@@ -6938,7 +6974,7 @@
         },
         {
             "key": "BUFF_RAMU_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_RAMU_20",
@@ -6982,11 +7018,11 @@
         },
         {
             "key": "BUFF_RAMU_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_RAMU_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_RAMU_32",
@@ -7018,11 +7054,11 @@
         },
         {
             "key": "BUFF_SHIV_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_SHIV_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_SHIV_08",
@@ -7070,7 +7106,7 @@
         },
         {
             "key": "BUFF_SHIV_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_SHIV_20",
@@ -7114,11 +7150,11 @@
         },
         {
             "key": "BUFF_SHIV_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_SHIV_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_SHIV_32",
@@ -7150,11 +7186,11 @@
         },
         {
             "key": "BUFF_GLEM_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_GLEM_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_GLEM_08",
@@ -7202,7 +7238,7 @@
         },
         {
             "key": "BUFF_GLEM_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_GLEM_20",
@@ -7246,11 +7282,11 @@
         },
         {
             "key": "BUFF_GLEM_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_GLEM_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_GLEM_32",
@@ -7282,11 +7318,11 @@
         },
         {
             "key": "BUFF_SIRE_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_SIRE_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_SIRE_08",
@@ -7334,7 +7370,7 @@
         },
         {
             "key": "BUFF_SIRE_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_SIRE_20",
@@ -7378,11 +7414,11 @@
         },
         {
             "key": "BUFF_SIRE_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_SIRE_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_SIRE_32",
@@ -7414,11 +7450,11 @@
         },
         {
             "key": "BUFF_IGNT_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_IGNT_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_IGNT_08",
@@ -7466,7 +7502,7 @@
         },
         {
             "key": "BUFF_IGNT_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_IGNT_20",
@@ -7510,11 +7546,11 @@
         },
         {
             "key": "BUFF_IGNT_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_IGNT_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_IGNT_32",
@@ -7546,11 +7582,11 @@
         },
         {
             "key": "BUFF_ODIN_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_ODIN_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_ODIN_08",
@@ -7598,7 +7634,7 @@
         },
         {
             "key": "BUFF_ODIN_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_ODIN_20",
@@ -7642,11 +7678,11 @@
         },
         {
             "key": "BUFF_ODIN_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_ODIN_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_ODIN_32",
@@ -7678,11 +7714,11 @@
         },
         {
             "key": "BUFF_BHMT_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_BHMT_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_BHMT_08",
@@ -7730,7 +7766,7 @@
         },
         {
             "key": "BUFF_BHMT_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_BHMT_20",
@@ -7774,11 +7810,11 @@
         },
         {
             "key": "BUFF_BHMT_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_BHMT_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_BHMT_32",
@@ -7810,11 +7846,11 @@
         },
         {
             "key": "BUFF_MABR_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_MABR_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_MABR_08",
@@ -7862,7 +7898,7 @@
         },
         {
             "key": "BUFF_MABR_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_MABR_20",
@@ -7906,11 +7942,11 @@
         },
         {
             "key": "BUFF_MABR_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_MABR_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_MABR_32",
@@ -7942,11 +7978,11 @@
         },
         {
             "key": "BUFF_MOGL_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_MOGL_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_MOGL_08",
@@ -7994,7 +8030,7 @@
         },
         {
             "key": "BUFF_MOGL_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_MOGL_20",
@@ -8038,11 +8074,11 @@
         },
         {
             "key": "BUFF_MOGL_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_MOGL_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_MOGL_32",
@@ -8074,11 +8110,11 @@
         },
         {
             "key": "BUFF_LAMA_01_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_LAMA_01_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_LAMA_01_08",
@@ -8126,7 +8162,7 @@
         },
         {
             "key": "BUFF_LAMA_01_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_LAMA_01_20",
@@ -8170,11 +8206,11 @@
         },
         {
             "key": "BUFF_LAMA_01_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_LAMA_01_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_LAMA_01_32",
@@ -8338,11 +8374,11 @@
         },
         {
             "key": "BUFF_TSLP_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_TSLP_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_TSLP_08",
@@ -8390,7 +8426,7 @@
         },
         {
             "key": "BUFF_TSLP_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_TSLP_20",
@@ -8434,11 +8470,11 @@
         },
         {
             "key": "BUFF_TSLP_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_TSLP_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_TSLP_32",
@@ -8470,11 +8506,11 @@
         },
         {
             "key": "BUFF_OCHU_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_OCHU_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_OCHU_08",
@@ -8522,7 +8558,7 @@
         },
         {
             "key": "BUFF_OCHU_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_OCHU_20",
@@ -8566,11 +8602,11 @@
         },
         {
             "key": "BUFF_OCHU_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_OCHU_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_OCHU_32",
@@ -8602,11 +8638,11 @@
         },
         {
             "key": "BUFF_THDG_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_THDG_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_THDG_08",
@@ -8654,7 +8690,7 @@
         },
         {
             "key": "BUFF_THDG_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_THDG_20",
@@ -8698,11 +8734,11 @@
         },
         {
             "key": "BUFF_THDG_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_THDG_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_THDG_32",
@@ -8734,11 +8770,11 @@
         },
         {
             "key": "BUFF_WRMC_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_WRMC_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_WRMC_08",
@@ -8786,7 +8822,7 @@
         },
         {
             "key": "BUFF_WRMC_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_WRMC_20",
@@ -8830,11 +8866,11 @@
         },
         {
             "key": "BUFF_WRMC_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_WRMC_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_WRMC_32",
@@ -8866,11 +8902,11 @@
         },
         {
             "key": "BUFF_DABL_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_DABL_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_DABL_08",
@@ -8918,7 +8954,7 @@
         },
         {
             "key": "BUFF_DABL_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_DABL_20",
@@ -8962,11 +8998,11 @@
         },
         {
             "key": "BUFF_DABL_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_DABL_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_DABL_32",
@@ -8998,11 +9034,11 @@
         },
         {
             "key": "BUFF_CHCB_01_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_CHCB_01_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_CHCB_01_08",
@@ -9050,7 +9086,7 @@
         },
         {
             "key": "BUFF_CHCB_01_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_CHCB_01_20",
@@ -9094,11 +9130,11 @@
         },
         {
             "key": "BUFF_CHCB_01_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_CHCB_01_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_CHCB_01_32",
@@ -9130,11 +9166,11 @@
         },
         {
             "key": "BUFF_MDFY_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_MDFY_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_MDFY_08",
@@ -9182,7 +9218,7 @@
         },
         {
             "key": "BUFF_MDFY_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_MDFY_20",
@@ -9226,11 +9262,11 @@
         },
         {
             "key": "BUFF_MDFY_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_MDFY_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_MDFY_32",
@@ -9262,11 +9298,11 @@
         },
         {
             "key": "BUFF_FNRR_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_FNRR_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_FNRR_08",
@@ -9314,7 +9350,7 @@
         },
         {
             "key": "BUFF_FNRR_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_FNRR_20",
@@ -9358,11 +9394,11 @@
         },
         {
             "key": "BUFF_FNRR_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_FNRR_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_FNRR_32",
@@ -9394,11 +9430,11 @@
         },
         {
             "key": "BUFF_TITN_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_TITN_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_TITN_08",
@@ -9446,7 +9482,7 @@
         },
         {
             "key": "BUFF_TITN_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_TITN_20",
@@ -9490,11 +9526,11 @@
         },
         {
             "key": "BUFF_TITN_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_TITN_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_TITN_32",
@@ -9526,11 +9562,11 @@
         },
         {
             "key": "BUFF_BLMN_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_BLMN_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_BLMN_08",
@@ -9578,7 +9614,7 @@
         },
         {
             "key": "BUFF_BLMN_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_BLMN_20",
@@ -9622,11 +9658,11 @@
         },
         {
             "key": "BUFF_BLMN_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_BLMN_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_BLMN_32",
@@ -9658,11 +9694,11 @@
         },
         {
             "key": "BUFF_AGON_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_AGON_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_AGON_08",
@@ -9710,7 +9746,7 @@
         },
         {
             "key": "BUFF_AGON_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_AGON_20",
@@ -9754,11 +9790,11 @@
         },
         {
             "key": "BUFF_AGON_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_AGON_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_AGON_32",
@@ -9790,11 +9826,11 @@
         },
         {
             "key": "BUFF_CHCB_02_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_CHCB_02_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_CHCB_02_08",
@@ -9842,7 +9878,7 @@
         },
         {
             "key": "BUFF_CHCB_02_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_CHCB_02_20",
@@ -9886,11 +9922,11 @@
         },
         {
             "key": "BUFF_CHCB_02_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_CHCB_02_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_CHCB_02_32",
@@ -9922,11 +9958,11 @@
         },
         {
             "key": "BUFF_DMNW_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_DMNW_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_DMNW_08",
@@ -9974,7 +10010,7 @@
         },
         {
             "key": "BUFF_DMNW_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_DMNW_20",
@@ -10018,11 +10054,11 @@
         },
         {
             "key": "BUFF_DMNW_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_DMNW_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_DMNW_32",
@@ -10054,11 +10090,11 @@
         },
         {
             "key": "BUFF_TNBR_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_TNBR_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_TNBR_08",
@@ -10106,7 +10142,7 @@
         },
         {
             "key": "BUFF_TNBR_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_TNBR_20",
@@ -10150,11 +10186,11 @@
         },
         {
             "key": "BUFF_TNBR_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_TNBR_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_TNBR_32",
@@ -10186,11 +10222,11 @@
         },
         {
             "key": "BUFF_ARMN_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_ARMN_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_ARMN_08",
@@ -10238,7 +10274,7 @@
         },
         {
             "key": "BUFF_ARMN_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_ARMN_20",
@@ -10282,11 +10318,11 @@
         },
         {
             "key": "BUFF_ARMN_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_ARMN_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_ARMN_32",
@@ -10318,11 +10354,11 @@
         },
         {
             "key": "BUFF_ZUUU_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_ZUUU_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_ZUUU_08",
@@ -10370,7 +10406,7 @@
         },
         {
             "key": "BUFF_ZUUU_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_ZUUU_20",
@@ -10414,11 +10450,11 @@
         },
         {
             "key": "BUFF_ZUUU_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_ZUUU_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_ZUUU_32",
@@ -10450,11 +10486,11 @@
         },
         {
             "key": "BUFF_OGRE_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_OGRE_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_OGRE_08",
@@ -10502,7 +10538,7 @@
         },
         {
             "key": "BUFF_OGRE_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_OGRE_20",
@@ -10546,11 +10582,11 @@
         },
         {
             "key": "BUFF_OGRE_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_OGRE_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_OGRE_32",
@@ -10582,11 +10618,11 @@
         },
         {
             "key": "BUFF_BOMB_06",
-            "value": "Magie d'invocation niv. 2"
+            "value": "Magie d'invocation niv. 2"
         },
         {
             "key": "BUFF_BOMB_07",
-            "value": "Magie d'invocation niv. 3"
+            "value": "Magie d'invocation niv. 3"
         },
         {
             "key": "BUFF_BOMB_08",
@@ -10634,7 +10670,7 @@
         },
         {
             "key": "BUFF_BOMB_19",
-            "value": "Magie d'invocation niv. 4"
+            "value": "Magie d'invocation niv. 4"
         },
         {
             "key": "BUFF_BOMB_20",
@@ -10678,11 +10714,11 @@
         },
         {
             "key": "BUFF_BOMB_30",
-            "value": "Magie d'invocation niv. 6"
+            "value": "Magie d'invocation niv. 6"
         },
         {
             "key": "BUFF_BOMB_31",
-            "value": "Magie d'invocation niv. 10"
+            "value": "Magie d'invocation niv. 10"
         },
         {
             "key": "BUFF_BOMB_32",
@@ -11011,6 +11047,10 @@
         {
             "key": "BUFF_GVG_004",
             "value": "Attaque perçante ↑"
+        },
+        {
+            "key": "BUFF_GVG_006",
+            "value": "Attaque projectile et précision ↑"
         },
         {
             "key": "BUFF_GVG_007",
