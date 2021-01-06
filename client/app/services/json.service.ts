@@ -2257,7 +2257,9 @@ export class JsonService {
         type: this.damageTypes[dataSkill.atk_det],
         pool: this.damagePool[dataSkill.eff_dst],
         effType: this.damageEffectType[dataSkill.eff_type],
-        formula: {}
+        formula: {
+          type: dataSkill.atk_formula
+        }
       };
 
       if (dataSkill.atk_rev && dataSkill.atk_rev === 1) {

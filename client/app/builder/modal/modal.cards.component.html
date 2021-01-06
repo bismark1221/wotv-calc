@@ -246,10 +246,25 @@
 
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
-                  <div>{{ (skill.based === 'physic' ? '100% ATK' : (skill.based === 'magic' ? '100% MAG' : (skill.based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
-                  <div *ngIf="skill.damage.formula[1] > 0">{{ skill.damage.formula[1] }}% DEX</div>
-                  <div *ngIf="skill.damage.formula[2] > 0">{{ skill.damage.formula[2] }}% AGI</div>
-                  <div *ngIf="skill.damage.formula[3] > 0">{{ skill.damage.formula[3] }}% LUCK</div>
+                  <div *ngIf="skill.based === 'physic'">
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="skill.based === 'magic'">
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="skill.based === 'hybrid'">
+                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                  </div>
+
+                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                    {{ skill.damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                    {{ skill.damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                    {{ skill.damage.formula[3] }}% LUCK
+                  </div>
                 </ng-template>
                 <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
                 <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>

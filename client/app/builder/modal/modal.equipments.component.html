@@ -219,10 +219,25 @@
 
               <div *ngIf="equipment.skill[0].damageHtml && equipment.skill[0].damageHtml.value">
                 <ng-template #tip_damage>
-                  <div>{{ (equipment.skill[0].based === 'physic' ? '100% ATK' : (equipment.skill[0].based === 'magic' ? '100% MAG' : (equipment.skill[0].based === 'hybrid' ? '50% ATK + 50% MAG' : ''))) }}</div>
-                  <div *ngIf="equipment.skill[0].damage.formula[1] > 0">{{ equipment.skill[0].damage.formula[1] }}% DEX</div>
-                  <div *ngIf="equipment.skill[0].damage.formula[2] > 0">{{ equipment.skill[0].damage.formula[2] }}% AGI</div>
-                  <div *ngIf="equipment.skill[0].damage.formula[3] > 0">{{ equipment.skill[0].damage.formula[3] }}% LUCK</div>
+                  <div *ngIf="equipment.skill[0].based === 'physic'">
+                    {{ (100 + (equipment.skill[0].damage.formula.type === 1 && equipment.skill[0].damage.formula[1] > 0 ? equipment.skill[0].damage.formula[1] : 0)) + '% ATK' }}
+                  </div>
+                  <div *ngIf="equipment.skill[0].based === 'magic'">
+                    {{ (100 + (equipment.skill[0].damage.formula.type === 1 && equipment.skill[0].damage.formula[1] > 0 ? equipment.skill[0].damage.formula[1] : 0)) + '% MAG' }}
+                  </div>
+                  <div *ngIf="equipment.skill[0].based === 'hybrid'">
+                    {{ (50 + (equipment.skill[0].damage.formula.type === 1 && equipment.skill[0].damage.formula[1] > 0 ? equipment.skill[0].damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + equipment.skill[0].damage.formula.type === 1 && equipment.skill[0].damage.formula[1] > 0 ? equipment.skill[0].damage.formula[1] / 2 : 0)) + '%MAG'}}
+                  </div>
+
+                  <div *ngIf="equipment.skill[0].damage.formula.type === 0 && equipment.skill[0].damage.formula[1] > 0">
+                    {{ equipment.skill[0].damage.formula[1] }}% DEX
+                  </div>
+                  <div *ngIf="equipment.skill[0].damage.formula.type === 0 && equipment.skill[0].damage.formula[2] > 0">
+                    {{ equipment.skill[0].damage.formula[2] }}% AGI
+                  </div>
+                  <div *ngIf="equipment.skill[0].damage.formula.type === 0 && equipment.skill[0].damage.formula[3] > 0">
+                    {{ equipment.skill[0].damage.formula[3] }}% LUCK
+                  </div>
                 </ng-template>
                 <img [ngbTooltip]="tip_damage" title="{{ equipment.skill[0].damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.skill[0].damageHtml.type.image }}.png" />&nbsp; {{ equipment.skill[0].damageHtml.effType }} {{ equipment.skill[0].damageHtml.pool }} {{ equipment.skill[0].damageHtml.value }}
                 <div [innerHTML]="equipment.skill[0].damageHtml.others | safeHtml"></div>
