@@ -424,7 +424,8 @@ export class JsonService {
     325: 'RES_STRIKE_ATK_PENETRATION',
     327: 'RES_MISSILE_ATK_PENETRATION',
     329: 'RES_MAGIC_ATK_PENETRATION',
-    347: 'HEAL_POWER'
+    347: 'HEAL_POWER',
+    501: 'ABSORB_HP_ONTIME'
   };
   species = [
     '',
@@ -467,6 +468,7 @@ export class JsonService {
     112: 'REAPER',
     113: 'STONE',
     114: 'METAL',
+    115: 'MAGICAL_CREATURE',
     204: 'FENNES',
     301: 'FLOAT',
     401: 'MALES'

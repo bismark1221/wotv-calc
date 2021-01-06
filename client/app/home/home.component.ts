@@ -62,6 +62,29 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '23/12',
+        items: [
+          {type: 'unit', dataId: 'UN_NIER_P_N2TB'},
+          {type: 'unit', dataId: 'UN_NIER_P_N9TS'},
+          {type: 'card', dataId: 'VC_NIER_MV1'},
+          {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
+          {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
+          {type: 'equipment', dataId: 'AF_NIER_ACCE_000'},
+
+          {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
+          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
+          {type: 'card', dataId: 'VC_LW_PNIX'},
+          {type: 'card', dataId: 'VC_LW_MONT2'},
+          {type: 'card', dataId: 'VC_LW_LILS2'},
+          {type: 'equipment', dataId: 'AF_LW_SWO_005'},
+
+          {type: 'unit', dataId: 'UN_LW_P_GLMS'},
+          {type: 'unit', dataId: 'UN_LW_P_SIMR'},
+          {type: 'esper', dataId: 'UN_LW_S_ODIN'},
+          {type: 'esper', dataId: 'UN_LW_S_TSLP'}
+        ]
+      },
+      {
         date: '16/12',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_VKTR_01'},
@@ -82,15 +105,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_OOOO'},
           {type: 'unit', dataId: 'UN_LW_P_PHBE'},
           {type: 'esper', dataId: 'UN_LW_S_GLEM'},
-        ]
-      },
-      {
-        date: '30/11',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_VNLA_01'},
-          {type: 'unit', dataId: 'UN_LW_P_RAMD_01'},
-          {type: 'unit', dataId: 'UN_LW_P_MACR_01'},
-          {type: 'equipment', dataId: 'AF_FF10_ACCE_001'}
         ]
       }
     ]
@@ -142,6 +156,7 @@ export class HomeComponent {
 
       update.items.forEach((item, itemIndex) => {
         const dataItem = this[item.type + 'Service']['get' + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
+
         this.updatedFormatted[updateIndex].items.push({
           type: item.type,
           slug: dataItem.slug,

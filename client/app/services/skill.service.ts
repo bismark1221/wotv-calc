@@ -783,6 +783,9 @@ export class SkillService {
       case 'PLANT_KILLER' :
         html = 'Increase plant killer' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'MAGICAL_CREATURE_KILLER' :
+        html = 'Increase magical creature killer' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'FLOAT_KILLER' :
         html = 'Increase killer against unit with float' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -860,6 +863,9 @@ export class SkillService {
       break;
       case 'PLANT_KILLER_RES' :
         html = 'Increase plant killer resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'MAGICAL_CREATURE_KILLER_RES' :
+        html = 'Increase magical creature killer resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'FLOAT_KILLER_RES' :
         html = 'Increase float killer resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -941,6 +947,9 @@ export class SkillService {
       break;
       case 'AP_CONSUMPTION' :
         html = 'Decrease AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'ABSORB_HP_ONTIME' :
+        html = 'Absorb ' + this.getValue(skill, effect) + ' of the damage done' + this.getTurns(effect);
       break;
       case 'ON_MAGIC_ATTACK' :
         html = 'On magic attacks only';

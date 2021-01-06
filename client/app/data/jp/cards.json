@@ -9463,7 +9463,8 @@
               "JB_LW_MKN_FIRE",
               "JB_FF4_CECL",
               "JB_FF14_TNCR",
-              "JB_FF10_TIDU"
+              "JB_FF10_TIDU",
+              "JB_LW_MONT_01"
             ]
           }
         ]
@@ -9526,7 +9527,8 @@
               "JB_LW_MKN_FIRE",
               "JB_FF4_CECL",
               "JB_FF14_TNCR",
-              "JB_FF10_TIDU"
+              "JB_FF10_TIDU",
+              "JB_LW_MONT_01"
             ]
           }
         ]
@@ -10902,7 +10904,8 @@
               "JB_LW_LAN_FIRE",
               "JB_LW_DRG_FIRE",
               "JB_LW_GRSR",
-              "JB_FF4_KAIN"
+              "JB_FF4_KAIN",
+              "JB_NIER_N9TS"
             ]
           }
         ]
@@ -10960,7 +10963,8 @@
               "JB_LW_LAN_FIRE",
               "JB_LW_DRG_FIRE",
               "JB_LW_GRSR",
-              "JB_FF4_KAIN"
+              "JB_FF4_KAIN",
+              "JB_NIER_N9TS"
             ]
           }
         ]
@@ -12285,7 +12289,8 @@
             "type": "job",
             "items": [
               "JB_LW_SAM_FIRE",
-              "JB_LW_LSWL"
+              "JB_LW_LSWL",
+              "JB_NIER_N2TB"
             ]
           }
         ]
@@ -12689,6 +12694,987 @@
               "JB_LW_CLR_FIRE",
               "JB_LW_CAL_FIRE",
               "JB_LW_MMC_FIRE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_NIER_MV1": {
+    "dataId": "VC_NIER_MV1",
+    "names": {
+      "en": "ニーア オートマタ"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 322
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 38,
+        "max": 150
+      },
+      "DEF": {},
+      "SPR": {
+        "min": 2,
+        "max": 4
+      },
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "niermv1",
+    "slug": "na-otomata",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_MONT2": {
+    "dataId": "VC_LW_MONT2",
+    "names": {
+      "en": "獅子王モント・リオニス"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 54,
+        "max": 423
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 30,
+        "max": 116
+      },
+      "DEF": {
+        "min": 2,
+        "max": 4
+      },
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmont2",
+    "slug": "shishiou-mont-rio-nisu",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 7,
+              "maxValue": 15,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 2500,
+              "maxValue": 2500,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT2_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT2_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_PNIX": {
+    "dataId": "VC_LW_PNIX",
+    "names": {
+      "en": "炎翼神鳥　フェニックス"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 46,
+        "max": 362
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 36,
+        "max": 142
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {
+        "min": 16,
+        "max": 60
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapspnix",
+    "slug": "honoo-tsubasa-kandori-phoenix",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_ATK",
+              "minValue": 35,
+              "maxValue": 35,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_PNIX_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_PNIX_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
             ]
           }
         ]
@@ -21874,6 +22860,274 @@
             "type": "elem",
             "items": [
               "water"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_LILS2": {
+    "dataId": "VC_LW_LILS2",
+    "names": {
+      "en": "強大な壁"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 44,
+        "max": 355
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 75
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 10,
+        "max": 42
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapslils2",
+    "slug": "kyoudai-na-kabe",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_RES",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WIND_RES",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WIND_KILLER",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "rate": 200,
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WIND_KILLER",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "rate": 200,
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_GSAW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_GSAW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WIND_KILLER",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "percent",
+              "rate": 200,
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_LILS2_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LILS2_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
             ]
           }
         ]
