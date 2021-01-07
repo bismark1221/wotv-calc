@@ -3726,7 +3726,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -3747,7 +3747,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -3768,7 +3768,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -4464,7 +4464,7 @@
               "type": "BEAST_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -4486,7 +4486,7 @@
               "type": "BEAST_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -4508,7 +4508,7 @@
               "type": "BEAST_KILLER",
               "minValue": 25,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -6596,7 +6596,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -6620,7 +6620,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -6644,7 +6644,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -7015,7 +7015,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 2,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -7036,7 +7036,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -7057,7 +7057,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 2,
               "maxValue": 2,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -8619,7 +8619,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -8643,7 +8643,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -8667,7 +8667,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -14123,7 +14123,7 @@
               "type": "BEAST_KILLER",
               "minValue": 2,
               "maxValue": 7,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             },
@@ -14153,7 +14153,7 @@
               "type": "BEAST_KILLER",
               "minValue": 1,
               "maxValue": 3,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -15711,7 +15711,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
               "target": "selfSide"
@@ -15736,7 +15736,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
               "target": "selfSide"
@@ -15761,7 +15761,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
               "target": "selfSide"
@@ -16152,7 +16152,7 @@
               "type": "DEMON_KILLER",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -16173,7 +16173,7 @@
               "type": "DEMON_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -16388,7 +16388,7 @@
               "type": "AQUATIC_KILLER",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -16409,7 +16409,7 @@
               "type": "AQUATIC_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -16742,7 +16742,7 @@
               "type": "MALES_KILLER",
               "minValue": 3,
               "maxValue": 10,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -16763,7 +16763,7 @@
               "type": "MALES_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -17459,7 +17459,7 @@
               "type": "EARTH_KILLER",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             },
@@ -17489,7 +17489,7 @@
               "type": "EARTH_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -17864,7 +17864,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
               "target": "selfSide"
@@ -17889,7 +17889,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
               "target": "selfSide"
@@ -17914,7 +17914,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
               "target": "selfSide"
@@ -18067,7 +18067,7 @@
               "type": "LIGHT_KILLER",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -18088,7 +18088,7 @@
               "type": "LIGHT_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -18575,7 +18575,7 @@
               "type": "ICE_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "FIRE_ELEMENT",
               "target": "selfSide"
@@ -18597,7 +18597,7 @@
               "type": "ICE_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "FIRE_ELEMENT",
               "target": "selfSide"
@@ -18619,7 +18619,7 @@
               "type": "ICE_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "FIRE_ELEMENT",
               "target": "selfSide"
@@ -18811,7 +18811,7 @@
               "type": "DARK_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHT_ELEMENT",
               "target": "selfSide"
@@ -18833,7 +18833,7 @@
               "type": "DARK_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHT_ELEMENT",
               "target": "selfSide"
@@ -18855,7 +18855,7 @@
               "type": "DARK_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHT_ELEMENT",
               "target": "selfSide"
@@ -19047,7 +19047,7 @@
               "type": "FIRE_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -19069,7 +19069,7 @@
               "type": "FIRE_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -19091,7 +19091,7 @@
               "type": "FIRE_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -19951,7 +19951,7 @@
               "type": "ICE_KILLER",
               "minValue": 10,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -19972,7 +19972,7 @@
               "type": "ICE_KILLER",
               "minValue": 1,
               "maxValue": 5,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "selfSide"
             }
@@ -20466,7 +20466,7 @@
               "type": "DARK_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -20488,7 +20488,7 @@
               "type": "DARK_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -20510,7 +20510,7 @@
               "type": "DARK_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "DARK_ELEMENT",
               "target": "selfSide"
@@ -20936,7 +20936,7 @@
               "type": "BEAST_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -20958,7 +20958,7 @@
               "type": "BEAST_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -20980,7 +20980,7 @@
               "type": "BEAST_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WATER_ELEMENT",
               "target": "selfSide"
@@ -22483,7 +22483,7 @@
               "type": "PLANT_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "EARTH_ELEMENT",
               "target": "selfSide"
@@ -22505,7 +22505,7 @@
               "type": "PLANT_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "EARTH_ELEMENT",
               "target": "selfSide"
@@ -22527,7 +22527,7 @@
               "type": "PLANT_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "EARTH_ELEMENT",
               "target": "selfSide"
@@ -23016,7 +23016,7 @@
               "type": "WIND_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WIND_ELEMENT",
               "target": "selfSide"
@@ -23038,7 +23038,7 @@
               "type": "WIND_KILLER",
               "minValue": 0,
               "maxValue": 0,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WIND_ELEMENT",
               "target": "selfSide"
@@ -23060,7 +23060,7 @@
               "type": "WIND_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "condition": "WIND_ELEMENT",
               "target": "selfSide"
@@ -23499,7 +23499,7 @@
               "type": "AVIAN_KILLER",
               "minValue": 7,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -24247,7 +24247,7 @@
               "type": "REAPER_KILLER",
               "minValue": 8,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             },

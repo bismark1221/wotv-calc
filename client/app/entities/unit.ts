@@ -490,8 +490,10 @@ export class Unit {
 
         if (calc === 'percent') {
           this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + this.stats[type].baseTotal * value / 100;
+          return this.stats[type].baseTotal * value / 100;
         } else {
           this.stats[type][statType] = (reset ? 0 : this.stats[type][statType]) + value;
+          return value;
         }
       break;
     }
@@ -818,7 +820,12 @@ export class Unit {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
                 }
 
-                this.updateStat(effect.type, value, 'equipment' + i + '_buff', 'fixe', true);
+                const modifiedValue = this.updateStat(effect.type, value, 'equipment' + i + '_buff', effect.calcType === 'percent' ? 'percent' : 'fixe', true);
+                this.stats[effect.type]['equipment' + i + '_buff'] = Math.floor(this.stats[effect.type]['equipment' + i + '_buff']);
+
+                if (modifiedValue) {
+                  value = Math.floor(modifiedValue);
+                }
 
                 if (!this.stats[effect.type]) { // Needed for all_res, ...
                   this.stats[effect.type] = {};

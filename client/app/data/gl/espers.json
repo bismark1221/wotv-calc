@@ -504,7 +504,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -555,7 +555,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -732,7 +732,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -833,7 +833,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1010,7 +1010,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1036,7 +1036,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1112,7 +1112,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1138,7 +1138,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1264,7 +1264,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -1290,7 +1290,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2025,7 +2025,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2051,7 +2051,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2127,7 +2127,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2153,7 +2153,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2305,7 +2305,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2331,7 +2331,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2407,7 +2407,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -2433,7 +2433,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3242,7 +3242,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3368,7 +3368,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3394,7 +3394,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3520,7 +3520,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3646,7 +3646,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3672,7 +3672,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3798,7 +3798,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3824,7 +3824,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -3975,7 +3975,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 7,
                 "maxValue": 7,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -4503,7 +4503,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -4731,7 +4731,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -4832,7 +4832,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5009,7 +5009,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5035,7 +5035,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5111,7 +5111,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5137,7 +5137,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5263,7 +5263,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5289,7 +5289,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -5812,7 +5812,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6040,7 +6040,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6141,7 +6141,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6318,7 +6318,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6344,7 +6344,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6420,7 +6420,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6446,7 +6446,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6572,7 +6572,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -6598,7 +6598,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7387,7 +7387,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7538,7 +7538,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7564,7 +7564,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7665,7 +7665,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7691,7 +7691,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7817,7 +7817,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7843,7 +7843,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -7919,7 +7919,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8474,7 +8474,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8651,7 +8651,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8855,7 +8855,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8881,7 +8881,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8932,7 +8932,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -8958,7 +8958,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -9138,7 +9138,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -9164,7 +9164,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -9881,7 +9881,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -10160,7 +10160,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11124,7 +11124,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11301,7 +11301,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11505,7 +11505,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11531,7 +11531,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11582,7 +11582,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11608,7 +11608,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11788,7 +11788,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -11814,7 +11814,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12446,7 +12446,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12623,7 +12623,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12827,7 +12827,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12853,7 +12853,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12904,7 +12904,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -12930,7 +12930,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -13110,7 +13110,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -13136,7 +13136,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -13767,7 +13767,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -13944,7 +13944,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14148,7 +14148,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14174,7 +14174,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14225,7 +14225,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14251,7 +14251,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14431,7 +14431,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -14457,7 +14457,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15118,7 +15118,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15169,7 +15169,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15346,7 +15346,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15447,7 +15447,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15624,7 +15624,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15650,7 +15650,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15726,7 +15726,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15752,7 +15752,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15878,7 +15878,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -15904,7 +15904,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16463,7 +16463,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16514,7 +16514,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16691,7 +16691,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16792,7 +16792,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16969,7 +16969,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -16995,7 +16995,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17071,7 +17071,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17097,7 +17097,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17223,7 +17223,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17249,7 +17249,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17780,7 +17780,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -17831,7 +17831,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18008,7 +18008,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18109,7 +18109,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18286,7 +18286,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18312,7 +18312,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18388,7 +18388,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18414,7 +18414,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18540,7 +18540,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -18566,7 +18566,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19108,7 +19108,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19336,7 +19336,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19437,7 +19437,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 1,
                 "maxValue": 1,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19614,7 +19614,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19640,7 +19640,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19716,7 +19716,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19742,7 +19742,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19868,7 +19868,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -19894,7 +19894,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20445,7 +20445,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20496,7 +20496,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20673,7 +20673,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20774,7 +20774,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20951,7 +20951,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -20977,7 +20977,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21053,7 +21053,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21079,7 +21079,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21205,7 +21205,7 @@
                 "type": "AQUATIC_KILLER",
                 "minValue": 7,
                 "maxValue": 7,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21231,7 +21231,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 7,
                 "maxValue": 7,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21765,7 +21765,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -21993,7 +21993,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22094,7 +22094,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 1,
                 "maxValue": 1,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22271,7 +22271,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22297,7 +22297,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22373,7 +22373,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22399,7 +22399,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22525,7 +22525,7 @@
                 "type": "PLANT_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -22551,7 +22551,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23091,7 +23091,7 @@
                 "type": "DRAGON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23142,7 +23142,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23318,7 +23318,7 @@
                 "type": "DRAGON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23419,7 +23419,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23597,7 +23597,7 @@
                 "type": "DRAGON_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23623,7 +23623,7 @@
                 "type": "DRAGON_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23699,7 +23699,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23725,7 +23725,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23853,7 +23853,7 @@
                 "type": "DRAGON_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -23879,7 +23879,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -24706,7 +24706,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -24732,7 +24732,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -24808,7 +24808,7 @@
                 "type": "MACHINA_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -24834,7 +24834,7 @@
                 "type": "MACHINA_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -24985,7 +24985,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25011,7 +25011,7 @@
                 "type": "ICE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25087,7 +25087,7 @@
                 "type": "MACHINA_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25113,7 +25113,7 @@
                 "type": "MACHINA_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25766,7 +25766,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25817,7 +25817,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -25994,7 +25994,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26095,7 +26095,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26274,7 +26274,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26300,7 +26300,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26376,7 +26376,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26402,7 +26402,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26530,7 +26530,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -26556,7 +26556,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27084,7 +27084,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27312,7 +27312,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27413,7 +27413,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27590,7 +27590,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27616,7 +27616,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27692,7 +27692,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27718,7 +27718,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27844,7 +27844,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -27870,7 +27870,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -28414,7 +28414,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -28642,7 +28642,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -28743,7 +28743,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -28920,7 +28920,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -28946,7 +28946,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29022,7 +29022,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29048,7 +29048,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29174,7 +29174,7 @@
                 "type": "HUMAN_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29200,7 +29200,7 @@
                 "type": "FIRE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29768,7 +29768,7 @@
                 "type": "ESPER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29819,7 +29819,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -29996,7 +29996,7 @@
                 "type": "ESPER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30097,7 +30097,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30274,7 +30274,7 @@
                 "type": "ESPER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30300,7 +30300,7 @@
                 "type": "ESPER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30376,7 +30376,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30402,7 +30402,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30528,7 +30528,7 @@
                 "type": "ESPER_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -30554,7 +30554,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31120,7 +31120,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31297,7 +31297,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31323,7 +31323,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31349,7 +31349,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31576,7 +31576,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31602,7 +31602,7 @@
                 "type": "LIGHTNING_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31628,7 +31628,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31654,7 +31654,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -31880,7 +31880,7 @@
                 "type": "BEAST_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -32438,7 +32438,7 @@
                 "type": "FAIRY_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -32666,7 +32666,7 @@
                 "type": "FAIRY_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -32943,7 +32943,7 @@
                 "type": "FAIRY_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -32969,7 +32969,7 @@
                 "type": "FAIRY_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -33195,7 +33195,7 @@
                 "type": "FAIRY_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -33759,7 +33759,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -33810,7 +33810,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -33987,7 +33987,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34088,7 +34088,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34265,7 +34265,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34291,7 +34291,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34367,7 +34367,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 6,
                 "maxValue": 6,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34393,7 +34393,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34519,7 +34519,7 @@
                 "type": "AVIAN_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -34545,7 +34545,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 10,
                 "maxValue": 10,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35102,7 +35102,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35330,7 +35330,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35431,7 +35431,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35608,7 +35608,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35634,7 +35634,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35710,7 +35710,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35736,7 +35736,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35862,7 +35862,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -35888,7 +35888,7 @@
                 "type": "EARTH_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36604,7 +36604,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36630,7 +36630,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36706,7 +36706,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36732,7 +36732,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36883,7 +36883,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36909,7 +36909,7 @@
                 "type": "STONE_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -36985,7 +36985,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -37011,7 +37011,7 @@
                 "type": "LIGHT_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -37985,7 +37985,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38136,7 +38136,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38162,7 +38162,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38263,7 +38263,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38289,7 +38289,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38415,7 +38415,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38441,7 +38441,7 @@
                 "type": "WIND_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -38517,7 +38517,7 @@
                 "type": "DEMON_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39076,7 +39076,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39302,7 +39302,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 2,
                 "maxValue": 2,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39400,10 +39400,10 @@
             "sp": 35,
             "effects": [
               {
-                "type": "WATER_KILLER_RES",
+                "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "resistance",
+                "calcType": "fixe",
                 "target": "self"
               }
             ],
@@ -39453,7 +39453,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39479,7 +39479,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39580,7 +39580,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39606,7 +39606,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39679,10 +39679,10 @@
             "sp": 40,
             "effects": [
               {
-                "type": "WATER_KILLER_RES",
+                "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "resistance",
+                "calcType": "fixe",
                 "target": "self"
               }
             ],
@@ -39704,10 +39704,10 @@
             "sp": 50,
             "effects": [
               {
-                "type": "WATER_KILLER_RES",
+                "type": "WATER_KILLER",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "resistance",
+                "calcType": "fixe",
                 "target": "self"
               }
             ],
@@ -39732,7 +39732,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39758,7 +39758,7 @@
                 "type": "WATER_KILLER",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39834,7 +39834,7 @@
                 "type": "REAPER_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }
@@ -39857,10 +39857,10 @@
             "sp": 80,
             "effects": [
               {
-                "type": "WATER_KILLER_RES",
+                "type": "WATER_KILLER",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "resistance",
+                "calcType": "fixe",
                 "target": "self"
               }
             ],

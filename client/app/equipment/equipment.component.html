@@ -124,7 +124,7 @@
                     {{ (100 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="equipment.skill[0][0].based === 'hybrid'">
-                    {{ (50 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="equipment.skill[0][0].damage.formula.type === 0 && equipment.skill[0][0].damage.formula[1] > 0">

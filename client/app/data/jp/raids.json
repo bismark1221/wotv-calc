@@ -2942,7 +2942,7 @@
                 "type": "DARK_KILLER",
                 "minValue": 1,
                 "maxValue": 100,
-                "calcType": "percent",
+                "calcType": "fixe",
                 "rate": 200,
                 "target": "self"
               }

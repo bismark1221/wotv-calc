@@ -427,6 +427,7 @@ export class JsonService {
     347: 'HEAL_POWER',
     501: 'ABSORB_HP_ONTIME'
   };
+
   species = [
     '',
     'human',
@@ -2335,6 +2336,7 @@ export class JsonService {
                     }
 
                     type = this.killers[this[this.version].buffs[buff]['tag' + i]] + '_KILLER';
+                    this[this.version].buffs[buff]['calc' + i] = 1;
 
                     if (this.calcType[this[this.version].buffs[buff]['calc' + i]] === 'resistance') {
                       type = type + '_RES';
@@ -2349,7 +2351,7 @@ export class JsonService {
                     const calcType = this.calcType[this[this.version].buffs[buff]['calc' + i]];
                     if (calcType === 'nullify' || calcType === 'dispel') {
                       nullifyOrDispel = true;
-                      let effect = this.findEffect(skill, calcType.toUpperCase());
+                      let effect = this.findEffect(skill, calcType.toUpperCase(), dataBuffsIndex);
                       if (!effect) {
                         effect = {
                           type: calcType.toUpperCase(),
@@ -2431,11 +2433,12 @@ export class JsonService {
     }
   }
 
-  private findEffect(skill, type) {
+  private findEffect(skill, type, buffIndex) {
     let findedEffect = null;
 
     skill.effects.forEach(effect => {
-      if (effect.type === type) {
+      if (effect.type === type &&
+        ((buffIndex === 0 && effect.target !== 'self') || (buffIndex !== 0 && effect.target === 'self'))) {
         findedEffect = effect;
       }
     });

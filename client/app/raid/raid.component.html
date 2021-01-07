@@ -211,7 +211,7 @@
                         {{ (100 + (boss.attack.damage.formula.type === 1 && boss.attack.damage.formula[1] > 0 ? boss.attack.damage.formula[1] : 0)) + '% MAG' }}
                       </div>
                       <div *ngIf="boss.attack.based === 'hybrid'">
-                        {{ (50 + (boss.attack.damage.formula.type === 1 && boss.attack.damage.formula[1] > 0 ? boss.attack.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + boss.attack.damage.formula.type === 1 && boss.attack.damage.formula[1] > 0 ? boss.attack.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                        {{ (100 + (boss.attack.damage.formula.type === 1 && boss.attack.damage.formula[1] > 0 ? boss.attack.damage.formula[1] : 0)) + '% ATK' }}
                       </div>
 
                       <div *ngIf="boss.attack.damage.formula.type === 0 && boss.attack.damage.formula[1] > 0">
@@ -293,7 +293,7 @@
                         {{ (100 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] : 0)) + '% MAG' }}
                       </div>
                       <div *ngIf="boss.skills[skillId].based === 'hybrid'">
-                        {{ (50 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] / 2 : 0)) + '%MAG'}}
+                        {{ (100 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] : 0)) + '% ATK' }}
                       </div>
 
                       <div *ngIf="boss.skills[skillId].damage.formula.type === 0 && boss.skills[skillId].damage.formula[1] > 0">

@@ -516,7 +516,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -592,7 +592,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -670,7 +670,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -730,7 +730,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -790,7 +790,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -850,7 +850,7 @@
                     {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
                   <div *ngIf="skill.based === 'hybrid'">
-                    {{ (50 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                    {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
                   <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
@@ -910,7 +910,7 @@
                       {{ (100 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] : 0)) + '% MAG' }}
                     </div>
                     <div *ngIf="unit.limit.based === 'hybrid'">
-                      {{ (50 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] / 2 : 0)) + '% ATK + ' + (50 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                      {{ (100 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
 
                     <div *ngIf="unit.limit.damage.formula.type === 0 && unit.limit.damage.formula[1] > 0">

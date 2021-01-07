@@ -129,7 +129,7 @@
                   {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% MAG' }}
                 </div>
                 <div *ngIf="buff.classic.based === 'hybrid'">
-                  {{ (50 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] / 2 : 0) + '% ATK + ' + (50 + buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] / 2 : 0)) + '%MAG'}}
+                  {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
                 </div>
 
                 <div *ngIf="buff.classic.damage.formula.type === 0 && buff.classic.damage.formula[1] > 0">

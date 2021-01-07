@@ -312,14 +312,16 @@ export class SkillService {
         if (skill.slot === 3 || skill.type !== 'skill') {
           html = this.getIncrease(effect) + ' TP' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = 'Restore TP' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = (effect.rate ? effect.rate + '% chance to ' : '') +
+          (effect.calcType === 'decrease' ? 'Decrease' : 'Restore') + ' TP' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'AP' :
         if (skill.slot === 3 || skill.type !== 'skill') {
           html = this.getIncrease(effect) + ' AP' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
-          html = 'Restore AP' + this.getValue(skill, effect) + this.getTurns(effect);
+          html = (effect.rate ? effect.rate + '% chance to ' : '') +
+          (effect.calcType === 'decrease' ? 'Decrease' : 'Restore') + ' AP' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
       case 'CT' :

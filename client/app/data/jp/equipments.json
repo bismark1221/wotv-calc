@@ -119,7 +119,7 @@
               "type": "METAL_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11301,7 +11301,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11327,7 +11327,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11352,7 +11352,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11404,7 +11404,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11429,7 +11429,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11481,7 +11481,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11506,7 +11506,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11558,7 +11558,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11583,7 +11583,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11635,7 +11635,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11660,7 +11660,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -11712,7 +11712,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 20,
               "maxValue": 30,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -40314,7 +40314,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -40393,7 +40393,7 @@
               "type": "STONE_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -40552,7 +40552,7 @@
               "type": "DRAGON_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -40633,7 +40633,7 @@
               "type": "DARK_KILLER",
               "minValue": 15,
               "maxValue": 15,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -42227,7 +42227,7 @@
               "type": "STONE_KILLER",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "turn": 3,
               "target": "self"
@@ -42236,7 +42236,7 @@
               "type": "MACHINA_KILLER",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "turn": 3,
               "target": "self"
@@ -46637,7 +46637,7 @@
               "type": "HUMAN_KILLER",
               "minValue": 20,
               "maxValue": 20,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "target": "self"
             }
@@ -46773,7 +46773,7 @@
               "type": "MALES_KILLER",
               "minValue": 15,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "fixe",
               "rate": 200,
               "turn": 3,
               "target": "self"
@@ -51509,7 +51509,13 @@
             {
               "type": "NULLIFY",
               "ailments": [
-                "CONFUSION",
+                "CONFUSION"
+              ],
+              "target": "self"
+            },
+            {
+              "type": "NULLIFY",
+              "ailments": [
                 "PETRIFY"
               ],
               "target": "self"
