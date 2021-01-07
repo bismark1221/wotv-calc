@@ -16,8 +16,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE"
+            "dataId": "BUFF_WTH_FIRE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -25,8 +25,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE02"
+            "dataId": "BUFF_WTH_FIRE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -34,8 +34,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE02"
+            "dataId": "BUFF_WTH_FIRE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_IFRT",
@@ -1755,8 +1755,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL"
+            "dataId": "BUFF_WTH_SOIL",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -1764,8 +1764,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -1773,8 +1773,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_GLEM",
@@ -3492,8 +3492,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WATR"
+            "dataId": "BUFF_WTH_WATR",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -3501,8 +3501,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WATR02"
+            "dataId": "BUFF_WTH_WATR02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -3510,8 +3510,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WATR02"
+            "dataId": "BUFF_WTH_WATR02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_SIRE",
@@ -4835,8 +4835,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE"
+            "dataId": "BUFF_WTH_ICE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -4844,8 +4844,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -4853,8 +4853,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_SHIV",
@@ -6181,8 +6181,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_THUN"
+            "dataId": "BUFF_WTH_THUN",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -6190,8 +6190,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_THUN02"
+            "dataId": "BUFF_WTH_THUN02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -6199,8 +6199,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_THUN02"
+            "dataId": "BUFF_WTH_THUN02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_RAMU",
@@ -7527,8 +7527,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "fixe",
-            "turn": 1,
-            "dataId": "BUFF_WTH_NONE"
+            "dataId": "BUFF_WTH_NONE",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_ODIN",
@@ -9230,8 +9230,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WIND"
+            "dataId": "BUFF_WTH_WIND",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -9239,8 +9239,8 @@
             "minValue": 15,
             "maxValue": 15,
             "calcType": "fixe",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WIND02"
+            "dataId": "BUFF_WTH_WIND02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_TSLP",
@@ -12286,8 +12286,8 @@
             "minValue": -30,
             "maxValue": -30,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE03"
+            "dataId": "BUFF_WTH_FIRE03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -12295,8 +12295,8 @@
             "minValue": 40,
             "maxValue": 40,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE04"
+            "dataId": "BUFF_WTH_FIRE04",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_WRMC",
@@ -13620,8 +13620,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK"
+            "dataId": "BUFF_WTH_DARK",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -13629,8 +13629,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK02"
+            "dataId": "BUFF_WTH_DARK02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -13638,8 +13638,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK02"
+            "dataId": "BUFF_WTH_DARK02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_DABL",
@@ -14973,8 +14973,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE"
+            "dataId": "BUFF_WTH_ICE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -14982,8 +14982,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -14991,8 +14991,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_FNRR",
@@ -16326,8 +16326,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL"
+            "dataId": "BUFF_WTH_SOIL",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -16335,8 +16335,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -16344,8 +16344,8 @@
             "minValue": 30,
             "maxValue": 30,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_TITN",
@@ -18994,8 +18994,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK03"
+            "dataId": "BUFF_WTH_DARK03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -19003,8 +19003,8 @@
             "minValue": 40,
             "maxValue": 40,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK04"
+            "dataId": "BUFF_WTH_DARK04",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_DMNW",
@@ -20326,8 +20326,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WATR03"
+            "dataId": "BUFF_WTH_WATR03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -20335,8 +20335,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -20353,8 +20353,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -20371,8 +20371,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_WATER",
+            "clock": 40,
             "elements": [
               "water"
             ]
@@ -20383,8 +20383,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WATR04_WATER",
+            "clock": 40,
             "elements": [
               "water"
             ]
@@ -21715,8 +21715,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_WIND"
+            "dataId": "BUFF_WTH_WIND",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -21724,8 +21724,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -21742,8 +21742,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -21760,8 +21760,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_WIND",
+            "clock": 40,
             "elements": [
               "wind"
             ]
@@ -21772,8 +21772,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_WIND03_WIND",
+            "clock": 40,
             "elements": [
               "wind"
             ]
@@ -23101,8 +23101,8 @@
             "minValue": 50,
             "maxValue": 50,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_NONE02"
+            "dataId": "BUFF_WTH_NONE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -23110,8 +23110,8 @@
             "minValue": 50,
             "maxValue": 50,
             "calcType": "percent",
-            "turn": 1,
-            "dataId": "BUFF_WTH_NONE02"
+            "dataId": "BUFF_WTH_NONE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_BAHM",
@@ -24830,8 +24830,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_DARK03"
+            "dataId": "BUFF_WTH_DARK03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -24839,8 +24839,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_DARK05_NOT_DARK",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -24857,8 +24857,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_DARK05_NOT_DARK",
+            "clock": 40,
             "elements": [
               "fire",
               "ice",
@@ -24875,8 +24875,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_DARK05_DARK",
+            "clock": 40,
             "elements": [
               "dark"
             ]
@@ -24887,8 +24887,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_DARK05_DARK",
+            "clock": 40,
             "elements": [
               "dark"
             ]
@@ -26597,8 +26597,8 @@
             "minValue": -50,
             "maxValue": -50,
             "calcType": "resistance",
-            "turn": 1,
-            "dataId": "BUFF_WTH_FIRE"
+            "dataId": "BUFF_WTH_FIRE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -26606,8 +26606,8 @@
             "minValue": 20,
             "maxValue": 20,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
+            "clock": 40,
             "elements": [
               "water",
               "ice",
@@ -26624,8 +26624,8 @@
             "minValue": 10,
             "maxValue": 10,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
+            "clock": 40,
             "elements": [
               "water",
               "ice",
@@ -26642,8 +26642,8 @@
             "minValue": 100,
             "maxValue": 100,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_FIRE05_FIRE",
+            "clock": 40,
             "elements": [
               "fire"
             ]
@@ -26654,8 +26654,8 @@
             "minValue": 40,
             "maxValue": 40,
             "calcType": "percent",
-            "turn": 1,
             "dataId": "BUFF_WTH_FIRE05_FIRE",
+            "clock": 40,
             "elements": [
               "fire"
             ]

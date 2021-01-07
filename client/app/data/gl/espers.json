@@ -17,7 +17,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_FIRE"
+            "dataId": "BUFF_WTH_FIRE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -25,7 +26,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE02"
+            "dataId": "BUFF_WTH_FIRE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -33,7 +35,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE02"
+            "dataId": "BUFF_WTH_FIRE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_IFRT",
@@ -1362,7 +1365,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_SOIL"
+            "dataId": "BUFF_WTH_SOIL",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -1370,7 +1374,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -1378,7 +1383,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_GLEM",
@@ -2705,7 +2711,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_WATR"
+            "dataId": "BUFF_WTH_WATR",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -2713,7 +2720,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR02"
+            "dataId": "BUFF_WTH_WATR02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -2721,7 +2729,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR02"
+            "dataId": "BUFF_WTH_WATR02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_SIRE",
@@ -14631,7 +14640,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_ICE"
+            "dataId": "BUFF_WTH_ICE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -14639,7 +14649,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -14647,7 +14658,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_SHIV",
@@ -15976,7 +15988,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_THUN"
+            "dataId": "BUFF_WTH_THUN",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -15984,7 +15997,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN02"
+            "dataId": "BUFF_WTH_THUN02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -15992,7 +16006,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN02"
+            "dataId": "BUFF_WTH_THUN02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_RAMU",
@@ -17321,7 +17336,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "fixe",
-            "dataId": "BUFF_WTH_NONE"
+            "dataId": "BUFF_WTH_NONE",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_ODIN",
@@ -19966,7 +19982,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_WIND"
+            "dataId": "BUFF_WTH_WIND",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -19974,7 +19991,8 @@
             "minValue": 10,
             "maxValue": 25,
             "calcType": "fixe",
-            "dataId": "BUFF_WTH_WIND02"
+            "dataId": "BUFF_WTH_WIND02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_TSLP",
@@ -23951,7 +23969,8 @@
             "minValue": -10,
             "maxValue": -40,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_FIRE03"
+            "dataId": "BUFF_WTH_FIRE03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -23959,7 +23978,8 @@
             "minValue": 30,
             "maxValue": 60,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE04"
+            "dataId": "BUFF_WTH_FIRE04",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_WRMC",
@@ -25285,7 +25305,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_DARK"
+            "dataId": "BUFF_WTH_DARK",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -25293,7 +25314,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK02"
+            "dataId": "BUFF_WTH_DARK02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -25301,7 +25323,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK02"
+            "dataId": "BUFF_WTH_DARK02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_DABL",
@@ -29281,7 +29304,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_ICE"
+            "dataId": "BUFF_WTH_ICE",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -29289,7 +29313,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -29297,7 +29322,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02"
+            "dataId": "BUFF_WTH_ICE02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_FNRR",
@@ -30633,7 +30659,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_SOIL"
+            "dataId": "BUFF_WTH_SOIL",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -30641,7 +30668,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -30649,7 +30677,8 @@
             "minValue": 10,
             "maxValue": 40,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02"
+            "dataId": "BUFF_WTH_SOIL02",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_TITN",
@@ -35960,7 +35989,8 @@
             "minValue": -30,
             "maxValue": -60,
             "calcType": "resistance",
-            "dataId": "BUFF_WTH_DARK03"
+            "dataId": "BUFF_WTH_DARK03",
+            "clock": 40
           },
           {
             "side": "TEAM",
@@ -35968,7 +35998,8 @@
             "minValue": 30,
             "maxValue": 60,
             "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK04"
+            "dataId": "BUFF_WTH_DARK04",
+            "clock": 40
           }
         ],
         "dataId": "SK_SMN_DMNW",

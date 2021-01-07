@@ -29,10 +29,10 @@ export class SkillService {
     'target': 'target',
     'allyNotSelf': 'ally',
     'selfSide': 'all allies',
-    'ennemySide': 'all ennemies',
+    'ennemySide': 'all enemies',
     'all': 'everyone on map',
     'deadAlly': 'dead ally',
-    'deadEnnemy': 'dead ennemy',
+    'deadEnnemy': 'dead enemy',
     'deadAll': 'everyone dead',
     'panel': 'panel'
   };
@@ -1020,13 +1020,18 @@ export class SkillService {
     }
 
     if (effect.side) {
-      html = html + ' for 3 turns to all ';
-
+      let addedElements = false;
       if (effect.elements) {
-        html += effect.elements.join(' ,') + ' ';
+        html += ' for ' + effect.elements.join(', ') + ' ';
+        addedElements = true;
       }
 
-      html += (effect.side === 'TEAM' ? 'units' : 'ennemies');
+      html += (html[html.length - 1] === ' ' ? '' : ' ')
+        + (!addedElements ? 'for all ' : '')
+        + (effect.side === 'TEAM' ? 'units' : 'enemies')
+        + (effect.clock ? ' for ' + effect.clock + ' clock times' : '');
+
+      getTarget = false;
     }
 
     if (skill.maths) {
@@ -1294,7 +1299,7 @@ export class SkillService {
           return html + conditions[effect.condition] + 'all' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'ennemySide' :
-          return html + conditions[effect.condition] + 'ennem' + (skill.aoe ? 'ies' : 'y');
+          return html + conditions[effect.condition] + 'enem' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'all' :
           return html + conditions[effect.condition] + 'target' + (skill.aoe ? 's' : '');
@@ -1303,7 +1308,7 @@ export class SkillService {
           return html + conditions[effect.condition] + 'dead all' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'deadEnnemy' :
-          return html + conditions[effect.condition] + 'dead ennem' + (skill.aoe ? 'ies' : 'y');
+          return html + conditions[effect.condition] + 'dead enem' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'deadAll' :
           return html + conditions[effect.condition] + 'dead target' + (skill.aoe ? 's' : '');
@@ -1340,7 +1345,7 @@ export class SkillService {
           return html + ' for all' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'ennemySide' :
-          return html + ' for ennem' + (skill.aoe ? 'ies' : 'y');
+          return html + ' for enem' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'all' :
           return html + ' for target' + (skill.aoe ? 's' : '');
@@ -1349,7 +1354,7 @@ export class SkillService {
           return html + ' for dead all' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'deadEnnemy' :
-          return html + ' for dead ennem' + (skill.aoe ? 'ies' : 'y');
+          return html + ' for dead enem' + (skill.aoe ? 'ies' : 'y');
           break;
         case 'deadAll' :
           return html + ' for dead target' + (skill.aoe ? 's' : '');

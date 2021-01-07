@@ -2688,8 +2688,8 @@ export class JsonService {
                   minValue: this[this.version].buffs[buff['buff' + j]]['val' + i],
                   maxValue: this[this.version].buffs[buff['buff' + j]]['val' + i + '1'],
                   calcType: this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] ? this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] : 'unknow',
-                  turn: this[this.version].buffs[buff['buff' + j]].turn,
-                  dataId: buff['buff' + j]
+                  dataId: buff['buff' + j],
+                  clock: this[this.version].weathers[weatherId].clock_time,
                 };
 
                 if (buff.elem) {
