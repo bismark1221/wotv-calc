@@ -98,67 +98,67 @@
           </tr>
           <tr>
             <td class="skillNameTd">
-              {{ equipment.skills[0][0].name }}
-              <span *ngIf="equipment.skills[0][0].based">
-                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.skills[0][0].based + '.png'}}" />
+              {{ equipment.activeSkill.name }}
+              <span *ngIf="equipment.activeSkill.based">
+                <img class='atkBasedImg' src="{{'assets/atkBased/' + equipment.activeSkill.based + '.png'}}" />
               </span>
-              <div *ngIf="equipment.skills[0][0].time && equipment.skills[0][0].time.minValue">
+              <div *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
                 <ng-template #tip_time>
                   <div>
-                    Min time: {{ equipment.skills[0][0].time.minValue }}<br />
-                    Max time: {{ equipment.skills[0][0].time.maxValue }}
+                    Min time: {{ equipment.activeSkill.time.minValue }}<br />
+                    Max time: {{ equipment.activeSkill.time.maxValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
               </div>
             </td>
             <td class="skillEffectTd">
-              <div>{{ equipment.skills[0][0].counterHtml }}</div>
+              <div>{{ equipment.activeSkill.counterHtml }}</div>
 
-              <div *ngIf="equipment.skills[0][0].damageHtml && equipment.skills[0][0].damageHtml.value">
+              <div *ngIf="equipment.activeSkill.damageHtml && equipment.activeSkill.damageHtml.value">
                 <ng-template #tip_damage>
-                  <div *ngIf="equipment.skill[0][0].based === 'physic'">
-                    {{ (100 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] : 0)) + '% ATK' }}
+                  <div *ngIf="equipment.activeSkill.based === 'physic'">
+                    {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
-                  <div *ngIf="equipment.skill[0].based === 'magic'">
-                    {{ (100 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] : 0)) + '% MAG' }}
+                  <div *ngIf="equipment.activeSkillsed === 'magic'">
+                    {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% MAG' }}
                   </div>
-                  <div *ngIf="equipment.skill[0][0].based === 'hybrid'">
-                    {{ (100 + (equipment.skill[0][0].damage.formula.type === 1 && equipment.skill[0][0].damage.formula[1] > 0 ? equipment.skill[0][0].damage.formula[1] : 0)) + '% ATK' }}
+                  <div *ngIf="equipment.activeSkill.based === 'hybrid'">
+                    {{ (100 + (equipment.activeSkill.damage.formula.type === 1 && equipment.activeSkill.damage.formula[1] > 0 ? equipment.activeSkill.damage.formula[1] : 0)) + '% ATK' }}
                   </div>
 
-                  <div *ngIf="equipment.skill[0][0].damage.formula.type === 0 && equipment.skill[0][0].damage.formula[1] > 0">
-                    {{ equipment.skill[0][0].damage.formula[1] }}% DEX
+                  <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[1] > 0">
+                    {{ equipment.activeSkill.damage.formula[1] }}% DEX
                   </div>
-                  <div *ngIf="equipment.skill[0][0].damage.formula.type === 0 && equipment.skill[0][0].damage.formula[2] > 0">
-                    {{ equipment.skill[0][0].damage.formula[2] }}% AGI
+                  <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[2] > 0">
+                    {{ equipment.activeSkill.damage.formula[2] }}% AGI
                   </div>
-                  <div *ngIf="equipment.skill[0][0].damage.formula.type === 0 && equipment.skill[0][0].damage.formula[3] > 0">
-                    {{ equipment.skill[0][0].damage.formula[3] }}% LUCK
+                  <div *ngIf="equipment.activeSkill.damage.formula.type === 0 && equipment.activeSkill.damage.formula[3] > 0">
+                    {{ equipment.activeSkill.damage.formula[3] }}% LUCK
                   </div>
                 </ng-template>
-                <img [ngbTooltip]="tip_damage" title="{{ equipment.skills[0][0].damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.skills[0][0].damageHtml.type.image }}.png" />&nbsp; {{ equipment.skills[0][0].damageHtml.effType }} {{ equipment.skills[0][0].damageHtml.pool }} {{ equipment.skills[0][0].damageHtml.value }}
-                <div [innerHTML]="equipment.skills[0][0].damageHtml.others | safeHtml"></div>
+                <img [ngbTooltip]="tip_damage" title="{{ equipment.activeSkill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ equipment.activeSkill.damageHtml.type.image }}.png" />&nbsp; {{ equipment.activeSkill.damageHtml.effType }} {{ equipment.activeSkill.damageHtml.pool }} {{ equipment.activeSkill.damageHtml.value }}
+                <div [innerHTML]="equipment.activeSkill.damageHtml.others | safeHtml"></div>
               </div>
 
-              <div *ngFor="let effect of equipment.skills[0][0].effects">
+              <div *ngFor="let effect of equipment.activeSkill.effects">
                 <span [innerHTML]="effect.formatHtml"></span>
               </div>
             </td>
             <td class="rangeTd">
-              <ng-template #tip_table><div [innerHTML]="equipment.skills[0][0].skillTableHtml"></div></ng-template>
+              <ng-template #tip_table><div [innerHTML]="equipment.activeSkill.skillTableHtml"></div></ng-template>
               <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                <div class="divSkillTableHtml" [innerHTML]="equipment.skills[0][0].skillTableHtml"></div>
+                <div class="divSkillTableHtml" [innerHTML]="equipment.activeSkill.skillTableHtml"></div>
               </div>
             </td>
             <td class="skillCastTd">
-              {{ equipment.skills[0][0].count }}
+              {{ equipment.activeSkill.count }}
             </td>
             <td class="skillHitTd">
-              <span *ngIf="equipment.skills[0][0].combo">{{ equipment.skills[0][0].combo.num }}</span>
+              <span *ngIf="equipment.activeSkill.combo">{{ equipment.activeSkill.combo.num }}</span>
             </td>
             <td class="skillCostTd">
-              <span *ngIf="equipment.skills[0][0].cost">{{ equipment.skills[0][0].cost.value }} {{ equipment.skills[0][0].cost.type }}</span>
+              <span *ngIf="equipment.activeSkill.cost">{{ equipment.activeSkill.cost.value }} {{ equipment.activeSkill.cost.type }}</span>
             </td>
           </tr>
         </table>
