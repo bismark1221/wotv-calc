@@ -821,7 +821,9 @@ export class Unit {
                 }
 
                 const modifiedValue = this.updateStat(effect.type, value, 'equipment' + i + '_buff', effect.calcType === 'percent' ? 'percent' : 'fixe', true);
-                this.stats[effect.type]['equipment' + i + '_buff'] = Math.floor(this.stats[effect.type]['equipment' + i + '_buff']);
+                if (this.stats[effect.type] && this.stats[effect.type]['equipment' + i + '_buff']) {
+                  this.stats[effect.type]['equipment' + i + '_buff'] = Math.floor(this.stats[effect.type]['equipment' + i + '_buff']);
+                }
 
                 if (modifiedValue) {
                   value = Math.floor(modifiedValue);
@@ -986,12 +988,6 @@ export class Unit {
 
       this.stats[stat].total += this.stats[stat].guild ? this.stats[stat].guild : 0;
       this.stats[stat].total += this.stats[stat].masterRanks ? this.stats[stat].masterRanks : 0;
-
-      // @ts-ignore
-      if (stat === 'HP' && this.stats[stat].total > 9999) {
-        // @ts-ignore
-        this.stats[stat].total = 9999;
-      }
 
       if (!Number.isInteger(this.stats[stat].total)) {
         statsToRemove.push(stat);
