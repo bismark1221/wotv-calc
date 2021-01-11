@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { EquipmentService } from './equipment.service';
 import { Slug } from 'ng2-slugify';
 
 import { JpTranslateService } from './jptranslate.service';
+import { EsperService } from './esper.service';
+import { EquipmentService } from './equipment.service';
+import { UnitService } from './unit.service';
+import { JobService } from './job.service';
 
 // Translations
 import { default as FR_ArtifactGrow } from '../../../data/fr/artifactgrow.json';
@@ -830,6 +833,9 @@ export class JsonService {
   constructor(
     private http: HttpClient,
     private equipmentService: EquipmentService,
+    private esperService: EsperService,
+    private jobService: JobService,
+    private unitService: UnitService,
     private jpTranslateService: JpTranslateService
   ) {}
 
@@ -1425,6 +1431,8 @@ export class JsonService {
       this.formatMasterRanks();
 
       this.formatTitles();
+
+      this.exportGLexclusiveToJP();
     }
   }
 
@@ -2596,7 +2604,7 @@ export class JsonService {
     this[this.version].wotvEspers[dataId] = {
       dataId: dataId,
       names: {},
-      rarity: this.rarity[esper.rare],
+      rarity: this.esperService.findRarity(dataId),
       cost: esper.cost,
       skills: [],
       stats: {},
@@ -3245,6 +3253,36 @@ export class JsonService {
           this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].names.en = this.jpTitlesName[titleId];
         }
       }
+    }
+  }
+
+  exportGLexclusiveToJP() {
+    if (this.version === 'jp') {
+      this.jobService.getGLExclusiveJobIds().forEach(jobId => {
+        this.jp.wotvJobs[jobId] = this.gl.wotvJobs[jobId];
+
+        Object.keys(this.gl.wotvEquipments).forEach(equipmentId => {
+          if (this.gl.wotvEquipments[equipmentId].equippableJobs
+            && this.gl.wotvEquipments[equipmentId].equippableJobs.indexOf(jobId)
+            && this.jp.wotvEquipments[equipmentId]) {
+            this.jp.wotvEquipments[equipmentId].equippableJobs.push(jobId);
+          }
+        });
+
+        this.jp.wotvJobs[jobId].materials.forEach(material => {
+          Object.keys(material).forEach(itemId => {
+            if (!this.jp.wotvItems[itemId]) {
+              this.jp.wotvItems[itemId] = this.gl.wotvItems[itemId];
+            }
+          });
+        });
+      });
+
+      this.unitService.getGLExclusiveUnitIds().forEach(unitId => {
+        this.jp.wotvUnits[unitId] = this.gl.wotvUnits[unitId];
+        const tmrId = this.jp.wotvUnits[unitId].tmr.dataId;
+        this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
+      });
     }
   }
 }

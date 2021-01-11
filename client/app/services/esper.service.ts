@@ -96,7 +96,6 @@ export class EsperService {
     Object.keys(rawEspers).forEach(esperId => {
       const esper = new Esper();
       esper.constructFromJson(rawEspers[esperId], this.translateService);
-      esper.rarity = this.findRarity(esper);
       espers.push(esper);
     });
 
@@ -141,10 +140,10 @@ export class EsperService {
     }
   }
 
-  findRarity(esper) {
+  findRarity(esperId) {
     let rarity = 'N';
     Object.keys(this.espersRarity).forEach(rarityType => {
-      if (this.espersRarity[rarityType].indexOf(esper.dataId) !== -1) {
+      if (this.espersRarity[rarityType].indexOf(esperId) !== -1) {
         rarity = rarityType;
       }
     });

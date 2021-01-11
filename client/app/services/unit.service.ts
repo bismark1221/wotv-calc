@@ -103,17 +103,6 @@ export class UnitService {
   getUnitsForJPBuilder() {
     this.getUnits();
 
-    if (this.navService.getVersion() === 'JP') {
-      const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
-      Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExcluUnits.indexOf(unitId) !== -1) {
-          const unit = new Unit();
-          unit.constructFromJson(rawUnits[unitId], this.translateService);
-          this.units.push(unit);
-        }
-      });
-    }
-
     this.units = this.filterUnits(this.units, null);
     this.toolService.sortByRarity(this.units, 'asc');
 
@@ -171,18 +160,11 @@ export class UnitService {
   getUnit(id) {
     this.getUnits();
 
-    if (this.navService.getVersion() === 'JP') {
-      const rawUnits = JSON.parse(JSON.stringify(GL_UNITS));
-      Object.keys(rawUnits).forEach(unitId => {
-        if (this.glExcluUnits.indexOf(unitId) !== -1) {
-          const unit = new Unit();
-          unit.constructFromJson(rawUnits[unitId], this.translateService);
-          this.units.push(unit);
-        }
-      });
-    }
-
     return this.units.find(unit => unit.dataId === id);
+  }
+
+  getGLExclusiveUnitIds() {
+    return this.glExcluUnits;
   }
 
   isLimited(id) {

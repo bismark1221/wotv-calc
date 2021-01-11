@@ -69,17 +69,10 @@ export class JobService {
   getJob(id: string): Job {
     this.getJobs();
 
-    if (this.navService.getVersion() === 'JP') {
-      const rawJobs = JSON.parse(JSON.stringify(GL_JOBS));
-      Object.keys(rawJobs).forEach(jobId => {
-        if (this.glExcluJobs.indexOf(jobId) !== -1) {
-          const job = new Job();
-          job.constructFromJson(rawJobs[jobId]);
-          this.jobs.push(job);
-        }
-      });
-    }
-
     return this.jobs.find(job => job.dataId === id);
+  }
+
+  getGLExclusiveJobIds() {
+    return this.glExcluJobs;
   }
 }
