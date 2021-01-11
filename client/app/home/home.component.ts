@@ -163,7 +163,7 @@ export class HomeComponent {
           name: this.nameService.getName(dataItem),
           image: dataItem.image,
           element: dataItem.element,
-          rarity: item.type === 'esper' ? this.esperService.findRarity(dataItem) : dataItem.rarity
+          rarity: dataItem.rarity
         });
 
         if (item.type === 'unit') {

@@ -82,8 +82,6 @@ export class EsperComponent implements OnInit {
         this.skillService.formatRange(this.esper, skill);
       });
 
-      this.esper.rarity = this.esperService.findRarity(this.esper);
-
       this.esper.maxSP = 0;
       this.esper.SPs.forEach(awake => {
         awake.forEach(sp => {
