@@ -9,6 +9,7 @@ import { Unit } from '../entities/unit';
 
 import { GridService } from './grid.service';
 import { SkillService } from './skill.service';
+import { RangeService } from './range.service';
 import { JobService } from './job.service';
 import { GuildService } from './guild.service';
 import { MasterRanksService } from './mr.service';
@@ -64,6 +65,7 @@ export class UnitService {
     private localStorageService: LocalStorageService,
     private gridService: GridService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private jobService: JobService,
     private guildService: GuildService,
     private masterRanksService: MasterRanksService,
@@ -570,7 +572,7 @@ export class UnitService {
   }
 
   getActiveSkills() {
-    this.unit.getActiveSkills(true, this.nameService, this.skillService);
+    this.unit.getActiveSkills(true, this.nameService, this.skillService, this.rangeService);
   }
 
   resetUnit() {

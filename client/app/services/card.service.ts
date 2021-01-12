@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { SkillService } from './skill.service';
+import { RangeService } from './range.service';
 import { NavService } from './nav.service';
 import { NameService } from './name.service';
 import { ToolService } from './tool.service';
@@ -24,6 +25,7 @@ export class CardService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private navService: NavService,
     private nameService: NameService,
     private toolService: ToolService,
@@ -178,7 +180,7 @@ export class CardService {
       this.maxCard();
     } else {
       this.card.updateMaxLevel();
-      this.card.changeLevel(this.nameService, this.skillService);
+      this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
     }
 
     return this.card;
@@ -313,7 +315,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.resetCard(this.nameService, this.skillService);
+    this.card.resetCard(this.nameService, this.skillService, this.rangeService);
   }
 
   changeStar(card = null) {
@@ -322,7 +324,7 @@ export class CardService {
     }
 
     this.card.updateMaxLevel();
-    this.card.changeLevel(this.nameService, this.skillService);
+    this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
   }
 
   changeLevel(card = null) {
@@ -330,7 +332,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.changeLevel(this.nameService, this.skillService);
+    this.card.changeLevel(this.nameService, this.skillService, this.rangeService);
   }
 
   maxCard(card = null) {
@@ -338,7 +340,7 @@ export class CardService {
       this.card = card;
     }
 
-    this.card.maxCard(this.nameService, this.skillService);
+    this.card.maxCard(this.nameService, this.skillService, this.rangeService);
   }
 
   getAvailableStats() {

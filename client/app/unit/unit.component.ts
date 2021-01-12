@@ -5,6 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { UnitService } from '../services/unit.service';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
+import { RangeService } from '../services/range.service';
 import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
@@ -28,6 +29,7 @@ export class UnitComponent implements OnInit {
     private unitService: UnitService,
     private equipmentService: EquipmentService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private jobService: JobService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
@@ -135,7 +137,7 @@ export class UnitComponent implements OnInit {
             skill.counterHtml = this.skillService.formatCounter(this.unit, skill, skill.counter);
           }
 
-          this.skillService.formatRange(this.unit, skill);
+          this.rangeService.formatRange(this.unit, skill);
 
           skill.upgrades = [];
           skill = this.addUpgrade(skill);
@@ -201,7 +203,7 @@ export class UnitComponent implements OnInit {
 
         this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
 
-        this.skillService.formatRange(this.unit, this.unit.limit);
+        this.rangeService.formatRange(this.unit, this.unit.limit);
 
         this.unit.limit.upgrades = [];
         this.unit.limit = this.addUpgrade(this.unit.limit);
@@ -216,7 +218,7 @@ export class UnitComponent implements OnInit {
 
         this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
 
-        this.skillService.formatRange(this.unit, this.unit.attack);
+        this.rangeService.formatRange(this.unit, this.unit.attack);
       }
 
       if (this.unit.tmr) {
@@ -226,7 +228,7 @@ export class UnitComponent implements OnInit {
         this.unit.tmr.skills.forEach(skill => {
           skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
-          this.skillService.formatRange(this.unit, skill);
+          this.rangeService.formatRange(this.unit, skill);
           skill.effects.forEach(effect => {
             effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
           });
@@ -299,7 +301,7 @@ export class UnitComponent implements OnInit {
               newSkill.counterHtml = this.skillService.formatCounter(this.unit, newSkill, newSkill.counter);
             }
 
-            this.skillService.formatRange(this.unit, newSkill);
+            this.rangeService.formatRange(this.unit, newSkill);
             newSkill = this.addUpgrade(newSkill);
 
 

@@ -186,6 +186,10 @@ label {
   background: url("assets/range/UR.png") 0px 0px no-repeat;
 }
 
+.table-skill-UAR {
+  background: url("assets/range/UAR.png") 0px 0px no-repeat;
+}
+
 .table-skill-R {
   background: url("assets/range/R.png") 0px 0px no-repeat;
 }
@@ -200,6 +204,10 @@ label {
 
 .table-skill-A {
   background: url("assets/range/A.png") 0px 0px no-repeat;
+}
+
+.table-skill-T {
+  background: url("assets/range/T.png") 0px 0px no-repeat;
 }
 
 .damageSkillImg {

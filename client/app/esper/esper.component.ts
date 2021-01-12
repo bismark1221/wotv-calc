@@ -4,6 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EsperService } from '../services/esper.service';
 import { SkillService } from '../services/skill.service';
+import { RangeService } from '../services/range.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
@@ -22,6 +23,7 @@ export class EsperComponent implements OnInit {
   constructor(
     private esperService: EsperService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
@@ -79,7 +81,7 @@ export class EsperComponent implements OnInit {
           skill.counterHtml = this.skillService.formatCounter(this.esper, skill, skill.counter);
         }
 
-        this.skillService.formatRange(this.esper, skill);
+        this.rangeService.formatRange(this.esper, skill);
       });
 
       this.esper.maxSP = 0;

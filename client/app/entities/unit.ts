@@ -1223,7 +1223,7 @@ export class Unit {
     });
   }
 
-  getActiveSkills(formatHtml = false, nameService = null, skillService = null) {
+  getActiveSkills(formatHtml = false, nameService, skillService, rangeService) {
     this.activeSkills = [];
 
     Object.keys(this.board.nodes).forEach(nodeId => {
@@ -1233,7 +1233,7 @@ export class Unit {
       ) {
         node.skill.level = node.level;
 
-        this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, nameService, skillService) : node.skill);
+        this.activeSkills.push(formatHtml ? this.formatActiveSkill(node.skill, nameService, skillService, rangeService) : node.skill);
       }
 
       if (node.type === 'buff' && node.skill.type === 'ex_buff' && node.skill.maxLevel > 1 && node.level >= 1 && this.grid) {
@@ -1243,14 +1243,14 @@ export class Unit {
     });
 
     if (this.limit && formatHtml) {
-      this.limit = this.formatActiveSkill(this.limit, nameService, skillService);
+      this.limit = this.formatActiveSkill(this.limit, nameService, skillService, rangeService);
     }
 
     this.activatedSupport.forEach(supportNode => {
       if (supportNode !== '0') {
         this.board.nodes[supportNode].skill.level = this.board.nodes[supportNode].level;
         if (formatHtml) {
-          this.board.nodes[supportNode].skill = this.formatActiveSkill(this.board.nodes[supportNode].skill, nameService, skillService);
+          this.board.nodes[supportNode].skill = this.formatActiveSkill(this.board.nodes[supportNode].skill, nameService, skillService, rangeService);
         }
       }
     });
@@ -1258,12 +1258,12 @@ export class Unit {
     if (this.activatedCounter !== '0') {
       this.board.nodes[this.activatedCounter].skill.level = this.board.nodes[this.activatedCounter].level;
       if (formatHtml) {
-        this.board.nodes[this.activatedCounter].skill = this.formatActiveSkill(this.board.nodes[this.activatedCounter].skill, nameService, skillService);
+        this.board.nodes[this.activatedCounter].skill = this.formatActiveSkill(this.board.nodes[this.activatedCounter].skill, nameService, skillService, rangeService);
       }
     }
   }
 
-  private formatActiveSkill(skill, nameService = null, skillService = null) {
+  private formatActiveSkill(skill, nameService, skillService, rangeService) {
     skill.name = nameService.getName(skill);
 
     skill.effects.forEach(effect => {
@@ -1272,7 +1272,7 @@ export class Unit {
 
     skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
 
-    skillService.formatRange(this, skill);
+    rangeService.formatRange(this, skill);
 
     return skill;
   }

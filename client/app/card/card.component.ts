@@ -4,6 +4,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { CardService } from '../services/card.service';
 import { SkillService } from '../services/skill.service';
+import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { JobService } from '../services/job.service';
@@ -22,6 +23,7 @@ export class CardComponent implements OnInit {
   constructor(
     private cardService: CardService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
@@ -75,7 +77,7 @@ export class CardComponent implements OnInit {
                   buff[skillType].counterHtml = this.skillService.formatCounter(this.card, buff[skillType], buff[skillType].counter);
                 }
 
-                this.skillService.formatRange(this.card, buff[skillType]);
+                this.rangeService.formatRange(this.card, buff[skillType]);
               } else {
                 buff[skillType].effects.forEach(effect => {
                   effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect, false);

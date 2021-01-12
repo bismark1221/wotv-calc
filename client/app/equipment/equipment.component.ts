@@ -4,6 +4,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
+import { RangeService } from '../services/range.service';
 import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
@@ -23,6 +24,7 @@ export class EquipmentComponent implements OnInit {
   constructor(
     private equipmentService: EquipmentService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private unitService: UnitService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
@@ -113,7 +115,7 @@ export class EquipmentComponent implements OnInit {
             skill.counterHtml = this.skillService.formatCounter(this.equipment, skill, skill.counter);
           }
 
-          this.skillService.formatRange(this.equipment, skill);
+          this.rangeService.formatRange(this.equipment, skill);
 
           if (skill.type === 'skill') {
             this.equipment.activeSkill = skill;

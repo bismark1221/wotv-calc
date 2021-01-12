@@ -5,6 +5,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { RaidService } from '../services/raid.service';
 import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
+import { RangeService } from '../services/range.service';
 import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
@@ -23,6 +24,7 @@ export class RaidComponent implements OnInit {
   constructor(
     private raidService: RaidService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private translateService: TranslateService,
@@ -96,7 +98,7 @@ export class RaidComponent implements OnInit {
             skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
           }
 
-          this.skillService.formatRange(boss, skill);
+          this.rangeService.formatRange(boss, skill);
         });
 
         if (boss.attack) {
@@ -108,7 +110,7 @@ export class RaidComponent implements OnInit {
 
           boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
 
-          this.skillService.formatRange(boss, boss.attack);
+          this.rangeService.formatRange(boss, boss.attack);
         }
       });
     }

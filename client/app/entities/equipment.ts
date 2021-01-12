@@ -66,7 +66,7 @@ export class Equipment {
     return this.name;
   }
 
-  updateMaxStat(nameService, skillService) {
+  updateMaxStat(nameService, skillService, rangeService) {
     this.statsTypes = Object.keys(this.stats);
 
     this.passiveSkills = [];
@@ -85,7 +85,7 @@ export class Equipment {
           skill.counterHtml = skillService.formatCounter(this, skill, skill.counter);
         }
 
-        skillService.formatRange(this, skill);
+        rangeService.formatRange(this, skill);
 
         if (skill.type === 'skill') {
           this.activeSkill = skill;
@@ -137,7 +137,7 @@ export class Equipment {
     }
   }
 
-  changeUpgrade(skillService) {
+  changeUpgrade(skillService, rangeService) {
     this.skill = this.skills[this.upgrade];
 
     if (this.skill && this.skill[0] && this.skill[0].type === 'skill') {
@@ -153,7 +153,7 @@ export class Equipment {
       });
     }
 
-    this.changeSkillLevel(skillService);
+    this.changeSkillLevel(skillService, rangeService);
   }
 
   changeGrow() {
@@ -169,7 +169,7 @@ export class Equipment {
     });
   }
 
-  changeLevel(skillService) {
+  changeLevel(skillService, rangeService) {
     if (this.growIds.length === 1 && this.grows[this.growIds[0]].dataId === 'ARTIFACT_50') {
       Object.keys(this.stats).forEach(statType => {
         const minValue = this.stats[statType].min;
@@ -179,11 +179,11 @@ export class Equipment {
     }
 
     if (this.skill) {
-      this.changeSkillLevel(skillService);
+      this.changeSkillLevel(skillService, rangeService);
     }
   }
 
-  changeSkillLevel(skillService) {
+  changeSkillLevel(skillService, rangeService) {
     this.passiveSkills = [];
     this.skill.forEach(skill => {
       if (skill.type !== 'skill') {
@@ -206,7 +206,7 @@ export class Equipment {
           skill.counterHtml = skillService.formatCounter(this, skill, skill.counter);
         }
 
-        skillService.formatRange(this, skill);
+        rangeService.formatRange(this, skill);
 
         if (skill.type === 'skill') {
           this.activeSkill = skill;

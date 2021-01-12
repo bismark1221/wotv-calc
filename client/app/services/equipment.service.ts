@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 import { SkillService } from './skill.service';
+import { RangeService } from './range.service';
 import { NavService } from './nav.service';
 import { NameService } from './name.service';
 import { ToolService } from './tool.service';
@@ -206,6 +207,7 @@ export class EquipmentService {
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
     private skillService: SkillService,
+    private rangeService: RangeService,
     private navService: NavService,
     private toolService: ToolService,
     private authService: AuthService,
@@ -381,10 +383,10 @@ export class EquipmentService {
     this.equipment.grow = this.equipment.growIds[0];
 
     this.initiateSavedEquipment(customData);
-    this.equipment.updateMaxStat(this.nameService, this.skillService);
+    this.equipment.updateMaxStat(this.nameService, this.skillService, this.rangeService);
 
-    this.equipment.changeLevel(this.skillService);
-    this.equipment.changeUpgrade(this.skillService);
+    this.equipment.changeLevel(this.skillService, this.rangeService);
+    this.equipment.changeUpgrade(this.skillService, this.rangeService);
     this.equipment.changeGrow();
 
     this.equipmentCategory();
@@ -540,7 +542,7 @@ export class EquipmentService {
       this.equipment = equipment;
     }
 
-    this.equipment.changeUpgrade(this.skillService);
+    this.equipment.changeUpgrade(this.skillService, this.rangeService);
   }
 
   changeGrow(equipment = null) {
@@ -556,7 +558,7 @@ export class EquipmentService {
       this.equipment = equipment;
     }
 
-    this.equipment.changeLevel(this.skillService);
+    this.equipment.changeLevel(this.skillService, this.rangeService);
   }
 
   changeSkillLevel(equipment = null) {
@@ -564,7 +566,7 @@ export class EquipmentService {
       this.equipment = equipment;
     }
 
-    this.equipment.changeSkillLevel(this.skillService);
+    this.equipment.changeSkillLevel(this.skillService, this.rangeService);
   }
 
   private equipmentCategory() {

@@ -91,6 +91,7 @@ import { JpTranslateService } from './services/jptranslate.service';
 import { MasterRanksService } from './services/mr.service';
 import { CheckHashService } from './services/checkHash.service';
 import { TitleService } from './services/title.service';
+import { RangeService } from './services/range.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -196,6 +197,7 @@ export function createTranslateLoader(http: HttpClient) {
     MasterRanksService,
     CheckHashService,
     TitleService,
+    RangeService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler
