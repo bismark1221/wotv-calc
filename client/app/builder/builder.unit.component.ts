@@ -506,7 +506,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.unitService.changeLevel();
   }
 
-  updateLimitLevel() {
+  updateLimitLevel(level) {
+    this.unit.limit.level = level;
     this.unitService.getActiveSkills();
   }
 
