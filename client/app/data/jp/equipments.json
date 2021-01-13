@@ -25187,6 +25187,319 @@
       }
     }
   },
+  "AF_LOT_LW_ARM_028": {
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "slug": "buri-gan-dain",
+    "stats": {
+      "HP": {
+        "min": 55,
+        "max": 872
+      },
+      "DEF": {
+        "min": 1,
+        "max": 20
+      },
+      "SPR": {
+        "min": 1,
+        "max": 10
+      },
+      "EVADE": {
+        "min": -10,
+        "max": -20
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_LW_ARM_028",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "ブリガンダイン"
+          },
+          "dataId": "SK_LW_ARM_028_1",
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ブリガンダイン"
+          },
+          "dataId": "SK_LW_ARM_028_2",
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ブリガンダイン"
+          },
+          "dataId": "SK_LW_ARM_028_3",
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ブリガンダイン"
+          },
+          "dataId": "SK_LW_ARM_028_4",
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ブリガンダイン"
+          },
+          "dataId": "SK_LW_ARM_028_5",
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_028",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_LSWL",
+      "JB_FF4_CECL",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_MONT_01"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ARM_028": 1,
+        "IT_AF_MAT_SAP_03": 30,
+        "IT_AF_MAT_SAP_04": 235,
+        "IT_AF_MAT_ZUUU": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_028": 3,
+        "IT_AF_MAT_SAP_03": 90,
+        "IT_AF_MAT_SAP_04": 335,
+        "IT_AF_MAT_ZUUU": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_028": 7,
+        "IT_AF_MAT_SAP_03": 210,
+        "IT_AF_MAT_SAP_04": 535,
+        "IT_AF_MAT_ZUUU": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_ARM_028": 15,
+        "IT_AF_MAT_SAP_03": 450,
+        "IT_AF_MAT_SAP_04": 985,
+        "IT_AF_MAT_ZUUU": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_ARM_028": 31,
+        "IT_AF_MAT_SAP_03": 930,
+        "IT_AF_MAT_SAP_04": 1955,
+        "IT_AF_MAT_ZUUU": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_ARM_028": 63,
+        "IT_AF_MAT_SAP_03": 1890,
+        "IT_AF_MAT_SAP_04": 3995,
+        "IT_AF_MAT_ZUUU": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LOT_FF1_ARM_002": {
     "names": {
       "en": "アーマーオブライト - Armor of Light"
@@ -36739,9 +37052,9 @@
   },
   "AF_FF14_HLM_001": {
     "names": {
-      "en": "ベイルバーゴネット"
+      "en": "ベイルバーゴネット - Bale Burgeonet"
     },
-    "slug": "beiru-bgo-netto",
+    "slug": "bale-burgeonet",
     "stats": {
       "HP": {
         "min": 34,
@@ -37285,7 +37598,8 @@
       "JB_FF4_KAIN",
       "JB_LW_MSW_FIRE",
       "JB_FF10_ARON",
-      "JB_LW_MONT_01"
+      "JB_LW_MONT_01",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [

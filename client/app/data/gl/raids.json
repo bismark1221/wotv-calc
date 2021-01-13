@@ -3672,5 +3672,426 @@
       }
     ],
     "slug": "two-headed-dragon"
+  },
+  "RAID_GL_07": {
+    "dataId": "RAID_GL_07",
+    "names": {
+      "en": "Forgiven Dissonance",
+      "fr": "Dissonance pardonnée"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_FF14_RAID_01",
+        "names": {
+          "en": "Forgiven Dissonance",
+          "fr": "Dissonance pardonnée"
+        },
+        "stats": {
+          "HP": {
+            "min": 1200,
+            "max": 110000
+          },
+          "TP": {
+            "min": 80,
+            "max": 292
+          },
+          "AP": {
+            "min": 48,
+            "max": 300
+          },
+          "ATK": {
+            "min": 130,
+            "max": 700
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 40,
+            "max": 40
+          },
+          "MAG": {
+            "min": 55,
+            "max": 129
+          },
+          "DEX": {
+            "min": 100,
+            "max": 269
+          },
+          "AGI": {
+            "min": 27,
+            "max": 80
+          },
+          "LUCK": {
+            "min": 95,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "ICE_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "EARTH_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "WIND_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "LIGHTNING_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "WATER_RES": {
+            "min": 30,
+            "max": 30
+          },
+          "LIGHT_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "DARK_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MAGIC_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 50,
+            "max": 50
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "",
+        "element": "light",
+        "image": "ff14boss",
+        "skills": {
+          "SK_FF14BOSS_M_01": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Pillory",
+              "fr": "Pilori"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_02": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_02",
+            "rate": 40,
+            "names": {
+              "en": "Gibbet Cage",
+              "fr": "Gibet de fer"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 60,
+              "maxValue": 80,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_03": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_03",
+            "rate": 0,
+            "names": {
+              "en": "Wooden Horse",
+              "fr": "Cheval de bois"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 10,
+              "w": 2
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_KILLER_DARK_1-100_U": {
+            "effects": [
+              {
+                "type": "DARK_KILLER",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_KILLER_DARK_1-100_U",
+            "rate": 100,
+            "names": {
+              "en": "Dark Eater 1-100 Up",
+              "fr": "Noctophage ↑ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_DEFPIERCE_1-100_U_KISO": {
+            "effects": [
+              {
+                "type": "DEFENSE_PENETRATION",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "DEF Piercing Rate 1-100 Up (Base)",
+              "fr": "Perforation de la DEF ↑ 1-100 (Base)"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          }
+        },
+        "slug": "forgiven-dissonance",
+        "attack": {
+          "names": {
+            "en": "Normal Attack Skill",
+            "fr": "Compétence d'attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_FF14BOSS_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "slash",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "slug": "forgiven-dissonance"
   }
 }

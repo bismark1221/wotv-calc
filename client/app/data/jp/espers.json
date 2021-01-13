@@ -20303,7 +20303,7 @@
   "UN_LW_S_LVAT": {
     "dataId": "UN_LW_S_LVAT",
     "names": {
-      "en": "リヴァイアサン"
+      "en": "リヴァイアサン - Leviathan"
     },
     "rarity": "UR",
     "cost": 40,
@@ -21689,7 +21689,7 @@
         117
       ]
     },
-    "slug": "rivaiasan"
+    "slug": "leviathan"
   },
   "UN_LW_S_TYPN": {
     "dataId": "UN_LW_S_TYPN",
@@ -26586,9 +26586,17 @@
         "effects": [
           {
             "type": "HP",
-            "minValue": 30,
+            "minValue": 50,
             "maxValue": 60,
             "calcType": "percent",
+            "target": "selfSide"
+          },
+          {
+            "type": "REGEN_ATK",
+            "minValue": 5,
+            "maxValue": 10,
+            "calcType": "percent",
+            "turn": 3,
             "target": "selfSide"
           },
           {
@@ -27674,7 +27682,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "ICE_RES",
+                "type": "WATER_RES",
                 "minValue": 4,
                 "maxValue": 4,
                 "calcType": "resistance",
@@ -27699,7 +27707,7 @@
             "sp": 30,
             "effects": [
               {
-                "type": "ICE_RES",
+                "type": "WATER_RES",
                 "minValue": 5,
                 "maxValue": 5,
                 "calcType": "resistance",
@@ -28003,7 +28011,7 @@
             "sp": 40,
             "effects": [
               {
-                "type": "ICE_RES",
+                "type": "WATER_RES",
                 "minValue": 10,
                 "maxValue": 10,
                 "calcType": "resistance",
@@ -28028,7 +28036,7 @@
             "sp": 60,
             "effects": [
               {
-                "type": "ICE_RES",
+                "type": "WATER_RES",
                 "minValue": 6,
                 "maxValue": 6,
                 "calcType": "resistance",

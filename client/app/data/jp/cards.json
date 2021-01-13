@@ -9179,7 +9179,7 @@
   "VC_LW_LVAT": {
     "dataId": "VC_LW_LVAT",
     "names": {
-      "en": "水神激渦　リヴァイアサン"
+      "en": "水神激渦　リヴァイアサン - Divine Maelstrom, Leviathan"
     },
     "cost": 80,
     "rarity": "UR",
@@ -9240,7 +9240,7 @@
       "JUMP": {}
     },
     "image": "lapslvat",
-    "slug": "suijin-uzu-rivaiasan",
+    "slug": "divine-maelstrom-leviathan",
     "partyBuffs": [
       {
         "classic": {
@@ -21057,7 +21057,7 @@
   "VC_LW_ASSASIN": {
     "dataId": "VC_LW_ASSASIN",
     "names": {
-      "en": "教会の刺客"
+      "en": "教会の刺客 - Sanctum Assassins"
     },
     "cost": 50,
     "rarity": "MR",
@@ -21121,7 +21121,7 @@
       "JUMP": {}
     },
     "image": "lapsassn",
-    "slug": "kyoukai-no-shikaku",
+    "slug": "sanctum-assassins",
     "partyBuffs": [
       {
         "classic": {
@@ -23018,7 +23018,7 @@
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
-              "condition": "WIND_ELEMENT",
+              "condition": "ICE_ELEMENT",
               "target": "selfSide"
             }
           ],
@@ -23040,7 +23040,7 @@
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
-              "condition": "WIND_ELEMENT",
+              "condition": "ICE_ELEMENT",
               "target": "selfSide"
             }
           ],
@@ -23062,7 +23062,7 @@
               "maxValue": 20,
               "calcType": "fixe",
               "rate": 200,
-              "condition": "WIND_ELEMENT",
+              "condition": "ICE_ELEMENT",
               "target": "selfSide"
             }
           ],

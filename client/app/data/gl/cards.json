@@ -8824,6 +8824,419 @@
       }
     ]
   },
+  "VC_LW_LVAT": {
+    "dataId": "VC_LW_LVAT",
+    "names": {
+      "en": "Divine Maelstrom, Leviathan",
+      "fr": "Léviathan, le Maelström divin"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 306
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 42,
+        "max": 164
+      },
+      "DEF": {
+        "min": 2,
+        "max": 4
+      },
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapslvat",
+    "slug": "divine-maelstrom-leviathan",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_GS",
+            "fr": "SK_VC_LW_LVAT_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_GS_AW",
+            "fr": "SK_VC_LW_LVAT_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_GSMAX",
+            "fr": "SK_VC_LW_LVAT_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        }
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_P",
+            "fr": "SK_VC_LW_LVAT_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_PAW",
+            "fr": "SK_VC_LW_LVAT_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_LVAT_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_LVAT_PMAX",
+            "fr": "SK_VC_LW_LVAT_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_GLMS",
+              "JB_LW_WAR",
+              "JB_FFT_RAMZ",
+              "JB_FFT_ORND",
+              "JB_FFT_GFGR",
+              "JB_FF1_WROL",
+              "JB_FFT_AGRA",
+              "JB_FFT_DELT",
+              "JB_LW_MKN_FIRE",
+              "JB_FF4_CECL",
+              "JB_FF14_TNCR",
+              "JB_LW_DEAN"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_LVAT_P2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_LVAT_P2",
+            "fr": "SK_GL_VC_LW_LVAT_P2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "SLASH_ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_LVAT_P2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_LVAT_P2AW",
+            "fr": "SK_GL_VC_LW_LVAT_P2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_LVAT_P2MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_LVAT_P2MAX",
+            "fr": "SK_GL_VC_LW_LVAT_P2MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water",
+              "light"
+            ]
+          },
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_GLMS",
+              "JB_LW_WAR",
+              "JB_FFT_RAMZ",
+              "JB_FFT_ORND",
+              "JB_FFT_GFGR",
+              "JB_FF1_WROL",
+              "JB_FFT_AGRA",
+              "JB_FFT_DELT",
+              "JB_LW_MKN_FIRE",
+              "JB_FF4_CECL",
+              "JB_FF14_TNCR",
+              "JB_LW_DEAN"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [],
+          "dataId": "SK_VC_LW_LVAT_PVA",
+          "type": "skill",
+          "mainSkill": true,
+          "names": {
+            "en": "Crash Edge",
+            "fr": "Vague tranchante"
+          },
+          "target": "all",
+          "cost": {
+            "type": "AP",
+            "value": 30
+          },
+          "count": 2,
+          "maxLevel": 99,
+          "range": {
+            "h": 1,
+            "l": 2,
+            "s": 1
+          },
+          "based": "physic",
+          "increaseDamageOnDecreaseHp": 100,
+          "damage": {
+            "minValue": 60,
+            "maxValue": 95,
+            "type": "slash",
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 25,
+              "2": 10,
+              "3": 10,
+              "type": 0
+            }
+          }
+        },
+        "awake": null,
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WAR_FIRE",
+              "JB_LW_KNT_FIRE",
+              "JB_LW_PLD_FIRE",
+              "JB_LW_MGK_FIRE",
+              "JB_LW_RDM_FIRE",
+              "JB_LW_GLMS",
+              "JB_LW_WAR",
+              "JB_FFT_RAMZ",
+              "JB_FFT_ORND",
+              "JB_FFT_GFGR",
+              "JB_FF1_WROL",
+              "JB_FFT_AGRA",
+              "JB_FFT_DELT",
+              "JB_LW_MKN_FIRE",
+              "JB_FF4_CECL",
+              "JB_FF14_TNCR",
+              "JB_LW_DEAN"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -14057,6 +14470,171 @@
           "names": {
             "en": "SK_VC_LW_TNBR_PAW",
             "fr": "SK_VC_LW_TNBR_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      }
+    ]
+  },
+  "VC_LW_ASSASIN": {
+    "dataId": "VC_LW_ASSASIN",
+    "names": {
+      "en": "Sanctum Assassins",
+      "fr": "Assassins de l'église"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 23,
+        "max": 187
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 21,
+        "max": 86
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 21,
+        "max": 86
+      },
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsassn",
+    "slug": "sanctum-assassins",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_GS",
+            "fr": "SK_VC_LW_ASSASIN_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_GSAW",
+            "fr": "SK_VC_LW_ASSASIN_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_P",
+            "fr": "SK_VC_LW_ASSASIN_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ASSASIN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ASSASIN_PAW",
+            "fr": "SK_VC_LW_ASSASIN_PAW"
           },
           "target": "self",
           "maxLevel": 4

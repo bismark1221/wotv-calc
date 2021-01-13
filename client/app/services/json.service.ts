@@ -3048,7 +3048,7 @@ export class JsonService {
     Object.keys(this[this.version].raid).forEach(raidId => {
       const raid = this[this.version].raid[raidId];
 
-      if (raid.home_tex !== 'LAPS_RD_0001' && (raid.home_tex !== 'LAPS_RD_FF14_01' || raidId === 'RAID_ID_11')) {
+      if (raid.home_tex !== 'LAPS_RD_0001' && (raid.home_tex !== 'LAPS_RD_FF14_01' || raidId === 'RAID_ID_11' || raidId === 'RAID_GL_07')) {
         this[this.version].wotvRaids[raidId] = {
           dataId: raidId,
           names: {},

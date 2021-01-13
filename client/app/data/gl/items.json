@@ -4360,6 +4360,20 @@
       "fr": "Pierre d'éveil de Tomberry (3★)"
     }
   },
+  "IT_SB_AW_LVAT_R2": {
+    "dataId": "IT_SB_AW_LVAT_R2",
+    "names": {
+      "en": "Leviathan's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Léviathan (2★)"
+    }
+  },
+  "IT_SB_AW_LVAT_R3": {
+    "dataId": "IT_SB_AW_LVAT_R3",
+    "names": {
+      "en": "Leviathan's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Léviathan (3★)"
+    }
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -5453,6 +5467,14 @@
     "names": {
       "en": "Bale Gauntlet Crafting Recipe",
       "fr": "Recette d'artisanat : Bras de la Noirceur éternelle"
+    },
+    "recipe": true
+  },
+  "IT_AF_FF14_HLM_001": {
+    "dataId": "IT_AF_FF14_HLM_001",
+    "names": {
+      "en": "Bale Burgeonet Crafting Recipe",
+      "fr": "Recette d'artisanat : Bourguignotte maléfique"
     },
     "recipe": true
   },
@@ -6625,6 +6647,13 @@
       "fr": "[Fêtes hivernales - Partie III] Ticket sélectionneur d'unité"
     }
   },
+  "IT_US_SE_R_UR_U_07": {
+    "dataId": "IT_US_SE_R_UR_U_07",
+    "names": {
+      "en": "[New Year's Celebration Part III] Select Unit Summon Ticket",
+      "fr": "Ticket sélectionneur d'unité [Célébration de la nouvelle année - Partie III]"
+    }
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -6735,6 +6764,13 @@
     "names": {
       "en": "[Winter Festivities Part III] Select Vision Card Summon Ticket",
       "fr": "[Fêtes hivernales - Partie III] Ticket sélectionneur d'atout-vision"
+    }
+  },
+  "IT_US_SE_R_UR_V_GL05": {
+    "dataId": "IT_US_SE_R_UR_V_GL05",
+    "names": {
+      "en": "[New Year's Celebration Part III] Select Vision Card Summon Ticket",
+      "fr": "Ticket sélectionneur d'atout-vision [Célébration de la nouvelle année - Partie III]"
     }
   },
   "IT_US_SE_AW-ITEM_04": {
@@ -7388,6 +7424,20 @@
       "fr": "Fragment de l'atout-vision : Guerriers des Ténèbres"
     }
   },
+  "IT_VPI_LW_LVAT": {
+    "dataId": "IT_VPI_LW_LVAT",
+    "names": {
+      "en": "\"Divine Maelstrom, Leviathan\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Léviathan, le Maelström divin"
+    }
+  },
+  "IT_VPI_LW_ASSASIN": {
+    "dataId": "IT_VPI_LW_ASSASIN",
+    "names": {
+      "en": "\"Sanctum Assassins\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Assassins de l'église"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7577,6 +7627,13 @@
       "fr": "Médaille du raid de décembre"
     }
   },
+  "IT_EC_RAID_FF14": {
+    "dataId": "IT_EC_RAID_FF14",
+    "names": {
+      "en": "FFXIV Raid Medal",
+      "fr": "Médaille de raid FFXIV"
+    }
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -7759,6 +7816,13 @@
       "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_19": {
+    "dataId": "IT_US_GL_SE_VPI_19",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_VPI_11": {
     "dataId": "IT_US_SE_VPI_11",
     "names": {
@@ -7892,6 +7956,13 @@
       "fr": "Ticket sélectionneur de 100 livres secrets de l'amélioration"
     }
   },
+  "IT_US_GL_SE_AF_AW_07": {
+    "dataId": "IT_US_GL_SE_AF_AW_07",
+    "names": {
+      "en": "[New Year's Celebration Part III] Select Secret Book of Refinement x100 Summon Ticket",
+      "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -7981,6 +8052,13 @@
     "names": {
       "en": "Ovalite (XL)",
       "fr": "Ovalithe (XL)"
+    }
+  },
+  "IT_KEY_QE_001": {
+    "dataId": "IT_KEY_QE_001",
+    "names": {
+      "en": "Challenge Key",
+      "fr": "Clé de défi"
     }
   }
 }

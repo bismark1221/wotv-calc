@@ -24,6 +24,15 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '13/01',
+        items: [
+          {type: 'esper', dataId: 'UN_LW_S_LVAT'},
+          {type: 'card', dataId: 'VC_LW_LVAT'},
+          {type: 'card', dataId: 'VC_LW_ASSASIN'},
+          {type: 'equipment', dataId: 'AF_FF14_HLM_001'}
+        ]
+      },
+      {
         date: '06/01',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_NIVL'},
@@ -50,17 +59,22 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_LW_CLT_006'},
           {type: 'equipment', dataId: 'AF_LW_MAC_009'}
         ]
-      },
-      {
-        date: '16/12',
-        items: [
-          {type: 'card', dataId: 'VC_LW_LUCA'},
-          {type: 'card', dataId: 'VC_LW_FIGHT'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_002'}
-        ]
       }
     ],
     JP: [
+      {
+        date: '09/01',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_YERM'},
+          {type: 'unit', dataId: 'UN_LW_P_NASR'},
+          {type: 'unit', dataId: 'UN_LW_P_ETRE'},
+
+          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
+          {type: 'card', dataId: 'VC_LW_PNIX'},
+          {type: 'card', dataId: 'VC_LW_LILS2'},
+          {type: 'equipment', dataId: 'AF_LW_ARM_028'}
+        ]
+      },
       {
         date: '23/12',
         items: [
@@ -72,10 +86,7 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_NIER_ACCE_000'},
 
           {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
-          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
-          {type: 'card', dataId: 'VC_LW_PNIX'},
           {type: 'card', dataId: 'VC_LW_MONT2'},
-          {type: 'card', dataId: 'VC_LW_LILS2'},
           {type: 'equipment', dataId: 'AF_LW_SWO_005'},
 
           {type: 'unit', dataId: 'UN_LW_P_GLMS'},
@@ -91,20 +102,6 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_XMAS'},
           {type: 'equipment', dataId: 'AF_LW_BOW_012'},
           {type: 'esper', dataId: 'UN_LW_S_MOGL'}
-        ]
-      },
-      {
-        date: '09/12',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_OMEG'},
-          {type: 'card', dataId: 'VC_LW_OMEG'},
-          {type: 'card', dataId: 'VC_LW_ROBB'},
-          {type: 'equipment', dataId: 'AF_LW_CLT_016'},
-
-          {type: 'unit', dataId: 'UN_LW_P_MDNA'},
-          {type: 'unit', dataId: 'UN_LW_P_OOOO'},
-          {type: 'unit', dataId: 'UN_LW_P_PHBE'},
-          {type: 'esper', dataId: 'UN_LW_S_GLEM'},
         ]
       }
     ]

@@ -45321,5 +45321,629 @@
     "acquisition": {
       "type": "Unknown"
     }
+  },
+  "AF_FF14_HLM_001": {
+    "names": {
+      "en": "Bale Burgeonet",
+      "fr": "Bourguignotte maléfique"
+    },
+    "slug": "bale-burgeonet",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 684
+      },
+      "DEF": {
+        "min": 0,
+        "max": 18
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "AGI": {
+        "min": -5,
+        "max": -3
+      },
+      "CRITIC_RATE": {
+        "min": -16,
+        "max": -32
+      }
+    },
+    "type": "HELM",
+    "dataId": "AF_FF14_HLM_001",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "Barrier",
+          "fr": "Barrière"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SPEAR_1",
+            "fr": "SK_LW_DF_SPEAR_1"
+          },
+          "dataId": "SK_LW_DF_SPEAR_1",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SPEAR_2",
+            "fr": "SK_LW_DF_SPEAR_2"
+          },
+          "dataId": "SK_LW_DF_SPEAR_2",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SPEAR_3",
+            "fr": "SK_LW_DF_SPEAR_3"
+          },
+          "dataId": "SK_LW_DF_SPEAR_3",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SPEAR_4_UR",
+            "fr": "SK_LW_DF_SPEAR_4_UR"
+          },
+          "dataId": "SK_LW_DF_SPEAR_4_UR",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_DF_SPEAR_5_UR",
+            "fr": "SK_LW_DF_SPEAR_5_UR"
+          },
+          "dataId": "SK_LW_DF_SPEAR_5_UR",
+          "effects": [
+            {
+              "type": "PIERCE_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_1",
+            "fr": "SK_FF14_HLM_001_1"
+          },
+          "dataId": "SK_FF14_HLM_001_1",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF14_HLM_001_5",
+            "fr": "SK_FF14_HLM_001_5"
+          },
+          "dataId": "SK_FF14_HLM_001_5",
+          "effects": [
+            {
+              "type": "DISABLE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff14wpn_hlm_001",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_LW_DEAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF14_HLM_001": 1,
+        "IT_AF_MAT_SAP_03": 30,
+        "IT_AF_MAT_SAP_04": 235,
+        "IT_AF_MAT_BOMB": 10,
+        "IT_AF_MAT_DARK_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_FF14_HLM_001": 3,
+        "IT_AF_MAT_SAP_03": 90,
+        "IT_AF_MAT_SAP_04": 335,
+        "IT_AF_MAT_BOMB": 30,
+        "IT_AF_MAT_DARK_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_FF14_HLM_001": 7,
+        "IT_AF_MAT_SAP_03": 210,
+        "IT_AF_MAT_SAP_04": 535,
+        "IT_AF_MAT_BOMB": 70,
+        "IT_AF_MAT_DARK_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_FF14_HLM_001": 15,
+        "IT_AF_MAT_SAP_03": 450,
+        "IT_AF_MAT_SAP_04": 985,
+        "IT_AF_MAT_BOMB": 150,
+        "IT_AF_MAT_DARK_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_FF14_HLM_001": 31,
+        "IT_AF_MAT_SAP_03": 930,
+        "IT_AF_MAT_SAP_04": 1955,
+        "IT_AF_MAT_BOMB": 310,
+        "IT_AF_MAT_DARK_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_FF14_HLM_001": 63,
+        "IT_AF_MAT_SAP_03": 1890,
+        "IT_AF_MAT_SAP_04": 3995,
+        "IT_AF_MAT_BOMB": 630,
+        "IT_AF_MAT_DARK_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
   }
 }
