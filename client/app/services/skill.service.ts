@@ -1329,7 +1329,7 @@ export class SkillService {
     } else {
       switch (effect.target) {
         case 'self' :
-          if (effect.rate && fromEquipment) {
+          if (effect.rate && effect.fromImbue) {
             return html + ' on basic attack' + (effect.rate === 200 ? '' : ' for target');
           } else {
             return html + ' for self';
