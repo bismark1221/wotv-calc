@@ -138,6 +138,7 @@ export class UnitService {
         if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
+          && (!filters.exJob || unit.exJobs.length > 0)
         ) {
           if (filters.job.length === 0) {
             filteredUnits.push(unit);

@@ -22,7 +22,8 @@ export class UnitsComponent implements OnInit {
     element: [],
     job: [],
     limited: [],
-    mainJob: true
+    mainJob: true,
+    exJob: false
   };
   isCollapsedRarity = false;
   isCollapsedElement = false;
@@ -98,6 +99,11 @@ export class UnitsComponent implements OnInit {
 
   toggleMainJob() {
     this.filters.mainJob = !this.filters.mainJob;
+    this.getUnits();
+  }
+
+  toggleExJob() {
+    this.filters.exJob = !this.filters.exJob;
     this.getUnits();
   }
 }
