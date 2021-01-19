@@ -741,7 +741,8 @@ export class JsonService {
     'HELM',
     'CLOTH',
     'ACC',
-    'GLOVE'
+    'GLOVE',
+    'BOOK'
   ];
 
   jobStats = [

@@ -689,6 +689,36 @@
       "en": "グローブのスピネル"
     }
   },
+  "IT_JB_BOOK_01": {
+    "dataId": "IT_JB_BOOK_01",
+    "names": {
+      "en": "本のジェダイト"
+    }
+  },
+  "IT_JB_BOOK_02": {
+    "dataId": "IT_JB_BOOK_02",
+    "names": {
+      "en": "本のアズライト"
+    }
+  },
+  "IT_JB_BOOK_03": {
+    "dataId": "IT_JB_BOOK_03",
+    "names": {
+      "en": "本のチャロアイト"
+    }
+  },
+  "IT_JB_BOOK_04": {
+    "dataId": "IT_JB_BOOK_04",
+    "names": {
+      "en": "本のシトリン"
+    }
+  },
+  "IT_JB_BOOK_05": {
+    "dataId": "IT_JB_BOOK_05",
+    "names": {
+      "en": "本のスピネル"
+    }
+  },
   "IT_JB_MM_COMMON": {
     "dataId": "IT_JB_MM_COMMON",
     "names": {
@@ -2339,6 +2369,36 @@
       "en": "アークロードの記憶・緋"
     }
   },
+  "IT_JB_MM_LIB": {
+    "dataId": "IT_JB_MM_LIB",
+    "names": {
+      "en": "学者の記憶・翠"
+    }
+  },
+  "IT_JB_MM_LIB_2": {
+    "dataId": "IT_JB_MM_LIB_2",
+    "names": {
+      "en": "学者の記憶・碧"
+    }
+  },
+  "IT_JB_MM_LIB_3": {
+    "dataId": "IT_JB_MM_LIB_3",
+    "names": {
+      "en": "学者の記憶・紫"
+    }
+  },
+  "IT_JB_MM_LIB_4": {
+    "dataId": "IT_JB_MM_LIB_4",
+    "names": {
+      "en": "学者の記憶・橘"
+    }
+  },
+  "IT_JB_MM_LIB_5": {
+    "dataId": "IT_JB_MM_LIB_5",
+    "names": {
+      "en": "学者の記憶・緋"
+    }
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -2823,6 +2883,12 @@
     "dataId": "IT_JBEX_AXE",
     "names": {
       "en": "斧の焦印石"
+    }
+  },
+  "IT_JBEX_BOOK": {
+    "dataId": "IT_JBEX_BOOK",
+    "names": {
+      "en": "本の焦印石"
     }
   },
   "IT_UN_AW_FIRE_R2": {
@@ -3827,6 +3893,18 @@
       "en": "リオニス王モントの欠片"
     }
   },
+  "IT_PI_LW_RYEL": {
+    "dataId": "IT_PI_LW_RYEL",
+    "names": {
+      "en": "リューエルの欠片"
+    }
+  },
+  "IT_PI_LW_SIRM": {
+    "dataId": "IT_PI_LW_SIRM",
+    "names": {
+      "en": "シルマの欠片"
+    }
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -4419,6 +4497,18 @@
     "dataId": "IT_SP_LW_MONT_01",
     "names": {
       "en": "リオニス王モントの思珠"
+    }
+  },
+  "IT_SP_LW_RYEL": {
+    "dataId": "IT_SP_LW_RYEL",
+    "names": {
+      "en": "リューエルの思珠"
+    }
+  },
+  "IT_SP_LW_SIRM": {
+    "dataId": "IT_SP_LW_SIRM",
+    "names": {
+      "en": "シルマの思珠"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -5193,6 +5283,12 @@
     "dataId": "IT_AF_AW_GLOVE",
     "names": {
       "en": "精錬の秘伝書（グローブ）"
+    }
+  },
+  "IT_AF_AW_BOOK": {
+    "dataId": "IT_AF_AW_BOOK",
+    "names": {
+      "en": "精錬の秘伝書（本）"
     }
   },
   "IT_AF_AW_ARMOR": {
@@ -5975,6 +6071,27 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_BOK_001": {
+    "dataId": "IT_AF_LW_BOK_001",
+    "names": {
+      "en": "魔法学教本のクラフトレシピ"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_BOK_002": {
+    "dataId": "IT_AF_LW_BOK_002",
+    "names": {
+      "en": "魔獣図鑑のクラフトレシピ"
+    },
+    "recipe": true
+  },
+  "IT_AF_LW_BOK_003": {
+    "dataId": "IT_AF_LW_BOK_003",
+    "names": {
+      "en": "月の書のクラフトレシピ"
+    },
+    "recipe": true
+  },
   "IT_AF_FFT_SWO_001": {
     "dataId": "IT_AF_FFT_SWO_001",
     "names": {
@@ -6619,6 +6736,12 @@
       "en": "【1月】召喚メダルA"
     }
   },
+  "IT_EC_SUMMON_01_02_B": {
+    "dataId": "IT_EC_SUMMON_01_02_B",
+    "names": {
+      "en": "【1月】召喚メダルB"
+    }
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -6719,6 +6842,12 @@
     "dataId": "IT_EC_EV09_1",
     "names": {
       "en": "扇動せし者メダル"
+    }
+  },
+  "IT_EC_EV10_1": {
+    "dataId": "IT_EC_EV10_1",
+    "names": {
+      "en": "リオニスの古文書メダル"
     }
   },
   "IT_EC_FF14_1": {
@@ -8017,6 +8146,12 @@
       "en": "【謹賀新年】秘伝書×100選択召喚券"
     }
   },
+  "IT_US_SE_AF_AW_10": {
+    "dataId": "IT_US_SE_AF_AW_10",
+    "names": {
+      "en": "【武具育成CP】秘伝書×500選択召喚券"
+    }
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -8269,6 +8404,36 @@
       "en": "【2020Xmas】チャロアイト×30選択召喚券"
     }
   },
+  "IT_US_SE_JB_05_09": {
+    "dataId": "IT_US_SE_JB_05_09",
+    "names": {
+      "en": "【2021冬CP】スピネル×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_04_10": {
+    "dataId": "IT_US_SE_JB_04_10",
+    "names": {
+      "en": "【2021冬CP】シトリン×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_03_10": {
+    "dataId": "IT_US_SE_JB_03_10",
+    "names": {
+      "en": "【2021冬CP】チャロアイト×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_02_07": {
+    "dataId": "IT_US_SE_JB_02_07",
+    "names": {
+      "en": "【2021冬CP】アズライト×30選択召喚券"
+    }
+  },
+  "IT_US_SE_JB_01_07": {
+    "dataId": "IT_US_SE_JB_01_07",
+    "names": {
+      "en": "【2021冬CP】ジェダイト×15選択召喚券"
+    }
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -8333,6 +8498,18 @@
     "dataId": "IT_US_SE_SP_LW_02",
     "names": {
       "en": "Xmasユニット思珠×40選択召喚券"
+    }
+  },
+  "IT_US_SE_AF_MAT_01": {
+    "dataId": "IT_US_SE_AF_MAT_01",
+    "names": {
+      "en": "武具素材 大結晶×200選択召喚券"
+    }
+  },
+  "IT_US_SE_AF_MAT_02": {
+    "dataId": "IT_US_SE_AF_MAT_02",
+    "names": {
+      "en": "武具素材 結晶×100選択召喚券"
     }
   },
   "IT_US_G_U_SSR_UR_02": {

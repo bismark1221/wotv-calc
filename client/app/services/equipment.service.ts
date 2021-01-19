@@ -31,7 +31,8 @@ export class EquipmentService {
     'GUN',
     'MACE',
     'FIST',
-    'GLOVE'
+    'GLOVE',
+    'BOOK'
   ];
 
   private armorTypes = [
@@ -62,7 +63,8 @@ export class EquipmentService {
     'HELM': 'Helm',
     'CLOTH': 'Cloth',
     'ACC': 'Accessory',
-    'GLOVE': 'Glove'
+    'GLOVE': 'Glove',
+    'BOOK': 'Book'
   };
 
   private equipmentsAcquisition = {
@@ -134,6 +136,7 @@ export class EquipmentService {
     'AF_LW_SWO_005': 'RECURRENT',
     'AF_LW_BOW_012': 'RECURRENT',
     'AF_LW_SPE_003': 'RECURRENT',
+    'AF_LW_BOK_003': 'RECURRENT',
 
     'AF_LW_SWO_000': 'GENERAL_SHOP',
     'AF_LW_BSW_000': 'GENERAL_SHOP',
@@ -156,6 +159,9 @@ export class EquipmentService {
     'AF_LW_GLO_000': 'GENERAL_SHOP',
     'AF_LW_GLO_001': 'GENERAL_SHOP',
     'AF_LW_GLO_002': 'GENERAL_SHOP',
+    'AF_LW_BOK_000': 'GENERAL_SHOP',
+    'AF_LW_BOK_001': 'GENERAL_SHOP',
+    'AF_LW_BOK_002': 'GENERAL_SHOP',
 
     'AF_LW_SWO_007': 'PACK'
   };

@@ -63,6 +63,17 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '15/01',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_RYEL'},
+          {type: 'unit', dataId: 'UN_LW_P_SIRM'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_000'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_001'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_002'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_003'}
+        ]
+      },
+      {
         date: '09/01',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_YERM'},
@@ -93,15 +104,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_SIMR'},
           {type: 'esper', dataId: 'UN_LW_S_ODIN'},
           {type: 'esper', dataId: 'UN_LW_S_TSLP'}
-        ]
-      },
-      {
-        date: '16/12',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_VKTR_01'},
-          {type: 'card', dataId: 'VC_LW_XMAS'},
-          {type: 'equipment', dataId: 'AF_LW_BOW_012'},
-          {type: 'esper', dataId: 'UN_LW_S_MOGL'}
         ]
       }
     ]
