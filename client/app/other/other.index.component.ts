@@ -16,6 +16,7 @@ export class OtherIndexComponent implements OnInit {
   sort = 'name';
   order = 'asc';
   statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'EVADE', 'ACCURACY'];
+  imageStatsType = ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES', 'SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK'];
 
   constructor(
     private indexService: IndexService,

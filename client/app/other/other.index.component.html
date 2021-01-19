@@ -4,47 +4,65 @@
     <i class="fas fa-spinner fa-pulse fa-5x fa-fw" aria-hidden="true"></i>
   </div>
 
-  <span>
-    The stats shown are for units lvl 99, all job 15 and the board completed
+  <span class="explainationText">
+    The stats shown are for units lvl 99, all job at maxed level and the board completed<br/>
+    You can scroll to the right to show more stats :)
   </span>
 
-  <table class="statsTable" *ngIf="!loading">
-    <tr>
-      <th>
-        <div (click)="changeSort('name')" class="divTH">
-          Unit
-          <span class="spanArrow">
-            <i class="fas" [ngClass]="{
-              'arrowActivated': sort === 'name',
-              'fa-arrow-up': sort !== 'name' || (sort === 'name' && order === 'asc'),
-              'fa-arrow-down': sort === 'name' && order === 'desc'
-            }"></i>
-          </span>
-        </div>
-      </th>
-      <th *ngFor="let type of statsType">
-        <div (click)="changeSort(type)" class="divTH">
-          {{ type }}
-          <span class="spanArrow">
-            <i class="fas" [ngClass]="{
-              'arrowActivated': sort === type,
-              'fa-arrow-up': sort === type && order === 'asc',
-              'fa-arrow-down': sort !== type || (sort === type && order === 'desc')
-            }"></i>
-          </span>
-        </div>
-      </th>
-    </tr>
-    <tbody *ngFor="let unit of units">
+  <div class="tableDiv">
+    <table class="statsTable" *ngIf="!loading">
       <tr>
-        <td>
-          <img class="unitImg" src="assets/units/{{unit.image}}_m.png"/>
-          {{ unit.name }}
-        </td>
-        <td *ngFor="let type of statsType">
-          <span *ngIf="unit.stats[type]">{{ unit.stats[type] }}</span>
-        </td>
+        <th class="unitCol">
+          <div (click)="changeSort('name')" class="divTH">
+            Unit
+            <span class="spanArrow">
+              <i class="fas" [ngClass]="{
+                'arrowActivated': sort === 'name',
+                'fa-arrow-up': sort !== 'name' || (sort === 'name' && order === 'asc'),
+                'fa-arrow-down': sort === 'name' && order === 'desc'
+              }"></i>
+            </span>
+          </div>
+        </th>
+        <th *ngFor="let type of statsType">
+          <div (click)="changeSort(type)" class="divTH">
+            {{ type }}
+            <span class="spanArrow">
+              <i class="fas" [ngClass]="{
+                'arrowActivated': sort === type,
+                'fa-arrow-up': sort === type && order === 'asc',
+                'fa-arrow-down': sort !== type || (sort === type && order === 'desc')
+              }"></i>
+            </span>
+          </div>
+        </th>
+        <th *ngFor="let type of imageStatsType">
+          <div (click)="changeSort(type)" class="divTH">
+            <img class="buffImg" title="{{ type }}" src="{{ '/assets/buffs/' + type.toLowerCase() + '.png' }}">
+            <span class="spanArrow">
+              <i class="fas" [ngClass]="{
+                'arrowActivated': sort === type,
+                'fa-arrow-up': sort === type && order === 'asc',
+                'fa-arrow-down': sort !== type || (sort === type && order === 'desc')
+              }"></i>
+            </span>
+          </div>
+        </th>
       </tr>
-    </tbody>
-  </table>
+      <tbody *ngFor="let unit of units">
+        <tr>
+          <td class="unitCol colName">
+            <img class="unitImg" src="assets/units/{{unit.image}}_m.png"/>
+            {{ unit.name }}
+          </td>
+          <td *ngFor="let type of statsType">
+            <span *ngIf="unit.stats[type]">{{ unit.stats[type] }}</span>
+          </td>
+          <td *ngFor="let type of imageStatsType">
+            <span *ngIf="unit.stats[type]">{{ unit.stats[type] }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

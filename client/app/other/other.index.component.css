@@ -9,10 +9,15 @@ th {
   margin-top: 20px;
 }
 
-.loadingBlock {
-  margin: auto;
-  padding: 20px;
-  text-align: center;
+.tableDiv {
+  width: 1300px;
+  overflow-y: auto;
+}
+
+.tableDiv, .tableDiv .statsTable {
+  transform:rotateX(180deg);
+  -ms-transform:rotateX(180deg); /* IE 9 */
+  -webkit-transform:rotateX(180deg); /* Safari and Chrome */
 }
 
 .statsTable {
@@ -39,8 +44,23 @@ th {
 
 .divTH {
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .divTH:hover .fas {
   display: inline-block !important;
+}
+
+.unitCol {
+  min-width: 440px;
+  position: sticky;
+  left: 0px;
+}
+
+.colName {
+  background-color: var(--body-background);
+}
+
+.buffImg {
+  width: 40px;
 }
