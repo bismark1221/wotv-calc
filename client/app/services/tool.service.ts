@@ -28,8 +28,8 @@ export class ToolService {
 
   sortByName(items, order = 'asc') {
     items.sort((a: any, b: any) => {
-      const x = this.i(a.getName(this.translateService));
-      const y = this.i(b.getName(this.translateService));
+      const x = this.i(a.name ? a.name : a.getName(this.translateService));
+      const y = this.i(b.name ? b.name : b.getName(this.translateService));
 
       const xN = x.replace(this.re, '\0$1\0').replace(/\0$/, '').replace(/^\0/, '').split('\0');
       const yN = y.replace(this.re, '\0$1\0').replace(/\0$/, '').replace(/^\0/, '').split('\0');

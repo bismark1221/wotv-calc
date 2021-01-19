@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
-import { UnitService } from '../services/unit.service';
+import { IndexService } from '../services/index.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
-import { JobService } from '../services/job.service';
 import { ToolService } from '../services/tool.service';
 
 @Component({
@@ -16,12 +15,10 @@ export class OtherIndexComponent implements OnInit {
   units = [];
   sort = 'name';
   order = 'asc';
-  jobs = [];
   statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'EVADE', 'ACCURACY'];
-  loading = false;
 
   constructor(
-    private unitService: UnitService,
+    private indexService: IndexService,
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
@@ -32,16 +29,14 @@ export class OtherIndexComponent implements OnInit {
   ngOnInit() {
     this.navService.setTitle('Index');
 
-    this.loading = true;
-
     this.getUnits();
-    this.loading = false;
   }
 
   getUnits() {
-    const units = this.unitService.getUnits();
-    units.forEach(unit => {
-      this.units.push(this.unitService.selectUnitForBuilder(unit.dataId, null, true));
+    this.units = this.indexService.getUnits();
+
+    this.units.forEach(unit => {
+      unit.name = this.nameService.getName(unit);
     });
 
     this.sortTable();
@@ -83,9 +78,9 @@ export class OtherIndexComponent implements OnInit {
           return this.order === 'asc' ? 1 : -1;
         }
 
-        if (a.stats[this.sort].total > b.stats[this.sort].total) {
+        if (a.stats[this.sort] > b.stats[this.sort]) {
           return this.order === 'asc' ? 1 : -1;
-        } else if (a.stats[this.sort].total < b.stats[this.sort].total) {
+        } else if (a.stats[this.sort] < b.stats[this.sort]) {
           return this.order === 'asc' ? -1 : 1;
         }
 

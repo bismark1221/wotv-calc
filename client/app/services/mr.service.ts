@@ -33,16 +33,16 @@ export class MasterRanksService {
     private firestore: AngularFirestore
   ) {}
 
-  private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
+  private getRaw(forcedVersion = null) {
+    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
       return GL_MRS;
     } else {
       return JP_MRS;
     }
   }
 
-  getMRs() {
-    const rawMRs = JSON.parse(JSON.stringify(this.getRaw()));
+  getMRs(forcedVersion = null) {
+    const rawMRs = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
 
     this.dataMasterRanks = rawMRs;
     return this.dataMasterRanks;
@@ -72,7 +72,7 @@ export class MasterRanksService {
     return this.masterRanks;
   }
 
-  getMasterRanksForBuilder(forceEmptyMasterRanks = false) {
+  getMasterRanksForBuilder(forceEmptyMasterRanks = false, forcedVersion = null) {
     if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
       this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
 
@@ -98,7 +98,7 @@ export class MasterRanksService {
 
     return {
       data: this.masterRanks,
-      ranks: this.getMRs()
+      ranks: this.getMRs(forcedVersion)
     };
   }
 

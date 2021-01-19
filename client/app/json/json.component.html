@@ -1,4 +1,4 @@
-<table>
+<table style="display: inline-block; vertical-align: top;">
   <tr>
     <td>
       ### GL Units ###
@@ -147,6 +147,28 @@
       <div>
         <textarea id="rawJson">{{ JPRomaji | json }}</textarea>
       </div>
+    </td>
+  </tr>
+</table>
+
+<table style="display: inline-block; vertical-align: top;">
+  <tr>
+    <td>
+      ### GL Index ###
+      <div>
+        <textarea id="rawJson">{{ GLIndex | json }}</textarea>
+      </div>
+    </td>
+    <td>
+      ### JP Index ###
+      <div>
+        <textarea id="rawJson">{{ JPIndex | json }}</textarea>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button (click)="generateIndex()">Generate Index</button>
     </td>
   </tr>
 </table>

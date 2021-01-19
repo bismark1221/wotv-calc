@@ -42,7 +42,7 @@
           {{ unit.name }}
         </td>
         <td *ngFor="let type of statsType">
-          <span *ngIf="unit.stats[type]">{{ unit.stats[type].total }}</span>
+          <span *ngIf="unit.stats[type]">{{ unit.stats[type] }}</span>
         </td>
       </tr>
     </tbody>

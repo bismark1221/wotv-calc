@@ -21,17 +21,17 @@ export class JobService {
     private toolService: ToolService
   ) {}
 
-  private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
+  private getRaw(forcedVersion = null) {
+    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
       return GL_JOBS;
     } else {
       return JP_JOBS;
     }
   }
 
-  getJobs() {
+  getJobs(forcedVersion = null) {
     const jobs = [];
-    const rawJobs = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawJobs = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
 
     Object.keys(rawJobs).forEach(jobId => {
       const job = new Job();
@@ -66,8 +66,8 @@ export class JobService {
     return jobs;
   }
 
-  getJob(id: string): Job {
-    this.getJobs();
+  getJob(id, forcedVersion = null): Job {
+    this.getJobs(forcedVersion);
 
     return this.jobs.find(job => job.dataId === id);
   }

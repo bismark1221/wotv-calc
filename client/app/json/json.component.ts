@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { JsonService } from '../services/json.service';
+import { UnitService } from '../services/unit.service';
 
 @Component({
   selector: 'app-json',
@@ -18,6 +19,7 @@ export class JsonComponent implements OnInit {
   GLMasterRanks = {};
   GLPlayerTitles = {};
   GLGuildTitles = {};
+  GLIndex = {};
 
   JPunits = {};
   JPvisionCards = {};
@@ -29,10 +31,14 @@ export class JsonComponent implements OnInit {
   JPMasterRanks = {};
   JPPlayerTitles = {};
   JPGuildTitles = {};
+  JPIndex = {};
 
   JPRomaji = {};
 
-  constructor(private jsonService: JsonService) {}
+  constructor(
+    private jsonService: JsonService,
+    private unitService: UnitService
+  ) {}
 
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
@@ -99,6 +105,30 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPRomaji = response.translate.jpRomaji;
+    });
+  }
+
+  generateIndex() {
+    ['GL', 'JP'].forEach(version => {
+      this[version + 'Index'] = {
+        units: []
+      };
+      const units = this.unitService.getUnits(version);
+
+      units.forEach(unit => {
+        const buildedUnit = this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
+
+        const stats = {};
+        Object.keys(buildedUnit.stats).forEach(statType => {
+          stats[statType] = buildedUnit.stats[statType].total;
+        });
+
+        this[version + 'Index'].units.push({
+          'names': buildedUnit.names,
+          'stats': stats,
+          'image': buildedUnit.image,
+        });
+      });
     });
   }
 }

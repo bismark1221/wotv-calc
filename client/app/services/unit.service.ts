@@ -80,17 +80,17 @@ export class UnitService {
     private toolService: ToolService
   ) {}
 
-  private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
+  private getRaw(forcedVersion = null) {
+    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
       return GL_UNITS;
     } else {
       return JP_UNITS;
     }
   }
 
-  getUnits() {
+  getUnits(forcedVersion = null) {
     const units: Unit[] = [];
-    const rawUnits = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawUnits = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
 
     Object.keys(rawUnits).forEach(unitId => {
       const unit = new Unit();
@@ -160,8 +160,8 @@ export class UnitService {
     }
   }
 
-  getUnit(id) {
-    this.getUnits();
+  getUnit(id, forcedVersion = null) {
+    this.getUnits(forcedVersion);
 
     return this.units.find(unit => unit.dataId === id);
   }
@@ -248,15 +248,15 @@ export class UnitService {
     return data;
   }
 
-  selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false) {
+  selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, forcedVersion = null) {
     this.unit = new Unit();
-    this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId))), this.translateService);
+    this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId, forcedVersion))), this.translateService);
     this.unit.name = this.unit.getName(this.translateService);
     this.unit.formatUpgrades();
 
     this.unit.jobsData = [];
     this.unit.jobs.forEach(jobId => {
-      const job = this.jobService.getJob(jobId);
+      const job = this.jobService.getJob(jobId, forcedVersion);
       job.name = job.getName(this.translateService);
       job.level = 1;
       this.unit.jobsData.push(job);
@@ -265,7 +265,7 @@ export class UnitService {
 
     this.unit.exJobsData = [];
     this.unit.exJobs.forEach(jobId => {
-      const job = this.jobService.getJob(jobId);
+      const job = this.jobService.getJob(jobId, forcedVersion);
       this.unit.exJobsData.push(job);
     });
 
