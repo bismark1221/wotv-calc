@@ -3017,6 +3017,75 @@
         "HEAL_POWER": 30
       },
       "image": "lapsrval"
+    },
+    {
+      "names": {
+        "en": "Sakura",
+        "fr": "Sakura"
+      },
+      "stats": {
+        "HP": 2203,
+        "TP": 146,
+        "AP": 165,
+        "ATK": 74,
+        "DEF": 10,
+        "SPR": 4,
+        "MAG": 342,
+        "DEX": 172,
+        "AGI": 59,
+        "LUCK": 218,
+        "DARK_RES": -10,
+        "SLASH_RES": -10,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 15,
+        "CONFUSION_RES": 50,
+        "SLOW_RES": 50,
+        "DOOM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 123,
+        "CRITIC_RATE": 8,
+        "LIGHT_ATK": 15
+      },
+      "image": "lapssakr"
+    },
+    {
+      "names": {
+        "en": "Ahlim",
+        "fr": "Alym"
+      },
+      "stats": {
+        "HP": 2323,
+        "TP": 105,
+        "AP": 89,
+        "ATK": 326,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 51,
+        "DEX": 180,
+        "AGI": 61,
+        "LUCK": 221,
+        "EARTH_RES": -15,
+        "WATER_RES": 15,
+        "SLASH_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 10,
+        "PARALYZE_RES": 50,
+        "CHARM_RES": 50,
+        "STOP_RES": -25,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 16,
+        "CRITIC_RATE": 13,
+        "LIGHTNING_ATK": 15,
+        "ATTACK_RES": 10,
+        "EVADE": 10
+      },
+      "image": "lapsalim"
     }
   ]
 }
