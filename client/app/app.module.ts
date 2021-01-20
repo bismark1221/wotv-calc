@@ -20,6 +20,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -51,6 +52,7 @@ import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
+import { OtherTestComponent } from './other/other.test.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -145,7 +147,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherComponent,
     OtherTitlesComponent,
     OtherIndexComponent,
-    OtherJobPlannerComponent
+    OtherJobPlannerComponent,
+    OtherTestComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
@@ -174,7 +177,8 @@ export function createTranslateLoader(http: HttpClient) {
     UiSwitchModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ClickOutsideModule
   ],
   providers: [
     UnitService,

@@ -1,0 +1,38 @@
+<div class="units">
+  <div class="leftBlock">
+
+  </div>
+
+
+
+  <div class="rightBlock">
+    <div class="upperBlock" >
+      <div (clickOutside)="closeDropDown()">
+        <div class="searchBlock" >
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="searchInput" type="text" placeholder="Search for a character by name" (ngModelChange)="updateSearch()" [(ngModel)]="searchText">
+        </div>
+
+
+
+
+        <div *ngIf='showDropDown' class='search-drop-down' >
+          <div (click)='selectValue(tag)' class='search-results' *ngFor="let tag of tags "><!-- | searchFilter: getSearchValue() -->
+            <a [innerHTML]="tag.display "><!-- | letterBold: getSearchValue() -->
+              {{ tag.display }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+</div>

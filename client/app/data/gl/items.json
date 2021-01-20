@@ -2344,6 +2344,76 @@
       "fr": "Souvenir de Sniper (Rouge)"
     }
   },
+  "IT_JB_MM_LW_SAKR": {
+    "dataId": "IT_JB_MM_LW_SAKR",
+    "names": {
+      "en": "Sage of Mysidia's Memory (Green)",
+      "fr": "Souvenir de Sage de Mysidia (Vert)"
+    }
+  },
+  "IT_JB_MM_LW_SAKR_2": {
+    "dataId": "IT_JB_MM_LW_SAKR_2",
+    "names": {
+      "en": "Sage of Mysidia's Memory (Blue)",
+      "fr": "Souvenir de Sage de Mysidia (Bleu)"
+    }
+  },
+  "IT_JB_MM_LW_SAKR_3": {
+    "dataId": "IT_JB_MM_LW_SAKR_3",
+    "names": {
+      "en": "Sage of Mysidia's Memory (Purple)",
+      "fr": "Souvenir de Sage de Mysidia (Violet)"
+    }
+  },
+  "IT_JB_MM_LW_SAKR_4": {
+    "dataId": "IT_JB_MM_LW_SAKR_4",
+    "names": {
+      "en": "Sage of Mysidia's Memory (Yellow)",
+      "fr": "Souvenir de Sage de Mysidia (Jaune)"
+    }
+  },
+  "IT_JB_MM_LW_SAKR_5": {
+    "dataId": "IT_JB_MM_LW_SAKR_5",
+    "names": {
+      "en": "Sage of Mysidia's Memory (Red)",
+      "fr": "Souvenir de Sage de Mysidia (Rouge)"
+    }
+  },
+  "IT_JB_MM_MMC": {
+    "dataId": "IT_JB_MM_MMC",
+    "names": {
+      "en": "Kotodama Wielder's Memory (Green)",
+      "fr": "Souvenir de Spécialiste de Kotodama (Vert)"
+    }
+  },
+  "IT_JB_MM_MMC_2": {
+    "dataId": "IT_JB_MM_MMC_2",
+    "names": {
+      "en": "Kotodama Wielder's Memory (Blue)",
+      "fr": "Souvenir de Spécialiste de Kotodama (Bleu)"
+    }
+  },
+  "IT_JB_MM_MMC_3": {
+    "dataId": "IT_JB_MM_MMC_3",
+    "names": {
+      "en": "Kotodama Wielder's Memory (Purple)",
+      "fr": "Souvenir de Spécialiste de Kotodama (Violet)"
+    }
+  },
+  "IT_JB_MM_MMC_4": {
+    "dataId": "IT_JB_MM_MMC_4",
+    "names": {
+      "en": "Kotodama Wielder's Memory (Yellow)",
+      "fr": "Souvenir de Spécialiste de Kotodama (Jaune)"
+    }
+  },
+  "IT_JB_MM_MMC_5": {
+    "dataId": "IT_JB_MM_MMC_5",
+    "names": {
+      "en": "Kotodama Wielder's Memory (Red)",
+      "fr": "Souvenir de Spécialiste de Kotodama (Rouge)"
+    }
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3128,6 +3198,41 @@
       "fr": "Fragment de pensée arc-en-ciel"
     }
   },
+  "IT_AW_PIECE_UR": {
+    "dataId": "IT_AW_PIECE_UR",
+    "names": {
+      "en": "Rainbow-Imbued Fragment of Thought",
+      "fr": "Éclat de pensée arc-en-ciel"
+    }
+  },
+  "IT_AW_PIECE_SSR": {
+    "dataId": "IT_AW_PIECE_SSR",
+    "names": {
+      "en": "Azure-Imbued Fragment of Thought",
+      "fr": "Éclat de pensée azur"
+    }
+  },
+  "IT_AW_PIECE_SR": {
+    "dataId": "IT_AW_PIECE_SR",
+    "names": {
+      "en": "Gold-Imbued Fragment of Thought",
+      "fr": "Éclat de pensée doré"
+    }
+  },
+  "IT_AW_PIECE_R": {
+    "dataId": "IT_AW_PIECE_R",
+    "names": {
+      "en": "Silver-Imbued Fragment of Thought",
+      "fr": "Éclat de pensée argenté"
+    }
+  },
+  "IT_AW_PIECE_N": {
+    "dataId": "IT_AW_PIECE_N",
+    "names": {
+      "en": "Bronze-Imbued Fragment of Thought",
+      "fr": "Éclat de pensée cuivré"
+    }
+  },
   "IT_PI_LW_MONT": {
     "dataId": "IT_PI_LW_MONT",
     "names": {
@@ -3770,6 +3875,20 @@
     "names": {
       "en": "Livialle Unit Shard",
       "fr": "Fragment d'unité de Liviale"
+    }
+  },
+  "IT_PI_LW_SAKR": {
+    "dataId": "IT_PI_LW_SAKR",
+    "names": {
+      "en": "Sakura Unit Shard",
+      "fr": "Fragment d'unité de Sakura"
+    }
+  },
+  "IT_PI_LW_ALIM": {
+    "dataId": "IT_PI_LW_ALIM",
+    "names": {
+      "en": "Ahlim Unit Shard",
+      "fr": "Fragment d'unité d'Alym"
     }
   },
   "IT_SB_EXP_FIRE_01": {
@@ -5478,6 +5597,14 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_ROD_019": {
+    "dataId": "IT_AF_LW_ROD_019",
+    "names": {
+      "en": "Prunus Lamina Crafting Recipe",
+      "fr": "Recette d'artisanat : Prunus Lamina"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -5800,6 +5927,13 @@
       "fr": "Médaille des Fêtes hivernales"
     }
   },
+  "IT_EC_MEDAL_W2021": {
+    "dataId": "IT_EC_MEDAL_W2021",
+    "names": {
+      "en": "Winter 2021 Medal",
+      "fr": "Médaille du Spécial hiver 2021"
+    }
+  },
   "IT_EC_MEDAL_GF_A": {
     "dataId": "IT_EC_MEDAL_GF_A",
     "names": {
@@ -5987,6 +6121,13 @@
     "names": {
       "en": "January Summon Medal A",
       "fr": "Médaille d'invocation A [Janvier]"
+    }
+  },
+  "IT_EC_SUMMON_01_02_B": {
+    "dataId": "IT_EC_SUMMON_01_02_B",
+    "names": {
+      "en": "January Summon Medal B",
+      "fr": "Médaille d'invocation B [Janvier]"
     }
   },
   "IT_EC_FFT_1": {
@@ -6241,6 +6382,13 @@
       "fr": "Ticket sélectionneur de 340 fragments de pensée élémentaires"
     }
   },
+  "IT_US_GL_SE_PI_COM_4": {
+    "dataId": "IT_US_GL_SE_PI_COM_4",
+    "names": {
+      "en": "Select Element Fragment of Thought x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 fragments de pensée élémentaires"
+    }
+  },
   "IT_US_SE_PI_COM_02": {
     "dataId": "IT_US_SE_PI_COM_02",
     "names": {
@@ -6444,6 +6592,13 @@
       "fr": "Ticket d'invocation d'unité garantie [A]"
     }
   },
+  "IT_US_G_BEGINNER_01": {
+    "dataId": "IT_US_G_BEGINNER_01",
+    "names": {
+      "en": "New Players' First 7 Days Only — UR Unit Guaranteed FREE 10x Summon Ticket",
+      "fr": "7 premiers jours du débutant seulement - Ticket d'invocation x10 GRATUITE d'unité UR garantie"
+    }
+  },
   "IT_US_G_V_R_UR_01": {
     "dataId": "IT_US_G_V_R_UR_01",
     "names": {
@@ -6612,6 +6767,41 @@
       "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 15 jades"
     }
   },
+  "IT_US_SE_JB_GL_05_01": {
+    "dataId": "IT_US_SE_JB_GL_05_01",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] Select Spinel x30 Summon Ticket",
+      "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 30 spinelles"
+    }
+  },
+  "IT_US_SE_JB_GL_04_01": {
+    "dataId": "IT_US_SE_JB_GL_04_01",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] Select Citrine x30 Summon Ticket",
+      "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 30 citrines"
+    }
+  },
+  "IT_US_SE_JB_GL_03_01": {
+    "dataId": "IT_US_SE_JB_GL_03_01",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] Select Charoite x30 Summon Ticket",
+      "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 30 charoïtes"
+    }
+  },
+  "IT_US_SE_JB_GL_02_01": {
+    "dataId": "IT_US_SE_JB_GL_02_01",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] Select Azurite x30 Summon Ticket",
+      "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 30 azurites"
+    }
+  },
+  "IT_US_SE_JB_GL_01_01": {
+    "dataId": "IT_US_SE_JB_GL_01_01",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] Select Jadeite x15 Summon Ticket",
+      "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 15 jades"
+    }
+  },
   "IT_US_SE_UR_U_01": {
     "dataId": "IT_US_SE_UR_U_01",
     "names": {
@@ -6651,7 +6841,7 @@
     "dataId": "IT_US_SE_R_UR_U_07",
     "names": {
       "en": "[New Year's Celebration Part III] Select Unit Summon Ticket",
-      "fr": "Ticket sélectionneur d'unité [Célébration de la nouvelle année - Partie III]"
+      "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur d'unité"
     }
   },
   "IT_US_SE_AW-ITEM_01": {
@@ -6713,8 +6903,8 @@
   "IT_US_G_U_SSR_UR_09": {
     "dataId": "IT_US_G_U_SSR_UR_09",
     "names": {
-      "en": "[Chapter 10 Release] MR+ Guaranteed Vision Card Summon Ticket",
-      "fr": "[Sortie du chapitre 10 !] Ticket d'invocation d'atout-vision MR+ garanti"
+      "en": "IT_US_G_U_SSR_UR_09",
+      "fr": "IT_US_G_U_SSR_UR_09"
     }
   },
   "IT_US_G_U_SSR_UR_10": {
@@ -6729,6 +6919,13 @@
     "names": {
       "en": "[Winter Festivities Part I] MR+ Guaranteed Unit Summon Ticket",
       "fr": "[Fêtes hivernales - Partie I] Ticket d'invocation d'unité MR+ garantie"
+    }
+  },
+  "IT_US_G_U_SSR_UR_12": {
+    "dataId": "IT_US_G_U_SSR_UR_12",
+    "names": {
+      "en": "[Winter 2021 Campaign Part I] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "Spécial hiver 2021 [Partie I] - Ticket d'invocation d'unité MR+ garantie"
     }
   },
   "IT_US_SE_UR_V_01": {
@@ -6770,7 +6967,7 @@
     "dataId": "IT_US_SE_R_UR_V_GL05",
     "names": {
       "en": "[New Year's Celebration Part III] Select Vision Card Summon Ticket",
-      "fr": "Ticket sélectionneur d'atout-vision [Célébration de la nouvelle année - Partie III]"
+      "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur d'atout-vision"
     }
   },
   "IT_US_SE_AW-ITEM_04": {
@@ -6785,6 +6982,13 @@
     "names": {
       "en": "Select Awakening Prism x200 Summon Ticket",
       "fr": "Ticket sélectionneur de 200 prismes d'éveil"
+    }
+  },
+  "IT_US_SE_AW-ITEM_06": {
+    "dataId": "IT_US_SE_AW-ITEM_06",
+    "names": {
+      "en": "Select Awakening Prism x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 prismes d'éveil"
     }
   },
   "IT_VPI_LW_GLEM": {
@@ -7378,7 +7582,7 @@
   "IT_VPI_LW_LUCA": {
     "dataId": "IT_VPI_LW_LUCA",
     "names": {
-      "en": "“New Test Subjects” Vision Card Shard",
+      "en": "\"New Test Subjects\" Vision Card Shard",
       "fr": "Fragment de l'atout-vision : Nouveau sujet de recherche"
     }
   },
@@ -7863,6 +8067,13 @@
     "names": {
       "en": "[New Year's] Select UR Unit Shard x80 Summon Ticket",
       "fr": "[Nouvelle année] Ticket sélectionneur de 80 fragments d'unité UR"
+    }
+  },
+  "IT_US_SE_PI_17": {
+    "dataId": "IT_US_SE_PI_17",
+    "names": {
+      "en": "Select FFBE UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité FFBE UR garantie"
     }
   },
   "IT_US_SE_PI_GL00": {

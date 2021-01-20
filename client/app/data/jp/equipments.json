@@ -19027,9 +19027,9 @@
   },
   "AF_LOT_LW_ROD_019": {
     "names": {
-      "en": "プルナスラーミナ"
+      "en": "プルナスラーミナ - Prunus Lamina"
     },
-    "slug": "puru-nasu-r-mina",
+    "slug": "prunus-lamina",
     "stats": {
       "HP": {
         "min": 9,
@@ -19642,7 +19642,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19696,7 +19697,10 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire"
+      }
     }
   },
   "AF_LOT_FF10_ROD_000": {
@@ -51618,9 +51622,9 @@
   },
   "AF_CLT_LW_SAKR_1": {
     "names": {
-      "en": "サクラの服"
+      "en": "サクラの服 - Sakura's Clothes"
     },
-    "slug": "sakura-no-fuku",
+    "slug": "sakuras-clothes",
     "stats": {
       "HP": {
         "min": 422,
@@ -51727,7 +51731,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51740,9 +51745,9 @@
   },
   "AF_SPE_LW_ALIM_1": {
     "names": {
-      "en": "古びた薙刀"
+      "en": "古びた薙刀 - Antique Naginata"
     },
-    "slug": "furubi-ta-naginata",
+    "slug": "antique-naginata",
     "stats": {
       "HP": {
         "min": 68,
@@ -51807,7 +51812,8 @@
       "JB_LW_DRG_FIRE",
       "JB_LW_GRSR",
       "JB_FF4_KAIN",
-      "JB_NIER_N9TS"
+      "JB_NIER_N9TS",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -56835,9 +56841,9 @@
   },
   "AF_ROD_LW_SAKR_2": {
     "names": {
-      "en": "サクラ杖"
+      "en": "サクラ杖 - Sakura's Staff"
     },
-    "slug": "sakura-tsue",
+    "slug": "sakuras-staff",
     "stats": {
       "HP": {
         "min": 15,
@@ -56886,7 +56892,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57964,8 +57971,10 @@
       "JB_FF4_CECL",
       "JB_FF4_ROSA",
       "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
       "JB_LW_DEAN",
-      "JB_LW_ARC_FIRE"
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR"
     ],
     "equippableUnits": [],
     "materials": [

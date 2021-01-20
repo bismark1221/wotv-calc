@@ -22,6 +22,7 @@ import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
+import { OtherTestComponent } from './other/other.test.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -53,6 +54,7 @@ const ROUTES: Routes = [
       { path: 'titles', component: OtherTitlesComponent },
       { path: 'index', component: OtherIndexComponent },
       { path: 'jobplanner', component: OtherJobPlannerComponent },
+      { path: 'test', component: OtherTestComponent },
     ]
   },
 
@@ -98,6 +100,7 @@ const ROUTES: Routes = [
       { path: 'titles', component: OtherTitlesComponent },
       { path: 'index', component: OtherIndexComponent },
       { path: 'jobplanner', component: OtherJobPlannerComponent },
+      { path: 'test', component: OtherTestComponent },
     ]
   },
 
