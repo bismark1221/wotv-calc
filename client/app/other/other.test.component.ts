@@ -33,7 +33,6 @@ export class OtherTestComponent implements OnInit {
 
   closeDropDown() {
     this.showDropDown = false;
-    console.log("foo")
   }
 
   openDropDown() {
