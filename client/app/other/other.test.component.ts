@@ -104,6 +104,9 @@ export class OtherTestComponent implements OnInit {
     this.getUnits();
   }
 
+  filterEquipment(type, value) {
+  }
+
   toggleMainJob() {
     this.filters.mainJob = !this.filters.mainJob;
     this.filters.subJob = false;
