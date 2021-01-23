@@ -70,6 +70,8 @@ export class HomeComponent {
           {type: 'esper', dataId: 'UN_LW_S_RAMU'},
           {type: 'esper', dataId: 'UN_LW_S_IGNT'},
           {type: 'equipment', dataId: 'AF_LW_ROD_007'},
+          {type: 'equipment', dataId: 'AF_LW_ARM_005'},
+          {type: 'equipment', dataId: 'AF_LW_FTW_001'},
         ]
       },
       {
