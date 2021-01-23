@@ -13688,6 +13688,355 @@
       }
     ]
   },
+  "VC_LW_CMLO": {
+    "dataId": "VC_LW_CMLO",
+    "names": {
+      "en": "夢幻英雄譚"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 230
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 31,
+        "max": 122
+      },
+      "DEF": {
+        "min": 2,
+        "max": 6
+      },
+      "SPR": {},
+      "MAG": {
+        "min": 32,
+        "max": 124
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapscmlo",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "HP",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "TP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "TP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "TP",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "percent",
+              "condition": "EARTH_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CMLO_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CMLO_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "mugen-eiyuutan"
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -23135,6 +23484,281 @@
             "type": "elem",
             "items": [
               "ice"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_CORL": {
+    "dataId": "VC_LW_CORL",
+    "names": {
+      "en": "災厄魔豹　クアール"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 272
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 23,
+        "max": 94
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 11,
+        "max": 47
+      },
+      "DEX": {
+        "min": 11,
+        "max": 42
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapscorl",
+    "slug": "saiyaku-ma-hyou-kuru",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "condition": "LIGHTNING_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LIGHTNING_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "LIGHTNING_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "DEX",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "lightning"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_GSAW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_GSAW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "lightning"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 8,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "LIGHTNING_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CORL_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CORL_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "lightning"
             ]
           }
         ]

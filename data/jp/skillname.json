@@ -4677,6 +4677,10 @@
             "value": "にらみ"
         },
         {
+            "key": "SK_ARMN_M_01_BTL",
+            "value": "にらみ"
+        },
+        {
             "key": "SK_ARMN_M_02",
             "value": "悪魔の視線"
         },
@@ -4774,6 +4778,10 @@
         },
         {
             "key": "SK_CACT_M_02",
+            "value": "針万本"
+        },
+        {
+            "key": "SK_CACT_M_02_2",
             "value": "針万本"
         },
         {
@@ -6153,6 +6161,22 @@
             "value": "転生の炎"
         },
         {
+            "key": "SK_CORL_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_CORL_M_01",
+            "value": "ブラスター"
+        },
+        {
+            "key": "SK_CORL_M_02",
+            "value": "カオティックアイ"
+        },
+        {
+            "key": "SK_CORL_M_03",
+            "value": "ダブルアタック"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "通常攻撃"
         },
@@ -6187,6 +6211,34 @@
         {
             "key": "SK_LW_E_VIK_S_3",
             "value": "反骨精神"
+        },
+        {
+            "key": "SK_LW_PSI_M_1_TW",
+            "value": "起爆衝"
+        },
+        {
+            "key": "SK_LW_RDM_S_3_TW",
+            "value": "ジャマースラスト"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1_TW",
+            "value": "ケアルガ"
+        },
+        {
+            "key": "SK_LW_WHM_M_4_TW",
+            "value": "リジェネ"
+        },
+        {
+            "key": "SK_LW_ASS_S_1_TW",
+            "value": "毒針"
+        },
+        {
+            "key": "SK_LW_NIN_M_3_TW",
+            "value": "毒霧の術"
+        },
+        {
+            "key": "SK_LW_MGK_M_1_TW",
+            "value": "バイオ剣"
         },
         {
             "key": "SK_GMK_ATK_NEEDLE",
@@ -6671,6 +6723,10 @@
         {
             "key": "SK_SMN_MRLT",
             "value": "火焔三連"
+        },
+        {
+            "key": "SK_SMN_CORL",
+            "value": "ブラスター"
         },
         {
             "key": "SK_SMN_VLFR",
@@ -7167,6 +7223,66 @@
         {
             "key": "SK_LW_EC_RDM_C_02B",
             "value": "魔道士の援護"
+        },
+        {
+            "key": "SK_LW_EC_RDM_A_02",
+            "value": "ストンガ【弱衰】"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03",
+            "value": "レジストブレイク強化"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03B",
+            "value": "ディフェンスブレイク"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04",
+            "value": "ストンラ強化"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04B",
+            "value": "ストンラ【弱衰】"
+        },
+        {
+            "key": "SK_LW_EC_WHM_A_01",
+            "value": "天罰の旋律"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01",
+            "value": "ケアルガ強化"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01B",
+            "value": "ケアルガ【快癒】"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02",
+            "value": "聖者の行進強化"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02B",
+            "value": "天聖の行進"
+        },
+        {
+            "key": "SK_LW_EC_GUN_A_01",
+            "value": "ピアッシングショット"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01",
+            "value": "急所を狙う強化"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01B",
+            "value": "急所を撃ち抜く"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02",
+            "value": "精神統一強化"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02B",
+            "value": "精神統一の極み"
         },
         {
             "key": "SK_US_POTION",
@@ -8275,6 +8391,46 @@
         {
             "key": "SK_LW_PIERCEDEF_5",
             "value": "防御貫通率+20"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_1",
+            "value": "単体攻撃耐性+1"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_2",
+            "value": "単体攻撃耐性+2"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_3",
+            "value": "単体攻撃耐性+3"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_4_UR",
+            "value": "単体攻撃耐性+5"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_5_UR",
+            "value": "単体攻撃耐性+10"
+        },
+        {
+            "key": "SK_LW_AP_GET_1",
+            "value": "AP獲得量+5%"
+        },
+        {
+            "key": "SK_LW_AP_GET_2",
+            "value": "AP獲得量+7%"
+        },
+        {
+            "key": "SK_LW_AP_GET_3",
+            "value": "AP獲得量+10%"
+        },
+        {
+            "key": "SK_LW_AP_GET_4_UR",
+            "value": "AP獲得量+15%"
+        },
+        {
+            "key": "SK_LW_AP_GET_5_UR",
+            "value": "AP獲得量+30%"
         },
         {
             "key": "SK_LW_SWO_003_1",
@@ -9449,6 +9605,10 @@
             "value": "▼状態異常【バーサク】耐性ダウン(基礎)"
         },
         {
+            "key": "SK_BTL_RES_STUN_1_100_D2",
+            "value": "▼状態異常【スタン】耐性ダウン(基礎)"
+        },
+        {
             "key": "SK_BTL_INV_DEATH",
             "value": "即死無効"
         },
@@ -9641,6 +9801,18 @@
             "value": "状態異常【スタン】確率1-100ダウン"
         },
         {
+            "key": "SK_BTL_SLOW_1-100_U",
+            "value": "状態異常【スロウ】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_U",
+            "value": "状態異常【ドンアク】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_D",
+            "value": "状態異常【ドンアク】確率1-100ダウン"
+        },
+        {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
             "value": "防御貫通率1-100アップ"
         },
@@ -9699,6 +9871,38 @@
         {
             "key": "SK_BTL_STR_ELEMALL_1-100_U",
             "value": "全属性攻撃力1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_FIRE_1-100_U",
+            "value": "火属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_ICE_1-100_U",
+            "value": "氷属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WIND_1-100_U",
+            "value": "風属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SOIL_1-100_U",
+            "value": "土属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_THUNDER_1-100_U",
+            "value": "雷属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WATER_1-100_U",
+            "value": "水属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SHINE_1-100_U",
+            "value": "光属性耐性貫通1-100アップ"
+        },
+        {
+            "key": "SK_BTL_PIERCE_DARK_1-100_U",
+            "value": "闇属性耐性貫通1-100アップ"
         },
         {
             "key": "SK_BTL_RESDB_DF_1_100_U",

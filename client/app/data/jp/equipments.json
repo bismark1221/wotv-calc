@@ -20286,6 +20286,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "命中率+2"
+          },
+          "dataId": "SK_LW_HIT_1",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -20297,6 +20323,32 @@
           "effects": [
             {
               "type": "MAGIC_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "命中率+3"
+          },
+          "dataId": "SK_LW_HIT_2",
+          "effects": [
+            {
+              "type": "ACCURACY",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe",
@@ -20342,6 +20394,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "命中率+5"
+          },
+          "dataId": "SK_LW_HIT_3",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -20370,6 +20448,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "命中率+10"
+          },
+          "dataId": "SK_LW_HIT_4_UR",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -20381,6 +20485,32 @@
           "effects": [
             {
               "type": "MAGIC_ATK",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "命中率+20"
+          },
+          "dataId": "SK_LW_HIT_5_UR",
+          "effects": [
+            {
+              "type": "ACCURACY",
               "minValue": 20,
               "maxValue": 20,
               "calcType": "fixe",
@@ -25917,6 +26047,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "単体攻撃耐性+1"
+          },
+          "dataId": "SK_LW_DF_SINGL_1",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -25931,6 +26087,32 @@
               "minValue": 2,
               "maxValue": 2,
               "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "単体攻撃耐性+2"
+          },
+          "dataId": "SK_LW_DF_SINGL_2",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
               "target": "self"
             }
           ],
@@ -25973,6 +26155,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "単体攻撃耐性+3"
+          },
+          "dataId": "SK_LW_DF_SINGL_3",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -26001,6 +26209,32 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "単体攻撃耐性+5"
+          },
+          "dataId": "SK_LW_DF_SINGL_4_UR",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -26015,6 +26249,32 @@
               "minValue": 10,
               "maxValue": 10,
               "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "単体攻撃耐性+10"
+          },
+          "dataId": "SK_LW_DF_SINGL_5_UR",
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
               "target": "self"
             }
           ],
@@ -34662,7 +34922,28 @@
             1,
             2,
             3,
-            4,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
             5
           ],
           "grow": "ARTIFACT_50",
@@ -34690,8 +34971,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "grow": "ARTIFACT_50",
           "target": "self",
@@ -34722,6 +35002,55 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "AP獲得量+5%"
+          },
+          "dataId": "SK_LW_AP_GET_1",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -34744,8 +35073,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "grow": "ARTIFACT_50",
           "target": "self",
@@ -34776,6 +35104,55 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "AP獲得量+7%"
+          },
+          "dataId": "SK_LW_AP_GET_2",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 7,
+              "maxValue": 7,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -34798,8 +35175,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "grow": "ARTIFACT_50",
           "target": "self",
@@ -34830,6 +35206,55 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "AP獲得量+10%"
+          },
+          "dataId": "SK_LW_AP_GET_3",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -34852,8 +35277,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "grow": "ARTIFACT_50",
           "target": "self",
@@ -34884,6 +35308,55 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "AP獲得量+15%"
+          },
+          "dataId": "SK_LW_AP_GET_4_UR",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
@@ -34906,8 +35379,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "grow": "ARTIFACT_50",
           "target": "self",
@@ -34933,6 +35405,55 @@
             2,
             3,
             4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "AP獲得量+30%"
+          },
+          "dataId": "SK_LW_AP_GET_5_UR",
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_FTW_001_5"
+          },
+          "dataId": "SK_LW_FTW_001_5",
+          "effects": [
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
             5
           ],
           "grow": "ARTIFACT_50",
@@ -37651,6 +38172,169 @@
         "IT_AF_AW_ACCE": 375,
         "IT_AF_MAT_SHINE_03": 185,
         "IT_AF_MAT_SHINE_02": 6
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_RNG_009": {
+    "names": {
+      "en": "火業の指輪"
+    },
+    "slug": "hi-gyou-no-yubiwa",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 346
+      },
+      "ATK": {
+        "min": 5,
+        "max": 100
+      },
+      "DEF": {
+        "min": 1,
+        "max": 24
+      },
+      "MAG": {
+        "min": 5,
+        "max": 100
+      },
+      "SPR": {
+        "min": 1,
+        "max": 24
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_RNG_009",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_009_1"
+          },
+          "dataId": "SK_LW_RNG_009_1",
+          "effects": [
+            {
+              "type": "ICE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "FIRE_RES",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": -25,
+              "maxValue": -25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_009_5"
+          },
+          "dataId": "SK_LW_RNG_009_5",
+          "effects": [
+            {
+              "type": "ICE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "FIRE_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": -25,
+              "maxValue": -25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_rng_009",
+    "equippableJobs": [],
+    "equippableUnits": [
+      "UN_LW_P_ELDE",
+      "UN_LW_P_LILS",
+      "UN_LW_P_MGRT",
+      "UN_LW_P_NAIA",
+      "UN_LW_P_MICE",
+      "UN_FF14_P_YSTL",
+      "UN_LW_P_MACR_01",
+      "UN_LW_P_ADLD",
+      "UN_LW_P_RAIN",
+      "UN_LW_P_SIMR",
+      "UN_FFT_P_DELT",
+      "UN_LW_P_LATH",
+      "UN_LW_P_KTON_01",
+      "UN_LW_P_RARD",
+      "UN_LW_P_MONT_01"
+    ],
+    "materials": [
+      {
+        "IT_AF_AW_ACCE": 375,
+        "IT_AF_MAT_FIRE_03": 185,
+        "IT_AF_MAT_FIRE_02": 6
       }
     ],
     "acquisition": {

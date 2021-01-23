@@ -1,11 +1,12 @@
 .row {
-  max-width: 820px;
+  max-width: 1300px;
   margin: auto;
   margin-bottom: 20px;
 }
 
 .guildTable {
   width: 820px;
+  margin: auto;
 }
 
 .guildTable, tbody, tr, th, td {

@@ -4594,13 +4594,13 @@
   "RAID_ID_14": {
     "dataId": "RAID_ID_14",
     "names": {
-      "en": "ゴーレム"
+      "en": "ゴーレム - Golem"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_GLEM_RAID",
         "names": {
-          "en": "ゴーレム"
+          "en": "ゴーレム - Golem"
         },
         "stats": {
           "HP": {
@@ -4951,7 +4951,7 @@
             "minLevel": 1
           }
         },
-        "slug": "goremu",
+        "slug": "golem",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -4981,7 +4981,7 @@
       {
         "dataId": "UN_LW_E_TNBR_RAID2",
         "names": {
-          "en": "トンベリ"
+          "en": "トンベリ - Tonberry"
         },
         "stats": {
           "HP": {
@@ -5329,7 +5329,7 @@
             "minLevel": 4
           }
         },
-        "slug": "ton-beri",
+        "slug": "tonberry",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -5357,7 +5357,7 @@
         }
       }
     ],
-    "slug": "goremu"
+    "slug": "golem"
   },
   "RAID_ID_15": {
     "dataId": "RAID_ID_15",

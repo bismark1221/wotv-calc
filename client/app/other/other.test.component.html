@@ -1,38 +1,186 @@
 <div class="units">
   <div class="leftBlock">
-
-  </div>
-
-
-
-  <div class="rightBlock">
-    <div class="upperBlock" >
-      <div (clickOutside)="closeDropDown()">
-        <div class="searchBlock" >
-          <i class="fas fa-search" aria-hidden="true"></i>
-          <input class="searchInput" type="text" placeholder="Search for a character by name" (ngModelChange)="updateSearch()" [(ngModel)]="searchText">
-        </div>
-
-
-
-
-        <div *ngIf='showDropDown' class='search-drop-down' >
-          <div (click)='selectValue(tag)' class='search-results' *ngFor="let tag of tags "><!-- | searchFilter: getSearchValue() -->
-            <a [innerHTML]="tag.display "><!-- | letterBold: getSearchValue() -->
-              {{ tag.display }}
-            </a>
-          </div>
-        </div>
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText"(click)="isCollapsedRarity = !isCollapsedRarity" [attr.aria-expanded]="!isCollapsedRarity">
+        Rarity
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedRarity" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedRarity" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedRarity">
+        <div><input type="checkbox" id="rarityUR" (change)="filterList('rarity', 'UR')"/><label for="rarityUR">UR</label></div>
+        <div><input type="checkbox" id="rarityMR" (change)="filterList('rarity', 'MR')"/><label for="rarityMR">MR</label></div>
+        <div><input type="checkbox" id="raritySR" (change)="filterList('rarity', 'SR')"/><label for="raritySR">SR</label></div>
+        <div><input type="checkbox" id="rarityR" (change)="filterList('rarity', 'R')"/><label for="rarityR">R</label></div>
+        <div><input type="checkbox" id="rarityN" (change)="filterList('rarity', 'N')"/><label for="rarityN">N</label></div>
       </div>
 
+      <hr />
+
+      <div class="boldText"(click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
+        Elements
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
+        <div><input type="checkbox" id="elementfire" (change)="filterList('element', 'fire')"/><label for="elementfire">Fire</label></div>
+        <div><input type="checkbox" id="elementice" (change)="filterList('element', 'ice')"/><label for="elementice">Ice</label></div>
+        <div><input type="checkbox" id="elementwind" (change)="filterList('element', 'wind')"/><label for="elementwind">Wind</label></div>
+        <div><input type="checkbox" id="elementearth" (change)="filterList('element', 'earth')"/><label for="elementearth">Earth</label></div>
+        <div><input type="checkbox" id="elementlightning" (change)="filterList('element', 'lightning')"/><label for="elementlightning">Lightning</label></div>
+        <div><input type="checkbox" id="elementwater" (change)="filterList('element', 'water')"/><label for="elementwater">Water</label></div>
+        <div><input type="checkbox" id="elementlight" (change)="filterList('element', 'light')"/><label for="elementlight">Light</label></div>
+        <div><input type="checkbox" id="elementdark" (change)="filterList('element', 'dark')"/><label for="elementdark">Dark</label></div>
+      </div>
+
+      <hr />
+
+      <div class="boldText"(click)="isCollapsedLimited = !isCollapsedLimited" [attr.aria-expanded]="!isCollapsedLimited">
+        Limited
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedLimited" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedLimited" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedLimited">
+        <div><input type="checkbox" id="limitedYes" (change)="filterList('limited', true)"/><label for="limitedYes">Yes</label></div>
+        <div><input type="checkbox" id="limitedNo" (change)="filterList('limited', false)"/><label for="limitedNo">No</label></div>
+      </div>
+
+      <hr />
+
+      <div class="boldText"(click)="isCollapsedJob = !isCollapsedJob" [attr.aria-expanded]="!isCollapsedJob">
+        Jobs
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedJob" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedJob" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedJob">
+        <div class="switchInJob">
+          Only main job ?
+          <ui-switch class="switchMainJob" (click)="toggleMainJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.mainJob === true"></ui-switch>
+        </div>
+        <div class="switchInJob">
+          Only sub job ?
+          <ui-switch class="switchMainJob" (click)="toggleSubJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.subJob === true"></ui-switch>
+        </div>
+        <div class="switchInJob">
+          exJob available ?
+          <ui-switch class="switchMainJob" (click)="toggleExJob()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.exJob === true"></ui-switch>
+        </div>
+        <div *ngFor="let job of jobs"><input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)"/><label for="job{{job.dataId}}">{{ job.name }}</label></div>
+      </div>
+
+      <hr />
+
+      <div class="boldText"(click)="isCollapsedEquipment = !isCollapsedEquipment" [attr.aria-expanded]="!isCollapsedEquipment">
+        Equipment
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedEquipment" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedEquipment" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedEquipment">
+        <div><input type="radio" id="equipmentALL" (change)="filterEquipment('weapon', 'ALL')"/><label for="equipmentAXE">All</label></div>
+        <div><input type="radio" id="equipmentAXE" (change)="filterEquipment('weapon', 'AXE')"/><label for="equipmentAXE">Axe</label></div>
+        <div><input type="radio" id="equipmentBOOK" (change)="filterEquipment('weapon', 'BOOK')"/><label for="equipmentBOOK">Book</label></div>
+        <div><input type="radio" id="equipmentBOW" (change)="filterEquipment('weapon', 'BOW')"/><label for="equipmentBOW">Bow</label></div>
+        <div><input type="radio" id="equipmentDAGGER" (change)="filterEquipment('weapon', 'DAGGER')"/><label for="equipmentDAGGER">Dagger</label></div>
+        <div><input type="radio" id="equipmentFIST" (change)="filterEquipment('weapon', 'FIST')"/><label for="equipmentFIST">Fist</label></div>
+        <div><input type="radio" id="equipmentGLOVE" (change)="filterEquipment('weapon', 'GLOVE')"/><label for="equipmentGLOVE">Glove</label></div>
+        <div><input type="radio" id="equipmentGREATSWORD" (change)="filterEquipment('weapon', 'GREATSWORD')"/><label for="equipmentGREATSWORD">Great Sword</label></div>
+        <div><input type="radio" id="equipmentGUN" (change)="filterEquipment('weapon', 'GUN')"/><label for="equipmentGUN">Gun</label></div>
+        <div><input type="radio" id="equipmentKATANA" (change)="filterEquipment('weapon', 'KATANA')"/><label for="equipmentKATANA">Katana</label></div>
+        <div><input type="radio" id="equipmentMACE" (change)="filterEquipment('weapon', 'MACE')"/><label for="equipmentMACE">Mace</label></div>
+        <div><input type="radio" id="equipmentNINJABLADE" (change)="filterEquipment('weapon', 'NINJABLADE')"/><label for="equipmentNINJABLADE">Ninja Blade</label></div>
+        <div><input type="radio" id="equipmentROD" (change)="filterEquipment('weapon', 'ROD')"/><label for="equipmentROD">Rod</label></div>
+        <div><input type="radio" id="equipmentSPEAR" (change)="filterEquipment('weapon', 'SPEAR')"/><label for="equipmentSPEAR">Spear</label></div>
+        <div><input type="radio" id="equipmentSWORD" (change)="filterEquipment('weapon', 'SWORD')"/><label for="equipmentSWORD">Sword</label></div>
+
+        <hr class="separatorFilter" />
+
+        <div><input type="checkbox" id="equipmentARMOR" (change)="filterEquipment('armor', 'ARMOR')"/><label for="equipmentARMOR">Armor</label></div>
+        <div><input type="checkbox" id="equipmentCLOTH" (change)="filterEquipment('armor', 'CLOTH')"/><label for="equipmentCLOTH">Cloth</label></div>
+        <div><input type="checkbox" id="equipmentHAT" (change)="filterEquipment('armor', 'HAT')"/><label for="equipmentHAT">Hat</label></div>
+        <div><input type="checkbox" id="equipmentHELM" (change)="filterEquipment('armor', 'HELM')"/><label for="equipmentHELM">Helm</label></div>
+        <div><input type="checkbox" id="equipmentSHIELD" (change)="filterEquipment('armor', 'SHIELD')"/><label for="equipmentSHIELD">Shield</label></div>
+      </div>
+
+<!--
+
+filters to really develop :
+- subjob only
+- equipment (AND or OR)
+
+Filter Skill :
+  - ex.Unit with Elemental Res down, Slash Res down ,
+  - Unit with Evade skill...ETC.
+
+Damage type:
+  - Magical or physical (basically if they have an AP skill that uses ATK or MAG)
+
+Attack type:
+  - slash, pierce, etc. (If they have a skill that has that effect, plus a toggle to ensure is in their main job, like the job filters have).
+
+Resistance type:
+  - drop-down with sliders: if the slider is at 20, show anyone with the specified resistance greater than or equal to 20.
 
 
-
+[11:10 AM] lorein: For vc, filter party ability, individual, visin, etc-->
     </div>
   </div>
 
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalUnits">
+          A total of <span class="countUnits">{{ getFilteredUnits().length }}</span> characters found
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name']" [(ngModel)]="sort" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
 
+              <ng-template ng-option-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
 
-
-
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsList">
+      <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
+        <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
+          <div class="cardIcons">
+            <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+            <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" *ngIf="unit.element" />
+          </div>
+          <div>
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="unitName">{{ unit.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

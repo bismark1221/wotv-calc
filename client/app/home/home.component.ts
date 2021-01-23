@@ -56,6 +56,23 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '22/01',
+        items: [
+          {type: 'card', dataId: 'VC_LW_CMLO'},
+          {type: 'card', dataId: 'VC_LW_CORL'},
+          {type: 'esper', dataId: 'UN_LW_S_CORL'},
+          {type: 'equipment', dataId: 'AF_LW_RNG_009'},
+
+
+          {type: 'unit', dataId: 'UN_LW_P_AYKA'},
+          {type: 'unit', dataId: 'UN_LW_P_FDRC'},
+          {type: 'unit', dataId: 'UN_LW_P_MURM'},
+          {type: 'esper', dataId: 'UN_LW_S_RAMU'},
+          {type: 'esper', dataId: 'UN_LW_S_IGNT'},
+          {type: 'equipment', dataId: 'AF_LW_ROD_007'},
+        ]
+      },
+      {
         date: '15/01',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_RYEL'},
@@ -77,26 +94,6 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_PNIX'},
           {type: 'card', dataId: 'VC_LW_LILS2'},
           {type: 'equipment', dataId: 'AF_LW_ARM_028'}
-        ]
-      },
-      {
-        date: '23/12',
-        items: [
-          {type: 'unit', dataId: 'UN_NIER_P_N2TB'},
-          {type: 'unit', dataId: 'UN_NIER_P_N9TS'},
-          {type: 'card', dataId: 'VC_NIER_MV1'},
-          {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
-          {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
-          {type: 'equipment', dataId: 'AF_NIER_ACCE_000'},
-
-          {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
-          {type: 'card', dataId: 'VC_LW_MONT2'},
-          {type: 'equipment', dataId: 'AF_LW_SWO_005'},
-
-          {type: 'unit', dataId: 'UN_LW_P_GLMS'},
-          {type: 'unit', dataId: 'UN_LW_P_SIMR'},
-          {type: 'esper', dataId: 'UN_LW_S_ODIN'},
-          {type: 'esper', dataId: 'UN_LW_S_TSLP'}
         ]
       }
     ]

@@ -140,16 +140,18 @@ export class UnitService {
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
           && (!filters.exJob || unit.exJobs.length > 0)
         ) {
-          if (filters.job.length === 0) {
+          let possbibleToAdd = true;
+
+          if (filters.job && filters.job.length > 0) {
+            possbibleToAdd = this.unitHasJob(unit, filters);
+          }
+
+          if (possbibleToAdd && filters.equipment && filters.equipment.weapon && filters.equipment.weapon.length > 0 && filters.equipment.armor && filters.equipment.armor.length > 0) {
+            possbibleToAdd = this.unitCanEquip(unit, filters);
+          }
+
+          if (possbibleToAdd) {
             filteredUnits.push(unit);
-          } else {
-            for (let i = 0; i <= (filters.mainJob ? 0 : 2); i++) {
-              const tableJob = unit.jobs[i].split('_');
-              if (filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) !== -1) {
-                filteredUnits.push(unit);
-                break;
-              }
-            }
           }
         }
       });
@@ -158,6 +160,31 @@ export class UnitService {
     } else {
       return units;
     }
+  }
+
+  private unitHasJob(unit, filters) {
+    let unitHasJob = false;
+
+    for (let i = (filters.subJob ? 1 : 0); i <= (filters.mainJob ? 0 : 2); i++) {
+      const tableJob = unit.jobs[i].split('_');
+      if (filters.job.length === 0 || filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) !== -1) {
+        unitHasJob = true;
+        break;
+      }
+    }
+
+    return unitHasJob;
+  }
+
+  private unitCanEquip(unit, filters) {
+    let unitCanEquip = false;
+    const job = this.jobService.getJob(unit.jobs[0]);
+
+
+    unitCanEquip = true;
+
+
+    return unitCanEquip;
   }
 
   getUnit(id, forcedVersion = null) {
