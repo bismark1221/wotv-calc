@@ -56,7 +56,8 @@ const ROUTES: Routes = [
       { path: 'index', component: OtherIndexComponent },
       { path: 'jobplanner', component: OtherJobPlannerComponent },
       { path: 'test', component: OtherTestComponent },
-      { path: 'illuminati', component: OtherIlluminatiComponent }
+      { path: 'illuminati', component: OtherIlluminatiComponent },
+      { path: 'illuminati/:data', component: OtherIlluminatiComponent },
     ]
   },
 
