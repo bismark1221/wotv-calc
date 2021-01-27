@@ -99,6 +99,13 @@ export class UnitsComponent implements OnInit {
 
   toggleMainJob() {
     this.filters.mainJob = !this.filters.mainJob;
+    this.filters.subJob = false;
+    this.getUnits();
+  }
+
+  toggleSubJob() {
+    this.filters.mainJob = false;
+    this.filters.subJob = !this.filters.subJob;
     this.getUnits();
   }
 

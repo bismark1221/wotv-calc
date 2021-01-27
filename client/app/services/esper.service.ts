@@ -130,6 +130,7 @@ export class EsperService {
       espers.forEach(esper => {
         if ((filters.element.length === 0 || filters.element.indexOf(esper.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(esper.rarity) !== -1)
+          && (!filters.threeStars || esper.SPs.length === 3)
         ) {
           filteredEspers.push(esper);
         }

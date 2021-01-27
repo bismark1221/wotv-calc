@@ -30,6 +30,20 @@
         <div><input type="checkbox" id="elementlight" (change)="filterList('element', 'light')"/><label for="elementlight">Light</label></div>
         <div><input type="checkbox" id="elementdark" (change)="filterList('element', 'dark')"/><label for="elementdark">Dark</label></div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="isCollapsedUpgrade = !isCollapsedUpgrade" [attr.aria-expanded]="!isCollapsedUpgrade">
+        Upgrade
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedUpgrade" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedUpgrade" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedUpgrade">
+        <div>
+          3* available ?
+          <ui-switch class="switchMainJob" (click)="toggleThreeStars()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.threeStars === true"></ui-switch>
+        </div>
+      </div>
     </div>
   </div>
 

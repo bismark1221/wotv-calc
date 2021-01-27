@@ -17,10 +17,12 @@ export class EspersComponent implements OnInit {
   order = 'asc';
   filters = {
     rarity: [],
-    element: []
+    element: [],
+    threeStars: false
   };
   isCollapsedRarity = false;
   isCollapsedElement = false;
+  isCollapsedUpgrade = false;
 
   constructor(
     private esperService: EsperService,
@@ -72,6 +74,11 @@ export class EspersComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
+    this.getEspers();
+  }
+
+  toggleThreeStars() {
+    this.filters.threeStars = !this.filters.threeStars;
     this.getEspers();
   }
 }
