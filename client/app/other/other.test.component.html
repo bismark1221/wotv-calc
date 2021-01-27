@@ -76,21 +76,66 @@
         <i class="fas fa-chevron-down" *ngIf="isCollapsedEquipment" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedEquipment">
-        <div><input type="radio" id="equipmentALL" (change)="filterEquipment('weapon', 'ALL')"/><label for="equipmentAXE">All</label></div>
-        <div><input type="radio" id="equipmentAXE" (change)="filterEquipment('weapon', 'AXE')"/><label for="equipmentAXE">Axe</label></div>
-        <div><input type="radio" id="equipmentBOOK" (change)="filterEquipment('weapon', 'BOOK')"/><label for="equipmentBOOK">Book</label></div>
-        <div><input type="radio" id="equipmentBOW" (change)="filterEquipment('weapon', 'BOW')"/><label for="equipmentBOW">Bow</label></div>
-        <div><input type="radio" id="equipmentDAGGER" (change)="filterEquipment('weapon', 'DAGGER')"/><label for="equipmentDAGGER">Dagger</label></div>
-        <div><input type="radio" id="equipmentFIST" (change)="filterEquipment('weapon', 'FIST')"/><label for="equipmentFIST">Fist</label></div>
-        <div><input type="radio" id="equipmentGLOVE" (change)="filterEquipment('weapon', 'GLOVE')"/><label for="equipmentGLOVE">Glove</label></div>
-        <div><input type="radio" id="equipmentGREATSWORD" (change)="filterEquipment('weapon', 'GREATSWORD')"/><label for="equipmentGREATSWORD">Great Sword</label></div>
-        <div><input type="radio" id="equipmentGUN" (change)="filterEquipment('weapon', 'GUN')"/><label for="equipmentGUN">Gun</label></div>
-        <div><input type="radio" id="equipmentKATANA" (change)="filterEquipment('weapon', 'KATANA')"/><label for="equipmentKATANA">Katana</label></div>
-        <div><input type="radio" id="equipmentMACE" (change)="filterEquipment('weapon', 'MACE')"/><label for="equipmentMACE">Mace</label></div>
-        <div><input type="radio" id="equipmentNINJABLADE" (change)="filterEquipment('weapon', 'NINJABLADE')"/><label for="equipmentNINJABLADE">Ninja Blade</label></div>
-        <div><input type="radio" id="equipmentROD" (change)="filterEquipment('weapon', 'ROD')"/><label for="equipmentROD">Rod</label></div>
-        <div><input type="radio" id="equipmentSPEAR" (change)="filterEquipment('weapon', 'SPEAR')"/><label for="equipmentSPEAR">Spear</label></div>
-        <div><input type="radio" id="equipmentSWORD" (change)="filterEquipment('weapon', 'SWORD')"/><label for="equipmentSWORD">Sword</label></div>
+        <div>
+          <input type="radio" id="equipmentALL" (change)="filterEquipment('weapon', 'ALL')" [checked]="filters.equipment.weapon === 'ALL'"/>
+          <label for="equipmentAXE">All</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentAXE" (change)="filterEquipment('weapon', 'AXE')" [checked]="filters.equipment.weapon === 'AXE'"/>
+          <label for="equipmentAXE">Axe</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentBOOK" (change)="filterEquipment('weapon', 'BOOK')" [checked]="filters.equipment.weapon === 'BOOK'"/>
+          <label for="equipmentBOOK">Book</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentBOW" (change)="filterEquipment('weapon', 'BOW')" [checked]="filters.equipment.weapon === 'BOW'"/>
+          <label for="equipmentBOW">Bow</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentDAGGER" (change)="filterEquipment('weapon', 'DAGGER')" [checked]="filters.equipment.weapon === 'DAGGER'"/>
+          <label for="equipmentDAGGER">Dagger</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentFIST" (change)="filterEquipment('weapon', 'FIST')" [checked]="filters.equipment.weapon === 'FIST'"/>
+          <label for="equipmentFIST">Fist</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGLOVE" (change)="filterEquipment('weapon', 'GLOVE')" [checked]="filters.equipment.weapon === 'GLOVE'"/>
+          <label for="equipmentGLOVE">Glove</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGREATSWORD" (change)="filterEquipment('weapon', 'GREATSWORD')" [checked]="filters.equipment.weapon === 'GREATSWORD'"/>
+          <label for="equipmentGREATSWORD">Great Sword</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentGUN" (change)="filterEquipment('weapon', 'GUN')" [checked]="filters.equipment.weapon === 'GUN'"/>
+          <label for="equipmentGUN">Gun</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentKATANA" (change)="filterEquipment('weapon', 'KATANA')" [checked]="filters.equipment.weapon === 'KATANA'"/>
+          <label for="equipmentKATANA">Katana</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentMACE" (change)="filterEquipment('weapon', 'MACE')" [checked]="filters.equipment.weapon === 'MACE'"/>
+          <label for="equipmentMACE">Mace</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentNINJABLADE" (change)="filterEquipment('weapon', 'NINJABLADE')" [checked]="filters.equipment.weapon === 'NINJABLADE'"/>
+          <label for="equipmentNINJABLADE">Ninja Blade</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentROD" (change)="filterEquipment('weapon', 'ROD')" [checked]="filters.equipment.weapon === 'ROD'"/>
+          <label for="equipmentROD">Rod</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentSPEAR" (change)="filterEquipment('weapon', 'SPEAR')" [checked]="filters.equipment.weapon === 'SPEAR'"/>
+          <label for="equipmentSPEAR">Spear</label>
+        </div>
+        <div>
+          <input type="radio" id="equipmentSWORD" (change)="filterEquipment('weapon', 'SWORD')" [checked]="filters.equipment.weapon === 'SWORD'"/>
+          <label for="equipmentSWORD">Sword</label>
+        </div>
 
         <hr class="separatorFilter" />
 
@@ -104,8 +149,7 @@
 <!--
 
 filters to really develop :
-- subjob only
-- equipment (AND or OR)
+
 
 Filter Skill :
   - ex.Unit with Elemental Res down, Slash Res down ,
@@ -117,7 +161,7 @@ Damage type:
 Attack type:
   - slash, pierce, etc. (If they have a skill that has that effect, plus a toggle to ensure is in their main job, like the job filters have).
 
-Resistance type:
+Resistance type: ==> MOVE TO INDEX
   - drop-down with sliders: if the slider is at 20, show anyone with the specified resistance greater than or equal to 20.
 
 

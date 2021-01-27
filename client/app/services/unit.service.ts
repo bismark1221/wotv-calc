@@ -146,7 +146,7 @@ export class UnitService {
             possbibleToAdd = this.unitHasJob(unit, filters);
           }
 
-          if (possbibleToAdd && filters.equipment && filters.equipment.weapon && filters.equipment.weapon.length > 0 && filters.equipment.armor && filters.equipment.armor.length > 0) {
+          if (possbibleToAdd && filters.equipment && (filters.equipment.weapon !== 'ALL' || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
             possbibleToAdd = this.unitCanEquip(unit, filters);
           }
 
@@ -177,12 +177,29 @@ export class UnitService {
   }
 
   private unitCanEquip(unit, filters) {
-    let unitCanEquip = false;
+    let unitCanEquip = true;
     const job = this.jobService.getJob(unit.jobs[0]);
 
+    if (filters.equipment.weapon !== 'ALL' && job.equipments.weapons.indexOf(filters.equipment.weapon) === -1) {
+      unitCanEquip = false;
+    }
 
-    unitCanEquip = true;
+    if (filters.equipment.armor && filters.equipment.armor.length > 0) {
+      let armorFound = false;
+      let i = 0;
 
+      while (!armorFound && i <= filters.equipment.armor.length - 1) {
+        if (job.equipments.armors.indexOf(filters.equipment.armor[i]) !== -1) {
+          armorFound = true;
+        }
+
+        i++;
+      }
+
+      if (!armorFound) {
+        unitCanEquip = false;
+      }
+    }
 
     return unitCanEquip;
   }

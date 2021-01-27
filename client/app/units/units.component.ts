@@ -22,13 +22,19 @@ export class UnitsComponent implements OnInit {
     element: [],
     job: [],
     limited: [],
+    equipment: {
+      weapon: 'ALL',
+      armor: []
+    },
     mainJob: true,
+    subJob: false,
     exJob: false
   };
-  isCollapsedRarity = false;
-  isCollapsedElement = false;
-  isCollapsedLimited = false;
-  isCollapsedJob = false;
+  isCollapsedRarity = true;
+  isCollapsedElement = true;
+  isCollapsedLimited = true;
+  isCollapsedJob = true;
+  isCollapsedEquipment = true;
 
   constructor(
     private unitService: UnitService,
@@ -92,6 +98,20 @@ export class UnitsComponent implements OnInit {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
+    }
+
+    this.getUnits();
+  }
+
+  filterEquipment(type, value) {
+    if (type === 'armor') {
+      if (this.filters.equipment.armor.indexOf(value) === -1) {
+        this.filters.equipment.armor.push(value);
+      } else {
+        this.filters.equipment.armor.splice(this.filters.equipment.armor.indexOf(value), 1);
+      }
+    } else {
+      this.filters.equipment.weapon = value;
     }
 
     this.getUnits();

@@ -24,7 +24,7 @@ export class OtherTestComponent implements OnInit {
     job: [],
     limited: [],
     equipment: {
-      weapon: [],
+      weapon: 'ALL',
       armor: []
     },
     mainJob: true,
@@ -105,6 +105,17 @@ export class OtherTestComponent implements OnInit {
   }
 
   filterEquipment(type, value) {
+    if (type === 'armor') {
+      if (this.filters.equipment.armor.indexOf(value) === -1) {
+        this.filters.equipment.armor.push(value);
+      } else {
+        this.filters.equipment.armor.splice(this.filters.equipment.armor.indexOf(value), 1);
+      }
+    } else {
+      this.filters.equipment.weapon = value;
+    }
+
+    this.getUnits();
   }
 
   toggleMainJob() {
