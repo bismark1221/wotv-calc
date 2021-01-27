@@ -53,6 +53,7 @@ import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 import { OtherTestComponent } from './other/other.test.component';
+import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -148,7 +149,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherTitlesComponent,
     OtherIndexComponent,
     OtherJobPlannerComponent,
-    OtherTestComponent
+    OtherTestComponent,
+    OtherIlluminatiComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

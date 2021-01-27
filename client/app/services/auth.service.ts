@@ -119,7 +119,7 @@ export class AuthService {
 
           data.forEach(item => {
             const itemData = item.payload.doc.data();
-          // @ts-ignore
+            // @ts-ignore
             itemData.storeId = item.payload.doc.id;
             items.push(itemData);
           });
@@ -239,5 +239,13 @@ export class AuthService {
     });
 
     return data;
+  }
+
+  getIlluminty() {
+    return new Promise((resolve, reject) => {
+      this.firestore.collection('illuminati', ref => ref.where('userId', '==', this.user.uid)).snapshotChanges().subscribe(data => {
+        resolve(data.length > 0);
+      });
+    });
   }
 }
