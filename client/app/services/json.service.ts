@@ -3264,7 +3264,7 @@ export class JsonService {
 
         Object.keys(this.gl.wotvEquipments).forEach(equipmentId => {
           if (this.gl.wotvEquipments[equipmentId].equippableJobs
-            && this.gl.wotvEquipments[equipmentId].equippableJobs.indexOf(jobId)
+            && this.gl.wotvEquipments[equipmentId].equippableJobs.indexOf(jobId) !== -1
             && this.jp.wotvEquipments[equipmentId]) {
             this.jp.wotvEquipments[equipmentId].equippableJobs.push(jobId);
           }

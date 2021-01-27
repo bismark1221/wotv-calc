@@ -3593,6 +3593,54 @@
             "value": "Bénédiction des esprits obscurs"
         },
         {
+            "key": "SK_LW_BEA_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_BEA_M_1",
+            "value": "Purificateur de démons"
+        },
+        {
+            "key": "SK_LW_BEA_M_2",
+            "value": "Paume de Shura"
+        },
+        {
+            "key": "SK_LW_BEA_M_3",
+            "value": "Maîtrise pugilat"
+        },
+        {
+            "key": "SK_LW_BEA_S_1_INIT",
+            "value": "Frappe furieuse"
+        },
+        {
+            "key": "SK_LW_BEA_S_2_INIT",
+            "value": "Posture de fer"
+        },
+        {
+            "key": "SK_LW_BEA_S_3",
+            "value": "Méthode de respiration"
+        },
+        {
+            "key": "SK_LW_BEA_S_4",
+            "value": "Brise-esprit"
+        },
+        {
+            "key": "SK_LW_BEA_R_1",
+            "value": "Contre-rafale"
+        },
+        {
+            "key": "SK_LW_BEA_R_1_B",
+            "value": "Contre-rafale"
+        },
+        {
+            "key": "SK_LW_BEA_P_1",
+            "value": "Amélioration rafale"
+        },
+        {
+            "key": "SK_LW_BEA_P_2",
+            "value": "Âme guerrière"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -4357,6 +4405,10 @@
             "value": "Berserker en fer"
         },
         {
+            "key": "SK_IGNT_M_01_B",
+            "value": "Berserker en fer"
+        },
+        {
             "key": "SK_IGNT_M_02",
             "value": "Onde puissante"
         },
@@ -4629,6 +4681,14 @@
             "value": "Manteau de fer"
         },
         {
+            "key": "SK_AGON_M_04_B",
+            "value": "Haut voltage"
+        },
+        {
+            "key": "SK_AGON_M_05_B",
+            "value": "Manteau de fer"
+        },
+        {
             "key": "SK_AGON_M_06",
             "value": "Mode Agilité Max"
         },
@@ -4683,6 +4743,30 @@
         {
             "key": "SK_LVAT_R_01",
             "value": "Déferlement aquatique"
+        },
+        {
+            "key": "SK_GCAL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_GCAL_M_01",
+            "value": "Horreur blanche"
+        },
+        {
+            "key": "SK_GCAL_M_02",
+            "value": "Envol de l'oiseau de glace"
+        },
+        {
+            "key": "SK_GCAL_M_03",
+            "value": "Ouragan gelé"
+        },
+        {
+            "key": "SK_GCAL_M_04",
+            "value": "Glaciation"
+        },
+        {
+            "key": "SK_GCAL_R_01",
+            "value": "Miroir de glace"
         },
         {
             "key": "SK_CHCB2_ATK",
@@ -5061,6 +5145,10 @@
             "value": "Douleur éternelle"
         },
         {
+            "key": "SK_LB_LW_RARD",
+            "value": "Poings du volcan infernal"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -5183,6 +5271,10 @@
         {
             "key": "SK_SMN_LVAT",
             "value": "Tsunami"
+        },
+        {
+            "key": "SK_SMN_GCAL",
+            "value": "Ouragan gelé"
         },
         {
             "key": "SK_US_POTION",
@@ -5689,6 +5781,10 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_RARD",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -5965,6 +6061,14 @@
             "value": ""
         },
         {
+            "key": "SK_LW_ARW_005_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ARW_005_5",
+            "value": ""
+        },
+        {
             "key": "SK_LW_ROD_019_1",
             "value": "Prunus Lamina (Attaques de lumière et de foudre ↑)"
         },
@@ -6179,6 +6283,10 @@
         {
             "key": "SK_SPE_LW_ALIM_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_RARD_1_1",
+            "value": "Transe combative"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -7166,6 +7274,26 @@
         },
         {
             "key": "SK_VC_LW_ASSASIN_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GCAL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GCAL_GSAW",
             "value": ""
         },
         {
@@ -8182,6 +8310,42 @@
         },
         {
             "key": "SK_VC_LW_ASSASIN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HLNA_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HLNA_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_LW_HLNA_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_HLNA_PVA",
+            "value": "Brasier obscur"
+        },
+        {
+            "key": "SK_VC_LW_GCAL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_GCAL_PAW",
             "value": ""
         },
         {
