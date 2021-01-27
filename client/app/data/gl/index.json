@@ -3086,6 +3086,41 @@
         "EVADE": 10
       },
       "image": "lapsalim"
+    },
+    {
+      "names": {
+        "en": "Rhaldor",
+        "fr": "Rhaldor"
+      },
+      "stats": {
+        "HP": 3073,
+        "TP": 113,
+        "AP": 121,
+        "ATK": 354,
+        "DEF": 12,
+        "SPR": 0,
+        "MAG": 59,
+        "DEX": 191,
+        "AGI": 60,
+        "LUCK": 208,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": 15,
+        "STRIKE_RES": 0,
+        "MISSILE_RES": 20,
+        "MAGIC_RES": -15,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 8,
+        "FIRE_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "lapsrard"
     }
   ]
 }

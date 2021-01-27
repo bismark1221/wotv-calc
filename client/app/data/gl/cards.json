@@ -9239,6 +9239,378 @@
       }
     ]
   },
+  "VC_LW_HLNA": {
+    "dataId": "VC_LW_HLNA",
+    "names": {
+      "en": "Black Rose of the Battlefield",
+      "fr": "Une rose noire au milieu du chaos"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 32,
+        "max": 252
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 0,
+        "max": 0
+      },
+      "DEF": {},
+      "SPR": {
+        "min": 2,
+        "max": 4
+      },
+      "MAG": {
+        "min": 47,
+        "max": 184
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapshlna",
+    "slug": "black-rose-of-the-battlefield",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 8,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_GS",
+            "fr": "SK_VC_LW_HLNA_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_GS_AW",
+            "fr": "SK_VC_LW_HLNA_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_GSMAX",
+            "fr": "SK_VC_LW_HLNA_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        }
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_P",
+            "fr": "SK_VC_LW_HLNA_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_PAW",
+            "fr": "SK_VC_LW_HLNA_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_HLNA_PMAX",
+            "fr": "SK_VC_LW_HLNA_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_HLNA_P2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_HLNA_P2",
+            "fr": "SK_GL_VC_LW_HLNA_P2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_HLNA_P2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_HLNA_P2AW",
+            "fr": "SK_GL_VC_LW_HLNA_P2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_HLNA_P2MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_HLNA_P2MAX",
+            "fr": "SK_GL_VC_LW_HLNA_P2MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_HLNA"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "AOE_RES",
+              "minValue": -10,
+              "maxValue": -20,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "all"
+            }
+          ],
+          "dataId": "SK_VC_LW_HLNA_PVA",
+          "type": "skill",
+          "mainSkill": true,
+          "names": {
+            "en": "Shadow Flare",
+            "fr": "Brasier obscur"
+          },
+          "target": "all",
+          "cost": {
+            "type": "AP",
+            "value": 35
+          },
+          "count": 2,
+          "maxLevel": 99,
+          "range": {
+            "h": 1,
+            "l": 3,
+            "s": 1
+          },
+          "based": "magic",
+          "aoe": {
+            "s": 1,
+            "l": 2,
+            "h": 1
+          },
+          "knockback": {
+            "rate": 100,
+            "value": 1
+          },
+          "damage": {
+            "minValue": -5,
+            "maxValue": 21,
+            "type": "magic",
+            "effType": "DAMAGE",
+            "formula": {
+              "1": 15,
+              "2": 10,
+              "3": 5,
+              "type": 0
+            }
+          },
+          "elem": [
+            "neutral"
+          ]
+        },
+        "awake": null,
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_WHM_FIRE",
+              "JB_LW_BLM_FIRE",
+              "JB_LW_GRM_FIRE",
+              "JB_LW_TIM_FIRE",
+              "JB_FF14_YSTL",
+              "JB_LW_MST_FIRE",
+              "JB_LW_SAKR"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -14637,6 +15009,168 @@
           "names": {
             "en": "SK_VC_LW_ASSASIN_PAW",
             "fr": "SK_VC_LW_ASSASIN_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      }
+    ]
+  },
+  "VC_LW_GCAL": {
+    "dataId": "VC_LW_GCAL",
+    "names": {
+      "en": "Frozen Icewing, Glacial",
+      "fr": "Glacial, les Ailes gelées"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 272
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 18,
+        "max": 72
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 21,
+        "max": 84
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsgcal",
+    "slug": "frozen-icewing-glacial",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_GS",
+            "fr": "SK_VC_LW_GCAL_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_GSAW",
+            "fr": "SK_VC_LW_GCAL_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_P",
+            "fr": "SK_VC_LW_GCAL_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GCAL_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GCAL_PAW",
+            "fr": "SK_VC_LW_GCAL_PAW"
           },
           "target": "self",
           "maxLevel": 4

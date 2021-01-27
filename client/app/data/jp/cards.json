@@ -9540,7 +9540,7 @@
   "VC_LW_HLNA": {
     "dataId": "VC_LW_HLNA",
     "names": {
-      "en": "戦場の黒き薔薇"
+      "en": "戦場の黒き薔薇 - Black Rose of the Battlefield"
     },
     "cost": 80,
     "rarity": "UR",
@@ -9604,7 +9604,7 @@
       "JUMP": {}
     },
     "image": "lapshlna",
-    "slug": "senjou-no-kuroki-bara",
+    "slug": "black-rose-of-the-battlefield",
     "partyBuffs": [
       {
         "classic": {
@@ -13755,6 +13755,7 @@
       "JUMP": {}
     },
     "image": "lapscmlo",
+    "slug": "mugen-eiyuutan",
     "partyBuffs": [
       {
         "classic": {
@@ -14034,8 +14035,7 @@
           }
         ]
       }
-    ],
-    "slug": "mugen-eiyuutan"
+    ]
   },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
@@ -21640,7 +21640,7 @@
   "VC_LW_GCAL": {
     "dataId": "VC_LW_GCAL",
     "names": {
-      "en": "凍結氷鳥　グラシアール"
+      "en": "凍結氷鳥　グラシアール - Frozen Icewing, Glacial"
     },
     "cost": 50,
     "rarity": "MR",
@@ -21701,7 +21701,7 @@
       "JUMP": {}
     },
     "image": "lapsgcal",
-    "slug": "touketsu-goori-dori-gurashiru",
+    "slug": "frozen-icewing-glacial",
     "partyBuffs": [
       {
         "classic": {
