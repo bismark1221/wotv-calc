@@ -2122,7 +2122,8 @@ export class JsonService {
     if (dataSkill.kback) {
       skill.knockback = {
         rate: dataSkill.kback.rate,
-        value: dataSkill.kback.val
+        value: dataSkill.kback.val,
+        dir: dataSkill.kback.dir
       };
     }
 

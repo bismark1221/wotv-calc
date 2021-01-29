@@ -4074,7 +4074,8 @@
         "crt_hit": -15,
         "knockback": {
           "rate": 100,
-          "value": 1
+          "value": 1,
+          "dir": 0
         },
         "damage": {
           "minValue": 65,
@@ -10689,7 +10690,8 @@
         "crt_hit": -15,
         "knockback": {
           "rate": 100,
-          "value": 1
+          "value": 1,
+          "dir": 0
         },
         "damage": {
           "minValue": 65,

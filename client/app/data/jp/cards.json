@@ -9863,7 +9863,8 @@
           },
           "knockback": {
             "rate": 100,
-            "value": 1
+            "value": 1,
+            "dir": 1
           },
           "damage": {
             "minValue": -5,

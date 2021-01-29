@@ -1110,7 +1110,7 @@ export class SkillService {
     }
 
     if (skill.knockback) {
-      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + skill.knockback.rate + '% chance to Knockback target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
+      formattedDamage.others += (formattedDamage.others !== '' ? '<br />' : '') + skill.knockback.rate + '% chance to ' + (skill.knockback.dir > 0 ? 'Attract' : 'Knockback') + ' target' + (skill.aoe ? 's' : '') + ' by ' + skill.knockback.value + ' square' + (skill.knockback.value > 1 ? 's' : '');
     }
 
     if (skill.increaseDamageOnDecreaseHp) {
