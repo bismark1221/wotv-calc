@@ -4,7 +4,7 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
 import { AuthService } from '../services/auth.service';
-
+import { ReviewService } from '../services/review.service';
 
 
 @Component({
@@ -25,9 +25,12 @@ export class OtherIlluminatiComponent implements AfterViewInit {
   selectedUnitId = null;
   selectedName = '';
 
+  editMode = true;
+
   constructor(
     private unitService: UnitService,
     private authService: AuthService,
+    private reviewService: ReviewService,
     private router: Router
   ) {
     this.user = this.authService.getUser();
@@ -52,7 +55,6 @@ export class OtherIlluminatiComponent implements AfterViewInit {
       if (result) {
         const tableUrl = this.router.url.split('/');
         const possibleSlug = tableUrl[tableUrl.length - 1];
-        let findedUnit = null;
 
         this.getUnits();
         this.units.forEach(unit => {
@@ -63,22 +65,51 @@ export class OtherIlluminatiComponent implements AfterViewInit {
             gvg: {pros: '', cons: ''},
             manual: {pros: '', cons: ''},
             comments: {pros: '', cons: ''},
-            bigReview: ''
+            bigReview: '',
+            unitId: unit.dataId
           };
-
-          if (unit.slug === possibleSlug) {
-            findedUnit = unit;
-          }
         });
 
-        if (findedUnit !== null) {
-          this.selectedUnitId = findedUnit.dataId;
-          this.selectedName = findedUnit.names.en;
-        }
+        this.getReviews();
       }
 
       // @ts-ignore
       this.isIlluminati = result;
     });
+  }
+
+  getReviews() {
+    this.reviewService.getStoredReviews('unit').subscribe(reviews => {
+      reviews.forEach(review => {
+        // @ts-ignore
+        this.reviews.units[review.unitId] = review;
+      });
+    });
+  }
+
+  saveReview(unitId) {
+    this.reviewService.saveReview(this.reviews.units[unitId], 'unit').then(storeId => {
+      if (storeId) {
+        this.reviews.units[unitId].storeId = storeId;
+      }
+    });
+  }
+
+  selectUnit(unitId) {
+    this.units.forEach(unit => {
+      if (unit.dataId === unitId) {
+          this.selectedUnitId = unit.dataId;
+          this.selectedName = unit.names.en;
+      }
+    });
+  }
+
+  backToList() {
+    this.selectedUnitId = null;
+    this.selectedName = '';
+  }
+
+  switchMode() {
+    this.editMode = !this.editMode;
   }
 }

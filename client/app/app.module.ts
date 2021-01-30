@@ -96,6 +96,7 @@ import { CheckHashService } from './services/checkHash.service';
 import { TitleService } from './services/title.service';
 import { RangeService } from './services/range.service';
 import { IndexService } from './services/index.service';
+import { ReviewService } from './services/review.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -206,6 +207,7 @@ export function createTranslateLoader(http: HttpClient) {
     TitleService,
     RangeService,
     IndexService,
+    ReviewService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler

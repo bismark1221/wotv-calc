@@ -22,7 +22,10 @@
 </div>
 
 
-<div class="row" *ngIf="isIlluminati">
+<div class="row" *ngIf="isIlluminati && editMode">
+  <div>
+    <button (click)="switchMode()">View Mode</button>
+  </div>
   <table *ngIf="selectedUnitId === null">
     <tr>
       <td>Unit</td>
@@ -36,7 +39,7 @@
     <tbody *ngFor="let unit of units">
       <tr>
         <td>
-          {{ unit.names.en }}
+          <a (click)="selectUnit(unit.dataId)">{{ unit.names.en }}</a>
         </td>
         <td>
           Pros<br />
@@ -75,11 +78,18 @@
           <textarea [(ngModel)]="reviews.units[unit.dataId].comments.cons"></textarea>
         </td>
       </tr>
+      <tr>
+        <td colspan="7">
+          <button (click)="saveReview(unit.dataId)">Save Review</button>
+        </td>
+      </tr>
     </tbody>
   </table>
 
   <div *ngIf="selectedUnitId !== null">
     <h1>{{ selectedName }}</h1>
+    <button (click)="backToList()">Back to list</button>
+    <button (click)="saveReview(selectedUnitId)">Save Review</button>
     <table>
       <tr>
         <td>Summary</td>
@@ -131,4 +141,66 @@
     <h3>Big Review</h3>
     <textarea [(ngModel)]="reviews.units[selectedUnitId].bigReview" cols="120" rows="60"></textarea>
   </div>
+</div>
+
+
+<div class="row" *ngIf="isIlluminati && !editMode">
+  <div>
+    <button (click)="switchMode()">Edit Mode</button>
+  </div>
+
+  <table *ngIf="selectedUnitId === null">
+    <tr>
+      <td>Unit</td>
+      <td>Summary</td>
+      <td>PVE</td>
+      <td>Arena</td>
+      <td>GVG</td>
+      <td>Manual PVP</td>
+      <td>Comments</td>
+    </tr>
+    <tbody *ngFor="let unit of units">
+      <tr>
+        <td>
+          <a (click)="selectUnit(unit.dataId)">{{ unit.names.en }}</a>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].summary.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].summary.cons"></ngx-md>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].pve.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].pve.cons"></ngx-md>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].arena.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].arena.cons"></ngx-md>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].gvg.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].gvg.cons"></ngx-md>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].manual.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].manual.cons"></ngx-md>
+        </td>
+        <td>
+          Pros<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].comments.pros"></ngx-md><br />
+          Cons<br />
+          <ngx-md class="markdownHome" [data]="reviews.units[unit.dataId].comments.cons"></ngx-md>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
