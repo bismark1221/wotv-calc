@@ -17,8 +17,8 @@ export class ToolService {
 
   sortByName(items, order = 'asc') {
     items.sort((a: any, b: any) => {
-      const x = this.i(a.name && a.name !== 'new unit' ? a.name : a.getName(this.translateService));
-      const y = this.i(b.name && b.name !== 'new unit' ? b.name : b.getName(this.translateService));
+      const x = this.i(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : a.getName(this.translateService));
+      const y = this.i(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : b.getName(this.translateService));
 
       if (order === 'asc') {
         return x.localeCompare(y, 'ja');
