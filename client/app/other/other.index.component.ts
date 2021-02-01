@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { IndexService } from '../services/index.service';
@@ -15,8 +15,46 @@ export class OtherIndexComponent implements OnInit {
   units = [];
   sort = 'name';
   order = 'asc';
-  statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'EVADE', 'ACCURACY'];
-  imageStatsType = ['SLASH_RES', 'PIERCE_RES', 'STRIKE_RES', 'MISSILE_RES', 'MAGIC_RES', 'SLASH_ATK', 'PIERCE_ATK', 'STRIKE_ATK', 'MISSILE_ATK', 'MAGIC_ATK'];
+  statsType = [
+    {type: 'HP', width: 55},
+    {type: 'TP', width: 55},
+    {type: 'AP', width: 55},
+    {type: 'ATK', width: 65},
+    {type: 'DEF', width: 65},
+    {type: 'MAG', width: 70},
+    {type: 'SPR', width: 65},
+    {type: 'AGI', width: 60},
+    {type: 'DEX', width: 65},
+    {type: 'LUCK', width: 80},
+    {type: 'EVADE', width: 90},
+    {type: 'ACCURACY', width: 125}
+  ];
+
+  imageStatsType = [
+    {type: 'SLASH_RES', width: 70},
+    {type: 'PIERCE_RES', width: 70},
+    {type: 'STRIKE_RES', width: 70},
+    {type: 'MISSILE_RES', width: 70},
+    {type: 'MAGIC_RES', width: 70},
+
+    {type: 'SLASH_ATK', width: 70},
+    {type: 'PIERCE_ATK', width: 70},
+    {type: 'STRIKE_ATK', width: 70},
+    {type: 'MISSILE_ATK', width: 70},
+    {type: 'MAGIC_ATK', width: 70},
+
+    {type: 'FIRE_RES', width: 70},
+    {type: 'ICE_RES', width: 70},
+    {type: 'EARTH_RES', width: 70},
+    {type: 'WIND_RES', width: 70},
+    {type: 'LIGHTNING_RES', width: 70},
+    {type: 'WATER_RES', width: 70},
+    {type: 'LIGHT_RES', width: 70},
+    {type: 'DARK_RES', width: 70}
+  ];
+
+  @ViewChild('leftWrapperContent') leftWrapperContent: ElementRef;
+  @ViewChild('rightWrapperHeader') rightWrapperHeader: ElementRef;
 
   constructor(
     private indexService: IndexService,
@@ -88,5 +126,10 @@ export class OtherIndexComponent implements OnInit {
         return 0;
       });
     }
+  }
+
+  onScroll(event) {
+    this.leftWrapperContent.nativeElement.scrollTop = event.srcElement.scrollTop;
+    this.rightWrapperHeader.nativeElement.scrollLeft = event.srcElement.scrollLeft;
   }
 }

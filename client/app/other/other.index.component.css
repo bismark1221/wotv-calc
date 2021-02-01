@@ -9,19 +9,78 @@ th {
   margin-top: 20px;
 }
 
-.tableDiv {
-  width: 1300px;
-  overflow-y: auto;
+
+
+
+.indexWrapper {
+  display:block;
+  width: 100%;
+  position: relative;
+  clear: both;
+  height: 800px;
 }
 
-.tableDiv, .tableDiv .statsTable {
-  transform:rotateX(180deg);
-  -ms-transform:rotateX(180deg); /* IE 9 */
-  -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+.leftWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 800px;
+}
+
+.leftWrapperHeader {
+  position:relative;
+  top:0;
+  left:0;
+  overflow:hidden;
+}
+
+.leftWrapperContent {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  height: 730px;
+}
+
+.rightWrapper {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 750px;
+}
+
+.rightWrapperHeader {
+  overflow: hidden;
+  position: relative;
+  border: 0px;
+  width: 730px;
+}
+
+.rightWrapperContent {
+  overflow: auto;
+  width: 100%;
+  height: 750px;
+}
+
+.leftTable {
+  width: 100%;
 }
 
 .statsTable {
-  width: 100%;
+  width: 2150px;
+}
+
+.leftTable td, .leftTable th, .statsTable td, .statsTable th {
+  height: 49px;
+}
+
+.colNum {
+
+}
+
+.colName {
+  width: 455px;
 }
 
 .unitImg {
@@ -49,16 +108,6 @@ th {
 
 .divTH:hover .fas {
   display: inline-block !important;
-}
-
-.unitCol {
-  min-width: 440px;
-  position: sticky;
-  left: 0px;
-}
-
-.colName {
-  background-color: var(--body-background);
 }
 
 .buffImg {
