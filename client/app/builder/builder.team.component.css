@@ -155,7 +155,7 @@
 }
 
 .levelDiv div:last-child {
-  width: 95px;
+  width: 115px;
 }
 
 .masterSkillDiv div:last-child, .limitDiv div:last-child {
@@ -350,11 +350,12 @@
   float: right;
 }
 
-.select-level, .select-limit-level, .select-job, .select-resonance {
+.select-level {
   display: inline-block;
-  width: 60px;
+  width: 70px;
 }
 
-.select-limit-level {
-  margin-left: 30px;
+.select-limit-level, .select-job, .select-resonance {
+  display: inline-block;
+  width: 60px;
 }
