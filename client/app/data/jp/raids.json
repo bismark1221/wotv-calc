@@ -5520,7 +5520,216 @@
         "species": "netherBeast",
         "element": "dark",
         "image": "lapsdabl",
-        "skills": {},
+        "skills": {
+          "SK_DABL_M_02_R": {
+            "effects": [],
+            "dataId": "SK_DABL_M_02_R",
+            "rate": 0,
+            "names": {
+              "en": "グラビデ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "hit": 100,
+            "crt_hit": -100,
+            "damage": {
+              "minValue": -75,
+              "maxValue": -75,
+              "type": "all",
+              "pool": "HP",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_DABL_M_01_R": {
+            "effects": [],
+            "dataId": "SK_DABL_M_01_R",
+            "rate": 0,
+            "names": {
+              "en": "バイオレットテラー"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 20,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "dark"
+            ],
+            "minLevel": 1
+          },
+          "SK_DABL_M_04_R": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_DABL_M_04_R",
+            "rate": 0,
+            "names": {
+              "en": "闇よりの使者"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 40
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "dark"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "素早さダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_HATE_1-100_U_PA": {
+            "effects": [
+              {
+                "type": "PROVOKE",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HATE_1-100_U_PA",
+            "rate": 100,
+            "names": {
+              "en": "ヘイト1-100アップ(パッシブ）"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_MDF_1_100_U": {
+            "effects": [
+              {
+                "type": "SPR_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_MDF_1_100_U",
+            "rate": 100,
+            "names": {
+              "en": "精神弱体耐性1-100アップ"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
         "slug": "diaborosu",
         "attack": {
           "names": {
@@ -5727,7 +5936,238 @@
         "species": "aquatic",
         "element": "light",
         "image": "lapscsli_02",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_02_M_01_RA": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "ももいろスフィア"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_02",
+            "rate": 60,
+            "names": {
+              "en": "いただきます！"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_03_RA": {
+            "effects": [
+              {
+                "type": "CONFUSION_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_02_M_03_RA",
+            "rate": 5,
+            "names": {
+              "en": "一緒に踊りましょっ！"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_OTDARK_1_80_U": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WATER_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WIND_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHTNING_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "EARTH_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHT_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_OTDARK_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "闇属性以外の耐性1-80アップ(基礎)"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_DF_1_100_U": {
+            "effects": [
+              {
+                "type": "DEF_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_DF_1_100_U",
+            "rate": 100,
+            "names": {
+              "en": "防御弱体耐性1-100アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "purin-purinsesu",
         "attack": {
           "names": {
@@ -5916,7 +6356,179 @@
         "species": "aquatic",
         "element": "lightning",
         "image": "lapscsli_03",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_03_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_03_M_01",
+            "rate": 0,
+            "names": {
+              "en": "スノーボールファイト"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_03_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_03_M_02",
+            "rate": 0,
+            "names": {
+              "en": "かじりつく"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_03_M_03": {
+            "effects": [
+              {
+                "type": "SILENCE_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_03_M_03",
+            "rate": 0,
+            "names": {
+              "en": "ほーりーないと"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 100,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 35,
+              "maxValue": 65,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "素早さダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_HATE_1-100_U_PA": {
+            "effects": [
+              {
+                "type": "PROVOKE",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HATE_1-100_U_PA",
+            "rate": 100,
+            "names": {
+              "en": "ヘイト1-100アップ(パッシブ）"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
         "slug": "hor-purin",
         "attack": {
           "names": {
@@ -6117,7 +6729,140 @@
         "species": "plant",
         "element": "fire",
         "image": "lapscact_02",
-        "skills": {},
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 50,
+            "names": {
+              "en": "針千本"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 0,
+            "names": {
+              "en": "針万本"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03_RA": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 20,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_CACT_M_03_RA",
+            "rate": 100,
+            "names": {
+              "en": "麻痺針"
+            },
+            "target": "all",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "gorudo-saboten",
         "attack": {
           "names": {

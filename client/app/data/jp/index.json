@@ -3037,7 +3037,7 @@
     },
     {
       "names": {
-        "en": "エルシュラ"
+        "en": "エルシュラ - Ellshra"
       },
       "stats": {
         "HP": 1673,
@@ -3543,6 +3543,40 @@
         "LIGHTNING_ATK": 10
       },
       "image": "lapssirm"
+    },
+    {
+      "names": {
+        "en": "ヘレナ（黒衣の魔女）"
+      },
+      "stats": {
+        "HP": 3484,
+        "TP": 187,
+        "AP": 187,
+        "ATK": 82,
+        "DEF": 0,
+        "SPR": 6,
+        "MAG": 519,
+        "DEX": 254,
+        "AGI": 63,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 15,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 150,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 20
+      },
+      "image": "lapshlna_01"
     },
     {
       "names": {

@@ -24,9 +24,16 @@ export class HomeComponent {
   updated = {
     GL: [
       {
-        date: '27/01',
+        date: '03/02',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_RARD'},
+          {type: 'unit', dataId: 'UN_LW_P_ELSI'},
+          {type: 'equipment', dataId: 'AF_LW_FIS_004'}
+        ]
+      },
+      {
+        date: '27/01',
+        items: [
           {type: 'card', dataId: 'VC_LW_HLNA'},
           {type: 'card', dataId: 'VC_LW_GCAL'},
           {type: 'esper', dataId: 'UN_LW_S_GCAL'},
@@ -40,18 +47,16 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_ALIM'},
           {type: 'equipment', dataId: 'AF_LW_ROD_019'}
         ]
-      },
-      {
-        date: '13/01',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_LVAT'},
-          {type: 'card', dataId: 'VC_LW_LVAT'},
-          {type: 'card', dataId: 'VC_LW_ASSASIN'},
-          {type: 'equipment', dataId: 'AF_FF14_HLM_001'}
-        ]
       }
     ],
     JP: [
+      {
+        date: '01/02',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_HLNA_01'},
+          {type: 'equipment', dataId: 'AF_LW_ROD_006'}
+        ]
+      },
       {
         date: '22/01',
         items: [
@@ -80,19 +85,6 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_LW_BOK_001'},
           {type: 'equipment', dataId: 'AF_LW_BOK_002'},
           {type: 'equipment', dataId: 'AF_LW_BOK_003'}
-        ]
-      },
-      {
-        date: '09/01',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_YERM'},
-          {type: 'unit', dataId: 'UN_LW_P_NASR'},
-          {type: 'unit', dataId: 'UN_LW_P_ETRE'},
-
-          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
-          {type: 'card', dataId: 'VC_LW_PNIX'},
-          {type: 'card', dataId: 'VC_LW_LILS2'},
-          {type: 'equipment', dataId: 'AF_LW_ARM_028'}
         ]
       }
     ]

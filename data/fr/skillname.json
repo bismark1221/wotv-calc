@@ -3173,6 +3173,30 @@
             "value": "Lame Terre X"
         },
         {
+            "key": "SK_LW_MKN_FIRE_M_1",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_M_1",
+            "value": "Lame Glace X"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_M_1",
+            "value": "Lame Foudre X"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_M_1",
+            "value": "Lame Eau X"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_M_1",
+            "value": "Lame Bannissement X"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_M_1",
+            "value": "Lame Ombre X"
+        },
+        {
             "key": "SK_LW_MKN_M_2",
             "value": "Tranchant dangereux"
         },
@@ -3197,12 +3221,40 @@
             "value": "Sort dangereux"
         },
         {
+            "key": "SK_LW_MKN_S_3",
+            "value": "Saignée rituelle"
+        },
+        {
             "key": "SK_LW_MKN_WIND_S_4",
             "value": "Rune d'affaiblissement : vent"
         },
         {
             "key": "SK_LW_MKN_SOIL_S_4",
             "value": "Rune d'affaiblissement : terre"
+        },
+        {
+            "key": "SK_LW_MKN_FIRE_S_4",
+            "value": "Rune d'affaiblissement : feu"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_S_4",
+            "value": "Rune d'affaiblissement : glace"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_S_4",
+            "value": "Rune d'affaiblissement : foudre"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_S_4",
+            "value": "Rune d'affaiblissement : eau"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_S_4",
+            "value": "Rune d'affaiblissement : lumière"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_S_4",
+            "value": "Rune d'affaiblissement : ombre"
         },
         {
             "key": "SK_LW_MKN_R_1",
@@ -3217,8 +3269,128 @@
             "value": "Rune de renforcement : terre"
         },
         {
+            "key": "SK_LW_MKN_FIRE_P_1",
+            "value": "Rune de renforcement : feu"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_P_1",
+            "value": "Rune de renforcement : glace"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_P_1",
+            "value": "Rune de renforcement : foudre"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_P_1",
+            "value": "Rune de renforcement : eau"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_P_1",
+            "value": "Rune de renforcement : lumière"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_P_1",
+            "value": "Rune de renforcement : ombre"
+        },
+        {
             "key": "SK_LW_MKN_P_2",
             "value": "Esprit affûté"
+        },
+        {
+            "key": "SK_LW_MKN_FIRE_S_1_INIT",
+            "value": "Lame Feu"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_S_1_INIT",
+            "value": "Lame Glace"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_S_1_INIT",
+            "value": "Lame Foudre"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_S_1_INIT",
+            "value": "Lame Eau"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_S_1_INIT",
+            "value": "Lame Bannissement"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_S_1_INIT",
+            "value": "Lame Ombre"
+        },
+        {
+            "key": "SK_LW_MKN_FIRE_M_1_SUB",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_M_1_SUB",
+            "value": "Lame Glace X"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_M_1_SUB",
+            "value": "Lame Feu X"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_M_1_SUB",
+            "value": "Lame Terre X"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_M_1_SUB",
+            "value": "Lame Foudre X"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_M_1_SUB",
+            "value": "Lame Eau X"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_M_1_SUB",
+            "value": "Lame Bannissement X"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_M_1_SUB",
+            "value": "Lame Ombre X"
+        },
+        {
+            "key": "SK_LW_MKN_M_2_SUB",
+            "value": "Tranchant dangereux"
+        },
+        {
+            "key": "SK_LW_MKN_M_3_SUB",
+            "value": "Lame volante"
+        },
+        {
+            "key": "SK_LW_MKN_FIRE_S_1",
+            "value": "Lame Feu"
+        },
+        {
+            "key": "SK_LW_MKN_ICE_S_1",
+            "value": "Lame Glace"
+        },
+        {
+            "key": "SK_LW_MKN_WIND_S_1",
+            "value": "Lame Vent"
+        },
+        {
+            "key": "SK_LW_MKN_SOIL_S_1",
+            "value": "Lame Terre"
+        },
+        {
+            "key": "SK_LW_MKN_THUN_S_1",
+            "value": "Lame Foudre"
+        },
+        {
+            "key": "SK_LW_MKN_WATR_S_1",
+            "value": "Lame Eau"
+        },
+        {
+            "key": "SK_LW_MKN_SHIN_S_1",
+            "value": "Lame Bannissement"
+        },
+        {
+            "key": "SK_LW_MKN_DARK_S_1",
+            "value": "Lame Ombre"
         },
         {
             "key": "SK_FF4_CECL_ATK",
@@ -3602,7 +3774,7 @@
         },
         {
             "key": "SK_LW_BEA_M_2",
-            "value": "Paume de Shura"
+            "value": "Poings maléfiques"
         },
         {
             "key": "SK_LW_BEA_M_3",
@@ -5785,6 +5957,10 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_ELSI",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -6287,6 +6463,10 @@
         {
             "key": "SK_ACC_LW_RARD_1_1",
             "value": "Transe combative"
+        },
+        {
+            "key": "SK_ROD_LW_ELSI_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",

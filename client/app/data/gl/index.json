@@ -3121,6 +3121,40 @@
         "DEFENSE_PENETRATION": 20
       },
       "image": "lapsrard"
+    },
+    {
+      "names": {
+        "en": "Ellshra",
+        "fr": "Elzandra"
+      },
+      "stats": {
+        "HP": 1673,
+        "TP": 147,
+        "AP": 130,
+        "ATK": 58,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 375,
+        "DEX": 145,
+        "AGI": 58,
+        "LUCK": 175,
+        "DARK_RES": -15,
+        "SLASH_RES": -10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 5,
+        "SLEEP_RES": 50,
+        "SLOW_RES": -25,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 99,
+        "LIGHT_ATK": 10,
+        "ACCURACY": 15
+      },
+      "image": "lapselsi"
     }
   ]
 }

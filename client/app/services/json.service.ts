@@ -96,30 +96,18 @@ import { default as gl_raid_52 } from '../../../data/raid/gl/raid_ev_14_03_set.j
 import { default as gl_raid_53 } from '../../../data/raid/gl/raid_ev_14_04_set.json';
 import { default as gl_raid_54 } from '../../../data/raid/gl/raid_ev_14_05_set.json';
 import { default as gl_raid_55 } from '../../../data/raid/gl/raid_ev_14_06_set.json';
-
-import { default as jp_raid_1 } from '../../../data/raid/jp/raid_ev_06_01_set.json';
-import { default as jp_raid_2 } from '../../../data/raid/jp/raid_ev_06_02_set.json';
-import { default as jp_raid_3 } from '../../../data/raid/jp/raid_ev_06_03_set.json';
-import { default as jp_raid_4 } from '../../../data/raid/jp/raid_ev_06_04_set.json';
-import { default as jp_raid_5 } from '../../../data/raid/jp/raid_ev_07_01_set.json';
-import { default as jp_raid_6 } from '../../../data/raid/jp/raid_ev_07_02_set.json';
-import { default as jp_raid_7 } from '../../../data/raid/jp/raid_ev_07_03_set.json';
-import { default as jp_raid_8 } from '../../../data/raid/jp/raid_ev_07_04_set.json';
-import { default as jp_raid_9 } from '../../../data/raid/gl/raid_ev_08_01_set.json';
-import { default as jp_raid_10 } from '../../../data/raid/gl/raid_ev_08_02_set.json';
-import { default as jp_raid_11 } from '../../../data/raid/gl/raid_ev_08_03_set.json';
-import { default as jp_raid_12 } from '../../../data/raid/gl/raid_ev_09_01_set.json';
-import { default as jp_raid_13 } from '../../../data/raid/gl/raid_ev_09_02_set.json';
-import { default as jp_raid_14 } from '../../../data/raid/gl/raid_ev_09_03_set.json';
-import { default as jp_raid_15 } from '../../../data/raid/gl/raid_ev_09_04_set.json';
-import { default as jp_raid_16 } from '../../../data/raid/gl/raid_ev_09_05_set.json';
-import { default as jp_raid_17 } from '../../../data/raid/gl/raid_ev_09_06_set.json';
-import { default as jp_raid_18 } from '../../../data/raid/gl/raid_ev_10_01_set.json';
-import { default as jp_raid_19 } from '../../../data/raid/gl/raid_ev_10_02_set.json';
-import { default as jp_raid_20 } from '../../../data/raid/gl/raid_ev_10_03_set.json';
-import { default as jp_raid_21 } from '../../../data/raid/gl/raid_ev_10_04_set.json';
-import { default as jp_raid_22 } from '../../../data/raid/gl/raid_ev_10_05_set.json';
-import { default as jp_raid_23 } from '../../../data/raid/gl/raid_ev_10_06_set.json';
+import { default as gl_raid_56 } from '../../../data/raid/gl/raid_ev_15_01_set.json';
+import { default as gl_raid_57 } from '../../../data/raid/gl/raid_ev_15_02_set.json';
+import { default as gl_raid_58 } from '../../../data/raid/gl/raid_ev_15_03_set.json';
+import { default as gl_raid_59 } from '../../../data/raid/gl/raid_ev_15_04_set.json';
+import { default as gl_raid_60 } from '../../../data/raid/gl/raid_ev_15_05_set.json';
+import { default as gl_raid_61 } from '../../../data/raid/gl/raid_ev_15_06_set.json';
+import { default as gl_raid_62 } from '../../../data/raid/gl/raid_ev_16_01_set.json';
+import { default as gl_raid_63 } from '../../../data/raid/gl/raid_ev_16_02_set.json';
+import { default as gl_raid_64 } from '../../../data/raid/gl/raid_ev_16_03_set.json';
+import { default as gl_raid_65 } from '../../../data/raid/gl/raid_ev_16_04_set.json';
+import { default as gl_raid_66 } from '../../../data/raid/gl/raid_ev_16_05_set.json';
+import { default as gl_raid_67 } from '../../../data/raid/gl/raid_ev_16_06_set.json';
 
 @Injectable()
 export class JsonService {
@@ -2248,7 +2236,7 @@ export class JsonService {
         } else {
           const math = {
             type: this.strengthType[strength.type],
-            formula: this.strengthFormulaCondition[strength.formula],
+            formula: this.strengthType[strength.type] === 'COUNT_DAMAGE_RECEIVED' ? this.strengthFormulaCondition[1] : this.strengthFormulaCondition[strength.formula],
             condition : strength.val1,
             value: strength.rate1
           };
@@ -3046,6 +3034,19 @@ export class JsonService {
     this[this.version].raidMaps[gl_raid_53.wcond.expr] = gl_raid_53;
     this[this.version].raidMaps[gl_raid_54.wcond.expr] = gl_raid_54;
     this[this.version].raidMaps[gl_raid_55.wcond.expr] = gl_raid_55;
+
+    this[this.version].raidMaps[gl_raid_56.wcond.expr] = gl_raid_56;
+    this[this.version].raidMaps[gl_raid_57.wcond.expr] = gl_raid_57;
+    this[this.version].raidMaps[gl_raid_58.wcond.expr] = gl_raid_58;
+    this[this.version].raidMaps[gl_raid_59.wcond.expr] = gl_raid_59;
+    this[this.version].raidMaps[gl_raid_60.wcond.expr] = gl_raid_60;
+    this[this.version].raidMaps[gl_raid_61.wcond.expr] = gl_raid_61;
+    this[this.version].raidMaps[gl_raid_62.wcond.expr] = gl_raid_62;
+    this[this.version].raidMaps[gl_raid_63.wcond.expr] = gl_raid_63;
+    this[this.version].raidMaps[gl_raid_64.wcond.expr] = gl_raid_64;
+    this[this.version].raidMaps[gl_raid_65.wcond.expr] = gl_raid_65;
+    this[this.version].raidMaps[gl_raid_66.wcond.expr] = gl_raid_66;
+    this[this.version].raidMaps[gl_raid_67.wcond.expr] = gl_raid_67;
 
     Object.keys(this[this.version].raid).forEach(raidId => {
       const raid = this[this.version].raid[raidId];
