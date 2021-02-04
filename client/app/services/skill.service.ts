@@ -191,7 +191,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0;
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.type !== 'MODIFY_ABSORB'  && math.dst !== 'DAMAGE' && math.formula === 'CURVE'&& math.value < maxReduceValueFromMath) {
+          if (math.type !== 'MODIFY_ABSORB' && math.dst !== 'DAMAGE' && math.formula === 'CURVE' && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value;
           }
         });
@@ -199,15 +199,6 @@ export class SkillService {
 
       let minValue = (typeof(effect.minValue) === 'number' ? effect.minValue : effect.value) + maxReduceValueFromMath;
       minValue = this.getPositiveValue(minValue, getPositiveValue);
-
-
-      if (effect.type === 'ATK') {
-        console.log(skill.names ? skill.names.en : "BUFF")
-        console.log(effect.minValue)
-        console.log(maxReduceValueFromMath)
-        console.log(minValue)
-      }
-
 
       if (forceCalc) {
         effect.calcType = forceCalc;

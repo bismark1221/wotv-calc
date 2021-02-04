@@ -502,7 +502,7 @@ export class JsonService {
     7: 'EFFECT',
     8: 'CHANCE',
     9: 'ABSORB'
-  }
+  };
 
   damageEffectType = [
     '0',
