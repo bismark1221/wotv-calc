@@ -43181,9 +43181,10 @@
         "maths": [
           {
             "type": "DEAD_UNITS",
-            "formula": "COUNT",
+            "formula": "FIX",
             "condition": 5,
-            "value": 200
+            "value": 200,
+            "dst": "DAMAGE"
           }
         ],
         "damage": {

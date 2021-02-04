@@ -144,7 +144,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0;
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.type !== 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
+          if (math.type !== 'MODIFY_ABSORB' && math.dst === 'DAMAGE' && math.formula === 'CURVE' && math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value;
           }
         });
@@ -191,7 +191,7 @@ export class SkillService {
       let maxReduceValueFromMath = 0;
       if (skill.maths) {
         skill.maths.forEach(math => {
-          if (math.type !== 'MODIFY_ABSORB' && math.value < maxReduceValueFromMath) {
+          if (math.type !== 'MODIFY_ABSORB'  && math.dst !== 'DAMAGE' && math.formula === 'CURVE'&& math.value < maxReduceValueFromMath) {
             maxReduceValueFromMath = math.value;
           }
         });
@@ -199,6 +199,15 @@ export class SkillService {
 
       let minValue = (typeof(effect.minValue) === 'number' ? effect.minValue : effect.value) + maxReduceValueFromMath;
       minValue = this.getPositiveValue(minValue, getPositiveValue);
+
+
+      if (effect.type === 'ATK') {
+        console.log(skill.names ? skill.names.en : "BUFF")
+        console.log(effect.minValue)
+        console.log(maxReduceValueFromMath)
+        console.log(minValue)
+      }
+
 
       if (forceCalc) {
         effect.calcType = forceCalc;
@@ -1035,7 +1044,7 @@ export class SkillService {
     }
 
     if (skill.maths) {
-      html = this.formatMaths(skill, html);
+      html = this.formatMaths(skill, html, 'notDamage');
     }
 
     if (getTarget) {
@@ -1118,148 +1127,193 @@ export class SkillService {
     }
 
     if (skill.maths) {
-      formattedDamage.others = this.formatMaths(skill, formattedDamage.others);
+      formattedDamage.others = this.formatMaths(skill, formattedDamage.others, 'damage');
     }
 
     return formattedDamage;
   }
 
-  formatMaths(skill, html) {
+  formatMaths(skill, html, from) {
     if (skill.maths) {
       skill.maths.forEach(math => {
-        if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB') {
-          html += ' + Increase modifier by ';
-        }
+        if ((from === 'damage' && (math.dst === 'DAMAGE' || math.dst === 'ABSORB'))
+          || (from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB'))
+        ) {
+          if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB') {
+            html += ' + Increase ';
 
-        switch (math.formula) {
-          case 'CURVE' :
-            if (math.type !== 'UNIT_ACTIONS') {
-              html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% ';
+            switch (math.dst) {
+              case 'DAMAGE' :
+                html += 'modifier by ';
+                break;
+              case 'EFFECT' :
+                html += 'effect by ';
+                break;
+              case 'CHANCE' :
+                html += 'chance by ';
+                break;
+              default :
+                html += 'modifier by ';
+                break;
             }
-            break;
-          case 'PERCENT' :
-            break;
-          default:
-            html += math.value + '% ';
-            break;
-        }
+          }
 
-        switch (math.type) {
-          case 'DEAD_UNITS' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' for each dead unit (max: ' + this.getPositiveValue(math.value, true) + '%)';
-                break;
-              case 'COUNT' :
-                html += ' if there is ' + math.condition + ' dead unit';
-                break;
-              case 'RATIO' :
-                html += ' if the dead units is a multiple of ' + math.condition;
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'UNIT_LEVEL' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' for each unit level (max: ' + this.getPositiveValue(math.value, true) + '%)';
-                break;
-              case 'COUNT' :
-                html += ' if the unit level is ' + math.condition;
-                break;
-              case 'RATIO' :
-                html += ' if the unit level is a multiple of ' + math.condition;
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'HEIGHT' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' for each height level of the target (max: ' + this.getPositiveValue(math.value, true) + '%)';
-                break;
-              case 'COUNT' :
-                html += ' if target height is ' + math.condition;
-                break;
-              case 'RATIO' :
-                html += ' if the target height is a multiple of ' + math.condition;
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'TARGET_LEVEL' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' for each target level (max: ' + this.getPositiveValue(math.value, true) + '%)';
-                break;
-              case 'COUNT' :
-                html += ' if the target level is ' + math.condition;
-                break;
-              case 'RATIO' :
-                html += ' if the target level is a multiple of ' + math.condition;
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'COUNT_DAMAGE_RECEIVED' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' for each time you received damage (max: ' + this.getPositiveValue(math.value, true) + '%)';
-                break;
-              case 'COUNT' :
-                html += ' if the number of times you received damage is ' + math.condition;
-                break;
-              case 'RATIO' :
-                html += ' if the number of time you received damage is a multiple of ' + math.condition;
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'UNIT_ACTIONS' :
-            switch (math.formula) {
-              case 'CURVE' :
-                html += ' + Increase chance up to ' + math.value + '% (-' + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% for each action done by the unit)';
-                break;
-              case 'COUNT' :
-                console.log('Not manage math formula right now...');
-                break;
-              case 'RATIO' :
-                console.log('Not manage math formula right now...');
-                break;
-              case 'PERCENT' :
-                console.log('Not manage math formula right now...');
-                break;
-            }
-            break;
-          case 'MODIFY_ABSORB' :
-            switch (math.formula) {
-              case 'CURVE' :
-                console.log('Not manage math formula right now...');
-                break;
-              case 'COUNT' :
-                console.log('Not manage math formula right now...');
-                break;
-              case 'RATIO' :
-                console.log('Not manage math formula right now...');
-                break;
-              case 'PERCENT' :
-                html += ' + Absorb ' + this.getPositiveValue(100 + math.value, true) + '% of the damage done';
-                break;
-            }
-            break;
-          default :
-            console.log('Not manage math type : ' + math.type);
-            break;
+          switch (math.formula) {
+            case 'CURVE' :
+              if (math.type !== 'UNIT_ACTIONS') {
+                html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% ';
+              }
+              break;
+            case 'COUNT' :
+              if (math.type !== 'UNIT_ACTIONS') {
+                html += Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% ';
+              }
+              break;
+            case 'PERCENT' :
+              break;
+            default:
+              html += math.value + '% ';
+              break;
+          }
+
+          switch (math.type) {
+            case 'DEAD_UNITS' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each dead unit (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'FIX' :
+                  html += ' if there is ' + math.condition + ' dead unit';
+                  break;
+                case 'COUNT' :
+                  html += ' for each dead unit (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'RATIO' :
+                  html += ' if the dead units is a multiple of ' + math.condition;
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'UNIT_LEVEL' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each unit level (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'FIX' :
+                  html += ' if the unit level is ' + math.condition;
+                  break;
+                case 'COUNT' :
+                  html += ' for each unit level (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'RATIO' :
+                  html += ' if the unit level is a multiple of ' + math.condition;
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'HEIGHT' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each height level of the target (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'FIX' :
+                  html += ' if target height is ' + math.condition;
+                  break;
+                case 'COUNT' :
+                  html += ' for each height level of the target (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'RATIO' :
+                  html += ' if the target height is a multiple of ' + math.condition;
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'TARGET_LEVEL' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each target level (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'FIX' :
+                  html += ' if the target level is ' + math.condition;
+                  break;
+                case 'COUNT' :
+                  html += ' for each target level (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'RATIO' :
+                  html += ' if the target level is a multiple of ' + math.condition;
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'COUNT_DAMAGE_RECEIVED' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' for each time you received damage (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'FIX' :
+                  html += ' if the number of times you received damage is ' + math.condition;
+                  break;
+                case 'COUNT' :
+                  html += ' for each time you received damage (max: ' + this.getPositiveValue(math.value, true) + '%)';
+                  break;
+                case 'RATIO' :
+                  html += ' if the number of time you received damage is a multiple of ' + math.condition;
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'UNIT_ACTIONS' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  html += ' + Increase chance up to ' + math.value + '% (-' + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% for each action done by the unit)';
+                  break;
+                case 'FIX' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'COUNT' :
+                  html += ' + Increase chance up to ' + math.value + '% (-' + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% for each action done by the unit)';
+                  break;
+                case 'RATIO' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'PERCENT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+              break;
+            case 'MODIFY_ABSORB' :
+              switch (math.formula) {
+                case 'CURVE' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'FIX' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'COUNT' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'RATIO' :
+                  console.log('Not manage math formula right now...');
+                  break;
+                case 'PERCENT' :
+                  html += ' + Absorb ' + this.getPositiveValue(100 + math.value, true) + '% of the damage done';
+                  break;
+              }
+              break;
+            default :
+              console.log('Not manage math type : ' + math.type);
+              break;
+          }
         }
       });
     }

@@ -12681,7 +12681,8 @@
               "type": "HEIGHT",
               "formula": "RATIO",
               "condition": 2,
-              "value": 60
+              "value": 60,
+              "dst": "DAMAGE"
             }
           ],
           "damage": {

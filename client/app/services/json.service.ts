@@ -490,11 +490,19 @@ export class JsonService {
   };
 
   strengthFormulaCondition = {
-    0: 'COUNT',
+    0: 'FIX',
     1: 'CURVE',
     22: 'RATIO',
-    50: 'PERCENT'
+    50: 'PERCENT',
+    1000: 'COUNT'
   };
+
+  strengthModifier = {
+    0: 'DAMAGE',
+    7: 'EFFECT',
+    8: 'CHANCE',
+    9: 'ABSORB'
+  }
 
   damageEffectType = [
     '0',
@@ -2233,12 +2241,15 @@ export class JsonService {
           console.log('10 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH TYPE : ' + strength.type);
         } else if (!this.strengthFormulaCondition[strength.formula]) {
           console.log('11 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH FORMULA : ' + strength.formula);
+        } else if (!this.strengthModifier[strength.dst]) {
+          console.log('11 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH DST : ' + strength.dst);
         } else {
           const math = {
             type: this.strengthType[strength.type],
-            formula: this.strengthType[strength.type] === 'COUNT_DAMAGE_RECEIVED' ? this.strengthFormulaCondition[1] : this.strengthFormulaCondition[strength.formula],
+            formula: this.strengthType[strength.type] === 'COUNT_DAMAGE_RECEIVED' ? this.strengthFormulaCondition[1000] : this.strengthFormulaCondition[strength.formula],
             condition : strength.val1,
-            value: strength.rate1
+            value: strength.rate1,
+            dst: this.strengthModifier[strength.dst]
           };
 
           skill.maths.push(math);
