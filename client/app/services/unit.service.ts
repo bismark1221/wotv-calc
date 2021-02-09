@@ -50,6 +50,7 @@ export class UnitService {
     'UN_FF4_P_KAIN',
     'UN_FF10_P_TIDU',
     'UN_FF10_P_YUNA',
+    'UN_FF10_P_ARON',
     'UN_LW_P_RYER_01',
     'UN_LW_P_RIRY_01',
     'UN_LW_P_VNLA_01',
