@@ -1947,6 +1947,7 @@ export class JsonService {
       invtag: null,
       acbst: null,
       bbrk: null,
+      reflec: null,
 
       // not used
       timing: null,
@@ -1975,6 +1976,7 @@ export class JsonService {
       range_bns: null,
       def_shi: null,
       range_buff: null,
+      reftar: null, // can be reflect or reflect target ?
 
       // managed not here
       iname: null,
@@ -2060,6 +2062,15 @@ export class JsonService {
       skill.effects.push({
         type: 'STOP_CHAIN_INCREASE_DAMAGE',
         value: dataSkill.acbst
+      });
+    }
+
+    if (dataSkill.reflec) {
+      skill.effects.push({
+        type: 'REFLECT',
+        value: dataSkill.reflec.type,
+        turn: dataSkill.reflec.turn,
+        target: this.targetTypes[dataSkill.target]
       });
     }
 

@@ -4556,6 +4556,20 @@
       "fr": "Pierre d'éveil de Glacial (3★)"
     }
   },
+  "IT_SB_AW_TYPN_R2": {
+    "dataId": "IT_SB_AW_TYPN_R2",
+    "names": {
+      "en": "Typhon's Awakening Stone (2★)",
+      "fr": "Pierre d'éveil de Typhon (2★)"
+    }
+  },
+  "IT_SB_AW_TYPN_R3": {
+    "dataId": "IT_SB_AW_TYPN_R3",
+    "names": {
+      "en": "Typhon's Awakening Stone (3★)",
+      "fr": "Pierre d'éveil de Typhon (3★)"
+    }
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -5683,6 +5697,14 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_CLK_001": {
+    "dataId": "IT_AF_LW_CLK_001",
+    "names": {
+      "en": "Elf's Cloak Crafting Recipe",
+      "fr": "Recette d'artisanat : Tunique d'Elfe"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -6017,6 +6039,13 @@
     "names": {
       "en": "Global Festival Medal A",
       "fr": "Médaille A festive"
+    }
+  },
+  "IT_EC_MEDAL_CNY21": {
+    "dataId": "IT_EC_MEDAL_CNY21",
+    "names": {
+      "en": "Ox Medal",
+      "fr": "Médaille du Bœuf"
     }
   },
   "IT_EC_FF14_1": {
@@ -6691,6 +6720,13 @@
       "fr": "7 premiers jours du débutant seulement - Ticket d'invocation x10 GRATUITE d'unité UR garantie"
     }
   },
+  "IT_US_G_CNY21_01": {
+    "dataId": "IT_US_G_CNY21_01",
+    "names": {
+      "en": "Fortune Summon Ticket",
+      "fr": "Ticket de la chance"
+    }
+  },
   "IT_US_G_V_R_UR_01": {
     "dataId": "IT_US_G_V_R_UR_01",
     "names": {
@@ -6950,6 +6986,13 @@
       "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur d'unité"
     }
   },
+  "IT_US_SE_R_UR_U_08": {
+    "dataId": "IT_US_SE_R_UR_U_08",
+    "names": {
+      "en": "[Lunar New Year 2021] Select Unit Summon Ticket",
+      "fr": "[Nouvel An lunaire 2021] Ticket sélectionneur d'unité"
+    }
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -7088,6 +7131,13 @@
     "names": {
       "en": "[New Year's Celebration Part III] Select Vision Card Summon Ticket",
       "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur d'atout-vision"
+    }
+  },
+  "IT_US_SE_R_UR_V_GL06": {
+    "dataId": "IT_US_SE_R_UR_V_GL06",
+    "names": {
+      "en": "[Lunar New Year 2021] Select Vision Card Summon Ticket",
+      "fr": "[Nouvel An lunaire 2021] Ticket sélectionneur d'atout-vision"
     }
   },
   "IT_US_SE_AW-ITEM_04": {
@@ -7776,6 +7826,20 @@
       "fr": "Fragment de l'atout-vision : Glacial, les Ailes gelées"
     }
   },
+  "IT_VPI_LW_APPLE": {
+    "dataId": "IT_VPI_LW_APPLE",
+    "names": {
+      "en": "\"Memories of Apples\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Pommes du souvenir"
+    }
+  },
+  "IT_VPI_LW_TYPN": {
+    "dataId": "IT_VPI_LW_TYPN",
+    "names": {
+      "en": "\"Tempestuous Disaster, Typhon\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Typhon, la Tempête désastreuse"
+    }
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -7972,6 +8036,13 @@
       "fr": "Médaille de raid FFXIV"
     }
   },
+  "IT_EC_RAID_09": {
+    "dataId": "IT_EC_RAID_09",
+    "names": {
+      "en": "February Raid Medal",
+      "fr": "Médaille du raid de février"
+    }
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -8161,6 +8232,13 @@
       "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
     }
   },
+  "IT_US_GL_SE_VPI_20": {
+    "dataId": "IT_US_GL_SE_VPI_20",
+    "names": {
+      "en": "[Lunar New Year 2021] Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "[Nouvel An lunaire 2021] Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    }
+  },
   "IT_US_SE_VPI_11": {
     "dataId": "IT_US_SE_VPI_11",
     "names": {
@@ -8191,6 +8269,13 @@
   },
   "IT_US_SE_SSR_U_GL02": {
     "dataId": "IT_US_SE_SSR_U_GL02",
+    "names": {
+      "en": "Select MR Unit Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'unité MR"
+    }
+  },
+  "IT_US_SE_SSR_U_GL04": {
+    "dataId": "IT_US_SE_SSR_U_GL04",
     "names": {
       "en": "Select MR Unit Shard x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 fragments d'unité MR"
@@ -8266,6 +8351,13 @@
       "fr": "Ticket sélectionneur de 40 fragments d'unité UR"
     }
   },
+  "IT_US_SE_PI_GL07": {
+    "dataId": "IT_US_SE_PI_GL07",
+    "names": {
+      "en": "[Lunar New Year 2021] Select UR Unit Shard x80 Summon Ticket",
+      "fr": "[Nouvel An lunaire 2021] Ticket sélectionneur de 80 fragments d'unité UR"
+    }
+  },
   "IT_US_N_GACHA_10": {
     "dataId": "IT_US_N_GACHA_10",
     "names": {
@@ -8315,11 +8407,25 @@
       "fr": "[Célébration de la nouvelle année - Partie III] Ticket sélectionneur de 100 livres secrets de l'amélioration"
     }
   },
+  "IT_US_GL_SE_AF_AW_08": {
+    "dataId": "IT_US_GL_SE_AF_AW_08",
+    "names": {
+      "en": "[Lunar New Year 2021] Select Secret Book of Refinement x100 Summon Ticket",
+      "fr": "[Nouvel An lunaire 2021] Ticket sélectionneur de 100 livres secrets de l'amélioration"
+    }
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
       "en": "Select Equipment Seal x20 Summon Ticket",
       "fr": "Ticket sélectionneur de 20 sceaux d'équipement"
+    }
+  },
+  "IT_US_SE_AF_SUP_02": {
+    "dataId": "IT_US_SE_AF_SUP_02",
+    "names": {
+      "en": "Select Equipment Seal x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 sceaux d'équipement"
     }
   },
   "IT_US_G_N_TW_10": {

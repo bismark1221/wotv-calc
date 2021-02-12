@@ -2109,6 +2109,22 @@
             "value": ""
         },
         {
+            "key": "BUFF_TYPN_M_02_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_TYPN_M_02_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_TYPN_M_03",
+            "value": ""
+        },
+        {
+            "key": "BUFF_TYPN_M_04",
+            "value": ""
+        },
+        {
             "key": "BUFF_LB_LW_MONT_B",
             "value": ""
         },
@@ -2410,6 +2426,10 @@
         },
         {
             "key": "BUFF_SMN_GCAL",
+            "value": ""
+        },
+        {
+            "key": "BUFF_SMN_TYPN",
             "value": ""
         },
         {
@@ -3681,6 +3701,26 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_LW_TYPN_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_GSAW",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_CACT_GS",
             "value": ""
         },
@@ -4725,6 +4765,58 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_LW_TYPN_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_P_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_P_2AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_TYPN_P_2MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_TYPN_P3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_TYPN_P3AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_GL_VC_LW_TYPN_P3MAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_P_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_APPLE_P_2AW",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_CACT_P",
             "value": ""
         },
@@ -4958,6 +5050,14 @@
         },
         {
             "key": "BUFF_LW__ROD_019_5",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_CLK_001_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_CLK_001_5",
             "value": ""
         },
         {
@@ -10915,6 +11015,138 @@
         {
             "key": "BUFF_GCAL_33",
             "value": "Éophage +5 %"
+        },
+        {
+            "key": "BUFF_TYPN_01",
+            "value": "Taux d'esquive +3"
+        },
+        {
+            "key": "BUFF_TYPN_02",
+            "value": "Tue-démons +2 %"
+        },
+        {
+            "key": "BUFF_TYPN_03",
+            "value": "Rés magique +3 %"
+        },
+        {
+            "key": "BUFF_TYPN_04",
+            "value": "Terraphage +2 %"
+        },
+        {
+            "key": "BUFF_TYPN_05",
+            "value": "Dégâts critiques +2 %"
+        },
+        {
+            "key": "BUFF_TYPN_06",
+            "value": "Magie d'invocation niv. 2"
+        },
+        {
+            "key": "BUFF_TYPN_07",
+            "value": "Magie d'invocation niv. 4"
+        },
+        {
+            "key": "BUFF_TYPN_08",
+            "value": "Taux d'esquive +4"
+        },
+        {
+            "key": "BUFF_TYPN_09",
+            "value": "Taux de précision +3"
+        },
+        {
+            "key": "BUFF_TYPN_10",
+            "value": "Taux de précision +3"
+        },
+        {
+            "key": "BUFF_TYPN_11",
+            "value": "Tue-démons +3 %"
+        },
+        {
+            "key": "BUFF_TYPN_12",
+            "value": "Rés magique +4 %"
+        },
+        {
+            "key": "BUFF_TYPN_13",
+            "value": "Attaque de vent +4 %"
+        },
+        {
+            "key": "BUFF_TYPN_14",
+            "value": "Attaque de vent +5 %"
+        },
+        {
+            "key": "BUFF_TYPN_15",
+            "value": "Terraphage +3 %"
+        },
+        {
+            "key": "BUFF_TYPN_16",
+            "value": "Dégâts critiques +5 %"
+        },
+        {
+            "key": "BUFF_TYPN_17",
+            "value": "MAGIE +3 %"
+        },
+        {
+            "key": "BUFF_TYPN_18",
+            "value": "MAGIE +4 %"
+        },
+        {
+            "key": "BUFF_TYPN_19",
+            "value": "Magie d'invocation niv. 7"
+        },
+        {
+            "key": "BUFF_TYPN_20",
+            "value": "Taux de précision +5"
+        },
+        {
+            "key": "BUFF_TYPN_21",
+            "value": "Taux de précision +4"
+        },
+        {
+            "key": "BUFF_TYPN_22",
+            "value": "Tue-démons +4 %"
+        },
+        {
+            "key": "BUFF_TYPN_23",
+            "value": "Tue-démons +6 %"
+        },
+        {
+            "key": "BUFF_TYPN_24",
+            "value": "Attaque de vent +10 %"
+        },
+        {
+            "key": "BUFF_TYPN_25",
+            "value": "Attaque de vent +6 %"
+        },
+        {
+            "key": "BUFF_TYPN_26",
+            "value": "Terraphage +6 %"
+        },
+        {
+            "key": "BUFF_TYPN_27",
+            "value": "Terraphage +4 %"
+        },
+        {
+            "key": "BUFF_TYPN_28",
+            "value": "MAGIE +8 %"
+        },
+        {
+            "key": "BUFF_TYPN_29",
+            "value": "MAGIE +5 %"
+        },
+        {
+            "key": "BUFF_TYPN_30",
+            "value": "Magie d'invocation niv. 10"
+        },
+        {
+            "key": "BUFF_TYPN_31",
+            "value": "Magie d'invocation niv. 15"
+        },
+        {
+            "key": "BUFF_TYPN_32",
+            "value": "Tue-démons +10 %"
+        },
+        {
+            "key": "BUFF_TYPN_33",
+            "value": "Terraphage +10 %"
         },
         {
             "key": "BUFF_ARMN_01",

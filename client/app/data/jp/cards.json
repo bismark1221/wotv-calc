@@ -9909,7 +9909,7 @@
   "VC_LW_TYPN": {
     "dataId": "VC_LW_TYPN",
     "names": {
-      "en": "暴嵐災禍　テュポーン"
+      "en": "暴嵐災禍　テュポーン - Tempestuous Disaster, Typhon"
     },
     "cost": 80,
     "rarity": "UR",
@@ -9970,7 +9970,7 @@
       "JUMP": {}
     },
     "image": "lapstypn",
-    "slug": "bou-arashi-saika-tyupon",
+    "slug": "tempestuous-disaster-typhon",
     "partyBuffs": [
       {
         "classic": {
@@ -14042,6 +14042,354 @@
         ]
       }
     ]
+  },
+  "VC_LW_CBCL": {
+    "dataId": "VC_LW_CBCL",
+    "names": {
+      "en": "妖魔紅玉　カーバンクル"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 327
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {
+        "min": 1,
+        "max": 2
+      },
+      "MAG": {
+        "min": 42,
+        "max": 164
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapscbcl",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MISSILE_RES",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEF_DEBUFF_RES",
+              "minValue": 40,
+              "maxValue": 40,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "LIGHT_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": -5,
+              "maxValue": -5,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "LIGHT_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "LIGHT_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_CBCL_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_CBCL_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "youma-kougyoku-carbuncle"
   },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
@@ -21877,7 +22225,7 @@
   "VC_LW_APPLE": {
     "dataId": "VC_LW_APPLE",
     "names": {
-      "en": "思い出のリンゴ"
+      "en": "思い出のリンゴ - Memories of Apples"
     },
     "cost": 50,
     "rarity": "MR",
@@ -21941,7 +22289,7 @@
       "JUMP": {}
     },
     "image": "lapsappl",
-    "slug": "omoide-no-ringo",
+    "slug": "memories-of-apples",
     "partyBuffs": [
       {
         "classic": {

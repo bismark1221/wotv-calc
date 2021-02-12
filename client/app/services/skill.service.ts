@@ -1003,6 +1003,9 @@ export class SkillService {
       case 'STOP_CHAIN_INCREASE_DAMAGE' :
         html = 'The chain break if the combo count is greater than 5 but increase modifier by ' + effect.value + '%';
         break;
+      case 'REFLECT' :
+        html = 'Reflect magic skills' + this.getTurns(effect);
+        break;
       default:
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);
       break;

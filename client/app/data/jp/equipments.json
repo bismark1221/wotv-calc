@@ -40492,9 +40492,9 @@
   },
   "AF_LOT_LW_CLK_001": {
     "names": {
-      "en": "エルフのマント"
+      "en": "エルフのマント - Elf's Cloak"
     },
-    "slug": "erufu-no-manto",
+    "slug": "elfs-cloak",
     "stats": {
       "HP": {
         "min": 32,
@@ -41073,7 +41073,8 @@
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
       "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ"
+      "JB_LW_WIZ",
+      "JB_LW_DEAN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42583,6 +42584,660 @@
         "IT_AF_AW_ACCE": 255,
         "IT_AF_MAT_SAP_03": 140,
         "IT_AF_MAT_LESS_01": 6
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LOT_LW_ACC_036": {
+    "names": {
+      "en": "チョコプリンイヤリング"
+    },
+    "slug": "choko-purin-iyaringu",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 686
+      },
+      "DEF": {
+        "min": 1,
+        "max": 14
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 10
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_036",
+    "grows": {
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1"
+          },
+          "dataId": "SK_LW_ACC_003_1",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_2"
+          },
+          "dataId": "SK_LW_ACC_003_2",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_3"
+          },
+          "dataId": "SK_LW_ACC_003_3",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 7,
+              "maxValue": 7,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_4"
+          },
+          "dataId": "SK_LW_ACC_003_4",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 13,
+              "maxValue": 13,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_1_S"
+          },
+          "dataId": "SK_LW_ACC_003_1_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 4,
+              "maxValue": 12,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5"
+          },
+          "dataId": "SK_LW_ACC_003_5",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_003_5_S"
+          },
+          "dataId": "SK_LW_ACC_003_5_S",
+          "effects": [
+            {
+              "type": "STUN_RES",
+              "minValue": 12,
+              "maxValue": 25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_036",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_036": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_JELLY": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_JELLY": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_JELLY": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ACCE": 375
+      },
+      {
+        "IT_AF_LW_ACC_036": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_JELLY": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ACCE": 475
+      },
+      {
+        "IT_AF_LW_ACC_036": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_JELLY": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ACCE": 825
+      },
+      {
+        "IT_AF_LW_ACC_036": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_JELLY": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ACCE": 1725
       }
     ],
     "acquisition": {

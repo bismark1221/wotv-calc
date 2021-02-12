@@ -9613,6 +9613,409 @@
       }
     ]
   },
+  "VC_LW_TYPN": {
+    "dataId": "VC_LW_TYPN",
+    "names": {
+      "en": "Tempestuous Disaster, Typhon",
+      "fr": "Typhon, la Tempête désastreuse"
+    },
+    "cost": 80,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 28,
+        "max": 220
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 43,
+        "max": 167
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 9,
+        "max": 32
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapstypn",
+    "slug": "tempestuous-disaster-typhon",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 7,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_GS",
+            "fr": "SK_VC_LW_TYPN_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_GS_AW",
+            "fr": "SK_VC_LW_TYPN_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_GSMAX",
+            "fr": "SK_VC_LW_TYPN_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        }
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_P",
+            "fr": "SK_VC_LW_TYPN_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_PAW",
+            "fr": "SK_VC_LW_TYPN_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_PMAX",
+            "fr": "SK_VC_LW_TYPN_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": []
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_P_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_P_2",
+            "fr": "SK_VC_LW_TYPN_P_2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_P_2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_P_2AW",
+            "fr": "SK_VC_LW_TYPN_P_2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_TYPN_P_2MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_TYPN_P_2MAX",
+            "fr": "SK_VC_LW_TYPN_P_2MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_TYPN_P3",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_TYPN_P3",
+            "fr": "SK_GL_VC_LW_TYPN_P3"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_TYPN_P3AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_TYPN_P3AW",
+            "fr": "SK_GL_VC_LW_TYPN_P3AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_LW_TYPN_P3MAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_LW_TYPN_P3MAX",
+            "fr": "SK_GL_VC_LW_TYPN_P3MAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          },
+          {
+            "type": "job",
+            "items": [
+              "JB_LW_CLR_FIRE",
+              "JB_LW_CAL_FIRE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -15179,6 +15582,247 @@
         },
         "lvmax": null,
         "cond": []
+      }
+    ]
+  },
+  "VC_LW_APPLE": {
+    "dataId": "VC_LW_APPLE",
+    "names": {
+      "en": "Memories of Apples",
+      "fr": "Pommes du souvenir"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 30,
+        "max": 243
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 26,
+        "max": 104
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 13,
+        "max": 52
+      },
+      "DEX": {
+        "min": 6,
+        "max": 20
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsappl",
+    "slug": "memories-of-apples",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_GS",
+            "fr": "SK_VC_LW_APPLE_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_AP",
+              "minValue": 1,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_GSAW",
+            "fr": "SK_VC_LW_APPLE_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_P",
+            "fr": "SK_VC_LW_APPLE_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_PAW",
+            "fr": "SK_VC_LW_APPLE_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "MOVE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_P_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_P_2",
+            "fr": "SK_VC_LW_APPLE_P_2"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_P_2AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_P_2AW",
+            "fr": "SK_VC_LW_APPLE_P_2AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_DRND"
+            ]
+          }
+        ]
       }
     ]
   },
