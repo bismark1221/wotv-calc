@@ -141,6 +141,10 @@
             "value": "射撃攻撃アップ"
         },
         {
+            "key": "BUFF_ARENA_00013",
+            "value": "氷属性アビリティ攻撃アップ"
+        },
+        {
             "key": "BUFF_GVG_001",
             "value": "闇属性アビリティ攻撃アップ"
         },
@@ -205,6 +209,14 @@
             "value": "ユニットのCost制限220以下、レイズ・リレイズ・ガッツ・クイック無効、CTアップ/ダウン無効"
         },
         {
+            "key": "BUFF_CLASSMATCH_009_1",
+            "value": "Cost制限540以下"
+        },
+        {
+            "key": "BUFF_CLASSMATCH_009_2",
+            "value": "クイック・ヘイスト無効、治癒力50%ダウン"
+        },
+        {
             "key": "BUFF_FREEMATCH_004",
             "value": "クイック無効、CTアップ/ダウン無効、治癒力50%ダウン"
         },
@@ -223,6 +235,10 @@
         {
             "key": "BUFF_FREEMATCH_008",
             "value": "レイズ・リレイズ・ガッツ・クイック無効、CTアップ/ダウン無効"
+        },
+        {
+            "key": "BUFF_FREEMATCH_009_1",
+            "value": "クイック・ヘイスト無効、治癒力50%ダウン"
         },
         {
             "key": "BUFF_01130310",
@@ -1707,6 +1723,38 @@
         {
             "key": "BUFF_WRMC_33",
             "value": "射撃耐性+7%"
+        },
+        {
+            "key": "BUFF_WRMC_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_WRMC_35",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_WRMC_36",
+            "value": "クリティカル回避率+5"
+        },
+        {
+            "key": "BUFF_WRMC_37",
+            "value": "クリティカル回避率+6"
+        },
+        {
+            "key": "BUFF_WRMC_38",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_WRMC_39",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_WRMC_40",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_WRMC_41",
+            "value": "斬撃攻撃UP+5%"
         },
         {
             "key": "BUFF_DABL_01",
