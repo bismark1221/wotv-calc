@@ -57,6 +57,10 @@
             "value": "Pistolame d'apprenti"
         },
         {
+            "key": "AF_LW_GLO_INIT",
+            "value": "Gants d'apprenti"
+        },
+        {
             "key": "AF_LW_SWO_000",
             "value": "Épée large"
         },
@@ -897,6 +901,30 @@
             "value": "Arc runique +5"
         },
         {
+            "key": "AF_LW_BOW_012",
+            "value": "Arc de platine"
+        },
+        {
+            "key": "AF_LW_BOW_012_1",
+            "value": "Arc de platine +1"
+        },
+        {
+            "key": "AF_LW_BOW_012_2",
+            "value": "Arc de platine +2"
+        },
+        {
+            "key": "AF_LW_BOW_012_3",
+            "value": "Arc de platine +3"
+        },
+        {
+            "key": "AF_LW_BOW_012_4",
+            "value": "Arc de platine +4"
+        },
+        {
+            "key": "AF_LW_BOW_012_5",
+            "value": "Arc de platine +5"
+        },
+        {
             "key": "AF_LW_GUN_000",
             "value": "Altaïr"
         },
@@ -1713,10 +1741,6 @@
             "value": "Tristella"
         },
         {
-            "key": "AF_LW_ARW_001",
-            "value": "Brassard de protection"
-        },
-        {
             "key": "AF_LW_ARW_003",
             "value": "Brassard de bandit"
         },
@@ -2127,6 +2151,14 @@
         {
             "key": "AF_ROD_LW_ELSI_1",
             "value": "Lance temporelle"
+        },
+        {
+            "key": "AF_HAT_LW_VNLA_01_1",
+            "value": "Capuche féline"
+        },
+        {
+            "key": "AF_ACC_LW_VKTR_01_1",
+            "value": "Ruban aux clochettes"
         },
         {
             "key": "AF_SWO_LW_MONT_2",
@@ -2735,6 +2767,14 @@
         {
             "key": "AF_LW_CLK_001_5",
             "value": "Tunique d'Elfe +5"
+        },
+        {
+            "key": "AF_FIS_LW_VNLA_01_2",
+            "value": "Griffes de félin"
+        },
+        {
+            "key": "AF_BOW_LW_VKTR_01_2",
+            "value": "Arc des esprits"
         }
     ]
 }

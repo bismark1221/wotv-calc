@@ -65842,6 +65842,279 @@
       }
     ]
   },
+  "JB_LW_ARC_WATER": {
+    "dataId": "JB_LW_ARC_WATER",
+    "names": {
+      "en": "Sniper",
+      "fr": "Sniper"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 589,
+        "AP": 589,
+        "ATK": 870,
+        "MAG": 384,
+        "DEX": 870,
+        "AGI": 1203,
+        "LUCK": 589,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 933,
+        "AP": 933,
+        "ATK": 1379,
+        "MAG": 609,
+        "DEX": 1379,
+        "AGI": 1907,
+        "LUCK": 933,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 1177,
+        "AP": 1177,
+        "ATK": 1741,
+        "MAG": 768,
+        "DEX": 1741,
+        "AGI": 2406,
+        "LUCK": 1177,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 1367,
+        "AP": 1367,
+        "ATK": 2021,
+        "MAG": 891,
+        "DEX": 2021,
+        "AGI": 2793,
+        "LUCK": 1367,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 1522,
+        "AP": 1522,
+        "ATK": 2250,
+        "MAG": 992,
+        "DEX": 2250,
+        "AGI": 3110,
+        "LUCK": 1522,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1653,
+        "AP": 1653,
+        "ATK": 2443,
+        "MAG": 1078,
+        "DEX": 2443,
+        "AGI": 3377,
+        "LUCK": 1653,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1766,
+        "AP": 1766,
+        "ATK": 2611,
+        "MAG": 1152,
+        "DEX": 2611,
+        "AGI": 3609,
+        "LUCK": 1766,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1866,
+        "AP": 1866,
+        "ATK": 2759,
+        "MAG": 1217,
+        "DEX": 2759,
+        "AGI": 3813,
+        "LUCK": 1866,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1956,
+        "AP": 1956,
+        "ATK": 2891,
+        "MAG": 1275,
+        "DEX": 2891,
+        "AGI": 3996,
+        "LUCK": 1956,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 2037,
+        "AP": 2037,
+        "ATK": 3011,
+        "MAG": 1328,
+        "DEX": 3011,
+        "AGI": 4162,
+        "LUCK": 2037,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 2110,
+        "AP": 2110,
+        "ATK": 3120,
+        "MAG": 1376,
+        "DEX": 3120,
+        "AGI": 4313,
+        "LUCK": 2110,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 2178,
+        "AP": 2178,
+        "ATK": 3220,
+        "MAG": 1421,
+        "DEX": 3220,
+        "AGI": 4452,
+        "LUCK": 2178,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 2241,
+        "AP": 2241,
+        "ATK": 3313,
+        "MAG": 1462,
+        "DEX": 3313,
+        "AGI": 4580,
+        "LUCK": 2241,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 2300,
+        "AP": 2300,
+        "ATK": 3400,
+        "MAG": 1500,
+        "DEX": 3400,
+        "AGI": 4700,
+        "LUCK": 2300,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "arc",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "BOW"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {},
+      {
+        "IT_JB_MM_ALL": 10,
+        "IT_JB_IM_ANGEL_1": 1,
+        "IT_JB_EM_WATER_1": 10,
+        "IT_JB_BOW_01": 5
+      },
+      {
+        "IT_JB_IM_ANGEL_1": 2,
+        "IT_JB_EM_WATER_1": 20,
+        "IT_JB_BOW_01": 10,
+        "IT_JB_MM_ARC": 1
+      },
+      {
+        "IT_JB_MM_ALL_2": 25,
+        "IT_JB_IM_ANGEL_2": 1,
+        "IT_JB_EM_WATER_2": 10,
+        "IT_JB_BOW_02": 5
+      },
+      {
+        "IT_JB_MM_ALL_2": 50,
+        "IT_JB_IM_ANGEL_2": 2,
+        "IT_JB_EM_WATER_2": 20,
+        "IT_JB_BOW_02": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_2": 3,
+        "IT_JB_EM_WATER_2": 40,
+        "IT_JB_BOW_02": 15,
+        "IT_JB_MM_ARC_2": 2
+      },
+      {
+        "IT_JB_MM_ALL_3": 25,
+        "IT_JB_IM_ANGEL_3": 1,
+        "IT_JB_EM_WATER_3": 10,
+        "IT_JB_BOW_03": 5
+      },
+      {
+        "IT_JB_MM_ALL_3": 50,
+        "IT_JB_IM_ANGEL_3": 2,
+        "IT_JB_EM_WATER_3": 20,
+        "IT_JB_BOW_03": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_3": 3,
+        "IT_JB_EM_WATER_3": 40,
+        "IT_JB_BOW_03": 15,
+        "IT_JB_MM_ARC_3": 3
+      },
+      {
+        "IT_JB_MM_ALL_4": 25,
+        "IT_JB_IM_ANGEL_4": 1,
+        "IT_JB_EM_WATER_4": 10,
+        "IT_JB_BOW_04": 5
+      },
+      {
+        "IT_JB_MM_ALL_4": 50,
+        "IT_JB_IM_ANGEL_4": 2,
+        "IT_JB_EM_WATER_4": 20,
+        "IT_JB_BOW_04": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_4": 3,
+        "IT_JB_EM_WATER_4": 40,
+        "IT_JB_BOW_04": 15,
+        "IT_JB_MM_ARC_4": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_JB_IM_ANGEL_5": 1,
+        "IT_JB_EM_WATER_5": 10,
+        "IT_JB_BOW_05": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_JB_IM_ANGEL_5": 2,
+        "IT_JB_EM_WATER_5": 20,
+        "IT_JB_BOW_05": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_5": 3,
+        "IT_JB_EM_WATER_5": 40,
+        "IT_JB_BOW_05": 15,
+        "IT_JB_MM_ARC_5": 5
+      }
+    ]
+  },
   "JB_LW_SAKR": {
     "dataId": "JB_LW_SAKR",
     "names": {
@@ -67202,6 +67475,279 @@
       {
         "IT_JB_IM_DRAGON_5": 3,
         "IT_JB_EM_FIRE_5": 40,
+        "IT_JB_FIST_05": 15,
+        "IT_JB_MM_BEA_5": 5
+      }
+    ]
+  },
+  "JB_LW_BEA_SOIL": {
+    "dataId": "JB_LW_BEA_SOIL",
+    "names": {
+      "en": "Pugilist",
+      "fr": "Pugiliste"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 384,
+        "AP": 384,
+        "ATK": 1075,
+        "MAG": 205,
+        "DEX": 870,
+        "AGI": 589,
+        "LUCK": 589,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 609,
+        "AP": 609,
+        "ATK": 1704,
+        "MAG": 325,
+        "DEX": 1379,
+        "AGI": 933,
+        "LUCK": 933,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 768,
+        "AP": 768,
+        "ATK": 2150,
+        "MAG": 410,
+        "DEX": 1741,
+        "AGI": 1177,
+        "LUCK": 1177,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 891,
+        "AP": 891,
+        "ATK": 2496,
+        "MAG": 475,
+        "DEX": 2021,
+        "AGI": 1367,
+        "LUCK": 1367,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 992,
+        "AP": 992,
+        "ATK": 2779,
+        "MAG": 529,
+        "DEX": 2250,
+        "AGI": 1522,
+        "LUCK": 1522,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1078,
+        "AP": 1078,
+        "ATK": 3018,
+        "MAG": 575,
+        "DEX": 2443,
+        "AGI": 1653,
+        "LUCK": 1653,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1152,
+        "AP": 1152,
+        "ATK": 3225,
+        "MAG": 614,
+        "DEX": 2611,
+        "AGI": 1766,
+        "LUCK": 1766,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1217,
+        "AP": 1217,
+        "ATK": 3408,
+        "MAG": 649,
+        "DEX": 2759,
+        "AGI": 1866,
+        "LUCK": 1866,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1275,
+        "AP": 1275,
+        "ATK": 3571,
+        "MAG": 680,
+        "DEX": 2891,
+        "AGI": 1956,
+        "LUCK": 1956,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 1328,
+        "AP": 1328,
+        "ATK": 3719,
+        "MAG": 708,
+        "DEX": 3011,
+        "AGI": 2037,
+        "LUCK": 2037,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 1376,
+        "AP": 1376,
+        "ATK": 3854,
+        "MAG": 734,
+        "DEX": 3120,
+        "AGI": 2110,
+        "LUCK": 2110,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 1421,
+        "AP": 1421,
+        "ATK": 3978,
+        "MAG": 758,
+        "DEX": 3220,
+        "AGI": 2178,
+        "LUCK": 2178,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 1462,
+        "AP": 1462,
+        "ATK": 4093,
+        "MAG": 780,
+        "DEX": 3313,
+        "AGI": 2241,
+        "LUCK": 2241,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 1500,
+        "AP": 1500,
+        "ATK": 4200,
+        "MAG": 800,
+        "DEX": 3400,
+        "AGI": 2300,
+        "LUCK": 2300,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "bea",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "FIST"
+      ],
+      "armors": [
+        "HAT",
+        "CLOTH",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {},
+      {
+        "IT_JB_MM_ALL": 10,
+        "IT_JB_IM_DRAGON_1": 1,
+        "IT_JB_EM_SOIL_1": 10,
+        "IT_JB_FIST_01": 5
+      },
+      {
+        "IT_JB_IM_DRAGON_1": 2,
+        "IT_JB_EM_SOIL_1": 20,
+        "IT_JB_FIST_01": 10,
+        "IT_JB_MM_BEA": 1
+      },
+      {
+        "IT_JB_MM_ALL_2": 25,
+        "IT_JB_IM_DRAGON_2": 1,
+        "IT_JB_EM_SOIL_2": 10,
+        "IT_JB_FIST_02": 5
+      },
+      {
+        "IT_JB_MM_ALL_2": 50,
+        "IT_JB_IM_DRAGON_2": 2,
+        "IT_JB_EM_SOIL_2": 20,
+        "IT_JB_FIST_02": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_2": 3,
+        "IT_JB_EM_SOIL_2": 40,
+        "IT_JB_FIST_02": 15,
+        "IT_JB_MM_BEA_2": 2
+      },
+      {
+        "IT_JB_MM_ALL_3": 25,
+        "IT_JB_IM_DRAGON_3": 1,
+        "IT_JB_EM_SOIL_3": 10,
+        "IT_JB_FIST_03": 5
+      },
+      {
+        "IT_JB_MM_ALL_3": 50,
+        "IT_JB_IM_DRAGON_3": 2,
+        "IT_JB_EM_SOIL_3": 20,
+        "IT_JB_FIST_03": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_3": 3,
+        "IT_JB_EM_SOIL_3": 40,
+        "IT_JB_FIST_03": 15,
+        "IT_JB_MM_BEA_3": 3
+      },
+      {
+        "IT_JB_MM_ALL_4": 25,
+        "IT_JB_IM_DRAGON_4": 1,
+        "IT_JB_EM_SOIL_4": 10,
+        "IT_JB_FIST_04": 5
+      },
+      {
+        "IT_JB_MM_ALL_4": 50,
+        "IT_JB_IM_DRAGON_4": 2,
+        "IT_JB_EM_SOIL_4": 20,
+        "IT_JB_FIST_04": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_4": 3,
+        "IT_JB_EM_SOIL_4": 40,
+        "IT_JB_FIST_04": 15,
+        "IT_JB_MM_BEA_4": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_JB_IM_DRAGON_5": 1,
+        "IT_JB_EM_SOIL_5": 10,
+        "IT_JB_FIST_05": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_JB_IM_DRAGON_5": 2,
+        "IT_JB_EM_SOIL_5": 20,
+        "IT_JB_FIST_05": 10
+      },
+      {
+        "IT_JB_IM_DRAGON_5": 3,
+        "IT_JB_EM_SOIL_5": 40,
         "IT_JB_FIST_05": 15,
         "IT_JB_MM_BEA_5": 5
       }

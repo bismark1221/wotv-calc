@@ -3940,6 +3940,20 @@
       "fr": "Fragment d'unité d'Elzandra"
     }
   },
+  "IT_PI_LW_VNLA_01": {
+    "dataId": "IT_PI_LW_VNLA_01",
+    "names": {
+      "en": "Vinera (Winter) Unit Shard",
+      "fr": "Fragment d'unité de Vinera (Hiver)"
+    }
+  },
+  "IT_PI_LW_VKTR_01": {
+    "dataId": "IT_PI_LW_VKTR_01",
+    "names": {
+      "en": "Viktora (Winter) Unit Shard",
+      "fr": "Fragment d'unité de Viktora (Hiver)"
+    }
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -5705,6 +5719,14 @@
     },
     "recipe": true
   },
+  "IT_AF_LW_BOW_012": {
+    "dataId": "IT_AF_LW_BOW_012",
+    "names": {
+      "en": "Platinum Bow Crafting Recipe",
+      "fr": "Recette d'artisanat : Arc de platine"
+    },
+    "recipe": true
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -6048,6 +6070,13 @@
       "fr": "Médaille du Bœuf"
     }
   },
+  "IT_EC_MEDAL_WE2021": {
+    "dataId": "IT_EC_MEDAL_WE2021",
+    "names": {
+      "en": "Winter's End 2021 Medal",
+      "fr": "Médaille « Spécial fin de l'hiver 2021 »"
+    }
+  },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
     "names": {
@@ -6242,6 +6271,13 @@
     "names": {
       "en": "February Summon Medal A",
       "fr": "Médaille d'invocation A [Février]"
+    }
+  },
+  "IT_EC_SUMMON_02_02_B": {
+    "dataId": "IT_EC_SUMMON_02_02_B",
+    "names": {
+      "en": "February Summon Medal B",
+      "fr": "Médaille d'invocation B [Février]"
     }
   },
   "IT_EC_FFT_1": {
@@ -6942,6 +6978,27 @@
     "names": {
       "en": "[Winter 2021 Campaign Part II] Select Citrine x30 Summon Ticket",
       "fr": "[Spécial hiver 2021 - Partie II] Ticket sélectionneur de 30 citrines"
+    }
+  },
+  "IT_US_SE_JB_GL_05_03": {
+    "dataId": "IT_US_SE_JB_GL_05_03",
+    "names": {
+      "en": "[Winter's End 2021] Select Spinel x30 Summon Ticket",
+      "fr": "[Spécial fin de l'hiver 2021] Ticket sélectionneur de 30 spinelles"
+    }
+  },
+  "IT_US_SE_JB_GL_04_03": {
+    "dataId": "IT_US_SE_JB_GL_04_03",
+    "names": {
+      "en": "[Winter's End 2021] Select Citrine x30 Summon Ticket",
+      "fr": "[Spécial fin de l'hiver 2021] Ticket sélectionneur de 30 citrines"
+    }
+  },
+  "IT_US_SE_JB_GL_03_03": {
+    "dataId": "IT_US_SE_JB_GL_03_03",
+    "names": {
+      "en": "[Winter's End 2021] Select Charoite x30 Summon Ticket",
+      "fr": "[Spécial fin de l'hiver 2021] Ticket sélectionneur de 30 charoïtes"
     }
   },
   "IT_US_SE_UR_U_01": {
@@ -8274,6 +8331,13 @@
       "fr": "Ticket sélectionneur de 50 fragments d'unité MR"
     }
   },
+  "IT_US_SE_SSR_U_GL03": {
+    "dataId": "IT_US_SE_SSR_U_GL03",
+    "names": {
+      "en": "Select MR Unit Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'unité MR"
+    }
+  },
   "IT_US_SE_SSR_U_GL04": {
     "dataId": "IT_US_SE_SSR_U_GL04",
     "names": {
@@ -8517,6 +8581,27 @@
     "names": {
       "en": "Challenge Key",
       "fr": "Clé de défi"
+    }
+  },
+  "IT_STAMP": {
+    "dataId": "IT_STAMP",
+    "names": {
+      "en": "Tryout Token",
+      "fr": "Insigne d'essai"
+    }
+  },
+  "IT_STAMP_2010": {
+    "dataId": "IT_STAMP_2010",
+    "names": {
+      "en": "March Token",
+      "fr": "Insigne de mars"
+    }
+  },
+  "IT_KEY_JP": {
+    "dataId": "IT_KEY_JP",
+    "names": {
+      "en": "JP Key",
+      "fr": "Clé de PJ"
     }
   }
 }

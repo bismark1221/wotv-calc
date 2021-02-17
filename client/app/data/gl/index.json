@@ -3155,6 +3155,74 @@
         "ACCURACY": 15
       },
       "image": "lapselsi"
+    },
+    {
+      "names": {
+        "en": "Vinera (Winter)",
+        "fr": "Vinera (Hiver)"
+      },
+      "stats": {
+        "HP": 3097,
+        "TP": 120,
+        "AP": 117,
+        "ATK": 377,
+        "DEF": 6,
+        "SPR": 8,
+        "MAG": 81,
+        "DEX": 181,
+        "AGI": 60,
+        "LUCK": 204,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 5,
+        "MISSILE_RES": -15,
+        "MAGIC_RES": 15,
+        "CONFUSION_RES": 50,
+        "CHARM_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 9,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsvnla_01"
+    },
+    {
+      "names": {
+        "en": "Viktora (Winter)",
+        "fr": "Viktora (Hiver)"
+      },
+      "stats": {
+        "HP": 2384,
+        "TP": 127,
+        "AP": 123,
+        "ATK": 342,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 69,
+        "DEX": 237,
+        "AGI": 61,
+        "LUCK": 199,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": 20,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -5,
+        "SLEEP_RES": 50,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "WATER_ATK": 15,
+        "AP_CONSUMPTION": 20
+      },
+      "image": "lapsvktr_01"
     }
   ]
 }
