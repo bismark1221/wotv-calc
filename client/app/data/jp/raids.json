@@ -323,6 +323,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "chocolate-flan"
   },
   "RAID_ID_07": {
@@ -689,6 +693,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "white-marshmallow"
   },
   "RAID_ID_08": {
@@ -1088,6 +1096,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "death-machine"
   },
   "RAID_ID_09": {
@@ -1841,6 +1853,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "ifrit"
   },
   "RAID_ID_10": {
@@ -2595,6 +2611,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "behemoth-king"
   },
   "RAID_ID_11": {
@@ -3005,6 +3025,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "forgiven-dissonance"
   },
   "RAID_ID_12": {
@@ -3992,6 +4016,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "two-headed-dragon"
   },
   "RAID_ID_13": {
@@ -4590,6 +4618,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "siren"
   },
   "RAID_ID_14": {
@@ -5359,18 +5391,47 @@
         }
       }
     ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_RYER_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_RARD",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_HWLT",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ELDE",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_HLNA",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ADLD",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
     "slug": "golem"
   },
   "RAID_ID_15": {
     "dataId": "RAID_ID_15",
     "names": {
-      "en": "ディアボロス"
+      "en": "ディアボロス - Diabolos"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_DABL_RAID",
         "names": {
-          "en": "ディアボロス"
+          "en": "ディアボロス - Diabolos"
         },
         "stats": {
           "HP": {
@@ -5732,7 +5793,7 @@
             "minLevel": 1
           }
         },
-        "slug": "diaborosu",
+        "slug": "diabolos",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -5762,7 +5823,7 @@
       {
         "dataId": "UN_LW_E_CSLI_02_R",
         "names": {
-          "en": "プリンプリンセス"
+          "en": "プリンプリンセス - Flan Princess"
         },
         "stats": {
           "HP": {
@@ -6170,7 +6231,7 @@
             "minLevel": 1
           }
         },
-        "slug": "purin-purinsesu",
+        "slug": "flan-princess",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -6198,7 +6259,36 @@
         }
       }
     ],
-    "slug": "diaborosu"
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_ELSR",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_GABL",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_ROBB",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_WHIS",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_VSTR",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_RIRY",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
+    "slug": "diabolos"
   },
   "RAID_ID_16": {
     "dataId": "RAID_ID_16",
@@ -6893,6 +6983,55 @@
         }
       }
     ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_VNLA_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_RAMD_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_MACR_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_FF10_P_TIDU",
+          "value": 30
+        },
+        {
+          "unitId": "UN_FF10_P_YUNA",
+          "value": 30
+        },
+        {
+          "unitId": "UN_FF10_P_ARON",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_AILN",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_MONT",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_DRND",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_RAMD",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_CRIS",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
     "slug": "hor-purin"
   },
   "RAID_ID_17": {
@@ -7271,6 +7410,51 @@
         }
       }
     ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_MONT_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_NIER_P_N2TB",
+          "value": 50
+        },
+        {
+          "unitId": "UN_NIER_P_N9TS",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_GLMS",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_YERM",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ELDE",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_SIMR",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_NASR",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ETRE",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ALIM",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
     "slug": "gurashiru"
   },
   "RAID_ID_18": {
@@ -7646,6 +7830,64 @@
         }
       }
     ],
-    "slug": ""
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_HLNA_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_FDRC",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_AYKA",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_MACR",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_RAMD",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_MURM",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_MICE",
+          "value": 20
+        }
+      ],
+      "cards": [
+        {
+          "cardId": "VC_LW_CBCL",
+          "value": 50
+        },
+        {
+          "cardId": "VC_LW_HLNA",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_LUCA",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_BLMN",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_FIGHT",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_PROPOSE",
+          "value": 20
+        }
+      ]
+    },
+    "slug": "uru-fura-mait"
   }
 }

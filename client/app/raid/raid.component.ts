@@ -10,6 +10,8 @@ import { JobService } from '../services/job.service';
 import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { UnitService } from '../services/unit.service';
+import { CardService } from '../services/card.service';
 
 @Component({
   selector: 'app-raid',
@@ -29,7 +31,9 @@ export class RaidComponent implements OnInit {
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
-    private nameService: NameService
+    private nameService: NameService,
+    private unitService: UnitService,
+    private cardService: CardService,
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.formatRaid();
@@ -112,6 +116,14 @@ export class RaidComponent implements OnInit {
 
           this.rangeService.formatRange(boss, boss.attack);
         }
+      });
+
+      this.raid.bonus.units.forEach(unit => {
+        unit.unit = this.unitService.getUnit(unit.unitId);
+      });
+
+      this.raid.bonus.cards.forEach(card => {
+        card.card = this.cardService.getCard(card.cardId);
       });
     }
   }

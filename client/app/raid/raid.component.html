@@ -3,6 +3,37 @@
     <a ngbNavLink routerLink="." fragment="boss">BOSS</a>
     <ng-template ngbNavContent #bossView>
       <div *ngIf="raid">
+        <div *ngIf="raid.bonus.units.length > 0">
+          <table class="bonusTable">
+            <tr>
+              <th>Bonus units</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="bonusBlock" *ngFor="let bonusUnit of raid.bonus.units">
+                  <img class="unitImg" src="assets/units/{{ bonusUnit.unit.image }}_m.png" title="{{ bonusUnit.unit.names.en }}"/><br />
+                  {{ bonusUnit.value }} %
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div *ngIf="raid.bonus.cards.length > 0">
+          <table class="bonusTable">
+            <tr>
+              <th>Bonus cards</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="bonusBlock" *ngFor="let bonusCard of raid.bonus.cards">
+                  <img class="cardImg" src="assets/cards/{{ bonusCard.card.image }}_m.png" title="{{ bonusCard.card.names.en }}"/><br/>
+                  {{ bonusCard.value }} %
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div *ngFor="let boss of raid.bosses; let j = index">
           <div class="leftBlock">
             <table class="raidTable">

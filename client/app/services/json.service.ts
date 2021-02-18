@@ -153,7 +153,9 @@ export class JsonService {
     jobsTbl: {},
     jobsMaterials: {},
     unitsMaterials: {},
-    unitClassChangeCondition: {}
+    unitClassChangeCondition: {},
+    raidBonusUnit: {},
+    raidBonusCard: {}
   };
 
   jp = {
@@ -195,7 +197,9 @@ export class JsonService {
     jobsTbl: {},
     jobsMaterials: {},
     unitsMaterials: {},
-    unitClassChangeCondition: {}
+    unitClassChangeCondition: {},
+    raidBonusUnit: {},
+    raidBonusCard: {}
   };
 
   jpRomaji = {};
@@ -978,6 +982,24 @@ export class JsonService {
       });
   }
 
+  private GLRaidBonusUnit() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBonusUnit.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private GLRaidBonusCard() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBonusVisioncard.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1090,6 +1112,24 @@ export class JsonService {
 
   private JPUnitClassChangeCondition() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitClassChangeCondition.json').toPromise();
+  }
+
+  private JPRaidBonusUnit() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusUnit.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private JPRaidBonusCard() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusVisioncard.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
   }
 
 
@@ -1232,7 +1272,12 @@ export class JsonService {
       this.JPUnitMaterialItem(),
 
       this.GLUnitClassChangeCondition(),
-      this.JPUnitClassChangeCondition()
+      this.JPUnitClassChangeCondition(),
+
+      this.GLRaidBonusUnit(),
+      this.GLRaidBonusCard(),
+      this.JPRaidBonusUnit(),
+      this.JPRaidBonusCard(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1262,6 +1307,8 @@ export class JsonService {
       this.gl.jobsMaterials = this.formatJson(responses[63]);
       this.gl.unitsMaterials = this.formatJson(responses[65]);
       this.gl.unitClassChangeCondition = this.formatJson(responses[67]);
+      this.gl.raidBonusUnit = this.formatJson(responses[69]);
+      this.gl.raidBonusCard = this.formatJson(responses[70]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1291,6 +1338,8 @@ export class JsonService {
       this.jp.jobsMaterials = this.formatJson(responses[64]);
       this.jp.unitsMaterials = this.formatJson(responses[66]);
       this.jp.unitClassChangeCondition = this.formatJson(responses[68]);
+      this.jp.raidBonusUnit = this.formatJson(responses[71]);
+      this.jp.raidBonusCard = this.formatJson(responses[72]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -3077,12 +3126,34 @@ export class JsonService {
         this[this.version].wotvRaids[raidId] = {
           dataId: raidId,
           names: {},
-          bosses: []
+          bosses: [],
+          bonus: {
+            units: [],
+            cards: []
+          }
         };
 
         raid.prob.forEach((boss, bossIndex) => {
           this.addRaidBoss(this[this.version].wotvRaids[raidId], boss.boss_id);
         });
+
+        if (raid.bonus_unit && this[this.version].raidBonusUnit[raid.bonus_unit]) {
+          this[this.version].raidBonusUnit[raid.bonus_unit].bonuses.forEach(unit => {
+            this[this.version].wotvRaids[raidId].bonus.units.push({
+              unitId: unit.iname,
+              value: unit.rate
+            });
+          });
+        }
+
+        if (raid.bonus_visioncard && this[this.version].raidBonusCard[raid.bonus_visioncard]) {
+          this[this.version].raidBonusCard[raid.bonus_visioncard].bonuses.forEach(card => {
+            this[this.version].wotvRaids[raidId].bonus.cards.push({
+              cardId: card.iname,
+              value: card.rate
+            });
+          });
+        }
       }
     });
   }

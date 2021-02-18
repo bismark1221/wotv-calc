@@ -52,11 +52,25 @@
   margin-top: 10px;
 }
 
-
 .limitBased{
   border-right: none;
   padding-right: 0px;
   width: 50px;
+}
+
+.bonusTable {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bonusBlock {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.unitImg, .cardImg {
+  height: 100px;
+  margin-right: 5px;
 }
 
 .raidTable {

@@ -331,6 +331,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "chocolate-flan"
   },
   "RAID_GL_02": {
@@ -706,6 +710,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "white-marshmallow"
   },
   "RAID_GL_03": {
@@ -1115,6 +1123,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "death-machine"
   },
   "RAID_GL_04": {
@@ -1888,6 +1900,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "ifrit"
   },
   "RAID_GL_05": {
@@ -2662,6 +2678,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "behemoth-king"
   },
   "RAID_GL_06": {
@@ -3672,6 +3692,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "two-headed-dragon"
   },
   "RAID_GL_07": {
@@ -4093,6 +4117,10 @@
         }
       }
     ],
+    "bonus": {
+      "units": [],
+      "cards": []
+    },
     "slug": "forgiven-dissonance"
   },
   "RAID_GL_08": {
@@ -4704,6 +4732,43 @@
         }
       }
     ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_NIVL",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_RARD",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_ELSI",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_FDRC",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_RAIN",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ALIM",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_MRLK",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ADLD",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
     "slug": "siren"
   }
 }

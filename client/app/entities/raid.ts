@@ -6,12 +6,17 @@ export class Raid {
   name = 'New Raid';
   bosses = [];
   slug = 'new-raid';
+  bonus = {
+    units: [],
+    cards: []
+  };
 
   constructFromJson(raid: Raid, translateService): void {
     this.dataId = raid.dataId;
     this.names = raid.names;
     this.bosses = raid.bosses;
     this.slug = raid.slug;
+    this.bonus = raid.bonus;
   }
 
   getName(translateService): string {
