@@ -41,73 +41,7 @@ import { default as JP_Romaji } from '../../../data/jp_romaji.json';
 import { default as JP_Titles_Name } from '../../../data/jp_titles_name.json';
 import { default as JP_Titles_Desc } from '../../../data/jp_titles_desc.json';
 
-import { default as gl_raid_1 } from '../../../data/raid/gl/raid_ev_06_01_set.json';
-import { default as gl_raid_2 } from '../../../data/raid/gl/raid_ev_06_02_set.json';
-import { default as gl_raid_3 } from '../../../data/raid/gl/raid_ev_06_03_set.json';
-import { default as gl_raid_4 } from '../../../data/raid/gl/raid_ev_06_04_set.json';
-import { default as gl_raid_5 } from '../../../data/raid/gl/raid_ev_07_01_set.json';
-import { default as gl_raid_6 } from '../../../data/raid/gl/raid_ev_07_02_set.json';
-import { default as gl_raid_7 } from '../../../data/raid/gl/raid_ev_07_03_set.json';
-import { default as gl_raid_8 } from '../../../data/raid/gl/raid_ev_07_04_set.json';
-import { default as gl_raid_9 } from '../../../data/raid/gl/raid_ev_08_01_set.json';
-import { default as gl_raid_10 } from '../../../data/raid/gl/raid_ev_08_02_set.json';
-import { default as gl_raid_11 } from '../../../data/raid/gl/raid_ev_08_03_set.json';
-import { default as gl_raid_12 } from '../../../data/raid/gl/raid_ev_09_01_set.json';
-import { default as gl_raid_13 } from '../../../data/raid/gl/raid_ev_09_02_set.json';
-import { default as gl_raid_14 } from '../../../data/raid/gl/raid_ev_09_03_set.json';
-import { default as gl_raid_15 } from '../../../data/raid/gl/raid_ev_09_04_set.json';
-import { default as gl_raid_16 } from '../../../data/raid/gl/raid_ev_09_05_set.json';
-import { default as gl_raid_17 } from '../../../data/raid/gl/raid_ev_09_06_set.json';
-import { default as gl_raid_18 } from '../../../data/raid/gl/raid_ev_10_01_set.json';
-import { default as gl_raid_19 } from '../../../data/raid/gl/raid_ev_10_02_set.json';
-import { default as gl_raid_20 } from '../../../data/raid/gl/raid_ev_10_03_set.json';
-import { default as gl_raid_21 } from '../../../data/raid/gl/raid_ev_10_04_set.json';
-import { default as gl_raid_22 } from '../../../data/raid/gl/raid_ev_10_05_set.json';
-import { default as gl_raid_23 } from '../../../data/raid/gl/raid_ev_10_06_set.json';
-import { default as gl_raid_24 } from '../../../data/raid/gl/raid_ff14_01_set.json';
-import { default as gl_raid_25 } from '../../../data/raid/gl/raid_ff14_2_01_set.json';
-import { default as gl_raid_26 } from '../../../data/raid/gl/raid_ff14_2_02_set.json';
-import { default as gl_raid_27 } from '../../../data/raid/gl/raid_ff14_2_03_set.json';
-import { default as gl_raid_28 } from '../../../data/raid/gl/raid_ff14_02_set.json';
-import { default as gl_raid_29 } from '../../../data/raid/gl/raid_ff14_03_set.json';
-import { default as gl_raid_30 } from '../../../data/raid/gl/raid_ff14_04_set.json';
-import { default as gl_raid_31 } from '../../../data/raid/gl/raid_ff14_05_set.json';
-import { default as gl_raid_32 } from '../../../data/raid/gl/raid_ignt_01_set.json';
-import { default as gl_raid_33 } from '../../../data/raid/gl/raid_ignt_02_set.json';
-import { default as gl_raid_34 } from '../../../data/raid/gl/raid_ignt_03_set.json';
-import { default as gl_raid_35 } from '../../../data/raid/gl/raid_ignt01_01_set.json';
-import { default as gl_raid_36 } from '../../../data/raid/gl/raid_ignt01_02_set.json';
-import { default as gl_raid_37 } from '../../../data/raid/gl/raid_ignt01_03_set.json';
-import { default as gl_raid_38 } from '../../../data/raid/gl/raid_ev_12_01_set.json';
-import { default as gl_raid_39 } from '../../../data/raid/gl/raid_ev_12_02_set.json';
-import { default as gl_raid_40 } from '../../../data/raid/gl/raid_ev_12_03_set.json';
-import { default as gl_raid_41 } from '../../../data/raid/gl/raid_ev_12_04_set.json';
-import { default as gl_raid_42 } from '../../../data/raid/gl/raid_ev_12_05_set.json';
-import { default as gl_raid_43 } from '../../../data/raid/gl/raid_ev_12_06_set.json';
-import { default as gl_raid_44 } from '../../../data/raid/gl/raid_ev_13_01_set.json';
-import { default as gl_raid_45 } from '../../../data/raid/gl/raid_ev_13_02_set.json';
-import { default as gl_raid_46 } from '../../../data/raid/gl/raid_ev_13_03_set.json';
-import { default as gl_raid_47 } from '../../../data/raid/gl/raid_ev_13_04_set.json';
-import { default as gl_raid_48 } from '../../../data/raid/gl/raid_ev_13_05_set.json';
-import { default as gl_raid_49 } from '../../../data/raid/gl/raid_ev_13_06_set.json';
-import { default as gl_raid_50 } from '../../../data/raid/gl/raid_ev_14_01_set.json';
-import { default as gl_raid_51 } from '../../../data/raid/gl/raid_ev_14_02_set.json';
-import { default as gl_raid_52 } from '../../../data/raid/gl/raid_ev_14_03_set.json';
-import { default as gl_raid_53 } from '../../../data/raid/gl/raid_ev_14_04_set.json';
-import { default as gl_raid_54 } from '../../../data/raid/gl/raid_ev_14_05_set.json';
-import { default as gl_raid_55 } from '../../../data/raid/gl/raid_ev_14_06_set.json';
-import { default as gl_raid_56 } from '../../../data/raid/gl/raid_ev_15_01_set.json';
-import { default as gl_raid_57 } from '../../../data/raid/gl/raid_ev_15_02_set.json';
-import { default as gl_raid_58 } from '../../../data/raid/gl/raid_ev_15_03_set.json';
-import { default as gl_raid_59 } from '../../../data/raid/gl/raid_ev_15_04_set.json';
-import { default as gl_raid_60 } from '../../../data/raid/gl/raid_ev_15_05_set.json';
-import { default as gl_raid_61 } from '../../../data/raid/gl/raid_ev_15_06_set.json';
-import { default as gl_raid_62 } from '../../../data/raid/gl/raid_ev_16_01_set.json';
-import { default as gl_raid_63 } from '../../../data/raid/gl/raid_ev_16_02_set.json';
-import { default as gl_raid_64 } from '../../../data/raid/gl/raid_ev_16_03_set.json';
-import { default as gl_raid_65 } from '../../../data/raid/gl/raid_ev_16_04_set.json';
-import { default as gl_raid_66 } from '../../../data/raid/gl/raid_ev_16_05_set.json';
-import { default as gl_raid_67 } from '../../../data/raid/gl/raid_ev_16_06_set.json';
+import { default as gl_maps } from '../../../data/map/gl/maps.json';
 
 @Injectable()
 export class JsonService {
@@ -155,7 +89,8 @@ export class JsonService {
     unitsMaterials: {},
     unitClassChangeCondition: {},
     raidBonusUnit: {},
-    raidBonusCard: {}
+    raidBonusCard: {},
+    quests: {}
   };
 
   jp = {
@@ -199,7 +134,8 @@ export class JsonService {
     unitsMaterials: {},
     unitClassChangeCondition: {},
     raidBonusUnit: {},
-    raidBonusCard: {}
+    raidBonusCard: {},
+    quests: {}
   };
 
   jpRomaji = {};
@@ -1000,6 +936,15 @@ export class JsonService {
       });
   }
 
+  private GLQuests() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Quest.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1115,21 +1060,15 @@ export class JsonService {
   }
 
   private JPRaidBonusUnit() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusUnit.json').toPromise()
-      .then(data => {
-        return data;
-      }).catch(function(error) {
-        return {items: []};
-      });
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusUnit.json').toPromise();
   }
 
   private JPRaidBonusCard() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusVisioncard.json').toPromise()
-      .then(data => {
-        return data;
-      }).catch(function(error) {
-        return {items: []};
-      });
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusVisioncard.json').toPromise();
+  }
+
+  private JPQuests() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Quests.json').toPromise();
   }
 
 
@@ -1278,6 +1217,9 @@ export class JsonService {
       this.GLRaidBonusCard(),
       this.JPRaidBonusUnit(),
       this.JPRaidBonusCard(),
+
+      this.GLQuests(),
+      this.JPQuests(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1309,6 +1251,7 @@ export class JsonService {
       this.gl.unitClassChangeCondition = this.formatJson(responses[67]);
       this.gl.raidBonusUnit = this.formatJson(responses[69]);
       this.gl.raidBonusCard = this.formatJson(responses[70]);
+      this.gl.quests = this.formatJson(responses[73]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1340,6 +1283,7 @@ export class JsonService {
       this.jp.unitClassChangeCondition = this.formatJson(responses[68]);
       this.jp.raidBonusUnit = this.formatJson(responses[71]);
       this.jp.raidBonusCard = this.formatJson(responses[72]);
+      this.jp.quests = this.formatJson(responses[74]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1444,41 +1388,41 @@ export class JsonService {
     for (let i = 0; i < versions.length; i ++) {
       this.version = versions[i];
 
-      Object.keys(this[this.version].jobs).forEach(jobId => {
-        this.addJob(this[this.version].jobs[jobId]);
-      });
+      // Object.keys(this[this.version].jobs).forEach(jobId => {
+      //   this.addJob(this[this.version].jobs[jobId]);
+      // });
 
-      Object.keys(this[this.version].units).forEach(unitId => {
-        if (this[this.version].units[unitId].type === 0) {
-          this.addUnit(this[this.version].units[unitId]);
-        }
+      // Object.keys(this[this.version].units).forEach(unitId => {
+      //   if (this[this.version].units[unitId].type === 0) {
+      //     this.addUnit(this[this.version].units[unitId]);
+      //   }
 
-        if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
-          this.addEsper(this[this.version].units[unitId]);
-        }
-      });
+      //   if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
+      //     this.addEsper(this[this.version].units[unitId]);
+      //   }
+      // });
 
-      this.cleanUnits();
+      // this.cleanUnits();
 
-      Object.keys(this[this.version].visionCards).forEach(visionCardId => {
-        this.addVisionCard(this[this.version].visionCards[visionCardId]);
-      });
+      // Object.keys(this[this.version].visionCards).forEach(visionCardId => {
+      //   this.addVisionCard(this[this.version].visionCards[visionCardId]);
+      // });
 
-      Object.keys(this[this.version].equipments).forEach(equipmentId => {
-        this.addEquipment(this[this.version].equipments[equipmentId]);
-      });
+      // Object.keys(this[this.version].equipments).forEach(equipmentId => {
+      //   this.addEquipment(this[this.version].equipments[equipmentId]);
+      // });
 
       this.formatRaid();
 
-      Object.keys(this[this.version].items).forEach(itemId => {
-        this.addItem(this[this.version].items[itemId]);
-      });
+      // Object.keys(this[this.version].items).forEach(itemId => {
+      //   this.addItem(this[this.version].items[itemId]);
+      // });
 
-      this.formatMasterRanks();
+      // this.formatMasterRanks();
 
-      this.formatTitles();
+      // this.formatTitles();
 
-      this.exportGLexclusiveToJP();
+      // this.exportGLexclusiveToJP();
     }
   }
 
@@ -3050,75 +2994,6 @@ export class JsonService {
   }
 
   private formatRaid() {
-    this[this.version].raidMaps[gl_raid_1.wcond.expr] = gl_raid_1;
-    this[this.version].raidMaps[gl_raid_2.wcond.expr] = gl_raid_2;
-    this[this.version].raidMaps[gl_raid_3.wcond.expr] = gl_raid_3;
-    this[this.version].raidMaps[gl_raid_4.wcond.expr] = gl_raid_4;
-    this[this.version].raidMaps[gl_raid_5.wcond.expr] = gl_raid_5;
-    this[this.version].raidMaps[gl_raid_6.wcond.expr] = gl_raid_6;
-    this[this.version].raidMaps[gl_raid_7.wcond.expr] = gl_raid_7;
-    this[this.version].raidMaps[gl_raid_8.wcond.expr] = gl_raid_8;
-    this[this.version].raidMaps[gl_raid_9.wcond.expr] = gl_raid_9;
-    this[this.version].raidMaps[gl_raid_10.wcond.expr] = gl_raid_10;
-    this[this.version].raidMaps[gl_raid_11.wcond.expr] = gl_raid_11;
-    this[this.version].raidMaps[gl_raid_12.wcond.expr] = gl_raid_12;
-    this[this.version].raidMaps[gl_raid_13.wcond.expr] = gl_raid_13;
-    this[this.version].raidMaps[gl_raid_14.wcond.expr] = gl_raid_14;
-    this[this.version].raidMaps[gl_raid_15.wcond.expr] = gl_raid_15;
-    this[this.version].raidMaps[gl_raid_16.wcond.expr] = gl_raid_16;
-    this[this.version].raidMaps[gl_raid_17.wcond.expr] = gl_raid_17;
-    this[this.version].raidMaps[gl_raid_18.wcond.expr] = gl_raid_18;
-    this[this.version].raidMaps[gl_raid_19.wcond.expr] = gl_raid_19;
-    this[this.version].raidMaps[gl_raid_20.wcond.expr] = gl_raid_20;
-    this[this.version].raidMaps[gl_raid_21.wcond.expr] = gl_raid_21;
-    this[this.version].raidMaps[gl_raid_22.wcond.expr] = gl_raid_22;
-    this[this.version].raidMaps[gl_raid_23.wcond.expr] = gl_raid_23;
-    this[this.version].raidMaps[gl_raid_24.wcond.expr] = gl_raid_24;
-    this[this.version].raidMaps[gl_raid_25.wcond.expr] = gl_raid_25;
-    this[this.version].raidMaps[gl_raid_26.wcond.expr] = gl_raid_26;
-    this[this.version].raidMaps[gl_raid_27.wcond.expr] = gl_raid_27;
-    this[this.version].raidMaps[gl_raid_28.wcond.expr] = gl_raid_28;
-    this[this.version].raidMaps[gl_raid_29.wcond.expr] = gl_raid_29;
-    this[this.version].raidMaps[gl_raid_30.wcond.expr] = gl_raid_30;
-    this[this.version].raidMaps[gl_raid_31.wcond.expr] = gl_raid_31;
-    this[this.version].raidMaps[gl_raid_32.wcond.expr] = gl_raid_32;
-    this[this.version].raidMaps[gl_raid_33.wcond.expr] = gl_raid_33;
-    this[this.version].raidMaps[gl_raid_34.wcond.expr] = gl_raid_34;
-    this[this.version].raidMaps[gl_raid_35.wcond.expr] = gl_raid_35;
-    this[this.version].raidMaps[gl_raid_36.wcond.expr] = gl_raid_36;
-    this[this.version].raidMaps[gl_raid_37.wcond.expr] = gl_raid_37;
-    this[this.version].raidMaps[gl_raid_38.wcond.expr] = gl_raid_38;
-    this[this.version].raidMaps[gl_raid_39.wcond.expr] = gl_raid_39;
-    this[this.version].raidMaps[gl_raid_40.wcond.expr] = gl_raid_40;
-    this[this.version].raidMaps[gl_raid_41.wcond.expr] = gl_raid_41;
-    this[this.version].raidMaps[gl_raid_42.wcond.expr] = gl_raid_42;
-    this[this.version].raidMaps[gl_raid_43.wcond.expr] = gl_raid_43;
-    this[this.version].raidMaps[gl_raid_44.wcond.expr] = gl_raid_44;
-    this[this.version].raidMaps[gl_raid_45.wcond.expr] = gl_raid_45;
-    this[this.version].raidMaps[gl_raid_46.wcond.expr] = gl_raid_46;
-    this[this.version].raidMaps[gl_raid_47.wcond.expr] = gl_raid_47;
-    this[this.version].raidMaps[gl_raid_48.wcond.expr] = gl_raid_48;
-    this[this.version].raidMaps[gl_raid_49.wcond.expr] = gl_raid_49;
-    this[this.version].raidMaps[gl_raid_50.wcond.expr] = gl_raid_50;
-    this[this.version].raidMaps[gl_raid_51.wcond.expr] = gl_raid_51;
-    this[this.version].raidMaps[gl_raid_52.wcond.expr] = gl_raid_52;
-    this[this.version].raidMaps[gl_raid_53.wcond.expr] = gl_raid_53;
-    this[this.version].raidMaps[gl_raid_54.wcond.expr] = gl_raid_54;
-    this[this.version].raidMaps[gl_raid_55.wcond.expr] = gl_raid_55;
-
-    this[this.version].raidMaps[gl_raid_56.wcond.expr] = gl_raid_56;
-    this[this.version].raidMaps[gl_raid_57.wcond.expr] = gl_raid_57;
-    this[this.version].raidMaps[gl_raid_58.wcond.expr] = gl_raid_58;
-    this[this.version].raidMaps[gl_raid_59.wcond.expr] = gl_raid_59;
-    this[this.version].raidMaps[gl_raid_60.wcond.expr] = gl_raid_60;
-    this[this.version].raidMaps[gl_raid_61.wcond.expr] = gl_raid_61;
-    this[this.version].raidMaps[gl_raid_62.wcond.expr] = gl_raid_62;
-    this[this.version].raidMaps[gl_raid_63.wcond.expr] = gl_raid_63;
-    this[this.version].raidMaps[gl_raid_64.wcond.expr] = gl_raid_64;
-    this[this.version].raidMaps[gl_raid_65.wcond.expr] = gl_raid_65;
-    this[this.version].raidMaps[gl_raid_66.wcond.expr] = gl_raid_66;
-    this[this.version].raidMaps[gl_raid_67.wcond.expr] = gl_raid_67;
-
     Object.keys(this[this.version].raid).forEach(raidId => {
       const raid = this[this.version].raid[raidId];
 
@@ -3185,6 +3060,8 @@ export class JsonService {
     this[this.version].raidBoss[bossId].param.forEach(quest => {
       this.addBossSkill(boss, quest.quest_id, quest.lv_min, quest.lv_max);
 
+      //console.log(boss)
+
       if (raid.maxLevel < quest.lv_max) {
         raid.maxLevel = quest.lv_max;
       }
@@ -3194,30 +3071,42 @@ export class JsonService {
   }
 
   private addBossSkill(boss, questId, lvMin, lvMax) {
-    const quest = this[this.version].raidMaps[questId];
+    const quest = this[this.version].quests[questId];
     if (quest) {
-      quest.enemy.forEach(enemy => {
-        if (enemy.iname === boss.dataId) {
-          enemy.skills.forEach(skill => {
-            const skillId = skill.iname;
-            if (!boss.skills[skillId]) {
-              boss.skills[skillId] = {
-                effects: [],
-                dataId: skillId,
-                rate: skill.rate
-              };
-              this.updateSkill(boss, boss.skills[skillId], skillId);
-              boss.skills[skillId].minLevel = lvMin;
-              boss.skills[skillId].maxLevel = lvMax;
-            } else if (boss.skills[skillId].maxLevel < lvMax) {
-              boss.skills[skillId].maxLevel = lvMax;
-            } else if (boss.skills[skillId].minLevel > lvMin) {
-              boss.skills[skillId].minLevel = lvMin;
-            }
-          });
-        }
-      });
+      const map = gl_maps[quest.map.set.split('/')[1]];
+
+      if (map) {
+        map.enemy.forEach(enemy => {
+          if (enemy.iname === boss.dataId) {
+            enemy.skills.forEach(skill => {
+              const skillId = skill.iname;
+
+              if (!boss.skills[skillId]) {
+                boss.skills[skillId] = {
+                  effects: [],
+                  dataId: skillId,
+                  rate: skill.rate
+                };
+                this.updateSkill(boss, boss.skills[skillId], skillId);
+                boss.skills[skillId].minLevel = lvMin;
+                boss.skills[skillId].maxLevel = lvMax;
+
+
+                console.log(boss)
+
+
+              } else if (boss.skills[skillId].maxLevel < lvMax) {
+                boss.skills[skillId].maxLevel = lvMax;
+              } else if (boss.skills[skillId].minLevel > lvMin) {
+                boss.skills[skillId].minLevel = lvMin;
+              }
+            });
+          }
+        });
+      }
     }
+
+    return boss;
   }
 
   private addItem(item) {
