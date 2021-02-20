@@ -162,7 +162,146 @@
         "species": "aquatic",
         "element": "earth",
         "image": "lapscsli",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_01",
+            "rate": 60,
+            "names": {
+              "en": "Brown Sphere",
+              "fr": "Sphère marron"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 150,
+            "minLevel": 1
+          },
+          "SK_CSLI_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_M_02",
+            "rate": 10,
+            "names": {
+              "en": "Bite Into",
+              "fr": "Mordre à pleines dents"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 61
+          },
+          "SK_CSLI_M_03": {
+            "effects": [
+              {
+                "type": "CHARM_ATK",
+                "calcType": "percent",
+                "rate": 10,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_M_03",
+            "rate": 30,
+            "names": {
+              "en": "Sweet Fountain",
+              "fr": "Adorable fontaine"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 61
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 150,
+            "minLevel": 61
+          }
+        },
         "slug": "chocolate-flan",
         "attack": {
           "names": {
@@ -382,7 +521,166 @@
         "species": "aquatic",
         "element": "light",
         "image": "lapscsli_01",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_01_M_01": {
+            "effects": [],
+            "dataId": "SK_CSLI_01_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Marshmallow Throw",
+              "fr": "Lancer de guimauve"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 150,
+            "minLevel": 1
+          },
+          "SK_BTL_DF_1-80_U": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_DF_1-80_U",
+            "rate": 100,
+            "names": {
+              "en": "DEF 1-80 Up",
+              "fr": "DEF ↑ 1 - 80"
+            },
+            "target": "self",
+            "maxLevel": 150,
+            "minLevel": 31
+          },
+          "SK_BTL_MDF_1-80_U": {
+            "effects": [
+              {
+                "type": "SPR",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_MDF_1-80_U",
+            "rate": 100,
+            "names": {
+              "en": "SPR 1-80 Up",
+              "fr": "PSY ↑ 1 - 80"
+            },
+            "target": "self",
+            "maxLevel": 150,
+            "minLevel": 31
+          },
+          "SK_CSLI_01_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_01_M_02",
+            "rate": 100,
+            "names": {
+              "en": "Melt",
+              "fr": "Fonte"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 150,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 61
+          },
+          "SK_CSLI_01_M_03": {
+            "effects": [
+              {
+                "type": "SLEEP_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_01_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Sweets Party",
+              "fr": "Fête sucrée"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 150,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 61
+          }
+        },
         "slug": "white-marshmallow",
         "attack": {
           "names": {
@@ -575,7 +873,225 @@
         "species": "machine",
         "element": "dark",
         "image": "ff01wrmc",
-        "skills": {},
+        "skills": {
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_WRMC_M_01": {
+            "effects": [
+              {
+                "type": "IMMOBILIZE_ATK",
+                "calcType": "percent",
+                "rate": 50,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_WRMC_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Missile Scatter",
+              "fr": "Missile de dispersion"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 4,
+              "l": 4,
+              "mh": 1,
+              "s": 1,
+              "line": 2
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 40,
+              "type": "missile",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_WRMC_M_02": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "rate": 50,
+                "turn": 3,
+                "target": "all"
+              },
+              {
+                "type": "SPR",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "rate": 50,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_WRMC_M_02",
+            "rate": 100,
+            "names": {
+              "en": "Beam Cannon",
+              "fr": "Canon laser"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 16
+            },
+            "count": 4,
+            "maxLevel": 80,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 10,
+              "w": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 30,
+              "maxValue": 80,
+              "type": "missile",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_WRMC_M_03": {
+            "effects": [],
+            "dataId": "SK_WRMC_M_03",
+            "rate": 20,
+            "names": {
+              "en": "Nuke",
+              "fr": "Nucléo-attaque"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 20
+            },
+            "count": 3,
+            "maxLevel": 80,
+            "range": {
+              "h": 4,
+              "l": 4,
+              "mh": 1,
+              "s": 1,
+              "line": 2
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 65,
+              "maxValue": 200,
+              "type": "missile",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_DONMV_1-100_D": {
+            "effects": [
+              {
+                "type": "IMMOBILIZE_ATK",
+                "minValue": -1,
+                "maxValue": -100,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_DONMV_1-100_D",
+            "rate": 100,
+            "names": {
+              "en": "Status Ailment [Immobilize] Chance 1-100 Down",
+              "fr": "Chance [Immobilisation] ↓ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          }
+        },
         "slug": "death-machine",
         "attack": {
           "names": {
@@ -776,7 +1292,224 @@
         "species": "netherBeast",
         "element": "fire",
         "image": "lapsifrt",
-        "skills": {},
+        "skills": {
+          "SK_IFRT_M_01": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Fire",
+              "fr": "Feu"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 20,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_02": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_02",
+            "rate": 50,
+            "names": {
+              "en": "Firaga",
+              "fr": "Feu X"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_IFRT_M_03": {
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 1,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_IFRT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Boil",
+              "fr": "Incandescence"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_IFRT_M_04": {
+            "effects": [],
+            "dataId": "SK_IFRT_M_04",
+            "rate": 0,
+            "names": {
+              "en": "Hellfire",
+              "fr": "Flammes de l'enfer"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 200,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_ICE_1_80_U": {
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_ICE_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "Ice Res 1-80 Up",
+              "fr": "Rés glace ↑ 1 - 80"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_MOVE_1-20_U": {
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_MOVE_1-20_U",
+            "rate": 100,
+            "names": {
+              "en": "Move 1-20 Up",
+              "fr": "Déplacement ↑ 1 - 20"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 31
+          }
+        },
         "slug": "ifrit",
         "attack": {
           "names": {
@@ -961,7 +1694,203 @@
         "species": "plant",
         "element": "earth",
         "image": "lapscact_02",
-        "skills": {},
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 100,
+            "names": {
+              "en": "1,000 Needles",
+              "fr": "1 000 épines"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 5,
+            "names": {
+              "en": "10,000 Needles",
+              "fr": "10 000 épines"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 60,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_CACT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Paralyzing Needle",
+              "fr": "Aiguille paralysante"
+            },
+            "target": "all",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_N_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_N_R",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_N_R",
+              "fr": "SK_LW_HIT_5_N_R"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_SSR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_SSR",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_SSR",
+              "fr": "SK_LW_HIT_5_SSR"
+            },
+            "target": "self",
+            "maxLevel": 6,
+            "minLevel": 4
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 7
+          }
+        },
         "slug": "gold-cactuar",
         "attack": {
           "names": {
@@ -1160,7 +2089,180 @@
         "species": "beast",
         "element": "dark",
         "image": "lapsbhmt",
-        "skills": {},
+        "skills": {
+          "SK_BHMT_M_01_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_01_02",
+            "rate": 100,
+            "names": {
+              "en": "Haymaker",
+              "fr": "Uppercut magistral"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 17
+            },
+            "count": 4,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 40,
+              "maxValue": 80,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BHMT_M_02_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_02_02",
+            "rate": 50,
+            "names": {
+              "en": "Rampage",
+              "fr": "Rage"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 0
+            },
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BHMT_M_03_02": {
+            "effects": [],
+            "dataId": "SK_BHMT_M_03_02",
+            "rate": 10,
+            "names": {
+              "en": "Heave",
+              "fr": "Ravager"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 1,
+              "line": 1
+            },
+            "based": "physic",
+            "crt_hit": -10,
+            "damage": {
+              "minValue": 100,
+              "maxValue": 140,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_MOVE_1-20_U": {
+            "effects": [
+              {
+                "type": "MOVE",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_MOVE_1-20_U",
+            "rate": 100,
+            "names": {
+              "en": "Move 1-20 Up",
+              "fr": "Déplacement ↑ 1 - 20"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 31
+          }
+        },
         "slug": "behemoth-king",
         "attack": {
           "names": {
@@ -1345,7 +2447,268 @@
         "species": "human",
         "element": "wind",
         "image": "lapstnbr",
-        "skills": {},
+        "skills": {
+          "SK_TNBR_M_01": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Knife",
+              "fr": "Couteau"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_02": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_02",
+            "rate": 50,
+            "names": {
+              "en": "Grudge Knife",
+              "fr": "Couteau de la rancune"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "damage": {
+              "minValue": 150,
+              "maxValue": 180,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_03": {
+            "effects": [
+              {
+                "type": "STOP_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 30,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_TNBR_M_03",
+            "rate": 10,
+            "names": {
+              "en": "Deep-Seated Grudge",
+              "fr": "Profonde rancune"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 10,
+              "w": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_04_R": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_04_R",
+            "rate": 10,
+            "names": {
+              "en": "Everyone's Grudge",
+              "fr": "Rancune commune"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 45
+            },
+            "count": 2,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "maths": [
+              {
+                "type": "DEAD_UNITS",
+                "formula": "FIX",
+                "condition": 4,
+                "value": 2000,
+                "dst": "DAMAGE"
+              }
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_N_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_N_R",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_N_R",
+              "fr": "SK_LW_HIT_5_N_R"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_SSR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_SSR",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_SSR",
+              "fr": "SK_LW_HIT_5_SSR"
+            },
+            "target": "self",
+            "maxLevel": 6,
+            "minLevel": 4
+          },
+          "SK_LW_HIT_5_UR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 20,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_UR",
+            "rate": 100,
+            "names": {
+              "en": "SK_LW_HIT_5_UR",
+              "fr": "SK_LW_HIT_5_UR"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 7
+          }
+        },
         "slug": "tonberry",
         "attack": {
           "names": {
@@ -1562,7 +2925,336 @@
         "species": "dragon",
         "element": "light",
         "image": "lapsthdg",
-        "skills": {},
+        "skills": {
+          "SK_THDG_R_01_RA": {
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "percent",
+                "turn": 2,
+                "increaseMax": true,
+                "target": "ennemySide"
+              },
+              {
+                "type": "MAG",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "percent",
+                "turn": 2,
+                "increaseMax": true,
+                "target": "ennemySide"
+              },
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -10,
+                "calcType": "fixe",
+                "turn": 2,
+                "target": "ennemySide"
+              },
+              {
+                "type": "SPR",
+                "minValue": -10,
+                "maxValue": -10,
+                "calcType": "fixe",
+                "turn": 2,
+                "target": "ennemySide"
+              }
+            ],
+            "dataId": "SK_THDG_R_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Dragon Voice",
+              "fr": "Voix draconique"
+            },
+            "target": "ennemySide",
+            "maxLevel": 100,
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 30,
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_THDG_M_01_RA": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Head Rush",
+              "fr": "Coup de tête"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 5,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 0,
+              "w": 1
+            },
+            "based": "physic",
+            "combo": {
+              "num": 2,
+              "rate": 59
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_03": {
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": -38,
+                "maxValue": -38,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_03",
+            "rate": 50,
+            "names": {
+              "en": "Double Break Fire Breath",
+              "fr": "Double souffle feu"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_04": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": -38,
+                "maxValue": -38,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_THDG_M_04",
+            "rate": 50,
+            "names": {
+              "en": "Double Break Ice Breath",
+              "fr": "Double souffle glace"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "ice"
+            ],
+            "minLevel": 1
+          },
+          "SK_THDG_M_05": {
+            "effects": [
+              {
+                "type": "BLIND_ATK",
+                "minValue": 50,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              },
+              {
+                "type": "SILENCE_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_THDG_M_05",
+            "rate": 20,
+            "names": {
+              "en": "Unleash",
+              "fr": "Déchaînement"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 3,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 100,
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
         "slug": "two-headed-dragon",
         "attack": {
           "names": {
@@ -1771,7 +3463,266 @@
         "species": "aquatic",
         "element": "wind",
         "image": "lapscsli_02",
-        "skills": {},
+        "skills": {
+          "SK_CSLI_02_M_01_RA": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Pink Sphere",
+              "fr": "Sphère rose"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_02",
+            "rate": 60,
+            "names": {
+              "en": "Time to Eat!",
+              "fr": "À table !"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_03": {
+            "effects": [
+              {
+                "type": "CONFUSION_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_CSLI_02_M_03",
+            "rate": 5,
+            "names": {
+              "en": "Let’s Dance!",
+              "fr": "En piste !"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_OTICE_1_80_U": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WATER_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WIND_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHTNING_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "EARTH_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "DARK_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHT_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_OTICE_1_80_U",
+            "rate": 100,
+            "names": {
+              "en": "All Res Except Ice 1-80 Up (Base)",
+              "fr": "Toutes les Rés (sauf Rés glace) ↑ 1 - 80 (base)"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_MAGIC_1_80_U_KISO": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "Magic Res 1-80 Up (Base)",
+              "fr": "Rés magique ↑ 1 - 80 (base)"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "flan-princess",
         "attack": {
           "names": {
@@ -1991,7 +3942,212 @@
         "species": "",
         "element": "light",
         "image": "ff14boss",
-        "skills": {},
+        "skills": {
+          "SK_FF14BOSS_M_01": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Pillory",
+              "fr": "Pilori"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_02": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_02",
+            "rate": 40,
+            "names": {
+              "en": "Gibbet Cage",
+              "fr": "Gibet de fer"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 5,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "physic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "damage": {
+              "minValue": 60,
+              "maxValue": 80,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_FF14BOSS_M_03": {
+            "effects": [],
+            "dataId": "SK_FF14BOSS_M_03",
+            "rate": 0,
+            "names": {
+              "en": "Wooden Horse",
+              "fr": "Cheval de bois"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 80,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 10,
+              "w": 2
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 80,
+              "maxValue": 100,
+              "type": "slash",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_KILLER_DARK_1-100_U": {
+            "effects": [
+              {
+                "type": "DARK_KILLER",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_KILLER_DARK_1-100_U",
+            "rate": 100,
+            "names": {
+              "en": "Dark Eater 1-100 Up",
+              "fr": "Noctophage ↑ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          },
+          "SK_BTL_DEFPIERCE_1-100_U_KISO": {
+            "effects": [
+              {
+                "type": "DEFENSE_PENETRATION",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "DEF Piercing Rate 1-100 Up (Base)",
+              "fr": "Perforation de la DEF ↑ 1-100 (Base)"
+            },
+            "target": "self",
+            "maxLevel": 80,
+            "minLevel": 1
+          }
+        },
         "slug": "forgiven-dissonance",
         "attack": {
           "names": {
@@ -2187,7 +4343,223 @@
         "species": "netherBeast",
         "element": "water",
         "image": "lapssire",
-        "skills": {},
+        "skills": {
+          "SK_SIRE_M_01_RA": {
+            "effects": [],
+            "dataId": "SK_SIRE_M_01_RA",
+            "rate": 100,
+            "names": {
+              "en": "Water",
+              "fr": "Eau"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_SIRE_M_02_RA": {
+            "effects": [],
+            "dataId": "SK_SIRE_M_02_RA",
+            "rate": 50,
+            "names": {
+              "en": "Waterga",
+              "fr": "Eau X"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 5,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_SIRE_M_04_RA": {
+            "effects": [
+              {
+                "type": "SLEEP_ATK",
+                "calcType": "percent",
+                "rate": 50,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_SIRE_M_04_RA",
+            "rate": 0,
+            "names": {
+              "en": "Lunatic Voice",
+              "fr": "Voix ensorcelante"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 48
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 100,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_SLASH_1_100_U": {
+            "effects": [
+              {
+                "type": "RES_SLASH_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_SLASH_1_100_U",
+            "rate": 100,
+            "names": {
+              "en": "Slash Res Debuff Res 1-100 Up",
+              "fr": "Rés malus att tranchantes ↑ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_ELEMALL1_1_100_U": {
+            "effects": [
+              {
+                "type": "RES_ALL_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_ELEMALL1_1_100_U",
+            "rate": 100,
+            "names": {
+              "en": "All Elemental Res Debuff Res 1-100 Up",
+              "fr": "Rés malus tous éléments ↑ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
         "slug": "siren",
         "attack": {
           "names": {
@@ -2390,7 +4762,163 @@
         "species": "plant",
         "element": "ice",
         "image": "lapscact_02",
-        "skills": {},
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 50,
+            "names": {
+              "en": "1,000 Needles",
+              "fr": "1 000 épines"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 0,
+            "names": {
+              "en": "10,000 Needles",
+              "fr": "10 000 épines"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 60,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_CACT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Paralyzing Needle",
+              "fr": "Aiguille paralysante"
+            },
+            "target": "all",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "gold-cactuar",
         "attack": {
           "names": {

@@ -1659,7 +1659,7 @@
           "SK_CACT_M_01": {
             "effects": [],
             "dataId": "SK_CACT_M_01",
-            "rate": 80,
+            "rate": 100,
             "names": {
               "en": "針千本"
             },
@@ -1684,12 +1684,12 @@
               "formula": {},
               "fixedDamage": true
             },
-            "minLevel": 4
+            "minLevel": 1
           },
           "SK_CACT_M_02": {
             "effects": [],
             "dataId": "SK_CACT_M_02",
-            "rate": 7,
+            "rate": 5,
             "names": {
               "en": "針万本"
             },
@@ -1714,7 +1714,7 @@
               "formula": {},
               "fixedDamage": true
             },
-            "minLevel": 4
+            "minLevel": 1
           },
           "SK_CACT_M_03": {
             "effects": [
@@ -1748,7 +1748,7 @@
               "effType": "DAMAGE",
               "formula": {}
             },
-            "minLevel": 4
+            "minLevel": 1
           },
           "SK_BTL_INV_HPDOWN": {
             "effects": [
@@ -1767,7 +1767,7 @@
             },
             "target": "self",
             "maxLevel": 10,
-            "minLevel": 4
+            "minLevel": 1
           },
           "SK_BTL_INV_CTDOWN": {
             "effects": [
@@ -1784,7 +1784,26 @@
             },
             "target": "self",
             "maxLevel": 10,
-            "minLevel": 4
+            "minLevel": 1
+          },
+          "SK_LW_HIT_5_N_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_N_R",
+            "rate": 100,
+            "names": {
+              "en": "命中率+10"
+            },
+            "target": "self",
+            "maxLevel": 3,
+            "minLevel": 1
           },
           "SK_LW_HIT_5_SSR": {
             "effects": [
@@ -2034,7 +2053,7 @@
               "value": 17
             },
             "count": 4,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 1,
@@ -2053,7 +2072,7 @@
           "SK_BHMT_M_02_02": {
             "effects": [],
             "dataId": "SK_BHMT_M_02_02",
-            "rate": 100,
+            "rate": 50,
             "names": {
               "en": "あばれまわる"
             },
@@ -2063,7 +2082,7 @@
               "value": 30
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "based": "physic",
             "aoe": {
               "s": 1,
@@ -2082,7 +2101,7 @@
           "SK_BHMT_M_03_02": {
             "effects": [],
             "dataId": "SK_BHMT_M_03_02",
-            "rate": 70,
+            "rate": 10,
             "names": {
               "en": "しゃくりあげ"
             },
@@ -2092,7 +2111,7 @@
               "value": 30
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 4,
@@ -2126,7 +2145,7 @@
               "en": "命中1-999アップ"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_HPDOWN": {
@@ -2145,7 +2164,7 @@
               "en": "最大HPダウン無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_SPDDOWN": {
@@ -2164,7 +2183,7 @@
               "en": "素早さダウン無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_MOVE_1-20_U": {
@@ -2183,8 +2202,8 @@
               "en": "Move1-20アップ"
             },
             "target": "self",
-            "maxLevel": 30,
-            "minLevel": 1
+            "maxLevel": 100,
+            "minLevel": 31
           }
         },
         "slug": "behemoth-king",
@@ -2383,7 +2402,7 @@
               "value": 10
             },
             "count": 5,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 1,
               "l": 1,
@@ -2405,7 +2424,7 @@
           "SK_TNBR_M_02": {
             "effects": [],
             "dataId": "SK_TNBR_M_02",
-            "rate": 100,
+            "rate": 50,
             "names": {
               "en": "うらみぼうちょう"
             },
@@ -2415,7 +2434,7 @@
               "value": 18
             },
             "count": 3,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 1,
               "l": 1,
@@ -2446,7 +2465,7 @@
               }
             ],
             "dataId": "SK_TNBR_M_03",
-            "rate": 50,
+            "rate": 10,
             "names": {
               "en": "うらみ骨髄"
             },
@@ -2456,7 +2475,7 @@
               "value": 24
             },
             "count": 5,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 1,
               "l": 3,
@@ -2479,7 +2498,7 @@
           "SK_TNBR_M_04_R": {
             "effects": [],
             "dataId": "SK_TNBR_M_04_R",
-            "rate": 30,
+            "rate": 10,
             "names": {
               "en": "みんなのうらみ"
             },
@@ -2489,7 +2508,7 @@
               "value": 45
             },
             "count": 2,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 1,
               "l": 1,
@@ -2522,23 +2541,23 @@
               "en": "CT変動無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
-          "SK_LW_HIT_5_UR": {
+          "SK_LW_HIT_5_N_R": {
             "effects": [
               {
                 "type": "ACCURACY",
-                "minValue": 20,
-                "maxValue": 20,
+                "minValue": 10,
+                "maxValue": 10,
                 "calcType": "fixe",
                 "target": "self"
               }
             ],
-            "dataId": "SK_LW_HIT_5_UR",
+            "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
             "names": {
-              "en": "命中率+20"
+              "en": "命中率+10"
             },
             "target": "self",
             "maxLevel": 3,
@@ -2560,7 +2579,7 @@
               "en": "最大HPダウン無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_INV_SPDDOWN": {
@@ -2579,8 +2598,46 @@
               "en": "素早さダウン無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
+          },
+          "SK_LW_HIT_5_SSR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 15,
+                "maxValue": 15,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_SSR",
+            "rate": 100,
+            "names": {
+              "en": "命中率+15"
+            },
+            "target": "self",
+            "maxLevel": 6,
+            "minLevel": 4
+          },
+          "SK_LW_HIT_5_UR": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 20,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_HIT_5_UR",
+            "rate": 100,
+            "names": {
+              "en": "命中率+20"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 7
           }
         },
         "slug": "tonberry",
@@ -3254,7 +3311,7 @@
               "en": "ドラゴンボイス"
             },
             "target": "ennemySide",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "based": "physic",
             "aoe": {
               "s": 0,
@@ -3292,7 +3349,7 @@
               "value": 5
             },
             "count": 5,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 3,
@@ -3328,7 +3385,7 @@
               }
             ],
             "dataId": "SK_THDG_M_03",
-            "rate": 100,
+            "rate": 50,
             "names": {
               "en": "ダブルブレイクブレス・火"
             },
@@ -3338,7 +3395,7 @@
               "value": 5
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 3,
@@ -3374,7 +3431,7 @@
               }
             ],
             "dataId": "SK_THDG_M_04",
-            "rate": 100,
+            "rate": 50,
             "names": {
               "en": "ダブルブレイクブレス・氷"
             },
@@ -3384,7 +3441,7 @@
               "value": 5
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 3,
@@ -3428,7 +3485,7 @@
               }
             ],
             "dataId": "SK_THDG_M_05",
-            "rate": 70,
+            "rate": 20,
             "names": {
               "en": "ときはなつ"
             },
@@ -3438,7 +3495,7 @@
               "value": 5
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "based": "physic",
             "aoe": {
               "s": 1,
@@ -3472,7 +3529,7 @@
               "en": "命中1-999アップ"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_HPDOWN": {
@@ -3491,7 +3548,7 @@
               "en": "最大HPダウン無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_SPDDOWN": {
@@ -3510,7 +3567,7 @@
               "en": "素早さダウン無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_CTDOWN": {
@@ -3527,7 +3584,7 @@
               "en": "CT変動無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           }
         },
@@ -3751,7 +3808,7 @@
               "value": 10
             },
             "count": 5,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 2,
               "l": 3,
@@ -3770,7 +3827,7 @@
           "SK_CSLI_02_M_02": {
             "effects": [],
             "dataId": "SK_CSLI_02_M_02",
-            "rate": 100,
+            "rate": 60,
             "names": {
               "en": "いただきます！"
             },
@@ -3780,7 +3837,7 @@
               "value": 18
             },
             "count": 2,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "range": {
               "h": 1,
               "l": 1,
@@ -3807,7 +3864,7 @@
               }
             ],
             "dataId": "SK_CSLI_02_M_03",
-            "rate": 100,
+            "rate": 5,
             "names": {
               "en": "一緒に踊りましょっ！"
             },
@@ -3817,7 +3874,7 @@
               "value": 24
             },
             "count": 5,
-            "maxLevel": 3,
+            "maxLevel": 10,
             "based": "physic",
             "aoe": {
               "s": 1,
@@ -3849,7 +3906,7 @@
               "en": "命中1-999アップ"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_INV_HPDOWN": {
@@ -3868,7 +3925,7 @@
               "en": "最大HPダウン無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_INV_SPDDOWN": {
@@ -3887,7 +3944,7 @@
               "en": "素早さダウン無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_INV_CTDOWN": {
@@ -3904,7 +3961,7 @@
               "en": "CT変動無効"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_RES_OTICE_1_80_U": {
@@ -3965,7 +4022,7 @@
               "en": "氷属性以外の耐性1-80アップ(基礎)"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           },
           "SK_BTL_RES_MAGIC_1_80_U_KISO": {
@@ -3984,7 +4041,7 @@
               "en": "魔法耐性1-80アップ(基礎)"
             },
             "target": "self",
-            "maxLevel": 3,
+            "maxLevel": 10,
             "minLevel": 1
           }
         },
@@ -4194,7 +4251,7 @@
               "value": 12
             },
             "count": 8,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 1,
               "l": 3,
@@ -4216,7 +4273,7 @@
           "SK_SIRE_M_02_RA": {
             "effects": [],
             "dataId": "SK_SIRE_M_02_RA",
-            "rate": 100,
+            "rate": 50,
             "names": {
               "en": "ウォタガ"
             },
@@ -4226,7 +4283,7 @@
               "value": 30
             },
             "count": 5,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 2,
               "l": 4,
@@ -4271,7 +4328,7 @@
               "value": 48
             },
             "count": 3,
-            "maxLevel": 30,
+            "maxLevel": 100,
             "range": {
               "h": 2,
               "l": 4,
@@ -4311,7 +4368,7 @@
               "en": "命中1-999アップ"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_HPDOWN": {
@@ -4330,7 +4387,7 @@
               "en": "最大HPダウン無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_INV_CTDOWN": {
@@ -4347,7 +4404,7 @@
               "en": "CT変動無効"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_RESDB_SLASH_1_100_U": {
@@ -4366,7 +4423,7 @@
               "en": "斬撃耐性弱体耐性1-100アップ"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           },
           "SK_BTL_RESDB_ELEMALL1_1_100_U": {
@@ -4385,7 +4442,7 @@
               "en": "全属性耐性弱体耐性1-100アップ"
             },
             "target": "self",
-            "maxLevel": 30,
+            "maxLevel": 100,
             "minLevel": 1
           }
         },
@@ -4589,7 +4646,157 @@
         "species": "plant",
         "element": "ice",
         "image": "lapscact_02",
-        "skills": {},
+        "skills": {
+          "SK_CACT_M_01": {
+            "effects": [],
+            "dataId": "SK_CACT_M_01",
+            "rate": 50,
+            "names": {
+              "en": "針千本"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 1000,
+              "maxValue": 1000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_02": {
+            "effects": [],
+            "dataId": "SK_CACT_M_02",
+            "rate": 0,
+            "names": {
+              "en": "針万本"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 44
+            },
+            "count": 1,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 10000,
+              "maxValue": 10000,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {},
+              "fixedDamage": true
+            },
+            "minLevel": 1
+          },
+          "SK_CACT_M_03": {
+            "effects": [
+              {
+                "type": "PARALYZE_ATK",
+                "minValue": 60,
+                "maxValue": 80,
+                "calcType": "percent",
+                "rate": 60,
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_CACT_M_03",
+            "rate": 100,
+            "names": {
+              "en": "麻痺針"
+            },
+            "target": "all",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "gold-cactuar",
         "attack": {
           "names": {

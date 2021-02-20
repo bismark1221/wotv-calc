@@ -8,41 +8,6 @@ import { EquipmentService } from './equipment.service';
 import { UnitService } from './unit.service';
 import { JobService } from './job.service';
 
-// Translations
-import { default as FR_ArtifactGrow } from '../../../data/fr/artifactgrow.json';
-import { default as FR_ArtifactName } from '../../../data/fr/artifactname.json';
-import { default as FR_BuffName } from '../../../data/fr/buffname.json';
-import { default as FR_ItemOther } from '../../../data/fr/itemother.json';
-import { default as FR_JobName } from '../../../data/fr/jobname.json';
-import { default as FR_SkillName } from '../../../data/fr/skillname.json';
-import { default as FR_UnitName } from '../../../data/fr/unitname.json';
-import { default as FR_VisionCardName } from '../../../data/fr/visioncardname.json';
-import { default as FR_ItemName } from '../../../data/fr/itemname.json';
-import { default as FR_PlayerTitleName } from '../../../data/fr/playerawardsname.json';
-import { default as FR_PlayerTitleDesc } from '../../../data/fr/playerawardsdescription.json';
-import { default as FR_GuildTitleName } from '../../../data/fr/guildawardsname.json';
-import { default as FR_GuildTitleDesc } from '../../../data/fr/guildawardsdescription.json';
-
-import { default as JP_ArtifactGrow } from '../../../data/jp/artifactgrow.json';
-import { default as JP_ArtifactName } from '../../../data/jp/artifactname.json';
-import { default as JP_BuffName } from '../../../data/jp/buffname.json';
-import { default as JP_ItemOther } from '../../../data/jp/itemother.json';
-import { default as JP_JobName } from '../../../data/jp/jobname.json';
-import { default as JP_SkillName } from '../../../data/jp/skillname.json';
-import { default as JP_UnitName } from '../../../data/jp/unitname.json';
-import { default as JP_VisionCardName } from '../../../data/jp/visioncardname.json';
-import { default as JP_ItemName } from '../../../data/jp/itemname.json';
-import { default as JP_PlayerTitleName } from '../../../data/jp/playerawardsname.json';
-import { default as JP_PlayerTitleDesc } from '../../../data/jp/playerawardsdescription.json';
-import { default as JP_GuildTitleName } from '../../../data/fr/guildawardsname.json';
-import { default as JP_GuildTitleDesc } from '../../../data/fr/guildawardsdescription.json';
-
-import { default as JP_Romaji } from '../../../data/jp_romaji.json';
-import { default as JP_Titles_Name } from '../../../data/jp_titles_name.json';
-import { default as JP_Titles_Desc } from '../../../data/jp_titles_desc.json';
-
-import { default as gl_maps } from '../../../data/map/gl/maps.json';
-
 @Injectable()
 export class JsonService {
   slug = new Slug('default');
@@ -141,6 +106,8 @@ export class JsonService {
   jpRomaji = {};
   jpTitlesName = {};
   jpTitlesDesc = {};
+
+  maps = {};
 
   names = {
     en : {
@@ -937,7 +904,7 @@ export class JsonService {
   }
 
   private GLQuests() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Quest.json').toPromise()
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Quests.json').toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1125,6 +1092,138 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsDescription.json').toPromise();
   }
 
+
+
+  /* Local files */
+  private FR_ArtifactGrow() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json').toPromise();
+  }
+
+  private FR_ArtifactName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactname.json').toPromise();
+  }
+
+  private FR_BuffName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/buffname.json').toPromise();
+  }
+
+  private FR_ItemOther() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemother.json').toPromise();
+  }
+
+  private FR_JobName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/jobname.json').toPromise();
+  }
+
+  private FR_SkillName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/skillname.json').toPromise();
+  }
+
+  private FR_UnitName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/unitname.json').toPromise();
+  }
+
+  private FR_VisionCardName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/visioncardname.json').toPromise();
+  }
+
+  private FR_ItemName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemname.json').toPromise();
+  }
+
+  private FR_PlayerTitleName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsname.json').toPromise();
+  }
+
+  private FR_PlayerTitleDesc() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsdescription.json').toPromise();
+  }
+
+  private FR_GuildTitleName() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsname.json').toPromise();
+  }
+
+  private FR_GuildTitleDesc() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json').toPromise();
+  }
+
+
+
+  private JP_ArtifactGrow() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactgrow.json').toPromise();
+  }
+
+  private JP_ArtifactName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactname.json').toPromise();
+  }
+
+  private JP_BuffName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/buffname.json').toPromise();
+  }
+
+  private JP_ItemOther() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemother.json').toPromise();
+  }
+
+  private JP_JobName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/jobname.json').toPromise();
+  }
+
+  private JP_SkillName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/skillname.json').toPromise();
+  }
+
+  private JP_UnitName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/unitname.json').toPromise();
+  }
+
+  private JP_VisionCardName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/visioncardname.json').toPromise();
+  }
+
+  private JP_ItemName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemname.json').toPromise();
+  }
+
+  private JP_PlayerTitleName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsname.json').toPromise();
+  }
+
+  private JP_PlayerTitleDesc() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsdescription.json').toPromise();
+  }
+
+  private JP_GuildTitleName() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsname.json').toPromise();
+  }
+
+  private JP_GuildTitleDesc() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json').toPromise();
+  }
+
+
+
+  private JP_Romaji() {
+    return this.http.get('http://data.local-wotv-chain.com/jp_romaji.json').toPromise();
+  }
+
+  private JP_Titles_Name() {
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_name.json').toPromise();
+  }
+
+  private JP_Titles_Desc() {
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_desc.json').toPromise();
+  }
+
+
+
+  private GL_Maps() {
+    return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json').toPromise();
+  }
+
+
+
+
   getJsons(): Promise<any[]> {
     // @ts-ignore
     return Promise.all([
@@ -1220,6 +1319,39 @@ export class JsonService {
 
       this.GLQuests(),
       this.JPQuests(),
+
+      this.FR_ArtifactGrow(),
+      this.FR_ArtifactName(),
+      this.FR_BuffName(),
+      this.FR_ItemOther(),
+      this.FR_JobName(),
+      this.FR_SkillName(),
+      this.FR_UnitName(),
+      this.FR_VisionCardName(),
+      this.FR_ItemName(),
+      this.FR_PlayerTitleName(),
+      this.FR_PlayerTitleDesc(),
+      this.FR_GuildTitleName(),
+      this.FR_GuildTitleDesc(),
+
+      this.JP_ArtifactGrow(),
+      this.JP_ArtifactName(),
+      this.JP_BuffName(),
+      this.JP_ItemOther(),
+      this.JP_JobName(),
+      this.JP_SkillName(),
+      this.JP_UnitName(),
+      this.JP_VisionCardName(),
+      this.JP_ItemName(),
+      this.JP_PlayerTitleName(),
+      this.JP_PlayerTitleDesc(),
+      this.JP_GuildTitleName(),
+      this.JP_GuildTitleDesc(),
+
+      this.JP_Romaji(),
+      this.JP_Titles_Name(),
+      this.JP_Titles_Desc(),
+      this.GL_Maps(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1299,37 +1431,39 @@ export class JsonService {
       this.names.en.guildTitleName = this.formatNames(responses[59]);
       this.names.en.guildTitleDesc = this.formatNames(responses[60]);
 
-      this.names.fr.unit = this.formatNames(FR_UnitName);
-      this.names.fr.skill = this.formatNames(FR_SkillName);
-      this.names.fr.job = this.formatNames(FR_JobName);
-      this.names.fr.buff = this.formatNames(FR_BuffName);
-      this.names.fr.equipment = this.formatNames(FR_ArtifactName);
-      this.names.fr.visionCard = this.formatNames(FR_VisionCardName);
-      this.names.fr.itemOther = this.formatNames(FR_ItemOther);
-      this.names.fr.equipmentGrow = this.formatNames(FR_ArtifactGrow);
-      this.names.fr.item = this.formatNames(FR_ItemName);
-      this.names.fr.playerTitleName = this.formatNames(FR_PlayerTitleName);
-      this.names.fr.playerTitleDesc = this.formatNames(FR_PlayerTitleDesc);
-      this.names.fr.guildTitleName = this.formatNames(FR_GuildTitleName);
-      this.names.fr.guildTitleDesc = this.formatNames(FR_GuildTitleDesc);
+      this.names.fr.equipmentGrow = this.formatNames(responses[75]);
+      this.names.fr.equipment = this.formatNames(responses[76]);
+      this.names.fr.buff = this.formatNames(responses[77]);
+      this.names.fr.itemOther = this.formatNames(responses[78]);
+      this.names.fr.job = this.formatNames(responses[79]);
+      this.names.fr.skill = this.formatNames(responses[80]);
+      this.names.fr.unit = this.formatNames(responses[81]);
+      this.names.fr.visionCard = this.formatNames(responses[82]);
+      this.names.fr.item = this.formatNames(responses[83]);
+      this.names.fr.playerTitleName = this.formatNames(responses[84]);
+      this.names.fr.playerTitleDesc = this.formatNames(responses[85]);
+      this.names.fr.guildTitleName = this.formatNames(responses[86]);
+      this.names.fr.guildTitleDesc = this.formatNames(responses[87]);
 
-      this.names.jp.unit = this.formatNames(JP_UnitName);
-      this.names.jp.skill = this.formatNames(JP_SkillName);
-      this.names.jp.job = this.formatNames(JP_JobName);
-      this.names.jp.buff = this.formatNames(JP_BuffName);
-      this.names.jp.equipment = this.formatNames(JP_ArtifactName);
-      this.names.jp.visionCard = this.formatNames(JP_VisionCardName);
-      this.names.jp.itemOther = this.formatNames(JP_ItemOther);
-      this.names.jp.equipmentGrow = this.formatNames(JP_ArtifactGrow);
-      this.names.jp.item = this.formatNames(JP_ItemName);
-      this.names.jp.playerTitleName = this.formatNames(JP_PlayerTitleName);
-      this.names.jp.playerTitleDesc = this.formatNames(JP_PlayerTitleDesc);
-      this.names.jp.guildTitleName = this.formatNames(JP_GuildTitleName);
-      this.names.jp.guildTitleDesc = this.formatNames(JP_GuildTitleDesc);
+      this.names.jp.equipmentGrow = this.formatNames(responses[88]);
+      this.names.jp.equipment = this.formatNames(responses[89]);
+      this.names.jp.buff = this.formatNames(responses[90]);
+      this.names.jp.itemOther = this.formatNames(responses[91]);
+      this.names.jp.job = this.formatNames(responses[92]);
+      this.names.jp.skill = this.formatNames(responses[93]);
+      this.names.jp.unit = this.formatNames(responses[94]);
+      this.names.jp.visionCard = this.formatNames(responses[95]);
+      this.names.jp.item = this.formatNames(responses[96]);
+      this.names.jp.playerTitleName = this.formatNames(responses[97]);
+      this.names.jp.playerTitleDesc = this.formatNames(responses[98]);
+      this.names.jp.guildTitleName = this.formatNames(responses[99]);
+      this.names.jp.guildTitleDesc = this.formatNames(responses[100]);
 
-      this.jpRomaji = JP_Romaji;
-      this.jpTitlesName = JP_Titles_Name;
-      this.jpTitlesDesc = JP_Titles_Desc;
+      this.jpRomaji = responses[101];
+      this.jpTitlesName = responses[102];
+      this.jpTitlesDesc = responses[103];
+
+      this.maps = responses[104];
 
       this.formatJsons();
 
@@ -1388,41 +1522,41 @@ export class JsonService {
     for (let i = 0; i < versions.length; i ++) {
       this.version = versions[i];
 
-      // Object.keys(this[this.version].jobs).forEach(jobId => {
-      //   this.addJob(this[this.version].jobs[jobId]);
-      // });
+      Object.keys(this[this.version].jobs).forEach(jobId => {
+        this.addJob(this[this.version].jobs[jobId]);
+      });
 
-      // Object.keys(this[this.version].units).forEach(unitId => {
-      //   if (this[this.version].units[unitId].type === 0) {
-      //     this.addUnit(this[this.version].units[unitId]);
-      //   }
+      Object.keys(this[this.version].units).forEach(unitId => {
+        if (this[this.version].units[unitId].type === 0) {
+          this.addUnit(this[this.version].units[unitId]);
+        }
 
-      //   if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
-      //     this.addEsper(this[this.version].units[unitId]);
-      //   }
-      // });
+        if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
+          this.addEsper(this[this.version].units[unitId]);
+        }
+      });
 
-      // this.cleanUnits();
+      this.cleanUnits();
 
-      // Object.keys(this[this.version].visionCards).forEach(visionCardId => {
-      //   this.addVisionCard(this[this.version].visionCards[visionCardId]);
-      // });
+      Object.keys(this[this.version].visionCards).forEach(visionCardId => {
+        this.addVisionCard(this[this.version].visionCards[visionCardId]);
+      });
 
-      // Object.keys(this[this.version].equipments).forEach(equipmentId => {
-      //   this.addEquipment(this[this.version].equipments[equipmentId]);
-      // });
+      Object.keys(this[this.version].equipments).forEach(equipmentId => {
+        this.addEquipment(this[this.version].equipments[equipmentId]);
+      });
 
       this.formatRaid();
 
-      // Object.keys(this[this.version].items).forEach(itemId => {
-      //   this.addItem(this[this.version].items[itemId]);
-      // });
+      Object.keys(this[this.version].items).forEach(itemId => {
+        this.addItem(this[this.version].items[itemId]);
+      });
 
-      // this.formatMasterRanks();
+      this.formatMasterRanks();
 
-      // this.formatTitles();
+      this.formatTitles();
 
-      // this.exportGLexclusiveToJP();
+      this.exportGLexclusiveToJP();
     }
   }
 
@@ -3060,8 +3194,6 @@ export class JsonService {
     this[this.version].raidBoss[bossId].param.forEach(quest => {
       this.addBossSkill(boss, quest.quest_id, quest.lv_min, quest.lv_max);
 
-      //console.log(boss)
-
       if (raid.maxLevel < quest.lv_max) {
         raid.maxLevel = quest.lv_max;
       }
@@ -3073,7 +3205,7 @@ export class JsonService {
   private addBossSkill(boss, questId, lvMin, lvMax) {
     const quest = this[this.version].quests[questId];
     if (quest) {
-      const map = gl_maps[quest.map.set.split('/')[1]];
+      const map = this.maps[quest.map.set.split('/')[1]];
 
       if (map) {
         map.enemy.forEach(enemy => {
@@ -3090,11 +3222,6 @@ export class JsonService {
                 this.updateSkill(boss, boss.skills[skillId], skillId);
                 boss.skills[skillId].minLevel = lvMin;
                 boss.skills[skillId].maxLevel = lvMax;
-
-
-                console.log(boss)
-
-
               } else if (boss.skills[skillId].maxLevel < lvMax) {
                 boss.skills[skillId].maxLevel = lvMax;
               } else if (boss.skills[skillId].minLevel > lvMin) {
@@ -3105,8 +3232,6 @@ export class JsonService {
         });
       }
     }
-
-    return boss;
   }
 
   private addItem(item) {
