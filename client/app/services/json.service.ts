@@ -1556,6 +1556,8 @@ export class JsonService {
 
       this.formatTitles();
 
+      this.formatDropTables();
+
       this.exportGLexclusiveToJP();
     }
   }
@@ -3394,5 +3396,73 @@ export class JsonService {
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
       });
     }
+  }
+
+  formatDropTables() {
+    const formattedMaps = {};
+
+    Object.keys(this.maps).forEach((mapFile, mapIndex) => {
+      formattedMaps[mapFile] = {
+        items: {}
+      };
+
+
+      if (mapIndex === 0) {
+
+        if (this.maps[mapFile].drop_table_list) {
+          Object.keys(this.maps[mapFile].drop_table_list).forEach(dropTable => {
+            if (dropTable !== 'steal') {
+              this.maps[mapFile].drop_table_list[dropTable].totalRate = this.getDropTotalRate(this.maps[mapFile].drop_table_list[dropTable].drop_list);
+            }
+          });
+        }
+
+        if (this.maps[mapFile].drop_table_list && this.maps[mapFile].enemy) {
+          this.maps[mapFile].enemy.forEach(enemy => {
+            if (enemy.drop && this.maps[mapFile].drop_table_list[enemy.drop]) {
+
+            }
+          });
+        }
+
+
+
+        if (this.maps[mapFile].drop_table_list && this.maps[mapFile].drop_table_list['HOST']) {
+          const hostDropTable = this.maps[mapFile].drop_table_list['HOST'];
+          hostDropTable.drop_list.forEach(item => {
+            if (this[this.version].wotvItems[item.drop_data.iname]) {
+              this.addDroppedItem(formattedMaps[mapFile], 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
+            }
+          });
+        }
+
+
+
+
+      }
+    });
+
+    console.log(JSON.parse(JSON.stringify(formattedMaps)));
+  }
+
+  addDroppedItem(map, type, itemId, rate, totalRate) {
+    if (!map.items[itemId]) {
+      map.items[itemId] = {};
+      map.items[itemId][type] = (rate * 100 / totalRate).toFixed(1);
+    } else if (!map.items[itemId][type]) {
+      map.items[itemId][type] = (rate * 100 / totalRate).toFixed(1);
+    } else {
+      // TODO
+    }
+  }
+
+  getDropTotalRate(items) {
+    let totalRate = 0;
+
+    items.forEach(item => {
+      totalRate += item.weight;
+    });
+
+    return totalRate;
   }
 }
