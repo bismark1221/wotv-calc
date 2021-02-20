@@ -3407,7 +3407,7 @@ export class JsonService {
       };
 
 
-      if (mapIndex === 0) {
+      // if (mapIndex === 0) {
 
         if (this.maps[mapFile].drop_table_list) {
           Object.keys(this.maps[mapFile].drop_table_list).forEach(dropTable => {
@@ -3420,12 +3420,13 @@ export class JsonService {
         if (this.maps[mapFile].drop_table_list && this.maps[mapFile].enemy) {
           this.maps[mapFile].enemy.forEach(enemy => {
             if (enemy.drop && this.maps[mapFile].drop_table_list[enemy.drop]) {
-
+              const dropTable = this.maps[mapFile].drop_table_list[enemy.drop];
+              dropTable.drop_list.forEach(item => {
+                this.addDroppedItem(formattedMaps[mapFile], 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
+              });
             }
           });
         }
-
-
 
         if (this.maps[mapFile].drop_table_list && this.maps[mapFile].drop_table_list['HOST']) {
           const hostDropTable = this.maps[mapFile].drop_table_list['HOST'];
@@ -3435,11 +3436,7 @@ export class JsonService {
             }
           });
         }
-
-
-
-
-      }
+      // }
     });
 
     console.log(JSON.parse(JSON.stringify(formattedMaps)));
@@ -3448,11 +3445,11 @@ export class JsonService {
   addDroppedItem(map, type, itemId, rate, totalRate) {
     if (!map.items[itemId]) {
       map.items[itemId] = {};
-      map.items[itemId][type] = (rate * 100 / totalRate).toFixed(1);
+      map.items[itemId][type] = rate * 100 / totalRate;
     } else if (!map.items[itemId][type]) {
-      map.items[itemId][type] = (rate * 100 / totalRate).toFixed(1);
-    } else {
-      // TODO
+      map.items[itemId][type] = rate * 100 / totalRate;
+    } else if (map.items[itemId][type] !== '100.0') { // To rework maybe...
+      map.items[itemId][type] = map.items[itemId][type] + ((100 - map.items[itemId][type]) * (rate * 100 / totalRate) / 100);
     }
   }
 
