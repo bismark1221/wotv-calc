@@ -38,6 +38,7 @@ export class JsonService {
     wotvMasterRanks: {},
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
+    wotvDropRates: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -83,6 +84,7 @@ export class JsonService {
     wotvMasterRanks: {},
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
+    wotvDropRates: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -3399,47 +3401,67 @@ export class JsonService {
   }
 
   formatDropTables() {
-    const formattedMaps = {};
+    const formattedQuests = {};
 
-    Object.keys(this.maps).forEach((mapFile, mapIndex) => {
-      formattedMaps[mapFile] = {
-        items: {}
+    Object.keys(this[this.version].quests).forEach(questId => {
+      const quest = this[this.version].quests[questId];
+
+      formattedQuests[questId] = {
+        items: {},
+        names: {},
+        exp: quest.uexp,
+        nrg: quest.ap,
+        jp: quest.jp,
+        enemies: 0,
+        gils: quest.gold,
+        chests: 0
       };
 
-
-      // if (mapIndex === 0) {
-
-        if (this.maps[mapFile].drop_table_list) {
-          Object.keys(this.maps[mapFile].drop_table_list).forEach(dropTable => {
+      if (this.maps[quest.map.set.split('/')[1]]) {
+        const map = this.maps[quest.map.set.split('/')[1]];
+        if (map.drop_table_list) {
+          Object.keys(map.drop_table_list).forEach(dropTable => {
             if (dropTable !== 'steal') {
-              this.maps[mapFile].drop_table_list[dropTable].totalRate = this.getDropTotalRate(this.maps[mapFile].drop_table_list[dropTable].drop_list);
+              map.drop_table_list[dropTable].totalRate = this.getDropTotalRate(map.drop_table_list[dropTable].drop_list);
             }
           });
         }
 
-        if (this.maps[mapFile].drop_table_list && this.maps[mapFile].enemy) {
-          this.maps[mapFile].enemy.forEach(enemy => {
-            if (enemy.drop && this.maps[mapFile].drop_table_list[enemy.drop]) {
-              const dropTable = this.maps[mapFile].drop_table_list[enemy.drop];
+        if (map.enemy) {
+          map.enemy.forEach(enemy => {
+            if (enemy.iname === 'UN_GM_TREASURE') {
+              formattedQuests[questId].chests += 1;
+            } else {
+              formattedQuests[questId].enemies += 1;
+            }
+          });
+        }
+
+        if (map.drop_table_list && map.enemy) {
+          map.enemy.forEach(enemy => {
+            if (enemy.drop && map.drop_table_list[enemy.drop]) {
+              const dropTable = map.drop_table_list[enemy.drop];
               dropTable.drop_list.forEach(item => {
-                this.addDroppedItem(formattedMaps[mapFile], 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
+                this.addDroppedItem(formattedQuests[questId], 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
               });
             }
           });
         }
 
-        if (this.maps[mapFile].drop_table_list && this.maps[mapFile].drop_table_list['HOST']) {
-          const hostDropTable = this.maps[mapFile].drop_table_list['HOST'];
+        if (map.drop_table_list && map.drop_table_list['HOST']) {
+          const hostDropTable = map.drop_table_list['HOST'];
           hostDropTable.drop_list.forEach(item => {
             if (this[this.version].wotvItems[item.drop_data.iname]) {
-              this.addDroppedItem(formattedMaps[mapFile], 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
+              this.addDroppedItem(formattedQuests[questId], 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
             }
           });
         }
-      // }
+      }
     });
 
-    console.log(JSON.parse(JSON.stringify(formattedMaps)));
+    this[this.version].wotvDropRates = formattedQuests;
+
+    console.log(this[this.version].wotvDropRates)
   }
 
   addDroppedItem(map, type, itemId, rate, totalRate) {

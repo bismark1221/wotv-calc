@@ -245,6 +245,10 @@
             "value": "モント・リオニスの強化"
         },
         {
+            "key": "BUFF_MAPEFF_CHARMDEF",
+            "value": "魅了無効"
+        },
+        {
             "key": "BUFF_IFRT_01",
             "value": "命中率+3"
         },
@@ -3237,6 +3241,170 @@
             "value": "光属性アビリティ攻撃UP+10%"
         },
         {
+            "key": "BUFF_ICDG_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_ICDG_02",
+            "value": "精神UP+1%"
+        },
+        {
+            "key": "BUFF_ICDG_03",
+            "value": "回避率+3"
+        },
+        {
+            "key": "BUFF_ICDG_04",
+            "value": "風属性キラー+2%"
+        },
+        {
+            "key": "BUFF_ICDG_05",
+            "value": "魔法耐性+3%"
+        },
+        {
+            "key": "BUFF_ICDG_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_ICDG_07",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_ICDG_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_ICDG_09",
+            "value": "機械キラー+3%"
+        },
+        {
+            "key": "BUFF_ICDG_10",
+            "value": "機械キラー+3%"
+        },
+        {
+            "key": "BUFF_ICDG_11",
+            "value": "精神UP+2%"
+        },
+        {
+            "key": "BUFF_ICDG_12",
+            "value": "回避率+4"
+        },
+        {
+            "key": "BUFF_ICDG_13",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ICDG_14",
+            "value": "魔法攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_ICDG_15",
+            "value": "風属性キラー+3%"
+        },
+        {
+            "key": "BUFF_ICDG_16",
+            "value": "魔法耐性+3%"
+        },
+        {
+            "key": "BUFF_ICDG_17",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_ICDG_18",
+            "value": "火耐性+3%"
+        },
+        {
+            "key": "BUFF_ICDG_19",
+            "value": "召喚魔法Lv7"
+        },
+        {
+            "key": "BUFF_ICDG_20",
+            "value": "機械キラー+5%"
+        },
+        {
+            "key": "BUFF_ICDG_21",
+            "value": "機械キラー+4%"
+        },
+        {
+            "key": "BUFF_ICDG_22",
+            "value": "精神UP+3%"
+        },
+        {
+            "key": "BUFF_ICDG_23",
+            "value": "精神UP+4%"
+        },
+        {
+            "key": "BUFF_ICDG_24",
+            "value": "魔法攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_ICDG_25",
+            "value": "魔法攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_ICDG_26",
+            "value": "風属性キラー+6%"
+        },
+        {
+            "key": "BUFF_ICDG_27",
+            "value": "風属性キラー+4%"
+        },
+        {
+            "key": "BUFF_ICDG_28",
+            "value": "火耐性+5%"
+        },
+        {
+            "key": "BUFF_ICDG_29",
+            "value": "火耐性+4%"
+        },
+        {
+            "key": "BUFF_ICDG_30",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_ICDG_31",
+            "value": "召喚魔法Lv15"
+        },
+        {
+            "key": "BUFF_ICDG_32",
+            "value": "精神UP+5%"
+        },
+        {
+            "key": "BUFF_ICDG_33",
+            "value": "風属性キラー+10%"
+        },
+        {
+            "key": "BUFF_ICDG_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_ICDG_35",
+            "value": "クリティカル回避率+4"
+        },
+        {
+            "key": "BUFF_ICDG_36",
+            "value": "クリティカル回避率+5"
+        },
+        {
+            "key": "BUFF_ICDG_37",
+            "value": "クリティカル回避率+6"
+        },
+        {
+            "key": "BUFF_ICDG_38",
+            "value": "氷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_ICDG_39",
+            "value": "氷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_ICDG_40",
+            "value": "氷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_ICDG_41",
+            "value": "氷属性アビリティ攻撃UP+10%"
+        },
+        {
             "key": "BUFF_IGNT_01",
             "value": "命中率+3"
         },
@@ -3695,6 +3863,38 @@
         {
             "key": "BUFF_MABR_33",
             "value": "麻痺耐性+5%"
+        },
+        {
+            "key": "BUFF_MABR_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_MABR_35",
+            "value": "初期AP+2"
+        },
+        {
+            "key": "BUFF_MABR_36",
+            "value": "初期AP+5"
+        },
+        {
+            "key": "BUFF_MABR_37",
+            "value": "魔法耐性+5%"
+        },
+        {
+            "key": "BUFF_MABR_38",
+            "value": "風属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_MABR_39",
+            "value": "風属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_MABR_40",
+            "value": "風属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_MABR_41",
+            "value": "風属性アビリティ攻撃UP+10%"
         },
         {
             "key": "BUFF_MOGL_01",

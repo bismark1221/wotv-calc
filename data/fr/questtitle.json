@@ -1,0 +1,4492 @@
+{
+    "infos": [
+        {
+            "key": "QE_TU_01",
+            "value": "Tutoriel I"
+        },
+        {
+            "key": "QE_TU_02",
+            "value": "Tutoriel II"
+        },
+        {
+            "key": "QE_EV_UNITEXP_01",
+            "value": "Chambre d'EXP (Débutant)"
+        },
+        {
+            "key": "QE_EV_UNITEXP_02",
+            "value": "Chambre d'EXP (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_UNITEXP_03",
+            "value": "Chambre d'EXP (Avancé)"
+        },
+        {
+            "key": "QE_EV_UNITEXP_04",
+            "value": "Chambre d'EXP (Pro)"
+        },
+        {
+            "key": "QE_EV_GIL_D1",
+            "value": "Chambre de Gils (Débutant)"
+        },
+        {
+            "key": "QE_EV_GIL_D2",
+            "value": "Chambre de Gils (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_GIL_D3",
+            "value": "Chambre de Gils (Avancé)"
+        },
+        {
+            "key": "QE_EV_GIL_01",
+            "value": "Chambre de Gils (Débutant)"
+        },
+        {
+            "key": "QE_EV_GIL_02",
+            "value": "Chambre de Gils (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_GIL_03",
+            "value": "Chambre de Gils (Avancé)"
+        },
+        {
+            "key": "QE_EV_AFEXP_D1",
+            "value": "Chambre de Minerais (Débutant)"
+        },
+        {
+            "key": "QE_EV_AFEXP_D2",
+            "value": "Chambre de Minerais (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_AFEXP_D3",
+            "value": "Chambre de Minerais (Avancé)"
+        },
+        {
+            "key": "QE_EV_AFEXP_01",
+            "value": "Chambre de Minerais (Débutant)"
+        },
+        {
+            "key": "QE_EV_AFEXP_02",
+            "value": "Chambre de Minerais (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_AFEXP_03",
+            "value": "Chambre de Minerais (Avancé)"
+        },
+        {
+            "key": "QE_EV_VCEXP_01",
+            "value": "Chambre de l'Œuf de croissance (Débutant)"
+        },
+        {
+            "key": "QE_EV_VCEXP_02",
+            "value": "Chambre de l'Œuf de croissance (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_VCEXP_03",
+            "value": "Chambre de l'Œuf de croissance (Avancé)"
+        },
+        {
+            "key": "QE_EV_VCEXP_04",
+            "value": "Chambre de l'Œuf de croissance (Pro)"
+        },
+        {
+            "key": "QE_EV_WAEXP_01",
+            "value": "Chambre de Pots (Débutant)"
+        },
+        {
+            "key": "QE_EV_WAEXP_02",
+            "value": "Chambre de Pots (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_WAEXP_03",
+            "value": "Chambre de Pots (Avancé)"
+        },
+        {
+            "key": "QE_EV_AW_HIGH_01",
+            "value": "[Très difficile] Salle d'entraînement Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_HIGH_03",
+            "value": "[Très difficile] Salle d'entraînement Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_H09_3",
+            "value": "[Très difficile] Salle d'entraînement (jaune) C"
+        },
+        {
+            "key": "QE_EV_AW_H09_2",
+            "value": "[Très difficile] Salle d'entraînement (jaune) B"
+        },
+        {
+            "key": "QE_EV_AW_H09_1",
+            "value": "[Très difficile] Salle d'entraînement (jaune) A"
+        },
+        {
+            "key": "QE_EV_AW_H13_3",
+            "value": "[Très difficile] Salle d'entraînement (rouge) C"
+        },
+        {
+            "key": "QE_EV_AW_H13_2",
+            "value": "[Très difficile] Salle d'entraînement (rouge) B"
+        },
+        {
+            "key": "QE_EV_AW_H13_1",
+            "value": "[Très difficile] Salle d'entraînement (rouge) A"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_01",
+            "value": "Chambre d'Alcrists (feu) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_02",
+            "value": "Chambre d'Alcrists (feu) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_03",
+            "value": "Chambre d'Alcrists (feu) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_04",
+            "value": "Chambre d'Alcrists (feu) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_05",
+            "value": "Chambre d'Alcrists (feu) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_WIND_01",
+            "value": "Chambre d'Alcrists (vent) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_WIND_02",
+            "value": "Chambre d'Alcrists (vent) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_WIND_03",
+            "value": "Chambre d'Alcrists (vent) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_WIND_04",
+            "value": "Chambre d'Alcrists (vent) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_WIND_05",
+            "value": "Chambre d'Alcrists (vent) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_WTR_01",
+            "value": "Chambre d'Alcrists (eau) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_WTR_02",
+            "value": "Chambre d'Alcrists (eau) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_WTR_03",
+            "value": "Chambre d'Alcrists (eau) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_WTR_04",
+            "value": "Chambre d'Alcrists (eau) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_WTR_05",
+            "value": "Chambre d'Alcrists (eau) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_ICE_01",
+            "value": "Chambre d'Alcrists (glace) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_ICE_02",
+            "value": "Chambre d'Alcrists (glace) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_ICE_03",
+            "value": "Chambre d'Alcrists (glace) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_ICE_04",
+            "value": "Chambre d'Alcrists (glace) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_ICE_05",
+            "value": "Chambre d'Alcrists (glace) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_EAR_01",
+            "value": "Chambre d'Alcrists (terre) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_EAR_02",
+            "value": "Chambre d'Alcrists (terre) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_EAR_03",
+            "value": "Chambre d'Alcrists (terre) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_EAR_04",
+            "value": "Chambre d'Alcrists (terre) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_EAR_05",
+            "value": "Chambre d'Alcrists (terre) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_DARK_01",
+            "value": "Chambre d'Alcrists (ombre) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_DARK_02",
+            "value": "Chambre d'Alcrists (ombre) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_DARK_03",
+            "value": "Chambre d'Alcrists (ombre) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_DARK_04",
+            "value": "Chambre d'Alcrists (ombre) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_DARK_05",
+            "value": "Chambre d'Alcrists (ombre) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_THUN_01",
+            "value": "Chambre d'Alcrists (foudre) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_THUN_02",
+            "value": "Chambre d'Alcrists (foudre) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_THUN_03",
+            "value": "Chambre d'Alcrists (foudre) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_THUN_04",
+            "value": "Chambre d'Alcrists (foudre) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_THUN_05",
+            "value": "Chambre d'Alcrists (foudre) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_01",
+            "value": "Chambre d'Alcrists (lumière) Niv. 1"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_02",
+            "value": "Chambre d'Alcrists (lumière) Niv. 2"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_03",
+            "value": "Chambre d'Alcrists (lumière) Niv. 3"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_04",
+            "value": "Chambre d'Alcrists (lumière) Niv. 4"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_05",
+            "value": "Chambre d'Alcrists (lumière) Niv. 5"
+        },
+        {
+            "key": "QE_EV_SM_FIRE_01",
+            "value": "Antre de l'éveil chimérique (feu)"
+        },
+        {
+            "key": "QE_EV_SM_WIND_01",
+            "value": "Antre de l'éveil chimérique (vent)"
+        },
+        {
+            "key": "QE_EV_SM_WTR_01",
+            "value": "Antre de l'éveil chimérique (eau)"
+        },
+        {
+            "key": "QE_EV_SM_ICE_01",
+            "value": "Antre de l'éveil chimérique (glace)"
+        },
+        {
+            "key": "QE_EV_SM_EAR_01",
+            "value": "Antre de l'éveil chimérique (terre)"
+        },
+        {
+            "key": "QE_EV_SM_DARK_01",
+            "value": "Antre de l'éveil chimérique (ombre)"
+        },
+        {
+            "key": "QE_EV_SM_THUN_01",
+            "value": "Antre de l'éveil chimérique (foudre)"
+        },
+        {
+            "key": "QE_EV_SM_SHIN_01",
+            "value": "Antre de l'éveil chimérique (lumière)"
+        },
+        {
+            "key": "QE_ST_01010101",
+            "value": "Les princes jumeaux"
+        },
+        {
+            "key": "QE_ST_01010102",
+            "value": "Prémonition de sang et de ruine"
+        },
+        {
+            "key": "QE_ST_01010103",
+            "value": "Front commun"
+        },
+        {
+            "key": "QE_ST_01010104",
+            "value": "La voie du Lion"
+        },
+        {
+            "key": "QE_ST_01010105",
+            "value": "Preuve de confiance"
+        },
+        {
+            "key": "QE_ST_01010106",
+            "value": "Au milieu des ruines"
+        },
+        {
+            "key": "QE_ST_01010107",
+            "value": "Prouve-moi ta valeur"
+        },
+        {
+            "key": "QE_ST_01010108",
+            "value": "Relique séculaire"
+        },
+        {
+            "key": "QE_ST_01010109",
+            "value": "La voie du Taureau"
+        },
+        {
+            "key": "QE_ST_01010110",
+            "value": "Faire ses preuves"
+        },
+        {
+            "key": "QE_ST_01010201",
+            "value": "Dans l'antre du lion"
+        },
+        {
+            "key": "QE_ST_01010202",
+            "value": "La fille du roi démon"
+        },
+        {
+            "key": "QE_ST_01010203",
+            "value": "Tout le bonheur du monde"
+        },
+        {
+            "key": "QE_ST_01010204",
+            "value": "Défier les dieux"
+        },
+        {
+            "key": "QE_ST_01010205",
+            "value": "Ambition"
+        },
+        {
+            "key": "QE_ST_01010206",
+            "value": "Ne vous trompez pas d'ennemi"
+        },
+        {
+            "key": "QE_ST_01010207",
+            "value": "Esprit troublé"
+        },
+        {
+            "key": "QE_ST_01010208",
+            "value": "Lumière éclatante"
+        },
+        {
+            "key": "QE_ST_01010209",
+            "value": "Une guerre sans fin"
+        },
+        {
+            "key": "QE_ST_01010210",
+            "value": "Rédemption"
+        },
+        {
+            "key": "QE_ST_01010301",
+            "value": "Inquiétudes"
+        },
+        {
+            "key": "QE_ST_01010302",
+            "value": "L'ombre dans les ruines"
+        },
+        {
+            "key": "QE_ST_01010303",
+            "value": "Diffamation"
+        },
+        {
+            "key": "QE_ST_01010304",
+            "value": "Vers le déclin I"
+        },
+        {
+            "key": "QE_ST_01010305",
+            "value": "Vers le déclin II"
+        },
+        {
+            "key": "QE_ST_01010306",
+            "value": "Brouhaha d'étoiles"
+        },
+        {
+            "key": "QE_ST_01010307",
+            "value": "Ce qui a été perdu"
+        },
+        {
+            "key": "QE_ST_01010308",
+            "value": "Pour te permettre de vivre"
+        },
+        {
+            "key": "QE_ST_01010309",
+            "value": "Plus forts ensemble"
+        },
+        {
+            "key": "QE_ST_01010310",
+            "value": "Renforts"
+        },
+        {
+            "key": "QE_ST_01020101",
+            "value": "« Fortem », déploiement ! I"
+        },
+        {
+            "key": "QE_ST_01020102",
+            "value": "« Fortem », déploiement ! II"
+        },
+        {
+            "key": "QE_ST_01020103",
+            "value": "Indigne d'un prince"
+        },
+        {
+            "key": "QE_ST_01020104",
+            "value": "En héritage"
+        },
+        {
+            "key": "QE_ST_01020105",
+            "value": "Floraison I"
+        },
+        {
+            "key": "QE_ST_01020106",
+            "value": "Floraison II"
+        },
+        {
+            "key": "QE_ST_01020107",
+            "value": "Enchaînement d'attaques"
+        },
+        {
+            "key": "QE_ST_01020108",
+            "value": "Alors vous aussi"
+        },
+        {
+            "key": "QE_ST_01020109",
+            "value": "Intrusion de « Fortem »"
+        },
+        {
+            "key": "QE_ST_01020110",
+            "value": "Message des étoiles"
+        },
+        {
+            "key": "QE_ST_01020201",
+            "value": "Retraite armée I"
+        },
+        {
+            "key": "QE_ST_01020202",
+            "value": "Information"
+        },
+        {
+            "key": "QE_ST_01020203",
+            "value": "Retraite armée II"
+        },
+        {
+            "key": "QE_ST_01020204",
+            "value": "Moi je pleurerais"
+        },
+        {
+            "key": "QE_ST_01020205",
+            "value": "Le devoir du gardien"
+        },
+        {
+            "key": "QE_ST_01020206",
+            "value": "Antre du lion muet"
+        },
+        {
+            "key": "QE_ST_01020207",
+            "value": "Deux Shinobi"
+        },
+        {
+            "key": "QE_ST_01020208",
+            "value": "Lignée royale"
+        },
+        {
+            "key": "QE_ST_01020209",
+            "value": "Le retour du prince"
+        },
+        {
+            "key": "QE_ST_01020210",
+            "value": "L'orgueil du lion"
+        },
+        {
+            "key": "QE_ST_01020301",
+            "value": "Révélation de la déesse"
+        },
+        {
+            "key": "QE_ST_01020302",
+            "value": "Avant que je vous oublie"
+        },
+        {
+            "key": "QE_ST_01020303",
+            "value": "Pour la lignée de Leonis"
+        },
+        {
+            "key": "QE_ST_01020304",
+            "value": "L'âme du maître"
+        },
+        {
+            "key": "QE_ST_01020305",
+            "value": "Au péril de ma vie"
+        },
+        {
+            "key": "QE_ST_01020306",
+            "value": "Débâcle"
+        },
+        {
+            "key": "QE_ST_01020307",
+            "value": "Le taureau et la vipère"
+        },
+        {
+            "key": "QE_ST_01020308",
+            "value": "Menace à l'ouest"
+        },
+        {
+            "key": "QE_ST_01020309",
+            "value": "Le piège se resserre"
+        },
+        {
+            "key": "QE_ST_01020310",
+            "value": "Première épée"
+        },
+        {
+            "key": "QE_ST_01030101",
+            "value": "Désespoir à pas feutrés"
+        },
+        {
+            "key": "QE_ST_01030102",
+            "value": "Foi ébranlée"
+        },
+        {
+            "key": "QE_ST_01030103",
+            "value": "Ambition de l'Église I"
+        },
+        {
+            "key": "QE_ST_01030104",
+            "value": "Ambition de l'Église II"
+        },
+        {
+            "key": "QE_ST_01030105",
+            "value": "Révélations sur Wezett I"
+        },
+        {
+            "key": "QE_ST_01030106",
+            "value": "Révélations sur Wezett II"
+        },
+        {
+            "key": "QE_ST_01030107",
+            "value": "Village reculé"
+        },
+        {
+            "key": "QE_ST_01030108",
+            "value": "Résistance"
+        },
+        {
+            "key": "QE_ST_01030109",
+            "value": "Rébellion et Répression"
+        },
+        {
+            "key": "QE_ST_01030110",
+            "value": "Coût fatal"
+        },
+        {
+            "key": "QE_ST_01030201",
+            "value": "Marionnettes"
+        },
+        {
+            "key": "QE_ST_01030202",
+            "value": "Je m'en charge"
+        },
+        {
+            "key": "QE_ST_01030203",
+            "value": "Pitié mal placée I"
+        },
+        {
+            "key": "QE_ST_01030204",
+            "value": "Pitié mal placée II"
+        },
+        {
+            "key": "QE_ST_01030205",
+            "value": "Minnwu la villageoise"
+        },
+        {
+            "key": "QE_ST_01030206",
+            "value": "Acte désintéressé"
+        },
+        {
+            "key": "QE_ST_01030207",
+            "value": "Fuyez le village"
+        },
+        {
+            "key": "QE_ST_01030208",
+            "value": "Un présent"
+        },
+        {
+            "key": "QE_ST_01030209",
+            "value": "La noblesse des ruines"
+        },
+        {
+            "key": "QE_ST_01030210",
+            "value": "Appréhension"
+        },
+        {
+            "key": "QE_ST_01030301",
+            "value": "« Nitor », déploiement !"
+        },
+        {
+            "key": "QE_ST_01030302",
+            "value": "Réel dessein"
+        },
+        {
+            "key": "QE_ST_01030303",
+            "value": "Défiance grandissante"
+        },
+        {
+            "key": "QE_ST_01030304",
+            "value": "Vers Wezett"
+        },
+        {
+            "key": "QE_ST_01030305",
+            "value": "La proie de Muraga"
+        },
+        {
+            "key": "QE_ST_01030306",
+            "value": "Imprudence fraternelle I"
+        },
+        {
+            "key": "QE_ST_01030307",
+            "value": "Imprudence fraternelle II"
+        },
+        {
+            "key": "QE_ST_01030308",
+            "value": "Souvenir impérissable"
+        },
+        {
+            "key": "QE_ST_01030309",
+            "value": "Motifs"
+        },
+        {
+            "key": "QE_ST_01030310",
+            "value": "Le projet de la reine"
+        },
+        {
+            "key": "QE_ST_01040101",
+            "value": "Prémonition"
+        },
+        {
+            "key": "QE_ST_01040102",
+            "value": "Doutes envahissants"
+        },
+        {
+            "key": "QE_ST_01040103",
+            "value": "Hors de la grotte"
+        },
+        {
+            "key": "QE_ST_01040104",
+            "value": "Vers le château d'Anvil I"
+        },
+        {
+            "key": "QE_ST_01040105",
+            "value": "Vers le château d'Anvil II"
+        },
+        {
+            "key": "QE_ST_01040106",
+            "value": "Route dangereuse I"
+        },
+        {
+            "key": "QE_ST_01040107",
+            "value": "Route dangereuse II"
+        },
+        {
+            "key": "QE_ST_01040108",
+            "value": "Pour Leonis !"
+        },
+        {
+            "key": "QE_ST_01040109",
+            "value": "Un signe étrange"
+        },
+        {
+            "key": "QE_ST_01040110",
+            "value": "Quatre coffres en pierre"
+        },
+        {
+            "key": "QE_ST_01040201",
+            "value": "Shinobi de Fennes"
+        },
+        {
+            "key": "QE_ST_01040202",
+            "value": "Quantité négligeable"
+        },
+        {
+            "key": "QE_ST_01040203",
+            "value": "Percée I"
+        },
+        {
+            "key": "QE_ST_01040204",
+            "value": "Percée II"
+        },
+        {
+            "key": "QE_ST_01040205",
+            "value": "Le chevalier Owe I"
+        },
+        {
+            "key": "QE_ST_01040206",
+            "value": "Le chevalier Owe II"
+        },
+        {
+            "key": "QE_ST_01040207",
+            "value": "Banquet sanglant"
+        },
+        {
+            "key": "QE_ST_01040208",
+            "value": "Salutation des rats"
+        },
+        {
+            "key": "QE_ST_01040209",
+            "value": "Idée lumineuse"
+        },
+        {
+            "key": "QE_ST_01040210",
+            "value": "Crime passionnel"
+        },
+        {
+            "key": "QE_ST_01040301",
+            "value": "Au point du jour"
+        },
+        {
+            "key": "QE_ST_01040302",
+            "value": "Jusqu'au bout"
+        },
+        {
+            "key": "QE_ST_01040303",
+            "value": "Deux voies"
+        },
+        {
+            "key": "QE_ST_01040304",
+            "value": "Trois coffres en pierre"
+        },
+        {
+            "key": "QE_ST_01040305",
+            "value": "Il faut survivre ! I"
+        },
+        {
+            "key": "QE_ST_01040306",
+            "value": "Direction le Nord"
+        },
+        {
+            "key": "QE_ST_01040307",
+            "value": "Il faut survivre ! II"
+        },
+        {
+            "key": "QE_ST_01040308",
+            "value": "Vers le château de Hourne"
+        },
+        {
+            "key": "QE_ST_01040309",
+            "value": "Ombres croisées"
+        },
+        {
+            "key": "QE_ST_01040310",
+            "value": "Il faut survivre ! III"
+        },
+        {
+            "key": "QE_ST_01050101",
+            "value": "La véritable force"
+        },
+        {
+            "key": "QE_ST_01050102",
+            "value": "Nous y voilà enfin"
+        },
+        {
+            "key": "QE_ST_01050103",
+            "value": "Escadron d'assassins"
+        },
+        {
+            "key": "QE_ST_01050104",
+            "value": "Conviction"
+        },
+        {
+            "key": "QE_ST_01050105",
+            "value": "Viser le Nord"
+        },
+        {
+            "key": "QE_ST_01050106",
+            "value": "Éclair du dragon"
+        },
+        {
+            "key": "QE_ST_01050107",
+            "value": "Commençons par le commencement"
+        },
+        {
+            "key": "QE_ST_01050108",
+            "value": "Le Lion meurtri I"
+        },
+        {
+            "key": "QE_ST_01050109",
+            "value": "Vengeance"
+        },
+        {
+            "key": "QE_ST_01050110",
+            "value": "Le Lion meurtri II"
+        },
+        {
+            "key": "QE_ST_01050201",
+            "value": "Forces entrechoquées"
+        },
+        {
+            "key": "QE_ST_01050202",
+            "value": "Le tueur du Nord"
+        },
+        {
+            "key": "QE_ST_01050203",
+            "value": "Espions en marche I"
+        },
+        {
+            "key": "QE_ST_01050204",
+            "value": "Espions en marche II"
+        },
+        {
+            "key": "QE_ST_01050205",
+            "value": "Espions en marche III"
+        },
+        {
+            "key": "QE_ST_01050206",
+            "value": "Doté de force"
+        },
+        {
+            "key": "QE_ST_01050207",
+            "value": "Embuscade"
+        },
+        {
+            "key": "QE_ST_01050208",
+            "value": "Horreur purulente I"
+        },
+        {
+            "key": "QE_ST_01050209",
+            "value": "Horreur purulente II"
+        },
+        {
+            "key": "QE_ST_01050210",
+            "value": "Dernier recours"
+        },
+        {
+            "key": "QE_ST_01050301",
+            "value": "Piégé"
+        },
+        {
+            "key": "QE_ST_01050302",
+            "value": "Schuzelt"
+        },
+        {
+            "key": "QE_ST_01050303",
+            "value": "Résolution"
+        },
+        {
+            "key": "QE_ST_01050304",
+            "value": "Armure d'or"
+        },
+        {
+            "key": "QE_ST_01050305",
+            "value": "Mensonges et trahisons I"
+        },
+        {
+            "key": "QE_ST_01050306",
+            "value": "Mensonges et trahisons II"
+        },
+        {
+            "key": "QE_ST_01050307",
+            "value": "Première disgrâce"
+        },
+        {
+            "key": "QE_ST_01050308",
+            "value": "Qui vaincra"
+        },
+        {
+            "key": "QE_ST_01050309",
+            "value": "Le lionceau déchaîné"
+        },
+        {
+            "key": "QE_ST_01050310",
+            "value": "« Solidus »"
+        },
+        {
+            "key": "QE_ST_01060101",
+            "value": "Avant la grotte I"
+        },
+        {
+            "key": "QE_ST_01060102",
+            "value": "Avant la grotte II"
+        },
+        {
+            "key": "QE_ST_01060103",
+            "value": "Wezett"
+        },
+        {
+            "key": "QE_ST_01060104",
+            "value": "Je me battrai I"
+        },
+        {
+            "key": "QE_ST_01060105",
+            "value": "Je me battrai II"
+        },
+        {
+            "key": "QE_ST_01060106",
+            "value": "Rends-toi"
+        },
+        {
+            "key": "QE_ST_01060107",
+            "value": "Liens brisés"
+        },
+        {
+            "key": "QE_ST_01060108",
+            "value": "Cependant I"
+        },
+        {
+            "key": "QE_ST_01060109",
+            "value": "Cependant II"
+        },
+        {
+            "key": "QE_ST_01060110",
+            "value": "Les paroles d'une lame"
+        },
+        {
+            "key": "QE_ST_01060201",
+            "value": "Loups affamés"
+        },
+        {
+            "key": "QE_ST_01060202",
+            "value": "Graziella I"
+        },
+        {
+            "key": "QE_ST_01060203",
+            "value": "Graziella II"
+        },
+        {
+            "key": "QE_ST_01060204",
+            "value": "Capituler"
+        },
+        {
+            "key": "QE_ST_01060205",
+            "value": "Le chien de Rundall"
+        },
+        {
+            "key": "QE_ST_01060206",
+            "value": "Doutes"
+        },
+        {
+            "key": "QE_ST_01060207",
+            "value": "Château lointain du Loup blanc I"
+        },
+        {
+            "key": "QE_ST_01060208",
+            "value": "Château lointain du Loup blanc II"
+        },
+        {
+            "key": "QE_ST_01060209",
+            "value": "S'emparer du trône I"
+        },
+        {
+            "key": "QE_ST_01060210",
+            "value": "S'emparer du trône II"
+        },
+        {
+            "key": "QE_ST_01060301",
+            "value": "Que les Cristaux nous guident"
+        },
+        {
+            "key": "QE_ST_01060302",
+            "value": "Au Château de Leonis"
+        },
+        {
+            "key": "QE_ST_01060303",
+            "value": "Amour de la vie"
+        },
+        {
+            "key": "QE_ST_01060304",
+            "value": "La roue tourne"
+        },
+        {
+            "key": "QE_ST_01060305",
+            "value": "« Solidus », en avant !"
+        },
+        {
+            "key": "QE_ST_01060306",
+            "value": "Percée"
+        },
+        {
+            "key": "QE_ST_01060307",
+            "value": "Quelque chose dans le carrosse I"
+        },
+        {
+            "key": "QE_ST_01060308",
+            "value": "Quelque chose dans le carrosse II"
+        },
+        {
+            "key": "QE_ST_01060309",
+            "value": "Je vous attends"
+        },
+        {
+            "key": "QE_ST_01060310",
+            "value": "Brouhaha d'étoiles"
+        },
+        {
+            "key": "QE_ST_01070101",
+            "value": "Khory, roi de Wezett"
+        },
+        {
+            "key": "QE_ST_01070102",
+            "value": "Pouvoir mis à l'épreuve I"
+        },
+        {
+            "key": "QE_ST_01070103",
+            "value": "Pouvoir mis à l'épreuve II"
+        },
+        {
+            "key": "QE_ST_01070104",
+            "value": "Pour nos camarades"
+        },
+        {
+            "key": "QE_ST_01070105",
+            "value": "Le secret de Leonis"
+        },
+        {
+            "key": "QE_ST_01070106",
+            "value": "La caverne"
+        },
+        {
+            "key": "QE_ST_01070107",
+            "value": "« Rubeus » I"
+        },
+        {
+            "key": "QE_ST_01070108",
+            "value": "« Rubeus » II"
+        },
+        {
+            "key": "QE_ST_01070109",
+            "value": "Terres enneigées"
+        },
+        {
+            "key": "QE_ST_01070110",
+            "value": "La forteresse"
+        },
+        {
+            "key": "QE_ST_01070201",
+            "value": "Un bref repos"
+        },
+        {
+            "key": "QE_ST_01070202",
+            "value": "Traces d'un poursuivant"
+        },
+        {
+            "key": "QE_ST_01070203",
+            "value": "Tout sauf des alliés"
+        },
+        {
+            "key": "QE_ST_01070204",
+            "value": "Vers Wezett"
+        },
+        {
+            "key": "QE_ST_01070205",
+            "value": "Prendre la forteresse I"
+        },
+        {
+            "key": "QE_ST_01070206",
+            "value": "Prendre la forteresse II"
+        },
+        {
+            "key": "QE_ST_01070207",
+            "value": "Arrivée d'Oldoa"
+        },
+        {
+            "key": "QE_ST_01070208",
+            "value": "Prendre la forteresse III"
+        },
+        {
+            "key": "QE_ST_01070209",
+            "value": "Prendre la forteresse IV"
+        },
+        {
+            "key": "QE_ST_01070210",
+            "value": "Appareil de communication<br>longue distance"
+        },
+        {
+            "key": "QE_ST_01070301",
+            "value": "Attaque surprise I"
+        },
+        {
+            "key": "QE_ST_01070302",
+            "value": "Attaque surprise II"
+        },
+        {
+            "key": "QE_ST_01070303",
+            "value": "Piège des sauvages"
+        },
+        {
+            "key": "QE_ST_01070304",
+            "value": "Une décision s'impose I"
+        },
+        {
+            "key": "QE_ST_01070305",
+            "value": "Une décision s'impose II"
+        },
+        {
+            "key": "QE_ST_01070306",
+            "value": "Révélation"
+        },
+        {
+            "key": "QE_ST_01070307",
+            "value": "Métal contre métal"
+        },
+        {
+            "key": "QE_ST_01070308",
+            "value": "« Solidus », repli !"
+        },
+        {
+            "key": "QE_ST_01070309",
+            "value": "Aie foi en tes frères d'armes I"
+        },
+        {
+            "key": "QE_ST_01070310",
+            "value": "Aie foi en tes frères d'armes II"
+        },
+        {
+            "key": "QE_ST_01080101",
+            "value": "Laisser une trace I"
+        },
+        {
+            "key": "QE_ST_01080102",
+            "value": "Laisser une trace II"
+        },
+        {
+            "key": "QE_ST_01080103",
+            "value": "Le roi de Hourne en direction du château de Leonis"
+        },
+        {
+            "key": "QE_ST_01080104",
+            "value": "Repli de Sadali"
+        },
+        {
+            "key": "QE_ST_01080105",
+            "value": "Reprendre la forteresse"
+        },
+        {
+            "key": "QE_ST_01080106",
+            "value": "Renforts de Fennes I"
+        },
+        {
+            "key": "QE_ST_01080107",
+            "value": "Renforts de Fennes II"
+        },
+        {
+            "key": "QE_ST_01080108",
+            "value": "« Fortem » et « Caelum » I"
+        },
+        {
+            "key": "QE_ST_01080109",
+            "value": "« Fortem » et « Caelum » II"
+        },
+        {
+            "key": "QE_ST_01080110",
+            "value": "Muraga, roi de Fennes"
+        },
+        {
+            "key": "QE_ST_01080201",
+            "value": "Retour triomphant"
+        },
+        {
+            "key": "QE_ST_01080202",
+            "value": "Le plan de Viktora"
+        },
+        {
+            "key": "QE_ST_01080203",
+            "value": "Plaines enneigées"
+        },
+        {
+            "key": "QE_ST_01080204",
+            "value": "Faire pencher la balance"
+        },
+        {
+            "key": "QE_ST_01080205",
+            "value": "La colère de Khory I"
+        },
+        {
+            "key": "QE_ST_01080206",
+            "value": "La colère de Khory II"
+        },
+        {
+            "key": "QE_ST_01080207",
+            "value": "Pour mon ami"
+        },
+        {
+            "key": "QE_ST_01080208",
+            "value": "Pour rien"
+        },
+        {
+            "key": "QE_ST_01080209",
+            "value": "Vers Leonis"
+        },
+        {
+            "key": "QE_ST_01080210",
+            "value": "La fierté de Hourne"
+        },
+        {
+            "key": "QE_ST_01080301",
+            "value": "Le rêve de Lilyth"
+        },
+        {
+            "key": "QE_ST_01080302",
+            "value": "Les troupes de Leonis se dirigent vers le Sud"
+        },
+        {
+            "key": "QE_ST_01080303",
+            "value": "Pour l'instant I"
+        },
+        {
+            "key": "QE_ST_01080304",
+            "value": "Pour l'instant II"
+        },
+        {
+            "key": "QE_ST_01080305",
+            "value": "Insurrection imminente"
+        },
+        {
+            "key": "QE_ST_01080306",
+            "value": "Le Diable rouge"
+        },
+        {
+            "key": "QE_ST_01080307",
+            "value": "Association"
+        },
+        {
+            "key": "QE_ST_01080308",
+            "value": "Douteux personnage I"
+        },
+        {
+            "key": "QE_ST_01080309",
+            "value": "Douteux personnage II"
+        },
+        {
+            "key": "QE_ST_01080310",
+            "value": "Comptez sur moi"
+        },
+        {
+            "key": "QE_ST_01090101",
+            "value": "Représentant de « Fortem »"
+        },
+        {
+            "key": "QE_ST_01090102",
+            "value": "Retour à la maison I"
+        },
+        {
+            "key": "QE_ST_01090103",
+            "value": "Retour à la maison II"
+        },
+        {
+            "key": "QE_ST_01090104",
+            "value": "Avant l'aurore I"
+        },
+        {
+            "key": "QE_ST_01090105",
+            "value": "Avant l'aurore II"
+        },
+        {
+            "key": "QE_ST_01090106",
+            "value": "Leurre"
+        },
+        {
+            "key": "QE_ST_01090107",
+            "value": "Les inquiétudes d'un roi sage"
+        },
+        {
+            "key": "QE_ST_01090108",
+            "value": "Rébellion I"
+        },
+        {
+            "key": "QE_ST_01090109",
+            "value": "Rébellion II"
+        },
+        {
+            "key": "QE_ST_01090110",
+            "value": "Un certain malaise"
+        },
+        {
+            "key": "QE_ST_01090201",
+            "value": "Stratège emprisonné"
+        },
+        {
+            "key": "QE_ST_01090202",
+            "value": "Vers le château de Wezett"
+        },
+        {
+            "key": "QE_ST_01090203",
+            "value": "Un piège ? Ou bien…"
+        },
+        {
+            "key": "QE_ST_01090204",
+            "value": "Une flèche démoniaque"
+        },
+        {
+            "key": "QE_ST_01090205",
+            "value": "La famille"
+        },
+        {
+            "key": "QE_ST_01090206",
+            "value": "Avertissement"
+        },
+        {
+            "key": "QE_ST_01090207",
+            "value": "Vers le sud I"
+        },
+        {
+            "key": "QE_ST_01090208",
+            "value": "Village en ruine"
+        },
+        {
+            "key": "QE_ST_01090209",
+            "value": "Vers le sud II"
+        },
+        {
+            "key": "QE_ST_01090210",
+            "value": "Le Prince sur son étalon blanc"
+        },
+        {
+            "key": "QE_ST_01090301",
+            "value": "Détermination absolue"
+        },
+        {
+            "key": "QE_ST_01090302",
+            "value": "Avancée"
+        },
+        {
+            "key": "QE_ST_01090303",
+            "value": "Vistral"
+        },
+        {
+            "key": "QE_ST_01090304",
+            "value": "Manigances"
+        },
+        {
+            "key": "QE_ST_01090305",
+            "value": "À notre tour de briller"
+        },
+        {
+            "key": "QE_ST_01090306",
+            "value": "« Spirare » I"
+        },
+        {
+            "key": "QE_ST_01090307",
+            "value": "« Spirare » II"
+        },
+        {
+            "key": "QE_ST_01090308",
+            "value": "Alerte immédiate I"
+        },
+        {
+            "key": "QE_ST_01090309",
+            "value": "Alerte immédiate II"
+        },
+        {
+            "key": "QE_ST_01090310",
+            "value": "Par tous les moyens nécessaires"
+        },
+        {
+            "key": "QE_ST_01100101",
+            "value": "Les cristaux"
+        },
+        {
+            "key": "QE_ST_01100102",
+            "value": "Damer le pion"
+        },
+        {
+            "key": "QE_ST_01100103",
+            "value": "Interdiction de fuir"
+        },
+        {
+            "key": "QE_ST_01100104",
+            "value": "La destruction de « Rubeus » I"
+        },
+        {
+            "key": "QE_ST_01100105",
+            "value": "La destruction de « Rubeus » II"
+        },
+        {
+            "key": "QE_ST_01100106",
+            "value": "Je n'en peux plus"
+        },
+        {
+            "key": "QE_ST_01100107",
+            "value": "Nuages sombres"
+        },
+        {
+            "key": "QE_ST_01100108",
+            "value": "Au Château de Leonis I"
+        },
+        {
+            "key": "QE_ST_01100109",
+            "value": "Au Château de Leonis II"
+        },
+        {
+            "key": "QE_ST_01100110",
+            "value": "Venir en ami"
+        },
+        {
+            "key": "QE_ST_01100201",
+            "value": "Contre-attaque"
+        },
+        {
+            "key": "QE_ST_01100202",
+            "value": "Jusqu'à leur libération I"
+        },
+        {
+            "key": "QE_ST_01100203",
+            "value": "Jusqu'à leur libération II"
+        },
+        {
+            "key": "QE_ST_01100204",
+            "value": "Les agissements d'Eldo"
+        },
+        {
+            "key": "QE_ST_01100205",
+            "value": "À la recherche de Machalie I"
+        },
+        {
+            "key": "QE_ST_01100206",
+            "value": "À la recherche de Machalie II"
+        },
+        {
+            "key": "QE_ST_01100207",
+            "value": "À la recherche de Machalie III"
+        },
+        {
+            "key": "QE_ST_01100208",
+            "value": "Séparation I"
+        },
+        {
+            "key": "QE_ST_01100209",
+            "value": "Séparation II"
+        },
+        {
+            "key": "QE_ST_01100210",
+            "value": "Confiance inébranlable"
+        },
+        {
+            "key": "QE_ST_01100301",
+            "value": "Choix paternel"
+        },
+        {
+            "key": "QE_ST_01100302",
+            "value": "Passage secret I"
+        },
+        {
+            "key": "QE_ST_01100303",
+            "value": "Passage secret II"
+        },
+        {
+            "key": "QE_ST_01100304",
+            "value": "Conditions"
+        },
+        {
+            "key": "QE_ST_01100305",
+            "value": "À toi de décider"
+        },
+        {
+            "key": "QE_ST_01100306",
+            "value": "Haine et déshonneur"
+        },
+        {
+            "key": "QE_ST_01100307",
+            "value": "Dario Hourne"
+        },
+        {
+            "key": "QE_ST_01100308",
+            "value": "Appréhension"
+        },
+        {
+            "key": "QE_ST_01100309",
+            "value": "Passage secret III"
+        },
+        {
+            "key": "QE_ST_01100310",
+            "value": "Destin"
+        },
+        {
+            "key": "QE_ST_01110101",
+            "value": "Réponse silencieuse"
+        },
+        {
+            "key": "QE_ST_01110102",
+            "value": "Je vaincrai I"
+        },
+        {
+            "key": "QE_ST_01110103",
+            "value": "Je vaincrai II"
+        },
+        {
+            "key": "QE_ST_01110104",
+            "value": "Tout est encore possible"
+        },
+        {
+            "key": "QE_ST_01110105",
+            "value": "Assaut I"
+        },
+        {
+            "key": "QE_ST_01110106",
+            "value": "Assaut II"
+        },
+        {
+            "key": "QE_ST_01110107",
+            "value": "Le dernier tour"
+        },
+        {
+            "key": "QE_ST_01110108",
+            "value": "Preuve I"
+        },
+        {
+            "key": "QE_ST_01110109",
+            "value": "Preuve II"
+        },
+        {
+            "key": "QE_ST_01110110",
+            "value": "Révolte"
+        },
+        {
+            "key": "QE_ST_01110201",
+            "value": "Je veux vivre I"
+        },
+        {
+            "key": "QE_ST_01110202",
+            "value": "Je veux vivre II"
+        },
+        {
+            "key": "QE_ST_01110203",
+            "value": "Je veux vivre III"
+        },
+        {
+            "key": "QE_ST_01110204",
+            "value": "Vérité"
+        },
+        {
+            "key": "QE_ST_01110205",
+            "value": "Les insoumis"
+        },
+        {
+            "key": "QE_ST_01110206",
+            "value": "Recherche I"
+        },
+        {
+            "key": "QE_ST_01110207",
+            "value": "Recherche II"
+        },
+        {
+            "key": "QE_ST_01110208",
+            "value": "Donjon"
+        },
+        {
+            "key": "QE_ST_01110209",
+            "value": "Renforts"
+        },
+        {
+            "key": "QE_ST_01110210",
+            "value": "Le pouvoir de l'amour"
+        },
+        {
+            "key": "QE_ST_01110301",
+            "value": "Comme une bande de chiens galeux I"
+        },
+        {
+            "key": "QE_ST_01110302",
+            "value": "Comme une bande de chiens galeux II"
+        },
+        {
+            "key": "QE_ST_01110303",
+            "value": "Il est pas croyable !"
+        },
+        {
+            "key": "QE_ST_01110304",
+            "value": "Les ennemis de nos ennemis I"
+        },
+        {
+            "key": "QE_ST_01110305",
+            "value": "Les ennemis de nos ennemis II"
+        },
+        {
+            "key": "QE_ST_01110306",
+            "value": "Trois résolutions meurtrières"
+        },
+        {
+            "key": "QE_ST_01110307",
+            "value": "Je tuerai n'importe qui I"
+        },
+        {
+            "key": "QE_ST_01110308",
+            "value": "Je tuerai n'importe qui II"
+        },
+        {
+            "key": "QE_ST_01110309",
+            "value": "Si je n'avais pas changé"
+        },
+        {
+            "key": "QE_ST_01110310",
+            "value": "Aucun doute"
+        },
+        {
+            "key": "QE_ST_01120101",
+            "value": "Laisser tomber"
+        },
+        {
+            "key": "QE_ST_01120102",
+            "value": "Pour ceux que je dois protéger I"
+        },
+        {
+            "key": "QE_ST_01120103",
+            "value": "Pour ceux que je dois protéger II"
+        },
+        {
+            "key": "QE_ST_01120104",
+            "value": "L'occasion idéale"
+        },
+        {
+            "key": "QE_ST_01120105",
+            "value": "Abandon"
+        },
+        {
+            "key": "QE_ST_01120106",
+            "value": "Vagues sentiments"
+        },
+        {
+            "key": "QE_ST_01120107",
+            "value": "Forces de nouveau réunies I"
+        },
+        {
+            "key": "QE_ST_01120108",
+            "value": "Forces de nouveau réunies II"
+        },
+        {
+            "key": "QE_ST_01120109",
+            "value": "Allez, dépêche-toi !"
+        },
+        {
+            "key": "QE_ST_01120110",
+            "value": "Je ne bougerai pas d'un pouce non plus"
+        },
+        {
+            "key": "QE_HA_LW_ZZAN",
+            "value": "Quête de fragments : Zazan"
+        },
+        {
+            "key": "QE_HA_LW_RART",
+            "value": "Quête de fragments : Learte"
+        },
+        {
+            "key": "QE_HA_LW_MICE",
+            "value": "Quête de fragments : Michaé"
+        },
+        {
+            "key": "QE_HA_LW_MIIA",
+            "value": "Quête de fragments : Mia"
+        },
+        {
+            "key": "QE_HA_LW_BYLO",
+            "value": "Quête de fragments : Beilo"
+        },
+        {
+            "key": "QE_HA_LW_RYER",
+            "value": "Quête de fragments : Lillyla"
+        },
+        {
+            "key": "QE_HA_LW_SCIA",
+            "value": "Quête de fragments : Sosha"
+        },
+        {
+            "key": "QE_HA_LW_VRID",
+            "value": "Quête de fragments : Valaïde"
+        },
+        {
+            "key": "QE_HA_LW_NAIA",
+            "value": "Quête de fragments : Naiah"
+        },
+        {
+            "key": "QE_HA_LW_SRJS",
+            "value": "Quête de fragments : Serjes"
+        },
+        {
+            "key": "QE_HA_LW_UNII",
+            "value": "Quête de fragments : Yuni"
+        },
+        {
+            "key": "QE_HA_LW_SEVR",
+            "value": "Quête de fragments : Sévéro"
+        },
+        {
+            "key": "QE_HA_LW_VADM",
+            "value": "Quête de fragments : Vadim"
+        },
+        {
+            "key": "QE_HA_LW_MURM",
+            "value": "Quête de fragments : « Murmure »"
+        },
+        {
+            "key": "QE_HA_LW_PHBE",
+            "value": "Quête de fragments : Phœbe"
+        },
+        {
+            "key": "QE_HA_LW_MONT",
+            "value": "Quête de fragments : Mont Leonis"
+        },
+        {
+            "key": "QE_HA_LW_HLNA",
+            "value": "Quête de fragments : Helena Leonis"
+        },
+        {
+            "key": "QE_HA_LW_LILS",
+            "value": "Quête de fragments : Lilyth"
+        },
+        {
+            "key": "QE_HA_LW_RAMD",
+            "value": "Quête de fragments : Ramada"
+        },
+        {
+            "key": "QE_HA_LW_OOOO",
+            "value": "Quête de fragments : Owe"
+        },
+        {
+            "key": "QE_HA_LW_LRNZ",
+            "value": "Quête de fragments : Lorenzo"
+        },
+        {
+            "key": "QE_HA_LW_RIRY",
+            "value": "Quête de fragments : Rairyuu"
+        },
+        {
+            "key": "QE_HA_LW_VSTR",
+            "value": "Quête de fragments : Vistral"
+        },
+        {
+            "key": "QE_HA_LW_CLEY",
+            "value": "Quête de fragments : Khory Wezett"
+        },
+        {
+            "key": "QE_HA_LW_KADI",
+            "value": "Quête de fragments : Cadia"
+        },
+        {
+            "key": "QE_HA_LW_MRLK",
+            "value": "Quête de fragments : Marie-Luke"
+        },
+        {
+            "key": "QE_HA_LW_MGRT",
+            "value": "Quête de fragments : Margritte"
+        },
+        {
+            "key": "QE_HA_LW_PRAY",
+            "value": "Quête de fragments : « Grâce »"
+        },
+        {
+            "key": "QE_HA_LW_FINA",
+            "value": "Quête de fragments : Fina"
+        },
+        {
+            "key": "QE_HA_LW_SZRT",
+            "value": "Quête de fragments : Schuzelt"
+        },
+        {
+            "key": "QE_HA_LW_SDLX",
+            "value": "Quête de fragments : Shadowlynx"
+        },
+        {
+            "key": "QE_HA_LW_NASR",
+            "value": "Quête de fragments : Nasha"
+        },
+        {
+            "key": "QE_HA_LW_STRN",
+            "value": "Quête de fragments : Sterne Leonis"
+        },
+        {
+            "key": "QE_HA_LW_ELDE",
+            "value": "Quête de fragments : Eldo Leonis"
+        },
+        {
+            "key": "QE_HA_LW_ROBB",
+            "value": "Quête de fragments : Rob Hourne"
+        },
+        {
+            "key": "QE_HA_LW_ENBT",
+            "value": "Quête de fragments : Engelbert"
+        },
+        {
+            "key": "QE_HA_LW_ZIZA",
+            "value": "Quête de fragments : Xiza"
+        },
+        {
+            "key": "QE_HA_LW_AILN",
+            "value": "Quête de fragments : Aileen"
+        },
+        {
+            "key": "QE_HA_LW_MDNA",
+            "value": "Quête de fragments : Mediena"
+        },
+        {
+            "key": "QE_HA_LW_AYKA",
+            "value": "Quête de fragments : Ayaka"
+        },
+        {
+            "key": "QE_HA_LW_MACR",
+            "value": "Quête de fragments : Machalie Hourne"
+        },
+        {
+            "key": "QE_HA_LW_GLMS",
+            "value": "Quête de fragments : Gilgamesh"
+        },
+        {
+            "key": "QE_HA_LW_FDRC",
+            "value": "Quête de fragments : Frederika"
+        },
+        {
+            "key": "QE_HA_LW_YERM",
+            "value": "Quête de fragments : Yelma"
+        },
+        {
+            "key": "QE_HA_LW_KTON",
+            "value": "Quête de fragments : Kitone"
+        },
+        {
+            "key": "QE_HA_LW_WHIS",
+            "value": "Quête de fragments : « Chuchote »"
+        },
+        {
+            "key": "QE_HA_LW_MRND",
+            "value": "Quête de fragments : Miranda"
+        },
+        {
+            "key": "QE_HA_LW_DRND",
+            "value": "Quête de fragments : Dorando"
+        },
+        {
+            "key": "QE_HA_LW_LUCA",
+            "value": "Quête de fragments : Lu'Cia"
+        },
+        {
+            "key": "QE_HA_LW_ADLD",
+            "value": "Quête de fragments : Adelard"
+        },
+        {
+            "key": "QE_HA_LW_THLA",
+            "value": "Quête de fragments : Saliah"
+        },
+        {
+            "key": "QE_HA_LW_VKTR",
+            "value": "Quête de fragments : Viktora"
+        },
+        {
+            "key": "QE_HA_LW_RAIN",
+            "value": "Quête de fragments : Rain"
+        },
+        {
+            "key": "QE_HA_LW_DRIO",
+            "value": "Quête de fragments : Dario Hourne"
+        },
+        {
+            "key": "QE_HA_LW_VNLA",
+            "value": "Quête de fragments : Vinera Fennes"
+        },
+        {
+            "key": "QE_HA_LW_SIMR",
+            "value": "Quête de fragments : Seymore"
+        },
+        {
+            "key": "QE_HA_LW_QILF",
+            "value": "Quête de fragments : Kilphe"
+        },
+        {
+            "key": "QE_HA_LW_ORDR",
+            "value": "Quête de fragments : Oldoa"
+        },
+        {
+            "key": "QE_HA_LW_LVES",
+            "value": "Quête de fragments : Raviesse"
+        },
+        {
+            "key": "QE_HA_LW_IRDL",
+            "value": "Quête des fragments : Ildyra"
+        },
+        {
+            "key": "QE_HA_LW_STRN_01",
+            "value": "Quête de fragments : Sterne (Chevalier déchu)"
+        },
+        {
+            "key": "QE_HA_LW_LSWL",
+            "value": "Quête de fragments : Lasswell"
+        },
+        {
+            "key": "QE_HA_LW_GRSR",
+            "value": "Quête de fragments : Graziella Wezett"
+        },
+        {
+            "key": "QE_HA_LW_RRIR",
+            "value": "Quête de fragments : Loreila"
+        },
+        {
+            "key": "QE_HA_LW_SCAL",
+            "value": "Quête de fragments : Skahal"
+        },
+        {
+            "key": "QE_HA_LW_MRAL",
+            "value": "Quête de fragments : Mariale"
+        },
+        {
+            "key": "QE_HA_LW_HWLT",
+            "value": "Quête de fragments : Howlet"
+        },
+        {
+            "key": "QE_HA_LW_CHEL",
+            "value": "Quête de fragments : Chel"
+        },
+        {
+            "key": "QE_HA_LW_LATH",
+            "value": "Quête de fragments : Luartha"
+        },
+        {
+            "key": "QE_HA_LW_TITU",
+            "value": "Quête de fragments : Thytas"
+        },
+        {
+            "key": "QE_HA_LW_NIVL",
+            "value": "Quête de fragments : Niv'Lu"
+        },
+        {
+            "key": "QE_HA_LW_RVAL",
+            "value": "Quête de fragments : Liviale"
+        },
+        {
+            "key": "QE_HA_LW_SAKR",
+            "value": "Quête de fragments : Sakura"
+        },
+        {
+            "key": "QE_HA_LW_ALIM",
+            "value": "Quête de fragments : Alym"
+        },
+        {
+            "key": "QE_HA_LW_RARD",
+            "value": "Quête de fragments : Rhaldor"
+        },
+        {
+            "key": "QE_HA_LW_ELSI",
+            "value": "Quête de fragments : Elzandra"
+        },
+        {
+            "key": "QE_CH_LW_ZZAN",
+            "value": "Zazan"
+        },
+        {
+            "key": "QE_CH_LW_RART",
+            "value": "Learte"
+        },
+        {
+            "key": "QE_CH_LW_MICE",
+            "value": "Michaé"
+        },
+        {
+            "key": "QE_CH_LW_MIIA",
+            "value": "Mia"
+        },
+        {
+            "key": "QE_CH_LW_BYLO",
+            "value": "Beilo"
+        },
+        {
+            "key": "QE_CH_LW_RYER",
+            "value": "Lillyla"
+        },
+        {
+            "key": "QE_CH_LW_SCIA",
+            "value": "Sosha"
+        },
+        {
+            "key": "QE_CH_LW_VRID",
+            "value": "Valaïde"
+        },
+        {
+            "key": "QE_CH_LW_NAIA",
+            "value": "Naiah"
+        },
+        {
+            "key": "QE_CH_LW_SRJS",
+            "value": "Serjes"
+        },
+        {
+            "key": "QE_CH_LW_UNII",
+            "value": "Yuni"
+        },
+        {
+            "key": "QE_CH_LW_SEVR",
+            "value": "Sévéro"
+        },
+        {
+            "key": "QE_CH_LW_VADM",
+            "value": "Vadim"
+        },
+        {
+            "key": "QE_CH_LW_MURM",
+            "value": "« Murmure »"
+        },
+        {
+            "key": "QE_CH_LW_PHBE",
+            "value": "Phœbe"
+        },
+        {
+            "key": "QE_CH_LW_MONT",
+            "value": "Mont Leonis"
+        },
+        {
+            "key": "QE_CH_LW_HLNA",
+            "value": "Helena Leonis"
+        },
+        {
+            "key": "QE_CH_LW_LILS",
+            "value": "Lilyth"
+        },
+        {
+            "key": "QE_CH_LW_RAMD",
+            "value": "Ramada"
+        },
+        {
+            "key": "QE_CH_LW_OOOO",
+            "value": "Owe"
+        },
+        {
+            "key": "QE_CH_LW_LRNZ",
+            "value": "Lorenzo"
+        },
+        {
+            "key": "QE_CH_LW_RIRY",
+            "value": "Rairyuu"
+        },
+        {
+            "key": "QE_CH_LW_VSTR",
+            "value": "Vistral"
+        },
+        {
+            "key": "QE_CH_LW_CLEY",
+            "value": "Khory Wezett"
+        },
+        {
+            "key": "QE_CH_LW_KADI",
+            "value": "Cadia"
+        },
+        {
+            "key": "QE_CH_LW_MRLK",
+            "value": "Marie-Luke"
+        },
+        {
+            "key": "QE_CH_LW_MGRT",
+            "value": "Margritte"
+        },
+        {
+            "key": "QE_CH_LW_PRAY",
+            "value": "« Grâce »"
+        },
+        {
+            "key": "QE_CH_LW_SZRT",
+            "value": "Schuzelt"
+        },
+        {
+            "key": "QE_CH_LW_FINA",
+            "value": "Fina"
+        },
+        {
+            "key": "QE_CH_LW_SDLX",
+            "value": "Shadowlynx"
+        },
+        {
+            "key": "QE_CH_LW_NASR",
+            "value": "Nasha"
+        },
+        {
+            "key": "QE_CH_LW_ETRE",
+            "value": "Éthéa"
+        },
+        {
+            "key": "QE_CH_LW_DRND",
+            "value": "Dorando"
+        },
+        {
+            "key": "QE_CH_LW_STRN",
+            "value": "Sterne Leonis"
+        },
+        {
+            "key": "QE_CH_LW_ELDE",
+            "value": "Eldo Leonis"
+        },
+        {
+            "key": "QE_CH_LW_ROBB",
+            "value": "Rob Hourne"
+        },
+        {
+            "key": "QE_CH_LW_ENBT",
+            "value": "Engelbert"
+        },
+        {
+            "key": "QE_CH_LW_ZIZA",
+            "value": "Xiza"
+        },
+        {
+            "key": "QE_CH_LW_AILN",
+            "value": "Aileen"
+        },
+        {
+            "key": "QE_CH_LW_MDNA",
+            "value": "Mediena"
+        },
+        {
+            "key": "QE_CH_LW_AYKA",
+            "value": "Ayaka"
+        },
+        {
+            "key": "QE_CH_LW_MACR",
+            "value": "Machalie Hourne"
+        },
+        {
+            "key": "QE_CH_LW_GLMS",
+            "value": "Gilgamesh"
+        },
+        {
+            "key": "QE_CH_LW_GLMS2",
+            "value": "Gilgamesh (2)"
+        },
+        {
+            "key": "QE_CH_LW_FDRC",
+            "value": "Frederika"
+        },
+        {
+            "key": "QE_CH_LW_YERM",
+            "value": "Yelma"
+        },
+        {
+            "key": "QE_CH_LW_WHIS",
+            "value": "« Chuchote »"
+        },
+        {
+            "key": "QE_CH_LW_KTON",
+            "value": "Kitone"
+        },
+        {
+            "key": "QE_CH_LW_MRND",
+            "value": "Miranda"
+        },
+        {
+            "key": "QE_CH_LW_LUCA",
+            "value": "Lu'Cia"
+        },
+        {
+            "key": "QE_CH_LW_ADLD",
+            "value": "Adelard"
+        },
+        {
+            "key": "QE_CH_LW_THLA",
+            "value": "Saliah"
+        },
+        {
+            "key": "QE_CH_LW_VKTR",
+            "value": "Viktora"
+        },
+        {
+            "key": "QE_CH_GL_LW_FRVA",
+            "value": "Fryevia"
+        },
+        {
+            "key": "QE_CH_LW_RAIN",
+            "value": "Rain"
+        },
+        {
+            "key": "QE_CH_LW_DRIO",
+            "value": "Dario Hourne"
+        },
+        {
+            "key": "QE_CH_LW_VNLA",
+            "value": "Vinera Fennes"
+        },
+        {
+            "key": "QE_CH_LW_TREL",
+            "value": "Tyrrell"
+        },
+        {
+            "key": "QE_CH_LW_SIMR",
+            "value": "Seymore"
+        },
+        {
+            "key": "QE_CH_LW_QILF",
+            "value": "Kilphe"
+        },
+        {
+            "key": "QE_CH_LW_ORDR",
+            "value": "Oldoa"
+        },
+        {
+            "key": "QE_CH_LW_LVES",
+            "value": "Raviesse"
+        },
+        {
+            "key": "QE_CH_FF14_YSTL",
+            "value": "Y'shtola"
+        },
+        {
+            "key": "QE_CH_FF14_TNCR",
+            "value": "Thancred"
+        },
+        {
+            "key": "QE_CH_FF14_TNCR2",
+            "value": "Thancred (2)"
+        },
+        {
+            "key": "QE_CH_FFT_RAMZ",
+            "value": "Ramza"
+        },
+        {
+            "key": "QE_CH_FFT_GFGR",
+            "value": "Gaffgarion"
+        },
+        {
+            "key": "QE_CH_FFT_ORND",
+            "value": "Orlandeau"
+        },
+        {
+            "key": "QE_CH_FF1_WROL",
+            "value": "Guerrier de la lumière"
+        },
+        {
+            "key": "QE_CH_FFT_MSTD",
+            "value": "Mustadio"
+        },
+        {
+            "key": "QE_CH_FFT_AGRA",
+            "value": "Agrias"
+        },
+        {
+            "key": "QE_CH_FFT_DELT",
+            "value": "Delita"
+        },
+        {
+            "key": "QE_CH_LW_IRDL",
+            "value": "Ildyra"
+        },
+        {
+            "key": "QE_CH_LW_STRN_01",
+            "value": "Sterne (Chevalier déchu)"
+        },
+        {
+            "key": "QE_CH_LW_LSWL",
+            "value": "Lasswell"
+        },
+        {
+            "key": "QE_CH_LW_GRSR",
+            "value": "Graziella Wezett"
+        },
+        {
+            "key": "QE_CH_LW_RRIR",
+            "value": "Loreila"
+        },
+        {
+            "key": "QE_CH_LW_RYER_01",
+            "value": "Lillyla (Halloween)"
+        },
+        {
+            "key": "QE_CH_LW_RIRY_01",
+            "value": "Rairyuu (Halloween)"
+        },
+        {
+            "key": "QE_CH_LW_SCAL",
+            "value": "Skahal"
+        },
+        {
+            "key": "QE_CH_LW_MRAL",
+            "value": "Mariale"
+        },
+        {
+            "key": "QE_CH_LW_HWLT",
+            "value": "Howlet"
+        },
+        {
+            "key": "QE_CH_LW_CHEL",
+            "value": "Chel"
+        },
+        {
+            "key": "QE_CH_FF4_CECL",
+            "value": "Cécil"
+        },
+        {
+            "key": "QE_CH_FF4_KAIN",
+            "value": "Kaïn"
+        },
+        {
+            "key": "QE_CH_FF4_ROSA",
+            "value": "Rosa"
+        },
+        {
+            "key": "QE_CH_LW_RAMD_01",
+            "value": "Ramada (Hiver)"
+        },
+        {
+            "key": "QE_CH_GL_LW_RAMD_01_2",
+            "value": "Ramada (Hiver)"
+        },
+        {
+            "key": "QE_CH_LW_MA_01",
+            "value": "Machalie (Hiver)"
+        },
+        {
+            "key": "QE_CH_GL_LW_MA_01_2",
+            "value": "Machalie (Hiver)"
+        },
+        {
+            "key": "QE_CH_LW_LATH",
+            "value": "Luartha"
+        },
+        {
+            "key": "QE_CH_LW_TITU",
+            "value": "Thytas"
+        },
+        {
+            "key": "QE_CH_GL_LW_DEAN",
+            "value": "Duane"
+        },
+        {
+            "key": "QE_CH_LW_NIVL",
+            "value": "Niv'Lu"
+        },
+        {
+            "key": "QE_CH_LW_RVAL",
+            "value": "Liviale"
+        },
+        {
+            "key": "QE_CH_LW_SAKR",
+            "value": "Sakura"
+        },
+        {
+            "key": "QE_CH_LW_ALIM",
+            "value": "Alym"
+        },
+        {
+            "key": "QE_CH_LW_RARD",
+            "value": "Rhaldor"
+        },
+        {
+            "key": "QE_CH_LW_ELSI",
+            "value": "Elzandra"
+        },
+        {
+            "key": "QE_CH_LW_VNLA_01",
+            "value": "Vinera (Hiver)"
+        },
+        {
+            "key": "QE_CH_LW_VKTR_01",
+            "value": "Viktora (Hiver)"
+        },
+        {
+            "key": "QE_EV_GL_CDOWN_01_9",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_GL_CDOWN_01_8",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_1",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_2",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_3",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_4",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_5",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_6",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_CDOWN_01_7",
+            "value": "Quête du compte à rebours"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_FIR",
+            "value": "Quête de Célébration de la Tour de porcelaine (Feu)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_ICE",
+            "value": "Quête de Célébration de la Tour de porcelaine (Glace)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_WIN",
+            "value": "Quête de Célébration de la Tour de porcelaine (Vent)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_EAR",
+            "value": "Quête de Célébration de la Tour de porcelaine (Terre)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_THU",
+            "value": "Quête de Célébration de la Tour de porcelaine (Foudre)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_WTR",
+            "value": "Quête de Célébration de la Tour de porcelaine (Eau)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_SHI",
+            "value": "Quête de Célébration de la Tour de porcelaine (Lumière)"
+        },
+        {
+            "key": "QE_EV_GL_TWCQ_DAR",
+            "value": "Quête de Célébration de la Tour de porcelaine (Ombre)"
+        },
+        {
+            "key": "QE_EV_NY2020",
+            "value": "Quête cadeau de la nouvelle année"
+        },
+        {
+            "key": "QE_PT_001_01",
+            "value": "Quête des Épreuves du Jugement [Normal] #1"
+        },
+        {
+            "key": "QE_PT_001_02",
+            "value": "Quête des Épreuves du Jugement [Normal] #2"
+        },
+        {
+            "key": "QE_PT_001_03",
+            "value": "Quête des Épreuves du Jugement [Normal] #3"
+        },
+        {
+            "key": "QE_PT_001_04",
+            "value": "Quête des Épreuves du Jugement [Normal] #4"
+        },
+        {
+            "key": "QE_PT_001_05",
+            "value": "Quête des Épreuves du Jugement [Normal] #5"
+        },
+        {
+            "key": "QE_PT_001_HA01",
+            "value": "Quête des Épreuves du Jugement [Difficile] #1"
+        },
+        {
+            "key": "QE_PT_001_HA02",
+            "value": "Quête des Épreuves du Jugement [Difficile] #2"
+        },
+        {
+            "key": "QE_PT_001_HA03",
+            "value": "Quête des Épreuves du Jugement [Difficile] #3"
+        },
+        {
+            "key": "QE_PT_001_HA04",
+            "value": "Quête des Épreuves du Jugement [Difficile] #4"
+        },
+        {
+            "key": "QE_PT_001_HA05",
+            "value": "Quête des Épreuves du Jugement [Difficile] #5"
+        },
+        {
+            "key": "QE_PT_001_BOSS_1",
+            "value": "Épreuves du Jugement [Normal]"
+        },
+        {
+            "key": "QE_PT_001_BOSS_2",
+            "value": "Épreuves du Jugement [Difficile]"
+        },
+        {
+            "key": "QE_PT_002_01",
+            "value": "Quête des Épreuves du Jugement [Normal] #1"
+        },
+        {
+            "key": "QE_PT_002_02",
+            "value": "Quête des Épreuves du Jugement [Normal] #2"
+        },
+        {
+            "key": "QE_PT_002_03",
+            "value": "Quête des Épreuves du Jugement [Normal] #3"
+        },
+        {
+            "key": "QE_PT_002_04",
+            "value": "Quête des Épreuves du Jugement [Normal] #4"
+        },
+        {
+            "key": "QE_PT_002_05",
+            "value": "Quête des Épreuves du Jugement [Normal] #5"
+        },
+        {
+            "key": "QE_PT_002_HA01",
+            "value": "Quête des Épreuves du Jugement [Difficile] #1"
+        },
+        {
+            "key": "QE_PT_002_HA02",
+            "value": "Quête des Épreuves du Jugement [Difficile] #2"
+        },
+        {
+            "key": "QE_PT_002_HA03",
+            "value": "Quête des Épreuves du Jugement [Difficile] #3"
+        },
+        {
+            "key": "QE_PT_002_HA04",
+            "value": "Quête des Épreuves du Jugement [Difficile] #4"
+        },
+        {
+            "key": "QE_PT_002_HA05",
+            "value": "Quête des Épreuves du Jugement [Difficile] #5"
+        },
+        {
+            "key": "QE_PT_002_BOSS_1",
+            "value": "Épreuves du Jugement [Normal]"
+        },
+        {
+            "key": "QE_PT_002_BOSS_2",
+            "value": "Épreuves du Jugement [Difficile]"
+        },
+        {
+            "key": "QE_EV_FF1_01",
+            "value": "Combat 1 de FINAL FANTASY I"
+        },
+        {
+            "key": "QE_EV_FF1_02",
+            "value": "Combat 2 de FINAL FANTASY I"
+        },
+        {
+            "key": "QE_EV_FF1_03",
+            "value": "Combat 3 de FINAL FANTASY I"
+        },
+        {
+            "key": "QE_EV_FF1_04",
+            "value": "Combat 4 de FINAL FANTASY I"
+        },
+        {
+            "key": "QE_EV_FF1_05",
+            "value": "Combat 5 de FINAL FANTASY I"
+        },
+        {
+            "key": "QE_EV_FF1_06",
+            "value": "Combat 1 de FINAL FANTASY I [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF1_07",
+            "value": "Combat 2 de FINAL FANTASY I [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF1_08",
+            "value": "Combat 3 de FINAL FANTASY I [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF1_09",
+            "value": "Combat 4 de FINAL FANTASY I [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF1_10",
+            "value": "Combat 5 de FINAL FANTASY I [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF1_EX",
+            "value": "FINAL FANTASY I [EX]"
+        },
+        {
+            "key": "QE_MU_EV_FF1_EX",
+            "value": "FINAL FANTASY I [EX]"
+        },
+        {
+            "key": "QE_EV_WROL_01",
+            "value": "Quête difficile limitée (Guerrier de la lumière)"
+        },
+        {
+            "key": "QE_EV_FF14_01",
+            "value": "FINAL FANTASY XIV: Shadowbringers - Combat 1"
+        },
+        {
+            "key": "QE_EV_FF14_02",
+            "value": "FINAL FANTASY XIV: Shadowbringers - Combat 2"
+        },
+        {
+            "key": "QE_EV_FF14_03",
+            "value": "FINAL FANTASY XIV: Shadowbringers - Combat 3"
+        },
+        {
+            "key": "QE_EV_FF14_04",
+            "value": "FINAL FANTASY XIV: Shadowbringers - Combat 4"
+        },
+        {
+            "key": "QE_EV_FF14_05",
+            "value": "FINAL FANTASY XIV: Shadowbringers - Combat 5"
+        },
+        {
+            "key": "QE_EV_FF14_RD01",
+            "value": "FINAL FANTASY XIV: Shadowbringers [Conquête] Niv. 1"
+        },
+        {
+            "key": "QE_EV_FF14_RD02",
+            "value": "FINAL FANTASY XIV: Shadowbringers [Conquête] Niv. 10"
+        },
+        {
+            "key": "QE_EV_FF14_EX1",
+            "value": "FINAL FANTASY XIV: Shadowbringers [EX 1]"
+        },
+        {
+            "key": "QE_EV_FF14_Ex2",
+            "value": "FINAL FANTASY XIV: Shadowbringers [EX 2]"
+        },
+        {
+            "key": "QE_EV_FF14_Ex3",
+            "value": "FINAL FANTASY XIV: Shadowbringers [EX 3]"
+        },
+        {
+            "key": "QE_MU_FF14_Ex3",
+            "value": "FINAL FANTASY XIV: Shadowbringers [EX 3]"
+        },
+        {
+            "key": "QE_EV_FFT02_01",
+            "value": "FINAL FANTASY TACTICS [Partie II] Combat 1"
+        },
+        {
+            "key": "QE_EV_FFT02_02",
+            "value": "FINAL FANTASY TACTICS [Partie II] Combat 2"
+        },
+        {
+            "key": "QE_EV_FFT02_03",
+            "value": "FINAL FANTASY TACTICS [Partie II] Combat 3"
+        },
+        {
+            "key": "QE_EV_FFT02_04",
+            "value": "FINAL FANTASY TACTICS [Partie II] Combat 4"
+        },
+        {
+            "key": "QE_EV_FFT02_05",
+            "value": "[Partie II] Ville fortifiée de Zaland"
+        },
+        {
+            "key": "QE_EV_FFT_EX_02",
+            "value": "FINAL FANTASY TACTICS<br>[Partie II] EX"
+        },
+        {
+            "key": "QE_MU_FFT_EX_02",
+            "value": "FINAL FANTASY TACTICS<br>[Partie II] EX"
+        },
+        {
+            "key": "QE_EV_FFT_01",
+            "value": "FINAL FANTASY TACTICS Combat 1"
+        },
+        {
+            "key": "QE_EV_FFT_02",
+            "value": "FINAL FANTASY TACTICS Combat 2"
+        },
+        {
+            "key": "QE_EV_FFT_03",
+            "value": "FINAL FANTASY TACTICS Combat 3"
+        },
+        {
+            "key": "QE_EV_FFT_04",
+            "value": "Château de Lionel - Portes"
+        },
+        {
+            "key": "QE_EV_FFT_05",
+            "value": "Château de Lionel - Donjon"
+        },
+        {
+            "key": "QE_EV_FFT_06",
+            "value": "FINAL FANTASY TACTICS Combat 1 [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FFT_07",
+            "value": "FINAL FANTASY TACTICS Combat 2 [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FFT_08",
+            "value": "FINAL FANTASY TACTICS Combat 3 [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FFT_09",
+            "value": "Château de Lionel - Portes [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FFT_10",
+            "value": "Château de Lionel - Donjon [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FFT_EX_01",
+            "value": "FINAL FANTASY TACTICS [EX]"
+        },
+        {
+            "key": "QE_MU_FFT_EX_01",
+            "value": "FINAL FANTASY TACTICS [EX]"
+        },
+        {
+            "key": "QE_GL_EV_FFEXU_01",
+            "value": "Quête de FF EXVIUS Universe"
+        },
+        {
+            "key": "QE_EV_FF4_01",
+            "value": "Combat 1 de FINAL FANTASY IV"
+        },
+        {
+            "key": "QE_EV_FF4_02",
+            "value": "Combat 2 de FINAL FANTASY IV"
+        },
+        {
+            "key": "QE_EV_FF4_03",
+            "value": "Intérieur du palais des Nains"
+        },
+        {
+            "key": "QE_EV_FF4_04",
+            "value": "Grotte scellée"
+        },
+        {
+            "key": "QE_EV_FF4_05",
+            "value": "Palais des Nains - Salle du cristal"
+        },
+        {
+            "key": "QE_EV_FF4_06",
+            "value": "Combat 1 de FINAL FANTASY IV [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF4_07",
+            "value": "Combat 2 de FINAL FANTASY IV [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF4_08",
+            "value": "Intérieur du palais des Nains [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF4_09",
+            "value": "Grotte scellée [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF4_10",
+            "value": "Palais des Nains - Salle du cristal [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF4_EX_01",
+            "value": "FINAL FANTASY IV [EX1]"
+        },
+        {
+            "key": "QE_EV_FF4_EX_02",
+            "value": "FINAL FANTASY IV [EX2]"
+        },
+        {
+            "key": "QE_MU_FF4_EX_03",
+            "value": "FINAL FANTASY IV [EX1]"
+        },
+        {
+            "key": "QE_MU_FF4_EX_02",
+            "value": "FINAL FANTASY IV [EX2]"
+        },
+        {
+            "key": "QE_EV_ALIM_01",
+            "value": "Quête des fragments d'unité d'Alym I"
+        },
+        {
+            "key": "QE_EV_ALIM_02",
+            "value": "Quête des fragments d'unité d'Alym II"
+        },
+        {
+            "key": "QE_EV_ALIM_03",
+            "value": "Quête des fragments d'unité d'Alym III"
+        },
+        {
+            "key": "QE_EV_ALIM_04",
+            "value": "Quête des fragments d'unité d'Alym IV"
+        },
+        {
+            "key": "QE_EV_ALIM_05",
+            "value": "Quête des fragments d'unité d'Alym V"
+        },
+        {
+            "key": "QE_EV_ALIM_EX1",
+            "value": "Quête EX des fragments d'unité d'Alym [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ALIM_EX2",
+            "value": "Quête EX des fragments d'unité d'Alym [Super difficile]"
+        },
+        {
+            "key": "QE_MU_EV_AL_EX1",
+            "value": "Quête EX des fragments d'unité d'Alym [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_AL_EX2",
+            "value": "Quête EX des fragments d'unité d'Alym [Super difficile]"
+        },
+        {
+            "key": "QE_EV_LSWL_01",
+            "value": "Quête difficile limitée (Lasswell)"
+        },
+        {
+            "key": "QE_EV_GRSR_01",
+            "value": "Quête difficile limitée (Graziella Wezett)"
+        },
+        {
+            "key": "QE_EV_DELT_01",
+            "value": "Quête difficile limitée (Delita)"
+        },
+        {
+            "key": "QE_EV_AGRA_01",
+            "value": "Quête difficile limitée (Agrias)"
+        },
+        {
+            "key": "QE_EV_VNLA_01",
+            "value": "Quête difficile limitée (Vinera Fennes)"
+        },
+        {
+            "key": "QE_EV_QILF_01",
+            "value": "Quête difficile limitée (Kilphe)"
+        },
+        {
+            "key": "QE_EV_ORDR_01",
+            "value": "Quête difficile limitée (Oldoa)"
+        },
+        {
+            "key": "QE_EV_GL_1M_FIR",
+            "value": "Quête de célébration [Feu] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_ICE",
+            "value": "Quête de célébration [Glace] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_IRDL_01",
+            "value": "Quête difficile limitée (Ildyra)"
+        },
+        {
+            "key": "QE_EV_STRN_01",
+            "value": "Quête difficile limitée (Sterne [Chevalier déchu])"
+        },
+        {
+            "key": "QE_SB_FNRR_02",
+            "value": "Le défi de Fenrir [Très difficile]"
+        },
+        {
+            "key": "QE_SB_FNRR_03",
+            "value": "Le défi de Fenrir [Super difficile]"
+        },
+        {
+            "key": "QE_MU_FNRR_04",
+            "value": "Le défi de Fenrir [Super difficile]"
+        },
+        {
+            "key": "QE_SB_IFRT_02",
+            "value": "Le défi d'Ifrit [Très difficile]"
+        },
+        {
+            "key": "QE_SB_IFRT_03",
+            "value": "Le défi d'Ifrit [Super difficile]"
+        },
+        {
+            "key": "QE_EV_JP_001",
+            "value": "Quête de PJ"
+        },
+        {
+            "key": "QE_SB_CSLI_02",
+            "value": "Le défi de Chocoflan [Très difficile]"
+        },
+        {
+            "key": "QE_SB_CSLI_03",
+            "value": "Le défi de Chocoflan [Super difficile]"
+        },
+        {
+            "key": "QE_SB_OCHU_02",
+            "value": "Le défi d'Otyugh [Très difficile]"
+        },
+        {
+            "key": "QE_SB_OCHU_03",
+            "value": "Le défi d'Otyugh [Super difficile]"
+        },
+        {
+            "key": "QE_SB_SHIV_02",
+            "value": "Le défi de Shiva [Très difficile]"
+        },
+        {
+            "key": "QE_SB_SHIV_03",
+            "value": "Le défi de Shiva [Super difficile]"
+        },
+        {
+            "key": "QE_EV_GL_1M_WIN",
+            "value": "Quête de célébration [Vent] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_EAR",
+            "value": "Quête de célébration [Terre] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_THU",
+            "value": "Quête de célébration [Foudre] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_WTR",
+            "value": "Quête de célébration [Eau] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_SHI",
+            "value": "Quête de célébration [Lumière] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_1M_DAR",
+            "value": "Quête de célébration [Ombre] du « 1er million de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_2M_JP",
+            "value": "Quête de PJ pour les « 2 millions de téléchargements »"
+        },
+        {
+            "key": "QE_EV_GL_3M_DL",
+            "value": "Quête de célébration des « 3 millions de téléchargements »"
+        },
+        {
+            "key": "QE_EV_BEGN_2001",
+            "value": "Quête de soutien d'entraînement d'unité"
+        },
+        {
+            "key": "QE_EV_01_01",
+            "value": "Ép. 1 : Ça sent bon"
+        },
+        {
+            "key": "QE_EV_01_02",
+            "value": "Ép. 2 : Vague de bombos !"
+        },
+        {
+            "key": "QE_EV_01_03",
+            "value": "Ép. 3 : Devoir I"
+        },
+        {
+            "key": "QE_EV_01_04",
+            "value": "Ép. 4 : Devoir II"
+        },
+        {
+            "key": "QE_EV_01_05",
+            "value": "Ép. 5 : Celle qu'on appelle le Grand Paladin"
+        },
+        {
+            "key": "QE_EV_01_06",
+            "value": "Ép. 6 : Retour"
+        },
+        {
+            "key": "QE_EV_01_07",
+            "value": "Ép. 7 : À la frontière I"
+        },
+        {
+            "key": "QE_EV_01_08",
+            "value": "Ép. 8 : À la frontière II"
+        },
+        {
+            "key": "QE_EV_01_09",
+            "value": "Ép. 9 : À la frontière III"
+        },
+        {
+            "key": "QE_EV_01_10",
+            "value": "Ép. 10 : Prince Mont"
+        },
+        {
+            "key": "QE_EV_01_EX1",
+            "value": "Le magnifique prince [EX 1]"
+        },
+        {
+            "key": "QE_EV_01_EX2",
+            "value": "Le magnifique prince [EX 2]"
+        },
+        {
+            "key": "QE_MU_EV_01_EX1",
+            "value": "Le magnifique prince [EX 1]"
+        },
+        {
+            "key": "QE_MU_EV_01_EX2",
+            "value": "Le magnifique prince [EX 2]"
+        },
+        {
+            "key": "QE_EV_02_01",
+            "value": "Ép. 1 : Inquiétudes de Saliah"
+        },
+        {
+            "key": "QE_EV_02_02",
+            "value": "Ép. 2 : Direction l'Ouest"
+        },
+        {
+            "key": "QE_EV_02_03",
+            "value": "Ép. 3 : Les sous-fifres de Glahz"
+        },
+        {
+            "key": "QE_EV_02_04",
+            "value": "Ép. 4 : Au cœur de la forêt"
+        },
+        {
+            "key": "QE_EV_02_05",
+            "value": "Ép. 5 : À toutes les unités, en avant ! I"
+        },
+        {
+            "key": "QE_EV_02_06",
+            "value": "Ép. 6 : À toutes les unités, en avant ! II"
+        },
+        {
+            "key": "QE_EV_02_07",
+            "value": "Ép. 7 : Récompense"
+        },
+        {
+            "key": "QE_EV_02_08",
+            "value": "Ép. 8 : À la forteresse I"
+        },
+        {
+            "key": "QE_EV_02_09",
+            "value": "Ép. 9 : À la forteresse II"
+        },
+        {
+            "key": "QE_EV_02_10",
+            "value": "Ép. 10 : La Gâchette impitoyable"
+        },
+        {
+            "key": "QE_EV_02_EX1",
+            "value": "Rundall, menace à l'ouest [EX]"
+        },
+        {
+            "key": "QE_EV_RAIN_01",
+            "value": "Quête difficile limitée (Rain)"
+        },
+        {
+            "key": "QE_EV_03_01",
+            "value": "Ép. 1 : Les appartements de Dario I"
+        },
+        {
+            "key": "QE_EV_03_02",
+            "value": "Ép. 2 : Les appartements de Dario II"
+        },
+        {
+            "key": "QE_EV_03_03",
+            "value": "Ép. 3 : Traîtrise I"
+        },
+        {
+            "key": "QE_EV_03_04",
+            "value": "Ép. 4 : Traîtrise II"
+        },
+        {
+            "key": "QE_EV_03_05",
+            "value": "Ép. 5 : Une vie vacillante I"
+        },
+        {
+            "key": "QE_EV_03_06",
+            "value": "Ép. 6 : Une vie vacillante II"
+        },
+        {
+            "key": "QE_EV_03_07",
+            "value": "Ép. 7 : Une vie vacillante III"
+        },
+        {
+            "key": "QE_EV_03_08",
+            "value": "Ép. 8 : Un air de cachot"
+        },
+        {
+            "key": "QE_EV_03_09",
+            "value": "Ép. 9 : Départ du château"
+        },
+        {
+            "key": "QE_EV_03_10",
+            "value": "Ép. 10 : Liberté"
+        },
+        {
+            "key": "QE_EV_03_EX",
+            "value": "Embraser la vie [EX]"
+        },
+        {
+            "key": "QE_MU_EV_03_EX",
+            "value": "Embraser la vie [EX]"
+        },
+        {
+            "key": "QE_EV_04_01",
+            "value": "Ép. 1 : Invité inattendu"
+        },
+        {
+            "key": "QE_EV_04_02",
+            "value": "Ép. 2 : Maîtres I"
+        },
+        {
+            "key": "QE_EV_04_03",
+            "value": "Ép. 3 : Maîtres II"
+        },
+        {
+            "key": "QE_EV_04_04",
+            "value": "Ép. 4 : Ambition"
+        },
+        {
+            "key": "QE_EV_04_05",
+            "value": "Ép. 5 : La voie du samouraï"
+        },
+        {
+            "key": "QE_EV_04_06",
+            "value": "Ép. 6 : L'antre des monstres I"
+        },
+        {
+            "key": "QE_EV_04_07",
+            "value": "Ép. 7 : L'antre des monstres II"
+        },
+        {
+            "key": "QE_EV_04_08",
+            "value": "Ép. 8 : L'antre des monstres III"
+        },
+        {
+            "key": "QE_EV_04_09",
+            "value": "Ép. 9 : Mont des défis"
+        },
+        {
+            "key": "QE_EV_04_10",
+            "value": "Ép. 10 : Avide de vivre"
+        },
+        {
+            "key": "QE_EV_04_EX1",
+            "value": "Aux confins de l'Orient [EX 1]"
+        },
+        {
+            "key": "QE_EV_04_EX2",
+            "value": "Aux confins de l'Orient [EX 2]"
+        },
+        {
+            "key": "QE_MU_EV_04_EX1",
+            "value": "Aux confins de l'Orient [EX 1]"
+        },
+        {
+            "key": "QE_MU_EV_04_EX2",
+            "value": "Aux confins de l'Orient [EX 2]"
+        },
+        {
+            "key": "QE_EV_05_01",
+            "value": "Ép. 1 : Le vœu de Loreila I"
+        },
+        {
+            "key": "QE_EV_05_02",
+            "value": "Ép. 2 : Le vœu de Loreila II"
+        },
+        {
+            "key": "QE_EV_05_03",
+            "value": "Ép. 3 : Si cette bataille prend fin"
+        },
+        {
+            "key": "QE_EV_05_04",
+            "value": "Ép. 4 : Vers Gouga"
+        },
+        {
+            "key": "QE_EV_05_05",
+            "value": "Ép. 5 : Le regard noir de Mariale"
+        },
+        {
+            "key": "QE_EV_05_06",
+            "value": "Ép. 6 : Je dois l'en empêcher"
+        },
+        {
+            "key": "QE_EV_05_07",
+            "value": "Ép. 7 : Rupture I"
+        },
+        {
+            "key": "QE_EV_05_08",
+            "value": "Ép. 8 : Rupture II"
+        },
+        {
+            "key": "QE_EV_05_09",
+            "value": "Ép. 9 : Rupture III"
+        },
+        {
+            "key": "QE_EV_05_10",
+            "value": "Ép. 10 : Zazan, l'immortel"
+        },
+        {
+            "key": "QE_EV_05_EX1",
+            "value": "Gouga et Saiga : Partie I [EX1]"
+        },
+        {
+            "key": "QE_EV_05_EX2",
+            "value": "Gouga et Saiga : Partie I [EX2]"
+        },
+        {
+            "key": "QE_MU_EV_05_EX1",
+            "value": "Gouga et Saiga : Partie I [EX1]"
+        },
+        {
+            "key": "QE_MU_EV_05_EX2",
+            "value": "Gouga et Saiga : Partie I [EX2]"
+        },
+        {
+            "key": "QE_EV_06_01",
+            "value": "Ép. 1 : Le devoir d'un chevalier I"
+        },
+        {
+            "key": "QE_EV_06_02",
+            "value": "Ép. 2 : Le devoir d'un chevalier II"
+        },
+        {
+            "key": "QE_EV_06_03",
+            "value": "Ép. 3 : Un voyage sans destination"
+        },
+        {
+            "key": "QE_EV_06_04",
+            "value": "Ép. 4 : Attendons la nuit"
+        },
+        {
+            "key": "QE_EV_06_05",
+            "value": "Ép. 5 : Infiltration I"
+        },
+        {
+            "key": "QE_EV_06_06",
+            "value": "Ép. 6 : Infiltration II"
+        },
+        {
+            "key": "QE_EV_06_07",
+            "value": "Ép. 7 : Le donjon"
+        },
+        {
+            "key": "QE_EV_06_08",
+            "value": "Ép. 8 : Fuite I"
+        },
+        {
+            "key": "QE_EV_06_09",
+            "value": "Ép. 9 : Fuite II"
+        },
+        {
+            "key": "QE_EV_06_10",
+            "value": "Ép. 10 : Le meilleur frère qui soit"
+        },
+        {
+            "key": "QE_EV_06_EX",
+            "value": "Une damoiselle en détresse [EX]"
+        },
+        {
+            "key": "QE_MU_EV_06_EX",
+            "value": "Une damoiselle en détresse [EX]"
+        },
+        {
+            "key": "QE_EV_07_01",
+            "value": "Ép. 1 : Village dévoré par les flammes"
+        },
+        {
+            "key": "QE_EV_07_02",
+            "value": "Ép. 2 : Ombre"
+        },
+        {
+            "key": "QE_EV_07_03",
+            "value": "Ép. 3 : Poursuite"
+        },
+        {
+            "key": "QE_EV_07_04",
+            "value": "Ép. 4 : Vers Gouga I"
+        },
+        {
+            "key": "QE_EV_07_05",
+            "value": "Ép. 5 : Vers Gouga II"
+        },
+        {
+            "key": "QE_EV_07_06",
+            "value": "Ép. 6 : Pierre tombale"
+        },
+        {
+            "key": "QE_EV_07_07",
+            "value": "Ép. 7 : Bataille décisive I"
+        },
+        {
+            "key": "QE_EV_07_08",
+            "value": "Ép. 8 : Bataille décisive II"
+        },
+        {
+            "key": "QE_EV_07_09",
+            "value": "Ép. 9 : Deux puissances"
+        },
+        {
+            "key": "QE_EV_07_10",
+            "value": "Ép. 10 : La chute de Saiga"
+        },
+        {
+            "key": "QE_EV_07_EX",
+            "value": "Gouga et Saiga : Partie II [EX]"
+        },
+        {
+            "key": "QE_EV_07_EX_1",
+            "value": "[Super difficile] Gouga et Saiga : Partie II [EX]"
+        },
+        {
+            "key": "QE_MU_EV_07_EX",
+            "value": "Gouga et Saiga : Partie II [EX]"
+        },
+        {
+            "key": "QE_MU_EV_07_EX_1",
+            "value": "[Super difficile] Gouga et Saiga : Partie II [EX]"
+        },
+        {
+            "key": "QE_EV_08_01",
+            "value": "Ép. 1 : Expédition"
+        },
+        {
+            "key": "QE_EV_08_02",
+            "value": "Ép. 2 : Lâches"
+        },
+        {
+            "key": "QE_EV_08_03",
+            "value": "Ép. 3 : Le tunnel de la mine"
+        },
+        {
+            "key": "QE_EV_08_04",
+            "value": "Ép. 4 : La mine de cristaux I"
+        },
+        {
+            "key": "QE_EV_08_05",
+            "value": "Ép. 5 : La mine de cristaux II"
+        },
+        {
+            "key": "QE_EV_08_06",
+            "value": "Ép. 6 : Poursuite I"
+        },
+        {
+            "key": "QE_EV_08_07",
+            "value": "Ép. 7 : Poursuite II"
+        },
+        {
+            "key": "QE_EV_08_08",
+            "value": "Ép. 8 : Le piège"
+        },
+        {
+            "key": "QE_EV_08_09",
+            "value": "Ép. 9 : Ma détermination"
+        },
+        {
+            "key": "QE_EV_08_10",
+            "value": "Ép. 10 : Éradication"
+        },
+        {
+            "key": "QE_EV_08_EX",
+            "value": "L'Éphémère [EX]"
+        },
+        {
+            "key": "QE_EV_08_EX_1",
+            "value": "[Super difficile] L'Éphémère [EX]"
+        },
+        {
+            "key": "QE_MU_EV_08_EX",
+            "value": "L'Éphémère [EX]"
+        },
+        {
+            "key": "QE_MU_EV_08_EX_1",
+            "value": "[Super difficile] L'Éphémère [EX]"
+        },
+        {
+            "key": "QE_CHAL_01_01",
+            "value": "Quête de défi [Très difficile]"
+        },
+        {
+            "key": "QE_CHAL_01_02",
+            "value": "Quête de défi I [Super difficile]"
+        },
+        {
+            "key": "QE_CHAL_01_03",
+            "value": "Quête de défi II [Super difficile]"
+        },
+        {
+            "key": "QE_CHAL_02_01",
+            "value": "Quête de défi II [Très difficile]"
+        },
+        {
+            "key": "QE_CHAL_02_02",
+            "value": "Quête de défi II [Super difficile] #1"
+        },
+        {
+            "key": "QE_CHAL_02_03",
+            "value": "Quête de défi II [Super difficile] #2"
+        },
+        {
+            "key": "QE_CHAL_03_01",
+            "value": "Quête de défi III [Très difficile]"
+        },
+        {
+            "key": "QE_CHAL_03_02",
+            "value": "Quête de défi III [Super difficile] #1"
+        },
+        {
+            "key": "QE_CHAL_03_03",
+            "value": "Quête de défi III [Super difficile] #2"
+        },
+        {
+            "key": "QE_MU_CHAL_03_02",
+            "value": "Quête de défi III [Super difficile] #1"
+        },
+        {
+            "key": "QE_MU_CHAL_03_03",
+            "value": "Quête de défi III [Super difficile] #2"
+        },
+        {
+            "key": "QE_EV_SB_EXP_FIR",
+            "value": "[Feu] Quête des magilithes rouges"
+        },
+        {
+            "key": "QE_EV_SB_EXP_ICE",
+            "value": "[Glace] Quête des magilithes bleues"
+        },
+        {
+            "key": "QE_EV_SB_EXP_WIN",
+            "value": "[Vent] Quête des magilithes vertes"
+        },
+        {
+            "key": "QE_EV_SB_EXP_EAR",
+            "value": "[Terre] Quête des magilithes oranges"
+        },
+        {
+            "key": "QE_EV_SB_EXP_THU",
+            "value": "[Foudre] Quête des magilithes jaunes"
+        },
+        {
+            "key": "QE_EV_SB_EXP_WTR",
+            "value": "[Eau] Quête des magilithes bleu clair"
+        },
+        {
+            "key": "QE_EV_SB_EXP_SHI",
+            "value": "[Lumière] Quête des magilithes blanches"
+        },
+        {
+            "key": "QE_EV_SB_EXP_DAR",
+            "value": "[Ombre] Quête des magilithes violettes"
+        },
+        {
+            "key": "QE_EV_ARENA_01_1",
+            "value": "Entraînement dans l'Arène (Débutant)"
+        },
+        {
+            "key": "QE_EV_ARENA_01_2",
+            "value": "Entraînement dans l'Arène (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_ARENA_01_3",
+            "value": "Entraînement dans l'Arène (Avancé)"
+        },
+        {
+            "key": "QE_EV_VKTR_01",
+            "value": "Quête difficile limitée (Viktora)"
+        },
+        {
+            "key": "QE_EV_THLA_01",
+            "value": "Quête des fragments d'unité de Saliah I"
+        },
+        {
+            "key": "QE_EV_THLA_02",
+            "value": "Quête des fragments d'unité de Saliah II"
+        },
+        {
+            "key": "QE_EV_THLA_03",
+            "value": "Quête des fragments d'unité de Saliah III"
+        },
+        {
+            "key": "QE_EV_THLA_04",
+            "value": "Quête des fragments d'unité de Saliah IV"
+        },
+        {
+            "key": "QE_EV_THLA_05",
+            "value": "Quête des fragments d'unité de Saliah V"
+        },
+        {
+            "key": "QE_EV_THLA_EX1",
+            "value": "Quête EX des fragments d'unité de Saliah I [Très difficile]"
+        },
+        {
+            "key": "QE_EV_THLA_EX2",
+            "value": "Quête EX des fragments d'unité de Saliah II [Très difficile]"
+        },
+        {
+            "key": "QE_SB_IGNT_02",
+            "value": "Le défi de Géant de fer [Très difficile]"
+        },
+        {
+            "key": "QE_SB_IGNT_03",
+            "value": "Le défi de Géant de fer [Super difficile]"
+        },
+        {
+            "key": "QE_EV_ETRE_01",
+            "value": "Quête d'entraînement d'Éthéa I"
+        },
+        {
+            "key": "QE_EV_ETRE_02",
+            "value": "Quête d'entraînement d'Éthéa II"
+        },
+        {
+            "key": "QE_EV_ETRE_03",
+            "value": "Quête d'entraînement d'Éthéa III"
+        },
+        {
+            "key": "QE_EV_ETRE_04",
+            "value": "Quête d'entraînement d'Éthéa IV"
+        },
+        {
+            "key": "QE_EV_ETRE_05",
+            "value": "Quête d'entraînement d'Éthéa V"
+        },
+        {
+            "key": "QE_EV_ETRE_06",
+            "value": "Quête d'entraînement d'Éthéa VI"
+        },
+        {
+            "key": "QE_EV_ETRE_EX1",
+            "value": "Quête d'entraînement EX d'Éthéa I [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ETRE_EX2",
+            "value": "Quête d'entraînement EX d'Éthéa II [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ANV_19_10",
+            "value": "Quête de commémoration de lancement"
+        },
+        {
+            "key": "QE_EV_ART_CRF_01",
+            "value": "Quête d'entraînement d'équipement (Débutant)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_02",
+            "value": "Quête d'entraînement d'équipement (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_03",
+            "value": "Quête d'entraînement d'équipement (Avancé)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_04",
+            "value": "Quête d'entraînement d'équipement [Super difficile]"
+        },
+        {
+            "key": "QE_EV_ART_CRF_07",
+            "value": "Quête d'entraînement d'équipement (Masse de platine)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_08",
+            "value": "Quête d'entraînement d'équipement (Épée de corail)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_05",
+            "value": "Quête d'entraînement d'équipement (Lame Morphée)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_06",
+            "value": "Quête d'entraînement d'équipement (Hache en or)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_09",
+            "value": "Quête d'entraînement d'équipement (Sceptre de platine)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_09",
+            "value": "Quête d'entraînement d'équipement (Sceptre de platine)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_13",
+            "value": "Quête d'entraînement d'équipement (Masse de soin)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_14",
+            "value": "Quête d'entraînement d'équipement (Ras Algethi)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_15",
+            "value": "Quête d'entraînement d'équipement (Katana de Sasuke)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_16",
+            "value": "Quête d'entraînement d'équipement (Arc de platine)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_17",
+            "value": "Quête d'entraînement d'équipement (Arc de platine) [Super difficile]"
+        },
+        {
+            "key": "QE_EV_ART_CRF_10",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Masse de soin)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_11",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Ras Algethi)"
+        },
+        {
+            "key": "QE_EV_ART_CRF_12",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Katana de Sasuke)"
+        },
+        {
+            "key": "QE_MU_SHIV_04",
+            "value": "Le défi de Shiva [Super difficile]"
+        },
+        {
+            "key": "QE_MU_IFRT_04",
+            "value": "Le défi d'Ifrit [Super difficile]"
+        },
+        {
+            "key": "QE_MU_OCHU_04",
+            "value": "Le défi d'Otyugh [Super difficile]"
+        },
+        {
+            "key": "QE_MU_CSLI_03",
+            "value": "Le défi de Chocoflan [Super difficile]"
+        },
+        {
+            "key": "QE_MU_IGNT_03",
+            "value": "Le défi de Géant de fer [Super difficile]"
+        },
+        {
+            "key": "QE_EV_ART_SCR_01",
+            "value": "Quête du livre secret (épée, spathe, hache) [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ART_SCR_02",
+            "value": "Quête du livre secret (lance, poings, fusil) [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ART_SCR_03",
+            "value": "Quête du livre secret (armure, accessoire, lame ninja) [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ART_SCR_04",
+            "value": "Quête du livre secret (bâton, katana, dague) [Très difficile]"
+        },
+        {
+            "key": "QE_EV_ART_SCR_05",
+            "value": "Quête du livre secret (Masse, Arc, Armure) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_SCR_01",
+            "value": "Quête du livre secret (épée, spathe, hache) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_SCR_02",
+            "value": "Quête du livre secret (lance, poings, fusil) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_SCR_03",
+            "value": "Quête du livre secret (armure, accessoire, lame ninja) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_SCR_04",
+            "value": "Quête du livre secret (bâton, katana, dague) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_SCR_05",
+            "value": "Quête du livre secret (Masse, Arc, Armure) [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_ET_EX1",
+            "value": "Quête d'entraînement EX d'Éthéa I [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_ET_EX2",
+            "value": "Quête d'entraînement EX d'Éthéa II [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_02_EX1",
+            "value": "Rundall, menace à l'ouest [EX]"
+        },
+        {
+            "key": "QE_MU_EV_TH_EX1",
+            "value": "Quête EX des fragments d'unité de Saliah I [Très difficile]"
+        },
+        {
+            "key": "QE_MU_EV_TH_EX2",
+            "value": "Quête EX des fragments d'unité de Saliah II [Très difficile]"
+        },
+        {
+            "key": "QE_MU_ART_CRF_04",
+            "value": "Quête d'entraînement d'équipement [Super difficile]"
+        },
+        {
+            "key": "QE_MU_ART_CRF_07",
+            "value": "Quête d'entraînement d'équipement (Masse de platine)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_08",
+            "value": "Quête d'entraînement d'équipement (Épée de corail)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_05",
+            "value": "Quête d'entraînement d'équipement (Lame Morphée)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_06",
+            "value": "Quête d'entraînement d'équipement (Hache en or)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_13",
+            "value": "Quête d'entraînement d'équipement (Masse de soin)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_14",
+            "value": "Quête d'entraînement d'équipement (Ras Algethi)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_15",
+            "value": "Quête d'entraînement d'équipement (Katana de Sasuke)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_16",
+            "value": "Quête d'entraînement d'équipement (Arc de platine)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_17",
+            "value": "Quête d'entraînement d'équipement (Arc de platine) [Super difficile]"
+        },
+        {
+            "key": "QE_MU_ART_CRF_10",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Masse de soin)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_11",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Ras Algethi)"
+        },
+        {
+            "key": "QE_MU_ART_CRF_12",
+            "value": "[Super difficile] Quête d'entraînement d'équipement (Katana de Sasuke)"
+        },
+        {
+            "key": "QE_SB_IFRT_01",
+            "value": "Combat contre Ifrit"
+        },
+        {
+            "key": "QE_SB_GLEM_01",
+            "value": "Combat contre Golem"
+        },
+        {
+            "key": "QE_SB_SIRE_01",
+            "value": "Combat contre Sirène"
+        },
+        {
+            "key": "QE_SB_MABR_01",
+            "value": "Combat contre Morbol"
+        },
+        {
+            "key": "QE_SB_IGNT_01",
+            "value": "Combat contre Géant de fer"
+        },
+        {
+            "key": "QE_SB_BHMT_01",
+            "value": "Combat contre Béhémoth"
+        },
+        {
+            "key": "QE_SB_SHIV_01",
+            "value": "Combat contre Shiva"
+        },
+        {
+            "key": "QE_SB_RAMU_01",
+            "value": "Combat contre Ramuh"
+        },
+        {
+            "key": "QE_SB_ODIN_01",
+            "value": "Combat contre Odin"
+        },
+        {
+            "key": "QE_SB_LAMA_01",
+            "value": "Combat contre Reine Lamia"
+        },
+        {
+            "key": "QE_SB_OCHU_01",
+            "value": "Combat contre Otyugh"
+        },
+        {
+            "key": "QE_SB_TSLP_01",
+            "value": "Combat contre Tétra-Sylphides"
+        },
+        {
+            "key": "QE_SB_THDG_01",
+            "value": "Combat contre Dragon à deux têtes"
+        },
+        {
+            "key": "QE_SB_DABL_01",
+            "value": "Combat contre Diabolos"
+        },
+        {
+            "key": "QE_SB_MDFY_01",
+            "value": "Combat contre Ensorceleur"
+        },
+        {
+            "key": "QE_SB_FNRR_01",
+            "value": "Combat contre Fenrir"
+        },
+        {
+            "key": "QE_SB_TITN_01",
+            "value": "Combat contre Titan"
+        },
+        {
+            "key": "QE_SB_BLMN_01",
+            "value": "Combat contre Lune de sang"
+        },
+        {
+            "key": "QE_SB_AGON_01",
+            "value": "Combat contre Égéon"
+        },
+        {
+            "key": "QE_SB_CHCB_01",
+            "value": "Combat contre Chocobo"
+        },
+        {
+            "key": "QE_SB_TNBR_01",
+            "value": "Combat contre Tomberry"
+        },
+        {
+            "key": "QE_SB_LVAT_01",
+            "value": "Combat contre Léviathan"
+        },
+        {
+            "key": "QE_SB_GCAL_01",
+            "value": "Combat contre Glacial"
+        },
+        {
+            "key": "QE_SB_TYPN_01",
+            "value": "Combat contre Typhon"
+        },
+        {
+            "key": "QE_RAID_EV_06_01",
+            "value": "Raid de Chocoflan"
+        },
+        {
+            "key": "QE_RAID_EV_06_02",
+            "value": "Raid de Chocoflan"
+        },
+        {
+            "key": "QE_RAID_EV_06_03",
+            "value": "Raid de Chocoflan"
+        },
+        {
+            "key": "QE_RAID_EV_06_04",
+            "value": "Raid de Chocoflan"
+        },
+        {
+            "key": "QE_RAID_EV_07_01",
+            "value": "Raid de Guimauve blanche"
+        },
+        {
+            "key": "QE_RAID_EV_07_02",
+            "value": "Raid de Guimauve blanche"
+        },
+        {
+            "key": "QE_RAID_EV_07_03",
+            "value": "Raid de Guimauve blanche"
+        },
+        {
+            "key": "QE_RAID_EV_07_04",
+            "value": "Raid de Guimauve blanche"
+        },
+        {
+            "key": "QE_RAID_EV_08_01",
+            "value": "Raid de FFI"
+        },
+        {
+            "key": "QE_RAID_EV_08_02",
+            "value": "Raid de FFI"
+        },
+        {
+            "key": "QE_RAID_EV_08_03",
+            "value": "Raid de FFI"
+        },
+        {
+            "key": "QE_RAID_EV_09_01",
+            "value": "Raid d'Ifrit"
+        },
+        {
+            "key": "QE_RAID_EV_09_02",
+            "value": "Raid d'Ifrit"
+        },
+        {
+            "key": "QE_RAID_EV_09_03",
+            "value": "Raid d'Ifrit"
+        },
+        {
+            "key": "QE_RAID_EV_09_04",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_RAID_EV_09_05",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_RAID_EV_09_06",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_RAID_EV_10_01",
+            "value": "Raid de Roi Béhémoth"
+        },
+        {
+            "key": "QE_RAID_EV_10_02",
+            "value": "Raid de Roi Béhémoth"
+        },
+        {
+            "key": "QE_RAID_EV_10_03",
+            "value": "Raid de Roi Béhémoth"
+        },
+        {
+            "key": "QE_RAID_EV_10_04",
+            "value": "Raid de Tomberry"
+        },
+        {
+            "key": "QE_RAID_EV_10_05",
+            "value": "Raid de Tomberry"
+        },
+        {
+            "key": "QE_RAID_EV_10_06",
+            "value": "Raid de Tomberry"
+        },
+        {
+            "key": "QE_RAID_EV_11_01",
+            "value": "Raid de la collaboration FFXIV: Shadowbringers"
+        },
+        {
+            "key": "QE_RAID_EV_11_02",
+            "value": "Raid de la collaboration FFXIV: Shadowbringers"
+        },
+        {
+            "key": "QE_RAID_EV_11_03",
+            "value": "Raid de la collaboration FFXIV: Shadowbringers"
+        },
+        {
+            "key": "QE_RAID_EV_12_01",
+            "value": "Raid de Dragon à deux têtes"
+        },
+        {
+            "key": "QE_RAID_EV_12_02",
+            "value": "Raid de Dragon à deux têtes"
+        },
+        {
+            "key": "QE_RAID_EV_12_03",
+            "value": "Raid de Dragon à deux têtes"
+        },
+        {
+            "key": "QE_RAID_EV_12_04",
+            "value": "Raid de Princesse flan"
+        },
+        {
+            "key": "QE_RAID_EV_12_05",
+            "value": "Raid de Princesse flan"
+        },
+        {
+            "key": "QE_RAID_EV_12_06",
+            "value": "Raid de Princesse flan"
+        },
+        {
+            "key": "QE_RAID_EV_13_01",
+            "value": "Raid de Sirène"
+        },
+        {
+            "key": "QE_RAID_EV_13_02",
+            "value": "Raid de Sirène"
+        },
+        {
+            "key": "QE_RAID_EV_13_03",
+            "value": "Raid de Sirène"
+        },
+        {
+            "key": "QE_RAID_EV_13_04",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_RAID_EV_13_05",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_RAID_EV_13_06",
+            "value": "Raid de Pampor"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_01",
+            "value": "Chambre d'Alcrists (feu) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_03",
+            "value": "Chambre d'Alcrists (feu) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_FIRE_05",
+            "value": "Chambre d'Alcrists (feu) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_WIND_01",
+            "value": "Chambre d'Alcrists (vent) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_WIND_03",
+            "value": "Chambre d'Alcrists (vent) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_WIND_05",
+            "value": "Chambre d'Alcrists (vent) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_WTR_01",
+            "value": "Chambre d'Alcrists (eau) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_WTR_03",
+            "value": "Chambre d'Alcrists (eau) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_WTR_05",
+            "value": "Chambre d'Alcrists (eau) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_ICE_01",
+            "value": "Chambre d'Alcrists (glace) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_ICE_03",
+            "value": "Chambre d'Alcrists (glace) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_ICE_05",
+            "value": "Chambre d'Alcrists (glace) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_EAR_01",
+            "value": "Chambre d'Alcrists (terre) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_EAR_03",
+            "value": "Chambre d'Alcrists (terre) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_EAR_05",
+            "value": "Chambre d'Alcrists (terre) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_DARK_01",
+            "value": "Chambre d'Alcrists (ombre) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_DARK_03",
+            "value": "Chambre d'Alcrists (ombre) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_DARK_05",
+            "value": "Chambre d'Alcrists (ombre) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_THUN_01",
+            "value": "Chambre d'Alcrists (foudre) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_THUN_03",
+            "value": "Chambre d'Alcrists (foudre) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_THUN_05",
+            "value": "Chambre d'Alcrists (foudre) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_01",
+            "value": "Chambre d'Alcrists (lumière) Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_03",
+            "value": "Chambre d'Alcrists (lumière) Niv. 3"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_05",
+            "value": "Chambre d'Alcrists (lumière) Niv. 5"
+        },
+        {
+            "key": "QE_MU_SM_FIRE_01",
+            "value": "Antre de l'éveil chimérique (feu)"
+        },
+        {
+            "key": "QE_MU_SM_WIND_01",
+            "value": "Antre de l'éveil chimérique (vent)"
+        },
+        {
+            "key": "QE_MU_SM_WTR_01",
+            "value": "Antre de l'éveil chimérique (eau)"
+        },
+        {
+            "key": "QE_MU_SM_ICE_01",
+            "value": "Antre de l'éveil chimérique (glace)"
+        },
+        {
+            "key": "QE_MU_SM_EAR_01",
+            "value": "Antre de l'éveil chimérique (terre)"
+        },
+        {
+            "key": "QE_MU_SM_DARK_01",
+            "value": "Antre de l'éveil chimérique (ombre)"
+        },
+        {
+            "key": "QE_MU_SM_THUN_01",
+            "value": "Antre de l'éveil chimérique (foudre)"
+        },
+        {
+            "key": "QE_MU_SM_SHIN_01",
+            "value": "Antre de l'éveil chimérique (lumière)"
+        },
+        {
+            "key": "QE_MU_AW_HIGH_01",
+            "value": "[Très difficile] Salle d'entraînement Niv. 1"
+        },
+        {
+            "key": "QE_MU_AW_HIGH_03",
+            "value": "[Très difficile] Salle d'entraînement Niv. 2"
+        },
+        {
+            "key": "QE_MU_AW_H09_3",
+            "value": "[Très difficile] Salle d'entraînement (jaune) C"
+        },
+        {
+            "key": "QE_MU_AW_H09_2",
+            "value": "[Très difficile] Salle d'entraînement (jaune) B"
+        },
+        {
+            "key": "QE_MU_AW_H09_1",
+            "value": "[Très difficile] Salle d'entraînement (jaune) A"
+        },
+        {
+            "key": "QE_MU_AW_H13_3",
+            "value": "[Très difficile] Salle d'entraînement (rouge) C"
+        },
+        {
+            "key": "QE_MU_AW_H13_2",
+            "value": "[Très difficile] Salle d'entraînement (rouge) B"
+        },
+        {
+            "key": "QE_MU_AW_H13_1",
+            "value": "[Très difficile] Salle d'entraînement (rouge) A"
+        },
+        {
+            "key": "QE_BGN_01",
+            "value": "Quête débutant 01"
+        },
+        {
+            "key": "QE_BGN_02",
+            "value": "Quête débutant 02"
+        },
+        {
+            "key": "QE_BGN_03",
+            "value": "Quête débutant 03"
+        },
+        {
+            "key": "QE_BGN_04",
+            "value": "Quête débutant 04"
+        },
+        {
+            "key": "QE_BGN_05",
+            "value": "Quête débutant 05"
+        },
+        {
+            "key": "QE_BGN_06",
+            "value": "Quête débutant 06"
+        },
+        {
+            "key": "QE_BGN_07",
+            "value": "Quête débutant 07"
+        },
+        {
+            "key": "QE_BGN_08",
+            "value": "Quête débutant 08"
+        },
+        {
+            "key": "QE_BGN_09",
+            "value": "Quête débutant 09"
+        },
+        {
+            "key": "QE_BGN_10",
+            "value": "Quête débutant 10"
+        },
+        {
+            "key": "QE_BGN_11",
+            "value": "Quête débutant 11"
+        },
+        {
+            "key": "QE_BGN_12",
+            "value": "Quête débutant 12"
+        },
+        {
+            "key": "QE_BGN_13",
+            "value": "Quête débutant 13"
+        },
+        {
+            "key": "QE_BGN_14",
+            "value": "Quête débutant 14"
+        },
+        {
+            "key": "QE_EV_WAVE_001",
+            "value": "Quête des survivants"
+        },
+        {
+            "key": "QE_EV_NEWMAP_001",
+            "value": "Entraînement aux combats de guilde"
+        },
+        {
+            "key": "QE_EV_NEWMAP_002",
+            "value": "Entraînement aux combats de guilde (Débutant)"
+        },
+        {
+            "key": "QE_EV_NEWMAP_003",
+            "value": "Entraînement aux combats de guilde (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_NEWMAP_004",
+            "value": "Entraînement aux combats de guilde (Avancé)"
+        },
+        {
+            "key": "QE_EV_NMAP_003_1",
+            "value": "Entraînement aux combats de guilde (Débutant)"
+        },
+        {
+            "key": "QE_EV_NMAP_003_2",
+            "value": "Entraînement aux combats de guilde (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_NMAP_003_3",
+            "value": "Entraînement aux combats de guilde (Avancé)"
+        },
+        {
+            "key": "QE_EV_NMAP_004_1",
+            "value": "Entraînement aux combats de guilde (Débutant)"
+        },
+        {
+            "key": "QE_EV_NMAP_004_2",
+            "value": "Entraînement aux combats de guilde (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_NMAP_004_3",
+            "value": "Entraînement aux combats de guilde (Avancé)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_001_1",
+            "value": "Entraînement aux combats de guilde (Débutant)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_001_2",
+            "value": "Entraînement aux combats de guilde (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_001_3",
+            "value": "Entraînement aux combats de guilde (Avancé)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_002_1",
+            "value": "Entraînement aux combats de guilde (Débutant)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_002_2",
+            "value": "Entraînement aux combats de guilde (Intermédiaire)"
+        },
+        {
+            "key": "QE_EV_GL_NMAP_002_3",
+            "value": "Entraînement aux combats de guilde (Avancé)"
+        },
+        {
+            "key": "QE_ARENA_00001",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_ARENA_00002",
+            "value": "Forêt"
+        },
+        {
+            "key": "QE_ARENA_00003",
+            "value": "Terres stériles"
+        },
+        {
+            "key": "QE_ARENA_00004",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_ARENA_00005",
+            "value": "Les extérieurs du château"
+        },
+        {
+            "key": "QE_ARENA_00006",
+            "value": "La caverne"
+        },
+        {
+            "key": "QE_ARENA_00008",
+            "value": "Montagnes enneigées"
+        },
+        {
+            "key": "QE_ARENA_00010",
+            "value": "Route montagneuse"
+        },
+        {
+            "key": "QE_ARENA_00011",
+            "value": "Cimetière"
+        },
+        {
+            "key": "QE_ARENA_GL_00001",
+            "value": "Forêt"
+        },
+        {
+            "key": "QE_ARENA_GL_00002",
+            "value": "Montagnes enneigées"
+        },
+        {
+            "key": "QE_GVG_00001",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_GVG_00002",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_GVG_00003",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_GVG_00004",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_GVG_00005",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_GVG_00006",
+            "value": "Plaines"
+        },
+        {
+            "key": "QE_GVG_00009",
+            "value": "La forteresse"
+        },
+        {
+            "key": "QE_GVG_00010",
+            "value": "Cimetière"
+        },
+        {
+            "key": "QE_GVG_GL_00001",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_GVG_GL_00002",
+            "value": "Montagnes enneigées"
+        },
+        {
+            "key": "QE_GVG_GL_00003",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_PVP_FRE_0001",
+            "value": "Plaines"
+        },
+        {
+            "key": "QE_PVP_FRE_0002",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_PVP_FRE_0003",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_PVP_FRI_0001",
+            "value": "Plaines"
+        },
+        {
+            "key": "QE_PVP_FRI_0002",
+            "value": "Forêt"
+        },
+        {
+            "key": "QE_PVP_FRI_0003",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_PVP_FRI_0004",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_PVP_FRI_0005",
+            "value": "Les extérieurs du château"
+        },
+        {
+            "key": "QE_PVP_FRI_0006",
+            "value": "La caverne"
+        },
+        {
+            "key": "QE_PVP_FRI_0009",
+            "value": "Montagnes enneigées"
+        },
+        {
+            "key": "QE_PVP_FRI_0014",
+            "value": "Route montagneuse"
+        },
+        {
+            "key": "QE_PVP_FRI_0016",
+            "value": "Cimetière"
+        },
+        {
+            "key": "QE_PVP_RANK_0001",
+            "value": "Arène"
+        },
+        {
+            "key": "QE_PVP_RANK_0002",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_PVP_RANK_0003",
+            "value": "Intérieur du château"
+        },
+        {
+            "key": "QE_PVP_RANK_0004",
+            "value": "Montagnes enneigées"
+        },
+        {
+            "key": "QE_PVP_RANK_0005",
+            "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_TEST_FOR",
+            "value": "Résolution des problèmes"
+        },
+        {
+            "key": "QE_K_JP_001",
+            "value": "Quête de PJ"
+        },
+        {
+            "key": "QE_K_SB_IGNT_02",
+            "value": "Le défi de Géant de fer [Très difficile]"
+        },
+        {
+            "key": "QE_K_SB_IGNT_03",
+            "value": "Le défi de Géant de fer [Super difficile]"
+        },
+        {
+            "key": "QE_K_SB_CSLI_02",
+            "value": "Le défi de Chocoflan [Très difficile]"
+        },
+        {
+            "key": "QE_K_SB_CSLI_03",
+            "value": "Le défi de Chocoflan [Super difficile]"
+        },
+        {
+            "key": "QE_K_SB_OCHU_02",
+            "value": "Le défi d'Otyugh [Très difficile]"
+        },
+        {
+            "key": "QE_K_SB_OCHU_03",
+            "value": "Le défi d'Otyugh [Super difficile]"
+        },
+        {
+            "key": "QE_K_SB_IFRT_02",
+            "value": "Le défi d'Ifrit [Très difficile]"
+        },
+        {
+            "key": "QE_K_SB_IFRT_03",
+            "value": "Le défi d'Ifrit [Super difficile]"
+        },
+        {
+            "key": "QE_K_SB_FNRR_02",
+            "value": "Le défi de Fenrir [Très difficile]"
+        },
+        {
+            "key": "QE_K_SB_FNRR_03",
+            "value": "Le défi de Fenrir [Super difficile]"
+        }
+    ]
+}

@@ -6309,6 +6309,34 @@
             "value": "モードチェンジ"
         },
         {
+            "key": "SK_ICDG_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_ICDG_M_01",
+            "value": "テイルスピン"
+        },
+        {
+            "key": "SK_ICDG_M_02",
+            "value": "氷をまとう"
+        },
+        {
+            "key": "SK_ICDG_M_02_1",
+            "value": "氷をまとう"
+        },
+        {
+            "key": "SK_ICDG_M_03",
+            "value": "スピットヘイル"
+        },
+        {
+            "key": "SK_ICDG_M_04",
+            "value": "アイシクル"
+        },
+        {
+            "key": "SK_ICDG_M_05",
+            "value": "龍の雪嵐"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "通常攻撃"
         },
@@ -6797,6 +6825,10 @@
             "value": "ルビーの光"
         },
         {
+            "key": "SK_SMN_ICDG",
+            "value": "龍の雪嵐"
+        },
+        {
             "key": "SK_SMN_IGNT",
             "value": "なぎ払い"
         },
@@ -7209,6 +7241,26 @@
             "value": "竜鱗"
         },
         {
+            "key": "SK_LW_EC_DRG_A_02",
+            "value": "マジックウォール"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03",
+            "value": "垂直ジャンプ強化"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_03B",
+            "value": "コンフュダイブ"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04",
+            "value": "HPアップLv１強化"
+        },
+        {
+            "key": "SK_LW_EC_DRG_C_04B",
+            "value": "魔槍の極意"
+        },
+        {
             "key": "SK_LW_EC_BLM_A_01_ICE",
             "value": "ブリザラ【秘術】"
         },
@@ -7507,6 +7559,26 @@
         {
             "key": "SK_LW_EC_PSI_C_02B",
             "value": "超気弾"
+        },
+        {
+            "key": "SK_LW_EC_VIK_A_02",
+            "value": "ジェノサイドチョッパー"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03",
+            "value": "キリングアックス強化"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_03B",
+            "value": "マーダーアックス"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04",
+            "value": "反骨精神強化"
+        },
+        {
+            "key": "SK_LW_EC_VIK_C_04B",
+            "value": "撃滅精神"
         },
         {
             "key": "SK_US_POTION",
@@ -8073,6 +8145,10 @@
             "value": "マスターアビリティ"
         },
         {
+            "key": "SK_MA_LW_CMLO",
+            "value": "マスターアビリティ"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "斬撃攻撃力+2"
         },
@@ -8625,6 +8701,26 @@
             "value": "防御貫通率+20"
         },
         {
+            "key": "SK_LW_PIERCEMDEF_1",
+            "value": "精神貫通率+2"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_2",
+            "value": "精神貫通率+3"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_3",
+            "value": "精神貫通率+5"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_4",
+            "value": "精神貫通率+10"
+        },
+        {
+            "key": "SK_LW_PIERCEMDEF_5",
+            "value": "精神貫通率+20"
+        },
+        {
             "key": "SK_LW_DF_SINGL_1",
             "value": "単体攻撃耐性+1"
         },
@@ -9087,6 +9183,10 @@
         {
             "key": "SK_CLT_LW_THLA_01_1_1",
             "value": "愛の奇跡"
+        },
+        {
+            "key": "SK_ARM_LW_CMLO_1_1",
+            "value": "竜狩りの威光"
         },
         {
             "key": "SK_VC_LW_SCAL_PVA",
@@ -10083,6 +10183,14 @@
         {
             "key": "SK_BTL_DONAC_1-100_D",
             "value": "状態異常【ドンアク】確率1-100ダウン"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_U",
+            "value": "状態異常【凍傷】確率1-100アップ"
+        },
+        {
+            "key": "SK_BTL_FROST_1-100_D",
+            "value": "状態異常【凍傷】確率1-100ダウン"
         },
         {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
