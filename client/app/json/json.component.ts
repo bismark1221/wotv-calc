@@ -20,6 +20,7 @@ export class JsonComponent implements OnInit {
   GLPlayerTitles = {};
   GLGuildTitles = {};
   GLIndex = {};
+  GLDropRates = {};
 
   JPunits = {};
   JPvisionCards = {};
@@ -32,6 +33,7 @@ export class JsonComponent implements OnInit {
   JPPlayerTitles = {};
   JPGuildTitles = {};
   JPIndex = {};
+  JPDropRates = {};
 
   JPRomaji = {};
 
@@ -42,6 +44,10 @@ export class JsonComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonService.getJsons().then(response => {
+      // @ts-ignore
+      this.JPRomaji = response.translate.jpRomaji;
+
+
       // @ts-ignore
       this.GLunits = response.gl.units;
 
@@ -71,6 +77,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.GLGuildTitles = response.gl.guildTitles;
+
+      // @ts-ignore
+      this.GLDropRates = response.gl.dropRates;
 
 
       // @ts-ignore
@@ -104,7 +113,7 @@ export class JsonComponent implements OnInit {
       this.JPGuildTitles = response.jp.guildTitles;
 
       // @ts-ignore
-      this.JPRomaji = response.translate.jpRomaji;
+      this.JPDropRates = response.jp.dropRates;
     });
   }
 

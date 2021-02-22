@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Slug } from 'ng2-slugify';
 
 import { JpTranslateService } from './jptranslate.service';
@@ -738,6 +738,11 @@ export class JsonService {
     'ALL_AILMENTS'
   ];
 
+  private noCacheHeaders = new HttpHeaders({
+    'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
 
   constructor(
     private http: HttpClient,
@@ -1105,137 +1110,137 @@ export class JsonService {
 
   /* Local files */
   private FR_ArtifactGrow() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_ArtifactName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/artifactname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_BuffName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/buffname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/buffname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_ItemOther() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/itemother.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemother.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_JobName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/jobname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/jobname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_SkillName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/skillname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/skillname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_UnitName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/unitname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/unitname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_VisionCardName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/visioncardname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/visioncardname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_ItemName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/itemname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_PlayerTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_PlayerTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsdescription.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_GuildTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_GuildTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private FR_TranslateQuestTitle() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
 
 
   private JP_ArtifactGrow() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/artifactgrow.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactgrow.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_ArtifactName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/artifactname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_BuffName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/buffname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/buffname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_ItemOther() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/itemother.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemother.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_JobName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/jobname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/jobname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_SkillName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/skillname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/skillname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_UnitName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/unitname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/unitname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_VisionCardName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/visioncardname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/visioncardname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_ItemName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/itemname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_PlayerTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_PlayerTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsdescription.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_GuildTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsname.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsname.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_GuildTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_TranslateQuestTitle() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
 
 
   private JP_Romaji() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_romaji.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp_romaji.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_Titles_Name() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_titles_name.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_name.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
   private JP_Titles_Desc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_titles_desc.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_desc.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
 
 
   private GL_Maps() {
-    return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json').toPromise();
+    return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json', {headers: this.noCacheHeaders}).toPromise();
   }
 
 
@@ -1503,6 +1508,7 @@ export class JsonService {
           masterRanks: this.gl.wotvMasterRanks,
           playerTitles: this.gl.wotvPlayerTitles,
           guildTitles: this.gl.wotvGuildTitles,
+          dropRates: this.gl.wotvDropRates
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1515,6 +1521,7 @@ export class JsonService {
           masterRanks: this.jp.wotvMasterRanks,
           playerTitles: this.jp.wotvPlayerTitles,
           guildTitles: this.jp.wotvGuildTitles,
+          dropRates: this.jp.wotvDropRates
         },
         translate: {
           jpRomaji: this.jpRomaji
@@ -1797,7 +1804,8 @@ export class JsonService {
 
       if (type === 'unit' && this.names.en[type][id]
         || type === 'visionCard' && this.names.en[type][id]
-        || type === 'equipment' && this.names.en[type][id]) {
+        || type === 'equipment' && this.names.en[type][id]
+        || type === 'questTitle' && this.names.en[type][id]) {
         item.names.en = this.names.jp[type][id] + ' - ' + this.names.en[type][id];
         slug = this.names.en[type][id];
       } else if (type === 'job') {
@@ -3429,8 +3437,9 @@ export class JsonService {
       const quest = this[this.version].quests[questId];
 
       formattedQuests[questId] = {
+        dataId: questId,
         items: {},
-        names: {}, // Need to manage story 1:2:3:3
+        names: {},
         exp: quest.uexp,
         nrg: quest.ap,
         jp: quest.jp,
@@ -3438,6 +3447,15 @@ export class JsonService {
         gils: quest.gold,
         chests: 0
       };
+
+      this.getNames(formattedQuests[questId], 'questTitle', false);
+
+      if (questId.split('_')[1] === 'ST') {
+        const storyNumber = questId.split('_')[2];
+        Object.keys(formattedQuests[questId].names).forEach(lang => {
+          formattedQuests[questId].names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuests[questId].names[lang];
+        });
+      }
 
       if (this.maps[quest.map.set.split('/')[1]]) {
         const map = this.maps[quest.map.set.split('/')[1]];
