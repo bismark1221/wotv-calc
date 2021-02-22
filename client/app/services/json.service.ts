@@ -126,6 +126,7 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
+      questTitle: {}
     },
     fr: {
       skill: {},
@@ -141,6 +142,7 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
+      questTitle: {}
     },
     jp: {
       skill: {},
@@ -156,6 +158,7 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
+      questTitle: {}
     }
   };
 
@@ -1094,6 +1097,10 @@ export class JsonService {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsDescription.json').toPromise();
   }
 
+  private TranslateQuestTitle() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/QuestTitle.json').toPromise();
+  }
+
 
 
   /* Local files */
@@ -1149,6 +1156,10 @@ export class JsonService {
     return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json').toPromise();
   }
 
+  private FR_TranslateQuestTitle() {
+    return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json').toPromise();
+  }
+
 
 
   private JP_ArtifactGrow() {
@@ -1201,6 +1212,10 @@ export class JsonService {
 
   private JP_GuildTitleDesc() {
     return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json').toPromise();
+  }
+
+  private JP_TranslateQuestTitle() {
+    return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json').toPromise();
   }
 
 
@@ -1354,6 +1369,10 @@ export class JsonService {
       this.JP_Titles_Name(),
       this.JP_Titles_Desc(),
       this.GL_Maps(),
+
+      this.TranslateQuestTitle(),
+      this.FR_TranslateQuestTitle(),
+      this.JP_TranslateQuestTitle(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1432,6 +1451,7 @@ export class JsonService {
       this.names.en.playerTitleDesc = this.formatNames(responses[58]);
       this.names.en.guildTitleName = this.formatNames(responses[59]);
       this.names.en.guildTitleDesc = this.formatNames(responses[60]);
+      this.names.en.questTitle = this.formatNames(responses[105]);
 
       this.names.fr.equipmentGrow = this.formatNames(responses[75]);
       this.names.fr.equipment = this.formatNames(responses[76]);
@@ -1446,6 +1466,7 @@ export class JsonService {
       this.names.fr.playerTitleDesc = this.formatNames(responses[85]);
       this.names.fr.guildTitleName = this.formatNames(responses[86]);
       this.names.fr.guildTitleDesc = this.formatNames(responses[87]);
+      this.names.fr.questTitle = this.formatNames(responses[106]);
 
       this.names.jp.equipmentGrow = this.formatNames(responses[88]);
       this.names.jp.equipment = this.formatNames(responses[89]);
@@ -1460,6 +1481,7 @@ export class JsonService {
       this.names.jp.playerTitleDesc = this.formatNames(responses[98]);
       this.names.jp.guildTitleName = this.formatNames(responses[99]);
       this.names.jp.guildTitleDesc = this.formatNames(responses[100]);
+      this.names.jp.questTitle = this.formatNames(responses[107]);
 
       this.jpRomaji = responses[101];
       this.jpTitlesName = responses[102];
@@ -3408,7 +3430,7 @@ export class JsonService {
 
       formattedQuests[questId] = {
         items: {},
-        names: {},
+        names: {}, // Need to manage story 1:2:3:3
         exp: quest.uexp,
         nrg: quest.ap,
         jp: quest.jp,
@@ -3461,7 +3483,7 @@ export class JsonService {
 
     this[this.version].wotvDropRates = formattedQuests;
 
-    console.log(this[this.version].wotvDropRates)
+    console.log(this[this.version].wotvDropRates);
   }
 
   addDroppedItem(map, type, itemId, rate, totalRate) {
