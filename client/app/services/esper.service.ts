@@ -222,7 +222,7 @@ export class EsperService {
     this.esper.level = 1;
     this.esper.maxSPs = 0;
     this.esper.usedSPs = 0;
-    this.esper.resonance = 1;
+    this.esper.resonance = 10;
     this.esper.possibleBuffs = null;
 
     const existingEsper = this.initiateSavedEsper(customData);
@@ -246,7 +246,7 @@ export class EsperService {
     if (esper) {
       this.esper.star = esper.star ? esper.star : 1;
       this.esper.level = esper.level ? esper.level : 1;
-      this.esper.resonance = esper.resonance ? esper.resonance : 1;
+      this.esper.resonance = esper.resonance ? esper.resonance : 10;
       this.esper.storeId = esper.storeId ? esper.storeId : null;
       this.esper.customName = esper.customName ? esper.customName : '';
 

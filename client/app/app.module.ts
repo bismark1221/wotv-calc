@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -54,6 +55,7 @@ import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 import { OtherTestComponent } from './other/other.test.component';
 import { OtherIlluminatiComponent } from './other/other.illuminati.component';
+import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -152,7 +154,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherIndexComponent,
     OtherJobPlannerComponent,
     OtherTestComponent,
-    OtherIlluminatiComponent
+    OtherIlluminatiComponent,
+    OtherFarmCalculatorComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),

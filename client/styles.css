@@ -775,3 +775,21 @@ small {
   color: var(--black-vs-white);
   border: 0;
 }
+
+
+.select-item-farmcalculator {
+  width: 250px;
+}
+
+.select-item-farmcalculator .ng-input input {
+  cursor: text !important;
+}
+
+.select-item-farmcalculator .ng-optgroup {
+  padding: 0 !important;
+}
+
+.select-item-farmcalculator .ng-option {
+  padding: 0 !important;
+  padding-left: 5px !important;
+}

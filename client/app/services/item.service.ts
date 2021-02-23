@@ -28,7 +28,7 @@ export class ItemService {
   }
 
   getItems() {
-    if (!this.items || this.items.length === 0) {
+    if (!this.items || this.items.length === 0 || this.savedVersion !== this.navService.getVersion()) {
       const items: Item[] = [];
       const rawItems = JSON.parse(JSON.stringify(this.getRaw()));
 
@@ -40,6 +40,8 @@ export class ItemService {
 
       this.items = items;
     }
+
+    return this.items
   }
 
   getItem(id: string): Item {
