@@ -1,0 +1,182 @@
+th {
+  padding-right: 0;
+}
+
+.row {
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/***************/
+/* Search Unit */
+/***************/
+.rarityLine {
+  padding: 5px;
+  background: #E8E6DF;
+  color: #000;
+  height: 40px;
+}
+
+.rarityLine img {
+  height: 30px;
+}
+
+.rarityLine span {
+  font-weight: 600;
+  margin-left: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.unitLine {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.unitLine hr {
+  margin: 0;
+  width: 240px;
+}
+
+.unitSelector {
+  padding: 0;
+  display: block;
+  height: 50px;
+}
+
+.unitLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #E8E6DF;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.unitLogo img {
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.unitNameSelector {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/**/
+.headerText {
+  width: 100%;
+  text-align: center;
+}
+
+.units {
+  width: 960px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.unitBlock {
+  width: 320px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.select-unit-team {
+  margin: auto;
+}
+
+.unitImg {
+  width: 80px;
+}
+
+.mainJob {
+  height: 55px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+}
+
+.subJob {
+  height: 55px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+}
+
+.materialsBlock {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+.materials {
+  margin: auto;
+}
+
+.materialBlock {
+  display: inline-block;
+  width: 55px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.materialImg {
+  max-width: 55px;
+  max-height: 55px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOrbGreen {
+  height: 55px;
+  background: url("assets/items/it_jb_mm_all.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOrbBlue {
+  height: 55px;
+  background: url("assets/items/it_jb_mm_all_2.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOrbViolet {
+  height: 55px;
+  background: url("assets/items/it_jb_mm_all_3.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOrbYellow {
+  height: 55px;
+  background: url("assets/items/it_jb_mm_all_4.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOrbPink {
+  height: 55px;
+  background: url("assets/items/it_jb_mm_all_5.png") 0px 0px no-repeat;
+  background-size: 55px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.deactivated {
+  filter: grayscale(1);
+}

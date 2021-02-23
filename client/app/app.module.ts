@@ -97,6 +97,7 @@ import { TitleService } from './services/title.service';
 import { RangeService } from './services/range.service';
 import { IndexService } from './services/index.service';
 import { ReviewService } from './services/review.service';
+import { QuestService } from './services/quest.service';
 
 import { RoundDownPipe } from './pipes/roundDown.pipe';
 import { SafeHtmlPipe } from './pipes/safeHtml.pipe';
@@ -208,6 +209,7 @@ export function createTranslateLoader(http: HttpClient) {
     RangeService,
     IndexService,
     ReviewService,
+    QuestService,
     {
       provide: ErrorHandler,
       useClass: SentryErrorHandler
