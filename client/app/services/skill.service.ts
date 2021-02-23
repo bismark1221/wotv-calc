@@ -485,6 +485,9 @@ export class SkillService {
       case 'GRADUAL_PETRIFY_ATK' :
         html = this.getChance(effect) + ' gradual petrify' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'FROSTBITE_ATK' :
+        html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'TOAD_ATK' :
         html = this.getChance(effect) + ' toad' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -568,6 +571,9 @@ export class SkillService {
       break;
       case 'GRADUAL_PETRIFY_RES' :
         html = this.getChance(effect) + ' gradual petrify resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'FROSTBITE_RES' :
+        html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'TOAD_RES' :
         html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);

@@ -58,7 +58,8 @@ export class UnitService {
     'UN_LW_P_MACR_01',
     'UN_LW_P_VKTR_01',
     'UN_NIER_P_N2TB',
-    'UN_NIER_P_N9TS'
+    'UN_NIER_P_N9TS',
+    'UN_LW_P_THLA_01'
   ];
 
   constructor(

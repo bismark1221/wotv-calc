@@ -731,16 +731,16 @@
         "en": "シュゼルト - Schuzelt"
       },
       "stats": {
-        "HP": 1509,
-        "TP": 108,
-        "AP": 100,
-        "ATK": 273,
+        "HP": 2626,
+        "TP": 113,
+        "AP": 125,
+        "ATK": 439,
         "DEF": 6,
         "SPR": 0,
-        "MAG": 60,
-        "DEX": 189,
-        "AGI": 50,
-        "LUCK": 220,
+        "MAG": 111,
+        "DEX": 246,
+        "AGI": 55,
+        "LUCK": 228,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "PIERCE_RES": -10,
@@ -752,8 +752,10 @@
         "DOOM_RES": -25,
         "MOVE": 4,
         "JUMP": 1,
-        "INITIAL_AP": 18,
-        "CRITIC_RATE": 47
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 50,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsszrt"
     },
@@ -1782,16 +1784,16 @@
         "en": "ドランド - Dorando"
       },
       "stats": {
-        "HP": 2320,
-        "TP": 105,
-        "AP": 97,
-        "ATK": 285,
-        "DEF": 0,
+        "HP": 4516,
+        "TP": 110,
+        "AP": 103,
+        "ATK": 454,
+        "DEF": 4,
         "SPR": 0,
-        "MAG": 51,
-        "DEX": 203,
-        "AGI": 47,
-        "LUCK": 150,
+        "MAG": 92,
+        "DEX": 251,
+        "AGI": 51,
+        "LUCK": 175,
         "WIND_RES": -15,
         "LIGHTNING_RES": 10,
         "SLASH_RES": -10,
@@ -1805,8 +1807,10 @@
         "DOOM_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17,
-        "CRITIC_RATE": 35
+        "INITIAL_AP": 18,
+        "CRITIC_RATE": 46,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsdrnd"
     },
@@ -2070,16 +2074,16 @@
         "en": "光の戦士 - Warrior of Light"
       },
       "stats": {
-        "HP": 3424,
-        "TP": 135,
-        "AP": 115,
-        "ATK": 314,
-        "DEF": 13,
+        "HP": 5226,
+        "TP": 142,
+        "AP": 121,
+        "ATK": 437,
+        "DEF": 17,
         "SPR": 6,
-        "MAG": 91,
-        "DEX": 161,
-        "AGI": 52,
-        "LUCK": 223,
+        "MAG": 122,
+        "DEX": 223,
+        "AGI": 56,
+        "LUCK": 256,
         "DARK_RES": -10,
         "SLASH_RES": 25,
         "PIERCE_RES": -20,
@@ -2091,7 +2095,9 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 20
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "ff01wrol"
     },
@@ -3308,7 +3314,7 @@
     },
     {
       "names": {
-        "en": "ヴィネラ（Xmas）"
+        "en": "ヴィネラ（Xmas） - Vinera (Winter)"
       },
       "stats": {
         "HP": 3969,
@@ -3343,7 +3349,7 @@
     },
     {
       "names": {
-        "en": "ヴィクトラ（Xmas）"
+        "en": "ヴィクトラ（Xmas） - Viktora (Winter)"
       },
       "stats": {
         "HP": 2982,
@@ -3583,6 +3589,73 @@
         "RES_MAGIC_ATK_PENETRATION": 20
       },
       "image": "lapshlna_01"
+    },
+    {
+      "names": {
+        "en": "サリア（バレンタイン）"
+      },
+      "stats": {
+        "HP": 2989,
+        "TP": 157,
+        "AP": 195,
+        "ATK": 95,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 477,
+        "DEX": 208,
+        "AGI": 57,
+        "LUCK": 227,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MAGIC_RES": 10,
+        "SLEEP_RES": 50,
+        "CONFUSION_RES": 10,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 101,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "SPIRIT_PENETRATION": 25
+      },
+      "image": "lapsthla_01"
+    },
+    {
+      "names": {
+        "en": "カミッロ"
+      },
+      "stats": {
+        "HP": 3378,
+        "TP": 137,
+        "AP": 141,
+        "ATK": 505,
+        "DEF": 2,
+        "SPR": 10,
+        "MAG": 84,
+        "DEX": 234,
+        "AGI": 62,
+        "LUCK": 219,
+        "DARK_RES": -10,
+        "SLASH_RES": 0,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15
+      },
+      "image": "lapscmlo"
     },
     {
       "names": {

@@ -106,6 +106,7 @@ export class EquipmentService {
     'AF_NIER_KAT_000': 'COLLABORATION',
     'AF_NIER_SPE_000': 'COLLABORATION',
     'AF_NIER_ACCE_000': 'COLLABORATION',
+    'AF_FF1_SWO_000': 'COLLABORATION',
 
     'AF_LW_CLT_004': 'RECURRENT',
     'AF_LW_BSW_004': 'RECURRENT',
@@ -140,6 +141,7 @@ export class EquipmentService {
     'AF_LW_SPE_003': 'RECURRENT',
     'AF_LW_BOK_003': 'RECURRENT',
     'AF_LW_ROD_006': 'RECURRENT',
+    'AF_LW_ACC_039': 'RECURRENT',
 
     'AF_LW_SWO_000': 'GENERAL_SHOP',
     'AF_LW_BSW_000': 'GENERAL_SHOP',

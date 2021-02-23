@@ -14107,6 +14107,7 @@
       "JUMP": {}
     },
     "image": "lapscbcl",
+    "slug": "youma-kougyoku-carbuncle",
     "partyBuffs": [
       {
         "classic": {
@@ -14388,8 +14389,326 @@
           }
         ]
       }
+    ]
+  },
+  "VC_LW_ICDG": {
+    "dataId": "VC_LW_ICDG",
+    "names": {
+      "en": "氷雪嵐龍　フリーゼス"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 43,
+        "max": 338
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {
+        "min": 2,
+        "max": 4
+      },
+      "SPR": {},
+      "MAG": {
+        "min": 36,
+        "max": 142
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsicdg",
+    "slug": "koori-yukiarashi-ryuu-fur-zesu",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "ICE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      }
     ],
-    "slug": "youma-kougyoku-carbuncle"
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "ICE_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ICDG_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ICDG_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",

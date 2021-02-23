@@ -4593,6 +4593,599 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_FF1_SWO_000": {
+    "names": {
+      "en": "ソードオブライト"
+    },
+    "slug": "sodo-obu-raito",
+    "stats": {
+      "HP": {
+        "min": 3,
+        "max": 64
+      },
+      "ATK": {
+        "min": 8,
+        "max": 152
+      },
+      "MAG": {
+        "min": 6,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      },
+      "CRITIC_RATE": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FF1_SWO_000",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "アサルト"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "マジック"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+8"
+          },
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "斬撃攻撃力+15"
+          },
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "ソードオブライト(光属性攻撃UP)"
+          },
+          "dataId": "SK_FF1_SWO_000_5",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff01wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF10_TIDU",
+      "JB_LW_MONT_01"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF1_SWO_000": 1,
+        "IT_AF_MAT_SEED_01": 170,
+        "IT_AF_MAT_WOLF": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 3,
+        "IT_AF_MAT_SEED_01": 230,
+        "IT_AF_MAT_WOLF": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 7,
+        "IT_AF_MAT_SEED_01": 350,
+        "IT_AF_MAT_WOLF": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_SWORD": 255
+      },
+      {
+        "IT_AF_FF1_SWO_000": 15,
+        "IT_AF_MAT_SEED_01": 630,
+        "IT_AF_MAT_WOLF": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_SWORD": 315
+      },
+      {
+        "IT_AF_FF1_SWO_000": 31,
+        "IT_AF_MAT_SEED_01": 1250,
+        "IT_AF_MAT_WOLF": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_SWORD": 535
+      },
+      {
+        "IT_AF_FF1_SWO_000": 63,
+        "IT_AF_MAT_SEED_01": 2570,
+        "IT_AF_MAT_WOLF": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_SWORD": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_BSW_000": {
     "names": {
       "en": "グレートソード - Greatsword"
@@ -38593,7 +39186,8 @@
       "UN_LW_P_SAKR",
       "UN_LW_P_ELSI",
       "UN_LW_P_ELSR",
-      "UN_FF10_P_YUNA"
+      "UN_FF10_P_YUNA",
+      "UN_LW_P_CMLO"
     ],
     "materials": [
       {
@@ -43244,6 +43838,644 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_LW_ACC_039": {
+    "names": {
+      "en": "銀ぶち眼鏡"
+    },
+    "slug": "gin-buchi-megane",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 342
+      },
+      "TP": {
+        "min": 1,
+        "max": 20
+      },
+      "AP": {
+        "min": 1,
+        "max": 16
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 26
+      },
+      "EVADE": {
+        "min": 0,
+        "max": 4
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_ACC_039",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "精神貫通率+2"
+          },
+          "dataId": "SK_LW_PIERCEMDEF_1",
+          "effects": [
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "精神貫通率+3"
+          },
+          "dataId": "SK_LW_PIERCEMDEF_2",
+          "effects": [
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "精神貫通率+5"
+          },
+          "dataId": "SK_LW_PIERCEMDEF_3",
+          "effects": [
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "精神貫通率+10"
+          },
+          "dataId": "SK_LW_PIERCEMDEF_4",
+          "effects": [
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_1"
+          },
+          "dataId": "SK_LW_ACC_039_1",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "精神貫通率+20"
+          },
+          "dataId": "SK_LW_PIERCEMDEF_5",
+          "effects": [
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_ACC_039_5"
+          },
+          "dataId": "SK_LW_ACC_039_5",
+          "effects": [
+            {
+              "type": "BLIND_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_acc_039",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ACC_039": 1,
+        "IT_AF_MAT_WING_01": 170,
+        "IT_AF_MAT_ARMN": 5,
+        "IT_AF_MAT_LESS_01": 11,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 3,
+        "IT_AF_MAT_WING_01": 230,
+        "IT_AF_MAT_ARMN": 15,
+        "IT_AF_MAT_LESS_01": 21,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 7,
+        "IT_AF_MAT_WING_01": 350,
+        "IT_AF_MAT_ARMN": 35,
+        "IT_AF_MAT_LESS_01": 41,
+        "IT_AF_AW_ACCE": 255
+      },
+      {
+        "IT_AF_LW_ACC_039": 15,
+        "IT_AF_MAT_WING_01": 630,
+        "IT_AF_MAT_ARMN": 75,
+        "IT_AF_MAT_LESS_01": 81,
+        "IT_AF_AW_ACCE": 315
+      },
+      {
+        "IT_AF_LW_ACC_039": 31,
+        "IT_AF_MAT_WING_01": 1250,
+        "IT_AF_MAT_ARMN": 155,
+        "IT_AF_MAT_LESS_01": 161,
+        "IT_AF_AW_ACCE": 535
+      },
+      {
+        "IT_AF_LW_ACC_039": 63,
+        "IT_AF_MAT_WING_01": 2570,
+        "IT_AF_MAT_ARMN": 315,
+        "IT_AF_MAT_LESS_01": 323,
+        "IT_AF_AW_ACCE": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_SWO_LW_LILS_1": {
     "names": {
       "en": "焔の剣 - Flame Blade"
@@ -46229,7 +47461,8 @@
                 "PARALYZE",
                 "CONFUSION",
                 "PETRIFY",
-                "GRADUAL_PETRIFY"
+                "GRADUAL_PETRIFY",
+                "FROSTBITE"
               ],
               "target": "selfSide"
             }
@@ -49622,7 +50855,8 @@
       "JB_LW_BEA_FIRE",
       "JB_NIER_N2TB",
       "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ"
+      "JB_LW_WIZ",
+      "JB_LW_PSI_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50092,7 +51326,8 @@
       "JB_LW_BEA_FIRE",
       "JB_NIER_N2TB",
       "JB_LW_LIB_FIRE",
-      "JB_LW_WIZ"
+      "JB_LW_WIZ",
+      "JB_LW_PSI_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53442,7 +54677,7 @@
               "minValue": -150,
               "maxValue": -350,
               "calcType": "fixe",
-              "turn": 3,
+              "turn": 4,
               "target": "self"
             }
           ],
@@ -55945,6 +57180,225 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_HLNA_01"
+    }
+  },
+  "AF_CLT_LW_THLA_01_1": {
+    "names": {
+      "en": "本命のドレス"
+    },
+    "slug": "hommei-no-doresu",
+    "stats": {
+      "HP": {
+        "min": 410,
+        "max": 410
+      },
+      "DEF": {
+        "min": 10,
+        "max": 10
+      },
+      "SPR": {
+        "min": 6,
+        "max": 6
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_LW_THLA_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "愛の奇跡"
+          },
+          "dataId": "SK_CLT_LW_THLA_01_1_1",
+          "effects": [
+            {
+              "type": "HP_COST",
+              "value": 20,
+              "calcType": "percent"
+            },
+            {
+              "type": "MAGIC_EVADE",
+              "calcType": "percent",
+              "rate": 200,
+              "turn": 1,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_017",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_YUNA",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_THLA_01"
+    }
+  },
+  "AF_ARM_LW_CMLO_1": {
+    "names": {
+      "en": "カスタムアーマー"
+    },
+    "slug": "kasutamu-m",
+    "stats": {
+      "HP": {
+        "min": 472,
+        "max": 472
+      },
+      "DEF": {
+        "min": 6,
+        "max": 6
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ARMOR",
+    "dataId": "AF_ARM_LW_CMLO_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "竜狩りの威光"
+          },
+          "dataId": "SK_ARM_LW_CMLO_1_1",
+          "effects": [
+            {
+              "type": "LIGHT_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "selfSide"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "selfSide",
+          "cost": {
+            "type": "TP",
+            "value": 28
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_arm_019",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_MONT_01"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_CMLO"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -59756,6 +61210,62 @@
       "JB_LW_SAKR",
       "JB_FF10_YUNA",
       "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_GLO_LW_THLA_01_2": {
+    "names": {
+      "en": "ブラウニーグローブ"
+    },
+    "slug": "buraun-gurobu",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "GLOVE",
+    "dataId": "AF_GLO_LW_THLA_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_glo_006",
+    "equippableJobs": [
+      "JB_LW_PSI_FIRE"
     ],
     "equippableUnits": [],
     "materials": [

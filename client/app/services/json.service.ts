@@ -328,7 +328,8 @@ export class JsonService {
     327: 'RES_MISSILE_ATK_PENETRATION',
     329: 'RES_MAGIC_ATK_PENETRATION',
     347: 'HEAL_POWER',
-    501: 'ABSORB_HP_ONTIME'
+    501: 'ABSORB_HP_ONTIME',
+    502: 'FROSTBITE'
   };
 
   species = [
@@ -735,14 +736,9 @@ export class JsonService {
     'SHELL',
     'FLOAT',
     'QUICKEN',
-    'ALL_AILMENTS'
+    'ALL_AILMENTS',
+    'FROSTBITE'
   ];
-
-  private noCacheHeaders = new HttpHeaders({
-    'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
-    'Pragma': 'no-cache',
-    'Expires': '0'
-  });
 
   constructor(
     private http: HttpClient,
@@ -1110,137 +1106,169 @@ export class JsonService {
 
   /* Local files */
   private FR_ArtifactGrow() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json?t=' + date).toPromise();
   }
 
   private FR_ArtifactName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/artifactname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/artifactname.json?t=' + date).toPromise();
   }
 
   private FR_BuffName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/buffname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/buffname.json?t=' + date).toPromise();
   }
 
   private FR_ItemOther() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/itemother.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemother.json?t=' + date).toPromise();
   }
 
   private FR_JobName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/jobname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/jobname.json?t=' + date).toPromise();
   }
 
   private FR_SkillName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/skillname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/skillname.json?t=' + date).toPromise();
   }
 
   private FR_UnitName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/unitname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/unitname.json?t=' + date).toPromise();
   }
 
   private FR_VisionCardName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/visioncardname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/visioncardname.json?t=' + date).toPromise();
   }
 
   private FR_ItemName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/itemname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/itemname.json?t=' + date).toPromise();
   }
 
   private FR_PlayerTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsname.json?t=' + date).toPromise();
   }
 
   private FR_PlayerTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/playerawardsdescription.json?t=' + date).toPromise();
   }
 
   private FR_GuildTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsname.json?t=' + date).toPromise();
   }
 
   private FR_GuildTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/guildawardsdescription.json?t=' + date).toPromise();
   }
 
   private FR_TranslateQuestTitle() {
-    return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json?t=' + date).toPromise();
   }
 
 
 
   private JP_ArtifactGrow() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/artifactgrow.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactgrow.json?t=' + date).toPromise();
   }
 
   private JP_ArtifactName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/artifactname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/artifactname.json?t=' + date).toPromise();
   }
 
   private JP_BuffName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/buffname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/buffname.json?t=' + date).toPromise();
   }
 
   private JP_ItemOther() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/itemother.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemother.json?t=' + date).toPromise();
   }
 
   private JP_JobName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/jobname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/jobname.json?t=' + date).toPromise();
   }
 
   private JP_SkillName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/skillname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/skillname.json?t=' + date).toPromise();
   }
 
   private JP_UnitName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/unitname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/unitname.json?t=' + date).toPromise();
   }
 
   private JP_VisionCardName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/visioncardname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/visioncardname.json?t=' + date).toPromise();
   }
 
   private JP_ItemName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/itemname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/itemname.json?t=' + date).toPromise();
   }
 
   private JP_PlayerTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsname.json?t=' + date).toPromise();
   }
 
   private JP_PlayerTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/playerawardsdescription.json?t=' + date).toPromise();
   }
 
   private JP_GuildTitleName() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsname.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsname.json?t=' + date).toPromise();
   }
 
   private JP_GuildTitleDesc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/guildawardsdescription.json?t=' + date).toPromise();
   }
 
   private JP_TranslateQuestTitle() {
-    return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json?t=' + date).toPromise();
   }
 
 
 
   private JP_Romaji() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_romaji.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp_romaji.json?t=' + date).toPromise();
   }
 
   private JP_Titles_Name() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_titles_name.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_name.json?t=' + date).toPromise();
   }
 
   private JP_Titles_Desc() {
-    return this.http.get('http://data.local-wotv-chain.com/jp_titles_desc.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp_titles_desc.json?t=' + date).toPromise();
   }
 
 
 
   private GL_Maps() {
-    return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json', {headers: this.noCacheHeaders}).toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json?t=' + date).toPromise();
   }
 
 
