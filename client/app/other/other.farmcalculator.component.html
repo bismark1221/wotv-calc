@@ -9,10 +9,15 @@
       placeholder="Select an item"
       class="select-item-farmcalculator"
       [(ngModel)]="selectedItems"
-      (ngModelChange)="selectItem()"
-      [items]="items"
+      (ngModelChange)="changeSelectedItems()"
+
+      [items]="items | async"
       [editableSearchTerm]="true"
+
       [multiple]="true"
+      [hideSelected]="true"
+      [trackByFn]="trackByFn"
+      [loading]="itemLoading"
       [minTermLength]="2"
       [typeahead]="itemInput"
       typeToSearchText="Please enter 2 or more characters">
@@ -24,7 +29,18 @@
         <div class="itemLine" id="item_{{item.dataId}}">
           <div class="itemSelector" id="itemSelector_{{item.dataId}}">
             <div class="itemLogo">
-              <img src="assets/item/{{ item.image }}.png" />
+              <img src="assets/items/{{ item.image }}.png" *ngIf="item.type === 'classic'" />
+
+              <img src="{{'assets/equipments/' + item.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipe" *ngIf="item.type === 'recipe'" />
+
+              <img src="{{ 'assets/jobs/' + item.image + '.png'}}"
+                [ngClass]="{
+                  'imgOrbGreen': item.type === 'imgOrbGreen',
+                  'imgOrbBlue': item.type === 'imgOrbBlue',
+                  'imgOrbViolet': item.type === 'imgOrbViolet',
+                  'imgOrbYellow': item.type === 'imgOrbYellow',
+                  'imgOrbPink': item.type === 'imgOrbPink'}"
+                *ngIf="item.type === 'imgOrbGreen' || item.type === 'imgOrbBlue' || item.type === 'imgOrbViolet' || item.type === 'imgOrbYellow' || item.type === 'imgOrbPink'" />
             </div>
             <div class="itemNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
           </div>
@@ -34,7 +50,60 @@
     </ng-select>
   </div>
 
+  <div class="selectedItems">
+    <div *ngFor="let item of selectedItems">
+      <div class="itemLogo">
+        <img src="assets/items/{{ item.image }}.png" *ngIf="item.type === 'classic'" />
+
+        <img src="{{'assets/equipments/' + item.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipe" *ngIf="item.type === 'recipe'" />
+
+        <img src="{{ 'assets/jobs/' + item.image + '.png'}}"
+          [ngClass]="{
+            'imgOrbGreen': item.type === 'imgOrbGreen',
+            'imgOrbBlue': item.type === 'imgOrbBlue',
+            'imgOrbViolet': item.type === 'imgOrbViolet',
+            'imgOrbYellow': item.type === 'imgOrbYellow',
+            'imgOrbPink': item.type === 'imgOrbPink'}"
+          *ngIf="item.type === 'imgOrbGreen' || item.type === 'imgOrbBlue' || item.type === 'imgOrbViolet' || item.type === 'imgOrbYellow' || item.type === 'imgOrbPink'" />
+      </div>
+      <div class="itemNameSelector">{{ item.name }}</div>
+      <div class="itemNameSelector">X</div>
+    </div>
+  </div>
+
   <div class="quests">
     <h3>Quests list</h3>
+    <div *ngIf="quests.length > 0">
+      <table>
+        <tr>
+          <th>Quest Name</th>
+          <th>Drop rate</th>
+        </tr>
+        <tbody *ngFor="let quest of quests">
+          <tr>
+            <td>
+              <div class="questName">
+                {{ quest.name }}
+              </div>
+              <div class="questParams">
+                NRG : {{ quest.nrg }} - XP : {{ quest.xp }} - JP : {{ quest.jp }} - Gils : {{ quest.gils }} - Enemies : {{ quest.enemies }} - Chests : {{ quest.chests }}
+              </div>
+            </td>
+            <td>
+              <div *ngFor="let item of quest.findedItems">
+                {{ item.name }} - {{ quest.items[item.dataId].drop }} - {{ quest.items[item.dataId].host }}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div *ngFor="let item of quest.formattedItems">
+                {{ item.name }} - {{ quest.items[item.dataId].drop }} - {{ quest.items[item.dataId].host }}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ th {
 
 .itemLine hr {
   margin: 0;
-  width: 240px;
+  width: 930px;
 }
 
 .itemSelector {
@@ -42,6 +42,48 @@ th {
 .itemLogo img {
   max-height: 35px;
   max-width: 35px;
+}
+
+.recipe {
+  height: 35px;
+  background: url("assets/items/recipe.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbGreen {
+  height: 35px;
+  background: url("assets/items/it_jb_mm_all.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbBlue {
+  height: 35px;
+  background: url("assets/items/it_jb_mm_all_2.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbViolet {
+  height: 35px;
+  background: url("assets/items/it_jb_mm_all_3.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbYellow {
+  height: 35px;
+  background: url("assets/items/it_jb_mm_all_4.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
+}
+
+.imgOrbPink {
+  height: 35px;
+  background: url("assets/items/it_jb_mm_all_5.png") 0px 0px no-repeat;
+  background-size: 35px;
+  padding: 5px;
 }
 
 .itemNameSelector {
@@ -69,4 +111,24 @@ th {
 
 .select-item-farm {
   margin: auto;
+}
+
+.selectedItems {
+  width: 960px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.quests {
+  width: 960px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.questName {
+  font-size: 18px;
+}
+
+.questParams {
+  font-size: 14px;
 }

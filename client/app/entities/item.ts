@@ -5,15 +5,15 @@ export class Item {
   };
   name = 'New Item';
   recipe = false;
-  // slug = 'new-item'
   image;
   count;
+  icon;
 
   constructFromJson(item: Item): void {
     this.dataId = item.dataId;
     this.names = item.names;
     this.recipe = item.recipe;
-    // this.slug = raid.slug;
+    this.icon = item.icon;
   }
 
   getName(translateService): string {

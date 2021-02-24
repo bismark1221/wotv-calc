@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { concat, Observable, of, Subject } from 'rxjs';
+import { catchError, distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
 
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { QuestService } from '../services/quest.service';
 import { ToolService } from '../services/tool.service';
 import { ItemService } from '../services/item.service';
+
+import { Item } from '../entities/item';
 
 @Component({
   selector: 'app-other-farmcalculator',
@@ -14,8 +18,10 @@ import { ItemService } from '../services/item.service';
 })
 export class OtherFarmCalculatorComponent implements OnInit {
   quests = [];
-  items = [];
+  items: Observable<Item[]>;
   selectedItems = [];
+  itemLoading = false;
+  itemInput = new Subject<string>();
 
   constructor(
     private translateService: TranslateService,
@@ -34,16 +40,22 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   getItems() {
-    this.items = this.itemService.getItems();
-    this.translateItems();
+    this.items = concat(
+      of([]),
+      this.itemInput.pipe(
+        distinctUntilChanged(),
+        tap(() => this.itemLoading = true),
+        switchMap(term => this.itemService.getItemForFarm(term).pipe(
+          catchError(() => of([])),
+          tap(() => this.itemLoading = false)
+        ))
+      )
+    );
   }
 
-  private translateItems() {
-    this.items.forEach(item => {
-      item.name = this.nameService.getName(item);
-    });
-  }
-
-  selectItem() {
+  changeSelectedItems() {
+    console.log(this.selectedItems);
+    this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
+    console.log(this.quests);
   }
 }

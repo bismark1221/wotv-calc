@@ -25,6 +25,7 @@ export class Quest {
     this.enemies = quest.enemies;
     this.gils = quest.gils;
     this.chests = quest.chests;
+    this.names = quest.names;
   }
 
   getName(translateService): string {

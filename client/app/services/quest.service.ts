@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
+import { ItemService } from './item.service';
 
 import { Quest } from '../entities/quest';
 
@@ -18,7 +19,8 @@ export class QuestService {
   constructor(
     private translateService: TranslateService,
     private navService: NavService,
-    private toolService: ToolService
+    private toolService: ToolService,
+    private itemService: ItemService
   ) {}
 
   private getRaw() {
@@ -43,56 +45,47 @@ export class QuestService {
     return quests;
   }
 
-  getQuestsForListing(filters = null, sort = 'rarity', order = 'asc') {
-    this.getQuests();
-    this.quests = this.filterQuests(this.quests, filters);
-
-    switch (sort) {
-      case 'rarity' :
-        this.toolService.sortByRarity(this.quests, order);
-      break;
-      case 'name' :
-        this.toolService.sortByName(this.quests, order);
-      break;
-      default :
-        console.log('not managed sort');
-      break;
+  getQuestsForFarmCalc(searchedItems) {
+    if (searchedItems.length === 0) {
+      return [];
     }
 
-    return this.quests;
+    this.getQuests();
+    const filteredQuests = [];
+
+    const itemIds = [];
+    searchedItems.forEach(item => {
+      itemIds.push(item.dataId);
+    });
+
+    this.quests.forEach(quest => {
+      if (itemIds.some(itemId => Object.keys(quest.items).includes(itemId))) {
+        quest.getName(this.translateService);
+
+        this.formatItems(quest, itemIds);
+
+        filteredQuests.push(quest);
+      }
+    });
+
+    return filteredQuests;
   }
 
-  filterQuests(quests, filters) {
-    if (filters) {
-      const filteredQuests = [];
+  formatItems(quest, searchedItemIds) {
+    quest.formattedItems = [];
+    quest.findedItems = [];
 
-      quests.forEach(quest => {
-        /*if (filters.rarity.length === 0 || filters.rarity.indexOf(quest.rarity) !== -1) {
-          let needToAddQuest = false;
-          if (!filters.element || filters.element.length === 0) {
-            needToAddQuest = true;
-          } else {
-            quest.partyBuffs.forEach(buff => {
-              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
-                filters.element.forEach(elem => {
-                  if (buff.cond[0].items.indexOf(elem) !== -1) {
-                    needToAddQuest = true;
-                  }
-                });
-              }
-            });
-          }
+    Object.keys(quest.items).forEach(itemId => {
 
-          if (needToAddQuest) {*/
-            filteredQuests.push(quest);
-          /*}
-        }*/
-      });
+      if (itemId !== '') {
+        const formattedItem = this.itemService.formatItemToShow(this.itemService.getItem(itemId));
+        quest.formattedItems.push(formattedItem);
 
-      return filteredQuests;
-    } else {
-      return quests;
-    }
+        if (searchedItemIds.indexOf(itemId) !== -1) {
+          quest.findedItems.push(formattedItem);
+        }
+      }
+    });
   }
 
   getQuest(id) {

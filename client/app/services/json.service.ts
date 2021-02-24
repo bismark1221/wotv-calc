@@ -3310,6 +3310,10 @@ export class JsonService {
       delete this[this.version].wotvItems[dataId].recipe;
     }
 
+    if (item.icon) {
+      this[this.version].wotvItems[dataId].icon = item.icon;
+    }
+
     this.getNames(this[this.version].wotvItems[dataId], 'item', false);
   }
 
