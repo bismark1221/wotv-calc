@@ -3301,7 +3301,8 @@ export class JsonService {
     this[this.version].wotvItems[dataId] = {
       dataId: dataId,
       names: {},
-      recipe: false
+      recipe: false,
+      type: item.type
     };
 
     if (item.type === 13) {
