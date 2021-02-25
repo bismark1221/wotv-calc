@@ -32673,7 +32673,8 @@
       "JB_FF4_ROSA",
       "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33411,7 +33412,8 @@
       "JB_FF4_ROSA",
       "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35322,7 +35324,9 @@
       "JB_LW_ARC",
       "JB_LW_SAKR",
       "JB_LW_MMC_FIRE",
-      "JB_LW_BEA"
+      "JB_LW_BEA",
+      "JB_LW_MSW",
+      "JB_LW_PSI"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37260,6 +37264,286 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_VKTR_01"
+    }
+  },
+  "AF_ACC_LW_GABL_1": {
+    "names": {
+      "en": "Peacetime Brooch",
+      "fr": "Broche de la paix"
+    },
+    "slug": "peacetime-brooch",
+    "stats": {
+      "HP": {
+        "min": 303,
+        "max": 303
+      },
+      "DEF": {
+        "min": 8,
+        "max": 8
+      },
+      "CRITIC_RATE": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_GABL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Fury Surge",
+            "fr": "Déferlement enragé"
+          },
+          "dataId": "SK_ACC_LW_GABL_1_1",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 10,
+              "maxValue": 40,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 30,
+              "maxValue": 50,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "self"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_028",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_GABL"
+    }
+  },
+  "AF_ACC_LW_ELSR_1": {
+    "names": {
+      "en": "Heart-Shaped Hairpin",
+      "fr": "Chouchou en forme de cœur"
+    },
+    "slug": "heart-shaped-hairpin",
+    "stats": {
+      "HP": {
+        "min": 252,
+        "max": 252
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_ELSR_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Wake-Up Impact",
+            "fr": "Impact saisissant"
+          },
+          "dataId": "SK_ACC_LW_ELSR_1_1",
+          "effects": [
+            {
+              "type": "ACCURACY",
+              "minValue": 10,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "selfSide"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "selfSide",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_031",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_ELSR"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -40256,6 +40540,374 @@
       "type": "Unknown"
     }
   },
+  "AF_FIS_LW_VNLA_01_2": {
+    "names": {
+      "en": "Kitty Claws",
+      "fr": "Griffes de félin"
+    },
+    "slug": "kitty-claws",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "FIST",
+    "dataId": "AF_FIS_LW_VNLA_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_fis_008",
+    "equippableJobs": [
+      "JB_LW_MNK_FIRE",
+      "JB_LW_BEA_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BOW_LW_VKTR_01_2": {
+    "names": {
+      "en": "Bedeviled Bow",
+      "fr": "Arc des esprits"
+    },
+    "slug": "bedeviled-bow",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "BOW",
+    "dataId": "AF_BOW_LW_VKTR_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bow_011",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_FINA",
+      "JB_FF4_ROSA",
+      "JB_LW_ARC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_GLO_LW_GABL_2": {
+    "names": {
+      "en": "Illusory-Scented Cloth",
+      "fr": "Parfum illusoire"
+    },
+    "slug": "illusory-scented-cloth",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "GLOVE",
+    "dataId": "AF_GLO_LW_GABL_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_glo_005",
+    "equippableJobs": [
+      "JB_LW_WAR",
+      "JB_LW_PLD",
+      "JB_LW_KNT",
+      "JB_LW_SWN",
+      "JB_LW_HUN",
+      "JB_LW_MNK",
+      "JB_LW_LAN",
+      "JB_LW_CLR",
+      "JB_LW_SAM",
+      "JB_LW_DRG",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_THI",
+      "JB_LW_NIN",
+      "JB_LW_GUN",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM",
+      "JB_LW_WHM",
+      "JB_LW_GLMS",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_WGN",
+      "JB_LW_VIK",
+      "JB_LW_FINA",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FFT_ORND",
+      "JB_LW_RAIN",
+      "JB_LW_ASS",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_DEAN",
+      "JB_LW_ARC",
+      "JB_LW_SAKR",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_BEA",
+      "JB_LW_MSW",
+      "JB_LW_PSI"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_BSW_LW_ELSR_2": {
+    "names": {
+      "en": "Chaosbringer",
+      "fr": "Porteur de chaos"
+    },
+    "slug": "chaosbringer",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 10,
+        "max": 189
+      },
+      "MAG": {
+        "min": 2,
+        "max": 21
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 15
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_BSW_LW_ELSR_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bsw_012",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_STRN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_GUN_LW_CRIS_1": {
+    "names": {
+      "en": "Musketoon Custom",
+      "fr": "Mousquet sur mesure"
+    },
+    "slug": "musketoon-custom",
+    "stats": {
+      "HP": {
+        "min": 107,
+        "max": 107
+      },
+      "ATK": {
+        "min": 106,
+        "max": 106
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_CRIS_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_GUN_LW_CRIS_1_1",
+            "fr": "SK_GUN_LW_CRIS_1_1"
+          },
+          "dataId": "SK_GUN_LW_CRIS_1_1",
+          "effects": [
+            {
+              "type": "PROVOKE",
+              "minValue": -6,
+              "maxValue": -6,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_gun_009",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_CRIS"
+    }
+  },
   "AF_LOT_LW_RNG_005": {
     "names": {
       "en": "Alexandrite Ring",
@@ -41061,7 +41713,8 @@
       "UN_LW_P_IRDL",
       "UN_LW_P_GRSR",
       "UN_LW_P_RAMD_01",
-      "UN_LW_P_VKTR_01"
+      "UN_LW_P_VKTR_01",
+      "UN_LW_P_CRIS"
     ],
     "materials": [
       {
@@ -49011,126 +49664,6 @@
         "IT_AF_MAT_LESS_02": 638,
         "IT_AF_AW_ACCE": 1725
       }
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    }
-  },
-  "AF_FIS_LW_VNLA_01_2": {
-    "names": {
-      "en": "Kitty Claws",
-      "fr": "Griffes de félin"
-    },
-    "slug": "kitty-claws",
-    "stats": {
-      "HP": {
-        "min": 15,
-        "max": 293
-      },
-      "ATK": {
-        "min": 2,
-        "max": 30
-      },
-      "MAG": {
-        "min": 14,
-        "max": 270
-      },
-      "ACCURACY": {
-        "min": 2,
-        "max": 27
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 9
-      }
-    },
-    "type": "FIST",
-    "dataId": "AF_FIS_LW_VNLA_01_2",
-    "grows": {
-      "ARTIFACT_50": {
-        "dataId": "ARTIFACT_50",
-        "names": {
-          "en": "ARTIFACT_50",
-          "fr": "ARTIFACT_50"
-        },
-        "curve": {
-          "MAX_LV": 30
-        }
-      }
-    },
-    "skills": [
-      []
-    ],
-    "rarity": "UR",
-    "image": "lapswpn_fis_008",
-    "equippableJobs": [
-      "JB_LW_MNK_FIRE",
-      "JB_LW_BEA_FIRE"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {}
-    ],
-    "acquisition": {
-      "type": "Unknown"
-    }
-  },
-  "AF_BOW_LW_VKTR_01_2": {
-    "names": {
-      "en": "Bedeviled Bow",
-      "fr": "Arc des esprits"
-    },
-    "slug": "bedeviled-bow",
-    "stats": {
-      "HP": {
-        "min": 4,
-        "max": 69
-      },
-      "ATK": {
-        "min": 9,
-        "max": 168
-      },
-      "MAG": {
-        "min": 2,
-        "max": 21
-      },
-      "ACCURACY": {
-        "min": 2,
-        "max": 27
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 9
-      }
-    },
-    "type": "BOW",
-    "dataId": "AF_BOW_LW_VKTR_01_2",
-    "grows": {
-      "ARTIFACT_50": {
-        "dataId": "ARTIFACT_50",
-        "names": {
-          "en": "ARTIFACT_50",
-          "fr": "ARTIFACT_50"
-        },
-        "curve": {
-          "MAX_LV": 30
-        }
-      }
-    },
-    "skills": [
-      []
-    ],
-    "rarity": "UR",
-    "image": "lapswpn_bow_011",
-    "equippableJobs": [
-      "JB_LW_HUN_FIRE",
-      "JB_LW_FINA",
-      "JB_FF4_ROSA",
-      "JB_LW_ARC_FIRE"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {}
     ],
     "acquisition": {
       "type": "Unknown"

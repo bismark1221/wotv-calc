@@ -15826,6 +15826,168 @@
       }
     ]
   },
+  "VC_LW_MRLT": {
+    "dataId": "VC_LW_MRLT",
+    "names": {
+      "en": "Dancing Flame of Death, Marilith",
+      "fr": "Marilith, la Flamme dansante funeste"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 280
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 31,
+        "max": 126
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 7,
+        "max": 28
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmrlt",
+    "slug": "dancing-flame-of-death-marilith",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 5,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MRLT_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MRLT_GS",
+            "fr": "SK_VC_LW_MRLT_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 1,
+              "maxValue": 6,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MRLT_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MRLT_GSAW",
+            "fr": "SK_VC_LW_MRLT_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MRLT_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MRLT_P",
+            "fr": "SK_VC_LW_MRLT_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MRLT_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MRLT_PAW",
+            "fr": "SK_VC_LW_MRLT_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": []
+      }
+    ]
+  },
   "VC_LW_CACT": {
     "dataId": "VC_LW_CACT",
     "names": {

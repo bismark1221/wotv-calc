@@ -7782,14 +7782,14 @@
       "": {
         "drop": 59.2622963236542
       },
-      "IT_JB_AXE_03": {
-        "drop": 66.59874361239773
-      },
       "IT_AF_LW_SPE_002": {
         "drop": 13.805641333255926
       },
       "IT_JB_MM_VIK_3": {
         "drop": 5.066411835182716
+      },
+      "IT_JB_AXE_03": {
+        "drop": 66.59874361239773
       },
       "IT_JB_MM_BEA_3": {
         "drop": 5.066411835182716
@@ -12561,6 +12561,9 @@
       "IT_AF_LW_HLM_003": {
         "drop": 13.876349178096397
       },
+      "": {
+        "drop": 95.74633140359477
+      },
       "IT_JB_SWORD_01": {
         "drop": 42.82703388635223
       },
@@ -12572,9 +12575,6 @@
       },
       "IT_JB_AXE_02": {
         "drop": 42.82703388635223
-      },
-      "": {
-        "drop": 95.74633140359477
       },
       "IT_JB_EM_WATER_1": {
         "drop": 42.82703388635223
@@ -14427,7 +14427,7 @@
     },
     "names": {
       "en": "1:7:3:8 «Solidus», Retreat",
-      "fr": "1:7:3:8 « Solidus », repli !"
+      "fr": "1:7:3:8 « Solidus », replie !"
     },
     "exp": 7820,
     "nrg": 6,
@@ -14688,10 +14688,10 @@
       "IT_JB_MM_MST_2": {
         "drop": 2.6097084192432694
       },
-      "IT_JB_MM_LW_GRSR_3": {
+      "IT_JB_MM_LW_GRSR_2": {
         "drop": 2.6097084192432694
       },
-      "IT_JB_MM_LW_GRSR_2": {
+      "IT_JB_MM_LW_GRSR_3": {
         "drop": 2.6097084192432694
       },
       "IT_JB_MM_BEA_3": {
@@ -23155,10 +23155,10 @@
         "drop": 2.7649821375493095
       },
       "IT_AF_MAT_SAP_03": {
-        "drop": 43.203956244797
+        "drop": 44.86454041392469
       },
       "IT_AF_MAT_SAND_03": {
-        "drop": 43.203956244797
+        "drop": 44.86454041392469
       },
       "IT_AF_LW_BSW_002": {
         "drop": 13.150134660302884
@@ -23188,7 +23188,7 @@
         "drop": 11.819807415578076
       },
       "": {
-        "drop": 99.5632166479548
+        "drop": 99.51922750210218
       }
     },
     "names": {
@@ -24210,6 +24210,717 @@
       "fr": "1:12:1:10 Je ne bougerai pas d'un pouce non plus"
     },
     "exp": 9883,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 11,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120201": {
+    "dataId": "QE_ST_01120201",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_MNK_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MNK_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MKN_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MKN_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_LW_RNG_003": {
+        "drop": 13.90671517846203
+      },
+      "": {
+        "drop": 98.67548361330152
+      },
+      "IT_JB_SPEAR_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_SPEAR_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_JSWORD_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_JSWORD_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_WIND_3": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_WIND_4": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 10.703602446155013
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 10.703602446155013
+      }
+    },
+    "names": {
+      "en": "1:12:2:1 In One Hit",
+      "fr": "1:12:2:1 En un coup"
+    },
+    "exp": 8602,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120202": {
+    "dataId": "QE_ST_01120202",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_GUN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_GUN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_HUN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_HUN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_SWO_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_GUN_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_GUN_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SSWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SSWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_FIRE_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_FIRE_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:2 Forcing Through I",
+      "fr": "1:12:2:2 Forcer le passage I"
+    },
+    "exp": 8646,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120203": {
+    "dataId": "QE_ST_01120203",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_WGN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_WGN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_ARC_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_ARC_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_BSW_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_SWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_FIST_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_FIST_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_THUNDER_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_THUNDER_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:3 Forcing Through II",
+      "fr": "1:12:2:3 Forcer le passage II"
+    },
+    "exp": 8646,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120204": {
+    "dataId": "QE_ST_01120204",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_VIK_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_VIK_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_BEA_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_BEA_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_KAT_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_STAFF_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_STAFF_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_KUNAI_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_KUNAI_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_WATER_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_WATER_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:4 Forcing Through III",
+      "fr": "1:12:2:4 Forcer le passage III"
+    },
+    "exp": 9138,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120205": {
+    "dataId": "QE_ST_01120205",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_MST_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MST_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_RDM_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_RDM_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_FIS_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_AXE_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_AXE_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_MACE_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_MACE_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_SHINE_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_SHINE_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:5 Do Not Underestimate Me",
+      "fr": "1:12:2:5 Ne me sous-estime pas"
+    },
+    "exp": 9184,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120206": {
+    "dataId": "QE_ST_01120206",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_TIM_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_TIM_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MGK_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MGK_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_AXE_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_SPEAR_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SPEAR_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_LSWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_LSWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_DARK_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_DARK_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:6 A Promise Among Men",
+      "fr": "1:12:2:6 Pacte entre hommes"
+    },
+    "exp": 9184,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120207": {
+    "dataId": "QE_ST_01120207",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_LW_STRN_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_LW_STRN_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MKN_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MKN_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MSW_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MSW_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_LW_SPE_002": {
+        "drop": 13.90671517846203
+      },
+      "IT_JB_JSWORD_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_JSWORD_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_GUN_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_GUN_04": {
+        "drop": 45.38593563150501
+      },
+      "": {
+        "drop": 98.5552523910249
+      },
+      "IT_JB_EM_SOIL_3": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_SOIL_4": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 10.703602446155013
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 10.703602446155013
+      }
+    },
+    "names": {
+      "en": "1:12:2:7 The Second Flash",
+      "fr": "1:12:2:7 Nouvel éclair"
+    },
+    "exp": 9771,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120208": {
+    "dataId": "QE_ST_01120208",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_KNT_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_KNT_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_HUN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_HUN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_DAG_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_BOW_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_BOW_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SSWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SSWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_ICE_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_ICE_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:8 As Far from Here as We Can",
+      "fr": "1:12:2:8 Aussi loin que possible"
+    },
+    "exp": 9793,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120209": {
+    "dataId": "QE_ST_01120209",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_LW_RAIN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_LW_RAIN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_ARC_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_ARC_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_NKN_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_MACE_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_MACE_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_FIST_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_FIST_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_WIND_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_WIND_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:2:9 Those of No Importance",
+      "fr": "1:12:2:9 De simples insectes"
+    },
+    "exp": 9793,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120210": {
+    "dataId": "QE_ST_01120210",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_WGN_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_WGN_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_LW_GRSR_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_LW_GRSR_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_PSI_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_PSI_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_LW_BOW_002": {
+        "drop": 13.405824919795325
+      },
+      "IT_AF_LW_GLO_002": {
+        "drop": 13.405824919795325
+      },
+      "IT_JB_KUNAI_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_KUNAI_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_AXE_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_AXE_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_GLOVE_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_GLOVE_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_EM_FIRE_3": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_EM_FIRE_4": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.947151451917076
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 11.947151451917076
+      },
+      "": {
+        "drop": 98.8565517323156
+      }
+    },
+    "names": {
+      "en": "1:12:2:10 I Have Returned to You",
+      "fr": "1:12:2:10 Je suis revenu pour toi"
+    },
+    "exp": 9905,
     "nrg": 6,
     "jp": 6,
     "enemies": 11,
@@ -32730,6 +33441,48 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_CH_LW_CRIS": {
+    "dataId": "QE_CH_LW_CRIS",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 38.74383399523467
+      },
+      "IT_JB_MM_GUN_3": {
+        "drop": 12.71772159805654
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 38.74383399523467
+      },
+      "IT_AF_MAT_HEART_01": {
+        "drop": 38.74383399523467
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 12.71772159805654
+      },
+      "IT_JB_GUN_03": {
+        "drop": 84.99053647030009
+      },
+      "IT_AF_LW_GUN_001": {
+        "drop": 14.847520892542523
+      },
+      "IT_JB_EM_WATER_3": {
+        "drop": 57.20701998702116
+      },
+      "": {
+        "drop": 99.84676706636893
+      }
+    },
+    "names": {
+      "en": "Creysse",
+      "fr": "Creysse"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_EV_GL_CDOWN_01_9": {
     "dataId": "QE_EV_GL_CDOWN_01_9",
     "items": {},
@@ -36703,6 +37456,376 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_EV_CRIS_01": {
+    "dataId": "QE_EV_CRIS_01",
+    "items": {
+      "": {
+        "drop": 99.09765075355034
+      },
+      "IT_JB_MM_ALL": {
+        "drop": 56.951469043120284
+      },
+      "IT_JB_GUN_01": {
+        "drop": 40.46110703918119
+      },
+      "IT_JB_SWORD_01": {
+        "drop": 40.46110703918119
+      },
+      "IT_JB_MM_GUN": {
+        "drop": 7.253813066126607
+      },
+      "IT_JB_MM_MKN": {
+        "drop": 7.253813066126607
+      },
+      "IT_JB_EM_WATER_1": {
+        "drop": 40.46110703918119
+      },
+      "IT_JB_EM_SOIL_1": {
+        "drop": 40.46110703918119
+      },
+      "IT_JB_IM_DRAGON_1": {
+        "drop": 7.253813066126607
+      },
+      "IT_AF_LW_SWO_001": {
+        "drop": 14.05186051635485
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 33.73877659435968
+      }
+    },
+    "names": {
+      "en": "Creysse Acquisition Quest I",
+      "fr": "Quête d'acquisition de Creysse I"
+    },
+    "exp": 972,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 7,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CRIS_02": {
+    "dataId": "QE_EV_CRIS_02",
+    "items": {
+      "": {
+        "drop": 99.98209934275742
+      },
+      "IT_JB_MM_ALL_2": {
+        "drop": 56.53945952984288
+      },
+      "IT_JB_GUN_02": {
+        "drop": 65.352160750229
+      },
+      "IT_JB_MM_GUN_2": {
+        "drop": 4.928566852068801
+      },
+      "IT_JB_EM_WATER_2": {
+        "drop": 65.352160750229
+      },
+      "IT_JB_IM_DRAGON_2": {
+        "drop": 4.928566852068801
+      },
+      "IT_AF_LW_GUN_001": {
+        "drop": 14.064154851311933
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 33.55148653270126
+      }
+    },
+    "names": {
+      "en": "Creysse Acquisition Quest II",
+      "fr": "Quête d'acquisition de Creysse II"
+    },
+    "exp": 1791,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CRIS_03": {
+    "dataId": "QE_EV_CRIS_03",
+    "items": {
+      "": {
+        "drop": 99.99761113861264
+      },
+      "IT_JB_MM_ALL_2": {
+        "drop": 56.38376894182194
+      },
+      "IT_JB_SWORD_02": {
+        "drop": 65.13215599
+      },
+      "IT_JB_MM_MKN_2": {
+        "drop": 4.888986953422812
+      },
+      "IT_JB_EM_SOIL_2": {
+        "drop": 65.13215599
+      },
+      "IT_JB_IM_ANGEL_2": {
+        "drop": 4.888986953422812
+      },
+      "IT_AF_LW_SWO_001": {
+        "drop": 14.026955774085692
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 33.516736400849894
+      }
+    },
+    "names": {
+      "en": "Creysse Acquisition Quest III",
+      "fr": "Quête d'acquisition de Creysse III"
+    },
+    "exp": 2679,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CRIS_04": {
+    "dataId": "QE_EV_CRIS_04",
+    "items": {
+      "": {
+        "drop": 99.88010412266718
+      },
+      "IT_JB_MM_ALL_3": {
+        "drop": 56.75367161500643
+      },
+      "IT_JB_GUN_03": {
+        "drop": 65.62732930928506
+      },
+      "IT_JB_MM_GUN_3": {
+        "drop": 4.928811147857791
+      },
+      "IT_JB_EM_WATER_3": {
+        "drop": 65.62732930928506
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 4.928811147857791
+      },
+      "IT_AF_LW_GUN_001": {
+        "drop": 14.082767178250887
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 33.64957887395615
+      }
+    },
+    "names": {
+      "en": "Creysse Acquisition Quest IV",
+      "fr": "Quête d'acquisition de Creysse IV"
+    },
+    "exp": 3519,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 8,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CRIS_05": {
+    "dataId": "QE_EV_CRIS_05",
+    "items": {
+      "": {
+        "drop": 99.98209934275742
+      },
+      "IT_JB_MM_ALL_3": {
+        "drop": 56.53945952984288
+      },
+      "IT_JB_SWORD_03": {
+        "drop": 65.352160750229
+      },
+      "IT_JB_MM_MKN_3": {
+        "drop": 4.928566852068801
+      },
+      "IT_JB_EM_SOIL_3": {
+        "drop": 65.352160750229
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 4.928566852068801
+      },
+      "IT_AF_LW_SWO_001": {
+        "drop": 14.064154851311933
+      },
+      "IT_AF_MAT_SAND_01": {
+        "drop": 33.55148653270126
+      }
+    },
+    "names": {
+      "en": "Creysse Acquisition Quest V",
+      "fr": "Quête d'acquisition de Creysse V"
+    },
+    "exp": 4745,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CRIS_EX1": {
+    "dataId": "QE_EV_CRIS_EX1",
+    "items": {
+      "": {
+        "drop": 98.93341765383009
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 9.566755481091409
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 29.916487283858444
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 93.33112884062221
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 13.115859913809407
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 32.80691953287441
+      },
+      "IT_AF_EXP_02": {
+        "drop": 90.2719854185682
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.98625322599037
+      }
+    },
+    "names": {
+      "en": "High Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Quête EX d'acquisition de Creysse [Très difficile]"
+    },
+    "exp": 5623,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 11,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_CRIS_EX2": {
+    "dataId": "QE_EV_CRIS_EX2",
+    "items": {
+      "": {
+        "drop": 99.5485811389795
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 40.01842603947953
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 63.233361234511776
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 32.73150918470167
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      }
+    },
+    "names": {
+      "en": "Brutal Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Quête EX d'acquisition de Creysse [Super difficile]"
+    },
+    "exp": 8733,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_CR_EX1": {
+    "dataId": "QE_MU_EV_CR_EX1",
+    "items": {
+      "": {
+        "drop": 98.93341765383009
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 9.566755481091409,
+        "host": 2
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 29.916487283858444,
+        "host": 8
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 93.33112884062221,
+        "host": 72
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 13.115859913809407,
+        "host": 8
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 32.80691953287441,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 90.2719854185682
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.98625322599037
+      }
+    },
+    "names": {
+      "en": "High Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Quête EX d'acquisition de Creysse [Très difficile]"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 11,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_CR_EX2": {
+    "dataId": "QE_MU_EV_CR_EX2",
+    "items": {
+      "": {
+        "drop": 99.5485811389795
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 40.01842603947953,
+        "host": 2
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 63.233361234511776,
+        "host": 8
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 68.4679816766612,
+        "host": 72
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 32.73150918470167,
+        "host": 8
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 68.4679816766612,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      }
+    },
+    "names": {
+      "en": "Brutal Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Quête EX d'acquisition de Creysse [Super difficile]"
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_EV_LSWL_01": {
     "dataId": "QE_EV_LSWL_01",
     "items": {
@@ -37925,31 +39048,28 @@
     "dataId": "QE_EV_01_05",
     "items": {
       "IT_JB_MM_ALL_2": {
-        "drop": 58.65182220958239
+        "drop": 58.86523117508801
       },
       "IT_JB_AXE_02": {
-        "drop": 65.34826350170803
+        "drop": 65.56711063528363
       },
       "IT_JB_MM_VIK_2": {
-        "drop": 4.928085040734325
+        "drop": 4.955212314397657
       },
       "IT_JB_EM_WIND_2": {
-        "drop": 65.34826350170803
+        "drop": 65.56711063528363
       },
       "IT_JB_IM_DRAGON_2": {
-        "drop": 4.928085040734325
+        "drop": 4.955212314397657
       },
       "IT_AF_LW_SWO_001": {
-        "drop": 14.062841421660016
+        "drop": 14.136772475132421
       },
       "IT_AF_MAT_HEART_01": {
-        "drop": 33.61126030395148
-      },
-      "IT_JB_MM_SWN_2": {
-        "drop": 4.928085040734325
+        "drop": 33.76777263464987
       },
       "": {
-        "drop": 99.97682483244478
+        "drop": 99.97856599514307
       }
     },
     "names": {
@@ -46061,6 +47181,20 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_SB_MRLT_01": {
+    "dataId": "QE_SB_MRLT_01",
+    "items": {},
+    "names": {
+      "en": "Marilith Battle",
+      "fr": "Combat contre Marilith"
+    },
+    "exp": 5800,
+    "nrg": 30,
+    "jp": 15,
+    "enemies": 1,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_RAID_EV_06_01": {
     "dataId": "QE_RAID_EV_06_01",
     "items": {},
@@ -48037,7 +49171,7 @@
     "items": {
       "IT_JB_MM_ALL_4": {
         "drop": 91.63562565251428,
-        "host": 29.745308310991955
+        "host": 29.89276139410188
       },
       "IT_JB_SWORD_04": {
         "drop": 29.810860018793907,
@@ -48136,8 +49270,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_ARC_4": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 55.0437739169425
@@ -48159,7 +49292,7 @@
     "items": {
       "IT_JB_MM_ALL_4": {
         "drop": 91.63562565251428,
-        "host": 29.597855227882036
+        "host": 29.745308310991955
       },
       "IT_JB_SWORD_04": {
         "drop": 29.810860018793907,
@@ -48262,8 +49395,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_BEA_4": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 49.93907383333268
@@ -48411,7 +49543,7 @@
     "items": {
       "IT_JB_MM_ALL_5": {
         "drop": 87.14140054498614,
-        "host": 29.745308310991955
+        "host": 29.89276139410188
       },
       "IT_JB_SWORD_05": {
         "drop": 26.545669889146858,
@@ -48510,8 +49642,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_ARC_5": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 86.51770828541044
@@ -48533,7 +49664,7 @@
     "items": {
       "IT_JB_MM_ALL_5": {
         "drop": 87.14140054498614,
-        "host": 29.597855227882036
+        "host": 29.745308310991955
       },
       "IT_JB_SWORD_05": {
         "drop": 26.545669889146858,
@@ -48636,8 +49767,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_BEA_5": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 84.7554352132346

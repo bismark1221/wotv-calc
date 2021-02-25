@@ -566,7 +566,7 @@
         },
         {
             "key": "SK_LW_SAM_M_4",
-            "value": "Kongō"
+            "value": "Kongô"
         },
         {
             "key": "SK_LW_SAM_S_4",
@@ -606,7 +606,7 @@
         },
         {
             "key": "SK_LW_SAM_M_4_SUB",
-            "value": "Kongō"
+            "value": "Kongô"
         },
         {
             "key": "SK_LW_SAM_S_4_SUB",
@@ -3621,6 +3621,26 @@
             "value": "Sniper de haut vol"
         },
         {
+            "key": "SK_LW_ARC_M_1_SUB",
+            "value": "Flèche ralentie"
+        },
+        {
+            "key": "SK_LW_ARC_M_2_SUB",
+            "value": "Contre-propagation"
+        },
+        {
+            "key": "SK_LW_ARC_M_3_SUB",
+            "value": "Flèche anti-barrière"
+        },
+        {
+            "key": "SK_LW_ARC_S_1",
+            "value": "Tir décomposé"
+        },
+        {
+            "key": "SK_LW_ARC_S_2",
+            "value": "Cible"
+        },
+        {
             "key": "SK_LW_SAKR_ATK",
             "value": "Attaque normale"
         },
@@ -3811,6 +3831,90 @@
         {
             "key": "SK_LW_BEA_P_2",
             "value": "Âme guerrière"
+        },
+        {
+            "key": "SK_LW_PSI_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_PSI_M_1",
+            "value": "Détonation"
+        },
+        {
+            "key": "SK_LW_PSI_M_2",
+            "value": "Rupture de Chi double"
+        },
+        {
+            "key": "SK_LW_PSI_M_3",
+            "value": "Barrière de Chi"
+        },
+        {
+            "key": "SK_LW_PSI_S_1_INIT",
+            "value": "Tir de Chi"
+        },
+        {
+            "key": "SK_LW_PSI_S_2_INIT",
+            "value": "Pulsations"
+        },
+        {
+            "key": "SK_LW_PSI_S_3",
+            "value": "Déluge de Chi"
+        },
+        {
+            "key": "SK_LW_PSI_S_4",
+            "value": "Rajeunissement"
+        },
+        {
+            "key": "SK_LW_PSI_R_1",
+            "value": "Réactivité++"
+        },
+        {
+            "key": "SK_LW_PSI_P_1",
+            "value": "Vitalité++"
+        },
+        {
+            "key": "SK_LW_PSI_P_2",
+            "value": "Amplification de Chi"
+        },
+        {
+            "key": "SK_LW_MSW_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_MSW_M_1",
+            "value": "Vacuité instantanée"
+        },
+        {
+            "key": "SK_LW_MSW_M_2",
+            "value": "Tranchant mutilant"
+        },
+        {
+            "key": "SK_LW_MSW_M_3",
+            "value": "Concentration"
+        },
+        {
+            "key": "SK_LW_MSW_S_1_INIT",
+            "value": "Lame étourdissante"
+        },
+        {
+            "key": "SK_LW_MSW_S_2_INIT",
+            "value": "Résistance double"
+        },
+        {
+            "key": "SK_LW_MSW_S_3",
+            "value": "Épuiz' PA"
+        },
+        {
+            "key": "SK_LW_MSW_S_4",
+            "value": "Tranchant rotatif"
+        },
+        {
+            "key": "SK_LW_MSW_R_1",
+            "value": "Contre-balance"
+        },
+        {
+            "key": "SK_LW_MSW_P_1",
+            "value": "Maîtrise de la lame occulte"
         },
         {
             "key": "SK_LW_TU_BLM_ICE",
@@ -4993,6 +5097,26 @@
             "value": "Reniflement"
         },
         {
+            "key": "SK_MRLT_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_MRLT_M_01",
+            "value": "Ténèbres"
+        },
+        {
+            "key": "SK_MRLT_M_02",
+            "value": "Danse du sabre"
+        },
+        {
+            "key": "SK_MRLT_M_03",
+            "value": "Flamme triple"
+        },
+        {
+            "key": "SK_MRLT_R_01",
+            "value": "Mauvais œil"
+        },
+        {
             "key": "SK_CHCB2_ATK",
             "value": "Attaque normale"
         },
@@ -5385,6 +5509,14 @@
             "value": "Récompense hivernale"
         },
         {
+            "key": "SK_LB_LW_GABL",
+            "value": "Concentration de Chi"
+        },
+        {
+            "key": "SK_LB_LW_ELSR",
+            "value": "Grondement nocturne"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -5515,6 +5647,10 @@
         {
             "key": "SK_SMN_TYPN",
             "value": "Tempête"
+        },
+        {
+            "key": "SK_SMN_MRLT",
+            "value": "Flamme triple"
         },
         {
             "key": "SK_US_POTION",
@@ -6034,6 +6170,18 @@
         },
         {
             "key": "SK_MA_LW_VKTR_01",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_GABL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_ELSR",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_CRIS",
             "value": "Aptitude maître"
         },
         {
@@ -6579,6 +6727,18 @@
         {
             "key": "SK_ACC_LW_VKTR_01_1",
             "value": "Rendez-vous hivernal"
+        },
+        {
+            "key": "SK_ACC_LW_GABL_1_1",
+            "value": "Déferlement enragé"
+        },
+        {
+            "key": "SK_ACC_LW_ELSR_1_1",
+            "value": "Impact saisissant"
+        },
+        {
+            "key": "SK_GUN_LW_CRIS_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -7606,6 +7766,14 @@
         },
         {
             "key": "SK_VC_LW_APPLE_GSAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MRLT_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MRLT_GSAW",
             "value": ""
         },
         {
@@ -8713,6 +8881,14 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_MRLT_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_MRLT_PAW",
+            "value": ""
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "PV max ↑ 100 - 99 900"
         },
@@ -8750,7 +8926,7 @@
         },
         {
             "key": "SK_BTL_LUK_1-999_U",
-            "value": "CHA ↑ 1 - 999"
+            "value": "Chance ↑ 1 - 999"
         },
         {
             "key": "SK_BTL_BRAVE_1-100_U",
@@ -8814,7 +8990,7 @@
         },
         {
             "key": "SK_BTL_LUK_1-999_D",
-            "value": "CHA ↓ 1 - 999"
+            "value": "Chance ↓ 1 - 999"
         },
         {
             "key": "SK_BTL_BRAVE_1-100_D",
@@ -9530,7 +9706,7 @@
         },
         {
             "key": "SK_BTL_LUK_1-999_U_PA",
-            "value": "CHA ↑ 1 - 999 (Passif)"
+            "value": "Chance ↑ 1 - 999 (Passif)"
         },
         {
             "key": "SK_BTL_HATE_1-100_U_PA",
@@ -9638,7 +9814,7 @@
         },
         {
             "key": "SK_BTL_DONMV_1-100_D",
-            "value": "Chance [Immobilisation] ↓ 1 - 100"
+            "value": "Chance d'altération d'état [Immobilisation] ↓ 1 - 100"
         },
         {
             "key": "SK_BTL_STUN_1-100_U",

@@ -183,6 +183,19 @@
     "gils": 1500,
     "chests": 2
   },
+  "QE_EV_GIL_D4": {
+    "dataId": "QE_EV_GIL_D4",
+    "items": {},
+    "names": {
+      "en": "ギルの間（超級）"
+    },
+    "exp": 6000,
+    "nrg": 24,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_EV_GIL_01": {
     "dataId": "QE_EV_GIL_01",
     "items": {
@@ -248,6 +261,19 @@
     "enemies": 7,
     "gils": 1500,
     "chests": 2
+  },
+  "QE_EV_GIL_04": {
+    "dataId": "QE_EV_GIL_04",
+    "items": {},
+    "names": {
+      "en": "ギルの間（超級）"
+    },
+    "exp": 6000,
+    "nrg": 24,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
   },
   "QE_EV_AFEXP_D1": {
     "dataId": "QE_EV_AFEXP_D1",
@@ -8280,14 +8306,14 @@
       "": {
         "drop": 59.2622963236542
       },
-      "IT_JB_AXE_03": {
-        "drop": 66.59874361239773
-      },
       "IT_AF_LW_SPE_002": {
         "drop": 13.805641333255926
       },
       "IT_JB_MM_VIK_3": {
         "drop": 5.066411835182716
+      },
+      "IT_JB_AXE_03": {
+        "drop": 66.59874361239773
       },
       "IT_JB_MM_BEA_3": {
         "drop": 5.066411835182716
@@ -12970,6 +12996,9 @@
       "IT_AF_LW_HLM_003": {
         "drop": 13.876349178096397
       },
+      "": {
+        "drop": 95.74633140359477
+      },
       "IT_JB_SWORD_01": {
         "drop": 42.82703388635223
       },
@@ -12981,9 +13010,6 @@
       },
       "IT_JB_AXE_02": {
         "drop": 42.82703388635223
-      },
-      "": {
-        "drop": 95.74633140359477
       },
       "IT_JB_EM_WATER_1": {
         "drop": 42.82703388635223
@@ -15069,10 +15095,10 @@
       "IT_JB_MM_MST_2": {
         "drop": 2.6097084192432694
       },
-      "IT_JB_MM_LW_GRSR_3": {
+      "IT_JB_MM_LW_GRSR_2": {
         "drop": 2.6097084192432694
       },
-      "IT_JB_MM_LW_GRSR_2": {
+      "IT_JB_MM_LW_GRSR_3": {
         "drop": 2.6097084192432694
       },
       "IT_JB_MM_BEA_3": {
@@ -23422,10 +23448,10 @@
         "drop": 2.7649821375493095
       },
       "IT_AF_MAT_SAP_03": {
-        "drop": 43.203956244797
+        "drop": 44.86454041392469
       },
       "IT_AF_MAT_SAND_03": {
-        "drop": 43.203956244797
+        "drop": 44.86454041392469
       },
       "IT_AF_LW_BSW_002": {
         "drop": 13.150134660302884
@@ -23455,7 +23481,7 @@
         "drop": 11.819807415578076
       },
       "": {
-        "drop": 99.5632166479548
+        "drop": 99.51922750210218
       }
     },
     "names": {
@@ -24527,7 +24553,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:1 たったの一撃で"
+      "en": "1:12:2:1 たったの一撃で - In One Hit"
     },
     "exp": 8602,
     "nrg": 6,
@@ -24595,7 +24621,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:2 強行突破あるのみ１"
+      "en": "1:12:2:2 強行突破あるのみ１ - Forcing Through I"
     },
     "exp": 8646,
     "nrg": 6,
@@ -24663,7 +24689,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:3 強行突破あるのみ２"
+      "en": "1:12:2:3 強行突破あるのみ２ - Forcing Through II"
     },
     "exp": 8646,
     "nrg": 6,
@@ -24731,7 +24757,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:4 強行突破あるのみ３"
+      "en": "1:12:2:4 強行突破あるのみ３ - Forcing Through III"
     },
     "exp": 9138,
     "nrg": 6,
@@ -24799,7 +24825,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:5 甘く見るな"
+      "en": "1:12:2:5 甘く見るな - Do Not Underestimate Me"
     },
     "exp": 9184,
     "nrg": 6,
@@ -24867,7 +24893,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:6 男同士の約束"
+      "en": "1:12:2:6 男同士の約束 - A Promise Among Men"
     },
     "exp": 9184,
     "nrg": 6,
@@ -24941,7 +24967,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:7 再びの閃撃"
+      "en": "1:12:2:7 再びの閃撃 - The Second Flash"
     },
     "exp": 9771,
     "nrg": 6,
@@ -25009,7 +25035,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:8 少しでも遠くへ"
+      "en": "1:12:2:8 少しでも遠くへ - As Far from Here as We Can"
     },
     "exp": 9793,
     "nrg": 6,
@@ -25077,7 +25103,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:9 雑魚"
+      "en": "1:12:2:9 雑魚 - Those of No Importance"
     },
     "exp": 9793,
     "nrg": 6,
@@ -25160,7 +25186,7 @@
       }
     },
     "names": {
-      "en": "1:12:2:10 ただいま"
+      "en": "1:12:2:10 ただいま - I Have Returned to You"
     },
     "exp": 9905,
     "nrg": 6,
@@ -28287,6 +28313,136 @@
       "en": "1:14:3:10 笑顔のために"
     },
     "exp": 10595,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150101": {
+    "dataId": "QE_ST_01150101",
+    "items": {},
+    "names": {
+      "en": "1:15:1:1 氷の牙"
+    },
+    "exp": 9816,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150102": {
+    "dataId": "QE_ST_01150102",
+    "items": {},
+    "names": {
+      "en": "1:15:1:2 退却"
+    },
+    "exp": 9838,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150103": {
+    "dataId": "QE_ST_01150103",
+    "items": {},
+    "names": {
+      "en": "1:15:1:3 マシュリーは……"
+    },
+    "exp": 9838,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150104": {
+    "dataId": "QE_ST_01150104",
+    "items": {},
+    "names": {
+      "en": "1:15:1:4 もっとおもしろいこと"
+    },
+    "exp": 9860,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150105": {
+    "dataId": "QE_ST_01150105",
+    "items": {},
+    "names": {
+      "en": "1:15:1:5 ≪堅牢≫進軍す"
+    },
+    "exp": 9883,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150106": {
+    "dataId": "QE_ST_01150106",
+    "items": {},
+    "names": {
+      "en": "1:15:1:6 突然の開戦"
+    },
+    "exp": 9883,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150107": {
+    "dataId": "QE_ST_01150107",
+    "items": {},
+    "names": {
+      "en": "1:15:1:7 ボージス城へ１"
+    },
+    "exp": 9905,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150108": {
+    "dataId": "QE_ST_01150108",
+    "items": {},
+    "names": {
+      "en": "1:15:1:8 ボージス城へ２"
+    },
+    "exp": 9927,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150109": {
+    "dataId": "QE_ST_01150109",
+    "items": {},
+    "names": {
+      "en": "1:15:1:9 だからこそ"
+    },
+    "exp": 9927,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150110": {
+    "dataId": "QE_ST_01150110",
+    "items": {},
+    "names": {
+      "en": "1:15:1:10 不吉なる星の動き"
+    },
+    "exp": 10572,
     "nrg": 6,
     "jp": 6,
     "enemies": 0,
@@ -36648,7 +36804,7 @@
       }
     },
     "names": {
-      "en": "クレイス"
+      "en": "クレイス - Creysse"
     },
     "exp": 6400,
     "nrg": 25,
@@ -37070,6 +37226,32 @@
     "items": {},
     "names": {
       "en": "ヘレナ（黒衣の魔女）"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_CH_LW_THLA_01": {
+    "dataId": "QE_CH_LW_THLA_01",
+    "items": {},
+    "names": {
+      "en": "サリア（バレンタイン）"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_CH_LW_CMLO": {
+    "dataId": "QE_CH_LW_CMLO",
+    "items": {},
+    "names": {
+      "en": "カミッロ"
     },
     "exp": 6400,
     "nrg": 25,
@@ -38242,6 +38424,19 @@
     "items": {},
     "names": {
       "en": "限定ハードクエスト（ヘレナ（黒衣の魔女））"
+    },
+    "exp": 7228,
+    "nrg": 8,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_THLA_06": {
+    "dataId": "QE_EV_THLA_06",
+    "items": {},
+    "names": {
+      "en": "限定ハードクエスト（サリア（バレンタイン））"
     },
     "exp": 7228,
     "nrg": 8,
@@ -39581,6 +39776,45 @@
     "nrg": 12,
     "jp": 6,
     "enemies": 7,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_FF1_EX_02": {
+    "dataId": "QE_EV_FF1_EX_02",
+    "items": {},
+    "names": {
+      "en": "FINAL FANTASY Ⅰ【EX2】"
+    },
+    "exp": 5623,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_FF1_EX_03": {
+    "dataId": "QE_EV_FF1_EX_03",
+    "items": {},
+    "names": {
+      "en": "超高難度　FINAL FANTASY Ⅰ【EX1】"
+    },
+    "exp": 8733,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_FF1_EX_04": {
+    "dataId": "QE_EV_FF1_EX_04",
+    "items": {},
+    "names": {
+      "en": "超高難度　FINAL FANTASY Ⅰ【EX2】"
+    },
+    "exp": 8733,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -45689,6 +45923,32 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_SB_TYPN_02": {
+    "dataId": "QE_SB_TYPN_02",
+    "items": {},
+    "names": {
+      "en": "高難度 テュポーンチャレンジ"
+    },
+    "exp": 5933,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_SB_TYPN_03": {
+    "dataId": "QE_SB_TYPN_03",
+    "items": {},
+    "names": {
+      "en": "超高難度 テュポーンチャレンジ"
+    },
+    "exp": 10634,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_SB_SHIV_02": {
     "dataId": "QE_SB_SHIV_02",
     "items": {
@@ -46871,31 +47131,28 @@
     "dataId": "QE_EV_01_05",
     "items": {
       "IT_JB_MM_ALL_2": {
-        "drop": 58.65182220958239
+        "drop": 58.86523117508801
       },
       "IT_JB_AXE_02": {
-        "drop": 65.34826350170803
+        "drop": 65.56711063528363
       },
       "IT_JB_MM_VIK_2": {
-        "drop": 4.928085040734325
+        "drop": 4.955212314397657
       },
       "IT_JB_EM_WIND_2": {
-        "drop": 65.34826350170803
+        "drop": 65.56711063528363
       },
       "IT_JB_IM_DRAGON_2": {
-        "drop": 4.928085040734325
+        "drop": 4.955212314397657
       },
       "IT_AF_LW_SWO_001": {
-        "drop": 14.062841421660016
+        "drop": 14.136772475132421
       },
       "IT_AF_MAT_HEART_01": {
-        "drop": 33.61126030395148
-      },
-      "IT_JB_MM_SWN_2": {
-        "drop": 4.928085040734325
+        "drop": 33.76777263464987
       },
       "": {
-        "drop": 99.97682483244478
+        "drop": 99.97856599514307
       }
     },
     "names": {
@@ -50462,7 +50719,7 @@
       }
     },
     "names": {
-      "en": "クレイス獲得クエスト　クエスト1"
+      "en": "クレイス獲得クエスト　クエスト1 - Creysse Acquisition Quest I"
     },
     "exp": 972,
     "nrg": 6,
@@ -50500,7 +50757,7 @@
       }
     },
     "names": {
-      "en": "クレイス獲得クエスト　クエスト2"
+      "en": "クレイス獲得クエスト　クエスト2 - Creysse Acquisition Quest II"
     },
     "exp": 1791,
     "nrg": 6,
@@ -50538,7 +50795,7 @@
       }
     },
     "names": {
-      "en": "クレイス獲得クエスト　クエスト3"
+      "en": "クレイス獲得クエスト　クエスト3 - Creysse Acquisition Quest III"
     },
     "exp": 2679,
     "nrg": 6,
@@ -50576,7 +50833,7 @@
       }
     },
     "names": {
-      "en": "クレイス獲得クエスト　クエスト4"
+      "en": "クレイス獲得クエスト　クエスト4 - Creysse Acquisition Quest IV"
     },
     "exp": 3519,
     "nrg": 6,
@@ -50614,7 +50871,7 @@
       }
     },
     "names": {
-      "en": "クレイス獲得クエスト　クエスト5"
+      "en": "クレイス獲得クエスト　クエスト5 - Creysse Acquisition Quest V"
     },
     "exp": 4745,
     "nrg": 6,
@@ -50652,7 +50909,7 @@
       }
     },
     "names": {
-      "en": "高難度　クレイス獲得　EXクエスト"
+      "en": "高難度　クレイス獲得　EXクエスト - High Difficulty Creysse Acquisition Ex-Quest"
     },
     "exp": 5623,
     "nrg": 12,
@@ -50690,7 +50947,7 @@
       }
     },
     "names": {
-      "en": "超高難度　クレイス獲得　EXクエスト"
+      "en": "超高難度　クレイス獲得　EXクエスト - Brutal Difficulty Creysse Acquisition Ex-Quest"
     },
     "exp": 8733,
     "nrg": 12,
@@ -51180,6 +51437,136 @@
     "jp": 6,
     "enemies": 10,
     "gils": 1800,
+    "chests": 0
+  },
+  "QE_BR_SHINE_01": {
+    "dataId": "QE_BR_SHINE_01",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#1"
+    },
+    "exp": 480,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_02": {
+    "dataId": "QE_BR_SHINE_02",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#2"
+    },
+    "exp": 5436,
+    "nrg": 6,
+    "jp": 7,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_03": {
+    "dataId": "QE_BR_SHINE_03",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#3"
+    },
+    "exp": 10266,
+    "nrg": 6,
+    "jp": 9,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_04": {
+    "dataId": "QE_BR_SHINE_04",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#4"
+    },
+    "exp": 15252,
+    "nrg": 6,
+    "jp": 12,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_05": {
+    "dataId": "QE_BR_SHINE_05",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#5"
+    },
+    "exp": 17598,
+    "nrg": 6,
+    "jp": 15,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_06": {
+    "dataId": "QE_BR_SHINE_06",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#6"
+    },
+    "exp": 24807,
+    "nrg": 6,
+    "jp": 20,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_07": {
+    "dataId": "QE_BR_SHINE_07",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#7"
+    },
+    "exp": 24888,
+    "nrg": 6,
+    "jp": 25,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_08": {
+    "dataId": "QE_BR_SHINE_08",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#8"
+    },
+    "exp": 26199,
+    "nrg": 6,
+    "jp": 30,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_09": {
+    "dataId": "QE_BR_SHINE_09",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#9"
+    },
+    "exp": 30591,
+    "nrg": 6,
+    "jp": 35,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SHINE_10": {
+    "dataId": "QE_BR_SHINE_10",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（光）#10"
+    },
+    "exp": 33216,
+    "nrg": 6,
+    "jp": 50,
+    "enemies": 0,
+    "gils": 1500,
     "chests": 0
   },
   "QE_EV_ANV_19_10": {
@@ -52877,6 +53264,32 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_SB_ICDG_01": {
+    "dataId": "QE_SB_ICDG_01",
+    "items": {},
+    "names": {
+      "en": "フリーゼス戦"
+    },
+    "exp": 6100,
+    "nrg": 32,
+    "jp": 16,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_SB_ICDG_02": {
+    "dataId": "QE_SB_ICDG_02",
+    "items": {},
+    "names": {
+      "en": "フリーゼス戦（２）"
+    },
+    "exp": 6100,
+    "nrg": 32,
+    "jp": 16,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_SB_MABR_01": {
     "dataId": "QE_SB_MABR_01",
     "items": {},
@@ -52887,6 +53300,19 @@
     "nrg": 30,
     "jp": 15,
     "enemies": 6,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_SB_MABR_02": {
+    "dataId": "QE_SB_MABR_02",
+    "items": {},
+    "names": {
+      "en": "モルボル戦（２）"
+    },
+    "exp": 5800,
+    "nrg": 30,
+    "jp": 15,
+    "enemies": 0,
     "gils": 1500,
     "chests": 0
   },
@@ -53037,7 +53463,7 @@
     "dataId": "QE_SB_MRLT_01",
     "items": {},
     "names": {
-      "en": "マリリス戦"
+      "en": "マリリス戦 - Marilith Battle"
     },
     "exp": 5800,
     "nrg": 30,
@@ -53115,6 +53541,45 @@
     "nrg": 6,
     "jp": 0,
     "enemies": 7,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_FF1_EX_02": {
+    "dataId": "QE_MU_FF1_EX_02",
+    "items": {},
+    "names": {
+      "en": "FINAL FANTASY Ⅰ【EX2】"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_FF1_EX_03": {
+    "dataId": "QE_MU_FF1_EX_03",
+    "items": {},
+    "names": {
+      "en": "超高難度　FINAL FANTASY Ⅰ【EX1】"
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_FF1_EX_04": {
+    "dataId": "QE_MU_FF1_EX_04",
+    "items": {},
+    "names": {
+      "en": "超高難度　FINAL FANTASY Ⅰ【EX2】"
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -54048,6 +54513,19 @@
     "nrg": 6,
     "jp": 0,
     "enemies": 11,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_TYPN_04": {
+    "dataId": "QE_MU_TYPN_04",
+    "items": {},
+    "names": {
+      "en": "超高難度 テュポーンチャレンジ"
+    },
+    "exp": 10634,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -55336,7 +55814,7 @@
       }
     },
     "names": {
-      "en": "高難度　クレイス獲得　EXクエスト"
+      "en": "高難度　クレイス獲得　EXクエスト - High Difficulty Creysse Acquisition Ex-Quest"
     },
     "exp": 5623,
     "nrg": 6,
@@ -55379,7 +55857,7 @@
       }
     },
     "names": {
-      "en": "超高難度　クレイス獲得　EXクエスト"
+      "en": "超高難度　クレイス獲得　EXクエスト - Brutal Difficulty Creysse Acquisition Ex-Quest"
     },
     "exp": 8733,
     "nrg": 6,
@@ -58027,7 +58505,7 @@
     "items": {
       "IT_JB_MM_ALL_4": {
         "drop": 91.63562565251428,
-        "host": 29.745308310991955
+        "host": 29.89276139410188
       },
       "IT_JB_SWORD_04": {
         "drop": 29.810860018793907,
@@ -58126,8 +58604,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_ARC_4": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 55.0437739169425
@@ -58148,7 +58625,7 @@
     "items": {
       "IT_JB_MM_ALL_4": {
         "drop": 91.63562565251428,
-        "host": 29.597855227882036
+        "host": 29.745308310991955
       },
       "IT_JB_SWORD_04": {
         "drop": 29.810860018793907,
@@ -58251,8 +58728,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_BEA_4": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 49.93907383333268
@@ -58397,7 +58873,7 @@
     "items": {
       "IT_JB_MM_ALL_5": {
         "drop": 87.14140054498614,
-        "host": 29.745308310991955
+        "host": 29.89276139410188
       },
       "IT_JB_SWORD_05": {
         "drop": 26.545669889146858,
@@ -58496,8 +58972,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_ARC_5": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 86.51770828541044
@@ -58518,7 +58993,7 @@
     "items": {
       "IT_JB_MM_ALL_5": {
         "drop": 87.14140054498614,
-        "host": 29.597855227882036
+        "host": 29.745308310991955
       },
       "IT_JB_SWORD_05": {
         "drop": 26.545669889146858,
@@ -58621,8 +59096,7 @@
         "host": 0.14745308310991956
       },
       "IT_JB_MM_BEA_5": {
-        "drop": 9.475397937831449,
-        "host": 0.14745308310991956
+        "drop": 9.475397937831449
       },
       "": {
         "drop": 84.7554352132346
@@ -59574,6 +60048,16 @@
     "enemies": 0,
     "chests": 0
   },
+  "QE_ARENA_00015": {
+    "dataId": "QE_ARENA_00015",
+    "items": {},
+    "names": {
+      "en": "墓場Ⅲ"
+    },
+    "nrg": 8,
+    "enemies": 0,
+    "chests": 0
+  },
   "QE_GVG_00001": {
     "dataId": "QE_GVG_00001",
     "items": {},
@@ -59791,6 +60275,33 @@
     "items": {},
     "names": {
       "en": "遺跡Ⅱ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_FRE_0010": {
+    "dataId": "QE_PVP_FRE_0010",
+    "items": {},
+    "names": {
+      "en": "闘技場Ⅰ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_FRI_0028": {
+    "dataId": "QE_PVP_FRI_0028",
+    "items": {},
+    "names": {
+      "en": "闘技場Ⅰ(フリーマッチルール）"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_FRI_0027": {
+    "dataId": "QE_PVP_FRI_0027",
+    "items": {},
+    "names": {
+      "en": "墓場Ⅲ"
     },
     "enemies": 0,
     "chests": 0
@@ -60101,6 +60612,15 @@
     "enemies": 0,
     "chests": 0
   },
+  "QE_PVP_RANK_0009": {
+    "dataId": "QE_PVP_RANK_0009",
+    "items": {},
+    "names": {
+      "en": "闘技場Ⅰ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
   "QE_GHUNT_001": {
     "dataId": "QE_GHUNT_001",
     "items": {},
@@ -60150,6 +60670,19 @@
     "nrg": 0,
     "jp": 0,
     "enemies": 31,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_GHUNT_FF1_1": {
+    "dataId": "QE_GHUNT_FF1_1",
+    "items": {},
+    "names": {
+      "en": "FFⅠコラボ記念ギルドクエスト"
+    },
+    "exp": 0,
+    "nrg": 0,
+    "jp": 0,
+    "enemies": 0,
     "gils": 0,
     "chests": 0
   },

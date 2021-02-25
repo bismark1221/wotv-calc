@@ -3223,6 +3223,104 @@
         "AP_CONSUMPTION": 20
       },
       "image": "lapsvktr_01"
+    },
+    {
+      "names": {
+        "en": "Creysse",
+        "fr": "Creysse"
+      },
+      "stats": {
+        "HP": 2102,
+        "TP": 108,
+        "AP": 100,
+        "ATK": 226,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 55,
+        "DEX": 203,
+        "AGI": 59,
+        "LUCK": 163,
+        "FIRE_RES": 10,
+        "LIGHTNING_RES": -20,
+        "SLASH_RES": -15,
+        "PIERCE_RES": 10,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -15,
+        "POISON_RES": 10,
+        "BLIND_RES": 50,
+        "PARALYZE_RES": -25,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 18,
+        "CRITIC_RATE": 30,
+        "WATER_ATK": 10,
+        "AOE_RES": 10
+      },
+      "image": "lapscris"
+    },
+    {
+      "names": {
+        "en": "Garvall",
+        "fr": "Garvall"
+      },
+      "stats": {
+        "HP": 2668,
+        "TP": 134,
+        "AP": 152,
+        "ATK": 79,
+        "DEF": 6,
+        "SPR": 2,
+        "MAG": 385,
+        "DEX": 179,
+        "AGI": 58,
+        "LUCK": 183,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -10,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 78,
+        "DARK_ATK": 15
+      },
+      "image": "lapsgabl"
+    },
+    {
+      "names": {
+        "en": "Elsirelle",
+        "fr": "Elsirelle"
+      },
+      "stats": {
+        "HP": 3058,
+        "TP": 127,
+        "AP": 123,
+        "ATK": 359,
+        "DEF": 0,
+        "SPR": 8,
+        "MAG": 74,
+        "DEX": 176,
+        "AGI": 59,
+        "LUCK": 217,
+        "DARK_RES": -10,
+        "PIERCE_RES": 20,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "POISON_RES": 50,
+        "STOP_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 22,
+        "LIGHT_ATK": 15,
+        "ACCURACY": 10
+      },
+      "image": "lapselsr"
     }
   ]
 }

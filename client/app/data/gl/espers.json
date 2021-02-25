@@ -44062,5 +44062,1333 @@
       ]
     },
     "slug": "typhon"
+  },
+  "UN_LW_S_MRLT": {
+    "dataId": "UN_LW_S_MRLT",
+    "names": {
+      "en": "Marilith",
+      "fr": "Marilith"
+    },
+    "rarity": "MR",
+    "cost": 30,
+    "skills": [
+      {
+        "unlockStar": null,
+        "effects": [
+          {
+            "type": "SLASH_ATK",
+            "minValue": -30,
+            "maxValue": -50,
+            "calcType": "fixe",
+            "turn": 3,
+            "target": "all"
+          }
+        ],
+        "dataId": "SK_SMN_MRLT",
+        "type": "esper",
+        "mainSkill": false,
+        "names": {
+          "en": "Tri-Blaze",
+          "fr": "Flamme triple"
+        },
+        "target": "all",
+        "cost": {
+          "type": "TP"
+        },
+        "count": 1,
+        "maxLevel": 20,
+        "range": {
+          "h": 1,
+          "l": 1,
+          "s": 0
+        },
+        "based": "physic",
+        "hit": 100,
+        "crt_hit": -15,
+        "combo": {
+          "num": 3,
+          "rate": 77
+        },
+        "damage": {
+          "minValue": 40,
+          "maxValue": 75,
+          "type": "slash",
+          "effType": "DAMAGE",
+          "formula": {}
+        },
+        "elem": [
+          "fire"
+        ]
+      }
+    ],
+    "stats": {
+      "HP": [
+        {
+          "min": 84,
+          "max": 399
+        },
+        {
+          "min": 418,
+          "max": 804
+        }
+      ],
+      "TP": [
+        {
+          "min": 15,
+          "max": 19
+        },
+        {
+          "min": 20,
+          "max": 25
+        }
+      ],
+      "AP": [
+        {
+          "min": 20,
+          "max": 25
+        },
+        {
+          "min": 25,
+          "max": 30
+        }
+      ],
+      "ATK": [
+        {
+          "min": 30,
+          "max": 52
+        },
+        {
+          "min": 55,
+          "max": 81
+        }
+      ],
+      "DEF": [
+        {},
+        {}
+      ],
+      "SPR": [
+        {},
+        {}
+      ],
+      "MAG": [
+        {
+          "min": 13,
+          "max": 21
+        },
+        {
+          "min": 22,
+          "max": 30
+        }
+      ],
+      "DEX": [
+        {
+          "min": 25,
+          "max": 38
+        },
+        {
+          "min": 40,
+          "max": 53
+        }
+      ],
+      "AGI": [
+        {
+          "min": 9,
+          "max": 10
+        },
+        {
+          "min": 11,
+          "max": 13
+        }
+      ],
+      "LUCK": [
+        {
+          "min": 27,
+          "max": 40
+        },
+        {
+          "min": 42,
+          "max": 58
+        }
+      ],
+      "INITIAL_AP": [
+        {},
+        {}
+      ],
+      "ACCURACY": [
+        {},
+        {}
+      ],
+      "CRITIC_RATE": [
+        {},
+        {}
+      ],
+      "CRITIC_AVOID": [
+        {},
+        {}
+      ],
+      "EVADE": [
+        {},
+        {}
+      ],
+      "FIRE_RES": [
+        {},
+        {}
+      ],
+      "ICE_RES": [
+        {
+          "min": 5,
+          "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "EARTH_RES": [
+        {},
+        {}
+      ],
+      "WIND_RES": [
+        {},
+        {}
+      ],
+      "LIGHTNING_RES": [
+        {},
+        {}
+      ],
+      "WATER_RES": [
+        {
+          "min": -10,
+          "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
+        }
+      ],
+      "LIGHT_RES": [
+        {},
+        {}
+      ],
+      "DARK_RES": [
+        {},
+        {}
+      ],
+      "SLASH_RES": [
+        {},
+        {}
+      ],
+      "PIERCE_RES": [
+        {},
+        {}
+      ],
+      "STRIKE_RES": [
+        {},
+        {}
+      ],
+      "MISSILE_RES": [
+        {},
+        {}
+      ],
+      "MAGIC_RES": [
+        {},
+        {}
+      ],
+      "POISON_RES": [
+        {},
+        {}
+      ],
+      "BLIND_RES": [
+        {},
+        {}
+      ],
+      "SLEEP_RES": [
+        {},
+        {}
+      ],
+      "SILENCE_RES": [
+        {},
+        {}
+      ],
+      "PARALYZE_RES": [
+        {},
+        {}
+      ],
+      "CONFUSION_RES": [
+        {},
+        {}
+      ],
+      "PETRIFY_RES": [
+        {},
+        {}
+      ],
+      "TOAD_RES": [
+        {},
+        {}
+      ],
+      "CHARM_RES": [
+        {},
+        {}
+      ],
+      "SLOW_RES": [
+        {},
+        {}
+      ],
+      "STOP_RES": [
+        {},
+        {}
+      ],
+      "IMMOBILIZE_RES": [
+        {},
+        {}
+      ],
+      "DISABLE_RES": [
+        {},
+        {}
+      ],
+      "BERSERK_RES": [
+        {},
+        {}
+      ],
+      "DOOM_RES": [
+        {},
+        {}
+      ],
+      "MOVE": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ],
+      "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "SPs": [
+      [
+        0,
+        10,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    ],
+    "element": "fire",
+    "image": "lapsmrlt",
+    "board": {
+      "nodes": {
+        "1": {
+          "dataId": "BUFF_MRLT_01",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_01",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "2": {
+          "dataId": "BUFF_MRLT_02",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "DRAGON_KILLER",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_02",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "3": {
+          "dataId": "BUFF_MRLT_03",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_03",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "4": {
+          "dataId": "BUFF_MRLT_04",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_04",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "5": {
+          "dataId": "BUFF_MRLT_05",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_05",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "6": {
+          "dataId": "BUFF_MRLT_06",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 10,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 1,
+                "maxValue": 1,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_06",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "7": {
+          "dataId": "BUFF_MRLT_07",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_07",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "8": {
+          "dataId": "BUFF_MRLT_08",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_08",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "9": {
+          "dataId": "BUFF_MRLT_09",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "PIERCE_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_09",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "10": {
+          "dataId": "BUFF_MRLT_10",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "PIERCE_RES",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_10",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "11": {
+          "dataId": "BUFF_MRLT_11",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "DRAGON_KILLER",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_11",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "12": {
+          "dataId": "BUFF_MRLT_12",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_12",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "13": {
+          "dataId": "BUFF_MRLT_13",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_13",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "14": {
+          "dataId": "BUFF_MRLT_14",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_14",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "15": {
+          "dataId": "BUFF_MRLT_15",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 35,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_15",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "16": {
+          "dataId": "BUFF_MRLT_16",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_16",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "17": {
+          "dataId": "BUFF_MRLT_17",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_17",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "18": {
+          "dataId": "BUFF_MRLT_18",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 30,
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_18",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "19": {
+          "dataId": "BUFF_MRLT_19",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_19",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "21": {
+          "dataId": "BUFF_MRLT_20",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "PIERCE_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_20",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "22": {
+          "dataId": "BUFF_MRLT_21",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "PIERCE_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_21",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "24": {
+          "dataId": "BUFF_MRLT_22",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "DRAGON_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_22",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "25": {
+          "dataId": "BUFF_MRLT_23",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 70,
+            "effects": [
+              {
+                "type": "DRAGON_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_23",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "27": {
+          "dataId": "BUFF_MRLT_24",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 55,
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_24",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "28": {
+          "dataId": "BUFF_MRLT_25",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "FIRE_ATK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_25",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "30": {
+          "dataId": "BUFF_MRLT_26",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_26",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "31": {
+          "dataId": "BUFF_MRLT_27",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_27",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "33": {
+          "dataId": "BUFF_MRLT_28",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_28",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "34": {
+          "dataId": "BUFF_MRLT_29",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "ICE_RES",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_29",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "36": {
+          "dataId": "BUFF_MRLT_30",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_30",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "37": {
+          "dataId": "BUFF_MRLT_31",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_31",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "45": {
+          "dataId": "BUFF_MRLT_32",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "DRAGON_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_32",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "53": {
+          "dataId": "BUFF_MRLT_33",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 80,
+            "effects": [
+              {
+                "type": "ICE_KILLER",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "rate": 200,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_MRLT_33",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        }
+      },
+      "lines": [
+        0,
+        1,
+        2,
+        10,
+        4,
+        5,
+        29,
+        13,
+        14,
+        32,
+        17,
+        19,
+        20,
+        36,
+        24,
+        25,
+        26,
+        40,
+        42,
+        75,
+        48,
+        51,
+        78,
+        81,
+        58,
+        84,
+        62,
+        87,
+        68,
+        72,
+        131,
+        104,
+        117
+      ]
+    },
+    "slug": "marilith"
   }
 }
