@@ -235,10 +235,10 @@
             <tr>
               <td *ngFor="let materials of equipment.formattedMaterials">
                 <div *ngFor="let item of materials">
-                  <div *ngIf="item.recipe">
+                  <div *ngIf="item.type === 'recipe'">
                     <img src="{{'assets/equipments/' + equipment.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="materialImg recipe"/>
                   </div>
-                  <div *ngIf="!item.recipe">
+                  <div *ngIf="item.type !== 'recipe'">
                     <img src="{{ 'assets/items/' + item.image + '.png'}}" class="materialImg"/>
                   </div>
                   <span class="materialName">{{ item.name }}</span><br />

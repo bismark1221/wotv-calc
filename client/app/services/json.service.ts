@@ -692,6 +692,41 @@ export class JsonService {
     'ex_buff'
   ];
 
+  itemType = {
+    0: 'usable_item',
+    1: 'unit_shard',
+    9: 'turtle',
+    6: 'cube',
+    7: 'burst_pot',
+    10: 'tickets',
+    12: 'equipment_xp',
+    13: 'recipe',
+    16: 'medal',
+    18: 'esper_xp',
+    19: 'hammer',
+    20: 'equipment_pot',
+    21: 'seal',
+    22: 'compo_job',
+    23: 'compo_unit_awake',
+    24: 'compo_equipment',
+    25: 'potion_nrg',
+    26: 'egg',
+    27: 'vc_orb_awake',
+    28: 'compo_esper_awake',
+    29: 'potion_rene',
+    30: 'potion_raid',
+    31: 'potion_class_match',
+    32: 'guild_stuff',
+    34: 'job_awake_orb',
+    35: 'orb_awake',
+    36: 'vc_shard',
+    37: 'soul_medal',
+    38: 'vision_medal',
+    39: 'stamp',
+    40: 'exjob_orb',
+    41: 'potion_draft_match',
+  }
+
   private statsAtkRes = [
     'FIRE',
     'ICE',
@@ -3300,22 +3335,22 @@ export class JsonService {
     const dataId = item.iname;
     this[this.version].wotvItems[dataId] = {
       dataId: dataId,
-      names: {},
-      recipe: false,
-      type: item.type
+      names: {}
     };
 
-    if (item.type === 13) {
-      this[this.version].wotvItems[dataId].recipe = true;
+    this.getNames(this[this.version].wotvItems[dataId], 'item', false);
+
+    if (item.type === undefined) {
+      this[this.version].wotvItems[dataId].type = 'expe_ticket';
+    } else if (this.itemType[item.type]) {
+      this[this.version].wotvItems[dataId].type = this.itemType[item.type];
     } else {
-      delete this[this.version].wotvItems[dataId].recipe;
+      console.log('unknow item type -- ' + this[this.version].wotvItems[dataId].dataId + ' -- ' + this[this.version].wotvItems[dataId].names.en);
     }
 
     if (item.icon) {
       this[this.version].wotvItems[dataId].icon = item.icon;
     }
-
-    this.getNames(this[this.version].wotvItems[dataId], 'item', false);
   }
 
   formatMasterRanks() {

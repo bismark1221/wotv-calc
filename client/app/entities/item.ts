@@ -4,7 +4,7 @@ export class Item {
     en: 'New Item'
   };
   name = 'New Item';
-  recipe = false;
+  type = '';
   image;
   count;
   icon;
@@ -12,7 +12,7 @@ export class Item {
   constructFromJson(item: Item): void {
     this.dataId = item.dataId;
     this.names = item.names;
-    this.recipe = item.recipe;
+    this.type = item.type;
     this.icon = item.icon;
   }
 

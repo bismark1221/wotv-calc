@@ -39,6 +39,7 @@ export class UnitService {
     'UN_LW_P_DEAN',
     'UN_FF14_P_YSTL',
     'UN_FF14_P_TNCR',
+    'UN_FF1_P_WROL',
     'UN_FFT_P_RAMZ',
     'UN_FFT_P_GFGR',
     'UN_FFT_P_ORND',

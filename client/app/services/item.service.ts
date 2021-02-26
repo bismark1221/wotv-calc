@@ -86,33 +86,42 @@ export class ItemService {
   formatItemToShow(item) {
     item.image = item.dataId.toLowerCase();
 
-    if (item.image.substring(0, 8) === 'it_jb_mm' && item.image.substring(0, 12) !== 'it_jb_mm_all') {
+    if (item.type === 'job_awake_orb'
+      && item.icon !== 'IT_JB_MM_COMMON'
+      && item.icon.substring(0, item.icon.length - 2) !== 'IT_JB_MM_COMMON'
+    ) {
       switch (item.image.substring(item.image.length - 2, item.image.length)) {
         case '_2':
-          item.type = 'imgOrbBlue';
+          item.class = 'imgOrbBlue';
           break;
         case '_3':
-          item.type = 'imgOrbViolet';
+          item.class = 'imgOrbViolet';
           break;
         case '_4':
-          item.type = 'imgOrbYellow';
+          item.class = 'imgOrbYellow';
           break;
         case '_5':
-          item.type = 'imgOrbPink';
+          item.class = 'imgOrbPink';
           break;
         default:
-          item.type = 'imgOrbGreen';
+          item.class = 'imgOrbGreen';
           break;
       }
 
       const job = this.jobService.getJob(item.icon);
       item.image = job.image;
-    } else if (item.recipe) {
+    } else if (item.type === 'recipe') {
       const equipment = this.equipmentService.getEquipment(item.icon);
       item.image = equipment.image;
-      item.type = 'recipe';
-    } else {
-      item.type = 'classic';
+    } else if (item.type === 'medal' && item.icon) {
+      const oldItem = this.getItem(item.icon);
+      if (oldItem) {
+        item.image = oldItem.dataId.toLowerCase();
+      } else {
+        item.image = item.icon.toLowerCase();
+      }
+    } else if ((item.type === 'tickets' || item.type === 'usable_item' || item.type === 'vc_shard' || item.type === 'stamp') && item.icon) {
+      item.image = item.icon.toLowerCase();
     }
 
     return item;
