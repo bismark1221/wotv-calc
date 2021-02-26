@@ -126,6 +126,14 @@ export class ModalEquipmentsComponent implements OnInit {
     this.equipmentService.changeSkillLevel(this.equipment);
   }
 
+  maxEquipment() {
+    this.equipmentService.maxEquipment(this.equipment);
+  }
+
+  resetEquipment() {
+    this.equipmentService.resetEquipment(this.equipment);
+  }
+
   save() {
     this.modal.close(this.equipment);
   }

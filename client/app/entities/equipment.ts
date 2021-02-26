@@ -216,4 +216,38 @@ export class Equipment {
       }
     });
   }
+
+  maxEquipment(skillService, rangeService) {
+    this.level = this.maxLevel;
+    if (this.skills.length > 1) {
+      this.upgrade = 5;
+    }
+
+    Object.keys(this.stats).forEach(statType => {
+      this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
+    });
+
+    if (this.activeSkill) {
+      this.activeSkill.level = this.activeSkill.tableLevel[this.activeSkill.tableLevel.length - 1];
+    }
+
+    this.changeUpgrade(skillService, rangeService);
+    this.changeLevel(skillService, rangeService);
+  }
+
+  resetEquipment(skillService, rangeService) {
+    this.level = 1;
+    this.upgrade = 0;
+
+    Object.keys(this.stats).forEach(statType => {
+      this.stats[statType].selected = this.tableStats[statType][0];
+    });
+
+    if (this.activeSkill) {
+      this.activeSkill.level = 1;
+    }
+
+    this.changeUpgrade(skillService, rangeService);
+    this.changeLevel(skillService, rangeService);
+  }
 }

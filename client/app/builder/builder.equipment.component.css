@@ -134,6 +134,11 @@
   vertical-align: top;
 }
 
+.equipmentButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
 .equipmentImg {
   height: 150px;
   margin-top: 10px;
@@ -170,12 +175,12 @@
 }
 
 .btn-left {
-  width: 110px;
+  width: 90px;
   margin-right: 10px;
 }
 
 .btn-right {
-  width: 110px;
+  width: 125px;
 }
 
 .dropdownDiv {

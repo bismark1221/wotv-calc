@@ -32,13 +32,13 @@
     <div class="equipmentsList">
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
         <a (click)="selectEquipment(equipment.dataId)">
-          <div class="cardIcons">
+          <div class="equipmentIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
           </div>
           <div>
             <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
           </div>
-          <div class="cardTitle">
+          <div class="equipmentTitle">
             <span class="equipmentName">{{ equipment.name }}</span>
           </div>
         </a>
@@ -97,13 +97,17 @@
   <div class="customDiv">
     <div class="leftBlock">
       <div class="equipmentsCol">
-        <div class="cardIcons">
+        <div class="equipmentButtons">
+          <button class="btn btn-sub btn-left" id="reset_card" (click)="resetEquipment()">Reset</button>
+          <button class="btn btn-main btn-right" id="max_card" (click)="maxEquipment()">Max equipment</button>
+        </div>
+        <div class="equipmentIcons">
           <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
         </div>
         <div>
           <img class="equipmentImg" src="assets/equipments/{{ equipment.image }}.png" onerror="this.src='assets/equipments/placeholder.png';" />
         </div>
-        <div class="cardTitle">
+        <div class="equipmentTitle">
           <span class="equipmentName">{{ equipment.customName ? equipment.name + ' - ' + equipment.customName : equipment.name }}</span>
         </div>
       </div>

@@ -140,13 +140,27 @@
   text-decoration: none;
 }
 
-.cardIcons {
+.equipmentButtons {
+  text-align: center;
+  border-top: 10px;
+}
+
+.btn-left {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.btn-right {
+  width: 125px;
+}
+
+.equipmentIcons {
   position: absolute;
   width: 100%;
   padding: 5px;
 }
 
-.cardTitle {
+.equipmentTitle {
   background-color: var(--card-title-background);
   display: table;
   height: 50px;

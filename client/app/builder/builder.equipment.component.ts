@@ -178,6 +178,14 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     this.equipmentService.changeSkillLevel(this.equipment);
   }
 
+  maxEquipment() {
+    this.equipmentService.maxEquipment(this.equipment);
+  }
+
+  resetEquipment() {
+    this.equipmentService.resetEquipment(this.equipment);
+  }
+
   openLoadModal(equipmentId) {
     const modalRef = this.modalService.open(ModalLoadComponent, { windowClass: 'builder-modal' });
 

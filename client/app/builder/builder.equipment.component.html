@@ -45,6 +45,10 @@
         </tr>
         <tr>
           <td>
+            <div class="equipmentButtons">
+              <button class="btn btn-sub btn-left" id="reset_card" (click)="resetEquipment()">Reset</button>
+              <button class="btn btn-main btn-right" id="max_card" (click)="maxEquipment()">Max equipment</button>
+            </div>
             <div class="equipmentIcons">
               <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
             </div>

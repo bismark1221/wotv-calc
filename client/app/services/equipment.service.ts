@@ -581,6 +581,22 @@ export class EquipmentService {
     this.equipment.changeSkillLevel(this.skillService, this.rangeService);
   }
 
+  maxEquipment(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment;
+    }
+
+    this.equipment.maxEquipment(this.skillService, this.rangeService);
+  }
+
+  resetEquipment(equipment = null) {
+    if (equipment) {
+      this.equipment = equipment;
+    }
+
+    this.equipment.resetEquipment(this.skillService, this.rangeService);
+  }
+
   private equipmentCategory() {
     let category = null;
     if (this.isWeapon(this.equipment.type)) {
