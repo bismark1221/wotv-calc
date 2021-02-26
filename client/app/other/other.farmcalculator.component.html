@@ -50,8 +50,8 @@
   </div>
 
   <div class="selectedItems">
-    <div *ngFor="let item of selectedItems">
-      <div class="itemLogo">
+    <div *ngFor="let item of selectedItems" class="selectedItemBlock">
+      <div class="selectedItemLogo">
         <img src="assets/items/{{ item.image }}.png" *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))" />
 
         <img src="{{'assets/equipments/' + item.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipe" *ngIf="item.type === 'recipe'" />
@@ -65,8 +65,8 @@
             'imgOrbPink': item.class === 'imgOrbPink'}"
           *ngIf="item.type === 'job_awake_orb' && item.class" />
       </div>
-      <div class="itemNameSelector">{{ item.name }}</div>
-      <div class="itemNameSelector">X</div>
+      <div class="selectedItemName">{{ item.name }}</div>
+      <div class="selectedItemRemove" (click)="removeItem(item.dataId)">X</div>
     </div>
   </div>
 

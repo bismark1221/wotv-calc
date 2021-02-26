@@ -54,7 +54,21 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   changeSelectedItems() {
-    console.log(this.selectedItems);
+    this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
+    console.log(this.quests);
+  }
+
+  removeItem(itemId) {
+    const selectedItems = [];
+
+    this.selectedItems.forEach(item => {
+      if (item.dataId !== itemId) {
+        selectedItems.push(item);
+      }
+    });
+
+    this.selectedItems = selectedItems;
+
     this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
     console.log(this.quests);
   }

@@ -9,6 +9,7 @@ th {
   margin-top: 20px;
 }
 
+
 /***************/
 /* Search Item */
 /***************/
@@ -113,12 +114,63 @@ th {
   margin: auto;
 }
 
+.ng-value {
+  display: none;
+}
+
+/******************/
+/* Selected Items */
+/******************/
 .selectedItems {
   width: 960px;
   margin: auto;
   margin-top: 15px;
 }
 
+.selectedItemBlock {
+  display: inline-block;
+  border: 1px solid var(--table-border);
+  border-radius: 5px;
+  height: 47px;
+  margin-right: 10px;
+}
+
+.selectedItemLogo {
+  padding: 5px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.selectedItemLogo img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.selectedItemName {
+  height: 45px;
+  padding-top: 10px;
+  padding-right: 5px;
+  border-right: 1px solid var(--table-border);
+  display: inline-block;
+}
+
+.selectedItemRemove {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  height: 45px;
+  vertical-align: top;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+
+/**********/
+/* Quests */
+/**********/
 .quests {
   width: 960px;
   margin: auto;

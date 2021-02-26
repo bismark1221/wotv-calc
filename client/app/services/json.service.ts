@@ -725,7 +725,7 @@ export class JsonService {
     39: 'stamp',
     40: 'exjob_orb',
     41: 'potion_draft_match',
-  }
+  };
 
   private statsAtkRes = [
     'FIRE',
