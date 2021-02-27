@@ -27,20 +27,7 @@
       <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
         <div class="itemLine" id="item_{{item.dataId}}">
           <div class="itemSelector" id="itemSelector_{{item.dataId}}">
-            <div class="itemLogo">
-              <img src="assets/items/{{ item.image }}.png" *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))" />
-
-              <img src="{{'assets/equipments/' + item.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipe" *ngIf="item.type === 'recipe'" />
-
-              <img src="{{ 'assets/jobs/' + item.image + '.png'}}"
-                [ngClass]="{
-                  'imgOrbGreen': item.class === 'imgOrbGreen',
-                  'imgOrbBlue': item.class === 'imgOrbBlue',
-                  'imgOrbViolet': item.class === 'imgOrbViolet',
-                  'imgOrbYellow': item.class === 'imgOrbYellow',
-                  'imgOrbPink': item.class === 'imgOrbPink'}"
-                *ngIf="item.type === 'job_awake_orb' && item.class" />
-            </div>
+            <app-template-item [item]="item" [customClass]="itemClassInInput"></app-template-item>
             <div class="itemNameSelector" innerHTML="{{ item.name | highlight: search }}"></div>
           </div>
           <hr />
@@ -51,20 +38,7 @@
 
   <div class="selectedItems">
     <div *ngFor="let item of selectedItems" class="selectedItemBlock">
-      <div class="selectedItemLogo">
-        <img src="assets/items/{{ item.image }}.png" *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))" />
-
-        <img src="{{'assets/equipments/' + item.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipe" *ngIf="item.type === 'recipe'" />
-
-        <img src="{{ 'assets/jobs/' + item.image + '.png'}}"
-          [ngClass]="{
-            'imgOrbGreen': item.class === 'imgOrbGreen',
-            'imgOrbBlue': item.class === 'imgOrbBlue',
-            'imgOrbViolet': item.class === 'imgOrbViolet',
-            'imgOrbYellow': item.class === 'imgOrbYellow',
-            'imgOrbPink': item.class === 'imgOrbPink'}"
-          *ngIf="item.type === 'job_awake_orb' && item.class" />
-      </div>
+      <app-template-item [item]="item"></app-template-item>
       <div class="selectedItemName">{{ item.name }}</div>
       <div class="selectedItemRemove" (click)="removeItem(item.dataId)">X</div>
     </div>
@@ -73,7 +47,7 @@
   <div class="quests">
     <h3>Quests list</h3>
     <div *ngIf="quests.length > 0">
-      <table>
+      <table class="questTable">
         <tr>
           <th>Quest Name</th>
           <th>Drop rate</th>
@@ -81,6 +55,10 @@
         <tbody *ngFor="let quest of quests">
           <tr>
             <td>
+              <div class="collapseBlock" (click)="isCollapsed[quest.dataId] = !isCollapsed[quest.dataId]" [attr.aria-expanded]="!isCollapsed[quest.dataId]">
+                <i class="fas fa-chevron-up" *ngIf="!isCollapsed[quest.dataId]" aria-hidden="true"></i>
+                <i class="fas fa-chevron-down" *ngIf="isCollapsed[quest.dataId]" aria-hidden="true"></i>
+              </div>
               <div class="questName">
                 {{ quest.name }}
               </div>
@@ -89,15 +67,27 @@
               </div>
             </td>
             <td>
-              <div *ngFor="let item of quest.findedItems">
-                {{ item.name }} - {{ quest.items[item.dataId].drop }} - {{ quest.items[item.dataId].host }}
+              <div *ngFor="let item of quest.findedItems" class="dropRateItemBlock">
+                <app-template-item [item]="item"></app-template-item>
+                <div *ngIf="quest.items[item.dataId].drop">
+                  {{ quest.items[item.dataId].drop | number : '1.2-2'}}%
+                </div>
+                <div *ngIf="quest.items[item.dataId].host">
+                  Host : {{ quest.items[item.dataId].host | number : '1.2-2'}}%
+                </div>
               </div>
             </td>
           </tr>
-          <tr>
+          <tr [ngbCollapse]="isCollapsed[quest.dataId]">
             <td colspan="2">
-              <div *ngFor="let item of quest.formattedItems">
-                {{ item.name }} - {{ quest.items[item.dataId].drop }} - {{ quest.items[item.dataId].host }}
+              <div *ngFor="let item of quest.formattedItems" class="dropRateItemBlock">
+                <app-template-item [item]="item"></app-template-item>
+                <div *ngIf="quest.items[item.dataId].drop">
+                  {{ quest.items[item.dataId].drop | number : '1.2-2'}}%
+                </div>
+                <div *ngIf="quest.items[item.dataId].host">
+                  Host : {{ quest.items[item.dataId].host | number : '1.2-2'}}%
+                </div>
               </div>
             </td>
           </tr>

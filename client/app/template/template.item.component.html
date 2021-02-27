@@ -1,0 +1,28 @@
+<div
+  class="itemBlock"
+  [ngClass]="{
+    'in-ng-input': customClass === 'in-ng-input'
+  }">
+  <img
+    *ngIf="item.type !== 'recipe' && (item.type !== 'job_awake_orb' || (item.type === 'job_awake_orb' && !item.class))"
+    src="assets/items/{{ item.image }}.png"
+    title="{{ item.name }}" />
+
+  <img
+    *ngIf="item.type === 'recipe'"
+    src="{{'assets/equipments/' + item.image + '.png'}}"
+    onerror="this.src='assets/equipments/placeholder.png';"
+    class="recipe"
+    title="{{ item.name }}" />
+
+  <img
+    *ngIf="item.type === 'job_awake_orb' && item.class"
+    src="{{ 'assets/jobs/' + item.image + '.png'}}"
+    [ngClass]="{
+      'imgOrbGreen': item.class === 'imgOrbGreen',
+      'imgOrbBlue': item.class === 'imgOrbBlue',
+      'imgOrbViolet': item.class === 'imgOrbViolet',
+      'imgOrbYellow': item.class === 'imgOrbYellow',
+      'imgOrbPink': item.class === 'imgOrbPink'}"
+    title="{{ item.name }}" />
+</div>

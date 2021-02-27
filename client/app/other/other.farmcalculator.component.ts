@@ -23,6 +23,10 @@ export class OtherFarmCalculatorComponent implements OnInit {
   itemLoading = false;
   itemInput = new Subject<string>();
 
+  isCollapsed = {};
+
+  itemClassInInput = 'in-ng-input';
+
   constructor(
     private translateService: TranslateService,
     private navService: NavService,
@@ -54,8 +58,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   changeSelectedItems() {
-    this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
-    console.log(this.quests);
+    this.getQuests();
   }
 
   removeItem(itemId) {
@@ -69,7 +72,15 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
     this.selectedItems = selectedItems;
 
+    this.getQuests();
+  }
+
+  getQuests() {
     this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
-    console.log(this.quests);
+
+    this.isCollapsed = {};
+    this.quests.forEach(quest => {
+      this.isCollapsed[quest.dataId] = true;
+    });
   }
 }

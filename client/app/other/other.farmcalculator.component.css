@@ -29,64 +29,6 @@ th {
   height: 50px;
 }
 
-.itemLogo {
-  padding: 5px;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  background-color: #E8E6DF;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  text-align: center;
-}
-
-.itemLogo img {
-  max-height: 35px;
-  max-width: 35px;
-}
-
-.recipe {
-  height: 35px;
-  background: url("assets/items/recipe.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
-.imgOrbGreen {
-  height: 35px;
-  background: url("assets/items/it_jb_mm_all.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
-.imgOrbBlue {
-  height: 35px;
-  background: url("assets/items/it_jb_mm_all_2.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
-.imgOrbViolet {
-  height: 35px;
-  background: url("assets/items/it_jb_mm_all_3.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
-.imgOrbYellow {
-  height: 35px;
-  background: url("assets/items/it_jb_mm_all_4.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
-.imgOrbPink {
-  height: 35px;
-  background: url("assets/items/it_jb_mm_all_5.png") 0px 0px no-repeat;
-  background-size: 35px;
-  padding: 5px;
-}
-
 .itemNameSelector {
   display: inline-block;
   font-size: 18px;
@@ -102,12 +44,6 @@ th {
   width: 960px;
   margin: auto;
   margin-top: 20px;
-}
-
-.itemBlock {
-  width: 320px;
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .select-item-farm {
@@ -133,20 +69,6 @@ th {
   border-radius: 5px;
   height: 47px;
   margin-right: 10px;
-}
-
-.selectedItemLogo {
-  padding: 5px;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-  text-align: center;
-}
-
-.selectedItemLogo img {
-  max-height: 40px;
-  max-width: 40px;
 }
 
 .selectedItemName {
@@ -177,10 +99,27 @@ th {
   margin-top: 15px;
 }
 
+.questTable {
+  width: 100%;
+}
+
+.collapseBlock {
+  float: left;
+  margin-right: 10px;
+  height: 28px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
 .questName {
   font-size: 18px;
 }
 
 .questParams {
   font-size: 14px;
+}
+
+.dropRateItemBlock {
+  display: inline-block;
+  margin-right: 10px;
 }

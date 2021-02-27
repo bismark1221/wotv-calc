@@ -75,6 +75,8 @@ import { ModalSaveComponent } from './builder/modal/modal.save.component';
 import { ModalLinkComponent } from './builder/modal/modal.link.component';
 import { ModalMasterRanksComponent } from './builder/modal/modal.mr.component';
 
+import { TemplateItemComponent } from './template/template.item.component';
+
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
 import { JsonService } from './services/json.service';
@@ -155,7 +157,8 @@ export function createTranslateLoader(http: HttpClient) {
     OtherJobPlannerComponent,
     OtherTestComponent,
     OtherIlluminatiComponent,
-    OtherFarmCalculatorComponent
+    OtherFarmCalculatorComponent,
+    TemplateItemComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'app-root'}),
