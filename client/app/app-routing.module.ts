@@ -60,6 +60,7 @@ const ROUTES: Routes = [
       { path: 'illuminati', component: OtherIlluminatiComponent },
       { path: 'illuminati/:data', component: OtherIlluminatiComponent },
       { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
+      { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
     ]
   },
 
@@ -107,6 +108,7 @@ const ROUTES: Routes = [
       { path: 'jobplanner', component: OtherJobPlannerComponent },
       { path: 'test', component: OtherTestComponent },
       { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
+      { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
     ]
   },
 

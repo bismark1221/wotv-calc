@@ -197,7 +197,7 @@
   height: 100%;
 }
 
-.otherIndex, .otherTitles, .otherJobPlanner {
+.otherIndex, .otherTitles, .otherJobPlanner, .otherFarmCalculator {
   position: fixed;
   padding: 5px;
   width: 150px;
@@ -206,12 +206,12 @@
   text-align: left;
 }
 
-.otherIndex a, .otherTitles a, .otherJobPlanner a {
+.otherIndex a, .otherTitles a, .otherJobPlanner a, .otherFarmCalculator a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.otherIndex a:hover, .otherTitles a:hover, .otherJobPlanner a:hover {
+.otherIndex a:hover, .otherTitles a:hover, .otherJobPlanner a:hover, .otherFarmCalculator a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
@@ -222,6 +222,10 @@
 
 .otherJobPlanner {
   margin-top: 68px;
+}
+
+.otherFarmCalculator {
+  margin-top: 102px;
 }
 
 /* Theme toogle switch */

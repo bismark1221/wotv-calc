@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable, of } from 'rxjs';
-import { delay, map } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 import { NavService } from './nav.service';
 import { JobService } from './job.service';
@@ -51,13 +50,17 @@ export class ItemService {
     return this.items;
   }
 
-  getItem(id: string): Item {
+  getItem(id: string, formatToShow = false): Item {
     this.getItems();
 
     const item = this.items.find(itemData => itemData.dataId === id);
 
     if (item) {
       item.getName(this.translateService);
+
+      if (formatToShow) {
+        this.formatItemToShow(item);
+      }
     }
 
     return item;

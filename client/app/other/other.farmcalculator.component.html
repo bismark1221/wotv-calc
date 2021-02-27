@@ -1,7 +1,8 @@
 <div class="row">
   <div class="headerText">
     <h1>Farm Calculator</h1>
-    <div>Based on the work of ??????</div>
+    <div>Based on the work of CoderCatastrophe</div>
+    <div *ngIf="version === 'JP'">Be careful we don't have full maps data for JP so there is missing maps in the listing below...</div>
   </div>
 
   <div class="items">
@@ -46,15 +47,18 @@
 
   <div class="quests">
     <h3>Quests list</h3>
-    <div *ngIf="quests.length > 0">
+    <div *ngIf="questLoading">
+      Loading quests
+    </div>
+    <div *ngIf="!questLoading && quests.length > 0">
       <table class="questTable">
         <tr>
-          <th>Quest Name</th>
-          <th>Drop rate</th>
+          <th class="questTd">Quest Name</th>
+          <th class="dropRateTd">Drop rate</th>
         </tr>
         <tbody *ngFor="let quest of quests">
           <tr>
-            <td>
+            <td class="questTd">
               <div class="collapseBlock" (click)="isCollapsed[quest.dataId] = !isCollapsed[quest.dataId]" [attr.aria-expanded]="!isCollapsed[quest.dataId]">
                 <i class="fas fa-chevron-up" *ngIf="!isCollapsed[quest.dataId]" aria-hidden="true"></i>
                 <i class="fas fa-chevron-down" *ngIf="isCollapsed[quest.dataId]" aria-hidden="true"></i>
@@ -66,7 +70,7 @@
                 NRG : {{ quest.nrg }} - XP : {{ quest.xp }} - JP : {{ quest.jp }} - Gils : {{ quest.gils }} - Enemies : {{ quest.enemies }} - Chests : {{ quest.chests }}
               </div>
             </td>
-            <td>
+            <td class="dropRateTd">
               <div *ngFor="let item of quest.findedItems" class="dropRateItemBlock">
                 <app-template-item [item]="item"></app-template-item>
                 <div *ngIf="quest.items[item.dataId].drop">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { UnitService } from '../services/unit.service';
@@ -30,6 +31,7 @@ export class OtherJobPlannerComponent implements OnInit {
   };
 
   constructor(
+    private router: Router,
     private unitService: UnitService,
     private translateService: TranslateService,
     private navService: NavService,
@@ -181,7 +183,7 @@ export class OtherJobPlannerComponent implements OnInit {
   }
 
   export() {
-    let url = 'https://wotvfarmcalculator.github.io/index.html?i=';
+    let url = this.navService.getRoute('/other/farm-calculator') + '/';
     const activatedMaterials = [];
 
     Object.keys(this.materials).forEach(itemId => {
@@ -192,6 +194,6 @@ export class OtherJobPlannerComponent implements OnInit {
 
     url += activatedMaterials.join(',');
 
-    window.open(url, '_blank');
+    this.router.navigate([url]);
   }
 }

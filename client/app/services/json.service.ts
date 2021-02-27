@@ -1868,7 +1868,8 @@ export class JsonService {
       if (type === 'unit' && this.names.en[type][id]
         || type === 'visionCard' && this.names.en[type][id]
         || type === 'equipment' && this.names.en[type][id]
-        || type === 'questTitle' && this.names.en[type][id]) {
+        || type === 'questTitle' && this.names.en[type][id]
+        || type === 'item' && this.names.en[type][id]) {
         item.names.en = this.names.jp[type][id] + ' - ' + this.names.en[type][id];
         slug = this.names.en[type][id];
       } else if (type === 'job') {
@@ -3522,6 +3523,12 @@ export class JsonService {
         const storyNumber = questId.split('_')[2];
         Object.keys(formattedQuests[questId].names).forEach(lang => {
           formattedQuests[questId].names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuests[questId].names[lang];
+        });
+      }
+
+      if (questId.split('_')[1] === 'MU') {
+        Object.keys(formattedQuests[questId].names).forEach(lang => {
+          formattedQuests[questId].names[lang] = 'Multi: ' + formattedQuests[questId].names[lang];
         });
       }
 

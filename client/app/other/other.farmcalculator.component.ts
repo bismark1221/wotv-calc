@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { concat, Observable, of, Subject } from 'rxjs';
 import { catchError, distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
@@ -21,13 +22,16 @@ export class OtherFarmCalculatorComponent implements OnInit {
   items: Observable<Item[]>;
   selectedItems = [];
   itemLoading = false;
+  questLoading = false;
   itemInput = new Subject<string>();
 
   isCollapsed = {};
 
   itemClassInInput = 'in-ng-input';
+  version = 'GL';
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
@@ -39,6 +43,21 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
   ngOnInit() {
     this.navService.setTitle('Farm Calculator');
+    this.version = this.navService.getVersion();
+
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      const data = params.get('data');
+      if (data) {
+        data.split(',').forEach(itemId => {
+          const item = this.itemService.getItem(itemId, true);
+          if (item) {
+            this.selectedItems.push(item);
+          }
+        });
+
+        this.getQuests();
+      }
+    });
 
     this.getItems();
   }
@@ -76,11 +95,13 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   getQuests() {
+    this.questLoading = true;
     this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
 
     this.isCollapsed = {};
     this.quests.forEach(quest => {
       this.isCollapsed[quest.dataId] = true;
     });
+    this.questLoading = false;
   }
 }

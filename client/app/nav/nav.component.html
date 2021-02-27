@@ -36,6 +36,9 @@
           <div class="otherJobPlanner" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/jobplanner')]" (click)="showOtherNav=false">Job Planner</a>
           </div>
+          <div class="otherFarmCalculator" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/farm-calculator')]" (click)="showOtherNav=false">Farm Calculator</a>
+          </div>
         </div>
         <div class="inlineBlock" (mouseover)="showBuilderNav=false; showOtherNav=false">&nbsp;</div>
       </li>
