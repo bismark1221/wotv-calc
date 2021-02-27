@@ -8,6 +8,6 @@ import { Item } from '../entities/item';
   styleUrls: ['./template.item.component.css']
 })
 export class TemplateItemComponent {
-  @Input() item: Item;
-  @Input() customClass: string;
+  @Input() item;
+  @Input() customClass;
 }
