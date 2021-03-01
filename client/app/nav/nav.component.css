@@ -9,6 +9,10 @@
   padding-bottom: 0;
 }
 
+.mainNav, .navBuilder {
+  height: 60px;
+}
+
 .sub.fixed-top {
   top: 60px;
   background-color: var(--subnav-background) !important;
