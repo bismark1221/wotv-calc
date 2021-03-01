@@ -11,6 +11,7 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: '12.10.0'
+      - run: sudo apt-get install sshpass
       - run: npm install -g @angular/cli
       - run: npm --version
       - run: ng --version
