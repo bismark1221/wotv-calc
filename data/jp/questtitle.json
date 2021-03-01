@@ -2421,6 +2421,10 @@
             "value": "欠片獲得 ヘレナ（黒衣の魔女）"
         },
         {
+            "key": "QE_HA_LW_DEAN",
+            "value": "欠片獲得 ディーン"
+        },
+        {
             "key": "QE_CH_LW_MONT",
             "value": "モント・リオニス"
         },
@@ -2877,6 +2881,10 @@
             "value": "カミッロ"
         },
         {
+            "key": "QE_CH_LW_DEAN",
+            "value": "ディーン"
+        },
+        {
             "key": "QE_EV_1100DL_FIR",
             "value": "1100万DL記念クエスト（火）"
         },
@@ -3121,6 +3129,10 @@
             "value": "限定ハードクエスト（サリア（バレンタイン））"
         },
         {
+            "key": "QE_EV_DEAN_05",
+            "value": "限定ハードクエスト（ディーン）"
+        },
+        {
             "key": "QE_EV_WIZ_04",
             "value": "【超高難度】黒衣の魔女育成クエスト #4"
         },
@@ -3135,6 +3147,22 @@
         {
             "key": "QE_EV_WIZ_01",
             "value": "黒衣の魔女育成クエスト #1"
+        },
+        {
+            "key": "QE_EV_REG_01",
+            "value": "悔恨の魔剣士育成クエスト #1"
+        },
+        {
+            "key": "QE_EV_REG_02",
+            "value": "【高難度】悔恨の魔剣士育成クエスト #2"
+        },
+        {
+            "key": "QE_EV_REG_03",
+            "value": "【高難度】悔恨の魔剣士育成クエスト #3"
+        },
+        {
+            "key": "QE_EV_REG_04",
+            "value": "【超高難度】悔恨の魔剣士育成クエスト #4"
         },
         {
             "key": "QE_PT_001_01",
@@ -3695,6 +3723,54 @@
         {
             "key": "QE_EV_JP_001",
             "value": "JP獲得クエスト"
+        },
+        {
+            "key": "QE_EV_11_01",
+            "value": "1話 星読みの姉妹１"
+        },
+        {
+            "key": "QE_EV_11_02",
+            "value": "2話 星読みの姉妹２"
+        },
+        {
+            "key": "QE_EV_11_03",
+            "value": "3話 戦場に舞う赤き焔１"
+        },
+        {
+            "key": "QE_EV_11_04",
+            "value": "4話 戦場に舞う赤き焔２"
+        },
+        {
+            "key": "QE_EV_11_05",
+            "value": "5話 滅びの予兆１"
+        },
+        {
+            "key": "QE_EV_11_06",
+            "value": "6話 滅びの予兆２"
+        },
+        {
+            "key": "QE_EV_11_07",
+            "value": "7話 資格"
+        },
+        {
+            "key": "QE_EV_11_08",
+            "value": "8話 ≪煉獄≫の猛威１"
+        },
+        {
+            "key": "QE_EV_11_09",
+            "value": "9話 ≪煉獄≫の猛威２"
+        },
+        {
+            "key": "QE_EV_11_10",
+            "value": "10話 沈黙する星々"
+        },
+        {
+            "key": "QE_EV_11_EX",
+            "value": "小鳥の歌も今は絶え【EX】"
+        },
+        {
+            "key": "QE_EV_11_EX_1",
+            "value": "超高難度　小鳥の歌も今は絶え【EX】"
         },
         {
             "key": "QE_EV_10_01",
@@ -5225,6 +5301,14 @@
             "value": "超高難度　FINAL FANTASY Ⅹ 【EX2】"
         },
         {
+            "key": "QE_MU_EV_11_EX",
+            "value": "小鳥の歌も今は絶え 【EX】"
+        },
+        {
+            "key": "QE_MU_EV_11_EX_1",
+            "value": "超高難度　小鳥の歌も今は絶え 【EX】"
+        },
+        {
             "key": "QE_MU_EV_10_EX",
             "value": "リオニスの古文書 【EX】"
         },
@@ -5913,6 +5997,10 @@
             "value": "遺跡Ⅳ"
         },
         {
+            "key": "QE_GVG_00015",
+            "value": "坑道Ⅱ"
+        },
+        {
             "key": "QE_PVP_FRE_0001",
             "value": "平原"
         },
@@ -5951,6 +6039,10 @@
         {
             "key": "QE_PVP_FRE_0010",
             "value": "闘技場Ⅰ"
+        },
+        {
+            "key": "QE_PVP_FRI_0029",
+            "value": "坑道Ⅱ"
         },
         {
             "key": "QE_PVP_FRI_0028",
@@ -5994,7 +6086,7 @@
         },
         {
             "key": "QE_PVP_FRI_0018",
-            "value": "坑道"
+            "value": "坑道Ⅰ"
         },
         {
             "key": "QE_PVP_FRI_0017",
@@ -6119,6 +6211,146 @@
         {
             "key": "QE_GHUNT_FF1_1",
             "value": "FFⅠコラボ記念ギルドクエスト"
+        },
+        {
+            "key": "QE_VC_LW_GLEM",
+            "value": "欠片獲得 岩壁の巨人　ゴーレム"
+        },
+        {
+            "key": "QE_VC_LW_IFRT",
+            "value": "欠片獲得 猛き炎の叫び　イフリート"
+        },
+        {
+            "key": "QE_VC_LW_SIRE",
+            "value": "欠片獲得 水界に響く魔音 セイレーン"
+        },
+        {
+            "key": "QE_VC_LW_RAMU",
+            "value": "欠片獲得 空に轟く雷鳴　ラムウ"
+        },
+        {
+            "key": "QE_VC_LW_SOKYU",
+            "value": "欠片獲得 リオニス王国第二部隊≪蒼穹≫"
+        },
+        {
+            "key": "QE_VC_LW_TRNNG",
+            "value": "欠片獲得 誰よりも強くなるために"
+        },
+        {
+            "key": "QE_VC_LW_MACR",
+            "value": "欠片獲得 嫁入り道具"
+        },
+        {
+            "key": "QE_VC_LW_MURG",
+            "value": "欠片獲得 鳴り響く悲鳴"
+        },
+        {
+            "key": "QE_VC_LW_GRSR",
+            "value": "欠片獲得 雪原を駆ける"
+        },
+        {
+            "key": "QE_VC_LW_SHIV",
+            "value": "欠片獲得 全てを凍らせし者　シヴァ"
+        },
+        {
+            "key": "QE_VC_LW_ODIN",
+            "value": "欠片獲得 次元切断　オーディン"
+        },
+        {
+            "key": "QE_VC_LW_TSLP",
+            "value": "欠片獲得 四天烈風　テトラシルフィード"
+        },
+        {
+            "key": "QE_VC_LW_THDG",
+            "value": "欠片獲得 猛攻双竜　２ヘッドドラゴン"
+        },
+        {
+            "key": "QE_VC_LW_CBVP1",
+            "value": "欠片獲得 徒桜の宴"
+        },
+        {
+            "key": "QE_VC_LW_DABL",
+            "value": "欠片獲得 夢幻魔人　ディアボロス"
+        },
+        {
+            "key": "QE_VC_LW_ROBST",
+            "value": "欠片獲得 ホルン王国第一部隊≪堅牢≫"
+        },
+        {
+            "key": "QE_VC_LW_FNRR",
+            "value": "欠片獲得 月影狼牙　フェンリル"
+        },
+        {
+            "key": "QE_VC_LW_TITN",
+            "value": "欠片獲得 猛る大地　タイタン"
+        },
+        {
+            "key": "QE_VC_LW_VKTR",
+            "value": "欠片獲得 偽りの仮面"
+        },
+        {
+            "key": "QE_VC_LW_AGON",
+            "value": "欠片獲得 破壊鋼人　アイガイオン"
+        },
+        {
+            "key": "QE_VC_LW_GRSR2",
+            "value": "欠片獲得 穏やかな時間"
+        },
+        {
+            "key": "QE_VC_LW_LUCA",
+            "value": "欠片獲得 新たな研究対象"
+        },
+        {
+            "key": "QE_VC_LW_SCAL",
+            "value": "欠片獲得 闇夜に咲く花"
+        },
+        {
+            "key": "QE_VC_LW_LVAT",
+            "value": "欠片獲得 水神激渦　リヴァイアサン"
+        },
+        {
+            "key": "QE_VC_LW_HLNA",
+            "value": "欠片獲得 戦場の黒き薔薇"
+        },
+        {
+            "key": "QE_VC_LW_TYPN",
+            "value": "欠片獲得 暴嵐災禍　テュポーン"
+        },
+        {
+            "key": "QE_VC_LW_RAMD",
+            "value": "欠片獲得 幻視する星読み"
+        },
+        {
+            "key": "QE_VC_LW_BAHM",
+            "value": "欠片獲得 竜王顕現　バハムート"
+        },
+        {
+            "key": "QE_VC_LW_OMEG",
+            "value": "欠片獲得 滅尽鉄騎　オメガ"
+        },
+        {
+            "key": "QE_VC_LW_ROBB",
+            "value": "欠片獲得 刹那の閃光"
+        },
+        {
+            "key": "QE_VC_LW_MONT2",
+            "value": "欠片獲得 獅子王モント・リオニス"
+        },
+        {
+            "key": "QE_VC_LW_PNIX",
+            "value": "欠片獲得 炎翼神鳥　フェニックス"
+        },
+        {
+            "key": "QE_VC_LW_CMLO",
+            "value": "欠片獲得 夢幻英雄譚"
+        },
+        {
+            "key": "QE_VC_LW_CBCL",
+            "value": "欠片獲得 妖魔紅玉　カーバンクル"
+        },
+        {
+            "key": "QE_VC_LW_ICDG",
+            "value": "欠片獲得 氷雪嵐龍　フリーゼス"
         },
         {
             "key": "QE_TEST_FOR",

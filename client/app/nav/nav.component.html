@@ -1,10 +1,11 @@
-<nav class="navbar navbar-toggleable-md main fixed-top">
+<nav class="navbar navbar-toggleable-md main fixed-top mainNav">
   <a class="navbar-brand" [routerLink]="[getRoute('/')]">
     <img src="assets/nav/WOTV-CALC.png" class="logo" />
   </a>
+
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="[getRoute('/units')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inUnit}">
           {{ 'nav.units' | translate }}
         </a>
@@ -84,19 +85,16 @@
     <ui-switch class="switchTheme" (click)="toggleTheme()" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
   </div>
 
-  <div *ngIf="!user">
-    <button class="btn btn-main btn-login" (click)="openLoginModal()">LOGIN</button>
-  </div>
-
-  <div *ngIf="user">
-    <button class="btn btn-sub btn-logout" (click)="logout()">LOGOUT</button>
+  <div class="userBlock">
+    <button *ngIf="!user" class="btn btn-main btn-login" (click)="openLoginModal()">LOGIN</button>
+    <button *ngIf="user" class="btn btn-sub btn-logout" (click)="logout()">LOGOUT</button>
   </div>
 </nav>
 
-<nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false; showOtherNav=false" *ngIf="showBuilderNav || inBuilder">
+<nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top navBuilder" (mouseleave)="showBuilderNav=false; showOtherNav=false" *ngIf="showBuilderNav || inBuilder">
   <div class="centerNav">
     <ul class="nav navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']">{{ 'nav.team' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']">{{ 'nav.units' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']">{{ 'nav.cards' | translate }}</a>
@@ -109,13 +107,90 @@
   </div>
 </nav>
 
-<!-- <nav class="navbar sub navbar-toggleable-md navbar-dark bg-dark fixed-top" (mouseleave)="showBuilderNav=false; showOtherNav=false" *ngIf="showOtherNav || inOther">
-  <div class="centerNav">
+<nav class="navbar navbar-toggleable-md main fixed-top mobileNav">
+  <a class="navbar-brand" [routerLink]="[getRoute('/')]">
+    <img src="assets/nav/WOTV-CALC.png" class="logo" />
+  </a>
+
+  <div class="centerNav mobileLinks" [ngClass]="{'showMobileMenu': displayMobileMenu === true}">
     <ul class="nav navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="{'navLinkMobile': displayLink}">
-        <a class="nav-link" [routerLink]="[getRoute('/other/titles')]" [routerLinkActive]="['active']">{{ 'nav.titles' | translate }}</a>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[getRoute('/units')]" [ngClass]="{'active': inUnit}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.units' | translate }}
+        </a>
+        <a class="nav-link" [routerLink]="[getRoute('/cards')]" [ngClass]="{'active': inCard}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.cards' | translate }}
+        </a>
+        <a class="nav-link" [routerLink]="[getRoute('/espers')]" [ngClass]="{'active': inEsper}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.espers' | translate }}
+        </a>
+        <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [ngClass]="{'active': inEquipment}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.equipments' | translate }}
+        </a>
+        <a class="nav-link" [routerLink]="[getRoute('/raids')]" [ngClass]="{'active': inRaid}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.raids' | translate }}
+        </a>
+
+        <a class="nav-link" [ngClass]="{'active': inBuilder}" (click)="showMobileBuilderNav = !showMobileBuilderNav" [attr.aria-expanded]="!showMobileBuilderNav">
+          {{ 'nav.builder' | translate }}
+          <i class="fas fa-chevron-up" *ngIf="showMobileBuilderNav" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" *ngIf="!showMobileBuilderNav" aria-hidden="true"></i>
+        </a>
+        <div class="subLinksMobile" [ngbCollapse]="!showMobileBuilderNav">
+          <a class="nav-link" [routerLink]="[getRoute('/builder/team')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.team' | translate }}
+          </a>
+          <a class="nav-link" [routerLink]="[getRoute('/builder/unit')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.units' | translate }}
+          </a>
+          <a class="nav-link" [routerLink]="[getRoute('/builder/card')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.cards' | translate }}
+          </a>
+          <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.espers' | translate }}
+          </a>
+          <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.equipments' | translate }}
+          </a>
+          <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.guild' | translate }}
+          </a>
+          <a *ngIf="version === 'JP'" class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+            {{ 'nav.masterRanks' | translate }}
+          </a>
+        </div>
+
+        <a class="nav-link" [ngClass]="{'active': inOther}"(click)="showMobileOtherNav = !showMobileOtherNav" [attr.aria-expanded]="!showMobileOtherNav">
+          OTHER
+          <i class="fas fa-chevron-up" *ngIf="showMobileOtherNav" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" *ngIf="!showMobileOtherNav" aria-hidden="true"></i>
+        </a>
+        <div class="subLinksMobile" [ngbCollapse]="!showMobileOtherNav">
+          <a class="nav-link" [routerLink]="[getRoute('/other/index')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Index</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/titles')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Titles</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/jobplanner')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Job Planner</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/farm-calculator')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Farm Calculator</a>
+        </div>
+
+        <div class="nav-link">
+          <a class="mobileVersionLink" (click)="changeVersion('GL'); toggleMobileMenu(true);">Global</a> <img src="assets/nav/split.png" class="split"/> <a class="mobileVersionLink" (click)="changeVersion('JP'); toggleMobileMenu(true);">Japan</a>
+        </div>
+
+        <div class="nav-link">
+          <ui-switch class="switchTheme" (click)="toggleTheme(); toggleMobileMenu(true);" checkedLabel="on" uncheckedLabel="off" [checked]="theme === 'light'"></ui-switch>
+        </div>
+
+        <div class="nav-link">
+          <button *ngIf="!user" class="btn btn-main btn-login" (click)="openLoginModal(); toggleMobileMenu(true);">LOGIN</button>
+          <button *ngIf="user" class="btn btn-sub btn-logout" (click)="logout(); toggleMobileMenu(true);">LOGOUT</button>
+        </div>
       </li>
     </ul>
   </div>
+
+  <div class="btnMenuMobile">
+    <button type="button" class="btn btn-secondary btnMenu" (click)="toggleMobileMenu()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
 </nav>
- -->

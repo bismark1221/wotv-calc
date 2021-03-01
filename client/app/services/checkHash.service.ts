@@ -6,6 +6,13 @@ export class CheckHashService {
   // Replaced by post-build.js
   private currentHash = '{{POST_BUILD_ENTERS_HASH_HERE}}';
 
+  /*
+    Save Hash in local storage to know if new data are available
+    - save hash
+    - save data in LS
+    - if hash change re-download data
+  */
+
   constructor(private http: HttpClient) {}
 
   public initHashCheck(url, frequency = 1000 * 60 * 10) {

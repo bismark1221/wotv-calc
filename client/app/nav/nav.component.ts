@@ -18,7 +18,9 @@ import { LoginComponent } from '../auth/login.component';
 })
 
 export class NavComponent implements OnInit, AfterViewInit {
-  displayLink = false;
+  displayMobileMenu = false;
+  showMobileBuilderNav = false;
+  showMobileOtherNav = false;
   menuDisabled: boolean;
   inBuilder = false;
   inOther = false;
@@ -161,5 +163,14 @@ export class NavComponent implements OnInit, AfterViewInit {
 
   logout() {
     this.authService.logout();
+  }
+
+  toggleMobileMenu(forceClose = false) {
+    this.displayMobileMenu = forceClose ? false : !this.displayMobileMenu;
+
+    if (forceClose) {
+      this.showMobileBuilderNav = false;
+      this.showMobileOtherNav = false;
+    }
   }
 }
