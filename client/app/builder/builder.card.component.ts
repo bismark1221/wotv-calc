@@ -22,7 +22,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 })
 export class BuilderCardComponent implements OnInit, AfterViewInit {
   cards;
-  filteredCards;
+  filteredCards = {};
   card;
   searchText = '';
   savedCards = {};
@@ -58,12 +58,12 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.getCards();
 
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
         this.loadingBuild = true;
 
-        const card = this.cardService.getCardBySlug(data);
+        const card = await this.cardService.getCardBySlug(data);
         if (card) {
           this.selectCard(card.dataId);
         } else {
@@ -100,8 +100,8 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private getCards() {
-    this.cards = this.formatCards(this.cardService.getCardsForListing());
+  private async getCards() {
+    this.cards = this.formatCards(await this.cardService.getCardsForListing());
     this.updateFilteredCards();
     this.translateCards();
 
@@ -151,9 +151,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     }
   }
 
-  selectCard(dataId, customData = null) {
+  async selectCard(dataId, customData = null) {
     if (dataId) {
-      this.card = this.cardService.selectCardForBuilder(dataId, customData);
+      this.card = await this.cardService.selectCardForBuilder(dataId, customData);
       this.searchText = this.card.name;
       this.showList = false;
       this.formatCardBuffs();

@@ -66,7 +66,7 @@ export class RaidComponent implements OnInit {
     });
   }
 
-  private formatRaid() {
+  private async formatRaid() {
     if (this.raid) {
       this.raid.bosses.forEach(boss => {
         boss.name = this.nameService.getName(boss);
@@ -122,9 +122,9 @@ export class RaidComponent implements OnInit {
         unit.unit = this.unitService.getUnit(unit.unitId);
       });
 
-      this.raid.bonus.cards.forEach(card => {
-        card.card = this.cardService.getCard(card.cardId);
-      });
+      for (const card of this.raid.bonus.cards) {
+        card.card = await this.cardService.getCard(card.cardId);
+      }
     }
   }
 

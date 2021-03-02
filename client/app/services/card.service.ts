@@ -10,11 +10,9 @@ import { NavService } from './nav.service';
 import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
+import { DataService } from './data.service';
 
 import { Card } from '../entities/card';
-
-import { default as GL_CARDS } from '../data/gl/cards.json';
-import { default as JP_CARDS } from '../data/jp/cards.json';
 
 @Injectable()
 export class CardService {
@@ -24,6 +22,7 @@ export class CardService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
+    private dataService: DataService,
     private skillService: SkillService,
     private rangeService: RangeService,
     private navService: NavService,
@@ -34,16 +33,12 @@ export class CardService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
-      return GL_CARDS;
-    } else {
-      return JP_CARDS;
-    }
+    return this.dataService.loadData('cards');
   }
 
-  getCards() {
+  async getCards() {
     const cards: Card[] = [];
-    const rawCards = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawCards = await this.getRaw().toPromise();
 
     Object.keys(rawCards).forEach(cardId => {
       const card = new Card();
@@ -55,8 +50,8 @@ export class CardService {
     return cards;
   }
 
-  getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
-    this.getCards();
+  async getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
+    await this.getCards();
     this.cards = this.filterCards(this.cards, filters);
 
     switch (sort) {
@@ -107,8 +102,8 @@ export class CardService {
     }
   }
 
-  getCardsForBuilder() {
-    const cards = this.getCardsForListing(null, 'rarity', 'asc');
+  async getCardsForBuilder() {
+    const cards = await this.getCardsForListing(null, 'rarity', 'asc');
 
     const formattedCardsForBuilder = [];
     cards.forEach(card => {
@@ -122,14 +117,14 @@ export class CardService {
     return formattedCardsForBuilder;
   }
 
-  getCard(id) {
-    this.getCards();
+  async getCard(id) {
+    await this.getCards();
 
     return this.cards.find(card => card.dataId === id);
   }
 
-  getCardBySlug(slug) {
-    this.getCards();
+  async getCardBySlug(slug) {
+    await this.getCards();
     this.card = this.cards.find(card => card.slug === slug);
 
     if (this.card) {
@@ -165,9 +160,9 @@ export class CardService {
     return data;
   }
 
-  selectCardForBuilder(cardId, customData = null) {
+  async selectCardForBuilder(cardId, customData = null) {
     this.card = new Card();
-    this.card.constructFromJson(JSON.parse(JSON.stringify(this.getCard(cardId))), this.translateService);
+    this.card.constructFromJson(JSON.parse(JSON.stringify(await this.getCard(cardId))), this.translateService);
     this.card.name = this.card.getName(this.translateService);
 
     this.card.star = 0;

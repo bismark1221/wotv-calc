@@ -11,7 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  cards;
+  cards = [];
   searchText = '';
   sort = 'rarity';
   order = 'asc';
@@ -41,8 +41,8 @@ export class CardsComponent implements OnInit {
     this.getCards();
   }
 
-  getCards() {
-    this.cards = this.cardService.getCardsForListing(this.filters, this.sort, this.order);
+  async getCards() {
+    this.cards = await this.cardService.getCardsForListing(this.filters, this.sort, this.order);
     this.translateCards();
   }
 

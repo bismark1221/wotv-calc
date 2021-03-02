@@ -27,7 +27,7 @@
             <tr>
               <td>
                 <div class="bonusBlock" *ngFor="let bonusCard of raid.bonus.cards">
-                  <img class="cardImg" src="assets/cards/{{ bonusCard.card.image }}_m.png" title="{{ bonusCard.card.names.en }}"/><br/>
+                  <img *ngIf="bonusCard.card" class="cardImg" src="assets/cards/{{ bonusCard.card.image }}_m.png" title="{{ bonusCard.card.names.en }}"/><br/>
                   {{ bonusCard.value }} %
                 </div>
               </td>

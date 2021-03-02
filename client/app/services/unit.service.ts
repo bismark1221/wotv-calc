@@ -365,7 +365,7 @@ export class UnitService {
     return this.unit;
   }
 
-  private initiateSavedUnit(customData = null) {
+  private async initiateSavedUnit(customData = null) {
     const unit = customData;
 
     if (unit) {
@@ -432,7 +432,7 @@ export class UnitService {
       }
 
       if (unit.card) {
-        this.unit.card = this.cardService.selectCardForBuilder(unit.card.dataId, unit.card);
+        this.unit.card = await this.cardService.selectCardForBuilder(unit.card.dataId, unit.card);
       } else {
         this.unit.card = null;
       }

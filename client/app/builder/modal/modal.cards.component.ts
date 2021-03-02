@@ -16,7 +16,7 @@ import { UnitService } from '../../services/unit.service';
   styleUrls: ['./modal.cards.component.css']
 })
 export class ModalCardsComponent implements OnInit {
-  cards;
+  cards = [];
 
   searchText = '';
   filters = {
@@ -44,20 +44,20 @@ export class ModalCardsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.getCards();
 
     if (this.card) {
-      this.card = this.cardService.selectCardForBuilder(this.card.dataId, this.card);
+      this.card = await this.cardService.selectCardForBuilder(this.card.dataId, this.card);
       this.formatCardBuffs();
     }
   }
 
-  getCards() {
+  async getCards() {
     if (isNaN(this.teamUnitPos)) {
-      this.cards = this.cardService.getCardsForListing(this.filters);
+      this.cards = await this.cardService.getCardsForListing(this.filters);
     } else {
-      this.cards = this.teamService.getAvailableCards(this.teamUnitPos, this.filters);
+      this.cards = await this.teamService.getAvailableCards(this.teamUnitPos, this.filters);
     }
 
     this.getFilteredCards();
@@ -109,13 +109,13 @@ export class ModalCardsComponent implements OnInit {
     this.modalStep = 'select';
   }
 
-  selectCard(cardId, customData = null, forceNewBuild = false) {
+  async selectCard(cardId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedCards[cardId] && this.savedCards[cardId].length > 0) {
       this.loadCardId = cardId;
 
       this.modalStep = 'load';
     } else {
-      this.card = this.cardService.selectCardForBuilder(cardId, customData);
+      this.card = await this.cardService.selectCardForBuilder(cardId, customData);
       this.formatCardBuffs();
 
       this.modalStep = 'custom';

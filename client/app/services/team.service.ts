@@ -258,7 +258,7 @@ export class TeamService {
     return availableUnits;
   }
 
-  getAvailableCards(pos, filters) {
+  async getAvailableCards(pos, filters) {
     const alreadyUsedCardIds = [];
     this.team.units.forEach((unit, unitIndex) => {
       if (unit && unitIndex !== pos && unit.card) {
@@ -266,7 +266,7 @@ export class TeamService {
       }
     });
 
-    const cards = this.cardService.getCardsForListing(filters);
+    const cards = await this.cardService.getCardsForListing(filters);
     const availableCards = [];
 
     cards.forEach(card => {

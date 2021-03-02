@@ -105,9 +105,6 @@ export class HomeComponent {
   ) {
     this.navService.setTitle(null);
 
-    this.getTranslation();
-    this.getUpdate();
-
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTranslation();
       this.getUpdate();
@@ -124,38 +121,42 @@ export class HomeComponent {
     });
   }
 
-  private getUpdate() {
+  private async getUpdate() {
     this.lang = this.translateService.currentLang;
     this.version = this.navService.getVersion();
 
-    this.updated[this.version].forEach((update, updateIndex) => {
+    for (let updateIndex = 0; updateIndex <= this.updated[this.version].length - 1; updateIndex++) {
+      const update = this.updated[this.version][updateIndex];
+
       this.updatedFormatted[updateIndex] = {
         date: update.date,
         items: []
       };
       const tableIndex = -1;
 
-      update.items.forEach((item, itemIndex) => {
-        const dataItem = this[item.type + 'Service']['get' + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
+      for (const item of update.items) {
+        const dataItem = await this[item.type + 'Service']['get' + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
 
-        this.updatedFormatted[updateIndex].items.push({
+        const formattedItem = {
           type: item.type,
           slug: dataItem.slug,
           name: this.nameService.getName(dataItem),
           image: dataItem.image,
           element: dataItem.element,
-          rarity: dataItem.rarity
-        });
+          rarity: dataItem.rarity,
+          jobs: []
+        };
 
         if (item.type === 'unit') {
-          this.updatedFormatted[updateIndex].items[itemIndex].jobs = [];
           dataItem.jobs.forEach(jobId => {
             const job = this.jobService.getJob(jobId);
-            this.updatedFormatted[updateIndex].items[itemIndex].jobs.push(job);
+            formattedItem.jobs.push(job);
           });
         }
-      });
-    });
+
+        this.updatedFormatted[updateIndex].items.push(formattedItem);
+      }
+    }
   }
 
   getRoute(route) {

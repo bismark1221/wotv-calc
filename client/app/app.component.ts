@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     window.scroll(0, 0);
   }
 
-  ngOnInit() {
-    this.checkHashService.initHashCheck(environment.versionCheckURL);
+  async ngOnInit() {
+    await this.checkHashService.initHashCheck(environment.versionCheckURL);
   }
 }
