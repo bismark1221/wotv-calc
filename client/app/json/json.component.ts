@@ -117,15 +117,15 @@ export class JsonComponent implements OnInit {
     });
   }
 
-  generateIndex() {
-    ['GL', 'JP'].forEach(version => {
+  async generateIndex() {
+    for (const version of ['GL', 'JP']) {
       this[version + 'Index'] = {
         units: []
       };
       const units = this.unitService.getUnits(version);
 
-      units.forEach(unit => {
-        const buildedUnit = this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
+      for (const unit of units) {
+        const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
 
         const stats = {};
         Object.keys(buildedUnit.stats).forEach(statType => {
@@ -137,7 +137,7 @@ export class JsonComponent implements OnInit {
           'stats': stats,
           'image': buildedUnit.image,
         });
-      });
-    });
+      }
+    }
   }
 }
