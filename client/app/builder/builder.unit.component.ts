@@ -263,9 +263,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.showList = !this.showList;
   }
 
-  selectUnit(dataId, customData = null) {
+  async selectUnit(dataId, customData = null) {
     if (dataId) {
-      this.unit = this.unitService.selectUnitForBuilder(dataId, customData);
+      this.unit = await this.unitService.selectUnitForBuilder(dataId, customData);
       this.searchText = this.unit.name;
 
       this.loadGuild();

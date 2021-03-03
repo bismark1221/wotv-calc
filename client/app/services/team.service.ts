@@ -302,9 +302,9 @@ export class TeamService {
     return this.team.units[unitPos].getAvailableEquipments(equipmentPos, this.equipmentService);
   }
 
-  selectUnit(pos, dataId, customData = null) {
+  async selectUnit(pos, dataId, customData = null) {
     if (dataId) {
-      this.team.units[pos] = this.unitService.selectUnitForBuilder(dataId, customData);
+      this.team.units[pos] = await this.unitService.selectUnitForBuilder(dataId, customData);
       this.team.units[pos].guild = this.team.guild;
       this.team.units[pos].masterRanks = this.team.masterRanks;
 

@@ -90,8 +90,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.activatedRoute.paramMap.subscribe((params: Params) => {
       const data = params.get('data');
       if (data) {
-        this.teamService.getStoredTeam(data).subscribe(teamData => {
-          this.teamService.updateTeam(teamData);
+        this.teamService.getStoredTeam(data).subscribe(async teamData => {
+          await this.teamService.updateTeam(teamData);
           this.team.units.forEach((unit, unitIndex) => {
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId;
@@ -363,9 +363,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.type = 'team';
     modalRef.componentInstance.savedItems = this.savedTeams;
 
-    modalRef.result.then(result => {
+    modalRef.result.then(async result => {
       if (result.type === 'load' && result.item) {
-        this.loadTeam(result.item);
+        await this.loadTeam(result.item);
       }
 
       if (result.type === 'fullDelete') {
@@ -375,8 +375,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
   }
 
-  loadTeam(teamData) {
-    this.teamService.updateTeam(teamData);
+  async loadTeam(teamData) {
+    await this.teamService.updateTeam(teamData);
     this.updateAllAvailable();
     this.updateAllSelected();
 
