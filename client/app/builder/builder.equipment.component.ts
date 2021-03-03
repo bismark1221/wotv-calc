@@ -49,22 +49,22 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngOnInit() {
-    this.getEquipments();
+  async ngOnInit() {
+    await this.getEquipments();
 
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
         this.loadingBuild = true;
 
-        const equipment = this.equipmentService.getEquipmentBySlug(data);
+        const equipment = await this.equipmentService.getEquipmentBySlug(data);
         if (equipment) {
-          this.selectEquipment(equipment.dataId);
+          await this.selectEquipment(equipment.dataId);
         } else {
-          this.equipmentService.getStoredEquipment(data).subscribe(equipmentData => {
+          this.equipmentService.getStoredEquipment(data).subscribe(async equipmentData => {
             if (equipmentData) {
               // @ts-ignore
-              this.selectEquipment(equipmentData.dataId, equipmentData);
+              await this.selectEquipment(equipmentData.dataId, equipmentData);
             }
           });
         }
@@ -94,8 +94,8 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private getEquipments() {
-    this.equipments = this.formatEquipments(this.equipmentService.getEquipmentsForListing());
+  private async getEquipments() {
+    this.equipments = this.formatEquipments(await this.equipmentService.getEquipmentsForListing());
     this.updateFilteredEquipments();
     this.translateEquipments();
 
@@ -145,9 +145,9 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     }
   }
 
-  selectEquipment(dataId, customData = null) {
+  async selectEquipment(dataId, customData = null) {
     if (dataId) {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(dataId, customData);
+      this.equipment = await this.equipmentService.selectEquipmentForBuilder(dataId, customData);
       this.searchText = this.equipment.name;
       this.showList = false;
     } else {
@@ -192,9 +192,9 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.type = 'equipment';
     modalRef.componentInstance.savedItems = this.savedEquipments[equipmentId];
 
-    modalRef.result.then(result => {
+    modalRef.result.then(async result => {
       if (result.type === 'load' && result.item) {
-        this.selectEquipment(result.item.dataId, result.item);
+        await this.selectEquipment(result.item.dataId, result.item);
       }
 
       if (result.type === 'fullDelete') {

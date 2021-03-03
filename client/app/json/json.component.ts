@@ -122,7 +122,7 @@ export class JsonComponent implements OnInit {
       this[version + 'Index'] = {
         units: []
       };
-      const units = this.unitService.getUnits(version);
+      const units = await this.unitService.getUnits(version);
 
       for (const unit of units) {
         const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);

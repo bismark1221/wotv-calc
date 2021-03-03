@@ -49,20 +49,20 @@ export class UnitsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Units');
 
-    this.getUnits();
-    this.getJobs();
+    await this.getUnits();
+    await this.getJobs();
   }
 
-  getUnits() {
-    this.units = this.unitService.getUnitsForListing(this.filters, this.sort, this.order);
+  async getUnits() {
+    this.units = await this.unitService.getUnitsForListing(this.filters, this.sort, this.order);
     this.translateUnits();
   }
 
-  getJobs() {
-    this.jobs = this.jobService.getUniqJobs();
+  async getJobs() {
+    this.jobs = await this.jobService.getUniqJobs();
     this.translateJobs();
   }
 
@@ -93,17 +93,17 @@ export class UnitsComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getUnits();
+    await this.getUnits();
   }
 
-  filterEquipment(type, value) {
+  async filterEquipment(type, value) {
     if (type === 'armor') {
       if (this.filters.equipment.armor.indexOf(value) === -1) {
         this.filters.equipment.armor.push(value);
@@ -114,23 +114,23 @@ export class UnitsComponent implements OnInit {
       this.filters.equipment.weapon = value;
     }
 
-    this.getUnits();
+    await this.getUnits();
   }
 
-  toggleMainJob() {
+  async toggleMainJob() {
     this.filters.mainJob = !this.filters.mainJob;
     this.filters.subJob = false;
-    this.getUnits();
+    await this.getUnits();
   }
 
-  toggleSubJob() {
+  async toggleSubJob() {
     this.filters.mainJob = false;
     this.filters.subJob = !this.filters.subJob;
-    this.getUnits();
+    await this.getUnits();
   }
 
-  toggleExJob() {
+  async toggleExJob() {
     this.filters.exJob = !this.filters.exJob;
-    this.getUnits();
+    await this.getUnits();
   }
 }

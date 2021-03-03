@@ -1454,7 +1454,7 @@ export class Unit {
     });
   }
 
-  getAvailableEquipments(pos, equipmentService) {
+  async getAvailableEquipments(pos, equipmentService) {
     const armorTypes = [];
 
     this.jobsData[0].equipments.armors.forEach(type => {
@@ -1488,7 +1488,7 @@ export class Unit {
       }
     }
 
-    const equipments = equipmentService.getEquipmentsForUnitBuilder();
+    const equipments = await equipmentService.getEquipmentsForUnitBuilder();
     const availableEquipments = [];
     let mainJob = this.jobs[0].split('_');
     mainJob = mainJob[0] + '_' + mainJob[1] + '_' + mainJob[2];

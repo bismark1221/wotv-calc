@@ -35,14 +35,14 @@ export class EspersComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Espers');
 
-    this.getEspers();
+    await this.getEspers();
   }
 
-  getEspers() {
-    this.espers = this.esperService.getEspersForListing(this.filters, this.sort, this.order);
+  async getEspers() {
+    this.espers = await this.esperService.getEspersForListing(this.filters, this.sort, this.order);
     this.translateEspers();
   }
 
@@ -67,18 +67,18 @@ export class EspersComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEspers();
+    await this.getEspers();
   }
 
-  toggleThreeStars() {
+  async toggleThreeStars() {
     this.filters.threeStars = !this.filters.threeStars;
-    this.getEspers();
+    await this.getEspers();
   }
 }

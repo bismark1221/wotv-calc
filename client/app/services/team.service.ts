@@ -21,7 +21,7 @@ export class TeamService {
   private units: Unit[];
 
   savedTeams;
-  team;
+  team = null;
 
   constructor(
     private translateService: TranslateService,
@@ -37,20 +37,13 @@ export class TeamService {
     private firestore: AngularFirestore,
     private toolService: ToolService,
     private authService: AuthService
-  ) {
-    this.team = {
-      name: '',
-      guild: this.guildService.getGuildForBuilder(),
-      masterRanks: this.masterRanksService.getMasterRanksForBuilder(),
-      units: [null, null, null, null, null]
-    };
-  }
+  ) {}
 
-  newTeam() {
+  async newTeam() {
     this.team = {
       name: '',
       guild: this.guildService.getGuildForBuilder(),
-      masterRanks: this.masterRanksService.getMasterRanksForBuilder(),
+      masterRanks: await this.masterRanksService.getMasterRanksForBuilder(),
       units: [null, null, null, null, null],
       cost: 0
     };
@@ -238,7 +231,7 @@ export class TeamService {
     this.updateTeamCost();
   }
 
-  getAvailableUnits(pos) {
+  async getAvailableUnits(pos) {
     const alreadyUsedUnitIds = [];
     this.team.units.forEach((unit, unitIndex) => {
       if (unit && unitIndex !== pos) {
@@ -246,7 +239,7 @@ export class TeamService {
       }
     });
 
-    const units = this.unitService.getUnitsForJPBuilder();
+    const units = await this.unitService.getUnitsForJPBuilder();
     const availableUnits = [];
 
     units.forEach(unit => {
@@ -278,7 +271,7 @@ export class TeamService {
     return availableCards;
   }
 
-  getAvailableEspers(pos, filters) {
+  async getAvailableEspers(pos, filters) {
     const alreadyUsedEsperIds = [];
     this.team.units.forEach((unit, unitIndex) => {
       if (unit && unitIndex !== pos && unit.esper) {
@@ -286,7 +279,7 @@ export class TeamService {
       }
     });
 
-    const espers = this.esperService.getEspersForListing(filters);
+    const espers = await this.esperService.getEspersForListing(filters);
     const availableEspers = [];
 
     espers.forEach(esper => {
@@ -296,10 +289,6 @@ export class TeamService {
     });
 
     return availableEspers;
-  }
-
-  getAvailableEquipments(unitPos, equipmentPos) {
-    return this.team.units[unitPos].getAvailableEquipments(equipmentPos, this.equipmentService);
   }
 
   async selectUnit(pos, dataId, customData = null) {

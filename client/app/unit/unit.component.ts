@@ -37,15 +37,11 @@ export class UnitComponent implements OnInit {
     private gridService: GridService,
     private navService: NavService,
     private nameService: NameService
-  ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.formatUnit();
-    });
-  }
+  ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.unit = this.unitService.getUnitBySlug(params.get('slug'));
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      this.unit = await this.unitService.getUnitBySlug(params.get('slug'));
 
       if (!this.unit) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
@@ -54,9 +50,13 @@ export class UnitComponent implements OnInit {
           this.possibleSkillTypes = ['support', 'counter', 'ex_buff'];
         }
 
-        this.formatUnit();
+        await this.formatUnit();
         this.navService.setTitle(this.unit.name);
       }
+    });
+
+    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+      await this.formatUnit();
     });
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
@@ -79,7 +79,7 @@ export class UnitComponent implements OnInit {
     });
   }
 
-  private formatUnit() {
+  private async formatUnit() {
     if (this.unit) {
       const lang = this.translateService.currentLang;
       this.jobs = [];
@@ -242,22 +242,22 @@ export class UnitComponent implements OnInit {
       this.unit.totalEXJobsStats = {};
 
       let i = 0;
-      this.unit.jobs.forEach(jobId => {
-        const job = this.jobService.getJob(jobId);
+      for (const jobId of this.unit.jobs) {
+        const job = await this.jobService.getJob(jobId);
         this.calcJobStat(job, (i > 0 ? true : false));
         job.name = this.nameService.getName(job);
         this.jobs.push(job);
         i++;
-      });
+      }
 
       if (this.unit.exJobs) {
-        this.unit.exJobs.forEach(jobId => {
-          const job = this.jobService.getJob(jobId);
+        for (const jobId of this.unit.exJobs) {
+          const job = await this.jobService.getJob(jobId);
           this.calcEXJobStat(job, false);
           job.name = this.nameService.getName(job);
           this.exJobs.push(job);
           i++;
-        });
+        }
       }
 
       Object.keys(this.unit.totalJobsStats).forEach(stat => {

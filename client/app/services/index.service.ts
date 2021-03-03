@@ -1,25 +1,21 @@
 import { Injectable } from '@angular/core';
 
-import { default as GL_INDEX } from '../data/gl/index.json';
-import { default as JP_INDEX } from '../data/jp/index.json';
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
 
 @Injectable()
 export class IndexService {
   constructor(
+    private dataService: DataService,
     private navService: NavService
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
-      return GL_INDEX;
-    } else {
-      return JP_INDEX;
-    }
+    return this.dataService.loadData('index');
   }
 
-  getUnits() {
-    const raw = JSON.parse(JSON.stringify(this.getRaw()));
+  async getUnits() {
+    const raw = JSON.parse(JSON.stringify(await this.getRaw()));
 
     return raw.units;
   }

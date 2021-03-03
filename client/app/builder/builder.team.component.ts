@@ -79,12 +79,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.version = this.navService.getVersion();
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     for (let i = 0; i <= 4; i++) {
-      this.getAvailableUnits(i);
+      await this.getAvailableUnits(i);
     }
 
-    this.team = this.teamService.newTeam();
+    this.team = await this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues);
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -92,10 +92,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (data) {
         this.teamService.getStoredTeam(data).subscribe(async teamData => {
           await this.teamService.updateTeam(teamData);
-          this.team.units.forEach((unit, unitIndex) => {
+
+          for (let unitIndex = 0; unitIndex <= this.team.units.length - 1; unitIndex++) {
+            const unit = this.team.units[unitIndex];
             if (unit) {
               this.selectedUnits[unitIndex] = unit.dataId;
-              this.getAvailableUnits(unitIndex);
+              await this.getAvailableUnits(unitIndex);
 
               Object.keys(unit.board.nodes).forEach(nodeId => {
                 if (unit.board.nodes[nodeId].skill.type !== 'buff') {
@@ -103,7 +105,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
                 }
               });
             }
-          });
+          }
         });
       }
     });
@@ -130,8 +132,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
   }
 
-  getAvailableUnits(pos) {
-    this.availableUnits[pos] = this.teamService.getAvailableUnits(pos);
+  async getAvailableUnits(pos) {
+    this.availableUnits[pos] = await this.teamService.getAvailableUnits(pos);
     this.translateUnits(pos);
   }
 
@@ -141,13 +143,13 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
   }
 
-  selectUnit(pos, forceSelect = false, customData = null) {
+  async selectUnit(pos, forceSelect = false, customData = null) {
     const dataId = this.selectedUnits[pos];
 
     if (!forceSelect && this.savedUnits[dataId] && this.savedUnits[dataId].length > 0) {
       this.openLoadModalUnits(pos, dataId);
     } else {
-      this.teamService.selectUnit(pos, dataId, customData);
+      await this.teamService.selectUnit(pos, dataId, customData);
 
       if (this.team.units[pos]) {
         Object.keys(this.team.units[pos].board.nodes).forEach(nodeId => {
@@ -171,11 +173,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         }
       }
 
-      this.team.units.forEach((unit, unitIndex) => {
-        if (unitIndex !== pos) {
-          this.getAvailableUnits(unitIndex);
+      for (let i = 0; i <= this.team.units.length - 1; i++) {
+        if (i !== pos) {
+          await this.getAvailableUnits(i);
         }
-      });
+      }
     }
   }
 
@@ -186,13 +188,13 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.savedItems = this.savedUnits[unitId];
     modalRef.componentInstance.allowNew = true;
 
-    modalRef.result.then(result => {
+    modalRef.result.then(async result => {
       if (result.type === 'new') {
-        this.selectUnit(pos, true);
+        await this.selectUnit(pos, true);
       }
 
       if (result.type === 'load' && result.item) {
-        this.selectUnit(pos, true, result.item);
+        await this.selectUnit(pos, true, result.item);
       }
 
       if (result.type === 'fullDelete') {
@@ -377,7 +379,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   async loadTeam(teamData) {
     await this.teamService.updateTeam(teamData);
-    this.updateAllAvailable();
+    await this.updateAllAvailable();
     this.updateAllSelected();
 
     this.team.units.forEach((unit, unitIndex) => {
@@ -391,10 +393,10 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     });
   }
 
-  updateAllAvailable() {
-    this.team.units.forEach((unit, unitIndex) => {
-      this.getAvailableUnits(unitIndex);
-    });
+  async updateAllAvailable() {
+    for (let i = 0; i <= this.team.units.length - 1; i++) {
+      await this.getAvailableUnits(i);
+    }
   }
 
   updateAllSelected() {
@@ -458,9 +460,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.teamService.resetJob(pos);
   }
 
-  newTeam() {
-    this.team = this.teamService.newTeam();
+  async newTeam() {
+    this.team = await this.teamService.newTeam();
     this.updateAllSelected();
-    this.updateAllAvailable();
+    await this.updateAllAvailable();
   }
 }

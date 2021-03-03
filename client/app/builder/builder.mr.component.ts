@@ -22,9 +22,9 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
   ) {
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.masterRanks = this.masterRanksService.getMasterRanks();
-    this.ranks = this.masterRanksService.getRanks();
+    this.ranks = await this.masterRanksService.getRanks();
     this.version = this.navService.getVersion();
 
     this.navService.setTitle('Master Ranks Builder');

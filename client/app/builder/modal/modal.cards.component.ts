@@ -146,7 +146,7 @@ export class ModalCardsComponent implements OnInit {
     this.formatCardBuffs();
   }
 
-  private formatCardBuffs() {
+  private async formatCardBuffs() {
     this.card.formattedBuffs = {
       self: [],
       party: []
@@ -154,9 +154,9 @@ export class ModalCardsComponent implements OnInit {
 
     const buffTypes = ['self', 'party'];
 
-    buffTypes.forEach(buffType => {
-      Object.keys(this.card.buffs[buffType]).forEach(statType => {
-        this.card.buffs[buffType][statType].forEach(buff => {
+    for (const buffType of buffTypes) {
+      for (const statType of Object.keys(this.card.buffs[buffType])) {
+        for (const buff of this.card.buffs[buffType][statType]) {
           const formattedEffect = {
             type: statType,
             value: buff.value,
@@ -169,46 +169,50 @@ export class ModalCardsComponent implements OnInit {
           };
 
           if (formattedBuff.cond) {
-            formattedBuff.cond.forEach(cond => {
+            for (const cond of formattedBuff.cond) {
               if (cond.type === 'job') {
                 cond.formattedItems = [];
-                cond.items.forEach((jobId, jobIndex) => {
-                  const job = this.jobService.getJob(jobId);
+                for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+                  const jobId = cond.items[jobIndex];
+                  const job = await this.jobService.getJob(jobId);
                   cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
-                });
+                }
               } else if (cond.type === 'unit') {
                 cond.formattedItems = [];
-                cond.items.forEach((unitId, unitIndex) => {
-                  const unit = this.unitService.getUnit(unitId);
+                for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+                  const unitId = cond.items[unitIndex];
+                  const unit = await this.unitService.getUnit(unitId);
                   cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
-                });
+                }
               }
-            });
+            }
           }
 
           this.card.formattedBuffs[buffType].push(formattedBuff);
-        });
-      });
-    });
+        }
+      }
+    }
 
-    this.card.skills.forEach(skill => {
+    for (const skill of this.card.skills) {
       if (skill.cond) {
-        skill.cond.forEach(cond => {
+        for (const cond of skill.cond) {
           if (cond.type === 'job') {
             cond.formattedItems = [];
-            cond.items.forEach((jobId, jobIndex) => {
-              const job = this.jobService.getJob(jobId);
+            for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+              const jobId = cond.items[jobIndex];
+              const job = await this.jobService.getJob(jobId);
               cond.formattedItems[jobIndex] = job ? job : cond.items[jobIndex];
-            });
+            }
           } else if (cond.type === 'unit') {
             cond.formattedItems = [];
-            cond.items.forEach((unitId, unitIndex) => {
-              const unit = this.unitService.getUnit(unitId);
+            for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+              const unitId = cond.items[unitIndex];
+              const unit = await this.unitService.getUnit(unitId);
               cond.formattedItems[unitIndex] = unit ? unit : cond.items[unitIndex];
-            });
+            }
           }
-        });
+        }
       }
-    });
+    }
   }
 }

@@ -10,11 +10,9 @@ import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
 import { SkillService } from './skill.service';
 import { NameService } from './name.service';
+import { DataService } from './data.service';
 
 import { Esper } from '../entities/esper';
-
-import { default as GL_ESPERS } from '../data/gl/espers.json';
-import { default as JP_ESPERS } from '../data/jp/espers.json';
 
 @Injectable()
 export class EsperService {
@@ -75,6 +73,7 @@ export class EsperService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
+    private dataService: DataService,
     private gridService: GridService,
     private navService: NavService,
     private toolService: ToolService,
@@ -85,16 +84,12 @@ export class EsperService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
-      return GL_ESPERS;
-    } else {
-      return JP_ESPERS;
-    }
+    return this.dataService.loadData('espers');
   }
 
-  getEspers(): Esper[] {
+  async getEspers() {
     const espers: Esper[] = [];
-    const rawEspers = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawEspers = JSON.parse(JSON.stringify(await this.getRaw()));
 
     Object.keys(rawEspers).forEach(esperId => {
       const esper = new Esper();
@@ -106,8 +101,8 @@ export class EsperService {
     return espers;
   }
 
-  getEspersForListing(filters = null, sort = 'rarity', order = 'asc') {
-    this.getEspers();
+  async getEspersForListing(filters = null, sort = 'rarity', order = 'asc') {
+    await this.getEspers();
     this.espers = this.filterEspers(this.espers, filters);
 
     switch (sort) {
@@ -155,8 +150,8 @@ export class EsperService {
     return rarity;
   }
 
-  getEspersForBuilder() {
-    const espers = this.getEspersForListing(null, 'rarity', 'asc');
+  async getEspersForBuilder() {
+    const espers = await this.getEspersForListing(null, 'rarity', 'asc');
 
     const formattedEspersForBuilder = [];
     espers.forEach(esper => {
@@ -170,14 +165,14 @@ export class EsperService {
     return formattedEspersForBuilder;
   }
 
-  getEsper(id): Esper {
-    this.getEspers();
+  async getEsper(id) {
+    await this.getEspers();
 
     return this.espers.find(esper => esper.dataId === id);
   }
 
-  getEsperBySlug(slug): Esper {
-    this.getEspers();
+  async getEsperBySlug(slug) {
+    await this.getEspers();
 
     return this.espers.find(esper => esper.slug === slug);
   }
@@ -214,9 +209,9 @@ export class EsperService {
     return data;
   }
 
-  selectEsperForBuilder(esperId, customData = null) {
+  async selectEsperForBuilder(esperId, customData = null) {
     this.esper = new Esper();
-    this.esper.constructFromJson(JSON.parse(JSON.stringify(this.getEsper(esperId))), this.translateService);
+    this.esper.constructFromJson(JSON.parse(JSON.stringify(await this.getEsper(esperId))), this.translateService);
     this.esper.name = this.esper.getName(this.translateService);
 
     this.esper.star = 1;

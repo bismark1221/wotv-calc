@@ -3,10 +3,8 @@ import { LocalStorageService } from 'angular-2-local-storage';
 
 import { AngularFirestore } from '@angular/fire/firestore';
 
-
-import { default as GL_MRS } from '../data/gl/masterRanks.json';
-import { default as JP_MRS } from '../data/jp/masterRanks.json';
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
 import { AuthService } from './auth.service';
 
 @Injectable()
@@ -28,21 +26,18 @@ export class MasterRanksService {
 
   constructor(
     private localStorageService: LocalStorageService,
+    private dataService: DataService,
     private navService: NavService,
     private authService: AuthService,
     private firestore: AngularFirestore
   ) {}
 
   private getRaw(forcedVersion = null) {
-    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
-      return GL_MRS;
-    } else {
-      return JP_MRS;
-    }
+    return this.dataService.loadData('masterRanks');
   }
 
-  getMRs(forcedVersion = null) {
-    const rawMRs = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
+  async getMRs(forcedVersion = null) {
+    const rawMRs = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
 
     this.dataMasterRanks = rawMRs;
     return this.dataMasterRanks;
@@ -72,7 +67,7 @@ export class MasterRanksService {
     return this.masterRanks;
   }
 
-  getMasterRanksForBuilder(forceEmptyMasterRanks = false, forcedVersion = null) {
+  async getMasterRanksForBuilder(forceEmptyMasterRanks = false, forcedVersion = null) {
     if (!forceEmptyMasterRanks && this.localStorageService.get(this.getLocalStorage()) && Object.keys(this.localStorageService.get(this.getLocalStorage())).length >= 8) {
       this.masterRanks = JSON.parse(JSON.stringify(this.localStorageService.get(this.getLocalStorage())));
 
@@ -98,7 +93,7 @@ export class MasterRanksService {
 
     return {
       data: this.masterRanks,
-      ranks: this.getMRs(forcedVersion)
+      ranks: await this.getMRs(forcedVersion)
     };
   }
 
@@ -158,8 +153,8 @@ export class MasterRanksService {
     }
   }
 
-  getRanks() {
-    this.getMRs();
+  async getRanks() {
+    await this.getMRs();
 
     return this.dataMasterRanks;
   }

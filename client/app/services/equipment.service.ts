@@ -10,11 +10,9 @@ import { NavService } from './nav.service';
 import { NameService } from './name.service';
 import { ToolService } from './tool.service';
 import { AuthService } from './auth.service';
+import { DataService } from './data.service';
 
 import { Equipment } from '../entities/equipment';
-
-import { default as GL_EQUIPMENTS } from '../data/gl/equipments.json';
-import { default as JP_EQUIPMENTS } from '../data/jp/equipments.json';
 
 @Injectable()
 export class EquipmentService {
@@ -218,6 +216,7 @@ export class EquipmentService {
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
+    private dataService: DataService,
     private skillService: SkillService,
     private rangeService: RangeService,
     private navService: NavService,
@@ -228,16 +227,12 @@ export class EquipmentService {
   ) {}
 
   private getRaw() {
-    if (this.navService.getVersion() === 'GL') {
-      return GL_EQUIPMENTS;
-    } else {
-      return JP_EQUIPMENTS;
-    }
+    return this.dataService.loadData('equipments');
   }
 
-  getEquipments(): Equipment[] {
+  async getEquipments() {
     const equipments: Equipment[] = [];
-    const rawEquipments = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawEquipments = JSON.parse(JSON.stringify(await this.getRaw()));
 
     Object.keys(rawEquipments).forEach(equipmentId => {
       const equipment = new Equipment();
@@ -254,8 +249,8 @@ export class EquipmentService {
     return equipments;
   }
 
-  getEquipmentsForListing(filters = null, sort = 'rarity', order = 'asc') {
-    this.getEquipments();
+  async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'asc') {
+    await this.getEquipments();
     this.equipments = this.filterEquipments(this.equipments, filters);
 
     switch (sort) {
@@ -293,14 +288,14 @@ export class EquipmentService {
     }
   }
 
-  getEquipmentBySlug(slug: string): Equipment {
-    this.getEquipments();
+  async getEquipmentBySlug(slug: string) {
+    await this.getEquipments();
 
     return this.equipments.find(equipment => equipment.slug === slug);
   }
 
-  getEquipment(id: string): Equipment {
-    this.getEquipments();
+  async getEquipment(id: string) {
+    await this.getEquipments();
 
     return this.equipments.find(equipment => equipment.dataId === id);
   }
@@ -317,27 +312,12 @@ export class EquipmentService {
     return this.formatType[type];
   }
 
-  getEquipmentsForUnitBuilder() {
-    const equipments = this.getEquipmentsForListing(null, 'rarity', 'asc');
+  async getEquipmentsForUnitBuilder() {
+    const equipments = await this.getEquipmentsForListing(null, 'rarity', 'asc');
 
     const formattedEquipmentsForBuilder = [];
     equipments.forEach(equipment => {
       formattedEquipmentsForBuilder.push(equipment);
-    });
-
-    return formattedEquipmentsForBuilder;
-  }
-
-  getEquipmentsForBuilder() {
-    const equipments = this.getEquipmentsForListing(null, 'rarity', 'asc');
-
-    const formattedEquipmentsForBuilder = [];
-    equipments.forEach(equipment => {
-      formattedEquipmentsForBuilder.push({
-        id: equipment.dataId,
-        name: equipment.getName(this.translateService),
-        rarity: equipment.rarity
-      });
     });
 
     return formattedEquipmentsForBuilder;
@@ -380,9 +360,9 @@ export class EquipmentService {
     return data;
   }
 
-  selectEquipmentForBuilder(equipmentId, customData = null) {
+  async selectEquipmentForBuilder(equipmentId, customData = null) {
     this.equipment = new Equipment();
-    this.equipment.constructFromJson(JSON.parse(JSON.stringify(this.getEquipment(equipmentId))), this.translateService);
+    this.equipment.constructFromJson(JSON.parse(JSON.stringify(await this.getEquipment(equipmentId))), this.translateService);
     this.equipment.name = this.equipment.getName(this.translateService);
 
     this.equipment.name = this.equipment.getName(this.translateService);
@@ -612,8 +592,8 @@ export class EquipmentService {
     this.equipment.category = category;
   }
 
-  getAcquisitionTypes() {
-    this.getEquipments();
+  async getAcquisitionTypes() {
+    await this.getEquipments();
 
     const types = ['Unknown', 'tmr'];
     this.equipments.forEach(equipment => {

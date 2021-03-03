@@ -155,10 +155,10 @@ export class HomeComponent {
         };
 
         if (item.type === 'unit') {
-          dataItem.jobs.forEach(jobId => {
-            const job = this.jobService.getJob(jobId);
+          for (const jobId of dataItem.jobs) {
+            const job = await this.jobService.getJob(jobId);
             formattedItem.jobs.push(job);
-          });
+          }
         }
 
         this.updatedFormatted[updateIndex].items.push(formattedItem);

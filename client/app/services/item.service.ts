@@ -3,12 +3,11 @@ import { TranslateService } from '@ngx-translate/core';
 import { of } from 'rxjs';
 
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
 import { JobService } from './job.service';
 import { EquipmentService } from './equipment.service';
 
 import { Item } from '../entities/item';
-import GL_ITEMS from '../data/gl/items.json';
-import JP_ITEMS from '../data/jp/items.json';
 
 @Injectable()
 export class ItemService {
@@ -20,23 +19,19 @@ export class ItemService {
   constructor(
     private translateService: TranslateService,
     private navService: NavService,
+    private dataService: DataService,
     private jobService: JobService,
     private equipmentService: EquipmentService
   ) {}
 
   private getRaw() {
-    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
-    if (this.savedVersion === 'GL') {
-      return GL_ITEMS;
-    } else {
-      return JP_ITEMS;
-    }
+    return this.dataService.loadData('items');
   }
 
-  getItems() {
+  async getItems() {
     if (!this.items || this.items.length === 0 || this.savedVersion !== this.navService.getVersion()) {
       const items: Item[] = [];
-      const rawItems = JSON.parse(JSON.stringify(this.getRaw()));
+      const rawItems = JSON.parse(JSON.stringify(await this.getRaw()));
 
       Object.keys(rawItems).forEach(itemId => {
         const item = new Item();
@@ -50,8 +45,8 @@ export class ItemService {
     return this.items;
   }
 
-  getItem(id: string, formatToShow = false): Item {
-    this.getItems();
+  async getItem(id: string, formatToShow = false) {
+    await this.getItems();
 
     const item = this.items.find(itemData => itemData.dataId === id);
 
@@ -59,15 +54,15 @@ export class ItemService {
       item.getName(this.translateService);
 
       if (formatToShow) {
-        this.formatItemToShow(item);
+        await this.formatItemToShow(item);
       }
     }
 
     return item;
   }
 
-  getItemForFarm(searchTerm) {
-    this.getItems();
+  async getItemForFarm(searchTerm) {
+    await this.getItems();
 
     let items = [];
 
@@ -79,14 +74,14 @@ export class ItemService {
       items = this.items.filter(x => x.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
     }
 
-    items.forEach(item => {
-      this.formatItemToShow(item);
-    });
+    for (const item of items) {
+      await this.formatItemToShow(item);
+    }
 
-    return of(items);
+    return items;
   }
 
-  formatItemToShow(item) {
+  async formatItemToShow(item) {
     if (item) {
       item.image = item.dataId.toLowerCase();
 
@@ -112,13 +107,13 @@ export class ItemService {
             break;
         }
 
-        const job = this.jobService.getJob(item.icon);
+        const job = await this.jobService.getJob(item.icon);
         item.image = job.image;
       } else if (item.type === 'recipe') {
-        const equipment = this.equipmentService.getEquipment(item.icon);
+        const equipment = await this.equipmentService.getEquipment(item.icon);
         item.image = equipment.image;
       } else if (item.type === 'medal' && item.icon) {
-        const oldItem = this.getItem(item.icon);
+        const oldItem = await this.getItem(item.icon);
         if (oldItem) {
           item.image = oldItem.dataId.toLowerCase();
         } else {

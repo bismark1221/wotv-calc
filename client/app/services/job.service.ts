@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Job } from '../entities/job';
-import { default as GL_JOBS } from '../data/gl/jobs.json';
-import { default as JP_JOBS } from '../data/jp/jobs.json';
+
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
 import { ToolService } from './tool.service';
 
 @Injectable()
@@ -16,22 +16,19 @@ export class JobService {
   ];
 
   constructor(
+    private dataService: DataService,
     private navService: NavService,
     private translateService: TranslateService,
     private toolService: ToolService
   ) {}
 
-  private getRaw(forcedVersion = null) {
-    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
-      return GL_JOBS;
-    } else {
-      return JP_JOBS;
-    }
+  private getRaw(forcedVersion = null) { // @TODO Manage forcedVersion !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    return this.dataService.loadData('jobs');
   }
 
-  getJobs(forcedVersion = null) {
+  async getJobs(forcedVersion = null) {
     const jobs = [];
-    const rawJobs = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
+    const rawJobs = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
 
     Object.keys(rawJobs).forEach(jobId => {
       const job = new Job();
@@ -43,9 +40,9 @@ export class JobService {
     return jobs;
   }
 
-  getUniqJobs(): Job[] {
+  async getUniqJobs() {
     const jobs: Job[] = [];
-    const rawJobs = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawJobs = JSON.parse(JSON.stringify(await this.getRaw()));
     const uniqJobs = [];
 
     Object.keys(rawJobs).forEach(jobId => {
@@ -66,8 +63,8 @@ export class JobService {
     return jobs;
   }
 
-  getJob(id, forcedVersion = null): Job {
-    this.getJobs(forcedVersion);
+  async getJob(id, forcedVersion = null) {
+    await this.getJobs(forcedVersion);
 
     return this.jobs.find(job => job.dataId === id);
   }

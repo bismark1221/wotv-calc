@@ -41,46 +41,49 @@ export class OtherFarmCalculatorComponent implements OnInit {
   ) {
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Farm Calculator');
     this.version = this.navService.getVersion();
 
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
-        data.split(',').forEach(itemId => {
-          const item = this.itemService.getItem(itemId, true);
+        for (const itemId of data.split(',')) {
+          const item = await this.itemService.getItem(itemId, true);
           if (item) {
             this.selectedItems.push(item);
           }
-        });
+        }
 
-        this.getQuests();
+        await this.getQuests();
       }
     });
 
-    this.getItems();
+    await this.getItems();
   }
 
-  getItems() {
+  async getItems() {
+
+
     this.items = concat(
       of([]),
       this.itemInput.pipe(
         distinctUntilChanged(),
         tap(() => this.itemLoading = true),
-        switchMap(term => this.itemService.getItemForFarm(term).pipe(
-          catchError(() => of([])),
-          tap(() => this.itemLoading = false)
-        ))
+        switchMap(async term => {
+          const items = await this.itemService.getItemForFarm(term);
+          this.itemLoading = false;
+          return items;
+        })
       )
     );
   }
 
-  changeSelectedItems() {
-    this.getQuests();
+  async changeSelectedItems() {
+    await this.getQuests();
   }
 
-  removeItem(itemId) {
+  async removeItem(itemId) {
     const selectedItems = [];
 
     this.selectedItems.forEach(item => {
@@ -91,12 +94,12 @@ export class OtherFarmCalculatorComponent implements OnInit {
 
     this.selectedItems = selectedItems;
 
-    this.getQuests();
+    await this.getQuests();
   }
 
-  getQuests() {
+  async getQuests() {
     this.questLoading = true;
-    this.quests = this.questService.getQuestsForFarmCalc(this.selectedItems);
+    this.quests = await this.questService.getQuestsForFarmCalc(this.selectedItems);
 
     this.isCollapsed = {};
     this.quests.forEach(quest => {

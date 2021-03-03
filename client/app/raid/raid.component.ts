@@ -3,11 +3,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { RaidService } from '../services/raid.service';
-import { EquipmentService } from '../services/equipment.service';
 import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
-import { JobService } from '../services/job.service';
-import { GridService } from '../services/grid.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { UnitService } from '../services/unit.service';
@@ -41,8 +38,8 @@ export class RaidComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.raid = this.raidService.getRaidBySlug(params.get('slug'));
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      this.raid = await this.raidService.getRaidBySlug(params.get('slug'));
       if (!this.raid) {
         this.router.navigate([this.navService.getRoute('/raid-not-found')]);
       } else {
@@ -118,9 +115,9 @@ export class RaidComponent implements OnInit {
         }
       });
 
-      this.raid.bonus.units.forEach(unit => {
-        unit.unit = this.unitService.getUnit(unit.unitId);
-      });
+      for (const unit of this.raid.bonus.units) {
+        unit.unit = await this.unitService.getUnit(unit.unitId);
+      }
 
       for (const card of this.raid.bonus.cards) {
         card.card = await this.cardService.getCard(card.cardId);

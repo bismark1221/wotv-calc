@@ -36,15 +36,15 @@ export class EquipmentsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Equipment');
 
-    this.getAcquisitionTypes();
-    this.getEquipments();
+    await this.getAcquisitionTypes();
+    await this.getEquipments();
   }
 
-  getEquipments() {
-    this.equipments = this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
+  async getEquipments() {
+    this.equipments = await this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
     this.translateEquipments();
   }
 
@@ -69,18 +69,18 @@ export class EquipmentsComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEquipments();
+    await this.getEquipments();
   }
 
-  getAcquisitionTypes() {
-    this.acquisitionTypes = this.equipmentService.getAcquisitionTypes();
+  async getAcquisitionTypes() {
+    this.acquisitionTypes = await this.equipmentService.getAcquisitionTypes();
     this.acquisitionTypes.forEach(type => {
       if (type !== 'Unknown') {
         this.filters.acquisition.push(type);

@@ -52,7 +52,7 @@ export class CardComponent implements OnInit {
     });
   }
 
-  private formatCard() {
+  private async formatCard() {
     if (this.card) {
       const lang = this.translateService.currentLang;
       const skills = ['classic', 'awake', 'lvmax'];
@@ -88,25 +88,27 @@ export class CardComponent implements OnInit {
         });
       });
 
-      buffTypes.forEach(buffType => {
-        this.card[buffType].forEach(buff => {
+      for (const buffType of buffTypes) {
+        for (const buff of this.card[buffType]) {
           if (buff.cond) {
-            buff.cond.forEach(cond => {
+            for (const cond of buff.cond) {
               if (cond.type === 'job') {
-                cond.items.forEach((jobId, jobIndex) => {
-                  const job = this.jobService.getJob(jobId);
+                for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+                  const jobId = cond.items[jobIndex];
+                  const job = await this.jobService.getJob(jobId);
                   cond.items[jobIndex] = job ? job : cond.items[jobIndex];
-                });
+                }
               } else if (cond.type === 'unit') {
-                cond.items.forEach((unitId, unitIndex) => {
-                  const unit = this.unitService.getUnit(unitId);
+                for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+                  const unitId = cond.items[unitIndex];
+                  const unit = await this.unitService.getUnit(unitId);
                   cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
-                });
+                }
               }
-            });
+            }
           }
-        });
-      });
+        }
+      }
     }
   }
 

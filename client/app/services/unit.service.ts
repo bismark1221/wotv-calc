@@ -20,9 +20,7 @@ import { CardService } from './card.service';
 import { EsperService } from './esper.service';
 import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
-
-import GL_UNITS from '../data/gl/units.json';
-import JP_UNITS from '../data/jp/units.json';
+import { DataService } from './data.service';
 
 @Injectable()
 export class UnitService {
@@ -80,20 +78,17 @@ export class UnitService {
     private http: HttpClient,
     private firestore: AngularFirestore,
     private authService: AuthService,
-    private toolService: ToolService
+    private toolService: ToolService,
+    private dataService: DataService
   ) {}
 
-  private getRaw(forcedVersion = null) {
-    if (this.navService.getVersion() === 'GL' && (!forcedVersion || forcedVersion === 'GL')) {
-      return GL_UNITS;
-    } else {
-      return JP_UNITS;
-    }
+  private getRaw(forcedVersion = null) { // @TODO Manage forcedVersion !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    return this.dataService.loadData('units');
   }
 
-  getUnits(forcedVersion = null) {
+  async getUnits(forcedVersion = null) {
     const units: Unit[] = [];
-    const rawUnits = JSON.parse(JSON.stringify(this.getRaw(forcedVersion)));
+    const rawUnits = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
 
     Object.keys(rawUnits).forEach(unitId => {
       const unit = new Unit();
@@ -105,18 +100,18 @@ export class UnitService {
     return units;
   }
 
-  getUnitsForJPBuilder() {
-    this.getUnits();
+  async getUnitsForJPBuilder() {
+    await this.getUnits();
 
-    this.units = this.filterUnits(this.units, null);
+    this.units = await this.filterUnits(this.units, null);
     this.toolService.sortByRarity(this.units, 'asc');
 
     return this.units;
   }
 
-  getUnitsForListing(filters = null, sort = 'rarity', order = 'asc') {
-    this.getUnits();
-    this.units = this.filterUnits(this.units, filters);
+  async getUnitsForListing(filters = null, sort = 'rarity', order = 'asc') {
+    await this.getUnits();
+    this.units = await this.filterUnits(this.units, filters);
 
     switch (sort) {
       case 'rarity' :
@@ -133,11 +128,11 @@ export class UnitService {
     return this.units;
   }
 
-  filterUnits(units, filters) {
+  private async filterUnits(units, filters) {
     if (filters) {
       const filteredUnits = [];
 
-      units.forEach(unit => {
+      for (const unit of units) {
         if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
@@ -150,14 +145,14 @@ export class UnitService {
           }
 
           if (possbibleToAdd && filters.equipment && (filters.equipment.weapon !== 'ALL' || (filters.equipment.armor && filters.equipment.armor.length > 0))) {
-            possbibleToAdd = this.unitCanEquip(unit, filters);
+            possbibleToAdd = await this.unitCanEquip(unit, filters);
           }
 
           if (possbibleToAdd) {
             filteredUnits.push(unit);
           }
         }
-      });
+      }
 
       return filteredUnits;
     } else {
@@ -179,9 +174,9 @@ export class UnitService {
     return unitHasJob;
   }
 
-  private unitCanEquip(unit, filters) {
+  private async unitCanEquip(unit, filters) {
     let unitCanEquip = true;
-    const job = this.jobService.getJob(unit.jobs[0]);
+    const job = await this.jobService.getJob(unit.jobs[0]);
 
     if (filters.equipment.weapon !== 'ALL' && job.equipments.weapons.indexOf(filters.equipment.weapon) === -1) {
       unitCanEquip = false;
@@ -207,10 +202,16 @@ export class UnitService {
     return unitCanEquip;
   }
 
-  getUnit(id, forcedVersion = null) {
-    this.getUnits(forcedVersion);
+  async getUnit(id, forcedVersion = null) {
+    await this.getUnits(forcedVersion);
 
     return this.units.find(unit => unit.dataId === id);
+  }
+
+  async getUnitBySlug(slug) {
+    await this.getUnits();
+
+    return this.units.find(unit => unit.slug === slug);
   }
 
   getGLExclusiveUnitIds() {
@@ -219,12 +220,6 @@ export class UnitService {
 
   isLimited(id) {
     return this.limitedUnits.indexOf(id) !== -1;
-  }
-
-  getUnitBySlug(slug) {
-    this.getUnits();
-
-    return this.units.find(unit => unit.slug === slug);
   }
 
   getLocalStorage() {
@@ -297,24 +292,24 @@ export class UnitService {
 
   async selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, forcedVersion = null) {
     this.unit = new Unit();
-    this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId, forcedVersion))), this.translateService);
+    this.unit.constructFromJson(JSON.parse(JSON.stringify(await this.getUnit(unitId, forcedVersion))), this.translateService);
     this.unit.name = this.unit.getName(this.translateService);
     this.unit.formatUpgrades();
 
     this.unit.jobsData = [];
-    this.unit.jobs.forEach(jobId => {
-      const job = this.jobService.getJob(jobId, forcedVersion);
+    for (const jobId of this.unit.jobs) {
+      const job = await this.jobService.getJob(jobId, forcedVersion);
       job.name = job.getName(this.translateService);
       job.level = 1;
       this.unit.jobsData.push(job);
-    });
+    }
     this.unit.subjob = 0;
 
     this.unit.exJobsData = [];
-    this.unit.exJobs.forEach(jobId => {
-      const job = this.jobService.getJob(jobId, forcedVersion);
+    for (const jobId of this.unit.exJobs) {
+      const job = await this.jobService.getJob(jobId, forcedVersion);
       this.unit.exJobsData.push(job);
-    });
+    }
 
     this.unit.star = 1;
     this.unit.lb = 0;
@@ -346,7 +341,7 @@ export class UnitService {
     }
 
     this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
-    this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
+    this.unit.masterRanks = await this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
 
     const existingUnit = await this.initiateSavedUnit(customData);
 
@@ -426,7 +421,7 @@ export class UnitService {
       }
 
       if (unit.esper) {
-        this.unit.esper = this.esperService.selectEsperForBuilder(unit.esper.dataId, unit.esper);
+        this.unit.esper = await this.esperService.selectEsperForBuilder(unit.esper.dataId, unit.esper);
       } else {
         this.unit.esper = null;
       }
@@ -440,7 +435,7 @@ export class UnitService {
       this.unit.equipments = [];
       for (let i = 0; i <= 2; i++) {
         if (unit.equipments && unit.equipments[i]) {
-          this.unit.equipments[i] = this.equipmentService.selectEquipmentForBuilder(unit.equipments[i].dataId, unit.equipments[i]);
+          this.unit.equipments[i] = await this.equipmentService.selectEquipmentForBuilder(unit.equipments[i].dataId, unit.equipments[i]);
         } else {
           this.unit.equipments[i] = null;
         }
@@ -613,10 +608,6 @@ export class UnitService {
 
   maxLevelAndJobs() {
     this.unit.maxLevelAndJobs();
-  }
-
-  getAvailableEquipments(pos) {
-    return this.unit.getAvailableEquipments(pos, this.equipmentService);
   }
 
   getActiveSkills() {

@@ -65,14 +65,14 @@ export class OtherIndexComponent implements OnInit {
   ) {
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Index');
 
-    this.getUnits();
+    await this.getUnits();
   }
 
-  getUnits() {
-    this.units = this.indexService.getUnits();
+  async getUnits() {
+    this.units = await this.indexService.getUnits();
 
     this.units.forEach(unit => {
       unit.name = this.nameService.getName(unit);

@@ -24,14 +24,14 @@ export class DataService {
 
   public async loadData(type) {
     await this.checkHashService.getLaunchedRequest();
+    const cache = await caches.open('wotv-calc');
+    const data = await cache.match('/' + this.getLocalStorage(type));
 
-    const data = this.localStorageService.get(this.getLocalStorage(type));
-
-    if (data === null) {
+    if (data === null || data === undefined) {
       if (!this.launchedRequests[this.getLocalStorage(type)]) {
         this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
-          .map(response => {
-            this.localStorageService.set(this.getLocalStorage(type), response);
+          .map(async response => {
+            await cache.put(this.getLocalStorage(type), new Response(JSON.stringify(response)));
             this.launchedRequests[this.getLocalStorage(type)] = null;
             return response;
           })
@@ -40,7 +40,7 @@ export class DataService {
 
       return this.launchedRequests[this.getLocalStorage(type)];
     } else {
-      return of(data).toPromise();
+      return of(JSON.parse(await data.text())).toPromise();
     }
   }
 }

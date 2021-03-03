@@ -33,19 +33,15 @@ export class EquipmentComponent implements OnInit {
     private nameService: NameService,
     private jobService: JobService,
     private itemService: ItemService
-  ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.formatEquipment();
-    });
-  }
+  ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
-      this.equipment = this.equipmentService.getEquipmentBySlug(params.get('slug'));
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
+      this.equipment = await this.equipmentService.getEquipmentBySlug(params.get('slug'));
       if (!this.equipment) {
         this.router.navigate([this.navService.getRoute('/equipment-not-found')]);
       } else {
-        this.formatEquipment();
+        await this.formatEquipment();
 
         this.navService.setTitle(this.equipment.name);
       }
@@ -62,6 +58,10 @@ export class EquipmentComponent implements OnInit {
         default:
           break;
       }
+    });
+
+    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+      await this.formatEquipment();
     });
   }
 
@@ -85,7 +85,7 @@ export class EquipmentComponent implements OnInit {
     });
   }
 
-  private formatEquipment() {
+  private async formatEquipment() {
     if (this.equipment) {
       this.equipment.name = this.nameService.getName(this.equipment);
       this.equipment.statsTypes = Object.keys(this.equipment.stats);
@@ -136,7 +136,7 @@ export class EquipmentComponent implements OnInit {
       });
 
       if (this.equipment.acquisition.type === 'tmr') {
-        const unit = this.getUnit(this.equipment.acquisition.unitId);
+        const unit = await this.getUnit(this.equipment.acquisition.unitId);
         if (unit) {
           this.equipment.acquisition.unit = {
             name: this.nameService.getName(unit),
@@ -195,25 +195,27 @@ export class EquipmentComponent implements OnInit {
       this.equipment.statsTypes = usableStatsTypes;
 
       this.equipment.jobs = [];
-      this.equipment.equippableJobs.forEach(jobId => {
-        const job = this.jobService.getJob(jobId);
+      for (const jobId of this.equipment.equippableJobs) {
+        const job = await this.jobService.getJob(jobId);
         job.name = this.nameService.getName(job);
         this.equipment.jobs.push(job);
-      });
+      }
 
       this.equipment.units = [];
-      this.equipment.equippableUnits.forEach(unitId => {
-        const unit = this.getUnit(unitId);
+      for (const unitId of this.equipment.equippableUnits) {
+        const unit = await this.getUnit(unitId);
         unit.name = this.nameService.getName(unit);
         this.equipment.units.push(unit);
-      });
+      }
 
       this.equipment.formattedMaterials = [];
       if (this.equipment.materials.length > 0) {
-        this.equipment.materials.forEach((items, index) => {
+        for (let index = 0; this.equipment.materials.length - 1; index++) {
+          const items = this.equipment.materials[index];
           this.equipment.formattedMaterials.push([]);
-          Object.keys(items).forEach(itemId => {
-            let item = this.itemService.getItem(itemId);
+
+          for (const itemId of Object.keys(items)) {
+            let item = await this.itemService.getItem(itemId);
 
             if (item) {
               item = JSON.parse(JSON.stringify(item));
@@ -228,8 +230,8 @@ export class EquipmentComponent implements OnInit {
                 name: itemId
               });
             }
-          });
-        });
+          }
+        }
       }
     }
   }
@@ -242,8 +244,8 @@ export class EquipmentComponent implements OnInit {
     return this.navService.getRoute(route);
   }
 
-  private getUnit(unitId) {
-    return this.unitService.getUnit(unitId);
+  private async getUnit(unitId) {
+    return await this.unitService.getUnit(unitId);
   }
 
   clickSpecialBismark() {

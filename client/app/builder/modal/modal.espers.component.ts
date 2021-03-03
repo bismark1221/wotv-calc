@@ -81,8 +81,8 @@ export class ModalEspersComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-    this.getEspers();
+  async ngOnInit() {
+    await this.getEspers();
 
     if (this.esper) {
       this.esper.nodes = {};
@@ -90,18 +90,18 @@ export class ModalEspersComponent implements OnInit {
         this.esper.nodes[nodeId] = this.esper.board.nodes[nodeId].activated ? 1 : 0;
       });
 
-      this.esper = this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper);
+      this.esper = await this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper);
       this.maxStar = this.esper.SPs.length;
 
 
     }
   }
 
-  getEspers() {
+  async getEspers() {
     if (isNaN(this.teamUnitPos)) {
-      this.espers = this.esperService.getEspersForListing(this.filters);
+      this.espers = await this.esperService.getEspersForListing(this.filters);
     } else {
-      this.espers = this.teamService.getAvailableEspers(this.teamUnitPos, this.filters);
+      this.espers = await this.teamService.getAvailableEspers(this.teamUnitPos, this.filters);
     }
 
     this.getFilteredEspers();
@@ -127,14 +127,14 @@ export class ModalEspersComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEspers();
+    await this.getEspers();
   }
 
   isFilterSelected(type, value) {
@@ -153,13 +153,13 @@ export class ModalEspersComponent implements OnInit {
     this.modalStep = 'select';
   }
 
-  selectEsper(esperId, customData = null, forceNewBuild = false) {
+  async selectEsper(esperId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedEspers[esperId] && this.savedEspers[esperId].length > 0) {
       this.loadEsperId = esperId;
 
       this.modalStep = 'load';
     } else {
-      this.esper = this.esperService.selectEsperForBuilder(esperId, customData);
+      this.esper = await this.esperService.selectEsperForBuilder(esperId, customData);
       this.maxStar = this.esper.SPs.length;
 
       this.modalStep = 'custom';

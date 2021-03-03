@@ -46,17 +46,17 @@ export class OtherIlluminatiComponent implements AfterViewInit {
     });
   }
 
-  getUnits() {
-    this.units = this.unitService.getUnitsForListing();
+  async getUnits() {
+    this.units = await this.unitService.getUnitsForListing();
   }
 
   checkIfIlluminati() {
-    this.authService.getIlluminty().then(result => {
+    this.authService.getIlluminty().then(async result => {
       if (result) {
         const tableUrl = this.router.url.split('/');
         const possibleSlug = tableUrl[tableUrl.length - 1];
 
-        this.getUnits();
+        await this.getUnits();
         this.units.forEach(unit => {
           this.reviews.units[unit.dataId] = {
             summary: {pros: '', cons: ''},
@@ -98,8 +98,8 @@ export class OtherIlluminatiComponent implements AfterViewInit {
   selectUnit(unitId) {
     this.units.forEach(unit => {
       if (unit.dataId === unitId) {
-          this.selectedUnitId = unit.dataId;
-          this.selectedName = unit.names.en;
+        this.selectedUnitId = unit.dataId;
+        this.selectedName = unit.names.en;
       }
     });
   }

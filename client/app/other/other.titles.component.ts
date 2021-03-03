@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
@@ -28,10 +29,11 @@ export class OtherTitlesComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Titles');
 
-    this.titles = this.titleService.getTitles();
+    this.titles = await this.titleService.getTitles();
+
     this.formatTitles();
   }
 

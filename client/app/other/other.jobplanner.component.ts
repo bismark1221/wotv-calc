@@ -42,14 +42,14 @@ export class OtherJobPlannerComponent implements OnInit {
   ) {
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Job Planner');
 
-    this.getUnits();
+    await this.getUnits();
   }
 
-  getUnits() {
-    this.units = this.unitService.getUnitsForListing();
+  async getUnits() {
+    this.units = await this.unitService.getUnitsForListing();
     this.translateUnits();
   }
 
@@ -59,16 +59,17 @@ export class OtherJobPlannerComponent implements OnInit {
     });
   }
 
-  selectUnit(pos) {
+  async selectUnit(pos) {
     if (pos + 1 === this.tableUnits.length) {
       this.tableUnits.push(this.tableUnits.length);
     }
 
     if (this.selectedUnits[pos]) {
-      const unit = this.unitService.getUnit(this.selectedUnits[pos]);
+      const unit = await this.unitService.getUnit(this.selectedUnits[pos]);
       unit.jobsData = [];
-      unit.jobs.forEach(jobId => {
-        const job = this.jobService.getJob(jobId);
+
+      for (const jobId of unit.jobs) {
+        const job = await this.jobService.getJob(jobId);
         job.name = job.getName(this.translateService);
         job.start = 1;
         job.goal = 1;
@@ -76,18 +77,19 @@ export class OtherJobPlannerComponent implements OnInit {
         job.startTableLevel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
         job.goalTableLevel = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
         unit.jobsData.push(job);
-      });
+      }
 
       if (unit.exJobs.length > 0) {
-        unit.exJobs.forEach((exJobId, jobIndex) => {
-          const exJob = this.jobService.getJob(unit.exJobs[0]);
+        for (let jobIndex = 0; jobIndex <= unit.exJobs.length - 1; jobIndex++) {
+          const exJobId = unit.exJobs[jobIndex];
+          const exJob = await this.jobService.getJob(unit.exJobs[0]);
           unit.jobsData[jobIndex].maxLevel = 25;
           exJob.materials.forEach((materials, matIndex) => {
             unit.jobsData[jobIndex].materials.push(materials);
             unit.jobsData[jobIndex].startTableLevel.push(16 + matIndex);
             unit.jobsData[jobIndex].goalTableLevel.push(16 + matIndex);
           });
-        });
+        }
       }
 
       this.jobbedUnits[pos] = unit;
@@ -96,10 +98,10 @@ export class OtherJobPlannerComponent implements OnInit {
       delete this.selectedUnits[pos];
     }
 
-    this.calculateMaterials();
+    await this.calculateMaterials();
   }
 
-  changeLevel(type, unitPos, jobPos) {
+  async changeLevel(type, unitPos, jobPos) {
     const job = this.jobbedUnits[unitPos].jobsData[jobPos];
 
     job.start = parseInt(job.start, 10);
@@ -119,21 +121,21 @@ export class OtherJobPlannerComponent implements OnInit {
       }
     }
 
-    this.calculateMaterials();
+    await this.calculateMaterials();
   }
 
-  calculateMaterials() {
+  async calculateMaterials() {
     Object.keys(this.materials).forEach(itemId => {
       this.materials[itemId].count = 0;
     });
 
-    this.jobbedUnits.forEach(unit => {
-      unit.jobsData.forEach(job => {
+    for (const unit of this.jobbedUnits) {
+      for (const job of unit.jobsData) {
         if (job.goal > job.start) {
           for (let i = job.start; i < job.goal; i ++) {
-            Object.keys(job.materials[i]).forEach(itemId => {
+            for (const itemId of Object.keys(job.materials[i])) {
               if (!this.materials[itemId]) {
-                this.materials[itemId] = this.itemService.getItem(itemId);
+                this.materials[itemId] = await this.itemService.getItem(itemId);
                 this.materials[itemId].count = job.materials[i][itemId];
                 this.materials[itemId].image = itemId.toLowerCase();
                 this.materials[itemId].activated = true;
@@ -163,11 +165,11 @@ export class OtherJobPlannerComponent implements OnInit {
               } else {
                 this.materials[itemId].count += job.materials[i][itemId];
               }
-            });
+            }
           }
         }
-      });
-    });
+      }
+    }
 
     Object.keys(this.materials).forEach(itemId => {
       if (this.materials[itemId].count === 0) {

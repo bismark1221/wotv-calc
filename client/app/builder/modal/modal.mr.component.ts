@@ -19,9 +19,9 @@ export class ModalMasterRanksComponent implements OnInit {
     private modal: NgbActiveModal
   ) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.masterRanks = this.masterRanksService.getMasterRanks();
-    this.ranks = this.masterRanksService.getRanks();
+    this.ranks = await this.masterRanksService.getRanks();
   }
 
   close() {

@@ -1,41 +1,32 @@
 import { Injectable } from '@angular/core';
 
 import { Item } from '../entities/item';
-import GL_PLAYER_TITLES from '../data/gl/playerTitles.json';
-import GL_GUILD_TITLES from '../data/gl/guildTitles.json';
-import JP_PLAYER_TITLES from '../data/jp/playerTitles.json';
-import JP_GUILD_TITLES from '../data/jp/guildTitles.json';
+
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
 
 @Injectable()
 export class TitleService {
   savedVersion;
 
   constructor(
+    private dataService: DataService,
     private navService: NavService
   ) {}
 
-  private getRaw() {
-    this.savedVersion = JSON.parse(JSON.stringify(this.navService.getVersion()));
-    if (this.savedVersion === 'GL') {
-      return {
-        player: GL_PLAYER_TITLES,
-        guild: GL_GUILD_TITLES
-      };
-    } else {
-      return {
-        player: JP_PLAYER_TITLES,
-        guild: JP_GUILD_TITLES
-      };
-    }
+  private async getRaw() {
+    return {
+      player: await this.dataService.loadData('playerTitles'),
+      guild: await this.dataService.loadData('guildTitles')
+    };
   }
 
-  getTitles() {
+  async getTitles() {
     const titles = {
       player: [],
       guild: []
     };
-    const rawTitles = JSON.parse(JSON.stringify(this.getRaw()));
+    const rawTitles = JSON.parse(JSON.stringify(await this.getRaw()));
 
     const types = ['player', 'guild'];
     types.forEach(type => {

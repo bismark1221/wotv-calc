@@ -53,7 +53,6 @@ import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
 import { OtherIndexComponent } from './other/other.index.component';
 import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
-import { OtherTestComponent } from './other/other.test.component';
 import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 
@@ -156,7 +155,6 @@ export function createTranslateLoader(http: HttpClient) {
     OtherTitlesComponent,
     OtherIndexComponent,
     OtherJobPlannerComponent,
-    OtherTestComponent,
     OtherIlluminatiComponent,
     OtherFarmCalculatorComponent,
     TemplateItemComponent

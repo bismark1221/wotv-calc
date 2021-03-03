@@ -38,16 +38,16 @@ export class ModalEquipmentsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-    this.getEquipments();
+  async ngOnInit() {
+    await this.getEquipments();
 
     if (this.equipment) {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
+      this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
     }
   }
 
-  getEquipments() {
-    this.equipments = this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
+  async getEquipments() {
+    this.equipments = await this.unit.getAvailableEquipments(this.equipmentPos, this.equipmentService);
     this.equipments = this.equipmentService.filterEquipments(this.equipments, this.filters);
     this.getFilteredEquipments();
     this.translateEquipments();
@@ -72,14 +72,14 @@ export class ModalEquipmentsComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getEquipments();
+    await this.getEquipments();
   }
 
   isFilterSelected(type, value) {
@@ -98,13 +98,13 @@ export class ModalEquipmentsComponent implements OnInit {
     this.modalStep = 'select';
   }
 
-  selectEquipment(equipmentId, customData = null, forceNewBuild = false) {
+  async selectEquipment(equipmentId, customData = null, forceNewBuild = false) {
     if (!forceNewBuild && !customData && this.savedEquipments[equipmentId] && this.savedEquipments[equipmentId].length > 0) {
       this.loadEquipmentId = equipmentId;
 
       this.modalStep = 'load';
     } else {
-      this.equipment = this.equipmentService.selectEquipmentForBuilder(equipmentId, customData);
+      this.equipment = await this.equipmentService.selectEquipmentForBuilder(equipmentId, customData);
 
       this.modalStep = 'custom';
     }

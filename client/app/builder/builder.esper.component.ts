@@ -91,22 +91,22 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngOnInit() {
-    this.getEspers();
+  async ngOnInit() {
+    await this.getEspers();
 
-    this.activatedRoute.paramMap.subscribe((params: Params) => {
+    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       const data = params.get('data');
       if (data) {
         this.loadingBuild = true;
 
-        const esper = this.esperService.getEsperBySlug(data);
+        const esper = await this.esperService.getEsperBySlug(data);
         if (esper) {
-          this.selectEsper(esper.dataId);
+          await this.selectEsper(esper.dataId);
         } else {
-          this.esperService.getStoredEsper(data).subscribe(esperData => {
+          this.esperService.getStoredEsper(data).subscribe(async esperData => {
             if (esperData) {
               // @ts-ignore
-              this.selectEsper(esperData.dataId, esperData);
+              await this.selectEsper(esperData.dataId, esperData);
             }
           });
         }
@@ -136,8 +136,8 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private getEspers() {
-    this.espers = this.formatEspers(this.esperService.getEspersForListing());
+  private async getEspers() {
+    this.espers = this.formatEspers(await this.esperService.getEspersForListing());
     this.updateFilteredEspers();
     this.translateEspers();
 
@@ -187,9 +187,9 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     }
   }
 
-  selectEsper(dataId, customData = null) {
+  async selectEsper(dataId, customData = null) {
     if (dataId) {
-      this.esper = this.esperService.selectEsperForBuilder(dataId, customData);
+      this.esper = await this.esperService.selectEsperForBuilder(dataId, customData);
       this.searchText = this.esper.name;
       this.showList = false;
       this.maxStar = this.esper.SPs.length;
@@ -241,9 +241,9 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.type = 'esper';
     modalRef.componentInstance.savedItems = this.savedEspers[esperId];
 
-    modalRef.result.then(result => {
+    modalRef.result.then(async result => {
       if (result.type === 'load' && result.item) {
-        this.selectEsper(result.item.dataId, result.item);
+        await this.selectEsper(result.item.dataId, result.item);
       }
 
       if (result.type === 'fullDelete') {

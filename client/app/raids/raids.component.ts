@@ -11,7 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./raids.component.css']
 })
 export class RaidsComponent implements OnInit {
-  raids;
+  raids = [];
   searchText = '';
   sort = 'name';
   order = 'asc';
@@ -31,14 +31,14 @@ export class RaidsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Raids');
 
-    this.getRaids();
+    await this.getRaids();
   }
 
-  getRaids() {
-    this.raids = this.raidService.getRaidsForListing(this.filters, this.sort, this.order);
+  async getRaids() {
+    this.raids = await this.raidService.getRaidsForListing(this.filters, this.sort, this.order);
     this.translateRaids();
   }
 
@@ -63,13 +63,13 @@ export class RaidsComponent implements OnInit {
     }
   }
 
-  filterList(type, value) {
+  async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
     } else {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    this.getRaids();
+    await this.getRaids();
   }
 }
