@@ -50,10 +50,11 @@ export class DataService {
 
   public loadData(type) {
     const data = this.localStorageService.get(this.getLocalStorage(type));
+    const date = new Date();
 
     if (data === null) {
       if (!this.launchedRequests[this.getLocalStorage(type)]) {
-        this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json')
+        this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + date)
           .map(response => {
             this.localStorageService.set(this.getLocalStorage(type), response);
             return response;

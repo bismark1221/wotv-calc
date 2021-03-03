@@ -192,7 +192,7 @@ export class TeamService {
     return teamFinded;
   }
 
-  updateTeam(data) {
+  async updateTeam(data) {
     if (this.team && data) {
       this.team.guild.data = data.guild;
       if (data.masterRanks) {
@@ -204,7 +204,7 @@ export class TeamService {
 
       for (let i = 0; i <= 4; i++) {
         if (data.units[i]) {
-          this.team.units[i] = this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i]);
+          this.team.units[i] = await this.unitService.selectUnitForBuilder(data.units[i].dataId, data.units[i]);
           this.team.units[i].guild = this.team.guild;
           this.team.units[i].masterRanks = this.team.masterRanks;
         } else {

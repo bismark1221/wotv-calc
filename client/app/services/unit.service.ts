@@ -295,7 +295,7 @@ export class UnitService {
     return data;
   }
 
-  selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, forcedVersion = null) {
+  async selectUnitForBuilder(unitId, customData = null, forceEmptyGuild = false, forcedVersion = null) {
     this.unit = new Unit();
     this.unit.constructFromJson(JSON.parse(JSON.stringify(this.getUnit(unitId, forcedVersion))), this.translateService);
     this.unit.name = this.unit.getName(this.translateService);
@@ -348,7 +348,7 @@ export class UnitService {
     this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
     this.unit.masterRanks = this.masterRanksService.getMasterRanksForBuilder(forceEmptyGuild);
 
-    const existingUnit = this.initiateSavedUnit(customData);
+    const existingUnit = await this.initiateSavedUnit(customData);
 
     this.unit.grid = this.gridService.generateUnitGrid(this.unit, 1000, this.unit.exJobs && this.unit.exJobs.length > 0);
 
