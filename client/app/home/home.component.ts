@@ -92,6 +92,7 @@ export class HomeComponent {
   };
 
   updatedFormatted = [];
+  noLangChangeOnInit = true;
 
   constructor(
     private translateService: TranslateService,
@@ -109,8 +110,11 @@ export class HomeComponent {
     this.getUpdate();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.getTranslation();
-      this.getUpdate();
+      if (!this.noLangChangeOnInit) {
+        this.getTranslation();
+        this.getUpdate();
+        this.noLangChangeOnInit = false;
+      }
     });
   }
 

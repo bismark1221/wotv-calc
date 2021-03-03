@@ -38,7 +38,7 @@ export class CardService {
 
   async getCards() {
     const cards: Card[] = [];
-    const rawCards = await this.getRaw().toPromise();
+    const rawCards = await this.getRaw();
 
     Object.keys(rawCards).forEach(cardId => {
       const card = new Card();

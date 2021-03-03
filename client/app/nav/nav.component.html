@@ -108,7 +108,7 @@
 </nav>
 
 <nav class="navbar navbar-toggleable-md main fixed-top mobileNav">
-  <a class="navbar-brand" [routerLink]="[getRoute('/')]">
+  <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="toggleMobileMenu(true)">
     <img src="assets/nav/WOTV-CALC.png" class="logo" />
   </a>
 

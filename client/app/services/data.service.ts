@@ -5,6 +5,7 @@ import { of } from 'rxjs';
 import 'rxjs/add/operator/map';
 
 import { NavService } from './nav.service';
+import { CheckHashService } from './checkHash.service';
 
 @Injectable()
 export class DataService {
@@ -13,57 +14,33 @@ export class DataService {
   constructor(
     private localStorageService: LocalStorageService,
     private navService: NavService,
+    private checkHashService: CheckHashService,
     private http: HttpClient
   ) {}
 
   private getLocalStorage(type, forceVersion = null) {
-    if (forceVersion === null) {
-      return this.navService.getVersion() === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
-    } else {
-      return forceVersion + '_data_' + type;
-    }
+    return this.navService.getVersion() === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
   }
 
-  public removeAll() {
-    const versions = ['jp', 'gl'];
-    const dataTypes = [
-      'cards',
-      'equipements',
-      'espers',
-      'guildTitles',
-      'index',
-      'items',
-      'jobs',
-      'masterRanks',
-      'playerTitles',
-      'quests',
-      'raids',
-      'units'
-    ];
+  public async loadData(type) {
+    await this.checkHashService.getLaunchedRequest();
 
-    versions.forEach(version => {
-      dataTypes.forEach(dataType => {
-        this.localStorageService.remove(this.getLocalStorage(dataType, version));
-      });
-    });
-  }
-
-  public loadData(type) {
     const data = this.localStorageService.get(this.getLocalStorage(type));
-    const date = new Date();
 
     if (data === null) {
       if (!this.launchedRequests[this.getLocalStorage(type)]) {
-        this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + date)
+        this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
           .map(response => {
             this.localStorageService.set(this.getLocalStorage(type), response);
+            this.launchedRequests[this.getLocalStorage(type)] = null;
             return response;
-          });
+          })
+          .toPromise();
       }
 
       return this.launchedRequests[this.getLocalStorage(type)];
     } else {
-      return of(data);
+      return of(data).toPromise();
     }
   }
 }
