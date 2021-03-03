@@ -2785,6 +2785,10 @@
             "value": "Livre secret de l'amélioration (Accessoire)"
         },
         {
+            "key": "IT_AF_AW_GLOVE",
+            "value": "Livre secret de l'amélioration (Gants)"
+        },
+        {
             "key": "IT_AF_MAT_FIRE_01",
             "value": "Cristal de feu"
         },
@@ -3305,6 +3309,18 @@
             "value": "Recette d'artisanat : Arc de platine"
         },
         {
+            "key": "IT_AF_LW_GLO_001",
+            "value": "Recette d'artisanat : Gants de puissance"
+        },
+        {
+            "key": "IT_AF_LW_GLO_002",
+            "value": "Recette d'artisanat : Gants de combat"
+        },
+        {
+            "key": "IT_AF_LW_GLO_003",
+            "value": "Recette d'artisanat : Gants sombres"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "Sceau de vie"
         },
@@ -3621,6 +3637,10 @@
             "value": "Médaille d'invocation B [Février]"
         },
         {
+            "key": "IT_EC_SUMMON_03_02_A",
+            "value": "Médaille d'invocation A [Mars]"
+        },
+        {
             "key": "IT_EC_FFT_1",
             "value": "Médaille d'événement FFT"
         },
@@ -3689,6 +3709,10 @@
             "value": "Médaille de « L'Éphémère »"
         },
         {
+            "key": "IT_EC_EV09_1",
+            "value": "Médaille de « L'Agitateur »"
+        },
+        {
             "key": "IT_EC_FF1_1",
             "value": "Médaille d'événement FFI"
         },
@@ -3755,6 +3779,34 @@
         {
             "key": "IT_US_G_U_SSR_UR_01",
             "value": "Ticket d'invocation d'unité MR+ garantie [A]"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_01",
+            "value": "[Jour 1] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_02",
+            "value": "[Jour 2] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_03",
+            "value": "[Jour 3] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_04",
+            "value": "[Jour 4] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_05",
+            "value": "[Jour 5] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_06",
+            "value": "[Jour 6] Ticket d'invocation pour l'Approche du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_07",
+            "value": "[Jour 7] Ticket d'invocation pour l'Approche du 1er anniversaire"
         },
         {
             "key": "IT_US_GL_SE_PI_COM_1",
@@ -4009,8 +4061,16 @@
             "value": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 30 azurites"
         },
         {
+            "key": "IT_US_SE_JB_GL_02_02",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 azurites"
+        },
+        {
             "key": "IT_US_SE_JB_GL_01_01",
             "value": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 15 jades"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_01_02",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 15 jades"
         },
         {
             "key": "IT_US_SE_JB_GL_05_02",
@@ -4029,12 +4089,28 @@
             "value": "[Spécial fin de l'hiver 2021] Ticket sélectionneur de 30 citrines"
         },
         {
+            "key": "IT_US_SE_JB_GL_04_04",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 citrines"
+        },
+        {
             "key": "IT_US_SE_JB_GL_03_03",
             "value": "[Spécial fin de l'hiver 2021] Ticket sélectionneur de 30 charoïtes"
         },
         {
+            "key": "IT_US_SE_JB_GL_03_04",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 charoïtes"
+        },
+        {
             "key": "IT_US_SE_JB_GL_05_04",
             "value": "[Approche du 1er anniversaire - Partie I] Ticket sélectionneur de 30 spinelles"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_05",
+            "value": "Ticket sélectionneur de 60 spinelles"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_06",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 spinelles"
         },
         {
             "key": "IT_US_SE_UR_U_01",
@@ -4119,6 +4195,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_14",
             "value": "Ticket d'invocation d'unité MR+ garantie du Spécial hiver 2021 [Partie III]"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_15",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket d'invocation d'unité MR+ garantie"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -4857,6 +4937,10 @@
             "value": "[Nouvel An lunaire 2021] Ticket sélectionneur de 80 fragments d'unité UR"
         },
         {
+            "key": "IT_US_SE_PI_GL08",
+            "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 80 fragments d'unité UR"
+        },
+        {
             "key": "IT_US_N_GACHA_10",
             "value": "Ticket d'invocation x10 normale"
         },
@@ -4899,6 +4983,10 @@
         {
             "key": "IT_US_G_N_TW_10",
             "value": "[Tour de porcelaine] Ticket d'invocation x10 normale"
+        },
+        {
+            "key": "IT_US_G_AF_N_10",
+            "value": "Ticket d'invocation x10 normale de matériaux d'amélioration de l'équipement"
         },
         {
             "key": "IT_PT_SKIP_001",

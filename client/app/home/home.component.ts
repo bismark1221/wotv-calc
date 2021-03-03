@@ -24,13 +24,22 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '03/03',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_GABL'},
+          {type: 'unit', dataId: 'UN_LW_P_ELSR'},
+          {type: 'equipment', dataId: 'AF_LW_GLO_000'},
+          {type: 'equipment', dataId: 'AF_LW_GLO_001'},
+          {type: 'equipment', dataId: 'AF_LW_GLO_002'},
+          {type: 'equipment', dataId: 'AF_LW_GLO_003'}
+        ]
+      },
+      {
         date: '25/02',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_CRIS'},
           {type: 'esper', dataId: 'UN_LW_S_MRLT'},
-          {type: 'card', dataId: 'VC_LW_MRLT'},
-          {type: 'unit', dataId: 'UN_LW_P_GABL'},
-          {type: 'unit', dataId: 'UN_LW_P_ELSR'}
+          {type: 'card', dataId: 'VC_LW_MRLT'}
         ]
       },
       {
@@ -39,15 +48,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_VKTR_01'},
           {type: 'unit', dataId: 'UN_LW_P_VNLA_01'},
           {type: 'equipment', dataId: 'AF_LW_BOW_012'},
-        ]
-      },
-      {
-        date: '10/02',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_TYPN'},
-          {type: 'card', dataId: 'VC_LW_TYPN'},
-          {type: 'card', dataId: 'VC_LW_APPLE'},
-          {type: 'equipment', dataId: 'AF_LW_CLK_001'}
         ]
       }
     ],
@@ -104,6 +104,9 @@ export class HomeComponent {
     private equipmentService: EquipmentService
   ) {
     this.navService.setTitle(null);
+
+    this.getTranslation();
+    this.getUpdate();
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTranslation();

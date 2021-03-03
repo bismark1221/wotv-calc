@@ -5820,6 +5820,14 @@
     },
     "type": "compo_equipment"
   },
+  "IT_AF_AW_GLOVE": {
+    "dataId": "IT_AF_AW_GLOVE",
+    "names": {
+      "en": "Secret Book of Refinement (Gloves)",
+      "fr": "Livre secret de l'amélioration (Gants)"
+    },
+    "type": "compo_equipment"
+  },
   "IT_AF_MAT_FIRE_01": {
     "dataId": "IT_AF_MAT_FIRE_01",
     "names": {
@@ -6946,6 +6954,33 @@
     "type": "recipe",
     "icon": "AF_LW_BOW_012"
   },
+  "IT_AF_LW_GLO_001": {
+    "dataId": "IT_AF_LW_GLO_001",
+    "names": {
+      "en": "Power Gloves Crafting Recipe",
+      "fr": "Recette d'artisanat : Gants de puissance"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_GLO_001"
+  },
+  "IT_AF_LW_GLO_002": {
+    "dataId": "IT_AF_LW_GLO_002",
+    "names": {
+      "en": "Battle Gloves Crafting Recipe",
+      "fr": "Recette d'artisanat : Gants de combat"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_GLO_002"
+  },
+  "IT_AF_LW_GLO_003": {
+    "dataId": "IT_AF_LW_GLO_003",
+    "names": {
+      "en": "Dark Gloves Crafting Recipe",
+      "fr": "Recette d'artisanat : Gants sombres"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_GLO_003"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -7610,6 +7645,15 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON"
   },
+  "IT_EC_SUMMON_03_02_A": {
+    "dataId": "IT_EC_SUMMON_03_02_A",
+    "names": {
+      "en": "March Summon Medal A",
+      "fr": "Médaille d'invocation A [Mars]"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -7751,6 +7795,14 @@
     "names": {
       "en": "The Ephemeral Medal",
       "fr": "Médaille de « L'Éphémère »"
+    },
+    "type": "medal"
+  },
+  "IT_EC_EV09_1": {
+    "dataId": "IT_EC_EV09_1",
+    "names": {
+      "en": "The Agitator Medal",
+      "fr": "Médaille de « L'Agitateur »"
     },
     "type": "medal"
   },
@@ -7898,6 +7950,69 @@
     },
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
+  "IT_US_G_PR_1stANV_01": {
+    "dataId": "IT_US_G_PR_1stANV_01",
+    "names": {
+      "en": "[Day 1] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 1] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_02": {
+    "dataId": "IT_US_G_PR_1stANV_02",
+    "names": {
+      "en": "[Day 2] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 2] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_03": {
+    "dataId": "IT_US_G_PR_1stANV_03",
+    "names": {
+      "en": "[Day 3] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 3] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_04": {
+    "dataId": "IT_US_G_PR_1stANV_04",
+    "names": {
+      "en": "[Day 4] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 4] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_05": {
+    "dataId": "IT_US_G_PR_1stANV_05",
+    "names": {
+      "en": "[Day 5] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 5] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_06": {
+    "dataId": "IT_US_G_PR_1stANV_06",
+    "names": {
+      "en": "[Day 6] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 6] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_PR_1stANV_07": {
+    "dataId": "IT_US_G_PR_1stANV_07",
+    "names": {
+      "en": "[Day 7] First Anniversary Celebration Countdown Summon Ticket",
+      "fr": "[Jour 7] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
   },
   "IT_US_GL_SE_PI_COM_1": {
     "dataId": "IT_US_GL_SE_PI_COM_1",
@@ -8466,11 +8581,29 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_GL_02_02": {
+    "dataId": "IT_US_SE_JB_GL_02_02",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select Azurite x30 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_GL_01_01": {
     "dataId": "IT_US_SE_JB_GL_01_01",
     "names": {
       "en": "[Winter 2021 Campaign Part I] Select Jadeite x15 Summon Ticket",
       "fr": "[Spécial hiver 2021 - Partie I] Ticket sélectionneur de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_GL_01_02": {
+    "dataId": "IT_US_SE_JB_GL_01_02",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select Jadeite x15 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 15 jades"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -8511,6 +8644,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_GL_04_04": {
+    "dataId": "IT_US_SE_JB_GL_04_04",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select Citrine x30 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_GL_03_03": {
     "dataId": "IT_US_SE_JB_GL_03_03",
     "names": {
@@ -8520,11 +8662,38 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_GL_03_04": {
+    "dataId": "IT_US_SE_JB_GL_03_04",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select Charoite x30 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_GL_05_04": {
     "dataId": "IT_US_SE_JB_GL_05_04",
     "names": {
       "en": "[First Anniversary Countdown Part I] Select Spinel x30 Summon Ticket",
       "fr": "[Approche du 1er anniversaire - Partie I] Ticket sélectionneur de 30 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_GL_05_05": {
+    "dataId": "IT_US_SE_JB_GL_05_05",
+    "names": {
+      "en": "Select Spinel x60 Summon Ticket",
+      "fr": "Ticket sélectionneur de 60 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_GL_05_06": {
+    "dataId": "IT_US_SE_JB_GL_05_06",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select Spinel x30 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 spinelles"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -8714,6 +8883,15 @@
     "names": {
       "en": "[Winter 2021 Campaign Part III] MR+ Guaranteed Unit Summon Ticket",
       "fr": "Ticket d'invocation d'unité MR+ garantie du Spécial hiver 2021 [Partie III]"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
+  "IT_US_G_U_SSR_UR_15": {
+    "dataId": "IT_US_G_U_SSR_UR_15",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket d'invocation d'unité MR+ garantie"
     },
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
@@ -10249,6 +10427,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_GL08": {
+    "dataId": "IT_US_SE_PI_GL08",
+    "names": {
+      "en": "[First Anniversary Countdown Part II] Select UR Unit Shard x80 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 80 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_N_GACHA_10": {
     "dataId": "IT_US_N_GACHA_10",
     "names": {
@@ -10346,6 +10533,14 @@
     },
     "type": "tickets",
     "icon": "IT_US_N_GACHA_10"
+  },
+  "IT_US_G_AF_N_10": {
+    "dataId": "IT_US_G_AF_N_10",
+    "names": {
+      "en": "Equipment-Enhancing Material Normal 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 normale de matériaux d'amélioration de l'équipement"
+    },
+    "type": "tickets"
   },
   "IT_PT_SKIP_001": {
     "dataId": "IT_PT_SKIP_001",
