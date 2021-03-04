@@ -152,7 +152,9 @@
           </tr>
           <tr>
             <td *ngFor="let type of ['HP','TP','AP','ATK','MAG','AGI','DEX','LUCK']">
-              {{ esper.stats[type].base }} / {{ esper.stats[type][maxStar - 1].max }}
+              <span *ngIf="esper.stats[type] && esper.stats[type][maxStar - 1]">
+                {{ esper.stats[type].base }} / {{ esper.stats[type][maxStar - 1].max }}
+              </span>
             </td>
           </tr>
         </tbody>
