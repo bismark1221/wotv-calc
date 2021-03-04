@@ -3575,8 +3575,6 @@ export class JsonService {
     });
 
     this[this.version].wotvDropRates = formattedQuests;
-
-    console.log(this[this.version].wotvDropRates);
   }
 
   addDroppedItem(map, type, itemId, rate, totalRate) {

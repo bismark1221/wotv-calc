@@ -28,8 +28,7 @@ export class UnitService {
   unit;
 
   private glExcluUnits = [
-    'UN_LW_P_FRVA',
-    'UN_LW_P_DEAN'
+    'UN_LW_P_FRVA'
   ];
 
   private limitedUnits = [
@@ -82,8 +81,8 @@ export class UnitService {
     private dataService: DataService
   ) {}
 
-  private getRaw(forcedVersion = null) { // @TODO Manage forcedVersion !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    return this.dataService.loadData('units');
+  private getRaw(forcedVersion = null) {
+    return this.dataService.loadData('units', forcedVersion);
   }
 
   async getUnits(forcedVersion = null) {

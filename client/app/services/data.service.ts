@@ -18,27 +18,27 @@ export class DataService {
     private http: HttpClient
   ) {}
 
-  private getLocalStorage(type, forceVersion = null) {
-    return this.navService.getVersion() === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
+  private getLocalStorage(type, forcedVersion = null) {
+    return this.navService.getVersion() === 'JP' || forcedVersion === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
   }
 
-  public async loadData(type) {
+  public async loadData(type, forcedVersion = null) {
     await this.checkHashService.getLaunchedRequest();
     const cache = await caches.open('wotv-calc');
-    const data = await cache.match('/' + this.getLocalStorage(type));
+    const data = await cache.match('/' + this.getLocalStorage(type, forcedVersion));
 
     if (data === null || data === undefined) {
-      if (!this.launchedRequests[this.getLocalStorage(type)]) {
-        this.launchedRequests[this.getLocalStorage(type)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
+      if (!this.launchedRequests[this.getLocalStorage(type, forcedVersion)]) {
+        this.launchedRequests[this.getLocalStorage(type, forcedVersion)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
           .map(async response => {
-            await cache.put(this.getLocalStorage(type), new Response(JSON.stringify(response)));
-            this.launchedRequests[this.getLocalStorage(type)] = null;
+            await cache.put(this.getLocalStorage(type, forcedVersion), new Response(JSON.stringify(response)));
+            this.launchedRequests[this.getLocalStorage(type, forcedVersion)] = null;
             return response;
           })
           .toPromise();
       }
 
-      return this.launchedRequests[this.getLocalStorage(type)];
+      return this.launchedRequests[this.getLocalStorage(type, forcedVersion)];
     } else {
       return of(JSON.parse(await data.text())).toPromise();
     }

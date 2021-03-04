@@ -11,7 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./espers.component.css']
 })
 export class EspersComponent implements OnInit {
-  espers;
+  espers = [];
   searchText = '';
   sort = 'rarity';
   order = 'asc';

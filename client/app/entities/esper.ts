@@ -415,9 +415,11 @@ export class Esper {
       const level = this.updateSkill(node, false, fullHide);
       if (level === 0) {
         this.board.nodes[node].activated = false;
-        this.board.nodes[node].children.forEach(childNode => {
-          this.hideNode(childNode, true);
-        });
+        if (this.board.nodes[node].children) {
+          this.board.nodes[node].children.forEach(childNode => {
+            this.hideNode(childNode, true);
+          });
+        }
       }
     }
   }

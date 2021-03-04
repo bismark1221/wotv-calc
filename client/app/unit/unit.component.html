@@ -43,7 +43,7 @@
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
@@ -53,7 +53,7 @@
             <tr>
               <th class="sub" colspan="6">Armors</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>

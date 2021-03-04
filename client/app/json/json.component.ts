@@ -37,6 +37,9 @@ export class JsonComponent implements OnInit {
 
   JPRomaji = {};
 
+  loadingIndexGL = false;
+  loadingIndexJP = false;
+
   constructor(
     private jsonService: JsonService,
     private unitService: UnitService
@@ -119,6 +122,7 @@ export class JsonComponent implements OnInit {
 
   async generateIndex() {
     for (const version of ['GL', 'JP']) {
+      this['loadingIndex' + version] = true;
       this[version + 'Index'] = {
         units: []
       };
@@ -139,5 +143,7 @@ export class JsonComponent implements OnInit {
         });
       }
     }
+
+    this['loadingIndex' + version] = false;
   }
 }

@@ -191,7 +191,7 @@ export class EsperService {
       star: esper.star,
       level: esper.level,
       nodes: {},
-      resonance: 1
+      resonance: 10
     };
 
     Object.keys(esper.board.nodes).forEach(nodeId => {

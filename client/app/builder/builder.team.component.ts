@@ -38,7 +38,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   selectedUnits = [null, null, null, null, null];
   savedUnits: {};
 
-  team = null;
+  team = {};
   statueNames;
   exportableLink = '';
   confirmModal = null;
@@ -80,11 +80,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   async ngOnInit() {
+    this.team = await this.teamService.newTeam();
     for (let i = 0; i <= 4; i++) {
       await this.getAvailableUnits(i);
     }
 
-    this.team = await this.teamService.newTeam();
     this.statueNames = Object.keys(this.team.guild.statues);
 
     this.activatedRoute.paramMap.subscribe((params: Params) => {
@@ -138,9 +138,11 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   private translateUnits(pos) {
-    this.availableUnits[pos].forEach(unit => {
-      unit.name = this.nameService.getName(unit);
-    });
+    if (this.availableUnits[pos]) {
+      this.availableUnits[pos].forEach(unit => {
+        unit.name = this.nameService.getName(unit);
+      });
+    }
   }
 
   async selectUnit(pos, forceSelect = false, customData = null) {

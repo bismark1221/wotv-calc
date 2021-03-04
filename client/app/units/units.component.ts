@@ -12,7 +12,7 @@ import { JobService } from '../services/job.service';
   styleUrls: ['./units.component.css']
 })
 export class UnitsComponent implements OnInit {
-  units;
+  units = [];
   searchText = '';
   sort = 'rarity';
   order = 'asc';

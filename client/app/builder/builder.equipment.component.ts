@@ -19,8 +19,8 @@ import { ModalLinkComponent } from './modal/modal.link.component';
 })
 export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   equipment;
-  filteredEquipments;
-  equipments;
+  filteredEquipments = {};
+  equipments = {};
   searchText = '';
   savedEquipments = {};
   loadingBuild = false;

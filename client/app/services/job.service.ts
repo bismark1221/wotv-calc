@@ -22,8 +22,8 @@ export class JobService {
     private toolService: ToolService
   ) {}
 
-  private getRaw(forcedVersion = null) { // @TODO Manage forcedVersion !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    return this.dataService.loadData('jobs');
+  private getRaw(forcedVersion = null) {
+    return this.dataService.loadData('jobs', forcedVersion);
   }
 
   async getJobs(forcedVersion = null) {

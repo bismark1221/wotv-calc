@@ -172,12 +172,14 @@
       <div>
         <textarea id="rawJson">{{ GLIndex | json }}</textarea>
       </div>
+      <span *ngIf="loadingIndexGL == true">Loading...</span>
     </td>
     <td>
       ### JP Index ###
       <div>
         <textarea id="rawJson">{{ JPIndex | json }}</textarea>
       </div>
+      <span *ngIf="loadingIndexJP == true">Loading...</span>
     </td>
   </tr>
   <tr>

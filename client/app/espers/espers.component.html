@@ -77,7 +77,7 @@
             <span>Order by :</span>
             <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getEspers()" [clearable]="false" [searchable]="false">
               <ng-template ng-label-tmp let-item="item">
-                {{ item === 'asc' ? 'Ascending' : 'Descending' }}
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
               </ng-template>
 
               <ng-template ng-option-tmp let-item="item">

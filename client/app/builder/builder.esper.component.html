@@ -13,10 +13,10 @@
   </div>
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
-    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredEspers[rarity].length > 0">
+    <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredEspers[rarity] && filteredEspers[rarity].length > 0">
       <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
     </div>
-    <div class="esperBlock" *ngIf="showList && !loadingBuild && filteredEspers[rarity].length > 0">
+    <div class="esperBlock" *ngIf="showList && !loadingBuild && filteredEspers[rarity] && filteredEspers[rarity].length > 0">
       <div class="esperLine" *ngFor="let filteredEsper of filteredEspers[rarity]; let j = index">
         <div class="esperSelector" id="selector_{{filteredEsper.slug}}" [ngClass]="{'esperSelectorWithSave': savedEspers[filteredEsper.dataId]}" (click)="selectEsper(filteredEsper.dataId)">
           <div class="esperLogo">

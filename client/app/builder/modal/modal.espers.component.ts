@@ -7,13 +7,15 @@ import { TeamService } from '../../services/team.service';
 import { NavService } from '../../services/nav.service';
 import { NameService } from '../../services/name.service';
 
+import { Esper } from '../../entities/esper';
+
 @Component({
   selector: 'app-modal-espers',
   templateUrl: './modal.espers.component.html',
   styleUrls: ['./modal.espers.component.css']
 })
 export class ModalEspersComponent implements OnInit {
-  espers;
+  espers = [];
 
   searchText = '';
   filters = {
@@ -22,7 +24,7 @@ export class ModalEspersComponent implements OnInit {
   };
   savedEspers = {};
   loadEsperId = null;
-  maxStar = 1;
+  maxStar = 3;
 
   buffsImage = [
     'dark_atk',
@@ -92,8 +94,6 @@ export class ModalEspersComponent implements OnInit {
 
       this.esper = await this.esperService.selectEsperForBuilder(this.esper.dataId, this.esper);
       this.maxStar = this.esper.SPs.length;
-
-
     }
   }
 
@@ -192,7 +192,9 @@ export class ModalEspersComponent implements OnInit {
   }
 
   canActivateNode(node) {
-    return this.esperService.canActivateNode(node, this.esper);
+    if (this.esper instanceof Esper) {
+      return this.esperService.canActivateNode(node, this.esper);
+    }
   }
 
   maxEsper() {

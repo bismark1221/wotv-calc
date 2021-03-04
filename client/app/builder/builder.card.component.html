@@ -132,11 +132,15 @@
                 </div>
 
                 <div *ngIf="cond.type === 'job'">
-                  <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </span>
                 </div>
 
                 <div *ngIf="cond.type === 'unit'">
-                  <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  </span>
                 </div>
               </div>
             </div>
@@ -179,11 +183,15 @@
               </div>
 
               <div *ngIf="cond.type === 'job'">
-                <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                <span *ngFor="let job of cond.items">
+                  <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </span>
               </div>
 
               <div *ngIf="cond.type === 'unit'">
-                <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                <span *ngFor="let unit of cond.items">
+                  <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                </span>
               </div>
             </div>
           </td>
@@ -272,11 +280,15 @@
                 </div>
 
                 <div *ngIf="cond.type === 'job'">
-                  <img *ngFor="let job of cond.items" class="subJob" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <span *ngFor="let job of cond.items">
+                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </span>
                 </div>
 
                 <div *ngIf="cond.type === 'unit'">
-                  <img *ngFor="let unit of cond.items" class="unit" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  <span *ngFor="let unit of cond.items">
+                    <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
+                  </span>
                 </div>
               </div>
             </div>

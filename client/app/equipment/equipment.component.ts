@@ -210,7 +210,7 @@ export class EquipmentComponent implements OnInit {
 
       this.equipment.formattedMaterials = [];
       if (this.equipment.materials.length > 0) {
-        for (let index = 0; this.equipment.materials.length - 1; index++) {
+        for (let index = 0; index <= this.equipment.materials.length - 1; index++) {
           const items = this.equipment.materials[index];
           this.equipment.formattedMaterials.push([]);
 

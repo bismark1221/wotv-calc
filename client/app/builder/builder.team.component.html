@@ -37,7 +37,7 @@
       </ng-template>
     </ng-select>
 
-    <table class="builderTable" *ngIf="team.units[unitPos]; let unit">
+    <table class="builderTable" *ngIf="team.units && team.units[unitPos]; let unit">
       <tr>
         <th>{{ unit.name }}<span *ngIf="unit.customName"> - {{ unit.customName }}</span></th>
       </tr>
@@ -288,7 +288,7 @@
       </tr>
     </table>
 
-    <table class="statsTable" *ngIf="team.units[unitPos]; let unit">
+    <table class="statsTable" *ngIf="team.units && team.units[unitPos]; let unit">
       <tr>
         <th colspan="4">STATS</th>
       </tr>
@@ -371,7 +371,7 @@
     </table>
   </div>
 
-  <div *ngIf="team && version === 'JP'" class="teamGuild">
+  <div *ngIf="team && version === 'JP' && team.masterRanks" class="teamGuild">
     <table>
       <tr>
         <th colspan="8">Master Ranks</th>

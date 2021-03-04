@@ -93,13 +93,13 @@ export class CardComponent implements OnInit {
           if (buff.cond) {
             for (const cond of buff.cond) {
               if (cond.type === 'job') {
-                for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+                for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
                   const job = await this.jobService.getJob(jobId);
                   cond.items[jobIndex] = job ? job : cond.items[jobIndex];
                 }
               } else if (cond.type === 'unit') {
-                for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+                for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
                   const unitId = cond.items[unitIndex];
                   const unit = await this.unitService.getUnit(unitId);
                   cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];

@@ -21,7 +21,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.card.component.css']
 })
 export class BuilderCardComponent implements OnInit, AfterViewInit {
-  cards;
+  cards = {};
   filteredCards = {};
   card;
   searchText = '';
@@ -65,12 +65,12 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
         const card = await this.cardService.getCardBySlug(data);
         if (card) {
-          this.selectCard(card.dataId);
+          await this.selectCard(card.dataId);
         } else {
-          this.cardService.getStoredCard(data).subscribe(cardData => {
+          this.cardService.getStoredCard(data).subscribe(async cardData => {
             if (cardData) {
               // @ts-ignore
-              this.selectCard(cardData.dataId, cardData);
+              await this.selectCard(cardData.dataId, cardData);
             }
           });
         }
@@ -219,13 +219,13 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           if (formattedBuff.cond) {
             for (const cond of formattedBuff.cond) {
               if (cond.type === 'job') {
-                for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+                for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
                   const job = await this.jobService.getJob(jobId);
                   cond.items[jobIndex] = job ? job : cond.items[jobIndex];
                 }
               } else if (cond.type === 'unit') {
-                for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+                for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
                   const unitId = cond.items[unitIndex];
                   const unit = await this.unitService.getUnit(unitId);
                   cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
@@ -243,13 +243,13 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       if (skill.cond) {
         for (const cond of skill.cond) {
           if (cond.type === 'job') {
-            for (let jobIndex = 0; jobIndex <= cond.items - 1; jobIndex++) {
+            for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
               const job = await this.jobService.getJob(jobId);
               cond.items[jobIndex] = job ? job : cond.items[jobIndex];
             }
           } else if (cond.type === 'unit') {
-            for (let unitIndex = 0; unitIndex <= cond.items - 1; unitIndex++) {
+            for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
               const unitId = cond.items[unitIndex];
               const unit = await this.unitService.getUnit(unitId);
               cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
@@ -266,9 +266,9 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.type = 'card';
     modalRef.componentInstance.savedItems = this.savedCards[cardId];
 
-    modalRef.result.then(result => {
+    modalRef.result.then(async result => {
       if (result.type === 'load' && result.item) {
-        this.selectCard(result.item.dataId, result.item);
+        await this.selectCard(result.item.dataId, result.item);
       }
 
       if (result.type === 'fullDelete') {

@@ -11,7 +11,7 @@ import { NameService } from '../services/name.service';
   styleUrls: ['./equipments.component.css']
 })
 export class EquipmentsComponent implements OnInit {
-  equipments;
+  equipments = [];
   acquisitionTypes;
   searchText = '';
   sort = 'rarity';
