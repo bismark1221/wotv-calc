@@ -434,7 +434,7 @@
               <td>{{ unit.totalJobsStats.LUCK }}</td>
             </tr>
           </tbody>
-          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats[0]">
+          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats[0] && exJobs[0]">
             <tr class="jobsStatsLine">
               <td>
                 <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />
