@@ -378,7 +378,7 @@
       </tr>
       <tr>
         <td *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']">
-          <img class="statueImg" src="{{ 'assets/masterRanks/' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.background + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.emblem + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.stars + '.png' }}"/>
+          <img *ngIf="team.masterRanks.ranks && team.masterRanks.data" class="statueImg" src="{{ 'assets/masterRanks/' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.background + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.emblem + '_' + team.masterRanks.ranks[element].ranks[(team.masterRanks.data[element] - 1)].images.stars + '.png' }}"/>
         </td>
       </tr>
       <td *ngFor="let element of ['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']">
