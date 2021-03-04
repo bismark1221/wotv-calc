@@ -76358,6 +76358,478 @@
       }
     ]
   },
+  "JB_LW_DEAN": {
+    "dataId": "JB_LW_DEAN",
+    "names": {
+      "en": "Dark Knight of Remorse"
+    },
+    "statsModifiers": [
+      {
+        "HP": 0,
+        "TP": 0,
+        "AP": 0,
+        "ATK": 0,
+        "MAG": 0,
+        "DEX": 0,
+        "AGI": 0,
+        "LUCK": 0,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 200,
+        "TP": 589,
+        "AP": 589,
+        "ATK": 870,
+        "MAG": 384,
+        "DEX": 870,
+        "AGI": 1203,
+        "LUCK": 589,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 800,
+        "TP": 933,
+        "AP": 933,
+        "ATK": 1379,
+        "MAG": 609,
+        "DEX": 1379,
+        "AGI": 1907,
+        "LUCK": 933,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1040,
+        "TP": 1177,
+        "AP": 1177,
+        "ATK": 1741,
+        "MAG": 768,
+        "DEX": 1741,
+        "AGI": 2406,
+        "LUCK": 1177,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 1280,
+        "TP": 1367,
+        "AP": 1367,
+        "ATK": 2021,
+        "MAG": 891,
+        "DEX": 2021,
+        "AGI": 2793,
+        "LUCK": 1367,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2000,
+        "TP": 1522,
+        "AP": 1522,
+        "ATK": 2250,
+        "MAG": 992,
+        "DEX": 2250,
+        "AGI": 3110,
+        "LUCK": 1522,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2240,
+        "TP": 1653,
+        "AP": 1653,
+        "ATK": 2443,
+        "MAG": 1078,
+        "DEX": 2443,
+        "AGI": 3377,
+        "LUCK": 1653,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 2480,
+        "TP": 1766,
+        "AP": 1766,
+        "ATK": 2611,
+        "MAG": 1152,
+        "DEX": 2611,
+        "AGI": 3609,
+        "LUCK": 1766,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3200,
+        "TP": 1866,
+        "AP": 1866,
+        "ATK": 2759,
+        "MAG": 1217,
+        "DEX": 2759,
+        "AGI": 3813,
+        "LUCK": 1866,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3440,
+        "TP": 1956,
+        "AP": 1956,
+        "ATK": 2891,
+        "MAG": 1275,
+        "DEX": 2891,
+        "AGI": 3996,
+        "LUCK": 1956,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 3680,
+        "TP": 2037,
+        "AP": 2037,
+        "ATK": 3011,
+        "MAG": 1328,
+        "DEX": 3011,
+        "AGI": 4162,
+        "LUCK": 2037,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4400,
+        "TP": 2110,
+        "AP": 2110,
+        "ATK": 3120,
+        "MAG": 1376,
+        "DEX": 3120,
+        "AGI": 4313,
+        "LUCK": 2110,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4666,
+        "TP": 2178,
+        "AP": 2178,
+        "ATK": 3220,
+        "MAG": 1421,
+        "DEX": 3220,
+        "AGI": 4452,
+        "LUCK": 2178,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 4932,
+        "TP": 2241,
+        "AP": 2241,
+        "ATK": 3313,
+        "MAG": 1462,
+        "DEX": 3313,
+        "AGI": 4580,
+        "LUCK": 2241,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6000,
+        "TP": 2300,
+        "AP": 2300,
+        "ATK": 3400,
+        "MAG": 1500,
+        "DEX": 3400,
+        "AGI": 4700,
+        "LUCK": 2300,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "lapsdean",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "ARMOR",
+        "HELM",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {},
+      {
+        "IT_JB_MM_ALL": 10,
+        "IT_JB_IM_ANGEL_1": 1,
+        "IT_JB_EM_DARK_1": 10,
+        "IT_JB_SWORD_01": 5
+      },
+      {
+        "IT_JB_IM_ANGEL_1": 2,
+        "IT_JB_EM_DARK_1": 20,
+        "IT_JB_SWORD_01": 10,
+        "IT_JB_MM_LW_DEAN": 1
+      },
+      {
+        "IT_JB_MM_ALL_2": 25,
+        "IT_JB_IM_ANGEL_2": 1,
+        "IT_JB_EM_DARK_2": 10,
+        "IT_JB_SWORD_02": 5
+      },
+      {
+        "IT_JB_MM_ALL_2": 50,
+        "IT_JB_IM_ANGEL_2": 2,
+        "IT_JB_EM_DARK_2": 20,
+        "IT_JB_SWORD_02": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_2": 3,
+        "IT_JB_EM_DARK_2": 40,
+        "IT_JB_SWORD_02": 15,
+        "IT_JB_MM_LW_DEAN_2": 2
+      },
+      {
+        "IT_JB_MM_ALL_3": 25,
+        "IT_JB_IM_ANGEL_3": 1,
+        "IT_JB_EM_DARK_3": 10,
+        "IT_JB_SWORD_03": 5
+      },
+      {
+        "IT_JB_MM_ALL_3": 50,
+        "IT_JB_IM_ANGEL_3": 2,
+        "IT_JB_EM_DARK_3": 20,
+        "IT_JB_SWORD_03": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_3": 3,
+        "IT_JB_EM_DARK_3": 40,
+        "IT_JB_SWORD_03": 15,
+        "IT_JB_MM_LW_DEAN_3": 3
+      },
+      {
+        "IT_JB_MM_ALL_4": 25,
+        "IT_JB_IM_ANGEL_4": 1,
+        "IT_JB_EM_DARK_4": 10,
+        "IT_JB_SWORD_04": 5
+      },
+      {
+        "IT_JB_MM_ALL_4": 50,
+        "IT_JB_IM_ANGEL_4": 2,
+        "IT_JB_EM_DARK_4": 20,
+        "IT_JB_SWORD_04": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_4": 3,
+        "IT_JB_EM_DARK_4": 40,
+        "IT_JB_SWORD_04": 15,
+        "IT_JB_MM_LW_DEAN_4": 4
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_JB_IM_ANGEL_5": 1,
+        "IT_JB_EM_DARK_5": 10,
+        "IT_JB_SWORD_05": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_JB_IM_ANGEL_5": 2,
+        "IT_JB_EM_DARK_5": 20,
+        "IT_JB_SWORD_05": 10
+      },
+      {
+        "IT_JB_IM_ANGEL_5": 3,
+        "IT_JB_EM_DARK_5": 40,
+        "IT_JB_SWORD_05": 15,
+        "IT_JB_MM_LW_DEAN_5": 5
+      }
+    ]
+  },
+  "JB_LW_DEAN_M": {
+    "dataId": "JB_LW_DEAN_M",
+    "names": {
+      "en": "純黒の魔剣士"
+    },
+    "statsModifiers": [
+      {
+        "HP": 6450,
+        "TP": 2311,
+        "AP": 2311,
+        "ATK": 3451,
+        "MAG": 1522,
+        "DEX": 3451,
+        "AGI": 4700,
+        "LUCK": 2346,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6675,
+        "TP": 2317,
+        "AP": 2317,
+        "ATK": 3476,
+        "MAG": 1533,
+        "DEX": 3476,
+        "AGI": 4700,
+        "LUCK": 2369,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 6900,
+        "TP": 2323,
+        "AP": 2323,
+        "ATK": 3502,
+        "MAG": 1545,
+        "DEX": 3502,
+        "AGI": 4700,
+        "LUCK": 2392,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 7800,
+        "TP": 2346,
+        "AP": 2346,
+        "ATK": 3604,
+        "MAG": 1590,
+        "DEX": 3604,
+        "AGI": 4700,
+        "LUCK": 2484,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8025,
+        "TP": 2351,
+        "AP": 2351,
+        "ATK": 3629,
+        "MAG": 1601,
+        "DEX": 3629,
+        "AGI": 4700,
+        "LUCK": 2507,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 8250,
+        "TP": 2357,
+        "AP": 2357,
+        "ATK": 3655,
+        "MAG": 1612,
+        "DEX": 3655,
+        "AGI": 4700,
+        "LUCK": 2530,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9150,
+        "TP": 2380,
+        "AP": 2380,
+        "ATK": 3757,
+        "MAG": 1657,
+        "DEX": 3757,
+        "AGI": 4700,
+        "LUCK": 2622,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9375,
+        "TP": 2386,
+        "AP": 2386,
+        "ATK": 3782,
+        "MAG": 1668,
+        "DEX": 3782,
+        "AGI": 4700,
+        "LUCK": 2645,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 9600,
+        "TP": 2392,
+        "AP": 2392,
+        "ATK": 3808,
+        "MAG": 1680,
+        "DEX": 3808,
+        "AGI": 4700,
+        "LUCK": 2668,
+        "INITIAL_AP": -82
+      },
+      {
+        "HP": 10500,
+        "TP": 2415,
+        "AP": 2415,
+        "ATK": 3910,
+        "MAG": 1725,
+        "DEX": 3910,
+        "AGI": 4700,
+        "LUCK": 2760,
+        "INITIAL_AP": -82
+      }
+    ],
+    "image": "lapsdean_ec",
+    "subRate": 50,
+    "equipments": {
+      "weapons": [
+        "SWORD"
+      ],
+      "armors": [
+        "ARMOR",
+        "HELM",
+        "ACC"
+      ]
+    },
+    "materials": [
+      {
+        "IT_JBEX_UR": 1,
+        "IT_UN_AW_DARK": 120,
+        "IT_PI_COM_DARK": 120
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_DEAN": 20,
+        "IT_JBEX_SWORD": 10,
+        "IT_JB_EM_DARK_5": 25,
+        "IT_JB_SWORD_05": 25
+      },
+      {
+        "IT_JB_MM_ALL_5": 25,
+        "IT_SP_LW_DEAN": 20,
+        "IT_JBEX_SWORD": 10,
+        "IT_JB_EM_DARK_5": 25,
+        "IT_JB_SWORD_05": 25
+      },
+      {
+        "IT_SP_LW_DEAN": 40,
+        "IT_JBEX_SWORD": 20,
+        "IT_JBEX_MM": 1,
+        "IT_JB_IM_ANGEL_5": 3,
+        "IT_JB_MM_LW_DEAN_5": 5
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_DEAN": 20,
+        "IT_JBEX_SWORD": 25,
+        "IT_JB_EM_DARK_5": 35,
+        "IT_JB_SWORD_05": 35
+      },
+      {
+        "IT_JB_MM_ALL_5": 35,
+        "IT_SP_LW_DEAN": 20,
+        "IT_JBEX_SWORD": 25,
+        "IT_JB_EM_DARK_5": 35,
+        "IT_JB_SWORD_05": 35
+      },
+      {
+        "IT_SP_LW_DEAN": 80,
+        "IT_JBEX_SWORD": 35,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 4,
+        "IT_JB_MM_LW_DEAN_5": 7
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_DEAN": 40,
+        "IT_JBEX_SWORD": 50,
+        "IT_JB_EM_DARK_5": 50,
+        "IT_JB_SWORD_05": 50
+      },
+      {
+        "IT_JB_MM_ALL_5": 50,
+        "IT_SP_LW_DEAN": 40,
+        "IT_JBEX_SWORD": 50,
+        "IT_JB_EM_DARK_5": 50,
+        "IT_JB_SWORD_05": 50
+      },
+      {
+        "IT_SP_LW_DEAN": 120,
+        "IT_JBEX_SWORD": 75,
+        "IT_JBEX_MM": 2,
+        "IT_JB_IM_ANGEL_5": 5,
+        "IT_JB_MM_LW_DEAN_5": 10
+      }
+    ]
+  },
   "JB_LW_MONT_M": {
     "dataId": "JB_LW_MONT_M",
     "names": {
@@ -87598,279 +88070,6 @@
         "IT_JBEX_GLOVE": 75,
         "IT_JBEX_MM": 2,
         "IT_JB_IM_ANGEL_5": 5
-      }
-    ]
-  },
-  "JB_LW_DEAN": {
-    "dataId": "JB_LW_DEAN",
-    "names": {
-      "en": "Dark Knight of Remorse",
-      "fr": "Chevalier noir repenti"
-    },
-    "statsModifiers": [
-      {
-        "HP": 0,
-        "TP": 0,
-        "AP": 0,
-        "ATK": 0,
-        "MAG": 0,
-        "DEX": 0,
-        "AGI": 0,
-        "LUCK": 0,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 200,
-        "TP": 589,
-        "AP": 589,
-        "ATK": 870,
-        "MAG": 384,
-        "DEX": 870,
-        "AGI": 1203,
-        "LUCK": 589,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 800,
-        "TP": 933,
-        "AP": 933,
-        "ATK": 1379,
-        "MAG": 609,
-        "DEX": 1379,
-        "AGI": 1907,
-        "LUCK": 933,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 1040,
-        "TP": 1177,
-        "AP": 1177,
-        "ATK": 1741,
-        "MAG": 768,
-        "DEX": 1741,
-        "AGI": 2406,
-        "LUCK": 1177,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 1280,
-        "TP": 1367,
-        "AP": 1367,
-        "ATK": 2021,
-        "MAG": 891,
-        "DEX": 2021,
-        "AGI": 2793,
-        "LUCK": 1367,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 2000,
-        "TP": 1522,
-        "AP": 1522,
-        "ATK": 2250,
-        "MAG": 992,
-        "DEX": 2250,
-        "AGI": 3110,
-        "LUCK": 1522,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 2240,
-        "TP": 1653,
-        "AP": 1653,
-        "ATK": 2443,
-        "MAG": 1078,
-        "DEX": 2443,
-        "AGI": 3377,
-        "LUCK": 1653,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 2480,
-        "TP": 1766,
-        "AP": 1766,
-        "ATK": 2611,
-        "MAG": 1152,
-        "DEX": 2611,
-        "AGI": 3609,
-        "LUCK": 1766,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 3200,
-        "TP": 1866,
-        "AP": 1866,
-        "ATK": 2759,
-        "MAG": 1217,
-        "DEX": 2759,
-        "AGI": 3813,
-        "LUCK": 1866,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 3440,
-        "TP": 1956,
-        "AP": 1956,
-        "ATK": 2891,
-        "MAG": 1275,
-        "DEX": 2891,
-        "AGI": 3996,
-        "LUCK": 1956,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 3680,
-        "TP": 2037,
-        "AP": 2037,
-        "ATK": 3011,
-        "MAG": 1328,
-        "DEX": 3011,
-        "AGI": 4162,
-        "LUCK": 2037,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 4400,
-        "TP": 2110,
-        "AP": 2110,
-        "ATK": 3120,
-        "MAG": 1376,
-        "DEX": 3120,
-        "AGI": 4313,
-        "LUCK": 2110,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 4666,
-        "TP": 2178,
-        "AP": 2178,
-        "ATK": 3220,
-        "MAG": 1421,
-        "DEX": 3220,
-        "AGI": 4452,
-        "LUCK": 2178,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 4932,
-        "TP": 2241,
-        "AP": 2241,
-        "ATK": 3313,
-        "MAG": 1462,
-        "DEX": 3313,
-        "AGI": 4580,
-        "LUCK": 2241,
-        "INITIAL_AP": -82
-      },
-      {
-        "HP": 6000,
-        "TP": 2300,
-        "AP": 2300,
-        "ATK": 3400,
-        "MAG": 1500,
-        "DEX": 3400,
-        "AGI": 4700,
-        "LUCK": 2300,
-        "INITIAL_AP": -82
-      }
-    ],
-    "image": "lapsdean",
-    "subRate": 50,
-    "equipments": {
-      "weapons": [
-        "SWORD"
-      ],
-      "armors": [
-        "ARMOR",
-        "HELM",
-        "ACC"
-      ]
-    },
-    "materials": [
-      {},
-      {
-        "IT_JB_MM_ALL": 10,
-        "IT_JB_IM_ANGEL_1": 1,
-        "IT_JB_EM_DARK_1": 10,
-        "IT_JB_SWORD_01": 5
-      },
-      {
-        "IT_JB_IM_ANGEL_1": 2,
-        "IT_JB_EM_DARK_1": 20,
-        "IT_JB_SWORD_01": 10,
-        "IT_JB_MM_LW_DEAN": 1
-      },
-      {
-        "IT_JB_MM_ALL_2": 25,
-        "IT_JB_IM_ANGEL_2": 1,
-        "IT_JB_EM_DARK_2": 10,
-        "IT_JB_SWORD_02": 5
-      },
-      {
-        "IT_JB_MM_ALL_2": 50,
-        "IT_JB_IM_ANGEL_2": 2,
-        "IT_JB_EM_DARK_2": 20,
-        "IT_JB_SWORD_02": 10
-      },
-      {
-        "IT_JB_IM_ANGEL_2": 3,
-        "IT_JB_EM_DARK_2": 40,
-        "IT_JB_SWORD_02": 15,
-        "IT_JB_MM_LW_DEAN_2": 2
-      },
-      {
-        "IT_JB_MM_ALL_3": 25,
-        "IT_JB_IM_ANGEL_3": 1,
-        "IT_JB_EM_DARK_3": 10,
-        "IT_JB_SWORD_03": 5
-      },
-      {
-        "IT_JB_MM_ALL_3": 50,
-        "IT_JB_IM_ANGEL_3": 2,
-        "IT_JB_EM_DARK_3": 20,
-        "IT_JB_SWORD_03": 10
-      },
-      {
-        "IT_JB_IM_ANGEL_3": 3,
-        "IT_JB_EM_DARK_3": 40,
-        "IT_JB_SWORD_03": 15,
-        "IT_JB_MM_LW_DEAN_3": 3
-      },
-      {
-        "IT_JB_MM_ALL_4": 25,
-        "IT_JB_IM_ANGEL_4": 1,
-        "IT_JB_EM_DARK_4": 10,
-        "IT_JB_SWORD_04": 5
-      },
-      {
-        "IT_JB_MM_ALL_4": 50,
-        "IT_JB_IM_ANGEL_4": 2,
-        "IT_JB_EM_DARK_4": 20,
-        "IT_JB_SWORD_04": 10
-      },
-      {
-        "IT_JB_IM_ANGEL_4": 3,
-        "IT_JB_EM_DARK_4": 40,
-        "IT_JB_SWORD_04": 15,
-        "IT_JB_MM_LW_DEAN_4": 4
-      },
-      {
-        "IT_JB_MM_ALL_5": 25,
-        "IT_JB_IM_ANGEL_5": 1,
-        "IT_JB_EM_DARK_5": 10,
-        "IT_JB_SWORD_05": 5
-      },
-      {
-        "IT_JB_MM_ALL_5": 50,
-        "IT_JB_IM_ANGEL_5": 2,
-        "IT_JB_EM_DARK_5": 20,
-        "IT_JB_SWORD_05": 10
-      },
-      {
-        "IT_JB_IM_ANGEL_5": 3,
-        "IT_JB_EM_DARK_5": 40,
-        "IT_JB_SWORD_05": 15,
-        "IT_JB_MM_LW_DEAN_5": 5
       }
     ]
   }

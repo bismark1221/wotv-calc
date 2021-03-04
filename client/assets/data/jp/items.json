@@ -3126,6 +3126,46 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_WIZ"
   },
+  "IT_JB_MM_LW_DEAN": {
+    "dataId": "IT_JB_MM_LW_DEAN",
+    "names": {
+      "en": "悔恨の魔剣士の記憶・翠 - Dark Knight of Remorse's Memory (Green)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_DEAN"
+  },
+  "IT_JB_MM_LW_DEAN_2": {
+    "dataId": "IT_JB_MM_LW_DEAN_2",
+    "names": {
+      "en": "悔恨の魔剣士の記憶・碧 - Dark Knight of Remorse's Memory (Blue)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_DEAN"
+  },
+  "IT_JB_MM_LW_DEAN_3": {
+    "dataId": "IT_JB_MM_LW_DEAN_3",
+    "names": {
+      "en": "悔恨の魔剣士の記憶・紫 - Dark Knight of Remorse's Memory (Purple)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_DEAN"
+  },
+  "IT_JB_MM_LW_DEAN_4": {
+    "dataId": "IT_JB_MM_LW_DEAN_4",
+    "names": {
+      "en": "悔恨の魔剣士の記憶・橘 - Dark Knight of Remorse's Memory (Yellow)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_DEAN"
+  },
+  "IT_JB_MM_LW_DEAN_5": {
+    "dataId": "IT_JB_MM_LW_DEAN_5",
+    "names": {
+      "en": "悔恨の魔剣士の記憶・緋 - Dark Knight of Remorse's Memory (Red)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_DEAN"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -4925,6 +4965,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_DEAN": {
+    "dataId": "IT_PI_LW_DEAN",
+    "names": {
+      "en": "ディーンの欠片 - Duane Unit Shard"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -5650,6 +5697,13 @@
     "dataId": "IT_SP_LW_CMLO",
     "names": {
       "en": "カミッロの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_DEAN": {
+    "dataId": "IT_SP_LW_DEAN",
+    "names": {
+      "en": "ディーンの思珠"
     },
     "type": "exjob_orb"
   },
@@ -6596,7 +6650,7 @@
   "IT_AF_AW_GLOVE": {
     "dataId": "IT_AF_AW_GLOVE",
     "names": {
-      "en": "精錬の秘伝書（グローブ）"
+      "en": "精錬の秘伝書（グローブ） - Secret Book of Refinement (Gloves)"
     },
     "type": "compo_equipment"
   },
@@ -7012,6 +7066,14 @@
     },
     "type": "recipe",
     "icon": "AF_LW_SWO_023"
+  },
+  "IT_AF_LW_SWO_029": {
+    "dataId": "IT_AF_LW_SWO_029",
+    "names": {
+      "en": "スパインブレードのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_SWO_029"
   },
   "IT_AF_LW_BSW_001": {
     "dataId": "IT_AF_LW_BSW_001",
@@ -7512,7 +7574,7 @@
   "IT_AF_LW_GLO_001": {
     "dataId": "IT_AF_LW_GLO_001",
     "names": {
-      "en": "パワーグローブのクラフトレシピ"
+      "en": "パワーグローブのクラフトレシピ - Power Gloves Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_GLO_001"
@@ -7520,7 +7582,7 @@
   "IT_AF_LW_GLO_002": {
     "dataId": "IT_AF_LW_GLO_002",
     "names": {
-      "en": "バトルグローブのクラフトレシピ"
+      "en": "バトルグローブのクラフトレシピ - Battle Gloves Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_GLO_002"
@@ -7528,7 +7590,7 @@
   "IT_AF_LW_GLO_003": {
     "dataId": "IT_AF_LW_GLO_003",
     "names": {
-      "en": "ダークグローブのクラフトレシピ"
+      "en": "ダークグローブのクラフトレシピ - Dark Gloves Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_GLO_003"
@@ -8397,6 +8459,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_03_02_A": {
+    "dataId": "IT_EC_SUMMON_03_02_A",
+    "names": {
+      "en": "【3月】召喚メダルA - March Summon Medal A"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -8512,7 +8582,7 @@
   "IT_EC_EV09_1": {
     "dataId": "IT_EC_EV09_1",
     "names": {
-      "en": "扇動せし者メダル"
+      "en": "扇動せし者メダル - The Agitator Medal"
     },
     "type": "medal"
   },
@@ -8522,6 +8592,14 @@
       "en": "リオニスの古文書メダル"
     },
     "type": "medal"
+  },
+  "IT_EC_EV11_1": {
+    "dataId": "IT_EC_EV11_1",
+    "names": {
+      "en": "小鳥の歌も今は絶えメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_EV10_1"
   },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
@@ -8896,7 +8974,7 @@
   "IT_US_G_AF_N_10": {
     "dataId": "IT_US_G_AF_N_10",
     "names": {
-      "en": "武具強化素材ノーマル10連召喚券"
+      "en": "武具強化素材ノーマル10連召喚券 - Equipment-Enhancing Material Normal 10x Summon Ticket"
     },
     "type": "tickets"
   },
@@ -9076,7 +9154,7 @@
   "IT_US_G_PR_1stANV_01": {
     "dataId": "IT_US_G_PR_1stANV_01",
     "names": {
-      "en": "【1日目】1周年記念前夜祭召喚券"
+      "en": "【1日目】1周年記念前夜祭召喚券 - [Day 1] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -9084,7 +9162,7 @@
   "IT_US_G_PR_1stANV_02": {
     "dataId": "IT_US_G_PR_1stANV_02",
     "names": {
-      "en": "【2日目】1周年記念前夜祭召喚券"
+      "en": "【2日目】1周年記念前夜祭召喚券 - [Day 2] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -9092,7 +9170,7 @@
   "IT_US_G_PR_1stANV_03": {
     "dataId": "IT_US_G_PR_1stANV_03",
     "names": {
-      "en": "【3日目】1周年記念前夜祭召喚券"
+      "en": "【3日目】1周年記念前夜祭召喚券 - [Day 3] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -9100,7 +9178,7 @@
   "IT_US_G_PR_1stANV_04": {
     "dataId": "IT_US_G_PR_1stANV_04",
     "names": {
-      "en": "【4日目】1周年記念前夜祭召喚券"
+      "en": "【4日目】1周年記念前夜祭召喚券 - [Day 4] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -9108,7 +9186,7 @@
   "IT_US_G_PR_1stANV_05": {
     "dataId": "IT_US_G_PR_1stANV_05",
     "names": {
-      "en": "【5日目】1周年記念前夜祭召喚券"
+      "en": "【5日目】1周年記念前夜祭召喚券 - [Day 5] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -9116,7 +9194,7 @@
   "IT_US_G_PR_1stANV_06": {
     "dataId": "IT_US_G_PR_1stANV_06",
     "names": {
-      "en": "【6日目】1周年記念前夜祭召喚券"
+      "en": "【6日目】1周年記念前夜祭召喚券 - [Day 6] First Anniversary Celebration Countdown Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -10952,6 +11030,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JBEX_AF_09": {
+    "dataId": "IT_US_SE_JBEX_AF_09",
+    "names": {
+      "en": "【GL版もうすぐ1周年】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_SP_LW_01": {
     "dataId": "IT_US_SE_SP_LW_01",
     "names": {
@@ -12060,49 +12146,12 @@
     "type": "stamp",
     "icon": "IT_STAMP_02"
   },
-  "IT_JB_MM_LW_DEAN": {
-    "dataId": "IT_JB_MM_LW_DEAN",
+  "IT_STAMP_2103": {
+    "dataId": "IT_STAMP_2103",
     "names": {
-      "en": "Dark Knight of Remorse's Memory (Green)",
-      "fr": "Souvenir de Chevalier noir repenti (vert)"
+      "en": "3月印章"
     },
-    "type": "job_awake_orb",
-    "icon": "JB_LW_DEAN"
-  },
-  "IT_JB_MM_LW_DEAN_2": {
-    "dataId": "IT_JB_MM_LW_DEAN_2",
-    "names": {
-      "en": "Dark Knight of Remorse's Memory (Blue)",
-      "fr": "Souvenir de Chevalier noir repenti (bleu)"
-    },
-    "type": "job_awake_orb",
-    "icon": "JB_LW_DEAN"
-  },
-  "IT_JB_MM_LW_DEAN_3": {
-    "dataId": "IT_JB_MM_LW_DEAN_3",
-    "names": {
-      "en": "Dark Knight of Remorse's Memory (Purple)",
-      "fr": "Souvenir de Chevalier noir repenti (violet)"
-    },
-    "type": "job_awake_orb",
-    "icon": "JB_LW_DEAN"
-  },
-  "IT_JB_MM_LW_DEAN_4": {
-    "dataId": "IT_JB_MM_LW_DEAN_4",
-    "names": {
-      "en": "Dark Knight of Remorse's Memory (Yellow)",
-      "fr": "Souvenir de Chevalier noir repenti (jaune)"
-    },
-    "type": "job_awake_orb",
-    "icon": "JB_LW_DEAN"
-  },
-  "IT_JB_MM_LW_DEAN_5": {
-    "dataId": "IT_JB_MM_LW_DEAN_5",
-    "names": {
-      "en": "Dark Knight of Remorse's Memory (Red)",
-      "fr": "Souvenir de Chevalier noir repenti (rouge)"
-    },
-    "type": "job_awake_orb",
-    "icon": "JB_LW_DEAN"
+    "type": "stamp",
+    "icon": "IT_STAMP_03"
   }
 }

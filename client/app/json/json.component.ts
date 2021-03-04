@@ -120,30 +120,29 @@ export class JsonComponent implements OnInit {
     });
   }
 
-  async generateIndex() {
-    for (const version of ['GL', 'JP']) {
-      this['loadingIndex' + version] = true;
-      this[version + 'Index'] = {
-        units: []
-      };
-      const units = await this.unitService.getUnits(version);
+  async generateIndex(version) {
+    this[version + 'Index'] = {
+      units: []
+    };
+    const units = await this.unitService.getUnits(version);
 
-      for (const unit of units) {
-        const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
+    this['loadingIndex' + version] = units.length;
 
-        const stats = {};
-        Object.keys(buildedUnit.stats).forEach(statType => {
-          stats[statType] = buildedUnit.stats[statType].total;
-        });
+    for (const unit of units) {
+      const buildedUnit = await this.unitService.selectUnitForBuilder(unit.dataId, null, true, version);
 
-        this[version + 'Index'].units.push({
-          'names': buildedUnit.names,
-          'stats': stats,
-          'image': buildedUnit.image,
-        });
-      }
+      const stats = {};
+      Object.keys(buildedUnit.stats).forEach(statType => {
+        stats[statType] = buildedUnit.stats[statType].total;
+      });
+
+      this[version + 'Index'].units.push({
+        'names': buildedUnit.names,
+        'stats': stats,
+        'image': buildedUnit.image,
+      });
+
+      this['loadingIndex' + version]--;
     }
-
-    this['loadingIndex' + version] = false;
   }
 }

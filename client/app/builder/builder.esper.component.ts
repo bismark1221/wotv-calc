@@ -18,7 +18,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.esper.component.css']
 })
 export class BuilderEsperComponent implements OnInit, AfterViewInit {
-  espers = [];
+  espers = {};
   filteredEspers = {};
   esper;
   searchText = '';

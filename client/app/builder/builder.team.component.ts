@@ -38,7 +38,18 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   selectedUnits = [null, null, null, null, null];
   savedUnits: {};
 
-  team = {};
+  team = {
+    name: '',
+    guild: {
+      statues: {},
+      data: {}
+    },
+    masterRanks: {
+      data: {}
+    },
+    units: [null, null, null, null, null],
+    cost: 0
+  };
   statueNames;
   exportableLink = '';
   confirmModal = null;

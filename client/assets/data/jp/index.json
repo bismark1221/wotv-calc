@@ -3115,7 +3115,7 @@
     },
     {
       "names": {
-        "en": "クレイス"
+        "en": "クレイス - Creysse"
       },
       "stats": {
         "HP": 2102,
@@ -3149,7 +3149,7 @@
     },
     {
       "names": {
-        "en": "ガーブル"
+        "en": "ガーブル - Garvall"
       },
       "stats": {
         "HP": 2668,
@@ -3180,7 +3180,7 @@
     },
     {
       "names": {
-        "en": "エルシレール"
+        "en": "エルシレール - Elsirelle"
       },
       "stats": {
         "HP": 3058,
@@ -3659,6 +3659,41 @@
     },
     {
       "names": {
+        "en": "ディーン - Duane"
+      },
+      "stats": {
+        "HP": 4560,
+        "TP": 141,
+        "AP": 133,
+        "ATK": 550,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 88,
+        "DEX": 235,
+        "AGI": 62,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 15,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 5,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "lapsdean"
+    },
+    {
+      "names": {
         "en": "Fryevia",
         "fr": "Fryevia"
       },
@@ -3688,40 +3723,6 @@
         "INITIAL_AP": 31
       },
       "image": "lapsfrva"
-    },
-    {
-      "names": {
-        "en": "Duane",
-        "fr": "Duane"
-      },
-      "stats": {
-        "HP": 3393,
-        "TP": 134,
-        "AP": 127,
-        "ATK": 454,
-        "DEF": 8,
-        "SPR": 0,
-        "MAG": 67,
-        "DEX": 193,
-        "AGI": 58,
-        "LUCK": 182,
-        "LIGHT_RES": -10,
-        "SLASH_RES": 10,
-        "PIERCE_RES": 15,
-        "STRIKE_RES": -15,
-        "MISSILE_RES": -5,
-        "MAGIC_RES": 5,
-        "CONFUSION_RES": 50,
-        "STOP_RES": 50,
-        "DISABLE_RES": 10,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 17,
-        "DARK_ATK": 15,
-        "DEFENSE_PENETRATION": 20
-      },
-      "image": "lapsdean"
     }
   ]
 }

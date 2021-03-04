@@ -12,7 +12,6 @@ export class JobService {
   private jobs: Job[];
 
   private glExcluJobs = [
-    'JB_LW_DEAN',
   ];
 
   constructor(
