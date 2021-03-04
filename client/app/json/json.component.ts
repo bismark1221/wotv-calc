@@ -37,8 +37,8 @@ export class JsonComponent implements OnInit {
 
   JPRomaji = {};
 
-  loadingIndexGL = false;
-  loadingIndexJP = false;
+  loadingIndexGL = 0;
+  loadingIndexJP = 0;
 
   constructor(
     private jsonService: JsonService,
