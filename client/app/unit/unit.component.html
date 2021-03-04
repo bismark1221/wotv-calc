@@ -230,7 +230,7 @@
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
@@ -240,7 +240,7 @@
             <tr>
               <th class="sub" colspan="6">Armors</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
@@ -405,7 +405,9 @@
               <th class="sub">AGI</th>
               <th class="sub">LUCK</th>
             </tr>
-            <tr *ngFor="let i of [0, 1, 2]" class="jobsStatsLine">
+          </tbody>
+          <tbody *ngFor="let i of [0, 1, 2]">
+            <tr class="jobsStatsLine" *ngIf="jobs[i]">
               <td>
                 <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
               </td>
@@ -418,6 +420,8 @@
               <td>{{ unit.jobsStats[i].AGI }}</td>
               <td>{{ unit.jobsStats[i].LUCK }}</td>
             </tr>
+          </tbody>
+          <tbody>
             <tr class="jobsStatsLine jobsStatsTotal">
               <td>Total</td>
               <td>{{ unit.totalJobsStats.HP }}</td>
@@ -430,7 +434,7 @@
               <td>{{ unit.totalJobsStats.LUCK }}</td>
             </tr>
           </tbody>
-          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0">
+          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats[0]">
             <tr class="jobsStatsLine">
               <td>
                 <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />
@@ -568,7 +572,7 @@
               <th colspan="20" *ngIf="i !== 'ex_buff'">
                 <img class="skilImg" title="skill type" src="{{'assets/skill-type/' + i + '.png'}}" />&nbsp;{{ i | titlecase }}
               </th>
-              <th colspan="20" *ngIf="i === 'ex_buff'">
+              <th colspan="20" *ngIf="i === 'ex_buff' && exJobs[0]">
                 <img class="skilImg" title="skill type" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />&nbsp;EX Buffs
               </th>
             </tr>
@@ -585,7 +589,7 @@
           </tbody>
           <tbody *ngFor="let skill of getSkillsPerType(i)">
             <tr>
-              <td><img class="subJob" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
+              <td><img class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
               <td *ngIf="i === 'counter'">
@@ -1012,7 +1016,7 @@
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <th class="sub" colspan="6">Weapons</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.weapons; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.weapons.length - 1)">&nbsp;-&nbsp;</span></span>
@@ -1022,7 +1026,7 @@
             <tr>
               <th class="sub" colspan="6">Armors</th>
             </tr>
-            <tr>
+            <tr *ngIf="jobs[0]">
               <td colspan="6">
                 <div class="equipmentText" *ngFor="let equip of jobs[0].equipments.armors; let j = index">
                   <span>{{ getEquipementType(equip) }}<span *ngIf="j !== (jobs[0].equipments.armors.length - 1)">&nbsp;-&nbsp;</span></span>
