@@ -137,24 +137,26 @@ export class HomeComponent {
       for (const item of update.items) {
         const dataItem = await this[item.type + 'Service']['get' + item.type[0].toUpperCase() + item.type.slice(1)](item.dataId);
 
-        const formattedItem = {
-          type: item.type,
-          slug: dataItem.slug,
-          name: this.nameService.getName(dataItem),
-          image: dataItem.image,
-          element: dataItem.element,
-          rarity: dataItem.rarity,
-          jobs: []
-        };
+        if (dataItem) {
+          const formattedItem = {
+            type: item.type,
+            slug: dataItem.slug,
+            name: this.nameService.getName(dataItem),
+            image: dataItem.image,
+            element: dataItem.element,
+            rarity: dataItem.rarity,
+            jobs: []
+          };
 
-        if (item.type === 'unit') {
-          for (const jobId of dataItem.jobs) {
-            const job = await this.jobService.getJob(jobId);
-            formattedItem.jobs.push(job);
+          if (item.type === 'unit') {
+            for (const jobId of dataItem.jobs) {
+              const job = await this.jobService.getJob(jobId);
+              formattedItem.jobs.push(job);
+            }
           }
-        }
 
-        this.updatedFormatted[updateIndex].items.push(formattedItem);
+          this.updatedFormatted[updateIndex].items.push(formattedItem);
+        }
       }
     }
   }

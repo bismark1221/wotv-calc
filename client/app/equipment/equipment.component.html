@@ -212,7 +212,7 @@
               <th class="sub" colspan="2">Acquisition</th>
             </tr>
             <tr>
-              <td *ngIf="equipment.acquisition.type === 'tmr'" colspan="2">
+              <td *ngIf="equipment.acquisition.type === 'tmr' && equipment.acquisition.unit" colspan="2">
                  <a [routerLink]="[getRoute('/unit/' + equipment.acquisition.unit.slug)]" [routerLinkActive]="['active']">{{ equipment.acquisition.unit.name }}</a>'s TMR
               </td>
               <td *ngIf="equipment.acquisition.type !== 'tmr'" colspan="2">

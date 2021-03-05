@@ -197,15 +197,19 @@ export class EquipmentComponent implements OnInit {
       this.equipment.jobs = [];
       for (const jobId of this.equipment.equippableJobs) {
         const job = await this.jobService.getJob(jobId);
-        job.name = this.nameService.getName(job);
-        this.equipment.jobs.push(job);
+        if (job) {
+          job.name = this.nameService.getName(job);
+          this.equipment.jobs.push(job);
+        }
       }
 
       this.equipment.units = [];
       for (const unitId of this.equipment.equippableUnits) {
         const unit = await this.getUnit(unitId);
-        unit.name = this.nameService.getName(unit);
-        this.equipment.units.push(unit);
+        if (unit) {
+          unit.name = this.nameService.getName(unit);
+          this.equipment.units.push(unit);
+        }
       }
 
       this.equipment.formattedMaterials = [];

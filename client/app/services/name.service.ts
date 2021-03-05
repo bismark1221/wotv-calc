@@ -9,10 +9,14 @@ export class NameService {
   ) {}
 
   getName(item) {
-    if (!item.names[this.translateService.currentLang]) {
-      return item.names[this.translateService.getDefaultLang()].replace('<br>', ' ');
+    if (item) {
+      if (!item.names[this.translateService.currentLang]) {
+        return item.names[this.translateService.getDefaultLang()].replace('<br>', ' ');
+      } else {
+        return item.names[this.translateService.currentLang].replace('<br>', ' ');
+      }
     } else {
-      return item.names[this.translateService.currentLang].replace('<br>', ' ');
+      return '-';
     }
   }
 }
