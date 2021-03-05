@@ -24,21 +24,23 @@ export class DataService {
 
   public async loadData(type, forcedVersion = null) {
     await this.checkHashService.getLaunchedRequest();
+    const storageName = this.getLocalStorage(type, forcedVersion);
     const cache = await caches.open('wotv-calc');
-    const data = await cache.match('/' + this.getLocalStorage(type, forcedVersion));
+    const data = await cache.match('/' + storageName);
 
     if (data === null || data === undefined) {
-      if (!this.launchedRequests[this.getLocalStorage(type, forcedVersion)]) {
-        this.launchedRequests[this.getLocalStorage(type, forcedVersion)] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
+      if (!this.launchedRequests[storageName]) {
+        this.launchedRequests[storageName] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
           .map(async response => {
-            await cache.put(this.getLocalStorage(type, forcedVersion), new Response(JSON.stringify(response)));
-            this.launchedRequests[this.getLocalStorage(type, forcedVersion)] = null;
+            await cache.put(storageName, new Response(JSON.stringify(response)));
+            this.launchedRequests[storageName] = null;
+
             return response;
           })
           .toPromise();
       }
 
-      return this.launchedRequests[this.getLocalStorage(type, forcedVersion)];
+      return this.launchedRequests[storageName];
     } else {
       return of(JSON.parse(await data.text())).toPromise();
     }

@@ -12,9 +12,6 @@ const readFile = util.promisify(fs.readFile);
 
 console.log('\nRunning post-build tasks');
 
-// our version.json will be in the dist folder
-const versionFilePath = path.join(__dirname + '/../dist/browser/version.json');
-
 let mainHash = '';
 let mainBundleFile = '';
 
@@ -35,26 +32,31 @@ readDir(path.join(__dirname, '../dist/browser/'))
       }
     }
 
-    console.log(`Writing version and hash to ${versionFilePath}`);
-
-    // write current version and hash into the version.json file
-    const src = `{"version": "${appVersion}", "hash": "${mainHash}"}`;
-    return writeFile(versionFilePath, src);
+    return true;
   }).then(() => {
     // main bundle file not found, dev build?
     if (!mainBundleFile) {
       return;
     }
 
-    console.log(`Replacing hash in the ${mainBundleFile}`);
+    console.log(`Replacing hash (${mainHash}) in the ${mainBundleFile} and in version file`);
 
     // replace hash placeholder in our main.js file so the code knows it's current hash
     const mainFilepath = path.join(__dirname, '../dist/browser/', mainBundleFile);
-    return readFile(mainFilepath, 'utf8')
+    readFile(mainFilepath, 'utf8')
       .then(mainFileData => {
         const replacedFile = mainFileData.replace('{{POST_BUILD_ENTERS_HASH_HERE}}', mainHash);
         return writeFile(mainFilepath, replacedFile);
       });
+
+    const versionFilePath = path.join(__dirname + '/../dist/browser/assets/version.json');
+    readFile(versionFilePath, 'utf8')
+      .then(versionFileData => {
+        const replacedFile = versionFileData.replace('{{POST_BUILD_ENTERS_HASH_HERE}}', mainHash);
+        return writeFile(versionFilePath, replacedFile);
+      });
+
+    return true;
   }).catch(err => {
     console.log('Error with post build:', err);
   });

@@ -13,16 +13,32 @@ export class CheckHashService {
   private currentHash = '{{POST_BUILD_ENTERS_HASH_HERE}}';
   private launchedRequest = null;
 
+  private versions = ['jp', 'gl'];
+  private dataTypes = [
+    'cards',
+    'equipments',
+    'espers',
+    'guildTitles',
+    'index',
+    'items',
+    'jobs',
+    'masterRanks',
+    'playerTitles',
+    'quests',
+    'raids',
+    'units'
+  ];
+
   constructor(
     private localStorageService: LocalStorageService,
     private http: HttpClient
   ) {}
 
-  public async initHashCheck(url, frequency = 1000 * 60 * 10) {
-    return await this.checkHash(url);
+  public async initHashCheck(frequency = 1000 * 60 * 10) {
+    return await this.checkHash();
 
     setInterval(async () => {
-      await this.checkHash(url);
+      await this.checkHash();
     }, frequency);
   }
 
@@ -34,23 +50,20 @@ export class CheckHashService {
     }
   }
 
-  private checkHash(url) {
+  private checkHash() {
     if (this.launchedRequest === null) {
-      this.launchedRequest = this.http.get(url + '?t=' + new Date().getTime())
-        .map(response => {
-          // @ts-ignore
-          const hash = response.hash;
+      this.launchedRequest = this.http.get('/assets/version.json?t=' + new Date().getTime())
+        .map(async response => {
+          await this.checkLastDownloadVersion(response);
 
-          this.checkLastDownloadVersion(hash);
-
-          if (this.hasHashChanged(this.currentHash, hash)) {
+          if (this.hasHashChanged(this.currentHash, response)) {
             location.reload();
           }
 
           return true;
         })
-        .catch((err, caught) => {
-          this.checkLastDownloadVersion('error_to_get_version_' + new Date().getDate() + '_' + (new Date().getMonth() + 1));
+        .catch(async (err, caught) => {
+          await this.checkLastDownloadVersion();
           console.error(err, 'Could not get version');
           return of(false);
         })
@@ -60,48 +73,34 @@ export class CheckHashService {
     return this.launchedRequest;
   }
 
-  private hasHashChanged(currentHash, newHash) {
-    if (!newHash) {
+  private hasHashChanged(currentHash, response) {
+    if (!response.hash) {
       return false;
     }
 
-    return currentHash !== newHash;
+    return currentHash !== response.hash;
   }
 
-  private checkLastDownloadVersion(currentHash) {
-    const savedVersion = this.localStorageService.get('dataVersion') ? this.localStorageService.get('dataVersion').toString() : null;
+  private async checkLastDownloadVersion(response = null) {
+    const savedVersion = this.localStorageService.get('dataVersion') ? this.localStorageService.get('dataVersion') : null;
 
-    if (!savedVersion || currentHash !== savedVersion) {
-      this.removeAllData();
-      this.localStorageService.set('dataVersion', currentHash);
+    for (const version of this.versions) {
+      for (const dataType of this.dataTypes) {
+        if (!savedVersion
+          || !savedVersion[version]
+          || !savedVersion[version][dataType]
+          || savedVersion[version][dataType] !== response[version][dataType]
+        ) {
+          const cache = await caches.open('wotv-calc');
+          await cache.delete(this.getLocalStorage(version, dataType));
+        }
+      }
     }
+
+    this.localStorageService.set('dataVersion', response);
   }
 
   private getLocalStorage(version, type) {
-    return version + '_data_' + type;
-  }
-
-  private removeAllData() {
-    const versions = ['jp', 'gl'];
-    const dataTypes = [
-      'cards',
-      'equipements',
-      'espers',
-      'guildTitles',
-      'index',
-      'items',
-      'jobs',
-      'masterRanks',
-      'playerTitles',
-      'quests',
-      'raids',
-      'units'
-    ];
-
-    versions.forEach(version => {
-      dataTypes.forEach(dataType => {
-        this.localStorageService.remove(this.getLocalStorage(version, dataType));
-      });
-    });
+    return '/' + version + '_data_' + type;
   }
 }
