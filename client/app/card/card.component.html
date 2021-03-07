@@ -126,6 +126,10 @@
 
             <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
               <ng-template #tip_damage>
+                <div *ngIf="!buff.classic.elem">
+                  Take unit element
+                </div>
+
                 <div *ngIf="buff.classic.based === 'physic'">
                   {{ (100 + (buff.classic.damage.formula.type === 1 && buff.classic.damage.formula[1] > 0 ? buff.classic.damage.formula[1] : 0)) + '% ATK' }}
                 </div>

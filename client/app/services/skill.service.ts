@@ -1077,7 +1077,8 @@ export class SkillService {
 
     if (skill.damage) {
       if (damage.type) {
-        const elem = skill.elem ? skill.elem : (unit.element ? unit.element : 'neutral');
+        const elem = skill.elem ? skill.elem : (unit.element ? unit.element : 'all');
+
         const image = elem + '_' + damage.type.toLowerCase();
 
         formattedDamage.type.title = elem + ' ' + damage.type.toLowerCase();
