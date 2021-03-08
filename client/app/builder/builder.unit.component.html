@@ -14,7 +14,7 @@
 
   <div class="rarityBlock" *ngFor="let rarity of ['UR', 'MR', 'SR', 'R', 'N']">
     <div class="rarityLine" *ngIf="showList && !loadingBuild && filteredUnits[rarity] && filteredUnits[rarity].length > 0">
-      <img src="assets/rarity/{{rarity}}.png" /><span>{{ rarityTranslate[rarity] }}</span>
+      <img src="assets/rarity/{{rarity}}.png"/><span>{{ rarityTranslate[rarity] }}</span>
     </div>
     <div class="unitBlock" *ngIf="showList && !loadingBuild && filteredUnits[rarity] && filteredUnits[rarity].length > 0">
       <div class="unitLine" *ngFor="let filteredUnit of filteredUnits[rarity]; let j = index">
@@ -50,7 +50,7 @@
               <button class="btn btn-main btn-right" id="max_unit" (click)="maxUnit()">Max unit</button>
             </div>
             <div class="cardIcons">
-              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
+              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" (click)="showSim = !showSim;" />
               <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}"  />
             </div>
             <div>
@@ -942,6 +942,91 @@
               <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
             </tr>
           </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="damageSimBlock" *ngIf="showSim">
+      <div class="damageSimTitle">
+        <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim" [attr.aria-expanded]="!isCollapsedDamageSim">
+          Damage Simulator
+          <i class="fas fa-chevron-up" *ngIf="!isCollapsedDamageSim" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" *ngIf="isCollapsedDamageSim" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="damageSimSubBlock" [ngbCollapse]="isCollapsedDamageSim">
+        <table>
+          <tr>
+            <td>
+              Unit
+
+              Active Skills
+              <ng-select
+                placeholder="Select a skill"
+                class="select-support select-left-builder"
+                [items]="unit.skillsForSim"
+                [clearable]="false"
+                [searchable]="false"
+                [(ngModel)]="damageSim.unit.selectedSkill"
+                (ngModelChange)="calculateDamageSim()">
+
+                <ng-template ng-label-tmp let-item="item">
+                  {{ damageSim.unit.selectedSkill ? damageSim.unit.selectedSkill.name : "Select a skill" }}
+                </ng-template>
+
+                <ng-template ng-option-tmp let-item="item">
+                  {{ item.name }}
+                </ng-template>
+              </ng-select>
+
+              Brave : <input [(ngModel)]="damageSim.unit.brave" type="number" />
+
+              Faith : <input [(ngModel)]="damageSim.unit.faith" type="number" />
+
+              External Buffs :
+              ATK  <input [(ngModel)]="damageSim.unit.buffs.atk" type="number" />
+              MAG  <input [(ngModel)]="damageSim.unit.buffs.mag" type="number" />
+              DEX <input [(ngModel)]="damageSim.unit.buffs.dex" type="number" />
+              LUCK <input [(ngModel)]="damageSim.unit.buffs.luck" type="number" />
+              Race Killer <input [(ngModel)]="damageSim.unit.buffs.raceKiller" type="number" />
+              Element Killer <input [(ngModel)]="damageSim.unit.buffs.elementKiller" type="number" />
+              Element ATK <input [(ngModel)]="damageSim.unit.buffs.elementAtk" type="number" />
+              Damage Type <input [(ngModel)]="damageSim.unit.buffs.damageType" type="number" />
+              def pene <input [(ngModel)]="damageSim.unit.buffs.criticDamage" type="number" />
+              spririt pene <input [(ngModel)]="damageSim.unit.buffs.defPene" type="number" />
+              damage type res pene <input [(ngModel)]="damageSim.unit.buffs.typeResPene" type="number" />
+              Critical hit damage <input [(ngModel)]="damageSim.unit.buffs.spiritPene" type="number" />
+
+              Chain :
+              Element <input [(ngModel)]="damageSim.unit.chain.element" type="number" />
+              Type <input [(ngModel)]="damageSim.unit.chain.type" type="number" />
+
+            </td>
+            <td>
+              Target
+
+              Race : <input [(ngModel)]="damageSim.target.race" type="number" />
+
+              Element : <input [(ngModel)]="damageSim.target.element" type="number" />
+
+              DEF : <input [(ngModel)]="damageSim.target.def" type="number" />
+
+              SPR : <input [(ngModel)]="damageSim.target.spr" type="number" />
+
+              Element Resitance : <input [(ngModel)]="damageSim.target.elementRes" type="number" />
+
+              Damage Type Res : <input [(ngModel)]="damageSim.target.damageTypeRes" type="number" />
+
+              AOE Res : <input [(ngModel)]="damageSim.target.singleRes" type="number" />
+
+              ST Res : <input [(ngModel)]="damageSim.target.aoeRes" type="number" />
+
+              Faith <input [(ngModel)]="damageSim.target.faith" type="number" />
+            </td>
+            <td>
+              Damage : {{ damageSim.result }}
+            </td>
+          </tr>
         </table>
       </div>
     </div>

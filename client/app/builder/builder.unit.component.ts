@@ -48,6 +48,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   isCollapsedMainJob = true;
   isCollapsedSubJob = true;
   isCollapsedOther = true;
+  isCollapsedDamageSim = true;
 
   statsType = ['HP', 'TP', 'AP', 'ATK', 'DEF', 'MAG', 'SPR', 'AGI', 'DEX', 'LUCK', 'MOVE', 'JUMP'];
   statsFrom = [
@@ -120,6 +121,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     'strike_atk',
     'strike_res',
   ];
+
+  showSim = false;
+  damageSim = null;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -278,18 +282,22 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           this.unit.board.nodes[nodeId].skill.name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
         }
       });
+      this.updateActiveSkillsForSim();
     } else {
       this.unit = null;
       this.searchText = '';
       this.updateFilteredUnits();
       this.showList = true;
     }
+
+    this.newDamageSim();
   }
 
   changeStar(value) {
     this.unit.star = value;
     this.unitService.changeStar();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   changeLB(value) {
@@ -303,6 +311,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.updateSelectedEquipments();
     this.changeLevel();
+    this.updateActiveSkillsForSim();
   }
 
   updateSelectedEquipments() {
@@ -328,21 +337,25 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   changeLevel() {
     this.unitService.changeLevel();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   updateJobLevel(jobNumber) {
     this.unitService.changeJobLevel();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   rightClickNode(node) {
     this.unitService.rightClickNode(node);
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   clickNode(node) {
     this.unitService.clickNode(node);
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   canActivateNode(node) {
@@ -356,11 +369,13 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   maxUnit() {
     this.unitService.maxUnit();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   maxLevelAndJobs() {
     this.unitService.maxLevelAndJobs();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   showGuildDetail() {
@@ -509,20 +524,24 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   updateLimitLevel(level) {
     this.unit.limit.level = level;
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   selectSubJob(jobNum) {
     this.unit.subjob = jobNum;
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   updateSupportSkill() {
     this.unitService.changeLevel();
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   updateCounterSkill() {
     this.unitService.getActiveSkills();
+    this.updateActiveSkillsForSim();
   }
 
   updateEsperResonance() {
@@ -546,6 +565,79 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     return skills;
+  }
+
+  updateActiveSkillsForSim() {
+    const skills = [];
+
+    this.unit.activeSkills.forEach(skill => {
+      if (skill.damage) {
+        skills.push(skill);
+      }
+    });
+
+    // Add LB + VC + Equipment
+
+    this.unit.skillsForSim = skills;
+
+    if (this.damageSim && this.damageSim.unit.selectedSkill) {
+      let oldSelectedSkillFound = false;
+      skills.forEach(skill => {
+        if (skill.dataId === this.damageSim.unit.selectedSkill.dataId) {
+          oldSelectedSkillFound = true;
+        }
+      });
+
+      if (!oldSelectedSkillFound) {
+        this.damageSim.unit.selectedSkill = null;
+      }
+    }
+
+    this.calculateDamageSim();
+  }
+
+  newDamageSim() {
+    this.damageSim = {
+      unit: {
+        selectedSkill: null,
+        brave: 0,
+        faith: 0,
+        buffs: {
+          atk: 0,
+          mag: 0,
+          dex: 0,
+          luck: 0,
+          raceKiller: 0,
+          elementKiller: 0,
+          elementAtk: 0,
+          damageType: 0,
+          criticDamage: 0,
+          defPene: 0,
+          typeResPene: 0,
+          spiritPene: 0
+        },
+        chain: {
+          element: 0,
+          type: 0
+        }
+      },
+      target: {
+        race: 'human',
+        element: 'light',
+        def: 0,
+        spr: 0,
+        elementRes: 0,
+        damageTypeRes: 0,
+        singleRes: 0,
+        aoeRes: 0,
+        faith: 0
+      },
+      result: 0
+    };
+  }
+
+  calculateDamageSim() {
+
   }
 
   resetUnit() {
