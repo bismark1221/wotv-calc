@@ -4141,7 +4141,7 @@
             "rate": 100,
             "names": {
               "en": "DEF Piercing Rate 1-100 Up (Base)",
-              "fr": "Perforation de la DEF ↑ 1-100 (Base)"
+              "fr": "Taux de perforation de la DEF ↑ 1-100 (Base)"
             },
             "target": "self",
             "maxLevel": 80,
@@ -4533,7 +4533,7 @@
             "rate": 100,
             "names": {
               "en": "Slash Res Debuff Res 1-100 Up",
-              "fr": "Rés malus att tranchantes ↑ 1 - 100"
+              "fr": "Rés malus à la Rés att tranchantes ↑ 1 - 100"
             },
             "target": "self",
             "maxLevel": 100,
@@ -4553,7 +4553,7 @@
             "rate": 100,
             "names": {
               "en": "All Elemental Res Debuff Res 1-100 Up",
-              "fr": "Rés malus tous éléments ↑ 1 - 100"
+              "fr": "Rés malus à la Rés tous éléments ↑ 1 - 100"
             },
             "target": "self",
             "maxLevel": 100,
@@ -4986,5 +4986,834 @@
       "cards": []
     },
     "slug": "siren"
+  },
+  "RAID_GL_09": {
+    "dataId": "RAID_GL_09",
+    "names": {
+      "en": "Golem",
+      "fr": "Golem"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_GLEM_RAID",
+        "names": {
+          "en": "Golem",
+          "fr": "Golem"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 150,
+            "max": 645
+          },
+          "DEF": {
+            "min": 30,
+            "max": 30
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 150,
+            "max": 645
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 28,
+            "max": 80
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "LIGHTNING_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "PIERCE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 35,
+            "max": 35
+          },
+          "MAGIC_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {},
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "netherBeast",
+        "element": "earth",
+        "image": "lapsglem",
+        "skills": {
+          "SK_GLEM_M_01_R": {
+            "effects": [],
+            "dataId": "SK_GLEM_M_01_R",
+            "rate": 100,
+            "names": {
+              "en": "Stone",
+              "fr": "Terre"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 20,
+            "maxLevel": 99,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 0,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "earth"
+            ],
+            "minLevel": 1
+          },
+          "SK_GLEM_M_02_R": {
+            "effects": [],
+            "dataId": "SK_GLEM_M_02_R",
+            "rate": 100,
+            "names": {
+              "en": "Stonega",
+              "fr": "Terre X"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 10,
+            "maxLevel": 99,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "earth"
+            ],
+            "minLevel": 1
+          },
+          "SK_GLEM_M_03_R": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 1,
+                "target": "self"
+              },
+              {
+                "type": "SPR",
+                "minValue": 1,
+                "maxValue": 20,
+                "calcType": "fixe",
+                "turn": 1,
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_GLEM_M_03_R",
+            "rate": 100,
+            "names": {
+              "en": "Earthen Wall",
+              "fr": "Mur terrestre"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 12
+            },
+            "count": 8,
+            "maxLevel": 99,
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_GLEM_M_04_R": {
+            "effects": [],
+            "dataId": "SK_GLEM_M_04_R",
+            "rate": 100,
+            "names": {
+              "en": "Fragmental Rock",
+              "fr": "Rocher à fragmentation"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 38
+            },
+            "count": 8,
+            "maxLevel": 99,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 100,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "earth"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 99,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 99,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 99,
+            "minLevel": 1
+          }
+        },
+        "slug": "golem",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_GLEM_ATK_R",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_TNBR_RAID2",
+        "names": {
+          "en": "Tonberry",
+          "fr": "Tomberry"
+        },
+        "stats": {
+          "HP": {
+            "min": 5000,
+            "max": 100000
+          },
+          "TP": {
+            "min": 40,
+            "max": 73
+          },
+          "AP": {
+            "min": 48,
+            "max": 75
+          },
+          "ATK": {
+            "min": 430,
+            "max": 450
+          },
+          "DEF": {
+            "min": 30,
+            "max": 30
+          },
+          "SPR": {
+            "min": 30,
+            "max": 30
+          },
+          "MAG": {
+            "min": 300,
+            "max": 350
+          },
+          "DEX": {
+            "min": 130,
+            "max": 241
+          },
+          "AGI": {
+            "min": 55,
+            "max": 82
+          },
+          "LUCK": {
+            "min": 130,
+            "max": 222
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "PIERCE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "STRIKE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MISSILE_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "MAGIC_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {},
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 1,
+            "max": 1
+          },
+          "JUMP": {
+            "min": 2,
+            "max": 2
+          },
+          "MAX_LV": {}
+        },
+        "species": "human",
+        "element": "ice",
+        "image": "lapstnbr",
+        "skills": {
+          "SK_TNBR_M_01": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_01",
+            "rate": 100,
+            "names": {
+              "en": "Knife",
+              "fr": "Couteau"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_02": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_02",
+            "rate": 50,
+            "names": {
+              "en": "Grudge Knife",
+              "fr": "Couteau de la rancune"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "damage": {
+              "minValue": 150,
+              "maxValue": 180,
+              "type": "pierce",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_TNBR_M_03": {
+            "effects": [
+              {
+                "type": "STOP_ATK",
+                "calcType": "percent",
+                "rate": 30,
+                "turn": 30,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_TNBR_M_03",
+            "rate": 100,
+            "names": {
+              "en": "Deep-Seated Grudge",
+              "fr": "Profonde rancune"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 10,
+              "w": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 50,
+              "maxValue": 80,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "fire"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_TNBR_M_04_R": {
+            "effects": [],
+            "dataId": "SK_TNBR_M_04_R",
+            "rate": 30,
+            "names": {
+              "en": "Everyone's Grudge",
+              "fr": "Rancune commune"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 45
+            },
+            "count": 2,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "hit": 100,
+            "maths": [
+              {
+                "type": "DEAD_UNITS",
+                "formula": "FIX",
+                "condition": 4,
+                "value": 2000,
+                "dst": "DAMAGE"
+              }
+            ],
+            "minLevel": 4
+          }
+        },
+        "slug": "tonberry",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_TNBR_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_RARD",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_GABL",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_ELSR",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_HWLT",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ORDR",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ZIZA",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ELDE",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_DRIO",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_MRLK",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
+    "slug": "golem"
   }
 }

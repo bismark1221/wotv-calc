@@ -2893,40 +2893,34 @@
     "dataId": "QE_ST_01010103",
     "items": {
       "IT_JB_MM_ALL": {
-        "drop": 33.3723331894368
+        "drop": 40.82018702516141
       },
       "IT_JB_MM_PLD": {
-        "drop": 11.890430664062501
+        "drop": 11.845417091212454
       },
       "IT_JB_JSWORD_01": {
-        "drop": 48.41534493706241
+        "drop": 64.09971020508333
       },
       "IT_AF_MAT_HEART_01": {
-        "drop": 42.5731259690625
+        "drop": 43.55059262943084
       },
       "IT_AF_MAT_LIQUID_01": {
-        "drop": 42.5731259690625
+        "drop": 43.55059262943084
       },
       "IT_JB_IM_ANGEL_1": {
-        "drop": 18.46273024
+        "drop": 18.395030750407628
       },
       "IT_JB_STAFF_01": {
-        "drop": 48.41534493706241
+        "drop": 64.09971020508333
       },
       "IT_JB_MM_WHM": {
-        "drop": 11.890430664062501
+        "drop": 11.845417091212454
       },
       "IT_JB_EM_WIND_1": {
-        "drop": 67.232
+        "drop": 67.06848735085845
       },
       "IT_JB_MM_LW_LSWL": {
-        "drop": 11.890430664062501
-      },
-      "IT_JB_GLOVE_01": {
-        "drop": 48.41534493706241
-      },
-      "IT_JB_MM_PSI": {
-        "drop": 11.890430664062501
+        "drop": 11.845417091212454
       },
       "": {
         "drop": 0
@@ -25509,6 +25503,741 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_ST_01120301": {
+    "dataId": "QE_ST_01120301",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_WAR_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_WAR_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_WHM_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_WHM_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_GUN_002": {
+        "drop": 13.150134660302884
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_JB_SWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SPEAR_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_SPEAR_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_THUNDER_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_THUNDER_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:3:1 The Magic Armor",
+      "fr": "1:12:3:1 L'armure magique"
+    },
+    "exp": 8646,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120302": {
+    "dataId": "QE_ST_01120302",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_PLD_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_PLD_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_BLM_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_BLM_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_LW_GLMS_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_LW_GLMS_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_LW_ROD_004": {
+        "drop": 13.405824919795325
+      },
+      "IT_JB_JSWORD_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_JSWORD_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_STAFF_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_STAFF_04": {
+        "drop": 46.94920001455172
+      },
+      "": {
+        "drop": 99.88380968846128
+      },
+      "IT_JB_EM_WATER_3": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_EM_WATER_4": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.947151451917076
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 11.947151451917076
+      }
+    },
+    "names": {
+      "en": "1:12:3:2 To the Encampment I",
+      "fr": "1:12:3:2 Direction le camp I"
+    },
+    "exp": 8690,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 11,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120303": {
+    "dataId": "QE_ST_01120303",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_KNT_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_KNT_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_TIM_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_TIM_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_LW_STRN_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_LW_STRN_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_MAC_002": {
+        "drop": 13.150134660302884
+      },
+      "IT_JB_LSWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_LSWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_BOW_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_BOW_04": {
+        "drop": 46.138488590510036
+      },
+      "": {
+        "drop": 99.5632166479548
+      },
+      "IT_JB_EM_SHINE_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_SHINE_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:3:3 To the Encampment II",
+      "fr": "1:12:3:3 Direction le camp II"
+    },
+    "exp": 8690,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120304": {
+    "dataId": "QE_ST_01120304",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_SWN_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_SWN_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_GRM_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_GRM_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MSW_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_MSW_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_LW_ARM_003": {
+        "drop": 13.90671517846203
+      },
+      "IT_JB_SSWORD_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_SSWORD_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_GUN_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_GUN_04": {
+        "drop": 45.38593563150501
+      },
+      "": {
+        "drop": 98.5552523910249
+      },
+      "IT_JB_EM_DARK_3": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_DARK_4": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 10.703602446155013
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 10.703602446155013
+      }
+    },
+    "names": {
+      "en": "1:12:3:4 To the Encampment III",
+      "fr": "1:12:3:4 Direction le camp III"
+    },
+    "exp": 9184,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120305": {
+    "dataId": "QE_ST_01120305",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_SAM_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_SAM_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MST_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MST_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_LW_GRSR_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_LW_GRSR_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_HAT_003": {
+        "drop": 13.150134660302884
+      },
+      "IT_JB_KUNAI_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_KUNAI_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_STAFF_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_STAFF_04": {
+        "drop": 46.138488590510036
+      },
+      "": {
+        "drop": 99.5632166479548
+      },
+      "IT_JB_EM_SOIL_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_SOIL_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:3:5 Flesh and Blood",
+      "fr": "1:12:3:5 De chair et de sang"
+    },
+    "exp": 9771,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120306": {
+    "dataId": "QE_ST_01120306",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 23.62348156293901
+      },
+      "IT_JB_MM_NIN_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_NIN_4": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_CLR_3": {
+        "drop": 2.667825782455684
+      },
+      "IT_JB_MM_CLR_4": {
+        "drop": 2.667825782455684
+      },
+      "": {
+        "drop": 98.67548361330152
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 41.59391110288843
+      },
+      "IT_AF_LW_CLT_003": {
+        "drop": 13.90671517846203
+      },
+      "IT_JB_SWORD_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_SWORD_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_JSWORD_03": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_JSWORD_04": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_ICE_3": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_EM_ICE_4": {
+        "drop": 45.38593563150501
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 10.703602446155013
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 10.703602446155013
+      }
+    },
+    "names": {
+      "en": "1:12:3:6 Signs of Destruction",
+      "fr": "1:12:3:6 Présage de destruction"
+    },
+    "exp": 9771,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 9,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120307": {
+    "dataId": "QE_ST_01120307",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.478479419027675
+      },
+      "IT_JB_MM_THI_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_THI_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_CAL_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_CAL_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_PSI_3": {
+        "drop": 2.8231085014541506
+      },
+      "IT_JB_MM_PSI_4": {
+        "drop": 2.8231085014541506
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 44.10014421346877
+      },
+      "IT_AF_LW_HLM_003": {
+        "drop": 13.405824919795325
+      },
+      "IT_AF_LW_GLO_002": {
+        "drop": 13.405824919795325
+      },
+      "IT_JB_SSWORD_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_SSWORD_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_SPEAR_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_SPEAR_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_GLOVE_03": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_GLOVE_04": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_EM_WIND_3": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_EM_WIND_4": {
+        "drop": 46.94920001455172
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.947151451917076
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 11.947151451917076
+      },
+      "": {
+        "drop": 98.8565517323156
+      }
+    },
+    "names": {
+      "en": "1:12:3:7 Vallaide!",
+      "fr": "1:12:3:7 Valaïde !"
+    },
+    "exp": 9793,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 11,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120308": {
+    "dataId": "QE_ST_01120308",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 24.334814699687996
+      },
+      "IT_JB_MM_ASS_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_ASS_4": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MMC_3": {
+        "drop": 2.7649821375493095
+      },
+      "IT_JB_MM_MMC_4": {
+        "drop": 2.7649821375493095
+      },
+      "": {
+        "drop": 99.60354967907406
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 43.203956244797
+      },
+      "IT_AF_LW_RNG_003": {
+        "drop": 13.150134660302884
+      },
+      "IT_JB_LSWORD_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_LSWORD_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_AXE_03": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_AXE_04": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_FIRE_3": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_EM_FIRE_4": {
+        "drop": 46.138488590510036
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 11.819807415578076
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 11.819807415578076
+      }
+    },
+    "names": {
+      "en": "1:12:3:8 Infiltrating the Dungeon",
+      "fr": "1:12:3:8 Infiltration du donjon"
+    },
+    "exp": 9816,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120309": {
+    "dataId": "QE_ST_01120309",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 23.5439613290446
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 23.5439613290446
+      },
+      "IT_JB_MM_LAN_3": {
+        "drop": 2.6097084192432694
+      },
+      "IT_JB_MM_LAN_4": {
+        "drop": 2.6097084192432694
+      },
+      "IT_JB_MM_RDM_3": {
+        "drop": 2.6097084192432694
+      },
+      "IT_JB_MM_RDM_4": {
+        "drop": 2.6097084192432694
+      },
+      "IT_JB_MM_LW_SAKR_3": {
+        "drop": 2.6097084192432694
+      },
+      "IT_JB_MM_LW_SAKR_4": {
+        "drop": 2.6097084192432694
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 41.589235969524076
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 41.589235969524076
+      },
+      "IT_AF_LW_SWO_002": {
+        "drop": 13.876349178096397
+      },
+      "": {
+        "drop": 96.06840296561599
+      },
+      "IT_JB_FIST_03": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_FIST_04": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_GUN_03": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_GUN_04": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_EM_THUNDER_3": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_EM_THUNDER_4": {
+        "drop": 42.82703388635223
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 10.66630047881588
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 10.66630047881588
+      }
+    },
+    "names": {
+      "en": "1:12:3:9 Imprisoned Hope",
+      "fr": "1:12:3:9 Espoirs captifs"
+    },
+    "exp": 9816,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 8,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01120310": {
+    "dataId": "QE_ST_01120310",
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 30.990729521547948
+      },
+      "IT_JB_MM_ALL_4": {
+        "drop": 30.990729521547948
+      },
+      "IT_JB_MM_DRG_3": {
+        "drop": 3.5801499012264792
+      },
+      "IT_JB_MM_DRG_4": {
+        "drop": 3.5801499012264792
+      },
+      "IT_JB_MM_MGK_3": {
+        "drop": 3.5801499012264792
+      },
+      "IT_JB_MM_MGK_4": {
+        "drop": 3.5801499012264792
+      },
+      "": {
+        "drop": 96.36893139529049
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 52.516855300372725
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 52.516855300372725
+      },
+      "IT_AF_LW_BSW_002": {
+        "drop": 18.63185404366162
+      },
+      "IT_JB_MACE_03": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_MACE_04": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_BOW_03": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_BOW_04": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_EM_WATER_3": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_EM_WATER_4": {
+        "drop": 53.912367951271364
+      },
+      "IT_JB_IM_DRAGON_3": {
+        "drop": 14.412088722119126
+      },
+      "IT_JB_IM_DRAGON_4": {
+        "drop": 14.412088722119126
+      }
+    },
+    "names": {
+      "en": "1:12:3:10 Paths of Two Friends",
+      "fr": "1:12:3:10 Main dans la main"
+    },
+    "exp": 10455,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 11,
+    "gils": 1500,
+    "chests": 2
+  },
   "QE_HA_LW_ZZAN": {
     "dataId": "QE_HA_LW_ZZAN",
     "items": {
@@ -38518,6 +39247,122 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_EV_WW_MB1": {
+    "dataId": "QE_EV_WW_MB1",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 70.6
+      },
+      "IT_TICKET_STORY": {
+        "drop": 100
+      },
+      "IT_GL_TICKET_EVENT": {
+        "drop": 100
+      },
+      "IT_US_EXP_03": {
+        "drop": 100
+      }
+    },
+    "names": {
+      "en": "Sprouts of Devouring Ep. 1 — Warriors Who Bear the Light",
+      "fr": "Érosion naissante, ép. 1 - Guerriers de la Lumière"
+    },
+    "exp": 972,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 6,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_WW_MB_EX1": {
+    "dataId": "QE_EV_WW_MB_EX1",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 7.72553055720799
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 24.7998846516025
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 91.6390913203407
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 27.197110251315348
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 29.821158981626215
+      },
+      "IT_AF_EXP_02": {
+        "drop": 88.06001706600497
+      },
+      "IT_AF_EXP_03": {
+        "drop": 83.222784
+      },
+      "": {
+        "drop": 78.07779644515671
+      }
+    },
+    "names": {
+      "en": "Sprouts of Devouring — EXVIUS UNIVERSE EX1",
+      "fr": "Érosion naissante - EXVIUS UNIVERSE [EX 1]"
+    },
+    "exp": 5623,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 9,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_WWMBEX1": {
+    "dataId": "QE_MU_EV_WWMBEX1",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 7.72553055720799,
+        "host": 2
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 24.7998846516025,
+        "host": 8
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 91.6390913203407,
+        "host": 72
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 27.197110251315348,
+        "host": 8
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 29.821158981626215,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 88.06001706600497
+      },
+      "IT_AF_EXP_03": {
+        "drop": 83.222784
+      },
+      "": {
+        "drop": 78.07779644515671
+      }
+    },
+    "names": {
+      "en": "Multi: [Multi] Sprouts of Devouring — EXVIUS UNIVERSE EX1",
+      "fr": "Multi: [Multi] Érosion naissante - EXVIUS UNIVERSE [EX 1]"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 9,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_MU_EV_CR_EX1": {
     "dataId": "QE_MU_EV_CR_EX1",
     "items": {
@@ -49412,6 +50257,90 @@
     "nrg": 1,
     "jp": 0,
     "enemies": 5,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_01": {
+    "dataId": "QE_RAID_EV_14_01",
+    "items": {},
+    "names": {
+      "en": "Golem Raid",
+      "fr": "Raid de Golem"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 5,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_02": {
+    "dataId": "QE_RAID_EV_14_02",
+    "items": {},
+    "names": {
+      "en": "Golem Raid",
+      "fr": "Raid de Golem"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 5,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_03": {
+    "dataId": "QE_RAID_EV_14_03",
+    "items": {},
+    "names": {
+      "en": "Golem Raid",
+      "fr": "Raid de Golem"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 5,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_04": {
+    "dataId": "QE_RAID_EV_14_04",
+    "items": {},
+    "names": {
+      "en": "Tonberry Raid",
+      "fr": "Raid de Tomberry"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 3,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_05": {
+    "dataId": "QE_RAID_EV_14_05",
+    "items": {},
+    "names": {
+      "en": "Tonberry Raid",
+      "fr": "Raid de Tomberry"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 3,
+    "gils": 0,
+    "chests": 0
+  },
+  "QE_RAID_EV_14_06": {
+    "dataId": "QE_RAID_EV_14_06",
+    "items": {},
+    "names": {
+      "en": "Tonberry Raid",
+      "fr": "Raid de Tomberry"
+    },
+    "exp": 0,
+    "nrg": 1,
+    "jp": 0,
+    "enemies": 3,
     "gils": 0,
     "chests": 0
   },

@@ -10018,6 +10018,217 @@
       }
     ]
   },
+  "VC_LW_GREEN": {
+    "dataId": "VC_LW_GREEN",
+    "names": {
+      "en": "Celebrating Crossed Paths",
+      "fr": "Rencontre inoubliable"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 34,
+        "max": 264
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 16,
+        "max": 62
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 16,
+        "max": 62
+      },
+      "DEX": {
+        "min": 8,
+        "max": 30
+      },
+      "AGI": {},
+      "LUCK": {
+        "min": 4,
+        "max": 15
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsgreen",
+    "slug": "celebrating-crossed-paths",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_ATK",
+              "minValue": 2,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_GS",
+            "fr": "SK_VC_LW_GREEN_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_ATK",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_GS_AW",
+            "fr": "SK_VC_LW_GREEN_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ALL_ELEMENTS_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_GSMAX",
+            "fr": "SK_VC_LW_GREEN_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        }
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_P",
+            "fr": "SK_VC_LW_GREEN_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_PAW",
+            "fr": "SK_VC_LW_GREEN_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ACQUIRED_JP",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_GREEN_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_GREEN_PMAX",
+            "fr": "SK_VC_LW_GREEN_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": []
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {

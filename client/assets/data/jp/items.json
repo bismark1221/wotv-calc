@@ -6437,6 +6437,20 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_KRKN_R2": {
+    "dataId": "IT_SB_AW_KRKN_R2",
+    "names": {
+      "en": "クラーケンの獣醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_KRKN_R3": {
+    "dataId": "IT_SB_AW_KRKN_R3",
+    "names": {
+      "en": "クラーケンの獣醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_SB_AW_SR": {
     "dataId": "IT_SB_AW_SR",
     "names": {
@@ -7750,7 +7764,7 @@
   "IT_AF_LW_ARW_001": {
     "dataId": "IT_AF_LW_ARW_001",
     "names": {
-      "en": "守りの腕輪のクラフトレシピ"
+      "en": "守りの腕輪のクラフトレシピ - Defense Bracer Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_ARW_001"
@@ -7858,6 +7872,14 @@
     },
     "type": "recipe",
     "icon": "AF_LW_ACC_039"
+  },
+  "IT_AF_LW_HAT_017": {
+    "dataId": "IT_AF_LW_HAT_017",
+    "names": {
+      "en": "手乗りホワイトマシュマロのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_HAT_017"
   },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
@@ -8079,7 +8101,7 @@
   "IT_EC_RAID_10": {
     "dataId": "IT_EC_RAID_10",
     "names": {
-      "en": "【10月】レイドメダル"
+      "en": "【10月】レイドメダル - March Raid Medal"
     },
     "type": "medal"
   },
@@ -8110,6 +8132,14 @@
       "en": "バレンタインレイドメダル"
     },
     "type": "medal"
+  },
+  "IT_EC_RAID_15": {
+    "dataId": "IT_EC_RAID_15",
+    "names": {
+      "en": "ホワイトデーレイドメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_03"
   },
   "IT_EC_RAID_FF14": {
     "dataId": "IT_EC_RAID_FF14",
@@ -9502,6 +9532,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_SB_EXP_10": {
+    "dataId": "IT_US_SE_SB_EXP_10",
+    "names": {
+      "en": "属性の魔石（極）×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_G_U_UR_01": {
     "dataId": "IT_US_G_U_UR_01",
     "names": {
@@ -10286,6 +10324,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_35": {
+    "dataId": "IT_US_SE_PI_35",
+    "names": {
+      "en": "【ホワイトデー記念】男性ユニット欠片×40選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -10942,6 +10988,22 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_14": {
+    "dataId": "IT_US_SE_JB_05_14",
+    "names": {
+      "en": "【ホワイトデー記念】スピネル×60選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_15": {
+    "dataId": "IT_US_SE_JB_04_15",
+    "names": {
+      "en": "【ホワイトデー記念】シトリン×60選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -10962,6 +11024,14 @@
     "dataId": "IT_US_SE_JBEX_EM_03",
     "names": {
       "en": "輝石像×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_EM_04": {
+    "dataId": "IT_US_SE_JBEX_EM_04",
+    "names": {
+      "en": "輝石像×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11034,6 +11104,14 @@
     "dataId": "IT_US_SE_JBEX_AF_09",
     "names": {
       "en": "【GL版もうすぐ1周年】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_10": {
+    "dataId": "IT_US_SE_JBEX_AF_10",
+    "names": {
+      "en": "【ホワイトデー記念】焦印石×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11473,6 +11551,13 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_DEAN": {
+    "dataId": "IT_VPI_LW_DEAN",
+    "names": {
+      "en": "抗えぬ闇の欠片 - \"Irresistible Darkness\" Vision Card Shard"
+    },
+    "type": "vc_shard"
+  },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
     "names": {
@@ -11750,6 +11835,13 @@
     "dataId": "IT_VPI_LW_CORL",
     "names": {
       "en": "災厄魔豹　クアールの欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_KRKN": {
+    "dataId": "IT_VPI_LW_KRKN",
+    "names": {
+      "en": "深淵海魔　クラーケンの欠片"
     },
     "type": "vc_shard"
   },

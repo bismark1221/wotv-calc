@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 
@@ -43,7 +44,8 @@ export class EsperService {
       'UN_LW_S_TNBR',
       'UN_LW_S_GCAL',
       'UN_LW_S_MRLT',
-      'UN_LW_S_CORL'
+      'UN_LW_S_CORL',
+      'UN_LW_S_KRKN'
     ],
     UR: [
       'UN_LW_S_IFRT',

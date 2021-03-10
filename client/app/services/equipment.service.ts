@@ -78,6 +78,7 @@ export class EquipmentService {
     'AF_LW_CLT_016': 'RAID',
     'AF_LW_ARM_028': 'RAID',
     'AF_LW_ACC_036': 'RAID',
+    'AF_LW_HAT_017': 'RAID',
 
     'AF_LW_BSW_011': 'TOWER',
     'AF_FFT_SWO_002': 'TOWER',
@@ -105,6 +106,7 @@ export class EquipmentService {
     'AF_NIER_SPE_000': 'COLLABORATION',
     'AF_NIER_ACCE_000': 'COLLABORATION',
     'AF_FF1_SWO_000': 'COLLABORATION',
+    'AF_LW_ACC_040': 'COLLABORATION',
 
     'AF_LW_CLT_004': 'RECURRENT',
     'AF_LW_BSW_004': 'RECURRENT',

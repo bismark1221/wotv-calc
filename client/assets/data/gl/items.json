@@ -99,7 +99,7 @@
     "dataId": "IT_US_MAIDENKISS",
     "names": {
       "en": "Maiden's Kiss",
-      "fr": "Baiser de vierge"
+      "fr": "Baiser de jouvencelle"
     },
     "type": "usable_item"
   },
@@ -6954,6 +6954,15 @@
     "type": "recipe",
     "icon": "AF_LW_BOW_012"
   },
+  "IT_AF_LW_ARW_001": {
+    "dataId": "IT_AF_LW_ARW_001",
+    "names": {
+      "en": "Defense Bracer Crafting Recipe",
+      "fr": "Recette d'artisanat : Brassard de protection"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ARW_001"
+  },
   "IT_AF_LW_GLO_001": {
     "dataId": "IT_AF_LW_GLO_001",
     "names": {
@@ -6980,6 +6989,15 @@
     },
     "type": "recipe",
     "icon": "AF_LW_GLO_003"
+  },
+  "IT_AF_LW_ACC_040": {
+    "dataId": "IT_AF_LW_ACC_040",
+    "names": {
+      "en": "Emblem of Devouring Crafting Recipe",
+      "fr": "Recette d'artisanat : Emblème de l'érosion"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ACC_040"
   },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
@@ -7365,6 +7383,15 @@
     "names": {
       "en": "Global Festival Medal A",
       "fr": "Médaille A festive"
+    },
+    "type": "medal",
+    "icon": "IT_EC_MEDAL_GF_A"
+  },
+  "IT_EC_MEDAL_GF_B": {
+    "dataId": "IT_EC_MEDAL_GF_B",
+    "names": {
+      "en": "Global Festival Medal B",
+      "fr": "Médaille festive B"
     },
     "type": "medal",
     "icon": "IT_EC_MEDAL_GF_A"
@@ -7805,6 +7832,15 @@
       "fr": "Médaille de « L'Agitateur »"
     },
     "type": "medal"
+  },
+  "IT_EC_WW_EV01_1": {
+    "dataId": "IT_EC_WW_EV01_1",
+    "names": {
+      "en": "EXVIUS UNIVERSE Medal",
+      "fr": "Médaille d'EXVIUS UNIVERSE"
+    },
+    "type": "medal",
+    "icon": "IT_EC_EXVIUS21_1"
   },
   "IT_EC_FF1_1": {
     "dataId": "IT_EC_FF1_1",
@@ -8253,6 +8289,15 @@
     "names": {
       "en": "Select Element Magicite (XL) x30 Summon Ticket",
       "fr": "Ticket sélectionneur de 30 magilithes élémentaires (XL)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SP_GL_LW_01": {
+    "dataId": "IT_US_SE_SP_GL_LW_01",
+    "names": {
+      "en": "Select Mindsphere x80 Reserved Summon Ticket",
+      "fr": "Ticket sélectionneur de réservation de 80 sphères spirituelles"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9771,6 +9816,14 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_GREEN": {
+    "dataId": "IT_VPI_LW_GREEN",
+    "names": {
+      "en": "\"Celebrating Crossed Paths\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Rencontre inoubliable"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -10001,6 +10054,14 @@
     "names": {
       "en": "February Raid Medal",
       "fr": "Médaille du raid de février"
+    },
+    "type": "medal"
+  },
+  "IT_EC_RAID_10": {
+    "dataId": "IT_EC_RAID_10",
+    "names": {
+      "en": "March Raid Medal",
+      "fr": "Médaille de raid de mars"
     },
     "type": "medal"
   },
