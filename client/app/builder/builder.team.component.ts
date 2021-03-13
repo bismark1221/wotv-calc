@@ -48,7 +48,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       data: {}
     },
     units: [null, null, null, null, null],
-    cost: 0
+    cost: 0,
+    atk: 0,
+    mag: 0
   };
   statueNames;
   exportableLink = '';

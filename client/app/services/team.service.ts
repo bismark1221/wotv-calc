@@ -45,7 +45,9 @@ export class TeamService {
       guild: this.guildService.getGuildForBuilder(),
       masterRanks: await this.masterRanksService.getMasterRanksForBuilder(),
       units: [null, null, null, null, null],
-      cost: 0
+      cost: 0,
+      atk: 0,
+      mag: 0
     };
 
     return this.team;
@@ -387,12 +389,14 @@ export class TeamService {
   changeStar(pos, value) {
     if (this.team.units[pos]) {
       this.team.units[pos].updateStar(value, true);
+      this.updateTeamCost();
     }
   }
 
   changeLB(pos, value) {
     if (this.team.units[pos]) {
       this.team.units[pos].updateLB(value, true);
+      this.updateTeamCost();
     }
   }
 
@@ -400,12 +404,14 @@ export class TeamService {
     if (this.team.units[pos]) {
       this.team.units[pos].changeLevel(true);
       this.team.units[pos].updateMaxLevel(true);
+      this.updateTeamCost();
     }
   }
 
   changeLevel(pos) {
     if (this.team.units[pos]) {
       this.team.units[pos].changeLevel(true);
+      this.updateTeamCost();
     }
   }
 
@@ -417,14 +423,18 @@ export class TeamService {
         this.team.units[pos].changeLevel();
       }
     }
+
+    this.updateTeamCost();
   }
 
   maxUnit(pos) {
     this.team.units[pos].maxUnit();
+    this.updateTeamCost();
   }
 
   maxLevelAndJobs(pos) {
     this.team.units[pos].maxLevelAndJobs();
+    this.updateTeamCost();
   }
 
   getAvailableStatType(pos) {
@@ -491,22 +501,30 @@ export class TeamService {
 
   updateTeamCost() {
     this.team.cost = 0;
+    this.team.atk = 0;
+    this.team.mag = 0;
+
     this.team.units.forEach(unit => {
       if (unit) {
         this.team.cost += unit.calcCost.total;
+        this.team.atk += unit.stats.ATK.total;
+        this.team.mag += unit.stats.MAG.total;
       }
     });
   }
 
   resetUnit(pos) {
     this.team.units[pos].resetUnit();
+    this.updateTeamCost();
   }
 
   resetLevel(pos) {
     this.team.units[pos].resetLevel();
+    this.updateTeamCost();
   }
 
   resetJob(pos) {
     this.team.units[pos].resetJob();
+    this.updateTeamCost();
   }
 }

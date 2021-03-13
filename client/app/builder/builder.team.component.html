@@ -9,7 +9,7 @@
     <button class="btn btn-sub" id="openLinkModal" (click)="openLinkModal()">Get Link</button>
     <button class="btn btn-sub" id="openLoadModal" (click)="openLoadModal()" *ngIf="showSave">Load Team</button>
     <button class="btn btn-sub" id="openSaveModal" (click)="openSaveModal()" *ngIf="showSave">Save Team</button>
-    <span class="teamCost">Cost : {{ team.cost }}</span>
+    <span class="teamCost">Cost : {{ team.cost }} - ATK : {{ team.atk }} - MAG : {{ team.mag }}</span>
   </div>
 
   <div class="unitCol" *ngFor="let unitPos of [0, 1, 2, 3, 4]">
