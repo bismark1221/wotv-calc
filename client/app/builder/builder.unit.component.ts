@@ -14,6 +14,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
+import { SimulatorService } from '../services/simulator.service';
 
 import { ModalEquipmentsComponent } from './modal/modal.equipments.component';
 import { ModalEspersComponent } from './modal/modal.espers.component';
@@ -137,7 +138,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     private modalService: NgbModal,
     private navService: NavService,
     private nameService: NameService,
-    private authService: AuthService
+    private authService: AuthService,
+    private simulatorService: SimulatorService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       await this.getUnits();
@@ -600,8 +602,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     this.damageSim = {
       unit: {
         selectedSkill: null,
-        brave: 0,
-        faith: 0,
+        brave: 97,
+        faith: 97,
         buffs: {
           atk: 0,
           mag: 0,
@@ -637,7 +639,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   calculateDamageSim() {
-
+    this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
   }
 
   resetUnit() {
