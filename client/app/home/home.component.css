@@ -22,9 +22,28 @@
   margin-top: 8px;
 }
 
-.buy_coffee {
-  height: 30px;
-  margin-bottom: 5px;
+.patreon {
+  background-color: rgb(255, 66, 77);
+  border-radius: 9999px;
+  border: 1px solid rgb(255, 66, 77);
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.patreon:hover {
+  text-decoration: none;
+}
+
+circle, rect {
+  fill: rgb(255, 255, 255);
+}
+
+.logo_patreon {
+  height: 16px;
 }
 
 .itemImg {
@@ -193,6 +212,7 @@
 
 .amazonLink {
   display: block;
+  margin-top: 10px;
 }
 
 .amazonLink img {
