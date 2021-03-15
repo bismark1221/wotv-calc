@@ -22,29 +22,141 @@ export class SimulatorService {
     console.log(dataSimulator);
 
     if (dataSimulator && dataSimulator.unit && dataSimulator.unit.selectedSkill) {
-      switch (dataSimulator.unit.selectedSkill.based) {
-        case 'physic' :
-          this.calculatePhysicDamage(unit, dataSimulator);
+      this.getSkillEffects(dataSimulator);
+      console.log('Simulator after skill effects');
+      console.log(dataSimulator);
+      this.calculateDamage(unit, dataSimulator);
+    }
+  }
+
+  getSkillEffects(dataSimulator) {
+    dataSimulator.skillEffects = {};
+
+    dataSimulator.unit.selectedSkill.effects.forEach(effect => {
+      // @TODO check if condition
+
+      // @TODO check target
+      switch (effect.target) {
+        case 'self' :
+          // @TODO manage fromImbue = only on basic attack
+          this.applyEffectToUnit(dataSimulator, effect);
           break;
-        case 'magic' :
-          this.calculateMagicDamage(unit, dataSimulator);
+        case 'target' :
+          this.applyEffectToTarget(dataSimulator, effect);
           break;
-        case 'hybrid' :
-          this.calculateHybridDamage(unit, dataSimulator);
+        case 'selfSide' :
+          this.applyEffectToUnit(dataSimulator, effect);
           break;
+        case 'ennemySide' :
+          this.applyEffectToTarget(dataSimulator, effect);
+          break;
+        case 'all' :
+          this.applyEffectToTarget(dataSimulator, effect);
+          break;
+        default :
+          break;
+      }
+    });
+  }
+
+  applyEffectToUnit(dataSimulator, effect) {
+    console.log('applyEffectToUnit');
+    console.log(effect);
+  }
+
+  applyEffectToTarget(dataSimulator, effect) {
+    console.log('applyEffectToTarget');
+    console.log(effect);
+
+    const effectType = effect.type;
+    const unit = dataSimulator.unit;
+    const elementSkill = unit.selectedSkill.elem ? unit.selectedSkill.elem : unit.element;
+    const damageType = unit.selectedSkill.damage.type;
+
+    if (effectType === 'DEF'
+      || effectType === 'SPR'
+      || effectType === 'FAITH'
+      || effectType === 'ATTACK_RES'
+      || effectType === 'AOE_RES'
+      || effectType === elementSkill.toUpperCase() + '_RES'
+      || effectType === damageType.toUpperCase() + '_RES'
+    ) {
+      const value = this.getEffectValue(unit.selectedSkill, effect);
+      console.log(value);
+
+      if (effect.calcType === 'fixe' || effect.calcType === 'resistance') {
+        if (effectType === 'DEF'
+          || effectType === 'SPR'
+          || effectType === 'FAITH'
+          || effectType === 'ATTACK_RES'
+          || effectType === 'AOE_RES'
+        ) {
+          dataSimulator.target[effectType.toLowerCase()] += value;
+        } else if (effectType === elementSkill.toUpperCase() + '_RES') {
+          dataSimulator.target.elementRes += value;
+        } else {
+          dataSimulator.target.damageTypeRes += value;
+        }
+      } else { // Should be percent ^^
+
       }
     }
   }
 
-  calculatePhysicDamage(unit, dataSimulator) {
+  private getEffectValue(skill, effect) {
+    let value = 0;
+    if (typeof(effect.minValue) === 'number' || typeof(effect.value) === 'number') {
+      let maxReduceValueFromMath = 0;
+      if (skill.maths) {
+        skill.maths.forEach(math => {
+          if (math.type !== 'MODIFY_ABSORB' && math.dst !== 'DAMAGE' && math.formula === 'CURVE' && math.value < maxReduceValueFromMath) {
+            maxReduceValueFromMath = math.value;
+          }
+        });
+      }
+
+      const minValue = (typeof(effect.minValue) === 'number' ? effect.minValue : effect.value) + maxReduceValueFromMath;
+
+      if (effect.minValue !== effect.maxValue) {
+        const maxValue = effect.maxValue;
+
+        if (skill.level >= skill.maxLevel) {
+          value = maxValue;
+        } else {
+          value = minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1));
+          if (value < 0) {
+            value = -value;
+            value = Math.floor(value);
+            value = -value;
+          } else {
+            value = Math.floor(value);
+          }
+        }
+      } else {
+        value = minValue;
+      }
+    }
+
+    return value;
+  }
+
+  calculateDamage(unit, dataSimulator) {
     const atk = unit.stats.ATK.total;
+    const mag = unit.stats.MAG.total;
     const agi = unit.stats.AGI.total;
     const dex = unit.stats.DEX.total;
     const luck = unit.stats.LUCK.total;
 
     // @TODO Apply buffs
 
-    const baseDamage = this.calculateSkillBonus(atk, dex, agi, luck, dataSimulator.unit.selectedSkill.damage.formula);
+    let baseDamage = 0;
+    if (dataSimulator.unit.selectedSkill.based === 'magic') {
+      baseDamage = this.calculateSkillBonus(mag, dex, agi, luck, dataSimulator.unit.selectedSkill.damage.formula);
+    } else if (dataSimulator.unit.selectedSkill.based === 'physic') {
+      baseDamage = this.calculateSkillBonus(atk, dex, agi, luck, dataSimulator.unit.selectedSkill.damage.formula);
+    } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {
+      // @TODO manage kotetsu
+    }
 
     let damage = Math.round(baseDamage * this.getMultiplier(unit, dataSimulator));
     console.log('damage before DEF, ...');
@@ -58,7 +170,13 @@ export class SimulatorService {
     console.log('damage after resistance, ...');
     console.log(damage);
 
-    damage = Math.round(damage * (0.5 + (dataSimulator.unit.brave / 100)));
+    if (dataSimulator.unit.selectedSkill.based === 'magic') {
+      damage = Math.round(damage * (0.5 + ((dataSimulator.unit.faith + dataSimulator.target.faith) / 100)));
+    } else if (dataSimulator.unit.selectedSkill.based === 'physic') {
+      damage = Math.round(damage * (0.5 + (dataSimulator.unit.brave / 100)));
+    } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {
+      // @TODO manage kotetsu
+    }
     console.log('damage after brave');
     console.log(damage);
 
@@ -66,7 +184,11 @@ export class SimulatorService {
     console.log('damage element advantage');
     console.log(damage);
 
+    dataSimulator.result = damage;
+
     // @TODO effect of skill (breaks, ignore, ...)
+
+    // @TODO add maths possibilities
   }
 
   calculateSkillBonus(mainStat, dex, agi, luck, formula) {
@@ -162,13 +284,5 @@ export class SimulatorService {
   getResistanceMultiplier(unit, dataSimulator) {
     // @TODO Ignore resistance type
     return (1 - dataSimulator.target.elementRes / 100) * (1 - dataSimulator.target.damageTypeRes / 100);
-  }
-
-  calculateMagicDamage(unit, dataSimulator) {
-
-  }
-
-  calculateHybridDamage(unit, dataSimulator) {
-
   }
 }

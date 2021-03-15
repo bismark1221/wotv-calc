@@ -630,8 +630,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
         spr: 0,
         elementRes: 0,
         damageTypeRes: 0,
-        singleRes: 0,
-        aoeRes: 0,
+        attack_res: 0,
+        aoe_res: 0,
         faith: 0
       },
       result: 0
