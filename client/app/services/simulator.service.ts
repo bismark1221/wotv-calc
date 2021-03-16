@@ -172,16 +172,21 @@ export class SimulatorService {
       || effectType === 'DEX'
       || effectType === 'LUCK'
       || effectType === 'AGI'
-      || effectType === 'DEFENSE_PENETRATION'
-      || effectType === 'SPIRIT_PENETRATION'
     ) {
       let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
       if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
+        value = this.calculateBuffValue(unit, effectType, value);
       }
 
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > this.calculateBuffValue(unit, effectType, dataSimulator.unit.buffs[effectType.toLowerCase()])) {
+        dataSimulator.skillEffects.unit[effectType.toLowerCase()].value = value;
+        dataSimulator.skillEffects.unit[effectType.toLowerCase()].overwriteBuff = true;
+      }
+    } else if (effectType === 'DEFENSE_PENETRATION' || effectType === 'SPIRIT_PENETRATION' ) {
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+
+      if (value > dataSimulator.unit.buffs[effectType.toLowerCase()]) {
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].value = value;
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].overwriteBuff = true;
       }
@@ -202,57 +207,37 @@ export class SimulatorService {
 
       dataSimulator.skillEffects.unit.brave.value = value;
     } else if (effectType === 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION') {
-      let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
-      if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
-      }
-
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > dataSimulator.unit.buffs.typeResPene) {
         dataSimulator.skillEffects.unit.typeResPene.value = value;
         dataSimulator.skillEffects.unit.typeResPene.overwriteBuff = true;
       }
     } else if (effectType === targetElement.toUpperCase() + '_KILLER') {
-      let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
-      if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
-      }
-
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > dataSimulator.unit.buffs.elementKiller) {
         dataSimulator.skillEffects.unit.elementKiller.value = value;
         dataSimulator.skillEffects.unit.elementKiller.overwriteBuff = true;
       }
     } else if (effectType === targetRace.toUpperCase() + '_KILLER') {
-      let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
-      if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
-      }
-
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > dataSimulator.unit.buffs.raceKiller) {
         dataSimulator.skillEffects.unit.raceKiller.value = value;
         dataSimulator.skillEffects.unit.raceKiller.overwriteBuff = true;
       }
     } else if (effectType === elementSkill.toUpperCase() + '_ATK') {
-      let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
-      if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
-      }
-
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > dataSimulator.unit.buffs.elementAtk) {
         dataSimulator.skillEffects.unit.elementAtk.value = value;
         dataSimulator.skillEffects.unit.elementAtk.overwriteBuff = true;
       }
     } else if (effectType === damageType.toUpperCase() + '_ATK') {
-      let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
+      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
-      if (effect.calcType === 'percent') {
-        value = this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase(), value);
-      }
-
-      if (value > this.calculateBuffValue(unit, dataSimulator, effectType.toLowerCase())) {
+      if (value > dataSimulator.unit.buffs.damageType) {
         dataSimulator.skillEffects.unit.damageType.value = value;
         dataSimulator.skillEffects.unit.damageType.overwriteBuff = true;
       }
@@ -502,11 +487,7 @@ export class SimulatorService {
     return (1 - dataSimulator.target.elementRes / 100) * (1 - dataSimulator.target.damageTypeRes / 100);
   }
 
-  calculateBuffValue(unit, dataSimulator, buffType, value = 0) {
-    if (value !== 0) {
-      return value;
-    }
-
-    return 0;
+  calculateBuffValue(unit, buffType, value) {
+    return Math.floor(unit.stats[buffType].base * value / 100);
   }
 }
