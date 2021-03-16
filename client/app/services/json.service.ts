@@ -3497,6 +3497,32 @@ export class JsonService {
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
       });
     }
+
+    // Search in whole units
+    Object.keys(this[this.version].wotvUnits).forEach(unitId => {
+      const unitSkills = [];
+      Object.keys(this[this.version].wotvUnits[unitId].board.nodes).forEach(nodeId => {
+        unitSkills.push(this[this.version].wotvUnits[unitId].board.nodes[nodeId].skill);
+      });
+
+      unitSkills.push(this[this.version].wotvUnits[unitId].attack);
+
+      if (this[this.version].wotvUnits[unitId].limit) {
+        unitSkills.push(this[this.version].wotvUnits[unitId].limit);
+      }
+
+      unitSkills.forEach(skill => {
+        if (skill.damage) {
+          skill.effects.forEach(effect => {
+            if (effect.type === 'FAITH' || effect.type === 'FAITH_FIGHT' || effect.type === 'BRAVERY' || effect.type === 'BRAVERY_FIGHT') {
+              // if (effect.calcType !== 'fixe' && effect.calcType !== 'resistance' && effect.calcType !== 'unknow') {
+                console.log(skill);
+              // }
+            }
+          });
+        }
+      });
+    });
   }
 
   formatDropTables() {

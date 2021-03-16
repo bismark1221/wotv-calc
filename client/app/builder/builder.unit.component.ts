@@ -284,6 +284,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           this.unit.board.nodes[nodeId].skill.name = this.nameService.getName(this.unit.board.nodes[nodeId].skill);
         }
       });
+
+      this.newDamageSim();
       this.updateActiveSkillsForSim();
     } else {
       this.unit = null;
@@ -291,8 +293,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       this.updateFilteredUnits();
       this.showList = true;
     }
-
-    this.newDamageSim();
   }
 
   changeStar(value) {
@@ -570,7 +570,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   updateActiveSkillsForSim() {
-    const skills = [];
+    const skills = [
+      this.unit.attack
+    ];
 
     this.unit.activeSkills.forEach(skill => {
       if (skill.damage) {
@@ -581,6 +583,10 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     // Add LB + VC + Equipment
 
     this.unit.skillsForSim = skills;
+
+    if (this.unit.limit) {
+      this.unit.skillsForSim.push(this.unit.limit);
+    }
 
     if (this.damageSim && this.damageSim.unit.selectedSkill) {
       let oldSelectedSkillFound = false;
@@ -593,6 +599,10 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       if (!oldSelectedSkillFound) {
         this.damageSim.unit.selectedSkill = null;
       }
+    }
+
+    if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
+      this.damageSim.unit.selectedSkill = this.unit.skillsForSim[0];
     }
 
     this.calculateDamageSim();
@@ -608,15 +618,16 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           atk: 0,
           mag: 0,
           dex: 0,
+          agi: 0,
           luck: 0,
           raceKiller: 0,
           elementKiller: 0,
           elementAtk: 0,
           damageType: 0,
           criticDamage: 0,
-          defPene: 0,
-          typeResPene: 0,
-          spiritPene: 0
+          defense_penetration: 0,
+          spirit_penetration: 0,
+          typeResPene: 0
         },
         chain: {
           element: 0,

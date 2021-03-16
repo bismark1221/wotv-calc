@@ -971,57 +971,59 @@
                 (ngModelChange)="calculateDamageSim()">
 
                 <ng-template ng-label-tmp let-item="item">
-                  {{ damageSim.unit.selectedSkill ? damageSim.unit.selectedSkill.name : "Select a skill" }}
+                  {{ item.name && item.name !== "" ? item.name : "Basic Attack" }}
                 </ng-template>
 
                 <ng-template ng-option-tmp let-item="item">
-                  {{ item.name }}
+                  {{ item.name && item.name !== "" ? item.name : "Basic Attack" }}
                 </ng-template>
               </ng-select>
 
-              Brave : <input [(ngModel)]="damageSim.unit.brave" type="number" />
+              <div>Brave : <input [(ngModel)]="damageSim.unit.brave" type="number" /></div>
 
-              Faith : <input [(ngModel)]="damageSim.unit.faith" type="number" />
+              <div>Faith : <input [(ngModel)]="damageSim.unit.faith" type="number" /></div>
 
-              External Buffs :
-              ATK  <input [(ngModel)]="damageSim.unit.buffs.atk" type="number" />
-              MAG  <input [(ngModel)]="damageSim.unit.buffs.mag" type="number" />
-              DEX <input [(ngModel)]="damageSim.unit.buffs.dex" type="number" />
-              LUCK <input [(ngModel)]="damageSim.unit.buffs.luck" type="number" />
-              Race Killer <input [(ngModel)]="damageSim.unit.buffs.raceKiller" type="number" />
-              Element Killer <input [(ngModel)]="damageSim.unit.buffs.elementKiller" type="number" />
-              Element ATK <input [(ngModel)]="damageSim.unit.buffs.elementAtk" type="number" />
-              Damage Type <input [(ngModel)]="damageSim.unit.buffs.damageType" type="number" />
-              def pene <input [(ngModel)]="damageSim.unit.buffs.criticDamage" type="number" />
-              spririt pene <input [(ngModel)]="damageSim.unit.buffs.defPene" type="number" />
-              damage type res pene <input [(ngModel)]="damageSim.unit.buffs.typeResPene" type="number" />
-              Critical hit damage <input [(ngModel)]="damageSim.unit.buffs.spiritPene" type="number" />
+              <div>External Buffs :</div>
+              <div>ATK (%)<input [(ngModel)]="damageSim.unit.buffs.atk" type="number" /></div>
+              <div>MAG (%)<input [(ngModel)]="damageSim.unit.buffs.mag" type="number" /></div>
+              <div>DEX (%)<input [(ngModel)]="damageSim.unit.buffs.dex" type="number" /></div>
+              <div>LUCK (%)<input [(ngModel)]="damageSim.unit.buffs.luck" type="number" /></div>
+              <div>AGI (%)<input [(ngModel)]="damageSim.unit.buffs.agi" type="number" /></div>
+              <div>Race Killer<input [(ngModel)]="damageSim.unit.buffs.raceKiller" type="number" /></div>
+              <div>Element Killer <input [(ngModel)]="damageSim.unit.buffs.elementKiller" type="number" /></div>
+              <div>Element ATK <input [(ngModel)]="damageSim.unit.buffs.elementAtk" type="number" /></div>
+              <div>Damage Type <input [(ngModel)]="damageSim.unit.buffs.damageType" type="number" /></div>
+              <div>def pene <input [(ngModel)]="damageSim.unit.buffs.defense_penetration" type="number" /></div>
+              <div>spririt pene <input [(ngModel)]="damageSim.unit.buffs.spirit_penetration" type="number" /></div>
+              <div>damage type res pene <input [(ngModel)]="damageSim.unit.buffs.typeResPene" type="number" /></div>
+              <div>Critical hit damage <input [(ngModel)]="damageSim.unit.buffs.criticDamage" type="number" /></div>
 
-              Chain :
-              Element <input [(ngModel)]="damageSim.unit.chain.element" type="number" />
-              Type <input [(ngModel)]="damageSim.unit.chain.type" type="number" />
-
+              <div>
+                <div>Chain :</div>
+                <div>Element <input [(ngModel)]="damageSim.unit.chain.element" type="number" /></div>
+                <div>Type <input [(ngModel)]="damageSim.unit.chain.type" type="number" /></div>
+              </div>
             </td>
             <td>
               Target
 
-              Race : <input [(ngModel)]="damageSim.target.race" type="number" />
+              <div>Race : <input [(ngModel)]="damageSim.target.race" type="number" /></div>
 
-              Element : <input [(ngModel)]="damageSim.target.element" type="number" />
+              <div>Element : <input [(ngModel)]="damageSim.target.element" type="number" /></div>
 
-              DEF : <input [(ngModel)]="damageSim.target.def" type="number" />
+              <div>DEF : <input [(ngModel)]="damageSim.target.def" type="number" /></div>
 
-              SPR : <input [(ngModel)]="damageSim.target.spr" type="number" />
+              <div>SPR : <input [(ngModel)]="damageSim.target.spr" type="number" /></div>
 
-              Element Resitance : <input [(ngModel)]="damageSim.target.elementRes" type="number" />
+              <div>Element Resitance : <input [(ngModel)]="damageSim.target.elementRes" type="number" /></div>
 
-              Damage Type Res : <input [(ngModel)]="damageSim.target.damageTypeRes" type="number" />
+              <div>Damage Type Res : <input [(ngModel)]="damageSim.target.damageTypeRes" type="number" /></div>
 
-              AOE Res : <input [(ngModel)]="damageSim.target.attack_res" type="number" />
+              <div>AOE Res : <input [(ngModel)]="damageSim.target.attack_res" type="number" /></div>
 
-              ST Res : <input [(ngModel)]="damageSim.target.aoe_res" type="number" />
+              <div>ST Res : <input [(ngModel)]="damageSim.target.aoe_res" type="number" /></div>
 
-              Faith <input [(ngModel)]="damageSim.target.faith" type="number" />
+              <div>Faith <input [(ngModel)]="damageSim.target.faith" type="number" /></div>
             </td>
             <td>
               Damage : {{ damageSim.result }}
