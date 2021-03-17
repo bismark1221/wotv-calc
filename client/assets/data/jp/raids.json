@@ -7405,7 +7405,248 @@
         "species": "bird",
         "element": "ice",
         "image": "lapsgcal",
-        "skills": {},
+        "skills": {
+          "SK_GCAL_M_01_R": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": -12,
+                "maxValue": -25,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_GCAL_M_01_R",
+            "rate": 100,
+            "names": {
+              "en": "ホワイトアウト"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 14
+            },
+            "count": 5,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 5,
+              "s": 0
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 10,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "ice"
+            ],
+            "minLevel": 1
+          },
+          "SK_GCAL_M_02_R": {
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": -10,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "rate": 30,
+                "turn": 3,
+                "target": "ennemySide"
+              }
+            ],
+            "dataId": "SK_GCAL_M_02_R",
+            "rate": 100,
+            "names": {
+              "en": "氷鳥の羽ばたき"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 3,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_GCAL_M_03_R": {
+            "effects": [
+              {
+                "type": "STOP_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 30,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_GCAL_M_03_R",
+            "rate": 100,
+            "names": {
+              "en": "フローズンハリケーン"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "ice"
+            ],
+            "minLevel": 1
+          },
+          "SK_GCAL_R_01": {
+            "effects": [],
+            "dataId": "SK_GCAL_R_01",
+            "rate": 100,
+            "names": {
+              "en": "アイスリフレクター"
+            },
+            "target": "all",
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "素早さダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_LW_TIM_P_2": {
+            "effects": [
+              {
+                "type": "NULLIFY",
+                "ailments": [
+                  "HASTE",
+                  "SLOW",
+                  "STOP",
+                  "QUICKEN"
+                ],
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_LW_TIM_P_2",
+            "rate": 100,
+            "names": {
+              "en": "CT変化無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_SHOT_1_80_U_KISO": {
+            "effects": [
+              {
+                "type": "MISSILE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_SHOT_1_80_U_KISO",
+            "rate": 100,
+            "names": {
+              "en": "射撃耐性1-80アップ(基礎)"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
         "slug": "gurashiru",
         "attack": {
           "names": {
@@ -7588,7 +7829,148 @@
         "species": "dragon",
         "element": "water",
         "image": "lapsdrgn",
-        "skills": {},
+        "skills": {
+          "SK_DRGN_M_01": {
+            "effects": [
+              {
+                "type": "SILENCE_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "ennemySide"
+              }
+            ],
+            "dataId": "SK_DRGN_M_01",
+            "rate": 100,
+            "names": {
+              "en": "のしかかり"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 20,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 10,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_DRGN_M_02": {
+            "effects": [],
+            "dataId": "SK_DRGN_M_02",
+            "rate": 100,
+            "names": {
+              "en": "ブレイズ"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 20,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 10,
+              "maxValue": 40,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "names": {
+              "en": "素早さダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "names": {
+              "en": "CT変動無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "mini-dragon",
         "attack": {
           "names": {

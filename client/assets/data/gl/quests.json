@@ -39247,6 +39247,299 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_MU_EV_CR_EX1": {
+    "dataId": "QE_MU_EV_CR_EX1",
+    "items": {
+      "": {
+        "drop": 98.93341765383009
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 9.566755481091409,
+        "host": 2
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 29.916487283858444,
+        "host": 8
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 93.33112884062221,
+        "host": 72
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 13.115859913809407,
+        "host": 8
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 32.80691953287441,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 90.2719854185682
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.98625322599037
+      }
+    },
+    "names": {
+      "en": "Multi: High Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Multi: Quête EX d'acquisition de Creysse [Très difficile]"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 11,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_CR_EX2": {
+    "dataId": "QE_MU_EV_CR_EX2",
+    "items": {
+      "": {
+        "drop": 99.5485811389795
+      },
+      "IT_AF_LW_SWO_023": {
+        "drop": 40.01842603947953,
+        "host": 2
+      },
+      "IT_AF_MAT_ARMN": {
+        "drop": 63.233361234511776,
+        "host": 8
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 68.4679816766612,
+        "host": 72
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 32.73150918470167,
+        "host": 8
+      },
+      "IT_AF_AW_SWORD": {
+        "drop": 68.4679816766612,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      }
+    },
+    "names": {
+      "en": "Multi: Brutal Difficulty Creysse Acquisition Ex-Quest",
+      "fr": "Multi: Quête EX d'acquisition de Creysse [Super difficile]"
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_WW_MB2": {
+    "dataId": "QE_EV_WW_MB2",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 70.6
+      },
+      "IT_TICKET_STORY": {
+        "drop": 100
+      },
+      "IT_US_EXP_03": {
+        "drop": 100
+      },
+      "IT_GL_TICKET_EVENT": {
+        "drop": 100
+      }
+    },
+    "names": {
+      "en": "Sprouts of Devouring Ep. 2 — A Frightful Mutation",
+      "fr": "Érosion naissante, ép. 2 - Effroyable mutation"
+    },
+    "exp": 1791,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 6,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_WW_MB_EX2": {
+    "dataId": "QE_EV_WW_MB_EX2",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 10.703602446155013
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 26.273185923735387
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 91.70971417772806
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 26.273185923735387
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 50.42353065678521
+      },
+      "IT_AF_EXP_02": {
+        "drop": 88.89922912053171
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.27168007673166
+      },
+      "": {
+        "drop": 85.93056624713628
+      }
+    },
+    "names": {
+      "en": "Sprouts of Devouring — EXVIUS UNIVERSE EX2",
+      "fr": "Érosion naissante - EXVIUS UNIVERSE [EX 2]"
+    },
+    "exp": 5623,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 10,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_WW_MB_EX3": {
+    "dataId": "QE_EV_WW_MB_EX3",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 37.40835441874103
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 48.353811665753035
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 65.28457742668854
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 60.03626221142584
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 65.28457742668854
+      },
+      "IT_AF_EXP_02": {
+        "drop": 92.34108773940532
+      },
+      "IT_AF_EXP_03": {
+        "drop": 65.28457742668854
+      },
+      "": {
+        "drop": 98.90470743653657
+      }
+    },
+    "names": {
+      "en": "Brutal Difficulty Sprouts of Devouring — EXVIUS UNIVERSE EX2 ",
+      "fr": "« Érosion naissante - EXVIUS UNIVERSE » - EX 2 [Super difficile] "
+    },
+    "exp": 8733,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_WWMBEX2": {
+    "dataId": "QE_MU_EV_WWMBEX2",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 10.703602446155013,
+        "host": 2
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 26.273185923735387,
+        "host": 8
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 91.70971417772806,
+        "host": 72
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 26.273185923735387,
+        "host": 8
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 50.42353065678521,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 88.89922912053171
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.27168007673166
+      },
+      "": {
+        "drop": 85.93056624713628
+      }
+    },
+    "names": {
+      "en": "Multi: [Multi] Sprouts of Devouring — EXVIUS UNIVERSE EX2",
+      "fr": "Multi: [Multi] Érosion naissante - EXVIUS UNIVERSE [EX 2]"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 10,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_WWMBEX3": {
+    "dataId": "QE_MU_EV_WWMBEX3",
+    "items": {
+      "IT_EC_WW_EV01_1": {
+        "drop": 90.975
+      },
+      "IT_AF_LW_ACC_040": {
+        "drop": 37.40835441874103,
+        "host": 2
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 48.353811665753035,
+        "host": 8
+      },
+      "IT_AF_MAT_HEART_03": {
+        "drop": 65.28457742668854,
+        "host": 72
+      },
+      "IT_AF_MAT_DARK_01": {
+        "drop": 60.03626221142584,
+        "host": 8
+      },
+      "IT_AF_AW_ACCE": {
+        "drop": 65.28457742668854,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 92.34108773940532
+      },
+      "IT_AF_EXP_03": {
+        "drop": 65.28457742668854
+      },
+      "": {
+        "drop": 98.90470743653657
+      }
+    },
+    "names": {
+      "en": "Multi: [Multi] Brutal Difficulty Sprouts of Devouring — EXVIUS UNIVERSE EX2 ",
+      "fr": "Multi: [Multi] « Érosion naissante - EXVIUS UNIVERSE » - EX 2 [Super difficile] "
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_EV_WW_MB1": {
     "dataId": "QE_EV_WW_MB1",
     "items": {
@@ -39360,94 +39653,6 @@
     "nrg": 6,
     "jp": 0,
     "enemies": 9,
-    "gils": 1800,
-    "chests": 0
-  },
-  "QE_MU_EV_CR_EX1": {
-    "dataId": "QE_MU_EV_CR_EX1",
-    "items": {
-      "": {
-        "drop": 98.93341765383009
-      },
-      "IT_AF_LW_SWO_023": {
-        "drop": 9.566755481091409,
-        "host": 2
-      },
-      "IT_AF_MAT_ARMN": {
-        "drop": 29.916487283858444,
-        "host": 8
-      },
-      "IT_AF_MAT_SAND_03": {
-        "drop": 93.33112884062221,
-        "host": 72
-      },
-      "IT_AF_MAT_SHINE_01": {
-        "drop": 13.115859913809407,
-        "host": 8
-      },
-      "IT_AF_AW_SWORD": {
-        "drop": 32.80691953287441,
-        "host": 10
-      },
-      "IT_AF_EXP_02": {
-        "drop": 90.2719854185682
-      },
-      "IT_AF_EXP_03": {
-        "drop": 85.98625322599037
-      }
-    },
-    "names": {
-      "en": "Multi: High Difficulty Creysse Acquisition Ex-Quest",
-      "fr": "Multi: Quête EX d'acquisition de Creysse [Très difficile]"
-    },
-    "exp": 5623,
-    "nrg": 6,
-    "jp": 0,
-    "enemies": 11,
-    "gils": 1800,
-    "chests": 0
-  },
-  "QE_MU_EV_CR_EX2": {
-    "dataId": "QE_MU_EV_CR_EX2",
-    "items": {
-      "": {
-        "drop": 99.5485811389795
-      },
-      "IT_AF_LW_SWO_023": {
-        "drop": 40.01842603947953,
-        "host": 2
-      },
-      "IT_AF_MAT_ARMN": {
-        "drop": 63.233361234511776,
-        "host": 8
-      },
-      "IT_AF_MAT_SAND_03": {
-        "drop": 68.4679816766612,
-        "host": 72
-      },
-      "IT_AF_MAT_SHINE_01": {
-        "drop": 32.73150918470167,
-        "host": 8
-      },
-      "IT_AF_AW_SWORD": {
-        "drop": 68.4679816766612,
-        "host": 10
-      },
-      "IT_AF_EXP_02": {
-        "drop": 93.93643916328719
-      },
-      "IT_AF_EXP_03": {
-        "drop": 68.4679816766612
-      }
-    },
-    "names": {
-      "en": "Multi: Brutal Difficulty Creysse Acquisition Ex-Quest",
-      "fr": "Multi: Quête EX d'acquisition de Creysse [Super difficile]"
-    },
-    "exp": 8733,
-    "nrg": 6,
-    "jp": 0,
-    "enemies": 12,
     "gils": 1800,
     "chests": 0
   },

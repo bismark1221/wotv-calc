@@ -33423,14 +33423,57 @@
   },
   "QE_HA_LW_MONT_01": {
     "dataId": "QE_HA_LW_MONT_01",
-    "items": {},
+    "items": {
+      "IT_JB_MM_ALL_4": {
+        "drop": 19.201715521887
+      },
+      "IT_JB_SWORD_04": {
+        "drop": 46.71274239358322
+      },
+      "IT_JB_LSWORD_04": {
+        "drop": 46.71274239358322
+      },
+      "IT_JB_KUNAI_04": {
+        "drop": 46.71274239358322
+      },
+      "IT_JB_MM_MONT_01_4": {
+        "drop": 3.107792506150532
+      },
+      "IT_JB_MM_MSW_4": {
+        "drop": 3.107792506150532
+      },
+      "IT_JB_MM_NIN_4": {
+        "drop": 3.107792506150532
+      },
+      "IT_JB_EM_FIRE_4": {
+        "drop": 46.71274239358322
+      },
+      "IT_JB_IM_ANGEL_4": {
+        "drop": 15.030718469535659
+      },
+      "IT_AF_MAT_HEART_02": {
+        "drop": 34.18023618592643
+      },
+      "IT_AF_MAT_LIQUID_02": {
+        "drop": 34.18023618592643
+      },
+      "IT_AF_LW_SWO_002": {
+        "drop": 19.201715521887
+      },
+      "": {
+        "drop": 98.34706345863636
+      },
+      "IT_PI_LW_MONT_01": {
+        "drop": 100
+      }
+    },
     "names": {
       "en": "欠片獲得 リオニス王モント"
     },
     "exp": 7820,
     "nrg": 20,
     "jp": 10,
-    "enemies": 0,
+    "enemies": 8,
     "gils": 1500,
     "chests": 0
   },
@@ -37903,14 +37946,42 @@
   },
   "QE_CH_LW_MONT_01": {
     "dataId": "QE_CH_LW_MONT_01",
-    "items": {},
+    "items": {
+      "IT_JB_MM_ALL_3": {
+        "drop": 39.04310614589184
+      },
+      "IT_JB_SWORD_03": {
+        "drop": 84.8289119009344
+      },
+      "IT_JB_MM_MONT_01_3": {
+        "drop": 7.72553055720799
+      },
+      "IT_JB_EM_FIRE_3": {
+        "drop": 56.953279
+      },
+      "IT_JB_IM_ANGEL_3": {
+        "drop": 11.38854984574268
+      },
+      "IT_AF_LW_SWO_001": {
+        "drop": 14.715124244837114
+      },
+      "IT_AF_MAT_HEART_01": {
+        "drop": 38.522388319818354
+      },
+      "IT_AF_MAT_SAP_01": {
+        "drop": 38.522388319818354
+      },
+      "": {
+        "drop": 99.35157227730188
+      }
+    },
     "names": {
       "en": "リオニス王モント"
     },
     "exp": 6400,
     "nrg": 25,
     "jp": 13,
-    "enemies": 0,
+    "enemies": 8,
     "gils": 1500,
     "chests": 0
   },
@@ -39155,14 +39226,18 @@
   },
   "QE_EV_MONT_01": {
     "dataId": "QE_EV_MONT_01",
-    "items": {},
+    "items": {
+      "IT_PI_LW_MONT_01": {
+        "drop": 100
+      }
+    },
     "names": {
       "en": "限定ハードクエスト（リオニス王モント）"
     },
     "exp": 7228,
     "nrg": 8,
     "jp": 10,
-    "enemies": 0,
+    "enemies": 6,
     "gils": 1500,
     "chests": 0
   },
@@ -48441,27 +48516,77 @@
   },
   "QE_EV_01_EX3": {
     "dataId": "QE_EV_01_EX3",
-    "items": {},
+    "items": {
+      "IT_AF_LW_AXE_003": {
+        "drop": 40.12630607616211
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 68.81828007003381
+      },
+      "IT_AF_MAT_BONE": {
+        "drop": 68.81828007003381
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 68.81828007003381
+      },
+      "IT_AF_AW_AXE": {
+        "drop": 68.81828007003381
+      },
+      "IT_AF_EXP_02": {
+        "drop": 94.36864852905273
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.81828007003381
+      },
+      "": {
+        "drop": 80.31255956592773
+      }
+    },
     "names": {
       "en": "超高難度　憧れの王子様 【EX1】"
     },
     "exp": 8733,
     "nrg": 12,
     "jp": 6,
-    "enemies": 0,
+    "enemies": 13,
     "gils": 1800,
     "chests": 0
   },
   "QE_EV_01_EX4": {
     "dataId": "QE_EV_01_EX4",
-    "items": {},
+    "items": {
+      "IT_AF_LW_BSW_004": {
+        "drop": 40.77476046520297
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 65.06339418125441
+      },
+      "IT_AF_MAT_OGRE": {
+        "drop": 68.89161553517852
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 68.89161553517852
+      },
+      "IT_AF_AW_LSWORD": {
+        "drop": 68.89161553517852
+      },
+      "IT_AF_EXP_02": {
+        "drop": 52.890429063936715
+      },
+      "IT_AF_EXP_03": {
+        "drop": 49.34991879732855
+      },
+      "": {
+        "drop": 0
+      }
+    },
     "names": {
       "en": "超高難度　憧れの王子様 【EX2】"
     },
     "exp": 8733,
     "nrg": 12,
     "jp": 6,
-    "enemies": 0,
+    "enemies": 6,
     "gils": 1800,
     "chests": 0
   },
@@ -50626,7 +50751,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 5,
     "gils": 0,
     "chests": 0
   },
@@ -50639,7 +50764,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 5,
     "gils": 0,
     "chests": 0
   },
@@ -50652,7 +50777,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 5,
     "gils": 0,
     "chests": 0
   },
@@ -50665,7 +50790,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 3,
     "gils": 0,
     "chests": 0
   },
@@ -50678,7 +50803,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 3,
     "gils": 0,
     "chests": 0
   },
@@ -50691,7 +50816,7 @@
     "exp": 0,
     "nrg": 1,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 3,
     "gils": 0,
     "chests": 0
   },
@@ -51160,27 +51285,77 @@
   },
   "QE_EV_ETRE_EX3": {
     "dataId": "QE_EV_ETRE_EX3",
-    "items": {},
+    "items": {
+      "IT_AF_LW_SPE_006": {
+        "drop": 40.01842603947953
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_MAT_WOLF": {
+        "drop": 63.233361234511776
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 63.233361234511776
+      },
+      "IT_AF_AW_SPEAR": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      },
+      "": {
+        "drop": 98.93082791748886
+      }
+    },
     "names": {
       "en": "超高難度　エトア育成　EXクエスト1"
     },
     "exp": 8733,
     "nrg": 12,
     "jp": 6,
-    "enemies": 0,
+    "enemies": 12,
     "gils": 1800,
     "chests": 0
   },
   "QE_EV_ETRE_EX4": {
     "dataId": "QE_EV_ETRE_EX4",
-    "items": {},
+    "items": {
+      "IT_AF_LW_FIS_003": {
+        "drop": 40.01842603947953
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 63.233361234511776
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 63.233361234511776
+      },
+      "IT_AF_AW_FIST": {
+        "drop": 68.4679816766612
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      },
+      "": {
+        "drop": 98.93082791748886
+      }
+    },
     "names": {
       "en": "超高難度　エトア育成　EXクエスト2"
     },
     "exp": 8733,
     "nrg": 12,
     "jp": 6,
-    "enemies": 0,
+    "enemies": 12,
     "gils": 1800,
     "chests": 0
   },
@@ -55503,27 +55678,87 @@
   },
   "QE_MU_EV_01_EX3": {
     "dataId": "QE_MU_EV_01_EX3",
-    "items": {},
+    "items": {
+      "IT_AF_LW_AXE_003": {
+        "drop": 40.12630607616211,
+        "host": 10.204081632653061
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 68.81828007003381,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_BONE": {
+        "drop": 68.81828007003381,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 68.81828007003381,
+        "host": 22.448979591836736
+      },
+      "IT_AF_AW_AXE": {
+        "drop": 68.81828007003381,
+        "host": 22.448979591836736
+      },
+      "IT_AF_EXP_02": {
+        "drop": 94.36864852905273
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.81828007003381
+      },
+      "": {
+        "drop": 80.31255956592773
+      }
+    },
     "names": {
       "en": "Multi: 超高難度　憧れの王子様 【EX1】"
     },
     "exp": 8733,
     "nrg": 6,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 13,
     "gils": 1800,
     "chests": 0
   },
   "QE_MU_EV_01_EX4": {
     "dataId": "QE_MU_EV_01_EX4",
-    "items": {},
+    "items": {
+      "IT_AF_LW_BSW_004": {
+        "drop": 40.77476046520297,
+        "host": 10.204081632653061
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 65.06339418125441,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_OGRE": {
+        "drop": 68.89161553517852,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 68.89161553517852,
+        "host": 22.448979591836736
+      },
+      "IT_AF_AW_LSWORD": {
+        "drop": 68.89161553517852,
+        "host": 22.448979591836736
+      },
+      "IT_AF_EXP_02": {
+        "drop": 52.890429063936715
+      },
+      "IT_AF_EXP_03": {
+        "drop": 49.34991879732855
+      },
+      "": {
+        "drop": 0
+      }
+    },
     "names": {
       "en": "Multi: 超高難度　憧れの王子様 【EX2】"
     },
     "exp": 8733,
     "nrg": 6,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 6,
     "gils": 1800,
     "chests": 0
   },
@@ -55615,27 +55850,87 @@
   },
   "QE_MU_EV_ET_EX3": {
     "dataId": "QE_MU_EV_ET_EX3",
-    "items": {},
+    "items": {
+      "IT_AF_LW_SPE_006": {
+        "drop": 40.01842603947953,
+        "host": 10.204081632653061
+      },
+      "IT_AF_MAT_LIQUID_03": {
+        "drop": 68.4679816766612,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_WOLF": {
+        "drop": 63.233361234511776,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 63.233361234511776,
+        "host": 22.448979591836736
+      },
+      "IT_AF_AW_SPEAR": {
+        "drop": 68.4679816766612,
+        "host": 22.448979591836736
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      },
+      "": {
+        "drop": 98.93082791748886
+      }
+    },
     "names": {
       "en": "Multi: 超高難度　エトア育成　EXクエスト1"
     },
     "exp": 8733,
     "nrg": 6,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 12,
     "gils": 1800,
     "chests": 0
   },
   "QE_MU_EV_ET_EX4": {
     "dataId": "QE_MU_EV_ET_EX4",
-    "items": {},
+    "items": {
+      "IT_AF_LW_FIS_003": {
+        "drop": 40.01842603947953,
+        "host": 10.204081632653061
+      },
+      "IT_AF_MAT_SAND_03": {
+        "drop": 68.4679816766612,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_MABR": {
+        "drop": 63.233361234511776,
+        "host": 22.448979591836736
+      },
+      "IT_AF_MAT_LESS_01": {
+        "drop": 63.233361234511776,
+        "host": 22.448979591836736
+      },
+      "IT_AF_AW_FIST": {
+        "drop": 68.4679816766612,
+        "host": 22.448979591836736
+      },
+      "IT_AF_EXP_02": {
+        "drop": 93.93643916328719
+      },
+      "IT_AF_EXP_03": {
+        "drop": 68.4679816766612
+      },
+      "": {
+        "drop": 98.93082791748886
+      }
+    },
     "names": {
       "en": "Multi: 超高難度　エトア育成　EXクエスト2"
     },
     "exp": 8733,
     "nrg": 6,
     "jp": 0,
-    "enemies": 0,
+    "enemies": 12,
     "gils": 1800,
     "chests": 0
   },

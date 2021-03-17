@@ -4685,7 +4685,7 @@
     "dataId": "IT_PI_LW_STRN_01",
     "names": {
       "en": "Sterne (Knight of Ruin) Unit Shard",
-      "fr": "Fragments d'unité de Sterne (Chevalier déchu)"
+      "fr": "Fragment d'unité de Sterne (Chevalier déchu)"
     },
     "type": "unit_shard"
   },
@@ -4733,7 +4733,7 @@
     "dataId": "IT_PI_LW_HWLT",
     "names": {
       "en": "Howlet Unit Shard",
-      "fr": "Fragments d'unité de Howlet"
+      "fr": "Fragment d'unité de Howlet"
     },
     "type": "unit_shard"
   },
@@ -8086,6 +8086,24 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_GL_SE_PI_COM_5": {
+    "dataId": "IT_US_GL_SE_PI_COM_5",
+    "names": {
+      "en": "Select Element Fragment of Thought x120 Summon Ticket",
+      "fr": "Ticket sélectionneur de 120 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_PI_COM_6": {
+    "dataId": "IT_US_GL_SE_PI_COM_6",
+    "names": {
+      "en": "Select Element Fragment of Thought x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_02": {
     "dataId": "IT_US_SE_PI_COM_02",
     "names": {
@@ -8298,6 +8316,15 @@
     "names": {
       "en": "Select Mindsphere x80 Reserved Summon Ticket",
       "fr": "Ticket sélectionneur de réservation de 80 sphères spirituelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SP_GL_LW_02": {
+    "dataId": "IT_US_SE_SP_GL_LW_02",
+    "names": {
+      "en": "Mont Leonis Mindsphere x40 Reserved Summon Ticket",
+      "fr": "Ticket d'invocation de réservation de 40 sphères spirituelles de Mont Leonis"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9027,6 +9054,24 @@
     "names": {
       "en": "Select Awakening Prism x300 Summon Ticket",
       "fr": "Ticket sélectionneur de 300 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW-ITEM_07": {
+    "dataId": "IT_US_SE_AW-ITEM_07",
+    "names": {
+      "en": "Select Awakening Prism x120 Summon Ticket",
+      "fr": "Ticket sélectionneur de 120 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW-ITEM_08": {
+    "dataId": "IT_US_SE_AW-ITEM_08",
+    "names": {
+      "en": "Select Awakening Prism x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 prismes d'éveil"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9824,6 +9869,22 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_RAMD": {
+    "dataId": "IT_VPI_LW_RAMD",
+    "names": {
+      "en": "\"Clairvoyant Astrologer\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Astrologue extralucide"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_OOOO": {
+    "dataId": "IT_VPI_LW_OOOO",
+    "names": {
+      "en": "\"Swordsman's Refinement\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Voie de l'épéiste raffiné"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -10326,6 +10387,42 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_GL_SE_VPI_22": {
+    "dataId": "IT_US_GL_SE_VPI_22",
+    "names": {
+      "en": "[1st] Select UR Vision Card Shard x25 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 25 fragments d'atout-vision UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_VPI_23": {
+    "dataId": "IT_US_GL_SE_VPI_23",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_VPI_24": {
+    "dataId": "IT_US_GL_SE_VPI_24",
+    "names": {
+      "en": "[First Anniversary Countdown Part IV] Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "[Approche du 1er anniversaire - Partie IV] Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_VPI_25": {
+    "dataId": "IT_US_GL_SE_VPI_25",
+    "names": {
+      "en": "[1st] Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_VPI_11": {
     "dataId": "IT_US_SE_VPI_11",
     "names": {
@@ -10493,6 +10590,15 @@
     "names": {
       "en": "[First Anniversary Countdown Part II] Select UR Unit Shard x80 Summon Ticket",
       "fr": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 80 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_GL09": {
+    "dataId": "IT_US_SE_PI_GL09",
+    "names": {
+      "en": "[1st] Select UR Unit Shard x40 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 40 fragments d'unité UR"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

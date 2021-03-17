@@ -3516,7 +3516,7 @@ export class JsonService {
           skill.effects.forEach(effect => {
             if (effect.type === 'FAITH' || effect.type === 'FAITH_FIGHT' || effect.type === 'BRAVERY' || effect.type === 'BRAVERY_FIGHT') {
               // if (effect.calcType !== 'fixe' && effect.calcType !== 'resistance' && effect.calcType !== 'unknow') {
-                console.log(skill);
+                // console.log(skill);
               // }
             }
           });
