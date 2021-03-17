@@ -22,8 +22,46 @@ export class SimulatorService {
     console.log(dataSimulator);
 
     if (dataSimulator && dataSimulator.unit && dataSimulator.unit.selectedSkill) {
+      this.InitiateRealStats(unit, dataSimulator);
       this.getSkillEffects(unit, dataSimulator);
+      this.applyBuffsAndBreaks(unit, dataSimulator);
       this.calculateDamage(unit, dataSimulator);
+    }
+  }
+
+  InitiateRealStats(unit, dataSimulator) {
+    dataSimulator.realStats = {
+      unit: {},
+      target: {}
+    };
+
+    Object.keys(unit.stats).forEach(statType => {
+      dataSimulator.realStats.unit[statType] = unit.stats[statType].total;
+    });
+
+    dataSimulator.realStats.unit.faith = dataSimulator.unit.faith;
+    dataSimulator.realStats.unit.brave = dataSimulator.unit.brave;
+
+    Object.keys(dataSimulator.target).forEach(statType => {
+      if (statType !== 'race' && statType !== 'element' && statType !== 'breaks') {
+        dataSimulator.realStats.target[statType] = dataSimulator.target[statType];
+      }
+    });
+  }
+
+  updateRealStat(dataSimulator, type, statType, value) {
+    if (!dataSimulator.realStats[type][statType]) {
+      dataSimulator.realStats[type][statType] = 0;
+    }
+
+    if (type === 'unit') {
+      dataSimulator.realStats[type][statType] += value;
+    } else {
+      dataSimulator.realStats[type][statType] -= value;
+    }
+
+    if ((statType === 'faith' || statType === 'brave') && dataSimulator.realStats[type][statType] > 100) {
+      dataSimulator.realStats[type][statType] = 100;
     }
   }
 
@@ -127,7 +165,6 @@ export class SimulatorService {
       // @TODO check if condition
 
 
-      // @TODO check target
       switch (effect.target) {
         case 'self' :
           // @TODO manage fromImbue = only on basic attack
@@ -155,6 +192,9 @@ export class SimulatorService {
 
     console.log('Skill effects');
     console.log(dataSimulator.skillEffects);
+
+    console.log('Real stats');
+    console.log(dataSimulator.realStats);
   }
 
   applyEffectToUnit(unit, dataSimulator, effect) {
@@ -162,7 +202,7 @@ export class SimulatorService {
     console.log(effect);
 
     const effectType = effect.type;
-    const elementSkill = dataSimulator.unit.selectedSkill.elem ? dataSimulator.unit.selectedSkill.elem : unit.element;
+    const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
     const targetElement = dataSimulator.target.element;
     const targetRace = dataSimulator.target.race;
@@ -182,6 +222,7 @@ export class SimulatorService {
       if (value > this.calculateBuffValue(unit, effectType, dataSimulator.unit.buffs[effectType.toLowerCase()])) {
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].value = value;
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === 'DEFENSE_PENETRATION' || effectType === 'SPIRIT_PENETRATION' ) {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -189,6 +230,7 @@ export class SimulatorService {
       if (value > dataSimulator.unit.buffs[effectType.toLowerCase()]) {
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].value = value;
         dataSimulator.skillEffects.unit[effectType.toLowerCase()].overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === 'FAITH' || effectType === 'FAITH_FIGHT') {
       let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -197,7 +239,7 @@ export class SimulatorService {
         value = dataSimulator.unit.faith * value / 100;
       }
 
-      dataSimulator.skillEffects.unit.faith.value = value;
+      this.updateRealStat(dataSimulator, 'unit', 'faith', value);
     } else if (effectType === 'BRAVERY' || effectType === 'BRAVERY_FIGHT') {
       let value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
@@ -205,13 +247,14 @@ export class SimulatorService {
         value = dataSimulator.unit.brave * value / 100;
       }
 
-      dataSimulator.skillEffects.unit.brave.value = value;
+      this.updateRealStat(dataSimulator, 'unit', 'brave', value);
     } else if (effectType === 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION') {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
       if (value > dataSimulator.unit.buffs.typeResPene) {
         dataSimulator.skillEffects.unit.typeResPene.value = value;
         dataSimulator.skillEffects.unit.typeResPene.overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === targetElement.toUpperCase() + '_KILLER') {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -219,6 +262,7 @@ export class SimulatorService {
       if (value > dataSimulator.unit.buffs.elementKiller) {
         dataSimulator.skillEffects.unit.elementKiller.value = value;
         dataSimulator.skillEffects.unit.elementKiller.overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === targetRace.toUpperCase() + '_KILLER') {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -226,6 +270,7 @@ export class SimulatorService {
       if (value > dataSimulator.unit.buffs.raceKiller) {
         dataSimulator.skillEffects.unit.raceKiller.value = value;
         dataSimulator.skillEffects.unit.raceKiller.overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === elementSkill.toUpperCase() + '_ATK') {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -233,6 +278,7 @@ export class SimulatorService {
       if (value > dataSimulator.unit.buffs.elementAtk) {
         dataSimulator.skillEffects.unit.elementAtk.value = value;
         dataSimulator.skillEffects.unit.elementAtk.overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     } else if (effectType === damageType.toUpperCase() + '_ATK') {
       const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
@@ -240,6 +286,7 @@ export class SimulatorService {
       if (value > dataSimulator.unit.buffs.damageType) {
         dataSimulator.skillEffects.unit.damageType.value = value;
         dataSimulator.skillEffects.unit.damageType.overwriteBuff = true;
+        this.updateRealStat(dataSimulator, 'unit', effectType, value);
       }
     }
   }
@@ -249,49 +296,44 @@ export class SimulatorService {
     console.log(effect);
 
     const effectType = effect.type;
-    const elementSkill = dataSimulator.unit.selectedSkill.elem ? dataSimulator.unit.selectedSkill.elem : unit.element;
+    const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
 
     if (effectType === 'DEF'
       || effectType === 'SPR'
-      || effectType === 'FAITH'
-      || effectType === 'FAITH_FIGHT'
       || effectType === 'ATTACK_RES'
       || effectType === 'AOE_RES'
-      || effectType === elementSkill.toUpperCase() + '_RES'
-      || effectType === damageType.toUpperCase() + '_RES'
     ) {
-      const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
-      console.log(value);
+      const value = this.getPositiveValue(this.getEffectValue(dataSimulator.unit.selectedSkill, effect));
 
-      if (effect.calcType === 'fixe' || effect.calcType === 'resistance' || effect.calcType !== 'unknow') {
-        if (effectType === 'DEF'
-          || effectType === 'SPR'
-          || effectType === 'ATTACK_RES'
-          || effectType === 'AOE_RES'
-        ) {
-          dataSimulator.target[effectType.toLowerCase()] += value;
-        } else if (effectType === 'FAITH' || effectType === 'FAITH_FIGHT') {
-          dataSimulator.target.faith += value;
-        } else if (effectType === elementSkill.toUpperCase() + '_RES') {
-          dataSimulator.target.elementRes += value;
-        } else {
-          dataSimulator.target.damageTypeRes += value;
-        }
-      } else {
-        if (effectType === 'DEF'
-          || effectType === 'SPR'
-          || effectType === 'ATTACK_RES'
-          || effectType === 'AOE_RES'
-        ) {
-          dataSimulator.target[effectType.toLowerCase()] += dataSimulator.target[effectType.toLowerCase()] * value / 100;
-        } else if (effectType === 'FAITH' || effectType === 'FAITH_FIGHT') {
-          dataSimulator.target.faith += dataSimulator.target.faith * value / 100;
-        } else if (effectType === elementSkill.toUpperCase() + '_RES') {
-          dataSimulator.target.elementRes += dataSimulator.target.elementRes * value / 100;
-        } else {
-          dataSimulator.target.damageTypeRes += dataSimulator.target.damageTypeRes * value / 100;
-        }
+      if (value > this.getPositiveValue(dataSimulator.target.breaks[effectType.toLowerCase()])) {
+        dataSimulator.skillEffects.target[effectType.toLowerCase()].value = value;
+        dataSimulator.skillEffects.target[effectType.toLowerCase()].overwriteBreak = true;
+        this.updateRealStat(dataSimulator, 'target', effectType.toLowerCase(), value);
+      }
+    } else if (effectType === 'FAITH' || effectType === 'FAITH_FIGHT') {
+      const value = this.getPositiveValue(this.getEffectValue(dataSimulator.unit.selectedSkill, effect));
+
+      if (value > this.getPositiveValue(dataSimulator.target.breaks.faith)) {
+        dataSimulator.skillEffects.target.faith.value = value;
+        dataSimulator.skillEffects.target.faith.overwriteBreak = true;
+        this.updateRealStat(dataSimulator, 'target', 'faith', value);
+      }
+    } else if (effectType === elementSkill.toUpperCase() + '_RES') {
+      const value = this.getPositiveValue(this.getEffectValue(dataSimulator.unit.selectedSkill, effect));
+
+      if (value > this.getPositiveValue(dataSimulator.target.breaks.elementRes)) {
+        dataSimulator.skillEffects.target.elementRes.value = value;
+        dataSimulator.skillEffects.target.elementRes.overwriteBreak = true;
+        this.updateRealStat(dataSimulator, 'target', 'elementRes', value);
+      }
+    } else if (effectType === damageType.toUpperCase() + '_RES') {
+      const value = this.getPositiveValue(this.getEffectValue(dataSimulator.unit.selectedSkill, effect));
+
+      if (value > this.getPositiveValue(dataSimulator.target.breaks.damageTypeRes)) {
+        dataSimulator.skillEffects.target.damageTypeRes.value = value;
+        dataSimulator.skillEffects.target.damageTypeRes.overwriteBreak = true;
+        this.updateRealStat(dataSimulator, 'target', 'damageTypeRes', value);
       }
     }
   }
@@ -341,14 +383,50 @@ export class SimulatorService {
     return value;
   }
 
-  calculateDamage(unit, dataSimulator) {
-    const atk = unit.stats.ATK.total;
-    const mag = unit.stats.MAG.total;
-    const agi = unit.stats.AGI.total;
-    const dex = unit.stats.DEX.total;
-    const luck = unit.stats.LUCK.total;
+  applyBuffsAndBreaks(unit, dataSimulator) {
+    const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
+    const damageType = dataSimulator.unit.selectedSkill.damage.type;
+    const targetElement = dataSimulator.target.element;
+    const targetRace = dataSimulator.target.race;
 
-    // @TODO Apply buffs
+    Object.keys(dataSimulator.unit.buffs).forEach(buffType => {
+      if (dataSimulator.unit.buffs[buffType] > 0 && !dataSimulator.skillEffects.unit[buffType].overwriteBuff) {
+         if (buffType === 'atk'
+          || buffType === 'mag'
+          || buffType === 'dex'
+          || buffType === 'luck'
+          || buffType === 'agi'
+        ) {
+          this.updateRealStat(dataSimulator, 'unit', buffType.toUpperCase(), this.calculateBuffValue(unit, buffType.toUpperCase(), dataSimulator.unit.buffs[buffType]));
+        } else if (buffType === 'defense_penetration' || buffType === 'spirit_penetration') {
+          this.updateRealStat(dataSimulator, 'unit', buffType.toUpperCase(), dataSimulator.unit.buffs[buffType]);
+        } else if (buffType === 'damageType') {
+          this.updateRealStat(dataSimulator, 'unit', damageType.toUpperCase() + '_ATK', dataSimulator.unit.buffs[buffType]);
+        } else if (buffType === 'elementAtk') {
+          this.updateRealStat(dataSimulator, 'unit', elementSkill.toUpperCase() + '_ATK', dataSimulator.unit.buffs[buffType]);
+        } else if (buffType === 'elementKiller') {
+          this.updateRealStat(dataSimulator, 'unit', targetElement.toUpperCase() + '_KILLER', dataSimulator.unit.buffs[buffType]);
+        } else if (buffType === 'raceKiller') {
+          this.updateRealStat(dataSimulator, 'unit', targetRace.toUpperCase() + '_KILLER', dataSimulator.unit.buffs[buffType]);
+        } else if (buffType === 'typeResPene') {
+          this.updateRealStat(dataSimulator, 'unit', 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION', dataSimulator.unit.buffs[buffType]);
+        }
+      }
+    });
+
+    Object.keys(dataSimulator.target.breaks).forEach(breakType => {
+      if (dataSimulator.target.breaks[breakType] > 0 && !dataSimulator.skillEffects.target[breakType].overwriteBreak) {
+        this.updateRealStat(dataSimulator, 'target', breakType, dataSimulator.target.breaks[breakType]);
+      }
+    });
+  }
+
+  calculateDamage(unit, dataSimulator) {
+    const atk = dataSimulator.realStats.unit.ATK;
+    const mag = dataSimulator.realStats.unit.MAG;
+    const agi = dataSimulator.realStats.unit.AGI;
+    const dex = dataSimulator.realStats.unit.DEX;
+    const luck = dataSimulator.realStats.unit.LUCK;
 
     let baseDamage = 0;
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
@@ -387,8 +465,6 @@ export class SimulatorService {
 
     dataSimulator.result = damage;
 
-    // @TODO effect of skill (breaks, ignore, ...)
-
     // @TODO add maths possibilities
   }
 
@@ -423,15 +499,15 @@ export class SimulatorService {
     const targetElement = dataSimulator.target.element;
     const targetRace = dataSimulator.target.race;
 
-    Object.keys(unit.stats).forEach(statType => {
+    Object.keys(dataSimulator.realStats.unit).forEach(statType => {
       if (statType === elementSkill.toUpperCase() + '_ATK'
         || statType === damageType.toUpperCase() + '_ATK'
         || statType === targetElement.toUpperCase() + '_KILLER'
         || statType === targetRace.toUpperCase() + '_KILLER'
       ) {
         console.log('multiplier -- ' + statType);
-        console.log(unit.stats[statType].total);
-        multiplier += unit.stats[statType].total;
+        console.log(dataSimulator.realStats.unit[statType]);
+        multiplier += dataSimulator.realStats.unit[statType];
       }
     });
 
@@ -473,9 +549,9 @@ export class SimulatorService {
     const defensiveValue = dataSimulator.target[type];
     let ignoreDefensive = 0;
 
-    Object.keys(unit.stats).forEach(statType => {
+    Object.keys(dataSimulator.realStats.unit).forEach(statType => {
       if (statType === (type === 'def' ? 'DEFENSE_PENETRATION' : 'SPIRIT_PENETRATION')) {
-        ignoreDefensive = unit.stats[statType];
+        ignoreDefensive = dataSimulator.realStats.unit[statType];
       }
     });
 
@@ -488,6 +564,6 @@ export class SimulatorService {
   }
 
   calculateBuffValue(unit, buffType, value) {
-    return Math.floor(unit.stats[buffType].base * value / 100);
+    return Math.floor(unit.stats[buffType].baseTotal * value / 100);
   }
 }

@@ -643,14 +643,23 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
         damageTypeRes: 0,
         attack_res: 0,
         aoe_res: 0,
-        faith: 0
+        faith: 0,
+        breaks: {
+          def: 0,
+          spr: 0,
+          elementRes: 0,
+          damageTypeRes: 0,
+          attack_res: 0,
+          aoe_res: 0,
+          faith: 0
+        }
       },
       result: 0
     };
   }
 
   calculateDamageSim() {
-    //this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
+    // this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
   }
 
   resetUnit() {
