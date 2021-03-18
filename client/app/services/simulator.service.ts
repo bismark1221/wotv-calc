@@ -66,108 +66,56 @@ export class SimulatorService {
   }
 
   getSkillEffects(unit, dataSimulator) {
+    const unitEffectTypes = [
+      'atk',
+      'mag',
+      'dex',
+      'agi',
+      'luck',
+      'raceKiller',
+      'elementKiller',
+      'elementAtk',
+      'damageType',
+      'criticDamage',
+      'defense_penetration',
+      'spirit_penetration',
+      'typeResPene',
+      'brave',
+      'faith'
+    ];
+    const targetEffectTypes = [
+      'def',
+      'spr',
+      'elementRes',
+      'damageTypeRes',
+      'attack_res',
+      'aoe_res',
+      'faith'
+    ];
+
     dataSimulator.skillEffects = {
-      unit: {
-        atk: {
-          value: 0,
-          overwriteBuff: false
-        },
-        mag: {
-          value: 0,
-          overwriteBuff: false
-        },
-        dex: {
-          value: 0,
-          overwriteBuff: false
-        },
-        agi: {
-          value: 0,
-          overwriteBuff: false
-        },
-        luck: {
-          value: 0,
-          overwriteBuff: false
-        },
-        raceKiller: {
-          value: 0,
-          overwriteBuff: false
-        },
-        elementKiller: {
-          value: 0,
-          overwriteBuff: false
-        },
-        elementAtk: {
-          value: 0,
-          overwriteBuff: false
-        },
-        damageType: {
-          value: 0,
-          overwriteBuff: false
-        },
-        criticDamage: {
-          value: 0,
-          overwriteBuff: false
-        },
-        defense_penetration: {
-          value: 0,
-          overwriteBuff: false
-        },
-        spirit_penetration: {
-          value: 0,
-          overwriteBuff: false
-        },
-        typeResPene: {
-          value: 0,
-          overwriteBuff: false
-        },
-        brave: {
-          value: 0,
-          overwriteBuff: false
-        },
-        faith: {
-          value: 0,
-          overwriteBuff: false
-        }
-      },
-      target: {
-        def: {
-          value: 0,
-          overwriteBreak: false
-        },
-        spr: {
-          value: 0,
-          overwriteBreak: false
-        },
-        elementRes: {
-          value: 0,
-          overwriteBreak: false
-        },
-        damageTypeRes: {
-          value: 0,
-          overwriteBreak: false
-        },
-        attack_res: {
-          value: 0,
-          overwriteBreak: false
-        },
-        aoe_res: {
-          value: 0,
-          overwriteBreak: false
-        },
-        faith: {
-          value: 0,
-          overwriteBreak: false
-        }
-      }
+      unit: {},
+      target: {},
+      conditions: {}
     };
 
+    unitEffectTypes.forEach(effectType => {
+      dataSimulator.skillEffects.unit[effectType] = {
+        value: 0,
+        overwriteBuff: false
+      };
+    });
+
+    targetEffectTypes.forEach(effectType => {
+      dataSimulator.skillEffects.target[effectType] = {
+        value: 0,
+        overwriteBreak: false
+      };
+    });
+
     dataSimulator.unit.selectedSkill.effects.forEach(effect => {
-      // @TODO check if condition
-
-
       switch (effect.target) {
         case 'self' :
-          // @TODO manage fromImbue = only on basic attack
           this.applyEffectToUnit(unit, dataSimulator, effect);
           break;
         case 'target' :
@@ -206,6 +154,8 @@ export class SimulatorService {
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
     const targetElement = dataSimulator.target.element;
     const targetRace = dataSimulator.target.race;
+
+    // @TODO check if condition
 
     if (effectType === 'ATK'
       || effectType === 'MAG'
@@ -298,6 +248,8 @@ export class SimulatorService {
     const effectType = effect.type;
     const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
+
+    // @TODO check if condition
 
     if (effectType === 'DEF'
       || effectType === 'SPR'
@@ -511,8 +463,6 @@ export class SimulatorService {
       }
     });
 
-    // @TODO Apply buffs
-
     // @TODO Critical
 
     return multiplier / 100;
@@ -559,8 +509,16 @@ export class SimulatorService {
   }
 
   getResistanceMultiplier(unit, dataSimulator) {
-    // @TODO Ignore resistance type
-    return (1 - dataSimulator.target.elementRes / 100) * (1 - dataSimulator.target.damageTypeRes / 100);
+    let ignoreDefensive = 0;
+    const damageType = dataSimulator.unit.selectedSkill.damage.type;
+
+    Object.keys(dataSimulator.realStats.unit).forEach(statType => {
+      if (statType === 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION') {
+        ignoreDefensive = dataSimulator.realStats.unit[statType];
+      }
+    });
+
+    return (1 - dataSimulator.target.elementRes / 100) * (1 - ((dataSimulator.target.damageTypeRes / 100) * (1 - (ignoreDefensive / 100))));
   }
 
   calculateBuffValue(unit, buffType, value) {

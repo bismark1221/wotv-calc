@@ -49051,10 +49051,10 @@
             "sp": 35,
             "effects": [
               {
-                "type": "WATER_KILLER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "fixe",
+                "calcType": "resistance",
                 "target": "self"
               }
             ],
@@ -49330,10 +49330,10 @@
             "sp": 40,
             "effects": [
               {
-                "type": "WATER_KILLER",
+                "type": "WATER_RES",
                 "minValue": 4,
                 "maxValue": 4,
-                "calcType": "fixe",
+                "calcType": "resistance",
                 "target": "self"
               }
             ],
@@ -49355,10 +49355,10 @@
             "sp": 50,
             "effects": [
               {
-                "type": "WATER_KILLER",
+                "type": "WATER_RES",
                 "minValue": 3,
                 "maxValue": 3,
-                "calcType": "fixe",
+                "calcType": "resistance",
                 "target": "self"
               }
             ],
@@ -49508,10 +49508,10 @@
             "sp": 80,
             "effects": [
               {
-                "type": "WATER_KILLER",
+                "type": "WATER_RES",
                 "minValue": 5,
                 "maxValue": 5,
-                "calcType": "fixe",
+                "calcType": "resistance",
                 "target": "self"
               }
             ],

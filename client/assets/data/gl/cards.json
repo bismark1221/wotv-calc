@@ -5180,15 +5180,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GS",
@@ -5205,15 +5203,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GS_AW",
@@ -5230,15 +5226,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GSMAX",
@@ -8250,15 +8244,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GS",
@@ -8275,15 +8267,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GS_AW",
@@ -8300,15 +8290,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GSMAX",

@@ -2552,7 +2552,7 @@ export class JsonService {
             let finished = false;
             let i = 1;
             let duplicateFinded = false;
-            const needToAddKiller = false;
+            let conditionToAdd = null;
 
             while (!finished && buff) {
               if (this[this.version].buffs[buff]['type' + i]) {
@@ -2572,12 +2572,9 @@ export class JsonService {
                   }
 
                   let type = this.buffTypes[this[this.version].buffs[buff]['type' + i]];
-                  if (this[this.version].buffs[buff]['tag' + i]) {
-                    if (type !== 'KILLER' && type !== 'IMBUE' && type !== 'WATER') {
-                      skill.effects.push({
-                        type: type
-                      });
-                      alreadyAddedBuffs.push(buff);
+                  if (this[this.version].buffs[buff]['tag' + i] && type !== 'WATER') {
+                    if (type !== 'KILLER' && type !== 'IMBUE') {
+                      conditionToAdd = type;
                     }
 
                     type = this.killers[this[this.version].buffs[buff]['tag' + i]] + '_KILLER';
@@ -2648,6 +2645,10 @@ export class JsonService {
                       addedBuff.condition = this.conditions[this[this.version].buffs[buff].conds[0]];
                     } else {
                       delete addedBuff.condition;
+                    }
+
+                    if (conditionToAdd) {
+                      addedBuff.buffOnCondition = conditionToAdd;
                     }
 
                     if (this[this.version].buffs[buff]['calc' + i] === 2) {

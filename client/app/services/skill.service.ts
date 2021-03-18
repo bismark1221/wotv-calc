@@ -1017,14 +1017,20 @@ export class SkillService {
       break;
     }
 
-    if (effect.condition) {
+    if (effect.condition || effect.buffOnCondition) {
       const conditions = {
         'BEHIND': ' when attacking from behind',
-        'MALE': 'when attacking male units',
+        'MALE': ' when attacking male units',
+        'ON_PHYSIC_ATTACK': ' when attacking with physic attacks',
+        'ON_MAGIC_ATTACK': ' when attacking with magic attacks'
       };
 
       if (conditions[effect.condition]) {
         html = html + conditions[effect.condition];
+      }
+
+      if (conditions[effect.buffOnCondition]) {
+        html = html + conditions[effect.buffOnCondition];
       }
     }
 

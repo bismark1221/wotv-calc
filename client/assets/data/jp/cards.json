@@ -6590,15 +6590,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GS",
@@ -6614,15 +6612,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GS_AW",
@@ -6638,15 +6634,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_TITN_GSMAX",
@@ -8613,15 +8607,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 7,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GS",
@@ -8637,15 +8629,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 1,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GS_AW",
@@ -8661,15 +8651,13 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe",
               "rate": 200,
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_SCAL_GSMAX",
@@ -17080,16 +17068,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_HUNT_GS_2",
@@ -17105,16 +17091,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_HUNT_GSAW_2",
@@ -17130,16 +17114,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_PHYSIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
               "condition": "ICE_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_PHYSIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_HUNT_GSMAX",
@@ -19233,16 +19215,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_ADLD_GS_2",
@@ -19258,16 +19238,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_ADLD_GS_AW_2",
@@ -19283,16 +19261,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 15,
               "maxValue": 15,
               "calcType": "fixe",
               "rate": 200,
               "condition": "LIGHTNING_ELEMENT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "dataId": "SK_VC_LW_ADLD_GSMAX",

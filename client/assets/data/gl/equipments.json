@@ -33028,15 +33028,13 @@
           "dataId": "SK_ACC_LW_THLA_1_1",
           "effects": [
             {
-              "type": "ON_MAGIC_ATTACK"
-            },
-            {
               "type": "HUMAN_KILLER",
               "minValue": 20,
               "maxValue": 20,
               "calcType": "fixe",
               "rate": 200,
-              "target": "self"
+              "target": "self",
+              "buffOnCondition": "ON_MAGIC_ATTACK"
             }
           ],
           "type": "support",
