@@ -114,27 +114,29 @@ export class SimulatorService {
     });
 
     dataSimulator.unit.selectedSkill.effects.forEach(effect => {
-      switch (effect.target) {
-        case 'self' :
-          this.applyEffectToUnit(unit, dataSimulator, effect);
-          break;
-        case 'target' :
-          this.applyEffectToTarget(unit, dataSimulator, effect);
-          break;
-        case 'selfSide' :
-          this.applyEffectToUnit(unit, dataSimulator, effect);
-          break;
-        case 'ennemySide' :
-          this.applyEffectToTarget(unit, dataSimulator, effect);
-          break;
-        case 'all' :
-          this.applyEffectToTarget(unit, dataSimulator, effect);
-          break;
-        default :
-          if (effect.target === '') { // Killer have no target
+      if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
+        switch (effect.target) {
+          case 'self' :
             this.applyEffectToUnit(unit, dataSimulator, effect);
-          }
-          break;
+            break;
+          case 'target' :
+            this.applyEffectToTarget(unit, dataSimulator, effect);
+            break;
+          case 'selfSide' :
+            this.applyEffectToUnit(unit, dataSimulator, effect);
+            break;
+          case 'ennemySide' :
+            this.applyEffectToTarget(unit, dataSimulator, effect);
+            break;
+          case 'all' :
+            this.applyEffectToTarget(unit, dataSimulator, effect);
+            break;
+          default :
+            if (effect.target === '') { // Killer have no target
+              this.applyEffectToUnit(unit, dataSimulator, effect);
+            }
+            break;
+        }
       }
     });
 
