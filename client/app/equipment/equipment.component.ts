@@ -103,9 +103,7 @@ export class EquipmentComponent implements OnInit {
         equipmentLvl.forEach(skill => {
           skill.name = this.nameService.getName(skill);
 
-          skill.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEquipmentEffect(this.equipment, skill, effect);
-          });
+          skill.effectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill);
 
           if (skill.damage) {
             skill.damageHtml = this.skillService.formatDamage(this.equipment, skill, skill.damage);

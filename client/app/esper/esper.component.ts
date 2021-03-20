@@ -69,9 +69,7 @@ export class EsperComponent implements OnInit {
 
       this.esper.skills.forEach(skill => {
         skill.name = this.nameService.getName(skill);
-        skill.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.esper, skill, effect);
-        });
+        skill.effectsHtml = this.skillService.formatEffects(this.esper, skill);
 
         if (skill.damage) {
           skill.damageHtml = this.skillService.formatDamage(this.esper, skill, skill.damage);

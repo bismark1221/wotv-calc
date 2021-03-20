@@ -124,6 +124,10 @@
           <td class="skillEffectTd">
             <div>{{ buff.classic.counterHtml }}</div>
 
+            <div *ngFor="let effect of buff.classic.effectsHtml.before">
+              {{ effect }}
+            </div>
+
             <div *ngIf="buff.classic.damageHtml && buff.classic.damageHtml.value">
               <ng-template #tip_damage>
                 <div *ngIf="!buff.classic.elem">
@@ -154,8 +158,8 @@
               <div [innerHTML]="buff.classic.damageHtml.others | safeHtml"></div>
             </div>
 
-            <div *ngFor="let effect of buff.classic.effects">
-              {{ effect.formatHtml }}
+            <div *ngFor="let effect of buff.classic.effectsHtml.after">
+              {{ effect }}
             </div>
           </td>
           <td class="rangeTd">

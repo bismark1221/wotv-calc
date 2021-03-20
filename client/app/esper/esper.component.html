@@ -164,6 +164,10 @@
               <td class="skillEffectTd">
                 <div>{{ esper.skills[0].counterHtml }}</div>
 
+                <div *ngFor="let effect of esper.skills[0].effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="esper.skills[0].damageHtml && esper.skills[0].damageHtml.value">
                   <ng-template #tip_damage>
                     <div *ngIf="esper.skills[0].based === 'physic'">
@@ -190,8 +194,8 @@
                   <div [innerHTML]="esper.skills[0].damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of esper.skills[0].effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of esper.skills[0].effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>

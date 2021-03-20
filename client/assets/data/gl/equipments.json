@@ -14558,7 +14558,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -14632,7 +14633,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -14706,7 +14708,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -14780,7 +14783,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -14854,7 +14858,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -14928,7 +14933,8 @@
               "minValue": 90,
               "maxValue": 120,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -27791,7 +27797,8 @@
             {
               "type": "HP_COST",
               "value": 25,
-              "calcType": "percent"
+              "calcType": "percent",
+              "timing": "SKILL_BEFORE"
             },
             {
               "type": "ATK",
@@ -27800,7 +27807,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -27885,7 +27893,8 @@
               "maxValue": 35,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -27987,14 +27996,16 @@
               "maxValue": 20,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "CT",
               "minValue": 250,
               "maxValue": 500,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -28659,7 +28670,8 @@
               "calcType": "fixe",
               "rate": 200,
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MACHINA_KILLER",
@@ -28668,7 +28680,8 @@
               "calcType": "fixe",
               "rate": 200,
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ATK",
@@ -28678,7 +28691,8 @@
               "rate": 200,
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "HP",
@@ -28687,7 +28701,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -28805,7 +28820,8 @@
               "maxValue": 50,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ATK",
@@ -28814,7 +28830,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MAG",
@@ -28823,7 +28840,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -29455,7 +29473,8 @@
               "calcType": "percent",
               "turn": 3,
               "turnType": "TURNS",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "DISPEL",
@@ -29469,7 +29488,8 @@
                 "PETRIFY",
                 "GRADUAL_PETRIFY"
               ],
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -29619,14 +29639,16 @@
               "calcType": "percent",
               "turn": 3,
               "turnType": "COUNT",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "HP",
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -29763,7 +29785,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -29907,7 +29930,8 @@
               "maxValue": 25,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -30043,7 +30067,8 @@
                 "IMMOBILIZE",
                 "STOP"
               ],
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -30672,7 +30697,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -30919,7 +30945,8 @@
               "calcType": "percent",
               "turn": 1,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "CT",
@@ -30928,7 +30955,8 @@
               "calcType": "unknow",
               "rate": 15,
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -31229,7 +31257,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ACCURACY",
@@ -31237,7 +31266,8 @@
               "maxValue": 60,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -31451,7 +31481,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MOVE",
@@ -31459,7 +31490,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -31669,7 +31701,8 @@
               "minValue": 5,
               "maxValue": 15,
               "calcType": "unknow",
-              "target": "target"
+              "target": "target",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -31808,7 +31841,8 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32027,7 +32061,8 @@
               "calcType": "percent",
               "turn": 3,
               "turnType": "COUNT",
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32125,7 +32160,8 @@
               "minValue": -6,
               "maxValue": -8,
               "calcType": "fixe",
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MOVE",
@@ -32133,7 +32169,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "JUMP",
@@ -32141,7 +32178,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32269,7 +32307,8 @@
             {
               "type": "HP_COST",
               "value": 25,
-              "calcType": "percent"
+              "calcType": "percent",
+              "timing": "SKILL_BEFORE"
             },
             {
               "type": "DEF",
@@ -32277,7 +32316,8 @@
               "maxValue": 45,
               "calcType": "fixe",
               "turn": 1,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "SPR",
@@ -32285,7 +32325,8 @@
               "maxValue": 45,
               "calcType": "fixe",
               "turn": 1,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32480,7 +32521,8 @@
               "maxValue": 25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "SLASH_ATK",
@@ -32488,7 +32530,8 @@
               "maxValue": 25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32702,7 +32745,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "AGI",
@@ -32711,7 +32755,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -32923,7 +32968,8 @@
               "maxValue": 80,
               "calcType": "fixe",
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ACCURACY",
@@ -32931,7 +32977,8 @@
               "maxValue": 30,
               "calcType": "fixe",
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -33160,7 +33207,8 @@
               "maxValue": 25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -33289,7 +33337,8 @@
               "rate": 200,
               "turn": 1,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MAG",
@@ -33299,7 +33348,8 @@
               "rate": 200,
               "turn": 1,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "WIND_KILLER",
@@ -33308,7 +33358,8 @@
               "calcType": "fixe",
               "rate": 200,
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -33448,14 +33499,16 @@
               "calcType": "fixe",
               "rate": 200,
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "PROVOKE",
               "minValue": -6,
               "maxValue": -6,
               "calcType": "fixe",
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -33774,7 +33827,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "TP_AUTO_RESTORE",
@@ -33782,7 +33836,8 @@
               "maxValue": 10,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -33917,7 +33972,8 @@
               "maxValue": 45,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "AOE_RES",
@@ -33925,7 +33981,8 @@
               "maxValue": -25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34147,7 +34204,8 @@
               "maxValue": 5,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "DEFENSE_PENETRATION",
@@ -34155,7 +34213,8 @@
               "maxValue": 50,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34349,7 +34408,8 @@
               "maxValue": 25,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "SHELL_ATK",
@@ -34357,7 +34417,8 @@
               "maxValue": 25,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34462,7 +34523,8 @@
               "minValue": 10,
               "maxValue": 25,
               "calcType": "unknow",
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34656,14 +34718,16 @@
           "dataId": "SK_ACC_LW_IRDL_1_1",
           "effects": [
             {
-              "type": "SWITCH_POS"
+              "type": "SWITCH_POS",
+              "timing": "SKILL_BEFORE"
             },
             {
               "type": "QUICKEN_ATK",
               "calcType": "percent",
               "rate": 200,
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34772,7 +34836,8 @@
               "maxValue": 35,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -34881,7 +34946,8 @@
               "minValue": 10,
               "maxValue": 20,
               "calcType": "unknow",
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "SLASH_RES",
@@ -34889,7 +34955,8 @@
               "maxValue": 15,
               "calcType": "resistance",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35084,7 +35151,8 @@
               "maxValue": 40,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35203,7 +35271,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ACCURACY",
@@ -35211,7 +35280,8 @@
               "maxValue": 30,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "DEF",
@@ -35219,7 +35289,8 @@
               "maxValue": -10,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "SPR",
@@ -35227,7 +35298,8 @@
               "maxValue": -10,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35366,7 +35438,8 @@
               "maxValue": 20,
               "calcType": "percent",
               "rate": 200,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35497,14 +35570,16 @@
             {
               "type": "HP_COST",
               "value": 20,
-              "calcType": "percent"
+              "calcType": "percent",
+              "timing": "SKILL_BEFORE"
             },
             {
               "type": "PHYSIC_EVADE",
               "calcType": "percent",
               "rate": 200,
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35604,7 +35679,8 @@
             {
               "type": "HP_COST",
               "value": 20,
-              "calcType": "percent"
+              "calcType": "percent",
+              "timing": "SKILL_BEFORE"
             },
             {
               "type": "MAG",
@@ -35613,7 +35689,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -35947,7 +36024,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MAG",
@@ -35956,7 +36034,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "BRAVERY_FIGHT",
@@ -35964,7 +36043,8 @@
               "maxValue": 10,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36110,7 +36190,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ATK",
@@ -36119,7 +36200,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36254,7 +36336,8 @@
               "maxValue": 42,
               "calcType": "percent",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MOVE",
@@ -36262,7 +36345,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36466,7 +36550,8 @@
               "maxValue": 25,
               "calcType": "resistance",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36555,7 +36640,8 @@
               "maxValue": 30,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36736,7 +36822,8 @@
               "maxValue": -350,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -36940,7 +37027,8 @@
               "maxValue": 30,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MOVE",
@@ -36948,7 +37036,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -37169,7 +37258,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "ACCURACY",
@@ -37177,7 +37267,8 @@
               "maxValue": 70,
               "calcType": "fixe",
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -37295,7 +37386,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 1,
-              "target": "allyNotSelf"
+              "target": "allyNotSelf",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "JUMP",
@@ -37303,7 +37395,8 @@
               "maxValue": 1,
               "calcType": "fixe",
               "turn": 1,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -37444,7 +37537,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "RES_MAGIC_ATK_PENETRATION",
@@ -37452,7 +37546,8 @@
               "maxValue": 50,
               "calcType": "fixe",
               "turn": 3,
-              "target": "self"
+              "target": "self",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -37587,7 +37682,8 @@
               "maxValue": 30,
               "calcType": "fixe",
               "turn": 3,
-              "target": "selfSide"
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -46702,7 +46798,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -46771,7 +46868,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -46840,7 +46938,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -46909,7 +47008,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -46978,7 +47078,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",
@@ -47047,7 +47148,8 @@
               "minValue": 180,
               "maxValue": 210,
               "calcType": "unknow",
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "type": "skill",

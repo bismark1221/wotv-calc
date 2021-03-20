@@ -127,9 +127,7 @@ export class UnitComponent implements OnInit {
           skill.name = this.nameService.getName(skill);
           skill.upgradeHtml = this.skillService.formatUpgrade(this.unit, skill);
 
-          skill.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-          });
+          skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
 
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
 
@@ -197,9 +195,7 @@ export class UnitComponent implements OnInit {
 
         this.unit.limit.basedHtml = this.unit.limit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.limit.based.toLowerCase() + '.png\' />' : '';
 
-        this.unit.limit.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.limit, effect);
-        });
+        this.unit.limit.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.limit);
 
         this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
 
@@ -212,9 +208,7 @@ export class UnitComponent implements OnInit {
       if (this.unit.attack) {
         this.unit.attack.basedHtml = this.unit.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.attack.based.toLowerCase() + '.png\' />' : '';
 
-        this.unit.attack.effects.forEach(effect => {
-          effect.formatHtml = this.skillService.formatEffect(this.unit, this.unit.attack, effect);
-        });
+        this.unit.attack.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.attack);
 
         this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
 
@@ -229,9 +223,7 @@ export class UnitComponent implements OnInit {
           skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.rangeService.formatRange(this.unit, skill);
-          skill.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(this.unit, skill, effect);
-          });
+          skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
         });
       }
 
@@ -291,10 +283,7 @@ export class UnitComponent implements OnInit {
             let newSkill = upgrade.newSkill;
             newSkill.name = this.nameService.getName(newSkill);
 
-            newSkill.effects.forEach(effect => {
-              effect.formatHtml = this.skillService.formatEffect(this.unit, newSkill, effect);
-            });
-
+            newSkill.effectsHtml = this.skillService.formatEffects(this.unit, newSkill);
             newSkill.damageHtml = this.skillService.formatDamage(this.unit, newSkill, newSkill.damage);
 
             if (newSkill.counter) {
@@ -303,7 +292,6 @@ export class UnitComponent implements OnInit {
 
             this.rangeService.formatRange(this.unit, newSkill);
             newSkill = this.addUpgrade(newSkill);
-
 
             newSkill.activatedBy = activatedBy;
 

@@ -64,12 +64,10 @@ export class CardComponent implements OnInit {
         buffTypes.forEach(buffType => {
           this.card[buffType].forEach(buff => {
             if (buff[skillType]) {
-              if (buff[skillType].type !== 'buff' && buff[skillType].type !== 'support') {
+              if (buff[skillType].type !== 'buff' && buff[skillType].type !== 'support' && buff[skillType].type !== 'party') {
                 buff[skillType].name = this.nameService.getName(buff[skillType]);
 
-                buff[skillType].effects.forEach(effect => {
-                  effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect);
-                });
+                buff[skillType].effectsHtml = this.skillService.formatEffects(this.card, buff[skillType]);
 
                 buff[skillType].damageHtml = this.skillService.formatDamage(this.card, buff[skillType], buff[skillType].damage);
 

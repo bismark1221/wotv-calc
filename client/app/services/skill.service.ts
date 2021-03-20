@@ -273,6 +273,23 @@ export class SkillService {
     }
   }
 
+  formatEquipmentEffects(unit, skill) {
+    const effectHtmls = {
+      before: [],
+      after: []
+    };
+
+    skill.effects.forEach(effect => {
+      if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
+        effectHtmls.before.push(this.formatEquipmentEffect(unit, skill, effect));
+      } else {
+        effectHtmls.after.push(this.formatEquipmentEffect(unit, skill, effect));
+      }
+    });
+
+    return effectHtmls;
+  }
+
   formatEquipmentEffect(unit, skill, effect) {
     let html = '';
 
@@ -288,6 +305,24 @@ export class SkillService {
     html += this.formatEffect(unit, skill, effect, true, true);
 
     return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
+
+
+  formatEffects(unit, skill, getTarget = true, fromEquipment = false) {
+    const effectHtmls = {
+      before: [],
+      after: []
+    };
+
+    skill.effects.forEach(effect => {
+      if (effect.timing === 'QUEST_START' || effect.timing === 'SKILL_BEFORE') {
+        effectHtmls.before.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment));
+      } else {
+        effectHtmls.after.push(this.formatEffect(unit, skill, effect, getTarget, fromEquipment));
+      }
+    });
+
+    return effectHtmls;
   }
 
   formatEffect(unit, skill, effect, getTarget = true, fromEquipment = false) {
@@ -959,12 +994,6 @@ export class SkillService {
       case 'ABSORB_HP_ONTIME' :
         html = 'Absorb ' + this.getValue(skill, effect) + ' of the damage done' + this.getTurns(effect);
       break;
-      case 'ON_MAGIC_ATTACK' :
-        html = 'On magic attacks only';
-      break;
-      case 'ON_PHYSIC_ATTACK' :
-        html = 'On physic attacks only';
-      break;
       case 'IMMUNE_CT_CHANGE' :
         html = 'Immune to CT change';
       break;
@@ -1022,7 +1051,8 @@ export class SkillService {
         'BEHIND': ' when attacking from behind',
         'MALE': ' when attacking male units',
         'ON_PHYSIC_ATTACK': ' when attacking with physic attacks',
-        'ON_MAGIC_ATTACK': ' when attacking with magic attacks'
+        'ON_MAGIC_ATTACK': ' when attacking with magic attacks',
+        'ON_CRITICAL': ' when performing a critical hit'
       };
 
       if (conditions[effect.condition]) {

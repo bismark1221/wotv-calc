@@ -6075,7 +6075,8 @@
               "maxValue": -40,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_BEFORE"
             }
           ],
           "dataId": "SK_VC_LW_HALL_PVA",
@@ -7046,7 +7047,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MAG",
@@ -7055,14 +7057,16 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "dataId": "SK_VC_LW_XMAS_PVA",
@@ -9535,7 +9539,8 @@
               "maxValue": -20,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "dataId": "SK_VC_LW_HLNA_PVA",
@@ -10558,7 +10563,8 @@
               "maxValue": -25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_BEFORE"
             }
           ],
           "dataId": "SK_VC_LW_RAMD_PVA",

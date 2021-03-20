@@ -18,7 +18,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_FIRE",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -27,7 +28,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_FIRE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -36,7 +38,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_FIRE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_IFRT",
@@ -1366,7 +1369,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_SOIL",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -1375,7 +1379,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -1384,7 +1389,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_GLEM",
@@ -2712,7 +2718,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_WATR",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -2721,7 +2728,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -2730,7 +2738,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_SIRE",
@@ -6681,7 +6690,8 @@
             "calcType": "unknow",
             "rate": 30,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "BLIND_ATK",
@@ -6690,28 +6700,32 @@
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "SLEEP_ATK",
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "CONFUSION_ATK",
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "SILENCE_ATK",
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_MABR",
@@ -9348,7 +9362,8 @@
             "maxValue": -20,
             "calcType": "fixe",
             "rate": 30,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_ARMN",
@@ -14643,7 +14658,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_ICE",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -14652,7 +14668,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_ICE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -14661,7 +14678,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_ICE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_SHIV",
@@ -15991,7 +16009,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_THUN",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -16000,7 +16019,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_THUN02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -16009,7 +16029,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_THUN02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_RAMU",
@@ -17339,7 +17360,8 @@
             "maxValue": 20,
             "calcType": "fixe",
             "dataId": "BUFF_WTH_NONE",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_ODIN",
@@ -18654,14 +18676,16 @@
             "type": "ICE_KILLER",
             "minValue": 25,
             "maxValue": 25,
-            "calcType": "unknow"
+            "calcType": "unknow",
+            "timing": "SKILL_BEFORE"
           },
           {
             "type": "CONFUSION_ATK",
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_LAMA",
@@ -19985,7 +20009,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_WIND",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -19994,7 +20019,8 @@
             "maxValue": 15,
             "calcType": "fixe",
             "dataId": "BUFF_WTH_WIND02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_TSLP",
@@ -22644,14 +22670,16 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "SILENCE_ATK",
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_THDG",
@@ -23972,7 +24000,8 @@
             "maxValue": -30,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_FIRE03",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -23981,7 +24010,8 @@
             "maxValue": 40,
             "calcType": "percent",
             "dataId": "BUFF_WTH_FIRE04",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_WRMC",
@@ -25308,7 +25338,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_DARK",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -25317,7 +25348,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_DARK02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -25326,7 +25358,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_DARK02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_DABL",
@@ -27968,7 +28001,8 @@
             "calcType": "percent",
             "rate": 30,
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_MDFY",
@@ -29298,7 +29332,8 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           },
           {
             "side": "ENNEMIES",
@@ -29307,7 +29342,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_ICE",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -29316,7 +29352,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_ICE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -29325,7 +29362,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_ICE02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_FNRR",
@@ -30653,7 +30691,8 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           },
           {
             "side": "ENNEMIES",
@@ -30662,7 +30701,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_SOIL",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -30671,7 +30711,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -30680,7 +30721,8 @@
             "maxValue": 30,
             "calcType": "percent",
             "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_TITN",
@@ -32009,7 +32051,8 @@
             "calcType": "percent",
             "rate": 30,
             "turn": 5,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_BLMN",
@@ -33324,7 +33367,8 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "target"
+            "target": "target",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_AGON",
@@ -34647,7 +34691,8 @@
             "minValue": 25,
             "maxValue": 40,
             "calcType": "percent",
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "DEF",
@@ -34655,7 +34700,8 @@
             "maxValue": 10,
             "calcType": "fixe",
             "turn": 3,
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "AGI",
@@ -34664,7 +34710,8 @@
             "calcType": "percent",
             "turn": 3,
             "increaseMax": true,
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "DISPEL",
@@ -34675,7 +34722,8 @@
               "CONFUSION",
               "STUN"
             ],
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_CHCB_02",
@@ -35992,7 +36040,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_DARK03",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -36001,7 +36050,8 @@
             "maxValue": 40,
             "calcType": "percent",
             "dataId": "BUFF_WTH_DARK04",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           }
         ],
         "dataId": "SK_SMN_DMNW",
@@ -37315,7 +37365,8 @@
             "minValue": 90,
             "maxValue": 120,
             "calcType": "unknow",
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "EVADE",
@@ -37323,7 +37374,8 @@
             "maxValue": 25,
             "calcType": "fixe",
             "turn": 3,
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           },
           {
             "type": "CRITIC_RATE",
@@ -37331,7 +37383,8 @@
             "maxValue": 25,
             "calcType": "fixe",
             "turn": 3,
-            "target": "selfSide"
+            "target": "selfSide",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_MOGL",
@@ -39966,7 +40019,8 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           },
           {
             "side": "ENNEMIES",
@@ -39975,7 +40029,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_WATR03",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -39985,6 +40040,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "fire",
               "ice",
@@ -40003,6 +40059,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR04_NOT_WATER",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "fire",
               "ice",
@@ -40021,6 +40078,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR04_WATER",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "water"
             ]
@@ -40033,6 +40091,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WATR04_WATER",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "water"
             ]
@@ -41357,7 +41416,8 @@
             "calcType": "percent",
             "rate": 30,
             "turn": 30,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_GCAL",
@@ -42685,7 +42745,8 @@
             "calcType": "percent",
             "rate": 67,
             "turn": 1,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           },
           {
             "side": "ENNEMIES",
@@ -42694,7 +42755,8 @@
             "maxValue": -50,
             "calcType": "resistance",
             "dataId": "BUFF_WTH_WIND",
-            "clock": 40
+            "clock": 40,
+            "timing": "WEATHER"
           },
           {
             "side": "TEAM",
@@ -42704,6 +42766,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "fire",
               "ice",
@@ -42722,6 +42785,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WIND03_NOT_WIND",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "fire",
               "ice",
@@ -42740,6 +42804,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WIND03_WIND",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "wind"
             ]
@@ -42752,6 +42817,7 @@
             "calcType": "percent",
             "dataId": "BUFF_WTH_WIND03_WIND",
             "clock": 40,
+            "timing": "WEATHER",
             "elements": [
               "wind"
             ]
@@ -44081,7 +44147,8 @@
             "maxValue": -50,
             "calcType": "fixe",
             "turn": 3,
-            "target": "all"
+            "target": "all",
+            "timing": "SKILL_AFTER"
           }
         ],
         "dataId": "SK_SMN_MRLT",

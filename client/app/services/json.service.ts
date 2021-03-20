@@ -350,6 +350,16 @@ export class JsonService {
     'metal'
   ];
 
+  timing = {
+    0: 'QUEST_START',
+    1: 'SKILL_BEFORE',
+    2: 'SKILL_AFTER',
+    3: 'SKILL_REACTION',
+    4: 'ON_CRITICAL',
+    10: 'WEATHER',
+    14: 'MOVE'
+  };
+
   killers = {
     2: 'FIRE',
     3: 'ICE',
@@ -2173,9 +2183,9 @@ export class JsonService {
       acbst: null,
       bbrk: null,
       reflec: null,
+      timing: null,
 
       // not used
-      timing: null,
       atk_base: null,
       elem_pri: null,
       lvup_cost_rate: null,
@@ -2256,7 +2266,8 @@ export class JsonService {
       skill.effects.push({
         type: 'HP_COST',
         value: dataSkill.hp_cost,
-        calcType: 'percent'
+        calcType: 'percent',
+        timing: 'SKILL_BEFORE'
       });
     }
 
@@ -2279,14 +2290,16 @@ export class JsonService {
 
       skill.effects.push({
         type: type,
-        target: this.targetTypes[dataSkill.target]
+        target: this.targetTypes[dataSkill.target],
+        timing: 'SKILL_BEFORE'
       });
     }
 
     if (dataSkill.acbst) {
       skill.effects.push({
         type: 'STOP_CHAIN_INCREASE_DAMAGE',
-        value: dataSkill.acbst
+        value: dataSkill.acbst,
+        timing: 'SKILL_BEFORE'
       });
     }
 
@@ -2295,7 +2308,8 @@ export class JsonService {
         type: 'REFLECT',
         value: dataSkill.reflec.type,
         turn: dataSkill.reflec.turn,
-        target: this.targetTypes[dataSkill.target]
+        target: this.targetTypes[dataSkill.target],
+        timing: 'SKILL_BEFORE'
       });
     }
 
@@ -2380,6 +2394,7 @@ export class JsonService {
 
         skill.effects.push({
           type: 'IGNORE_' + this.killers[ignore],
+          timing: 'SKILL_BEFORE'
         });
       });
     }
@@ -2394,7 +2409,8 @@ export class JsonService {
           type: this.killers[killer] + '_KILLER',
           minValue: dataSkill.klspr,
           maxValue: dataSkill.klspr,
-          calcType: 'unknow'
+          calcType: 'unknow',
+          timing: 'SKILL_BEFORE'
         });
       });
     }
@@ -2423,26 +2439,30 @@ export class JsonService {
         calcType: 'percent',
         turn: dataSkill.barrier.val,
         turnType: dataSkill.barrier.type !== 3 ? 'TURNS' : 'COUNT',
-        target: this.targetTypes[dataSkill.target]
+        target: this.targetTypes[dataSkill.target],
+        timing: 'SKILL_AFTER'
       });
     }
 
     if (dataSkill.chang) {
       skill.effects.push({
-        type: 'SWITCH_POS'
+        type: 'SWITCH_POS',
+        timing: 'SKILL_BEFORE'
       });
     }
 
     if (dataSkill.move) {
       skill.effects.push({
-        type: 'MOVE_UNIT'
+        type: 'MOVE_UNIT',
+        timing: 'SKILL_BEFORE'
       });
     }
 
     if (dataSkill.ctave) {
       skill.effects.push({
         type: 'AVG_CT',
-        target: this.targetTypes[dataSkill.target]
+        target: this.targetTypes[dataSkill.target],
+        timing: 'SKILL_AFTER'
       });
     }
 
@@ -2452,7 +2472,8 @@ export class JsonService {
         minValue: dataSkill.stl_val,
         maxValue: dataSkill.stl_val1,
         calcType: 'unknow',
-        target: this.targetTypes[dataSkill.target]
+        target: this.targetTypes[dataSkill.target],
+          timing: 'SKILL_AFTER'
       });
     }
 
@@ -2561,6 +2582,10 @@ export class JsonService {
                     console.log('3 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff]['type' + i]);
                   }
 
+                  if (!this.timing[this[this.version].buffs[buff].timing]) {
+                    console.log('A @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff].timing);
+                  }
+
                   if (this[this.version].buffs[buff]['id' + i]) {
                     const futurBuffId = this[this.version].buffs[this[this.version].buffs[buff]['id' + i]].iname;
                     fromImbue.push(futurBuffId);
@@ -2598,7 +2623,8 @@ export class JsonService {
                         effect = {
                           type: calcType.toUpperCase(),
                           ailments: [],
-                          target: dataBuffsIndex === 0 ? skill.target : 'self'
+                          target: dataBuffsIndex === 0 ? skill.target : 'self',
+                          timing: this.timing[this[this.version].buffs[buff].timing]
                         };
 
                         skill.effects.push(effect);
@@ -2621,7 +2647,9 @@ export class JsonService {
                       fromImbue: false,
                       condition: null,
                       increaseMax: false,
-                      target: dataBuffsIndex === 0 ? skill.target : 'self'
+                      target: dataBuffsIndex === 0 ? skill.target : 'self',
+                      timing: this.timing[this[this.version].buffs[buff].timing],
+                      buffOnCondition: null
                     };
 
                     if (type === 'MASS_DISPEL') {
@@ -2651,10 +2679,28 @@ export class JsonService {
                       addedBuff.buffOnCondition = conditionToAdd;
                     }
 
+                    if (addedBuff.timing === 'ON_CRITICAL') {
+                      if (addedBuff.buffOnCondition !== null) {
+                        console.log('ALERT 2 condition on same buff');
+                        console.log(this[this.version].buffs[buff]);
+                      }
+
+                      addedBuff.buffOnCondition = 'ON_CRITICAL';
+                      addedBuff.timing = 'SKILL_AFTER';
+                    }
+
+                    if (addedBuff.buffOnCondition === null) {
+                      delete addedBuff.buffOnCondition;
+                    }
+
                     if (this[this.version].buffs[buff]['calc' + i] === 2) {
                       addedBuff.increaseMax = true;
                     } else {
                       delete addedBuff.increaseMax;
+                    }
+
+                    if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+                      delete addedBuff.timing;
                     }
 
                     skill.effects.push(addedBuff);
@@ -2936,6 +2982,7 @@ export class JsonService {
                   calcType: this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] ? this.calcType[this[this.version].buffs[buff['buff' + j]]['calc' + i]] : 'unknow',
                   dataId: buff['buff' + j],
                   clock: this[this.version].weathers[weatherId].clock_time,
+                  timing: 'WEATHER'
                 };
 
                 if (buff.elem) {
@@ -3515,10 +3562,8 @@ export class JsonService {
       unitSkills.forEach(skill => {
         if (skill.damage) {
           skill.effects.forEach(effect => {
-            if (effect.type === 'FAITH' || effect.type === 'FAITH_FIGHT' || effect.type === 'BRAVERY' || effect.type === 'BRAVERY_FIGHT') {
-              // if (effect.calcType !== 'fixe' && effect.calcType !== 'resistance' && effect.calcType !== 'unknow') {
-                // console.log(skill);
-              // }
+            if (effect.timing === 'SKILL_AFTER') {
+              // console.log(skill);
             }
           });
         }

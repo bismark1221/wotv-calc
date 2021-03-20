@@ -7615,7 +7615,8 @@
                   "STOP",
                   "QUICKEN"
                 ],
-                "target": "self"
+                "target": "self",
+                "timing": "QUEST_START"
               }
             ],
             "dataId": "SK_LW_TIM_P_2",
