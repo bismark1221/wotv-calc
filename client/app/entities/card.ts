@@ -171,9 +171,7 @@ export class Card {
         skill.level = this.level;
         skill.name = nameService.getName(skill);
 
-        skill.effects.forEach(effect => {
-          effect.formatHtml = skillService.formatEffect(this, skill, effect);
-        });
+        skill.effectsHtml = skillService.formatEffects(this, skill);
 
         skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
 

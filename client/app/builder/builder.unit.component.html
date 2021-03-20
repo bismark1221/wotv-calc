@@ -463,7 +463,12 @@
         </tr>
         <tr>
           <td>
-            {{ unit.imbue.formatHtml }}
+            <div *ngFor="let effect of unit.imbue.effectsHtml.before">
+              {{ effect }}
+            </div>
+            <div *ngFor="let effect of unit.imbue.effectsHtml.after">
+              {{ effect }}
+            </div>
           </td>
         </tr>
       </tbody>
@@ -507,6 +512,10 @@
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
 
+              <div *ngFor="let effect of skill.effectsHtml.before">
+                {{ effect }}
+              </div>
+
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -533,8 +542,8 @@
                 <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
               </div>
 
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
+              <div *ngFor="let effect of skill.effectsHtml.after">
+                {{ effect }}
               </div>
             </td>
             <td>
@@ -583,6 +592,10 @@
             <td class="skillEffectTd">
               <div>{{ skill.counterHtml }}</div>
 
+              <div *ngFor="let effect of skill.effectsHtml.before">
+                {{ effect }}
+              </div>
+
               <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                 <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -609,8 +622,8 @@
                 <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
               </div>
 
-              <div *ngFor="let effect of skill.effects">
-                {{ effect.formatHtml }}
+              <div *ngFor="let effect of skill.effectsHtml.after">
+                {{ effect }}
               </div>
             </td>
             <td>
@@ -661,6 +674,10 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -687,8 +704,8 @@
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of skill.effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>
@@ -721,6 +738,10 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -747,8 +768,8 @@
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of skill.effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>
@@ -781,6 +802,10 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -807,8 +832,8 @@
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of skill.effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>
@@ -841,6 +866,10 @@
               <td class="skillEffectTd">
                 <div>{{ skill.counterHtml }}</div>
 
+                <div *ngFor="let effect of skill.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                   <ng-template #tip_damage>
                   <div *ngIf="skill.based === 'physic'">
@@ -867,8 +896,8 @@
                   <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of skill.effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of skill.effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>
@@ -901,6 +930,10 @@
               <td class="skillEffectTd">
                 <div>{{ unit.limit.counterHtml }}</div>
 
+                <div *ngFor="let effect of unit.limit.effectsHtml.before">
+                  {{ effect }}
+                </div>
+
                 <div *ngIf="unit.limit.damageHtml.value">
                   <ng-template #tip_damage>
                     <div *ngIf="unit.limit.based === 'physic'">
@@ -927,8 +960,8 @@
                   <div [innerHTML]="unit.limit.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of unit.limit.effects">
-                  {{ effect.formatHtml }}
+                <div *ngFor="let effect of unit.limit.effectsHtml.after">
+                  {{ effect }}
                 </div>
               </td>
               <td>

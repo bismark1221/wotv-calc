@@ -89,9 +89,7 @@ export class RaidComponent implements OnInit {
           const skill = boss.skills[skillId];
           skill.name = this.nameService.getName(skill);
 
-          skill.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(boss, skill, effect);
-          });
+          skill.effectsHtml = this.skillService.formatEffects(boss, skill);
 
           skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
 
@@ -105,9 +103,7 @@ export class RaidComponent implements OnInit {
         if (boss.attack) {
           boss.attack.basedHtml = boss.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.attack.based.toLowerCase() + '.png\' />' : '';
 
-          boss.attack.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(boss, boss.attack, effect);
-          });
+          boss.attack.effectsHtml = this.skillService.formatEffects(boss, boss.attack);
 
           boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
 

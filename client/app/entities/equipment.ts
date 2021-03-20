@@ -73,9 +73,7 @@ export class Equipment {
     this.skills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
         skill.name = nameService.getName(skill);
-        skill.effects.forEach(effect => {
-          effect.formatHtml = skillService.formatEffect(this, skill, effect);
-        });
+        skill.effectsHtml = skillService.formatEffects(this, skill);
 
         if (skill.damage) {
           skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);
@@ -194,9 +192,7 @@ export class Equipment {
 
       if (skill.level >= (skill.upgrade[0] * 10 - 10)
         && (skill.level < skill.upgrade[skill.upgrade.length - 1] * 10 || (skill.level === this.maxLevel && skill.upgrade[skill.upgrade.length - 1] === 5))) {
-        skill.effects.forEach(effect => {
-          effect.formatHtml = skillService.formatEffect(this, skill, effect);
-        });
+        skill.effectsHtml = skillService.formatEffects(this, skill);
 
         if (skill.damage) {
           skill.damageHtml = skillService.formatDamage(this, skill, skill.damage);

@@ -49,7 +49,7 @@ export class ModalCardsComponent implements OnInit {
 
     if (this.card) {
       this.card = await this.cardService.selectCardForBuilder(this.card.dataId, this.card);
-      this.formatCardBuffs();
+      await this.formatCardBuffs();
     }
   }
 
@@ -116,7 +116,7 @@ export class ModalCardsComponent implements OnInit {
       this.modalStep = 'load';
     } else {
       this.card = await this.cardService.selectCardForBuilder(cardId, customData);
-      this.formatCardBuffs();
+      await this.formatCardBuffs();
 
       this.modalStep = 'custom';
     }
@@ -126,24 +126,24 @@ export class ModalCardsComponent implements OnInit {
     this.modal.close(this.card);
   }
 
-  changeStar(value) {
+  async changeStar(value) {
     if (value === this.card.star) {
       value = undefined;
     }
 
     this.card.star = value;
     this.cardService.changeStar(this.card);
-    this.formatCardBuffs();
+    await this.formatCardBuffs();
   }
 
-  updateLevel() {
+  async updateLevel() {
     this.cardService.changeLevel(this.card);
-    this.formatCardBuffs();
+    await this.formatCardBuffs();
   }
 
-  maxCard() {
+  async maxCard() {
     this.cardService.maxCard(this.card);
-    this.formatCardBuffs();
+    await this.formatCardBuffs();
   }
 
   private async formatCardBuffs() {

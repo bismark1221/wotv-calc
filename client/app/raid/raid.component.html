@@ -232,6 +232,9 @@
                   <span *ngIf="boss.attack.based"><img title="{{ boss.attack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.attack.based + '.png'}}" /></span>
                 </td>
                 <td class="skillEffectTd">
+                  <div *ngFor="let effect of boss.attack.effectsHtml.before">
+                    {{ effect }}
+                  </div>
 
                   <div *ngIf="boss.attack.damageHtml && boss.attack.damageHtml.value">
                     <ng-template #tip_damage>
@@ -259,8 +262,8 @@
                     <div [innerHTML]="boss.attack.damageHtml.others | safeHtml"></div>
                   </div>
 
-                  <div *ngFor="let effect of boss.attack.effects">
-                    {{ effect.formatHtml }}
+                  <div *ngFor="let effect of boss.attack.effectsHtml.after">
+                    {{ effect }}
                   </div>
                 </td>
                 <td>
@@ -315,6 +318,10 @@
                 <td class="skillEffectTd">
                   <div>{{ boss.skills[skillId].counterHtml }}</div>
 
+                  <div *ngFor="let effect of boss.skills[skillId].effectsHtml.before">
+                    {{ effect }}
+                  </div>
+
                   <div *ngIf="boss.skills[skillId].damageHtml && boss.skills[skillId].damageHtml.value">
                     <ng-template #tip_damage>
                       <div *ngIf="boss.skills[skillId].based === 'physic'">
@@ -341,8 +348,8 @@
                     <div [innerHTML]="boss.skills[skillId].damageHtml.others | safeHtml"></div>
                   </div>
 
-                  <div *ngFor="let effect of boss.skills[skillId].effects">
-                    {{ effect.formatHtml }}
+                  <div *ngFor="let effect of boss.skills[skillId].effectsHtml.after">
+                    {{ effect }}
                   </div>
                 </td>
                 <td>
