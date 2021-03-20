@@ -51,7 +51,7 @@
             </div>
             <div class="cardIcons">
               <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" (click)="showSim = !showSim;" />
-              <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}"  />
+              <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" />
             </div>
             <div>
               <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
@@ -988,7 +988,7 @@
         </div>
       </div>
       <div class="damageSimSubBlock" [ngbCollapse]="isCollapsedDamageSim">
-        <table>
+        <table class="tableSim">
           <tr>
             <td>
               Unit
@@ -1047,25 +1047,87 @@
               <div>Element : <input [(ngModel)]="damageSim.target.element" type="number" /></div>
 
               <div>
-                Base stats :
-                <div>DEF : <input [(ngModel)]="damageSim.target.def" type="number" /></div>
-                <div>SPR : <input [(ngModel)]="damageSim.target.spr" type="number" /></div>
-                <div>Element Resitance : <input [(ngModel)]="damageSim.target.elementRes" type="number" /></div>
-                <div>Damage Type Res : <input [(ngModel)]="damageSim.target.damageTypeRes" type="number" /></div>
-                <div>AOE Res : <input [(ngModel)]="damageSim.target.attack_res" type="number" /></div>
-                <div>ST Res : <input [(ngModel)]="damageSim.target.aoe_res" type="number" /></div>
-                <div>Faith <input [(ngModel)]="damageSim.target.faith" type="number" /></div>
-              </div>
+                Stats
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text">DEF</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.def" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.def" type="number" min="0" title="DEF break (positive)"/>
+                </div>
 
-              <div>
-                External breaks :
-                <div>DEF : <input [(ngModel)]="damageSim.target.breaks.def" type="number" /></div>
-                <div>SPR : <input [(ngModel)]="damageSim.target.breaks.spr" type="number" /></div>
-                <div>Element Resitance : <input [(ngModel)]="damageSim.target.breaks.elementRes" type="number" /></div>
-                <div>Damage Type Res : <input [(ngModel)]="damageSim.target.breaks.damageTypeRes" type="number" /></div>
-                <div>AOE Res : <input [(ngModel)]="damageSim.target.breaks.attack_res" type="number" /></div>
-                <div>ST Res : <input [(ngModel)]="damageSim.target.breaks.aoe_res" type="number" /></div>
-                <div>Faith <input [(ngModel)]="damageSim.target.breaks.faith" type="number" /></div>
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text">SPR</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.spr" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.spr" type="number" min="0"/>
+                </div>
+
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text inputTargetTextImg">
+                      <img class="targetStatImg" title="Element skill resistance" src="/assets/buffs/{{ damageSim.unit.selectedSkill.elem && damageSim.unit.selectedSkill.elem[0] ? damageSim.unit.selectedSkill.elem[0] : unit.element | lowercase }}_res.png">
+                    </span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.elementRes" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.elementRes" type="number" min="0"/>
+                </div>
+
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text inputTargetTextImg">
+                      <img class="targetStatImg" title="Element skill resistance" src="/assets/buffs/{{ damageSim.unit.selectedSkill.damage.type | lowercase }}_res.png">
+                    </span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.damageTypeRes" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.damageTypeRes" type="number" min="0"/>
+                </div>
+
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text">SPR</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.attack_res" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.attack_res" type="number" min="0"/>
+                </div>
+
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text">SPR</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.aoe_res" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.aoe_res" type="number" min="0"/>
+                </div>
+
+                <div class="input-group targetStatBlock">
+                  <div class="input-group-prepend inputTargetPrepend">
+                    <span class="input-group-text">SPR</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.target.faith" type="number"/>
+                  <div class="input-group-prepend input-group-append inputBreakBlock">
+                    <div class="input-group-text inputBreakIcon"><i class="fas fa-arrow-down"></i></div>
+                  </div>
+                  <input class="form-control inputInSim inputTargetBreakStat" [(ngModel)]="damageSim.target.breaks.faith" type="number" min="0"/>
+                </div>
               </div>
             </td>
             <td>

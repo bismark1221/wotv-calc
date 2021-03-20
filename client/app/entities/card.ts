@@ -152,6 +152,11 @@ export class Card {
             newBuff.cond = buff.cond;
           }
 
+          if (effect.buffOnCondition) {
+          // @ts-ignore
+            newBuff.buffOnCondition = effect.buffOnCondition;
+          }
+
           buffs.self[effect.type].push(newBuff);
         });
 
@@ -203,6 +208,11 @@ export class Card {
         if (buff.cond) {
           // @ts-ignore
           newBuff.cond = buff.cond;
+        }
+
+        if (effect.buffOnCondition) {
+          // @ts-ignore
+          newBuff.buffOnCondition = effect.buffOnCondition;
         }
 
         buffs.party[effect.type].push(newBuff);

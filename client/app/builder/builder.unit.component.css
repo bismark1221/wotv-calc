@@ -524,3 +524,56 @@ tr.disable {
   margin-left: 14px;
   text-align: center;
 }
+
+
+/* Damage Simulator */
+.tableSim {
+  width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInSim::-webkit-outer-spin-button,
+.inputInSim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputInSim {
+  -moz-appearance: textfield;
+}
+
+.targetStatBlock {
+  width: 190px;
+}
+
+.inputBreakBlock {
+  border-top: 1px solid rgb(206, 212, 218);
+  border-bottom: 1px solid rgb(206, 212, 218);
+}
+
+.inputBreakIcon {
+  padding-right: 0;
+  background-color: #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.inputTargetBreakStat {
+  padding-left: 5px;
+  border-left: 0;
+}
+
+.inputTargetPrepend {
+  width: 58px;
+  margin: 0;
+}
+
+.inputTargetTextImg {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.targetStatImg {
+  height: 34px;
+}

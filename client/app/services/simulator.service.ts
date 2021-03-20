@@ -24,6 +24,7 @@ export class SimulatorService {
     if (dataSimulator && dataSimulator.unit && dataSimulator.unit.selectedSkill) {
       this.InitiateRealStats(unit, dataSimulator);
       this.getSkillEffects(unit, dataSimulator);
+      this.checkOnPhysicOrMagic(unit, dataSimulator);
       this.applyBuffsAndBreaks(unit, dataSimulator);
       this.calculateDamage(unit, dataSimulator);
     }
@@ -335,6 +336,99 @@ export class SimulatorService {
     }
 
     return value;
+  }
+
+  private checkOnPhysicOrMagic(unit, dataSimulator) {
+    unit.equipments.forEach((equipment, equipmentIndex) => {
+      if (equipment) {
+        equipment.passiveSkills.forEach(skill => {
+          skill.effects.forEach(effect => {
+            // buffOnCondition
+            if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+              || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+            ) {
+              this.updateRealStat(dataSimulator, 'unit', effect.type, -(unit.stats[effect.type]['equipment' + equipmentIndex + '_buff']));
+            } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+              && dataSimulator.unit.selectedSkill.based === 'hybrid'
+            ) {
+
+            }
+          });
+        });
+      }
+    });
+
+    if (unit.card) {
+      Object.keys(unit.card.buffs.self).forEach(buffType => {
+        unit.card.buffs.self[buffType].forEach(effect => {
+          if (!effect.cond || this.checkCondition(unit, effect.cond)) {
+            if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+              || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+            ) {
+              this.updateRealStat(dataSimulator, 'unit', buffType, -(effect.value));
+            } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+              && dataSimulator.unit.selectedSkill.based === 'hybrid'
+            ) {
+
+            }
+          }
+        });
+      });
+
+      Object.keys(unit.card.buffs.party).forEach(buffType => {
+        unit.card.buffs.party[buffType].forEach(effect => {
+          if (!effect.cond || this.checkCondition(unit, effect.cond)) {
+            if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'physic')
+              || (effect.buffOnCondition === 'ON_PHYSIC_ATTACK' && dataSimulator.unit.selectedSkill.based === 'magic')
+            ) {
+              this.updateRealStat(dataSimulator, 'unit', buffType, -(effect.value));
+            } else if ((effect.buffOnCondition === 'ON_MAGIC_ATTACK' || effect.buffOnCondition === 'ON_PHYSIC_ATTACK')
+              && dataSimulator.unit.selectedSkill.based === 'hybrid'
+            ) {
+
+            }
+          }
+        });
+      });
+    }
+
+    // @TODO Manage party cards
+  }
+
+  private checkCondition(unit, conditions) {
+    let conditionChecked = true;
+
+    conditions.forEach(condition => {
+      switch (condition.type) {
+        case 'unit':
+          if (condition.items.indexOf(unit.dataId) === -1) {
+            conditionChecked = false;
+          }
+          break;
+        case 'job':
+          const jobs = [];
+          condition.items.forEach(job => {
+            const tempJob = job.split('_');
+            jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
+          });
+
+          const tableJob = unit.jobs[0].split('_');
+          if (jobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
+            conditionChecked = false;
+          }
+          break;
+        case 'elem':
+          if (condition.items.indexOf(unit.element) === -1) {
+            conditionChecked = false;
+          }
+          break;
+        default:
+          console.log('Card condition not manage : ' + condition.type);
+          break;
+      }
+    });
+
+    return conditionChecked;
   }
 
   applyBuffsAndBreaks(unit, dataSimulator) {
