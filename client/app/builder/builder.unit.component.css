@@ -531,8 +531,71 @@ tr.disable {
   width: 100%;
 }
 
+.selectSimSkill {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.inputMiniStatBlock {
+  width: 120px;
+}
+
+.inputMiniStatBlock .input-group-prepend {
+  width: 65px;
+  padding-right: 0;
+}
+
+.inputMiniStatBlock .input-group-prepend .input-group-text {
+  width: 100%;
+}
+
+.inputInSim {
+  text-align: right;
+}
+
+.simMiniStats {
+  width: 100%;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.simMiniStats .inlineInputGroup {
+  margin-right: 10px;
+}
+
+.inputPercentage {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.appendPercentage {
+  border-left: 0;
+}
+
+.appendPercentage .input-group-text {
+  padding-left: 0;
+  background-color: #fff;
+}
+
+.longStatGroup:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.inputUnitStatBlock {
+  width: 190px;
+}
+
+.inputDamageTypePene {
+  width: 260px;
+}
+
+
+
+
 .targetTd {
   width: 410px;
+  vertical-align: top;
 }
 
 .select-target-race {
@@ -598,6 +661,10 @@ tr.disable {
   margin-bottom: 5px;
 }
 
-.inlineInputGroup:nth-child(even) {
+.targetStatGroup:nth-child(even) {
   margin-right: 10px;
+}
+
+.damageTd {
+  vertical-align: top;
 }
