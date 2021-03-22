@@ -4972,6 +4972,20 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_MORE": {
+    "dataId": "IT_PI_LW_MORE",
+    "names": {
+      "en": "ムーアの欠片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_LW_CWEL": {
+    "dataId": "IT_PI_LW_CWEL",
+    "names": {
+      "en": "コーウェルの欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -5704,6 +5718,20 @@
     "dataId": "IT_SP_LW_DEAN",
     "names": {
       "en": "ディーンの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MORE": {
+    "dataId": "IT_SP_LW_MORE",
+    "names": {
+      "en": "ムーアの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_CWEL": {
+    "dataId": "IT_SP_LW_CWEL",
+    "names": {
+      "en": "コーウェルの思珠"
     },
     "type": "exjob_orb"
   },
@@ -8497,6 +8525,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_03_02_B": {
+    "dataId": "IT_EC_SUMMON_03_02_B",
+    "names": {
+      "en": "【3月】召喚メダルB"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -10052,6 +10088,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_VPI_21": {
+    "dataId": "IT_US_SE_VPI_21",
+    "names": {
+      "en": "【3月民営放送】Vカード欠片×25選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_01": {
     "dataId": "IT_US_SE_PI_01",
     "names": {
@@ -10332,6 +10376,22 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_36": {
+    "dataId": "IT_US_SE_PI_36",
+    "names": {
+      "en": "【XXXXXXX】ユニット欠片×Ｎ選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_37": {
+    "dataId": "IT_US_SE_PI_37",
+    "names": {
+      "en": "【1400万DL】土属性SSR以下ユニット欠片×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -10496,6 +10556,14 @@
     "dataId": "IT_US_SE_AF_AW_11",
     "names": {
       "en": "【バレンタインCP2】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_AW_12": {
+    "dataId": "IT_US_SE_AF_AW_12",
+    "names": {
+      "en": "【1400万DL記念】秘伝書×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11004,6 +11072,46 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_15": {
+    "dataId": "IT_US_SE_JB_05_15",
+    "names": {
+      "en": "【1400万DL記念】スピネル×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_16": {
+    "dataId": "IT_US_SE_JB_04_16",
+    "names": {
+      "en": "【1400万DL記念】シトリン×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_13": {
+    "dataId": "IT_US_SE_JB_03_13",
+    "names": {
+      "en": "【1400万DL記念】チャロアイト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_10": {
+    "dataId": "IT_US_SE_JB_02_10",
+    "names": {
+      "en": "【1400万DL記念】アズライト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_10": {
+    "dataId": "IT_US_SE_JB_01_10",
+    "names": {
+      "en": "【1400万DL記念】ジェダイト×15選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -11112,6 +11220,14 @@
     "dataId": "IT_US_SE_JBEX_AF_10",
     "names": {
       "en": "【ホワイトデー記念】焦印石×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_11": {
+    "dataId": "IT_US_SE_JBEX_AF_11",
+    "names": {
+      "en": "【1400万DL記念】焦印石×300選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

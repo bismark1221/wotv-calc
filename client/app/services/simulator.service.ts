@@ -14,8 +14,29 @@ export class SimulatorService {
     dark: 'light'
   };
 
+  private species = [
+    'human',
+    'netherBeast',
+    'beast',
+    'demon',
+    'dragon',
+    'plant',
+    'bird',
+    'insect',
+    'aquatic',
+    'machine',
+    'fairy',
+    'undead',
+    'stone',
+    'metal'
+  ];
+
   constructor(
   ) {}
+
+  getSpecies() {
+    return this.species;
+  }
 
   calculateDamageSim(unit, dataSimulator) {
     console.log(unit);

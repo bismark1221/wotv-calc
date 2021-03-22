@@ -52,6 +52,14 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '24/03',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_MORE'},
+          {type: 'unit', dataId: 'UN_LW_P_CWEL'},
+          {type: 'unit', dataId: 'UN_LW_P_VSTR'},
+        ]
+      },
+      {
         date: '08/03',
         items: [
           {type: 'esper', dataId: 'UN_LW_S_KRKN'},
@@ -70,19 +78,6 @@ export class HomeComponent {
         items: [
           {type: 'unit', dataId: 'UN_LW_P_DEAN'},
           {type: 'equipment', dataId: 'AF_LW_SWO_029'}
-        ]
-      },
-      {
-        date: '22/02',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_CMLO'},
-          {type: 'esper', dataId: 'UN_LW_S_ICDG'},
-          {type: 'card', dataId: 'VC_LW_ICDG'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_039'},
-
-          {type: 'unit', dataId: 'UN_LW_P_SZRT'},
-          {type: 'unit', dataId: 'UN_LW_P_DRND'},
-          {type: 'esper', dataId: 'UN_LW_S_MABR'},
         ]
       }
     ]

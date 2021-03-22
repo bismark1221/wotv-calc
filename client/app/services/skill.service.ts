@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
 import { NameService } from './name.service';
+import { NavService } from './nav.service';
 
 @Injectable()
 export class SkillService {
@@ -49,7 +50,8 @@ export class SkillService {
   constructor(
     private sanitizer: DomSanitizer,
     private translateService: TranslateService,
-    private nameService: NameService
+    private nameService: NameService,
+    private navService: NavService
   ) {}
 
   private i(s: any) {
@@ -700,8 +702,15 @@ export class SkillService {
       case 'FAITH_FIGHT' :
         html = this.getIncrease(effect) + ' Faith' + this.getValue(skill, effect);
       break;
-      case 'ACTIVATION_TIME' :
-        html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+      case 'NON_ATTACK_ACTIVATION_TIME' :
+        if (this.navService.getVersion() === 'JP') {
+          html = this.getIncrease(effect) + ' None Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
+      case 'ATTACK_ACTIVATION_TIME' :
+        html = this.getIncrease(effect) + ' Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ACQUIRED_AP' :
         html = this.getIncrease(effect) + ' Acquired AP' + this.getValue(skill, effect) + this.getTurns(effect);

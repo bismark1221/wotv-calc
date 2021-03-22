@@ -1042,9 +1042,27 @@
             <td class="targetTd">
               Target
 
-              <div>Race : <input [(ngModel)]="damageSim.target.race" type="number" /></div>
+              <div>
+                <ng-select placeholder="Select a target element" class="select-target-race" [items]="species" (ngModelChange)="calculateDamageSim()" [(ngModel)]="damageSim.target.race" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
 
-              <div>Element : <input [(ngModel)]="damageSim.target.element" type="number" /></div>
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+
+                <ng-select placeholder="Select a target element" class="select-target-element" [items]="['fire', 'ice', 'wind', 'earth', 'lightning', 'water', 'light', 'dark']" (ngModelChange)="calculateDamageSim()" [(ngModel)]="damageSim.target.element" [clearable]="false" [searchable]="false">
+                  <ng-template ng-label-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+
+                  <ng-template ng-option-tmp let-item="item">
+                    {{ item }}
+                  </ng-template>
+                </ng-select>
+              </div>
 
               <div class="targetAllStats">
                 <div class="titleSim">

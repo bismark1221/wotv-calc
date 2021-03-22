@@ -126,6 +126,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   showSim = false;
   damageSim = null;
 
+  species = [];
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
@@ -656,10 +658,12 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       },
       result: 0
     };
+
+    this.species = this.simulatorService.getSpecies();
   }
 
   calculateDamageSim() {
-    this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
+    // this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
   }
 
   resetUnit() {

@@ -39337,7 +39337,8 @@
       "UN_LW_P_GRSR",
       "UN_LW_P_CRIS",
       "UN_FF10_P_TIDU",
-      "UN_LW_P_VKTR_01"
+      "UN_LW_P_VKTR_01",
+      "UN_LW_P_MORE"
     ],
     "materials": [
       {
@@ -46649,7 +46650,14 @@
           "dataId": "SK_ROD_LW_MGRT_1_1",
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -50,
+              "maxValue": -50,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -50,
               "maxValue": -50,
               "calcType": "fixe",
@@ -56059,7 +56067,16 @@
           "dataId": "SK_CLT_LW_SAKR_1_1",
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -150,
+              "maxValue": -350,
+              "calcType": "fixe",
+              "turn": 4,
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -150,
               "maxValue": -350,
               "calcType": "fixe",
@@ -58921,6 +58938,265 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_DEAN"
+    }
+  },
+  "AF_ACC_LW_MORE_1": {
+    "names": {
+      "en": "星葬のペンダント"
+    },
+    "slug": "hoshi-sou-no-pendanto",
+    "stats": {
+      "HP": {
+        "min": 328,
+        "max": 328
+      },
+      "SPR": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_MORE_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "スターリーヴェール"
+          },
+          "dataId": "SK_ACC_LW_MORE_1_1",
+          "effects": [
+            {
+              "type": "SPR",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "NULLIFY",
+              "ailments": [
+                "SLEEP",
+                "SLOW",
+                "BERSERK"
+              ],
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "FAITH_FIGHT",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "fixe",
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "selfSide",
+          "cost": {
+            "type": "TP",
+            "value": 34
+          },
+          "count": 2,
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 3,
+            "s": 1
+          },
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_034",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_KAIN",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ",
+      "JB_LW_DEAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_MORE"
+    }
+  },
+  "AF_BOW_LW_CWEL_1": {
+    "names": {
+      "en": "ハンティングボウ"
+    },
+    "slug": "hantingu-bou",
+    "stats": {
+      "HP": {
+        "min": 154,
+        "max": 154
+      },
+      "ATK": {
+        "min": 152,
+        "max": 152
+      },
+      "MAG": {
+        "min": 18,
+        "max": 18
+      },
+      "ACCURACY": {
+        "min": 20,
+        "max": 20
+      },
+      "CRITIC_RATE": {
+        "min": 6,
+        "max": 6
+      }
+    },
+    "type": "BOW",
+    "dataId": "AF_BOW_LW_CWEL_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_BOW_LW_CWEL_1_1"
+          },
+          "dataId": "SK_BOW_LW_CWEL_1_1",
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": -40,
+              "maxValue": -40,
+              "calcType": "fixe",
+              "rate": 20,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_bow_013",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_FINA",
+      "JB_FF4_ROSA",
+      "JB_LW_ARC_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_CWEL"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -62863,6 +63139,64 @@
       "JB_FF10_TIDU",
       "JB_LW_MONT_01",
       "JB_LW_DEAN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_MAC_LW_MORE_2": {
+    "names": {
+      "en": "メイスオブアーク"
+    },
+    "slug": "meisu-obu-ku",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "MACE",
+    "dataId": "AF_MAC_LW_MORE_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_mac_012",
+    "equippableJobs": [
+      "JB_LW_CLR_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MMC_FIRE"
     ],
     "equippableUnits": [],
     "materials": [

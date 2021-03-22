@@ -528,16 +528,16 @@
         "en": "ヴィストラール - Vistralle"
       },
       "stats": {
-        "HP": 1174,
-        "TP": 108,
-        "AP": 94,
-        "ATK": 223,
+        "HP": 2536,
+        "TP": 113,
+        "AP": 98,
+        "ATK": 404,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 101,
-        "DEX": 206,
-        "AGI": 53,
-        "LUCK": 195,
+        "MAG": 154,
+        "DEX": 247,
+        "AGI": 57,
+        "LUCK": 240,
         "DARK_RES": -15,
         "SLASH_RES": 10,
         "PIERCE_RES": -5,
@@ -550,8 +550,10 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 3,
-        "INITIAL_AP": 18,
-        "CRITIC_RATE": 20,
+        "INITIAL_AP": 19,
+        "CRITIC_RATE": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapsvstr"
@@ -946,7 +948,8 @@
         "MOVE": 4,
         "JUMP": 1,
         "INITIAL_AP": 87,
-        "ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250,
+        "ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapsnaia"
     },
@@ -1204,7 +1207,8 @@
         "CRITIC_RATE": 19,
         "INCREASE_UNIT_LEVEL": 0,
         "MAX_DAMAGE": 2000,
-        "ACTIVATION_TIME": -750,
+        "NON_ATTACK_ACTIVATION_TIME": -750,
+        "ATTACK_ACTIVATION_TIME": -750,
         "PLANT_KILLER": 50
       },
       "image": "lapsmice"
@@ -1913,7 +1917,8 @@
         "INITIAL_AP": 21,
         "CRITIC_RATE": 14,
         "PIERCE_ATK": 10,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsvktr"
     },
@@ -2135,7 +2140,8 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 73,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsqilf"
     },
@@ -2534,7 +2540,8 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 131,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsscal"
     },
@@ -2662,7 +2669,8 @@
         "JUMP": 1,
         "INITIAL_AP": 107,
         "CRITIC_RATE": 9,
-        "ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250,
+        "ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapschel"
     },
@@ -3697,6 +3705,73 @@
         "DEFENSE_PENETRATION": 20
       },
       "image": "lapsdean"
+    },
+    {
+      "names": {
+        "en": "ムーア"
+      },
+      "stats": {
+        "HP": 3126,
+        "TP": 159,
+        "AP": 179,
+        "ATK": 94,
+        "DEF": 0,
+        "SPR": 4,
+        "MAG": 532,
+        "DEX": 262,
+        "AGI": 63,
+        "LUCK": 241,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "PIERCE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "SILENCE_RES": 50,
+        "CONFUSION_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 89,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 15
+      },
+      "image": "lapsmore"
+    },
+    {
+      "names": {
+        "en": "コーウェル"
+      },
+      "stats": {
+        "HP": 2871,
+        "TP": 142,
+        "AP": 139,
+        "ATK": 343,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 350,
+        "AGI": 69,
+        "LUCK": 229,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "BLIND_RES": 10,
+        "PARALYZE_RES": 50,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 26,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "MISSILE_ATK": 10
+      },
+      "image": "lapscwel"
     },
     {
       "names": {

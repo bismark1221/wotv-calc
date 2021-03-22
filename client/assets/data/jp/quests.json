@@ -33516,6 +33516,32 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_HA_LW_MORE": {
+    "dataId": "QE_HA_LW_MORE",
+    "items": {},
+    "names": {
+      "en": "欠片獲得 ムーア"
+    },
+    "exp": 7820,
+    "nrg": 20,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_HA_LW_CWEL": {
+    "dataId": "QE_HA_LW_CWEL",
+    "items": {},
+    "names": {
+      "en": "欠片獲得 コーウェル"
+    },
+    "exp": 7820,
+    "nrg": 20,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_CH_LW_MONT": {
     "dataId": "QE_CH_LW_MONT",
     "items": {
@@ -38091,6 +38117,32 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_CH_LW_MORE": {
+    "dataId": "QE_CH_LW_MORE",
+    "items": {},
+    "names": {
+      "en": "ムーア"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_CH_LW_CWEL": {
+    "dataId": "QE_CH_LW_CWEL",
+    "items": {},
+    "names": {
+      "en": "コーウェル"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_EV_1100DL_FIR": {
     "dataId": "QE_EV_1100DL_FIR",
     "items": {
@@ -39285,6 +39337,19 @@
     "items": {},
     "names": {
       "en": "限定ハードクエスト（ディーン）"
+    },
+    "exp": 7228,
+    "nrg": 8,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_MORE_01": {
+    "dataId": "QE_EV_MORE_01",
+    "items": {},
+    "names": {
+      "en": "限定ハードクエスト（ムーア）"
     },
     "exp": 7228,
     "nrg": 8,
@@ -44024,6 +44089,32 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_EV_ART_CRF_22": {
+    "dataId": "QE_EV_ART_CRF_22",
+    "items": {},
+    "names": {
+      "en": "超高難度　武具育成クエスト（プラチナメイス）"
+    },
+    "exp": 10634,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_ART_CRF_23": {
+    "dataId": "QE_EV_ART_CRF_23",
+    "items": {},
+    "names": {
+      "en": "超高難度　武具育成クエスト（サンゴの剣）"
+    },
+    "exp": 10634,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_EV_ART_CRF_09": {
     "dataId": "QE_EV_ART_CRF_09",
     "items": {
@@ -47575,6 +47666,45 @@
     "nrg": 12,
     "jp": 6,
     "enemies": 12,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_CHAL_04_01": {
+    "dataId": "QE_CHAL_04_01",
+    "items": {},
+    "names": {
+      "en": "【高難度】チャレンジクエスト4"
+    },
+    "exp": 5933,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_CHAL_04_02": {
+    "dataId": "QE_CHAL_04_02",
+    "items": {},
+    "names": {
+      "en": "【超高難度】チャレンジクエスト4"
+    },
+    "exp": 10634,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_CHAL_04_03": {
+    "dataId": "QE_CHAL_04_03",
+    "items": {},
+    "names": {
+      "en": "【極高難度】チャレンジクエスト4"
+    },
+    "exp": 59336,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -52232,6 +52362,97 @@
     "gils": 2100,
     "chests": 0
   },
+  "QE_EV_CWEL_01": {
+    "dataId": "QE_EV_CWEL_01",
+    "items": {},
+    "names": {
+      "en": "コーウェル獲得クエスト　クエスト1"
+    },
+    "exp": 972,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CWEL_02": {
+    "dataId": "QE_EV_CWEL_02",
+    "items": {},
+    "names": {
+      "en": "コーウェル獲得クエスト　クエスト2"
+    },
+    "exp": 1791,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CWEL_03": {
+    "dataId": "QE_EV_CWEL_03",
+    "items": {},
+    "names": {
+      "en": "コーウェル獲得クエスト　クエスト3"
+    },
+    "exp": 2679,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CWEL_04": {
+    "dataId": "QE_EV_CWEL_04",
+    "items": {},
+    "names": {
+      "en": "コーウェル獲得クエスト　クエスト4"
+    },
+    "exp": 3519,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CWEL_05": {
+    "dataId": "QE_EV_CWEL_05",
+    "items": {},
+    "names": {
+      "en": "コーウェル獲得クエスト　クエスト5"
+    },
+    "exp": 4745,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_EV_CWEL_EX1": {
+    "dataId": "QE_EV_CWEL_EX1",
+    "items": {},
+    "names": {
+      "en": "高難度　コーウェル獲得　EXクエスト"
+    },
+    "exp": 5623,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_CWEL_EX2": {
+    "dataId": "QE_EV_CWEL_EX2",
+    "items": {},
+    "names": {
+      "en": "超高難度　コーウェル獲得　EXクエスト"
+    },
+    "exp": 8733,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_EV_ART_CRF_01": {
     "dataId": "QE_EV_ART_CRF_01",
     "items": {
@@ -55990,6 +56211,58 @@
     "gils": 1800,
     "chests": 0
   },
+  "QE_MU_EV_CW_EX1": {
+    "dataId": "QE_MU_EV_CW_EX1",
+    "items": {},
+    "names": {
+      "en": "Multi: 高難度　コーウェル獲得　EXクエスト"
+    },
+    "exp": 5623,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_EV_CW_EX2": {
+    "dataId": "QE_MU_EV_CW_EX2",
+    "items": {},
+    "names": {
+      "en": "Multi: 超高難度　コーウェル獲得　EXクエスト"
+    },
+    "exp": 8733,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_CHAL_04_02": {
+    "dataId": "QE_MU_CHAL_04_02",
+    "items": {},
+    "names": {
+      "en": "Multi: 【超高難度】チャレンジクエスト4"
+    },
+    "exp": 10634,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_CHAL_04_03": {
+    "dataId": "QE_MU_CHAL_04_03",
+    "items": {},
+    "names": {
+      "en": "Multi: 【極高難度】チャレンジクエスト4"
+    },
+    "exp": 59336,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
   "QE_MU_ART_CRF_16": {
     "dataId": "QE_MU_ART_CRF_16",
     "items": {
@@ -56510,6 +56783,32 @@
     "jp": 0,
     "enemies": 11,
     "gils": 1500,
+    "chests": 0
+  },
+  "QE_MU_ART_CRF_22": {
+    "dataId": "QE_MU_ART_CRF_22",
+    "items": {},
+    "names": {
+      "en": "Multi: 超高難度　武具育成クエスト（プラチナメイス）"
+    },
+    "exp": 10634,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_ART_CRF_23": {
+    "dataId": "QE_MU_ART_CRF_23",
+    "items": {},
+    "names": {
+      "en": "Multi: 超高難度　武具育成クエスト（サンゴの剣）"
+    },
+    "exp": 10634,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
+    "gils": 1800,
     "chests": 0
   },
   "QE_MU_ART_CRF_09": {
@@ -61565,6 +61864,16 @@
     "enemies": 0,
     "chests": 0
   },
+  "QE_ARENA_00016": {
+    "dataId": "QE_ARENA_00016",
+    "items": {},
+    "names": {
+      "en": "教会 裏手"
+    },
+    "nrg": 8,
+    "enemies": 0,
+    "chests": 0
+  },
   "QE_GVG_00001": {
     "dataId": "QE_GVG_00001",
     "items": {},
@@ -61801,6 +62110,24 @@
     "items": {},
     "names": {
       "en": "闘技場Ⅰ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_FRE_0011": {
+    "dataId": "QE_PVP_FRE_0011",
+    "items": {},
+    "names": {
+      "en": "雪山Ⅱ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_FRI_0030": {
+    "dataId": "QE_PVP_FRI_0030",
+    "items": {},
+    "names": {
+      "en": "教会 裏手"
     },
     "enemies": 0,
     "chests": 0
@@ -62143,6 +62470,15 @@
     "items": {},
     "names": {
       "en": "闘技場Ⅰ"
+    },
+    "enemies": 0,
+    "chests": 0
+  },
+  "QE_PVP_DRFT_0001": {
+    "dataId": "QE_PVP_DRFT_0001",
+    "items": {},
+    "names": {
+      "en": "雪山Ⅱ"
     },
     "enemies": 0,
     "chests": 0

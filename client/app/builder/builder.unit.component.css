@@ -535,6 +535,11 @@ tr.disable {
   width: 410px;
 }
 
+.select-target-element {
+  display: inline-block;
+  width: 100px;
+}
+
 /* Chrome, Safari, Edge, Opera */
 .inputInSim::-webkit-outer-spin-button,
 .inputInSim::-webkit-inner-spin-button {

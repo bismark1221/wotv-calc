@@ -1427,7 +1427,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -25,
+              "maxValue": -50,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -25,
               "maxValue": -50,
               "calcType": "fixe",
@@ -1447,7 +1454,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -5,
+              "maxValue": -25,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -5,
               "maxValue": -25,
               "calcType": "fixe",
@@ -1467,7 +1481,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -25,
+              "maxValue": -25,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -25,
               "maxValue": -25,
               "calcType": "fixe",
@@ -1759,7 +1780,15 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
@@ -1780,7 +1809,15 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": 0,
               "maxValue": 0,
               "calcType": "fixe",
@@ -1801,7 +1838,15 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -100,
+              "maxValue": -100,
+              "calcType": "fixe",
+              "condition": "LIGHT_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -100,
               "maxValue": -100,
               "calcType": "fixe",
@@ -9827,7 +9872,8 @@
               "maxValue": -20,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "dataId": "SK_VC_LW_HLNA_PVA",
@@ -10550,7 +10596,8 @@
               "maxValue": -40,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_BEFORE"
             }
           ],
           "dataId": "SK_VC_LW_HALL_PVA",
@@ -10919,7 +10966,8 @@
               "maxValue": -25,
               "calcType": "fixe",
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_BEFORE"
             }
           ],
           "dataId": "SK_VC_LW_RAMD_PVA",
@@ -12623,7 +12671,8 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "MAG",
@@ -12632,14 +12681,16 @@
               "calcType": "percent",
               "turn": 3,
               "increaseMax": true,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             },
             {
               "type": "IMMOBILIZE_ATK",
               "calcType": "percent",
               "rate": 25,
               "turn": 3,
-              "target": "all"
+              "target": "all",
+              "timing": "SKILL_AFTER"
             }
           ],
           "dataId": "SK_VC_LW_XMAS_PVA",
@@ -19296,7 +19347,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -25,
+              "maxValue": -70,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -25,
               "maxValue": -70,
               "calcType": "fixe",
@@ -19323,7 +19381,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -10,
+              "maxValue": -30,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -10,
               "maxValue": -30,
               "calcType": "fixe",
@@ -26116,7 +26181,14 @@
           "unlockStar": null,
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -15,
+              "maxValue": -30,
+              "calcType": "fixe",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
               "minValue": -15,
               "maxValue": -30,
               "calcType": "fixe",
