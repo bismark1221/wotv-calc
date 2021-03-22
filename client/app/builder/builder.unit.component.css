@@ -535,9 +535,15 @@ tr.disable {
   width: 410px;
 }
 
+.select-target-race {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+}
+
 .select-target-element {
   display: inline-block;
-  width: 100px;
+  width: 190px;
 }
 
 /* Chrome, Safari, Edge, Opera */
