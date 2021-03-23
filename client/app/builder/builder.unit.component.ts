@@ -125,7 +125,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   showSim = false;
   damageSim = null;
-
   species = [];
 
   constructor(
@@ -457,6 +456,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
         this.unit.card = card;
 
         this.unitService.changeLevel();
+        this.updateActiveSkillsForSim();
       }
     }, (reason) => {
     });
@@ -582,17 +582,21 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
       }
     });
 
-    // Add LB + VC + Equipment
-
     this.unit.skillsForSim = skills;
 
     if (this.unit.limit) {
       this.unit.skillsForSim.push(this.unit.limit);
     }
 
+    if (this.unit.card) {
+      this.unit.card.skills.forEach(skill => {
+        this.unit.skillsForSim.push(skill);
+      });
+    }
+
     if (this.damageSim && this.damageSim.unit.selectedSkill) {
       let oldSelectedSkillFound = false;
-      skills.forEach(skill => {
+      this.unit.skillsForSim.forEach(skill => {
         if (skill.dataId === this.damageSim.unit.selectedSkill.dataId) {
           oldSelectedSkillFound = true;
         }
@@ -605,9 +609,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
       this.damageSim.unit.selectedSkill = this.unit.skillsForSim[0];
+      this.calculateDamageSim();
     }
-
-    this.calculateDamageSim();
   }
 
   newDamageSim() {
@@ -656,14 +659,18 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           faith: 0
         }
       },
-      result: 0
+      result: {
+        normal: 0,
+        critic: 0,
+        conditions: []
+      }
     };
 
     this.species = this.simulatorService.getSpecies();
   }
 
   calculateDamageSim() {
-    // this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
+    this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
   }
 
   resetUnit() {

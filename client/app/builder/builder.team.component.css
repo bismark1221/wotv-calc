@@ -243,6 +243,14 @@
   padding: 5px;
 }
 
+.jobName {
+  overflow: hidden;
+  height: 45px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .equipmentDiv {
   width: 33%;
   display: inline-block;
@@ -261,6 +269,7 @@
 
 .esperImg, .cardImg {
   width: 110px;
+  height: 110px;
   cursor: pointer;
 }
 
@@ -358,4 +367,152 @@
 .select-limit-level, .select-job, .select-resonance {
   display: inline-block;
   width: 60px;
+}
+
+
+
+
+/********************/
+/* Damage Simulator */
+/********************/
+.tableSim {
+  width: 100%;
+}
+
+.selectSimSkill {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.inputMiniStatBlock {
+  width: 120px;
+}
+
+.inputMiniStatBlock .input-group-prepend {
+  width: 65px;
+  padding-right: 0;
+}
+
+.inputMiniStatBlock .input-group-prepend .input-group-text {
+  width: 100%;
+}
+
+.inputInSim {
+  text-align: right;
+}
+
+.simMiniStats {
+  width: 100%;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.simMiniStats .inlineInputGroup {
+  margin-right: 10px;
+}
+
+.inputPercentage {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.appendPercentage {
+  border-left: 0;
+}
+
+.appendPercentage .input-group-text {
+  padding-left: 0;
+  background-color: #fff;
+}
+
+.longStatGroup:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.inputUnitStatBlock {
+  width: 190px;
+}
+
+.inputDamageTypePene {
+  width: 260px;
+}
+
+
+
+
+.targetTd {
+  width: 410px;
+  vertical-align: top;
+}
+
+.select-target-race {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+}
+
+.select-target-element {
+  display: inline-block;
+  width: 190px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputInSim::-webkit-outer-spin-button,
+.inputInSim::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputInSim {
+  -moz-appearance: textfield;
+}
+
+.targetStatBlock {
+  width: 190px;
+}
+
+.inputBreakBlock {
+  border-top: 1px solid rgb(206, 212, 218);
+  border-bottom: 1px solid rgb(206, 212, 218);
+}
+
+.inputBreakIcon {
+  padding-right: 0;
+  background-color: #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.inputTargetBreakStat {
+  padding-left: 5px;
+  border-left: 0;
+}
+
+.inputTargetPrepend {
+  width: 58px;
+  margin: 0;
+}
+
+.inputTargetTextImg {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.targetStatImg {
+  height: 34px;
+}
+
+.inlineInputGroup {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.targetStatGroup:nth-child(even) {
+  margin-right: 10px;
+}
+
+.damageTd {
+  vertical-align: top;
 }

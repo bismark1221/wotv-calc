@@ -991,7 +991,7 @@
         <table class="tableSim">
           <tr>
             <td class="targetTd">
-              Unit
+              <div>Unit</div>
 
               Active Skills
               <ng-select
@@ -1315,9 +1315,21 @@
             <td class="damageTd">
               <div>
                 <div>Damage</div>
-                <div>{{ damageSim.result }}</div>
+                <div>{{ damageSim.result.normal }}</div>
+
+                <div>Critic</div>
+                <div>{{ damageSim.result.critic }}</div>
               </div>
-              <button (click)="calculateDamageSim()">TEST</button>
+
+              <div *ngFor="let condition of damageSim.result.conditions">
+                <div>Max damage for condition : {{ condition.type }}</div>
+                <div>{{ condition.normal }}</div>
+
+                <div>Critic</div>
+                <div>{{ condition.critic }}</div>
+              </div>
+
+              <button class="btn btn-sub" (click)="calculateDamageSim()">Calculate</button>
             </td>
           </tr>
         </table>

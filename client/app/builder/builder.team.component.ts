@@ -16,6 +16,7 @@ import { TeamService } from '../services/team.service';
 import { NameService } from '../services/name.service';
 import { AuthService } from '../services/auth.service';
 import { NavService } from '../services/nav.service';
+import { SimulatorService } from '../services/simulator.service';
 
 import { BuilderGuildComponent } from './builder.guild.component';
 
@@ -67,6 +68,12 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     N: 'Normal'
   };
 
+  unitsForSim = [];
+  selectedUnitForSim = 0;
+  showSim = false;
+  damageSim = null;
+  species = [];
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private unitService: UnitService,
@@ -81,7 +88,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     private clipboardService: ClipboardService,
     private teamService: TeamService,
     private authService: AuthService,
-    private navService: NavService
+    private navService: NavService,
+    private simulatorService: SimulatorService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       for (let i = 0; i <= 4; i++) {
@@ -119,6 +127,10 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
               });
             }
           }
+
+          this.getUnitsForSim();
+          this.newDamageSim();
+          this.updateActiveSkillsForSim();
         });
       }
     });
@@ -193,6 +205,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
           await this.getAvailableUnits(i);
         }
       }
+
+      this.getUnitsForSim();
+      this.updateActiveSkillsForSim();
     }
   }
 
@@ -221,11 +236,14 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       } else {
         this.selectedUnits[pos] = null;
       }
+
+      this.getUnitsForSim();
     });
   }
 
   changeStar(pos, value) {
     this.teamService.changeStar(pos, value);
+    this.updateActiveSkillsForSim();
   }
 
   changeLB(pos, value) {
@@ -236,6 +254,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.teamService.changeLB(pos, value);
     this.updateSelectedEquipments(pos);
     this.changeLevel(pos);
+
+    this.updateActiveSkillsForSim();
   }
 
   updateSelectedEquipments(pos) {
@@ -262,18 +282,23 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   changeLevel(pos) {
     this.teamService.changeLevel(pos);
+
+    this.calculateDamageSim(pos);
   }
 
   updateJobLevel(pos, jobNumber) {
     this.teamService.changeJobLevel(pos);
+    this.updateActiveSkillsForSim();
   }
 
   maxUnit(pos) {
     this.teamService.maxUnit(pos);
+    this.updateActiveSkillsForSim();
   }
 
   maxLevelAndJobs(pos) {
     this.teamService.maxLevelAndJobs(pos);
+    this.updateActiveSkillsForSim();
   }
 
   showGuildDetail() {
@@ -286,6 +311,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
           this.teamService.changeLevel(i);
+          this.calculateDamageSim();
         }
       }
     }, (reason) => {
@@ -302,6 +328,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       for (let i = 0; i <= 4; i++) {
         if (this.team.units[i]) {
           this.teamService.changeLevel(i);
+          this.calculateDamageSim();
         }
       }
     }, (reason) => {
@@ -322,6 +349,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (equipment) {
         this.team.units[unitPos].equipments[equipmentPos] = equipment;
         this.teamService.changeLevel(unitPos);
+        this.calculateDamageSim(unitPos);
       }
     }, (reason) => {
     });
@@ -340,6 +368,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (esper) {
         this.team.units[pos].esper = esper;
         this.teamService.changeLevel(pos);
+        this.calculateDamageSim(unitPos);
       }
 
       this.teamService.updateTeamCost();
@@ -367,6 +396,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
             this.team.units[unitIndex].changeLevel();
           }
         });
+
+        this.updateActiveSkillsForSim();
+        this.calculateDamageSim();
 
         this.teamService.updateTeamCost();
       }
@@ -406,6 +438,10 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         });
       }
     });
+
+    this.getUnitsForSim();
+    this.newDamageSim();
+    this.updateActiveSkillsForSim();
   }
 
   async updateAllAvailable() {
@@ -449,35 +485,185 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   updateLevel(pos) {
     this.changeLevel(pos);
+    this.calculateDamageSim(pos);
   }
 
   selectSubJob(pos, jobNum) {
     this.team.units[pos].subjob = jobNum;
+    this.updateActiveSkillsForSim();
   }
 
-  updateSupportSkill(unitPos) {
-    this.changeLevel(unitPos);
+  updateSupportSkill(pos) {
+    this.changeLevel(pos);
+    this.calculateDamageSim(pos);
   }
 
   updateEsperResonance(pos) {
     this.changeLevel(pos);
+    this.calculateDamageSim(pos);
   }
 
   resetUnit(pos) {
     this.teamService.resetUnit(pos);
+    this.updateActiveSkillsForSim();
   }
 
   resetLevel(pos) {
     this.teamService.resetLevel(pos);
+    this.calculateDamageSim(pos);
   }
 
   resetJob(pos) {
     this.teamService.resetJob(pos);
+    this.updateActiveSkillsForSim();
+    this.calculateDamageSim(pos);
   }
 
   async newTeam() {
     this.team = await this.teamService.newTeam();
     this.updateAllSelected();
     await this.updateAllAvailable();
+    this.newDamageSim();
+    this.getUnitsForSim();
+  }
+
+  getUnitsForSim() {
+    this.unitsForSim = [];
+    this.team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        this.unitsForSim.push({
+          index: unitIndex,
+          name: unit.name
+        });
+      } else if (unitIndex === this.selectedUnitForSim) {
+        this.selectedUnitForSim = null;
+      }
+    });
+
+    if (this.selectedUnitForSim === null) {
+      this.team.units.forEach((unit, unitIndex) => {
+        if (unit && this.selectedUnitForSim === null) {
+          this.selectedUnitForSim = unitIndex;
+          this.changeSimUnit();
+        }
+      });
+    }
+  }
+
+  changeSimUnit() {
+    if (this.team.units[this.selectedUnitForSim] && this.team.units[this.selectedUnitForSim].skillsForSim) {
+      this.damageSim.unit.selectedSkill = this.team.units[this.selectedUnitForSim].skillsForSim[0];
+      this.calculateDamageSim();
+    }
+  }
+
+  newDamageSim() {
+    this.damageSim = {
+      unit: {
+        selectedSkill: null,
+        brave: 97,
+        faith: 97,
+        buffs: {
+          atk: 0,
+          mag: 0,
+          dex: 0,
+          agi: 0,
+          luck: 0,
+          raceKiller: 0,
+          elementKiller: 0,
+          elementAtk: 0,
+          damageType: 0,
+          criticDamage: 0,
+          defense_penetration: 0,
+          spirit_penetration: 0,
+          typeResPene: 0
+        },
+        chain: {
+          element: 0,
+          type: 0
+        }
+      },
+      target: {
+        race: 'human',
+        element: 'light',
+        def: 0,
+        spr: 0,
+        elementRes: 0,
+        damageTypeRes: 0,
+        attack_res: 0,
+        aoe_res: 0,
+        faith: 0,
+        breaks: {
+          def: 0,
+          spr: 0,
+          elementRes: 0,
+          damageTypeRes: 0,
+          attack_res: 0,
+          aoe_res: 0,
+          faith: 0
+        }
+      },
+      result: {
+        normal: 0,
+        critic: 0,
+        conditions: []
+      }
+    };
+
+    this.species = this.simulatorService.getSpecies();
+  }
+
+  calculateDamageSim(unitPos = null) {
+    if (unitPos === null || this.selectedUnitForSim === unitPos) {
+      this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
+    }
+  }
+
+  updateActiveSkillsForSim() {
+    this.team.units.forEach((unit, unitIndex) => {
+      if (unit) {
+        const skills = [
+          unit.attack
+        ];
+
+        this.teamService.getActiveSkills(unitIndex);
+
+        unit.activeSkills.forEach(skill => {
+          if (skill.damage) {
+            skills.push(skill);
+          }
+        });
+
+        unit.skillsForSim = skills;
+
+        if (unit.limit) {
+          unit.skillsForSim.push(unit.limit);
+        }
+
+        if (unit.card) {
+          unit.card.skills.forEach(skill => {
+            unit.skillsForSim.push(skill);
+          });
+        }
+      }
+    });
+
+    if (this.damageSim && this.damageSim.unit.selectedSkill && this.team.units[this.selectedUnitForSim]) {
+      let oldSelectedSkillFound = false;
+      this.team.units[this.selectedUnitForSim].skillsForSim.forEach(skill => {
+        if (skill.dataId === this.damageSim.unit.selectedSkill.dataId) {
+          oldSelectedSkillFound = true;
+        }
+      });
+
+      if (!oldSelectedSkillFound) {
+        this.damageSim.unit.selectedSkill = null;
+      }
+    }
+
+    if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
+      this.damageSim.unit.selectedSkill = this.team.units[this.selectedUnitForSim].skillsForSim[0];
+      this.calculateDamageSim();
+    }
   }
 }

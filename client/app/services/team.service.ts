@@ -15,6 +15,8 @@ import { EsperService } from './esper.service';
 import { UnitService } from './unit.service';
 import { AuthService } from './auth.service';
 import { ToolService } from './tool.service';
+import { SkillService } from './skill.service';
+import { RangeService } from './range.service';
 
 @Injectable()
 export class TeamService {
@@ -36,7 +38,9 @@ export class TeamService {
     private unitService: UnitService,
     private firestore: AngularFirestore,
     private toolService: ToolService,
-    private authService: AuthService
+    private authService: AuthService,
+    private skillService: SkillService,
+    private rangeService: RangeService
   ) {}
 
   async newTeam() {
@@ -526,5 +530,9 @@ export class TeamService {
   resetJob(pos) {
     this.team.units[pos].resetJob();
     this.updateTeamCost();
+  }
+
+  getActiveSkills(pos) {
+    this.team.units[pos].getActiveSkills(true, this.nameService, this.skillService, this.rangeService);
   }
 }
