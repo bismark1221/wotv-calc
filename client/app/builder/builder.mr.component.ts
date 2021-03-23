@@ -39,7 +39,7 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
 
     setTimeout(() => {
       this.authService.$user.subscribe(user => {
-        if (user && this.version === 'JP') {
+        if (user) {
           this.showSave = true;
         } else {
           this.showSave = false;

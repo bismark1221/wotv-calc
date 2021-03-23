@@ -101,7 +101,7 @@
         <a class="nav-link" [routerLink]="[getRoute('/builder/esper')]" [routerLinkActive]="['active']">{{ 'nav.espers' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/equipment')]" [routerLinkActive]="['active']">{{ 'nav.equipments' | translate }}</a>
         <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']">{{ 'nav.guild' | translate }}</a>
-        <a *ngIf="version === 'JP'" class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">{{ 'nav.masterRanks' | translate }}</a>
+        <a class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']">{{ 'nav.masterRanks' | translate }}</a>
       </li>
     </ul>
   </div>
@@ -155,7 +155,7 @@
           <a class="nav-link" [routerLink]="[getRoute('/builder/guild')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
             {{ 'nav.guild' | translate }}
           </a>
-          <a *ngIf="version === 'JP'" class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
+          <a class="nav-link" [routerLink]="[getRoute('/builder/master-ranks')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">
             {{ 'nav.masterRanks' | translate }}
           </a>
         </div>
