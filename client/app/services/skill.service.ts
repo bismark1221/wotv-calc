@@ -702,6 +702,9 @@ export class SkillService {
       case 'FAITH_FIGHT' :
         html = this.getIncrease(effect) + ' Faith' + this.getValue(skill, effect);
       break;
+      case 'ACTIVATION_TIME' :
+        html = this.getIncrease(effect) + ' Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'NON_ATTACK_ACTIVATION_TIME' :
         if (this.navService.getVersion() === 'JP') {
           html = this.getIncrease(effect) + ' None Attack Skill Activation Time' + this.getValue(skill, effect) + this.getTurns(effect);
