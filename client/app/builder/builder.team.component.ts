@@ -368,7 +368,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (esper) {
         this.team.units[pos].esper = esper;
         this.teamService.changeLevel(pos);
-        this.calculateDamageSim(unitPos);
+        this.calculateDamageSim(pos);
       }
 
       this.teamService.updateTeamCost();
@@ -615,7 +615,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   calculateDamageSim(unitPos = null) {
     if (unitPos === null || this.selectedUnitForSim === unitPos) {
-      this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
+      // this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
     }
   }
 
