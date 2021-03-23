@@ -70,7 +70,6 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   unitsForSim = [];
   selectedUnitForSim = 0;
-  showSim = false;
   damageSim = null;
   species = [];
 
@@ -615,7 +614,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
   calculateDamageSim(unitPos = null) {
     if (unitPos === null || this.selectedUnitForSim === unitPos) {
-      // this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
+      this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
     }
   }
 

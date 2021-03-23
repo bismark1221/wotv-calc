@@ -123,7 +123,6 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     'strike_res',
   ];
 
-  showSim = false;
   damageSim = null;
   species = [];
 
@@ -670,7 +669,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   calculateDamageSim() {
-    // this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
+    this.simulatorService.calculateDamageSim(this.unit, this.damageSim);
   }
 
   resetUnit() {

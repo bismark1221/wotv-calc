@@ -50,7 +50,7 @@
               <button class="btn btn-main btn-right" id="max_unit" (click)="maxUnit()">Max unit</button>
             </div>
             <div class="cardIcons">
-              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" (click)="showSim = !showSim;" />
+              <img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" />
               <img class="elementImg" src="{{'assets/elements/' + unit.element + '.png'}}" />
             </div>
             <div>
@@ -979,7 +979,7 @@
       </div>
     </div>
 
-    <div class="damageSimBlock" *ngIf="showSim">
+    <div class="damageSimBlock">
       <div class="damageSimTitle">
         <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim" [attr.aria-expanded]="!isCollapsedDamageSim">
           Damage Simulator

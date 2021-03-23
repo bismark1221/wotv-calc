@@ -100,9 +100,18 @@
   padding-right: 5px;
 }
 
-.logo {
-  height: 30px;
+.logoLinkDesktop {
+  position: absolute;
+  top: 0px;
+}
+
+.logo_desktop {
+  height: 60px;
   margin-left: 20px;
+}
+
+.logo_mobile {
+  height: 60px;
 }
 
 /* Lang Selector */

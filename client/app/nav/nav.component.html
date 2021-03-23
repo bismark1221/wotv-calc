@@ -1,6 +1,6 @@
 <nav class="navbar navbar-toggleable-md main fixed-top mainNav">
-  <a class="navbar-brand" [routerLink]="[getRoute('/')]">
-    <img src="assets/nav/WOTV-CALC.png" class="logo" />
+  <a class="navbar-brand logoLinkDesktop" [routerLink]="[getRoute('/')]">
+    <img src="assets/nav/WOTVCALC_LOGO_WHITE.png" class="logo_desktop"/>
   </a>
 
   <div class="centerNav">
@@ -109,7 +109,7 @@
 
 <nav class="navbar navbar-toggleable-md main fixed-top mobileNav">
   <a class="navbar-brand" [routerLink]="[getRoute('/')]" (click)="toggleMobileMenu(true)">
-    <img src="assets/nav/WOTV-CALC.png" class="logo" />
+    <img src="assets/nav/WOTVCALC_LOGO_WHITE.png" class="logo_mobile" />
   </a>
 
   <div class="centerNav mobileLinks" [ngClass]="{'showMobileMenu': displayMobileMenu === true}">

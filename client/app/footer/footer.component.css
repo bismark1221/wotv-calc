@@ -13,14 +13,16 @@ hr {
 
 .logo {
   float: left;
+  height: 60px;
   padding-top: 15px;
   padding-left: 15px;
 }
 
 .textFooter {
-  margin: 0;
   height: 30px;
-  padding-left: 150px;
+  width: 600px;
+  margin: auto;
+  line-height: 40px;
 }
 
 .red {
@@ -32,7 +34,7 @@ hr {
   float: right;
 }
 
-.links a, .reportBug {
+.links a, .reportBug, .vermilionivalice {
   color: var(----footer-link);
   text-decoration: underline;
 }
