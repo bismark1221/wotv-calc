@@ -20,6 +20,7 @@ export class CardsComponent implements OnInit {
     element: []
   };
   isCollapsedRarity = false;
+  isCollapsedElement = false;
   version = 'GL';
 
   constructor(
