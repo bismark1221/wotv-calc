@@ -1765,12 +1765,12 @@ export class JsonService {
           const materialItemId = this[this.version].unitClassChangeCondition[job.iname].material_item_id;
           const unitMaterials = this[this.version].unitsMaterials[materialItemId];
 
-          for (let i = 1; i <= 10; i++) {
-            if (unitMaterials.items[0]['m' + i]) {
-              if (!materials[0][unitMaterials.items[0]['m' + i].iname]) {
-                materials[0][unitMaterials.items[0]['m' + i].iname] = unitMaterials.items[0]['m' + i].num;
+          for (let j = 1; j <= 10; j++) {
+            if (unitMaterials.items[0]['m' + j]) {
+              if (!materials[0][unitMaterials.items[0]['m' + j].iname]) {
+                materials[0][unitMaterials.items[0]['m' + j].iname] = unitMaterials.items[0]['m' + j].num;
               } else {
-                materials[0][unitMaterials.items[0]['m' + i].iname] += unitMaterials.items[0]['m' + i].num;
+                materials[0][unitMaterials.items[0]['m' + j].iname] += unitMaterials.items[0]['m' + j].num;
               }
             }
           }
