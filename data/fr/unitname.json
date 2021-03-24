@@ -409,6 +409,14 @@
             "value": "Elsirelle"
         },
         {
+            "key": "UN_FF10_P_TIDU",
+            "value": "Tidus"
+        },
+        {
+            "key": "UN_FF10_P_YUNA",
+            "value": "Yuna"
+        },
+        {
             "key": "UN_LW_E_IRDL",
             "value": "Ildyra"
         },
@@ -1633,10 +1641,6 @@
             "value": "Pampor"
         },
         {
-            "key": "UN_LW_E_CACT_03_RAID",
-            "value": "Pampor"
-        },
-        {
             "key": "UN_LW_E_CACT_RAID",
             "value": "Pampinator"
         },
@@ -1646,6 +1650,14 @@
         },
         {
             "key": "UN_LW_E_CACT_03_B",
+            "value": "Pampor"
+        },
+        {
+            "key": "UN_LW_E_CACT_03_GH",
+            "value": "Pampor"
+        },
+        {
+            "key": "UN_LW_E_CACT_03_RAID",
             "value": "Pampor"
         },
         {
@@ -1697,6 +1709,18 @@
             "value": "Golbez"
         },
         {
+            "key": "UN_FF10_E_DKFN",
+            "value": "Flan noir"
+        },
+        {
+            "key": "UN_FF10_E_DFDZ",
+            "value": "Golem Type 0"
+        },
+        {
+            "key": "UN_FF10_E_YNLS",
+            "value": "Yunalesca"
+        },
+        {
             "key": "UN_LW_E_SO_03_GUN_RA",
             "value": "Soldat de Fennes"
         },
@@ -1726,6 +1750,10 @@
         },
         {
             "key": "UN_LW_E_IFRT_SIREN",
+            "value": "Ifrit"
+        },
+        {
+            "key": "UN_LW_E_IFRT_SIREN2",
             "value": "Ifrit"
         },
         {
@@ -1879,6 +1907,14 @@
         {
             "key": "UN_LW_E_MRLT_SIREN",
             "value": "Marilith"
+        },
+        {
+            "key": "UN_LW_E_BAHM",
+            "value": "Bahamut"
+        },
+        {
+            "key": "UN_LW_E_BAHM_SIREN",
+            "value": "Bahamut"
         },
         {
             "key": "UN_LW_E_GLMS_ARENA",
@@ -2613,6 +2649,22 @@
             "value": "Marilith"
         },
         {
+            "key": "UN_LW_S_BAHM",
+            "value": "Bahamut"
+        },
+        {
+            "key": "UN_LW_S_BAHM_AW1",
+            "value": "Bahamut"
+        },
+        {
+            "key": "UN_LW_S_BAHM_AW2",
+            "value": "Bahamut"
+        },
+        {
+            "key": "UN_FF10_S_VLFR",
+            "value": "Valefore"
+        },
+        {
             "key": "UN_GM_TREASURE",
             "value": "Coffre au trésor"
         },
@@ -2715,6 +2767,18 @@
         {
             "key": "UN_GM_WALL",
             "value": "Mur destructible"
+        },
+        {
+            "key": "UN_GM_SCF0",
+            "value": "Tour de guet écroulée 1"
+        },
+        {
+            "key": "UN_GM_SCF1",
+            "value": "Tour de guet écroulée 2"
+        },
+        {
+            "key": "UN_GM_SCF2",
+            "value": "Tour de guet écroulée 3"
         }
     ]
 }
