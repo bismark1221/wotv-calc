@@ -251,7 +251,7 @@
     "dataId": "IT_ARENAP_02",
     "names": {
       "en": "Arena Orb Restore (Full)",
-      "fr": "Restauration d'orbes d'arène (Tous)"
+      "fr": "Restauration d'orbes d'arène (Complète)"
     },
     "type": "potion_rene"
   },
@@ -3169,6 +3169,96 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_MSW_FIRE"
   },
+  "IT_JB_MM_FF10_TIDU": {
+    "dataId": "IT_JB_MM_FF10_TIDU",
+    "names": {
+      "en": "Abes' Star Player's Memory (Green)",
+      "fr": "Souvenir de Star des Abes (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_TIDU"
+  },
+  "IT_JB_MM_FF10_TIDU_2": {
+    "dataId": "IT_JB_MM_FF10_TIDU_2",
+    "names": {
+      "en": "Abes' Star Player's Memory (Blue)",
+      "fr": "Souvenir de Star des Abes (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_TIDU"
+  },
+  "IT_JB_MM_FF10_TIDU_3": {
+    "dataId": "IT_JB_MM_FF10_TIDU_3",
+    "names": {
+      "en": "Abes' Star Player's Memory (Purple)",
+      "fr": "Souvenir de Star des Abes (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_TIDU"
+  },
+  "IT_JB_MM_FF10_TIDU_4": {
+    "dataId": "IT_JB_MM_FF10_TIDU_4",
+    "names": {
+      "en": "Abes' Star Player's Memory (Yellow)",
+      "fr": "Souvenir de Star des Abes (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_TIDU"
+  },
+  "IT_JB_MM_FF10_TIDU_5": {
+    "dataId": "IT_JB_MM_FF10_TIDU_5",
+    "names": {
+      "en": "Abes' Star Player's Memory (Red)",
+      "fr": "Souvenir de Star des Abes (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_TIDU"
+  },
+  "IT_JB_MM_FF10_YUNA": {
+    "dataId": "IT_JB_MM_FF10_YUNA",
+    "names": {
+      "en": "Summoner of Spira's Memory (Green)",
+      "fr": "Souvenir d'Invokeur de Spira (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_YUNA"
+  },
+  "IT_JB_MM_FF10_YUNA_2": {
+    "dataId": "IT_JB_MM_FF10_YUNA_2",
+    "names": {
+      "en": "Summoner of Spira's Memory (Blue)",
+      "fr": "Souvenir d'Invokeur de Spira (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_YUNA"
+  },
+  "IT_JB_MM_FF10_YUNA_3": {
+    "dataId": "IT_JB_MM_FF10_YUNA_3",
+    "names": {
+      "en": "Summoner of Spira's Memory (Purple)",
+      "fr": "Souvenir d'Invokeur de Spira (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_YUNA"
+  },
+  "IT_JB_MM_FF10_YUNA_4": {
+    "dataId": "IT_JB_MM_FF10_YUNA_4",
+    "names": {
+      "en": "Summoner of Spira's Memory (Yellow)",
+      "fr": "Souvenir d'Invokeur de Spira (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_YUNA"
+  },
+  "IT_JB_MM_FF10_YUNA_5": {
+    "dataId": "IT_JB_MM_FF10_YUNA_5",
+    "names": {
+      "en": "Summoner of Spira's Memory (Red)",
+      "fr": "Souvenir d'Invokeur de Spira (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_YUNA"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3566,6 +3656,182 @@
     "names": {
       "en": "Prowling Wyvern Statue (Red)",
       "fr": "Statue de wyverne aux aguets (Rouge)"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_N": {
+    "dataId": "IT_JBEX_N",
+    "names": {
+      "en": "Copper Broadstone",
+      "fr": "Joyau cuivré"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_R": {
+    "dataId": "IT_JBEX_R",
+    "names": {
+      "en": "Silver Broadstone",
+      "fr": "Joyau argenté"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SR": {
+    "dataId": "IT_JBEX_SR",
+    "names": {
+      "en": "Gold Broadstone",
+      "fr": "Joyau doré"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SSR": {
+    "dataId": "IT_JBEX_SSR",
+    "names": {
+      "en": "Azure Broadstone",
+      "fr": "Joyau azur"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_UR": {
+    "dataId": "IT_JBEX_UR",
+    "names": {
+      "en": "Rainbow Broadstone",
+      "fr": "Joyau arc-en-ciel"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_MM": {
+    "dataId": "IT_JBEX_MM",
+    "names": {
+      "en": "Blossom of Paradise",
+      "fr": "Lilas du paradis"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_FIRE": {
+    "dataId": "IT_JBEX_FIRE",
+    "names": {
+      "en": "Fire Alcryst Statue",
+      "fr": "Sculpture d'alcrist de feu"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_WATER": {
+    "dataId": "IT_JBEX_WATER",
+    "names": {
+      "en": "Water Alcryst Statue",
+      "fr": "Sculpture d'alcrist d'eau"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_THUNDER": {
+    "dataId": "IT_JBEX_THUNDER",
+    "names": {
+      "en": "Lightning Alcryst Statue",
+      "fr": "Sculpture d'alcrist de foudre"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_WIND": {
+    "dataId": "IT_JBEX_WIND",
+    "names": {
+      "en": "Wind Alcryst Statue",
+      "fr": "Sculpture d'alcrist de vent"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_ICE": {
+    "dataId": "IT_JBEX_ICE",
+    "names": {
+      "en": "Ice Alcryst Statue",
+      "fr": "Sculpture d'alcrist de glace"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SOIL": {
+    "dataId": "IT_JBEX_SOIL",
+    "names": {
+      "en": "Earth Alcryst Statue",
+      "fr": "Sculpture d'alcrist de terre"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_DARK": {
+    "dataId": "IT_JBEX_DARK",
+    "names": {
+      "en": "Dark Alcryst Statue",
+      "fr": "Sculpture d'alcrist d'ombre"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SHINE": {
+    "dataId": "IT_JBEX_SHINE",
+    "names": {
+      "en": "Light Alcryst Statue",
+      "fr": "Sculpture d'alcrist de lumière"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_BOW": {
+    "dataId": "IT_JBEX_BOW",
+    "names": {
+      "en": "Bow-Branded Tablet",
+      "fr": "Stèle pour arcs"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SWORD": {
+    "dataId": "IT_JBEX_SWORD",
+    "names": {
+      "en": "Sword-Branded Tablet",
+      "fr": "Stèle pour épées"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_FIST": {
+    "dataId": "IT_JBEX_FIST",
+    "names": {
+      "en": "Fist-Branded Tablet",
+      "fr": "Stèle pour poings"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_GUN": {
+    "dataId": "IT_JBEX_GUN",
+    "names": {
+      "en": "Gun-Branded Tablet",
+      "fr": "Stèle pour fusils"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_STAFF": {
+    "dataId": "IT_JBEX_STAFF",
+    "names": {
+      "en": "Staff-Branded Tablet",
+      "fr": "Stèle pour bâtons"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_SPEAR": {
+    "dataId": "IT_JBEX_SPEAR",
+    "names": {
+      "en": "Spear-Branded Tablet",
+      "fr": "Stèle pour lances"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_LSWORD": {
+    "dataId": "IT_JBEX_LSWORD",
+    "names": {
+      "en": "Greatsword-Branded Tablet",
+      "fr": "Stèle pour spathes"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_JSWORD": {
+    "dataId": "IT_JBEX_JSWORD",
+    "names": {
+      "en": "Katana-Branded Tablet",
+      "fr": "Stèle pour katana"
     },
     "type": "compo_job"
   },
@@ -4913,6 +5179,814 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_FF10_TIDU": {
+    "dataId": "IT_PI_FF10_TIDU",
+    "names": {
+      "en": "Tidus Unit Shard",
+      "fr": "Fragment d'unité de Tidus"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_FF10_YUNA": {
+    "dataId": "IT_PI_FF10_YUNA",
+    "names": {
+      "en": "Yuna Unit Shard",
+      "fr": "Fragment d'unité de Yuna"
+    },
+    "type": "unit_shard"
+  },
+  "IT_SP_LW_MONT": {
+    "dataId": "IT_SP_LW_MONT",
+    "names": {
+      "en": "Mont Leonis Mindsphere",
+      "fr": "Sphère spirituelle de Mont Leonis"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_STRN": {
+    "dataId": "IT_SP_LW_STRN",
+    "names": {
+      "en": "Sterne Leonis Mindsphere",
+      "fr": "Sphère spirituelle de Sterne Leonis"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ELDE": {
+    "dataId": "IT_SP_LW_ELDE",
+    "names": {
+      "en": "Oelde Leonis Mindsphere",
+      "fr": "Sphère spirituelle d'Eldo Leonis"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ROBB": {
+    "dataId": "IT_SP_LW_ROBB",
+    "names": {
+      "en": "Robb Hourne Mindsphere",
+      "fr": "Sphère spirituelle de Rob Hourne"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ENBT": {
+    "dataId": "IT_SP_LW_ENBT",
+    "names": {
+      "en": "Engelbert Mindsphere",
+      "fr": "Sphère spirituelle d'Engelbert"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ZIZA": {
+    "dataId": "IT_SP_LW_ZIZA",
+    "names": {
+      "en": "Xiza Mindsphere",
+      "fr": "Sphère spirituelle de Xiza"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_AILN": {
+    "dataId": "IT_SP_LW_AILN",
+    "names": {
+      "en": "Aileen Mindsphere",
+      "fr": "Sphère spirituelle d'Aileen"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MDNA": {
+    "dataId": "IT_SP_LW_MDNA",
+    "names": {
+      "en": "Mediena Mindsphere",
+      "fr": "Sphère spirituelle de Mediena"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_AYKA": {
+    "dataId": "IT_SP_LW_AYKA",
+    "names": {
+      "en": "Ayaka Mindsphere",
+      "fr": "Sphère spirituelle d'Ayaka"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MACR": {
+    "dataId": "IT_SP_LW_MACR",
+    "names": {
+      "en": "Machérie Hourne Mindsphere",
+      "fr": "Sphère spirituelle de Machalie Hourne"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_FDRC": {
+    "dataId": "IT_SP_LW_FDRC",
+    "names": {
+      "en": "Frederika Mindsphere",
+      "fr": "Sphère spirituelle de Frederika"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_YERM": {
+    "dataId": "IT_SP_LW_YERM",
+    "names": {
+      "en": "Yerma Mindsphere",
+      "fr": "Sphère spirituelle de Yelma"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RAMD_01": {
+    "dataId": "IT_SP_LW_RAMD_01",
+    "names": {
+      "en": "Ramada (Winter) Mindsphere",
+      "fr": "Sphère spirituelle de Ramada (Hiver)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MACR_01": {
+    "dataId": "IT_SP_LW_MACR_01",
+    "names": {
+      "en": "Machérie (Winter) Mindsphere",
+      "fr": "Sphère spirituelle de Machalie (Hiver)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MRND": {
+    "dataId": "IT_SP_LW_MRND",
+    "names": {
+      "en": "Miranda Mindsphere",
+      "fr": "Sphère spirituelle de Miranda"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VKTR": {
+    "dataId": "IT_SP_LW_VKTR",
+    "names": {
+      "en": "Viktora Mindsphere",
+      "fr": "Sphère spirituelle de Viktora"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_HLNA": {
+    "dataId": "IT_SP_LW_HLNA",
+    "names": {
+      "en": "Helena Leonis Mindsphere",
+      "fr": "Sphère spirituelle de Helena Leonis"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LILS": {
+    "dataId": "IT_SP_LW_LILS",
+    "names": {
+      "en": "Lilyth Mindsphere",
+      "fr": "Sphère spirituelle de Lilyth"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RAMD": {
+    "dataId": "IT_SP_LW_RAMD",
+    "names": {
+      "en": "Ramada Mindsphere",
+      "fr": "Sphère spirituelle de Ramada"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_OOOO": {
+    "dataId": "IT_SP_LW_OOOO",
+    "names": {
+      "en": "Owe Mindsphere",
+      "fr": "Sphère spirituelle d'Owe"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LRNZ": {
+    "dataId": "IT_SP_LW_LRNZ",
+    "names": {
+      "en": "Lorenzo Mindsphere",
+      "fr": "Sphère spirituelle de Lorenzo"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RIRY": {
+    "dataId": "IT_SP_LW_RIRY",
+    "names": {
+      "en": "Rairyuu Mindsphere",
+      "fr": "Sphère spirituelle de Rairyuu"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VSTR": {
+    "dataId": "IT_SP_LW_VSTR",
+    "names": {
+      "en": "Vistralle Mindsphere",
+      "fr": "Sphère spirituelle de Vistral"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_CLEY": {
+    "dataId": "IT_SP_LW_CLEY",
+    "names": {
+      "en": "Khury Wezette Mindsphere",
+      "fr": "Sphère spirituelle de Khory Wezett"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_KADI": {
+    "dataId": "IT_SP_LW_KADI",
+    "names": {
+      "en": "Cadia Mindsphere",
+      "fr": "Sphère spirituelle de Cadia"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MRLK": {
+    "dataId": "IT_SP_LW_MRLK",
+    "names": {
+      "en": "Meriluke Mindsphere",
+      "fr": "Sphère spirituelle de Marie-Luke"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MGRT": {
+    "dataId": "IT_SP_LW_MGRT",
+    "names": {
+      "en": "Margritte Mindsphere",
+      "fr": "Sphère spirituelle de Margritte"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_PRAY": {
+    "dataId": "IT_SP_LW_PRAY",
+    "names": {
+      "en": "\"Grace\" Mindsphere",
+      "fr": "Sphère spirituelle de « Grâce »"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SZRT": {
+    "dataId": "IT_SP_LW_SZRT",
+    "names": {
+      "en": "Schuzelt Mindsphere",
+      "fr": "Sphère spirituelle de Schuzelt"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_FINA": {
+    "dataId": "IT_SP_LW_FINA",
+    "names": {
+      "en": "Fina Mindsphere",
+      "fr": "Sphère spirituelle de Fina"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SDLX": {
+    "dataId": "IT_SP_LW_SDLX",
+    "names": {
+      "en": "Shadowlynx Mindsphere",
+      "fr": "Sphère spirituelle de Shadowlynx"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_NASR": {
+    "dataId": "IT_SP_LW_NASR",
+    "names": {
+      "en": "Nasha Mindsphere",
+      "fr": "Sphère spirituelle de Nasha"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_DRND": {
+    "dataId": "IT_SP_LW_DRND",
+    "names": {
+      "en": "Dorando Mindsphere",
+      "fr": "Sphère spirituelle de Dorando"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_BYLO": {
+    "dataId": "IT_SP_LW_BYLO",
+    "names": {
+      "en": "Baelo Mindsphere",
+      "fr": "Sphère spirituelle de Beilo"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RYER": {
+    "dataId": "IT_SP_LW_RYER",
+    "names": {
+      "en": "Little Leela Mindsphere",
+      "fr": "Sphère spirituelle de Lillyla"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SCIA": {
+    "dataId": "IT_SP_LW_SCIA",
+    "names": {
+      "en": "Sosha Mindsphere",
+      "fr": "Sphère spirituelle de Sosha"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VRID": {
+    "dataId": "IT_SP_LW_VRID",
+    "names": {
+      "en": "Vallaide Mindsphere",
+      "fr": "Sphère spirituelle de Valaïde"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_NAIA": {
+    "dataId": "IT_SP_LW_NAIA",
+    "names": {
+      "en": "Naiah Mindsphere",
+      "fr": "Sphère spirituelle de Naiah"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SRJS": {
+    "dataId": "IT_SP_LW_SRJS",
+    "names": {
+      "en": "Serjes Mindsphere",
+      "fr": "Sphère spirituelle de Serjes"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_UNII": {
+    "dataId": "IT_SP_LW_UNII",
+    "names": {
+      "en": "Yuni Mindsphere",
+      "fr": "Sphère spirituelle de Yuni"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SEVR": {
+    "dataId": "IT_SP_LW_SEVR",
+    "names": {
+      "en": "Severo Mindsphere",
+      "fr": "Sphère spirituelle de Sévéro"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VADM": {
+    "dataId": "IT_SP_LW_VADM",
+    "names": {
+      "en": "Vadim Mindsphere",
+      "fr": "Sphère spirituelle de Vadim"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MURM": {
+    "dataId": "IT_SP_LW_MURM",
+    "names": {
+      "en": "\"Murmur\" Mindsphere",
+      "fr": "Sphère spirituelle de « Murmure »"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_PHBE": {
+    "dataId": "IT_SP_LW_PHBE",
+    "names": {
+      "en": "Phoebe Mindsphere",
+      "fr": "Sphère spirituelle de Phœbe"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ETRE": {
+    "dataId": "IT_SP_LW_ETRE",
+    "names": {
+      "en": "Etre Mindsphere",
+      "fr": "Sphère spirituelle d'Éthéa"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_THLA": {
+    "dataId": "IT_SP_LW_THLA",
+    "names": {
+      "en": "Salire Mindsphere",
+      "fr": "Sphère spirituelle de Saliah"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RART": {
+    "dataId": "IT_SP_LW_RART",
+    "names": {
+      "en": "Learte Mindsphere",
+      "fr": "Sphère spirituelle de Learte"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MICE": {
+    "dataId": "IT_SP_LW_MICE",
+    "names": {
+      "en": "Miche Mindsphere",
+      "fr": "Sphère spirituelle de Michaé"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MIIA": {
+    "dataId": "IT_SP_LW_MIIA",
+    "names": {
+      "en": "Mia Mindsphere",
+      "fr": "Sphère spirituelle de Mia"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ZZAN": {
+    "dataId": "IT_SP_LW_ZZAN",
+    "names": {
+      "en": "Zazan Mindsphere",
+      "fr": "Sphère spirituelle de Zazan"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_GLMS": {
+    "dataId": "IT_SP_LW_GLMS",
+    "names": {
+      "en": "Gilgamesh Mindsphere",
+      "fr": "Sphère spirituelle de Gilgamesh"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_WHIS": {
+    "dataId": "IT_SP_LW_WHIS",
+    "names": {
+      "en": "\"Whisper\" Mindsphere",
+      "fr": "Sphère spirituelle de « Chuchote »"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_KTON": {
+    "dataId": "IT_SP_LW_KTON",
+    "names": {
+      "en": "Kitone Mindsphere",
+      "fr": "Sphère spirituelle de Kitone"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LUCA": {
+    "dataId": "IT_SP_LW_LUCA",
+    "names": {
+      "en": "Lu'Cia Mindsphere",
+      "fr": "Sphère spirituelle de Lu'Cia"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ADLD": {
+    "dataId": "IT_SP_LW_ADLD",
+    "names": {
+      "en": "Adelard Mindsphere",
+      "fr": "Sphère spirituelle d'Adelard"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VNLA": {
+    "dataId": "IT_SP_LW_VNLA",
+    "names": {
+      "en": "Vinera Fennes Mindsphere",
+      "fr": "Sphère spirituelle de Vinera Fennes"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_DRIO": {
+    "dataId": "IT_SP_LW_DRIO",
+    "names": {
+      "en": "Dario Hourne Mindsphere",
+      "fr": "Sphère spirituelle de Dario Hourne"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_TREL": {
+    "dataId": "IT_SP_LW_TREL",
+    "names": {
+      "en": "Tyrrell Mindsphere",
+      "fr": "Sphère spirituelle de Tyrrell"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RAIN": {
+    "dataId": "IT_SP_LW_RAIN",
+    "names": {
+      "en": "Rain Mindsphere",
+      "fr": "Sphère spirituelle de Rain"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_QILF": {
+    "dataId": "IT_SP_LW_QILF",
+    "names": {
+      "en": "Kilphe Mindsphere",
+      "fr": "Sphère spirituelle de Kilphe"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SIMR": {
+    "dataId": "IT_SP_LW_SIMR",
+    "names": {
+      "en": "Seymore Mindsphere",
+      "fr": "Sphère spirituelle de Seymore"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ORDR": {
+    "dataId": "IT_SP_LW_ORDR",
+    "names": {
+      "en": "Oldoa Mindsphere",
+      "fr": "Sphère spirituelle d'Oldoa"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LVES": {
+    "dataId": "IT_SP_LW_LVES",
+    "names": {
+      "en": "Raviesse Mindsphere",
+      "fr": "Sphère spirituelle de Raviesse"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_IRDL": {
+    "dataId": "IT_SP_LW_IRDL",
+    "names": {
+      "en": "Ildyra Mindsphere",
+      "fr": "Sphère spirituelle d'Ildyra"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_STRN_01": {
+    "dataId": "IT_SP_LW_STRN_01",
+    "names": {
+      "en": "Sterne (Knight of Ruin) Mindsphere",
+      "fr": "Sphère spirituelle de Sterne (Chevalier déchu)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_GRSR": {
+    "dataId": "IT_SP_LW_GRSR",
+    "names": {
+      "en": "Glaciela Wezette Mindsphere",
+      "fr": "Sphère spirituelle de Graziella Wezett"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RRIR": {
+    "dataId": "IT_SP_LW_RRIR",
+    "names": {
+      "en": "Loreila Mindsphere",
+      "fr": "Sphère spirituelle de Loreila"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LSWL": {
+    "dataId": "IT_SP_LW_LSWL",
+    "names": {
+      "en": "Lasswell Mindsphere",
+      "fr": "Sphère spirituelle de Lasswell"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SCAL": {
+    "dataId": "IT_SP_LW_SCAL",
+    "names": {
+      "en": "Skahal Mindsphere",
+      "fr": "Sphère spirituelle de Skahal"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MRAL": {
+    "dataId": "IT_SP_LW_MRAL",
+    "names": {
+      "en": "Mariale Mindsphere",
+      "fr": "Sphère spirituelle de Mariale"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LILS_01": {
+    "dataId": "IT_SP_LW_LILS_01",
+    "names": {
+      "en": "Lilyth (Swimsuit) Mindsphere",
+      "fr": "Sphère spirituelle de Lilyth (Maillot de bain)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_HWLT": {
+    "dataId": "IT_SP_LW_HWLT",
+    "names": {
+      "en": "Howlet Mindsphere",
+      "fr": "Sphère spirituelle de Howlet"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_CHEL": {
+    "dataId": "IT_SP_LW_CHEL",
+    "names": {
+      "en": "Chel Mindsphere",
+      "fr": "Sphère spirituelle de Chel"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_LATH": {
+    "dataId": "IT_SP_LW_LATH",
+    "names": {
+      "en": "Luartha Mindsphere",
+      "fr": "Sphère spirituelle de Luartha"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_TITU": {
+    "dataId": "IT_SP_LW_TITU",
+    "names": {
+      "en": "Tyytas Mindsphere",
+      "fr": "Sphère spirituelle de Thytas"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_KTON_01": {
+    "dataId": "IT_SP_LW_KTON_01",
+    "names": {
+      "en": "Kitone (Swimsuit) Mindsphere",
+      "fr": "Sphère spirituelle de Kitone (Maillot de bain)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_NIVL": {
+    "dataId": "IT_SP_LW_NIVL",
+    "names": {
+      "en": "Niv'Lu Mindsphere",
+      "fr": "Sphère spirituelle de Niv'Lu"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RVAL": {
+    "dataId": "IT_SP_LW_RVAL",
+    "names": {
+      "en": "Livialle Mindsphere",
+      "fr": "Sphère spirituelle de Liviale"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SAKR": {
+    "dataId": "IT_SP_LW_SAKR",
+    "names": {
+      "en": "Sakura Mindsphere",
+      "fr": "Sphère spirituelle de Sakura"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ALIM": {
+    "dataId": "IT_SP_LW_ALIM",
+    "names": {
+      "en": "Ahlim Mindsphere",
+      "fr": "Sphère spirituelle d'Alym"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RYER_01": {
+    "dataId": "IT_SP_LW_RYER_01",
+    "names": {
+      "en": "Little Leela (Halloween) Mindsphere",
+      "fr": "Sphère spirituelle de Lillyla (Halloween)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RARD": {
+    "dataId": "IT_SP_LW_RARD",
+    "names": {
+      "en": "Rhaldor Mindsphere",
+      "fr": "Sphère spirituelle de Rhaldor"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ELSI": {
+    "dataId": "IT_SP_LW_ELSI",
+    "names": {
+      "en": "Ellshra Mindsphere",
+      "fr": "Sphère spirituelle d'Elzandra"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RIRY_01": {
+    "dataId": "IT_SP_LW_RIRY_01",
+    "names": {
+      "en": "Rairyuu (Halloween) Mindsphere",
+      "fr": "Sphère spirituelle de Rairyuu (Halloween)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_CRIS": {
+    "dataId": "IT_SP_LW_CRIS",
+    "names": {
+      "en": "Creysse Mindsphere",
+      "fr": "Sphère spirituelle de Creysse"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_GABL": {
+    "dataId": "IT_SP_LW_GABL",
+    "names": {
+      "en": "Garvall Mindsphere",
+      "fr": "Sphère spirituelle de Garvall"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_ELSR": {
+    "dataId": "IT_SP_LW_ELSR",
+    "names": {
+      "en": "Elsirelle Mindsphere",
+      "fr": "Sphère spirituelle d'Elsirelle"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VNLA_01": {
+    "dataId": "IT_SP_LW_VNLA_01",
+    "names": {
+      "en": "Vinera (Winter) Mindsphere",
+      "fr": "Sphère spirituelle de Vinera (Hiver)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VKTR_01": {
+    "dataId": "IT_SP_LW_VKTR_01",
+    "names": {
+      "en": "Viktora (Winter) Mindsphere",
+      "fr": "Sphère spirituelle de Viktora (Hiver)"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FF14_YSTL": {
+    "dataId": "IT_SP_FF14_YSTL",
+    "names": {
+      "en": "Y'shtola Mindsphere",
+      "fr": "Sphère spirituelle de Y'shtola"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FFT_GFGR": {
+    "dataId": "IT_SP_FFT_GFGR",
+    "names": {
+      "en": "Gaffgarion Mindsphere",
+      "fr": "Sphère spirituelle de Gaffgarion"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_DEAN": {
+    "dataId": "IT_SP_LW_DEAN",
+    "names": {
+      "en": "Duane Mindsphere",
+      "fr": "Sphère spirituelle de Duane"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_GL_LW_FRVA": {
+    "dataId": "IT_SP_GL_LW_FRVA",
+    "names": {
+      "en": "Fryevia Mindsphere",
+      "fr": "Sphère spirituelle de Fryevia"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FF14_UR": {
+    "dataId": "IT_SP_FF14_UR",
+    "names": {
+      "en": "[FFXIV] UR Unit Mindsphere",
+      "fr": "[FFXIV] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FFT_UR": {
+    "dataId": "IT_SP_FFT_UR",
+    "names": {
+      "en": "[FFT] UR Unit Mindsphere",
+      "fr": "[FFT] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FFT_SSR": {
+    "dataId": "IT_SP_FFT_SSR",
+    "names": {
+      "en": "[FFT] MR Unit Mindsphere",
+      "fr": "[FFT] Sphère spirituelle d'unité MR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FF1_UR": {
+    "dataId": "IT_SP_FF1_UR",
+    "names": {
+      "en": "[FFI] UR Unit Mindsphere",
+      "fr": "[FFI] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FF4_UR": {
+    "dataId": "IT_SP_FF4_UR",
+    "names": {
+      "en": "[FFIV] UR Unit Mindsphere",
+      "fr": "[FFIV] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_FF10_UR": {
+    "dataId": "IT_SP_FF10_UR",
+    "names": {
+      "en": "[FFX] UR Unit Mindsphere",
+      "fr": "[FFX] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -5230,6 +6304,30 @@
     "names": {
       "en": "Dark Esper Awakening Stone",
       "fr": "Pierre d'éveil de chimère d'ombre"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_SR": {
+    "dataId": "IT_SB_AW_SR",
+    "names": {
+      "en": "Gold Awakening Sourcestone",
+      "fr": "Diamant d'éveil chimérique doré"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_SSR": {
+    "dataId": "IT_SB_AW_SSR",
+    "names": {
+      "en": "Azure Awakening Sourcestone",
+      "fr": "Diamant d'éveil chimérique azur"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_UR": {
+    "dataId": "IT_SB_AW_UR",
+    "names": {
+      "en": "Rainbow Awakening Sourcestone",
+      "fr": "Diamant d'éveil chimérique arc-en-ciel"
     },
     "type": "compo_esper_awake"
   },
@@ -5648,6 +6746,22 @@
     "names": {
       "en": "Marilith's Awakening Stone (3★)",
       "fr": "Pierre d'éveil de Marilith (3★)"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_BAHM_R2": {
+    "dataId": "IT_SB_AW_BAHM_R2",
+    "names": {
+      "en": "Bahamut's Awakening Stone  (2★)",
+      "fr": "Pierre d'éveil de Bahamut (2★)"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_BAHM_R3": {
+    "dataId": "IT_SB_AW_BAHM_R3",
+    "names": {
+      "en": "Bahamut's Awakening Stone  (3★)",
+      "fr": "Pierre d'éveil de Bahamut (3★)"
     },
     "type": "compo_esper_awake"
   },
@@ -6215,15 +7329,6 @@
     },
     "type": "recipe",
     "icon": "AF_LW_SWO_004"
-  },
-  "IT_AF_LW_SWO_005": {
-    "dataId": "IT_AF_LW_SWO_005",
-    "names": {
-      "en": "Flametongue Crafting Recipe",
-      "fr": "Recette d'artisanat : Pyrolame"
-    },
-    "type": "recipe",
-    "icon": "AF_LW_SWO_005"
   },
   "IT_AF_LW_SWO_006": {
     "dataId": "IT_AF_LW_SWO_006",
@@ -6999,6 +8104,24 @@
     "type": "recipe",
     "icon": "AF_LW_ACC_040"
   },
+  "IT_AF_FF10_ROD_000": {
+    "dataId": "IT_AF_FF10_ROD_000",
+    "names": {
+      "en": "Magistral Rod Crafting Recipe",
+      "fr": "Recette d'artisanat : Bâton Magistère"
+    },
+    "type": "recipe",
+    "icon": "AF_FF10_ROD_000"
+  },
+  "IT_AF_FF10_BSW_000": {
+    "dataId": "IT_AF_FF10_BSW_000",
+    "names": {
+      "en": "Shimmering Blade Crafting Recipe",
+      "fr": "Recette d'artisanat : Kagero"
+    },
+    "type": "recipe",
+    "icon": "AF_FF10_BSW_000"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -7203,7 +8326,7 @@
     "dataId": "IT_EC_MATCH",
     "names": {
       "en": "PVP Medal",
-      "fr": "Médaille JcJ"
+      "fr": "Médaille de JcJ"
     },
     "type": "medal"
   },
@@ -7413,6 +8536,15 @@
     },
     "type": "medal",
     "icon": "IT_EC_MEDAL_WE2021"
+  },
+  "IT_EC_FF10_2_A": {
+    "dataId": "IT_EC_FF10_2_A",
+    "names": {
+      "en": "FFX Summon Medal A",
+      "fr": "Médaille d'invocation A [FFX]"
+    },
+    "type": "medal",
+    "icon": "IT_EC_FF10_2"
   },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
@@ -7681,6 +8813,123 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_1st_GL1": {
+    "dataId": "IT_EC_SUMMON_1st_GL1",
+    "names": {
+      "en": "First Anniversary Medal",
+      "fr": "Médaille du 1er anniversaire"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_1st_GL1"
+  },
+  "IT_US_SE_PI_21": {
+    "dataId": "IT_US_SE_PI_21",
+    "names": {
+      "en": "Select FFX Unit Shard x120 Summon Ticket",
+      "fr": "Ticket sélectionneur de 120 fragments d'unité de FFX"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_G_10_UR_01": {
+    "dataId": "IT_US_G_10_UR_01",
+    "names": {
+      "en": "[Beginners Only] UR Guaranteed 10x Summon Ticket A",
+      "fr": "[Seulement pour les débutants] Ticket d'invocation x10 UR garantie [A]"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_UR_10_TICKET"
+  },
+  "IT_US_SE_PI_GL_31": {
+    "dataId": "IT_US_SE_PI_GL_31",
+    "names": {
+      "en": "[Beginners Only] Select UR Unit Shard x50 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 50 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_GL_32": {
+    "dataId": "IT_US_SE_PI_GL_32",
+    "names": {
+      "en": "[Beginners Only] Select UR Unit Shard x100 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 100 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_GL_13": {
+    "dataId": "IT_US_SE_JB_05_GL_13",
+    "names": {
+      "en": "[Beginners Only] Select Spinel x30 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 30 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_14": {
+    "dataId": "IT_US_SE_JB_04_GL_14",
+    "names": {
+      "en": "[Beginners Only] Select Citrine x30 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_12": {
+    "dataId": "IT_US_SE_JB_03_GL_12",
+    "names": {
+      "en": "[Beginners Only] Select Charoite x30 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_09": {
+    "dataId": "IT_US_SE_JB_02_GL_09",
+    "names": {
+      "en": "[Beginners Only] Select Azurite x30 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_09": {
+    "dataId": "IT_US_SE_JB_01_GL_09",
+    "names": {
+      "en": "[Beginners Only] Select Jadeite x15 Summon Ticket",
+      "fr": "[Seulement pour les débutants] Ticket sélectionneur de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_COM_GL_04": {
+    "dataId": "IT_US_SE_PI_COM_GL_04",
+    "names": {
+      "en": "Select Element Fragment of Thought x150 Summon Ticket",
+      "fr": "Ticket sélectionneur de 150 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_UR_U_BG_01": {
+    "dataId": "IT_US_SE_UR_U_BG_01",
+    "names": {
+      "en": "Select UR Unit Summon Ticket",
+      "fr": "Ticket sélectionneur d'unité UR"
+    },
+    "type": "expe_ticket",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_UR_U_01": {
+    "dataId": "IT_US_GL_SE_UR_U_01",
+    "names": {
+      "en": "Select Unit Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'unité"
+    },
+    "type": "expe_ticket",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_EC_FFT_1": {
     "dataId": "IT_EC_FFT_1",
     "names": {
@@ -7893,6 +9142,15 @@
     },
     "type": "medal"
   },
+  "IT_EC_FF10_1": {
+    "dataId": "IT_EC_FF10_1",
+    "names": {
+      "en": "FFX Event Medal",
+      "fr": "Médaille d'événement FFX"
+    },
+    "type": "medal",
+    "icon": "IT_EC_FF10_1"
+  },
   "IT_US_G_FFT_01": {
     "dataId": "IT_US_G_FFT_01",
     "names": {
@@ -8046,6 +9304,69 @@
     "names": {
       "en": "[Day 7] First Anniversary Celebration Countdown Summon Ticket",
       "fr": "[Jour 7] Ticket d'invocation pour l'Approche du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_01": {
+    "dataId": "IT_US_G_1stANV_01",
+    "names": {
+      "en": "First Anniversary Celebration Summon Ticket",
+      "fr": "Ticket d'invocation du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_02": {
+    "dataId": "IT_US_G_1stANV_02",
+    "names": {
+      "en": "First Anniversary Celebration 2x Summon Ticket",
+      "fr": "Ticket d'invocation x2 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_03": {
+    "dataId": "IT_US_G_1stANV_03",
+    "names": {
+      "en": "First Anniversary Celebration 3x Summon Ticket",
+      "fr": "Ticket d'invocation x3 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_04": {
+    "dataId": "IT_US_G_1stANV_04",
+    "names": {
+      "en": "First Anniversary Celebration 5x Summon Ticket",
+      "fr": "Ticket d'invocation x5 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_05": {
+    "dataId": "IT_US_G_1stANV_05",
+    "names": {
+      "en": "First Anniversary Celebration 7x Summon Ticket",
+      "fr": "Ticket d'invocation x7 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_06": {
+    "dataId": "IT_US_G_1stANV_06",
+    "names": {
+      "en": "First Anniversary Celebration 8x Summon Ticket",
+      "fr": "Ticket d'invocation x8 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_07": {
+    "dataId": "IT_US_G_1stANV_07",
+    "names": {
+      "en": "First Anniversary Celebration 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 du 1er anniversaire"
     },
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
@@ -8311,6 +9632,33 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_SB_EXP_06": {
+    "dataId": "IT_US_SE_SB_EXP_06",
+    "names": {
+      "en": "Select Element Magicite (M) x500 Summon Ticket",
+      "fr": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SB_EXP_07": {
+    "dataId": "IT_US_SE_SB_EXP_07",
+    "names": {
+      "en": "Select Element Magicite (L) x150 Summon Ticket",
+      "fr": "Ticket sélectionneur de 150 magilithes élémentaires (L)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SB_EXP_08": {
+    "dataId": "IT_US_SE_SB_EXP_08",
+    "names": {
+      "en": "Select Element Magicite (XL) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 magilithes élémentaires (XL)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_SP_GL_LW_01": {
     "dataId": "IT_US_SE_SP_GL_LW_01",
     "names": {
@@ -8527,6 +9875,51 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_MM_01_5": {
+    "dataId": "IT_US_SE_JB_MM_01_5",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Job Memory (Green) x1 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionner de 1 souvenir de job (vert)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_02_5": {
+    "dataId": "IT_US_SE_JB_MM_02_5",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Job Memory (Blue) x2 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionner de 2 souvenirs de job (bleus)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_03_7": {
+    "dataId": "IT_US_SE_JB_MM_03_7",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Job Memory (Purple) x3 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionner de 3 souvenirs de job (violets)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_04_8": {
+    "dataId": "IT_US_SE_JB_MM_04_8",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Job Memory (Yellow) x4 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionner de 4 souvenirs de job (jaunes)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_05_8": {
+    "dataId": "IT_US_SE_JB_MM_05_8",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionner de 5 souvenirs de job (rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_05_01": {
     "dataId": "IT_US_SE_JB_05_01",
     "names": {
@@ -8613,6 +10006,51 @@
     "names": {
       "en": "[New Year's Greetings] Select Jadeite x15 Summon Ticket",
       "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_07": {
+    "dataId": "IT_US_SE_JB_05_07",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Spinel x30 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 30 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_08": {
+    "dataId": "IT_US_SE_JB_04_08",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Citrine x30 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_08": {
+    "dataId": "IT_US_SE_JB_03_08",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Charoite x30 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_06": {
+    "dataId": "IT_US_SE_JB_02_06",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Azurite x30 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_06": {
+    "dataId": "IT_US_SE_JB_01_06",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Jadeite x15 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 15 jades"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -8833,6 +10271,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_UR_U_TICKET"
   },
+  "IT_US_GL_SE_R_UR_U_1": {
+    "dataId": "IT_US_GL_SE_R_UR_U_1",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Unit Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur d'unité"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_UR_U_TICKET"
+  },
   "IT_US_SE_AW-ITEM_01": {
     "dataId": "IT_US_SE_AW-ITEM_01",
     "names": {
@@ -9049,11 +10496,47 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AW-ITEM_GL_05": {
+    "dataId": "IT_US_SE_AW-ITEM_GL_05",
+    "names": {
+      "en": "Select Awakening Prism x200 Summon Ticket",
+      "fr": "Ticket sélectionneur de 200 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AW-ITEM_06": {
     "dataId": "IT_US_SE_AW-ITEM_06",
     "names": {
       "en": "Select Awakening Prism x300 Summon Ticket",
       "fr": "Ticket sélectionneur de 300 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW-ITEM_GL_06": {
+    "dataId": "IT_US_SE_AW-ITEM_GL_06",
+    "names": {
+      "en": "Select Awakening Prism x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_COM_05": {
+    "dataId": "IT_US_SE_PI_COM_05",
+    "names": {
+      "en": "Select Element Fragment of Thought x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_COM_GL_05": {
+    "dataId": "IT_US_SE_PI_COM_GL_05",
+    "names": {
+      "en": "Select Element Fragment of Thought x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 fragments de pensée élémentaires"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9072,6 +10555,15 @@
     "names": {
       "en": "Select Awakening Prism x50 Summon Ticket",
       "fr": "Ticket sélectionneur de 50 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW-ITEM_09": {
+    "dataId": "IT_US_SE_AW-ITEM_09",
+    "names": {
+      "en": "Select Awakening Prism x150 Summon Ticket",
+      "fr": "Ticket sélectionneur de 150 prismes d'éveil"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9885,6 +11377,22 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_BAHM": {
+    "dataId": "IT_VPI_LW_BAHM",
+    "names": {
+      "en": "\"Dragon King Advent, Bahamut\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Bahamut, Sa Majesté des dragons"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_ART": {
+    "dataId": "IT_VPI_LW_ART",
+    "names": {
+      "en": "\"A Year's Journey\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Une année d'aventures"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -10423,6 +11931,24 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_GL_20": {
+    "dataId": "IT_US_SE_PI_GL_20",
+    "names": {
+      "en": "[First Anniversary Celebration] Select UR Unit Shard x40 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 40 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_VPI_GL_16": {
+    "dataId": "IT_US_SE_VPI_GL_16",
+    "names": {
+      "en": "[First Anniversary Celebration] Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "[1er anniversaire] Ticket sélectionneur de 50 fragments d'atout-vision UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_VPI_11": {
     "dataId": "IT_US_SE_VPI_11",
     "names": {
@@ -10599,6 +12125,42 @@
     "names": {
       "en": "[1st] Select UR Unit Shard x40 Summon Ticket",
       "fr": "[1er anniversaire] Ticket sélectionneur de 40 fragments d'unité UR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_EM_01": {
+    "dataId": "IT_US_SE_JBEX_EM_01",
+    "names": {
+      "en": "Select Alcryst Statue x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 sculptures d'alcrist"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_EM_03": {
+    "dataId": "IT_US_SE_JBEX_EM_03",
+    "names": {
+      "en": "Select Alcryst Statue x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 sculptures d'alcrist"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_01": {
+    "dataId": "IT_US_SE_JBEX_AF_01",
+    "names": {
+      "en": "Select Branded Tablet x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 stèles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_JBEX_AF_1": {
+    "dataId": "IT_US_GL_SE_JBEX_AF_1",
+    "names": {
+      "en": "[Branded Tablet Pack] Select Branded Tablet x50 Summon Ticket",
+      "fr": "[Lot de stèles] Ticket sélectionneur de 50 stèles"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10839,5 +12401,22 @@
     },
     "type": "usable_item",
     "icon": "IT_KEY_QE_001"
+  },
+  "IT_KEY_SB_EXP": {
+    "dataId": "IT_KEY_SB_EXP",
+    "names": {
+      "en": "Magicite Key",
+      "fr": "Clé de magilithe"
+    },
+    "type": "usable_item",
+    "icon": "IT_KEY_QE_001"
+  },
+  "IT_AW_VC_UR": {
+    "dataId": "IT_AW_VC_UR",
+    "names": {
+      "en": "Orb of Envisionment",
+      "fr": "Sphère d'éveil"
+    },
+    "type": "vc_orb_awake"
   }
 }

@@ -169,10 +169,6 @@
             "value": "サンクレッド"
         },
         {
-            "key": "UN_LW_P_MURG",
-            "value": "ムラガ・フェネス"
-        },
-        {
             "key": "UN_LW_P_FDRC",
             "value": "フェデリカ"
         },
@@ -463,6 +459,10 @@
         {
             "key": "UN_LW_P_CWEL",
             "value": "コーウェル"
+        },
+        {
+            "key": "UN_LW_P_MURG",
+            "value": "ムラガ・フェネス"
         },
         {
             "key": "UN_LW_E_MONT",
@@ -866,6 +866,10 @@
         },
         {
             "key": "UN_LW_E_TH_00_VIK",
+            "value": "賊"
+        },
+        {
+            "key": "UN_LW_E_TH_00_MMC",
             "value": "賊"
         },
         {
@@ -1334,6 +1338,14 @@
         },
         {
             "key": "UN_LW_E_RU_01_ARC",
+            "value": "ランダル兵"
+        },
+        {
+            "key": "UN_LW_E_RU_01_MSW",
+            "value": "ランダル兵"
+        },
+        {
+            "key": "UN_LW_E_RU_01_BEA",
             "value": "ランダル兵"
         },
         {
@@ -1970,6 +1982,14 @@
         },
         {
             "key": "UN_LW_E_PNIX",
+            "value": "フェニックス"
+        },
+        {
+            "key": "UN_LW_E_PNIX_PT_NO",
+            "value": "フェニックス"
+        },
+        {
+            "key": "UN_LW_E_PNIX_PT_HA",
             "value": "フェニックス"
         },
         {
@@ -3127,6 +3147,10 @@
         {
             "key": "UN_GM_TSUBO_01",
             "value": "氷壺"
+        },
+        {
+            "key": "UN_GM_RUBB",
+            "value": "瓦礫"
         }
     ]
 }

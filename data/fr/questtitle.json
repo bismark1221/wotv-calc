@@ -133,6 +133,18 @@
             "value": "[Très difficile] Salle d'entraînement (rouge) A"
         },
         {
+            "key": "QE_EV_AW_H15_3",
+            "value": "[Super difficile] Salle d'entraînement (rouge) C"
+        },
+        {
+            "key": "QE_EV_AW_H15_2",
+            "value": "[Super difficile] Salle d'entraînement (rouge) B"
+        },
+        {
+            "key": "QE_EV_AW_H15_1",
+            "value": "[Super difficile] Salle d'entraînement (rouge) A"
+        },
+        {
             "key": "QE_EV_AW_FIRE_01",
             "value": "Chambre d'Alcrists (feu) Niv. 1"
         },
@@ -151,6 +163,10 @@
         {
             "key": "QE_EV_AW_FIRE_05",
             "value": "Chambre d'Alcrists (feu) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_FIRE_06",
+            "value": "Chambre d'Alcrists (feu) Niv. 6"
         },
         {
             "key": "QE_EV_AW_WIND_01",
@@ -173,6 +189,10 @@
             "value": "Chambre d'Alcrists (vent) Niv. 5"
         },
         {
+            "key": "QE_EV_AW_WIND_06",
+            "value": "Chambre d'Alcrists (vent) Niv. 6"
+        },
+        {
             "key": "QE_EV_AW_WTR_01",
             "value": "Chambre d'Alcrists (eau) Niv. 1"
         },
@@ -191,6 +211,10 @@
         {
             "key": "QE_EV_AW_WTR_05",
             "value": "Chambre d'Alcrists (eau) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_WTR_06",
+            "value": "Chambre d'Alcrists (eau) Niv. 6"
         },
         {
             "key": "QE_EV_AW_ICE_01",
@@ -213,6 +237,10 @@
             "value": "Chambre d'Alcrists (glace) Niv. 5"
         },
         {
+            "key": "QE_EV_AW_ICE_06",
+            "value": "Chambre d'Alcrists (glace) Niv. 6"
+        },
+        {
             "key": "QE_EV_AW_EAR_01",
             "value": "Chambre d'Alcrists (terre) Niv. 1"
         },
@@ -231,6 +259,10 @@
         {
             "key": "QE_EV_AW_EAR_05",
             "value": "Chambre d'Alcrists (terre) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_EAR_06",
+            "value": "Chambre d'Alcrists (terre) Niv. 6"
         },
         {
             "key": "QE_EV_AW_DARK_01",
@@ -253,6 +285,10 @@
             "value": "Chambre d'Alcrists (ombre) Niv. 5"
         },
         {
+            "key": "QE_EV_AW_DARK_06",
+            "value": "Chambre d'Alcrists (ombre) Niv. 6"
+        },
+        {
             "key": "QE_EV_AW_THUN_01",
             "value": "Chambre d'Alcrists (foudre) Niv. 1"
         },
@@ -273,6 +309,10 @@
             "value": "Chambre d'Alcrists (foudre) Niv. 5"
         },
         {
+            "key": "QE_EV_AW_THUN_06",
+            "value": "Chambre d'Alcrists (foudre) Niv. 6"
+        },
+        {
             "key": "QE_EV_AW_SHIN_01",
             "value": "Chambre d'Alcrists (lumière) Niv. 1"
         },
@@ -291,6 +331,10 @@
         {
             "key": "QE_EV_AW_SHIN_05",
             "value": "Chambre d'Alcrists (lumière) Niv. 5"
+        },
+        {
+            "key": "QE_EV_AW_SHIN_06",
+            "value": "Chambre d'Alcrists (lumière) Niv. 6"
         },
         {
             "key": "QE_EV_SM_FIRE_01",
@@ -2497,6 +2541,14 @@
             "value": "Elsirelle"
         },
         {
+            "key": "QE_CH_FF10_TIDU",
+            "value": "Tidus"
+        },
+        {
+            "key": "QE_CH_FF10_YUNA",
+            "value": "Yuna"
+        },
+        {
             "key": "QE_EV_GL_CDOWN_01_9",
             "value": "Quête du compte à rebours"
         },
@@ -2897,6 +2949,62 @@
             "value": "FINAL FANTASY IV [EX2]"
         },
         {
+            "key": "QE_EV_FF10_01",
+            "value": "Combat 1 de FINAL FANTASY X"
+        },
+        {
+            "key": "QE_EV_FF10_02",
+            "value": "Combat 2 de FINAL FANTASY X"
+        },
+        {
+            "key": "QE_EV_FF10_03",
+            "value": "Autoroute en ruines"
+        },
+        {
+            "key": "QE_EV_FF10_04",
+            "value": "Dôme de Yevon"
+        },
+        {
+            "key": "QE_EV_FF10_05",
+            "value": "Dôme de Yevon - Limbes  "
+        },
+        {
+            "key": "QE_EV_FF10_06",
+            "value": "Combat 1 de FINAL FANTASY X [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_07",
+            "value": "Combat 2 de FINAL FANTASY X [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_08",
+            "value": "Autoroute en ruines [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_09",
+            "value": "Dôme de Yevon [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_10",
+            "value": "Dôme de Yevon - Limbes [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_EX_01",
+            "value": "FINAL FANTASY X [EX 1]"
+        },
+        {
+            "key": "QE_EV_FF10_EX_03",
+            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile]"
+        },
+        {
+            "key": "QE_MU_FF10_EX_01",
+            "value": "FINAL FANTASY X [EX 1] "
+        },
+        {
+            "key": "QE_MU_FF10_EX_03",
+            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile] "
+        },
+        {
             "key": "QE_EV_ALIM_01",
             "value": "Quête des fragments d'unité d'Alym I"
         },
@@ -2969,6 +3077,18 @@
             "value": "Quête EX d'acquisition de Creysse [Super difficile]"
         },
         {
+            "key": "QE_EV_WW_MB1",
+            "value": "Érosion naissante, ép. 1 - Guerriers de la Lumière"
+        },
+        {
+            "key": "QE_EV_WW_MB_EX1",
+            "value": "Érosion naissante - EXVIUS UNIVERSE [EX 1]"
+        },
+        {
+            "key": "QE_MU_EV_WWMBEX1",
+            "value": "[Multi] Érosion naissante - EXVIUS UNIVERSE [EX 1]"
+        },
+        {
             "key": "QE_EV_WW_MB2",
             "value": "Érosion naissante, ép. 2 - Effroyable mutation"
         },
@@ -2989,16 +3109,8 @@
             "value": "[Multi] « Érosion naissante - EXVIUS UNIVERSE » - EX 2 [Super difficile] "
         },
         {
-            "key": "QE_EV_WW_MB1",
-            "value": "Érosion naissante, ép. 1 - Guerriers de la Lumière"
-        },
-        {
-            "key": "QE_EV_WW_MB_EX1",
-            "value": "Érosion naissante - EXVIUS UNIVERSE [EX 1]"
-        },
-        {
-            "key": "QE_MU_EV_WWMBEX1",
-            "value": "[Multi] Érosion naissante - EXVIUS UNIVERSE [EX 1]"
+            "key": "QE_EV_WW_MB3",
+            "value": "Érosion naissante, ép. 3 - Un avant et un après"
         },
         {
             "key": "QE_EV_LSWL_01",
@@ -4005,6 +4117,10 @@
             "value": "Combat contre Ifrit"
         },
         {
+            "key": "QE_SB_IFRT_04",
+            "value": "Combat contre Ifrit (2)"
+        },
+        {
             "key": "QE_SB_GLEM_01",
             "value": "Combat contre Golem"
         },
@@ -4023,6 +4139,10 @@
         {
             "key": "QE_SB_BHMT_01",
             "value": "Combat contre Béhémoth"
+        },
+        {
+            "key": "QE_SB_BHMT_02",
+            "value": "Combat contre Béhémoth (2)"
         },
         {
             "key": "QE_SB_SHIV_01",
@@ -4099,6 +4219,14 @@
         {
             "key": "QE_SB_MRLT_01",
             "value": "Combat contre Marilith"
+        },
+        {
+            "key": "QE_SB_BAHM_01",
+            "value": "Combat contre Bahamut"
+        },
+        {
+            "key": "QE_SB_BAHM_02",
+            "value": "Combat contre Bahamut (2)"
         },
         {
             "key": "QE_RAID_EV_06_01",
@@ -4289,6 +4417,10 @@
             "value": "Chambre d'Alcrists (feu) Niv. 5"
         },
         {
+            "key": "QE_MU_AW_FIRE_06",
+            "value": "Chambre d'Alcrists (feu) Niv. 6"
+        },
+        {
             "key": "QE_MU_AW_WIND_01",
             "value": "Chambre d'Alcrists (vent) Niv. 1"
         },
@@ -4299,6 +4431,10 @@
         {
             "key": "QE_MU_AW_WIND_05",
             "value": "Chambre d'Alcrists (vent) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_WIND_06",
+            "value": "Chambre d'Alcrists (vent) Niv. 6"
         },
         {
             "key": "QE_MU_AW_WTR_01",
@@ -4313,6 +4449,10 @@
             "value": "Chambre d'Alcrists (eau) Niv. 5"
         },
         {
+            "key": "QE_MU_AW_WTR_06",
+            "value": "Chambre d'Alcrists (eau) Niv. 6"
+        },
+        {
             "key": "QE_MU_AW_ICE_01",
             "value": "Chambre d'Alcrists (glace) Niv. 1"
         },
@@ -4323,6 +4463,10 @@
         {
             "key": "QE_MU_AW_ICE_05",
             "value": "Chambre d'Alcrists (glace) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_ICE_06",
+            "value": "Chambre d'Alcrists (glace) Niv. 6"
         },
         {
             "key": "QE_MU_AW_EAR_01",
@@ -4337,6 +4481,10 @@
             "value": "Chambre d'Alcrists (terre) Niv. 5"
         },
         {
+            "key": "QE_MU_AW_EAR_06",
+            "value": "Chambre d'Alcrists (terre) Niv. 6"
+        },
+        {
             "key": "QE_MU_AW_DARK_01",
             "value": "Chambre d'Alcrists (ombre) Niv. 1"
         },
@@ -4347,6 +4495,10 @@
         {
             "key": "QE_MU_AW_DARK_05",
             "value": "Chambre d'Alcrists (ombre) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_DARK_06",
+            "value": "Chambre d'Alcrists (ombre) Niv. 6"
         },
         {
             "key": "QE_MU_AW_THUN_01",
@@ -4361,6 +4513,10 @@
             "value": "Chambre d'Alcrists (foudre) Niv. 5"
         },
         {
+            "key": "QE_MU_AW_THUN_06",
+            "value": "Chambre d'Alcrists (foudre) Niv. 6"
+        },
+        {
             "key": "QE_MU_AW_SHIN_01",
             "value": "Chambre d'Alcrists (lumière) Niv. 1"
         },
@@ -4371,6 +4527,10 @@
         {
             "key": "QE_MU_AW_SHIN_05",
             "value": "Chambre d'Alcrists (lumière) Niv. 5"
+        },
+        {
+            "key": "QE_MU_AW_SHIN_06",
+            "value": "Chambre d'Alcrists (lumière) Niv. 6"
         },
         {
             "key": "QE_MU_SM_FIRE_01",
@@ -4435,6 +4595,18 @@
         {
             "key": "QE_MU_AW_H13_1",
             "value": "[Très difficile] Salle d'entraînement (rouge) A"
+        },
+        {
+            "key": "QE_MU_AW_H15_3",
+            "value": "[Super difficile] Salle d'entraînement (rouge) C"
+        },
+        {
+            "key": "QE_MU_AW_H15_2",
+            "value": "[Super difficile] Salle d'entraînement (rouge) B"
+        },
+        {
+            "key": "QE_MU_AW_H15_1",
+            "value": "[Super difficile] Salle d'entraînement (rouge) A"
         },
         {
             "key": "QE_BGN_01",
@@ -4597,6 +4769,10 @@
             "value": "Cimetière"
         },
         {
+            "key": "QE_ARENA_00012",
+            "value": "Intérieur du château"
+        },
+        {
             "key": "QE_ARENA_GL_00001",
             "value": "Forêt"
         },
@@ -4705,6 +4881,10 @@
             "value": "Mines"
         },
         {
+            "key": "QE_PVP_FRI_0020",
+            "value": "Intérieur du château"
+        },
+        {
             "key": "QE_PVP_RANK_0001",
             "value": "Arène"
         },
@@ -4723,6 +4903,10 @@
         {
             "key": "QE_PVP_RANK_0005",
             "value": "Ruines anciennes"
+        },
+        {
+            "key": "QE_PVP_RANK_0006",
+            "value": "Le repaire de la bête"
         },
         {
             "key": "QE_TEST_FOR",
@@ -4771,6 +4955,54 @@
         {
             "key": "QE_K_SB_FNRR_03",
             "value": "Le défi de Fenrir [Super difficile]"
+        },
+        {
+            "key": "QE_K_SB_EXP_FIR",
+            "value": "[Feu] Quête des magilithes rouges"
+        },
+        {
+            "key": "QE_K_SB_EXP_ICE",
+            "value": "[Glace] Quête des magilithes bleues"
+        },
+        {
+            "key": "QE_K_SB_EXP_WIN",
+            "value": "[Vent] Quête des magilithes vertes"
+        },
+        {
+            "key": "QE_K_SB_EXP_EAR",
+            "value": "[Terre] Quête des magilithes oranges"
+        },
+        {
+            "key": "QE_K_SB_EXP_THU",
+            "value": "[Foudre] Quête des magilithes jaunes"
+        },
+        {
+            "key": "QE_K_SB_EXP_WTR",
+            "value": "[Eau] Quête des magilithes bleu clair"
+        },
+        {
+            "key": "QE_K_SB_EXP_SHI",
+            "value": "[Lumière] Quête des magilithes blanches"
+        },
+        {
+            "key": "QE_K_SB_EXP_DAR",
+            "value": "[Ombre] Quête des magilithes violettes"
+        },
+        {
+            "key": "QE_GHUNT_001",
+            "value": "Quête de guilde n°1"
+        },
+        {
+            "key": "QE_GHUNT_002",
+            "value": "Quête de guilde n°2"
+        },
+        {
+            "key": "QE_GHUNT_003",
+            "value": "Quête de guilde n°3"
+        },
+        {
+            "key": "QE_GHUNT_004",
+            "value": "Quête de guilde n°4"
         }
     ]
 }
