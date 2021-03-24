@@ -357,7 +357,7 @@
 
 
 
-  <div *ngIf="team && team.units[selectedUnitForSim]" class="teamGuild">
+  <div *ngIf="team && team.units[selectedUnitForSim] && damageSim && damageSim.result" class="teamGuild">
     <div class="damageSimTitle">
       <div class="skillSubTitle" (click)="isCollapsedDamageSim = !isCollapsedDamageSim" [attr.aria-expanded]="!isCollapsedDamageSim">
         Damage Simulator
