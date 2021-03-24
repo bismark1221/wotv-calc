@@ -1,4 +1,529 @@
 {
+  "AF_LW_SWO_INIT": {
+    "names": {
+      "en": "Apprentice's Sword",
+      "fr": "Épée d'apprenti"
+    },
+    "slug": "apprentices-sword",
+    "stats": {},
+    "type": "SWORD",
+    "dataId": "AF_LW_SWO_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_swo_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_BSW_INIT": {
+    "names": {
+      "en": "Apprentice's Greatsword",
+      "fr": "Spathe d'apprenti"
+    },
+    "slug": "apprentices-greatsword",
+    "stats": {},
+    "type": "GREATSWORD",
+    "dataId": "AF_LW_BSW_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_bsw_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_KAT_INIT": {
+    "names": {
+      "en": "Apprentice's Katana",
+      "fr": "Katana d'apprenti"
+    },
+    "slug": "apprentices-katana",
+    "stats": {},
+    "type": "KATANA",
+    "dataId": "AF_LW_KAT_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_kat_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_FIS_INIT": {
+    "names": {
+      "en": "Apprentice's Fists",
+      "fr": "Poings d'apprenti"
+    },
+    "slug": "apprentices-fists",
+    "stats": {},
+    "type": "FIST",
+    "dataId": "AF_LW_FIS_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_fis_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_SPE_INIT": {
+    "names": {
+      "en": "Apprentice's Spear",
+      "fr": "Lance d'apprenti"
+    },
+    "slug": "apprentices-spear",
+    "stats": {},
+    "type": "SPEAR",
+    "dataId": "AF_LW_SPE_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_spe_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_DAG_INIT": {
+    "names": {
+      "en": "Apprentice's Dagger",
+      "fr": "Dague d'apprenti"
+    },
+    "slug": "apprentices-dagger",
+    "stats": {},
+    "type": "DAGGER",
+    "dataId": "AF_LW_DAG_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_dag_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_NKN_INIT": {
+    "names": {
+      "en": "Apprentice's Ninja Blade",
+      "fr": "Lame ninja d'apprenti"
+    },
+    "slug": "apprentices-ninja-blade",
+    "stats": {},
+    "type": "NINJABLADE",
+    "dataId": "AF_LW_NKN_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_nkn_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_BOW_INIT": {
+    "names": {
+      "en": "Apprentice's Bow",
+      "fr": "Arc d'apprenti"
+    },
+    "slug": "apprentices-bow",
+    "stats": {},
+    "type": "BOW",
+    "dataId": "AF_LW_BOW_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_bow_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_GUN_INIT": {
+    "names": {
+      "en": "Apprentice's Gun",
+      "fr": "Fusil d'apprenti"
+    },
+    "slug": "apprentices-gun",
+    "stats": {},
+    "type": "GUN",
+    "dataId": "AF_LW_GUN_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_gun_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_ROD_INIT": {
+    "names": {
+      "en": "Apprentice's Staff",
+      "fr": "Bâton d'apprenti"
+    },
+    "slug": "apprentices-staff",
+    "stats": {},
+    "type": "ROD",
+    "dataId": "AF_LW_ROD_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_rod_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_MAC_INIT": {
+    "names": {
+      "en": "Apprentice's Mace",
+      "fr": "Masse d'apprenti"
+    },
+    "slug": "apprentices-mace",
+    "stats": {},
+    "type": "MACE",
+    "dataId": "AF_LW_MAC_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_mac_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_AXE_INIT": {
+    "names": {
+      "en": "Apprentice's Axe",
+      "fr": "Hache d'apprenti"
+    },
+    "slug": "apprentices-axe",
+    "stats": {},
+    "type": "AXE",
+    "dataId": "AF_LW_AXE_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_axe_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_SHI_INIT": {
+    "names": {
+      "en": "Apprentice's Shield",
+      "fr": "Bouclier d'apprenti"
+    },
+    "slug": "apprentices-shield",
+    "stats": {},
+    "type": "SHIELD",
+    "dataId": "AF_LW_SHI_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_shi_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_GBL_INIT": {
+    "names": {
+      "en": "Apprentice's Gunblade",
+      "fr": "Pistolame d'apprenti"
+    },
+    "slug": "apprentices-gunblade",
+    "stats": {},
+    "type": "SWORD",
+    "dataId": "AF_LW_GBL_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "ff14wpn_swo_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_GLO_INIT": {
+    "names": {
+      "en": "Apprentice's Gloves",
+      "fr": "Gants d'apprenti"
+    },
+    "slug": "apprentices-gloves",
+    "stats": {},
+    "type": "GLOVE",
+    "dataId": "AF_LW_GLO_INIT",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "N",
+    "image": "lapswpn_glo_000",
+    "equippableJobs": [],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_SWO_000": {
     "names": {
       "en": "Broadsword",
@@ -62,7 +587,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -160,7 +686,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -437,7 +964,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -746,7 +1274,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -1374,7 +1903,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -1990,7 +2520,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2042,197 +2573,6 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
-    }
-  },
-  "AF_LOT_LW_SWO_005": {
-    "names": {
-      "en": "Flametongue",
-      "fr": "Pyrolame"
-    },
-    "slug": "flametongue",
-    "stats": {
-      "HP": {
-        "min": 4,
-        "max": 69
-      },
-      "ATK": {
-        "min": 9,
-        "max": 168
-      },
-      "MAG": {
-        "min": 7,
-        "max": 126
-      },
-      "ACCURACY": {
-        "min": 1,
-        "max": 17
-      },
-      "CRITIC_RATE": {
-        "min": 1,
-        "max": 13
-      }
-    },
-    "type": "SWORD",
-    "dataId": "AF_LW_SWO_005",
-    "grows": {
-      "AFGROW_VIT_50": {
-        "dataId": "AFGROW_VIT_50",
-        "names": {
-          "en": "Vital",
-          "fr": "Vitalité"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": 0,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_ASS_50": {
-        "dataId": "AFGROW_ASS_50",
-        "names": {
-          "en": "Assault",
-          "fr": "Assaut"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -40,
-          "TP": 0,
-          "AP": 0,
-          "ATK": 0,
-          "DEF": -75,
-          "MAG": -50,
-          "SPR": -75,
-          "ACCURACY": -75,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": -75,
-          "CRITIC_AVOID": 0
-        }
-      },
-      "AFGROW_CRI_50": {
-        "dataId": "AFGROW_CRI_50",
-        "names": {
-          "en": "Critical",
-          "fr": "Critique"
-        },
-        "curve": {
-          "MAX_LV": 50,
-          "HP": -20,
-          "TP": 0,
-          "AP": 0,
-          "ATK": -20,
-          "DEF": -75,
-          "MAG": -20,
-          "SPR": -75,
-          "ACCURACY": -50,
-          "DEX": 0,
-          "AGI": 0,
-          "EVADE": -75,
-          "CRITIC_RATE": 0,
-          "CRITIC_AVOID": 0
-        }
-      }
-    },
-    "skills": [
-      [
-        {
-          "names": {
-            "en": "SK_LW_SWO_005_1",
-            "fr": "SK_LW_SWO_005_1"
-          },
-          "dataId": "SK_LW_SWO_005_1",
-          "effects": [
-            {
-              "type": "FIRE_ATK",
-              "minValue": 10,
-              "maxValue": 20,
-              "calcType": "fixe",
-              "target": "self"
-            }
-          ],
-          "type": "support",
-          "upgrade": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "grow": "ARTIFACT_50",
-          "target": "self",
-          "maxLevel": 30
-        },
-        {
-          "names": {
-            "en": "SK_LW_SWO_005_5",
-            "fr": "SK_LW_SWO_005_5"
-          },
-          "dataId": "SK_LW_SWO_005_5",
-          "effects": [
-            {
-              "type": "FIRE_ATK",
-              "minValue": 20,
-              "maxValue": 30,
-              "calcType": "fixe",
-              "target": "self"
-            }
-          ],
-          "type": "support",
-          "upgrade": [
-            5
-          ],
-          "grow": "ARTIFACT_50",
-          "target": "self",
-          "maxLevel": 30
-        }
-      ]
-    ],
-    "rarity": "MR",
-    "image": "lapswpn_swo_005",
-    "equippableJobs": [
-      "JB_LW_WAR_FIRE",
-      "JB_LW_KNT_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_MGK_FIRE",
-      "JB_LW_RDM_FIRE",
-      "JB_LW_GLMS",
-      "JB_LW_WAR",
-      "JB_FFT_RAMZ",
-      "JB_FFT_ORND",
-      "JB_FFT_GFGR",
-      "JB_FF1_WROL",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_LW_MKN_FIRE",
-      "JB_FF4_CECL",
-      "JB_LW_DEAN"
-    ],
-    "equippableUnits": [],
-    "materials": [
-      {
-        "IT_AF_LW_SWO_005": 1,
-        "IT_AF_LW_SWO_002": 1,
-        "IT_AF_MAT_HEART_01": 10,
-        "IT_AF_MAT_HEART_02": 40,
-        "IT_AF_AW_SWORD": 305,
-        "IT_AF_MAT_HEART_03": 170,
-        "IT_AF_MAT_BOMB": 5,
-        "IT_AF_MAT_FIRE_01": 11
-      }
-    ],
-    "acquisition": {
-      "type": "Unknown"
     }
   },
   "AF_LOT_LW_SWO_006": {
@@ -2797,7 +3137,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -2914,7 +3255,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3192,7 +3534,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3504,7 +3847,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3746,7 +4090,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -3754,6 +4099,218 @@
         "IT_AF_AW_SWORD": 375,
         "IT_AF_MAT_LIQUID_04": 185,
         "IT_AF_MAT_ICE_02": 16
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_FF10_SWO_001": {
+    "names": {
+      "en": "Brotherhood",
+      "fr": "Fraternité"
+    },
+    "slug": "brotherhood",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 46
+      },
+      "ATK": {
+        "min": 19,
+        "max": 192
+      },
+      "MAG": {
+        "min": 5,
+        "max": 54
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 16
+      },
+      "CRITIC_RATE": {
+        "min": 2,
+        "max": 16
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_FF10_SWO_001",
+    "grows": {
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_FF10_SWO_001_2",
+            "fr": "SK_FF10_SWO_001_2"
+          },
+          "dataId": "SK_FF10_SWO_001_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "WATER_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            2
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF10_SWO_001_3",
+            "fr": "SK_FF10_SWO_001_3"
+          },
+          "dataId": "SK_FF10_SWO_001_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "WATER_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            3
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF10_SWO_001_4",
+            "fr": "SK_FF10_SWO_001_4"
+          },
+          "dataId": "SK_FF10_SWO_001_4",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "WATER_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_FF10_SWO_001_5",
+            "fr": "SK_FF10_SWO_001_5"
+          },
+          "dataId": "SK_FF10_SWO_001_5",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "WATER_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff10wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_AW_SWORD": 255,
+        "IT_AF_MAT_HEART_03": 140,
+        "IT_AF_MAT_WATER_01": 6
       }
     ],
     "acquisition": {
@@ -5024,6 +5581,479 @@
         "en": "General Shop",
         "fr": "Boutique ordinaire"
       }
+    }
+  },
+  "AF_LOT_FF10_BSW_000": {
+    "names": {
+      "en": "Shimmering Blade",
+      "fr": "Kagero"
+    },
+    "slug": "shimmering-blade",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 70
+      },
+      "ATK": {
+        "min": 8,
+        "max": 161
+      },
+      "MAG": {
+        "min": 1,
+        "max": 11
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 15
+      },
+      "EVADE": {
+        "min": -6,
+        "max": -3
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 20
+      }
+    },
+    "type": "GREATSWORD",
+    "dataId": "AF_FF10_BSW_000",
+    "grows": {
+      "AFGROW_ASS_50": {
+        "dataId": "AFGROW_ASS_50",
+        "names": {
+          "en": "Assault",
+          "fr": "Assaut"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": 0,
+          "DEF": -75,
+          "MAG": -50,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Slash ATK +2",
+            "fr": "Att tranchante +2"
+          },
+          "dataId": "SK_LW_SLASH_1",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Slash ATK +3",
+            "fr": "Att tranchante +3"
+          },
+          "dataId": "SK_LW_SLASH_2",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Slash ATK +5",
+            "fr": "Att tranchante +5"
+          },
+          "dataId": "SK_LW_SLASH_3",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Slash ATK +8",
+            "fr": "Att tranchante +8"
+          },
+          "dataId": "SK_LW_SLASH_4_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_1",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Slash ATK +15",
+            "fr": "Att tranchante +15"
+          },
+          "dataId": "SK_LW_SLASH_5_SSR",
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Shimmering Blade (Ice Attack Up)",
+            "fr": "Kagero (Attaque de glace ↑)"
+          },
+          "dataId": "SK_FF10_BSW_000_5",
+          "effects": [
+            {
+              "type": "ICE_ATK",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff10wpn_bsw_000",
+    "equippableJobs": [
+      "JB_LW_SWN_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_STRN",
+      "JB_LW_MSW_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF10_BSW_000": 1,
+        "IT_AF_MAT_SAP_03": 170,
+        "IT_AF_MAT_BOMB": 5,
+        "IT_AF_MAT_ICE_01": 11,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_FF10_BSW_000": 3,
+        "IT_AF_MAT_SAP_03": 230,
+        "IT_AF_MAT_BOMB": 15,
+        "IT_AF_MAT_ICE_01": 21,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_FF10_BSW_000": 7,
+        "IT_AF_MAT_SAP_03": 350,
+        "IT_AF_MAT_BOMB": 35,
+        "IT_AF_MAT_ICE_01": 41,
+        "IT_AF_AW_LSWORD": 255
+      },
+      {
+        "IT_AF_FF10_BSW_000": 15,
+        "IT_AF_MAT_SAP_03": 630,
+        "IT_AF_MAT_BOMB": 75,
+        "IT_AF_MAT_ICE_01": 81,
+        "IT_AF_AW_LSWORD": 315
+      },
+      {
+        "IT_AF_FF10_BSW_000": 31,
+        "IT_AF_MAT_SAP_03": 1250,
+        "IT_AF_MAT_BOMB": 155,
+        "IT_AF_MAT_ICE_01": 161,
+        "IT_AF_AW_LSWORD": 535
+      },
+      {
+        "IT_AF_FF10_BSW_000": 63,
+        "IT_AF_MAT_SAP_03": 2570,
+        "IT_AF_MAT_BOMB": 315,
+        "IT_AF_MAT_ICE_01": 323,
+        "IT_AF_AW_LSWORD": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
     }
   },
   "AF_LW_KAT_000": {
@@ -14069,7 +15099,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14133,7 +15164,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14401,7 +15433,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -14978,7 +16011,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15294,7 +16328,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15606,7 +16641,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -15664,6 +16700,479 @@
         "en": "Arena Medal Exchange Shop",
         "fr": "Boutique d'échange des médailles d'arène"
       }
+    }
+  },
+  "AF_LOT_FF10_ROD_000": {
+    "names": {
+      "en": "Magistral Rod",
+      "fr": "Bâton Magistère"
+    },
+    "slug": "magistral-rod",
+    "stats": {
+      "HP": {
+        "min": 9,
+        "max": 185
+      },
+      "ATK": {
+        "min": 1,
+        "max": 17
+      },
+      "MAG": {
+        "min": 9,
+        "max": 170
+      },
+      "ACCURACY": {
+        "min": 0,
+        "max": 5
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 21
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_FF10_ROD_000",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "Magic",
+          "fr": "Magie"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "Critical",
+          "fr": "Critique"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_1",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_1",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_MAGIC_1",
+            "fr": "SK_LW_MAGIC_1"
+          },
+          "dataId": "SK_LW_MAGIC_1",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_1",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_MAGIC_2",
+            "fr": "SK_LW_MAGIC_2"
+          },
+          "dataId": "SK_LW_MAGIC_2",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_1",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_MAGIC_3",
+            "fr": "SK_LW_MAGIC_3"
+          },
+          "dataId": "SK_LW_MAGIC_3",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_1",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_MAGIC_4_SSR",
+            "fr": "SK_LW_MAGIC_4_SSR"
+          },
+          "dataId": "SK_LW_MAGIC_4_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Magistral Rod (Evocation Gauge Acquisition Up)",
+            "fr": "Bâton Magistère (Remplissage de la jauge d'invocation ↑)"
+          },
+          "dataId": "SK_FF10_ROD_000_5",
+          "effects": [
+            {
+              "type": "EVOCATION_GAUGE_BOOST",
+              "minValue": 20,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_MAGIC_5_SSR",
+            "fr": "SK_LW_MAGIC_5_SSR"
+          },
+          "dataId": "SK_LW_MAGIC_5_SSR",
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "ff10wpn_rod_000",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_MST_FIRE",
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_FF10_ROD_000": 1,
+        "IT_AF_MAT_LIQUID_03": 170,
+        "IT_AF_MAT_ZUUU": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_FF10_ROD_000": 3,
+        "IT_AF_MAT_LIQUID_03": 230,
+        "IT_AF_MAT_ZUUU": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_FF10_ROD_000": 7,
+        "IT_AF_MAT_LIQUID_03": 350,
+        "IT_AF_MAT_ZUUU": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_FF10_ROD_000": 15,
+        "IT_AF_MAT_LIQUID_03": 630,
+        "IT_AF_MAT_ZUUU": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_STAFF": 315
+      },
+      {
+        "IT_AF_FF10_ROD_000": 31,
+        "IT_AF_MAT_LIQUID_03": 1250,
+        "IT_AF_MAT_ZUUU": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_STAFF": 535
+      },
+      {
+        "IT_AF_FF10_ROD_000": 63,
+        "IT_AF_MAT_LIQUID_03": 2570,
+        "IT_AF_MAT_ZUUU": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_STAFF": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
     }
   },
   "AF_LW_MAC_000": {
@@ -20413,7 +21922,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -20685,7 +22196,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21012,7 +22525,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21351,7 +22866,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21479,10 +22996,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -21770,10 +23290,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22093,10 +23616,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22428,10 +23954,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22767,10 +24296,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -22979,7 +24511,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -23590,7 +25124,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24233,7 +25769,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -24888,7 +26426,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25411,7 +26951,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25581,7 +27123,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -25701,7 +27245,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26429,7 +27975,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26569,7 +28117,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27318,7 +28867,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27373,7 +28923,7 @@
           "dataId": "SK_ROD_LW_MGRT_1_1",
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
               "minValue": -50,
               "maxValue": -50,
               "calcType": "fixe",
@@ -27403,7 +28953,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27489,7 +29040,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28282,10 +29834,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28390,10 +29945,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28498,10 +30056,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28606,10 +30167,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28760,7 +30324,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28904,7 +30470,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29016,7 +30584,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29128,7 +30698,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29240,7 +30812,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29324,7 +30898,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29408,7 +30984,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29574,7 +31152,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29728,7 +31308,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29866,7 +31448,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30006,7 +31590,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30148,7 +31734,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30277,7 +31865,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30406,7 +31996,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30535,7 +32127,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30636,7 +32230,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30783,7 +32379,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30884,7 +32482,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31111,10 +32711,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31196,7 +32799,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31322,10 +32926,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31420,7 +33027,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31638,7 +33246,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31782,7 +33392,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31902,10 +33514,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32000,7 +33615,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32254,7 +33870,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32461,7 +34079,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32596,10 +34216,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32814,7 +34437,8 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_MSW_FIRE",
-      "JB_LW_BEA_FIRE"
+      "JB_LW_BEA_FIRE",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32908,7 +34532,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33151,7 +34776,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33268,10 +34895,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33434,7 +35064,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33566,7 +35198,8 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_MSW_FIRE",
-      "JB_LW_BEA_FIRE"
+      "JB_LW_BEA_FIRE",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33661,7 +35294,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33762,7 +35396,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33912,7 +35548,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34057,7 +35695,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34253,7 +35893,8 @@
       "JB_FFT_DELT",
       "JB_LW_STRN",
       "JB_LW_GRSR",
-      "JB_FF4_KAIN"
+      "JB_FF4_KAIN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34348,7 +35989,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34776,7 +36418,8 @@
       "JB_FF4_ROSA",
       "JB_LW_MMC_FIRE",
       "JB_LW_SAKR",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35207,10 +36850,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35374,7 +37020,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35513,7 +37161,15 @@
       "JB_LW_MMC_FIRE",
       "JB_LW_BEA",
       "JB_LW_MSW",
-      "JB_LW_PSI"
+      "JB_LW_PSI",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_LW_MONT_M",
+      "JB_LW_ROBB_M",
+      "JB_LW_ORDR_M",
+      "JB_LW_ELDE_M",
+      "JB_LW_BYLO_M",
+      "JB_LW_RART_M"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35618,7 +37274,8 @@
       "JB_FF4_ROSA",
       "JB_LW_MMC_FIRE",
       "JB_LW_SAKR",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35770,7 +37427,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35867,7 +37526,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35959,7 +37619,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36129,7 +37790,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36276,7 +37939,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36490,7 +38155,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36762,7 +38428,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36817,7 +38484,7 @@
           "dataId": "SK_CLT_LW_SAKR_1_1",
           "effects": [
             {
-              "type": "ACTIVATION_TIME",
+              "type": "NON_ATTACK_ACTIVATION_TIME",
               "minValue": -150,
               "maxValue": -350,
               "calcType": "fixe",
@@ -36878,10 +38545,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37112,7 +38782,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37198,7 +38870,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37326,7 +38999,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37476,7 +39151,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37622,7 +39299,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37763,7 +39442,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37772,6 +39453,301 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_ELSR"
+    }
+  },
+  "AF_ACC_FF10_TIDU_1": {
+    "names": {
+      "en": "Tidus's Shoes",
+      "fr": "Chaussures de Tidus"
+    },
+    "slug": "tiduss-shoes",
+    "stats": {
+      "HP": {
+        "min": 282,
+        "max": 282
+      },
+      "DEF": {
+        "min": 7,
+        "max": 7
+      },
+      "AGI": {
+        "min": 5,
+        "max": 5
+      },
+      "CRITIC_RATE": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_FF10_TIDU_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Warming Up",
+            "fr": "Échauffement"
+          },
+          "dataId": "SK_ACC_FF10_TIDU_1",
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 10,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_acc_001",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_SWN_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_SAM_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_ORND",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_DEAN",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_MSW_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FF10_P_TIDU"
+    }
+  },
+  "AF_CLT_FF10_YUNA_1": {
+    "names": {
+      "en": "Yuna's Clothing",
+      "fr": "Tenue de Yuna"
+    },
+    "slug": "yunas-clothing",
+    "stats": {
+      "HP": {
+        "min": 358,
+        "max": 358
+      },
+      "DEF": {
+        "min": 10,
+        "max": 10
+      },
+      "CRITIC_AVOID": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_CLT_FF10_YUNA_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Smile Practice",
+            "fr": "Pratique du sourire"
+          },
+          "dataId": "SK_CLT_FF10_YUNA_1",
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 180,
+              "maxValue": 210,
+              "calcType": "unknow",
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "PROTECT_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3,
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "SHELL_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3,
+              "target": "selfSide",
+              "timing": "SKILL_AFTER"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "selfSide",
+          "cost": {
+            "type": "TP",
+            "value": 34
+          },
+          "count": 1,
+          "maxLevel": 20,
+          "aoe": {
+            "s": 0,
+            "l": 1,
+            "h": 1
+          }
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_clt_001",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_MNK_FIRE",
+      "JB_LW_LAN_FIRE",
+      "JB_LW_THI_FIRE",
+      "JB_LW_NIN_FIRE",
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_WAR",
+      "JB_LW_FINA",
+      "JB_FF14_TNCR",
+      "JB_LW_VIK_FIRE",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_LW_WGN_FIRE",
+      "JB_LW_ASS_FIRE",
+      "JB_LW_RAIN",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_LSWL",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_ARC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_BEA_FIRE",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_FF10_P_YUNA"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -37837,7 +39813,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37910,7 +39887,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37983,7 +39961,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38348,7 +40327,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38412,7 +40392,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38519,6 +40500,58 @@
       "type": "Unknown"
     }
   },
+  "AF_GUN_LW_FDRC_2": {
+    "names": {
+      "en": "AF_GUN_LW_FDRC_2",
+      "fr": "AF_GUN_LW_FDRC_2"
+    },
+    "slug": "af_gun_lw_fdrc_2",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_FDRC_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_gun_006",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_BSW_LW_RAMD_01_2": {
     "names": {
       "en": "Sagewood Greatsword",
@@ -38563,6 +40596,93 @@
       "JB_LW_RAIN",
       "JB_LW_STRN",
       "JB_LW_MSW_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_AXE_LW_YERM_2": {
+    "names": {
+      "en": "AF_AXE_LW_YERM_2",
+      "fr": "AF_AXE_LW_YERM_2"
+    },
+    "slug": "af_axe_lw_yerm_2",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "AXE",
+    "dataId": "AF_AXE_LW_YERM_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_axe_005",
+    "equippableJobs": [
+      "JB_LW_VIK_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_SHI_002": {
+    "names": {
+      "en": "AF_LW_SHI_002",
+      "fr": "AF_LW_SHI_002"
+    },
+    "slug": "af_lw_shi_002",
+    "stats": {},
+    "type": "SHIELD",
+    "dataId": "AF_LW_SHI_002",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_shi_002",
+    "equippableJobs": [
+      "JB_LW_PLD_FIRE"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38733,7 +40853,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38806,7 +40927,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38993,7 +41115,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39248,7 +41371,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39380,7 +41504,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39444,7 +41569,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39578,7 +41704,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39651,7 +41778,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40026,7 +42154,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40099,7 +42228,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40163,7 +42293,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40236,7 +42367,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40422,7 +42554,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40581,7 +42714,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40706,7 +42840,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41005,6 +43140,145 @@
       "JB_LW_RAIN",
       "JB_LW_STRN",
       "JB_LW_MSW_FIRE"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_SWO_FF10_TIDU_2": {
+    "names": {
+      "en": "Tidus Specific Weapon",
+      "fr": "Arme exclusive de Tidus"
+    },
+    "slug": "tidus-specific-weapon",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 17
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 13
+      }
+    },
+    "type": "SWORD",
+    "dataId": "AF_SWO_FF10_TIDU_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_swo_000",
+    "equippableJobs": [
+      "JB_LW_WAR_FIRE",
+      "JB_LW_KNT_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_GLMS",
+      "JB_LW_WAR",
+      "JB_FFT_RAMZ",
+      "JB_FFT_ORND",
+      "JB_FFT_GFGR",
+      "JB_FF1_WROL",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_LW_MKN_FIRE",
+      "JB_FF4_CECL",
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_ROD_FF10_YUNA_2": {
+    "names": {
+      "en": "Magistral Rod",
+      "fr": "Bâton Magistère"
+    },
+    "slug": "magistral-rod-1",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_ROD_FF10_YUNA_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "ff10wpn_rod_000",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_MST_FIRE",
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41696,7 +43970,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41903,7 +44179,8 @@
       "UN_LW_P_GRSR",
       "UN_LW_P_RAMD_01",
       "UN_LW_P_VKTR_01",
-      "UN_LW_P_CRIS"
+      "UN_LW_P_CRIS",
+      "UN_FF10_P_TIDU"
     ],
     "materials": [
       {
@@ -42084,7 +44361,8 @@
       "UN_FF4_P_CECL",
       "UN_LW_P_SAKR",
       "UN_LW_P_ELSI",
-      "UN_LW_P_ELSR"
+      "UN_LW_P_ELSR",
+      "UN_FF10_P_YUNA"
     ],
     "materials": [
       {
@@ -42972,7 +45250,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44225,7 +46505,8 @@
       "JB_FFT_DELT",
       "JB_LW_MKN_FIRE",
       "JB_FF4_CECL",
-      "JB_LW_DEAN"
+      "JB_LW_DEAN",
+      "JB_FF10_TIDU"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44561,7 +46842,9 @@
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46295,7 +48578,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46630,10 +48915,13 @@
       "JB_LW_LSWL",
       "JB_LW_MKN_FIRE",
       "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
       "JB_LW_ARC_FIRE",
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47843,7 +50131,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49156,7 +51446,8 @@
       "JB_LW_TIM_FIRE",
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
-      "JB_LW_SAKR"
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49813,7 +52104,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50472,7 +52765,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52166,7 +54461,9 @@
       "JB_LW_SAKR",
       "JB_LW_BEA_FIRE",
       "JB_LW_MSW_FIRE",
-      "JB_LW_PSI_FIRE"
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA"
     ],
     "equippableUnits": [],
     "materials": [

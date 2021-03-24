@@ -1093,59 +1093,73 @@ export class JsonService {
 
   /* Translation */
   private TranslateUnitNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/UnitName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/unitname.json?t=' + date).toPromise();
   }
 
   private TranslateSkillNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/SkillName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/skillname.json?t=' + date).toPromise();
   }
 
   private TranslateBuffNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/BuffName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/buffname.json?t=' + date).toPromise();
   }
 
   private TranslateJobNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/JobName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/jobname.json?t=' + date).toPromise();
   }
 
   private TranslateEquipmentNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/artifactname.json?t=' + date).toPromise();
   }
 
   private TranslateVisionCardNames() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/VisionCardName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/visioncardname.json?t=' + date).toPromise();
   }
 
   private TranslateVisionItemOthers() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemOther.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/itemother.json?t=' + date).toPromise();
   }
 
   private TranslateEquipmentGrow() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ArtifactGrow.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/artifactgrow.json?t=' + date).toPromise();
   }
 
   private TranslateItemName() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/ItemName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/itemname.json?t=' + date).toPromise();
   }
 
   private TranslatePlayerAwardsName() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/PlayerAwardsName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/playerawardsname.json?t=' + date).toPromise();
   }
 
   private TranslatePlayerAwardsDescription() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/PlayerAwardsDescription.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/playerawardsdescription.json?t=' + date).toPromise();
   }
 
   private TranslateGuildAwardsName() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsName.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/guildawardsname.json?t=' + date).toPromise();
   }
 
   private TranslateGuildAwardsDescription() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/GuildAwardsDescription.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/guildawardsdescription.json?t=' + date).toPromise();
   }
 
   private TranslateQuestTitle() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/en/QuestTitle.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/questtitle.json?t=' + date).toPromise();
   }
 
 
@@ -1730,37 +1744,21 @@ export class JsonService {
     const dataId = job.lvtbl_main;
 
     if (this[this.version].jobsTbl[dataId] && this[this.version].jobsTbl[dataId].items) {
-      if (this.version === 'gl') {
-        this[this.version].jobsTbl[dataId].items.forEach((level, levelIndex) => {
-          const levelMaterials = {};
+      for (let i = 1; i <= 10; i++) {
+        if (this[this.version].jobsTbl[dataId].items['m' + i]) {
+          const materialTbl = this[this.version].jobsMaterials[this[this.version].jobsTbl[dataId].items['m' + i]];
 
-          if (levelIndex !== 0) {
-            for (let i = 1; i <= 10; i++) {
-              if (level['eq' + i]) {
-                levelMaterials[level['eq' + i].iname] = level['eq' + i].num;
+          materialTbl.items.forEach((level, levelIndex) => {
+            if (i === 1) {
+              materials.push({});
+            }
+
+            if (levelIndex !== 0) {
+              if (level['m1'].iname) {
+                materials[levelIndex][level['m1'].iname] = level['m1'].num;
               }
             }
-          }
-
-          materials.push(levelMaterials);
-        });
-      } else {
-        for (let i = 1; i <= 10; i++) {
-          if (this[this.version].jobsTbl[dataId].items['m' + i]) {
-            const materialTbl = this[this.version].jobsMaterials[this[this.version].jobsTbl[dataId].items['m' + i]];
-
-            materialTbl.items.forEach((level, levelIndex) => {
-              if (i === 1) {
-                materials.push({});
-              }
-
-              if (levelIndex !== 0) {
-                if (level['m1'].iname) {
-                  materials[levelIndex][level['m1'].iname] = level['m1'].num;
-                }
-              }
-            });
-          }
+          });
         }
 
         if (this[this.version].unitClassChangeCondition[job.iname]) {
@@ -3051,160 +3049,158 @@ export class JsonService {
       }
     }
 
-    if ((this.version === 'jp' || this.names.en.equipment[dataId]) && equipment.type !== -1) {
-      if (!this[this.version].wotvEquipments[rType]) {
-        this[this.version].wotvEquipments[rType] = {
-          names: {},
-          slug: this.slug.slugify(this.names.en.equipment[dataId]),
-          stats: {},
-          type: this.jobEquip[this[this.version].equipments[dataId].cat[0]],
-          dataId: dataId,
-          grows: {},
-          skills: [],
-          rarity: this.rarity[equipment.rare],
-          image: this[this.version].equipments[dataId].asset.toLowerCase(),
-          equippableJobs: [],
-          equippableUnits: [],
-          materials: []
-        };
+    if (!this[this.version].wotvEquipments[rType]) {
+      this[this.version].wotvEquipments[rType] = {
+        names: {},
+        slug: this.slug.slugify(this.names.en.equipment[dataId]),
+        stats: {},
+        type: this.jobEquip[this[this.version].equipments[dataId].cat[0]],
+        dataId: dataId,
+        grows: {},
+        skills: [],
+        rarity: this.rarity[equipment.rare],
+        image: this[this.version].equipments[dataId].asset.toLowerCase(),
+        equippableJobs: [],
+        equippableUnits: [],
+        materials: []
+      };
 
-        this.getNames(this[this.version].wotvEquipments[rType], 'equipment');
+      this.getNames(this[this.version].wotvEquipments[rType], 'equipment');
 
-        if (equipment.equip) {
-          if (this[this.version].EquipmentCond[equipment.equip]) {
-            if (this[this.version].EquipmentCond[equipment.equip].jobs) {
-              this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
-                this[this.version].wotvEquipments[rType].equippableJobs.push(job);
-              });
-            }
-
-            if (this[this.version].EquipmentCond[equipment.equip].units) {
-              this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
-                this[this.version].wotvEquipments[rType].equippableUnits.push(unit);
-              });
-            }
-          } else {
-            const uniqJobs = [];
-            Object.keys(this[this.version].wotvJobs).forEach(jobId => {
-              const tableJob = jobId.split('_');
-              const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
-
-              if (uniqJobs.indexOf(genericDataId) === -1) {
-                uniqJobs.push(genericDataId);
-                this[this.version].wotvEquipments[rType].equippableJobs.push(jobId);
-              }
+      if (equipment.equip) {
+        if (this[this.version].EquipmentCond[equipment.equip]) {
+          if (this[this.version].EquipmentCond[equipment.equip].jobs) {
+            this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
+              this[this.version].wotvEquipments[rType].equippableJobs.push(job);
             });
           }
-        }
 
-        if (equipment.trust) {
-          let unitId = null;
-          let i = 0;
-          const unitIds = Object.keys(this[this.version].wotvUnits);
-
-          while (!unitId && i < unitIds.length) {
-            if (this[this.version].wotvUnits[unitIds[i]].tmr.dataId === dataId) {
-              unitId = unitIds[i];
-            }
-
-            i++;
-          }
-
-          if (unitId) {
-            this[this.version].wotvEquipments[rType].acquisition = {
-              type: 'tmr',
-              unitId: unitId
-            };
-          } else {
-            this[this.version].wotvEquipments[rType].acquisition = {
-              type: 'Unknown'
-            };
-          }
-        } else if (this[this.version].equipmentRecipes[dataId]) {
-          const recipe = this[this.version].equipmentRecipes[dataId];
-          if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] !== '') {
-            this[this.version].wotvEquipments[rType].acquisition = {
-              type: {
-                en: this.names.en.itemOther[recipe.recipe],
-                fr: this.names.fr.itemOther[recipe.recipe]
-              }
-            };
+          if (this[this.version].EquipmentCond[equipment.equip].units) {
+            this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
+              this[this.version].wotvEquipments[rType].equippableUnits.push(unit);
+            });
           }
         } else {
-          // console.log("NO RECEIPE !!!")
-          // console.log(this[this.version].wotvEquipments[rType])
-        }
+          const uniqJobs = [];
+          Object.keys(this[this.version].wotvJobs).forEach(jobId => {
+            const tableJob = jobId.split('_');
+            const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
 
-        if (!this[this.version].wotvEquipments[rType].acquisition) {
-          this[this.version].wotvEquipments[rType].acquisition = {
-            type: 'Unknown'
-          };
-        }
-
-        if (this[this.version].equipementLots[equipment.rtype]) {
-          for (let i = 1; i <= 3; i++) {
-            const growId = this[this.version].equipementLots[equipment.rtype].lot[0]['grow' + i];
-            if (growId) {
-              this[this.version].wotvEquipments[rType].grows[growId] = {
-                dataId: growId,
-                names: {},
-                curve: {}
-              };
-              this.getNames(this[this.version].wotvEquipments[rType].grows[growId], 'equipmentGrow', false);
-
-              Object.keys(this[this.version].grows[growId].curve[0]).forEach(stat => {
-                if (this.stats.unit[stat]) {
-                  this[this.version].wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this[this.version].grows[growId].curve[0][stat];
-                }
-              });
-            }
-          }
-        }
-
-        Object.keys(this[this.version].equipments[dataId].status[0]).forEach(stat => {
-          if (this[this.version].equipments[dataId].status[0][stat] !== 0
-            || (this[this.version].equipments[dataId].status[1]
-              && typeof(this[this.version].equipments[dataId].status[1][stat]) === 'number'
-              && this[this.version].equipments[dataId].status[1][stat] !== 0)
-          ) {
-            this[this.version].wotvEquipments[rType].stats[this.stats.unit[stat]] = {
-              min: this[this.version].equipments[dataId].status[0][stat],
-              max: this[this.version].equipments[dataId].status[1] ? this[this.version].equipments[dataId].status[1][stat] : this[this.version].equipments[dataId].status[0][stat]
-            };
-          }
-        });
-      }
-
-      this[this.version].wotvEquipments[rType].materials.push(this.getEquipmentMaterials(dataId));
-
-      const skills = [];
-      let countSkill = 0;
-      const skillsPos = {};
-      for (let i = 1; i <= 5; i++) {
-        if (this[this.version].equipments[dataId]['skl' + i]) {
-          this[this.version].equipments[dataId]['skl' + i].forEach(skillId => {
-            if (typeof(skillsPos[skillId]) !== 'number') {
-              const skill = {
-                names: {},
-                dataId: skillId,
-                effects: [],
-                type: this.slots[this[this.version].skills[skillId].slot === 1 ? 1 : 3],
-                upgrade: [i],
-                grow: this[this.version].skills[skillId].grow
-              };
-              this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
-              skills.push(skill);
-              skillsPos[skillId] = countSkill;
-              countSkill++;
-            } else {
-              skills[skillsPos[skillId]].upgrade.push(i);
+            if (uniqJobs.indexOf(genericDataId) === -1) {
+              uniqJobs.push(genericDataId);
+              this[this.version].wotvEquipments[rType].equippableJobs.push(jobId);
             }
           });
         }
       }
 
-      this[this.version].wotvEquipments[rType].skills.push(skills);
+      if (equipment.trust) {
+        let unitId = null;
+        let i = 0;
+        const unitIds = Object.keys(this[this.version].wotvUnits);
+
+        while (!unitId && i < unitIds.length) {
+          if (this[this.version].wotvUnits[unitIds[i]].tmr.dataId === dataId) {
+            unitId = unitIds[i];
+          }
+
+          i++;
+        }
+
+        if (unitId) {
+          this[this.version].wotvEquipments[rType].acquisition = {
+            type: 'tmr',
+            unitId: unitId
+          };
+        } else {
+          this[this.version].wotvEquipments[rType].acquisition = {
+            type: 'Unknown'
+          };
+        }
+      } else if (this[this.version].equipmentRecipes[dataId]) {
+        const recipe = this[this.version].equipmentRecipes[dataId];
+        if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] !== '') {
+          this[this.version].wotvEquipments[rType].acquisition = {
+            type: {
+              en: this.names.en.itemOther[recipe.recipe],
+              fr: this.names.fr.itemOther[recipe.recipe]
+            }
+          };
+        }
+      } else {
+        // console.log("NO RECEIPE !!!")
+        // console.log(this[this.version].wotvEquipments[rType])
+      }
+
+      if (!this[this.version].wotvEquipments[rType].acquisition) {
+        this[this.version].wotvEquipments[rType].acquisition = {
+          type: 'Unknown'
+        };
+      }
+
+      if (this[this.version].equipementLots[equipment.rtype]) {
+        for (let i = 1; i <= 3; i++) {
+          const growId = this[this.version].equipementLots[equipment.rtype].lot[0]['grow' + i];
+          if (growId) {
+            this[this.version].wotvEquipments[rType].grows[growId] = {
+              dataId: growId,
+              names: {},
+              curve: {}
+            };
+            this.getNames(this[this.version].wotvEquipments[rType].grows[growId], 'equipmentGrow', false);
+
+            Object.keys(this[this.version].grows[growId].curve[0]).forEach(stat => {
+              if (this.stats.unit[stat]) {
+                this[this.version].wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this[this.version].grows[growId].curve[0][stat];
+              }
+            });
+          }
+        }
+      }
+
+      Object.keys(this[this.version].equipments[dataId].status[0]).forEach(stat => {
+        if (this[this.version].equipments[dataId].status[0][stat] !== 0
+          || (this[this.version].equipments[dataId].status[1]
+            && typeof(this[this.version].equipments[dataId].status[1][stat]) === 'number'
+            && this[this.version].equipments[dataId].status[1][stat] !== 0)
+        ) {
+          this[this.version].wotvEquipments[rType].stats[this.stats.unit[stat]] = {
+            min: this[this.version].equipments[dataId].status[0][stat],
+            max: this[this.version].equipments[dataId].status[1] ? this[this.version].equipments[dataId].status[1][stat] : this[this.version].equipments[dataId].status[0][stat]
+          };
+        }
+      });
     }
+
+    this[this.version].wotvEquipments[rType].materials.push(this.getEquipmentMaterials(dataId));
+
+    const skills = [];
+    let countSkill = 0;
+    const skillsPos = {};
+    for (let i = 1; i <= 5; i++) {
+      if (this[this.version].equipments[dataId]['skl' + i]) {
+        this[this.version].equipments[dataId]['skl' + i].forEach(skillId => {
+          if (typeof(skillsPos[skillId]) !== 'number') {
+            const skill = {
+              names: {},
+              dataId: skillId,
+              effects: [],
+              type: this.slots[this[this.version].skills[skillId].slot === 1 ? 1 : 3],
+              upgrade: [i],
+              grow: this[this.version].skills[skillId].grow
+            };
+            this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
+            skills.push(skill);
+            skillsPos[skillId] = countSkill;
+            countSkill++;
+          } else {
+            skills[skillsPos[skillId]].upgrade.push(i);
+          }
+        });
+      }
+    }
+
+    this[this.version].wotvEquipments[rType].skills.push(skills);
   }
 
   private getEquipmentMaterials(dataId, level = 50) {

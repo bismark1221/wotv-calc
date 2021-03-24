@@ -4915,6 +4915,10 @@
         {
           "min": 432,
           "max": 823
+        },
+        {
+          "min": 831,
+          "max": 1006
         }
       ],
       "TP": [
@@ -4925,6 +4929,10 @@
         {
           "min": 29,
           "max": 36
+        },
+        {
+          "min": 36,
+          "max": 41
         }
       ],
       "AP": [
@@ -4935,6 +4943,10 @@
         {
           "min": 35,
           "max": 42
+        },
+        {
+          "min": 42,
+          "max": 47
         }
       ],
       "ATK": [
@@ -4945,13 +4957,19 @@
         {
           "min": 25,
           "max": 36
+        },
+        {
+          "min": 36,
+          "max": 42
         }
       ],
       "DEF": [
         {},
+        {},
         {}
       ],
       "SPR": [
+        {},
         {},
         {}
       ],
@@ -4963,6 +4981,10 @@
         {
           "min": 58,
           "max": 81
+        },
+        {
+          "min": 81,
+          "max": 93
         }
       ],
       "DEX": [
@@ -4973,6 +4995,10 @@
         {
           "min": 46,
           "max": 63
+        },
+        {
+          "min": 64,
+          "max": 72
         }
       ],
       "AGI": [
@@ -4983,6 +5009,10 @@
         {
           "min": 15,
           "max": 18
+        },
+        {
+          "min": 18,
+          "max": 20
         }
       ],
       "LUCK": [
@@ -4993,25 +5023,34 @@
         {
           "min": 41,
           "max": 55
+        },
+        {
+          "min": 55,
+          "max": 62
         }
       ],
       "INITIAL_AP": [
+        {},
         {},
         {}
       ],
       "ACCURACY": [
         {},
+        {},
         {}
       ],
       "CRITIC_RATE": [
+        {},
         {},
         {}
       ],
       "CRITIC_AVOID": [
         {},
+        {},
         {}
       ],
       "EVADE": [
+        {},
         {},
         {}
       ],
@@ -5023,13 +5062,19 @@
         {
           "min": -10,
           "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
         }
       ],
       "ICE_RES": [
         {},
+        {},
         {}
       ],
       "EARTH_RES": [
+        {},
         {},
         {}
       ],
@@ -5041,101 +5086,132 @@
         {
           "min": 10,
           "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
         }
       ],
       "LIGHTNING_RES": [
+        {},
         {},
         {}
       ],
       "WATER_RES": [
         {},
+        {},
         {}
       ],
       "LIGHT_RES": [
+        {},
         {},
         {}
       ],
       "DARK_RES": [
         {},
+        {},
         {}
       ],
       "SLASH_RES": [
+        {},
         {},
         {}
       ],
       "PIERCE_RES": [
         {},
+        {},
         {}
       ],
       "STRIKE_RES": [
+        {},
         {},
         {}
       ],
       "MISSILE_RES": [
         {},
+        {},
         {}
       ],
       "MAGIC_RES": [
+        {},
         {},
         {}
       ],
       "POISON_RES": [
         {},
+        {},
         {}
       ],
       "BLIND_RES": [
+        {},
         {},
         {}
       ],
       "SLEEP_RES": [
         {},
+        {},
         {}
       ],
       "SILENCE_RES": [
+        {},
         {},
         {}
       ],
       "PARALYZE_RES": [
         {},
-        {}
+        {},
+        {
+          "min": 5,
+          "max": 25
+        }
       ],
       "CONFUSION_RES": [
+        {},
         {},
         {}
       ],
       "PETRIFY_RES": [
         {},
+        {},
         {}
       ],
       "TOAD_RES": [
+        {},
         {},
         {}
       ],
       "CHARM_RES": [
         {},
+        {},
         {}
       ],
       "SLOW_RES": [
+        {},
         {},
         {}
       ],
       "STOP_RES": [
         {},
+        {},
         {}
       ],
       "IMMOBILIZE_RES": [
+        {},
         {},
         {}
       ],
       "DISABLE_RES": [
         {},
+        {},
         {}
       ],
       "BERSERK_RES": [
         {},
+        {},
         {}
       ],
       "DOOM_RES": [
+        {},
         {},
         {}
       ],
@@ -5147,9 +5223,17 @@
         {
           "min": 0,
           "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
         }
       ],
       "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
         {
           "min": 0,
           "max": 0
@@ -5294,6 +5378,107 @@
         6,
         6,
         6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
       ]
     ],
     "element": "ice",
@@ -5781,6 +5966,31 @@
             "ctbreak": null
           }
         },
+        "20": {
+          "dataId": "BUFF_SHIV_35",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_35",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "21": {
           "dataId": "BUFF_SHIV_20",
           "type": "buff",
@@ -5985,6 +6195,31 @@
             "ctbreak": null
           }
         },
+        "32": {
+          "dataId": "BUFF_SHIV_38",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ICE_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_38",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "33": {
           "dataId": "BUFF_SHIV_28",
           "type": "buff",
@@ -6085,6 +6320,81 @@
             "ctbreak": null
           }
         },
+        "38": {
+          "dataId": "BUFF_SHIV_34",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_34",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_SHIV_36",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_36",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_SHIV_37",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "PIERCE_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_37",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "45": {
           "dataId": "BUFF_SHIV_32",
           "type": "buff",
@@ -6136,6 +6446,81 @@
             "pierce": null,
             "ctbreak": null
           }
+        },
+        "54": {
+          "dataId": "BUFF_SHIV_39",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ICE_ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_39",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "BUFF_SHIV_40",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "ICE_ATK",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_40",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "56": {
+          "dataId": "BUFF_SHIV_41",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "ICE_ATK",
+                "minValue": 10,
+                "maxValue": 10,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_SHIV_41",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
         }
       },
       "lines": [
@@ -6171,7 +6556,15 @@
         72,
         131,
         104,
-        117
+        117,
+        132,
+        44,
+        94,
+        96,
+        64,
+        120,
+        149,
+        150
       ]
     },
     "slug": "shiva"
@@ -24695,7 +25088,7 @@
   "UN_LW_S_BAHM": {
     "dataId": "UN_LW_S_BAHM",
     "names": {
-      "en": "バハムート"
+      "en": "バハムート - Bahamut"
     },
     "rarity": "UR",
     "cost": 40,
@@ -60538,6 +60931,10 @@
         {
           "min": 369,
           "max": 713
+        },
+        {
+          "min": 720,
+          "max": 873
         }
       ],
       "TP": [
@@ -60548,6 +60945,10 @@
         {
           "min": 16,
           "max": 21
+        },
+        {
+          "min": 21,
+          "max": 23
         }
       ],
       "AP": [
@@ -60558,6 +60959,10 @@
         {
           "min": 20,
           "max": 25
+        },
+        {
+          "min": 25,
+          "max": 27
         }
       ],
       "ATK": [
@@ -60568,13 +60973,19 @@
         {
           "min": 33,
           "max": 48
+        },
+        {
+          "min": 49,
+          "max": 56
         }
       ],
       "DEF": [
         {},
+        {},
         {}
       ],
       "SPR": [
+        {},
         {},
         {}
       ],
@@ -60586,6 +60997,10 @@
         {
           "min": 12,
           "max": 17
+        },
+        {
+          "min": 17,
+          "max": 20
         }
       ],
       "DEX": [
@@ -60596,6 +61011,10 @@
         {
           "min": 35,
           "max": 49
+        },
+        {
+          "min": 50,
+          "max": 56
         }
       ],
       "AGI": [
@@ -60606,6 +61025,10 @@
         {
           "min": 10,
           "max": 11
+        },
+        {
+          "min": 11,
+          "max": 13
         }
       ],
       "LUCK": [
@@ -60616,33 +61039,44 @@
         {
           "min": 42,
           "max": 57
+        },
+        {
+          "min": 57,
+          "max": 64
         }
       ],
       "INITIAL_AP": [
+        {},
         {},
         {}
       ],
       "ACCURACY": [
         {},
+        {},
         {}
       ],
       "CRITIC_RATE": [
+        {},
         {},
         {}
       ],
       "CRITIC_AVOID": [
         {},
+        {},
         {}
       ],
       "EVADE": [
+        {},
         {},
         {}
       ],
       "FIRE_RES": [
         {},
+        {},
         {}
       ],
       "ICE_RES": [
+        {},
         {},
         {}
       ],
@@ -60654,13 +61088,19 @@
         {
           "min": -15,
           "max": -15
+        },
+        {
+          "min": -15,
+          "max": -15
         }
       ],
       "WIND_RES": [
         {},
+        {},
         {}
       ],
       "LIGHTNING_RES": [
+        {},
         {},
         {}
       ],
@@ -60672,93 +61112,122 @@
         {
           "min": 5,
           "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
         }
       ],
       "LIGHT_RES": [
+        {},
         {},
         {}
       ],
       "DARK_RES": [
         {},
+        {},
         {}
       ],
       "SLASH_RES": [
+        {},
         {},
         {}
       ],
       "PIERCE_RES": [
         {},
+        {},
         {}
       ],
       "STRIKE_RES": [
+        {},
         {},
         {}
       ],
       "MISSILE_RES": [
         {},
+        {},
         {}
       ],
       "MAGIC_RES": [
+        {},
         {},
         {}
       ],
       "POISON_RES": [
         {},
+        {},
         {}
       ],
       "BLIND_RES": [
+        {},
         {},
         {}
       ],
       "SLEEP_RES": [
         {},
+        {},
         {}
       ],
       "SILENCE_RES": [
+        {},
         {},
         {}
       ],
       "PARALYZE_RES": [
         {},
+        {},
         {}
       ],
       "CONFUSION_RES": [
+        {},
         {},
         {}
       ],
       "PETRIFY_RES": [
         {},
+        {},
         {}
       ],
       "TOAD_RES": [
+        {},
         {},
         {}
       ],
       "CHARM_RES": [
         {},
+        {},
         {}
       ],
       "SLOW_RES": [
+        {},
         {},
         {}
       ],
       "STOP_RES": [
         {},
+        {},
         {}
       ],
       "IMMOBILIZE_RES": [
+        {},
         {},
         {}
       ],
       "DISABLE_RES": [
         {},
-        {}
+        {},
+        {
+          "min": 5,
+          "max": 15
+        }
       ],
       "BERSERK_RES": [
+        {},
         {},
         {}
       ],
       "DOOM_RES": [
+        {},
         {},
         {}
       ],
@@ -60770,9 +61239,17 @@
         {
           "min": 0,
           "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
         }
       ],
       "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
         {
           "min": 0,
           "max": 0
@@ -60917,6 +61394,107 @@
         6,
         6,
         6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
       ]
     ],
     "element": "lightning",
@@ -61406,6 +61984,31 @@
             "ctbreak": null
           }
         },
+        "20": {
+          "dataId": "BUFF_OGRE_35",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_35",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "21": {
           "dataId": "BUFF_OGRE_20",
           "type": "buff",
@@ -61612,6 +62215,31 @@
             "ctbreak": null
           }
         },
+        "32": {
+          "dataId": "BUFF_OGRE_38",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_38",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "33": {
           "dataId": "BUFF_OGRE_28",
           "type": "buff",
@@ -61714,6 +62342,81 @@
             "ctbreak": null
           }
         },
+        "38": {
+          "dataId": "BUFF_OGRE_34",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_34",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_OGRE_36",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_36",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_OGRE_37",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "CRITIC_EVADE",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_37",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "45": {
           "dataId": "BUFF_OGRE_32",
           "type": "buff",
@@ -61765,6 +62468,81 @@
             "pierce": null,
             "ctbreak": null
           }
+        },
+        "54": {
+          "dataId": "BUFF_OGRE_39",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_39",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "BUFF_OGRE_40",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_40",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "56": {
+          "dataId": "BUFF_OGRE_41",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "DEF",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_OGRE_41",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
         }
       },
       "lines": [
@@ -61800,7 +62578,15 @@
         72,
         131,
         104,
-        117
+        117,
+        132,
+        44,
+        94,
+        135,
+        64,
+        120,
+        149,
+        150
       ]
     },
     "slug": "ogre"

@@ -1618,7 +1618,7 @@
       }
     },
     "names": {
-      "en": "【超高難度】修練の間（緋）C"
+      "en": "【超高難度】修練の間（緋）C - [Brutal Difficulty] Training Chamber (Red) C"
     },
     "exp": 5000,
     "nrg": 30,
@@ -1749,7 +1749,7 @@
       }
     },
     "names": {
-      "en": "【超高難度】修練の間（緋）B"
+      "en": "【超高難度】修練の間（緋）B - [Brutal Difficulty] Training Chamber (Red) B"
     },
     "exp": 5000,
     "nrg": 30,
@@ -1880,7 +1880,7 @@
       }
     },
     "names": {
-      "en": "【超高難度】修練の間（緋）A"
+      "en": "【超高難度】修練の間（緋）A - [Brutal Difficulty] Training Chamber (Red) A"
     },
     "exp": 5000,
     "nrg": 30,
@@ -2054,7 +2054,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（火）Lv.6"
+      "en": "輝石の間（火）Lv.6 - Alcryst Chamber (Fire) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -2222,7 +2222,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（風）Lv.6"
+      "en": "輝石の間（風）Lv.6 - Alcryst Chamber (Wind) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -2390,7 +2390,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（水）Lv.6"
+      "en": "輝石の間（水）Lv.6 - Alcryst Chamber (Water) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -2558,7 +2558,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（氷）Lv.6"
+      "en": "輝石の間（氷）Lv.6 - Alcryst Chamber (Ice) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -2729,7 +2729,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（土）Lv.6"
+      "en": "輝石の間（土）Lv.6 - Alcryst Chamber (Earth) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -2897,7 +2897,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（闇）Lv.6"
+      "en": "輝石の間（闇）Lv.6 - Alcryst Chamber (Dark) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -3065,7 +3065,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（雷）Lv.6"
+      "en": "輝石の間（雷）Lv.6 - Alcryst Chamber (Lightning) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -3236,7 +3236,7 @@
       }
     },
     "names": {
-      "en": "輝石の間（光）Lv.6"
+      "en": "輝石の間（光）Lv.6 - Alcryst Chamber (Light) Lv. 6"
     },
     "exp": 5000,
     "nrg": 18,
@@ -3509,34 +3509,40 @@
     "dataId": "QE_ST_01010103",
     "items": {
       "IT_JB_MM_ALL": {
-        "drop": 40.82018702516141
+        "drop": 33.3723331894368
       },
       "IT_JB_MM_PLD": {
-        "drop": 11.845417091212454
+        "drop": 11.890430664062501
       },
       "IT_JB_JSWORD_01": {
-        "drop": 64.09971020508333
+        "drop": 48.41534493706241
       },
       "IT_AF_MAT_HEART_01": {
-        "drop": 43.55059262943084
+        "drop": 42.5731259690625
       },
       "IT_AF_MAT_LIQUID_01": {
-        "drop": 43.55059262943084
+        "drop": 42.5731259690625
       },
       "IT_JB_IM_ANGEL_1": {
-        "drop": 18.395030750407628
+        "drop": 18.46273024
       },
       "IT_JB_STAFF_01": {
-        "drop": 64.09971020508333
+        "drop": 48.41534493706241
       },
       "IT_JB_MM_WHM": {
-        "drop": 11.845417091212454
+        "drop": 11.890430664062501
       },
       "IT_JB_EM_WIND_1": {
-        "drop": 67.06848735085845
+        "drop": 67.232
       },
       "IT_JB_MM_LW_LSWL": {
-        "drop": 11.845417091212454
+        "drop": 11.890430664062501
+      },
+      "IT_JB_GLOVE_01": {
+        "drop": 48.41534493706241
+      },
+      "IT_JB_MM_PSI": {
+        "drop": 11.890430664062501
       },
       "": {
         "drop": 0
@@ -29155,6 +29161,136 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_ST_01150301": {
+    "dataId": "QE_ST_01150301",
+    "items": {},
+    "names": {
+      "en": "1:15:3:1 絶望する二人"
+    },
+    "exp": 9838,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150302": {
+    "dataId": "QE_ST_01150302",
+    "items": {},
+    "names": {
+      "en": "1:15:3:2 それだけの理由"
+    },
+    "exp": 9860,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150303": {
+    "dataId": "QE_ST_01150303",
+    "items": {},
+    "names": {
+      "en": "1:15:3:3 宣戦布告"
+    },
+    "exp": 9860,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150304": {
+    "dataId": "QE_ST_01150304",
+    "items": {},
+    "names": {
+      "en": "1:15:3:4 契約成立"
+    },
+    "exp": 9883,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150305": {
+    "dataId": "QE_ST_01150305",
+    "items": {},
+    "names": {
+      "en": "1:15:3:5 やさしさという刃"
+    },
+    "exp": 9905,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150306": {
+    "dataId": "QE_ST_01150306",
+    "items": {},
+    "names": {
+      "en": "1:15:3:6 駆けるモント１"
+    },
+    "exp": 9905,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150307": {
+    "dataId": "QE_ST_01150307",
+    "items": {},
+    "names": {
+      "en": "1:15:3:7 駆けるモント２"
+    },
+    "exp": 9927,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150308": {
+    "dataId": "QE_ST_01150308",
+    "items": {},
+    "names": {
+      "en": "1:15:3:8 探しているもの"
+    },
+    "exp": 9950,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150309": {
+    "dataId": "QE_ST_01150309",
+    "items": {},
+    "names": {
+      "en": "1:15:3:9 駆けるモント３"
+    },
+    "exp": 9950,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_ST_01150310": {
+    "dataId": "QE_ST_01150310",
+    "items": {},
+    "names": {
+      "en": "1:15:3:10 モントが待っている"
+    },
+    "exp": 10595,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_HA_LW_MONT": {
     "dataId": "QE_HA_LW_MONT",
     "items": {
@@ -37715,7 +37851,7 @@
       }
     },
     "names": {
-      "en": "ティーダ"
+      "en": "ティーダ - Tidus"
     },
     "exp": 6400,
     "nrg": 25,
@@ -37756,7 +37892,7 @@
       }
     },
     "names": {
-      "en": "ユウナ"
+      "en": "ユウナ - Yuna"
     },
     "exp": 6400,
     "nrg": 25,
@@ -38135,6 +38271,19 @@
     "items": {},
     "names": {
       "en": "コーウェル"
+    },
+    "exp": 6400,
+    "nrg": 25,
+    "jp": 13,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_CH_LW_MURG": {
+    "dataId": "QE_CH_LW_MURG",
+    "items": {},
+    "names": {
+      "en": "ムラガ・フェネス"
     },
     "exp": 6400,
     "nrg": 25,
@@ -40281,6 +40430,162 @@
     "nrg": 0,
     "jp": 6,
     "enemies": 5,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_PT_004_01": {
+    "dataId": "QE_PT_004_01",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Normal#1"
+    },
+    "exp": 972,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_02": {
+    "dataId": "QE_PT_004_02",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Normal#2"
+    },
+    "exp": 1791,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_03": {
+    "dataId": "QE_PT_004_03",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Normal#3"
+    },
+    "exp": 2679,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_04": {
+    "dataId": "QE_PT_004_04",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Normal#4"
+    },
+    "exp": 3519,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_05": {
+    "dataId": "QE_PT_004_05",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Normal#5"
+    },
+    "exp": 5084,
+    "nrg": 6,
+    "jp": 3,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_HA01": {
+    "dataId": "QE_PT_004_HA01",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Hard#1"
+    },
+    "exp": 4800,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_HA02": {
+    "dataId": "QE_PT_004_HA02",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Hard#2"
+    },
+    "exp": 4893,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_HA03": {
+    "dataId": "QE_PT_004_HA03",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Hard#3"
+    },
+    "exp": 4986,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_HA04": {
+    "dataId": "QE_PT_004_HA04",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Hard#4"
+    },
+    "exp": 5288,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_HA05": {
+    "dataId": "QE_PT_004_HA05",
+    "items": {},
+    "names": {
+      "en": "裁きの試練クエスト Hard#5"
+    },
+    "exp": 5384,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_PT_004_BOSS_1": {
+    "dataId": "QE_PT_004_BOSS_1",
+    "items": {},
+    "names": {
+      "en": "裁きの試練ボスバトル Normal"
+    },
+    "exp": 6127,
+    "nrg": 0,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_PT_004_BOSS_2": {
+    "dataId": "QE_PT_004_BOSS_2",
+    "items": {},
+    "names": {
+      "en": "裁きの試練ボスバトル Hard"
+    },
+    "exp": 8733,
+    "nrg": 0,
+    "jp": 6,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -42458,7 +42763,7 @@
       }
     },
     "names": {
-      "en": "FINAL FANTASY Ⅹ Battle#1"
+      "en": "FINAL FANTASY Ⅹ Battle#1 - FINAL FANTASY X Battle #1"
     },
     "exp": 972,
     "nrg": 6,
@@ -42499,7 +42804,7 @@
       }
     },
     "names": {
-      "en": "FINAL FANTASY Ⅹ Battle#2"
+      "en": "FINAL FANTASY Ⅹ Battle#2 - FINAL FANTASY X Battle #2"
     },
     "exp": 1791,
     "nrg": 6,
@@ -42520,7 +42825,7 @@
       "IT_JB_LSWORD_01": {
         "drop": 68.359375
       },
-      "IT_JB_MM_FF10_ARON": {
+      "IT_JB_MM_SWN": {
         "drop": 9.6312109375
       },
       "IT_JB_EM_ICE_1": {
@@ -42540,7 +42845,7 @@
       }
     },
     "names": {
-      "en": "フリーウェイ跡"
+      "en": "フリーウェイ跡 - Overpass"
     },
     "exp": 2679,
     "nrg": 6,
@@ -42581,7 +42886,7 @@
       }
     },
     "names": {
-      "en": "エボン=ドーム内部"
+      "en": "エボン=ドーム内部 - Dome — Interior"
     },
     "exp": 3519,
     "nrg": 6,
@@ -42622,7 +42927,7 @@
       }
     },
     "names": {
-      "en": "エボン=ドーム魔天"
+      "en": "エボン=ドーム魔天 - Dome — The Beyond  "
     },
     "exp": 5084,
     "nrg": 6,
@@ -42643,7 +42948,7 @@
       "IT_JB_LSWORD_02": {
         "drop": 65.63910841941833
       },
-      "IT_JB_MM_FF10_ARON_2": {
+      "IT_JB_MM_SWN_2": {
         "drop": 4.930257291528996
       },
       "IT_JB_EM_ICE_2": {
@@ -42663,7 +42968,7 @@
       }
     },
     "names": {
-      "en": "FINAL FANTASY Ⅹ Battle#1【中級】"
+      "en": "FINAL FANTASY Ⅹ Battle#1【中級】 - FINAL FANTASY X Battle #1 [Intermediate]"
     },
     "exp": 4800,
     "nrg": 6,
@@ -42704,7 +43009,7 @@
       }
     },
     "names": {
-      "en": "FINAL FANTASY Ⅹ Battle#2【中級】"
+      "en": "FINAL FANTASY Ⅹ Battle#2【中級】 - FINAL FANTASY X Battle #2 [Intermediate]"
     },
     "exp": 4800,
     "nrg": 6,
@@ -42745,7 +43050,7 @@
       }
     },
     "names": {
-      "en": "フリーウェイ跡【中級】"
+      "en": "フリーウェイ跡【中級】 - Overpass [Intermediate]"
     },
     "exp": 4893,
     "nrg": 6,
@@ -42766,7 +43071,7 @@
       "IT_JB_LSWORD_03": {
         "drop": 66.51823907968964
       },
-      "IT_JB_MM_FF10_ARON_3": {
+      "IT_JB_MM_SWN_3": {
         "drop": 4.877801478853399
       },
       "IT_JB_EM_ICE_3": {
@@ -42786,7 +43091,7 @@
       }
     },
     "names": {
-      "en": "エボン=ドーム内部【中級】"
+      "en": "エボン=ドーム内部【中級】 - Dome — Interior [Intermediate]"
     },
     "exp": 5288,
     "nrg": 6,
@@ -42819,7 +43124,7 @@
       "IT_JB_MM_FF10_YUNA_3": {
         "drop": 4.928566852068801
       },
-      "IT_JB_MM_FF10_ARON_3": {
+      "IT_JB_MM_SWN_3": {
         "drop": 4.928566852068801
       },
       "IT_JB_EM_WATER_3": {
@@ -42860,7 +43165,7 @@
       }
     },
     "names": {
-      "en": "エボン=ドーム魔天【中級】"
+      "en": "エボン=ドーム魔天【中級】 - Dome — The Beyond [Intermediate]"
     },
     "exp": 5288,
     "nrg": 6,
@@ -42901,7 +43206,7 @@
       }
     },
     "names": {
-      "en": "FINAL FANTASY Ⅹ 【EX1】"
+      "en": "FINAL FANTASY Ⅹ 【EX1】 - FINAL FANTASY X [EX1]"
     },
     "exp": 5623,
     "nrg": 12,
@@ -42983,7 +43288,7 @@
       }
     },
     "names": {
-      "en": "超高難度　FINAL FANTASY Ⅹ 【EX1】"
+      "en": "超高難度　FINAL FANTASY Ⅹ 【EX1】 - Brutal Difficulty FINAL FANTASY X [EX1]"
     },
     "exp": 8733,
     "nrg": 12,
@@ -43899,6 +44204,44 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_EV_ART_CRF_06": {
+    "dataId": "QE_EV_ART_CRF_06",
+    "items": {
+      "IT_AF_LW_AXE_003": {
+        "drop": 9.517673485035756
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 93.12805232640001
+      },
+      "IT_AF_MAT_BONE": {
+        "drop": 29.92595109482545
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 29.92595109482545
+      },
+      "IT_AF_AW_AXE": {
+        "drop": 32.73150918470167
+      },
+      "IT_AF_EXP_02": {
+        "drop": 90.05860379366288
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.77582428638277
+      },
+      "": {
+        "drop": 99.65014734671605
+      }
+    },
+    "names": {
+      "en": "武具育成クエスト（ゴールドアックス） - Equipment Training Quest (Golden Axe)"
+    },
+    "exp": 4986,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 12,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_EV_ART_CRF_10": {
     "dataId": "QE_EV_ART_CRF_10",
     "items": {
@@ -44010,6 +44353,19 @@
     "nrg": 12,
     "jp": 6,
     "enemies": 10,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_EV_ART_CRF_24": {
+    "dataId": "QE_EV_ART_CRF_24",
+    "items": {},
+    "names": {
+      "en": "超高難度　武具育成クエスト（ゴールドアックス）"
+    },
+    "exp": 10634,
+    "nrg": 12,
+    "jp": 6,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -44188,44 +44544,6 @@
     "nrg": 12,
     "jp": 6,
     "enemies": 9,
-    "gils": 1500,
-    "chests": 0
-  },
-  "QE_EV_ART_CRF_06": {
-    "dataId": "QE_EV_ART_CRF_06",
-    "items": {
-      "IT_AF_LW_AXE_003": {
-        "drop": 9.517673485035756
-      },
-      "IT_AF_MAT_SAP_03": {
-        "drop": 93.12805232640001
-      },
-      "IT_AF_MAT_BONE": {
-        "drop": 29.92595109482545
-      },
-      "IT_AF_MAT_SHINE_01": {
-        "drop": 29.92595109482545
-      },
-      "IT_AF_AW_AXE": {
-        "drop": 32.73150918470167
-      },
-      "IT_AF_EXP_02": {
-        "drop": 90.05860379366288
-      },
-      "IT_AF_EXP_03": {
-        "drop": 85.77582428638277
-      },
-      "": {
-        "drop": 99.65014734671605
-      }
-    },
-    "names": {
-      "en": "武具育成クエスト（ゴールドアックス） - Equipment Training Quest (Golden Axe)"
-    },
-    "exp": 4986,
-    "nrg": 12,
-    "jp": 6,
-    "enemies": 12,
     "gils": 1500,
     "chests": 0
   },
@@ -53066,6 +53384,136 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_BR_SOIL_01": {
+    "dataId": "QE_BR_SOIL_01",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#1"
+    },
+    "exp": 480,
+    "nrg": 6,
+    "jp": 6,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_02": {
+    "dataId": "QE_BR_SOIL_02",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#2"
+    },
+    "exp": 5436,
+    "nrg": 6,
+    "jp": 7,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_03": {
+    "dataId": "QE_BR_SOIL_03",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#3"
+    },
+    "exp": 10266,
+    "nrg": 6,
+    "jp": 9,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_04": {
+    "dataId": "QE_BR_SOIL_04",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#4"
+    },
+    "exp": 15252,
+    "nrg": 6,
+    "jp": 12,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_05": {
+    "dataId": "QE_BR_SOIL_05",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#5"
+    },
+    "exp": 17598,
+    "nrg": 6,
+    "jp": 15,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_06": {
+    "dataId": "QE_BR_SOIL_06",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#6"
+    },
+    "exp": 24807,
+    "nrg": 6,
+    "jp": 20,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_07": {
+    "dataId": "QE_BR_SOIL_07",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#7"
+    },
+    "exp": 24888,
+    "nrg": 6,
+    "jp": 25,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_08": {
+    "dataId": "QE_BR_SOIL_08",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#8"
+    },
+    "exp": 26199,
+    "nrg": 6,
+    "jp": 30,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_09": {
+    "dataId": "QE_BR_SOIL_09",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#9"
+    },
+    "exp": 30591,
+    "nrg": 6,
+    "jp": 35,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_BR_SOIL_10": {
+    "dataId": "QE_BR_SOIL_10",
+    "items": {},
+    "names": {
+      "en": "セレクションクエスト（土）#10"
+    },
+    "exp": 33216,
+    "nrg": 6,
+    "jp": 50,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_EV_ANV_19_10": {
     "dataId": "QE_EV_ANV_19_10",
     "items": {
@@ -53672,7 +54120,7 @@
       }
     },
     "names": {
-      "en": "【火】赤の魔石獲得クエスト"
+      "en": "【火】赤の魔石獲得クエスト - [Fire] Red Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53698,7 +54146,7 @@
       }
     },
     "names": {
-      "en": "【氷】青の魔石獲得クエスト"
+      "en": "【氷】青の魔石獲得クエスト - [Ice] Blue Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53724,7 +54172,7 @@
       }
     },
     "names": {
-      "en": "【風】緑の魔石獲得クエスト"
+      "en": "【風】緑の魔石獲得クエスト - [Wind] Green Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53750,7 +54198,7 @@
       }
     },
     "names": {
-      "en": "【土】橙の魔石獲得クエスト"
+      "en": "【土】橙の魔石獲得クエスト - [Earth] Orange Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53776,7 +54224,7 @@
       }
     },
     "names": {
-      "en": "【雷】黄の魔石獲得クエスト"
+      "en": "【雷】黄の魔石獲得クエスト - [Lightning] Yellow Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53802,7 +54250,7 @@
       }
     },
     "names": {
-      "en": "【水】水の魔石獲得クエスト"
+      "en": "【水】水の魔石獲得クエスト - [Water] Light Blue Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53828,7 +54276,7 @@
       }
     },
     "names": {
-      "en": "【光】白の魔石獲得クエスト"
+      "en": "【光】白の魔石獲得クエスト - [Light] White Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -53854,7 +54302,7 @@
       }
     },
     "names": {
-      "en": "【闇】紫の魔石獲得クエスト"
+      "en": "【闇】紫の魔石獲得クエスト - [Dark] Purple Magicite Reward Quest"
     },
     "exp": 5600,
     "nrg": 16,
@@ -54414,7 +54862,7 @@
     "dataId": "QE_SB_IFRT_04",
     "items": {},
     "names": {
-      "en": "イフリート戦（２）"
+      "en": "イフリート戦（２） - Ifrit Battle (2)"
     },
     "exp": 6100,
     "nrg": 32,
@@ -54472,6 +54920,19 @@
     "nrg": 32,
     "jp": 16,
     "enemies": 1,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_SB_SHIV_04": {
+    "dataId": "QE_SB_SHIV_04",
+    "items": {},
+    "names": {
+      "en": "シヴァ戦（２）"
+    },
+    "exp": 6100,
+    "nrg": 32,
+    "jp": 16,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -54674,7 +55135,7 @@
     "dataId": "QE_SB_BAHM_01",
     "items": {},
     "names": {
-      "en": "バハムート戦"
+      "en": "バハムート戦 - Bahamut Battle"
     },
     "exp": 6100,
     "nrg": 32,
@@ -54687,7 +55148,7 @@
     "dataId": "QE_SB_BAHM_02",
     "items": {},
     "names": {
-      "en": "バハムート戦（２）"
+      "en": "バハムート戦（２） - Bahamut Battle (2)"
     },
     "exp": 6100,
     "nrg": 32,
@@ -54869,7 +55330,7 @@
     "dataId": "QE_SB_BHMT_02",
     "items": {},
     "names": {
-      "en": "ベヒーモス戦（２）"
+      "en": "ベヒーモス戦（２） - Behemoth Battle (2)"
     },
     "exp": 5800,
     "nrg": 30,
@@ -55612,7 +56073,7 @@
       }
     },
     "names": {
-      "en": "Multi: FINAL FANTASY Ⅹ 【EX1】 "
+      "en": "Multi: FINAL FANTASY Ⅹ 【EX1】  - FINAL FANTASY X [EX1] "
     },
     "exp": 5623,
     "nrg": 6,
@@ -55704,7 +56165,7 @@
       }
     },
     "names": {
-      "en": "Multi: 超高難度　FINAL FANTASY Ⅹ 【EX1】 "
+      "en": "Multi: 超高難度　FINAL FANTASY Ⅹ 【EX1】  - Brutal Difficulty FINAL FANTASY X [EX1] "
     },
     "exp": 8733,
     "nrg": 6,
@@ -56585,6 +57046,49 @@
     "gils": 1500,
     "chests": 0
   },
+  "QE_MU_ART_CRF_06": {
+    "dataId": "QE_MU_ART_CRF_06",
+    "items": {
+      "IT_AF_LW_AXE_003": {
+        "drop": 9.517673485035756,
+        "host": 2
+      },
+      "IT_AF_MAT_SAP_03": {
+        "drop": 93.12805232640001,
+        "host": 72
+      },
+      "IT_AF_MAT_BONE": {
+        "drop": 29.92595109482545,
+        "host": 8
+      },
+      "IT_AF_MAT_SHINE_01": {
+        "drop": 29.92595109482545,
+        "host": 8
+      },
+      "IT_AF_AW_AXE": {
+        "drop": 32.73150918470167,
+        "host": 10
+      },
+      "IT_AF_EXP_02": {
+        "drop": 90.05860379366288
+      },
+      "IT_AF_EXP_03": {
+        "drop": 85.77582428638277
+      },
+      "": {
+        "drop": 99.65014734671605
+      }
+    },
+    "names": {
+      "en": "Multi: 武具育成クエスト（ゴールドアックス） - Equipment Training Quest (Golden Axe)"
+    },
+    "exp": 4986,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 12,
+    "gils": 1500,
+    "chests": 0
+  },
   "QE_MU_ART_CRF_10": {
     "dataId": "QE_MU_ART_CRF_10",
     "items": {
@@ -56706,6 +57210,19 @@
     "nrg": 6,
     "jp": 0,
     "enemies": 10,
+    "gils": 1800,
+    "chests": 0
+  },
+  "QE_MU_ART_CRF_24": {
+    "dataId": "QE_MU_ART_CRF_24",
+    "items": {},
+    "names": {
+      "en": "Multi: 超高難度　武具育成クエスト（ゴールドアックス）"
+    },
+    "exp": 10634,
+    "nrg": 6,
+    "jp": 0,
+    "enemies": 0,
     "gils": 1800,
     "chests": 0
   },
@@ -56894,49 +57411,6 @@
     "nrg": 6,
     "jp": 0,
     "enemies": 9,
-    "gils": 1500,
-    "chests": 0
-  },
-  "QE_MU_ART_CRF_06": {
-    "dataId": "QE_MU_ART_CRF_06",
-    "items": {
-      "IT_AF_LW_AXE_003": {
-        "drop": 9.517673485035756,
-        "host": 2
-      },
-      "IT_AF_MAT_SAP_03": {
-        "drop": 93.12805232640001,
-        "host": 72
-      },
-      "IT_AF_MAT_BONE": {
-        "drop": 29.92595109482545,
-        "host": 8
-      },
-      "IT_AF_MAT_SHINE_01": {
-        "drop": 29.92595109482545,
-        "host": 8
-      },
-      "IT_AF_AW_AXE": {
-        "drop": 32.73150918470167,
-        "host": 10
-      },
-      "IT_AF_EXP_02": {
-        "drop": 90.05860379366288
-      },
-      "IT_AF_EXP_03": {
-        "drop": 85.77582428638277
-      },
-      "": {
-        "drop": 99.65014734671605
-      }
-    },
-    "names": {
-      "en": "Multi: 武具育成クエスト（ゴールドアックス） - Equipment Training Quest (Golden Axe)"
-    },
-    "exp": 4986,
-    "nrg": 6,
-    "jp": 0,
-    "enemies": 12,
     "gils": 1500,
     "chests": 0
   },
@@ -58680,7 +59154,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（火）Lv.6"
+      "en": "Multi: 輝石の間（火）Lv.6 - Alcryst Chamber (Fire) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -58805,7 +59279,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（風）Lv.6"
+      "en": "Multi: 輝石の間（風）Lv.6 - Alcryst Chamber (Wind) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -58930,7 +59404,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（水）Lv.6"
+      "en": "Multi: 輝石の間（水）Lv.6 - Alcryst Chamber (Water) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -59055,7 +59529,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（氷）Lv.6"
+      "en": "Multi: 輝石の間（氷）Lv.6 - Alcryst Chamber (Ice) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -59183,7 +59657,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（土）Lv.6"
+      "en": "Multi: 輝石の間（土）Lv.6 - Alcryst Chamber (Earth) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -59308,7 +59782,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（闇）Lv.6"
+      "en": "Multi: 輝石の間（闇）Lv.6 - Alcryst Chamber (Dark) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -59433,7 +59907,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（雷）Lv.6"
+      "en": "Multi: 輝石の間（雷）Lv.6 - Alcryst Chamber (Lightning) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -59558,7 +60032,7 @@
       }
     },
     "names": {
-      "en": "Multi: 輝石の間（光）Lv.6"
+      "en": "Multi: 輝石の間（光）Lv.6 - Alcryst Chamber (Light) Lv. 6"
     },
     "exp": 5000,
     "nrg": 9,
@@ -61070,7 +61544,7 @@
       }
     },
     "names": {
-      "en": "Multi: 【超高難度】修練の間（緋）C"
+      "en": "Multi: 【超高難度】修練の間（緋）C - [Brutal Difficulty] Training Chamber (Red) C"
     },
     "exp": 5000,
     "nrg": 18,
@@ -61231,7 +61705,7 @@
       }
     },
     "names": {
-      "en": "Multi: 【超高難度】修練の間（緋）B"
+      "en": "Multi: 【超高難度】修練の間（緋）B - [Brutal Difficulty] Training Chamber (Red) B"
     },
     "exp": 5000,
     "nrg": 18,
@@ -61392,7 +61866,7 @@
       }
     },
     "names": {
-      "en": "Multi: 【超高難度】修練の間（緋）A"
+      "en": "Multi: 【超高難度】修練の間（緋）A - [Brutal Difficulty] Training Chamber (Red) A"
     },
     "exp": 5000,
     "nrg": 18,
@@ -61828,7 +62302,7 @@
     "dataId": "QE_ARENA_00012",
     "items": {},
     "names": {
-      "en": "城内"
+      "en": "城内 - Castle Interior"
     },
     "nrg": 8,
     "enemies": 0,
@@ -62226,7 +62700,7 @@
     "dataId": "QE_PVP_FRI_0020",
     "items": {},
     "names": {
-      "en": "城内Ⅱ"
+      "en": "城内Ⅱ - Castle Interior"
     },
     "enemies": 0,
     "chests": 0
@@ -62442,7 +62916,7 @@
     "dataId": "QE_PVP_RANK_0006",
     "items": {},
     "names": {
-      "en": "強敵の間"
+      "en": "強敵の間 - Beast's Den"
     },
     "enemies": 6,
     "chests": 0
@@ -62487,7 +62961,7 @@
     "dataId": "QE_GHUNT_001",
     "items": {},
     "names": {
-      "en": "ギルドクエスト #1"
+      "en": "ギルドクエスト #1 - Guild Quest #1"
     },
     "exp": 0,
     "nrg": 0,
@@ -62500,7 +62974,7 @@
     "dataId": "QE_GHUNT_002",
     "items": {},
     "names": {
-      "en": "ギルドクエスト #2"
+      "en": "ギルドクエスト #2 - Guild Quest #2"
     },
     "exp": 0,
     "nrg": 0,
@@ -62513,7 +62987,7 @@
     "dataId": "QE_GHUNT_003",
     "items": {},
     "names": {
-      "en": "ギルドクエスト #3"
+      "en": "ギルドクエスト #3 - Guild Quest #3"
     },
     "exp": 0,
     "nrg": 0,
@@ -62526,7 +63000,7 @@
     "dataId": "QE_GHUNT_004",
     "items": {},
     "names": {
-      "en": "ギルドクエスト #4"
+      "en": "ギルドクエスト #4 - Guild Quest #4"
     },
     "exp": 0,
     "nrg": 0,
@@ -63658,6 +64132,19 @@
     "items": {},
     "names": {
       "en": "欠片獲得 抗えぬ闇"
+    },
+    "exp": 7820,
+    "nrg": 20,
+    "jp": 10,
+    "enemies": 0,
+    "gils": 1500,
+    "chests": 0
+  },
+  "QE_VC_LW_MORE": {
+    "dataId": "QE_VC_LW_MORE",
+    "items": {},
+    "names": {
+      "en": "欠片獲得 星の導き"
     },
     "exp": 7820,
     "nrg": 20,

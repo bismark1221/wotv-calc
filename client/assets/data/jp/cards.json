@@ -11022,7 +11022,7 @@
   "VC_LW_BAHM": {
     "dataId": "VC_LW_BAHM",
     "names": {
-      "en": "竜王顕現　バハムート"
+      "en": "竜王顕現　バハムート - Dragon King Advent, Bahamut"
     },
     "cost": 90,
     "rarity": "UR",
@@ -11089,7 +11089,7 @@
       "JUMP": {}
     },
     "image": "lapsbahm",
-    "slug": "ryuuou-kengen-bahamut",
+    "slug": "dragon-king-advent-bahamut",
     "partyBuffs": [
       {
         "classic": {
@@ -15096,6 +15096,378 @@
             "type": "elem",
             "items": [
               "dark"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_MORE": {
+    "dataId": "VC_LW_MORE",
+    "names": {
+      "en": "星の導き"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 39,
+        "max": 302
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 43,
+        "max": 168
+      },
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmore",
+    "slug": "hoshi-no-michibiki",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAGIC_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "NON_ATTACK_ACTIVATION_TIME",
+              "minValue": -100,
+              "maxValue": -100,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
+              "minValue": -100,
+              "maxValue": -100,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "MAG",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "CRITIC_RATE",
+              "minValue": -5,
+              "maxValue": -5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SPR",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "MAG",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MORE_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MORE_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
             ]
           }
         ]
@@ -23779,7 +24151,7 @@
   "VC_LW_ART": {
     "dataId": "VC_LW_ART",
     "names": {
-      "en": "一年の軌跡"
+      "en": "一年の軌跡 - A Year's Journey"
     },
     "cost": 50,
     "rarity": "MR",
@@ -23843,7 +24215,7 @@
       "JUMP": {}
     },
     "image": "lapsart",
-    "slug": "1-nen-no-kiseki",
+    "slug": "a-years-journey",
     "partyBuffs": [
       {
         "classic": {

@@ -271,7 +271,7 @@
     },
     "howToGet": {
       "en": "Title given to players that ranked within the top 3,000 in the Arena",
-      "fr": "Titre attribué aux joueurs se trouvant dans le top 3 000 du classement de l'arène"
+      "fr": "Titre attribué aux joueurs se trouvant dans le top 3 000 du classement de l'arène"
     }
   },
   "LW_PA_00043": {
@@ -382,6 +382,39 @@
     "howToGet": {
       "en": "Title given to players who have played 5,000 Raid Battles",
       "fr": "Titre attribué aux joueurs qui ont participé à 5 000 combats de raid"
+    }
+  },
+  "LW_PA_00060": {
+    "dataId": "LW_PA_00060",
+    "names": {
+      "en": "Path-Making Commander",
+      "fr": "Commandant modèle"
+    },
+    "howToGet": {
+      "en": "Title awarded to players who ranked within the top 100 for Total Victory Point Ranking in Raid Battles",
+      "fr": "Titre attribué aux joueurs qui se trouvent dans le top 100 du classement des points de victoire totaux des combats de raid."
+    }
+  },
+  "LW_PA_00061": {
+    "dataId": "LW_PA_00061",
+    "names": {
+      "en": "Callous Captain",
+      "fr": "Capitaine cruel"
+    },
+    "howToGet": {
+      "en": "Title awarded to players who ranked within the top 10 for Total Victory Point Ranking in Raid Battles",
+      "fr": "Titre attribué aux joueurs qui se trouvent dans le top 10 du classement des points de victoire totaux des combats de raid."
+    }
+  },
+  "LW_PA_00062": {
+    "dataId": "LW_PA_00062",
+    "names": {
+      "en": "Commanding General",
+      "fr": "Commandant suprême"
+    },
+    "howToGet": {
+      "en": "Title awarded to the player who ranked 1st for Total Victory Point Ranking in Raid Battles",
+      "fr": "Titre attribué au joueur qui occupe la première place du classement des points de victoire totaux des combats de raid."
     }
   },
   "LW_PA_00069": {
@@ -560,37 +593,15 @@
       "fr": "Titre attribué au joueur qui a atteint la Maîtrise de diamant et qui occupe la première place du classement des points à la fin de la saison des matchs classés."
     }
   },
-  "LW_PA_00060": {
-    "dataId": "LW_PA_00060",
+  "AWD_P_Anniv_1": {
+    "dataId": "AWD_P_Anniv_1",
     "names": {
-      "en": "Path-Making Commander",
-      "fr": "Commandant modèle"
+      "en": "Celebrating the First Anniversary",
+      "fr": "Célébrons le 1er anniversaire"
     },
     "howToGet": {
-      "en": "Title awarded to players who ranked within the top 100 for Total Victory Point Ranking in Raid Battles",
-      "fr": "Titre attribué aux joueurs qui se trouvent dans le top 100 du classement des points de victoire totaux des combats de raid."
-    }
-  },
-  "LW_PA_00061": {
-    "dataId": "LW_PA_00061",
-    "names": {
-      "en": "Callous Captain",
-      "fr": "Capitaine cruel"
-    },
-    "howToGet": {
-      "en": "Title awarded to players who ranked within the top 10 for Total Victory Point Ranking in Raid Battles",
-      "fr": "Titre attribué aux joueurs qui se trouvent dans le top 10 du classement des points de victoire totaux des combats de raid."
-    }
-  },
-  "LW_PA_00062": {
-    "dataId": "LW_PA_00062",
-    "names": {
-      "en": "Commanding General",
-      "fr": "Commandant suprême"
-    },
-    "howToGet": {
-      "en": "Title awarded to the player who ranked 1st for Total Victory Point Ranking in Raid Battles",
-      "fr": "Titre attribué au joueur qui occupe la première place du classement des points de victoire totaux des combats de raid."
+      "en": "Title given to players that played the game during the First Anniversary",
+      "fr": "Titre attribué aux joueurs qui auraient participé au jeu au cours de la célébration du 1er anniversaire."
     }
   },
   "LW_PA_CH_001_1": {
@@ -623,7 +634,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Mont Leonis on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Mont Leonis à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mont Leonis à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_001_4": {
+    "dataId": "LW_PA_CH_001_4",
+    "names": {
+      "en": "Destined Prince",
+      "fr": "Le Destiné"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mont Leonis on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mont Leonis à 10 000 quêtes"
     }
   },
   "LW_PA_CH_002_1": {
@@ -656,7 +678,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Sterne Leonis on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne Leonis à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne Leonis à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_002_4": {
+    "dataId": "LW_PA_CH_002_4",
+    "names": {
+      "en": "Fated Prince",
+      "fr": "Le Rejeté"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Sterne Leonis on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne Leonis à 10 000 quêtes"
     }
   },
   "LW_PA_CH_003_1": {
@@ -689,7 +722,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Oelde Leonis on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Eldo Leonis à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Eldo Leonis à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_003_4": {
+    "dataId": "LW_PA_CH_003_4",
+    "names": {
+      "en": "Red Lion Monarch",
+      "fr": "Le Lion rouge"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Oelde Leonis on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Eldo Leonis à 10 000 quêtes"
     }
   },
   "LW_PA_CH_004_1": {
@@ -722,7 +766,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Robb Hourne on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Rob Hourne à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rob Hourne à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_004_4": {
+    "dataId": "LW_PA_CH_004_4",
+    "names": {
+      "en": "Brave and Wise King",
+      "fr": "Le Vertueux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Robb Hourne on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rob Hourne à 10 000 quêtes"
     }
   },
   "LW_PA_CH_005_1": {
@@ -755,7 +810,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Engelbert on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Engelbert à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Engelbert à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_005_4": {
+    "dataId": "LW_PA_CH_005_4",
+    "names": {
+      "en": "Steel Guardian",
+      "fr": "Le Bouclier d'acier"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Engelbert on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Engelbert à 10 000 quêtes"
     }
   },
   "LW_PA_CH_006_1": {
@@ -788,7 +854,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Xiza on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Xiza à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Xiza à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_006_4": {
+    "dataId": "LW_PA_CH_006_4",
+    "names": {
+      "en": "Devoted Fighter",
+      "fr": "La Guerrière dévouée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Xiza on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Xiza à 10 000 quêtes"
     }
   },
   "LW_PA_CH_007_1": {
@@ -813,6 +890,17 @@
       "fr": "Titre attribué aux joueurs qui ont fait participer Aileen à 500 quêtes"
     }
   },
+  "LW_PA_CH_007_4": {
+    "dataId": "LW_PA_CH_007_4",
+    "names": {
+      "en": "Faithful Weaponsmith",
+      "fr": "La Forgeronne loyale"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Aileen on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Aileen à 10 000 quêtes"
+    }
+  },
   "LW_PA_CH_007_3": {
     "dataId": "LW_PA_CH_007_3",
     "names": {
@@ -821,7 +909,7 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Aileen on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Aileen à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Aileen à 3 000 quêtes"
     }
   },
   "LW_PA_CH_008_1": {
@@ -854,7 +942,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Mediena on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Mediena à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mediena à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_008_4": {
+    "dataId": "LW_PA_CH_008_4",
+    "names": {
+      "en": "Eternal Witch",
+      "fr": "La Sorcière éternelle"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mediena on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mediena à 10 000 quêtes"
     }
   },
   "LW_PA_CH_009_1": {
@@ -887,7 +986,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ayaka on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Ayaka à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ayaka à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_009_4": {
+    "dataId": "LW_PA_CH_009_4",
+    "names": {
+      "en": "Talented White Mage",
+      "fr": "La Mage blanche spirituelle"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ayaka on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ayaka à 10 000 quêtes"
     }
   },
   "LW_PA_CH_010_1": {
@@ -920,7 +1030,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Machérie Hourne on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie Hourne à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie Hourne à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_010_4": {
+    "dataId": "LW_PA_CH_010_4",
+    "names": {
+      "en": "Beautiful Steel Maiden",
+      "fr": "La Demoiselle d'acier"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Machérie Hourne on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie Hourne à 10 000 quêtes"
     }
   },
   "LW_PA_CH_011_1": {
@@ -953,7 +1074,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Helena Leonis on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Helena Leonis à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Helena Leonis à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_011_4": {
+    "dataId": "LW_PA_CH_011_4",
+    "names": {
+      "en": "Benevolent Queen",
+      "fr": "La Bienveillante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Helena Leonis on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Helena Leonis à 10 000 quêtes"
     }
   },
   "LW_PA_CH_012_1": {
@@ -986,7 +1118,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Lilyth on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_012_4": {
+    "dataId": "LW_PA_CH_012_4",
+    "names": {
+      "en": "Blaze of the Battlefield",
+      "fr": "Le Fléau écarlate"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Lilyth on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lilyth à 10 000 quêtes"
     }
   },
   "LW_PA_CH_013_1": {
@@ -1019,7 +1162,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ramada on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_013_4": {
+    "dataId": "LW_PA_CH_013_4",
+    "names": {
+      "en": "Clairvoyant Lancer",
+      "fr": "La Lancière extralucide"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramada on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada à 10 000 quêtes"
     }
   },
   "LW_PA_CH_014_1": {
@@ -1052,7 +1206,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Owe on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Owe à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Owe à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_014_4": {
+    "dataId": "LW_PA_CH_014_4",
+    "names": {
+      "en": "Seeker of Blade Souls",
+      "fr": "Le Chercheur d'âmes"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Owe on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Owe à 10 000 quêtes"
     }
   },
   "LW_PA_CH_015_1": {
@@ -1085,7 +1250,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Lorenzo on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lorenzo à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lorenzo à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_015_4": {
+    "dataId": "LW_PA_CH_015_4",
+    "names": {
+      "en": "Proud Dragoon",
+      "fr": "Le Fier dragonnier"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Lorenzo on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lorenzo à 10 000 quêtes"
     }
   },
   "LW_PA_CH_016_1": {
@@ -1118,7 +1294,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Rairyuu on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_016_4": {
+    "dataId": "LW_PA_CH_016_4",
+    "names": {
+      "en": "Underworld Assassin",
+      "fr": "L'Assassin des bas-fonds"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rairyuu on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu à 10 000 quêtes"
     }
   },
   "LW_PA_CH_017_1": {
@@ -1151,7 +1338,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Vistralle on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Vistral à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vistral à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_017_4": {
+    "dataId": "LW_PA_CH_017_4",
+    "names": {
+      "en": "Dark Hunter of Self-Destruction",
+      "fr": "Le Chasseur de l'Apocalypse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Vistralle on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vistral à 10 000 quêtes"
     }
   },
   "LW_PA_CH_018_1": {
@@ -1184,7 +1382,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Khury Wezette on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Khory Wezett à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Khory Wezett à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_018_4": {
+    "dataId": "LW_PA_CH_018_4",
+    "names": {
+      "en": "Lofty Despot",
+      "fr": "Le Dictateur ambitieux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Khury Wezette on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Khory Wezett à 10 000 quêtes"
     }
   },
   "LW_PA_CH_019_1": {
@@ -1217,7 +1426,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Cadia on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Cadia à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cadia à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_019_4": {
+    "dataId": "LW_PA_CH_019_4",
+    "names": {
+      "en": "Blessing of Spirare",
+      "fr": "La Bénédiction de Spirare"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Cadia on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cadia à 10 000 quêtes"
     }
   },
   "LW_PA_CH_020_1": {
@@ -1250,7 +1470,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Meriluke on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Marie-Luke à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Marie-Luke à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_020_4": {
+    "dataId": "LW_PA_CH_020_4",
+    "names": {
+      "en": "Lightning Fast Fighter",
+      "fr": "L'Éclair belliqueux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Meriluke on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Marie-Luke à 10 000 quêtes"
     }
   },
   "LW_PA_CH_021_1": {
@@ -1283,7 +1514,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Margritte on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Margritte à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Margritte à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_021_4": {
+    "dataId": "LW_PA_CH_021_4",
+    "names": {
+      "en": "Noble Liberator",
+      "fr": "La Libératrice"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Margritte on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Margritte à 10 000 quêtes"
     }
   },
   "LW_PA_CH_022_1": {
@@ -1316,7 +1558,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken \"Grace\" on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer « Grâce » à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Grâce » à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_022_4": {
+    "dataId": "LW_PA_CH_022_4",
+    "names": {
+      "en": "Worshipper in White",
+      "fr": "L'Adoratrice immaculée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken \"Grace\" on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Grâce » à 10 000 quêtes"
     }
   },
   "LW_PA_CH_023_1": {
@@ -1349,7 +1602,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Schuzelt on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Schuzelt à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Schuzelt à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_023_4": {
+    "dataId": "LW_PA_CH_023_4",
+    "names": {
+      "en": "Reckless First Sword",
+      "fr": "Le Champion téméraire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Schuzelt on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Schuzelt à 10 000 quêtes"
     }
   },
   "LW_PA_CH_024_1": {
@@ -1382,7 +1646,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Fina on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fina à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fina à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_024_4": {
+    "dataId": "LW_PA_CH_024_4",
+    "names": {
+      "en": "Amnesic Child",
+      "fr": "Enfant amnésique"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Fina on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fina à 10 000 quêtes"
     }
   },
   "LW_PA_CH_025_1": {
@@ -1415,7 +1690,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Baelo on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Beilo à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Beilo à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_025_4": {
+    "dataId": "LW_PA_CH_025_4",
+    "names": {
+      "en": "Kind Young Lion",
+      "fr": "Le Doux lionceau"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Baelo on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Beilo à 10 000 quêtes"
     }
   },
   "LW_PA_CH_026_1": {
@@ -1448,7 +1734,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Little Leela on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_026_4": {
+    "dataId": "LW_PA_CH_026_4",
+    "names": {
+      "en": "Guileless Spellblade",
+      "fr": "La Magilame angélique"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Little Leela on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla à 10 000 quêtes"
     }
   },
   "LW_PA_CH_027_1": {
@@ -1481,7 +1778,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Sosha on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Sosha à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sosha à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_027_4": {
+    "dataId": "LW_PA_CH_027_4",
+    "names": {
+      "en": "Devilish Dragoon",
+      "fr": "La Dragonnière infernale"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Sosha on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sosha à 10 000 quêtes"
     }
   },
   "LW_PA_CH_028_1": {
@@ -1514,7 +1822,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Vallaide on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Valaïde à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Valaïde à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_028_4": {
+    "dataId": "LW_PA_CH_028_4",
+    "names": {
+      "en": "Starry-Eyed Mage",
+      "fr": "Le Mage idéaliste"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Vallaide on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Valaïde à 10 000 quêtes"
     }
   },
   "LW_PA_CH_029_1": {
@@ -1547,7 +1866,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Naiah on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Naiah à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Naiah à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_029_4": {
+    "dataId": "LW_PA_CH_029_4",
+    "names": {
+      "en": "Transient White Mage",
+      "fr": "La Mage blanche éphémère"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Naiah on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Naiah à 10 000 quêtes"
     }
   },
   "LW_PA_CH_030_1": {
@@ -1580,7 +1910,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Serjes on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Serjes à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Serjes à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_030_4": {
+    "dataId": "LW_PA_CH_030_4",
+    "names": {
+      "en": "Blunt Lancer",
+      "fr": "Le Lancier brutal"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Serjes on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Serjes à 10 000 quêtes"
     }
   },
   "LW_PA_CH_031_1": {
@@ -1613,7 +1954,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Yuni on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Yuni à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuni à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_031_4": {
+    "dataId": "LW_PA_CH_031_4",
+    "names": {
+      "en": "Virtuous Hunter",
+      "fr": "Le Chasseur vertueux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yuni on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuni à 10 000 quêtes"
     }
   },
   "LW_PA_CH_032_1": {
@@ -1646,7 +1998,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Severo on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Sévéro à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sévéro à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_032_4": {
+    "dataId": "LW_PA_CH_032_4",
+    "names": {
+      "en": "Honest Black Mage",
+      "fr": "Le Mage noir intègre"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Severo on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sévéro à 10 000 quêtes"
     }
   },
   "LW_PA_CH_033_1": {
@@ -1679,7 +2042,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Vadim on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Vadim à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vadim à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_033_4": {
+    "dataId": "LW_PA_CH_033_4",
+    "names": {
+      "en": "Noble Thief of Rubeus",
+      "fr": "Le Voleur gentleman"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Vadim on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vadim à 10 000 quêtes"
     }
   },
   "LW_PA_CH_034_1": {
@@ -1712,7 +2086,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken \"Murmur\" on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer « Murmure » à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Murmure » à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_034_4": {
+    "dataId": "LW_PA_CH_034_4",
+    "names": {
+      "en": "Ravager in White",
+      "fr": "La Destructrice immaculée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken \"Murmur\" on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Murmure » à 10 000 quêtes"
     }
   },
   "LW_PA_CH_035_1": {
@@ -1745,7 +2130,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Phoebe on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Phœbe à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Phœbe à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_035_4": {
+    "dataId": "LW_PA_CH_035_4",
+    "names": {
+      "en": "Sorrowful Maiden",
+      "fr": "La Jouvencelle triste"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Phoebe on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Phœbe à 10 000 quêtes"
     }
   },
   "LW_PA_CH_036_1": {
@@ -1778,7 +2174,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Learte on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Learte à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Learte à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_036_4": {
+    "dataId": "LW_PA_CH_036_4",
+    "names": {
+      "en": "Archer Full of Dreams",
+      "fr": "L'Archère ambitieuse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Learte on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Learte à 10 000 quêtes"
     }
   },
   "LW_PA_CH_037_1": {
@@ -1811,7 +2218,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Miche on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Michaé à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Michaé à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_037_4": {
+    "dataId": "LW_PA_CH_037_4",
+    "names": {
+      "en": "Restoration Leader",
+      "fr": "Le Chef du renouveau"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Miche on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Michaé à 10 000 quêtes"
     }
   },
   "LW_PA_CH_038_1": {
@@ -1844,7 +2262,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Mia on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Mia à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mia à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_038_4": {
+    "dataId": "LW_PA_CH_038_4",
+    "names": {
+      "en": "Unsullied Blade",
+      "fr": "La Lame pure"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mia on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mia à 10 000 quêtes"
     }
   },
   "LW_PA_CH_039_1": {
@@ -1877,7 +2306,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Zazan on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Zazan à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Zazan à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_039_4": {
+    "dataId": "LW_PA_CH_039_4",
+    "names": {
+      "en": "Immortal Cutthroat",
+      "fr": "L'Égorgeur pieux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Zazan on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Zazan à 10 000 quêtes"
     }
   },
   "LW_PA_CH_040_1": {
@@ -1910,7 +2350,106 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Gilgamesh on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Gilgamesh à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gilgamesh à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_040_4": {
+    "dataId": "LW_PA_CH_040_4",
+    "names": {
+      "en": "Winged One",
+      "fr": "Ailes d'acier"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Gilgamesh on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gilgamesh à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_041_1": {
+    "dataId": "LW_PA_CH_041_1",
+    "names": {
+      "en": "Y'shtola Fan",
+      "fr": "Admirateur de Y'shtola"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Y'shtola on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Y'shtola à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_041_2": {
+    "dataId": "LW_PA_CH_041_2",
+    "names": {
+      "en": "Y'shtola Enthusiast",
+      "fr": "Adepte de Y'shtola"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Y'shtola on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Y'shtola à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_041_3": {
+    "dataId": "LW_PA_CH_041_3",
+    "names": {
+      "en": "Y'shtola Devotee",
+      "fr": "Fanatique de Y'shtola"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Y'shtola on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Y'shtola à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_041_4": {
+    "dataId": "LW_PA_CH_041_4",
+    "names": {
+      "en": "Night's Blessed Mage",
+      "fr": "La Mage de la nuit"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Y'shtola on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Y'shtola à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_042_1": {
+    "dataId": "LW_PA_CH_042_1",
+    "names": {
+      "en": "Thancred Fan",
+      "fr": "Admirateur de Thancred"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Thancred on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thancred à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_042_2": {
+    "dataId": "LW_PA_CH_042_2",
+    "names": {
+      "en": "Thancred Enthusiast",
+      "fr": "Adepte de Thancred"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Thancred on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thancred à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_042_3": {
+    "dataId": "LW_PA_CH_042_3",
+    "names": {
+      "en": "Thancred Devotee",
+      "fr": "Fanatique de Thancred"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Thancred on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thancred à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_042_4": {
+    "dataId": "LW_PA_CH_042_4",
+    "names": {
+      "en": "Oracle's Blade",
+      "fr": "Protecteur de la prêtresse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Thancred on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thancred à 10 000 quêtes"
     }
   },
   "LW_PA_CH_043_1": {
@@ -1943,7 +2482,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Frederika on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Frederika à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Frederika à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_043_4": {
+    "dataId": "LW_PA_CH_043_4",
+    "names": {
+      "en": "Lovestruck Forest Gunner",
+      "fr": "L'Artilleuse amoureuse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Frederika on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Frederika à 10 000 quêtes"
     }
   },
   "LW_PA_CH_044_1": {
@@ -1976,7 +2526,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Shadowlynx on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Shadowlynx à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Shadowlynx à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_044_4": {
+    "dataId": "LW_PA_CH_044_4",
+    "names": {
+      "en": "Lone Shadow",
+      "fr": "L'Ombre solitaire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Shadowlynx on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Shadowlynx à 10 000 quêtes"
     }
   },
   "LW_PA_CH_045_1": {
@@ -2009,7 +2570,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Yerma on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Yelma à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yelma à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_045_4": {
+    "dataId": "LW_PA_CH_045_4",
+    "names": {
+      "en": "Scarlet Tornado",
+      "fr": "La Tornade écarlate"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yerma on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yelma à 10 000 quêtes"
     }
   },
   "LW_PA_CH_046_1": {
@@ -2042,7 +2614,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ramada (Winter) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada (Hiver) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada (Hiver) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_046_4": {
+    "dataId": "LW_PA_CH_046_4",
+    "names": {
+      "en": "Holy Night's Whisperer",
+      "fr": "Chuchoteuse des nuits hivernales"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramada (Winter) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramada (Hiver) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_047_1": {
@@ -2075,7 +2658,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Nasha on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Nasha à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Nasha à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_047_4": {
+    "dataId": "LW_PA_CH_047_4",
+    "names": {
+      "en": "Lost Holy Knight",
+      "fr": "La Paladine errante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Nasha on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Nasha à 10 000 quêtes"
     }
   },
   "LW_PA_CH_048_1": {
@@ -2108,7 +2702,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Machérie (Winter) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie (Hiver) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie (Hiver) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_048_4": {
+    "dataId": "LW_PA_CH_048_4",
+    "names": {
+      "en": "Envoy of Love",
+      "fr": "Ambassadrice de l'Amour"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Machérie (Winter) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Machalie (Hiver) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_049_1": {
@@ -2141,7 +2746,150 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Etre on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Éthéa à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Éthéa à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_049_4": {
+    "dataId": "LW_PA_CH_049_4",
+    "names": {
+      "en": "Sunshine Monk",
+      "fr": "La Moine rayonnante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Etre on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Éthéa à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_050_1": {
+    "dataId": "LW_PA_CH_050_1",
+    "names": {
+      "en": "Ramza Fan",
+      "fr": "Admirateur de Ramza"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramza on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramza à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_050_2": {
+    "dataId": "LW_PA_CH_050_2",
+    "names": {
+      "en": "Ramza Enthusiast",
+      "fr": "Adepte de Ramza"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramza on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramza à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_050_3": {
+    "dataId": "LW_PA_CH_050_3",
+    "names": {
+      "en": "Ramza Devotee",
+      "fr": "Fanatique de Ramza"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramza on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramza à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_050_4": {
+    "dataId": "LW_PA_CH_050_4",
+    "names": {
+      "en": "House Beoulve Thirdborn",
+      "fr": "Le jeune seigneur de la Maison Béoulve"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ramza on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ramza à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_051_1": {
+    "dataId": "LW_PA_CH_051_1",
+    "names": {
+      "en": "Gaffgarion Fan",
+      "fr": "Admirateur de Gaffgarion"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Gaffgarion on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gaffgarion à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_051_2": {
+    "dataId": "LW_PA_CH_051_2",
+    "names": {
+      "en": "Gaffgarion Enthusiast",
+      "fr": "Adepte de Gaffgarion"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Gaffgarion on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gaffgarion à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_051_3": {
+    "dataId": "LW_PA_CH_051_3",
+    "names": {
+      "en": "Gaffgarion Devotee",
+      "fr": "Fanatique de Gaffgarion"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Gaffgarion on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gaffgarion à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_051_4": {
+    "dataId": "LW_PA_CH_051_4",
+    "names": {
+      "en": "Able Mercenary",
+      "fr": "Le brillant mercenaire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Gaffgarion on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Gaffgarion à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_052_1": {
+    "dataId": "LW_PA_CH_052_1",
+    "names": {
+      "en": "Orlandeau Fan",
+      "fr": "Admirateur d'Orlandeau"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Orlandeau on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Orlandeau à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_052_2": {
+    "dataId": "LW_PA_CH_052_2",
+    "names": {
+      "en": "Orlandeau Enthusiast",
+      "fr": "Adepte d'Orlandeau"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Orlandeau on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Orlandeau à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_052_3": {
+    "dataId": "LW_PA_CH_052_3",
+    "names": {
+      "en": "Orlandeau Devotee",
+      "fr": "Fanatique d'Orlandeau"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Orlandeau on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Orlandeau à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_052_4": {
+    "dataId": "LW_PA_CH_052_4",
+    "names": {
+      "en": "Thunder God Cid",
+      "fr": "Cid le fulgurant"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Orlandeau on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Orlandeau à 10 000 quêtes"
     }
   },
   "LW_PA_CH_053_1": {
@@ -2174,7 +2922,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken \"Whisper\" on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer « Chuchote » à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Chuchote » à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_053_4": {
+    "dataId": "LW_PA_CH_053_4",
+    "names": {
+      "en": "Judge in White",
+      "fr": "La Juge immaculée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken \"Whisper\" on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer « Chuchote » à 10 000 quêtes"
     }
   },
   "LW_PA_CH_054_1": {
@@ -2207,7 +2966,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Kitone on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_054_4": {
+    "dataId": "LW_PA_CH_054_4",
+    "names": {
+      "en": "Night-Blooming Flower",
+      "fr": "La Fleur nocturne"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kitone on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kitone à 10 000 quêtes"
     }
   },
   "LW_PA_CH_055_1": {
@@ -2240,7 +3010,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Miranda on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Miranda à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Miranda à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_055_4": {
+    "dataId": "LW_PA_CH_055_4",
+    "names": {
+      "en": "Crimson Whirlwind",
+      "fr": "La Tornade pourpre"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Miranda on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Miranda à 10 000 quêtes"
     }
   },
   "LW_PA_CH_056_1": {
@@ -2273,7 +3054,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Dorando on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Dorando à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Dorando à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_056_4": {
+    "dataId": "LW_PA_CH_056_4",
+    "names": {
+      "en": "Rampaging Warrior",
+      "fr": "Le Guerrier infatigable"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Dorando on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Dorando à 10 000 quêtes"
     }
   },
   "LW_PA_CH_057_1": {
@@ -2306,7 +3098,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Lu'Cia on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lu'Cia à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lu'Cia à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_057_4": {
+    "dataId": "LW_PA_CH_057_4",
+    "names": {
+      "en": "Cruel Trigger",
+      "fr": "La Gâchette impitoyable"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Lu'Cia on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lu'Cia à 10 000 quêtes"
     }
   },
   "LW_PA_CH_058_1": {
@@ -2339,7 +3142,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Adelard on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Adelard à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Adelard à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_058_4": {
+    "dataId": "LW_PA_CH_058_4",
+    "names": {
+      "en": "Vermilion Devil",
+      "fr": "Le Diable rouge"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Adelard on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Adelard à 10 000 quêtes"
     }
   },
   "LW_PA_CH_059_1": {
@@ -2372,7 +3186,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Viktora on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_059_4": {
+    "dataId": "LW_PA_CH_059_4",
+    "names": {
+      "en": "Elegant Dragoon",
+      "fr": "La Dragonnière gracieuse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Viktora on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora à 10 000 quêtes"
     }
   },
   "LW_PA_CH_060_1": {
@@ -2405,7 +3230,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Salire on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Saliah à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Saliah à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_060_4": {
+    "dataId": "LW_PA_CH_060_4",
+    "names": {
+      "en": "Naive Black Mage",
+      "fr": "La Mage noire ingénue"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Salire on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Saliah à 10 000 quêtes"
     }
   },
   "LW_PA_CH_061_1": {
@@ -2438,7 +3274,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Vinera Fennes on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera Fennes à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera Fennes à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_061_4": {
+    "dataId": "LW_PA_CH_061_4",
+    "names": {
+      "en": "Fallen Moon",
+      "fr": "Lune déchue"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Vinera Fennes on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera Fennes à 10 000 quêtes"
     }
   },
   "LW_PA_CH_062_1": {
@@ -2471,7 +3318,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Dario Hourne on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Dario Hourne à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Dario Hourne à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_062_4": {
+    "dataId": "LW_PA_CH_062_4",
+    "names": {
+      "en": "Disquieted Scholar",
+      "fr": "Le Savant tracassé"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Dario Hourne on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Dario Hourne à 10 000 quêtes"
     }
   },
   "LW_PA_CH_063_1": {
@@ -2504,7 +3362,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Tyrrell on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Tyrrell à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tyrrell à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_063_4": {
+    "dataId": "LW_PA_CH_063_4",
+    "names": {
+      "en": "Loving Little Shield",
+      "fr": "Le Petit bouclier d'amour"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tyrrell on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tyrrell à 10 000 quêtes"
     }
   },
   "LW_PA_CH_064_1": {
@@ -2537,7 +3406,62 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Rain on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Rain à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rain à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_064_4": {
+    "dataId": "LW_PA_CH_064_4",
+    "names": {
+      "en": "Blazing Soul",
+      "fr": "L'Âme brûlante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rain on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rain à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_065_1": {
+    "dataId": "LW_PA_CH_065_1",
+    "names": {
+      "en": "Warrior of Light Fan",
+      "fr": "Admirateur du Guerrier de la lumière"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Warrior of Light on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer le Guerrier de la lumière à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_065_2": {
+    "dataId": "LW_PA_CH_065_2",
+    "names": {
+      "en": "Warrior of Light Enthusiast",
+      "fr": "Adepte du Guerrier de la lumière"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Warrior of Light on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer le Guerrier de la lumière à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_065_3": {
+    "dataId": "LW_PA_CH_065_3",
+    "names": {
+      "en": "Warrior of Light Devotee",
+      "fr": "Fanatique du Guerrier de la lumière"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Warrior of Light on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer le Guerrier de la lumière à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_065_4": {
+    "dataId": "LW_PA_CH_065_4",
+    "names": {
+      "en": "Crystal's Chosen One",
+      "fr": "Élu des cristaux"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Warrior of Light on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer le Guerrier de la lumière à 10 000 quêtes"
     }
   },
   "LW_PA_CH_066_1": {
@@ -2570,7 +3494,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Kilphe on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Kilphe à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kilphe à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_066_4": {
+    "dataId": "LW_PA_CH_066_4",
+    "names": {
+      "en": "Quiet Miscreant",
+      "fr": "La Mécréante silencieuse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kilphe on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kilphe à 10 000 quêtes"
     }
   },
   "LW_PA_CH_067_1": {
@@ -2603,7 +3538,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Seymore on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Seymore à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Seymore à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_067_4": {
+    "dataId": "LW_PA_CH_067_4",
+    "names": {
+      "en": "Bibulous Swordsman",
+      "fr": "L'Épéiste soiffard"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Seymore on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Seymore à 10 000 quêtes"
     }
   },
   "LW_PA_CH_068_1": {
@@ -2636,7 +3582,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Oldoa on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Oldoa à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Oldoa à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_068_4": {
+    "dataId": "LW_PA_CH_068_4",
+    "names": {
+      "en": "Purgatorial Demoness",
+      "fr": "La Démone du purgatoire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Oldoa on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Oldoa à 10 000 quêtes"
     }
   },
   "LW_PA_CH_069_1": {
@@ -2669,7 +3626,150 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Raviesse on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Raviesse à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Raviesse à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_069_4": {
+    "dataId": "LW_PA_CH_069_4",
+    "names": {
+      "en": "Castaway in Sacred Armor",
+      "fr": "La Naufragée en armure"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Raviesse on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Raviesse à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_070_1": {
+    "dataId": "LW_PA_CH_070_1",
+    "names": {
+      "en": "Delita Fan",
+      "fr": "Admirateur de Delita"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Delita on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Delita à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_070_2": {
+    "dataId": "LW_PA_CH_070_2",
+    "names": {
+      "en": "Delita Enthusiast",
+      "fr": "Adepte de Delita"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Delita on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Delita à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_070_3": {
+    "dataId": "LW_PA_CH_070_3",
+    "names": {
+      "en": "Delita Devotee",
+      "fr": "Fanatique de Delita"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Delita on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Delita à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_070_4": {
+    "dataId": "LW_PA_CH_070_4",
+    "names": {
+      "en": "He Who Has Naught",
+      "fr": "L'humble sire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Delita on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Delita à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_071_1": {
+    "dataId": "LW_PA_CH_071_1",
+    "names": {
+      "en": "Mustadio Fan",
+      "fr": "Admirateur de Mustadio"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mustadio on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mustadio à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_071_2": {
+    "dataId": "LW_PA_CH_071_2",
+    "names": {
+      "en": "Mustadio Enthusiast",
+      "fr": "Adepte de Mustadio"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mustadio on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mustadio à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_071_3": {
+    "dataId": "LW_PA_CH_071_3",
+    "names": {
+      "en": "Mustadio Devotee",
+      "fr": "Fanatique de Mustadio"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mustadio on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mustadio à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_071_4": {
+    "dataId": "LW_PA_CH_071_4",
+    "names": {
+      "en": "Master Machinist",
+      "fr": "Le maître ingénieur"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mustadio on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mustadio à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_072_1": {
+    "dataId": "LW_PA_CH_072_1",
+    "names": {
+      "en": "Agrias Fan",
+      "fr": "Admirateur d'Agrias"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Agrias on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Agrias à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_072_2": {
+    "dataId": "LW_PA_CH_072_2",
+    "names": {
+      "en": "Agrias Enthusiast",
+      "fr": "Adepte d'Agrias"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Agrias on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Agrias à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_072_3": {
+    "dataId": "LW_PA_CH_072_3",
+    "names": {
+      "en": "Agrias Devotee",
+      "fr": "Fanatique d'Agrias"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Agrias on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Agrias à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_072_4": {
+    "dataId": "LW_PA_CH_072_4",
+    "names": {
+      "en": "Fidelitous Knight",
+      "fr": "La Chevalière dévouée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Agrias on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Agrias à 10 000 quêtes"
     }
   },
   "LW_PA_CH_073_1": {
@@ -2702,7 +3802,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ildyra on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Ildyra à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ildyra à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_073_4": {
+    "dataId": "LW_PA_CH_073_4",
+    "names": {
+      "en": "Master of Arithmetic",
+      "fr": "La Maîtresse des calculs"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ildyra on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Ildyra à 10 000 quêtes"
     }
   },
   "LW_PA_CH_074_1": {
@@ -2735,7 +3846,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Sterne (Knight of Ruin) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne (Chevalier déchu) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne (Chevalier déchu) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_074_4": {
+    "dataId": "LW_PA_CH_074_4",
+    "names": {
+      "en": "Hate-Driven Prince",
+      "fr": "Le Prince funeste"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Sterne (Knight of Ruin) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sterne (Chevalier déchu) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_075_1": {
@@ -2768,7 +3890,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Glaciela Wezette on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Graziella Wezett à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Graziella Wezett à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_075_4": {
+    "dataId": "LW_PA_CH_075_4",
+    "names": {
+      "en": "Spearhead of Rebellion",
+      "fr": "Le Fer de lance de la révolte"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Glaciela Wezette on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Graziella Wezett à 10 000 quêtes"
     }
   },
   "LW_PA_CH_076_1": {
@@ -2801,7 +3934,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Loreila on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Loreila à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Loreila à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_076_4": {
+    "dataId": "LW_PA_CH_076_4",
+    "names": {
+      "en": "Wise Believer in Bonds",
+      "fr": "La Croyante des liens noués"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Loreila on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Loreila à 10 000 quêtes"
     }
   },
   "LW_PA_CH_077_1": {
@@ -2834,7 +3978,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Lasswell on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lasswell à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lasswell à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_077_4": {
+    "dataId": "LW_PA_CH_077_4",
+    "names": {
+      "en": "Tranquil Spirit",
+      "fr": "L'Esprit tranquille"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Lasswell on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lasswell à 10 000 quêtes"
     }
   },
   "LW_PA_CH_078_1": {
@@ -2867,7 +4022,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Skahal on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Skahal à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Skahal à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_078_4": {
+    "dataId": "LW_PA_CH_078_4",
+    "names": {
+      "en": "Harmonious Leader",
+      "fr": "Le Chef réconciliateur"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Skahal on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Skahal à 10 000 quêtes"
     }
   },
   "LW_PA_CH_079_1": {
@@ -2900,7 +4066,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Mariale on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Mariale à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mariale à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_079_4": {
+    "dataId": "LW_PA_CH_079_4",
+    "names": {
+      "en": "Immoral Spellblade",
+      "fr": "La Magilame vicieuse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Mariale on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Mariale à 10 000 quêtes"
     }
   },
   "LW_PA_CH_081_1": {
@@ -2933,7 +4110,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Howlet on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Howlet à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Howlet à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_081_4": {
+    "dataId": "LW_PA_CH_081_4",
+    "names": {
+      "en": "Noble Vagabond",
+      "fr": "Le Noble vagabond"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Howlet on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Howlet à 10 000 quêtes"
     }
   },
   "LW_PA_CH_082_1": {
@@ -2966,7 +4154,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Chel on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Chel à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Chel à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_082_4": {
+    "dataId": "LW_PA_CH_082_4",
+    "names": {
+      "en": "Verdurous Princess",
+      "fr": "La Jeune princesse"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Chel on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Chel à 10 000 quêtes"
     }
   },
   "LW_PA_CH_083_1": {
@@ -2999,7 +4198,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Luartha on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Luartha à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Luartha à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_083_4": {
+    "dataId": "LW_PA_CH_083_4",
+    "names": {
+      "en": "Roaming Dual-Gunner",
+      "fr": "L'Artilleuse ambidextre"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Luartha on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Luartha à 10 000 quêtes"
     }
   },
   "LW_PA_CH_084_1": {
@@ -3032,7 +4242,150 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Tyytas on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Thytas à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thytas à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_084_4": {
+    "dataId": "LW_PA_CH_084_4",
+    "names": {
+      "en": "Solitary Holy Knight",
+      "fr": "Le Chevalier sacré solitaire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tyytas on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Thytas à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_085_1": {
+    "dataId": "LW_PA_CH_085_1",
+    "names": {
+      "en": "Cecil Fan",
+      "fr": "Admirateur de Cécil"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Cecil on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cécil à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_085_2": {
+    "dataId": "LW_PA_CH_085_2",
+    "names": {
+      "en": "Cecil Enthusiast",
+      "fr": "Adepte de Cécil"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Cecil on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cécil à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_085_3": {
+    "dataId": "LW_PA_CH_085_3",
+    "names": {
+      "en": "Cecil Devotee",
+      "fr": "Fanatique de Cécil"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Cecil on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cécil à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_085_4": {
+    "dataId": "LW_PA_CH_085_4",
+    "names": {
+      "en": "Holy Knight Overcoming Darkness",
+      "fr": "Paladin Triomphant des ténèbres"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Cecil on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Cécil à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_086_1": {
+    "dataId": "LW_PA_CH_086_1",
+    "names": {
+      "en": "Kain Fan",
+      "fr": "Admirateur de Kaïn"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kain on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kaïn à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_086_2": {
+    "dataId": "LW_PA_CH_086_2",
+    "names": {
+      "en": "Kain Enthusiast",
+      "fr": "Adepte de Kaïn"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kain on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kaïn à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_086_3": {
+    "dataId": "LW_PA_CH_086_3",
+    "names": {
+      "en": "Kain Devotee",
+      "fr": "Fanatique de Kaïn"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kain on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kaïn à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_086_4": {
+    "dataId": "LW_PA_CH_086_4",
+    "names": {
+      "en": "Young Dragoon Commander",
+      "fr": "Le Jeune commandant des dragonniers"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Kain on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Kaïn à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_087_1": {
+    "dataId": "LW_PA_CH_087_1",
+    "names": {
+      "en": "Rosa Fan",
+      "fr": "Admirateur de Rosa"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rosa on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rosa à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_087_2": {
+    "dataId": "LW_PA_CH_087_2",
+    "names": {
+      "en": "Rosa Enthusiast",
+      "fr": "Adepte de Rosa"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rosa on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rosa à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_087_3": {
+    "dataId": "LW_PA_CH_087_3",
+    "names": {
+      "en": "Rosa Devotee",
+      "fr": "Fanatique de Rosa"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rosa on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rosa à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_087_4": {
+    "dataId": "LW_PA_CH_087_4",
+    "names": {
+      "en": "Stronghearted Beauty",
+      "fr": "La Beauté immuable"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rosa on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rosa à 10 000 quêtes"
     }
   },
   "LW_PA_CH_089_1": {
@@ -3065,7 +4418,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Niv'Lu on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Niv'Lu à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Niv'Lu à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_089_4": {
+    "dataId": "LW_PA_CH_089_4",
+    "names": {
+      "en": "Cold-Blooded Archer",
+      "fr": "L'Archère impitoyable"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Niv'Lu on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Niv'Lu à 10 000 quêtes"
     }
   },
   "LW_PA_CH_090_1": {
@@ -3098,7 +4462,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Livialle on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Liviale à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Liviale à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_090_4": {
+    "dataId": "LW_PA_CH_090_4",
+    "names": {
+      "en": "Black-Flame Executor",
+      "fr": "L'Exécutrice de la Flamme noire"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Livialle on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Liviale à 10 000 quêtes"
     }
   },
   "LW_PA_CH_091_1": {
@@ -3131,7 +4506,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Sakura on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Sakura à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sakura à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_091_4": {
+    "dataId": "LW_PA_CH_091_4",
+    "names": {
+      "en": "Refined Sage",
+      "fr": "La Sage raffinée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Sakura on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Sakura à 10 000 quêtes"
     }
   },
   "LW_PA_CH_092_1": {
@@ -3164,7 +4550,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ahlim on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Alym à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Alym à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_092_4": {
+    "dataId": "LW_PA_CH_092_4",
+    "names": {
+      "en": "Smiling Blade",
+      "fr": "Pointe souriante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ahlim on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Alym à 10 000 quêtes"
     }
   },
   "LW_PA_CH_093_1": {
@@ -3197,7 +4594,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Little Leela (Halloween) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla (Halloween) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla (Halloween) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_093_4": {
+    "dataId": "LW_PA_CH_093_4",
+    "names": {
+      "en": "Hallowleela",
+      "fr": "Lillylalloween"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Little Leela (Halloween) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Lillyla (Halloween) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_094_1": {
@@ -3230,7 +4638,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Rhaldor on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Rhaldor à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rhaldor à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_094_4": {
+    "dataId": "LW_PA_CH_094_4",
+    "names": {
+      "en": "Stubborn Fist",
+      "fr": "Poings acharnés"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rhaldor on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rhaldor à 10 000 quêtes"
     }
   },
   "LW_PA_CH_095_1": {
@@ -3263,7 +4682,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Ellshra on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Elzandra à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Elzandra à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_095_4": {
+    "dataId": "LW_PA_CH_095_4",
+    "names": {
+      "en": "Tranquil Time Medium",
+      "fr": "Médium de la quiétude"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Ellshra on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Elzandra à 10 000 quêtes"
     }
   },
   "LW_PA_CH_096_1": {
@@ -3296,7 +4726,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Rairyuu (Halloween) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu (Halloween) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu (Halloween) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_096_4": {
+    "dataId": "LW_PA_CH_096_4",
+    "names": {
+      "en": "Costumed Cutthroat",
+      "fr": "Le Psycopathe costumé"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Rairyuu (Halloween) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Rairyuu (Halloween) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_097_1": {
@@ -3329,7 +4770,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Creysse on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Creysse à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Creysse à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_097_4": {
+    "dataId": "LW_PA_CH_097_4",
+    "names": {
+      "en": "Devoted Shooter",
+      "fr": "L'Artilleuse dévouée"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Creysse on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Creysse à 10 000 quêtes"
     }
   },
   "LW_PA_CH_098_1": {
@@ -3362,7 +4814,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Garvall on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Garvall à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Garvall à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_098_4": {
+    "dataId": "LW_PA_CH_098_4",
+    "names": {
+      "en": "Marked Fighter",
+      "fr": "Le Combattant tatoué"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Garvall on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Garvall à 10 000 quêtes"
     }
   },
   "LW_PA_CH_099_1": {
@@ -3395,7 +4858,106 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Elsirelle on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Elsirelle à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Elsirelle à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_099_4": {
+    "dataId": "LW_PA_CH_099_4",
+    "names": {
+      "en": "Slumbering Sword",
+      "fr": "La Lame somnolente"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Elsirelle on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Elsirelle à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_100_1": {
+    "dataId": "LW_PA_CH_100_1",
+    "names": {
+      "en": "Tidus Fan",
+      "fr": "Admirateur de Tidus"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tidus on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tidus à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_100_2": {
+    "dataId": "LW_PA_CH_100_2",
+    "names": {
+      "en": "Tidus Enthusiast",
+      "fr": "Adepte de Tidus"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tidus on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tidus à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_100_3": {
+    "dataId": "LW_PA_CH_100_3",
+    "names": {
+      "en": "Tidus Devotee",
+      "fr": "Fanatique de Tidus"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tidus on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tidus à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_100_4": {
+    "dataId": "LW_PA_CH_100_4",
+    "names": {
+      "en": "Another Way",
+      "fr": "Le Nouvel espoir"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Tidus on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Tidus à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_101_1": {
+    "dataId": "LW_PA_CH_101_1",
+    "names": {
+      "en": "Yuna Fan",
+      "fr": "Admirateur de Yuna"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yuna on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuna à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_101_2": {
+    "dataId": "LW_PA_CH_101_2",
+    "names": {
+      "en": "Yuna Enthusiast",
+      "fr": "Adepte de Yuna"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yuna on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuna à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_101_3": {
+    "dataId": "LW_PA_CH_101_3",
+    "names": {
+      "en": "Yuna Devotee",
+      "fr": "Fanatique de Yuna"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yuna on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuna à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_101_4": {
+    "dataId": "LW_PA_CH_101_4",
+    "names": {
+      "en": "High Summoner Braska's Daughter",
+      "fr": "Fille du Grand Invokeur Braska"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Yuna on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Yuna à 10 000 quêtes"
     }
   },
   "LW_PA_CH_103_1": {
@@ -3428,7 +4990,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Vinera (Winter) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera (Hiver) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera (Hiver) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_103_4": {
+    "dataId": "LW_PA_CH_103_4",
+    "names": {
+      "en": "Wintertime Wish",
+      "fr": "Vœu d'une nuit d'hiver"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Vinera (Winter) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Vinera (Hiver) à 10 000 quêtes"
     }
   },
   "LW_PA_CH_104_1": {
@@ -3461,7 +5034,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Viktora (Winter) on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora (Hiver) à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora (Hiver) à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_104_4": {
+    "dataId": "LW_PA_CH_104_4",
+    "names": {
+      "en": "Wintertime Zephyr",
+      "fr": "Une brise hivernale"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Viktora (Winter) on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Viktora (Hiver) à 10 000 quêtes"
     }
   },
   "LW_GL_PA_CH_FRVA_1": {
@@ -3494,7 +5078,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Fryevia on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 3 000 quêtes"
+    }
+  },
+  "LW_GL_PA_CH_FRVA_4": {
+    "dataId": "LW_GL_PA_CH_FRVA_4",
+    "names": {
+      "en": "Elegant Spellblade",
+      "fr": "La Magilame élégante"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Fryevia on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 10 000 quêtes"
     }
   },
   "LW_PA_CH_113_1": {
@@ -3527,7 +5122,18 @@
     },
     "howToGet": {
       "en": "Title given to players who have taken Duane on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Duane à 3 000 quêtes"
+      "fr": "Titre attribué aux joueurs qui ont fait participer Duane à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_113_4": {
+    "dataId": "LW_PA_CH_113_4",
+    "names": {
+      "en": "Dark Swordsman",
+      "fr": "L'Épéiste des ténèbres"
+    },
+    "howToGet": {
+      "en": "Title given to players who have taken Duane on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Duane à 10 000 quêtes"
     }
   }
 }
