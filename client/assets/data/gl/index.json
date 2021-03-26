@@ -6,16 +6,16 @@
         "fr": "Mont Leonis"
       },
       "stats": {
-        "HP": 2782,
-        "TP": 105,
-        "AP": 123,
-        "ATK": 215,
+        "HP": 4250,
+        "TP": 110,
+        "AP": 130,
+        "ATK": 376,
         "DEF": 23,
         "SPR": 0,
-        "MAG": 54,
-        "DEX": 164,
-        "AGI": 48,
-        "LUCK": 198,
+        "MAG": 98,
+        "DEX": 217,
+        "AGI": 52,
+        "LUCK": 226,
         "WIND_RES": -15,
         "LIGHTNING_RES": 15,
         "SLASH_RES": 10,
@@ -30,7 +30,9 @@
         "CHARM_RES": -10,
         "MOVE": 4,
         "JUMP": 2,
-        "INITIAL_AP": 22
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsmont"
     },
@@ -40,16 +42,16 @@
         "fr": "Sterne Leonis"
       },
       "stats": {
-        "HP": 1739,
-        "TP": 126,
-        "AP": 119,
-        "ATK": 385,
+        "HP": 2394,
+        "TP": 132,
+        "AP": 125,
+        "ATK": 531,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 75,
-        "DEX": 204,
+        "MAG": 99,
+        "DEX": 252,
         "AGI": 65,
-        "LUCK": 209,
+        "LUCK": 248,
         "LIGHT_RES": -25,
         "DARK_RES": 15,
         "PIERCE_RES": -10,
@@ -60,7 +62,10 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 22,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
         "CRITIC_DAMAGE": 25
       },
       "image": "lapsstrn"
@@ -71,16 +76,16 @@
         "fr": "Eldo Leonis"
       },
       "stats": {
-        "HP": 2571,
-        "TP": 126,
-        "AP": 120,
-        "ATK": 390,
+        "HP": 3512,
+        "TP": 133,
+        "AP": 126,
+        "ATK": 560,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 62,
-        "DEX": 214,
-        "AGI": 56,
-        "LUCK": 181,
+        "MAG": 82,
+        "DEX": 265,
+        "AGI": 60,
+        "LUCK": 230,
         "ICE_RES": 20,
         "WATER_RES": -10,
         "SLASH_RES": 20,
@@ -90,8 +95,10 @@
         "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 36,
-        "CRITIC_RATE": 17
+        "INITIAL_AP": 37,
+        "CRITIC_RATE": 17,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapselde"
     },
@@ -101,16 +108,16 @@
         "fr": "Rob Hourne"
       },
       "stats": {
-        "HP": 1533,
-        "TP": 126,
-        "AP": 120,
-        "ATK": 283,
+        "HP": 2612,
+        "TP": 133,
+        "AP": 126,
+        "ATK": 409,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 66,
-        "DEX": 198,
-        "AGI": 62,
-        "LUCK": 200,
+        "MAG": 87,
+        "DEX": 244,
+        "AGI": 64,
+        "LUCK": 261,
         "DARK_RES": -10,
         "SLASH_RES": 15,
         "STRIKE_RES": 25,
@@ -120,8 +127,10 @@
         "CHARM_RES": -5,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 36,
-        "CRITIC_RATE": 40,
+        "INITIAL_AP": 37,
+        "CRITIC_RATE": 47,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 5
       },
       "image": "lapsrobb"
@@ -795,16 +804,16 @@
         "fr": "Beilo"
       },
       "stats": {
-        "HP": 1912,
-        "TP": 83,
-        "AP": 79,
-        "ATK": 252,
-        "DEF": 10,
+        "HP": 3635,
+        "TP": 87,
+        "AP": 83,
+        "ATK": 445,
+        "DEF": 14,
         "SPR": 0,
-        "MAG": 41,
-        "DEX": 172,
+        "MAG": 101,
+        "DEX": 234,
         "AGI": 40,
-        "LUCK": 264,
+        "LUCK": 279,
         "WIND_RES": -20,
         "LIGHTNING_RES": 10,
         "PIERCE_RES": -20,
@@ -815,7 +824,9 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 14
+        "INITIAL_AP": 14,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsbylo"
     },
@@ -946,7 +957,7 @@
         "MOVE": 4,
         "JUMP": 1,
         "INITIAL_AP": 87,
-        "ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapsnaia"
     },
@@ -1152,24 +1163,26 @@
         "fr": "Learte"
       },
       "stats": {
-        "HP": 1069,
-        "TP": 88,
-        "AP": 77,
-        "ATK": 186,
+        "HP": 2493,
+        "TP": 92,
+        "AP": 81,
+        "ATK": 398,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 72,
-        "DEX": 226,
-        "AGI": 44,
-        "LUCK": 161,
+        "MAG": 146,
+        "DEX": 332,
+        "AGI": 50,
+        "LUCK": 193,
         "EARTH_RES": -20,
         "WATER_RES": 5,
         "MAGIC_RES": -25,
         "CHARM_RES": 15,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 15,
-        "CRITIC_RATE": 4,
+        "INITIAL_AP": 16,
+        "CRITIC_RATE": 7,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "ACCURACY": 50,
         "AQUATIC_KILLER": 50
       },
@@ -1202,7 +1215,7 @@
         "JUMP": 1,
         "INITIAL_AP": 75,
         "CRITIC_RATE": 19,
-        "ACTIVATION_TIME": -750,
+        "NON_ATTACK_ACTIVATION_TIME": -750,
         "PLANT_KILLER": 50
       },
       "image": "lapsmice"
@@ -1848,7 +1861,7 @@
         "INITIAL_AP": 21,
         "CRITIC_RATE": 14,
         "PIERCE_ATK": 10,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsvktr"
     },
@@ -2107,7 +2120,7 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 73,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsqilf"
     },
@@ -2150,16 +2163,16 @@
         "fr": "Oldoa"
       },
       "stats": {
-        "HP": 1761,
-        "TP": 130,
-        "AP": 147,
-        "ATK": 331,
+        "HP": 2398,
+        "TP": 137,
+        "AP": 156,
+        "ATK": 418,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 69,
-        "DEX": 174,
+        "MAG": 91,
+        "DEX": 218,
         "AGI": 64,
-        "LUCK": 213,
+        "LUCK": 254,
         "ICE_RES": -10,
         "EARTH_RES": 20,
         "SLASH_RES": 10,
@@ -2174,8 +2187,10 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 26,
-        "CRITIC_RATE": 25,
+        "INITIAL_AP": 28,
+        "CRITIC_RATE": 33,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "ACQUIRED_AP": 30
       },
       "image": "lapsordr"
@@ -2614,7 +2629,7 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 131,
-        "ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsscal"
     },
@@ -2683,7 +2698,7 @@
         "JUMP": 1,
         "INITIAL_AP": 107,
         "CRITIC_RATE": 9,
-        "ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapschel"
     },
@@ -3321,6 +3336,77 @@
         "ACCURACY": 10
       },
       "image": "lapselsr"
+    },
+    {
+      "names": {
+        "en": "Tidus",
+        "fr": "Tidus"
+      },
+      "stats": {
+        "HP": 3643,
+        "TP": 122,
+        "AP": 117,
+        "ATK": 539,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 228,
+        "AGI": 67,
+        "LUCK": 248,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 10,
+        "STRIKE_RES": 5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -10,
+        "SLEEP_RES": 50,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "ff10tidu"
+    },
+    {
+      "names": {
+        "en": "Yuna",
+        "fr": "Yuna"
+      },
+      "stats": {
+        "HP": 2877,
+        "TP": 250,
+        "AP": 185,
+        "ATK": 95,
+        "DEF": 0,
+        "SPR": 2,
+        "MAG": 481,
+        "DEX": 201,
+        "AGI": 64,
+        "LUCK": 183,
+        "DARK_RES": -10,
+        "SLASH_RES": -5,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": -10,
+        "MAGIC_RES": 15,
+        "SILENCE_RES": 50,
+        "TOAD_RES": 10,
+        "CHARM_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 156,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15,
+        "AOE_RES": 10
+      },
+      "image": "ff10yuna"
     }
   ]
 }

@@ -496,61 +496,133 @@ export class SkillService {
         html = this.getChance(effect, false) + ' auto-restore' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_ATK' :
-        html = this.getChance(effect) + ' poison' + this.getValue(skill, effect, true, ' damage') + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply poison by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' poison' + this.getValue(skill, effect, true, ' damage') + this.getTurns(effect);
+        }
       break;
       case 'BLIND_ATK' :
-        html = this.getChance(effect) + ' blind' + this.getValue(skill, effect, true, ' reduced accuracy') + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply blind by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' blind' + this.getValue(skill, effect, true, ' reduced accuracy') + this.getTurns(effect);
+        }
       break;
       case 'SLEEP_ATK' :
-        html = this.getChance(effect) + ' sleep' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply sleep by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' sleep' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'SILENCE_ATK' :
-        html = this.getChance(effect) + ' silence' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply silence by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' silence' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PARALYZE_ATK' :
-        html = this.getChance(effect) + ' paralyze' + this.getValue(skill, effect, true, ' chance of paralysis') + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply paralyze by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' paralyze' + this.getValue(skill, effect, true, ' chance of paralysis') + this.getTurns(effect);
+        }
       break;
       case 'CONFUSION_ATK' :
-        html = this.getChance(effect) + ' confusion' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply confusion by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' confusion' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'CHARM_ATK' :
-        html = this.getChance(effect) + ' charm' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply charm by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' charm' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'PETRIFY_ATK' :
-        html = this.getChance(effect) + ' petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply petrify by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'GRADUAL_PETRIFY_ATK' :
-        html = this.getChance(effect) + ' gradual petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply gradual petrify by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' gradual petrify' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'FROSTBITE_ATK' :
-        html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply frostbite by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'TOAD_ATK' :
-        html = this.getChance(effect) + ' toad' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply toad by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' toad' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'HASTE_ATK' :
         html = this.getChance(effect, false) + ' haste' + this.getValue(skill, effect, true, ' increased speed') + this.getTurns(effect);
       break;
       case 'SLOW_ATK' :
-        html = this.getChance(effect) + ' slow' + this.getValue(skill, effect, true, ' reduced speed') + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply slow by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' slow' + this.getValue(skill, effect, true, ' reduced speed') + this.getTurns(effect);
+        }
       break;
       case 'STOP_ATK' :
-        html = this.getChance(effect) + ' stop' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply stop by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' stop' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'STUN_ATK' :
-        html = this.getChance(effect) + ' stun' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply stun by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' stun' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'IMMOBILIZE_ATK' :
-        html = this.getChance(effect) + ' immobilize' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply immobilize by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' immobilize' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DISABLE_ATK' :
-        html = this.getChance(effect) + ' disable' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply disable by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' disable' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'BERSERK_ATK' :
-        html = this.getChance(effect) + ' berserk' + this.getValue(skill, effect) + this.getTurns(effect);
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply berserk by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' berserk' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
       break;
       case 'DOOM_ATK' :
+        if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+          html = 'Increase chance to apply doom by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
         html = this.getChance(effect) + ' doom' + this.getValue(skill, effect, true, ' turns before death', 'fixe');
+        }
       break;
       case 'REVIVE_ATK' :
         html = this.getChance(effect, false) + ' to revive' + this.getValue(skill, effect, true, ' HP regained') + this.getTurns(effect);
