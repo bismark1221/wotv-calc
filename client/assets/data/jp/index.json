@@ -631,16 +631,16 @@
         "en": "メリルーク - Meriluke"
       },
       "stats": {
-        "HP": 1980,
-        "TP": 113,
-        "AP": 104,
-        "ATK": 268,
+        "HP": 2982,
+        "TP": 118,
+        "AP": 109,
+        "ATK": 479,
         "DEF": 6,
         "SPR": 0,
-        "MAG": 66,
-        "DEX": 158,
-        "AGI": 57,
-        "LUCK": 185,
+        "MAG": 115,
+        "DEX": 239,
+        "AGI": 61,
+        "LUCK": 208,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "SLASH_RES": -5,
@@ -653,8 +653,10 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 24,
-        "CRITIC_RATE": 5,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "CRITIC_DAMAGE": 40
       },
       "image": "lapsmrlk"
@@ -830,16 +832,16 @@
         "en": "リレルリラ - Little Leela"
       },
       "stats": {
-        "HP": 1849,
-        "TP": 114,
-        "AP": 84,
-        "ATK": 72,
+        "HP": 3515,
+        "TP": 123,
+        "AP": 107,
+        "ATK": 183,
         "DEF": 6,
-        "SPR": 0,
-        "MAG": 210,
-        "DEX": 138,
-        "AGI": 42,
-        "LUCK": 176,
+        "SPR": 4,
+        "MAG": 460,
+        "DEX": 227,
+        "AGI": 47,
+        "LUCK": 220,
         "LIGHT_RES": -20,
         "SLASH_RES": -15,
         "PIERCE_RES": -20,
@@ -852,7 +854,9 @@
         "CHARM_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17,
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "LIGHT_KILLER": 25
       },
       "image": "lapsryer"
@@ -1733,16 +1737,16 @@
         "en": "キトン - Kitone"
       },
       "stats": {
-        "HP": 1975,
-        "TP": 129,
-        "AP": 122,
-        "ATK": 291,
+        "HP": 2988,
+        "TP": 135,
+        "AP": 128,
+        "ATK": 400,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 107,
-        "DEX": 202,
+        "MAG": 134,
+        "DEX": 246,
         "AGI": 69,
-        "LUCK": 211,
+        "LUCK": 267,
         "WIND_RES": -10,
         "LIGHTNING_RES": 20,
         "SLASH_RES": 10,
@@ -1754,8 +1758,10 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 4,
         "JUMP": 3,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 23,
         "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapskton"
@@ -3224,7 +3230,7 @@
     },
     {
       "names": {
-        "en": "ティーダ"
+        "en": "ティーダ - Tidus"
       },
       "stats": {
         "HP": 3643,
@@ -3259,7 +3265,7 @@
     },
     {
       "names": {
-        "en": "ユウナ"
+        "en": "ユウナ - Yuna"
       },
       "stats": {
         "HP": 2877,
@@ -3772,6 +3778,40 @@
         "MISSILE_ATK": 10
       },
       "image": "lapscwel"
+    },
+    {
+      "names": {
+        "en": "ムラガ・フェネス - Muraga Fennes"
+      },
+      "stats": {
+        "HP": 4030,
+        "TP": 119,
+        "AP": 117,
+        "ATK": 607,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 247,
+        "AGI": 62,
+        "LUCK": 231,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 0,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 0,
+        "MAGIC_RES": -10,
+        "SLOW_RES": 50,
+        "IMMOBILIZE_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsmurg"
     },
     {
       "names": {
