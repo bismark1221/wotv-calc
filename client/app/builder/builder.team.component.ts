@@ -661,6 +661,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       }
     }
 
+    console.log(this.damageSim);
+
     if (this.damageSim === null) {
       this.newDamageSim();
     }
