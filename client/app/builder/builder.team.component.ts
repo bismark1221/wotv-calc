@@ -205,10 +205,6 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         }
       }
 
-      console.log("FOOOO");
-      console.log(this.unitsForSim);
-      console.log(this.damageSim);
-
       this.getUnitsForSim();
       this.updateActiveSkillsForSim();
     }
@@ -664,8 +660,6 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         this.damageSim.unit.selectedSkill = null;
       }
     }
-
-    console.log(this.damageSim);
 
     if (this.damageSim === null) {
       this.newDamageSim();

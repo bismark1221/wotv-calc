@@ -1760,19 +1760,19 @@ export class JsonService {
             }
           });
         }
+      }
+    }
 
-        if (this[this.version].unitClassChangeCondition[job.iname]) {
-          const materialItemId = this[this.version].unitClassChangeCondition[job.iname].material_item_id;
-          const unitMaterials = this[this.version].unitsMaterials[materialItemId];
+    if (this[this.version].unitClassChangeCondition[job.iname]) {
+      const materialItemId = this[this.version].unitClassChangeCondition[job.iname].material_item_id;
+      const unitMaterials = this[this.version].unitsMaterials[materialItemId];
 
-          for (let j = 1; j <= 10; j++) {
-            if (unitMaterials.items[0]['m' + j]) {
-              if (!materials[0][unitMaterials.items[0]['m' + j].iname]) {
-                materials[0][unitMaterials.items[0]['m' + j].iname] = unitMaterials.items[0]['m' + j].num;
-              } else {
-                materials[0][unitMaterials.items[0]['m' + j].iname] += unitMaterials.items[0]['m' + j].num;
-              }
-            }
+      for (let j = 1; j <= 10; j++) {
+        if (unitMaterials.items[0]['m' + j]) {
+          if (!materials[0][unitMaterials.items[0]['m' + j].iname]) {
+            materials[0][unitMaterials.items[0]['m' + j].iname] = unitMaterials.items[0]['m' + j].num;
+          } else {
+            materials[0][unitMaterials.items[0]['m' + j].iname] += unitMaterials.items[0]['m' + j].num;
           }
         }
       }
