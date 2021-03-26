@@ -1321,7 +1321,7 @@
                 <div>{{ damageSim.result.critic }}</div>
               </div>
 
-              <div *ngFor="let condition of damageSim.result.conditions">
+              <div *ngFor="let condition of damageSim.result.conditions" class="resultConditionBlock">
                 <div>Max damage for condition : {{ condition.type }}</div>
                 <div>{{ condition.normal }}</div>
 

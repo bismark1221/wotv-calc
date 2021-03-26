@@ -613,6 +613,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   calculateDamageSim(unitPos = null) {
+    console.log(unitPos);
     if (unitPos === null || this.selectedUnitForSim === unitPos) {
       this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
     }
@@ -658,6 +659,10 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (!oldSelectedSkillFound) {
         this.damageSim.unit.selectedSkill = null;
       }
+    }
+
+    if (this.damageSim === null) {
+      this.newDamageSim();
     }
 
     if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
