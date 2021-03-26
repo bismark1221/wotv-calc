@@ -205,6 +205,10 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
         }
       }
 
+      console.log("FOOOO");
+      console.log(this.unitsForSim);
+      console.log(this.damageSim);
+
       this.getUnitsForSim();
       this.updateActiveSkillsForSim();
     }
