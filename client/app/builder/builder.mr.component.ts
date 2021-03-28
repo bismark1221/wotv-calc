@@ -24,7 +24,7 @@ export class BuilderMasterRanksComponent implements OnInit, AfterViewInit {
 
   async ngOnInit() {
     this.masterRanks = this.masterRanksService.getMasterRanks();
-    this.ranks = await this.masterRanksService.getRanks();
+    this.ranks = await this.masterRanksService.getMRs();
     this.version = this.navService.getVersion();
 
     this.navService.setTitle('Master Ranks Builder');

@@ -11,7 +11,8 @@ import { Item } from '../entities/item';
 
 @Injectable()
 export class ItemService {
-  private items: Item[];
+  private JP_items: Item[];
+  private GL_items: Item[];
 
   savedVersion;
   item;
@@ -29,7 +30,7 @@ export class ItemService {
   }
 
   async getItems() {
-    if (!this.items || this.items.length === 0 || this.savedVersion !== this.navService.getVersion()) {
+    if (this[this.navService.getVersion() + '_items'] === null || this[this.navService.getVersion() + '_items'] === undefined) {
       const items: Item[] = [];
       const rawItems = JSON.parse(JSON.stringify(await this.getRaw()));
 
@@ -39,16 +40,16 @@ export class ItemService {
         items.push(item);
       });
 
-      this.items = items;
+      this[this.navService.getVersion() + '_items'] = items;
     }
 
-    return this.items;
+    return this[this.navService.getVersion() + '_items'];
   }
 
   async getItem(id: string, formatToShow = false) {
     await this.getItems();
 
-    const item = this.items.find(itemData => itemData.dataId === id);
+    const item = this[this.navService.getVersion() + '_items'].find(itemData => itemData.dataId === id);
 
     if (item) {
       item.getName(this.translateService);
@@ -66,12 +67,12 @@ export class ItemService {
 
     let items = [];
 
-    this.items.forEach(item => {
+    this[this.navService.getVersion() + '_items'].forEach(item => {
       item.getName(this.translateService);
     });
 
     if (searchTerm) {
-      items = this.items.filter(x => x.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
+      items = this[this.navService.getVersion() + '_items'].filter(x => x.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
     }
 
     for (const item of items) {

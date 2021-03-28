@@ -9,7 +9,11 @@ import { ToolService } from './tool.service';
 
 @Injectable()
 export class JobService {
-  private jobs: Job[];
+  private JP_jobs: Job[];
+  private GL_jobs: Job[];
+
+  private JP_uniqJobs;
+  private GL_uniqJobs;
 
   private glExcluJobs = [
   ];
@@ -26,46 +30,54 @@ export class JobService {
   }
 
   async getJobs(forcedVersion = null) {
-    const jobs = [];
-    const rawJobs = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] === null
+      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] === undefined
+    ) {
+      const jobs = [];
+      const rawJobs = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
 
-    Object.keys(rawJobs).forEach(jobId => {
-      const job = new Job();
-      job.constructFromJson(rawJobs[jobId]);
-      jobs.push(job);
-    });
+      Object.keys(rawJobs).forEach(jobId => {
+        const job = new Job();
+        job.constructFromJson(rawJobs[jobId]);
+        jobs.push(job);
+      });
 
-    this.jobs = jobs;
-    return jobs;
+      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'] = jobs;
+    }
+
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'];
   }
 
   async getUniqJobs() {
-    const jobs: Job[] = [];
-    const rawJobs = JSON.parse(JSON.stringify(await this.getRaw()));
-    const uniqJobs = [];
+    if (this[this.navService.getVersion() + '_uniqJobs'] === null || this[this.navService.getVersion() + '_uniqJobs'] === undefined) {
+      const jobs: Job[] = [];
+      const rawJobs = JSON.parse(JSON.stringify(await this.getRaw()));
+      const uniqJobs = [];
 
-    Object.keys(rawJobs).forEach(jobId => {
-      const job = new Job();
-      job.constructFromJson(rawJobs[jobId]);
+      Object.keys(rawJobs).forEach(jobId => {
+        const job = new Job();
+        job.constructFromJson(rawJobs[jobId]);
 
-      const tableJob = job.dataId.split('_');
-      const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
-      job.dataId = genericDataId;
+        const tableJob = job.dataId.split('_');
+        const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
+        job.dataId = genericDataId;
 
-      if (uniqJobs.indexOf(genericDataId) === -1) {
-        jobs.push(job);
-        uniqJobs.push(genericDataId);
-      }
-    });
+        if (uniqJobs.indexOf(genericDataId) === -1) {
+          jobs.push(job);
+          uniqJobs.push(genericDataId);
+        }
+      });
 
-    this.jobs = this.toolService.sortByName(jobs);
-    return jobs;
+      this[this.navService.getVersion() + '_uniqJobs'] = this.toolService.sortByName(jobs);
+    }
+
+    return this[this.navService.getVersion() + '_uniqJobs'];
   }
 
   async getJob(id, forcedVersion = null) {
     await this.getJobs(forcedVersion);
 
-    return this.jobs.find(job => job.dataId === id);
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'].find(job => job.dataId === id);
   }
 
   getGLExclusiveJobIds() {

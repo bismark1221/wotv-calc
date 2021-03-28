@@ -16,7 +16,8 @@ import { Card } from '../entities/card';
 
 @Injectable()
 export class CardService {
-  private cards: Card[];
+  private JP_cards: Card[];
+  private GL_cards: Card[];
   card;
 
   constructor(
@@ -37,36 +38,39 @@ export class CardService {
   }
 
   async getCards() {
-    const cards: Card[] = [];
-    const rawCards = await this.getRaw();
+    if (this[this.navService.getVersion() + '_cards'] === null || this[this.navService.getVersion() + '_cards'] === undefined) {
+      const cards: Card[] = [];
+      const rawCards = await this.getRaw();
 
-    Object.keys(rawCards).forEach(cardId => {
-      const card = new Card();
-      card.constructFromJson(rawCards[cardId], this.translateService);
-      cards.push(card);
-    });
+      Object.keys(rawCards).forEach(cardId => {
+        const card = new Card();
+        card.constructFromJson(rawCards[cardId], this.translateService);
+        cards.push(card);
+      });
 
-    this.cards = cards;
-    return cards;
+      this[this.navService.getVersion() + '_cards'] = cards;
+    }
+
+    return this[this.navService.getVersion() + '_cards'];
   }
 
   async getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
     await this.getCards();
-    this.cards = this.filterCards(this.cards, filters);
+    const cards = this.filterCards(this[this.navService.getVersion() + '_cards'], filters);
 
     switch (sort) {
       case 'rarity' :
-        this.toolService.sortByRarity(this.cards, order);
+        this.toolService.sortByRarity(cards, order);
       break;
       case 'name' :
-        this.toolService.sortByName(this.cards, order);
+        this.toolService.sortByName(cards, order);
       break;
       default :
         console.log('not managed sort');
       break;
     }
 
-    return this.cards;
+    return cards;
   }
 
   filterCards(cards, filters) {
@@ -120,12 +124,12 @@ export class CardService {
   async getCard(id) {
     await this.getCards();
 
-    return this.cards.find(card => card.dataId === id);
+    return this[this.navService.getVersion() + '_cards'].find(card => card.dataId === id);
   }
 
   async getCardBySlug(slug) {
     await this.getCards();
-    this.card = this.cards.find(card => card.slug === slug);
+    this.card = this[this.navService.getVersion() + '_cards'].find(card => card.slug === slug);
 
     if (this.card) {
       this.card.statsType = this.getAvailableStats();

@@ -9,7 +9,8 @@ import { ToolService } from './tool.service';
 
 @Injectable()
 export class RaidService {
-  private raids: Raid[];
+  private JP_raids: Raid[];
+  private GL_raids: Raid[];
   private savedVersion = null;
 
   raid;
@@ -26,45 +27,48 @@ export class RaidService {
   }
 
   async getRaids() {
-    const raids: Raid[] = [];
-    const rawRaids = JSON.parse(JSON.stringify(await this.getRaw()));
+    if (this[this.navService.getVersion() + '_raids'] === null || this[this.navService.getVersion() + '_raids'] === undefined) {
+      const raids: Raid[] = [];
+      const rawRaids = JSON.parse(JSON.stringify(await this.getRaw()));
 
-    Object.keys(rawRaids).forEach(raidId => {
-      const raid = new Raid();
-      raid.constructFromJson(rawRaids[raidId], this.translateService);
-      raids.push(raid);
-    });
+      Object.keys(rawRaids).forEach(raidId => {
+        const raid = new Raid();
+        raid.constructFromJson(rawRaids[raidId], this.translateService);
+        raids.push(raid);
+      });
 
-    this.raids = raids;
-    return raids;
+      this[this.navService.getVersion() + '_raids'] = raids;
+    }
+
+    return this[this.navService.getVersion() + '_raids'];
   }
 
   async getRaid(id: string) {
     await this.getRaids();
 
-    return this.raids.find(raid => raid.dataId === id);
+    return this[this.navService.getVersion() + '_raids'].find(raid => raid.dataId === id);
   }
 
   async getRaidBySlug(slug: string) {
     await this.getRaids();
 
-    return this.raids.find(raid => raid.slug === slug);
+    return this[this.navService.getVersion() + '_raids'].find(raid => raid.slug === slug);
   }
 
   async getRaidsForListing(filters, sort, order = 'asc') {
     await this.getRaids();
-    this.raids = this.filterRaids(this.raids, filters);
+    const raids = this.filterRaids(this[this.navService.getVersion() + '_raids'], filters);
 
     switch (sort) {
       case 'name' :
-        this.toolService.sortByName(this.raids, order);
+        this.toolService.sortByName(raids, order);
       break;
       default :
         console.log('not managed sort');
       break;
     }
 
-    return this.raids;
+    return raids;
   }
 
   filterRaids(raids, filters) {

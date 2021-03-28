@@ -24,7 +24,8 @@ import { DataService } from './data.service';
 
 @Injectable()
 export class UnitService {
-  private units: Unit[];
+  private JP_units: Unit[];
+  private GL_units: Unit[];
   unit;
 
   private glExcluUnits = [
@@ -86,45 +87,50 @@ export class UnitService {
   }
 
   async getUnits(forcedVersion = null) {
-    const units: Unit[] = [];
-    const rawUnits = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] === null
+      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] === undefined
+    ) {
+      const units: Unit[] = [];
+      const rawUnits = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
 
-    Object.keys(rawUnits).forEach(unitId => {
-      const unit = new Unit();
-      unit.constructFromJson(rawUnits[unitId], this.translateService);
-      units.push(unit);
-    });
+      Object.keys(rawUnits).forEach(unitId => {
+        const unit = new Unit();
+        unit.constructFromJson(rawUnits[unitId], this.translateService);
+        units.push(unit);
+      });
 
-    this.units = units;
-    return units;
+      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] = units;
+    }
+
+    return this[this.navService.getVersion() + '_units'];
   }
 
   async getUnitsForJPBuilder() {
     await this.getUnits();
 
-    this.units = await this.filterUnits(this.units, null);
-    this.toolService.sortByRarity(this.units, 'asc');
+    const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], null);
+    this.toolService.sortByRarity(units, 'asc');
 
-    return this.units;
+    return units;
   }
 
   async getUnitsForListing(filters = null, sort = 'rarity', order = 'asc') {
     await this.getUnits();
-    this.units = await this.filterUnits(this.units, filters);
+    const units = await this.filterUnits(this[this.navService.getVersion() + '_units'], filters);
 
     switch (sort) {
       case 'rarity' :
-        this.toolService.sortByRarity(this.units, order);
+        this.toolService.sortByRarity(units, order);
       break;
       case 'name' :
-        this.toolService.sortByName(this.units, order);
+        this.toolService.sortByName(units, order);
       break;
       default :
         console.log('not managed sort');
       break;
     }
 
-    return this.units;
+    return units;
   }
 
   private async filterUnits(units, filters) {
@@ -204,13 +210,13 @@ export class UnitService {
   async getUnit(id, forcedVersion = null) {
     await this.getUnits(forcedVersion);
 
-    return this.units.find(unit => unit.dataId === id);
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'].find(unit => unit.dataId === id);
   }
 
   async getUnitBySlug(slug) {
     await this.getUnits();
 
-    return this.units.find(unit => unit.slug === slug);
+    return this[this.navService.getVersion() + '_units'].find(unit => unit.slug === slug);
   }
 
   getGLExclusiveUnitIds() {

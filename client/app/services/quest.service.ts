@@ -11,7 +11,8 @@ import { Quest } from '../entities/quest';
 
 @Injectable()
 export class QuestService {
-  private quests: Quest[];
+  private JP_quests: Quest[];
+  private GL_quests: Quest[];
   quest;
 
   constructor(
@@ -27,23 +28,26 @@ export class QuestService {
   }
 
   async getQuests() {
-    const quests: Quest[] = [];
-    const rawQuests = JSON.parse(JSON.stringify(await this.getRaw()));
+    if (this[this.navService.getVersion() + '_quests'] === null || this[this.navService.getVersion() + '_quests'] === undefined) {
+      const quests: Quest[] = [];
+      const rawQuests = JSON.parse(JSON.stringify(await this.getRaw()));
 
-    Object.keys(rawQuests).forEach(questId => {
-      const quest = new Quest();
-      quest.constructFromJson(rawQuests[questId], this.translateService);
-      quests.push(quest);
-    });
+      Object.keys(rawQuests).forEach(questId => {
+        const quest = new Quest();
+        quest.constructFromJson(rawQuests[questId], this.translateService);
+        quests.push(quest);
+      });
 
-    this.quests = quests;
-    return quests;
+      this[this.navService.getVersion() + '_quests'] = quests;
+    }
+
+    return this[this.navService.getVersion() + '_quests'];
   }
 
   async getQuest(id) {
     await this.getQuests();
 
-    return this.quests.find(quest => quest.dataId === id);
+    return this[this.navService.getVersion() + '_quests'].find(quest => quest.dataId === id);
   }
 
   async getQuestsForFarmCalc(searchedItems) {
@@ -59,7 +63,7 @@ export class QuestService {
       itemIds.push(item.dataId);
     });
 
-    for (const quest of this.quests) {
+    for (const quest of this[this.navService.getVersion() + '_quests']) {
       if (itemIds.some(itemId => Object.keys(quest.items).includes(itemId))) {
         quest.getName(this.translateService);
 

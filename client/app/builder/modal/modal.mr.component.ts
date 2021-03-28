@@ -24,7 +24,7 @@ export class ModalMasterRanksComponent implements OnInit {
       this.masterRanks = this.masterRanksService.getMasterRanks();
     }
 
-    this.ranks = await this.masterRanksService.getRanks();
+    this.ranks = await this.masterRanksService.getMRs();
   }
 
   close() {

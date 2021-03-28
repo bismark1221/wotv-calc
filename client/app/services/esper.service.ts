@@ -90,36 +90,39 @@ export class EsperService {
   }
 
   async getEspers() {
-    const espers: Esper[] = [];
-    const rawEspers = JSON.parse(JSON.stringify(await this.getRaw()));
+    if (this[this.navService.getVersion() + '_espers'] === null || this[this.navService.getVersion() + '_espers'] === undefined) {
+      const espers: Esper[] = [];
+      const rawEspers = JSON.parse(JSON.stringify(await this.getRaw()));
 
-    Object.keys(rawEspers).forEach(esperId => {
-      const esper = new Esper();
-      esper.constructFromJson(rawEspers[esperId], this.translateService);
-      espers.push(esper);
-    });
+      Object.keys(rawEspers).forEach(esperId => {
+        const esper = new Esper();
+        esper.constructFromJson(rawEspers[esperId], this.translateService);
+        espers.push(esper);
+      });
 
-    this.espers = espers;
-    return espers;
+      this[this.navService.getVersion() + '_espers'] = espers;
+    }
+
+    return this[this.navService.getVersion() + '_espers'];
   }
 
   async getEspersForListing(filters = null, sort = 'rarity', order = 'asc') {
     await this.getEspers();
-    this.espers = this.filterEspers(this.espers, filters);
+    const espers = this.filterEspers(this[this.navService.getVersion() + '_espers'], filters);
 
     switch (sort) {
       case 'rarity' :
-        this.toolService.sortByRarity(this.espers, order);
+        this.toolService.sortByRarity(espers, order);
       break;
       case 'name' :
-        this.toolService.sortByName(this.espers, order);
+        this.toolService.sortByName(espers, order);
       break;
       default :
         console.log('not managed sort');
       break;
     }
 
-    return this.espers;
+    return espers;
   }
 
   filterEspers(espers, filters) {
@@ -170,13 +173,13 @@ export class EsperService {
   async getEsper(id) {
     await this.getEspers();
 
-    return this.espers.find(esper => esper.dataId === id);
+    return this[this.navService.getVersion() + '_espers'].find(esper => esper.dataId === id);
   }
 
   async getEsperBySlug(slug) {
     await this.getEspers();
 
-    return this.espers.find(esper => esper.slug === slug);
+    return this[this.navService.getVersion() + '_espers'].find(esper => esper.slug === slug);
   }
 
   getLocalStorage() {

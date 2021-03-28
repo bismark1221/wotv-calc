@@ -678,11 +678,13 @@ export class SimulatorService {
     let ignoreDefensive = 0;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
 
-    Object.keys(dataSimulator.realStats.unit).forEach(statType => {
-      if (statType === 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION') {
-        ignoreDefensive = dataSimulator.realStats.unit[statType];
-      }
-    });
+    if (dataSimulator.realStats.target.damageTypeRes > 0) {
+      Object.keys(dataSimulator.realStats.unit).forEach(statType => {
+        if (statType === 'RES_' + damageType.toUpperCase() + '_ATK_PENETRATION') {
+          ignoreDefensive = dataSimulator.realStats.unit[statType];
+        }
+      });
+    }
 
     let aoeOrSingleRes = 0;
     if (dataSimulator.unit.selectedSkill.aoe) {

@@ -214,7 +214,8 @@ export class EquipmentService {
 
   private savedEquipments = {};
 
-  private equipments: Equipment[];
+  private JP_equipments: Equipment[];
+  private GL_equipments: Equipment[];
   equipment;
 
   constructor(
@@ -235,41 +236,44 @@ export class EquipmentService {
   }
 
   async getEquipments() {
-    const equipments: Equipment[] = [];
-    const rawEquipments = JSON.parse(JSON.stringify(await this.getRaw()));
+    if (this[this.navService.getVersion() + '_equipments'] === null || this[this.navService.getVersion() + '_equipments'] === undefined) {
+      const equipments: Equipment[] = [];
+      const rawEquipments = JSON.parse(JSON.stringify(await this.getRaw()));
 
-    Object.keys(rawEquipments).forEach(equipmentId => {
-      const equipment = new Equipment();
-      equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
+      Object.keys(rawEquipments).forEach(equipmentId => {
+        const equipment = new Equipment();
+        equipment.constructFromJson(rawEquipments[equipmentId], this.translateService);
 
-      if (this.equipmentsAcquisition[equipment.dataId]) {
-        equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
-      }
+        if (this.equipmentsAcquisition[equipment.dataId]) {
+          equipment.acquisition.type = this.acquisitionTypesTranslation[this.equipmentsAcquisition[equipment.dataId]];
+        }
 
-      equipments.push(equipment);
-    });
+        equipments.push(equipment);
+      });
 
-    this.equipments = equipments;
-    return equipments;
+      this[this.navService.getVersion() + '_equipments'] = equipments;
+    }
+
+    return this[this.navService.getVersion() + '_equipments'];
   }
 
   async getEquipmentsForListing(filters = null, sort = 'rarity', order = 'asc') {
     await this.getEquipments();
-    this.equipments = this.filterEquipments(this.equipments, filters);
+    const equipments = this.filterEquipments(this[this.navService.getVersion() + '_equipments'], filters);
 
     switch (sort) {
       case 'rarity' :
-        this.toolService.sortByRarity(this.equipments, order);
+        this.toolService.sortByRarity(equipments, order);
       break;
       case 'name' :
-        this.toolService.sortByName(this.equipments, order);
+        this.toolService.sortByName(equipments, order);
       break;
       default :
         console.log('not managed sort');
       break;
     }
 
-    return this.equipments;
+    return equipments;
   }
 
   filterEquipments(equipments, filters) {
@@ -295,13 +299,13 @@ export class EquipmentService {
   async getEquipmentBySlug(slug: string) {
     await this.getEquipments();
 
-    return this.equipments.find(equipment => equipment.slug === slug);
+    return this[this.navService.getVersion() + '_equipments'].find(equipment => equipment.slug === slug);
   }
 
   async getEquipment(id: string) {
     await this.getEquipments();
 
-    return this.equipments.find(equipment => equipment.dataId === id);
+    return this[this.navService.getVersion() + '_equipments'].find(equipment => equipment.dataId === id);
   }
 
   isWeapon(type) {
@@ -600,7 +604,7 @@ export class EquipmentService {
     await this.getEquipments();
 
     const types = ['Unknown', 'tmr'];
-    this.equipments.forEach(equipment => {
+    this[this.navService.getVersion() + '_equipments'].forEach(equipment => {
       if (equipment.acquisition.type !== 'Unknown' && equipment.acquisition.type !== 'tmr') {
         const acquisition = equipment.acquisition.type[this.translateService.getDefaultLang()];
 

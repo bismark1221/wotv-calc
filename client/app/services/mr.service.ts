@@ -21,7 +21,8 @@ export class MasterRanksService {
     storeId: null
   };
 
-  private dataMasterRanks;
+  private JP_dataMasterRanks;
+  private GL_dataMasterRanks;
 
 
   constructor(
@@ -37,10 +38,13 @@ export class MasterRanksService {
   }
 
   async getMRs() {
-    const rawMRs = JSON.parse(JSON.stringify(await this.getRaw()));
+    if (this[this.navService.getVersion() + '_dataMasterRanks'] === null || this[this.navService.getVersion() + '_dataMasterRanks'] === undefined) {
+      const rawMRs = JSON.parse(JSON.stringify(await this.getRaw()));
 
-    this.dataMasterRanks = rawMRs;
-    return this.dataMasterRanks;
+      this[this.navService.getVersion() + '_dataMasterRanks'] = rawMRs;
+    }
+
+    return this[this.navService.getVersion() + '_dataMasterRanks'];
   }
 
   getLocalStorage() {
@@ -151,11 +155,5 @@ export class MasterRanksService {
         return data.id;
       });
     }
-  }
-
-  async getRanks() {
-    await this.getMRs();
-
-    return this.dataMasterRanks;
   }
 }
