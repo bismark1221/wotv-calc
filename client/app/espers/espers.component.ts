@@ -17,12 +17,14 @@ export class EspersComponent implements OnInit {
   order = 'asc';
   filters = {
     rarity: [],
+    limited: [],
     element: [],
     threeStars: false
   };
   isCollapsedRarity = false;
   isCollapsedElement = false;
   isCollapsedUpgrade = false;
+  isCollapsedLimited = false;
 
   constructor(
     private esperService: EsperService,

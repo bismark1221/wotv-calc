@@ -44,6 +44,18 @@
           <ui-switch class="switchMainJob" (click)="toggleThreeStars()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.threeStars === true"></ui-switch>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="isCollapsedLimited = !isCollapsedLimited" [attr.aria-expanded]="!isCollapsedLimited">
+        Limited
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedLimited" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedLimited" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedLimited">
+        <div><input type="checkbox" id="limitedYes" (change)="filterList('limited', true)"/><label for="limitedYes">Yes</label></div>
+        <div><input type="checkbox" id="limitedNo" (change)="filterList('limited', false)"/><label for="limitedNo">No</label></div>
+      </div>
     </div>
   </div>
 

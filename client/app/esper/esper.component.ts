@@ -66,6 +66,7 @@ export class EsperComponent implements OnInit {
     if (this.esper) {
       const lang = this.translateService.currentLang;
       this.esper.name = this.nameService.getName(this.esper);
+      this.esper.limited = this.esperService.isLimited(this.esper.dataId);
 
       this.esper.skills.forEach(skill => {
         skill.name = this.nameService.getName(skill);

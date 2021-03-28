@@ -32,7 +32,35 @@ export class UnitService {
     'UN_LW_P_FRVA'
   ];
 
-  private limitedUnits = [
+  private JP_limitedUnits = [
+    'UN_LW_P_FRVA',
+    'UN_FF14_P_YSTL',
+    'UN_FF14_P_TNCR',
+    'UN_FF1_P_WROL',
+    'UN_FFT_P_RAMZ',
+    'UN_FFT_P_GFGR',
+    'UN_FFT_P_ORND',
+    'UN_FFT_P_AGRA',
+    'UN_FFT_P_DELT',
+    'UN_FFT_P_MSTD',
+    'UN_FF4_P_CECL',
+    'UN_FF4_P_ROSA',
+    'UN_FF4_P_KAIN',
+    'UN_FF10_P_TIDU',
+    'UN_FF10_P_YUNA',
+    'UN_FF10_P_ARON',
+    'UN_LW_P_RYER_01',
+    'UN_LW_P_RIRY_01',
+    'UN_LW_P_VNLA_01',
+    'UN_LW_P_RAMD_01',
+    'UN_LW_P_MACR_01',
+    'UN_LW_P_VKTR_01',
+    'UN_NIER_P_N2TB',
+    'UN_NIER_P_N9TS',
+    'UN_LW_P_THLA_01'
+  ];
+
+  private GL_limitedUnits = [
     'UN_LW_P_FRVA',
     'UN_LW_P_DEAN',
     'UN_FF14_P_YSTL',
@@ -224,7 +252,7 @@ export class UnitService {
   }
 
   isLimited(id) {
-    return this.limitedUnits.indexOf(id) !== -1;
+    return this[this.navService.getVersion() + '_limitedUnits'].indexOf(id) !== -1;
   }
 
   getLocalStorage() {

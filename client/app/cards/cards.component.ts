@@ -17,10 +17,12 @@ export class CardsComponent implements OnInit {
   order = 'asc';
   filters = {
     rarity: [],
+    limited: [],
     element: []
   };
   isCollapsedRarity = false;
   isCollapsedElement = false;
+  isCollapsedLimited = false;
   version = 'GL';
 
   constructor(

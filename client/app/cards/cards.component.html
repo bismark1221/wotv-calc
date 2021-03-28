@@ -15,6 +15,18 @@
         <div><input type="checkbox" id="rarityN" (change)="filterList('rarity', 'N')"/><label for="rarityN">N</label></div>
       </div>
 
+      <hr />
+
+      <div class="boldText" (click)="isCollapsedLimited = !isCollapsedLimited" [attr.aria-expanded]="!isCollapsedLimited">
+        Limited
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedLimited" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedLimited" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedLimited">
+        <div><input type="checkbox" id="limitedYes" (change)="filterList('limited', true)"/><label for="limitedYes">Yes</label></div>
+        <div><input type="checkbox" id="limitedNo" (change)="filterList('limited', false)"/><label for="limitedNo">No</label></div>
+      </div>
+
       <hr/>
 
       <div class="boldText" (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">

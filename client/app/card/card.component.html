@@ -3,21 +3,23 @@
     <table class="cardTable">
       <tbody>
         <tr>
-          <th colspan="2">{{ card.name }}</th>
+          <th colspan="3">{{ card.name }}</th>
         </tr>
         <tr>
-          <td colspan="2"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
+          <td colspan="3"><img class="cardImg" src="{{'assets/cards/' + card.image + '_full.png'}}" /></td>
         </tr>
         <tr>
           <th class="sub">Rarity</th>
           <th class="sub">Cost</th>
+          <th class="sub">Limited</th>
         </tr>
         <tr>
           <td><img class="rarityImg" src="{{'assets/rarity/' + card.rarity + '.png'}}" /></td>
           <td>{{ card.cost }}</td>
+          <td>{{ card.limited ? "Yes" : "No" }}</td>
         </tr>
         <tr>
-          <td colspan="2">
+          <td colspan="3">
             <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
           </td>
         </tr>

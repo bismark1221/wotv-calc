@@ -59,6 +59,7 @@ export class CardComponent implements OnInit {
       const buffTypes = ['unitBuffs', 'partyBuffs'];
 
       this.card.name = this.nameService.getName(this.card);
+      this.card.limited = this.cardService.isLimited(this.card.dataId);
 
       skills.forEach(skillType => {
         buffTypes.forEach(buffType => {

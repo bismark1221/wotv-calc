@@ -20,6 +20,60 @@ export class CardService {
   private GL_cards: Card[];
   card;
 
+  private JP_limitedCards = [
+    'VC_FF01_DMAC',
+    'VC_FF4_DMNW',
+    'VC_FF14_MV1',
+    'VC_FF14_MV2',
+    'VC_FF14_MV3',
+    'VC_FFT_MV1',
+    'VC_FFT_MV2',
+    'VC_FFT_MV3',
+    'VC_FFCC_MV1',
+    'VC_FFCC_MV2',
+    'VC_NIER_MV1',
+    'VC_FF10_MV1',
+    'VC_FF10_MV2',
+    'VC_LW_HOLYNIGHT',
+    'VC_LW_XMAS',
+    'VC_LW_HALL',
+    'VC_LW_VALE1',
+    'VC_LW_VALE2',
+    'VC_LW_ART',
+    'VC_MBFF_MV1',
+    'VC_LW_NEWYEAR',
+    'VC_LW_OOOO',
+    'VC_LW_WHITEDAY1',
+    'VC_LW_APPLE',
+    'VC_LW_MOGL',
+    'VC_LW_KRKN'
+  ];
+
+  private GL_limitedCards = [
+    'VC_FF01_DMAC',
+    'VC_FF4_DMNW',
+    'VC_FF14_MV1',
+    'VC_FF14_MV2',
+    'VC_FF14_MV3',
+    'VC_FFT_MV1',
+    'VC_FFT_MV2',
+    'VC_FFT_MV3',
+    'VC_FFCC_MV1',
+    'VC_FFCC_MV2',
+    'VC_NIER_MV1',
+    'VC_FF10_MV1',
+    'VC_FF10_MV2',
+    'VC_LW_XMAS',
+    'VC_LW_HALL',
+    'VC_LW_DEAN',
+    'VC_LW_ART',
+    'VC_MBFF_MV1',
+    'VC_LW_NEWYEAR',
+    'VC_LW_OOOO',
+    'VC_LW_MOGL',
+    'VC_LW_KRKN'
+  ];
+
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -78,7 +132,9 @@ export class CardService {
       const filteredCards = [];
 
       cards.forEach(card => {
-        if (filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1) {
+        if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
+          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
+        ) {
           let needToAddCard = false;
           if (!filters.element || filters.element.length === 0) {
             needToAddCard = true;
@@ -344,5 +400,9 @@ export class CardService {
 
   getAvailableStats() {
     return this.card.getAvailableStats();
+  }
+
+  isLimited(id) {
+    return this[this.navService.getVersion() + '_limitedCards'].indexOf(id) !== -1;
   }
 }

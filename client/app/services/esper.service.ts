@@ -72,6 +72,22 @@ export class EsperService {
     ]
   };
 
+  private JP_limitedEspers = [
+    'UN_FF01_S_WRMC',
+    'UN_FF4_S_DMNW',
+    'UN_LW_S_MOGL',
+    'UN_FFT_S_CHCB_01',
+    'UN_LW_S_KRKN'
+  ];
+
+  private GL_limitedEspers = [
+    'UN_FF01_S_WRMC',
+    'UN_FF4_S_DMNW',
+    'UN_LW_S_MOGL',
+    'UN_FFT_S_CHCB_01',
+    'UN_LW_S_KRKN'
+  ];
+
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -132,6 +148,7 @@ export class EsperService {
       espers.forEach(esper => {
         if ((filters.element.length === 0 || filters.element.indexOf(esper.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(esper.rarity) !== -1)
+          && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(esper.dataId)) !== -1)
           && (!filters.threeStars || esper.SPs.length === 3)
         ) {
           filteredEspers.push(esper);
@@ -429,5 +446,9 @@ export class EsperService {
     }
 
     this.esper.maxEsper();
+  }
+
+  isLimited(id) {
+    return this[this.navService.getVersion() + '_limitedEspers'].indexOf(id) !== -1;
   }
 }
