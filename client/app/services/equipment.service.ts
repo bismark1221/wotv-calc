@@ -88,7 +88,8 @@ export class EquipmentService {
 
     'AF_LW_SWO_016': 'FREE',
 
-    'AF_LW_ACC_001': 'SUMMON_EVENT',
+    'AF_LW_ACC_001': 'BOX_EVENT',
+    'AF_LW_RNG_006': 'BOX_EVENT',
 
     'AF_SWO_FF14_TNCT': 'COLLABORATION',
     'AF_FFT_SWO_001': 'COLLABORATION',
@@ -189,9 +190,9 @@ export class EquipmentService {
       'en': 'Event',
       'fr': 'Évènement'
     },
-    'SUMMON_EVENT': {
-      'en': 'Summon Event',
-      'fr': 'Évènement d\'Invocation'
+    'BOX_EVENT': {
+      'en': 'Box event',
+      'fr': 'Évènement de box'
     },
     'COLLABORATION' : {
       'en': 'Collaboration event',

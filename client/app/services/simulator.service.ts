@@ -104,7 +104,7 @@ export class SimulatorService {
       'elementKiller',
       'elementAtk',
       'damageType',
-      'criticDamage',
+      'critic_damage',
       'defense_penetration',
       'spirit_penetration',
       'typeResPene',
@@ -212,7 +212,7 @@ export class SimulatorService {
           dataSimulator.skillEffects.unit[effectType.toLowerCase()].overwriteBuff = true;
           this.updateRealStat(dataSimulator, 'unit', effectType, value);
         }
-      } else if (effectType === 'DEFENSE_PENETRATION' || effectType === 'SPIRIT_PENETRATION' ) {
+      } else if (effectType === 'DEFENSE_PENETRATION' || effectType === 'SPIRIT_PENETRATION' || effectType === 'CRITIC_DAMAGE') {
         const value = this.getEffectValue(dataSimulator.unit.selectedSkill, effect);
 
         if (value > dataSimulator.unit.buffs[effectType.toLowerCase()]) {
@@ -510,7 +510,7 @@ export class SimulatorService {
           || buffType === 'agi'
         ) {
           this.updateRealStat(dataSimulator, 'unit', buffType.toUpperCase(), this.calculateBuffValue(unit, buffType.toUpperCase(), dataSimulator.unit.buffs[buffType]));
-        } else if (buffType === 'defense_penetration' || buffType === 'spirit_penetration') {
+        } else if (buffType === 'defense_penetration' || buffType === 'spirit_penetration' || buffType === 'critic_damage') {
           this.updateRealStat(dataSimulator, 'unit', buffType.toUpperCase(), dataSimulator.unit.buffs[buffType]);
         } else if (buffType === 'damageType') {
           this.updateRealStat(dataSimulator, 'unit', damageType.toUpperCase() + '_ATK', dataSimulator.unit.buffs[buffType]);
@@ -663,11 +663,13 @@ export class SimulatorService {
     const defensiveValue = dataSimulator.realStats.target[type];
     let ignoreDefensive = 0;
 
-    Object.keys(dataSimulator.realStats.unit).forEach(statType => {
-      if (statType === (type === 'def' ? 'DEFENSE_PENETRATION' : 'SPIRIT_PENETRATION')) {
-        ignoreDefensive = dataSimulator.realStats.unit[statType];
-      }
-    });
+    if (defensiveValue > 0) {
+      Object.keys(dataSimulator.realStats.unit).forEach(statType => {
+        if (statType === (type === 'def' ? 'DEFENSE_PENETRATION' : 'SPIRIT_PENETRATION')) {
+          ignoreDefensive = dataSimulator.realStats.unit[statType];
+        }
+      });
+    }
 
     return 1 - ((defensiveValue / 100) * (1 - (ignoreDefensive / 100)));
   }

@@ -69,6 +69,7 @@ export class HomeComponent {
         items: [
           {type: 'unit', dataId: 'UN_LW_P_MURG'},
           {type: 'unit', dataId: 'VC_LW_MORE'},
+          {type: 'equipment', dataId: 'AF_LW_RNG_006'},
 
           {type: 'unit', dataId: 'UN_LW_P_MRLK'},
           {type: 'unit', dataId: 'UN_LW_P_RYER'},

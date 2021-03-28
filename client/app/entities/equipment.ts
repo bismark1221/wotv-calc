@@ -223,7 +223,7 @@ export class Equipment {
       this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
     });
 
-    if (this.activeSkill) {
+    if (this.activeSkill && this.activeSkill.tableLevel) {
       this.activeSkill.level = this.activeSkill.tableLevel[this.activeSkill.tableLevel.length - 1];
     }
 

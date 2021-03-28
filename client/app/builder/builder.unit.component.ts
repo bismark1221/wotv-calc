@@ -628,7 +628,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
           elementKiller: 0,
           elementAtk: 0,
           damageType: 0,
-          criticDamage: 0,
+          critic_damage: 0,
           defense_penetration: 0,
           spirit_penetration: 0,
           typeResPene: 0
