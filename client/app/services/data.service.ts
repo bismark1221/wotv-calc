@@ -20,15 +20,23 @@ export class DataService {
     private toastr: ToastrService
   ) {}
 
-  private getLocalStorage(type, forcedVersion = null) {
+  private getStorageName(type, forcedVersion = null) {
     return this.navService.getVersion() === 'JP' || forcedVersion === 'JP' ? 'jp_data_' + type : 'gl_data_' + type;
   }
 
   public async loadData(type, forcedVersion = null) {
     await this.checkHashService.getLaunchedRequest();
-    const storageName = this.getLocalStorage(type, forcedVersion);
-    const cache = await caches.open('wotv-calc');
-    const data = await cache.match('/' + storageName);
+    const storageName = this.getStorageName(type, forcedVersion);
+    let cache = null;
+    let data = null;
+    let cacheAvailable = true;
+
+    try {
+      cache = await caches.open('wotv-calc');
+      data = await cache.match('/' + storageName);
+    } catch (error) {
+      cacheAvailable = false;
+    }
 
     if (data === null || data === undefined) {
       if (!this.launchedRequests[storageName]) {
@@ -36,9 +44,11 @@ export class DataService {
 
         this.launchedRequests[storageName] = this.http.get('/assets/data/' + this.navService.getVersion().toLowerCase() + '/' + type + '.json?t=' + new Date().getTime())
           .map(async response => {
-            await cache.put(storageName, new Response(JSON.stringify(response)));
-            this.launchedRequests[storageName] = null;
+            if (cacheAvailable) {
+              await cache.put(storageName, new Response(JSON.stringify(response)));
+            }
 
+            this.launchedRequests[storageName] = null;
             this.toastr.success('Downloaded ' + storageName);
 
             return response;
