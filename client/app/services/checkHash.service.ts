@@ -91,8 +91,12 @@ export class CheckHashService {
           || !savedVersion[version][dataType]
           || savedVersion[version][dataType] !== response[version][dataType]
         ) {
-          const cache = await caches.open('wotv-calc');
-          await cache.delete(this.getLocalStorage(version, dataType));
+          try {
+            const cache = await caches.open('wotv-calc');
+            await cache.delete(this.getLocalStorage(version, dataType));
+          } catch (error) {
+            // Nothing to do...
+          }
         }
       }
     }
