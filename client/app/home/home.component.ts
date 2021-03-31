@@ -24,6 +24,12 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '01/04',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_BZAN'},
+        ]
+      },
+      {
         date: '31/03',
         items: [
           {type: 'unit', dataId: 'UN_FF10_P_ARON'},
