@@ -2889,7 +2889,7 @@
   "IT_JB_MM_FF10_ARON": {
     "dataId": "IT_JB_MM_FF10_ARON",
     "names": {
-      "en": "伝説のガードの記憶・翠"
+      "en": "伝説のガードの記憶・翠 - Legendary Guardian's Memory (Green)"
     },
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
@@ -2897,7 +2897,7 @@
   "IT_JB_MM_FF10_ARON_2": {
     "dataId": "IT_JB_MM_FF10_ARON_2",
     "names": {
-      "en": "伝説のガードの記憶・碧"
+      "en": "伝説のガードの記憶・碧 - Legendary Guardian's Memory (Blue)"
     },
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
@@ -2905,7 +2905,7 @@
   "IT_JB_MM_FF10_ARON_3": {
     "dataId": "IT_JB_MM_FF10_ARON_3",
     "names": {
-      "en": "伝説のガードの記憶・紫"
+      "en": "伝説のガードの記憶・紫 - Legendary Guardian's Memory (Purple)"
     },
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
@@ -2913,7 +2913,7 @@
   "IT_JB_MM_FF10_ARON_4": {
     "dataId": "IT_JB_MM_FF10_ARON_4",
     "names": {
-      "en": "伝説のガードの記憶・橘"
+      "en": "伝説のガードの記憶・橘 - Legendary Guardian's Memory (Yellow)"
     },
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
@@ -2921,7 +2921,7 @@
   "IT_JB_MM_FF10_ARON_5": {
     "dataId": "IT_JB_MM_FF10_ARON_5",
     "names": {
-      "en": "伝説のガードの記憶・緋"
+      "en": "伝説のガードの記憶・緋 - Legendary Guardian's Memory (Red)"
     },
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
@@ -3165,6 +3165,46 @@
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_DEAN"
+  },
+  "IT_JB_MM_LW_CRLT": {
+    "dataId": "IT_JB_MM_LW_CRLT",
+    "names": {
+      "en": "聖盾の騎士の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_CRLT"
+  },
+  "IT_JB_MM_LW_CRLT_2": {
+    "dataId": "IT_JB_MM_LW_CRLT_2",
+    "names": {
+      "en": "聖盾の騎士の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_CRLT"
+  },
+  "IT_JB_MM_LW_CRLT_3": {
+    "dataId": "IT_JB_MM_LW_CRLT_3",
+    "names": {
+      "en": "聖盾の騎士の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_CRLT"
+  },
+  "IT_JB_MM_LW_CRLT_4": {
+    "dataId": "IT_JB_MM_LW_CRLT_4",
+    "names": {
+      "en": "聖盾の騎士の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_CRLT"
+  },
+  "IT_JB_MM_LW_CRLT_5": {
+    "dataId": "IT_JB_MM_LW_CRLT_5",
+    "names": {
+      "en": "聖盾の騎士の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_CRLT"
   },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
@@ -4898,7 +4938,7 @@
   "IT_PI_FF10_ARON": {
     "dataId": "IT_PI_FF10_ARON",
     "names": {
-      "en": "アーロンの欠片"
+      "en": "アーロンの欠片 - Auron Unit Shard"
     },
     "type": "unit_shard"
   },
@@ -4997,6 +5037,13 @@
     "dataId": "IT_PI_LW_MURG",
     "names": {
       "en": "ムラガ・フェネスの欠片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_LW_CRLT": {
+    "dataId": "IT_PI_LW_CRLT",
+    "names": {
+      "en": "シャルロットの欠片"
     },
     "type": "unit_shard"
   },
@@ -5753,6 +5800,13 @@
     "dataId": "IT_SP_LW_MURG",
     "names": {
       "en": "ムラガ・フェネスの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_CRLT": {
+    "dataId": "IT_SP_LW_CRLT",
+    "names": {
+      "en": "シャルロットの思珠"
     },
     "type": "exjob_orb"
   },
@@ -6604,21 +6658,21 @@
   "IT_PT_SKIP_FFX_1": {
     "dataId": "IT_PT_SKIP_FFX_1",
     "names": {
-      "en": "【FFⅩ】試練クエストスキップチケット"
+      "en": "【FFⅩ】試練クエストスキップチケット - [FFX] Trials of Reckoning Quest Skip Ticket"
     },
     "type": "usable_item"
   },
   "IT_PT_BSSKIP_FF10_1": {
     "dataId": "IT_PT_BSSKIP_FF10_1",
     "names": {
-      "en": "【FFⅩ】試練ボススキップチケット"
+      "en": "【FFⅩ】試練ボススキップチケット - [FFX] Trials of Reckoning Boss Skip Ticket"
     },
     "type": "usable_item"
   },
   "IT_PT_BOSS_FF10_1": {
     "dataId": "IT_PT_BOSS_FF10_1",
     "names": {
-      "en": "【FFⅩ】ボスバトルチケット"
+      "en": "【FFⅩ】ボスバトルチケット - [FFX] Boss Battle Ticket"
     },
     "type": "usable_item"
   },
@@ -7877,7 +7931,7 @@
   "IT_AF_FF10_ACCE_001": {
     "dataId": "IT_AF_FF10_ACCE_001",
     "names": {
-      "en": "ティーダのネックレスのクラフトレシピ"
+      "en": "ティーダのネックレスのクラフトレシピ - Tidus's Necklace Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_FF10_ACCE_001"
@@ -7961,6 +8015,14 @@
     },
     "type": "recipe",
     "icon": "AF_LW_HAT_017"
+  },
+  "IT_AF_LW_ACC_038": {
+    "dataId": "IT_AF_LW_ACC_038",
+    "names": {
+      "en": "ゴールドアンクレットのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ACC_038"
   },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
@@ -8586,6 +8648,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_04_02_A": {
+    "dataId": "IT_EC_SUMMON_04_02_A",
+    "names": {
+      "en": "【4月】召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -8716,6 +8786,14 @@
     "dataId": "IT_EC_EV11_1",
     "names": {
       "en": "小鳥の歌も今は絶えメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_EV10_1"
+  },
+  "IT_EC_EV12_1": {
+    "dataId": "IT_EC_EV12_1",
+    "names": {
+      "en": "刀工たちの夢メダル"
     },
     "type": "medal",
     "icon": "IT_EC_EV10_1"
@@ -8944,7 +9022,7 @@
   "IT_EC_FF10_2_B": {
     "dataId": "IT_EC_FF10_2_B",
     "names": {
-      "en": "FFⅩコラボ召喚メダルB"
+      "en": "FFⅩコラボ召喚メダルB - FFX Summon Medal B"
     },
     "type": "medal",
     "icon": "IT_EC_FF10_2"
@@ -8952,7 +9030,7 @@
   "IT_EC_FF10_3": {
     "dataId": "IT_EC_FF10_3",
     "names": {
-      "en": "【FFⅩ】裁きの試練メダル"
+      "en": "【FFⅩ】裁きの試練メダル - [FFX] Trials of Reckoning Medal"
     },
     "type": "medal"
   },
@@ -8967,6 +9045,13 @@
     "dataId": "IT_EC_NIER_2",
     "names": {
       "en": "NieRコラボ召喚メダル"
+    },
+    "type": "medal"
+  },
+  "IT_EC_FF7_4": {
+    "dataId": "IT_EC_FF7_4",
+    "names": {
+      "en": "FFⅦRコラボログインメダル"
     },
     "type": "medal"
   },
@@ -10440,7 +10525,7 @@
   "IT_US_SE_PI_36": {
     "dataId": "IT_US_SE_PI_36",
     "names": {
-      "en": "【XXXXXXX】ユニット欠片×Ｎ選択召喚券"
+      "en": "【FFBE5.5周年】URFFBEユニット欠片×40選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11184,7 +11269,7 @@
   "IT_US_SE_JBEX_EM_02": {
     "dataId": "IT_US_SE_JBEX_EM_02",
     "names": {
-      "en": "輝石像×150選択召喚券"
+      "en": "輝石像×150選択召喚券 - Select Alcryst Statue x365 Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11289,6 +11374,14 @@
     "dataId": "IT_US_SE_JBEX_AF_11",
     "names": {
       "en": "【1400万DL記念】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_12": {
+    "dataId": "IT_US_SE_JBEX_AF_12",
+    "names": {
+      "en": "【FFBE5.5周年】焦印石×300選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11661,7 +11754,7 @@
   "IT_VPI_FF10_MV1": {
     "dataId": "IT_VPI_FF10_MV1",
     "names": {
-      "en": "素敵だねの欠片"
+      "en": "素敵だねの欠片 - \"Suteki Da Ne\" Vision Card Shard"
     },
     "type": "vc_shard"
   },
@@ -12004,7 +12097,7 @@
   "IT_VPI_FF10_MV2": {
     "dataId": "IT_VPI_FF10_MV2",
     "names": {
-      "en": "見知らぬ世界の欠片"
+      "en": "見知らぬ世界の欠片 - \"A Place Unknown\" Vision Card Shard"
     },
     "type": "vc_shard"
   },
@@ -12401,7 +12494,7 @@
   "IT_STAMP_2012": {
     "dataId": "IT_STAMP_2012",
     "names": {
-      "en": "12月印章"
+      "en": "12月印章 - May Token"
     },
     "type": "stamp",
     "icon": "IT_STAMP_12"
@@ -12429,5 +12522,13 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_03"
+  },
+  "IT_STAMP_2104": {
+    "dataId": "IT_STAMP_2104",
+    "names": {
+      "en": "4月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_04"
   }
 }

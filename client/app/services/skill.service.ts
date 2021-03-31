@@ -1126,6 +1126,7 @@ export class SkillService {
         html = 'Reflect magic skills' + this.getTurns(effect);
         break;
       default:
+        html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
         console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- NOT TRANSLATED : ' + effect.type);
       break;
     }

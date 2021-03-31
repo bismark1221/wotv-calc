@@ -24,6 +24,18 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '31/03',
+        items: [
+          {type: 'unit', dataId: 'UN_FF10_P_ARON'},
+          {type: 'card', dataId: 'VC_FF10_MV1'},
+          {type: 'card', dataId: 'VC_FF10_MV2'},
+          {type: 'equipment', dataId: 'AF_FF10_ACCE_001'},
+
+          {type: 'unit', dataId: 'UN_LW_P_ZIZA'},
+          {type: 'unit', dataId: 'UN_LW_P_AILN'}
+        ]
+      },
+      {
         date: '24/03',
         items: [
           {type: 'unit', dataId: 'UN_FF10_P_TIDU'},
@@ -32,7 +44,6 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_BAHM'},
           {type: 'card', dataId: 'VC_LW_ART'},
           {type: 'equipment', dataId: 'AF_FF10_SWO_001'},
-          {type: 'equipment', dataId: 'AF_FF10_BSW_000'},
           {type: 'equipment', dataId: 'AF_FF10_ROD_000'},
 
           {type: 'unit', dataId: 'UN_LW_P_MONT'},
@@ -53,17 +64,17 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_LW_RAMD'},
           {type: 'card', dataId: 'VC_LW_OOOO'}
         ]
-      },
-      {
-        date: '10/03',
-        items: [
-          {type: 'card', dataId: 'VC_LW_GREEN'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_040'},
-          {type: 'equipment', dataId: 'AF_LW_ARW_001'}
-        ]
       }
     ],
     JP: [
+      {
+        date: '31/03',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_CRLT'},
+          {type: 'equipment', dataId: 'AF_LW_ACC_042'},
+          {type: 'equipment', dataId: 'AF_LW_ACC_038'}
+        ]
+      },
       {
         date: '24/03',
         items: [
@@ -84,20 +95,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_MORE'},
           {type: 'unit', dataId: 'UN_LW_P_CWEL'},
           {type: 'unit', dataId: 'UN_LW_P_VSTR'},
-        ]
-      },
-      {
-        date: '08/03',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_KRKN'},
-          {type: 'card', dataId: 'VC_LW_KRKN'},
-          {type: 'card', dataId: 'VC_LW_DEAN'},
-          {type: 'equipment', dataId: 'AF_LW_HAT_017'},
-
-          {type: 'unit', dataId: 'UN_LW_P_WHIS'},
-          {type: 'unit', dataId: 'UN_LW_P_CLEY'},
-          {type: 'unit', dataId: 'UN_LW_P_SEVR'},
-          {type: 'esper', dataId: 'UN_LW_S_THDG'}
         ]
       }
     ]

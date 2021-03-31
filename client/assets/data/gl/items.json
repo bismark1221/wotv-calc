@@ -3259,6 +3259,51 @@
     "type": "job_awake_orb",
     "icon": "JB_FF10_YUNA"
   },
+  "IT_JB_MM_FF10_ARON": {
+    "dataId": "IT_JB_MM_FF10_ARON",
+    "names": {
+      "en": "Legendary Guardian's Memory (Green)",
+      "fr": "Souvenir de Gardien légendaire (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_ARON"
+  },
+  "IT_JB_MM_FF10_ARON_2": {
+    "dataId": "IT_JB_MM_FF10_ARON_2",
+    "names": {
+      "en": "Legendary Guardian's Memory (Blue)",
+      "fr": "Souvenir de Gardien légendaire (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_ARON"
+  },
+  "IT_JB_MM_FF10_ARON_3": {
+    "dataId": "IT_JB_MM_FF10_ARON_3",
+    "names": {
+      "en": "Legendary Guardian's Memory (Purple)",
+      "fr": "Souvenir de Gardien légendaire (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_ARON"
+  },
+  "IT_JB_MM_FF10_ARON_4": {
+    "dataId": "IT_JB_MM_FF10_ARON_4",
+    "names": {
+      "en": "Legendary Guardian's Memory (Yellow)",
+      "fr": "Souvenir de Gardien légendaire (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_ARON"
+  },
+  "IT_JB_MM_FF10_ARON_5": {
+    "dataId": "IT_JB_MM_FF10_ARON_5",
+    "names": {
+      "en": "Legendary Guardian's Memory (Red)",
+      "fr": "Souvenir de Gardien légendaire (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF10_ARON"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5192,6 +5237,14 @@
     "names": {
       "en": "Yuna Unit Shard",
       "fr": "Fragment d'unité de Yuna"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_FF10_ARON": {
+    "dataId": "IT_PI_FF10_ARON",
+    "names": {
+      "en": "Auron Unit Shard",
+      "fr": "Fragment d'unité d'Auron"
     },
     "type": "unit_shard"
   },
@@ -8122,6 +8175,15 @@
     "type": "recipe",
     "icon": "AF_FF10_BSW_000"
   },
+  "IT_AF_FF10_ACCE_001": {
+    "dataId": "IT_AF_FF10_ACCE_001",
+    "names": {
+      "en": "Tidus's Necklace Crafting Recipe",
+      "fr": "Recette d'artisanat : Pendentif de Tidus"
+    },
+    "type": "recipe",
+    "icon": "AF_FF10_ACCE_001"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -8546,6 +8608,15 @@
     "type": "medal",
     "icon": "IT_EC_FF10_2"
   },
+  "IT_EC_FF10_2_B": {
+    "dataId": "IT_EC_FF10_2_B",
+    "names": {
+      "en": "FFX Summon Medal B",
+      "fr": "Médaille d'invocation B [FFX]"
+    },
+    "type": "medal",
+    "icon": "IT_EC_FF10_2"
+  },
   "IT_EC_FF14_1": {
     "dataId": "IT_EC_FF14_1",
     "names": {
@@ -8899,6 +8970,51 @@
     "names": {
       "en": "[Beginners Only] Select Jadeite x15 Summon Ticket",
       "fr": "[Seulement pour les débutants] Ticket sélectionneur de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_GL_07": {
+    "dataId": "IT_US_SE_JB_05_GL_07",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Spinel x30 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_05": {
+    "dataId": "IT_US_SE_JB_04_GL_05",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Citrine x30 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_05": {
+    "dataId": "IT_US_SE_JB_03_GL_05",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Charoite x30 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_03": {
+    "dataId": "IT_US_SE_JB_02_GL_03",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Azurite x30 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_03": {
+    "dataId": "IT_US_SE_JB_01_GL_03",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Jadeite x15 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 15 jades"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9371,6 +9487,69 @@
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
   },
+  "IT_US_G_1stANV_0331_01": {
+    "dataId": "IT_US_G_1stANV_0331_01",
+    "names": {
+      "en": "First Anniversary Celebration Summon Ticket",
+      "fr": "Ticket d'invocation du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_02": {
+    "dataId": "IT_US_G_1stANV_0331_02",
+    "names": {
+      "en": "First Anniversary Celebration 2x Summon Ticket",
+      "fr": "Ticket d'invocation x2 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_03": {
+    "dataId": "IT_US_G_1stANV_0331_03",
+    "names": {
+      "en": "First Anniversary Celebration 3x Summon Ticket",
+      "fr": "Ticket d'invocation x3 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_04": {
+    "dataId": "IT_US_G_1stANV_0331_04",
+    "names": {
+      "en": "First Anniversary Celebration 5x Summon Ticket",
+      "fr": "Ticket d'invocation x5 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_05": {
+    "dataId": "IT_US_G_1stANV_0331_05",
+    "names": {
+      "en": "First Anniversary Celebration 7x Summon Ticket",
+      "fr": "Ticket d'invocation x7 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_06": {
+    "dataId": "IT_US_G_1stANV_0331_06",
+    "names": {
+      "en": "First Anniversary Celebration 8x Summon Ticket",
+      "fr": "Ticket d'invocation x8 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0331_07": {
+    "dataId": "IT_US_G_1stANV_0331_07",
+    "names": {
+      "en": "First Anniversary Celebration 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
   "IT_US_GL_SE_PI_COM_1": {
     "dataId": "IT_US_GL_SE_PI_COM_1",
     "names": {
@@ -9834,7 +10013,7 @@
     "dataId": "IT_US_SE_JB_MM_05_5",
     "names": {
       "en": "[New Year's Greetings] Select Job Memory (Red) x5 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 5 souvenirs de job (rouges)"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 5 souvenirs de job (rouges)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9843,7 +10022,7 @@
     "dataId": "IT_US_SE_JB_MM_04_5",
     "names": {
       "en": "[New Year's Greetings] Select Job Memory (Yellow) x4 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 4 souvenirs de job (jaunes)"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9852,7 +10031,7 @@
     "dataId": "IT_US_SE_JB_MM_03_4",
     "names": {
       "en": "[New Year's Greetings] Select Job Memory (Purple) x3 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 3 souvenirs de job (violets)"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 3 souvenirs de job (violets)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9861,7 +10040,7 @@
     "dataId": "IT_US_SE_JB_MM_02_4",
     "names": {
       "en": "[New Year's Greetings] Select Job Memory (Blue) x2 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 2 souvenirs de job (bleus)"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 2 souvenirs de job (bleus)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9870,7 +10049,7 @@
     "dataId": "IT_US_SE_JB_MM_01_4",
     "names": {
       "en": "[New Year's Greetings] Select Job Memory (Green) x1 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 1 souvenir de job (vert)"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 1 souvenir de job (vert)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9879,7 +10058,7 @@
     "dataId": "IT_US_SE_JB_MM_01_5",
     "names": {
       "en": "[First Anniversary Celebration] Select Job Memory (Green) x1 Summon Ticket",
-      "fr": "[1er anniversaire] Ticket sélectionner de 1 souvenir de job (vert)"
+      "fr": "[1er anniversaire] Ticket sélectionneur de 1 souvenir de job (vert)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9888,7 +10067,7 @@
     "dataId": "IT_US_SE_JB_MM_02_5",
     "names": {
       "en": "[First Anniversary Celebration] Select Job Memory (Blue) x2 Summon Ticket",
-      "fr": "[1er anniversaire] Ticket sélectionner de 2 souvenirs de job (bleus)"
+      "fr": "[1er anniversaire] Ticket sélectionneur de 2 souvenirs de job (bleus)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9897,7 +10076,7 @@
     "dataId": "IT_US_SE_JB_MM_03_7",
     "names": {
       "en": "[First Anniversary Celebration] Select Job Memory (Purple) x3 Summon Ticket",
-      "fr": "[1er anniversaire] Ticket sélectionner de 3 souvenirs de job (violets)"
+      "fr": "[1er anniversaire] Ticket sélectionneur de 3 souvenirs de job (violets)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9906,7 +10085,7 @@
     "dataId": "IT_US_SE_JB_MM_04_8",
     "names": {
       "en": "[First Anniversary Celebration] Select Job Memory (Yellow) x4 Summon Ticket",
-      "fr": "[1er anniversaire] Ticket sélectionner de 4 souvenirs de job (jaunes)"
+      "fr": "[1er anniversaire] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9915,7 +10094,52 @@
     "dataId": "IT_US_SE_JB_MM_05_8",
     "names": {
       "en": "[First Anniversary Celebration] Select Job Memory (Red) x5 Summon Ticket",
-      "fr": "[1er anniversaire] Ticket sélectionner de 5 souvenirs de job (rouges)"
+      "fr": "[1er anniversaire] Ticket sélectionneur de 5 souvenirs de job (rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_05_GL_01": {
+    "dataId": "IT_US_SE_JB_MM_05_GL_01",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 5 souvenirs de job (rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_04_GL_01": {
+    "dataId": "IT_US_SE_JB_MM_04_GL_01",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Job Memory (Yellow) x4 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_03_GL_01": {
+    "dataId": "IT_US_SE_JB_MM_03_GL_01",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Job Memory (Purple) x3 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 3 souvenirs de job (violets)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_02_GL_01": {
+    "dataId": "IT_US_SE_JB_MM_02_GL_01",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Job Memory (Blue) x2 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 2 souvenirs de job (bleus)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_01_GL_01": {
+    "dataId": "IT_US_SE_JB_MM_01_GL_01",
+    "names": {
+      "en": "[First Anniversary Celebration Part II] Select Job Memory (Green) x1 Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 1 souvenir de job (vert)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9969,7 +10193,7 @@
     "dataId": "IT_US_SE_JB_05_04",
     "names": {
       "en": "[New Year's Greetings] Select Spinel x30 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 spinelles"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 spinelles"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9978,7 +10202,7 @@
     "dataId": "IT_US_SE_JB_04_05",
     "names": {
       "en": "[New Year's Greetings] Select Citrine x30 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 citrines"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 citrines"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9987,7 +10211,7 @@
     "dataId": "IT_US_SE_JB_03_05",
     "names": {
       "en": "[New Year's Greetings] Select Charoite x30 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 charoïtes"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 charoïtes"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9996,7 +10220,7 @@
     "dataId": "IT_US_SE_JB_02_05",
     "names": {
       "en": "[New Year's Greetings] Select Azurite x30 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 azurites"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 azurites"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10005,7 +10229,7 @@
     "dataId": "IT_US_SE_JB_01_05",
     "names": {
       "en": "[New Year's Greetings] Select Jadeite x15 Summon Ticket",
-      "fr": "[Vœux pour la nouvelle année] Ticket sélectionner de 15 jades"
+      "fr": "[Vœux pour la nouvelle année] Ticket sélectionneur de 15 jades"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10478,6 +10702,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_UR_V_TICKET"
   },
+  "IT_US_SE_R_UR_V_GL07": {
+    "dataId": "IT_US_SE_R_UR_V_GL07",
+    "names": {
+      "en": "[First Anniversary Celebration] Select Vision Card Summon Ticket",
+      "fr": "[1er anniversaire - Partie II] Ticket sélectionneur d'atout-vision"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_UR_V_TICKET"
+  },
   "IT_US_SE_AW-ITEM_04": {
     "dataId": "IT_US_SE_AW-ITEM_04",
     "names": {
@@ -10541,6 +10774,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_COM_GL_06": {
+    "dataId": "IT_US_SE_PI_COM_GL_06",
+    "names": {
+      "en": "Select Element Fragment of Thought x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AW-ITEM_07": {
     "dataId": "IT_US_SE_AW-ITEM_07",
     "names": {
@@ -10564,6 +10806,15 @@
     "names": {
       "en": "Select Awakening Prism x150 Summon Ticket",
       "fr": "Ticket sélectionneur de 150 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW-ITEM_10": {
+    "dataId": "IT_US_SE_AW-ITEM_10",
+    "names": {
+      "en": "Select Awakening Prism x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 prismes d'éveil"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11390,6 +11641,22 @@
     "names": {
       "en": "\"A Year's Journey\" Vision Card Shard",
       "fr": "Fragment de l'atout-vision : Une année d'aventures"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_FF10_MV1": {
+    "dataId": "IT_VPI_FF10_MV1",
+    "names": {
+      "en": "\"Suteki Da Ne\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Suteki Da Ne"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_FF10_MV2": {
+    "dataId": "IT_VPI_FF10_MV2",
+    "names": {
+      "en": "\"A Place Unknown\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Un monde inconnu"
     },
     "type": "vc_shard"
   },
@@ -12393,6 +12660,15 @@
     "type": "stamp",
     "icon": "IT_STAMP_11"
   },
+  "IT_STAMP_2012": {
+    "dataId": "IT_STAMP_2012",
+    "names": {
+      "en": "May Token",
+      "fr": "Insigne de mai"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_12"
+  },
   "IT_KEY_JP": {
     "dataId": "IT_KEY_JP",
     "names": {
@@ -12418,5 +12694,82 @@
       "fr": "Sphère d'éveil"
     },
     "type": "vc_orb_awake"
+  },
+  "IT_PI_COM_EM_01": {
+    "dataId": "IT_PI_COM_EM_01",
+    "names": {
+      "en": "Select Element Fragment of Thought x365 Summon Ticket",
+      "fr": "Ticket sélectionneur de 365 fragments de pensée élémentaires"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_SB_AW_EM_01": {
+    "dataId": "IT_SB_AW_EM_01",
+    "names": {
+      "en": "Select Awakening Prism x365 Summon Ticket",
+      "fr": "Ticket sélectionneur de 365 prismes d'éveil"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_EM_05_GL_01": {
+    "dataId": "IT_US_SE_JB_EM_05_GL_01",
+    "names": {
+      "en": "Select Element Alcryst (Red) x365 Summon Ticket",
+      "fr": "Ticket sélectionneur de 365 alcrists élémentaires (rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_EM_02": {
+    "dataId": "IT_US_SE_JBEX_EM_02",
+    "names": {
+      "en": "Select Alcryst Statue x365 Summon Ticket",
+      "fr": "Ticket sélectionneur de 365 sculptures d'alcrist"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_ANNIV_01": {
+    "dataId": "IT_US_SE_JB_05_ANNIV_01",
+    "names": {
+      "en": "Select Spinel x365 Summon Ticket",
+      "fr": "Ticket sélectionneur de 365 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_PT_SKIP_FFX_1": {
+    "dataId": "IT_PT_SKIP_FFX_1",
+    "names": {
+      "en": "[FFX] Trials of Reckoning Quest Skip Ticket",
+      "fr": "[FFX] Ticket évit'quête des Épreuves du Jugement"
+    },
+    "type": "usable_item"
+  },
+  "IT_PT_BSSKIP_FF10_1": {
+    "dataId": "IT_PT_BSSKIP_FF10_1",
+    "names": {
+      "en": "[FFX] Trials of Reckoning Boss Skip Ticket",
+      "fr": "[FFX] Ticket évit'boss des Épreuves du Jugement"
+    },
+    "type": "usable_item"
+  },
+  "IT_PT_BOSS_FF10_1": {
+    "dataId": "IT_PT_BOSS_FF10_1",
+    "names": {
+      "en": "[FFX] Boss Battle Ticket",
+      "fr": "[FFX] Ticket de combat de boss"
+    },
+    "type": "usable_item"
+  },
+  "IT_EC_FF10_3": {
+    "dataId": "IT_EC_FF10_3",
+    "names": {
+      "en": "[FFX] Trials of Reckoning Medal",
+      "fr": "[FFX] Médaille des Épreuves du Jugement"
+    },
+    "type": "medal"
   }
 }

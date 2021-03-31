@@ -88,6 +88,8 @@ export class EquipmentService {
 
     'AF_LW_SWO_016': 'FREE',
 
+    'AF_LW_ACC_042': 'BINGO',
+
     'AF_LW_ACC_001': 'BOX_EVENT',
     'AF_LW_RNG_006': 'BOX_EVENT',
 
@@ -144,6 +146,7 @@ export class EquipmentService {
     'AF_LW_ROD_006': 'RECURRENT',
     'AF_LW_ACC_039': 'RECURRENT',
     'AF_LW_SWO_029': 'RECURRENT',
+    'AF_LW_ACC_038': 'RECURRENT',
 
     'AF_LW_SWO_000': 'GENERAL_SHOP',
     'AF_LW_BSW_000': 'GENERAL_SHOP',
@@ -209,6 +212,10 @@ export class EquipmentService {
     'PACK': {
       'en': 'Billing pack',
       'fr': 'Pack payant'
+    },
+    'BINGO': {
+      'en': 'Bingo',
+      'fr': 'Bingo'
     }
   };
 

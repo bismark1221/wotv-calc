@@ -9501,7 +9501,8 @@
               "JB_FF14_TNCR",
               "JB_FF10_TIDU",
               "JB_LW_MONT_01",
-              "JB_LW_DEAN"
+              "JB_LW_DEAN",
+              "JB_LW_CRLT"
             ]
           }
         ]
@@ -9567,7 +9568,8 @@
               "JB_FF14_TNCR",
               "JB_FF10_TIDU",
               "JB_LW_MONT_01",
-              "JB_LW_DEAN"
+              "JB_LW_DEAN",
+              "JB_LW_CRLT"
             ]
           }
         ]
@@ -11344,7 +11346,7 @@
   "VC_FF10_MV1": {
     "dataId": "VC_FF10_MV1",
     "names": {
-      "en": "素敵だね"
+      "en": "素敵だね - Suteki Da Ne"
     },
     "cost": 70,
     "rarity": "UR",
@@ -24392,7 +24394,7 @@
   "VC_FF10_MV2": {
     "dataId": "VC_FF10_MV2",
     "names": {
-      "en": "見知らぬ世界"
+      "en": "見知らぬ世界 - A Place Unknown"
     },
     "cost": 50,
     "rarity": "MR",
@@ -24456,7 +24458,7 @@
       "JUMP": {}
     },
     "image": "ff10mv2",
-    "slug": "mishiranu-sekai",
+    "slug": "a-place-unknown",
     "partyBuffs": [
       {
         "classic": {
