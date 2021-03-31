@@ -3833,6 +3833,26 @@
             "value": "Warrior's Spirit"
         },
         {
+            "key": "SK_LW_BEA_M_1_SUB",
+            "value": "Demon Purger"
+        },
+        {
+            "key": "SK_LW_BEA_M_2_SUB",
+            "value": "Wicked Pummel"
+        },
+        {
+            "key": "SK_LW_BEA_M_3_SUB",
+            "value": "Pugilistic Mastery"
+        },
+        {
+            "key": "SK_LW_BEA_S_1",
+            "value": "Shifting Strike"
+        },
+        {
+            "key": "SK_LW_BEA_S_2",
+            "value": "Iron Body Stance"
+        },
+        {
             "key": "SK_LW_PSI_ATK",
             "value": "Normal Attack"
         },
@@ -4043,6 +4063,74 @@
         {
             "key": "SK_FF10_YUNA_P_2",
             "value": "Oath to the Fayth"
+        },
+        {
+            "key": "SK_FF10_ARON_ATK",
+            "value": "Normal Attack"
+        },
+        {
+            "key": "SK_FF10_ARON_M_1",
+            "value": "God-Killer"
+        },
+        {
+            "key": "SK_FF10_EC_ARON_C_01",
+            "value": "God-Killer Enhancement"
+        },
+        {
+            "key": "SK_FF10_EC_ARON_C_01B",
+            "value": "Heavensfall"
+        },
+        {
+            "key": "SK_FF10_ARON_M_2",
+            "value": "Banishing Blade"
+        },
+        {
+            "key": "SK_FF10_ARON_M_3",
+            "value": "Dragon Fang"
+        },
+        {
+            "key": "SK_FF10_EC_ARON_A_01",
+            "value": "Crouching Dragon"
+        },
+        {
+            "key": "SK_FF10_ARON_S_1",
+            "value": "Shooting Star"
+        },
+        {
+            "key": "SK_FF10_ARON_S_2",
+            "value": "Majestic Phoenix"
+        },
+        {
+            "key": "SK_FF10_ARON_S_3",
+            "value": "Another Way"
+        },
+        {
+            "key": "SK_FF10_EC_ARON_C_02",
+            "value": "Another Way Enhancement"
+        },
+        {
+            "key": "SK_FF10_EC_ARON_C_02B",
+            "value": "Entrust the Future"
+        },
+        {
+            "key": "SK_FF10_ARON_S_4",
+            "value": "A Glass to the Deceased"
+        },
+        {
+            "key": "SK_FF10_ARON_R_1",
+            "value": "Counter"
+        },
+        {
+            "key": "SK_FF10_ARON_R_1_B",
+            "value": "Counter"
+        },
+        {
+            "key": "SK_FF10_ARON_P_1",
+            "value": "One-Eyed Swordsman"
+        },
+        {
+            "key": "SK_FF10_ARON_P_2",
+            "value": "The Guide of the Story"
         },
         {
             "key": "SK_LW_TU_BLM_ICE",
@@ -5433,6 +5521,30 @@
             "value": "Proximity Attack"
         },
         {
+            "key": "SK_SNAK_ATK",
+            "value": "Normal Attack"
+        },
+        {
+            "key": "SK_SNAK_M_01",
+            "value": "Paralyzing Breath"
+        },
+        {
+            "key": "SK_SNAK_M_02",
+            "value": "Coilstrike"
+        },
+        {
+            "key": "SK_SNAK_M_03",
+            "value": "Swoop"
+        },
+        {
+            "key": "SK_SNAK_M_04",
+            "value": "Menace"
+        },
+        {
+            "key": "SK_SNAK_R_01",
+            "value": "Paralyzing Counter"
+        },
+        {
             "key": "SK_YNLS_ATK",
             "value": "Normal Attack"
         },
@@ -5759,6 +5871,10 @@
         {
             "key": "SK_LB_FF10_YUNA",
             "value": "Energy Ray"
+        },
+        {
+            "key": "SK_LB_FF10_ARON",
+            "value": "Tornado"
         },
         {
             "key": "SK_SMN_IFRT",
@@ -6837,6 +6953,10 @@
             "value": "Master Ability"
         },
         {
+            "key": "SK_MA_FF10_ARON",
+            "value": "Master Ability"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Slash ATK +2"
         },
@@ -7225,6 +7345,14 @@
             "value": "Shimmering Blade (Ice Attack Up)"
         },
         {
+            "key": "SK_FF10_ACCE_001_1",
+            "value": "Tidus's Necklace (Critical Dmg Up)"
+        },
+        {
+            "key": "SK_FF10_ACCE_001_5",
+            "value": "Tidus's Necklace (Critical Dmg Up)"
+        },
+        {
             "key": "SK_ACC_LW_MONT_1_1",
             "value": "Rallying Cry"
         },
@@ -7467,6 +7595,10 @@
         {
             "key": "SK_CLT_FF10_YUNA_1",
             "value": "Smile Practice"
+        },
+        {
+            "key": "SK_CLT_FF10_ARON_1",
+            "value": "Piercing"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -8557,6 +8689,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_FF10_MV1_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -9490,6 +9642,30 @@
         },
         {
             "key": "SK_VC_LW_DEAN_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_GSAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_GSMAX",
             "value": ""
         },
         {
@@ -10690,6 +10866,38 @@
         },
         {
             "key": "SK_VC_LW_ART_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV1_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_FF10_MV1_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_FF10_MV1_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_GL_VC_FF10_MV1_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_FF10_MV2_PAW",
             "value": ""
         },
         {

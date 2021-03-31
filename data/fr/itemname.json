@@ -1501,6 +1501,26 @@
             "value": "Souvenir d'Invokeur de Spira (Rouge)"
         },
         {
+            "key": "IT_JB_MM_FF10_ARON",
+            "value": "Souvenir de Gardien légendaire (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_2",
+            "value": "Souvenir de Gardien légendaire (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_3",
+            "value": "Souvenir de Gardien légendaire (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_4",
+            "value": "Souvenir de Gardien légendaire (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_5",
+            "value": "Souvenir de Gardien légendaire (Rouge)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de feu (Vert)"
         },
@@ -2467,6 +2487,10 @@
         {
             "key": "IT_PI_FF10_YUNA",
             "value": "Fragment d'unité de Yuna"
+        },
+        {
+            "key": "IT_PI_FF10_ARON",
+            "value": "Fragment d'unité d'Auron"
         },
         {
             "key": "IT_SP_LW_MONT",
@@ -3885,6 +3909,10 @@
             "value": "Recette d'artisanat : Kagero"
         },
         {
+            "key": "IT_AF_FF10_ACCE_001",
+            "value": "Recette d'artisanat : Pendentif de Tidus"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "Sceau de vie"
         },
@@ -4093,6 +4121,10 @@
             "value": "Médaille d'invocation A [FFX]"
         },
         {
+            "key": "IT_EC_FF10_2_B",
+            "value": "Médaille d'invocation B [FFX]"
+        },
+        {
             "key": "IT_EC_FF14_1",
             "value": "Mémoquartz goétique"
         },
@@ -4251,6 +4283,26 @@
         {
             "key": "IT_US_SE_JB_01_GL_09",
             "value": "[Seulement pour les débutants] Ticket sélectionneur de 15 jades"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_07",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 spinelles"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_05",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 citrines"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_05",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 charoïtes"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_03",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 30 azurites"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_03",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 15 jades"
         },
         {
             "key": "IT_US_SE_PI_COM_GL_04",
@@ -4469,6 +4521,34 @@
             "value": "Ticket d'invocation x10 du 1er anniversaire"
         },
         {
+            "key": "IT_US_G_1stANV_0331_01",
+            "value": "Ticket d'invocation du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_02",
+            "value": "Ticket d'invocation x2 du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_03",
+            "value": "Ticket d'invocation x3 du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_04",
+            "value": "Ticket d'invocation x5 du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_05",
+            "value": "Ticket d'invocation x7 du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_06",
+            "value": "Ticket d'invocation x8 du 1er anniversaire"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_07",
+            "value": "Ticket d'invocation x10 du 1er anniversaire"
+        },
+        {
             "key": "IT_US_GL_SE_PI_COM_1",
             "value": "Ticket sélectionneur de 10 fragments de pensée élémentaires"
         },
@@ -4674,43 +4754,63 @@
         },
         {
             "key": "IT_US_SE_JB_MM_05_5",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 5 souvenirs de job (rouges)"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 5 souvenirs de job (rouges)"
         },
         {
             "key": "IT_US_SE_JB_MM_04_5",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 4 souvenirs de job (jaunes)"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
         },
         {
             "key": "IT_US_SE_JB_MM_03_4",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 3 souvenirs de job (violets)"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 3 souvenirs de job (violets)"
         },
         {
             "key": "IT_US_SE_JB_MM_02_4",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 2 souvenirs de job (bleus)"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 2 souvenirs de job (bleus)"
         },
         {
             "key": "IT_US_SE_JB_MM_01_4",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 1 souvenir de job (vert)"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 1 souvenir de job (vert)"
         },
         {
             "key": "IT_US_SE_JB_MM_01_5",
-            "value": "[1er anniversaire] Ticket sélectionner de 1 souvenir de job (vert)"
+            "value": "[1er anniversaire] Ticket sélectionneur de 1 souvenir de job (vert)"
         },
         {
             "key": "IT_US_SE_JB_MM_02_5",
-            "value": "[1er anniversaire] Ticket sélectionner de 2 souvenirs de job (bleus)"
+            "value": "[1er anniversaire] Ticket sélectionneur de 2 souvenirs de job (bleus)"
         },
         {
             "key": "IT_US_SE_JB_MM_03_7",
-            "value": "[1er anniversaire] Ticket sélectionner de 3 souvenirs de job (violets)"
+            "value": "[1er anniversaire] Ticket sélectionneur de 3 souvenirs de job (violets)"
         },
         {
             "key": "IT_US_SE_JB_MM_04_8",
-            "value": "[1er anniversaire] Ticket sélectionner de 4 souvenirs de job (jaunes)"
+            "value": "[1er anniversaire] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
         },
         {
             "key": "IT_US_SE_JB_MM_05_8",
-            "value": "[1er anniversaire] Ticket sélectionner de 5 souvenirs de job (rouges)"
+            "value": "[1er anniversaire] Ticket sélectionneur de 5 souvenirs de job (rouges)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_GL_01",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 5 souvenirs de job (rouges)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_GL_01",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 4 souvenirs de job (jaunes)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_GL_01",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 3 souvenirs de job (violets)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_GL_01",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 2 souvenirs de job (bleus)"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_GL_01",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur de 1 souvenir de job (vert)"
         },
         {
             "key": "IT_US_SE_JB_05_01",
@@ -4734,23 +4834,23 @@
         },
         {
             "key": "IT_US_SE_JB_05_04",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 spinelles"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 spinelles"
         },
         {
             "key": "IT_US_SE_JB_04_05",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 citrines"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 citrines"
         },
         {
             "key": "IT_US_SE_JB_03_05",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 charoïtes"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 charoïtes"
         },
         {
             "key": "IT_US_SE_JB_02_05",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 30 azurites"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 30 azurites"
         },
         {
             "key": "IT_US_SE_JB_01_05",
-            "value": "[Vœux pour la nouvelle année] Ticket sélectionner de 15 jades"
+            "value": "[Vœux pour la nouvelle année] Ticket sélectionneur de 15 jades"
         },
         {
             "key": "IT_US_SE_JB_05_07",
@@ -4961,6 +5061,10 @@
             "value": "[Nouvel An lunaire 2021] Ticket sélectionneur d'atout-vision"
         },
         {
+            "key": "IT_US_SE_R_UR_V_GL07",
+            "value": "[1er anniversaire - Partie II] Ticket sélectionneur d'atout-vision"
+        },
+        {
             "key": "IT_US_SE_AW-ITEM_04",
             "value": "Ticket sélectionneur de 30 prismes d'éveil"
         },
@@ -4989,6 +5093,10 @@
             "value": "Ticket sélectionneur de 300 fragments de pensée élémentaires"
         },
         {
+            "key": "IT_US_SE_PI_COM_GL_06",
+            "value": "Ticket sélectionneur de 40 fragments de pensée élémentaires"
+        },
+        {
             "key": "IT_US_SE_AW-ITEM_07",
             "value": "Ticket sélectionneur de 120 prismes d'éveil"
         },
@@ -4999,6 +5107,10 @@
         {
             "key": "IT_US_SE_AW-ITEM_09",
             "value": "Ticket sélectionneur de 150 prismes d'éveil"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_10",
+            "value": "Ticket sélectionneur de 40 prismes d'éveil"
         },
         {
             "key": "IT_VPI_LW_GLEM",
@@ -5411,6 +5523,14 @@
         {
             "key": "IT_VPI_LW_ART",
             "value": "Fragment de l'atout-vision : Une année d'aventures"
+        },
+        {
+            "key": "IT_VPI_FF10_MV1",
+            "value": "Fragment de l'atout-vision : Suteki Da Ne"
+        },
+        {
+            "key": "IT_VPI_FF10_MV2",
+            "value": "Fragment de l'atout-vision : Un monde inconnu"
         },
         {
             "key": "IT_VC_EXP_01",
@@ -5877,6 +5997,10 @@
             "value": "Insigne d'avril"
         },
         {
+            "key": "IT_STAMP_2012",
+            "value": "Insigne de mai"
+        },
+        {
             "key": "IT_KEY_JP",
             "value": "Clé de PJ"
         },
@@ -5887,6 +6011,42 @@
         {
             "key": "IT_AW_VC_UR",
             "value": "Sphère d'éveil"
+        },
+        {
+            "key": "IT_PI_COM_EM_01",
+            "value": "Ticket sélectionneur de 365 fragments de pensée élémentaires"
+        },
+        {
+            "key": "IT_SB_AW_EM_01",
+            "value": "Ticket sélectionneur de 365 prismes d'éveil"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_GL_01",
+            "value": "Ticket sélectionneur de 365 alcrists élémentaires (rouges)"
+        },
+        {
+            "key": "IT_US_SE_JBEX_EM_02",
+            "value": "Ticket sélectionneur de 365 sculptures d'alcrist"
+        },
+        {
+            "key": "IT_US_SE_JB_05_ANNIV_01",
+            "value": "Ticket sélectionneur de 365 spinelles"
+        },
+        {
+            "key": "IT_PT_SKIP_FFX_1",
+            "value": "[FFX] Ticket évit'quête des Épreuves du Jugement"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF10_1",
+            "value": "[FFX] Ticket évit'boss des Épreuves du Jugement"
+        },
+        {
+            "key": "IT_PT_BOSS_FF10_1",
+            "value": "[FFX] Ticket de combat de boss"
+        },
+        {
+            "key": "IT_EC_FF10_3",
+            "value": "[FFX] Médaille des Épreuves du Jugement"
         }
     ]
 }
