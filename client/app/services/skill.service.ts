@@ -1078,6 +1078,9 @@ export class SkillService {
       case 'ABSORB_HP_ONTIME' :
         html = 'Absorb ' + this.getValue(skill, effect) + ' of the damage done' + this.getTurns(effect);
       break;
+      case 'REDUCE_COUNTER_CHANCE' :
+        html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'IMMUNE_CT_CHANGE' :
         html = 'Immune to CT change';
       break;
