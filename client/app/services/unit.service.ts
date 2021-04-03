@@ -130,7 +130,7 @@ export class UnitService {
       this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'] = units;
     }
 
-    return this[this.navService.getVersion() + '_units'];
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_units'];
   }
 
   async getUnitsForJPBuilder() {

@@ -1470,6 +1470,39 @@
     },
     {
       "names": {
+        "en": "ラマダ（Xmas） - Ramada (Winter)"
+      },
+      "stats": {
+        "HP": 2607,
+        "TP": 127,
+        "AP": 122,
+        "ATK": 545,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 99,
+        "DEX": 220,
+        "AGI": 63,
+        "LUCK": 271,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 20,
+        "MAGIC_RES": -20,
+        "POISON_RES": 50,
+        "CONFUSION_RES": 10,
+        "CHARM_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 38,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
+      },
+      "image": "lapsramd_01"
+    },
+    {
+      "names": {
         "en": "ナーシア - Nasha"
       },
       "stats": {
@@ -1501,6 +1534,40 @@
         "MAX_DAMAGE": 2000
       },
       "image": "lapsnasr"
+    },
+    {
+      "names": {
+        "en": "マシュリー（Xmas） - Machérie (Winter)"
+      },
+      "stats": {
+        "HP": 3828,
+        "TP": 142,
+        "AP": 133,
+        "ATK": 541,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 242,
+        "AGI": 59,
+        "LUCK": 215,
+        "ICE_RES": 30,
+        "WATER_RES": -10,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 0,
+        "STRIKE_RES": -20,
+        "MISSILE_RES": -20,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "STOP_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
+      },
+      "image": "lapsmacr_01"
     },
     {
       "names": {
@@ -1896,68 +1963,6 @@
     },
     {
       "names": {
-        "en": "レイン - Rain"
-      },
-      "stats": {
-        "HP": 3577,
-        "TP": 151,
-        "AP": 134,
-        "ATK": 158,
-        "DEF": 2,
-        "SPR": 23,
-        "MAG": 262,
-        "DEX": 195,
-        "AGI": 55,
-        "LUCK": 179,
-        "ICE_RES": 20,
-        "WATER_RES": -10,
-        "PIERCE_RES": 5,
-        "STRIKE_RES": -30,
-        "MISSILE_RES": 15,
-        "MAGIC_RES": 25,
-        "POISON_RES": 50,
-        "SILENCE_RES": 10,
-        "SLOW_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 69
-      },
-      "image": "lapsrain"
-    },
-    {
-      "names": {
-        "en": "Fryevia",
-        "fr": "Fryevia"
-      },
-      "stats": {
-        "HP": 3320,
-        "TP": 175,
-        "AP": 142,
-        "ATK": 94,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 330,
-        "DEX": 155,
-        "AGI": 54,
-        "LUCK": 200,
-        "FIRE_RES": -10,
-        "WIND_RES": 20,
-        "SLASH_RES": -5,
-        "PIERCE_RES": -5,
-        "STRIKE_RES": -5,
-        "MISSILE_RES": 5,
-        "MAGIC_RES": 25,
-        "PARALYZE_RES": 50,
-        "SLOW_RES": 50,
-        "BERSERK_RES": 10,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 31
-      },
-      "image": "lapsfrva"
-    },
-    {
-      "names": {
         "en": "ヴィネラ・フェネス - Vinera Fennes"
       },
       "stats": {
@@ -2050,6 +2055,36 @@
         "SLASH_ATK": 10
       },
       "image": "lapstrel"
+    },
+    {
+      "names": {
+        "en": "レイン - Rain"
+      },
+      "stats": {
+        "HP": 3577,
+        "TP": 151,
+        "AP": 134,
+        "ATK": 158,
+        "DEF": 2,
+        "SPR": 23,
+        "MAG": 262,
+        "DEX": 195,
+        "AGI": 55,
+        "LUCK": 179,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": -30,
+        "MISSILE_RES": 15,
+        "MAGIC_RES": 25,
+        "POISON_RES": 50,
+        "SILENCE_RES": 10,
+        "SLOW_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 69
+      },
+      "image": "lapsrain"
     },
     {
       "names": {
@@ -2389,39 +2424,6 @@
     },
     {
       "names": {
-        "en": "ラスウェル - Lasswell"
-      },
-      "stats": {
-        "HP": 2255,
-        "TP": 130,
-        "AP": 123,
-        "ATK": 363,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 56,
-        "DEX": 199,
-        "AGI": 64,
-        "LUCK": 228,
-        "FIRE_RES": -10,
-        "WIND_RES": 20,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -5,
-        "MISSILE_RES": 10,
-        "MAGIC_RES": -15,
-        "BLIND_RES": 50,
-        "CHARM_RES": 10,
-        "SLOW_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 22,
-        "SLASH_ATK": 5,
-        "ACCURACY": 15
-      },
-      "image": "lapslswl"
-    },
-    {
-      "names": {
         "en": "グラセラ・ウェズエット - Glaciela Wezette"
       },
       "stats": {
@@ -2485,100 +2487,36 @@
     },
     {
       "names": {
-        "en": "リレルリラ（ハロウィン） - Little Leela (Halloween)"
+        "en": "ラスウェル - Lasswell"
       },
       "stats": {
-        "HP": 2208,
-        "TP": 178,
-        "AP": 155,
-        "ATK": 100,
+        "HP": 2255,
+        "TP": 130,
+        "AP": 123,
+        "ATK": 363,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 352,
-        "DEX": 184,
-        "AGI": 66,
-        "LUCK": 203,
-        "ICE_RES": -10,
-        "EARTH_RES": 20,
-        "SLASH_RES": -10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": -10,
-        "MISSILE_RES": -5,
-        "MAGIC_RES": 20,
-        "SILENCE_RES": 50,
-        "TOAD_RES": 10,
-        "DISABLE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 118,
-        "WIND_ATK": 15,
-        "EVADE": 10
-      },
-      "image": "lapsryer_01"
-    },
-    {
-      "names": {
-        "en": "ライリュウ（ハロウィン） - Rairyuu (Halloween)"
-      },
-      "stats": {
-        "HP": 2868,
-        "TP": 133,
-        "AP": 134,
-        "ATK": 83,
-        "DEF": 6,
-        "SPR": 0,
-        "MAG": 398,
-        "DEX": 183,
-        "AGI": 58,
-        "LUCK": 216,
-        "WIND_RES": -10,
-        "LIGHTNING_RES": 20,
-        "SLASH_RES": -5,
-        "PIERCE_RES": 5,
-        "STRIKE_RES": -15,
-        "MISSILE_RES": 5,
-        "MAGIC_RES": 15,
-        "SLEEP_RES": 50,
-        "PETRIFY_RES": 10,
-        "CHARM_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 71,
-        "EARTH_ATK": 15,
-        "RES_SLASH_ATK_PENETRATION": 20
-      },
-      "image": "lapsriry_01"
-    },
-    {
-      "names": {
-        "en": "ハウレット - Howlet"
-      },
-      "stats": {
-        "HP": 2413,
-        "TP": 159,
-        "AP": 146,
-        "ATK": 79,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 475,
-        "DEX": 187,
+        "MAG": 56,
+        "DEX": 199,
         "AGI": 64,
-        "LUCK": 205,
-        "ICE_RES": -10,
-        "EARTH_RES": 20,
-        "SLASH_RES": 5,
-        "STRIKE_RES": -15,
-        "MISSILE_RES": -5,
-        "MAGIC_RES": 15,
-        "SILENCE_RES": 50,
-        "PARALYZE_RES": 50,
+        "LUCK": 228,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -15,
+        "BLIND_RES": 50,
         "CHARM_RES": 10,
+        "SLOW_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 73,
-        "SPIRIT_PENETRATION": 20
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 22,
+        "SLASH_ATK": 5,
+        "ACCURACY": 15
       },
-      "image": "lapshwlt"
+      "image": "lapslswl"
     },
     {
       "names": {
@@ -2648,6 +2586,67 @@
     },
     {
       "names": {
+        "en": "リリシュ（水着）"
+      },
+      "stats": {
+        "HP": 2230,
+        "TP": 130,
+        "AP": 123,
+        "ATK": 319,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 69,
+        "DEX": 265,
+        "AGI": 61,
+        "LUCK": 193,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": -15,
+        "PIERCE_RES": 15,
+        "MAGIC_RES": -10,
+        "BLIND_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 2
+      },
+      "image": "lapslils_01"
+    },
+    {
+      "names": {
+        "en": "ハウレット - Howlet"
+      },
+      "stats": {
+        "HP": 2413,
+        "TP": 159,
+        "AP": 146,
+        "ATK": 79,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 475,
+        "DEX": 187,
+        "AGI": 64,
+        "LUCK": 205,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 5,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 15,
+        "SILENCE_RES": 50,
+        "PARALYZE_RES": 50,
+        "CHARM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 73,
+        "SPIRIT_PENETRATION": 20
+      },
+      "image": "lapshwlt"
+    },
+    {
+      "names": {
         "en": "チェル - Chel"
       },
       "stats": {
@@ -2680,6 +2679,69 @@
         "ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapschel"
+    },
+    {
+      "names": {
+        "en": "ルアーサ - Luartha"
+      },
+      "stats": {
+        "HP": 1751,
+        "TP": 135,
+        "AP": 127,
+        "ATK": 405,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 75,
+        "DEX": 263,
+        "AGI": 59,
+        "LUCK": 189,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 10,
+        "MAGIC_RES": -5,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 18,
+        "ICE_KILLER": 15
+      },
+      "image": "lapslath"
+    },
+    {
+      "names": {
+        "en": "タイタス - Tyytas"
+      },
+      "stats": {
+        "HP": 2809,
+        "TP": 116,
+        "AP": 100,
+        "ATK": 173,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 94,
+        "DEX": 178,
+        "AGI": 48,
+        "LUCK": 173,
+        "LIGHT_RES": -15,
+        "SLASH_RES": -25,
+        "PIERCE_RES": 20,
+        "MISSILE_RES": 30,
+        "MAGIC_RES": -20,
+        "POISON_RES": 10,
+        "BLIND_RES": -25,
+        "SLOW_RES": 50,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 20,
+        "CRITIC_RATE": 4,
+        "AP_CONSUMPTION": 25
+      },
+      "image": "lapstitu"
     },
     {
       "names": {
@@ -2777,168 +2839,34 @@
     },
     {
       "names": {
-        "en": "ラマダ（Xmas） - Ramada (Winter)"
+        "en": "キトン（水着）"
       },
       "stats": {
-        "HP": 2607,
-        "TP": 127,
-        "AP": 122,
-        "ATK": 545,
+        "HP": 2295,
+        "TP": 136,
+        "AP": 144,
+        "ATK": 100,
         "DEF": 0,
-        "SPR": 0,
-        "MAG": 99,
-        "DEX": 220,
+        "SPR": 9,
+        "MAG": 366,
+        "DEX": 191,
         "AGI": 63,
-        "LUCK": 271,
-        "FIRE_RES": 20,
-        "LIGHTNING_RES": -10,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": 20,
-        "MAGIC_RES": -20,
-        "POISON_RES": 50,
-        "CONFUSION_RES": 10,
-        "CHARM_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 21,
-        "CRITIC_RATE": 38,
-        "INCREASE_UNIT_LEVEL": 0,
-        "MAX_DAMAGE": 2000
-      },
-      "image": "lapsramd_01"
-    },
-    {
-      "names": {
-        "en": "マシュリー（Xmas） - Machérie (Winter)"
-      },
-      "stats": {
-        "HP": 3828,
-        "TP": 142,
-        "AP": 133,
-        "ATK": 541,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 84,
-        "DEX": 242,
-        "AGI": 59,
-        "LUCK": 215,
-        "ICE_RES": 30,
-        "WATER_RES": -10,
-        "SLASH_RES": 20,
-        "PIERCE_RES": 0,
-        "STRIKE_RES": -20,
-        "MISSILE_RES": -20,
-        "MAGIC_RES": 20,
-        "PARALYZE_RES": 50,
-        "STOP_RES": 10,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 4,
-        "INITIAL_AP": 23,
-        "CRITIC_RATE": 23,
-        "INCREASE_UNIT_LEVEL": 0,
-        "MAX_DAMAGE": 2000
-      },
-      "image": "lapsmacr_01"
-    },
-    {
-      "names": {
-        "en": "ルアーサ - Luartha"
-      },
-      "stats": {
-        "HP": 1751,
-        "TP": 135,
-        "AP": 127,
-        "ATK": 405,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 75,
-        "DEX": 263,
-        "AGI": 59,
-        "LUCK": 189,
+        "LUCK": 200,
         "ICE_RES": 20,
         "WATER_RES": -10,
-        "SLASH_RES": 20,
-        "PIERCE_RES": 10,
-        "MAGIC_RES": -5,
-        "CONFUSION_RES": 50,
-        "STOP_RES": 50,
-        "DISABLE_RES": 10,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 18,
-        "ICE_KILLER": 15
-      },
-      "image": "lapslath"
-    },
-    {
-      "names": {
-        "en": "タイタス - Tyytas"
-      },
-      "stats": {
-        "HP": 2809,
-        "TP": 116,
-        "AP": 100,
-        "ATK": 173,
-        "DEF": 6,
-        "SPR": 0,
-        "MAG": 94,
-        "DEX": 178,
-        "AGI": 48,
-        "LUCK": 173,
-        "LIGHT_RES": -15,
-        "SLASH_RES": -25,
-        "PIERCE_RES": 20,
-        "MISSILE_RES": 30,
-        "MAGIC_RES": -20,
-        "POISON_RES": 10,
-        "BLIND_RES": -25,
-        "SLOW_RES": 50,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 20,
-        "CRITIC_RATE": 4,
-        "AP_CONSUMPTION": 25
-      },
-      "image": "lapstitu"
-    },
-    {
-      "names": {
-        "en": "ディーン - Duane"
-      },
-      "stats": {
-        "HP": 4560,
-        "TP": 141,
-        "AP": 133,
-        "ATK": 550,
-        "DEF": 10,
-        "SPR": 0,
-        "MAG": 88,
-        "DEX": 235,
-        "AGI": 62,
-        "LUCK": 232,
-        "LIGHT_RES": -10,
-        "SLASH_RES": 10,
-        "PIERCE_RES": 15,
-        "STRIKE_RES": -15,
+        "SLASH_RES": 15,
+        "STRIKE_RES": -5,
         "MISSILE_RES": -5,
-        "MAGIC_RES": 5,
-        "CONFUSION_RES": 50,
+        "MAGIC_RES": 10,
+        "CONFUSION_RES": 10,
         "STOP_RES": 50,
-        "DISABLE_RES": 10,
+        "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 23,
-        "CRITIC_RATE": 24,
-        "INCREASE_UNIT_LEVEL": 0,
-        "MAX_DAMAGE": 2000,
-        "DARK_ATK": 15,
-        "DEFENSE_PENETRATION": 20
+        "INITIAL_AP": 72,
+        "ATTACK_RES": 10
       },
-      "image": "lapsdean"
+      "image": "lapskton_01"
     },
     {
       "names": {
@@ -3074,6 +3002,39 @@
     },
     {
       "names": {
+        "en": "リレルリラ（ハロウィン） - Little Leela (Halloween)"
+      },
+      "stats": {
+        "HP": 2208,
+        "TP": 178,
+        "AP": 155,
+        "ATK": 100,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 352,
+        "DEX": 184,
+        "AGI": 66,
+        "LUCK": 203,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": -10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 20,
+        "SILENCE_RES": 50,
+        "TOAD_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 118,
+        "WIND_ATK": 15,
+        "EVADE": 10
+      },
+      "image": "lapsryer_01"
+    },
+    {
+      "names": {
         "en": "ラルドー - Rhaldor"
       },
       "stats": {
@@ -3141,74 +3102,36 @@
     },
     {
       "names": {
-        "en": "ヴィネラ（Xmas） - Vinera (Winter)"
+        "en": "ライリュウ（ハロウィン） - Rairyuu (Halloween)"
       },
       "stats": {
-        "HP": 3969,
-        "TP": 126,
-        "AP": 143,
-        "ATK": 502,
-        "DEF": 10,
-        "SPR": 8,
-        "MAG": 103,
-        "DEX": 219,
-        "AGI": 60,
-        "LUCK": 245,
+        "HP": 2868,
+        "TP": 133,
+        "AP": 134,
+        "ATK": 83,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 398,
+        "DEX": 183,
+        "AGI": 58,
+        "LUCK": 216,
         "WIND_RES": -10,
         "LIGHTNING_RES": 20,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": 5,
-        "MISSILE_RES": -15,
-        "MAGIC_RES": 15,
-        "CONFUSION_RES": 50,
-        "CHARM_RES": 10,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 2,
-        "INITIAL_AP": 25,
-        "CRITIC_RATE": 9,
-        "INCREASE_UNIT_LEVEL": 0,
-        "MAX_DAMAGE": 2000,
-        "EARTH_ATK": 15
-      },
-      "image": "lapsvnla_01"
-    },
-    {
-      "names": {
-        "en": "ヴィクトラ（Xmas） - Viktora (Winter)"
-      },
-      "stats": {
-        "HP": 2982,
-        "TP": 134,
-        "AP": 130,
-        "ATK": 449,
-        "DEF": 4,
-        "SPR": 0,
-        "MAG": 91,
-        "DEX": 328,
-        "AGI": 61,
-        "LUCK": 228,
-        "FIRE_RES": 20,
-        "LIGHTNING_RES": -10,
-        "SLASH_RES": 5,
-        "PIERCE_RES": 20,
+        "SLASH_RES": -5,
+        "PIERCE_RES": 5,
         "STRIKE_RES": -15,
         "MISSILE_RES": 5,
-        "MAGIC_RES": -5,
+        "MAGIC_RES": 15,
         "SLEEP_RES": 50,
-        "SLOW_RES": 50,
-        "DISABLE_RES": 10,
+        "PETRIFY_RES": 10,
+        "CHARM_RES": 50,
         "MOVE": 3,
-        "JUMP": 2,
-        "INITIAL_AP": 23,
-        "INCREASE_UNIT_LEVEL": 0,
-        "CRITIC_RATE": 8,
-        "MAX_DAMAGE": 2000,
-        "WATER_ATK": 15,
-        "AP_CONSUMPTION": 20
+        "JUMP": 1,
+        "INITIAL_AP": 71,
+        "EARTH_ATK": 15,
+        "RES_SLASH_ATK_PENETRATION": 20
       },
-      "image": "lapsvktr_01"
+      "image": "lapsriry_01"
     },
     {
       "names": {
@@ -3408,6 +3331,554 @@
         "ICE_ATK": 15
       },
       "image": "ff10aron"
+    },
+    {
+      "names": {
+        "en": "ヴィネラ（Xmas） - Vinera (Winter)"
+      },
+      "stats": {
+        "HP": 3969,
+        "TP": 126,
+        "AP": 143,
+        "ATK": 502,
+        "DEF": 10,
+        "SPR": 8,
+        "MAG": 103,
+        "DEX": 219,
+        "AGI": 60,
+        "LUCK": 245,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 5,
+        "MISSILE_RES": -15,
+        "MAGIC_RES": 15,
+        "CONFUSION_RES": 50,
+        "CHARM_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 9,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsvnla_01"
+    },
+    {
+      "names": {
+        "en": "ヴィクトラ（Xmas） - Viktora (Winter)"
+      },
+      "stats": {
+        "HP": 2982,
+        "TP": 134,
+        "AP": 130,
+        "ATK": 449,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 328,
+        "AGI": 61,
+        "LUCK": 228,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": 20,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -5,
+        "SLEEP_RES": 50,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "AP_CONSUMPTION": 20
+      },
+      "image": "lapsvktr_01"
+    },
+    {
+      "names": {
+        "en": "2B"
+      },
+      "stats": {
+        "HP": 3181,
+        "TP": 122,
+        "AP": 122,
+        "ATK": 531,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 209,
+        "AGI": 66,
+        "LUCK": 282,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -15,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -5,
+        "PARALYZE_RES": 50,
+        "CHARM_RES": 50,
+        "DOOM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "EVADE": 10
+      },
+      "image": "niern2tb"
+    },
+    {
+      "names": {
+        "en": "9S"
+      },
+      "stats": {
+        "HP": 3684,
+        "TP": 133,
+        "AP": 126,
+        "ATK": 493,
+        "DEF": 22,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 272,
+        "AGI": 60,
+        "LUCK": 221,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 20,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -10,
+        "CONFUSION_RES": 10,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 12,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15
+      },
+      "image": "niern9ts"
+    },
+    {
+      "names": {
+        "en": "リオニス王モント"
+      },
+      "stats": {
+        "HP": 5236,
+        "TP": 132,
+        "AP": 153,
+        "ATK": 403,
+        "DEF": 14,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 237,
+        "AGI": 65,
+        "LUCK": 244,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 25,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "POISON_RES": 10,
+        "BLIND_RES": 50,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 27,
+        "CRITIC_RATE": 13,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "FIRE_ATK": 15,
+        "AOE_RES": 15
+      },
+      "image": "lapsmont_01"
+    },
+    {
+      "names": {
+        "en": "リューエル"
+      },
+      "stats": {
+        "HP": 3514,
+        "TP": 149,
+        "AP": 147,
+        "ATK": 88,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 515,
+        "DEX": 255,
+        "AGI": 61,
+        "LUCK": 224,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 20,
+        "BLIND_RES": 50,
+        "CONFUSION_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 114,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsryel"
+    },
+    {
+      "names": {
+        "en": "シルマ"
+      },
+      "stats": {
+        "HP": 2658,
+        "TP": 148,
+        "AP": 132,
+        "ATK": 260,
+        "DEF": 0,
+        "SPR": 12,
+        "MAG": 455,
+        "DEX": 223,
+        "AGI": 67,
+        "LUCK": 197,
+        "EARTH_RES": -15,
+        "WATER_RES": 15,
+        "SLASH_RES": 5,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 10,
+        "POISON_RES": -25,
+        "CONFUSION_RES": 50,
+        "CHARM_RES": 50,
+        "SLOW_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 82,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 10
+      },
+      "image": "lapssirm"
+    },
+    {
+      "names": {
+        "en": "ヘレナ（黒衣の魔女）"
+      },
+      "stats": {
+        "HP": 3484,
+        "TP": 187,
+        "AP": 187,
+        "ATK": 82,
+        "DEF": 0,
+        "SPR": 6,
+        "MAG": 519,
+        "DEX": 254,
+        "AGI": 63,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 15,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 150,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 20
+      },
+      "image": "lapshlna_01"
+    },
+    {
+      "names": {
+        "en": "サリア（バレンタイン）"
+      },
+      "stats": {
+        "HP": 2989,
+        "TP": 157,
+        "AP": 195,
+        "ATK": 95,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 477,
+        "DEX": 208,
+        "AGI": 57,
+        "LUCK": 227,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MAGIC_RES": 10,
+        "SLEEP_RES": 50,
+        "CONFUSION_RES": 10,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 101,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "SPIRIT_PENETRATION": 25
+      },
+      "image": "lapsthla_01"
+    },
+    {
+      "names": {
+        "en": "カミッロ"
+      },
+      "stats": {
+        "HP": 3378,
+        "TP": 137,
+        "AP": 141,
+        "ATK": 505,
+        "DEF": 2,
+        "SPR": 10,
+        "MAG": 84,
+        "DEX": 234,
+        "AGI": 62,
+        "LUCK": 219,
+        "DARK_RES": -10,
+        "SLASH_RES": 0,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15
+      },
+      "image": "lapscmlo"
+    },
+    {
+      "names": {
+        "en": "ディーン - Duane"
+      },
+      "stats": {
+        "HP": 4560,
+        "TP": 141,
+        "AP": 133,
+        "ATK": 550,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 88,
+        "DEX": 235,
+        "AGI": 62,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 15,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 5,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "lapsdean"
+    },
+    {
+      "names": {
+        "en": "ムーア"
+      },
+      "stats": {
+        "HP": 3126,
+        "TP": 159,
+        "AP": 179,
+        "ATK": 94,
+        "DEF": 0,
+        "SPR": 4,
+        "MAG": 532,
+        "DEX": 262,
+        "AGI": 63,
+        "LUCK": 241,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "PIERCE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "SILENCE_RES": 50,
+        "CONFUSION_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 89,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 15
+      },
+      "image": "lapsmore"
+    },
+    {
+      "names": {
+        "en": "コーウェル"
+      },
+      "stats": {
+        "HP": 2871,
+        "TP": 142,
+        "AP": 139,
+        "ATK": 343,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 350,
+        "AGI": 69,
+        "LUCK": 229,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "BLIND_RES": 10,
+        "PARALYZE_RES": 50,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 26,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "MISSILE_ATK": 10
+      },
+      "image": "lapscwel"
+    },
+    {
+      "names": {
+        "en": "ムラガ・フェネス - Muraga Fennes"
+      },
+      "stats": {
+        "HP": 4030,
+        "TP": 119,
+        "AP": 117,
+        "ATK": 607,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 247,
+        "AGI": 62,
+        "LUCK": 231,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 0,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 0,
+        "MAGIC_RES": -10,
+        "SLOW_RES": 50,
+        "IMMOBILIZE_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsmurg"
+    },
+    {
+      "names": {
+        "en": "シャルロット"
+      },
+      "stats": {
+        "HP": 4717,
+        "TP": 131,
+        "AP": 111,
+        "ATK": 431,
+        "DEF": 0,
+        "SPR": 22,
+        "MAG": 84,
+        "DEX": 231,
+        "AGI": 64,
+        "LUCK": 243,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 10,
+        "TOAD_RES": 50,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 19,
+        "CRITIC_RATE": 12,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15
+      },
+      "image": "lapscrlt"
+    },
+    {
+      "names": {
+        "en": "Fryevia",
+        "fr": "Fryevia"
+      },
+      "stats": {
+        "HP": 3320,
+        "TP": 175,
+        "AP": 142,
+        "ATK": 94,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 330,
+        "DEX": 155,
+        "AGI": 54,
+        "LUCK": 200,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": -5,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 25,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 31
+      },
+      "image": "lapsfrva"
     }
   ]
 }
