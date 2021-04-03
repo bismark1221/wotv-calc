@@ -14,6 +14,17 @@ export class SimulatorService {
     dark: 'light'
   };
 
+  private elementWeakness = {
+    fire: 'water',
+    ice: 'fire',
+    wind: 'ice',
+    earth: 'wind',
+    lightning: 'earth',
+    water: 'lightning',
+    light: '',
+    dark: ''
+  };
+
   private species = [
     'human',
     'netherBeast',
@@ -549,16 +560,12 @@ export class SimulatorService {
       // @TODO manage kotetsu
     }
 
+
+    /***************/
+    /* Damage Part */
+    /***************/
     let damage = Math.round(baseDamage * this.getMultiplier(unit, dataSimulator, critic, addDamageValue));
     console.log('damage before DEF, ...');
-    console.log(damage);
-
-    damage = Math.round(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
-    console.log('damage after DEF, ...');
-    console.log(damage);
-
-    damage = Math.round(damage * this.getResistanceMultiplier(unit, dataSimulator));
-    console.log('damage after resistance, ...');
     console.log(damage);
 
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
@@ -571,9 +578,21 @@ export class SimulatorService {
     console.log('damage after brave');
     console.log(damage);
 
-    damage = Math.round(damage * (1 + (this.elementAdvantage[unit.element] === dataSimulator.target.element ? 0.25 : 0)));
+    damage = Math.round(damage * (1 + (this.elementAdvantage[unit.element] === dataSimulator.target.element ? 0.25 : 0) - ((this.elementWeakness[unit.element] === dataSimulator.target.element ? 0.25 : 0))));
     console.log('damage element advantage');
     console.log(damage);
+
+    /****************/
+    /* Defense Part */
+    /****************/
+    damage = Math.round(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
+    console.log('damage after DEF, ...');
+    console.log(damage);
+
+    damage = Math.round(damage * this.getResistanceMultiplier(unit, dataSimulator));
+    console.log('damage after resistance, ...');
+    console.log(damage);
+
 
     if (damage < 0) {
       damage = 0;

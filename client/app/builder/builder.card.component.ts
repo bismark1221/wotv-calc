@@ -71,6 +71,7 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
             if (cardData) {
               // @ts-ignore
               await this.selectCard(cardData.dataId, cardData);
+              this.card.storeId = data;
             }
           });
         }

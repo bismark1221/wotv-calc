@@ -65,6 +65,7 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
             if (equipmentData) {
               // @ts-ignore
               await this.selectEquipment(equipmentData.dataId, equipmentData);
+              this.equipment.storeId = data;
             }
           });
         }

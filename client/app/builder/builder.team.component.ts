@@ -112,6 +112,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       if (data) {
         this.teamService.getStoredTeam(data).subscribe(async teamData => {
           await this.teamService.updateTeam(teamData);
+          // @ts-ignore
+          this.team.storeId = data;
 
           for (let unitIndex = 0; unitIndex <= this.team.units.length - 1; unitIndex++) {
             const unit = this.team.units[unitIndex];

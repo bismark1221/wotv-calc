@@ -107,6 +107,7 @@ export class BuilderEsperComponent implements OnInit, AfterViewInit {
             if (esperData) {
               // @ts-ignore
               await this.selectEsper(esperData.dataId, esperData);
+              this.esper.storeId = data;
             }
           });
         }

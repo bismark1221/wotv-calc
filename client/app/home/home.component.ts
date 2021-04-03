@@ -36,6 +36,7 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_FF10_MV1'},
           {type: 'card', dataId: 'VC_FF10_MV2'},
           {type: 'equipment', dataId: 'AF_FF10_ACCE_001'},
+          {type: 'equipment', dataId: 'AF_LOT_FF10_BSW_000'},
 
           {type: 'unit', dataId: 'UN_LW_P_ZIZA'},
           {type: 'unit', dataId: 'UN_LW_P_AILN'}

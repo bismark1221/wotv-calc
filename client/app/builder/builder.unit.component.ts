@@ -164,6 +164,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
             if (unitData) {
               // @ts-ignore
               await this.selectUnit(unitData.dataId, unitData);
+              this.unit.storeId = data;
             }
           });
         }
