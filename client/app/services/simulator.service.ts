@@ -585,14 +585,21 @@ export class SimulatorService {
     /****************/
     /* Defense Part */
     /****************/
+    damage = Math.round(damage * this.getDamageResistanceMultiplier(unit, dataSimulator));
+    console.log('damage after damage resistance, ...');
+    console.log(damage);
+
     damage = Math.round(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
     console.log('damage after DEF, ...');
     console.log(damage);
 
-    damage = Math.round(damage * this.getResistanceMultiplier(unit, dataSimulator));
-    console.log('damage after resistance, ...');
+    damage = Math.round(damage * this.getElementResistanceMultiplier(unit, dataSimulator));
+    console.log('damage after element resistance, ...');
     console.log(damage);
 
+    damage = Math.round(damage * this.getSingleOrAoeResistanceMultiplier(unit, dataSimulator));
+    console.log('damage after single/aoe resistance, ...');
+    console.log(damage);
 
     if (damage < 0) {
       damage = 0;
@@ -693,7 +700,7 @@ export class SimulatorService {
     return 1 - ((defensiveValue / 100) * (1 - (ignoreDefensive / 100)));
   }
 
-  getResistanceMultiplier(unit, dataSimulator) {
+  getDamageResistanceMultiplier(unit, dataSimulator) {
     let ignoreDefensive = 0;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
 
@@ -705,6 +712,14 @@ export class SimulatorService {
       });
     }
 
+    return 1 - ((dataSimulator.realStats.target.damageTypeRes / 100) * (1 - (ignoreDefensive / 100)));
+  }
+
+  getElementResistanceMultiplier(unit, dataSimulator) {
+    return (1 - dataSimulator.realStats.target.elementRes / 100);
+  }
+
+  getSingleOrAoeResistanceMultiplier(unit, dataSimulator) {
     let aoeOrSingleRes = 0;
     if (dataSimulator.unit.selectedSkill.aoe) {
       aoeOrSingleRes = 1 - dataSimulator.realStats.target.aoe_res / 100;
@@ -712,9 +727,7 @@ export class SimulatorService {
       aoeOrSingleRes = 1 - dataSimulator.realStats.target.attack_res / 100;
     }
 
-    return (1 - dataSimulator.realStats.target.elementRes / 100)
-      * (1 - ((dataSimulator.realStats.target.damageTypeRes / 100) * (1 - (ignoreDefensive / 100))))
-      * aoeOrSingleRes;
+    return aoeOrSingleRes;
   }
 
   calculateBuffValue(unit, buffType, value) {

@@ -999,6 +999,9 @@ export class Unit {
       }
     });
 
+    // @TODO REMOVE !!!!
+    // this.stats.ATK.total += 1;
+
     statsToRemove.forEach(stat => {
       delete this.stats[stat];
     });
