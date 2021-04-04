@@ -564,40 +564,40 @@ export class SimulatorService {
     /***************/
     /* Damage Part */
     /***************/
-    let damage = Math.round(baseDamage * this.getMultiplier(unit, dataSimulator, critic, addDamageValue));
+    let damage = Math.floor(baseDamage * this.getMultiplier(unit, dataSimulator, critic, addDamageValue));
     console.log('damage before DEF, ...');
     console.log(damage);
 
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
-      damage = Math.round(damage * (0.5 + ((dataSimulator.unit.faith + dataSimulator.realStats.target.faith) / 100)));
+      damage = Math.floor(damage * (0.5 + ((dataSimulator.unit.faith + dataSimulator.realStats.target.faith) / 100)));
     } else if (dataSimulator.unit.selectedSkill.based === 'physic') {
-      damage = Math.round(damage * (0.5 + (dataSimulator.unit.brave / 100)));
+      damage = Math.floor(damage * (0.5 + (dataSimulator.unit.brave / 100)));
     } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {
       // @TODO manage kotetsu
     }
     console.log('damage after brave');
     console.log(damage);
 
-    damage = Math.round(damage * (1 + (this.elementAdvantage[unit.element] === dataSimulator.target.element ? 0.25 : 0) - ((this.elementWeakness[unit.element] === dataSimulator.target.element ? 0.25 : 0))));
+    damage = Math.floor(damage * (1 + (this.elementAdvantage[unit.element] === dataSimulator.target.element ? 0.25 : 0) - ((this.elementWeakness[unit.element] === dataSimulator.target.element ? 0.25 : 0))));
     console.log('damage element advantage');
     console.log(damage);
 
     /****************/
     /* Defense Part */
     /****************/
-    damage = Math.round(damage * this.getDamageResistanceMultiplier(unit, dataSimulator));
+    damage = Math.floor(damage * this.getDamageResistanceMultiplier(unit, dataSimulator));
     console.log('damage after damage resistance, ...');
     console.log(damage);
 
-    damage = Math.round(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
+    damage = Math.floor(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
     console.log('damage after DEF, ...');
     console.log(damage);
 
-    damage = Math.round(damage * this.getElementResistanceMultiplier(unit, dataSimulator));
+    damage = Math.floor(damage * this.getElementResistanceMultiplier(unit, dataSimulator));
     console.log('damage after element resistance, ...');
     console.log(damage);
 
-    damage = Math.round(damage * this.getSingleOrAoeResistanceMultiplier(unit, dataSimulator));
+    damage = Math.floor(damage * this.getSingleOrAoeResistanceMultiplier(unit, dataSimulator));
     console.log('damage after single/aoe resistance, ...');
     console.log(damage);
 
@@ -624,8 +624,8 @@ export class SimulatorService {
     }
 
     console.log('SKILL BONUS');
-    console.log(Math.round(damage));
-    return Math.round(damage);
+    console.log(Math.floor(damage));
+    return Math.floor(damage);
   }
 
   getMultiplier(unit, dataSimulator, critic = false, addDamageValue = 0) {
