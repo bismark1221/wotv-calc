@@ -50,8 +50,8 @@ export class SimulatorService {
   }
 
   calculateDamageSim(unit, dataSimulator) {
-    console.log(unit);
-    console.log(dataSimulator);
+    // console.log(unit);
+    // console.log(dataSimulator);
 
     if (dataSimulator && dataSimulator.unit && dataSimulator.unit.selectedSkill) {
       this.manageMaths(unit, dataSimulator);
@@ -178,16 +178,16 @@ export class SimulatorService {
       }
     });
 
-    console.log('Skill effects');
-    console.log(dataSimulator.skillEffects);
+    // console.log('Skill effects');
+    // console.log(dataSimulator.skillEffects);
 
-    console.log('Real stats');
-    console.log(dataSimulator.realStats);
+    // console.log('Real stats');
+    // console.log(dataSimulator.realStats);
   }
 
   applyEffectToUnit(unit, dataSimulator, effect) {
-    console.log('applyEffectToUnit');
-    console.log(effect);
+    // console.log('applyEffectToUnit');
+    // console.log(effect);
 
     const effectType = effect.type;
     const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
@@ -292,8 +292,8 @@ export class SimulatorService {
   }
 
   applyEffectToTarget(unit, dataSimulator, effect) {
-    console.log('applyEffectToTarget');
-    console.log(effect);
+    // console.log('applyEffectToTarget');
+    // console.log(effect);
 
     const effectType = effect.type;
     const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
@@ -560,13 +560,12 @@ export class SimulatorService {
       // @TODO manage kotetsu
     }
 
-
     /***************/
     /* Damage Part */
     /***************/
     let damage = Math.floor(baseDamage * this.getMultiplier(unit, dataSimulator, critic, addDamageValue));
-    console.log('damage before DEF, ...');
-    console.log(damage);
+    // console.log('damage before DEF, ...');
+    // console.log(damage);
 
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
       damage = Math.floor(damage * (0.5 + ((dataSimulator.unit.faith + dataSimulator.realStats.target.faith) / 100)));
@@ -575,37 +574,41 @@ export class SimulatorService {
     } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {
       // @TODO manage kotetsu
     }
-    console.log('damage after brave');
-    console.log(damage);
+    // console.log('damage after brave');
+    // console.log(damage);
 
     damage = Math.floor(damage * (1 + (this.elementAdvantage[unit.element] === dataSimulator.target.element ? 0.25 : 0) - ((this.elementWeakness[unit.element] === dataSimulator.target.element ? 0.25 : 0))));
-    console.log('damage element advantage');
-    console.log(damage);
+    // console.log('damage element advantage');
+    // console.log(damage);
 
     /****************/
     /* Defense Part */
     /****************/
     damage = Math.floor(damage * this.getDamageResistanceMultiplier(unit, dataSimulator));
-    console.log('damage after damage resistance, ...');
-    console.log(damage);
+    // console.log('damage after damage resistance, ...');
+    // console.log(damage);
 
     damage = Math.floor(damage * this.getDefensiveMultiplier(unit, dataSimulator, dataSimulator.unit.selectedSkill.based === 'magic' ? 'spr' : 'def'));
-    console.log('damage after DEF, ...');
-    console.log(damage);
+    // console.log('damage after DEF, ...');
+    // console.log(damage);
 
     damage = Math.floor(damage * this.getElementResistanceMultiplier(unit, dataSimulator));
-    console.log('damage after element resistance, ...');
-    console.log(damage);
+    // console.log('damage after element resistance, ...');
+    // console.log(damage);
 
     damage = Math.floor(damage * this.getSingleOrAoeResistanceMultiplier(unit, dataSimulator));
-    console.log('damage after single/aoe resistance, ...');
-    console.log(damage);
+    // console.log('damage after single/aoe resistance, ...');
+    // console.log(damage);
 
     if (damage < 0) {
       damage = 0;
     }
 
     return damage;
+  }
+
+  isMultiHits(skill) {
+    return skill.combo ? true : false;
   }
 
   calculateSkillBonus(mainStat, dex, agi, luck, formula) {
@@ -623,16 +626,16 @@ export class SimulatorService {
       damage += mainStat;
     }
 
-    console.log('SKILL BONUS');
-    console.log(Math.floor(damage));
+    // console.log('SKILL BONUS');
+    // console.log(Math.floor(damage));
     return Math.floor(damage);
   }
 
   getMultiplier(unit, dataSimulator, critic = false, addDamageValue = 0) {
-    let multiplier = this.getDamageValue(dataSimulator.unit.selectedSkill) + addDamageValue;
+    let multiplier = this.getDamageValue(unit, dataSimulator) + addDamageValue;
 
-    console.log('skill modifier');
-    console.log(multiplier);
+    // console.log('skill modifier');
+    // console.log(multiplier);
 
     const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
     const damageType = dataSimulator.unit.selectedSkill.damage.type;
@@ -645,8 +648,8 @@ export class SimulatorService {
         || statType === targetElement.toUpperCase() + '_KILLER'
         || statType === targetRace.toUpperCase() + '_KILLER'
       ) {
-        console.log('multiplier -- ' + statType);
-        console.log(dataSimulator.realStats.unit[statType]);
+        // console.log('multiplier -- ' + statType);
+        // console.log(dataSimulator.realStats.unit[statType]);
         multiplier += dataSimulator.realStats.unit[statType];
       }
     });
@@ -658,7 +661,8 @@ export class SimulatorService {
     return multiplier / 100;
   }
 
-  private getDamageValue(skill) {
+  private getDamageValue(unit, dataSimulator) {
+    const skill = dataSimulator.unit.selectedSkill;
     const effect = skill.damage;
     let value = 0;
 
@@ -681,6 +685,44 @@ export class SimulatorService {
         value = minValue;
       }
     }
+
+    // Be careful the first hit don't increase chain mod
+    let chainMod = 1;
+    let ChainModType = false;
+    let ChainModElement = false;
+
+    if (skill.damage.type && skill.damage.type !== 'all' && skill.damage.type !== 'magic') {
+      ChainModType = true;
+    }
+
+    const elementSkill = dataSimulator.unit.selectedSkill.elem && dataSimulator.unit.selectedSkill.elem[0] ? dataSimulator.unit.selectedSkill.elem[0] : unit.element;
+    if (elementSkill !== 'neutral') {
+      ChainModElement = true;
+    }
+
+    if (this.isMultiHits(skill)) {
+      value = value * ((100 - skill.combo.rate) * skill.combo.num / 100);
+
+      let multiHitsMod = 0;
+
+      for (let i = 0; i < skill.combo.num; i++) {
+        const newMod = 0
+          + (ChainModType ? 0.2 * (i + dataSimulator.unit.chain.type) : 0)
+          + (ChainModElement ? 0.2 * (i + dataSimulator.unit.chain.element) : 0);
+
+        multiHitsMod += 1 + (newMod > 4 ? 4 : newMod);
+      }
+
+      chainMod = multiHitsMod / skill.combo.num;
+    } else if (dataSimulator.unit.chain.type >= 1 || dataSimulator.unit.chain.element >= 1) {
+      const newMod = 0
+        + (ChainModType && dataSimulator.unit.chain.type >= 1 ? 0.2 * dataSimulator.unit.chain.type : 0)
+        + (ChainModElement && dataSimulator.unit.chain.element >= 1 ? 0.2 * dataSimulator.unit.chain.element : 0);
+
+      chainMod += (newMod > 4 ? 4 : newMod);
+    }
+
+    value = Math.floor(value * chainMod);
 
     return value;
   }

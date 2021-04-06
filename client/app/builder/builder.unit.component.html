@@ -1034,7 +1034,7 @@
 
               <div>
                 <div class="titleSim">
-                  External Buffs :
+                  External Buffs
                 </div>
 
                 <div class="simMiniStats">
@@ -1174,11 +1174,31 @@
                 </div>
               </div>
 
-              <!-- <div>
-                <div>Chain :</div>
-                <div>Element <input [(ngModel)]="damageSim.unit.chain.element" type="number" /></div>
-                <div>Type <input [(ngModel)]="damageSim.unit.chain.type" type="number" /></div>
-              </div> -->
+              <div>
+                <div class="titleSim">
+                  Chain
+                </div>
+
+                <div class="simLongStats">
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Damage Type</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.type" type="number"/>
+                    </div>
+                  </div>
+
+                  <div class="inlineInputGroup longStatGroup">
+                    <div class="input-group inputUnitStatBlock">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Element</span>
+                      </div>
+                      <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.element" type="number"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </td>
             <td class="targetTd">
               Target

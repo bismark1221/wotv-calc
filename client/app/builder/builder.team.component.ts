@@ -287,7 +287,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.calculateDamageSim(pos);
   }
 
-  updateJobLevel(pos, jobNumber) {
+  updateJobLevel(pos) {
     this.teamService.changeJobLevel(pos);
     this.updateActiveSkillsForSim();
   }

@@ -133,7 +133,7 @@
           <div *ngFor="let i of [0, 1, 2]" class="jobDiv" [ngClass]="{'lastJobDiv': i === 2, 'subjobDisable': !unit.jobsData[i].unlocked}">
             <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + unit.jobsData[i].image + '.png'}}" />
 
-            <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(unitPos, i)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
+            <ng-select placeholder="Select a level" class="select-job select-left-builder" [items]="unit.tableJobLevels[i]" [(ngModel)]="unit.jobsData[i].level" (ngModelChange)="updateJobLevel(unitPos)" [clearable]="false" [disabled]="!unit.jobsData[i].unlocked">
               <ng-template ng-label-tmp let-item="item">
                 {{ item }}
               </ng-template>
@@ -422,7 +422,7 @@
 
           <div>
             <div class="titleSim">
-              External Buffs :
+              External Buffs
             </div>
 
             <div class="simMiniStats">
@@ -562,11 +562,31 @@
             </div>
           </div>
 
-          <!-- <div>
-            <div>Chain :</div>
-            <div>Element <input [(ngModel)]="damageSim.unit.chain.element" type="number" /></div>
-            <div>Type <input [(ngModel)]="damageSim.unit.chain.type" type="number" /></div>
-          </div> -->
+          <div>
+            <div class="titleSim">
+              Chain
+            </div>
+
+            <div class="simLongStats">
+              <div class="inlineInputGroup longStatGroup">
+                <div class="input-group inputUnitStatBlock">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Damage Type</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.type" type="number"/>
+                </div>
+              </div>
+
+              <div class="inlineInputGroup longStatGroup">
+                <div class="input-group inputUnitStatBlock">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Element</span>
+                  </div>
+                  <input class="form-control inputInSim" [(ngModel)]="damageSim.unit.chain.element" type="number"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </td>
         <td class="targetTd">
           Target

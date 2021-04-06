@@ -332,6 +332,7 @@ export class UnitService {
     this.unit.jobsData = [];
     for (const jobId of this.unit.jobs) {
       const job = await this.jobService.getJob(jobId, forcedVersion);
+
       job.name = job.getName(this.translateService);
       job.level = 1;
       this.unit.jobsData.push(job);

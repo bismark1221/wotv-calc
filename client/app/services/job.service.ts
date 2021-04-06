@@ -77,7 +77,11 @@ export class JobService {
   async getJob(id, forcedVersion = null) {
     await this.getJobs(forcedVersion);
 
-    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'].find(job => job.dataId === id);
+    const rawJob = this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'].find(findJob => findJob.dataId === id);
+    const job = new Job();
+    job.constructFromJson(JSON.parse(JSON.stringify(rawJob)));
+
+    return job;
   }
 
   getGLExclusiveJobIds() {
