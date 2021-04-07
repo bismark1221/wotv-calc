@@ -544,18 +544,32 @@ export class SimulatorService {
     });
   }
 
+  getEquipmentStats(unit) {
+    const stats = {};
+    const statTypes = ['ATK', 'MAG', 'DEX', 'LUCK', 'AGI'];
+
+    statTypes.forEach(statType => {
+      stats[statType] = unit.stats[statType].totalEquipment ? unit.stats[statType].totalEquipment : 0;
+    });
+
+    return stats;
+  }
+
   calculateDamage(unit, dataSimulator, critic = false, addDamageValue = 0) {
-    const atk = dataSimulator.realStats.unit.ATK;
-    const mag = dataSimulator.realStats.unit.MAG;
-    const agi = dataSimulator.realStats.unit.AGI;
-    const dex = dataSimulator.realStats.unit.DEX;
-    const luck = dataSimulator.realStats.unit.LUCK;
+    const stats = {
+      ATK: dataSimulator.realStats.unit.ATK,
+      MAG: dataSimulator.realStats.unit.MAG,
+      AGI: dataSimulator.realStats.unit.AGI,
+      DEX: dataSimulator.realStats.unit.DEX,
+      LUCK: dataSimulator.realStats.unit.LUCK
+    };
+    const equipmentStats = this.getEquipmentStats(unit);
 
     let baseDamage = 0;
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
-      baseDamage = this.calculateSkillBonus(mag, dex, agi, luck, dataSimulator.unit.selectedSkill.damage.formula);
+      baseDamage = this.calculateSkillBonus(stats, dataSimulator.unit.selectedSkill.damage.formula, 'magic', equipmentStats);
     } else if (dataSimulator.unit.selectedSkill.based === 'physic') {
-      baseDamage = this.calculateSkillBonus(atk, dex, agi, luck, dataSimulator.unit.selectedSkill.damage.formula);
+      baseDamage = this.calculateSkillBonus(stats, dataSimulator.unit.selectedSkill.damage.formula, 'physic', equipmentStats);
     } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {
       // @TODO manage kotetsu
     }
@@ -611,17 +625,29 @@ export class SimulatorService {
     return skill.combo ? true : false;
   }
 
-  calculateSkillBonus(mainStat, dex, agi, luck, formula) {
+  calculateSkillBonus(stats, formula, damageType, equipmentStats) {
     let damage = 0;
+    let mainStat = 0;
+    let mainStatEquipment = 0;
+
+    if (damageType === 'magic') {
+      mainStat = stats.MAG;
+      mainStatEquipment = equipmentStats.MAG;
+    } else if (damageType === 'physic') {
+      mainStat = stats.ATK;
+      mainStatEquipment = equipmentStats.ATK;
+    } else {
+      // TODO will be hybrid
+    }
 
     if (formula.type === 1) {
       damage += mainStat * (100 + formula[1]) / 100;
     } else if (formula.type === 0) {
       damage += mainStat;
 
-      damage += dex * (formula[1] ? formula[1] : 0) / 100;
-      damage += agi * (formula[2] ? formula[2] : 0) / 100;
-      damage += luck * (formula[3] ? formula[3] : 0) / 100;
+      damage += stats.DEX * (formula[1] ? formula[1] : 0) / 100;
+      damage += stats.AGI * (formula[2] ? formula[2] : 0) / 100;
+      damage += stats.LUCK * (formula[3] ? formula[3] : 0) / 100;
     } else {
       damage += mainStat;
     }
