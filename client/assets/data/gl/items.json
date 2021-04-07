@@ -8929,6 +8929,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_GL_33": {
+    "dataId": "IT_US_SE_PI_GL_33",
+    "names": {
+      "en": "Select N–MR Unit Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'unité de rareté N à MR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_05_GL_13": {
     "dataId": "IT_US_SE_JB_05_GL_13",
     "names": {
@@ -9015,6 +9024,15 @@
     "names": {
       "en": "[First Anniversary Celebration Part II] Select Jadeite x15 Summon Ticket",
       "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_GL_08": {
+    "dataId": "IT_US_SE_JB_05_GL_08",
+    "names": {
+      "en": "[First Anniversary Celebration Part III] Select Spinel x70 Summon Ticket",
+      "fr": "[1er anniversaire - Partie III] Ticket sélectionneur de 70 spinelles"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9550,6 +9568,69 @@
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
   },
+  "IT_US_G_1stANV_0407_01": {
+    "dataId": "IT_US_G_1stANV_0407_01",
+    "names": {
+      "en": "First Anniversary Celebration Summon Ticket",
+      "fr": "Ticket d'invocation du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_02": {
+    "dataId": "IT_US_G_1stANV_0407_02",
+    "names": {
+      "en": "First Anniversary Celebration 2x Summon Ticket",
+      "fr": "Ticket d'invocation x2 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_03": {
+    "dataId": "IT_US_G_1stANV_0407_03",
+    "names": {
+      "en": "First Anniversary Celebration 3x Summon Ticket",
+      "fr": "Ticket d'invocation x3 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_04": {
+    "dataId": "IT_US_G_1stANV_0407_04",
+    "names": {
+      "en": "First Anniversary Celebration 5x Summon Ticket",
+      "fr": "Ticket d'invocation x5 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_05": {
+    "dataId": "IT_US_G_1stANV_0407_05",
+    "names": {
+      "en": "First Anniversary Celebration 7x Summon Ticket",
+      "fr": "Ticket d'invocation x7 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_06": {
+    "dataId": "IT_US_G_1stANV_0407_06",
+    "names": {
+      "en": "First Anniversary Celebration 8x Summon Ticket",
+      "fr": "Ticket d'invocation x8 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
+  "IT_US_G_1stANV_0407_07": {
+    "dataId": "IT_US_G_1stANV_0407_07",
+    "names": {
+      "en": "First Anniversary Celebration 10x Summon Ticket",
+      "fr": "Ticket d'invocation x10 du 1er anniversaire"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_1stANV_TICKET"
+  },
   "IT_US_GL_SE_PI_COM_1": {
     "dataId": "IT_US_GL_SE_PI_COM_1",
     "names": {
@@ -9753,6 +9834,24 @@
     "names": {
       "en": "Select Element Alcryst (Red) x70 Summon Ticket",
       "fr": "Ticket sélectionneur de 70 alcrists élémentaires (rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_EM_4_GL1": {
+    "dataId": "IT_US_SE_JB_EM_4_GL1",
+    "names": {
+      "en": "Select Element Alcryst (Yellow) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 alcrists élémentaires (jaunes)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_EM_5_GL1": {
+    "dataId": "IT_US_SE_JB_EM_5_GL1",
+    "names": {
+      "en": "Select Element Alcryst (Red) x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 alcrists élémentaires (rouges)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10140,6 +10239,15 @@
     "names": {
       "en": "[First Anniversary Celebration Part II] Select Job Memory (Green) x1 Summon Ticket",
       "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 1 souvenir de job (vert)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_5_GL2": {
+    "dataId": "IT_US_SE_JB_MM_5_GL2",
+    "names": {
+      "en": "[First Anniversary Celebration Part III] Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "[1er anniversaire - Partie III] Ticket sélectionneur de 5 souvenirs de job (rouges)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11657,6 +11765,14 @@
     "names": {
       "en": "\"A Place Unknown\" Vision Card Shard",
       "fr": "Fragment de l'atout-vision : Un monde inconnu"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_ZZAN": {
+    "dataId": "IT_VPI_LW_ZZAN",
+    "names": {
+      "en": "\"Thanks for the Votes!\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Merci pour vos votes !"
     },
     "type": "vc_shard"
   },

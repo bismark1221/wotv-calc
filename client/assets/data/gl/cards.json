@@ -14580,6 +14580,413 @@
       }
     ]
   },
+  "VC_LW_ZZAN": {
+    "dataId": "VC_LW_ZZAN",
+    "names": {
+      "en": "Thanks for the Votes!",
+      "fr": "Merci pour vos votes !"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 288
+      },
+      "TP": {},
+      "AP": {
+        "min": 6,
+        "max": 20
+      },
+      "ATK": {
+        "min": 33,
+        "max": 130
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 5
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapszzan",
+    "slug": "thanks-for-the-votes",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WATER_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GS",
+            "fr": "SK_VC_LW_ZZAN_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WATER_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GS_AW",
+            "fr": "SK_VC_LW_ZZAN_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "WATER_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GSMAX",
+            "fr": "SK_VC_LW_ZZAN_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GS_2",
+            "fr": "SK_VC_LW_ZZAN_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GS_AW_2",
+            "fr": "SK_VC_LW_ZZAN_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAX_DAMAGE",
+              "minValue": 2500,
+              "maxValue": 2500,
+              "calcType": "fixe",
+              "condition": "WATER_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_GSMAX_2",
+            "fr": "SK_VC_LW_ZZAN_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_P",
+            "fr": "SK_VC_LW_ZZAN_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_PAW",
+            "fr": "SK_VC_LW_ZZAN_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "percent",
+              "condition": "WATER_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_PMAX",
+            "fr": "SK_VC_LW_ZZAN_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "water"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HUMAN_KILLER",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "rate": 200,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_P_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_P_2",
+            "fr": "SK_VC_LW_ZZAN_P_2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HUMAN_KILLER",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "rate": 200,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_PAW_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_PAW_2",
+            "fr": "SK_VC_LW_ZZAN_PAW_2"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HUMAN_KILLER",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "rate": 200,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ZZAN_PMAX_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_ZZAN_PMAX_2",
+            "fr": "SK_VC_LW_ZZAN_PMAX_2"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_MONT",
+              "UN_LW_P_ZZAN",
+              "UN_LW_P_ELSR"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {

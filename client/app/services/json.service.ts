@@ -56,7 +56,8 @@ export class JsonService {
     unitClassChangeCondition: {},
     raidBonusUnit: {},
     raidBonusCard: {},
-    quests: {}
+    quests: {},
+    questMissions: {}
   };
 
   jp = {
@@ -102,7 +103,8 @@ export class JsonService {
     unitClassChangeCondition: {},
     raidBonusUnit: {},
     raidBonusCard: {},
-    quests: {}
+    quests: {},
+    questMissions: {}
   };
 
   jpRomaji = {};
@@ -739,6 +741,54 @@ export class JsonService {
     41: 'potion_draft_match',
   };
 
+  questType = {
+    1: 'story',
+    2: 'event',
+    3: 'hard_quest',
+    4: 'multi',
+    5: 'character_quest',
+    6: 'esper_quest',
+    7: 'arena',
+    8: 'raid',
+    9: 'rank_pvp',
+    10: 'free_pvp',
+    11: 'friend_pvp',
+    12: 'gvg'
+  };
+
+  questMissionCond = {
+    0: 'COMPLETE_QUEST', // Complete the quest
+    1: 'ANNIHILATE', // no value
+    2: 'KO_UNITS_BUT_CONTINUE', // No KO'd units (Continues Allowed)
+    3: 'KO_UNITS', // No KO'd units
+    4: 'MAX_DEAD_UNIT', // No more than X KO'd Unit(s)
+    5: 'SPECIFIC_UNIT_NOT_DEAD', // value1 ==> unitId that should not be dead
+    10: 'ELEMENT', // value1 ==> table of element (in number...)
+    15: 'SPECIFIC_UNIT_IN_PARTY', // value1 ==> unitId
+    17: 'MAX_PARTY_UNIT', // Formation comprise of no more than X units(s)
+    23: 'MIN_SIM_DEAD_SPECIFIC_ENEMIES', // Defeat X YYYYY or more simultaneously ==> value1 = "UN_LW_E_TH_00_GUN,3"  UnidId,NbToKill
+    31: 'MIN_BREAK_OBJECT', // value1 ==> number of item to break
+    41: 'SPECIFIC_SKILL', // Use YYYYY
+    42: 'MAX_SKILL', // value1 ==> max skills to use
+    50: 'ACTIVATE', // value1 ==> "unit" to activate
+    60: 'ITEMS', // value1 ==> max items allowed
+    70: 'NO_COMPANION', // no value
+    71: 'GET_COMPANION', // no value
+    81: 'MIN_SIM_DEAD_ENEMIES', // Defeat X or more enemies simultaneously
+    82: 'MAX_HEAL', // Recover no more than X HP
+    83: 'MAX_ATTACK', // value1 ==> Be attacked no more than X time(s)
+    84: 'MAX_DAMAGE', // value1 ==> Take no more than X damage
+    86: 'MIN_DAMAGE_ONE_ATTACK', // Do X or more damage in one attack
+    100: 'MAX_CONTINUE', // value1 ==> max continue allowed
+    101: 'MIN_TREASURE', // value1 ==> number of treasure to get
+    102: 'NAX_CRYSTAL', // value1 ==> maximum crystal to get
+    103: 'MIN_CRYSTAL', // value1 ==> minimum crystal to get
+    104: 'MIN_CHAIN', // value1 ==> number or chain to make
+    105: 'MIN_ELEMENT_CHAIN', // value1 ==> number or chain to make
+    200: 'NO_AUTO', // no value
+    201: 'ALL_MISSIONS' // no value
+  }
+
   private statsAtkRes = [
     'FIRE',
     'ICE',
@@ -965,6 +1015,15 @@ export class JsonService {
       });
   }
 
+  private GLQuestMissions() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/QuestMission.json').toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1089,6 +1148,10 @@ export class JsonService {
 
   private JPQuests() {
     return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Quests.json').toPromise();
+  }
+
+  private JPQuestMissions() {
+    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/QuestMission.json').toPromise();
   }
 
 
@@ -1467,6 +1530,9 @@ export class JsonService {
       this.TranslateQuestTitle(),
       this.FR_TranslateQuestTitle(),
       this.JP_TranslateQuestTitle(),
+
+      this.GLQuestMissions(),
+      this.JPQuestMissions(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1499,6 +1565,7 @@ export class JsonService {
       this.gl.raidBonusUnit = this.formatJson(responses[69]);
       this.gl.raidBonusCard = this.formatJson(responses[70]);
       this.gl.quests = this.formatJson(responses[73]);
+      this.gl.questMissions = this.formatJson(responses[108]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1531,6 +1598,7 @@ export class JsonService {
       this.jp.raidBonusUnit = this.formatJson(responses[71]);
       this.jp.raidBonusCard = this.formatJson(responses[72]);
       this.jp.quests = this.formatJson(responses[74]);
+      this.jp.questMissions = this.formatJson(responses[109]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1676,7 +1744,7 @@ export class JsonService {
 
       this.formatTitles();
 
-      this.formatDropTables();
+      this.formatQuests();
 
       this.exportGLexclusiveToJP();
     }
@@ -3569,7 +3637,7 @@ export class JsonService {
     });
   }
 
-  formatDropTables() {
+  formatQuests() {
     const formattedQuests = {};
 
     Object.keys(this[this.version].quests).forEach(questId => {
@@ -3584,67 +3652,100 @@ export class JsonService {
         jp: quest.jp,
         enemies: 0,
         gils: quest.gold,
-        chests: 0
+        chests: 0,
+        type: this.questType[quest.type],
+        missions: []
       };
 
       this.getNames(formattedQuests[questId], 'questTitle', false);
+      this.getMissions(formattedQuests[questId], quest.missions);
 
-      if (questId.split('_')[1] === 'ST') {
+      if (formattedQuests[questId].type === 'story') {
         const storyNumber = questId.split('_')[2];
         Object.keys(formattedQuests[questId].names).forEach(lang => {
           formattedQuests[questId].names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuests[questId].names[lang];
         });
       }
 
-      if (questId.split('_')[1] === 'MU') {
+      if (formattedQuests[questId].type === 'multi') {
         Object.keys(formattedQuests[questId].names).forEach(lang => {
           formattedQuests[questId].names[lang] = 'Multi: ' + formattedQuests[questId].names[lang];
         });
       }
 
-      if (this.maps[quest.map.set.split('/')[1]]) {
-        const map = this.maps[quest.map.set.split('/')[1]];
-        if (map.drop_table_list) {
-          Object.keys(map.drop_table_list).forEach(dropTable => {
-            if (dropTable !== 'steal') {
-              map.drop_table_list[dropTable].totalRate = this.getDropTotalRate(map.drop_table_list[dropTable].drop_list);
-            }
-          });
-        }
-
-        if (map.enemy) {
-          map.enemy.forEach(enemy => {
-            if (enemy.iname === 'UN_GM_TREASURE') {
-              formattedQuests[questId].chests += 1;
-            } else {
-              formattedQuests[questId].enemies += 1;
-            }
-          });
-        }
-
-        if (map.drop_table_list && map.enemy) {
-          map.enemy.forEach(enemy => {
-            if (enemy.drop && map.drop_table_list[enemy.drop]) {
-              const dropTable = map.drop_table_list[enemy.drop];
-              dropTable.drop_list.forEach(item => {
-                this.addDroppedItem(formattedQuests[questId], 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
-              });
-            }
-          });
-        }
-
-        if (map.drop_table_list && map.drop_table_list['HOST']) {
-          const hostDropTable = map.drop_table_list['HOST'];
-          hostDropTable.drop_list.forEach(item => {
-            if (this[this.version].wotvItems[item.drop_data.iname]) {
-              this.addDroppedItem(formattedQuests[questId], 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
-            }
-          });
-        }
+      if (formattedQuests[questId].type === 'character_quest') {
+        Object.keys(formattedQuests[questId].names).forEach(lang => {
+          formattedQuests[questId].names[lang] = 'Character quest: ' + formattedQuests[questId].names[lang];
+        });
       }
+
+      this.formatMap(formattedQuests[questId], quest.map.set);
     });
 
     this[this.version].wotvDropRates = formattedQuests;
+  }
+
+  getMissions(quest, missions) {
+    if (missions) {
+      missions.forEach(missionId => {
+        if (this[this.version].questMissions[missionId]) {
+          const rawMission = this[this.version].questMissions[missionId];
+
+          if (!this.questMissionCond[rawMission.type]) {
+            console.log('Mission condition not found -- ' + quest.names.en + ' -- ' + rawMission.type);
+          }
+
+          quest.missions.push({
+            type: this.questMissionCond[rawMission.type],
+            value: rawMission.value1 ? rawMission.value1 : rawMission.value2 ? rawMission.value2 : null,
+            reward: null // @TODO
+          });
+        }
+      });
+    }
+  }
+
+  formatMap(quest, rawMap) {
+    if (this.maps[rawMap.split('/')[1]]) {
+      const map = this.maps[rawMap.split('/')[1]];
+      if (map.drop_table_list) {
+        Object.keys(map.drop_table_list).forEach(dropTable => {
+          if (dropTable !== 'steal') {
+            map.drop_table_list[dropTable].totalRate = this.getDropTotalRate(map.drop_table_list[dropTable].drop_list);
+          }
+        });
+      }
+
+      if (map.enemy) {
+        map.enemy.forEach(enemy => {
+          if (enemy.iname === 'UN_GM_TREASURE') {
+            quest.chests += 1;
+          } else {
+            quest.enemies += 1;
+          }
+        });
+      }
+
+      if (map.drop_table_list && map.enemy) {
+        map.enemy.forEach(enemy => {
+          if (enemy.drop && map.drop_table_list[enemy.drop]) {
+            const dropTable = map.drop_table_list[enemy.drop];
+            dropTable.drop_list.forEach(item => {
+              this.addDroppedItem(quest, 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
+            });
+          }
+        });
+      }
+
+      if (map.drop_table_list && map.drop_table_list['HOST']) {
+        const hostDropTable = map.drop_table_list['HOST'];
+        hostDropTable.drop_list.forEach(item => {
+          if (this[this.version].wotvItems[item.drop_data.iname]) {
+            this.addDroppedItem(quest, 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
+          }
+        });
+      }
+    }
   }
 
   addDroppedItem(map, type, itemId, rate, totalRate) {
