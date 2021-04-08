@@ -6,6 +6,8 @@ export class Quest {
     en: 'New Quest'
   };
   name = 'New Quest';
+  slug = 'new-quest';
+  type = 'story';
 
   items = {};
   exp = 0;
@@ -14,10 +16,13 @@ export class Quest {
   enemies = 0;
   gils = 0;
   chests = 0;
+  missions = 0;
 
 
   constructFromJson(quest, translateService) {
     this.dataId = quest.dataId;
+    this.slug = quest.slug;
+    this.type = quest.type;
     this.items = quest.items;
     this.exp = quest.exp;
     this.nrg = quest.nrg;
@@ -26,6 +31,7 @@ export class Quest {
     this.gils = quest.gils;
     this.chests = quest.chests;
     this.names = quest.names;
+    this.missions = quest.missions;
   }
 
   getName(translateService): string {

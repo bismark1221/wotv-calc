@@ -1,0 +1,52 @@
+<div class="row" *ngIf="quest">
+  <div class="leftBlock">
+    <table class="questTable">
+      <tbody>
+        <tr>
+          <th colspan="3">{{ quest.name }}</th>
+        </tr>
+        <tr>
+          <th class="sub">NRG</th>
+          <th class="sub">XP</th>
+          <th class="sub">JP</th>
+        </tr>
+        <tr>
+          <td>{{ quest.nrg }}</td>
+          <td>{{ quest.exp }}</td>
+          <td>{{ quest.jp }}</td>
+        </tr>
+        <tr>
+          <th class="sub">Gils</th>
+          <th class="sub">Enemies</th>
+          <th class="sub">Chests</th>
+        </tr>
+        <tr>
+          <td>{{ quest.gils }}</td>
+          <td>{{ quest.enemies }}</td>
+          <td>{{ quest.chests }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rightBlock">
+    <table class="questTable">
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Reward
+        </th>
+      </tr>
+      <tr *ngFor="let mission of quest.formattedMissions">
+        <td>
+          {{ mission.mission }}
+        </td>
+        <td>
+          {{ mission.reward }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

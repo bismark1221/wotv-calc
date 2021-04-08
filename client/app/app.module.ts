@@ -49,6 +49,8 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
+import { QuestsComponent } from './quests/quests.component';
+import { QuestComponent } from './quest/quest.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
@@ -133,6 +135,8 @@ export function createTranslateLoader(http: HttpClient) {
     EquipmentComponent,
     RaidsComponent,
     RaidComponent,
+    QuestsComponent,
+    QuestComponent,
     RoundDownPipe,
     SafeHtmlPipe,
     HighlightSearchPipe,

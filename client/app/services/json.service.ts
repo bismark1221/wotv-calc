@@ -38,7 +38,7 @@ export class JsonService {
     wotvMasterRanks: {},
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
-    wotvDropRates: {},
+    wotvQuests: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -85,7 +85,7 @@ export class JsonService {
     wotvMasterRanks: {},
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
-    wotvDropRates: {},
+    wotvQuests: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -757,36 +757,42 @@ export class JsonService {
   };
 
   questMissionCond = {
-    0: 'COMPLETE_QUEST', // Complete the quest
-    1: 'ANNIHILATE', // no value
-    2: 'KO_UNITS_BUT_CONTINUE', // No KO'd units (Continues Allowed)
-    3: 'KO_UNITS', // No KO'd units
-    4: 'MAX_DEAD_UNIT', // No more than X KO'd Unit(s)
-    5: 'SPECIFIC_UNIT_NOT_DEAD', // value1 ==> unitId that should not be dead
-    10: 'ELEMENT', // value1 ==> table of element (in number...)
-    15: 'SPECIFIC_UNIT_IN_PARTY', // value1 ==> unitId
-    17: 'MAX_PARTY_UNIT', // Formation comprise of no more than X units(s)
-    23: 'MIN_SIM_DEAD_SPECIFIC_ENEMIES', // Defeat X YYYYY or more simultaneously ==> value1 = "UN_LW_E_TH_00_GUN,3"  UnidId,NbToKill
-    31: 'MIN_BREAK_OBJECT', // value1 ==> number of item to break
-    41: 'SPECIFIC_SKILL', // Use YYYYY
-    42: 'MAX_SKILL', // value1 ==> max skills to use
-    50: 'ACTIVATE', // value1 ==> "unit" to activate
-    60: 'ITEMS', // value1 ==> max items allowed
-    70: 'NO_COMPANION', // no value
-    71: 'GET_COMPANION', // no value
-    81: 'MIN_SIM_DEAD_ENEMIES', // Defeat X or more enemies simultaneously
-    82: 'MAX_HEAL', // Recover no more than X HP
-    83: 'MAX_ATTACK', // value1 ==> Be attacked no more than X time(s)
-    84: 'MAX_DAMAGE', // value1 ==> Take no more than X damage
-    86: 'MIN_DAMAGE_ONE_ATTACK', // Do X or more damage in one attack
-    100: 'MAX_CONTINUE', // value1 ==> max continue allowed
-    101: 'MIN_TREASURE', // value1 ==> number of treasure to get
-    102: 'NAX_CRYSTAL', // value1 ==> maximum crystal to get
-    103: 'MIN_CRYSTAL', // value1 ==> minimum crystal to get
-    104: 'MIN_CHAIN', // value1 ==> number or chain to make
-    105: 'MIN_ELEMENT_CHAIN', // value1 ==> number or chain to make
-    200: 'NO_AUTO', // no value
-    201: 'ALL_MISSIONS' // no value
+    0: 'COMPLETE_QUEST',
+    1: 'ANNIHILATE',
+    2: 'KO_UNITS_BUT_CONTINUE',
+    3: 'KO_UNITS',
+    4: 'MAX_DEAD_UNIT',
+    5: 'SPECIFIC_UNIT_NOT_DEAD',
+    10: 'ELEMENT',
+    15: 'SPECIFIC_UNIT_IN_PARTY',
+    17: 'MAX_PARTY_UNIT',
+    23: 'MIN_SIM_DEAD_SPECIFIC_ENEMIES',
+    31: 'MIN_BREAK_OBJECT',
+    41: 'SPECIFIC_SKILL',
+    42: 'MAX_SKILL',
+    50: 'ACTIVATE',
+    60: 'ITEMS',
+    70: 'NO_COMPANION',
+    71: 'GET_COMPANION',
+    81: 'MIN_SIM_DEAD_ENEMIES',
+    82: 'MAX_HEAL',
+    83: 'MAX_ATTACK',
+    84: 'MAX_DAMAGE',
+    86: 'MIN_DAMAGE_ONE_ATTACK',
+    100: 'MAX_CONTINUE',
+    101: 'MIN_TREASURE',
+    102: 'NAX_CRYSTAL',
+    103: 'MIN_CRYSTAL',
+    104: 'MIN_CHAIN',
+    105: 'MIN_ELEMENT_CHAIN',
+    200: 'NO_AUTO',
+    201: 'ALL_MISSIONS'
+  }
+
+  questMissionReward = {
+    0: 'item',
+    1: 'equipment',
+    3: 'visiores'
   }
 
   private statsAtkRes = [
@@ -1665,7 +1671,7 @@ export class JsonService {
           masterRanks: this.gl.wotvMasterRanks,
           playerTitles: this.gl.wotvPlayerTitles,
           guildTitles: this.gl.wotvGuildTitles,
-          dropRates: this.gl.wotvDropRates
+          dropRates: this.gl.wotvQuests
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1678,7 +1684,7 @@ export class JsonService {
           masterRanks: this.jp.wotvMasterRanks,
           playerTitles: this.jp.wotvPlayerTitles,
           guildTitles: this.jp.wotvGuildTitles,
-          dropRates: this.jp.wotvDropRates
+          dropRates: this.jp.wotvQuests
         },
         translate: {
           jpRomaji: this.jpRomaji
@@ -1924,7 +1930,7 @@ export class JsonService {
     }
   }
 
-  private getNames(item, type, getSlug = true) {
+  private getNames(item, type, getSlug = true, overwriteType = null) {
     const id = item.dataId;
 
     if (this.version === 'gl') {
@@ -1988,9 +1994,9 @@ export class JsonService {
     if (getSlug) {
       let i = 0;
 
-      Object.keys(this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's']).forEach(itemId => {
-        if (this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug === item.slug
-          || this[this.version]['wotv' + this.upperCaseFirst(type, false) + 's'][itemId].slug === item.slug + '-' + i
+      Object.keys(this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's']).forEach(itemId => {
+        if (this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug
+          || this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug + '-' + i
         ) {
           i++;
         }
@@ -3657,7 +3663,7 @@ export class JsonService {
         missions: []
       };
 
-      this.getNames(formattedQuests[questId], 'questTitle', false);
+      this.getNames(formattedQuests[questId], 'questTitle', true, 'quest');
       this.getMissions(formattedQuests[questId], quest.missions);
 
       if (formattedQuests[questId].type === 'story') {
@@ -3682,7 +3688,7 @@ export class JsonService {
       this.formatMap(formattedQuests[questId], quest.map.set);
     });
 
-    this[this.version].wotvDropRates = formattedQuests;
+    this[this.version].wotvQuests = formattedQuests;
   }
 
   getMissions(quest, missions) {
@@ -3695,11 +3701,33 @@ export class JsonService {
             console.log('Mission condition not found -- ' + quest.names.en + ' -- ' + rawMission.type);
           }
 
-          quest.missions.push({
+          const newMission = {
             type: this.questMissionCond[rawMission.type],
-            value: rawMission.value1 ? rawMission.value1 : rawMission.value2 ? rawMission.value2 : null,
-            reward: null // @TODO
-          });
+            value: rawMission.value1 !== undefined ? rawMission.value1 : rawMission.value2 !== undefined ? rawMission.value2 : null,
+            rewards: []
+          };
+
+          if (this.questMissionCond[rawMission.type] === 'ELEMENT') {
+            newMission.value.forEach(element => {
+              element = this.elements[element];
+            });
+          }
+
+          if (this.questMissionCond[rawMission.type] === 'SPECIFIC_SKILL') {
+            // @TODO GET skill name in value !!!
+          }
+
+          if (rawMission.rewards) {
+            rawMission.rewards.forEach(reward => {
+              newMission.rewards.push({
+                type: this.questMissionReward[reward.type],
+                rewardId: reward.item,
+                value: reward.num
+              });
+            });
+          }
+
+          quest.missions.push(newMission);
         }
       });
     }

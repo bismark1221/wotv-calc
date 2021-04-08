@@ -17,6 +17,8 @@ import { EquipmentsComponent } from './equipments/equipments.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { RaidsComponent } from './raids/raids.component';
 import { RaidComponent } from './raid/raid.component';
+import { QuestsComponent } from './quests/quests.component';
+import { QuestComponent } from './quest/quest.component';
 
 import { OtherComponent } from './other/other.component';
 import { OtherTitlesComponent } from './other/other.titles.component';
@@ -47,6 +49,8 @@ const ROUTES: Routes = [
   { path: 'equipment/:slug', component: EquipmentComponent },
   { path: 'raids', component: RaidsComponent },
   { path: 'raid/:slug', component: RaidComponent },
+  { path: 'quests', component: QuestsComponent },
+  { path: 'quest/:slug', component: QuestComponent },
   { path: 'index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'other', component: OtherComponent,
@@ -96,6 +100,8 @@ const ROUTES: Routes = [
   { path: 'JP/equipment/:slug', component: EquipmentComponent },
   { path: 'JP/raids', component: RaidsComponent },
   { path: 'JP/raid/:slug', component: RaidComponent },
+  { path: 'JP/quests', component: QuestsComponent },
+  { path: 'JP/quest/:slug', component: QuestComponent },
   { path: 'JP/index', redirectTo: 'other/index', pathMatch: 'full' },
 
   { path: 'JP/other', component: OtherComponent,

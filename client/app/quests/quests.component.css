@@ -1,0 +1,158 @@
+.quests {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.leftBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  float: left;
+  text-align: left;
+  background: var(--filters-background);
+  color: var(--filters-color);
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.leftBlock h1 {
+  font-size: 20px;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.collapsedFilters {
+  margin-top: 5px;
+}
+
+.collapsedFilters input {
+  margin-right: 5px;
+}
+
+.fa-chevron-up, .fa-chevron-down {
+  float: right;
+  margin-right: 10px;
+}
+
+.rightBlock {
+  vertical-align: top;
+  display: inline-block;
+  width: 900px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.upperBlock {
+  padding-right: 10px;
+}
+
+.searchBlock {
+  background: #F5F6F8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.searchInput {
+  background: none;
+  border: 0;
+  width: 750px;
+}
+
+.fa-search {
+  padding-right: 8px;
+  color: #000;
+}
+
+.underSearchBlock {
+  height: 30px;
+}
+
+.totalQuests {
+  float: left;
+  display: inline-block;
+}
+
+.sortOrderBlock {
+  float: right;
+  display: inline-block;
+}
+
+.sortBy, .orderBy {
+  display: inline-block;
+}
+
+.sortBy > span, .orderBy > span {
+  color: var(--sortby-color);
+  margin-right: 8px;
+}
+
+.orderBy {
+  margin-left: 10px;
+}
+
+.countQuests {
+  font-weight: bold;
+}
+
+.questsList {
+  margin-top: 10px;
+}
+
+.questImg {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.rarityImg {
+  height: 32px;
+  float: left;
+}
+
+.questsCol {
+  background-color: var(--quest-background);
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.questsCol:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--quest-background-hover)
+}
+
+.questsCol > a:hover {
+  text-decoration: none;
+}
+
+.questIcons {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+}
+
+.questTitle {
+  background-color: var(--quest-title-background);
+  display: table;
+  height: 50px;
+  width: 100%;
+}
+
+.questName {
+  font-weight: bold;
+  margin-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--quest-title-color);
+}
+
+.select-sort, .select-order {
+  display: inline-block;
+}

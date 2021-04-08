@@ -1,0 +1,111 @@
+<div class="quests">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="isCollapsedType = !isCollapsedType" [attr.aria-expanded]="!isCollapsedType">
+        Type
+        <i class="fas fa-chevron-up" *ngIf="!isCollapsedType" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="isCollapsedType">
+        <div>
+          <input type="checkbox" id="raritystory" (change)="filterList('type', 'story')"/>
+          <label for="raritystory">Story</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityevent" (change)="filterList('type', 'event')"/>
+          <label for="rarityevent">Event</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityhard_quest" (change)="filterList('type', 'hard_quest')"/>
+          <label for="rarityhard_quest">Hard Quest</label>
+        </div>
+        <div>
+          <input type="checkbox" id="raritymulti" (change)="filterList('type', 'multi')"/>
+          <label for="raritymulti">Multi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="raritycharacter_quest" (change)="filterList('type', 'character_quest')"/>
+          <label for="raritycharacter_quest">Character Quest</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityesper_quest" (change)="filterList('type', 'esper_quest')"/>
+          <label for="rarityesper_quest">Esper Quest</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityarena" (change)="filterList('type', 'arena')"/>
+          <label for="rarityarena">Arena</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityraid" (change)="filterList('type', 'raid')"/>
+          <label for="rarityraid">Raid</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityrank_pvp" (change)="filterList('type', 'rank_pvp')"/>
+          <label for="rarityrank_pvp">Rank pvp</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityfree_pvp" (change)="filterList('type', 'free_pvp')"/>
+          <label for="rarityfree_pvp">Free pvp</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rarityfriend_pvp" (change)="filterList('type', 'friend_pvp')"/>
+          <label for="rarityfriend_pvp">Friend pvp</label>
+        </div>
+        <div>
+          <input type="checkbox" id="raritygvg" (change)="filterList('type', 'gvg')"/>
+          <label for="raritygvg">gvg</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a quest by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalQuests">
+          A total of <span class="countQuests">{{ getFilteredQuests().length }}</span> quests found
+        </div>
+        <div class="sortOrderBlock">
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['name']" [(ngModel)]="sort" (ngModelChange)="getQuests()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getQuests()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="questsList">
+      <div class="questsCol" *ngFor="let quest of getFilteredQuests()">
+        <a [routerLink]="[getRoute('/quest/' + quest.slug)]" [routerLinkActive]="['active']">
+          <div class="questTitle">
+            <span class="questName">{{ quest.name }}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
