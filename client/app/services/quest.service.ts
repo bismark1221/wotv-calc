@@ -202,7 +202,7 @@ export class QuestService {
       case 'GET_COMPANION' :
         html = 'Hire a companion';
       break;
-      case 'MIN_SIM_DEAD_SPECIFIC_ENEMIES' :
+      case 'MIN_SIM_DEAD_ENEMIES' :
         html = 'Defeat ' + mission.value + ' or more enemies simultaneously';
       break;
       case 'MAX_HEAL' :

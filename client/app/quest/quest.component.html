@@ -44,7 +44,16 @@
           {{ mission.mission }}
         </td>
         <td>
-          {{ mission.reward }}
+          <div *ngFor="let reward of mission.rewards">
+            <div *ngIf="reward.type === 'item' || reward.type === 'visiores'">
+              <app-template-item [item]="reward.reward"></app-template-item> x {{ reward.value }}
+            </div>
+
+            <div *ngIf="reward.type === 'equipment'">
+              <img class="equipmentRewardImg" src="assets/equipments/{{ reward.reward.image }}.png" title="{{ reward.reward.name }}" /><br />
+              {{ reward.reward.name }}
+            </div>
+          </div>
         </td>
       </tr>
     </table>
