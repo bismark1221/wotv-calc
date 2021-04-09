@@ -787,13 +787,13 @@ export class JsonService {
     105: 'MIN_ELEMENT_CHAIN',
     200: 'NO_AUTO',
     201: 'ALL_MISSIONS'
-  }
+  };
 
   questMissionReward = {
     0: 'item',
     1: 'equipment',
     3: 'visiores'
-  }
+  };
 
   private statsAtkRes = [
     'FIRE',
@@ -2773,8 +2773,13 @@ export class JsonService {
                       delete addedBuff.increaseMax;
                     }
 
-                    if (skill.type === 'buff' || skill.type === undefined || skill.type === 'support' || skill.type === 'party') {
+                    if (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party') {
                       delete addedBuff.timing;
+                    }
+
+                    if (skill.type === undefined) {
+                      console.log('SKILL TYPE undefined');
+                      console.log(skill);
                     }
 
                     skill.effects.push(addedBuff);
@@ -2844,7 +2849,8 @@ export class JsonService {
       const limit = {
         names: {},
         effects: [],
-        dataId: lbId
+        dataId: lbId,
+        type: 'limit'
       };
       this.updateSkill(unit, limit, lbId);
 
@@ -2862,7 +2868,8 @@ export class JsonService {
           minValue: 0,
           maxValue: 0
         },
-        elem: []
+        elem: [],
+        type: 'skill'
       };
 
       let modifiedAttack = false;
@@ -2897,7 +2904,8 @@ export class JsonService {
           const masterSkill = {
             names: {},
             effects: [],
-            dataId: id
+            dataId: id,
+            type: 'masterSkill'
           };
           this.updateSkill(unit, masterSkill, id);
 
@@ -2907,7 +2915,8 @@ export class JsonService {
         const masterSkill = {
           names: {},
           effects: [],
-          dataId: skillId
+          dataId: skillId,
+          type: 'masterSkill'
         };
         this.updateSkill(unit, masterSkill, skillId);
 
@@ -3435,7 +3444,8 @@ export class JsonService {
                 boss.skills[skillId] = {
                   effects: [],
                   dataId: skillId,
-                  rate: skill.rate
+                  rate: skill.rate,
+                  type: this.slots[this[this.version].skills[skillId].type === 1 ? 1 : 3]
                 };
                 this.updateSkill(boss, boss.skills[skillId], skillId);
                 boss.skills[skillId].minLevel = lvMin;

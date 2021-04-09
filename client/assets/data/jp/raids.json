@@ -165,6 +165,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_01",
             "rate": 60,
+            "type": "skill",
             "names": {
               "en": "ブラウンスフィア"
             },
@@ -202,6 +203,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -213,6 +215,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_02",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "かぶりつく"
             },
@@ -245,11 +248,13 @@
                 "calcType": "percent",
                 "rate": 10,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_M_03",
             "rate": 30,
+            "type": "skill",
             "names": {
               "en": "スイートファウンテン"
             },
@@ -287,6 +292,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -312,6 +318,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -516,6 +523,7 @@
             "effects": [],
             "dataId": "SK_CSLI_01_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "マシュマロスルー"
             },
@@ -553,6 +561,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -572,6 +581,7 @@
             ],
             "dataId": "SK_BTL_DF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "防御1-80アップ"
             },
@@ -591,6 +601,7 @@
             ],
             "dataId": "SK_BTL_MDF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "精神1-80アップ"
             },
@@ -602,6 +613,7 @@
             "effects": [],
             "dataId": "SK_CSLI_01_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "とかす"
             },
@@ -634,11 +646,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_01_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ホワイトパーティー"
             },
@@ -682,6 +696,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -867,6 +882,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -886,6 +902,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -900,11 +917,13 @@
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_WRMC_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "かくさんミサイル"
             },
@@ -946,7 +965,8 @@
                 "calcType": "fixe",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -955,11 +975,13 @@
                 "calcType": "fixe",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_WRMC_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ビームほう"
             },
@@ -993,6 +1015,7 @@
             "effects": [],
             "dataId": "SK_WRMC_M_03",
             "rate": 20,
+            "type": "skill",
             "names": {
               "en": "かくこうげき"
             },
@@ -1038,6 +1061,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -1058,6 +1082,7 @@
             ],
             "dataId": "SK_BTL_DONMV_1-100_D",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "状態異常【ドンムブ】確率1-100ダウン"
             },
@@ -1083,6 +1108,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -1268,6 +1294,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ファイア"
             },
@@ -1300,6 +1327,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "ファイガ"
             },
@@ -1341,11 +1369,13 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_IFRT_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "熱を集める"
             },
@@ -1363,6 +1393,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_04",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "地獄の火炎"
             },
@@ -1408,6 +1439,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -1427,6 +1459,7 @@
             ],
             "dataId": "SK_BTL_RES_ICE_1_80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "氷属性耐性1-80アップ"
             },
@@ -1446,6 +1479,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -1465,6 +1499,7 @@
             ],
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Move1-20アップ"
             },
@@ -1490,6 +1525,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -1660,6 +1696,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "針千本"
             },
@@ -1690,6 +1727,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_02",
             "rate": 5,
+            "type": "skill",
             "names": {
               "en": "針万本"
             },
@@ -1730,6 +1768,7 @@
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "麻痺針"
             },
@@ -1762,6 +1801,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -1779,6 +1819,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -1798,6 +1839,7 @@
             ],
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中率+10"
             },
@@ -1817,6 +1859,7 @@
             ],
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中率+15"
             },
@@ -1836,6 +1879,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -1861,6 +1905,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -2044,6 +2089,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_01_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "つきあげる"
             },
@@ -2073,6 +2119,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_02_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "あばれまわる"
             },
@@ -2102,6 +2149,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_03_02",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "しゃくりあげ"
             },
@@ -2141,6 +2189,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -2160,6 +2209,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -2179,6 +2229,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -2198,6 +2249,7 @@
             ],
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Move1-20アップ"
             },
@@ -2223,6 +2275,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -2393,6 +2446,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ほうちょう"
             },
@@ -2425,6 +2479,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "うらみぼうちょう"
             },
@@ -2461,11 +2516,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 30,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_TNBR_M_03",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "うらみ骨髄"
             },
@@ -2499,6 +2556,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_04_R",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "みんなのうらみ"
             },
@@ -2537,6 +2595,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -2556,6 +2615,7 @@
             ],
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中率+10"
             },
@@ -2575,6 +2635,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -2594,6 +2655,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -2613,6 +2675,7 @@
             ],
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中率+15"
             },
@@ -2632,6 +2695,7 @@
             ],
             "dataId": "SK_LW_HIT_5_UR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中率+20"
             },
@@ -2657,6 +2721,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -2861,6 +2926,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ブレストリッパー"
             },
@@ -2893,6 +2959,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_02",
             "rate": 40,
+            "type": "skill",
             "names": {
               "en": "ペア・オブ・アングウィッシュ"
             },
@@ -2930,6 +2997,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_03",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "ウッデンホース"
             },
@@ -2969,6 +3037,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -2988,6 +3057,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -3007,6 +3077,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -3027,6 +3098,7 @@
             ],
             "dataId": "SK_BTL_KILLER_DARK_1-100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "闇属性キラー1-100アップ"
             },
@@ -3046,6 +3118,7 @@
             ],
             "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "防御貫通率1-100アップ(基礎ステ)"
             },
@@ -3071,6 +3144,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -3307,6 +3381,7 @@
             ],
             "dataId": "SK_THDG_R_01_RA",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "ドラゴンボイス"
             },
@@ -3335,11 +3410,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ヘッドラッシュ"
             },
@@ -3381,11 +3458,13 @@
                 "maxValue": -38,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_03",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "ダブルブレイクブレス・火"
             },
@@ -3427,11 +3506,13 @@
                 "maxValue": -38,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_04",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "ダブルブレイクブレス・氷"
             },
@@ -3474,18 +3555,21 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SILENCE_ATK",
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_05",
             "rate": 20,
+            "type": "skill",
             "names": {
               "en": "ときはなつ"
             },
@@ -3525,6 +3609,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -3544,6 +3629,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -3563,6 +3649,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -3580,6 +3667,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -3605,6 +3693,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -3799,6 +3888,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ももいろスフィア"
             },
@@ -3828,6 +3918,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_02",
             "rate": 60,
+            "type": "skill",
             "names": {
               "en": "いただきます！"
             },
@@ -3860,11 +3951,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_02_M_03",
             "rate": 5,
+            "type": "skill",
             "names": {
               "en": "一緒に踊りましょっ！"
             },
@@ -3902,6 +3995,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -3921,6 +4015,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -3940,6 +4035,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -3957,6 +4053,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -4018,6 +4115,7 @@
             ],
             "dataId": "SK_BTL_RES_OTICE_1_80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "氷属性以外の耐性1-80アップ(基礎)"
             },
@@ -4037,6 +4135,7 @@
             ],
             "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "魔法耐性1-80アップ(基礎)"
             },
@@ -4062,6 +4161,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -4242,6 +4342,7 @@
             "effects": [],
             "dataId": "SK_SIRE_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ウォータ"
             },
@@ -4274,6 +4375,7 @@
             "effects": [],
             "dataId": "SK_SIRE_M_02_RA",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "ウォタガ"
             },
@@ -4314,11 +4416,13 @@
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_SIRE_M_04_RA",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "ルナティックボイス"
             },
@@ -4364,6 +4468,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -4383,6 +4488,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -4400,6 +4506,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -4419,6 +4526,7 @@
             ],
             "dataId": "SK_BTL_RESDB_SLASH_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "斬撃耐性弱体耐性1-100アップ"
             },
@@ -4438,6 +4546,7 @@
             ],
             "dataId": "SK_BTL_RESDB_ELEMALL1_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "全属性耐性弱体耐性1-100アップ"
             },
@@ -4463,6 +4572,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -4651,6 +4761,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_01",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "針千本"
             },
@@ -4681,6 +4792,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_02",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "針万本"
             },
@@ -4721,6 +4833,7 @@
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "麻痺針"
             },
@@ -4753,6 +4866,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -4770,6 +4884,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -4789,6 +4904,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -4814,6 +4930,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -4997,6 +5114,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_01_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ストーン"
             },
@@ -5029,6 +5147,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_02_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ストンガ"
             },
@@ -5070,7 +5189,8 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -5078,11 +5198,13 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_GLEM_M_03_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "アースウォール"
             },
@@ -5100,6 +5222,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_04_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "フラグメンタルロック"
             },
@@ -5145,6 +5268,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -5164,6 +5288,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -5183,6 +5308,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -5208,6 +5334,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -5378,6 +5505,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ほうちょう"
             },
@@ -5410,6 +5538,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "うらみぼうちょう"
             },
@@ -5446,11 +5575,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 30,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_TNBR_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "うらみ骨髄"
             },
@@ -5492,6 +5623,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -5511,6 +5643,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -5530,6 +5663,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -5541,6 +5675,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_04_R",
             "rate": 30,
+            "type": "skill",
             "names": {
               "en": "みんなのうらみ"
             },
@@ -5587,6 +5722,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -5795,6 +5931,7 @@
             "effects": [],
             "dataId": "SK_DABL_M_02_R",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "グラビデ"
             },
@@ -5831,6 +5968,7 @@
             "effects": [],
             "dataId": "SK_DABL_M_01_R",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "バイオレットテラー"
             },
@@ -5867,11 +6005,13 @@
                 "maxValue": -15,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_BEFORE"
               }
             ],
             "dataId": "SK_DABL_M_04_R",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "闇よりの使者"
             },
@@ -5916,6 +6056,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -5935,6 +6076,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -5954,6 +6096,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -5973,6 +6116,7 @@
             ],
             "dataId": "SK_BTL_HATE_1-100_U_PA",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "ヘイト1-100アップ(パッシブ）"
             },
@@ -5992,6 +6136,7 @@
             ],
             "dataId": "SK_BTL_RESDB_MDF_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "精神弱体耐性1-100アップ"
             },
@@ -6017,6 +6162,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -6211,6 +6357,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ももいろスフィア"
             },
@@ -6240,6 +6387,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_02",
             "rate": 60,
+            "type": "skill",
             "names": {
               "en": "いただきます！"
             },
@@ -6272,11 +6420,13 @@
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_02_M_03_RA",
             "rate": 5,
+            "type": "skill",
             "names": {
               "en": "一緒に踊りましょっ！"
             },
@@ -6314,6 +6464,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -6333,6 +6484,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -6350,6 +6502,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -6411,6 +6564,7 @@
             ],
             "dataId": "SK_BTL_RES_OTDARK_1_80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "闇属性以外の耐性1-80アップ(基礎)"
             },
@@ -6430,6 +6584,7 @@
             ],
             "dataId": "SK_BTL_RESDB_DF_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "防御弱体耐性1-100アップ"
             },
@@ -6455,6 +6610,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -6660,6 +6816,7 @@
             "effects": [],
             "dataId": "SK_CSLI_03_M_01",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "スノーボールファイト"
             },
@@ -6689,6 +6846,7 @@
             "effects": [],
             "dataId": "SK_CSLI_03_M_02",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "かじりつく"
             },
@@ -6721,11 +6879,13 @@
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_03_M_03",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "ほーりーないと"
             },
@@ -6763,6 +6923,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -6782,6 +6943,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -6801,6 +6963,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -6820,6 +6983,7 @@
             ],
             "dataId": "SK_BTL_HATE_1-100_U_PA",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "ヘイト1-100アップ(パッシブ）"
             },
@@ -6845,6 +7009,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -7033,6 +7198,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_01",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "針千本"
             },
@@ -7063,6 +7229,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_02",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "針万本"
             },
@@ -7103,6 +7270,7 @@
             ],
             "dataId": "SK_CACT_M_03_RA",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "麻痺針"
             },
@@ -7135,6 +7303,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -7154,6 +7323,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -7179,6 +7349,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -7414,11 +7585,13 @@
                 "maxValue": -25,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_GCAL_M_01_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ホワイトアウト"
             },
@@ -7456,11 +7629,13 @@
                 "calcType": "fixe",
                 "rate": 30,
                 "turn": 3,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_GCAL_M_02_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "氷鳥の羽ばたき"
             },
@@ -7493,11 +7668,13 @@
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 30,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_GCAL_M_03_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "フローズンハリケーン"
             },
@@ -7535,6 +7712,7 @@
             "effects": [],
             "dataId": "SK_GCAL_R_01",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "アイスリフレクター"
             },
@@ -7560,6 +7738,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -7579,6 +7758,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -7598,6 +7778,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -7621,6 +7802,7 @@
             ],
             "dataId": "SK_LW_TIM_P_2",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変化無効"
             },
@@ -7640,6 +7822,7 @@
             ],
             "dataId": "SK_BTL_RES_SHOT_1_80_U_KISO",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "射撃耐性1-80アップ(基礎)"
             },
@@ -7665,6 +7848,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -7838,11 +8022,13 @@
                 "calcType": "percent",
                 "rate": 25,
                 "turn": 3,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_DRGN_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "のしかかり"
             },
@@ -7872,6 +8058,7 @@
             "effects": [],
             "dataId": "SK_DRGN_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ブレイズ"
             },
@@ -7909,6 +8096,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -7928,6 +8116,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -7947,6 +8136,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -7964,6 +8154,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -7989,6 +8180,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -8215,7 +8407,8 @@
                 "calcType": "percent",
                 "turn": 10,
                 "increaseMax": true,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "DEF",
@@ -8223,7 +8416,8 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 10,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -8231,11 +8425,13 @@
                 "maxValue": -10,
                 "calcType": "fixe",
                 "turn": 10,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_IGNT_M_01_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "アイアンバーサーカー"
             },
@@ -8253,6 +8449,7 @@
             "effects": [],
             "dataId": "SK_IGNT_M_02_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "パワーウェイブ"
             },
@@ -8283,6 +8480,7 @@
             "effects": [],
             "dataId": "SK_IGNT_M_03_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "なぎ払い"
             },
@@ -8321,6 +8519,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -8340,6 +8539,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -8359,6 +8559,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -8376,6 +8577,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -8395,6 +8597,7 @@
             ],
             "dataId": "SK_BTL_DF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "防御1-80アップ"
             },
@@ -8414,6 +8617,7 @@
             ],
             "dataId": "SK_BTL_MDF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "精神1-80アップ"
             },
@@ -8430,7 +8634,8 @@
                 "calcType": "percent",
                 "turn": 10,
                 "increaseMax": true,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "DEF",
@@ -8438,7 +8643,8 @@
                 "maxValue": 40,
                 "calcType": "fixe",
                 "turn": 10,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -8446,11 +8652,13 @@
                 "maxValue": -20,
                 "calcType": "fixe",
                 "turn": 10,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_IGNT_M_01_B_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "アイアンバーサーカー"
             },
@@ -8476,6 +8684,7 @@
             ],
             "dataId": "SK_BTL_STR_SLASH_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "斬撃攻撃力1-100アップ"
             },
@@ -8501,6 +8710,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -8674,6 +8884,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "ブラウンスフィア"
             },
@@ -8711,6 +8922,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "命中1-999アップ"
             },
@@ -8730,6 +8942,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "最大HPダウン無効"
             },
@@ -8749,6 +8962,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "素早さダウン無効"
             },
@@ -8766,6 +8980,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "CT変動無効"
             },
@@ -8777,6 +8992,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "かぶりつく"
             },
@@ -8809,11 +9025,13 @@
                 "calcType": "percent",
                 "rate": 10,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_M_03",
             "rate": 20,
+            "type": "skill",
             "names": {
               "en": "スイートファウンテン"
             },
@@ -8857,6 +9075,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -9107,6 +9326,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -9290,6 +9510,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {

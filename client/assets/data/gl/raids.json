@@ -167,6 +167,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_01",
             "rate": 60,
+            "type": "skill",
             "names": {
               "en": "Brown Sphere",
               "fr": "Sphère marron"
@@ -205,6 +206,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -217,6 +219,7 @@
             "effects": [],
             "dataId": "SK_CSLI_M_02",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "Bite Into",
               "fr": "Mordre à pleines dents"
@@ -250,11 +253,13 @@
                 "calcType": "percent",
                 "rate": 10,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_M_03",
             "rate": 30,
+            "type": "skill",
             "names": {
               "en": "Sweet Fountain",
               "fr": "Adorable fontaine"
@@ -293,6 +298,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -320,6 +326,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -526,6 +533,7 @@
             "effects": [],
             "dataId": "SK_CSLI_01_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Marshmallow Throw",
               "fr": "Lancer de guimauve"
@@ -564,6 +572,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -584,6 +593,7 @@
             ],
             "dataId": "SK_BTL_DF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "DEF 1-80 Up",
               "fr": "DEF ↑ 1 - 80"
@@ -604,6 +614,7 @@
             ],
             "dataId": "SK_BTL_MDF_1-80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SPR 1-80 Up",
               "fr": "PSY ↑ 1 - 80"
@@ -616,6 +627,7 @@
             "effects": [],
             "dataId": "SK_CSLI_01_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Melt",
               "fr": "Fonte"
@@ -649,11 +661,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_01_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Sweets Party",
               "fr": "Fête sucrée"
@@ -699,6 +713,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -886,6 +901,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -906,6 +922,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -921,11 +938,13 @@
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_WRMC_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Missile Scatter",
               "fr": "Missile de dispersion"
@@ -968,7 +987,8 @@
                 "calcType": "fixe",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -977,11 +997,13 @@
                 "calcType": "fixe",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_WRMC_M_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Beam Cannon",
               "fr": "Canon laser"
@@ -1016,6 +1038,7 @@
             "effects": [],
             "dataId": "SK_WRMC_M_03",
             "rate": 20,
+            "type": "skill",
             "names": {
               "en": "Nuke",
               "fr": "Nucléo-attaque"
@@ -1062,6 +1085,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -1083,6 +1107,7 @@
             ],
             "dataId": "SK_BTL_DONMV_1-100_D",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Status Ailment [Immobilize] Chance 1-100 Down",
               "fr": "Chance d'altération d'état [Immobilisation] ↓ 1 - 100"
@@ -1110,6 +1135,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -1297,6 +1323,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Fire",
               "fr": "Feu"
@@ -1330,6 +1357,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Firaga",
               "fr": "Feu X"
@@ -1372,11 +1400,13 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_IFRT_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Boil",
               "fr": "Incandescence"
@@ -1395,6 +1425,7 @@
             "effects": [],
             "dataId": "SK_IFRT_M_04",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "Hellfire",
               "fr": "Flammes de l'enfer"
@@ -1441,6 +1472,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -1461,6 +1493,7 @@
             ],
             "dataId": "SK_BTL_RES_ICE_1_80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Ice Res 1-80 Up",
               "fr": "Rés glace ↑ 1 - 80"
@@ -1481,6 +1514,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -1501,6 +1535,7 @@
             ],
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Move 1-20 Up",
               "fr": "Déplacement ↑ 1 - 20"
@@ -1528,6 +1563,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -1699,6 +1735,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "1,000 Needles",
               "fr": "1 000 épines"
@@ -1730,6 +1767,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_02",
             "rate": 5,
+            "type": "skill",
             "names": {
               "en": "10,000 Needles",
               "fr": "10 000 épines"
@@ -1771,6 +1809,7 @@
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
@@ -1804,6 +1843,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -1822,6 +1862,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -1842,6 +1883,7 @@
             ],
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SK_LW_HIT_5_N_R",
               "fr": "SK_LW_HIT_5_N_R"
@@ -1862,6 +1904,7 @@
             ],
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SK_LW_HIT_5_SSR",
               "fr": "SK_LW_HIT_5_SSR"
@@ -1882,6 +1925,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -1909,6 +1953,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -2094,6 +2139,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_01_02",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Haymaker",
               "fr": "Uppercut magistral"
@@ -2124,6 +2170,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_02_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Rampage",
               "fr": "Rage"
@@ -2154,6 +2201,7 @@
             "effects": [],
             "dataId": "SK_BHMT_M_03_02",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "Heave",
               "fr": "Ravager"
@@ -2194,6 +2242,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -2214,6 +2263,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -2234,6 +2284,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -2254,6 +2305,7 @@
             ],
             "dataId": "SK_BTL_MOVE_1-20_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Move 1-20 Up",
               "fr": "Déplacement ↑ 1 - 20"
@@ -2281,6 +2333,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -2452,6 +2505,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Knife",
               "fr": "Couteau"
@@ -2485,6 +2539,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Grudge Knife",
               "fr": "Couteau de la rancune"
@@ -2522,11 +2577,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 30,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_TNBR_M_03",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "Deep-Seated Grudge",
               "fr": "Profonde rancune"
@@ -2561,6 +2618,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_04_R",
             "rate": 10,
+            "type": "skill",
             "names": {
               "en": "Everyone's Grudge",
               "fr": "Rancune commune"
@@ -2600,6 +2658,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -2620,6 +2679,7 @@
             ],
             "dataId": "SK_LW_HIT_5_N_R",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SK_LW_HIT_5_N_R",
               "fr": "SK_LW_HIT_5_N_R"
@@ -2640,6 +2700,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -2660,6 +2721,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -2680,6 +2742,7 @@
             ],
             "dataId": "SK_LW_HIT_5_SSR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SK_LW_HIT_5_SSR",
               "fr": "SK_LW_HIT_5_SSR"
@@ -2700,6 +2763,7 @@
             ],
             "dataId": "SK_LW_HIT_5_UR",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "SK_LW_HIT_5_UR",
               "fr": "SK_LW_HIT_5_UR"
@@ -2727,6 +2791,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -2965,6 +3030,7 @@
             ],
             "dataId": "SK_THDG_R_01_RA",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Dragon Voice",
               "fr": "Voix draconique"
@@ -2994,11 +3060,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Head Rush",
               "fr": "Coup de tête"
@@ -3041,11 +3109,13 @@
                 "maxValue": -38,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_03",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Double Break Fire Breath",
               "fr": "Double souffle feu"
@@ -3088,11 +3158,13 @@
                 "maxValue": -38,
                 "calcType": "resistance",
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_04",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Double Break Ice Breath",
               "fr": "Double souffle glace"
@@ -3136,18 +3208,21 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SILENCE_ATK",
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_M_05",
             "rate": 20,
+            "type": "skill",
             "names": {
               "en": "Unleash",
               "fr": "Déchaînement"
@@ -3188,6 +3263,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -3208,6 +3284,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -3228,6 +3305,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -3246,6 +3324,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -3273,6 +3352,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -3468,6 +3548,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Pink Sphere",
               "fr": "Sphère rose"
@@ -3498,6 +3579,7 @@
             "effects": [],
             "dataId": "SK_CSLI_02_M_02",
             "rate": 60,
+            "type": "skill",
             "names": {
               "en": "Time to Eat!",
               "fr": "À table !"
@@ -3531,11 +3613,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 3,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CSLI_02_M_03",
             "rate": 5,
+            "type": "skill",
             "names": {
               "en": "Let’s Dance!",
               "fr": "En piste !"
@@ -3574,6 +3658,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -3594,6 +3679,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -3614,6 +3700,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -3632,6 +3719,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -3694,6 +3782,7 @@
             ],
             "dataId": "SK_BTL_RES_OTICE_1_80_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "All Res Except Ice 1-80 Up (Base)",
               "fr": "Toutes les Rés (sauf Rés glace) ↑ 1 - 80 (base)"
@@ -3714,6 +3803,7 @@
             ],
             "dataId": "SK_BTL_RES_MAGIC_1_80_U_KISO",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Magic Res 1-80 Up (Base)",
               "fr": "Rés magique ↑ 1 - 80 (base)"
@@ -3741,6 +3831,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
@@ -3947,6 +4038,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Pillory",
               "fr": "Pilori"
@@ -3980,6 +4072,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_02",
             "rate": 40,
+            "type": "skill",
             "names": {
               "en": "Gibbet Cage",
               "fr": "Gibet de fer"
@@ -4018,6 +4111,7 @@
             "effects": [],
             "dataId": "SK_FF14BOSS_M_03",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "Wooden Horse",
               "fr": "Cheval de bois"
@@ -4058,6 +4152,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -4078,6 +4173,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -4098,6 +4194,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -4119,6 +4216,7 @@
             ],
             "dataId": "SK_BTL_KILLER_DARK_1-100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Dark Eater 1-100 Up",
               "fr": "Noctophage ↑ 1 - 100"
@@ -4139,6 +4237,7 @@
             ],
             "dataId": "SK_BTL_DEFPIERCE_1-100_U_KISO",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "DEF Piercing Rate 1-100 Up (Base)",
               "fr": "Taux de perforation de la DEF ↑ 1-100 (Base)"
@@ -4166,6 +4265,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -4348,6 +4448,7 @@
             "effects": [],
             "dataId": "SK_SIRE_M_01_RA",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Water",
               "fr": "Eau"
@@ -4381,6 +4482,7 @@
             "effects": [],
             "dataId": "SK_SIRE_M_02_RA",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Waterga",
               "fr": "Eau X"
@@ -4422,11 +4524,13 @@
                 "calcType": "percent",
                 "rate": 50,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_SIRE_M_04_RA",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "Lunatic Voice",
               "fr": "Voix ensorcelante"
@@ -4473,6 +4577,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -4493,6 +4598,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -4511,6 +4617,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -4531,6 +4638,7 @@
             ],
             "dataId": "SK_BTL_RESDB_SLASH_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Slash Res Debuff Res 1-100 Up",
               "fr": "Rés malus à la Rés att tranchantes ↑ 1 - 100"
@@ -4551,6 +4659,7 @@
             ],
             "dataId": "SK_BTL_RESDB_ELEMALL1_1_100_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "All Elemental Res Debuff Res 1-100 Up",
               "fr": "Rés malus à la Rés tous éléments ↑ 1 - 100"
@@ -4578,6 +4687,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -4767,6 +4877,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_01",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "1,000 Needles",
               "fr": "1 000 épines"
@@ -4798,6 +4909,7 @@
             "effects": [],
             "dataId": "SK_CACT_M_02",
             "rate": 0,
+            "type": "skill",
             "names": {
               "en": "10,000 Needles",
               "fr": "10 000 épines"
@@ -4839,6 +4951,7 @@
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
@@ -4872,6 +4985,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -4890,6 +5004,7 @@
             ],
             "dataId": "SK_BTL_INV_CTDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Nullify CT Changes",
               "fr": "Annule les changements de CT"
@@ -4910,6 +5025,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -4937,6 +5053,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -5155,6 +5272,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_01_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Stone",
               "fr": "Terre"
@@ -5188,6 +5306,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_02_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Stonega",
               "fr": "Terre X"
@@ -5230,7 +5349,8 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -5238,11 +5358,13 @@
                 "maxValue": 20,
                 "calcType": "fixe",
                 "turn": 1,
-                "target": "self"
+                "target": "self",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_GLEM_M_03_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Earthen Wall",
               "fr": "Mur terrestre"
@@ -5261,6 +5383,7 @@
             "effects": [],
             "dataId": "SK_GLEM_M_04_R",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Fragmental Rock",
               "fr": "Rocher à fragmentation"
@@ -5307,6 +5430,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -5327,6 +5451,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -5347,6 +5472,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -5374,6 +5500,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "all",
           "maxLevel": 20,
           "range": {
@@ -5545,6 +5672,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_01",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Knife",
               "fr": "Couteau"
@@ -5578,6 +5706,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_02",
             "rate": 50,
+            "type": "skill",
             "names": {
               "en": "Grudge Knife",
               "fr": "Couteau de la rancune"
@@ -5615,11 +5744,13 @@
                 "calcType": "percent",
                 "rate": 30,
                 "turn": 30,
-                "target": "target"
+                "target": "target",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_TNBR_M_03",
             "rate": 100,
+            "type": "skill",
             "names": {
               "en": "Deep-Seated Grudge",
               "fr": "Profonde rancune"
@@ -5662,6 +5793,7 @@
             ],
             "dataId": "SK_BTL_INV_HPDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null Max HP Down",
               "fr": "Annule PV max réduits"
@@ -5682,6 +5814,7 @@
             ],
             "dataId": "SK_BTL_HIT_1_999_U",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Accuracy 1-999 Up",
               "fr": "Précision ↑ 1 - 999"
@@ -5702,6 +5835,7 @@
             ],
             "dataId": "SK_BTL_INV_SPDDOWN",
             "rate": 100,
+            "type": "support",
             "names": {
               "en": "Null AGI Down",
               "fr": "Annule AGI ↓"
@@ -5714,6 +5848,7 @@
             "effects": [],
             "dataId": "SK_TNBR_M_04_R",
             "rate": 30,
+            "type": "skill",
             "names": {
               "en": "Everyone's Grudge",
               "fr": "Rancune commune"
@@ -5762,6 +5897,7 @@
           "elem": [
             "neutral"
           ],
+          "type": "skill",
           "target": "ennemySide",
           "maxLevel": 20,
           "range": {
