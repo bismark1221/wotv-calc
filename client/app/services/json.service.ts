@@ -3674,6 +3674,16 @@ export class JsonService {
       };
 
       this.getNames(formattedQuests[questId], 'questTitle', true, 'quest');
+/*
+
+      "c_rewards": [
+        {
+          "type": 3,
+          "num": 50
+        }
+      ],
+
+*/
       this.getMissions(formattedQuests[questId], quest.missions);
 
       if (formattedQuests[questId].type === 'story') {
