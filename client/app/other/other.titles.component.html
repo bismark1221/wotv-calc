@@ -10,7 +10,13 @@
           <th class="sub">How to get ?</th>
         </tr>
         <tr *ngFor="let title of titles[type]">
-          <td>{{ title.name }}</td>
+          <td>
+            <div class="{{type}}_{{title.grade}}" *ngIf="title.grade !== 'image'">
+              {{ title.name }}
+            </div>
+
+            <img src="assets/titles/{{title.dataId | lowercase }}.png" *ngIf="title.grade === 'image'" />
+          </td>
           <td>{{ title.translatedHowToGet }}</td>
         </tr>
       </tbody>

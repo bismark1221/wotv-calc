@@ -795,6 +795,15 @@ export class JsonService {
     3: 'visiores'
   };
 
+  titleGrade = {
+    1: 'brown',
+    2: 'grey',
+    3: 'red',
+    4: 'blue',
+    5: 'pink',
+    6: 'image'
+  };
+
   private statsAtkRes = [
     'FIRE',
     'ICE',
@@ -3553,7 +3562,8 @@ export class JsonService {
 
     this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId] = {
       dataId: titleId,
-      names: {}
+      names: {},
+      grade: this.titleGrade[titleData.grade]
     };
 
     this.getNames(this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId], type + 'TitleName', false);
