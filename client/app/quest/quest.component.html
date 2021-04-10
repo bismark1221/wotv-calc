@@ -57,5 +57,23 @@
         </td>
       </tr>
     </table>
+
+    <table class="gridTable">
+      <tr>
+        <th colspan="99">MAP</th>
+      </tr>
+      <tr>
+        <th class="sub"></th>
+        <th class="sub" *ngFor="let tile of quest.grid[0]; let gridX = index">
+          {{ gridX + 1 }}
+        </th>
+      </tr>
+      <tr *ngFor="let line of quest.grid; let gridY = index">
+        <th class="sub">{{ gridY + 1 }}</th>
+        <td *ngFor="let tile of line" class="mapTile {{ tile.t ? 'tile0' : tile.h >= 20 ? 'tile20' : 'tile' + tile.h }}">
+          <span *ngIf="!tile.t">{{ tile.h }}</span>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>

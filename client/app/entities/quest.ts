@@ -17,6 +17,7 @@ export class Quest {
   gils = 0;
   chests = 0;
   missions = 0;
+  grid = [];
 
 
   constructFromJson(quest, translateService) {
@@ -32,6 +33,7 @@ export class Quest {
     this.chests = quest.chests;
     this.names = quest.names;
     this.missions = quest.missions;
+    this.grid = quest.grid;
   }
 
   getName(translateService): string {

@@ -57,7 +57,8 @@ export class JsonService {
     raidBonusUnit: {},
     raidBonusCard: {},
     quests: {},
-    questMissions: {}
+    questMissions: {},
+    grids: {}
   };
 
   jp = {
@@ -104,7 +105,8 @@ export class JsonService {
     raidBonusUnit: {},
     raidBonusCard: {},
     quests: {},
-    questMissions: {}
+    questMissions: {},
+    grids: {}
   };
 
   jpRomaji = {};
@@ -1412,6 +1414,18 @@ export class JsonService {
 
 
 
+  private GL_Grids() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/map/gl/grids.json?t=' + date).toPromise();
+  }
+
+  private JP_Grids() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/map/jp/grids.json?t=' + date).toPromise();
+  }
+
+
+
 
   getJsons(): Promise<any[]> {
     // @ts-ignore
@@ -1548,6 +1562,9 @@ export class JsonService {
 
       this.GLQuestMissions(),
       this.JPQuestMissions(),
+
+      this.GL_Grids(),
+      this.JP_Grids()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1581,6 +1598,7 @@ export class JsonService {
       this.gl.raidBonusCard = this.formatJson(responses[70]);
       this.gl.quests = this.formatJson(responses[73]);
       this.gl.questMissions = this.formatJson(responses[108]);
+      this.gl.grids = responses[110];
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1614,6 +1632,7 @@ export class JsonService {
       this.jp.raidBonusCard = this.formatJson(responses[72]);
       this.jp.quests = this.formatJson(responses[74]);
       this.jp.questMissions = this.formatJson(responses[109]);
+      this.jp.grids = responses[110];
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -3680,7 +3699,8 @@ export class JsonService {
         gils: quest.gold,
         chests: 0,
         type: this.questType[quest.type],
-        missions: []
+        missions: [],
+        grid: []
       };
 
       this.getNames(formattedQuests[questId], 'questTitle', true, 'quest');
@@ -3715,6 +3735,7 @@ export class JsonService {
         });
       }
 
+      this.formatGrid(formattedQuests[questId], quest.map.scn);
       this.formatMap(formattedQuests[questId], quest.map.set);
     });
 
@@ -3763,9 +3784,9 @@ export class JsonService {
     }
   }
 
-  formatMap(quest, rawMap) {
-    if (this.maps[rawMap.split('/')[1]]) {
-      const map = this.maps[rawMap.split('/')[1]];
+  formatMap(quest, mapId) {
+    if (this.maps[mapId.split('/')[1]]) {
+      const map = this.maps[mapId.split('/')[1]];
       if (map.drop_table_list) {
         Object.keys(map.drop_table_list).forEach(dropTable => {
           if (dropTable !== 'steal') {
@@ -3825,5 +3846,24 @@ export class JsonService {
     });
 
     return totalRate;
+  }
+
+  formatGrid(quest, gridId) {
+    if (this[this.version].grids[gridId.split('/')[1]]) {
+      const rawGrid = this[this.version].grids[gridId.split('/')[1]];
+      rawGrid.forEach(tile => {
+        if (!quest.grid[tile.x]) {
+          quest.grid[tile.x] = [];
+        }
+
+        quest.grid[tile.x][tile.y] = {
+          h: tile.h
+        };
+
+        if (tile.t !== '') {
+          quest.grid[tile.x][tile.y].t = tile.t;
+        }
+      });
+    }
   }
 }

@@ -92,3 +92,92 @@
   max-width: 40px;
   max-height: 40px;
 }
+
+.mapTile {
+  width: 58px;
+  height: 58px;
+}
+
+.tile0 {
+  background: #242222;
+}
+
+.tile1 {
+  background: #2b2929;
+}
+
+.tile2 {
+  background: #383535;
+}
+
+.tile3 {
+  background: #423f3f;
+}
+
+.tile4 {
+  background: #4d4949;
+}
+
+.tile5 {
+  background: #595454;
+}
+
+.tile6 {
+  background: #656060;
+}
+
+.tile7 {
+  background: #716b6b;
+}
+
+.tile8 {
+  background: #7d7777;
+}
+
+.tile9 {
+  background: #898282;
+}
+
+.tile10 {
+  background: #948d8d;
+}
+
+.tile11 {
+  background: #9f9898;
+}
+
+.tile12 {
+  background: #aaa2a2;
+}
+
+.tile13 {
+  background: #b6adad;
+}
+
+.tile14 {
+  background: #c0b7b7;
+}
+
+.tile15 {
+  background: #ccc3c3;
+}
+
+.tile16 {
+  background: #dacfcf;
+}
+
+.tile17 {
+  background: #e6dbdb;
+}
+
+.tile18 {
+  background: #f2e7e7;
+}
+
+.tile19 {
+  background: #fcf0f0;
+}
+
+.tile20 {
+  background: #fff;
+}
