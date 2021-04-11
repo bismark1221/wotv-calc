@@ -3704,16 +3704,8 @@ export class JsonService {
       };
 
       this.getNames(formattedQuests[questId], 'questTitle', true, 'quest');
-/*
 
-      "c_rewards": [
-        {
-          "type": 3,
-          "num": 50
-        }
-      ],
-
-*/
+      this.getCompletionReward(formattedQuests[questId], quest.c_rewards);
       this.getMissions(formattedQuests[questId], quest.missions);
 
       if (formattedQuests[questId].type === 'story') {
@@ -3781,6 +3773,26 @@ export class JsonService {
           quest.missions.push(newMission);
         }
       });
+    }
+  }
+
+  getCompletionReward(quest, rewards) {
+    if (rewards && rewards.length > 0) {
+      const newMission = {
+        type: this.questMissionCond[0],
+        value: null,
+        rewards: []
+      };
+
+      rewards.forEach(reward => {
+        newMission.rewards.push({
+          type: this.questMissionReward[reward.type],
+          rewardId: reward.item,
+          value: reward.num
+        });
+      });
+
+      quest.missions.push(newMission);
     }
   }
 

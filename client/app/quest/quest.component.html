@@ -70,7 +70,7 @@
       </tr>
       <tr *ngFor="let line of quest.grid; let gridY = index">
         <th class="sub">{{ gridY + 1 }}</th>
-        <td *ngFor="let tile of line" class="mapTile {{ tile.t ? 'tile0' : tile.h >= 20 ? 'tile20' : 'tile' + tile.h }}">
+        <td *ngFor="let tile of line" class="mapTile {{ tile.t ? 'tileNoAccess' : tile.h >= 20 ? 'tile20' : 'tile' + tile.h }}">
           <span *ngIf="!tile.t">{{ tile.h }}</span>
         </td>
       </tr>
