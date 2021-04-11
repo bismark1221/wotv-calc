@@ -14,7 +14,7 @@ import { NavService } from './nav.service';
 })
 
 export class AuthService {
-  user = null;
+  user;
   load = 0;
 
   private userDataSubject = new BehaviorSubject(this.user);
@@ -37,12 +37,13 @@ export class AuthService {
   private updateUser(user, newLogin = false) {
     let result = null;
 
-    if (user && this.user === null) {
+    if (user && (this.user === null || this.user === undefined)) {
       this.user = new User(user.displayName, user.email, user.uid);
       result = this.loadUserData(newLogin);
-    } else if (user === null && this.user !== null) {
+    } else if (user === null && (this.user !== null || this.user === undefined)) {
       this.user = null;
     }
+
 
     this.userDataSubject.next(this.user);
     return result;

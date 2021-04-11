@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 import { QuestService } from '../services/quest.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-quests',
@@ -24,6 +26,8 @@ export class QuestsComponent implements OnInit {
     private questService: QuestService,
     private translateService: TranslateService,
     private navService: NavService,
+    private authService: AuthService,
+    private router: Router,
     private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -32,9 +36,21 @@ export class QuestsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navService.setTitle('Quests');
+    this.authService.$user.subscribe(async user => {
+      if (user && await this.checkIfIlluminati()) {
+        this.navService.setTitle('Quests');
 
-    this.getQuests();
+        this.getQuests();
+      } else if (user !== undefined) {
+        this.router.navigate([this.navService.getRoute('/page-not-found')]);
+      }
+    });
+  }
+
+  async checkIfIlluminati() {
+    return await this.authService.getIlluminty().then(result => {
+      return result;
+    });
   }
 
   async getQuests() {

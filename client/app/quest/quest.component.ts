@@ -8,6 +8,7 @@ import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { ItemService } from '../services/item.service';
 import { EquipmentService } from '../services/equipment.service';
+import { AuthService } from '../services/auth.service';
 
 
 @Component({
@@ -22,6 +23,7 @@ export class QuestComponent implements OnInit {
     private questService: QuestService,
     private rangeService: RangeService,
     private activatedRoute: ActivatedRoute,
+    private authService: AuthService,
     private router: Router,
     private translateService: TranslateService,
     private navService: NavService,
@@ -37,15 +39,27 @@ export class QuestComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe(async (params: Params) => {
-      this.quest = await this.questService.getQuestBySlug(params.get('slug'));
-      if (!this.quest) {
-        this.router.navigate([this.navService.getRoute('/quest-not-found')]);
-      } else {
-        await this.formatQuest();
+    this.activatedRoute.paramMap.subscribe((params: Params) => {
+      this.authService.$user.subscribe(async user => {
+        if (user && await this.checkIfIlluminati()) {
+          this.quest = await this.questService.getQuestBySlug(params.get('slug'));
+          if (!this.quest) {
+            this.router.navigate([this.navService.getRoute('/quest-not-found')]);
+          } else {
+            await this.formatQuest();
 
-        this.navService.setTitle(this.quest.name);
-      }
+            this.navService.setTitle(this.quest.name);
+          }
+        } else if (user !== undefined) {
+          this.router.navigate([this.navService.getRoute('/page-not-found')]);
+        }
+      });
+    });
+  }
+
+  async checkIfIlluminati() {
+    return await this.authService.getIlluminty().then(result => {
+      return result;
     });
   }
 
