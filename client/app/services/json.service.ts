@@ -3186,7 +3186,8 @@ export class JsonService {
         image: this[this.version].equipments[dataId].asset.toLowerCase(),
         equippableJobs: [],
         equippableUnits: [],
-        materials: []
+        materials: [],
+        acquisition: null
       };
 
       this.getNames(equipment, 'equipment');
