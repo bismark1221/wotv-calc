@@ -222,14 +222,18 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
               if (cond.type === 'job') {
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
-                  const job = await this.jobService.getJob(jobId);
-                  cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+                  if (jobId && !jobId.dataId) {
+                    const job = await this.jobService.getJob(jobId);
+                    cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+                  }
                 }
               } else if (cond.type === 'unit') {
                 for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
                   const unitId = cond.items[unitIndex];
-                  const unit = await this.unitService.getUnit(unitId);
-                  cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+                  if (unitId && !unitId.dataId) {
+                    const unit = await this.unitService.getUnit(unitId);
+                    cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+                  }
                 }
               }
             }
@@ -246,14 +250,18 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
           if (cond.type === 'job') {
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
-              const job = await this.jobService.getJob(jobId);
-              cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+              if (jobId && !jobId.dataId) {
+                const job = await this.jobService.getJob(jobId);
+                cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+              }
             }
           } else if (cond.type === 'unit') {
             for (let unitIndex = 0; unitIndex <= cond.items.length - 1; unitIndex++) {
               const unitId = cond.items[unitIndex];
-              const unit = await this.unitService.getUnit(unitId);
-              cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+              if (unitId && !unitId.dataId) {
+                const unit = await this.unitService.getUnit(unitId);
+                cond.items[unitIndex] = unit ? unit : cond.items[unitIndex];
+              }
             }
           }
         }

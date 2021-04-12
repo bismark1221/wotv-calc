@@ -70,8 +70,16 @@
       </tr>
       <tr *ngFor="let line of quest.grid; let gridY = index">
         <th class="sub">{{ gridY + 1 }}</th>
-        <td *ngFor="let tile of line" class="mapTile {{ tile.t ? 'tileNoAccess' : tile.h >= 20 ? 'tile20' : 'tile' + tile.h }}">
-          <span *ngIf="!tile.t">{{ tile.h }}</span>
+        <td
+          *ngFor="let tile of line"
+          class="mapTile {{ !tile.t && tile.h < 20 ? 'tile' + tile.h : '' }}"
+          [ngClass]="{
+            'tileNoAccess': tile.t,
+            'partyTile': tile && tile.party,
+            'tile20': !tile.t && tile.h >= 20
+          }"
+        >
+          <span *ngIf="tile && !tile.t">{{ tile.h }}</span>
         </td>
       </tr>
     </table>

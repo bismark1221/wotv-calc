@@ -578,7 +578,7 @@ export class SimulatorService {
     /* Damage Part */
     /***************/
     let damage = Math.floor(baseDamage * this.getMultiplier(unit, dataSimulator, critic, addDamageValue));
-    // console.log('damage before DEF, ...');
+    // console.log('damage after multiplier');
     // console.log(damage);
 
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
@@ -683,6 +683,9 @@ export class SimulatorService {
     if (critic) {
       multiplier += 25 + (dataSimulator.realStats.unit['CRITIC_DAMAGE'] ? dataSimulator.realStats.unit['CRITIC_DAMAGE'] : 0);
     }
+
+    // console.log('total multiplier')
+    // console.log(multiplier)
 
     return multiplier / 100;
   }

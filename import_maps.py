@@ -31,12 +31,32 @@ for fileName in fileNames:
             for rawEnemy in rawData['enemy']:
                 reducedEnemy = {}
                 reducedEnemy['iname'] = rawEnemy['iname']
+                reducedEnemy['x'] = rawEnemy['x']
+                reducedEnemy['y'] = rawEnemy['y']
+                reducedEnemy['lv'] = rawEnemy['lv']
+                reducedEnemy['elem'] = rawEnemy['elem']
+
+                if 'brave' in rawEnemy:
+                    reducedEnemy['brave'] = rawEnemy['brave']
+                if 'faith' in rawEnemy:
+                    reducedEnemy['faith'] = rawEnemy['faith']
                 if 'skills' in rawEnemy:
                     reducedEnemy['skills'] = rawEnemy['skills']
                 if 'drop' in rawEnemy:
                     reducedEnemy['drop'] = rawEnemy['drop']
+                if 'side' in rawEnemy:
+                    reducedEnemy['side'] = rawEnemy['side']
                 enemy.append(reducedEnemy)
             data[fileName[:-5]]['enemy'] = enemy
+
+        if 'party' in rawData:
+            party = []
+            for rawParty in rawData['party']:
+                reducedParty = {}
+                reducedParty['x'] = rawParty['x']
+                reducedParty['y'] = rawParty['y']
+                party.append(reducedParty)
+            data[fileName[:-5]]['party'] = party
 
 with open('data/map/gl/maps.json', 'w') as outfile:
     json.dump(data, outfile)

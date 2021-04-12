@@ -99,110 +99,116 @@
 }
 
 .tileNoAccess {
-  background: var(--table-border);
+  background-color: var(--table-border);
 }
 
 .tile0 {
-  background: #242222;
+  background-color: #242222;
   color: #fff;
 }
 
 .tile1 {
-  background: #2b2929;
+  background-color: #2b2929;
   color: #fff;
 }
 
 .tile2 {
-  background: #383535;
+  background-color: #383535;
   color: #fff;
 }
 
 .tile3 {
-  background: #423f3f;
+  background-color: #423f3f;
   color: #fff;
 }
 
 .tile4 {
-  background: #4d4949;
+  background-color: #4d4949;
   color: #fff;
 }
 
 .tile5 {
-  background: #595454;
+  background-color: #595454;
   color: #fff;
 }
 
 .tile6 {
-  background: #656060;
+  background-color: #656060;
   color: #fff;
 }
 
 .tile7 {
-  background: #716b6b;
+  background-color: #716b6b;
   color: #fff;
 }
 
 .tile8 {
-  background: #7d7777;
+  background-color: #7d7777;
   color: #fff;
 }
 
 .tile9 {
-  background: #898282;
+  background-color: #898282;
   color: #fff;
 }
 
 .tile10 {
-  background: #948d8d;
+  background-color: #948d8d;
   color: #fff;
 }
 
 .tile11 {
-  background: #9f9898;
+  background-color: #9f9898;
   color: #000;
 }
 
 .tile12 {
-  background: #aaa2a2;
+  background-color: #aaa2a2;
   color: #000;
 }
 
 .tile13 {
-  background: #b6adad;
+  background-color: #b6adad;
   color: #000;
 }
 
 .tile14 {
-  background: #c0b7b7;
+  background-color: #c0b7b7;
   color: #000;
 }
 
 .tile15 {
-  background: #ccc3c3;
+  background-color: #ccc3c3;
   color: #000;
 }
 
 .tile16 {
-  background: #dacfcf;
+  background-color: #dacfcf;
   color: #000;
 }
 
 .tile17 {
-  background: #e6dbdb;
+  background-color: #e6dbdb;
   color: #000;
 }
 
 .tile18 {
-  background: #f2e7e7;
+  background-color: #f2e7e7;
   color: #000;
 }
 
 .tile19 {
-  background: #fcf0f0;
+  background-color: #fcf0f0;
   color: #000;
 }
 
 .tile20 {
-  background: #fff;
+  background-color: #fff;
   color: #000;
+}
+
+.partyTile {
+  background-image: url("assets/grid/unit_placement.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }

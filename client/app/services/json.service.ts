@@ -1632,7 +1632,7 @@ export class JsonService {
       this.jp.raidBonusCard = this.formatJson(responses[72]);
       this.jp.quests = this.formatJson(responses[74]);
       this.jp.questMissions = this.formatJson(responses[109]);
-      this.jp.grids = responses[110];
+      this.jp.grids = responses[111];
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1744,7 +1744,7 @@ export class JsonService {
     for (let i = 0; i < versions.length; i ++) {
       this.version = versions[i];
 
-      Object.keys(this[this.version].jobs).forEach(jobId => {
+     Object.keys(this[this.version].jobs).forEach(jobId => {
         this.addJob(this[this.version].jobs[jobId]);
       });
 
@@ -1895,18 +1895,18 @@ export class JsonService {
     return materials;
   }
 
-  private addUnit(unit) {
-    const dataId = unit.iname;
-    this[this.version].wotvUnits[dataId] = {
+  private addUnit(rawUnit) {
+    const dataId = rawUnit.iname;
+    const unit = {
       dataId: dataId,
       names: {},
-      rarity: this.rarity[unit.rare],
-      jobs: unit.jobsets,
+      rarity: this.rarity[rawUnit.rare],
+      jobs: rawUnit.jobsets,
       exJobs: [],
       stats: {},
-      cost: unit.cost,
-      element: this.elements[unit.elem[0]],
-      image: unit.charaId.toLowerCase(),
+      cost: rawUnit.cost,
+      element: this.elements[rawUnit.elem[0]],
+      image: rawUnit.charaId.toLowerCase(),
       board: {
         nodes: {},
         lines: []
@@ -1914,22 +1914,24 @@ export class JsonService {
       replacedSkills : {}
     };
 
-    if (unit.ccsets) {
-      unit.ccsets.forEach(exJob => {
-        this[this.version].wotvUnits[dataId].exJobs.push(exJob.m);
+    if (rawUnit.ccsets) {
+      rawUnit.ccsets.forEach(exJob => {
+        unit.exJobs.push(exJob.m);
       });
     }
 
-    this.getUnitImage(this[this.version].wotvUnits[dataId]);
-    this.getNames(this[this.version].wotvUnits[dataId], 'unit');
+    this.getUnitImage(unit);
+    this.getNames(unit, 'unit');
 
-    this.getStats(this[this.version].wotvUnits[dataId], unit.status, 'unit');
-    this.getMoveJumpUnit(this[this.version].wotvUnits[dataId]);
-    this.getLB(this[this.version].wotvUnits[dataId], unit.limit);
-    this.getAttackSkill(this[this.version].wotvUnits[dataId], unit.atkskl);
-    this.getMasterSkill(this[this.version].wotvUnits[dataId], unit.mstskl);
-    this.getTMR(this[this.version].wotvUnits[dataId], unit.trust);
-    this.getSkillsAndBuffs(this[this.version].wotvUnits[dataId]);
+    this.getStats(unit, rawUnit.status, 'unit');
+    this.getMoveJumpUnit(unit);
+    this.getLB(unit, rawUnit.limit);
+    this.getAttackSkill(unit, rawUnit.atkskl);
+    this.getMasterSkill(unit, rawUnit.mstskl);
+    this.getTMR(unit, rawUnit.trust);
+    this.getSkillsAndBuffs(unit);
+
+    this[this.version].wotvUnits[dataId] = unit;
   }
 
   private getUnitImage(unit) {
@@ -1942,7 +1944,7 @@ export class JsonService {
     const dataId = visionCard.iname;
 
     if (visionCard.type === 0) {
-      this[this.version].wotvVisionCards[dataId] = {
+      const card = {
         dataId: dataId,
         names: {},
         cost: visionCard.cost,
@@ -1951,10 +1953,12 @@ export class JsonService {
         image: visionCard.icon.toLowerCase()
       };
 
-      this.getNames(this[this.version].wotvVisionCards[dataId], 'visionCard');
-      this.getStats(this[this.version].wotvVisionCards[dataId], visionCard.status, 'visionCard');
+      this.getNames(card, 'visionCard');
+      this.getStats(card, visionCard.status, 'visionCard');
 
-      this.getVisionCardSkillsAndBuffs(this[this.version].wotvVisionCards[dataId], visionCard);
+      this.getVisionCardSkillsAndBuffs(card, visionCard);
+
+      this[this.version].wotvVisionCards[dataId] = card;
     }
   }
 
@@ -2021,19 +2025,27 @@ export class JsonService {
 
     if (getSlug) {
       let i = 0;
+      let finded = true;
 
-      Object.keys(this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's']).forEach(itemId => {
-        if (this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug
-          || this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug + '-' + i
-        ) {
-          i++;
-        }
-      });
+      while (finded) {
+        finded = false;
 
-      if (i > 1) {
-        item.slug =  item.slug + '-' + (i - 1);
+        Object.keys(this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's']).forEach(itemId => {
+          if (!finded
+            && (
+              (i === 0 && this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug)
+            || this[this.version]['wotv' + this.upperCaseFirst(overwriteType ? overwriteType : type, false) + 's'][itemId].slug === item.slug + '-' + i)
+          ) {
+            i++;
+            finded = true;
+          }
+        });
       }
+
+      if (i > 0) {
+        item.slug = item.slug + '-' + (i);
       }
+    }
   }
 
   private getSkillsAndBuffs(unit) {
@@ -3146,9 +3158,9 @@ export class JsonService {
     }
   }
 
-  private addEquipment(equipment) {
-    const dataId = equipment.iname;
-    let rType = equipment.rtype !== 'AF_LOT_50' && equipment.rtype !== 'AF_LOT_TRUST' ? equipment.rtype : dataId;
+  private addEquipment(rawEquipment) {
+    const dataId = rawEquipment.iname;
+    let rType = rawEquipment.rtype !== 'AF_LOT_50' && rawEquipment.rtype !== 'AF_LOT_TRUST' ? rawEquipment.rtype : dataId;
 
     // @TODO Manage via recipe !!
 
@@ -3162,7 +3174,7 @@ export class JsonService {
     }
 
     if (!this[this.version].wotvEquipments[rType]) {
-      this[this.version].wotvEquipments[rType] = {
+      const equipment = {
         names: {},
         slug: this.slug.slugify(this.names.en.equipment[dataId]),
         stats: {},
@@ -3170,26 +3182,26 @@ export class JsonService {
         dataId: dataId,
         grows: {},
         skills: [],
-        rarity: this.rarity[equipment.rare],
+        rarity: this.rarity[rawEquipment.rare],
         image: this[this.version].equipments[dataId].asset.toLowerCase(),
         equippableJobs: [],
         equippableUnits: [],
         materials: []
       };
 
-      this.getNames(this[this.version].wotvEquipments[rType], 'equipment');
+      this.getNames(equipment, 'equipment');
 
-      if (equipment.equip) {
-        if (this[this.version].EquipmentCond[equipment.equip]) {
-          if (this[this.version].EquipmentCond[equipment.equip].jobs) {
-            this[this.version].EquipmentCond[equipment.equip].jobs.forEach(job => {
-              this[this.version].wotvEquipments[rType].equippableJobs.push(job);
+      if (rawEquipment.equip) {
+        if (this[this.version].EquipmentCond[rawEquipment.equip]) {
+          if (this[this.version].EquipmentCond[rawEquipment.equip].jobs) {
+            this[this.version].EquipmentCond[rawEquipment.equip].jobs.forEach(job => {
+              equipment.equippableJobs.push(job);
             });
           }
 
-          if (this[this.version].EquipmentCond[equipment.equip].units) {
-            this[this.version].EquipmentCond[equipment.equip].units.forEach(unit => {
-              this[this.version].wotvEquipments[rType].equippableUnits.push(unit);
+          if (this[this.version].EquipmentCond[rawEquipment.equip].units) {
+            this[this.version].EquipmentCond[rawEquipment.equip].units.forEach(unit => {
+              equipment.equippableUnits.push(unit);
             });
           }
         } else {
@@ -3200,13 +3212,13 @@ export class JsonService {
 
             if (uniqJobs.indexOf(genericDataId) === -1) {
               uniqJobs.push(genericDataId);
-              this[this.version].wotvEquipments[rType].equippableJobs.push(jobId);
+              equipment.equippableJobs.push(jobId);
             }
           });
         }
       }
 
-      if (equipment.trust) {
+      if (rawEquipment.trust) {
         let unitId = null;
         let i = 0;
         const unitIds = Object.keys(this[this.version].wotvUnits);
@@ -3220,19 +3232,19 @@ export class JsonService {
         }
 
         if (unitId) {
-          this[this.version].wotvEquipments[rType].acquisition = {
+          equipment.acquisition = {
             type: 'tmr',
             unitId: unitId
           };
         } else {
-          this[this.version].wotvEquipments[rType].acquisition = {
+          equipment.acquisition = {
             type: 'Unknown'
           };
         }
       } else if (this[this.version].equipmentRecipes[dataId]) {
         const recipe = this[this.version].equipmentRecipes[dataId];
         if (this.names.en.itemOther[recipe.recipe] && this.names.en.itemOther[recipe.recipe] !== '') {
-          this[this.version].wotvEquipments[rType].acquisition = {
+          equipment.acquisition = {
             type: {
               en: this.names.en.itemOther[recipe.recipe],
               fr: this.names.fr.itemOther[recipe.recipe]
@@ -3241,29 +3253,29 @@ export class JsonService {
         }
       } else {
         // console.log("NO RECEIPE !!!")
-        // console.log(this[this.version].wotvEquipments[rType])
+        // console.log(equipment)
       }
 
-      if (!this[this.version].wotvEquipments[rType].acquisition) {
-        this[this.version].wotvEquipments[rType].acquisition = {
+      if (!equipment.acquisition) {
+        equipment.acquisition = {
           type: 'Unknown'
         };
       }
 
-      if (this[this.version].equipementLots[equipment.rtype]) {
+      if (this[this.version].equipementLots[rawEquipment.rtype]) {
         for (let i = 1; i <= 3; i++) {
-          const growId = this[this.version].equipementLots[equipment.rtype].lot[0]['grow' + i];
+          const growId = this[this.version].equipementLots[rawEquipment.rtype].lot[0]['grow' + i];
           if (growId) {
-            this[this.version].wotvEquipments[rType].grows[growId] = {
+            equipment.grows[growId] = {
               dataId: growId,
               names: {},
               curve: {}
             };
-            this.getNames(this[this.version].wotvEquipments[rType].grows[growId], 'equipmentGrow', false);
+            this.getNames(equipment.grows[growId], 'equipmentGrow', false);
 
             Object.keys(this[this.version].grows[growId].curve[0]).forEach(stat => {
               if (this.stats.unit[stat]) {
-                this[this.version].wotvEquipments[rType].grows[growId].curve[this.stats.unit[stat]] = this[this.version].grows[growId].curve[0][stat];
+                equipment.grows[growId].curve[this.stats.unit[stat]] = this[this.version].grows[growId].curve[0][stat];
               }
             });
           }
@@ -3276,12 +3288,14 @@ export class JsonService {
             && typeof(this[this.version].equipments[dataId].status[1][stat]) === 'number'
             && this[this.version].equipments[dataId].status[1][stat] !== 0)
         ) {
-          this[this.version].wotvEquipments[rType].stats[this.stats.unit[stat]] = {
+          equipment.stats[this.stats.unit[stat]] = {
             min: this[this.version].equipments[dataId].status[0][stat],
             max: this[this.version].equipments[dataId].status[1] ? this[this.version].equipments[dataId].status[1][stat] : this[this.version].equipments[dataId].status[0][stat]
           };
         }
       });
+
+      this[this.version].wotvEquipments[rType] = equipment;
     }
 
     this[this.version].wotvEquipments[rType].materials.push(this.getEquipmentMaterials(dataId));
@@ -3683,15 +3697,14 @@ export class JsonService {
   }
 
   formatQuests() {
-    const formattedQuests = {};
-
     Object.keys(this[this.version].quests).forEach(questId => {
       const quest = this[this.version].quests[questId];
 
-      formattedQuests[questId] = {
+      const formattedQuest = {
         dataId: questId,
         items: {},
         names: {},
+        slug: '',
         exp: quest.uexp,
         nrg: quest.ap,
         jp: quest.jp,
@@ -3703,35 +3716,35 @@ export class JsonService {
         grid: []
       };
 
-      this.getNames(formattedQuests[questId], 'questTitle', true, 'quest');
+      this.getNames(formattedQuest, 'questTitle', true, 'quest');
 
-      this.getCompletionReward(formattedQuests[questId], quest.c_rewards);
-      this.getMissions(formattedQuests[questId], quest.missions);
+      this.getCompletionReward(formattedQuest, quest.c_rewards);
+      this.getMissions(formattedQuest, quest.missions);
 
-      if (formattedQuests[questId].type === 'story') {
+      if (formattedQuest.type === 'story') {
         const storyNumber = questId.split('_')[2];
-        Object.keys(formattedQuests[questId].names).forEach(lang => {
-          formattedQuests[questId].names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuests[questId].names[lang];
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuest.names[lang];
         });
       }
 
-      if (formattedQuests[questId].type === 'multi') {
-        Object.keys(formattedQuests[questId].names).forEach(lang => {
-          formattedQuests[questId].names[lang] = 'Multi: ' + formattedQuests[questId].names[lang];
+      if (formattedQuest.type === 'multi') {
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = 'Multi: ' + formattedQuest.names[lang];
         });
       }
 
-      if (formattedQuests[questId].type === 'character_quest') {
-        Object.keys(formattedQuests[questId].names).forEach(lang => {
-          formattedQuests[questId].names[lang] = 'Character quest: ' + formattedQuests[questId].names[lang];
+      if (formattedQuest.type === 'character_quest') {
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
         });
       }
 
-      this.formatGrid(formattedQuests[questId], quest.map.scn);
-      this.formatMap(formattedQuests[questId], quest.map.set);
+      this.formatGrid(formattedQuest, quest.map.scn);
+      this.formatMap(formattedQuest, quest.map.set);
+
+      this[this.version].wotvQuests[questId] = formattedQuest;
     });
-
-    this[this.version].wotvQuests = formattedQuests;
   }
 
   getMissions(quest, missions) {
@@ -3811,9 +3824,25 @@ export class JsonService {
         map.enemy.forEach(enemy => {
           if (enemy.iname === 'UN_GM_TREASURE') {
             quest.chests += 1;
-          } else {
+          } else if (enemy.side === 1) {
             quest.enemies += 1;
           }
+        });
+      }
+
+      if (map.party) {
+        map.party.forEach(party => {
+          if (!quest.grid[party.x]) {
+            quest.grid[party.x] = [];
+            for (let i = 0; i <= quest.grid[0].length - 1; i++) {
+              quest.grid[party.x][i] = {
+                h: 0,
+                t: 'TILE_NOT_IN_GRID'
+              };
+            }
+          }
+
+          quest.grid[party.x][party.y].party = true;
         });
       }
 

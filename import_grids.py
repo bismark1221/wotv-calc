@@ -30,11 +30,19 @@ def extract_map_grid(fileName):
 data = {}
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/global/map/lapis/grid')) for f in fn]
 for fileName in fileNames:
-    data[fileName[:-12].split('/')[len(fileName[:-12].split('/')) - 1]] = extract_map_grid(fileName)
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+        data[smallFileName[:-12]] = extract_map_grid(fileName)
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+        data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/global/map/collabo/grid')) for f in fn]
 for fileName in fileNames:
-    data[fileName[:-12].split('/')[len(fileName[:-12].split('/')) - 1]] = extract_map_grid(fileName)
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+        data[smallFileName[:-12]] = extract_map_grid(fileName)
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+        data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 with open('data/map/gl/grids.json', 'w') as outfile:
     json.dump(data, outfile)
@@ -43,11 +51,19 @@ with open('data/map/gl/grids.json', 'w') as outfile:
 data = {}
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/japan/map/lapis/grid')) for f in fn]
 for fileName in fileNames:
-    data[fileName[:-12].split('/')[len(fileName[:-12].split('/')) - 1]] = extract_map_grid(fileName)
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+        data[smallFileName[:-12]] = extract_map_grid(fileName)
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+        data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/japan/map/collabo/grid')) for f in fn]
 for fileName in fileNames:
-    data[fileName[:-12].split('/')[len(fileName[:-12].split('/')) - 1]] = extract_map_grid(fileName)
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+        data[smallFileName[:-12]] = extract_map_grid(fileName)
+    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+        data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 with open('data/map/jp/grids.json', 'w') as outfile:
     json.dump(data, outfile)
