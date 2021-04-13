@@ -70,45 +70,12 @@ export class QuestComponent implements OnInit {
       this.quest.getName(this.translateService);
       this.quest.formattedMissions = [];
       for (const mission of this.quest.missions) {
-        const formattedMission = {
-          mission: await this.questService.formatMission(mission),
-          rewards: []
-        };
-
-        for (const reward of mission.rewards) {
-          const formattedReward = {
-            type: reward.type,
-            reward: null,
-            value: reward.value
-          };
-
-          if (reward.type === 'item') {
-            formattedReward.reward = await this.itemService.getItem(reward.rewardId, true);
-          } else if (reward.type === 'equipment') {
-            formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId);
-            if (formattedReward.reward === undefined) {
-              formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId.slice(0, -2));
-              formattedReward.reward.name = this.nameService.getName(formattedReward.reward) + ' +' + reward.rewardId[reward.rewardId.length - 1];
-            } else {
-              formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
-            }
-          } else if (reward.type === 'visiores') {
-            formattedReward.reward = {
-              image: 'visiores',
-              name: 'Visiores'
-            };
-          }
-
-          formattedMission.rewards.push(formattedReward);
-        }
-
-        this.quest.formattedMissions.push(formattedMission);
+        this.quest.formattedMissions.push(await this.formatMission(mission));
       }
 
       this.quest.formattedEnemies = [];
-      for (const rawEnemy of this.quest.enemies) {
-        const enemy = await this.otherUnitService.getUnit(rawEnemy.iname);
-        console.log(enemy);
+      for (const enemy of this.quest.enemies) {
+        this.quest.formattedEnemies.push(await this.formatEnemy(enemy));
       }
     }
 
@@ -117,5 +84,60 @@ export class QuestComponent implements OnInit {
 
   getRoute(route) {
     return this.navService.getRoute(route);
+  }
+
+  async formatMission(mission) {
+    const formattedMission = {
+      mission: await this.questService.formatMission(mission),
+      rewards: []
+    };
+
+    for (const reward of mission.rewards) {
+      const formattedReward = {
+        type: reward.type,
+        reward: null,
+        value: reward.value
+      };
+
+      if (reward.type === 'item') {
+        formattedReward.reward = await this.itemService.getItem(reward.rewardId, true);
+      } else if (reward.type === 'equipment') {
+        formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId);
+        if (formattedReward.reward === undefined) {
+          formattedReward.reward = await this.equipmentService.getEquipment(reward.rewardId.slice(0, -2));
+          formattedReward.reward.name = this.nameService.getName(formattedReward.reward) + ' +' + reward.rewardId[reward.rewardId.length - 1];
+        } else {
+          formattedReward.reward.name = this.nameService.getName(formattedReward.reward);
+        }
+      } else if (reward.type === 'visiores') {
+        formattedReward.reward = {
+          image: 'visiores',
+          name: 'Visiores'
+        };
+      }
+
+      formattedMission.rewards.push(formattedReward);
+    }
+
+    return formattedMission;
+  }
+
+  async formatEnemy(enemy) {
+    const formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
+    console.log(formattedEnemy);
+
+    if (enemy.element) {
+      formattedEnemy.element = enemy.element;
+    }
+
+    if (enemy.lv) {
+      formattedEnemy.level = enemy.lv;
+    } else {
+      formattedEnemy.level = 0;
+    }
+
+    formattedEnemy.name = this.nameService.getName(formattedEnemy);
+
+    return formattedEnemy;
   }
 }

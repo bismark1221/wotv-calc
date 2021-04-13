@@ -103,7 +103,7 @@
       </tr>
       <tr *ngFor="let ally of quest.allies; let j = index">
         <td>E{{ j + 1 }}</td>
-        <td>{{ ally.iname }}</td>
+        <td>{{ ally.name }}</td>
         <td>{{ ally.elem }}</td>
         <td></td>
         <td>{{ ally.lv }}</td>
@@ -111,21 +111,21 @@
       </tr>
     </table>
 
-    <table class="enemyTable" *ngIf="quest.enemies.length > 0">
+    <table class="enemyTable" *ngIf="quest.formattedEnemies?.length > 0">
       <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Element</th>
-        <th>Job ?</th>
+        <th>Job</th>
         <th>Level</th>
         <th>Type</th>
       </tr>
-      <tr *ngFor="let enemy of quest.enemies; let j = index">
+      <tr *ngFor="let enemy of quest.formattedEnemies; let j = index">
         <td>E{{ j + 1 }}</td>
-        <td>{{ enemy.iname }}</td>
-        <td>{{ enemy.elem }}</td>
+        <td>{{ enemy.name }}</td>
+        <td><img src="assets/elements/{{ enemy.element }}.png" /></td>
         <td></td>
-        <td>{{ enemy.lv }}</td>
+        <td>{{ enemy.level }}</td>
         <td></td>
       </tr>
     </table>
@@ -137,7 +137,7 @@
       </tr>
       <tr *ngFor="let chest of quest.chests; let j = index">
         <td>C{{ j + 1 }}</td>
-        <td>{{ chest.iname }}</td>
+        <td>{{ chest.name }}</td>
       </tr>
     </table>
 
@@ -148,7 +148,7 @@
       </tr>
       <tr *ngFor="let object of quest.objects; let j = index">
         <td>C{{ j + 1 }}</td>
-        <td>{{ object.iname }}</td>
+        <td>{{ object.name }}</td>
       </tr>
     </table>
   </div>

@@ -3834,25 +3834,25 @@ export class JsonService {
 
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
-            quest.allies.push(enemy);
-            this.addOtherUnit(enemy.iname);
+            quest.allies.push(this.formatEnemyForQuest(enemy));
+            this.addOtherUnit(enemy.dataId);
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
-              quest.chests.push(enemy);
-              this.addOtherUnit(enemy.iname, true);
+              quest.chests.push(this.formatEnemyForQuest(enemy));
+              this.addOtherUnit(enemy.dataId, true);
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
-              quest.switchs.push(enemy);
-              this.addOtherUnit(enemy.iname, true);
+              quest.switchs.push(this.formatEnemyForQuest(enemy));
+              this.addOtherUnit(enemy.dataId, true);
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
-              quest.objects.push(enemy);
-              this.addOtherUnit(enemy.iname, true);
+              quest.objects.push(this.formatEnemyForQuest(enemy));
+              this.addOtherUnit(enemy.dataId, true);
             } else {
-              this.addOtherUnit(enemy.iname);
               quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
-              quest.enemies.push(enemy);
+              quest.enemies.push(this.formatEnemyForQuest(enemy));
+              this.addOtherUnit(enemy.dataId);
             }
           }
         });
@@ -3885,6 +3885,24 @@ export class JsonService {
         });
       }
     }
+  }
+
+  formatEnemyForQuest(enemy) {
+    const formattedEnemy = JSON.parse(JSON.stringify(enemy));
+
+    formattedEnemy.dataId = formattedEnemy.iname;
+
+    delete formattedEnemy.iname;
+    delete formattedEnemy.x;
+    delete formattedEnemy.y;
+
+    if (formattedEnemy.elem !== 0) {
+      formattedEnemy.element = this.elements[formattedEnemy.elem];
+    }
+
+    delete formattedEnemy.elem;
+
+    return formattedEnemy;
   }
 
   checkIfTileExist(quest, item) {
