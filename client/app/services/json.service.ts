@@ -39,6 +39,7 @@ export class JsonService {
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
     wotvQuests: {},
+    wotvOtherUnits: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -87,6 +88,7 @@ export class JsonService {
     wotvPlayerTitles: {},
     wotvGuildTitles: {},
     wotvQuests: {},
+    wotvOtherUnits: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -1699,7 +1701,8 @@ export class JsonService {
           masterRanks: this.gl.wotvMasterRanks,
           playerTitles: this.gl.wotvPlayerTitles,
           guildTitles: this.gl.wotvGuildTitles,
-          dropRates: this.gl.wotvQuests
+          dropRates: this.gl.wotvQuests,
+          otherUnits: this.gl.wotvOtherUnits
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1712,7 +1715,8 @@ export class JsonService {
           masterRanks: this.jp.wotvMasterRanks,
           playerTitles: this.jp.wotvPlayerTitles,
           guildTitles: this.jp.wotvGuildTitles,
-          dropRates: this.jp.wotvQuests
+          dropRates: this.jp.wotvQuests,
+          otherUnits: this.jp.wotvOtherUnits
         },
         translate: {
           jpRomaji: this.jpRomaji
@@ -3828,24 +3832,25 @@ export class JsonService {
         map.enemy.forEach(enemy => {
           this.checkIfTileExist(quest, enemy);
 
-          if (enemy.side === 0) {
+          if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(enemy);
+            this.addOtherUnit(enemy.iname);
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(enemy);
+              this.addOtherUnit(enemy.iname, true);
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(enemy);
+              this.addOtherUnit(enemy.iname, true);
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(enemy);
+              this.addOtherUnit(enemy.iname, true);
             } else {
-              /*if (this.version === 'jp') {
-                console.log(quest)
-                console.log(enemy)
-              }*/
+              this.addOtherUnit(enemy.iname);
               quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               quest.enemies.push(enemy);
             }
@@ -3944,6 +3949,55 @@ export class JsonService {
           quest.grid[tile.x][tile.y].t = tile.t;
         }
       });
+    }
+  }
+
+  private addOtherUnit(dataId, object = false) {
+    if (this[this.version].units[dataId] && !this[this.version].wotvOtherUnits[dataId]) {
+      const rawUnit = this[this.version].units[dataId];
+      const unit = {
+        dataId: dataId,
+        names: {},
+        rarity: this.rarity[rawUnit.rare],
+        jobs: rawUnit.jobsets,
+        exJobs: [],
+        stats: {},
+        element: rawUnit.elem ? this.elements[rawUnit.elem[0]] : null,
+        image: null
+      };
+
+      if (rawUnit.charaId) {
+        unit.image = rawUnit.charaId.toLowerCase();
+      } else if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
+        const baseUnit = this[this.version].units[rawUnit.base_unit_iname];
+        if (baseUnit.charaId) {
+          unit.image = baseUnit.charaId.toLowerCase();
+        } else if (baseUnit.base_unit_iname && this[this.version].units[baseUnit.base_unit_iname]) {
+          unit.image = this[this.version].units[baseUnit.base_unit_iname].charaId.toLowerCase();
+        }
+      }
+
+      if (rawUnit.ccsets) {
+        rawUnit.ccsets.forEach(exJob => {
+          unit.exJobs.push(exJob.m);
+        });
+      }
+
+      this.getUnitImage(unit);
+      this.getNames(unit, 'unit');
+
+      if (!object) {
+        this.getStats(unit, rawUnit.status, 'unit');
+        if (unit.jobs) {
+          this.getMoveJumpUnit(unit);
+        }
+
+        this.getLB(unit, rawUnit.limit);
+        this.getAttackSkill(unit, rawUnit.atkskl);
+        this.getMasterSkill(unit, rawUnit.mstskl);
+      }
+
+      this[this.version].wotvOtherUnits[dataId] = unit;
     }
   }
 }

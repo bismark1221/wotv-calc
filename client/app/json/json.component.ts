@@ -10,6 +10,7 @@ import { UnitService } from '../services/unit.service';
 })
 export class JsonComponent implements OnInit {
   GLunits = {};
+  GLOtherUnits = {};
   GLvisionCards = {};
   GLespers = {};
   GLequipments = {};
@@ -23,6 +24,7 @@ export class JsonComponent implements OnInit {
   GLDropRates = {};
 
   JPunits = {};
+  JPOtherUnits = {};
   JPvisionCards = {};
   JPespers = {};
   JPequipments = {};
@@ -53,6 +55,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.GLunits = response.gl.units;
+
+      // @ts-ignore
+      this.GLOtherUnits = response.gl.otherUnits;
 
       // @ts-ignore
       this.GLvisionCards = response.gl.visionCards;
@@ -87,6 +92,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPunits = response.jp.units;
+
+      // @ts-ignore
+      this.JPOtherUnits = response.jp.otherUnits;
 
       // @ts-ignore
       this.JPvisionCards = response.jp.visionCards;

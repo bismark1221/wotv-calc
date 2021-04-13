@@ -9,6 +9,7 @@ import { NameService } from '../services/name.service';
 import { ItemService } from '../services/item.service';
 import { EquipmentService } from '../services/equipment.service';
 import { AuthService } from '../services/auth.service';
+import { OtherUnitService } from '../services/otherunit.service';
 
 
 @Component({
@@ -29,7 +30,8 @@ export class QuestComponent implements OnInit {
     private navService: NavService,
     private nameService: NameService,
     private itemService: ItemService,
-    private equipmentService: EquipmentService
+    private equipmentService: EquipmentService,
+    private otherUnitService: OtherUnitService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       if (this.quest) {
@@ -101,6 +103,12 @@ export class QuestComponent implements OnInit {
         }
 
         this.quest.formattedMissions.push(formattedMission);
+      }
+
+      this.quest.formattedEnemies = [];
+      for (const rawEnemy of this.quest.enemies) {
+        const enemy = await this.otherUnitService.getUnit(rawEnemy.iname);
+        console.log(enemy);
       }
     }
 

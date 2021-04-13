@@ -208,7 +208,31 @@
 }
 
 .partyTile {
-  background-image: url("assets/grid/unit_placement.png");
+  background-image: url("assets/grid/party.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.chestTile {
+  background-image: url("assets/grid/chest.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.enemyTile {
+  background-image: url("assets/grid/enemy.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.objectTile {
+  background-image: url("assets/grid/object.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.allyTile {
+  background-image: url("assets/grid/ally.png");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }

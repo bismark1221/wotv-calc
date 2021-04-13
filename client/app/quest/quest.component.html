@@ -76,11 +76,79 @@
           [ngClass]="{
             'tileNoAccess': tile.t,
             'partyTile': tile && tile.party,
+            'chestTile': tile && tile.chest?.constructor.name === 'Number',
+            'allyTile': tile && tile.ally?.constructor.name === 'Number',
+            'enemyTile': tile && tile.enemy?.constructor.name === 'Number',
+            'objectTile': tile && tile.object?.constructor.name === 'Number',
             'tile20': !tile.t && tile.h >= 20
           }"
         >
-          <span *ngIf="tile && !tile.t">{{ tile.h }}</span>
+          <div *ngIf="tile && !tile.t">{{ tile.h }}</div>
+          <div *ngIf="tile && tile.chest?.constructor.name === 'Number'">C{{ tile.chest + 1 }}</div>
+          <div *ngIf="tile && tile.ally?.constructor.name === 'Number'">A{{ tile.ally + 1 }}</div>
+          <div *ngIf="tile && tile.enemy?.constructor.name === 'Number'">E{{ tile.enemy + 1 }}</div>
+          <div *ngIf="tile && tile.object?.constructor.name === 'Number'">O{{ tile.object + 1 }}</div>
         </td>
+      </tr>
+    </table>
+
+    <table class="allyTable" *ngIf="quest.allies.length > 0">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Element</th>
+        <th>Job ?</th>
+        <th>Level</th>
+        <th>Type</th>
+      </tr>
+      <tr *ngFor="let ally of quest.allies; let j = index">
+        <td>E{{ j + 1 }}</td>
+        <td>{{ ally.iname }}</td>
+        <td>{{ ally.elem }}</td>
+        <td></td>
+        <td>{{ ally.lv }}</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="enemyTable" *ngIf="quest.enemies.length > 0">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Element</th>
+        <th>Job ?</th>
+        <th>Level</th>
+        <th>Type</th>
+      </tr>
+      <tr *ngFor="let enemy of quest.enemies; let j = index">
+        <td>E{{ j + 1 }}</td>
+        <td>{{ enemy.iname }}</td>
+        <td>{{ enemy.elem }}</td>
+        <td></td>
+        <td>{{ enemy.lv }}</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="chestTable" *ngIf="quest.chests.length > 0">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let chest of quest.chests; let j = index">
+        <td>C{{ j + 1 }}</td>
+        <td>{{ chest.iname }}</td>
+      </tr>
+    </table>
+
+    <table class="chestTable" *ngIf="quest.objects.length > 0">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let object of quest.objects; let j = index">
+        <td>C{{ j + 1 }}</td>
+        <td>{{ object.iname }}</td>
       </tr>
     </table>
   </div>
