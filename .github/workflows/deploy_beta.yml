@@ -17,6 +17,9 @@ jobs:
       - run: ng --version
       - run: npm i -f
 
+      - name: Minimify json assets
+        run: python3 minimify_assets.py
+
       - name: Build prod
         run: ng build --prod
 
