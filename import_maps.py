@@ -1,17 +1,10 @@
+#!/usr/bin/env python3
+
 import json
 from os import listdir
 from os.path import isfile, join
 
 data = {}
-
-# with open('../wotv-ffbe-dump/map/arena00001_set.json') as json_file:
-#     data = json.load(json_file)
-#     # for p in data['info']:
-#     #     print('Name: ' + p['angle_override'])
-#     #     print('')
-#     print(data['info'])
-
-
 fileNames = [f for f in listdir('../wotv-ffbe-dump/map') if isfile(join('../wotv-ffbe-dump/map', f))]
 
 data = {}

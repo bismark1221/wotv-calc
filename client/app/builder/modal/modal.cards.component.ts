@@ -20,7 +20,8 @@ export class ModalCardsComponent implements OnInit {
 
   searchText = '';
   filters = {
-    rarity: []
+    rarity: [],
+    element: []
   };
   savedCards = {};
   loadCardId = null;

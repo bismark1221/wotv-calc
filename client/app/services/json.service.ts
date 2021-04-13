@@ -3709,9 +3709,12 @@ export class JsonService {
         exp: quest.uexp,
         nrg: quest.ap,
         jp: quest.jp,
-        enemies: 0,
         gils: quest.gold,
-        chests: 0,
+        enemies: [],
+        chests: [],
+        allies: [],
+        objects: [],
+        switchs: [],
         type: this.questType[quest.type],
         missions: [],
         grid: []
@@ -3823,26 +3826,36 @@ export class JsonService {
 
       if (map.enemy) {
         map.enemy.forEach(enemy => {
-          if (enemy.iname === 'UN_GM_TREASURE') {
-            quest.chests += 1;
-          } else if (enemy.side === 1) {
-            quest.enemies += 1;
+          this.checkIfTileExist(quest, enemy);
+
+          if (enemy.side === 0) {
+            quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
+            quest.allies.push(enemy);
+          } else {
+            if (enemy.iname === 'UN_GM_TREASURE') {
+              quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
+              quest.chests.push(enemy);
+            } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
+              quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
+              quest.switchs.push(enemy);
+            } else if (enemy.iname.split('_')[1] === 'GM') {
+              quest.grid[enemy.x][enemy.y].object = quest.objects.length;
+              quest.objects.push(enemy);
+            } else {
+              /*if (this.version === 'jp') {
+                console.log(quest)
+                console.log(enemy)
+              }*/
+              quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
+              quest.enemies.push(enemy);
+            }
           }
         });
       }
 
       if (map.party) {
         map.party.forEach(party => {
-          if (!quest.grid[party.x]) {
-            quest.grid[party.x] = [];
-            for (let i = 0; i <= quest.grid[0].length - 1; i++) {
-              quest.grid[party.x][i] = {
-                h: 0,
-                t: 'TILE_NOT_IN_GRID'
-              };
-            }
-          }
-
+          this.checkIfTileExist(quest, party);
           quest.grid[party.x][party.y].party = true;
         });
       }
@@ -3866,6 +3879,31 @@ export class JsonService {
           }
         });
       }
+    }
+  }
+
+  checkIfTileExist(quest, item) {
+    if (!quest.grid[item.x]) {
+      quest.grid[item.x] = [];
+      for (let i = 0; i <= quest.grid[0].length - 1; i++) {
+        quest.grid[item.x][i] = {
+          h: 0,
+          t: 'TILE_NOT_IN_GRID'
+        };
+      }
+    }
+
+    if (!quest.grid[0][item.y]) {
+      quest.grid.forEach(line => {
+        for (let i = 0; i <= item.y; i++) {
+          if (!line[i]) {
+            line[i] = {
+              h: 0,
+              t: 'TILE_NOT_IN_GRID'
+            };
+          }
+        }
+      });
     }
   }
 

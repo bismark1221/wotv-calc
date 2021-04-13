@@ -15,8 +15,13 @@ export class Quest {
   jp = 0;
   enemies = 0;
   gils = 0;
-  chests = 0;
-  missions = 0;
+  chests = [];
+  missions = [];
+  chests = [];
+  allies = [];
+  objects = [];
+  switchs = [];
+  missions = [];
   grid = [];
 
 
@@ -28,9 +33,12 @@ export class Quest {
     this.exp = quest.exp;
     this.nrg = quest.nrg;
     this.jp = quest.jp;
-    this.enemies = quest.enemies;
     this.gils = quest.gils;
+    this.enemies = quest.enemies;
     this.chests = quest.chests;
+    this.allies = quest.allies;
+    this.objects = quest.objects;
+    this.switchs = quest.switchs;
     this.names = quest.names;
     this.missions = quest.missions;
     this.grid = quest.grid;

@@ -615,7 +615,6 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   calculateDamageSim(unitPos = null) {
-    console.log(unitPos);
     if (unitPos === null || this.selectedUnitForSim === unitPos) {
       this.simulatorService.calculateDamageSim(this.team.units[this.selectedUnitForSim], this.damageSim);
     }

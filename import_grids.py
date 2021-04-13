@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 from os import listdir, path, walk
 from os.path import isfile, join, expanduser
@@ -10,7 +12,6 @@ def extract_map_grid(fileName):
         f = open(fileName, "rb")
     elif isinstance(fileName, (bytearray, bytes)):
         f = io.BytesIO(fileName)
-
 
     mapTbl = []
     f.read(4)
