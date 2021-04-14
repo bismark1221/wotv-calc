@@ -15,14 +15,15 @@
     class="recipe"
     title="{{ item.name }}" />
 
-  <img
-    *ngIf="item.type === 'job_awake_orb' && item.class"
-    src="{{ 'assets/jobs/' + item.image + '.png'}}"
+  <div *ngIf="item.type === 'job_awake_orb' && item.class"
     [ngClass]="{
       'imgOrbGreen': item.class === 'imgOrbGreen',
       'imgOrbBlue': item.class === 'imgOrbBlue',
       'imgOrbViolet': item.class === 'imgOrbViolet',
       'imgOrbYellow': item.class === 'imgOrbYellow',
       'imgOrbPink': item.class === 'imgOrbPink'}"
-    title="{{ item.name }}" />
+    title="{{ item.name }}"
+  >
+    <img src="{{ 'assets/jobs/' + item.image + '.png'}}" />
+    </div>
 </div>

@@ -52,8 +52,10 @@
 }
 
 .equipmentImg {
-  height: 250px;
-  margin-top: 10px;
+  max-height: 250px;
+  max-width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .equipmentTable {
@@ -98,7 +100,15 @@
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
   background-size: 50px;
   padding: 5px;
+  width: 50px;
+  display: inline-block;
   margin-right: 5px;
+}
+
+.job img {
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: top;
 }
 
 .unit {
@@ -107,14 +117,22 @@
 }
 
 .materialImg {
-  height: 51px;
+  height: 50px;
 }
 
 .recipe {
   height: 50px;
+  width: 50px;
   background: url("assets/items/recipe.png") 0px 0px no-repeat;
   background-size: 50px;
   padding: 5px;
+  margin: auto;
+}
+
+.recipeImg {
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: top;
 }
 
 .materialCount {

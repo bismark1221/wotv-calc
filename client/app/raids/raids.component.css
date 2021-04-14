@@ -103,9 +103,16 @@
   margin-top: 10px;
 }
 
+.raidImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
 .raidImg {
   height: 150px;
-  margin-top: 10px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .elementImg {

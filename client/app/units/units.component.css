@@ -114,9 +114,16 @@
   margin-top: 10px;
 }
 
+.unitImgBlock {
+  height: 160px;
+  width: 200px;
+}
+
 .unitImg {
   height: 150px;
-  margin-top: 10px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .elementImg, .rarityImg {

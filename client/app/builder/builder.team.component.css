@@ -231,16 +231,26 @@
 
 .mainJob {
   height: 55px;
+  width: 55px;
   background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
+  margin: auto;
 }
 
 .subJob {
   height: 55px;
+  width: 55px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
+  margin: auto;
+}
+
+.mainJob img, .subJob img {
+  max-height: 45px;
+  max-width: 45px;
+  vertical-align: top;
 }
 
 .jobName {

@@ -36,7 +36,9 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                  <img src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                </div>
                 {{ jobs[i].name }}
               </td>
             </tr>
@@ -227,7 +229,9 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                  <img src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                </div>
                 {{ jobs[i].name }}
               </td>
             </tr>
@@ -413,7 +417,9 @@
           <tbody *ngFor="let i of [0, 1, 2]">
             <tr class="jobsStatsLine" *ngIf="jobs[i]">
               <td>
-                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                  <img src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                </div>
               </td>
               <td>{{ unit.jobsStats[i].HP }}</td>
               <td>{{ unit.jobsStats[i].TP }}</td>
@@ -441,7 +447,9 @@
           <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats[0] && exJobs[0]">
             <tr class="jobsStatsLine">
               <td>
-                <img class="mainJob" src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />
+                <div class="mainJob">
+                  <img src="{{'assets/jobs/' + exJobs[0].image + '.png'}}" />
+                </div>
               </td>
               <td>{{ unit.EXJobsStats[0].HP }}</td>
               <td>{{ unit.EXJobsStats[0].TP }}</td>
@@ -768,10 +776,16 @@
           <tbody>
             <tr>
               <th *ngIf="i === 0 && jobs[0]" colspan="9">
-                <img class="mainJob" src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />&nbsp;Main Job
+                <div class="mainJob jobInSkill">
+                  <img src="{{'assets/jobs/' + jobs[0].image + '.png'}}" />
+                </div>
+                Main Job
               </th>
               <th *ngIf="i !== 0 && jobs[i - 1]" colspan="9">
-                <img class="subJob" src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />&nbsp;{{ jobs[i - 1].name }}
+                <div class="subJob jobInSkill">
+                  <img src="{{'assets/jobs/' + jobs[i - 1].image + '.png'}}" />
+                </div>
+                {{ jobs[i - 1].name }}
               </th>
             </tr>
             <tr>
@@ -1036,7 +1050,9 @@
             </tr>
             <tr *ngIf="jobs[0] && jobs[1] && jobs[2]">
               <td class="jobTd" *ngFor="let i of [0, 1, 2]" colspan="2">
-                <img [className]="i === 0 ? 'mainJob' : 'subJob'" src="{{'assets/jobs/' + jobs[i].image + '.png'}}" /><br />
+                <div [className]="i === 0 ? 'mainJob' : 'subJob'">
+                  <img src="{{'assets/jobs/' + jobs[i].image + '.png'}}" />
+                </div>
                 {{ jobs[i].name }}
               </td>
             </tr>

@@ -33,9 +33,9 @@
       <table class="jobTable" *ngIf="jobbedUnits[unitPos]; let unit">
         <tr>
           <td><img class="unitImg" src="assets/units/{{ unit.image }}_m.png" /></td>
-          <td><img class="mainJob" src="{{'assets/jobs/' + unit.jobsData[0].image + '.png'}}" title="unit.jobsData[0].name"/></td>
-          <td><img class="subJob" src="{{'assets/jobs/' + unit.jobsData[1].image + '.png'}}" title="unit.jobsData[1].name"/></td>
-          <td><img class="subJob" src="{{'assets/jobs/' + unit.jobsData[2].image + '.png'}}" title="unit.jobsData[2].name"/></td>
+          <td><div class="mainJob"><img src="{{'assets/jobs/' + unit.jobsData[0].image + '.png'}}" title="unit.jobsData[0].name" /></div></td>
+          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[1].image + '.png'}}" title="unit.jobsData[1].name" /></div></td>
+          <td><div class="subJob"><img src="{{'assets/jobs/' + unit.jobsData[2].image + '.png'}}" title="unit.jobsData[2].name" /></div></td>
         </tr>
         <tr>
           <td>Start</td>
@@ -86,8 +86,9 @@
           (click)="toogleMaterial(itemId)"
           [ngClass]="{'deactivated': materials[itemId].activated === false}"
           *ngIf="materials[itemId].type === 'classic'" />
+        <br *ngIf="materials[itemId].type === 'classic'" />
 
-        <img src="{{ 'assets/jobs/' + materials[itemId].image + '.png'}}"
+        <div
           [ngClass]="{
             'imgOrbGreen': materials[itemId].type === 'imgOrbGreen',
             'imgOrbBlue': materials[itemId].type === 'imgOrbBlue',
@@ -96,9 +97,10 @@
             'imgOrbPink': materials[itemId].type === 'imgOrbPink',
             'deactivated': materials[itemId].activated === false}"
           *ngIf="materials[itemId].type !== 'classic'"
-          (click)="toogleMaterial(itemId)" />
-
-        <br />
+          (click)="toogleMaterial(itemId)"
+        >
+          <img src="{{ 'assets/jobs/' + materials[itemId].image + '.png'}}" />
+        </div>
 
         <span class="materialCount">{{ materials[itemId].count }}</span>
       </div>

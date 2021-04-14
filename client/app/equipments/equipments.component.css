@@ -110,9 +110,16 @@
   margin-top: 10px;
 }
 
+.equipmentImgBlock {
+  width: 200px;
+  height: 160px;
+}
+
 .equipmentImg {
   height: 150px;
-  margin-top: 10px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .rarityImg {

@@ -68,7 +68,9 @@
             </tr>
             <tr>
               <td>
-                <img *ngFor="let job of equipment.jobs" src="{{ 'assets/jobs/' + job.image + '.png'}}" class="job" title="{{ job.name }}"/>
+                <div class="job" *ngFor="let job of equipment.jobs">
+                  <img src="{{ 'assets/jobs/' + job.image + '.png'}}" title="{{ job.name }}"/>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -242,8 +244,8 @@
             <tr>
               <td *ngFor="let materials of equipment.formattedMaterials">
                 <div *ngFor="let item of materials">
-                  <div *ngIf="item.type === 'recipe'">
-                    <img src="{{'assets/equipments/' + equipment.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="materialImg recipe"/>
+                  <div *ngIf="item.type === 'recipe'" class="recipe">
+                    <img src="{{'assets/equipments/' + equipment.image + '.png'}}" onerror="this.src='assets/equipments/placeholder.png';" class="recipeImg"/>
                   </div>
                   <div *ngIf="item.type !== 'recipe'">
                     <img src="{{ 'assets/items/' + item.image + '.png'}}" class="materialImg"/>

@@ -133,7 +133,9 @@
 
                 <div *ngIf="cond.type === 'job'">
                   <span *ngFor="let job of cond.items">
-                    <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                    <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                      <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                    </div>
                   </span>
                 </div>
 
@@ -184,7 +186,9 @@
 
               <div *ngIf="cond.type === 'job'">
                 <span *ngFor="let job of cond.items">
-                  <img *ngIf="job.image" class="subJob" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  <div *ngIf="job.image" class="subJob" title="{{ job.names.en }}">
+                    <img src="{{'assets/jobs/' + job.image + '.png'}}" />
+                  </div>
                 </span>
               </div>
 

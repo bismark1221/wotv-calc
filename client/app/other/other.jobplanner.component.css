@@ -96,6 +96,7 @@ th {
 
 .mainJob {
   height: 55px;
+  width: 55px;
   background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
@@ -103,9 +104,16 @@ th {
 
 .subJob {
   height: 55px;
+  width: 55px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
+}
+
+.mainJob img, .subJob img {
+  max-width: 45px;
+  max-height: 45px;
+  vertical-align: top;
 }
 
 .materialsBlock {
@@ -134,6 +142,7 @@ th {
 
 .imgOrbGreen {
   height: 55px;
+  width: 55px;
   background: url("assets/items/it_jb_mm_all.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
@@ -143,6 +152,7 @@ th {
 
 .imgOrbBlue {
   height: 55px;
+  width: 55px;
   background: url("assets/items/it_jb_mm_all_2.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
@@ -152,6 +162,7 @@ th {
 
 .imgOrbViolet {
   height: 55px;
+  width: 55px;
   background: url("assets/items/it_jb_mm_all_3.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
@@ -161,6 +172,7 @@ th {
 
 .imgOrbYellow {
   height: 55px;
+  width: 55px;
   background: url("assets/items/it_jb_mm_all_4.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
@@ -170,11 +182,18 @@ th {
 
 .imgOrbPink {
   height: 55px;
+  width: 55px;
   background: url("assets/items/it_jb_mm_all_5.png") 0px 0px no-repeat;
   background-size: 55px;
   padding: 5px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.imgOrbGreen img, .imgOrbBlue img, .imgOrbViolet img, .imgOrbYellow img, .imgOrbPink img {
+  max-height: 45px;
+  max-width: 45px;
+  vertical-align: top;
 }
 
 .deactivated {

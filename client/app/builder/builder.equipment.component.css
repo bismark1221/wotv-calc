@@ -140,8 +140,9 @@
 }
 
 .equipmentImg {
-  height: 150px;
+  max-height: 150px;
   margin-top: 10px;
+  max-width: 240px;
 }
 
 .equipmentIcons {

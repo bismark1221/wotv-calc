@@ -103,9 +103,16 @@
   margin-top: 10px;
 }
 
+.cardImgBlock {
+  height: 160px;
+  width: 200px;
+}
+
 .cardImg {
   height: 150px;
-  margin-top: 10px;
+  max-width: 190px;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .rarityImg {
