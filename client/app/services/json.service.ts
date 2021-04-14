@@ -3031,6 +3031,7 @@ export class JsonService {
     this[this.version].wotvEspers[dataId].skills = [
       this.addSkill(this[this.version].wotvEspers[dataId], {slot: 1, value: esper.atkskl})
     ];
+    this.getUnitImage(this[this.version].wotvEspers[dataId]);
 
     this.getNames(this[this.version].wotvEspers[dataId], 'unit');
 
