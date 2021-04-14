@@ -66,3 +66,19 @@ for cardFolder in cardFolders:
     if not isfile(join('client/assets/cards', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
       print('new card : ' + smallFileName)
       auto_crop(fileName, join('client/assets/cards', smallFileName))
+
+
+equipmentFolders = [
+  '../wotv-assets/japan/artifact/lapis',
+  '../wotv-assets/japan/artifact/collabo',
+  '../wotv-assets/global/artifact/lapis',
+  '../wotv-assets/global/artifact/lapisww',
+  '../wotv-assets/global/artifact/collabo'
+];
+for equipmentFolder in equipmentFolders:
+  fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser(equipmentFolder)) for f in fn]
+  for fileName in fileNames:
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if not isfile(join('client/assets/equipments', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
+      print('new equipment : ' + smallFileName)
+      auto_crop(fileName, join('client/assets/equipments', smallFileName))
