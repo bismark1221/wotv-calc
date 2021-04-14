@@ -104,3 +104,21 @@ for titleFolder in titleFolders:
 
       if smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
         auto_crop(fileName, join('client/assets/titles', '_'.join(croppedFileNameTab)))
+
+
+print('### Update Jobs')
+jobFolders = [
+  '../wotv-assets/japan/unit/collabo/job',
+  '../wotv-assets/japan/unit/lapis/job',
+  '../wotv-assets/global/unit/collabo/job',
+  '../wotv-assets/global/unit/lapis/job',
+  '../wotv-assets/global/unit/lapisww/job'
+];
+for jobFolder in jobFolders:
+  fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser(jobFolder)) for f in fn]
+  for fileName in fileNames:
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    #print(smallFileName.split('_')[len(smallFileName.split('_')) - 1])
+    if smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'm.png' and smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'item.png' and not isfile(join('client/assets/jobs', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
+      print('new job : ' + smallFileName)
+      auto_crop(fileName, join('client/assets/jobs', smallFileName))
