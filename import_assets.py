@@ -43,11 +43,26 @@ itemFolders = [
   '../wotv-assets/global/itemicon/collabo/m',
   '../wotv-assets/global/itemicon/collabo/s'
 ];
-
 for itemFolder in itemFolders:
   fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser(itemFolder)) for f in fn]
   for fileName in fileNames:
     smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
-    if not isfile(join('client/assets/items', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream":
+    if not isfile(join('client/assets/items', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
       print('new item : ' + smallFileName)
       auto_crop(fileName, join('client/assets/items', smallFileName))
+
+
+cardFolders = [
+  '../wotv-assets/japan/vision/lapis',
+  '../wotv-assets/japan/vision/collabo',
+  '../wotv-assets/global/vision/lapis',
+  '../wotv-assets/global/vision/lapisww',
+  '../wotv-assets/global/vision/collabo'
+];
+for cardFolder in cardFolders:
+  fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser(cardFolder)) for f in fn]
+  for fileName in fileNames:
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if not isfile(join('client/assets/cards', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
+      print('new card : ' + smallFileName)
+      auto_crop(fileName, join('client/assets/cards', smallFileName))
