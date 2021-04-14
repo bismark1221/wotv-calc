@@ -31,6 +31,8 @@ def auto_crop(file_path, dst_path = None):
     img.save(dst_path)
   return img
 
+
+print('### Update Items')
 itemFolders = [
   '../wotv-assets/japan/itemicon/lapis/m',
   '../wotv-assets/japan/itemicon/lapis/s',
@@ -52,6 +54,7 @@ for itemFolder in itemFolders:
       auto_crop(fileName, join('client/assets/items', smallFileName))
 
 
+print('### Update Cards')
 cardFolders = [
   '../wotv-assets/japan/vision/lapis',
   '../wotv-assets/japan/vision/collabo',
@@ -68,6 +71,7 @@ for cardFolder in cardFolders:
       auto_crop(fileName, join('client/assets/cards', smallFileName))
 
 
+print('### Update Equipments')
 equipmentFolders = [
   '../wotv-assets/japan/artifact/lapis',
   '../wotv-assets/japan/artifact/collabo',
@@ -82,3 +86,21 @@ for equipmentFolder in equipmentFolders:
     if not isfile(join('client/assets/equipments', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
       print('new equipment : ' + smallFileName)
       auto_crop(fileName, join('client/assets/equipments', smallFileName))
+
+
+print('### Update Titles')
+titleFolders = [
+  '../wotv-assets/japan/localize/ja/texture/award',
+  '../wotv-assets/global/localize/en/texture/award'
+];
+for titleFolder in titleFolders:
+  fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser(titleFolder)) for f in fn]
+  for fileName in fileNames:
+    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+    if len(smallFileName.split('_')) > 1 and smallFileName.split('_')[1] == 'special':
+      croppedFileNameTab = smallFileName.split('_')
+      del croppedFileNameTab[0]
+      del croppedFileNameTab[0]
+
+      if smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource":
+        auto_crop(fileName, join('client/assets/titles', '_'.join(croppedFileNameTab)))
