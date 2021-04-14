@@ -135,7 +135,6 @@ for unitFolder in unitFolders:
       )
       and not isfile(join('client/assets/units', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource"
     ):
-      print(fileName)
       print('new unit : ' + smallFileName)
       auto_crop(fileName, join('client/assets/units', smallFileName))
 
@@ -159,65 +158,110 @@ for titleFolder in titleFolders:
 
 
 def extract_map_grid(fileName):
-    if isinstance(fileName, str):
-        f = open(fileName, "rb")
-    elif isinstance(fileName, (bytearray, bytes)):
-        f = io.BytesIO(fileName)
+  if isinstance(fileName, str):
+    f = open(fileName, "rb")
+  elif isinstance(fileName, (bytearray, bytes)):
+    f = io.BytesIO(fileName)
 
-    mapTbl = []
-    f.read(4)
-    tile_count, = struct.unpack("<I", f.read(4))
-    for _ in range(tile_count):
-        x,y,h,tl = struct.unpack("<IIIH", f.read(14))
-        mapTile = {}
-        mapTile['x'] = x
-        mapTile['y'] = y
-        mapTile['h'] = h
-        mapTile['t'] = f.read(tl).decode("ascii")
-        mapTbl.append(mapTile)
+  mapTbl = []
+  f.read(4)
+  tile_count, = struct.unpack("<I", f.read(4))
+  for _ in range(tile_count):
+    x,y,h,tl = struct.unpack("<IIIH", f.read(14))
+    mapTile = {}
+    mapTile['x'] = x
+    mapTile['y'] = y
+    mapTile['h'] = h
+    mapTile['t'] = f.read(tl).decode("ascii")
+    mapTbl.append(mapTile)
 
-    return mapTbl
+  return mapTbl
 
 
 print('### Import GL Maps')
 data = {}
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/global/map/lapis/grid')) for f in fn]
 for fileName in fileNames:
-    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
-        data[smallFileName[:-12]] = extract_map_grid(fileName)
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
-        data[smallFileName[:-13]] = extract_map_grid(fileName)
+  smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+    data[smallFileName[:-12]] = extract_map_grid(fileName)
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+    data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/global/map/collabo/grid')) for f in fn]
 for fileName in fileNames:
-    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
-        data[smallFileName[:-12]] = extract_map_grid(fileName)
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
-        data[smallFileName[:-13]] = extract_map_grid(fileName)
+  smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+    data[smallFileName[:-12]] = extract_map_grid(fileName)
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+    data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 with open('data/map/gl/grids.json', 'w') as outfile:
-    json.dump(data, outfile)
+  json.dump(data, outfile)
 
 
 print('### Import JP Maps')
 data = {}
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/japan/map/lapis/grid')) for f in fn]
 for fileName in fileNames:
-    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
-        data[smallFileName[:-12]] = extract_map_grid(fileName)
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
-        data[smallFileName[:-13]] = extract_map_grid(fileName)
+  smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+    data[smallFileName[:-12]] = extract_map_grid(fileName)
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+    data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 fileNames = [path.join(dp, f) for dp, dn, fn in walk(path.expanduser('../wotv-assets/japan/map/collabo/grid')) for f in fn]
 for fileName in fileNames:
-    smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
-        data[smallFileName[:-12]] = extract_map_grid(fileName)
-    if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
-        data[smallFileName[:-13]] = extract_map_grid(fileName)
+  smallFileName = fileName.split('/')[len(fileName.split('/')) - 1]
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.txt'):
+    data[smallFileName[:-12]] = extract_map_grid(fileName)
+  if (smallFileName.split('_')[len(smallFileName.split('_')) - 1] == 'Default.json'):
+    data[smallFileName[:-13]] = extract_map_grid(fileName)
 
 with open('data/map/jp/grids.json', 'w') as outfile:
-    json.dump(data, outfile)
+  json.dump(data, outfile)
+
+
+print('### Import Locales')
+localeFolders = [
+  {
+    'srcFolder': '../wotv-assets/global/localize/fr/text/masterparam',
+    'destFolder': 'data/fr'
+  },
+  {
+    'srcFolder': '../wotv-assets/global/localize/en/text/masterparam',
+    'destFolder': 'data/en'
+  },
+  {
+    'srcFolder': '../wotv-assets/japan/localize/ja/text/masterparam',
+    'destFolder': 'data/jp'
+  }
+]
+localeFiles = [
+  'artifactgrow',
+  'artifactname',
+  'buffname',
+  'guildawardsname',
+  'guildawardsdescription',
+  'itemname',
+  'itemother',
+  'jobname',
+  'playerawardsname',
+  'playerawardsdescription',
+  'quest/questtitle',
+  'skillname',
+  'unitname',
+  'visioncardname'
+]
+for localeFolder in localeFolders:
+  for localeFile in localeFiles:
+    if len(localeFile.split('/')) > 1:
+      copyfile(
+        path.join(localeFolder['srcFolder'], localeFile + '.txt'),
+        path.join(localeFolder['destFolder'], localeFile.split('/')[1] + '.json')
+      )
+    else:
+      copyfile(
+        path.join(localeFolder['srcFolder'], localeFile + '.txt'),
+        path.join(localeFolder['destFolder'], localeFile + '.json')
+      )
