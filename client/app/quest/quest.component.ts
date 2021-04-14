@@ -19,6 +19,7 @@ import { OtherUnitService } from '../services/otherunit.service';
 })
 export class QuestComponent implements OnInit {
   quest = null;
+  enemies = [];
 
   constructor(
     private questService: QuestService,

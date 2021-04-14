@@ -1938,9 +1938,9 @@ export class JsonService {
     this[this.version].wotvUnits[dataId] = unit;
   }
 
-  private getUnitImage(unit) {
-    if (this[this.version].unitModels[unit.dataId] && this[this.version].unitModels[unit.dataId].img) {
-      unit.image = this[this.version].unitModels[unit.dataId].img.toLowerCase();
+  private getUnitImage(unit, dataId = null) {
+    if (this[this.version].unitModels[dataId ? dataId : unit.dataId] && this[this.version].unitModels[dataId ? dataId : unit.dataId].img) {
+      unit.image = this[this.version].unitModels[dataId ? dataId : unit.dataId].img.toLowerCase();
     }
   }
 
@@ -3836,24 +3836,24 @@ export class JsonService {
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
-            this.addOtherUnit(enemy.dataId);
+            this.addOtherUnit(enemy.iname);
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.dataId, true);
+              this.addOtherUnit(enemy.iname, true);
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.dataId, true);
+              this.addOtherUnit(enemy.iname, true);
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.dataId, true);
+              this.addOtherUnit(enemy.iname, true);
             } else {
               quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               quest.enemies.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.dataId);
+              this.addOtherUnit(enemy.iname);
             }
           }
         });
@@ -3985,15 +3985,18 @@ export class JsonService {
         image: null
       };
 
-      if (rawUnit.charaId) {
-        unit.image = rawUnit.charaId.toLowerCase();
-      } else if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
+      if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
         const baseUnit = this[this.version].units[rawUnit.base_unit_iname];
         if (baseUnit.charaId) {
           unit.image = baseUnit.charaId.toLowerCase();
+          this.getUnitImage(unit, rawUnit.base_unit_iname);
         } else if (baseUnit.base_unit_iname && this[this.version].units[baseUnit.base_unit_iname]) {
           unit.image = this[this.version].units[baseUnit.base_unit_iname].charaId.toLowerCase();
+          this.getUnitImage(unit, baseUnit.base_unit_iname);
         }
+      } else if (rawUnit.charaId) {
+        unit.image = rawUnit.charaId.toLowerCase();
+        this.getUnitImage(unit);
       }
 
       if (rawUnit.ccsets) {
@@ -4002,7 +4005,6 @@ export class JsonService {
         });
       }
 
-      this.getUnitImage(unit);
       this.getNames(unit, 'unit');
 
       if (!object) {

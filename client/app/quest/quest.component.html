@@ -102,8 +102,8 @@
         <th>Type</th>
       </tr>
       <tr *ngFor="let ally of quest.allies; let j = index">
-        <td>E{{ j + 1 }}</td>
-        <td>{{ ally.name }}</td>
+        <td>A{{ j + 1 }}</td>
+        <td><img src="assets/units/{{ally.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ ally.name }}</td>
         <td>{{ ally.elem }}</td>
         <td></td>
         <td>{{ ally.lv }}</td>
@@ -122,7 +122,7 @@
       </tr>
       <tr *ngFor="let enemy of quest.formattedEnemies; let j = index">
         <td>E{{ j + 1 }}</td>
-        <td>{{ enemy.name }}</td>
+        <td><img src="assets/units/{{enemy.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ enemy.name }}</td>
         <td><img src="assets/elements/{{ enemy.element }}.png" /></td>
         <td></td>
         <td>{{ enemy.level }}</td>
@@ -137,7 +137,7 @@
       </tr>
       <tr *ngFor="let chest of quest.chests; let j = index">
         <td>C{{ j + 1 }}</td>
-        <td>{{ chest.name }}</td>
+        <td><img src="assets/units/{{chest.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ chest.name }}</td>
       </tr>
     </table>
 
@@ -147,8 +147,8 @@
         <th>Name</th>
       </tr>
       <tr *ngFor="let object of quest.objects; let j = index">
-        <td>C{{ j + 1 }}</td>
-        <td>{{ object.name }}</td>
+        <td>O{{ j + 1 }}</td>
+        <td><img src="assets/units/{{object.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ object.name }}</td>
       </tr>
     </table>
   </div>
