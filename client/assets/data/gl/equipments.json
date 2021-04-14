@@ -24374,6 +24374,334 @@
       "type": "Unknown"
     }
   },
+  "AF_LOT_LW_CLT_015": {
+    "names": {
+      "en": "Galmia Coat",
+      "fr": "Doudoune de Galmia"
+    },
+    "slug": "galmia-coat",
+    "stats": {
+      "HP": {
+        "min": 35,
+        "max": 690
+      },
+      "DEF": {
+        "min": 0,
+        "max": 8
+      },
+      "SPR": {
+        "min": 1,
+        "max": 18
+      },
+      "AGI": {
+        "min": -5,
+        "max": 0
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 18
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_LW_CLT_015",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "Shield",
+          "fr": "Bouclier"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "Barrier",
+          "fr": "Barrière"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "SK_LW_CLT_015_1",
+            "fr": "SK_LW_CLT_015_1"
+          },
+          "dataId": "SK_LW_CLT_015_1",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_CLT_015_2",
+            "fr": "SK_LW_CLT_015_2"
+          },
+          "dataId": "SK_LW_CLT_015_2",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 6,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_CLT_015_3",
+            "fr": "SK_LW_CLT_015_3"
+          },
+          "dataId": "SK_LW_CLT_015_3",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 9,
+              "maxValue": 15,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_CLT_015_4",
+            "fr": "SK_LW_CLT_015_4"
+          },
+          "dataId": "SK_LW_CLT_015_4",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 12,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "SK_LW_CLT_015_5",
+            "fr": "SK_LW_CLT_015_5"
+          },
+          "dataId": "SK_LW_CLT_015_5",
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_015",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_CLR_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_FINA",
+      "JB_LW_MST_FIRE",
+      "JB_LW_CAL_FIRE",
+      "JB_FF4_ROSA",
+      "JB_LW_MMC_FIRE",
+      "JB_LW_SAKR",
+      "JB_LW_PSI_FIRE",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_015": 1,
+        "IT_AF_MAT_HEART_03": 30,
+        "IT_AF_MAT_HEART_04": 235,
+        "IT_AF_MAT_BONE": 10,
+        "IT_AF_MAT_SHINE_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_015": 3,
+        "IT_AF_MAT_HEART_03": 90,
+        "IT_AF_MAT_HEART_04": 335,
+        "IT_AF_MAT_BONE": 30,
+        "IT_AF_MAT_SHINE_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_015": 7,
+        "IT_AF_MAT_HEART_03": 210,
+        "IT_AF_MAT_HEART_04": 535,
+        "IT_AF_MAT_BONE": 70,
+        "IT_AF_MAT_SHINE_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_015": 15,
+        "IT_AF_MAT_HEART_03": 450,
+        "IT_AF_MAT_HEART_04": 985,
+        "IT_AF_MAT_BONE": 150,
+        "IT_AF_MAT_SHINE_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_CLT_015": 31,
+        "IT_AF_MAT_HEART_03": 930,
+        "IT_AF_MAT_HEART_04": 1955,
+        "IT_AF_MAT_BONE": 310,
+        "IT_AF_MAT_SHINE_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_CLT_015": 63,
+        "IT_AF_MAT_HEART_03": 1890,
+        "IT_AF_MAT_HEART_04": 3995,
+        "IT_AF_MAT_BONE": 630,
+        "IT_AF_MAT_SHINE_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LW_RNG_001": {
     "names": {
       "en": "Rhinestone Ring",

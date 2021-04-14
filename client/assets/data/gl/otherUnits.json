@@ -20961,6 +20961,1064 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_SO_03_RDM": {
+    "dataId": "UN_LW_E_SO_03_RDM",
+    "names": {
+      "en": "Fennes Soldier",
+      "fr": "Soldat de Fennes"
+    },
+    "jobs": [
+      "JB_LW_RDM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 133,
+        "max": 1570
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 41,
+        "max": 66
+      },
+      "ATK": {
+        "min": 42,
+        "max": 133
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 23,
+        "max": 52
+      },
+      "DEX": {
+        "min": 73,
+        "max": 116
+      },
+      "AGI": {
+        "min": 19,
+        "max": 39
+      },
+      "LUCK": {
+        "min": 63,
+        "max": 99
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso03",
+    "slug": "fennes-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RDM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MRGE": {
+    "dataId": "UN_LW_E_MRGE",
+    "names": {
+      "en": "Crystalite Beast Muraga",
+      "fr": "Bête cristalienne Muraga"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 3000,
+        "max": 9999
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 80,
+        "max": 220
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 132
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 157
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 35,
+        "max": 35
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmrge",
+    "slug": "crystalite-beast-muraga",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MRGE_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MRGE_S1": {
+    "dataId": "UN_LW_E_MRGE_S1",
+    "names": {
+      "en": "Former Right Arm",
+      "fr": "Ancien bras droit"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1000,
+        "max": 5000
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 80,
+        "max": 220
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 132
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 157
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "PIERCE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmrge_snake01",
+    "slug": "former-right-arm",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MRGE_S1_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MRGE_S2": {
+    "dataId": "UN_LW_E_MRGE_S2",
+    "names": {
+      "en": "Former Right Leg",
+      "fr": "Ancienne jambe droite"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1000,
+        "max": 5000
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 80,
+        "max": 220
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 132
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 157
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmrge_snake02",
+    "slug": "former-right-leg",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MRGE_S2_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MRGE_S3": {
+    "dataId": "UN_LW_E_MRGE_S3",
+    "names": {
+      "en": "Former Left Leg",
+      "fr": "Ancienne jambe gauche"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1000,
+        "max": 5000
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 80,
+        "max": 220
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 132
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 157
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STRIKE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "MISSILE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmrge_snake03",
+    "slug": "former-left-leg",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MRGE_S3_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MRGE_S4": {
+    "dataId": "UN_LW_E_MRGE_S4",
+    "names": {
+      "en": "Former Left Arm",
+      "fr": "Ancien bras gauche"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1000,
+        "max": 5000
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 80,
+        "max": 220
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 132
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 157
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsmrge_snake04",
+    "slug": "former-left-arm",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MRGE_S4_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_ARMN_02": {
     "dataId": "UN_LW_E_ARMN_02",
     "names": {
@@ -34986,142 +36044,6 @@
       "based": "physic"
     }
   },
-  "UN_LW_E_SO_03_RDM": {
-    "dataId": "UN_LW_E_SO_03_RDM",
-    "names": {
-      "en": "Fennes Soldier",
-      "fr": "Soldat de Fennes"
-    },
-    "jobs": [
-      "JB_LW_RDM_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 133,
-        "max": 1570
-      },
-      "TP": {
-        "min": 35,
-        "max": 64
-      },
-      "AP": {
-        "min": 41,
-        "max": 66
-      },
-      "ATK": {
-        "min": 42,
-        "max": 133
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 23,
-        "max": 52
-      },
-      "DEX": {
-        "min": 73,
-        "max": 116
-      },
-      "AGI": {
-        "min": 19,
-        "max": 39
-      },
-      "LUCK": {
-        "min": 63,
-        "max": 99
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso03",
-    "slug": "fennes-soldier",
-    "attack": {
-      "names": {
-        "en": "Normal Attack",
-        "fr": "Attaque normale"
-      },
-      "effects": [],
-      "dataId": "SK_LW_RDM_ATK",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {}
-      },
-      "elem": [
-        "neutral"
-      ],
-      "type": "skill",
-      "target": "all",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic"
-    }
-  },
   "UN_LW_E_MDNA": {
     "dataId": "UN_LW_E_MDNA",
     "names": {
@@ -40746,6 +41668,197 @@
       }
     }
   },
+  "UN_LW_E_GLEM_SIREN2": {
+    "dataId": "UN_LW_E_GLEM_SIREN2",
+    "names": {
+      "en": "Golem",
+      "fr": "Golem"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 40000
+      },
+      "TP": {
+        "min": 50,
+        "max": 356
+      },
+      "AP": {
+        "min": 72,
+        "max": 330
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 27,
+        "max": 98
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 242
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsglem",
+    "slug": "golem",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_GLEM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic",
+      "knockback": {
+        "rate": 100,
+        "value": 1,
+        "dir": 0
+      }
+    }
+  },
   "UN_LW_E_SIRE_SIREN": {
     "dataId": "UN_LW_E_SIRE_SIREN",
     "names": {
@@ -45095,6 +46208,177 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_OMEG_SIREN": {
+    "dataId": "UN_LW_E_OMEG_SIREN",
+    "names": {
+      "en": "Omega",
+      "fr": "Oméga"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 5000,
+        "max": 52180
+      },
+      "TP": {
+        "min": 150,
+        "max": 462
+      },
+      "AP": {
+        "min": 150,
+        "max": 462
+      },
+      "ATK": {
+        "min": 120,
+        "max": 562
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 104,
+        "max": 668
+      },
+      "DEX": {
+        "min": 124,
+        "max": 322
+      },
+      "AGI": {
+        "min": 33,
+        "max": 98
+      },
+      "LUCK": {
+        "min": 104,
+        "max": 269
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsomeg",
+    "slug": "omega",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_OMEG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "magic",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0
+      },
+      "based": "magic"
+    }
+  },
   "UN_LW_E_CSLI": {
     "dataId": "UN_LW_E_CSLI",
     "names": {
@@ -48115,8 +49399,8 @@
         "max": -15
       },
       "SLASH_RES": {
-        "min": 10,
-        "max": 10
+        "min": 5,
+        "max": 5
       },
       "PIERCE_RES": {
         "min": 10,
@@ -48127,12 +49411,12 @@
         "max": 10
       },
       "MISSILE_RES": {
-        "min": 10,
-        "max": 10
+        "min": 20,
+        "max": 20
       },
       "MAGIC_RES": {
-        "min": -10,
-        "max": -10
+        "min": -15,
+        "max": -15
       },
       "POISON_RES": {},
       "BLIND_RES": {},
@@ -49598,6 +50882,532 @@
         "line": 1
       },
       "based": "magic"
+    }
+  },
+  "UN_LW_E_DABL_RAID": {
+    "dataId": "UN_LW_E_DABL_RAID",
+    "names": {
+      "en": "Diabolos",
+      "fr": "Diabolos"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1300,
+        "max": 130000
+      },
+      "TP": {
+        "min": 100,
+        "max": 364
+      },
+      "AP": {
+        "min": 60,
+        "max": 372
+      },
+      "ATK": {
+        "min": 120,
+        "max": 530
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 20,
+        "max": 20
+      },
+      "MAG": {
+        "min": 120,
+        "max": 530
+      },
+      "DEX": {
+        "min": 104,
+        "max": 298
+      },
+      "AGI": {
+        "min": 28,
+        "max": 80
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 260
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsdabl",
+    "slug": "diabolos",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_DABL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_ELEM_07_R": {
+    "dataId": "UN_LW_E_ELEM_07_R",
+    "names": {
+      "en": "Dark Elemental",
+      "fr": "Élémentaire obscur"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 143,
+        "max": 2245
+      },
+      "TP": {
+        "min": 49,
+        "max": 180
+      },
+      "AP": {
+        "min": 56,
+        "max": 196
+      },
+      "ATK": {
+        "min": 21,
+        "max": 672
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 55,
+        "max": 338
+      },
+      "DEX": {
+        "min": 87,
+        "max": 284
+      },
+      "AGI": {
+        "min": 19,
+        "max": 66
+      },
+      "LUCK": {
+        "min": 93,
+        "max": 252
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 60,
+        "max": 60
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapselem_07",
+    "slug": "dark-elemental",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_ELEM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "magic",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 3,
+        "s": 1,
+        "line": 1
+      },
+      "based": "magic"
+    }
+  },
+  "UN_LW_E_CSLI_02_R": {
+    "dataId": "UN_LW_E_CSLI_02_R",
+    "names": {
+      "en": "Flan Princess",
+      "fr": "Princesse flan"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 7000,
+        "max": 80000
+      },
+      "TP": {
+        "min": 100,
+        "max": 342
+      },
+      "AP": {
+        "min": 59,
+        "max": 264
+      },
+      "ATK": {
+        "min": 100,
+        "max": 450
+      },
+      "DEF": {
+        "min": 15,
+        "max": 15
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 100,
+        "max": 350
+      },
+      "DEX": {
+        "min": 93,
+        "max": 292
+      },
+      "AGI": {
+        "min": 33,
+        "max": 75
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 223
+      },
+      "INITIAL_AP": {
+        "min": -38,
+        "max": -58
+      },
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "PIERCE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "STRIKE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "MISSILE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapscsli_02",
+    "slug": "flan-princess",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_CSLI_02_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
     }
   },
   "UN_LW_BGN_MONT": {

@@ -5951,5 +5951,917 @@
       "cards": []
     },
     "slug": "golem"
+  },
+  "RAID_GL_10": {
+    "dataId": "RAID_GL_10",
+    "names": {
+      "en": "Diabolos",
+      "fr": "Diabolos"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_DABL_RAID",
+        "names": {
+          "en": "Diabolos",
+          "fr": "Diabolos"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 120,
+            "max": 530
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 20,
+            "max": 20
+          },
+          "MAG": {
+            "min": 120,
+            "max": 530
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 28,
+            "max": 80
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "MAGIC_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "netherBeast",
+        "element": "dark",
+        "image": "lapsdabl",
+        "skills": {
+          "SK_DABL_M_02_R": {
+            "effects": [],
+            "dataId": "SK_DABL_M_02_R",
+            "rate": 0,
+            "type": "skill",
+            "names": {
+              "en": "Gravity",
+              "fr": "Gravité"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 2
+            },
+            "hit": 100,
+            "crt_hit": -100,
+            "damage": {
+              "minValue": -75,
+              "maxValue": -75,
+              "type": "all",
+              "pool": "HP",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_DABL_M_01_R": {
+            "effects": [],
+            "dataId": "SK_DABL_M_01_R",
+            "rate": 0,
+            "type": "skill",
+            "names": {
+              "en": "Violet Terror",
+              "fr": "Terreur pourpre"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 12
+            },
+            "count": 20,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "dark"
+            ],
+            "minLevel": 1
+          },
+          "SK_DABL_M_04_R": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_BEFORE"
+              }
+            ],
+            "dataId": "SK_DABL_M_04_R",
+            "rate": 0,
+            "type": "skill",
+            "names": {
+              "en": "Dark Messenger",
+              "fr": "Messager des ténèbres"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 40
+            },
+            "count": 8,
+            "maxLevel": 100,
+            "range": {
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 10,
+              "maxValue": 80,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "dark"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Null AGI Down",
+              "fr": "Annule AGI ↓"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_HATE_1-100_U_PA": {
+            "effects": [
+              {
+                "type": "PROVOKE",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HATE_1-100_U_PA",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Hate 1-100 Up (Passive)",
+              "fr": "Haine ↑ 1 - 100 (Passif)"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_MDF_1_100_U": {
+            "effects": [
+              {
+                "type": "SPR_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_MDF_1_100_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "SPR Debuff Res 1-100 Up",
+              "fr": "Rés malus PSY ↑ 1 - 100"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          }
+        },
+        "slug": "diabolos",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_DABL_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "slash",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "type": "skill",
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 2,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_CSLI_02_R",
+        "names": {
+          "en": "Flan Princess",
+          "fr": "Princesse flan"
+        },
+        "stats": {
+          "HP": {
+            "min": 7000,
+            "max": 80000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 100,
+            "max": 450
+          },
+          "DEF": {
+            "min": 15,
+            "max": 15
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 350
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {
+            "min": -38,
+            "max": -58
+          },
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "SLASH_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "PIERCE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "STRIKE_RES": {
+            "min": 5,
+            "max": 5
+          },
+          "MISSILE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "MAGIC_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "light",
+        "image": "lapscsli_02",
+        "skills": {
+          "SK_CSLI_02_M_01_RA": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_01_RA",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "Pink Sphere",
+              "fr": "Sphère rose"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 10
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_02": {
+            "effects": [],
+            "dataId": "SK_CSLI_02_M_02",
+            "rate": 60,
+            "type": "skill",
+            "names": {
+              "en": "Time to Eat!",
+              "fr": "À table !"
+            },
+            "target": "ennemySide",
+            "cost": {
+              "type": "AP",
+              "value": 18
+            },
+            "count": 2,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 1,
+              "s": 0
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": -5,
+              "maxValue": 21,
+              "type": "all",
+              "effType": "ABSORB",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_CSLI_02_M_03_RA": {
+            "effects": [
+              {
+                "type": "CONFUSION_ATK",
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "target",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_CSLI_02_M_03_RA",
+            "rate": 5,
+            "type": "skill",
+            "names": {
+              "en": "Let's Dance!",
+              "fr": "En piste !"
+            },
+            "target": "target",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "based": "physic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 20,
+              "maxValue": 50,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Accuracy 1-999 Up",
+              "fr": "Précision ↑ 1 - 999"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Null Max HP Down",
+              "fr": "Annule PV max réduits"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "Nullify CT Changes",
+              "fr": "Annule les changements de CT"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RES_OTDARK_1_80_U": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WATER_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WIND_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHTNING_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "EARTH_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHT_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_OTDARK_1_80_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "All Res Except Dark 1-80 Up (Base)",
+              "fr": "Toutes les Rés (sauf Rés ombre) ↑ 1 - 80 (base)"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_RESDB_DF_1_100_U": {
+            "effects": [
+              {
+                "type": "DEF_DEBUFF_RES",
+                "minValue": 1,
+                "maxValue": 100,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RESDB_DF_1_100_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "DEF Debuff Res 1-100 Up",
+              "fr": "Rés aux malus de DEF ↑ 1-100"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
+        "slug": "flan-princess",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale"
+          },
+          "effects": [],
+          "dataId": "SK_CSLI_02_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "strike",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "type": "skill",
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_FF10_P_TIDU",
+          "value": 50
+        },
+        {
+          "unitId": "UN_FF10_P_YUNA",
+          "value": 50
+        },
+        {
+          "unitId": "UN_FF10_P_ARON",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_ELSR",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_GABL",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_MDNA",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_GLMS",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_SAKR",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_STRN",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_OOOO",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_PHBE",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ZZAN",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
+    "slug": "diabolos"
   }
 }
