@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from os import listdir, path, walk
+from os import path, walk
 from os.path import isfile, join, expanduser
 import struct
 import io
