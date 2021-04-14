@@ -2557,6 +2557,14 @@
             "value": "欠片獲得 シャルロット"
         },
         {
+            "key": "QE_HA_LW_VLRC",
+            "value": "欠片獲得 ヴェルリック"
+        },
+        {
+            "key": "QE_HA_LW_LMRE",
+            "value": "欠片獲得 レミューレ"
+        },
+        {
             "key": "QE_CH_LW_MONT",
             "value": "モント・リオニス"
         },
@@ -3033,6 +3041,14 @@
             "value": "シャルロット"
         },
         {
+            "key": "QE_CH_LW_VLRC",
+            "value": "ヴェルリック"
+        },
+        {
+            "key": "QE_CH_LW_LMRE",
+            "value": "レミューレ"
+        },
+        {
             "key": "QE_EV_1100DL_FIR",
             "value": "1100万DL記念クエスト（火）"
         },
@@ -3287,6 +3303,10 @@
         {
             "key": "QE_EV_CRLT_01",
             "value": "限定ハードクエスト（シャルロット）"
+        },
+        {
+            "key": "QE_EV_VLRC_01",
+            "value": "限定ハードクエスト（ヴェルリック）"
         },
         {
             "key": "QE_EV_WIZ_04",
@@ -5173,6 +5193,34 @@
             "value": "超高難度　コーウェル獲得　EXクエスト"
         },
         {
+            "key": "QE_EV_LMRE_01",
+            "value": "レミューレ獲得クエスト　クエスト1"
+        },
+        {
+            "key": "QE_EV_LMRE_02",
+            "value": "レミューレ獲得クエスト　クエスト2"
+        },
+        {
+            "key": "QE_EV_LMRE_03",
+            "value": "レミューレ獲得クエスト　クエスト3"
+        },
+        {
+            "key": "QE_EV_LMRE_04",
+            "value": "レミューレ獲得クエスト　クエスト4"
+        },
+        {
+            "key": "QE_EV_LMRE_05",
+            "value": "レミューレ獲得クエスト　クエスト5"
+        },
+        {
+            "key": "QE_EV_LMRE_EX1",
+            "value": "高難度　レミューレ獲得　EXクエスト"
+        },
+        {
+            "key": "QE_EV_LMRE_EX2",
+            "value": "超高難度　レミューレ獲得　EXクエスト"
+        },
+        {
             "key": "QE_EV_ART_CRF_01",
             "value": "武具育成クエスト（初級）"
         },
@@ -5367,6 +5415,14 @@
         {
             "key": "QE_EV_XMAS2019",
             "value": "クリスマスクエスト"
+        },
+        {
+            "key": "QE_EV_LINK_001",
+            "value": "親密共鳴クエスト"
+        },
+        {
+            "key": "QE_K_LINK_001",
+            "value": "親密共鳴クエスト"
         },
         {
             "key": "QE_K_JP_001",
@@ -5831,6 +5887,14 @@
         {
             "key": "QE_MU_EV_CW_EX2",
             "value": "超高難度　コーウェル獲得　EXクエスト"
+        },
+        {
+            "key": "QE_MU_EV_LM_EX1",
+            "value": "高難度　レミューレ獲得　EXクエスト"
+        },
+        {
+            "key": "QE_MU_EV_LM_EX2",
+            "value": "超高難度　レミューレ獲得　EXクエスト"
         },
         {
             "key": "QE_MU_CHAL_04_02",
@@ -6441,6 +6505,10 @@
             "value": "教会 裏手"
         },
         {
+            "key": "QE_ARENA_00017",
+            "value": "坑道前"
+        },
+        {
             "key": "QE_GVG_00001",
             "value": "闘技場"
         },
@@ -6547,6 +6615,18 @@
         {
             "key": "QE_PVP_FRE_0011",
             "value": "雪山Ⅱ"
+        },
+        {
+            "key": "QE_PVP_FRE_0012",
+            "value": "雪山Ⅱ"
+        },
+        {
+            "key": "QE_PVP_FRI_0033",
+            "value": "坑道前"
+        },
+        {
+            "key": "QE_PVP_FRI_0032",
+            "value": "雪山Ⅱ(フリーマッチルール）"
         },
         {
             "key": "QE_PVP_FRI_0031",
@@ -6707,6 +6787,10 @@
         {
             "key": "QE_PVP_RANK_0009",
             "value": "闘技場Ⅰ"
+        },
+        {
+            "key": "QE_PVP_RANK_0010",
+            "value": "雪山Ⅱ"
         },
         {
             "key": "QE_PVP_DRFT_0001",
