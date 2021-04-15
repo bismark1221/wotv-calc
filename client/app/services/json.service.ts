@@ -3830,6 +3830,8 @@ export class JsonService {
         });
       }
 
+      // @TODO ADD ENTRY CONDITION !!!
+
       if (map.enemy) {
         map.enemy.forEach(enemy => {
           this.checkIfTileExist(quest, enemy);

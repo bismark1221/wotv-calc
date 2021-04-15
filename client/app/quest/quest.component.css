@@ -237,6 +237,12 @@
   background-position: 0px 0px;
 }
 
+.switchTile {
+  background-image: url("assets/grid/switch.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
 .job {
   height: 40px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;

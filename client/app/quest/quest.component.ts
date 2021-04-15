@@ -77,8 +77,38 @@ export class QuestComponent implements OnInit {
       }
 
       this.quest.formattedEnemies = [];
+      let i = 0;
       for (const enemy of this.quest.enemies) {
-        this.quest.formattedEnemies.push(await this.formatEnemy(enemy));
+        this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies'));
+        i++;
+      }
+
+      this.quest.formattedAllies = [];
+      i = 0;
+      for (const ally of this.quest.allies) {
+        this.quest.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies'));
+        i++;
+      }
+
+      this.quest.formattedObjects = [];
+      i = 0;
+      for (const object of this.quest.objects) {
+        this.quest.formattedObjects.push(await this.formatOtherItem(object));
+        i++;
+      }
+
+      this.quest.formattedSwitchs = [];
+      i = 0;
+      for (const rawSwitch of this.quest.switchs) {
+        this.quest.formattedSwitchs.push(await this.formatOtherItem(rawSwitch));
+        i++;
+      }
+
+      this.quest.formattedChests = [];
+      i = 0;
+      for (const chest of this.quest.chests) {
+        this.quest.formattedChests.push(await this.formatOtherItem(chest));
+        i++;
       }
     }
 
@@ -125,7 +155,7 @@ export class QuestComponent implements OnInit {
     return formattedMission;
   }
 
-  async formatEnemy(enemy) {
+  async formatEnemyOrAlly(enemy, index, type) {
     const formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
     formattedEnemy.name = this.nameService.getName(formattedEnemy);
 
@@ -145,8 +175,21 @@ export class QuestComponent implements OnInit {
       formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
     }
 
+    this.quest[type][index].skills.forEach(skill => {
+      // Do something ^^ ==> Get skill from skill service
+    });
+
     console.log(formattedEnemy);
 
     return formattedEnemy;
+  }
+
+  async formatOtherItem(item) {
+    const formattedItem = await this.otherUnitService.getUnit(item.dataId);
+    formattedItem.name = this.nameService.getName(formattedItem);
+
+    console.log(formattedItem);
+
+    return formattedItem;
   }
 }

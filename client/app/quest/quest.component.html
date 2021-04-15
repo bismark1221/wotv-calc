@@ -80,6 +80,7 @@
             'allyTile': tile && tile.ally?.constructor.name === 'Number',
             'enemyTile': tile && tile.enemy?.constructor.name === 'Number',
             'objectTile': tile && tile.object?.constructor.name === 'Number',
+            'switchTile': tile && tile.switch?.constructor.name === 'Number',
             'tile20': !tile.t && tile.h >= 20
           }"
         >
@@ -88,26 +89,33 @@
           <div *ngIf="tile && tile.ally?.constructor.name === 'Number'">A{{ tile.ally + 1 }}</div>
           <div *ngIf="tile && tile.enemy?.constructor.name === 'Number'">E{{ tile.enemy + 1 }}</div>
           <div *ngIf="tile && tile.object?.constructor.name === 'Number'">O{{ tile.object + 1 }}</div>
+          <div *ngIf="tile && tile.switch?.constructor.name === 'Number'">S{{ tile.switch + 1 }}</div>
         </td>
       </tr>
     </table>
 
-    <table class="allyTable" *ngIf="quest.allies.length > 0">
+    <table class="allyTable" *ngIf="quest.formattedAllies?.length > 0">
       <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Element</th>
-        <th>Job ?</th>
+        <th>Job</th>
         <th>Level</th>
-        <th>Type</th>
       </tr>
-      <tr *ngFor="let ally of quest.allies; let j = index">
+      <tr *ngFor="let ally of quest.formattedAllies; let j = index">
         <td>A{{ j + 1 }}</td>
-        <td><img src="assets/units/{{ally.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ ally.name }}</td>
-        <td>{{ ally.elem }}</td>
-        <td></td>
-        <td>{{ ally.lv }}</td>
-        <td></td>
+        <td>
+          <img src="assets/units/{{ally.image}}_m.png" class="enemyImg" />{{ ally.name }}
+        </td>
+        <td>
+          <img src="assets/elements/{{ ally.element }}.png" class="elementImg" />
+        </td>
+        <td>
+          <div class="job" *ngIf="ally.job" title="{{ ally.job.name }}">
+            <img src="{{'assets/jobs/' + ally.job.image + '.png'}}" />
+          </div>
+        </td>
+        <td>{{ ally.level }}</td>
       </tr>
     </table>
 
@@ -138,25 +146,36 @@
       </tr>
     </table>
 
-    <table class="chestTable" *ngIf="quest.chests.length > 0">
+    <table class="chestTable" *ngIf="quest.formattedChests?.length > 0">
       <tr>
         <th>ID</th>
         <th>Name</th>
       </tr>
-      <tr *ngFor="let chest of quest.chests; let j = index">
+      <tr *ngFor="let chest of quest.formattedChests; let j = index">
         <td>C{{ j + 1 }}</td>
-        <td><img src="assets/units/{{chest.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ chest.name }}</td>
+        <td><img src="assets/units/{{chest.image}}_m.png" class="enemyImg" />{{ chest.name }}</td>
       </tr>
     </table>
 
-    <table class="chestTable" *ngIf="quest.objects.length > 0">
+    <table class="chestTable" *ngIf="quest.formattedObjects?.length > 0">
       <tr>
         <th>ID</th>
         <th>Name</th>
       </tr>
-      <tr *ngFor="let object of quest.objects; let j = index">
+      <tr *ngFor="let object of quest.formattedObjects; let j = index">
         <td>O{{ j + 1 }}</td>
-        <td><img src="assets/units/{{object.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ object.name }}</td>
+        <td><img src="assets/units/{{object.image}}_m.png" class="enemyImg" />{{ object.name }}</td>
+      </tr>
+    </table>
+
+    <table class="chestTable" *ngIf="quest.formattedSwitchs?.length > 0">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let switch of quest.formattedSwitchs; let j = index">
+        <td>S{{ j + 1 }}</td>
+        <td><img src="assets/units/{{switch.image}}_m.png" class="enemyImg" />{{ switch.name }}</td>
       </tr>
     </table>
   </div>
