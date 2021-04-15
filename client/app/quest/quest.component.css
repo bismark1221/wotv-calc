@@ -236,3 +236,29 @@
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
+
+.job {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  width: 40px;
+  margin: auto;
+}
+
+.job img {
+  max-width: 30px;
+  max-height: 30px;
+  vertical-align: top;
+}
+
+.enemyImg {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5px;
+}
+
+.elementImg {
+  max-width: 40px;
+  max-height: 40px;
+}

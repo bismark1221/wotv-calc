@@ -355,7 +355,8 @@ export class JsonService {
     'fairy',
     'undead',
     'stone',
-    'metal'
+    'metal',
+    'arcana'
   ];
 
   timing = {
@@ -3982,7 +3983,8 @@ export class JsonService {
         exJobs: [],
         stats: {},
         element: rawUnit.elem ? this.elements[rawUnit.elem[0]] : null,
-        image: null
+        image: null,
+        species: ''
       };
 
       if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
@@ -3997,6 +3999,20 @@ export class JsonService {
       } else if (rawUnit.charaId) {
         unit.image = rawUnit.charaId.toLowerCase();
         this.getUnitImage(unit);
+      }
+
+      if (rawUnit.species) {
+        rawUnit.species.forEach((specie, speciesIndex) => {
+          if (speciesIndex > 0) {
+            unit.species += ', ';
+          }
+
+          if (!this.species[specie]) {
+            console.log('Unknown species -- ' + dataId + ' -- ' + specie);
+          }
+
+          unit.species += this.species[specie];
+        });
       }
 
       if (rawUnit.ccsets) {

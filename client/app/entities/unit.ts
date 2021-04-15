@@ -134,6 +134,9 @@ export class Unit {
   availableSupportNodes = [[], []];
   availableCounterNodes = [];
 
+  // Only for quests/enemies
+  species = '';
+
 
   constructFromJson(unit: Unit, translateService): void {
     this.dataId = unit.dataId;
@@ -154,6 +157,7 @@ export class Unit {
     this.attack = unit.attack;
     this.cost = unit.cost;
     this.replacedSkills = unit.replacedSkills;
+    this.species = unit.species;
   }
 
   getName(translateService): string {

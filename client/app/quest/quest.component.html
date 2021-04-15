@@ -122,11 +122,19 @@
       </tr>
       <tr *ngFor="let enemy of quest.formattedEnemies; let j = index">
         <td>E{{ j + 1 }}</td>
-        <td><img src="assets/units/{{enemy.image}}_m.png" style="max-width: 40px; max-height: 40px;"/>{{ enemy.name }}</td>
-        <td><img src="assets/elements/{{ enemy.element }}.png" /></td>
-        <td></td>
+        <td>
+          <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />{{ enemy.name }}
+        </td>
+        <td>
+          <img src="assets/elements/{{ enemy.element }}.png" class="elementImg" />
+        </td>
+        <td>
+          <div class="job" *ngIf="enemy.job" title="{{ enemy.job.name }}">
+            <img src="{{'assets/jobs/' + enemy.job.image + '.png'}}" />
+          </div>
+        </td>
         <td>{{ enemy.level }}</td>
-        <td></td>
+        <td>{{ enemy.species }}</td>
       </tr>
     </table>
 

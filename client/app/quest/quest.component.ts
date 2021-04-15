@@ -10,6 +10,7 @@ import { ItemService } from '../services/item.service';
 import { EquipmentService } from '../services/equipment.service';
 import { AuthService } from '../services/auth.service';
 import { OtherUnitService } from '../services/otherunit.service';
+import { JobService } from '../services/job.service';
 
 
 @Component({
@@ -32,6 +33,7 @@ export class QuestComponent implements OnInit {
     private nameService: NameService,
     private itemService: ItemService,
     private equipmentService: EquipmentService,
+    private jobService: JobService,
     private otherUnitService: OtherUnitService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
@@ -125,7 +127,7 @@ export class QuestComponent implements OnInit {
 
   async formatEnemy(enemy) {
     const formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
-    console.log(formattedEnemy);
+    formattedEnemy.name = this.nameService.getName(formattedEnemy);
 
     if (enemy.element) {
       formattedEnemy.element = enemy.element;
@@ -137,7 +139,13 @@ export class QuestComponent implements OnInit {
       formattedEnemy.level = 0;
     }
 
-    formattedEnemy.name = this.nameService.getName(formattedEnemy);
+    formattedEnemy.job = null;
+    if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
+      formattedEnemy.job = await this.jobService.getJob(formattedEnemy.jobs[0]);
+      formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
+    }
+
+    console.log(formattedEnemy);
 
     return formattedEnemy;
   }
