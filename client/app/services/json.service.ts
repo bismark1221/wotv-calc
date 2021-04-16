@@ -40,6 +40,7 @@ export class JsonService {
     wotvGuildTitles: {},
     wotvQuests: {},
     wotvOtherUnits: {},
+    wotvSkills: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -89,6 +90,7 @@ export class JsonService {
     wotvGuildTitles: {},
     wotvQuests: {},
     wotvOtherUnits: {},
+    wotvSkills: {},
     raid: {},
     raidBoss: {},
     raidMaps: {},
@@ -2060,7 +2062,7 @@ export class JsonService {
         unit.board.nodes[item.panel_id] = {
           dataId: item.value,
           type: item.panel_effect_type === 1 ? 'skill' : 'buff',
-          skill: this.addSkill(unit, item)
+          skill: this.OLDaddSkill(unit, item)
         };
       });
 
@@ -2083,7 +2085,7 @@ export class JsonService {
           slot: this.slots.indexOf(previousSkillType)
         };
 
-        upgrade.newSkill = this.addSkill(unit, fakePanelSkill);
+        upgrade.newSkill = this.OLDaddSkill(unit, fakePanelSkill);
       });
     });
   }
@@ -2092,9 +2094,9 @@ export class JsonService {
     // party GL
     if (rawVisionCard.card_skill) {
       visionCard.partyBuffs = [{
-        classic: this.addSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill}),
-        awake: rawVisionCard.add_card_skill_buff_awake ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake}) : null,
-        lvmax: rawVisionCard.add_card_skill_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax}) : null
+        classic: this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill}),
+        awake: rawVisionCard.add_card_skill_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake}) : null,
+        lvmax: rawVisionCard.add_card_skill_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax}) : null
       }];
     }
 
@@ -2103,9 +2105,9 @@ export class JsonService {
       visionCard.partyBuffs = [];
       rawVisionCard.card_buffs.forEach(dataBuff => {
         const buff = {
-          classic: dataBuff.card_skill ? this.addSkill(visionCard, {slot: 0, value: dataBuff.card_skill}) : null,
-          awake: dataBuff.add_card_skill_buff_awake ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_awake}) : null,
-          lvmax: dataBuff.add_card_skill_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_lvmax}) : null,
+          classic: dataBuff.card_skill ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.card_skill}) : null,
+          awake: dataBuff.add_card_skill_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_awake}) : null,
+          lvmax: dataBuff.add_card_skill_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_lvmax}) : null,
           cond : dataBuff.cnds_iname ? this.addCardCond(dataBuff.cnds_iname) : []
         };
 
@@ -2116,9 +2118,9 @@ export class JsonService {
     // self GL
     if (rawVisionCard.self_buff) {
       visionCard.unitBuffs = [{
-        classic: this.addSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff}),
-        awake: rawVisionCard.add_self_buff_awake ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake}) : null,
-        lvmax: rawVisionCard.add_self_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax}) : null
+        classic: this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff}),
+        awake: rawVisionCard.add_self_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake}) : null,
+        lvmax: rawVisionCard.add_self_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax}) : null
       }];
     }
 
@@ -2127,9 +2129,9 @@ export class JsonService {
       visionCard.unitBuffs = [];
       rawVisionCard.self_buffs.forEach(dataBuff => {
         const buff = {
-          classic: dataBuff.self_buff ? this.addSkill(visionCard, {slot: 0, value: dataBuff.self_buff}) : null,
-          awake: dataBuff.add_self_buff_awake ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_awake}) : null,
-          lvmax: dataBuff.add_self_buff_lvmax ? this.addSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_lvmax}) : null,
+          classic: dataBuff.self_buff ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.self_buff}) : null,
+          awake: dataBuff.add_self_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_awake}) : null,
+          lvmax: dataBuff.add_self_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_lvmax}) : null,
           cond : dataBuff.buff_cond ? this.addCardCond(dataBuff.buff_cond) : []
         };
 
@@ -2207,7 +2209,7 @@ export class JsonService {
     }
   }
 
-  private addSkill(unit, panelSkill) {
+  private OLDaddSkill(unit, panelSkill) {
     const skill = {
       unlockStar: panelSkill.unlock_value + 1,
       unlockJob: panelSkill.get_job,
@@ -2235,7 +2237,39 @@ export class JsonService {
       this.addWeather(unit, skill, this[this.version].skills[panelSkill.value].wth.id);
     }
 
+    // @TODO remove
+    this.addSkill(panelSkill.value, unit);
+
     return skill;
+  }
+
+  private addSkill(skillId, item) {
+    if (!this[this.version].wotvSkills[skillId] && this[this.version].skills[skillId]) {
+      const rawSkill = this[this.version].skills[skillId];
+
+
+      // console.log("####### -- " + skillId);
+      // console.log(rawSkill);
+
+
+      if (!this.slots[rawSkill.slot]) {
+        console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
+      }
+
+      const skill = {
+        effects: [],
+        dataId: skillId,
+        type: this.slots[rawSkill.slot]
+      };
+
+      this.updateSkill(item, skill, skillId);
+
+      if (rawSkill.wth) {
+        this.addWeather(item, skill, rawSkill.wth.id);
+      }
+
+      this[this.version].wotvSkills[skillId] = skill;
+    }
   }
 
   private updateSkill(unit, skill, skillId) {
@@ -2349,6 +2383,7 @@ export class JsonService {
       dataSkill = this[this.version].skills[skillId];
       skill.names = {};
       this.getNames(skill, 'skill', false);
+
       dataSkill.names = skill.names;
 
       Object.keys(dataSkill).forEach(key => {
@@ -2847,6 +2882,8 @@ export class JsonService {
         }
       });
     }
+
+
   }
 
   private findEffect(skill, type, buffIndex) {
@@ -3030,7 +3067,7 @@ export class JsonService {
     };
 
     this[this.version].wotvEspers[dataId].skills = [
-      this.addSkill(this[this.version].wotvEspers[dataId], {slot: 1, value: esper.atkskl})
+      this.OLDaddSkill(this[this.version].wotvEspers[dataId], {slot: 1, value: esper.atkskl})
     ];
     this.getUnitImage(this[this.version].wotvEspers[dataId]);
 
@@ -3070,7 +3107,7 @@ export class JsonService {
         esper.board.nodes[item.panel_id] = {
           dataId: item.value,
           type: 'buff',
-          skill: this.addSkill(esper, item)
+          skill: this.OLDaddSkill(esper, item)
         };
       });
 
@@ -3779,10 +3816,6 @@ export class JsonService {
             });
           }
 
-          if (this.questMissionCond[rawMission.type] === 'SPECIFIC_SKILL') {
-            // @TODO GET skill name in value !!!
-          }
-
           if (rawMission.rewards) {
             rawMission.rewards.forEach(reward => {
               newMission.rewards.push({
@@ -3839,24 +3872,24 @@ export class JsonService {
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
-            this.addOtherUnit(enemy.iname);
+            this.addOtherUnit(enemy);
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.iname, true);
+              this.addOtherUnit(enemy, true);
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.iname, true);
+              this.addOtherUnit(enemy, true);
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.iname, true);
+              this.addOtherUnit(enemy, true);
             } else {
               quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               quest.enemies.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy.iname);
+              this.addOtherUnit(enemy);
             }
           }
         });
@@ -3974,7 +4007,9 @@ export class JsonService {
     }
   }
 
-  private addOtherUnit(dataId, object = false) {
+  private addOtherUnit(otherUnit, object = false) {
+    const dataId = otherUnit.iname;
+
     if (this[this.version].units[dataId] && !this[this.version].wotvOtherUnits[dataId]) {
       const rawUnit = this[this.version].units[dataId];
       const unit = {
@@ -4037,6 +4072,11 @@ export class JsonService {
       }
 
       this[this.version].wotvOtherUnits[dataId] = unit;
+
+
+      otherUnit.skills.forEach(skill => {
+        this.addSkill(skill.iname, unit);
+      });
     }
   }
 }

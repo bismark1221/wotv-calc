@@ -7,6 +7,7 @@ import { NavService } from './nav.service';
 import { ToolService } from './tool.service';
 import { ItemService } from './item.service';
 import { UnitService } from './unit.service';
+import { OtherUnitService } from './otherunit.service';
 
 import { Quest } from '../entities/quest';
 
@@ -22,7 +23,8 @@ export class QuestService {
     private navService: NavService,
     private toolService: ToolService,
     private itemService: ItemService,
-    private unitService: UnitService
+    private unitService: UnitService,
+    private otherUnitService: OtherUnitService
   ) {}
 
   private getRaw() {
@@ -155,6 +157,9 @@ export class QuestService {
       break;
       case 'SPECIFIC_UNIT_NOT_DEAD' :
         unit = await this.unitService.getUnit(mission.value);
+        if (!unit) {
+          unit = await this.otherUnitService.getUnit(mission.value);
+        }
         html = (unit ? unit.getName() : '???') + ' must survive the mission';  // @TODO
       break;
       case 'ELEMENT' :
@@ -166,6 +171,9 @@ export class QuestService {
       break;
       case 'SPECIFIC_UNIT_IN_PARTY' :
         unit = await this.unitService.getUnit(mission.value);
+        if (!unit) {
+          unit = await this.otherUnitService.getUnit(mission.value);
+        }
         html = 'Party includes ' + (unit ? unit.getName() : '???');
       break;
       case 'MAX_PARTY_UNIT' :
@@ -173,20 +181,21 @@ export class QuestService {
       break;
       case 'MIN_SIM_DEAD_SPECIFIC_ENEMIES' :
         const valueSplit = mission.value.split(',');
-        unit = await this.unitService.getUnit(valueSplit[0]);
+        unit = await this.otherUnitService.getUnit(valueSplit[0]);
         html = 'Defeat ' + valueSplit[1] + ' ' + (unit ? unit.getName() : '???') + ' or more simultaneously';  // @TODO
       break;
       case 'MIN_BREAK_OBJECT' :
         html = 'Break ' + mission.value + ' or more objets';
       break;
       case 'SPECIFIC_SKILL' :
-        html = 'Use ' + mission.value;
+        // @TODO get skill name ^^
+        html = 'Use some skill (but sorry I did not link that part...)'; // + mission.value;
       break;
       case 'MAX_SKILL' :
         html = 'Use no more than ' + mission.value + ' skills';
       break;
       case 'ACTIVATE' :
-        unit = await this.unitService.getUnit(mission.value);
+        unit = await this.otherUnitService.getUnit(mission.value);
         html = 'Activate ' + (unit ? unit.getName() : '???'); // @TODO
       break;
       case 'ITEMS' :
