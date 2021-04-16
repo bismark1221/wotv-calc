@@ -96,8 +96,8 @@
 
     <table class="allyTable" *ngIf="quest.formattedAllies?.length > 0">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="idCol">ID</th>
+        <th class="nameCol">ID</th>
         <th>Element</th>
         <th>Job</th>
         <th>Level</th>
@@ -121,8 +121,8 @@
 
     <table class="enemyTable" *ngIf="quest.formattedEnemies?.length > 0">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="idCol">ID</th>
+        <th class="nameCol">ID</th>
         <th>Element</th>
         <th>Job</th>
         <th>Level</th>
@@ -148,8 +148,8 @@
 
     <table class="chestTable" *ngIf="quest.formattedChests?.length > 0">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="idCol">ID</th>
+        <th class="nameCol">ID</th>
       </tr>
       <tr *ngFor="let chest of quest.formattedChests; let j = index">
         <td>C{{ j + 1 }}</td>
@@ -159,8 +159,8 @@
 
     <table class="chestTable" *ngIf="quest.formattedObjects?.length > 0">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="idCol">ID</th>
+        <th class="nameCol">ID</th>
       </tr>
       <tr *ngFor="let object of quest.formattedObjects; let j = index">
         <td>O{{ j + 1 }}</td>
@@ -170,8 +170,8 @@
 
     <table class="chestTable" *ngIf="quest.formattedSwitchs?.length > 0">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
+        <th class="idCol">ID</th>
+        <th class="nameCol">ID</th>
       </tr>
       <tr *ngFor="let switch of quest.formattedSwitchs; let j = index">
         <td>S{{ j + 1 }}</td>

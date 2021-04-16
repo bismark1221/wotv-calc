@@ -93,6 +93,15 @@
   max-height: 40px;
 }
 
+
+/*############*/
+/* GRID TABLE */
+/*############*/
+.gridTable {
+  margin: auto;
+  margin-top: 10px;
+}
+
 .mapTile {
   width: 58px;
   height: 58px;
@@ -243,6 +252,9 @@
   background-position: 0px 0px;
 }
 
+/*#############*/
+/* OTHER UNITS */
+/*#############*/
 .job {
   height: 40px;
   background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
@@ -268,3 +280,14 @@
   max-width: 40px;
   max-height: 40px;
 }
+
+
+.allyTable, .enemyTable, .chestTable, .objectTable, .switchTable {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
+  width: 40px;
+}
+
