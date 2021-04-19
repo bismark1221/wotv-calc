@@ -6510,6 +6510,68 @@
             "maxLevel": 10,
             "minLevel": 1
           },
+          "SK_BTL_RES_OTDARK_1_80_U": {
+            "effects": [
+              {
+                "type": "FIRE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WATER_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "WIND_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHTNING_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "ICE_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "EARTH_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              },
+              {
+                "type": "LIGHT_RES",
+                "minValue": 1,
+                "maxValue": 80,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_RES_OTDARK_1_80_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "闇属性以外の耐性1-80アップ(基礎)"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
           "SK_BTL_RESDB_DF_1_100_U": {
             "effects": [
               {
@@ -9246,7 +9308,251 @@
         "species": "netherBeast",
         "element": "light",
         "image": "lapscbcl",
-        "skills": {},
+        "skills": {
+          "SK_CBCL_M_01_R": {
+            "effects": [],
+            "dataId": "SK_CBCL_M_01_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "バニシュガ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "light"
+            ],
+            "minLevel": 1
+          },
+          "SK_CBCL_M_04_R": {
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": -10,
+                "maxValue": -20,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_BEFORE"
+              }
+            ],
+            "dataId": "SK_CBCL_M_04_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "ルビーの煌めき"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 30
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "neutral"
+            ],
+            "minLevel": 1
+          },
+          "SK_CBCL_M_05_R": {
+            "effects": [
+              {
+                "type": "REFLECT",
+                "value": 1,
+                "turn": 5,
+                "target": "selfSide",
+                "timing": "SKILL_BEFORE"
+              }
+            ],
+            "dataId": "SK_CBCL_M_05_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "ルビーの光"
+            },
+            "target": "selfSide",
+            "cost": {
+              "type": "TP",
+              "value": 50
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 3,
+              "h": 2
+            },
+            "minLevel": 1
+          },
+          "SK_CBCL_M_06_R_1": {
+            "effects": [
+              {
+                "type": "MAG",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "percent",
+                "turn": 10,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "DEF",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "fixe",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "SPR",
+                "minValue": -50,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "calcType": "dispel",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_CBCL_M_06_R_1",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "モードチェンジ"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 50
+            },
+            "count": 10,
+            "maxLevel": 60,
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_CBCL_M_06_R_2": {
+            "effects": [
+              {
+                "type": "MAG",
+                "minValue": 20,
+                "maxValue": 600,
+                "calcType": "percent",
+                "turn": 10,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "DEF",
+                "minValue": 20,
+                "maxValue": 75,
+                "calcType": "fixe",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "SPR",
+                "minValue": -50,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "calcType": "dispel",
+                "turn": 10,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_CBCL_M_06_R_2",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "モードチェンジ"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 50
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "based": "magic",
+            "minLevel": 61
+          }
+        },
         "slug": "carbuncle",
         "attack": {
           "names": {
@@ -9430,7 +9736,216 @@
         "species": "aquatic",
         "element": "water",
         "image": "lapskrkn",
-        "skills": {},
+        "skills": {
+          "SK_KRKN_M_01_R": {
+            "effects": [],
+            "dataId": "SK_KRKN_M_01_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "ウォタガ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 10,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 4,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_KRKN_M_03_R": {
+            "effects": [
+              {
+                "type": "BREAK_BARRIER_MAGIC",
+                "target": "all",
+                "timing": "SKILL_BEFORE"
+              }
+            ],
+            "dataId": "SK_KRKN_M_03_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "水鉄砲"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 20
+            },
+            "count": 10,
+            "maxLevel": 3,
+            "range": {
+              "h": 1,
+              "l": 4,
+              "s": 1,
+              "line": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "missile",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "effects": [
+              {
+                "type": "AGI_DEBUFF_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "素早さダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_KRKN_M_04_R": {
+            "effects": [
+              {
+                "type": "HEAL_POWER",
+                "minValue": -50,
+                "maxValue": -50,
+                "calcType": "fixe",
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_KRKN_M_04_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "スプラッシュ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 28
+            },
+            "count": 10,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 2,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 65,
+              "maxValue": 100,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 4
+          },
+          "SK_KRKN_M_02_R": {
+            "effects": [
+              {
+                "type": "BLIND_ATK",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_KRKN_M_02_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "スミ"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 10,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1,
+              "line": 2
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "all",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 7
+          }
+        },
         "slug": "kraken",
         "attack": {
           "names": {
@@ -9688,7 +10203,260 @@
         "species": "aquatic",
         "element": "water",
         "image": "lapslvat",
-        "skills": {},
+        "skills": {
+          "SK_LVAT_M_01_R": {
+            "effects": [],
+            "dataId": "SK_LVAT_M_01_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "薙ぎ払う"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 5
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 0,
+              "l": 1,
+              "s": 10,
+              "w": 2
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 20,
+              "maxValue": 80,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "minLevel": 1
+          },
+          "SK_LVAT_M_02_R": {
+            "effects": [
+              {
+                "type": "SLOW_ATK",
+                "minValue": 30,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_LVAT_M_02_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "大海嘯"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 15
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "range": {
+              "h": 1,
+              "l": 2,
+              "s": 10,
+              "w": 2
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 65,
+              "maxValue": 100,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_LVAT_M_03": {
+            "effects": [],
+            "dataId": "SK_LVAT_M_03",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "水神の爆泡"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 45
+            },
+            "count": 3,
+            "maxLevel": 100,
+            "range": {
+              "h": 3,
+              "l": 5,
+              "s": 1
+            },
+            "based": "magic",
+            "damage": {
+              "minValue": 135,
+              "maxValue": 200,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_LVAT_M_04": {
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 30,
+                "maxValue": 30,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "MAG",
+                "minValue": 30,
+                "maxValue": 30,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_LVAT_M_04",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "あたりに水が満ちる"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 24
+            },
+            "count": 3,
+            "maxLevel": 60,
+            "minLevel": 1
+          },
+          "SK_LVAT_R_01": {
+            "effects": [
+              {
+                "type": "WATER_RES",
+                "minValue": -18,
+                "maxValue": -38,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "all"
+              }
+            ],
+            "dataId": "SK_LVAT_R_01",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "水が逆巻く"
+            },
+            "target": "all",
+            "maxLevel": 100,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 100,
+            "minLevel": 1
+          },
+          "SK_LVAT_M_04_R": {
+            "effects": [
+              {
+                "type": "ATK",
+                "minValue": 30,
+                "maxValue": 300,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              },
+              {
+                "type": "MAG",
+                "minValue": 30,
+                "maxValue": 300,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true,
+                "target": "self",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_LVAT_M_04_R",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "あたりに水が満ちる"
+            },
+            "target": "self",
+            "cost": {
+              "type": "TP",
+              "value": 24
+            },
+            "count": 10,
+            "maxLevel": 100,
+            "minLevel": 61
+          }
+        },
         "slug": "rivaiasan",
         "attack": {
           "names": {
@@ -9872,7 +10640,271 @@
         "species": "beast",
         "element": "dark",
         "image": "lapsdmcm",
-        "skills": {},
+        "skills": {
+          "SK_DMCM_M_01": {
+            "effects": [
+              {
+                "type": "ALL_ELEMENTS_RES",
+                "minValue": -15,
+                "maxValue": -15,
+                "calcType": "resistance",
+                "turn": 3,
+                "target": "target",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_DMCM_M_01",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "魔なる空間"
+            },
+            "target": "target",
+            "cost": {
+              "type": "TP",
+              "value": 30
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 4,
+              "h": 2
+            },
+            "minLevel": 1
+          },
+          "SK_DMCM_M_02": {
+            "effects": [
+              {
+                "type": "BLIND_ATK",
+                "minValue": 20,
+                "maxValue": 50,
+                "calcType": "percent",
+                "rate": 25,
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_DMCM_M_02",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "ダークタックル"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "based": "physic",
+            "damage": {
+              "minValue": 65,
+              "maxValue": 100,
+              "type": "strike",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "dark"
+            ],
+            "minLevel": 1
+          },
+          "SK_DMCM_M_03": {
+            "effects": [
+              {
+                "type": "HEAL_POWER",
+                "minValue": -15,
+                "maxValue": -30,
+                "calcType": "fixe",
+                "turn": 3,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_DMCM_M_03",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "エアロブラスト"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 28
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "wind"
+            ],
+            "minLevel": 1
+          },
+          "SK_DMCM_M_04": {
+            "effects": [
+              {
+                "type": "AGI",
+                "minValue": -15,
+                "maxValue": -25,
+                "calcType": "percent",
+                "turn": 3,
+                "increaseMax": true,
+                "target": "all",
+                "timing": "SKILL_AFTER"
+              }
+            ],
+            "dataId": "SK_DMCM_M_04",
+            "rate": 100,
+            "type": "skill",
+            "names": {
+              "en": "ウォーターブラスト"
+            },
+            "target": "all",
+            "cost": {
+              "type": "AP",
+              "value": 24
+            },
+            "count": 5,
+            "maxLevel": 10,
+            "range": {
+              "h": 2,
+              "l": 3,
+              "s": 1
+            },
+            "based": "magic",
+            "aoe": {
+              "s": 1,
+              "l": 2,
+              "h": 1
+            },
+            "damage": {
+              "minValue": 30,
+              "maxValue": 65,
+              "type": "magic",
+              "effType": "DAMAGE",
+              "formula": {}
+            },
+            "elem": [
+              "water"
+            ],
+            "minLevel": 1
+          },
+          "SK_DMCM_M_05_R": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": -20,
+                "maxValue": -40,
+                "calcType": "fixe",
+                "turn": 3,
+                "target": "target"
+              }
+            ],
+            "dataId": "SK_DMCM_M_05_R",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "キマイラの邪眼"
+            },
+            "target": "target",
+            "maxLevel": 10,
+            "range": {
+              "h": 1,
+              "l": 3,
+              "s": 1
+            },
+            "aoe": {
+              "s": 0,
+              "l": 1,
+              "h": 1
+            },
+            "minLevel": 1
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 1,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "命中1-999アップ"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "effects": [
+              {
+                "type": "MAX_HP_DOWN_RES",
+                "minValue": 999,
+                "maxValue": 999,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "最大HPダウン無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "effects": [
+              {
+                "type": "IMMUNE_CT_CHANGE",
+                "calcType": "nullify",
+                "target": "self"
+              }
+            ],
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "type": "support",
+            "names": {
+              "en": "CT変動無効"
+            },
+            "target": "self",
+            "maxLevel": 10,
+            "minLevel": 1
+          }
+        },
         "slug": "debiru-kimaira",
         "attack": {
           "names": {

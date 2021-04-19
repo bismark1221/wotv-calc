@@ -60,7 +60,8 @@ export class JsonService {
     raidBonusCard: {},
     quests: {},
     questMissions: {},
-    grids: {}
+    grids: {},
+    maps: {}
   };
 
   jp = {
@@ -110,14 +111,13 @@ export class JsonService {
     raidBonusCard: {},
     quests: {},
     questMissions: {},
-    grids: {}
+    grids: {},
+    maps: {}
   };
 
   jpRomaji = {};
   jpTitlesName = {};
   jpTitlesDesc = {};
-
-  maps = {};
 
   names = {
     en : {
@@ -1481,6 +1481,11 @@ export class JsonService {
     return this.http.get('http://data.local-wotv-chain.com/map/gl/maps.json?t=' + date).toPromise();
   }
 
+  private JP_Maps() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/map/jp/maps.json?t=' + date).toPromise();
+  }
+
 
 
   private GL_Grids() {
@@ -1633,7 +1638,9 @@ export class JsonService {
       this.JPQuestMissions(),
 
       this.GL_Grids(),
-      this.JP_Grids()
+      this.JP_Grids(),
+
+      this.JP_Maps()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1668,6 +1675,7 @@ export class JsonService {
       this.gl.quests = this.formatJson(responses[73]);
       this.gl.questMissions = this.formatJson(responses[108]);
       this.gl.grids = responses[110];
+      this.gl.maps = responses[104];
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1702,6 +1710,7 @@ export class JsonService {
       this.jp.quests = this.formatJson(responses[74]);
       this.jp.questMissions = this.formatJson(responses[109]);
       this.jp.grids = responses[111];
+      this.jp.maps = responses[112];
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1752,7 +1761,6 @@ export class JsonService {
       this.jpTitlesName = responses[102];
       this.jpTitlesDesc = responses[103];
 
-      this.maps = responses[104];
 
       this.formatJsons();
 
@@ -3582,7 +3590,7 @@ export class JsonService {
   private addBossSkill(boss, questId, lvMin, lvMax) {
     const quest = this[this.version].quests[questId];
     if (quest) {
-      const map = this.maps[quest.map.set.split('/')[1]];
+      const map = this[this.version].maps[quest.map.set.split('/')[1]];
 
       if (map) {
         map.enemy.forEach(enemy => {
@@ -3917,8 +3925,8 @@ export class JsonService {
   }
 
   formatMap(quest, mapId) {
-    if (this.maps[mapId.split('/')[1]]) {
-      const map = this.maps[mapId.split('/')[1]];
+    if (this[this.version].maps[mapId.split('/')[1]]) {
+      const map = this[this.version].maps[mapId.split('/')[1]];
       if (map.drop_table_list) {
         Object.keys(map.drop_table_list).forEach(dropTable => {
           if (dropTable !== 'steal') {

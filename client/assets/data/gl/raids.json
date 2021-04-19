@@ -6694,69 +6694,6 @@
             "maxLevel": 10,
             "minLevel": 1
           },
-          "SK_BTL_RES_OTDARK_1_80_U": {
-            "effects": [
-              {
-                "type": "FIRE_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "WATER_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "WIND_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "LIGHTNING_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "ICE_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "EARTH_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              },
-              {
-                "type": "LIGHT_RES",
-                "minValue": 1,
-                "maxValue": 80,
-                "calcType": "resistance",
-                "target": "self"
-              }
-            ],
-            "dataId": "SK_BTL_RES_OTDARK_1_80_U",
-            "rate": 100,
-            "type": "support",
-            "names": {
-              "en": "All Res Except Dark 1-80 Up (Base)",
-              "fr": "Toutes les Rés (sauf Rés ombre) ↑ 1 - 80 (base)"
-            },
-            "target": "self",
-            "maxLevel": 10,
-            "minLevel": 1
-          },
           "SK_BTL_RESDB_DF_1_100_U": {
             "effects": [
               {
