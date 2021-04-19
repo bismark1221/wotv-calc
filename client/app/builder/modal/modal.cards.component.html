@@ -247,8 +247,7 @@
               <div *ngIf="skill.time && skill.time.minValue">
                 <ng-template #tip_time>
                   <div>
-                    Min time: {{ skill.time.minValue }}<br />
-                    Max time: {{ skill.time.maxValue }}
+                    {{ skill.time.realValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>

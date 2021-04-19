@@ -187,7 +187,7 @@ export class SkillService {
     }
   }
 
-  private getValue(skill, effect, getPositiveValue = true, explaination = '', forceCalc = null) {
+  private getValue(skill, effect, getPositiveValue = true, explaination = '', forceCalc = null, getValueOnly = false) {
     let value = '';
     if (typeof(effect.minValue) === 'number' || typeof(effect.value) === 'number') {
       let maxReduceValueFromMath = 0;
@@ -220,9 +220,9 @@ export class SkillService {
             valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
           }
 
-          value = ' (' + valueForLevel + calc + explaination + ')';
+          value = getValueOnly ? valueForLevel : ' (' + valueForLevel + calc + explaination + ')';
         } else {
-          value = ' (' + minValue + calc + explaination + ')';
+          value = getValueOnly ? minValue : ' (' + minValue + calc + explaination + ')';
         }
       }
     }
@@ -1169,6 +1169,10 @@ export class SkillService {
 
     if (skill.maths) {
       html = this.formatMaths(skill, html, 'notDamage');
+    }
+
+    if (skill.time) {
+      skill.time.realValue = this.getValue(skill, skill.time, true, '', 'fixe', true);
     }
 
     if (getTarget) {

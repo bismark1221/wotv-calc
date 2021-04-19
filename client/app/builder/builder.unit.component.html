@@ -505,8 +505,7 @@
               <div *ngIf="skill.time && skill.time.minValue">
                 <ng-template #tip_time>
                   <div>
-                    Min time: {{ skill.time.minValue }}<br />
-                    Max time: {{ skill.time.maxValue }}
+                    {{ skill.time.realValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -585,8 +584,7 @@
               <div *ngIf="skill.time && skill.time.minValue">
                 <ng-template #tip_time>
                   <div>
-                    Min time: {{ skill.time.minValue }}<br />
-                    Max time: {{ skill.time.maxValue }}
+                    {{ skill.time.realValue }}
                   </div>
                 </ng-template>
                 <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -667,8 +665,7 @@
                 <div *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ skill.time.minValue }}<br />
-                      Max time: {{ skill.time.maxValue }}
+                      {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -731,8 +728,7 @@
                 <div *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ skill.time.minValue }}<br />
-                      Max time: {{ skill.time.maxValue }}
+                      {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -795,8 +791,7 @@
                 <div *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ skill.time.minValue }}<br />
-                      Max time: {{ skill.time.maxValue }}
+                      {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -859,8 +854,7 @@
                 <div *ngIf="skill.time && skill.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ skill.time.minValue }}<br />
-                      Max time: {{ skill.time.maxValue }}
+                      {{ skill.time.realValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
@@ -923,8 +917,7 @@
                 <div *ngIf="unit.limit.time && unit.limit.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ unit.limit.time.minValue }}<br />
-                      Max time: {{ unit.limit.time.maxValue }}
+                      {{ unit.limit.time.realValue }
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>

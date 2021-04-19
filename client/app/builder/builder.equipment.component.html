@@ -162,8 +162,7 @@
             <div *ngIf="equipment.activeSkill.time && equipment.activeSkill.time.minValue">
               <ng-template #tip_time>
                 <div>
-                  Min time: {{ equipment.activeSkill.time.minValue }}<br />
-                  Max time: {{ equipment.activeSkill.time.maxValue }}
+                  {{ equipment.activeSkill.time.realValue }}
                 </div>
               </ng-template>
               <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
