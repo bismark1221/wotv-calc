@@ -601,7 +601,11 @@
           </tbody>
           <tbody *ngFor="let skill of getSkillsPerType(i)">
             <tr>
-              <td><img class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]" src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" /></td>
+              <td>
+                <div class="subJob" *ngIf="jobs[(skill.unlockJob - 1)]">
+                  <img src="{{'assets/jobs/' + jobs[(skill.unlockJob - 1)].image + '.png'}}" />
+                </div>
+              </td>
               <td>{{ skill.jobLevel }}</td>
               <td>{{ skill.unlockStar }}</td>
               <td *ngIf="i === 'counter'">

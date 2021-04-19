@@ -45,7 +45,8 @@ export class EsperService {
       'UN_LW_S_GCAL',
       'UN_LW_S_MRLT',
       'UN_LW_S_CORL',
-      'UN_LW_S_KRKN'
+      'UN_LW_S_KRKN',
+      'UN_LW_S_DMCM'
     ],
     UR: [
       'UN_LW_S_IFRT',
