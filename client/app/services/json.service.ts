@@ -2302,7 +2302,7 @@ export class JsonService {
     }
 
     // @TODO remove
-    this.addSkill(panelSkill.value, unit);
+    // this.addSkill(panelSkill.value, unit);
 
     return skill;
   }
