@@ -869,83 +869,103 @@ export class JsonService {
   ) {}
 
   private GLUnits() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Unit.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Unit.json?t=' + date).toPromise();
   }
 
   private GLUnitsBoards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitAbilityBoard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/UnitAbilityBoard.json?t=' + date).toPromise();
   }
 
   private GLSkills() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Skill.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Skill.json?t=' + date).toPromise();
   }
 
   private GLBuffs() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Buff.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Buff.json?t=' + date).toPromise();
   }
 
   private GLJobs() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Job.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Job.json?t=' + date).toPromise();
   }
 
   private GLEquipments() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Artifact.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Artifact.json?t=' + date).toPromise();
   }
 
   private GLVisionCards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/VisionCard.json?t=' + date).toPromise();
   }
 
   private GLEspersBoards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NetherBeastAbilityBoard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/NetherBeastAbilityBoard.json?t=' + date).toPromise();
   }
 
   private GLWeathers() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Weather.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Weather.json?t=' + date).toPromise();
   }
 
   private GLEsperLvTbls() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/NBeastLvTbl.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/NBeastLvTbl.json?t=' + date).toPromise();
   }
 
   private GLArtifactRecipes() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRecipe.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/ArtifactRecipe.json?t=' + date).toPromise();
   }
 
   private GLArtifactLot() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactRandLot.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/ArtifactRandLot.json?t=' + date).toPromise();
   }
 
   private GLGrows() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Grow.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Grow.json?t=' + date).toPromise();
   }
 
   private GLUnitModels() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitModel.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/UnitModel.json?t=' + date).toPromise();
   }
 
   private GLArtifactEquipCond() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactEquipCondition.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/ArtifactEquipCondition.json?t=' + date).toPromise();
   }
 
   private GLRaid() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Raid.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Raid.json?t=' + date).toPromise();
   }
 
   private GLRaidBoss() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBoss.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/RaidBoss.json?t=' + date).toPromise();
   }
 
   private GLArtifactAwake() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/ArtifactAwake.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/ArtifactAwake.json?t=' + date).toPromise();
   }
 
   private GLItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Item.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Item.json?t=' + date).toPromise();
   }
 
   private GLCardCond() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/VisionCardLimitedCondition.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/VisionCardLimitedCondition.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -954,7 +974,8 @@ export class JsonService {
   }
 
   private GLMasterRank() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/MasterRank.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/MasterRank.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -963,7 +984,8 @@ export class JsonService {
   }
 
   private GLMasterRankEffect() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/MasterRankEffect.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/MasterRankEffect.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -972,19 +994,23 @@ export class JsonService {
   }
 
   private GLPlayersAward() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/PlayersAward.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/PlayersAward.json?t=' + date).toPromise();
   }
 
   private GLGuildsAward() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/GuildsAward.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/GuildsAward.json?t=' + date).toPromise();
   }
 
   private GLJobLvTbl() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/JobLvTbl.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/JobLvTbl.json?t=' + date).toPromise();
   }
 
   private GLJobMaterialItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/JobMaterialItem.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/JobMaterialItem.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -993,7 +1019,8 @@ export class JsonService {
   }
 
   private GLUnitMaterialItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitMaterialItem.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/UnitMaterialItem.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1002,7 +1029,8 @@ export class JsonService {
   }
 
   private GLUnitClassChangeCondition() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/UnitClassChangeCondition.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/UnitClassChangeCondition.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1011,7 +1039,8 @@ export class JsonService {
   }
 
   private GLRaidBonusUnit() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBonusUnit.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/RaidBonusUnit.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1020,7 +1049,8 @@ export class JsonService {
   }
 
   private GLRaidBonusCard() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/RaidBonusVisioncard.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/RaidBonusVisioncard.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1029,7 +1059,8 @@ export class JsonService {
   }
 
   private GLQuests() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/Quests.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/Quests.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1038,7 +1069,8 @@ export class JsonService {
   }
 
   private GLQuestMissions() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/data/QuestMission.json').toPromise()
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/QuestMission.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1049,131 +1081,163 @@ export class JsonService {
 
   /* JP */
   private JPUnits() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Unit.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Unit.json?t=' + date).toPromise();
   }
 
   private JPUnitsBoards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitAbilityBoard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/UnitAbilityBoard.json?t=' + date).toPromise();
   }
 
   private JPSkills() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Skill.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Skill.json?t=' + date).toPromise();
   }
 
   private JPBuffs() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Buff.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Buff.json?t=' + date).toPromise();
   }
 
   private JPJobs() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Job.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Job.json?t=' + date).toPromise();
   }
 
   private JPEquipments() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Artifact.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Artifact.json?t=' + date).toPromise();
   }
 
   private JPVisionCards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/VisionCard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/VisionCard.json?t=' + date).toPromise();
   }
 
   private JPEspersBoards() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/NetherBeastAbilityBoard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/NetherBeastAbilityBoard.json?t=' + date).toPromise();
   }
 
   private JPWeathers() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Weather.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Weather.json?t=' + date).toPromise();
   }
 
   private JPEsperLvTbls() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/NBeastLvTbl.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/NBeastLvTbl.json?t=' + date).toPromise();
   }
 
   private JPArtifactRecipes() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactRecipe.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/ArtifactRecipe.json?t=' + date).toPromise();
   }
 
   private JPArtifactLot() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactRandLot.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/ArtifactRandLot.json?t=' + date).toPromise();
   }
 
   private JPGrows() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Grow.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Grow.json?t=' + date).toPromise();
   }
 
   private JPUnitModels() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitModel.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/UnitModel.json?t=' + date).toPromise();
   }
 
   private JPArtifactEquipCond() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactEquipCondition.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/ArtifactEquipCondition.json?t=' + date).toPromise();
   }
 
   private JPRaid() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Raid.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Raid.json?t=' + date).toPromise();
   }
 
   private JPRaidBoss() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBoss.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/RaidBoss.json?t=' + date).toPromise();
   }
 
   private JPArtifactAwake() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/ArtifactAwake.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/ArtifactAwake.json?t=' + date).toPromise();
   }
 
   private JPItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Item.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Item.json?t=' + date).toPromise();
   }
 
   private JPCardCond() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/VisionCardLimitedCondition.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/VisionCardLimitedCondition.json?t=' + date).toPromise();
   }
 
   private JPMasterRank() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/MasterRank.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/MasterRank.json?t=' + date).toPromise();
   }
 
   private JPMasterRankEffect() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/MasterRankEffect.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/MasterRankEffect.json?t=' + date).toPromise();
   }
 
   private JPPlayersAward() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/PlayersAward.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/PlayersAward.json?t=' + date).toPromise();
   }
 
   private JPGuildsAward() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/GuildsAward.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/GuildsAward.json?t=' + date).toPromise();
   }
 
   private JPJobLvTbl() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/JobLvTbl.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/JobLvTbl.json?t=' + date).toPromise();
   }
 
   private JPJobMaterialItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/JobMaterialItem.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/JobMaterialItem.json?t=' + date).toPromise();
   }
 
   private JPUnitMaterialItem() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitMaterialItem.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/UnitMaterialItem.json?t=' + date).toPromise();
   }
 
   private JPUnitClassChangeCondition() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/UnitClassChangeCondition.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/UnitClassChangeCondition.json?t=' + date).toPromise();
   }
 
   private JPRaidBonusUnit() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusUnit.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/RaidBonusUnit.json?t=' + date).toPromise();
   }
 
   private JPRaidBonusCard() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/RaidBonusVisioncard.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/RaidBonusVisioncard.json?t=' + date).toPromise();
   }
 
   private JPQuests() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/Quests.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/Quests.json?t=' + date).toPromise();
   }
 
   private JPQuestMissions() {
-    return this.http.get('https://raw.githubusercontent.com/shalzuth/wotv-ffbe-dump/master/jpdata/QuestMission.json').toPromise();
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/QuestMission.json?t=' + date).toPromise();
   }
 
 
@@ -2253,7 +2317,7 @@ export class JsonService {
 
 
       if (!this.slots[rawSkill.slot]) {
-        console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
+        // console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
       }
 
       const skill = {
@@ -2857,10 +2921,10 @@ export class JsonService {
                       delete addedBuff.timing;
                     }
 
-                    if (skill.type === undefined) {
+                    /*if (skill.type === undefined) {
                       console.log('SKILL TYPE undefined');
                       console.log(skill);
-                    }
+                    }*/
 
                     skill.effects.push(addedBuff);
                     alreadyAddedBuffs.push(buff);
@@ -4075,7 +4139,7 @@ export class JsonService {
 
 
       otherUnit.skills.forEach(skill => {
-        this.addSkill(skill.iname, unit);
+        // this.addSkill(skill.iname, unit);
       });
     }
   }

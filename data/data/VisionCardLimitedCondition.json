@@ -1,0 +1,340 @@
+{
+  "items": [
+    {
+      "iname": "VLC_FENICE",
+      "births": [
+        4
+      ]
+    },
+    {
+      "iname": "VLC_CRYSTALFAITH",
+      "births": [
+        6
+      ]
+    },
+    {
+      "iname": "VLC_FIRE",
+      "elem": [
+        1
+      ]
+    },
+    {
+      "iname": "VLC_ICE",
+      "elem": [
+        2
+      ]
+    },
+    {
+      "iname": "VLC_WIND",
+      "elem": [
+        3
+      ]
+    },
+    {
+      "iname": "VLC_THOL",
+      "elem": [
+        4
+      ]
+    },
+    {
+      "iname": "VLC_THUNDER",
+      "elem": [
+        5
+      ]
+    },
+    {
+      "iname": "VLC_WATER",
+      "elem": [
+        6
+      ]
+    },
+    {
+      "iname": "VLC_SHINE",
+      "elem": [
+        7
+      ]
+    },
+    {
+      "iname": "VLC_DARK",
+      "elem": [
+        8
+      ]
+    },
+    {
+      "iname": "VLC_DEAN",
+      "units": [
+        "UN_LW_P_DEAN"
+      ]
+    },
+    {
+      "iname": "VLC_WINDLSWO",
+      "mainjobs": [
+        "JB_LW_SWN_FIRE"
+      ],
+      "elem": [
+        3
+      ]
+    },
+    {
+      "iname": "VLC_MACE",
+      "mainjobs": [
+        "JB_LW_CLR_FIRE",
+        "JB_LW_CAL_FIRE"
+      ]
+    },
+    {
+      "iname": "VLC_IRDL",
+      "units": [
+        "UN_LW_P_IRDL"
+      ]
+    },
+    {
+      "iname": "VLC_LSWO",
+      "mainjobs": [
+        "JB_LW_SWN_FIRE",
+        "JB_LW_RAIN",
+        "JB_LW_STRN",
+        "JB_LW_MSW_FIRE",
+        "JB_FF10_ARON"
+      ]
+    },
+    {
+      "iname": "VLC_STAFF",
+      "mainjobs": [
+        "JB_LW_WHM_FIRE",
+        "JB_LW_BLM_FIRE",
+        "JB_LW_GRM_FIRE",
+        "JB_LW_TIM_FIRE",
+        "JB_FF14_YSTL",
+        "JB_LW_MST_FIRE",
+        "JB_LW_SAKR",
+        "JB_FF10_YUNA"
+      ]
+    },
+    {
+      "iname": "VLC_SWORD",
+      "mainjobs": [
+        "JB_LW_WAR_FIRE",
+        "JB_LW_KNT_FIRE",
+        "JB_LW_PLD_FIRE",
+        "JB_LW_MGK_FIRE",
+        "JB_LW_RDM_FIRE",
+        "JB_LW_GLMS",
+        "JB_LW_WAR",
+        "JB_FFT_RAMZ",
+        "JB_FFT_ORND",
+        "JB_FFT_GFGR",
+        "JB_FF1_WROL",
+        "JB_FFT_AGRA",
+        "JB_FFT_DELT",
+        "JB_LW_MKN_FIRE",
+        "JB_FF4_CECL",
+        "JB_FF14_TNCR",
+        "JB_LW_DEAN",
+        "JB_FF10_TIDU"
+      ]
+    },
+    {
+      "iname": "VLC_DRND",
+      "units": [
+        "UN_LW_P_DRND"
+      ]
+    },
+    {
+      "iname": "VLC_LANCE",
+      "mainjobs": [
+        "JB_LW_LAN_FIRE",
+        "JB_LW_DRG_FIRE",
+        "JB_LW_GRSR",
+        "JB_FF4_KAIN"
+      ]
+    },
+    {
+      "iname": "VLC_OOOO_SIMR",
+      "units": [
+        "UN_LW_P_OOOO",
+        "UN_LW_P_SIMR"
+      ]
+    },
+    {
+      "iname": "VLC_ZZAN_MONT_ELSR",
+      "units": [
+        "UN_LW_P_MONT",
+        "UN_LW_P_ZZAN",
+        "UN_LW_P_ELSR"
+      ]
+    },
+    {
+      "iname": "VLC_JSWORD",
+      "mainjobs": [
+        "JB_LW_SAM_FIRE",
+        "JB_LW_LSWL"
+      ]
+    },
+    {
+      "iname": "VLC_GL_LAN_WATER_SOIL",
+      "mainjobs": [
+        "JB_LW_GRSR",
+        "JB_LW_LAN_FIRE",
+        "JB_LW_DRG_FIRE"
+      ],
+      "elem": [
+        6,
+        4
+      ]
+    },
+    {
+      "iname": "VLC_GL_GRSR_VKTR",
+      "units": [
+        "UN_LW_P_GRSR",
+        "UN_LW_P_VKTR"
+      ]
+    },
+    {
+      "iname": "VLC_GL_MONT",
+      "units": [
+        "UN_LW_P_MONT"
+      ]
+    },
+    {
+      "iname": "VLC_GL_HALL_ORDR",
+      "units": [
+        "UN_LW_P_ORDR"
+      ]
+    },
+    {
+      "iname": "VLC_GL_SWORD_THU_WIN",
+      "mainjobs": [
+        "JB_LW_WAR_FIRE",
+        "JB_LW_KNT_FIRE",
+        "JB_LW_PLD_FIRE",
+        "JB_LW_MGK_FIRE",
+        "JB_LW_RDM_FIRE",
+        "JB_LW_MKN_FIRE",
+        "JB_FFT_ORND"
+      ],
+      "elem": [
+        5,
+        3
+      ]
+    },
+    {
+      "iname": "VLC_GL_KAIN",
+      "units": [
+        "UN_FF4_P_KAIN"
+      ]
+    },
+    {
+      "iname": "VLC_GL_CECI_ROSA",
+      "units": [
+        "UN_FF4_P_CECL",
+        "UN_FF4_P_ROSA"
+      ]
+    },
+    {
+      "iname": "VLC_GL_RAMD_MACR_01",
+      "units": [
+        "UN_LW_P_RAMD_01",
+        "UN_LW_P_MACR_01"
+      ]
+    },
+    {
+      "iname": "VLC_GL_LUCA",
+      "units": [
+        "UN_LW_P_LUCA"
+      ]
+    },
+    {
+      "iname": "VLC_GL_GRSR",
+      "units": [
+        "UN_LW_P_GRSR"
+      ]
+    },
+    {
+      "iname": "VLC_GL_KADI",
+      "units": [
+        "UN_LW_P_KADI"
+      ]
+    },
+    {
+      "iname": "VLC_GL_SCAL",
+      "units": [
+        "UN_LW_P_SCAL"
+      ]
+    },
+    {
+      "iname": "VLC_GL_RRIR",
+      "units": [
+        "UN_LW_P_RRIR"
+      ]
+    },
+    {
+      "iname": "VLC_GL_HLNA",
+      "units": [
+        "UN_LW_P_HLNA"
+      ]
+    },
+    {
+      "iname": "VLC_GL_RAMD",
+      "units": [
+        "UN_LW_P_RAMD"
+      ]
+    },
+    {
+      "iname": "VLC_GL_WIND_MACE",
+      "mainjobs": [
+        "JB_LW_CLR_FIRE",
+        "JB_LW_CAL_FIRE"
+      ],
+      "elem": [
+        3
+      ]
+    },
+    {
+      "iname": "VLC_GL_SWORD_WAT_SHI",
+      "mainjobs": [
+        "JB_LW_WAR_FIRE",
+        "JB_LW_KNT_FIRE",
+        "JB_LW_PLD_FIRE",
+        "JB_LW_MGK_FIRE",
+        "JB_LW_RDM_FIRE",
+        "JB_LW_GLMS",
+        "JB_LW_WAR",
+        "JB_FFT_RAMZ",
+        "JB_FFT_ORND",
+        "JB_FFT_GFGR",
+        "JB_FF1_WROL",
+        "JB_FFT_AGRA",
+        "JB_FFT_DELT",
+        "JB_LW_MKN_FIRE",
+        "JB_FF4_CECL",
+        "JB_FF14_TNCR",
+        "JB_LW_DEAN",
+        "JB_FF10_TIDU"
+      ],
+      "elem": [
+        6,
+        7
+      ]
+    },
+    {
+      "iname": "VLC_GL_FF10_TIDU",
+      "units": [
+        "UN_FF10_P_TIDU"
+      ]
+    },
+    {
+      "iname": "VLC_GL_ROBB",
+      "units": [
+        "UN_LW_P_ROBB"
+      ]
+    },
+    {
+      "iname": "VLC_DEBUG_01",
+      "mainjobs": [
+        "JB_LW_WAR_FIRE",
+        "JB_LW_PLD_FIRE"
+      ]
+    }
+  ]
+}

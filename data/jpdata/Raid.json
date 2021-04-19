@@ -1,0 +1,405 @@
+{
+  "items": [
+    {
+      "iname": "RAID_ID_01",
+      "start": "2019/07/18 15:00:00",
+      "end": "2019/07/20 15:00:00",
+      "rwd_end": "2019/07/21 5:00:00",
+      "rnk_end": "2019/07/21 23:59:59",
+      "rnk_rwd": "R_0001_RANK",
+      "home_tex": "LAPS_RD_0001",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_02_01",
+          "num": 80
+        },
+        {
+          "boss_id": "RAID_BOSS_02_02",
+          "num": 20
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_02",
+      "start": "2019/07/25 15:00:00",
+      "end": "2019/07/27 15:00:00",
+      "rwd_end": "2019/07/28 5:00:00",
+      "rnk_end": "2019/07/29 5:00:00",
+      "rnk_rwd": "R_0001_RANK",
+      "home_tex": "LAPS_RD_0001",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_02_01",
+          "num": 80
+        },
+        {
+          "boss_id": "RAID_BOSS_02_02",
+          "num": 20
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_03",
+      "start": "2018/08/04 15:00:00",
+      "end": "2018/08/06 15:00:00",
+      "rwd_end": "2018/08/08 23:59:59",
+      "rnk_end": "2018/08/09 5:00:00",
+      "rnk_rwd": "R_0001_RANK",
+      "home_tex": "LAPS_RD_0001",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_02_01",
+          "num": 80
+        },
+        {
+          "boss_id": "RAID_BOSS_02_02",
+          "num": 20
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_04",
+      "start": "2019/10/16 12:00:00",
+      "end": "2019/11/08 12:00:00",
+      "rwd_end": "2019/11/08 23:59:59",
+      "rnk_end": "2019/11/09 5:00:00",
+      "rnk_rwd": "R_FF14_RANK",
+      "home_tex": "LAPS_RD_FF14_01",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_03",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_05",
+      "start": "2019/11/25 14:15:00",
+      "end": "2019/11/25 15:15:00",
+      "rwd_end": "2019/11/25 16:15:00",
+      "rnk_end": "2019/11/25 17:15:00",
+      "rnk_rwd": "R_FF14_RANK",
+      "home_tex": "LAPS_RD_FF14_01",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_03",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_06",
+      "start": "2020/02/07 10:10:00",
+      "end": "2020/02/14 14:59:59",
+      "rwd_end": "2020/02/14 15:00:00",
+      "agg_end": "2020/02/15 14:59:59",
+      "rnk_end": "2020/02/21 14:59:59",
+      "rnk_rwd": "R_RAID_06",
+      "home_tex": "LAPS_RD_EV_01",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_06",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_07",
+      "start": "2020/03/09 15:00:00",
+      "end": "2020/03/17 9:59:59",
+      "rwd_end": "2020/03/17 10:00:00",
+      "agg_end": "2020/03/18 9:59:59",
+      "rnk_end": "2020/03/25 14:59:59",
+      "rnk_rwd": "R_RAID_07",
+      "home_tex": "LAPS_RD_EV_02",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_07",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_08",
+      "start": "2020/04/01",
+      "end": "2020/04/08 14:59:59",
+      "rwd_end": "2020/04/08 15:00:00",
+      "agg_end": "2020/04/08 20:59:59",
+      "rnk_end": "2020/04/14 23:59:59",
+      "rnk_rwd": "R_RAID_08",
+      "home_tex": "LAPS_RD_FF1_01",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_08",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_09",
+      "start": "2020/05/07 15:00:00",
+      "end": "2020/05/14 9:59:59",
+      "rwd_end": "2020/05/14 10:00:00",
+      "agg_end": "2020/05/14 20:59:59",
+      "rnk_end": "2020/05/21 14:59:59",
+      "rnk_rwd": "R_RAID_09",
+      "home_tex": "LAPS_RD_EV_03",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_09",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_09_1",
+          "num": 3
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_10",
+      "start": "2020/06/10 15:00:00",
+      "end": "2020/06/17 9:59:59",
+      "rwd_end": "2020/06/17 10:00:00",
+      "agg_end": "2020/06/17 20:59:59",
+      "rnk_end": "2020/06/24 14:59:59",
+      "rnk_rwd": "R_RAID_10",
+      "home_tex": "LAPS_RD_EV_04",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_10",
+          "num": 95
+        },
+        {
+          "boss_id": "RAID_BOSS_10_1",
+          "num": 5
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_11",
+      "start": "2020/07/08 15:00:00",
+      "end": "2020/07/15 9:59:59",
+      "rwd_end": "2020/07/15 10:00:00",
+      "agg_end": "2020/07/15 20:59:59",
+      "rnk_end": "2020/07/22 14:59:59",
+      "rnk_rwd": "R_RAID_11",
+      "home_tex": "LAPS_RD_FF14_01",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_11",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_12",
+      "start": "2020/08/10 15:00:00",
+      "end": "2020/08/17 9:59:59",
+      "rwd_end": "2020/08/17 10:00:00",
+      "agg_end": "2020/08/19 20:59:59",
+      "rnk_end": "2020/08/24 14:59:59",
+      "rnk_rwd": "R_RAID_12",
+      "home_tex": "LAPS_RD_EV_05",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_12",
+          "num": 95
+        },
+        {
+          "boss_id": "RAID_BOSS_12_1",
+          "num": 5
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_13",
+      "start": "2020/09/09 15:00:00",
+      "end": "2020/09/16 9:59:59",
+      "rwd_end": "2020/09/16 10:00:00",
+      "agg_end": "2020/09/16 20:59:59",
+      "rnk_end": "2020/09/23 14:59:59",
+      "rnk_rwd": "R_RAID_13",
+      "home_tex": "LAPS_RD_EV_06",
+      "gauge_on": 0,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_13",
+          "num": 95
+        },
+        {
+          "boss_id": "RAID_BOSS_13_1",
+          "num": 5
+        }
+      ]
+    },
+    {
+      "iname": "RAID_ID_14",
+      "start": "2020/10/07 15:00:00",
+      "end": "2020/10/14 9:59:59",
+      "rwd_end": "2020/10/14 10:00:00",
+      "agg_end": "2020/10/14 20:59:59",
+      "rnk_end": "2020/10/21 14:59:59",
+      "rnk_rwd": "R_RAID_14",
+      "home_tex": "LAPS_RD_EV_07",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_14",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_14_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_01"
+    },
+    {
+      "iname": "RAID_ID_15",
+      "start": "2020/11/06 15:00:00",
+      "end": "2020/11/15 23:59:59",
+      "rwd_end": "2020/11/16",
+      "agg_end": "2020/11/16 4:59:59",
+      "rnk_end": "2020/11/24 14:59:59",
+      "rnk_rwd": "R_RAID_15",
+      "home_tex": "LAPS_RD_EV_08_1",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_15",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_15_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_02"
+    },
+    {
+      "iname": "RAID_ID_16",
+      "start": "2020/12/10 12:00:00",
+      "end": "2020/12/16 9:59:59",
+      "rwd_end": "2020/12/16 10:00:00",
+      "agg_end": "2020/12/16 20:59:59",
+      "rnk_end": "2020/12/23 14:59:59",
+      "rnk_rwd": "R_RAID_16",
+      "home_tex": "LAPS_RD_EV_09",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_16",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_16_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_03"
+    },
+    {
+      "iname": "RAID_ID_17",
+      "start": "2021/01/08 15:00:00",
+      "end": "2021/01/15 9:59:59",
+      "rwd_end": "2021/01/15 10:00:00",
+      "agg_end": "2021/01/15 20:59:59",
+      "rnk_end": "2021/01/22 14:59:59",
+      "rnk_rwd": "R_RAID_17",
+      "home_tex": "LAPS_RD_EV_10",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_17",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_17_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_04"
+    },
+    {
+      "iname": "RAID_ID_18",
+      "start": "2021/02/08 15:00:00",
+      "end": "2021/02/15 9:59:59",
+      "rwd_end": "2021/02/15 10:00:00",
+      "agg_end": "2021/02/15 20:59:59",
+      "rnk_end": "2021/02/22 14:59:59",
+      "rnk_rwd": "R_RAID_18",
+      "home_tex": "LAPS_RD_EV_11",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_18",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_18_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_05",
+      "bonus_visioncard": "BONUS_01"
+    },
+    {
+      "iname": "RAID_ID_19",
+      "start": "2021/03/09 15:00:00",
+      "end": "2021/03/17 9:59:59",
+      "rwd_end": "2021/03/17 10:00:00",
+      "agg_end": "2021/03/17 20:59:59",
+      "rnk_end": "2021/03/24 14:59:59",
+      "rnk_rwd": "R_RAID_19",
+      "home_tex": "LAPS_RD_EV_12",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_19",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_19_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_06",
+      "bonus_visioncard": "BONUS_02"
+    },
+    {
+      "iname": "RAID_ID_20",
+      "start": "2021/04/08 15:00:00",
+      "end": "2021/04/14 9:59:59",
+      "rwd_end": "2021/04/14 10:00:00",
+      "agg_end": "2021/04/14 20:59:59",
+      "rnk_end": "2021/04/21 11:59:59",
+      "rnk_rwd": "R_RAID_20",
+      "home_tex": "LAPS_RD_EV_13",
+      "gauge_on": 1,
+      "prob": [
+        {
+          "boss_id": "RAID_BOSS_20",
+          "num": 97
+        },
+        {
+          "boss_id": "RAID_BOSS_20_1",
+          "num": 3
+        }
+      ],
+      "bonus_unit": "BONUS_07",
+      "bonus_visioncard": "BONUS_03"
+    }
+  ]
+}

@@ -1,0 +1,975 @@
+{
+  "items": [
+    {
+      "iname": "RAID_END_RWD_01",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "RAID_RWD_02"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 2000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 20000,
+          "rwd_id": "RAID_RWD_03"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "RAID_RWD_03"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "RAID_RWD_04"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "RAID_RWD_05"
+        }
+      ]
+    },
+    {
+      "iname": "RAID_END_RWD_02",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "RAID_RWD_02"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 2000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "RAID_RWD_01"
+        },
+        {
+          "rank": 20000,
+          "rwd_id": "RAID_RWD_03"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "RAID_RWD_03"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "RAID_RWD_04"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "RAID_RWD_05"
+        }
+      ]
+    },
+    {
+      "iname": "R_0001_RANK",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_0001_RANK_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_0001_RANK_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_0001_RANK_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_0001_RANK_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_0001_RANK_5"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_0001_RANK_6"
+        }
+      ]
+    },
+    {
+      "iname": "R_FF14_RANK",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_FF14_RANK1"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_FF14_RANK2"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_FF14_RANK3"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_FF14_RANK4"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_FF14_RANK5"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_FF14_RANK6"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_FF14_RANK7"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_06",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_06_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_06_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_06_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_06_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_06_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_06_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_06_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_06_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_06_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_06_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_06_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_06_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_07",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_07_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_07_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_07_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_07_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_07_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_07_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_07_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_07_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_07_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_07_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_07_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_07_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_08",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_08_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_08_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_08_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_08_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_08_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_08_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_08_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_08_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_08_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_08_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_08_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_08_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_09",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_09_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_09_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_09_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_09_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_09_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_09_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_09_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_09_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_09_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_09_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_09_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_09_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_10",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_10_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_10_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_10_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_10_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_10_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_10_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_10_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_10_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_10_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_10_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_10_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_10_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_11",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_11_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_11_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_11_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_11_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_11_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_11_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_11_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_11_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_11_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_11_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_11_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_11_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_12",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_12_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_12_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_12_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_12_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_12_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_12_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_12_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_12_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_12_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_12_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_12_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_12_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_13",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_13_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_13_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_13_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_13_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_13_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_13_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_13_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_13_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_13_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_13_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_13_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_13_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_14",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_14_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_14_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_14_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_14_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_14_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_14_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_14_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_14_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_14_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_14_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_14_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_14_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_15",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_15_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_15_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_15_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_15_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_15_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_15_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_15_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_15_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_15_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_15_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_15_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_15_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_16",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_16_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_16_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_16_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_16_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_16_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_16_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_16_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_16_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_16_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_16_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_16_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_16_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_17",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_17_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_17_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_17_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_17_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_17_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_17_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_17_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_17_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_17_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_17_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_17_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_17_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_18",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_18_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_18_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_18_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_18_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_18_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_18_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_18_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_18_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_18_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_18_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_18_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_18_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_19",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_19_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_19_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_19_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_19_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_19_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_19_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_19_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_19_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_19_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_19_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_19_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_19_12"
+        }
+      ]
+    },
+    {
+      "iname": "R_RAID_20",
+      "reward": [
+        {
+          "rank": 1,
+          "rwd_id": "R_RANK_20_1"
+        },
+        {
+          "rank": 10,
+          "rwd_id": "R_RANK_20_2"
+        },
+        {
+          "rank": 50,
+          "rwd_id": "R_RANK_20_3"
+        },
+        {
+          "rank": 100,
+          "rwd_id": "R_RANK_20_4"
+        },
+        {
+          "rank": 500,
+          "rwd_id": "R_RANK_20_5"
+        },
+        {
+          "rank": 1000,
+          "rwd_id": "R_RANK_20_6"
+        },
+        {
+          "rank": 5000,
+          "rwd_id": "R_RANK_20_7"
+        },
+        {
+          "rank": 10000,
+          "rwd_id": "R_RANK_20_8"
+        },
+        {
+          "rank": 30000,
+          "rwd_id": "R_RANK_20_9"
+        },
+        {
+          "rank": 50000,
+          "rwd_id": "R_RANK_20_10"
+        },
+        {
+          "rank": 100000,
+          "rwd_id": "R_RANK_20_11"
+        },
+        {
+          "rank": -1,
+          "rwd_id": "R_RANK_20_12"
+        }
+      ]
+    }
+  ]
+}

@@ -15476,6 +15476,351 @@
       }
     ]
   },
+  "VC_LW_MONT": {
+    "dataId": "VC_LW_MONT",
+    "names": {
+      "en": "孤独な獅子"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 40,
+        "max": 310
+      },
+      "TP": {},
+      "AP": {
+        "min": 6,
+        "max": 20
+      },
+      "ATK": {
+        "min": 39,
+        "max": 152
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsmont",
+    "slug": "kodoku-na-shishi",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EARTH_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 7,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EARTH_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EARTH_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 35,
+              "maxValue": 35,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": -5,
+              "maxValue": -5,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            },
+            {
+              "type": "DEF",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "condition": "EARTH_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_MONT_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_MONT_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "earth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -25473,6 +25818,291 @@
             "type": "elem",
             "items": [
               "water"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_DMCM": {
+    "dataId": "VC_LW_DMCM",
+    "names": {
+      "en": "怪魔合獣　デビルキマイラ"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 296
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 27,
+        "max": 108
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsdmcm",
+    "slug": "kai-ma-gou-kemono-debiru-kimaira",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 4,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_RES",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "ATTACK_RES",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_GSAW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_GSAW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_GSAW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_GSAW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_RATE",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 3,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "ATK",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_P"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_DMCM_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_DMCM_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
             ]
           }
         ]
