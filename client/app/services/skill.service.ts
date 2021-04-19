@@ -220,9 +220,9 @@ export class SkillService {
             valueForLevel = Math.floor(minValue + ((maxValue - minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
           }
 
-          value = getValueOnly ? valueForLevel : ' (' + valueForLevel + calc + explaination + ')';
+          value = getValueOnly ? valueForLevel.toString() : ' (' + valueForLevel + calc + explaination + ')';
         } else {
-          value = getValueOnly ? minValue : ' (' + minValue + calc + explaination + ')';
+          value = getValueOnly ? minValue.toString() : ' (' + minValue + calc + explaination + ')';
         }
       }
     }
@@ -1257,6 +1257,10 @@ export class SkillService {
 
     if (skill.maths) {
       formattedDamage.others = this.formatMaths(skill, formattedDamage.others, 'damage');
+    }
+
+    if (skill.time) {
+      skill.time.realValue = this.getValue(skill, skill.time, true, '', 'fixe', true);
     }
 
     return formattedDamage;
