@@ -3603,6 +3603,10 @@ export class JsonService {
                   this[this.version].skills[skillId].slot = 3;
                 }
 
+                if (boss.dataId === 'UN_LW_E_CSLI_02') {
+                  console.log(this[this.version].skills[skillId]);
+                }
+
                 boss.skills[skillId] = {
                   effects: [],
                   dataId: skillId,
