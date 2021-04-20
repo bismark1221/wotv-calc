@@ -26,6 +26,7 @@ export class CheckHashService {
     'playerTitles',
     'quests',
     'raids',
+    'skills',
     'units'
   ];
 
@@ -84,24 +85,26 @@ export class CheckHashService {
   private async checkLastDownloadVersion(response = null) {
     const savedVersion = this.localStorageService.get('dataVersion') ? this.localStorageService.get('dataVersion') : null;
 
-    for (const version of this.versions) {
-      for (const dataType of this.dataTypes) {
-        if (!savedVersion
-          || !savedVersion[version]
-          || !savedVersion[version][dataType]
-          || savedVersion[version][dataType] !== response[version][dataType]
-        ) {
-          try {
-            const cache = await caches.open('wotv-calc');
-            await cache.delete(this.getLocalStorage(version, dataType));
-          } catch (error) {
-            // Nothing to do...
+    if (response) {
+      for (const version of this.versions) {
+        for (const dataType of this.dataTypes) {
+          if (!savedVersion
+            || !savedVersion[version]
+            || !savedVersion[version][dataType]
+            || savedVersion[version][dataType] !== response[version][dataType]
+          ) {
+            try {
+              const cache = await caches.open('wotv-calc');
+              await cache.delete(this.getLocalStorage(version, dataType));
+            } catch (error) {
+              // Nothing to do...
+            }
           }
         }
       }
-    }
 
-    this.localStorageService.set('dataVersion', response);
+      this.localStorageService.set('dataVersion', response);
+    }
   }
 
   private getLocalStorage(version, type) {

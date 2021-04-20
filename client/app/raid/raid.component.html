@@ -232,8 +232,10 @@
                   <span *ngIf="boss.attack.based"><img title="{{ boss.attack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.attack.based + '.png'}}" /></span>
                 </td>
                 <td class="skillEffectTd">
-                  <div *ngFor="let effect of boss.attack.effectsHtml.before">
-                    {{ effect }}
+                  <div *ngIf="boss.attack.effectsHtml && boss.attack.effectsHtml.before">
+                    <div *ngFor="let effect of boss.attack.effectsHtml.before">
+                      {{ effect }}
+                    </div>
                   </div>
 
                   <div *ngIf="boss.attack.damageHtml && boss.attack.damageHtml.value">
@@ -262,8 +264,10 @@
                     <div [innerHTML]="boss.attack.damageHtml.others | safeHtml"></div>
                   </div>
 
-                  <div *ngFor="let effect of boss.attack.effectsHtml.after">
-                    {{ effect }}
+                  <div *ngIf="boss.attack.effectsHtml && boss.attack.effectsHtml.after">
+                    <div *ngFor="let effect of boss.attack.effectsHtml.after">
+                      {{ effect }}
+                    </div>
                   </div>
                 </td>
                 <td>
@@ -295,75 +299,75 @@
                 <th class="sub skillHitTd">Hits</th>
                 <th class="sub skillCostTd">Cost</th>
               </tr>
-              <tr *ngFor="let skillId of boss.skillIds">
-                <td>{{ boss.skills[skillId].minLevel }}</td>
-                <td>{{ boss.skills[skillId].maxLevel }}</td>
+              <tr *ngFor="let skill of boss.formattedSkills">
+                <td>{{ boss.skills[skill.dataId].minLevel }}</td>
+                <td>{{ boss.skills[skill.dataId].maxLevel }}</td>
                 <td>
 
-                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ boss.skills[skillId].type }}.png" />
+                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
 
-                  <span *ngIf="boss.skills[skillId].based"><img title="{{ boss.skills[skillId].based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.skills[skillId].based + '.png'}}" /></span>
-                  <div *ngIf="boss.skills[skillId].time && boss.skills[skillId].time.minValue">
+                  <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                  <div *ngIf="skill.time && skill.time.minValue">
                     <ng-template #tip_time>
                       <div>
-                        Min time: {{ boss.skills[skillId].time.minValue }}<br />
-                        Max time: {{ boss.skills[skillId].time.maxValue }}
+                        Min time: {{ skill.time.minValue }}<br />
+                        Max time: {{ skill.time.maxValue }}
                       </div>
                     </ng-template>
                     <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
                   </div>
                 </td>
-                <td>{{ boss.skills[skillId].name }}</td>
+                <td>{{ skill.name }}</td>
                 <td class="skillEffectTd">
-                  <div>{{ boss.skills[skillId].counterHtml }}</div>
+                  <div>{{ skill.counterHtml }}</div>
 
-                  <div *ngFor="let effect of boss.skills[skillId].effectsHtml.before">
+                  <div *ngFor="let effect of skill.effectsHtml.before">
                     {{ effect }}
                   </div>
 
-                  <div *ngIf="boss.skills[skillId].damageHtml && boss.skills[skillId].damageHtml.value">
+                  <div *ngIf="skill.damageHtml && skill.damageHtml.value">
                     <ng-template #tip_damage>
-                      <div *ngIf="boss.skills[skillId].based === 'physic'">
-                        {{ (100 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] : 0)) + '% ATK' }}
+                      <div *ngIf="skill.based === 'physic'">
+                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                       </div>
-                      <div *ngIf="boss.skills[skillId].based === 'magic'">
-                        {{ (100 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] : 0)) + '% MAG' }}
+                      <div *ngIf="skill.based === 'magic'">
+                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
                       </div>
-                      <div *ngIf="boss.skills[skillId].based === 'hybrid'">
-                        {{ (100 + (boss.skills[skillId].damage.formula.type === 1 && boss.skills[skillId].damage.formula[1] > 0 ? boss.skills[skillId].damage.formula[1] : 0)) + '% ATK' }}
+                      <div *ngIf="skill.based === 'hybrid'">
+                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
                       </div>
 
-                      <div *ngIf="boss.skills[skillId].damage.formula.type === 0 && boss.skills[skillId].damage.formula[1] > 0">
-                        {{ boss.skills[skillId].damage.formula[1] }}% DEX
+                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                        {{ skill.damage.formula[1] }}% DEX
                       </div>
-                      <div *ngIf="boss.skills[skillId].damage.formula.type === 0 && boss.skills[skillId].damage.formula[2] > 0">
-                        {{ boss.skills[skillId].damage.formula[2] }}% AGI
+                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                        {{ skill.damage.formula[2] }}% AGI
                       </div>
-                      <div *ngIf="boss.skills[skillId].damage.formula.type === 0 && boss.skills[skillId].damage.formula[3] > 0">
-                        {{ boss.skills[skillId].damage.formula[3] }}% LUCK
+                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                        {{ skill.damage.formula[3] }}% LUCK
                       </div>
                     </ng-template>
-                    <img [ngbTooltip]="tip_damage" title="{{ boss.skills[skillId].damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ boss.skills[skillId].damageHtml.type.image }}.png" />&nbsp; {{ boss.skills[skillId].damageHtml.effType }} {{ boss.skills[skillId].damageHtml.pool }} {{ boss.skills[skillId].damageHtml.value }}
-                    <div [innerHTML]="boss.skills[skillId].damageHtml.others | safeHtml"></div>
+                    <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                    <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
                   </div>
 
-                  <div *ngFor="let effect of boss.skills[skillId].effectsHtml.after">
+                  <div *ngFor="let effect of skill.effectsHtml.after">
                     {{ effect }}
                   </div>
                 </td>
                 <td>
-                  <div *ngIf="boss.skills[skillId].type != 'support'">
+                  <div *ngIf="skill.type != 'support'">
                     <ng-template #tip_table>
-                      <div [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
+                      <div [innerHTML]="skill.skillTableHtml"></div>
                     </ng-template>
                     <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                      <div class="divSkillTableHtml" [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
+                      <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                     </div>
                   </div>
                 </td>
-                <td>{{ boss.skills[skillId].count }}</td>
-                <td><span *ngIf="boss.skills[skillId].combo">{{ boss.skills[skillId].combo.num }}</span></td>
-                <td><span *ngIf="boss.skills[skillId].cost">{{ boss.skills[skillId].cost.value }} {{ boss.skills[skillId].cost.type }}</span></td>
+                <td>{{ skill.count }}</td>
+                <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+                <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
               </tr>
             </tbody>
           </table>

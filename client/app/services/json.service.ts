@@ -713,6 +713,22 @@ export class JsonService {
     'ex_buff'
   ];
 
+  skillTypes = {
+    0: 'basic_attack',
+    1 : 'unit_skill',
+    2 : 'unit_counter',
+    3 : 'unit_passive',
+    4 : 'equipment_skill',
+    5 : 'equipment_counter',
+    6 : 'equipment_passive',
+    7 : 'card_skill',
+    8 : 'card_counter',
+    9 : 'card_passive',
+    10 : 'leader', // still not used ?
+    11 : 'item',
+    12 : 'status' // work like a passive
+  };
+
   itemType = {
     0: 'usable_item',
     1: 'unit_shard',
@@ -1777,7 +1793,8 @@ export class JsonService {
           playerTitles: this.gl.wotvPlayerTitles,
           guildTitles: this.gl.wotvGuildTitles,
           dropRates: this.gl.wotvQuests,
-          otherUnits: this.gl.wotvOtherUnits
+          otherUnits: this.gl.wotvOtherUnits,
+          skills: this.gl.wotvSkills
         },
         jp: {
           units: this.jp.wotvUnits,
@@ -1791,7 +1808,8 @@ export class JsonService {
           playerTitles: this.jp.wotvPlayerTitles,
           guildTitles: this.jp.wotvGuildTitles,
           dropRates: this.jp.wotvQuests,
-          otherUnits: this.jp.wotvOtherUnits
+          otherUnits: this.jp.wotvOtherUnits,
+          skills: this.jp.wotvSkills
         },
         translate: {
           jpRomaji: this.jpRomaji
@@ -2325,7 +2343,7 @@ export class JsonService {
 
 
       if (!this.slots[rawSkill.slot]) {
-        // console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
+        console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
       }
 
       const skill = {
@@ -3603,19 +3621,15 @@ export class JsonService {
                   this[this.version].skills[skillId].slot = 3;
                 }
 
-                if (boss.dataId === 'UN_LW_E_CSLI_02') {
-                  console.log(this[this.version].skills[skillId]);
-                }
-
                 boss.skills[skillId] = {
-                  effects: [],
                   dataId: skillId,
-                  rate: skill.rate,
-                  type: this.slots[this[this.version].skills[skillId].slot]
+                  rate: skill.rate
                 };
-                this.updateSkill(boss, boss.skills[skillId], skillId);
+
                 boss.skills[skillId].minLevel = lvMin;
                 boss.skills[skillId].maxLevel = lvMax;
+
+                this.addSkill(skillId, boss);
               } else if (boss.skills[skillId].maxLevel < lvMax) {
                 boss.skills[skillId].maxLevel = lvMax;
               } else if (boss.skills[skillId].minLevel > lvMin) {

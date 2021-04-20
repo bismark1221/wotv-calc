@@ -23,6 +23,7 @@ export class JsonComponent implements OnInit {
   GLGuildTitles = {};
   GLIndex = {};
   GLDropRates = {};
+  GLSkills = {};
 
   JPunits = {};
   JPOtherUnits = {};
@@ -37,6 +38,7 @@ export class JsonComponent implements OnInit {
   JPGuildTitles = {};
   JPIndex = {};
   JPDropRates = {};
+  JPSkills = {};
 
   JPRomaji = {};
 
@@ -93,6 +95,9 @@ export class JsonComponent implements OnInit {
       // @ts-ignore
       this.GLDropRates = response.gl.dropRates;
 
+      // @ts-ignore
+      this.GLSkills = response.gl.skills;
+
 
       // @ts-ignore
       this.JPunits = response.jp.units;
@@ -129,6 +134,9 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPDropRates = response.jp.dropRates;
+
+      // @ts-ignore
+      this.JPSkills = response.jp.skills;
 
       this.loadingData = true;
     });

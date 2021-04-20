@@ -1,60 +1,60 @@
 import { TranslateService } from '@ngx-translate/core';
 
 export class Skill {
-  id = 1;
   dataId?;
   names: any = {
-    en: 'New ability'
+    en: 'New Unit'
   };
-  name = 'New ability';
-
-  type = 'chain';
-  damage = 'physic';
-  magicType?: string = null;
-
-  castTime = 0;
-  offset = 0;
-  ignore = 0;
-  base = 0;
-
-  dualable = true;
-  isLB = false;
-
-  framesList?: any[] = [0];
-  elements?: string[] = [];
-  imperils?: any[] = [];
-  boostModifiers?: any[] = [];
-  boostLB?: any[] = [];
-  hitDamage?: any[] = [];
-  range?: any = {
-    min: 0,
-    max: 20
-  };
-  breaks ? = [];
-  buffs ? = [];
-  killers ? = [];
-  imbues ? = [];
-  effectOrder ? = [];
-  lbDamage = 0;
-  jumpDamage = 0;
-  canDualSkill = true;
-  jump?;
-  delayAttack?;
-  dot?;
-  consecutive?;
-  unlockBy?;
-  cooldown?;
-  effects?;
-  damageHtml?;
-  counter;
-  counterHtml;
-  basedHtml;
+  name = 'New Unit';
+  effects = [];
+  type;
+  target;
+  cost;
+  count;
+  maxLevel;
+  range = {};
   based;
+  damage = {};
+  element;
+  elem;
+  aoe;
+  counter;
+  crt_hit;
+  hit;
+  maths;
+  combo;
+
+  // For builder
   level;
-  increaseUnitLevel;
 
-  constructFromJson(ability: Skill, translateService: TranslateService): void {
+  constructFromJson(skill: Skill, translateService: TranslateService): void {
+    this.dataId = skill.dataId;
+    this.names = skill.names;
+    this.name = skill.name;
+    this.effects = skill.effects;
+    this.type = skill.type;
+    this.target = skill.target;
+    this.cost = skill.cost;
+    this.count = skill.count;
+    this.maxLevel = skill.maxLevel;
+    this.range = skill.range;
+    this.based = skill.based;
+    this.damage = skill.damage;
+    this.element = skill.element;
+    this.elem = skill.elem;
+    this.aoe = skill.aoe;
+    this.counter = skill.counter;
+    this.crt_hit = skill.crt_hit;
+    this.hit = skill.hit;
+    this.maths = skill.maths;
+    this.combo = skill.combo;
 
+    // @TODO Remove when finish work on skills
+    Object.keys(skill).forEach(key => {
+      if (Object.keys(this).indexOf(key) === -1) {
+        console.log('NOT MANAGED KEY IN SKILL : ' + key);
+      }
+    });
   }
 
   getName(translateService: TranslateService): string {

@@ -65,7 +65,7 @@ export class RaidComponent implements OnInit {
 
   private async formatRaid() {
     if (this.raid) {
-      this.raid.bosses.forEach(boss => {
+      for (const boss of this.raid.bosses) {
         boss.name = this.nameService.getName(boss);
 
         boss.totalBuffs = {
@@ -83,10 +83,11 @@ export class RaidComponent implements OnInit {
         };
         boss.remainingBuffs = [];
 
-        boss.skillIds = Object.keys(boss.skills);
+        boss.formattedSkills = [];
 
-        boss.skillIds.forEach(skillId => {
-          const skill = boss.skills[skillId];
+        for (const skillId of Object.keys(boss.skills)) {
+          const skill = await this.skillService.getSkill(skillId);
+
           skill.name = this.nameService.getName(skill);
 
           skill.effectsHtml = this.skillService.formatEffects(boss, skill);
@@ -98,7 +99,9 @@ export class RaidComponent implements OnInit {
           }
 
           this.rangeService.formatRange(boss, skill);
-        });
+
+          boss.formattedSkills.push(skill);
+        }
 
         if (boss.attack) {
           boss.attack.basedHtml = boss.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.attack.based.toLowerCase() + '.png\' />' : '';
@@ -109,7 +112,7 @@ export class RaidComponent implements OnInit {
 
           this.rangeService.formatRange(boss, boss.attack);
         }
-      });
+      }
 
       for (const unit of this.raid.bonus.units) {
         unit.unit = await this.unitService.getUnit(unit.unitId);

@@ -4,6 +4,9 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { NameService } from './name.service';
 import { NavService } from './nav.service';
+import { DataService } from './data.service';
+
+import { Skill } from '../entities/skill';
 
 @Injectable()
 export class SkillService {
@@ -51,8 +54,38 @@ export class SkillService {
     private sanitizer: DomSanitizer,
     private translateService: TranslateService,
     private nameService: NameService,
-    private navService: NavService
+    private navService: NavService,
+    private dataService: DataService
   ) {}
+
+  private async getRaw(forcedVersion = null) {
+    return await this.dataService.loadData('skills', forcedVersion);
+  }
+
+  async getSkills(forcedVersion = null) {
+    if (this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] === null
+      || this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] === undefined
+    ) {
+      const skills: Skill[] = [];
+      const rawSkills = JSON.parse(JSON.stringify(await this.getRaw(forcedVersion)));
+
+      Object.keys(rawSkills).forEach(skillId => {
+        const skill = new Skill();
+        skill.constructFromJson(rawSkills[skillId], this.translateService);
+        skills.push(skill);
+      });
+
+      this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'] = skills;
+    }
+
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'];
+  }
+
+  async getSkill(id, forcedVersion = null) {
+    await this.getSkills(forcedVersion);
+
+    return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'].find(skill => skill.dataId === id);
+  }
 
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
