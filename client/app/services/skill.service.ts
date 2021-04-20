@@ -1114,6 +1114,13 @@ export class SkillService {
       case 'REDUCE_COUNTER_CHANCE' :
         html = 'Reduce counter chance ' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+
+      /* ONLY TESTABLE WITH OTHER UNIT */
+      case 'INCREASE_MOD' :
+        html = 'Increase modifier by ' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      /* ############################# */
+
       case 'IMMUNE_CT_CHANGE' :
         html = 'Immune to CT change';
       break;
@@ -1533,6 +1540,12 @@ export class SkillService {
         case 'deadAll' :
           return html + conditions[effect.condition] + 'dead target' + (skill.aoe ? 's' : '');
           break;
+        case 'body' :
+          return html + conditions[effect.condition] + 'monster body';
+          break;
+        case 'bodyAndTails' :
+          return html + conditions[effect.condition] + 'monster body and tails';
+          break;
         case 'panel' :
           console.log('Target panel should not be used in target condition');
           return html;
@@ -1578,6 +1591,12 @@ export class SkillService {
           break;
         case 'deadAll' :
           return html + ' for dead target' + (skill.aoe ? 's' : '');
+          break;
+        case 'body' :
+          return html + ' for monster body';
+          break;
+        case 'bodyAndTails' :
+          return html + ' for monster bodyAndTails';
           break;
         case 'panel' :
           return html;

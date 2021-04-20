@@ -418,6 +418,7 @@ export class JsonService {
     50: 'UNIT_ACTIONS',
     51: 'COUNT_DAMAGE_RECEIVED',
     53: 'UNIT_LEVEL',
+    // 56: 'DESTROYED_PARTS',
     72: 'HEIGHT',
     73: 'TARGET_LEVEL',
     99: 'MODIFY_ABSORB'
@@ -484,6 +485,8 @@ export class JsonService {
     20: 'deadAlly',
     21: 'deadEnnemy',
     22: 'deadAll',
+    30: 'body',
+    32: 'bodyAndTails',
     90: 'panel'
   };
 
@@ -2427,6 +2430,7 @@ export class JsonService {
       bbrk: null,
       reflec: null,
       timing: null,
+      crt_value: null,
 
       // not used
       atk_base: null,
@@ -2455,6 +2459,7 @@ export class JsonService {
       def_shi: null,
       range_buff: null,
       reftar: null, // can be reflect or reflect target ?
+      fdupli: null,
 
       // managed not here
       iname: null,
@@ -2601,6 +2606,16 @@ export class JsonService {
     skill.crt_hit = dataSkill.crt_hit;
     skill.pierce = dataSkill.pierce;
     skill.ctbreak = dataSkill.ctbreak; // Cancel ability activation
+
+    if (skill.crt_value) {
+      skill.effects.push({
+        type: 'INCREASE_MOD',
+        value: skill.crt_value,
+        calcType: 'fixe',
+        condition: 'ON_CRITICAL',
+        timing: 'SKILL_BEFORE'
+      });
+    }
 
     if (dataSkill.combo_num) {
       skill.combo = {
@@ -3835,56 +3850,58 @@ export class JsonService {
   }
 
   formatQuests() {
-    Object.keys(this[this.version].quests).forEach(questId => {
-      const quest = this[this.version].quests[questId];
+    Object.keys(this[this.version].quests).forEach((questId, questIndex) => {
+      // if (questIndex <= 500) {
+        const quest = this[this.version].quests[questId];
 
-      const formattedQuest = {
-        dataId: questId,
-        items: {},
-        names: {},
-        slug: '',
-        exp: quest.uexp,
-        nrg: quest.ap,
-        jp: quest.jp,
-        gils: quest.gold,
-        enemies: [],
-        chests: [],
-        allies: [],
-        objects: [],
-        switchs: [],
-        type: this.questType[quest.type],
-        missions: [],
-        grid: []
-      };
+        const formattedQuest = {
+          dataId: questId,
+          items: {},
+          names: {},
+          slug: '',
+          exp: quest.uexp,
+          nrg: quest.ap,
+          jp: quest.jp,
+          gils: quest.gold,
+          enemies: [],
+          chests: [],
+          allies: [],
+          objects: [],
+          switchs: [],
+          type: this.questType[quest.type],
+          missions: [],
+          grid: []
+        };
 
-      this.getNames(formattedQuest, 'questTitle', true, 'quest');
+        this.getNames(formattedQuest, 'questTitle', true, 'quest');
 
-      this.getCompletionReward(formattedQuest, quest.c_rewards);
-      this.getMissions(formattedQuest, quest.missions);
+        this.getCompletionReward(formattedQuest, quest.c_rewards);
+        this.getMissions(formattedQuest, quest.missions);
 
-      if (formattedQuest.type === 'story') {
-        const storyNumber = questId.split('_')[2];
-        Object.keys(formattedQuest.names).forEach(lang => {
-          formattedQuest.names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuest.names[lang];
-        });
-      }
+        if (formattedQuest.type === 'story') {
+          const storyNumber = questId.split('_')[2];
+          Object.keys(formattedQuest.names).forEach(lang => {
+            formattedQuest.names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuest.names[lang];
+          });
+        }
 
-      if (formattedQuest.type === 'multi') {
-        Object.keys(formattedQuest.names).forEach(lang => {
-          formattedQuest.names[lang] = 'Multi: ' + formattedQuest.names[lang];
-        });
-      }
+        if (formattedQuest.type === 'multi') {
+          Object.keys(formattedQuest.names).forEach(lang => {
+            formattedQuest.names[lang] = 'Multi: ' + formattedQuest.names[lang];
+          });
+        }
 
-      if (formattedQuest.type === 'character_quest') {
-        Object.keys(formattedQuest.names).forEach(lang => {
-          formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
-        });
-      }
+        if (formattedQuest.type === 'character_quest') {
+          Object.keys(formattedQuest.names).forEach(lang => {
+            formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
+          });
+        }
 
-      this.formatGrid(formattedQuest, quest.map.scn);
-      this.formatMap(formattedQuest, quest.map.set);
+        this.formatGrid(formattedQuest, quest.map.scn);
+        this.formatMap(formattedQuest, quest.map.set);
 
-      this[this.version].wotvQuests[questId] = formattedQuest;
+        this[this.version].wotvQuests[questId] = formattedQuest;
+      // }
     });
   }
 
@@ -4169,6 +4186,20 @@ export class JsonService {
 
 
       otherUnit.skills.forEach(skill => {
+
+        if (!this[this.version].skills[skill.iname].slot) {
+          if (this.skillTypes[this[this.version].skills[skill.iname].type] === 'unit_passive'
+            || this.skillTypes[this[this.version].skills[skill.iname].type] === 'equipment_passive'
+            || this.skillTypes[this[this.version].skills[skill.iname].type] === 'status') {
+            this[this.version].skills[skill.iname].slot = 3;
+          } else if (this.skillTypes[this[this.version].skills[skill.iname].type] === 'basic_attack'
+            || this.skillTypes[this[this.version].skills[skill.iname].type] === 'unit_skill') {
+            this[this.version].skills[skill.iname].slot = 1;
+          } else {
+            console.log(this.skillTypes[this[this.version].skills[skill.iname].type]);
+          }
+        }
+
         // this.addSkill(skill.iname, unit);
       });
     }
