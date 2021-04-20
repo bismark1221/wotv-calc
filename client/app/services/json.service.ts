@@ -3599,11 +3599,15 @@ export class JsonService {
               const skillId = skill.iname;
 
               if (!boss.skills[skillId]) {
+                if (!this.slots[this[this.version].skills[skillId].slot]) {
+                  this[this.version].skills[skillId].slot = 3;
+                }
+
                 boss.skills[skillId] = {
                   effects: [],
                   dataId: skillId,
                   rate: skill.rate,
-                  type: this.slots[this[this.version].skills[skillId].type === 1 ? 1 : 3]
+                  type: this.slots[this[this.version].skills[skillId].slot]
                 };
                 this.updateSkill(boss, boss.skills[skillId], skillId);
                 boss.skills[skillId].minLevel = lvMin;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClipboardService } from 'ngx-clipboard';
 
 import { JsonService } from '../services/json.service';
 import { UnitService } from '../services/unit.service';
@@ -42,9 +43,12 @@ export class JsonComponent implements OnInit {
   loadingIndexGL = 0;
   loadingIndexJP = 0;
 
+  loadingData = false;
+
   constructor(
     private jsonService: JsonService,
-    private unitService: UnitService
+    private unitService: UnitService,
+    private clipboardService: ClipboardService,
   ) {}
 
   ngOnInit(): void {
@@ -125,6 +129,8 @@ export class JsonComponent implements OnInit {
 
       // @ts-ignore
       this.JPDropRates = response.jp.dropRates;
+
+      this.loadingData = true;
     });
   }
 
@@ -152,5 +158,9 @@ export class JsonComponent implements OnInit {
 
       this['loadingIndex' + version]--;
     }
+  }
+
+  copyData(type) {
+    this.clipboardService.copyFromContent(JSON.stringify(this[type], null, 2).replace('/ /g', '&nbsp;'));
   }
 }

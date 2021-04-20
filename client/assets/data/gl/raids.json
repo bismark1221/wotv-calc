@@ -1804,12 +1804,13 @@
                 "calcType": "percent",
                 "rate": 60,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
-            "type": "support",
+            "type": "counter",
             "names": {
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
@@ -1822,6 +1823,12 @@
               "s": 0
             },
             "based": "physic",
+            "counter": {
+              "minValue": 30,
+              "maxValue": 30,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            },
             "damage": {
               "minValue": -5,
               "maxValue": 10,
@@ -3000,7 +3007,8 @@
                 "calcType": "percent",
                 "turn": 2,
                 "increaseMax": true,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "MAG",
@@ -3009,7 +3017,8 @@
                 "calcType": "percent",
                 "turn": 2,
                 "increaseMax": true,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "DEF",
@@ -3017,7 +3026,8 @@
                 "maxValue": -10,
                 "calcType": "fixe",
                 "turn": 2,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               },
               {
                 "type": "SPR",
@@ -3025,12 +3035,13 @@
                 "maxValue": -10,
                 "calcType": "fixe",
                 "turn": 2,
-                "target": "ennemySide"
+                "target": "ennemySide",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_THDG_R_01_RA",
             "rate": 100,
-            "type": "support",
+            "type": "counter",
             "names": {
               "en": "Dragon Voice",
               "fr": "Voix draconique"
@@ -3042,6 +3053,12 @@
               "s": 0,
               "l": 1,
               "h": 2
+            },
+            "counter": {
+              "minValue": 20,
+              "maxValue": 20,
+              "reactDamage": "PHYSIC",
+              "calcType": "percent"
             },
             "damage": {
               "minValue": 0,
@@ -4946,12 +4963,13 @@
                 "calcType": "percent",
                 "rate": 60,
                 "turn": 3,
-                "target": "all"
+                "target": "all",
+                "timing": "SKILL_AFTER"
               }
             ],
             "dataId": "SK_CACT_M_03",
             "rate": 100,
-            "type": "support",
+            "type": "counter",
             "names": {
               "en": "Paralyzing Needle",
               "fr": "Aiguille paralysante"
@@ -4964,6 +4982,12 @@
               "s": 0
             },
             "based": "physic",
+            "counter": {
+              "minValue": 30,
+              "maxValue": 30,
+              "reactDamage": "ALL",
+              "calcType": "percent"
+            },
             "damage": {
               "minValue": -5,
               "maxValue": 10,

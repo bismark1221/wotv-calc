@@ -300,8 +300,7 @@
                 <td>{{ boss.skills[skillId].maxLevel }}</td>
                 <td>
 
-                  <img class="skilImg" title="skill type" src="{{'assets/skill-type/skill.png'}}" *ngIf="boss.skills[skillId].damage"/>
-                  <img class="skilImg" title="skill type" src="{{'assets/skill-type/support.png'}}" *ngIf="!boss.skills[skillId].damage"/>
+                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ boss.skills[skillId].type }}.png" />
 
                   <span *ngIf="boss.skills[skillId].based"><img title="{{ boss.skills[skillId].based }}" class='atkBasedImg' src="{{'assets/atkBased/' + boss.skills[skillId].based + '.png'}}" /></span>
                   <div *ngIf="boss.skills[skillId].time && boss.skills[skillId].time.minValue">
@@ -353,7 +352,7 @@
                   </div>
                 </td>
                 <td>
-                  <div *ngIf="boss.skills[skillId].damage">
+                  <div *ngIf="boss.skills[skillId].type != 'support'">
                     <ng-template #tip_table>
                       <div [innerHTML]="boss.skills[skillId].skillTableHtml"></div>
                     </ng-template>
