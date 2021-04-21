@@ -67,7 +67,7 @@ export class HomeComponent {
         items: [
           {type: 'unit', dataId: 'UN_LW_P_RAIN'},
           {type: 'unit', dataId: 'UN_LW_P_LSWL'},
-          {type: 'esper', dataId: 'UN_LW_S_TSLP'},
+          {type: 'esper', dataId: 'UN_LW_S_FNRR'},
           {type: 'esper', dataId: 'UN_LW_S_ZUUU'},
           {type: 'card', dataId: 'VC_LW_APPLE'}
         ]
