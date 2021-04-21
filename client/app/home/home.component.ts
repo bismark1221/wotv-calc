@@ -31,7 +31,7 @@ export class HomeComponent {
           {type: 'card', dataId: 'VC_NIER_MV1'},
           {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
           {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
-          {type: 'equipment', dataId: 'AF_NIER_ACC_000'}
+          {type: 'equipment', dataId: 'AF_NIER_ACCE_000'}
         ]
       },
       {

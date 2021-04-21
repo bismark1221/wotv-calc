@@ -598,6 +598,13 @@ export class SkillService {
           html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'INSTANT_DEATH_ATK' :
+        if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
+          html = 'Increase chance to apply instant death by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' to instant death' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'EXPLOSIVE_FIST_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply explosive fist by' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -723,6 +730,9 @@ export class SkillService {
       break;
       case 'FROSTBITE_RES' :
         html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'INSTANT_DEATH_RES' :
+        html = this.getChance(effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'EXPLOSIVE_FIST_RES' :
         html = this.getChance(effect) + ' explosive fist resistance' + this.getValue(skill, effect) + this.getTurns(effect);

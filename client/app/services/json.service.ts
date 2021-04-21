@@ -277,6 +277,7 @@ export class JsonService {
     105: 'PROTECT',
     106: 'SHELL',
     110: 'FLOAT',
+    111: 'INSTANT_DEATH',
     112: 'QUICKEN',
     113: 'IGNORE_FATAL',
     114: 'PHYSIC_EVADE',
@@ -877,7 +878,8 @@ export class JsonService {
     'QUICKEN',
     'ALL_AILMENTS',
     'FROSTBITE',
-    'EXPLOSIVE_FIST'
+    'EXPLOSIVE_FIST',
+    'INSTANT_DEATH'
   ];
 
   constructor(
@@ -2462,6 +2464,7 @@ export class JsonService {
       selfsel: null,
       hp_cost_rate: null,
       def_wep: null,
+      def_weps: null,
       ischa: null,
       ct_type: null,
       ct_lock: null,
@@ -2751,6 +2754,10 @@ export class JsonService {
     }
 
     if (dataSkill.replace) {
+      if (!unit.replacedSkills) {
+        unit.replacedSkills = {};
+      }
+
       if (!unit.replacedSkills[skillId]) {
         unit.replacedSkills[skillId] = [];
       }
@@ -3001,8 +3008,6 @@ export class JsonService {
         }
       });
     }
-
-
   }
 
   private findEffect(skill, type, buffIndex) {
@@ -3864,58 +3869,57 @@ export class JsonService {
   }
 
   formatQuests() {
+    console.log(Object.keys(this[this.version].quests).length);
     Object.keys(this[this.version].quests).forEach((questId, questIndex) => {
-      // if (questIndex <= 500) {
-        const quest = this[this.version].quests[questId];
+      const quest = this[this.version].quests[questId];
 
-        const formattedQuest = {
-          dataId: questId,
-          items: {},
-          names: {},
-          slug: '',
-          exp: quest.uexp,
-          nrg: quest.ap,
-          jp: quest.jp,
-          gils: quest.gold,
-          enemies: [],
-          chests: [],
-          allies: [],
-          objects: [],
-          switchs: [],
-          type: this.questType[quest.type],
-          missions: [],
-          grid: []
-        };
+      const formattedQuest = {
+        dataId: questId,
+        items: {},
+        names: {},
+        slug: '',
+        exp: quest.uexp,
+        nrg: quest.ap,
+        jp: quest.jp,
+        gils: quest.gold,
+        enemies: [],
+        chests: [],
+        allies: [],
+        objects: [],
+        switchs: [],
+        type: this.questType[quest.type],
+        missions: [],
+        grid: []
+      };
 
-        this.getNames(formattedQuest, 'questTitle', true, 'quest');
+      this.getNames(formattedQuest, 'questTitle', true, 'quest');
 
-        this.getCompletionReward(formattedQuest, quest.c_rewards);
-        this.getMissions(formattedQuest, quest.missions);
+      this.getCompletionReward(formattedQuest, quest.c_rewards);
+      this.getMissions(formattedQuest, quest.missions);
 
-        if (formattedQuest.type === 'story') {
-          const storyNumber = questId.split('_')[2];
-          Object.keys(formattedQuest.names).forEach(lang => {
-            formattedQuest.names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuest.names[lang];
-          });
-        }
+      if (formattedQuest.type === 'story') {
+        const storyNumber = questId.split('_')[2];
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = Number(storyNumber.substring(0, 2)) + ':' + Number(storyNumber.substring(2, 4)) + ':' + Number(storyNumber.substring(4, 6)) + ':' + Number(storyNumber.substring(6, 8)) + ' ' + formattedQuest.names[lang];
+        });
+      }
 
-        if (formattedQuest.type === 'multi') {
-          Object.keys(formattedQuest.names).forEach(lang => {
-            formattedQuest.names[lang] = 'Multi: ' + formattedQuest.names[lang];
-          });
-        }
+      if (formattedQuest.type === 'multi') {
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = 'Multi: ' + formattedQuest.names[lang];
+        });
+      }
 
-        if (formattedQuest.type === 'character_quest') {
-          Object.keys(formattedQuest.names).forEach(lang => {
-            formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
-          });
-        }
+      if (formattedQuest.type === 'character_quest') {
+        Object.keys(formattedQuest.names).forEach(lang => {
+          formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
+        });
+      }
 
-        this.formatGrid(formattedQuest, quest.map.scn);
-        this.formatMap(formattedQuest, quest.map.set);
+      this.formatGrid(formattedQuest, quest.map.scn);
+      this.formatMap(formattedQuest, quest.map.set);
 
-        this[this.version].wotvQuests[questId] = formattedQuest;
-      // }
+      this[this.version].wotvQuests[questId] = formattedQuest;
     });
   }
 
@@ -4214,7 +4218,7 @@ export class JsonService {
           }
         }
 
-        // this.addSkill(skill.iname, unit);
+        this.addSkill(skill.iname, unit);
       });
     }
   }
