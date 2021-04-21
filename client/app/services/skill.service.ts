@@ -1068,7 +1068,7 @@ export class SkillService {
         html = 'Reduces the magic damage taken' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_EVADE' :
-        html = 'Boost critical evasion' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' critical evasion' + this.getValue(skill, effect, false) + this.getTurns(effect);
       break;
       case 'EVOCATION_MAGIC' :
         html = 'Boost Evocation damage' + this.getValue(skill, effect) + this.getTurns(effect);
