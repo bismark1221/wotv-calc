@@ -46,7 +46,8 @@ export class CardService {
     'VC_LW_WHITEDAY1',
     'VC_LW_APPLE',
     'VC_LW_MOGL',
-    'VC_LW_KRKN'
+    'VC_LW_KRKN',
+    'VC_FF7_MV1'
   ];
 
   private GL_limitedCards = [
@@ -71,7 +72,8 @@ export class CardService {
     'VC_LW_NEWYEAR',
     'VC_LW_OOOO',
     'VC_LW_MOGL',
-    'VC_LW_KRKN'
+    'VC_LW_KRKN',
+    'VC_FF7_MV1'
   ];
 
   constructor(

@@ -5627,52 +5627,100 @@
       "fr": "Titre attribué aux joueurs qui ont fait participer Viktora (Hiver) à 10 000 quêtes"
     }
   },
-  "LW_GL_PA_CH_FRVA_1": {
-    "dataId": "LW_GL_PA_CH_FRVA_1",
+  "LW_PA_CH_105_1": {
+    "dataId": "LW_PA_CH_105_1",
     "names": {
-      "en": "Fryevia Fan",
-      "fr": "Admirateur de Fryevia"
+      "en": "2B Fan",
+      "fr": "Admirateur de 2B"
     },
     "grade": "grey",
     "howToGet": {
-      "en": "Title given to players who have taken Fryevia on 100 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 100 quêtes"
+      "en": "Title given to players who have taken 2B on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 2B à 100 quêtes"
     }
   },
-  "LW_GL_PA_CH_FRVA_2": {
-    "dataId": "LW_GL_PA_CH_FRVA_2",
+  "LW_PA_CH_105_2": {
+    "dataId": "LW_PA_CH_105_2",
     "names": {
-      "en": "Fryevia Enthusiast",
-      "fr": "Adepte de Fryevia"
+      "en": "2B Enthusiast",
+      "fr": "Adepte de 2B"
     },
     "grade": "red",
     "howToGet": {
-      "en": "Title given to players who have taken Fryevia on 500 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 500 quêtes"
+      "en": "Title given to players who have taken 2B on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 2B à 500 quêtes"
     }
   },
-  "LW_GL_PA_CH_FRVA_3": {
-    "dataId": "LW_GL_PA_CH_FRVA_3",
+  "LW_PA_CH_105_3": {
+    "dataId": "LW_PA_CH_105_3",
     "names": {
-      "en": "Fryevia Devotee",
-      "fr": "Fanatique de Fryevia"
+      "en": "2B Devotee",
+      "fr": "Fanatique de 2B"
     },
     "grade": "blue",
     "howToGet": {
-      "en": "Title given to players who have taken Fryevia on 3,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 3 000 quêtes"
+      "en": "Title given to players who have taken 2B on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 2B à 3 000 quêtes"
     }
   },
-  "LW_GL_PA_CH_FRVA_4": {
-    "dataId": "LW_GL_PA_CH_FRVA_4",
+  "LW_PA_CH_105_4": {
+    "dataId": "LW_PA_CH_105_4",
     "names": {
-      "en": "Elegant Spellblade",
-      "fr": "La Magilame élégante"
+      "en": "Blade of Quiet Volition",
+      "fr": "La Lame de l'ambition silencieuse"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have taken 2B on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 2B à 10 000 quêtes"
+    }
+  },
+  "LW_PA_CH_106_1": {
+    "dataId": "LW_PA_CH_106_1",
+    "names": {
+      "en": "9S Fan",
+      "fr": "Admirateur de 9S"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have taken 9S on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 9S à 100 quêtes"
+    }
+  },
+  "LW_PA_CH_106_2": {
+    "dataId": "LW_PA_CH_106_2",
+    "names": {
+      "en": "9S Enthusiast",
+      "fr": "Adepte de 9S"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have taken 9S on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 9S à 500 quêtes"
+    }
+  },
+  "LW_PA_CH_106_3": {
+    "dataId": "LW_PA_CH_106_3",
+    "names": {
+      "en": "9S Devotee",
+      "fr": "Fanatique de 9S"
     },
     "grade": "blue",
     "howToGet": {
-      "en": "Title given to players who have taken Fryevia on 10,000 Quests",
-      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 10 000 quêtes"
+      "en": "Title given to players who have taken 9S on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 9S à 3 000 quêtes"
+    }
+  },
+  "LW_PA_CH_106_4": {
+    "dataId": "LW_PA_CH_106_4",
+    "names": {
+      "en": "Soul of Transient Kindness",
+      "fr": "L'Âme de la bonté éphémère"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have taken 9S on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer 9S à 10 000 quêtes"
     }
   },
   "LW_PA_CH_113_1": {
@@ -5721,6 +5769,54 @@
     "howToGet": {
       "en": "Title given to players who have taken Duane on 10,000 Quests",
       "fr": "Titre attribué aux joueurs qui ont fait participer Duane à 10 000 quêtes"
+    }
+  },
+  "LW_GL_PA_CH_FRVA_1": {
+    "dataId": "LW_GL_PA_CH_FRVA_1",
+    "names": {
+      "en": "Fryevia Fan",
+      "fr": "Admirateur de Fryevia"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have taken Fryevia on 100 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 100 quêtes"
+    }
+  },
+  "LW_GL_PA_CH_FRVA_2": {
+    "dataId": "LW_GL_PA_CH_FRVA_2",
+    "names": {
+      "en": "Fryevia Enthusiast",
+      "fr": "Adepte de Fryevia"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have taken Fryevia on 500 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 500 quêtes"
+    }
+  },
+  "LW_GL_PA_CH_FRVA_3": {
+    "dataId": "LW_GL_PA_CH_FRVA_3",
+    "names": {
+      "en": "Fryevia Devotee",
+      "fr": "Fanatique de Fryevia"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have taken Fryevia on 3,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 3 000 quêtes"
+    }
+  },
+  "LW_GL_PA_CH_FRVA_4": {
+    "dataId": "LW_GL_PA_CH_FRVA_4",
+    "names": {
+      "en": "Elegant Spellblade",
+      "fr": "La Magilame élégante"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have taken Fryevia on 10,000 Quests",
+      "fr": "Titre attribué aux joueurs qui ont fait participer Fryevia à 10 000 quêtes"
     }
   }
 }

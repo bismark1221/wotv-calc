@@ -10583,7 +10583,8 @@
               "JB_LW_RAIN",
               "JB_LW_STRN",
               "JB_LW_MSW_FIRE",
-              "JB_FF10_ARON"
+              "JB_FF10_ARON",
+              "JB_FF7_CLUD"
             ]
           }
         ]
@@ -10646,7 +10647,8 @@
               "JB_LW_RAIN",
               "JB_LW_STRN",
               "JB_LW_MSW_FIRE",
-              "JB_FF10_ARON"
+              "JB_FF10_ARON",
+              "JB_FF7_CLUD"
             ]
           }
         ]
@@ -12759,7 +12761,7 @@
   "VC_NIER_MV1": {
     "dataId": "VC_NIER_MV1",
     "names": {
-      "en": "ニーア オートマタ"
+      "en": "ニーア オートマタ - NieR:Automata"
     },
     "cost": 70,
     "rarity": "UR",
@@ -12820,7 +12822,7 @@
       "JUMP": {}
     },
     "image": "niermv1",
-    "slug": "na-otomata",
+    "slug": "nierautomata",
     "partyBuffs": [
       {
         "classic": {
@@ -15815,6 +15817,349 @@
             "type": "elem",
             "items": [
               "earth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_FF7_MV1": {
+    "dataId": "VC_FF7_MV1",
+    "names": {
+      "en": "給水塔の約束"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 40,
+        "max": 312
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 36,
+        "max": 142
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {
+        "min": 11,
+        "max": 40
+      },
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "ff07mv1",
+    "slug": "kyuusuitou-no-yakusoku",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_ATK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATTACK_RES",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "EVADE",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_FF7_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_FF7_MV1_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
             ]
           }
         ]
@@ -23956,6 +24301,87 @@
             "type": "unit",
             "items": [
               "UN_LW_P_DRND"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 5,
+              "maxValue": 20,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
+              "minValue": -50,
+              "maxValue": -150,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_P_3",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_P_3"
+          },
+          "target": "self",
+          "maxLevel": 70
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 10,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "SPIRIT_PENETRATION",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "ATTACK_ACTIVATION_TIME",
+              "minValue": -10,
+              "maxValue": -50,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_APPLE_P_3AW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_LW_APPLE_P_3AW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": null,
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_GRGS"
             ]
           }
         ]

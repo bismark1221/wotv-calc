@@ -15427,7 +15427,8 @@
             "type": "job",
             "items": [
               "JB_LW_SAM_FIRE",
-              "JB_LW_LSWL"
+              "JB_LW_LSWL",
+              "JB_NIER_N2TB"
             ]
           }
         ]
@@ -15863,6 +15864,432 @@
             "type": "elem",
             "items": [
               "dark"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_NIER_MV1": {
+    "dataId": "VC_NIER_MV1",
+    "names": {
+      "en": "NieR:Automata",
+      "fr": "NieR:Automata"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 41,
+        "max": 322
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 38,
+        "max": 150
+      },
+      "DEF": {},
+      "SPR": {
+        "min": 2,
+        "max": 4
+      },
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "niermv1",
+    "slug": "nierautomata",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS",
+            "fr": "SK_VC_NIER_MV1_GS"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_AW",
+            "fr": "SK_VC_NIER_MV1_GS_AW"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "SPR",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GSMAX",
+            "fr": "SK_VC_NIER_MV1_GSMAX"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_2",
+            "fr": "SK_VC_NIER_MV1_GS_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GS_AW_2",
+            "fr": "SK_VC_NIER_MV1_GS_AW_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 25,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "condition": "WIND_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_GSMAX_2",
+            "fr": "SK_VC_NIER_MV1_GSMAX_2"
+          },
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_P",
+            "fr": "SK_VC_NIER_MV1_P"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_PAW",
+            "fr": "SK_VC_NIER_MV1_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "WIND_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_NIER_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_VC_NIER_MV1_PMAX",
+            "fr": "SK_VC_NIER_MV1_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "wind"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 6,
+              "maxValue": 12,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 2,
+              "maxValue": 4,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_NIER_MV1_P2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_NIER_MV1_P2",
+            "fr": "SK_GL_VC_NIER_MV1_P2"
+          },
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_NIER_MV1_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_NIER_MV1_PAW",
+            "fr": "SK_GL_VC_NIER_MV1_PAW"
+          },
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_GL_VC_NIER_MV1_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {
+            "en": "SK_GL_VC_NIER_MV1_PMAX",
+            "fr": "SK_GL_VC_NIER_MV1_PMAX"
+          },
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_NIER_P_N2TB"
             ]
           }
         ]

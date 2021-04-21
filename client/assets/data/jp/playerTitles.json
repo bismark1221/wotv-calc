@@ -819,6 +819,16 @@
       "en": "Title given to guild members who became the first legend in the Guild Battle League"
     }
   },
+  "AWD_P_Clsum_1": {
+    "dataId": "AWD_P_Clsum_1",
+    "names": {
+      "en": "National Coliseum Champion SEASON 0"
+    },
+    "grade": "image",
+    "howToGet": {
+      "en": "Title given to the player who won the Lionis National Coliseum SEASON 0"
+    }
+  },
   "LW_PA_CH_001_1": {
     "dataId": "LW_PA_CH_001_1",
     "names": {
@@ -4986,7 +4996,7 @@
     },
     "grade": "grey",
     "howToGet": {
-      "en": "Title given to players who have completed 100 quests with 2B"
+      "en": "Title given to players who have taken 2B on 100 Quests"
     }
   },
   "LW_PA_CH_105_2": {
@@ -4996,7 +5006,7 @@
     },
     "grade": "red",
     "howToGet": {
-      "en": "Title given to players who have completed 500 quests with 2B"
+      "en": "Title given to players who have taken 2B on 500 Quests"
     }
   },
   "LW_PA_CH_105_3": {
@@ -5006,17 +5016,17 @@
     },
     "grade": "blue",
     "howToGet": {
-      "en": "Title given to players who have completed 3000 quests with 2B"
+      "en": "Title given to players who have taken 2B on 3,000 Quests"
     }
   },
   "LW_PA_CH_105_4": {
     "dataId": "LW_PA_CH_105_4",
     "names": {
-      "en": "Blade of Quiet Will"
+      "en": "Blade of Quiet Volition"
     },
     "grade": "pink",
     "howToGet": {
-      "en": "Title given to players who have completed 10,000 quests with 2B"
+      "en": "Title given to players who have taken 2B on 10,000 Quests"
     }
   },
   "LW_PA_CH_106_1": {
@@ -5026,7 +5036,7 @@
     },
     "grade": "grey",
     "howToGet": {
-      "en": "Title given to players who have completed 100 quests with 9S"
+      "en": "Title given to players who have taken 9S on 100 Quests"
     }
   },
   "LW_PA_CH_106_2": {
@@ -5036,7 +5046,7 @@
     },
     "grade": "red",
     "howToGet": {
-      "en": "Title given to players who have completed 500 quests with 9S"
+      "en": "Title given to players who have taken 9S on 500 Quests"
     }
   },
   "LW_PA_CH_106_3": {
@@ -5046,17 +5056,17 @@
     },
     "grade": "blue",
     "howToGet": {
-      "en": "Title given to players who have completed 3000 quests with 9S"
+      "en": "Title given to players who have taken 9S on 3,000 Quests"
     }
   },
   "LW_PA_CH_106_4": {
     "dataId": "LW_PA_CH_106_4",
     "names": {
-      "en": "Fleeting kindness and soul"
+      "en": "Soul of Transient Kindness"
     },
     "grade": "pink",
     "howToGet": {
-      "en": "Title given to players who have completed 10,000 quests with 9S"
+      "en": "Title given to players who have taken 9S on 10,000 Quests"
     }
   },
   "LW_PA_CH_107_1": {
@@ -5462,7 +5472,7 @@
   "LW_PA_CH_117_1": {
     "dataId": "LW_PA_CH_117_1",
     "names": {
-      "en": "Charlotte Guess"
+      "en": "Charlotte Fan"
     },
     "grade": "grey",
     "howToGet": {
@@ -5472,7 +5482,7 @@
   "LW_PA_CH_117_2": {
     "dataId": "LW_PA_CH_117_2",
     "names": {
-      "en": "Bond with Charlotte"
+      "en": "Charlotte Enthusiast"
     },
     "grade": "red",
     "howToGet": {
@@ -5482,7 +5492,7 @@
   "LW_PA_CH_117_3": {
     "dataId": "LW_PA_CH_117_3",
     "names": {
-      "en": "Love for Charlotte"
+      "en": "Charlotte Devotee"
     },
     "grade": "blue",
     "howToGet": {
@@ -5502,7 +5512,7 @@
   "LW_PA_CH_118_1": {
     "dataId": "LW_PA_CH_118_1",
     "names": {
-      "en": "Verlic Guess"
+      "en": "Verlic Fan"
     },
     "grade": "grey",
     "howToGet": {
@@ -5512,7 +5522,7 @@
   "LW_PA_CH_118_2": {
     "dataId": "LW_PA_CH_118_2",
     "names": {
-      "en": "Bond with Verrick"
+      "en": "Verrick Enthusiast"
     },
     "grade": "red",
     "howToGet": {
@@ -5522,7 +5532,7 @@
   "LW_PA_CH_118_3": {
     "dataId": "LW_PA_CH_118_3",
     "names": {
-      "en": "Love for Verrick"
+      "en": "Verrick Devotee"
     },
     "grade": "blue",
     "howToGet": {
@@ -5542,7 +5552,7 @@
   "LW_PA_CH_119_1": {
     "dataId": "LW_PA_CH_119_1",
     "names": {
-      "en": "Remulet Guess"
+      "en": "Remulet Fan"
     },
     "grade": "grey",
     "howToGet": {
@@ -5562,7 +5572,7 @@
   "LW_PA_CH_119_3": {
     "dataId": "LW_PA_CH_119_3",
     "names": {
-      "en": "Love for Remure"
+      "en": "Remure Devotee"
     },
     "grade": "blue",
     "howToGet": {
@@ -5577,6 +5587,126 @@
     "grade": "pink",
     "howToGet": {
       "en": "Title given to players who have completed 10,000 quests with Remure"
+    }
+  },
+  "LW_PA_CH_120_1": {
+    "dataId": "LW_PA_CH_120_1",
+    "names": {
+      "en": "Gargas Fan"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have completed 100 quests with Gargus"
+    }
+  },
+  "LW_PA_CH_120_2": {
+    "dataId": "LW_PA_CH_120_2",
+    "names": {
+      "en": "Gargus Enthusiast"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have completed 500 quests with Gargus"
+    }
+  },
+  "LW_PA_CH_120_3": {
+    "dataId": "LW_PA_CH_120_3",
+    "names": {
+      "en": "Love for Gargus"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have completed 3000 quests with Gargus"
+    }
+  },
+  "LW_PA_CH_120_4": {
+    "dataId": "LW_PA_CH_120_4",
+    "names": {
+      "en": "The evil warrior of the turbulent world"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have completed 10,000 quests with Gargus"
+    }
+  },
+  "LW_PA_CH_121_1": {
+    "dataId": "LW_PA_CH_121_1",
+    "names": {
+      "en": "Cloud Fan"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have completed 100 quests with the cloud"
+    }
+  },
+  "LW_PA_CH_121_2": {
+    "dataId": "LW_PA_CH_121_2",
+    "names": {
+      "en": "Cloud Enthusiast"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have completed 500 quests with the cloud"
+    }
+  },
+  "LW_PA_CH_121_3": {
+    "dataId": "LW_PA_CH_121_3",
+    "names": {
+      "en": "Love Cloud Devotee"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have completed 3000 quests with the cloud"
+    }
+  },
+  "LW_PA_CH_121_4": {
+    "dataId": "LW_PA_CH_121_4",
+    "names": {
+      "en": "Former Soldier Class 1st"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have completed 10,000 quests with the cloud"
+    }
+  },
+  "LW_PA_CH_122_1": {
+    "dataId": "LW_PA_CH_122_1",
+    "names": {
+      "en": "Tifa Fan"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have completed 100 quests with Tifa"
+    }
+  },
+  "LW_PA_CH_122_2": {
+    "dataId": "LW_PA_CH_122_2",
+    "names": {
+      "en": "Tifa Enthusiast"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have completed 500 quests with Tifa"
+    }
+  },
+  "LW_PA_CH_122_3": {
+    "dataId": "LW_PA_CH_122_3",
+    "names": {
+      "en": "Tifa Devotee"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have completed 3000 quests with Tifa"
+    }
+  },
+  "LW_PA_CH_122_4": {
+    "dataId": "LW_PA_CH_122_4",
+    "names": {
+      "en": "Seventh Heaven's Sign Girl"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have completed 10,000 quests with Tifa"
     }
   }
 }

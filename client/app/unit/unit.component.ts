@@ -206,6 +206,7 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.attack) {
+        this.unit.attack.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.attack);
         this.unit.attack.basedHtml = this.unit.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.attack.based.toLowerCase() + '.png\' />' : '';
 
         this.unit.attack.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.attack);
@@ -213,6 +214,8 @@ export class UnitComponent implements OnInit {
         this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
 
         this.rangeService.formatRange(this.unit, this.unit.attack);
+        this.unit.attack.upgrades = [];
+        this.unit.attack = this.addUpgrade(this.unit.attack);
       }
 
       if (this.unit.tmr) {
@@ -283,6 +286,7 @@ export class UnitComponent implements OnInit {
             let newSkill = upgrade.newSkill;
             newSkill.name = this.nameService.getName(newSkill);
 
+            newSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, newSkill);
             newSkill.effectsHtml = this.skillService.formatEffects(this.unit, newSkill);
             newSkill.damageHtml = this.skillService.formatDamage(this.unit, newSkill, newSkill.damage);
 
@@ -291,6 +295,8 @@ export class UnitComponent implements OnInit {
             }
 
             this.rangeService.formatRange(this.unit, newSkill);
+
+            newSkill.upgrades = [];
             newSkill = this.addUpgrade(newSkill);
 
             newSkill.activatedBy = activatedBy;
@@ -325,6 +331,16 @@ export class UnitComponent implements OnInit {
       if (this.unit.limit.dataId === upgradeSkillId) {
         name = this.nameService.getName(this.unit.limit);
       }
+    }
+
+    if (name === '' && this.unit.replacedSkills) {
+      Object.keys(this.unit.replacedSkills).forEach(otherUpgradeSkillId => {
+        this.unit.replacedSkills[otherUpgradeSkillId].forEach(upgrade => {
+          if (upgrade.newSkill.dataId === upgradeSkillId) {
+            name = this.nameService.getName(upgrade.newSkill);
+          }
+        });
+      });
     }
 
     return name;

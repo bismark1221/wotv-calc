@@ -3304,6 +3304,96 @@
     "type": "job_awake_orb",
     "icon": "JB_FF10_ARON"
   },
+  "IT_JB_MM_NIER_N2TB": {
+    "dataId": "IT_JB_MM_NIER_N2TB",
+    "names": {
+      "en": "YoRHa No. 2 Type B's Memory (Green)",
+      "fr": "Souvenir de YoRHa N° 2 Type B (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N2TB"
+  },
+  "IT_JB_MM_NIER_N2TB_2": {
+    "dataId": "IT_JB_MM_NIER_N2TB_2",
+    "names": {
+      "en": "YoRHa No. 2 Type B's Memory (Blue)",
+      "fr": "Souvenir de YoRHa N° 2 Type B (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N2TB"
+  },
+  "IT_JB_MM_NIER_N2TB_3": {
+    "dataId": "IT_JB_MM_NIER_N2TB_3",
+    "names": {
+      "en": "YoRHa No. 2 Type B's Memory (Purple)",
+      "fr": "Souvenir de YoRHa N° 2 Type B (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N2TB"
+  },
+  "IT_JB_MM_NIER_N2TB_4": {
+    "dataId": "IT_JB_MM_NIER_N2TB_4",
+    "names": {
+      "en": "YoRHa No. 2 Type B's Memory (Yellow)",
+      "fr": "Souvenir de YoRHa N° 2 Type B (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N2TB"
+  },
+  "IT_JB_MM_NIER_N2TB_5": {
+    "dataId": "IT_JB_MM_NIER_N2TB_5",
+    "names": {
+      "en": "YoRHa No. 2 Type B's Memory (Red)",
+      "fr": "Souvenir de YoRHa N° 2 Type B (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N2TB"
+  },
+  "IT_JB_MM_NIER_N9TS": {
+    "dataId": "IT_JB_MM_NIER_N9TS",
+    "names": {
+      "en": "YoRHa No. 9 Type S's Memory (Green)",
+      "fr": "Souvenir de YoRHa N° 9 Type S (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N9TS"
+  },
+  "IT_JB_MM_NIER_N9TS_2": {
+    "dataId": "IT_JB_MM_NIER_N9TS_2",
+    "names": {
+      "en": "YoRHa No. 9 Type S's Memory (Blue)",
+      "fr": "Souvenir de YoRHa N° 9 Type S (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N9TS"
+  },
+  "IT_JB_MM_NIER_N9TS_3": {
+    "dataId": "IT_JB_MM_NIER_N9TS_3",
+    "names": {
+      "en": "YoRHa No. 9 Type S's Memory (Purple)",
+      "fr": "Souvenir de YoRHa N° 9 Type S (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N9TS"
+  },
+  "IT_JB_MM_NIER_N9TS_4": {
+    "dataId": "IT_JB_MM_NIER_N9TS_4",
+    "names": {
+      "en": "YoRHa No. 9 Type S's Memory (Yellow)",
+      "fr": "Souvenir de YoRHa N° 9 Type S (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N9TS"
+  },
+  "IT_JB_MM_NIER_N9TS_5": {
+    "dataId": "IT_JB_MM_NIER_N9TS_5",
+    "names": {
+      "en": "YoRHa No. 9 Type S's Memory (Red)",
+      "fr": "Souvenir de YoRHa N° 9 Type S (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_NIER_N9TS"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5248,6 +5338,22 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_NIER_N2TB": {
+    "dataId": "IT_PI_NIER_N2TB",
+    "names": {
+      "en": "2B Unit Shard",
+      "fr": "Fragment d'unité de 2B"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_NIER_N9TS": {
+    "dataId": "IT_PI_NIER_N9TS",
+    "names": {
+      "en": "9S Unit Shard",
+      "fr": "Fragment d'unité de 9S"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6037,6 +6143,14 @@
     "names": {
       "en": "[FFX] UR Unit Mindsphere",
       "fr": "[FFX] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_NIER_UR": {
+    "dataId": "IT_SP_NIER_UR",
+    "names": {
+      "en": "[NieR] UR Unit Mindsphere",
+      "fr": "[NieR] Sphère spirituelle d'unité UR"
     },
     "type": "exjob_orb"
   },
@@ -8209,6 +8323,24 @@
     "type": "recipe",
     "icon": "AF_LW_CLT_015"
   },
+  "IT_AF_NIER_KAT_000": {
+    "dataId": "IT_AF_NIER_KAT_000",
+    "names": {
+      "en": "Virtuous Contract Crafting Recipe",
+      "fr": "Recette d'artisanat : Contrat vertueux"
+    },
+    "type": "recipe",
+    "icon": "AF_NIER_KAT_000"
+  },
+  "IT_AF_NIER_SPE_000": {
+    "dataId": "IT_AF_NIER_SPE_000",
+    "names": {
+      "en": "Cruel Arrogance Crafting Recipe",
+      "fr": "Recette d'artisanat : Arrogance cruelle"
+    },
+    "type": "recipe",
+    "icon": "AF_NIER_SPE_000"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -8624,6 +8756,15 @@
     "type": "medal",
     "icon": "IT_EC_MEDAL_WE2021"
   },
+  "IT_EC_MEDAL_SP2021": {
+    "dataId": "IT_EC_MEDAL_SP2021",
+    "names": {
+      "en": "Spring 2021 Medal",
+      "fr": "Médaille « Spécial printemps 2021 »"
+    },
+    "type": "medal",
+    "icon": "IT_EC_MEDAL_SP2021"
+  },
   "IT_EC_FF10_2_A": {
     "dataId": "IT_EC_FF10_2_A",
     "names": {
@@ -8675,6 +8816,22 @@
     },
     "type": "medal",
     "icon": "IT_EC_FF14_2"
+  },
+  "IT_EC_NIER_1": {
+    "dataId": "IT_EC_NIER_1",
+    "names": {
+      "en": "NieR Event Medal",
+      "fr": "Médaille d'événement NieR"
+    },
+    "type": "medal"
+  },
+  "IT_EC_NIER_2": {
+    "dataId": "IT_EC_NIER_2",
+    "names": {
+      "en": "NieR Summon Medal",
+      "fr": "Médaille d'invocation NieR"
+    },
+    "type": "medal"
   },
   "IT_US_G_FF14_01": {
     "dataId": "IT_US_G_FF14_01",
@@ -8981,6 +9138,24 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_GL_35": {
+    "dataId": "IT_US_SE_PI_GL_35",
+    "names": {
+      "en": "Select NieR Unit/Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments NieR d'unité/d'atout-vision"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_GL_36": {
+    "dataId": "IT_US_SE_PI_GL_36",
+    "names": {
+      "en": "Select NieR Unit Shard x120 Summon Ticket",
+      "fr": "Ticket sélectionneur de 120 fragments d'unité de NieR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_05_GL_13": {
     "dataId": "IT_US_SE_JB_05_GL_13",
     "names": {
@@ -9085,6 +9260,51 @@
     "names": {
       "en": "[First Anniversary Celebration Part IV] Select Spinel x70 Summon Ticket",
       "fr": "[1er anniversaire - Partie IV] Ticket sélectionneur de 70 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_05_GL_10": {
+    "dataId": "IT_US_SE_JB_05_GL_10",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Spinel x70 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 70 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_06": {
+    "dataId": "IT_US_SE_JB_04_GL_06",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Citrine x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_06": {
+    "dataId": "IT_US_SE_JB_03_GL_06",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Charoite x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_04": {
+    "dataId": "IT_US_SE_JB_02_GL_04",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Azurite x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_04": {
+    "dataId": "IT_US_SE_JB_01_GL_04",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Jadeite x15 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 15 jades"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -9746,6 +9966,15 @@
     "type": "tickets",
     "icon": "IT_US_G_1stANV_TICKET"
   },
+  "IT_US_G_PI_UR_U_02": {
+    "dataId": "IT_US_G_PI_UR_U_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Recommended UR Unit Shard x200 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket d'invocation de 200 fragments d'unité UR recommandés"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PI_UR_U_01"
+  },
   "IT_US_GL_SE_PI_COM_1": {
     "dataId": "IT_US_GL_SE_PI_COM_1",
     "names": {
@@ -10354,6 +10583,51 @@
     "names": {
       "en": "[First Anniversary Celebration Part II] Select Job Memory (Green) x1 Summon Ticket",
       "fr": "[1er anniversaire - Partie II] Ticket sélectionneur de 1 souvenir de job (Vert)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_05_GL_02": {
+    "dataId": "IT_US_SE_JB_MM_05_GL_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 5 souvenirs de job (Rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_04_GL_02": {
+    "dataId": "IT_US_SE_JB_MM_04_GL_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Job Memory (Yellow) x4 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 4 souvenirs de job (Jaunes)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_03_GL_02": {
+    "dataId": "IT_US_SE_JB_MM_03_GL_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Job Memory (Purple) x3 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 3 souvenirs de job (Violets)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_02_GL_02": {
+    "dataId": "IT_US_SE_JB_MM_02_GL_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Job Memory (Blue) x2 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur de 2 souvenirs de job (Bleus)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_01_GL_02": {
+    "dataId": "IT_US_SE_JB_MM_01_GL_02",
+    "names": {
+      "en": "[Spring 2021 Part I] Select Job Memory (Green) x1 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur d'un souvenir de job (Vert)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11733,6 +12007,14 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_NIER_MV1": {
+    "dataId": "IT_VPI_NIER_MV1",
+    "names": {
+      "en": "\"NieR:Automata\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : NieR:Automata"
+    },
+    "type": "vc_shard"
+  },
   "IT_VPI_LW_LUCA": {
     "dataId": "IT_VPI_LW_LUCA",
     "names": {
@@ -12242,6 +12524,15 @@
     "names": {
       "en": "Select Element Magicite (XL) x270 Summon Ticket",
       "fr": "Ticket sélectionneur de 270 magilithes élémentaires (XL)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_SB_EXP_9": {
+    "dataId": "IT_US_GL_SE_SB_EXP_9",
+    "names": {
+      "en": "Select Element Magicite (XL) x500 Summon Ticket",
+      "fr": "Ticket sélectionneur de 500 magilithes élémentaires (XL)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

@@ -1665,6 +1665,46 @@
             "value": "聖盾の騎士の記憶・緋"
         },
         {
+            "key": "IT_JB_MM_FF7_CLUD",
+            "value": "ソルジャー（FFⅦR）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF7_CLUD_2",
+            "value": "ソルジャー（FFⅦR）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF7_CLUD_3",
+            "value": "ソルジャー（FFⅦR）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF7_CLUD_4",
+            "value": "ソルジャー（FFⅦR）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF7_CLUD_5",
+            "value": "ソルジャー（FFⅦR）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF7_TIFA",
+            "value": "モンク（FFⅦR）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF7_TIFA_2",
+            "value": "モンク（FFⅦR）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF7_TIFA_3",
+            "value": "モンク（FFⅦR）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF7_TIFA_4",
+            "value": "モンク（FFⅦR）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF7_TIFA_5",
+            "value": "モンク（FFⅦR）の記憶・緋"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "火の輝石・翠"
         },
@@ -2725,6 +2765,18 @@
             "value": "レミューレの欠片"
         },
         {
+            "key": "IT_PI_LW_GRGS",
+            "value": "ガーガスの欠片"
+        },
+        {
+            "key": "IT_PI_FF7_CLUD",
+            "value": "クラウドの欠片"
+        },
+        {
+            "key": "IT_PI_FF7_TIFA",
+            "value": "ティファの欠片"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "モント・リオニスの思珠"
         },
@@ -3167,6 +3219,14 @@
         {
             "key": "IT_SP_LW_LMRE",
             "value": "レミューレの思珠"
+        },
+        {
+            "key": "IT_SP_LW_GRGS",
+            "value": "ガーガスの思珠"
+        },
+        {
+            "key": "IT_SP_FF7_UR",
+            "value": "【FFⅦR】ユニットの思珠（UR）"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -4389,6 +4449,10 @@
             "value": "魔道士の服のクラフトレシピ"
         },
         {
+            "key": "IT_AF_FF7_BSW_000",
+            "value": "バスターソードのクラフトレシピ"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "命の刻印"
         },
@@ -4949,6 +5013,14 @@
             "value": "NieRコラボ召喚メダル"
         },
         {
+            "key": "IT_EC_FF7_1",
+            "value": "FFⅦRコラボイベントメダル"
+        },
+        {
+            "key": "IT_EC_FF7_2_A",
+            "value": "FFⅦRコラボ召喚メダルA"
+        },
+        {
             "key": "IT_EC_FF7_4",
             "value": "FFⅦRコラボログインメダル"
         },
@@ -5213,6 +5285,10 @@
             "value": "覚醒輝源×77選択召喚券"
         },
         {
+            "key": "IT_US_SE_AW-ITEM_10",
+            "value": "覚醒輝源×370選択召喚券"
+        },
+        {
             "key": "IT_US_SE_PI_COM_01",
             "value": "属性の想いの欠片×50選択召喚券"
         },
@@ -5255,6 +5331,10 @@
         {
             "key": "IT_US_SE_JB_EM_05_01",
             "value": "属性の輝石・緋×70選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_02",
+            "value": "属性の輝石・緋×220選択召喚券"
         },
         {
             "key": "IT_US_SE_JB_EM_04_01",
@@ -5713,6 +5793,10 @@
             "value": "【1400万DL】土属性SSR以下ユニット欠片×50選択召喚券"
         },
         {
+            "key": "IT_US_SE_PI_38",
+            "value": "FFⅦRコラボユニット欠片×120選択召喚券"
+        },
+        {
             "key": "IT_US_SE_UR_U_02",
             "value": "おすすめURユニット選択召喚券"
         },
@@ -5803,6 +5887,10 @@
         {
             "key": "IT_US_SE_AF_AW_13",
             "value": "【2021春CP2】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_14",
+            "value": "【CM放送記念】秘伝書×100選択召喚券"
         },
         {
             "key": "IT_US_SE_AF_SUP_01",
@@ -6165,6 +6253,18 @@
             "value": "【2021春CP2】焦印石×300選択召喚券"
         },
         {
+            "key": "IT_US_SE_JBEX_AF_14",
+            "value": "【FFⅦRコラボ記念】焦印石×300選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JBEX_AF_15",
+            "value": "【EXジョブパックSP】焦印石×300選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JBEX_AF_16",
+            "value": "【CM放送記念】焦印石×300選択召喚券"
+        },
+        {
             "key": "IT_US_SE_SP_LW_01",
             "value": "Xmasユニット思珠×10選択召喚券"
         },
@@ -6419,6 +6519,10 @@
         {
             "key": "IT_VPI_LW_MONT",
             "value": "孤独な獅子の欠片"
+        },
+        {
+            "key": "IT_VPI_FF7_MV1",
+            "value": "給水塔の約束の欠片"
         },
         {
             "key": "IT_VPI_LW_IGNT",

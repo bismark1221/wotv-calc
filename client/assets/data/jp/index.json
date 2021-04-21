@@ -2067,16 +2067,16 @@
         "en": "レイン - Rain"
       },
       "stats": {
-        "HP": 3577,
-        "TP": 151,
-        "AP": 134,
-        "ATK": 158,
+        "HP": 5394,
+        "TP": 158,
+        "AP": 141,
+        "ATK": 201,
         "DEF": 2,
         "SPR": 23,
-        "MAG": 262,
-        "DEX": 195,
-        "AGI": 55,
-        "LUCK": 179,
+        "MAG": 411,
+        "DEX": 259,
+        "AGI": 57,
+        "LUCK": 212,
         "ICE_RES": 20,
         "WATER_RES": -10,
         "PIERCE_RES": 5,
@@ -2088,7 +2088,9 @@
         "SLOW_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 69
+        "INITIAL_AP": 72,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsrain"
     },
@@ -2496,16 +2498,16 @@
         "en": "ラスウェル - Lasswell"
       },
       "stats": {
-        "HP": 2255,
-        "TP": 130,
-        "AP": 123,
-        "ATK": 363,
+        "HP": 3134,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 510,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 56,
-        "DEX": 199,
-        "AGI": 64,
-        "LUCK": 228,
+        "MAG": 73,
+        "DEX": 256,
+        "AGI": 66,
+        "LUCK": 269,
         "FIRE_RES": -10,
         "WIND_RES": 20,
         "SLASH_RES": 10,
@@ -2517,8 +2519,10 @@
         "SLOW_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 22,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 29,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "SLASH_ATK": 5,
         "ACCURACY": 15
       },
@@ -3411,7 +3415,7 @@
     },
     {
       "names": {
-        "en": "2B"
+        "en": "2B - 2B"
       },
       "stats": {
         "HP": 3181,
@@ -3447,7 +3451,7 @@
     },
     {
       "names": {
-        "en": "9S"
+        "en": "9S - 9S"
       },
       "stats": {
         "HP": 3684,
@@ -3922,6 +3926,115 @@
         "AOE_RES": 10
       },
       "image": "lapslmre"
+    },
+    {
+      "names": {
+        "en": "ガーガス"
+      },
+      "stats": {
+        "HP": 2920,
+        "TP": 177,
+        "AP": 176,
+        "ATK": 95,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 481,
+        "DEX": 244,
+        "AGI": 58,
+        "LUCK": 229,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 15,
+        "POISON_RES": 50,
+        "CONFUSION_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 142,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200,
+        "AOE_RES": 5
+      },
+      "image": "lapsgrgs"
+    },
+    {
+      "names": {
+        "en": "クラウド"
+      },
+      "stats": {
+        "HP": 3580,
+        "TP": 142,
+        "AP": 133,
+        "ATK": 504,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 230,
+        "AGI": 68,
+        "LUCK": 224,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 15,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": 0,
+        "MISSILE_RES": 15,
+        "MAGIC_RES": -10,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15,
+        "AOE_RES": 10,
+        "CRITIC_DAMAGE": 5
+      },
+      "image": "ff07clud"
+    },
+    {
+      "names": {
+        "en": "ティファ"
+      },
+      "stats": {
+        "HP": 3495,
+        "TP": 119,
+        "AP": 123,
+        "ATK": 491,
+        "DEF": 9,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 230,
+        "AGI": 68,
+        "LUCK": 262,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 0,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 0,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "IMMOBILIZE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 18,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "DEFENSE_PENETRATION": 15
+      },
+      "image": "ff07tifa"
     },
     {
       "names": {

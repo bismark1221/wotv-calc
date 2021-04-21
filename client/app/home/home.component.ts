@@ -24,6 +24,17 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '21/04',
+        items: [
+          {type: 'unit', dataId: 'UN_NIER_P_N2TB'},
+          {type: 'unit', dataId: 'UN_NIER_P_N9TS'},
+          {type: 'card', dataId: 'VC_NIER_MV1'},
+          {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
+          {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
+          {type: 'equipment', dataId: 'AF_NIER_ACC_000'}
+        ]
+      },
+      {
         date: '14/04',
         items: [
           {type: 'card', dataId: 'VC_LW_ROBB'},
@@ -38,32 +49,29 @@ export class HomeComponent {
         items: [
           {type: 'card', dataId: 'VC_LW_ZZAN'}
         ]
+      }
+    ],
+    JP: [
+      {
+        date: '21/04',
+        items: [
+          {type: 'unit', dataId: 'UN_FF7_P_CLUD'},
+          {type: 'unit', dataId: 'UN_FF7_P_TIFA'},
+          {type: 'unit', dataId: 'UN_LW_P_GRGS'},
+          {type: 'card', dataId: 'VC_FF7_MV1'},
+          {type: 'equipment', dataId: 'AF_FF7_BSW_000'},
+        ]
       },
       {
         date: '',
         items: [
-          {type: 'unit', dataId: 'UN_LW_P_GLMS'},
-          {type: 'unit', dataId: 'UN_LW_P_MDNA'},
-          {type: 'unit', dataId: 'UN_LW_P_OOOO'},
-          {type: 'unit', dataId: 'UN_LW_P_PHBE'},
-          {type: 'unit', dataId: 'UN_LW_P_ZZAN'}
+          {type: 'unit', dataId: 'UN_LW_P_RAIN'},
+          {type: 'unit', dataId: 'UN_LW_P_LSWL'},
+          {type: 'esper', dataId: 'UN_LW_S_TSLP'},
+          {type: 'esper', dataId: 'UN_LW_S_ZUUU'},
+          {type: 'card', dataId: 'VC_LW_APPLE'}
         ]
       },
-      {
-        date: '31/03',
-        items: [
-          {type: 'unit', dataId: 'UN_FF10_P_ARON'},
-          {type: 'card', dataId: 'VC_FF10_MV1'},
-          {type: 'card', dataId: 'VC_FF10_MV2'},
-          {type: 'equipment', dataId: 'AF_FF10_ACCE_001'},
-          {type: 'equipment', dataId: 'AF_LOT_FF10_BSW_000'},
-
-          {type: 'unit', dataId: 'UN_LW_P_ZIZA'},
-          {type: 'unit', dataId: 'UN_LW_P_AILN'}
-        ]
-      }
-    ],
-    JP: [
       {
         date: '14/04',
         items: [
@@ -83,14 +91,6 @@ export class HomeComponent {
           {type: 'esper', dataId: 'UN_LW_S_DMCM'},
           {type: 'equipment', dataId: 'AF_LW_ARM_032'},
           {type: 'esper', dataId: 'UN_LW_S_LAMA_01'}
-        ]
-      },
-      {
-        date: '31/03',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_CRLT'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_042'},
-          {type: 'equipment', dataId: 'AF_LW_ACC_038'}
         ]
       }
     ]

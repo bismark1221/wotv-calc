@@ -64,29 +64,53 @@
       "iname": "SE_EV_GIL_01",
       "event_type": 2,
       "image": "ev_gil_001",
-      "start": "2021/04/01 5:00:00",
-      "end": "2021/04/02 4:59:59"
+      "time": [
+        {
+          "start_wdays": 2,
+          "start_time": "5:00:00",
+          "end_wdays": 3,
+          "end_time": "4:59:59"
+        }
+      ]
     },
     {
       "iname": "SE_EV_GIL_01",
       "event_type": 2,
       "image": "ev_gil_001",
-      "start": "2021/04/01 5:00:00",
-      "end": "2021/04/02 4:59:59"
+      "time": [
+        {
+          "start_wdays": 3,
+          "start_time": "5:00:00",
+          "end_wdays": 4,
+          "end_time": "4:59:59"
+        }
+      ]
     },
     {
       "iname": "SE_EV_GIL_01",
       "event_type": 2,
       "image": "ev_gil_001",
-      "start": "2021/04/01 5:00:00",
-      "end": "2021/04/02 4:59:59"
+      "time": [
+        {
+          "start_wdays": 4,
+          "start_time": "5:00:00",
+          "end_wdays": 5,
+          "end_time": "4:59:59"
+        }
+      ]
     },
     {
       "iname": "SE_EV_GIL_01",
       "event_type": 2,
       "image": "ev_gil_001",
-      "start": "2021/04/01 5:00:00",
-      "end": "2021/04/02 4:59:59"
+      "time": [
+        {
+          "start_wdays": 5,
+          "start_time": "5:00:00",
+          "end_wdays": 6,
+          "end_time": "4:59:59"
+        }
+      ]
     },
     {
       "iname": "SE_EV_AFEXP_01",
@@ -646,17 +670,15 @@
       "iname": "SE_EV_08_01",
       "event_type": 1,
       "image": "ev_08_01",
-      "dedicated_home_bg": "evAnniversaryBG",
-      "priority": 1,
-      "start": "2020/12/01",
-      "end": "2020/12/09 14:59:59"
+      "start": "2021/04/21 12:00:00",
+      "end": "2021/05/07 14:59:59"
     },
     {
       "iname": "SE_EV_08_EX_01",
       "event_type": 1,
       "image": "ev_08_ex_01",
-      "start": "2020/12/01",
-      "end": "2020/12/09 14:59:59"
+      "start": "2021/04/21 12:00:00",
+      "end": "2021/05/07 14:59:59"
     },
     {
       "iname": "SE_EV_09_01",
@@ -795,8 +817,8 @@
       "iname": "SE_EV_ART_SCR_04",
       "event_type": 1,
       "image": "ev_art_secret_02",
-      "start": "2021/03/24 15:00:00",
-      "end": "2021/03/31 23:59:59"
+      "start": "2021/04/21 12:00:00",
+      "end": "2021/04/30 22:59:59"
     },
     {
       "iname": "SE_EV_ETRE",
@@ -986,6 +1008,20 @@
       "image": "ev_nier_ex_01",
       "start": "2020/12/23 15:00:00",
       "end": "2021/01/15 9:59:59"
+    },
+    {
+      "iname": "SE_EV_FF7_01_01",
+      "event_type": 1,
+      "image": "ev_FF7R_01",
+      "start": "2021/04/21 12:00:00",
+      "end": "2021/06/09 14:59:59"
+    },
+    {
+      "iname": "SE_EV_FF7_01_EX",
+      "event_type": 1,
+      "image": "ev_FF7R_ex_01",
+      "start": "2021/04/21 12:00:00",
+      "end": "2021/06/09 14:59:59"
     },
     {
       "iname": "SE_EV_ART_CRF_02",
@@ -1378,6 +1414,20 @@
       "image": "ev_vlrc_01",
       "start": "2021/04/15 5:00:00",
       "end": "2021/04/22 4:59:59"
+    },
+    {
+      "iname": "SE_EV_CLUD_01",
+      "event_type": 1,
+      "image": "ev_FF7R_02",
+      "start": "2021/04/22 5:00:00",
+      "end": "2021/04/29 4:59:59"
+    },
+    {
+      "iname": "SE_EV_TIFA_01",
+      "event_type": 1,
+      "image": "ev_FF7R_05",
+      "start": "2021/04/22 5:00:00",
+      "end": "2021/04/29 4:59:59"
     },
     {
       "iname": "SE_EV_WIZ_01",

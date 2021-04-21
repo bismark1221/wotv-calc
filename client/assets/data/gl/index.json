@@ -3457,6 +3457,78 @@
         "ICE_ATK": 15
       },
       "image": "ff10aron"
+    },
+    {
+      "names": {
+        "en": "2B",
+        "fr": "2B"
+      },
+      "stats": {
+        "HP": 3181,
+        "TP": 122,
+        "AP": 122,
+        "ATK": 531,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 209,
+        "AGI": 66,
+        "LUCK": 282,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -15,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -5,
+        "PARALYZE_RES": 50,
+        "CHARM_RES": 50,
+        "DOOM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "EVADE": 10
+      },
+      "image": "niern2tb"
+    },
+    {
+      "names": {
+        "en": "9S",
+        "fr": "9S"
+      },
+      "stats": {
+        "HP": 3684,
+        "TP": 133,
+        "AP": 126,
+        "ATK": 493,
+        "DEF": 22,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 272,
+        "AGI": 60,
+        "LUCK": 221,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 20,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -10,
+        "CONFUSION_RES": 10,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 12,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15
+      },
+      "image": "niern9ts"
     }
   ]
 }

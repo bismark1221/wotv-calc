@@ -17023,6 +17023,10 @@
         {
           "min": 472,
           "max": 849
+        },
+        {
+          "min": 892,
+          "max": 1269
         }
       ],
       "TP": [
@@ -17033,6 +17037,10 @@
         {
           "min": 25,
           "max": 32
+        },
+        {
+          "min": 33,
+          "max": 36
         }
       ],
       "AP": [
@@ -17043,6 +17051,10 @@
         {
           "min": 33,
           "max": 39
+        },
+        {
+          "min": 40,
+          "max": 43
         }
       ],
       "ATK": [
@@ -17053,13 +17065,19 @@
         {
           "min": 64,
           "max": 94
+        },
+        {
+          "min": 97,
+          "max": 127
         }
       ],
       "DEF": [
         {},
+        {},
         {}
       ],
       "SPR": [
+        {},
         {},
         {}
       ],
@@ -17071,6 +17089,10 @@
         {
           "min": 25,
           "max": 35
+        },
+        {
+          "min": 36,
+          "max": 46
         }
       ],
       "DEX": [
@@ -17081,6 +17103,10 @@
         {
           "min": 44,
           "max": 60
+        },
+        {
+          "min": 62,
+          "max": 78
         }
       ],
       "AGI": [
@@ -17091,6 +17117,10 @@
         {
           "min": 12,
           "max": 14
+        },
+        {
+          "min": 14,
+          "max": 15
         }
       ],
       "LUCK": [
@@ -17101,25 +17131,34 @@
         {
           "min": 45,
           "max": 62
+        },
+        {
+          "min": 64,
+          "max": 81
         }
       ],
       "INITIAL_AP": [
+        {},
         {},
         {}
       ],
       "ACCURACY": [
         {},
+        {},
         {}
       ],
       "CRITIC_RATE": [
+        {},
         {},
         {}
       ],
       "CRITIC_AVOID": [
         {},
+        {},
         {}
       ],
       "EVADE": [
+        {},
         {},
         {}
       ],
@@ -17131,13 +17170,19 @@
         {
           "min": -10,
           "max": -10
+        },
+        {
+          "min": -10,
+          "max": -10
         }
       ],
       "ICE_RES": [
         {},
+        {},
         {}
       ],
       "EARTH_RES": [
+        {},
         {},
         {}
       ],
@@ -17149,101 +17194,132 @@
         {
           "min": 10,
           "max": 10
+        },
+        {
+          "min": 10,
+          "max": 10
         }
       ],
       "LIGHTNING_RES": [
+        {},
         {},
         {}
       ],
       "WATER_RES": [
         {},
+        {},
         {}
       ],
       "LIGHT_RES": [
+        {},
         {},
         {}
       ],
       "DARK_RES": [
         {},
+        {},
         {}
       ],
       "SLASH_RES": [
+        {},
         {},
         {}
       ],
       "PIERCE_RES": [
         {},
+        {},
         {}
       ],
       "STRIKE_RES": [
+        {},
         {},
         {}
       ],
       "MISSILE_RES": [
         {},
+        {},
         {}
       ],
       "MAGIC_RES": [
+        {},
         {},
         {}
       ],
       "POISON_RES": [
         {},
+        {},
         {}
       ],
       "BLIND_RES": [
+        {},
         {},
         {}
       ],
       "SLEEP_RES": [
         {},
+        {},
         {}
       ],
       "SILENCE_RES": [
+        {},
         {},
         {}
       ],
       "PARALYZE_RES": [
         {},
+        {},
         {}
       ],
       "CONFUSION_RES": [
+        {},
         {},
         {}
       ],
       "PETRIFY_RES": [
         {},
+        {},
         {}
       ],
       "TOAD_RES": [
+        {},
         {},
         {}
       ],
       "CHARM_RES": [
         {},
+        {},
         {}
       ],
       "SLOW_RES": [
+        {},
         {},
         {}
       ],
       "STOP_RES": [
         {},
-        {}
+        {},
+        {
+          "min": 5,
+          "max": 25
+        }
       ],
       "IMMOBILIZE_RES": [
+        {},
         {},
         {}
       ],
       "DISABLE_RES": [
         {},
+        {},
         {}
       ],
       "BERSERK_RES": [
         {},
+        {},
         {}
       ],
       "DOOM_RES": [
+        {},
         {},
         {}
       ],
@@ -17255,9 +17331,17 @@
         {
           "min": 0,
           "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
         }
       ],
       "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
         {
           "min": 0,
           "max": 0
@@ -17402,6 +17486,107 @@
         6,
         6,
         6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
       ]
     ],
     "element": "ice",
@@ -17889,6 +18074,31 @@
             "ctbreak": null
           }
         },
+        "20": {
+          "dataId": "BUFF_FNRR_35",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_35",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "21": {
           "dataId": "BUFF_FNRR_20",
           "type": "buff",
@@ -18093,6 +18303,31 @@
             "ctbreak": null
           }
         },
+        "32": {
+          "dataId": "BUFF_FNRR_38",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "SLASH_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_38",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "33": {
           "dataId": "BUFF_FNRR_28",
           "type": "buff",
@@ -18193,6 +18428,81 @@
             "ctbreak": null
           }
         },
+        "38": {
+          "dataId": "BUFF_FNRR_34",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_34",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_FNRR_36",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "CRITIC_RATE",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_36",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_FNRR_37",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "MAGIC_RES",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "resistance",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_37",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "45": {
           "dataId": "BUFF_FNRR_32",
           "type": "buff",
@@ -18244,6 +18554,81 @@
             "pierce": null,
             "ctbreak": null
           }
+        },
+        "54": {
+          "dataId": "BUFF_FNRR_39",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "SLASH_ATK",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_39",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "BUFF_FNRR_40",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "SLASH_ATK",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_40",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "56": {
+          "dataId": "BUFF_FNRR_41",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "SLASH_ATK",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_FNRR_41",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
         }
       },
       "lines": [
@@ -18279,7 +18664,15 @@
         72,
         131,
         104,
-        117
+        117,
+        132,
+        44,
+        94,
+        96,
+        64,
+        120,
+        149,
+        150
       ]
     },
     "slug": "fenrir"
@@ -61715,6 +62108,10 @@
         {
           "min": 354,
           "max": 680
+        },
+        {
+          "min": 697,
+          "max": 1023
         }
       ],
       "TP": [
@@ -61725,6 +62122,10 @@
         {
           "min": 16,
           "max": 19
+        },
+        {
+          "min": 19,
+          "max": 21
         }
       ],
       "AP": [
@@ -61735,6 +62136,10 @@
         {
           "min": 18,
           "max": 21
+        },
+        {
+          "min": 21,
+          "max": 23
         }
       ],
       "ATK": [
@@ -61745,13 +62150,19 @@
         {
           "min": 32,
           "max": 45
+        },
+        {
+          "min": 46,
+          "max": 60
         }
       ],
       "DEF": [
         {},
+        {},
         {}
       ],
       "SPR": [
+        {},
         {},
         {}
       ],
@@ -61763,6 +62174,10 @@
         {
           "min": 12,
           "max": 18
+        },
+        {
+          "min": 19,
+          "max": 24
         }
       ],
       "DEX": [
@@ -61773,6 +62188,10 @@
         {
           "min": 35,
           "max": 49
+        },
+        {
+          "min": 51,
+          "max": 64
         }
       ],
       "AGI": [
@@ -61783,6 +62202,10 @@
         {
           "min": 11,
           "max": 14
+        },
+        {
+          "min": 14,
+          "max": 15
         }
       ],
       "LUCK": [
@@ -61793,33 +62216,47 @@
         {
           "min": 45,
           "max": 61
+        },
+        {
+          "min": 63,
+          "max": 79
         }
       ],
       "INITIAL_AP": [
+        {},
         {},
         {}
       ],
       "ACCURACY": [
         {},
+        {},
         {}
       ],
       "CRITIC_RATE": [
+        {},
         {},
         {}
       ],
       "CRITIC_AVOID": [
         {},
+        {},
         {}
       ],
       "EVADE": [
+        {},
         {},
         {}
       ],
       "FIRE_RES": [
         {},
+        {},
         {}
       ],
       "ICE_RES": [
+        {
+          "min": -15,
+          "max": -15
+        },
         {
           "min": -15,
           "max": -15
@@ -61837,105 +62274,137 @@
         {
           "min": 5,
           "max": 5
+        },
+        {
+          "min": 5,
+          "max": 5
         }
       ],
       "WIND_RES": [
+        {},
         {},
         {}
       ],
       "LIGHTNING_RES": [
         {},
+        {},
         {}
       ],
       "WATER_RES": [
+        {},
         {},
         {}
       ],
       "LIGHT_RES": [
         {},
+        {},
         {}
       ],
       "DARK_RES": [
+        {},
         {},
         {}
       ],
       "SLASH_RES": [
         {},
+        {},
         {}
       ],
       "PIERCE_RES": [
+        {},
         {},
         {}
       ],
       "STRIKE_RES": [
         {},
+        {},
         {}
       ],
       "MISSILE_RES": [
+        {},
         {},
         {}
       ],
       "MAGIC_RES": [
         {},
+        {},
         {}
       ],
       "POISON_RES": [
+        {},
         {},
         {}
       ],
       "BLIND_RES": [
         {},
+        {},
         {}
       ],
       "SLEEP_RES": [
+        {},
         {},
         {}
       ],
       "SILENCE_RES": [
         {},
+        {},
         {}
       ],
       "PARALYZE_RES": [
+        {},
         {},
         {}
       ],
       "CONFUSION_RES": [
         {},
+        {},
         {}
       ],
       "PETRIFY_RES": [
+        {},
         {},
         {}
       ],
       "TOAD_RES": [
         {},
+        {},
         {}
       ],
       "CHARM_RES": [
+        {},
         {},
         {}
       ],
       "SLOW_RES": [
         {},
+        {},
         {}
       ],
       "STOP_RES": [
+        {},
         {},
         {}
       ],
       "IMMOBILIZE_RES": [
         {},
-        {}
+        {},
+        {
+          "min": 5,
+          "max": 15
+        }
       ],
       "DISABLE_RES": [
+        {},
         {},
         {}
       ],
       "BERSERK_RES": [
         {},
+        {},
         {}
       ],
       "DOOM_RES": [
+        {},
         {},
         {}
       ],
@@ -61947,9 +62416,17 @@
         {
           "min": 0,
           "max": 0
+        },
+        {
+          "min": 0,
+          "max": 0
         }
       ],
       "JUMP": [
+        {
+          "min": 0,
+          "max": 0
+        },
         {
           "min": 0,
           "max": 0
@@ -62094,6 +62571,107 @@
         6,
         6,
         6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
       ]
     ],
     "element": "wind",
@@ -62583,6 +63161,31 @@
             "ctbreak": null
           }
         },
+        "20": {
+          "dataId": "BUFF_ZUUU_35",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 4,
+                "maxValue": 4,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_35",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "21": {
           "dataId": "BUFF_ZUUU_20",
           "type": "buff",
@@ -62789,6 +63392,32 @@
             "ctbreak": null
           }
         },
+        "32": {
+          "dataId": "BUFF_ZUUU_38",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_38",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "33": {
           "dataId": "BUFF_ZUUU_28",
           "type": "buff",
@@ -62891,6 +63520,81 @@
             "ctbreak": null
           }
         },
+        "38": {
+          "dataId": "BUFF_ZUUU_34",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 90,
+            "effects": [
+              {
+                "type": "EVOCATION_MAGIC",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_34",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "40": {
+          "dataId": "BUFF_ZUUU_36",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 5,
+                "maxValue": 5,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_36",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "41": {
+          "dataId": "BUFF_ZUUU_37",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "ACCURACY",
+                "minValue": 6,
+                "maxValue": 6,
+                "calcType": "fixe",
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_37",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
         "45": {
           "dataId": "BUFF_ZUUU_32",
           "type": "buff",
@@ -62942,6 +63646,84 @@
             "pierce": null,
             "ctbreak": null
           }
+        },
+        "54": {
+          "dataId": "BUFF_ZUUU_39",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 40,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 2,
+                "maxValue": 2,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_39",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "55": {
+          "dataId": "BUFF_ZUUU_40",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 50,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 3,
+                "maxValue": 3,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_40",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
+        },
+        "56": {
+          "dataId": "BUFF_ZUUU_41",
+          "type": "buff",
+          "skill": {
+            "unlockStar": 2,
+            "sp": 60,
+            "effects": [
+              {
+                "type": "HP",
+                "minValue": 8,
+                "maxValue": 8,
+                "calcType": "percent",
+                "increaseMax": true,
+                "target": "self"
+              }
+            ],
+            "dataId": "BUFF_ZUUU_41",
+            "type": "buff",
+            "count": null,
+            "maxLevel": null,
+            "hit": null,
+            "crt_hit": null,
+            "pierce": null,
+            "ctbreak": null
+          }
         }
       },
       "lines": [
@@ -62977,7 +63759,15 @@
         72,
         131,
         104,
-        117
+        117,
+        132,
+        44,
+        94,
+        135,
+        64,
+        120,
+        149,
+        150
       ]
     },
     "slug": "zuu"

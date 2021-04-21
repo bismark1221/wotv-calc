@@ -598,6 +598,13 @@ export class SkillService {
           html = this.getChance(effect) + ' frostbite' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
+      case 'EXPLOSIVE_FIST_ATK' :
+        if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
+          html = 'Increase chance to apply explosive fist by' + this.getValue(skill, effect) + this.getTurns(effect);
+        } else {
+          html = this.getChance(effect) + ' explosive fist' + this.getValue(skill, effect) + this.getTurns(effect);
+        }
+      break;
       case 'TOAD_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply toad by' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -716,6 +723,9 @@ export class SkillService {
       break;
       case 'FROSTBITE_RES' :
         html = this.getChance(effect) + ' frostbite resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'EXPLOSIVE_FIST_RES' :
+        html = this.getChance(effect) + ' explosive fist resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'TOAD_RES' :
         html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1630,7 +1640,12 @@ export class SkillService {
             html += ', ';
           }
 
-          html += this.nameService.getName(replacedSkill.newSkill);
+          const name = this.nameService.getName(replacedSkill.newSkill);
+          if (name === '通常攻撃') {
+            html += 'Basic attack';
+          } else {
+            html += name;
+          }
         }
       });
     }
@@ -1646,6 +1661,36 @@ export class SkillService {
         exist = true;
       }
     });
+
+    if (!exist && unit.masterSkill.length > 0) {
+      unit.masterSkill.forEach(masterSkill => {
+        if (masterSkill.dataId === skillId) {
+          exist = true;
+        }
+      });
+    }
+
+    if (!exist && unit.limit) {
+      if (unit.limit.dataId === skillId) {
+        exist = true;
+      }
+    }
+
+    if (!exist && unit.attack) {
+      if (unit.attack.dataId === skillId) {
+        exist = true;
+      }
+    }
+
+    if (!exist && unit.replacedSkills) {
+      Object.keys(unit.replacedSkills).forEach(otherUpgradeSkillId => {
+        unit.replacedSkills[otherUpgradeSkillId].forEach(upgrade => {
+          if (upgrade.newSkill.dataId === skillId) {
+            exist = true;
+          }
+        });
+      });
+    }
 
     return exist;
   }

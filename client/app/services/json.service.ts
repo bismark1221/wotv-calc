@@ -339,7 +339,8 @@ export class JsonService {
     347: 'HEAL_POWER',
     348: 'REDUCE_COUNTER_CHANCE',
     501: 'ABSORB_HP_ONTIME',
-    502: 'FROSTBITE'
+    502: 'FROSTBITE',
+    503: 'EXPLOSIVE_FIST'
   };
 
   species = [
@@ -875,7 +876,8 @@ export class JsonService {
     'FLOAT',
     'QUICKEN',
     'ALL_AILMENTS',
-    'FROSTBITE'
+    'FROSTBITE',
+    'EXPLOSIVE_FIST'
   ];
 
   constructor(
@@ -2164,23 +2166,35 @@ export class JsonService {
       });
     }
 
-    Object.keys(unit.replacedSkills).forEach(replace => {
-      unit.replacedSkills[replace].forEach(upgrade => {
-        let previousSkillType = 'skill';
-        Object.keys(unit.board.nodes).forEach(nodeId => {
-          if (unit.board.nodes[nodeId].dataId === upgrade.oldSkill) {
-            previousSkillType = unit.board.nodes[nodeId].type;
+    let OldUpgrades = [];
+
+    while (Object.keys(unit.replacedSkills).length > OldUpgrades.length) {
+      OldUpgrades = Object.keys(unit.replacedSkills);
+
+      Object.keys(unit.replacedSkills).forEach(replace => {
+        unit.replacedSkills[replace].forEach(upgrade => {
+          if (!upgrade.newSkill.dataId) {
+            let previousSkillType = 'skill';
+            Object.keys(unit.board.nodes).forEach(nodeId => {
+              if (unit.board.nodes[nodeId].dataId === upgrade.oldSkill) {
+                previousSkillType = unit.board.nodes[nodeId].type;
+              }
+            });
+
+            const fakePanelSkill = {
+              value: upgrade.newSkill,
+              slot: this.slots.indexOf(previousSkillType)
+            };
+
+            if (!this[this.version].skills[upgrade.newSkill].slot) {
+              this[this.version].skills[upgrade.newSkill].slot = this.slots.indexOf(previousSkillType);
+            }
+
+            upgrade.newSkill = this.OLDaddSkill(unit, fakePanelSkill);
           }
         });
-
-        const fakePanelSkill = {
-          value: upgrade.newSkill,
-          slot: this.slots.indexOf(previousSkillType)
-        };
-
-        upgrade.newSkill = this.OLDaddSkill(unit, fakePanelSkill);
       });
-    });
+    }
   }
 
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {

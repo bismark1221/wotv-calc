@@ -20450,7 +20450,7 @@
       "MAX_LV": {}
     },
     "element": "dark",
-    "image": "lapsstrn",
+    "image": "lapsstrn_01",
     "species": "human",
     "slug": "sterne-knight-of-ruin-1",
     "attack": {
@@ -22187,6 +22187,461 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_SO_00_KNT": {
+    "dataId": "UN_LW_E_SO_00_KNT",
+    "names": {
+      "en": "Leonis Soldier",
+      "fr": "Soldat de Leonis"
+    },
+    "jobs": [
+      "JB_LW_KNT_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 135,
+        "max": 1584
+      },
+      "TP": {
+        "min": 34,
+        "max": 63
+      },
+      "AP": {
+        "min": 40,
+        "max": 65
+      },
+      "ATK": {
+        "min": 46,
+        "max": 139
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 18,
+        "max": 46
+      },
+      "DEX": {
+        "min": 87,
+        "max": 207
+      },
+      "AGI": {
+        "min": 21,
+        "max": 43
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 220
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso00",
+    "species": "",
+    "slug": "leonis-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_KNT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_SO_00_GUN": {
+    "dataId": "UN_LW_E_SO_00_GUN",
+    "names": {
+      "en": "Leonis Soldier",
+      "fr": "Soldat de Leonis"
+    },
+    "jobs": [
+      "JB_LW_GUN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 130,
+        "max": 1453
+      },
+      "TP": {
+        "min": 34,
+        "max": 63
+      },
+      "AP": {
+        "min": 40,
+        "max": 65
+      },
+      "ATK": {
+        "min": 44,
+        "max": 123
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 47
+      },
+      "DEX": {
+        "min": 75,
+        "max": 185
+      },
+      "AGI": {
+        "min": 25,
+        "max": 55
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso00",
+    "species": "",
+    "slug": "leonis-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GUN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 4,
+        "m": 2,
+        "s": 1,
+        "line": 1
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_SO_00_SWN": {
+    "dataId": "UN_LW_E_SO_00_SWN",
+    "names": {
+      "en": "Leonis Soldier",
+      "fr": "Soldat de Leonis"
+    },
+    "jobs": [
+      "JB_LW_SWN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 128,
+        "max": 1365
+      },
+      "TP": {
+        "min": 34,
+        "max": 63
+      },
+      "AP": {
+        "min": 40,
+        "max": 65
+      },
+      "ATK": {
+        "min": 53,
+        "max": 173
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 20,
+        "max": 50
+      },
+      "DEX": {
+        "min": 87,
+        "max": 207
+      },
+      "AGI": {
+        "min": 21,
+        "max": 43
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 230
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso00",
+    "species": "",
+    "slug": "leonis-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_LW_SWN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_GM_SCF0": {
+    "dataId": "UN_GM_SCF0",
+    "names": {
+      "en": "Collapsed Guard Tower 1",
+      "fr": "Tour de guet écroulée 1"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {},
+    "element": null,
+    "image": "gmckscf0",
+    "species": "",
+    "slug": "collapsed-guard-tower-1"
+  },
+  "UN_GM_SCF1": {
+    "dataId": "UN_GM_SCF1",
+    "names": {
+      "en": "Collapsed Guard Tower 2",
+      "fr": "Tour de guet écroulée 2"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {},
+    "element": null,
+    "image": "gmckscf1",
+    "species": "",
+    "slug": "collapsed-guard-tower-2"
+  },
+  "UN_GM_SCF2": {
+    "dataId": "UN_GM_SCF2",
+    "names": {
+      "en": "Collapsed Guard Tower 3",
+      "fr": "Tour de guet écroulée 3"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {},
+    "element": null,
+    "image": "gmckscf2",
+    "species": "",
+    "slug": "collapsed-guard-tower-3"
+  },
   "UN_LW_E_ARMN_02": {
     "dataId": "UN_LW_E_ARMN_02",
     "names": {
@@ -22591,143 +23046,6 @@
       ],
       "type": "skill",
       "target": "all",
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic"
-    }
-  },
-  "UN_LW_E_SO_00_SWN": {
-    "dataId": "UN_LW_E_SO_00_SWN",
-    "names": {
-      "en": "Leonis Soldier",
-      "fr": "Soldat de Leonis"
-    },
-    "jobs": [
-      "JB_LW_SWN_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 128,
-        "max": 1365
-      },
-      "TP": {
-        "min": 34,
-        "max": 63
-      },
-      "AP": {
-        "min": 40,
-        "max": 65
-      },
-      "ATK": {
-        "min": 53,
-        "max": 173
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 20,
-        "max": 50
-      },
-      "DEX": {
-        "min": 87,
-        "max": 207
-      },
-      "AGI": {
-        "min": 21,
-        "max": 43
-      },
-      "LUCK": {
-        "min": 94,
-        "max": 230
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso00",
-    "species": "",
-    "slug": "leonis-soldier",
-    "attack": {
-      "names": {
-        "en": "Normal Attack",
-        "fr": "Attaque normale"
-      },
-      "effects": [],
-      "dataId": "SK_LW_SWN_ATK",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {}
-      },
-      "elem": [
-        "neutral"
-      ],
-      "type": "skill",
-      "target": "all",
-      "maxLevel": 20,
       "range": {
         "h": 1,
         "l": 1,
@@ -30685,6 +31003,517 @@
       "based": "physic"
     }
   },
+  "UN_NieR_E_MCLF": {
+    "dataId": "UN_NieR_E_MCLF",
+    "names": {
+      "en": "Small Stubby",
+      "fr": "Petit ressort"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 70
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "niermclf",
+    "species": "machine",
+    "slug": "small-stubby",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_MCLF_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_NieR_E_EVE": {
+    "dataId": "UN_NieR_E_EVE",
+    "names": {
+      "en": "Eve",
+      "fr": "Ève"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 240,
+        "max": 982
+      },
+      "TP": {
+        "min": 39,
+        "max": 90
+      },
+      "AP": {
+        "min": 47,
+        "max": 84
+      },
+      "ATK": {
+        "min": 48,
+        "max": 139
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 47,
+        "max": 103
+      },
+      "DEX": {
+        "min": 96,
+        "max": 96
+      },
+      "AGI": {
+        "min": 40,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 91
+      },
+      "INITIAL_AP": {
+        "min": -47
+      },
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "niereve0",
+    "species": "machine",
+    "slug": "eve",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_ADAM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_NieR_E_ADAM": {
+    "dataId": "UN_NieR_E_ADAM",
+    "names": {
+      "en": "Adam",
+      "fr": "Adam"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 240,
+        "max": 982
+      },
+      "TP": {
+        "min": 39,
+        "max": 90
+      },
+      "AP": {
+        "min": 47,
+        "max": 84
+      },
+      "ATK": {
+        "min": 48,
+        "max": 139
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 47,
+        "max": 103
+      },
+      "DEX": {
+        "min": 96,
+        "max": 96
+      },
+      "AGI": {
+        "min": 40,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 91
+      },
+      "INITIAL_AP": {
+        "min": -47
+      },
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "nieradam",
+    "species": "machine",
+    "slug": "adam",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [],
+      "dataId": "SK_ADAM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_NIVL": {
     "dataId": "UN_LW_E_NIVL",
     "names": {
@@ -33710,143 +34539,6 @@
       "maxLevel": 20,
       "range": {
         "h": 2,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic"
-    }
-  },
-  "UN_LW_E_SO_00_KNT": {
-    "dataId": "UN_LW_E_SO_00_KNT",
-    "names": {
-      "en": "Leonis Soldier",
-      "fr": "Soldat de Leonis"
-    },
-    "jobs": [
-      "JB_LW_KNT_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 135,
-        "max": 1584
-      },
-      "TP": {
-        "min": 34,
-        "max": 63
-      },
-      "AP": {
-        "min": 40,
-        "max": 65
-      },
-      "ATK": {
-        "min": 46,
-        "max": 139
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 18,
-        "max": 46
-      },
-      "DEX": {
-        "min": 87,
-        "max": 207
-      },
-      "AGI": {
-        "min": 21,
-        "max": 43
-      },
-      "LUCK": {
-        "min": 92,
-        "max": 220
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso00",
-    "species": "",
-    "slug": "leonis-soldier",
-    "attack": {
-      "names": {
-        "en": "Normal Attack",
-        "fr": "Attaque normale"
-      },
-      "effects": [],
-      "dataId": "SK_LW_KNT_ATK",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {}
-      },
-      "elem": [
-        "neutral"
-      ],
-      "type": "skill",
-      "target": "all",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
         "l": 1,
         "s": 0
       },
