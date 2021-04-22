@@ -170,3 +170,8 @@
 .select-sort, .select-order {
   display: inline-block;
 }
+
+.unselectAllTypeLink {
+  cursor: pointer;
+  text-decoration: underline;
+}

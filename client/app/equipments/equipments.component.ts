@@ -95,4 +95,9 @@ export class EquipmentsComponent implements OnInit {
 
     return false;
   }
+
+  async unselectAllType() {
+    this.filters.acquisition = [];
+    await this.getEquipments();
+  }
 }
