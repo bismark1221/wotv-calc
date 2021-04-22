@@ -2015,13 +2015,18 @@ export class JsonService {
         nodes: {},
         lines: []
       },
-      replacedSkills : {}
+      replacedSkills : {},
+      tmr: null
     };
 
     if (rawUnit.ccsets) {
       rawUnit.ccsets.forEach(exJob => {
         unit.exJobs.push(exJob.m);
       });
+    }
+
+    if (rawUnit.trust) {
+      unit.tmr = rawUnit.trust;
     }
 
     this.getUnitImage(unit);
@@ -2032,7 +2037,6 @@ export class JsonService {
     this.getLB(unit, rawUnit.limit);
     this.getAttackSkill(unit, rawUnit.atkskl);
     this.getMasterSkill(unit, rawUnit.mstskl);
-    this.getTMR(unit, rawUnit.trust);
     this.getSkillsAndBuffs(unit);
 
     this[this.version].wotvUnits[dataId] = unit;
@@ -3131,47 +3135,6 @@ export class JsonService {
     }
   }
 
-  private getTMR(unit, tmrId) {
-    if (tmrId) {
-      const tmr = {
-        names: {},
-        stats: {},
-        type: this.jobEquip[this[this.version].equipments[tmrId].cat[0]],
-        dataId: tmrId,
-        skills: [],
-        image: this[this.version].equipments[tmrId].asset.toLowerCase()
-      };
-
-      this.getNames(tmr, 'equipment', false);
-
-      Object.keys(this[this.version].equipments[tmrId].status[0]).forEach(stat => {
-        tmr.stats[this.stats.unit[stat]] = this[this.version].equipments[tmrId].status[0][stat];
-      });
-
-      const lastSkillId = [];
-      for (let i = 1; i <= 5; i++) {
-        if (this[this.version].equipments[tmrId]['skl' + i]) {
-          for (let j = 0; j < this[this.version].equipments[tmrId]['skl' + i].length; j++) {
-            if (lastSkillId[j] !== this[this.version].equipments[tmrId]['skl' + i][j]) {
-              const skill = {
-                dataId: this[this.version].equipments[tmrId]['skl' + i][j],
-                names: {},
-                effects: [],
-                type: this.slots[this[this.version].skills[this[this.version].equipments[tmrId]['skl' + i][j]].slot === 1 ? 1 : 3]
-              };
-
-              this.updateSkill(unit, skill, this[this.version].equipments[tmrId]['skl' + i][j]);
-              tmr.skills.push(skill);
-              lastSkillId[j] = this[this.version].equipments[tmrId]['skl' + i][j];
-            }
-          }
-        }
-      }
-
-      unit.tmr = tmr;
-    }
-  }
-
   private addEsper(esper) {
     const dataId = esper.iname;
     this[this.version].wotvEspers[dataId] = {
@@ -3392,7 +3355,7 @@ export class JsonService {
         const unitIds = Object.keys(this[this.version].wotvUnits);
 
         while (!unitId && i < unitIds.length) {
-          if (this[this.version].wotvUnits[unitIds[i]].tmr.dataId === dataId) {
+          if (this[this.version].wotvUnits[unitIds[i]].tmr === dataId) {
             unitId = unitIds[i];
           }
 
@@ -3838,7 +3801,7 @@ export class JsonService {
 
       this.unitService.getGLExclusiveUnitIds().forEach(unitId => {
         this.jp.wotvUnits[unitId] = this.gl.wotvUnits[unitId];
-        const tmrId = this.jp.wotvUnits[unitId].tmr.dataId;
+        const tmrId = this.jp.wotvUnits[unitId].tmr;
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
       });
     }

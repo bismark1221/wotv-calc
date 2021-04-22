@@ -82,7 +82,7 @@ export class Unit {
   image = 'ITEMcrst';
 
   limit = new Skill();
-  tmr = new Equipment();
+  tmr = null;
   masterSkill = new Skill();
   totalBuffs = {
     HP: 0,

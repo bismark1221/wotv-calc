@@ -219,10 +219,12 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.tmr) {
-        this.unit.tmr.name = this.nameService.getName(this.unit.tmr);
-        this.unit.tmr.statsTypes = Object.keys(this.unit.tmr.stats);
+        this.unit.formattedTmr = await this.equipmentService.getEquipment(this.unit.tmr);
 
-        this.unit.tmr.skills.forEach(skill => {
+        this.unit.formattedTmr.name = this.nameService.getName(this.unit.formattedTmr);
+        this.unit.formattedTmr.statsTypes = Object.keys(this.unit.formattedTmr.stats);
+
+        this.unit.formattedTmr.skills[0].forEach(skill => {
           skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.rangeService.formatRange(this.unit, skill);

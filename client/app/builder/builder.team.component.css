@@ -268,7 +268,8 @@
 }
 
 .equipmentImg {
-  width: 70px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .esparCardDiv {
@@ -322,7 +323,29 @@
 .equipmentPointer {
   cursor: pointer;
   width: 70px;
+  height: 70px;
   margin: auto;
+}
+
+.background_acc {
+  background: url("assets/builder/background_acc.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_weapon {
+  background: url("assets/builder/background_weapon.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.background_armor {
+  background: url("assets/builder/background_armor.png") 0px 0px no-repeat;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 /**********/

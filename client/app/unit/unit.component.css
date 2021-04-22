@@ -211,3 +211,17 @@
 .jobInSkill {
   display: inline-block;
 }
+
+.tmrTd {
+  padding: 5px;
+  width: 100px;
+}
+
+.tmrSubTd {
+  height: 33px;
+}
+
+.tmrImg {
+  max-width: 90px;
+  max-height: 90px;
+}
