@@ -133,6 +133,7 @@ export class Unit {
   availableStatTypes = [];
   availableSupportNodes = [[], []];
   availableCounterNodes = [];
+  percentStats = {};
 
   // Only for quests/enemies
   species = '';
@@ -393,40 +394,16 @@ export class Unit {
     });
   }
 
-  private calculateGuildStats() {
-    if (this.guild.data) {
-      Object.keys(this.guild.data).forEach(statue => {
-        if (this.guild.data[statue] > 0) {
-          this.guild.statues[statue][this.guild.data[statue] - 1].forEach(stat => {
-            let value = stat.value;
-            let notFlooredValue = value;
-            if (stat.calcType === 'percent') {
-              notFlooredValue = this.stats[stat.type].baseTotal * value / 100;
-              value = Math.floor(notFlooredValue);
-            }
-
-            this.updateStat(stat.type, notFlooredValue, 'guildAndMR', 'fixe');
-            this.updateStat(stat.type, value, 'guild', 'fixe');
-          });
-        }
-      });
+  private updatePercentStats(stat, type, value) {
+    if (!this.percentStats[stat]) {
+      this.percentStats[stat] = {};
     }
-  }
 
-  private calculateMasterRanksStats() {
-    if (this.masterRanks && this.masterRanks.data && this.masterRanks.ranks && this.masterRanks.ranks[this.element] && this.masterRanks.data[this.element] > 0) {
-      this.masterRanks.ranks[this.element].ranks[this.masterRanks.data[this.element] - 1].effects.forEach(effect => {
-        let value = effect.minValue;
-        let notFlooredValue = value;
-        if (effect.calcType === 'percent') {
-          notFlooredValue = this.stats[effect.type].baseTotal * value / 100;
-          value = Math.floor(notFlooredValue);
-        }
-
-        this.updateStat(effect.type, notFlooredValue, 'guildAndMR', 'fixe');
-        this.updateStat(effect.type, value, 'masterRanks', 'fixe');
-      });
+    if (!this.percentStats[stat][type]) {
+      this.percentStats[stat][type] = 0;
     }
+
+    this.percentStats[stat][type] += value;
   }
 
   private updateStat(type, value, statType, calc = 'fixe', reset = false) {
@@ -508,6 +485,34 @@ export class Unit {
     }
   }
 
+  private calculateGuildStats() {
+    if (this.guild.data) {
+      Object.keys(this.guild.data).forEach(statue => {
+        if (this.guild.data[statue] > 0) {
+          this.guild.statues[statue][this.guild.data[statue] - 1].forEach(stat => {
+            if (stat.calcType === 'percent') {
+              this.updatePercentStats(stat.type, 'guild', stat.value);
+            } else {
+              this.updateStat(stat.type, stat.value, 'guild', 'fixe');
+            }
+          });
+        }
+      });
+    }
+  }
+
+  private calculateMasterRanksStats() {
+    if (this.masterRanks && this.masterRanks.data && this.masterRanks.ranks && this.masterRanks.ranks[this.element] && this.masterRanks.data[this.element] > 0) {
+      this.masterRanks.ranks[this.element].ranks[this.masterRanks.data[this.element] - 1].effects.forEach(effect => {
+        if (effect.calcType === 'percent') {
+          this.updatePercentStats(effect.type, 'masterRanks', effect.minValue);
+        } else {
+          this.updateStat(effect.type, effect.minValue, 'masterRanks', 'fixe');
+        }
+      });
+    }
+  }
+
   private calculateBoardStats() {
     Object.keys(this.board.nodes).forEach(nodeId => {
       const node = this.board.nodes[nodeId];
@@ -519,7 +524,11 @@ export class Unit {
               value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (node.skill.maxLevel - 1) * (node.level - 1)));
             }
 
-            this.updateStat(effect.type, value, 'board', effect.calcType === 'percent' ? 'percent' : 'fixe');
+            if (effect.calcType === 'percent') {
+              this.updatePercentStats(effect.type, 'board', value);
+            } else {
+              this.updateStat(effect.type, value, 'board', 'fixe');
+            }
           } else {
             console.log('not manage effect in board percent/fixe');
             console.log(node);
@@ -535,7 +544,11 @@ export class Unit {
         this.board.nodes[supportNode].skill.effects.forEach(effect => {
           const value = effect.minValue + ((effect.maxValue - effect.minValue) / (20 - 1) * (this.board.nodes[supportNode].level - 1));
           if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
-            this.updateStat(effect.type, value, 'support', effect.calcType === 'percent' ? 'percent' : 'fixe');
+            if (effect.calcType === 'percent') {
+              this.updatePercentStats(effect.type, 'support', value);
+            } else {
+              this.updateStat(effect.type, value, 'support', 'fixe');
+            }
           } else {
             console.log('not manage effect in support percent/fixe -- ' + this.dataId);
             console.log(supportNode);
@@ -555,7 +568,11 @@ export class Unit {
             calc = 'percent';
           }
 
-          this.updateStat(effect.type, effect.minValue, 'masterSkill', calc);
+          if (calc === 'percent') {
+            this.updatePercentStats(effect.type, 'masterSkill', effect.minValue);
+          } else {
+            this.updateStat(effect.type, effect.minValue, 'masterSkill', calc);
+          }
         } else {
           console.log('not manage effect in masterSkill percent/fixe');
           console.log(masterSkill);
@@ -574,7 +591,11 @@ export class Unit {
               calc = 'percent';
             }
 
-            this.updateStat(effect.type, effect.minValue, 'teamMasterSkill', calc);
+            if (calc === 'percent') {
+              this.updatePercentStats(effect.type, 'teamMasterSkill', effect.minValue);
+            } else {
+              this.updateStat(effect.type, effect.minValue, 'teamMasterSkill', calc);
+            }
           } else {
             console.log('not manage effect in team masterSkill percent/fixe');
             console.log(masterSkill);
@@ -615,11 +636,7 @@ export class Unit {
         if (typeof(this.esper.buffs[statType].percent) === 'number'
           && this.esper.buffs[statType].percent !== 0
         ) {
-          if (statsType.indexOf(statType) !== -1) {
-            value = Math.floor(baseTotal * this.esper.buffs[statType].percent / 100);
-          } else {
-            value = this.esper.buffs[statType].percent;
-          }
+          this.updatePercentStats(statType, 'esper', this.esper.buffs[statType].percent);
         } else {
           value = this.esper.buffs[statType].total;
         }
@@ -652,15 +669,11 @@ export class Unit {
     Object.keys(this.card.buffs.self).forEach(statType => {
       this.card.buffs.self[statType].forEach(selfBuff => {
         if (!selfBuff.cond || this.checkCondition(selfBuff.cond)) {
-          let value = selfBuff.value;
-
-          if (statsType.indexOf(statType) !== -1) {
-            if (selfBuff.calcType === 'percent') {
-              value = Math.floor(this.stats[statType].baseTotal * value / 100);
-            }
+          if (selfBuff.calcType === 'percent') {
+            this.updatePercentStats(statType, 'card', selfBuff.value);
+          } else {
+            this.updateStat(statType, selfBuff.value, 'card', 'fixe');
           }
-
-          this.updateStat(statType, value, 'card', 'fixe');
         }
       });
     });
@@ -668,15 +681,11 @@ export class Unit {
     Object.keys(this.card.buffs.party).forEach(statType => {
       this.card.buffs.party[statType].forEach(partyBuff => {
         if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
-          let value = partyBuff.value;
-
-          if (statsType.indexOf(statType) !== -1) {
-            if (partyBuff.calcType === 'percent') {
-              value = Math.floor(this.stats[statType].baseTotal * value / 100);
-            }
+          if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+            this.updatePercentStats(statType, 'cardParty', partyBuff.value);
+          } else {
+            this.updateStat(statType, partyBuff.value, 'cardParty', 'fixe');
           }
-
-          this.updateStat(statType, value, 'cardParty', 'fixe');
         }
       });
     });
@@ -735,24 +744,31 @@ export class Unit {
     ];
 
     const teamBuffs = {};
+    const statsTypePercent = {};
 
     this.teamCards.forEach(card => {
       if (card) {
         Object.keys(card.buffs.party).forEach(statType => {
           card.buffs.party[statType].forEach(partyBuff => {
             if (!partyBuff.cond || this.checkCondition(partyBuff.cond)) {
+              const initialValue = partyBuff.value;
               let value = partyBuff.value;
 
-              if (statsType.indexOf(statType) !== -1) {
-                if (partyBuff.calcType === 'percent') {
-                  value = Math.floor(this.stats[statType].baseTotal * value / 100);
-                }
+              if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+                value = Math.floor(this.stats[statType].baseTotal * value / 100);
               }
 
               if ((!teamBuffs[statType] || value > teamBuffs[statType])
                 && (!this.stats[statType] || !this.stats[statType].cardParty || value > this.stats[statType].cardParty)
               ) {
-                teamBuffs[statType] = value;
+                if (statsType.indexOf(statType) !== -1 && partyBuff.calcType === 'percent') {
+                  if (!statsTypePercent[statType]) {
+                    statsTypePercent[statType] = 0;
+                  }
+                  statsTypePercent[statType] = initialValue;
+                } else {
+                  teamBuffs[statType] = value;
+                }
               }
             }
           });
@@ -763,6 +779,10 @@ export class Unit {
     Object.keys(teamBuffs).forEach(statType => {
       this.updateStat(statType, 0, 'cardParty', 'fixe', true);
       this.updateStat(statType, teamBuffs[statType], 'cardParty', 'fixe');
+    });
+
+    Object.keys(statsTypePercent).forEach(statType => {
+      this.updatePercentStats(statType, 'cardParty', statsTypePercent[statType]);
     });
   }
 
@@ -827,6 +847,11 @@ export class Unit {
                   value = effect.maxValue;
                 } else if (skill.maxLevel !== 1 || skill.level !== 1) {
                   value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+                }
+
+                if (effect.calcType === 'percent') {
+                  // @TODO Equipment %%%%%%%%
+                  // this.updatePercentStats(effect.type, value);
                 }
 
                 const modifiedValue = this.updateStat(effect.type, value, 'equipment' + i + '_buff', effect.calcType === 'percent' ? 'percent' : 'fixe', true);
@@ -920,6 +945,7 @@ export class Unit {
   }
 
   private calculateTotalStats() {
+    this.percentStats = {};
     this.calculateGuildStats();
     this.calculateMasterRanksStats();
     this.calculateBoardStats();
@@ -996,15 +1022,32 @@ export class Unit {
         this.stats[stat].total += this.stats[stat].totalEquipment;
       }
 
-      this.stats[stat].total += this.stats[stat].guildAndMR ? Math.floor(this.stats[stat].guildAndMR) : 0;
+      if (this.stats[stat].guild) {
+        this.stats[stat].total += this.stats[stat].guild;
+      }
+
+      if (this.stats[stat].masterRanks) {
+        this.stats[stat].total += this.stats[stat].masterRanks;
+      }
 
       if (!Number.isInteger(this.stats[stat].total)) {
         statsToRemove.push(stat);
       }
     });
 
-    // @TODO REMOVE !!!!
-    // this.stats.ATK.total += 1;
+    Object.keys(this.percentStats).forEach(stat => {
+      const totalPercentValue = 0;
+      Object.keys(this.percentStats[stat]).forEach(type => {
+        if (!this.stats[stat][type]) {
+          this.stats[stat][type] = 0;
+        }
+
+        this.stats[stat][type] += Math.floor(this.stats[stat].baseTotal * this.percentStats[stat][type] / 100);
+        totalPercentValue += this.percentStats[stat][type];
+      });
+
+      this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * totalPercentValue / 100);
+    });
 
     statsToRemove.forEach(stat => {
       delete this.stats[stat];
