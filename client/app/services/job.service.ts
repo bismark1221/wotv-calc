@@ -79,6 +79,7 @@ export class JobService {
 
     const rawJob = this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_jobs'].find(findJob => findJob.dataId === id);
     const job = new Job();
+
     job.constructFromJson(JSON.parse(JSON.stringify(rawJob)));
 
     return job;

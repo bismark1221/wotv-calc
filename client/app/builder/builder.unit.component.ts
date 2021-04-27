@@ -31,7 +31,7 @@ import { ModalLinkComponent } from './modal/modal.link.component';
   styleUrls: ['./builder.unit.component.css']
 })
 export class BuilderUnitComponent implements OnInit, AfterViewInit {
-  units;
+  units = {};
   filteredUnits = {};
   unit = null;
   searchText = '';

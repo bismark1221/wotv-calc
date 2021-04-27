@@ -437,7 +437,7 @@
             </tr>
           </tbody>
           <tbody>
-            <tr class="jobsStatsLine jobsStatsTotal">
+            <tr class="jobsStatsLine jobsStatsTotal" *ngIf="unit.totalJobsStats">
               <td>Total</td>
               <td>{{ unit.totalJobsStats.HP }}</td>
               <td>{{ unit.totalJobsStats.TP }}</td>
@@ -449,7 +449,7 @@
               <td>{{ unit.totalJobsStats.LUCK }}</td>
             </tr>
           </tbody>
-          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats[0] && exJobs[0]">
+          <tbody *ngIf="unit.exJobs && unit.exJobs.length > 0 && unit.EXJobsStats && unit.EXJobsStats[0] && exJobs[0]">
             <tr class="jobsStatsLine">
               <td>
                 <div class="mainJob">

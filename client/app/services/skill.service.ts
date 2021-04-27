@@ -856,10 +856,10 @@ export class SkillService {
         html = this.getIncrease(effect) + ' Debuff Duration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'ATTACK_RES' :
-        html = this.getIncrease(effect) + ' Attack Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' Single target Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AOE_RES' :
-        html = this.getIncrease(effect) + ' Area Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getIncrease(effect) + ' AOE Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'CRITIC_DAMAGE' :
         html = this.getIncrease(effect) + ' Critical Damage' + this.getValue(skill, effect) + this.getTurns(effect);
