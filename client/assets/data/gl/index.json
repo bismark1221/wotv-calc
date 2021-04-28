@@ -346,7 +346,7 @@
         "ATK": 58,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 392,
+        "MAG": 393,
         "DEX": 122,
         "AGI": 62,
         "LUCK": 171,
@@ -802,7 +802,7 @@
         "STOP_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 82
+        "INITIAL_AP": 69
       },
       "image": "lapsfina"
     },
@@ -911,7 +911,7 @@
       },
       "stats": {
         "HP": 1122,
-        "TP": 227,
+        "TP": 228,
         "AP": 109,
         "ATK": 51,
         "DEF": 0,
@@ -1090,7 +1090,7 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 3,
-        "INITIAL_AP": 14,
+        "INITIAL_AP": 12,
         "CRITIC_RATE": 11,
         "EVADE": 15
       },
@@ -1223,7 +1223,7 @@
         "CHARM_RES": -5,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 75,
+        "INITIAL_AP": 64,
         "CRITIC_RATE": 19,
         "NON_ATTACK_ACTIVATION_TIME": -750,
         "PLANT_KILLER": 50
@@ -1788,7 +1788,7 @@
         "HP": 1812,
         "TP": 130,
         "AP": 123,
-        "ATK": 344,
+        "ATK": 345,
         "DEF": 0,
         "SPR": 0,
         "MAG": 69,
@@ -1985,7 +1985,7 @@
         "HP": 2063,
         "TP": 117,
         "AP": 110,
-        "ATK": 392,
+        "ATK": 393,
         "DEF": 0,
         "SPR": 0,
         "MAG": 67,
@@ -2144,16 +2144,16 @@
         "fr": "Seymore"
       },
       "stats": {
-        "HP": 1592,
-        "TP": 93,
-        "AP": 88,
-        "ATK": 310,
+        "HP": 2786,
+        "TP": 98,
+        "AP": 93,
+        "ATK": 548,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 51,
-        "DEX": 182,
-        "AGI": 62,
-        "LUCK": 176,
+        "MAG": 92,
+        "DEX": 232,
+        "AGI": 64,
+        "LUCK": 207,
         "ICE_RES": 15,
         "WATER_RES": -15,
         "PIERCE_RES": -15,
@@ -2165,8 +2165,10 @@
         "BERSERK_RES": 40,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 15,
-        "CRITIC_RATE": 36,
+        "INITIAL_AP": 16,
+        "CRITIC_RATE": 43,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "ACCURACY": 30
       },
       "image": "lapssimr"
@@ -2201,7 +2203,7 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 28,
+        "INITIAL_AP": 23,
         "CRITIC_RATE": 33,
         "INCREASE_UNIT_LEVEL": 0,
         "MAX_DAMAGE": 2000,
@@ -3025,7 +3027,7 @@
         "ATK": 65,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 338,
+        "MAG": 339,
         "DEX": 169,
         "AGI": 50,
         "LUCK": 142,
@@ -3163,7 +3165,7 @@
         "ATK": 58,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 375,
+        "MAG": 376,
         "DEX": 145,
         "AGI": 58,
         "LUCK": 175,
@@ -3529,6 +3531,42 @@
         "LIGHTNING_ATK": 15
       },
       "image": "niern9ts"
+    },
+    {
+      "names": {
+        "en": "Mont (King of Leonis)",
+        "fr": "Mont (Roi de Leonis)"
+      },
+      "stats": {
+        "HP": 5236,
+        "TP": 132,
+        "AP": 153,
+        "ATK": 403,
+        "DEF": 14,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 237,
+        "AGI": 65,
+        "LUCK": 244,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 25,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "POISON_RES": 10,
+        "BLIND_RES": 50,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 27,
+        "CRITIC_RATE": 13,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "FIRE_ATK": 15,
+        "AOE_RES": 15
+      },
+      "image": "lapsmont_01"
     }
   ]
 }

@@ -3129,78 +3129,6 @@
             "value": "FINAL FANTASY IV [EX2]"
         },
         {
-            "key": "QE_EV_FF10_01",
-            "value": "Combat 1 de FINAL FANTASY X"
-        },
-        {
-            "key": "QE_EV_FF10_02",
-            "value": "Combat 2 de FINAL FANTASY X"
-        },
-        {
-            "key": "QE_EV_FF10_03",
-            "value": "Autoroute en ruines"
-        },
-        {
-            "key": "QE_EV_FF10_04",
-            "value": "Dôme de Yevon"
-        },
-        {
-            "key": "QE_EV_FF10_05",
-            "value": "Dôme de Yevon - Limbes  "
-        },
-        {
-            "key": "QE_EV_FF10_06",
-            "value": "Combat 1 de FINAL FANTASY X [Intermédiaire]"
-        },
-        {
-            "key": "QE_EV_FF10_07",
-            "value": "Combat 2 de FINAL FANTASY X [Intermédiaire]"
-        },
-        {
-            "key": "QE_EV_FF10_08",
-            "value": "Autoroute en ruines [Intermédiaire]"
-        },
-        {
-            "key": "QE_EV_FF10_09",
-            "value": "Dôme de Yevon [Intermédiaire]"
-        },
-        {
-            "key": "QE_EV_FF10_10",
-            "value": "Dôme de Yevon - Limbes [Intermédiaire]"
-        },
-        {
-            "key": "QE_EV_FF10_EX_01",
-            "value": "FINAL FANTASY X [EX 1]"
-        },
-        {
-            "key": "QE_EV_FF10_EX_03",
-            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile]"
-        },
-        {
-            "key": "QE_MU_FF10_EX_01",
-            "value": "FINAL FANTASY X [EX 1] "
-        },
-        {
-            "key": "QE_MU_FF10_EX_03",
-            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile] "
-        },
-        {
-            "key": "QE_EV_FF10_EX_02",
-            "value": "FINAL FANTASY X [EX 2]"
-        },
-        {
-            "key": "QE_EV_FF10_EX_04",
-            "value": "Quête EX 2 de FINAL FANTASY X [Super difficile]"
-        },
-        {
-            "key": "QE_MU_FF10_EX_02",
-            "value": "FINAL FANTASY X [EX 2]"
-        },
-        {
-            "key": "QE_MU_FF10_EX_04",
-            "value": "Quête EX 2 de FINAL FANTASY X [Super difficile]"
-        },
-        {
             "key": "QE_EV_NieR_01",
             "value": "Combat 1 de NieR:Automata"
         },
@@ -3271,6 +3199,78 @@
         {
             "key": "QE_MU_NieR_EX_04",
             "value": "Quête EX 2 de NieR:Automata [Super difficile]"
+        },
+        {
+            "key": "QE_EV_FF10_01",
+            "value": "Combat 1 de FINAL FANTASY X"
+        },
+        {
+            "key": "QE_EV_FF10_02",
+            "value": "Combat 2 de FINAL FANTASY X"
+        },
+        {
+            "key": "QE_EV_FF10_03",
+            "value": "Autoroute en ruines"
+        },
+        {
+            "key": "QE_EV_FF10_04",
+            "value": "Dôme de Yevon"
+        },
+        {
+            "key": "QE_EV_FF10_05",
+            "value": "Dôme de Yevon - Limbes  "
+        },
+        {
+            "key": "QE_EV_FF10_06",
+            "value": "Combat 1 de FINAL FANTASY X [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_07",
+            "value": "Combat 2 de FINAL FANTASY X [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_08",
+            "value": "Autoroute en ruines [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_09",
+            "value": "Dôme de Yevon [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_10",
+            "value": "Dôme de Yevon - Limbes [Intermédiaire]"
+        },
+        {
+            "key": "QE_EV_FF10_EX_01",
+            "value": "FINAL FANTASY X [EX 1]"
+        },
+        {
+            "key": "QE_EV_FF10_EX_03",
+            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile]"
+        },
+        {
+            "key": "QE_MU_FF10_EX_01",
+            "value": "FINAL FANTASY X [EX 1] "
+        },
+        {
+            "key": "QE_MU_FF10_EX_03",
+            "value": "Quête EX 1 de FINAL FANTASY X [Super difficile] "
+        },
+        {
+            "key": "QE_EV_FF10_EX_02",
+            "value": "FINAL FANTASY X [EX 2]"
+        },
+        {
+            "key": "QE_EV_FF10_EX_04",
+            "value": "Quête EX 2 de FINAL FANTASY X [Super difficile]"
+        },
+        {
+            "key": "QE_MU_FF10_EX_02",
+            "value": "FINAL FANTASY X [EX 2]"
+        },
+        {
+            "key": "QE_MU_FF10_EX_04",
+            "value": "Quête EX 2 de FINAL FANTASY X [Super difficile]"
         },
         {
             "key": "QE_EV_ALIM_01",
@@ -4443,6 +4443,10 @@
         {
             "key": "QE_SB_TSLP_01",
             "value": "Combat contre Tétra-Sylphides"
+        },
+        {
+            "key": "QE_SB_TSLP_02",
+            "value": "Combat contre Tétra-Sylphides (2)"
         },
         {
             "key": "QE_SB_THDG_01",

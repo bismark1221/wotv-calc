@@ -1036,7 +1036,7 @@ export class Unit {
     });
 
     Object.keys(this.percentStats).forEach(stat => {
-      const totalPercentValue = 0;
+      let totalPercentValue = 0;
       Object.keys(this.percentStats[stat]).forEach(type => {
         if (!this.stats[stat][type]) {
           this.stats[stat][type] = 0;

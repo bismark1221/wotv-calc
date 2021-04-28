@@ -3394,6 +3394,51 @@
     "type": "job_awake_orb",
     "icon": "JB_NIER_N9TS"
   },
+  "IT_JB_MM_MONT_01": {
+    "dataId": "IT_JB_MM_MONT_01",
+    "names": {
+      "en": "Archlord's Memory (Green)",
+      "fr": "Souvenir de Souverain (Vert)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MONT_01"
+  },
+  "IT_JB_MM_MONT_01_2": {
+    "dataId": "IT_JB_MM_MONT_01_2",
+    "names": {
+      "en": "Archlord's Memory (Blue)",
+      "fr": "Souvenir de Souverain (Bleu)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MONT_01"
+  },
+  "IT_JB_MM_MONT_01_3": {
+    "dataId": "IT_JB_MM_MONT_01_3",
+    "names": {
+      "en": "Archlord's Memory (Purple)",
+      "fr": "Souvenir de Souverain (Violet)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MONT_01"
+  },
+  "IT_JB_MM_MONT_01_4": {
+    "dataId": "IT_JB_MM_MONT_01_4",
+    "names": {
+      "en": "Archlord's Memory (Yellow)",
+      "fr": "Souvenir de Souverain (Jaune)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MONT_01"
+  },
+  "IT_JB_MM_MONT_01_5": {
+    "dataId": "IT_JB_MM_MONT_01_5",
+    "names": {
+      "en": "Archlord's Memory (Red)",
+      "fr": "Souvenir de Souverain (Rouge)"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_MONT_01"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5354,6 +5399,14 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_MONT_01": {
+    "dataId": "IT_PI_LW_MONT_01",
+    "names": {
+      "en": "Mont (King of Leonis) Unit Shard",
+      "fr": "Fragment d'unité de Mont (Roi de Leonis)"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6151,6 +6204,14 @@
     "names": {
       "en": "[NieR] UR Unit Mindsphere",
       "fr": "[NieR] Sphère spirituelle d'unité UR"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_MONT_01": {
+    "dataId": "IT_SP_LW_MONT_01",
+    "names": {
+      "en": "Mont (King of Leonis) Mindsphere",
+      "fr": "Sphère spirituelle de Mont (Roi de Leonis)"
     },
     "type": "exjob_orb"
   },
@@ -9309,6 +9370,51 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_GL_11": {
+    "dataId": "IT_US_SE_JB_05_GL_11",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Spinel x70 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 70 spinelles"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_07": {
+    "dataId": "IT_US_SE_JB_04_GL_07",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Citrine x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 30 citrines"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_07": {
+    "dataId": "IT_US_SE_JB_03_GL_07",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Charoite x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 30 charoïtes"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_05": {
+    "dataId": "IT_US_SE_JB_02_GL_05",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Azurite x30 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 30 azurites"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_05": {
+    "dataId": "IT_US_SE_JB_01_GL_05",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Jadeite x15 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 15 jades"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_GL_04": {
     "dataId": "IT_US_SE_PI_COM_GL_04",
     "names": {
@@ -10628,6 +10734,51 @@
     "names": {
       "en": "[Spring 2021 Part I] Select Job Memory (Green) x1 Summon Ticket",
       "fr": "[Spécial printemps 2021 - Partie I] Ticket sélectionneur d'un souvenir de job (Vert)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_05_GL_03": {
+    "dataId": "IT_US_SE_JB_MM_05_GL_03",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Job Memory (Red) x5 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 5 souvenirs de job (Rouges)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_04_GL_03": {
+    "dataId": "IT_US_SE_JB_MM_04_GL_03",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Job Memory (Yellow) x4 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 4 souvenirs de job (Jaunes)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_03_GL_03": {
+    "dataId": "IT_US_SE_JB_MM_03_GL_03",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Job Memory (Purple) x3 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 3 souvenirs de job (Violets)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_02_GL_03": {
+    "dataId": "IT_US_SE_JB_MM_02_GL_03",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Job Memory (Blue) x2 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur de 2 souvenirs de job (Bleus)"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_MM_01_GL_03": {
+    "dataId": "IT_US_SE_JB_MM_01_GL_03",
+    "names": {
+      "en": "[Spring 2021 Part II] Select Job Memory (Green) x1 Summon Ticket",
+      "fr": "[Spécial printemps 2021 - Partie II] Ticket sélectionneur d'un souvenir de job (Vert)"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -12843,6 +12994,15 @@
     "type": "tickets",
     "icon": "IT_US_SE_SSR_U_TICKET"
   },
+  "IT_US_SE_SSR_U_GL05": {
+    "dataId": "IT_US_SE_SSR_U_GL05",
+    "names": {
+      "en": "Select MR Unit Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'unité MR"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_SSR_U_TICKET"
+  },
   "IT_US_SE_PI_15": {
     "dataId": "IT_US_SE_PI_15",
     "names": {
@@ -13232,6 +13392,15 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_12"
+  },
+  "IT_STAMP_2101": {
+    "dataId": "IT_STAMP_2101",
+    "names": {
+      "en": "June Token",
+      "fr": "Insigne de juin"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_01"
   },
   "IT_KEY_JP": {
     "dataId": "IT_KEY_JP",

@@ -30805,204 +30805,6 @@
       "based": "physic"
     }
   },
-  "UN_FF10_E_YNLS": {
-    "dataId": "UN_FF10_E_YNLS",
-    "names": {
-      "en": "Yunalesca",
-      "fr": "Yunalesca"
-    },
-    "rarity": "N",
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 345,
-        "max": 7455
-      },
-      "TP": {
-        "min": 60,
-        "max": 150
-      },
-      "AP": {
-        "min": 72,
-        "max": 144
-      },
-      "ATK": {
-        "min": 40,
-        "max": 132
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 80,
-        "max": 220
-      },
-      "DEX": {
-        "min": 104,
-        "max": 243
-      },
-      "AGI": {
-        "min": 42,
-        "max": 95
-      },
-      "LUCK": {
-        "min": 96,
-        "max": 229
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": -5,
-        "max": -5
-      },
-      "PIERCE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "STRIKE_RES": {
-        "min": 5,
-        "max": 5
-      },
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -5,
-        "max": -5
-      },
-      "POISON_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "BLIND_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "SLEEP_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "SILENCE_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "PARALYZE_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "CONFUSION_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "PETRIFY_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "TOAD_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "CHARM_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "SLOW_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "STOP_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "IMMOBILIZE_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "DISABLE_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "BERSERK_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "DOOM_RES": {
-        "min": 999,
-        "max": 999
-      },
-      "MOVE": {
-        "min": 0,
-        "max": 0
-      },
-      "JUMP": {
-        "min": 0,
-        "max": 0
-      },
-      "MAX_LV": {}
-    },
-    "element": "dark",
-    "image": "ff10ynls",
-    "species": "undead",
-    "slug": "yunalesca",
-    "attack": {
-      "names": {
-        "en": "Normal Attack",
-        "fr": "Attaque normale"
-      },
-      "effects": [
-        {
-          "type": "POISON_ATK",
-          "minValue": 5,
-          "maxValue": 15,
-          "calcType": "percent",
-          "rate": 25,
-          "turn": 3,
-          "target": "ennemySide",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_YNLS_ATK",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "all",
-        "effType": "DAMAGE",
-        "formula": {}
-      },
-      "elem": [
-        "neutral"
-      ],
-      "type": "skill",
-      "target": "ennemySide",
-      "maxLevel": 20,
-      "range": {
-        "h": 2,
-        "l": 5,
-        "s": 1
-      },
-      "based": "physic"
-    }
-  },
   "UN_NieR_E_MCLF": {
     "dataId": "UN_NieR_E_MCLF",
     "names": {
@@ -31510,6 +31312,204 @@
         "h": 1,
         "l": 1,
         "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_FF10_E_YNLS": {
+    "dataId": "UN_FF10_E_YNLS",
+    "names": {
+      "en": "Yunalesca",
+      "fr": "Yunalesca"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 345,
+        "max": 7455
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 40,
+        "max": 132
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 80,
+        "max": 220
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 42,
+        "max": 95
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 0,
+        "max": 0
+      },
+      "JUMP": {
+        "min": 0,
+        "max": 0
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "ff10ynls",
+    "species": "undead",
+    "slug": "yunalesca",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale"
+      },
+      "effects": [
+        {
+          "type": "POISON_ATK",
+          "minValue": 5,
+          "maxValue": 15,
+          "calcType": "percent",
+          "rate": 25,
+          "turn": 3,
+          "target": "ennemySide",
+          "timing": "SKILL_AFTER"
+        }
+      ],
+      "dataId": "SK_YNLS_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "all",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 5,
+        "s": 1
       },
       "based": "physic"
     }
@@ -56835,6 +56835,14 @@
         "s": 0
       },
       "based": "physic"
+    },
+    "replacedSkills": {
+      "SK_LW_RAIN_P_2": [
+        {
+          "oldSkill": "SK_LW_RAIN_M_3",
+          "newSkill": "SK_LW_RAIN_M_3_B"
+        }
+      ]
     }
   },
   "UN_LW_E_VKTR_MOGI": {
@@ -59128,6 +59136,34 @@
         "s": 0
       },
       "based": "physic"
+    },
+    "replacedSkills": {
+      "SK_LW_CAL_P_1": [
+        {
+          "oldSkill": "SK_LW_CAL_M_3",
+          "newSkill": "SK_LW_CAL_M_3_B"
+        },
+        {
+          "oldSkill": "SK_LW_CAL_M_1",
+          "newSkill": "SK_LW_CAL_M_1_B"
+        },
+        {
+          "oldSkill": "SK_LW_CAL_S_3",
+          "newSkill": "SK_LW_CAL_S_3_B"
+        },
+        {
+          "oldSkill": "SK_LW_CAL_M_1_SUB",
+          "newSkill": "SK_LW_CAL_M_1_B_SUB"
+        },
+        {
+          "oldSkill": "SK_LW_CAL_M_3_SUB",
+          "newSkill": "SK_LW_CAL_M_3_B_SUB"
+        },
+        {
+          "oldSkill": "SK_VC_LW_XMAS_PVA",
+          "newSkill": "SK_VC_LW_XMAS_PVA_B"
+        }
+      ]
     }
   },
   "UN_LW_E_HLNA_MOGI": {

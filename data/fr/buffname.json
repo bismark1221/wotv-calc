@@ -1913,6 +1913,54 @@
             "value": ""
         },
         {
+            "key": "BUFF_LW_EC_MONT_01_A_01_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_MONT_01_A_01_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_M_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_M_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_M_3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_S_1_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_S_1_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_S_3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_S_4",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_P_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_MONT_01_C_01B",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_MONT_01_P_2",
+            "value": ""
+        },
+        {
             "key": "BUFF_BTL_GETSP_1-999_U",
             "value": ""
         },
@@ -2849,6 +2897,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_LB_LW_MONT_01",
+            "value": ""
+        },
+        {
             "key": "BUFF_SMN_MABR",
             "value": ""
         },
@@ -3778,6 +3830,14 @@
         },
         {
             "key": "BUFF_MA_NIER_N9TS_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_MONT_01",
+            "value": ""
+        },
+        {
+            "key": "BUFF_MA_LW_MONT_01_S",
             "value": ""
         },
         {
@@ -8421,6 +8481,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_ACC_LW_MONT_01_1",
+            "value": ""
+        },
+        {
             "key": "BUFF_FFT_SWO_002_2",
             "value": ""
         },
@@ -11587,6 +11651,38 @@
         {
             "key": "BUFF_TSLP_33",
             "value": "Terraphage +7 %"
+        },
+        {
+            "key": "BUFF_TSLP_34",
+            "value": "Magie d'invocation niv. 20"
+        },
+        {
+            "key": "BUFF_TSLP_35",
+            "value": "Taux de précision +5"
+        },
+        {
+            "key": "BUFF_TSLP_36",
+            "value": "Taux d'esquive +5"
+        },
+        {
+            "key": "BUFF_TSLP_37",
+            "value": "Taux d'esquive +5"
+        },
+        {
+            "key": "BUFF_TSLP_38",
+            "value": "Attaque de vent +4 %"
+        },
+        {
+            "key": "BUFF_TSLP_39",
+            "value": "Attaque de vent +5 %"
+        },
+        {
+            "key": "BUFF_TSLP_40",
+            "value": "Attaque de vent +6 %"
+        },
+        {
+            "key": "BUFF_TSLP_41",
+            "value": "Attaque de vent +10 %"
         },
         {
             "key": "BUFF_OCHU_01",
@@ -16882,7 +16978,7 @@
         },
         {
             "key": "BUFF_ARENA_00011",
-            "value": "Att tranchante ↑"
+            "value": "Attaque tranchante ↑"
         },
         {
             "key": "BUFF_ARENA_GL_00001",
@@ -16898,7 +16994,7 @@
         },
         {
             "key": "BUFF_GVG_001",
-            "value": "Att d'ombre ↑"
+            "value": "Attaque d'ombre ↑"
         },
         {
             "key": "BUFF_GVG_002",
@@ -16906,7 +17002,7 @@
         },
         {
             "key": "BUFF_GVG_003",
-            "value": "Att d'eau ↑"
+            "value": "Attaque d'eau ↑"
         },
         {
             "key": "BUFF_GVG_004",
@@ -16938,7 +17034,7 @@
         },
         {
             "key": "BUFF_CLASSMATCH_001",
-            "value": "Coût maximum : 540"
+            "value": "Limitation de coût : 540 ou moins"
         },
         {
             "key": "BUFF_CLASSMATCH_002",
