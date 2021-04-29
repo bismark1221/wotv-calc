@@ -103,13 +103,64 @@ export class QuestService {
     }
   }
 
+  private reduceString(s: any) {
+    return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
+  }
+
+  sortByName(quests, order = 'asc') {
+    quests.sort((a: any, b: any) => {
+      const x = this.reduceString(a.name && a.name !== 'New Quest' ? a.name : a.getName(this.translateService));
+      const y = this.reduceString(b.name && a.name !== 'New Quest' ? b.name : b.getName(this.translateService));
+
+      if (a.type === 'story' && b.type === 'story') {
+        const tableA = x.split(' ');
+        const tableB = y.split(' ');
+
+        const storySplitA = tableA[0].split(':');
+        const storySplitB = tableB[0].split(':');
+
+        if (parseInt(storySplitA[0], 10) > parseInt(storySplitB[0], 10)) {
+          return order === 'asc' ? 1 : -1;
+        } else if (parseInt(storySplitB[0], 10) > parseInt(storySplitA[0], 10)) {
+          return order === 'asc' ? -1 : 1;
+        } else {
+          if (parseInt(storySplitA[1], 10) > parseInt(storySplitB[1], 10)) {
+            return order === 'asc' ? 1 : -1;
+          } else if (parseInt(storySplitB[1], 10) > parseInt(storySplitA[1], 10)) {
+            return order === 'asc' ? -1 : 1;
+          } else {
+            if (parseInt(storySplitA[2], 10) > parseInt(storySplitB[2], 10)) {
+              return order === 'asc' ? 1 : -1;
+            } else if (parseInt(storySplitB[2], 10) > parseInt(storySplitA[2], 10)) {
+              return order === 'asc' ? -1 : 1;
+            } else {
+              if (parseInt(storySplitA[3], 10) > parseInt(storySplitB[3], 10)) {
+                return order === 'asc' ? 1 : -1;
+              } else if (parseInt(storySplitB[3], 10) > parseInt(storySplitA[3], 10)) {
+                return order === 'asc' ? -1 : 1;
+              }
+            }
+          }
+        }
+      } else {
+        if (order === 'asc') {
+          return x.localeCompare(y, 'ja');
+        } else {
+          return y.localeCompare(x, 'ja');
+        }
+      }
+    });
+
+    return quests;
+  }
+
   async getQuestsForListing(filters = null, sort = 'name', order = 'asc') {
     await this.getQuests();
     const quests = this.filterQuests(this[this.navService.getVersion() + '_quests'], filters);
 
     switch (sort) {
       case 'name' :
-        this.toolService.sortByName(quests, order);
+        this.sortByName(quests, order);
       break;
       default :
         console.log('not managed sort');
@@ -132,6 +183,68 @@ export class QuestService {
       return filteredQuests;
     } else {
       return quests;
+    }
+  }
+
+  formatType(type) {
+    switch (type) {
+      case 'story' :
+        return 'Story';
+      break;
+      case 'event' :
+        return 'Event';
+      break;
+      case 'hard_quest_unit' :
+        return 'Hard Quest (Unit)';
+      break;
+      case 'multi' :
+        return 'Multi';
+      break;
+      case 'character_quest' :
+        return 'Character Quest';
+      break;
+      case 'esper_quest' :
+        return 'Beast\'s Den';
+      break;
+      case 'arena' :
+        return 'Arena';
+      break;
+      case 'raid' :
+        return 'Raid';
+      break;
+      case 'rank_pvp' :
+        return 'Rank PVP';
+      break;
+      case 'free_pvp' :
+        return 'Free PVP';
+      break;
+      case 'friend_pvp' :
+        return 'Friend PVP';
+      break;
+      case 'gvg' :
+        return 'GVG';
+      break;
+      case 'tuto' :
+        return 'Tutoriel';
+      break;
+      case 'beginner' :
+        return 'Beginner';
+      break;
+      case 'guild_quest' :
+        return 'Guild Quest';
+      break;
+      case 'selection' :
+        return 'Selection Quest';
+      break;
+      case 'draft_pvp' :
+        return 'Draft PVP';
+      break;
+      case 'hard_quest_vc' :
+        return 'Hard Quest (Card)';
+      break;
+      default :
+        return 'Untranslated type...';
+      break;
     }
   }
 

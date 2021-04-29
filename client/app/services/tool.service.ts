@@ -11,21 +11,20 @@ export class ToolService {
     private translateService: TranslateService
   ) {}
 
-  private i(s: any) {
+  private reduceString(s: any) {
     return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
   }
 
   sortByName(items, order = 'asc') {
     items.sort((a: any, b: any) => {
-      const x = this.i(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : a.getName(this.translateService));
-      const y = this.i(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : b.getName(this.translateService));
+      const x = this.reduceString(a.name && a.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? a.name : a.getName(this.translateService));
+      const y = this.reduceString(b.name && b.name !== 'New Unit' && a.name !== 'New Job' && a.name !== 'New Vision Card' && a.name !== 'New Esper' && a.name !== 'New Equipment' ? b.name : b.getName(this.translateService));
 
       if (order === 'asc') {
         return x.localeCompare(y, 'ja');
       } else {
         return y.localeCompare(x, 'ja');
       }
-
     });
 
     return items;
@@ -43,8 +42,8 @@ export class ToolService {
       } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
         return 1;
       } else {
-        const x = this.i(a.getName(this.translateService));
-        const y = this.i(b.getName(this.translateService));
+        const x = this.reduceString(a.getName(this.translateService));
+        const y = this.reduceString(b.getName(this.translateService));
 
         return x.localeCompare(y, 'ja');
       }

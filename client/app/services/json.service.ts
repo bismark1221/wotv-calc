@@ -772,7 +772,7 @@ export class JsonService {
   questType = {
     1: 'story',
     2: 'event',
-    3: 'hard_quest',
+    3: 'hard_quest_unit',
     4: 'multi',
     5: 'character_quest',
     6: 'esper_quest',
@@ -781,7 +781,13 @@ export class JsonService {
     9: 'rank_pvp',
     10: 'free_pvp',
     11: 'friend_pvp',
-    12: 'gvg'
+    12: 'gvg',
+    20: 'tuto',
+    21: 'beginner',
+    25: 'guild_quest',
+    26: 'selection',
+    27: 'draft_pvp',
+    28: 'hard_quest_vc'
   };
 
   questMissionCond = {
@@ -3852,13 +3858,19 @@ export class JsonService {
         switchs: [],
         type: this.questType[quest.type],
         missions: [],
-        grid: []
+        grid: [],
+        buffs: []
       };
+
+      if (!this.questType[quest.type]) {
+        console.log('Quest type not found -- ' + questId + ' -- type : ' + quest.type);
+      }
 
       this.getNames(formattedQuest, 'questTitle', true, 'quest');
 
       this.getCompletionReward(formattedQuest, quest.c_rewards);
       this.getMissions(formattedQuest, quest.missions);
+      this.getQuestSkills(formattedQuest, quest.map.buffs);
 
       if (formattedQuest.type === 'story') {
         const storyNumber = questId.split('_')[2];
@@ -3944,6 +3956,19 @@ export class JsonService {
     }
   }
 
+  getQuestSkills(quest, buffs) {
+    if (buffs) {
+      buffs.forEach(buffId => {
+        const fakeSkill = {type: 'buff', effects: []};
+        this.updateSkill(quest, fakeSkill, buffId);
+
+        fakeSkill.effects.forEach(buff => {
+          quest.buffs.push(buff);
+        });
+      });
+    }
+  }
+
   formatMap(quest, mapId) {
     if (this[this.version].maps[mapId.split('/')[1]]) {
       const map = this[this.version].maps[mapId.split('/')[1]];
@@ -3979,11 +4004,22 @@ export class JsonService {
               quest.objects.push(this.formatEnemyForQuest(enemy));
               this.addOtherUnit(enemy, true);
             } else {
-              quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
+              if (!enemy.hasBody) {
+                quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
+              }
               quest.enemies.push(this.formatEnemyForQuest(enemy));
               this.addOtherUnit(enemy);
             }
           }
+        });
+      }
+
+      if (map.arena) {
+        let i = 0;
+        map.arena.forEach(arena => {
+          this.checkIfTileExist(quest, arena);
+          quest.grid[arena.x][arena.y].enemy = i;
+          i++;
         });
       }
 
@@ -4113,7 +4149,8 @@ export class JsonService {
         stats: {},
         element: rawUnit.elem ? this.elements[rawUnit.elem[0]] : null,
         image: null,
-        species: ''
+        species: '',
+        size: rawUnit.size ? rawUnit.size : 0
       };
 
       if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {

@@ -101,6 +101,7 @@ export class Unit {
   slug;
   board;
   attack;
+  size;
 
   // Only for builder
   star;
@@ -159,6 +160,7 @@ export class Unit {
     this.cost = unit.cost;
     this.replacedSkills = unit.replacedSkills;
     this.species = unit.species;
+    this.size = unit.size;
   }
 
   getName(translateService): string {

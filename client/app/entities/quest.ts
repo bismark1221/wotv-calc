@@ -21,6 +21,8 @@ export class Quest {
   objects = [];
   switchs = [];
 
+  buffs = [];
+
   missions = [];
   grid = [];
 
@@ -42,6 +44,8 @@ export class Quest {
     this.allies = quest.allies;
     this.objects = quest.objects;
     this.switchs = quest.switchs;
+
+    this.buffs = quest.buffs;
 
     this.missions = quest.missions;
     this.grid = quest.grid;

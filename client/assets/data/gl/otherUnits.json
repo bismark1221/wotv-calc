@@ -99,6 +99,7 @@
     "element": "earth",
     "image": "lapsmont",
     "species": "human",
+    "size": 0,
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -262,6 +263,7 @@
     "element": "dark",
     "image": "lapsstrn",
     "species": "human",
+    "size": 0,
     "slug": "sterne-leonis-1",
     "attack": {
       "names": {
@@ -386,6 +388,7 @@
     "element": "fire",
     "image": "lapsbomb",
     "species": "beast",
+    "size": 0,
     "slug": "bomb",
     "attack": {
       "names": {
@@ -515,6 +518,7 @@
     "element": "ice",
     "image": "lapsmdna",
     "species": "human",
+    "size": 0,
     "slug": "mediena-1",
     "attack": {
       "names": {
@@ -646,6 +650,7 @@
     "element": "light",
     "image": "lapsmacr",
     "species": "human",
+    "size": 0,
     "slug": "macherie-hourne-1",
     "limit": {
       "names": {
@@ -847,6 +852,7 @@
     "element": "wind",
     "image": "lapszuuu",
     "species": "bird",
+    "size": 0,
     "slug": "zuu",
     "attack": {
       "names": {
@@ -971,6 +977,7 @@
     "element": "dark",
     "image": "lapsbhmt",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -1095,6 +1102,7 @@
     "element": "dark",
     "image": "lapswolf",
     "species": "beast",
+    "size": 0,
     "slug": "wolf",
     "attack": {
       "names": {
@@ -1226,6 +1234,7 @@
     "element": "lightning",
     "image": "lapsszrt",
     "species": "human",
+    "size": 0,
     "slug": "schuzelt-1",
     "attack": {
       "names": {
@@ -1424,6 +1433,7 @@
     "element": "earth",
     "image": "lapscact_01",
     "species": "plant, metal",
+    "size": 0,
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -1465,6 +1475,7 @@
     "element": null,
     "image": "itemtrea",
     "species": "",
+    "size": 0,
     "slug": "treasure-chest"
   },
   "UN_LW_E_GLSP": {
@@ -1616,6 +1627,7 @@
     "element": "water",
     "image": "lapsglsp",
     "species": "aquatic",
+    "size": 0,
     "slug": "gil-snapper",
     "attack": {
       "names": {
@@ -1743,6 +1755,7 @@
     "element": "dark",
     "image": "lapswolf",
     "species": "beast",
+    "size": 0,
     "slug": "wolf",
     "attack": {
       "names": {
@@ -1879,6 +1892,7 @@
     "element": "wind",
     "image": "lapsogre",
     "species": "human",
+    "size": 0,
     "slug": "ogre",
     "attack": {
       "names": {
@@ -2018,6 +2032,7 @@
     "element": "wind",
     "image": "lapsogre_01",
     "species": "human",
+    "size": 0,
     "slug": "ogre-chief",
     "attack": {
       "names": {
@@ -2145,6 +2160,7 @@
     "element": "dark",
     "image": "lapswolf_01",
     "species": "beast",
+    "size": 0,
     "slug": "blind-wolf",
     "attack": {
       "names": {
@@ -2272,6 +2288,7 @@
     "element": "dark",
     "image": "lapswolf_02",
     "species": "beast",
+    "size": 0,
     "slug": "kaiser-wolf",
     "attack": {
       "names": {
@@ -2411,6 +2428,7 @@
     "element": "fire",
     "image": "lapsbomb_02",
     "species": "beast",
+    "size": 0,
     "slug": "grenade",
     "attack": {
       "names": {
@@ -2550,6 +2568,7 @@
     "element": "fire",
     "image": "lapsbomb",
     "species": "beast",
+    "size": 0,
     "slug": "bomb",
     "attack": {
       "names": {
@@ -2689,6 +2708,7 @@
     "element": "fire",
     "image": "lapsbomb_01",
     "species": "beast",
+    "size": 0,
     "slug": "balloon",
     "attack": {
       "names": {
@@ -2831,6 +2851,7 @@
     "element": "earth",
     "image": "lapselem_02",
     "species": "fairy",
+    "size": 0,
     "slug": "earth-elemental",
     "attack": {
       "names": {
@@ -2971,6 +2992,7 @@
     "element": "dark",
     "image": "lapsskel",
     "species": "undead",
+    "size": 0,
     "slug": "skeleton",
     "attack": {
       "names": {
@@ -3108,6 +3130,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3247,6 +3270,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3387,6 +3411,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3527,6 +3552,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3687,6 +3713,7 @@
     "element": "wind",
     "image": "lapsmabr",
     "species": "plant",
+    "size": 0,
     "slug": "malboro",
     "attack": {
       "names": {
@@ -3829,6 +3856,7 @@
     "element": "wind",
     "image": "lapszuuu",
     "species": "bird",
+    "size": 0,
     "slug": "zuu",
     "attack": {
       "names": {
@@ -3971,6 +3999,7 @@
     "element": "fire",
     "image": "lapselem",
     "species": "fairy",
+    "size": 0,
     "slug": "fire-elemental",
     "attack": {
       "names": {
@@ -4114,6 +4143,7 @@
     "element": "wind",
     "image": "lapselem_05",
     "species": "fairy",
+    "size": 0,
     "slug": "wind-elemental",
     "attack": {
       "names": {
@@ -4257,6 +4287,7 @@
     "element": "water",
     "image": "lapselem_01",
     "species": "fairy",
+    "size": 0,
     "slug": "water-elemental",
     "attack": {
       "names": {
@@ -4400,6 +4431,7 @@
     "element": "ice",
     "image": "lapselem_04",
     "species": "fairy",
+    "size": 0,
     "slug": "ice-elemental",
     "attack": {
       "names": {
@@ -4537,6 +4569,7 @@
     "element": "earth",
     "image": "lapsslim",
     "species": "aquatic",
+    "size": 0,
     "slug": "green-slime",
     "attack": {
       "names": {
@@ -4676,6 +4709,7 @@
     "element": "dark",
     "image": "lapselem_07",
     "species": "fairy",
+    "size": 0,
     "slug": "dark-elemental",
     "attack": {
       "names": {
@@ -4819,6 +4853,7 @@
     "element": "lightning",
     "image": "lapselem_03",
     "species": "fairy",
+    "size": 0,
     "slug": "lightning-elemental",
     "attack": {
       "names": {
@@ -4956,6 +4991,7 @@
     "element": "light",
     "image": "lapsarmn",
     "species": "demon",
+    "size": 0,
     "slug": "ahriman",
     "attack": {
       "names": {
@@ -5095,6 +5131,7 @@
     "element": "light",
     "image": "lapselem_06",
     "species": "fairy",
+    "size": 0,
     "slug": "light-elemental",
     "attack": {
       "names": {
@@ -5241,6 +5278,7 @@
     "element": "wind",
     "image": "lapszuuu_01",
     "species": "bird",
+    "size": 0,
     "slug": "rudra",
     "attack": {
       "names": {
@@ -5386,6 +5424,7 @@
     "element": "wind",
     "image": "lapszuuu_02",
     "species": "bird",
+    "size": 0,
     "slug": "tot-aevis",
     "attack": {
       "names": {
@@ -5531,6 +5570,7 @@
     "element": "light",
     "image": "lapsarmn_01",
     "species": "demon",
+    "size": 0,
     "slug": "floateye",
     "attack": {
       "names": {
@@ -5664,6 +5704,7 @@
     "element": "earth",
     "image": "lapscact",
     "species": "plant",
+    "size": 0,
     "slug": "cactuar",
     "attack": {
       "names": {
@@ -5806,6 +5847,7 @@
     "element": "dark",
     "image": "lapsskel_02",
     "species": "undead",
+    "size": 0,
     "slug": "cursed-bones",
     "attack": {
       "names": {
@@ -5948,6 +5990,7 @@
     "element": "dark",
     "image": "lapsskel_01",
     "species": "undead",
+    "size": 0,
     "slug": "bloodbones",
     "attack": {
       "names": {
@@ -6085,6 +6128,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6222,6 +6266,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6365,6 +6410,7 @@
     "element": "lightning",
     "image": "lapsszrt",
     "species": "human",
+    "size": 0,
     "slug": "schuzelt-1",
     "attack": {
       "names": {
@@ -6406,6 +6452,7 @@
     "element": null,
     "image": "gmckmgsw",
     "species": "",
+    "size": 0,
     "slug": "summoning-circle"
   },
   "UN_LW_E_TH_00_LAN": {
@@ -6516,6 +6563,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6661,6 +6709,7 @@
     "element": null,
     "image": "lapsbm00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6804,6 +6853,7 @@
     "element": null,
     "image": "lapswm00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6941,6 +6991,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7075,6 +7126,7 @@
     "element": "light",
     "image": "lapsmacr",
     "species": "human",
+    "size": 0,
     "slug": "macherie-hourne-1",
     "attack": {
       "names": {
@@ -7216,6 +7268,7 @@
     "element": "wind",
     "image": "lapsth02",
     "species": "human",
+    "size": 0,
     "slug": "bandit-chief",
     "attack": {
       "names": {
@@ -7350,6 +7403,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7487,6 +7541,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -7627,6 +7682,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -7770,6 +7826,7 @@
     "element": null,
     "image": "lapsbm00",
     "species": "",
+    "size": 0,
     "slug": "black-mage",
     "attack": {
       "names": {
@@ -7910,6 +7967,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8047,6 +8105,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8187,6 +8246,7 @@
     "element": "light",
     "image": "lapsso03",
     "species": "human",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8330,6 +8390,7 @@
     "element": null,
     "image": "lapswm00",
     "species": "",
+    "size": 0,
     "slug": "white-mage",
     "attack": {
       "names": {
@@ -8467,6 +8528,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8609,6 +8671,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8749,6 +8812,7 @@
     "element": "neutral",
     "image": "lapsmurg",
     "species": "human",
+    "size": 0,
     "slug": "muraga-fennes",
     "attack": {
       "names": {
@@ -8790,6 +8854,7 @@
     "element": null,
     "image": "gmckswch",
     "species": "",
+    "size": 0,
     "slug": "switch-red"
   },
   "UN_LW_E_MONT": {
@@ -8903,6 +8968,7 @@
     "element": "earth",
     "image": "lapsmont",
     "species": "human",
+    "size": 0,
     "slug": "mont-leonis-1",
     "attack": {
       "names": {
@@ -9043,6 +9109,7 @@
     "element": "fire",
     "image": "lapslils",
     "species": "human",
+    "size": 0,
     "slug": "lilyth-1",
     "attack": {
       "names": {
@@ -9181,6 +9248,7 @@
     "element": "lightning",
     "image": "lapsso01",
     "species": "human",
+    "size": 0,
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -9318,6 +9386,7 @@
     "element": null,
     "image": "lapsso01",
     "species": "",
+    "size": 0,
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -9458,6 +9527,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -9594,6 +9664,7 @@
     "element": null,
     "image": "lapsso01",
     "species": "",
+    "size": 0,
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -9730,6 +9801,7 @@
     "element": null,
     "image": "lapsso01",
     "species": "",
+    "size": 0,
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -9869,6 +9941,7 @@
     "element": null,
     "image": "lapsso01",
     "species": "",
+    "size": 0,
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10006,6 +10079,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -10149,6 +10223,7 @@
     "element": "fire",
     "image": "lapsadld",
     "species": "human",
+    "size": 0,
     "slug": "adelard-1",
     "attack": {
       "names": {
@@ -10295,6 +10370,7 @@
     "element": "lightning",
     "image": "lapsthla",
     "species": "human",
+    "size": 0,
     "slug": "salire-1",
     "attack": {
       "names": {
@@ -10441,6 +10517,7 @@
     "element": "wind",
     "image": "lapshlna",
     "species": "human",
+    "size": 0,
     "slug": "helena-leonis-1",
     "attack": {
       "names": {
@@ -10482,6 +10559,7 @@
     "element": null,
     "image": "gmckswch_01",
     "species": "",
+    "size": 0,
     "slug": "switch-yellow"
   },
   "UN_GM_PLACED": {
@@ -10496,6 +10574,7 @@
     "element": null,
     "image": null,
     "species": "",
+    "size": 0,
     "slug": "floor-trap-needles"
   },
   "UN_GM_PLACED_FIRE": {
@@ -10510,6 +10589,7 @@
     "element": null,
     "image": null,
     "species": "",
+    "size": 0,
     "slug": "floor-trap-fire"
   },
   "UN_GM_PLACED_ATK": {
@@ -10524,6 +10604,7 @@
     "element": null,
     "image": null,
     "species": "",
+    "size": 0,
     "slug": "pillar-trap-arrows"
   },
   "UN_LW_E_IGNT_QE": {
@@ -10657,6 +10738,7 @@
     "element": "light",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -10791,6 +10873,7 @@
     "element": null,
     "image": "lapsnj00",
     "species": "",
+    "size": 0,
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -10925,6 +11008,7 @@
     "element": null,
     "image": "lapsnj01",
     "species": "",
+    "size": 0,
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -11071,6 +11155,7 @@
     "element": "wind",
     "image": "lapsgrgs",
     "species": "human",
+    "size": 0,
     "slug": "gargas",
     "attack": {
       "names": {
@@ -11208,6 +11293,7 @@
     "element": "dark",
     "image": "lapssdlx",
     "species": "human",
+    "size": 0,
     "slug": "shadowlynx-1",
     "attack": {
       "names": {
@@ -11342,6 +11428,7 @@
     "element": null,
     "image": "lapsnj01",
     "species": "",
+    "size": 0,
     "slug": "fennes-shinobi",
     "attack": {
       "names": {
@@ -11482,6 +11569,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -11619,6 +11707,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -11756,6 +11845,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -11895,6 +11985,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12038,6 +12129,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12181,6 +12273,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12321,6 +12414,7 @@
     "element": "water",
     "image": "lapszzan",
     "species": "human",
+    "size": 0,
     "slug": "zazan-1",
     "attack": {
       "names": {
@@ -12476,6 +12570,7 @@
     "element": "dark",
     "image": "lapsriry",
     "species": "human",
+    "size": 0,
     "slug": "rairyuu-1",
     "attack": {
       "names": {
@@ -12633,6 +12728,7 @@
     "element": "neutral",
     "image": "lapsstrn_01",
     "species": "human",
+    "size": 0,
     "slug": "sterne-knight-of-ruin-1",
     "attack": {
       "names": {
@@ -12674,6 +12770,7 @@
     "element": null,
     "image": "gmckcata",
     "species": "",
+    "size": 1,
     "slug": "catapult"
   },
   "UN_LW_E_PR_01_MGK": {
@@ -12784,6 +12881,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12926,6 +13024,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -13081,6 +13180,7 @@
     "element": "earth",
     "image": "lapsdrnd",
     "species": "human",
+    "size": 0,
     "slug": "dorando-1",
     "attack": {
       "names": {
@@ -13239,6 +13339,7 @@
     "element": "water",
     "image": "lapsramd",
     "species": "human",
+    "size": 0,
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -13378,6 +13479,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -13515,6 +13617,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -13652,6 +13755,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -13792,6 +13896,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -13929,6 +14034,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -14068,6 +14174,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -14208,6 +14315,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14345,6 +14453,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14484,6 +14593,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14621,6 +14731,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14758,6 +14869,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14897,6 +15009,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -14938,6 +15051,7 @@
     "element": null,
     "image": "gmckfenc",
     "species": "",
+    "size": 0,
     "slug": "snow-fence"
   },
   "UN_LW_E_SRJS": {
@@ -15063,6 +15177,7 @@
     "element": "ice",
     "image": "lapssrjs",
     "species": "human",
+    "size": 0,
     "slug": "serjes-1",
     "attack": {
       "names": {
@@ -15220,6 +15335,7 @@
     "element": "water",
     "image": "lapsunii",
     "species": "human",
+    "size": 0,
     "slug": "yuni-1",
     "attack": {
       "names": {
@@ -15378,6 +15494,7 @@
     "element": "water",
     "image": "lapssevr",
     "species": "human",
+    "size": 0,
     "slug": "severo-1",
     "attack": {
       "names": {
@@ -15515,6 +15632,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15676,6 +15794,7 @@
     "element": "water",
     "image": "lapsgrsr",
     "species": "human",
+    "size": 0,
     "slug": "glaciela-wezette-1",
     "attack": {
       "names": {
@@ -15815,6 +15934,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15976,6 +16096,7 @@
     "element": "fire",
     "image": "lapscmlo",
     "species": "human",
+    "size": 0,
     "slug": "camillo",
     "attack": {
       "names": {
@@ -16115,6 +16236,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16254,6 +16376,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16391,6 +16514,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16530,6 +16654,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16664,6 +16789,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16801,6 +16927,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -16941,6 +17068,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -17096,6 +17224,7 @@
     "element": "dark",
     "image": "lapsziza",
     "species": "human",
+    "size": 0,
     "slug": "xiza-1",
     "attack": {
       "names": {
@@ -17257,6 +17386,7 @@
     "element": "light",
     "image": "lapsvstr",
     "species": "human",
+    "size": 0,
     "slug": "vistralle-1",
     "attack": {
       "names": {
@@ -17298,6 +17428,7 @@
     "element": null,
     "image": "gmckbash",
     "species": "",
+    "size": 10,
     "slug": "carriage"
   },
   "UN_LW_E_SO_02_NIN": {
@@ -17405,6 +17536,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -17542,6 +17674,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -17682,6 +17815,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -17819,6 +17953,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -17958,6 +18093,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -18098,6 +18234,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -18256,6 +18393,7 @@
     "element": "lightning",
     "image": "lapsvadm",
     "species": "human",
+    "size": 0,
     "slug": "vadim-1",
     "attack": {
       "names": {
@@ -18408,6 +18546,7 @@
     "element": "dark",
     "image": "lapsdiaa",
     "species": "human",
+    "size": 0,
     "slug": "deah",
     "attack": {
       "names": {
@@ -18566,6 +18705,7 @@
     "element": "wind",
     "image": "lapsordr",
     "species": "human",
+    "size": 0,
     "slug": "oldoa-1",
     "attack": {
       "names": {
@@ -18718,6 +18858,7 @@
     "element": "light",
     "image": "lapsrobb",
     "species": "human",
+    "size": 0,
     "slug": "robb-hourne-1",
     "attack": {
       "names": {
@@ -18759,6 +18900,7 @@
     "element": null,
     "image": "gmckpkg2",
     "species": "",
+    "size": 1,
     "slug": "powder-keg-l"
   },
   "UN_LW_E_SO_02_MGK": {
@@ -18869,6 +19011,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -19008,6 +19151,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -19148,6 +19292,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -19189,6 +19334,7 @@
     "element": null,
     "image": "gmckfire",
     "species": "",
+    "size": 0,
     "slug": "torch"
   },
   "UN_GM_OPOT_01": {
@@ -19203,6 +19349,7 @@
     "element": null,
     "image": "gmckopot",
     "species": "",
+    "size": 0,
     "slug": "oil-pot"
   },
   "UN_LW_E_SKEL_02_2": {
@@ -19324,6 +19471,7 @@
     "element": "dark",
     "image": "lapsskel_02",
     "species": "undead",
+    "size": 0,
     "slug": "cursed-bones",
     "attack": {
       "names": {
@@ -19473,6 +19621,7 @@
     "element": "fire",
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -19611,6 +19760,7 @@
     "element": "earth",
     "image": "lapsnj00",
     "species": "human",
+    "size": 0,
     "slug": "fennes-shinobi",
     "attack": {
       "names": {
@@ -19751,6 +19901,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -19911,6 +20062,7 @@
     "element": "ice",
     "image": "lapsglms",
     "species": "human",
+    "size": 0,
     "slug": "gilgamesh-1",
     "limit": {
       "names": {
@@ -20000,6 +20152,7 @@
     "element": null,
     "image": null,
     "species": "",
+    "size": 0,
     "slug": "damage-zone"
   },
   "UN_LW_E_VKTR": {
@@ -20131,6 +20284,7 @@
     "element": "ice",
     "image": "lapsvktr",
     "species": "human",
+    "size": 0,
     "slug": "viktora-1",
     "attack": {
       "names": {
@@ -20291,6 +20445,7 @@
     "element": "light",
     "image": "lapsenbt",
     "species": "human",
+    "size": 0,
     "slug": "engelbert-1",
     "attack": {
       "names": {
@@ -20452,6 +20607,7 @@
     "element": "dark",
     "image": "lapsstrn_01",
     "species": "human",
+    "size": 0,
     "slug": "sterne-knight-of-ruin-1",
     "attack": {
       "names": {
@@ -20595,6 +20751,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -20740,6 +20897,7 @@
     "element": "fire",
     "image": "lapslama_01",
     "species": "demon",
+    "size": 0,
     "slug": "lamia-queen",
     "attack": {
       "names": {
@@ -20915,6 +21073,7 @@
     "element": "earth",
     "image": "lapsochu",
     "species": "plant",
+    "size": 1,
     "slug": "ochu",
     "attack": {
       "names": {
@@ -20956,6 +21115,7 @@
     "element": null,
     "image": "gmckshld",
     "species": "",
+    "size": 0,
     "slug": "great-shield"
   },
   "UN_GM_WALL": {
@@ -20970,6 +21130,7 @@
     "element": null,
     "image": "gmckwall",
     "species": "",
+    "size": 0,
     "slug": "breakable-wall"
   },
   "UN_LW_E_SNAK": {
@@ -21094,6 +21255,7 @@
     "element": "dark",
     "image": "lapssnak",
     "species": "arcana",
+    "size": 0,
     "slug": "arcane-serpent",
     "attack": {
       "names": {
@@ -21231,6 +21393,7 @@
     "element": null,
     "image": "lapsso03",
     "species": "",
+    "size": 0,
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -21418,6 +21581,7 @@
     "element": "dark",
     "image": "lapsmrge",
     "species": "arcana, beast",
+    "size": 2,
     "slug": "crystalite-beast-muraga",
     "attack": {
       "names": {
@@ -21606,6 +21770,7 @@
     "element": "dark",
     "image": "lapsmrge_snake01",
     "species": "arcana, beast",
+    "size": 2,
     "slug": "former-right-arm",
     "attack": {
       "names": {
@@ -21790,6 +21955,7 @@
     "element": "dark",
     "image": "lapsmrge_snake02",
     "species": "arcana, beast",
+    "size": 2,
     "slug": "former-right-leg",
     "attack": {
       "names": {
@@ -21974,6 +22140,7 @@
     "element": "dark",
     "image": "lapsmrge_snake03",
     "species": "arcana, beast",
+    "size": 2,
     "slug": "former-left-leg",
     "attack": {
       "names": {
@@ -22158,6 +22325,7 @@
     "element": "dark",
     "image": "lapsmrge_snake04",
     "species": "arcana, beast",
+    "size": 2,
     "slug": "former-left-arm",
     "attack": {
       "names": {
@@ -22295,6 +22463,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -22432,6 +22601,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -22571,6 +22741,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -22612,6 +22783,7 @@
     "element": null,
     "image": "gmckscf0",
     "species": "",
+    "size": 1,
     "slug": "collapsed-guard-tower-1"
   },
   "UN_GM_SCF1": {
@@ -22626,6 +22798,7 @@
     "element": null,
     "image": "gmckscf1",
     "species": "",
+    "size": 1,
     "slug": "collapsed-guard-tower-2"
   },
   "UN_GM_SCF2": {
@@ -22640,6 +22813,7 @@
     "element": null,
     "image": "gmckscf2",
     "species": "",
+    "size": 1,
     "slug": "collapsed-guard-tower-3"
   },
   "UN_LW_E_ARMN_02": {
@@ -22752,6 +22926,7 @@
     "element": "light",
     "image": "lapsarmn_02",
     "species": "demon",
+    "size": 0,
     "slug": "bloody-eye",
     "attack": {
       "names": {
@@ -22889,6 +23064,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -23026,6 +23202,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -23162,6 +23339,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -23300,6 +23478,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -23437,6 +23616,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -23583,6 +23763,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -23720,6 +23901,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -23860,6 +24042,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -24000,6 +24183,7 @@
     "element": "wind",
     "image": "lapsth02",
     "species": "human",
+    "size": 0,
     "slug": "bandit-chief",
     "attack": {
       "names": {
@@ -24137,6 +24321,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -24278,6 +24463,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -24438,6 +24624,7 @@
     "element": "wind",
     "image": "lapsmabr_01",
     "species": "plant",
+    "size": 0,
     "slug": "land-malboro",
     "attack": {
       "names": {
@@ -24578,6 +24765,7 @@
     "element": null,
     "image": "lapsso02",
     "species": "",
+    "size": 0,
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -24718,6 +24906,7 @@
     "element": null,
     "image": "lapsso05",
     "species": "",
+    "size": 0,
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -24842,6 +25031,7 @@
     "element": "wind",
     "image": "lapszuuu",
     "species": "bird",
+    "size": 0,
     "slug": "tot-aevis",
     "attack": {
       "names": {
@@ -24978,6 +25168,7 @@
     "element": "water",
     "image": "lapsmdfy",
     "species": "demon",
+    "size": 0,
     "slug": "mindflayer",
     "attack": {
       "names": {
@@ -25116,6 +25307,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -25253,6 +25445,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -25394,6 +25587,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -25534,6 +25728,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -25669,6 +25864,7 @@
     "element": "earth",
     "image": "lapsnj03",
     "species": "human",
+    "size": 0,
     "slug": "gouga-shinobi",
     "attack": {
       "names": {
@@ -25824,6 +26020,7 @@
     "element": "dark",
     "image": "lapsstrn",
     "species": "human",
+    "size": 0,
     "slug": "sterne-leonis-1",
     "attack": {
       "names": {
@@ -25982,6 +26179,7 @@
     "element": "earth",
     "image": "lapskton",
     "species": "human",
+    "size": 0,
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -26134,6 +26332,7 @@
     "element": "fire",
     "image": "lapselde",
     "species": "human",
+    "size": 0,
     "slug": "oelde-leonis-1",
     "attack": {
       "names": {
@@ -26279,6 +26478,7 @@
     "element": "lightning",
     "image": "lapsrart",
     "species": "human",
+    "size": 0,
     "slug": "learte-1",
     "attack": {
       "names": {
@@ -26427,6 +26627,7 @@
     "element": "fire",
     "image": "lapslama",
     "species": "demon",
+    "size": 0,
     "slug": "lamia",
     "attack": {
       "names": {
@@ -26587,6 +26788,7 @@
     "element": "light",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -26771,6 +26973,7 @@
     "element": "light",
     "image": "lapsthdg",
     "species": "dragon",
+    "size": 1,
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -26955,6 +27158,7 @@
     "element": "light",
     "image": "lapsthdg",
     "species": "dragon",
+    "size": 1,
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -27139,6 +27343,7 @@
     "element": "dark",
     "image": "ff04dmnw",
     "species": "stone, demon",
+    "size": 13,
     "slug": "demon-wall",
     "attack": {
       "names": {
@@ -27311,6 +27516,7 @@
     "element": "dark",
     "image": "ff04glbz",
     "species": "human",
+    "size": 0,
     "slug": "golbez",
     "attack": {
       "names": {
@@ -27486,6 +27692,7 @@
     "element": "dark",
     "image": "ff04glbz",
     "species": "human",
+    "size": 0,
     "slug": "golbez",
     "attack": {
       "names": {
@@ -27667,6 +27874,7 @@
     "element": "fire",
     "image": "ff10dfdz",
     "species": "machine",
+    "size": 1,
     "slug": "defender-z",
     "attack": {
       "names": {
@@ -27851,6 +28059,7 @@
     "element": "dark",
     "image": "ff10dkfn",
     "species": "aquatic",
+    "size": 1,
     "slug": "dark-flan",
     "attack": {
       "names": {
@@ -28035,6 +28244,7 @@
     "element": "wind",
     "image": "ff10ynls",
     "species": "undead",
+    "size": 14,
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -28230,6 +28440,7 @@
     "element": "wind",
     "image": "ff10ynls",
     "species": "undead",
+    "size": 14,
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -28404,6 +28615,7 @@
     "element": "fire",
     "image": "ff01wrmc",
     "species": "machine",
+    "size": 1,
     "slug": "death-machine",
     "attack": {
       "names": {
@@ -28550,6 +28762,7 @@
     "element": "fire",
     "image": "ff14ystl",
     "species": "human",
+    "size": 0,
     "slug": "yshtola-1",
     "attack": {
       "names": {
@@ -28688,6 +28901,7 @@
     "element": "light",
     "image": "ff14tncr",
     "species": "human",
+    "size": 0,
     "slug": "thancred-1",
     "attack": {
       "names": {
@@ -28860,6 +29074,7 @@
     "element": "light",
     "image": "ff14boss",
     "species": "",
+    "size": 1,
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -29035,6 +29250,7 @@
     "element": "light",
     "image": "ff14boss",
     "species": "",
+    "size": 1,
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -29163,6 +29379,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -29303,6 +29520,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -29463,6 +29681,7 @@
     "element": "earth",
     "image": "fft0mstd",
     "species": "human",
+    "size": 0,
     "slug": "mustadio-1",
     "attack": {
       "names": {
@@ -29623,6 +29842,7 @@
     "element": "ice",
     "image": "fft0agra",
     "species": "human",
+    "size": 0,
     "slug": "agrias-1",
     "attack": {
       "names": {
@@ -29765,6 +29985,7 @@
     "element": "fire",
     "image": "fft0chcb",
     "species": "bird",
+    "size": 0,
     "slug": "chocobo",
     "attack": {
       "names": {
@@ -29912,6 +30133,7 @@
     "element": "fire",
     "image": "fft0chcb1",
     "species": "bird",
+    "size": 0,
     "slug": "black-chocobo",
     "attack": {
       "names": {
@@ -30059,6 +30281,7 @@
     "element": "fire",
     "image": "fft0chcb_01",
     "species": "bird",
+    "size": 0,
     "slug": "red-chocobo",
     "attack": {
       "names": {
@@ -30217,6 +30440,7 @@
     "element": "light",
     "image": "fft0ramz",
     "species": "human",
+    "size": 0,
     "slug": "ramza-1",
     "limit": {
       "names": {
@@ -30413,6 +30637,7 @@
     "element": "dark",
     "image": "fft0gfgr",
     "species": "human",
+    "size": 0,
     "slug": "gaffgarion-1",
     "attack": {
       "names": {
@@ -30585,6 +30810,7 @@
     "element": "dark",
     "image": "fft0ccli",
     "species": "netherBeast",
+    "size": 0,
     "slug": "cuchulainn",
     "attack": {
       "names": {
@@ -30776,6 +31002,7 @@
     "element": "dark",
     "image": "ff04glbz",
     "species": "human",
+    "size": 0,
     "slug": "golbez",
     "attack": {
       "names": {
@@ -30945,6 +31172,7 @@
     "element": "fire",
     "image": "niermclf",
     "species": "machine",
+    "size": 0,
     "slug": "small-stubby",
     "attack": {
       "names": {
@@ -31116,6 +31344,7 @@
     "element": "earth",
     "image": "niereve0",
     "species": "machine",
+    "size": 0,
     "slug": "eve",
     "attack": {
       "names": {
@@ -31287,6 +31516,7 @@
     "element": "water",
     "image": "nieradam",
     "species": "machine",
+    "size": 0,
     "slug": "adam",
     "attack": {
       "names": {
@@ -31474,6 +31704,7 @@
     "element": "dark",
     "image": "ff10ynls",
     "species": "undead",
+    "size": 14,
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -31643,6 +31874,7 @@
     "element": "lightning",
     "image": "lapsnivl",
     "species": "human",
+    "size": 0,
     "slug": "nivlu-1",
     "attack": {
       "names": {
@@ -31816,6 +32048,7 @@
     "element": null,
     "image": "lapsnj00",
     "species": "",
+    "size": 0,
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -31977,6 +32210,7 @@
     "element": "wind",
     "image": "lapsrrir",
     "species": "human",
+    "size": 0,
     "slug": "loreila-1",
     "attack": {
       "names": {
@@ -32141,6 +32375,7 @@
     "element": "lightning",
     "image": "lapsscal",
     "species": "human",
+    "size": 0,
     "slug": "skahal-1",
     "attack": {
       "names": {
@@ -32279,6 +32514,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -32419,6 +32655,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -32557,6 +32794,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -32718,6 +32956,7 @@
     "element": "water",
     "image": "lapscris",
     "species": "human",
+    "size": 0,
     "slug": "creysse-1",
     "attack": {
       "names": {
@@ -32856,6 +33095,7 @@
     "element": "wind",
     "image": "lapsogre",
     "species": "human",
+    "size": 0,
     "slug": "ogre",
     "attack": {
       "names": {
@@ -32993,6 +33233,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -33157,6 +33398,7 @@
     "element": "earth",
     "image": "lapsdrnd",
     "species": "human",
+    "size": 0,
     "slug": "dorando-1",
     "attack": {
       "names": {
@@ -33324,6 +33566,7 @@
     "element": "lightning",
     "image": "lapslves",
     "species": "human",
+    "size": 0,
     "slug": "raviesse-1",
     "attack": {
       "names": {
@@ -33481,6 +33724,7 @@
     "element": "dark",
     "image": "lapsmabr_03",
     "species": "plant",
+    "size": 1,
     "slug": "magenta-malboro",
     "attack": {
       "names": {
@@ -33641,6 +33885,7 @@
     "element": "wind",
     "image": "lapsmabr_02",
     "species": "plant",
+    "size": 0,
     "slug": "great-malboro",
     "attack": {
       "names": {
@@ -33798,6 +34043,7 @@
     "element": "dark",
     "image": "lapsmabr_04",
     "species": "plant",
+    "size": 1,
     "slug": "malboro-matriarch",
     "attack": {
       "names": {
@@ -33973,6 +34219,7 @@
     "element": "ice",
     "image": "lapsfnrr",
     "species": "netherBeast",
+    "size": 1,
     "slug": "fenrir",
     "attack": {
       "names": {
@@ -34148,6 +34395,7 @@
     "element": "fire",
     "image": "lapsifrt",
     "species": "netherBeast",
+    "size": 1,
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -34338,6 +34586,7 @@
     "element": "water",
     "image": "lapscsli",
     "species": "aquatic",
+    "size": 1,
     "slug": "chocolate-flan",
     "attack": {
       "names": {
@@ -34516,6 +34765,7 @@
     "element": "ice",
     "image": "lapsshiv",
     "species": "netherBeast",
+    "size": 1,
     "slug": "shiva",
     "attack": {
       "names": {
@@ -34682,6 +34932,7 @@
     "element": "earth",
     "image": "lapscact_02",
     "species": "plant, metal",
+    "size": 0,
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -34837,6 +35088,7 @@
     "element": "wind",
     "image": "lapsyerm",
     "species": "human",
+    "size": 0,
     "slug": "yerma-1",
     "attack": {
       "names": {
@@ -35001,6 +35253,7 @@
     "element": "ice",
     "image": "lapsnasr",
     "species": "human",
+    "size": 0,
     "slug": "nasha-1",
     "attack": {
       "names": {
@@ -35139,6 +35392,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35280,6 +35534,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35421,6 +35676,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35559,6 +35815,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35697,6 +35954,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35866,6 +36124,7 @@
     "element": "wind",
     "image": "lapsluca",
     "species": "human",
+    "size": 0,
     "slug": "lucia-1",
     "attack": {
       "names": {
@@ -36026,6 +36285,7 @@
     "element": "water",
     "image": "lapstrel",
     "species": "human",
+    "size": 0,
     "slug": "tyrrell-1",
     "attack": {
       "names": {
@@ -36181,6 +36441,7 @@
     "element": "fire",
     "image": "lapsdrza",
     "species": "human",
+    "size": 0,
     "slug": "doluza",
     "attack": {
       "names": {
@@ -36336,6 +36597,7 @@
     "element": "lightning",
     "image": "lapsoooo",
     "species": "human",
+    "size": 0,
     "slug": "owe-1",
     "attack": {
       "names": {
@@ -36496,6 +36758,7 @@
     "element": "light",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "dark-steel-daemon",
     "attack": {
       "names": {
@@ -36537,6 +36800,7 @@
     "element": null,
     "image": "gmckcann",
     "species": "",
+    "size": 1,
     "slug": "rundall-cannon"
   },
   "UN_LW_E_RARD": {
@@ -36671,6 +36935,7 @@
     "element": "fire",
     "image": "lapsrard",
     "species": "human",
+    "size": 0,
     "slug": "rhaldor-1",
     "attack": {
       "names": {
@@ -36803,6 +37068,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -36967,6 +37233,7 @@
     "element": "fire",
     "image": "lapsglzk",
     "species": "human",
+    "size": 0,
     "slug": "galzahk",
     "attack": {
       "names": {
@@ -37128,6 +37395,7 @@
     "element": "ice",
     "image": "lapsmdna",
     "species": "human",
+    "size": 0,
     "slug": "mediena-1",
     "attack": {
       "names": {
@@ -37283,6 +37551,7 @@
     "element": "lightning",
     "image": "lapsfdrc",
     "species": "human",
+    "size": 0,
     "slug": "frederika-1",
     "attack": {
       "names": {
@@ -37456,6 +37725,7 @@
     "element": "earth",
     "image": "lapskton",
     "species": "human",
+    "size": 0,
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -37635,6 +37905,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -37808,6 +38079,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -37996,6 +38268,7 @@
     "element": null,
     "image": "lapspr01",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -38198,6 +38471,7 @@
     "element": "water",
     "image": "lapsglsp",
     "species": "aquatic",
+    "size": 0,
     "slug": "gil-snapper",
     "attack": {
       "names": {
@@ -38374,6 +38648,7 @@
     "element": null,
     "image": "lapspr00",
     "species": "",
+    "size": 0,
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -38513,6 +38788,7 @@
     "element": "wind",
     "image": "lapsogre_02",
     "species": "human",
+    "size": 0,
     "slug": "ogre-mage",
     "attack": {
       "names": {
@@ -38673,6 +38949,7 @@
     "element": "dark",
     "image": "lapsbhmt",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -38828,6 +39105,7 @@
     "element": "light",
     "image": "fft0ramz",
     "species": "human",
+    "size": 0,
     "slug": "ramza-1",
     "limit": {
       "names": {
@@ -39029,6 +39307,7 @@
     "element": "wind",
     "image": "lapsluca",
     "species": "human",
+    "size": 0,
     "slug": "lucia-1",
     "limit": {
       "names": {
@@ -39241,6 +39520,7 @@
     "element": "lightning",
     "image": "lapsfdrc",
     "species": "human",
+    "size": 0,
     "slug": "frederika-1",
     "limit": {
       "names": {
@@ -39447,6 +39727,7 @@
     "element": "ice",
     "image": "lapsmdna",
     "species": "human",
+    "size": 0,
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -39654,6 +39935,7 @@
     "element": "light",
     "image": "lapsenbt",
     "species": "human",
+    "size": 0,
     "slug": "engelbert-1",
     "limit": {
       "names": {
@@ -39844,6 +40126,7 @@
     "element": "water",
     "image": "lapsmrnd",
     "species": "human",
+    "size": 0,
     "slug": "miranda-1",
     "limit": {
       "names": {
@@ -40071,6 +40354,7 @@
     "element": "fire",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -40232,6 +40516,7 @@
     "element": "earth",
     "image": "lapsetre",
     "species": "human",
+    "size": 0,
     "slug": "etre-1",
     "attack": {
       "names": {
@@ -40401,6 +40686,7 @@
     "element": "earth",
     "image": "lapscact_01",
     "species": "plant, metal",
+    "size": 0,
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -40564,6 +40850,7 @@
     "element": "water",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -40709,6 +40996,7 @@
     "element": "fire",
     "image": "lapslama_02",
     "species": "demon",
+    "size": 0,
     "slug": "lamia-matriarch",
     "attack": {
       "names": {
@@ -40846,6 +41134,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -41009,6 +41298,7 @@
     "element": "water",
     "image": "lapsirdl",
     "species": "human",
+    "size": 0,
     "slug": "ildyra-1",
     "attack": {
       "names": {
@@ -41164,6 +41454,7 @@
     "element": "wind",
     "image": "lapsyerm",
     "species": "human",
+    "size": 0,
     "slug": "yerma-1",
     "attack": {
       "names": {
@@ -41301,6 +41592,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -41440,6 +41732,7 @@
     "element": null,
     "image": "lapsso00",
     "species": "",
+    "size": 0,
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -41598,6 +41891,7 @@
     "element": "dark",
     "image": "lapswhis",
     "species": "human",
+    "size": 0,
     "slug": "whisper-1",
     "attack": {
       "names": {
@@ -41759,6 +42053,7 @@
     "element": "ice",
     "image": "lapscley",
     "species": "human",
+    "size": 0,
     "slug": "khury-wezette-1",
     "attack": {
       "names": {
@@ -41920,6 +42215,7 @@
     "element": "dark",
     "image": "lapsgabl",
     "species": "human",
+    "size": 0,
     "slug": "garvall-1",
     "attack": {
       "names": {
@@ -42082,6 +42378,7 @@
     "element": "earth",
     "image": "lapsqilf",
     "species": "human",
+    "size": 0,
     "slug": "kilphe-1",
     "attack": {
       "names": {
@@ -42260,6 +42557,7 @@
     "element": "fire",
     "image": "lapsifrt",
     "species": "netherBeast",
+    "size": 1,
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -42438,6 +42736,7 @@
     "element": "fire",
     "image": "lapsifrt",
     "species": "netherBeast",
+    "size": 1,
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -42619,6 +42918,7 @@
     "element": "earth",
     "image": "lapsglem",
     "species": "netherBeast",
+    "size": 1,
     "slug": "golem",
     "attack": {
       "names": {
@@ -42811,6 +43111,7 @@
     "element": "earth",
     "image": "lapsglem",
     "species": "netherBeast",
+    "size": 1,
     "slug": "golem",
     "attack": {
       "names": {
@@ -42994,6 +43295,7 @@
     "element": "water",
     "image": "lapssire",
     "species": "netherBeast",
+    "size": 1,
     "slug": "siren",
     "attack": {
       "names": {
@@ -43172,6 +43474,7 @@
     "element": "wind",
     "image": "lapsmabr",
     "species": "plant",
+    "size": 0,
     "slug": "malboro",
     "attack": {
       "names": {
@@ -43350,6 +43653,7 @@
     "element": "light",
     "image": "lapsignt",
     "species": "demon",
+    "size": 1,
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -43531,6 +43835,7 @@
     "element": "dark",
     "image": "lapsbhmt",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -43699,6 +44004,7 @@
     "element": "dark",
     "image": "lapsbhmt_02",
     "species": "beast",
+    "size": 1,
     "slug": "greater-behemoth",
     "attack": {
       "names": {
@@ -43862,6 +44168,7 @@
     "element": "dark",
     "image": "lapsbhmt_01",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -44043,6 +44350,7 @@
     "element": "lightning",
     "image": "lapsramu",
     "species": "netherBeast",
+    "size": 1,
     "slug": "ramuh",
     "attack": {
       "names": {
@@ -44230,6 +44538,7 @@
     "element": "neutral",
     "image": "lapsodin",
     "species": "netherBeast",
+    "size": 1,
     "slug": "odin",
     "attack": {
       "names": {
@@ -44420,6 +44729,7 @@
     "element": "earth",
     "image": "lapsochu",
     "species": "plant",
+    "size": 1,
     "slug": "ochu",
     "attack": {
       "names": {
@@ -44598,6 +44908,7 @@
     "element": "wind",
     "image": "lapstslp",
     "species": "netherBeast",
+    "size": 1,
     "slug": "tetra-sylphid",
     "attack": {
       "names": {
@@ -44785,6 +45096,7 @@
     "element": "light",
     "image": "lapsthdg",
     "species": "dragon",
+    "size": 1,
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -44963,6 +45275,7 @@
     "element": "dark",
     "image": "lapsdabl",
     "species": "netherBeast",
+    "size": 1,
     "slug": "diabolos",
     "attack": {
       "names": {
@@ -45144,6 +45457,7 @@
     "element": "water",
     "image": "lapsmdfy",
     "species": "demon",
+    "size": 0,
     "slug": "mindflayer",
     "attack": {
       "names": {
@@ -45319,6 +45633,7 @@
     "element": "ice",
     "image": "lapsfnrr",
     "species": "netherBeast",
+    "size": 1,
     "slug": "fenrir",
     "attack": {
       "names": {
@@ -45506,6 +45821,7 @@
     "element": "earth",
     "image": "lapstitn",
     "species": "netherBeast",
+    "size": 1,
     "slug": "titan",
     "attack": {
       "names": {
@@ -45693,6 +46009,7 @@
     "element": "dark",
     "image": "lapsblmn",
     "species": "demon, fairy",
+    "size": 1,
     "slug": "bloody-moon",
     "attack": {
       "names": {
@@ -45880,6 +46197,7 @@
     "element": "lightning",
     "image": "lapsagon",
     "species": "machine",
+    "size": 1,
     "slug": "aigaion",
     "attack": {
       "names": {
@@ -46070,6 +46388,7 @@
     "element": "wind",
     "image": "lapschcb1",
     "species": "bird",
+    "size": 0,
     "slug": "chocobo",
     "attack": {
       "names": {
@@ -46260,6 +46579,7 @@
     "element": "lightning",
     "image": "lapstnbr",
     "species": "human",
+    "size": 0,
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -46450,6 +46770,7 @@
     "element": "water",
     "image": "lapslvat",
     "species": "aquatic",
+    "size": 1,
     "slug": "leviathan",
     "attack": {
       "names": {
@@ -46640,6 +46961,7 @@
     "element": "ice",
     "image": "lapsgcal",
     "species": "bird",
+    "size": 1,
     "slug": "glacial",
     "attack": {
       "names": {
@@ -46821,6 +47143,7 @@
     "element": "wind",
     "image": "lapstypn",
     "species": "demon",
+    "size": 1,
     "slug": "typhon",
     "attack": {
       "names": {
@@ -47005,6 +47328,7 @@
     "element": "fire",
     "image": "lapsmrlt",
     "species": "demon",
+    "size": 1,
     "slug": "marilith",
     "attack": {
       "names": {
@@ -47189,6 +47513,7 @@
     "element": "neutral",
     "image": "lapsbahm",
     "species": "netherBeast",
+    "size": 1,
     "slug": "bahamut",
     "attack": {
       "names": {
@@ -47361,6 +47686,7 @@
     "element": "dark",
     "image": "lapsomeg",
     "species": "machine",
+    "size": 1,
     "slug": "omega",
     "attack": {
       "names": {
@@ -47548,6 +47874,7 @@
     "element": "earth",
     "image": "lapscsli",
     "species": "aquatic",
+    "size": 1,
     "slug": "chocolate-flan",
     "attack": {
       "names": {
@@ -47756,6 +48083,7 @@
     "element": "light",
     "image": "lapscsli_01",
     "species": "aquatic",
+    "size": 1,
     "slug": "white-marshmallow",
     "attack": {
       "names": {
@@ -47900,6 +48228,7 @@
     "element": "fire",
     "image": "lapsth00",
     "species": "human",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -48081,6 +48410,7 @@
     "element": "dark",
     "image": "ff01wrmc",
     "species": "machine",
+    "size": 1,
     "slug": "death-machine",
     "attack": {
       "names": {
@@ -48270,6 +48600,7 @@
     "element": "fire",
     "image": "lapsifrt",
     "species": "netherBeast",
+    "size": 1,
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -48401,6 +48732,7 @@
     "element": null,
     "image": "lapsbm00",
     "species": "",
+    "size": 0,
     "slug": "black-mage",
     "attack": {
       "names": {
@@ -48588,6 +48920,7 @@
     "element": "earth",
     "image": "lapscact_02",
     "species": "plant, metal",
+    "size": 0,
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -48766,6 +49099,7 @@
     "element": "earth",
     "image": "lapscact_01",
     "species": "plant, metal",
+    "size": 0,
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -48953,6 +49287,7 @@
     "element": "dark",
     "image": "lapsbhmt_01",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -49083,6 +49418,7 @@
     "element": "fire",
     "image": "lapswolf_02",
     "species": "beast",
+    "size": 0,
     "slug": "kaiser-wolf",
     "attack": {
       "names": {
@@ -49270,6 +49606,7 @@
     "element": "wind",
     "image": "lapstnbr",
     "species": "human",
+    "size": 0,
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -49407,6 +49744,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -49615,6 +49953,7 @@
     "element": "light",
     "image": "ff14boss",
     "species": "",
+    "size": 1,
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -49758,6 +50097,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -49966,6 +50306,7 @@
     "element": "light",
     "image": "lapsthdg",
     "species": "dragon",
+    "size": 1,
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -50120,6 +50461,7 @@
     "element": "light",
     "image": "lapselem_06",
     "species": "fairy",
+    "size": 0,
     "slug": "light-elemental",
     "attack": {
       "names": {
@@ -50332,6 +50674,7 @@
     "element": "wind",
     "image": "lapscsli_02",
     "species": "aquatic",
+    "size": 1,
     "slug": "flan-princess",
     "attack": {
       "names": {
@@ -50474,6 +50817,7 @@
     "element": "wind",
     "image": "lapsslim",
     "species": "aquatic",
+    "size": 0,
     "slug": "green-slime",
     "attack": {
       "names": {
@@ -50658,6 +51002,7 @@
     "element": "water",
     "image": "lapssire",
     "species": "netherBeast",
+    "size": 1,
     "slug": "siren",
     "attack": {
       "names": {
@@ -50815,6 +51160,7 @@
     "element": "water",
     "image": "lapselem_01",
     "species": "fairy",
+    "size": 0,
     "slug": "water-elemental",
     "attack": {
       "names": {
@@ -51021,6 +51367,7 @@
     "element": "ice",
     "image": "lapscact_02",
     "species": "plant, metal",
+    "size": 0,
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -51202,6 +51549,7 @@
     "element": "ice",
     "image": "lapscact_01",
     "species": "plant, metal",
+    "size": 0,
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -51389,6 +51737,7 @@
     "element": "earth",
     "image": "lapsglem",
     "species": "netherBeast",
+    "size": 1,
     "slug": "golem",
     "attack": {
       "names": {
@@ -51546,6 +51895,7 @@
     "element": "earth",
     "image": "lapselem_02",
     "species": "fairy",
+    "size": 0,
     "slug": "earth-elemental",
     "attack": {
       "names": {
@@ -51734,6 +52084,7 @@
     "element": "ice",
     "image": "lapstnbr",
     "species": "human",
+    "size": 0,
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -51891,6 +52242,7 @@
     "element": "ice",
     "image": "lapselem_04",
     "species": "fairy",
+    "size": 0,
     "slug": "ice-elemental",
     "attack": {
       "names": {
@@ -52079,6 +52431,7 @@
     "element": "dark",
     "image": "lapsdabl",
     "species": "netherBeast",
+    "size": 1,
     "slug": "diabolos",
     "attack": {
       "names": {
@@ -52230,6 +52583,7 @@
     "element": "dark",
     "image": "lapselem_07",
     "species": "fairy",
+    "size": 0,
     "slug": "dark-elemental",
     "attack": {
       "names": {
@@ -52421,6 +52775,7 @@
     "element": "light",
     "image": "lapscsli_02",
     "species": "aquatic",
+    "size": 1,
     "slug": "flan-princess",
     "attack": {
       "names": {
@@ -52552,6 +52907,7 @@
     "element": "earth",
     "image": "lapsmont",
     "species": "human",
+    "size": 0,
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -52750,6 +53106,7 @@
     "element": "water",
     "image": "lapsramd",
     "species": "human",
+    "size": 0,
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -52909,6 +53266,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -53040,6 +53398,7 @@
     "element": "dark",
     "image": "lapsstrn",
     "species": "human",
+    "size": 0,
     "slug": "sterne-leonis-1",
     "limit": {
       "names": {
@@ -53225,6 +53584,7 @@
     "element": "fire",
     "image": "lapslils",
     "species": "human",
+    "size": 0,
     "slug": "lilyth-1",
     "attack": {
       "names": {
@@ -53378,6 +53738,7 @@
     "element": "earth",
     "image": "lapsbylo",
     "species": "human",
+    "size": 0,
     "slug": "baelo-1",
     "attack": {
       "names": {
@@ -53536,6 +53897,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -53664,6 +54026,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -53792,6 +54155,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -53925,6 +54289,7 @@
     "element": "ice",
     "image": "lapsmdna",
     "species": "human",
+    "size": 0,
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -54127,6 +54492,7 @@
     "element": "fire",
     "image": "lapsmice",
     "species": "human",
+    "size": 0,
     "slug": "miche-1",
     "attack": {
       "names": {
@@ -54288,6 +54654,7 @@
     "element": "water",
     "image": "lapssevr",
     "species": "human",
+    "size": 0,
     "slug": "severo-1",
     "attack": {
       "names": {
@@ -54465,6 +54832,7 @@
     "element": null,
     "image": "lapsth00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -54596,6 +54964,7 @@
     "element": "earth",
     "image": "lapsailn",
     "species": "human",
+    "size": 0,
     "slug": "aileen-1",
     "limit": {
       "names": {
@@ -54802,6 +55171,7 @@
     "element": "light",
     "image": "lapsmacr",
     "species": "human",
+    "size": 0,
     "slug": "macherie-hourne-1",
     "attack": {
       "names": {
@@ -54930,6 +55300,7 @@
     "element": null,
     "image": "lapsbm00",
     "species": "",
+    "size": 0,
     "slug": "bandit",
     "attack": {
       "names": {
@@ -55061,6 +55432,7 @@
     "element": "lightning",
     "image": "lapsrart",
     "species": "human",
+    "size": 0,
     "slug": "learte-1",
     "attack": {
       "names": {
@@ -55225,6 +55597,7 @@
     "element": "ice",
     "image": "lapskton",
     "species": "human",
+    "size": 0,
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -55349,6 +55722,7 @@
     "element": "wind",
     "image": "lapsogre",
     "species": "human",
+    "size": 0,
     "slug": "ogre",
     "attack": {
       "names": {
@@ -55480,6 +55854,7 @@
     "element": "wind",
     "image": "lapsayka",
     "species": "human",
+    "size": 0,
     "slug": "ayaka-1",
     "limit": {
       "names": {
@@ -55603,6 +55978,7 @@
     "element": null,
     "image": "itemcrst",
     "species": "",
+    "size": 0,
     "slug": "crystal"
   },
   "UN_LW_BGN_ELDE": {
@@ -55707,6 +56083,7 @@
     "element": "fire",
     "image": "lapselde",
     "species": "human",
+    "size": 0,
     "slug": "oelde-leonis-1",
     "limit": {
       "names": {
@@ -55938,6 +56315,7 @@
     "element": "dark",
     "image": "lapsbhmt",
     "species": "beast",
+    "size": 1,
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -56083,6 +56461,7 @@
     "element": "wind",
     "image": "lapstnbr",
     "species": "human",
+    "size": 0,
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -56241,6 +56620,7 @@
     "element": "ice",
     "image": "lapsglms",
     "species": "human",
+    "size": 0,
     "slug": "gilgamesh-1",
     "limit": {
       "names": {
@@ -56456,6 +56836,7 @@
     "element": "earth",
     "image": "lapsmont",
     "species": "human",
+    "size": 0,
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -56650,6 +57031,7 @@
     "element": "dark",
     "image": "lapsvnla",
     "species": "human",
+    "size": 0,
     "slug": "vinera-fennes-1",
     "attack": {
       "names": {
@@ -56808,6 +57190,7 @@
     "element": "fire",
     "image": "lapsrain",
     "species": "human",
+    "size": 0,
     "slug": "rain-1",
     "attack": {
       "names": {
@@ -56974,6 +57357,7 @@
     "element": "ice",
     "image": "lapsvktr",
     "species": "human",
+    "size": 0,
     "slug": "viktora-1",
     "attack": {
       "names": {
@@ -57137,6 +57521,7 @@
     "element": "wind",
     "image": "lapsayka",
     "species": "human",
+    "size": 0,
     "slug": "ayaka-1",
     "limit": {
       "names": {
@@ -57351,6 +57736,7 @@
     "element": "water",
     "image": "lapsirdl",
     "species": "human",
+    "size": 0,
     "slug": "ildyra-1",
     "attack": {
       "names": {
@@ -57512,6 +57898,7 @@
     "element": "earth",
     "image": "lapsqilf",
     "species": "human",
+    "size": 0,
     "slug": "kilphe-1",
     "limit": {
       "names": {
@@ -57717,6 +58104,7 @@
     "element": "earth",
     "image": "lapslrnz",
     "species": "human",
+    "size": 0,
     "slug": "lorenzo-1",
     "attack": {
       "names": {
@@ -57877,6 +58265,7 @@
     "element": "water",
     "image": "lapsramd",
     "species": "human",
+    "size": 0,
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -58031,6 +58420,7 @@
     "element": "fire",
     "image": "lapselde",
     "species": "human",
+    "size": 0,
     "slug": "oelde-leonis-1",
     "limit": {
       "names": {
@@ -58224,6 +58614,7 @@
     "element": "earth",
     "image": "lapsailn",
     "species": "human",
+    "size": 0,
     "slug": "aileen-1",
     "limit": {
       "names": {
@@ -58428,6 +58819,7 @@
     "element": "ice",
     "image": "lapslswl",
     "species": "human",
+    "size": 0,
     "slug": "lasswell-1",
     "limit": {
       "names": {
@@ -58632,6 +59024,7 @@
     "element": "water",
     "image": "lapsgrsr",
     "species": "human",
+    "size": 0,
     "slug": "glaciela-wezette-1",
     "limit": {
       "names": {
@@ -58842,6 +59235,7 @@
     "element": "fire",
     "image": "lapsrain",
     "species": "human",
+    "size": 0,
     "slug": "rain-1",
     "limit": {
       "names": {
@@ -59051,6 +59445,7 @@
     "element": "wind",
     "image": "lapsryer_01",
     "species": "human",
+    "size": 0,
     "slug": "little-leela-halloween-1",
     "limit": {
       "names": {
@@ -59301,6 +59696,7 @@
     "element": "wind",
     "image": "lapshlna",
     "species": "human",
+    "size": 0,
     "slug": "helena-leonis-1",
     "attack": {
       "names": {
@@ -59456,6 +59852,7 @@
     "element": "water",
     "image": "lapsmrnd",
     "species": "human",
+    "size": 0,
     "slug": "miranda-1",
     "limit": {
       "names": {
@@ -59660,6 +60057,7 @@
     "element": "ice",
     "image": "lapsmdna",
     "species": "human",
+    "size": 0,
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -59867,6 +60265,7 @@
     "element": "wind",
     "image": "lapshwlt",
     "species": "human",
+    "size": 0,
     "slug": "howlet-1",
     "limit": {
       "names": {
@@ -60066,6 +60465,7 @@
     "element": "wind",
     "image": "lapsyerm",
     "species": "human",
+    "size": 0,
     "slug": "yerma-1",
     "limit": {
       "names": {
@@ -60158,6 +60558,7 @@
     "element": null,
     "image": "itemcrst_04",
     "species": "",
+    "size": 0,
     "slug": "crystal"
   },
   "UN_LW_E_RU_02_MNK": {
@@ -60272,6 +60673,7 @@
     "element": null,
     "image": "lapsso04",
     "species": "human",
+    "size": 0,
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -60459,6 +60861,7 @@
     "element": "earth",
     "image": "lapscact_02",
     "species": "plant, metal",
+    "size": 0,
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -60586,6 +60989,7 @@
     "element": "earth",
     "image": "lapstitn",
     "species": "netherBeast",
+    "size": 1,
     "slug": "titan",
     "attack": {
       "names": {
@@ -60710,6 +61114,7 @@
     "element": "neutral",
     "image": "lapsodin",
     "species": "netherBeast",
+    "size": 1,
     "slug": "odin",
     "attack": {
       "names": {

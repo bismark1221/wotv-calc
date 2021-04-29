@@ -11,6 +11,7 @@ import { EquipmentService } from '../services/equipment.service';
 import { AuthService } from '../services/auth.service';
 import { OtherUnitService } from '../services/otherunit.service';
 import { JobService } from '../services/job.service';
+import { SkillService } from '../services/skill.service';
 
 
 @Component({
@@ -34,7 +35,8 @@ export class QuestComponent implements OnInit {
     private itemService: ItemService,
     private equipmentService: EquipmentService,
     private jobService: JobService,
-    private otherUnitService: OtherUnitService
+    private otherUnitService: OtherUnitService,
+    private skillService: SkillService
   ) {
     this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
       if (this.quest) {
@@ -80,6 +82,11 @@ export class QuestComponent implements OnInit {
       let i = 0;
       for (const enemy of this.quest.enemies) {
         this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies'));
+
+        if (this.quest.formattedEnemies[i].size > 0) {
+          this.changeEnemySizeInGrid(i, this.quest.formattedEnemies[i].size);
+        }
+
         i++;
       }
 
@@ -110,9 +117,12 @@ export class QuestComponent implements OnInit {
         this.quest.formattedChests.push(await this.formatOtherItem(chest));
         i++;
       }
-    }
 
-    console.log(this.quest);
+      this.quest.formattedBuffs = [];
+      this.quest.buffs.forEach(effect => {
+        this.quest.formattedBuffs.push(this.skillService.formatEffect(this.quest, {type: 'buff'}, effect, false));
+      });
+    }
   }
 
   getRoute(route) {
@@ -179,8 +189,6 @@ export class QuestComponent implements OnInit {
       // Do something ^^ ==> Get skill from skill service
     });
 
-    console.log(formattedEnemy);
-
     return formattedEnemy;
   }
 
@@ -188,8 +196,83 @@ export class QuestComponent implements OnInit {
     const formattedItem = await this.otherUnitService.getUnit(item.dataId);
     formattedItem.name = this.nameService.getName(formattedItem);
 
-    console.log(formattedItem);
-
     return formattedItem;
+  }
+
+  formatType(type) {
+    return this.questService.formatType(type);
+  }
+
+  private changeEnemySizeInGrid(enemyNumber, size) {
+    let x = 0;
+    let y = 0;
+    let enemyFounded = false;
+
+    this.quest.grid.forEach((line, lineIndex) => {
+      line.forEach((node, nodeIndex) => {
+        if (node.enemy === enemyNumber) {
+          x = lineIndex;
+          y = nodeIndex;
+          enemyFounded = true;
+        }
+      });
+    });
+
+    const nodeClasses = {
+      1: [
+        'bigEnemyTopLeft',
+        'bigEnemyTopRight',
+        'bigEnemyBottomLeft',
+        'bigEnemyBottomRight'
+      ],
+      2: [
+        'bigEnemyTopLeft',
+        'bigEnemyTopMiddle',
+        'bigEnemyTopRight',
+        'bigEnemyMiddleLeft',
+        'bigEnemyMiddleMiddle',
+        'bigEnemyMiddleRight',
+        'bigEnemyBottomLeft',
+        'bigEnemyBottomMiddle',
+        'bigEnemyBottomRight'
+      ]
+    };
+
+    if (enemyFounded) {
+      let countNode = 0;
+      for (let i = x; i <= x + size; i++) {
+        for (let j = y; j <= y + size; j++) {
+          this.checkIfTileExist(i, j);
+          this.quest.grid[i][j].enemy = enemyNumber;
+          this.quest.grid[i][j].class = nodeClasses[size][countNode];
+          countNode++;
+        }
+      }
+    }
+  }
+
+  private checkIfTileExist(x, y) {
+    if (!this.quest.grid[x]) {
+      this.quest.grid[x] = [];
+      for (let i = 0; i <= this.quest.grid[0].length - 1; i++) {
+        this.quest.grid[x][i] = {
+          h: 0,
+          t: 'TILE_NOT_IN_GRID'
+        };
+      }
+    }
+
+    if (!this.quest.grid[0][y]) {
+      this.quest.grid.forEach(line => {
+        for (let i = 0; i <= y; i++) {
+          if (!line[i]) {
+            line[i] = {
+              h: 0,
+              t: 'TILE_NOT_IN_GRID'
+            };
+          }
+        }
+      });
+    }
   }
 }

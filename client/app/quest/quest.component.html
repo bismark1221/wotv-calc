@@ -25,6 +25,18 @@
           <td>{{ quest.enemies.length }}</td>
           <td>{{ quest.chests.length }}</td>
         </tr>
+        <tr>
+          <th colspan="3" class="sub">Type</th>
+        </tr>
+        <tr>
+          <td colspan="3">{{ formatType(quest.type) }}</td>
+        </tr>
+        <tr>
+          <th colspan="3" class="sub">Effects</th>
+        </tr>
+        <tr *ngFor="let buff of quest.formattedBuffs">
+          <td colspan="3">{{ buff }}</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -78,10 +90,19 @@
             'partyTile': tile && tile.party,
             'chestTile': tile && tile.chest?.constructor.name === 'Number',
             'allyTile': tile && tile.ally?.constructor.name === 'Number',
-            'enemyTile': tile && tile.enemy?.constructor.name === 'Number',
+            'enemyTile': tile && tile.enemy?.constructor.name === 'Number' && !tile.class,
             'objectTile': tile && tile.object?.constructor.name === 'Number',
             'switchTile': tile && tile.switch?.constructor.name === 'Number',
-            'tile20': !tile.t && tile.h >= 20
+            'tile20': !tile.t && tile.h >= 20,
+            'bigEnemyTopLeft': tile && tile.class === 'bigEnemyTopLeft',
+            'bigEnemyTopMiddle': tile && tile.class === 'bigEnemyTopMiddle',
+            'bigEnemyTopRight': tile && tile.class === 'bigEnemyTopRight',
+            'bigEnemyMiddleLeft': tile && tile.class === 'bigEnemyMiddleLeft',
+            'bigEnemyMiddleMiddle': tile && tile.class === 'bigEnemyMiddleMiddle',
+            'bigEnemyMiddleRight': tile && tile.class === 'bigEnemyMiddleRight',
+            'bigEnemyBottomLeft': tile && tile.class === 'bigEnemyBottomLeft',
+            'bigEnemyBottomMiddle': tile && tile.class === 'bigEnemyBottomMiddle',
+            'bigEnemyBottomRight': tile && tile.class === 'bigEnemyBottomRight'
           }"
         >
           <div *ngIf="tile && !tile.t">{{ tile.h }}</div>

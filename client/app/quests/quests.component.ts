@@ -88,4 +88,8 @@ export class QuestsComponent implements OnInit {
 
     this.getQuests();
   }
+
+  formatType(type) {
+    return this.questService.formatType(type);
+  }
 }

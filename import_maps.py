@@ -4,6 +4,7 @@ import json
 from os import listdir
 from os.path import isfile, join
 
+print('### Import GL maps')
 data = {}
 fileNames = [f for f in listdir('../wotv-dump/map') if isfile(join('../wotv-dump/map', f))]
 
@@ -39,6 +40,11 @@ for fileName in fileNames:
                     reducedEnemy['drop'] = rawEnemy['drop']
                 if 'side' in rawEnemy:
                     reducedEnemy['side'] = rawEnemy['side']
+                if 'part' in rawEnemy:
+                    if 'body' in rawEnemy['part']:
+                      if rawEnemy['part']['body'] != '':
+                          reducedEnemy['hasBody'] = True
+
                 enemy.append(reducedEnemy)
             data[fileName[:-5]]['enemy'] = enemy
 
@@ -51,10 +57,20 @@ for fileName in fileNames:
                 party.append(reducedParty)
             data[fileName[:-5]]['party'] = party
 
+        if 'arena' in rawData:
+            arena = []
+            for rawArena in rawData['arena']:
+                reducedArena = {}
+                reducedArena['x'] = rawArena['x']
+                reducedArena['y'] = rawArena['y']
+                arena.append(reducedArena)
+            data[fileName[:-5]]['arena'] = arena
+
 with open('data/map/gl/maps.json', 'w') as outfile:
     json.dump(data, outfile)
 
 
+print('### Import JP maps')
 data = {}
 fileNames = [f for f in listdir('../wotv-dump/jp_map') if isfile(join('../wotv-dump/jp_map', f))]
 
@@ -90,6 +106,11 @@ for fileName in fileNames:
                     reducedEnemy['drop'] = rawEnemy['drop']
                 if 'side' in rawEnemy:
                     reducedEnemy['side'] = rawEnemy['side']
+                if 'part' in rawEnemy:
+                    if 'body' in rawEnemy['part']:
+                      if rawEnemy['part']['body'] != '':
+                          reducedEnemy['hasBody'] = True
+
                 enemy.append(reducedEnemy)
             data[fileName[:-5]]['enemy'] = enemy
 
@@ -101,6 +122,15 @@ for fileName in fileNames:
                 reducedParty['y'] = rawParty['y']
                 party.append(reducedParty)
             data[fileName[:-5]]['party'] = party
+
+        if 'arena' in rawData:
+            arena = []
+            for rawArena in rawData['arena']:
+                reducedArena = {}
+                reducedArena['x'] = rawArena['x']
+                reducedArena['y'] = rawArena['y']
+                arena.append(reducedArena)
+            data[fileName[:-5]]['arena'] = arena
 
 with open('data/map/jp/maps.json', 'w') as outfile:
     json.dump(data, outfile)

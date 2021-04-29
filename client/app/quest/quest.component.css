@@ -252,6 +252,61 @@
   background-position: 0px 0px;
 }
 
+.bigEnemyTopLeft {
+  background-image: url("assets/grid/bigEnemyTopLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyTopMiddle {
+  background-image: url("assets/grid/bigEnemyTopMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyTopRight {
+  background-image: url("assets/grid/bigEnemyTopRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleLeft {
+  background-image: url("assets/grid/bigEnemyMiddleLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleMiddle {
+  background-image: url("assets/grid/bigEnemyMiddleMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyMiddleRight {
+  background-image: url("assets/grid/bigEnemyMiddleRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomLeft {
+  background-image: url("assets/grid/bigEnemyBottomLeft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomMiddle {
+  background-image: url("assets/grid/bigEnemyBottomMiddle.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.bigEnemyBottomRight {
+  background-image: url("assets/grid/bigEnemyBottomRight.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+
 /*#############*/
 /* OTHER UNITS */
 /*#############*/

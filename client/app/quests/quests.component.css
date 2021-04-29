@@ -101,6 +101,7 @@
 
 .questsList {
   margin-top: 10px;
+  width: 100%;
 }
 
 .questImg {
@@ -121,6 +122,7 @@
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  vertical-align: top;
 }
 
 .questsCol:hover {
@@ -151,8 +153,25 @@
   display: table-cell;
   vertical-align: middle;
   color: var(--quest-title-color);
+  vertical-align: top;
 }
 
 .select-sort, .select-order {
   display: inline-block;
+}
+
+.nameCol {
+  text-align: left;
+}
+
+.typeTd {
+  width: 142px;
+}
+
+.nrgTd {
+  width: 51px;
+}
+
+.xpTd {
+  width: 60px;
 }
