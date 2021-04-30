@@ -1119,16 +1119,6 @@ export class JsonService {
       });
   }
 
-  private GLQuestMissions() {
-    const date = new Date();
-    return this.http.get('http://data.local-wotv-chain.com/data/QuestMission.json?t=' + date).toPromise()
-      .then(data => {
-        return data;
-      }).catch(function(error) {
-        return {items: []};
-      });
-  }
-
   private GLTowerFloors() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/data/TowerFloor.json?t=' + date).toPromise()
@@ -4415,7 +4405,10 @@ export class JsonService {
   }
 
   private getTowerFloorName(floorId, towerId, ex) {
-    const towerNames = {};
+    const towerNames = {
+      en: '',
+      fr: ''
+    };
     const towerSlug = '';
 
     if (this.version === 'gl') {
@@ -4470,15 +4463,19 @@ export class JsonService {
       }
     }
 
-    const floorNames = {};
+    const floorNames = {
+      en: ''
+    };
     let floorSlug = '';
 
     if (this.version === 'gl') {
       if (this.names.en.towerFloorTitle[floorId]) {
         floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + this.names.en.towerFloorTitle[floorId];
+        // @ts-ignore
         floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + this.names.fr.towerFloorTitle[floorId];
       } else {
         floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + floorId;
+        // @ts-ignore
         floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + floorId;
       }
 

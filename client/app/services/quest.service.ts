@@ -17,6 +17,8 @@ export class QuestService {
   private GL_quests: Quest[];
   quest;
 
+  private sre = /^\s+|\s+$/g;
+
   constructor(
     private translateService: TranslateService,
     private dataService: DataService,
