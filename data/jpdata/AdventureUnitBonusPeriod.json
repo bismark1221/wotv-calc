@@ -417,8 +417,20 @@
     {
       "iname": "PERIOD_070",
       "begin_at": "2021/04/21 12:00:00",
-      "end_at": "2028/10/01 5:00:00",
+      "end_at": "2021/04/30 23:59:59",
       "bonus_set_id": "BONUS_070"
+    },
+    {
+      "iname": "PERIOD_071",
+      "begin_at": "2021/05/01",
+      "end_at": "2021/05/07 14:59:59",
+      "bonus_set_id": "BONUS_071"
+    },
+    {
+      "iname": "PERIOD_072",
+      "begin_at": "2021/05/07 15:00:00",
+      "end_at": "2028/10/01 5:00:00",
+      "bonus_set_id": "BONUS_072"
     }
   ]
 }

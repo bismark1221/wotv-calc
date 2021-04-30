@@ -209,6 +209,10 @@
             "value": "範囲攻撃耐性・雷属性ユニットのHPアップ"
         },
         {
+            "key": "BUFF_GVG_013_1",
+            "value": "精神アップ・雷属性ユニットのクリティカル発生率アップ"
+        },
+        {
             "key": "BUFF_CLASSMATCH_001",
             "value": "Cost制限540以下"
         },
@@ -1071,6 +1075,38 @@
         {
             "key": "BUFF_SIRE_33",
             "value": "獣キラー+7%"
+        },
+        {
+            "key": "BUFF_SIRE_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_SIRE_35",
+            "value": "攻撃系アビリティ発動時間短縮 50"
+        },
+        {
+            "key": "BUFF_SIRE_36",
+            "value": "攻撃系アビリティ発動時間短縮 70"
+        },
+        {
+            "key": "BUFF_SIRE_37",
+            "value": "攻撃系アビリティ発動時間短縮 80"
+        },
+        {
+            "key": "BUFF_SIRE_38",
+            "value": "水属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_SIRE_39",
+            "value": "水属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_SIRE_40",
+            "value": "水属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_SIRE_41",
+            "value": "水属性アビリティ攻撃UP+10%"
         },
         {
             "key": "BUFF_ODIN_01",
@@ -3537,6 +3573,170 @@
             "value": "氷属性アビリティ攻撃UP+10%"
         },
         {
+            "key": "BUFF_SCPN_01",
+            "value": "クリティカル発生率+3"
+        },
+        {
+            "key": "BUFF_SCPN_02",
+            "value": "機械キラー+2%"
+        },
+        {
+            "key": "BUFF_SCPN_03",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_SCPN_04",
+            "value": "水属性キラー+2%"
+        },
+        {
+            "key": "BUFF_SCPN_05",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_SCPN_07",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_SCPN_08",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_SCPN_09",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_10",
+            "value": "射撃耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_11",
+            "value": "機械キラー+3%"
+        },
+        {
+            "key": "BUFF_SCPN_12",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_SCPN_13",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_SCPN_14",
+            "value": "斬撃攻撃UP+3%"
+        },
+        {
+            "key": "BUFF_SCPN_15",
+            "value": "水属性キラー+3%"
+        },
+        {
+            "key": "BUFF_SCPN_16",
+            "value": "斬撃耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_17",
+            "value": "雷耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_18",
+            "value": "雷耐性+3%"
+        },
+        {
+            "key": "BUFF_SCPN_19",
+            "value": "召喚魔法Lv7"
+        },
+        {
+            "key": "BUFF_SCPN_20",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_SCPN_21",
+            "value": "射撃耐性+4%"
+        },
+        {
+            "key": "BUFF_SCPN_22",
+            "value": "機械キラー+4%"
+        },
+        {
+            "key": "BUFF_SCPN_23",
+            "value": "機械キラー+6%"
+        },
+        {
+            "key": "BUFF_SCPN_24",
+            "value": "斬撃攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_SCPN_25",
+            "value": "斬撃攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_SCPN_26",
+            "value": "水属性キラー+6%"
+        },
+        {
+            "key": "BUFF_SCPN_27",
+            "value": "水属性キラー+4%"
+        },
+        {
+            "key": "BUFF_SCPN_28",
+            "value": "雷耐性+5%"
+        },
+        {
+            "key": "BUFF_SCPN_29",
+            "value": "雷耐性+4%"
+        },
+        {
+            "key": "BUFF_SCPN_30",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_SCPN_31",
+            "value": "召喚魔法Lv15"
+        },
+        {
+            "key": "BUFF_SCPN_32",
+            "value": "機械キラー+10%"
+        },
+        {
+            "key": "BUFF_SCPN_33",
+            "value": "水属性キラー+10%"
+        },
+        {
+            "key": "BUFF_SCPN_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_SCPN_35",
+            "value": "クリティカルダメージ+4%"
+        },
+        {
+            "key": "BUFF_SCPN_36",
+            "value": "クリティカルダメージ+5%"
+        },
+        {
+            "key": "BUFF_SCPN_37",
+            "value": "射撃耐性+5%"
+        },
+        {
+            "key": "BUFF_SCPN_38",
+            "value": "雷属性アビリティ攻撃UP+4%"
+        },
+        {
+            "key": "BUFF_SCPN_39",
+            "value": "雷属性アビリティ攻撃UP+5%"
+        },
+        {
+            "key": "BUFF_SCPN_40",
+            "value": "雷属性アビリティ攻撃UP+6%"
+        },
+        {
+            "key": "BUFF_SCPN_41",
+            "value": "雷属性アビリティ攻撃UP+10%"
+        },
+        {
             "key": "BUFF_IGNT_01",
             "value": "命中率+3"
         },
@@ -4487,6 +4687,38 @@
         {
             "key": "BUFF_OCHU_33",
             "value": "雷属性キラー+4%"
+        },
+        {
+            "key": "BUFF_OCHU_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_OCHU_35",
+            "value": "クリティカル発生率+4"
+        },
+        {
+            "key": "BUFF_OCHU_36",
+            "value": "クリティカル発生率+5"
+        },
+        {
+            "key": "BUFF_OCHU_37",
+            "value": "クリティカル発生率+6"
+        },
+        {
+            "key": "BUFF_OCHU_38",
+            "value": "防御UP+3%"
+        },
+        {
+            "key": "BUFF_OCHU_39",
+            "value": "防御UP+3%"
+        },
+        {
+            "key": "BUFF_OCHU_40",
+            "value": "防御UP+4%"
+        },
+        {
+            "key": "BUFF_OCHU_41",
+            "value": "防御UP+5%"
         },
         {
             "key": "BUFF_DMCM_01",

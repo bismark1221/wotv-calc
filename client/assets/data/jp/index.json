@@ -339,7 +339,7 @@
         "ATK": 58,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 392,
+        "MAG": 393,
         "DEX": 122,
         "AGI": 62,
         "LUCK": 171,
@@ -792,7 +792,7 @@
         "STOP_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 82
+        "INITIAL_AP": 69
       },
       "image": "lapsfina"
     },
@@ -899,7 +899,7 @@
       },
       "stats": {
         "HP": 1122,
-        "TP": 227,
+        "TP": 228,
         "AP": 109,
         "ATK": 51,
         "DEF": 0,
@@ -1078,7 +1078,7 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 3,
-        "INITIAL_AP": 14,
+        "INITIAL_AP": 12,
         "CRITIC_RATE": 11,
         "EVADE": 15
       },
@@ -1209,7 +1209,7 @@
         "CHARM_RES": -5,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 81,
+        "INITIAL_AP": 69,
         "CRITIC_RATE": 19,
         "INCREASE_UNIT_LEVEL": 0,
         "MAX_DAMAGE": 2000,
@@ -1840,7 +1840,7 @@
         "HP": 1812,
         "TP": 130,
         "AP": 123,
-        "ATK": 344,
+        "ATK": 345,
         "DEF": 0,
         "SPR": 0,
         "MAG": 69,
@@ -2222,7 +2222,7 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 28,
+        "INITIAL_AP": 23,
         "CRITIC_RATE": 33,
         "INCREASE_UNIT_LEVEL": 0,
         "MAX_DAMAGE": 2000,
@@ -2921,7 +2921,7 @@
         "ATK": 65,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 338,
+        "MAG": 339,
         "DEX": 169,
         "AGI": 50,
         "LUCK": 142,
@@ -3088,7 +3088,7 @@
         "ATK": 58,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 375,
+        "MAG": 376,
         "DEX": 145,
         "AGI": 58,
         "LUCK": 175,
@@ -3350,7 +3350,7 @@
         "HP": 3969,
         "TP": 126,
         "AP": 143,
-        "ATK": 502,
+        "ATK": 503,
         "DEF": 10,
         "SPR": 8,
         "MAG": 103,
@@ -3485,7 +3485,7 @@
     },
     {
       "names": {
-        "en": "リオニス王モント"
+        "en": "リオニス王モント - Mont (King of Leonis)"
       },
       "stats": {
         "HP": 5236,
@@ -3523,7 +3523,7 @@
         "en": "リューエル"
       },
       "stats": {
-        "HP": 3514,
+        "HP": 3515,
         "TP": 149,
         "AP": 147,
         "ATK": 88,
@@ -3695,7 +3695,7 @@
         "HP": 4560,
         "TP": 141,
         "AP": 133,
-        "ATK": 550,
+        "ATK": 551,
         "DEF": 10,
         "SPR": 0,
         "MAG": 88,
@@ -3797,7 +3797,7 @@
         "HP": 4030,
         "TP": 119,
         "AP": 117,
-        "ATK": 607,
+        "ATK": 608,
         "DEF": 8,
         "SPR": 0,
         "MAG": 91,
@@ -3828,7 +3828,7 @@
         "en": "シャルロット"
       },
       "stats": {
-        "HP": 4717,
+        "HP": 4718,
         "TP": 131,
         "AP": 111,
         "ATK": 431,
@@ -3968,7 +3968,7 @@
         "en": "クラウド"
       },
       "stats": {
-        "HP": 3580,
+        "HP": 3581,
         "TP": 142,
         "AP": 133,
         "ATK": 504,
@@ -4035,6 +4035,73 @@
         "DEFENSE_PENETRATION": 15
       },
       "image": "ff07tifa"
+    },
+    {
+      "names": {
+        "en": "エアリス"
+      },
+      "stats": {
+        "HP": 2760,
+        "TP": 232,
+        "AP": 161,
+        "ATK": 95,
+        "DEF": 0,
+        "SPR": 5,
+        "MAG": 617,
+        "DEX": 219,
+        "AGI": 64,
+        "LUCK": 218,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": -5,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MAGIC_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "BERSERK_RES": 50,
+        "DOOM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 120,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15
+      },
+      "image": "ff07aert"
+    },
+    {
+      "names": {
+        "en": "バレット"
+      },
+      "stats": {
+        "HP": 3870,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 384,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 289,
+        "AGI": 57,
+        "LUCK": 215,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": 15,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 10,
+        "BLIND_RES": 10,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "DEFENSE_PENETRATION": 15
+      },
+      "image": "ff07bart"
     },
     {
       "names": {

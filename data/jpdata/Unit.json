@@ -6580,6 +6580,7 @@
       "personal": 1,
       "charaId": "LAPStrel",
       "anm_type": 1,
+      "voiceId": "LAPStrel_00",
       "type": 0,
       "elem": [
         6
@@ -7889,6 +7890,7 @@
       "personal": 5,
       "charaId": "LAPSrrir",
       "anm_type": 1,
+      "voiceId": "LAPSrrir_00",
       "type": 0,
       "elem": [
         3
@@ -8191,6 +8193,7 @@
       "personal": 2,
       "charaId": "LAPSmral",
       "anm_type": 1,
+      "voiceId": "LAPSmral_00",
       "type": 0,
       "elem": [
         7
@@ -8638,6 +8641,7 @@
       "personal": 2,
       "charaId": "LAPStitu",
       "anm_type": 1,
+      "voiceId": "LAPStitu_00",
       "type": 0,
       "elem": [
         8
@@ -12837,6 +12841,245 @@
       "unit_medal_num": 0
     },
     {
+      "iname": "UN_FF7_P_AERT",
+      "sex": 2,
+      "size": 0,
+      "body_type": "W",
+      "personal": 0,
+      "collaboType": 1,
+      "charaId": "FF07aert",
+      "anm_type": 5,
+      "anm_id": "aert",
+      "voiceId": "FF07aert_00",
+      "type": 0,
+      "elem": [
+        6
+      ],
+      "species": [
+        1
+      ],
+      "birth": 20,
+      "rare": 4,
+      "grow": "SR_DEFAULT",
+      "cost": 90,
+      "piece": "IT_PI_FF7_AERT",
+      "piece_num": 40,
+      "db_num": 1,
+      "trust": "AF_CLT_FF7_AERT_1",
+      "atkskl": "SK_FF7_AERT_ATK",
+      "mstskl": [
+        "SK_MA_FF7_AERT"
+      ],
+      "jobsets": [
+        "JB_FF7_AERT",
+        "JB_LW_TIM_WATER",
+        "JB_LW_MKN_WATER"
+      ],
+      "ccsets": [
+        {
+          "m": "JB_FF7_AERT_M"
+        }
+      ],
+      "ai": "AI_PLAYER_FF7_AERT",
+      "buff_pri": "BUFFPRI_HEALER",
+      "debuff_pri": "DEBUFFPRI_HEALER",
+      "status": [
+        {
+          "hp": 272,
+          "mp": 75,
+          "ap": 75,
+          "atk": 33,
+          "def": 0,
+          "mag": 95,
+          "mnd": 0,
+          "dex": 62,
+          "spd": 29,
+          "luk": 65,
+          "efi": 20,
+          "eth": -10,
+          "asl": -5,
+          "api": -10,
+          "abl": -5,
+          "ama": 10,
+          "cdm": 50,
+          "cbe": 50,
+          "cdo": 10,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 887,
+          "mp": 119,
+          "ap": 92,
+          "atk": 56,
+          "def": 0,
+          "mag": 160,
+          "mnd": 0,
+          "dex": 93,
+          "spd": 34,
+          "luk": 91,
+          "efi": 20,
+          "eth": -10,
+          "asl": -5,
+          "api": -10,
+          "abl": -5,
+          "ama": 10,
+          "cdm": 50,
+          "cbe": 50,
+          "cdo": 10,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 931,
+          "mp": 124,
+          "ap": 96,
+          "atk": 72,
+          "def": 0,
+          "mag": 208,
+          "mnd": 0,
+          "dex": 111,
+          "spd": 34,
+          "luk": 100,
+          "efi": 20,
+          "eth": -10,
+          "asl": -5,
+          "api": -10,
+          "abl": -5,
+          "ama": 10,
+          "cdm": 50,
+          "cbe": 50,
+          "cdo": 10,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        }
+      ],
+      "limit": "SK_LB_FF7_AERT",
+      "awake_tbl_id": "UN_AW_WATER_UR",
+      "unit_medal_num": 0
+    },
+    {
+      "iname": "UN_FF7_P_BART",
+      "sex": 1,
+      "size": 0,
+      "body_type": "L",
+      "personal": 0,
+      "collaboType": 1,
+      "charaId": "FF07bart",
+      "anm_type": 5,
+      "anm_id": "bart",
+      "voiceId": "FF07bart_00",
+      "type": 0,
+      "elem": [
+        2
+      ],
+      "species": [
+        1
+      ],
+      "birth": 20,
+      "rare": 4,
+      "grow": "SR_DEFAULT",
+      "cost": 90,
+      "piece": "IT_PI_FF7_BART",
+      "piece_num": 40,
+      "db_num": 1,
+      "trust": "AF_CLT_FF7_BART_1",
+      "atkskl": "SK_FF7_BART_ATK",
+      "mstskl": [
+        "SK_MA_FF7_BART"
+      ],
+      "jobsets": [
+        "JB_FF7_BART",
+        "JB_LW_GUN_ICE",
+        "JB_LW_BEA_ICE"
+      ],
+      "ccsets": [
+        {
+          "m": "JB_FF7_BART_M"
+        }
+      ],
+      "ai": "AI_PLAYER_FF7_BART",
+      "buff_pri": "BUFFPRI_PHYATK",
+      "debuff_pri": "DEBUFFPRI_PHYATK",
+      "status": [
+        {
+          "hp": 266,
+          "mp": 59,
+          "ap": 71,
+          "atk": 72,
+          "def": 0,
+          "mag": 32,
+          "mnd": 0,
+          "dex": 63,
+          "spd": 30,
+          "luk": 70,
+          "efi": -10,
+          "ewi": 20,
+          "asl": 15,
+          "abl": -5,
+          "ash": 10,
+          "cbl": 10,
+          "csw": 50,
+          "cda": 50,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 1092,
+          "mp": 92,
+          "ap": 87,
+          "atk": 123,
+          "def": 0,
+          "mag": 54,
+          "mnd": 0,
+          "dex": 94,
+          "spd": 34,
+          "luk": 99,
+          "efi": -10,
+          "ewi": 20,
+          "asl": 15,
+          "abl": -5,
+          "ash": 10,
+          "cbl": 10,
+          "csw": 50,
+          "cda": 50,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 1146,
+          "mp": 96,
+          "ap": 91,
+          "atk": 159,
+          "def": 0,
+          "mag": 70,
+          "mnd": 0,
+          "dex": 112,
+          "spd": 34,
+          "luk": 108,
+          "efi": -10,
+          "ewi": 20,
+          "asl": 15,
+          "abl": -5,
+          "ash": 10,
+          "cbl": 10,
+          "csw": 50,
+          "cda": 50,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        }
+      ],
+      "limit": "SK_LB_FF7_BART",
+      "awake_tbl_id": "UN_AW_ICE_UR",
+      "unit_medal_num": 0
+    },
+    {
       "iname": "UN_LW_E_MONT",
       "sex": 1,
       "size": 0,
@@ -16021,6 +16264,7 @@
       "personal": 1,
       "charaId": "LAPStrel",
       "anm_type": 1,
+      "voiceId": "LAPStrel_00",
       "type": 7,
       "elem": [
         6
@@ -16960,6 +17204,7 @@
       "personal": 5,
       "charaId": "LAPSrrir",
       "anm_type": 1,
+      "voiceId": "LAPSrrir_00",
       "type": 7,
       "elem": [
         3
@@ -17865,6 +18110,7 @@
       "personal": 2,
       "charaId": "LAPStitu",
       "anm_type": 1,
+      "voiceId": "LAPStitu_00",
       "type": 7,
       "elem": [
         8
@@ -30585,6 +30831,60 @@
       "unit_medal_num": 0
     },
     {
+      "iname": "UN_LW_E_HY_07_CAL",
+      "base_unit_iname": "UN_LW_E_OW_07",
+      "type": 7,
+      "atkskl": "SK_LW_CAL_ATK",
+      "jobsets": [
+        "JB_LW_CAL_FIRE"
+      ],
+      "ai": "AI_ENEMY_ATK_LV3",
+      "steal": "ST_JB_MACE",
+      "status": [
+        {
+          "hp": 263,
+          "mp": 64,
+          "ap": 76,
+          "atk": 32,
+          "def": 0,
+          "mag": 88,
+          "mnd": 0,
+          "dex": 78,
+          "spd": 32,
+          "luk": 58,
+          "asl": -5,
+          "api": -10,
+          "abl": -10,
+          "ash": -10,
+          "ama": 20,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 950,
+          "mp": 99,
+          "ap": 93,
+          "atk": 54,
+          "def": 0,
+          "mag": 149,
+          "mnd": 0,
+          "dex": 117,
+          "spd": 37,
+          "luk": 83,
+          "asl": -5,
+          "api": -10,
+          "abl": -10,
+          "ash": -10,
+          "ama": 20,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        }
+      ],
+      "unit_medal_num": 0
+    },
+    {
       "iname": "UN_LW_E_MRGE",
       "sex": 3,
       "size": 2,
@@ -39217,6 +39517,64 @@
       ]
     },
     {
+      "iname": "UN_LW_E_SHGN_01",
+      "sex": 3,
+      "size": 0,
+      "body_type": "MO",
+      "personal": 1,
+      "charaId": "LAPSshgn",
+      "anm_type": 2,
+      "type": 7,
+      "elem": [
+        6
+      ],
+      "species": [
+        9
+      ],
+      "birth": 1,
+      "rare": 0,
+      "grow": "SR_DEFAULT",
+      "cost": 0,
+      "atkskl": "SK_SHGN_ATK",
+      "ai": "AI_ENEMY_ATK_LV3",
+      "status": [
+        {
+          "hp": 241,
+          "mp": 60,
+          "ap": 72,
+          "atk": 56,
+          "def": 20,
+          "mag": 28,
+          "mnd": 20,
+          "dex": 104,
+          "spd": 19,
+          "luk": 96,
+          "efi": 10,
+          "eth": -10,
+          "mov": 3,
+          "jmp": 2,
+          "dmax": 9999
+        },
+        {
+          "hp": 5218,
+          "mp": 150,
+          "ap": 144,
+          "atk": 154,
+          "def": 20,
+          "mag": 92,
+          "mnd": 20,
+          "dex": 243,
+          "spd": 71,
+          "luk": 229,
+          "efi": 10,
+          "eth": -10,
+          "mov": 3,
+          "jmp": 2,
+          "dmax": 9999
+        }
+      ]
+    },
+    {
       "iname": "UN_LW_E_CORL",
       "sex": 3,
       "size": 0,
@@ -44153,6 +44511,184 @@
         },
         {
           "hp": 7455,
+          "mp": 150,
+          "ap": 144,
+          "atk": 300,
+          "def": 0,
+          "mag": 220,
+          "mnd": 0,
+          "dex": 243,
+          "spd": 95,
+          "luk": 229,
+          "cpo": 100,
+          "cbl": 100,
+          "csl": 100,
+          "cmu": 100,
+          "cpa": 100,
+          "ccf": 100,
+          "cpe": 100,
+          "cfr": 100,
+          "csw": 100,
+          "cst": 100,
+          "cch": 100,
+          "cdm": 100,
+          "cda": 100,
+          "cbe": 100,
+          "cdo": 100,
+          "mov": 4,
+          "jmp": 1,
+          "dmax": 9999
+        }
+      ],
+      "no_kb": 1,
+      "unit_medal_num": 0
+    },
+    {
+      "iname": "UN_FF7_E_SCPN_NO",
+      "sex": 3,
+      "size": 1,
+      "body_type": "MO",
+      "personal": 0,
+      "collaboType": 1,
+      "charaId": "FF07scpn",
+      "anm_type": 2,
+      "type": 7,
+      "elem": [
+        5
+      ],
+      "species": [
+        10
+      ],
+      "birth": 20,
+      "rare": 0,
+      "grow": "SR_DEFAULT",
+      "cost": 0,
+      "atkskl": "SK_SCPN_ATK",
+      "height": 280,
+      "ai": "AI_ENEMY_ATK_LV3",
+      "status": [
+        {
+          "hp": 40000,
+          "mp": 60,
+          "ap": 72,
+          "atk": 160,
+          "def": 0,
+          "mag": 80,
+          "mnd": 0,
+          "dex": 104,
+          "spd": 42,
+          "luk": 96,
+          "cpo": 100,
+          "cbl": 100,
+          "csl": 100,
+          "cmu": 100,
+          "cpa": 100,
+          "ccf": 100,
+          "cpe": 100,
+          "cfr": 100,
+          "csw": 100,
+          "cst": 100,
+          "cch": 100,
+          "cdm": 100,
+          "cda": 100,
+          "cbe": 100,
+          "cdo": 100,
+          "mov": 4,
+          "jmp": 1,
+          "iniap": -47,
+          "dmax": 9999
+        },
+        {
+          "hp": 40000,
+          "mp": 150,
+          "ap": 144,
+          "atk": 300,
+          "def": 0,
+          "mag": 220,
+          "mnd": 0,
+          "dex": 243,
+          "spd": 95,
+          "luk": 229,
+          "cpo": 100,
+          "cbl": 100,
+          "csl": 100,
+          "cmu": 100,
+          "cpa": 100,
+          "ccf": 100,
+          "cpe": 100,
+          "cfr": 100,
+          "csw": 100,
+          "cst": 100,
+          "cch": 100,
+          "cdm": 100,
+          "cda": 100,
+          "cbe": 100,
+          "cdo": 100,
+          "mov": 4,
+          "jmp": 1,
+          "dmax": 9999
+        }
+      ],
+      "no_kb": 1,
+      "unit_medal_num": 0
+    },
+    {
+      "iname": "UN_FF7_E_SCPN_HA",
+      "sex": 3,
+      "size": 1,
+      "body_type": "MO",
+      "personal": 0,
+      "collaboType": 1,
+      "charaId": "FF07scpn",
+      "anm_type": 2,
+      "type": 7,
+      "elem": [
+        5
+      ],
+      "species": [
+        10
+      ],
+      "birth": 20,
+      "rare": 0,
+      "grow": "SR_DEFAULT",
+      "cost": 0,
+      "atkskl": "SK_SCPN_ATK",
+      "height": 280,
+      "ai": "AI_ENEMY_ATK_LV3",
+      "status": [
+        {
+          "hp": 100000,
+          "mp": 60,
+          "ap": 72,
+          "atk": 160,
+          "def": 0,
+          "mag": 80,
+          "mnd": 0,
+          "dex": 104,
+          "spd": 42,
+          "luk": 96,
+          "cpo": 100,
+          "cbl": 100,
+          "csl": 100,
+          "cmu": 100,
+          "cpa": 100,
+          "ccf": 100,
+          "cpe": 100,
+          "cfr": 100,
+          "csw": 100,
+          "cst": 100,
+          "cch": 100,
+          "cdm": 100,
+          "cda": 100,
+          "cbe": 100,
+          "cdo": 100,
+          "mov": 4,
+          "jmp": 1,
+          "iniap": -47,
+          "dmax": 9999
+        },
+        {
+          "hp": 100000,
           "mp": 150,
           "ap": 144,
           "atk": 300,
@@ -49852,6 +50388,7 @@
       "personal": 5,
       "charaId": "LAPSrrir",
       "anm_type": 1,
+      "voiceId": "LAPSrrir_00",
       "type": 7,
       "elem": [
         3
@@ -56150,6 +56687,167 @@
       "unit_medal_num": 0
     },
     {
+      "iname": "UN_FF7_S_SCPN",
+      "sex": 3,
+      "size": 0,
+      "body_type": "NB_M",
+      "collaboType": 1,
+      "charaId": "FF07scpn",
+      "anm_type": 2,
+      "type": 1,
+      "elem": [
+        5
+      ],
+      "species": [
+        10
+      ],
+      "birth": 1,
+      "rare": 0,
+      "grow": "SB_R1_DEFAULT",
+      "cost": 40,
+      "atkskl": "SK_SMN_FF7_SCPN",
+      "status": [
+        {
+          "hp": 92,
+          "mp": 22,
+          "ap": 25,
+          "atk": 36,
+          "mag": 13,
+          "dex": 29,
+          "spd": 10,
+          "luk": 24,
+          "eea": -10,
+          "ewa": 10,
+          "mov": 0,
+          "jmp": 0
+        },
+        {
+          "hp": 437,
+          "mp": 28,
+          "ap": 31,
+          "atk": 63,
+          "mag": 21,
+          "dex": 44,
+          "spd": 12,
+          "luk": 36,
+          "eea": -10,
+          "ewa": 10,
+          "mov": 0,
+          "jmp": 0
+        }
+      ],
+      "nb_exp_coef_id": "SB_EXP_THUN_01",
+      "nb_lv_tbl": "SB_LVTBL_UR_01",
+      "nb_awake_id": [
+        "UN_FF7_S_SCPN_AW1",
+        "UN_FF7_S_SCPN_AW2"
+      ]
+    },
+    {
+      "iname": "UN_FF7_S_SCPN_AW1",
+      "sex": 3,
+      "size": 0,
+      "body_type": "NB_M",
+      "collaboType": 1,
+      "charaId": "FF07scpn",
+      "anm_type": 2,
+      "type": 11,
+      "elem": [
+        5
+      ],
+      "species": [
+        10
+      ],
+      "birth": 1,
+      "rare": 0,
+      "grow": "SB_R2_DEFAULT",
+      "cost": 40,
+      "atkskl": "SK_SMN_FF7_SCPN",
+      "status": [
+        {
+          "hp": 458,
+          "mp": 29,
+          "ap": 32,
+          "atk": 66,
+          "mag": 22,
+          "dex": 46,
+          "spd": 12,
+          "luk": 37,
+          "eea": -10,
+          "ewa": 10,
+          "mov": 0,
+          "jmp": 0
+        },
+        {
+          "hp": 880,
+          "mp": 37,
+          "ap": 38,
+          "atk": 97,
+          "mag": 30,
+          "dex": 62,
+          "spd": 14,
+          "luk": 51,
+          "eea": -10,
+          "ewa": 10,
+          "mov": 0,
+          "jmp": 0
+        }
+      ]
+    },
+    {
+      "iname": "UN_FF7_S_SCPN_AW2",
+      "sex": 3,
+      "size": 0,
+      "body_type": "NB_M",
+      "collaboType": 1,
+      "charaId": "FF07scpn",
+      "anm_type": 2,
+      "type": 11,
+      "elem": [
+        5
+      ],
+      "species": [
+        10
+      ],
+      "birth": 1,
+      "rare": 0,
+      "grow": "SB_R3_DEFAULT",
+      "cost": 40,
+      "atkskl": "SK_SMN_FF7_SCPN",
+      "status": [
+        {
+          "hp": 901,
+          "mp": 38,
+          "ap": 38,
+          "atk": 100,
+          "mag": 31,
+          "dex": 64,
+          "spd": 14,
+          "luk": 53,
+          "eea": -10,
+          "ewa": 10,
+          "csw": 5,
+          "mov": 0,
+          "jmp": 0
+        },
+        {
+          "hp": 1323,
+          "mp": 42,
+          "ap": 41,
+          "atk": 131,
+          "mag": 40,
+          "dex": 80,
+          "spd": 15,
+          "luk": 67,
+          "eea": -10,
+          "ewa": 10,
+          "csw": 25,
+          "mov": 0,
+          "jmp": 0
+        }
+      ]
+    },
+    {
       "iname": "UN_LW_S_IGNT",
       "sex": 3,
       "size": 0,
@@ -60422,6 +61120,53 @@
       "sex": 3,
       "size": 0,
       "charaId": "GMCKrubb",
+      "anm_type": 3,
+      "type": 6,
+      "rare": 0,
+      "cost": 1,
+      "notsmn": 1,
+      "stop": 1,
+      "height": 10,
+      "status": [
+        {
+          "hp": 1000,
+          "mp": 0,
+          "ap": 0,
+          "atk": 0,
+          "def": 0,
+          "mag": 0,
+          "mnd": 0,
+          "dex": 0,
+          "spd": 0,
+          "luk": 0,
+          "cpo": 999,
+          "cbl": 999,
+          "csl": 999,
+          "cmu": 999,
+          "cpa": 999,
+          "ccf": 999,
+          "cpe": 999,
+          "cfr": 999,
+          "csw": 999,
+          "cst": 999,
+          "cch": 999,
+          "cdm": 999,
+          "cda": 999,
+          "cbe": 999,
+          "cdo": 999,
+          "frz": 999,
+          "stn": 999
+        }
+      ],
+      "no_kb": 1,
+      "no_swap": 1,
+      "unit_medal_num": 0
+    },
+    {
+      "iname": "UN_GM_BOMB",
+      "sex": 3,
+      "size": 0,
+      "charaId": "GMCKbomb",
       "anm_type": 3,
       "type": 6,
       "rare": 0,

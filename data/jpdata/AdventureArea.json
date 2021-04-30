@@ -8,7 +8,19 @@
       "end_at": "2021/06/9 14:59:59",
       "drop": [
         {
-          "drop_area_id": "AD_AREA_FF07_01"
+          "drop_area_id": "AD_AREA_FF07_01",
+          "drop_start_at": "2021/04/21 12:00:00",
+          "drop_end_at": "2021/04/30 23:59:59"
+        },
+        {
+          "drop_area_id": "AD_AREA_FF07_02",
+          "drop_start_at": "2021/05/1 0:00:00",
+          "drop_end_at": "2021/05/7 14:59:59"
+        },
+        {
+          "drop_area_id": "AD_AREA_FF07_03",
+          "drop_start_at": "2021/05/7 15:00:00",
+          "drop_end_at": "2021/06/9 14:59:59"
         }
       ]
     },

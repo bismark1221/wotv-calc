@@ -47,7 +47,10 @@ export class CardService {
     'VC_LW_APPLE',
     'VC_LW_MOGL',
     'VC_LW_KRKN',
-    'VC_FF7_MV1'
+    'VC_FF7_MV1',
+    'VC_FF7_SCPN',
+    'AF_FF7_ROD_000',
+    'AF_FF7_ACC_003'
   ];
 
   private GL_limitedCards = [
@@ -73,7 +76,10 @@ export class CardService {
     'VC_LW_OOOO',
     'VC_LW_MOGL',
     'VC_LW_KRKN',
-    'VC_FF7_MV1'
+    'VC_FF7_MV1',
+    'VC_FF7_SCPN',
+    'AF_FF7_ROD_000',
+    'AF_FF7_ACC_003'
   ];
 
   constructor(

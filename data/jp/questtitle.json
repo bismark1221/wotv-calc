@@ -2257,6 +2257,46 @@
             "value": "墓穴"
         },
         {
+            "key": "QE_ST_02010301",
+            "value": "湖上の霧１"
+        },
+        {
+            "key": "QE_ST_02010302",
+            "value": "湖上の霧２"
+        },
+        {
+            "key": "QE_ST_02010303",
+            "value": "湖上の霧３"
+        },
+        {
+            "key": "QE_ST_02010304",
+            "value": "揺らぐ運命"
+        },
+        {
+            "key": "QE_ST_02010305",
+            "value": "希望か絶望か"
+        },
+        {
+            "key": "QE_ST_02010306",
+            "value": "裏切り者の影"
+        },
+        {
+            "key": "QE_ST_02010307",
+            "value": "竜の血脈"
+        },
+        {
+            "key": "QE_ST_02010308",
+            "value": "虐げられし民１"
+        },
+        {
+            "key": "QE_ST_02010309",
+            "value": "虐げられし民２"
+        },
+        {
+            "key": "QE_ST_02010310",
+            "value": "再会"
+        },
+        {
             "key": "QE_HA_LW_MONT",
             "value": "欠片獲得 モント・リオニス"
         },
@@ -3101,6 +3141,14 @@
             "value": "ガーガス"
         },
         {
+            "key": "QE_CH_FF7_AERT",
+            "value": "エアリス"
+        },
+        {
+            "key": "QE_CH_FF7_BART",
+            "value": "バレット"
+        },
+        {
             "key": "QE_EV_1100DL_FIR",
             "value": "1100万DL記念クエスト（火）"
         },
@@ -3158,6 +3206,34 @@
         },
         {
             "key": "QE_EV_CDOWN_01_7",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_1",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_2",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_3",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_4",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_5",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_6",
+            "value": "カウントダウンクエスト"
+        },
+        {
+            "key": "QE_EV_1_5ANV_7",
             "value": "カウントダウンクエスト"
         },
         {
@@ -3367,6 +3443,14 @@
         {
             "key": "QE_EV_TIFA_01",
             "value": "限定ハードクエスト（ティファ）"
+        },
+        {
+            "key": "QE_EV_AERT_01",
+            "value": "限定ハードクエスト（エアリス）"
+        },
+        {
+            "key": "QE_EV_BART_01",
+            "value": "限定ハードクエスト（バレット）"
         },
         {
             "key": "QE_EV_WIZ_04",
@@ -3606,6 +3690,54 @@
         },
         {
             "key": "QE_PT_004_BOSS_2",
+            "value": "裁きの試練ボスバトル Hard"
+        },
+        {
+            "key": "QE_PT_005_01",
+            "value": "裁きの試練クエスト Normal#1"
+        },
+        {
+            "key": "QE_PT_005_02",
+            "value": "裁きの試練クエスト Normal#2"
+        },
+        {
+            "key": "QE_PT_005_03",
+            "value": "裁きの試練クエスト Normal#3"
+        },
+        {
+            "key": "QE_PT_005_04",
+            "value": "裁きの試練クエスト Normal#4"
+        },
+        {
+            "key": "QE_PT_005_05",
+            "value": "裁きの試練クエスト Normal#5"
+        },
+        {
+            "key": "QE_PT_005_HA01",
+            "value": "裁きの試練クエスト Hard#1"
+        },
+        {
+            "key": "QE_PT_005_HA02",
+            "value": "裁きの試練クエスト Hard#2"
+        },
+        {
+            "key": "QE_PT_005_HA03",
+            "value": "裁きの試練クエスト Hard#3"
+        },
+        {
+            "key": "QE_PT_005_HA04",
+            "value": "裁きの試練クエスト Hard#4"
+        },
+        {
+            "key": "QE_PT_005_HA05",
+            "value": "裁きの試練クエスト Hard#5"
+        },
+        {
+            "key": "QE_PT_005_BOSS_1",
+            "value": "裁きの試練ボスバトル Normal"
+        },
+        {
+            "key": "QE_PT_005_BOSS_2",
             "value": "裁きの試練ボスバトル Hard"
         },
         {
@@ -3994,95 +4126,19 @@
         },
         {
             "key": "QE_EV_FF7_EX_01",
-            "value": "FINAL FANTASY Ⅶ REMAKE【EX1】"
+            "value": "FINAL FANTASY Ⅶ REMAKE 【EX1】"
+        },
+        {
+            "key": "QE_EV_FF7_EX_02",
+            "value": "FINAL FANTASY Ⅶ REMAKE 【EX2】"
         },
         {
             "key": "QE_EV_FF7_EX_03",
-            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE【EX1】"
+            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE 【EX1】"
         },
         {
-            "key": "QE_EV_ART_CRF_16",
-            "value": "武具育成クエスト（プラチナボウ）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_17",
-            "value": "超高難度　武具育成クエスト（プラチナボウ）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_18",
-            "value": "武具育成クエスト（フレイムタン）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_19",
-            "value": "超高難度　武具育成クエスト（フレイムタン）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_20",
-            "value": "武具育成クエスト（サイプレスパイル）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_21",
-            "value": "超高難度　武具育成クエスト（サイプレスパイル）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_13",
-            "value": "武具育成クエスト（癒しのメイス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_14",
-            "value": "武具育成クエスト（ラス・アルゲテイ）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_15",
-            "value": "武具育成クエスト（佐助の刀）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_06",
-            "value": "武具育成クエスト（ゴールドアックス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_10",
-            "value": "超高難度　武具育成クエスト（癒しのメイス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_11",
-            "value": "超高難度　武具育成クエスト（ラス・アルゲテイ）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_12",
-            "value": "超高難度　武具育成クエスト（佐助の刀）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_24",
-            "value": "超高難度　武具育成クエスト（ゴールドアックス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_07",
-            "value": "武具育成クエスト（プラチナメイス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_08",
-            "value": "武具育成クエスト（サンゴの剣）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_22",
-            "value": "超高難度　武具育成クエスト（プラチナメイス）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_23",
-            "value": "超高難度　武具育成クエスト（サンゴの剣）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_09",
-            "value": "武具育成クエスト（プラチナロッド）"
-        },
-        {
-            "key": "QE_EV_ART_CRF_05",
-            "value": "武具育成クエスト（眠りの剣）"
-        },
-        {
-            "key": "QE_EV_JP_001",
-            "value": "JP獲得クエスト"
+            "key": "QE_EV_FF7_EX_04",
+            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE 【EX2】"
         },
         {
             "key": "QE_EV_12_01",
@@ -4803,6 +4859,90 @@
         {
             "key": "QE_EV_04_EX2",
             "value": "東方遥かなり 【EX2】"
+        },
+        {
+            "key": "QE_EV_ART_CRF_16",
+            "value": "武具育成クエスト（プラチナボウ）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_17",
+            "value": "超高難度　武具育成クエスト（プラチナボウ）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_18",
+            "value": "武具育成クエスト（フレイムタン）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_19",
+            "value": "超高難度　武具育成クエスト（フレイムタン）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_20",
+            "value": "武具育成クエスト（サイプレスパイル）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_21",
+            "value": "超高難度　武具育成クエスト（サイプレスパイル）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_13",
+            "value": "武具育成クエスト（癒しのメイス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_14",
+            "value": "武具育成クエスト（ラス・アルゲテイ）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_15",
+            "value": "武具育成クエスト（佐助の刀）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_06",
+            "value": "武具育成クエスト（ゴールドアックス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_10",
+            "value": "超高難度　武具育成クエスト（癒しのメイス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_11",
+            "value": "超高難度　武具育成クエスト（ラス・アルゲテイ）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_12",
+            "value": "超高難度　武具育成クエスト（佐助の刀）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_24",
+            "value": "超高難度　武具育成クエスト（ゴールドアックス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_07",
+            "value": "武具育成クエスト（プラチナメイス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_08",
+            "value": "武具育成クエスト（サンゴの剣）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_22",
+            "value": "超高難度　武具育成クエスト（プラチナメイス）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_23",
+            "value": "超高難度　武具育成クエスト（サンゴの剣）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_09",
+            "value": "武具育成クエスト（プラチナロッド）"
+        },
+        {
+            "key": "QE_EV_ART_CRF_05",
+            "value": "武具育成クエスト（眠りの剣）"
+        },
+        {
+            "key": "QE_EV_JP_001",
+            "value": "JP獲得クエスト"
         },
         {
             "key": "QE_RAID_EV_06_01",
@@ -5701,6 +5841,10 @@
             "value": "セイレーン戦"
         },
         {
+            "key": "QE_SB_SIRE_02",
+            "value": "セイレーン戦（２）"
+        },
+        {
             "key": "QE_SB_SHIV_01",
             "value": "シヴァ戦"
         },
@@ -5849,6 +5993,10 @@
             "value": "オチュー戦"
         },
         {
+            "key": "QE_SB_OCHU_04",
+            "value": "オチュー戦（２）"
+        },
+        {
             "key": "QE_SB_MDFY_01",
             "value": "マインドフレイア戦"
         },
@@ -5970,11 +6118,19 @@
         },
         {
             "key": "QE_MU_FF7_EX_01",
-            "value": "FINAL FANTASY Ⅶ REMAKE【EX1】"
+            "value": "FINAL FANTASY Ⅶ REMAKE 【EX1】"
+        },
+        {
+            "key": "QE_MU_FF7_EX_02",
+            "value": "FINAL FANTASY Ⅶ REMAKE 【EX2】"
         },
         {
             "key": "QE_MU_FF7_EX_03",
-            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE【EX1】"
+            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE 【EX1】"
+        },
+        {
+            "key": "QE_MU_FF7_EX_04",
+            "value": "超高難度　FINAL FANTASY Ⅶ REMAKE 【EX2】"
         },
         {
             "key": "QE_MU_EV_12_EX",
@@ -6063,86 +6219,6 @@
         {
             "key": "QE_MU_CHAL_04_03",
             "value": "【極高難度】チャレンジクエスト4"
-        },
-        {
-            "key": "QE_MU_ART_CRF_16",
-            "value": "武具育成クエスト（プラチナボウ）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_17",
-            "value": "超高難度　武具育成クエスト（プラチナボウ）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_18",
-            "value": "武具育成クエスト（フレイムタン）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_19",
-            "value": "超高難度　武具育成クエスト（フレイムタン）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_20",
-            "value": "武具育成クエスト（サイプレスパイル）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_21",
-            "value": "超高難度　武具育成クエスト（サイプレスパイル）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_13",
-            "value": "武具育成クエスト（癒しのメイス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_14",
-            "value": "武具育成クエスト（ラス・アルゲテイ）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_15",
-            "value": "武具育成クエスト（佐助の刀）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_06",
-            "value": "武具育成クエスト（ゴールドアックス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_10",
-            "value": "超高難度　武具育成クエスト（癒しのメイス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_11",
-            "value": "超高難度　武具育成クエスト（ラス・アルゲテイ）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_12",
-            "value": "超高難度　武具育成クエスト（佐助の刀）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_24",
-            "value": "超高難度　武具育成クエスト（ゴールドアックス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_07",
-            "value": "武具育成クエスト（プラチナメイス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_08",
-            "value": "武具育成クエスト（サンゴの剣）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_22",
-            "value": "超高難度　武具育成クエスト（プラチナメイス）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_23",
-            "value": "超高難度　武具育成クエスト（サンゴの剣）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_09",
-            "value": "武具育成クエスト（プラチナロッド）"
-        },
-        {
-            "key": "QE_MU_ART_CRF_05",
-            "value": "武具育成クエスト（眠りの剣）"
         },
         {
             "key": "QE_MU_EV_05_EX1",
@@ -6251,6 +6327,86 @@
         {
             "key": "QE_MU_EV_04_EX2",
             "value": "東方遥かなり 【EX2】"
+        },
+        {
+            "key": "QE_MU_ART_CRF_16",
+            "value": "武具育成クエスト（プラチナボウ）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_17",
+            "value": "超高難度　武具育成クエスト（プラチナボウ）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_18",
+            "value": "武具育成クエスト（フレイムタン）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_19",
+            "value": "超高難度　武具育成クエスト（フレイムタン）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_20",
+            "value": "武具育成クエスト（サイプレスパイル）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_21",
+            "value": "超高難度　武具育成クエスト（サイプレスパイル）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_13",
+            "value": "武具育成クエスト（癒しのメイス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_14",
+            "value": "武具育成クエスト（ラス・アルゲテイ）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_15",
+            "value": "武具育成クエスト（佐助の刀）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_06",
+            "value": "武具育成クエスト（ゴールドアックス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_10",
+            "value": "超高難度　武具育成クエスト（癒しのメイス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_11",
+            "value": "超高難度　武具育成クエスト（ラス・アルゲテイ）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_12",
+            "value": "超高難度　武具育成クエスト（佐助の刀）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_24",
+            "value": "超高難度　武具育成クエスト（ゴールドアックス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_07",
+            "value": "武具育成クエスト（プラチナメイス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_08",
+            "value": "武具育成クエスト（サンゴの剣）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_22",
+            "value": "超高難度　武具育成クエスト（プラチナメイス）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_23",
+            "value": "超高難度　武具育成クエスト（サンゴの剣）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_09",
+            "value": "武具育成クエスト（プラチナロッド）"
+        },
+        {
+            "key": "QE_MU_ART_CRF_05",
+            "value": "武具育成クエスト（眠りの剣）"
         },
         {
             "key": "QE_MU_EV_TH_EX1",
@@ -6733,6 +6889,10 @@
             "value": "リオニス城付近"
         },
         {
+            "key": "QE_GVG_00017",
+            "value": "遺跡Ⅴ"
+        },
+        {
             "key": "QE_PVP_FRE_0001",
             "value": "平原"
         },
@@ -6779,6 +6939,10 @@
         {
             "key": "QE_PVP_FRE_0012",
             "value": "雪山Ⅱ"
+        },
+        {
+            "key": "QE_PVP_FRI_0034",
+            "value": "遺跡Ⅴ"
         },
         {
             "key": "QE_PVP_FRI_0033",
@@ -7114,7 +7278,7 @@
         },
         {
             "key": "QE_VC_LW_ICDG",
-            "value": "欠片獲得 氷雪嵐龍　フリーゼス"
+            "value": "欠片獲得 氷雪嵐竜　フリーゼス"
         },
         {
             "key": "QE_VC_LW_IGNT",

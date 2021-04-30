@@ -69,7 +69,8 @@ export class EsperService {
       'UN_LW_S_OMEG',
       'UN_LW_S_PNIX',
       'UN_LW_S_CBCL',
-      'UN_LW_S_ICDG'
+      'UN_LW_S_ICDG',
+      'UN_FF7_S_SCPN'
     ]
   };
 
@@ -78,7 +79,8 @@ export class EsperService {
     'UN_FF4_S_DMNW',
     'UN_LW_S_MOGL',
     'UN_FFT_S_CHCB_01',
-    'UN_LW_S_KRKN'
+    'UN_LW_S_KRKN',
+    'UN_FF7_S_SCPN'
   ];
 
   private GL_limitedEspers = [
@@ -86,7 +88,8 @@ export class EsperService {
     'UN_FF4_S_DMNW',
     'UN_LW_S_MOGL',
     'UN_FFT_S_CHCB_01',
-    'UN_LW_S_KRKN'
+    'UN_LW_S_KRKN',
+    'UN_FF7_S_SCPN'
   ];
 
   constructor(

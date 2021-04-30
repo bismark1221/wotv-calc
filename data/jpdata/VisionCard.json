@@ -2618,6 +2618,105 @@
       ]
     },
     {
+      "iname": "VC_FF7_SCPN",
+      "type": 0,
+      "collaboType": 1,
+      "icon": "FF07Scpn",
+      "rare": 4,
+      "cost": 70,
+      "piece": "IT_VPI_FF7_SCPN",
+      "piece_num": 25,
+      "db_num": 1,
+      "sell": 1000,
+      "sell_mdl": 100,
+      "en_cost": 2000,
+      "en_exp": 20000,
+      "card_buffs": [
+        {
+          "cnds_iname": "VLC_THUNDER",
+          "card_skill": "SK_VC_FF7_SCPN_GS",
+          "add_card_skill_buff_awake": "SK_VC_FF7_SCPN_GS_AW",
+          "add_card_skill_buff_lvmax": "SK_VC_FF7_SCPN_GSMAX"
+        },
+        {
+          "cnds_iname": "VLC_THUNDER",
+          "card_skill": "SK_VC_FF7_SCPN_GS_2",
+          "add_card_skill_buff_awake": "SK_VC_FF7_SCPN_GS_AW_2",
+          "add_card_skill_buff_lvmax": "SK_VC_FF7_SCPN_GSMAX_2"
+        }
+      ],
+      "self_buffs": [
+        {
+          "buff_cond": "VLC_THUNDER",
+          "self_buff": "SK_VC_FF7_SCPN_P",
+          "add_self_buff_awake": "SK_VC_FF7_SCPN_PAW",
+          "add_self_buff_lvmax": "SK_VC_FF7_SCPN_PMAX"
+        }
+      ],
+      "status": [
+        {
+          "hp": 39,
+          "mp": 6,
+          "atk": 40
+        },
+        {
+          "hp": 304,
+          "mp": 20,
+          "atk": 155
+        }
+      ],
+      "first_bonus_unit": "UN_FF7_S_SCPN"
+    },
+    {
+      "iname": "VC_LW_LSWL",
+      "type": 0,
+      "icon": "LAPSLswl",
+      "rare": 4,
+      "cost": 70,
+      "piece": "IT_VPI_LW_LSWL",
+      "piece_num": 25,
+      "db_num": 1,
+      "sell": 1000,
+      "sell_mdl": 100,
+      "en_cost": 2000,
+      "en_exp": 20000,
+      "card_buffs": [
+        {
+          "cnds_iname": "VLC_ICE",
+          "card_skill": "SK_VC_LW_LSWL_GS",
+          "add_card_skill_buff_awake": "SK_VC_LW_LSWL_GS_AW",
+          "add_card_skill_buff_lvmax": "SK_VC_LW_LSWL_GSMAX"
+        },
+        {
+          "cnds_iname": "VLC_ICE",
+          "card_skill": "SK_VC_LW_LSWL_GS_2",
+          "add_card_skill_buff_awake": "SK_VC_LW_LSWL_GS_AW_2",
+          "add_card_skill_buff_lvmax": "SK_VC_LW_LSWL_GSMAX_2"
+        }
+      ],
+      "self_buffs": [
+        {
+          "buff_cond": "VLC_ICE",
+          "self_buff": "SK_VC_LW_LSWL_P",
+          "add_self_buff_awake": "SK_VC_LW_LSWL_PAW",
+          "add_self_buff_lvmax": "SK_VC_LW_LSWL_PMAX"
+        }
+      ],
+      "status": [
+        {
+          "hp": 40,
+          "atk": 39,
+          "def": 2
+        },
+        {
+          "hp": 313,
+          "atk": 152,
+          "def": 4
+        }
+      ],
+      "visioncard_medal_num": 0
+    },
+    {
       "iname": "VC_LW_IGNT",
       "type": 0,
       "icon": "LAPSIgnt",

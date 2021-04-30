@@ -18,6 +18,9 @@
         <a class="nav-link" [routerLink]="[getRoute('/equipments')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inEquipment}">
           {{ 'nav.equipments' | translate }}
         </a>
+        <!-- <a class="nav-link" [routerLink]="[getRoute('/quests')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inQuest}">
+          {{ 'nav.quests' | translate }}
+        </a> -->
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" (mouseover)="showBuilderNav=false; showOtherNav=false" [ngClass]="{'active': inRaid}">
           {{ 'nav.raids' | translate }}
         </a>
@@ -127,6 +130,9 @@
         <a class="nav-link" [routerLink]="[getRoute('/equipments')]" [ngClass]="{'active': inEquipment}" (click)="toggleMobileMenu(true)">
           {{ 'nav.equipments' | translate }}
         </a>
+        <!-- <a class="nav-link" [routerLink]="[getRoute('/quests')]" [ngClass]="{'active': inQuest}" (click)="toggleMobileMenu(true)">
+          {{ 'nav.quests' | translate }}
+        </a> -->
         <a class="nav-link" [routerLink]="[getRoute('/raids')]" [ngClass]="{'active': inRaid}" (click)="toggleMobileMenu(true)">
           {{ 'nav.raids' | translate }}
         </a>

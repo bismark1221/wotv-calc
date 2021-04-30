@@ -36,21 +36,9 @@ export class QuestsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.authService.$user.subscribe(async user => {
-      if (user && await this.checkIfIlluminati()) {
-        this.navService.setTitle('Quests');
+    this.navService.setTitle('Quests');
 
-        this.getQuests();
-      } else if (user !== undefined) {
-        this.router.navigate([this.navService.getRoute('/page-not-found')]);
-      }
-    });
-  }
-
-  async checkIfIlluminati() {
-    return await this.authService.getIlluminty().then(result => {
-      return result;
-    });
+    this.getQuests();
   }
 
   async getQuests() {

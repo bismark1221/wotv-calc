@@ -1705,6 +1705,46 @@
             "value": "モンク（FFⅦR）の記憶・緋"
         },
         {
+            "key": "IT_JB_MM_FF7_AERT",
+            "value": "白魔道士（FFⅦR）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF7_AERT_2",
+            "value": "白魔道士（FFⅦR）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF7_AERT_3",
+            "value": "白魔道士（FFⅦR）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF7_AERT_4",
+            "value": "白魔道士（FFⅦR）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF7_AERT_5",
+            "value": "白魔道士（FFⅦR）の記憶・緋"
+        },
+        {
+            "key": "IT_JB_MM_FF7_BART",
+            "value": "ガンナー（FFⅦR）の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_FF7_BART_2",
+            "value": "ガンナー（FFⅦR）の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_FF7_BART_3",
+            "value": "ガンナー（FFⅦR）の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_FF7_BART_4",
+            "value": "ガンナー（FFⅦR）の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_FF7_BART_5",
+            "value": "ガンナー（FFⅦR）の記憶・緋"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "火の輝石・翠"
         },
@@ -2777,6 +2817,14 @@
             "value": "ティファの欠片"
         },
         {
+            "key": "IT_PI_FF7_AERT",
+            "value": "エアリスの欠片"
+        },
+        {
+            "key": "IT_PI_FF7_BART",
+            "value": "バレットの欠片"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "モント・リオニスの思珠"
         },
@@ -3729,6 +3777,18 @@
             "value": "【FFⅩ】ボスバトルチケット"
         },
         {
+            "key": "IT_PT_SKIP_FF7_1",
+            "value": "【FFⅦR】試練クエストスキップチケット"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF7_1",
+            "value": "【FFⅦR】試練ボススキップチケット"
+        },
+        {
+            "key": "IT_PT_BOSS_FF7_1",
+            "value": "【FFⅦR】ボスバトルチケット"
+        },
+        {
             "key": "IT_AF_EXP_01",
             "value": "アダマンタイト（小）"
         },
@@ -4453,6 +4513,14 @@
             "value": "バスターソードのクラフトレシピ"
         },
         {
+            "key": "IT_AF_FF7_ROD_000",
+            "value": "ガードロッドのクラフトレシピ"
+        },
+        {
+            "key": "IT_AF_FF7_ACC_003",
+            "value": "神羅バングルのクラフトレシピ"
+        },
+        {
             "key": "IT_AF_SUP_HP",
             "value": "命の刻印"
         },
@@ -4801,6 +4869,10 @@
             "value": "【4月】召喚メダルB"
         },
         {
+            "key": "IT_EC_SUMMON_05_02_A",
+            "value": "【5月】召喚メダルA"
+        },
+        {
             "key": "IT_EC_SUMMON_HALL_01",
             "value": "【2020ハロウィン】召喚メダル"
         },
@@ -5021,8 +5093,16 @@
             "value": "FFⅦRコラボ召喚メダルA"
         },
         {
+            "key": "IT_EC_FF7_2_B",
+            "value": "FFⅦRコラボ召喚メダルB"
+        },
+        {
             "key": "IT_EC_FF7_4",
             "value": "FFⅦRコラボログインメダル"
+        },
+        {
+            "key": "IT_EC_FF7_3",
+            "value": "【FFⅦR】裁きの試練メダル"
         },
         {
             "key": "IT_OTOSIDAMA_01",
@@ -5797,6 +5877,18 @@
             "value": "FFⅦRコラボユニット欠片×120選択召喚券"
         },
         {
+            "key": "IT_US_SE_PI_39",
+            "value": "FFⅦRコラボユニット欠片×120選択召喚券Ⅱ"
+        },
+        {
+            "key": "IT_US_SE_PI_40",
+            "value": "【1.5周年】ユニット欠片×5選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_41",
+            "value": "【GW記念】Cost100ユニット欠片×40選択召喚券"
+        },
+        {
             "key": "IT_US_SE_UR_U_02",
             "value": "おすすめURユニット選択召喚券"
         },
@@ -5893,12 +5985,24 @@
             "value": "【CM放送記念】秘伝書×100選択召喚券"
         },
         {
+            "key": "IT_US_SE_AF_AW_15",
+            "value": "【GW記念】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_16",
+            "value": "【1.5周年カウントダウンCP】秘伝書×150選択召喚券"
+        },
+        {
             "key": "IT_US_SE_AF_SUP_01",
             "value": "武具の刻印×20選択召喚券"
         },
         {
             "key": "IT_US_SE_AF_SUP_02",
             "value": "武具の刻印×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_03",
+            "value": "武具の刻印×15選択召喚券"
         },
         {
             "key": "IT_US_SE_AF_PT_01",
@@ -6185,6 +6289,26 @@
             "value": "【2021春CP2】ジェダイト×15選択召喚券"
         },
         {
+            "key": "IT_US_SE_JB_05_17",
+            "value": "【GW記念】スピネル×60選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_04_18",
+            "value": "【GW記念】シトリン×60選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_03_15",
+            "value": "【GW記念】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_12",
+            "value": "【GW記念】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_12",
+            "value": "【GW記念】ジェダイト×15選択召喚券"
+        },
+        {
             "key": "IT_US_SE_JBEX_EM_01",
             "value": "輝石像×300選択召喚券"
         },
@@ -6263,6 +6387,10 @@
         {
             "key": "IT_US_SE_JBEX_AF_16",
             "value": "【CM放送記念】焦印石×300選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JBEX_AF_17",
+            "value": "【GW記念】焦印石×100選択召喚券"
         },
         {
             "key": "IT_US_SE_SP_LW_01",
@@ -6506,7 +6634,7 @@
         },
         {
             "key": "IT_VPI_LW_ICDG",
-            "value": "氷雪嵐龍　フリーゼスの欠片"
+            "value": "氷雪嵐竜　フリーゼスの欠片"
         },
         {
             "key": "IT_VPI_LW_DEAN",
@@ -6523,6 +6651,14 @@
         {
             "key": "IT_VPI_FF7_MV1",
             "value": "給水塔の約束の欠片"
+        },
+        {
+            "key": "IT_VPI_FF7_SCPN",
+            "value": "ガードスコーピオンの欠片"
+        },
+        {
+            "key": "IT_VPI_LW_LSWL",
+            "value": "凍閃花　氷魔ラスウェルの欠片"
         },
         {
             "key": "IT_VPI_LW_IGNT",
@@ -6947,6 +7083,10 @@
         {
             "key": "IT_STAMP_2104",
             "value": "4月印章"
+        },
+        {
+            "key": "IT_STAMP_2105",
+            "value": "5月印章"
         }
     ]
 }

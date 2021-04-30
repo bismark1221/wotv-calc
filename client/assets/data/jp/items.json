@@ -3009,7 +3009,7 @@
   "IT_JB_MM_MONT_01": {
     "dataId": "IT_JB_MM_MONT_01",
     "names": {
-      "en": "アークロードの記憶・翠"
+      "en": "アークロードの記憶・翠 - Archlord's Memory (Green)"
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
@@ -3017,7 +3017,7 @@
   "IT_JB_MM_MONT_01_2": {
     "dataId": "IT_JB_MM_MONT_01_2",
     "names": {
-      "en": "アークロードの記憶・碧"
+      "en": "アークロードの記憶・碧 - Archlord's Memory (Blue)"
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
@@ -3025,7 +3025,7 @@
   "IT_JB_MM_MONT_01_3": {
     "dataId": "IT_JB_MM_MONT_01_3",
     "names": {
-      "en": "アークロードの記憶・紫"
+      "en": "アークロードの記憶・紫 - Archlord's Memory (Purple)"
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
@@ -3033,7 +3033,7 @@
   "IT_JB_MM_MONT_01_4": {
     "dataId": "IT_JB_MM_MONT_01_4",
     "names": {
-      "en": "アークロードの記憶・橘"
+      "en": "アークロードの記憶・橘 - Archlord's Memory (Yellow)"
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
@@ -3041,7 +3041,7 @@
   "IT_JB_MM_MONT_01_5": {
     "dataId": "IT_JB_MM_MONT_01_5",
     "names": {
-      "en": "アークロードの記憶・緋"
+      "en": "アークロードの記憶・緋 - Archlord's Memory (Red)"
     },
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
@@ -3285,6 +3285,86 @@
     },
     "type": "job_awake_orb",
     "icon": "JB_FF7_TIFA"
+  },
+  "IT_JB_MM_FF7_AERT": {
+    "dataId": "IT_JB_MM_FF7_AERT",
+    "names": {
+      "en": "白魔道士（FFⅦR）の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_AERT"
+  },
+  "IT_JB_MM_FF7_AERT_2": {
+    "dataId": "IT_JB_MM_FF7_AERT_2",
+    "names": {
+      "en": "白魔道士（FFⅦR）の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_AERT"
+  },
+  "IT_JB_MM_FF7_AERT_3": {
+    "dataId": "IT_JB_MM_FF7_AERT_3",
+    "names": {
+      "en": "白魔道士（FFⅦR）の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_AERT"
+  },
+  "IT_JB_MM_FF7_AERT_4": {
+    "dataId": "IT_JB_MM_FF7_AERT_4",
+    "names": {
+      "en": "白魔道士（FFⅦR）の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_AERT"
+  },
+  "IT_JB_MM_FF7_AERT_5": {
+    "dataId": "IT_JB_MM_FF7_AERT_5",
+    "names": {
+      "en": "白魔道士（FFⅦR）の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_AERT"
+  },
+  "IT_JB_MM_FF7_BART": {
+    "dataId": "IT_JB_MM_FF7_BART",
+    "names": {
+      "en": "ガンナー（FFⅦR）の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_BART"
+  },
+  "IT_JB_MM_FF7_BART_2": {
+    "dataId": "IT_JB_MM_FF7_BART_2",
+    "names": {
+      "en": "ガンナー（FFⅦR）の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_BART"
+  },
+  "IT_JB_MM_FF7_BART_3": {
+    "dataId": "IT_JB_MM_FF7_BART_3",
+    "names": {
+      "en": "ガンナー（FFⅦR）の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_BART"
+  },
+  "IT_JB_MM_FF7_BART_4": {
+    "dataId": "IT_JB_MM_FF7_BART_4",
+    "names": {
+      "en": "ガンナー（FFⅦR）の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_BART"
+  },
+  "IT_JB_MM_FF7_BART_5": {
+    "dataId": "IT_JB_MM_FF7_BART_5",
+    "names": {
+      "en": "ガンナー（FFⅦR）の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_FF7_BART"
   },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
@@ -5053,7 +5133,7 @@
   "IT_PI_LW_MONT_01": {
     "dataId": "IT_PI_LW_MONT_01",
     "names": {
-      "en": "リオニス王モントの欠片"
+      "en": "リオニス王モントの欠片 - Mont (King of Leonis) Unit Shard"
     },
     "type": "unit_shard"
   },
@@ -5159,6 +5239,20 @@
     "dataId": "IT_PI_FF7_TIFA",
     "names": {
       "en": "ティファの欠片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_FF7_AERT": {
+    "dataId": "IT_PI_FF7_AERT",
+    "names": {
+      "en": "エアリスの欠片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_FF7_BART": {
+    "dataId": "IT_PI_FF7_BART",
+    "names": {
+      "en": "バレットの欠片"
     },
     "type": "unit_shard"
   },
@@ -5851,7 +5945,7 @@
   "IT_SP_LW_MONT_01": {
     "dataId": "IT_SP_LW_MONT_01",
     "names": {
-      "en": "リオニス王モントの思珠"
+      "en": "リオニス王モントの思珠 - Mont (King of Leonis) Mindsphere"
     },
     "type": "exjob_orb"
   },
@@ -6830,6 +6924,27 @@
     "dataId": "IT_PT_BOSS_FF10_1",
     "names": {
       "en": "【FFⅩ】ボスバトルチケット - [FFX] Boss Battle Ticket"
+    },
+    "type": "usable_item"
+  },
+  "IT_PT_SKIP_FF7_1": {
+    "dataId": "IT_PT_SKIP_FF7_1",
+    "names": {
+      "en": "【FFⅦR】試練クエストスキップチケット"
+    },
+    "type": "usable_item"
+  },
+  "IT_PT_BSSKIP_FF7_1": {
+    "dataId": "IT_PT_BSSKIP_FF7_1",
+    "names": {
+      "en": "【FFⅦR】試練ボススキップチケット"
+    },
+    "type": "usable_item"
+  },
+  "IT_PT_BOSS_FF7_1": {
+    "dataId": "IT_PT_BOSS_FF7_1",
+    "names": {
+      "en": "【FFⅦR】ボスバトルチケット"
     },
     "type": "usable_item"
   },
@@ -8212,6 +8327,22 @@
     "type": "recipe",
     "icon": "AF_FF7_BSW_000"
   },
+  "IT_AF_FF7_ROD_000": {
+    "dataId": "IT_AF_FF7_ROD_000",
+    "names": {
+      "en": "ガードロッドのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_FF7_ROD_000"
+  },
+  "IT_AF_FF7_ACC_003": {
+    "dataId": "IT_AF_FF7_ACC_003",
+    "names": {
+      "en": "神羅バングルのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_FF7_ACC_003"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -8860,6 +8991,14 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_05_02_A": {
+    "dataId": "IT_EC_SUMMON_05_02_A",
+    "names": {
+      "en": "【5月】召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -9267,10 +9406,25 @@
     "type": "medal",
     "icon": "IT_EC_FF7_2"
   },
+  "IT_EC_FF7_2_B": {
+    "dataId": "IT_EC_FF7_2_B",
+    "names": {
+      "en": "FFⅦRコラボ召喚メダルB"
+    },
+    "type": "medal",
+    "icon": "IT_EC_FF7_2"
+  },
   "IT_EC_FF7_4": {
     "dataId": "IT_EC_FF7_4",
     "names": {
       "en": "FFⅦRコラボログインメダル"
+    },
+    "type": "medal"
+  },
+  "IT_EC_FF7_3": {
+    "dataId": "IT_EC_FF7_3",
+    "names": {
+      "en": "【FFⅦR】裁きの試練メダル"
     },
     "type": "medal"
   },
@@ -10797,6 +10951,30 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_PI_39": {
+    "dataId": "IT_US_SE_PI_39",
+    "names": {
+      "en": "FFⅦRコラボユニット欠片×120選択召喚券Ⅱ"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_40": {
+    "dataId": "IT_US_SE_PI_40",
+    "names": {
+      "en": "【1.5周年】ユニット欠片×5選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_41": {
+    "dataId": "IT_US_SE_PI_41",
+    "names": {
+      "en": "【GW記念】Cost100ユニット欠片×40選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_UR_U_02": {
     "dataId": "IT_US_SE_UR_U_02",
     "names": {
@@ -10989,6 +11167,22 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AF_AW_15": {
+    "dataId": "IT_US_SE_AF_AW_15",
+    "names": {
+      "en": "【GW記念】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_AW_16": {
+    "dataId": "IT_US_SE_AF_AW_16",
+    "names": {
+      "en": "【1.5周年カウントダウンCP】秘伝書×150選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -11001,6 +11195,14 @@
     "dataId": "IT_US_SE_AF_SUP_02",
     "names": {
       "en": "武具の刻印×50選択召喚券 - Select Equipment Seal x50 Summon Ticket"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_SUP_03": {
+    "dataId": "IT_US_SE_AF_SUP_03",
+    "names": {
+      "en": "武具の刻印×15選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11573,6 +11775,46 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_17": {
+    "dataId": "IT_US_SE_JB_05_17",
+    "names": {
+      "en": "【GW記念】スピネル×60選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_18": {
+    "dataId": "IT_US_SE_JB_04_18",
+    "names": {
+      "en": "【GW記念】シトリン×60選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_15": {
+    "dataId": "IT_US_SE_JB_03_15",
+    "names": {
+      "en": "【GW記念】チャロアイト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_12": {
+    "dataId": "IT_US_SE_JB_02_12",
+    "names": {
+      "en": "【GW記念】アズライト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_12": {
+    "dataId": "IT_US_SE_JB_01_12",
+    "names": {
+      "en": "【GW記念】ジェダイト×15選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -11729,6 +11971,14 @@
     "dataId": "IT_US_SE_JBEX_AF_16",
     "names": {
       "en": "【CM放送記念】焦印石×300選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_17": {
+    "dataId": "IT_US_SE_JBEX_AF_17",
+    "names": {
+      "en": "【GW記念】焦印石×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -12164,7 +12414,7 @@
   "IT_VPI_LW_ICDG": {
     "dataId": "IT_VPI_LW_ICDG",
     "names": {
-      "en": "氷雪嵐龍　フリーゼスの欠片"
+      "en": "氷雪嵐竜　フリーゼスの欠片"
     },
     "type": "vc_shard"
   },
@@ -12193,6 +12443,20 @@
     "dataId": "IT_VPI_FF7_MV1",
     "names": {
       "en": "給水塔の約束の欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_FF7_SCPN": {
+    "dataId": "IT_VPI_FF7_SCPN",
+    "names": {
+      "en": "ガードスコーピオンの欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_LSWL": {
+    "dataId": "IT_VPI_LW_LSWL",
+    "names": {
+      "en": "凍閃花　氷魔ラスウェルの欠片"
     },
     "type": "vc_shard"
   },
@@ -12920,7 +13184,7 @@
   "IT_STAMP_2101": {
     "dataId": "IT_STAMP_2101",
     "names": {
-      "en": "1月印章"
+      "en": "1月印章 - June Token"
     },
     "type": "stamp",
     "icon": "IT_STAMP_01"
@@ -12948,5 +13212,13 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_04"
+  },
+  "IT_STAMP_2105": {
+    "dataId": "IT_STAMP_2105",
+    "names": {
+      "en": "5月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_05"
   }
 }

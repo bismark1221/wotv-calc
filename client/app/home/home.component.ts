@@ -54,6 +54,18 @@ export class HomeComponent {
     ],
     JP: [
       {
+        date: '01/05',
+        items: [
+          {type: 'unit', dataId: 'UN_FF7_P_AERT'},
+          {type: 'unit', dataId: 'UN_FF7_P_BART'},
+          {type: 'card', dataId: 'VC_FF7_SCPN'},
+          {type: 'card', dataId: 'VC_LW_LSWL'},
+          {type: 'esper', dataId: 'UN_FF7_S_SCPN'},
+          {type: 'equipment', dataId: 'AF_FF7_ROD_000'},
+          {type: 'equipment', dataId: 'AF_FF7_ACC_003'}
+        ]
+      },
+      {
         date: '21/04',
         items: [
           {type: 'unit', dataId: 'UN_FF7_P_CLUD'},
@@ -82,16 +94,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_VNLA'},
           {type: 'unit', dataId: 'UN_LW_P_DRIO'},
           {type: 'unit', dataId: 'UN_LW_P_UNII'}
-        ]
-      },
-      {
-        date: '07/04',
-        items: [
-          {type: 'card', dataId: 'VC_LW_MONT'},
-          {type: 'card', dataId: 'VC_LW_DMCM'},
-          {type: 'esper', dataId: 'UN_LW_S_DMCM'},
-          {type: 'equipment', dataId: 'AF_LW_ARM_032'},
-          {type: 'esper', dataId: 'UN_LW_S_LAMA_01'}
         ]
       }
     ]
