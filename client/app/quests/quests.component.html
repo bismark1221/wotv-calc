@@ -8,9 +8,9 @@
         <i class="fas fa-chevron-down" *ngIf="isCollapsedType" aria-hidden="true"></i>
       </div>
       <div class="collapsedFilters" [ngbCollapse]="isCollapsedType">
-        <div *ngFor="let type of ['story', 'event', 'hard_quest_unit', 'multi', 'character_quest', 'esper_quest', 'arena', 'raid', 'rank_pvp', 'free_pvp', 'friend_pvp', 'gvg', 'tuto', 'beginner', 'guild_quest', 'selection', 'draft_pvp', 'hard_quest_vc']">
-          <input type="checkbox" id="raritystory" (change)="filterList('type', type)"/>
-          <label for="raritystory">{{ formatType(type) }}</label>
+        <div *ngFor="let type of ['story', 'event', 'hard_quest_unit', 'multi', 'character_quest', 'esper_quest', 'arena', 'raid', 'rank_pvp', 'free_pvp', 'friend_pvp', 'gvg', 'tuto', 'beginner', 'guild_quest', 'selection', 'draft_pvp', 'hard_quest_vc', 'tower']">
+          <input type="checkbox" id="rarity{{type}}" (change)="filterList('type', type)"/>
+          <label for="rarity{{type}}">{{ formatType(type) }}</label>
         </div>
       </div>
     </div>

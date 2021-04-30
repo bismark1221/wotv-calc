@@ -59,7 +59,9 @@ export class UnitService {
     'UN_NIER_P_N9TS',
     'UN_LW_P_THLA_01',
     'UN_FF7_P_CLUD',
-    'UN_FF7_P_TIFA'
+    'UN_FF7_P_TIFA',
+    'UN_LW_P_KTON_01',
+    'UN_LW_P_LILS_01'
   ];
 
   private GL_limitedUnits = [
@@ -90,7 +92,9 @@ export class UnitService {
     'UN_NIER_P_N9TS',
     'UN_LW_P_THLA_01',
     'UN_FF7_P_CLUD',
-    'UN_FF7_P_TIFA'
+    'UN_FF7_P_TIFA',
+    'UN_LW_P_KTON_01',
+    'UN_LW_P_LILS_01'
   ];
 
   constructor(

@@ -87,7 +87,7 @@
           class="mapTile {{ !tile.t && tile.h < 20 ? 'tile' + tile.h : '' }}"
           [ngClass]="{
             'tileNoAccess': tile.t,
-            'partyTile': tile && tile.party,
+            'partyTile': tile && tile.party?.constructor.name === 'Number',
             'chestTile': tile && tile.chest?.constructor.name === 'Number',
             'allyTile': tile && tile.ally?.constructor.name === 'Number',
             'enemyTile': tile && tile.enemy?.constructor.name === 'Number' && !tile.class,
@@ -106,6 +106,7 @@
           }"
         >
           <div *ngIf="tile && !tile.t">{{ tile.h }}</div>
+          <div *ngIf="tile && tile.party?.constructor.name === 'Number'">P{{ tile.party + 1 }}</div>
           <div *ngIf="tile && tile.chest?.constructor.name === 'Number'">C{{ tile.chest + 1 }}</div>
           <div *ngIf="tile && tile.ally?.constructor.name === 'Number'">A{{ tile.ally + 1 }}</div>
           <div *ngIf="tile && tile.enemy?.constructor.name === 'Number'">E{{ tile.enemy + 1 }}</div>

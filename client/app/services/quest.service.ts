@@ -142,6 +142,15 @@ export class QuestService {
             }
           }
         }
+      } else if (a.type === 'tower' && b.type === 'tower') {
+        const tableA = x.split(' ');
+        const tableB = y.split(' ');
+
+        if (parseInt(tableA[tableA.length - 1].split('F')[0], 10) > parseInt(tableB[tableB.length - 1].split('F')[0], 10)) {
+          return order === 'asc' ? 1 : -1;
+        } else if (parseInt(tableB[tableB.length - 1].split('F')[0], 10) > parseInt(tableA[tableA.length - 1].split('F')[0], 10)) {
+          return order === 'asc' ? -1 : 1;
+        }
       } else {
         if (order === 'asc') {
           return x.localeCompare(y, 'ja');
@@ -241,6 +250,9 @@ export class QuestService {
       break;
       case 'hard_quest_vc' :
         return 'Hard Quest (Card)';
+      break;
+      case 'tower' :
+        return 'Tower';
       break;
       default :
         return 'Untranslated type...';
@@ -374,6 +386,12 @@ export class QuestService {
       break;
       case 'ALL_MISSIONS' :
         html = 'Complete all missions simultaneously';
+      break;
+      case 'TOWER_FIRST_COMPLETE' :
+        html = 'Complete the quest (1st run)';
+      break;
+      case 'TOWER_OTHER_COMPLETE' :
+        html = 'Complete the quest (other run)';
       break;
       default :
         console.log('Mission not managed ' + mission.type);

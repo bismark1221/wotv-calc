@@ -61,7 +61,9 @@ export class JsonService {
     quests: {},
     questMissions: {},
     grids: {},
-    maps: {}
+    maps: {},
+    towerRewards: {},
+    towerFloors: {}
   };
 
   jp = {
@@ -112,7 +114,9 @@ export class JsonService {
     quests: {},
     questMissions: {},
     grids: {},
-    maps: {}
+    maps: {},
+    towerRewards: {},
+    towerFloors: {}
   };
 
   jpRomaji = {};
@@ -134,7 +138,9 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
-      questTitle: {}
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
     },
     fr: {
       skill: {},
@@ -150,7 +156,9 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
-      questTitle: {}
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
     },
     jp: {
       skill: {},
@@ -166,7 +174,9 @@ export class JsonService {
       playerTitleDesc: {},
       guildTitleName: {},
       guildTitleDesc: {},
-      questTitle: {}
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
     }
   };
 
@@ -820,7 +830,9 @@ export class JsonService {
     104: 'MIN_CHAIN',
     105: 'MIN_ELEMENT_CHAIN',
     200: 'NO_AUTO',
-    201: 'ALL_MISSIONS'
+    201: 'ALL_MISSIONS',
+    10000000: 'TOWER_FIRST_COMPLETE',
+    10000001: 'TOWER_OTHER_COMPLETE'
   };
 
   questMissionReward = {
@@ -1107,6 +1119,36 @@ export class JsonService {
       });
   }
 
+  private GLQuestMissions() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/QuestMission.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private GLTowerFloors() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/TowerFloor.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private GLTowerRewards() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/TowerReward.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1269,6 +1311,26 @@ export class JsonService {
     return this.http.get('http://data.local-wotv-chain.com/jpdata/QuestMission.json?t=' + date).toPromise();
   }
 
+  private JPTowerFloors() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/TowerFloor.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private JPTowerRewards() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/TowerReward.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* Translation */
   private TranslateUnitNames() {
@@ -1339,6 +1401,16 @@ export class JsonService {
   private TranslateQuestTitle() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/en/questtitle.json?t=' + date).toPromise();
+  }
+
+  private TranslateTowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/towertitle.json?t=' + date).toPromise();
+  }
+
+  private TranslateTowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/en/towerfloortitle.json?t=' + date).toPromise();
   }
 
 
@@ -1414,6 +1486,16 @@ export class JsonService {
     return this.http.get('http://data.local-wotv-chain.com/fr/questtitle.json?t=' + date).toPromise();
   }
 
+  private FR_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/towertitle.json?t=' + date).toPromise();
+  }
+
+  private FR_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/fr/towerfloortitle.json?t=' + date).toPromise();
+  }
+
 
 
   private JP_ArtifactGrow() {
@@ -1484,6 +1566,16 @@ export class JsonService {
   private JP_TranslateQuestTitle() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/jp/questtitle.json?t=' + date).toPromise();
+  }
+
+  private JP_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/towertitle.json?t=' + date).toPromise();
+  }
+
+  private JP_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jp/towerfloortitle.json?t=' + date).toPromise();
   }
 
 
@@ -1669,7 +1761,18 @@ export class JsonService {
       this.GL_Grids(),
       this.JP_Grids(),
 
-      this.JP_Maps()
+      this.JP_Maps(),
+
+      this.GLTowerFloors(),
+      this.GLTowerRewards(),
+      this.JPTowerFloors(),
+      this.JPTowerRewards(),
+      this.TranslateTowerTitle(),
+      this.TranslateTowerFloorTitle(),
+      this.FR_TowerTitle(),
+      this.FR_TowerFloorTitle(),
+      this.JP_TowerTitle(),
+      this.JP_TowerFloorTitle()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1705,6 +1808,8 @@ export class JsonService {
       this.gl.questMissions = this.formatJson(responses[108]);
       this.gl.grids = responses[110];
       this.gl.maps = responses[104];
+      this.gl.towerFloors = this.formatJson(responses[113]);
+      this.gl.towerRewards = this.formatJson(responses[114]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -1740,6 +1845,8 @@ export class JsonService {
       this.jp.questMissions = this.formatJson(responses[109]);
       this.jp.grids = responses[111];
       this.jp.maps = responses[112];
+      this.jp.towerFloors = this.formatJson(responses[115]);
+      this.jp.towerRewards = this.formatJson(responses[116]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -1755,6 +1862,8 @@ export class JsonService {
       this.names.en.guildTitleName = this.formatNames(responses[59]);
       this.names.en.guildTitleDesc = this.formatNames(responses[60]);
       this.names.en.questTitle = this.formatNames(responses[105]);
+      this.names.en.towerTitle = this.formatNames(responses[117]);
+      this.names.en.towerFloorTitle = this.formatNames(responses[118]);
 
       this.names.fr.equipmentGrow = this.formatNames(responses[75]);
       this.names.fr.equipment = this.formatNames(responses[76]);
@@ -1770,6 +1879,8 @@ export class JsonService {
       this.names.fr.guildTitleName = this.formatNames(responses[86]);
       this.names.fr.guildTitleDesc = this.formatNames(responses[87]);
       this.names.fr.questTitle = this.formatNames(responses[106]);
+      this.names.fr.towerTitle = this.formatNames(responses[119]);
+      this.names.fr.towerFloorTitle = this.formatNames(responses[120]);
 
       this.names.jp.equipmentGrow = this.formatNames(responses[88]);
       this.names.jp.equipment = this.formatNames(responses[89]);
@@ -1785,6 +1896,8 @@ export class JsonService {
       this.names.jp.guildTitleName = this.formatNames(responses[99]);
       this.names.jp.guildTitleDesc = this.formatNames(responses[100]);
       this.names.jp.questTitle = this.formatNames(responses[107]);
+      this.names.jp.towerTitle = this.formatNames(responses[121]);
+      this.names.jp.towerFloorTitle = this.formatNames(responses[122]);
 
       this.jpRomaji = responses[101];
       this.jpTitlesName = responses[102];
@@ -1889,6 +2002,7 @@ export class JsonService {
       this.formatTitles();
 
       this.formatQuests();
+      this.formatTowers();
 
       this.exportGLexclusiveToJP();
     }
@@ -3838,7 +3952,6 @@ export class JsonService {
   }
 
   formatQuests() {
-    console.log(Object.keys(this[this.version].quests).length);
     Object.keys(this[this.version].quests).forEach((questId, questIndex) => {
       const quest = this[this.version].quests[questId];
 
@@ -3890,6 +4003,45 @@ export class JsonService {
           formattedQuest.names[lang] = 'Character quest: ' + formattedQuest.names[lang];
         });
       }
+
+      this.formatGrid(formattedQuest, quest.map.scn);
+      this.formatMap(formattedQuest, quest.map.set);
+
+      this[this.version].wotvQuests[questId] = formattedQuest;
+    });
+  }
+
+  formatTowers() {
+    Object.keys(this[this.version].towerFloors).forEach(questId => {
+      const quest = this[this.version].towerFloors[questId];
+
+      const formattedQuest = {
+        dataId: questId,
+        items: {},
+        names: {},
+        slug: '',
+        exp: 0,
+        nrg: quest.ap,
+        jp: 0,
+        gils: 0,
+        enemies: [],
+        chests: [],
+        allies: [],
+        objects: [],
+        switchs: [],
+        type: 'tower',
+        missions: [],
+        grid: [],
+        buffs: []
+      };
+
+      const questTranslation = this.getTowerFloorName(questId, quest.tower_iname, quest.ex);
+      formattedQuest.names = questTranslation.names;
+      formattedQuest.slug = questTranslation.slug;
+
+      this.getTowerReward(formattedQuest, quest.reward_id);
+
+      this.getQuestSkills(formattedQuest, quest.map.buffs);
 
       this.formatGrid(formattedQuest, quest.map.scn);
       this.formatMap(formattedQuest, quest.map.set);
@@ -3956,6 +4108,41 @@ export class JsonService {
     }
   }
 
+  getTowerReward(quest, rewardId) {
+    if (this[this.version].towerRewards[rewardId]) {
+      const newMissionFirst = {
+        type: this.questMissionCond[10000000],
+        value: null,
+        rewards: []
+      };
+
+      const newMissionSecond = {
+        type: this.questMissionCond[10000001],
+        value: null,
+        rewards: []
+      };
+
+      this[this.version].towerRewards[rewardId].rewards.forEach(reward => {
+        if (reward.round === 0) {
+          newMissionFirst.rewards.push({
+            type: this.questMissionReward[reward.type],
+            rewardId: reward.iname,
+            value: reward.num
+          });
+        } else {
+          newMissionSecond.rewards.push({
+            type: this.questMissionReward[reward.type],
+            rewardId: reward.iname,
+            value: reward.num
+          });
+        }
+      });
+
+      quest.missions.push(newMissionFirst);
+      quest.missions.push(newMissionSecond);
+    }
+  }
+
   getQuestSkills(quest, buffs) {
     if (buffs) {
       buffs.forEach(buffId => {
@@ -4015,18 +4202,16 @@ export class JsonService {
       }
 
       if (map.arena) {
-        let i = 0;
-        map.arena.forEach(arena => {
+        map.arena.forEach((arena, arenaIndex) => {
           this.checkIfTileExist(quest, arena);
-          quest.grid[arena.x][arena.y].enemy = i;
-          i++;
+          quest.grid[arena.x][arena.y].enemy = arenaIndex;
         });
       }
 
       if (map.party) {
-        map.party.forEach(party => {
+        map.party.forEach((party, partyIndex) => {
           this.checkIfTileExist(quest, party);
-          quest.grid[party.x][party.y].party = true;
+          quest.grid[party.x][party.y].party = partyIndex;
         });
       }
 
@@ -4162,6 +4347,12 @@ export class JsonService {
           unit.image = this[this.version].units[baseUnit.base_unit_iname].charaId.toLowerCase();
           this.getUnitImage(unit, baseUnit.base_unit_iname);
         }
+
+        if (baseUnit.species) {
+          rawUnit.species = baseUnit.species;
+        } else if (baseUnit.base_unit_iname && this[this.version].units[baseUnit.base_unit_iname]) {
+          rawUnit.species = this[this.version].units[baseUnit.base_unit_iname].species;
+        }
       } else if (rawUnit.charaId) {
         unit.image = rawUnit.charaId.toLowerCase();
         this.getUnitImage(unit);
@@ -4221,5 +4412,107 @@ export class JsonService {
         this.addSkill(skill.iname, unit);
       });
     }
+  }
+
+  private getTowerFloorName(floorId, towerId, ex) {
+    const towerNames = {};
+    const towerSlug = '';
+
+    if (this.version === 'gl') {
+      if (this.names.en.towerTitle[towerId]) {
+        towerNames.en = this.names.en.towerTitle[towerId];
+        towerNames.fr = this.names.fr.towerTitle[towerId];
+
+        let countTowerTitle = 1;
+        Object.keys(this.names.en.towerTitle).forEach((towerTitleId, towerTitleIndex) => {
+          if (this.names.en.towerTitle[towerTitleId] === towerNames.en) {
+            if (towerTitleId !== towerId) {
+              countTowerTitle++;
+            } else if (countTowerTitle > 1) {
+              towerNames.en = towerNames.en + ' (' + countTowerTitle + ')';
+              towerNames.fr = towerNames.fr + ' (' + countTowerTitle + ')';
+            }
+          }
+        });
+      } else {
+        towerNames.en = towerId;
+        towerNames.fr = towerId;
+      }
+    } else {
+      if (this.names.en.towerTitle[towerId]) {
+        towerNames.en = this.names.en.towerTitle[towerId];
+
+        let countTowerTitle = 1;
+        Object.keys(this.names.en.towerTitle).forEach((towerTitleId, towerTitleIndex) => {
+          if (this.names.en.towerTitle[towerTitleId] === this.names.en.towerTitle[towerId]) {
+            if (towerTitleId !== towerId) {
+              countTowerTitle++;
+            } else if (countTowerTitle > 1) {
+              towerNames.en = towerNames.en + ' (' + countTowerTitle + ')';
+            }
+          }
+        });
+      } else if (this.names.jp.towerTitle[towerId]) {
+        towerNames.en = this.names.jp.towerTitle[towerId];
+
+        let countTowerTitle = 1;
+        Object.keys(this.names.en.towerTitle).forEach((towerTitleId, towerTitleIndex) => {
+          if (this.names.jp.towerTitle[towerTitleId] === this.names.jp.towerTitle[towerId]) {
+            if (towerTitleId !== towerId) {
+              countTowerTitle++;
+            } else if (countTowerTitle > 1) {
+              towerNames.en = towerNames.en + ' (' + countTowerTitle + ')';
+            }
+          }
+        });
+      } else {
+        towerNames.en = towerId;
+      }
+    }
+
+    const floorNames = {};
+    let floorSlug = '';
+
+    if (this.version === 'gl') {
+      if (this.names.en.towerFloorTitle[floorId]) {
+        floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + this.names.en.towerFloorTitle[floorId];
+        floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + this.names.fr.towerFloorTitle[floorId];
+      } else {
+        floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + floorId;
+        floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + floorId;
+      }
+
+      floorSlug = this.slug.slugify(floorNames.en);
+    } else {
+      let slugJP = false;
+
+      if (this.names.en.towerFloorTitle[floorId]) {
+        floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + this.names.en.towerFloorTitle[floorId];
+        floorSlug = this.slug.slugify(floorNames.en);
+      } else if (this.names.jp.towerFloorTitle[floorId]) {
+        floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + this.names.jp.towerFloorTitle[floorId];
+        slugJP = true;
+      } else {
+        floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + floorId;
+        floorSlug = this.slug.slugify(floorNames.en);
+      }
+
+      if (slugJP) {
+        if (!this.jpRomaji[floorNames.en]) {
+          this.jpTranslateService.convert(floorNames.en).then(translatedText => {
+            this.jpRomaji[floorNames.en] = translatedText;
+            floorSlug = this.slug.slugify(translatedText);
+            console.log('New JP Translate for tower ==> "' + floorNames.en + '": "' + translatedText + '",');
+          });
+        } else {
+          floorSlug = this.slug.slugify(this.jpRomaji[floorNames.en]);
+        }
+      }
+    }
+
+    return {
+      names: floorNames,
+      slug: floorSlug
+    };
   }
 }
