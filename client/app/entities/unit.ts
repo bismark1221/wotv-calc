@@ -405,7 +405,11 @@ export class Unit {
       this.percentStats[stat][type] = 0;
     }
 
-    this.percentStats[stat][type] += value;
+    if (type !== 'cardParty') {
+      this.percentStats[stat][type] += value;
+    } else if (value > this.percentStats[stat][type]) {
+      this.percentStats[stat][type] = value;
+    }
   }
 
   private updateStat(type, value, statType, calc = 'fixe', reset = false) {

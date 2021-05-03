@@ -2620,16 +2620,16 @@ export class JsonService {
     }
 
     if (dataSkill.range_buff && dataSkill.range_buff !== 1) {
-      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- range buff !== 1');
+      console.log('@@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- range buff !== 1');
     }
 
     if (dataSkill.eff_w && dataSkill.eff_w !== 1 && dataSkill.eff_w !== 2) {
-      console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- eff_w !== 1');
+      console.log('@@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- eff_w !== 1');
     }
 
     if (Number.isInteger(dataSkill.target)) {
       if (!this.targetTypes[dataSkill.target]) {
-        console.log('@@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- target : ' + dataSkill.target);
+        console.log('@@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- target : ' + dataSkill.target);
       }
 
       skill.target = this.targetTypes[dataSkill.target];
@@ -2664,7 +2664,7 @@ export class JsonService {
           type = type + '_MAGIC';
           break;
         default:
-          console.log('6 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- barrier : ' + dataSkill.bbrk);
+          console.log('6 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- barrier : ' + dataSkill.bbrk);
           break;
       }
 
@@ -2779,7 +2779,7 @@ export class JsonService {
     if (dataSkill.invtag) {
       dataSkill.invtag.forEach(ignore => {
         if (!this.killers[ignore] || ignore !== 301) {
-          console.log('1 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- KLSP : ' + ignore);
+          console.log('1 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- KLSP : ' + ignore);
         }
 
         skill.effects.push({
@@ -2792,7 +2792,7 @@ export class JsonService {
     if (dataSkill.klsp) {
       dataSkill.klsp.forEach(killer => {
         if (!this.killers[killer]) {
-          console.log('1 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- KLSP : ' + killer);
+          console.log('1 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- KLSP : ' + killer);
         }
 
         skill.effects.push({
@@ -2818,7 +2818,7 @@ export class JsonService {
           type = type + '_MAGIC';
           break;
         default:
-          console.log('6 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- barrier : ' + dataSkill.barrier.tar);
+          console.log('6 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- barrier : ' + dataSkill.barrier.tar);
           break;
       }
 
@@ -2889,11 +2889,11 @@ export class JsonService {
 
       dataSkill.strength.forEach(strength => {
         if (!this.strengthType[strength.type]) {
-          console.log('10 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH TYPE : ' + strength.type);
+          console.log('10 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- STRENGTH TYPE : ' + strength.type);
         } else if (!this.strengthFormulaCondition[strength.formula]) {
-          console.log('11 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH FORMULA : ' + strength.formula);
+          console.log('11 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- STRENGTH FORMULA : ' + strength.formula);
         } else if (!this.strengthModifier[strength.dst]) {
-          console.log('11 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- STRENGTH DST : ' + strength.dst);
+          console.log('11 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- STRENGTH DST : ' + strength.dst);
         } else {
           const math = {
             type: this.strengthType[strength.type],
@@ -2928,7 +2928,7 @@ export class JsonService {
       }
 
       if (dataSkill.eff_dst && !this.damagePool[dataSkill.eff_dst]) {
-        console.log('2 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- DST : ' + dataSkill.eff_dst);
+        console.log('2 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- DST : ' + dataSkill.eff_dst);
       }
 
       if (dataSkill.elem) {
@@ -2973,11 +2973,11 @@ export class JsonService {
               if (this[this.version].buffs[buff]['type' + i]) {
                 if (duplicateFinded && this[this.version].buffs[buff]['type' + i] === 117) {} else {
                   if (!this.buffTypes[this[this.version].buffs[buff]['type' + i]]) {
-                    console.log('3 @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff]['type' + i]);
+                    console.log('3 @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff]['type' + i]);
                   }
 
                   if (!this.timing[this[this.version].buffs[buff].timing]) {
-                    console.log('A @@@@@ ' + unit.names.en + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff].timing);
+                    console.log('A @@@@@ ' + unit.dataId + ' -- ' + skill.names.en + ' -- EFFECT : ' + this[this.version].buffs[buff].timing);
                   }
 
                   if (this[this.version].buffs[buff]['id' + i]) {
@@ -2987,7 +2987,7 @@ export class JsonService {
                   }
 
                   if (this[this.version].buffs[buff]['tag' + i] && !this.killers[this[this.version].buffs[buff]['tag' + i]]) {
-                    console.log('4 @@@@@ ' + (unit.names ? unit.names.en : unit.dataId) + ' -- ' + (skill.names ? skill.names.en : skill.dataId) + ' -- KILLER : ' + this[this.version].buffs[buff]['tag' + i]);
+                    console.log('4 @@@@@ ' + (unit.names ? unit.dataId : unit.dataId) + ' -- ' + (skill.names ? skill.names.en : skill.dataId) + ' -- KILLER : ' + this[this.version].buffs[buff]['tag' + i]);
                   }
 
                   let type = this.buffTypes[this[this.version].buffs[buff]['type' + i]];
