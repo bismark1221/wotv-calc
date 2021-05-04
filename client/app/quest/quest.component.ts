@@ -53,6 +53,8 @@ export class QuestComponent implements OnInit {
       } else {
         await this.formatQuest();
 
+        // console.log(this.quest)
+
         this.navService.setTitle(this.quest.name);
       }
     });
@@ -109,6 +111,21 @@ export class QuestComponent implements OnInit {
       this.quest.formattedBuffs = [];
       this.quest.buffs.forEach(effect => {
         this.quest.formattedBuffs.push(this.skillService.formatEffect(this.quest, {type: 'buff'}, effect, false));
+
+        if (effect.condition) {
+          const conditions = {
+            'FIRE_ELEMENT': ' for fire units',
+            'ICE_ELEMENT': ' for ice units',
+            'WIND_ELEMENT': ' for wind units',
+            'EARTH_ELEMENT': ' for earth units',
+            'LIGHTNING_ELEMENT': ' for lightning units',
+            'WATER_ELEMENT': ' for water units',
+            'LIGHT_ELEMENT': ' for light units',
+            'DARK_ELEMENT': ' for dark units',
+          };
+
+          this.quest.formattedBuffs[this.quest.formattedBuffs.length - 1] += conditions[effect.condition];
+        }
       });
     }
   }
@@ -154,8 +171,9 @@ export class QuestComponent implements OnInit {
   }
 
   async formatEnemyOrAlly(enemy, index, type) {
-    const formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
+    let formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
     formattedEnemy.name = this.nameService.getName(formattedEnemy);
+    formattedEnemy.statsForJob = {};
 
     if (enemy.element) {
       formattedEnemy.element = enemy.element;
@@ -173,11 +191,88 @@ export class QuestComponent implements OnInit {
       formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
     }
 
-    this.quest[type][index].skills.forEach(skill => {
-      // Do something ^^ ==> Get skill from skill service
-    });
+    formattedEnemy.calculateBaseStats(true);
+    formattedEnemy.calculateTotalStats();
+
+    formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
+
+    formattedEnemy.skills = [];
+    for (const rawSkill of this.quest[type][index].skills) {
+      let formattedSkill = await this.skillService.getSkill(rawSkill.iname);
+      if (formattedSkill) {
+        formattedSkill = JSON.parse(JSON.stringify(formattedSkill));
+        formattedSkill.level = rawSkill.rank;
+
+        if (formattedSkill.type !== 'support') {
+          formattedSkill.name = this.nameService.getName(formattedSkill);
+
+          formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+          formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+          if (formattedSkill.counter) {
+            formattedSkill.counterHtml = this.skillService.formatCounter(formattedEnemy, formattedSkill, formattedSkill.counter);
+          }
+
+          this.rangeService.formatRange(formattedEnemy, formattedSkill);
+
+          formattedEnemy.skills.push(formattedSkill);
+        } else {
+          const splitDataId = formattedSkill.dataId.split('_');
+          formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+          if (splitDataId[2] === 'JOB') {
+            this.updateStatsForJob(formattedEnemy, formattedSkill);
+          } else {
+            this.updateStatsForSkill(formattedEnemy, formattedSkill);
+          }
+        }
+      }
+    }
+
+    this.applyStatsForJob(formattedEnemy);
 
     return formattedEnemy;
+  }
+
+  updateStatsForJob(enemy, skill) {
+    skill.effects.forEach(effect => {
+      if (!enemy.statsForJob[effect.type]) {
+        enemy.statsForJob[effect.type] = 0;
+      }
+      const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+
+      if (value > enemy.statsForJob[effect.type]) {
+        enemy.statsForJob[effect.type] = value;
+      }
+    });
+
+  }
+
+  updateStatsForSkill(enemy, skill) {
+    skill.effects.forEach(effect => {
+      const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+
+      this.updateStatsForUnit(enemy, effect.type, effect.calcType, value);
+    });
+  }
+
+  updateStatsForUnit(enemy, type, calcType, value) {
+    if (!enemy.stats[type]) {
+      enemy.stats[type] = {total: 0};
+    }
+
+    if (calcType === 'percent') {
+      enemy.stats[type].total += Math.floor(enemy.stats[type].baseTotal * value / 100);
+    } else {
+      enemy.stats[type].total += value;
+    }
+  }
+
+  applyStatsForJob(enemy) {
+    Object.keys(enemy.statsForJob).forEach(statType => {
+      enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
+    });
   }
 
   async formatOtherItem(item) {

@@ -23,6 +23,11 @@ export class Skill {
   hit;
   maths;
   combo;
+  knockback;
+  ctbreak;
+  time;
+  pierce;
+  increaseDamageOnDecreaseHp;
 
   // For builder
   level;
@@ -48,6 +53,11 @@ export class Skill {
     this.hit = skill.hit;
     this.maths = skill.maths;
     this.combo = skill.combo;
+    this.knockback = skill.knockback;
+    this.ctbreak = skill.ctbreak;
+    this.time = skill.time;
+    this.pierce = skill.pierce;
+    this.increaseDamageOnDecreaseHp = skill.increaseDamageOnDecreaseHp;
 
     // @TODO Remove when finish work on skills
     Object.keys(skill).forEach(key => {

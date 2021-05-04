@@ -116,7 +116,7 @@ export class Unit {
   masterSkillLevel;
   masterSkillActivated;
   activatedCounter;
-  activatedSupport;
+  activatedSupport = [];
   activeSkills;
   subjob;
   esper;
@@ -321,7 +321,7 @@ export class Unit {
     }
   }
 
-  private calculateBaseStats() {
+  private calculateBaseStats(ignoreJob = false) {
     Object.keys(this.stats).forEach(stat => {
       if (typeof(this.stats[stat].min) === 'number') {
         let exStat = 0;
@@ -353,38 +353,40 @@ export class Unit {
       this.stats[stat].baseTotal = this.stats[stat].base;
     });
 
-    this.jobsData.forEach((job, jobIndex) => {
-      const subJob = jobIndex !== 0;
+    if (!ignoreJob) {
+      this.jobsData.forEach((job, jobIndex) => {
+        const subJob = jobIndex !== 0;
 
-      if (subJob || job.level <= 15) {
-        Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
-          if (!this.stats[statType]) {
-            this.stats[statType] = {
-              base: 0
-            };
-          }
-          const stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1);
+        if (subJob || job.level <= 15) {
+          Object.keys(job.statsModifiers[job.level - 1]).forEach(statType => {
+            if (!this.stats[statType]) {
+              this.stats[statType] = {
+                base: 0
+              };
+            }
+            const stat = this.stats[statType].base * (job.statsModifiers[job.level - 1][statType] / 10000) * (subJob ? 0.5 : 1);
 
-          this.stats[statType].baseTotal += stat;
-        });
-      }
-    });
+            this.stats[statType].baseTotal += stat;
+          });
+        }
+      });
 
-    this.exJobsData.forEach(job => {
-      if (this.jobsData[0].level > 15) {
-        const level = this.jobsData[0].level - 16;
-        Object.keys(job.statsModifiers[level]).forEach(statType => {
-          if (!this.stats[statType]) {
-            this.stats[statType] = {
-              base: 0
-            };
-          }
-          const stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000);
+      this.exJobsData.forEach(job => {
+        if (this.jobsData[0].level > 15) {
+          const level = this.jobsData[0].level - 16;
+          Object.keys(job.statsModifiers[level]).forEach(statType => {
+            if (!this.stats[statType]) {
+              this.stats[statType] = {
+                base: 0
+              };
+            }
+            const stat = this.stats[statType].base * (job.statsModifiers[level][statType] / 10000);
 
-          this.stats[statType].baseTotal += stat;
-        });
-      }
-    });
+            this.stats[statType].baseTotal += stat;
+          });
+        }
+      });
+    }
 
     Object.keys(this.stats).forEach(stat => {
       if (!this.stats[stat].baseTotal) {
@@ -492,7 +494,7 @@ export class Unit {
   }
 
   private calculateGuildStats() {
-    if (this.guild.data) {
+    if (this.guild && this.guild.data) {
       Object.keys(this.guild.data).forEach(statue => {
         if (this.guild.data[statue] > 0) {
           this.guild.statues[statue][this.guild.data[statue] - 1].forEach(stat => {
@@ -520,28 +522,30 @@ export class Unit {
   }
 
   private calculateBoardStats() {
-    Object.keys(this.board.nodes).forEach(nodeId => {
-      const node = this.board.nodes[nodeId];
-      if (node.type === 'buff' && node.level) {
-        node.skill.effects.forEach(effect => {
-          if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
-            let value = effect.minValue;
-            if (node.skill.maxLevel > 1) {
-              value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (node.skill.maxLevel - 1) * (node.level - 1)));
-            }
+    if (this.board) {
+      Object.keys(this.board.nodes).forEach(nodeId => {
+        const node = this.board.nodes[nodeId];
+        if (node.type === 'buff' && node.level) {
+          node.skill.effects.forEach(effect => {
+            if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
+              let value = effect.minValue;
+              if (node.skill.maxLevel > 1) {
+                value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (node.skill.maxLevel - 1) * (node.level - 1)));
+              }
 
-            if (effect.calcType === 'percent') {
-              this.updatePercentStats(effect.type, 'board', value);
+              if (effect.calcType === 'percent') {
+                this.updatePercentStats(effect.type, 'board', value);
+              } else {
+                this.updateStat(effect.type, value, 'board', 'fixe');
+              }
             } else {
-              this.updateStat(effect.type, value, 'board', 'fixe');
+              console.log('not manage effect in board percent/fixe');
+              console.log(node);
             }
-          } else {
-            console.log('not manage effect in board percent/fixe');
-            console.log(node);
-          }
-        });
-      }
-    });
+          });
+        }
+      });
+    }
   }
 
   private calculateSupportStats() {
@@ -1473,23 +1477,25 @@ export class Unit {
       }
     });
 
-    Object.keys(this.board.nodes).forEach(nodeId => {
-      const skill = this.board.nodes[nodeId].skill;
+    if (this.board) {
+      Object.keys(this.board.nodes).forEach(nodeId => {
+        const skill = this.board.nodes[nodeId].skill;
 
-      skill.effects.forEach(effect => {
-        if (findedStats.indexOf(effect.type) === -1) {
-          if (skill.type === 'buff' || (skill.type === 'support' && this.activatedSupport.indexOf(nodeId) !== -1)) {
-            if (statsType.indexOf(effect.type) === -1) {
-              if (!this.stats[effect.type]) {
-                this.stats[effect.type] = {};
+        skill.effects.forEach(effect => {
+          if (findedStats.indexOf(effect.type) === -1) {
+            if (skill.type === 'buff' || (skill.type === 'support' && this.activatedSupport.indexOf(nodeId) !== -1)) {
+              if (statsType.indexOf(effect.type) === -1) {
+                if (!this.stats[effect.type]) {
+                  this.stats[effect.type] = {};
+                }
+
+                findedStats.push(effect.type);
               }
-
-              findedStats.push(effect.type);
             }
           }
-        }
+        });
       });
-    });
+    }
 
     this.availableStatTypes = [];
     const addedStats = [];
