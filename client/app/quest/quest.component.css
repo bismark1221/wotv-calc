@@ -49,11 +49,6 @@
   margin-right: 5px;
 }
 
-.elementImg {
-  height: 40px;
-  margin-right: 5px;
-}
-
 .separatorLine {
   height: 10px;
 }
@@ -331,7 +326,7 @@
   margin-right: 5px;
 }
 
-.elementImg {
+.elementImg, .damageImg, .statusAilmentImg {
   max-width: 40px;
   max-height: 40px;
 }
@@ -346,3 +341,14 @@
   width: 40px;
 }
 
+.enemyDetailCol {
+  padding: 0;
+}
+
+.enemyDetailCol table {
+  width: 100%;
+}
+
+.heightResTd {
+  height: 33px;
+}

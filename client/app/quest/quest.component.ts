@@ -22,6 +22,39 @@ import { SkillService } from '../services/skill.service';
 export class QuestComponent implements OnInit {
   quest = null;
   enemies = [];
+  isCollapsedEnemy = {};
+  statImage = {
+    FIRE_RES : 'assets/elements/fire.png',
+    ICE_RES : 'assets/elements/ice.png',
+    EARTH_RES : 'assets/elements/earth.png',
+    WIND_RES : 'assets/elements/wind.png',
+    LIGHTNING_RES : 'assets/elements/lightning.png',
+    WATER_RES : 'assets/elements/water.png',
+    LIGHT_RES : 'assets/elements/light.png',
+    DARK_RES : 'assets/elements/dark.png',
+
+    SLASH_RES : 'assets/damage/neutral_slash.png',
+    PIERCE_RES : 'assets/damage/neutral_pierce.png',
+    STRIKE_RES : 'assets/damage/neutral_strike.png',
+    MISSILE_RES : 'assets/damage/neutral_missile.png',
+    MAGIC_RES : 'assets/damage/neutral_magic.png',
+
+    POISON_RES : 'assets/status-ailments/POISON.png',
+    BLIND_RES : 'assets/status-ailments/BLIND.png',
+    SLEEP_RES : 'assets/status-ailments/SLEEP.png',
+    SILENCE_RES : 'assets/status-ailments/SILENCE.png',
+    PARALYZE_RES : 'assets/status-ailments/PARALYZE.png',
+    CONFUSION_RES : 'assets/status-ailments/CONFUSION.png',
+    PETRIFY_RES : 'assets/status-ailments/PETRIFY.png',
+    TOAD_RES : 'assets/status-ailments/TOAD.png',
+    CHARM_RES : 'assets/status-ailments/CHARM.png',
+    SLOW_RES : 'assets/status-ailments/SLOW.png',
+    STOP_RES : 'assets/status-ailments/STOP.png',
+    IMMOBILIZE_RES : 'assets/status-ailments/IMMOBILIZE.png',
+    DISABLE_RES : 'assets/status-ailments/DISABLE.png',
+    BERSERK_RES : 'assets/status-ailments/BERSERK.png',
+    DOOM_RES : 'assets/status-ailments/DOOM.png'
+  };
 
   constructor(
     private questService: QuestService,
@@ -231,6 +264,12 @@ export class QuestComponent implements OnInit {
     }
 
     this.applyStatsForJob(formattedEnemy);
+    this.getAvailableStatTypes(formattedEnemy);
+
+    // @TODO Managed INITIAL_AP !!! RANGE !!!
+
+    this.isCollapsedEnemy[index] = true;
+
 
     return formattedEnemy;
   }
@@ -246,12 +285,14 @@ export class QuestComponent implements OnInit {
         enemy.statsForJob[effect.type] = value;
       }
     });
-
   }
 
   updateStatsForSkill(enemy, skill) {
     skill.effects.forEach(effect => {
-      const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+      let value = effect.minValue;
+      if (skill.maxLevel > 1) {
+        value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+      }
 
       this.updateStatsForUnit(enemy, effect.type, effect.calcType, value);
     });
@@ -272,6 +313,94 @@ export class QuestComponent implements OnInit {
   applyStatsForJob(enemy) {
     Object.keys(enemy.statsForJob).forEach(statType => {
       enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
+    });
+  }
+
+  getAvailableStatTypes(formattedEnemy) {
+    const ignoreStats = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'SPR',
+      'MAG',
+      'DEX',
+      'AGI',
+      'LUCK',
+      'MOVE',
+      'JUMP',
+      'INCREASE_UNIT_LEVEL',
+      'RANGE'
+    ];
+
+    const statsManaged = [
+      'FIRE_RES',
+      'ICE_RES',
+      'EARTH_RES',
+      'WIND_RES',
+      'LIGHTNING_RES',
+      'WATER_RES',
+      'LIGHT_RES',
+      'DARK_RES',
+      'SLASH_RES',
+      'PIERCE_RES',
+      'STRIKE_RES',
+      'MISSILE_RES',
+      'MAGIC_RES',
+      'POISON_RES',
+      'BLIND_RES',
+      'SLEEP_RES',
+      'SILENCE_RES',
+      'PARALYZE_RES',
+      'CONFUSION_RES',
+      'PETRIFY_RES',
+      'TOAD_RES',
+      'CHARM_RES',
+      'SLOW_RES',
+      'STOP_RES',
+      'IMMOBILIZE_RES',
+      'DISABLE_RES',
+      'BERSERK_RES',
+      'DOOM_RES'
+    ];
+
+    const hasStats = [];
+    const otherStats = [];
+    Object.keys(formattedEnemy.stats).forEach(stat => {
+      if (statsManaged.indexOf(stat) !== -1) {
+        hasStats.push(stat);
+      } else if (ignoreStats.indexOf(stat) === -1) {
+        otherStats.push({
+          type: stat,
+          value: formattedEnemy.stats[stat].total,
+          calcType: 'fixe'
+        });
+      }
+    });
+
+    hasStats.sort(function(a, b) {
+      if (statsManaged.indexOf(a) > statsManaged.indexOf(b)) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
+
+    formattedEnemy.hasStats = [];
+    let i = -1;
+    hasStats.forEach((stat, statIndex) => {
+      if (statIndex % 8 === 0) {
+        i++;
+        formattedEnemy.hasStats[i] = [];
+      }
+
+      formattedEnemy.hasStats[i].push(stat);
+    });
+
+    formattedEnemy.otherStats = [];
+    otherStats.forEach(otherStat => {
+      formattedEnemy.otherStats.push(this.skillService.formatEffect(formattedEnemy, {type: 'buff'}, otherStat, false));
     });
   }
 

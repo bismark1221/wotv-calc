@@ -151,7 +151,7 @@
         <th>Type</th>
       </tr>
       <tbody *ngFor="let enemy of quest.formattedEnemies; let j = index">
-        <tr>
+        <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]">
           <td>E{{ j + 1 }}</td>
           <td>
             <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />{{ enemy.name }}
@@ -167,8 +167,8 @@
           <td>{{ enemy.level }}</td>
           <td>{{ enemy.species }}</td>
         </tr>
-        <!-- <tr>
-          <td colspan="99">
+        <tr [ngbCollapse]="isCollapsedEnemy[j]">
+          <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
                 <th class="sub">HP</th>
@@ -200,143 +200,29 @@
               </tr>
             </table>
             <table>
-              <tr>
-                <th class="sub"><img class="elementImg" title="fire resistance" src="{{'assets/elements/fire.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="ice resistance" src="{{'assets/elements/ice.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="wind resistance" src="{{'assets/elements/wind.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="earht resistance" src="{{'assets/elements/earth.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="lightning resistance" src="{{'assets/elements/lightning.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="water resistance" src="{{'assets/elements/water.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="light resistance" src="{{'assets/elements/light.png'}}" /></th>
-                <th class="sub"><img class="elementImg" title="dark resistance" src="{{'assets/elements/dark.png'}}" /></th>
-              </tr>
-              <tr>
-                <td class="heightResTd">
-                  <span *ngIf="enemy.stats.FIRE_RES && enemy.stats.FIRE_RES.total">{{ enemy.stats.FIRE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.ICE_RES && enemy.stats.ICE_RES.total">{{ enemy.stats.ICE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.WIND_RES && enemy.stats.WIND_RES.total">{{ enemy.stats.WIND_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.EARTH_RES && enemy.stats.EARTH_RES.total">{{ enemy.stats.EARTH_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.LIGHTNING_RES && enemy.stats.LIGHTNING_RES.total">{{ enemy.stats.LIGHTNING_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.WATER_RES && enemy.stats.WATER_RES.total">{{ enemy.stats.WATER_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.LIGHT_RES && enemy.stats.LIGHT_RES.total">{{ enemy.stats.LIGHT_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.DARK_RES && enemy.stats.DARK_RES.total">{{ enemy.stats.DARK_RES.total }} %</span>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <th class="sub"><img class="damageImg" title="slash resistance" src="{{'assets/damage/neutral_slash.png'}}" /></th>
-                <th class="sub"><img class="damageImg" title="pierce resistance" src="{{'assets/damage/neutral_pierce.png'}}" /></th>
-                <th class="sub"><img class="damageImg" title="strike resistance" src="{{'assets/damage/neutral_strike.png'}}" /></th>
-                <th class="sub"><img class="damageImg" title="missile resistance" src="{{'assets/damage/neutral_missile.png'}}" /></th>
-                <th class="sub"><img class="damageImg" title="magic resistance" src="{{'assets/damage/neutral_magic.png'}}" /></th>
-              </tr>
-              <tr>
-                <td class="heightResTd">
-                  <span *ngIf="enemy.stats.SLASH_RES && enemy.stats.SLASH_RES.total">{{ enemy.stats.SLASH_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.PIERCE_RES && enemy.stats.PIERCE_RES.total">{{ enemy.stats.PIERCE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.STRIKE_RES && enemy.stats.STRIKE_RES.total">{{ enemy.stats.STRIKE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.MISSILE_RES && enemy.stats.MISSILE_RES.total">{{ enemy.stats.MISSILE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.MAGIC_RES && enemy.stats.MAGIC_RES.total">{{ enemy.stats.MAGIC_RES.total }} %</span>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="paralyze resistance" src="{{'assets/status-ailments/PARALYZE.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="confusion resistance" src="{{'assets/status-ailments/CONFUSION.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="petrify resistance" src="{{'assets/status-ailments/PETRIFY.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="toad resistance" src="{{'assets/status-ailments/TOAD.png'}}" /></th>
-              </tr>
-              <tr>
-                <td class="heightResTd">
-                  <span *ngIf="enemy.stats.POISON_RES && enemy.stats.POISON_RES.total">{{ enemy.stats.POISON_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.BLIND_RES && enemy.stats.BLIND_RES.total">{{ enemy.stats.BLIND_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.SLEEP_RES && enemy.stats.SLEEP_RES.total">{{ enemy.stats.SLEEP_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.SILENCE_RES && enemy.stats.SILENCE_RES.total">{{ enemy.stats.SILENCE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.PARALYZE_RES && enemy.stats.PARALYZE_RES.total">{{ enemy.stats.PARALYZE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.CONFUSION_RES && enemy.stats.CONFUSION_RES.total">{{ enemy.stats.CONFUSION_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.PETRIFY_RES && enemy.stats.PETRIFY_RES.total">{{ enemy.stats.PETRIFY_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.TOAD_RES && enemy.stats.TOAD_RES.total">{{ enemy.stats.TOAD_RES.total }} %</span>
-                </td>
-              </tr>
-              <tr>
-                <th class="sub"><img class="statusAilmentImg" title="charm resistance" src="{{'assets/status-ailments/CHARM.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="slow resistance" src="{{'assets/status-ailments/SLOW.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="stop resistance" src="{{'assets/status-ailments/STOP.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="immobilize resistance" src="{{'assets/status-ailments/IMMOBILIZE.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></th>
-                <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></th>
-                <th class="sub"></th>
-              </tr>
-              <tr>
-                <td class="heightResTd">
-                  <span *ngIf="enemy.stats.CHARM_RES && enemy.stats.CHARM_RES.total">{{ enemy.stats.CHARM_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.SLOW_RES && enemy.stats.SLOW_RES.total">{{ enemy.stats.SLOW_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.STOP_RES && enemy.stats.STOP_RES.total">{{ enemy.stats.STOP_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.IMMOBILIZE_RES && enemy.stats.IMMOBILIZE_RES.total">{{ enemy.stats.IMMOBILIZE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.DISABLE_RES && enemy.stats.DISABLE_RES.total">{{ enemy.stats.DISABLE_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.BERSERK_RES && enemy.stats.BERSERK_RES.total">{{ enemy.stats.BERSERK_RES.total }} %</span>
-                </td>
-                <td>
-                  <span *ngIf="enemy.stats.DOOM_RES && enemy.stats.DOOM_RES.total">{{ enemy.stats.DOOM_RES.total }} %</span>
-                </td>
-                <td></td>
-              </tr>
+              <tbody *ngFor="let line of enemy.hasStats">
+                <tr>
+                  <th class="sub" *ngFor="let stat of line">
+                    <img class="elementImg" src="{{ statImage[stat] }}" />
+                  </th>
+                </tr>
+                <tr>
+                  <td class="heightResTd" *ngFor="let stat of line">
+                    <span>{{ enemy.stats[stat].total }} %</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody *ngIf="enemy.otherStats.length > 0">
+                <tr>
+                  <th class="sub" colspan="99">OTHERS</th>
+                </tr>
+                <tr *ngFor="let otherStat of enemy.otherStats">
+                  <td class="heightResTd" colspan="99">{{ otherStat }}</td>
+                </tr>
+              </tbody>
             </table>
           </td>
-        </tr> -->
+        </tr>
       </tbody>
     </table>
 

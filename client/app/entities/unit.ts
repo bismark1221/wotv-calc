@@ -982,9 +982,9 @@ export class Unit {
     Object.keys(this.stats).forEach(stat => {
       if (stat === 'INITIAL_AP') {
         let jobModifier = 0;
-        if (this.jobsData[0].level <= 15) {
+        if (this.jobsData && this.jobsData[0].level <= 15) {
           jobModifier = this.jobsData[0].statsModifiers[this.jobsData[0].level - 1]['INITIAL_AP'];
-        } else {
+        } else if (this.exJobsData) {
           jobModifier = this.exJobsData[0].statsModifiers[this.jobsData[0].level - 16]['INITIAL_AP'];
         }
 
