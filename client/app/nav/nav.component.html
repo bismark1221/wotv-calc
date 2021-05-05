@@ -57,16 +57,50 @@
       <div *ngIf="lang === 'en'">
         <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
       </div>
+      <div *ngIf="lang === 'de'">
+        <img src="assets/nav/blank.gif" class="flag flag-de" /> DE
+      </div>
+      <div *ngIf="lang === 'es'">
+        <img src="assets/nav/blank.gif" class="flag flag-es" /> ES
+      </div>
+      <div *ngIf="lang === 'ko'">
+        <img src="assets/nav/blank.gif" class="flag flag-kr" /> KO
+      </div>
+      <div *ngIf="lang === 'zh'">
+        <img src="assets/nav/blank.gif" class="flag flag-tw" /> ZH
+      </div>
     </div>
-    <div class="otherLang" *ngIf="lang !== 'fr' && showLangSelector" >
-      <a class="pointer" (click)="changeLang('fr')">
-        <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
-      </a>
-    </div>
-    <div class="otherLang" *ngIf="lang !== 'en' && showLangSelector">
-      <a class="pointer" (click)="changeLang('en')">
-        <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
-      </a>
+    <div class="otherLang" *ngIf="showLangSelector">
+      <div class="otherLangIndividual" *ngIf="lang !== 'fr'" >
+        <a class="pointer" (click)="changeLang('fr')">
+          <img src="assets/nav/blank.gif" class="flag flag-fr" /> FR
+        </a>
+      </div>
+      <div class="otherLangIndividual" *ngIf="lang !== 'en'">
+        <a class="pointer" (click)="changeLang('en')">
+          <img src="assets/nav/blank.gif" class="flag flag-gb" /> EN
+        </a>
+      </div>
+      <div class="otherLangIndividual" *ngIf="lang !== 'de'">
+        <a class="pointer" (click)="changeLang('de')">
+          <img src="assets/nav/blank.gif" class="flag flag-de" /> DE
+        </a>
+      </div>
+      <div class="otherLangIndividual" *ngIf="lang !== 'es'">
+        <a class="pointer" (click)="changeLang('es')">
+          <img src="assets/nav/blank.gif" class="flag flag-es" /> ES
+        </a>
+      </div>
+      <div class="otherLangIndividual" *ngIf="lang !== 'ko'">
+        <a class="pointer" (click)="changeLang('ko')">
+          <img src="assets/nav/blank.gif" class="flag flag-kr" /> KO
+        </a>
+      </div>
+      <div class="otherLangIndividual" *ngIf="lang !== 'zh'">
+        <a class="pointer" (click)="changeLang('zh')">
+          <img src="assets/nav/blank.gif" class="flag flag-tw" /> ZH
+        </a>
+      </div>
     </div>
   </div>
 

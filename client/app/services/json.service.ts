@@ -160,6 +160,78 @@ export class JsonService {
       towerTitle: {},
       towerFloorTitle: {}
     },
+    es: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {},
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
+    },
+    de: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {},
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
+    },
+    ko: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {},
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
+    },
+    zh: {
+      skill: {},
+      unit: {},
+      buff: {},
+      job: {},
+      equipment: {},
+      visionCard: {},
+      equipmentGrow: {},
+      itemOther: {},
+      item: {},
+      playerTitleName: {},
+      playerTitleDesc: {},
+      guildTitleName: {},
+      guildTitleDesc: {},
+      questTitle: {},
+      towerTitle: {},
+      towerFloorTitle: {}
+    },
     jp: {
       skill: {},
       unit: {},
@@ -1405,7 +1477,7 @@ export class JsonService {
 
 
 
-  /* Local files */
+  /* FR Local files */
   private FR_ArtifactGrow() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/fr/artifactgrow.json?t=' + date).toPromise();
@@ -1484,6 +1556,330 @@ export class JsonService {
   private FR_TowerFloorTitle() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/fr/towerfloortitle.json?t=' + date).toPromise();
+  }
+
+  /* DE Local files */
+  private DE_ArtifactGrow() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/artifactgrow.json?t=' + date).toPromise();
+  }
+
+  private DE_ArtifactName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/artifactname.json?t=' + date).toPromise();
+  }
+
+  private DE_BuffName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/buffname.json?t=' + date).toPromise();
+  }
+
+  private DE_ItemOther() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/itemother.json?t=' + date).toPromise();
+  }
+
+  private DE_JobName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/jobname.json?t=' + date).toPromise();
+  }
+
+  private DE_SkillName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/skillname.json?t=' + date).toPromise();
+  }
+
+  private DE_UnitName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/unitname.json?t=' + date).toPromise();
+  }
+
+  private DE_VisionCardName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/visioncardname.json?t=' + date).toPromise();
+  }
+
+  private DE_ItemName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/itemname.json?t=' + date).toPromise();
+  }
+
+  private DE_PlayerTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/playerawardsname.json?t=' + date).toPromise();
+  }
+
+  private DE_PlayerTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/playerawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private DE_GuildTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/guildawardsname.json?t=' + date).toPromise();
+  }
+
+  private DE_GuildTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/guildawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private DE_TranslateQuestTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/questtitle.json?t=' + date).toPromise();
+  }
+
+  private DE_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/towertitle.json?t=' + date).toPromise();
+  }
+
+  private DE_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/de/towerfloortitle.json?t=' + date).toPromise();
+  }
+
+  /* ES Local files */
+  private ES_ArtifactGrow() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/artifactgrow.json?t=' + date).toPromise();
+  }
+
+  private ES_ArtifactName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/artifactname.json?t=' + date).toPromise();
+  }
+
+  private ES_BuffName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/buffname.json?t=' + date).toPromise();
+  }
+
+  private ES_ItemOther() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/itemother.json?t=' + date).toPromise();
+  }
+
+  private ES_JobName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/jobname.json?t=' + date).toPromise();
+  }
+
+  private ES_SkillName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/skillname.json?t=' + date).toPromise();
+  }
+
+  private ES_UnitName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/unitname.json?t=' + date).toPromise();
+  }
+
+  private ES_VisionCardName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/visioncardname.json?t=' + date).toPromise();
+  }
+
+  private ES_ItemName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/itemname.json?t=' + date).toPromise();
+  }
+
+  private ES_PlayerTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/playerawardsname.json?t=' + date).toPromise();
+  }
+
+  private ES_PlayerTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/playerawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private ES_GuildTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/guildawardsname.json?t=' + date).toPromise();
+  }
+
+  private ES_GuildTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/guildawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private ES_TranslateQuestTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/questtitle.json?t=' + date).toPromise();
+  }
+
+  private ES_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/towertitle.json?t=' + date).toPromise();
+  }
+
+  private ES_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/es/towerfloortitle.json?t=' + date).toPromise();
+  }
+
+  /* KO Local files */
+  private KO_ArtifactGrow() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/artifactgrow.json?t=' + date).toPromise();
+  }
+
+  private KO_ArtifactName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/artifactname.json?t=' + date).toPromise();
+  }
+
+  private KO_BuffName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/buffname.json?t=' + date).toPromise();
+  }
+
+  private KO_ItemOther() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/itemother.json?t=' + date).toPromise();
+  }
+
+  private KO_JobName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/jobname.json?t=' + date).toPromise();
+  }
+
+  private KO_SkillName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/skillname.json?t=' + date).toPromise();
+  }
+
+  private KO_UnitName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/unitname.json?t=' + date).toPromise();
+  }
+
+  private KO_VisionCardName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/visioncardname.json?t=' + date).toPromise();
+  }
+
+  private KO_ItemName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/itemname.json?t=' + date).toPromise();
+  }
+
+  private KO_PlayerTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/playerawardsname.json?t=' + date).toPromise();
+  }
+
+  private KO_PlayerTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/playerawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private KO_GuildTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/guildawardsname.json?t=' + date).toPromise();
+  }
+
+  private KO_GuildTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/guildawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private KO_TranslateQuestTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/questtitle.json?t=' + date).toPromise();
+  }
+
+  private KO_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/towertitle.json?t=' + date).toPromise();
+  }
+
+  private KO_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/ko/towerfloortitle.json?t=' + date).toPromise();
+  }
+
+  /* ZH Local files */
+  private ZH_ArtifactGrow() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/artifactgrow.json?t=' + date).toPromise();
+  }
+
+  private ZH_ArtifactName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/artifactname.json?t=' + date).toPromise();
+  }
+
+  private ZH_BuffName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/buffname.json?t=' + date).toPromise();
+  }
+
+  private ZH_ItemOther() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/itemother.json?t=' + date).toPromise();
+  }
+
+  private ZH_JobName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/jobname.json?t=' + date).toPromise();
+  }
+
+  private ZH_SkillName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/skillname.json?t=' + date).toPromise();
+  }
+
+  private ZH_UnitName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/unitname.json?t=' + date).toPromise();
+  }
+
+  private ZH_VisionCardName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/visioncardname.json?t=' + date).toPromise();
+  }
+
+  private ZH_ItemName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/itemname.json?t=' + date).toPromise();
+  }
+
+  private ZH_PlayerTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/playerawardsname.json?t=' + date).toPromise();
+  }
+
+  private ZH_PlayerTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/playerawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private ZH_GuildTitleName() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/guildawardsname.json?t=' + date).toPromise();
+  }
+
+  private ZH_GuildTitleDesc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/guildawardsdescription.json?t=' + date).toPromise();
+  }
+
+  private ZH_TranslateQuestTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/questtitle.json?t=' + date).toPromise();
+  }
+
+  private ZH_TowerTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/towertitle.json?t=' + date).toPromise();
+  }
+
+  private ZH_TowerFloorTitle() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/zh/towerfloortitle.json?t=' + date).toPromise();
   }
 
 
@@ -1762,7 +2158,75 @@ export class JsonService {
       this.FR_TowerTitle(),
       this.FR_TowerFloorTitle(),
       this.JP_TowerTitle(),
-      this.JP_TowerFloorTitle()
+      this.JP_TowerFloorTitle(),
+
+      this.ZH_ArtifactGrow(),
+      this.ZH_ArtifactName(),
+      this.ZH_BuffName(),
+      this.ZH_ItemOther(),
+      this.ZH_JobName(),
+      this.ZH_SkillName(),
+      this.ZH_UnitName(),
+      this.ZH_VisionCardName(),
+      this.ZH_ItemName(),
+      this.ZH_PlayerTitleName(),
+      this.ZH_PlayerTitleDesc(),
+      this.ZH_GuildTitleName(),
+      this.ZH_GuildTitleDesc(),
+      this.ZH_TranslateQuestTitle(),
+      this.ZH_TowerTitle(),
+      this.ZH_TowerFloorTitle(),
+
+      this.KO_ArtifactGrow(),
+      this.KO_ArtifactName(),
+      this.KO_BuffName(),
+      this.KO_ItemOther(),
+      this.KO_JobName(),
+      this.KO_SkillName(),
+      this.KO_UnitName(),
+      this.KO_VisionCardName(),
+      this.KO_ItemName(),
+      this.KO_PlayerTitleName(),
+      this.KO_PlayerTitleDesc(),
+      this.KO_GuildTitleName(),
+      this.KO_GuildTitleDesc(),
+      this.KO_TranslateQuestTitle(),
+      this.KO_TowerTitle(),
+      this.KO_TowerFloorTitle(),
+
+      this.DE_ArtifactGrow(),
+      this.DE_ArtifactName(),
+      this.DE_BuffName(),
+      this.DE_ItemOther(),
+      this.DE_JobName(),
+      this.DE_SkillName(),
+      this.DE_UnitName(),
+      this.DE_VisionCardName(),
+      this.DE_ItemName(),
+      this.DE_PlayerTitleName(),
+      this.DE_PlayerTitleDesc(),
+      this.DE_GuildTitleName(),
+      this.DE_GuildTitleDesc(),
+      this.DE_TranslateQuestTitle(),
+      this.DE_TowerTitle(),
+      this.DE_TowerFloorTitle(),
+
+      this.ES_ArtifactGrow(),
+      this.ES_ArtifactName(),
+      this.ES_BuffName(),
+      this.ES_ItemOther(),
+      this.ES_JobName(),
+      this.ES_SkillName(),
+      this.ES_UnitName(),
+      this.ES_VisionCardName(),
+      this.ES_ItemName(),
+      this.ES_PlayerTitleName(),
+      this.ES_PlayerTitleDesc(),
+      this.ES_GuildTitleName(),
+      this.ES_GuildTitleDesc(),
+      this.ES_TranslateQuestTitle(),
+      this.ES_TowerTitle(),
+      this.ES_TowerFloorTitle(),
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -1871,6 +2335,74 @@ export class JsonService {
       this.names.fr.questTitle = this.formatNames(responses[106]);
       this.names.fr.towerTitle = this.formatNames(responses[119]);
       this.names.fr.towerFloorTitle = this.formatNames(responses[120]);
+
+      this.names.zh.equipmentGrow = this.formatNames(responses[123]);
+      this.names.zh.equipment = this.formatNames(responses[124]);
+      this.names.zh.buff = this.formatNames(responses[125]);
+      this.names.zh.itemOther = this.formatNames(responses[126]);
+      this.names.zh.job = this.formatNames(responses[127]);
+      this.names.zh.skill = this.formatNames(responses[128]);
+      this.names.zh.unit = this.formatNames(responses[129]);
+      this.names.zh.visionCard = this.formatNames(responses[130]);
+      this.names.zh.item = this.formatNames(responses[131]);
+      this.names.zh.playerTitleName = this.formatNames(responses[132]);
+      this.names.zh.playerTitleDesc = this.formatNames(responses[133]);
+      this.names.zh.guildTitleName = this.formatNames(responses[134]);
+      this.names.zh.guildTitleDesc = this.formatNames(responses[135]);
+      this.names.zh.questTitle = this.formatNames(responses[136]);
+      this.names.zh.towerTitle = this.formatNames(responses[137]);
+      this.names.zh.towerFloorTitle = this.formatNames(responses[138]);
+
+      this.names.ko.equipmentGrow = this.formatNames(responses[139]);
+      this.names.ko.equipment = this.formatNames(responses[140]);
+      this.names.ko.buff = this.formatNames(responses[141]);
+      this.names.ko.itemOther = this.formatNames(responses[142]);
+      this.names.ko.job = this.formatNames(responses[143]);
+      this.names.ko.skill = this.formatNames(responses[144]);
+      this.names.ko.unit = this.formatNames(responses[145]);
+      this.names.ko.visionCard = this.formatNames(responses[146]);
+      this.names.ko.item = this.formatNames(responses[147]);
+      this.names.ko.playerTitleName = this.formatNames(responses[148]);
+      this.names.ko.playerTitleDesc = this.formatNames(responses[149]);
+      this.names.ko.guildTitleName = this.formatNames(responses[150]);
+      this.names.ko.guildTitleDesc = this.formatNames(responses[151]);
+      this.names.ko.questTitle = this.formatNames(responses[152]);
+      this.names.ko.towerTitle = this.formatNames(responses[153]);
+      this.names.ko.towerFloorTitle = this.formatNames(responses[154]);
+
+      this.names.de.equipmentGrow = this.formatNames(responses[155]);
+      this.names.de.equipment = this.formatNames(responses[156]);
+      this.names.de.buff = this.formatNames(responses[157]);
+      this.names.de.itemOther = this.formatNames(responses[158]);
+      this.names.de.job = this.formatNames(responses[159]);
+      this.names.de.skill = this.formatNames(responses[160]);
+      this.names.de.unit = this.formatNames(responses[161]);
+      this.names.de.visionCard = this.formatNames(responses[162]);
+      this.names.de.item = this.formatNames(responses[163]);
+      this.names.de.playerTitleName = this.formatNames(responses[164]);
+      this.names.de.playerTitleDesc = this.formatNames(responses[165]);
+      this.names.de.guildTitleName = this.formatNames(responses[166]);
+      this.names.de.guildTitleDesc = this.formatNames(responses[167]);
+      this.names.de.questTitle = this.formatNames(responses[168]);
+      this.names.de.towerTitle = this.formatNames(responses[169]);
+      this.names.de.towerFloorTitle = this.formatNames(responses[170]);
+
+      this.names.es.equipmentGrow = this.formatNames(responses[171]);
+      this.names.es.equipment = this.formatNames(responses[172]);
+      this.names.es.buff = this.formatNames(responses[173]);
+      this.names.es.itemOther = this.formatNames(responses[174]);
+      this.names.es.job = this.formatNames(responses[175]);
+      this.names.es.skill = this.formatNames(responses[176]);
+      this.names.es.unit = this.formatNames(responses[177]);
+      this.names.es.visionCard = this.formatNames(responses[178]);
+      this.names.es.item = this.formatNames(responses[179]);
+      this.names.es.playerTitleName = this.formatNames(responses[180]);
+      this.names.es.playerTitleDesc = this.formatNames(responses[181]);
+      this.names.es.guildTitleName = this.formatNames(responses[182]);
+      this.names.es.guildTitleDesc = this.formatNames(responses[183]);
+      this.names.es.questTitle = this.formatNames(responses[184]);
+      this.names.es.towerTitle = this.formatNames(responses[185]);
+      this.names.es.towerFloorTitle = this.formatNames(responses[186]);
 
       this.names.jp.equipmentGrow = this.formatNames(responses[88]);
       this.names.jp.equipment = this.formatNames(responses[89]);
@@ -2019,9 +2551,17 @@ export class JsonService {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + '_FIRE']) {
         this[this.version].wotvJobs[dataId].names.en = this.names.en['job'][dataId] ? this.names.en['job'][dataId] : this.names.en['job'][dataId + '_FIRE'];
         this[this.version].wotvJobs[dataId].names.fr = this.names.fr['job'][dataId] ? this.names.fr['job'][dataId] : this.names.fr['job'][dataId + '_FIRE'];
+        this[this.version].wotvJobs[dataId].names.es = this.names.es['job'][dataId] ? this.names.es['job'][dataId] : this.names.es['job'][dataId + '_FIRE'];
+        this[this.version].wotvJobs[dataId].names.de = this.names.de['job'][dataId] ? this.names.de['job'][dataId] : this.names.de['job'][dataId + '_FIRE'];
+        this[this.version].wotvJobs[dataId].names.ko = this.names.ko['job'][dataId] ? this.names.ko['job'][dataId] : this.names.ko['job'][dataId + '_FIRE'];
+        this[this.version].wotvJobs[dataId].names.zh = this.names.zh['job'][dataId] ? this.names.zh['job'][dataId] : this.names.zh['job'][dataId + '_FIRE'];
       } else {
         this[this.version].wotvJobs[dataId].names.en = dataId;
         this[this.version].wotvJobs[dataId].names.fr = dataId;
+        this[this.version].wotvJobs[dataId].names.es = dataId;
+        this[this.version].wotvJobs[dataId].names.de = dataId;
+        this[this.version].wotvJobs[dataId].names.ko = dataId;
+        this[this.version].wotvJobs[dataId].names.zh = dataId;
       }
     } else {
       if (this.names.en['job'][dataId] || this.names.en['job'][dataId + '_FIRE']) {
@@ -2187,9 +2727,17 @@ export class JsonService {
       if (this.names.en[type][id]) {
         item.names.en = this.names.en[type][id];
         item.names.fr = this.names.fr[type][id];
+        item.names.de = this.names.de[type][id];
+        item.names.es = this.names.es[type][id];
+        item.names.ko = this.names.ko[type][id];
+        item.names.zh = this.names.zh[type][id];
       } else {
         item.names.en = id;
         item.names.fr = id;
+        item.names.de = id;
+        item.names.es = id;
+        item.names.ko = id;
+        item.names.zh = id;
       }
 
       if (getSlug) {
@@ -3488,7 +4036,11 @@ export class JsonService {
           equipment.acquisition = {
             type: {
               en: this.names.en.itemOther[recipe.recipe],
-              fr: this.names.fr.itemOther[recipe.recipe]
+              fr: this.names.fr.itemOther[recipe.recipe],
+              es: this.names.es.itemOther[recipe.recipe],
+              de: this.names.de.itemOther[recipe.recipe],
+              ko: this.names.ko.itemOther[recipe.recipe],
+              zh: this.names.zh.itemOther[recipe.recipe]
             }
           };
         }
@@ -3850,12 +4402,20 @@ export class JsonService {
       if (!this.names.en[type + 'TitleDesc'][titleId]) {
         this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].howToGet = {
           en: titleId,
-          fr: titleId
+          fr: titleId,
+          es: titleId,
+          de: titleId,
+          ko: titleId,
+          zh: titleId
         };
       } else {
         this[this.version]['wotv' + this.upperCaseFirst(type) + 'Titles'][titleId].howToGet = {
           en: this.names.en[type + 'TitleDesc'][titleId],
-          fr: this.names.fr[type + 'TitleDesc'][titleId] ? this.names.fr[type + 'TitleDesc'][titleId] : this.names.fr[type + 'TitleDesc'][titleId]
+          fr: this.names.fr[type + 'TitleDesc'][titleId] ? this.names.fr[type + 'TitleDesc'][titleId] : this.names.fr[type + 'TitleDesc'][titleId],
+          es: this.names.es[type + 'TitleDesc'][titleId] ? this.names.es[type + 'TitleDesc'][titleId] : this.names.es[type + 'TitleDesc'][titleId],
+          de: this.names.de[type + 'TitleDesc'][titleId] ? this.names.de[type + 'TitleDesc'][titleId] : this.names.de[type + 'TitleDesc'][titleId],
+          ko: this.names.ko[type + 'TitleDesc'][titleId] ? this.names.ko[type + 'TitleDesc'][titleId] : this.names.ko[type + 'TitleDesc'][titleId],
+          zh: this.names.zh[type + 'TitleDesc'][titleId] ? this.names.zh[type + 'TitleDesc'][titleId] : this.names.zh[type + 'TitleDesc'][titleId]
         };
       }
     } else {
@@ -4407,7 +4967,11 @@ export class JsonService {
   private getTowerFloorName(floorId, towerId, ex) {
     const towerNames = {
       en: '',
-      fr: ''
+      fr: '',
+      es: '',
+      de: '',
+      ko: '',
+      zh: ''
     };
     const towerSlug = '';
 
@@ -4415,6 +4979,10 @@ export class JsonService {
       if (this.names.en.towerTitle[towerId]) {
         towerNames.en = this.names.en.towerTitle[towerId];
         towerNames.fr = this.names.fr.towerTitle[towerId];
+        towerNames.es = this.names.es.towerTitle[towerId];
+        towerNames.de = this.names.de.towerTitle[towerId];
+        towerNames.ko = this.names.ko.towerTitle[towerId];
+        towerNames.zh = this.names.zh.towerTitle[towerId];
 
         let countTowerTitle = 1;
         Object.keys(this.names.en.towerTitle).forEach((towerTitleId, towerTitleIndex) => {
@@ -4424,12 +4992,20 @@ export class JsonService {
             } else if (countTowerTitle > 1) {
               towerNames.en = towerNames.en + ' (' + countTowerTitle + ')';
               towerNames.fr = towerNames.fr + ' (' + countTowerTitle + ')';
+              towerNames.es = towerNames.es + ' (' + countTowerTitle + ')';
+              towerNames.de = towerNames.de + ' (' + countTowerTitle + ')';
+              towerNames.ko = towerNames.ko + ' (' + countTowerTitle + ')';
+              towerNames.zh = towerNames.zh + ' (' + countTowerTitle + ')';
             }
           }
         });
       } else {
         towerNames.en = towerId;
         towerNames.fr = towerId;
+        towerNames.es = towerId;
+        towerNames.de = towerId;
+        towerNames.ko = towerId;
+        towerNames.zh = towerId;
       }
     } else {
       if (this.names.en.towerTitle[towerId]) {
@@ -4473,10 +5049,26 @@ export class JsonService {
         floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + this.names.en.towerFloorTitle[floorId];
         // @ts-ignore
         floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + this.names.fr.towerFloorTitle[floorId];
+        // @ts-ignore
+        floorNames.de = towerNames.de + ' - ' + (ex ? 'EX ' : '') + this.names.de.towerFloorTitle[floorId];
+        // @ts-ignore
+        floorNames.es = towerNames.es + ' - ' + (ex ? 'EX ' : '') + this.names.es.towerFloorTitle[floorId];
+        // @ts-ignore
+        floorNames.ko = towerNames.ko + ' - ' + (ex ? 'EX ' : '') + this.names.ko.towerFloorTitle[floorId];
+        // @ts-ignore
+        floorNames.zh = towerNames.zh + ' - ' + (ex ? 'EX ' : '') + this.names.zh.towerFloorTitle[floorId];
       } else {
         floorNames.en = towerNames.en + ' - ' + (ex ? 'EX ' : '') + floorId;
         // @ts-ignore
         floorNames.fr = towerNames.fr + ' - ' + (ex ? 'EX ' : '') + floorId;
+        // @ts-ignore
+        floorNames.es = towerNames.es + ' - ' + (ex ? 'EX ' : '') + floorId;
+        // @ts-ignore
+        floorNames.de = towerNames.de + ' - ' + (ex ? 'EX ' : '') + floorId;
+        // @ts-ignore
+        floorNames.ko = towerNames.ko + ' - ' + (ex ? 'EX ' : '') + floorId;
+        // @ts-ignore
+        floorNames.zh = towerNames.zh + ' - ' + (ex ? 'EX ' : '') + floorId;
       }
 
       floorSlug = this.slug.slugify(floorNames.en);

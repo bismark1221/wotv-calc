@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   ) {
     angulartics2GoogleAnalytics.startTracking();
 
-    translate.addLangs(['en', 'fr']); // "en", "fr", "tw", "es", "de", "kr"
+    translate.addLangs(['en', 'fr', 'de', 'es', 'ko', 'zh']);
     translate.setDefaultLang('en');
 
     let lang = this.localStorageService.get<any[]>('lang') ? this.localStorageService.get<any[]>('lang').toString() : translate.getDefaultLang();

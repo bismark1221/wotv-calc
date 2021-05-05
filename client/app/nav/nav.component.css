@@ -158,13 +158,16 @@
 
 .otherLang {
   position: fixed;
-  padding: 5px;
-  width: 65px;
   background-color: var(--nav-background-main);
   z-index: 20;
 }
 
-.actualLang:hover, .otherLang:hover {
+.otherLangIndividual {
+  padding: 5px;
+  width: 65px;
+}
+
+.actualLang:hover, .otherLangIndividual:hover {
   cursor: pointer;
   background-color: #4e4e4e;
 }
