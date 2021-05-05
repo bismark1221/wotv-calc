@@ -1,0 +1,6384 @@
+{
+    "infos": [
+        {
+            "key": "IT_US_POTION",
+            "value": "Trank"
+        },
+        {
+            "key": "IT_US_HIPOTION",
+            "value": "Hi-Trank"
+        },
+        {
+            "key": "IT_US_EXPOTION",
+            "value": "X-Trank"
+        },
+        {
+            "key": "IT_US_ETHER",
+            "value": "Äther"
+        },
+        {
+            "key": "IT_US_ETHERTURBO",
+            "value": "Turbo-Äther"
+        },
+        {
+            "key": "IT_US_ELIXIR",
+            "value": "Elixier"
+        },
+        {
+            "key": "IT_US_PNXFEATHER",
+            "value": "Phönixfeder"
+        },
+        {
+            "key": "IT_US_ANTIDOTE",
+            "value": "Antidot"
+        },
+        {
+            "key": "IT_US_EYEDROPS",
+            "value": "Augentropfen"
+        },
+        {
+            "key": "IT_US_REMINDER",
+            "value": "Riechsalz"
+        },
+        {
+            "key": "IT_US_ECHODROP",
+            "value": "Echokraut"
+        },
+        {
+            "key": "IT_US_UNICORNHORN",
+            "value": "Einhorn-Horn"
+        },
+        {
+            "key": "IT_US_MAIDENKISS",
+            "value": "Jungfernkuss"
+        },
+        {
+            "key": "IT_US_GOLDNEEDLE",
+            "value": "Goldnadel"
+        },
+        {
+            "key": "IT_US_REMEDY",
+            "value": "Allheilmittel"
+        },
+        {
+            "key": "IT_US_ENCHANTDRAG",
+            "value": "Stimulans"
+        },
+        {
+            "key": "IT_US_HOLYTORCH",
+            "value": "Heilige Fackel"
+        },
+        {
+            "key": "IT_US_HERODRINK",
+            "value": "Heldentrunk"
+        },
+        {
+            "key": "IT_US_BACCHUS",
+            "value": "Bacchus’ Tropfen"
+        },
+        {
+            "key": "IT_US_SHELL",
+            "value": "Vallum-Trank"
+        },
+        {
+            "key": "IT_US_PROTECT",
+            "value": "Protes-Trank"
+        },
+        {
+            "key": "IT_US_HEALWATER",
+            "value": "Heilquelle"
+        },
+        {
+            "key": "IT_US_HPPOTION",
+            "value": "Durchhaltetrank"
+        },
+        {
+            "key": "IT_US_ATKPOTION",
+            "value": "Kraftschub"
+        },
+        {
+            "key": "IT_US_MAGPOTION",
+            "value": "Mana-Schub"
+        },
+        {
+            "key": "IT_US_SPDPOTION",
+            "value": "Behändigkeitstrank"
+        },
+        {
+            "key": "IT_US_DEXPOTION",
+            "value": "Tricksertrank"
+        },
+        {
+            "key": "IT_ACTP_01",
+            "value": "Ausdauerstimulans (S)"
+        },
+        {
+            "key": "IT_ACTP_02",
+            "value": "Ausdauerstimulans (M)"
+        },
+        {
+            "key": "IT_ACTP_03",
+            "value": "Ausdauerstimulans (L)"
+        },
+        {
+            "key": "IT_ACTP_04",
+            "value": "Ausdauerstimulans (XL)"
+        },
+        {
+            "key": "IT_ARENAP_02",
+            "value": "Arenajuwel-Wiederhersteller (vollst.)"
+        },
+        {
+            "key": "IT_RAIDAP_01",
+            "value": "Multi-Kraftproben-Wiederhersteller (vollst.)"
+        },
+        {
+            "key": "IT_RANKMP_02",
+            "value": "Klassenmatchpunkte-Wiederhersteller (vollst.)"
+        },
+        {
+            "key": "IT_CG_01",
+            "value": "Gilkröte (S)"
+        },
+        {
+            "key": "IT_CG_02",
+            "value": "Gilkröte (M)"
+        },
+        {
+            "key": "IT_CG_03",
+            "value": "Gilkröte (L)"
+        },
+        {
+            "key": "IT_CG_04",
+            "value": "Gilkröte (XL)"
+        },
+        {
+            "key": "IT_US_EXP_01",
+            "value": "ERF-Würfel (S)"
+        },
+        {
+            "key": "IT_US_EXP_02",
+            "value": "ERF-Würfel (M)"
+        },
+        {
+            "key": "IT_US_EXP_03",
+            "value": "ERF-Würfel (L)"
+        },
+        {
+            "key": "IT_US_EXP_04",
+            "value": "ERF-Würfel (XL)"
+        },
+        {
+            "key": "IT_LB_EXP_01",
+            "value": "Kleiner Rausch-Pott"
+        },
+        {
+            "key": "IT_LB_EXP_02",
+            "value": "Rausch-Pott"
+        },
+        {
+            "key": "IT_LB_EXP_03",
+            "value": "Königlicher Rausch-Pott"
+        },
+        {
+            "key": "IT_JB_MM_ALL",
+            "value": "Verschwommene Erinnerungen (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_ALL_2",
+            "value": "Verschwommene Erinnerungen (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_ALL_3",
+            "value": "Verschwommene Erinnerungen (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_ALL_4",
+            "value": "Verschwommene Erinnerungen (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_ALL_5",
+            "value": "Verschwommene Erinnerungen (Rot)"
+        },
+        {
+            "key": "IT_JB_SWORD_01",
+            "value": "Schwert-Jadeit"
+        },
+        {
+            "key": "IT_JB_SWORD_02",
+            "value": "Schwert-Azurit"
+        },
+        {
+            "key": "IT_JB_SWORD_03",
+            "value": "Schwert-Charoit"
+        },
+        {
+            "key": "IT_JB_SWORD_04",
+            "value": "Schwert-Citrin"
+        },
+        {
+            "key": "IT_JB_SWORD_05",
+            "value": "Schwert-Spinell"
+        },
+        {
+            "key": "IT_JB_LSWORD_01",
+            "value": "Großschwert-Jadeit"
+        },
+        {
+            "key": "IT_JB_LSWORD_02",
+            "value": "Großschwert-Azurit"
+        },
+        {
+            "key": "IT_JB_LSWORD_03",
+            "value": "Großschwert-Charoit"
+        },
+        {
+            "key": "IT_JB_LSWORD_04",
+            "value": "Großschwert-Citrin"
+        },
+        {
+            "key": "IT_JB_LSWORD_05",
+            "value": "Großschwert-Spinell"
+        },
+        {
+            "key": "IT_JB_JSWORD_01",
+            "value": "Katana-Jadeit"
+        },
+        {
+            "key": "IT_JB_JSWORD_02",
+            "value": "Katana-Azurit"
+        },
+        {
+            "key": "IT_JB_JSWORD_03",
+            "value": "Katana-Charoit"
+        },
+        {
+            "key": "IT_JB_JSWORD_04",
+            "value": "Katana-Citrin"
+        },
+        {
+            "key": "IT_JB_JSWORD_05",
+            "value": "Katana-Spinell"
+        },
+        {
+            "key": "IT_JB_FIST_01",
+            "value": "Fäuste-Jadeit"
+        },
+        {
+            "key": "IT_JB_FIST_02",
+            "value": "Fäuste-Azurit"
+        },
+        {
+            "key": "IT_JB_FIST_03",
+            "value": "Fäuste-Charoit"
+        },
+        {
+            "key": "IT_JB_FIST_04",
+            "value": "Fäuste-Citrin"
+        },
+        {
+            "key": "IT_JB_FIST_05",
+            "value": "Fäuste-Spinell"
+        },
+        {
+            "key": "IT_JB_SPEAR_01",
+            "value": "Lanzen-Jadeit"
+        },
+        {
+            "key": "IT_JB_SPEAR_02",
+            "value": "Lanzen-Azurit"
+        },
+        {
+            "key": "IT_JB_SPEAR_03",
+            "value": "Lanzen-Charoit"
+        },
+        {
+            "key": "IT_JB_SPEAR_04",
+            "value": "Lanzen-Citrin"
+        },
+        {
+            "key": "IT_JB_SPEAR_05",
+            "value": "Lanzen-Spinell"
+        },
+        {
+            "key": "IT_JB_SSWORD_01",
+            "value": "Dolch-Jadeit"
+        },
+        {
+            "key": "IT_JB_SSWORD_02",
+            "value": "Dolch-Azurit"
+        },
+        {
+            "key": "IT_JB_SSWORD_03",
+            "value": "Dolch-Charoit"
+        },
+        {
+            "key": "IT_JB_SSWORD_04",
+            "value": "Dolch-Citrin"
+        },
+        {
+            "key": "IT_JB_SSWORD_05",
+            "value": "Dolch-Spinell"
+        },
+        {
+            "key": "IT_JB_KUNAI_01",
+            "value": "Shinobigatana-Jadeit"
+        },
+        {
+            "key": "IT_JB_KUNAI_02",
+            "value": "Shinobigatana-Azurit"
+        },
+        {
+            "key": "IT_JB_KUNAI_03",
+            "value": "Shinobigatana-Charoit"
+        },
+        {
+            "key": "IT_JB_KUNAI_04",
+            "value": "Shinobigatana-Citrin"
+        },
+        {
+            "key": "IT_JB_KUNAI_05",
+            "value": "Shinobigatana-Spinell"
+        },
+        {
+            "key": "IT_JB_BOW_01",
+            "value": "Bogen-Jadeit"
+        },
+        {
+            "key": "IT_JB_BOW_02",
+            "value": "Bogen-Azurit"
+        },
+        {
+            "key": "IT_JB_BOW_03",
+            "value": "Bogen-Charoit"
+        },
+        {
+            "key": "IT_JB_BOW_04",
+            "value": "Bogen-Citrin"
+        },
+        {
+            "key": "IT_JB_BOW_05",
+            "value": "Bogen-Spinell"
+        },
+        {
+            "key": "IT_JB_GUN_01",
+            "value": "Pistolen-Jadeit"
+        },
+        {
+            "key": "IT_JB_GUN_02",
+            "value": "Pistolen-Azurit"
+        },
+        {
+            "key": "IT_JB_GUN_03",
+            "value": "Pistolen-Charoit"
+        },
+        {
+            "key": "IT_JB_GUN_04",
+            "value": "Pistolen-Citrin"
+        },
+        {
+            "key": "IT_JB_GUN_05",
+            "value": "Pistolen-Spinell"
+        },
+        {
+            "key": "IT_JB_STAFF_01",
+            "value": "Stab-Jadeit"
+        },
+        {
+            "key": "IT_JB_STAFF_02",
+            "value": "Stab-Azurit"
+        },
+        {
+            "key": "IT_JB_STAFF_03",
+            "value": "Stab-Charoit"
+        },
+        {
+            "key": "IT_JB_STAFF_04",
+            "value": "Stab-Citrin"
+        },
+        {
+            "key": "IT_JB_STAFF_05",
+            "value": "Stab-Spinell"
+        },
+        {
+            "key": "IT_JB_MACE_01",
+            "value": "Kolben-Jadeit"
+        },
+        {
+            "key": "IT_JB_MACE_02",
+            "value": "Kolben-Azurit"
+        },
+        {
+            "key": "IT_JB_MACE_03",
+            "value": "Kolben-Charoit"
+        },
+        {
+            "key": "IT_JB_MACE_04",
+            "value": "Kolben-Citrin"
+        },
+        {
+            "key": "IT_JB_MACE_05",
+            "value": "Kolben-Spinell"
+        },
+        {
+            "key": "IT_JB_AXE_01",
+            "value": "Axt-Jadeit"
+        },
+        {
+            "key": "IT_JB_AXE_02",
+            "value": "Axt-Azurit"
+        },
+        {
+            "key": "IT_JB_AXE_03",
+            "value": "Axt-Charoit"
+        },
+        {
+            "key": "IT_JB_AXE_04",
+            "value": "Axt-Citrin"
+        },
+        {
+            "key": "IT_JB_AXE_05",
+            "value": "Axt-Spinell"
+        },
+        {
+            "key": "IT_JB_GLOVE_01",
+            "value": "Handschuhe-Jadeit"
+        },
+        {
+            "key": "IT_JB_GLOVE_02",
+            "value": "Handschuhe-Azurit"
+        },
+        {
+            "key": "IT_JB_GLOVE_03",
+            "value": "Handschuhe-Charoit"
+        },
+        {
+            "key": "IT_JB_GLOVE_04",
+            "value": "Handschuhe-Citrin"
+        },
+        {
+            "key": "IT_JB_GLOVE_05",
+            "value": "Handschuhe-Spinell"
+        },
+        {
+            "key": "IT_JB_MM_COMMON",
+            "value": "Erinnerungen des namenlosen Helden (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_2",
+            "value": "Erinnerungen des namenlosen Helden (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_3",
+            "value": "Erinnerungen des namenlosen Helden (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_4",
+            "value": "Erinnerungen des namenlosen Helden (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_COMMON_5",
+            "value": "Erinnerungen des namenlosen Helden (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_WAR",
+            "value": "Erinnerungen des Kriegers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_WAR_2",
+            "value": "Erinnerungen des Kriegers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_WAR_3",
+            "value": "Erinnerungen des Kriegers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_WAR_4",
+            "value": "Erinnerungen des Kriegers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_WAR_5",
+            "value": "Erinnerungen des Kriegers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_KNT",
+            "value": "Erinnerungen des Ritters (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_KNT_2",
+            "value": "Erinnerungen des Ritters (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_KNT_3",
+            "value": "Erinnerungen des Ritters (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_KNT_4",
+            "value": "Erinnerungen des Ritters (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_KNT_5",
+            "value": "Erinnerungen des Ritters (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_PLD",
+            "value": "Erinnerungen des Paladins (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_PLD_2",
+            "value": "Erinnerungen des Paladins (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_PLD_3",
+            "value": "Erinnerungen des Paladins (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_PLD_4",
+            "value": "Erinnerungen des Paladins (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_PLD_5",
+            "value": "Erinnerungen des Paladins (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_SWN",
+            "value": "Erinnerungen des Soldaten (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_SWN_2",
+            "value": "Erinnerungen des Soldaten (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_SWN_3",
+            "value": "Erinnerungen des Soldaten (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_SWN_4",
+            "value": "Erinnerungen des Soldaten (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_SWN_5",
+            "value": "Erinnerungen des Soldaten (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MNK",
+            "value": "Erinnerungen des Mönchs (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MNK_2",
+            "value": "Erinnerungen des Mönchs (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MNK_3",
+            "value": "Erinnerungen des Mönchs (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MNK_4",
+            "value": "Erinnerungen des Mönchs (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MNK_5",
+            "value": "Erinnerungen des Mönchs (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_SAM",
+            "value": "Erinnerungen des Samurai (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_SAM_2",
+            "value": "Erinnerungen des Samurai (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_SAM_3",
+            "value": "Erinnerungen des Samurai (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_SAM_4",
+            "value": "Erinnerungen des Samurai (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_SAM_5",
+            "value": "Erinnerungen des Samurai (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LAN",
+            "value": "Erinnerungen des Pikeniers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LAN_2",
+            "value": "Erinnerungen des Pikeniers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LAN_3",
+            "value": "Erinnerungen des Pikeniers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LAN_4",
+            "value": "Erinnerungen des Pikeniers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LAN_5",
+            "value": "Erinnerungen des Pikeniers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_DRG",
+            "value": "Erinnerungen des Dragoners (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_DRG_2",
+            "value": "Erinnerungen des Dragoners (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_DRG_3",
+            "value": "Erinnerungen des Dragoners (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_DRG_4",
+            "value": "Erinnerungen des Dragoners (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_DRG_5",
+            "value": "Erinnerungen des Dragoners (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_THI",
+            "value": "Erinnerungen des Diebes (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_THI_2",
+            "value": "Erinnerungen des Diebes (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_THI_3",
+            "value": "Erinnerungen des Diebes (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_THI_4",
+            "value": "Erinnerungen des Diebes (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_THI_5",
+            "value": "Erinnerungen des Diebes (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_NIN",
+            "value": "Erinnerungen des Ninjas (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_NIN_2",
+            "value": "Erinnerungen des Ninjas (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_NIN_3",
+            "value": "Erinnerungen des Ninjas (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_NIN_4",
+            "value": "Erinnerungen des Ninjas (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_NIN_5",
+            "value": "Erinnerungen des Ninjas (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_HUN",
+            "value": "Erinnerungen des Jägers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_HUN_2",
+            "value": "Erinnerungen des Jägers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_HUN_3",
+            "value": "Erinnerungen des Jägers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_HUN_4",
+            "value": "Erinnerungen des Jägers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_HUN_5",
+            "value": "Erinnerungen des Jägers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_GUN",
+            "value": "Erinnerungen des Schützen (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_GUN_2",
+            "value": "Erinnerungen des Schützen (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_GUN_3",
+            "value": "Erinnerungen des Schützen (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_GUN_4",
+            "value": "Erinnerungen des Schützen (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_GUN_5",
+            "value": "Erinnerungen des Schützen (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_WHM",
+            "value": "Erinnerungen des Weißmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_WHM_2",
+            "value": "Erinnerungen des Weißmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_WHM_3",
+            "value": "Erinnerungen des Weißmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_WHM_4",
+            "value": "Erinnerungen des Weißmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_WHM_5",
+            "value": "Erinnerungen des Weißmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_BLM",
+            "value": "Erinnerungen des Schwarzmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_BLM_2",
+            "value": "Erinnerungen des Schwarzmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_BLM_3",
+            "value": "Erinnerungen des Schwarzmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_BLM_4",
+            "value": "Erinnerungen des Schwarzmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_BLM_5",
+            "value": "Erinnerungen des Schwarzmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_RDM",
+            "value": "Erinnerungen des Rotmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_RDM_2",
+            "value": "Erinnerungen des Rotmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_RDM_3",
+            "value": "Erinnerungen des Rotmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_RDM_4",
+            "value": "Erinnerungen des Rotmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_RDM_5",
+            "value": "Erinnerungen des Rotmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_GRM",
+            "value": "Erinnerungen des Grünmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_GRM_2",
+            "value": "Erinnerungen des Grünmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_GRM_3",
+            "value": "Erinnerungen des Grünmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_GRM_4",
+            "value": "Erinnerungen des Grünmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_GRM_5",
+            "value": "Erinnerungen des Grünmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_TIM",
+            "value": "Erinnerungen des Zeitmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_TIM_2",
+            "value": "Erinnerungen des Zeitmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_TIM_3",
+            "value": "Erinnerungen des Zeitmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_TIM_4",
+            "value": "Erinnerungen des Zeitmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_TIM_5",
+            "value": "Erinnerungen des Zeitmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MGK",
+            "value": "Erinnerungen des Schwertmagiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MGK_2",
+            "value": "Erinnerungen des Schwertmagiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MGK_3",
+            "value": "Erinnerungen des Schwertmagiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MGK_4",
+            "value": "Erinnerungen des Schwertmagiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MGK_5",
+            "value": "Erinnerungen des Schwertmagiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_CLR",
+            "value": "Erinnerungen des Klerikers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_CLR_2",
+            "value": "Erinnerungen des Klerikers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_CLR_3",
+            "value": "Erinnerungen des Klerikers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_CLR_4",
+            "value": "Erinnerungen des Klerikers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_CLR_5",
+            "value": "Erinnerungen des Klerikers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS",
+            "value": "Erinnerungen des Geflügelten (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_2",
+            "value": "Erinnerungen des Geflügelten (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_3",
+            "value": "Erinnerungen des Geflügelten (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_4",
+            "value": "Erinnerungen des Geflügelten (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GLMS_5",
+            "value": "Erinnerungen des Geflügelten (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL",
+            "value": "Erinnerungen der Hexe (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_2",
+            "value": "Erinnerungen der Hexe (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_3",
+            "value": "Erinnerungen der Hexe (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_4",
+            "value": "Erinnerungen der Hexe (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_YSTL_5",
+            "value": "Erinnerungen der Hexe (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR",
+            "value": "Erinnerungen der Revolverklinge (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_2",
+            "value": "Erinnerungen der Revolverklinge (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_3",
+            "value": "Erinnerungen der Revolverklinge (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_4",
+            "value": "Erinnerungen der Revolverklinge (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF14_TNCR_5",
+            "value": "Erinnerungen der Revolverklinge (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_VIK",
+            "value": "Erinnerungen des Winkingers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_VIK_2",
+            "value": "Erinnerungen des Winkingers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_VIK_3",
+            "value": "Erinnerungen des Winkingers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_VIK_4",
+            "value": "Erinnerungen des Wikingers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_VIK_5",
+            "value": "Erinnerungen des Wikingers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR",
+            "value": "Erinnerungen des Gefallenen Ritters (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_2",
+            "value": "Erinnerungen des Gefallenen Ritters (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_3",
+            "value": "Erinnerungen des Gefallenen Ritters (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_4",
+            "value": "Erinnerungen des Gefallenen Ritters (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_GFGR_5",
+            "value": "Erinnerungen des Gefallenen Ritters (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ",
+            "value": "Erinnerungen des Knappen (Ramza: Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_2",
+            "value": "Erinnerungen des Knappen (Ramza: Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_3",
+            "value": "Erinnerungen des Knappen (Ramza: Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_4",
+            "value": "Erinnerungen des Knappen (Ramza: Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_RAMZ_5",
+            "value": "Erinnerungen des Knappen (Ramza: Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND",
+            "value": "Erinnerungen des Schwertheiligen (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_2",
+            "value": "Erinnerungen des Schwertheiligen (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_3",
+            "value": "Erinnerungen des Schwertheiligen (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_4",
+            "value": "Erinnerungen des Schwertheiligen (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_ORND_5",
+            "value": "Erinnerungen des Schwertheiligen (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_WGN",
+            "value": "Erinnerungen des Doppelschützen (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_WGN_2",
+            "value": "Erinnerungen des Doppelschützen (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_WGN_3",
+            "value": "Erinnerungen des Doppelschützen (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_WGN_4",
+            "value": "Erinnerungen des Doppelschützen (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_WGN_5",
+            "value": "Erinnerungen des Doppelschützen (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN",
+            "value": "Erinnerungen des Ritters von Grandshelt (Flamme: Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_2",
+            "value": "Erinnerungen des Ritters von Grandshelt (Flamme: Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_3",
+            "value": "Erinnerungen des Ritters von Grandshelt (Flamme: Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_4",
+            "value": "Erinnerungen des Ritters von Grandshelt (Flamme: Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_RAIN_5",
+            "value": "Erinnerungen des Ritters von Grandshelt (Flamme: Rot)"
+        },
+        {
+            "key": "IT_JB_MM_ASS",
+            "value": "Erinnerungen des Assassinen (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_ASS_2",
+            "value": "Erinnerungen des Assassinen (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_ASS_3",
+            "value": "Erinnerungen des Assassinen (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_ASS_4",
+            "value": "Erinnerungen des Assassinen (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_ASS_5",
+            "value": "Erinnerungen des Assassinen (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL",
+            "value": "Erinnerungen des Kriegers des Lichts (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_2",
+            "value": "Erinnerungen des Kriegers des Lichts (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_3",
+            "value": "Erinnerungen des Kriegers des Lichts (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_4",
+            "value": "Erinnerungen des Kriegers des Lichts (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF1_WROL_5",
+            "value": "Erinnerungen des Kriegers des Lichts (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MST",
+            "value": "Erinnerungen des Magiers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MST_2",
+            "value": "Erinnerungen des Magiers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MST_3",
+            "value": "Erinnerungen des Magiers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MST_4",
+            "value": "Erinnerungen des Magiers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MST_5",
+            "value": "Erinnerungen des Magiers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA",
+            "value": "Erinnerungen des Heiligen Ritters (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_2",
+            "value": "Erinnerungen des Heiligen Ritters (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_3",
+            "value": "Erinnerungen des Heiligen Ritters (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_4",
+            "value": "Erinnerungen des Heiligen Ritters (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_AGRA_5",
+            "value": "Erinnerungen des Heiligen Ritters (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT",
+            "value": "Erinnerungen des Knappen (Delita: Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_2",
+            "value": "Erinnerungen des Knappen (Delita: Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_3",
+            "value": "Erinnerungen des Knappen (Delita: Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_4",
+            "value": "Erinnerungen des Knappen (Delita: Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_DELT_5",
+            "value": "Erinnerungen des Knappen (Delita: Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD",
+            "value": "Erinnerungen des Maschinisten (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_2",
+            "value": "Erinnerungen des Maschinisten (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_3",
+            "value": "Erinnerungen des Maschinisten (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_4",
+            "value": "Erinnerungen des Maschinisten (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FFT_MSTD_5",
+            "value": "Erinnerungen des Maschinisten (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_CAL",
+            "value": "Erinnerungen des Arithmetikers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_2",
+            "value": "Erinnerungen des Arithmetikers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_3",
+            "value": "Erinnerungen des Arithmetikers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_4",
+            "value": "Erinnerungen des Arithmetikers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_CAL_5",
+            "value": "Erinnerungen des Arithmetikers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN",
+            "value": "Erinnerungen des Ritters des Untergangs (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_2",
+            "value": "Erinnerungen des Ritters des Untergangs (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_3",
+            "value": "Erinnerungen des Ritters des Untergangs (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_4",
+            "value": "Erinnerungen des Ritters des Untergangs (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_STRN_5",
+            "value": "Erinnerungen des Ritters des Untergangs (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR",
+            "value": "Erinnerungen der Walküre (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_2",
+            "value": "Erinnerungen der Walküre (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_3",
+            "value": "Erinnerungen der Walküre (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_4",
+            "value": "Erinnerungen der Walküre (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_GRSR_5",
+            "value": "Erinnerungen der Walküre (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL",
+            "value": "Erinnerungen des Ritters von Grandshelt (Eis: Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_2",
+            "value": "Erinnerungen des Ritters von Grandshelt (Eis: Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_3",
+            "value": "Erinnerungen des Ritters von Grandshelt (Eis: Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_4",
+            "value": "Erinnerungen des Ritters von Grandshelt (Eis: Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_LSWL_5",
+            "value": "Erinnerungen des Ritters von Grandshelt (Eis: Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MKN",
+            "value": "Erinnerungen des Runenritters (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MKN_2",
+            "value": "Erinnerungen des Runenritters (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MKN_3",
+            "value": "Erinnerungen des Runenritters (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MKN_4",
+            "value": "Erinnerungen des Runenritters (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MKN_5",
+            "value": "Erinnerungen des Runenritters (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL",
+            "value": "Erinnerungen des Lunarischen Paladins (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_2",
+            "value": "Erinnerungen des Lunarischen Paladins (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_3",
+            "value": "Erinnerungen des Lunarischen Paladins (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_4",
+            "value": "Erinnerungen des Lunarischen Paladins (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_CECL_5",
+            "value": "Erinnerungen des Lunarischen Paladins (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA",
+            "value": "Erinnerungen des Weißmagiers von Baron (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_2",
+            "value": "Erinnerungen des Weißmagiers von Baron (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_3",
+            "value": "Erinnerungen des Weißmagiers von Baron (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_4",
+            "value": "Erinnerungen des Weißmagiers von Baron (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_ROSA_5",
+            "value": "Erinnerungen des Weißmagiers von Baron (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN",
+            "value": "Erinnerungen des Dragoners von Baron (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_2",
+            "value": "Erinnerungen des Dragoners von Baron (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_3",
+            "value": "Erinnerungen des Dragoners von Baron (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_4",
+            "value": "Erinnerungen des Dragoners von Baron (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF4_KAIN_5",
+            "value": "Erinnerungen des Dragoners von Baron (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_DEAN",
+            "value": "Erinnerungen des Dunkelritters der Reue (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_DEAN_2",
+            "value": "Erinnerungen des Dunkelritters der Reue (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_DEAN_3",
+            "value": "Erinnerungen des Dunkelritters der Reue (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_DEAN_4",
+            "value": "Erinnerungen des Dunkelritters der Reue (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_DEAN_5",
+            "value": "Erinnerungen des Dunkelritters der Reue (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_ARC",
+            "value": "Erinnerungen des Snipers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_ARC_2",
+            "value": "Erinnerungen des Snipers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_ARC_3",
+            "value": "Erinnerungen des Snipers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_ARC_4",
+            "value": "Erinnerungen des Snipers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_ARC_5",
+            "value": "Erinnerungen des Snipers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_LW_SAKR",
+            "value": "Erinnerungen der Weisen von Mysidia (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_LW_SAKR_2",
+            "value": "Erinnerungen der Weisen von Mysidia (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_LW_SAKR_3",
+            "value": "Erinnerungen der Weisen von Mysidia (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_LW_SAKR_4",
+            "value": "Erinnerungen der Weisen von Mysidia (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_LW_SAKR_5",
+            "value": "Erinnerungen der Weisen von Mysidia (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MMC",
+            "value": "Erinnerungen des Wortseelenbändigers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MMC_2",
+            "value": "Erinnerungen des Wortseelenbändigers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MMC_3",
+            "value": "Erinnerungen des Wortseelenbändigers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MMC_4",
+            "value": "Erinnerungen des Wortseelenbändigers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MMC_5",
+            "value": "Erinnerungen des Wortseelenbändigers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_BEA",
+            "value": "Erinnerungen des Faustkämpfers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_BEA_2",
+            "value": "Erinnerungen des Faustkämpfers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_BEA_3",
+            "value": "Erinnerungen des Faustkämpfers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_BEA_4",
+            "value": "Erinnerungen des Faustkämpfers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_BEA_5",
+            "value": "Erinnerungen des Faustkämpfers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_PSI",
+            "value": "Erinnerungen des Energetikers (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_PSI_2",
+            "value": "Erinnerungen des Energetikers (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_PSI_3",
+            "value": "Erinnerungen des Energetikers (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_PSI_4",
+            "value": "Erinnerungen des Energetikers (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_PSI_5",
+            "value": "Erinnerungen des Energetikers (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MSW",
+            "value": "Erinnerungen der Nachtklinge (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MSW_2",
+            "value": "Erinnerungen der Nachtklinge (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MSW_3",
+            "value": "Erinnerungen der Nachtklinge (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MSW_4",
+            "value": "Erinnerungen der Nachtklinge (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MSW_5",
+            "value": "Erinnerungen der Nachtklinge (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_TIDU",
+            "value": "Erinnerungen des Abes Ass (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_TIDU_2",
+            "value": "Erinnerungen des Abes Ass (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_TIDU_3",
+            "value": "Erinnerungen des Abes Ass (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_TIDU_4",
+            "value": "Erinnerungen des Abes Ass (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_TIDU_5",
+            "value": "Erinnerungen des Abes Ass (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_YUNA",
+            "value": "Erinnerungen des Mediums von Spira (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_YUNA_2",
+            "value": "Erinnerungen des Mediums von Spira (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_YUNA_3",
+            "value": "Erinnerungen des Mediums von Spira (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_YUNA_4",
+            "value": "Erinnerungen des Mediums von Spira (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_YUNA_5",
+            "value": "Erinnerungen des Mediums von Spira (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON",
+            "value": "Erinnerungen des Legendären Leibgardisten (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_2",
+            "value": "Erinnerungen des Legendären Leibgardisten (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_3",
+            "value": "Erinnerungen des Legendären Leibgardisten (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_4",
+            "value": "Erinnerungen des Legendären Leibgardisten (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_FF10_ARON_5",
+            "value": "Erinnerungen des Legendären Leibgardisten (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N2TB",
+            "value": "Erinnerungen des YoRHa Modells B Nr. 2 (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N2TB_2",
+            "value": "Erinnerungen des YoRHa Modells B Nr. 2 (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N2TB_3",
+            "value": "Erinnerungen des YoRHa Modells B Nr. 2 (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N2TB_4",
+            "value": "Erinnerungen des YoRHa Modells B Nr. 2 (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N2TB_5",
+            "value": "Erinnerungen des YoRHa Modells B Nr. 2 (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N9TS",
+            "value": "Erinnerungen des YoRHa Modells S Nr. 9 (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N9TS_2",
+            "value": "Erinnerungen des YoRHa Modells S Nr. 9 (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N9TS_3",
+            "value": "Erinnerungen des YoRHa Modells S Nr. 9 (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N9TS_4",
+            "value": "Erinnerungen des YoRHa Modells S Nr. 9 (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_NIER_N9TS_5",
+            "value": "Erinnerungen des YoRHa Modells S Nr. 9 (Rot)"
+        },
+        {
+            "key": "IT_JB_MM_MONT_01",
+            "value": "Erinnerungen des Regenten (Grün)"
+        },
+        {
+            "key": "IT_JB_MM_MONT_01_2",
+            "value": "Erinnerungen des Regenten (Blau)"
+        },
+        {
+            "key": "IT_JB_MM_MONT_01_3",
+            "value": "Erinnerungen des Regenten (Violett)"
+        },
+        {
+            "key": "IT_JB_MM_MONT_01_4",
+            "value": "Erinnerungen des Regenten (Gelb)"
+        },
+        {
+            "key": "IT_JB_MM_MONT_01_5",
+            "value": "Erinnerungen des Regenten (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_1",
+            "value": "Feuer-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_2",
+            "value": "Feuer-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_3",
+            "value": "Feuer-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_4",
+            "value": "Feuer-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_FIRE_5",
+            "value": "Feuer-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_ICE_1",
+            "value": "Eis-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_ICE_2",
+            "value": "Eis-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_ICE_3",
+            "value": "Eis-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_ICE_4",
+            "value": "Eis-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_ICE_5",
+            "value": "Eis-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_WIND_1",
+            "value": "Wind-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_WIND_2",
+            "value": "Wind-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_WIND_3",
+            "value": "Wind-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_WIND_4",
+            "value": "Wind-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_WIND_5",
+            "value": "Wind-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_1",
+            "value": "Erd-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_2",
+            "value": "Erd-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_3",
+            "value": "Erd-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_4",
+            "value": "Erd-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_SOIL_5",
+            "value": "Erd-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_1",
+            "value": "Blitz-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_2",
+            "value": "Blitz-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_3",
+            "value": "Blitz-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_4",
+            "value": "Blitz-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_THUNDER_5",
+            "value": "Blitz-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_WATER_1",
+            "value": "Wasser-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_WATER_2",
+            "value": "Wasser-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_WATER_3",
+            "value": "Wasser-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_WATER_4",
+            "value": "Wasser-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_WATER_5",
+            "value": "Wasser-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_1",
+            "value": "Licht-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_2",
+            "value": "Licht-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_3",
+            "value": "Licht-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_4",
+            "value": "Licht-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_SHINE_5",
+            "value": "Licht-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_EM_DARK_1",
+            "value": "Dunkel-Alkrist (Grün)"
+        },
+        {
+            "key": "IT_JB_EM_DARK_2",
+            "value": "Dunkel-Alkrist (Blau)"
+        },
+        {
+            "key": "IT_JB_EM_DARK_3",
+            "value": "Dunkel-Alkrist (Violett)"
+        },
+        {
+            "key": "IT_JB_EM_DARK_4",
+            "value": "Dunkel-Alkrist (Gelb)"
+        },
+        {
+            "key": "IT_JB_EM_DARK_5",
+            "value": "Dunkel-Alkrist (Rot)"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_1",
+            "value": "Statue des Betenden Engels (Grün)"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_2",
+            "value": "Statue des Betenden Engels (Blau)"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_3",
+            "value": "Statue des Betenden Engels (Violett)"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_4",
+            "value": "Statue des Betenden Engels (Gelb)"
+        },
+        {
+            "key": "IT_JB_IM_ANGEL_5",
+            "value": "Statue des Betenden Engels (Rot)"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_1",
+            "value": "Statue des Lauernden Lindwurms (Grün)"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_2",
+            "value": "Statue des Lauernden Lindwurms (Blau)"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_3",
+            "value": "Statue des Lauernden Lindwurms (Violett)"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_4",
+            "value": "Statue des Lauernden Lindwurms (Gelb)"
+        },
+        {
+            "key": "IT_JB_IM_DRAGON_5",
+            "value": "Statue des Lauernden Lindwurms (Rot)"
+        },
+        {
+            "key": "IT_JBEX_N",
+            "value": "Bronze-Expansionit"
+        },
+        {
+            "key": "IT_JBEX_R",
+            "value": "Silber-Expansionit"
+        },
+        {
+            "key": "IT_JBEX_SR",
+            "value": "Gold-Expansionit"
+        },
+        {
+            "key": "IT_JBEX_SSR",
+            "value": "Azur-Expansionit"
+        },
+        {
+            "key": "IT_JBEX_UR",
+            "value": "Regenbogen-Expansionit"
+        },
+        {
+            "key": "IT_JBEX_MM",
+            "value": "Paradiesglockenblume"
+        },
+        {
+            "key": "IT_JBEX_FIRE",
+            "value": "Feuer-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_WATER",
+            "value": "Wasser-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_THUNDER",
+            "value": "Blitz-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_WIND",
+            "value": "Wind-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_ICE",
+            "value": "Eis-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_SOIL",
+            "value": "Erd-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_DARK",
+            "value": "Dunkel-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_SHINE",
+            "value": "Licht-Alkriststatue"
+        },
+        {
+            "key": "IT_JBEX_BOW",
+            "value": "Bogen-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_SWORD",
+            "value": "Schwert-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_FIST",
+            "value": "Fäuste-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_GUN",
+            "value": "Pistolen-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_STAFF",
+            "value": "Stab-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_SPEAR",
+            "value": "Lanzen-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_LSWORD",
+            "value": "Großschwert-Symboltafel"
+        },
+        {
+            "key": "IT_JBEX_JSWORD",
+            "value": "Katana-Symboltafel"
+        },
+        {
+            "key": "IT_UN_AW_FIRE",
+            "value": "Feuer-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_ICE",
+            "value": "Eis-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_WIND",
+            "value": "Wind-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_SOIL",
+            "value": "Erd-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER",
+            "value": "Blitz-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_WATER",
+            "value": "Wasser-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_SHINE",
+            "value": "Licht-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_DARK",
+            "value": "Dunkel-Erweckungsprisma"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R2",
+            "value": "Feuer-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R3",
+            "value": "Feuer-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R4",
+            "value": "Feuer-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R5",
+            "value": "Feuer-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_FIRE_R6",
+            "value": "Feuer-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R2",
+            "value": "Eis-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R3",
+            "value": "Eis-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R4",
+            "value": "Eis-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R5",
+            "value": "Eis-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_ICE_R6",
+            "value": "Eis-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R2",
+            "value": "Wind-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R3",
+            "value": "Wind-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R4",
+            "value": "Wind-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R5",
+            "value": "Wind-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_WIND_R6",
+            "value": "Wind-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R2",
+            "value": "Erd-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R3",
+            "value": "Erd-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R4",
+            "value": "Erd-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R5",
+            "value": "Erd-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_SOIL_R6",
+            "value": "Erd-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R2",
+            "value": "Blitz-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R3",
+            "value": "Blitz-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R4",
+            "value": "Blitz-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R5",
+            "value": "Blitz-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_THUNDER_R6",
+            "value": "Blitz-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R2",
+            "value": "Wasser-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R3",
+            "value": "Wasser-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R4",
+            "value": "Wasser-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R5",
+            "value": "Wasser-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_WATER_R6",
+            "value": "Wasser-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R2",
+            "value": "Licht-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R3",
+            "value": "Licht-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R4",
+            "value": "Licht-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R5",
+            "value": "Licht-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_SHINE_R6",
+            "value": "Licht-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R2",
+            "value": "Dunkel-Erweckungsseele (2★)"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R3",
+            "value": "Dunkel-Erweckungsseele (3★)"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R4",
+            "value": "Dunkel-Erweckungsseele (4★)"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R5",
+            "value": "Dunkel-Erweckungsseele (5★)"
+        },
+        {
+            "key": "IT_UN_AW_DARK_R6",
+            "value": "Dunkel-Erweckungsseele (6★)"
+        },
+        {
+            "key": "IT_AW_VBALL_N",
+            "value": "Bronzene Visionskugel"
+        },
+        {
+            "key": "IT_AW_VBALL_R",
+            "value": "Silberne Visionskugel"
+        },
+        {
+            "key": "IT_AW_VBALL_SR",
+            "value": "Goldene Visionskugel"
+        },
+        {
+            "key": "IT_AW_VBALL_SSR",
+            "value": "Azurblaue Visionskugel"
+        },
+        {
+            "key": "IT_AW_VBALL_UR",
+            "value": "Regenbogenfarbene Visionskugel"
+        },
+        {
+            "key": "IT_PI_COM_FIRE",
+            "value": "Feuer-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_ICE",
+            "value": "Eis-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_WIND",
+            "value": "Wind-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_SOIL",
+            "value": "Erd-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_THUNDER",
+            "value": "Blitz-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_WATER",
+            "value": "Wasser-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_SHINE",
+            "value": "Licht-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_DARK",
+            "value": "Dunkel-Gedankenfragment"
+        },
+        {
+            "key": "IT_PI_COM_ALL",
+            "value": "Regenbogen-Gedankenfragment"
+        },
+        {
+            "key": "IT_AW_PIECE_UR",
+            "value": "Regenbogenfarbenes Leuchtgedankenfragment"
+        },
+        {
+            "key": "IT_AW_PIECE_SSR",
+            "value": "Azurblaues Leuchtgedankenfragment"
+        },
+        {
+            "key": "IT_AW_PIECE_SR",
+            "value": "Goldenes Leuchtgedankenfragment"
+        },
+        {
+            "key": "IT_AW_PIECE_R",
+            "value": "Silbernes Leuchtgedankenfragment"
+        },
+        {
+            "key": "IT_AW_PIECE_N",
+            "value": "Bronzenes Leuchtgedankenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MONT",
+            "value": "„Mont Leonis“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_STRN",
+            "value": "„Styr Leonis“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ELDE",
+            "value": "„Yrde Leonis“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ROBB",
+            "value": "„Robb Hourne“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ENBT",
+            "value": "„Engelbert“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ZIZA",
+            "value": "„Xiza“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_AILN",
+            "value": "„Aileen“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MDNA",
+            "value": "„Mediena“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_AYKA",
+            "value": "„Ayaka“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MACR",
+            "value": "„Margery Hourne“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_HLNA",
+            "value": "„Helena Leonis“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LILS",
+            "value": "„Lilith“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RAMD",
+            "value": "„Lhamada“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_OOOO",
+            "value": "„Ornh“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LRNZ",
+            "value": "„Lorenzo“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RIRY",
+            "value": "„Rairyu“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VSTR",
+            "value": "„Vystraal“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_CLEY",
+            "value": "„Khuri Wezette“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_KADI",
+            "value": "„Cadia“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MRLK",
+            "value": "„Meriluuk“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MGRT",
+            "value": "„Margarete“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_PRAY",
+            "value": "„Grazie“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SZRT",
+            "value": "„Schuzelt“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_FINA",
+            "value": "„Fina“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_BYLO",
+            "value": "„Baelo“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RYER",
+            "value": "„Lilli“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SCIA",
+            "value": "„Sosha“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VRID",
+            "value": "„Vallaid“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_NAIA",
+            "value": "„Naiah“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SRJS",
+            "value": "„Sarjes“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_UNII",
+            "value": "„Yuni“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SEVR",
+            "value": "„Severo“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VADM",
+            "value": "„Vadim“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MURM",
+            "value": "„Murmeln“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_PHBE",
+            "value": "„Phoebe“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RART",
+            "value": "„Learte“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MICE",
+            "value": "„Myshe“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MIIA",
+            "value": "„Mia“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ZZAN",
+            "value": "„Zazan“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_GLMS",
+            "value": "„Gilgamesch“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF14_YSTL",
+            "value": "„Y’shtola“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF14_TNCR",
+            "value": "„Thancred“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SDLX",
+            "value": "„Schattenluchs“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_FDRC",
+            "value": "„Frederika“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_YERM",
+            "value": "„Yerma“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_NASR",
+            "value": "„Nashia“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ETRE",
+            "value": "„Etre“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_GFGR",
+            "value": "„Gaffgarion“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_RAMZ",
+            "value": "„Ramza“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_ORND",
+            "value": "„Orlandeau“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_WHIS",
+            "value": "„Wispern”-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_KTON",
+            "value": "„Kiton“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MRND",
+            "value": "„Miranda“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_DRND",
+            "value": "„Dorando“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LUCA",
+            "value": "„Lu‘Cia“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ADLD",
+            "value": "„Adelard“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VKTR",
+            "value": "„Viktora“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_THLA",
+            "value": "„Salire“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RAIN",
+            "value": "„Rain“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_FRVA",
+            "value": "„Fryevia“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VNLA",
+            "value": "„Vinera Fennes“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_DRIO",
+            "value": "„Dario Hourne“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_TREL",
+            "value": "„Tyrrel“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF1_WROL",
+            "value": "„Krieger des Lichts“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_QILF",
+            "value": "„Kilphe“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SIMR",
+            "value": "„Seymore“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ORDR",
+            "value": "„Oldoa“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LVES",
+            "value": "„Ravesse“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_AGRA",
+            "value": "„Agrias“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_DELT",
+            "value": "„Delita“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FFT_MSTD",
+            "value": "„Mustadio“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_IRDL",
+            "value": "„Ildyra“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_STRN_01",
+            "value": "„Styr (Ritter des Untergangs)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LSWL",
+            "value": "„Lasswell“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_GRSR",
+            "value": "„Glaziela Wezette“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RRIR",
+            "value": "„Loreila“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RYER_01",
+            "value": "„Lilli (Halloween)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RIRY_01",
+            "value": "„Rairyu (Halloween)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_HWLT",
+            "value": "„Houlet“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SCAL",
+            "value": "„Skahal“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MRAL",
+            "value": "„Marial“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_CHEL",
+            "value": "„Chell“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF4_CECL",
+            "value": "„Cecil“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF4_ROSA",
+            "value": "„Rosa“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF4_KAIN",
+            "value": "„Kain“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RAMD_01",
+            "value": "„Lhamada (Winter)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MACR_01",
+            "value": "„Margery (Winter)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_LATH",
+            "value": "„Luartha“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_TITU",
+            "value": "„Titus“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_DEAN",
+            "value": "„Deen“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_NIVL",
+            "value": "„Niv’Lu“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RVAL",
+            "value": "„Livialle“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_SAKR",
+            "value": "„Sakura“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ALIM",
+            "value": "„Alim“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_RARD",
+            "value": "„Rhaldor“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ELSI",
+            "value": "„Elshura“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VNLA_01",
+            "value": "„Vinera (Winter)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_VKTR_01",
+            "value": "„Viktora (Winter)“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_CRIS",
+            "value": "„Creysse“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_GABL",
+            "value": "„Garval“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_ELSR",
+            "value": "„Elsirelle“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF10_TIDU",
+            "value": "„Tidus“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF10_YUNA",
+            "value": "„Yuna“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_FF10_ARON",
+            "value": "„Auron“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_NIER_N2TB",
+            "value": "„2B“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_NIER_N9TS",
+            "value": "„9S“-Einheitenfragment"
+        },
+        {
+            "key": "IT_PI_LW_MONT_01",
+            "value": "„König Mont von Leonis“-Einheitenfragment"
+        },
+        {
+            "key": "IT_SP_LW_MONT",
+            "value": "„Mont Leonis“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_STRN",
+            "value": "„Styr Leonis“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ELDE",
+            "value": "„Yrde Leonis“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ROBB",
+            "value": "„Robb Hourne“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ENBT",
+            "value": "„Engelbert“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ZIZA",
+            "value": "„Xiza“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_AILN",
+            "value": "„Aileen“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MDNA",
+            "value": "„Mediena“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_AYKA",
+            "value": "„Ayaka“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MACR",
+            "value": "„Margery Hourne“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_FDRC",
+            "value": "„Frederika“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_YERM",
+            "value": "„Yerma“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RAMD_01",
+            "value": "„Lhamada (Winter)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MACR_01",
+            "value": "„Margery (Winter)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MRND",
+            "value": "„Miranda“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VKTR",
+            "value": "„Viktora“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_HLNA",
+            "value": "„Helena Leonis“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LILS",
+            "value": "„Lilith“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RAMD",
+            "value": "„Lhamada“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_OOOO",
+            "value": "„Ornh“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LRNZ",
+            "value": "„Lorenzo“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RIRY",
+            "value": "„Rairyu“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VSTR",
+            "value": "„Vystraal“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_CLEY",
+            "value": "„Khuri Wezette“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_KADI",
+            "value": "„Cadia“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MRLK",
+            "value": "„Meriluuk“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MGRT",
+            "value": "„Margarete“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_PRAY",
+            "value": "„Grazie“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SZRT",
+            "value": "„Schuzelt“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_FINA",
+            "value": "„Fina“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SDLX",
+            "value": "„Schattenluchs“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_NASR",
+            "value": "„Nashia“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_DRND",
+            "value": "„Dorando“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_BYLO",
+            "value": "„Baelo“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RYER",
+            "value": "„Lilli“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SCIA",
+            "value": "„Sosha“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VRID",
+            "value": "„Vallaid“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_NAIA",
+            "value": "„Naiah“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SRJS",
+            "value": "„Sarjes“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_UNII",
+            "value": "„Yuni“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SEVR",
+            "value": "„Severo“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VADM",
+            "value": "„Vadim“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MURM",
+            "value": "„Murmeln“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_PHBE",
+            "value": "„Phoebe“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ETRE",
+            "value": "„Etre“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_THLA",
+            "value": "„Salire“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RART",
+            "value": "„Learte“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MICE",
+            "value": "„Myshe“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MIIA",
+            "value": "„Mia“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ZZAN",
+            "value": "„Zazan“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_GLMS",
+            "value": "„Gilgamesch“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_WHIS",
+            "value": "„Wispern”-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_KTON",
+            "value": "„Kiton“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LUCA",
+            "value": "„Lu'Cia“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ADLD",
+            "value": "„Adelard“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VNLA",
+            "value": "„Vinera Fennes“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_DRIO",
+            "value": "„Dario Hourne“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_TREL",
+            "value": "„Tyrrel“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RAIN",
+            "value": "„Rain”-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_QILF",
+            "value": "„Kilphe“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SIMR",
+            "value": "„Seymore“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ORDR",
+            "value": "„Oldoa“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LVES",
+            "value": "„Ravesse“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_IRDL",
+            "value": "„Ildyra“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_STRN_01",
+            "value": "„Styr (Ritter des Untergangs)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_GRSR",
+            "value": "„Glaziela Wezette“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RRIR",
+            "value": "„Loreila“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LSWL",
+            "value": "„Lasswell“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SCAL",
+            "value": "„Skahal“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MRAL",
+            "value": "„Marial“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LILS_01",
+            "value": "„Lilith (Strand)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_HWLT",
+            "value": "„Houlet“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_CHEL",
+            "value": "„Chell“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_LATH",
+            "value": "„Luartha“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_TITU",
+            "value": "„Titus“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_KTON_01",
+            "value": "„Kiton (Strand)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_NIVL",
+            "value": "„Niv’Lu“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RVAL",
+            "value": "„Livialle“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_SAKR",
+            "value": "„Sakura“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ALIM",
+            "value": "„Alim“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RYER_01",
+            "value": "„Lilli (Halloween)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RARD",
+            "value": "„Rhaldor“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ELSI",
+            "value": "„Elshura“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_RIRY_01",
+            "value": "„Rairyu (Halloween)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_CRIS",
+            "value": "„Creysse“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_GABL",
+            "value": "„Garval“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_ELSR",
+            "value": "„Elsirelle“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VNLA_01",
+            "value": "„Vinera (Winter)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_VKTR_01",
+            "value": "„Viktora (Winter)“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FF14_YSTL",
+            "value": "„Y’shtola“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FFT_GFGR",
+            "value": "„Gaffgarion“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_DEAN",
+            "value": "„Deen“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_GL_LW_FRVA",
+            "value": "„Fryevia“-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FF14_UR",
+            "value": "FFXIV-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FFT_UR",
+            "value": "FFT-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FFT_SSR",
+            "value": "FFT-[MR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FF1_UR",
+            "value": "FFI-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FF4_UR",
+            "value": "FFIV-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_FF10_UR",
+            "value": "FFX-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_NIER_UR",
+            "value": "NieR-[UR]-Einheit-Geistesperle"
+        },
+        {
+            "key": "IT_SP_LW_MONT_01",
+            "value": "„König Mont von Leonis“-Geistesperle"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_01",
+            "value": "Roter Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_02",
+            "value": "Roter Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_03",
+            "value": "Roter Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_FIRE_04",
+            "value": "Roter Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_01",
+            "value": "Blauer Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_02",
+            "value": "Blauer Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_03",
+            "value": "Blauer Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_ICE_04",
+            "value": "Blauer Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_01",
+            "value": "Grüner Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_02",
+            "value": "Grüner Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_03",
+            "value": "Grüner Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_WIND_04",
+            "value": "Grüner Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_01",
+            "value": "Gelber Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_02",
+            "value": "Gelber Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_03",
+            "value": "Gelber Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_THUNDER_04",
+            "value": "Gelber Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_01",
+            "value": "Oranger Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_02",
+            "value": "Oranger Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_03",
+            "value": "Oranger Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_SOIL_04",
+            "value": "Oranger Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_01",
+            "value": "Hellblauer Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_02",
+            "value": "Hellblauer Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_03",
+            "value": "Hellblauer Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_WATER_04",
+            "value": "Hellblauer Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_01",
+            "value": "Weißer Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_02",
+            "value": "Weißer Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_03",
+            "value": "Weißer Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_SHINE_04",
+            "value": "Weißer Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_01",
+            "value": "Violetter Maginit (S)"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_02",
+            "value": "Violetter Maginit (M)"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_03",
+            "value": "Violetter Maginit (L)"
+        },
+        {
+            "key": "IT_SB_EXP_DARK_04",
+            "value": "Violetter Maginit (XL)"
+        },
+        {
+            "key": "IT_SB_AW_FIRE",
+            "value": "Feuer-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_ICE",
+            "value": "Eis-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_THUNDER",
+            "value": "Blitz-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_WATER",
+            "value": "Wasser-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_WIND",
+            "value": "Wind-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_SOIL",
+            "value": "Erd-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_SHINE",
+            "value": "Licht-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_DARK",
+            "value": "Dunkel-Espererweckungsstein"
+        },
+        {
+            "key": "IT_SB_AW_SR",
+            "value": "Goldenes Erweckungsmineral"
+        },
+        {
+            "key": "IT_SB_AW_SSR",
+            "value": "Azurblaues Erweckungsmineral"
+        },
+        {
+            "key": "IT_SB_AW_UR",
+            "value": "Regenbogenfarbenes Erweckungsmineral"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R2",
+            "value": "Ifrits Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_IFRT_R3",
+            "value": "Ifrits Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R2",
+            "value": "Golems Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_GLEM_R3",
+            "value": "Golems Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R2",
+            "value": "Sirenes Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_SIRE_R3",
+            "value": "Sirenes Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R2",
+            "value": "Erweckungsstein des Eisengiganten (2★)"
+        },
+        {
+            "key": "IT_SB_AW_IGNT_R3",
+            "value": "Erweckungsstein des Eisengiganten (3★)"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R2",
+            "value": "Behemoths Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_BHMT_R3",
+            "value": "Behemoths Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R2",
+            "value": "Morbols Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_MABR_R3",
+            "value": "Morbols Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R2",
+            "value": "Shivas Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_SHIV_R3",
+            "value": "Shivas Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R2",
+            "value": "Ramuhs Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_RAMU_R3",
+            "value": "Ramuh Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R2",
+            "value": "Odins Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_ODIN_R3",
+            "value": "Odins Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R2",
+            "value": "Lamia-Königins Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_LAMA_01_R3",
+            "value": "Lamia-Königins Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R2",
+            "value": "Tetrasylphids Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_TSLP_R3",
+            "value": "Tetrasylphids Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R2",
+            "value": "Küsschens Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_OCHU_R3",
+            "value": "Küsschens Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R2",
+            "value": "Erweckungsstein des Zweiköpfigen Drachen (2★)"
+        },
+        {
+            "key": "IT_SB_AW_THDG_R3",
+            "value": "Erweckungsstein des Zweiköpfigen Drachen (3★)"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R2",
+            "value": "Diabolos‘ Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_DABL_R3",
+            "value": "Diabolos‘ Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R2",
+            "value": "Gedankenschinders Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_MDFY_R3",
+            "value": "Gedankenschinders Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R2",
+            "value": "Fenrirs Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_FNRR_R3",
+            "value": "Fenrirs Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R2",
+            "value": "Titans Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_TITN_R3",
+            "value": "Titans Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R2",
+            "value": "Blutmonds Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_BLMN_R3",
+            "value": "Blutmonds Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_AGON_R2",
+            "value": "Aigaions Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_AGON_R3",
+            "value": "Aigaions Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R2",
+            "value": "Chocobos Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_CHCB1_R3",
+            "value": "Chocobos Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R2",
+            "value": "Winter-Mogrys Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_MOGL_R3",
+            "value": "Winter-Mogrys Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_TNBR_R2",
+            "value": "Tomberrys Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_TNBR_R3",
+            "value": "Tomberrys Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_LVAT_R2",
+            "value": "Leviathans Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_LVAT_R3",
+            "value": "Leviathans Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_GCAL_R2",
+            "value": "Glacials Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_GCAL_R3",
+            "value": "Glacials Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_TYPN_R2",
+            "value": "Typhons Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_TYPN_R3",
+            "value": "Typhons Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_MRLT_R2",
+            "value": "Mariliths Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_MRLT_R3",
+            "value": "Mariliths Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_BAHM_R2",
+            "value": "Bahamuts Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_BAHM_R3",
+            "value": "Bahamuts Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_SB_AW_OMEG_R2",
+            "value": "Omegas Erweckungsstein (2★)"
+        },
+        {
+            "key": "IT_SB_AW_OMEG_R3",
+            "value": "Omegas Erweckungsstein (3★)"
+        },
+        {
+            "key": "IT_TICKET_STORY",
+            "value": "Storyüberspringticket"
+        },
+        {
+            "key": "IT_TICKET_EVENT",
+            "value": "Eventüberspringticket"
+        },
+        {
+            "key": "IT_GL_TICKET_EVENT",
+            "value": "Eventüberspringticket"
+        },
+        {
+            "key": "IT_AF_EXP_01",
+            "value": "Adamantit (S)"
+        },
+        {
+            "key": "IT_AF_EXP_02",
+            "value": "Adamantit (M)"
+        },
+        {
+            "key": "IT_AF_EXP_03",
+            "value": "Adamantit (L)"
+        },
+        {
+            "key": "IT_AF_EXP_04",
+            "value": "Adamantit (XL)"
+        },
+        {
+            "key": "IT_AF_AW_SWORD",
+            "value": "Almanach der Veredelung (Schwert)"
+        },
+        {
+            "key": "IT_AF_AW_LSWORD",
+            "value": "Almanach der Veredelung (Großschwert)"
+        },
+        {
+            "key": "IT_AF_AW_FIST",
+            "value": "Almanach der Veredelung (Fäuste)"
+        },
+        {
+            "key": "IT_AF_AW_JSWORD",
+            "value": "Almanach der Veredelung (Katana)"
+        },
+        {
+            "key": "IT_AF_AW_SPEAR",
+            "value": "Almanach der Veredelung (Lanze)"
+        },
+        {
+            "key": "IT_AF_AW_SSWORD",
+            "value": "Almanach der Veredelung (Dolch)"
+        },
+        {
+            "key": "IT_AF_AW_KUNAI",
+            "value": "Almanach der Veredelung (Shinobigatana)"
+        },
+        {
+            "key": "IT_AF_AW_BOW",
+            "value": "Almanach der Veredelung (Bogen)"
+        },
+        {
+            "key": "IT_AF_AW_GUN",
+            "value": "Almanach der Veredelung (Pistole)"
+        },
+        {
+            "key": "IT_AF_AW_STAFF",
+            "value": "Almanach der Veredelung (Stab)"
+        },
+        {
+            "key": "IT_AF_AW_MACE",
+            "value": "Almanach der Veredelung (Kolben)"
+        },
+        {
+            "key": "IT_AF_AW_AXE",
+            "value": "Almanach der Veredelung (Axt)"
+        },
+        {
+            "key": "IT_AF_AW_ARMOR",
+            "value": "Almanach der Veredelung (Rüstung)"
+        },
+        {
+            "key": "IT_AF_AW_ACCE",
+            "value": "Almanach der Veredelung (Accessoire)"
+        },
+        {
+            "key": "IT_AF_AW_GLOVE",
+            "value": "Almanach der Veredelung (Handschuhe)"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_01",
+            "value": "Feuerkristall"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_01",
+            "value": "Eiskristall"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_01",
+            "value": "Blitzkristall"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_01",
+            "value": "Wasserkristall"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_01",
+            "value": "Erdkristall"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_01",
+            "value": "Windkristall"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_01",
+            "value": "Lichtkristall"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_01",
+            "value": "Dunkelkristall"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_01",
+            "value": "Leerekristall"
+        },
+        {
+            "key": "IT_AF_MAT_FIRE_02",
+            "value": "Feuer-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_ICE_02",
+            "value": "Eis-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_THUNDER_02",
+            "value": "Blitz-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_02",
+            "value": "Wasser-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_SOIL_02",
+            "value": "Erd-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_WIND_02",
+            "value": "Wind-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_02",
+            "value": "Licht-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_DARK_02",
+            "value": "Dunkel-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_LESS_02",
+            "value": "Leere-Megakristall"
+        },
+        {
+            "key": "IT_AF_MAT_WATER_03",
+            "value": "Wasserpulserz"
+        },
+        {
+            "key": "IT_AF_MAT_SHINE_03",
+            "value": "Lichtpulserz"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_01",
+            "value": "Bekümmertes Herz"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_02",
+            "value": "Grimmiges Herz"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_03",
+            "value": "Vergnügtes Herz"
+        },
+        {
+            "key": "IT_AF_MAT_HEART_04",
+            "value": "Glückseliges Herz"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_01",
+            "value": "Schlammige Flüssigkeit"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_02",
+            "value": "Klebrige Flüssigkeit"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_03",
+            "value": "Samtige Flüssigkeit"
+        },
+        {
+            "key": "IT_AF_MAT_LIQUID_04",
+            "value": "Schleimige Flüssigkeit"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_01",
+            "value": "Trübes Harz"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_02",
+            "value": "Klares Harz"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_03",
+            "value": "Unbestimmbares Harz"
+        },
+        {
+            "key": "IT_AF_MAT_SAP_04",
+            "value": "Harz des Heiligen Baumes"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_01",
+            "value": "Grauer Seelensand"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_02",
+            "value": "Blauer Seelensand"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_03",
+            "value": "Schwarzer Seelensand"
+        },
+        {
+            "key": "IT_AF_MAT_SAND_04",
+            "value": "Weißer Seelensand"
+        },
+        {
+            "key": "IT_AF_MAT_OGRE",
+            "value": "Ogerborsten"
+        },
+        {
+            "key": "IT_AF_MAT_BOMB",
+            "value": "Bomberasche"
+        },
+        {
+            "key": "IT_AF_MAT_MABR",
+            "value": "Morbol-Tentakel"
+        },
+        {
+            "key": "IT_AF_MAT_WOLF",
+            "value": "Wolfszahn"
+        },
+        {
+            "key": "IT_AF_MAT_ZUUU",
+            "value": "Zuu-Schnabel"
+        },
+        {
+            "key": "IT_AF_MAT_BONE",
+            "value": "Knochensplitter"
+        },
+        {
+            "key": "IT_AF_MAT_ARMN",
+            "value": "Ahrimanträne"
+        },
+        {
+            "key": "IT_AF_MAT_MYTHRIL",
+            "value": "Mithrilerz"
+        },
+        {
+            "key": "IT_AF_LW_SWO_001",
+            "value": "[Anleitung] Langschwert"
+        },
+        {
+            "key": "IT_AF_LW_SWO_002",
+            "value": "[Anleitung] Mithrilschwert"
+        },
+        {
+            "key": "IT_AF_LW_SWO_003",
+            "value": "[Anleitung] Schlafschwert"
+        },
+        {
+            "key": "IT_AF_LW_SWO_004",
+            "value": "[Anleitung] Frostbrand"
+        },
+        {
+            "key": "IT_AF_LW_SWO_006",
+            "value": "[Anleitung] Korallenklinge"
+        },
+        {
+            "key": "IT_AF_LW_SWO_023",
+            "value": "[Anleitung] Lohengrin"
+        },
+        {
+            "key": "IT_AF_LW_BSW_001",
+            "value": "[Anleitung] Claymore"
+        },
+        {
+            "key": "IT_AF_LW_BSW_002",
+            "value": "[Anleitung] Mithrilsäbel"
+        },
+        {
+            "key": "IT_AF_LW_BSW_003",
+            "value": "[Anleitung] Runenschwert"
+        },
+        {
+            "key": "IT_AF_LW_BSW_004",
+            "value": "[Anleitung] Goldklinge"
+        },
+        {
+            "key": "IT_AF_LW_KAT_001",
+            "value": "[Anleitung] Kotetsu"
+        },
+        {
+            "key": "IT_AF_LW_KAT_002",
+            "value": "[Anleitung] Kiku-Ichimonji"
+        },
+        {
+            "key": "IT_AF_LW_KAT_003",
+            "value": "[Anleitung] Osafune"
+        },
+        {
+            "key": "IT_AF_LW_FIS_001",
+            "value": "[Anleitung] Metallschlagringe"
+        },
+        {
+            "key": "IT_AF_LW_FIS_002",
+            "value": "[Anleitung] Mithrilklauen"
+        },
+        {
+            "key": "IT_AF_LW_FIS_003",
+            "value": "[Anleitung] Katzenklauen"
+        },
+        {
+            "key": "IT_AF_LW_SPE_001",
+            "value": "[Anleitung] Partisane"
+        },
+        {
+            "key": "IT_AF_LW_SPE_002",
+            "value": "[Anleitung] Mithrilspeer"
+        },
+        {
+            "key": "IT_AF_LW_SPE_003",
+            "value": "[Anleitung] Böenspeer"
+        },
+        {
+            "key": "IT_AF_LW_SPE_004",
+            "value": "[Anleitung] Frostlanze"
+        },
+        {
+            "key": "IT_AF_LW_SPE_006",
+            "value": "[Anleitung] Drachenhornspeer"
+        },
+        {
+            "key": "IT_AF_LW_DAG_001",
+            "value": "[Anleitung] Dolch"
+        },
+        {
+            "key": "IT_AF_LW_DAG_002",
+            "value": "[Anleitung] Mithrildolch"
+        },
+        {
+            "key": "IT_AF_LW_DAG_004",
+            "value": "[Anleitung] Stilett"
+        },
+        {
+            "key": "IT_AF_LW_DAG_006",
+            "value": "[Anleitung] Magierkiller"
+        },
+        {
+            "key": "IT_AF_LW_NKN_001",
+            "value": "[Anleitung] Kunai"
+        },
+        {
+            "key": "IT_AF_LW_NKN_002",
+            "value": "[Anleitung] Kodachi"
+        },
+        {
+            "key": "IT_AF_LW_NKN_003",
+            "value": "[Anleitung] Sasukes Katana"
+        },
+        {
+            "key": "IT_AF_LW_BOW_001",
+            "value": "[Anleitung] Langbogen"
+        },
+        {
+            "key": "IT_AF_LW_BOW_002",
+            "value": "[Anleitung] Großer Bogen"
+        },
+        {
+            "key": "IT_AF_LW_BOW_003",
+            "value": "[Anleitung] Runenbogen"
+        },
+        {
+            "key": "IT_AF_LW_GUN_001",
+            "value": "[Anleitung] Capella"
+        },
+        {
+            "key": "IT_AF_LW_GUN_002",
+            "value": "[Anleitung] Wega"
+        },
+        {
+            "key": "IT_AF_LW_GUN_003",
+            "value": "[Anleitung] Ras Algethi"
+        },
+        {
+            "key": "IT_AF_LW_ROD_002",
+            "value": "[Anleitung] Eisenrute"
+        },
+        {
+            "key": "IT_AF_LW_ROD_004",
+            "value": "[Anleitung] Heilerstab"
+        },
+        {
+            "key": "IT_AF_LW_ROD_005",
+            "value": "[Anleitung] Platinstab"
+        },
+        {
+            "key": "IT_AF_LW_MAC_001",
+            "value": "[Anleitung] Eisenkolben"
+        },
+        {
+            "key": "IT_AF_LW_MAC_002",
+            "value": "[Anleitung] Mithrilkeule"
+        },
+        {
+            "key": "IT_AF_LW_MAC_003",
+            "value": "[Anleitung] Platinkeule"
+        },
+        {
+            "key": "IT_AF_LW_ARM_002",
+            "value": "[Anleitung] Eisenpanzer"
+        },
+        {
+            "key": "IT_AF_LW_ARM_003",
+            "value": "[Anleitung] Mithrilrüstung"
+        },
+        {
+            "key": "IT_AF_LW_ARM_004",
+            "value": "[Anleitung] Goldrüstung"
+        },
+        {
+            "key": "IT_AF_LW_HAT_002",
+            "value": "[Anleitung] Magierhut"
+        },
+        {
+            "key": "IT_AF_LW_HAT_003",
+            "value": "[Anleitung] Stirnreif"
+        },
+        {
+            "key": "IT_AF_LW_HAT_004",
+            "value": "[Anleitung] Weisenhut"
+        },
+        {
+            "key": "IT_AF_LW_CLT_001",
+            "value": "[Anleitung] Lederweste"
+        },
+        {
+            "key": "IT_AF_LW_CLT_002",
+            "value": "[Anleitung] Gelehrtenrobe"
+        },
+        {
+            "key": "IT_AF_LW_CLT_003",
+            "value": "[Anleitung] Trugweste"
+        },
+        {
+            "key": "IT_AF_LW_CLT_004",
+            "value": "[Anleitung] Schlauer Mantel"
+        },
+        {
+            "key": "IT_AF_LW_HLM_002",
+            "value": "[Anleitung] Eisenhelm"
+        },
+        {
+            "key": "IT_AF_LW_HLM_003",
+            "value": "[Anleitung] Mithrilhelm"
+        },
+        {
+            "key": "IT_AF_LW_HLM_004",
+            "value": "[Anleitung] Goldhelm"
+        },
+        {
+            "key": "IT_AF_LW_RNG_002",
+            "value": "[Anleitung] Heldenring"
+        },
+        {
+            "key": "IT_AF_LW_RNG_003",
+            "value": "[Anleitung] Feenring"
+        },
+        {
+            "key": "IT_AF_LW_RNG_004",
+            "value": "[Anleitung] Juwelenring"
+        },
+        {
+            "key": "IT_AF_SWO_FF14_TNCT",
+            "value": "[Anleitung] Löwenherz-Replik"
+        },
+        {
+            "key": "IT_AF_LW_ROD_007",
+            "value": "[Anleitung] Stab des Weisen"
+        },
+        {
+            "key": "IT_AF_LW_ARM_005",
+            "value": "[Anleitung] Platinrüstung"
+        },
+        {
+            "key": "IT_AF_FFT_SWO_001",
+            "value": "[Anleitung] Nagrarök"
+        },
+        {
+            "key": "IT_AF_LW_FTW_001",
+            "value": "[Anleitung] Hermessandalen"
+        },
+        {
+            "key": "IT_AF_LW_AXE_001",
+            "value": "[Anleitung] Ogertöter"
+        },
+        {
+            "key": "IT_AF_LW_AXE_002",
+            "value": "[Anleitung] Mithrilaxt"
+        },
+        {
+            "key": "IT_AF_LW_AXE_003",
+            "value": "[Anleitung] Goldaxt"
+        },
+        {
+            "key": "IT_AF_LW_RNG_005",
+            "value": "[Anleitung] Alexandritring"
+        },
+        {
+            "key": "IT_AF_LW_CLT_005",
+            "value": "[Anleitung] Platinrobe"
+        },
+        {
+            "key": "IT_AF_FF1_ARM_002",
+            "value": "[Anleitung] Rüstung des Lichts"
+        },
+        {
+            "key": "IT_AF_FFT_ACC_001",
+            "value": "[Anleitung] Zauberduft"
+        },
+        {
+            "key": "IT_AF_LW_HLM_005",
+            "value": "[Anleitung] Platinhelm"
+        },
+        {
+            "key": "IT_AF_LW_ACC_001",
+            "value": "[Anleitung] Schleife"
+        },
+        {
+            "key": "IT_AF_LW_KAT_008",
+            "value": "[Anleitung] Violetter Blitz"
+        },
+        {
+            "key": "IT_AF_LW_HAT_005",
+            "value": "[Anleitung] Wolfsmaske"
+        },
+        {
+            "key": "IT_AF_FF4_ARM_001",
+            "value": "[Anleitung] Schulterplatte des heiligen Ritters "
+        },
+        {
+            "key": "IT_AF_FF4_SPE_000",
+            "value": "[Anleitung] Windspeer"
+        },
+        {
+            "key": "IT_AF_FF4_BOW_000",
+            "value": "[Anleitung] Elfenbogen"
+        },
+        {
+            "key": "IT_AF_LW_ACC_002",
+            "value": "[Anleitung] Seele von Thamasa"
+        },
+        {
+            "key": "IT_AF_LW_CLT_006",
+            "value": "[Anleitung] Fides Lacerna"
+        },
+        {
+            "key": "IT_AF_LW_MAC_009",
+            "value": "[Anleitung] Streitkolben der Erholung"
+        },
+        {
+            "key": "IT_AF_LW_BOW_004",
+            "value": "[Anleitung] Killerbogen"
+        },
+        {
+            "key": "IT_AF_LW_FIS_004",
+            "value": "[Anleitung] Kaiserknöchel"
+        },
+        {
+            "key": "IT_AF_FF14_ARW_001",
+            "value": "[Anleitung] Unheils-Panzerhandschuhe"
+        },
+        {
+            "key": "IT_AF_FF14_HLM_001",
+            "value": "[Anleitung] Unheils-Helm"
+        },
+        {
+            "key": "IT_AF_LW_ROD_019",
+            "value": "[Anleitung] Pruni Lamina"
+        },
+        {
+            "key": "IT_AF_LW_CLK_001",
+            "value": "[Anleitung] Elfenumhang"
+        },
+        {
+            "key": "IT_AF_LW_BOW_012",
+            "value": "[Anleitung] Platinbogen"
+        },
+        {
+            "key": "IT_AF_LW_ARW_001",
+            "value": "[Anleitung] Schutzarmband"
+        },
+        {
+            "key": "IT_AF_LW_GLO_001",
+            "value": "[Anleitung] Machthandschuhe"
+        },
+        {
+            "key": "IT_AF_LW_GLO_002",
+            "value": "[Anleitung] Kampfhandschuhe"
+        },
+        {
+            "key": "IT_AF_LW_GLO_003",
+            "value": "[Anleitung] Dunkelhandschuhe"
+        },
+        {
+            "key": "IT_AF_LW_ACC_040",
+            "value": "[Anleitung] Emblem des Verschlingens"
+        },
+        {
+            "key": "IT_AF_FF10_ROD_000",
+            "value": "[Anleitung] Magisterstab"
+        },
+        {
+            "key": "IT_AF_FF10_BSW_000",
+            "value": "[Anleitung] Fata Morgana"
+        },
+        {
+            "key": "IT_AF_FF10_ACCE_001",
+            "value": "[Anleitung] Tidus' Halskette"
+        },
+        {
+            "key": "IT_AF_LW_CLT_015",
+            "value": "[Anleitung] Galmia-Mantel"
+        },
+        {
+            "key": "IT_AF_NIER_KAT_000",
+            "value": "[Anleitung] Tugendvertrag"
+        },
+        {
+            "key": "IT_AF_NIER_SPE_000",
+            "value": "[Anleitung] Grausame Arroganz"
+        },
+        {
+            "key": "IT_AF_SUP_HP",
+            "value": "Siegel des Lebens"
+        },
+        {
+            "key": "IT_AF_SUP_ATK",
+            "value": "Siegel des Angriffs"
+        },
+        {
+            "key": "IT_AF_SUP_MAG",
+            "value": "Siegel der Magie"
+        },
+        {
+            "key": "IT_AF_SUP_MND",
+            "value": "Siegel der Geisteskraft"
+        },
+        {
+            "key": "IT_AF_SUP_DEF",
+            "value": "Siegel der Abwehr"
+        },
+        {
+            "key": "IT_AF_SUP_AVO",
+            "value": "Siegel des Ausweichens"
+        },
+        {
+            "key": "IT_AF_SUP_HIT",
+            "value": "Siegel der Gewandtheit"
+        },
+        {
+            "key": "IT_AF_SUP_CRI",
+            "value": "Siegel des Schadens"
+        },
+        {
+            "key": "IT_AF_PT_ATK",
+            "value": "Zwergenhammer des Angriffs"
+        },
+        {
+            "key": "IT_AF_PT_MAG",
+            "value": "Zwergenhammer der Magie"
+        },
+        {
+            "key": "IT_AF_PT_DEF",
+            "value": "Zwergenhammer der Abwehr"
+        },
+        {
+            "key": "IT_AF_PT_MND",
+            "value": "Zwergenhammer der Geisteskraft"
+        },
+        {
+            "key": "IT_AF_PT_HIT",
+            "value": "Zwergenhammer der Präzision"
+        },
+        {
+            "key": "IT_AF_PT_CRI",
+            "value": "Zwergenhammer der Beendigung"
+        },
+        {
+            "key": "IT_AF_PT_AVO",
+            "value": "Zwergenhammer der Vermeidung"
+        },
+        {
+            "key": "IT_AF_PT_HP",
+            "value": "Zwergenhammer der Lebenskraft"
+        },
+        {
+            "key": "IT_AF_PT_SPD",
+            "value": "Zwergenhammer der Agilität"
+        },
+        {
+            "key": "IT_WA_EXP_01",
+            "value": "Kleiner Rüstungs-Pott"
+        },
+        {
+            "key": "IT_WA_EXP_02",
+            "value": "Rüstungs-Pott"
+        },
+        {
+            "key": "IT_WA_EXP_03",
+            "value": "Königlicher Rüstungs-Pott"
+        },
+        {
+            "key": "IT_AF_RESET",
+            "value": "Umschmiedehammer"
+        },
+        {
+            "key": "IT_EC_STARQUARTZ",
+            "value": "Sternenquarz"
+        },
+        {
+            "key": "IT_EC_ARENA",
+            "value": "Arenamedaille"
+        },
+        {
+            "key": "IT_EC_MULTI",
+            "value": "Multimedaille"
+        },
+        {
+            "key": "IT_EC_RAID",
+            "value": "Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_MATCH",
+            "value": "SgS-Medaille"
+        },
+        {
+            "key": "IT_EC_GUILD",
+            "value": "Gildenmedaille"
+        },
+        {
+            "key": "IT_EC_SOUL",
+            "value": "Seelenmedaille"
+        },
+        {
+            "key": "IT_EC_SOUL_N",
+            "value": "Seelenmedaille (N)"
+        },
+        {
+            "key": "IT_EC_SOUL_R",
+            "value": "Seelenmedaille (R)"
+        },
+        {
+            "key": "IT_EC_SOUL_SR",
+            "value": "Seelenmedaille (SR)"
+        },
+        {
+            "key": "IT_EC_SOUL_SSR",
+            "value": "Seelenmedaille (MR)"
+        },
+        {
+            "key": "IT_EC_SOUL_UR",
+            "value": "Seelenmedaille (UR)"
+        },
+        {
+            "key": "IT_EC_MOOGLE",
+            "value": "Mogmedaille"
+        },
+        {
+            "key": "IT_EC_TOWER",
+            "value": "Turmmedaille"
+        },
+        {
+            "key": "IT_EC_SUMMON",
+            "value": "Beschwörungsmedaille"
+        },
+        {
+            "key": "IT_EC_VISION",
+            "value": "Visionsmedaille"
+        },
+        {
+            "key": "IT_EC_VISION_N",
+            "value": "Visionsmedaille (N)"
+        },
+        {
+            "key": "IT_EC_VISION_R",
+            "value": "Visionsmedaille (R)"
+        },
+        {
+            "key": "IT_EC_VISION_SR",
+            "value": "Visionsmedaille (SR)"
+        },
+        {
+            "key": "IT_EC_VISION_SSR",
+            "value": "Visionsmedaille (MR)"
+        },
+        {
+            "key": "IT_EC_VISION_UR",
+            "value": "Visionsmedaille (UR)"
+        },
+        {
+            "key": "IT_EC_UNIT_UR",
+            "value": "[UR]-Einheitenteil"
+        },
+        {
+            "key": "IT_EC_FRIEND",
+            "value": "Freundschaftsmedaille"
+        },
+        {
+            "key": "IT_EC_MEDAL_BF",
+            "value": "„Black Friday“-Medaille"
+        },
+        {
+            "key": "IT_EC_MEDAL_WH",
+            "value": "Winterferienmedaille"
+        },
+        {
+            "key": "IT_EC_MEDAL_W2021",
+            "value": "Wintermedaille 2021"
+        },
+        {
+            "key": "IT_EC_MEDAL_GF_A",
+            "value": "Globalfest-Medaille A"
+        },
+        {
+            "key": "IT_EC_MEDAL_GF_B",
+            "value": "Globalfest-Medaille B"
+        },
+        {
+            "key": "IT_EC_MEDAL_CNY21",
+            "value": "„Jahr des Ochsen“-Medaille"
+        },
+        {
+            "key": "IT_EC_MEDAL_WE2021",
+            "value": "Winterende-Medaille 2021"
+        },
+        {
+            "key": "IT_EC_MEDAL_SP2021",
+            "value": "Frühlingsmedaille 2021"
+        },
+        {
+            "key": "IT_EC_FF10_2_A",
+            "value": "FFX-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_FF10_2_B",
+            "value": "FFX-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_FF14_1",
+            "value": "Allagischer Stein der Goëtie"
+        },
+        {
+            "key": "IT_EC_FF14_2",
+            "value": "FFXIV-Beschwörungsmedaille"
+        },
+        {
+            "key": "IT_EC_FF14_1_R",
+            "value": "Allagischer Stein der Goëtie (Nachdruck)"
+        },
+        {
+            "key": "IT_EC_FF14_2_R",
+            "value": "FFXIV-Beschwörungsmedaille (Nachdruck)"
+        },
+        {
+            "key": "IT_EC_NIER_1",
+            "value": "NieR-Eventmedaille"
+        },
+        {
+            "key": "IT_EC_NIER_2",
+            "value": "NieR-Beschwörungsmedaille"
+        },
+        {
+            "key": "IT_US_G_FF14_01",
+            "value": "FFXIV-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_FF14_01_R",
+            "value": "FFXIV-Beschwörungsticket (Nachdruck)"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_A",
+            "value": "März-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_A",
+            "value": "April-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_B",
+            "value": "April-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_A",
+            "value": "Mai-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_B",
+            "value": "Mai-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_A",
+            "value": "Juni-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_06_B",
+            "value": "Juni-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_A",
+            "value": "Juli-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_07_B",
+            "value": "Juli-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_08_A",
+            "value": "August-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_08_B",
+            "value": "August-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_09_A",
+            "value": "September-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_09_B",
+            "value": "September-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_10_A",
+            "value": "Oktober-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_10_B",
+            "value": "Oktober-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_11_A",
+            "value": "November-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_11_B",
+            "value": "November-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_A",
+            "value": "Dezember-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_12_B",
+            "value": "Dezember-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_01_02_A",
+            "value": "Januar-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_01_02_B",
+            "value": "Januar-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_02_A",
+            "value": "Februar-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_02_02_B",
+            "value": "Februar-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_SUMMON_03_02_A",
+            "value": "März-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_04_02_A",
+            "value": "April-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_SUMMON_1st_GL1",
+            "value": "„1. Jubiläum“-Medaille"
+        },
+        {
+            "key": "IT_US_SE_PI_21",
+            "value": "„Auswählbares FFX-Einheitenfragment x120“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_10_UR_01",
+            "value": "[Nur für Einsteiger] „[UR] garantiert (10-malig)“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_31",
+            "value": "[Nur für Einsteiger] „Auswählbares [UR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_32",
+            "value": "[Nur für Einsteiger] „Auswählbares [UR]-Einheitenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_33",
+            "value": "„Auswählbares [N - MR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_34",
+            "value": "[Feier zum 1. Jubiläum Teil IV] „Auswählbares [UR]-Einheitenfragment x120“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_35",
+            "value": "„Auswählbares NieR-Einheitenfragment/-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_36",
+            "value": "„Auswählbares NieR-Einheitenfragment x120“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_13",
+            "value": "[Nur für Einsteiger] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_14",
+            "value": "[Nur für Einsteiger] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_12",
+            "value": "[Nur für Einsteiger] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_09",
+            "value": "[Nur für Einsteiger] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_09",
+            "value": "[Nur für Einsteiger] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_07",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_05",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_05",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_03",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_03",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_08",
+            "value": "[Feier zum 1. Jubiläum Teil III] „Auswählbarer Spinell x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_09",
+            "value": "[Feier zum 1. Jubiläum Teil IV] „Auswählbarer Spinell x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_10",
+            "value": "[Frühling 2021 Teil I] „Auswählbarer Spinell x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_06",
+            "value": "[Frühling 2021 Teil I] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_06",
+            "value": "[Frühling 2021 Teil I] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_04",
+            "value": "[Frühling 2021 Teil I] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_04",
+            "value": "[Frühling 2021 Teil I] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_GL_11",
+            "value": "[Frühling 2021 Teil II] „Auswählbarer Spinell x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_07",
+            "value": "[Frühling 2021 Teil II] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_07",
+            "value": "[Frühling 2021 Teil II] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_05",
+            "value": "[Frühling 2021 Teil II] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_05",
+            "value": "[Frühling 2021 Teil II] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_GL_04",
+            "value": "„Auswählbares Elementgedankenfragment x150“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_UR_U_BG_01",
+            "value": "„Auswählbare [UR]-Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_UR_U_01",
+            "value": "„Auswählbares Einheitenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_EC_FFT_1",
+            "value": "FFT-Eventmedaille"
+        },
+        {
+            "key": "IT_EC_FFT_2_A",
+            "value": "FFT-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_FFT_2_B",
+            "value": "FFT-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_FFT_3",
+            "value": "FFT-Eventmedaille (Runde 2)"
+        },
+        {
+            "key": "IT_EC_FFT_2_2A",
+            "value": "FFT-Beschwörungsmedaille A (Runde 2)"
+        },
+        {
+            "key": "IT_EC_FFT_2_2B",
+            "value": "FFT-Beschwörungsmedaille B (Runde 2)"
+        },
+        {
+            "key": "IT_EC_FFT_2_A_R",
+            "value": "FFT-Beschwörungsmedaille A (Nachdruck)"
+        },
+        {
+            "key": "IT_EC_FFT_2_B_R",
+            "value": "FFT-Beschwörungsmedaille B (Nachdruck)"
+        },
+        {
+            "key": "IT_EC_TOWER_001",
+            "value": "Turmmedaille"
+        },
+        {
+            "key": "IT_EC_TOWER_002",
+            "value": "Turmmedaille"
+        },
+        {
+            "key": "IT_EC_EV02_1",
+            "value": "„Rundall, Bedrohung im Westen“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV03_1",
+            "value": "„Brennender Lebenswille“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV04_1",
+            "value": "August-Eventmedaille"
+        },
+        {
+            "key": "IT_EC_EV05_1",
+            "value": "„Gouga und Saiga: Teil I“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV06_1",
+            "value": "„Die Prinzessin in Nöten“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV07_1",
+            "value": "„Gouga und Saiga: Teil II“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV08_1",
+            "value": "„Die Glimmenden“-Medaille"
+        },
+        {
+            "key": "IT_EC_EV09_1",
+            "value": "„Der Aufrührer“-Medaille"
+        },
+        {
+            "key": "IT_EC_WW_EV01_1",
+            "value": "„EXVIUS UNIVERSE“-Medaille"
+        },
+        {
+            "key": "IT_EC_FF1_1",
+            "value": "FFI-Eventmedaille"
+        },
+        {
+            "key": "IT_EC_FF1_2",
+            "value": "FFI-Beschwörungsmedaille"
+        },
+        {
+            "key": "IT_EC_FF4_1",
+            "value": "FFIV-Eventmedaille"
+        },
+        {
+            "key": "IT_EC_FF4_2_A",
+            "value": "FFIV-Beschwörungsmedaille A"
+        },
+        {
+            "key": "IT_EC_FF4_2_B",
+            "value": "FFIV-Beschwörungsmedaille B"
+        },
+        {
+            "key": "IT_EC_FF4_3",
+            "value": "[FFIV] „Prüfungen des Urteils“-Medaille"
+        },
+        {
+            "key": "IT_EC_FF10_1",
+            "value": "FFX-Eventmedaille"
+        },
+        {
+            "key": "IT_US_G_FFT_01",
+            "value": "FFT-Beschwörungsticket"
+        },
+        {
+            "key": "IT_AD_TICKET_2",
+            "value": "Expeditionsticket (2 Std.)"
+        },
+        {
+            "key": "IT_AD_TICKET_5",
+            "value": "Expeditionsticket (5 Std.)"
+        },
+        {
+            "key": "IT_AD_TICKET_10",
+            "value": "Expeditionsticket (10 Std.)"
+        },
+        {
+            "key": "IT_US_GACHA_01",
+            "value": "Rares Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GACHA_10",
+            "value": "Rares Beschwörungsticket (10-malig)"
+        },
+        {
+            "key": "IT_US_10_U_SSR_UR_01",
+            "value": "„[MR+] garantiert (10-malig)“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_V_SR_UR_01",
+            "value": "„[SR+]-Visionskarte garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_V_SSR_UR_01",
+            "value": "„[MR+]-Visionskarte garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_GL_G_V_SSR_UR_01",
+            "value": "„[MR+]-Visionskarte garantiert“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_01",
+            "value": "„[MR+]-Einheit garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_01",
+            "value": "[Tag 1] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_02",
+            "value": "[Tag 2] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_03",
+            "value": "[Tag 3] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_04",
+            "value": "[Tag 4] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_05",
+            "value": "[Tag 5] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_06",
+            "value": "[Tag 6] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PR_1stANV_07",
+            "value": "[Tag 7] „Countdown zum 1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_01",
+            "value": "„1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_02",
+            "value": "[2-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_03",
+            "value": "[3-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_04",
+            "value": "[5-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_05",
+            "value": "[7-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_06",
+            "value": "[8-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_07",
+            "value": "[10-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_01",
+            "value": "„1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_02",
+            "value": "[2-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_03",
+            "value": "[3-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_04",
+            "value": "[5-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_05",
+            "value": "[7-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_06",
+            "value": "[8-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0331_07",
+            "value": "[10-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_01",
+            "value": "„1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_02",
+            "value": "[2-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_03",
+            "value": "[3-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_04",
+            "value": "[5-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_05",
+            "value": "[7-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_06",
+            "value": "[8-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0407_07",
+            "value": "[10-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_01",
+            "value": "„1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_02",
+            "value": "[2-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_03",
+            "value": "[3-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_04",
+            "value": "[5-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_05",
+            "value": "[7-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_06",
+            "value": "[8-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_1stANV_0414_07",
+            "value": "[10-malig] „1. Jubiläum“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_PI_UR_U_02",
+            "value": "[Frühling 2021 Teil I] „Empfohlenes [UR]-Einheitenfragment x200“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_1",
+            "value": "„Auswählbares Elementgedankenfragment x10“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_2",
+            "value": "„Auswählbares Elementgedankenfragment x200“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_3",
+            "value": "„Auswählbares Elementgedankenfragment x340“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_4",
+            "value": "„Auswählbares Elementgedankenfragment x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_5",
+            "value": "„Auswählbares Elementgedankenfragment x120“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_PI_COM_6",
+            "value": "„Auswählbares Elementgedankenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_02",
+            "value": "„Auswählbares Elementgedankenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_02",
+            "value": "„Auswählbares Erweckungsprisma x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_03",
+            "value": "„Auswählbares Erweckungsprisma x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_01",
+            "value": "„Auswählbares Erweckungsprisma x200“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_02",
+            "value": "„Auswählbares Erweckungsprisma x370“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_03",
+            "value": "„Auswählbare Erweckungsseele (6★) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_04",
+            "value": "„Auswählbare Erweckungsseele (5★) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_05",
+            "value": "„Auswählbare Erweckungsseele (4★) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_06",
+            "value": "„Auswählbare Erweckungsseele (3★) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AW-ITEM_07",
+            "value": "„Auswählbare Erweckungsseele (2★) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_01",
+            "value": "„Auswählbares Elementgedankenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_01_01",
+            "value": "„Auswählbarer Elementalkrist (Grün) x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_01",
+            "value": "„Auswählbarer Elementalkrist (Blau) x10“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_02_02",
+            "value": "„Auswählbarer Elementalkrist (Blau) x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_03_01",
+            "value": "„Auswählbarer Elementalkrist (Violett) x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_04_01",
+            "value": "„Auswählbarer Elementalkrist (Gelb) x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_01",
+            "value": "„Auswählbarer Elementalkrist (Rot) x70“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_4_GL1",
+            "value": "„Auswählbarer Elementalkrist (Gelb) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_5_GL1",
+            "value": "„Auswählbarer Elementalkrist (Rot) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_AW_01",
+            "value": "„Auswählbarer Elementerweckungsstein x20“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_01",
+            "value": "„Auswählbarer Elementmaginit (L) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_02",
+            "value": "„Auswählbarer Elementmaginit (XL) x10“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_03",
+            "value": "„Auswählbarer Elementmaginit (M) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_04",
+            "value": "„Auswählbarer Elementmaginit (M) x1.000“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_05",
+            "value": "„Auswählbarer Elementmaginit (XL) x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_06",
+            "value": "„Auswählbarer Elementmaginit (M) x500“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_07",
+            "value": "„Auswählbarer Elementmaginit (L) x150“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_08",
+            "value": "„Auswählbarer Elementmaginit (XL) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SP_GL_LW_01",
+            "value": "„Auswählbare Geistesperle x80“-Reservierungsticket"
+        },
+        {
+            "key": "IT_US_SE_SP_GL_LW_02",
+            "value": "„„Mont Leonis“-Geistesperle x40“- Reservierungsticket"
+        },
+        {
+            "key": "IT_US_G_U_UR_01",
+            "value": "„[UR]-Einheit garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_U_UR_02",
+            "value": "„[UR]-Einheit garantiert“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_UR_03",
+            "value": "„[UR]-Einheit garantiert“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_UR_01",
+            "value": "„[UR] garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_UR_02",
+            "value": "„[UR] garantiert“-Beschwörungsticket B"
+        },
+        {
+            "key": "IT_US_G_U_R_UR_01",
+            "value": "„Einheit garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_BEGINNER_01",
+            "value": "„Nur die ersten 7 Tage nach Spielstart: Kostenlose 10-malige Beschwörung: [UR]-Einheit garantiert“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_CNY21_01",
+            "value": "Glücksticket"
+        },
+        {
+            "key": "IT_US_G_V_R_UR_01",
+            "value": "„Visionskarte garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_G_V_UR_01",
+            "value": "„[UR]-Visionskarte garantiert“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01",
+            "value": "„Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02",
+            "value": "„Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03",
+            "value": "„Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04",
+            "value": "„Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05",
+            "value": "„Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_2",
+            "value": "[Halbjähriges Jubiläum] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_2",
+            "value": "[Halbjähriges Jubiläum] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_5",
+            "value": "[Neujahrsgrüße] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_5",
+            "value": "[Neujahrsgrüße] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_4",
+            "value": "[Neujahrsgrüße] „Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_4",
+            "value": "[Neujahrsgrüße] „Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_4",
+            "value": "[Neujahrsgrüße] „Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_5",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_5",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_7",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_8",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_8",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_GL_01",
+            "value": "[Feier zum 1. Jubiläum II] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_GL_01",
+            "value": "[Feier zum 1. Jubiläum II] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_GL_01",
+            "value": "[Feier zum 1. Jubiläum II] „Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_GL_01",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_GL_01",
+            "value": "[Feier zum 1. Jubiläum Teil II] „Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_GL_02",
+            "value": "[Frühling 2021 Teil I] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_GL_02",
+            "value": "[Frühling 2021 Teil I] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_GL_02",
+            "value": "[Frühling 2021 Teil I] „Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_GL_02",
+            "value": "[Frühling 2021 Teil I] „Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_GL_02",
+            "value": "[Frühling 2021 Teil I] „Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_05_GL_03",
+            "value": "[Frühling 2021 Teil II] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_04_GL_03",
+            "value": "[Frühling 2021 Teil II] „Auswählbare Joberinnerungen (Gelb) x4“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_03_GL_03",
+            "value": "[Frühling 2021 Teil II] „Auswählbare Joberinnerungen (Violett) x3“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_02_GL_03",
+            "value": "[Frühling 2021 Teil II] „Auswählbare Joberinnerungen (Blau) x2“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_01_GL_03",
+            "value": "[Frühling 2021 Teil II] „Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_5_GL2",
+            "value": "[Feier zum 1. Jubiläum III] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_MM_5_GL3",
+            "value": "[Feier zum 1. Jubiläum IV] „Auswählbare Joberinnerungen (Rot) x5“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_01",
+            "value": "[Halloween-Kampagne] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_01",
+            "value": "[Halloween-Kampagne] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_01",
+            "value": "[Halloween-Kampagne] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_01",
+            "value": "[Halloween-Kampagne] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_01",
+            "value": "[Halloween-Kampagne] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_04",
+            "value": "[Neujahrsgrüße] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_05",
+            "value": "[Neujahrsgrüße] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_05",
+            "value": "[Neujahrsgrüße] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_05",
+            "value": "[Neujahrsgrüße] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_05",
+            "value": "[Neujahrsgrüße] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_07",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_04_08",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_03_08",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_02_06",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_01_06",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_01",
+            "value": "[Winterkampagne 2021 Teil I] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_04_01",
+            "value": "[Winterkampagne 2021 Teil I] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_03_01",
+            "value": "[Winterkampagne 2021 Teil I] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_02_01",
+            "value": "[Winterkampagne 2021 Teil I] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_02_02",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbarer Azurit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_01_01",
+            "value": "[Winterkampagne 2021 Teil I] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_01_02",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbarer Jadeit x15“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_02",
+            "value": "[Winterkampagne 2021 Teil II] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_04_02",
+            "value": "[Winterkampagne 2021 Teil II] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_03",
+            "value": "[Winterende 2021] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_04_03",
+            "value": "[Winterende 2021] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_04_04",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbarer Citrin x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_03_03",
+            "value": "[Winterende 2021] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_03_04",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbarer Charoit x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_04",
+            "value": "[Countdown zum 1. Jubiläum Teil I] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_05",
+            "value": "„Auswählbarer Spinell x60“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_GL_05_06",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbarer Spinell x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_UR_U_01",
+            "value": "„Auswählbare [UR]-Einheit“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_03",
+            "value": "[Halbjähriges Jubiläum] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_04",
+            "value": "[Black Friday] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_05",
+            "value": "[Cyber Monday] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_06",
+            "value": "[Winterferien Teil III] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_07",
+            "value": "[Neujahrsgrüße Teil III] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_U_08",
+            "value": "[Mond-Neujahr 2021] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_R_UR_U_1",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_01",
+            "value": "„Auswählbares Erweckungsprisma x10“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_02",
+            "value": "„[MR+]-Einheit garantiert“-Beschwörungsticket B"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_03",
+            "value": "„[MR+]-Einheit garantiert“-Beschwörungsticket C"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_04",
+            "value": "„[MR+]-Einheit garantiert“-Beschwörungsticket D"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_05",
+            "value": "[Countdown z. Halbj. Jub. Teil III] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_06",
+            "value": "[Countdown z. Halbj. Jub. Teil IV] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_07",
+            "value": "[Herbstkampagne 2020 Teil I] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_08",
+            "value": "[Herbstkampagne 2020 Teil II] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_09",
+            "value": "[Kapitel 10 veröffentlicht!] „[MR+] garantiert“-Visionskartenbeschwörung"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_10",
+            "value": "[Black Friday] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_11",
+            "value": "[Winterferien Teil I] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_12",
+            "value": "[Winterkampagne 2021 Teil I] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_13",
+            "value": "[Winterkampagne 2021 Teil II] „[MR+] garantiert“-Visionskartenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_14",
+            "value": "[Winterkampagne 2021 Teil III] „[MR+] garantiert“-Einheitenbeschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_15",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „[MR+] garantiert“-Einheitenbeschwörung"
+        },
+        {
+            "key": "IT_US_SE_UR_V_01",
+            "value": "„Auswählbare [UR]-Visionskarte“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL01",
+            "value": "[Halbjähriges Jubiläum] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL02",
+            "value": "[Black Friday] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL03",
+            "value": "[Cyber Monday] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL04",
+            "value": "[Winterferien Teil III] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL05",
+            "value": "[Neujahrsgrüße Teil III] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL06",
+            "value": "[Mond-Neujahr 2021] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_R_UR_V_GL07",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbare Visionskarte“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_04",
+            "value": "„Auswählbares Erweckungsprisma x30“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_05",
+            "value": "„Auswählbares Erweckungsprisma x200“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_GL_05",
+            "value": "„Auswählbares Erweckungsprisma x200“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_06",
+            "value": "„Auswählbares Erweckungsprisma x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_GL_06",
+            "value": "„Auswählbares Erweckungsprisma x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_05",
+            "value": "„Auswählbares Elementgedankenfragment x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_GL_05",
+            "value": "„Auswählbares Elementgedankenfragment x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_GL_06",
+            "value": "„Auswählbares Elementgedankenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_07",
+            "value": "„Auswählbares Erweckungsprisma x120“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_08",
+            "value": "„Auswählbares Erweckungsprisma x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_09",
+            "value": "„Auswählbares Erweckungsprisma x150“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_10",
+            "value": "„Auswählbares Erweckungsprisma x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AW-ITEM_11",
+            "value": "„Auswählbares Erweckungsprisma x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_VPI_LW_GLEM",
+            "value": "„Golem, der Felstitan“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_IFRT",
+            "value": "„Ifrit, Aufbegehren der Flammen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_SIRE",
+            "value": "„Sirene, die Stimme des Wassers“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_SOKYU",
+            "value": "„Caelum, die 2. Division des Königreichs Leonis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TRAINING",
+            "value": "„Möge er der Stärkste werden“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MACR",
+            "value": "„Mitgift“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MURG",
+            "value": "„Echo des Grauens“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR",
+            "value": "„Sprint durch verschneite Felder“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF14_MV1",
+            "value": "„Der Bund der Schatten“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HOLYNIGHT",
+            "value": "Visionskartenfragment „Frederikas Traum“"
+        },
+        {
+            "key": "IT_VPI_FFT_MV1",
+            "value": "„Beoulves Nachkomme“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ODIN",
+            "value": "„Odin, der Mythische Marodeur“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV1",
+            "value": "„Die Erhalter der Kristalle“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_IGNT",
+            "value": "„Eisengigant, der Metalldämon“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_BHMT",
+            "value": "„Behemoth, Bösartige Legendäre Bestie“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MABR",
+            "value": "„Morbol, Fluch der Verderbnis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_SHIV",
+            "value": "„Shiva, die Ewig Frostklirrende“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_RAMU",
+            "value": "„Ramuh, der Dröhnende Donner“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV1",
+            "value": "„Mobius der Verzweiflung und der Wahrheit“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_FAMILY",
+            "value": "„Geburt neuen Lebens“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_KTON",
+            "value": "„Geheime Befehle“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_PROPOSE",
+            "value": "„Liebesgelübde“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_SDLX",
+            "value": "„Klarer Kopf“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TEAPARTY",
+            "value": "„Atempause“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HUNT",
+            "value": "„Geschärfte Konzentration“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF14_MV2",
+            "value": "„Shadowbringers“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_NEWYEAR",
+            "value": "„Grüße aus der Ferne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LAMA_01",
+            "value": "„Lamia-Königin, die Verführerische Schlange“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GUARD",
+            "value": "„Blütenweiße Leibwache“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_MBFF_MV2",
+            "value": "„Mobius der Hoffnung und der Illusion“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_CACT",
+            "value": "„Kaktor, der Tausendstachlige“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ARMN_01",
+            "value": "„Schwebauge, Magischer Augenlaser“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ZUUU",
+            "value": "„Zuu, der Riesenhafte Raubvogel“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_OGRE",
+            "value": "„Oger, der Herkulische Dämon“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_BOMB",
+            "value": "„Bomber, Geballte Sprengkraft“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_JOBCRYSTAL",
+            "value": "„Jobkristall“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_BYLO",
+            "value": "„Lang lebe der König der Nimmersatten“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_RART",
+            "value": "„Ersehnter Urlaubstag“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_RYER",
+            "value": "„Meisterdetektivin Lilli“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA",
+            "value": "„Verführungskünstlerin“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_RIRY",
+            "value": "„Solange es Spaß macht“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS",
+            "value": "„Flagge von Leonis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN",
+            "value": "„Flagge von Hourne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE",
+            "value": "„Flagge von Fennes“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT",
+            "value": "„Flagge von Wezette“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_CRYSTAL",
+            "value": "„Flagge der Kristallenen Stätte“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LEONIS2",
+            "value": "„Schloss Leonis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HOURN2",
+            "value": "„Schloss Hourne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_FENICE2",
+            "value": "„Schloss Fennes“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_WEZETT2",
+            "value": "„Schloss Wezette“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_DYNVERK",
+            "value": "„Kathedrale Dynverk“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_01",
+            "value": "„Fernsprechapparatur – Himmel“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TRSV_02",
+            "value": "„Fernsprechapparatur – Erde“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MIRROR",
+            "value": "„Fernblickspiegel“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TSLP",
+            "value": "„Tetrasylphid, die Himmlischen Vier der Winde“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LILS",
+            "value": "„Pfad der Rache“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_OCHU",
+            "value": "„Küsschen, Vitale Vegetation“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_VALE1",
+            "value": "„Geheimnisse des Herzens“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_VALE2",
+            "value": "„Kampf um den Angebeteten“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ADLD",
+            "value": "„Neidgetriebene Magierin“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_WHITEDAY1",
+            "value": "„Charme hat seinen Preis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_VNLA2",
+            "value": "„Falsche Gelübde, ungetäuschte Herzen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_THDG",
+            "value": "„Zweiköpfiger Drache, Schlangengleiches Zwillingsgrauen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF01_DMAC",
+            "value": "„Todesmaschine“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_DABL",
+            "value": "„Diabolos, Trügerischer Nachtmahr“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_CBVPARTY1",
+            "value": "„Flüchtiges Festmahl unter Blüten“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FFT_MV2",
+            "value": "„Roter Chocobo“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FFT_MV3",
+            "value": "„Halmflöte“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FFCC_MV2",
+            "value": "„Auf der Suche nach den Tropfen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ROBUST",
+            "value": "„Solidus, die 1. Division des Königreichs Hourne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MDFY",
+            "value": "„Gedankenschinder, Verzerrung des Verstandes“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ORDR",
+            "value": "„Unerwiderte Zuneigung“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_FNRR",
+            "value": "„Fenrir, Reißzähne im Mondenschein“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TITN",
+            "value": "„Titan, Furor der Erde“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_KING",
+            "value": "„Vier Herrscher in Kriegswirren“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_VKTR",
+            "value": "„Maske der Täuschung“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_BLMN",
+            "value": "„Blutmond, Himmelskörper der Anderswelt“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HALL",
+            "value": "„Austreiber böser Geister“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_AGON",
+            "value": "„Aigaion, Vernichtung im Stahlmantel“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GUREN",
+            "value": "„Rubeus, die Galanten Gesetzlosen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_CHCB",
+            "value": "„Chocobo, der Teure Gefährte“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF4_DMNW",
+            "value": "„Dämonenwall“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MOGL",
+            "value": "„Winter-Mogry, der Festliche Freudenbote“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_XMAS",
+            "value": "„Winterparty“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_NIER_MV1",
+            "value": "„NieR:Automata“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LUCA",
+            "value": "„Ein neues Forschungsobjekt“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_FIGHT",
+            "value": "„Zusammenprall“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_DEAN",
+            "value": "„Überwältigende Dunkelheit“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GRSR2",
+            "value": "„Stunden der Geruhsamkeit“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_SCAL",
+            "value": "„Blumen in der Dunkelheit“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TNBR",
+            "value": "„Tomberry, Hasserfüllter Lampenschein“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF14_MV3",
+            "value": "„Helden der Dunkelheit“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_LVAT",
+            "value": "„Leviathan, Göttlicher Mahlstrom“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ASSASIN",
+            "value": "„Kirchliche Assassinen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_HLNA",
+            "value": "„Die Schwarze Rose des Schlachtfeldes“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GCAL",
+            "value": "„Glacial, Frosthauch auf Eisschwingen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_APPLE",
+            "value": "„Apfel voller Erinnerungen“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_TYPN",
+            "value": "„Typhon, Desaströses Unwetter“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_MRLT",
+            "value": "„Marilith, Lodernder Todestanz“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_GREEN",
+            "value": "„Denkwürdige Begegnung“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_RAMD",
+            "value": "„Offenbarung der Gestirne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_OOOO",
+            "value": "„Die Raffinesse eines Schwertmeisters“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_BAHM",
+            "value": "„Bahamut, Herabkunft des Drachenherrschers“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ART",
+            "value": "„Vor einem Jahr begann die Reise“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF10_MV1",
+            "value": "„Suteki Da Ne“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_FF10_MV2",
+            "value": "„Eine unbekannte Welt“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ZZAN",
+            "value": "„Vielen Dank für deine Stimme!“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_ROBB",
+            "value": "„Lichtblitz der Erkenntnis“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VPI_LW_OMEG",
+            "value": "„Omega, Motor stählerner Auslöschung“-Visionskartenfragment"
+        },
+        {
+            "key": "IT_VC_EXP_01",
+            "value": "Wachstumsei (N)"
+        },
+        {
+            "key": "IT_VC_EXP_02",
+            "value": "Wachstumsei (R)"
+        },
+        {
+            "key": "IT_VC_EXP_03",
+            "value": "Wachstumsei (SR)"
+        },
+        {
+            "key": "IT_VC_EXP_04",
+            "value": "Wachstumsei (MR)"
+        },
+        {
+            "key": "IT_GU_FOOD_01",
+            "value": "Lutscher"
+        },
+        {
+            "key": "IT_GU_FOOD_02",
+            "value": "Dörrfleisch"
+        },
+        {
+            "key": "IT_GU_FOOD_03",
+            "value": "Chocobo-Germknödel"
+        },
+        {
+            "key": "IT_GU_FOOD_04",
+            "value": "Zuuflügel"
+        },
+        {
+            "key": "IT_GU_FOOD_05",
+            "value": "Bombersuppe"
+        },
+        {
+            "key": "IT_GU_FOOD_06",
+            "value": "Behemothsteak"
+        },
+        {
+            "key": "IT_GU_EXP_S2_01",
+            "value": "Giftzahn der Riesenschlange (S)"
+        },
+        {
+            "key": "IT_GU_EXP_S2_02",
+            "value": "Giftzahn der Riesenschlange (M)"
+        },
+        {
+            "key": "IT_GU_EXP_S2_03",
+            "value": "Giftzahn der Riesenschlange (L)"
+        },
+        {
+            "key": "IT_GU_EXP_S3_01",
+            "value": "Kräftiges Horn des Stiers (S)"
+        },
+        {
+            "key": "IT_GU_EXP_S3_02",
+            "value": "Kräftiges Horn des Stiers (M)"
+        },
+        {
+            "key": "IT_GU_EXP_S3_03",
+            "value": "Kräftiges Horn des Stiers (L)"
+        },
+        {
+            "key": "IT_GU_EXP_S4_01",
+            "value": "Mähne des Kirin (S)"
+        },
+        {
+            "key": "IT_GU_EXP_S4_02",
+            "value": "Mähne des Kirin (M)"
+        },
+        {
+            "key": "IT_GU_EXP_S4_03",
+            "value": "Mähne des Kirin (L)"
+        },
+        {
+            "key": "IT_GU_EXP_S1_01",
+            "value": "Mächtiger Kiefer des Löwen (S)"
+        },
+        {
+            "key": "IT_GU_EXP_S1_02",
+            "value": "Mächtiger Kiefer des Löwen (M)"
+        },
+        {
+            "key": "IT_GU_EXP_S1_03",
+            "value": "Mächtiger Kiefer des Löwen (L)"
+        },
+        {
+            "key": "IT_EC_RAID_02",
+            "value": "Schokopudding-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_03",
+            "value": "„Weißes Marshmallow“-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_05",
+            "value": "September-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_06",
+            "value": "Oktober-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_08",
+            "value": "Dezember-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_FF14",
+            "value": "FFXIV-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_09",
+            "value": "Februar-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_10",
+            "value": "März-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_EC_RAID_11",
+            "value": "April-Kraftprobenmedaille"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_1",
+            "value": "„Auswählbarer Elementmaginit (M) x500“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_2",
+            "value": "„Auswählbarer Elementmaginit (M) x10“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_3",
+            "value": "„Auswählbarer Elementmaginit (M) x25“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_4",
+            "value": "„Auswählbarer Elementmaginit (L) x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_5",
+            "value": "„Auswählbarer Elementmaginit (L) x20“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_6",
+            "value": "„Auswählbarer Elementmaginit (XL) x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_7",
+            "value": "„Auswählbarer Elementmaginit (L) x150“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_8",
+            "value": "„Auswählbarer Elementmaginit (XL) x270“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_SB_EXP_9",
+            "value": "„Auswählbarer Elementmaginit (XL) x500“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_01",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_02",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_03",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_04",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_05",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_06",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_07",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_08",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_09",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_10",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_11",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_12",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_13",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_14",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_15",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_16",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_17",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_18",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_19",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_20",
+            "value": "[Mond-Neujahr 2021] „Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_21",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_22",
+            "value": "[1. Jubiläum] „Auswählbares [UR]-Visionskartenfragment x25“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_23",
+            "value": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_24",
+            "value": "[Countdown zum 1. Jubiläum Teil IV] „Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_VPI_25",
+            "value": "[1. Jubiläum] „Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL_20",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_VPI_GL_16",
+            "value": "[Feier zum 1. Jubiläum] „Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_VPI_11",
+            "value": "[Neujahr] „Auswählbares [UR]-Visionskartenfragment x75“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_UR_U_02",
+            "value": "„Auswählbare empfohlene [UR]-Einheit“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_01",
+            "value": "„Auswählbare empfohlene [MR]-Einheit“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL01",
+            "value": "„Auswählbare [MR]-Einheit“-Beschwörungsticket A"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL02",
+            "value": "„Auswählbares [MR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL03",
+            "value": "„Auswählbares [MR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL04",
+            "value": "„Auswählbares [MR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_SSR_U_GL05",
+            "value": "„Auswählbares [MR]-Einheitenfragment x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_15",
+            "value": "„Auswählbares [UR]-FFBE-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_16",
+            "value": "[Neujahr] „Auswählbares [UR]-Einheitenfragment x80“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_17",
+            "value": "„Auswählbares [UR]-FFBE-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL00",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL01",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL02",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL03",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL04",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL05",
+            "value": "[Halloween-Kampagne] „Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL06",
+            "value": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL07",
+            "value": "[Mond-Neujahr 2021] „Auswählbares [UR]-Einheitenfragment x80“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL08",
+            "value": "[Countdown zum 1. Jubiläum Teil II] „Auswählbares [UR]-Einheitenfragment x80“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_PI_GL09",
+            "value": "[1. Jubiläum] „Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JBEX_EM_01",
+            "value": "„Auswählbare Alkriststatue x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JBEX_EM_03",
+            "value": "„Auswählbare Alkriststatue x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JBEX_AF_01",
+            "value": "„Auswählbare Symboltafel x300“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_1",
+            "value": "[Symboltafelpaket] „Auswählbare Symboltafel x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_N_GACHA_10",
+            "value": "Normales Beschwörungsticket (10-malig)"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_01",
+            "value": "[Halbjähriges Jubiläum] „Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_02",
+            "value": "„Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_05",
+            "value": "[Winterferien II] „Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_06",
+            "value": "„Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AF_AW_06",
+            "value": "„Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AF_AW_07",
+            "value": "[Neujahrsgrüße Teil III] „Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_GL_SE_AF_AW_08",
+            "value": "[Mond-Neujahr 2021] „Auswählbarer Almanach der Veredelung x100“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_01",
+            "value": "„Auswählbares Ausrüstungssiegel x20“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_AF_SUP_02",
+            "value": "„Auswählbares Ausrüstungssiegel x50“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_G_N_TW_10",
+            "value": "[Porzellanturm] Normales Beschwörungsticket (10-malig)"
+        },
+        {
+            "key": "IT_US_G_AF_N_10",
+            "value": "Normales Beschwörungsticket für Ausrüstungverbesserungsmaterialien (10-malig)"
+        },
+        {
+            "key": "IT_PT_SKIP_001",
+            "value": "„Prüfungen des Urteils“-Auftragsüberspringticket"
+        },
+        {
+            "key": "IT_PT_BSSKIP_001",
+            "value": "„Prüfungen des Urteils“-Bossüberspringticket"
+        },
+        {
+            "key": "IT_PT_BOSS_001",
+            "value": "Bosskampfticket"
+        },
+        {
+            "key": "IT_EC_POINT_001",
+            "value": "„Prüfungen des Urteils“-Medaille"
+        },
+        {
+            "key": "IT_PT_SKIP_FF4_1",
+            "value": "[FFIV] „Prüfungen des Urteils“-Auftragsüberspringticket"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF4_1",
+            "value": "[FFIV] „Prüfungen des Urteils“-Bossüberspringticket"
+        },
+        {
+            "key": "IT_PT_BOSS_FF4_1",
+            "value": "[FFIV] Bosskampfticket"
+        },
+        {
+            "key": "IT_JP_UP_01",
+            "value": "Ovoid (S)"
+        },
+        {
+            "key": "IT_JP_UP_02",
+            "value": "Ovoid (M)"
+        },
+        {
+            "key": "IT_JP_UP_03",
+            "value": "Ovoid (L)"
+        },
+        {
+            "key": "IT_JP_UP_04",
+            "value": "Ovoid (XL)"
+        },
+        {
+            "key": "IT_KEY_QE_001",
+            "value": "Herausforderungsschlüssel"
+        },
+        {
+            "key": "IT_STAMP",
+            "value": "Probe-Abzeichen"
+        },
+        {
+            "key": "IT_STAMP_2010",
+            "value": "März-Abzeichen"
+        },
+        {
+            "key": "IT_STAMP_2011",
+            "value": "April-Abzeichen"
+        },
+        {
+            "key": "IT_STAMP_2012",
+            "value": "Mai-Abzeichen"
+        },
+        {
+            "key": "IT_STAMP_2101",
+            "value": "Juni-Abzeichen"
+        },
+        {
+            "key": "IT_KEY_JP",
+            "value": "JP-Schlüssel"
+        },
+        {
+            "key": "IT_KEY_SB_EXP",
+            "value": "Maginitschlüssel"
+        },
+        {
+            "key": "IT_AW_VC_UR",
+            "value": "Visionsperle"
+        },
+        {
+            "key": "IT_PI_COM_EM_01",
+            "value": "„Auswählbares Elementgedankenfragment x365“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_SB_AW_EM_01",
+            "value": "„Auswählbares Erweckungsprisma x365“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_EM_05_GL_01",
+            "value": "„Auswählbarer Elementalkrist (Rot) x365“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JBEX_EM_02",
+            "value": "„Auswählbare Alkriststatue x365“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_US_SE_JB_05_ANNIV_01",
+            "value": "„Auswählbarer Spinell x365“-Beschwörungsticket"
+        },
+        {
+            "key": "IT_PT_SKIP_FFX_1",
+            "value": "[FFX] „Prüfungen des Urteils“-Auftragsüberspringticket"
+        },
+        {
+            "key": "IT_PT_BSSKIP_FF10_1",
+            "value": "[FFX] „Prüfungen des Urteils“-Bossüberspringticket"
+        },
+        {
+            "key": "IT_PT_BOSS_FF10_1",
+            "value": "[FFX] Bosskampfticket"
+        },
+        {
+            "key": "IT_EC_FF10_3",
+            "value": "[FFX] „Prüfungen des Urteils“-Medaille"
+        }
+    ]
+}

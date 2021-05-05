@@ -1,0 +1,3124 @@
+{
+    "infos": [
+        {
+            "key": "AF_LW_SWO_INIT",
+            "value": "Lehrlingsschwert"
+        },
+        {
+            "key": "AF_LW_BSW_INIT",
+            "value": "Lehrlingsgroßschwert"
+        },
+        {
+            "key": "AF_LW_KAT_INIT",
+            "value": "Lehrlingskatana"
+        },
+        {
+            "key": "AF_LW_FIS_INIT",
+            "value": "Lehrlingsfäuste"
+        },
+        {
+            "key": "AF_LW_SPE_INIT",
+            "value": "Lehrlingslanze"
+        },
+        {
+            "key": "AF_LW_DAG_INIT",
+            "value": "Lehrlingsdolch"
+        },
+        {
+            "key": "AF_LW_NKN_INIT",
+            "value": "Lehrlingsshinobigatana"
+        },
+        {
+            "key": "AF_LW_BOW_INIT",
+            "value": "Lehrlingsbogen"
+        },
+        {
+            "key": "AF_LW_GUN_INIT",
+            "value": "Lehrlingspistole"
+        },
+        {
+            "key": "AF_LW_ROD_INIT",
+            "value": "Lehrlingsstab"
+        },
+        {
+            "key": "AF_LW_MAC_INIT",
+            "value": "Lehrlingskolben"
+        },
+        {
+            "key": "AF_LW_AXE_INIT",
+            "value": "Lehrlingsaxt"
+        },
+        {
+            "key": "AF_LW_SHI_INIT",
+            "value": "Lehrlingsschild"
+        },
+        {
+            "key": "AF_LW_GBL_INIT",
+            "value": "Lehrlingskanonenklinge"
+        },
+        {
+            "key": "AF_LW_GLO_INIT",
+            "value": "Lehrlingshandschuhe"
+        },
+        {
+            "key": "AF_LW_SWO_000",
+            "value": "Breitschwert"
+        },
+        {
+            "key": "AF_LW_SWO_007",
+            "value": "Metallbrecher"
+        },
+        {
+            "key": "AF_LW_SWO_001",
+            "value": "Langschwert"
+        },
+        {
+            "key": "AF_LW_SWO_001_1",
+            "value": "Langschwert +1"
+        },
+        {
+            "key": "AF_LW_SWO_001_2",
+            "value": "Langschwert +2"
+        },
+        {
+            "key": "AF_LW_SWO_001_3",
+            "value": "Langschwert +3"
+        },
+        {
+            "key": "AF_LW_SWO_001_4",
+            "value": "Langschwert +4"
+        },
+        {
+            "key": "AF_LW_SWO_001_5",
+            "value": "Langschwert +5"
+        },
+        {
+            "key": "AF_LW_SWO_002",
+            "value": "Mithrilschwert"
+        },
+        {
+            "key": "AF_LW_SWO_002_1",
+            "value": "Mithrilschwert +1"
+        },
+        {
+            "key": "AF_LW_SWO_002_2",
+            "value": "Mithrilschwert +2"
+        },
+        {
+            "key": "AF_LW_SWO_002_3",
+            "value": "Mithrilschwert +3"
+        },
+        {
+            "key": "AF_LW_SWO_002_4",
+            "value": "Mithrilschwert +4"
+        },
+        {
+            "key": "AF_LW_SWO_002_5",
+            "value": "Mithrilschwert +5"
+        },
+        {
+            "key": "AF_LW_SWO_003",
+            "value": "Schlafschwert"
+        },
+        {
+            "key": "AF_LW_SWO_003_1",
+            "value": "Schlafschwert +1"
+        },
+        {
+            "key": "AF_LW_SWO_003_2",
+            "value": "Schlafschwert +2"
+        },
+        {
+            "key": "AF_LW_SWO_003_3",
+            "value": "Schlafschwert +3"
+        },
+        {
+            "key": "AF_LW_SWO_003_4",
+            "value": "Schlafschwert +4"
+        },
+        {
+            "key": "AF_LW_SWO_003_5",
+            "value": "Schlafschwert +5"
+        },
+        {
+            "key": "AF_LW_SWO_004",
+            "value": "Frostbrand"
+        },
+        {
+            "key": "AF_LW_SWO_004_1",
+            "value": "Frostbrand +1"
+        },
+        {
+            "key": "AF_LW_SWO_004_2",
+            "value": "Frostbrand +2"
+        },
+        {
+            "key": "AF_LW_SWO_004_3",
+            "value": "Frostbrand +3"
+        },
+        {
+            "key": "AF_LW_SWO_004_4",
+            "value": "Frostbrand +4"
+        },
+        {
+            "key": "AF_LW_SWO_004_5",
+            "value": "Frostbrand +5"
+        },
+        {
+            "key": "AF_LW_SWO_006",
+            "value": "Korallenklinge"
+        },
+        {
+            "key": "AF_LW_SWO_006_1",
+            "value": "Korallenklinge +1"
+        },
+        {
+            "key": "AF_LW_SWO_006_2",
+            "value": "Korallenklinge +2"
+        },
+        {
+            "key": "AF_LW_SWO_006_3",
+            "value": "Korallenklinge +3"
+        },
+        {
+            "key": "AF_LW_SWO_006_4",
+            "value": "Korallenklinge +4"
+        },
+        {
+            "key": "AF_LW_SWO_006_5",
+            "value": "Korallenklinge +5"
+        },
+        {
+            "key": "AF_LW_SWO_016",
+            "value": "Exkalibur"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT",
+            "value": "Löwenherz-Replik"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT_1",
+            "value": "Löwenherz-Replik +1"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT_2",
+            "value": "Löwenherz-Replik +2"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT_3",
+            "value": "Löwenherz-Replik +3"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT_4",
+            "value": "Löwenherz-Replik +4"
+        },
+        {
+            "key": "AF_SWO_FF14_TNCT_5",
+            "value": "Löwenherz-Replik +5"
+        },
+        {
+            "key": "AF_FFT_SWO_001",
+            "value": "Nagrarök"
+        },
+        {
+            "key": "AF_FFT_SWO_001_1",
+            "value": "Nagrarök +1"
+        },
+        {
+            "key": "AF_FFT_SWO_001_2",
+            "value": "Nagrarök +2"
+        },
+        {
+            "key": "AF_FFT_SWO_001_3",
+            "value": "Nagrarök +3"
+        },
+        {
+            "key": "AF_FFT_SWO_001_4",
+            "value": "Nagrarök +4"
+        },
+        {
+            "key": "AF_FFT_SWO_001_5",
+            "value": "Nagrarök +5"
+        },
+        {
+            "key": "AF_FFT_SWO_002",
+            "value": "Standardschwert der Königlichen Garde Lesalias"
+        },
+        {
+            "key": "AF_FF10_SWO_001",
+            "value": "Bruderherz"
+        },
+        {
+            "key": "AF_LW_BSW_000",
+            "value": "Großschwert"
+        },
+        {
+            "key": "AF_LW_BSW_001",
+            "value": "Claymore"
+        },
+        {
+            "key": "AF_LW_BSW_001_1",
+            "value": "Claymore +1"
+        },
+        {
+            "key": "AF_LW_BSW_001_2",
+            "value": "Claymore +2"
+        },
+        {
+            "key": "AF_LW_BSW_001_3",
+            "value": "Claymore +3"
+        },
+        {
+            "key": "AF_LW_BSW_001_4",
+            "value": "Claymore +4"
+        },
+        {
+            "key": "AF_LW_BSW_001_5",
+            "value": "Claymore +5"
+        },
+        {
+            "key": "AF_LW_BSW_002",
+            "value": "Mithrilsäbel"
+        },
+        {
+            "key": "AF_LW_BSW_002_1",
+            "value": "Mithrilsäbel +1"
+        },
+        {
+            "key": "AF_LW_BSW_002_2",
+            "value": "Mithrilsäbel +2"
+        },
+        {
+            "key": "AF_LW_BSW_002_3",
+            "value": "Mithrilsäbel +3"
+        },
+        {
+            "key": "AF_LW_BSW_002_4",
+            "value": "Mithrilsäbel +4"
+        },
+        {
+            "key": "AF_LW_BSW_002_5",
+            "value": "Mithrilsäbel +5"
+        },
+        {
+            "key": "AF_LW_BSW_003",
+            "value": "Runenschwert"
+        },
+        {
+            "key": "AF_LW_BSW_003_1",
+            "value": "Runenschwert +1"
+        },
+        {
+            "key": "AF_LW_BSW_003_2",
+            "value": "Runenschwert +2"
+        },
+        {
+            "key": "AF_LW_BSW_003_3",
+            "value": "Runenschwert +3"
+        },
+        {
+            "key": "AF_LW_BSW_003_4",
+            "value": "Runenschwert +4"
+        },
+        {
+            "key": "AF_LW_BSW_003_5",
+            "value": "Runenschwert +5"
+        },
+        {
+            "key": "AF_LW_BSW_004",
+            "value": "Goldklinge"
+        },
+        {
+            "key": "AF_LW_BSW_004_1",
+            "value": "Goldklinge +1"
+        },
+        {
+            "key": "AF_LW_BSW_004_2",
+            "value": "Goldklinge +2"
+        },
+        {
+            "key": "AF_LW_BSW_004_3",
+            "value": "Goldklinge +3"
+        },
+        {
+            "key": "AF_LW_BSW_004_4",
+            "value": "Goldklinge +4"
+        },
+        {
+            "key": "AF_LW_BSW_004_5",
+            "value": "Goldklinge +5"
+        },
+        {
+            "key": "AF_FF10_BSW_000",
+            "value": "Fata Morgana"
+        },
+        {
+            "key": "AF_FF10_BSW_000_1",
+            "value": "Fata Morgana +1"
+        },
+        {
+            "key": "AF_FF10_BSW_000_2",
+            "value": "Fata Morgana +2"
+        },
+        {
+            "key": "AF_FF10_BSW_000_3",
+            "value": "Fata Morgana +3"
+        },
+        {
+            "key": "AF_FF10_BSW_000_4",
+            "value": "Fata Morgana +4"
+        },
+        {
+            "key": "AF_FF10_BSW_000_5",
+            "value": "Fata Morgana +5"
+        },
+        {
+            "key": "AF_LW_KAT_000",
+            "value": "Ashura"
+        },
+        {
+            "key": "AF_LW_KAT_001",
+            "value": "Kotetsu"
+        },
+        {
+            "key": "AF_LW_KAT_001_1",
+            "value": "Kotetsu +1"
+        },
+        {
+            "key": "AF_LW_KAT_001_2",
+            "value": "Kotetsu +2"
+        },
+        {
+            "key": "AF_LW_KAT_001_3",
+            "value": "Kotetsu +3"
+        },
+        {
+            "key": "AF_LW_KAT_001_4",
+            "value": "Kotetsu +4"
+        },
+        {
+            "key": "AF_LW_KAT_001_5",
+            "value": "Kotetsu +5"
+        },
+        {
+            "key": "AF_LW_KAT_002",
+            "value": "Kiku-Ichimonji"
+        },
+        {
+            "key": "AF_LW_KAT_002_1",
+            "value": "Kiku-Ichimonji +1"
+        },
+        {
+            "key": "AF_LW_KAT_002_2",
+            "value": "Kiku-Ichimonji +2"
+        },
+        {
+            "key": "AF_LW_KAT_002_3",
+            "value": "Kiku-Ichimonji +3"
+        },
+        {
+            "key": "AF_LW_KAT_002_4",
+            "value": "Kiku-Ichimonji +4"
+        },
+        {
+            "key": "AF_LW_KAT_002_5",
+            "value": "Kiku-Ichimonji +5"
+        },
+        {
+            "key": "AF_LW_KAT_003",
+            "value": "Osafune"
+        },
+        {
+            "key": "AF_LW_KAT_003_1",
+            "value": "Osafune +1"
+        },
+        {
+            "key": "AF_LW_KAT_003_2",
+            "value": "Osafune +2"
+        },
+        {
+            "key": "AF_LW_KAT_003_3",
+            "value": "Osafune +3"
+        },
+        {
+            "key": "AF_LW_KAT_003_4",
+            "value": "Osafune +4"
+        },
+        {
+            "key": "AF_LW_KAT_003_5",
+            "value": "Osafune +5"
+        },
+        {
+            "key": "AF_NIER_KAT_000",
+            "value": "Tugendvertrag"
+        },
+        {
+            "key": "AF_NIER_KAT_000_1",
+            "value": "Tugendvertrag +1"
+        },
+        {
+            "key": "AF_NIER_KAT_000_2",
+            "value": "Tugendvertrag +2"
+        },
+        {
+            "key": "AF_NIER_KAT_000_3",
+            "value": "Tugendvertrag +3"
+        },
+        {
+            "key": "AF_NIER_KAT_000_4",
+            "value": "Tugendvertrag +4"
+        },
+        {
+            "key": "AF_NIER_KAT_000_5",
+            "value": "Tugendvertrag +5"
+        },
+        {
+            "key": "AF_LW_FIS_000",
+            "value": "Bronzeschlagringe"
+        },
+        {
+            "key": "AF_LW_FIS_001",
+            "value": "Metallschlagringe"
+        },
+        {
+            "key": "AF_LW_FIS_001_1",
+            "value": "Metallschlagringe +1"
+        },
+        {
+            "key": "AF_LW_FIS_001_2",
+            "value": "Metallschlagringe +2"
+        },
+        {
+            "key": "AF_LW_FIS_001_3",
+            "value": "Metallschlagringe +3"
+        },
+        {
+            "key": "AF_LW_FIS_001_4",
+            "value": "Metallschlagringe +4"
+        },
+        {
+            "key": "AF_LW_FIS_001_5",
+            "value": "Metallschlagringe +5"
+        },
+        {
+            "key": "AF_LW_FIS_002",
+            "value": "Mithrilklauen"
+        },
+        {
+            "key": "AF_LW_FIS_002_1",
+            "value": "Mithrilklauen +1"
+        },
+        {
+            "key": "AF_LW_FIS_002_2",
+            "value": "Mithrilklauen +2"
+        },
+        {
+            "key": "AF_LW_FIS_002_3",
+            "value": "Mithrilklauen +3"
+        },
+        {
+            "key": "AF_LW_FIS_002_4",
+            "value": "Mithrilklauen +4"
+        },
+        {
+            "key": "AF_LW_FIS_002_5",
+            "value": "Mithrilklauen +5"
+        },
+        {
+            "key": "AF_LW_FIS_003",
+            "value": "Katzenklauen"
+        },
+        {
+            "key": "AF_LW_FIS_003_1",
+            "value": "Katzenklauen +1"
+        },
+        {
+            "key": "AF_LW_FIS_003_2",
+            "value": "Katzenklauen +2"
+        },
+        {
+            "key": "AF_LW_FIS_003_3",
+            "value": "Katzenklauen +3"
+        },
+        {
+            "key": "AF_LW_FIS_003_4",
+            "value": "Katzenklauen +4"
+        },
+        {
+            "key": "AF_LW_FIS_003_5",
+            "value": "Katzenklauen +5"
+        },
+        {
+            "key": "AF_LW_FIS_004",
+            "value": "Kaiserknöchel"
+        },
+        {
+            "key": "AF_LW_FIS_004_1",
+            "value": "Kaiserknöchel +1"
+        },
+        {
+            "key": "AF_LW_FIS_004_2",
+            "value": "Kaiserknöchel +2"
+        },
+        {
+            "key": "AF_LW_FIS_004_3",
+            "value": "Kaiserknöchel +3"
+        },
+        {
+            "key": "AF_LW_FIS_004_4",
+            "value": "Kaiserknöchel +4"
+        },
+        {
+            "key": "AF_LW_FIS_004_5",
+            "value": "Kaiserknöchel +5"
+        },
+        {
+            "key": "AF_LW_SPE_000",
+            "value": "Jagdspeer"
+        },
+        {
+            "key": "AF_LW_SPE_001",
+            "value": "Partisane"
+        },
+        {
+            "key": "AF_LW_SPE_001_1",
+            "value": "Partisane +1"
+        },
+        {
+            "key": "AF_LW_SPE_001_2",
+            "value": "Partisane +2"
+        },
+        {
+            "key": "AF_LW_SPE_001_3",
+            "value": "Partisane +3"
+        },
+        {
+            "key": "AF_LW_SPE_001_4",
+            "value": "Partisane +4"
+        },
+        {
+            "key": "AF_LW_SPE_001_5",
+            "value": "Partisane +5"
+        },
+        {
+            "key": "AF_LW_SPE_002",
+            "value": "Mithrilspeer"
+        },
+        {
+            "key": "AF_LW_SPE_002_1",
+            "value": "Mithrilspeer +1"
+        },
+        {
+            "key": "AF_LW_SPE_002_2",
+            "value": "Mithrilspeer +2"
+        },
+        {
+            "key": "AF_LW_SPE_002_3",
+            "value": "Mithrilspeer +3"
+        },
+        {
+            "key": "AF_LW_SPE_002_4",
+            "value": "Mithrilspeer +4"
+        },
+        {
+            "key": "AF_LW_SPE_002_5",
+            "value": "Mithrilspeer +5"
+        },
+        {
+            "key": "AF_LW_SPE_003",
+            "value": "Böenspeer"
+        },
+        {
+            "key": "AF_LW_SPE_003_1",
+            "value": "Böenspeer +1"
+        },
+        {
+            "key": "AF_LW_SPE_003_2",
+            "value": "Böenspeer +2"
+        },
+        {
+            "key": "AF_LW_SPE_003_3",
+            "value": "Böenspeer +3"
+        },
+        {
+            "key": "AF_LW_SPE_003_4",
+            "value": "Böenspeer +4"
+        },
+        {
+            "key": "AF_LW_SPE_003_5",
+            "value": "Böenspeer +5"
+        },
+        {
+            "key": "AF_LW_SPE_004",
+            "value": "Frostlanze"
+        },
+        {
+            "key": "AF_LW_SPE_004_1",
+            "value": "Frostlanze +1"
+        },
+        {
+            "key": "AF_LW_SPE_004_2",
+            "value": "Frostlanze +2"
+        },
+        {
+            "key": "AF_LW_SPE_004_3",
+            "value": "Frostlanze +3"
+        },
+        {
+            "key": "AF_LW_SPE_004_4",
+            "value": "Frostlanze +4"
+        },
+        {
+            "key": "AF_LW_SPE_004_5",
+            "value": "Frostlanze +5"
+        },
+        {
+            "key": "AF_LW_SPE_006",
+            "value": "Drachenhornspeer"
+        },
+        {
+            "key": "AF_LW_SPE_006_1",
+            "value": "Drachenhornspeer +1"
+        },
+        {
+            "key": "AF_LW_SPE_006_2",
+            "value": "Drachenhornspeer +2"
+        },
+        {
+            "key": "AF_LW_SPE_006_3",
+            "value": "Drachenhornspeer +3"
+        },
+        {
+            "key": "AF_LW_SPE_006_4",
+            "value": "Drachenhornspeer +4"
+        },
+        {
+            "key": "AF_LW_SPE_006_5",
+            "value": "Drachenhornspeer +5"
+        },
+        {
+            "key": "AF_NIER_SPE_000",
+            "value": "Grausame Arroganz"
+        },
+        {
+            "key": "AF_NIER_SPE_000_1",
+            "value": "Grausame Arroganz +1"
+        },
+        {
+            "key": "AF_NIER_SPE_000_2",
+            "value": "Grausame Arroganz +2"
+        },
+        {
+            "key": "AF_NIER_SPE_000_3",
+            "value": "Grausame Arroganz +3"
+        },
+        {
+            "key": "AF_NIER_SPE_000_4",
+            "value": "Grausame Arroganz +4"
+        },
+        {
+            "key": "AF_NIER_SPE_000_5",
+            "value": "Grausame Arroganz +5"
+        },
+        {
+            "key": "AF_LW_DAG_000",
+            "value": "Bronzemesser"
+        },
+        {
+            "key": "AF_LW_DAG_001",
+            "value": "Dolch"
+        },
+        {
+            "key": "AF_LW_DAG_001_1",
+            "value": "Dolch +1"
+        },
+        {
+            "key": "AF_LW_DAG_001_2",
+            "value": "Dolch +2"
+        },
+        {
+            "key": "AF_LW_DAG_001_3",
+            "value": "Dolch +3"
+        },
+        {
+            "key": "AF_LW_DAG_001_4",
+            "value": "Dolch +4"
+        },
+        {
+            "key": "AF_LW_DAG_001_5",
+            "value": "Dolch +5"
+        },
+        {
+            "key": "AF_LW_DAG_002",
+            "value": "Mithrildolch"
+        },
+        {
+            "key": "AF_LW_DAG_002_1",
+            "value": "Mithrildolch +1"
+        },
+        {
+            "key": "AF_LW_DAG_002_2",
+            "value": "Mithrildolch +2"
+        },
+        {
+            "key": "AF_LW_DAG_002_3",
+            "value": "Mithrildolch +3"
+        },
+        {
+            "key": "AF_LW_DAG_002_4",
+            "value": "Mithrildolch +4"
+        },
+        {
+            "key": "AF_LW_DAG_002_5",
+            "value": "Mithrildolch +5"
+        },
+        {
+            "key": "AF_LW_DAG_004",
+            "value": "Stilett"
+        },
+        {
+            "key": "AF_LW_DAG_004_1",
+            "value": "Stilett +1"
+        },
+        {
+            "key": "AF_LW_DAG_004_2",
+            "value": "Stilett +2"
+        },
+        {
+            "key": "AF_LW_DAG_004_3",
+            "value": "Stilett +3"
+        },
+        {
+            "key": "AF_LW_DAG_004_4",
+            "value": "Stilett +4"
+        },
+        {
+            "key": "AF_LW_DAG_004_5",
+            "value": "Stilett +5"
+        },
+        {
+            "key": "AF_LW_DAG_006",
+            "value": "Magierkiller"
+        },
+        {
+            "key": "AF_LW_DAG_006_1",
+            "value": "Magierkiller +1"
+        },
+        {
+            "key": "AF_LW_DAG_006_2",
+            "value": "Magierkiller +2"
+        },
+        {
+            "key": "AF_LW_DAG_006_3",
+            "value": "Magierkiller +3"
+        },
+        {
+            "key": "AF_LW_DAG_006_4",
+            "value": "Magierkiller +4"
+        },
+        {
+            "key": "AF_LW_DAG_006_5",
+            "value": "Magierkiller +5"
+        },
+        {
+            "key": "AF_LW_NKN_000",
+            "value": "Shinobigatana"
+        },
+        {
+            "key": "AF_LW_NKN_001",
+            "value": "Kunai"
+        },
+        {
+            "key": "AF_LW_NKN_001_1",
+            "value": "Kunai +1"
+        },
+        {
+            "key": "AF_LW_NKN_001_2",
+            "value": "Kunai +2"
+        },
+        {
+            "key": "AF_LW_NKN_001_3",
+            "value": "Kunai +3"
+        },
+        {
+            "key": "AF_LW_NKN_001_4",
+            "value": "Kunai +4"
+        },
+        {
+            "key": "AF_LW_NKN_001_5",
+            "value": "Kunai +5"
+        },
+        {
+            "key": "AF_LW_NKN_002",
+            "value": "Kodachi"
+        },
+        {
+            "key": "AF_LW_NKN_002_1",
+            "value": "Kodachi +1"
+        },
+        {
+            "key": "AF_LW_NKN_002_2",
+            "value": "Kodachi +2"
+        },
+        {
+            "key": "AF_LW_NKN_002_3",
+            "value": "Kodachi +3"
+        },
+        {
+            "key": "AF_LW_NKN_002_4",
+            "value": "Kodachi +4"
+        },
+        {
+            "key": "AF_LW_NKN_002_5",
+            "value": "Kodachi +5"
+        },
+        {
+            "key": "AF_LW_NKN_003",
+            "value": "Sasukes Katana"
+        },
+        {
+            "key": "AF_LW_NKN_003_1",
+            "value": "Sasukes Katana +1"
+        },
+        {
+            "key": "AF_LW_NKN_003_2",
+            "value": "Sasukes Katana +2"
+        },
+        {
+            "key": "AF_LW_NKN_003_3",
+            "value": "Sasukes Katana +3"
+        },
+        {
+            "key": "AF_LW_NKN_003_4",
+            "value": "Sasukes Katana +4"
+        },
+        {
+            "key": "AF_LW_NKN_003_5",
+            "value": "Sasukes Katana +5"
+        },
+        {
+            "key": "AF_LW_BOW_000",
+            "value": "Kurzbogen"
+        },
+        {
+            "key": "AF_LW_BOW_001",
+            "value": "Langbogen"
+        },
+        {
+            "key": "AF_LW_BOW_001_1",
+            "value": "Langbogen +1"
+        },
+        {
+            "key": "AF_LW_BOW_001_2",
+            "value": "Langbogen +2"
+        },
+        {
+            "key": "AF_LW_BOW_001_3",
+            "value": "Langbogen +3"
+        },
+        {
+            "key": "AF_LW_BOW_001_4",
+            "value": "Langbogen +4"
+        },
+        {
+            "key": "AF_LW_BOW_001_5",
+            "value": "Langbogen +5"
+        },
+        {
+            "key": "AF_LW_BOW_002",
+            "value": "Großer Bogen"
+        },
+        {
+            "key": "AF_LW_BOW_002_1",
+            "value": "Großer Bogen +1"
+        },
+        {
+            "key": "AF_LW_BOW_002_2",
+            "value": "Großer Bogen +2"
+        },
+        {
+            "key": "AF_LW_BOW_002_3",
+            "value": "Großer Bogen +3"
+        },
+        {
+            "key": "AF_LW_BOW_002_4",
+            "value": "Großer Bogen +4"
+        },
+        {
+            "key": "AF_LW_BOW_002_5",
+            "value": "Großer Bogen +5"
+        },
+        {
+            "key": "AF_LW_BOW_003",
+            "value": "Runenbogen"
+        },
+        {
+            "key": "AF_LW_BOW_003_1",
+            "value": "Runenbogen +1"
+        },
+        {
+            "key": "AF_LW_BOW_003_2",
+            "value": "Runenbogen +2"
+        },
+        {
+            "key": "AF_LW_BOW_003_3",
+            "value": "Runenbogen +3"
+        },
+        {
+            "key": "AF_LW_BOW_003_4",
+            "value": "Runenbogen +4"
+        },
+        {
+            "key": "AF_LW_BOW_003_5",
+            "value": "Runenbogen +5"
+        },
+        {
+            "key": "AF_LW_BOW_012",
+            "value": "Platinbogen"
+        },
+        {
+            "key": "AF_LW_BOW_012_1",
+            "value": "Platinbogen +1"
+        },
+        {
+            "key": "AF_LW_BOW_012_2",
+            "value": "Platinbogen +2"
+        },
+        {
+            "key": "AF_LW_BOW_012_3",
+            "value": "Platinbogen +3"
+        },
+        {
+            "key": "AF_LW_BOW_012_4",
+            "value": "Platinbogen +4"
+        },
+        {
+            "key": "AF_LW_BOW_012_5",
+            "value": "Platinbogen +5"
+        },
+        {
+            "key": "AF_LW_GUN_000",
+            "value": "Altair"
+        },
+        {
+            "key": "AF_LW_GUN_001",
+            "value": "Capella"
+        },
+        {
+            "key": "AF_LW_GUN_001_1",
+            "value": "Capella +1"
+        },
+        {
+            "key": "AF_LW_GUN_001_2",
+            "value": "Capella +2"
+        },
+        {
+            "key": "AF_LW_GUN_001_3",
+            "value": "Capella +3"
+        },
+        {
+            "key": "AF_LW_GUN_001_4",
+            "value": "Capella +4"
+        },
+        {
+            "key": "AF_LW_GUN_001_5",
+            "value": "Capella +5"
+        },
+        {
+            "key": "AF_LW_GUN_002",
+            "value": "Wega"
+        },
+        {
+            "key": "AF_LW_GUN_002_1",
+            "value": "Wega +1"
+        },
+        {
+            "key": "AF_LW_GUN_002_2",
+            "value": "Wega +2"
+        },
+        {
+            "key": "AF_LW_GUN_002_3",
+            "value": "Wega +3"
+        },
+        {
+            "key": "AF_LW_GUN_002_4",
+            "value": "Wega +4"
+        },
+        {
+            "key": "AF_LW_GUN_002_5",
+            "value": "Wega +5"
+        },
+        {
+            "key": "AF_LW_GUN_003",
+            "value": "Ras Algethi"
+        },
+        {
+            "key": "AF_LW_GUN_003_1",
+            "value": "Ras Algethi +1"
+        },
+        {
+            "key": "AF_LW_GUN_003_2",
+            "value": "Ras Algethi +2"
+        },
+        {
+            "key": "AF_LW_GUN_003_3",
+            "value": "Ras Algethi +3"
+        },
+        {
+            "key": "AF_LW_GUN_003_4",
+            "value": "Ras Algethi +4"
+        },
+        {
+            "key": "AF_LW_GUN_003_5",
+            "value": "Ras Algethi +5"
+        },
+        {
+            "key": "AF_LW_ROD_000",
+            "value": "Stab"
+        },
+        {
+            "key": "AF_LW_ROD_001",
+            "value": "Rute"
+        },
+        {
+            "key": "AF_LW_ROD_002",
+            "value": "Eisenrute"
+        },
+        {
+            "key": "AF_LW_ROD_002_1",
+            "value": "Eisenrute +1"
+        },
+        {
+            "key": "AF_LW_ROD_002_2",
+            "value": "Eisenrute +2"
+        },
+        {
+            "key": "AF_LW_ROD_002_3",
+            "value": "Eisenrute +3"
+        },
+        {
+            "key": "AF_LW_ROD_002_4",
+            "value": "Eisenrute +4"
+        },
+        {
+            "key": "AF_LW_ROD_002_5",
+            "value": "Eisenrute +5"
+        },
+        {
+            "key": "AF_LW_ROD_004",
+            "value": "Heilerstab"
+        },
+        {
+            "key": "AF_LW_ROD_004_1",
+            "value": "Heilerstab +1"
+        },
+        {
+            "key": "AF_LW_ROD_004_2",
+            "value": "Heilerstab +2"
+        },
+        {
+            "key": "AF_LW_ROD_004_3",
+            "value": "Heilerstab +3"
+        },
+        {
+            "key": "AF_LW_ROD_004_4",
+            "value": "Heilerstab +4"
+        },
+        {
+            "key": "AF_LW_ROD_004_5",
+            "value": "Heilerstab +5"
+        },
+        {
+            "key": "AF_LW_ROD_005",
+            "value": "Platinstab"
+        },
+        {
+            "key": "AF_LW_ROD_005_1",
+            "value": "Platinstab +1"
+        },
+        {
+            "key": "AF_LW_ROD_005_2",
+            "value": "Platinstab +2"
+        },
+        {
+            "key": "AF_LW_ROD_005_3",
+            "value": "Platinstab +3"
+        },
+        {
+            "key": "AF_LW_ROD_005_4",
+            "value": "Platinstab +4"
+        },
+        {
+            "key": "AF_LW_ROD_005_5",
+            "value": "Platinstab +5"
+        },
+        {
+            "key": "AF_LW_ROD_007",
+            "value": "Stab des Weisen"
+        },
+        {
+            "key": "AF_LW_ROD_007_1",
+            "value": "Stab des Weisen +1"
+        },
+        {
+            "key": "AF_LW_ROD_007_2",
+            "value": "Stab des Weisen +2"
+        },
+        {
+            "key": "AF_LW_ROD_007_3",
+            "value": "Stab des Weisen +3"
+        },
+        {
+            "key": "AF_LW_ROD_007_4",
+            "value": "Stab des Weisen +4"
+        },
+        {
+            "key": "AF_LW_ROD_007_5",
+            "value": "Stab des Weisen +5"
+        },
+        {
+            "key": "AF_FF10_ROD_000",
+            "value": "Magisterstab"
+        },
+        {
+            "key": "AF_FF10_ROD_000_1",
+            "value": "Magisterstab +1"
+        },
+        {
+            "key": "AF_FF10_ROD_000_2",
+            "value": "Magisterstab +2"
+        },
+        {
+            "key": "AF_FF10_ROD_000_3",
+            "value": "Magisterstab +3"
+        },
+        {
+            "key": "AF_FF10_ROD_000_4",
+            "value": "Magisterstab +4"
+        },
+        {
+            "key": "AF_FF10_ROD_000_5",
+            "value": "Magisterstab +5"
+        },
+        {
+            "key": "AF_LW_MAC_000",
+            "value": "Bronzekolben"
+        },
+        {
+            "key": "AF_LW_MAC_001",
+            "value": "Eisenkolben"
+        },
+        {
+            "key": "AF_LW_MAC_001_1",
+            "value": "Eisenkolben +1"
+        },
+        {
+            "key": "AF_LW_MAC_001_2",
+            "value": "Eisenkolben +2"
+        },
+        {
+            "key": "AF_LW_MAC_001_3",
+            "value": "Eisenkolben +3"
+        },
+        {
+            "key": "AF_LW_MAC_001_4",
+            "value": "Eisenkolben +4"
+        },
+        {
+            "key": "AF_LW_MAC_001_5",
+            "value": "Eisenkolben +5"
+        },
+        {
+            "key": "AF_LW_MAC_002",
+            "value": "Mithrilkolben"
+        },
+        {
+            "key": "AF_LW_MAC_002_1",
+            "value": "Mithrilkolben +1"
+        },
+        {
+            "key": "AF_LW_MAC_002_2",
+            "value": "Mithrilkolben +2"
+        },
+        {
+            "key": "AF_LW_MAC_002_3",
+            "value": "Mithrilkolben +3"
+        },
+        {
+            "key": "AF_LW_MAC_002_4",
+            "value": "Mithrilkolben +4"
+        },
+        {
+            "key": "AF_LW_MAC_002_5",
+            "value": "Mithrilkolben +5"
+        },
+        {
+            "key": "AF_LW_MAC_003",
+            "value": "Platinkeule"
+        },
+        {
+            "key": "AF_LW_MAC_003_1",
+            "value": "Platinkeule +1"
+        },
+        {
+            "key": "AF_LW_MAC_003_2",
+            "value": "Platinkeule +2"
+        },
+        {
+            "key": "AF_LW_MAC_003_3",
+            "value": "Platinkeule +3"
+        },
+        {
+            "key": "AF_LW_MAC_003_4",
+            "value": "Platinkeule +4"
+        },
+        {
+            "key": "AF_LW_MAC_003_5",
+            "value": "Platinkeule +5"
+        },
+        {
+            "key": "AF_LW_AXE_000",
+            "value": "Kampfaxt"
+        },
+        {
+            "key": "AF_LW_AXE_001",
+            "value": "Ogertöter"
+        },
+        {
+            "key": "AF_LW_AXE_001_1",
+            "value": "Ogertöter +1"
+        },
+        {
+            "key": "AF_LW_AXE_001_2",
+            "value": "Ogertöter +2"
+        },
+        {
+            "key": "AF_LW_AXE_001_3",
+            "value": "Ogertöter +3"
+        },
+        {
+            "key": "AF_LW_AXE_001_4",
+            "value": "Ogertöter +4"
+        },
+        {
+            "key": "AF_LW_AXE_001_5",
+            "value": "Ogertöter +5"
+        },
+        {
+            "key": "AF_LW_AXE_002",
+            "value": "Mithrilaxt"
+        },
+        {
+            "key": "AF_LW_AXE_002_1",
+            "value": "Mithrilaxt +1"
+        },
+        {
+            "key": "AF_LW_AXE_002_2",
+            "value": "Mithrilaxt +2"
+        },
+        {
+            "key": "AF_LW_AXE_002_3",
+            "value": "Mithrilaxt +3"
+        },
+        {
+            "key": "AF_LW_AXE_002_4",
+            "value": "Mithrilaxt +4"
+        },
+        {
+            "key": "AF_LW_AXE_002_5",
+            "value": "Mithrilaxt +5"
+        },
+        {
+            "key": "AF_LW_AXE_003",
+            "value": "Goldaxt"
+        },
+        {
+            "key": "AF_LW_AXE_003_1",
+            "value": "Goldaxt +1"
+        },
+        {
+            "key": "AF_LW_AXE_003_2",
+            "value": "Goldaxt +2"
+        },
+        {
+            "key": "AF_LW_AXE_003_3",
+            "value": "Goldaxt +3"
+        },
+        {
+            "key": "AF_LW_AXE_003_4",
+            "value": "Goldaxt +4"
+        },
+        {
+            "key": "AF_LW_AXE_003_5",
+            "value": "Goldaxt +5"
+        },
+        {
+            "key": "AF_LW_SHI_000",
+            "value": "Gewöhnlicher Schild"
+        },
+        {
+            "key": "AF_LW_ARM_001",
+            "value": "Lederpanzer"
+        },
+        {
+            "key": "AF_LW_ARM_002",
+            "value": "Eisenpanzer"
+        },
+        {
+            "key": "AF_LW_ARM_002_1",
+            "value": "Eisenpanzer +1"
+        },
+        {
+            "key": "AF_LW_ARM_002_2",
+            "value": "Eisenpanzer +2"
+        },
+        {
+            "key": "AF_LW_ARM_002_3",
+            "value": "Eisenpanzer +3"
+        },
+        {
+            "key": "AF_LW_ARM_002_4",
+            "value": "Eisenpanzer +4"
+        },
+        {
+            "key": "AF_LW_ARM_002_5",
+            "value": "Eisenpanzer +5"
+        },
+        {
+            "key": "AF_LW_ARM_003",
+            "value": "Mithrilrüstung"
+        },
+        {
+            "key": "AF_LW_ARM_003_1",
+            "value": "Mithrilrüstung +1"
+        },
+        {
+            "key": "AF_LW_ARM_003_2",
+            "value": "Mithrilrüstung +2"
+        },
+        {
+            "key": "AF_LW_ARM_003_3",
+            "value": "Mithrilrüstung +3"
+        },
+        {
+            "key": "AF_LW_ARM_003_4",
+            "value": "Mithrilrüstung +4"
+        },
+        {
+            "key": "AF_LW_ARM_003_5",
+            "value": "Mithrilrüstung +5"
+        },
+        {
+            "key": "AF_LW_ARM_004",
+            "value": "Goldrüstung"
+        },
+        {
+            "key": "AF_LW_ARM_004_1",
+            "value": "Goldrüstung +1"
+        },
+        {
+            "key": "AF_LW_ARM_004_2",
+            "value": "Goldrüstung +2"
+        },
+        {
+            "key": "AF_LW_ARM_004_3",
+            "value": "Goldrüstung +3"
+        },
+        {
+            "key": "AF_LW_ARM_004_4",
+            "value": "Goldrüstung +4"
+        },
+        {
+            "key": "AF_LW_ARM_004_5",
+            "value": "Goldrüstung +5"
+        },
+        {
+            "key": "AF_LW_ARM_005",
+            "value": "Platinrüstung"
+        },
+        {
+            "key": "AF_LW_ARM_005_1",
+            "value": "Platinrüstung +1"
+        },
+        {
+            "key": "AF_LW_ARM_005_2",
+            "value": "Platinrüstung +2"
+        },
+        {
+            "key": "AF_LW_ARM_005_3",
+            "value": "Platinrüstung +3"
+        },
+        {
+            "key": "AF_LW_ARM_005_4",
+            "value": "Platinrüstung +4"
+        },
+        {
+            "key": "AF_LW_ARM_005_5",
+            "value": "Platinrüstung +5"
+        },
+        {
+            "key": "AF_FF1_ARM_002",
+            "value": "Rüstung des Lichts"
+        },
+        {
+            "key": "AF_FF1_ARM_002_1",
+            "value": "Rüstung des Lichts +1"
+        },
+        {
+            "key": "AF_FF1_ARM_002_2",
+            "value": "Rüstung des Lichts +2"
+        },
+        {
+            "key": "AF_FF1_ARM_002_3",
+            "value": "Rüstung des Lichts +3"
+        },
+        {
+            "key": "AF_FF1_ARM_002_4",
+            "value": "Rüstung des Lichts +4"
+        },
+        {
+            "key": "AF_FF1_ARM_002_5",
+            "value": "Rüstung des Lichts +5"
+        },
+        {
+            "key": "AF_LW_HLM_001",
+            "value": "Bronzehelm"
+        },
+        {
+            "key": "AF_LW_HLM_002",
+            "value": "Eisenhelm"
+        },
+        {
+            "key": "AF_LW_HLM_002_1",
+            "value": "Eisenhelm +1"
+        },
+        {
+            "key": "AF_LW_HLM_002_2",
+            "value": "Eisenhelm +2"
+        },
+        {
+            "key": "AF_LW_HLM_002_3",
+            "value": "Eisenhelm +3"
+        },
+        {
+            "key": "AF_LW_HLM_002_4",
+            "value": "Eisenhelm +4"
+        },
+        {
+            "key": "AF_LW_HLM_002_5",
+            "value": "Eisenhelm +5"
+        },
+        {
+            "key": "AF_LW_HLM_003",
+            "value": "Mithrilhelm"
+        },
+        {
+            "key": "AF_LW_HLM_003_1",
+            "value": "Mithrilhelm +1"
+        },
+        {
+            "key": "AF_LW_HLM_003_2",
+            "value": "Mithrilhelm +2"
+        },
+        {
+            "key": "AF_LW_HLM_003_3",
+            "value": "Mithrilhelm +3"
+        },
+        {
+            "key": "AF_LW_HLM_003_4",
+            "value": "Mithrilhelm +4"
+        },
+        {
+            "key": "AF_LW_HLM_003_5",
+            "value": "Mithrilhelm +5"
+        },
+        {
+            "key": "AF_LW_HLM_004",
+            "value": "Goldhelm"
+        },
+        {
+            "key": "AF_LW_HLM_004_1",
+            "value": "Goldhelm +1"
+        },
+        {
+            "key": "AF_LW_HLM_004_2",
+            "value": "Goldhelm +2"
+        },
+        {
+            "key": "AF_LW_HLM_004_3",
+            "value": "Goldhelm +3"
+        },
+        {
+            "key": "AF_LW_HLM_004_4",
+            "value": "Goldhelm +4"
+        },
+        {
+            "key": "AF_LW_HLM_004_5",
+            "value": "Goldhelm +5"
+        },
+        {
+            "key": "AF_LW_HAT_001",
+            "value": "Lederhut"
+        },
+        {
+            "key": "AF_LW_HAT_002",
+            "value": "Magierhut"
+        },
+        {
+            "key": "AF_LW_HAT_002_1",
+            "value": "Magierhut +1"
+        },
+        {
+            "key": "AF_LW_HAT_002_2",
+            "value": "Magierhut +2"
+        },
+        {
+            "key": "AF_LW_HAT_002_3",
+            "value": "Magierhut +3"
+        },
+        {
+            "key": "AF_LW_HAT_002_4",
+            "value": "Magierhut +4"
+        },
+        {
+            "key": "AF_LW_HAT_002_5",
+            "value": "Magierhut +5"
+        },
+        {
+            "key": "AF_LW_HAT_003",
+            "value": "Stirnreif"
+        },
+        {
+            "key": "AF_LW_HAT_003_1",
+            "value": "Stirnreif +1"
+        },
+        {
+            "key": "AF_LW_HAT_003_2",
+            "value": "Stirnreif +2"
+        },
+        {
+            "key": "AF_LW_HAT_003_3",
+            "value": "Stirnreif +3"
+        },
+        {
+            "key": "AF_LW_HAT_003_4",
+            "value": "Stirnreif +4"
+        },
+        {
+            "key": "AF_LW_HAT_003_5",
+            "value": "Stirnreif +5"
+        },
+        {
+            "key": "AF_LW_HAT_004",
+            "value": "Weisenhut"
+        },
+        {
+            "key": "AF_LW_HAT_004_1",
+            "value": "Weisenhut +1"
+        },
+        {
+            "key": "AF_LW_HAT_004_2",
+            "value": "Weisenhut +2"
+        },
+        {
+            "key": "AF_LW_HAT_004_3",
+            "value": "Weisenhut +3"
+        },
+        {
+            "key": "AF_LW_HAT_004_4",
+            "value": "Weisenhut +4"
+        },
+        {
+            "key": "AF_LW_HAT_004_5",
+            "value": "Weisenhut +5"
+        },
+        {
+            "key": "AF_LW_CLT_001",
+            "value": "Lederweste"
+        },
+        {
+            "key": "AF_LW_CLT_002",
+            "value": "Gelehrtenrobe"
+        },
+        {
+            "key": "AF_LW_CLT_002_1",
+            "value": "Gelehrtenrobe +1"
+        },
+        {
+            "key": "AF_LW_CLT_002_2",
+            "value": "Gelehrtenrobe +2"
+        },
+        {
+            "key": "AF_LW_CLT_002_3",
+            "value": "Gelehrtenrobe +3"
+        },
+        {
+            "key": "AF_LW_CLT_002_4",
+            "value": "Gelehrtenrobe +4"
+        },
+        {
+            "key": "AF_LW_CLT_002_5",
+            "value": "Gelehrtenrobe +5"
+        },
+        {
+            "key": "AF_LW_CLT_003",
+            "value": "Trugweste"
+        },
+        {
+            "key": "AF_LW_CLT_003_1",
+            "value": "Trugweste +1"
+        },
+        {
+            "key": "AF_LW_CLT_003_2",
+            "value": "Trugweste +2"
+        },
+        {
+            "key": "AF_LW_CLT_003_3",
+            "value": "Trugweste +3"
+        },
+        {
+            "key": "AF_LW_CLT_003_4",
+            "value": "Trugweste +4"
+        },
+        {
+            "key": "AF_LW_CLT_003_5",
+            "value": "Trugweste +5"
+        },
+        {
+            "key": "AF_LW_CLT_004",
+            "value": "Schlauer Mantel"
+        },
+        {
+            "key": "AF_LW_CLT_004_1",
+            "value": "Schlauer Mantel +1"
+        },
+        {
+            "key": "AF_LW_CLT_004_2",
+            "value": "Schlauer Mantel +2"
+        },
+        {
+            "key": "AF_LW_CLT_004_3",
+            "value": "Schlauer Mantel +3"
+        },
+        {
+            "key": "AF_LW_CLT_004_4",
+            "value": "Schlauer Mantel +4"
+        },
+        {
+            "key": "AF_LW_CLT_004_5",
+            "value": "Schlauer Mantel +5"
+        },
+        {
+            "key": "AF_LW_CLT_005",
+            "value": "Platinrobe"
+        },
+        {
+            "key": "AF_LW_CLT_005_1",
+            "value": "Platinrobe +1"
+        },
+        {
+            "key": "AF_LW_CLT_005_2",
+            "value": "Platinrobe +2"
+        },
+        {
+            "key": "AF_LW_CLT_005_3",
+            "value": "Platinrobe +3"
+        },
+        {
+            "key": "AF_LW_CLT_005_4",
+            "value": "Platinrobe +4"
+        },
+        {
+            "key": "AF_LW_CLT_005_5",
+            "value": "Platinrobe +5"
+        },
+        {
+            "key": "AF_LW_CLT_015",
+            "value": "Galmia-Mantel"
+        },
+        {
+            "key": "AF_LW_CLT_015_1",
+            "value": "Galmia-Mantel +1"
+        },
+        {
+            "key": "AF_LW_CLT_015_2",
+            "value": "Galmia-Mantel +2"
+        },
+        {
+            "key": "AF_LW_CLT_015_3",
+            "value": "Galmia-Mantel +3"
+        },
+        {
+            "key": "AF_LW_CLT_015_4",
+            "value": "Galmia-Mantel +4"
+        },
+        {
+            "key": "AF_LW_CLT_015_5",
+            "value": "Galmia-Mantel +5"
+        },
+        {
+            "key": "AF_LW_RNG_001",
+            "value": "Kristallsteinring"
+        },
+        {
+            "key": "AF_LW_RNG_002",
+            "value": "Heldenring"
+        },
+        {
+            "key": "AF_LW_RNG_002_1",
+            "value": "Heldenring +1"
+        },
+        {
+            "key": "AF_LW_RNG_002_2",
+            "value": "Heldenring +2"
+        },
+        {
+            "key": "AF_LW_RNG_002_3",
+            "value": "Heldenring +3"
+        },
+        {
+            "key": "AF_LW_RNG_002_4",
+            "value": "Heldenring +4"
+        },
+        {
+            "key": "AF_LW_RNG_002_5",
+            "value": "Heldenring +5"
+        },
+        {
+            "key": "AF_LW_RNG_003",
+            "value": "Feenring"
+        },
+        {
+            "key": "AF_LW_RNG_003_1",
+            "value": "Feenring +1"
+        },
+        {
+            "key": "AF_LW_RNG_003_2",
+            "value": "Feenring +2"
+        },
+        {
+            "key": "AF_LW_RNG_003_3",
+            "value": "Feenring +3"
+        },
+        {
+            "key": "AF_LW_RNG_003_4",
+            "value": "Feenring +4"
+        },
+        {
+            "key": "AF_LW_RNG_003_5",
+            "value": "Feenring +5"
+        },
+        {
+            "key": "AF_LW_RNG_004",
+            "value": "Juwelenring"
+        },
+        {
+            "key": "AF_LW_RNG_004_1",
+            "value": "Juwelenring +1"
+        },
+        {
+            "key": "AF_LW_RNG_004_2",
+            "value": "Juwelenring +2"
+        },
+        {
+            "key": "AF_LW_RNG_004_3",
+            "value": "Juwelenring +3"
+        },
+        {
+            "key": "AF_LW_RNG_004_4",
+            "value": "Juwelenring +4"
+        },
+        {
+            "key": "AF_LW_RNG_004_5",
+            "value": "Juwelenring +5"
+        },
+        {
+            "key": "AF_LW_FTW_001",
+            "value": "Hermessandalen"
+        },
+        {
+            "key": "AF_LW_FTW_001_1",
+            "value": "Hermessandalen +1"
+        },
+        {
+            "key": "AF_LW_FTW_001_2",
+            "value": "Hermessandalen +2"
+        },
+        {
+            "key": "AF_LW_FTW_001_3",
+            "value": "Hermessandalen +3"
+        },
+        {
+            "key": "AF_LW_FTW_001_4",
+            "value": "Hermessandalen +4"
+        },
+        {
+            "key": "AF_LW_FTW_001_5",
+            "value": "Hermessandalen +5"
+        },
+        {
+            "key": "AF_LW_RNG_006",
+            "value": "Dreigestirn"
+        },
+        {
+            "key": "AF_LW_ARW_003",
+            "value": "Armband der Elster"
+        },
+        {
+            "key": "AF_LW_SHI_004",
+            "value": "Titus' Schild"
+        },
+        {
+            "key": "AF_LW_ACC_001",
+            "value": "Schleife"
+        },
+        {
+            "key": "AF_LW_ACC_001_1",
+            "value": "Schleife +1"
+        },
+        {
+            "key": "AF_LW_ACC_001_2",
+            "value": "Schleife +2"
+        },
+        {
+            "key": "AF_LW_ACC_001_3",
+            "value": "Schleife +3"
+        },
+        {
+            "key": "AF_LW_ACC_001_4",
+            "value": "Schleife +4"
+        },
+        {
+            "key": "AF_LW_ACC_001_5",
+            "value": "Schleife +5"
+        },
+        {
+            "key": "AF_SWO_LW_LILS_1",
+            "value": "Sengschwert"
+        },
+        {
+            "key": "AF_BSW_LW_SZRT_1",
+            "value": "Himmelsspalter"
+        },
+        {
+            "key": "AF_KAT_LW_OOOO_1",
+            "value": "Blitzschlag-Katana"
+        },
+        {
+            "key": "AF_FIS_LW_MRLK_1",
+            "value": "Gletscherbrecher"
+        },
+        {
+            "key": "AF_SPE_LW_RAMD_1",
+            "value": "Sternleserlanze"
+        },
+        {
+            "key": "AF_SPE_LW_LRNZ_1",
+            "value": "Drachentöter-Lanze"
+        },
+        {
+            "key": "AF_DAG_LW_VSTR_1",
+            "value": "Blutbesudelter Dolch"
+        },
+        {
+            "key": "AF_BOW_LW_CLEY_1",
+            "value": "Gletscherbogen"
+        },
+        {
+            "key": "AF_GUN_LW_RIRY_1",
+            "value": "Mondlose Nacht"
+        },
+        {
+            "key": "AF_ROD_LW_HLNA_1",
+            "value": "Stab des Wächters"
+        },
+        {
+            "key": "AF_ROD_LW_MGRT_1",
+            "value": "Magiestab"
+        },
+        {
+            "key": "AF_ROD_LW_PRAY_1",
+            "value": "Maginitstab"
+        },
+        {
+            "key": "AF_MAC_LW_KADI_1",
+            "value": "Kolben der Zuneigung"
+        },
+        {
+            "key": "AF_BOW_LW_FINA_1",
+            "value": "Reinkarnation"
+        },
+        {
+            "key": "AF_NKN_LW_SDLX_1",
+            "value": "Schatten-Shinobigatana"
+        },
+        {
+            "key": "AF_SHI_LW_ENBT_1",
+            "value": "Solidus-Schild"
+        },
+        {
+            "key": "AF_ARM_LW_STRN_1",
+            "value": "Löwenrüstung"
+        },
+        {
+            "key": "AF_ARM_LW_ROBB_1",
+            "value": "Schimmerpanzer"
+        },
+        {
+            "key": "AF_ARM_LW_BYLO_1",
+            "value": "Forstpanzer"
+        },
+        {
+            "key": "AF_ARM_LW_VRID_1",
+            "value": "Bündnisrobe"
+        },
+        {
+            "key": "AF_ARM_LW_NAIA_1",
+            "value": "Mondschein-Umhang"
+        },
+        {
+            "key": "AF_CLT_LW_SEVR_1",
+            "value": "Schurz des Suchers"
+        },
+        {
+            "key": "AF_CLT_LW_SRJS_1",
+            "value": "Schneefeldschurz"
+        },
+        {
+            "key": "AF_HAT_LW_AILN_1",
+            "value": "Röntgenbrille"
+        },
+        {
+            "key": "AF_HAT_LW_MDNA_1",
+            "value": "Kaleido-Mond"
+        },
+        {
+            "key": "AF_HAT_LW_UNII_1",
+            "value": "Kappe der Hingabe"
+        },
+        {
+            "key": "AF_HAT_LW_VADM_1",
+            "value": "Rubeus-Stirnband"
+        },
+        {
+            "key": "AF_HAT_LW_PHBE_1",
+            "value": "Zeitkappe"
+        },
+        {
+            "key": "AF_HAT_LW_MICE_1",
+            "value": "Magushut"
+        },
+        {
+            "key": "AF_HAT_LW_MIIA_1",
+            "value": "Shinobi-Haarband"
+        },
+        {
+            "key": "AF_FTW_LW_AYKA_1",
+            "value": "Sakralschritt"
+        },
+        {
+            "key": "AF_ACC_LW_MACR_1",
+            "value": "Halskette der Stahlmaid"
+        },
+        {
+            "key": "AF_CLK_LW_ELDE_1",
+            "value": "Umhang des Wächters"
+        },
+        {
+            "key": "AF_ACC_LW_ZIZA_1",
+            "value": "Scheinschelle"
+        },
+        {
+            "key": "AF_ACC_LW_FDRC_1",
+            "value": "Siegesschleife"
+        },
+        {
+            "key": "AF_ARM_LW_SCIA_1",
+            "value": "Drachenstiefel"
+        },
+        {
+            "key": "AF_ARM_LW_MURM_1",
+            "value": "Maginit-Augenmaske"
+        },
+        {
+            "key": "AF_HAT_LW_RYER_1",
+            "value": "Schicke Haube"
+        },
+        {
+            "key": "AF_ACC_LW_RART_1",
+            "value": "Fescher Halsschmuck"
+        },
+        {
+            "key": "AF_ACC_LW_MONT_1",
+            "value": "Löwenwappen"
+        },
+        {
+            "key": "AF_ACC_LW_ZZAN_1",
+            "value": "Bärenhaube"
+        },
+        {
+            "key": "AF_HLM_LW_GLMS_1",
+            "value": "Helm der Geschworenen"
+        },
+        {
+            "key": "AF_CLT_FF14_TNCR_1",
+            "value": "Leibwächter-Mantel"
+        },
+        {
+            "key": "AF_ROD_FF14_YSTL_1",
+            "value": "Nachtjäger"
+        },
+        {
+            "key": "AF_BLT_LW_YERM_1",
+            "value": "Herkulesschurz"
+        },
+        {
+            "key": "AF_SWO_LW_NASR_1",
+            "value": "Klinge der Führung"
+        },
+        {
+            "key": "AF_CLT_LW_RAMD_01_1",
+            "value": "Weisenholz-Haarspange"
+        },
+        {
+            "key": "AF_ACC_LW_ETRE_1",
+            "value": "Boxerabzeichen"
+        },
+        {
+            "key": "AF_ACC_LW_MACR_01_1",
+            "value": "Engelsschleife"
+        },
+        {
+            "key": "AF_ARM_FFT_RAMZ_1",
+            "value": "Ramzas Kleidung"
+        },
+        {
+            "key": "AF_SWO_FFT_GFGR_1",
+            "value": "Vermilion"
+        },
+        {
+            "key": "AF_ACC_FFT_ORND_1",
+            "value": "Umhang des Donnergottes"
+        },
+        {
+            "key": "AF_ARW_LW_KTON_1",
+            "value": "Saiga-Schutzhandschuh"
+        },
+        {
+            "key": "AF_HAT_LW_WHIS_1",
+            "value": "Maginitmaske"
+        },
+        {
+            "key": "AF_CLT_LW_MRND_1",
+            "value": "Rotes Jacket"
+        },
+        {
+            "key": "AF_AXE_LW_DRND_1",
+            "value": "Henkersaxt"
+        },
+        {
+            "key": "AF_ARM_LW_LUCA_1",
+            "value": "Verzaubernde Stiefel"
+        },
+        {
+            "key": "AF_SWO_LW_ADLD_1",
+            "value": "Karmesinklinge"
+        },
+        {
+            "key": "AF_ARM_LW_VKTR_1",
+            "value": "Rüstung der Gier"
+        },
+        {
+            "key": "AF_ACC_LW_THLA_1",
+            "value": "Magisches Band"
+        },
+        {
+            "key": "AF_CLT_LW_RAIN_1",
+            "value": "Rains Kleidung"
+        },
+        {
+            "key": "AF_ACC_LW_FRVA_1",
+            "value": "Blumiger Haarclip"
+        },
+        {
+            "key": "AF_ACC_LW_VNLA_1",
+            "value": "Highheels der Verführung"
+        },
+        {
+            "key": "AF_SWO_LW_DRIO_1",
+            "value": "Schillerschwert"
+        },
+        {
+            "key": "AF_ACC_LW_TREL_1",
+            "value": "Krone des Schlangensoldaten"
+        },
+        {
+            "key": "AF_ACC_FF1_WROL_1",
+            "value": "Handschuhe des Lichts"
+        },
+        {
+            "key": "AF_ACC_LW_QILF_1",
+            "value": "Magierhaarschmuck"
+        },
+        {
+            "key": "AF_KAT_LW_SIMR_1",
+            "value": "Odachi der Zerstörung"
+        },
+        {
+            "key": "AF_ACC_LW_ORDR_1",
+            "value": "Oldoischer Lendenschurz"
+        },
+        {
+            "key": "AF_SWO_LW_LVES_1",
+            "value": "Knechtende Klinge"
+        },
+        {
+            "key": "AF_ACC_FFT_AGRA_1",
+            "value": "Rüstung des Heiligen Ritters"
+        },
+        {
+            "key": "AF_ARM_FFT_DELT_1",
+            "value": "Ausdauerweste"
+        },
+        {
+            "key": "AF_GUN_FFT_MSTD_2",
+            "value": "Besrudio"
+        },
+        {
+            "key": "AF_ACC_LW_IRDL_1",
+            "value": "Kalkulatorenrobe"
+        },
+        {
+            "key": "AF_ARM_LW_STRN_01_1",
+            "value": "Magische Rüstung"
+        },
+        {
+            "key": "AF_ARM_LW_GRSR_1",
+            "value": "Rüstung des Weißen Wolfs"
+        },
+        {
+            "key": "AF_BOW_LW_RRIR_1",
+            "value": "Assassinenbogen der Herzensleere"
+        },
+        {
+            "key": "AF_CLT_LW_LSWL_1",
+            "value": "Lasswells Kleidung"
+        },
+        {
+            "key": "AF_ACC_LW_RYER_01_1",
+            "value": "Wolfshaarband"
+        },
+        {
+            "key": "AF_ACC_LW_RIRY_01_1",
+            "value": "Zombiemaske "
+        },
+        {
+            "key": "AF_CLT_LW_HWLT_1",
+            "value": "Sowilomantel"
+        },
+        {
+            "key": "AF_ACC_LW_SCAL_1",
+            "value": "Handschuh des Donnergrollens"
+        },
+        {
+            "key": "AF_SWO_LW_MRAL_1",
+            "value": "Tanzende Spinne"
+        },
+        {
+            "key": "AF_ROD_LW_CHEL_1",
+            "value": "Ingwazstab"
+        },
+        {
+            "key": "AF_ACC_FF4_CECL_1",
+            "value": "Heiligendiadem"
+        },
+        {
+            "key": "AF_ACC_FF4_ROSA_1",
+            "value": "Rosas Haarspange"
+        },
+        {
+            "key": "AF_HLM_FF4_KAIN_1",
+            "value": "Dragonerhelm"
+        },
+        {
+            "key": "AF_SWO_LW_TITU_1",
+            "value": "Ihwaschwert"
+        },
+        {
+            "key": "AF_HLM_LW_DEAN_1",
+            "value": "Helm der Reue"
+        },
+        {
+            "key": "AF_ACC_LW_NIVL_1",
+            "value": "Maske des V’-Clans"
+        },
+        {
+            "key": "AF_ROD_LW_RVAL_1",
+            "value": "Stab Saigas"
+        },
+        {
+            "key": "AF_CLT_LW_SAKR_1",
+            "value": "Sakuras Kleidung"
+        },
+        {
+            "key": "AF_SPE_LW_ALIM_1",
+            "value": "Abgenutzte Hellebarde"
+        },
+        {
+            "key": "AF_ACC_LW_RARD_1",
+            "value": "Korundgeschmeide"
+        },
+        {
+            "key": "AF_ROD_LW_ELSI_1",
+            "value": "Tiimalasi"
+        },
+        {
+            "key": "AF_HAT_LW_VNLA_01_1",
+            "value": "Katzpuze"
+        },
+        {
+            "key": "AF_ACC_LW_VKTR_01_1",
+            "value": "Heilige Schleife"
+        },
+        {
+            "key": "AF_ACC_LW_GABL_1",
+            "value": "Friedensbrosche"
+        },
+        {
+            "key": "AF_ACC_LW_ELSR_1",
+            "value": "Herzchenspangen"
+        },
+        {
+            "key": "AF_ACC_FF10_TIDU_1",
+            "value": "Tidus‘ Schuhe"
+        },
+        {
+            "key": "AF_CLT_FF10_YUNA_1",
+            "value": "Yunas Kleidung"
+        },
+        {
+            "key": "AF_CLT_FF10_ARON_1",
+            "value": "Aurons Kleidung"
+        },
+        {
+            "key": "AF_ACC_NIER_N2TB_1",
+            "value": "YoRHa-Kampfbrille"
+        },
+        {
+            "key": "AF_CLT_NIER_N9TS_1",
+            "value": "YoRHa-Kampfkleidung"
+        },
+        {
+            "key": "AF_ACC_LW_MONT_01_1",
+            "value": "Umhang des Löwenkönigs"
+        },
+        {
+            "key": "AF_SWO_LW_MONT_2",
+            "value": "Löwenschwert"
+        },
+        {
+            "key": "AF_SWO_LW_ENBT_2",
+            "value": "Solidus-Schwert"
+        },
+        {
+            "key": "AF_SWO_LW_GLMS_2",
+            "value": "Frostklinge"
+        },
+        {
+            "key": "AF_BSW_LW_STRN_2",
+            "value": "Löwenklinge"
+        },
+        {
+            "key": "AF_KAT_LW_ROBB_2",
+            "value": "Schillerklinge"
+        },
+        {
+            "key": "AF_FIS_LW_ZIZA_2",
+            "value": "Illusionsklauen"
+        },
+        {
+            "key": "AF_SPE_LW_ELDE_2",
+            "value": "Speer des Wächters"
+        },
+        {
+            "key": "AF_SPE_LW_AILN_2",
+            "value": "Artisane"
+        },
+        {
+            "key": "AF_ROD_LW_MDNA_2",
+            "value": "Stab der Mondfinsternis"
+        },
+        {
+            "key": "AF_ROD_LW_AYKA_2",
+            "value": "Stab der Serapia"
+        },
+        {
+            "key": "AF_MAC_LW_MACR_2",
+            "value": "Kolben der Stahlmaid"
+        },
+        {
+            "key": "AF_LW_SHI_001",
+            "value": "Engelberts Schild"
+        },
+        {
+            "key": "AF_BSW_LW_RAMD_01_2",
+            "value": "Weisenholz-Großschwert"
+        },
+        {
+            "key": "AF_LW_SHI_003",
+            "value": "Ravesses Schild"
+        },
+        {
+            "key": "AF_SPE_LW_MACR_01_2",
+            "value": "Engelsspeer"
+        },
+        {
+            "key": "AF_SWO_FFT_RAMZ_2",
+            "value": "Klinge der Gerechten"
+        },
+        {
+            "key": "AF_SWO_FFT_ORND_2",
+            "value": "Chalabrun"
+        },
+        {
+            "key": "AF_SWO_LW_WHIS_2",
+            "value": "Maginitklinge"
+        },
+        {
+            "key": "AF_NKN_LW_KTON_2",
+            "value": "Schatten-Kunai"
+        },
+        {
+            "key": "AF_SWO_LW_MRND_2",
+            "value": "Rubinrote Klinge"
+        },
+        {
+            "key": "AF_GUN_LW_LUCA_2",
+            "value": "Verzaubernde Pistole"
+        },
+        {
+            "key": "AF_SPE_LW_VKTR_2",
+            "value": "Lanze der Gier"
+        },
+        {
+            "key": "AF_BSW_LW_RAIN_2",
+            "value": "Für Rain"
+        },
+        {
+            "key": "AF_SWO_LW_FRVA_2",
+            "value": "Für Fryevia"
+        },
+        {
+            "key": "AF_DAG_LW_VNLA_2",
+            "value": "Kris des Assassinen"
+        },
+        {
+            "key": "AF_SWO_FF1_WROL_2",
+            "value": "Schwert des Lichts"
+        },
+        {
+            "key": "AF_ROD_LW_QILF_2",
+            "value": "Phantomrute"
+        },
+        {
+            "key": "AF_BSW_LW_ORDR_2",
+            "value": "Oldoisches Schwert"
+        },
+        {
+            "key": "AF_SWO_FFT_AGRA_2",
+            "value": "FFT Agrias"
+        },
+        {
+            "key": "AF_SWO_FFT_DELT_2",
+            "value": "FFT Delita"
+        },
+        {
+            "key": "AF_MAC_LW_IRDL_2",
+            "value": "Für Ildyra"
+        },
+        {
+            "key": "AF_BSW_LW_STRN_01_2",
+            "value": "Waffe exklusiv für Styr (Ritter des Untergangs)"
+        },
+        {
+            "key": "AF_KAT_LW_LSWL_2",
+            "value": "Für Lasswell"
+        },
+        {
+            "key": "AF_SPE_LW_GRSR_2",
+            "value": "Für Glaziela"
+        },
+        {
+            "key": "AF_MAC_LW_RYER_01_2",
+            "value": "Kürbiskiller"
+        },
+        {
+            "key": "AF_SWO_LW_RIRY_01_2",
+            "value": "Zerstückelungsklinge"
+        },
+        {
+            "key": "AF_SWO_LW_HWLT_2",
+            "value": "Raidhoschwert"
+        },
+        {
+            "key": "AF_ROD_LW_SCAL_2",
+            "value": "Mystischer Wespenstab"
+        },
+        {
+            "key": "AF_SWO_FF4_CECL_2",
+            "value": "Legendenklinge"
+        },
+        {
+            "key": "AF_BOW_FF4_ROSA_2",
+            "value": "Elfenbogen"
+        },
+        {
+            "key": "AF_SPE_FF4_KAIN_2",
+            "value": "Windspeer"
+        },
+        {
+            "key": "AF_ROD_FF4_GLBZ_2",
+            "value": "Waffe exklusiv für Golbez"
+        },
+        {
+            "key": "AF_GUN_LW_LATH_2",
+            "value": "Arcadiapistole"
+        },
+        {
+            "key": "AF_SWO_LW_DEAN_2",
+            "value": "Renegat"
+        },
+        {
+            "key": "AF_BOW_LW_NIVL_2",
+            "value": "Compundbogen des V’-Clans"
+        },
+        {
+            "key": "AF_ROD_LW_SAKR_2",
+            "value": "Sakuras Stab"
+        },
+        {
+            "key": "AF_FIS_LW_RARD_2",
+            "value": "Cestus"
+        },
+        {
+            "key": "AF_FIS_LW_VNLA_01_2",
+            "value": "Katzenpfoten"
+        },
+        {
+            "key": "AF_BOW_LW_VKTR_01_2",
+            "value": "Nymphenbogen"
+        },
+        {
+            "key": "AF_GLO_LW_GABL_2",
+            "value": "Wundersam duftendes Tuch"
+        },
+        {
+            "key": "AF_BSW_LW_ELSR_2",
+            "value": "Chaosbringer"
+        },
+        {
+            "key": "AF_SWO_FF10_TIDU_2",
+            "value": "Waffe exklusiv für Tidus"
+        },
+        {
+            "key": "AF_ROD_FF10_YUNA_2",
+            "value": "Magisterstab"
+        },
+        {
+            "key": "AF_BSW_FF10_ARON_2",
+            "value": "Fata Morgana"
+        },
+        {
+            "key": "AF_KAT_NIER_N2TB_2",
+            "value": "Waffe exklusiv für 2B"
+        },
+        {
+            "key": "AF_SPE_NIER_N9TS_2",
+            "value": "Waffe exklusiv für 9S"
+        },
+        {
+            "key": "AF_SWO_LW_MONT_01_2",
+            "value": "Durandal"
+        },
+        {
+            "key": "AF_ROD_LW_MONT_01_2",
+            "value": "Löwenzepter"
+        },
+        {
+            "key": "AF_GUN_LW_CRIS_1",
+            "value": "Persönliche Muskete"
+        },
+        {
+            "key": "AF_LW_RNG_005",
+            "value": "Alexandritring"
+        },
+        {
+            "key": "AF_LW_RNG_005_1",
+            "value": "Alexandritring +1"
+        },
+        {
+            "key": "AF_LW_RNG_005_2",
+            "value": "Alexandritring +2"
+        },
+        {
+            "key": "AF_LW_RNG_005_3",
+            "value": "Alexandritring +3"
+        },
+        {
+            "key": "AF_LW_RNG_005_4",
+            "value": "Alexandritring +4"
+        },
+        {
+            "key": "AF_LW_RNG_005_5",
+            "value": "Alexandritring +5"
+        },
+        {
+            "key": "AF_LW_RNG_007",
+            "value": "Tidenring"
+        },
+        {
+            "key": "AF_LW_ARW_005",
+            "value": "Leuchtarmreif"
+        },
+        {
+            "key": "AF_LW_BSW_011",
+            "value": "Purpurklinge"
+        },
+        {
+            "key": "AF_FFT_ACC_001",
+            "value": "Zauberduft"
+        },
+        {
+            "key": "AF_FFT_ACC_001_1",
+            "value": "Zauberduft +1"
+        },
+        {
+            "key": "AF_FFT_ACC_001_2",
+            "value": "Zauberduft +2"
+        },
+        {
+            "key": "AF_FFT_ACC_001_3",
+            "value": "Zauberduft +3"
+        },
+        {
+            "key": "AF_FFT_ACC_001_4",
+            "value": "Zauberduft +4"
+        },
+        {
+            "key": "AF_FFT_ACC_001_5",
+            "value": "Zauberduft +5"
+        },
+        {
+            "key": "AF_LW_HLM_005",
+            "value": "Platinhelm"
+        },
+        {
+            "key": "AF_LW_HLM_005_1",
+            "value": "Platinhelm +1"
+        },
+        {
+            "key": "AF_LW_HLM_005_2",
+            "value": "Platinhelm +2"
+        },
+        {
+            "key": "AF_LW_HLM_005_3",
+            "value": "Platinhelm +3"
+        },
+        {
+            "key": "AF_LW_HLM_005_4",
+            "value": "Platinhelm +4"
+        },
+        {
+            "key": "AF_LW_HLM_005_5",
+            "value": "Platinhelm +5"
+        },
+        {
+            "key": "AF_LW_KAT_008",
+            "value": "Violetter Blitz"
+        },
+        {
+            "key": "AF_LW_KAT_008_1",
+            "value": "Violetter Blitz +1"
+        },
+        {
+            "key": "AF_LW_KAT_008_2",
+            "value": "Violetter Blitz +2"
+        },
+        {
+            "key": "AF_LW_KAT_008_3",
+            "value": "Violetter Blitz +3"
+        },
+        {
+            "key": "AF_LW_KAT_008_4",
+            "value": "Violetter Blitz +4"
+        },
+        {
+            "key": "AF_LW_KAT_008_5",
+            "value": "Violetter Blitz +5"
+        },
+        {
+            "key": "AF_LW_SWO_023",
+            "value": "Lohengrin"
+        },
+        {
+            "key": "AF_LW_SWO_023_1",
+            "value": "Lohengrin +1"
+        },
+        {
+            "key": "AF_LW_SWO_023_2",
+            "value": "Lohengrin +2"
+        },
+        {
+            "key": "AF_LW_SWO_023_3",
+            "value": "Lohengrin +3"
+        },
+        {
+            "key": "AF_LW_SWO_023_4",
+            "value": "Lohengrin +4"
+        },
+        {
+            "key": "AF_LW_SWO_023_5",
+            "value": "Lohengrin +5"
+        },
+        {
+            "key": "AF_LW_HAT_005",
+            "value": "Wolfsmaske"
+        },
+        {
+            "key": "AF_LW_HAT_005_1",
+            "value": "Wolfsmaske +1"
+        },
+        {
+            "key": "AF_LW_HAT_005_2",
+            "value": "Wolfsmaske +2"
+        },
+        {
+            "key": "AF_LW_HAT_005_3",
+            "value": "Wolfsmaske +3"
+        },
+        {
+            "key": "AF_LW_HAT_005_4",
+            "value": "Wolfsmaske +4"
+        },
+        {
+            "key": "AF_LW_HAT_005_5",
+            "value": "Wolfsmaske +5"
+        },
+        {
+            "key": "AF_FF4_ARM_001",
+            "value": "Schulterplatte des heiligen Ritters "
+        },
+        {
+            "key": "AF_FF4_ARM_001_1",
+            "value": "Schulterplatte des heiligen Ritters +1"
+        },
+        {
+            "key": "AF_FF4_ARM_001_2",
+            "value": "Schulterplatte des heiligen Ritters +2"
+        },
+        {
+            "key": "AF_FF4_ARM_001_3",
+            "value": "Schulterplatte des heiligen Ritters +3"
+        },
+        {
+            "key": "AF_FF4_ARM_001_4",
+            "value": "Schulterplatte des heiligen Ritters +4"
+        },
+        {
+            "key": "AF_FF4_ARM_001_5",
+            "value": "Schulterplatte des heiligen Ritters +5"
+        },
+        {
+            "key": "AF_FF4_SPE_000",
+            "value": "Windspeer"
+        },
+        {
+            "key": "AF_FF4_SPE_000_1",
+            "value": "Windspeer +1"
+        },
+        {
+            "key": "AF_FF4_SPE_000_2",
+            "value": "Windspeer +2"
+        },
+        {
+            "key": "AF_FF4_SPE_000_3",
+            "value": "Windspeer +3"
+        },
+        {
+            "key": "AF_FF4_SPE_000_4",
+            "value": "Windspeer +4"
+        },
+        {
+            "key": "AF_FF4_SPE_000_5",
+            "value": "Windspeer +5"
+        },
+        {
+            "key": "AF_FF4_BOW_000",
+            "value": "Elfenbogen"
+        },
+        {
+            "key": "AF_FF4_BOW_000_1",
+            "value": "Elfenbogen +1"
+        },
+        {
+            "key": "AF_FF4_BOW_000_2",
+            "value": "Elfenbogen +2"
+        },
+        {
+            "key": "AF_FF4_BOW_000_3",
+            "value": "Elfenbogen +3"
+        },
+        {
+            "key": "AF_FF4_BOW_000_4",
+            "value": "Elfenbogen +4"
+        },
+        {
+            "key": "AF_FF4_BOW_000_5",
+            "value": "Elfenbogen +5"
+        },
+        {
+            "key": "AF_LW_ACC_002",
+            "value": "Seele von Thamasa"
+        },
+        {
+            "key": "AF_LW_ACC_002_1",
+            "value": "Seele von Thamasa +1"
+        },
+        {
+            "key": "AF_LW_ACC_002_2",
+            "value": "Seele von Thamasa +2"
+        },
+        {
+            "key": "AF_LW_ACC_002_3",
+            "value": "Seele von Thamasa +3"
+        },
+        {
+            "key": "AF_LW_ACC_002_4",
+            "value": "Seele von Thamasa +4"
+        },
+        {
+            "key": "AF_LW_ACC_002_5",
+            "value": "Seele von Thamasa +5"
+        },
+        {
+            "key": "AF_LW_CLT_006",
+            "value": "Fides Lacerna"
+        },
+        {
+            "key": "AF_LW_CLT_006_1",
+            "value": "Fides Lacerna +1"
+        },
+        {
+            "key": "AF_LW_CLT_006_2",
+            "value": "Fides Lacerna +2"
+        },
+        {
+            "key": "AF_LW_CLT_006_3",
+            "value": "Fides Lacerna +3"
+        },
+        {
+            "key": "AF_LW_CLT_006_4",
+            "value": "Fides Lacerna +4"
+        },
+        {
+            "key": "AF_LW_CLT_006_5",
+            "value": "Fides Lacerna +5"
+        },
+        {
+            "key": "AF_LW_MAC_009",
+            "value": "Streitkolben der Erholung"
+        },
+        {
+            "key": "AF_LW_MAC_009_1",
+            "value": "Streitkolben der Erholung +1"
+        },
+        {
+            "key": "AF_LW_MAC_009_2",
+            "value": "Streitkolben der Erholung +2"
+        },
+        {
+            "key": "AF_LW_MAC_009_3",
+            "value": "Streitkolben der Erholung +3"
+        },
+        {
+            "key": "AF_LW_MAC_009_4",
+            "value": "Streitkolben der Erholung +4"
+        },
+        {
+            "key": "AF_LW_MAC_009_5",
+            "value": "Streitkolben der Erholung +5"
+        },
+        {
+            "key": "AF_LW_BOW_004",
+            "value": "Killerbogen"
+        },
+        {
+            "key": "AF_LW_BOW_004_1",
+            "value": "Killerbogen +1"
+        },
+        {
+            "key": "AF_LW_BOW_004_2",
+            "value": "Killerbogen +2"
+        },
+        {
+            "key": "AF_LW_BOW_004_3",
+            "value": "Killerbogen +3"
+        },
+        {
+            "key": "AF_LW_BOW_004_4",
+            "value": "Killerbogen +4"
+        },
+        {
+            "key": "AF_LW_BOW_004_5",
+            "value": "Killerbogen +5"
+        },
+        {
+            "key": "AF_FF14_ARW_001",
+            "value": "Unheils-Panzerhandschuhe"
+        },
+        {
+            "key": "AF_FF14_ARW_001_1",
+            "value": "Unheils-Panzerhandschuhe +1"
+        },
+        {
+            "key": "AF_FF14_ARW_001_2",
+            "value": "Unheils-Panzerhandschuhe +2"
+        },
+        {
+            "key": "AF_FF14_ARW_001_3",
+            "value": "Unheils-Panzerhandschuhe +3"
+        },
+        {
+            "key": "AF_FF14_ARW_001_4",
+            "value": "Unheils-Panzerhandschuhe +4"
+        },
+        {
+            "key": "AF_FF14_ARW_001_5",
+            "value": "Unheils-Panzerhandschuhe +5"
+        },
+        {
+            "key": "AF_FF14_HLM_001",
+            "value": "Unheils-Helm"
+        },
+        {
+            "key": "AF_FF14_HLM_001_1",
+            "value": "Unheils-Helm +1"
+        },
+        {
+            "key": "AF_FF14_HLM_001_2",
+            "value": "Unheils-Helm +2"
+        },
+        {
+            "key": "AF_FF14_HLM_001_3",
+            "value": "Unheils-Helm +3"
+        },
+        {
+            "key": "AF_FF14_HLM_001_4",
+            "value": "Unheils-Helm +4"
+        },
+        {
+            "key": "AF_FF14_HLM_001_5",
+            "value": "Unheils-Helm +5"
+        },
+        {
+            "key": "AF_LW_ROD_019",
+            "value": "Pruni Lamina"
+        },
+        {
+            "key": "AF_LW_ROD_019_1",
+            "value": "Pruni Lamina +1"
+        },
+        {
+            "key": "AF_LW_ROD_019_2",
+            "value": "Pruni Lamina +2"
+        },
+        {
+            "key": "AF_LW_ROD_019_3",
+            "value": "Pruni Lamina +3"
+        },
+        {
+            "key": "AF_LW_ROD_019_4",
+            "value": "Pruni Lamina +4"
+        },
+        {
+            "key": "AF_LW_ROD_019_5",
+            "value": "Pruni Lamina +5"
+        },
+        {
+            "key": "AF_LW_CLK_001",
+            "value": "Elfenumhang"
+        },
+        {
+            "key": "AF_LW_CLK_001_1",
+            "value": "Elfenumhang +1"
+        },
+        {
+            "key": "AF_LW_CLK_001_2",
+            "value": "Elfenumhang +2"
+        },
+        {
+            "key": "AF_LW_CLK_001_3",
+            "value": "Elfenumhang +3"
+        },
+        {
+            "key": "AF_LW_CLK_001_4",
+            "value": "Elfenumhang +4"
+        },
+        {
+            "key": "AF_LW_CLK_001_5",
+            "value": "Elfenumhang +5"
+        },
+        {
+            "key": "AF_LW_ARW_001",
+            "value": "Schutzarmband"
+        },
+        {
+            "key": "AF_LW_ARW_001_1",
+            "value": "Schutzarmband +1"
+        },
+        {
+            "key": "AF_LW_ARW_001_2",
+            "value": "Schutzarmband +2"
+        },
+        {
+            "key": "AF_LW_ARW_001_3",
+            "value": "Schutzarmband +3"
+        },
+        {
+            "key": "AF_LW_ARW_001_4",
+            "value": "Schutzarmband +4"
+        },
+        {
+            "key": "AF_LW_ARW_001_5",
+            "value": "Schutzarmband +5"
+        },
+        {
+            "key": "AF_LW_GLO_000",
+            "value": "Lederhandschuhe"
+        },
+        {
+            "key": "AF_LW_GLO_001",
+            "value": "Machthandschuhe"
+        },
+        {
+            "key": "AF_LW_GLO_001_1",
+            "value": "Machthandschuhe +1"
+        },
+        {
+            "key": "AF_LW_GLO_001_2",
+            "value": "Machthandschuhe +2"
+        },
+        {
+            "key": "AF_LW_GLO_001_3",
+            "value": "Machthandschuhe +3"
+        },
+        {
+            "key": "AF_LW_GLO_001_4",
+            "value": "Machthandschuhe +4"
+        },
+        {
+            "key": "AF_LW_GLO_001_5",
+            "value": "Machthandschuhe +5"
+        },
+        {
+            "key": "AF_LW_GLO_002",
+            "value": "Kampfhandschuhe"
+        },
+        {
+            "key": "AF_LW_GLO_002_1",
+            "value": "Kampfhandschuhe +1"
+        },
+        {
+            "key": "AF_LW_GLO_002_2",
+            "value": "Kampfhandschuhe +2"
+        },
+        {
+            "key": "AF_LW_GLO_002_3",
+            "value": "Kampfhandschuhe +3"
+        },
+        {
+            "key": "AF_LW_GLO_002_4",
+            "value": "Kampfhandschuhe +4"
+        },
+        {
+            "key": "AF_LW_GLO_002_5",
+            "value": "Kampfhandschuhe +5"
+        },
+        {
+            "key": "AF_LW_GLO_003",
+            "value": "Dunkelhandschuhe"
+        },
+        {
+            "key": "AF_LW_GLO_003_1",
+            "value": "Dunkelhandschuhe +1"
+        },
+        {
+            "key": "AF_LW_GLO_003_2",
+            "value": "Dunkelhandschuhe +2"
+        },
+        {
+            "key": "AF_LW_GLO_003_3",
+            "value": "Dunkelhandschuhe +3"
+        },
+        {
+            "key": "AF_LW_GLO_003_4",
+            "value": "Dunkelhandschuhe +4"
+        },
+        {
+            "key": "AF_LW_GLO_003_5",
+            "value": "Dunkelhandschuhe +5"
+        },
+        {
+            "key": "AF_LW_ACC_040",
+            "value": "Emblem des Verschlingens"
+        },
+        {
+            "key": "AF_LW_ACC_040_1",
+            "value": "Emblem des Verschlingens +1"
+        },
+        {
+            "key": "AF_LW_ACC_040_2",
+            "value": "Emblem des Verschlingens +2"
+        },
+        {
+            "key": "AF_LW_ACC_040_3",
+            "value": "Emblem des Verschlingens +3"
+        },
+        {
+            "key": "AF_LW_ACC_040_4",
+            "value": "Emblem des Verschlingens +4"
+        },
+        {
+            "key": "AF_LW_ACC_040_5",
+            "value": "Emblem des Verschlingens +5"
+        },
+        {
+            "key": "AF_FF10_ACCE_001",
+            "value": "Tidus' Halskette"
+        },
+        {
+            "key": "AF_FF10_ACCE_001_1",
+            "value": "Tidus' Halskette +1"
+        },
+        {
+            "key": "AF_FF10_ACCE_001_2",
+            "value": "Tidus' Halskette +2"
+        },
+        {
+            "key": "AF_FF10_ACCE_001_3",
+            "value": "Tidus' Halskette +3"
+        },
+        {
+            "key": "AF_FF10_ACCE_001_4",
+            "value": "Tidus' Halskette +4"
+        },
+        {
+            "key": "AF_FF10_ACCE_001_5",
+            "value": "Tidus' Halskette +5"
+        },
+        {
+            "key": "AF_NIER_ACCE_000",
+            "value": "Pod 153"
+        }
+    ]
+}

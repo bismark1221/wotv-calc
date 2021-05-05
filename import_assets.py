@@ -233,6 +233,22 @@ localeFolders = [
     'destFolder': 'data/en'
   },
   {
+    'srcFolder': '../wotv-assets/global/localize/de/text/masterparam',
+    'destFolder': 'data/de'
+  },
+  {
+    'srcFolder': '../wotv-assets/global/localize/es/text/masterparam',
+    'destFolder': 'data/es'
+  },
+  {
+    'srcFolder': '../wotv-assets/global/localize/ko/text/masterparam',
+    'destFolder': 'data/ko'
+  },
+  {
+    'srcFolder': '../wotv-assets/global/localize/zh/text/masterparam',
+    'destFolder': 'data/zh'
+  },
+  {
     'srcFolder': '../wotv-assets/japan/localize/ja/text/masterparam',
     'destFolder': 'data/jp'
   }
