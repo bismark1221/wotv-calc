@@ -24,6 +24,14 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '05/05',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
+          {type: 'card', dataId: 'VC_LW_MONT2'},
+          {type: 'equipment', dataId: 'AF_LW_SWO_005'}
+        ]
+      },
+      {
         date: '28/04',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_SIMR'},
@@ -39,16 +47,6 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
           {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
           {type: 'equipment', dataId: 'AF_NIER_ACCE_000'}
-        ]
-      },
-      {
-        date: '14/04',
-        items: [
-          {type: 'card', dataId: 'VC_LW_ROBB'},
-          {type: 'card', dataId: 'VC_LW_OMEG'},
-          {type: 'esper', dataId: 'UN_LW_S_OMEG'},
-          {type: 'esper', dataId: 'UN_LW_S_GLEM'},
-          {type: 'equipment', dataId: 'AF_LW_CLT_015'}
         ]
       }
     ],

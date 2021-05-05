@@ -3,14 +3,22 @@
     "dataId": "RAID_GL_01",
     "names": {
       "en": "Chocolate Flan",
-      "fr": "Chocoflan"
+      "fr": "Chocoflan",
+      "de": "Schokopudding",
+      "es": "Flan de chocolate",
+      "ko": "초코 푸딩",
+      "zh": "巧克力布丁"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_CSLI",
         "names": {
           "en": "Chocolate Flan",
-          "fr": "Chocoflan"
+          "fr": "Chocoflan",
+          "de": "Schokopudding",
+          "es": "Flan de chocolate",
+          "ko": "초코 푸딩",
+          "zh": "巧克力布丁"
         },
         "stats": {
           "HP": {
@@ -198,7 +206,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CSLI_ATK",
@@ -234,14 +246,22 @@
     "dataId": "RAID_GL_02",
     "names": {
       "en": "White Marshmallow",
-      "fr": "Guimauve blanche"
+      "fr": "Guimauve blanche",
+      "de": "Weißes Marshmallow",
+      "es": "Malvavisco blanco",
+      "ko": "하얀 마시멜로",
+      "zh": "白色棉花糖"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_CSLI_01",
         "names": {
           "en": "White Marshmallow",
-          "fr": "Guimauve blanche"
+          "fr": "Guimauve blanche",
+          "de": "Weißes Marshmallow",
+          "es": "Malvavisco blanco",
+          "ko": "하얀 마시멜로",
+          "zh": "白色棉花糖"
         },
         "stats": {
           "HP": {
@@ -456,7 +476,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CSLI_01_ATK",
@@ -492,14 +516,22 @@
     "dataId": "RAID_GL_03",
     "names": {
       "en": "Death Machine",
-      "fr": "Sentinelle"
+      "fr": "Sentinelle",
+      "de": "Todesmaschine",
+      "es": "Máquina mortal",
+      "ko": "데스 머신",
+      "zh": "死亡機器"
     },
     "bosses": [
       {
         "dataId": "UN_FF01_E_WRMC_RAID",
         "names": {
           "en": "Death Machine",
-          "fr": "Sentinelle"
+          "fr": "Sentinelle",
+          "de": "Todesmaschine",
+          "es": "Máquina mortal",
+          "ko": "데스 머신",
+          "zh": "死亡機器"
         },
         "stats": {
           "HP": {
@@ -693,7 +725,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_WRMC_ATK",
@@ -731,14 +767,22 @@
     "dataId": "RAID_GL_04",
     "names": {
       "en": "Ifrit",
-      "fr": "Ifrit"
+      "fr": "Ifrit",
+      "de": "Ifrit",
+      "es": "Ifrit",
+      "ko": "이프리트",
+      "zh": "伊弗利特"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_IFRT_RAID",
         "names": {
           "en": "Ifrit",
-          "fr": "Ifrit"
+          "fr": "Ifrit",
+          "de": "Ifrit",
+          "es": "Ifrit",
+          "ko": "이프리트",
+          "zh": "伊弗利特"
         },
         "stats": {
           "HP": {
@@ -944,7 +988,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_IFRT_ATK",
@@ -973,7 +1021,11 @@
         "dataId": "UN_LW_E_CACT_03",
         "names": {
           "en": "Gold Cactuar",
-          "fr": "Pampor"
+          "fr": "Pampor",
+          "de": "Goldkaktor",
+          "es": "Cactilio dorado",
+          "ko": "골드 사보텐",
+          "zh": "黃金仙人掌"
         },
         "stats": {
           "HP": {
@@ -1179,7 +1231,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CACT_ATK",
@@ -1215,14 +1271,22 @@
     "dataId": "RAID_GL_05",
     "names": {
       "en": "Behemoth King",
-      "fr": "Roi Béhémoth"
+      "fr": "Roi Béhémoth",
+      "de": "Behemoth-König",
+      "es": "Rey bégimo",
+      "ko": "킹 베히모스",
+      "zh": "凶惡巨獸王"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_BHMT_01_RAID",
         "names": {
           "en": "Behemoth King",
-          "fr": "Roi Béhémoth"
+          "fr": "Roi Béhémoth",
+          "de": "Behemoth-König",
+          "es": "Rey bégimo",
+          "ko": "킹 베히모스",
+          "zh": "凶惡巨獸王"
         },
         "stats": {
           "HP": {
@@ -1422,7 +1486,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_BHMT_ATK",
@@ -1451,7 +1519,11 @@
         "dataId": "UN_LW_E_TNBR_RAID",
         "names": {
           "en": "Tonberry",
-          "fr": "Tomberry"
+          "fr": "Tomberry",
+          "de": "Tomberry",
+          "es": "Tomberi",
+          "ko": "톤베리",
+          "zh": "冬貝利"
         },
         "stats": {
           "HP": {
@@ -1669,7 +1741,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_TNBR_ATK",
@@ -1705,14 +1781,22 @@
     "dataId": "RAID_GL_06",
     "names": {
       "en": "Two-Headed Dragon",
-      "fr": "Dragon à deux têtes"
+      "fr": "Dragon à deux têtes",
+      "de": "Zweiköpfiger Drache",
+      "es": "Dragón bicéfalo",
+      "ko": "투헤드 드래곤",
+      "zh": "雙頭巨龍"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_THDG_RAID",
         "names": {
           "en": "Two-Headed Dragon",
-          "fr": "Dragon à deux têtes"
+          "fr": "Dragon à deux têtes",
+          "de": "Zweiköpfiger Drache",
+          "es": "Dragón bicéfalo",
+          "ko": "투헤드 드래곤",
+          "zh": "雙頭巨龍"
         },
         "stats": {
           "HP": {
@@ -1942,7 +2026,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_THDG_ATK",
@@ -1971,7 +2059,11 @@
         "dataId": "UN_LW_E_CSLI_02",
         "names": {
           "en": "Flan Princess",
-          "fr": "Princesse flan"
+          "fr": "Princesse flan",
+          "de": "Puddingprinzessin",
+          "es": "Princesa flan",
+          "ko": "푸딩 프린세스",
+          "zh": "布丁公主"
         },
         "stats": {
           "HP": {
@@ -2207,7 +2299,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CSLI_02_ATK",
@@ -2243,14 +2339,22 @@
     "dataId": "RAID_GL_07",
     "names": {
       "en": "Forgiven Dissonance",
-      "fr": "Dissonance pardonnée"
+      "fr": "Dissonance pardonnée",
+      "de": "Geläuterter Widerspruch",
+      "es": "Disonancia perdonada",
+      "ko": "면죄된 불화",
+      "zh": "得到寬恕的失調"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_FF14_RAID_01",
         "names": {
           "en": "Forgiven Dissonance",
-          "fr": "Dissonance pardonnée"
+          "fr": "Dissonance pardonnée",
+          "de": "Geläuterter Widerspruch",
+          "es": "Disonancia perdonada",
+          "ko": "면죄된 불화",
+          "zh": "得到寬恕的失調"
         },
         "stats": {
           "HP": {
@@ -2477,7 +2581,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack Skill",
-            "fr": "Compétence d'attaque normale"
+            "fr": "Compétence d'attaque normale",
+            "de": "„Normaler Angriff“-Fähigkeit",
+            "es": "Técnica de ataque normal",
+            "ko": "일반 공격 스킬",
+            "zh": "普通攻擊技能"
           },
           "effects": [],
           "dataId": "SK_FF14BOSS_ATK",
@@ -2513,14 +2621,22 @@
     "dataId": "RAID_GL_08",
     "names": {
       "en": "Siren",
-      "fr": "Sirène"
+      "fr": "Sirène",
+      "de": "Sirene",
+      "es": "Sirena",
+      "ko": "세이렌",
+      "zh": "塞壬"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_SIRE_RAID",
         "names": {
           "en": "Siren",
-          "fr": "Sirène"
+          "fr": "Sirène",
+          "de": "Sirene",
+          "es": "Sirena",
+          "ko": "세이렌",
+          "zh": "塞壬"
         },
         "stats": {
           "HP": {
@@ -2723,7 +2839,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_SIRE_ATK",
@@ -2752,7 +2872,11 @@
         "dataId": "UN_LW_E_CACT_03_RAID",
         "names": {
           "en": "Gold Cactuar",
-          "fr": "Pampor"
+          "fr": "Pampor",
+          "de": "Goldkaktor",
+          "es": "Cactilio dorado",
+          "ko": "골드 사보텐",
+          "zh": "黃金仙人掌"
         },
         "stats": {
           "HP": {
@@ -2964,7 +3088,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CACT_ATK",
@@ -3033,14 +3161,22 @@
     "dataId": "RAID_GL_09",
     "names": {
       "en": "Golem",
-      "fr": "Golem"
+      "fr": "Golem",
+      "de": "Golem",
+      "es": "Gólem",
+      "ko": "골렘",
+      "zh": "巨像兵"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_GLEM_RAID",
         "names": {
           "en": "Golem",
-          "fr": "Golem"
+          "fr": "Golem",
+          "de": "Golem",
+          "es": "Gólem",
+          "ko": "골렘",
+          "zh": "巨像兵"
         },
         "stats": {
           "HP": {
@@ -3240,7 +3376,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_GLEM_ATK_R",
@@ -3269,7 +3409,11 @@
         "dataId": "UN_LW_E_TNBR_RAID2",
         "names": {
           "en": "Tonberry",
-          "fr": "Tomberry"
+          "fr": "Tomberry",
+          "de": "Tomberry",
+          "es": "Tomberi",
+          "ko": "톤베리",
+          "zh": "冬貝利"
         },
         "stats": {
           "HP": {
@@ -3469,7 +3613,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_TNBR_ATK",
@@ -3542,14 +3690,22 @@
     "dataId": "RAID_GL_10",
     "names": {
       "en": "Diabolos",
-      "fr": "Diabolos"
+      "fr": "Diabolos",
+      "de": "Diabolos",
+      "es": "Diablo",
+      "ko": "디아볼로스",
+      "zh": "迪亞波羅斯"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_DABL_RAID",
         "names": {
           "en": "Diabolos",
-          "fr": "Diabolos"
+          "fr": "Diabolos",
+          "de": "Diabolos",
+          "es": "Diablo",
+          "ko": "디아볼로스",
+          "zh": "迪亞波羅斯"
         },
         "stats": {
           "HP": {
@@ -3755,7 +3911,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_DABL_ATK",
@@ -3784,7 +3944,11 @@
         "dataId": "UN_LW_E_CSLI_02_R",
         "names": {
           "en": "Flan Princess",
-          "fr": "Princesse flan"
+          "fr": "Princesse flan",
+          "de": "Puddingprinzessin",
+          "es": "Princesa flan",
+          "ko": "푸딩 프린세스",
+          "zh": "布丁公主"
         },
         "stats": {
           "HP": {
@@ -3987,7 +4151,11 @@
         "attack": {
           "names": {
             "en": "Normal Attack",
-            "fr": "Attaque normale"
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
           },
           "effects": [],
           "dataId": "SK_CSLI_02_ATK",
