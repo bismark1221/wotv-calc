@@ -2513,8 +2513,6 @@ export class JsonService {
         this.addEquipment(this[this.version].equipments[equipmentId]);
       });
 
-      this.formatRaid();
-
       Object.keys(this[this.version].items).forEach(itemId => {
         this.addItem(this[this.version].items[itemId]);
       });
@@ -2525,6 +2523,8 @@ export class JsonService {
 
       this.formatQuests();
       this.formatTowers();
+
+      this.formatRaid();
 
       this.exportGLexclusiveToJP();
     }
@@ -2862,16 +2862,6 @@ export class JsonService {
   }
 
   private getVisionCardSkillsAndBuffs(visionCard, rawVisionCard) {
-    // party GL
-    if (rawVisionCard.card_skill) {
-      visionCard.partyBuffs = [{
-        classic: this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.card_skill}),
-        awake: rawVisionCard.add_card_skill_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_awake}) : null,
-        lvmax: rawVisionCard.add_card_skill_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_card_skill_buff_lvmax}) : null
-      }];
-    }
-
-    // party JP
     if (rawVisionCard.card_buffs) {
       visionCard.partyBuffs = [];
       rawVisionCard.card_buffs.forEach(dataBuff => {
@@ -2886,16 +2876,6 @@ export class JsonService {
       });
     }
 
-    // self GL
-    if (rawVisionCard.self_buff) {
-      visionCard.unitBuffs = [{
-        classic: this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.self_buff}),
-        awake: rawVisionCard.add_self_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_awake}) : null,
-        lvmax: rawVisionCard.add_self_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: rawVisionCard.add_self_buff_lvmax}) : null
-      }];
-    }
-
-    // self JP
     if (rawVisionCard.self_buffs) {
       visionCard.unitBuffs = [];
       rawVisionCard.self_buffs.forEach(dataBuff => {
@@ -3008,20 +2988,12 @@ export class JsonService {
       this.addWeather(unit, skill, this[this.version].skills[panelSkill.value].wth.id);
     }
 
-    // @TODO remove
-    // this.addSkill(panelSkill.value, unit);
-
     return skill;
   }
 
   private addSkill(skillId, item) {
     if (!this[this.version].wotvSkills[skillId] && this[this.version].skills[skillId]) {
       const rawSkill = this[this.version].skills[skillId];
-
-
-      // console.log("####### -- " + skillId);
-      // console.log(rawSkill);
-
 
       if (!this.slots[rawSkill.slot]) {
         console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
@@ -3156,7 +3128,9 @@ export class JsonService {
     } else {
       dataSkill = this[this.version].skills[skillId];
       skill.names = {};
-      this.getNames(skill, 'skill', false);
+      if (this.skillTypes[dataSkill.type] !== 'card_passive') {
+        this.getNames(skill, 'skill', false);
+      }
 
       dataSkill.names = skill.names;
 
@@ -4255,6 +4229,7 @@ export class JsonService {
 
     this[this.version].raidBoss[bossId].param.forEach(quest => {
       this.addBossSkill(boss, quest.quest_id, quest.lv_min, quest.lv_max);
+      this.updateRaidQuest(quest);
 
       if (raid.maxLevel < quest.lv_max) {
         raid.maxLevel = quest.lv_max;
@@ -4298,6 +4273,15 @@ export class JsonService {
           }
         });
       }
+    }
+  }
+
+  updateRaidQuest(quest) {
+    if (this[this.version].wotvQuests[quest.quest_id]) {
+      this[this.version].wotvQuests[quest.quest_id].enemies.forEach(enemy => {
+        enemy.minLevel = quest.lv_min;
+        enemy.maxLevel = quest.lv_max;
+      });
     }
   }
 
@@ -4477,8 +4461,8 @@ export class JsonService {
     }
 
     // Search in whole units
-    Object.keys(this[this.version].wotvUnits).forEach(unitId => {
-      const unitSkills = [];
+    Object.keys(this[this.version].wotvOtherUnits).forEach(unitId => {
+      /*const unitSkills = [];
       Object.keys(this[this.version].wotvUnits[unitId].board.nodes).forEach(nodeId => {
         unitSkills.push(this[this.version].wotvUnits[unitId].board.nodes[nodeId].skill);
       });
@@ -4497,7 +4481,7 @@ export class JsonService {
             }
           });
         }
-      });
+      });*/
     });
   }
 
@@ -4885,8 +4869,13 @@ export class JsonService {
         element: rawUnit.elem ? this.elements[rawUnit.elem[0]] : null,
         image: null,
         species: '',
-        size: rawUnit.size ? rawUnit.size : 0
+        size: rawUnit.size ? rawUnit.size : 0,
+        realMaxLevel: 99
       };
+
+      if (this[this.version].grows[rawUnit.grow]) {
+        unit.realMaxLevel = this[this.version].grows[rawUnit.grow].curve[0].lv
+      }
 
       if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
         const baseUnit = this[this.version].units[rawUnit.base_unit_iname];

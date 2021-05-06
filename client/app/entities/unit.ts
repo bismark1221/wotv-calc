@@ -102,6 +102,7 @@ export class Unit {
   board;
   attack;
   size;
+  realMaxLevel;
 
   // Only for builder
   star;
@@ -161,6 +162,7 @@ export class Unit {
     this.replacedSkills = unit.replacedSkills;
     this.species = unit.species;
     this.size = unit.size;
+    this.realMaxLevel = unit.realMaxLevel;
   }
 
   getName(translateService): string {
@@ -344,7 +346,7 @@ export class Unit {
       const max = this.stats[stat].max;
       const ex = this.stats[stat].ex;
 
-      this.stats[stat].base = Math.floor(min + ((max - min) / (99 - 1) * (this.level - 1)));
+      this.stats[stat].base = Math.floor(min + ((max - min) / ((this.realMaxLevel ? this.realMaxLevel : 99) - 1) * (this.level - 1)));
 
       if (this.exJobs.length > 0 && this.jobsData[0].level > 15 && this.level > 99) {
         this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)));

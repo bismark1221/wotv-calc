@@ -212,10 +212,13 @@ export class QuestComponent implements OnInit {
       formattedEnemy.element = enemy.element;
     }
 
-    if (enemy.lv) {
+    if (enemy.minLevel) {
+      formattedEnemy.level = enemy.minLevel;
+      formattedEnemy.hasMaxLevel = true;
+    } else if (enemy.lv) {
       formattedEnemy.level = enemy.lv;
     } else {
-      formattedEnemy.level = 0;
+      formattedEnemy.level = 1;
     }
 
     formattedEnemy.job = null;
@@ -226,6 +229,41 @@ export class QuestComponent implements OnInit {
 
     formattedEnemy.calculateBaseStats(true);
     formattedEnemy.calculateTotalStats();
+
+    // console.log(formattedEnemy)
+
+    if (enemy.minLevel) {
+      const statsToRange = [
+        'HP',
+        'TP',
+        'AP',
+        'ATK',
+        'DEF',
+        'SPR',
+        'MAG',
+        'DEX',
+        'AGI',
+        'LUCK'
+      ];
+
+      const minTotals = {};
+      const minBases = {};
+      statsToRange.forEach(stat => {
+        minTotals[stat] = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].total));
+        minBases[stat] = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].baseTotal));
+      });
+
+      formattedEnemy.level = enemy.maxLevel;
+      formattedEnemy.calculateBaseStats(true);
+      formattedEnemy.calculateTotalStats();
+
+      statsToRange.forEach(stat => {
+        formattedEnemy.stats[stat].minTotal = minTotals[stat];
+        formattedEnemy.stats[stat].minBaseTotal = minBases[stat];
+        formattedEnemy.stats[stat].maxTotal = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].total));
+        formattedEnemy.stats[stat].maxBaseTotal = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].baseTotal));
+      });
+    }
 
     formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
 
@@ -305,14 +343,26 @@ export class QuestComponent implements OnInit {
 
     if (calcType === 'percent') {
       enemy.stats[type].total += Math.floor(enemy.stats[type].baseTotal * value / 100);
+      if (enemy.hasMaxLevel) {
+        enemy.stats[type].minTotal += Math.floor(enemy.stats[type].minBaseTotal * value / 100);
+        enemy.stats[type].maxTotal += Math.floor(enemy.stats[type].maxBaseTotal * value / 100);
+      }
     } else {
       enemy.stats[type].total += value;
+      if (enemy.hasMaxLevel) {
+        enemy.stats[type].minTotal += value;
+        enemy.stats[type].maxTotal += value;
+      }
     }
   }
 
   applyStatsForJob(enemy) {
     Object.keys(enemy.statsForJob).forEach(statType => {
       enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
+      if (enemy.hasMaxLevel) {
+        enemy.stats[statType].minTotal += Math.floor(enemy.stats[statType].minBaseTotal * enemy.statsForJob[statType] / 100);
+        enemy.stats[statType].maxTotal += Math.floor(enemy.stats[statType].maxBaseTotal * enemy.statsForJob[statType] / 100);
+      }
     });
   }
 

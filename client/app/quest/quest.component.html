@@ -171,6 +171,7 @@
           <td colspan="99" class="enemyDetailCol">
             <table>
               <tr>
+                <th class="sub" *ngIf="enemy.hasMaxLevel"></th>
                 <th class="sub">HP</th>
                 <th class="sub">TP</th>
                 <th class="sub">AP</th>
@@ -184,7 +185,7 @@
                 <th class="sub">MOVE</th>
                 <th class="sub">JUMP</th>
               </tr>
-              <tr>
+              <tr *ngIf="!enemy.hasMaxLevel">
                 <td>{{ enemy.stats.HP.total }}</td>
                 <td>{{ enemy.stats.TP.total }}</td>
                 <td>{{ enemy.stats.AP.total }}</td>
@@ -197,6 +198,34 @@
                 <td>{{ enemy.stats.LUCK.total }}</td>
                 <td>{{ enemy.stats.MOVE.total }}</td>
                 <td>{{ enemy.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="enemy.hasMaxLevel">
+                <td>MIN</td>
+                <td>{{ enemy.stats.HP.minTotal }}</td>
+                <td>{{ enemy.stats.TP.minTotal }}</td>
+                <td>{{ enemy.stats.AP.minTotal }}</td>
+                <td>{{ enemy.stats.ATK.minTotal }}</td>
+                <td>{{ enemy.stats.DEF.minTotal }}</td>
+                <td>{{ enemy.stats.MAG.minTotal }}</td>
+                <td>{{ enemy.stats.SPR.minTotal }}</td>
+                <td>{{ enemy.stats.DEX.minTotal }}</td>
+                <td>{{ enemy.stats.AGI.minTotal }}</td>
+                <td>{{ enemy.stats.LUCK.minTotal }}</td>
+                <td rowspan="2">{{ enemy.stats.MOVE.total }}</td>
+                <td rowspan="2">{{ enemy.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="enemy.hasMaxLevel">
+                <td>MAX</td>
+                <td>{{ enemy.stats.HP.maxTotal }}</td>
+                <td>{{ enemy.stats.TP.maxTotal }}</td>
+                <td>{{ enemy.stats.AP.maxTotal }}</td>
+                <td>{{ enemy.stats.ATK.maxTotal }}</td>
+                <td>{{ enemy.stats.DEF.maxTotal }}</td>
+                <td>{{ enemy.stats.MAG.maxTotal }}</td>
+                <td>{{ enemy.stats.SPR.maxTotal }}</td>
+                <td>{{ enemy.stats.DEX.maxTotal }}</td>
+                <td>{{ enemy.stats.AGI.maxTotal }}</td>
+                <td>{{ enemy.stats.LUCK.maxTotal }}</td>
               </tr>
             </table>
             <table>
