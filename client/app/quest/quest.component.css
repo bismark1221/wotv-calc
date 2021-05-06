@@ -333,8 +333,9 @@
 
 
 .allyTable, .enemyTable, .chestTable, .objectTable, .switchTable {
-  width: 100%;
+  width: 120%;
   margin-top: 10px;
+  margin-left: -100px;
 }
 
 .allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
@@ -351,4 +352,21 @@
 
 .heightResTd {
   height: 33px;
+}
+
+.skilImg, .atkBasedImg, .damageSkillImg, .timeImg {
+  width: 32px;
+  height: 32px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillEffectTd {
+  text-align: left;
+}
+
+.enemyLine {
+  cursor: pointer;
 }

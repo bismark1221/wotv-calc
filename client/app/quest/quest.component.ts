@@ -268,6 +268,20 @@ export class QuestComponent implements OnInit {
     formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
 
     formattedEnemy.skills = [];
+
+    if (formattedEnemy.attack) {
+      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.attack));
+      formattedSkill.name = this.nameService.getName(formattedSkill);
+
+      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+
+      formattedEnemy.skills.push(formattedSkill);
+    }
+
     for (const rawSkill of this.quest[type][index].skills) {
       let formattedSkill = await this.skillService.getSkill(rawSkill.iname);
       if (formattedSkill) {
@@ -301,13 +315,25 @@ export class QuestComponent implements OnInit {
       }
     }
 
+    if (formattedEnemy.limit) {
+      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.limit));
+      formattedSkill.name = this.nameService.getName(formattedSkill);
+
+      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+
+      formattedEnemy.skills.push(formattedSkill);
+    }
+
     this.applyStatsForJob(formattedEnemy);
     this.getAvailableStatTypes(formattedEnemy);
 
     // @TODO Managed INITIAL_AP !!! RANGE !!!
 
     this.isCollapsedEnemy[index] = true;
-
 
     return formattedEnemy;
   }
