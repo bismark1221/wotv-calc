@@ -4874,7 +4874,7 @@ export class JsonService {
       };
 
       if (this[this.version].grows[rawUnit.grow]) {
-        unit.realMaxLevel = this[this.version].grows[rawUnit.grow].curve[0].lv
+        unit.realMaxLevel = this[this.version].grows[rawUnit.grow].curve[0].lv;
       }
 
       if (rawUnit.base_unit_iname && this[this.version].units[rawUnit.base_unit_iname]) {
