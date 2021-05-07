@@ -9256,7 +9256,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 13,
+      "priority": 9,
       "start_at": "2021/04/21 12:00:00",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9382,7 +9382,7 @@
         "type": 1,
         "unlock_id": "EventQuest"
       },
-      "priority": 14,
+      "priority": 11,
       "start_at": "2021/04/21 12:00:00",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9452,7 +9452,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 4,
+      "priority": 7,
       "start_at": "2021/05/01",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9466,7 +9466,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 5,
+      "priority": 8,
       "start_at": "2021/05/01",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9482,7 +9482,7 @@
       },
       "priority": 6,
       "start_at": "2021/05/01",
-      "end_at": "2021/06/09 14:59:59"
+      "end_at": "2021/05/07 13:59:59"
     },
     {
       "id": 679,
@@ -9496,7 +9496,7 @@
       },
       "priority": 7,
       "start_at": "2021/05/01",
-      "end_at": "2021/06/09 14:59:59"
+      "end_at": "2021/05/07 13:59:59"
     },
     {
       "id": 680,
@@ -9508,7 +9508,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 8,
+      "priority": 10,
       "start_at": "2021/05/01",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9522,7 +9522,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 9,
+      "priority": 13,
       "start_at": "2021/05/01",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9536,7 +9536,7 @@
         "type": 0,
         "unlock_id": "None"
       },
-      "priority": 10,
+      "priority": 14,
       "start_at": "2021/05/01",
       "end_at": "2021/06/09 14:59:59"
     },
@@ -9566,6 +9566,76 @@
       },
       "priority": 12,
       "start_at": "2021/05/01",
+      "end_at": "2021/05/14 9:59:59"
+    },
+    {
+      "id": 685,
+      "iname": "GachaBanner_0472",
+      "appeal_category": 2,
+      "transition_destination": 0,
+      "sval": "GachaBanner_0472",
+      "setting": {
+        "type": 0,
+        "unlock_id": "None"
+      },
+      "priority": 2,
+      "start_at": "2021/05/07 15:00:00",
+      "end_at": "2021/05/14 9:59:59"
+    },
+    {
+      "id": 686,
+      "iname": "ev_pt_ff7r_01",
+      "appeal_category": 0,
+      "transition_destination": 4,
+      "sval": "ev_pt_ff7r_01",
+      "setting": {
+        "type": 1,
+        "unlock_id": "EventQuest"
+      },
+      "priority": 3,
+      "start_at": "2021/05/07 15:00:00",
+      "end_at": "2021/05/14 9:59:59"
+    },
+    {
+      "id": 687,
+      "iname": "ev_1_5Anv_01",
+      "appeal_category": 0,
+      "transition_destination": 4,
+      "sval": "ev_1_5Anv_01",
+      "setting": {
+        "type": 1,
+        "unlock_id": "EventQuest"
+      },
+      "priority": 4,
+      "start_at": "2021/05/07 15:00:00",
+      "end_at": "2021/05/14 4:59:59"
+    },
+    {
+      "id": 688,
+      "iname": "GachaBanner_0470",
+      "appeal_category": 2,
+      "transition_destination": 0,
+      "sval": "GachaBanner_0470",
+      "setting": {
+        "type": 0,
+        "unlock_id": "None"
+      },
+      "priority": 5,
+      "start_at": "2021/05/07 15:00:00",
+      "end_at": "2021/05/24 14:59:59"
+    },
+    {
+      "id": 689,
+      "iname": "LAPS_SHOP_LIMITED_0215",
+      "appeal_category": 1,
+      "transition_destination": 2,
+      "sval": "LAPS_SHOP_LIMITED_0215",
+      "setting": {
+        "type": 0,
+        "unlock_id": "None"
+      },
+      "priority": 6,
+      "start_at": "2021/05/07 15:00:00",
       "end_at": "2021/05/14 9:59:59"
     }
   ]

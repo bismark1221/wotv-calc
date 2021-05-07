@@ -504,6 +504,11 @@
         "JB_LW_KNT_SHINE",
         "JB_LW_MNK_SHINE"
       ],
+      "ccsets": [
+        {
+          "m": "JB_LW_ENBT_M"
+        }
+      ],
       "ai": "AI_PLAYER_LW_PLD",
       "buff_pri": "BUFFPRI_PHYATK",
       "debuff_pri": "DEBUFFPRI_PHYATK",
@@ -541,6 +546,30 @@
           "mag": 54,
           "mnd": 0,
           "dex": 94,
+          "spd": 31,
+          "luk": 106,
+          "eda": -10,
+          "asl": 20,
+          "api": 5,
+          "abl": 25,
+          "ash": 20,
+          "ama": -30,
+          "csw": 50,
+          "cch": 5,
+          "cdm": 50,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 1800,
+          "mp": 95,
+          "ap": 90,
+          "atk": 185,
+          "def": 0,
+          "mag": 70,
+          "mnd": 0,
+          "dex": 134,
           "spd": 31,
           "luk": 106,
           "eda": -10,
@@ -2540,6 +2569,11 @@
         "JB_LW_GUN_SHINE",
         "JB_LW_CLR_SHINE"
       ],
+      "ccsets": [
+        {
+          "m": "JB_LW_FINA_M"
+        }
+      ],
       "ai": "AI_PLAYER_LW_FINA",
       "buff_pri": "BUFFPRI_PHYATK",
       "debuff_pri": "DEBUFFPRI_PHYATK",
@@ -2580,6 +2614,31 @@
           "dex": 73,
           "spd": 34,
           "luk": 81,
+          "eda": -15,
+          "asl": -10,
+          "api": -10,
+          "abl": -10,
+          "ash": -10,
+          "ama": 5,
+          "cpa": -25,
+          "cpe": 50,
+          "cst": 50,
+          "cch": 10,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 816,
+          "mp": 84,
+          "ap": 78,
+          "atk": 173,
+          "def": 0,
+          "mag": 226,
+          "mnd": 0,
+          "dex": 118,
+          "spd": 34,
+          "luk": 111,
           "eda": -15,
           "asl": -10,
           "api": -10,
@@ -3136,6 +3195,11 @@
         "JB_LW_PLD_ICE",
         "JB_LW_CLR_ICE"
       ],
+      "ccsets": [
+        {
+          "m": "JB_LW_SRJS_M"
+        }
+      ],
       "ai": "AI_PLAYER_LW_LAN",
       "buff_pri": "BUFFPRI_PHYATK",
       "debuff_pri": "DEBUFFPRI_PHYATK",
@@ -3173,6 +3237,28 @@
           "dex": 91,
           "spd": 27,
           "luk": 72,
+          "efi": -20,
+          "asl": 5,
+          "abl": -30,
+          "ama": -30,
+          "cfr": 40,
+          "cst": -35,
+          "cch": -5,
+          "mov": 3,
+          "jmp": 1,
+          "dmax": 9999
+        },
+        {
+          "hp": 1195,
+          "mp": 63,
+          "ap": 59,
+          "atk": 209,
+          "def": 0,
+          "mag": 84,
+          "mnd": 0,
+          "dex": 134,
+          "spd": 27,
+          "luk": 94,
           "efi": -20,
           "asl": 5,
           "abl": -30,
@@ -53758,7 +53844,8 @@
       "nb_exp_coef_id": "SB_EXP_WATER_01",
       "nb_lv_tbl": "SB_LVTBL_UR_01",
       "nb_awake_id": [
-        "UN_LW_S_SIRE_AW1"
+        "UN_LW_S_SIRE_AW1",
+        "UN_LW_S_SIRE_AW2"
       ],
       "unit_medal_num": 0
     },
@@ -53834,30 +53921,32 @@
       "atkskl": "SK_SMN_SIRE",
       "status": [
         {
-          "hp": 776,
-          "mp": 29,
-          "ap": 25,
-          "atk": 41,
-          "mag": 67,
-          "dex": 64,
+          "hp": 787,
+          "mp": 30,
+          "ap": 26,
+          "atk": 42,
+          "mag": 69,
+          "dex": 65,
           "spd": 18,
-          "luk": 55,
+          "luk": 57,
           "efi": 10,
           "eth": -10,
+          "cdm": 5,
           "mov": 0,
           "jmp": 0
         },
         {
-          "hp": 940,
+          "hp": 1152,
           "mp": 33,
           "ap": 28,
-          "atk": 48,
-          "mag": 77,
-          "dex": 72,
-          "spd": 20,
-          "luk": 62,
+          "atk": 55,
+          "mag": 88,
+          "dex": 82,
+          "spd": 19,
+          "luk": 71,
           "efi": 10,
           "eth": -10,
+          "cdm": 25,
           "mov": 0,
           "jmp": 0
         }
@@ -57692,7 +57781,8 @@
       "nb_exp_coef_id": "SB_EXP_SOIL_01",
       "nb_lv_tbl": "SB_LVTBL_SSR_01",
       "nb_awake_id": [
-        "UN_LW_S_OCHU_AW1"
+        "UN_LW_S_OCHU_AW1",
+        "UN_LW_S_OCHU_AW2"
       ],
       "unit_medal_num": 0
     },
@@ -57768,30 +57858,32 @@
       "atkskl": "SK_SMN_OCHU",
       "status": [
         {
-          "hp": 859,
-          "mp": 34,
-          "ap": 29,
+          "hp": 872,
+          "mp": 35,
+          "ap": 30,
           "atk": 53,
           "mag": 53,
-          "dex": 43,
+          "dex": 44,
           "spd": 9,
-          "luk": 45,
+          "luk": 46,
           "ewi": -5,
           "eth": 5,
+          "ccf": 5,
           "mov": 0,
           "jmp": 0
         },
         {
-          "hp": 1042,
-          "mp": 37,
-          "ap": 31,
-          "atk": 61,
-          "mag": 61,
-          "dex": 49,
-          "spd": 10,
-          "luk": 52,
+          "hp": 1283,
+          "mp": 39,
+          "ap": 32,
+          "atk": 69,
+          "mag": 69,
+          "dex": 56,
+          "spd": 11,
+          "luk": 58,
           "ewi": -5,
           "eth": 5,
+          "ccf": 20,
           "mov": 0,
           "jmp": 0
         }

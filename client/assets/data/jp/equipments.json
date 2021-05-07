@@ -48921,24 +48921,24 @@
     "slug": "shinra-banguru",
     "stats": {
       "HP": {
-        "min": 20,
-        "max": 407
+        "min": 19,
+        "max": 370
       },
       "DEF": {
-        "min": 0,
+        "min": 1,
         "max": 16
       },
       "ACCURACY": {
-        "min": 1,
+        "min": 0,
         "max": 12
       },
       "EVADE": {
-        "min": 1,
+        "min": 0,
         "max": 12
       },
       "CRITIC_RATE": {
-        "min": 1,
-        "max": 20
+        "min": 0,
+        "max": 12
       }
     },
     "type": "ACC",
@@ -48966,25 +48966,25 @@
           "CRITIC_AVOID": 0
         }
       },
-      "AFGROW_DOD_50": {
-        "dataId": "AFGROW_DOD_50",
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
         "names": {
-          "en": "ドッジ"
+          "en": "クリティカル"
         },
         "curve": {
           "MAX_LV": 50,
-          "HP": -30,
+          "HP": -20,
           "TP": 0,
           "AP": 0,
-          "ATK": -30,
-          "DEF": -60,
-          "MAG": -30,
-          "SPR": -60,
-          "ACCURACY": -75,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
           "DEX": 0,
           "AGI": 0,
-          "EVADE": 0,
-          "CRITIC_RATE": -75,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
           "CRITIC_AVOID": 0
         }
       },
@@ -49012,22 +49012,168 @@
       }
     },
     "skills": [
-      [],
       [
         {
           "names": {
-            "en": "神羅バングル"
+            "en": "汎用クリティカルダメージアップ3～8"
           },
-          "dataId": "SK_FF7R_ACC_003_1",
+          "dataId": "SK_LW_CRI_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ10～15"
+          },
+          "dataId": "SK_LW_CRI_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ3～8"
+          },
+          "dataId": "SK_LW_CRI_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用防御貫通1"
+          },
+          "dataId": "SK_LW_DEFPIERCE_1",
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ10～15"
+          },
+          "dataId": "SK_LW_CRI_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ3～8"
+          },
+          "dataId": "SK_LW_CRI_1",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用防御貫通2"
+          },
+          "dataId": "SK_LW_DEFPIERCE_2",
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
               "minValue": 2,
               "maxValue": 2,
               "calcType": "fixe",
-              "rate": 200,
-              "target": "self",
-              "buffOnCondition": "ON_PHYSIC_ATTACK"
+              "target": "self"
             }
           ],
           "type": "support",
@@ -49041,23 +49187,68 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ10～15"
+          },
+          "dataId": "SK_LW_CRI_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "神羅バングル"
+            "en": "汎用クリティカルダメージアップ3～8"
           },
-          "dataId": "SK_FF7R_ACC_003_2",
+          "dataId": "SK_LW_CRI_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用防御貫通3"
+          },
+          "dataId": "SK_LW_DEFPIERCE_3",
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
               "minValue": 3,
               "maxValue": 3,
               "calcType": "fixe",
-              "rate": 200,
-              "target": "self",
-              "buffOnCondition": "ON_PHYSIC_ATTACK"
+              "target": "self"
             }
           ],
           "type": "support",
@@ -49071,23 +49262,68 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ10～15"
+          },
+          "dataId": "SK_LW_CRI_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "神羅バングル"
+            "en": "汎用クリティカルダメージアップ3～8"
           },
-          "dataId": "SK_FF7R_ACC_003_3",
+          "dataId": "SK_LW_CRI_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用防御貫通5"
+          },
+          "dataId": "SK_LW_DEFPIERCE_4",
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
               "minValue": 5,
               "maxValue": 5,
               "calcType": "fixe",
-              "rate": 200,
-              "target": "self",
-              "buffOnCondition": "ON_PHYSIC_ATTACK"
+              "target": "self"
             }
           ],
           "type": "support",
@@ -49101,23 +49337,68 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用クリティカルダメージアップ10～15"
+          },
+          "dataId": "SK_LW_CRI_5",
+          "effects": [
+            {
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
         }
       ],
       [
         {
           "names": {
-            "en": "神羅バングル"
+            "en": "汎用クリティカルダメージアップ3～8"
           },
-          "dataId": "SK_FF7R_ACC_003_4",
+          "dataId": "SK_LW_CRI_1",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
+              "type": "CRITIC_DAMAGE",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "汎用防御貫通10"
+          },
+          "dataId": "SK_LW_DEFPIERCE_5",
+          "effects": [
+            {
+              "type": "DEFENSE_PENETRATION",
               "minValue": 10,
               "maxValue": 10,
               "calcType": "fixe",
-              "rate": 200,
-              "target": "self",
-              "buffOnCondition": "ON_PHYSIC_ATTACK"
+              "target": "self"
             }
           ],
           "type": "support",
@@ -49131,31 +49412,23 @@
           "grow": "ARTIFACT_50",
           "target": "self",
           "maxLevel": 30
-        }
-      ],
-      [
+        },
         {
           "names": {
-            "en": "神羅バングル"
+            "en": "汎用クリティカルダメージアップ10～15"
           },
-          "dataId": "SK_FF7R_ACC_003_5",
+          "dataId": "SK_LW_CRI_5",
           "effects": [
             {
-              "type": "HUMAN_KILLER",
-              "minValue": 15,
+              "type": "CRITIC_DAMAGE",
+              "minValue": 10,
               "maxValue": 15,
               "calcType": "fixe",
-              "rate": 200,
-              "target": "self",
-              "buffOnCondition": "ON_PHYSIC_ATTACK"
+              "target": "self"
             }
           ],
           "type": "support",
           "upgrade": [
-            1,
-            2,
-            3,
-            4,
             5
           ],
           "grow": "ARTIFACT_50",

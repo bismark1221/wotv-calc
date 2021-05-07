@@ -61168,7 +61168,9 @@
       "atk_formula_t3": 5,
       "atk_det": 0,
       "def_wep": "AF_LW_SWO_INIT",
-      "elem_pri": 1,
+      "elem": [
+        7
+      ],
       "eff_val": 40,
       "eff_val1": 75,
       "s_buffs": [
@@ -61233,7 +61235,7 @@
     {
       "iname": "SK_LW_EC_PLD_C_04B",
       "slot": 1,
-      "cap": 20,
+      "cap": 1,
       "lvup_cost_rate": 100,
       "motnm": "PLD/skl_M2",
       "effnm": "ef_PLD_M02",
@@ -67797,7 +67799,7 @@
       ]
     },
     {
-      "iname": "SK_FF7R_ACC_003_1",
+      "iname": "SK_LW_DEFPIERCE_1",
       "cap": 50,
       "grow": "ARTIFACT_50",
       "lvup_cost_rate": 100,
@@ -67806,11 +67808,11 @@
       "eff_type": 0,
       "target": 0,
       "s_buffs": [
-        "BUFF_FF7R_ACC_003_1"
+        "BUFF_LW_DEFPIERCE_1"
       ]
     },
     {
-      "iname": "SK_FF7R_ACC_003_2",
+      "iname": "SK_LW_DEFPIERCE_2",
       "cap": 50,
       "grow": "ARTIFACT_50",
       "lvup_cost_rate": 100,
@@ -67819,11 +67821,11 @@
       "eff_type": 0,
       "target": 0,
       "s_buffs": [
-        "BUFF_FF7R_ACC_003_2"
+        "BUFF_LW_DEFPIERCE_2"
       ]
     },
     {
-      "iname": "SK_FF7R_ACC_003_3",
+      "iname": "SK_LW_DEFPIERCE_3",
       "cap": 50,
       "grow": "ARTIFACT_50",
       "lvup_cost_rate": 100,
@@ -67832,11 +67834,11 @@
       "eff_type": 0,
       "target": 0,
       "s_buffs": [
-        "BUFF_FF7R_ACC_003_3"
+        "BUFF_LW_DEFPIERCE_3"
       ]
     },
     {
-      "iname": "SK_FF7R_ACC_003_4",
+      "iname": "SK_LW_DEFPIERCE_4",
       "cap": 50,
       "grow": "ARTIFACT_50",
       "lvup_cost_rate": 100,
@@ -67845,11 +67847,11 @@
       "eff_type": 0,
       "target": 0,
       "s_buffs": [
-        "BUFF_FF7R_ACC_003_4"
+        "BUFF_LW_DEFPIERCE_4"
       ]
     },
     {
-      "iname": "SK_FF7R_ACC_003_5",
+      "iname": "SK_LW_DEFPIERCE_5",
       "cap": 50,
       "grow": "ARTIFACT_50",
       "lvup_cost_rate": 100,
@@ -67858,7 +67860,33 @@
       "eff_type": 0,
       "target": 0,
       "s_buffs": [
-        "BUFF_FF7R_ACC_003_5"
+        "BUFF_LW_DEFPIERCE_5"
+      ]
+    },
+    {
+      "iname": "SK_LW_CRI_1",
+      "cap": 50,
+      "grow": "ARTIFACT_50",
+      "lvup_cost_rate": 100,
+      "type": 6,
+      "timing": 1,
+      "eff_type": 0,
+      "target": 0,
+      "s_buffs": [
+        "BUFF_LW_CRI_1"
+      ]
+    },
+    {
+      "iname": "SK_LW_CRI_5",
+      "cap": 50,
+      "grow": "ARTIFACT_50",
+      "lvup_cost_rate": 100,
+      "type": 6,
+      "timing": 1,
+      "eff_type": 0,
+      "target": 0,
+      "s_buffs": [
+        "BUFF_LW_CRI_5"
       ]
     },
     {
