@@ -21,10 +21,34 @@ export class EspersComponent implements OnInit {
     element: [],
     threeStars: false
   };
-  isCollapsedRarity = false;
-  isCollapsedElement = false;
-  isCollapsedUpgrade = false;
-  isCollapsedLimited = false;
+
+  isFilterChecked = {
+    rarity: [],
+    element: [],
+    limited: []
+  };
+  collapsed = {
+    rarity: false,
+    element: false,
+    limited: false,
+    upgrade: false
+  };
+
+  rarities = [
+    'UR',
+    'MR',
+    'SR'
+  ];
+  elements = [
+    'fire',
+    'ice',
+    'wind',
+    'earth',
+    'lightning',
+    'water',
+    'light',
+    'dark'
+  ];
 
   constructor(
     private esperService: EsperService,
@@ -39,6 +63,14 @@ export class EspersComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Espers');
+
+    if (sessionStorage.getItem('espersFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
+    }
+    if (sessionStorage.getItem('espersCollapsed')) {
+      this.collapsed = JSON.parse(sessionStorage.getItem('espersCollapsed'));
+    }
+    this.filterChecked();
 
     await this.getEspers();
   }
@@ -76,11 +108,44 @@ export class EspersComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
+    sessionStorage.setItem('espersFilters', JSON.stringify(this.filters));
+
     await this.getEspers();
   }
 
   async toggleThreeStars() {
     this.filters.threeStars = !this.filters.threeStars;
     await this.getEspers();
+  }
+
+  filterChecked() {
+    this.rarities.forEach(rarity => {
+      if (this.filters.rarity.indexOf(rarity) === -1) {
+        this.isFilterChecked.rarity[rarity] = false;
+      } else {
+        this.isFilterChecked.rarity[rarity] = true;
+      }
+    });
+
+    ['true', 'false'].forEach(limited => {
+      if (this.filters.limited.indexOf(limited === 'true' ? true : false) === -1) {
+        this.isFilterChecked.limited[limited] = false;
+      } else {
+        this.isFilterChecked.limited[limited] = true;
+      }
+    });
+
+    this.elements.forEach(element => {
+      if (this.filters.element.indexOf(element) === -1) {
+        this.isFilterChecked.element[element] = false;
+      } else {
+        this.isFilterChecked.element[element] = true;
+      }
+    });
+  }
+
+  toogleCollapse(section) {
+    this.collapsed[section] = !this.collapsed[section];
+    sessionStorage.setItem('espersCollapsed', JSON.stringify(this.collapsed));
   }
 }

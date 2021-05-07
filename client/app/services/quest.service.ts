@@ -236,7 +236,7 @@ export class QuestService {
         return 'GVG';
       break;
       case 'tuto' :
-        return 'Tutoriel';
+        return 'Tutorial';
       break;
       case 'beginner' :
         return 'Beginner';

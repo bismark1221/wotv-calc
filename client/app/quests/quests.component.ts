@@ -20,7 +20,31 @@ export class QuestsComponent implements OnInit {
   filters = {
     type: []
   };
+  isFilterChecked = {
+    type: []
+  };
   isCollapsedType = false;
+  questTypes = [
+    'story',
+    'event',
+    'hard_quest_unit',
+    'multi',
+    'character_quest',
+    'esper_quest',
+    'arena',
+    'raid',
+    'rank_pvp',
+    'free_pvp',
+    'friend_pvp',
+    'gvg',
+    'tuto',
+    'beginner',
+    'guild_quest',
+    'selection',
+    'draft_pvp',
+    'hard_quest_vc',
+    'tower'
+  ];
 
   constructor(
     private questService: QuestService,
@@ -37,6 +61,11 @@ export class QuestsComponent implements OnInit {
 
   ngOnInit() {
     this.navService.setTitle('Quests');
+
+    if (sessionStorage.getItem('questsFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('questsFilters'));
+    }
+    this.filterChecked();
 
     this.getQuests();
   }
@@ -74,7 +103,20 @@ export class QuestsComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
+    sessionStorage.setItem('questsFilters', JSON.stringify(this.filters));
+    this.filterChecked();
+
     this.getQuests();
+  }
+
+  filterChecked() {
+    this.questTypes.forEach(type => {
+      if (this.filters.type.indexOf(type) === -1) {
+        this.isFilterChecked.type[type] = false;
+      } else {
+        this.isFilterChecked.type[type] = true;
+      }
+    });
   }
 
   formatType(type) {

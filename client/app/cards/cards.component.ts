@@ -20,10 +20,36 @@ export class CardsComponent implements OnInit {
     limited: [],
     element: []
   };
-  isCollapsedRarity = false;
-  isCollapsedElement = false;
-  isCollapsedLimited = false;
   version = 'GL';
+
+  isFilterChecked = {
+    rarity: [],
+    element: [],
+    limited: []
+  };
+  collapsed = {
+    rarity: false,
+    element: false,
+    limited: false
+  };
+
+  rarities = [
+    'UR',
+    'MR',
+    'SR',
+    'R',
+    'N'
+  ];
+  elements = [
+    'fire',
+    'ice',
+    'wind',
+    'earth',
+    'lightning',
+    'water',
+    'light',
+    'dark'
+  ];
 
   constructor(
     private cardService: CardService,
@@ -40,6 +66,14 @@ export class CardsComponent implements OnInit {
 
   ngOnInit() {
     this.navService.setTitle('Cards');
+
+    if (sessionStorage.getItem('cardsFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
+    }
+    if (sessionStorage.getItem('cardsCollapsed')) {
+      this.collapsed = JSON.parse(sessionStorage.getItem('cardsCollapsed'));
+    }
+    this.filterChecked();
 
     this.getCards();
   }
@@ -77,6 +111,39 @@ export class CardsComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
+    sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
+
     this.getCards();
+  }
+
+  filterChecked() {
+    this.rarities.forEach(rarity => {
+      if (this.filters.rarity.indexOf(rarity) === -1) {
+        this.isFilterChecked.rarity[rarity] = false;
+      } else {
+        this.isFilterChecked.rarity[rarity] = true;
+      }
+    });
+
+    ['true', 'false'].forEach(limited => {
+      if (this.filters.limited.indexOf(limited === 'true' ? true : false) === -1) {
+        this.isFilterChecked.limited[limited] = false;
+      } else {
+        this.isFilterChecked.limited[limited] = true;
+      }
+    });
+
+    this.elements.forEach(element => {
+      if (this.filters.element.indexOf(element) === -1) {
+        this.isFilterChecked.element[element] = false;
+      } else {
+        this.isFilterChecked.element[element] = true;
+      }
+    });
+  }
+
+  toogleCollapse(section) {
+    this.collapsed[section] = !this.collapsed[section];
+    sessionStorage.setItem('cardsCollapsed', JSON.stringify(this.collapsed));
   }
 }

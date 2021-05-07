@@ -2,20 +2,16 @@
   <div class="leftBlock">
     <h1 class="boldText">FILTERS</h1>
     <div class="filters">
-      <div class="boldText" (click)="isCollapsedElement = !isCollapsedElement" [attr.aria-expanded]="!isCollapsedElement">
-        Elements
-        <i class="fas fa-chevron-up" *ngIf="!isCollapsedElement" aria-hidden="true"></i>
-        <i class="fas fa-chevron-down" *ngIf="isCollapsedElement" aria-hidden="true"></i>
+      <div class="boldText" (click)="toogleCollapse('element')" [attr.aria-expanded]="!collapsed.element">
+        Party effects elements
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.element" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.element" aria-hidden="true"></i>
       </div>
-      <div class="collapsedFilters" [ngbCollapse]="isCollapsedElement">
-        <div><input type="checkbox" id="elementfire" (change)="filterList('element', 'fire')"/><label for="elementfire">Fire</label></div>
-        <div><input type="checkbox" id="elementice" (change)="filterList('element', 'ice')"/><label for="elementice">Ice</label></div>
-        <div><input type="checkbox" id="elementwind" (change)="filterList('element', 'wind')"/><label for="elementwind">Wind</label></div>
-        <div><input type="checkbox" id="elementearth" (change)="filterList('element', 'earth')"/><label for="elementearth">Earth</label></div>
-        <div><input type="checkbox" id="elementlightning" (change)="filterList('element', 'lightning')"/><label for="elementlightning">Lightning</label></div>
-        <div><input type="checkbox" id="elementwater" (change)="filterList('element', 'water')"/><label for="elementwater">Water</label></div>
-        <div><input type="checkbox" id="elementlight" (change)="filterList('element', 'light')"/><label for="elementlight">Light</label></div>
-        <div><input type="checkbox" id="elementdark" (change)="filterList('element', 'dark')"/><label for="elementdark">Dark</label></div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.element">
+        <div *ngFor="let element of elements">
+          <input type="checkbox" id="element{{ element }}" (change)="filterList('element', element)" [checked]="isFilterChecked.element[element]"/>
+          <label for="element{{ element }}">{{ element | titlecase }}</label>
+        </div>
       </div>
     </div>
   </div>

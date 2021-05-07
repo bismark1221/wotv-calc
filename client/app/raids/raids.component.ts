@@ -18,7 +18,24 @@ export class RaidsComponent implements OnInit {
   filters = {
     element: []
   };
-  isCollapsedElement = false;
+
+  isFilterChecked = {
+    element: []
+  };
+  collapsed = {
+    element: false
+  };
+
+  elements = [
+    'fire',
+    'ice',
+    'wind',
+    'earth',
+    'lightning',
+    'water',
+    'light',
+    'dark'
+  ];
 
   constructor(
     private raidService: RaidService,
@@ -33,6 +50,14 @@ export class RaidsComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Raids');
+
+    if (sessionStorage.getItem('raidsFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('raidsFilters'));
+    }
+    if (sessionStorage.getItem('raidsCollapsed')) {
+      this.collapsed = JSON.parse(sessionStorage.getItem('raidsCollapsed'));
+    }
+    this.filterChecked();
 
     await this.getRaids();
   }
@@ -70,6 +95,23 @@ export class RaidsComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
+    sessionStorage.setItem('raidsFilters', JSON.stringify(this.filters));
+
     await this.getRaids();
+  }
+
+  filterChecked() {
+    this.elements.forEach(element => {
+      if (this.filters.element.indexOf(element) === -1) {
+        this.isFilterChecked.element[element] = false;
+      } else {
+        this.isFilterChecked.element[element] = true;
+      }
+    });
+  }
+
+  toogleCollapse(section) {
+    this.collapsed[section] = !this.collapsed[section];
+    sessionStorage.setItem('raidsCollapsed', JSON.stringify(this.collapsed));
   }
 }
