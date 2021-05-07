@@ -136,16 +136,16 @@
         "en": "エンゲルベルト - Engelbert"
       },
       "stats": {
-        "HP": 3768,
-        "TP": 121,
-        "AP": 115,
-        "ATK": 246,
+        "HP": 5805,
+        "TP": 128,
+        "AP": 121,
+        "ATK": 375,
         "DEF": 27,
         "SPR": 0,
-        "MAG": 62,
-        "DEX": 161,
-        "AGI": 48,
-        "LUCK": 245,
+        "MAG": 82,
+        "DEX": 229,
+        "AGI": 54,
+        "LUCK": 264,
         "DARK_RES": -10,
         "SLASH_RES": 20,
         "PIERCE_RES": 5,
@@ -157,8 +157,10 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 20,
-        "CRITIC_RATE": 20
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsenbt"
     },
@@ -770,16 +772,16 @@
         "en": "フィーナ - Fina"
       },
       "stats": {
-        "HP": 1466,
-        "TP": 145,
-        "AP": 156,
-        "ATK": 98,
+        "HP": 2319,
+        "TP": 157,
+        "AP": 164,
+        "ATK": 305,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 202,
-        "DEX": 154,
-        "AGI": 62,
-        "LUCK": 133,
+        "MAG": 479,
+        "DEX": 233,
+        "AGI": 64,
+        "LUCK": 180,
         "DARK_RES": -15,
         "SLASH_RES": -10,
         "PIERCE_RES": -10,
@@ -792,7 +794,9 @@
         "STOP_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 69
+        "INITIAL_AP": 74,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsfina"
     },
@@ -962,16 +966,16 @@
         "en": "サージェス - Serjes"
       },
       "stats": {
-        "HP": 1660,
-        "TP": 90,
-        "AP": 86,
-        "ATK": 163,
-        "DEF": 6,
+        "HP": 3586,
+        "TP": 96,
+        "AP": 90,
+        "ATK": 424,
+        "DEF": 8,
         "SPR": 0,
-        "MAG": 83,
-        "DEX": 166,
+        "MAG": 147,
+        "DEX": 251,
         "AGI": 59,
-        "LUCK": 158,
+        "LUCK": 209,
         "FIRE_RES": -20,
         "SLASH_RES": 5,
         "STRIKE_RES": -30,
@@ -981,7 +985,9 @@
         "STOP_RES": -35,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 15
+        "INITIAL_AP": 16,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapssrjs"
     },
@@ -4106,7 +4112,11 @@
     {
       "names": {
         "en": "Fryevia",
-        "fr": "Fryevia"
+        "fr": "Fryevia",
+        "de": "Fryevia",
+        "es": "Fryevia",
+        "ko": "프레이비아",
+        "zh": "弗雷比亞"
       },
       "stats": {
         "HP": 3320,
