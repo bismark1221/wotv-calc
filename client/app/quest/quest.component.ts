@@ -365,7 +365,7 @@ export class QuestComponent implements OnInit {
           enemy.stats['NULLIFY'] = {ailments: effect.ailments};
         } else {
           effect.ailments.forEach(ailment => {
-            if (enemy.stats['NULLIFY'].ailments.indexOf(ailment) == -1) {
+            if (enemy.stats['NULLIFY'].ailments.indexOf(ailment) === -1) {
               enemy.stats['NULLIFY'].ailments.push(ailment);
             }
           });

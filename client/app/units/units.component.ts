@@ -105,7 +105,13 @@ export class UnitsComponent implements OnInit {
   }
 
   async getJobs() {
-    this.jobs = await this.jobService.getUniqJobs();
+    const jobs = await this.jobService.getUniqJobs();
+    jobs.forEach(job => {
+      if (job.statsModifiers && job.statsModifiers.length > 10) {
+        this.jobs.push(job);
+      }
+    });
+
     this.translateJobs();
   }
 

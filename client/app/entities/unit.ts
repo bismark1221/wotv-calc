@@ -1048,7 +1048,7 @@ export class Unit {
     });
 
     Object.keys(this.percentStats).forEach(stat => {
-      if (stat !== "FLOAT_ATK") {
+      if (stat !== 'FLOAT_ATK') {
         let totalPercentValue = 0;
         Object.keys(this.percentStats[stat]).forEach(type => {
           if (!this.stats[stat][type]) {

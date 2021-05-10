@@ -364,7 +364,7 @@ export class SkillService {
     let html = '';
     switch (effect.type) {
       case 'HP' :
-        if (skill.slot === 3 || skill.type !== 'skill') {
+        if (skill.slot === 3 || (skill.type !== 'skill' && skill.type !== 'esper')) {
           html = this.getIncrease(effect) + ' HP' + this.getValue(skill, effect) + this.getTurns(effect);
         } else {
           if (effect.increaseMax) {
