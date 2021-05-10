@@ -1048,17 +1048,19 @@ export class Unit {
     });
 
     Object.keys(this.percentStats).forEach(stat => {
-      let totalPercentValue = 0;
-      Object.keys(this.percentStats[stat]).forEach(type => {
-        if (!this.stats[stat][type]) {
-          this.stats[stat][type] = 0;
-        }
+      if (stat !== "FLOAT_ATK") {
+        let totalPercentValue = 0;
+        Object.keys(this.percentStats[stat]).forEach(type => {
+          if (!this.stats[stat][type]) {
+            this.stats[stat][type] = 0;
+          }
 
-        this.stats[stat][type] += Math.floor(this.stats[stat].baseTotal * this.percentStats[stat][type] / 100);
-        totalPercentValue += this.percentStats[stat][type];
-      });
+          this.stats[stat][type] += Math.floor(this.stats[stat].baseTotal * this.percentStats[stat][type] / 100);
+          totalPercentValue += this.percentStats[stat][type];
+        });
 
-      this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * totalPercentValue / 100);
+        this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * totalPercentValue / 100);
+      }
     });
 
     statsToRemove.forEach(stat => {

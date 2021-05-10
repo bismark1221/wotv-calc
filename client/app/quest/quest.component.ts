@@ -358,7 +358,19 @@ export class QuestComponent implements OnInit {
         value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
       }
 
-      this.updateStatsForUnit(enemy, effect.type, effect.calcType, value);
+      if (effect.type !== 'NULLIFY') {
+        this.updateStatsForUnit(enemy, effect.type, effect.calcType, value);
+      } else {
+        if (!enemy.stats['NULLIFY']) {
+          enemy.stats['NULLIFY'] = {ailments: effect.ailments};
+        } else {
+          effect.ailments.forEach(ailment => {
+            if (enemy.stats['NULLIFY'].ailments.indexOf(ailment) == -1) {
+              enemy.stats['NULLIFY'].ailments.push(ailment);
+            }
+          });
+        }
+      }
     });
   }
 
@@ -447,11 +459,19 @@ export class QuestComponent implements OnInit {
       if (statsManaged.indexOf(stat) !== -1) {
         hasStats.push(stat);
       } else if (ignoreStats.indexOf(stat) === -1) {
-        otherStats.push({
-          type: stat,
-          value: formattedEnemy.stats[stat].total,
-          calcType: 'fixe'
-        });
+        if (stat !== 'NULLIFY') {
+          otherStats.push({
+            type: stat,
+            value: formattedEnemy.stats[stat].total,
+            calcType: 'fixe'
+          });
+        } else {
+          otherStats.push({
+            type: 'NULLIFY',
+            ailments: formattedEnemy.stats[stat].ailments,
+            calcType: 'fixe'
+          });
+        }
       }
     });
 
