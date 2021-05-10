@@ -4506,7 +4506,8 @@ export class JsonService {
         type: this.questType[quest.type],
         missions: [],
         grid: [],
-        buffs: []
+        buffs: [],
+        drops: []
       };
 
       if (!this.questType[quest.type]) {
@@ -4566,7 +4567,8 @@ export class JsonService {
         type: 'tower',
         missions: [],
         grid: [],
-        buffs: []
+        buffs: [],
+        drops: []
       };
 
       const questTranslation = this.getTowerFloorName(questId, quest.tower_iname, quest.ex);
@@ -4749,24 +4751,43 @@ export class JsonService {
         });
       }
 
-      if (map.drop_table_list && map.enemy) {
-        map.enemy.forEach(enemy => {
-          if (enemy.drop && map.drop_table_list[enemy.drop]) {
-            const dropTable = map.drop_table_list[enemy.drop];
-            dropTable.drop_list.forEach(item => {
-              this.addDroppedItem(quest, 'drop', item.drop_data.iname, item.weight, dropTable.totalRate);
-            });
-          }
-        });
-      }
+      if (map.drop_table_list) {
+        Object.keys(map.drop_table_list).forEach(dropId => {
+          const dropList = {
+            dataId: dropId,
+            items: {}
+          };
 
-      if (map.drop_table_list && map.drop_table_list['HOST']) {
-        const hostDropTable = map.drop_table_list['HOST'];
-        hostDropTable.drop_list.forEach(item => {
-          if (this[this.version].wotvItems[item.drop_data.iname]) {
-            this.addDroppedItem(quest, 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate);
-          }
+          map.drop_table_list[dropId].drop_list.forEach(item => {
+            if (!dropList[item.drop_data.iname]) {
+              dropList[item.drop_data.iname] = {};
+            }
+
+            dropList[item.drop_data.iname][item.drop_data.num] = item.weight * 100 / map.drop_table_list[dropId].totalRate;
+          });
+
+          quest.drops.push(dropList);
         });
+
+        if (map.enemy) {
+          map.enemy.forEach(enemy => {
+            if (enemy.drop && map.drop_table_list[enemy.drop]) {
+              const dropTable = map.drop_table_list[enemy.drop];
+              dropTable.drop_list.forEach(item => {
+                this.addDroppedItem(quest, 'drop', item.drop_data.iname, item.weight, dropTable.totalRate, item.drop_data.num);
+              });
+            }
+          });
+        }
+
+        if (map.drop_table_list['HOST']) {
+          const hostDropTable = map.drop_table_list['HOST'];
+          hostDropTable.drop_list.forEach(item => {
+            if (this[this.version].wotvItems[item.drop_data.iname]) {
+              this.addDroppedItem(quest, 'host', item.drop_data.iname, item.weight, hostDropTable.totalRate, item.drop_data.num);
+            }
+          });
+        }
       }
     }
   }
@@ -4814,14 +4835,26 @@ export class JsonService {
     }
   }
 
-  addDroppedItem(map, type, itemId, rate, totalRate) {
+  addDroppedItem(map, type, itemId, rate, totalRate, num) {
     if (!map.items[itemId]) {
       map.items[itemId] = {};
-      map.items[itemId][type] = rate * 100 / totalRate;
+      map.items[itemId][type] = {
+        value: rate * 100 / totalRate,
+        minNum: num,
+        maxNum: num
+      };
     } else if (!map.items[itemId][type]) {
-      map.items[itemId][type] = rate * 100 / totalRate;
-    } else if (map.items[itemId][type] !== '100.0') { // To rework maybe...
-      map.items[itemId][type] = map.items[itemId][type] + ((100 - map.items[itemId][type]) * (rate * 100 / totalRate) / 100);
+      map.items[itemId][type] = {
+        value: rate * 100 / totalRate,
+        minNum: num,
+        maxNum: num
+      };
+    } else if (map.items[itemId][type].value !== '100.0') { // To rework maybe...
+      map.items[itemId][type] = {
+        value: map.items[itemId][type].value + ((100 - map.items[itemId][type].value) * (rate * 100 / totalRate) / 100),
+        minNum: num < map.items[itemId][type].minNum ? num : map.items[itemId][type].minNum,
+        maxNum: num > map.items[itemId][type].maxNum ? num : map.items[itemId][type].maxNum
+      };
     }
   }
 

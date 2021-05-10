@@ -28,6 +28,7 @@ export class OtherFarmCalculatorComponent implements OnInit {
   isCollapsed = {};
 
   itemClassInInput = 'in-ng-input';
+  itemClassListQuest = 'in-quest-list';
   version = 'GL';
 
   constructor(
@@ -63,8 +64,6 @@ export class OtherFarmCalculatorComponent implements OnInit {
   }
 
   async getItems() {
-
-
     this.items = concat(
       of([]),
       this.itemInput.pipe(
@@ -106,5 +105,9 @@ export class OtherFarmCalculatorComponent implements OnInit {
       this.isCollapsed[quest.dataId] = true;
     });
     this.questLoading = false;
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route);
   }
 }

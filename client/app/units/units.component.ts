@@ -5,6 +5,7 @@ import { UnitService } from '../services/unit.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { JobService } from '../services/job.service';
+import { ToolService } from '../services/tool.service';
 
 @Component({
   selector: 'app-units',
@@ -76,7 +77,8 @@ export class UnitsComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
-    private jobService: JobService
+    private jobService: JobService,
+    private toolService: ToolService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
@@ -125,6 +127,8 @@ export class UnitsComponent implements OnInit {
     this.jobs.forEach(job => {
       job.name = this.nameService.getName(job);
     });
+
+    this.toolService.sortByName(this.jobs);
   }
 
   getRoute(route) {

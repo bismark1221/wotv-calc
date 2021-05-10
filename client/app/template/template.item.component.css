@@ -18,6 +18,10 @@
   margin-top: 5px;
 }
 
+.in-quest-list {
+  margin-right: 0 !important;
+}
+
 .recipe {
   height: 35px;
   background: url("assets/items/recipe.png") 0px 0px no-repeat;

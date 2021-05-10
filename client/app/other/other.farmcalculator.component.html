@@ -64,7 +64,7 @@
                 <i class="fas fa-chevron-down" *ngIf="isCollapsed[quest.dataId]" aria-hidden="true"></i>
               </div>
               <div class="questName">
-                {{ quest.name }}
+                <a [routerLink]="[getRoute('/quest/' + quest.slug)]">{{ quest.name }}</a>
               </div>
               <div class="questParams">
                 NRG : {{ quest.nrg }} - XP : {{ quest.exp }} - JP : {{ quest.jp }} - Gils : {{ quest.gils }} - Enemies : {{ quest.enemies.length }} - Chests : {{ quest.chests.length }}
@@ -72,12 +72,14 @@
             </td>
             <td class="dropRateTd">
               <div *ngFor="let item of quest.findedItems" class="dropRateItemBlock">
-                <app-template-item [item]="item"></app-template-item>
+                <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
                 <div *ngIf="quest.items[item.dataId].drop">
-                  {{ quest.items[item.dataId].drop | number : '1.2-2'}}%
+                  ({{ quest.items[item.dataId].drop.minNum }}<span *ngIf="quest.items[item.dataId].drop.maxNum !== quest.items[item.dataId].drop.minNum">- {{ quest.items[item.dataId].drop.maxNum }}</span>)<br />
+                  {{ quest.items[item.dataId].drop.value | number : '1.2-2'}}%
                 </div>
                 <div *ngIf="quest.items[item.dataId].host">
-                  Host : {{ quest.items[item.dataId].host | number : '1.2-2'}}%
+                  Host : ({{ quest.items[item.dataId].host.minNum }}<span *ngIf="quest.items[item.dataId].host.maxNum !== quest.items[item.dataId].host.minNum">- {{ quest.items[item.dataId].host.maxNum }}</span>)<br />
+                  {{ quest.items[item.dataId].host.value | number : '1.2-2'}}%
                 </div>
               </div>
             </td>
@@ -85,12 +87,12 @@
           <tr [ngbCollapse]="isCollapsed[quest.dataId]">
             <td colspan="2">
               <div *ngFor="let item of quest.formattedItems" class="dropRateItemBlock">
-                <app-template-item [item]="item"></app-template-item>
+                <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
                 <div *ngIf="quest.items[item.dataId].drop">
-                  {{ quest.items[item.dataId].drop | number : '1.2-2'}}%
+                  {{ quest.items[item.dataId].drop.value | number : '1.2-2'}}%
                 </div>
                 <div *ngIf="quest.items[item.dataId].host">
-                  Host : {{ quest.items[item.dataId].host | number : '1.2-2'}}%
+                  Host : {{ quest.items[item.dataId].host.value | number : '1.2-2'}}%
                 </div>
               </div>
             </td>
