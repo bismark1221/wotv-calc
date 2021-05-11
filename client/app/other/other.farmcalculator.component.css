@@ -128,3 +128,29 @@ th {
   display: inline-block;
   margin-right: 10px;
 }
+
+/**/
+.dropBlock {
+  margin-bottom: 10px;
+}
+
+.dropHeader {
+  border: 1px solid var(--table-border);
+  text-align: left;
+  padding-left: 10px;
+}
+
+.dropContent {
+  border-left: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  border-bottom: 1px solid var(--table-border);
+}
+
+.dropEnemyBlock {
+  margin-right: 10px;
+}
+
+.enemyImg {
+  max-width: 20px;
+  max-height: 20px;
+}

@@ -7,8 +7,8 @@ import { catchError, distinctUntilChanged, switchMap, tap } from 'rxjs/operators
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
 import { QuestService } from '../services/quest.service';
-import { ToolService } from '../services/tool.service';
 import { ItemService } from '../services/item.service';
+import { OtherUnitService } from '../services/otherunit.service';
 
 import { Item } from '../entities/item';
 
@@ -36,9 +36,9 @@ export class OtherFarmCalculatorComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
-    private toolService: ToolService,
     private itemService: ItemService,
     private questService: QuestService,
+    private otherUnitService: OtherUnitService
   ) {
   }
 
@@ -101,9 +101,60 @@ export class OtherFarmCalculatorComponent implements OnInit {
     this.quests = await this.questService.getQuestsForFarmCalc(this.selectedItems);
 
     this.isCollapsed = {};
-    this.quests.forEach(quest => {
+    for (const quest of this.quests) {
       this.isCollapsed[quest.dataId] = true;
-    });
+
+      quest.dropLists = [];
+      for (const rawDrop of quest.drops) {
+        const formattedDropList = {
+          enemies: [],
+          items: [],
+          isHost: false
+        };
+
+        let enemyFinded = false;
+        for (const rawEnemy of quest.enemies) {
+          if (rawEnemy.drop === rawDrop.dataId) {
+            const EnemyData = await this.otherUnitService.getUnit(rawEnemy.dataId);
+            EnemyData.name = this.nameService.getName(EnemyData);
+            formattedDropList.enemies.push(EnemyData);
+            enemyFinded = true;
+          }
+        }
+
+        let chestFinded = false;
+        for (const rawChest of quest.chests) {
+          if (rawChest.drop === rawDrop.dataId) {
+            const ChestData = await this.otherUnitService.getUnit(rawChest.dataId);
+            ChestData.name = this.nameService.getName(ChestData);
+            formattedDropList.enemies.push(ChestData);
+            chestFinded = true;
+          }
+        }
+
+        if (enemyFinded || chestFinded || rawDrop.dataId === 'HOST') {
+          for (const itemId of Object.keys(rawDrop.items)) {
+            if (itemId !== '') {
+              const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
+              for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
+                formattedItem.drop = {
+                  num: itemDropNum,
+                  value: rawDrop.items[itemId][itemDropNum]
+                };
+                formattedDropList.items.push(JSON.parse(JSON.stringify(formattedItem)));
+              }
+            }
+          }
+
+          if (rawDrop.dataId === 'HOST') {
+            formattedDropList.isHost = true;
+          }
+
+          quest.dropLists.push(formattedDropList);
+        }
+      }
+    }
+
     this.questLoading = false;
   }
 

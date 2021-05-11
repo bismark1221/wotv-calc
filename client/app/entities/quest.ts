@@ -26,6 +26,8 @@ export class Quest {
   missions = [];
   grid = [];
 
+  drops = [];
+
 
   constructFromJson(quest, translateService) {
     this.dataId = quest.dataId;
@@ -49,6 +51,8 @@ export class Quest {
 
     this.missions = quest.missions;
     this.grid = quest.grid;
+
+    this.drops = quest.drops;
   }
 
   getName(translateService): string {

@@ -4759,11 +4759,11 @@ export class JsonService {
           };
 
           map.drop_table_list[dropId].drop_list.forEach(item => {
-            if (!dropList[item.drop_data.iname]) {
-              dropList[item.drop_data.iname] = {};
+            if (!dropList.items[item.drop_data.iname]) {
+              dropList.items[item.drop_data.iname] = {};
             }
 
-            dropList[item.drop_data.iname][item.drop_data.num] = item.weight * 100 / map.drop_table_list[dropId].totalRate;
+            dropList.items[item.drop_data.iname][item.drop_data.num] = item.weight * 100 / map.drop_table_list[dropId].totalRate;
           });
 
           quest.drops.push(dropList);
