@@ -152,7 +152,13 @@
       </tr>
       <tbody *ngFor="let enemy of quest.formattedEnemies; let j = index">
         <tr (click)="isCollapsedEnemy[j] = !isCollapsedEnemy[j]" [attr.aria-expanded]="!isCollapsedEnemy[j]" class="enemyLine">
-          <td>E{{ j + 1 }}</td>
+          <td>
+            <div class="collapseBlock">
+              <i class="fas fa-chevron-up" *ngIf="!isCollapsedEnemy[j]" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down" *ngIf="isCollapsedEnemy[j]" aria-hidden="true"></i>
+            </div>
+            E{{ j + 1 }}
+          </td>
           <td>
             <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />{{ enemy.name }}
           </td>
@@ -251,90 +257,106 @@
               </tbody>
             </table>
             <table>
-            <tbody>
+              <tbody>
+                <tr>
+                  <th colspan="9">
+                    Skills
+                  </th>
+                </tr>
+                <tr>
+                  <th class="sub skillTypeTd">Type</th>
+                  <th class="sub skillNameTd">Name</th>
+                  <th class="sub">Effects</th>
+                  <th class="sub rangeTd">Range</th>
+                  <th class="sub skillCastTd">Casts</th>
+                  <th class="sub skillHitTd">Hits</th>
+                  <th class="sub skillCostTd">Cost</th>
+                </tr>
+                <tr *ngFor="let skill of enemy.skills">
+                  <td>
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <div *ngIf="skill.time && skill.time.minValue">
+                      <ng-template #tip_time>
+                        <div>
+                          Min time: {{ skill.time.minValue }}<br />
+                          Max time: {{ skill.time.maxValue }}
+                        </div>
+                      </ng-template>
+                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                    </div>
+                  </td>
+                  <td>{{ skill.name }}</td>
+                  <td class="skillEffectTd">
+                    <div>{{ skill.counterHtml }}</div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.before">
+                      {{ effect }}
+                    </div>
+
+                    <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                      <ng-template #tip_damage>
+                        <div *ngIf="skill.based === 'physic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+                        <div *ngIf="skill.based === 'magic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                        </div>
+                        <div *ngIf="skill.based === 'hybrid'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                          {{ skill.damage.formula[1] }}% DEX
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                          {{ skill.damage.formula[2] }}% AGI
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                          {{ skill.damage.formula[3] }}% LUCK
+                        </div>
+                      </ng-template>
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                    </div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.after">
+                      {{ effect }}
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="skill.type != 'support'">
+                      <ng-template #tip_table>
+                        <div [innerHTML]="skill.skillTableHtml"></div>
+                      </ng-template>
+                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                        <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>{{ skill.count }}</td>
+                  <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+                  <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
               <tr>
-                <th colspan="9">
-                  Skills
-                </th>
+                <td class="sub">DROPS</td>
               </tr>
-              <tr>
-                <th class="sub skillTypeTd">Type</th>
-                <th class="sub skillNameTd">Name</th>
-                <th class="sub">Effects</th>
-                <th class="sub rangeTd">Range</th>
-                <th class="sub skillCastTd">Casts</th>
-                <th class="sub skillHitTd">Hits</th>
-                <th class="sub skillCostTd">Cost</th>
-              </tr>
-              <tr *ngFor="let skill of enemy.skills">
+              <tr *ngIf="quest.enemies[j].drop && quest.dropLists[quest.enemies[j].drop]">
                 <td>
-                  <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
-
-                  <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
-                  <div *ngIf="skill.time && skill.time.minValue">
-                    <ng-template #tip_time>
-                      <div>
-                        Min time: {{ skill.time.minValue }}<br />
-                        Max time: {{ skill.time.maxValue }}
-                      </div>
-                    </ng-template>
-                    <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
-                  </div>
-                </td>
-                <td>{{ skill.name }}</td>
-                <td class="skillEffectTd">
-                  <div>{{ skill.counterHtml }}</div>
-
-                  <div *ngFor="let effect of skill.effectsHtml.before">
-                    {{ effect }}
-                  </div>
-
-                  <div *ngIf="skill.damageHtml && skill.damageHtml.value">
-                    <ng-template #tip_damage>
-                      <div *ngIf="skill.based === 'physic'">
-                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-                      </div>
-                      <div *ngIf="skill.based === 'magic'">
-                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
-                      </div>
-                      <div *ngIf="skill.based === 'hybrid'">
-                        {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
-                      </div>
-
-                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
-                        {{ skill.damage.formula[1] }}% DEX
-                      </div>
-                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
-                        {{ skill.damage.formula[2] }}% AGI
-                      </div>
-                      <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
-                        {{ skill.damage.formula[3] }}% LUCK
-                      </div>
-                    </ng-template>
-                    <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
-                    <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
-                  </div>
-
-                  <div *ngFor="let effect of skill.effectsHtml.after">
-                    {{ effect }}
-                  </div>
-                </td>
-                <td>
-                  <div *ngIf="skill.type != 'support'">
-                    <ng-template #tip_table>
-                      <div [innerHTML]="skill.skillTableHtml"></div>
-                    </ng-template>
-                    <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                      <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                  <div *ngFor="let item of quest.dropLists[quest.enemies[j].drop]" class="dropRateItemBlock">
+                    <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
+                    <div>
+                      ({{ item.drop.num }})<br />
+                      {{ item.drop.value | number : '1.2-2'}}%
                     </div>
                   </div>
                 </td>
-                <td>{{ skill.count }}</td>
-                <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
-                <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
               </tr>
-            </tbody>
-          </table>
+            </table>
           </td>
         </tr>
       </tbody>
@@ -345,10 +367,31 @@
         <th class="idCol">ID</th>
         <th class="nameCol">ID</th>
       </tr>
-      <tr *ngFor="let chest of quest.formattedChests; let j = index">
-        <td>C{{ j + 1 }}</td>
-        <td><img src="assets/units/{{chest.image}}_m.png" class="enemyImg" />{{ chest.name }}</td>
-      </tr>
+      <tbody *ngFor="let chest of quest.formattedChests; let j = index">
+        <tr (click)="isCollapsedChest[j] = !isCollapsedChest[j]" [attr.aria-expanded]="!isCollapsedChest[j]" class="enemyLine">
+          <td>
+            <div class="collapseBlock">
+              <i class="fas fa-chevron-up" *ngIf="!isCollapsedChest[j]" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down" *ngIf="isCollapsedChest[j]" aria-hidden="true"></i>
+            </div>
+            C{{ j + 1 }}
+          </td>
+          <td><img src="assets/units/{{chest.image}}_m.png" class="enemyImg" />{{ chest.name }}</td>
+        </tr>
+        <tr [ngbCollapse]="isCollapsedChest[j]">
+          <td colspan="99" class="enemyDetailCol">
+            <div *ngIf="quest.chests[j].drop && quest.dropLists[quest.chests[j].drop]">
+              <div *ngFor="let item of quest.dropLists[quest.chests[j].drop]" class="dropRateItemBlock">
+                <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
+                <div>
+                  ({{ item.drop.num }})<br />
+                  {{ item.drop.value | number : '1.2-2'}}%
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <table class="chestTable" *ngIf="quest.formattedObjects?.length > 0">

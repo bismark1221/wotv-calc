@@ -23,6 +23,7 @@ export class QuestComponent implements OnInit {
   quest = null;
   enemies = [];
   isCollapsedEnemy = {};
+  isCollapsedChest = {};
   statImage = {
     FIRE_RES : 'assets/elements/fire.png',
     ICE_RES : 'assets/elements/ice.png',
@@ -138,6 +139,7 @@ export class QuestComponent implements OnInit {
       i = 0;
       for (const chest of this.quest.chests) {
         this.quest.formattedChests.push(await this.formatOtherItem(chest));
+        this.isCollapsedChest[i] = true;
         i++;
       }
 
@@ -160,6 +162,26 @@ export class QuestComponent implements OnInit {
           this.quest.formattedBuffs[this.quest.formattedBuffs.length - 1] += conditions[effect.condition];
         }
       });
+
+      this.quest.dropLists = {};
+      for (const rawDrop of this.quest.drops) {
+        const formattedDropList = [];
+
+        for (const itemId of Object.keys(rawDrop.items)) {
+          if (itemId !== '') {
+            const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
+            for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
+              formattedItem.drop = {
+                num: itemDropNum,
+                value: rawDrop.items[itemId][itemDropNum]
+              };
+              formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+            }
+          }
+        }
+
+        this.quest.dropLists[rawDrop.dataId] = formattedDropList;
+      }
     }
   }
 

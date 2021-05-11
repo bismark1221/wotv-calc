@@ -339,7 +339,7 @@
 }
 
 .allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
-  width: 40px;
+  width: 70px;
 }
 
 .enemyDetailCol {
@@ -369,4 +369,15 @@
 
 .enemyLine {
   cursor: pointer;
+}
+
+
+.collapseBlock {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.dropRateItemBlock {
+  display: inline-block;
+  margin-right: 10px;
 }
