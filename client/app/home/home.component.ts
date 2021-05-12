@@ -24,6 +24,24 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '21/04',
+        items: [
+          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
+          {type: 'card', dataId: 'VC_LW_PNIX'},
+          {type: 'card', dataId: 'VC_LW_LILS2'},
+          {type: 'equipment', dataId: 'AF_LW_ARM_028'}
+        ]
+      },
+      {
+        date: '',
+        items: [
+          {type: 'esper', dataId: 'UN_LW_S_ODIN'},
+          {type: 'unit', dataId: 'UN_LW_P_YERM'},
+          {type: 'unit', dataId: 'UN_LW_P_NASR'},
+          {type: 'unit', dataId: 'UN_LW_P_ETRE'}
+        ]
+      },
+      {
         date: '05/05',
         items: [
           {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
@@ -36,17 +54,6 @@ export class HomeComponent {
         items: [
           {type: 'unit', dataId: 'UN_LW_P_SIMR'},
           {type: 'esper', dataId: 'UN_LW_S_TSLP'}
-        ]
-      },
-      {
-        date: '21/04',
-        items: [
-          {type: 'unit', dataId: 'UN_NIER_P_N2TB'},
-          {type: 'unit', dataId: 'UN_NIER_P_N9TS'},
-          {type: 'card', dataId: 'VC_NIER_MV1'},
-          {type: 'equipment', dataId: 'AF_NIER_KAT_000'},
-          {type: 'equipment', dataId: 'AF_NIER_SPE_000'},
-          {type: 'equipment', dataId: 'AF_NIER_ACCE_000'}
         ]
       }
     ],

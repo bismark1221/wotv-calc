@@ -5883,6 +5883,18 @@
     },
     "type": "compo_job"
   },
+  "IT_JBEX_AXE": {
+    "dataId": "IT_JBEX_AXE",
+    "names": {
+      "en": "Axe-Branded Tablet",
+      "fr": "Stèle pour haches",
+      "de": "Axt-Symboltafel",
+      "es": "Losa de hachas",
+      "ko": "도끼의 낙인석",
+      "zh": "斧之焦印石"
+    },
+    "type": "compo_job"
+  },
   "IT_UN_AW_FIRE": {
     "dataId": "IT_UN_AW_FIRE",
     "names": {
@@ -10373,6 +10385,30 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_PNIX_R2": {
+    "dataId": "IT_SB_AW_PNIX_R2",
+    "names": {
+      "en": "Phoenix's Awakening Stone  (2★)",
+      "fr": "Pierre d'éveil de Phénix (2★)",
+      "de": "Phönix‘ Erweckungsstein (2★)",
+      "es": "Piedra del despertar de Fénix (2★)",
+      "ko": "피닉스의 각성석(★2)",
+      "zh": "鳳凰的獸醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_PNIX_R3": {
+    "dataId": "IT_SB_AW_PNIX_R3",
+    "names": {
+      "en": "Phoenix's Awakening Stone  (3★)",
+      "fr": "Pierre d'éveil de Phénix (3★)",
+      "de": "Phönix‘ Erweckungsstein (3★)",
+      "es": "Piedra del despertar de Fénix (3★)",
+      "ko": "피닉스의 각성석(★3)",
+      "zh": "鳳凰的獸醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -12427,6 +12463,19 @@
     "type": "recipe",
     "icon": "AF_NIER_SPE_000"
   },
+  "IT_AF_LW_ARM_028": {
+    "dataId": "IT_AF_LW_ARM_028",
+    "names": {
+      "en": "Brigandine Crafting Recipe",
+      "fr": "Recette d'artisanat : Brigandine",
+      "de": "[Anleitung] Brigandine",
+      "es": "Receta: brigantina",
+      "ko": "두정갑 제작법",
+      "zh": "鎖子鎧的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ARM_028"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -13331,7 +13380,7 @@
     "dataId": "IT_EC_SUMMON_09_A",
     "names": {
       "en": "September Summon Medal A",
-      "fr": "Médaille d'invocation A (Septembre)",
+      "fr": "Médaille d'invocation A [Septembre]",
       "de": "September-Beschwörungsmedaille A",
       "es": "Medalla de invocación A (septiembre)",
       "ko": "[9월] 소환 메달 A",
@@ -13344,7 +13393,7 @@
     "dataId": "IT_EC_SUMMON_09_B",
     "names": {
       "en": "September Summon Medal B",
-      "fr": "Médaille d'invocation B (Septembre)",
+      "fr": "Médaille d'invocation B [Septembre]",
       "de": "September-Beschwörungsmedaille B",
       "es": "Medalla de invocación (B) de septiembre",
       "ko": "[9월] 소환 메달 B",
@@ -13357,7 +13406,7 @@
     "dataId": "IT_EC_SUMMON_10_A",
     "names": {
       "en": "October Summon Medal A",
-      "fr": "Médaille d'invocation A (Octobre)",
+      "fr": "Médaille d'invocation A [Octobre]",
       "de": "Oktober-Beschwörungsmedaille A",
       "es": "Medalla de invocación A (octubre)",
       "ko": "[10월] 소환 메달 A",
@@ -13370,7 +13419,7 @@
     "dataId": "IT_EC_SUMMON_10_B",
     "names": {
       "en": "October Summon Medal B",
-      "fr": "Médaille d'invocation B (Octobre)",
+      "fr": "Médaille d'invocation B [Octobre]",
       "de": "Oktober-Beschwörungsmedaille B",
       "es": "Medalla de invocación B (octubre)",
       "ko": "[10월] 소환 메달 B",
@@ -15562,7 +15611,7 @@
     "dataId": "IT_US_SE_JB_MM_01",
     "names": {
       "en": "Select Job Memory (Green) x1 Summon Ticket",
-      "fr": "Ticket sélectionneur d'un souvenir de job (Vert)",
+      "fr": "Ticket sélectionneur de 1 souvenir de job (Vert)",
       "de": "„Auswählbare Joberinnerungen (Grün) x1“-Beschwörungsticket",
       "es": "Tícket seleccionador de recuerdo de profesión (verdes)",
       "ko": "직업의 기억: 초록 × 1 선택 소환 티켓",
@@ -16965,12 +17014,12 @@
   "IT_US_SE_AW-ITEM_GL_06": {
     "dataId": "IT_US_SE_AW-ITEM_GL_06",
     "names": {
-      "en": "Select Awakening Prism x300 Summon Ticket",
-      "fr": "Ticket sélectionneur de 300 prismes d'éveil",
-      "de": "„Auswählbares Erweckungsprisma x300“-Beschwörungsticket",
-      "es": "Tícket seleccionador de 300 prismas del despertar",
-      "ko": "각성 휘석 × 300 선택 소환 티켓",
-      "zh": "覺醒輝源×300選擇召喚券"
+      "en": "IT_US_SE_AW-ITEM_GL_06",
+      "fr": "IT_US_SE_AW-ITEM_GL_06",
+      "de": "IT_US_SE_AW-ITEM_GL_06",
+      "es": "IT_US_SE_AW-ITEM_GL_06",
+      "ko": "IT_US_SE_AW-ITEM_GL_06",
+      "zh": "IT_US_SE_AW-ITEM_GL_06"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -18400,6 +18449,30 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_PNIX": {
+    "dataId": "IT_VPI_LW_PNIX",
+    "names": {
+      "en": "\"Fiery Wings of Legend, Phoenix\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Phénix, les Ailes mystiques incandescentes",
+      "de": "„Phönix, Göttliche Flammenschwingen“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Fénix, el Ave Inmortal»",
+      "ko": " '불꽃의 신조-피닉스'의 조각",
+      "zh": "炎翼神鳥　鳳凰的碎片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_LILS2": {
+    "dataId": "IT_VPI_LW_LILS2",
+    "names": {
+      "en": "\"A Mighty Obstacle\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Un adversaire imbattable",
+      "de": "„Ein mächtiges Hindernis“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Muro infranqueable»",
+      "ko": " '강력한 벽'의 조각",
+      "zh": "強大之壁的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -18770,6 +18843,18 @@
       "es": "Medalla de asalto de abril",
       "ko": "[4월] 레이드 메달",
       "zh": "【4月】共鬥獎牌"
+    },
+    "type": "medal"
+  },
+  "IT_EC_RAID_13": {
+    "dataId": "IT_EC_RAID_13",
+    "names": {
+      "en": "May Raid Medal",
+      "fr": "Médaille de raid de mai",
+      "de": "Mai-Kraftprobenmedaille",
+      "es": "Medalla de asalto de mayo",
+      "ko": "[5월] 레이드 메달",
+      "zh": "【5月】共鬥獎牌"
     },
     "type": "medal"
   },
@@ -19730,6 +19815,19 @@
       "es": "Tícket seleccionador de 50 sellos de equipo",
       "ko": "장비의 각인 × 50 선택 소환 티켓",
       "zh": "武具之刻印×50選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_PT_02": {
+    "dataId": "IT_US_SE_AF_PT_02",
+    "names": {
+      "en": "Select Dwarven Hammer x5 Summon Ticket",
+      "fr": "Ticket sélectionneur de 5 marteaux nains",
+      "de": "„Auswählbarer Zwergenhammer x5“-Beschwörungsticket",
+      "es": "Tícker seleccionador de 5 martillos enanos",
+      "ko": "드워프 망치 × 5 선택 소환 티켓",
+      "zh": "矮人錘×5選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

@@ -4502,13 +4502,13 @@
   "RAID_ID_17": {
     "dataId": "RAID_ID_17",
     "names": {
-      "en": "グラシアール"
+      "en": "グラシアール - Glacial"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_GCAL_RAID",
         "names": {
-          "en": "グラシアール"
+          "en": "グラシアール - Glacial"
         },
         "stats": {
           "HP": {
@@ -4719,7 +4719,7 @@
             "maxLevel": 100
           }
         },
-        "slug": "gurashiru",
+        "slug": "glacial",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -4750,7 +4750,7 @@
       {
         "dataId": "UN_LW_E_DRGN_RAID_01",
         "names": {
-          "en": "ミニドラゴン"
+          "en": "ミニドラゴン - Mini Dragon"
         },
         "stats": {
           "HP": {
@@ -5014,7 +5014,7 @@
       ],
       "cards": []
     },
-    "slug": "gurashiru"
+    "slug": "glacial"
   },
   "RAID_ID_18": {
     "dataId": "RAID_ID_18",

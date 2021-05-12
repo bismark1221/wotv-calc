@@ -4235,5 +4235,547 @@
       "cards": []
     },
     "slug": "diabolos"
+  },
+  "RAID_GL_11": {
+    "dataId": "RAID_GL_11",
+    "names": {
+      "en": "Glacial",
+      "fr": "Glacial",
+      "de": "Glacial",
+      "es": "Glacial",
+      "ko": "글레이셜",
+      "zh": "古拉希亞爾"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_GCAL_RAID",
+        "names": {
+          "en": "Glacial",
+          "fr": "Glacial",
+          "de": "Glacial",
+          "es": "Glacial",
+          "ko": "글레이셜",
+          "zh": "古拉希亞爾"
+        },
+        "stats": {
+          "HP": {
+            "min": 1300,
+            "max": 130000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 120,
+            "max": 600
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 20,
+            "max": 20
+          },
+          "MAG": {
+            "min": 120,
+            "max": 600
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 28,
+            "max": 80
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "PIERCE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "STRIKE_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "bird",
+        "element": "ice",
+        "image": "lapsgcal",
+        "skills": {
+          "SK_GCAL_M_01_R": {
+            "dataId": "SK_GCAL_M_01_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_GCAL_M_02_R": {
+            "dataId": "SK_GCAL_M_02_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_GCAL_M_03_R": {
+            "dataId": "SK_GCAL_M_03_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_GCAL_R_01": {
+            "dataId": "SK_GCAL_R_01",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_LW_TIM_P_2": {
+            "dataId": "SK_LW_TIM_P_2",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_RES_SHOT_1_80_U_KISO": {
+            "dataId": "SK_BTL_RES_SHOT_1_80_U_KISO",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          }
+        },
+        "slug": "glacial",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
+          },
+          "effects": [],
+          "dataId": "SK_GCAL_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "pierce",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "type": "skill",
+          "target": "all",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      },
+      {
+        "dataId": "UN_LW_E_DRGN_RAID_01",
+        "names": {
+          "en": "Mini Dragon",
+          "fr": "Mini dragon",
+          "de": "Minidrache",
+          "es": "Minidragón",
+          "ko": "미니 드래곤",
+          "zh": "迷你龍"
+        },
+        "stats": {
+          "HP": {
+            "min": 7000,
+            "max": 80000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 100,
+            "max": 580
+          },
+          "DEF": {
+            "min": 0,
+            "max": 10
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 530
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "PIERCE_RES": {
+            "min": -20,
+            "max": -20
+          },
+          "STRIKE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {},
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "MOVE": {
+            "min": 3,
+            "max": 3
+          },
+          "JUMP": {
+            "min": 2,
+            "max": 2
+          },
+          "MAX_LV": {}
+        },
+        "species": "dragon",
+        "element": "water",
+        "image": "lapsdrgn",
+        "skills": {
+          "SK_DRGN_M_01": {
+            "dataId": "SK_DRGN_M_01",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_DRGN_M_02": {
+            "dataId": "SK_DRGN_M_02",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          }
+        },
+        "slug": "mini-dragon",
+        "attack": {
+          "names": {
+            "en": "Normal Attack",
+            "fr": "Attaque normale",
+            "de": "Normaler Angriff",
+            "es": "Ataque normal",
+            "ko": "일반 공격",
+            "zh": "普通攻擊"
+          },
+          "effects": [],
+          "dataId": "SK_DRGN_ATK",
+          "damage": {
+            "minValue": -30,
+            "maxValue": -30,
+            "type": "all",
+            "effType": "DAMAGE",
+            "formula": {}
+          },
+          "elem": [
+            "neutral"
+          ],
+          "type": "skill",
+          "target": "ennemySide",
+          "maxLevel": 20,
+          "range": {
+            "h": 1,
+            "l": 1,
+            "s": 0
+          },
+          "based": "physic"
+        }
+      }
+    ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_MONT_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_NIER_P_N2TB",
+          "value": 50
+        },
+        {
+          "unitId": "UN_NIER_P_N9TS",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_GLMS",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_YERM",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_ELDE",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_SIMR",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_NASR",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ETRE",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_ALIM",
+          "value": 20
+        }
+      ],
+      "cards": []
+    },
+    "slug": "glacial"
   }
 }
