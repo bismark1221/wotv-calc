@@ -435,6 +435,23 @@ export class Unit {
         });
       break;
 
+      case 'ALL_ELEMENTS_ATK' :
+        const elements = [
+          'FIRE',
+          'ICE',
+          'EARTH',
+          'WIND',
+          'LIGHTNING',
+          'WATER',
+          'LIGHT',
+          'DARK'
+        ];
+
+        elements.forEach(element => {
+          this.updateStat(element + '_ATK', value, statType, calc);
+        });
+      break;
+
       case 'ALL_ATTACKS_RES' :
         const atks = [
           'SLASH',
@@ -1047,8 +1064,21 @@ export class Unit {
       }
     });
 
+    const statsType = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'SPR',
+      'MAG',
+      'DEX',
+      'AGI',
+      'LUCK'
+    ];
+
     Object.keys(this.percentStats).forEach(stat => {
-      if (stat !== 'FLOAT_ATK') {
+      if (statsType.indexOf(stat) !== -1) {
         let totalPercentValue = 0;
         Object.keys(this.percentStats[stat]).forEach(type => {
           if (!this.stats[stat][type]) {
@@ -1060,6 +1090,21 @@ export class Unit {
         });
 
         this.stats[stat].total += Math.floor(this.stats[stat].baseTotal * totalPercentValue / 100);
+      } else {
+        if (!this.stats[stat]) {
+          this.stats[stat] = {
+            total: 0
+          };
+        }
+
+        Object.keys(this.percentStats[stat]).forEach(type => {
+          if (!this.stats[stat][type]) {
+            this.stats[stat][type] = 0;
+          }
+
+          this.stats[stat][type] += this.percentStats[stat][type];
+          this.stats[stat].total += this.percentStats[stat][type];
+        });
       }
     });
 
