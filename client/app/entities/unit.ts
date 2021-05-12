@@ -436,7 +436,7 @@ export class Unit {
       break;
 
       case 'ALL_ELEMENTS_ATK' :
-        const elements = [
+        const elementsATK = [
           'FIRE',
           'ICE',
           'EARTH',
@@ -447,7 +447,7 @@ export class Unit {
           'DARK'
         ];
 
-        elements.forEach(element => {
+        elementsATK.forEach(element => {
           this.updateStat(element + '_ATK', value, statType, calc);
         });
       break;
