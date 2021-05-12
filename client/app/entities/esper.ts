@@ -68,6 +68,7 @@ export class Esper {
   SPs;
   board;
   cost;
+  releaseDate;
 
   // For builder
   usedSPs;

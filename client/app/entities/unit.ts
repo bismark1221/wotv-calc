@@ -103,6 +103,7 @@ export class Unit {
   attack;
   size;
   realMaxLevel;
+  releaseDate = 'XX/XX/XXXX';
 
   // Only for builder
   star;

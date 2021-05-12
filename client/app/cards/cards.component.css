@@ -163,3 +163,7 @@
 .select-sort, .select-order {
   display: inline-block;
 }
+
+.select-sort {
+  width: 140px;
+}

@@ -21,6 +21,7 @@ export class Card {
   partyBuffs;
   slug;
   cost;
+  releaseDate;
 
   // For builder
   buffs;

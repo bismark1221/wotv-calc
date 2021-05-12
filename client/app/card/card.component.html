@@ -19,6 +19,16 @@
           <td>{{ card.limited ? "Yes" : "No" }}</td>
         </tr>
         <tr>
+          <th class="sub" colspan="3">Release Date</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div>
+              {{ card.releaseDate }}
+            </div>
+          </td>
+        </tr>
+        <tr>
           <td colspan="3">
             <button class="btn btn-sub" [routerLink]="[getRoute('/builder/card/' + card.slug)]">Go To Builder</button>
           </td>
