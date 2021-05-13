@@ -24,6 +24,7 @@ export class CheckHashService {
     'jobs',
     'masterRanks',
     'playerTitles',
+    'otherUnits',
     'quests',
     'raids',
     'skills',
