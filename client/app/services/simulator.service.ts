@@ -670,7 +670,7 @@ export class SimulatorService {
 
     Object.keys(dataSimulator.realStats.unit).forEach(statType => {
       if (statType === elementSkill.toUpperCase() + '_ATK'
-        || statType === damageType.toUpperCase() + '_ATK'
+        || (damageType && statType === damageType.toUpperCase() + '_ATK')
         || statType === targetElement.toUpperCase() + '_KILLER'
         || statType === targetRace.toUpperCase() + '_KILLER'
       ) {

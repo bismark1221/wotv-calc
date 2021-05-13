@@ -462,15 +462,24 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
   }
 
   openSaveModal() {
-    const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
-
-    modalRef.componentInstance.type = 'team';
-    modalRef.componentInstance.item = this.team;
-
-    modalRef.result.then(result => {
-      this.savedTeams = this.teamService.getSavedTeams();
-    }, (reason) => {
+    let atLeasOneUnit = false;
+    this.team.units.forEach(unit => {
+      if (unit) {
+        atLeasOneUnit = true;
+      }
     });
+
+    if (atLeasOneUnit) {
+      const modalRef = this.modalService.open(ModalSaveComponent, { windowClass: 'builder-modal' });
+
+      modalRef.componentInstance.type = 'team';
+      modalRef.componentInstance.item = this.team;
+
+      modalRef.result.then(result => {
+        this.savedTeams = this.teamService.getSavedTeams();
+      }, (reason) => {
+      });
+    }
   }
 
   openLinkModal() {
@@ -666,9 +675,19 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
       this.newDamageSim();
     }
 
-    if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
-      this.damageSim.unit.selectedSkill = this.team.units[this.selectedUnitForSim].skillsForSim[0];
-      this.calculateDamageSim();
+
+    let atLeasOneUnit = false;
+    this.team.units.forEach(unit => {
+      if (unit) {
+        atLeasOneUnit = true;
+      }
+    });
+
+    if (atLeasOneUnit) {
+      if (this.damageSim && this.damageSim.unit.selectedSkill === null) {
+        this.damageSim.unit.selectedSkill = this.team.units[this.selectedUnitForSim].skillsForSim[0];
+        this.calculateDamageSim();
+      }
     }
   }
 }

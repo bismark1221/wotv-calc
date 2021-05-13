@@ -79,7 +79,7 @@
   </div>
 </div>
 
-<div *ngIf="modalStep === 'custom'">
+<div *ngIf="modalStep === 'custom' && esper">
   <div class="titleBlock">
     <div class="title">
       {{ esper.name }} - Custom
@@ -111,10 +111,10 @@
       </div>
 
       <div class="starLevelDiv">
-        <div>
+        <div *ngIf="maxStar">
           <ngb-rating [(rate)]="esper.star" [max]="maxStar">
             <ng-template let-fill="fill" let-index="index">
-              <div class="star" [class.filled]="fill === 100"  (click)="changeStar(index + 1)">&nbsp;</div>
+              <div class="star" [class.filled]="fill === 100" id="change_star_{{index + 1}}" (click)="changeStar(index + 1)">&nbsp;</div>
             </ng-template>
           </ngb-rating>
         </div>

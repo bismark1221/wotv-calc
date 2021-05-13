@@ -31,7 +31,7 @@
 
     <div class="equipmentsList">
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
-        <a (click)="selectEquipment(equipment.dataId)">
+        <a (click)="selectEquipment(equipment.dataId)" id="equipmentBlock_{{equipment.dataId}}">
           <div class="equipmentIcons">
             <img class="rarityImg" src="{{'assets/rarity/' + equipment.rarity + '.png'}}" />
           </div>
@@ -117,7 +117,16 @@
           <div class="titleSelect">
             Upgrade
           </div>
-          <ng-select placeholder="Select an upgrade" class="select-upgrade select-left-builder" [items]="[0, 1, 2, 3, 4, 5]" [(ngModel)]="equipment.upgrade" (ngModelChange)="updateUpgrade()" [clearable]="false" [searchable]="false">
+          <ng-select
+            placeholder="Select an upgrade"
+            class="select-upgrade select-left-builder"
+            [items]="[0, 1, 2, 3, 4, 5]"
+            [(ngModel)]="equipment.upgrade"
+            (ngModelChange)="updateUpgrade()"
+            [clearable]="false"
+            [searchable]="false"
+            id="select-upgrade"
+          >
             <ng-template ng-label-tmp let-item="item">
               {{ item === 0 ? 0 : '+' + item }}
             </ng-template>
@@ -132,7 +141,16 @@
           <div class="titleSelect">
             Type
           </div>
-          <ng-select placeholder="Select a grow" class="select-grow select-left-builder" [items]="equipment.growIds" [(ngModel)]="equipment.grow" (ngModelChange)="updateGrow()" [clearable]="false" [searchable]="false">
+          <ng-select
+            placeholder="Select a grow"
+            class="select-grow select-left-builder"
+            [items]="equipment.growIds"
+            [(ngModel)]="equipment.grow"
+            (ngModelChange)="updateGrow()"
+            [clearable]="false"
+            [searchable]="false"
+            id="select-type"
+          >
             <ng-template ng-label-tmp let-item="item">
               {{ equipment.grows[item].name }}
             </ng-template>

@@ -24,7 +24,7 @@ export class ModalEspersComponent implements OnInit {
   };
   savedEspers = {};
   loadEsperId = null;
-  maxStar = 3;
+  maxStar = 0;
 
   buffsImage = [
     'dark_atk',
