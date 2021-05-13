@@ -10,11 +10,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '12.10.0'
+          node-version: '14.17.0'
       - run: npm install -g @angular/cli
       - run: npm --version
       - run: ng --version
       - run: npm i -f
-        
+
       - name: Lint
         run: ng lint
