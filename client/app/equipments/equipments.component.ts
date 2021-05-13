@@ -3,6 +3,8 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 import { EquipmentService } from '../services/equipment.service';
 import { NavService } from '../services/nav.service';
+import { JobService } from '../services/job.service';
+import { ToolService } from '../services/tool.service';
 import { NameService } from '../services/name.service';
 
 @Component({
@@ -16,21 +18,25 @@ export class EquipmentsComponent implements OnInit {
   searchText = '';
   sort = 'rarity';
   order = 'asc';
+  jobs = [];
   filters = {
     rarity: [],
     type: [],
+    job: [],
     acquisition: []
   };
 
   isFilterChecked = {
     rarity: [],
     type: [],
+    job: [],
     acquisition: []
   };
   collapsed = {
-    rarity: false,
-    type: false,
-    acquisition: false
+    rarity: true,
+    type: true,
+    job: true,
+    acquisition: true
   };
 
   rarities = [
@@ -68,16 +74,20 @@ export class EquipmentsComponent implements OnInit {
     private equipmentService: EquipmentService,
     private translateService: TranslateService,
     private navService: NavService,
+    private jobService: JobService,
+    private toolService: ToolService,
     private nameService: NameService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateEquipments();
+      this.translateJobs();
     });
   }
 
   async ngOnInit() {
     this.navService.setTitle('Equipment');
 
+    await this.getJobs();
     await this.getAcquisitionTypes();
 
     if (sessionStorage.getItem('equipmentFilters')) {
@@ -92,9 +102,28 @@ export class EquipmentsComponent implements OnInit {
     await this.getEquipments();
   }
 
+  async getJobs() {
+    const jobs = await this.jobService.getUniqJobs();
+    jobs.forEach(job => {
+      if (job.statsModifiers && job.statsModifiers.length > 10) {
+        this.jobs.push(job);
+      }
+    });
+
+    this.translateJobs();
+  }
+
   async getEquipments() {
     this.equipments = await this.equipmentService.getEquipmentsForListing(this.filters, this.sort, this.order);
     this.translateEquipments();
+  }
+
+  private translateJobs() {
+    this.jobs.forEach(job => {
+      job.name = this.nameService.getName(job);
+    });
+
+    this.toolService.sortByName(this.jobs);
   }
 
   private translateEquipments() {
@@ -184,6 +213,14 @@ export class EquipmentsComponent implements OnInit {
         this.isFilterChecked.acquisition[acquisition] = false;
       } else {
         this.isFilterChecked.acquisition[acquisition] = true;
+      }
+    });
+
+    this.jobs.forEach(job => {
+      if (this.filters.job.indexOf(job.dataId) === -1) {
+        this.isFilterChecked.job[job.dataId] = false;
+      } else {
+        this.isFilterChecked.job[job.dataId] = true;
       }
     });
   }

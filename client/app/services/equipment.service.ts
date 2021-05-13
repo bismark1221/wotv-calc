@@ -297,7 +297,15 @@ export class EquipmentService {
           && (!filters.acquisition || filters.acquisition.length === 0 || filters.acquisition.indexOf(equipment.acquisition.type) !== -1 || filters.acquisition.indexOf(equipment.acquisition.type[this.translateService.getDefaultLang()]) !== -1)
           && (!filters.category || filters.category.length === 0 || filters.category.length === 3 || (filters.category.indexOf('acc') !== -1 && equipment.type === 'ACC') || (filters.category.indexOf('weapon') !== -1 && this.isWeapon(equipment.type)) || (filters.category.indexOf('armor') !== -1 && this.isArmor(equipment.type, true)))
         ) {
-          filteredEquipments.push(equipment);
+          let possbibleToAdd = true;
+
+          if (filters.job && filters.job.length > 0) {
+            possbibleToAdd = this.equipmentHasJob(equipment, filters);
+          }
+
+          if (possbibleToAdd) {
+            filteredEquipments.push(equipment);
+          }
         }
       });
 
@@ -305,6 +313,23 @@ export class EquipmentService {
     } else {
       return equipments;
     }
+  }
+
+  private equipmentHasJob(equipment, filters) {
+    let equipmentHasJob = false;
+
+    equipment.equippableJobs.forEach(jobId => {
+      const tableJob = jobId.split('_');
+      if (filters.job.length === 0 || filters.job.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) !== -1) {
+        equipmentHasJob = true;
+      }
+    });
+
+    if (equipment.equippableJobs.length === 0) {
+      equipmentHasJob = true;
+    }
+
+    return equipmentHasJob;
   }
 
   async getEquipmentBySlug(slug: string) {

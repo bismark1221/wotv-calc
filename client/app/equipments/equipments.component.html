@@ -52,6 +52,20 @@
           <label for="type{{type}}">{{ type }}</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('job')" [attr.aria-expanded]="!collapsed.job">
+        Jobs
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.job" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.job" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.job">
+        <div *ngFor="let job of jobs">
+          <input type="checkbox" id="job{{job.dataId}}" (change)="filterList('job', job.dataId)" [checked]="isFilterChecked.job[job.dataId]"/>
+          <label for="job{{job.dataId}}">{{ job.name }}</label>
+        </div>
+      </div>
     </div>
   </div>
 
