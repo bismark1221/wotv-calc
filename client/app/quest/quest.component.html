@@ -345,7 +345,7 @@
               <tr>
                 <td class="sub">DROPS</td>
               </tr>
-              <tr *ngIf="quest.enemies[j].drop && quest.dropLists[quest.enemies[j].drop]">
+              <tr *ngIf="quest.enemies[j].drop && quest.dropLists && quest.dropLists[quest.enemies[j].drop]">
                 <td>
                   <div *ngFor="let item of quest.dropLists[quest.enemies[j].drop]" class="dropRateItemBlock">
                     <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
