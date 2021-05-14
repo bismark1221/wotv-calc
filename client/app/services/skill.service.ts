@@ -605,13 +605,6 @@ export class SkillService {
           html = this.getChance(effect) + ' to instant death' + this.getValue(skill, effect) + this.getTurns(effect);
         }
       break;
-      case 'EXPLOSIVE_FIST_ATK' :
-        if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
-          html = 'Increase chance to apply explosive fist by' + this.getValue(skill, effect) + this.getTurns(effect);
-        } else {
-          html = this.getChance(effect) + ' explosive fist' + this.getValue(skill, effect) + this.getTurns(effect);
-        }
-      break;
       case 'TOAD_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
           html = 'Increase chance to apply toad by' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -733,9 +726,6 @@ export class SkillService {
       break;
       case 'INSTANT_DEATH_RES' :
         html = this.getChance(effect) + ' instant death resistance' + this.getValue(skill, effect) + this.getTurns(effect);
-      break;
-      case 'EXPLOSIVE_FIST_RES' :
-        html = this.getChance(effect) + ' explosive fist resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'TOAD_RES' :
         html = this.getChance(effect) + ' toad resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -881,6 +871,9 @@ export class SkillService {
       break;
       case 'AGI_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' AGI Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'BRAVERY_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Bravery Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RES_SLASH_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Slash resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1125,6 +1118,9 @@ export class SkillService {
       case 'RES_MAGIC_ATK_PENETRATION' :
         html = 'Increase magic resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_WATER_ATK_PENETRATION' :
+        html = 'Increase water resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'AP_CONSUMPTION' :
         html = 'Decrease AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
@@ -1187,6 +1183,23 @@ export class SkillService {
         break;
       case 'REFLECT' :
         html = 'Reflect magic skills' + this.getTurns(effect);
+        skill.effects.forEach(otherEffect => {
+          if (otherEffect.type === 'CONDITION_FOR_REFLECT') {
+            html = html + this.formatConditions(otherEffect.calcType);
+          }
+        });
+        break;
+      case 'CONDITION_FOR_REFLECT' :
+        html = '';
+        getTarget = false;
+        break;
+      case 'CONDITION_FOR_UPGRADE_SKILL' :
+        html = '';
+        getTarget = false;
+        break;
+      case 'CONDITION_FOR_GRANT_BUFF' :
+        html = 'Next effects will be applied' + this.formatConditions(effect.calcType);
+        getTarget = false;
         break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';
@@ -1195,20 +1208,12 @@ export class SkillService {
     }
 
     if (effect.condition || effect.buffOnCondition) {
-      const conditions = {
-        'BEHIND': ' when attacking from behind',
-        'MALE': ' when attacking male units',
-        'ON_PHYSIC_ATTACK': ' when attacking with physic attacks',
-        'ON_MAGIC_ATTACK': ' when attacking with magic attacks',
-        'ON_CRITICAL': ' when performing a critical hit'
-      };
-
-      if (conditions[effect.condition]) {
-        html = html + conditions[effect.condition];
+      if (this.formatConditions(effect.condition)) {
+        html = html + this.formatConditions(effect.condition);
       }
 
-      if (conditions[effect.buffOnCondition]) {
-        html = html + conditions[effect.buffOnCondition];
+      if (this.formatConditions(effect.buffOnCondition)) {
+        html = html + this.formatConditions(effect.buffOnCondition);
       }
     }
 
@@ -1240,6 +1245,20 @@ export class SkillService {
     }
 
     return html;
+  }
+
+  private formatConditions(condition) {
+    const conditions = {
+      'BEHIND': ' when attacking from behind',
+      'MALE': ' when attacking male units',
+      'ON_PHYSIC_ATTACK': ' when attacking with physic attacks',
+      'ON_MAGIC_ATTACK': ' when attacking with magic attacks',
+      'ON_CRITICAL': ' when performing a critical hit',
+      'HUMAN': ' when cast on human',
+      'NETHERBEAST': ' when cast on nether beast'
+    };
+
+    return conditions[condition];
   }
 
   private upperCaseFirst(text) {
@@ -1332,7 +1351,7 @@ export class SkillService {
         if ((from === 'damage' && (math.dst === 'DAMAGE' || math.dst === 'ABSORB'))
           || (from === 'notDamage' && (math.dst !== 'DAMAGE' && math.dst !== 'ABSORB'))
         ) {
-          if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB') {
+          if (math.type !== 'UNIT_ACTIONS' && math.type !== 'MODIFY_ABSORB' && math.dst !== 'TRIGGER') {
             html += ' + Increase ';
 
             switch (math.dst) {
@@ -1342,6 +1361,9 @@ export class SkillService {
               case 'EFFECT' :
                 html += 'effect by ';
                 break;
+              case 'COUNTER_CHANCE' :
+                html += 'counter chance by ';
+                break;
               case 'CHANCE' :
                 html += 'chance by ';
                 break;
@@ -1349,6 +1371,10 @@ export class SkillService {
                 html += 'modifier by ';
                 break;
             }
+          }
+
+          if (math.dst === 'TRIGGER') {
+            html += 'Automatic cast';
           }
 
           switch (math.formula) {
@@ -1384,7 +1410,7 @@ export class SkillService {
                 case 'RATIO' :
                   html += ' if the dead units is a multiple of ' + math.condition;
                   break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
@@ -1403,7 +1429,7 @@ export class SkillService {
                 case 'RATIO' :
                   html += ' if the unit level is a multiple of ' + math.condition;
                   break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
@@ -1422,7 +1448,7 @@ export class SkillService {
                 case 'RATIO' :
                   html += ' if the target height is a multiple of ' + math.condition;
                   break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
@@ -1441,7 +1467,7 @@ export class SkillService {
                 case 'RATIO' :
                   html += ' if the target level is a multiple of ' + math.condition;
                   break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
@@ -1460,7 +1486,7 @@ export class SkillService {
                 case 'RATIO' :
                   html += ' if the number of time you received damage is a multiple of ' + math.condition;
                   break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
@@ -1470,39 +1496,39 @@ export class SkillService {
                 case 'CURVE' :
                   html += ' + Increase chance up to ' + math.value + '% (-' + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% for each action done by the unit)';
                   break;
-                case 'FIX' :
-                  console.log('Not manage math formula right now...');
-                  break;
                 case 'COUNT' :
                   html += ' + Increase chance up to ' + math.value + '% (-' + Math.floor(this.getPositiveValue(math.value / math.condition, true)) + '% for each action done by the unit)';
                   break;
-                case 'RATIO' :
-                  console.log('Not manage math formula right now...');
-                  break;
-                case 'PERCENT' :
+                default:
                   console.log('Not manage math formula right now...');
                   break;
               }
               break;
             case 'MODIFY_ABSORB' :
               switch (math.formula) {
-                case 'CURVE' :
-                  console.log('Not manage math formula right now...');
-                  break;
-                case 'FIX' :
-                  console.log('Not manage math formula right now...');
-                  break;
-                case 'COUNT' :
-                  console.log('Not manage math formula right now...');
-                  break;
-                case 'RATIO' :
-                  console.log('Not manage math formula right now...');
-                  break;
                 case 'PERCENT' :
                   html += ' + Absorb ' + this.getPositiveValue(100 + math.value, true) + '% of the damage done';
                   break;
+                default:
+                  console.log('Not manage math formula right now...');
+                  break;
               }
               break;
+            case 'DESTROYED_PARTS' : // Not really used for now...
+            break;
+            case 'EFFECT_CONDITION' :
+              switch (math.formula) {
+                case 'AT_LEAST' :
+                  html += ' If the target have at least ' + math.condition + ' of the following effects : ';
+                  math.effects.forEach((effectName, effectIndex) => {
+                    html += effectName[0].toUpperCase() + effectName.slice(1).toLowerCase() + (effectIndex < math.effects.length - 1 ? ', ' : '');
+                  });
+                  break;
+                default:
+                  console.log('Not manage math formula right now...');
+                  break;
+              }
+            break;
             default :
               console.log('Not manage math type : ' + math.type);
               break;

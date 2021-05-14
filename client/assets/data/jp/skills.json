@@ -11219,6 +11219,7 @@
   "SK_BTL_INV_MKBT": {
     "effects": [
       {
+        "type": "BRAVERY_DEBUFF_RES",
         "minValue": 999,
         "maxValue": 999,
         "calcType": "fixe",
@@ -14937,7 +14938,15 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "LESS_THAN",
+        "condition": 0,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ]
   },
   "SK_MRGE_R02": {
     "effects": [
@@ -14970,7 +14979,15 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": [],
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "MORE_AND_LESS_THAN",
+        "condition": 1,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ],
     "damage": {
       "minValue": 0,
       "maxValue": 10,
@@ -15010,7 +15027,15 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": [],
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "MORE_THAN",
+        "condition": 3,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ],
     "damage": {
       "minValue": 10,
       "maxValue": 20,
@@ -15239,7 +15264,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 0,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D2": {
     "effects": [
@@ -15269,7 +15302,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 1,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D3": {
     "effects": [
@@ -15298,7 +15339,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 2,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D4": {
     "effects": [
@@ -15344,7 +15393,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 3,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_S2_M01": {
     "effects": [
@@ -29277,7 +29334,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "calcType": "dispel",
+        "type": "CONDITION_FOR_REFLECT",
+        "calcType": "NETHERBEAST",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -33654,7 +33712,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "calcType": "dispel",
+        "type": "CONDITION_FOR_REFLECT",
+        "calcType": "NETHERBEAST",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -37206,6 +37265,7 @@
   "SK_BTL_PIERCE_WATER_1-100_U": {
     "effects": [
       {
+        "type": "RES_WATER_ATK_PENETRATION",
         "minValue": 1,
         "maxValue": 100,
         "calcType": "fixe",
@@ -37392,7 +37452,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "calcType": "dispel",
+        "type": "CONDITION_FOR_REFLECT",
+        "calcType": "NETHERBEAST",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"

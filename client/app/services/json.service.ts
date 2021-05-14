@@ -63,7 +63,8 @@ export class JsonService {
     grids: {},
     maps: {},
     towerRewards: {},
-    towerFloors: {}
+    towerFloors: {},
+    skillExc: {}
   };
 
   jp = {
@@ -116,7 +117,8 @@ export class JsonService {
     grids: {},
     maps: {},
     towerRewards: {},
-    towerFloors: {}
+    towerFloors: {},
+    skillExc: {}
   };
 
   jpRomaji = {};
@@ -358,6 +360,7 @@ export class JsonService {
     104: 'RERAISE',
     105: 'PROTECT',
     106: 'SHELL',
+    107: 'CONDITION_FOR_REFLECT',
     110: 'FLOAT',
     111: 'INSTANT_DEATH',
     112: 'QUICKEN',
@@ -403,6 +406,7 @@ export class JsonService {
     204: 'MAG_DEBUFF_RES',
     205: 'SPR_DEBUFF_RES',
     207: 'AGI_DEBUFF_RES',
+    262: 'BRAVERY_DEBUFF_RES',
     272: 'RES_SLASH_DEBUFF_RES',
     278: 'RES_ALL_DEBUFF_RES',
     300: 'BUFFS_DURATION',
@@ -419,11 +423,13 @@ export class JsonService {
     325: 'RES_STRIKE_ATK_PENETRATION',
     327: 'RES_MISSILE_ATK_PENETRATION',
     329: 'RES_MAGIC_ATK_PENETRATION',
+    341: 'RES_WATER_ATK_PENETRATION',
     347: 'HEAL_POWER',
     348: 'REDUCE_COUNTER_CHANCE',
     501: 'ABSORB_HP_ONTIME',
     502: 'FROSTBITE',
-    503: 'EXPLOSIVE_FIST'
+    503: 'CONDITION_FOR_UPGRADE_SKILL',
+    509: 'CONDITION_FOR_GRANT_BUFF'
   };
 
   species = [
@@ -494,7 +500,9 @@ export class JsonService {
     16: 'WATER_ELEMENT',
     17: 'LIGHT_ELEMENT',
     18: 'DARK_ELEMENT',
-    19: 'BEHIND'
+    19: 'BEHIND',
+    30: 'HUMAN',
+    31: 'NETHERBEAST'
   };
 
   strengthType = {
@@ -502,25 +510,33 @@ export class JsonService {
     50: 'UNIT_ACTIONS',
     51: 'COUNT_DAMAGE_RECEIVED',
     53: 'UNIT_LEVEL',
-    // 56: 'DESTROYED_PARTS',
+    56: 'DESTROYED_PARTS', // Used just for units with multiple parts...
     72: 'HEIGHT',
     73: 'TARGET_LEVEL',
-    99: 'MODIFY_ABSORB'
+    99: 'MODIFY_ABSORB',
+    100: 'EFFECT_CONDITION'
   };
 
   strengthFormulaCondition = {
     0: 'FIX',
     1: 'CURVE',
+    2: 'FIX',
+    5: 'MORE_THAN',
+    6: 'LESS_THAN',
+    7: 'MORE_AND_LESS_THAN',
     22: 'RATIO',
+    40: 'AT_LEAST',
     50: 'PERCENT',
     1000: 'COUNT'
   };
 
   strengthModifier = {
     0: 'DAMAGE',
+    1: 'COUNTER_CHANCE',
     7: 'EFFECT',
     8: 'CHANCE',
-    9: 'ABSORB'
+    9: 'ABSORB',
+    20: 'TRIGGER'
   };
 
   damageEffectType = [
@@ -778,6 +794,7 @@ export class JsonService {
     1: 'fixe',
     2: 'percent',
     3: 'resistance',
+    10: 'fixe',
     11: 'percent',
     20: 'decrease',
     22: 'decrease',
@@ -1211,6 +1228,16 @@ export class JsonService {
       });
   }
 
+  private GLSkillExc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/data/SkillExc.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1386,6 +1413,16 @@ export class JsonService {
   private JPTowerRewards() {
     const date = new Date();
     return this.http.get('http://data.local-wotv-chain.com/jpdata/TowerReward.json?t=' + date).toPromise()
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return {items: []};
+      });
+  }
+
+  private JPSkillExc() {
+    const date = new Date();
+    return this.http.get('http://data.local-wotv-chain.com/jpdata/SkillExc.json?t=' + date).toPromise()
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -2227,6 +2264,9 @@ export class JsonService {
       this.ES_TranslateQuestTitle(),
       this.ES_TowerTitle(),
       this.ES_TowerFloorTitle(),
+
+      this.GLSkillExc(),
+      this.JPSkillExc()
     ]).then(responses => {
       this.gl.units = this.formatJson(responses[0]);
       this.gl.boards = this.formatJson(responses[1]);
@@ -2264,6 +2304,7 @@ export class JsonService {
       this.gl.maps = responses[104];
       this.gl.towerFloors = this.formatJson(responses[113]);
       this.gl.towerRewards = this.formatJson(responses[114]);
+      this.gl.skillExc = this.formatJson(responses[187]);
 
       this.jp.units = this.formatJson(responses[13]);
       this.jp.boards = this.formatJson(responses[14]);
@@ -2301,6 +2342,7 @@ export class JsonService {
       this.jp.maps = responses[112];
       this.jp.towerFloors = this.formatJson(responses[115]);
       this.jp.towerRewards = this.formatJson(responses[116]);
+      this.jp.skillExc = this.formatJson(responses[188]);
 
       this.names.en.unit = this.formatNames(responses[26]);
       this.names.en.job = this.formatNames(responses[27]);
@@ -3111,6 +3153,7 @@ export class JsonService {
       range_buff: null,
       reftar: null, // can be reflect or reflect target ?
       fdupli: null,
+      yuragi: null,
 
       // managed not here
       iname: null,
@@ -3422,8 +3465,19 @@ export class JsonService {
             formula: this.strengthType[strength.type] === 'COUNT_DAMAGE_RECEIVED' ? this.strengthFormulaCondition[1000] : this.strengthFormulaCondition[strength.formula],
             condition : strength.val1,
             value: strength.rate1,
-            dst: this.strengthModifier[strength.dst]
+            dst: this.strengthModifier[strength.dst],
+            effects: []
           };
+
+          if (math.type === 'EFFECT_CONDITION') {
+            if (this[this.version].skillExc[strength.exc]) {
+              this[this.version].skillExc[strength.exc].strcnd.forEach(rawEffect => {
+                math.effects.push(this.buffTypes[rawEffect.type]);
+              });
+            }
+          } else {
+            delete math.effects;
+          }
 
           skill.maths.push(math);
         }
@@ -3623,6 +3677,13 @@ export class JsonService {
                       console.log('SKILL TYPE undefined');
                       console.log(skill);
                     }*/
+
+                    if (type === 'CONDITION_FOR_REFLECT'
+                      || type === 'CONDITION_FOR_UPGRADE_SKILL'
+                      || type === 'CONDITION_FOR_GRANT_BUFF'
+                    ) {
+                      addedBuff.calcType = this.conditions[this[this.version].buffs[buff]['calc' + i]];
+                    }
 
                     skill.effects.push(addedBuff);
                     alreadyAddedBuffs.push(buff);
