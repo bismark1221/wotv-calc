@@ -523,10 +523,10 @@ export class SkillService {
         html = this.getIncrease(effect) + ' healing power' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'REGEN_ATK' :
-        html = this.getChance(effect, false) + ' regen' + this.getValue(skill, effect, true, ' health restored by turn') + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' regen (HP)' + this.getValue(skill, effect, true, ' health restored by turn') + this.getTurns(effect);
       break;
       case 'AUTO_RESTORE_ATK' :
-        html = this.getChance(effect, false) + ' auto-restore' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' auto-restore (AP)' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_ATK' :
         if (!fromEquipment && (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party')) {
@@ -699,7 +699,7 @@ export class SkillService {
         html = this.getChance(effect, false) + ' regen resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AUTO_RESTORE_RES' :
-        html = this.getChance(effect, false) + ' auto-restore resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = this.getChance(effect, false) + ' auto-restore (AP) resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'POISON_RES' :
         html = this.getChance(effect) + ' poison resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1099,7 +1099,7 @@ export class SkillService {
         html = 'Steal' + this.getValue(skill, effect);
       break;
       case 'TP_AUTO_RESTORE' :
-        html = 'Auto restore TP' + this.getValue(skill, effect) + this.getTurns(effect);
+        html = 'Auto restore (TP)' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'MAX_DAMAGE' :
         html = 'Increase max damage' + this.getValue(skill, effect) + this.getTurns(effect);
