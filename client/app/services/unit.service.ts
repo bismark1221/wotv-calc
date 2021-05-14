@@ -212,6 +212,7 @@ export class UnitService {
   };
 
   private JP_releaseDates = {
+    UN_LW_P_FRVA: 'XX/XX/XXXX',
     UN_LW_P_MONT: '14/11/2019',
     UN_LW_P_STRN: '14/11/2019',
     UN_LW_P_ELDE: '14/11/2019',
@@ -336,7 +337,7 @@ export class UnitService {
     UN_FF7_P_TIFA: '21/04/2021',
     UN_FF7_P_AERT: '01/05/2021',
     UN_FF7_P_BART: '01/05/2021',
-    UN_LW_P_FRVA: 'XX/XX/XXXX'
+    UN_LW_P_GRSR_01: '14/05/2021'
   };
 
   constructor(

@@ -4462,7 +4462,7 @@ export class JsonService {
 
     // Search in whole units
     Object.keys(this[this.version].wotvVisionCards).forEach(unitId => {
-      console.log(this[this.version].wotvVisionCards[unitId].dataId + ': ' + this[this.version].wotvVisionCards[unitId].slug + ',');
+      // console.log(this[this.version].wotvVisionCards[unitId].dataId + ': ' + this[this.version].wotvVisionCards[unitId].slug + ',');
       /*const unitSkills = [];
       Object.keys(this[this.version].wotvUnits[unitId].board.nodes).forEach(nodeId => {
         unitSkills.push(this[this.version].wotvUnits[unitId].board.nodes[nodeId].skill);

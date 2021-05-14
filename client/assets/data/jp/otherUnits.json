@@ -69614,6 +69614,1316 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_CSLI_RV": {
+    "dataId": "UN_LW_E_CSLI_RV",
+    "names": {
+      "en": "チョコプリン"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1500,
+        "max": 120000
+      },
+      "TP": {
+        "min": 100,
+        "max": 342
+      },
+      "AP": {
+        "min": 59,
+        "max": 264
+      },
+      "ATK": {
+        "min": 150,
+        "max": 948
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 39,
+        "max": 120
+      },
+      "DEX": {
+        "min": 93,
+        "max": 292
+      },
+      "AGI": {
+        "min": 33,
+        "max": 95
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 223
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHTNING_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 0,
+        "max": 0
+      },
+      "SLEEP_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLOW_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapscsli",
+    "species": "aquatic",
+    "size": 1,
+    "realMaxLevel": 99,
+    "slug": "choko-purin",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_CSLI_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_SLIM_RV": {
+    "dataId": "UN_LW_E_SLIM_RV",
+    "names": {
+      "en": "グリーンスライム"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 170,
+        "max": 2652
+      },
+      "TP": {
+        "min": 35,
+        "max": 80
+      },
+      "AP": {
+        "min": 41,
+        "max": 75
+      },
+      "ATK": {
+        "min": 53,
+        "max": 422
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 20,
+        "max": 72
+      },
+      "DEX": {
+        "min": 61,
+        "max": 232
+      },
+      "AGI": {
+        "min": 27,
+        "max": 65
+      },
+      "LUCK": {
+        "min": 63,
+        "max": 182
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsslim",
+    "species": "aquatic",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "gurn-suraimu",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_SLIM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_CSLI_01_RV": {
+    "dataId": "UN_LW_E_CSLI_01_RV",
+    "names": {
+      "en": "ホワイトマシュマロ"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1300,
+        "max": 140000
+      },
+      "TP": {
+        "min": 100,
+        "max": 342
+      },
+      "AP": {
+        "min": 59,
+        "max": 264
+      },
+      "ATK": {
+        "min": 150,
+        "max": 948
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 39,
+        "max": 120
+      },
+      "DEX": {
+        "min": 93,
+        "max": 292
+      },
+      "AGI": {
+        "min": 33,
+        "max": 75
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 223
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "ICE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "EARTH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "WIND_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHTNING_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "WATER_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHT_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "DARK_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 0,
+        "max": 0
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapscsli_01",
+    "species": "aquatic",
+    "size": 1,
+    "realMaxLevel": 99,
+    "slug": "howaito-mashumaro",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_CSLI_01_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_TH_RDM_RV": {
+    "dataId": "UN_LW_E_TH_RDM_RV",
+    "names": {
+      "en": "賊"
+    },
+    "rarity": "N",
+    "jobs": [
+      "JB_LW_RDM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 137,
+        "max": 1966
+      },
+      "TP": {
+        "min": 49,
+        "max": 217
+      },
+      "AP": {
+        "min": 56,
+        "max": 132
+      },
+      "ATK": {
+        "min": 45,
+        "max": 280
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 313
+      },
+      "DEX": {
+        "min": 69,
+        "max": 256
+      },
+      "AGI": {
+        "min": 23,
+        "max": 58
+      },
+      "LUCK": {
+        "min": 71,
+        "max": 217
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapsth00",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "zoku",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_RDM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_IFRT_RV": {
+    "dataId": "UN_LW_E_IFRT_RV",
+    "names": {
+      "en": "イフリート"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1300,
+        "max": 130000
+      },
+      "TP": {
+        "min": 100,
+        "max": 364
+      },
+      "AP": {
+        "min": 60,
+        "max": 372
+      },
+      "ATK": {
+        "min": 130,
+        "max": 630
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 150,
+        "max": 650
+      },
+      "DEX": {
+        "min": 104,
+        "max": 298
+      },
+      "AGI": {
+        "min": 30,
+        "max": 99
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 260
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 2,
+        "max": 2
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapsifrt",
+    "species": "netherBeast",
+    "size": 1,
+    "realMaxLevel": 99,
+    "slug": "ifurto",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_IFRT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_00_BLM_RV": {
+    "dataId": "UN_LW_E_00_BLM_RV",
+    "names": {
+      "en": "黒魔道士"
+    },
+    "jobs": [
+      "JB_LW_BLM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 128,
+        "max": 2468
+      },
+      "TP": {
+        "min": 45,
+        "max": 280
+      },
+      "AP": {
+        "min": 51,
+        "max": 190
+      },
+      "ATK": {
+        "min": 22,
+        "max": 140
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 49,
+        "max": 432
+      },
+      "DEX": {
+        "min": 75,
+        "max": 256
+      },
+      "AGI": {
+        "min": 19,
+        "max": 58
+      },
+      "LUCK": {
+        "min": 87,
+        "max": 210
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsbm00",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "kuro-madoushi",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_BHMT_01_RV": {
+    "dataId": "UN_LW_E_BHMT_01_RV",
+    "names": {
+      "en": "キングベヒーモス"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1200,
+        "max": 120000
+      },
+      "TP": {
+        "min": 100,
+        "max": 364
+      },
+      "AP": {
+        "min": 60,
+        "max": 372
+      },
+      "ATK": {
+        "min": 130,
+        "max": 630
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 100,
+        "max": 500
+      },
+      "DEX": {
+        "min": 104,
+        "max": 298
+      },
+      "AGI": {
+        "min": 30,
+        "max": 90
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 260
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "PIERCE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "STRIKE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "dark",
+    "image": "lapsbhmt_01",
+    "species": "beast",
+    "size": 1,
+    "realMaxLevel": 99,
+    "slug": "kingu-behmosu",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_BHMT_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 0,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_WOLF_02_RV": {
+    "dataId": "UN_LW_E_WOLF_02_RV",
+    "names": {
+      "en": "カイザーウルフ"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 211,
+        "max": 2540
+      },
+      "TP": {
+        "min": 42,
+        "max": 97
+      },
+      "AP": {
+        "min": 51,
+        "max": 157
+      },
+      "ATK": {
+        "min": 67,
+        "max": 311
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 40,
+        "max": 73
+      },
+      "DEX": {
+        "min": 107,
+        "max": 285
+      },
+      "AGI": {
+        "min": 31,
+        "max": 61
+      },
+      "LUCK": {
+        "min": 99,
+        "max": 246
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapswolf_02",
+    "species": "beast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "kaiz-urufu",
+    "attack": {
+      "names": {
+        "en": "通常攻撃"
+      },
+      "effects": [],
+      "dataId": "SK_WOLF_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_BGN_MONT": {
     "dataId": "UN_LW_BGN_MONT",
     "names": {

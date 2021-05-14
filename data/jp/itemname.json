@@ -1745,6 +1745,26 @@
             "value": "ガンナー（FFⅦR）の記憶・緋"
         },
         {
+            "key": "IT_JB_MM_GRSR_01",
+            "value": "銀狼の姫の記憶・翠"
+        },
+        {
+            "key": "IT_JB_MM_GRSR_01_2",
+            "value": "銀狼の姫の記憶・碧"
+        },
+        {
+            "key": "IT_JB_MM_GRSR_01_3",
+            "value": "銀狼の姫の記憶・紫"
+        },
+        {
+            "key": "IT_JB_MM_GRSR_01_4",
+            "value": "銀狼の姫の記憶・橘"
+        },
+        {
+            "key": "IT_JB_MM_GRSR_01_5",
+            "value": "銀狼の姫の記憶・緋"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "火の輝石・翠"
         },
@@ -2825,6 +2845,10 @@
             "value": "バレットの欠片"
         },
         {
+            "key": "IT_PI_LW_GRSR_01",
+            "value": "グラセラ（ドレスアップ）の欠片"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "モント・リオニスの思珠"
         },
@@ -3275,6 +3299,10 @@
         {
             "key": "IT_SP_FF7_UR",
             "value": "【FFⅦR】ユニットの思珠（UR）"
+        },
+        {
+            "key": "IT_SP_LW_GRSR_01",
+            "value": "グラセラ（ドレスアップ）の思珠"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -4673,8 +4701,20 @@
             "value": "【4月】レイドメダル"
         },
         {
+            "key": "IT_EC_RAID_17",
+            "value": "リバイバルレイドメダル"
+        },
+        {
             "key": "IT_EC_RAID_FF14",
             "value": "【復刻】FFXIVコラボレイドメダル"
+        },
+        {
+            "key": "IT_UN_EXCHANGE_01",
+            "value": "ソウルスター"
+        },
+        {
+            "key": "IT_VC_EXCHANGE_01",
+            "value": "ビジョンスター"
         },
         {
             "key": "IT_EC_MATCH",
@@ -4871,6 +4911,10 @@
         {
             "key": "IT_EC_SUMMON_05_02_A",
             "value": "【5月】召喚メダルA"
+        },
+        {
+            "key": "IT_EC_SUMMON_05_02_B",
+            "value": "【5月】召喚メダルB"
         },
         {
             "key": "IT_EC_SUMMON_HALL_01",
@@ -5369,6 +5413,26 @@
             "value": "覚醒輝源×370選択召喚券"
         },
         {
+            "key": "IT_US_SE_AW_R6_01",
+            "value": "覚醒魂（★6）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW_R5_01",
+            "value": "覚醒魂（★5）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW_R4_01",
+            "value": "覚醒魂（★4）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW_R3_01",
+            "value": "覚醒魂（★3）×50選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AW_R2_01",
+            "value": "覚醒魂（★2）×50選択召喚券"
+        },
+        {
             "key": "IT_US_SE_PI_COM_01",
             "value": "属性の想いの欠片×50選択召喚券"
         },
@@ -5391,6 +5455,10 @@
         {
             "key": "IT_US_SE_PI_COM_06",
             "value": "属性の想いの欠片×120選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_PI_COM_07",
+            "value": "属性の想いの欠片×340選択召喚券"
         },
         {
             "key": "IT_US_SE_JB_EM_01_01",
@@ -5423,6 +5491,10 @@
         {
             "key": "IT_US_SE_SB_AW_01",
             "value": "属性の獣醒石×20選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_AW_02",
+            "value": "属性の獣醒石×40選択召喚券"
         },
         {
             "key": "IT_US_SE_SB_EXP_01",
@@ -5463,6 +5535,10 @@
         {
             "key": "IT_US_SE_SB_EXP_10",
             "value": "属性の魔石（極）×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_SB_EXP_11",
+            "value": "属性の魔石（極）×800選択召喚券"
         },
         {
             "key": "IT_US_G_U_UR_01",
@@ -5882,7 +5958,7 @@
         },
         {
             "key": "IT_US_SE_PI_40",
-            "value": "【1.5周年】ユニット欠片×5選択召喚券"
+            "value": "【1.5周年記念】ユニット欠片×5選択召喚券"
         },
         {
             "key": "IT_US_SE_PI_41",
@@ -5991,6 +6067,18 @@
         {
             "key": "IT_US_SE_AF_AW_16",
             "value": "【1.5周年カウントダウンCP】秘伝書×150選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_17",
+            "value": "【1.5周年記念】秘伝書×1200選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_18",
+            "value": "【5月国営放送】秘伝書×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_AF_AW_19",
+            "value": "【1.5周年記念】秘伝書×100選択召喚券"
         },
         {
             "key": "IT_US_SE_AF_SUP_01",
@@ -6309,6 +6397,18 @@
             "value": "【GW記念】ジェダイト×15選択召喚券"
         },
         {
+            "key": "IT_US_SE_JB_03_16",
+            "value": "【1.5周年記念】チャロアイト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_02_13",
+            "value": "【1.5周年記念】アズライト×30選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JB_01_13",
+            "value": "【1.5周年記念】ジェダイト×15選択召喚券"
+        },
+        {
             "key": "IT_US_SE_JBEX_EM_01",
             "value": "輝石像×300選択召喚券"
         },
@@ -6391,6 +6491,10 @@
         {
             "key": "IT_US_SE_JBEX_AF_17",
             "value": "【GW記念】焦印石×100選択召喚券"
+        },
+        {
+            "key": "IT_US_SE_JBEX_AF_18",
+            "value": "【1.5周年記念】焦印石×300選択召喚券"
         },
         {
             "key": "IT_US_SE_SP_LW_01",

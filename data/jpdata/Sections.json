@@ -671,6 +671,11 @@
       "hurl": "ev_bart_01"
     },
     {
+      "iname": "SE_EV_GRSR_02",
+      "limit": 1,
+      "hurl": "ev_grsr_02"
+    },
+    {
       "iname": "SE_PTQ_FF7R_01",
       "skip_ticket": "IT_PT_SKIP_FF7_1",
       "hurl": "pt_ff7r_01"
@@ -1075,6 +1080,14 @@
       "iname": "SE_PTQ_0002",
       "skip_ticket": "IT_PT_SKIP_002",
       "hurl": "pt_002"
+    },
+    {
+      "iname": "SE_MU_RAID_RV_01",
+      "hurl": "ev_raid_rv_01"
+    },
+    {
+      "iname": "SE_MU_RAID_RV_02",
+      "hurl": "ev_raid_rv_02"
     },
     {
       "iname": "SE_EV_WAVE_001",

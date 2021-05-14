@@ -449,6 +449,76 @@
       "en": "Title given to the player who ranked first in the point ranking of Grand Season 1 (2020.6-2021.4) of the class match"
     }
   },
+  "LW_PA_00085": {
+    "dataId": "LW_PA_00085",
+    "names": {
+      "en": "Bronze Snake, Black Sunday"
+    },
+    "grade": "brown",
+    "howToGet": {
+      "en": "Title given to players in Bronze Master Class at the end of each season of Class Match Grand Season 2 ~ Black Section ~"
+    }
+  },
+  "LW_PA_00086": {
+    "dataId": "LW_PA_00086",
+    "names": {
+      "en": "Silver Hayabusa / Black"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players belonging to Silver Master Class at the end of each season of Class Match Grand Season 2-Black Festival"
+    }
+  },
+  "LW_PA_00087": {
+    "dataId": "LW_PA_00087",
+    "names": {
+      "en": "Golden Lion Black Sunday"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players belonging to Gold Master Class at the end of each season of Class Match Grand Season 2-Black Festival"
+    }
+  },
+  "LW_PA_00088": {
+    "dataId": "LW_PA_00088",
+    "names": {
+      "en": "Knight of Platinum, Black Knight"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players in Platinum Master Class at the end of each season of Class Match Grand Season 2-Black Festival"
+    }
+  },
+  "LW_PA_00089": {
+    "dataId": "LW_PA_00089",
+    "names": {
+      "en": "Kongo no Shosei / Kuroyo"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players in the Diamond Master Class at the end of each season of Class Match Grand Season 2-Black Festival"
+    }
+  },
+  "LW_PA_00090": {
+    "dataId": "LW_PA_00090",
+    "names": {
+      "en": "Hard-armed soldier, black"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who ranked in the top 10 in the point ranking in the Diamond Master Class of Class Match Grand Season 2-Black Festival"
+    }
+  },
+  "LW_PA_00091": {
+    "dataId": "LW_PA_00091",
+    "names": {
+      "en": "Kinjo Iron Wall / Black"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to the player who ranked first in the point ranking in the Diamond Master Class of Grand Season 2 ~ Black Festival ~ of Class Match"
+    }
+  },
   "LW_PA_00060": {
     "dataId": "LW_PA_00060",
     "names": {
@@ -5132,41 +5202,41 @@
   "LW_PA_CH_107_1": {
     "dataId": "LW_PA_CH_107_1",
     "names": {
-      "en": "Leonis Mont Guess Fan"
+      "en": "Mont (King of Leonis) Fan"
     },
     "grade": "grey",
     "howToGet": {
-      "en": "Title given to players who have completed 100 quests with King Leonis Mont"
+      "en": "Title given to players who have taken Mont (King of Leonis) on 100 Quests"
     }
   },
   "LW_PA_CH_107_2": {
     "dataId": "LW_PA_CH_107_2",
     "names": {
-      "en": "King Leonis Mont Enthusiast"
+      "en": "Mont (King of Leonis) Enthusiast"
     },
     "grade": "red",
     "howToGet": {
-      "en": "Title given to players who have completed 500 quests with King Leonis Mont"
+      "en": "Title given to players who have taken Mont (King of Leonis) on 500 Quests"
     }
   },
   "LW_PA_CH_107_3": {
     "dataId": "LW_PA_CH_107_3",
     "names": {
-      "en": "King Leonis Mont Devotee"
+      "en": "Mont (King of Leonis) Devotee"
     },
     "grade": "blue",
     "howToGet": {
-      "en": "Title given to players who have completed 3000 quests with King Leonis Mont"
+      "en": "Title given to players who have taken Mont (King of Leonis) on 3,000 Quests"
     }
   },
   "LW_PA_CH_107_4": {
     "dataId": "LW_PA_CH_107_4",
     "names": {
-      "en": "Awakening Lion King"
+      "en": "The New King of the Lions"
     },
     "grade": "pink",
     "howToGet": {
-      "en": "Title given to players who have completed 10,000 quests with King Leonis Mont"
+      "en": "Title given to players who have taken Mont (King of Leonis) on 10,000 Quests"
     }
   },
   "LW_PA_CH_108_1": {
@@ -5847,6 +5917,46 @@
     "grade": "pink",
     "howToGet": {
       "en": "Title given to players who have completed 10,000 quests with Barrett"
+    }
+  },
+  "LW_PA_CH_125_1": {
+    "dataId": "LW_PA_CH_125_1",
+    "names": {
+      "en": "Dress Glaciela Fan"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have completed 100 quests with Dress Graciela"
+    }
+  },
+  "LW_PA_CH_125_2": {
+    "dataId": "LW_PA_CH_125_2",
+    "names": {
+      "en": "Dress Glaciela Enthusiast"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have completed 500 quests with Dress Graciela"
+    }
+  },
+  "LW_PA_CH_125_3": {
+    "dataId": "LW_PA_CH_125_3",
+    "names": {
+      "en": "Dress Glaciela Devotee"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have completed 3000 quests with Dress Graciela"
+    }
+  },
+  "LW_PA_CH_125_4": {
+    "dataId": "LW_PA_CH_125_4",
+    "names": {
+      "en": "Yoshihime of Amane"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have completed 10,000 quests with Dress Graciela"
     }
   }
 }

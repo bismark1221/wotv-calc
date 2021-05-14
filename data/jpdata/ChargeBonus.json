@@ -3550,6 +3550,68 @@
           "num": 30
         }
       ]
+    },
+    {
+      "iname": "CHARGE_BONUS_0072",
+      "buy_lapis_num": 60,
+      "day_bonus": [
+        {
+          "day": 1,
+          "type": 0,
+          "item_id": "IT_LB_EXP_03",
+          "num": 15
+        },
+        {
+          "day": 2,
+          "type": 0,
+          "item_id": "IT_WA_EXP_03",
+          "num": 15
+        },
+        {
+          "day": 3,
+          "type": 0,
+          "item_id": "IT_US_SE_SB_EXP_07",
+          "num": 1
+        },
+        {
+          "day": 4,
+          "type": 0,
+          "item_id": "IT_CG_04",
+          "num": 15
+        },
+        {
+          "day": 5,
+          "type": 0,
+          "item_id": "IT_PI_COM_ALL",
+          "num": 3
+        },
+        {
+          "day": 6,
+          "type": 0,
+          "item_id": "IT_JBEX_MM",
+          "num": 5
+        },
+        {
+          "day": 7,
+          "type": 0,
+          "item_id": "IT_JBEX_UR",
+          "num": 1
+        }
+      ],
+      "constant_bonus": [
+        {
+          "select": 1,
+          "type": 0,
+          "item_id": "IT_ACTP_03",
+          "num": 3
+        },
+        {
+          "select": 1,
+          "type": 0,
+          "item_id": "IT_CG_03",
+          "num": 30
+        }
+      ]
     }
   ]
 }

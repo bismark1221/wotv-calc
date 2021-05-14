@@ -34148,6 +34148,71 @@
     "target": "self",
     "maxLevel": 50
   },
+  "SK_CSLI_01_M_02": {
+    "effects": [],
+    "dataId": "SK_CSLI_01_M_02",
+    "type": "skill",
+    "names": {
+      "en": "とかす"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "all",
+      "effType": "ABSORB",
+      "formula": {}
+    }
+  },
+  "SK_CSLI_01_M_03": {
+    "effects": [
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "percent",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CSLI_01_M_03",
+    "type": "skill",
+    "names": {
+      "en": "ホワイトパーティー"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 20,
+      "maxValue": 50,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
   "SK_LW_KNT_S_2": {
     "effects": [],
     "dataId": "SK_LW_KNT_S_2",
@@ -37231,71 +37296,6 @@
       "s": 0,
       "l": 1,
       "h": 1
-    }
-  },
-  "SK_CSLI_01_M_02": {
-    "effects": [],
-    "dataId": "SK_CSLI_01_M_02",
-    "type": "skill",
-    "names": {
-      "en": "とかす"
-    },
-    "target": "ennemySide",
-    "cost": {
-      "type": "AP",
-      "value": 18
-    },
-    "count": 2,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -5,
-      "maxValue": 21,
-      "type": "all",
-      "effType": "ABSORB",
-      "formula": {}
-    }
-  },
-  "SK_CSLI_01_M_03": {
-    "effects": [
-      {
-        "type": "SLEEP_ATK",
-        "calcType": "percent",
-        "rate": 30,
-        "turn": 3,
-        "target": "target",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_CSLI_01_M_03",
-    "type": "skill",
-    "names": {
-      "en": "ホワイトパーティー"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 24
-    },
-    "count": 5,
-    "maxLevel": 20,
-    "based": "physic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 20,
-      "maxValue": 50,
-      "type": "all",
-      "effType": "DAMAGE",
-      "formula": {}
     }
   },
   "SK_LW_HIT_5_SSR": {

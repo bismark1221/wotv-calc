@@ -131,6 +131,7 @@ for unitFolder in unitFolders:
           and smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'smile.png'
           and smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'surprised.png'
           and smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'surprosed.png'
+          and smallFileName.split('_')[len(smallFileName.split('_')) - 1] != 'setting.txt'
         )
       )
       and not isfile(join('client/assets/units', smallFileName)) and smallFileName != "Thumbs.db@SynoEAStream" and smallFileName != "Thumbs.db" and smallFileName != ".DS_Store" and smallFileName != ".DS_Store@SynoResource"

@@ -3366,6 +3366,46 @@
     "type": "job_awake_orb",
     "icon": "JB_FF7_BART"
   },
+  "IT_JB_MM_GRSR_01": {
+    "dataId": "IT_JB_MM_GRSR_01",
+    "names": {
+      "en": "銀狼の姫の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_GRSR_01"
+  },
+  "IT_JB_MM_GRSR_01_2": {
+    "dataId": "IT_JB_MM_GRSR_01_2",
+    "names": {
+      "en": "銀狼の姫の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_GRSR_01"
+  },
+  "IT_JB_MM_GRSR_01_3": {
+    "dataId": "IT_JB_MM_GRSR_01_3",
+    "names": {
+      "en": "銀狼の姫の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_GRSR_01"
+  },
+  "IT_JB_MM_GRSR_01_4": {
+    "dataId": "IT_JB_MM_GRSR_01_4",
+    "names": {
+      "en": "銀狼の姫の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_GRSR_01"
+  },
+  "IT_JB_MM_GRSR_01_5": {
+    "dataId": "IT_JB_MM_GRSR_01_5",
+    "names": {
+      "en": "銀狼の姫の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_GRSR_01"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -3929,7 +3969,7 @@
   "IT_JBEX_AXE": {
     "dataId": "IT_JBEX_AXE",
     "names": {
-      "en": "斧の焦印石"
+      "en": "斧の焦印石 - Axe-Branded Tablet"
     },
     "type": "compo_job"
   },
@@ -5256,6 +5296,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_GRSR_01": {
+    "dataId": "IT_PI_LW_GRSR_01",
+    "names": {
+      "en": "グラセラ（ドレスアップ）の欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6047,6 +6094,13 @@
     },
     "type": "exjob_orb"
   },
+  "IT_SP_LW_GRSR_01": {
+    "dataId": "IT_SP_LW_GRSR_01",
+    "names": {
+      "en": "グラセラ（ドレスアップ）の思珠"
+    },
+    "type": "exjob_orb"
+  },
   "IT_SB_EXP_FIRE_01": {
     "dataId": "IT_SB_EXP_FIRE_01",
     "names": {
@@ -6724,14 +6778,14 @@
   "IT_SB_AW_PNIX_R2": {
     "dataId": "IT_SB_AW_PNIX_R2",
     "names": {
-      "en": "フェニックスの獣醒石（★2）"
+      "en": "フェニックスの獣醒石（★2） - Phoenix's Awakening Stone  (2★)"
     },
     "type": "compo_esper_awake"
   },
   "IT_SB_AW_PNIX_R3": {
     "dataId": "IT_SB_AW_PNIX_R3",
     "names": {
-      "en": "フェニックスの獣醒石（★3）"
+      "en": "フェニックスの獣醒石（★3） - Phoenix's Awakening Stone  (3★)"
     },
     "type": "compo_esper_awake"
   },
@@ -8250,7 +8304,7 @@
   "IT_AF_LW_ARM_028": {
     "dataId": "IT_AF_LW_ARM_028",
     "names": {
-      "en": "ブリガンダインのクラフトレシピ"
+      "en": "ブリガンダインのクラフトレシピ - Brigandine Crafting Recipe"
     },
     "type": "recipe",
     "icon": "AF_LW_ARM_028"
@@ -8584,7 +8638,7 @@
   "IT_EC_RAID_13": {
     "dataId": "IT_EC_RAID_13",
     "names": {
-      "en": "【1月】レイドメダル"
+      "en": "【1月】レイドメダル - May Raid Medal"
     },
     "type": "medal"
   },
@@ -8611,12 +8665,34 @@
     "type": "medal",
     "icon": "IT_EC_RAID_13"
   },
+  "IT_EC_RAID_17": {
+    "dataId": "IT_EC_RAID_17",
+    "names": {
+      "en": "リバイバルレイドメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_13"
+  },
   "IT_EC_RAID_FF14": {
     "dataId": "IT_EC_RAID_FF14",
     "names": {
       "en": "【復刻】FFXIVコラボレイドメダル - FFXIV Raid Medal"
     },
     "type": "medal"
+  },
+  "IT_UN_EXCHANGE_01": {
+    "dataId": "IT_UN_EXCHANGE_01",
+    "names": {
+      "en": "ソウルスター"
+    },
+    "type": "soul_medal"
+  },
+  "IT_VC_EXCHANGE_01": {
+    "dataId": "IT_VC_EXCHANGE_01",
+    "names": {
+      "en": "ビジョンスター"
+    },
+    "type": "vision_medal"
   },
   "IT_EC_MATCH": {
     "dataId": "IT_EC_MATCH",
@@ -8995,6 +9071,14 @@
     "dataId": "IT_EC_SUMMON_05_02_A",
     "names": {
       "en": "【5月】召喚メダルA - May Summon Medal A"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
+  "IT_EC_SUMMON_05_02_B": {
+    "dataId": "IT_EC_SUMMON_05_02_B",
+    "names": {
+      "en": "【5月】召喚メダルB"
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
@@ -9935,6 +10019,46 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AW_R6_01": {
+    "dataId": "IT_US_SE_AW_R6_01",
+    "names": {
+      "en": "覚醒魂（★6）×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW_R5_01": {
+    "dataId": "IT_US_SE_AW_R5_01",
+    "names": {
+      "en": "覚醒魂（★5）×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW_R4_01": {
+    "dataId": "IT_US_SE_AW_R4_01",
+    "names": {
+      "en": "覚醒魂（★4）×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW_R3_01": {
+    "dataId": "IT_US_SE_AW_R3_01",
+    "names": {
+      "en": "覚醒魂（★3）×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AW_R2_01": {
+    "dataId": "IT_US_SE_AW_R2_01",
+    "names": {
+      "en": "覚醒魂（★2）×50選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_01": {
     "dataId": "IT_US_SE_PI_COM_01",
     "names": {
@@ -9979,6 +10103,14 @@
     "dataId": "IT_US_SE_PI_COM_06",
     "names": {
       "en": "属性の想いの欠片×120選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_COM_07": {
+    "dataId": "IT_US_SE_PI_COM_07",
+    "names": {
+      "en": "属性の想いの欠片×340選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10043,6 +10175,14 @@
     "dataId": "IT_US_SE_SB_AW_01",
     "names": {
       "en": "属性の獣醒石×20選択召喚券 - Select Element Awakening Stone x20 Summon Ticket"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SB_AW_02": {
+    "dataId": "IT_US_SE_SB_AW_02",
+    "names": {
+      "en": "属性の獣醒石×40選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10123,6 +10263,14 @@
     "dataId": "IT_US_SE_SB_EXP_10",
     "names": {
       "en": "属性の魔石（極）×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_SB_EXP_11": {
+    "dataId": "IT_US_SE_SB_EXP_11",
+    "names": {
+      "en": "属性の魔石（極）×800選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -10962,7 +11110,7 @@
   "IT_US_SE_PI_40": {
     "dataId": "IT_US_SE_PI_40",
     "names": {
-      "en": "【1.5周年】ユニット欠片×5選択召喚券"
+      "en": "【1.5周年記念】ユニット欠片×5選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11183,6 +11331,30 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AF_AW_17": {
+    "dataId": "IT_US_SE_AF_AW_17",
+    "names": {
+      "en": "【1.5周年記念】秘伝書×1200選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_AW_18": {
+    "dataId": "IT_US_SE_AF_AW_18",
+    "names": {
+      "en": "【5月国営放送】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_AW_19": {
+    "dataId": "IT_US_SE_AF_AW_19",
+    "names": {
+      "en": "【1.5周年記念】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_AF_SUP_01": {
     "dataId": "IT_US_SE_AF_SUP_01",
     "names": {
@@ -11218,7 +11390,7 @@
   "IT_US_SE_AF_PT_02": {
     "dataId": "IT_US_SE_AF_PT_02",
     "names": {
-      "en": "ドワーフ鎚×5選択召喚券"
+      "en": "ドワーフ鎚×5選択召喚券 - Select Dwarven Hammer x5 Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -11815,6 +11987,30 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_03_16": {
+    "dataId": "IT_US_SE_JB_03_16",
+    "names": {
+      "en": "【1.5周年記念】チャロアイト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_13": {
+    "dataId": "IT_US_SE_JB_02_13",
+    "names": {
+      "en": "【1.5周年記念】アズライト×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_13": {
+    "dataId": "IT_US_SE_JB_01_13",
+    "names": {
+      "en": "【1.5周年記念】ジェダイト×15選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -11979,6 +12175,14 @@
     "dataId": "IT_US_SE_JBEX_AF_17",
     "names": {
       "en": "【GW記念】焦印石×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JBEX_AF_18": {
+    "dataId": "IT_US_SE_JBEX_AF_18",
+    "names": {
+      "en": "【1.5周年記念】焦印石×300選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -12393,7 +12597,7 @@
   "IT_VPI_LW_PNIX": {
     "dataId": "IT_VPI_LW_PNIX",
     "names": {
-      "en": "炎翼神鳥　フェニックスの欠片"
+      "en": "炎翼神鳥　フェニックスの欠片 - \"Fiery Wings of Legend, Phoenix\" Vision Card Shard"
     },
     "type": "vc_shard"
   },
@@ -12729,7 +12933,7 @@
   "IT_VPI_LW_LILS2": {
     "dataId": "IT_VPI_LW_LILS2",
     "names": {
-      "en": "強大な壁の欠片"
+      "en": "強大な壁の欠片 - \"A Mighty Obstacle\" Vision Card Shard"
     },
     "type": "vc_shard"
   },
