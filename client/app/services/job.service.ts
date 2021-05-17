@@ -59,7 +59,7 @@ export class JobService {
         job.constructFromJson(rawJobs[jobId]);
 
         const tableJob = job.dataId.split('_');
-        const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2];
+        const genericDataId = tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2] + (tableJob[3] && tableJob[3] === '01' ? '_01' : '');
         job.dataId = genericDataId;
 
         if (uniqJobs.indexOf(genericDataId) === -1) {

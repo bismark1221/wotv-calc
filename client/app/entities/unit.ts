@@ -349,7 +349,7 @@ export class Unit {
 
       this.stats[stat].base = Math.floor(min + ((max - min) / ((this.realMaxLevel ? this.realMaxLevel : 99) - 1) * (this.level - 1)));
 
-      if (this.exJobs.length > 0 && this.jobsData[0].level > 15 && this.level > 99) {
+      if (this.exJobs.length > 0 && this.jobsData && this.jobsData[0].level > 15 && this.level > 99) {
         this.stats[stat].base = Math.floor(max + (((ex - max) / 21) * (this.level - 99)));
       }
 

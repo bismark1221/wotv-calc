@@ -51,7 +51,23 @@ export class OtherIndexComponent implements OnInit {
     {type: 'LIGHTNING_RES', width: 70},
     {type: 'WATER_RES', width: 70},
     {type: 'LIGHT_RES', width: 70},
-    {type: 'DARK_RES', width: 70}
+    {type: 'DARK_RES', width: 70},
+
+    {type: 'POISON_RES', width: 70},
+    {type: 'BLIND_RES', width: 70},
+    {type: 'SLEEP_RES', width: 70},
+    {type: 'SILENCE_RES', width: 70},
+    {type: 'PARALYZE_RES', width: 70},
+    {type: 'CONFUSION_RES', width: 70},
+    {type: 'PETRIFY_RES', width: 70},
+    {type: 'TOAD_RES', width: 70},
+    {type: 'CHARM_RES', width: 70},
+    {type: 'SLOW_RES', width: 70},
+    {type: 'STOP_RES', width: 70},
+    {type: 'IMMOBILIZE_RES', width: 70},
+    {type: 'DISABLE_RES', width: 70},
+    {type: 'BERSERK_RES', width: 70},
+    {type: 'DOOM_RES', width: 70}
   ];
 
   @ViewChild('leftWrapperContent') leftWrapperContent: ElementRef;
