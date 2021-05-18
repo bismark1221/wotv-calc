@@ -3484,9 +3484,8 @@ export class JsonService {
       });
     }
 
-    if (((typeof(dataSkill.eff_val) === 'number' && dataSkill.eff_val !== 0)
-      || (typeof(dataSkill.eff_val1) === 'number' && dataSkill.eff_val1 !== 0))
-      && dataSkill.eff_type !== 10
+    if ((typeof(dataSkill.eff_val) === 'number' || typeof(dataSkill.eff_val1) === 'number')
+      && (dataSkill.eff_type === 1 || dataSkill.eff_type === 2 || dataSkill.eff_type === 3)
     ) {
       skill.damage = {
         minValue: dataSkill.eff_val,

@@ -1746,6 +1746,13 @@
       "maxValue": 30,
       "reactDamage": "PHYSIC",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_BOMB_M_04": {
@@ -9970,17 +9977,7 @@
     "time": {
       "minValue": 320,
       "maxValue": 360
-    },
-    "damage": {
-      "minValue": 20,
-      "maxValue": 20,
-      "type": "all",
-      "effType": "0",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
+    }
   },
   "SK_BTL_JOB_TIM_1_15_U": {
     "effects": [
@@ -12787,6 +12784,7 @@
   "SK_BTL_INV_MKBT": {
     "effects": [
       {
+        "type": "BRAVERY_DEBUFF_RES",
         "minValue": 999,
         "maxValue": 999,
         "calcType": "fixe",
@@ -17060,7 +17058,22 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "LESS_THAN",
+        "condition": 0,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ],
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
   },
   "SK_MRGE_R02": {
     "effects": [
@@ -17098,7 +17111,15 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": [],
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "MORE_AND_LESS_THAN",
+        "condition": 1,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ],
     "damage": {
       "minValue": 0,
       "maxValue": 10,
@@ -17143,7 +17164,15 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     },
-    "maths": [],
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "MORE_THAN",
+        "condition": 3,
+        "value": 0,
+        "dst": "COUNTER_CHANCE"
+      }
+    ],
     "damage": {
       "minValue": 10,
       "maxValue": 20,
@@ -17373,6 +17402,13 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_MRGE_D1": {
@@ -17407,7 +17443,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 0,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D2": {
     "effects": [
@@ -17442,7 +17486,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 1,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D3": {
     "effects": [
@@ -17476,7 +17528,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 2,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_D4": {
     "effects": [
@@ -17527,7 +17587,15 @@
     "aoe": {
       "s": 90
     },
-    "maths": []
+    "maths": [
+      {
+        "type": "DESTROYED_PARTS",
+        "formula": "FIX",
+        "condition": 3,
+        "value": 1,
+        "dst": "TRIGGER"
+      }
+    ]
   },
   "SK_MRGE_S2_M01": {
     "effects": [
@@ -17727,6 +17795,13 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_MRGE_S3_M01": {
@@ -17927,6 +18002,13 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_MRGE_S4_M01": {
@@ -18127,6 +18209,13 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_LW_KNT_M_3": {
@@ -20973,7 +21062,7 @@
         "type": "CT",
         "minValue": 100,
         "maxValue": 250,
-        "calcType": "unknow",
+        "calcType": "fixe",
         "rate": 50,
         "turn": 1,
         "target": "selfSide",
@@ -22159,6 +22248,13 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_BTL_AP_1-999_D": {
@@ -22914,7 +23010,7 @@
         "type": "CT",
         "minValue": 250,
         "maxValue": 500,
-        "calcType": "unknow",
+        "calcType": "fixe",
         "turn": 1,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -27634,7 +27730,7 @@
         "type": "CT",
         "minValue": 200,
         "maxValue": 400,
-        "calcType": "unknow",
+        "calcType": "fixe",
         "turn": 1,
         "target": "allyNotSelf",
         "timing": "SKILL_AFTER"
@@ -27643,7 +27739,7 @@
         "type": "CT",
         "minValue": 200,
         "maxValue": 400,
-        "calcType": "unknow",
+        "calcType": "fixe",
         "turn": 1,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -28938,7 +29034,17 @@
       "s": 0,
       "l": 1,
       "h": 1
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_ODIN_M_02": {
     "effects": [
@@ -29010,7 +29116,17 @@
       "s": 5,
       "l": 2,
       "h": 1
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_ODIN_R_01": {
     "effects": [],
@@ -29037,6 +29153,13 @@
       "maxValue": 90,
       "reactDamage": "MAGIC",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_ODIN_M_03": {
@@ -29068,7 +29191,17 @@
       "s": 1,
       "l": 2,
       "h": 1
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_BTL_STR_SPEAR_1_100_U": {
     "effects": [
@@ -30182,6 +30315,13 @@
       "maxValue": 60,
       "reactDamage": "PHYSIC",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_CHCB2_M_01": {
@@ -30366,7 +30506,17 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_TNBR_M_01": {
     "effects": [],
@@ -30521,7 +30671,14 @@
         "value": 2000,
         "dst": "DAMAGE"
       }
-    ]
+    ],
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
   },
   "SK_LVAT_R_01": {
     "effects": [
@@ -30558,6 +30715,13 @@
       "maxValue": 60,
       "reactDamage": "ALL",
       "calcType": "percent"
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
     }
   },
   "SK_LVAT_M_01": {
@@ -30928,7 +31092,17 @@
       "maxValue": 30,
       "reactDamage": "ALL",
       "calcType": "percent"
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
   },
   "SK_TYPN_M_01": {
     "effects": [],
@@ -31830,7 +32004,13 @@
     },
     "count": 3,
     "maxLevel": 100,
-    "based": "magic"
+    "based": "magic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "effType": "DAMAGE",
+      "formula": {}
+    }
   },
   "SK_OMEG_M_05": {
     "effects": [
@@ -31866,7 +32046,17 @@
       "maxValue": 100,
       "reactDamage": "ALL",
       "calcType": "percent"
-    }
+    },
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
   },
   "SK_BTL_RESMGPIERCE_1-100_U": {
     "effects": [
@@ -33888,17 +34078,7 @@
     "time": {
       "minValue": 320,
       "maxValue": 360
-    },
-    "damage": {
-      "minValue": 20,
-      "maxValue": 20,
-      "type": "magic",
-      "effType": "0",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
+    }
   },
   "SK_LW_NIN_ICE_M_1": {
     "effects": [],
@@ -33978,16 +34158,7 @@
     "time": {
       "minValue": 240,
       "maxValue": 280
-    },
-    "damage": {
-      "minValue": 100,
-      "maxValue": 100,
-      "type": "all",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
+    }
   },
   "SK_CRYSTAL_NORMAL": {
     "effects": [
