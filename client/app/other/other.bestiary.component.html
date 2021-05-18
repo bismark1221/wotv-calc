@@ -1,0 +1,73 @@
+<div class="units">
+  <div class="leftBlock">
+    <h1 class="boldText">FILTERS</h1>
+    <div class="filters">
+      <div class="boldText" (click)="toogleCollapse('Species')" [attr.aria-expanded]="!collapsed.Species">
+        Species
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.Species" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.Species" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.Species">
+        <div *ngFor="let specie of Species">
+          <input type="checkbox" id="specie{{ specie }}" (change)="filterList('species', specie)" [checked]="isFilterChecked.species[specie]"/>
+          <label for="specie{{ specie }}">{{ specie | titlecase }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rightBlock">
+    <div class="upperBlock">
+      <div class="searchBlock">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchInput" type="text" placeholder="Search for a character by name" [(ngModel)]="searchText">
+      </div>
+      <div class="underSearchBlock">
+        <div class="totalUnits">
+          A total of <span class="countUnits">{{ getFilteredUnits().length }}</span> characters found
+        </div>
+        <div class="sortOrderBlock">
+          <!-- <div>
+            View by :
+          </div> -->
+          <div class="sortBy">
+            <span>Sort by :</span>
+            <ng-select placeholder="Select a sort" class="select-sort select-list" [items]="['rarity', 'name', 'releaseDate']" [(ngModel)]="sort" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ (item === 'releaseDate' ? 'Release date' : item) | titlecase }}
+              </ng-template>
+            </ng-select>
+          </div>
+          <div class="orderBy">
+            <span>Order by :</span>
+            <ng-select placeholder="Select a sort" class="select-order select-list" [items]="[{id: 'asc', label: 'Ascending'}, {id: 'desc', label: 'Descending'}]" [(ngModel)]="order" bindValue="id" (ngModelChange)="getUnits()" [clearable]="false" [searchable]="false">
+              <ng-template ng-label-tmp let-item="item">
+                {{ item.id === 'asc' ? 'Ascending' : 'Descending' }}
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.label }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unitsList">
+      <div class="unitsCol" *ngFor="let unit of getFilteredUnits()">
+        <a [routerLink]="[getRoute('/unit/' + unit.slug)]" [routerLinkActive]="['active']">
+          <div class="unitImgBlock">
+            <img class="unitImg" src="assets/units/{{ unit.image }}_m.png" />
+          </div>
+          <div class="cardTitle">
+            <span class="unitName">{{ unit.name + '-' + unit.dataId}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

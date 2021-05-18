@@ -1598,7 +1598,7 @@ export class Unit {
     let hasWeapon = false;
     for (let i = 0; i <= 2; i++) {
       if (i !== pos && this.equipments && this.equipments[i]) {
-        if (equipmentService.isArmor(this.equipments[i].type)) {
+        if (equipmentService.isArmor(this.equipments[i].type, true)) {
           hasArmor = true;
         } else {
           hasWeapon = true;

@@ -93,10 +93,10 @@ export class OtherUnitService {
       const filteredUnits = [];
 
       for (const unit of units) {
-        if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
-        ) {
+        // if ((filters.species.length === 0 || filters.species.indexOf(unit.element) !== -1)
+        // ) {
           filteredUnits.push(unit);
-        }
+        // }
       }
 
       return filteredUnits;
