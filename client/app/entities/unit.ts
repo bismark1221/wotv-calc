@@ -1596,22 +1596,19 @@ export class Unit {
 
     let hasArmor = false;
     let hasWeapon = false;
-    let countAcc = 0;
-    let hasTmr = false;
     for (let i = 0; i <= 2; i++) {
       if (i !== pos && this.equipments && this.equipments[i]) {
-        if (this.equipments[i].type === 'ACC') {
-          countAcc++;
-        } else if (equipmentService.isArmor(this.equipments[i].type)) {
+        if (equipmentService.isArmor(this.equipments[i].type)) {
           hasArmor = true;
         } else {
           hasWeapon = true;
         }
-
-        if (this.equipments[i].acquisition && this.equipments[i].acquisition.type === 'tmr') {
-          hasTmr = true;
-        }
       }
+    }
+
+    let onlyTmr = false;
+    if (pos === 2) {
+      onlyTmr = true;
     }
 
     const equipments = await equipmentService.getEquipmentsForUnitBuilder();
@@ -1619,13 +1616,16 @@ export class Unit {
     let mainJob = this.jobs[0].split('_');
     mainJob = mainJob[0] + '_' + mainJob[1] + '_' + mainJob[2];
     equipments.forEach(equipment => {
-      if (((countAcc < 3 && equipment.type === 'ACC')
-        || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
-        || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1))
+      if (
+        (equipment.type === 'ACC'
+          || (!hasArmor && armorTypes.indexOf(equipment.type) !== -1)
+          || (!hasWeapon && weaponsTypes.indexOf(equipment.type) !== -1)
+        )
+        && equipment.acquisition && equipment.acquisition.type !== 'Unknown'
         && (
-          (!hasTmr && (!equipment.acquisition || equipment.acquisition.type !== 'tmr' || (equipment.acquisition.type === 'tmr' && this.lb >= 4))
-          || (hasTmr && (!equipment.acquisition || equipment.acquisition.type !== 'tmr'))))
-      ) {
+          (!onlyTmr && (!equipment.acquisition || equipment.acquisition.type !== 'tmr'))
+          || (onlyTmr && equipment.acquisition && equipment.acquisition.type === 'tmr')
+      )) {
         const jobs = [];
         equipment.equippableJobs.forEach(job => {
           const tableJob = job.split('_');

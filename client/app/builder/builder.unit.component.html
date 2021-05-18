@@ -189,7 +189,9 @@
             <div class="equipmentDiv">
               Slot 1
               <div *ngIf="unit && unit.equipments && unit.equipments[0]" id="openModalEquipment0_{{unit.equipments[0].dataId}}" (click)="openEquipmentsModal(0)" class="equipmentPointer">
-                <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[0].category }}"/>
+                <div class="background_{{ unit.equipments[0].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[0].image + '.png'}}" class="equipmentImg"/>
+                </div>
               </div>
               <div *ngIf="!unit.equipments || !unit.equipments[0]" id="openModalEquipment0_new" (click)="openEquipmentsModal(0)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -200,7 +202,9 @@
             <div class="equipmentDiv" *ngIf="unit && unit.lb >= 2">
               Slot 2
               <div *ngIf="unit && unit.equipments && unit.equipments[1]" id="openModalEquipment1_{{unit.equipments[1].dataId}}" (click)="openEquipmentsModal(1)" class="equipmentPointer">
-                <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[1].category }}"/>
+                <div class="background_{{ unit.equipments[1].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[1].image + '.png'}}" class="equipmentImg"/>
+                </div>
               </div>
               <div *ngIf="!unit.equipments || !unit.equipments[1]" id="openModalEquipment1_new" (click)="openEquipmentsModal(1)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
@@ -217,7 +221,9 @@
             <div class="equipmentDiv" *ngIf="unit && unit.lb >= 4">
               TMR
               <div *ngIf="unit && unit.equipments && unit.equipments[2]" id="openModalEquipment2_{{unit.equipments[2].dataId}}" (click)="openEquipmentsModal(2)" class="equipmentPointer">
-                <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg background_{{ unit.equipments[2].category }}"/>
+                <div class="background_{{ unit.equipments[2].category }}">
+                  <img src="{{'assets/equipments/' + unit.equipments[2].image + '.png'}}" class="equipmentImg"/>
+                </div>
               </div>
               <div *ngIf="!unit.equipments || !unit.equipments[2]" id="openModalEquipment2_new" (click)="openEquipmentsModal(2)" class="equipmentPointer">
                 <img src="{{'assets/builder/no_artifact.png'}}" class="equipmentImg"/>
