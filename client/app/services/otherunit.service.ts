@@ -93,16 +93,50 @@ export class OtherUnitService {
       const filteredUnits = [];
 
       for (const unit of units) {
-        // if ((filters.species.length === 0 || filters.species.indexOf(unit.element) !== -1)
-        // ) {
+        let possbibleToAdd = true;
+
+        possbibleToAdd = this.unitSlugAlreadyAdded(unit.slug, filteredUnits);
+
+        if (possbibleToAdd && filters.species && filters.species.length > 0) {
+          possbibleToAdd = this.unitHasSpecie(unit, filters.species);
+        }
+
+        if (possbibleToAdd) {
           filteredUnits.push(unit);
-        // }
+        }
       }
 
       return filteredUnits;
     } else {
       return units;
     }
+  }
+
+  unitSlugAlreadyAdded(slug, units) {
+    let unitNotExist = true;
+
+    for (const unit of units) {
+      if (unit.slug === slug) {
+        unitNotExist = false;
+        break;
+      }
+    }
+
+    return unitNotExist;
+  }
+
+  private unitHasSpecie(unit, species) {
+    let unitHasSpecie = false;
+
+    const tableSpecies = unit.species.split(', ');
+    for (const specie of tableSpecies) {
+      if (species.indexOf(specie) !== -1) {
+        unitHasSpecie = true;
+        break;
+      }
+    }
+
+    return unitHasSpecie;
   }
 
   async getUnit(id, forcedVersion = null) {

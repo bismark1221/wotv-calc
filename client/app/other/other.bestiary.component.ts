@@ -56,13 +56,11 @@ export class OtherBestiaryComponent implements OnInit {
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       this.translateUnits();
-      this.translateJobs();
     });
   }
 
   async ngOnInit() {
     this.navService.setTitle('Units');
-    await this.getJobs();
 
     if (sessionStorage.getItem('unitsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
@@ -77,32 +75,24 @@ export class OtherBestiaryComponent implements OnInit {
 
   async getUnits() {
     this.units = await this.otherUnitService.getUnitsForListing(this.filters, this.sort, this.order);
-    this.translateUnits();
-  }
 
-  async getJobs() {
-    const jobs = await this.jobService.getUniqJobs();
-    jobs.forEach(job => {
-      if (job.statsModifiers && job.statsModifiers.length > 10) {
-        this.jobs.push(job);
+    for (const unit of this.units) {
+      unit.formattedJobs = [];
+      if (unit.jobs) {
+        for (const jobId of unit.jobs) {
+          const job = await this.jobService.getJob(jobId);
+          unit.formattedJobs.push(job);
+        }
       }
-    });
+    }
 
-    this.translateJobs();
+    this.translateUnits();
   }
 
   private translateUnits() {
     this.units.forEach(unit => {
       unit.name = this.nameService.getName(unit);
     });
-  }
-
-  private translateJobs() {
-    this.jobs.forEach(job => {
-      job.name = this.nameService.getName(job);
-    });
-
-    this.toolService.sortByName(this.jobs);
   }
 
   getRoute(route) {
