@@ -461,6 +461,26 @@
             "value": "Spinelle pour gants"
         },
         {
+            "key": "IT_JB_BOOK_01",
+            "value": "Jade pour livres"
+        },
+        {
+            "key": "IT_JB_BOOK_02",
+            "value": "Azurite pour livres"
+        },
+        {
+            "key": "IT_JB_BOOK_03",
+            "value": "Charoïte pour livres"
+        },
+        {
+            "key": "IT_JB_BOOK_04",
+            "value": "Citrine pour livres"
+        },
+        {
+            "key": "IT_JB_BOOK_05",
+            "value": "Spinelle pour livres"
+        },
+        {
             "key": "IT_JB_MM_COMMON",
             "value": "Souvenir du héros sans nom (Vert)"
         },
@@ -1581,6 +1601,26 @@
             "value": "Souvenir de Souverain (Rouge)"
         },
         {
+            "key": "IT_JB_MM_LIB",
+            "value": "Souvenir d'Érudit (Vert)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_2",
+            "value": "Souvenir d'Érudit (Bleu)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_3",
+            "value": "Souvenir d'Érudit (Violet)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_4",
+            "value": "Souvenir d'Érudit (Jaune)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_5",
+            "value": "Souvenir d'Érudit (Rouge)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de feu (Vert)"
         },
@@ -1871,6 +1911,10 @@
         {
             "key": "IT_JBEX_AXE",
             "value": "Stèle pour haches"
+        },
+        {
+            "key": "IT_JBEX_BOOK",
+            "value": "Stèle pour livres"
         },
         {
             "key": "IT_UN_AW_FIRE",
@@ -2569,6 +2613,14 @@
             "value": "Fragment d'unité de Mont (Roi de Leonis)"
         },
         {
+            "key": "IT_PI_LW_RYEL",
+            "value": "Fragment d'unité de Luelle"
+        },
+        {
+            "key": "IT_PI_LW_SIRM",
+            "value": "Fragment d'unité de Sylma"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "Sphère spirituelle de Mont Leonis"
         },
@@ -2971,6 +3023,14 @@
         {
             "key": "IT_SP_LW_MONT_01",
             "value": "Sphère spirituelle de Mont (Roi de Leonis)"
+        },
+        {
+            "key": "IT_SP_LW_RYEL",
+            "value": "Sphère spirituelle de Luelle"
+        },
+        {
+            "key": "IT_SP_LW_SIRM",
+            "value": "Sphère spirituelle de Sylma"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -3463,6 +3523,10 @@
         {
             "key": "IT_AF_AW_GLOVE",
             "value": "Livre secret de l'amélioration (Gants)"
+        },
+        {
+            "key": "IT_AF_AW_BOOK",
+            "value": "Livre secret de l'amélioration (Livre)"
         },
         {
             "key": "IT_AF_MAT_FIRE_01",
@@ -4001,6 +4065,18 @@
             "value": "Recette d'artisanat : Gants sombres"
         },
         {
+            "key": "IT_AF_LW_BOK_001",
+            "value": "Recette d'artisanat : Manuel de magie"
+        },
+        {
+            "key": "IT_AF_LW_BOK_002",
+            "value": "Recette d'artisanat : Guide du monstre"
+        },
+        {
+            "key": "IT_AF_LW_BOK_003",
+            "value": "Recette d'artisanat : Encyclopédie lunaire"
+        },
+        {
             "key": "IT_AF_LW_ACC_040",
             "value": "Recette d'artisanat : Emblème de l'érosion"
         },
@@ -4385,6 +4461,10 @@
             "value": "Médaille d'invocation A [Mai]"
         },
         {
+            "key": "IT_EC_SUMMON_05_02_B",
+            "value": "Médaille d'invocation B [Mai]"
+        },
+        {
             "key": "IT_EC_SUMMON_1st_GL1",
             "value": "Médaille du 1er anniversaire"
         },
@@ -4529,6 +4609,26 @@
             "value": "[Spécial printemps 2021 - Partie III] Ticket sélectionneur de 15 jades"
         },
         {
+            "key": "IT_US_SE_JB_05_GL_14",
+            "value": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 70 spinelles"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_09",
+            "value": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 citrines"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_09",
+            "value": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 charoïtes"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_07",
+            "value": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 azurites"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_07",
+            "value": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 15 jades"
+        },
+        {
             "key": "IT_US_SE_PI_COM_GL_04",
             "value": "Ticket sélectionneur de 150 fragments de pensée élémentaires"
         },
@@ -4611,6 +4711,10 @@
         {
             "key": "IT_EC_EV09_1",
             "value": "Médaille de « L'Agitateur »"
+        },
+        {
+            "key": "IT_EC_EV10_1",
+            "value": "Médaille de « L'Ancien manuscrit de Leonis »"
         },
         {
             "key": "IT_EC_WW_EV01_1",
@@ -4958,7 +5062,7 @@
         },
         {
             "key": "IT_US_SE_SB_EXP_06",
-            "value": "Ticket sélectionneur de 500 magilithes élémentaires (M)"
+            "value": ""
         },
         {
             "key": "IT_US_SE_SB_EXP_07",
@@ -5301,6 +5405,10 @@
             "value": "[Approche du 1er anniversaire - Partie II] Ticket sélectionneur de 30 spinelles"
         },
         {
+            "key": "IT_US_SE_JB_GL_05_07",
+            "value": "Ticket sélectionneur de 40 spinelles"
+        },
+        {
             "key": "IT_US_SE_UR_U_01",
             "value": "Ticket sélectionneur d'unité UR [A]"
         },
@@ -5395,6 +5503,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_15",
             "value": "[Approche du 1er anniversaire - Partie II] Ticket d'invocation d'unité MR+ garantie"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_16",
+            "value": "8 millions de téléchargements [Partie III] Ticket d'invocation d'unité MR+ garantie"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -5933,6 +6045,10 @@
             "value": "Fragment de l'atout-vision : Un adversaire imbattable"
         },
         {
+            "key": "IT_VPI_LW_RAIN",
+            "value": "Fragment de l'atout-vision : Rencontre héroïque"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "Œuf de croissance (N)"
         },
@@ -6297,6 +6413,10 @@
             "value": "[8 millions de téléchargements] Ticket sélectionneur de 80 fragments d'unité UR"
         },
         {
+            "key": "IT_US_SE_AF_PT_02",
+            "value": "Ticket sélectionneur de 5 marteaux nains"
+        },
+        {
             "key": "IT_US_SE_JBEX_EM_01",
             "value": "Ticket sélectionneur de 300 sculptures d'alcrist"
         },
@@ -6311,6 +6431,14 @@
         {
             "key": "IT_US_GL_SE_JBEX_AF_1",
             "value": "[Lot de stèles] Ticket sélectionneur de 50 stèles"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_3",
+            "value": "Ticket sélectionneur de 40 stèles"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_4",
+            "value": "Ticket sélectionneur de 300 stèles"
         },
         {
             "key": "IT_US_N_GACHA_10",
@@ -6355,10 +6483,6 @@
         {
             "key": "IT_US_SE_AF_SUP_02",
             "value": "Ticket sélectionneur de 50 sceaux d'équipement"
-        },
-        {
-            "key": "IT_US_SE_AF_PT_02",
-            "value": "Ticket sélectionneur de 5 marteaux nains"
         },
         {
             "key": "IT_US_G_N_TW_10",
@@ -6482,7 +6606,7 @@
         },
         {
             "key": "IT_EC_FF10_3",
-            "value": "[FFX] Médaille des Épreuves du Jugement"
+            "value": "Médaille des Épreuves du Jugement [FFX]"
         }
     ]
 }

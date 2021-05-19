@@ -857,6 +857,10 @@
             "value": "Maquinista"
         },
         {
+            "key": "JB_LW_CAL",
+            "value": "Aritmética"
+        },
+        {
             "key": "JB_LW_CAL_FIRE",
             "value": "Aritmética"
         },
@@ -973,6 +977,10 @@
             "value": "Sabia de Mysidia"
         },
         {
+            "key": "JB_LW_MMC",
+            "value": "Conjurador"
+        },
+        {
             "key": "JB_LW_MMC_FIRE",
             "value": "Conjurador"
         },
@@ -982,6 +990,26 @@
         },
         {
             "key": "JB_LW_MMC_DARK",
+            "value": "Conjurador"
+        },
+        {
+            "key": "JB_LW_MMC_THUN",
+            "value": "Conjurador"
+        },
+        {
+            "key": "JB_LW_MMC_WATER",
+            "value": "Conjurador"
+        },
+        {
+            "key": "JB_LW_MMC_SOIL",
+            "value": "Conjurador"
+        },
+        {
+            "key": "JB_LW_MMC_WIND",
+            "value": "Conjurador"
+        },
+        {
+            "key": "JB_LW_MMC_ICE",
             "value": "Conjurador"
         },
         {
@@ -1031,6 +1059,18 @@
         {
             "key": "JB_LW_PSI_DARK",
             "value": "Usuario del chi"
+        },
+        {
+            "key": "JB_LW_LIB",
+            "value": "Erudito"
+        },
+        {
+            "key": "JB_LW_LIB_FIRE",
+            "value": "Erudito"
+        },
+        {
+            "key": "JB_LW_LIB_SOIL",
+            "value": "Erudito"
         },
         {
             "key": "JB_FF10_TIDU",
@@ -1161,6 +1201,22 @@
             "value": "Paladín [égida]"
         },
         {
+            "key": "JB_LW_LIB_EX_M",
+            "value": "Erudito EX"
+        },
+        {
+            "key": "JB_LW_RYEL_M",
+            "value": "Erudito [acólito]"
+        },
+        {
+            "key": "JB_LW_RDM_EX_M",
+            "value": "Mago rojo EX"
+        },
+        {
+            "key": "JB_LW_SIRM_M",
+            "value": "Mago rojo [inspirador]"
+        },
+        {
             "key": "JB_FF10_ARON",
             "value": "Guardián legendario"
         },
@@ -1191,6 +1247,10 @@
         {
             "key": "JB_LW_MONT_01_M",
             "value": "Gran soberano"
+        },
+        {
+            "key": "JB_LW_RAIN_M",
+            "value": "Caballero del alma abrasante"
         }
     ]
 }

@@ -73,6 +73,8 @@ export class OtherIndexComponent implements OnInit {
   @ViewChild('leftWrapperContent') leftWrapperContent: ElementRef;
   @ViewChild('rightWrapperHeader') rightWrapperHeader: ElementRef;
 
+  @ViewChild('rightWrapperContent') rightWrapperContent: ElementRef;
+
   constructor(
     private indexService: IndexService,
     private translateService: TranslateService,
@@ -148,5 +150,13 @@ export class OtherIndexComponent implements OnInit {
   onScroll(event) {
     this.leftWrapperContent.nativeElement.scrollTop = event.srcElement.scrollTop;
     this.rightWrapperHeader.nativeElement.scrollLeft = event.srcElement.scrollLeft;
+  }
+
+  onScrollUnit(event) {
+    this.rightWrapperContent.nativeElement.scrollTop = event.srcElement.scrollTop;
+  }
+
+  onScrollStat(event) {
+    this.rightWrapperContent.nativeElement.scrollLeft = event.srcElement.scrollLeft;
   }
 }

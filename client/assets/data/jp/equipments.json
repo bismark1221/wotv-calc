@@ -496,9 +496,9 @@
   },
   "AF_LW_BOK_INIT": {
     "names": {
-      "en": "初期装備_本"
+      "en": "初期装備_本 - Apprentice's Book"
     },
-    "slug": "shoki-soubi-_-hon",
+    "slug": "apprentices-book",
     "stats": {},
     "type": "BOOK",
     "dataId": "AF_LW_BOK_INIT",
@@ -26983,9 +26983,9 @@
   },
   "AF_LW_BOK_000": {
     "names": {
-      "en": "歴史戦術書"
+      "en": "歴史戦術書 - Military Treatise"
     },
-    "slug": "rekishi-senjutsu-sho",
+    "slug": "military-treatise",
     "stats": {
       "HP": {
         "min": 1,
@@ -27039,9 +27039,9 @@
   },
   "AF_LOT_LW_BOK_001": {
     "names": {
-      "en": "魔法学教本"
+      "en": "魔法学教本 - Arcane Handbook"
     },
-    "slug": "ma-hougaku-kyouhon",
+    "slug": "arcane-handbook",
     "stats": {
       "HP": {
         "min": 2,
@@ -27316,14 +27316,21 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     }
   },
   "AF_LOT_LW_BOK_002": {
     "names": {
-      "en": "魔獣図鑑"
+      "en": "魔獣図鑑 - Monstrous Compendium"
     },
-    "slug": "majuu-zukan",
+    "slug": "monstrous-compendium",
     "stats": {
       "HP": {
         "min": 2,
@@ -27610,14 +27617,21 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     }
   },
   "AF_LOT_LW_BOK_003": {
     "names": {
-      "en": "月の書"
+      "en": "月の書 - Lunar Tome"
     },
-    "slug": "tsuki-no-sho",
+    "slug": "lunar-tome",
     "stats": {
       "HP": {
         "min": 4,
@@ -27904,7 +27918,14 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     }
   },
   "AF_LW_SHI_000": {
@@ -51263,7 +51284,7 @@
               "type": "CT",
               "minValue": 250,
               "maxValue": 500,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "selfSide",
               "timing": "SKILL_AFTER"
             }
@@ -54436,7 +54457,7 @@
               "type": "CT",
               "minValue": 250,
               "maxValue": 500,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "rate": 15,
               "turn": 1,
               "target": "self",
@@ -55219,7 +55240,7 @@
               "type": "AP",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "target",
               "timing": "SKILL_AFTER"
             }
@@ -55758,7 +55779,7 @@
               "type": "TP",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "selfSide",
               "timing": "SKILL_AFTER"
             }
@@ -57999,7 +58020,7 @@
               "type": "AP",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "selfSide",
               "timing": "SKILL_AFTER"
             }
@@ -58424,7 +58445,7 @@
               "type": "AP",
               "minValue": 10,
               "maxValue": 20,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "self",
               "timing": "SKILL_AFTER"
             },
@@ -62653,9 +62674,9 @@
   },
   "AF_HAT_LW_RYEL_1": {
     "names": {
-      "en": "賢人のベレー"
+      "en": "賢人のベレー - Sage's Beret"
     },
-    "slug": "kenjin-no-ber",
+    "slug": "sages-beret",
     "stats": {
       "HP": {
         "min": 434,
@@ -62794,9 +62815,9 @@
   },
   "AF_SWO_LW_SIRM_1": {
     "names": {
-      "en": "深紅の麗剣"
+      "en": "深紅の麗剣 - Crimson Rapier"
     },
-    "slug": "shinku-no-urara-ken",
+    "slug": "crimson-rapier",
     "stats": {
       "HP": {
         "min": 108,
@@ -63711,7 +63732,7 @@
               "type": "AP",
               "minValue": 5,
               "maxValue": 15,
-              "calcType": "unknow",
+              "calcType": "fixe",
               "target": "self",
               "timing": "SKILL_AFTER"
             }
@@ -68549,9 +68570,9 @@
   },
   "AF_BOK_LW_RYEL_2": {
     "names": {
-      "en": "暴虐のグリモワール"
+      "en": "暴虐のグリモワール - Baleful Grimoire"
     },
-    "slug": "bougyaku-no-gurimowru",
+    "slug": "baleful-grimoire",
     "stats": {
       "HP": {
         "min": 15,
@@ -69383,7 +69404,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_MONT_01"
+      "JB_LW_MONT_01",
+      "JB_LW_LIB_FIRE"
     ],
     "equippableUnits": [],
     "materials": [

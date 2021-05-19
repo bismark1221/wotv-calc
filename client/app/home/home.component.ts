@@ -24,6 +24,22 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '19/05',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_RYEL'},
+          {type: 'unit', dataId: 'UN_LW_P_SIRM'},
+          {type: 'unit', dataId: 'UN_LW_P_RAIN'},
+          {type: 'card', dataId: 'VC_LW_RAIN'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_000'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_001'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_002'},
+          {type: 'equipment', dataId: 'AF_LW_BOK_003'},
+          {type: 'equipment', dataId: 'AF_LW_FTW_001'},
+          {type: 'equipment', dataId: 'AF_LW_ARM_005'},
+          {type: 'equipment', dataId: 'AF_LW_ROD_007'}
+        ]
+      },
+      {
         date: '21/05',
         items: [
           {type: 'esper', dataId: 'UN_LW_S_PNIX'},
@@ -47,13 +63,6 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_MONT_01'},
           {type: 'card', dataId: 'VC_LW_MONT2'},
           {type: 'equipment', dataId: 'AF_LW_SWO_005'}
-        ]
-      },
-      {
-        date: '28/04',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_SIMR'},
-          {type: 'esper', dataId: 'UN_LW_S_TSLP'}
         ]
       }
     ],

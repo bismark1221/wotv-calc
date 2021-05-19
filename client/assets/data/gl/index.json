@@ -2161,16 +2161,16 @@
         "zh": "雷因"
       },
       "stats": {
-        "HP": 3577,
-        "TP": 151,
-        "AP": 134,
-        "ATK": 158,
+        "HP": 5394,
+        "TP": 158,
+        "AP": 141,
+        "ATK": 201,
         "DEF": 2,
         "SPR": 23,
-        "MAG": 262,
-        "DEX": 195,
-        "AGI": 55,
-        "LUCK": 179,
+        "MAG": 411,
+        "DEX": 259,
+        "AGI": 57,
+        "LUCK": 212,
         "ICE_RES": 20,
         "WATER_RES": -10,
         "PIERCE_RES": 5,
@@ -2182,7 +2182,9 @@
         "SLOW_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 69
+        "INITIAL_AP": 72,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsrain"
     },
@@ -4001,6 +4003,84 @@
         "AOE_RES": 15
       },
       "image": "lapsmont_01"
+    },
+    {
+      "names": {
+        "en": "Louelle",
+        "fr": "Luelle",
+        "de": "Luëlle",
+        "es": "Luele",
+        "ko": "류엘",
+        "zh": "琉艾爾"
+      },
+      "stats": {
+        "HP": 3515,
+        "TP": 149,
+        "AP": 147,
+        "ATK": 88,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 515,
+        "DEX": 255,
+        "AGI": 61,
+        "LUCK": 224,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 20,
+        "BLIND_RES": 50,
+        "CONFUSION_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 114,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsryel"
+    },
+    {
+      "names": {
+        "en": "Sylma",
+        "fr": "Sylma",
+        "de": "Sylma",
+        "es": "Sylma",
+        "ko": "실마",
+        "zh": "希爾瑪"
+      },
+      "stats": {
+        "HP": 2658,
+        "TP": 148,
+        "AP": 132,
+        "ATK": 260,
+        "DEF": 0,
+        "SPR": 12,
+        "MAG": 455,
+        "DEX": 223,
+        "AGI": 67,
+        "LUCK": 197,
+        "EARTH_RES": -15,
+        "WATER_RES": 15,
+        "SLASH_RES": 5,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 10,
+        "POISON_RES": -25,
+        "CONFUSION_RES": 50,
+        "CHARM_RES": 50,
+        "SLOW_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 82,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 10
+      },
+      "image": "lapssirm"
     }
   ]
 }

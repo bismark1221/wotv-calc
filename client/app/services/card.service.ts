@@ -196,7 +196,8 @@ export class CardService {
     VC_NIER_MV1: '21/04/2021',
     VC_LW_MONT2: '05/05/2021',
     VC_LW_PNIX: '21/05/2021',
-    VC_LW_LILS2: '21/05/2021'
+    VC_LW_LILS2: '21/05/2021',
+    VC_LW_RAIN: '19/05/2021'
   };
 
   private JP_releaseDates = {

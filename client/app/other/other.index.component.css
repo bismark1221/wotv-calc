@@ -35,8 +35,9 @@ th {
 
 .leftWrapperContent {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   height: 750px;
+  margin-top: 17px;
 }
 
 .rightWrapper {
@@ -49,7 +50,7 @@ th {
 
 .rightWrapperHeader {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   width: 730px;
 }
 

@@ -28,7 +28,7 @@
         </table>
       </div>
 
-      <div #leftWrapperContent class="leftWrapperContent">
+      <div #leftWrapperContent class="leftWrapperContent" (scroll)="onScrollUnit($event)">
         <table class="leftTable">
           <tr *ngFor="let unit of units; let i = index">
             <td>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="rightWrapper">
-      <div #rightWrapperHeader class="rightWrapperHeader">
+      <div #rightWrapperHeader class="rightWrapperHeader" (scroll)="onScrollStat($event)">
         <table class="statsTable">
           <tr>
             <th *ngFor="let type of statsType" style="width: {{ type.width }}px;">
@@ -75,7 +75,7 @@
         </table>
       </div>
 
-      <div class="rightWrapperContent" (scroll)="onScroll($event)">
+      <div #rightWrapperContent class="rightWrapperContent" (scroll)="onScroll($event)">
         <table class="statsTable">
           <tr *ngFor="let unit of units">
             <td *ngFor="let type of statsType" style="width: {{ type.width }}px;">

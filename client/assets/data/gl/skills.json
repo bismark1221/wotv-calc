@@ -25180,6 +25180,192 @@
       "maxValue": 320
     }
   },
+  "SK_LW_ARC_M_3": {
+    "effects": [
+      {
+        "type": "BREAK_BARRIER_PHYSIC",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_ARC_M_3",
+    "type": "skill",
+    "names": {
+      "en": "Barrier Break Arrow",
+      "fr": "Flèche anti-barrière",
+      "de": "Barrierenbruchpfeil",
+      "es": "Flecha perforabarrera",
+      "ko": "보호막 파괴 화살",
+      "zh": "潰障之箭"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 40,
+      "maxValue": 70,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_BTL_INV_DOOM2": {
+    "effects": [
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "DOOM"
+        ],
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_BTL_INV_DOOM2",
+    "type": "support",
+    "names": {
+      "en": "Nullify Doom (Base)",
+      "fr": "Annule Peine de mort (Base)",
+      "de": "Annullieren von Todesurteil (Basis)",
+      "es": "Anula condena (base)",
+      "ko": "죽음의 선고 무효화(기초)",
+      "zh": "死亡宣告無效（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_BTL_RES_CONFU_1_100_U2": {
+    "effects": [
+      {
+        "type": "CONFUSION_RES",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_CONFU_1_100_U2",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Confusion] Res Up (Base)",
+      "fr": "Rés à l'altération d'état [Confusion] ↑ (Base)",
+      "de": "Zustandsresistenz gegen „Konfus“ erhöht (Basis)",
+      "es": "Res. confusión↑ (base)",
+      "ko": "상태이상[혼란] 저항력 증가(기초)",
+      "zh": "提升異常狀態【混亂】耐性（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_RES_STOP_1_100_U2": {
+    "effects": [
+      {
+        "type": "STOP_RES",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_STOP_1_100_U2",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Stop] Res Up (Base)",
+      "fr": "Rés à l'altération d'état [Stop] ↑ (Base)",
+      "de": "Zustandsresistenz gegen „Stopp“ erhöht (Basis)",
+      "es": "Res. paro↑ (base)",
+      "ko": "상태이상[스톱] 저항력 증가(기초)",
+      "zh": "提升異常狀態【停止】耐性（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_RES_CHARM_1_100_U2": {
+    "effects": [
+      {
+        "type": "CHARM_RES",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_CHARM_1_100_U2",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Charm] Res Up (Base)",
+      "fr": "Rés à l'altération d'état [Charme] ↑ (Base)",
+      "de": "Zustandsresistenz gegen „Betörung“ erhöht (Basis)",
+      "es": "Res. embrujo↑ (base)",
+      "ko": "상태이상[매료] 저항력 증가(기초)",
+      "zh": "提升異常狀態【魅惑】耐性（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_RES_DACT_1_100_U2": {
+    "effects": [
+      {
+        "type": "DISABLE_RES",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_RES_DACT_1_100_U2",
+    "type": "support",
+    "names": {
+      "en": "Status Ailment [Disable] Res Up (Base)",
+      "fr": "Rés à l'altération d'état [Incapacité] ↑ (Base)",
+      "de": "Zustandsresistenz gegen „Ausschalten“ erhöht (Basis)",
+      "es": "Res. inútil↑ (base)",
+      "ko": "상태이상[돈액트] 저항력 증가(기초)",
+      "zh": "提升異常狀態【止動】耐性（基礎）"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_KILLER_WATER_1-100_U": {
+    "effects": [
+      {
+        "type": "WATER_KILLER",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_KILLER_WATER_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Water Eater 1-100 Up",
+      "fr": "Hydrophage ↑ 1 - 100",
+      "de": "Wasserfresser erhöht (1 bis 100)",
+      "es": "Comeacuáticos 1-100↑",
+      "ko": "물속성 킬러 1-100 증가",
+      "zh": "提升水屬性特效1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
   "SK_LW_BLM_ICE_M_5": {
     "effects": [],
     "dataId": "SK_LW_BLM_ICE_M_5",
@@ -26584,30 +26770,6 @@
       }
     }
   },
-  "SK_BTL_KILLER_WATER_1-100_U": {
-    "effects": [
-      {
-        "type": "WATER_KILLER",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_KILLER_WATER_1-100_U",
-    "type": "support",
-    "names": {
-      "en": "Water Eater 1-100 Up",
-      "fr": "Hydrophage ↑ 1 - 100",
-      "de": "Wasserfresser erhöht (1 bis 100)",
-      "es": "Comeacuáticos 1-100↑",
-      "ko": "물속성 킬러 1-100 증가",
-      "zh": "提升水屬性特效1-100"
-    },
-    "target": "self",
-    "maxLevel": 100
-  },
   "SK_BTL_RES_FIRE_1_80_U": {
     "effects": [
       {
@@ -27886,29 +28048,6 @@
     "target": "self",
     "maxLevel": 100
   },
-  "SK_BTL_RES_CHARM_1_100_U2": {
-    "effects": [
-      {
-        "type": "CHARM_RES",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "resistance",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_RES_CHARM_1_100_U2",
-    "type": "support",
-    "names": {
-      "en": "Status Ailment [Charm] Res Up (Base)",
-      "fr": "Rés à l'altération d'état [Charme] ↑ (Base)",
-      "de": "Zustandsresistenz gegen „Betörung“ erhöht (Basis)",
-      "es": "Res. embrujo↑ (base)",
-      "ko": "상태이상[매료] 저항력 증가(기초)",
-      "zh": "提升異常狀態【魅惑】耐性（基礎）"
-    },
-    "target": "self",
-    "maxLevel": 100
-  },
   "SK_LW_MGK_SOIL_P_1": {
     "effects": [
       {
@@ -28215,6 +28354,122 @@
       "es": "MAG↑ nv. 1",
       "ko": "마력 증가 Lv.1",
       "zh": "提升魔力Lv1"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_LIB_S_1_INIT": {
+    "effects": [],
+    "dataId": "SK_LW_LIB_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "Magic Orb",
+      "fr": "Orbe magique",
+      "de": "Magiesphäre",
+      "es": "Orbe mágico",
+      "ko": "마법구",
+      "zh": "魔法球"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    },
+    "damage": {
+      "minValue": 15,
+      "maxValue": 41,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_LIB_S_2_INIT": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF_DEBUFF_RES",
+        "minValue": 50,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_LIB_S_2_INIT",
+    "type": "skill",
+    "names": {
+      "en": "Law of Preservation",
+      "fr": "Loi de la préservation",
+      "de": "Prinzip der Erhaltung",
+      "es": "Ley de la conservación",
+      "ko": "견신의 법",
+      "zh": "堅身之法"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 280
+    }
+  },
+  "SK_LW_LIB_P_1": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_LIB_P_1",
+    "type": "support",
+    "names": {
+      "en": "Scholarly Intuition",
+      "fr": "Intuition d'érudit",
+      "de": "Intuition des Gelehrten",
+      "es": "Sabiduría del erudito",
+      "ko": "학자의 마음가짐",
+      "zh": "學者心得"
     },
     "target": "self",
     "maxLevel": 20

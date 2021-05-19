@@ -208,7 +208,9 @@ export class UnitService {
     UN_FF10_P_ARON: '31/03/2021',
     UN_NIER_P_N2TB: '21/04/2021',
     UN_NIER_P_N9TS: '21/04/2021',
-    UN_LW_P_MONT_01: '05/05/2021'
+    UN_LW_P_MONT_01: '05/05/2021',
+    UN_LW_P_RYEL: '19/05/2021',
+    UN_LW_P_SIRM: '19/05/2021'
   };
 
   private JP_releaseDates = {

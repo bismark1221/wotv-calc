@@ -857,6 +857,10 @@
             "value": "Maschinist"
         },
         {
+            "key": "JB_LW_CAL",
+            "value": "Arithmetiker"
+        },
+        {
             "key": "JB_LW_CAL_FIRE",
             "value": "Arithmetiker"
         },
@@ -973,6 +977,10 @@
             "value": "Weise von Mysidia"
         },
         {
+            "key": "JB_LW_MMC",
+            "value": "Wortseelenbändiger"
+        },
+        {
             "key": "JB_LW_MMC_FIRE",
             "value": "Wortseelenbändiger"
         },
@@ -982,6 +990,26 @@
         },
         {
             "key": "JB_LW_MMC_DARK",
+            "value": "Wortseelenbändiger"
+        },
+        {
+            "key": "JB_LW_MMC_THUN",
+            "value": "Wortseelenbändiger"
+        },
+        {
+            "key": "JB_LW_MMC_WATER",
+            "value": "Wortseelenbändiger"
+        },
+        {
+            "key": "JB_LW_MMC_SOIL",
+            "value": "Wortseelenbändiger"
+        },
+        {
+            "key": "JB_LW_MMC_WIND",
+            "value": "Wortseelenbändiger"
+        },
+        {
+            "key": "JB_LW_MMC_ICE",
             "value": "Wortseelenbändiger"
         },
         {
@@ -1031,6 +1059,18 @@
         {
             "key": "JB_LW_PSI_DARK",
             "value": "Energetiker"
+        },
+        {
+            "key": "JB_LW_LIB",
+            "value": "Gelehrter"
+        },
+        {
+            "key": "JB_LW_LIB_FIRE",
+            "value": "Gelehrter"
+        },
+        {
+            "key": "JB_LW_LIB_SOIL",
+            "value": "Gelehrter"
         },
         {
             "key": "JB_FF10_TIDU",
@@ -1161,6 +1201,22 @@
             "value": "Paladin [Himmelsschild]"
         },
         {
+            "key": "JB_LW_LIB_EX_M",
+            "value": "Gelehrter [EX]"
+        },
+        {
+            "key": "JB_LW_RYEL_M",
+            "value": "Gelehrter [Beistand]"
+        },
+        {
+            "key": "JB_LW_RDM_EX_M",
+            "value": "Rotmagier [EX]"
+        },
+        {
+            "key": "JB_LW_SIRM_M",
+            "value": "Rotmagier [Sukkurs]"
+        },
+        {
             "key": "JB_FF10_ARON",
             "value": "Legendärer Leibgardist"
         },
@@ -1191,6 +1247,10 @@
         {
             "key": "JB_LW_MONT_01_M",
             "value": "Herrscher"
+        },
+        {
+            "key": "JB_LW_RAIN_M",
+            "value": "Ritter der brennenden Seele"
         }
     ]
 }

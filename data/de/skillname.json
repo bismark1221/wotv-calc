@@ -2349,6 +2349,26 @@
             "value": "Intensivierende Kraft"
         },
         {
+            "key": "SK_LW_EC_RAIN_A_01",
+            "value": "Amethystflamme"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_01",
+            "value": "Feuga (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_01B",
+            "value": "Flammenimpakt"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_02",
+            "value": "PSY-Erhöhung Stufe 1 (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_02B",
+            "value": "Ritterstolz"
+        },
+        {
             "key": "SK_LW_ASS_ATK",
             "value": "Normaler Angriff"
         },
@@ -3725,26 +3745,6 @@
             "value": "Nadeln gleiches Herz"
         },
         {
-            "key": "SK_LW_MMC_M_1_SUB",
-            "value": "Gleiße, o Licht!"
-        },
-        {
-            "key": "SK_LW_MMC_M_2_SUB",
-            "value": "Wand wider die Magie"
-        },
-        {
-            "key": "SK_LW_MMC_M_3_SUB",
-            "value": "Nadeln gleiches Herz"
-        },
-        {
-            "key": "SK_LW_MMC_S_1",
-            "value": "Unentrinnbare Schmerzen"
-        },
-        {
-            "key": "SK_LW_MMC_S_2",
-            "value": "Beschwingt sei mein Schritt"
-        },
-        {
             "key": "SK_LW_MMC_S_1_INIT",
             "value": "Unentrinnbare Schmerzen"
         },
@@ -3803,6 +3803,26 @@
         {
             "key": "SK_LW_MMC_DARK_P_2",
             "value": "Segen des Dunkelgeistes"
+        },
+        {
+            "key": "SK_LW_MMC_M_1_SUB",
+            "value": "Gleiße, o Licht!"
+        },
+        {
+            "key": "SK_LW_MMC_M_2_SUB",
+            "value": "Wand wider die Magie"
+        },
+        {
+            "key": "SK_LW_MMC_M_3_SUB",
+            "value": "Nadeln gleiches Herz"
+        },
+        {
+            "key": "SK_LW_MMC_S_1",
+            "value": "Unentrinnbare Schmerzen"
+        },
+        {
+            "key": "SK_LW_MMC_S_2",
+            "value": "Beschwingt sei mein Schritt"
         },
         {
             "key": "SK_LW_BEA_ATK",
@@ -4369,6 +4389,78 @@
             "value": "Schwert der Feuersbrunst"
         },
         {
+            "key": "SK_LW_LIB_ATK",
+            "value": "Normaler Angriff"
+        },
+        {
+            "key": "SK_LW_LIB_M_1",
+            "value": "Flackern des Verfalls"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_B",
+            "value": "Flackern des Verfalls"
+        },
+        {
+            "key": "SK_LW_LIB_SOIL_M_2",
+            "value": "Irdenruf"
+        },
+        {
+            "key": "SK_LW_LIB_M_3",
+            "value": "Prinzip der Stoßminderung"
+        },
+        {
+            "key": "SK_LW_LIB_S_1_INIT",
+            "value": "Magiesphäre"
+        },
+        {
+            "key": "SK_LW_LIB_S_2_INIT",
+            "value": "Prinzip der Erhaltung"
+        },
+        {
+            "key": "SK_LW_LIB_S_3",
+            "value": "Prinzip des Schnelllesens"
+        },
+        {
+            "key": "SK_LW_LIB_S_4",
+            "value": "Prinzip der Entwaffnung"
+        },
+        {
+            "key": "SK_LW_LIB_R_1",
+            "value": "Gegenargument"
+        },
+        {
+            "key": "SK_LW_LIB_P_1",
+            "value": "Intuition des Gelehrten"
+        },
+        {
+            "key": "SK_LW_LIB_P_2",
+            "value": "Reservespruch"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_SUB",
+            "value": "Flackern des Verfalls"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_B_SUB",
+            "value": "Flackern des Verfalls"
+        },
+        {
+            "key": "SK_LW_LIB_SOIL_M_2_SUB",
+            "value": "Irdenruf"
+        },
+        {
+            "key": "SK_LW_LIB_M_3_SUB",
+            "value": "Prinzip der Stoßminderung"
+        },
+        {
+            "key": "SK_LW_LIB_S_1",
+            "value": "Magiesphäre"
+        },
+        {
+            "key": "SK_LW_LIB_S_2",
+            "value": "Prinzip der Erhaltung"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Eisra"
         },
@@ -4633,6 +4725,10 @@
             "value": "Böser Blick"
         },
         {
+            "key": "SK_ARMN_M_01_BTL",
+            "value": "Böser Blick"
+        },
+        {
             "key": "SK_ARMN_M_02",
             "value": "Dämonenblick"
         },
@@ -4718,6 +4814,10 @@
         },
         {
             "key": "SK_CACT_M_02",
+            "value": "10.000 Nadeln"
+        },
+        {
+            "key": "SK_CACT_M_02_2",
             "value": "10.000 Nadeln"
         },
         {
@@ -5121,14 +5221,6 @@
             "value": "Brechfelsen"
         },
         {
-            "key": "SK_ODIN_ATK",
-            "value": "Normaler Angriff"
-        },
-        {
-            "key": "SK_ODIN_M_01",
-            "value": "Gungnir"
-        },
-        {
             "key": "SK_GLEM_ATK_R",
             "value": "Normaler Angriff"
         },
@@ -5147,6 +5239,14 @@
         {
             "key": "SK_GLEM_M_04_R",
             "value": "Brechfelsen"
+        },
+        {
+            "key": "SK_ODIN_ATK",
+            "value": "Normaler Angriff"
+        },
+        {
+            "key": "SK_ODIN_M_01",
+            "value": "Gungnir"
         },
         {
             "key": "SK_ODIN_M_02",
@@ -6425,6 +6525,10 @@
             "value": "König von Leonis"
         },
         {
+            "key": "SK_LB_LW_RYEL",
+            "value": "Wissen ist Macht"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Inferno"
         },
@@ -7029,6 +7133,66 @@
             "value": "Wächterwall"
         },
         {
+            "key": "SK_LW_EC_LIB_A_01",
+            "value": "Aktionsanrufung"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_01",
+            "value": "Irdenruf (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_01B",
+            "value": "Irdene Anrufung"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_02",
+            "value": "Magiesphäre (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_02B",
+            "value": "Fesselungssphäre"
+        },
+        {
+            "key": "SK_LW_EC_RDM_A_01",
+            "value": "Rotes Kontra"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_01",
+            "value": "Schnellzauber (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_01B",
+            "value": "Schnellzauber: Protektion"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_02",
+            "value": "Schutz des Magiers (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_02B",
+            "value": "Magiersukkurs"
+        },
+        {
+            "key": "SK_LW_EC_RDM_A_02",
+            "value": "Terraga [Verfall]"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03",
+            "value": "Resistenzbrecher (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03B",
+            "value": "Peinigen"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04",
+            "value": "Terrara (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04B",
+            "value": "Terrara [Verfall]"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "Trank"
         },
@@ -7585,6 +7749,14 @@
             "value": "Meisterfähigkeit"
         },
         {
+            "key": "SK_MA_LW_RYEL",
+            "value": "Meisterfähigkeit"
+        },
+        {
+            "key": "SK_MA_LW_SIRM",
+            "value": "Meisterfähigkeit"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Schlitzangriff +2"
         },
@@ -7697,6 +7869,46 @@
             "value": "ABW-Durchbohrrate +20"
         },
         {
+            "key": "SK_LW_DF_SINGL_1",
+            "value": "Einzelangriffsresistenz +1"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_2",
+            "value": "Einzelangriffsresistenz +2"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_3",
+            "value": "Einzelangriffsresistenz +3"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_4_UR",
+            "value": "Einzelangriffsresistenz +5"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_5_UR",
+            "value": "Einzelangriffsresistenz +10"
+        },
+        {
+            "key": "SK_LW_AP_GET_1",
+            "value": "AP-Erlangung +5 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_2",
+            "value": "AP-Erlangung +7 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_3",
+            "value": "AP-Erlangung +10 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_4_UR",
+            "value": "AP-Erlangung +15 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_5_UR",
+            "value": "AP-Erlangung +30 %"
+        },
+        {
             "key": "SK_LW_SWO_003_1",
             "value": "Schlafschwert"
         },
@@ -7774,6 +7986,10 @@
         },
         {
             "key": "SK_LW_FTW_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_FTW_001_5",
             "value": ""
         },
         {
@@ -8315,6 +8531,14 @@
         {
             "key": "SK_ACC_LW_MONT_01_1",
             "value": "Ansporn der Löwen"
+        },
+        {
+            "key": "SK_CLT_LW_RYEL_1_1",
+            "value": "Friedenswunsch"
+        },
+        {
+            "key": "SK_SWO_LW_SIRM_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -9449,6 +9673,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_RAIN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -10558,6 +10794,18 @@
         },
         {
             "key": "SK_VC_LW_LILS2_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GSMAX_2",
             "value": ""
         },
         {
@@ -11937,6 +12185,30 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_RAIN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_P_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PMAX_2",
+            "value": ""
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "LP-Maximum erhöht (100 bis 99.900)"
         },
@@ -12873,6 +13145,18 @@
             "value": "Chance auf Zustandsveränderung „Betäubung“ reduziert (1 bis 100)"
         },
         {
+            "key": "SK_BTL_SLOW_1-100_U",
+            "value": "Chance auf Zustandsveränderung „Gemach“ erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_U",
+            "value": "Chance auf Zustandsveränderung „Ausschalten“ erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_D",
+            "value": "Chance auf Zustandsveränderung „Ausschalten“ reduziert (1 bis 100)"
+        },
+        {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
             "value": "ABW-Durchbohrrate erhöht (1 bis 100)"
         },
@@ -12895,6 +13179,10 @@
         {
             "key": "SK_BTL_RESMGPIERCE_1-100_U_KISO",
             "value": "Magieresistenz-Durchbohrrate erhöht (1 bis 100, Basis)"
+        },
+        {
+            "key": "SK_BTL_RES_STUN_1_100_D2",
+            "value": "Zustandsresistenz gegen „Betäubung“ reduziert (Basis)"
         },
         {
             "key": "SK_BTL_INV_DEATH",
@@ -12947,6 +13235,38 @@
         {
             "key": "SK_BTL_STR_ELEMALL_1-100_U",
             "value": "Stärke aller Elementarangriffe erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_FIRE_1-100_U",
+            "value": "Feuerresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_ICE_1-100_U",
+            "value": "Eisresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WIND_1-100_U",
+            "value": "Windresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SOIL_1-100_U",
+            "value": "Erdresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_THUNDER_1-100_U",
+            "value": "Blitzresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WATER_1-100_U",
+            "value": "Wasserresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SHINE_1-100_U",
+            "value": "Lichtresistenz-Durchbohrrate erhöht (1 bis 100)"
+        },
+        {
+            "key": "SK_BTL_PIERCE_DARK_1-100_U",
+            "value": "Dunkelresistenz-Durchbohrrate erhöht (1 bis 100)"
         },
         {
             "key": "SK_BTL_RESDB_DF_1_100_U",

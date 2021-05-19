@@ -461,6 +461,26 @@
             "value": "Espinela para guantes"
         },
         {
+            "key": "IT_JB_BOOK_01",
+            "value": "Jadeíta para libros"
+        },
+        {
+            "key": "IT_JB_BOOK_02",
+            "value": "Azurita para libros"
+        },
+        {
+            "key": "IT_JB_BOOK_03",
+            "value": "Charoíta para libros"
+        },
+        {
+            "key": "IT_JB_BOOK_04",
+            "value": "Citrino para libros"
+        },
+        {
+            "key": "IT_JB_BOOK_05",
+            "value": "Espinela para libros"
+        },
+        {
             "key": "IT_JB_MM_COMMON",
             "value": "Recuerdo de héroe anónimo (verde)"
         },
@@ -1581,6 +1601,26 @@
             "value": "Recuerdo de soberano (rojo)"
         },
         {
+            "key": "IT_JB_MM_LIB",
+            "value": "Recuerdo de erudito (verde)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_2",
+            "value": "Recuerdo de erudito (azul)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_3",
+            "value": "Recuerdo de erudito (morado)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_4",
+            "value": "Recuerdo de erudito (amarillo)"
+        },
+        {
+            "key": "IT_JB_MM_LIB_5",
+            "value": "Recuerdo de erudito (rojo)"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "Alcrist de fuego (verde)"
         },
@@ -1871,6 +1911,10 @@
         {
             "key": "IT_JBEX_AXE",
             "value": "Losa de hachas"
+        },
+        {
+            "key": "IT_JBEX_BOOK",
+            "value": "Losa de libros"
         },
         {
             "key": "IT_UN_AW_FIRE",
@@ -2569,6 +2613,14 @@
             "value": "Fragmento de Mont, rey de Leonis"
         },
         {
+            "key": "IT_PI_LW_RYEL",
+            "value": "Fragmento de Luele"
+        },
+        {
+            "key": "IT_PI_LW_SIRM",
+            "value": "Fragmento de Sylma"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "Esfera espiritual de Mont Leonis"
         },
@@ -2971,6 +3023,14 @@
         {
             "key": "IT_SP_LW_MONT_01",
             "value": "Esfera espiritual de Mont, rey de Leonis"
+        },
+        {
+            "key": "IT_SP_LW_RYEL",
+            "value": "Esfera espiritual de Luele"
+        },
+        {
+            "key": "IT_SP_LW_SIRM",
+            "value": "Esfera espiritual de Sylma"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -3463,6 +3523,10 @@
         {
             "key": "IT_AF_AW_GLOVE",
             "value": "Libro secreto de mejora (guantes)"
+        },
+        {
+            "key": "IT_AF_AW_BOOK",
+            "value": "Libro secreto de mejora (libro)"
         },
         {
             "key": "IT_AF_MAT_FIRE_01",
@@ -4001,6 +4065,18 @@
             "value": "Receta: guantes oscuros"
         },
         {
+            "key": "IT_AF_LW_BOK_001",
+            "value": "Receta: tomo arcano"
+        },
+        {
+            "key": "IT_AF_LW_BOK_002",
+            "value": "Receta: Monstruólogo"
+        },
+        {
+            "key": "IT_AF_LW_BOK_003",
+            "value": "Receta: libro de la luna"
+        },
+        {
             "key": "IT_AF_LW_ACC_040",
             "value": "Receta: emblema de la voracidad"
         },
@@ -4385,6 +4461,10 @@
             "value": "Medalla de invocación A (mayo)"
         },
         {
+            "key": "IT_EC_SUMMON_05_02_B",
+            "value": "Medalla de invocación B (mayo)"
+        },
+        {
             "key": "IT_EC_SUMMON_1st_GL1",
             "value": "Medalla del primer aniversario"
         },
@@ -4529,6 +4609,26 @@
             "value": "[Primavera 2021 III] Tícket seleccionador de 15 jadeítas"
         },
         {
+            "key": "IT_US_SE_JB_05_GL_14",
+            "value": "[8 millones de descargas III] Tícket seleccionador de 70 espinelas"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_09",
+            "value": "[8 millones de descargas III] Tícket seleccionador de 30 citrinos"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_09",
+            "value": "[8 millones de descargas III] Tícket seleccionador de 30 charoítas"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_07",
+            "value": "[8 millones de descargas III] Tícket seleccionador de 30 azuritas"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_07",
+            "value": "[8 millones de descargas III] Tícket seleccionador de 15 jadeítas"
+        },
+        {
             "key": "IT_US_SE_PI_COM_GL_04",
             "value": "Tícket seleccionador de 150 fragmentos de la memoria elementales"
         },
@@ -4611,6 +4711,10 @@
         {
             "key": "IT_EC_EV09_1",
             "value": "Medalla de El Instigador"
+        },
+        {
+            "key": "IT_EC_EV10_1",
+            "value": "Medalla de El libro ancestral de Leonis"
         },
         {
             "key": "IT_EC_WW_EV01_1",
@@ -4958,7 +5062,7 @@
         },
         {
             "key": "IT_US_SE_SB_EXP_06",
-            "value": "Tícket seleccionador de 500 magicitas elementales (M)"
+            "value": ""
         },
         {
             "key": "IT_US_SE_SB_EXP_07",
@@ -5301,6 +5405,10 @@
             "value": "[Cuenta atrás del primer aniversario, parte II] Tícket seleccionador de 30 espinelas"
         },
         {
+            "key": "IT_US_SE_JB_GL_05_07",
+            "value": "Tícket seleccionador de 40 espinelas"
+        },
+        {
             "key": "IT_US_SE_UR_U_01",
             "value": "Tícket seleccionador de unidad UR A"
         },
@@ -5395,6 +5503,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_15",
             "value": "[Cuenta atrás 1.er aniv. II] Tícket de invocación de unidad MR+ garantizada"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_16",
+            "value": "[8 millones de descargas III] Tícket de invocación de unidad MR+ garantizada"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -5933,6 +6045,10 @@
             "value": "Fragmento de la carta de visión «Muro infranqueable»"
         },
         {
+            "key": "IT_VPI_LW_RAIN",
+            "value": "Fragmento de la carta de visión «El encuentro de los héroes»"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "Huevo nutritivo (N)"
         },
@@ -6297,6 +6413,10 @@
             "value": "[8 millones de descargas] Tícket seleccionador de 80 fragmentos de unidad UR"
         },
         {
+            "key": "IT_US_SE_AF_PT_02",
+            "value": "Tícker seleccionador de 5 martillos enanos"
+        },
+        {
             "key": "IT_US_SE_JBEX_EM_01",
             "value": "Tícket seleccionador de 300 estatuas de alcrists"
         },
@@ -6311,6 +6431,14 @@
         {
             "key": "IT_US_GL_SE_JBEX_AF_1",
             "value": "[Lote de losas de armas] Tícket seleccionador de 50 losas de armas"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_3",
+            "value": "Tícket seleccionador de 40 losas de armas"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_4",
+            "value": "Tícket seleccionador de 300 losas de armas"
         },
         {
             "key": "IT_US_N_GACHA_10",
@@ -6355,10 +6483,6 @@
         {
             "key": "IT_US_SE_AF_SUP_02",
             "value": "Tícket seleccionador de 50 sellos de equipo"
-        },
-        {
-            "key": "IT_US_SE_AF_PT_02",
-            "value": "Tícker seleccionador de 5 martillos enanos"
         },
         {
             "key": "IT_US_G_N_TW_10",

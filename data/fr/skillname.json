@@ -2349,6 +2349,26 @@
             "value": "Puissance intensifiée"
         },
         {
+            "key": "SK_LW_EC_RAIN_A_01",
+            "value": "Brasier violet"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_01",
+            "value": "Améliorer Feu X"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_01B",
+            "value": "Impact enflammé"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_02",
+            "value": "Améliorer PSY ↑ Niv. 1"
+        },
+        {
+            "key": "SK_LW_EC_RAIN_C_02B",
+            "value": "Fierté de chevalier"
+        },
+        {
             "key": "SK_LW_ASS_ATK",
             "value": "Attaque normale"
         },
@@ -3725,26 +3745,6 @@
             "value": "Cœur épineux"
         },
         {
-            "key": "SK_LW_MMC_M_1_SUB",
-            "value": "Lumière ardente"
-        },
-        {
-            "key": "SK_LW_MMC_M_2_SUB",
-            "value": "Mur anti-magie"
-        },
-        {
-            "key": "SK_LW_MMC_M_3_SUB",
-            "value": "Cœur épineux"
-        },
-        {
-            "key": "SK_LW_MMC_S_1",
-            "value": "Affres inévitables"
-        },
-        {
-            "key": "SK_LW_MMC_S_2",
-            "value": "Agilité"
-        },
-        {
             "key": "SK_LW_MMC_S_1_INIT",
             "value": "Affres inévitables"
         },
@@ -3803,6 +3803,26 @@
         {
             "key": "SK_LW_MMC_DARK_P_2",
             "value": "Bénédiction des esprits obscurs"
+        },
+        {
+            "key": "SK_LW_MMC_M_1_SUB",
+            "value": "Lumière ardente"
+        },
+        {
+            "key": "SK_LW_MMC_M_2_SUB",
+            "value": "Mur anti-magie"
+        },
+        {
+            "key": "SK_LW_MMC_M_3_SUB",
+            "value": "Cœur épineux"
+        },
+        {
+            "key": "SK_LW_MMC_S_1",
+            "value": "Affres inévitables"
+        },
+        {
+            "key": "SK_LW_MMC_S_2",
+            "value": "Agilité"
         },
         {
             "key": "SK_LW_BEA_ATK",
@@ -4369,6 +4389,78 @@
             "value": "Flamme intérieure"
         },
         {
+            "key": "SK_LW_LIB_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_LIB_M_1",
+            "value": "Étincelle affaiblissante"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_B",
+            "value": "Étincelle affaiblissante"
+        },
+        {
+            "key": "SK_LW_LIB_SOIL_M_2",
+            "value": "Chant tellurique"
+        },
+        {
+            "key": "SK_LW_LIB_M_3",
+            "value": "Loi de la géoabsorption"
+        },
+        {
+            "key": "SK_LW_LIB_S_1_INIT",
+            "value": "Orbe magique"
+        },
+        {
+            "key": "SK_LW_LIB_S_2_INIT",
+            "value": "Loi de la préservation"
+        },
+        {
+            "key": "SK_LW_LIB_S_3",
+            "value": "Loi de l'accélération"
+        },
+        {
+            "key": "SK_LW_LIB_S_4",
+            "value": "Loi du désarmement"
+        },
+        {
+            "key": "SK_LW_LIB_R_1",
+            "value": "Force réactive"
+        },
+        {
+            "key": "SK_LW_LIB_P_1",
+            "value": "Intuition d'érudit"
+        },
+        {
+            "key": "SK_LW_LIB_P_2",
+            "value": "Savoir illimité"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_SUB",
+            "value": "Étincelle affaiblissante"
+        },
+        {
+            "key": "SK_LW_LIB_M_1_B_SUB",
+            "value": "Étincelle affaiblissante"
+        },
+        {
+            "key": "SK_LW_LIB_SOIL_M_2_SUB",
+            "value": "Chant tellurique"
+        },
+        {
+            "key": "SK_LW_LIB_M_3_SUB",
+            "value": "Loi de la géoabsorption"
+        },
+        {
+            "key": "SK_LW_LIB_S_1",
+            "value": "Orbe magique"
+        },
+        {
+            "key": "SK_LW_LIB_S_2",
+            "value": "Loi de la préservation"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -4633,6 +4725,10 @@
             "value": "Mauvais œil"
         },
         {
+            "key": "SK_ARMN_M_01_BTL",
+            "value": "Mauvais œil"
+        },
+        {
             "key": "SK_ARMN_M_02",
             "value": "Regard démoniaque"
         },
@@ -4718,6 +4814,10 @@
         },
         {
             "key": "SK_CACT_M_02",
+            "value": "10 000 épines"
+        },
+        {
+            "key": "SK_CACT_M_02_2",
             "value": "10 000 épines"
         },
         {
@@ -5121,14 +5221,6 @@
             "value": "Rocher à fragmentation"
         },
         {
-            "key": "SK_ODIN_ATK",
-            "value": "Attaque normale"
-        },
-        {
-            "key": "SK_ODIN_M_01",
-            "value": "Gungnir"
-        },
-        {
             "key": "SK_GLEM_ATK_R",
             "value": "Attaque normale"
         },
@@ -5147,6 +5239,14 @@
         {
             "key": "SK_GLEM_M_04_R",
             "value": "Rocher à fragmentation"
+        },
+        {
+            "key": "SK_ODIN_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_ODIN_M_01",
+            "value": "Gungnir"
         },
         {
             "key": "SK_ODIN_M_02",
@@ -6425,6 +6525,10 @@
             "value": "Roi de Leonis"
         },
         {
+            "key": "SK_LB_LW_RYEL",
+            "value": "Don du savoir"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -7029,6 +7133,66 @@
             "value": "Mur protecteur"
         },
         {
+            "key": "SK_LW_EC_LIB_A_01",
+            "value": "Action restaurée"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_01",
+            "value": "Améliorer Chant tellurique"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_01B",
+            "value": "Invocation tellurique"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_02",
+            "value": "Améliorer Orbe magique"
+        },
+        {
+            "key": "SK_LW_EC_LIB_C_02B",
+            "value": "Orbe flottant"
+        },
+        {
+            "key": "SK_LW_EC_RDM_A_01",
+            "value": "Résistance pourpre"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_01",
+            "value": "Améliorer Lancer rapide"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_01B",
+            "value": "Lancer rapide : défensif"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_02",
+            "value": "Améliorer Protection du mage"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_02B",
+            "value": "Repousse magie"
+        },
+        {
+            "key": "SK_LW_EC_RDM_A_02",
+            "value": "Terre X [Désolation]"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03",
+            "value": "Améliorer Annurésistance"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_03B",
+            "value": "Brise-défense"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04",
+            "value": "Améliorer Terre +"
+        },
+        {
+            "key": "SK_LW_EC_RDM_C_04B",
+            "value": "Terre + [Désolation]"
+        },
+        {
             "key": "SK_US_POTION",
             "value": "Potion"
         },
@@ -7585,6 +7749,14 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_RYEL",
+            "value": "Aptitude maître"
+        },
+        {
+            "key": "SK_MA_LW_SIRM",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -7697,6 +7869,46 @@
             "value": "Taux de perforation de la DEF +20"
         },
         {
+            "key": "SK_LW_DF_SINGL_1",
+            "value": "Rés aux attaques à cible unique +1"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_2",
+            "value": "Rés aux attaques à cible unique +2"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_3",
+            "value": "Rés aux attaques à cible unique +3"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_4_UR",
+            "value": "Rés aux attaques à cible unique +5"
+        },
+        {
+            "key": "SK_LW_DF_SINGL_5_UR",
+            "value": "Rés aux attaques à cible unique +10"
+        },
+        {
+            "key": "SK_LW_AP_GET_1",
+            "value": "Acquisition de PA +5 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_2",
+            "value": "Acquisition de PA +7 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_3",
+            "value": "Acquisition de PA +10 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_4_UR",
+            "value": "Acquisition de PA +15 %"
+        },
+        {
+            "key": "SK_LW_AP_GET_5_UR",
+            "value": "Acquisition de PA +30 %"
+        },
+        {
             "key": "SK_LW_SWO_003_1",
             "value": "Lame Morphée"
         },
@@ -7774,6 +7986,10 @@
         },
         {
             "key": "SK_LW_FTW_001_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_FTW_001_5",
             "value": ""
         },
         {
@@ -8315,6 +8531,14 @@
         {
             "key": "SK_ACC_LW_MONT_01_1",
             "value": "Bénédiction du lion"
+        },
+        {
+            "key": "SK_CLT_LW_RYEL_1_1",
+            "value": "Un rêve de paix"
+        },
+        {
+            "key": "SK_SWO_LW_SIRM_1_1",
+            "value": ""
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -9449,6 +9673,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_RAIN_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -10558,6 +10794,18 @@
         },
         {
             "key": "SK_VC_LW_LILS2_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_GSMAX_2",
             "value": ""
         },
         {
@@ -11937,6 +12185,30 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_RAIN_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_P_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_RAIN_PMAX_2",
+            "value": ""
+        },
+        {
             "key": "SK_BTL_HP_100-99900_U",
             "value": "PV max ↑ 100 - 99 900"
         },
@@ -12873,6 +13145,18 @@
             "value": "Chance d'altération d'état [Étourdissement] ↓ 1 - 100"
         },
         {
+            "key": "SK_BTL_SLOW_1-100_U",
+            "value": "Chance d'altération d'état [Lenteur] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_U",
+            "value": "Chance d'altération d'état [Incapacité] ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_DONAC_1-100_D",
+            "value": "Chance d'altération d'état [Incapacité] ↓ 1 - 100"
+        },
+        {
             "key": "SK_BTL_DEFPIERCE_1-100_U",
             "value": "Taux de perforation de la DEF ↑ 1 - 100"
         },
@@ -12895,6 +13179,10 @@
         {
             "key": "SK_BTL_RESMGPIERCE_1-100_U_KISO",
             "value": "Taux de perforation de la RésM ↑ 1 - 100 (base)"
+        },
+        {
+            "key": "SK_BTL_RES_STUN_1_100_D2",
+            "value": "Rés à l'altération d'état [Étourdissement] ↓ (Base)"
         },
         {
             "key": "SK_BTL_INV_DEATH",
@@ -12947,6 +13235,38 @@
         {
             "key": "SK_BTL_STR_ELEMALL_1-100_U",
             "value": "Puissance d'attaque tous éléments ↑ 1-100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_FIRE_1-100_U",
+            "value": "Perforation de la Rés au feu ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_ICE_1-100_U",
+            "value": "Perforation de la Rés à la glace ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WIND_1-100_U",
+            "value": "Perforation de la Rés au vent ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SOIL_1-100_U",
+            "value": "Perforation de la Rés à la terre ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_THUNDER_1-100_U",
+            "value": "Perforation de la Rés à la foudre ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_WATER_1-100_U",
+            "value": "Perforation de la Rés à l'eau ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_SHINE_1-100_U",
+            "value": "Perforation de la Rés à la lumière ↑ 1 - 100"
+        },
+        {
+            "key": "SK_BTL_PIERCE_DARK_1-100_U",
+            "value": "Perforation de la Rés à l'ombre ↑ 1 - 100"
         },
         {
             "key": "SK_BTL_RESDB_DF_1_100_U",

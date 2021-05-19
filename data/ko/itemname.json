@@ -461,6 +461,26 @@
             "value": "장갑의 스피넬"
         },
         {
+            "key": "IT_JB_BOOK_01",
+            "value": "책의 제이다이트"
+        },
+        {
+            "key": "IT_JB_BOOK_02",
+            "value": "책의 아즈라이트"
+        },
+        {
+            "key": "IT_JB_BOOK_03",
+            "value": "책의 차로아이트"
+        },
+        {
+            "key": "IT_JB_BOOK_04",
+            "value": "책의 시트린"
+        },
+        {
+            "key": "IT_JB_BOOK_05",
+            "value": "책의 스피넬"
+        },
+        {
             "key": "IT_JB_MM_COMMON",
             "value": "이름 없는 영웅의 기억: 초록"
         },
@@ -1581,6 +1601,26 @@
             "value": "아크 로드의 기억: 빨강"
         },
         {
+            "key": "IT_JB_MM_LIB",
+            "value": "학자의 기억: 초록"
+        },
+        {
+            "key": "IT_JB_MM_LIB_2",
+            "value": "학자의 기억: 파랑"
+        },
+        {
+            "key": "IT_JB_MM_LIB_3",
+            "value": "학자의 기억: 보라"
+        },
+        {
+            "key": "IT_JB_MM_LIB_4",
+            "value": "학자의 기억: 노랑"
+        },
+        {
+            "key": "IT_JB_MM_LIB_5",
+            "value": "학자의 기억: 빨강"
+        },
+        {
             "key": "IT_JB_EM_FIRE_1",
             "value": "불의 휘석: 초록"
         },
@@ -1871,6 +1911,10 @@
         {
             "key": "IT_JBEX_AXE",
             "value": "도끼의 낙인석"
+        },
+        {
+            "key": "IT_JBEX_BOOK",
+            "value": "책의 낙인석"
         },
         {
             "key": "IT_UN_AW_FIRE",
@@ -2569,6 +2613,14 @@
             "value": "레오니스의 왕 몬트의 조각"
         },
         {
+            "key": "IT_PI_LW_RYEL",
+            "value": "류엘의 조각"
+        },
+        {
+            "key": "IT_PI_LW_SIRM",
+            "value": "실마의 조각"
+        },
+        {
             "key": "IT_SP_LW_MONT",
             "value": "몬트 레오니스의 마음 구슬"
         },
@@ -2971,6 +3023,14 @@
         {
             "key": "IT_SP_LW_MONT_01",
             "value": "레오니스의 왕 몬트의 마음 구슬"
+        },
+        {
+            "key": "IT_SP_LW_RYEL",
+            "value": "류엘의 마음 구슬"
+        },
+        {
+            "key": "IT_SP_LW_SIRM",
+            "value": "실마의 마음 구슬"
         },
         {
             "key": "IT_SB_EXP_FIRE_01",
@@ -3463,6 +3523,10 @@
         {
             "key": "IT_AF_AW_GLOVE",
             "value": "강화의 비전서(장갑)"
+        },
+        {
+            "key": "IT_AF_AW_BOOK",
+            "value": "강화의 비전서(책)"
         },
         {
             "key": "IT_AF_MAT_FIRE_01",
@@ -4001,6 +4065,18 @@
             "value": "어둠의 장갑 제작법"
         },
         {
+            "key": "IT_AF_LW_BOK_001",
+            "value": "마법학 교본 제작법"
+        },
+        {
+            "key": "IT_AF_LW_BOK_002",
+            "value": "마수 도감 제작법"
+        },
+        {
+            "key": "IT_AF_LW_BOK_003",
+            "value": "달의 책 제작법"
+        },
+        {
             "key": "IT_AF_LW_ACC_040",
             "value": "침식의 문장 제작법"
         },
@@ -4385,6 +4461,10 @@
             "value": "[5월] 소환 메달 A"
         },
         {
+            "key": "IT_EC_SUMMON_05_02_B",
+            "value": "[5월] 소환 메달 B"
+        },
+        {
             "key": "IT_EC_SUMMON_1st_GL1",
             "value": "출시 1주년 기념 메달"
         },
@@ -4529,6 +4609,26 @@
             "value": "[2021 봄 기념 제3탄] 제이다이트 × 15 선택 소환 티켓"
         },
         {
+            "key": "IT_US_SE_JB_05_GL_14",
+            "value": "[800만 다운로드 기념 제3탄] 스피넬 × 70 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_SE_JB_04_GL_09",
+            "value": "[800만 다운로드 기념 제3탄] 시트린 × 30 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_SE_JB_03_GL_09",
+            "value": "[800만 다운로드 기념 제3탄] 차로아이트 × 30 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_SE_JB_02_GL_07",
+            "value": "[800만 다운로드 기념 제3탄] 아즈라이트 × 30 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_SE_JB_01_GL_07",
+            "value": "[800만 다운로드 기념 제3탄] 제이다이트 × 15 선택 소환 티켓"
+        },
+        {
             "key": "IT_US_SE_PI_COM_GL_04",
             "value": "속성 마음 조각 × 150 선택 소환 티켓"
         },
@@ -4611,6 +4711,10 @@
         {
             "key": "IT_EC_EV09_1",
             "value": "선동하는 자 메달"
+        },
+        {
+            "key": "IT_EC_EV10_1",
+            "value": "레오니스의 고문서 메달"
         },
         {
             "key": "IT_EC_WW_EV01_1",
@@ -4958,7 +5062,7 @@
         },
         {
             "key": "IT_US_SE_SB_EXP_06",
-            "value": "속성 마석(중) × 500 선택 소환 티켓 "
+            "value": ""
         },
         {
             "key": "IT_US_SE_SB_EXP_07",
@@ -5301,6 +5405,10 @@
             "value": "[출시 1주년 기념 전야제 제2탄] 스피넬 × 30 선택 소환 티켓"
         },
         {
+            "key": "IT_US_SE_JB_GL_05_07",
+            "value": "스피넬 × 40 선택 소환 티켓"
+        },
+        {
             "key": "IT_US_SE_UR_U_01",
             "value": "UR 유닛 선택 소환 티켓 A"
         },
@@ -5395,6 +5503,10 @@
         {
             "key": "IT_US_G_U_SSR_UR_15",
             "value": "[출시 1주년 기념 전야제 제2탄] MR 이상 유닛 보장 소환 티켓"
+        },
+        {
+            "key": "IT_US_G_U_SSR_UR_16",
+            "value": "[800만 다운로드 기념 제3탄] MR 이상 유닛 보장 소환 티켓"
         },
         {
             "key": "IT_US_SE_UR_V_01",
@@ -5933,6 +6045,10 @@
             "value": " '강력한 벽'의 조각"
         },
         {
+            "key": "IT_VPI_LW_RAIN",
+            "value": " '영웅들의 해후'의 조각"
+        },
+        {
             "key": "IT_VC_EXP_01",
             "value": "그로우 에그(N)"
         },
@@ -6297,6 +6413,10 @@
             "value": "[800만 다운로드 기념] UR 유닛의 조각 × 80 선택 소환 티켓"
         },
         {
+            "key": "IT_US_SE_AF_PT_02",
+            "value": "드워프 망치 × 5 선택 소환 티켓"
+        },
+        {
             "key": "IT_US_SE_JBEX_EM_01",
             "value": "휘석상 × 300 선택 소환 티켓"
         },
@@ -6311,6 +6431,14 @@
         {
             "key": "IT_US_GL_SE_JBEX_AF_1",
             "value": "[낙인석 패키지] 낙인석 × 50 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_3",
+            "value": "낙인석 × 40 선택 소환 티켓"
+        },
+        {
+            "key": "IT_US_GL_SE_JBEX_AF_4",
+            "value": "낙인석 × 300 선택 소환 티켓"
         },
         {
             "key": "IT_US_N_GACHA_10",
@@ -6355,10 +6483,6 @@
         {
             "key": "IT_US_SE_AF_SUP_02",
             "value": "장비의 각인 × 50 선택 소환 티켓"
-        },
-        {
-            "key": "IT_US_SE_AF_PT_02",
-            "value": "드워프 망치 × 5 선택 소환 티켓"
         },
         {
             "key": "IT_US_G_N_TW_10",

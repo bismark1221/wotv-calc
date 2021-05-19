@@ -39781,6 +39781,159 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_SO_03_ARC": {
+    "dataId": "UN_LW_E_SO_03_ARC",
+    "names": {
+      "en": "Fennes Soldier",
+      "fr": "Soldat de Fennes",
+      "de": "Fennischer Soldat",
+      "es": "Soldado de Fennes",
+      "ko": "페네스 병사",
+      "zh": "芬尼斯士兵"
+    },
+    "jobs": [
+      "JB_LW_ARC_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 247,
+        "max": 826
+      },
+      "TP": {
+        "min": 61,
+        "max": 95
+      },
+      "AP": {
+        "min": 73,
+        "max": 90
+      },
+      "ATK": {
+        "min": 79,
+        "max": 133
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 32,
+        "max": 54
+      },
+      "DEX": {
+        "min": 75,
+        "max": 112
+      },
+      "AGI": {
+        "min": 30,
+        "max": 36
+      },
+      "LUCK": {
+        "min": 73,
+        "max": 103
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso03",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "fennes-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_ARC_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 5,
+        "l": 4,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_MDNA": {
     "dataId": "UN_LW_E_MDNA",
     "names": {
@@ -43258,6 +43411,176 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_MABR_02_EX": {
+    "dataId": "UN_LW_E_MABR_02_EX",
+    "names": {
+      "en": "Great Malboro",
+      "fr": "Méga morbol",
+      "de": "Großer Morbol",
+      "es": "Gran molbol",
+      "ko": "몰볼 그레이트",
+      "zh": "大毛爾波爾"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 208,
+        "max": 2380
+      },
+      "TP": {
+        "min": 50,
+        "max": 91
+      },
+      "AP": {
+        "min": 59,
+        "max": 93
+      },
+      "ATK": {
+        "min": 63,
+        "max": 180
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 29,
+        "max": 73
+      },
+      "DEX": {
+        "min": 96,
+        "max": 242
+      },
+      "AGI": {
+        "min": 19,
+        "max": 54
+      },
+      "LUCK": {
+        "min": 90,
+        "max": 241
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHTNING_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "SILENCE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "PARALYZE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 70,
+        "max": 70
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsmabr_02",
+    "species": "plant",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "great-malboro",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_MABR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_IGNT_2": {
     "dataId": "UN_LW_E_IGNT_2",
     "names": {
@@ -45212,6 +45535,175 @@
         "h": 1,
         "l": 1,
         "s": 0
+      },
+      "based": "magic"
+    }
+  },
+  "UN_LW_E_RYEL": {
+    "dataId": "UN_LW_E_RYEL",
+    "names": {
+      "en": "Louelle",
+      "fr": "Luelle",
+      "de": "Luëlle",
+      "es": "Luele",
+      "ko": "류엘",
+      "zh": "琉艾爾"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_LIB_SOIL",
+      "JB_LW_MKN_SOIL",
+      "JB_LW_BLM_SOIL"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 272,
+        "max": 982
+      },
+      "TP": {
+        "min": 60,
+        "max": 94
+      },
+      "AP": {
+        "min": 73,
+        "max": 90
+      },
+      "ATK": {
+        "min": 32,
+        "max": 55
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 97,
+        "max": 163
+      },
+      "DEX": {
+        "min": 70,
+        "max": 104
+      },
+      "AGI": {
+        "min": 29,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 71,
+        "max": 100
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHTNING_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsryel",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "slug": "louelle-1",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LIB_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "magic",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 1,
+        "line": 1
       },
       "based": "magic"
     }

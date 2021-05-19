@@ -1379,6 +1379,66 @@
     },
     "type": "compo_job"
   },
+  "IT_JB_BOOK_01": {
+    "dataId": "IT_JB_BOOK_01",
+    "names": {
+      "en": "Book Jadeite",
+      "fr": "Jade pour livres",
+      "de": "Buch-Jadeit",
+      "es": "Jadeíta para libros",
+      "ko": "책의 제이다이트",
+      "zh": "書之翡翠硬玉"
+    },
+    "type": "compo_job"
+  },
+  "IT_JB_BOOK_02": {
+    "dataId": "IT_JB_BOOK_02",
+    "names": {
+      "en": "Book Azurite",
+      "fr": "Azurite pour livres",
+      "de": "Buch-Azurit",
+      "es": "Azurita para libros",
+      "ko": "책의 아즈라이트",
+      "zh": "書之藍銅礦"
+    },
+    "type": "compo_job"
+  },
+  "IT_JB_BOOK_03": {
+    "dataId": "IT_JB_BOOK_03",
+    "names": {
+      "en": "Book Charoite",
+      "fr": "Charoïte pour livres",
+      "de": "Buch-Charoit",
+      "es": "Charoíta para libros",
+      "ko": "책의 차로아이트",
+      "zh": "書之紫龍晶"
+    },
+    "type": "compo_job"
+  },
+  "IT_JB_BOOK_04": {
+    "dataId": "IT_JB_BOOK_04",
+    "names": {
+      "en": "Book Citrine",
+      "fr": "Citrine pour livres",
+      "de": "Buch-Citrin",
+      "es": "Citrino para libros",
+      "ko": "책의 시트린",
+      "zh": "書之黃水晶"
+    },
+    "type": "compo_job"
+  },
+  "IT_JB_BOOK_05": {
+    "dataId": "IT_JB_BOOK_05",
+    "names": {
+      "en": "Book Spinel",
+      "fr": "Spinelle pour livres",
+      "de": "Buch-Spinell",
+      "es": "Espinela para libros",
+      "ko": "책의 스피넬",
+      "zh": "書之尖晶石"
+    },
+    "type": "compo_job"
+  },
   "IT_JB_MM_COMMON": {
     "dataId": "IT_JB_MM_COMMON",
     "names": {
@@ -5019,6 +5079,71 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_MONT_01"
   },
+  "IT_JB_MM_LIB": {
+    "dataId": "IT_JB_MM_LIB",
+    "names": {
+      "en": "Scholar's Memory (Green)",
+      "fr": "Souvenir d'Érudit (Vert)",
+      "de": "Erinnerungen des Gelehrten (Grün)",
+      "es": "Recuerdo de erudito (verde)",
+      "ko": "학자의 기억: 초록",
+      "zh": "學者的記憶·翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_LIB_FIRE"
+  },
+  "IT_JB_MM_LIB_2": {
+    "dataId": "IT_JB_MM_LIB_2",
+    "names": {
+      "en": "Scholar's Memory (Blue)",
+      "fr": "Souvenir d'Érudit (Bleu)",
+      "de": "Erinnerungen des Gelehrten (Blau)",
+      "es": "Recuerdo de erudito (azul)",
+      "ko": "학자의 기억: 파랑",
+      "zh": "學者的記憶·碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_LIB_FIRE"
+  },
+  "IT_JB_MM_LIB_3": {
+    "dataId": "IT_JB_MM_LIB_3",
+    "names": {
+      "en": "Scholar's Memory (Purple)",
+      "fr": "Souvenir d'Érudit (Violet)",
+      "de": "Erinnerungen des Gelehrten (Violett)",
+      "es": "Recuerdo de erudito (morado)",
+      "ko": "학자의 기억: 보라",
+      "zh": "學者的記憶·紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_LIB_FIRE"
+  },
+  "IT_JB_MM_LIB_4": {
+    "dataId": "IT_JB_MM_LIB_4",
+    "names": {
+      "en": "Scholar's Memory (Yellow)",
+      "fr": "Souvenir d'Érudit (Jaune)",
+      "de": "Erinnerungen des Gelehrten (Gelb)",
+      "es": "Recuerdo de erudito (amarillo)",
+      "ko": "학자의 기억: 노랑",
+      "zh": "學者的記憶·黃"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_LIB_FIRE"
+  },
+  "IT_JB_MM_LIB_5": {
+    "dataId": "IT_JB_MM_LIB_5",
+    "names": {
+      "en": "Scholar's Memory (Red)",
+      "fr": "Souvenir d'Érudit (Rouge)",
+      "de": "Erinnerungen des Gelehrten (Rot)",
+      "es": "Recuerdo de erudito (rojo)",
+      "ko": "학자의 기억: 빨강",
+      "zh": "學者的記憶·緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_LIB_FIRE"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5892,6 +6017,18 @@
       "es": "Losa de hachas",
       "ko": "도끼의 낙인석",
       "zh": "斧之焦印石"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_BOOK": {
+    "dataId": "IT_JBEX_BOOK",
+    "names": {
+      "en": "Book-Branded Tablet",
+      "fr": "Stèle pour livres",
+      "de": "Buch-Symboltafel",
+      "es": "Losa de libros",
+      "ko": "책의 낙인석",
+      "zh": "書之焦印石"
     },
     "type": "compo_job"
   },
@@ -7983,6 +8120,30 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_RYEL": {
+    "dataId": "IT_PI_LW_RYEL",
+    "names": {
+      "en": "Louelle Unit Shard",
+      "fr": "Fragment d'unité de Luelle",
+      "de": "„Luëlle“-Einheitenfragment",
+      "es": "Fragmento de Luele",
+      "ko": "류엘의 조각",
+      "zh": "琉艾爾的碎片"
+    },
+    "type": "unit_shard"
+  },
+  "IT_PI_LW_SIRM": {
+    "dataId": "IT_PI_LW_SIRM",
+    "names": {
+      "en": "Sylma Unit Shard",
+      "fr": "Fragment d'unité de Sylma",
+      "de": "„Sylma“-Einheitenfragment",
+      "es": "Fragmento de Sylma",
+      "ko": "실마의 조각",
+      "zh": "希爾瑪的碎片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -9192,6 +9353,30 @@
       "es": "Esfera espiritual de Mont, rey de Leonis",
       "ko": "레오니스의 왕 몬트의 마음 구슬",
       "zh": "雷歐尼斯國王蒙特的思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_RYEL": {
+    "dataId": "IT_SP_LW_RYEL",
+    "names": {
+      "en": "Louelle Mindsphere",
+      "fr": "Sphère spirituelle de Luelle",
+      "de": "„Luëlle“-Geistesperle",
+      "es": "Esfera espiritual de Luele",
+      "ko": "류엘의 마음 구슬",
+      "zh": "琉艾爾的思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_SIRM": {
+    "dataId": "IT_SP_LW_SIRM",
+    "names": {
+      "en": "Sylma Mindsphere",
+      "fr": "Sphère spirituelle de Sylma",
+      "de": "„Sylma“-Geistesperle",
+      "es": "Esfera espiritual de Sylma",
+      "ko": "실마의 마음 구슬",
+      "zh": "希爾瑪的思珠"
     },
     "type": "exjob_orb"
   },
@@ -10671,6 +10856,18 @@
       "es": "Libro secreto de mejora (guantes)",
       "ko": "강화의 비전서(장갑)",
       "zh": "精煉秘籍（手套）"
+    },
+    "type": "compo_equipment"
+  },
+  "IT_AF_AW_BOOK": {
+    "dataId": "IT_AF_AW_BOOK",
+    "names": {
+      "en": "Secret Book of Refinement (Book)",
+      "fr": "Livre secret de l'amélioration (Livre)",
+      "de": "Almanach der Veredelung (Buch)",
+      "es": "Libro secreto de mejora (libro)",
+      "ko": "강화의 비전서(책)",
+      "zh": "精煉秘籍（書）"
     },
     "type": "compo_equipment"
   },
@@ -12372,6 +12569,45 @@
     "type": "recipe",
     "icon": "AF_LW_GLO_003"
   },
+  "IT_AF_LW_BOK_001": {
+    "dataId": "IT_AF_LW_BOK_001",
+    "names": {
+      "en": "Arcane Handbook Crafting Recipe",
+      "fr": "Recette d'artisanat : Manuel de magie",
+      "de": "[Anleitung] Lehrbuch der Magietheorie",
+      "es": "Receta: tomo arcano",
+      "ko": "마법학 교본 제작법",
+      "zh": "魔法學教育手冊的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_BOK_001"
+  },
+  "IT_AF_LW_BOK_002": {
+    "dataId": "IT_AF_LW_BOK_002",
+    "names": {
+      "en": "Monstrous Compendium Crafting Recipe",
+      "fr": "Recette d'artisanat : Guide du monstre",
+      "de": "[Anleitung] Monsterenzyklopädie",
+      "es": "Receta: Monstruólogo",
+      "ko": "마수 도감 제작법",
+      "zh": "魔獸圖鑑的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_BOK_002"
+  },
+  "IT_AF_LW_BOK_003": {
+    "dataId": "IT_AF_LW_BOK_003",
+    "names": {
+      "en": "Lunar Tome Crafting Recipe",
+      "fr": "Recette d'artisanat : Encyclopédie lunaire",
+      "de": "[Anleitung] Mondbuch",
+      "es": "Receta: libro de la luna",
+      "ko": "달의 책 제작법",
+      "zh": "月之書的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_BOK_003"
+  },
   "IT_AF_LW_ACC_040": {
     "dataId": "IT_AF_LW_ACC_040",
     "names": {
@@ -13571,6 +13807,19 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_05_02_B": {
+    "dataId": "IT_EC_SUMMON_05_02_B",
+    "names": {
+      "en": "May Summon Medal B",
+      "fr": "Médaille d'invocation B [Mai]",
+      "de": "Mai-Beschwörungsmedaille B",
+      "es": "Medalla de invocación B (mayo)",
+      "ko": "[5월] 소환 메달 B",
+      "zh": "【5月】召喚獎牌B"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_1st_GL1": {
     "dataId": "IT_EC_SUMMON_1st_GL1",
     "names": {
@@ -14039,6 +14288,71 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_GL_14": {
+    "dataId": "IT_US_SE_JB_05_GL_14",
+    "names": {
+      "en": "[8 Million Downloads Part III] Select Spinel x70 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 70 spinelles",
+      "de": "[8 Millionen Downloads! Teil III] „Auswählbarer Spinell x70“-Beschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket seleccionador de 70 espinelas",
+      "ko": "[800만 다운로드 기념 제3탄] 스피넬 × 70 선택 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】尖晶石×70選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_09": {
+    "dataId": "IT_US_SE_JB_04_GL_09",
+    "names": {
+      "en": "[8 Million Downloads Part III] Select Citrine x30 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 citrines",
+      "de": "[8 Millionen Downloads! Teil III] „Auswählbarer Citrin x30“-Beschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket seleccionador de 30 citrinos",
+      "ko": "[800만 다운로드 기념 제3탄] 시트린 × 30 선택 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】黃水晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_09": {
+    "dataId": "IT_US_SE_JB_03_GL_09",
+    "names": {
+      "en": "[8 Million Downloads Part III] Select Charoite x30 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 charoïtes",
+      "de": "[8 Millionen Downloads! Teil III] „Auswählbarer Charoit x30“-Beschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket seleccionador de 30 charoítas",
+      "ko": "[800만 다운로드 기념 제3탄] 차로아이트 × 30 선택 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】紫龍晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_07": {
+    "dataId": "IT_US_SE_JB_02_GL_07",
+    "names": {
+      "en": "[8 Million Downloads Part III] Select Azurite x30 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 30 azurites",
+      "de": "[8 Millionen Downloads! Teil III] „Auswählbarer Azurit x30“-Beschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket seleccionador de 30 azuritas",
+      "ko": "[800만 다운로드 기념 제3탄] 아즈라이트 × 30 선택 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】藍銅礦×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_07": {
+    "dataId": "IT_US_SE_JB_01_GL_07",
+    "names": {
+      "en": "[8 Million Downloads Part III] Select Jadeite x15 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie III] Ticket sélectionneur de 15 jades",
+      "de": "[8 Millionen Downloads! Teil III] „Auswählbarer Jadeit x15“-Beschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket seleccionador de 15 jadeítas",
+      "ko": "[800만 다운로드 기념 제3탄] 제이다이트 × 15 선택 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】翡翠硬玉×15選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_GL_04": {
     "dataId": "IT_US_SE_PI_COM_GL_04",
     "names": {
@@ -14299,6 +14613,18 @@
       "es": "Medalla de El Instigador",
       "ko": "선동하는 자 메달",
       "zh": "煽動者獎牌"
+    },
+    "type": "medal"
+  },
+  "IT_EC_EV10_1": {
+    "dataId": "IT_EC_EV10_1",
+    "names": {
+      "en": "The Ancient Tome of Leonis Medal",
+      "fr": "Médaille de « L'Ancien manuscrit de Leonis »",
+      "de": "„Codex Leonicus“-Medaille",
+      "es": "Medalla de El libro ancestral de Leonis",
+      "ko": "레오니스의 고문서 메달",
+      "zh": "雷歐尼斯古文書獎牌"
     },
     "type": "medal"
   },
@@ -15415,12 +15741,12 @@
   "IT_US_SE_SB_EXP_06": {
     "dataId": "IT_US_SE_SB_EXP_06",
     "names": {
-      "en": "Select Element Magicite (M) x500 Summon Ticket",
-      "fr": "Ticket sélectionneur de 500 magilithes élémentaires (M)",
-      "de": "„Auswählbarer Elementmaginit (M) x500“-Beschwörungsticket",
-      "es": "Tícket seleccionador de 500 magicitas elementales (M)",
-      "ko": "속성 마석(중) × 500 선택 소환 티켓 ",
-      "zh": "屬性魔石（中）×500選擇召喚券"
+      "en": "IT_US_SE_SB_EXP_06",
+      "fr": "IT_US_SE_SB_EXP_06",
+      "de": "IT_US_SE_SB_EXP_06",
+      "es": "IT_US_SE_SB_EXP_06",
+      "ko": "IT_US_SE_SB_EXP_06",
+      "zh": "IT_US_SE_SB_EXP_06"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -16530,6 +16856,19 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_GL_05_07": {
+    "dataId": "IT_US_SE_JB_GL_05_07",
+    "names": {
+      "en": "Select Spinel x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 spinelles",
+      "de": "„Auswählbarer Spinell x40“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 40 espinelas",
+      "ko": "스피넬 × 40 선택 소환 티켓",
+      "zh": "尖晶石×40選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_UR_U_01": {
     "dataId": "IT_US_SE_UR_U_01",
     "names": {
@@ -16838,6 +17177,19 @@
       "es": "[Cuenta atrás 1.er aniv. II] Tícket de invocación de unidad MR+ garantizada",
       "ko": "[출시 1주년 기념 전야제 제2탄] MR 이상 유닛 보장 소환 티켓",
       "zh": "【1週年前夜祭第2階段】確保MR以上兵員召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
+  "IT_US_G_U_SSR_UR_16": {
+    "dataId": "IT_US_G_U_SSR_UR_16",
+    "names": {
+      "en": "[8 Million Downloads Part III] MR+ Guaranteed Unit Summon Ticket",
+      "fr": "8 millions de téléchargements [Partie III] Ticket d'invocation d'unité MR+ garantie",
+      "de": "[8 Millionen Downloads! Teil III] „[MR+] garantiert“-Einheitenbeschwörungsticket",
+      "es": "[8 millones de descargas III] Tícket de invocación de unidad MR+ garantizada",
+      "ko": "[800만 다운로드 기념 제3탄] MR 이상 유닛 보장 소환 티켓",
+      "zh": "【800萬下載紀念第3階段】確保MR以上兵員召喚"
     },
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
@@ -18473,6 +18825,18 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_RAIN": {
+    "dataId": "IT_VPI_LW_RAIN",
+    "names": {
+      "en": "\"Encounter of Heroes\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Rencontre héroïque",
+      "de": "„Zusammenkunft der Helden“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «El encuentro de los héroes»",
+      "ko": " '영웅들의 해후'의 조각",
+      "zh": "英雄們的邂逅的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -19625,6 +19989,19 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_AF_PT_02": {
+    "dataId": "IT_US_SE_AF_PT_02",
+    "names": {
+      "en": "Select Dwarven Hammer x5 Summon Ticket",
+      "fr": "Ticket sélectionneur de 5 marteaux nains",
+      "de": "„Auswählbarer Zwergenhammer x5“-Beschwörungsticket",
+      "es": "Tícker seleccionador de 5 martillos enanos",
+      "ko": "드워프 망치 × 5 선택 소환 티켓",
+      "zh": "矮人錘×5選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -19673,6 +20050,32 @@
       "es": "[Lote de losas de armas] Tícket seleccionador de 50 losas de armas",
       "ko": "[낙인석 패키지] 낙인석 × 50 선택 소환 티켓",
       "zh": "【焦印石禮包】焦印石×50選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_JBEX_AF_3": {
+    "dataId": "IT_US_GL_SE_JBEX_AF_3",
+    "names": {
+      "en": "Select Branded Tablet x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 stèles",
+      "de": "„Auswählbare Symboltafel x40“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 40 losas de armas",
+      "ko": "낙인석 × 40 선택 소환 티켓",
+      "zh": "焦印石×40選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_JBEX_AF_4": {
+    "dataId": "IT_US_GL_SE_JBEX_AF_4",
+    "names": {
+      "en": "Select Branded Tablet x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 stèles",
+      "de": "„Auswählbare Symboltafel x300“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 300 losas de armas",
+      "ko": "낙인석 × 300 선택 소환 티켓",
+      "zh": "焦印石×300選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -19815,19 +20218,6 @@
       "es": "Tícket seleccionador de 50 sellos de equipo",
       "ko": "장비의 각인 × 50 선택 소환 티켓",
       "zh": "武具之刻印×50選擇召喚券"
-    },
-    "type": "tickets",
-    "icon": "IT_US_SE_ITEM_TICKET"
-  },
-  "IT_US_SE_AF_PT_02": {
-    "dataId": "IT_US_SE_AF_PT_02",
-    "names": {
-      "en": "Select Dwarven Hammer x5 Summon Ticket",
-      "fr": "Ticket sélectionneur de 5 marteaux nains",
-      "de": "„Auswählbarer Zwergenhammer x5“-Beschwörungsticket",
-      "es": "Tícker seleccionador de 5 martillos enanos",
-      "ko": "드워프 망치 × 5 선택 소환 티켓",
-      "zh": "矮人錘×5選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -20208,7 +20598,7 @@
     "dataId": "IT_EC_FF10_3",
     "names": {
       "en": "[FFX] Trials of Reckoning Medal",
-      "fr": "[FFX] Médaille des Épreuves du Jugement",
+      "fr": "Médaille des Épreuves du Jugement [FFX]",
       "de": "[FFX] „Prüfungen des Urteils“-Medaille",
       "es": "[FFX] Medalla de las Pruebas del Veredicto",
       "ko": "[FFX] 심판의 시련 메달",

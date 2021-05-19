@@ -15828,6 +15828,405 @@
       }
     ]
   },
+  "VC_LW_RAIN": {
+    "dataId": "VC_LW_RAIN",
+    "names": {
+      "en": "Encounter of Heroes",
+      "fr": "Rencontre héroïque",
+      "de": "Zusammenkunft der Helden",
+      "es": "El encuentro de los héroes",
+      "ko": "영웅들의 해후",
+      "zh": "英雄們的邂逅"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 37,
+        "max": 286
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {
+        "min": 1,
+        "max": 3
+      },
+      "SPR": {
+        "min": 1,
+        "max": 3
+      },
+      "MAG": {
+        "min": 34,
+        "max": 132
+      },
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsrain",
+    "slug": "encounter-of-heroes",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 15,
+              "maxValue": 30,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 2,
+              "maxValue": 6,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 1,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "MAG",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "percent",
+              "condition": "FIRE_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "SLASH_RES",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_RES",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_RES",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "STRIKE_RES",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "condition": "FIRE_ELEMENT",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "fire"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_P_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_PAW_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "HP",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_RAIN_PMAX_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_RAIN",
+              "UN_LW_P_MONT_01",
+              "UN_LW_P_MONT"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
