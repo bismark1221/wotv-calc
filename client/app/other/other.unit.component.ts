@@ -42,15 +42,15 @@ export class OtherUnitComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       this.otherUnits = await this.otherUnitService.getUnitsBySlug(params.get('slug'));
 
-      console.log(this.otherUnits)
+      console.log(this.otherUnits);
 
       /*if (!this.raid) {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       } else {*/
-        //this.formatRaid();
+        // this.formatRaid();
 
-        //this.navService.setTitle(this.raid.bosses[0].name);
-      //}
+        // this.navService.setTitle(this.raid.bosses[0].name);
+      // }
     });
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
