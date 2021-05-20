@@ -2272,75 +2272,90 @@ export class JsonService {
 
       this.formatJsons();
 
-      console.log({gl: {
-          units: this.gl.wotvUnits,
-          visionCards: this.gl.wotvVisionCards,
-          espers: this.gl.wotvEspers,
-          equipments: this.gl.wotvEquipments,
-          jobs: this.gl.wotvJobs,
-          raids: this.gl.wotvRaids,
-          items: this.gl.wotvItems,
-          masterRanks: this.gl.wotvMasterRanks,
-          playerTitles: this.gl.wotvPlayerTitles,
-          guildTitles: this.gl.wotvGuildTitles,
-          dropRates: this.gl.wotvQuests,
-          otherUnits: this.gl.wotvOtherUnits,
-          skills: this.gl.wotvSkills
-        },
-        jp: {
-          units: this.jp.wotvUnits,
-          visionCards: this.jp.wotvVisionCards,
-          espers: this.jp.wotvEspers,
-          equipments: this.jp.wotvEquipments,
-          jobs: this.jp.wotvJobs,
-          raids: this.jp.wotvRaids,
-          items: this.jp.wotvItems,
-          masterRanks: this.jp.wotvMasterRanks,
-          playerTitles: this.jp.wotvPlayerTitles,
-          guildTitles: this.jp.wotvGuildTitles,
-          dropRates: this.jp.wotvQuests,
-          otherUnits: this.jp.wotvOtherUnits,
-          skills: this.jp.wotvSkills
-        },
-        translate: {
-          jpRomaji: this.jpRomaji
-        }})
+      console.log('==== GL RESULT ====');
+      console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), JSON.stringify(this.gl.wotvUnits, null, 2));
 
-      return {
-        gl: {
-          units: this.gl.wotvUnits,
-          visionCards: this.gl.wotvVisionCards,
-          espers: this.gl.wotvEspers,
-          equipments: this.gl.wotvEquipments,
-          jobs: this.gl.wotvJobs,
-          raids: this.gl.wotvRaids,
-          items: this.gl.wotvItems,
-          masterRanks: this.gl.wotvMasterRanks,
-          playerTitles: this.gl.wotvPlayerTitles,
-          guildTitles: this.gl.wotvGuildTitles,
-          dropRates: this.gl.wotvQuests,
-          otherUnits: this.gl.wotvOtherUnits,
-          skills: this.gl.wotvSkills
-        },
-        jp: {
-          units: this.jp.wotvUnits,
-          visionCards: this.jp.wotvVisionCards,
-          espers: this.jp.wotvEspers,
-          equipments: this.jp.wotvEquipments,
-          jobs: this.jp.wotvJobs,
-          raids: this.jp.wotvRaids,
-          items: this.jp.wotvItems,
-          masterRanks: this.jp.wotvMasterRanks,
-          playerTitles: this.jp.wotvPlayerTitles,
-          guildTitles: this.jp.wotvGuildTitles,
-          dropRates: this.jp.wotvQuests,
-          otherUnits: this.jp.wotvOtherUnits,
-          skills: this.jp.wotvSkills
-        },
-        translate: {
-          jpRomaji: this.jpRomaji
-        }
-      };
+      console.log('VisionCards : ' + Object.keys(this.gl.wotvVisionCards).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), JSON.stringify(this.gl.wotvVisionCards, null, 2));
+
+      console.log('Espers : ' + Object.keys(this.gl.wotvEspers).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), JSON.stringify(this.gl.wotvEspers, null, 2));
+
+      console.log('Equipments : ' + Object.keys(this.gl.wotvEquipments).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), JSON.stringify(this.gl.wotvEquipments, null, 2));
+
+      console.log('Jobs : ' + Object.keys(this.gl.wotvJobs).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/jobs.json'), JSON.stringify(this.gl.wotvJobs, null, 2));
+
+      console.log('Raids : ' + Object.keys(this.gl.wotvRaids).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/raids.json'), JSON.stringify(this.gl.wotvRaids, null, 2));
+
+      console.log('Items : ' + Object.keys(this.gl.wotvItems).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/items.json'), JSON.stringify(this.gl.wotvItems, null, 2));
+
+      console.log('MasterRanks : ' + Object.keys(this.gl.wotvMasterRanks).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/masterRanks.json'), JSON.stringify(this.gl.wotvMasterRanks, null, 2));
+
+      console.log('PlayerTitles : ' + Object.keys(this.gl.wotvPlayerTitles).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/playerTitles.json'), JSON.stringify(this.gl.wotvPlayerTitles, null, 2));
+
+      console.log('GuildTitles : ' + Object.keys(this.gl.wotvGuildTitles).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/guildTitles.json'), JSON.stringify(this.gl.wotvGuildTitles, null, 2));
+
+      console.log('Quests : ' + Object.keys(this.gl.wotvQuests).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/quests.json'), JSON.stringify(this.gl.wotvQuests, null, 2));
+
+      console.log('OtherUnits : ' + Object.keys(this.gl.wotvOtherUnits).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/otherUnits.json'), JSON.stringify(this.gl.wotvOtherUnits, null, 2));
+
+      console.log('Skills : ' + Object.keys(this.gl.wotvSkills).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/skills.json'), JSON.stringify(this.gl.wotvSkills, null, 2));
+
+
+      console.log('==== JP RESULT ====');
+      console.log('Units : ' + Object.keys(this.jp.wotvUnits).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), JSON.stringify(this.jp.wotvUnits, null, 2));
+
+      console.log('VisionCards : ' + Object.keys(this.jp.wotvVisionCards).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), JSON.stringify(this.jp.wotvVisionCards, null, 2));
+
+      console.log('Espers : ' + Object.keys(this.jp.wotvEspers).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), JSON.stringify(this.jp.wotvEspers, null, 2));
+
+      console.log('Equipments : ' + Object.keys(this.jp.wotvEquipments).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), JSON.stringify(this.jp.wotvEquipments, null, 2));
+
+      console.log('Jobs : ' + Object.keys(this.jp.wotvJobs).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/jobs.json'), JSON.stringify(this.jp.wotvJobs, null, 2));
+
+      console.log('Raids : ' + Object.keys(this.jp.wotvRaids).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/raids.json'), JSON.stringify(this.jp.wotvRaids, null, 2));
+
+      console.log('Items : ' + Object.keys(this.jp.wotvItems).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/items.json'), JSON.stringify(this.jp.wotvItems, null, 2));
+
+      console.log('MasterRanks : ' + Object.keys(this.jp.wotvMasterRanks).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/masterRanks.json'), JSON.stringify(this.jp.wotvMasterRanks, null, 2));
+
+      console.log('PlayerTitles : ' + Object.keys(this.jp.wotvPlayerTitles).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/playerTitles.json'), JSON.stringify(this.jp.wotvPlayerTitles, null, 2));
+
+      console.log('GuildTitles : ' + Object.keys(this.jp.wotvGuildTitles).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/guildTitles.json'), JSON.stringify(this.jp.wotvGuildTitles, null, 2));
+
+      console.log('Quests : ' + Object.keys(this.jp.wotvQuests).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/quests.json'), JSON.stringify(this.jp.wotvQuests, null, 2));
+
+      console.log('OtherUnits : ' + Object.keys(this.jp.wotvOtherUnits).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/otherUnits.json'), JSON.stringify(this.jp.wotvOtherUnits, null, 2));
+
+      console.log('Skills : ' + Object.keys(this.jp.wotvSkills).length);
+      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/skills.json'), JSON.stringify(this.jp.wotvSkills, null, 2));
+
+      console.log('==== JP ROMAJI ====');
+      console.log(Object.keys(this.jpRomaji).length)
+      this.fs.writeFile(require('path').resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
     });
   }
 
@@ -4222,7 +4237,7 @@ export class JsonService {
       mr.ranks.forEach(dataRank => {
         const rank = {
           images: {
-            emblem: dataRank.emblem_img.toLowerCase(),
+            emblem: dataRank.emblem_img.toLowerCase() === 'attribute_warter' ? 'attribute_water' : dataRank.emblem_img.toLowerCase(),
             background: dataRank.back_img.toLowerCase(),
             stars: i
           },
