@@ -197,6 +197,37 @@ export class QuestService {
     }
   }
 
+  async getQuestForOtherUnits(unitId) {
+    await this.getQuests();
+    const filteredQuests = [];
+
+    this[this.navService.getVersion() + '_quests'].forEach(quest => {
+      let unitFinded = -1;
+
+      let enemyIndex = 0;
+      for (const enemy of quest.enemies) {
+        if (enemy.dataId === unitId) {
+          unitFinded = enemyIndex;
+          break;
+        }
+        enemyIndex++;
+      }
+
+      if (unitFinded !== -1) {
+        filteredQuests.push({
+          enemyData: quest.enemies[enemyIndex],
+          questData: {
+            names: quest.names,
+            slug: quest.slug,
+            type: quest.type
+          }
+        });
+      }
+    });
+
+    return filteredQuests;
+  }
+
   formatType(type) {
     switch (type) {
       case 'story' :

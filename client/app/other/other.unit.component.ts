@@ -7,8 +7,8 @@ import { SkillService } from '../services/skill.service';
 import { RangeService } from '../services/range.service';
 import { NavService } from '../services/nav.service';
 import { NameService } from '../services/name.service';
-import { UnitService } from '../services/unit.service';
-import { CardService } from '../services/card.service';
+import { QuestService } from '../services/quest.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-other-unit',
@@ -17,9 +17,13 @@ import { CardService } from '../services/card.service';
 })
 export class OtherUnitComponent implements OnInit {
   otherUnits = [];
-  raid = null;
-  specialBismark = false;
-  activeTab;
+  formattedEnemies = [];
+  masterInfos = {
+    name: '',
+    image: '',
+    species: ''
+  };
+  private sre = /^\s+|\s+$/g;
 
   constructor(
     private otherUnitService: OtherUnitService,
@@ -30,11 +34,11 @@ export class OtherUnitComponent implements OnInit {
     private translateService: TranslateService,
     private navService: NavService,
     private nameService: NameService,
-    private unitService: UnitService,
-    private cardService: CardService,
+    private questService: QuestService,
+    private jobService: JobService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.formatRaid();
+      this.getMasterInfos();
     });
   }
 
@@ -44,91 +48,391 @@ export class OtherUnitComponent implements OnInit {
 
       console.log(this.otherUnits);
 
-      /*if (!this.raid) {
+      if (this.otherUnits.length > 0) {
+        this.getMasterInfos();
+
+        console.log(this.masterInfos);
+
+        await this.getQuestInfos();
+
+        console.log(this.formattedEnemies);
+      } else {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
-      } else {*/
-        // this.formatRaid();
-
-        // this.navService.setTitle(this.raid.bosses[0].name);
-      // }
-    });
-
-    this.activatedRoute.fragment.subscribe((fragment: string) => {
-      switch (fragment) {
-        case 'boss':
-          this.activeTab = 1;
-          break;
-        case 'skills':
-          this.activeTab = 2;
-          break;
-        default:
-          break;
       }
     });
   }
 
-  private async formatRaid() {
-    if (this.raid) {
-      for (const boss of this.raid.bosses) {
-        boss.name = this.nameService.getName(boss);
+  getMasterInfos() {
+    if (this.otherUnits.length > 0) {
+      this.masterInfos.name = this.nameService.getName(this.otherUnits[0]);
+      this.navService.setTitle(this.masterInfos.name);
+      this.masterInfos.image = this.otherUnits[0].image;
+      this.masterInfos.species = this.otherUnits[0].species;
+    }
+  }
 
-        boss.totalBuffs = {
-          HP: 0,
-          TP: 0,
-          INITIAL_AP: 0,
-          ATK: 0,
-          DEF: 0,
-          MAG: 0,
-          SPR: 0,
-          DEX: 0,
-          AGI: 0,
-          LUCK: 0,
-          CRITIC_RATE: 0,
-        };
-        boss.remainingBuffs = [];
+  async getQuestInfos() {
+    const quests = [];
+    for (const unitData of this.otherUnits) {
+      for (const quest of await this.questService.getQuestForOtherUnits(unitData.dataId)) {
+        quests.push(quest);
+      }
+    }
 
-        boss.formattedSkills = [];
+    console.log(quests);
 
-        for (const skillId of Object.keys(boss.skills)) {
-          const skill = await this.skillService.getSkill(skillId);
+    for (const quest of quests) {
+      const formattedEnemy = await this.formatEnemyOrAlly(quest.enemyData);
+      formattedEnemy.questData = quest.questData;
+      formattedEnemy.questData.name = this.nameService.getName(formattedEnemy.questData);
+      this.formattedEnemies.push(formattedEnemy);
+    }
 
-          skill.name = this.nameService.getName(skill);
+    this.sortByQuestName(this.formattedEnemies);
+  }
 
-          skill.effectsHtml = this.skillService.formatEffects(boss, skill);
+  async formatEnemyOrAlly(enemy) {
+    let formattedEnemy = await this.otherUnitService.getUnit(enemy.dataId);
+    formattedEnemy.name = this.nameService.getName(formattedEnemy);
+    formattedEnemy.statsForJob = {};
 
-          skill.damageHtml = this.skillService.formatDamage(boss, skill, skill.damage);
+    if (enemy.element) {
+      formattedEnemy.element = enemy.element;
+    }
 
-          if (skill.counter) {
-            skill.counterHtml = this.skillService.formatCounter(boss, skill, skill.counter);
+    if (enemy.minLevel) {
+      formattedEnemy.level = enemy.minLevel;
+      formattedEnemy.hasMaxLevel = true;
+    } else if (enemy.lv) {
+      formattedEnemy.level = enemy.lv;
+    } else {
+      formattedEnemy.level = 1;
+    }
+
+    formattedEnemy.job = null;
+    if (formattedEnemy.jobs && formattedEnemy.jobs[0]) {
+      formattedEnemy.job = await this.jobService.getJob(formattedEnemy.jobs[0]);
+      formattedEnemy.job.name = this.nameService.getName(formattedEnemy.job);
+    }
+
+    formattedEnemy.calculateBaseStats(true);
+    formattedEnemy.calculateTotalStats();
+
+    if (enemy.minLevel) {
+      const statsToRange = [
+        'HP',
+        'TP',
+        'AP',
+        'ATK',
+        'DEF',
+        'SPR',
+        'MAG',
+        'DEX',
+        'AGI',
+        'LUCK'
+      ];
+
+      const minTotals = {};
+      const minBases = {};
+      statsToRange.forEach(stat => {
+        minTotals[stat] = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].total));
+        minBases[stat] = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].baseTotal));
+      });
+
+      formattedEnemy.level = enemy.maxLevel;
+      formattedEnemy.calculateBaseStats(true);
+      formattedEnemy.calculateTotalStats();
+
+      statsToRange.forEach(stat => {
+        formattedEnemy.stats[stat].minTotal = minTotals[stat];
+        formattedEnemy.stats[stat].minBaseTotal = minBases[stat];
+        formattedEnemy.stats[stat].maxTotal = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].total));
+        formattedEnemy.stats[stat].maxBaseTotal = JSON.parse(JSON.stringify(formattedEnemy.stats[stat].baseTotal));
+      });
+    }
+
+    formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
+
+    formattedEnemy.skills = [];
+
+    if (formattedEnemy.attack) {
+      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.attack));
+      formattedSkill.name = this.nameService.getName(formattedSkill);
+
+      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+
+      formattedEnemy.skills.push(formattedSkill);
+    }
+
+    for (const rawSkill of enemy.skills) {
+      let formattedSkill = await this.skillService.getSkill(rawSkill.iname);
+      if (formattedSkill) {
+        formattedSkill = JSON.parse(JSON.stringify(formattedSkill));
+        formattedSkill.level = rawSkill.rank;
+
+        if (formattedSkill.type !== 'support') {
+          formattedSkill.name = this.nameService.getName(formattedSkill);
+
+          formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+          formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+          if (formattedSkill.counter) {
+            formattedSkill.counterHtml = this.skillService.formatCounter(formattedEnemy, formattedSkill, formattedSkill.counter);
           }
 
-          this.rangeService.formatRange(boss, skill);
+          this.rangeService.formatRange(formattedEnemy, formattedSkill);
 
-          boss.formattedSkills.push(skill);
-        }
+          formattedEnemy.skills.push(formattedSkill);
+        } else {
+          const splitDataId = formattedSkill.dataId.split('_');
+          formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
-        if (boss.attack) {
-          boss.attack.basedHtml = boss.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.attack.based.toLowerCase() + '.png\' />' : '';
-
-          boss.attack.effectsHtml = this.skillService.formatEffects(boss, boss.attack);
-
-          boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
-
-          this.rangeService.formatRange(boss, boss.attack);
+          if (splitDataId[2] === 'JOB') {
+            this.updateStatsForJob(formattedEnemy, formattedSkill);
+          } else {
+            this.updateStatsForSkill(formattedEnemy, formattedSkill);
+          }
         }
       }
+    }
 
-      for (const unit of this.raid.bonus.units) {
-        unit.unit = await this.unitService.getUnit(unit.unitId);
+    if (formattedEnemy.limit) {
+      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.limit));
+      formattedSkill.name = this.nameService.getName(formattedSkill);
+
+      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+
+      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+
+      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+
+      formattedEnemy.skills.push(formattedSkill);
+    }
+
+    this.applyStatsForJob(formattedEnemy);
+    this.getAvailableStatTypes(formattedEnemy);
+
+    return formattedEnemy;
+  }
+
+  updateStatsForJob(enemy, skill) {
+    skill.effects.forEach(effect => {
+      if (!enemy.statsForJob[effect.type]) {
+        enemy.statsForJob[effect.type] = 0;
+      }
+      const value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+
+      if (value > enemy.statsForJob[effect.type]) {
+        enemy.statsForJob[effect.type] = value;
+      }
+    });
+  }
+
+  updateStatsForSkill(enemy, skill) {
+    skill.effects.forEach(effect => {
+      let value = effect.minValue;
+      if (skill.maxLevel > 1) {
+        value = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
       }
 
-      for (const card of this.raid.bonus.cards) {
-        card.card = await this.cardService.getCard(card.cardId);
+      if (effect.type !== 'NULLIFY') {
+        this.updateStatsForUnit(enemy, effect.type, effect.calcType, value);
+      } else {
+        if (!enemy.stats['NULLIFY']) {
+          enemy.stats['NULLIFY'] = {ailments: effect.ailments};
+        } else {
+          effect.ailments.forEach(ailment => {
+            if (enemy.stats['NULLIFY'].ailments.indexOf(ailment) === -1) {
+              enemy.stats['NULLIFY'].ailments.push(ailment);
+            }
+          });
+        }
+      }
+    });
+  }
+
+  updateStatsForUnit(enemy, type, calcType, value) {
+    if (!enemy.stats[type]) {
+      enemy.stats[type] = {total: 0};
+    }
+
+    if (calcType === 'percent') {
+      enemy.stats[type].total += Math.floor(enemy.stats[type].baseTotal * value / 100);
+      if (enemy.hasMaxLevel) {
+        enemy.stats[type].minTotal += Math.floor(enemy.stats[type].minBaseTotal * value / 100);
+        enemy.stats[type].maxTotal += Math.floor(enemy.stats[type].maxBaseTotal * value / 100);
+      }
+    } else {
+      enemy.stats[type].total += value;
+      if (enemy.hasMaxLevel) {
+        enemy.stats[type].minTotal += value;
+        enemy.stats[type].maxTotal += value;
       }
     }
   }
 
-  clickSpecialBismark() {
-    this.specialBismark = !this.specialBismark;
+  applyStatsForJob(enemy) {
+    Object.keys(enemy.statsForJob).forEach(statType => {
+      enemy.stats[statType].total += Math.floor(enemy.stats[statType].baseTotal * enemy.statsForJob[statType] / 100);
+      if (enemy.hasMaxLevel) {
+        enemy.stats[statType].minTotal += Math.floor(enemy.stats[statType].minBaseTotal * enemy.statsForJob[statType] / 100);
+        enemy.stats[statType].maxTotal += Math.floor(enemy.stats[statType].maxBaseTotal * enemy.statsForJob[statType] / 100);
+      }
+    });
+  }
+
+  getAvailableStatTypes(formattedEnemy) {
+    const ignoreStats = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'SPR',
+      'MAG',
+      'DEX',
+      'AGI',
+      'LUCK',
+      'MOVE',
+      'JUMP',
+      'INCREASE_UNIT_LEVEL',
+      'RANGE'
+    ];
+
+    const statsManaged = [
+      'FIRE_RES',
+      'ICE_RES',
+      'EARTH_RES',
+      'WIND_RES',
+      'LIGHTNING_RES',
+      'WATER_RES',
+      'LIGHT_RES',
+      'DARK_RES',
+      'SLASH_RES',
+      'PIERCE_RES',
+      'STRIKE_RES',
+      'MISSILE_RES',
+      'MAGIC_RES',
+      'POISON_RES',
+      'BLIND_RES',
+      'SLEEP_RES',
+      'SILENCE_RES',
+      'PARALYZE_RES',
+      'CONFUSION_RES',
+      'PETRIFY_RES',
+      'TOAD_RES',
+      'CHARM_RES',
+      'SLOW_RES',
+      'STOP_RES',
+      'IMMOBILIZE_RES',
+      'DISABLE_RES',
+      'BERSERK_RES',
+      'DOOM_RES'
+    ];
+
+    const hasStats = [];
+    const otherStats = [];
+    Object.keys(formattedEnemy.stats).forEach(stat => {
+      if (statsManaged.indexOf(stat) !== -1) {
+        hasStats.push(stat);
+      } else if (ignoreStats.indexOf(stat) === -1) {
+        if (stat !== 'NULLIFY') {
+          otherStats.push({
+            type: stat,
+            value: formattedEnemy.stats[stat].total,
+            calcType: 'fixe'
+          });
+        } else {
+          otherStats.push({
+            type: 'NULLIFY',
+            ailments: formattedEnemy.stats[stat].ailments,
+            calcType: 'fixe'
+          });
+        }
+      }
+    });
+
+    hasStats.sort(function(a, b) {
+      if (statsManaged.indexOf(a) > statsManaged.indexOf(b)) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
+
+    formattedEnemy.hasStats = [];
+    let i = -1;
+    hasStats.forEach((stat, statIndex) => {
+      if (statIndex % 8 === 0) {
+        i++;
+        formattedEnemy.hasStats[i] = [];
+      }
+
+      formattedEnemy.hasStats[i].push(stat);
+    });
+
+    formattedEnemy.otherStats = [];
+    otherStats.forEach(otherStat => {
+      formattedEnemy.otherStats.push(this.skillService.formatEffect(formattedEnemy, {type: 'buff'}, otherStat, false));
+    });
+  }
+
+  private reduceString(s: any) {
+    return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
+  }
+
+  sortByQuestName(enemies) {
+    enemies.sort((a: any, b: any) => {
+      const x = this.reduceString(a.questData.name && a.questData.name !== 'New Quest' ? a.questData.name : a.getName(this.translateService));
+      const y = this.reduceString(b.questData.name && a.questData.name !== 'New Quest' ? b.questData.name : b.getName(this.translateService));
+
+      if (a.type === 'story' && b.type === 'story') {
+        const tableA = x.split(' ');
+        const tableB = y.split(' ');
+
+        const storySplitA = tableA[0].split(':');
+        const storySplitB = tableB[0].split(':');
+
+        if (parseInt(storySplitA[0], 10) > parseInt(storySplitB[0], 10)) {
+          return 1;
+        } else if (parseInt(storySplitB[0], 10) > parseInt(storySplitA[0], 10)) {
+          return -1;
+        } else {
+          if (parseInt(storySplitA[1], 10) > parseInt(storySplitB[1], 10)) {
+            return 1;
+          } else if (parseInt(storySplitB[1], 10) > parseInt(storySplitA[1], 10)) {
+            return -1;
+          } else {
+            if (parseInt(storySplitA[2], 10) > parseInt(storySplitB[2], 10)) {
+              return 1;
+            } else if (parseInt(storySplitB[2], 10) > parseInt(storySplitA[2], 10)) {
+              return -1;
+            } else {
+              if (parseInt(storySplitA[3], 10) > parseInt(storySplitB[3], 10)) {
+                return 1;
+              } else if (parseInt(storySplitB[3], 10) > parseInt(storySplitA[3], 10)) {
+                return -1;
+              }
+            }
+          }
+        }
+      } else if (a.type === 'tower' && b.type === 'tower') {
+        const tableA = x.split(' ');
+        const tableB = y.split(' ');
+
+        if (parseInt(tableA[tableA.length - 1].split('F')[0], 10) > parseInt(tableB[tableB.length - 1].split('F')[0], 10)) {
+          return 1;
+        } else if (parseInt(tableB[tableB.length - 1].split('F')[0], 10) > parseInt(tableA[tableA.length - 1].split('F')[0], 10)) {
+          return -1;
+        }
+      } else {
+        return x.localeCompare(y, 'ja');
+      }
+    });
   }
 }

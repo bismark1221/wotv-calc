@@ -1,33 +1,8 @@
-.tab-content {
+.row {
   width: 1200px;
   margin: auto;
   margin-bottom: 20px;
-  padding-top: 70px;
-}
-
-.nav-tabs {
-  border-bottom: 0;
-  background-color: #F4F5F9;
-  height: 55px;
-  position: fixed;
-  width: 100%;
-}
-
-.nav-tabs .nav-item {
-  margin-bottom: 0;
-}
-
-.nav-tabs .nav-link {
-  border: 0;
-  height: 100%;
-  padding-top: 15px;
-  color: var(--th-background);
-}
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
-  font-weight: bold;
-  border-bottom: 4px solid var(--th-background);
-  background-color: #F4F5F9;
+  margin-top: 20px;
 }
 
 .leftBlock {
@@ -47,8 +22,9 @@
   height: 32px;
 }
 
-.raidImg {
-  height: 250px;
+.unitImg {
+  max-height: 250px;
+  max-width: 250px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -67,11 +43,6 @@
 .bonusBlock {
   display: inline-block;
   margin-right: 20px;
-}
-
-.unitImg, .cardImg {
-  height: 100px;
-  margin-right: 5px;
 }
 
 .raidTable {
