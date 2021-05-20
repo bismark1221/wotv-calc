@@ -59,6 +59,7 @@ import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 import { OtherBestiaryComponent } from './other/other.bestiary.component';
+import { OtherUnitComponent } from './other/other.unit.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -166,6 +167,7 @@ export function createTranslateLoader(http: HttpClient) {
     OtherIlluminatiComponent,
     OtherFarmCalculatorComponent,
     OtherBestiaryComponent,
+    OtherUnitComponent,
     TemplateItemComponent
   ],
   imports: [

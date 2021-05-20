@@ -60,7 +60,7 @@ export class OtherBestiaryComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.navService.setTitle('Units');
+    this.navService.setTitle('Bestiary');
 
     if (sessionStorage.getItem('otherUnitsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('otherUnitsFilters'));

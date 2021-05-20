@@ -145,10 +145,10 @@ export class OtherUnitService {
     return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_otherUnits'].find(unit => unit.dataId === id);
   }
 
-  async getUnitBySlug(slug) {
+  async getUnitsBySlug(slug) {
     await this.getUnits();
 
-    return this[this.navService.getVersion() + '_otherUnits'].find(unit => unit.slug === slug);
+    return this[this.navService.getVersion() + '_otherUnits'].filter(unit => unit.slug === slug);
   }
 
   getLocalStorage() {

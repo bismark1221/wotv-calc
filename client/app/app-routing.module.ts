@@ -27,6 +27,7 @@ import { OtherJobPlannerComponent } from './other/other.jobplanner.component';
 import { OtherIlluminatiComponent } from './other/other.illuminati.component';
 import { OtherFarmCalculatorComponent } from './other/other.farmcalculator.component';
 import { OtherBestiaryComponent } from './other/other.bestiary.component';
+import { OtherUnitComponent } from './other/other.unit.component';
 
 import { BuilderComponent } from './builder/builder.component';
 import { BuilderUnitComponent } from './builder/builder.unit.component';
@@ -65,6 +66,7 @@ const ROUTES: Routes = [
       { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
       { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
       { path: 'bestiary', component: OtherBestiaryComponent },
+      { path: 'unit/:slug', component: OtherUnitComponent },
     ]
   },
 
@@ -115,6 +117,7 @@ const ROUTES: Routes = [
       { path: 'farm-calculator', component: OtherFarmCalculatorComponent },
       { path: 'farm-calculator/:data', component: OtherFarmCalculatorComponent },
       { path: 'bestiary', component: OtherBestiaryComponent },
+      { path: 'unit/:slug', component: OtherUnitComponent },
     ]
   },
 
