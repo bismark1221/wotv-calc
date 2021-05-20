@@ -62,11 +62,11 @@ export class OtherBestiaryComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Units');
 
-    if (sessionStorage.getItem('unitsFilters')) {
-      this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
+    if (sessionStorage.getItem('otherUnitsFilters')) {
+      this.filters = JSON.parse(sessionStorage.getItem('otherUnitsFilters'));
     }
-    if (sessionStorage.getItem('unitsCollapsed')) {
-      this.collapsed = JSON.parse(sessionStorage.getItem('unitsCollapsed'));
+    if (sessionStorage.getItem('otherUnitsCollapsed')) {
+      this.collapsed = JSON.parse(sessionStorage.getItem('otherUnitsCollapsed'));
     }
     this.filterChecked();
 
@@ -117,7 +117,7 @@ export class OtherBestiaryComponent implements OnInit {
       this.filters[type].splice(this.filters[type].indexOf(value), 1);
     }
 
-    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    sessionStorage.setItem('otherUnitsFilters', JSON.stringify(this.filters));
     this.filterChecked();
 
     await this.getUnits();
@@ -135,6 +135,6 @@ export class OtherBestiaryComponent implements OnInit {
 
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
-    sessionStorage.setItem('unitsCollapsed', JSON.stringify(this.collapsed));
+    sessionStorage.setItem('otherUnitsCollapsed', JSON.stringify(this.collapsed));
   }
 }

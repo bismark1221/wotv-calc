@@ -1600,7 +1600,7 @@ export class Unit {
       if (i !== pos && this.equipments && this.equipments[i]) {
         if (equipmentService.isArmor(this.equipments[i].type, true)) {
           hasArmor = true;
-        } else {
+        } else if (equipmentService.isWeapon(this.equipments[i].type, true)) {
           hasWeapon = true;
         }
       }
