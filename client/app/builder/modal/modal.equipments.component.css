@@ -41,6 +41,29 @@
   margin-left: 20px;
 }
 
+.acquisitionExpander {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.acquisitionExpander i {
+  margin-left: 10px;
+}
+
+.acquisitionType {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.acquisitionType input {
+  margin-right: 5px;
+}
+
+.unselectAllTypeLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .separator {
   margin-left: 20px;
   margin-right: 30px;

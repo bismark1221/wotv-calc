@@ -13,14 +13,18 @@ import { NameService } from '../../services/name.service';
 })
 export class ModalEquipmentsComponent implements OnInit {
   equipments;
+  acquisitionTypes;
 
   searchText = '';
   filters = {
     rarity: [],
-    category: []
+    category: [],
+    acquisition: []
   };
+  isAcquisitionChecked = [];
   savedEquipments = {};
   loadEquipmentId = null;
+  collapsedAcquisition = true;
 
   @Input() public unit;
   @Input() public equipmentPos;
@@ -40,6 +44,9 @@ export class ModalEquipmentsComponent implements OnInit {
 
   async ngOnInit() {
     await this.getEquipments();
+    await this.getAcquisitionTypes();
+
+    console.log(this.acquisitionTypes)
 
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
@@ -72,6 +79,22 @@ export class ModalEquipmentsComponent implements OnInit {
     }
   }
 
+  async getAcquisitionTypes() {
+    this.acquisitionTypes = await this.equipmentService.getAcquisitionTypes();
+    let unknownIndex = 0;
+
+    this.acquisitionTypes.forEach((type, typeIndex) => {
+      if (type !== 'Unknown') {
+        this.filters.acquisition.push(type);
+        this.isAcquisitionChecked[type] = true;
+      } else {
+        unknownIndex = typeIndex;
+      }
+    });
+
+    this.acquisitionTypes.splice(unknownIndex, 1);
+  }
+
   async filterList(type, value) {
     if (this.filters[type].indexOf(value) === -1) {
       this.filters[type].push(value);
@@ -88,6 +111,15 @@ export class ModalEquipmentsComponent implements OnInit {
     } else {
       return true;
     }
+  }
+
+  async unselectAllType() {
+    this.filters.acquisition = [];
+    this.acquisitionTypes.forEach(type => {
+      this.isAcquisitionChecked[type] = false;
+    });
+
+    await this.getEquipments();
   }
 
   close() {
