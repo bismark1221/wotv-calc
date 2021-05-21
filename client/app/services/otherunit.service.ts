@@ -93,16 +93,18 @@ export class OtherUnitService {
       const filteredUnits = [];
 
       for (const unit of units) {
-        let possbibleToAdd = true;
+        if (unit.type === 'enemy') {
+          let possbibleToAdd = true;
 
-        possbibleToAdd = this.unitSlugAlreadyAdded(unit.slug, filteredUnits);
+          possbibleToAdd = this.unitSlugAlreadyAdded(unit.slug, filteredUnits);
 
-        if (possbibleToAdd && filters.species && filters.species.length > 0) {
-          possbibleToAdd = this.unitHasSpecie(unit, filters.species);
-        }
+          if (possbibleToAdd && filters.species && filters.species.length > 0) {
+            possbibleToAdd = this.unitHasSpecie(unit, filters.species);
+          }
 
-        if (possbibleToAdd) {
-          filteredUnits.push(unit);
+          if (possbibleToAdd) {
+            filteredUnits.push(unit);
+          }
         }
       }
 
@@ -148,7 +150,7 @@ export class OtherUnitService {
   async getUnitsBySlug(slug) {
     await this.getUnits();
 
-    return this[this.navService.getVersion() + '_otherUnits'].filter(unit => unit.slug === slug);
+    return this[this.navService.getVersion() + '_otherUnits'].filter(unit => unit.type === 'enemy' && unit.slug === slug);
   }
 
   getLocalStorage() {

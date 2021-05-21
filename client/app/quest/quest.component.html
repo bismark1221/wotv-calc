@@ -160,7 +160,8 @@
             E{{ j + 1 }}
           </td>
           <td>
-            <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />{{ enemy.name }}
+            <img src="assets/units/{{enemy.image}}_m.png" class="enemyImg" />
+            <a [routerLink]="[getRoute('/other/unit/' + enemy.slug)]" [routerLinkActive]="['active']">{{ enemy.name }}</a>
           </td>
           <td>
             <img src="assets/elements/{{ enemy.element }}.png" class="elementImg" />

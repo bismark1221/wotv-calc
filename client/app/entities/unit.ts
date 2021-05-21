@@ -101,8 +101,6 @@ export class Unit {
   slug;
   board;
   attack;
-  size;
-  realMaxLevel;
   releaseDate = 'XX/XX/XXXX';
 
   // Only for builder
@@ -140,6 +138,9 @@ export class Unit {
 
   // Only for quests/enemies
   species = '';
+  type = '';
+  size;
+  realMaxLevel;
 
 
   constructFromJson(unit: Unit, translateService): void {
@@ -164,6 +165,7 @@ export class Unit {
     this.species = unit.species;
     this.size = unit.size;
     this.realMaxLevel = unit.realMaxLevel;
+    this.type = unit.type;
   }
 
   getName(translateService): string {

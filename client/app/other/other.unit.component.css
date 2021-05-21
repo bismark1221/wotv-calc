@@ -128,3 +128,83 @@
   cursor: pointer;
   margin-top: 2px;
 }
+
+.questName {
+  text-align: left;
+}
+
+.job {
+  height: 40px;
+  background: url("assets/jobs/base_sub.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  width: 40px;
+  margin: auto;
+}
+
+.job img {
+  max-width: 30px;
+  max-height: 30px;
+  vertical-align: top;
+}
+
+.enemyImg {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5px;
+}
+
+.elementImg, .damageImg, .statusAilmentImg {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+.allyTable, .enemyTable, .chestTable, .objectTable, .switchTable {
+  width: 120%;
+  margin-top: 10px;
+  margin-left: -100px;
+}
+
+.allyTable .idCol, .enemyTable .idCol, .chestTable .idCol, .objectTable .idCol, .switchTable .idCol {
+  width: 70px;
+}
+
+.enemyDetailCol {
+  padding: 0;
+}
+
+.enemyDetailCol table {
+  width: 100%;
+}
+
+.heightResTd {
+  height: 33px;
+}
+
+.skilImg, .atkBasedImg, .damageSkillImg, .timeImg {
+  width: 32px;
+  height: 32px;
+}
+
+.skillTypeTd {
+  width: 85px;
+}
+
+.skillEffectTd {
+  text-align: left;
+}
+
+.enemyLine {
+  cursor: pointer;
+}
+
+.collapseBlock {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.dropRateItemBlock {
+  display: inline-block;
+  margin-right: 10px;
+}

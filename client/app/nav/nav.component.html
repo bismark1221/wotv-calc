@@ -34,6 +34,9 @@
           <div class="otherIndex" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/index')]" (click)="showOtherNav=false">Index</a>
           </div>
+          <div class="otherBestiary" *ngIf="showOtherNav">
+            <a [routerLink]="[getRoute('/other/bestiary')]" (click)="showOtherNav=false">Bestiary</a>
+          </div>
           <div class="otherTitles" *ngIf="showOtherNav">
             <a [routerLink]="[getRoute('/other/titles')]" (click)="showOtherNav=false">Titles</a>
           </div>
@@ -207,6 +210,7 @@
         </a>
         <div class="subLinksMobile" [ngbCollapse]="!showMobileOtherNav">
           <a class="nav-link" [routerLink]="[getRoute('/other/index')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Index</a>
+          <a class="nav-link" [routerLink]="[getRoute('/other/bestiary')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Bestiary</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/titles')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Titles</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/jobplanner')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Job Planner</a>
           <a class="nav-link" [routerLink]="[getRoute('/other/farm-calculator')]" [routerLinkActive]="['active']" (click)="toggleMobileMenu(true)">Farm Calculator</a>

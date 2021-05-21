@@ -18,12 +18,45 @@ import { JobService } from '../services/job.service';
 export class OtherUnitComponent implements OnInit {
   otherUnits = [];
   formattedEnemies = [];
+  isCollapsedEnemy = [];
   masterInfos = {
     name: '',
     image: '',
     species: ''
   };
   private sre = /^\s+|\s+$/g;
+  statImage = {
+    FIRE_RES : 'assets/elements/fire.png',
+    ICE_RES : 'assets/elements/ice.png',
+    EARTH_RES : 'assets/elements/earth.png',
+    WIND_RES : 'assets/elements/wind.png',
+    LIGHTNING_RES : 'assets/elements/lightning.png',
+    WATER_RES : 'assets/elements/water.png',
+    LIGHT_RES : 'assets/elements/light.png',
+    DARK_RES : 'assets/elements/dark.png',
+
+    SLASH_RES : 'assets/damage/neutral_slash.png',
+    PIERCE_RES : 'assets/damage/neutral_pierce.png',
+    STRIKE_RES : 'assets/damage/neutral_strike.png',
+    MISSILE_RES : 'assets/damage/neutral_missile.png',
+    MAGIC_RES : 'assets/damage/neutral_magic.png',
+
+    POISON_RES : 'assets/status-ailments/POISON.png',
+    BLIND_RES : 'assets/status-ailments/BLIND.png',
+    SLEEP_RES : 'assets/status-ailments/SLEEP.png',
+    SILENCE_RES : 'assets/status-ailments/SILENCE.png',
+    PARALYZE_RES : 'assets/status-ailments/PARALYZE.png',
+    CONFUSION_RES : 'assets/status-ailments/CONFUSION.png',
+    PETRIFY_RES : 'assets/status-ailments/PETRIFY.png',
+    TOAD_RES : 'assets/status-ailments/TOAD.png',
+    CHARM_RES : 'assets/status-ailments/CHARM.png',
+    SLOW_RES : 'assets/status-ailments/SLOW.png',
+    STOP_RES : 'assets/status-ailments/STOP.png',
+    IMMOBILIZE_RES : 'assets/status-ailments/IMMOBILIZE.png',
+    DISABLE_RES : 'assets/status-ailments/DISABLE.png',
+    BERSERK_RES : 'assets/status-ailments/BERSERK.png',
+    DOOM_RES : 'assets/status-ailments/DOOM.png'
+  };
 
   constructor(
     private otherUnitService: OtherUnitService,
@@ -46,16 +79,10 @@ export class OtherUnitComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(async (params: Params) => {
       this.otherUnits = await this.otherUnitService.getUnitsBySlug(params.get('slug'));
 
-      console.log(this.otherUnits);
-
       if (this.otherUnits.length > 0) {
         this.getMasterInfos();
 
-        console.log(this.masterInfos);
-
         await this.getQuestInfos();
-
-        console.log(this.formattedEnemies);
       } else {
         this.router.navigate([this.navService.getRoute('/unit-not-found')]);
       }
@@ -79,13 +106,14 @@ export class OtherUnitComponent implements OnInit {
       }
     }
 
-    console.log(quests);
-
+    let i = 0;
     for (const quest of quests) {
       const formattedEnemy = await this.formatEnemyOrAlly(quest.enemyData);
       formattedEnemy.questData = quest.questData;
       formattedEnemy.questData.name = this.nameService.getName(formattedEnemy.questData);
       this.formattedEnemies.push(formattedEnemy);
+      this.isCollapsedEnemy[i] = true;
+      i++;
     }
 
     this.sortByQuestName(this.formattedEnemies);
@@ -434,5 +462,9 @@ export class OtherUnitComponent implements OnInit {
         return x.localeCompare(y, 'ja');
       }
     });
+  }
+
+  getRoute(route) {
+    return this.navService.getRoute(route);
   }
 }

@@ -30,7 +30,6 @@ export class NavComponent implements OnInit, AfterViewInit {
   inEquipment = false;
   inRaid = false;
   inQuest = false;
-  inIndex = false;
   showBuilderNav = false;
   showOtherNav = false;
   showVersionSelector = false;
@@ -85,7 +84,6 @@ export class NavComponent implements OnInit, AfterViewInit {
         this.inEquipment = false;
         this.inRaid = false;
         this.inQuest = false;
-        this.inIndex = false;
 
         const url = event.url.split('/');
 
@@ -107,8 +105,6 @@ export class NavComponent implements OnInit, AfterViewInit {
           this.inRaid = true;
         } else if (url.length >= 2 && (url[1] === 'quest' || url[1] === 'quests' || (url[1] === 'JP' && (url[2] === 'quest' || url[2] === 'quests')))) {
           this.inQuest = true;
-        } else if (url.length >= 2 && (url[1] === 'index' || (url[1] === 'JP' && url[2] === 'index'))) {
-          this.inIndex = true;
         }
       }
     });

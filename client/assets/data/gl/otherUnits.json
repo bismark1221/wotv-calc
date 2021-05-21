@@ -105,6 +105,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -282,6 +283,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "sterne-leonis-1",
     "attack": {
       "names": {
@@ -416,6 +418,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bomb",
     "attack": {
       "names": {
@@ -555,6 +558,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mediena-1",
     "attack": {
       "names": {
@@ -696,6 +700,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "macherie-hourne-1",
     "limit": {
       "names": {
@@ -915,6 +920,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "zuu",
     "attack": {
       "names": {
@@ -1049,6 +1055,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -1183,6 +1190,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wolf",
     "attack": {
       "names": {
@@ -1324,6 +1332,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "schuzelt-1",
     "attack": {
       "names": {
@@ -1536,6 +1545,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -1587,6 +1597,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "chest",
     "slug": "treasure-chest"
   },
   "UN_LW_E_GLSP": {
@@ -1744,6 +1755,7 @@
     "species": "aquatic",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gil-snapper",
     "attack": {
       "names": {
@@ -1881,6 +1893,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wolf",
     "attack": {
       "names": {
@@ -2027,6 +2040,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ogre",
     "attack": {
       "names": {
@@ -2176,6 +2190,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ogre-chief",
     "attack": {
       "names": {
@@ -2313,6 +2328,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "blind-wolf",
     "attack": {
       "names": {
@@ -2450,6 +2466,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "kaiser-wolf",
     "attack": {
       "names": {
@@ -2599,6 +2616,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "grenade",
     "attack": {
       "names": {
@@ -2748,6 +2766,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bomb",
     "attack": {
       "names": {
@@ -2897,6 +2916,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "balloon",
     "attack": {
       "names": {
@@ -3049,6 +3069,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "earth-elemental",
     "attack": {
       "names": {
@@ -3199,6 +3220,7 @@
     "species": "undead",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "skeleton",
     "attack": {
       "names": {
@@ -3346,6 +3368,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3495,6 +3518,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3645,6 +3669,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3795,6 +3820,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -3965,6 +3991,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "malboro",
     "attack": {
       "names": {
@@ -4117,6 +4144,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "zuu",
     "attack": {
       "names": {
@@ -4269,6 +4297,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fire-elemental",
     "attack": {
       "names": {
@@ -4422,6 +4451,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wind-elemental",
     "attack": {
       "names": {
@@ -4575,6 +4605,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "water-elemental",
     "attack": {
       "names": {
@@ -4728,6 +4759,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ice-elemental",
     "attack": {
       "names": {
@@ -4875,6 +4907,7 @@
     "species": "aquatic",
     "size": 0,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "green-slime",
     "attack": {
       "names": {
@@ -5024,6 +5057,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "dark-elemental",
     "attack": {
       "names": {
@@ -5177,6 +5211,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lightning-elemental",
     "attack": {
       "names": {
@@ -5324,6 +5359,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ahriman",
     "attack": {
       "names": {
@@ -5473,6 +5509,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "light-elemental",
     "attack": {
       "names": {
@@ -5629,6 +5666,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rudra",
     "attack": {
       "names": {
@@ -5784,6 +5822,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tot-aevis",
     "attack": {
       "names": {
@@ -5939,6 +5978,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "floateye",
     "attack": {
       "names": {
@@ -6082,6 +6122,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "cactuar",
     "attack": {
       "names": {
@@ -6234,6 +6275,7 @@
     "species": "undead",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "cursed-bones",
     "attack": {
       "names": {
@@ -6386,6 +6428,7 @@
     "species": "undead",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bloodbones",
     "attack": {
       "names": {
@@ -6533,6 +6576,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6680,6 +6724,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -6833,6 +6878,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "schuzelt-1",
     "attack": {
       "names": {
@@ -6884,6 +6930,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "summoning-circle"
   },
   "UN_LW_E_TH_00_LAN": {
@@ -7000,6 +7047,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7155,6 +7203,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7308,6 +7357,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7455,6 +7505,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -7599,6 +7650,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "macherie-hourne-1",
     "attack": {
       "names": {
@@ -7750,6 +7802,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit-chief",
     "attack": {
       "names": {
@@ -7894,6 +7947,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -8041,6 +8095,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8191,6 +8246,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8344,6 +8400,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "black-mage",
     "attack": {
       "names": {
@@ -8494,6 +8551,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8641,6 +8699,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8791,6 +8850,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -8944,6 +9004,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "white-mage",
     "attack": {
       "names": {
@@ -9091,6 +9152,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -9243,6 +9305,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -9393,6 +9456,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "muraga-fennes",
     "attack": {
       "names": {
@@ -9444,6 +9508,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "switch",
     "slug": "switch-red"
   },
   "UN_LW_E_MONT": {
@@ -9563,6 +9628,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mont-leonis-1",
     "attack": {
       "names": {
@@ -9713,6 +9779,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "lilyth-1",
     "attack": {
       "names": {
@@ -9861,6 +9928,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10008,6 +10076,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10158,6 +10227,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -10304,6 +10374,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10450,6 +10521,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10599,6 +10671,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "hourne-soldier",
     "attack": {
       "names": {
@@ -10746,6 +10819,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -10899,6 +10973,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "adelard-1",
     "attack": {
       "names": {
@@ -11055,6 +11130,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "salire-1",
     "attack": {
       "names": {
@@ -11211,6 +11287,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "helena-leonis-1",
     "attack": {
       "names": {
@@ -11262,6 +11339,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "switch",
     "slug": "switch-yellow"
   },
   "UN_GM_PLACED": {
@@ -11282,6 +11360,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "floor-trap-needles"
   },
   "UN_GM_PLACED_FIRE": {
@@ -11302,6 +11381,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "floor-trap-fire"
   },
   "UN_GM_PLACED_ATK": {
@@ -11322,6 +11402,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "pillar-trap-arrows"
   },
   "UN_LW_E_IGNT_QE": {
@@ -11461,6 +11542,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -11605,6 +11687,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -11749,6 +11832,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -11905,6 +11989,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "gargas",
     "attack": {
       "names": {
@@ -12052,6 +12137,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "shadowlynx-1",
     "attack": {
       "names": {
@@ -12196,6 +12282,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "fennes-shinobi",
     "attack": {
       "names": {
@@ -12346,6 +12433,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12493,6 +12581,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12640,6 +12729,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12789,6 +12879,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -12942,6 +13033,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -13095,6 +13187,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -13245,6 +13338,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "zazan-1",
     "attack": {
       "names": {
@@ -13410,6 +13504,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rairyuu-1",
     "attack": {
       "names": {
@@ -13577,6 +13672,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "sterne-knight-of-ruin-1",
     "attack": {
       "names": {
@@ -13628,6 +13724,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "catapult"
   },
   "UN_LW_E_PR_01_MGK": {
@@ -13744,6 +13841,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -13896,6 +13994,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -14061,6 +14160,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "dorando-1",
     "attack": {
       "names": {
@@ -14229,6 +14329,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -14378,6 +14479,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -14525,6 +14627,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -14672,6 +14775,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -14822,6 +14926,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -14969,6 +15074,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -15118,6 +15224,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -15268,6 +15375,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15415,6 +15523,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15564,6 +15673,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15711,6 +15821,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -15858,6 +15969,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -16007,6 +16119,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -16058,6 +16171,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "snow-fence"
   },
   "UN_LW_E_SRJS": {
@@ -16189,6 +16303,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "serjes-1",
     "attack": {
       "names": {
@@ -16356,6 +16471,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yuni-1",
     "attack": {
       "names": {
@@ -16524,6 +16640,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "severo-1",
     "attack": {
       "names": {
@@ -16671,6 +16788,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -16842,6 +16960,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "glaciela-wezette-1",
     "attack": {
       "names": {
@@ -16991,6 +17110,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -17162,6 +17282,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "camillo",
     "attack": {
       "names": {
@@ -17311,6 +17432,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -17460,6 +17582,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -17607,6 +17730,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -17756,6 +17880,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -17900,6 +18025,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -18047,6 +18173,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -18197,6 +18324,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -18362,6 +18490,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "xiza-1",
     "attack": {
       "names": {
@@ -18533,6 +18662,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "vistralle-1",
     "attack": {
       "names": {
@@ -18584,6 +18714,7 @@
     "species": "",
     "size": 10,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "carriage"
   },
   "UN_LW_E_SO_02_NIN": {
@@ -18697,6 +18828,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -18844,6 +18976,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -18994,6 +19127,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -19141,6 +19275,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -19290,6 +19425,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -19440,6 +19576,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -19608,6 +19745,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "vadim-1",
     "attack": {
       "names": {
@@ -19770,6 +19908,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "deah",
     "attack": {
       "names": {
@@ -19938,6 +20077,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "oldoa-1",
     "attack": {
       "names": {
@@ -20100,6 +20240,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "robb-hourne-1",
     "attack": {
       "names": {
@@ -20151,6 +20292,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "powder-keg-l"
   },
   "UN_LW_E_SO_02_MGK": {
@@ -20267,6 +20409,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -20416,6 +20559,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -20566,6 +20710,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -20617,6 +20762,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "torch"
   },
   "UN_GM_OPOT_01": {
@@ -20637,6 +20783,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "oil-pot"
   },
   "UN_LW_E_SKEL_02_2": {
@@ -20764,6 +20911,7 @@
     "species": "undead",
     "size": 0,
     "realMaxLevel": 80,
+    "type": "enemy",
     "slug": "cursed-bones",
     "attack": {
       "names": {
@@ -20923,6 +21071,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -21071,6 +21220,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-shinobi",
     "attack": {
       "names": {
@@ -21221,6 +21371,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -21391,6 +21542,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "gilgamesh-1",
     "limit": {
       "names": {
@@ -21494,6 +21646,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "damage-zone"
   },
   "UN_LW_E_VKTR": {
@@ -21631,6 +21784,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "viktora-1",
     "attack": {
       "names": {
@@ -21801,6 +21955,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "engelbert-1",
     "attack": {
       "names": {
@@ -21972,6 +22127,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "sterne-knight-of-ruin-1",
     "attack": {
       "names": {
@@ -22125,6 +22281,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -22280,6 +22437,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lamia-queen",
     "attack": {
       "names": {
@@ -22465,6 +22623,7 @@
     "species": "plant",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ochu",
     "attack": {
       "names": {
@@ -22516,6 +22675,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "great-shield"
   },
   "UN_GM_WALL": {
@@ -22536,6 +22696,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "breakable-wall"
   },
   "UN_LW_E_SNAK": {
@@ -22666,6 +22827,7 @@
     "species": "arcana",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "arcane-serpent",
     "attack": {
       "names": {
@@ -22813,6 +22975,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -23010,6 +23173,7 @@
     "species": "arcana, beast",
     "size": 2,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "crystalite-beast-muraga",
     "attack": {
       "names": {
@@ -23208,6 +23372,7 @@
     "species": "arcana, beast",
     "size": 2,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "former-right-arm",
     "attack": {
       "names": {
@@ -23402,6 +23567,7 @@
     "species": "arcana, beast",
     "size": 2,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "former-right-leg",
     "attack": {
       "names": {
@@ -23596,6 +23762,7 @@
     "species": "arcana, beast",
     "size": 2,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "former-left-leg",
     "attack": {
       "names": {
@@ -23790,6 +23957,7 @@
     "species": "arcana, beast",
     "size": 2,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "former-left-arm",
     "attack": {
       "names": {
@@ -23937,6 +24105,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -24084,6 +24253,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -24233,6 +24403,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -24284,6 +24455,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "collapsed-guard-tower-1"
   },
   "UN_GM_SCF1": {
@@ -24304,6 +24476,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "collapsed-guard-tower-2"
   },
   "UN_GM_SCF2": {
@@ -24324,6 +24497,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "collapsed-guard-tower-3"
   },
   "UN_LW_E_MABR_01": {
@@ -24463,6 +24637,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "land-malboro",
     "attack": {
       "names": {
@@ -24612,6 +24787,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bloody-eye",
     "attack": {
       "names": {
@@ -24759,6 +24935,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -24906,6 +25083,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -25052,6 +25230,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -25200,6 +25379,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -25347,6 +25527,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -25503,6 +25684,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -25650,6 +25832,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -25800,6 +25983,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -25950,6 +26134,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit-chief",
     "attack": {
       "names": {
@@ -26097,6 +26282,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -26248,6 +26434,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -26398,6 +26585,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "wezette-soldier",
     "attack": {
       "names": {
@@ -26548,6 +26736,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -26682,6 +26871,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tot-aevis",
     "attack": {
       "names": {
@@ -26828,6 +27018,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mindflayer",
     "attack": {
       "names": {
@@ -26976,6 +27167,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -27123,6 +27315,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -27274,6 +27467,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -27424,6 +27618,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -27569,6 +27764,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gouga-shinobi",
     "attack": {
       "names": {
@@ -27734,6 +27930,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sterne-leonis-1",
     "attack": {
       "names": {
@@ -27902,6 +28099,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -28064,6 +28262,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "oelde-leonis-1",
     "attack": {
       "names": {
@@ -28219,6 +28418,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "learte-1",
     "attack": {
       "names": {
@@ -28377,6 +28577,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lamia",
     "attack": {
       "names": {
@@ -28547,6 +28748,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -28741,6 +28943,7 @@
     "species": "dragon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -28935,6 +29138,7 @@
     "species": "dragon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -29129,6 +29333,7 @@
     "species": "stone, demon",
     "size": 13,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "demon-wall",
     "attack": {
       "names": {
@@ -29311,6 +29516,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golbez",
     "attack": {
       "names": {
@@ -29496,6 +29702,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golbez",
     "attack": {
       "names": {
@@ -29687,6 +29894,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "defender-z",
     "attack": {
       "names": {
@@ -29881,6 +30089,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "dark-flan",
     "attack": {
       "names": {
@@ -30075,6 +30284,7 @@
     "species": "undead",
     "size": 14,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -30280,6 +30490,7 @@
     "species": "undead",
     "size": 14,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -30464,6 +30675,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "death-machine",
     "attack": {
       "names": {
@@ -30620,6 +30832,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "yshtola-1",
     "attack": {
       "names": {
@@ -30768,6 +30981,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "thancred-1",
     "attack": {
       "names": {
@@ -30950,6 +31164,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -31135,6 +31350,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -31273,6 +31489,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -31423,6 +31640,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -31593,6 +31811,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mustadio-1",
     "attack": {
       "names": {
@@ -31763,6 +31982,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "agrias-1",
     "attack": {
       "names": {
@@ -31915,6 +32135,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "chocobo",
     "attack": {
       "names": {
@@ -32072,6 +32293,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "black-chocobo",
     "attack": {
       "names": {
@@ -32229,6 +32451,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "red-chocobo",
     "attack": {
       "names": {
@@ -32397,6 +32620,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "ramza-1",
     "limit": {
       "names": {
@@ -32607,6 +32831,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gaffgarion-1",
     "attack": {
       "names": {
@@ -32789,6 +33014,7 @@
     "species": "netherBeast",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "cuchulainn",
     "attack": {
       "names": {
@@ -32990,6 +33216,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golbez",
     "attack": {
       "names": {
@@ -33169,6 +33396,7 @@
     "species": "machine",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "small-stubby",
     "attack": {
       "names": {
@@ -33350,6 +33578,7 @@
     "species": "machine",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "eve",
     "attack": {
       "names": {
@@ -33531,6 +33760,7 @@
     "species": "machine",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "adam",
     "attack": {
       "names": {
@@ -33728,6 +33958,7 @@
     "species": "undead",
     "size": 14,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yunalesca",
     "attack": {
       "names": {
@@ -33907,6 +34138,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "nivlu-1",
     "attack": {
       "names": {
@@ -34090,6 +34322,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "shinobi",
     "attack": {
       "names": {
@@ -34261,6 +34494,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "loreila-1",
     "attack": {
       "names": {
@@ -34435,6 +34669,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "skahal-1",
     "attack": {
       "names": {
@@ -34583,6 +34818,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -34733,6 +34969,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -34881,6 +35118,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -35052,6 +35290,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "creysse-1",
     "attack": {
       "names": {
@@ -35200,6 +35439,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ogre",
     "attack": {
       "names": {
@@ -35347,6 +35587,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -35521,6 +35762,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "dorando-1",
     "attack": {
       "names": {
@@ -35698,6 +35940,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "raviesse-1",
     "attack": {
       "names": {
@@ -35865,6 +36108,7 @@
     "species": "plant",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "magenta-malboro",
     "attack": {
       "names": {
@@ -36035,6 +36279,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "great-malboro",
     "attack": {
       "names": {
@@ -36202,6 +36447,7 @@
     "species": "plant",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "malboro-matriarch",
     "attack": {
       "names": {
@@ -36387,6 +36633,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fenrir",
     "attack": {
       "names": {
@@ -36572,6 +36819,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -36772,6 +37020,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "chocolate-flan",
     "attack": {
       "names": {
@@ -36960,6 +37209,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "shiva",
     "attack": {
       "names": {
@@ -37136,6 +37386,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -37301,6 +37552,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "yerma-1",
     "attack": {
       "names": {
@@ -37475,6 +37727,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "nasha-1",
     "attack": {
       "names": {
@@ -37646,6 +37899,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "etre-1",
     "attack": {
       "names": {
@@ -37794,6 +38048,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -37945,6 +38200,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -38096,6 +38352,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -38244,6 +38501,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -38392,6 +38650,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -38571,6 +38830,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lucia-1",
     "attack": {
       "names": {
@@ -38741,6 +39001,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "tyrrell-1",
     "attack": {
       "names": {
@@ -38906,6 +39167,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "doluza",
     "attack": {
       "names": {
@@ -39071,6 +39333,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "owe-1",
     "attack": {
       "names": {
@@ -39241,6 +39504,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "dark-steel-daemon",
     "attack": {
       "names": {
@@ -39292,6 +39556,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "rundall-cannon"
   },
   "UN_LW_E_RARD": {
@@ -39432,6 +39697,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "rhaldor-1",
     "attack": {
       "names": {
@@ -39574,6 +39840,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -39748,6 +40015,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "galzahk",
     "attack": {
       "names": {
@@ -39898,6 +40166,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fennes-soldier",
     "attack": {
       "names": {
@@ -40072,6 +40341,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mediena-1",
     "attack": {
       "names": {
@@ -40237,6 +40507,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "frederika-1",
     "attack": {
       "names": {
@@ -40420,6 +40691,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -40609,6 +40881,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -40792,6 +41065,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -40990,6 +41264,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -41202,6 +41477,7 @@
     "species": "aquatic",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gil-snapper",
     "attack": {
       "names": {
@@ -41388,6 +41664,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "sanctum-monk",
     "attack": {
       "names": {
@@ -41537,6 +41814,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ogre-mage",
     "attack": {
       "names": {
@@ -41707,6 +41985,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -41872,6 +42151,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ramza-1",
     "limit": {
       "names": {
@@ -42087,6 +42367,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lucia-1",
     "limit": {
       "names": {
@@ -42313,6 +42594,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "frederika-1",
     "limit": {
       "names": {
@@ -42533,6 +42815,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -42754,6 +43037,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "engelbert-1",
     "limit": {
       "names": {
@@ -42958,6 +43242,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "miranda-1",
     "limit": {
       "names": {
@@ -43199,6 +43484,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -43378,6 +43664,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -43548,6 +43835,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "great-malboro",
     "attack": {
       "names": {
@@ -43721,6 +44009,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -43876,6 +44165,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lamia-matriarch",
     "attack": {
       "names": {
@@ -44023,6 +44313,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -44196,6 +44487,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ildyra-1",
     "attack": {
       "names": {
@@ -44367,6 +44659,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "khury-wezette-1",
     "attack": {
       "names": {
@@ -44535,6 +44828,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "luartha-1",
     "attack": {
       "names": {
@@ -44702,6 +44996,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yerma-1",
     "attack": {
       "names": {
@@ -44849,6 +45144,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -44998,6 +45294,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -45166,6 +45463,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "whisper-1",
     "attack": {
       "names": {
@@ -45334,6 +45632,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "garvall-1",
     "attack": {
       "names": {
@@ -45506,6 +45805,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "kilphe-1",
     "attack": {
       "names": {
@@ -45674,6 +45974,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "louelle-1",
     "attack": {
       "names": {
@@ -45863,6 +46164,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -46051,6 +46353,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -46242,6 +46545,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golem",
     "attack": {
       "names": {
@@ -46444,6 +46748,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golem",
     "attack": {
       "names": {
@@ -46637,6 +46942,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "siren",
     "attack": {
       "names": {
@@ -46825,6 +47131,7 @@
     "species": "plant",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "malboro",
     "attack": {
       "names": {
@@ -47013,6 +47320,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -47204,6 +47512,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "behemoth",
     "attack": {
       "names": {
@@ -47382,6 +47691,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "greater-behemoth",
     "attack": {
       "names": {
@@ -47555,6 +47865,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -47746,6 +48057,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ramuh",
     "attack": {
       "names": {
@@ -47943,6 +48255,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "odin",
     "attack": {
       "names": {
@@ -48143,6 +48456,7 @@
     "species": "plant",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ochu",
     "attack": {
       "names": {
@@ -48331,6 +48645,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tetra-sylphid",
     "attack": {
       "names": {
@@ -48528,6 +48843,7 @@
     "species": "dragon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -48716,6 +49032,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "diabolos",
     "attack": {
       "names": {
@@ -48907,6 +49224,7 @@
     "species": "demon",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mindflayer",
     "attack": {
       "names": {
@@ -49092,6 +49410,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "fenrir",
     "attack": {
       "names": {
@@ -49289,6 +49608,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "titan",
     "attack": {
       "names": {
@@ -49486,6 +49806,7 @@
     "species": "demon, fairy",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bloody-moon",
     "attack": {
       "names": {
@@ -49683,6 +50004,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "aigaion",
     "attack": {
       "names": {
@@ -49883,6 +50205,7 @@
     "species": "bird",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "chocobo",
     "attack": {
       "names": {
@@ -50083,6 +50406,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -50283,6 +50607,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leviathan",
     "attack": {
       "names": {
@@ -50483,6 +50808,7 @@
     "species": "bird",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "glacial",
     "attack": {
       "names": {
@@ -50674,6 +51000,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "typhon",
     "attack": {
       "names": {
@@ -50868,6 +51195,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "marilith",
     "attack": {
       "names": {
@@ -51062,6 +51390,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bahamut",
     "attack": {
       "names": {
@@ -51244,6 +51573,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "omega",
     "attack": {
       "names": {
@@ -51426,6 +51756,7 @@
     "species": "netherBeast, bird",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "phoenix",
     "attack": {
       "names": {
@@ -51617,6 +51948,7 @@
     "species": "netherBeast, bird",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "phoenix",
     "attack": {
       "names": {
@@ -51814,6 +52146,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "chocolate-flan",
     "attack": {
       "names": {
@@ -52032,6 +52365,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "white-marshmallow",
     "attack": {
       "names": {
@@ -52186,6 +52520,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 150,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -52377,6 +52712,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 80,
+    "type": "enemy",
     "slug": "death-machine",
     "attack": {
       "names": {
@@ -52576,6 +52912,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "ifrit",
     "attack": {
       "names": {
@@ -52717,6 +53054,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "black-mage",
     "attack": {
       "names": {
@@ -52914,6 +53252,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -53102,6 +53441,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -53299,6 +53639,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -53439,6 +53780,7 @@
     "species": "beast",
     "size": 0,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "kaiser-wolf",
     "attack": {
       "names": {
@@ -53636,6 +53978,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -53783,6 +54126,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -54001,6 +54345,7 @@
     "species": "",
     "size": 1,
     "realMaxLevel": 80,
+    "type": "enemy",
     "slug": "forgiven-dissonance",
     "attack": {
       "names": {
@@ -54154,6 +54499,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 80,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -54372,6 +54718,7 @@
     "species": "dragon",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "two-headed-dragon",
     "attack": {
       "names": {
@@ -54536,6 +54883,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "light-elemental",
     "attack": {
       "names": {
@@ -54758,6 +55106,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "flan-princess",
     "attack": {
       "names": {
@@ -54910,6 +55259,7 @@
     "species": "aquatic",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "green-slime",
     "attack": {
       "names": {
@@ -55104,6 +55454,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "siren",
     "attack": {
       "names": {
@@ -55271,6 +55622,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "water-elemental",
     "attack": {
       "names": {
@@ -55487,6 +55839,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -55678,6 +56031,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "metal-cactuar",
     "attack": {
       "names": {
@@ -55875,6 +56229,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "golem",
     "attack": {
       "names": {
@@ -56042,6 +56397,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "earth-elemental",
     "attack": {
       "names": {
@@ -56240,6 +56596,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -56407,6 +56764,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "ice-elemental",
     "attack": {
       "names": {
@@ -56605,6 +56963,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "diabolos",
     "attack": {
       "names": {
@@ -56766,6 +57125,7 @@
     "species": "fairy",
     "size": 0,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "dark-elemental",
     "attack": {
       "names": {
@@ -56967,6 +57327,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "flan-princess",
     "attack": {
       "names": {
@@ -57167,6 +57528,7 @@
     "species": "bird",
     "size": 1,
     "realMaxLevel": 100,
+    "type": "enemy",
     "slug": "glacial",
     "attack": {
       "names": {
@@ -57364,6 +57726,7 @@
     "species": "dragon",
     "size": 0,
     "realMaxLevel": 10,
+    "type": "enemy",
     "slug": "mini-dragon",
     "attack": {
       "names": {
@@ -57505,6 +57868,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -57721,6 +58085,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -57894,6 +58259,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -58035,6 +58401,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "sterne-leonis-1",
     "limit": {
       "names": {
@@ -58238,6 +58605,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "lilyth-1",
     "attack": {
       "names": {
@@ -58405,6 +58773,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "baelo-1",
     "attack": {
       "names": {
@@ -58577,6 +58946,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -58715,6 +59085,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -58853,6 +59224,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -58996,6 +59368,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -59216,6 +59589,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "miche-1",
     "attack": {
       "names": {
@@ -59391,6 +59765,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "severo-1",
     "attack": {
       "names": {
@@ -59582,6 +59957,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -59723,6 +60099,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "aileen-1",
     "limit": {
       "names": {
@@ -59947,6 +60324,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "macherie-hourne-1",
     "attack": {
       "names": {
@@ -60085,6 +60463,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "bandit",
     "attack": {
       "names": {
@@ -60226,6 +60605,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "learte-1",
     "attack": {
       "names": {
@@ -60404,6 +60784,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "kitone-1",
     "attack": {
       "names": {
@@ -60538,6 +60919,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ogre",
     "attack": {
       "names": {
@@ -60679,6 +61061,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "ayaka-1",
     "limit": {
       "names": {
@@ -60820,6 +61203,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "crystal"
   },
   "UN_LW_BGN_ELDE": {
@@ -60930,6 +61314,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "ally",
     "slug": "oelde-leonis-1",
     "limit": {
       "names": {
@@ -61179,6 +61564,7 @@
     "species": "beast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "behemoth-king",
     "attack": {
       "names": {
@@ -61334,6 +61720,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tonberry",
     "attack": {
       "names": {
@@ -61502,6 +61889,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gilgamesh-1",
     "limit": {
       "names": {
@@ -61731,6 +62119,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mont-leonis-1",
     "limit": {
       "names": {
@@ -61939,6 +62328,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "vinera-fennes-1",
     "attack": {
       "names": {
@@ -62107,6 +62497,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rain-1",
     "attack": {
       "names": {
@@ -62283,6 +62674,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "viktora-1",
     "attack": {
       "names": {
@@ -62456,6 +62848,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ayaka-1",
     "limit": {
       "names": {
@@ -62684,6 +63077,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ildyra-1",
     "attack": {
       "names": {
@@ -62855,6 +63249,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "kilphe-1",
     "limit": {
       "names": {
@@ -63074,6 +63469,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lorenzo-1",
     "attack": {
       "names": {
@@ -63244,6 +63640,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "ramada-1",
     "attack": {
       "names": {
@@ -63408,6 +63805,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "oelde-leonis-1",
     "limit": {
       "names": {
@@ -63615,6 +64013,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "aileen-1",
     "limit": {
       "names": {
@@ -63833,6 +64232,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lasswell-1",
     "limit": {
       "names": {
@@ -64051,6 +64451,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "glaciela-wezette-1",
     "limit": {
       "names": {
@@ -64275,6 +64676,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rain-1",
     "limit": {
       "names": {
@@ -64498,6 +64900,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "little-leela-halloween-1",
     "limit": {
       "names": {
@@ -64762,6 +65165,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "helena-leonis-1",
     "attack": {
       "names": {
@@ -64927,6 +65331,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "miranda-1",
     "limit": {
       "names": {
@@ -65145,6 +65550,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "mediena-1",
     "limit": {
       "names": {
@@ -65366,6 +65772,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "howlet-1",
     "limit": {
       "names": {
@@ -65579,6 +65986,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "yerma-1",
     "limit": {
       "names": {
@@ -65685,6 +66093,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "crystal"
   },
   "UN_LW_E_RU_02_MNK": {
@@ -65805,6 +66214,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rundall-soldier",
     "attack": {
       "names": {
@@ -66002,6 +66412,7 @@
     "species": "plant, metal",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "gold-cactuar",
     "attack": {
       "names": {
@@ -66139,6 +66550,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "titan",
     "attack": {
       "names": {
@@ -66273,6 +66685,7 @@
     "species": "netherBeast",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "odin",
     "attack": {
       "names": {
@@ -66420,6 +66833,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -66473,6 +66887,7 @@
     "species": "",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "object",
     "slug": "summoning-circle-monster-annihilation"
   },
   "UN_LW_P_RART": {
@@ -66611,6 +67026,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "learte-1",
     "attack": {
       "names": {
@@ -66798,6 +67214,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -66942,6 +67359,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "rubeus-soldier",
     "attack": {
       "names": {
@@ -67139,6 +67557,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {
@@ -67301,6 +67720,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "aileen-1",
     "attack": {
       "names": {
@@ -67451,6 +67871,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leonis-soldier",
     "attack": {
       "names": {
@@ -67616,6 +68037,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "baelo-1",
     "attack": {
       "names": {
@@ -67787,6 +68209,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "lorenzo-1",
     "attack": {
       "names": {
@@ -67963,6 +68386,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "dario-hourne-1",
     "attack": {
       "names": {
@@ -68127,6 +68551,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "miranda-1",
     "attack": {
       "names": {
@@ -68295,6 +68720,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "tyytas-1",
     "attack": {
       "names": {
@@ -68435,6 +68861,7 @@
     "species": "aquatic",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "leviathan",
     "attack": {
       "names": {
@@ -68624,6 +69051,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "seymore-1",
     "attack": {
       "names": {
@@ -68804,6 +69232,7 @@
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "zazan-1",
     "attack": {
       "names": {
@@ -68980,6 +69409,7 @@
     "species": "machine",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "aigaion",
     "attack": {
       "names": {
@@ -69144,6 +69574,7 @@
     "species": "demon",
     "size": 1,
     "realMaxLevel": 99,
+    "type": "enemy",
     "slug": "iron-giant",
     "attack": {
       "names": {

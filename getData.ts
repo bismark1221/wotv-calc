@@ -4631,26 +4631,26 @@ export class JsonService {
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
-            this.addOtherUnit(enemy);
+            this.addOtherUnit(enemy, false, 'ally');
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true);
+              this.addOtherUnit(enemy, true, 'chest');
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true);
+              this.addOtherUnit(enemy, true, 'switch');
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true);
+              this.addOtherUnit(enemy, true, 'object');
             } else {
               if (!enemy.hasBody) {
                 quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               }
               quest.enemies.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy);
+              this.addOtherUnit(enemy, false, 'enemy');
             }
           }
         });
@@ -4806,7 +4806,7 @@ export class JsonService {
     }
   }
 
-  private addOtherUnit(otherUnit, object = false) {
+  private addOtherUnit(otherUnit, object, type) {
     const dataId = otherUnit.iname;
 
     if (this[this.version].units[dataId] && !this[this.version].wotvOtherUnits[dataId]) {
@@ -4822,7 +4822,8 @@ export class JsonService {
         image: null,
         species: '',
         size: rawUnit.size ? rawUnit.size : 0,
-        realMaxLevel: 99
+        realMaxLevel: 99,
+        type: type
       };
 
       if (this[this.version].grows[rawUnit.grow]) {
