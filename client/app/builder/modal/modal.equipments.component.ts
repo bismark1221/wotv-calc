@@ -46,8 +46,6 @@ export class ModalEquipmentsComponent implements OnInit {
     await this.getEquipments();
     await this.getAcquisitionTypes();
 
-    console.log(this.acquisitionTypes)
-
     if (this.equipment) {
       this.equipment = await this.equipmentService.selectEquipmentForBuilder(this.equipment.dataId, this.equipmentService.getSavableData(this.equipment));
     }
