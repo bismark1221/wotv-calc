@@ -169,7 +169,7 @@ export class Equipment {
 
   changeLevel(skillService, rangeService) {
     if (this.growIds.length === 1 && this.grows[this.growIds[0]].dataId === 'ARTIFACT_50') {
-      Object.keys(this.stats).forEach(statType => {
+      this.statsTypes.forEach(statType => {
         const minValue = this.stats[statType].min;
         const maxValue = this.grows[this.growIds[0]].stats[statType][this.grows[this.growIds[0]].stats[statType].length - 1];
         this.stats[statType].selected = Math.floor(minValue + ((maxValue - minValue) / (this.maxLevel - 1) * (this.level - 1)));
@@ -219,7 +219,7 @@ export class Equipment {
       this.upgrade = 5;
     }
 
-    Object.keys(this.stats).forEach(statType => {
+    this.statsTypes.forEach(statType => {
       this.stats[statType].selected = this.tableStats[statType][this.tableStats[statType].length - 1];
     });
 
@@ -235,7 +235,7 @@ export class Equipment {
     this.level = 1;
     this.upgrade = 0;
 
-    Object.keys(this.stats).forEach(statType => {
+    this.statsTypes.forEach(statType => {
       this.stats[statType].selected = this.tableStats[statType][0];
     });
 
