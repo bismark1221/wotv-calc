@@ -8696,7 +8696,7 @@
             },
             {
               "type": "IMMOBILIZE_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 3,
               "target": "all",

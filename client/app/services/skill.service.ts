@@ -14,6 +14,7 @@ export class SkillService {
     '0': '',
     'fixe': '',
     'percent': '%',
+    'apply': '%',
     'resistance': '%',
     'nullify': 'x',
     'dispel': 'x',
@@ -1175,6 +1176,10 @@ export class SkillService {
             }
           }
 
+          if (ailment === 'ALL_AILMENTS') {
+            ailment = 'All ailments expect charm, slow, stop and doom';
+          }
+
           html += this.upperCaseFirst(ailment.replace('_', ' '));
         });
         break;
@@ -1182,24 +1187,25 @@ export class SkillService {
         html = 'The chain break if the combo count is greater than 5 but increase modifier by ' + effect.value + '%';
         break;
       case 'REFLECT' :
-        html = 'Reflect magic skills' + this.getTurns(effect);
-        skill.effects.forEach(otherEffect => {
-          if (otherEffect.type === 'CONDITION_FOR_REFLECT') {
-            html = html + this.formatConditions(otherEffect.calcType);
-          }
-        });
+        if (effect.calcType !== 'dispel') {
+          html = 'Reflect magic skills' + this.getTurns(effect);
+        } else {
+          html = 'Dispel Reflect';
+        }
         break;
-      case 'CONDITION_FOR_REFLECT' :
+      case 'UPGRADE_SKILL' :
         html = '';
         getTarget = false;
+        if (effect.calcType !== 'apply') {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
         break;
-      case 'CONDITION_FOR_UPGRADE_SKILL' :
+      case 'GRANT_BUFF' :
         html = '';
         getTarget = false;
-        break;
-      case 'CONDITION_FOR_GRANT_BUFF' :
-        html = 'Next effects will be applied' + this.formatConditions(effect.calcType);
-        getTarget = false;
+        if (effect.calcType !== 'apply') {
+          console.log('@@@@@ ' + unit.names.en + ' -- skill : ' + skill.dataId + ' -- WEIRD calc type...');
+        }
         break;
       default:
         html = '??? Effect Not Translated - If you have details don\'t hesitate to contact me ???';

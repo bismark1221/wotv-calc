@@ -21558,7 +21558,7 @@
           "type": "SLOW_ATK",
           "minValue": 30,
           "maxValue": 50,
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 30,
           "turn": 3,
           "target": "all",
@@ -33974,7 +33974,7 @@
           "type": "POISON_ATK",
           "minValue": 5,
           "maxValue": 15,
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 25,
           "turn": 3,
           "target": "ennemySide",
@@ -42381,7 +42381,7 @@
       "effects": [
         {
           "type": "DISABLE_ATK",
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 30,
           "turn": 3,
           "target": "all",
@@ -42389,7 +42389,7 @@
         },
         {
           "type": "IMMOBILIZE_ATK",
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 30,
           "turn": 3,
           "target": "all",
@@ -43256,7 +43256,7 @@
       "effects": [
         {
           "type": "CONFUSION_ATK",
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 67,
           "turn": 3,
           "target": "target",
@@ -61905,7 +61905,7 @@
           "type": "SLOW_ATK",
           "minValue": 30,
           "maxValue": 50,
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 30,
           "turn": 3,
           "target": "all",
@@ -65345,7 +65345,7 @@
       "effects": [
         {
           "type": "CONFUSION_ATK",
-          "calcType": "percent",
+          "calcType": "apply",
           "rate": 67,
           "turn": 3,
           "target": "target",

@@ -892,7 +892,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -991,7 +991,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -1852,7 +1852,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -1889,7 +1889,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -1928,7 +1928,7 @@
         "type": "BLIND_ATK",
         "minValue": 10,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -1960,7 +1960,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -2084,7 +2084,7 @@
       {
         "type": "DISABLE_ATK",
         "maxValue": 0,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -2128,7 +2128,7 @@
       {
         "type": "IMMOBILIZE_ATK",
         "maxValue": 0,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -2437,7 +2437,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 5,
         "target": "all",
@@ -2832,7 +2832,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 5,
         "target": "all",
@@ -3013,7 +3013,7 @@
         "type": "SLOW_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -3209,7 +3209,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -3309,7 +3309,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -3348,7 +3348,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -3397,7 +3397,7 @@
         "type": "BLIND_ATK",
         "minValue": 50,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3405,7 +3405,7 @@
       },
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3413,7 +3413,7 @@
       },
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3421,7 +3421,7 @@
       },
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3429,7 +3429,7 @@
       },
       {
         "type": "TOAD_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3437,7 +3437,7 @@
       },
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -3473,7 +3473,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 40,
         "turn": 3,
         "target": "all",
@@ -4098,7 +4098,7 @@
     "effects": [
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 20,
         "turn": 1,
         "target": "ennemySide",
@@ -4293,7 +4293,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 5,
         "target": "ennemySide",
@@ -4379,7 +4379,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 60,
         "turn": 3,
         "target": "all",
@@ -4717,7 +4717,7 @@
         "type": "PROTECT_ATK",
         "minValue": 10,
         "maxValue": 25,
-        "calcType": "percent",
+        "calcType": "apply",
         "turn": 3,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -6003,7 +6003,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -6581,7 +6581,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -6962,7 +6962,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -7035,7 +7035,7 @@
     "effects": [
       {
         "type": "MAGIC_EVADE",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_REACTION"
@@ -8237,7 +8237,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 30,
         "target": "all",
@@ -8288,7 +8288,7 @@
       },
       {
         "type": "CRITIC_GUARENTED",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "turn": 1,
         "target": "self",
@@ -8716,7 +8716,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 100,
         "turn": 3,
         "target": "all",
@@ -8827,7 +8827,7 @@
         "type": "HASTE_ATK",
         "minValue": 20,
         "maxValue": 42,
-        "calcType": "percent",
+        "calcType": "apply",
         "turn": 3,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -8901,7 +8901,7 @@
         "type": "SLOW_ATK",
         "minValue": 10,
         "maxValue": 30,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -8986,7 +8986,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -9279,7 +9279,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -9747,7 +9747,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -9898,7 +9898,7 @@
       },
       {
         "type": "BERSERK_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "self",
@@ -10048,7 +10048,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 5,
         "target": "all",
@@ -10239,7 +10239,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -10309,7 +10309,7 @@
     "effects": [
       {
         "type": "IGNORE_FATAL",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -10391,7 +10391,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -10868,14 +10868,14 @@
     "effects": [
       {
         "type": "PHYSIC_EVADE",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_REACTION"
       },
       {
         "type": "MAGIC_EVADE",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_REACTION"
@@ -10925,7 +10925,7 @@
     "effects": [
       {
         "type": "CRITIC_GUARENTED",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "condition": "BEHIND",
         "target": "self",
@@ -11105,7 +11105,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -11302,7 +11302,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -11608,7 +11608,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -11787,7 +11787,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -12483,7 +12483,7 @@
     "effects": [
       {
         "type": "CHARM_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -13058,7 +13058,7 @@
         "type": "HASTE_ATK",
         "minValue": 20,
         "maxValue": 42,
-        "calcType": "percent",
+        "calcType": "apply",
         "turn": 3,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -13371,7 +13371,7 @@
         "type": "SLOW_ATK",
         "minValue": 30,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -14243,7 +14243,7 @@
       },
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "ennemySide",
@@ -14281,7 +14281,7 @@
     "effects": [
       {
         "type": "CHARM_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "ennemySide",
@@ -14371,7 +14371,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -14424,7 +14424,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -14432,7 +14432,7 @@
       },
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -14440,7 +14440,7 @@
       },
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -14448,7 +14448,7 @@
       },
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 30,
         "target": "target",
@@ -14527,7 +14527,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -14666,7 +14666,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "ennemySide",
@@ -14778,7 +14778,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -14957,7 +14957,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "ennemySide",
@@ -15005,7 +15005,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "ennemySide",
@@ -15073,7 +15073,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -15421,7 +15421,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -15603,7 +15603,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -15785,7 +15785,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -16179,7 +16179,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -16319,7 +16319,7 @@
     "effects": [
       {
         "type": "IGNORE_FATAL",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -16614,7 +16614,7 @@
     "effects": [
       {
         "type": "PHYSIC_EVADE",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self",
         "timing": "SKILL_REACTION"
@@ -16639,7 +16639,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -16931,7 +16931,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -16977,7 +16977,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -17057,7 +17057,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "ennemySide",
@@ -17343,7 +17343,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 15,
         "turn": 3,
         "target": "all",
@@ -18138,7 +18138,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "ennemySide",
@@ -18327,7 +18327,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -18399,7 +18399,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -18515,7 +18515,7 @@
     "effects": [
       {
         "type": "INSTANT_DEATH_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "target": "target",
         "timing": "SKILL_AFTER"
@@ -19192,7 +19192,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -19367,7 +19367,7 @@
         "type": "BLIND_ATK",
         "minValue": 50,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -19375,7 +19375,7 @@
       },
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -19591,7 +19591,7 @@
         "type": "GRADUAL_PETRIFY_ATK",
         "minValue": 3,
         "maxValue": 3,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 100,
         "turn": 4,
         "target": "ennemySide",
@@ -19804,7 +19804,7 @@
     "effects": [
       {
         "type": "INSTANT_DEATH_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "target": "ennemySide",
         "timing": "SKILL_AFTER"
@@ -20395,7 +20395,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -20637,7 +20637,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -20811,7 +20811,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 30,
         "target": "target",
@@ -21100,7 +21100,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -21130,7 +21130,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -21315,7 +21315,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -21389,7 +21389,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -21519,7 +21519,7 @@
     "effects": [
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 1,
         "target": "ennemySide",
@@ -21684,7 +21684,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -21852,7 +21852,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -21965,7 +21965,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -22275,7 +22275,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 5,
         "target": "ennemySide",
@@ -22317,7 +22317,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "ennemySide",
@@ -22356,7 +22356,7 @@
         "type": "SLOW_ATK",
         "minValue": 30,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "ennemySide",
@@ -22408,7 +22408,7 @@
       },
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "target": "ennemySide",
         "timing": "SKILL_AFTER"
@@ -22462,7 +22462,7 @@
     "effects": [
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 1,
         "target": "all",
@@ -22505,7 +22505,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -22548,7 +22548,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -22635,7 +22635,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 30,
         "target": "all",
@@ -22682,7 +22682,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -23280,7 +23280,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -23492,7 +23492,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -23798,7 +23798,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -24501,7 +24501,7 @@
         "type": "SHELL_ATK",
         "minValue": 10,
         "maxValue": 25,
-        "calcType": "percent",
+        "calcType": "apply",
         "turn": 3,
         "target": "selfSide",
         "timing": "SKILL_AFTER"
@@ -24780,7 +24780,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -24943,7 +24943,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 1,
         "target": "all",
@@ -25079,7 +25079,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 20,
         "turn": 30,
         "target": "target",
@@ -25301,7 +25301,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 15,
         "turn": 3,
         "target": "target",
@@ -25580,7 +25580,7 @@
     "effects": [
       {
         "type": "CHARM_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 3,
         "target": "target",
@@ -25737,7 +25737,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 30,
         "target": "all",
@@ -25875,7 +25875,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "ennemySide",
@@ -26010,7 +26010,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -26926,7 +26926,7 @@
     "effects": [
       {
         "type": "DISABLE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -26934,7 +26934,7 @@
       },
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -27304,7 +27304,7 @@
         "type": "HASTE_ATK",
         "minValue": 20,
         "maxValue": 42,
-        "calcType": "percent",
+        "calcType": "apply",
         "turn": 3,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -27600,7 +27600,7 @@
       {
         "type": "FLOAT_ATK",
         "maxValue": 0,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "target": "self"
       },
@@ -28109,7 +28109,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -28210,7 +28210,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -28374,7 +28374,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -28755,7 +28755,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -28908,7 +28908,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -28947,7 +28947,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 20,
         "turn": 3,
         "target": "all",
@@ -29065,7 +29065,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 30,
         "target": "all",
@@ -29405,8 +29405,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "type": "CONDITION_FOR_REFLECT",
-        "calcType": "NETHERBEAST",
+        "type": "REFLECT",
+        "calcType": "dispel",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -29575,7 +29575,7 @@
         "type": "SLOW_ATK",
         "minValue": 30,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -29755,7 +29755,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -30174,7 +30174,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 30,
         "target": "all",
@@ -30625,7 +30625,7 @@
     "effects": [
       {
         "type": "QUICKEN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "turn": 1,
         "target": "selfSide",
@@ -30659,7 +30659,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -31090,7 +31090,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -31246,7 +31246,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 3,
         "target": "all",
@@ -31506,7 +31506,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -31551,7 +31551,7 @@
     "effects": [
       {
         "type": "PETRIFY_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 1,
         "target": "all",
@@ -31623,7 +31623,7 @@
         "type": "DOOM_ATK",
         "minValue": 4,
         "maxValue": 4,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 5,
         "target": "ennemySide",
@@ -31694,7 +31694,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -31793,7 +31793,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -32075,7 +32075,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 50,
         "turn": 30,
         "target": "target",
@@ -32300,7 +32300,7 @@
     "effects": [
       {
         "type": "SILENCE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 70,
         "turn": 3,
         "target": "target",
@@ -32393,7 +32393,7 @@
     "effects": [
       {
         "type": "INSTANT_DEATH_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "turn": 1,
         "target": "target",
@@ -32653,7 +32653,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "target",
@@ -32755,7 +32755,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -32912,7 +32912,7 @@
       },
       {
         "type": "QUICKEN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 200,
         "turn": 1,
         "target": "self",
@@ -32940,7 +32940,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 30,
         "target": "all",
@@ -33015,7 +33015,7 @@
         "type": "SLOW_ATK",
         "minValue": 30,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "all",
@@ -33058,7 +33058,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -33103,7 +33103,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -33348,7 +33348,7 @@
     "effects": [
       {
         "type": "STOP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 15,
         "turn": 30,
         "target": "all",
@@ -33436,7 +33436,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -33509,7 +33509,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "all",
@@ -33850,8 +33850,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "type": "CONDITION_FOR_REFLECT",
-        "calcType": "NETHERBEAST",
+        "type": "REFLECT",
+        "calcType": "dispel",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -33937,7 +33937,7 @@
     "effects": [
       {
         "type": "INSTANT_DEATH_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 10,
         "target": "target",
         "timing": "SKILL_AFTER"
@@ -34150,7 +34150,7 @@
     "effects": [
       {
         "type": "STUN_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 1,
         "target": "all",
@@ -34387,7 +34387,7 @@
     "effects": [
       {
         "type": "SLEEP_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 30,
         "turn": 3,
         "target": "target",
@@ -34477,7 +34477,7 @@
     "effects": [
       {
         "type": "TOAD_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -34678,7 +34678,7 @@
         "type": "BLIND_ATK",
         "minValue": 150,
         "maxValue": 150,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 100,
         "turn": 3,
         "target": "all",
@@ -35201,7 +35201,7 @@
     "effects": [
       {
         "type": "CONFUSION_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "target",
@@ -35323,7 +35323,7 @@
     "effects": [
       {
         "type": "CHARM_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "target",
@@ -36288,7 +36288,7 @@
         "type": "PARALYZE_ATK",
         "minValue": 60,
         "maxValue": 80,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "target",
@@ -36914,7 +36914,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 67,
         "turn": 3,
         "target": "all",
@@ -37139,7 +37139,7 @@
     "effects": [
       {
         "type": "IMMOBILIZE_ATK",
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",
@@ -37582,8 +37582,8 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "type": "CONDITION_FOR_REFLECT",
-        "calcType": "NETHERBEAST",
+        "type": "REFLECT",
+        "calcType": "dispel",
         "turn": 10,
         "target": "self",
         "timing": "SKILL_AFTER"
@@ -37647,7 +37647,7 @@
         "type": "BLIND_ATK",
         "minValue": 20,
         "maxValue": 50,
-        "calcType": "percent",
+        "calcType": "apply",
         "rate": 25,
         "turn": 3,
         "target": "all",

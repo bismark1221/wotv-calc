@@ -1728,7 +1728,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1759,7 +1759,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1789,7 +1789,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1851,7 +1851,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1881,7 +1881,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1943,7 +1943,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -1973,7 +1973,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -2035,7 +2035,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -2065,7 +2065,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -2127,7 +2127,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -2157,7 +2157,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -2219,7 +2219,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 25,
               "turn": 4,
               "fromImbue": true,
@@ -34019,7 +34019,7 @@
               "type": "DOOM_ATK",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 5,
               "fromImbue": true,
@@ -34306,7 +34306,7 @@
           "effects": [
             {
               "type": "SLEEP_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -34687,7 +34687,7 @@
               "type": "BLIND_ATK",
               "minValue": 20,
               "maxValue": 50,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -34977,7 +34977,7 @@
           "effects": [
             {
               "type": "DISABLE_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -35076,7 +35076,7 @@
           "effects": [
             {
               "type": "CONFUSION_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -35174,7 +35174,7 @@
           "effects": [
             {
               "type": "CHARM_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -35275,7 +35275,7 @@
               "type": "PARALYZE_ATK",
               "minValue": 80,
               "maxValue": 80,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -39205,7 +39205,7 @@
           "effects": [
             {
               "type": "SILENCE_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -39452,7 +39452,7 @@
           "effects": [
             {
               "type": "IMMOBILIZE_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 5,
               "fromImbue": true,
@@ -40113,7 +40113,7 @@
           "effects": [
             {
               "type": "CONFUSION_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -40897,7 +40897,7 @@
               "type": "BLIND_ATK",
               "minValue": 20,
               "maxValue": 50,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -42552,7 +42552,7 @@
               "type": "SLOW_ATK",
               "minValue": 20,
               "maxValue": 50,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 3,
               "fromImbue": true,
@@ -42880,7 +42880,7 @@
               "type": "PROTECT_ATK",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "apply",
               "turn": 3,
               "target": "self",
               "timing": "SKILL_AFTER"
@@ -42889,7 +42889,7 @@
               "type": "SHELL_ATK",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "apply",
               "turn": 3,
               "target": "self",
               "timing": "SKILL_AFTER"
@@ -43235,7 +43235,7 @@
             },
             {
               "type": "QUICKEN_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 200,
               "turn": 1,
               "target": "self",
@@ -43616,7 +43616,7 @@
               "type": "DOOM_ATK",
               "minValue": 4,
               "maxValue": 4,
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 15,
               "turn": 5,
               "fromImbue": true,
@@ -44213,7 +44213,7 @@
             },
             {
               "type": "PHYSIC_EVADE",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 200,
               "turn": 1,
               "target": "self",
@@ -45070,7 +45070,7 @@
               "type": "HASTE_ATK",
               "minValue": 20,
               "maxValue": 42,
-              "calcType": "percent",
+              "calcType": "apply",
               "turn": 3,
               "target": "self",
               "timing": "SKILL_AFTER"
@@ -46938,7 +46938,7 @@
               "type": "PROTECT_ATK",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "apply",
               "turn": 3,
               "target": "selfSide",
               "timing": "SKILL_AFTER"
@@ -46947,7 +46947,7 @@
               "type": "SHELL_ATK",
               "minValue": 10,
               "maxValue": 25,
-              "calcType": "percent",
+              "calcType": "apply",
               "turn": 3,
               "target": "selfSide",
               "timing": "SKILL_AFTER"
@@ -51186,7 +51186,7 @@
           "effects": [
             {
               "type": "STUN_ATK",
-              "calcType": "percent",
+              "calcType": "apply",
               "rate": 20,
               "turn": 1,
               "fromImbue": true,

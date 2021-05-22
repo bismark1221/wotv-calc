@@ -357,7 +357,7 @@ export class JsonService {
     104: 'RERAISE',
     105: 'PROTECT',
     106: 'SHELL',
-    107: 'CONDITION_FOR_REFLECT',
+    107: 'REFLECT',
     110: 'FLOAT',
     111: 'INSTANT_DEATH',
     112: 'QUICKEN',
@@ -425,8 +425,8 @@ export class JsonService {
     348: 'REDUCE_COUNTER_CHANCE',
     501: 'ABSORB_HP_ONTIME',
     502: 'FROSTBITE',
-    503: 'CONDITION_FOR_UPGRADE_SKILL',
-    509: 'CONDITION_FOR_GRANT_BUFF'
+    503: 'UPGRADE_SKILL',
+    509: 'GRANT_BUFF'
   };
 
   species = [
@@ -795,7 +795,7 @@ export class JsonService {
     11: 'percent',
     20: 'decrease',
     22: 'decrease',
-    30: 'percent',
+    30: 'apply',
     31: 'dispel',
     32: 'dispel',
     40: 'nullify'
@@ -3524,18 +3524,6 @@ export class JsonService {
 
                     if (skill.type === 'buff' || skill.type === 'masterSkill' || skill.type === 'support' || skill.type === 'party') {
                       delete addedBuff.timing;
-                    }
-
-                    /*if (skill.type === undefined) {
-                      console.log('SKILL TYPE undefined');
-                      console.log(skill);
-                    }*/
-
-                    if (type === 'CONDITION_FOR_REFLECT'
-                      || type === 'CONDITION_FOR_UPGRADE_SKILL'
-                      || type === 'CONDITION_FOR_GRANT_BUFF'
-                    ) {
-                      addedBuff.calcType = this.conditions[this[this.version].buffs[buff]['calc' + i]];
                     }
 
                     skill.effects.push(addedBuff);
