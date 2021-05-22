@@ -279,7 +279,7 @@ export class SkillService {
 
   private getTurns(effect) {
     if (effect.type === 'STOP_ATK') {
-      return ' for ' + effect.turn + '% of remaining actions';
+      return ' for ' + effect.turn + ' clock ticks';
     } else if (effect.turn) {
       return ' for ' + effect.turn + (effect.turnType === 'COUNT' ? ' time' : ' turn') + (effect.turn > 1 ? 's' : '');
     }
