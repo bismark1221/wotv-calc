@@ -646,13 +646,15 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
         unit.skillsForSim = skills;
 
-        if (unit.limit) {
+        if (unit.limit && unit.limit.damage) {
           unit.skillsForSim.push(unit.limit);
         }
 
         if (unit.card) {
           unit.card.skills.forEach(skill => {
-            unit.skillsForSim.push(skill);
+            if (skill.damage) {
+              unit.skillsForSim.push(skill);
+            }
           });
         }
       }

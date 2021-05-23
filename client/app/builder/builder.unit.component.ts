@@ -584,13 +584,15 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.unit.skillsForSim = skills;
 
-    if (this.unit.limit) {
+    if (this.unit.limit && this.unit.limit.damage) {
       this.unit.skillsForSim.push(this.unit.limit);
     }
 
     if (this.unit.card) {
       this.unit.card.skills.forEach(skill => {
-        this.unit.skillsForSim.push(skill);
+        if (skill.damage) {
+          this.unit.skillsForSim.push(skill);
+        }
       });
     }
 
