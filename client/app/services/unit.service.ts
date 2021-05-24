@@ -339,7 +339,8 @@ export class UnitService {
     UN_FF7_P_TIFA: '21/04/2021',
     UN_FF7_P_AERT: '01/05/2021',
     UN_FF7_P_BART: '01/05/2021',
-    UN_LW_P_GRSR_01: '14/05/2021'
+    UN_LW_P_GRSR_01: '14/05/2021',
+    UN_LW_P_VERN: '24/05/2021'
   };
 
   constructor(

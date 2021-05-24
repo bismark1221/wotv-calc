@@ -52308,6 +52308,50 @@
       ]
     },
     {
+      "iname": "AF_SPE_LW_VERN_1",
+      "asset": "LAPSwpn_spe_016",
+      "type": 0,
+      "cat": [
+        10
+      ],
+      "rare": 4,
+      "trust": 1,
+      "sell": 0,
+      "equip": "AEC_LANCE",
+      "status": [
+        {
+          "hp": 36,
+          "atk": 142,
+          "mag": 8,
+          "hit": 4,
+          "crt": 3
+        },
+        {
+          "hp": 36,
+          "atk": 142,
+          "mag": 8,
+          "hit": 4,
+          "crt": 3
+        }
+      ],
+      "rtype": "AF_LOT_TRUST",
+      "skl1": [
+        "SK_SPE_LW_VERN_1_1"
+      ],
+      "skl2": [
+        "SK_SPE_LW_VERN_1_1"
+      ],
+      "skl3": [
+        "SK_SPE_LW_VERN_1_1"
+      ],
+      "skl4": [
+        "SK_SPE_LW_VERN_1_1"
+      ],
+      "skl5": [
+        "SK_SPE_LW_VERN_1_1"
+      ]
+    },
+    {
       "iname": "AF_SWO_LW_MONT_2",
       "asset": "LAPSwpn_swo_008",
       "type": 0,

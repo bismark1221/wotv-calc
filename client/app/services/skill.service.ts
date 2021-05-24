@@ -879,8 +879,11 @@ export class SkillService {
       case 'RES_SLASH_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Slash resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
-      case 'RES_ALL_DEBUFF_RES' :
-        html = this.getIncrease(effect) + ' All resistances Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      case 'RES_ALL_ATTACKS_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Debuff Resistance for All Attacks Type Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_ALL_ELEMENTS_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Debuff Resistance for All Elements Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'EVOCATION_GAUGE_BOOST' :
         html = this.getIncrease(effect) + ' Evocation Gauge Boost' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1121,6 +1124,12 @@ export class SkillService {
       break;
       case 'RES_WATER_ATK_PENETRATION' :
         html = 'Increase water resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_LIGHT_ATK_PENETRATION' :
+        html = 'Increase light resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_DARK_ATK_PENETRATION' :
+        html = 'Increase dark resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'AP_CONSUMPTION' :
         html = 'Decrease AP consumption' + this.getValue(skill, effect) + this.getTurns(effect);

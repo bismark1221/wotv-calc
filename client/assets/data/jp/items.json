@@ -5303,6 +5303,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_VERN": {
+    "dataId": "IT_PI_LW_VERN",
+    "names": {
+      "en": "ヴェルヌの欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6098,6 +6105,13 @@
     "dataId": "IT_SP_LW_GRSR_01",
     "names": {
       "en": "グラセラ（ドレスアップ）の思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_VERN": {
+    "dataId": "IT_SP_LW_VERN",
+    "names": {
+      "en": "ヴェルヌの思珠"
     },
     "type": "exjob_orb"
   },
@@ -8780,6 +8794,14 @@
     "type": "medal",
     "icon": "IT_EC_TOWER"
   },
+  "IT_EC_TOWER_003": {
+    "dataId": "IT_EC_TOWER_003",
+    "names": {
+      "en": "幻影の塔メダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_TOWER"
+  },
   "IT_EC_SUMMON": {
     "dataId": "IT_EC_SUMMON",
     "names": {
@@ -9087,6 +9109,27 @@
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
       "en": "【2020ハロウィン】召喚メダル"
+    },
+    "type": "medal"
+  },
+  "IT_EC_SUMMON_XMAS_01": {
+    "dataId": "IT_EC_SUMMON_XMAS_01",
+    "names": {
+      "en": "【復刻】Xmas召喚メダル"
+    },
+    "type": "medal"
+  },
+  "IT_EC_SUMMON_VALE_01": {
+    "dataId": "IT_EC_SUMMON_VALE_01",
+    "names": {
+      "en": "【復刻】バレンタイン召喚メダル"
+    },
+    "type": "medal"
+  },
+  "IT_EC_SUMMON_HALL_02": {
+    "dataId": "IT_EC_SUMMON_HALL_02",
+    "names": {
+      "en": "【復刻】ハロウィン召喚メダル"
     },
     "type": "medal"
   },
@@ -10339,6 +10382,14 @@
     "type": "tickets",
     "icon": "IT_US_G_PU_01"
   },
+  "IT_US_G_PU_VC_RAIN": {
+    "dataId": "IT_US_G_PU_VC_RAIN",
+    "names": {
+      "en": "【英雄たちの邂逅】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
   "IT_US_SE_JB_MM_01": {
     "dataId": "IT_US_SE_JB_MM_01",
     "names": {
@@ -11119,6 +11170,14 @@
     "dataId": "IT_US_SE_PI_41",
     "names": {
       "en": "【GW記念】Cost100ユニット欠片×40選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_42": {
+    "dataId": "IT_US_SE_PI_42",
+    "names": {
+      "en": "【1.5周年記念】SSRユニット欠片×50選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -12011,6 +12070,22 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_18": {
+    "dataId": "IT_US_SE_JB_05_18",
+    "names": {
+      "en": "【1.5周年記念】スピネル×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_19": {
+    "dataId": "IT_US_SE_JB_04_19",
+    "names": {
+      "en": "【1.5周年記念】シトリン×30選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JBEX_EM_01": {
     "dataId": "IT_US_SE_JBEX_EM_01",
     "names": {
@@ -12661,6 +12736,13 @@
     "dataId": "IT_VPI_LW_LSWL",
     "names": {
       "en": "凍閃花　氷魔ラスウェルの欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_RAIN": {
+    "dataId": "IT_VPI_LW_RAIN",
+    "names": {
+      "en": "英雄たちの邂逅の欠片 - \"Encounter of Heroes\" Vision Card Shard"
     },
     "type": "vc_shard"
   },

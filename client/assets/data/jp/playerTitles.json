@@ -679,6 +679,16 @@
       "en": "[Extreme difficulty] Title given to players who have cleared the multi-quest of Challenge Quest 4"
     }
   },
+  "AWD_P_Tower_1": {
+    "dataId": "AWD_P_Tower_1",
+    "names": {
+      "en": "A person who follows the trajectory of a lion"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have cleared the 20th floor of the Phantom Tower ~ Lion's Valley Campaign ~"
+    }
+  },
   "AWD_P_PT01_1": {
     "dataId": "AWD_P_PT01_1",
     "names": {
@@ -5957,6 +5967,46 @@
     "grade": "pink",
     "howToGet": {
       "en": "Title given to players who have completed 10,000 quests with Dress Graciela"
+    }
+  },
+  "LW_PA_CH_126_1": {
+    "dataId": "LW_PA_CH_126_1",
+    "names": {
+      "en": "Verne Fan"
+    },
+    "grade": "grey",
+    "howToGet": {
+      "en": "Title given to players who have completed 100 quests with Verne"
+    }
+  },
+  "LW_PA_CH_126_2": {
+    "dataId": "LW_PA_CH_126_2",
+    "names": {
+      "en": "Verne Enthusiast"
+    },
+    "grade": "red",
+    "howToGet": {
+      "en": "Title given to players who have completed 500 quests with Verne"
+    }
+  },
+  "LW_PA_CH_126_3": {
+    "dataId": "LW_PA_CH_126_3",
+    "names": {
+      "en": "Verne Devotee"
+    },
+    "grade": "blue",
+    "howToGet": {
+      "en": "Title given to players who have completed 3000 quests with Verne"
+    }
+  },
+  "LW_PA_CH_126_4": {
+    "dataId": "LW_PA_CH_126_4",
+    "names": {
+      "en": "Small hope in abuse"
+    },
+    "grade": "pink",
+    "howToGet": {
+      "en": "Title given to players who have completed 10,000 quests with Verne"
     }
   }
 }

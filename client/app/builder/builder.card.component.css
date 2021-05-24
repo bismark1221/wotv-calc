@@ -260,6 +260,22 @@
   height: 32px;
 }
 
+.mainJob {
+  height: 40px;
+  width: 40px;
+  background: url("assets/jobs/base_main.png") 0px 0px no-repeat;
+  background-size: 40px;
+  padding: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.mainJob img {
+  max-height: 30px;
+  max-width: 30px;
+  vertical-align: top;
+}
+
 .subJob {
   height: 40px;
   width: 40px;

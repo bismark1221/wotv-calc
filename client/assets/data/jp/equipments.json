@@ -64824,6 +64824,105 @@
       "unitId": "UN_LW_P_GRSR_01"
     }
   },
+  "AF_SPE_LW_VERN_1": {
+    "names": {
+      "en": "ライトハルバード"
+    },
+    "slug": "raito-haru-bdo",
+    "stats": {
+      "HP": {
+        "min": 36,
+        "max": 36
+      },
+      "ATK": {
+        "min": 142,
+        "max": 142
+      },
+      "MAG": {
+        "min": 8,
+        "max": 8
+      },
+      "ACCURACY": {
+        "min": 4,
+        "max": 4
+      },
+      "CRITIC_RATE": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "type": "SPEAR",
+    "dataId": "AF_SPE_LW_VERN_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_SPE_LW_VERN_1_1"
+          },
+          "dataId": "SK_SPE_LW_VERN_1_1",
+          "effects": [
+            {
+              "type": "GRANT_BUFF",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "apply",
+              "rate": 200,
+              "target": "self"
+            },
+            {
+              "type": "ACCURACY",
+              "minValue": 30,
+              "maxValue": 30,
+              "calcType": "fixe",
+              "turn": 1,
+              "fromImbue": true,
+              "target": "self",
+              "buffOnCondition": "ON_CRITICAL"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_spe_016",
+    "equippableJobs": [
+      "JB_LW_LAN_FIRE",
+      "JB_LW_DRG_FIRE",
+      "JB_LW_GRSR",
+      "JB_FF4_KAIN",
+      "JB_NIER_N9TS"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_VERN"
+    }
+  },
   "AF_SWO_LW_MONT_2": {
     "names": {
       "en": "リオンズソード - Lion Sword"

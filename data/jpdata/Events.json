@@ -58,6 +58,27 @@
       "end": "2021/05/31 4:59:59"
     },
     {
+      "iname": "SE_EV_GIL",
+      "event_type": 2,
+      "image": "ev_gil_002",
+      "start": "2021/06/05 5:00:00",
+      "end": "2021/06/07 4:59:59"
+    },
+    {
+      "iname": "SE_EV_GIL",
+      "event_type": 2,
+      "image": "ev_gil_002",
+      "start": "2021/06/12 5:00:00",
+      "end": "2021/06/14 4:59:59"
+    },
+    {
+      "iname": "SE_EV_GIL",
+      "event_type": 2,
+      "image": "ev_gil_002",
+      "start": "2021/06/19 5:00:00",
+      "end": "2021/06/21 4:59:59"
+    },
+    {
       "iname": "SE_EV_AFEXP",
       "event_type": 2,
       "image": "ev_afexp_002",
@@ -94,6 +115,27 @@
       "end": "2021/05/31 4:59:59"
     },
     {
+      "iname": "SE_EV_AFEXP",
+      "event_type": 2,
+      "image": "ev_afexp_002",
+      "start": "2021/06/05 5:00:00",
+      "end": "2021/06/07 4:59:59"
+    },
+    {
+      "iname": "SE_EV_AFEXP",
+      "event_type": 2,
+      "image": "ev_afexp_002",
+      "start": "2021/06/12 5:00:00",
+      "end": "2021/06/14 4:59:59"
+    },
+    {
+      "iname": "SE_EV_AFEXP",
+      "event_type": 2,
+      "image": "ev_afexp_002",
+      "start": "2021/06/19 5:00:00",
+      "end": "2021/06/21 4:59:59"
+    },
+    {
       "iname": "SE_EV_GIL_01",
       "event_type": 2,
       "image": "ev_gil_001",
@@ -197,6 +239,20 @@
       "end": "2021/06/05 4:59:59"
     },
     {
+      "iname": "SE_EV_GIL_01",
+      "event_type": 2,
+      "image": "ev_gil_001",
+      "start": "2021/06/07 5:00:00",
+      "end": "2021/06/12 4:59:59"
+    },
+    {
+      "iname": "SE_EV_GIL_01",
+      "event_type": 2,
+      "image": "ev_gil_001",
+      "start": "2021/06/14 5:00:00",
+      "end": "2021/06/19 4:59:59"
+    },
+    {
       "iname": "SE_EV_AFEXP_01",
       "event_type": 2,
       "image": "ev_afexp_001",
@@ -300,6 +356,20 @@
       "end": "2021/06/05 4:59:59"
     },
     {
+      "iname": "SE_EV_AFEXP_01",
+      "event_type": 2,
+      "image": "ev_afexp_001",
+      "start": "2021/06/07 5:00:00",
+      "end": "2021/06/12 4:59:59"
+    },
+    {
+      "iname": "SE_EV_AFEXP_01",
+      "event_type": 2,
+      "image": "ev_afexp_001",
+      "start": "2021/06/14 5:00:00",
+      "end": "2021/06/19 4:59:59"
+    },
+    {
       "iname": "SE_EV_UNITEXP_01",
       "event_type": 2,
       "image": "ev_unitexp_001",
@@ -409,7 +479,7 @@
       "event_type": 2,
       "image": "ev_unitexp_001",
       "start": "2021/05/14 10:30:00",
-      "end": "2021/06/05 4:59:59"
+      "end": "2021/07/08 4:59:59"
     },
     {
       "iname": "SE_EV_VCEXP_01",
@@ -521,7 +591,7 @@
       "event_type": 2,
       "image": "ev_vcexp_001",
       "start": "2021/05/14 10:30:00",
-      "end": "2021/06/05 4:59:59"
+      "end": "2021/07/08 4:59:59"
     },
     {
       "iname": "SE_EV_WAEXP_01",
@@ -633,7 +703,7 @@
       "event_type": 2,
       "image": "ev_waexp_001",
       "start": "2021/05/14 10:30:00",
-      "end": "2021/06/05 4:59:59"
+      "end": "2021/07/08 4:59:59"
     },
     {
       "iname": "SE_EV_AW_HIGH_01",
@@ -883,15 +953,15 @@
       "iname": "SE_EV_10_01",
       "event_type": 1,
       "image": "ev_10_01",
-      "start": "2021/01/15 10:30:00",
-      "end": "2021/01/31 23:59:59"
+      "start": "2021/05/24 15:00:00",
+      "end": "2021/06/09 14:59:59"
     },
     {
       "iname": "SE_EV_10_EX_01",
       "event_type": 1,
       "image": "ev_10_ex_01",
-      "start": "2021/01/15 10:30:00",
-      "end": "2021/01/31 23:59:59"
+      "start": "2021/05/24 15:00:00",
+      "end": "2021/06/09 14:59:59"
     },
     {
       "iname": "SE_EV_11_01",
@@ -996,14 +1066,14 @@
       "event_type": 1,
       "image": "ev_art_secret_02",
       "start": "2021/05/14 11:00:00",
-      "end": "2021/05/24 14:59:59"
+      "end": "2021/05/31 22:59:59"
     },
     {
       "iname": "SE_EV_ART_SCR_04",
       "event_type": 1,
       "image": "ev_art_secret_02",
-      "start": "2021/05/24 15:00:00",
-      "end": "2021/05/31 22:59:59"
+      "start": "2021/05/07 15:00:00",
+      "end": "2021/05/14 9:59:59"
     },
     {
       "iname": "SE_EV_ETRE",

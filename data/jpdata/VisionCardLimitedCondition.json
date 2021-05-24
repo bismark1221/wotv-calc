@@ -97,6 +97,23 @@
       ]
     },
     {
+      "iname": "VLC_S_LSWO",
+      "jobs": [
+        "JB_LW_SWN_FIRE",
+        "JB_LW_RAIN",
+        "JB_LW_STRN",
+        "JB_LW_MSW_FIRE",
+        "JB_FF10_ARON",
+        "JB_FF7_CLUD",
+        "JB_LW_SWN_EX_M",
+        "JB_LW_RAIN_M",
+        "JB_LW_STRN_01_M",
+        "JB_LW_MSW_EX_M",
+        "JB_FF10_ARON_M",
+        "JB_FF7_CLUD_M"
+      ]
+    },
+    {
       "iname": "VLC_STAFF",
       "mainjobs": [
         "JB_LW_WHM_FIRE",
@@ -130,12 +147,35 @@
       ]
     },
     {
+      "iname": "VLC_S_JSWORD",
+      "jobs": [
+        "JB_LW_SAM_FIRE",
+        "JB_LW_LSWL",
+        "JB_NIER_N2TB",
+        "JB_LW_SAM_EX_M",
+        "JB_LW_LSWL_M",
+        "JB_NIER_N2TB_M"
+      ]
+    },
+    {
       "iname": "VLC_MACE",
       "mainjobs": [
         "JB_LW_CLR_FIRE",
         "JB_LW_CAL_FIRE",
         "JB_LW_MMC_FIRE",
         "JB_LW_GRSR_01"
+      ]
+    },
+    {
+      "iname": "VLC_S_MACE",
+      "jobs": [
+        "JB_LW_CLR_FIRE",
+        "JB_LW_CAL_FIRE",
+        "JB_LW_MMC_FIRE",
+        "JB_LW_GRSR_01",
+        "JB_LW_CLR_EX_M",
+        "JB_LW_MMC_EX_M",
+        "JB_LW_GRSR_01_M"
       ]
     },
     {

@@ -487,6 +487,20 @@ export class SimulatorService {
             jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
           });
 
+          const tableMainJob = unit.jobs[0].split('_');
+          const tableSubJob = unit.jobs[unit.subJob].split('_');
+          if (jobs.indexOf(tableMainJob[0] + '_' + tableMainJob[1] + '_' + tableMainJob[2]) === -1
+            && jobs.indexOf(tableSubJob[0] + '_' + tableSubJob[1] + '_' + tableSubJob[2]) === -1) {
+            conditionChecked = false;
+          }
+          break;
+        case 'mainJob':
+          const jobs = [];
+          condition.items.forEach(job => {
+            const tempJob = job.split('_');
+            jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
+          });
+
           const tableJob = unit.jobs[0].split('_');
           if (jobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
             conditionChecked = false;

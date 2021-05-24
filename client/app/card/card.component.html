@@ -82,6 +82,14 @@
               </span>
             </div>
 
+            <div *ngIf="cond.type === 'mainJob'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="mainJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
             <div *ngIf="cond.type === 'unit'">
               <span *ngFor="let unit of cond.formattedItems">
                 <img *ngIf="unit.image" class="unit" title="{{ unit.names.en }}" src="{{'assets/units/' + unit.image + '_m.png'}}" />
@@ -242,6 +250,14 @@
             <div *ngIf="cond.type === 'job'">
               <span *ngFor="let job of cond.formattedItems">
                 <div class="subJob">
+                  <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
+                </div>
+              </span>
+            </div>
+
+            <div *ngIf="cond.type === 'mainJob'">
+              <span *ngFor="let job of cond.formattedItems">
+                <div class="mainJob">
                   <img *ngIf="job.image" title="{{ job.names.en }}" src="{{'assets/jobs/' + job.image + '.png'}}" />
                 </div>
               </span>

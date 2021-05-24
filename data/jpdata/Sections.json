@@ -292,6 +292,12 @@
       "back_unit": "UN_LW_ST_020101"
     },
     {
+      "iname": "SE_ST_020201",
+      "chap": "CH_ST_0202",
+      "skip_ticket": "IT_TICKET_STORY",
+      "back_unit": "UN_LW_ST_020101"
+    },
+    {
       "iname": "SE_WD_010101",
       "chap": "CH_WD_0101",
       "skip_ticket": "IT_TICKET_STORY"
@@ -1554,6 +1560,10 @@
       "hurl": "ev_nmap_05"
     },
     {
+      "iname": "SE_BR_THUNDER",
+      "hurl": "br_thunder_01"
+    },
+    {
       "iname": "SE_BR_WIND",
       "hurl": "br_wind_01"
     },
@@ -1866,6 +1876,33 @@
     },
     {
       "iname": "SE_SB_01"
+    },
+    {
+      "iname": "SE_SB_FIRE"
+    },
+    {
+      "iname": "SE_SB_ICE"
+    },
+    {
+      "iname": "SE_SB_WIND"
+    },
+    {
+      "iname": "SE_SB_SOIL"
+    },
+    {
+      "iname": "SE_SB_THUN"
+    },
+    {
+      "iname": "SE_SB_WATER"
+    },
+    {
+      "iname": "SE_SB_SHIN"
+    },
+    {
+      "iname": "SE_SB_DARK"
+    },
+    {
+      "iname": "SE_SB_NONE"
     },
     {
       "iname": "SE_EV_SM_FIRE_01",

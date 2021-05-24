@@ -83,7 +83,6 @@ import { TemplateItemComponent } from './template/template.item.component';
 
 import { UnitService } from './services/unit.service';
 import { NavService } from './services/nav.service';
-import { JsonService } from './services/json.service';
 import { SkillService } from './services/skill.service';
 import { EquipmentService } from './services/equipment.service';
 import { CardService } from './services/card.service';
@@ -98,7 +97,6 @@ import { TeamService } from './services/team.service';
 import { ItemService } from './services/item.service';
 import { AuthService } from './services/auth.service';
 import { ToolService } from './services/tool.service';
-import { JpTranslateService } from './services/jptranslate.service';
 import { MasterRanksService } from './services/mr.service';
 import { CheckHashService } from './services/checkHash.service';
 import { TitleService } from './services/title.service';
@@ -206,7 +204,6 @@ export function createTranslateLoader(http: HttpClient) {
   providers: [
     UnitService,
     NavService,
-    JsonService,
     EquipmentService,
     SkillService,
     CardService,
@@ -221,7 +218,6 @@ export function createTranslateLoader(http: HttpClient) {
     ItemService,
     AuthService,
     ToolService,
-    JpTranslateService,
     MasterRanksService,
     CheckHashService,
     TitleService,

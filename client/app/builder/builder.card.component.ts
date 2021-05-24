@@ -219,7 +219,15 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
 
           if (formattedBuff.cond) {
             for (const cond of formattedBuff.cond) {
-              if (cond.type === 'job') {
+              if (cond.type === 'mainJob') {
+                for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
+                  const jobId = cond.items[jobIndex];
+                  if (jobId && !jobId.dataId) {
+                    const job = await this.jobService.getJob(jobId);
+                    cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+                  }
+                }
+              } else if (cond.type === 'job') {
                 for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
                   const jobId = cond.items[jobIndex];
                   if (jobId && !jobId.dataId) {
@@ -248,6 +256,14 @@ export class BuilderCardComponent implements OnInit, AfterViewInit {
       if (skill.cond) {
         for (const cond of skill.cond) {
           if (cond.type === 'job') {
+            for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
+              const jobId = cond.items[jobIndex];
+              if (jobId && !jobId.dataId) {
+                const job = await this.jobService.getJob(jobId);
+                cond.items[jobIndex] = job ? job : cond.items[jobIndex];
+              }
+            }
+          } else if (cond.type === 'mainJob') {
             for (let jobIndex = 0; jobIndex <= cond.items.length - 1; jobIndex++) {
               const jobId = cond.items[jobIndex];
               if (jobId && !jobId.dataId) {

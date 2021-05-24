@@ -1,6 +1,6 @@
 import { Slug } from 'ng2-slugify';
 
-import { JpTranslateService } from './client/app/services/jptranslate.service';
+import { JpTranslateService } from './jptranslate.service';
 import { EsperService } from './client/app/services/esper.service';
 import { EquipmentService } from './client/app/services/equipment.service';
 import { UnitService } from './client/app/services/unit.service';
@@ -405,7 +405,8 @@ export class JsonService {
     207: 'AGI_DEBUFF_RES',
     262: 'BRAVERY_DEBUFF_RES',
     272: 'RES_SLASH_DEBUFF_RES',
-    278: 'RES_ALL_DEBUFF_RES',
+    277: 'RES_ALL_ATTACKS_DEBUFF_RES',
+    278: 'RES_ALL_ELEMENTS_DEBUFF_RES',
     300: 'BUFFS_DURATION',
     301: 'DEBUFFS_DURATION',
     310: 'ATTACK_RES',
@@ -421,6 +422,8 @@ export class JsonService {
     327: 'RES_MISSILE_ATK_PENETRATION',
     329: 'RES_MAGIC_ATK_PENETRATION',
     341: 'RES_WATER_ATK_PENETRATION',
+    343: 'RES_LIGHT_ATK_PENETRATION',
+    345: 'RES_DARK_ATK_PENETRATION',
     347: 'HEAL_POWER',
     348: 'REDUCE_COUNTER_CHANCE',
     501: 'ABSORB_HP_ONTIME',
@@ -2070,7 +2073,7 @@ export class JsonService {
 
       this.GLSkillExc(),
       this.JPSkillExc()
-    ]).then(responses => {
+    ]).then(async responses => {
       this.gl.units = this.formatJson(JSON.parse(responses[0]));
       this.gl.boards = this.formatJson(JSON.parse(responses[1]));
       this.gl.skills = this.formatJson(JSON.parse(responses[2]));
@@ -2270,7 +2273,7 @@ export class JsonService {
       this.jpTitlesName = JSON.parse(responses[102]);
       this.jpTitlesDesc = JSON.parse(responses[103]);
 
-      this.formatJsons();
+      await this.formatJsons();
 
       console.log('==== GL RESULT ====');
       console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
@@ -2377,34 +2380,34 @@ export class JsonService {
     return formatted;
   }
 
-  private formatJsons() {
+  private async formatJsons() {
     const versions = ['gl', 'jp'];
     for (let i = 0; i < versions.length; i ++) {
       this.version = versions[i];
 
-     Object.keys(this[this.version].jobs).forEach(jobId => {
+      Object.keys(this[this.version].jobs).forEach(jobId => {
         this.addJob(this[this.version].jobs[jobId]);
       });
 
-      Object.keys(this[this.version].units).forEach(unitId => {
+      for (const unitId of Object.keys(this[this.version].units)) {
         if (this[this.version].units[unitId].type === 0) {
-          this.addUnit(this[this.version].units[unitId]);
+          await this.addUnit(this[this.version].units[unitId]);
         }
 
         if (this[this.version].units[unitId].type === 1 && unitId !== 'UN_FF10_S_VLFR') {
-          this.addEsper(this[this.version].units[unitId]);
+          await this.addEsper(this[this.version].units[unitId]);
         }
-      });
+      }
 
       this.cleanUnits();
 
-      Object.keys(this[this.version].visionCards).forEach(visionCardId => {
-        this.addVisionCard(this[this.version].visionCards[visionCardId]);
-      });
+      for (const visionCardId of Object.keys(this[this.version].visionCards)) {
+        await this.addVisionCard(this[this.version].visionCards[visionCardId]);
+      }
 
-      Object.keys(this[this.version].equipments).forEach(equipmentId => {
-        this.addEquipment(this[this.version].equipments[equipmentId]);
-      });
+      for (const equipmentId of Object.keys(this[this.version].equipments)) {
+        await this.addEquipment(this[this.version].equipments[equipmentId]);
+      }
 
       Object.keys(this[this.version].items).forEach(itemId => {
         this.addItem(this[this.version].items[itemId]);
@@ -2414,10 +2417,10 @@ export class JsonService {
 
       this.formatTitles();
 
-      this.formatQuests();
-      this.formatTowers();
+      await this.formatQuests();
+      await this.formatTowers();
 
-      this.formatRaid();
+      await this.formatRaid();
 
       this.exportGLexclusiveToJP();
     }
@@ -2544,7 +2547,7 @@ export class JsonService {
     return materials;
   }
 
-  private addUnit(rawUnit) {
+  private async addUnit(rawUnit) {
     const dataId = rawUnit.iname;
     const unit = {
       dataId: dataId,
@@ -2575,7 +2578,7 @@ export class JsonService {
     }
 
     this.getUnitImage(unit);
-    this.getNames(unit, 'unit');
+    await this.getNames(unit, 'unit');
 
     this.getStats(unit, rawUnit.status, 'unit');
     this.getMoveJumpUnit(unit);
@@ -2593,7 +2596,7 @@ export class JsonService {
     }
   }
 
-  private addVisionCard(visionCard) {
+  private async addVisionCard(visionCard) {
     const dataId = visionCard.iname;
 
     if (visionCard.type === 0) {
@@ -2606,7 +2609,7 @@ export class JsonService {
         image: visionCard.icon.toLowerCase()
       };
 
-      this.getNames(card, 'visionCard');
+      await this.getNames(card, 'visionCard');
       this.getStats(card, visionCard.status, 'visionCard');
 
       this.getVisionCardSkillsAndBuffs(card, visionCard);
@@ -2615,7 +2618,7 @@ export class JsonService {
     }
   }
 
-  private getNames(item, type, getSlug = true, overwriteType = null) {
+  private async getNames(item, type, getSlug = true, overwriteType = null) {
     const id = item.dataId;
 
     if (this.version === 'gl') {
@@ -2671,7 +2674,7 @@ export class JsonService {
         if (slugJP) {
           if (!this.jpRomaji[slug]) {
             const jpTranslateService = new JpTranslateService();
-            thisjpTranslateService.convert(slug).then(translatedText => {
+            await jpTranslateService.convert(slug).then(translatedText => {
               this.jpRomaji[slug] = translatedText;
               item.slug = this.slug.slugify(translatedText);
               console.log('New JP Translate for ' + type + ' ==> "' + slug + '": "' + translatedText + '",');
@@ -2821,11 +2824,24 @@ export class JsonService {
 
       if (cardCond.mainjobs) {
         const newCond = {
-          type: 'job',
+          type: 'mainJob',
           items: []
         };
 
         cardCond.mainjobs.forEach(job => {
+          newCond.items.push(job);
+        });
+
+        formattedCond.push(newCond);
+      }
+
+      if (cardCond.jobs) {
+        const newCond = {
+          type: 'job',
+          items: []
+        };
+
+        cardCond.jobs.forEach(job => {
           newCond.items.push(job);
         });
 
@@ -3669,7 +3685,7 @@ export class JsonService {
     }
   }
 
-  private addEsper(esper) {
+  private async addEsper(esper) {
     const dataId = esper.iname;
     const esperService = new EsperService();
 
@@ -3694,7 +3710,7 @@ export class JsonService {
     ];
     this.getUnitImage(this[this.version].wotvEspers[dataId]);
 
-    this.getNames(this[this.version].wotvEspers[dataId], 'unit');
+    await this.getNames(this[this.version].wotvEspers[dataId], 'unit');
 
     this.getEsperStats(esper, 'esper');
     this.getEspersSkillsAndBuffs(this[this.version].wotvEspers[dataId]);
@@ -3824,7 +3840,7 @@ export class JsonService {
     }
   }
 
-  private addEquipment(rawEquipment) {
+  private async addEquipment(rawEquipment) {
     const dataId = rawEquipment.iname;
     let rType = rawEquipment.rtype !== 'AF_LOT_50' && rawEquipment.rtype !== 'AF_LOT_TRUST' ? rawEquipment.rtype : dataId;
 
@@ -3856,7 +3872,7 @@ export class JsonService {
         acquisition: null
       };
 
-      this.getNames(equipment, 'equipment');
+      await this.getNames(equipment, 'equipment');
 
       if (rawEquipment.equip) {
         if (this[this.version].EquipmentCond[rawEquipment.equip]) {
@@ -4067,8 +4083,8 @@ export class JsonService {
     });
   }
 
-  private formatRaid() {
-    Object.keys(this[this.version].raid).forEach(raidId => {
+  private async formatRaid() {
+    for (const raidId of Object.keys(this[this.version].raid)) {
       const raid = this[this.version].raid[raidId];
 
       if (raid.home_tex !== 'LAPS_RD_0001' && (raid.home_tex !== 'LAPS_RD_FF14_01' || raidId === 'RAID_ID_11' || raidId === 'RAID_GL_07')) {
@@ -4082,9 +4098,11 @@ export class JsonService {
           }
         };
 
-        raid.prob.forEach((boss, bossIndex) => {
-          this.addRaidBoss(this[this.version].wotvRaids[raidId], boss.boss_id);
-        });
+        let bossIndex = 0;
+        for (const boss of raid.prob) {
+          await this.addRaidBoss(this[this.version].wotvRaids[raidId], boss.boss_id);
+          bossIndex++;
+        }
 
         if (raid.bonus_unit && this[this.version].raidBonusUnit[raid.bonus_unit]) {
           this[this.version].raidBonusUnit[raid.bonus_unit].bonuses.forEach(unit => {
@@ -4104,10 +4122,10 @@ export class JsonService {
           });
         }
       }
-    });
+    }
   }
 
-  private addRaidBoss(raid, bossId) {
+  private async addRaidBoss(raid, bossId) {
     const bossUnit = this[this.version].units[this[this.version].raidBoss[bossId].unit_id];
     const dataId = bossUnit.iname;
     const boss = {
@@ -4122,7 +4140,7 @@ export class JsonService {
     };
 
     this.getUnitImage(boss);
-    this.getNames(boss, 'unit');
+    await this.getNames(boss, 'unit');
     this.getStats(boss, bossUnit.status, 'unit');
     this.getAttackSkill(boss, bossUnit.atkskl);
 
@@ -4392,8 +4410,9 @@ export class JsonService {
     });
   }
 
-  formatQuests() {
-    Object.keys(this[this.version].quests).forEach((questId, questIndex) => {
+  async formatQuests() {
+    let questIndex = 0;
+    for (const questId of Object.keys(this[this.version].quests)) {
       const quest = this[this.version].quests[questId];
 
       const formattedQuest = {
@@ -4421,7 +4440,7 @@ export class JsonService {
         console.log('Quest type not found -- ' + questId + ' -- type : ' + quest.type);
       }
 
-      this.getNames(formattedQuest, 'questTitle', true, 'quest');
+      await this.getNames(formattedQuest, 'questTitle', true, 'quest');
 
       this.getCompletionReward(formattedQuest, quest.c_rewards);
       this.getMissions(formattedQuest, quest.missions);
@@ -4447,14 +4466,15 @@ export class JsonService {
       }
 
       this.formatGrid(formattedQuest, quest.map.scn);
-      this.formatMap(formattedQuest, quest.map.set);
+      await this.formatMap(formattedQuest, quest.map.set);
 
       this[this.version].wotvQuests[questId] = formattedQuest;
-    });
+      questIndex++;
+    }
   }
 
-  formatTowers() {
-    Object.keys(this[this.version].towerFloors).forEach(questId => {
+  async formatTowers() {
+    for (const questId of Object.keys(this[this.version].towerFloors)) {
       const quest = this[this.version].towerFloors[questId];
 
       const formattedQuest = {
@@ -4478,7 +4498,7 @@ export class JsonService {
         drops: []
       };
 
-      const questTranslation = this.getTowerFloorName(questId, quest.tower_iname, quest.ex);
+      const questTranslation = await this.getTowerFloorName(questId, quest.tower_iname, quest.ex);
       formattedQuest.names = questTranslation.names;
       formattedQuest.slug = questTranslation.slug;
 
@@ -4487,10 +4507,10 @@ export class JsonService {
       this.getQuestSkills(formattedQuest, quest.map.buffs);
 
       this.formatGrid(formattedQuest, quest.map.scn);
-      this.formatMap(formattedQuest, quest.map.set);
+      await this.formatMap(formattedQuest, quest.map.set);
 
       this[this.version].wotvQuests[questId] = formattedQuest;
-    });
+    }
   }
 
   getMissions(quest, missions) {
@@ -4599,7 +4619,7 @@ export class JsonService {
     }
   }
 
-  formatMap(quest, mapId) {
+  async formatMap(quest, mapId) {
     if (this[this.version].maps[mapId.split('/')[1]]) {
       const map = this[this.version].maps[mapId.split('/')[1]];
       if (map.drop_table_list) {
@@ -4613,35 +4633,35 @@ export class JsonService {
       // @TODO ADD ENTRY CONDITION !!!
 
       if (map.enemy) {
-        map.enemy.forEach(enemy => {
+        for (const enemy of map.enemy) {
           this.checkIfTileExist(quest, enemy);
 
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
             quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
-            this.addOtherUnit(enemy, false, 'ally');
+            await this.addOtherUnit(enemy, false, 'ally');
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
               quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true, 'chest');
+              await this.addOtherUnit(enemy, true, 'chest');
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
               quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true, 'switch');
+              await this.addOtherUnit(enemy, true, 'switch');
             } else if (enemy.iname.split('_')[1] === 'GM') {
               quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, true, 'object');
+              await this.addOtherUnit(enemy, true, 'object');
             } else {
               if (!enemy.hasBody) {
                 quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               }
               quest.enemies.push(this.formatEnemyForQuest(enemy));
-              this.addOtherUnit(enemy, false, 'enemy');
+              await this.addOtherUnit(enemy, false, 'enemy');
             }
           }
-        });
+        }
       }
 
       if (map.arena) {
@@ -4794,7 +4814,7 @@ export class JsonService {
     }
   }
 
-  private addOtherUnit(otherUnit, object, type) {
+  private async addOtherUnit(otherUnit, object, type) {
     const dataId = otherUnit.iname;
 
     if (this[this.version].units[dataId] && !this[this.version].wotvOtherUnits[dataId]) {
@@ -4858,7 +4878,7 @@ export class JsonService {
         });
       }
 
-      this.getNames(unit, 'unit');
+      await this.getNames(unit, 'unit');
 
       if (!object) {
         this.getStats(unit, rawUnit.status, 'unit');
@@ -4894,7 +4914,7 @@ export class JsonService {
     }
   }
 
-  private getTowerFloorName(floorId, towerId, ex) {
+  private async getTowerFloorName(floorId, towerId, ex) {
     const towerNames = {
       en: '',
       fr: '',
@@ -5019,10 +5039,9 @@ export class JsonService {
       if (slugJP) {
         if (!this.jpRomaji[floorNames.en]) {
           const jpTranslateService = new JpTranslateService();
-          jpTranslateService.convert(floorNames.en).then(translatedText => {
+          await jpTranslateService.convert(floorNames.en).then(translatedText => {
             this.jpRomaji[floorNames.en] = translatedText;
             floorSlug = this.slug.slugify(translatedText);
-            console.log('New JP Translate for tower ==> "' + floorNames.en + '": "' + translatedText + '",');
           });
         } else {
           floorSlug = this.slug.slugify(this.jpRomaji[floorNames.en]);

@@ -3153,6 +3153,26 @@
             "value": "デスパレーション"
         },
         {
+            "key": "SK_LW_EC_STRN_A_01",
+            "value": "バリアブレイク"
+        },
+        {
+            "key": "SK_LW_EC_STRN_C_01",
+            "value": "ハザードクラッシュ強化"
+        },
+        {
+            "key": "SK_LW_EC_STRN_C_01B",
+            "value": "ハザードインジュリー"
+        },
+        {
+            "key": "SK_LW_EC_STRN_C_02",
+            "value": "破滅の咆哮強化"
+        },
+        {
+            "key": "SK_LW_EC_STRN_C_02B",
+            "value": "破滅の脅嚇"
+        },
+        {
             "key": "SK_LW_GRSR_ATK",
             "value": "通常攻撃"
         },
@@ -5501,6 +5521,10 @@
             "value": "みんなのうらみ"
         },
         {
+            "key": "SK_TNBR_M_04_BR",
+            "value": "みんなのうらみ"
+        },
+        {
             "key": "SK_DRGN_ATK",
             "value": "通常攻撃"
         },
@@ -5862,6 +5886,14 @@
         },
         {
             "key": "SK_SNAK_R_01",
+            "value": "カウンターパライズ"
+        },
+        {
+            "key": "SK_SNAK_M_01_TW",
+            "value": "パライズブレス"
+        },
+        {
+            "key": "SK_SNAK_R_01_TW",
             "value": "カウンターパライズ"
         },
         {
@@ -6726,6 +6758,10 @@
         },
         {
             "key": "SK_AGON_R_01",
+            "value": "ドリルアーム"
+        },
+        {
+            "key": "SK_AGON_R_01_B",
             "value": "ドリルアーム"
         },
         {
@@ -7941,6 +7977,26 @@
             "value": "飛甲の極意"
         },
         {
+            "key": "SK_LW_EC_LAN_A_05",
+            "value": "突撃陣形"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_09",
+            "value": "ナイトホーク強化"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_09B",
+            "value": "ナイトグリフォン"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_10",
+            "value": "刺突の極意強化"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_10B",
+            "value": "迅突の極み"
+        },
+        {
             "key": "SK_LW_EC_SWN_A_01",
             "value": "カラミティハザード"
         },
@@ -8661,6 +8717,26 @@
             "value": "無影打ち"
         },
         {
+            "key": "SK_LW_EC_THI_A_02",
+            "value": "スリプルスピン"
+        },
+        {
+            "key": "SK_LW_EC_THI_C_03",
+            "value": "ハートを盗む強化"
+        },
+        {
+            "key": "SK_LW_EC_THI_C_03B",
+            "value": "ハートをもてあそぶ"
+        },
+        {
+            "key": "SK_LW_EC_THI_C_04",
+            "value": "シーフの心得強化"
+        },
+        {
+            "key": "SK_LW_EC_THI_C_04B",
+            "value": "シーフの極意"
+        },
+        {
             "key": "SK_LW_EC_NIN_A_01_SOIL",
             "value": "滅気術"
         },
@@ -8759,6 +8835,26 @@
         {
             "key": "SK_LW_EC_MSW_C_02B",
             "value": "ナイトブレードの秘奥"
+        },
+        {
+            "key": "SK_LW_EC_GRM_A_01",
+            "value": "レジストウィーク"
+        },
+        {
+            "key": "SK_LW_EC_GRM_C_01",
+            "value": "バエアロラ強化"
+        },
+        {
+            "key": "SK_LW_EC_GRM_C_01B",
+            "value": "バエアロラ【耐護】"
+        },
+        {
+            "key": "SK_LW_EC_GRM_C_02",
+            "value": "エメラルドエコー強化"
+        },
+        {
+            "key": "SK_LW_EC_GRM_C_02B",
+            "value": "ディープエメラルド"
         },
         {
             "key": "SK_US_POTION",
@@ -9378,6 +9474,10 @@
         },
         {
             "key": "SK_MA_LW_GRSR_01",
+            "value": "マスターアビリティ"
+        },
+        {
+            "key": "SK_MA_LW_VERN",
             "value": "マスターアビリティ"
         },
         {
@@ -10549,6 +10649,10 @@
             "value": "初期AP1-999アップ"
         },
         {
+            "key": "SK_BTL_AAP_1-999_U",
+            "value": "獲得AP1-999アップ"
+        },
+        {
             "key": "SK_BTL_ATK_1-999_U",
             "value": "物攻1-999アップ"
         },
@@ -11393,6 +11497,10 @@
             "value": "人キラー1-100アップ"
         },
         {
+            "key": "SK_BTL_KILLER_AQA_1-100_U",
+            "value": "水棲キラー1-100アップ"
+        },
+        {
             "key": "SK_BTL_PKILLER_MAN_1-100_U",
             "value": "物理攻撃時人キラー1-100アップ"
         },
@@ -11489,6 +11597,10 @@
             "value": "状態異常【スロウ】確率1-100アップ"
         },
         {
+            "key": "SK_BTL_STOP_1-100_U",
+            "value": "状態異常【ストップ】確率1-100アップ"
+        },
+        {
             "key": "SK_BTL_DONAC_1-100_U",
             "value": "状態異常【ドンアク】確率1-100アップ"
         },
@@ -11527,6 +11639,14 @@
         {
             "key": "SK_BTL_RESMGPIERCE_1-100_U_KISO",
             "value": "魔法耐性貫通率1-100アップ(基礎ステ)"
+        },
+        {
+            "key": "SK_LW_PIERCE_SHOOT_1_100U",
+            "value": "射撃耐性貫通率1-100アップ"
+        },
+        {
+            "key": "SK_LW_PIERCE_SHOOT_1_100U_KISO",
+            "value": "射撃耐性貫通率1-100アップ(基礎ステ)"
         },
         {
             "key": "SK_BTL_STR_FIRE_1-100_U",
