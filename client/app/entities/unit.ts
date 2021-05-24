@@ -727,8 +727,6 @@ export class Unit {
     let conditionChecked = true;
 
     conditions.forEach(condition => {
-      console.log(condition)
-      console.log(this)
       switch (condition.type) {
         case 'unit':
           if (condition.items.indexOf(this.dataId) === -1) {
@@ -743,6 +741,7 @@ export class Unit {
           });
 
           const tableMainJob = this.jobs[0].split('_');
+          // @ts-ignore
           const tableSubJob = this.jobs[this.subJob].split('_');
           if (jobs.indexOf(tableMainJob[0] + '_' + tableMainJob[1] + '_' + tableMainJob[2]) === -1
             && jobs.indexOf(tableSubJob[0] + '_' + tableSubJob[1] + '_' + tableSubJob[2]) === -1) {
@@ -750,14 +749,14 @@ export class Unit {
           }
           break;
         case 'mainJob':
-          const jobs = [];
+          const mainJobs = [];
           condition.items.forEach(job => {
             const tempJob = job.split('_');
-            jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
+            mainJobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
           });
 
           const tableJob = this.jobs[0].split('_');
-          if (jobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
+          if (mainJobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
             conditionChecked = false;
           }
           break;

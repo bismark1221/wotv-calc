@@ -495,14 +495,14 @@ export class SimulatorService {
           }
           break;
         case 'mainJob':
-          const jobs = [];
+          const mainJobs = [];
           condition.items.forEach(job => {
             const tempJob = job.split('_');
-            jobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
+            mainJobs.push(tempJob[0] + '_' + tempJob[1] + '_' + tempJob[2]);
           });
 
           const tableJob = unit.jobs[0].split('_');
-          if (jobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
+          if (mainJobs.indexOf(tableJob[0] + '_' + tableJob[1] + '_' + tableJob[2]) === -1) {
             conditionChecked = false;
           }
           break;
