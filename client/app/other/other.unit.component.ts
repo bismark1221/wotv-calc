@@ -183,6 +183,8 @@ export class OtherUnitComponent implements OnInit {
 
     formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
 
+    this.updateStatsFromMap(formattedEnemy, enemy.status);
+
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
@@ -248,6 +250,17 @@ export class OtherUnitComponent implements OnInit {
     this.getAvailableStatTypes(formattedEnemy);
 
     return formattedEnemy;
+  }
+
+  updateStatsFromMap(enemy, stats) {
+    if (stats) {
+      stats.forEach(stat => {
+        enemy.stats[stat.type] = {
+          baseTotal: stat.value,
+          total: stat.value
+        };
+      });
+    }
   }
 
   updateStatsForJob(enemy, skill) {
@@ -349,6 +362,7 @@ export class OtherUnitComponent implements OnInit {
       'MISSILE_RES',
       'MAGIC_RES',
       'POISON_RES',
+      'FROSTBITE_RES',
       'BLIND_RES',
       'SLEEP_RES',
       'SILENCE_RES',
@@ -362,7 +376,8 @@ export class OtherUnitComponent implements OnInit {
       'IMMOBILIZE_RES',
       'DISABLE_RES',
       'BERSERK_RES',
-      'DOOM_RES'
+      'DOOM_RES',
+      'STUN_RES'
     ];
 
     const hasStats = [];
