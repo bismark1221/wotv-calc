@@ -74,7 +74,6 @@ export class OtherIndexComponent implements OnInit {
 
   @ViewChild('leftWrapperContent') leftWrapperContent: ElementRef;
   @ViewChild('rightWrapperHeader') rightWrapperHeader: ElementRef;
-
   @ViewChild('rightWrapperContent') rightWrapperContent: ElementRef;
 
   constructor(

@@ -24,6 +24,45 @@ export class UnitComponent implements OnInit {
   specialBismark = false;
   activeTab;
   possibleSkillTypes = ['support', 'counter'];
+  indexUnit = [];
+
+  indexImageStatsType = [
+    'SLASH_RES',
+    'PIERCE_RES',
+    'STRIKE_RES',
+    'MISSILE_RES',
+    'MAGIC_RES',
+    'SLASH_ATK',
+    'PIERCE_ATK',
+    'STRIKE_ATK',
+    'MISSILE_ATK',
+    'MAGIC_ATK',
+    'FIRE_RES',
+    'ICE_RES',
+    'EARTH_RES',
+    'WIND_RES',
+    'LIGHTNING_RES',
+    'WATER_RES',
+    'LIGHT_RES',
+    'DARK_RES',
+    'POISON_RES',
+    'FROSTBITE_RES',
+    'BLIND_RES',
+    'SLEEP_RES',
+    'SILENCE_RES',
+    'PARALYZE_RES',
+    'CONFUSION_RES',
+    'PETRIFY_RES',
+    'TOAD_RES',
+    'CHARM_RES',
+    'SLOW_RES',
+    'STOP_RES',
+    'IMMOBILIZE_RES',
+    'DISABLE_RES',
+    'BERSERK_RES',
+    'DOOM_RES',
+    'STUN_RES'
+  ];
 
   constructor(
     private unitService: UnitService,
@@ -51,6 +90,8 @@ export class UnitComponent implements OnInit {
         }
 
         await this.formatUnit();
+        this.getIndexUnit();
+
         this.navService.setTitle(this.unit.name);
       }
     });
@@ -459,5 +500,57 @@ export class UnitComponent implements OnInit {
 
   getRoute(route) {
     return this.navService.getRoute(route);
+  }
+
+  async getIndexUnit() {
+    const buildedUnit = await this.unitService.selectUnitForBuilder(this.unit.dataId, null, true);
+
+    const stats = {};
+    Object.keys(buildedUnit.stats).forEach(statType => {
+      stats[statType] = buildedUnit.stats[statType].total;
+    });
+
+    const indexStatsType = [
+      'HP',
+      'TP',
+      'AP',
+      'ATK',
+      'DEF',
+      'MAG',
+      'SPR',
+      'AGI',
+      'DEX',
+      'LUCK',
+      'EVADE',
+      'ACCURACY',
+      'CRITIC_RATE'
+    ];
+
+    this.indexUnit = [[]];
+    indexStatsType.forEach(stat => {
+      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+        this.indexUnit.push([]);
+      }
+
+      if (stats[stat]) {
+        this.indexUnit[this.indexUnit.length - 1].push({
+          type: stat,
+          value: stats[stat]
+        });
+      }
+    });
+
+    this.indexImageStatsType.forEach(stat => {
+      if (this.indexUnit[this.indexUnit.length - 1].length === 8) {
+        this.indexUnit.push([]);
+      }
+
+      if (stats[stat]) {
+        this.indexUnit[this.indexUnit.length - 1].push({
+          type: stat,
+          value: stats[stat]
+        });
+      }
+    });
   }
 }

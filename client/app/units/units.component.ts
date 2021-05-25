@@ -27,7 +27,7 @@ export class UnitsComponent implements OnInit {
       weapon: 'ALL',
       armor: []
     },
-    mainJob: true,
+    mainJob: false,
     subJob: false,
     exJob: false
   };

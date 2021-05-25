@@ -66,6 +66,20 @@
           <label for="job{{job.dataId}}">{{ job.name }}</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('equipmentTypes')" [attr.aria-expanded]="!collapsed.equipmentTypes">
+        Equipment Types
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.equipmentTypes" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.equipmentTypes" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.equipmentTypes">
+        <div *ngFor="let equipmentType of equipmentTypes">
+          <input type="checkbox" id="equipmentType{{equipmentType.split('###')[1]}}" (change)="filterList('equipmentTypes', equipmentType)" [checked]="isFilterChecked.equipmentTypes[equipmentType]"/>
+          <label for="equipmentType{{equipmentType.split('###')[1]}}">{{ equipmentType.split('###')[1] }}</label>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -390,18 +390,29 @@ export class CardService {
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
         ) {
           let needToAddCard = false;
-          if (!filters.element || filters.element.length === 0) {
+          if ((!filters.element || filters.element.length === 0) && !filters.onlyActiveSkill) {
             needToAddCard = true;
           } else {
-            card.partyBuffs.forEach(buff => {
-              if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
-                filters.element.forEach(elem => {
-                  if (buff.cond[0].items.indexOf(elem) !== -1) {
-                    needToAddCard = true;
-                  }
-                });
-              }
-            });
+            if (filters.element && filters.element.length > 0) {
+              card.partyBuffs.forEach(buff => {
+                if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
+                  filters.element.forEach(elem => {
+                    if (buff.cond[0].items.indexOf(elem) !== -1) {
+                      needToAddCard = true;
+                    }
+                  });
+                }
+              });
+            }
+
+            if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
+              needToAddCard = false;
+              card.unitBuffs.forEach(buff => {
+                if (buff.classic && buff.classic.type === 'skill') {
+                  needToAddCard = true;
+                }
+              });
+            }
           }
 
           if (needToAddCard) {

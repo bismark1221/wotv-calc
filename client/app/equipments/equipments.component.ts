@@ -15,6 +15,7 @@ import { NameService } from '../services/name.service';
 export class EquipmentsComponent implements OnInit {
   equipments = [];
   acquisitionTypes;
+  equipmentTypes = [];
   searchText = '';
   sort = 'rarity';
   order = 'asc';
@@ -23,20 +24,23 @@ export class EquipmentsComponent implements OnInit {
     rarity: [],
     type: [],
     job: [],
-    acquisition: []
+    acquisition: [],
+    equipmentTypes: []
   };
 
   isFilterChecked = {
     rarity: [],
     type: [],
     job: [],
-    acquisition: []
+    acquisition: [],
+    equipmentTypes: []
   };
   collapsed = {
     rarity: true,
     type: true,
     job: true,
-    acquisition: true
+    acquisition: true,
+    equipmentTypes: true
   };
 
   rarities = [
@@ -46,6 +50,7 @@ export class EquipmentsComponent implements OnInit {
     'R',
     'N'
   ];
+
   weapons = [
     'AXE',
     'BOOK',
@@ -62,6 +67,7 @@ export class EquipmentsComponent implements OnInit {
     'SPEAR',
     'SWORD'
   ];
+
   armors = [
     'ARMOR',
     'CLOTH',
@@ -160,12 +166,16 @@ export class EquipmentsComponent implements OnInit {
   }
 
   async getAcquisitionTypes() {
-    this.acquisitionTypes = await this.equipmentService.getAcquisitionTypes();
+    const types = await this.equipmentService.getAcquisitionTypes();
+
+    this.acquisitionTypes = types.acquisitionTypes;
     this.acquisitionTypes.forEach(type => {
       if (type !== 'Unknown') {
         this.filters.acquisition.push(type);
       }
     });
+
+    this.equipmentTypes = types.equipmentTypes;
   }
 
   async unselectAllType() {
@@ -213,6 +223,14 @@ export class EquipmentsComponent implements OnInit {
         this.isFilterChecked.acquisition[acquisition] = false;
       } else {
         this.isFilterChecked.acquisition[acquisition] = true;
+      }
+    });
+
+    this.equipmentTypes.forEach(equipmentType => {
+      if (this.filters.equipmentTypes.indexOf(equipmentType) === -1) {
+        this.isFilterChecked.equipmentTypes[equipmentType] = false;
+      } else {
+        this.isFilterChecked.equipmentTypes[equipmentType] = true;
       }
     });
 

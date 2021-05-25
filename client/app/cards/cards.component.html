@@ -45,6 +45,20 @@
           <label for="element{{ element }}">{{ element | titlecase }}</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('skill')" [attr.aria-expanded]="!collapsed.skill">
+        Skill
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.skill" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.skill" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.skill">
+        <div class="switchMainJob">
+          Only active skill ?
+          <ui-switch class="switchActiveSkill" (click)="toggleOnlyActiveSkill()" checkedLabel="yes" uncheckedLabel="no" [checked]="filters.onlyActiveSkill === true"></ui-switch>
+        </div>
+      </div>
     </div>
   </div>
 

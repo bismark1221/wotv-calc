@@ -590,6 +590,25 @@
             </tr>
           </tbody>
         </table>
+
+        <table class="statsTable">
+          <tr>
+            <th colspan="15">Total Stat (max lvl & max job)</th>
+          </tr>
+          <tbody *ngFor="let line of indexUnit">
+            <tr>
+              <th class="sub" *ngFor="let stat of line">
+                <img *ngIf="indexImageStatsType.indexOf(stat.type) !== -1" class="statusAilmentImg" title="{{ stat.type }}" src="{{ '/assets/buffs/' + stat.type.toLowerCase() + '.png' }}">
+                <span *ngIf="indexImageStatsType.indexOf(stat.type) === -1">{{ stat.type }}</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="heightResTd" *ngFor="let stat of line">
+                {{ stat.value }}<span *ngIf="indexImageStatsType.indexOf(stat.type) !== -1"> %</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </ng-template>
   </li>

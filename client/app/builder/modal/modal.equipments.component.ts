@@ -78,7 +78,8 @@ export class ModalEquipmentsComponent implements OnInit {
   }
 
   async getAcquisitionTypes() {
-    this.acquisitionTypes = await this.equipmentService.getAcquisitionTypes();
+    const types = await this.equipmentService.getAcquisitionTypes();
+    this.acquisitionTypes = types.acquisitionTypes;
     let unknownIndex = 0;
 
     this.acquisitionTypes.forEach((type, typeIndex) => {

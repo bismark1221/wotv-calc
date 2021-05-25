@@ -304,6 +304,10 @@ export class EquipmentService {
             possbibleToAdd = this.equipmentHasJob(equipment, filters);
           }
 
+          if (filters.equipmentTypes && filters.equipmentTypes.length > 0) {
+            possbibleToAdd = this.equipmentHasGrow(equipment, filters);
+          }
+
           if (possbibleToAdd) {
             filteredEquipments.push(equipment);
           }
@@ -327,6 +331,18 @@ export class EquipmentService {
     });
 
     return equipmentHasJob;
+  }
+
+  private equipmentHasGrow(equipment, filters) {
+    let equipmentHasGrow = false;
+
+    Object.keys(equipment.grows).forEach(growId => {
+      if (filters.equipmentTypes.length === 0 || filters.equipmentTypes.indexOf(growId + '###' + equipment.grows[growId].names[this.translateService.getDefaultLang()]) !== -1) {
+        equipmentHasGrow = true;
+      }
+    });
+
+    return equipmentHasGrow;
   }
 
   async getEquipmentBySlug(slug: string) {
@@ -636,17 +652,30 @@ export class EquipmentService {
   async getAcquisitionTypes() {
     await this.getEquipments();
 
-    const types = ['Unknown', 'tmr'];
+    const acquisitionTypes = ['Unknown', 'tmr'];
+    const equipmentTypes = [];
+
     this[this.navService.getVersion() + '_equipments'].forEach(equipment => {
       if (equipment.acquisition.type !== 'Unknown' && equipment.acquisition.type !== 'tmr') {
         const acquisition = equipment.acquisition.type[this.translateService.getDefaultLang()];
 
-        if (types.indexOf(acquisition) === -1) {
-          types.push(acquisition);
+        if (acquisitionTypes.indexOf(acquisition) === -1) {
+          acquisitionTypes.push(acquisition);
         }
       }
+
+      Object.keys(equipment.grows).forEach(growId => {
+        const grow = equipment.grows[growId].names[this.translateService.getDefaultLang()];
+
+        if (grow !== 'ARTIFACT_50' && grow !== 'ARTIFACT_TRUST' && equipmentTypes.indexOf(growId + '###' + grow) === -1) {
+          equipmentTypes.push(growId + '###' + grow);
+        }
+      });
     });
 
-    return types;
+    return {
+      acquisitionTypes: acquisitionTypes,
+      equipmentTypes: equipmentTypes
+    };
   }
 }

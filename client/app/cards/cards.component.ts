@@ -18,7 +18,8 @@ export class CardsComponent implements OnInit {
   filters = {
     rarity: [],
     limited: [],
-    element: []
+    element: [],
+    onlyActiveSkill: false,
   };
   version = 'GL';
 
@@ -30,7 +31,8 @@ export class CardsComponent implements OnInit {
   collapsed = {
     rarity: false,
     element: false,
-    limited: false
+    limited: false,
+    skill: false
   };
 
   rarities = [
@@ -145,5 +147,12 @@ export class CardsComponent implements OnInit {
   toogleCollapse(section) {
     this.collapsed[section] = !this.collapsed[section];
     sessionStorage.setItem('cardsCollapsed', JSON.stringify(this.collapsed));
+  }
+
+  async toggleOnlyActiveSkill() {
+    this.filters.onlyActiveSkill = !this.filters.onlyActiveSkill;
+
+    await this.getCards();
+    sessionStorage.setItem('cardsFilters', JSON.stringify(this.filters));
   }
 }

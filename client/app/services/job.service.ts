@@ -63,6 +63,17 @@ export class JobService {
         job.dataId = genericDataId;
 
         if (uniqJobs.indexOf(genericDataId) === -1) {
+          if (job.dataId === 'JB_LW_WAR') {
+            job.names = {
+              en: 'Warrior',
+              fr: 'Guerrier',
+              de: 'Krieger',
+              es: 'Guerrero',
+              ko: '전사',
+              zh: '戰士'
+            };
+          }
+
           jobs.push(job);
           uniqJobs.push(genericDataId);
         }
