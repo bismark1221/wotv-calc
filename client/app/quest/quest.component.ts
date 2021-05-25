@@ -41,6 +41,7 @@ export class QuestComponent implements OnInit {
     MAGIC_RES : 'assets/damage/neutral_magic.png',
 
     POISON_RES : 'assets/status-ailments/POISON.png',
+    FROSTBITE_RES : 'assets/status-ailments/FROSTBITE.png',
     BLIND_RES : 'assets/status-ailments/BLIND.png',
     SLEEP_RES : 'assets/status-ailments/SLEEP.png',
     SILENCE_RES : 'assets/status-ailments/SILENCE.png',
@@ -54,7 +55,8 @@ export class QuestComponent implements OnInit {
     IMMOBILIZE_RES : 'assets/status-ailments/IMMOBILIZE.png',
     DISABLE_RES : 'assets/status-ailments/DISABLE.png',
     BERSERK_RES : 'assets/status-ailments/BERSERK.png',
-    DOOM_RES : 'assets/status-ailments/DOOM.png'
+    DOOM_RES : 'assets/status-ailments/DOOM.png',
+    STUN_RES : 'assets/status-ailments/STUN.png'
   };
 
   constructor(
@@ -87,7 +89,7 @@ export class QuestComponent implements OnInit {
       } else {
         await this.formatQuest();
 
-        // console.log(this.quest)
+        console.log(this.quest)
 
         this.navService.setTitle(this.quest.name);
       }
@@ -289,6 +291,8 @@ export class QuestComponent implements OnInit {
 
     formattedEnemy = JSON.parse(JSON.stringify(formattedEnemy));
 
+    this.updateStatsFromMap(formattedEnemy, enemy.status);
+
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
@@ -358,6 +362,17 @@ export class QuestComponent implements OnInit {
     this.isCollapsedEnemy[index] = true;
 
     return formattedEnemy;
+  }
+
+  updateStatsFromMap(enemy, stats) {
+    if (stats) {
+      stats.forEach(stat => {
+        enemy.stats[stat.type] = {
+          baseTotal: stat.value,
+          total: stat.value
+        };
+      });
+    }
   }
 
   updateStatsForJob(enemy, skill) {
@@ -459,6 +474,7 @@ export class QuestComponent implements OnInit {
       'MISSILE_RES',
       'MAGIC_RES',
       'POISON_RES',
+      'FROSTBITE_RES',
       'BLIND_RES',
       'SLEEP_RES',
       'SILENCE_RES',
@@ -472,7 +488,8 @@ export class QuestComponent implements OnInit {
       'IMMOBILIZE_RES',
       'DISABLE_RES',
       'BERSERK_RES',
-      'DOOM_RES'
+      'DOOM_RES',
+      'STUN_RES'
     ];
 
     const hasStats = [];

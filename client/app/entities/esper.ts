@@ -144,6 +144,7 @@ export class Esper {
       'AGI',
       'LUCK',
       'POISON_RES',
+      'FROSTBITE_RES',
       'BLIND_RES',
       'SLEEP_RES',
       'SILENCE_RES',
@@ -159,7 +160,8 @@ export class Esper {
       'IMMOBILIZE_RES',
       'DISABLE_RES',
       'BERSERK_RES',
-      'DOOM_RES'
+      'DOOM_RES',
+      'STUN_RES'
     ];
 
     statsType.forEach(stat => {
@@ -283,6 +285,7 @@ export class Esper {
       'CRITIC_AVOID',
       'EVADE',
       'POISON',
+      'FROSTBITE',
       'BLIND',
       'SLEEP',
       'SILENCE',
@@ -297,6 +300,7 @@ export class Esper {
       'DISABLE',
       'BERSERK',
       'DOOM',
+      'STUN',
       'MOVE',
       'JUMP',
       'RANGE'

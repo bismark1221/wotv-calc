@@ -873,11 +873,62 @@ export class SkillService {
       case 'AGI_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' AGI Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'LUCK_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' LUCK Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'DEX_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' DEX Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'ACCURACY_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' ACCURACY Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'EVADE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' EVADE Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'BRAVERY_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Bravery Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'FAITH_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Faith Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_SLASH_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Slash resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_PIERCE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Pierce resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_STRIKE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Strike resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_MISSILE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Missile resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_MAGIC_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Magic resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_FIRE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Fire resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_ICE_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Ice resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_WIND_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Wind resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_EARTH_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Earth resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_LIGHTNING_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Lightning resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_WATER_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Water resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_DARK_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Dark resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_LIGHT_DEBUFF_RES' :
+        html = this.getIncrease(effect) + ' Light resistance Debuff Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RES_ALL_ATTACKS_DEBUFF_RES' :
         html = this.getIncrease(effect) + ' Debuff Resistance for All Attacks Type Resistance' + this.getValue(skill, effect) + this.getTurns(effect);
@@ -1122,8 +1173,23 @@ export class SkillService {
       case 'RES_MAGIC_ATK_PENETRATION' :
         html = 'Increase magic resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
+      case 'RES_FIRE_ATK_PENETRATION' :
+        html = 'Increase fire resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_WIND_ATK_PENETRATION' :
+        html = 'Increase wind resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_EARTH_ATK_PENETRATION' :
+        html = 'Increase earth resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
       case 'RES_WATER_ATK_PENETRATION' :
         html = 'Increase water resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_ICE_ATK_PENETRATION' :
+        html = 'Increase ice resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
+      break;
+      case 'RES_LIGHTNING_ATK_PENETRATION' :
+        html = 'Increase lightning resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);
       break;
       case 'RES_LIGHT_ATK_PENETRATION' :
         html = 'Increase light resistance penetration' + this.getValue(skill, effect) + this.getTurns(effect);

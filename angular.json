@@ -55,8 +55,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wotv-calc:build",
-            "proxyConfig": "proxy.conf.json"
+            "browserTarget": "wotv-calc:build"
           },
           "configurations": {
             "production": {

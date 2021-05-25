@@ -54,6 +54,7 @@ export class OtherIndexComponent implements OnInit {
     {type: 'DARK_RES', width: 70},
 
     {type: 'POISON_RES', width: 70},
+    {type: 'FROSTBITE_RES', width: 70},
     {type: 'BLIND_RES', width: 70},
     {type: 'SLEEP_RES', width: 70},
     {type: 'SILENCE_RES', width: 70},
@@ -67,7 +68,8 @@ export class OtherIndexComponent implements OnInit {
     {type: 'IMMOBILIZE_RES', width: 70},
     {type: 'DISABLE_RES', width: 70},
     {type: 'BERSERK_RES', width: 70},
-    {type: 'DOOM_RES', width: 70}
+    {type: 'DOOM_RES', width: 70},
+    {type: 'STUN_RES', width: 70}
   ];
 
   @ViewChild('leftWrapperContent') leftWrapperContent: ElementRef;

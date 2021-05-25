@@ -121,6 +121,24 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     'slash_res',
     'strike_atk',
     'strike_res',
+
+    'poison_res',
+    'frostbite_res',
+    'blind_res',
+    'sleep_res',
+    'silence_res',
+    'paralyze_res',
+    'confusion_res',
+    'petrify_res',
+    'toad_res',
+    'charm_res',
+    'slow_res',
+    'stop_res',
+    'immobilize_res',
+    'disable_res',
+    'berserk_res',
+    'doom_res',
+    'stun_res'
   ];
 
   damageSim = null;

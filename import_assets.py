@@ -326,6 +326,11 @@ for fileName in fileNames:
                     if 'body' in rawEnemy['part']:
                       if rawEnemy['part']['body'] != '':
                           reducedEnemy['hasBody'] = True
+                if 'status' in rawEnemy:
+                    reducedEnemy['status'] = rawEnemy['status']
+                if 'nrmSkl' in rawEnemy:
+                    if rawEnemy['nrmSkl']['iname'] != "":
+                        reducedEnemy['nrmSkl'] = rawEnemy['nrmSkl']['iname']
 
                 enemy.append(reducedEnemy)
             data[fileName[:-5]]['enemy'] = enemy
@@ -392,6 +397,11 @@ for fileName in fileNames:
                     if 'body' in rawEnemy['part']:
                       if rawEnemy['part']['body'] != '':
                           reducedEnemy['hasBody'] = True
+                if 'status' in rawEnemy:
+                    reducedEnemy['status'] = rawEnemy['status']
+                if 'nrmSkl' in rawEnemy:
+                    if rawEnemy['nrmSkl']['iname'] != "":
+                        reducedEnemy['nrmSkl'] = rawEnemy['nrmSkl']['iname']
 
                 enemy.append(reducedEnemy)
             data[fileName[:-5]]['enemy'] = enemy

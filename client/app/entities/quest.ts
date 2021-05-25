@@ -28,7 +28,6 @@ export class Quest {
 
   drops = [];
 
-
   constructFromJson(quest, translateService) {
     this.dataId = quest.dataId;
     this.names = quest.names;

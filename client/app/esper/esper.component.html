@@ -54,6 +54,7 @@
               <th class="sub">AGI</th>
               <th class="sub">LUCK</th>
               <th class="sub" *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
+              <th class="sub" *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></th>
@@ -68,6 +69,7 @@
               <th class="sub" *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></th>
               <th class="sub" *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></th>
+              <th class="sub" *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0"><img class="elementImg" title="stun resistance" src="{{'assets/status-ailments/STUN.png'}}" /></th>
               <th class="sub">SP</th>
             </tr>
             <tr>
@@ -81,6 +83,7 @@
               <td>{{ esper.stats.AGI[0].min }}</td>
               <td>{{ esper.stats.LUCK[0].min }}</td>
               <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">0 %</td>
+              <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">0 %</td>
@@ -95,6 +98,7 @@
               <td *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">0 %</td>
+              <td *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0">0 %</td>
               <td rowspan="2">{{ esper.maxSP }}</td>
             </tr>
             <tr>
@@ -108,6 +112,7 @@
               <td>{{ esper.stats.AGI[esper.SPs.length - 1].max }}</td>
               <td>{{ esper.stats.LUCK[esper.SPs.length - 1].max }}</td>
               <td *ngIf="esper.stats.POISON_RES[esper.SPs.length -1].max > 0">{{ esper.stats.POISON_RES[esper.SPs.length -1].max }} %</td>
+              <td *ngIf="esper.stats.FROSTBITE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.FROSTBITE_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.BLIND_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BLIND_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.SLEEP_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SLEEP_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.SILENCE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.SILENCE_RES[esper.SPs.length -1].max }} %</td>
@@ -122,6 +127,7 @@
               <td *ngIf="esper.stats.DISABLE_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DISABLE_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.BERSERK_RES[esper.SPs.length -1].max > 0">{{ esper.stats.BERSERK_RES[esper.SPs.length -1].max }} %</td>
               <td *ngIf="esper.stats.DOOM_RES[esper.SPs.length -1].max > 0">{{ esper.stats.DOOM_RES[esper.SPs.length -1].max }} %</td>
+              <td *ngIf="esper.stats.STUN_RES[esper.SPs.length -1].max > 0">{{ esper.stats.STUN_RES[esper.SPs.length -1].max }} %</td>
             </tr>
           </tbody>
         </table>

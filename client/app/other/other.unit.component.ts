@@ -42,6 +42,7 @@ export class OtherUnitComponent implements OnInit {
     MAGIC_RES : 'assets/damage/neutral_magic.png',
 
     POISON_RES : 'assets/status-ailments/POISON.png',
+    FROSTBITE_RES : 'assets/status-ailments/FROSTBITE.png',
     BLIND_RES : 'assets/status-ailments/BLIND.png',
     SLEEP_RES : 'assets/status-ailments/SLEEP.png',
     SILENCE_RES : 'assets/status-ailments/SILENCE.png',
@@ -55,7 +56,8 @@ export class OtherUnitComponent implements OnInit {
     IMMOBILIZE_RES : 'assets/status-ailments/IMMOBILIZE.png',
     DISABLE_RES : 'assets/status-ailments/DISABLE.png',
     BERSERK_RES : 'assets/status-ailments/BERSERK.png',
-    DOOM_RES : 'assets/status-ailments/DOOM.png'
+    DOOM_RES : 'assets/status-ailments/DOOM.png',
+    STUN_RES : 'assets/status-ailments/STUN.png'
   };
 
   constructor(

@@ -85439,6 +85439,18 @@
       ]
     },
     {
+      "iname": "SK_BTL_STR_MAGIC_1_999_U",
+      "cap": 999,
+      "grow": "SKILL_999",
+      "type": 12,
+      "timing": 1,
+      "eff_type": 0,
+      "target": 0,
+      "t_buffs": [
+        "BUFF_BTL_STR_MAGIC_1_999_U"
+      ]
+    },
+    {
       "iname": "SK_BTL_STR_SLASH_1_100_U",
       "cap": 100,
       "grow": "SKILL_100",

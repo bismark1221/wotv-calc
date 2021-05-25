@@ -472,6 +472,7 @@ export class Unit {
       case 'ALL_AILMENTS_RES' :
         const ailments = [
           'POISON',
+          'FROSTBITE',
           'BLIND',
           'SLEEP',
           'SILENCE',
@@ -486,6 +487,7 @@ export class Unit {
           'DISABLE',
           'BERSERK',
           'DOOM',
+          'STUN'
         ];
 
         ailments.forEach(ailment => {
@@ -1532,6 +1534,7 @@ export class Unit {
       'CRITIC_AVOID',
       'EVADE',
       'POISON',
+      'FROSTBITE',
       'BLIND',
       'SLEEP',
       'SILENCE',
@@ -1546,6 +1549,7 @@ export class Unit {
       'DISABLE',
       'BERSERK',
       'DOOM',
+      'STUN'
     ];
 
     const findedStats = [];

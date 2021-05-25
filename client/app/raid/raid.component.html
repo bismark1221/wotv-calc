@@ -165,6 +165,7 @@
                 </tr>
                 <tr>
                   <th class="sub"><img class="statusAilmentImg" title="poison resistance" src="{{'assets/status-ailments/POISON.png'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="frostbite resistance" src="{{'assets/status-ailments/FROSTBITE.png'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="blind resistance" src="{{'assets/status-ailments/BLIND.png'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="sleep resistance" src="{{'assets/status-ailments/SLEEP.png'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="silence resistance" src="{{'assets/status-ailments/SILENCE.png'}}" /></th>
@@ -175,6 +176,7 @@
                 </tr>
                 <tr>
                   <td class="heightResTd"><span *ngIf="boss.stats.POISON_RES.min">{{ boss.stats.POISON_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.FROSTBITE_RES.min">{{ boss.stats.FROSTBITE_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.BLIND_RES.min">{{ boss.stats.BLIND_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.SLEEP_RES.min">{{ boss.stats.SLEEP_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.SILENCE_RES.min">{{ boss.stats.SILENCE_RES.min }} %</span></td>
@@ -191,6 +193,7 @@
                   <th class="sub"><img class="statusAilmentImg" title="disable resistance" src="{{'assets/status-ailments/DISABLE.png'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="berserk resistance" src="{{'assets/status-ailments/BERSERK.png'}}" /></th>
                   <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/DOOM.png'}}" /></th>
+                  <th class="sub"><img class="statusAilmentImg" title="doom resistance" src="{{'assets/status-ailments/STUN.png'}}" /></th>
                   <th class="sub"></th>
                 </tr>
                 <tr>
@@ -201,6 +204,7 @@
                   <td><span *ngIf="boss.stats.DISABLE_RES.min">{{ boss.stats.DISABLE_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.BERSERK_RES.min">{{ boss.stats.BERSERK_RES.min }} %</span></td>
                   <td><span *ngIf="boss.stats.DOOM_RES.min">{{ boss.stats.DOOM_RES.min }} %</span></td>
+                  <td><span *ngIf="boss.stats.STUN_RES.min">{{ boss.stats.STUN_RES.min }} %</span></td>
                   <td></td>
                 </tr>
               </tbody>

@@ -432,6 +432,250 @@ export class JsonService {
     509: 'GRANT_BUFF'
   };
 
+
+  statusParam = {
+    1: "HP",
+    2: "TP",
+    3: "AP",
+    4: "ATK",
+    5: "DEF",
+    6: "MAG",
+    7: "SPR",
+    8: "DEX",
+    9: "AGI",
+    10: "LUCK",
+    11: "MOVE",
+    12: "JUMP",
+
+    // 100: "ElemNoneAssist",
+    101: "FIRE_ATK",
+    102: "ICE_ATK",
+    103: "WIND_ATK",
+    104: "EARTH_ATK",
+    105: "LIGHTNING_ATK",
+    106: "WATER_ATK",
+    107: "LIGHT_ATK",
+    108: "DARK_ATK",
+
+    // 150: "ElemNoneResist",
+    151: "FIRE_RES",
+    152: "ICE_RES",
+    153: "WIND_RES",
+    154: "EARTH_RES",
+    155: "LIGHTNING_RES",
+    156: "WATER_RES",
+    157: "LIGHT_RES",
+    158: "DARK_RES",
+
+    200: "SLASH_ATK",
+    201: "PIERCE_ATK",
+    202: "STRIKE_ATK",
+    203: "MISSILE_ATK",
+    204: "MAGIC_ATK",
+    // 205: "AttackJumpAssist",
+
+    250: "SLASH_RES",
+    251: "PIERCE_RES",
+    252: "STRIKE_RES",
+    253: "MISSILE_RES",
+    254: "MAGIC_RES",
+    // 255: "AttackJumpResist",
+
+    // 300: "CondHealHpAssist",
+    // 301: "CondHealMpAssist",
+    // 302: "CondHealApAssist",
+    303: "POISON_ATK",
+    304: "BLIND_ATK",
+    305: "SLEEP_ATK",
+    306: "SILENCE_ATK",
+    307: "PARALYZE_ATK",
+    308: "CONFUSION_ATK",
+    309: "CHARM_ATK",
+    310: "PETRIFY_ATK",
+    311: "GRADUAL_PETRIFY_ATK",
+    312: "FROSTBITE_ATK",
+    313: "TOAD_ATK",
+    // 314: "CondSneakAssist",
+    // 315: "CondHasteAssist",
+    316: "SLOW_ATK",
+    317: "STOP_ATK",
+    318: "IMMOBILIZE_ATK",
+    319: "DISABLE_ATK",
+    320: "BERSERK_ATK",
+    321: "DOOM_ATK",
+    // 322: "CondRaiseAssist",
+    // 323: "CondReraiseAssist",
+    // 324: "CondProtectAssist",
+    // 325: "CondShellAssist",
+    // 326: "CondReflecAssist",
+    // 327: "CondFaithAssist",
+    // 328: "CondInnocenAssist",
+    // 329: "CondLevitateAssist",
+    330: "INSTANT_DEATH_ATK",
+    // 331: "CondQuickAssist",
+    // 332: "CondGutsAssist",
+    // 333: "CondPhyPerfectAvoidAssist",
+    // 334: "CondMagPerfectAvoidAssist",
+    // 335: "CondPerfectHitAssist",
+    // 336: "CondPerfectCriticalAssist",
+    // 337: "CondUnitTagAssist",
+    // 338: "CondKillerElementAssist",
+    // 339: "CondKillerSpeciesAssist",
+    // 340: "CondKillerBirthAssist",
+    // 341: "CondKillerTagAssist",
+    // 342: "CondStunAssist",
+    // 343: "CondChangeCtAssist",
+
+    // 400: "CondHealHpResist",
+    // 401: "CondHealMpResist",
+    // 402: "CondHealApResist",
+    403: "POISON_RES",
+    404: "BLIND_RES",
+    405: "SLEEP_RES",
+    406: "SILENCE_RES",
+    407: "PARALYZE_RES",
+    408: "CONFUSION_RES",
+    409: "CHARM_RES",
+    410: "PETRIFY_RES",
+    411: "GRADUAL_PETRIFY_RES",
+    412: "FROSTBITE_RES",
+    413: "TOAD_RES",
+    // 414: "CondSneakResist",
+    // 415: "CondHasteResist",
+    416: "SLOW_RES",
+    417: "STOP_RES",
+    418: "IMMOBILIZE_RES",
+    419: "DISABLE_RES",
+    420: "BERSERK_RES",
+    421: "DOOM_RES",
+    /*422: "CondRaiseResist",
+    423: "CondReraiseResist",
+    424: "CondProtectResist",
+    425: "CondShellResist",
+    426: "CondReflecResist",
+    427: "CondFaithResist",
+    428: "CondInnocenResist",*/
+    429: "FLOAT_RES",
+    430: "INSTANT_DEATH_RES",
+    /*431: "CondQuickResist",
+    432: "CondGutsResist",
+    433: "CondPhyPerfectAvoidResist",
+    434: "CondMagPerfectAvoidResist",
+    435: "CondPerfectHitResist",
+    436: "CondPerfectCriticalResist",
+    437: "CondUnitTagResist",
+    438: "CondKillerElementResist",
+    439: "CondKillerSpeciesResist",
+    440: "CondKillerBirthResist",
+    441: "CondKillerTagResist",*/
+    442: "STUN_RES",
+    443: "IMMUNE_CT_CHANGE",
+
+    500: "INITIAL_AP",
+    501: "RANGE",
+    // 502: "OtherEffectScope",
+    // 503: "OtherEffectHeight",
+    504: "ACCURACY",
+    505: "EVADE",
+    506: "CRITIC_RATE",
+    507: "CRITIC_DAMAGE",
+    508: "CRITIC_AVOID",
+    // 509: "OtherKillerElement",
+    // 510: "OtherKillerSpecies",
+    // 511: "OtherKillerBirth",
+    // 512: "OtherKillerTag",
+    // 513: "OtherKillerSex",
+    514: "PROVOKE",
+    515: "BRAVERY",
+    516: "FAITH",
+    517: "NON_ATTACK_ACTIVATION_TIME",
+    518: "ATTACK_ACTIVATION_TIME",
+
+    600: "DEBUFF_RES",
+    601: "MAX_HP_DOWN_RES",
+    602: "ATK_DEBUFF_RES",
+    603: "DEF_DEBUFF_RES",
+    604: "MAG_DEBUFF_RES",
+    605: "SPR_DEBUFF_RES",
+    606: "DEX_DEBUFF_RES",
+    607: "AGI_DEBUFF_RES",
+    608: "LUCK_DEBUFF_RES",
+
+    // 609: "OtherDebuffResistSlash",
+    // 610: "OtherDebuffResistPierce",
+    // 611: "OtherDebuffResistBlow",
+    // 612: "OtherDebuffResistShot",
+    // 613: "OtherDebuffResistMagic",
+
+    614: "ACCURACY_DEBUFF_RES",
+    615: "EVADE_DEBUFF_RES",
+
+    616: "BRAVERY_DEBUFF_RES",
+    617: "FAITH_DEBUFF_RES",
+
+    618: "RES_FIRE_DEBUFF_RES",
+    619: "RES_ICE_DEBUFF_RES",
+    620: "RES_WIND_DEBUFF_RES",
+    621: "RES_EARTH_DEBUFF_RES",
+    622: "RES_LIGHTNING_DEBUFF_RES",
+    623: "RES_WATER_DEBUFF_RES",
+    624: "RES_LIGHT_DEBUFF_RES",
+    625: "RES_DARK_DEBUFF_RES",
+
+    626: "RES_SLASH_DEBUFF_RES",
+    627: "RES_PIERCE_DEBUFF_RES",
+    628: "RES_STRIKE_DEBUFF_RES",
+    629: "RES_MISSILE_DEBUFF_RES",
+    630: "RES_MAGIC_DEBUFF_RES",
+
+    631: "RES_ALL_ATTACKS_DEBUFF_RES",
+    632: "RES_ALL_ELEMENTS_DEBUFF_RES",
+
+    700: "DEFENSE_PENETRATION",
+    // 701: "OtherNegDefIgnore",
+    702: "SPIRIT_PENETRATION",
+    // 703: "OtherNegMndIgnore",
+    704: "RES_SLASH_ATK_PENETRATION",
+    705: "RES_PIERCE_ATK_PENETRATION",
+    706: "RES_STRIKE_ATK_PENETRATION",
+    707: "RES_MISSILE_ATK_PENETRATION",
+    708: "RES_MAGIC_ATK_PENETRATION",
+    // 709: "OtherNegSlashIgnore",
+    // 710: "OtherNegPierceIgnore",
+    // 711: "OtherNegBlowIgnore",
+    // 712: "OtherNegShotIgnore",
+    // 713: "OtherNegMagicIgnore",
+    714: "RES_FIRE_ATK_PENETRATION",
+    715: "RES_ICE_ATK_PENETRATION",
+    716: "RES_WIND_ATK_PENETRATION",
+    717: "RES_EARTH_ATK_PENETRATION",
+    718: "RES_LIGHTNING_ATK_PENETRATION",
+    719: "RES_WATER_ATK_PENETRATION",
+    720: "RES_LIGHT_ATK_PENETRATION",
+    721: "RES_DARK_ATK_PENETRATION",
+    // 722: "OtherNegFireIgnore",
+    // 723: "OtherNegIceIgnore",
+    // 724: "OtherNegWindIgnore",
+    // 725: "OtherNegEarthIgnore",
+    // 726: "OtherNegThunderIgnore",
+    // 727: "OtherNegWaterIgnore",
+    // 728: "OtherNegShineIgnore",
+    // 729: "OtherNegDarkIgnore",
+
+    // 800: "OtherBuffTurn",
+    // 801: "OtherDebuffTurn",
+    802: "ATTACK_RES",
+    803: "AOE_RES",
+    804: "MAX_DAMAGE",
+    // 805: "OtherAttackSkillRank",
+    806: "AP_CONSUMPTION",
+    // 807: "OtherTpDmgAvoid",
+    // 808: "OtherApDmgAvoid",
+    809: "HEAL_POWER",
+    810: "COUNTER_CHANCE",
+    // 811: "OtherIgnReactResist"
+  }
+
   species = [
     '',
     'human',
@@ -639,6 +883,8 @@ export class JsonService {
       'cda': 'DISABLE_RES',
       'cbe': 'BERSERK_RES',
       'cdo': 'DOOM_RES',
+      'frz': 'FROSTBITE_RES',
+      'stn': 'STUN_RES',
 
       'mov': 'MOVE',
       'jmp': 'JUMP',
@@ -692,6 +938,8 @@ export class JsonService {
       'cda': 'DISABLE_RES',
       'cbe': 'BERSERK_RES',
       'cdo': 'DOOM_RES',
+      'frz': 'FROSTBITE_RES',
+      'stn': 'STUN_RES',
 
       'mov': 'MOVE',
       'jmp': 'JUMP'
@@ -744,6 +992,8 @@ export class JsonService {
       'cda': 'DISABLE_RES',
       'cbe': 'BERSERK_RES',
       'cdo': 'DOOM_RES',
+      'frz': 'FROSTBITE_RES',
+      'stn': 'STUN_RES',
 
       'mov': 'MOVE',
       'jmp': 'JUMP'
@@ -4733,6 +4983,28 @@ export class JsonService {
     }
 
     delete formattedEnemy.elem;
+
+    if (formattedEnemy.status) {
+      const rawStatus = JSON.parse(formattedEnemy.status);
+      if (Object.keys(rawStatus).length > 0) {
+        formattedEnemy.status = [];
+        rawStatus.list.forEach(status => {
+          if (!this.statusParam[status.type]) {
+            console.log("Unknow statusParam : " + status.type);
+          }
+
+          status.type = this.statusParam[status.type];
+
+          formattedEnemy.status.push(status);
+        });
+      } else {
+        delete formattedEnemy.status;
+      }
+    }
+
+    if (formattedEnemy.status === '') {
+      delete formattedEnemy.status;
+    }
 
     return formattedEnemy;
   }
