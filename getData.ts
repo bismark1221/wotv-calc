@@ -60,7 +60,8 @@ export class JsonService {
     skillExc: {},
     oldUnits: {},
     oldCards: {},
-    oldEspers: {}
+    oldEspers: {},
+    oldEquipments: {}
   };
 
   jp = {
@@ -117,7 +118,8 @@ export class JsonService {
     skillExc: {},
     oldUnits: {},
     oldCards: {},
-    oldEspers: {}
+    oldEspers: {},
+    oldEquipments: {}
   };
 
   jpRomaji = {};
@@ -2135,6 +2137,10 @@ export class JsonService {
     return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), 'utf8');
   }
 
+  private GL_OldEquipments() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), 'utf8');
+  }
+
   private JP_OldUnits() {
     return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), 'utf8');
   }
@@ -2145,6 +2151,10 @@ export class JsonService {
 
   private JP_OldEspers() {
     return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), 'utf8');
+  }
+
+  private JP_OldEquipments() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), 'utf8');
   }
 
 
@@ -2574,21 +2584,20 @@ export class JsonService {
         this.GL_OldUnits(),
         this.GL_OldEspers(),
         this.GL_OldCards(),
+        this.GL_OldEquipments(),
         this.JP_OldUnits(),
+        this.JP_OldEspers(),
         this.JP_OldCards(),
-        this.JP_OldEspers()
+        this.JP_OldEquipments()
       ]).then(async responsesRound2 => {
         this.gl.oldUnits = JSON.parse(responsesRound2[0]);
-
-        this.gl.oldCards = JSON.parse(responsesRound2[1]);
-
-        this.gl.oldEspers = JSON.parse(responsesRound2[2]);
-
-        this.jp.oldUnits = JSON.parse(responsesRound2[3]);
-
-        this.jp.oldCards = JSON.parse(responsesRound2[4]);
-
+        this.gl.oldEspers = JSON.parse(responsesRound2[1]);
+        this.gl.oldCards = JSON.parse(responsesRound2[2]);
+        this.gl.oldEquipments = JSON.parse(responsesRound2[3]);
+        this.jp.oldUnits = JSON.parse(responsesRound2[4]);
         this.jp.oldEspers = JSON.parse(responsesRound2[5]);
+        this.jp.oldCards = JSON.parse(responsesRound2[6]);
+        this.jp.oldEquipments = JSON.parse(responsesRound2[7]);
 
         await this.formatJsons();
 
@@ -2916,9 +2925,23 @@ export class JsonService {
   }
 
   addReleaseDate(item, type) {
-    if (this[this.version][type][item.dataId]) {
+    let releaseDateFound = false;
+
+    if (this[this.version][type][item.dataId] && type !== 'oldEquipments') {
       item.releaseDate = this[this.version][type][item.dataId].releaseDate;
-    } else {
+      releaseDateFound = true;
+    }
+
+    if (type === 'oldEquipments') {
+      Object.keys(this[this.version][type]).forEach(equipmentId => {
+        if (this[this.version][type][equipmentId].dataId === item.dataId) {
+          item.releaseDate = this[this.version][type][equipmentId].releaseDate;
+          releaseDateFound = true;
+        }
+      });
+    }
+
+    if (!releaseDateFound) {
       const date = new Date();
       let day = String(date.getDate());
       let month = String(date.getMonth() + 1);
@@ -4223,10 +4246,13 @@ export class JsonService {
         equippableJobs: [],
         equippableUnits: [],
         materials: [],
-        acquisition: null
+        acquisition: null,
+        releaseDate: ''
       };
 
       await this.getNames(equipment, 'equipment');
+
+      this.addReleaseDate(equipment, 'oldEquipments');
 
       if (rawEquipment.equip) {
         if (this[this.version].EquipmentCond[rawEquipment.equip]) {
