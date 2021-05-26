@@ -430,10 +430,6 @@ export class UnitComponent implements OnInit {
     this.unit.EXJobsStats.push(stats);
   }
 
-  isWeapon(type) {
-    return this.equipmentService.isWeapon(type);
-  }
-
   getSkillsPerJob(job) {
     const skills = [];
     if (job === 0) {

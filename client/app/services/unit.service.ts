@@ -28,10 +28,6 @@ export class UnitService {
   private GL_units: Unit[];
   unit;
 
-  private glExcluUnits = [
-    'UN_LW_P_FRVA'
-  ];
-
   private GL_limitedUnits = [
     'UN_LW_P_FRVA',
     'UN_LW_P_DEAN',
@@ -503,10 +499,6 @@ export class UnitService {
     await this.getUnits();
 
     return this[this.navService.getVersion() + '_units'].find(unit => unit.slug === slug);
-  }
-
-  getGLExclusiveUnitIds() {
-    return this.glExcluUnits;
   }
 
   isLimited(id) {

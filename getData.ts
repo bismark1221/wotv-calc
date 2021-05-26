@@ -1,10 +1,6 @@
 import { Slug } from 'ng2-slugify';
 
 import { JpTranslateService } from './jptranslate.service';
-import { EsperService } from './client/app/services/esper.service';
-import { EquipmentService } from './client/app/services/equipment.service';
-import { UnitService } from './client/app/services/unit.service';
-import { JobService } from './client/app/services/job.service';
 
 export class JsonService {
   slug = new Slug('default');
@@ -1239,6 +1235,23 @@ export class JsonService {
     'FROSTBITE',
     'EXPLOSIVE_FIST',
     'INSTANT_DEATH'
+  ];
+
+  private weaponTypes = [
+    'DAGGER',
+    'SWORD',
+    'GREATSWORD',
+    'KATANA',
+    'ROD',
+    'NINJABLADE',
+    'BOW',
+    'AXE',
+    'SPEAR',
+    'GUN',
+    'MACE',
+    'FIST',
+    'GLOVE',
+    'BOOK'
   ];
 
   fs = require('fs').promises;
@@ -2637,6 +2650,8 @@ export class JsonService {
     for (let i = 0; i < versions.length; i ++) {
       this.version = versions[i];
 
+      console.log('Start Work : ' + this.version.toUpperCase());
+
       Object.keys(this[this.version].jobs).forEach(jobId => {
         this.addJob(this[this.version].jobs[jobId]);
       });
@@ -2721,10 +2736,8 @@ export class JsonService {
       }
     }
 
-    const equipmentService = new EquipmentService();
-
     job.equips.forEach(equip => {
-      if (equipmentService.isWeapon(this.jobEquip[equip])) {
+      if (this.isWeapon(this.jobEquip[equip])) {
         this[this.version].wotvJobs[dataId].equipments.weapons.push(this.jobEquip[equip]);
       } else {
         this[this.version].wotvJobs[dataId].equipments.armors.push(this.jobEquip[equip]);
@@ -2744,6 +2757,10 @@ export class JsonService {
 
       this[this.version].wotvJobs[dataId].statsModifiers.push(rankModifiers);
     });
+  }
+
+  isWeapon(type) {
+    return this.weaponTypes.indexOf(type) !== -1 ? true : false;
   }
 
   private getJobMaterials(job) {
@@ -2867,6 +2884,10 @@ export class JsonService {
       this.getVisionCardSkillsAndBuffs(card, visionCard);
 
       this[this.version].wotvVisionCards[dataId] = card;
+
+      if (visionCard.first_bonus_unit && this[this.version].wotvEspers[visionCard.first_bonus_unit]) {
+        this[this.version].wotvEspers[visionCard.first_bonus_unit].rarity = card.rarity;
+      }
     }
   }
 
@@ -3939,12 +3960,11 @@ export class JsonService {
 
   private async addEsper(esper) {
     const dataId = esper.iname;
-    const esperService = new EsperService();
 
     this[this.version].wotvEspers[dataId] = {
       dataId: dataId,
       names: {},
-      rarity: esperService.findRarity(dataId),
+      rarity: '',
       cost: esper.cost,
       skills: [],
       stats: {},
@@ -4605,10 +4625,24 @@ export class JsonService {
     }
   }
 
+  private glExcluUnits = [
+    'UN_LW_P_FRVA'
+  ];
+
+  private glExcluJobs = [
+  ];
+
+  getGLExclusiveUnitIds() {
+    return this.glExcluUnits;
+  }
+
+  getGLExclusiveJobIds() {
+    return this.glExcluJobs;
+  }
+
   exportGLexclusiveToJP() {
     if (this.version === 'jp') {
-      const jobService = new JobService();
-      jobService.getGLExclusiveJobIds().forEach(jobId => {
+      this.getGLExclusiveJobIds().forEach(jobId => {
         this.jp.wotvJobs[jobId] = this.gl.wotvJobs[jobId];
 
         Object.keys(this.gl.wotvEquipments).forEach(equipmentId => {
@@ -4628,8 +4662,7 @@ export class JsonService {
         });
       });
 
-      const unitService = new UnitService();
-      unitService.getGLExclusiveUnitIds().forEach(unitId => {
+      this.getGLExclusiveUnitIds().forEach(unitId => {
         this.jp.wotvUnits[unitId] = this.gl.wotvUnits[unitId];
         const tmrId = this.jp.wotvUnits[unitId].tmr;
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];

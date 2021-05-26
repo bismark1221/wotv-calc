@@ -20,60 +20,6 @@ export class EsperService {
   private espers: Esper[];
   esper;
 
-  private espersRarity = {
-    N: [],
-    R: [],
-    SR: [
-      'UN_LW_S_BOMB',
-      'UN_LW_S_CACT',
-      'UN_LW_S_ARMN_01',
-      'UN_LW_S_OGRE',
-      'UN_LW_S_ZUUU'
-    ],
-    MR: [
-      'UN_LW_S_BHMT',
-      'UN_LW_S_IGNT',
-      'UN_LW_S_MABR',
-      'UN_LW_S_MOGL',
-      'UN_LW_S_OCHU',
-      'UN_FFT_S_CHCB_01',
-      'UN_LW_S_MDFY',
-      'UN_LW_S_LAMA_01',
-      'UN_LW_S_BLMN',
-      'UN_LW_S_CHCB1',
-      'UN_LW_S_TNBR',
-      'UN_LW_S_GCAL',
-      'UN_LW_S_MRLT',
-      'UN_LW_S_CORL',
-      'UN_LW_S_KRKN',
-      'UN_LW_S_DMCM'
-    ],
-    UR: [
-      'UN_LW_S_IFRT',
-      'UN_LW_S_GLEM',
-      'UN_LW_S_RAMU',
-      'UN_LW_S_SHIV',
-      'UN_LW_S_SIRE',
-      'UN_LW_S_ODIN',
-      'UN_LW_S_TSLP',
-      'UN_LW_S_THDG',
-      'UN_FF01_S_WRMC',
-      'UN_LW_S_DABL',
-      'UN_LW_S_FNRR',
-      'UN_LW_S_TITN',
-      'UN_LW_S_AGON',
-      'UN_FF4_S_DMNW',
-      'UN_LW_S_LVAT',
-      'UN_LW_S_TYPN',
-      'UN_LW_S_BAHM',
-      'UN_LW_S_OMEG',
-      'UN_LW_S_PNIX',
-      'UN_LW_S_CBCL',
-      'UN_LW_S_ICDG',
-      'UN_FF7_S_SCPN'
-    ]
-  };
-
   private JP_limitedEspers = [
     'UN_FF01_S_WRMC',
     'UN_FF4_S_DMNW',
@@ -254,17 +200,6 @@ export class EsperService {
     } else {
       return espers;
     }
-  }
-
-  findRarity(esperId) {
-    let rarity = 'N';
-    Object.keys(this.espersRarity).forEach(rarityType => {
-      if (this.espersRarity[rarityType].indexOf(esperId) !== -1) {
-        rarity = rarityType;
-      }
-    });
-
-    return rarity;
   }
 
   async getEspersForBuilder() {

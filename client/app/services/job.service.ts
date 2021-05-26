@@ -15,9 +15,6 @@ export class JobService {
   private JP_uniqJobs;
   private GL_uniqJobs;
 
-  private glExcluJobs = [
-  ];
-
   constructor(
     private dataService: DataService,
     private navService: NavService,
@@ -94,9 +91,5 @@ export class JobService {
     job.constructFromJson(JSON.parse(JSON.stringify(rawJob)));
 
     return job;
-  }
-
-  getGLExclusiveJobIds() {
-    return this.glExcluJobs;
   }
 }
