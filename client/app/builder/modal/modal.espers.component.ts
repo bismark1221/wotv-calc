@@ -200,4 +200,8 @@ export class ModalEspersComponent implements OnInit {
   maxEsper() {
     this.esperService.maxEsper(this.esper);
   }
+
+  removeEsper() {
+    this.modal.close(null);
+  }
 }

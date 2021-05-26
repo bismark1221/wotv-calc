@@ -434,11 +434,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((equipment) => {
-      if (equipment) {
-        this.unit.equipments[pos] = equipment;
+      this.unit.equipments[pos] = equipment;
 
-        this.unitService.changeLevel();
-      }
+      this.unitService.changeLevel();
     }, (reason) => {
     });
   }
@@ -452,11 +450,9 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((esper) => {
-      if (esper) {
-        this.unit.esper = esper;
+      this.unit.esper = esper;
 
-        this.unitService.changeLevel();
-      }
+      this.unitService.changeLevel();
     }, (reason) => {
     });
   }
@@ -470,12 +466,10 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((card) => {
-      if (card) {
-        this.unit.card = card;
+      this.unit.card = card;
 
-        this.unitService.changeLevel();
-        this.updateActiveSkillsForSim();
-      }
+      this.unitService.changeLevel();
+      this.updateActiveSkillsForSim();
     }, (reason) => {
     });
   }

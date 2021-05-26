@@ -42,6 +42,14 @@
     <hr class="separator" />
 
     <div class="equipmentsList">
+      <div class="equipmentsCol">
+        <a (click)="removeEquipment()" id="removeEquipment">
+          <div class="equipmentImgBlockRemove">
+            <img class="equipmentImg" src="assets/builder/remove.png" />
+          </div>
+        </a>
+      </div>
+
       <div class="equipmentsCol" *ngFor="let equipment of getFilteredEquipments()">
         <a (click)="selectEquipment(equipment.dataId)" id="equipmentBlock_{{equipment.dataId}}">
           <div class="equipmentIcons">

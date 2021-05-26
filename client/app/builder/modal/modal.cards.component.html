@@ -40,6 +40,14 @@
     <hr class="separator" />
 
     <div class="cardsList">
+      <div class="cardsCol">
+        <a (click)="removeCard()" id="removeCard">
+          <div class="cardImgBlockRemove">
+            <img class="cardImg" src="assets/builder/remove.png" />
+          </div>
+        </a>
+      </div>
+
       <div class="cardsCol" *ngFor="let card of getFilteredCards()">
         <a (click)="selectCard(card.dataId)">
           <div class="cardIcons">

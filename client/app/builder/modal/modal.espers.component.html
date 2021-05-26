@@ -30,6 +30,14 @@
     <hr class="separator" />
 
     <div class="espersList">
+      <div class="espersCol">
+        <a (click)="removeEsper()" id="removeEsper">
+          <div class="esperImgBlockRemove">
+            <img class="esperImg" src="assets/builder/remove.png" />
+          </div>
+        </a>
+      </div>
+
       <div class="espersCol" *ngFor="let esper of getFilteredEspers()">
         <a (click)="selectEsper(esper.dataId)">
           <div class="cardIcons">

@@ -347,11 +347,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((equipment) => {
-      if (equipment) {
-        this.team.units[unitPos].equipments[equipmentPos] = equipment;
-        this.teamService.changeLevel(unitPos);
-        this.calculateDamageSim(unitPos);
-      }
+      this.team.units[unitPos].equipments[equipmentPos] = equipment;
+      this.teamService.changeLevel(unitPos);
+      this.calculateDamageSim(unitPos);
     }, (reason) => {
     });
   }
@@ -366,12 +364,9 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((esper) => {
-      if (esper) {
-        this.team.units[pos].esper = esper;
-        this.teamService.changeLevel(pos);
-        this.calculateDamageSim(pos);
-      }
-
+      this.team.units[pos].esper = esper;
+      this.teamService.changeLevel(pos);
+      this.calculateDamageSim(pos);
       this.teamService.updateTeamCost();
     }, (reason) => {
     });
@@ -387,22 +382,20 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     }
 
     modalRef.result.then((card) => {
-      if (card) {
-        this.team.units[pos].card = card;
-        this.teamService.changeLevel(pos);
+      this.team.units[pos].card = card;
+      this.teamService.changeLevel(pos);
 
-        this.team.units.forEach((unit, unitIndex) => {
-          if (unit && unitIndex !== pos) {
-            this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
-            this.team.units[unitIndex].changeLevel();
-          }
-        });
+      this.team.units.forEach((unit, unitIndex) => {
+        if (unit && unitIndex !== pos) {
+          this.team.units[unitIndex].teamCards[pos] = this.team.units[pos].card;
+          this.team.units[unitIndex].changeLevel();
+        }
+      });
 
-        this.updateActiveSkillsForSim();
-        this.calculateDamageSim();
+      this.updateActiveSkillsForSim();
+      this.calculateDamageSim();
 
-        this.teamService.updateTeamCost();
-      }
+      this.teamService.updateTeamCost();
     }, (reason) => {
     });
   }

@@ -145,6 +145,15 @@
   text-decoration: none;
 }
 
+.esperImgBlockRemove {
+  width: 200px;
+  height: 210px;
+}
+
+.esperImgBlockRemove img {
+  padding-top: 40px;
+}
+
 .cardIcons {
   position: absolute;
   width: 100%;

@@ -127,6 +127,10 @@ export class ModalCardsComponent implements OnInit {
     this.modal.close(this.card);
   }
 
+  removeCard() {
+    this.modal.close(null);
+  }
+
   async changeStar(value) {
     if (value === this.card.star) {
       value = undefined;

@@ -144,6 +144,15 @@
   text-decoration: none;
 }
 
+.cardImgBlockRemove {
+  width: 200px;
+  height: 210px;
+}
+
+.cardImgBlockRemove img {
+  padding-top: 40px;
+}
+
 .cardIcons {
   position: absolute;
   width: 100%;

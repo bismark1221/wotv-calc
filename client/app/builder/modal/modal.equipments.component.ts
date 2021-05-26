@@ -168,4 +168,8 @@ export class ModalEquipmentsComponent implements OnInit {
   save() {
     this.modal.close(this.equipment);
   }
+
+  removeEquipment() {
+    this.modal.close(null);
+  }
 }
