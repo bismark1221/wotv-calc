@@ -21,7 +21,8 @@ export class ModalCardsComponent implements OnInit {
   searchText = '';
   filters = {
     rarity: [],
-    element: []
+    element: [],
+    cost: []
   };
   savedCards = {};
   loadCardId = null;

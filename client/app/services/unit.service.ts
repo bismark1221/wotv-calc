@@ -173,6 +173,19 @@ export class UnitService {
     return units;
   }
 
+  async getCosts() {
+    const units = await this.getUnits();
+
+    const costs = [];
+    units.forEach(unit => {
+      if (costs.indexOf(unit.cost) === -1) {
+        costs.push(unit.cost);
+      }
+    });
+
+    return costs.sort((a, b) => b - a);
+  }
+
   private async filterUnits(units, filters) {
     if (filters) {
       const filteredUnits = [];
@@ -180,6 +193,7 @@ export class UnitService {
       for (const unit of units) {
         if ((filters.element.length === 0 || filters.element.indexOf(unit.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(unit.rarity) !== -1)
+          && (filters.cost.length === 0 || filters.cost.indexOf(unit.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(unit.dataId)) !== -1)
           && (!filters.exJob || unit.exJobs.length > 0)
         ) {

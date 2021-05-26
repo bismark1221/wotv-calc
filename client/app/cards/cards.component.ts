@@ -19,6 +19,7 @@ export class CardsComponent implements OnInit {
     rarity: [],
     limited: [],
     element: [],
+    cost: [],
     onlyActiveSkill: false,
   };
   version = 'GL';
@@ -26,13 +27,15 @@ export class CardsComponent implements OnInit {
   isFilterChecked = {
     rarity: [],
     element: [],
+    cost: [],
     limited: []
   };
   collapsed = {
-    rarity: false,
-    element: false,
-    limited: false,
-    skill: false
+    rarity: true,
+    element: true,
+    limited: true,
+    cost: true,
+    skill: true
   };
 
   rarities = [
@@ -42,6 +45,7 @@ export class CardsComponent implements OnInit {
     'R',
     'N'
   ];
+
   elements = [
     'fire',
     'ice',
@@ -52,6 +56,8 @@ export class CardsComponent implements OnInit {
     'light',
     'dark'
   ];
+
+  costs = [];
 
   constructor(
     private cardService: CardService,
@@ -66,14 +72,24 @@ export class CardsComponent implements OnInit {
     this.version = this.navService.getVersion();
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.navService.setTitle('Cards');
+    this.costs = await this.cardService.getCosts();
 
     if (sessionStorage.getItem('cardsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('cardsFilters'));
+
+      if (!this.filters.cost) {
+        this.filters.cost = [];
+      }
     }
+
     if (sessionStorage.getItem('cardsCollapsed')) {
       this.collapsed = JSON.parse(sessionStorage.getItem('cardsCollapsed'));
+
+      if (this.collapsed.cost === undefined) {
+        this.collapsed.cost = true;
+      }
     }
     this.filterChecked();
 
@@ -140,6 +156,14 @@ export class CardsComponent implements OnInit {
         this.isFilterChecked.element[element] = false;
       } else {
         this.isFilterChecked.element[element] = true;
+      }
+    });
+
+    this.costs.forEach(cost => {
+      if (this.filters.cost && this.filters.cost.indexOf(cost) === -1) {
+        this.isFilterChecked.cost[cost] = false;
+      } else {
+        this.isFilterChecked.cost[cost] = true;
       }
     });
   }

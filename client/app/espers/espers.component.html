@@ -59,6 +59,20 @@
           <label for="limitedNo">No</label>
         </div>
       </div>
+
+      <hr />
+
+      <div class="boldText" (click)="toogleCollapse('cost')" [attr.aria-expanded]="!collapsed.cost">
+        Cost
+        <i class="fas fa-chevron-up" *ngIf="!collapsed.cost" aria-hidden="true"></i>
+        <i class="fas fa-chevron-down" *ngIf="collapsed.cost" aria-hidden="true"></i>
+      </div>
+      <div class="collapsedFilters" [ngbCollapse]="collapsed.cost">
+        <div *ngFor="let cost of costs">
+          <input type="checkbox" id="cost{{ cost }}" (change)="filterList('cost', cost)" [checked]="isFilterChecked.cost[cost]"/>
+          <label for="cost{{ cost }}">{{ cost }}</label>
+        </div>
+      </div>
     </div>
   </div>
 

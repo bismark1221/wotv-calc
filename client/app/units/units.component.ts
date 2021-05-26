@@ -27,6 +27,7 @@ export class UnitsComponent implements OnInit {
       weapon: 'ALL',
       armor: []
     },
+    cost: [],
     mainJob: false,
     subJob: false,
     exJob: false
@@ -36,6 +37,7 @@ export class UnitsComponent implements OnInit {
     element: [],
     job: [],
     limited: [],
+    cost: [],
     armor: []
   };
   collapsed = {
@@ -43,6 +45,7 @@ export class UnitsComponent implements OnInit {
     element: true,
     limited: true,
     job: true,
+    cost: true,
     equipment: true
   };
 
@@ -53,6 +56,7 @@ export class UnitsComponent implements OnInit {
     'R',
     'N'
   ];
+
   elements = [
     'fire',
     'ice',
@@ -63,6 +67,7 @@ export class UnitsComponent implements OnInit {
     'light',
     'dark'
   ];
+
   armors = [
     'ARMOR',
     'CLOTH',
@@ -70,6 +75,8 @@ export class UnitsComponent implements OnInit {
     'HELM',
     'SHIELD'
   ];
+
+  costs = [];
 
 
   constructor(
@@ -89,12 +96,22 @@ export class UnitsComponent implements OnInit {
   async ngOnInit() {
     this.navService.setTitle('Units');
     await this.getJobs();
+    this.costs = await this.unitService.getCosts();
 
     if (sessionStorage.getItem('unitsFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('unitsFilters'));
+
+      if (!this.filters.cost) {
+        this.filters.cost = [];
+      }
     }
+
     if (sessionStorage.getItem('unitsCollapsed')) {
       this.collapsed = JSON.parse(sessionStorage.getItem('unitsCollapsed'));
+
+      if (this.collapsed.cost === undefined) {
+        this.collapsed.cost = true;
+      }
     }
     this.filterChecked();
 
@@ -236,6 +253,14 @@ export class UnitsComponent implements OnInit {
         this.isFilterChecked.job[job.dataId] = false;
       } else {
         this.isFilterChecked.job[job.dataId] = true;
+      }
+    });
+
+    this.costs.forEach(cost => {
+      if (this.filters.cost && this.filters.cost.indexOf(cost) === -1) {
+        this.isFilterChecked.cost[cost] = false;
+      } else {
+        this.isFilterChecked.cost[cost] = true;
       }
     });
   }

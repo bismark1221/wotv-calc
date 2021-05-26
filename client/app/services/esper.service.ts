@@ -94,6 +94,19 @@ export class EsperService {
     return espers;
   }
 
+  async getCosts() {
+    const espers = await this.getEspers();
+
+    const costs = [];
+    espers.forEach(esper => {
+      if (costs.indexOf(esper.cost) === -1) {
+        costs.push(esper.cost);
+      }
+    });
+
+    return costs.sort((a, b) => b - a);
+  }
+
   filterEspers(espers, filters) {
     if (filters) {
       const filteredEspers = [];
@@ -101,6 +114,7 @@ export class EsperService {
       espers.forEach(esper => {
         if ((filters.element.length === 0 || filters.element.indexOf(esper.element) !== -1)
           && (filters.rarity.length === 0 || filters.rarity.indexOf(esper.rarity) !== -1)
+          && (filters.cost.length === 0 || filters.cost.indexOf(esper.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(esper.dataId)) !== -1)
           && (!filters.threeStars || esper.SPs.length === 3)
         ) {

@@ -140,12 +140,26 @@ export class CardService {
     return cards;
   }
 
+  async getCosts() {
+    const cards = await this.getCards();
+
+    const costs = [];
+    cards.forEach(card => {
+      if (costs.indexOf(card.cost) === -1) {
+        costs.push(card.cost);
+      }
+    });
+
+    return costs.sort((a, b) => b - a);
+  }
+
   filterCards(cards, filters) {
     if (filters) {
       const filteredCards = [];
 
       cards.forEach(card => {
         if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
+          && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
         ) {
           let needToAddCard = false;

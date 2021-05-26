@@ -20,7 +20,8 @@ export class ModalEspersComponent implements OnInit {
   searchText = '';
   filters = {
     rarity: [],
-    element: []
+    element: [],
+    cost: []
   };
   savedEspers = {};
   loadEsperId = null;

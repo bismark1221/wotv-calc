@@ -19,19 +19,22 @@ export class EspersComponent implements OnInit {
     rarity: [],
     limited: [],
     element: [],
+    cost: [],
     threeStars: false
   };
 
   isFilterChecked = {
     rarity: [],
     element: [],
+    cost: [],
     limited: []
   };
   collapsed = {
-    rarity: false,
-    element: false,
-    limited: false,
-    upgrade: false
+    rarity: true,
+    element: true,
+    limited: true,
+    cost: true,
+    upgrade: true
   };
 
   rarities = [
@@ -39,6 +42,7 @@ export class EspersComponent implements OnInit {
     'MR',
     'SR'
   ];
+
   elements = [
     'fire',
     'ice',
@@ -49,6 +53,8 @@ export class EspersComponent implements OnInit {
     'light',
     'dark'
   ];
+
+  costs = [];
 
   constructor(
     private esperService: EsperService,
@@ -63,12 +69,22 @@ export class EspersComponent implements OnInit {
 
   async ngOnInit() {
     this.navService.setTitle('Espers');
+    this.costs = await this.esperService.getCosts();
 
     if (sessionStorage.getItem('espersFilters')) {
       this.filters = JSON.parse(sessionStorage.getItem('espersFilters'));
+
+      if (!this.filters.cost) {
+        this.filters.cost = [];
+      }
     }
+
     if (sessionStorage.getItem('espersCollapsed')) {
       this.collapsed = JSON.parse(sessionStorage.getItem('espersCollapsed'));
+
+      if (this.collapsed.cost === undefined) {
+        this.collapsed.cost = true;
+      }
     }
     this.filterChecked();
 
@@ -140,6 +156,14 @@ export class EspersComponent implements OnInit {
         this.isFilterChecked.element[element] = false;
       } else {
         this.isFilterChecked.element[element] = true;
+      }
+    });
+
+    this.costs.forEach(cost => {
+      if (this.filters.cost && this.filters.cost.indexOf(cost) === -1) {
+        this.isFilterChecked.cost[cost] = false;
+      } else {
+        this.isFilterChecked.cost[cost] = true;
       }
     });
   }
