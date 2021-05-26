@@ -93,6 +93,7 @@ export class Esper {
     this.SPs = esper.SPs;
     this.board = esper.board;
     this.cost = esper.cost;
+    this.releaseDate = esper.releaseDate;
   }
 
   getName(translateService: TranslateService): string {

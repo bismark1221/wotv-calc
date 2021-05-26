@@ -44,6 +44,7 @@ export class Card {
     this.partyBuffs = card.partyBuffs;
     this.slug = card.slug;
     this.cost = card.cost;
+    this.releaseDate = card.releaseDate;
   }
 
   getName(translateService: TranslateService): string {

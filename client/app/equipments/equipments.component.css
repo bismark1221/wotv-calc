@@ -171,6 +171,10 @@
   display: inline-block;
 }
 
+.select-sort {
+  width: 140px;
+}
+
 .unselectAllTypeLink {
   cursor: pointer;
   text-decoration: underline;

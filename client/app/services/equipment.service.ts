@@ -280,6 +280,9 @@ export class EquipmentService {
       case 'name' :
         this.toolService.sortByName(equipments, order);
       break;
+      case 'releaseDate' :
+        this.toolService.sortByReleaseDate(equipments, order);
+      break;
       default :
         console.log('not managed sort');
       break;
