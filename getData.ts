@@ -57,7 +57,10 @@ export class JsonService {
     maps: {},
     towerRewards: {},
     towerFloors: {},
-    skillExc: {}
+    skillExc: {},
+    oldUnits: {},
+    oldCards: {},
+    oldEspers: {}
   };
 
   jp = {
@@ -111,7 +114,10 @@ export class JsonService {
     maps: {},
     towerRewards: {},
     towerFloors: {},
-    skillExc: {}
+    skillExc: {},
+    oldUnits: {},
+    oldCards: {},
+    oldEspers: {}
   };
 
   jpRomaji = {};
@@ -2117,6 +2123,32 @@ export class JsonService {
 
 
 
+  private GL_OldUnits() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), 'utf8');
+  }
+
+  private GL_OldCards() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), 'utf8');
+  }
+
+  private GL_OldEspers() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), 'utf8');
+  }
+
+  private JP_OldUnits() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), 'utf8');
+  }
+
+  private JP_OldCards() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), 'utf8');
+  }
+
+  private JP_OldEspers() {
+    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), 'utf8');
+  }
+
+
+
   getJsons(): Promise<any[]> {
     return Promise.all([
       this.GLUnits(),
@@ -2337,7 +2369,7 @@ export class JsonService {
       this.ES_TowerFloorTitle(),
 
       this.GLSkillExc(),
-      this.JPSkillExc()
+      this.JPSkillExc(),
     ]).then(async responses => {
       this.gl.units = this.formatJson(JSON.parse(responses[0]));
       this.gl.boards = this.formatJson(JSON.parse(responses[1]));
@@ -2538,92 +2570,113 @@ export class JsonService {
       this.jpTitlesName = JSON.parse(responses[102]);
       this.jpTitlesDesc = JSON.parse(responses[103]);
 
-      await this.formatJsons();
+      Promise.all([
+        this.GL_OldUnits(),
+        this.GL_OldEspers(),
+        this.GL_OldCards(),
+        this.JP_OldUnits(),
+        this.JP_OldCards(),
+        this.JP_OldEspers()
+      ]).then(async responsesRound2 => {
+        this.gl.oldUnits = JSON.parse(responsesRound2[0]);
 
-      console.log('==== GL RESULT ====');
-      console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), JSON.stringify(this.gl.wotvUnits, null, 2));
+        this.gl.oldCards = JSON.parse(responsesRound2[1]);
 
-      console.log('VisionCards : ' + Object.keys(this.gl.wotvVisionCards).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), JSON.stringify(this.gl.wotvVisionCards, null, 2));
+        this.gl.oldEspers = JSON.parse(responsesRound2[2]);
 
-      console.log('Espers : ' + Object.keys(this.gl.wotvEspers).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), JSON.stringify(this.gl.wotvEspers, null, 2));
+        this.jp.oldUnits = JSON.parse(responsesRound2[3]);
 
-      console.log('Equipments : ' + Object.keys(this.gl.wotvEquipments).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), JSON.stringify(this.gl.wotvEquipments, null, 2));
+        this.jp.oldCards = JSON.parse(responsesRound2[4]);
 
-      console.log('Jobs : ' + Object.keys(this.gl.wotvJobs).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/jobs.json'), JSON.stringify(this.gl.wotvJobs, null, 2));
+        this.jp.oldEspers = JSON.parse(responsesRound2[5]);
 
-      console.log('Raids : ' + Object.keys(this.gl.wotvRaids).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/raids.json'), JSON.stringify(this.gl.wotvRaids, null, 2));
+        await this.formatJsons();
 
-      console.log('Items : ' + Object.keys(this.gl.wotvItems).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/items.json'), JSON.stringify(this.gl.wotvItems, null, 2));
+        console.log('==== GL RESULT ====');
+        console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), JSON.stringify(this.gl.wotvUnits, null, 2));
 
-      console.log('MasterRanks : ' + Object.keys(this.gl.wotvMasterRanks).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/masterRanks.json'), JSON.stringify(this.gl.wotvMasterRanks, null, 2));
+        console.log('VisionCards : ' + Object.keys(this.gl.wotvVisionCards).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), JSON.stringify(this.gl.wotvVisionCards, null, 2));
 
-      console.log('PlayerTitles : ' + Object.keys(this.gl.wotvPlayerTitles).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/playerTitles.json'), JSON.stringify(this.gl.wotvPlayerTitles, null, 2));
+        console.log('Espers : ' + Object.keys(this.gl.wotvEspers).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), JSON.stringify(this.gl.wotvEspers, null, 2));
 
-      console.log('GuildTitles : ' + Object.keys(this.gl.wotvGuildTitles).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/guildTitles.json'), JSON.stringify(this.gl.wotvGuildTitles, null, 2));
+        console.log('Equipments : ' + Object.keys(this.gl.wotvEquipments).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), JSON.stringify(this.gl.wotvEquipments, null, 2));
 
-      console.log('Quests : ' + Object.keys(this.gl.wotvQuests).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/quests.json'), JSON.stringify(this.gl.wotvQuests, null, 2));
+        console.log('Jobs : ' + Object.keys(this.gl.wotvJobs).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/jobs.json'), JSON.stringify(this.gl.wotvJobs, null, 2));
 
-      console.log('OtherUnits : ' + Object.keys(this.gl.wotvOtherUnits).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/otherUnits.json'), JSON.stringify(this.gl.wotvOtherUnits, null, 2));
+        console.log('Raids : ' + Object.keys(this.gl.wotvRaids).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/raids.json'), JSON.stringify(this.gl.wotvRaids, null, 2));
 
-      console.log('Skills : ' + Object.keys(this.gl.wotvSkills).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/skills.json'), JSON.stringify(this.gl.wotvSkills, null, 2));
+        console.log('Items : ' + Object.keys(this.gl.wotvItems).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/items.json'), JSON.stringify(this.gl.wotvItems, null, 2));
+
+        console.log('MasterRanks : ' + Object.keys(this.gl.wotvMasterRanks).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/masterRanks.json'), JSON.stringify(this.gl.wotvMasterRanks, null, 2));
+
+        console.log('PlayerTitles : ' + Object.keys(this.gl.wotvPlayerTitles).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/playerTitles.json'), JSON.stringify(this.gl.wotvPlayerTitles, null, 2));
+
+        console.log('GuildTitles : ' + Object.keys(this.gl.wotvGuildTitles).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/guildTitles.json'), JSON.stringify(this.gl.wotvGuildTitles, null, 2));
+
+        console.log('Quests : ' + Object.keys(this.gl.wotvQuests).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/quests.json'), JSON.stringify(this.gl.wotvQuests, null, 2));
+
+        console.log('OtherUnits : ' + Object.keys(this.gl.wotvOtherUnits).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/otherUnits.json'), JSON.stringify(this.gl.wotvOtherUnits, null, 2));
+
+        console.log('Skills : ' + Object.keys(this.gl.wotvSkills).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/skills.json'), JSON.stringify(this.gl.wotvSkills, null, 2));
 
 
-      console.log('==== JP RESULT ====');
-      console.log('Units : ' + Object.keys(this.jp.wotvUnits).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), JSON.stringify(this.jp.wotvUnits, null, 2));
+        console.log('==== JP RESULT ====');
+        console.log('Units : ' + Object.keys(this.jp.wotvUnits).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), JSON.stringify(this.jp.wotvUnits, null, 2));
 
-      console.log('VisionCards : ' + Object.keys(this.jp.wotvVisionCards).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), JSON.stringify(this.jp.wotvVisionCards, null, 2));
+        console.log('VisionCards : ' + Object.keys(this.jp.wotvVisionCards).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), JSON.stringify(this.jp.wotvVisionCards, null, 2));
 
-      console.log('Espers : ' + Object.keys(this.jp.wotvEspers).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), JSON.stringify(this.jp.wotvEspers, null, 2));
+        console.log('Espers : ' + Object.keys(this.jp.wotvEspers).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), JSON.stringify(this.jp.wotvEspers, null, 2));
 
-      console.log('Equipments : ' + Object.keys(this.jp.wotvEquipments).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), JSON.stringify(this.jp.wotvEquipments, null, 2));
+        console.log('Equipments : ' + Object.keys(this.jp.wotvEquipments).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), JSON.stringify(this.jp.wotvEquipments, null, 2));
 
-      console.log('Jobs : ' + Object.keys(this.jp.wotvJobs).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/jobs.json'), JSON.stringify(this.jp.wotvJobs, null, 2));
+        console.log('Jobs : ' + Object.keys(this.jp.wotvJobs).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/jobs.json'), JSON.stringify(this.jp.wotvJobs, null, 2));
 
-      console.log('Raids : ' + Object.keys(this.jp.wotvRaids).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/raids.json'), JSON.stringify(this.jp.wotvRaids, null, 2));
+        console.log('Raids : ' + Object.keys(this.jp.wotvRaids).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/raids.json'), JSON.stringify(this.jp.wotvRaids, null, 2));
 
-      console.log('Items : ' + Object.keys(this.jp.wotvItems).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/items.json'), JSON.stringify(this.jp.wotvItems, null, 2));
+        console.log('Items : ' + Object.keys(this.jp.wotvItems).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/items.json'), JSON.stringify(this.jp.wotvItems, null, 2));
 
-      console.log('MasterRanks : ' + Object.keys(this.jp.wotvMasterRanks).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/masterRanks.json'), JSON.stringify(this.jp.wotvMasterRanks, null, 2));
+        console.log('MasterRanks : ' + Object.keys(this.jp.wotvMasterRanks).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/masterRanks.json'), JSON.stringify(this.jp.wotvMasterRanks, null, 2));
 
-      console.log('PlayerTitles : ' + Object.keys(this.jp.wotvPlayerTitles).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/playerTitles.json'), JSON.stringify(this.jp.wotvPlayerTitles, null, 2));
+        console.log('PlayerTitles : ' + Object.keys(this.jp.wotvPlayerTitles).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/playerTitles.json'), JSON.stringify(this.jp.wotvPlayerTitles, null, 2));
 
-      console.log('GuildTitles : ' + Object.keys(this.jp.wotvGuildTitles).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/guildTitles.json'), JSON.stringify(this.jp.wotvGuildTitles, null, 2));
+        console.log('GuildTitles : ' + Object.keys(this.jp.wotvGuildTitles).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/guildTitles.json'), JSON.stringify(this.jp.wotvGuildTitles, null, 2));
 
-      console.log('Quests : ' + Object.keys(this.jp.wotvQuests).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/quests.json'), JSON.stringify(this.jp.wotvQuests, null, 2));
+        console.log('Quests : ' + Object.keys(this.jp.wotvQuests).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/quests.json'), JSON.stringify(this.jp.wotvQuests, null, 2));
 
-      console.log('OtherUnits : ' + Object.keys(this.jp.wotvOtherUnits).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/otherUnits.json'), JSON.stringify(this.jp.wotvOtherUnits, null, 2));
+        console.log('OtherUnits : ' + Object.keys(this.jp.wotvOtherUnits).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/otherUnits.json'), JSON.stringify(this.jp.wotvOtherUnits, null, 2));
 
-      console.log('Skills : ' + Object.keys(this.jp.wotvSkills).length);
-      this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/skills.json'), JSON.stringify(this.jp.wotvSkills, null, 2));
+        console.log('Skills : ' + Object.keys(this.jp.wotvSkills).length);
+        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/skills.json'), JSON.stringify(this.jp.wotvSkills, null, 2));
 
-      console.log('==== JP ROMAJI ====');
-      console.log(Object.keys(this.jpRomaji).length)
-      this.fs.writeFile(require('path').resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
+        console.log('==== JP ROMAJI ====');
+        console.log(Object.keys(this.jpRomaji).length)
+        this.fs.writeFile(require('path').resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
+      });
     });
   }
 
@@ -2833,7 +2886,8 @@ export class JsonService {
         lines: []
       },
       replacedSkills : {},
-      tmr: null
+      tmr: null,
+      releaseDate: ''
     };
 
     if (rawUnit.ccsets) {
@@ -2856,7 +2910,521 @@ export class JsonService {
     this.getMasterSkill(unit, rawUnit.mstskl);
     this.getSkillsAndBuffs(unit);
 
+    this.addReleaseDate(unit, 'oldUnits')
+
     this[this.version].wotvUnits[dataId] = unit;
+  }
+
+  private GL_releaseDates = {
+    UN_LW_P_MONT: '25/03/2020',
+    UN_LW_P_STRN: '25/03/2020',
+    UN_LW_P_ELDE: '25/03/2020',
+    UN_LW_P_ROBB: '25/03/2020',
+    UN_LW_P_ENBT: '25/03/2020',
+    UN_LW_P_ZIZA: '25/03/2020',
+    UN_LW_P_AILN: '25/03/2020',
+    UN_LW_P_MDNA: '25/03/2020',
+    UN_LW_P_AYKA: '25/03/2020',
+    UN_LW_P_MACR: '25/03/2020',
+    UN_LW_P_HLNA: '25/03/2020',
+    UN_LW_P_LILS: '25/03/2020',
+    UN_LW_P_RAMD: '25/03/2020',
+    UN_LW_P_OOOO: '25/03/2020',
+    UN_LW_P_LRNZ: '25/03/2020',
+    UN_LW_P_RIRY: '25/03/2020',
+    UN_LW_P_VSTR: '25/03/2020',
+    UN_LW_P_CLEY: '25/03/2020',
+    UN_LW_P_KADI: '25/03/2020',
+    UN_LW_P_MRLK: '25/03/2020',
+    UN_LW_P_MGRT: '25/03/2020',
+    UN_LW_P_PRAY: '25/03/2020',
+    UN_LW_P_SZRT: '25/03/2020',
+    UN_LW_P_FINA: '25/03/2020',
+    UN_LW_P_BYLO: '25/03/2020',
+    UN_LW_P_RYER: '25/03/2020',
+    UN_LW_P_SCIA: '25/03/2020',
+    UN_LW_P_VRID: '25/03/2020',
+    UN_LW_P_NAIA: '25/03/2020',
+    UN_LW_P_SRJS: '25/03/2020',
+    UN_LW_P_UNII: '25/03/2020',
+    UN_LW_P_SEVR: '25/03/2020',
+    UN_LW_P_VADM: '25/03/2020',
+    UN_LW_P_MURM: '25/03/2020',
+    UN_LW_P_PHBE: '25/03/2020',
+    UN_LW_P_RART: '25/03/2020',
+    UN_LW_P_MICE: '25/03/2020',
+    UN_LW_P_MIIA: '25/03/2020',
+    UN_LW_P_ZZAN: '25/03/2020',
+    UN_LW_P_GLMS: '25/03/2020',
+    UN_FF14_P_YSTL: '25/03/2020',
+    UN_FF14_P_TNCR: '25/03/2020',
+    UN_LW_P_FDRC: '01/04/2020',
+    UN_LW_P_SDLX: '01/04/2020',
+    UN_LW_P_YERM: '08/04/2020',
+    UN_LW_P_NASR: '08/04/2020',
+    UN_LW_P_ETRE: '15/04/2020',
+    UN_FFT_P_RAMZ: '22/04/2020',
+    UN_FFT_P_GFGR: '22/04/2020',
+    UN_FFT_P_ORND: '22/04/2020',
+    UN_LW_P_WHIS: '06/05/2020',
+    UN_LW_P_KTON: '06/05/2020',
+    UN_LW_P_MRND: '20/05/2020',
+    UN_LW_P_DRND: '20/05/2020',
+    UN_LW_P_LUCA: '03/06/2020',
+    UN_LW_P_ADLD: '03/06/2020',
+    UN_LW_P_VKTR: '17/06/2020',
+    UN_LW_P_THLA: '17/06/2020',
+    UN_LW_P_RAIN: '01/07/2020',
+    UN_LW_P_FRVA: '01/07/2020',
+    UN_LW_P_VNLA: '15/07/2020',
+    UN_LW_P_DRIO: '15/07/2020',
+    UN_LW_P_TREL: '15/07/2020',
+    UN_FF1_P_WROL: '29/07/2020',
+    UN_LW_P_QILF: '05/08/2020',
+    UN_LW_P_SIMR: '05/08/2020',
+    UN_LW_P_ORDR: '19/08/2020',
+    UN_LW_P_LVES: '19/08/2020',
+    UN_FFT_P_AGRA: '26/08/2020',
+    UN_FFT_P_DELT: '26/08/2020',
+    UN_FFT_P_MSTD: '26/08/2020',
+    UN_LW_P_IRDL: '09/09/2020',
+    UN_LW_P_STRN_01: '23/09/2020',
+    UN_LW_P_LSWL: '07/10/2020',
+    UN_LW_P_GRSR: '07/10/2020',
+    UN_LW_P_RRIR: '07/10/2020',
+    UN_LW_P_RYER_01: '21/10/2020',
+    UN_LW_P_RIRY_01: '21/10/2020',
+    UN_LW_P_HWLT: '04/11/2020',
+    UN_LW_P_SCAL: '04/11/2020',
+    UN_LW_P_MRAL: '04/11/2020',
+    UN_LW_P_CHEL: '04/11/2020',
+    UN_FF4_P_CECL: '18/11/2020',
+    UN_FF4_P_ROSA: '25/11/2020',
+    UN_FF4_P_KAIN: '25/11/2020',
+    UN_LW_P_RAMD_01: '09/12/2020',
+    UN_LW_P_MACR_01: '09/12/2020',
+    UN_LW_P_LATH: '23/12/2020',
+    UN_LW_P_TITU: '23/12/2020',
+    UN_LW_P_DEAN: '23/12/2020',
+    UN_LW_P_NIVL: '06/01/2021',
+    UN_LW_P_RVAL: '06/01/2021',
+    UN_LW_P_SAKR: '20/01/2021',
+    UN_LW_P_ALIM: '20/01/2021',
+    UN_LW_P_RARD: '03/02/2021',
+    UN_LW_P_ELSI: '03/02/2021',
+    UN_LW_P_VNLA_01: '17/02/2021',
+    UN_LW_P_VKTR_01: '17/02/2021',
+    UN_LW_P_CRIS: '24/02/2021',
+    UN_LW_P_GABL: '03/03/2021',
+    UN_LW_P_ELSR: '03/03/2021',
+    UN_FF10_P_TIDU: '24/03/2021',
+    UN_FF10_P_YUNA: '24/03/2021',
+    UN_FF10_P_ARON: '31/03/2021',
+    UN_NIER_P_N2TB: '21/04/2021',
+    UN_NIER_P_N9TS: '21/04/2021',
+    UN_LW_P_MONT_01: '05/05/2021',
+    UN_LW_P_RYEL: '19/05/2021',
+    UN_LW_P_SIRM: '19/05/2021',
+    UN_LW_P_HLNA_01: '26/05/2021'
+  };
+
+  private JP_releaseDates = {
+    UN_LW_P_FRVA: 'XX/XX/XXXX',
+    UN_LW_P_MONT: '14/11/2019',
+    UN_LW_P_STRN: '14/11/2019',
+    UN_LW_P_ELDE: '14/11/2019',
+    UN_LW_P_ROBB: '14/11/2019',
+    UN_LW_P_ENBT: '14/11/2019',
+    UN_LW_P_ZIZA: '14/11/2019',
+    UN_LW_P_AILN: '14/11/2019',
+    UN_LW_P_MDNA: '14/11/2019',
+    UN_LW_P_AYKA: '14/11/2019',
+    UN_LW_P_MACR: '14/11/2019',
+    UN_LW_P_HLNA: '14/11/2019',
+    UN_LW_P_LILS: '14/11/2019',
+    UN_LW_P_RAMD: '14/11/2019',
+    UN_LW_P_OOOO: '14/11/2019',
+    UN_LW_P_LRNZ: '14/11/2019',
+    UN_LW_P_RIRY: '14/11/2019',
+    UN_LW_P_VSTR: '14/11/2019',
+    UN_LW_P_CLEY: '14/11/2019',
+    UN_LW_P_KADI: '14/11/2019',
+    UN_LW_P_MRLK: '14/11/2019',
+    UN_LW_P_MGRT: '14/11/2019',
+    UN_LW_P_PRAY: '14/11/2019',
+    UN_LW_P_SZRT: '14/11/2019',
+    UN_LW_P_FINA: '14/11/2019',
+    UN_LW_P_BYLO: '14/11/2019',
+    UN_LW_P_RYER: '14/11/2019',
+    UN_LW_P_SCIA: '14/11/2019',
+    UN_LW_P_VRID: '14/11/2019',
+    UN_LW_P_NAIA: '14/11/2019',
+    UN_LW_P_SRJS: '14/11/2019',
+    UN_LW_P_UNII: '14/11/2019',
+    UN_LW_P_SEVR: '14/11/2019',
+    UN_LW_P_VADM: '14/11/2019',
+    UN_LW_P_MURM: '14/11/2019',
+    UN_LW_P_PHBE: '14/11/2019',
+    UN_LW_P_RART: '14/11/2019',
+    UN_LW_P_MICE: '14/11/2019',
+    UN_LW_P_MIIA: '14/11/2019',
+    UN_LW_P_ZZAN: '14/11/2019',
+    UN_LW_P_GLMS: '14/11/2019',
+    UN_FF14_P_YSTL: '14/11/2019',
+    UN_FF14_P_TNCR: '14/11/2019',
+    UN_LW_P_FDRC: '22/11/2019',
+    UN_LW_P_SDLX: '22/11/2019',
+    UN_LW_P_YERM: '01/12/2019',
+    UN_LW_P_RAMD_01: '01/12/2019',
+    UN_LW_P_NASR: '01/12/2019',
+    UN_LW_P_MACR_01: '18/12/2019',
+    UN_LW_P_ETRE: '01/12/2019',
+    UN_FFT_P_RAMZ: '27/12/2019',
+    UN_FFT_P_GFGR: '27/12/2019',
+    UN_FFT_P_ORND: '27/12/2019',
+    UN_LW_P_WHIS: '01/01/2020',
+    UN_LW_P_KTON: '01/01/2020',
+    UN_LW_P_MRND: '15/01/2020',
+    UN_LW_P_DRND: '15/01/2020',
+    UN_LW_P_LUCA: '01/02/2020',
+    UN_LW_P_ADLD: '01/02/2020',
+    UN_LW_P_VKTR: '14/02/2020',
+    UN_LW_P_THLA: '14/02/2020',
+    UN_LW_P_VNLA: '01/03/2020',
+    UN_LW_P_DRIO: '01/03/2020',
+    UN_LW_P_TREL: '01/03/2020',
+    UN_LW_P_RAIN: '17/03/2020',
+    UN_FF1_P_WROL: '25/03/2020',
+    UN_LW_P_QILF: '01/04/2020',
+    UN_LW_P_SIMR: '01/04/2020',
+    UN_LW_P_ORDR: '15/04/2020',
+    UN_LW_P_LVES: '15/04/2020',
+    UN_FFT_P_AGRA: '22/04/2020',
+    UN_FFT_P_DELT: '22/04/2020',
+    UN_FFT_P_MSTD: '22/04/2020',
+    UN_LW_P_IRDL: '01/05/2020',
+    UN_LW_P_STRN_01: '14/05/2020',
+    UN_LW_P_GRSR: '01/06/2020',
+    UN_LW_P_RRIR: '01/06/2020',
+    UN_LW_P_LSWL: '01/06/2020',
+    UN_LW_P_SCAL: '17/06/2020',
+    UN_LW_P_MRAL: '17/06/2020',
+    UN_LW_P_LILS_01: '01/07/2020',
+    UN_LW_P_HWLT: '01/07/2020',
+    UN_LW_P_CHEL: '01/07/2020',
+    UN_LW_P_LATH: '15/07/2020',
+    UN_LW_P_TITU: '15/07/2020',
+    UN_FF4_P_CECL: '22/07/2020',
+    UN_FF4_P_ROSA: '01/08/2020',
+    UN_FF4_P_KAIN: '01/08/2020',
+    UN_LW_P_KTON_01: '18/08/2020',
+    UN_LW_P_NIVL: '01/09/2020',
+    UN_LW_P_RVAL: '01/09/2020',
+    UN_LW_P_SAKR: '16/09/2020',
+    UN_LW_P_ALIM: '16/09/2020',
+    UN_LW_P_RYER_01: '01/10/2020',
+    UN_LW_P_RARD: '01/10/2020',
+    UN_LW_P_ELSI: '01/10/2020',
+    UN_LW_P_RIRY_01: '17/10/2020',
+    UN_LW_P_CRIS: '17/10/2020',
+    UN_LW_P_GABL: '01/11/2020',
+    UN_LW_P_ELSR: '01/11/2020',
+    UN_FF10_P_TIDU: '14/11/2020',
+    UN_FF10_P_YUNA: '14/11/2020',
+    UN_FF10_P_ARON: '24/11/2020',
+    UN_LW_P_VNLA_01: '01/12/2020',
+    UN_LW_P_VKTR_01: '14/12/2020',
+    UN_NIER_P_N2TB: '23/12/2020',
+    UN_NIER_P_N9TS: '23/12/2020',
+    UN_LW_P_MONT_01: '30/12/2020',
+    UN_LW_P_RYEL: '15/01/2021',
+    UN_LW_P_SIRM: '15/01/2021',
+    UN_LW_P_HLNA_01: '01/02/2021',
+    UN_LW_P_THLA_01: '15/02/2021',
+    UN_LW_P_CMLO: '22/02/2021',
+    UN_LW_P_DEAN: '01/03/2021',
+    UN_LW_P_MORE: '17/03/2021',
+    UN_LW_P_CWEL: '17/03/2021',
+    UN_LW_P_MURG: '24/03/2021',
+    UN_LW_P_CRLT: '31/03/2021',
+    UN_LW_P_VLRC: '14/04/2021',
+    UN_LW_P_LMRE: '14/04/2021',
+    UN_LW_P_GRGS: '21/04/2021',
+    UN_FF7_P_CLUD: '21/04/2021',
+    UN_FF7_P_TIFA: '21/04/2021',
+    UN_FF7_P_AERT: '01/05/2021',
+    UN_FF7_P_BART: '01/05/2021',
+    UN_LW_P_GRSR_01: '14/05/2021',
+    UN_LW_P_VERN: '24/05/2021'
+  };
+
+  /*private GL_releaseDates = {
+    VC_LW_GLEM: '25/03/2020',
+    VC_LW_IFRT: '25/03/2020',
+    VC_LW_SIRE: '25/03/2020',
+    VC_FF14_MV1: '25/03/2020',
+    VC_FF14_MV2: '25/03/2020',
+    VC_LW_SOKYU: '25/03/2020',
+    VC_LW_TRAINING: '25/03/2020',
+    VC_LW_MACR: '25/03/2020',
+    VC_LW_MURG: '25/03/2020',
+    VC_LW_GRSR: '25/03/2020',
+    VC_LW_IGNT: '25/03/2020',
+    VC_LW_BHMT: '25/03/2020',
+    VC_LW_MABR: '25/03/2020',
+    VC_LW_FAMILY: '25/03/2020',
+    VC_LW_KTON: '25/03/2020',
+    VC_LW_PROPOSE: '25/03/2020',
+    VC_LW_SDLX: '25/03/2020',
+    VC_LW_TEAPARTY: '25/03/2020',
+    VC_LW_HUNT: '25/03/2020',
+    VC_LW_CACT: '25/03/2020',
+    VC_LW_ARMN_01: '25/03/2020',
+    VC_LW_ZUUU: '25/03/2020',
+    VC_LW_OGRE: '25/03/2020',
+    VC_LW_BOMB: '25/03/2020',
+    VC_LW_BYLO: '25/03/2020',
+    VC_LW_RART: '25/03/2020',
+    VC_LW_RYER: '25/03/2020',
+    VC_LW_VNLA: '25/03/2020',
+    VC_LW_RIRY: '25/03/2020',
+    VC_LW_LEONIS: '25/03/2020',
+    VC_LW_HOURN: '25/03/2020',
+    VC_LW_FENICE: '25/03/2020',
+    VC_LW_WEZETT: '25/03/2020',
+    VC_LW_CRYSTAL: '25/03/2020',
+    VC_LW_LEONIS2: '25/03/2020',
+    VC_LW_HOURN2: '25/03/2020',
+    VC_LW_FENICE2: '25/03/2020',
+    VC_LW_WEZETT2: '25/03/2020',
+    VC_LW_DYNVERK: '25/03/2020',
+    VC_LW_TRSV_01: '25/03/2020',
+    VC_LW_TRSV_02: '25/03/2020',
+    VC_LW_MIRROR: '25/03/2020',
+    VC_LW_SHIV: '01/04/2020',
+    VC_LW_RAMU: '08/04/2020',
+    VC_LW_HOLYNIGHT: '15/04/2020',
+    VC_FFT_MV1: '22/04/2020',
+    VC_LW_JOBCRYSTAL: '22/04/2020',
+    VC_LW_ODIN: '13/05/2020',
+    VC_LW_NEWYEAR: '13/05/2020',
+    VC_LW_LAMA_01: '20/05/2020',
+    VC_LW_GUARD: '20/05/2020',
+    VC_LW_TSLP: '03/06/2020',
+    VC_LW_LILS: '03/06/2020',
+    VC_LW_VALE1: '10/06/2020',
+    VC_LW_VALE2: '10/06/2020',
+    VC_LW_OCHU: '17/06/2020',
+    VC_MBFF_MV1: '24/06/2020',
+    VC_MBFF_MV2: '24/06/2020',
+    VC_LW_THDG: '22/07/2020',
+    VC_LW_VNLA2: '22/07/2020',
+    VC_LW_ADLD: '22/07/2020',
+    VC_LW_WHITEDAY1: '22/07/2020',
+    VC_FF01_DMAC: '23/07/2020',
+    VC_LW_DABL: '12/08/2020',
+    VC_LW_CBVPARTY1: '12/08/2020',
+    VC_FFT_MV3: '26/08/2020',
+    VC_FFT_MV2: '26/08/2020',
+    VC_LW_ROBUST: '16/09/2020',
+    VC_LW_MDFY: '16/09/2020',
+    VC_FFCC_MV1: '16/09/2020',
+    VC_FFCC_MV2: '16/09/2020',
+    VC_LW_FNRR: '30/09/2020',
+    VC_LW_ORDR: '30/09/2020',
+    VC_LW_TITN: '14/10/2020',
+    VC_LW_KING: '14/10/2020',
+    VC_LW_HALL: '28/10/2020',
+    VC_LW_VKTR: '28/10/2020',
+    VC_LW_BLMN: '28/10/2020',
+    VC_LW_AGON: '11/11/2020',
+    VC_LW_GUREN: '11/11/2020',
+    VC_LW_CHCB: '18/11/2020',
+    VC_FF4_DMNW: '25/11/2020',
+    VC_LW_MOGL: '09/12/2020',
+    VC_LW_XMAS: '09/12/2020',
+    VC_LW_LUCA: '16/12/2020',
+    VC_LW_FIGHT: '16/12/2020',
+    VC_LW_DEAN: '23/12/2020',
+    VC_LW_SCAL: '30/12/2020',
+    VC_LW_GRSR2: '30/12/2020',
+    VC_LW_TNBR: '30/12/2020',
+    VC_FF14_MV3: '06/01/2021',
+    VC_LW_LVAT: '13/01/2021',
+    VC_LW_ASSASIN: '13/01/2021',
+    VC_LW_HLNA: '27/01/2021',
+    VC_LW_GCAL: '27/01/2021',
+    VC_LW_TYPN: '10/02/2021',
+    VC_LW_APPLE: '10/02/2021',
+    VC_LW_MRLT: '24/02/2021',
+    VC_LW_GREEN: '10/03/2021',
+    VC_LW_RAMD: '17/03/2021',
+    VC_LW_OOOO: '17/03/2021',
+    VC_LW_BAHM: '24/03/2021',
+    VC_LW_ART: '24/03/2021',
+    VC_FF10_MV1: '31/03/2021',
+    VC_FF10_MV2: '31/03/2021',
+    VC_LW_ZZAN: '07/04/2021',
+    VC_LW_OMEG: '14/04/2021',
+    VC_LW_ROBB: '14/04/2021',
+    VC_NIER_MV1: '21/04/2021',
+    VC_LW_MONT2: '05/05/2021',
+    VC_LW_PNIX: '21/05/2021',
+    VC_LW_LILS2: '21/05/2021',
+    VC_LW_RAIN: '19/05/2021',
+    VC_LW_CMLO: '26/05/2021',
+    VC_LW_CORL: '26/05/2021'
+  };
+
+  private JP_releaseDates = {
+    VC_LW_GLEM: '14/11/2019',
+    VC_LW_IFRT: '14/11/2019',
+    VC_LW_SIRE: '14/11/2019',
+    VC_FF14_MV1: '14/11/2019',
+    VC_FF14_MV2: '14/11/2019',
+    VC_LW_SOKYU: '14/11/2019',
+    VC_LW_TRAINING: '14/11/2019',
+    VC_LW_MACR: '14/11/2019',
+    VC_LW_MURG: '14/11/2019',
+    VC_LW_GRSR: '14/11/2019',
+    VC_LW_IGNT: '14/11/2019',
+    VC_LW_BHMT: '14/11/2019',
+    VC_LW_MABR: '14/11/2019',
+    VC_LW_FAMILY: '14/11/2019',
+    VC_LW_KTON: '14/11/2019',
+    VC_LW_PROPOSE: '14/11/2019',
+    VC_LW_SDLX: '14/11/2019',
+    VC_LW_TEAPARTY: '14/11/2019',
+    VC_LW_HUNT: '14/11/2019',
+    VC_LW_CACT: '14/11/2019',
+    VC_LW_ARMN_01: '14/11/2019',
+    VC_LW_ZUUU: '14/11/2019',
+    VC_LW_OGRE: '14/11/2019',
+    VC_LW_BOMB: '14/11/2019',
+    VC_LW_BYLO: '14/11/2019',
+    VC_LW_RART: '14/11/2019',
+    VC_LW_RYER: '14/11/2019',
+    VC_LW_VNLA: '14/11/2019',
+    VC_LW_RIRY: '14/11/2019',
+    VC_LW_LEONIS: '14/11/2019',
+    VC_LW_HOURN: '14/11/2019',
+    VC_LW_FENICE: '14/11/2019',
+    VC_LW_WEZETT: '14/11/2019',
+    VC_LW_CRYSTAL: '14/11/2019',
+    VC_LW_LEONIS2: '14/11/2019',
+    VC_LW_HOURN2: '14/11/2019',
+    VC_LW_FENICE2: '14/11/2019',
+    VC_LW_WEZETT2: '14/11/2019',
+    VC_LW_DYNVERK: '14/11/2019',
+    VC_LW_TRSV_01: '14/11/2019',
+    VC_LW_TRSV_02: '14/11/2019',
+    VC_LW_MIRROR: '14/11/2019',
+    VC_LW_SHIV: '22/11/2019',
+    VC_LW_RAMU: '01/12/2019',
+    VC_LW_MOGL: '01/12/2019',
+    VC_LW_HOLYNIGHT: '18/12/2019',
+    VC_FFT_MV1: '27/12/2019',
+    VC_LW_ODIN: '01/01/2020',
+    VC_LW_NEWYEAR: '01/01/2020',
+    VC_LW_LAMA_01: '15/01/2020',
+    VC_LW_GUARD: '15/01/2020',
+    VC_LW_TSLP: '02/01/2020',
+    VC_LW_LILS: '02/01/2020',
+    VC_LW_JOBCRYSTAL: '02/01/2020',
+    VC_LW_VALE1: '07/02/2020',
+    VC_LW_VALE2: '07/02/2020',
+    VC_LW_OCHU: '14/02/2020',
+    VC_LW_THDG: '09/03/2020',
+    VC_LW_VNLA2: '09/03/2020',
+    VC_LW_ADLD: '09/03/2020',
+    VC_LW_WHITEDAY1: '09/03/2020',
+    VC_MBFF_MV1: '17/03/2020',
+    VC_MBFF_MV2: '17/03/2020',
+    VC_FF01_DMAC: '25/03/2020',
+    VC_LW_DABL: '08/04/2020',
+    VC_LW_CBVPARTY1: '08/04/2020',
+    VC_FFT_MV3: '22/04/2020',
+    VC_FFT_MV2: '22/04/2020',
+    VC_LW_ROBUST: '05/05/2020',
+    VC_LW_MDFY: '05/05/2020',
+    VC_LW_FNRR: '21/05/2020',
+    VC_LW_ORDR: '21/05/2020',
+    VC_LW_TITN: '10/06/2020',
+    VC_LW_KING: '10/06/2020',
+    VC_LW_VKTR: '24/06/2020',
+    VC_LW_BLMN: '24/06/2020',
+    VC_FF14_MV3: '01/07/2020',
+    VC_LW_AGON: '08/07/2020',
+    VC_LW_GUREN: '08/07/2020',
+    VC_LW_GRSR2: '22/07/2020',
+    VC_LW_CHCB: '22/07/2020',
+    VC_FF4_DMNW: '01/08/2020',
+    VC_LW_LUCA: '07/08/2020',
+    VC_LW_FIGHT: '07/08/2020',
+    VC_LW_SCAL: '25/08/2020',
+    VC_FFCC_MV1: '25/08/2020',
+    VC_LW_TNBR: '25/08/2020',
+    VC_FFCC_MV2: '25/08/2020',
+    VC_LW_LVAT: '09/09/2020',
+    VC_LW_ASSASIN: '09/09/2020',
+    VC_LW_HLNA: '23/09/2020',
+    VC_LW_GCAL: '23/09/2020',
+    VC_LW_TYPN: '09/10/2020',
+    VC_LW_APPLE: '09/10/2020',
+    VC_LW_HALL: '23/10/2020',
+    VC_LW_MRLT: '23/10/2020',
+    VC_LW_RAMD: '06/11/2020',
+    VC_LW_OOOO: '06/11/2020',
+    VC_LW_BAHM: '14/11/2020',
+    VC_LW_ART: '14/11/2020',
+    VC_FF10_MV1: '24/11/2020',
+    VC_FF10_MV2: '24/11/2020',
+    VC_LW_OMEG: '09/12/2020',
+    VC_LW_ROBB: '09/12/2020',
+    VC_LW_XMAS: '14/12/2020',
+    VC_NIER_MV1: '23/12/2020',
+    VC_LW_MONT2: '30/12/2020',
+    VC_LW_PNIX: '08/01/2021',
+    VC_LW_LILS2: '08/01/2021',
+    VC_LW_CMLO: '22/01/2021',
+    VC_LW_CORL: '22/01/2021',
+    VC_LW_CBCL: '08/02/2021',
+    VC_LW_ICDG: '22/02/2021',
+    VC_LW_DEAN: '09/03/2021',
+    VC_LW_KRKN: '09/03/2021',
+    VC_LW_MORE: '24/03/2021',
+    VC_LW_MONT: '07/04/2021',
+    VC_LW_DMCM: '07/04/2021',
+    VC_FF7_MV1: '21/04/2021',
+    VC_FF7_SCPN: '01/05/2021',
+    VC_LW_LSWL: '07/05/2021',
+    VC_LW_RAIN: '24/05/2021'
+  };*/
+
+  addReleaseDate(item, type) {
+    if (this[this.version][type][item.dataId]) {
+      //item.releaseDate = this[this.version][type][item.dataId].releaseDate;
+      item.releaseDate = this[this.version.toUpperCase() + '_releaseDates'][item.dataId];
+
+      if (!this[this.version.toUpperCase() + '_releaseDates'][item.dataId]) {
+        console.log(item.dataId)
+      }
+    } else {
+      const date = new Date();
+      let day = String(date.getDate());
+      let month = String(date.getMonth() + 1);
+      const year = date.getFullYear();
+
+      if (day.length < 2) {
+        day = '0' + day;
+      }
+
+      if (month.length < 2) {
+        month = '0' + month;
+      }
+
+      item.releaseDate = day + '/' + month + '/' + year;
+    }
   }
 
   private getUnitImage(unit, dataId = null) {
@@ -2875,13 +3443,16 @@ export class JsonService {
         cost: visionCard.cost,
         rarity: this.rarity[visionCard.rare],
         stats: {},
-        image: visionCard.icon.toLowerCase()
+        image: visionCard.icon.toLowerCase(),
+        releaseDate: ''
       };
 
       await this.getNames(card, 'visionCard');
       this.getStats(card, visionCard.status, 'visionCard');
 
       this.getVisionCardSkillsAndBuffs(card, visionCard);
+
+      //this.addReleaseDate(card, 'oldCards')
 
       this[this.version].wotvVisionCards[dataId] = card;
 
