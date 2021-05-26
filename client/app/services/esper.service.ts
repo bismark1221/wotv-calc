@@ -38,93 +38,6 @@ export class EsperService {
     'UN_FF7_S_SCPN'
   ];
 
-  private GL_releaseDates = {
-    UN_LW_S_IFRT: '25/03/2020',
-    UN_LW_S_GLEM: '25/03/2020',
-    UN_LW_S_SIRE: '25/03/2020',
-    UN_LW_S_BHMT: '25/03/2020',
-    UN_LW_S_IGNT: '25/03/2020',
-    UN_LW_S_MABR: '25/03/2020',
-    UN_LW_S_BOMB: '25/03/2020',
-    UN_LW_S_CACT: '25/03/2020',
-    UN_LW_S_ARMN_01: '25/03/2020',
-    UN_LW_S_OGRE: '25/03/2020',
-    UN_LW_S_ZUUU: '25/03/2020',
-    UN_LW_S_SHIV: '01/04/2019',
-    UN_LW_S_RAMU: '08/04/2019',
-    UN_LW_S_ODIN: '13/05/2020',
-    UN_LW_S_LAMA_01: '20/05/2020',
-    UN_LW_S_TSLP: '03/06/2020',
-    UN_LW_S_OCHU: '17/06/2020',
-    UN_LW_S_THDG: '22/07/2020',
-    UN_FF01_S_WRMC: '29/07/2020',
-    UN_LW_S_DABL: '12/08/2020',
-    UN_FFT_S_CHCB_01: '26/08/2020',
-    UN_LW_S_MDFY: '16/09/2020',
-    UN_LW_S_FNRR: '30/09/2020',
-    UN_LW_S_TITN: '14/10/2020',
-    UN_LW_S_BLMN: '28/10/2020',
-    UN_LW_S_AGON: '11/11/2020',
-    UN_LW_S_CHCB1: '18/11/2020',
-    UN_FF4_S_DMNW: '25/11/2020',
-    UN_LW_S_MOGL: '09/12/2019',
-    UN_LW_S_TNBR: '30/12/2020',
-    UN_LW_S_LVAT: '13/01/2021',
-    UN_LW_S_GCAL: '27/01/2021',
-    UN_LW_S_TYPN: '10/02/2021',
-    UN_LW_S_MRLT: '24/02/2021',
-    UN_LW_S_BAHM: '24/03/2021',
-    UN_LW_S_OMEG: '14/04/2021',
-    UN_LW_S_PNIX: '21/05/2021',
-    UN_LW_S_CORL: '06/05/2021'
-  };
-
-  private JP_releaseDates = {
-    UN_LW_S_IFRT: '14/11/2019',
-    UN_LW_S_GLEM: '14/11/2019',
-    UN_LW_S_SIRE: '14/11/2019',
-    UN_LW_S_BHMT: '14/11/2019',
-    UN_LW_S_IGNT: '14/11/2019',
-    UN_LW_S_MABR: '14/11/2019',
-    UN_LW_S_BOMB: '14/11/2019',
-    UN_LW_S_CACT: '14/11/2019',
-    UN_LW_S_ARMN_01: '14/11/2019',
-    UN_LW_S_OGRE: '14/11/2019',
-    UN_LW_S_ZUUU: '14/11/2019',
-    UN_LW_S_SHIV: '22/11/2019',
-    UN_LW_S_RAMU: '01/12/2019',
-    UN_LW_S_MOGL: '01/12/2019',
-    UN_LW_S_ODIN: '01/01/2020',
-    UN_LW_S_LAMA_01: '15/01/2020',
-    UN_LW_S_TSLP: '02/01/2020',
-    UN_LW_S_OCHU: '14/02/2020',
-    UN_LW_S_THDG: '09/03/2020',
-    UN_FF01_S_WRMC: '25/03/2020',
-    UN_LW_S_DABL: '08/04/2020',
-    UN_FFT_S_CHCB_01: '22/04/2020',
-    UN_LW_S_MDFY: '05/05/2020',
-    UN_LW_S_FNRR: '21/05/2020',
-    UN_LW_S_TITN: '10/06/2020',
-    UN_LW_S_BLMN: '24/06/2020',
-    UN_LW_S_AGON: '08/07/2020',
-    UN_LW_S_CHCB1: '22/07/2020',
-    UN_FF4_S_DMNW: '01/08/2020',
-    UN_LW_S_TNBR: '25/08/2020',
-    UN_LW_S_LVAT: '09/09/2020',
-    UN_LW_S_GCAL: '23/09/2020',
-    UN_LW_S_TYPN: '09/10/2020',
-    UN_LW_S_MRLT: '23/10/2020',
-    UN_LW_S_BAHM: '14/11/2020',
-    UN_LW_S_OMEG: '09/12/2020',
-    UN_LW_S_PNIX: '08/01/2021',
-    UN_LW_S_CORL: '22/01/2021',
-    UN_LW_S_CBCL: '08/02/2021',
-    UN_LW_S_ICDG: '22/02/2021',
-    UN_LW_S_KRKN: '09/03/2021',
-    UN_LW_S_DMCM: '07/04/2021',
-    UN_FF7_S_SCPN: '01/05/2021'
-  };
-
   constructor(
     private translateService: TranslateService,
     private localStorageService: LocalStorageService,
@@ -150,7 +63,6 @@ export class EsperService {
       Object.keys(rawEspers).forEach(esperId => {
         const esper = new Esper();
         esper.constructFromJson(rawEspers[esperId], this.translateService);
-        esper.releaseDate = this[this.navService.getVersion() + '_releaseDates'][esper.dataId];
         espers.push(esper);
       });
 
