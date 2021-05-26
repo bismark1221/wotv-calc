@@ -4461,6 +4461,54 @@
             "value": "Prinzip der Erhaltung"
         },
         {
+            "key": "SK_LW_WIZ_ATK",
+            "value": "Normaler Angriff"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_M_3",
+            "value": "Hexenkunst"
+        },
+        {
+            "key": "SK_LW_WIZ_M_1",
+            "value": "Tiefenseele"
+        },
+        {
+            "key": "SK_LW_WIZ_M_2",
+            "value": "Verwüstungszauber"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_1_INIT",
+            "value": "Negrum"
+        },
+        {
+            "key": "SK_LW_WIZ_S_2_INIT",
+            "value": "Subvita"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_3",
+            "value": "Negra"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_4",
+            "value": "Negrum II"
+        },
+        {
+            "key": "SK_LW_WIZ_S_5",
+            "value": "Berserker"
+        },
+        {
+            "key": "SK_LW_WIZ_S_6",
+            "value": "Konfus"
+        },
+        {
+            "key": "SK_LW_WIZ_R_1",
+            "value": "Konterenergie"
+        },
+        {
+            "key": "SK_LW_WIZ_P_1",
+            "value": "Meister der Hexerei"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Eisra"
         },
@@ -5285,6 +5333,22 @@
             "value": "Niedermähen"
         },
         {
+            "key": "SK_IGNT_M_01_R",
+            "value": "Eiserner Berserker"
+        },
+        {
+            "key": "SK_IGNT_M_01_B_R",
+            "value": "Eiserner Berserker"
+        },
+        {
+            "key": "SK_IGNT_M_02_R",
+            "value": "Kraftwelle"
+        },
+        {
+            "key": "SK_IGNT_M_03_R",
+            "value": "Niedermähen"
+        },
+        {
             "key": "SK_LAMA_ATK",
             "value": "Normaler Angriff"
         },
@@ -5841,6 +5905,22 @@
             "value": "Flammen der Wiedergeburt"
         },
         {
+            "key": "SK_CORL_ATK",
+            "value": "Normaler Angriff"
+        },
+        {
+            "key": "SK_CORL_M_01",
+            "value": "Blaster"
+        },
+        {
+            "key": "SK_CORL_M_02",
+            "value": "Auge des Chaos"
+        },
+        {
+            "key": "SK_CORL_M_03",
+            "value": "Doppelattacke"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Normaler Angriff"
         },
@@ -5875,6 +5955,34 @@
         {
             "key": "SK_LW_E_VIK_S_3",
             "value": "Rebellischer Geist"
+        },
+        {
+            "key": "SK_LW_PSI_M_1_TW",
+            "value": "Detonationsstoß"
+        },
+        {
+            "key": "SK_LW_RDM_S_3_TW",
+            "value": "Störstoß"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1_TW",
+            "value": "Vitaga"
+        },
+        {
+            "key": "SK_LW_WHM_M_4_TW",
+            "value": "Regena"
+        },
+        {
+            "key": "SK_LW_ASS_S_1_TW",
+            "value": "Giftstich"
+        },
+        {
+            "key": "SK_LW_NIN_M_3_TW",
+            "value": "Giftnebel"
+        },
+        {
+            "key": "SK_LW_MGK_M_1_TW",
+            "value": "Bio-Klinge"
         },
         {
             "key": "SK_DMNW_ATK",
@@ -6529,6 +6637,10 @@
             "value": "Wissen ist Macht"
         },
         {
+            "key": "SK_LB_LW_HLNA_01",
+            "value": "Schattenrose"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Inferno"
         },
@@ -6679,6 +6791,10 @@
         {
             "key": "SK_SMN_PNIX",
             "value": "Flammen der Wiedergeburt"
+        },
+        {
+            "key": "SK_SMN_CORL",
+            "value": "Blaster"
         },
         {
             "key": "SK_UN_BD_EC_HP_200",
@@ -7191,6 +7307,66 @@
         {
             "key": "SK_LW_EC_RDM_C_04B",
             "value": "Terrara [Verfall]"
+        },
+        {
+            "key": "SK_LW_EC_WHM_A_01",
+            "value": "Arie der Himmelsstrafe"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01",
+            "value": "Vitaga (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01B",
+            "value": "Vitaga [Trostbringer]"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02",
+            "value": "Prozession der Heiligen (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02B",
+            "value": "Prozession der Himmlischen"
+        },
+        {
+            "key": "SK_LW_EC_GUN_A_01",
+            "value": "Durchschlagschuss"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01",
+            "value": "Tödlicher Schuss (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01B",
+            "value": "Tödlicher Scharfschuss"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02",
+            "value": "Fokussieren (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02B",
+            "value": "Meister des Fokus"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_A_01",
+            "value": "Richtspruch der Schwarzen Rose"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_01_DARK",
+            "value": "Hexenkunst (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_01_DARK_B",
+            "value": "Schwarzer Rosenbann"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_02",
+            "value": "Meister der Hexerei (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_02B",
+            "value": "Essenz der Hexerei"
         },
         {
             "key": "SK_US_POTION",
@@ -7757,6 +7933,10 @@
             "value": "Meisterfähigkeit"
         },
         {
+            "key": "SK_MA_LW_HLNA_01",
+            "value": "Meisterfähigkeit"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Schlitzangriff +2"
         },
@@ -8185,6 +8365,14 @@
             "value": ""
         },
         {
+            "key": "SK_LW_RNG_009_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_009_5",
+            "value": ""
+        },
+        {
             "key": "SK_LW_ACC_040_1",
             "value": "Emblem des Verschlingens"
         },
@@ -8539,6 +8727,10 @@
         {
             "key": "SK_SWO_LW_SIRM_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_HLNA_01_1",
+            "value": "Protektion alter Gefährten"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -9685,6 +9877,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CMLO_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -10806,6 +11018,30 @@
         },
         {
             "key": "SK_VC_LW_RAIN_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSMAX",
             "value": ""
         },
         {
@@ -12206,6 +12442,38 @@
         },
         {
             "key": "SK_VC_LW_RAIN_PMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_PAW",
             "value": ""
         },
         {

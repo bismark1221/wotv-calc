@@ -4461,6 +4461,54 @@
             "value": "Loi de la préservation"
         },
         {
+            "key": "SK_LW_WIZ_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_M_3",
+            "value": "Ténèbres ensorcelantes"
+        },
+        {
+            "key": "SK_LW_WIZ_M_1",
+            "value": "Concentration assombrie"
+        },
+        {
+            "key": "SK_LW_WIZ_M_2",
+            "value": "Dévastation"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_1_INIT",
+            "value": "Ombre"
+        },
+        {
+            "key": "SK_LW_WIZ_S_2_INIT",
+            "value": "Saignée"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_3",
+            "value": "Ombre +"
+        },
+        {
+            "key": "SK_LW_WIZ_DARK_S_4",
+            "value": "Ombre II"
+        },
+        {
+            "key": "SK_LW_WIZ_S_5",
+            "value": "Berserk"
+        },
+        {
+            "key": "SK_LW_WIZ_S_6",
+            "value": "Confusion"
+        },
+        {
+            "key": "SK_LW_WIZ_R_1",
+            "value": "Retour énergétique"
+        },
+        {
+            "key": "SK_LW_WIZ_P_1",
+            "value": "Maîtrise de la sorcellerie"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "Glace +"
         },
@@ -5285,6 +5333,22 @@
             "value": "Faucheur"
         },
         {
+            "key": "SK_IGNT_M_01_R",
+            "value": "Berserker en fer"
+        },
+        {
+            "key": "SK_IGNT_M_01_B_R",
+            "value": "Berserker en fer"
+        },
+        {
+            "key": "SK_IGNT_M_02_R",
+            "value": "Onde puissante"
+        },
+        {
+            "key": "SK_IGNT_M_03_R",
+            "value": "Faucheur"
+        },
+        {
             "key": "SK_LAMA_ATK",
             "value": "Attaque normale"
         },
@@ -5841,6 +5905,22 @@
             "value": "Feu résurrecteur"
         },
         {
+            "key": "SK_CORL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CORL_M_01",
+            "value": "Rayons"
+        },
+        {
+            "key": "SK_CORL_M_02",
+            "value": "Regard chaotique"
+        },
+        {
+            "key": "SK_CORL_M_03",
+            "value": "Double attaque"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -5875,6 +5955,34 @@
         {
             "key": "SK_LW_E_VIK_S_3",
             "value": "Esprit rebelle"
+        },
+        {
+            "key": "SK_LW_PSI_M_1_TW",
+            "value": "Détonation"
+        },
+        {
+            "key": "SK_LW_RDM_S_3_TW",
+            "value": "Élan enrayé"
+        },
+        {
+            "key": "SK_LW_WHM_S_4_1_TW",
+            "value": "Soin Max"
+        },
+        {
+            "key": "SK_LW_WHM_M_4_TW",
+            "value": "Récup"
+        },
+        {
+            "key": "SK_LW_ASS_S_1_TW",
+            "value": "Piqûre toxique"
+        },
+        {
+            "key": "SK_LW_NIN_M_3_TW",
+            "value": "Brume empoisonnée"
+        },
+        {
+            "key": "SK_LW_MGK_M_1_TW",
+            "value": "Lame Toxine"
         },
         {
             "key": "SK_DMNW_ATK",
@@ -6529,6 +6637,10 @@
             "value": "Don du savoir"
         },
         {
+            "key": "SK_LB_LW_HLNA_01",
+            "value": "Rose des ténèbres"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "Flammes de l'enfer"
         },
@@ -6679,6 +6791,10 @@
         {
             "key": "SK_SMN_PNIX",
             "value": "Feu résurrecteur"
+        },
+        {
+            "key": "SK_SMN_CORL",
+            "value": "Rayons"
         },
         {
             "key": "SK_UN_BD_EC_HP_200",
@@ -7191,6 +7307,66 @@
         {
             "key": "SK_LW_EC_RDM_C_04B",
             "value": "Terre + [Désolation]"
+        },
+        {
+            "key": "SK_LW_EC_WHM_A_01",
+            "value": "Mélodie divine"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01",
+            "value": "Améliorer Soin Max"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_01B",
+            "value": "Soin Max [Panacée]"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02",
+            "value": "Améliorer La Marche des Saints"
+        },
+        {
+            "key": "SK_LW_EC_WHM_C_02B",
+            "value": "Marche angélique"
+        },
+        {
+            "key": "SK_LW_EC_GUN_A_01",
+            "value": "Tir perforant"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01",
+            "value": "Améliorer Tir vital"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_01B",
+            "value": "Tir acéré vital"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02",
+            "value": "Améliorer Focus"
+        },
+        {
+            "key": "SK_LW_EC_GUN_C_02B",
+            "value": "Pro du focus"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_A_01",
+            "value": "Jugement de la rose noire"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_01_DARK",
+            "value": "Améliorer Ténèbres ensorcelantes"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_01_DARK_B",
+            "value": "Ténèbres de la rose noire"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_02",
+            "value": "Améliorer Maîtrise de la sorcellerie"
+        },
+        {
+            "key": "SK_LW_EC_WIZ_C_02B",
+            "value": "Maîtrise obscure maléfique"
         },
         {
             "key": "SK_US_POTION",
@@ -7757,6 +7933,10 @@
             "value": "Aptitude maître"
         },
         {
+            "key": "SK_MA_LW_HLNA_01",
+            "value": "Aptitude maître"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "Att tranchante +2"
         },
@@ -8185,6 +8365,14 @@
             "value": ""
         },
         {
+            "key": "SK_LW_RNG_009_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_RNG_009_5",
+            "value": ""
+        },
+        {
             "key": "SK_LW_ACC_040_1",
             "value": "Emblème de l'érosion"
         },
@@ -8539,6 +8727,10 @@
         {
             "key": "SK_SWO_LW_SIRM_1_1",
             "value": ""
+        },
+        {
+            "key": "SK_ACC_LW_HLNA_01_1",
+            "value": "Amitié éternelle"
         },
         {
             "key": "SK_ACC_LW_MONT_ARENA",
@@ -9685,6 +9877,26 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CMLO_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GSMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSAW",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -10806,6 +11018,30 @@
         },
         {
             "key": "SK_VC_LW_RAIN_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSAW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_GSMAX",
             "value": ""
         },
         {
@@ -12206,6 +12442,38 @@
         },
         {
             "key": "SK_VC_LW_RAIN_PMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CMLO_P2MAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CORL_PAW",
             "value": ""
         },
         {

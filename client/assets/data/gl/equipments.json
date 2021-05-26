@@ -44117,6 +44117,7 @@
       "JB_LW_MSW",
       "JB_LW_PSI",
       "JB_LW_LIB",
+      "JB_LW_WIZ",
       "JB_FF10_TIDU",
       "JB_FF10_YUNA",
       "JB_LW_MONT_M",
@@ -44137,9 +44138,13 @@
       "JB_LW_NASR_M",
       "JB_LW_RYEL_M",
       "JB_LW_SIRM_M",
+      "JB_LW_MURM_M",
+      "JB_LW_AYKA_M",
+      "JB_LW_FDRC_M",
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
-      "JB_NIER_N9TS"
+      "JB_NIER_N9TS",
+      "JB_LW_HLNA_01_M"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47921,6 +47926,193 @@
     "acquisition": {
       "type": "tmr",
       "unitId": "UN_LW_P_SIRM"
+    }
+  },
+  "AF_ACC_LW_HLNA_01_1": {
+    "names": {
+      "en": "Black Rose Headdress",
+      "fr": "Épine de rose noire",
+      "de": "Schwarzer Rosenhaarschmuck",
+      "es": "Tocado de la Rosa Negra",
+      "ko": "흑장미 헤드 드레스",
+      "zh": "黑薔薇髮帶"
+    },
+    "slug": "black-rose-headdress",
+    "stats": {
+      "HP": {
+        "min": 298,
+        "max": 298
+      },
+      "MAG": {
+        "min": 58,
+        "max": 58
+      },
+      "AGI": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_HLNA_01_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST",
+          "fr": "ARTIFACT_TRUST",
+          "de": "ARTIFACT_TRUST",
+          "es": "ARTIFACT_TRUST",
+          "ko": "ARTIFACT_TRUST",
+          "zh": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Grace of Eternal Friendship",
+            "fr": "Amitié éternelle",
+            "de": "Protektion alter Gefährten",
+            "es": "Protección de amistad eterna",
+            "ko": "사라지지 않는 친구의 가호",
+            "zh": "不失之友的保護"
+          },
+          "dataId": "SK_ACC_LW_HLNA_01_1",
+          "effects": [
+            {
+              "type": "REDUCE_DAMAGE_GENERAL",
+              "minValue": 15,
+              "maxValue": 35,
+              "calcType": "percent",
+              "turn": 3,
+              "turnType": "COUNT",
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "AGI",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "percent",
+              "turn": 3,
+              "increaseMax": true,
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 36
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_033",
+    "equippableJobs": [
+      "JB_LW_WAR",
+      "JB_LW_PLD",
+      "JB_LW_KNT",
+      "JB_LW_SWN",
+      "JB_LW_HUN",
+      "JB_LW_MNK",
+      "JB_LW_LAN",
+      "JB_LW_CLR",
+      "JB_LW_SAM",
+      "JB_LW_DRG",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_THI",
+      "JB_LW_NIN",
+      "JB_LW_GUN",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_MGK_FIRE",
+      "JB_LW_RDM_FIRE",
+      "JB_LW_TIM",
+      "JB_LW_WHM",
+      "JB_LW_GLMS",
+      "JB_FF14_YSTL",
+      "JB_FF14_TNCR",
+      "JB_LW_WGN",
+      "JB_LW_VIK",
+      "JB_LW_FINA",
+      "JB_FFT_RAMZ",
+      "JB_FFT_GFGR",
+      "JB_FFT_ORND",
+      "JB_LW_RAIN",
+      "JB_LW_ASS",
+      "JB_FF1_WROL",
+      "JB_LW_MST_FIRE",
+      "JB_FFT_AGRA",
+      "JB_FFT_DELT",
+      "JB_FFT_MSTD",
+      "JB_LW_CAL",
+      "JB_LW_STRN",
+      "JB_LW_GRSR",
+      "JB_LW_LSWL",
+      "JB_LW_MKN",
+      "JB_FF4_CECL",
+      "JB_FF4_ROSA",
+      "JB_FF4_KAIN",
+      "JB_LW_DEAN",
+      "JB_LW_ARC",
+      "JB_LW_SAKR",
+      "JB_LW_MMC",
+      "JB_LW_BEA",
+      "JB_LW_MSW",
+      "JB_LW_PSI",
+      "JB_LW_LIB",
+      "JB_LW_WIZ",
+      "JB_FF10_TIDU",
+      "JB_FF10_YUNA",
+      "JB_LW_MONT_M",
+      "JB_LW_ROBB_M",
+      "JB_LW_OOOO_M",
+      "JB_LW_SIMR_M",
+      "JB_LW_ORDR_M",
+      "JB_LW_ELDE_M",
+      "JB_LW_AILN_M",
+      "JB_LW_BYLO_M",
+      "JB_LW_RART_M",
+      "JB_LW_ZIZA_M",
+      "JB_LW_ETRE_M",
+      "JB_LW_ZZAN_M",
+      "JB_LW_MDNA_M",
+      "JB_LW_PHBE_M",
+      "JB_LW_YERM_M",
+      "JB_LW_NASR_M",
+      "JB_LW_RYEL_M",
+      "JB_LW_SIRM_M",
+      "JB_LW_MURM_M",
+      "JB_LW_AYKA_M",
+      "JB_LW_FDRC_M",
+      "JB_FF10_ARON",
+      "JB_NIER_N2TB",
+      "JB_NIER_N9TS",
+      "JB_LW_HLNA_01_M"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_HLNA_01"
     }
   },
   "AF_SWO_LW_MONT_2": {
@@ -52466,6 +52658,79 @@
       "type": "Unknown"
     }
   },
+  "AF_ROD_LW_HLNA_01_2": {
+    "names": {
+      "en": "Witch's Staff",
+      "fr": "Bâton de sorcière",
+      "de": "Hexenstab",
+      "es": "Bastón de bruja",
+      "ko": "마녀의 지팡이",
+      "zh": "魔女之杖"
+    },
+    "slug": "witchs-staff",
+    "stats": {
+      "HP": {
+        "min": 15,
+        "max": 293
+      },
+      "ATK": {
+        "min": 2,
+        "max": 30
+      },
+      "MAG": {
+        "min": 14,
+        "max": 270
+      },
+      "ACCURACY": {
+        "min": 2,
+        "max": 27
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 9
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_ROD_LW_HLNA_01_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50",
+          "fr": "ARTIFACT_50",
+          "de": "ARTIFACT_50",
+          "es": "ARTIFACT_50",
+          "ko": "ARTIFACT_50",
+          "zh": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_rod_023",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_MST_FIRE",
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
   "AF_LOT_LW_RNG_005": {
     "names": {
       "en": "Alexandrite Ring",
@@ -53587,6 +53852,188 @@
         "IT_AF_AW_ACCE": 375,
         "IT_AF_MAT_SHINE_03": 185,
         "IT_AF_MAT_SHINE_02": 6
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    }
+  },
+  "AF_LW_RNG_009": {
+    "names": {
+      "en": "Blaze Ring",
+      "fr": "Anneau des flammes",
+      "de": "Infernoring",
+      "es": "Anillo llameante",
+      "ko": "불의 업의 반지",
+      "zh": "火業戒指"
+    },
+    "slug": "blaze-ring",
+    "stats": {
+      "HP": {
+        "min": 17,
+        "max": 346
+      },
+      "ATK": {
+        "min": 5,
+        "max": 100
+      },
+      "DEF": {
+        "min": 1,
+        "max": 24
+      },
+      "MAG": {
+        "min": 5,
+        "max": 100
+      },
+      "SPR": {
+        "min": 1,
+        "max": 24
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_LW_RNG_009",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "SK_LW_RNG_009_1",
+            "fr": "SK_LW_RNG_009_1",
+            "de": "SK_LW_RNG_009_1",
+            "es": "SK_LW_RNG_009_1",
+            "ko": "SK_LW_RNG_009_1",
+            "zh": "SK_LW_RNG_009_1"
+          },
+          "dataId": "SK_LW_RNG_009_1",
+          "effects": [
+            {
+              "type": "ICE_RES",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "FIRE_RES",
+              "minValue": 3,
+              "maxValue": 8,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": -25,
+              "maxValue": -25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "SK_LW_RNG_009_5",
+            "fr": "SK_LW_RNG_009_5",
+            "de": "SK_LW_RNG_009_5",
+            "es": "SK_LW_RNG_009_5",
+            "ko": "SK_LW_RNG_009_5",
+            "zh": "SK_LW_RNG_009_5"
+          },
+          "dataId": "SK_LW_RNG_009_5",
+          "effects": [
+            {
+              "type": "ICE_RES",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "FIRE_RES",
+              "minValue": 5,
+              "maxValue": 15,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "IMMOBILIZE_RES",
+              "minValue": -25,
+              "maxValue": -25,
+              "calcType": "resistance",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_rng_009",
+    "equippableJobs": [],
+    "equippableUnits": [
+      "UN_LW_P_ELDE",
+      "UN_LW_P_LILS",
+      "UN_LW_P_MGRT",
+      "UN_LW_P_NAIA",
+      "UN_LW_P_MICE",
+      "UN_FF14_P_YSTL",
+      "UN_LW_P_MACR_01",
+      "UN_LW_P_ADLD",
+      "UN_LW_P_RAIN",
+      "UN_LW_P_SIMR",
+      "UN_FFT_P_DELT",
+      "UN_LW_P_LATH",
+      "UN_LW_P_RARD",
+      "UN_LW_P_MONT_01"
+    ],
+    "materials": [
+      {
+        "IT_AF_AW_ACCE": 375,
+        "IT_AF_MAT_FIRE_03": 185,
+        "IT_AF_MAT_FIRE_02": 6
       }
     ],
     "acquisition": {

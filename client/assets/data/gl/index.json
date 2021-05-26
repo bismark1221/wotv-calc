@@ -312,16 +312,16 @@
         "zh": "彩花"
       },
       "stats": {
-        "HP": 2129,
-        "TP": 216,
-        "AP": 176,
-        "ATK": 72,
+        "HP": 2852,
+        "TP": 235,
+        "AP": 186,
+        "ATK": 95,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 319,
-        "DEX": 142,
+        "MAG": 535,
+        "DEX": 168,
         "AGI": 64,
-        "LUCK": 172,
+        "LUCK": 191,
         "ICE_RES": -10,
         "EARTH_RES": 20,
         "SLASH_RES": -5,
@@ -334,7 +334,9 @@
         "STOP_RES": 70,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 142
+        "INITIAL_AP": 153,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsayka"
     },
@@ -1238,16 +1240,16 @@
         "zh": "《低語》"
       },
       "stats": {
-        "HP": 895,
-        "TP": 110,
-        "AP": 98,
-        "ATK": 159,
+        "HP": 1816,
+        "TP": 120,
+        "AP": 102,
+        "ATK": 372,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 201,
-        "DEX": 184,
-        "AGI": 42,
-        "LUCK": 132,
+        "MAG": 468,
+        "DEX": 237,
+        "AGI": 46,
+        "LUCK": 182,
         "WIND_RES": -10,
         "LIGHTNING_RES": 20,
         "SLASH_RES": 25,
@@ -1260,13 +1262,15 @@
         "CHARM_RES": 20,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 61,
+        "INITIAL_AP": 67,
         "FIRE_RES": 10,
         "ICE_RES": 10,
         "EARTH_RES": 10,
         "WATER_RES": 10,
         "LIGHT_RES": 10,
-        "DARK_RES": 10
+        "DARK_RES": 10,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsmurm"
     },
@@ -1567,16 +1571,16 @@
         "zh": "弗蕾德麗卡"
       },
       "stats": {
-        "HP": 1988,
-        "TP": 126,
-        "AP": 119,
-        "ATK": 266,
+        "HP": 2514,
+        "TP": 132,
+        "AP": 125,
+        "ATK": 416,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 72,
-        "DEX": 274,
+        "MAG": 95,
+        "DEX": 357,
         "AGI": 68,
-        "LUCK": 176,
+        "LUCK": 214,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "SLASH_RES": -15,
@@ -1587,8 +1591,10 @@
         "CHARM_RES": -5,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 22,
         "CRITIC_RATE": 13,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "MISSILE_ATK": 15
       },
       "image": "lapsfdrc"
@@ -4081,6 +4087,45 @@
         "LIGHTNING_ATK": 10
       },
       "image": "lapssirm"
+    },
+    {
+      "names": {
+        "en": "Helena (Black-Robed Witch)",
+        "fr": "Helena (Sorcière vêtue de noir)",
+        "de": "Helena (Hexe in Schwarz)",
+        "es": "Helena, la Bruja de Negro",
+        "ko": "헬레나(검은 옷의 마녀)",
+        "zh": "海蓮娜（黑衣魔女）"
+      },
+      "stats": {
+        "HP": 3484,
+        "TP": 187,
+        "AP": 187,
+        "ATK": 82,
+        "DEF": 0,
+        "SPR": 6,
+        "MAG": 519,
+        "DEX": 254,
+        "AGI": 63,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 15,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 150,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 20
+      },
+      "image": "lapshlna_01"
     }
   ]
 }

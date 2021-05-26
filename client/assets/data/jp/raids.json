@@ -5059,13 +5059,13 @@
   "RAID_ID_18": {
     "dataId": "RAID_ID_18",
     "names": {
-      "en": "ウルフラマイター"
+      "en": "ウルフラマイター - Red Giant"
     },
     "bosses": [
       {
         "dataId": "UN_LW_E_IGNT_01_R",
         "names": {
-          "en": "ウルフラマイター"
+          "en": "ウルフラマイター - Red Giant"
         },
         "stats": {
           "HP": {
@@ -5284,7 +5284,7 @@
             "maxLevel": 100
           }
         },
-        "slug": "uru-fura-mait",
+        "slug": "red-giant",
         "attack": {
           "names": {
             "en": "通常攻撃"
@@ -5603,7 +5603,7 @@
         }
       ]
     },
-    "slug": "uru-fura-mait"
+    "slug": "red-giant"
   },
   "RAID_ID_19": {
     "dataId": "RAID_ID_19",

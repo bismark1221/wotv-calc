@@ -24983,6 +24983,307 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_SO_05_LAN": {
+    "dataId": "UN_LW_E_SO_05_LAN",
+    "names": {
+      "en": "«Rubeus» Soldier",
+      "fr": "Soldat de « Rubeus »",
+      "de": "„Rubeus“-Soldat",
+      "es": "Soldado de Rubeus",
+      "ko": " '홍련' 병사",
+      "zh": "「紅蓮」兵"
+    },
+    "jobs": [
+      "JB_LW_LAN_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 133,
+        "max": 1570
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 41,
+        "max": 66
+      },
+      "ATK": {
+        "min": 49,
+        "max": 146
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 47
+      },
+      "DEX": {
+        "min": 75,
+        "max": 185
+      },
+      "AGI": {
+        "min": 21,
+        "max": 43
+      },
+      "LUCK": {
+        "min": 78,
+        "max": 205
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso05",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rubeus-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_LAN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1
+    }
+  },
+  "UN_LW_E_SO_05_MGK": {
+    "dataId": "UN_LW_E_SO_05_MGK",
+    "names": {
+      "en": "«Rubeus» Soldier",
+      "fr": "Soldat de « Rubeus »",
+      "de": "„Rubeus“-Soldat",
+      "es": "Soldado de Rubeus",
+      "ko": " '홍련' 병사",
+      "zh": "「紅蓮」兵"
+    },
+    "jobs": [
+      "JB_LW_MGK_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 133,
+        "max": 1570
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 41,
+        "max": 66
+      },
+      "ATK": {
+        "min": 46,
+        "max": 137
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 23,
+        "max": 52
+      },
+      "DEX": {
+        "min": 75,
+        "max": 185
+      },
+      "AGI": {
+        "min": 19,
+        "max": 39
+      },
+      "LUCK": {
+        "min": 85,
+        "max": 209
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso05",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rubeus-soldier",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_MGK_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_ARMN_02": {
     "dataId": "UN_LW_E_ARMN_02",
     "names": {
@@ -52606,6 +52907,394 @@
       "based": "physic"
     }
   },
+  "UN_LW_E_CORL_SIREN": {
+    "dataId": "UN_LW_E_CORL_SIREN",
+    "names": {
+      "en": "Coeurl",
+      "fr": "Cœurl",
+      "de": "Coeurl",
+      "es": "Bengal",
+      "ko": "커얼",
+      "zh": "長鬚豹"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 169,
+        "max": 3862
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 60,
+        "max": 480
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 60,
+        "max": 480
+      },
+      "DEX": {
+        "min": 95,
+        "max": 241
+      },
+      "AGI": {
+        "min": 35,
+        "max": 88
+      },
+      "LUCK": {
+        "min": 95,
+        "max": 222
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "FROSTBITE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapscorl",
+    "species": "beast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "coeurl",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_CORL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_CORL_SIREN2": {
+    "dataId": "UN_LW_E_CORL_SIREN2",
+    "names": {
+      "en": "Coeurl",
+      "fr": "Cœurl",
+      "de": "Coeurl",
+      "es": "Bengal",
+      "ko": "커얼",
+      "zh": "長鬚豹"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 338,
+        "max": 7724
+      },
+      "TP": {
+        "min": 80,
+        "max": 250
+      },
+      "AP": {
+        "min": 92,
+        "max": 244
+      },
+      "ATK": {
+        "min": 120,
+        "max": 520
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 120,
+        "max": 520
+      },
+      "DEX": {
+        "min": 95,
+        "max": 241
+      },
+      "AGI": {
+        "min": 35,
+        "max": 88
+      },
+      "LUCK": {
+        "min": 95,
+        "max": 222
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 30,
+        "max": 30
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "FROSTBITE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapscorl",
+    "species": "beast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "coeurl",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_CORL_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
   "UN_LW_E_CSLI": {
     "dataId": "UN_LW_E_CSLI",
     "names": {
@@ -67501,158 +68190,6 @@
       "based": "physic"
     }
   },
-  "UN_LW_E_SO_05_LAN": {
-    "dataId": "UN_LW_E_SO_05_LAN",
-    "names": {
-      "en": "«Rubeus» Soldier",
-      "fr": "Soldat de « Rubeus »",
-      "de": "„Rubeus“-Soldat",
-      "es": "Soldado de Rubeus",
-      "ko": " '홍련' 병사",
-      "zh": "「紅蓮」兵"
-    },
-    "jobs": [
-      "JB_LW_LAN_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 133,
-        "max": 1570
-      },
-      "TP": {
-        "min": 35,
-        "max": 64
-      },
-      "AP": {
-        "min": 41,
-        "max": 66
-      },
-      "ATK": {
-        "min": 49,
-        "max": 146
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 19,
-        "max": 47
-      },
-      "DEX": {
-        "min": 75,
-        "max": 185
-      },
-      "AGI": {
-        "min": 21,
-        "max": 43
-      },
-      "LUCK": {
-        "min": 78,
-        "max": 205
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {},
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "MAGIC_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso05",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rubeus-soldier",
-    "attack": {
-      "names": {
-        "en": "Normal Attack",
-        "fr": "Attaque normale",
-        "de": "Normaler Angriff",
-        "es": "Ataque normal",
-        "ko": "일반 공격",
-        "zh": "普通攻擊"
-      },
-      "effects": [],
-      "dataId": "SK_LW_LAN_ATK",
-      "damage": {
-        "minValue": -30,
-        "maxValue": -30,
-        "type": "pierce",
-        "effType": "DAMAGE",
-        "formula": {}
-      },
-      "elem": [
-        "neutral"
-      ],
-      "type": "skill",
-      "target": "all",
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 2,
-        "s": 0,
-        "line": 1
-      },
-      "based": "physic",
-      "pierce": 1
-    }
-  },
   "UN_GM_MGSW_01": {
     "dataId": "UN_GM_MGSW_01",
     "names": {
@@ -70407,6 +70944,1320 @@
         "minValue": -30,
         "maxValue": -30,
         "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_GRSR_01": {
+    "dataId": "UN_LW_E_GRSR_01",
+    "names": {
+      "en": "Glaciela Wezette",
+      "fr": "Graziella Wezett",
+      "de": "Glaziela Wezette",
+      "es": "Graciela Wezette",
+      "ko": "그라시엘라 웨젯",
+      "zh": "格拉西拉·維澤特"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_GRSR",
+      "JB_LW_MNK_WATER",
+      "JB_LW_NIN_WATR"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 304,
+        "max": 1139
+      },
+      "TP": {
+        "min": 58,
+        "max": 90
+      },
+      "AP": {
+        "min": 70,
+        "max": 86
+      },
+      "ATK": {
+        "min": 93,
+        "max": 157
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 33,
+        "max": 55
+      },
+      "DEX": {
+        "min": 63,
+        "max": 94
+      },
+      "AGI": {
+        "min": 28,
+        "max": 33
+      },
+      "LUCK": {
+        "min": 66,
+        "max": 93
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "PIERCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MAGIC_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsgrsr",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "glaciela-wezette-1",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_GRSR_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "pierce",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 2,
+        "s": 0,
+        "line": 1
+      },
+      "based": "physic",
+      "pierce": 1
+    }
+  },
+  "UN_LW_E_DRGN": {
+    "dataId": "UN_LW_E_DRGN",
+    "names": {
+      "en": "Mini Dragon",
+      "fr": "Mini dragon",
+      "de": "Minidrache",
+      "es": "Minidragón",
+      "ko": "미니 드래곤",
+      "zh": "迷你龍"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 20,
+        "max": 20
+      },
+      "SPR": {
+        "min": 20,
+        "max": 20
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsdrgn",
+    "species": "dragon",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "mini-dragon",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_DRGN_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "all",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "ennemySide",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_MIIA": {
+    "dataId": "UN_LW_E_MIIA",
+    "names": {
+      "en": "Mia",
+      "fr": "Mia",
+      "de": "Mia",
+      "es": "Mía",
+      "ko": "미아",
+      "zh": "米婭"
+    },
+    "rarity": "R",
+    "jobs": [
+      "JB_LW_THI_WIND",
+      "JB_LW_CLR_WIND",
+      "JB_LW_MGK_WIND"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 148,
+        "max": 540
+      },
+      "TP": {
+        "min": 33,
+        "max": 51
+      },
+      "AP": {
+        "min": 39,
+        "max": 48
+      },
+      "ATK": {
+        "min": 39,
+        "max": 65
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 32
+      },
+      "DEX": {
+        "min": 45,
+        "max": 87
+      },
+      "AGI": {
+        "min": 24,
+        "max": 27
+      },
+      "LUCK": {
+        "min": 37,
+        "max": 67
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "EARTH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "wind",
+    "image": "lapsmiia",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "mia-1",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_THI_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "slash",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_RVAL": {
+    "dataId": "UN_LW_E_RVAL",
+    "names": {
+      "en": "Livialle",
+      "fr": "Liviale",
+      "de": "Livialle",
+      "es": "Livialle",
+      "ko": "리비알",
+      "zh": "利維亞爾"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_BLM_SOIL",
+      "JB_LW_CLR_SOIL",
+      "JB_LW_CAL_SOIL"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 187,
+        "max": 618
+      },
+      "TP": {
+        "min": 52,
+        "max": 81
+      },
+      "AP": {
+        "min": 71,
+        "max": 88
+      },
+      "ATK": {
+        "min": 27,
+        "max": 45
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 64,
+        "max": 108
+      },
+      "DEX": {
+        "min": 60,
+        "max": 89
+      },
+      "AGI": {
+        "min": 25,
+        "max": 30
+      },
+      "LUCK": {
+        "min": 58,
+        "max": 81
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "LIGHTNING_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsrval",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "livialle-1",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_BLM_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 1,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_RAMU": {
+    "dataId": "UN_LW_E_RAMU",
+    "names": {
+      "en": "Ramuh",
+      "fr": "Ramuh",
+      "de": "Ramuh",
+      "es": "Lamú",
+      "ko": "라무",
+      "zh": "拉姆"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapsramu",
+    "species": "netherBeast",
+    "size": 1,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "ramuh",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_RAMU_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_SHIV": {
+    "dataId": "UN_LW_E_SHIV",
+    "names": {
+      "en": "Shiva",
+      "fr": "Shiva",
+      "de": "Shiva",
+      "es": "Shiva",
+      "ko": "시바",
+      "zh": "濕婆"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "ice",
+    "image": "lapsshiv",
+    "species": "netherBeast",
+    "size": 1,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "shiva",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_SHIV_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 2,
+        "l": 1,
+        "s": 0
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_VKTR_01": {
+    "dataId": "UN_LW_E_VKTR_01",
+    "names": {
+      "en": "Viktora (Winter)",
+      "fr": "Viktora (Hiver)",
+      "de": "Viktora (Winter)",
+      "es": "Victra invernal",
+      "ko": "빅토라(겨울)",
+      "zh": "維克托拉（冬日）"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_ARC_WATER",
+      "JB_LW_WGN_WATER",
+      "JB_LW_PLD_WATER"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 259,
+        "max": 936,
+        "ex": 982
+      },
+      "TP": {
+        "min": 57,
+        "max": 90,
+        "ex": 94
+      },
+      "AP": {
+        "min": 71,
+        "max": 87,
+        "ex": 91
+      },
+      "ATK": {
+        "min": 82,
+        "max": 139,
+        "ex": 180
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0,
+        "ex": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0,
+        "ex": 0
+      },
+      "MAG": {
+        "min": 33,
+        "max": 55,
+        "ex": 71
+      },
+      "DEX": {
+        "min": 74,
+        "max": 110,
+        "ex": 132
+      },
+      "AGI": {
+        "min": 30,
+        "max": 35,
+        "ex": 35
+      },
+      "LUCK": {
+        "min": 68,
+        "max": 96,
+        "ex": 105
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 20,
+        "max": 20,
+        "ex": 20
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10,
+        "ex": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5,
+        "ex": 5
+      },
+      "PIERCE_RES": {
+        "min": 20,
+        "max": 20,
+        "ex": 20
+      },
+      "STRIKE_RES": {
+        "min": -15,
+        "max": -15,
+        "ex": -15
+      },
+      "MISSILE_RES": {
+        "min": 5,
+        "max": 5,
+        "ex": 5
+      },
+      "MAGIC_RES": {
+        "min": -5,
+        "max": -5,
+        "ex": -5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50,
+        "ex": 50
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50,
+        "ex": 50
+      },
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 10,
+        "max": 10,
+        "ex": 10
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsvktr_01",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "viktora-winter-1",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_LW_ARC_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "missile",
+        "effType": "DAMAGE",
+        "formula": {}
+      },
+      "elem": [
+        "neutral"
+      ],
+      "type": "skill",
+      "target": "all",
+      "maxLevel": 20,
+      "range": {
+        "h": 5,
+        "l": 4,
+        "m": 2,
+        "mh": 8,
+        "s": 1,
+        "line": 2
+      },
+      "based": "physic"
+    }
+  },
+  "UN_LW_E_THDG_QE": {
+    "dataId": "UN_LW_E_THDG_QE",
+    "names": {
+      "en": "Two-Headed Dragon",
+      "fr": "Dragon à deux têtes",
+      "de": "Zweiköpfiger Drache",
+      "es": "Dragón bicéfalo",
+      "ko": "투헤드 드래곤",
+      "zh": "雙頭巨龍"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHTNING_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PARALYZE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "CONFUSION_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DISABLE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "earth",
+    "image": "lapsthdg",
+    "species": "dragon",
+    "size": 1,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "two-headed-dragon",
+    "attack": {
+      "names": {
+        "en": "Normal Attack",
+        "fr": "Attaque normale",
+        "de": "Normaler Angriff",
+        "es": "Ataque normal",
+        "ko": "일반 공격",
+        "zh": "普通攻擊"
+      },
+      "effects": [],
+      "dataId": "SK_THDG_ATK",
+      "damage": {
+        "minValue": -30,
+        "maxValue": -30,
+        "type": "strike",
         "effType": "DAMAGE",
         "formula": {}
       },

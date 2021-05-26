@@ -129,7 +129,8 @@ export class EsperService {
     UN_LW_S_MRLT: '24/02/2021',
     UN_LW_S_BAHM: '24/03/2021',
     UN_LW_S_OMEG: '14/04/2021',
-    UN_LW_S_PNIX: '21/05/2021'
+    UN_LW_S_PNIX: '21/05/2021',
+    UN_LW_S_CORL: '06/05/2021'
   };
 
   private JP_releaseDates = {

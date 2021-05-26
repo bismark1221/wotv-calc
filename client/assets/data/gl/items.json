@@ -5144,6 +5144,71 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_LIB_FIRE"
   },
+  "IT_JB_MM_WIZ": {
+    "dataId": "IT_JB_MM_WIZ",
+    "names": {
+      "en": "Black-Robed Witch's Memory (Green)",
+      "fr": "Souvenir de Sorcière vêtue de noir (Vert)",
+      "de": "Erinnerungen der Hexe in Schwarz (Grün)",
+      "es": "Recuerdo de bruja de negro (verde)",
+      "ko": "검은 옷의 마녀의 기억: 초록",
+      "zh": "黑衣魔女的記憶·翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_WIZ"
+  },
+  "IT_JB_MM_WIZ_2": {
+    "dataId": "IT_JB_MM_WIZ_2",
+    "names": {
+      "en": "Black-Robed Witch's Memory (Blue)",
+      "fr": "Souvenir de Sorcière vêtue de noir (Bleu)",
+      "de": "Erinnerungen der Hexe in Schwarz (Blau)",
+      "es": "Recuerdo de bruja de negro (azul)",
+      "ko": "검은 옷의 마녀의 기억: 파랑",
+      "zh": "黑衣魔女的記憶·碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_WIZ"
+  },
+  "IT_JB_MM_WIZ_3": {
+    "dataId": "IT_JB_MM_WIZ_3",
+    "names": {
+      "en": "Black-Robed Witch's Memory (Purple)",
+      "fr": "Souvenir de Sorcière vêtue de noir (Violet)",
+      "de": "Erinnerungen der Hexe in Schwarz (Violett)",
+      "es": "Recuerdo de bruja de negro (morado)",
+      "ko": "검은 옷의 마녀의 기억: 보라",
+      "zh": "黑衣魔女的記憶·紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_WIZ"
+  },
+  "IT_JB_MM_WIZ_4": {
+    "dataId": "IT_JB_MM_WIZ_4",
+    "names": {
+      "en": "Black-Robed Witch's Memory (Yellow)",
+      "fr": "Souvenir de Sorcière vêtue de noir (Jaune)",
+      "de": "Erinnerungen der Hexe in Schwarz (Gelb)",
+      "es": "Recuerdo de bruja de negro (amarillo)",
+      "ko": "검은 옷의 마녀의 기억: 노랑",
+      "zh": "黑衣魔女的記憶·黃"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_WIZ"
+  },
+  "IT_JB_MM_WIZ_5": {
+    "dataId": "IT_JB_MM_WIZ_5",
+    "names": {
+      "en": "Black-Robed Witch's Memory (Red)",
+      "fr": "Souvenir de Sorcière vêtue de noir (Rouge)",
+      "de": "Erinnerungen der Hexe in Schwarz (Rot)",
+      "es": "Recuerdo de bruja de negro (rojo)",
+      "ko": "검은 옷의 마녀의 기억: 빨강",
+      "zh": "黑衣魔女的記憶·緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_WIZ"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -8144,6 +8209,18 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_HLNA_01": {
+    "dataId": "IT_PI_LW_HLNA_01",
+    "names": {
+      "en": "Helena (Black-Robed Witch) Unit Shard",
+      "fr": "Fragment d'unité de Helena (Sorcière vêtue de noir)",
+      "de": "„Helena (Hexe in Schwarz)“-Einheitenfragment",
+      "es": "Fragmento de Helena, la Bruja de Negro",
+      "ko": "헬레나(검은 옷의 마녀)의 조각",
+      "zh": "海蓮娜（黑衣魔女）的碎片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -8920,7 +8997,7 @@
       "de": "„Styr (Ritter des Untergangs)“-Geistesperle",
       "es": "Esfera espiritual de Stern (Caballero de la Destrucción)",
       "ko": "슈텔(파멸의 기사)의 마음 구슬",
-      "zh": "斯特恩（破滅騎士）破滅騎士"
+      "zh": "斯特恩（破滅騎士）的思珠"
     },
     "type": "exjob_orb"
   },
@@ -9377,6 +9454,18 @@
       "es": "Esfera espiritual de Sylma",
       "ko": "실마의 마음 구슬",
       "zh": "希爾瑪的思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_HLNA_01": {
+    "dataId": "IT_SP_LW_HLNA_01",
+    "names": {
+      "en": "Helena (Black-Robed Witch) Mindsphere",
+      "fr": "Sphère spirituelle de Helena (Sorcière vêtue de noir)",
+      "de": "„Helena (Hexe in Schwarz)“-Geistesperle",
+      "es": "Esfera espiritual de Helena, la Bruja de Negro",
+      "ko": "헬레나(검은 옷의 마녀)의 마음 구슬",
+      "zh": "海蓮娜（黑衣魔女）的思珠"
     },
     "type": "exjob_orb"
   },
@@ -10594,6 +10683,30 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_CORL_R2": {
+    "dataId": "IT_SB_AW_CORL_R2",
+    "names": {
+      "en": "Coeurl's Awakening Stone  (2★)",
+      "fr": "Pierre d'éveil de Cœurl (2★)",
+      "de": "Coeurls Erweckungsstein (2★)",
+      "es": "Piedra del despertar de Bengal (2★)",
+      "ko": "커얼의 각성석(★2)",
+      "zh": "長鬚豹的獸醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_CORL_R3": {
+    "dataId": "IT_SB_AW_CORL_R3",
+    "names": {
+      "en": "Coeurl's Awakening Stone  (3★)",
+      "fr": "Pierre d'éveil de Cœurl (3★)",
+      "de": "Coeurls Erweckungsstein (3★)",
+      "es": "Piedra del despertar de Bengal (3★)",
+      "ko": "커얼의 각성석(★3)",
+      "zh": "長鬚豹的獸醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -11108,6 +11221,18 @@
       "es": "Veta mineral de luz",
       "ko": "빛의 맥광석",
       "zh": "光紋脈礦"
+    },
+    "type": "compo_equipment"
+  },
+  "IT_AF_MAT_FIRE_03": {
+    "dataId": "IT_AF_MAT_FIRE_03",
+    "names": {
+      "en": "Fire Vein Ore",
+      "fr": "Minerai veiné de feu",
+      "de": "Feuerpulserz",
+      "es": "Veta mineral de fuego",
+      "ko": "불의 맥광석",
+      "zh": "火紋脈礦"
     },
     "type": "compo_equipment"
   },
@@ -14353,6 +14478,32 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_GL_15": {
+    "dataId": "IT_US_SE_JB_05_GL_15",
+    "names": {
+      "en": "[8 Million Downloads Part IV] Select Spinel x30 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie IV] Ticket sélectionneur de 30 spinelles",
+      "de": "[8 Millionen Downloads! Teil IV] „Auswählbarer Spinell x30“-Beschwörungsticket",
+      "es": "[8 millones de descargas IV] Tícket seleccionador de 30 espinelas",
+      "ko": "[800만 다운로드 기념 제4탄] 스피넬 × 30 선택 소환 티켓",
+      "zh": "【800萬下載紀念第4階段】尖晶石×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_10": {
+    "dataId": "IT_US_SE_JB_04_GL_10",
+    "names": {
+      "en": "[8 Million Downloads Part IV] Select Citrine x30 Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie IV] Ticket sélectionneur de 30 citrines",
+      "de": "[8 Millionen Downloads! Teil IV] „Auswählbarer Citrin x30“-Beschwörungsticket",
+      "es": "[8 millones de descargas IV] Tícket seleccionador de 30 citrinos",
+      "ko": "[800만 다운로드 기념 제4탄] 시트린 × 30 선택 소환 티켓",
+      "zh": "【800萬下載紀念第4階段】黃水晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_GL_04": {
     "dataId": "IT_US_SE_PI_COM_GL_04",
     "names": {
@@ -14664,6 +14815,19 @@
       "zh": "FFI聯動召喚獎牌"
     },
     "type": "medal"
+  },
+  "IT_EC_FF1_GL1": {
+    "dataId": "IT_EC_FF1_GL1",
+    "names": {
+      "en": "FFI Reissue Login Medal",
+      "fr": "Médaille de connexion FFI [réédition]",
+      "de": "FFI-Anmeldemedaille (Wiederholung)",
+      "es": "Medalla de acceso de FFI de vuelta",
+      "ko": "FFI 콜라보 재등장 출석 메달",
+      "zh": "FFI聯動復刻登入獎牌"
+    },
+    "type": "medal",
+    "icon": "IT_EC_FF1_GL1"
   },
   "IT_EC_FF4_1": {
     "dataId": "IT_EC_FF4_1",
@@ -15777,6 +15941,19 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_SB_EXP_10": {
+    "dataId": "IT_US_SE_SB_EXP_10",
+    "names": {
+      "en": "Select Element Magicite (XL) x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 magilithes élémentaires (XL)",
+      "de": "„Auswählbarer Elementmaginit (XL) x100“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 100 magicitas elementales (XL)",
+      "ko": "속성 마석(특) × 100 선택 소환 티켓",
+      "zh": "屬性魔石（極）×100選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_SP_GL_LW_01": {
     "dataId": "IT_US_SE_SP_GL_LW_01",
     "names": {
@@ -15867,6 +16044,19 @@
     },
     "type": "tickets",
     "icon": "IT_US_G_UR_TICKET"
+  },
+  "IT_US_G_VC_UR_01": {
+    "dataId": "IT_US_G_VC_UR_01",
+    "names": {
+      "en": "Select UR Vision Card Shard x100 Summon Ticket",
+      "fr": "Ticket sélectionneur de 100 fragments d'atout-vision UR",
+      "de": "„Auswählbares [UR]-Visionskartenfragment x100“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 100 fragmentos de carta de visión UR",
+      "ko": "UR 비전 카드의 조각 × 100 선택 소환 티켓",
+      "zh": "UR幻兵卡碎片×100選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
   },
   "IT_US_G_U_R_UR_01": {
     "dataId": "IT_US_G_U_R_UR_01",
@@ -17194,6 +17384,19 @@
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
   },
+  "IT_US_G_U_SSR_UR_17": {
+    "dataId": "IT_US_G_U_SSR_UR_17",
+    "names": {
+      "en": "[8 Million Downloads Part IV] MR+ Guaranteed Vision Card Summon Ticket",
+      "fr": "[8 millions de téléchargements - Partie IV] Ticket d'invocation d'atout-vision MR+ garanti",
+      "de": "[8 Millionen Downloads! Teil IV] „[MR+] garantiert“-Visionskartenbeschwörungsticket",
+      "es": "[8 millones de descargas IV] Tícket de invocación de carta de visión MR+ garantizada",
+      "ko": "[800만 다운로드 기념 제4탄] MR 이상 비전 카드 보장 소환 티켓",
+      "zh": "【800萬下載紀念第4階段】確保MR以上幻兵卡召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
   "IT_US_SE_UR_V_01": {
     "dataId": "IT_US_SE_UR_V_01",
     "names": {
@@ -18409,7 +18612,7 @@
     "dataId": "IT_VPI_LW_HALL",
     "names": {
       "en": "\"Exorcists\" Vision Card Shard",
-      "fr": "Fragment de l'atout-vision : « Exorciser les démons »",
+      "fr": "Fragment de l'atout-vision : Exorciser les démons",
       "de": "„Austreiber böser Geister“-Visionskartenfragment",
       "es": "Fragmento de la carta de visión «Exorcistas»",
       "ko": " '악령을 쫓는 자'의 조각",
@@ -18834,6 +19037,30 @@
       "es": "Fragmento de la carta de visión «El encuentro de los héroes»",
       "ko": " '영웅들의 해후'의 조각",
       "zh": "英雄們的邂逅的碎片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_CMLO": {
+    "dataId": "IT_VPI_LW_CMLO",
+    "names": {
+      "en": "\"Dreams of Heroism\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Héros le temps d'un rêve",
+      "de": "„Kopfkino“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Sueños de grandeza»",
+      "ko": " '몽환영웅담'의 조각",
+      "zh": "夢幻英雄譚的碎片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_CORL": {
+    "dataId": "IT_VPI_LW_CORL",
+    "names": {
+      "en": "\"Calamitous Feline, Coeurl\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Cœurl, le Fauve de l'affliction",
+      "de": "„Coeurl, Unheilvolle Raubkatze“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Bengal, el Azote Felino»",
+      "ko": " '재앙의 표범 마물-커얼'의 조각",
+      "zh": "災厄魔豹　長鬚豹的碎片"
     },
     "type": "vc_shard"
   },
@@ -19664,6 +19891,58 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_GL_SE_VPI_26": {
+    "dataId": "IT_US_GL_SE_VPI_26",
+    "names": {
+      "en": "Select UR Vision Card Shard x25 Summon Ticket",
+      "fr": "Ticket sélectionneur de 25 fragments d'atout-vision UR",
+      "de": "„Auswählbares [UR]-Visionskartenfragment x25“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 25 fragmentos de carta de visión UR",
+      "ko": "UR 비전 카드의 조각×25 선택 소환 티켓",
+      "zh": "UR幻兵卡碎片×25選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_VPI_27": {
+    "dataId": "IT_US_GL_SE_VPI_27",
+    "names": {
+      "en": "Select UR Vision Card Shard x25 Summon Ticket",
+      "fr": "Ticket sélectionneur de 25 fragments d'atout-vision UR",
+      "de": "„Auswählbares [UR]-Visionskartenfragment x25“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 25 fragmentos de carta de visión UR",
+      "ko": "UR 비전 카드의 조각×25 선택 소환 티켓",
+      "zh": "UR幻兵卡碎片×25選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_VPI_28": {
+    "dataId": "IT_US_GL_SE_VPI_28",
+    "names": {
+      "en": "Select UR Vision Card Shard x50 Summon Ticket",
+      "fr": "Ticket sélectionneur de 50 fragments d'atout-vision UR",
+      "de": "„Auswählbares [UR]-Visionskartenfragment x50“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 50 fragmentos de carta de visión UR",
+      "ko": "UR 비전 카드의 조각×50 선택 소환 티켓",
+      "zh": "UR幻兵卡碎片×50選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_GL_21": {
+    "dataId": "IT_US_SE_PI_GL_21",
+    "names": {
+      "en": "Select UR Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité UR",
+      "de": "„Auswählbares [UR]-Einheitenfragment x40“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 40 fragmentos de unidad UR",
+      "ko": "UR 유닛의 조각×40 선택 소환 티켓",
+      "zh": "UR兵員碎片×40選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_GL_20": {
     "dataId": "IT_US_SE_PI_GL_20",
     "names": {
@@ -20454,6 +20733,19 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_01"
+  },
+  "IT_STAMP_2102": {
+    "dataId": "IT_STAMP_2102",
+    "names": {
+      "en": "July Token",
+      "fr": "Insigne de juillet",
+      "de": "Juli-Abzeichen",
+      "es": "Emblema de julio",
+      "ko": "7월 인장",
+      "zh": "7月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_02"
   },
   "IT_KEY_JP": {
     "dataId": "IT_KEY_JP",

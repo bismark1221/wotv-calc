@@ -197,7 +197,9 @@ export class CardService {
     VC_LW_MONT2: '05/05/2021',
     VC_LW_PNIX: '21/05/2021',
     VC_LW_LILS2: '21/05/2021',
-    VC_LW_RAIN: '19/05/2021'
+    VC_LW_RAIN: '19/05/2021',
+    VC_LW_CMLO: '26/05/2021',
+    VC_LW_CORL: '26/05/2021'
   };
 
   private JP_releaseDates = {
@@ -321,7 +323,8 @@ export class CardService {
     VC_LW_DMCM: '07/04/2021',
     VC_FF7_MV1: '21/04/2021',
     VC_FF7_SCPN: '01/05/2021',
-    VC_LW_LSWL: '07/05/2021'
+    VC_LW_LSWL: '07/05/2021',
+    VC_LW_RAIN: '24/05/2021'
   };
 
   constructor(

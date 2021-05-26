@@ -18338,77 +18338,35 @@
     "target": "self",
     "maxLevel": 100
   },
-  "SK_BTL_RES_WATER_1_80_D": {
+  "SK_LW_MGK_ICE_P_1": {
     "effects": [
       {
-        "type": "WATER_RES",
-        "minValue": -1,
-        "maxValue": -80,
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "ICE_RES",
+        "minValue": 5,
+        "maxValue": 12,
         "calcType": "resistance",
         "target": "self"
       }
     ],
-    "dataId": "SK_BTL_RES_WATER_1_80_D",
+    "dataId": "SK_LW_MGK_ICE_P_1",
     "type": "support",
     "names": {
-      "en": "Water Res 1-80 Down",
-      "fr": "Rés eau ↓ 1 - 80",
-      "de": "Wasserresistenz reduziert (1 bis 80)",
-      "es": "Res. agua 1-80↓",
-      "ko": "▼물속성 저항력 1-80 감소",
-      "zh": "▼降低水屬性耐性1-80"
+      "en": "Providence of Ice",
+      "fr": "Providence de Glace",
+      "de": "Segen des Eises",
+      "es": "Providencia de hielo",
+      "ko": "얼음 정령의 가호",
+      "zh": "冰精加護"
     },
     "target": "self",
-    "maxLevel": 100
-  },
-  "SK_LW_MGK_FIRE_S_1": {
-    "effects": [
-      {
-        "type": "ICE_KILLER",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "unknow",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LW_MGK_FIRE_S_1",
-    "type": "skill",
-    "names": {
-      "en": "Fire Blade",
-      "fr": "Lame Feu",
-      "de": "Feuer-Klinge",
-      "es": "Hoja Piro",
-      "ko": "파이어 검",
-      "zh": "火焰劍"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 12
-    },
-    "count": 8,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 5,
-      "maxValue": 31,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "2": 10,
-        "3": 10,
-        "type": 0
-      }
-    },
-    "elem": [
-      "fire"
-    ]
+    "maxLevel": 20
   },
   "SK_LW_MGK_FIRE_M_4": {
     "effects": [
@@ -18460,35 +18418,77 @@
       "fire"
     ]
   },
-  "SK_LW_MGK_ICE_P_1": {
+  "SK_LW_MGK_FIRE_S_1": {
     "effects": [
       {
-        "type": "MAGIC_RES",
-        "minValue": 5,
-        "maxValue": 12,
-        "calcType": "resistance",
-        "target": "self"
-      },
+        "type": "ICE_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_MGK_FIRE_S_1",
+    "type": "skill",
+    "names": {
+      "en": "Fire Blade",
+      "fr": "Lame Feu",
+      "de": "Feuer-Klinge",
+      "es": "Hoja Piro",
+      "ko": "파이어 검",
+      "zh": "火焰劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 5,
+      "maxValue": 31,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_BTL_RES_WATER_1_80_D": {
+    "effects": [
       {
-        "type": "ICE_RES",
-        "minValue": 5,
-        "maxValue": 12,
+        "type": "WATER_RES",
+        "minValue": -1,
+        "maxValue": -80,
         "calcType": "resistance",
         "target": "self"
       }
     ],
-    "dataId": "SK_LW_MGK_ICE_P_1",
+    "dataId": "SK_BTL_RES_WATER_1_80_D",
     "type": "support",
     "names": {
-      "en": "Providence of Ice",
-      "fr": "Providence de Glace",
-      "de": "Segen des Eises",
-      "es": "Providencia de hielo",
-      "ko": "얼음 정령의 가호",
-      "zh": "冰精加護"
+      "en": "Water Res 1-80 Down",
+      "fr": "Rés eau ↓ 1 - 80",
+      "de": "Wasserresistenz reduziert (1 bis 80)",
+      "es": "Res. agua 1-80↓",
+      "ko": "▼물속성 저항력 1-80 감소",
+      "zh": "▼降低水屬性耐性1-80"
     },
     "target": "self",
-    "maxLevel": 20
+    "maxLevel": 100
   },
   "SK_BTL_RES_SOIL_1_80_D": {
     "effects": [
@@ -32651,6 +32651,126 @@
     "maxLevel": 20,
     "based": "magic"
   },
+  "SK_CORL_M_01": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CORL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Blaster",
+      "fr": "Rayons",
+      "de": "Blaster",
+      "es": "Electroplasma",
+      "ko": "블래스터",
+      "zh": "衝擊波"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 32
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_CORL_M_02": {
+    "effects": [
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CORL_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Chaotic Gaze",
+      "fr": "Regard chaotique",
+      "de": "Auge des Chaos",
+      "es": "Mirada caótica",
+      "ko": "혼돈의 눈",
+      "zh": "混沌之眼"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic"
+  },
+  "SK_CORL_M_03": {
+    "effects": [],
+    "dataId": "SK_CORL_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Double Strike",
+      "fr": "Double attaque",
+      "de": "Doppelattacke",
+      "es": "Golpe doble",
+      "ko": "이중 공격",
+      "zh": "雙攻擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
   "SK_CSLI_01_M_01": {
     "effects": [],
     "dataId": "SK_CSLI_01_M_01",
@@ -38754,6 +38874,699 @@
     "count": 20,
     "maxLevel": 20,
     "based": "physic"
+  },
+  "SK_MA_LW_GRSR": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self",
+        "timing": "QUEST_START"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_MA_LW_GRSR",
+    "type": "master",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_GRSR_P_1": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 3,
+        "maxValue": 12,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_GRSR_P_1",
+    "type": "support",
+    "names": {
+      "en": "Jab Mastery",
+      "fr": "Maîtrise des coups directs",
+      "de": "Meister des Stichs",
+      "es": "Maestría punzante",
+      "ko": "내찌르기의 비법",
+      "zh": "迅突奧義"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_BTL_SATK_1-100_D": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": -1,
+        "maxValue": -100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_SATK_1-100_D",
+    "type": "support",
+    "names": {
+      "en": "Unit Attack Res 1-100 Down",
+      "fr": "Rés aux attaques à cible unique ↓ 1 - 100",
+      "de": "Einzelangriffsresistenz reduziert (1 bis 100)",
+      "es": "Res. ataque de unidad 1-100↓",
+      "ko": "▼단일 공격 저항력 1-100 감소",
+      "zh": "▼降低單體攻擊耐性1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_PIERCE_WATER_1-100_U": {
+    "effects": [
+      {
+        "type": "RES_WATER_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_PIERCE_WATER_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Water Res Piercing 1-100 Up",
+      "fr": "Perforation de la Rés à l'eau ↑ 1 - 100",
+      "de": "Wasserresistenz-Durchbohrrate erhöht (1 bis 100)",
+      "es": "Penetración de res. agua 1-100↑",
+      "ko": "물속성 저항력 관통률 1-100 증가",
+      "zh": "提升水屬性耐性貫通1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_LW_GRSR_S_1": {
+    "effects": [],
+    "dataId": "SK_LW_GRSR_S_1",
+    "type": "skill",
+    "names": {
+      "en": "Javelin Claw",
+      "fr": "Griffe javelot",
+      "de": "Speerreißer",
+      "es": "Jabalina rasgante",
+      "ko": "투창 할퀴기",
+      "zh": "標槍之鴉"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 14
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 3,
+      "l": 4,
+      "mh": 5,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 10,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_DRGN_M_03": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_DRGN_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Roar",
+      "fr": "Cri de guerre",
+      "de": "Gebrüll",
+      "es": "Rugido",
+      "ko": "우렁찬 외침",
+      "zh": "吼聲"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 18
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_BTL_PIERCE_SOIL_1-100_U": {
+    "effects": [
+      {
+        "type": "RES_EARTH_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_PIERCE_SOIL_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Earth Res Piercing 1-100 Up",
+      "fr": "Perforation de la Rés à la terre ↑ 1 - 100",
+      "de": "Erdresistenz-Durchbohrrate erhöht (1 bis 100)",
+      "es": "Penetración de res. tierra 1-100↑",
+      "ko": "땅속성 저항력 관통률 1-100 증가",
+      "zh": "提升土屬性耐性貫通1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_MA_LW_MIIA": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self",
+        "timing": "QUEST_START"
+      },
+      {
+        "type": "FAIRY_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_MA_LW_MIIA",
+    "type": "master",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_MGK_M_1_TW": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "rate": 50,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MGK_M_1_TW",
+    "type": "skill",
+    "names": {
+      "en": "Bio Blade",
+      "fr": "Lame Toxine",
+      "de": "Bio-Klinge",
+      "es": "Hoja Bio",
+      "ko": "바이오 검",
+      "zh": "毒化劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_BTL_PIERCE_WIND_1-100_U": {
+    "effects": [
+      {
+        "type": "RES_WIND_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_PIERCE_WIND_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Wind Res Piercing 1-100 Up",
+      "fr": "Perforation de la Rés au vent ↑ 1 - 100",
+      "de": "Windresistenz-Durchbohrrate erhöht (1 bis 100)",
+      "es": "Penetración de res. viento 1-100↑",
+      "ko": "바람속성 저항력 관통률 1-100 증가",
+      "zh": "提升風屬性耐性貫通1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_MA_LW_RVAL": {
+    "effects": [
+      {
+        "type": "HEAL_POWER",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "QUEST_START"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_MA_LW_RVAL",
+    "type": "master",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_BLM_SOIL_M_5": {
+    "effects": [],
+    "dataId": "SK_LW_BLM_SOIL_M_5",
+    "type": "skill",
+    "names": {
+      "en": "Stonega",
+      "fr": "Terre X",
+      "de": "Terraga",
+      "es": "Piedra++",
+      "ko": "스톤가",
+      "zh": "大落石"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 120,
+      "maxValue": 200
+    },
+    "damage": {
+      "minValue": 50,
+      "maxValue": 85,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_LW_CAL_SOIL_S_4": {
+    "effects": [],
+    "dataId": "SK_LW_CAL_SOIL_S_4",
+    "type": "skill",
+    "names": {
+      "en": "Level 4 Stonera",
+      "fr": "Terre + niv. 4",
+      "de": "Stufe 4 Terrara",
+      "es": "Piedra+ Nv. 4",
+      "ko": "4레벨 스톤라",
+      "zh": "4級中落石"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "maths": [
+      {
+        "type": "TARGET_LEVEL",
+        "formula": "RATIO",
+        "condition": 4,
+        "value": 30,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": -40,
+      "maxValue": -14,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_LW_CAL_SOIL_S_1": {
+    "effects": [],
+    "dataId": "SK_LW_CAL_SOIL_S_1",
+    "type": "skill",
+    "names": {
+      "en": "Height-Based Stone",
+      "fr": "Terre d'altitude",
+      "de": "Höhenbasiertes Terra",
+      "es": "Piedra |A|",
+      "ko": "고층 스톤",
+      "zh": "高度高落石"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 8
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "maths": [
+      {
+        "type": "HEIGHT",
+        "formula": "CURVE",
+        "condition": 15,
+        "value": -80,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": 75,
+      "maxValue": 101,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_LW_CAL_M_3_SUB": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_CAL_M_3_SUB",
+    "type": "skill",
+    "names": {
+      "en": "Height 3 Cura",
+      "fr": "Soin + [H. 3]",
+      "de": "Höhe 3: Vitra",
+      "es": "Cura+ 3A",
+      "ko": "3층 케알라",
+      "zh": "高度3中療傷"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 3,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "maths": [
+      {
+        "type": "HEIGHT",
+        "formula": "RATIO",
+        "condition": 3,
+        "value": 60,
+        "dst": "EFFECT"
+      }
+    ]
+  },
+  "SK_LW_CAL_S_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 150,
+        "maxValue": 180,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_CAL_S_2",
+    "type": "skill",
+    "names": {
+      "en": "Height-Based Cure",
+      "fr": "Soin d'altitude",
+      "de": "Höhenbasiertes Vita",
+      "es": "Cura+ |A|",
+      "ko": "고층 케알",
+      "zh": "高度高療傷"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 6,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "maths": [
+      {
+        "type": "HEIGHT",
+        "formula": "CURVE",
+        "condition": 15,
+        "value": -60,
+        "dst": "EFFECT"
+      }
+    ]
+  },
+  "SK_LW_ARC_M_1": {
+    "effects": [
+      {
+        "type": "MOVE",
+        "minValue": -1,
+        "maxValue": -1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ARC_M_1",
+    "type": "skill",
+    "names": {
+      "en": "Slow Arrow",
+      "fr": "Flèche ralentie",
+      "de": "Humpelpfeil",
+      "es": "Flecha Freno",
+      "ko": "황소걸음 화살",
+      "zh": "牛步之矢"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 23
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 40,
+      "maxValue": 70,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_ARC_S_5": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "rate": 200,
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ESPER_KILLER",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "rate": 200,
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ARC_S_5",
+    "type": "skill",
+    "names": {
+      "en": "Target Share",
+      "fr": "Cible partagée",
+      "de": "Zielteilung",
+      "es": "Blanco compartido",
+      "ko": "표적 공유",
+      "zh": "目標共享"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 26
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
   },
   "SK_CSLI_01_M_02": {
     "effects": [],
