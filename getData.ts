@@ -2175,8 +2175,8 @@ export class JsonService {
     await this.getUnitAssets();
     await this.getTitleAssets();
     this.getGrids();
-    this.getLocales();
     this.getMaps();
+    this.getLocales();
   }
 
   async getItemAssets() {
@@ -2385,8 +2385,8 @@ export class JsonService {
       }
     }
 
-    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/gl/grids.json'), JSON.stringify(gridData.global, null, 2));
-    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), JSON.stringify(gridData.japan, null, 2));
+    this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/gl/grids.json'), JSON.stringify(gridData.global, null, 2));
+    this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/jp/grids.json'), JSON.stringify(gridData.japan, null, 2));
   }
 
   extract_map_grid(fileName) {
@@ -2586,8 +2586,8 @@ export class JsonService {
       }
     }
 
-    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/gl/grids.json'), JSON.stringify(mapData.map, null, 2));
-    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), JSON.stringify(mapData.jp_map, null, 2));
+    this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/gl/maps.json'), JSON.stringify(mapData.map, null, 2));
+    this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/jp/maps.json'), JSON.stringify(mapData.jp_map, null, 2));
   }
 
   async importAndCropImage(src, dst) {
@@ -5679,6 +5679,7 @@ export class JsonService {
   checkIfTileExist(quest, item) {
     if (!quest.grid[item.x]) {
       quest.grid[item.x] = [];
+
       for (let i = 0; i <= quest.grid[0].length - 1; i++) {
         quest.grid[item.x][i] = {
           h: 0,
