@@ -1263,89 +1263,91 @@ export class JsonService {
   ];
 
   fs = require('fs').promises;
+  fsSync = require('fs');
+  path = require('path');
 
 
   constructor() {}
 
 
   private GLUnits() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Unit.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Unit.json'), 'utf8');
   }
 
   private GLUnitsBoards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/UnitAbilityBoard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/UnitAbilityBoard.json'), 'utf8');
   }
 
   private GLSkills() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Skill.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Skill.json'), 'utf8');
   }
 
   private GLBuffs() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Buff.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Buff.json'), 'utf8');
   }
 
   private GLJobs() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Job.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Job.json'), 'utf8');
   }
 
   private GLEquipments() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Artifact.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Artifact.json'), 'utf8');
   }
 
   private GLVisionCards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/VisionCard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/VisionCard.json'), 'utf8');
   }
 
   private GLEspersBoards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/NetherBeastAbilityBoard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/NetherBeastAbilityBoard.json'), 'utf8');
   }
 
   private GLWeathers() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Weather.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Weather.json'), 'utf8');
   }
 
   private GLEsperLvTbls() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/NBeastLvTbl.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/NBeastLvTbl.json'), 'utf8');
   }
 
   private GLArtifactRecipes() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/ArtifactRecipe.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/ArtifactRecipe.json'), 'utf8');
   }
 
   private GLArtifactLot() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/ArtifactRandLot.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/ArtifactRandLot.json'), 'utf8');
   }
 
   private GLGrows() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Grow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Grow.json'), 'utf8');
   }
 
   private GLUnitModels() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/UnitModel.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/UnitModel.json'), 'utf8');
   }
 
   private GLArtifactEquipCond() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/ArtifactEquipCondition.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/ArtifactEquipCondition.json'), 'utf8');
   }
 
   private GLRaid() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Raid.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Raid.json'), 'utf8');
   }
 
   private GLRaidBoss() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/RaidBoss.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/RaidBoss.json'), 'utf8');
   }
 
   private GLArtifactAwake() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/ArtifactAwake.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/ArtifactAwake.json'), 'utf8');
   }
 
   private GLItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Item.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Item.json'), 'utf8');
   }
 
   private GLCardCond() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/VisionCardLimitedCondition.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/VisionCardLimitedCondition.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1354,7 +1356,7 @@ export class JsonService {
   }
 
   private GLMasterRank() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/MasterRank.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/MasterRank.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1363,7 +1365,7 @@ export class JsonService {
   }
 
   private GLMasterRankEffect() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/MasterRankEffect.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/MasterRankEffect.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1372,19 +1374,19 @@ export class JsonService {
   }
 
   private GLPlayersAward() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/PlayersAward.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/PlayersAward.json'), 'utf8');
   }
 
   private GLGuildsAward() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/GuildsAward.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/GuildsAward.json'), 'utf8');
   }
 
   private GLJobLvTbl() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/JobLvTbl.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/JobLvTbl.json'), 'utf8');
   }
 
   private GLJobMaterialItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/JobMaterialItem.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/JobMaterialItem.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1393,7 +1395,7 @@ export class JsonService {
   }
 
   private GLUnitMaterialItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/UnitMaterialItem.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/UnitMaterialItem.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1402,7 +1404,7 @@ export class JsonService {
   }
 
   private GLUnitClassChangeCondition() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/UnitClassChangeCondition.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/UnitClassChangeCondition.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1411,7 +1413,7 @@ export class JsonService {
   }
 
   private GLRaidBonusUnit() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/RaidBonusUnit.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/RaidBonusUnit.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1420,7 +1422,7 @@ export class JsonService {
   }
 
   private GLRaidBonusCard() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/RaidBonusVisioncard.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/RaidBonusVisioncard.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1429,7 +1431,7 @@ export class JsonService {
   }
 
   private GLQuests() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/Quests.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Quests.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1438,7 +1440,7 @@ export class JsonService {
   }
 
   private GLQuestMissions() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/QuestMission.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/QuestMission.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1447,7 +1449,7 @@ export class JsonService {
   }
 
   private GLTowerFloors() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/TowerFloor.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/TowerFloor.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1456,7 +1458,7 @@ export class JsonService {
   }
 
   private GLTowerRewards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/TowerReward.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/TowerReward.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1465,7 +1467,7 @@ export class JsonService {
   }
 
   private GLSkillExc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/data/SkillExc.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/SkillExc.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1476,135 +1478,135 @@ export class JsonService {
 
   /* JP */
   private JPUnits() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Unit.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Unit.json'), 'utf8');
   }
 
   private JPUnitsBoards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/UnitAbilityBoard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/UnitAbilityBoard.json'), 'utf8');
   }
 
   private JPSkills() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Skill.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Skill.json'), 'utf8');
   }
 
   private JPBuffs() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Buff.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Buff.json'), 'utf8');
   }
 
   private JPJobs() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Job.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Job.json'), 'utf8');
   }
 
   private JPEquipments() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Artifact.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Artifact.json'), 'utf8');
   }
 
   private JPVisionCards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/VisionCard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/VisionCard.json'), 'utf8');
   }
 
   private JPEspersBoards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/NetherBeastAbilityBoard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/NetherBeastAbilityBoard.json'), 'utf8');
   }
 
   private JPWeathers() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Weather.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Weather.json'), 'utf8');
   }
 
   private JPEsperLvTbls() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/NBeastLvTbl.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/NBeastLvTbl.json'), 'utf8');
   }
 
   private JPArtifactRecipes() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/ArtifactRecipe.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/ArtifactRecipe.json'), 'utf8');
   }
 
   private JPArtifactLot() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/ArtifactRandLot.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/ArtifactRandLot.json'), 'utf8');
   }
 
   private JPGrows() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Grow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Grow.json'), 'utf8');
   }
 
   private JPUnitModels() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/UnitModel.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/UnitModel.json'), 'utf8');
   }
 
   private JPArtifactEquipCond() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/ArtifactEquipCondition.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/ArtifactEquipCondition.json'), 'utf8');
   }
 
   private JPRaid() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Raid.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Raid.json'), 'utf8');
   }
 
   private JPRaidBoss() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/RaidBoss.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/RaidBoss.json'), 'utf8');
   }
 
   private JPArtifactAwake() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/ArtifactAwake.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/ArtifactAwake.json'), 'utf8');
   }
 
   private JPItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Item.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Item.json'), 'utf8');
   }
 
   private JPCardCond() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/VisionCardLimitedCondition.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/VisionCardLimitedCondition.json'), 'utf8');
   }
 
   private JPMasterRank() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/MasterRank.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/MasterRank.json'), 'utf8');
   }
 
   private JPMasterRankEffect() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/MasterRankEffect.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/MasterRankEffect.json'), 'utf8');
   }
 
   private JPPlayersAward() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/PlayersAward.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/PlayersAward.json'), 'utf8');
   }
 
   private JPGuildsAward() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/GuildsAward.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/GuildsAward.json'), 'utf8');
   }
 
   private JPJobLvTbl() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/JobLvTbl.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/JobLvTbl.json'), 'utf8');
   }
 
   private JPJobMaterialItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/JobMaterialItem.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/JobMaterialItem.json'), 'utf8');
   }
 
   private JPUnitMaterialItem() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/UnitMaterialItem.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/UnitMaterialItem.json'), 'utf8');
   }
 
   private JPUnitClassChangeCondition() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/UnitClassChangeCondition.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/UnitClassChangeCondition.json'), 'utf8');
   }
 
   private JPRaidBonusUnit() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/RaidBonusUnit.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/RaidBonusUnit.json'), 'utf8');
   }
 
   private JPRaidBonusCard() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/RaidBonusVisioncard.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/RaidBonusVisioncard.json'), 'utf8');
   }
 
   private JPQuests() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/Quests.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Quests.json'), 'utf8');
   }
 
   private JPQuestMissions() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/QuestMission.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/QuestMission.json'), 'utf8');
   }
 
   private JPTowerFloors() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/TowerFloor.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/TowerFloor.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1613,7 +1615,7 @@ export class JsonService {
   }
 
   private JPTowerRewards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/TowerReward.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/TowerReward.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1622,7 +1624,7 @@ export class JsonService {
   }
 
   private JPSkillExc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jpdata/SkillExc.json'), 'utf8')
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/SkillExc.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -1633,533 +1635,1055 @@ export class JsonService {
 
   /* Translation */
   private TranslateUnitNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/unitname.json'), 'utf8');
   }
 
   private TranslateSkillNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/skillname.json'), 'utf8');
   }
 
   private TranslateBuffNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/buffname.json'), 'utf8');
   }
 
   private TranslateJobNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/jobname.json'), 'utf8');
   }
 
   private TranslateEquipmentNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/artifactname.json'), 'utf8');
   }
 
   private TranslateVisionCardNames() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/visioncardname.json'), 'utf8');
   }
 
   private TranslateVisionItemOthers() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/itemother.json'), 'utf8');
   }
 
   private TranslateEquipmentGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/artifactgrow.json'), 'utf8');
   }
 
   private TranslateItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/itemname.json'), 'utf8');
   }
 
   private TranslatePlayerAwardsName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/playerawardsname.json'), 'utf8');
   }
 
   private TranslatePlayerAwardsDescription() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/playerawardsdescription.json'), 'utf8');
   }
 
   private TranslateGuildAwardsName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/guildawardsname.json'), 'utf8');
   }
 
   private TranslateGuildAwardsDescription() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/guildawardsdescription.json'), 'utf8');
   }
 
   private TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/questtitle.json'), 'utf8');
   }
 
   private TranslateTowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/towertitle.json'), 'utf8');
   }
 
   private TranslateTowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/en/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/en/towerfloortitle.json'), 'utf8');
   }
 
 
 
   /* FR Local files */
   private FR_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/artifactgrow.json'), 'utf8');
   }
 
   private FR_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/artifactname.json'), 'utf8');
   }
 
   private FR_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/buffname.json'), 'utf8');
   }
 
   private FR_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/itemother.json'), 'utf8');
   }
 
   private FR_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/jobname.json'), 'utf8');
   }
 
   private FR_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/skillname.json'), 'utf8');
   }
 
   private FR_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/unitname.json'), 'utf8');
   }
 
   private FR_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/visioncardname.json'), 'utf8');
   }
 
   private FR_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/itemname.json'), 'utf8');
   }
 
   private FR_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/playerawardsname.json'), 'utf8');
   }
 
   private FR_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/playerawardsdescription.json'), 'utf8');
   }
 
   private FR_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/guildawardsname.json'), 'utf8');
   }
 
   private FR_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/guildawardsdescription.json'), 'utf8');
   }
 
   private FR_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/questtitle.json'), 'utf8');
   }
 
   private FR_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/towertitle.json'), 'utf8');
   }
 
   private FR_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/fr/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/fr/towerfloortitle.json'), 'utf8');
   }
 
   /* DE Local files */
   private DE_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/artifactgrow.json'), 'utf8');
   }
 
   private DE_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/artifactname.json'), 'utf8');
   }
 
   private DE_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/buffname.json'), 'utf8');
   }
 
   private DE_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/itemother.json'), 'utf8');
   }
 
   private DE_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/jobname.json'), 'utf8');
   }
 
   private DE_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/skillname.json'), 'utf8');
   }
 
   private DE_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/unitname.json'), 'utf8');
   }
 
   private DE_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/visioncardname.json'), 'utf8');
   }
 
   private DE_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/itemname.json'), 'utf8');
   }
 
   private DE_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/playerawardsname.json'), 'utf8');
   }
 
   private DE_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/playerawardsdescription.json'), 'utf8');
   }
 
   private DE_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/guildawardsname.json'), 'utf8');
   }
 
   private DE_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/guildawardsdescription.json'), 'utf8');
   }
 
   private DE_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/questtitle.json'), 'utf8');
   }
 
   private DE_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/towertitle.json'), 'utf8');
   }
 
   private DE_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/de/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/de/towerfloortitle.json'), 'utf8');
   }
 
   /* ES Local files */
   private ES_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/artifactgrow.json'), 'utf8');
   }
 
   private ES_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/artifactname.json'), 'utf8');
   }
 
   private ES_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/buffname.json'), 'utf8');
   }
 
   private ES_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/itemother.json'), 'utf8');
   }
 
   private ES_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/jobname.json'), 'utf8');
   }
 
   private ES_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/skillname.json'), 'utf8');
   }
 
   private ES_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/unitname.json'), 'utf8');
   }
 
   private ES_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/visioncardname.json'), 'utf8');
   }
 
   private ES_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/itemname.json'), 'utf8');
   }
 
   private ES_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/playerawardsname.json'), 'utf8');
   }
 
   private ES_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/playerawardsdescription.json'), 'utf8');
   }
 
   private ES_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/guildawardsname.json'), 'utf8');
   }
 
   private ES_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/guildawardsdescription.json'), 'utf8');
   }
 
   private ES_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/questtitle.json'), 'utf8');
   }
 
   private ES_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/towertitle.json'), 'utf8');
   }
 
   private ES_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/es/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/es/towerfloortitle.json'), 'utf8');
   }
 
   /* KO Local files */
   private KO_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/artifactgrow.json'), 'utf8');
   }
 
   private KO_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/artifactname.json'), 'utf8');
   }
 
   private KO_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/buffname.json'), 'utf8');
   }
 
   private KO_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/itemother.json'), 'utf8');
   }
 
   private KO_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/jobname.json'), 'utf8');
   }
 
   private KO_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/skillname.json'), 'utf8');
   }
 
   private KO_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/unitname.json'), 'utf8');
   }
 
   private KO_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/visioncardname.json'), 'utf8');
   }
 
   private KO_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/itemname.json'), 'utf8');
   }
 
   private KO_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/playerawardsname.json'), 'utf8');
   }
 
   private KO_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/playerawardsdescription.json'), 'utf8');
   }
 
   private KO_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/guildawardsname.json'), 'utf8');
   }
 
   private KO_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/guildawardsdescription.json'), 'utf8');
   }
 
   private KO_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/questtitle.json'), 'utf8');
   }
 
   private KO_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/towertitle.json'), 'utf8');
   }
 
   private KO_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/ko/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/ko/towerfloortitle.json'), 'utf8');
   }
 
   /* ZH Local files */
   private ZH_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/artifactgrow.json'), 'utf8');
   }
 
   private ZH_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/artifactname.json'), 'utf8');
   }
 
   private ZH_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/buffname.json'), 'utf8');
   }
 
   private ZH_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/itemother.json'), 'utf8');
   }
 
   private ZH_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/jobname.json'), 'utf8');
   }
 
   private ZH_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/skillname.json'), 'utf8');
   }
 
   private ZH_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/unitname.json'), 'utf8');
   }
 
   private ZH_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/visioncardname.json'), 'utf8');
   }
 
   private ZH_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/itemname.json'), 'utf8');
   }
 
   private ZH_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/playerawardsname.json'), 'utf8');
   }
 
   private ZH_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/playerawardsdescription.json'), 'utf8');
   }
 
   private ZH_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/guildawardsname.json'), 'utf8');
   }
 
   private ZH_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/guildawardsdescription.json'), 'utf8');
   }
 
   private ZH_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/questtitle.json'), 'utf8');
   }
 
   private ZH_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/towertitle.json'), 'utf8');
   }
 
   private ZH_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/zh/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/zh/towerfloortitle.json'), 'utf8');
   }
 
 
 
   private JP_ArtifactGrow() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/artifactgrow.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/artifactgrow.json'), 'utf8');
   }
 
   private JP_ArtifactName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/artifactname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/artifactname.json'), 'utf8');
   }
 
   private JP_BuffName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/buffname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/buffname.json'), 'utf8');
   }
 
   private JP_ItemOther() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/itemother.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/itemother.json'), 'utf8');
   }
 
   private JP_JobName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/jobname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/jobname.json'), 'utf8');
   }
 
   private JP_SkillName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/skillname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/skillname.json'), 'utf8');
   }
 
   private JP_UnitName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/unitname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/unitname.json'), 'utf8');
   }
 
   private JP_VisionCardName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/visioncardname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/visioncardname.json'), 'utf8');
   }
 
   private JP_ItemName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/itemname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/itemname.json'), 'utf8');
   }
 
   private JP_PlayerTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/playerawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/playerawardsname.json'), 'utf8');
   }
 
   private JP_PlayerTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/playerawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/playerawardsdescription.json'), 'utf8');
   }
 
   private JP_GuildTitleName() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/guildawardsname.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/guildawardsname.json'), 'utf8');
   }
 
   private JP_GuildTitleDesc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/guildawardsdescription.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/guildawardsdescription.json'), 'utf8');
   }
 
   private JP_TranslateQuestTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/questtitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/questtitle.json'), 'utf8');
   }
 
   private JP_TowerTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/towertitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/towertitle.json'), 'utf8');
   }
 
   private JP_TowerFloorTitle() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp/towerfloortitle.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp/towerfloortitle.json'), 'utf8');
   }
 
 
 
   private JP_Romaji() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp_romaji.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), 'utf8');
   }
 
   private JP_Titles_Name() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp_titles_name.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp_titles_name.json'), 'utf8');
   }
 
   private JP_Titles_Desc() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/jp_titles_desc.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jp_titles_desc.json'), 'utf8');
   }
 
 
 
   private GL_Maps() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/map/gl/maps.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/gl/maps.json'), 'utf8');
   }
 
   private JP_Maps() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/map/jp/maps.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/jp/maps.json'), 'utf8');
   }
 
 
 
   private GL_Grids() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/map/gl/grids.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/gl/grids.json'), 'utf8');
   }
 
   private JP_Grids() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'data/map/jp/grids.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), 'utf8');
   }
 
 
 
   private GL_OldUnits() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/gl/units.json'), 'utf8');
   }
 
   private GL_OldCards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/gl/cards.json'), 'utf8');
   }
 
   private GL_OldEspers() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/gl/espers.json'), 'utf8');
   }
 
   private GL_OldEquipments() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/gl/equipments.json'), 'utf8');
   }
 
   private JP_OldUnits() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/jp/units.json'), 'utf8');
   }
 
   private JP_OldCards() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/jp/cards.json'), 'utf8');
   }
 
   private JP_OldEspers() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/jp/espers.json'), 'utf8');
   }
 
   private JP_OldEquipments() {
-    return this.fs.readFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), 'utf8');
+    return this.fs.readFile(this.path.resolve(__dirname, 'client/assets/data/jp/equipments.json'), 'utf8');
   }
 
+  ignoredAssets = [
+    "Thumbs.db@SynoEAStream",
+    "Thumbs.db",
+    ".DS_Store",
+    ".DS_Store@SynoResource",
+    "@eaDir"
+  ];
 
+  async getLastAssets() {
+    await this.getItemAssets();
+    await this.getCardAssets();
+    await this.getEquipmentAssets();
+    await this.getJobAssets();
+    await this.getUnitAssets();
+    await this.getTitleAssets();
+    this.getGrids();
+    this.getLocales();
+    this.getMaps();
+  }
 
-  getJsons(): Promise<any[]> {
+  async getItemAssets() {
+    console.log('### Get Items assets');
+    const itemFolders = [
+      '../wotv-assets/japan/itemicon/lapis/m',
+      '../wotv-assets/japan/itemicon/lapis/s',
+      '../wotv-assets/japan/itemicon/collabo/m',
+      '../wotv-assets/japan/itemicon/collabo/s',
+      '../wotv-assets/global/itemicon/lapis/m',
+      '../wotv-assets/global/itemicon/lapis/s',
+      '../wotv-assets/global/itemicon/lapisww/m',
+      '../wotv-assets/global/itemicon/lapisww/s',
+      '../wotv-assets/global/itemicon/collabo/m',
+      '../wotv-assets/global/itemicon/collabo/s'
+    ];
+
+    for (const folder of itemFolders) {
+      for (const fileName of this.fsSync.readdirSync(folder)) {
+        if (this.ignoredAssets.indexOf(fileName) === -1 && !this.fsSync.existsSync('client/assets/items/' + fileName)) {
+          console.log(fileName);
+          await this.importAndCropImage(folder + '/' + fileName, 'client/assets/items/' + fileName);
+        }
+      }
+    }
+  }
+
+  async getCardAssets() {
+    console.log('### Get Cards assets');
+    const cardFolders = [
+      '../wotv-assets/japan/vision/lapis',
+      '../wotv-assets/japan/vision/collabo',
+      '../wotv-assets/global/vision/lapis',
+      '../wotv-assets/global/vision/lapisww',
+      '../wotv-assets/global/vision/collabo'
+    ];
+
+    for (const folder of cardFolders) {
+      for (const subDirName of this.fsSync.readdirSync(folder)) {
+        const subFolder = folder + '/' + subDirName;
+        if (this.fsSync.lstatSync(subFolder).isDirectory() ) {
+          for (const fileName of this.fsSync.readdirSync(subFolder)) {
+            if (this.ignoredAssets.indexOf(fileName) === -1 && !this.fsSync.existsSync('client/assets/cards/' + fileName)) {
+              console.log(fileName);
+              await this.importAndCropImage(subFolder + '/' + fileName, 'client/assets/cards/' + fileName);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  async getEquipmentAssets() {
+    console.log('### Get Equipment assets');
+    const equipmentFolders = [
+      '../wotv-assets/japan/artifact/lapis',
+      '../wotv-assets/japan/artifact/collabo',
+      '../wotv-assets/global/artifact/lapis',
+      '../wotv-assets/global/artifact/lapisww',
+      '../wotv-assets/global/artifact/collabo'
+    ];
+
+    for (const folder of equipmentFolders) {
+      for (const subDirName of this.fsSync.readdirSync(folder)) {
+        const subFolder = folder + '/' + subDirName + '/icon';
+        if (this.ignoredAssets.indexOf(subDirName) === -1 && this.fsSync.lstatSync(subFolder).isDirectory() ) {
+          for (const fileName of this.fsSync.readdirSync(subFolder)) {
+            if (this.ignoredAssets.indexOf(fileName) === -1 && !this.fsSync.existsSync('client/assets/equipments/' + fileName)) {
+              console.log(fileName);
+              await this.importAndCropImage(subFolder + '/' + fileName, 'client/assets/equipments/' + fileName);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  async getJobAssets() {
+    console.log('### Get Job assets');
+    const jobFolders = [
+      '../wotv-assets/japan/unit/collabo/job',
+      '../wotv-assets/japan/unit/lapis/job',
+      '../wotv-assets/global/unit/collabo/job',
+      '../wotv-assets/global/unit/lapis/job',
+      '../wotv-assets/global/unit/lapisww/job'
+    ];
+
+    for (const folder of jobFolders) {
+      for (const subDirName of this.fsSync.readdirSync(folder)) {
+        const subFolder = folder + '/' + subDirName + '/icon';
+        if (this.ignoredAssets.indexOf(subDirName) === -1 && this.fsSync.lstatSync(subFolder).isDirectory() ) {
+          for (const fileName of this.fsSync.readdirSync(subFolder)) {
+            if (this.ignoredAssets.indexOf(subDirName) === -1 && this.fsSync.lstatSync(subFolder + '/' + fileName).isDirectory() ) {
+              for (const subFileName of this.fsSync.readdirSync(subFolder + '/' + fileName)) {
+                if (this.ignoredAssets.indexOf(subFileName) === -1
+                  && subFileName.split('_')[subFileName.split('_').length - 1] != 'm.png'
+                  && subFileName.split('_')[subFileName.split('_').length - 1] != 'item.png'
+                  && !this.fsSync.existsSync('client/assets/jobs/' + subFileName)
+                ) {
+                  console.log(subFileName);
+                  await this.importAndCropImage(subFolder + '/' + fileName + '/' + subFileName, 'client/assets/jobs/' + subFileName);
+                }
+              }
+            } else if (this.ignoredAssets.indexOf(fileName) === -1
+              && fileName.split('_')[fileName.split('_').length - 1] != 'm.png'
+              && fileName.split('_')[fileName.split('_').length - 1] != 'item.png'
+              && !this.fsSync.existsSync('client/assets/jobs/' + fileName)
+            ) {
+              console.log(fileName.split('_')[fileName.split('_').length - 1]);
+              await this.importAndCropImage(subFolder + '/' + fileName, 'client/assets/jobs/' + fileName);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  async getUnitAssets() {
+    console.log('### Get Units assets');
+    const unitFolders = [
+      '../wotv-assets/japan/unit/collabo/unit',
+      '../wotv-assets/japan/unit/lapis/unit',
+      '../wotv-assets/global/unit/collabo/unit',
+      '../wotv-assets/global/unit/lapis/unit',
+      '../wotv-assets/global/unit/lapisww/unit'
+    ];
+
+    for (const folder of unitFolders) {
+      for (const subDirName of this.fsSync.readdirSync(folder)) {
+        const iconPath = [folder, subDirName, 'icon'].join('/');
+        if (this.fsSync.existsSync(iconPath) && this.fsSync.lstatSync(iconPath).isDirectory() ) {
+          for (const fileName of this.fsSync.readdirSync(iconPath)) {
+            if (this.ignoredAssets.indexOf(fileName) === -1
+              && (fileName.split('_').length === 1
+                || (
+                  fileName.split('_')[fileName.split('_').length - 1] != 'angry.png'
+                  && fileName.split('_')[fileName.split('_').length - 1] != 'sad.png'
+                  && fileName.split('_')[fileName.split('_').length - 1] != 'smile.png'
+                  && fileName.split('_')[fileName.split('_').length - 1] != 'surprised.png'
+                  && fileName.split('_')[fileName.split('_').length - 1] != 'surprosed.png'
+                  && fileName.split('_')[fileName.split('_').length - 1] != 'setting.txt'
+                )
+              )
+              && !this.fsSync.existsSync('client/assets/units/' + fileName)
+            ) {
+              console.log(fileName);
+              await this.importAndCropImage(iconPath + '/' + fileName, 'client/assets/units/' + fileName);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  async getTitleAssets() {
+    console.log('### Get Titles assets');
+    const titleFolders = [
+      '../wotv-assets/japan/localize/ja/texture/award/guild/collabo',
+      '../wotv-assets/japan/localize/ja/texture/award/guild/lapis',
+      '../wotv-assets/japan/localize/ja/texture/award/player/collabo',
+      '../wotv-assets/japan/localize/ja/texture/award/player/lapis',
+      '../wotv-assets/global/localize/en/texture/award/guild/collabo',
+      '../wotv-assets/global/localize/en/texture/award/guild/lapis',
+      '../wotv-assets/global/localize/en/texture/award/player/collabo',
+      '../wotv-assets/global/localize/en/texture/award/player/lapis'
+    ];
+
+    for (const folder of titleFolders) {
+      for (const fileName of this.fsSync.readdirSync(folder)) {
+        if (this.ignoredAssets.indexOf(fileName) === -1 && fileName.split('_').length > 1 && fileName.split('_')[1] === 'special') {
+          const croppedFileNameTab = fileName.split('_').splice(2, fileName.split('_').length - 2).join('_');
+
+          await this.importAndCropImage(folder + '/' + fileName, 'client/assets/titles/' + croppedFileNameTab);
+        }
+      }
+    }
+  }
+
+  getGrids() {
+    console.log('### Import Grids');
+    const gridData = {
+      global: {},
+      japan: {}
+    };
+    const gridFolders = [
+      '../wotv-assets/global/map/lapis/grid',
+      '../wotv-assets/global/map/collabo/grid',
+      '../wotv-assets/japan/map/lapis/grid',
+      '../wotv-assets/japan/map/collabo/grid',
+    ];
+
+    for (const folder of gridFolders) {
+      for (const subFolderName of this.fsSync.readdirSync(folder)) {
+        const subFolder = folder + '/' + subFolderName;
+        for (const subSubFolderName of this.fsSync.readdirSync(subFolder)) {
+          const subSubFolder = subFolder + '/' + subSubFolderName;
+          for (const fileName of this.fsSync.readdirSync(subSubFolder)) {
+            const splittedFileName = fileName.split('_');
+            if (splittedFileName[splittedFileName.length - 1] === 'Default.txt' || splittedFileName[splittedFileName.length - 1] === 'Default.json') {
+              const gridName = fileName.split('_').splice(0, fileName.split('_').length - 1).join('_');
+
+              gridData[subSubFolder.split('/')[2]][gridName] = this.extract_map_grid(subSubFolder + '/' + fileName);
+            }
+          }
+        }
+      }
+    }
+
+    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/gl/grids.json'), JSON.stringify(gridData.global, null, 2));
+    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), JSON.stringify(gridData.japan, null, 2));
+  }
+
+  extract_map_grid(fileName) {
+    const struct = require('python-struct');
+    const file = this.fsSync.readFileSync(fileName)
+    const mapGrid = [];
+    const tileCount = struct.unpack("<I", this.getBufferBits(file, 4, 4))
+
+    let textCount = 0;
+    for (let i = 0; i < tileCount[0]; i++) {
+      const tailDetail = struct.unpack("<IIIH", this.getBufferBits(file, 8 + textCount + (i * 14), 14));
+
+      let text = '';
+      if (tailDetail[3] != 0) {
+        text = this.getBufferBits(file, 8 + textCount + ((i + 1) * 14), tailDetail[3]).toString('utf8')
+        textCount += tailDetail[3];
+      }
+
+      mapGrid.push({
+        x: tailDetail[0],
+        y: tailDetail[1],
+        h: tailDetail[2],
+        t: text
+      });
+    }
+
+    return mapGrid;
+  }
+
+  getBufferBits(buffer, start, count) {
+    let temporaryBuffer = new Buffer(count);
+    for (let i = 0; i < count; i++) {
+      temporaryBuffer[i] = buffer[i + start];
+    }
+
+    return temporaryBuffer;
+  }
+
+  getLocales() {
+    console.log('### Import Locales');
+    const localeFolders = [
+      {
+        'srcFolder': '../wotv-assets/global/localize/fr/text/masterparam',
+        'destFolder': 'data/fr'
+      },
+      {
+        'srcFolder': '../wotv-assets/global/localize/en/text/masterparam',
+        'destFolder': 'data/en'
+      },
+      {
+        'srcFolder': '../wotv-assets/global/localize/de/text/masterparam',
+        'destFolder': 'data/de'
+      },
+      {
+        'srcFolder': '../wotv-assets/global/localize/es/text/masterparam',
+        'destFolder': 'data/es'
+      },
+      {
+        'srcFolder': '../wotv-assets/global/localize/ko/text/masterparam',
+        'destFolder': 'data/ko'
+      },
+      {
+        'srcFolder': '../wotv-assets/global/localize/zh/text/masterparam',
+        'destFolder': 'data/zh'
+      },
+      {
+        'srcFolder': '../wotv-assets/japan/localize/ja/text/masterparam',
+        'destFolder': 'data/jp'
+      }
+    ];
+    const localeFiles = [
+      'artifactgrow',
+      'artifactname',
+      'buffname',
+      'guildawardsname',
+      'guildawardsdescription',
+      'itemname',
+      'itemother',
+      'jobname',
+      'playerawardsname',
+      'playerawardsdescription',
+      'quest/questtitle',
+      'skillname',
+      'unitname',
+      'visioncardname',
+      'towertitle',
+      'towerfloortitle'
+    ];
+
+    for (const localeFolder of localeFolders) {
+      for (const localeFile of localeFiles) {
+        if (localeFile.split('/').length > 1) {
+          if (this.fsSync.existsSync(localeFolder['destFolder'] + '/' + localeFile.split('/')[1] + '.json')) {
+            this.fsSync.unlinkSync(localeFolder['destFolder'] + '/' + localeFile.split('/')[1] + '.json');
+          }
+
+          this.fsSync.copyFileSync(
+            localeFolder['srcFolder'] + '/' + localeFile + '.txt',
+            localeFolder['destFolder'] + '/' + localeFile.split('/')[1] + '.json',
+            this.fsSync.constants.COPYFILE_FICLONE_FORCE
+          )
+        } else {
+          if (this.fsSync.existsSync(localeFolder['destFolder'] + '/' + localeFile + '.json')) {
+            this.fsSync.unlinkSync(localeFolder['destFolder'] + '/' + localeFile + '.json');
+          }
+
+          this.fsSync.copyFileSync(
+            localeFolder['srcFolder'] + '/' + localeFile + '.txt',
+            localeFolder['destFolder'] + '/' + localeFile + '.json',
+            this.fsSync.constants.COPYFILE_FICLONE_FORCE
+          )
+        }
+      }
+    }
+  }
+
+  getMaps() {
+    console.log('### Import GL maps')
+    const mapData = {
+      map: {},
+      jp_map: {}
+    };
+    const mapFolders = [
+      '../wotv-dump/map',
+      '../wotv-dump/jp_map'
+    ];
+
+    for (const folder of mapFolders) {
+      for (const fileName of this.fsSync.readdirSync(folder)) {
+        const rawData = JSON.parse(this.fsSync.readFileSync(this.path.resolve(__dirname, folder + '/' + fileName), 'utf8'));
+        const mapName = fileName.split('.')[0];
+
+        mapData[folder.split('/')[2]][mapName] = {}
+        if (rawData['drop_table_list']) {
+          mapData[folder.split('/')[2]][mapName]['drop_table_list'] = {};
+          rawData['drop_table_list'].forEach(dropTable => {
+            if (dropTable['iname'] !== 'CRYSTAL_00') {
+              mapData[folder.split('/')[2]][mapName]['drop_table_list'][dropTable['iname']] = dropTable;
+            }
+          });
+        }
+
+        if (rawData['enemy']) {
+          const enemy = []
+          for (const rawEnemy of rawData['enemy']) {
+            const reducedEnemy = {
+              iname: rawEnemy['iname'],
+              x: rawEnemy['x'],
+              y: rawEnemy['y'],
+              lv: rawEnemy['lv'],
+              elem: rawEnemy['elem'],
+              brave: rawEnemy['brave'],
+              faith: rawEnemy['faith'],
+              skills: rawEnemy['skills'],
+              drop: rawEnemy['drop'],
+              side: rawEnemy['side'],
+              status: rawEnemy['status']
+            };
+
+            if (rawEnemy['part'] && rawEnemy['part']['body'] && rawEnemy['part']['body'] !== '') {
+              reducedEnemy.hasBody = true;
+            }
+
+            if (rawEnemy['nrmSkl'] && rawEnemy['nrmSkl']['iname'] !== "") {
+              reducedEnemy.nrmSkl = rawEnemy['nrmSkl']['iname'];
+            }
+
+            enemy.push(reducedEnemy);
+          }
+
+          mapData[folder.split('/')[2]][mapName]['enemy'] = enemy;
+        }
+
+        if (rawData['party']) {
+          const party = [];
+          for (const rawParty of rawData['party']) {
+            party.push({
+              x: rawParty['x'],
+              y: rawParty['y']
+            });
+          }
+
+          mapData[folder.split('/')[2]][mapName]['party'] = party;
+        }
+
+        if (rawData['arena']) {
+          const arena = []
+          for (const rawArena of rawData['arena']) {
+            arena.push({
+              x: rawArena['x'],
+              y: rawArena['y']
+            });
+          }
+
+          mapData[folder.split('/')[2]][mapName]['arena'] = arena;
+        }
+      }
+    }
+
+    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/gl/grids.json'), JSON.stringify(mapData.map, null, 2));
+    this.fs.writeFile(this.path.resolve(__dirname, 'data/map/jp/grids.json'), JSON.stringify(mapData.jp_map, null, 2));
+  }
+
+  async importAndCropImage(src, dst) {
+    const getPixels = require('get-pixels');
+
+    await new Promise(function(resolve, reject) {
+      getPixels(src, (err, pixels) => {
+        if (err) {
+          console.log('image not found for trim : ' + src);
+          resolve('file not found')
+        }
+
+        const w = pixels.shape[0];
+        const h = pixels.shape[1];
+
+        let i, j, a;
+
+        let cropData = {
+          top: 0,
+          right: w,
+          bottom: h,
+          left: 0,
+        };
+
+        top:
+        for (j = 0; j < h; j++) {
+          cropData.top = j;
+
+          for (i = 0; i < w; i++) {
+            a = pixels.get(i, j, 3);
+
+            if (a !== 0) break top;
+          }
+        }
+
+        right:
+        for (i = w - 1; i >= 0; i--) {
+          for (j = h - 1; j >= 0; j--) {
+            a = pixels.get(i, j, 3);
+
+            if (a !== 0) break right;
+          }
+
+          cropData.right = i;
+        }
+
+        bottom:
+        for (j = h - 1; j >= 0; j--) {
+          for (i = w - 1; i >= 0; i--) {
+            a = pixels.get(i, j, 3);
+
+            if (a !== 0) break bottom;
+          }
+
+          cropData.bottom = j;
+        }
+
+        left:
+        for (i = 0; i < w; i++) {
+          cropData.left = i;
+
+          for (j = 0; j < h; j++) {
+            a = pixels.get(i, j, 3);
+
+            if (a !== 0) break left;
+          }
+        }
+
+        // Check error
+        if ((cropData.left > cropData.right) || (cropData.top > cropData.bottom)) {
+          console.log('Crop coordinates overflow: ' + src);
+          resolve('Crop coordinates overflow: ' + src);
+        } else {
+          const savePixels = require('save-pixels');
+          const mkdirp = require('mkdirp');
+          const path = require('path');
+          const fs = require('fs');
+
+          const dirname = path.dirname(dst);
+
+          if (!fs.existsSync(dirname)) {
+            mkdirp(dirname, function (err) {
+              if (err) console.error(err);
+            });
+          }
+
+          savePixels(pixels.hi(cropData.right, cropData.bottom).lo(cropData.left, cropData.top), 'png').pipe(fs.createWriteStream(dst));
+          resolve(null);
+        }
+      });
+    });
+  }
+
+  async getJsons() {
+    await this.getLastAssets();
+
     return Promise.all([
       this.GLUnits(),
       this.GLUnitsBoards(),
@@ -2603,88 +3127,88 @@ export class JsonService {
 
         console.log('==== GL RESULT ====');
         console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/units.json'), JSON.stringify(this.gl.wotvUnits, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/units.json'), JSON.stringify(this.gl.wotvUnits, null, 2));
 
         console.log('VisionCards : ' + Object.keys(this.gl.wotvVisionCards).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/cards.json'), JSON.stringify(this.gl.wotvVisionCards, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/cards.json'), JSON.stringify(this.gl.wotvVisionCards, null, 2));
 
         console.log('Espers : ' + Object.keys(this.gl.wotvEspers).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/espers.json'), JSON.stringify(this.gl.wotvEspers, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/espers.json'), JSON.stringify(this.gl.wotvEspers, null, 2));
 
         console.log('Equipments : ' + Object.keys(this.gl.wotvEquipments).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/equipments.json'), JSON.stringify(this.gl.wotvEquipments, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/equipments.json'), JSON.stringify(this.gl.wotvEquipments, null, 2));
 
         console.log('Jobs : ' + Object.keys(this.gl.wotvJobs).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/jobs.json'), JSON.stringify(this.gl.wotvJobs, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/jobs.json'), JSON.stringify(this.gl.wotvJobs, null, 2));
 
         console.log('Raids : ' + Object.keys(this.gl.wotvRaids).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/raids.json'), JSON.stringify(this.gl.wotvRaids, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/raids.json'), JSON.stringify(this.gl.wotvRaids, null, 2));
 
         console.log('Items : ' + Object.keys(this.gl.wotvItems).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/items.json'), JSON.stringify(this.gl.wotvItems, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/items.json'), JSON.stringify(this.gl.wotvItems, null, 2));
 
         console.log('MasterRanks : ' + Object.keys(this.gl.wotvMasterRanks).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/masterRanks.json'), JSON.stringify(this.gl.wotvMasterRanks, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/masterRanks.json'), JSON.stringify(this.gl.wotvMasterRanks, null, 2));
 
         console.log('PlayerTitles : ' + Object.keys(this.gl.wotvPlayerTitles).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/playerTitles.json'), JSON.stringify(this.gl.wotvPlayerTitles, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/playerTitles.json'), JSON.stringify(this.gl.wotvPlayerTitles, null, 2));
 
         console.log('GuildTitles : ' + Object.keys(this.gl.wotvGuildTitles).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/guildTitles.json'), JSON.stringify(this.gl.wotvGuildTitles, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/guildTitles.json'), JSON.stringify(this.gl.wotvGuildTitles, null, 2));
 
         console.log('Quests : ' + Object.keys(this.gl.wotvQuests).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/quests.json'), JSON.stringify(this.gl.wotvQuests, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/quests.json'), JSON.stringify(this.gl.wotvQuests, null, 2));
 
         console.log('OtherUnits : ' + Object.keys(this.gl.wotvOtherUnits).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/otherUnits.json'), JSON.stringify(this.gl.wotvOtherUnits, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/otherUnits.json'), JSON.stringify(this.gl.wotvOtherUnits, null, 2));
 
         console.log('Skills : ' + Object.keys(this.gl.wotvSkills).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/gl/skills.json'), JSON.stringify(this.gl.wotvSkills, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/gl/skills.json'), JSON.stringify(this.gl.wotvSkills, null, 2));
 
 
         console.log('==== JP RESULT ====');
         console.log('Units : ' + Object.keys(this.jp.wotvUnits).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/units.json'), JSON.stringify(this.jp.wotvUnits, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/units.json'), JSON.stringify(this.jp.wotvUnits, null, 2));
 
         console.log('VisionCards : ' + Object.keys(this.jp.wotvVisionCards).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/cards.json'), JSON.stringify(this.jp.wotvVisionCards, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/cards.json'), JSON.stringify(this.jp.wotvVisionCards, null, 2));
 
         console.log('Espers : ' + Object.keys(this.jp.wotvEspers).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/espers.json'), JSON.stringify(this.jp.wotvEspers, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/espers.json'), JSON.stringify(this.jp.wotvEspers, null, 2));
 
         console.log('Equipments : ' + Object.keys(this.jp.wotvEquipments).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/equipments.json'), JSON.stringify(this.jp.wotvEquipments, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/equipments.json'), JSON.stringify(this.jp.wotvEquipments, null, 2));
 
         console.log('Jobs : ' + Object.keys(this.jp.wotvJobs).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/jobs.json'), JSON.stringify(this.jp.wotvJobs, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/jobs.json'), JSON.stringify(this.jp.wotvJobs, null, 2));
 
         console.log('Raids : ' + Object.keys(this.jp.wotvRaids).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/raids.json'), JSON.stringify(this.jp.wotvRaids, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/raids.json'), JSON.stringify(this.jp.wotvRaids, null, 2));
 
         console.log('Items : ' + Object.keys(this.jp.wotvItems).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/items.json'), JSON.stringify(this.jp.wotvItems, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/items.json'), JSON.stringify(this.jp.wotvItems, null, 2));
 
         console.log('MasterRanks : ' + Object.keys(this.jp.wotvMasterRanks).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/masterRanks.json'), JSON.stringify(this.jp.wotvMasterRanks, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/masterRanks.json'), JSON.stringify(this.jp.wotvMasterRanks, null, 2));
 
         console.log('PlayerTitles : ' + Object.keys(this.jp.wotvPlayerTitles).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/playerTitles.json'), JSON.stringify(this.jp.wotvPlayerTitles, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/playerTitles.json'), JSON.stringify(this.jp.wotvPlayerTitles, null, 2));
 
         console.log('GuildTitles : ' + Object.keys(this.jp.wotvGuildTitles).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/guildTitles.json'), JSON.stringify(this.jp.wotvGuildTitles, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/guildTitles.json'), JSON.stringify(this.jp.wotvGuildTitles, null, 2));
 
         console.log('Quests : ' + Object.keys(this.jp.wotvQuests).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/quests.json'), JSON.stringify(this.jp.wotvQuests, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/quests.json'), JSON.stringify(this.jp.wotvQuests, null, 2));
 
         console.log('OtherUnits : ' + Object.keys(this.jp.wotvOtherUnits).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/otherUnits.json'), JSON.stringify(this.jp.wotvOtherUnits, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/otherUnits.json'), JSON.stringify(this.jp.wotvOtherUnits, null, 2));
 
         console.log('Skills : ' + Object.keys(this.jp.wotvSkills).length);
-        this.fs.writeFile(require('path').resolve(__dirname, 'client/assets/data/jp/skills.json'), JSON.stringify(this.jp.wotvSkills, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'client/assets/data/jp/skills.json'), JSON.stringify(this.jp.wotvSkills, null, 2));
 
         console.log('==== JP ROMAJI ====');
         console.log(Object.keys(this.jpRomaji).length)
-        this.fs.writeFile(require('path').resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
       });
     });
   }
