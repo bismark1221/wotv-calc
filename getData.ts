@@ -2514,6 +2514,8 @@ export class JsonService {
       '../wotv-dump/jp_map'
     ];
 
+    const test = []
+
     for (const folder of mapFolders) {
       for (const fileName of this.fsSync.readdirSync(folder)) {
         const rawData = JSON.parse(this.fsSync.readFileSync(this.path.resolve(__dirname, folder + '/' + fileName), 'utf8'));
@@ -2554,6 +2556,49 @@ export class JsonService {
               reducedEnemy.nrmSkl = rawEnemy['nrmSkl']['iname'];
             }
 
+            if (rawEnemy.entry_cond && rawEnemy.entry_cond.list && rawEnemy.entry_cond.list.length > 0) {
+              rawEnemy.entry_cond.list.forEach(li =>{
+                if (test.indexOf(li.self.type) == -1 && folder.split('/')[2] === 'map') {
+                  console.log(fileName)
+                  test.push(li.self.type)
+                }
+
+                /*
+                1 - dead enemy
+        "list": [
+          {
+            "self": {
+              "type": 1,
+              "json": "{\"side\":0,\"tag\":\"A\"}"
+            },
+            "childs": []
+          }
+
+            10 - enemy position
+            "self": {
+              "type": 10,
+              "json": "{\"side\":0,\"tag\":\"HUN\",\"pos\":[{\"x\":2,\"y\":5},{\"x\":3,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":4}]}"
+            },
+
+                15 - unit cast
+        "list": [
+          {
+            "self": {
+              "type": 15,
+              "json": "{\"side\":1,\"tag\":\"IFRT\",\"skill\":\"SK_IFRT_M_04\",\"vague\":false}"
+            },
+            "childs": [
+              {
+                "type": 3,
+                "json": "{\"side\":0,\"tag\":\"BOMB1\"}"
+              }
+            ]
+          }
+        ]
+                */
+              })
+            }
+
             enemy.push(reducedEnemy);
           }
 
@@ -2585,6 +2630,8 @@ export class JsonService {
         }
       }
     }
+
+    console.log(test)
 
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/gl/maps.json'), JSON.stringify(mapData.map, null, 2));
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/jp/maps.json'), JSON.stringify(mapData.jp_map, null, 2));
