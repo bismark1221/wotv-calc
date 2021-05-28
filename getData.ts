@@ -5775,6 +5775,13 @@ export class JsonService {
       }
     }
 
+    formattedEnemy.entryCond.forEach(entry => {
+      entry.forEach(condition => {
+        condition.condition = JSON.parse(condition.value);
+        delete condition.value;
+      });
+    });
+
     if (formattedEnemy.status === '') {
       delete formattedEnemy.status;
     }
