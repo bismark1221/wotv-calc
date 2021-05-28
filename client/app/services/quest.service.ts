@@ -318,7 +318,7 @@ export class QuestService {
         if (!unit) {
           unit = await this.otherUnitService.getUnit(mission.value);
         }
-        html = (unit ? unit.getName() : '???') + ' must survive the mission';  // @TODO
+        html = (unit ? unit.getName(this.translateService) : '???') + ' must survive the mission';
       break;
       case 'ELEMENT' :
         html = 'Party includes only ';
@@ -332,7 +332,7 @@ export class QuestService {
         if (!unit) {
           unit = await this.otherUnitService.getUnit(mission.value);
         }
-        html = 'Party includes ' + (unit ? unit.getName() : '???');
+        html = 'Party includes ' + (unit ? unit.getName(this.translateService) : '???');
       break;
       case 'MAX_PARTY_UNIT' :
         html = 'Formation comprise of no more than ' + mission.value + ' unit' + (mission.value > 1 ? 's' : '');
@@ -340,21 +340,21 @@ export class QuestService {
       case 'MIN_SIM_DEAD_SPECIFIC_ENEMIES' :
         const valueSplit = mission.value.split(',');
         unit = await this.otherUnitService.getUnit(valueSplit[0]);
-        html = 'Defeat ' + valueSplit[1] + ' ' + (unit ? unit.getName() : '???') + ' or more simultaneously';  // @TODO
+        html = 'Defeat ' + valueSplit[1] + ' ' + (unit ? unit.getName(this.translateService) : '???') + ' or more simultaneously';
       break;
       case 'MIN_BREAK_OBJECT' :
         html = 'Break ' + mission.value + ' or more objets';
       break;
       case 'SPECIFIC_SKILL' :
         // @TODO get skill name ^^
-        html = 'Use some skill (but sorry I did not link that part...)'; // + mission.value;
+        html = 'Use some skill (but sorry I did not link that part yet...)'; // + mission.value;
       break;
       case 'MAX_SKILL' :
         html = 'Use no more than ' + mission.value + ' skills';
       break;
       case 'ACTIVATE' :
         unit = await this.otherUnitService.getUnit(mission.value);
-        html = 'Activate ' + (unit ? unit.getName() : '???'); // @TODO
+        html = 'Activate ' + (unit ? unit.getName(this.translateService) : '???'); // @TODO
       break;
       case 'ITEMS' :
         if (mission.value === 0) {

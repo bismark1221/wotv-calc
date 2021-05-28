@@ -2558,13 +2558,21 @@ export class JsonService {
 
             if (rawEnemy.entry_cond && rawEnemy.entry_cond.list && rawEnemy.entry_cond.list.length > 0) {
               rawEnemy.entry_cond.list.forEach(li =>{
-                if (test.indexOf(li.self.type) == -1 && folder.split('/')[2] === 'map') {
-                  console.log(fileName)
-                  test.push(li.self.type)
-                }
+                li.childs.forEach(child => {
+                  if (test.indexOf(child.type) == -1 && folder.split('/')[2] === 'map'
+                    && child.type != 10 && child.type != 15 && child.type != 19 && child.type != 8
+                    && child.type != 1  && child.type != 3 && child.type != 7
+                    && mapName !== 'ch_lw_rart_set'
+                    && mapName.split('_')[0] !== 'br' && mapName.split('_')[1] !== 'ff10'  && mapName.split('_')[1] !== 'ff14'
+                    && mapName.split('_')[0] !== 'debug'
+                  ) {
+                    console.log(fileName)
+                    test.push(child.type)
+                  }
+                })
 
                 /*
-                1 - dead enemy
+                1 - one of tag dead
         "list": [
           {
             "self": {
@@ -2574,10 +2582,38 @@ export class JsonService {
             "childs": []
           }
 
+                3 - all of tag dead
+        "list": [
+          {
+            "self": {
+              "type": 1,
+              "json": "{\"side\":0,\"tag\":\"A\"}"
+            },
+            "childs": []
+          }
+
+          4 - tag alive, used for type : 8
+            "childs": [
+              {
+                "type": 4,
+                "json": "{\"side\":0,\"tag\":\"A\"}"
+              }
+
+          7 - Stat at X (mainly hp ???)
+            "self": {
+              "type": 7,
+              "json": "{\"ope\":1,\"tag\":\"WOL1\",\"hp\":30}"
+
             10 - enemy position
             "self": {
               "type": 10,
               "json": "{\"side\":0,\"tag\":\"HUN\",\"pos\":[{\"x\":2,\"y\":5},{\"x\":3,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":4}]}"
+            },
+
+            8 - enemy count turns
+            "self": {
+              "type": 8,
+              "json": "{\"ope\":0,\"tag\":\"e8a\",\"turn\":4}"
             },
 
                 15 - unit cast
@@ -2595,6 +2631,13 @@ export class JsonService {
             ]
           }
         ]
+
+            19 - Number of dead
+            "self": {
+              "type": 19,
+              "json": "{\"side\":1,\"count\":2}"
+
+
                 */
               })
             }
@@ -3170,7 +3213,7 @@ export class JsonService {
         this.jp.oldCards = JSON.parse(responsesRound2[6]);
         this.jp.oldEquipments = JSON.parse(responsesRound2[7]);
 
-        await this.formatJsons();
+        /*await this.formatJsons();
 
         console.log('==== GL RESULT ====');
         console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
@@ -3255,7 +3298,7 @@ export class JsonService {
 
         console.log('==== JP ROMAJI ====');
         console.log(Object.keys(this.jpRomaji).length)
-        this.fs.writeFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
+        this.fs.writeFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));*/
       });
     });
   }
