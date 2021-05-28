@@ -1262,6 +1262,17 @@ export class JsonService {
     'BOOK'
   ];
 
+  private enemyEntryCond = {
+    1: 'oneDead',
+    3: 'allDead',
+    4: 'alive',
+    7: 'statCond',
+    8: 'turnCount',
+    10: 'position',
+    15: 'cast',
+    19: 'countDead'
+  };
+
   fs = require('fs').promises;
   fsSync = require('fs');
   path = require('path');
@@ -2504,7 +2515,7 @@ export class JsonService {
   }
 
   getMaps() {
-    console.log('### Import GL maps')
+    console.log('### Import maps')
     const mapData = {
       map: {},
       jp_map: {}
@@ -2513,8 +2524,6 @@ export class JsonService {
       '../wotv-dump/map',
       '../wotv-dump/jp_map'
     ];
-
-    const test = []
 
     for (const folder of mapFolders) {
       for (const fileName of this.fsSync.readdirSync(folder)) {
@@ -2545,7 +2554,9 @@ export class JsonService {
               skills: rawEnemy['skills'],
               drop: rawEnemy['drop'],
               side: rawEnemy['side'],
-              status: rawEnemy['status']
+              status: rawEnemy['status'],
+              tag: rawEnemy['name'],
+              entryCond: []
             };
 
             if (rawEnemy['part'] && rawEnemy['part']['body'] && rawEnemy['part']['body'] !== '') {
@@ -2558,86 +2569,93 @@ export class JsonService {
 
             if (rawEnemy.entry_cond && rawEnemy.entry_cond.list && rawEnemy.entry_cond.list.length > 0) {
               rawEnemy.entry_cond.list.forEach(li =>{
+                if (!this.enemyEntryCond[String(li.self.type)] && mapName.split('_')[0] !== 'debug') {
+                  console.log("Enemy entry cond not known (" + li.self.type + "): " + mapName);
+                }
+
+                const entryCond = [{
+                  type: this.enemyEntryCond[String(li.self.type)],
+                  value: li.self.json
+                }];
+
                 li.childs.forEach(child => {
-                  if (test.indexOf(child.type) == -1 && folder.split('/')[2] === 'map'
-                    && child.type != 10 && child.type != 15 && child.type != 19 && child.type != 8
-                    && child.type != 1  && child.type != 3 && child.type != 7
-                    && mapName !== 'ch_lw_rart_set'
-                    && mapName.split('_')[0] !== 'br' && mapName.split('_')[1] !== 'ff10'  && mapName.split('_')[1] !== 'ff14'
-                    && mapName.split('_')[0] !== 'debug'
-                  ) {
-                    console.log(fileName)
-                    test.push(child.type)
+                  if (!this.enemyEntryCond[String(child.type)] && mapName.split('_')[0] !== 'debug') {
+                    console.log("Child Enemy entry cond not known (" + child.type + "): " + mapName);
                   }
-                })
+
+                  entryCond.push({
+                    type: this.enemyEntryCond[String(child.type)],
+                    value: child.json
+                  });
+                });
+
+                reducedEnemy.entryCond.push(entryCond);
 
                 /*
                 1 - one of tag dead
-        "list": [
-          {
-            "self": {
-              "type": 1,
-              "json": "{\"side\":0,\"tag\":\"A\"}"
-            },
-            "childs": []
-          }
+                "list": [
+                  {
+                    "self": {
+                      "type": 1,
+                      "json": "{\"side\":0,\"tag\":\"A\"}"
+                    },
+                    "childs": []
+                  }
 
                 3 - all of tag dead
-        "list": [
-          {
-            "self": {
-              "type": 1,
-              "json": "{\"side\":0,\"tag\":\"A\"}"
-            },
-            "childs": []
-          }
+                "list": [
+                  {
+                    "self": {
+                      "type": 1,
+                      "json": "{\"side\":0,\"tag\":\"A\"}"
+                    },
+                    "childs": []
+                  }
 
-          4 - tag alive, used for type : 8
-            "childs": [
-              {
-                "type": 4,
-                "json": "{\"side\":0,\"tag\":\"A\"}"
-              }
+                4 - tag alive, used for type : 8
+                "childs": [
+                  {
+                    "type": 4,
+                    "json": "{\"side\":0,\"tag\":\"A\"}"
+                  }
 
-          7 - Stat at X (mainly hp ???)
-            "self": {
-              "type": 7,
-              "json": "{\"ope\":1,\"tag\":\"WOL1\",\"hp\":30}"
+                7 - Stat at X (mainly hp ???)
+                "self": {
+                  "type": 7,
+                  "json": "{\"ope\":1,\"tag\":\"WOL1\",\"hp\":30}"
 
-            10 - enemy position
-            "self": {
-              "type": 10,
-              "json": "{\"side\":0,\"tag\":\"HUN\",\"pos\":[{\"x\":2,\"y\":5},{\"x\":3,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":4}]}"
-            },
+                10 - enemy position
+                "self": {
+                  "type": 10,
+                  "json": "{\"side\":0,\"tag\":\"HUN\",\"pos\":[{\"x\":2,\"y\":5},{\"x\":3,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":4}]}"
+                },
 
-            8 - enemy count turns
-            "self": {
-              "type": 8,
-              "json": "{\"ope\":0,\"tag\":\"e8a\",\"turn\":4}"
-            },
+                8 - enemy count turns
+                "self": {
+                  "type": 8,
+                  "json": "{\"ope\":0,\"tag\":\"e8a\",\"turn\":4}"
+                },
 
                 15 - unit cast
-        "list": [
-          {
-            "self": {
-              "type": 15,
-              "json": "{\"side\":1,\"tag\":\"IFRT\",\"skill\":\"SK_IFRT_M_04\",\"vague\":false}"
-            },
-            "childs": [
-              {
-                "type": 3,
-                "json": "{\"side\":0,\"tag\":\"BOMB1\"}"
-              }
-            ]
-          }
-        ]
+                "list": [
+                  {
+                    "self": {
+                      "type": 15,
+                      "json": "{\"side\":1,\"tag\":\"IFRT\",\"skill\":\"SK_IFRT_M_04\",\"vague\":false}"
+                    },
+                    "childs": [
+                      {
+                        "type": 3,
+                        "json": "{\"side\":0,\"tag\":\"BOMB1\"}"
+                      }
+                    ]
+                  }
+                ]
 
-            19 - Number of dead
-            "self": {
-              "type": 19,
-              "json": "{\"side\":1,\"count\":2}"
-
-
+                19 - Number of dead
+                "self": {
+                  "type": 19,
+                  "json": "{\"side\":1,\"count\":2}"
                 */
               })
             }
@@ -2673,8 +2691,6 @@ export class JsonService {
         }
       }
     }
-
-    console.log(test)
 
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/gl/maps.json'), JSON.stringify(mapData.map, null, 2));
     this.fsSync.writeFileSync(this.path.resolve(__dirname, 'data/map/jp/maps.json'), JSON.stringify(mapData.jp_map, null, 2));
@@ -3213,7 +3229,7 @@ export class JsonService {
         this.jp.oldCards = JSON.parse(responsesRound2[6]);
         this.jp.oldEquipments = JSON.parse(responsesRound2[7]);
 
-        /*await this.formatJsons();
+        await this.formatJsons();
 
         console.log('==== GL RESULT ====');
         console.log('Units : ' + Object.keys(this.gl.wotvUnits).length);
@@ -3298,7 +3314,7 @@ export class JsonService {
 
         console.log('==== JP ROMAJI ====');
         console.log(Object.keys(this.jpRomaji).length)
-        this.fs.writeFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));*/
+        this.fs.writeFile(this.path.resolve(__dirname, 'data/jp_romaji.json'), JSON.stringify(this.jpRomaji, null, 2));
       });
     });
   }
