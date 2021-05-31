@@ -97,24 +97,24 @@
         </table>
 
         <table class="tmrSkillTable" *ngIf="unit.formattedTmr.skills[0] && unit.formattedTmr.skills[0][0]">
-          <tbody>
-            <tr>
-              <th [attr.colspan]="unit.formattedTmr.skills[0][0].type === 'skill' ? '7' : '2'">TMR Skill</th>
-            </tr>
-            <tr>
-              <th class="sub">Type</th>
-              <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">name</th>
-              <th class="sub">Effects</th>
-              <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Range</th>
-              <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Casts</th>
-              <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Hits</th>
-              <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Cost</th>
-            </tr>
-            <tr *ngFor="let skill of unit.formattedTmr.skills[0]">
+          <tr>
+            <th [attr.colspan]="unit.formattedTmr.skills[0][0].type === 'skill' ? '7' : '2'">TMR Skill</th>
+          </tr>
+          <tr>
+            <th class="sub">Type</th>
+            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">name</th>
+            <th class="sub">Effects</th>
+            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Range</th>
+            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Casts</th>
+            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Hits</th>
+            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Cost</th>
+          </tr>
+          <tbody *ngFor="let skill of unit.formattedTmr.skills[0]">
+            <tr *ngIf="skill.type === 'skill'">
               <td class="tmrTypeTd">
                 <img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
               </td>
-              <td class="tmrNameTd" *ngIf="skill.type === 'skill'">
+              <td class="tmrNameTd">
                 <span>{{ skill.name }}</span>
                 <span *ngIf="skill.based"><img class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
                 <div *ngIf="skill.time && skill.time.minValue">
@@ -168,20 +168,66 @@
                   </div>
                 </div>
               </td>
-              <td class="rangeTd" *ngIf="skill.type === 'skill'">
+              <td class="rangeTd">
                 <ng-template #tip_table><div [innerHTML]="skill.skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
                   <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
                 </div>
               </td>
-              <td class="skillCastTd" *ngIf="skill.type === 'skill'">
+              <td class="skillCastTd">
                 {{ skill.count }}
               </td>
-              <td class="skillHitTd" *ngIf="skill.type === 'skill'">
+              <td class="skillHitTd">
                 <span *ngIf="skill.combo">{{ skill.combo.num }}</span>
               </td>
-              <td class="skillCostTd" *ngIf="skill.type === 'skill'">
+              <td class="skillCostTd">
                 <span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span>
+              </td>
+            </tr>
+            <tr *ngIf="skill.type !== 'skill'">
+              <td class="tmrTypeTd">
+                <img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" />
+              </td>
+              <td class="skillEffectTd" colspan="99">
+                <div>{{ skill.counterHtml }}</div>
+
+                <div *ngIf="skill.effectsHtml">
+                  <div *ngFor="let effect of skill.effectsHtml.before">
+                    {{ effect }}
+                  </div>
+                </div>
+
+                <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                  <ng-template #tip_damage>
+                    <div *ngIf="skill.based === 'physic'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+                    <div *ngIf="skill.based === 'magic'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                    </div>
+                    <div *ngIf="skill.based === 'hybrid'">
+                      {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                    </div>
+
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                      {{ skill.damage.formula[1] }}% DEX
+                    </div>
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                      {{ skill.damage.formula[2] }}% AGI
+                    </div>
+                    <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                      {{ skill.damage.formula[3] }}% LUCK
+                    </div>
+                  </ng-template>
+                  <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" />&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                  <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                </div>
+
+                <div *ngIf="skill.effectsHtml">
+                  <div *ngFor="let effect of skill.effectsHtml.after">
+                    {{ effect }}
+                  </div>
+                </div>
               </td>
             </tr>
           </tbody>

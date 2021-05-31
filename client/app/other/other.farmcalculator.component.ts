@@ -155,6 +155,30 @@ export class OtherFarmCalculatorComponent implements OnInit {
       }
     }
 
+    this.quests.sort((a, b) => {
+      if (a.findedItems.length > b.findedItems.length) {
+        return -1;
+      } else if (a.findedItems.length < b.findedItems.length) {
+        return 1;
+      } else {
+        for (const item of this.selectedItems) {
+          if (!a.items[item.dataId]) {
+            return 1;
+          } else if (!b.items[item.dataId]) {
+            return -1;
+          } else if (a.items[item.dataId].drop.value > b.items[item.dataId].drop.value) {
+            return -1;
+          } else if (a.items[item.dataId].drop.value < b.items[item.dataId].drop.value) {
+            return 1;
+          } else if (a.items[item.dataId].drop.minNum > b.items[item.dataId].drop.minNum) {
+            return -1;
+          } else if (a.items[item.dataId].drop.minNum < b.items[item.dataId].drop.minNum) {
+            return 1;
+          }
+        }
+      }
+    });
+
     this.questLoading = false;
   }
 
