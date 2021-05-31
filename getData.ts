@@ -1264,6 +1264,7 @@ export class JsonService {
 
   private enemyEntryCond = {
     1: 'oneDead',
+    2: 'allDeadExpectTag',
     3: 'allDead',
     4: 'alive',
     7: 'statCond',
@@ -2590,73 +2591,6 @@ export class JsonService {
                 });
 
                 reducedEnemy.entryCond.push(entryCond);
-
-                /*
-                1 - one of tag dead
-                "list": [
-                  {
-                    "self": {
-                      "type": 1,
-                      "json": "{\"side\":0,\"tag\":\"A\"}"
-                    },
-                    "childs": []
-                  }
-
-                3 - all of tag dead
-                "list": [
-                  {
-                    "self": {
-                      "type": 1,
-                      "json": "{\"side\":0,\"tag\":\"A\"}"
-                    },
-                    "childs": []
-                  }
-
-                4 - tag alive, used for type : 8
-                "childs": [
-                  {
-                    "type": 4,
-                    "json": "{\"side\":0,\"tag\":\"A\"}"
-                  }
-
-                7 - Stat at X (mainly hp ???)
-                "self": {
-                  "type": 7,
-                  "json": "{\"ope\":1,\"tag\":\"WOL1\",\"hp\":30}"
-
-                10 - enemy position
-                "self": {
-                  "type": 10,
-                  "json": "{\"side\":0,\"tag\":\"HUN\",\"pos\":[{\"x\":2,\"y\":5},{\"x\":3,\"y\":5},{\"x\":2,\"y\":4},{\"x\":3,\"y\":4}]}"
-                },
-
-                8 - enemy count turns
-                "self": {
-                  "type": 8,
-                  "json": "{\"ope\":0,\"tag\":\"e8a\",\"turn\":4}"
-                },
-
-                15 - unit cast
-                "list": [
-                  {
-                    "self": {
-                      "type": 15,
-                      "json": "{\"side\":1,\"tag\":\"IFRT\",\"skill\":\"SK_IFRT_M_04\",\"vague\":false}"
-                    },
-                    "childs": [
-                      {
-                        "type": 3,
-                        "json": "{\"side\":0,\"tag\":\"BOMB1\"}"
-                      }
-                    ]
-                  }
-                ]
-
-                19 - Number of dead
-                "self": {
-                  "type": 19,
-                  "json": "{\"side\":1,\"count\":2}"
-                */
               })
             }
 
@@ -2687,7 +2621,64 @@ export class JsonService {
             });
           }
 
-          mapData[folder.split('/')[2]][mapName]['arena'] = arena;
+          mapData[folder.split('/')[2]][mapName].arena = arena;
+        }
+
+        if (rawData['wcond']) {
+          mapData[folder.split('/')[2]][mapName].winCond = [];
+
+          rawData['wcond'].list.forEach(li =>{
+            if (!this.enemyEntryCond[String(li.self.type)] && mapName.split('_')[0] !== 'debug') {
+              console.log("Win cond not known (" + li.self.type + "): " + mapName);
+            }
+
+            const winCond = [{
+              type: this.enemyEntryCond[String(li.self.type)],
+              value: li.self.json
+            }];
+
+            li.childs.forEach(child => {
+              if (!this.enemyEntryCond[String(child.type)] && mapName.split('_')[0] !== 'debug') {
+                console.log("Child Enemy entry cond not known (" + child.type + "): " + mapName);
+              }
+
+              winCond.push({
+                type: this.enemyEntryCond[String(child.type)],
+                value: child.json
+              });
+            });
+
+            mapData[folder.split('/')[2]][mapName].winCond.push(winCond);
+          });
+        }
+
+        if (rawData['lcond']) {
+          mapData[folder.split('/')[2]][mapName].looseCond = [];
+
+          rawData['lcond'].list.forEach(li =>{
+            if (!this.enemyEntryCond[String(li.self.type)] && mapName.split('_')[0] !== 'debug') {
+              console.log("Win cond not known (" + li.self.type + "): " + mapName);
+            }
+
+            const looseCond = [{
+              type: this.enemyEntryCond[String(li.self.type)],
+              value: li.self.json
+            }];
+
+            li.childs.forEach(child => {
+              if (!this.enemyEntryCond[String(child.type)] && mapName.split('_')[0] !== 'debug') {
+                console.log("Child Enemy entry cond not known (" + child.type + "): " + mapName);
+              }
+
+              looseCond.push({
+                type: this.enemyEntryCond[String(child.type)],
+                value: child.json
+              });
+            });
+
+            mapData[folder.split('/')[2]][mapName].looseCond.push(looseCond);
+          });
+
         }
       }
     }
@@ -5653,7 +5644,31 @@ export class JsonService {
         });
       }
 
-      // @TODO ADD ENTRY CONDITION !!!
+      if (map.winCond) {
+        map.winCond.forEach(entry => {
+          entry.forEach(condition => {
+            if (condition.value) {
+              condition.condition = JSON.parse(condition.value);
+              delete condition.value;
+            }
+          });
+        });
+
+        quest.winCond = map.winCond;
+      }
+
+      if (map.looseCond) {
+        map.looseCond.forEach(entry => {
+          entry.forEach(condition => {
+            if (condition.value) {
+              condition.condition = JSON.parse(condition.value);
+              delete condition.value;
+            }
+          });
+        });
+
+        quest.looseCond = map.looseCond;
+      }
 
       if (map.enemy) {
         for (const enemy of map.enemy) {
