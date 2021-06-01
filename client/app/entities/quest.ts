@@ -28,6 +28,9 @@ export class Quest {
 
   drops = [];
 
+  winCond = [];
+  looseCond = [];
+
   constructFromJson(quest, translateService) {
     this.dataId = quest.dataId;
     this.names = quest.names;
@@ -52,6 +55,8 @@ export class Quest {
     this.grid = quest.grid;
 
     this.drops = quest.drops;
+    this.winCond = quest.winCond;
+    this.looseCond = quest.looseCond;
   }
 
   getName(translateService): string {

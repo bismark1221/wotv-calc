@@ -381,7 +381,7 @@
         </tr>
         <tr [ngbCollapse]="isCollapsedChest[j]">
           <td colspan="99" class="enemyDetailCol">
-            <div *ngIf="quest.chests[j].drop && quest.dropLists[quest.chests[j].drop]">
+            <div *ngIf="quest.chests && quest.chests[j].drop && quest.dropLists && quest.dropLists[quest.chests[j].drop]">
               <div *ngFor="let item of quest.dropLists[quest.chests[j].drop]" class="dropRateItemBlock">
                 <app-template-item [item]="item" [customClass]="itemClassListQuest"></app-template-item>
                 <div>

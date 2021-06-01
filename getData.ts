@@ -1263,15 +1263,15 @@ export class JsonService {
   ];
 
   private enemyEntryCond = {
-    1: 'oneDead',
-    2: 'allDeadExpectTag',
-    3: 'allDead',
-    4: 'alive',
-    7: 'statCond',
-    8: 'turnCount',
-    10: 'position',
-    15: 'cast',
-    19: 'countDead'
+    1: 'ONEDEAD',
+    2: 'ALLDEADEXPECTTAG',
+    3: 'ALLDEAD',
+    4: 'ALIVE',
+    7: 'STATCOND',
+    8: 'TURNCOUNT',
+    10: 'POSITION',
+    15: 'CAST',
+    19: 'COUNTDEAD'
   };
 
   fs = require('fs').promises;
@@ -4258,9 +4258,9 @@ export class JsonService {
 
       skill.effects.push({
         type: type,
-        minValue: dataSkill.barrier.scut,
-        maxValue: dataSkill.barrier.ecut,
-        calcType: 'percent',
+        minValue: dataSkill.barrier.scut ? dataSkill.barrier.scut : dataSkill.barrier.slife,
+        maxValue: dataSkill.barrier.ecut ? dataSkill.barrier.ecut : dataSkill.barrier.elife,
+        calcType: dataSkill.barrier.elife ? 'hp' : 'percent',
         turn: dataSkill.barrier.val,
         turnType: dataSkill.barrier.type !== 3 ? 'TURNS' : 'COUNT',
         target: this.targetTypes[dataSkill.target],

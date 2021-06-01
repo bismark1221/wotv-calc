@@ -433,4 +433,102 @@ export class QuestService {
 
     return html;
   }
+
+  async formatCondition(condition, quest) {
+    let html = '';
+    let countCond = 0;
+
+    for (const cond of condition) {
+      if (countCond > 0) {
+        html += ' and ';
+      }
+
+      switch (cond.type) {
+        case 'ONEDEAD' :
+          if (cond.condition.tag === '') {
+            if (cond.condition.side === 1) {
+              html += 'All enemies annihilated';
+            } else {
+              html += 'All allies annihilated';
+            }
+          } else {
+            html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+          }
+        break;
+
+        case 'ALLDEADEXPECTTAG' :
+          if (cond.condition.side === 1) {
+            html += 'All enemies annihilated expect ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest));
+          } else {
+            html += 'All allies annihilated expect ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest));
+          }
+        break;
+
+        case 'ALLDEAD' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+        break;
+
+        case 'STATCOND' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' HP under ' + cond.condition.hp + '%';
+        break;
+
+        case 'TURNCOUNT' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' played more than ' + cond.condition.turn + ' turns';
+        break;
+
+        case 'POSITION' :
+          if (cond.condition.side === 1) {
+            html += 'Enemy manage to go to ';
+          } else {
+            html += 'An ally manage to go to ';
+          }
+
+          const positions = [];
+          for (const pos of cond.condition.pos) {
+            positions.push('(' + (pos.x + 1) + ', ' + (pos.y + 1) + ')');
+          }
+          html += positions.join(' or ');
+        break;
+
+        /*case 'SPECIFIC_UNIT_NOT_DEAD' :
+          unit = await this.unitService.getUnit(mission.value);
+          if (!unit) {
+            unit = await this.otherUnitService.getUnit(mission.value);
+          }
+          html = (unit ? unit.getName(this.translateService) : '???') + ' must survive the mission';
+        break;*/
+        default :
+          console.log('Condition not managed ' + cond.type);
+        break;
+      }
+
+      countCond++;
+    }
+
+    return html;
+  }
+
+  async getNameOfEnemy(unitId) {
+    let unit = await this.unitService.getUnit(unitId);
+    if (!unit) {
+      unit = await this.otherUnitService.getUnit(unitId);
+    }
+
+    return unit ? unit.getName(this.translateService) : '???';
+  }
+
+  getUnitIdFromTag(tag, quest) {
+    const tagTables = ['enemies', 'allies', 'objects', 'chests', 'switchs'];
+    for (const tagTable of tagTables) {
+      if (quest[tagTable]) {
+        for (const enemy of quest[tagTable]) {
+          if (enemy.tag === tag) {
+            return enemy.dataId;
+          }
+        }
+      }
+    }
+
+    return null;
+  }
 }
