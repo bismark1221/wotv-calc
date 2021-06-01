@@ -145,19 +145,21 @@ export class QuestComponent implements OnInit {
         i++;
       }
 
-      this.quest.formattedWinCond = [];
+      const formattedWinCond = [];
       if (this.quest.winCond) {
         for (const winCond of this.quest.winCond) {
-          this.quest.formattedWinCond.push(await this.questService.formatCondition(winCond, this.quest));
+          formattedWinCond.push(await this.questService.formatCondition(winCond, this.quest));
         }
       }
+      this.quest.formattedWinCond = formattedWinCond.join(' or ');
 
-      this.quest.formattedLooseCond = [];
+      const formattedLooseCond = [];
       if (this.quest.looseCond) {
         for (const looseCond of this.quest.looseCond) {
-          this.quest.formattedLooseCond.push(await this.questService.formatCondition(looseCond, this.quest));
+          formattedLooseCond.push(await this.questService.formatCondition(looseCond, this.quest));
         }
       }
+      this.quest.formattedLooseCond = formattedLooseCond.join(' or ');
 
       this.quest.formattedBuffs = [];
       this.quest.buffs.forEach(effect => {

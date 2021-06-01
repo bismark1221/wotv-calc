@@ -1,36 +1,52 @@
 <div class="row" *ngIf="quest">
   <div class="leftBlock">
     <table class="questTable">
-      <tbody>
+      <tr>
+        <th colspan="3">{{ quest.name }}</th>
+      </tr>
+      <tr>
+        <th class="sub">NRG</th>
+        <th class="sub">XP</th>
+        <th class="sub">JP</th>
+      </tr>
+      <tr>
+        <td>{{ quest.nrg }}</td>
+        <td>{{ quest.exp }}</td>
+        <td>{{ quest.jp }}</td>
+      </tr>
+      <tr>
+        <th class="sub">Gils</th>
+        <th class="sub">Enemies</th>
+        <th class="sub">Chests</th>
+      </tr>
+      <tr>
+        <td>{{ quest.gils }}</td>
+        <td>{{ quest.enemies.length }}</td>
+        <td>{{ quest.chests.length }}</td>
+      </tr>
+      <tr>
+        <th colspan="3" class="sub">Type</th>
+      </tr>
+      <tr>
+        <td colspan="3">{{ formatType(quest.type) }}</td>
+      </tr>
+      <tbody *ngIf="quest.formattedWinCond">
         <tr>
-          <th colspan="3">{{ quest.name }}</th>
+          <th colspan="3" class="sub">Win conditions</th>
         </tr>
         <tr>
-          <th class="sub">NRG</th>
-          <th class="sub">XP</th>
-          <th class="sub">JP</th>
+          <td colspan="3">{{ quest.formattedWinCond }}</td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="quest.formattedLooseCond">
+        <tr>
+          <th colspan="3" class="sub">Loose conditions</th>
         </tr>
         <tr>
-          <td>{{ quest.nrg }}</td>
-          <td>{{ quest.exp }}</td>
-          <td>{{ quest.jp }}</td>
+          <td colspan="3">{{ quest.formattedLooseCond }}</td>
         </tr>
-        <tr>
-          <th class="sub">Gils</th>
-          <th class="sub">Enemies</th>
-          <th class="sub">Chests</th>
-        </tr>
-        <tr>
-          <td>{{ quest.gils }}</td>
-          <td>{{ quest.enemies.length }}</td>
-          <td>{{ quest.chests.length }}</td>
-        </tr>
-        <tr>
-          <th colspan="3" class="sub">Type</th>
-        </tr>
-        <tr>
-          <td colspan="3">{{ formatType(quest.type) }}</td>
-        </tr>
+      </tbody>
+      <tbody *ngIf="quest.formattedBuffs && quest.formattedBuffs.length > 0">
         <tr>
           <th colspan="3" class="sub">Effects</th>
         </tr>
