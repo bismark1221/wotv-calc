@@ -2,12 +2,7 @@
   "units": [
     {
       "names": {
-        "en": "Mont Leonis",
-        "fr": "Mont Leonis",
-        "de": "Mont Leonis",
-        "es": "Mont Leonis",
-        "ko": "몬트 레오니스",
-        "zh": "蒙特·雷歐尼斯"
+        "en": "モント・リオニス - Mont Leonis"
       },
       "stats": {
         "HP": 4250,
@@ -42,12 +37,7 @@
     },
     {
       "names": {
-        "en": "Sterne Leonis",
-        "fr": "Sterne Leonis",
-        "de": "Styr Leonis",
-        "es": "Stern Leonis",
-        "ko": "슈텔 레오니스",
-        "zh": "斯特恩·雷歐尼斯"
+        "en": "シュテル・リオニス - Sterne Leonis"
       },
       "stats": {
         "HP": 2394,
@@ -80,12 +70,7 @@
     },
     {
       "names": {
-        "en": "Oelde Leonis",
-        "fr": "Eldo Leonis",
-        "de": "Yrde Leonis",
-        "es": "Elde Leonis",
-        "ko": "엘데 레오니스",
-        "zh": "奧爾德·雷歐尼斯"
+        "en": "エルデ・リオニス - Oelde Leonis"
       },
       "stats": {
         "HP": 3512,
@@ -116,12 +101,7 @@
     },
     {
       "names": {
-        "en": "Robb Hourne",
-        "fr": "Rob Hourne",
-        "de": "Robb Hourne",
-        "es": "Rob Hourne",
-        "ko": "롭 호른",
-        "zh": "羅布·霍倫"
+        "en": "ロブ・ホルン - Robb Hourne"
       },
       "stats": {
         "HP": 2612,
@@ -153,24 +133,19 @@
     },
     {
       "names": {
-        "en": "Engelbert",
-        "fr": "Engelbert",
-        "de": "Engelbert",
-        "es": "Engelberto",
-        "ko": "엥겔베르트",
-        "zh": "恩格爾伯特"
+        "en": "エンゲルベルト - Engelbert"
       },
       "stats": {
-        "HP": 3768,
-        "TP": 121,
-        "AP": 115,
-        "ATK": 246,
+        "HP": 5805,
+        "TP": 128,
+        "AP": 121,
+        "ATK": 375,
         "DEF": 27,
         "SPR": 0,
-        "MAG": 62,
-        "DEX": 161,
-        "AGI": 48,
-        "LUCK": 245,
+        "MAG": 82,
+        "DEX": 229,
+        "AGI": 54,
+        "LUCK": 264,
         "DARK_RES": -10,
         "SLASH_RES": 20,
         "PIERCE_RES": 5,
@@ -182,19 +157,16 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 20,
-        "CRITIC_RATE": 20
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsenbt"
     },
     {
       "names": {
-        "en": "Xiza",
-        "fr": "Xiza",
-        "de": "Xiza",
-        "es": "Yiza",
-        "ko": "지자",
-        "zh": "希紮"
+        "en": "ジザ - Xiza"
       },
       "stats": {
         "HP": 2628,
@@ -228,12 +200,7 @@
     },
     {
       "names": {
-        "en": "Aileen",
-        "fr": "Aileen",
-        "de": "Aileen",
-        "es": "Aileen",
-        "ko": "아이린",
-        "zh": "艾琳"
+        "en": "アイリーン - Aileen"
       },
       "stats": {
         "HP": 3289,
@@ -266,12 +233,7 @@
     },
     {
       "names": {
-        "en": "Mediena",
-        "fr": "Mediena",
-        "de": "Mediena",
-        "es": "Mediena",
-        "ko": "메디아나",
-        "zh": "美迪愛娜"
+        "en": "メディエナ - Mediena"
       },
       "stats": {
         "HP": 2483,
@@ -304,12 +266,7 @@
     },
     {
       "names": {
-        "en": "Ayaka",
-        "fr": "Ayaka",
-        "de": "Ayaka",
-        "es": "Ayaka",
-        "ko": "아야카",
-        "zh": "彩花"
+        "en": "アヤカ - Ayaka"
       },
       "stats": {
         "HP": 2852,
@@ -342,24 +299,19 @@
     },
     {
       "names": {
-        "en": "Machérie Hourne",
-        "fr": "Machalie Hourne",
-        "de": "Margery Hourne",
-        "es": "Machérie Hourne",
-        "ko": "마쉐리 호른",
-        "zh": "瑪雪莉·霍倫"
+        "en": "マシュリー・ホルン - Machérie Hourne"
       },
       "stats": {
-        "HP": 2111,
-        "TP": 184,
-        "AP": 158,
-        "ATK": 143,
+        "HP": 3185,
+        "TP": 194,
+        "AP": 167,
+        "ATK": 334,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 272,
-        "DEX": 174,
-        "AGI": 58,
-        "LUCK": 152,
+        "MAG": 449,
+        "DEX": 205,
+        "AGI": 66,
+        "LUCK": 194,
         "DARK_RES": -10,
         "SLASH_RES": -10,
         "PIERCE_RES": -10,
@@ -371,31 +323,28 @@
         "CHARM_RES": 15,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 122,
-        "CRITIC_RATE": 13
+        "INITIAL_AP": 129,
+        "CRITIC_RATE": 13,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsmacr"
     },
     {
       "names": {
-        "en": "Helena Leonis",
-        "fr": "Helena Leonis",
-        "de": "Helena Leonis",
-        "es": "Helena Leonis",
-        "ko": "헬레나 레오니스",
-        "zh": "海蓮娜·雷歐尼斯"
+        "en": "ヘレナ・リオニス - Helena Leonis"
       },
       "stats": {
-        "HP": 1359,
-        "TP": 171,
-        "AP": 141,
-        "ATK": 58,
+        "HP": 2580,
+        "TP": 215,
+        "AP": 148,
+        "ATK": 107,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 393,
-        "DEX": 122,
+        "MAG": 606,
+        "DEX": 166,
         "AGI": 62,
-        "LUCK": 171,
+        "LUCK": 192,
         "ICE_RES": -15,
         "EARTH_RES": 15,
         "SLASH_RES": -10,
@@ -409,18 +358,15 @@
         "CHARM_RES": 15,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 109
+        "INITIAL_AP": 119,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapshlna"
     },
     {
       "names": {
-        "en": "Lilyth",
-        "fr": "Lilyth",
-        "de": "Lilith",
-        "es": "Lilit",
-        "ko": "릴리스",
-        "zh": "莉莉絲"
+        "en": "リリシュ - Lilyth"
       },
       "stats": {
         "HP": 2350,
@@ -452,24 +398,19 @@
     },
     {
       "names": {
-        "en": "Ramada",
-        "fr": "Ramada",
-        "de": "Lhamada",
-        "es": "Ramada",
-        "ko": "라마다",
-        "zh": "拉瑪達"
+        "en": "ラマダ - Ramada"
       },
       "stats": {
-        "HP": 1872,
-        "TP": 140,
-        "AP": 91,
-        "ATK": 171,
+        "HP": 3536,
+        "TP": 146,
+        "AP": 96,
+        "ATK": 388,
         "DEF": 0,
         "SPR": 6,
-        "MAG": 88,
-        "DEX": 193,
+        "MAG": 142,
+        "DEX": 252,
         "AGI": 58,
-        "LUCK": 196,
+        "LUCK": 228,
         "FIRE_RES": 15,
         "LIGHTNING_RES": -15,
         "SLASH_RES": 15,
@@ -481,21 +422,18 @@
         "DOOM_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 16,
+        "INITIAL_AP": 17,
         "CRITIC_RATE": 9,
         "FENNES_KILLER": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "PIERCE_ATK": 20
       },
       "image": "lapsramd"
     },
     {
       "names": {
-        "en": "Owe",
-        "fr": "Owe",
-        "de": "Ornh",
-        "es": "Owe",
-        "ko": "오우",
-        "zh": "歐"
+        "en": "オー - Owe"
       },
       "stats": {
         "HP": 2516,
@@ -528,12 +466,7 @@
     },
     {
       "names": {
-        "en": "Lorenzo",
-        "fr": "Lorenzo",
-        "de": "Lorenzo",
-        "es": "Lorenzo",
-        "ko": "로렌초",
-        "zh": "羅倫佐"
+        "en": "ロレンツォ - Lorenzo"
       },
       "stats": {
         "HP": 2347,
@@ -564,12 +497,7 @@
     },
     {
       "names": {
-        "en": "Rairyuu",
-        "fr": "Rairyuu",
-        "de": "Rairyu",
-        "es": "Lairyu",
-        "ko": "라이류",
-        "zh": "雷尤"
+        "en": "ライリュウ - Rairyuu"
       },
       "stats": {
         "HP": 1410,
@@ -601,24 +529,19 @@
     },
     {
       "names": {
-        "en": "Vistralle",
-        "fr": "Vistral",
-        "de": "Vystraal",
-        "es": "Vistral",
-        "ko": "비스트랄",
-        "zh": "維斯特拉爾"
+        "en": "ヴィストラール - Vistralle"
       },
       "stats": {
-        "HP": 1174,
-        "TP": 108,
-        "AP": 94,
-        "ATK": 223,
+        "HP": 2536,
+        "TP": 113,
+        "AP": 98,
+        "ATK": 404,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 101,
-        "DEX": 206,
-        "AGI": 53,
-        "LUCK": 195,
+        "MAG": 154,
+        "DEX": 247,
+        "AGI": 57,
+        "LUCK": 240,
         "DARK_RES": -15,
         "SLASH_RES": 10,
         "PIERCE_RES": -5,
@@ -631,32 +554,29 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 3,
-        "INITIAL_AP": 18,
-        "CRITIC_RATE": 20,
+        "INITIAL_AP": 19,
+        "CRITIC_RATE": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapsvstr"
     },
     {
       "names": {
-        "en": "Khury Wezette",
-        "fr": "Khory Wezett",
-        "de": "Khuri Wezette",
-        "es": "Kuri Wezette",
-        "ko": "크리 웨젯",
-        "zh": "庫利·維澤特"
+        "en": "クーリ・ウェズエット - Khury Wezette"
       },
       "stats": {
-        "HP": 1442,
-        "TP": 121,
-        "AP": 111,
-        "ATK": 183,
+        "HP": 2194,
+        "TP": 126,
+        "AP": 117,
+        "ATK": 401,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 79,
-        "DEX": 207,
+        "MAG": 139,
+        "DEX": 263,
         "AGI": 48,
-        "LUCK": 203,
+        "LUCK": 236,
         "FIRE_RES": -15,
         "WIND_RES": 15,
         "SLASH_RES": -15,
@@ -669,21 +589,18 @@
         "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 35,
-        "CRITIC_RATE": 5,
+        "INITIAL_AP": 37,
+        "CRITIC_RATE": 12,
         "RANGE": 1,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "ACQUIRED_AP": 30
       },
       "image": "lapscley"
     },
     {
       "names": {
-        "en": "Cadia",
-        "fr": "Cadia",
-        "de": "Cadia",
-        "es": "Cadia",
-        "ko": "카디아",
-        "zh": "卡迪婭"
+        "en": "カディア - Cadia"
       },
       "stats": {
         "HP": 1804,
@@ -715,24 +632,19 @@
     },
     {
       "names": {
-        "en": "Meriluke",
-        "fr": "Marie-Luke",
-        "de": "Meriluuk",
-        "es": "Meriluke",
-        "ko": "메릴루크",
-        "zh": "梅麗露可"
+        "en": "メリルーク - Meriluke"
       },
       "stats": {
-        "HP": 1980,
-        "TP": 113,
-        "AP": 104,
-        "ATK": 268,
+        "HP": 2982,
+        "TP": 118,
+        "AP": 109,
+        "ATK": 479,
         "DEF": 6,
         "SPR": 0,
-        "MAG": 66,
-        "DEX": 158,
-        "AGI": 57,
-        "LUCK": 185,
+        "MAG": 115,
+        "DEX": 239,
+        "AGI": 61,
+        "LUCK": 208,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "SLASH_RES": -5,
@@ -745,20 +657,17 @@
         "BERSERK_RES": 50,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 24,
-        "CRITIC_RATE": 5,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "CRITIC_DAMAGE": 40
       },
       "image": "lapsmrlk"
     },
     {
       "names": {
-        "en": "Margritte",
-        "fr": "Margritte",
-        "de": "Margarete",
-        "es": "Margritte",
-        "ko": "마르그리트",
-        "zh": "瑪爾格麗特"
+        "en": "マルグリット - Margritte"
       },
       "stats": {
         "HP": 1335,
@@ -791,12 +700,7 @@
     },
     {
       "names": {
-        "en": "\"Grace\"",
-        "fr": "« Grâce »",
-        "de": "„Grazie“",
-        "es": "Gracia",
-        "ko": " '기도'",
-        "zh": "《祈禱》"
+        "en": "≪祈り≫ - \"Grace\""
       },
       "stats": {
         "HP": 1121,
@@ -834,24 +738,19 @@
     },
     {
       "names": {
-        "en": "Schuzelt",
-        "fr": "Schuzelt",
-        "de": "Schuzelt",
-        "es": "Schuzelt",
-        "ko": "슈제르트",
-        "zh": "舒澤爾特"
+        "en": "シュゼルト - Schuzelt"
       },
       "stats": {
-        "HP": 1509,
-        "TP": 108,
-        "AP": 100,
-        "ATK": 273,
+        "HP": 2626,
+        "TP": 113,
+        "AP": 125,
+        "ATK": 439,
         "DEF": 6,
         "SPR": 0,
-        "MAG": 60,
-        "DEX": 189,
-        "AGI": 50,
-        "LUCK": 220,
+        "MAG": 111,
+        "DEX": 246,
+        "AGI": 55,
+        "LUCK": 228,
         "EARTH_RES": -15,
         "WATER_RES": 15,
         "PIERCE_RES": -10,
@@ -863,31 +762,28 @@
         "DOOM_RES": -25,
         "MOVE": 4,
         "JUMP": 1,
-        "INITIAL_AP": 18,
-        "CRITIC_RATE": 47
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 50,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsszrt"
     },
     {
       "names": {
-        "en": "Fina",
-        "fr": "Fina",
-        "de": "Fina",
-        "es": "Fina",
-        "ko": "피나",
-        "zh": "菲娜"
+        "en": "フィーナ - Fina"
       },
       "stats": {
-        "HP": 1466,
-        "TP": 145,
-        "AP": 156,
-        "ATK": 98,
+        "HP": 2319,
+        "TP": 157,
+        "AP": 164,
+        "ATK": 305,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 202,
-        "DEX": 154,
-        "AGI": 62,
-        "LUCK": 133,
+        "MAG": 479,
+        "DEX": 233,
+        "AGI": 64,
+        "LUCK": 180,
         "DARK_RES": -15,
         "SLASH_RES": -10,
         "PIERCE_RES": -10,
@@ -900,18 +796,15 @@
         "STOP_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 69
+        "INITIAL_AP": 74,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsfina"
     },
     {
       "names": {
-        "en": "Baelo",
-        "fr": "Beilo",
-        "de": "Baelo",
-        "es": "Beilo",
-        "ko": "베일로",
-        "zh": "巴埃羅"
+        "en": "ベイロ - Baelo"
       },
       "stats": {
         "HP": 3635,
@@ -942,24 +835,19 @@
     },
     {
       "names": {
-        "en": "Little Leela",
-        "fr": "Lillyla",
-        "de": "Lilli",
-        "es": "Lili",
-        "ko": "리렐리라",
-        "zh": "莉蕾露莉拉"
+        "en": "リレルリラ - Little Leela"
       },
       "stats": {
-        "HP": 1849,
-        "TP": 114,
-        "AP": 84,
-        "ATK": 72,
+        "HP": 3515,
+        "TP": 123,
+        "AP": 107,
+        "ATK": 183,
         "DEF": 6,
-        "SPR": 0,
-        "MAG": 210,
-        "DEX": 138,
-        "AGI": 42,
-        "LUCK": 176,
+        "SPR": 4,
+        "MAG": 460,
+        "DEX": 227,
+        "AGI": 47,
+        "LUCK": 220,
         "LIGHT_RES": -20,
         "SLASH_RES": -15,
         "PIERCE_RES": -20,
@@ -972,19 +860,16 @@
         "CHARM_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17,
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "LIGHT_KILLER": 25
       },
       "image": "lapsryer"
     },
     {
       "names": {
-        "en": "Sosha",
-        "fr": "Sosha",
-        "de": "Sosha",
-        "es": "Sosha",
-        "ko": "소샤",
-        "zh": "索莎"
+        "en": "ソシア - Sosha"
       },
       "stats": {
         "HP": 1522,
@@ -1016,12 +901,7 @@
     },
     {
       "names": {
-        "en": "Vallaide",
-        "fr": "Valaïde",
-        "de": "Vallaid",
-        "es": "Valaido",
-        "ko": "발라이드",
-        "zh": "瓦爾萊德"
+        "en": "ヴァライド - Vallaide"
       },
       "stats": {
         "HP": 1122,
@@ -1052,12 +932,7 @@
     },
     {
       "names": {
-        "en": "Naiah",
-        "fr": "Naiah",
-        "de": "Naiah",
-        "es": "Naia",
-        "ko": "나이아",
-        "zh": "奈雅"
+        "en": "ナイア - Naiah"
       },
       "stats": {
         "HP": 1079,
@@ -1083,30 +958,26 @@
         "MOVE": 4,
         "JUMP": 1,
         "INITIAL_AP": 87,
-        "NON_ATTACK_ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250,
+        "ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapsnaia"
     },
     {
       "names": {
-        "en": "Serjes",
-        "fr": "Serjes",
-        "de": "Sarjes",
-        "es": "Serjes",
-        "ko": "서제스",
-        "zh": "塞爾杰斯"
+        "en": "サージェス - Serjes"
       },
       "stats": {
-        "HP": 1660,
-        "TP": 90,
-        "AP": 86,
-        "ATK": 163,
-        "DEF": 6,
+        "HP": 3586,
+        "TP": 96,
+        "AP": 90,
+        "ATK": 424,
+        "DEF": 8,
         "SPR": 0,
-        "MAG": 83,
-        "DEX": 166,
+        "MAG": 147,
+        "DEX": 251,
         "AGI": 59,
-        "LUCK": 158,
+        "LUCK": 209,
         "FIRE_RES": -20,
         "SLASH_RES": 5,
         "STRIKE_RES": -30,
@@ -1116,30 +987,27 @@
         "STOP_RES": -35,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 15
+        "INITIAL_AP": 16,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapssrjs"
     },
     {
       "names": {
-        "en": "Yuni",
-        "fr": "Yuni",
-        "de": "Yuni",
-        "es": "Yuni",
-        "ko": "유니",
-        "zh": "悠妮"
+        "en": "ユニ - Yuni"
       },
       "stats": {
-        "HP": 1762,
-        "TP": 102,
-        "AP": 86,
-        "ATK": 91,
+        "HP": 2847,
+        "TP": 107,
+        "AP": 90,
+        "ATK": 367,
         "DEF": 0,
         "SPR": 8,
-        "MAG": 102,
-        "DEX": 268,
-        "AGI": 42,
-        "LUCK": 169,
+        "MAG": 188,
+        "DEX": 326,
+        "AGI": 46,
+        "LUCK": 196,
         "FIRE_RES": 10,
         "LIGHTNING_RES": -20,
         "SLASH_RES": -20,
@@ -1150,8 +1018,10 @@
         "SLOW_RES": -25,
         "MOVE": 3,
         "JUMP": 2,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 22,
         "CRITIC_RATE": 4,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "STRIKE_RES": 10,
         "MISSILE_RES": 10
       },
@@ -1159,24 +1029,19 @@
     },
     {
       "names": {
-        "en": "Severo",
-        "fr": "Sévéro",
-        "de": "Severo",
-        "es": "Severo",
-        "ko": "세베로",
-        "zh": "塞維羅"
+        "en": "セヴェロ - Severo"
       },
       "stats": {
-        "HP": 1157,
-        "TP": 113,
-        "AP": 98,
-        "ATK": 65,
+        "HP": 2090,
+        "TP": 120,
+        "AP": 122,
+        "ATK": 148,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 202,
-        "DEX": 184,
+        "MAG": 450,
+        "DEX": 250,
         "AGI": 40,
-        "LUCK": 157,
+        "LUCK": 184,
         "FIRE_RES": 10,
         "LIGHTNING_RES": -20,
         "SLASH_RES": -10,
@@ -1187,32 +1052,29 @@
         "PARALYZE_RES": -25,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 81,
+        "INITIAL_AP": 103,
         "CRITIC_RATE": 22,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "MAGIC_RES": 25
       },
       "image": "lapssevr"
     },
     {
       "names": {
-        "en": "Vadim",
-        "fr": "Vadim",
-        "de": "Vadim",
-        "es": "Vadim",
-        "ko": "바짐",
-        "zh": "瓦迪姆"
+        "en": "ヴァジム - Vadim"
       },
       "stats": {
-        "HP": 1430,
-        "TP": 72,
-        "AP": 81,
-        "ATK": 233,
+        "HP": 2833,
+        "TP": 101,
+        "AP": 85,
+        "ATK": 488,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 44,
-        "DEX": 207,
-        "AGI": 53,
-        "LUCK": 177,
+        "MAG": 108,
+        "DEX": 262,
+        "AGI": 55,
+        "LUCK": 224,
         "EARTH_RES": -20,
         "WATER_RES": 10,
         "SLASH_RES": -10,
@@ -1225,19 +1087,16 @@
         "MOVE": 3,
         "JUMP": 3,
         "INITIAL_AP": 12,
-        "CRITIC_RATE": 11,
+        "CRITIC_RATE": 14,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapsvadm"
     },
     {
       "names": {
-        "en": "\"Murmur\"",
-        "fr": "« Murmure »",
-        "de": "„Murmeln“",
-        "es": "Murmullo",
-        "ko": " '혼잣말'",
-        "zh": "《低語》"
+        "en": "≪呟き≫ - \"Murmur\""
       },
       "stats": {
         "HP": 1816,
@@ -1276,12 +1135,7 @@
     },
     {
       "names": {
-        "en": "Phoebe",
-        "fr": "Phœbe",
-        "de": "Phoebe",
-        "es": "Febe",
-        "ko": "피비",
-        "zh": "菲比"
+        "en": "フィービー - Phoebe"
       },
       "stats": {
         "HP": 2238,
@@ -1313,12 +1167,7 @@
     },
     {
       "names": {
-        "en": "Learte",
-        "fr": "Learte",
-        "de": "Learte",
-        "es": "Learte",
-        "ko": "리아트",
-        "zh": "莉雅特"
+        "en": "リアート - Learte"
       },
       "stats": {
         "HP": 2493,
@@ -1348,24 +1197,19 @@
     },
     {
       "names": {
-        "en": "Miche",
-        "fr": "Michaé",
-        "de": "Myshe",
-        "es": "Miche",
-        "ko": "미체",
-        "zh": "米茄"
+        "en": "ミーチェ - Miche"
       },
       "stats": {
-        "HP": 950,
-        "TP": 83,
-        "AP": 93,
-        "ATK": 84,
+        "HP": 2461,
+        "TP": 87,
+        "AP": 98,
+        "ATK": 162,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 142,
-        "DEX": 196,
-        "AGI": 40,
-        "LUCK": 166,
+        "MAG": 370,
+        "DEX": 260,
+        "AGI": 44,
+        "LUCK": 238,
         "ICE_RES": 5,
         "WATER_RES": -20,
         "SLASH_RES": -25,
@@ -1375,21 +1219,19 @@
         "CHARM_RES": -5,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 64,
+        "INITIAL_AP": 69,
         "CRITIC_RATE": 19,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "NON_ATTACK_ACTIVATION_TIME": -750,
+        "ATTACK_ACTIVATION_TIME": -750,
         "PLANT_KILLER": 50
       },
       "image": "lapsmice"
     },
     {
       "names": {
-        "en": "Mia",
-        "fr": "Mia",
-        "de": "Mia",
-        "es": "Mía",
-        "ko": "미아",
-        "zh": "米婭"
+        "en": "ミーア - Mia"
       },
       "stats": {
         "HP": 1308,
@@ -1417,12 +1259,7 @@
     },
     {
       "names": {
-        "en": "Zazan",
-        "fr": "Zazan",
-        "de": "Zazan",
-        "es": "Zazán",
-        "ko": "자잔",
-        "zh": "扎贊"
+        "en": "ザザン - Zazan"
       },
       "stats": {
         "HP": 3602,
@@ -1449,12 +1286,7 @@
     },
     {
       "names": {
-        "en": "Gilgamesh",
-        "fr": "Gilgamesh",
-        "de": "Gilgamesch",
-        "es": "Gilgamesh",
-        "ko": "길가메시",
-        "zh": "吉爾伽美什"
+        "en": "ギルガメッシュ - Gilgamesh"
       },
       "stats": {
         "HP": 3961,
@@ -1489,12 +1321,7 @@
     },
     {
       "names": {
-        "en": "Y'shtola",
-        "fr": "Y'shtola",
-        "de": "Y’shtola",
-        "es": "Y'shtola",
-        "ko": "야슈톨라",
-        "zh": "雅·修特拉"
+        "en": "ヤ・シュトラ - Y'shtola"
       },
       "stats": {
         "HP": 1080,
@@ -1528,12 +1355,7 @@
     },
     {
       "names": {
-        "en": "Thancred",
-        "fr": "Thancred",
-        "de": "Thancred",
-        "es": "Thancred",
-        "ko": "산크레드",
-        "zh": "桑克瑞德"
+        "en": "サンクレッド - Thancred"
       },
       "stats": {
         "HP": 3672,
@@ -1563,12 +1385,7 @@
     },
     {
       "names": {
-        "en": "Frederika",
-        "fr": "Frederika",
-        "de": "Frederika",
-        "es": "Federica",
-        "ko": "프레데리카",
-        "zh": "弗蕾德麗卡"
+        "en": "フェデリカ - Frederika"
       },
       "stats": {
         "HP": 2514,
@@ -1601,12 +1418,7 @@
     },
     {
       "names": {
-        "en": "Shadowlynx",
-        "fr": "Shadowlynx",
-        "de": "Schattenluchs",
-        "es": "Numbralince",
-        "ko": "섀도링크스",
-        "zh": "影猞猁"
+        "en": "シャドウリンクス - Shadowlynx"
       },
       "stats": {
         "HP": 1449,
@@ -1636,12 +1448,7 @@
     },
     {
       "names": {
-        "en": "Yerma",
-        "fr": "Yelma",
-        "de": "Yerma",
-        "es": "Yelma",
-        "ko": "옐마",
-        "zh": "耶爾瑪"
+        "en": "イェルマ - Yerma"
       },
       "stats": {
         "HP": 3193,
@@ -1675,12 +1482,40 @@
     },
     {
       "names": {
-        "en": "Nasha",
-        "fr": "Nasha",
-        "de": "Nashia",
-        "es": "Nasha",
-        "ko": "나샤",
-        "zh": "納莎"
+        "en": "ラマダ（Xmas） - Ramada (Winter)"
+      },
+      "stats": {
+        "HP": 2607,
+        "TP": 127,
+        "AP": 122,
+        "ATK": 545,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 99,
+        "DEX": 220,
+        "AGI": 63,
+        "LUCK": 271,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 20,
+        "MAGIC_RES": -20,
+        "POISON_RES": 50,
+        "CONFUSION_RES": 10,
+        "CHARM_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "CRITIC_RATE": 38,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
+      },
+      "image": "lapsramd_01"
+    },
+    {
+      "names": {
+        "en": "ナーシア - Nasha"
       },
       "stats": {
         "HP": 5015,
@@ -1714,12 +1549,41 @@
     },
     {
       "names": {
-        "en": "Etre",
-        "fr": "Éthéa",
-        "de": "Etre",
-        "es": "Etra",
-        "ko": "에트와",
-        "zh": "埃特蕾"
+        "en": "マシュリー（Xmas） - Machérie (Winter)"
+      },
+      "stats": {
+        "HP": 3828,
+        "TP": 142,
+        "AP": 133,
+        "ATK": 541,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 242,
+        "AGI": 59,
+        "LUCK": 215,
+        "ICE_RES": 30,
+        "WATER_RES": -10,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 0,
+        "STRIKE_RES": -20,
+        "MISSILE_RES": -20,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "STOP_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
+      },
+      "image": "lapsmacr_01"
+    },
+    {
+      "names": {
+        "en": "エトア - Etre"
       },
       "stats": {
         "HP": 2823,
@@ -1754,12 +1618,7 @@
     },
     {
       "names": {
-        "en": "Ramza",
-        "fr": "Ramza",
-        "de": "Ramza",
-        "es": "Ramza",
-        "ko": "람자",
-        "zh": "拉姆薩"
+        "en": "ラムザ - Ramza"
       },
       "stats": {
         "HP": 2740,
@@ -1789,12 +1648,7 @@
     },
     {
       "names": {
-        "en": "Gaffgarion",
-        "fr": "Gaffgarion",
-        "de": "Gaffgarion",
-        "es": "Gaffgarion",
-        "ko": "가프가리온",
-        "zh": "加夫加利安"
+        "en": "ガフガリオン - Gaffgarion"
       },
       "stats": {
         "HP": 1390,
@@ -1825,12 +1679,7 @@
     },
     {
       "names": {
-        "en": "Orlandeau",
-        "fr": "Orlandeau",
-        "de": "Orlandeau",
-        "es": "Orlandeau",
-        "ko": "오를란두",
-        "zh": "奧爾蘭多"
+        "en": "オルランドゥ - Orlandeau"
       },
       "stats": {
         "HP": 2786,
@@ -1863,24 +1712,19 @@
     },
     {
       "names": {
-        "en": "\"Whisper\"",
-        "fr": "« Chuchote »",
-        "de": "„Wispern“",
-        "es": "Susurro",
-        "ko": " '속삭임'",
-        "zh": "《耳語》"
+        "en": "≪囁き≫ - \"Whisper\""
       },
       "stats": {
-        "HP": 1699,
-        "TP": 139,
-        "AP": 120,
-        "ATK": 283,
+        "HP": 2714,
+        "TP": 146,
+        "AP": 126,
+        "ATK": 409,
         "DEF": 6,
         "SPR": 8,
-        "MAG": 110,
-        "DEX": 185,
-        "AGI": 57,
-        "LUCK": 200,
+        "MAG": 215,
+        "DEX": 230,
+        "AGI": 61,
+        "LUCK": 234,
         "LIGHT_RES": -10,
         "SLASH_RES": 30,
         "PIERCE_RES": 30,
@@ -1892,32 +1736,29 @@
         "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 22,
         "CRITIC_RATE": 12,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "SLASH_ATK": 5
       },
       "image": "lapswhis"
     },
     {
       "names": {
-        "en": "Kitone",
-        "fr": "Kitone",
-        "de": "Kiton",
-        "es": "Kiton",
-        "ko": "키튼",
-        "zh": "基頓"
+        "en": "キトン - Kitone"
       },
       "stats": {
-        "HP": 1975,
-        "TP": 129,
-        "AP": 122,
-        "ATK": 291,
+        "HP": 2988,
+        "TP": 135,
+        "AP": 128,
+        "ATK": 400,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 107,
-        "DEX": 202,
+        "MAG": 134,
+        "DEX": 246,
         "AGI": 69,
-        "LUCK": 211,
+        "LUCK": 267,
         "WIND_RES": -10,
         "LIGHTNING_RES": 20,
         "SLASH_RES": 10,
@@ -1929,20 +1770,17 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 4,
         "JUMP": 3,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 23,
         "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapskton"
     },
     {
       "names": {
-        "en": "Miranda",
-        "fr": "Miranda",
-        "de": "Miranda",
-        "es": "Miranda",
-        "ko": "미란다",
-        "zh": "米蘭達"
+        "en": "ミランダ - Miranda"
       },
       "stats": {
         "HP": 2210,
@@ -1971,24 +1809,19 @@
     },
     {
       "names": {
-        "en": "Dorando",
-        "fr": "Dorando",
-        "de": "Dorando",
-        "es": "Dorand",
-        "ko": "도랜드",
-        "zh": "多蘭多"
+        "en": "ドランド - Dorando"
       },
       "stats": {
-        "HP": 2320,
-        "TP": 105,
-        "AP": 97,
-        "ATK": 285,
-        "DEF": 0,
+        "HP": 4516,
+        "TP": 110,
+        "AP": 103,
+        "ATK": 454,
+        "DEF": 4,
         "SPR": 0,
-        "MAG": 51,
-        "DEX": 203,
-        "AGI": 47,
-        "LUCK": 150,
+        "MAG": 92,
+        "DEX": 251,
+        "AGI": 51,
+        "LUCK": 175,
         "WIND_RES": -15,
         "LIGHTNING_RES": 10,
         "SLASH_RES": -10,
@@ -2002,19 +1835,16 @@
         "DOOM_RES": 10,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17,
-        "CRITIC_RATE": 35
+        "INITIAL_AP": 18,
+        "CRITIC_RATE": 46,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsdrnd"
     },
     {
       "names": {
-        "en": "Lu'Cia",
-        "fr": "Lu'Cia",
-        "de": "Lu'Cia",
-        "es": "Lu'Cía",
-        "ko": "루시아",
-        "zh": "魯·西雅"
+        "en": "ル・シア - Lu'Cia"
       },
       "stats": {
         "HP": 1812,
@@ -2046,12 +1876,7 @@
     },
     {
       "names": {
-        "en": "Adelard",
-        "fr": "Adelard",
-        "de": "Adelard",
-        "es": "Adelardo",
-        "ko": "애들러드",
-        "zh": "阿德拉德"
+        "en": "アドラード - Adelard"
       },
       "stats": {
         "HP": 1632,
@@ -2083,12 +1908,7 @@
     },
     {
       "names": {
-        "en": "Viktora",
-        "fr": "Viktora",
-        "de": "Viktora",
-        "es": "Victra",
-        "ko": "빅토라",
-        "zh": "維克托拉"
+        "en": "ヴィクトラ - Viktora"
       },
       "stats": {
         "HP": 2259,
@@ -2115,18 +1935,14 @@
         "INITIAL_AP": 21,
         "CRITIC_RATE": 14,
         "PIERCE_ATK": 10,
-        "NON_ATTACK_ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsvktr"
     },
     {
       "names": {
-        "en": "Salire",
-        "fr": "Saliah",
-        "de": "Salire",
-        "es": "Saria",
-        "ko": "살리아",
-        "zh": "薩麗雅"
+        "en": "サリア - Salire"
       },
       "stats": {
         "HP": 1564,
@@ -2159,97 +1975,19 @@
     },
     {
       "names": {
-        "en": "Rain",
-        "fr": "Rain",
-        "de": "Rain",
-        "es": "Rain",
-        "ko": "레인",
-        "zh": "雷因"
+        "en": "ヴィネラ・フェネス - Vinera Fennes"
       },
       "stats": {
-        "HP": 5394,
-        "TP": 158,
-        "AP": 141,
-        "ATK": 201,
-        "DEF": 2,
-        "SPR": 23,
-        "MAG": 411,
-        "DEX": 259,
-        "AGI": 57,
-        "LUCK": 212,
-        "ICE_RES": 20,
-        "WATER_RES": -10,
-        "PIERCE_RES": 5,
-        "STRIKE_RES": -30,
-        "MISSILE_RES": 15,
-        "MAGIC_RES": 25,
-        "POISON_RES": 50,
-        "SILENCE_RES": 10,
-        "SLOW_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 72,
-        "INCREASE_UNIT_LEVEL": 0,
-        "MAX_DAMAGE": 2000
-      },
-      "image": "lapsrain"
-    },
-    {
-      "names": {
-        "en": "Fryevia",
-        "fr": "Fryevia",
-        "de": "Fryevia",
-        "es": "Fryevia",
-        "ko": "프레이비아",
-        "zh": "弗雷比亞"
-      },
-      "stats": {
-        "HP": 3320,
-        "TP": 175,
-        "AP": 142,
-        "ATK": 94,
+        "HP": 2977,
+        "TP": 123,
+        "AP": 116,
+        "ATK": 595,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 330,
-        "DEX": 155,
-        "AGI": 54,
-        "LUCK": 200,
-        "FIRE_RES": -10,
-        "WIND_RES": 20,
-        "SLASH_RES": -5,
-        "PIERCE_RES": -5,
-        "STRIKE_RES": -5,
-        "MISSILE_RES": 5,
-        "MAGIC_RES": 25,
-        "PARALYZE_RES": 50,
-        "SLOW_RES": 50,
-        "BERSERK_RES": 10,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 31
-      },
-      "image": "lapsfrva"
-    },
-    {
-      "names": {
-        "en": "Vinera Fennes",
-        "fr": "Vinera Fennes",
-        "de": "Vinera Fennes",
-        "es": "Vinera Fennes",
-        "ko": "비네라 페네스",
-        "zh": "維內拉·芬尼斯"
-      },
-      "stats": {
-        "HP": 2063,
-        "TP": 117,
-        "AP": 110,
-        "ATK": 393,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 67,
-        "DEX": 212,
+        "MAG": 88,
+        "DEX": 251,
         "AGI": 62,
-        "LUCK": 233,
+        "LUCK": 265,
         "LIGHT_RES": -10,
         "SLASH_RES": 15,
         "STRIKE_RES": -10,
@@ -2260,32 +1998,29 @@
         "SLOW_RES": -5,
         "MOVE": 4,
         "JUMP": 2,
-        "INITIAL_AP": 19,
-        "CRITIC_RATE": 10,
+        "INITIAL_AP": 20,
+        "CRITIC_RATE": 13,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 10
       },
       "image": "lapsvnla"
     },
     {
       "names": {
-        "en": "Dario Hourne",
-        "fr": "Dario Hourne",
-        "de": "Dario Hourne",
-        "es": "Darío Hourne",
-        "ko": "다리오 호른",
-        "zh": "達利歐·霍倫"
+        "en": "ダリオ・ホルン - Dario Hourne"
       },
       "stats": {
-        "HP": 2853,
-        "TP": 99,
-        "AP": 97,
-        "ATK": 133,
+        "HP": 4277,
+        "TP": 110,
+        "AP": 101,
+        "ATK": 218,
         "DEF": 14,
-        "SPR": 10,
-        "MAG": 186,
-        "DEX": 164,
+        "SPR": 14,
+        "MAG": 401,
+        "DEX": 220,
         "AGI": 49,
-        "LUCK": 199,
+        "LUCK": 229,
         "ICE_RES": -15,
         "EARTH_RES": 10,
         "SLASH_RES": 10,
@@ -2299,18 +2034,15 @@
         "DOOM_RES": -25,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 17
+        "INITIAL_AP": 18,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "lapsdrio"
     },
     {
       "names": {
-        "en": "Tyrrell",
-        "fr": "Tyrrell",
-        "de": "Tyrrel",
-        "es": "Tyrell",
-        "ko": "티렐",
-        "zh": "泰瑞爾"
+        "en": "ティレル - Tyrrell"
       },
       "stats": {
         "HP": 2045,
@@ -2342,24 +2074,51 @@
     },
     {
       "names": {
-        "en": "Warrior of Light",
-        "fr": "Guerrier de la lumière",
-        "de": "Krieger des Lichts",
-        "es": "Guerrero de la Luz",
-        "ko": "빛의 전사",
-        "zh": "光之戰士"
+        "en": "レイン - Rain"
       },
       "stats": {
-        "HP": 3424,
-        "TP": 135,
-        "AP": 115,
-        "ATK": 314,
-        "DEF": 13,
+        "HP": 5394,
+        "TP": 158,
+        "AP": 141,
+        "ATK": 201,
+        "DEF": 2,
+        "SPR": 23,
+        "MAG": 411,
+        "DEX": 259,
+        "AGI": 57,
+        "LUCK": 212,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": -30,
+        "MISSILE_RES": 15,
+        "MAGIC_RES": 25,
+        "POISON_RES": 50,
+        "SILENCE_RES": 10,
+        "SLOW_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 72,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
+      },
+      "image": "lapsrain"
+    },
+    {
+      "names": {
+        "en": "光の戦士 - Warrior of Light"
+      },
+      "stats": {
+        "HP": 5226,
+        "TP": 142,
+        "AP": 121,
+        "ATK": 437,
+        "DEF": 17,
         "SPR": 6,
-        "MAG": 91,
-        "DEX": 161,
-        "AGI": 52,
-        "LUCK": 223,
+        "MAG": 122,
+        "DEX": 223,
+        "AGI": 56,
+        "LUCK": 256,
         "DARK_RES": -10,
         "SLASH_RES": 25,
         "PIERCE_RES": -20,
@@ -2371,18 +2130,15 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 20
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000
       },
       "image": "ff01wrol"
     },
     {
       "names": {
-        "en": "Kilphe",
-        "fr": "Kilphe",
-        "de": "Kilphe",
-        "es": "Kilfe",
-        "ko": "키르페",
-        "zh": "基爾菲"
+        "en": "キルフェ - Kilphe"
       },
       "stats": {
         "HP": 2658,
@@ -2408,18 +2164,14 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 73,
-        "NON_ATTACK_ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsqilf"
     },
     {
       "names": {
-        "en": "Seymore",
-        "fr": "Seymore",
-        "de": "Seymore",
-        "es": "Seymore",
-        "ko": "시무르",
-        "zh": "西姆爾"
+        "en": "シムール - Seymore"
       },
       "stats": {
         "HP": 2786,
@@ -2453,12 +2205,7 @@
     },
     {
       "names": {
-        "en": "Oldoa",
-        "fr": "Oldoa",
-        "de": "Oldoa",
-        "es": "Oldoa",
-        "ko": "오르도아",
-        "zh": "奧爾多"
+        "en": "オルドア - Oldoa"
       },
       "stats": {
         "HP": 2398,
@@ -2495,12 +2242,7 @@
     },
     {
       "names": {
-        "en": "Raviesse",
-        "fr": "Raviesse",
-        "de": "Ravesse",
-        "es": "Raviesse",
-        "ko": "라비에스",
-        "zh": "菈薇絲"
+        "en": "ラヴィエス - Raviesse"
       },
       "stats": {
         "HP": 2597,
@@ -2536,12 +2278,7 @@
     },
     {
       "names": {
-        "en": "Agrias",
-        "fr": "Agrias",
-        "de": "Agrias",
-        "es": "Agrias",
-        "ko": "아그리아스",
-        "zh": "阿格莉亞絲"
+        "en": "アグリアス - Agrias"
       },
       "stats": {
         "HP": 3134,
@@ -2572,12 +2309,7 @@
     },
     {
       "names": {
-        "en": "Delita",
-        "fr": "Delita",
-        "de": "Delita",
-        "es": "Delita",
-        "ko": "딜리타",
-        "zh": "迪利塔"
+        "en": "ディリータ - Delita"
       },
       "stats": {
         "HP": 2367,
@@ -2609,12 +2341,7 @@
     },
     {
       "names": {
-        "en": "Mustadio",
-        "fr": "Mustadio",
-        "de": "Mustadio",
-        "es": "Mustadio",
-        "ko": "무스타디오",
-        "zh": "姆斯達迪奧"
+        "en": "ムスタディオ - Mustadio"
       },
       "stats": {
         "HP": 1368,
@@ -2649,12 +2376,7 @@
     },
     {
       "names": {
-        "en": "Ildyra",
-        "fr": "Ildyra",
-        "de": "Ildyra",
-        "es": "Ildira",
-        "ko": "일디라",
-        "zh": "伊爾迪拉"
+        "en": "イルディラ - Ildyra"
       },
       "stats": {
         "HP": 2130,
@@ -2686,24 +2408,19 @@
     },
     {
       "names": {
-        "en": "Sterne (Knight of Ruin)",
-        "fr": "Sterne (Chevalier déchu)",
-        "de": "Styr (Ritter des Untergangs)",
-        "es": "Stern (Caballero de la Destrucción)",
-        "ko": "슈텔(파멸의 기사)",
-        "zh": "斯特恩（破滅騎士）"
+        "en": "シュテル（破滅の騎士） - Sterne (Knight of Ruin)"
       },
       "stats": {
-        "HP": 2686,
-        "TP": 126,
-        "AP": 120,
-        "ATK": 341,
+        "HP": 3565,
+        "TP": 133,
+        "AP": 126,
+        "ATK": 497,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 62,
-        "DEX": 166,
-        "AGI": 65,
-        "LUCK": 228,
+        "MAG": 82,
+        "DEX": 200,
+        "AGI": 67,
+        "LUCK": 282,
         "LIGHT_RES": -10,
         "SLASH_RES": 20,
         "PIERCE_RES": -10,
@@ -2716,8 +2433,10 @@
         "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 21,
-        "CRITIC_RATE": 23,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 31,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "DEFENSE_PENETRATION": 20,
         "SLASH_ATK": 10
       },
@@ -2725,50 +2444,7 @@
     },
     {
       "names": {
-        "en": "Lasswell",
-        "fr": "Lasswell",
-        "de": "Lasswell",
-        "es": "Lasswell",
-        "ko": "라스웰",
-        "zh": "拉斯韋爾"
-      },
-      "stats": {
-        "HP": 2255,
-        "TP": 130,
-        "AP": 123,
-        "ATK": 363,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 56,
-        "DEX": 199,
-        "AGI": 64,
-        "LUCK": 228,
-        "FIRE_RES": -10,
-        "WIND_RES": 20,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -5,
-        "MISSILE_RES": 10,
-        "MAGIC_RES": -15,
-        "BLIND_RES": 50,
-        "CHARM_RES": 10,
-        "SLOW_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 22,
-        "SLASH_ATK": 5,
-        "ACCURACY": 15
-      },
-      "image": "lapslswl"
-    },
-    {
-      "names": {
-        "en": "Glaciela Wezette",
-        "fr": "Graziella Wezett",
-        "de": "Glaziela Wezette",
-        "es": "Graciela Wezette",
-        "ko": "그라시엘라 웨젯",
-        "zh": "格拉西拉·維澤特"
+        "en": "グラセラ・ウェズエット - Glaciela Wezette"
       },
       "stats": {
         "HP": 2585,
@@ -2799,12 +2475,7 @@
     },
     {
       "names": {
-        "en": "Loreila",
-        "fr": "Loreila",
-        "de": "Loreila",
-        "es": "Loreila",
-        "ko": "로레일라",
-        "zh": "羅雷拉"
+        "en": "ロレイラ - Loreila"
       },
       "stats": {
         "HP": 1569,
@@ -2836,124 +2507,42 @@
     },
     {
       "names": {
-        "en": "Little Leela (Halloween)",
-        "fr": "Lillyla (Halloween)",
-        "de": "Lilli (Halloween)",
-        "es": "Lili (Halloween)",
-        "ko": "리렐리라(할로윈)",
-        "zh": "莉蕾露莉拉（萬聖節）"
+        "en": "ラスウェル - Lasswell"
       },
       "stats": {
-        "HP": 2208,
-        "TP": 178,
-        "AP": 155,
-        "ATK": 100,
+        "HP": 3134,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 510,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 352,
-        "DEX": 184,
+        "MAG": 73,
+        "DEX": 256,
         "AGI": 66,
-        "LUCK": 203,
-        "ICE_RES": -10,
-        "EARTH_RES": 20,
-        "SLASH_RES": -10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": -10,
-        "MISSILE_RES": -5,
-        "MAGIC_RES": 20,
-        "SILENCE_RES": 50,
-        "TOAD_RES": 10,
-        "DISABLE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 118,
-        "WIND_ATK": 15,
-        "EVADE": 10
-      },
-      "image": "lapsryer_01"
-    },
-    {
-      "names": {
-        "en": "Rairyuu (Halloween)",
-        "fr": "Rairyuu (Halloween)",
-        "de": "Rairyu (Halloween)",
-        "es": "Lairyu (Halloween)",
-        "ko": "라이류(할로윈)",
-        "zh": "雷尤（萬聖節）"
-      },
-      "stats": {
-        "HP": 2868,
-        "TP": 133,
-        "AP": 134,
-        "ATK": 83,
-        "DEF": 6,
-        "SPR": 0,
-        "MAG": 398,
-        "DEX": 183,
-        "AGI": 58,
-        "LUCK": 216,
-        "WIND_RES": -10,
-        "LIGHTNING_RES": 20,
-        "SLASH_RES": -5,
-        "PIERCE_RES": 5,
-        "STRIKE_RES": -15,
-        "MISSILE_RES": 5,
-        "MAGIC_RES": 15,
-        "SLEEP_RES": 50,
-        "PETRIFY_RES": 10,
-        "CHARM_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 71,
-        "EARTH_ATK": 15,
-        "RES_SLASH_ATK_PENETRATION": 20
-      },
-      "image": "lapsriry_01"
-    },
-    {
-      "names": {
-        "en": "Howlet",
-        "fr": "Howlet",
-        "de": "Houlet",
-        "es": "Howlet",
-        "ko": "하울렛",
-        "zh": "哈烏雷特"
-      },
-      "stats": {
-        "HP": 2413,
-        "TP": 159,
-        "AP": 146,
-        "ATK": 79,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 475,
-        "DEX": 187,
-        "AGI": 64,
-        "LUCK": 205,
-        "ICE_RES": -10,
-        "EARTH_RES": 20,
-        "SLASH_RES": 5,
-        "STRIKE_RES": -15,
-        "MISSILE_RES": -5,
-        "MAGIC_RES": 15,
-        "SILENCE_RES": 50,
-        "PARALYZE_RES": 50,
+        "LUCK": 269,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -15,
+        "BLIND_RES": 50,
         "CHARM_RES": 10,
+        "SLOW_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 73,
-        "SPIRIT_PENETRATION": 20
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 29,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "SLASH_ATK": 5,
+        "ACCURACY": 15
       },
-      "image": "lapshwlt"
+      "image": "lapslswl"
     },
     {
       "names": {
-        "en": "Skahal",
-        "fr": "Skahal",
-        "de": "Skahal",
-        "es": "Skahal",
-        "ko": "스칼",
-        "zh": "斯卡爾"
+        "en": "スカール - Skahal"
       },
       "stats": {
         "HP": 2062,
@@ -2979,18 +2568,14 @@
         "MOVE": 3,
         "JUMP": 1,
         "INITIAL_AP": 131,
-        "NON_ATTACK_ACTIVATION_TIME": -200
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
       },
       "image": "lapsscal"
     },
     {
       "names": {
-        "en": "Mariale",
-        "fr": "Mariale",
-        "de": "Marial",
-        "es": "Mariela",
-        "ko": "마리알",
-        "zh": "瑪利亞爾"
+        "en": "マリアル - Mariale"
       },
       "stats": {
         "HP": 2810,
@@ -3023,12 +2608,68 @@
     },
     {
       "names": {
-        "en": "Chel",
-        "fr": "Chel",
-        "de": "Chell",
-        "es": "Chel",
-        "ko": "첼",
-        "zh": "切爾"
+        "en": "リリシュ（水着）"
+      },
+      "stats": {
+        "HP": 2230,
+        "TP": 130,
+        "AP": 123,
+        "ATK": 319,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 69,
+        "DEX": 265,
+        "AGI": 61,
+        "LUCK": 193,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": -15,
+        "PIERCE_RES": 15,
+        "MAGIC_RES": -10,
+        "BLIND_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 2
+      },
+      "image": "lapslils_01"
+    },
+    {
+      "names": {
+        "en": "ハウレット - Howlet"
+      },
+      "stats": {
+        "HP": 2413,
+        "TP": 159,
+        "AP": 146,
+        "ATK": 79,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 475,
+        "DEX": 187,
+        "AGI": 64,
+        "LUCK": 205,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 5,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 15,
+        "SILENCE_RES": 50,
+        "PARALYZE_RES": 50,
+        "CHARM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 73,
+        "SPIRIT_PENETRATION": 20
+      },
+      "image": "lapshwlt"
+    },
+    {
+      "names": {
+        "en": "チェル - Chel"
       },
       "stats": {
         "HP": 1411,
@@ -3056,18 +2697,77 @@
         "JUMP": 1,
         "INITIAL_AP": 107,
         "CRITIC_RATE": 9,
-        "NON_ATTACK_ACTIVATION_TIME": -250
+        "NON_ATTACK_ACTIVATION_TIME": -250,
+        "ATTACK_ACTIVATION_TIME": -250
       },
       "image": "lapschel"
     },
     {
       "names": {
-        "en": "Cecil",
-        "fr": "Cécil",
-        "de": "Cecil",
-        "es": "Cecil",
-        "ko": "세실",
-        "zh": "塞西爾"
+        "en": "ルアーサ - Luartha"
+      },
+      "stats": {
+        "HP": 1751,
+        "TP": 135,
+        "AP": 127,
+        "ATK": 405,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 75,
+        "DEX": 263,
+        "AGI": 59,
+        "LUCK": 189,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 20,
+        "PIERCE_RES": 10,
+        "MAGIC_RES": -5,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 18,
+        "ICE_KILLER": 15
+      },
+      "image": "lapslath"
+    },
+    {
+      "names": {
+        "en": "タイタス - Tyytas"
+      },
+      "stats": {
+        "HP": 2809,
+        "TP": 116,
+        "AP": 100,
+        "ATK": 173,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 94,
+        "DEX": 178,
+        "AGI": 48,
+        "LUCK": 173,
+        "LIGHT_RES": -15,
+        "SLASH_RES": -25,
+        "PIERCE_RES": 20,
+        "MISSILE_RES": 30,
+        "MAGIC_RES": -20,
+        "POISON_RES": 10,
+        "BLIND_RES": -25,
+        "SLOW_RES": 50,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 20,
+        "CRITIC_RATE": 4,
+        "AP_CONSUMPTION": 25
+      },
+      "image": "lapstitu"
+    },
+    {
+      "names": {
+        "en": "セシル - Cecil"
       },
       "stats": {
         "HP": 2812,
@@ -3098,12 +2798,7 @@
     },
     {
       "names": {
-        "en": "Rosa",
-        "fr": "Rosa",
-        "de": "Rosa",
-        "es": "Rosa",
-        "ko": "로자",
-        "zh": "羅莎"
+        "en": "ローザ - Rosa"
       },
       "stats": {
         "HP": 1984,
@@ -3133,12 +2828,7 @@
     },
     {
       "names": {
-        "en": "Kain",
-        "fr": "Kaïn",
-        "de": "Kain",
-        "es": "Kain",
-        "ko": "카인",
-        "zh": "凱因"
+        "en": "カイン - Kain"
       },
       "stats": {
         "HP": 2481,
@@ -3171,199 +2861,38 @@
     },
     {
       "names": {
-        "en": "Ramada (Winter)",
-        "fr": "Ramada (Hiver)",
-        "de": "Lhamada (Winter)",
-        "es": "Ramada invernal",
-        "ko": "라마다(겨울)",
-        "zh": "拉瑪達（冬日）"
+        "en": "キトン（水着）"
       },
       "stats": {
-        "HP": 1956,
-        "TP": 121,
-        "AP": 115,
-        "ATK": 420,
+        "HP": 2295,
+        "TP": 136,
+        "AP": 144,
+        "ATK": 100,
         "DEF": 0,
-        "SPR": 0,
-        "MAG": 75,
-        "DEX": 178,
+        "SPR": 9,
+        "MAG": 366,
+        "DEX": 191,
         "AGI": 63,
-        "LUCK": 235,
-        "FIRE_RES": 20,
-        "LIGHTNING_RES": -10,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": 20,
-        "MAGIC_RES": -20,
-        "POISON_RES": 50,
-        "CONFUSION_RES": 10,
-        "CHARM_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 20,
-        "CRITIC_RATE": 30,
-        "WATER_ATK": 15
-      },
-      "image": "lapsramd_01"
-    },
-    {
-      "names": {
-        "en": "Machérie (Winter)",
-        "fr": "Machalie (Hiver)",
-        "de": "Margery (Winter)",
-        "es": "Machérie invernal",
-        "ko": "마쉐리(겨울)",
-        "zh": "瑪雪莉（冬日）"
-      },
-      "stats": {
-        "HP": 2766,
-        "TP": 135,
-        "AP": 127,
-        "ATK": 377,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 64,
-        "DEX": 168,
-        "AGI": 57,
-        "LUCK": 182,
-        "ICE_RES": 30,
-        "WATER_RES": -10,
-        "SLASH_RES": 20,
-        "PIERCE_RES": 0,
-        "STRIKE_RES": -20,
-        "MISSILE_RES": -20,
-        "MAGIC_RES": 20,
-        "PARALYZE_RES": 50,
-        "STOP_RES": 10,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 4,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 23,
-        "FIRE_ATK": 15,
-        "DEFENSE_PENETRATION": 10
-      },
-      "image": "lapsmacr_01"
-    },
-    {
-      "names": {
-        "en": "Luartha",
-        "fr": "Luartha",
-        "de": "Luartha",
-        "es": "Luarta",
-        "ko": "루아사",
-        "zh": "璐亞瑟"
-      },
-      "stats": {
-        "HP": 1751,
-        "TP": 135,
-        "AP": 127,
-        "ATK": 405,
-        "DEF": 0,
-        "SPR": 0,
-        "MAG": 75,
-        "DEX": 263,
-        "AGI": 59,
-        "LUCK": 189,
+        "LUCK": 200,
         "ICE_RES": 20,
         "WATER_RES": -10,
-        "SLASH_RES": 20,
-        "PIERCE_RES": 10,
-        "MAGIC_RES": -5,
-        "CONFUSION_RES": 50,
-        "STOP_RES": 50,
-        "DISABLE_RES": 10,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 18,
-        "ICE_KILLER": 15
-      },
-      "image": "lapslath"
-    },
-    {
-      "names": {
-        "en": "Tyytas",
-        "fr": "Thytas",
-        "de": "Titus",
-        "es": "Taitas",
-        "ko": "타이타스",
-        "zh": "泰塔斯"
-      },
-      "stats": {
-        "HP": 2809,
-        "TP": 116,
-        "AP": 100,
-        "ATK": 173,
-        "DEF": 6,
-        "SPR": 0,
-        "MAG": 94,
-        "DEX": 178,
-        "AGI": 48,
-        "LUCK": 173,
-        "LIGHT_RES": -15,
-        "SLASH_RES": -25,
-        "PIERCE_RES": 20,
-        "MISSILE_RES": 30,
-        "MAGIC_RES": -20,
-        "POISON_RES": 10,
-        "BLIND_RES": -25,
-        "SLOW_RES": 50,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 1,
-        "INITIAL_AP": 20,
-        "CRITIC_RATE": 4,
-        "AP_CONSUMPTION": 25
-      },
-      "image": "lapstitu"
-    },
-    {
-      "names": {
-        "en": "Duane",
-        "fr": "Duane",
-        "de": "Deen",
-        "es": "Duane",
-        "ko": "딘",
-        "zh": "杜安"
-      },
-      "stats": {
-        "HP": 3393,
-        "TP": 134,
-        "AP": 127,
-        "ATK": 454,
-        "DEF": 8,
-        "SPR": 0,
-        "MAG": 67,
-        "DEX": 193,
-        "AGI": 58,
-        "LUCK": 182,
-        "LIGHT_RES": -10,
-        "SLASH_RES": 10,
-        "PIERCE_RES": 15,
-        "STRIKE_RES": -15,
+        "SLASH_RES": 15,
+        "STRIKE_RES": -5,
         "MISSILE_RES": -5,
-        "MAGIC_RES": 5,
-        "CONFUSION_RES": 50,
+        "MAGIC_RES": 10,
+        "CONFUSION_RES": 10,
         "STOP_RES": 50,
-        "DISABLE_RES": 10,
+        "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 22,
-        "CRITIC_RATE": 17,
-        "DARK_ATK": 15,
-        "DEFENSE_PENETRATION": 20
+        "INITIAL_AP": 72,
+        "ATTACK_RES": 10
       },
-      "image": "lapsdean"
+      "image": "lapskton_01"
     },
     {
       "names": {
-        "en": "Niv'Lu",
-        "fr": "Niv'Lu",
-        "de": "Niv’Lu",
-        "es": "Niv'Lu",
-        "ko": "니브루",
-        "zh": "尼維·爾"
+        "en": "ニヴ・ル - Niv'Lu"
       },
       "stats": {
         "HP": 1817,
@@ -3395,12 +2924,7 @@
     },
     {
       "names": {
-        "en": "Livialle",
-        "fr": "Liviale",
-        "de": "Livialle",
-        "es": "Livialle",
-        "ko": "리비알",
-        "zh": "利維亞爾"
+        "en": "リヴィアル - Livialle"
       },
       "stats": {
         "HP": 1439,
@@ -3433,12 +2957,7 @@
     },
     {
       "names": {
-        "en": "Sakura",
-        "fr": "Sakura",
-        "de": "Sakura",
-        "es": "Sakura",
-        "ko": "사쿠라",
-        "zh": "櫻"
+        "en": "サクラ - Sakura"
       },
       "stats": {
         "HP": 2203,
@@ -3470,12 +2989,7 @@
     },
     {
       "names": {
-        "en": "Ahlim",
-        "fr": "Alym",
-        "de": "Alim",
-        "es": "Ahlim",
-        "ko": "아림",
-        "zh": "阿利姆"
+        "en": "アリム - Ahlim"
       },
       "stats": {
         "HP": 2323,
@@ -3510,12 +3024,40 @@
     },
     {
       "names": {
-        "en": "Rhaldor",
-        "fr": "Rhaldor",
-        "de": "Rhaldor",
-        "es": "Rhaldor",
-        "ko": "라르도",
-        "zh": "拉爾德"
+        "en": "リレルリラ（ハロウィン） - Little Leela (Halloween)"
+      },
+      "stats": {
+        "HP": 2208,
+        "TP": 178,
+        "AP": 155,
+        "ATK": 100,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 352,
+        "DEX": 184,
+        "AGI": 66,
+        "LUCK": 203,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": -10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 20,
+        "SILENCE_RES": 50,
+        "TOAD_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 118,
+        "WIND_ATK": 15,
+        "EVADE": 10
+      },
+      "image": "lapsryer_01"
+    },
+    {
+      "names": {
+        "en": "ラルドー - Rhaldor"
       },
       "stats": {
         "HP": 3073,
@@ -3549,12 +3091,7 @@
     },
     {
       "names": {
-        "en": "Ellshra",
-        "fr": "Elzandra",
-        "de": "Elshura",
-        "es": "Elshura",
-        "ko": "에르슐라",
-        "zh": "艾爾修拉"
+        "en": "エルシュラ - Ellshra"
       },
       "stats": {
         "HP": 1673,
@@ -3587,88 +3124,40 @@
     },
     {
       "names": {
-        "en": "Vinera (Winter)",
-        "fr": "Vinera (Hiver)",
-        "de": "Vinera (Winter)",
-        "es": "Vinera invernal",
-        "ko": "비네라(겨울)",
-        "zh": "維內拉（冬日）"
+        "en": "ライリュウ（ハロウィン） - Rairyuu (Halloween)"
       },
       "stats": {
-        "HP": 3097,
-        "TP": 120,
-        "AP": 117,
-        "ATK": 377,
+        "HP": 2868,
+        "TP": 133,
+        "AP": 134,
+        "ATK": 83,
         "DEF": 6,
-        "SPR": 8,
-        "MAG": 81,
-        "DEX": 181,
-        "AGI": 60,
-        "LUCK": 204,
+        "SPR": 0,
+        "MAG": 398,
+        "DEX": 183,
+        "AGI": 58,
+        "LUCK": 216,
         "WIND_RES": -10,
         "LIGHTNING_RES": 20,
-        "SLASH_RES": 10,
-        "PIERCE_RES": -10,
-        "STRIKE_RES": 5,
-        "MISSILE_RES": -15,
-        "MAGIC_RES": 15,
-        "CONFUSION_RES": 50,
-        "CHARM_RES": 10,
-        "IMMOBILIZE_RES": 50,
-        "MOVE": 3,
-        "JUMP": 2,
-        "INITIAL_AP": 21,
-        "CRITIC_RATE": 9,
-        "EARTH_ATK": 15
-      },
-      "image": "lapsvnla_01"
-    },
-    {
-      "names": {
-        "en": "Viktora (Winter)",
-        "fr": "Viktora (Hiver)",
-        "de": "Viktora (Winter)",
-        "es": "Victra invernal",
-        "ko": "빅토라(겨울)",
-        "zh": "維克托拉（冬日）"
-      },
-      "stats": {
-        "HP": 2384,
-        "TP": 127,
-        "AP": 123,
-        "ATK": 342,
-        "DEF": 4,
-        "SPR": 0,
-        "MAG": 69,
-        "DEX": 237,
-        "AGI": 61,
-        "LUCK": 199,
-        "FIRE_RES": 20,
-        "LIGHTNING_RES": -10,
-        "SLASH_RES": 5,
-        "PIERCE_RES": 20,
+        "SLASH_RES": -5,
+        "PIERCE_RES": 5,
         "STRIKE_RES": -15,
         "MISSILE_RES": 5,
-        "MAGIC_RES": -5,
+        "MAGIC_RES": 15,
         "SLEEP_RES": 50,
-        "SLOW_RES": 50,
-        "DISABLE_RES": 10,
+        "PETRIFY_RES": 10,
+        "CHARM_RES": 50,
         "MOVE": 3,
-        "JUMP": 2,
-        "INITIAL_AP": 22,
-        "WATER_ATK": 15,
-        "AP_CONSUMPTION": 20
+        "JUMP": 1,
+        "INITIAL_AP": 71,
+        "EARTH_ATK": 15,
+        "RES_SLASH_ATK_PENETRATION": 20
       },
-      "image": "lapsvktr_01"
+      "image": "lapsriry_01"
     },
     {
       "names": {
-        "en": "Creysse",
-        "fr": "Creysse",
-        "de": "Creysse",
-        "es": "Creys",
-        "ko": "크레이스",
-        "zh": "克雷斯"
+        "en": "クレイス - Creysse"
       },
       "stats": {
         "HP": 2102,
@@ -3702,12 +3191,7 @@
     },
     {
       "names": {
-        "en": "Garvall",
-        "fr": "Garvall",
-        "de": "Garval",
-        "es": "Garval",
-        "ko": "가블",
-        "zh": "加布爾"
+        "en": "ガーブル - Garvall"
       },
       "stats": {
         "HP": 2668,
@@ -3738,12 +3222,7 @@
     },
     {
       "names": {
-        "en": "Elsirelle",
-        "fr": "Elsirelle",
-        "de": "Elsirelle",
-        "es": "Elsirel",
-        "ko": "엘시렐",
-        "zh": "埃爾西蕾爾"
+        "en": "エルシレール - Elsirelle"
       },
       "stats": {
         "HP": 3058,
@@ -3773,12 +3252,7 @@
     },
     {
       "names": {
-        "en": "Tidus",
-        "fr": "Tidus",
-        "de": "Tidus",
-        "es": "Tidus",
-        "ko": "티다",
-        "zh": "提達"
+        "en": "ティーダ - Tidus"
       },
       "stats": {
         "HP": 3643,
@@ -3813,12 +3287,7 @@
     },
     {
       "names": {
-        "en": "Yuna",
-        "fr": "Yuna",
-        "de": "Yuna",
-        "es": "Yuna",
-        "ko": "유우나",
-        "zh": "優娜"
+        "en": "ユウナ - Yuna"
       },
       "stats": {
         "HP": 2877,
@@ -3852,12 +3321,7 @@
     },
     {
       "names": {
-        "en": "Auron",
-        "fr": "Auron",
-        "de": "Auron",
-        "es": "Auron",
-        "ko": "아론",
-        "zh": "奧隆"
+        "en": "アーロン - Auron"
       },
       "stats": {
         "HP": 3857,
@@ -3892,12 +3356,78 @@
     },
     {
       "names": {
-        "en": "2B",
-        "fr": "2B",
-        "de": "2B",
-        "es": "2B",
-        "ko": "2B",
-        "zh": "2B"
+        "en": "ヴィネラ（Xmas） - Vinera (Winter)"
+      },
+      "stats": {
+        "HP": 3969,
+        "TP": 126,
+        "AP": 143,
+        "ATK": 503,
+        "DEF": 10,
+        "SPR": 8,
+        "MAG": 103,
+        "DEX": 219,
+        "AGI": 60,
+        "LUCK": 245,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 5,
+        "MISSILE_RES": -15,
+        "MAGIC_RES": 15,
+        "CONFUSION_RES": 50,
+        "CHARM_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 9,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsvnla_01"
+    },
+    {
+      "names": {
+        "en": "ヴィクトラ（Xmas） - Viktora (Winter)"
+      },
+      "stats": {
+        "HP": 2982,
+        "TP": 134,
+        "AP": 130,
+        "ATK": 449,
+        "DEF": 4,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 328,
+        "AGI": 61,
+        "LUCK": 228,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": 20,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": -5,
+        "SLEEP_RES": 50,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "AP_CONSUMPTION": 20
+      },
+      "image": "lapsvktr_01"
+    },
+    {
+      "names": {
+        "en": "2B - 2B"
       },
       "stats": {
         "HP": 3181,
@@ -3933,12 +3463,7 @@
     },
     {
       "names": {
-        "en": "9S",
-        "fr": "9S",
-        "de": "9S",
-        "es": "9S",
-        "ko": "9S",
-        "zh": "9S"
+        "en": "9S - 9S"
       },
       "stats": {
         "HP": 3684,
@@ -3972,12 +3497,7 @@
     },
     {
       "names": {
-        "en": "Mont (King of Leonis)",
-        "fr": "Mont (Roi de Leonis)",
-        "de": "König Mont von Leonis",
-        "es": "Mont, rey de Leonis",
-        "ko": "레오니스의 왕 몬트",
-        "zh": "雷歐尼斯國王蒙特  "
+        "en": "リオニス王モント - Mont (King of Leonis)"
       },
       "stats": {
         "HP": 5236,
@@ -4012,12 +3532,7 @@
     },
     {
       "names": {
-        "en": "Louelle",
-        "fr": "Luelle",
-        "de": "Luëlle",
-        "es": "Luele",
-        "ko": "류엘",
-        "zh": "琉艾爾"
+        "en": "リューエル - Louelle"
       },
       "stats": {
         "HP": 3515,
@@ -4050,12 +3565,7 @@
     },
     {
       "names": {
-        "en": "Sylma",
-        "fr": "Sylma",
-        "de": "Sylma",
-        "es": "Sylma",
-        "ko": "실마",
-        "zh": "希爾瑪"
+        "en": "シルマ - Sylma"
       },
       "stats": {
         "HP": 2658,
@@ -4090,12 +3600,7 @@
     },
     {
       "names": {
-        "en": "Helena (Black-Robed Witch)",
-        "fr": "Helena (Sorcière vêtue de noir)",
-        "de": "Helena (Hexe in Schwarz)",
-        "es": "Helena, la Bruja de Negro",
-        "ko": "헬레나(검은 옷의 마녀)",
-        "zh": "海蓮娜（黑衣魔女）"
+        "en": "ヘレナ（黒衣の魔女） - Helena (Black-Robed Witch)"
       },
       "stats": {
         "HP": 3484,
@@ -4126,6 +3631,632 @@
         "RES_MAGIC_ATK_PENETRATION": 20
       },
       "image": "lapshlna_01"
+    },
+    {
+      "names": {
+        "en": "サリア（バレンタイン）"
+      },
+      "stats": {
+        "HP": 2989,
+        "TP": 157,
+        "AP": 195,
+        "ATK": 95,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 477,
+        "DEX": 208,
+        "AGI": 57,
+        "LUCK": 227,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "PIERCE_RES": 10,
+        "STRIKE_RES": -10,
+        "MAGIC_RES": 10,
+        "SLEEP_RES": 50,
+        "CONFUSION_RES": 10,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 101,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "SPIRIT_PENETRATION": 25
+      },
+      "image": "lapsthla_01"
+    },
+    {
+      "names": {
+        "en": "カミッロ"
+      },
+      "stats": {
+        "HP": 3378,
+        "TP": 137,
+        "AP": 141,
+        "ATK": 505,
+        "DEF": 2,
+        "SPR": 10,
+        "MAG": 84,
+        "DEX": 234,
+        "AGI": 62,
+        "LUCK": 219,
+        "DARK_RES": -10,
+        "SLASH_RES": 0,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 4,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15
+      },
+      "image": "lapscmlo"
+    },
+    {
+      "names": {
+        "en": "ディーン - Duane"
+      },
+      "stats": {
+        "HP": 4560,
+        "TP": 141,
+        "AP": 133,
+        "ATK": 551,
+        "DEF": 10,
+        "SPR": 0,
+        "MAG": 88,
+        "DEX": 235,
+        "AGI": 62,
+        "LUCK": 232,
+        "LIGHT_RES": -10,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 15,
+        "STRIKE_RES": -15,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 5,
+        "CONFUSION_RES": 50,
+        "STOP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "lapsdean"
+    },
+    {
+      "names": {
+        "en": "ムーア"
+      },
+      "stats": {
+        "HP": 3126,
+        "TP": 159,
+        "AP": 179,
+        "ATK": 94,
+        "DEF": 0,
+        "SPR": 4,
+        "MAG": 532,
+        "DEX": 262,
+        "AGI": 63,
+        "LUCK": 241,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "PIERCE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 20,
+        "SILENCE_RES": 50,
+        "CONFUSION_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 89,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15,
+        "RES_MAGIC_ATK_PENETRATION": 15
+      },
+      "image": "lapsmore"
+    },
+    {
+      "names": {
+        "en": "コーウェル"
+      },
+      "stats": {
+        "HP": 2871,
+        "TP": 142,
+        "AP": 139,
+        "ATK": 343,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 350,
+        "AGI": 69,
+        "LUCK": 229,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": 15,
+        "BLIND_RES": 10,
+        "PARALYZE_RES": 50,
+        "STOP_RES": 50,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 25,
+        "CRITIC_RATE": 26,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "MISSILE_ATK": 10
+      },
+      "image": "lapscwel"
+    },
+    {
+      "names": {
+        "en": "ムラガ・フェネス - Muraga Fennes"
+      },
+      "stats": {
+        "HP": 4030,
+        "TP": 119,
+        "AP": 117,
+        "ATK": 608,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 247,
+        "AGI": 62,
+        "LUCK": 231,
+        "WIND_RES": -10,
+        "LIGHTNING_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 0,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 0,
+        "MAGIC_RES": -10,
+        "SLOW_RES": 50,
+        "IMMOBILIZE_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 21,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "EARTH_ATK": 15
+      },
+      "image": "lapsmurg"
+    },
+    {
+      "names": {
+        "en": "シャルロット"
+      },
+      "stats": {
+        "HP": 4718,
+        "TP": 131,
+        "AP": 111,
+        "ATK": 431,
+        "DEF": 0,
+        "SPR": 22,
+        "MAG": 84,
+        "DEX": 231,
+        "AGI": 64,
+        "LUCK": 243,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 20,
+        "PARALYZE_RES": 10,
+        "TOAD_RES": 50,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 19,
+        "CRITIC_RATE": 12,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15
+      },
+      "image": "lapscrlt"
+    },
+    {
+      "names": {
+        "en": "ヴェルリック"
+      },
+      "stats": {
+        "HP": 3917,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 474,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 87,
+        "DEX": 233,
+        "AGI": 61,
+        "LUCK": 242,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": 5,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -10,
+        "BLIND_RES": 50,
+        "SLEEP_RES": 50,
+        "DISABLE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 24,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "DEFENSE_PENETRATION": 25
+      },
+      "image": "lapsvlrc"
+    },
+    {
+      "names": {
+        "en": "レミューレ"
+      },
+      "stats": {
+        "HP": 3127,
+        "TP": 199,
+        "AP": 155,
+        "ATK": 91,
+        "DEF": 6,
+        "SPR": 0,
+        "MAG": 474,
+        "DEX": 253,
+        "AGI": 62,
+        "LUCK": 217,
+        "LIGHT_RES": -10,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -10,
+        "MISSILE_RES": -5,
+        "MAGIC_RES": 10,
+        "SILENCE_RES": 10,
+        "CONFUSION_RES": 50,
+        "PETRIFY_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 118,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "DARK_ATK": 15,
+        "AOE_RES": 10
+      },
+      "image": "lapslmre"
+    },
+    {
+      "names": {
+        "en": "ガーガス"
+      },
+      "stats": {
+        "HP": 2920,
+        "TP": 177,
+        "AP": 176,
+        "ATK": 95,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 481,
+        "DEX": 244,
+        "AGI": 58,
+        "LUCK": 229,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 15,
+        "POISON_RES": 50,
+        "CONFUSION_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 142,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200,
+        "AOE_RES": 5
+      },
+      "image": "lapsgrgs"
+    },
+    {
+      "names": {
+        "en": "クラウド"
+      },
+      "stats": {
+        "HP": 3581,
+        "TP": 142,
+        "AP": 133,
+        "ATK": 504,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 91,
+        "DEX": 230,
+        "AGI": 68,
+        "LUCK": 224,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 15,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": 0,
+        "MISSILE_RES": 15,
+        "MAGIC_RES": -10,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 10,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 20,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15,
+        "AOE_RES": 10,
+        "CRITIC_DAMAGE": 5
+      },
+      "image": "ff07clud"
+    },
+    {
+      "names": {
+        "en": "ティファ"
+      },
+      "stats": {
+        "HP": 3495,
+        "TP": 119,
+        "AP": 123,
+        "ATK": 491,
+        "DEF": 9,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 230,
+        "AGI": 68,
+        "LUCK": 262,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 10,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": 0,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": 0,
+        "CHARM_RES": 50,
+        "STOP_RES": 50,
+        "IMMOBILIZE_RES": 10,
+        "MOVE": 3,
+        "JUMP": 2,
+        "INITIAL_AP": 22,
+        "CRITIC_RATE": 18,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15,
+        "DEFENSE_PENETRATION": 15
+      },
+      "image": "ff07tifa"
+    },
+    {
+      "names": {
+        "en": "エアリス"
+      },
+      "stats": {
+        "HP": 2760,
+        "TP": 232,
+        "AP": 161,
+        "ATK": 95,
+        "DEF": 0,
+        "SPR": 5,
+        "MAG": 617,
+        "DEX": 219,
+        "AGI": 64,
+        "LUCK": 218,
+        "FIRE_RES": 20,
+        "LIGHTNING_RES": -10,
+        "SLASH_RES": -5,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MAGIC_RES": 10,
+        "IMMOBILIZE_RES": 50,
+        "BERSERK_RES": 50,
+        "DOOM_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 120,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "WATER_ATK": 15
+      },
+      "image": "ff07aert"
+    },
+    {
+      "names": {
+        "en": "バレット"
+      },
+      "stats": {
+        "HP": 3870,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 384,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 84,
+        "DEX": 289,
+        "AGI": 57,
+        "LUCK": 215,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": 15,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 10,
+        "BLIND_RES": 10,
+        "SLOW_RES": 50,
+        "DISABLE_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
+        "ICE_ATK": 15,
+        "DEFENSE_PENETRATION": 15
+      },
+      "image": "ff07bart"
+    },
+    {
+      "names": {
+        "en": "グラセラ（ドレスアップ）"
+      },
+      "stats": {
+        "HP": 3152,
+        "TP": 153,
+        "AP": 178,
+        "ATK": 84,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 542,
+        "DEX": 252,
+        "AGI": 66,
+        "LUCK": 230,
+        "ICE_RES": 20,
+        "WATER_RES": -10,
+        "SLASH_RES": 5,
+        "PIERCE_RES": -10,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 15,
+        "MAGIC_RES": 20,
+        "SLEEP_RES": 10,
+        "CONFUSION_RES": 50,
+        "STUN_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 133,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "FIRE_ATK": 15,
+        "AOE_RES": 10,
+        "NON_ATTACK_ACTIVATION_TIME": -200,
+        "ATTACK_ACTIVATION_TIME": -200
+      },
+      "image": "lapsgrsr_01"
+    },
+    {
+      "names": {
+        "en": "ヴェルヌ"
+      },
+      "stats": {
+        "HP": 3589,
+        "TP": 137,
+        "AP": 130,
+        "ATK": 554,
+        "DEF": 8,
+        "SPR": 0,
+        "MAG": 82,
+        "DEX": 228,
+        "AGI": 57,
+        "LUCK": 224,
+        "EARTH_RES": -10,
+        "WATER_RES": 20,
+        "SLASH_RES": 5,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": 10,
+        "MISSILE_RES": 10,
+        "MAGIC_RES": -10,
+        "BLIND_RES": 50,
+        "PARALYZE_RES": 50,
+        "PETRIFY_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 23,
+        "CRITIC_RATE": 22,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHTNING_ATK": 15,
+        "DEFENSE_PENETRATION": 20
+      },
+      "image": "lapsvern"
+    },
+    {
+      "names": {
+        "en": "ジェーダン・ランダル"
+      },
+      "stats": {
+        "HP": 3088,
+        "TP": 152,
+        "AP": 154,
+        "ATK": 104,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 444,
+        "DEX": 322,
+        "AGI": 66,
+        "LUCK": 215,
+        "DARK_RES": -10,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 30,
+        "MAGIC_RES": 10,
+        "POISON_RES": 50,
+        "TOAD_RES": 50,
+        "SLOW_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 33,
+        "CRITIC_RATE": 11,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15,
+        "AP_CONSUMPTION": 20
+      },
+      "image": "lapsjedn"
+    },
+    {
+      "names": {
+        "en": "Fryevia",
+        "fr": "Fryevia",
+        "de": "Fryevia",
+        "es": "Fryevia",
+        "ko": "프레이비아",
+        "zh": "弗雷比亞"
+      },
+      "stats": {
+        "HP": 3320,
+        "TP": 175,
+        "AP": 142,
+        "ATK": 94,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 330,
+        "DEX": 155,
+        "AGI": 54,
+        "LUCK": 200,
+        "FIRE_RES": -10,
+        "WIND_RES": 20,
+        "SLASH_RES": -5,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "MAGIC_RES": 25,
+        "PARALYZE_RES": 50,
+        "SLOW_RES": 50,
+        "BERSERK_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 31
+      },
+      "image": "lapsfrva"
     }
   ]
 }

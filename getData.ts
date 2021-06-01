@@ -529,7 +529,7 @@ export class JsonService {
     // 339: "CondKillerSpeciesAssist",
     // 340: "CondKillerBirthAssist",
     // 341: "CondKillerTagAssist",
-    // 342: "CondStunAssist",
+    342: "STUN_ATK",
     // 343: "CondChangeCtAssist",
 
     // 400: "CondHealHpResist",
@@ -3577,6 +3577,8 @@ export class JsonService {
       }
 
       item.releaseDate = day + '/' + month + '/' + year;
+
+      console.log('New ' + type.substring(3, type.length - 1) + ' : ' + item.dataId);
     }
   }
 

@@ -682,6 +682,15 @@
       "hurl": "ev_grsr_02"
     },
     {
+      "iname": "SE_EV_JEDN_01",
+      "limit": 1,
+      "hurl": "ev_jedn_01"
+    },
+    {
+      "iname": "SE_EV_JDN_01",
+      "hurl": "ev_jdn_01"
+    },
+    {
       "iname": "SE_PTQ_FF7R_01",
       "skip_ticket": "IT_PT_SKIP_FF7_1",
       "hurl": "pt_ff7r_01"
@@ -1061,6 +1070,21 @@
       "iname": "SE_MU_FF10_02_EX",
       "hurl": "ev_ff10_ex_02",
       "won_dst_sheet_name": "bgm_ff10_Victory_Fanfare"
+    },
+    {
+      "iname": "SE_EV_13_01",
+      "hurl": "ev_13_01"
+    },
+    {
+      "iname": "SE_EV_13_EX_01",
+      "hurl": "ev_13_ex_01",
+      "o_cond_q": [
+        "QE_EV_13_10"
+      ]
+    },
+    {
+      "iname": "SE_MU_EV_13_EX",
+      "hurl": "ev_13_ex_01"
     },
     {
       "iname": "SE_EV_12_01",

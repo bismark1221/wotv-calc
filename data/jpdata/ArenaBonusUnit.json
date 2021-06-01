@@ -2643,6 +2643,35 @@
           "iname": "UN_LW_P_THLA_01"
         }
       ]
+    },
+    {
+      "iname": "ARENA_BU_00077",
+      "units": [
+        {
+          "rate": 100,
+          "iname": "UN_LW_P_JEDN"
+        },
+        {
+          "rate": 100,
+          "iname": "UN_LW_P_VERN"
+        },
+        {
+          "rate": 75,
+          "iname": "UN_LW_P_GRSR_01"
+        },
+        {
+          "rate": 50,
+          "iname": "UN_LW_P_STRN_01"
+        },
+        {
+          "rate": 50,
+          "iname": "UN_LW_P_HLNA"
+        },
+        {
+          "rate": 50,
+          "iname": "UN_LW_P_VADM"
+        }
+      ]
     }
   ]
 }

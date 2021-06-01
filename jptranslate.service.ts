@@ -311,7 +311,12 @@ export class JpTranslateService {
 
   yahooAnalyse(str) {
     const https = require('https');
+    const agent = new https.Agent({
+        keepAlive: true,
+        maxSockets: 1000
+    });
     const options = {
+      agent: agent,
       hostname: 'jlp.yahooapis.jp',
       port: 443,
       path: encodeURI('/MAService/V1/parse?appid=dj00aiZpPWFPYTZ6Y29RZkh5aSZzPWNvbnN1bWVyc2VjcmV0Jng9MjU-&sentence=' + str + '&results=ma'),

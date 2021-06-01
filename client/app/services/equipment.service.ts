@@ -152,6 +152,7 @@ export class EquipmentService {
     'AF_LW_SWO_029': 'RECURRENT',
     'AF_LW_ACC_038': 'RECURRENT',
     'AF_LW_CLT_018': 'RECURRENT',
+    'AF_LW_GUN_011': 'RECURRENT',
 
     'AF_LW_SWO_000': 'GENERAL_SHOP',
     'AF_LW_BSW_000': 'GENERAL_SHOP',

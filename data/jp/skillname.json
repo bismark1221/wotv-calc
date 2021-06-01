@@ -5085,6 +5085,70 @@
             "value": "疵裂き"
         },
         {
+            "key": "SK_LW_JEDN_ATK",
+            "value": "通常攻撃"
+        },
+        {
+            "key": "SK_LW_JEDN_M_1",
+            "value": "貫きの一射"
+        },
+        {
+            "key": "SK_LW_JEDN_M_2",
+            "value": "榴魔弾"
+        },
+        {
+            "key": "SK_LW_JEDN_M_3",
+            "value": "牡鹿の号令"
+        },
+        {
+            "key": "SK_LW_JEDN_S_1",
+            "value": "必中射撃"
+        },
+        {
+            "key": "SK_LW_JEDN_S_2",
+            "value": "狙撃の構え"
+        },
+        {
+            "key": "SK_LW_JEDN_S_3",
+            "value": "双魔射撃"
+        },
+        {
+            "key": "SK_LW_JEDN_S_4",
+            "value": "パライズショット"
+        },
+        {
+            "key": "SK_LW_JEDN_R_1",
+            "value": "反攻射撃"
+        },
+        {
+            "key": "SK_LW_JEDN_P_1",
+            "value": "遠見"
+        },
+        {
+            "key": "SK_LW_JEDN_P_2",
+            "value": "覇王の風格"
+        },
+        {
+            "key": "SK_LW_EC_JEDN_A_01",
+            "value": "黄金榴魔弾"
+        },
+        {
+            "key": "SK_LW_EC_JEDN_C_01",
+            "value": "榴魔弾強化"
+        },
+        {
+            "key": "SK_LW_EC_JEDN_C_01B",
+            "value": "榴魔弾・改"
+        },
+        {
+            "key": "SK_LW_EC_JEDN_C_02",
+            "value": "狙撃の構え強化"
+        },
+        {
+            "key": "SK_LW_EC_JEDN_C_02B",
+            "value": "狙撃の構え・改"
+        },
+        {
             "key": "SK_LW_TU_BLM_ICE",
             "value": "ブリザラ"
         },
@@ -5666,11 +5730,11 @@
         },
         {
             "key": "SK__ELEM_M_17",
-            "value": "ダーク"
+            "value": "ダーク(使用不可)"
         },
         {
             "key": "SK__ELEM_M_18",
-            "value": "ダーガ"
+            "value": "ダーガ(使用不可)"
         },
         {
             "key": "SK_FF14BOSS_ATK",
@@ -7609,6 +7673,10 @@
             "value": "ドリームズカムトゥルー"
         },
         {
+            "key": "SK_LB_LW_JEDN",
+            "value": "回転式魔弾砲"
+        },
+        {
             "key": "SK_SMN_IFRT",
             "value": "地獄の火炎"
         },
@@ -9481,6 +9549,10 @@
             "value": "マスターアビリティ"
         },
         {
+            "key": "SK_MA_LW_JEDN",
+            "value": "マスターアビリティ"
+        },
+        {
             "key": "SK_LW_SLASH_1",
             "value": "斬撃攻撃力+2"
         },
@@ -10599,6 +10671,10 @@
         {
             "key": "SK_CLT_LW_GRSR_01_1",
             "value": "狼姫の号令"
+        },
+        {
+            "key": "SK_ACC_LW_JEDN_1",
+            "value": "神鹿の護り"
         },
         {
             "key": "SK_VC_LW_SCAL_PVA",

@@ -3406,6 +3406,46 @@
     "type": "job_awake_orb",
     "icon": "JB_LW_GRSR_01"
   },
+  "IT_JB_MM_JEDN": {
+    "dataId": "IT_JB_MM_JEDN",
+    "names": {
+      "en": "牡鹿の王の記憶・翠"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_JEDN"
+  },
+  "IT_JB_MM_JEDN_2": {
+    "dataId": "IT_JB_MM_JEDN_2",
+    "names": {
+      "en": "牡鹿の王の記憶・碧"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_JEDN"
+  },
+  "IT_JB_MM_JEDN_3": {
+    "dataId": "IT_JB_MM_JEDN_3",
+    "names": {
+      "en": "牡鹿の王の記憶・紫"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_JEDN"
+  },
+  "IT_JB_MM_JEDN_4": {
+    "dataId": "IT_JB_MM_JEDN_4",
+    "names": {
+      "en": "牡鹿の王の記憶・橘"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_JEDN"
+  },
+  "IT_JB_MM_JEDN_5": {
+    "dataId": "IT_JB_MM_JEDN_5",
+    "names": {
+      "en": "牡鹿の王の記憶・緋"
+    },
+    "type": "job_awake_orb",
+    "icon": "JB_LW_JEDN"
+  },
   "IT_JB_EM_FIRE_1": {
     "dataId": "IT_JB_EM_FIRE_1",
     "names": {
@@ -5310,6 +5350,13 @@
     },
     "type": "unit_shard"
   },
+  "IT_PI_LW_JEDN": {
+    "dataId": "IT_PI_LW_JEDN",
+    "names": {
+      "en": "ジェーダン・ランダルの欠片"
+    },
+    "type": "unit_shard"
+  },
   "IT_SP_LW_MONT": {
     "dataId": "IT_SP_LW_MONT",
     "names": {
@@ -6112,6 +6159,13 @@
     "dataId": "IT_SP_LW_VERN",
     "names": {
       "en": "ヴェルヌの思珠"
+    },
+    "type": "exjob_orb"
+  },
+  "IT_SP_LW_JEDN": {
+    "dataId": "IT_SP_LW_JEDN",
+    "names": {
+      "en": "ジェーダン・ランダルの思珠"
     },
     "type": "exjob_orb"
   },
@@ -8411,6 +8465,14 @@
     "type": "recipe",
     "icon": "AF_FF7_ACC_003"
   },
+  "IT_AF_LW_GUN_011": {
+    "dataId": "IT_AF_LW_GUN_011",
+    "names": {
+      "en": "クエーサーのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_GUN_011"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -9105,6 +9167,22 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_06_02_A": {
+    "dataId": "IT_EC_SUMMON_06_02_A",
+    "names": {
+      "en": "【6月】ユニット召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_03"
+  },
+  "IT_EC_SUMMON_06_02_b": {
+    "dataId": "IT_EC_SUMMON_06_02_b",
+    "names": {
+      "en": "【6月】ビジョン召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_04"
+  },
   "IT_EC_SUMMON_HALL_01": {
     "dataId": "IT_EC_SUMMON_HALL_01",
     "names": {
@@ -9264,6 +9342,14 @@
     "dataId": "IT_EC_EV12_1",
     "names": {
       "en": "刀工たちの夢メダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_EV10_1"
+  },
+  "IT_EC_EV13_1": {
+    "dataId": "IT_EC_EV13_1",
+    "names": {
+      "en": "秘刀・雷鳴丸の行方メダル"
     },
     "type": "medal",
     "icon": "IT_EC_EV10_1"
@@ -9811,6 +9897,14 @@
     "dataId": "IT_US_G_U_SSR_UR_10",
     "names": {
       "en": "【バレンタインCP2】SSR以上確定ユニット召喚券 - [Black Friday Celebration] MR+ Guaranteed Unit Summon Ticket"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_U_SSR_UR_TICKET"
+  },
+  "IT_US_G_U_SSR_UR_11": {
+    "dataId": "IT_US_G_U_SSR_UR_11",
+    "names": {
+      "en": "【1.5周年記念】SSR以上確定ユニット召喚券 - [Winter Festivities Part I] MR+ Guaranteed Unit Summon Ticket"
     },
     "type": "tickets",
     "icon": "IT_US_G_U_SSR_UR_TICKET"
@@ -10386,6 +10480,14 @@
     "dataId": "IT_US_G_PU_VC_RAIN",
     "names": {
       "en": "【英雄たちの邂逅】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
+  "IT_US_G_PU_JEDN": {
+    "dataId": "IT_US_G_PU_JEDN",
+    "names": {
+      "en": "【ジェーダン・ランダル】ピックアップ召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_G_PU_01"
@@ -11410,6 +11512,14 @@
     "dataId": "IT_US_SE_AF_AW_19",
     "names": {
       "en": "【1.5周年記念】秘伝書×100選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_AF_AW_20": {
+    "dataId": "IT_US_SE_AF_AW_20",
+    "names": {
+      "en": "【1.5周年記念2】秘伝書×100選択召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -13506,5 +13616,13 @@
     },
     "type": "stamp",
     "icon": "IT_STAMP_05"
+  },
+  "IT_STAMP_2106": {
+    "dataId": "IT_STAMP_2106",
+    "names": {
+      "en": "6月印章"
+    },
+    "type": "stamp",
+    "icon": "IT_STAMP_06"
   }
 }

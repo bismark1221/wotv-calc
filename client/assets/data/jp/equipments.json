@@ -18910,7 +18910,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19167,7 +19168,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19460,7 +19462,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19769,7 +19772,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19827,6 +19831,305 @@
       }
     },
     "releaseDate": "01/01/1970"
+  },
+  "AF_LOT_LW_GUN_011": {
+    "names": {
+      "en": "クエーサー"
+    },
+    "slug": "kus",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 81
+      },
+      "ATK": {
+        "min": 3,
+        "max": 57
+      },
+      "MAG": {
+        "min": 9,
+        "max": 181
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 13
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_LW_GUN_011",
+    "grows": {
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "マジック"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "エイム"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_CRI_50": {
+        "dataId": "AFGROW_CRI_50",
+        "names": {
+          "en": "クリティカル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -20,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -50,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": 0,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃力+2"
+          },
+          "dataId": "SK_LW_SHOOT_1",
+          "effects": [
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃力+3"
+          },
+          "dataId": "SK_LW_SHOOT_2",
+          "effects": [
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃力+5"
+          },
+          "dataId": "SK_LW_SHOOT_3",
+          "effects": [
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃力+8"
+          },
+          "dataId": "SK_LW_SHOOT_4_SSR",
+          "effects": [
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 8,
+              "maxValue": 8,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "射撃攻撃力+15"
+          },
+          "dataId": "SK_LW_SHOOT_5_SSR",
+          "effects": [
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 15,
+              "maxValue": 15,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_gun_011",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_GUN_011": 1,
+        "IT_AF_MAT_SEED_01": 170,
+        "IT_AF_MAT_OGRE": 5,
+        "IT_AF_MAT_SHINE_01": 11,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_011": 3,
+        "IT_AF_MAT_SEED_01": 230,
+        "IT_AF_MAT_OGRE": 15,
+        "IT_AF_MAT_SHINE_01": 21,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_011": 7,
+        "IT_AF_MAT_SEED_01": 350,
+        "IT_AF_MAT_OGRE": 35,
+        "IT_AF_MAT_SHINE_01": 41,
+        "IT_AF_AW_GUN": 255
+      },
+      {
+        "IT_AF_LW_GUN_011": 15,
+        "IT_AF_MAT_SEED_01": 630,
+        "IT_AF_MAT_OGRE": 75,
+        "IT_AF_MAT_SHINE_01": 81,
+        "IT_AF_AW_GUN": 315
+      },
+      {
+        "IT_AF_LW_GUN_011": 31,
+        "IT_AF_MAT_SEED_01": 1250,
+        "IT_AF_MAT_OGRE": 155,
+        "IT_AF_MAT_SHINE_01": 161,
+        "IT_AF_AW_GUN": 535
+      },
+      {
+        "IT_AF_LW_GUN_011": 63,
+        "IT_AF_MAT_SEED_01": 2570,
+        "IT_AF_MAT_OGRE": 315,
+        "IT_AF_MAT_SHINE_01": 323,
+        "IT_AF_AW_GUN": 1125
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "01/06/2021"
   },
   "AF_LW_ROD_000": {
     "names": {
@@ -32248,7 +32551,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32523,7 +32827,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32856,7 +33161,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33201,7 +33507,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33546,7 +33853,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33692,7 +34000,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33987,7 +34296,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34318,7 +34628,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34661,7 +34972,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35008,7 +35320,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35350,7 +35663,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36300,7 +36614,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36650,7 +36965,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36865,7 +37181,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37471,7 +37788,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38113,7 +38431,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38767,7 +39086,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39556,7 +39876,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40216,7 +40537,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40869,7 +41191,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41344,7 +41667,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42030,7 +42354,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42417,7 +42742,8 @@
       "UN_LW_P_ELSI",
       "UN_LW_P_ELSR",
       "UN_FF10_P_YUNA",
-      "UN_LW_P_CMLO"
+      "UN_LW_P_CMLO",
+      "UN_LW_P_JEDN"
     ],
     "materials": [
       {
@@ -42900,7 +43226,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44279,7 +44606,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44928,7 +45256,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45582,7 +45911,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46231,7 +46561,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46457,7 +46788,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47077,7 +47409,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47730,7 +48063,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48709,7 +49043,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49081,7 +49416,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49724,7 +50060,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49939,7 +50276,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50688,7 +51026,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51760,7 +52099,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51878,7 +52218,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51996,7 +52337,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52114,7 +52456,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52273,7 +52616,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52425,7 +52769,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52545,7 +52890,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52665,7 +53011,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52785,7 +53132,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52878,7 +53226,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52971,7 +53320,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53151,7 +53501,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53318,7 +53669,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53469,7 +53821,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53622,7 +53975,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53777,7 +54131,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53919,7 +54274,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54061,7 +54417,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54203,7 +54560,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54318,7 +54676,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54478,7 +54837,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54593,7 +54953,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -54836,7 +55197,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55058,7 +55420,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55389,7 +55752,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55546,7 +55910,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55765,7 +56130,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55935,7 +56301,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -56068,7 +56435,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -56408,7 +56776,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -56982,7 +57351,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57332,7 +57702,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57462,7 +57833,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57625,7 +57997,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57783,7 +58156,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -58395,7 +58769,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -58957,7 +59332,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59122,7 +59498,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59487,7 +59864,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59665,7 +60043,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59947,7 +60326,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60107,7 +60487,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60395,7 +60776,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60487,7 +60869,8 @@
       "JB_FFT_MSTD",
       "JB_FF4_ROSA",
       "JB_LW_ARC_FIRE",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60711,7 +61094,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60969,7 +61353,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -61131,7 +61516,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -61400,7 +61786,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -61559,7 +61946,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -61713,7 +62101,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -61875,7 +62264,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62026,7 +62416,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62172,7 +62563,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62308,7 +62700,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62471,7 +62864,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62630,7 +63024,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62774,7 +63169,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62928,7 +63324,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -63070,7 +63467,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -63778,7 +64176,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -64400,7 +64799,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -64682,7 +65082,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -64816,7 +65217,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -64954,7 +65356,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -65098,7 +65501,8 @@
       "JB_FF7_TIFA",
       "JB_FF7_AERT",
       "JB_FF7_BART",
-      "JB_LW_GRSR_01"
+      "JB_LW_GRSR_01",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -65209,6 +65613,109 @@
       "unitId": "UN_LW_P_VERN"
     },
     "releaseDate": "24/05/2021"
+  },
+  "AF_ACC_LW_JEDN_1": {
+    "names": {
+      "en": "ランダルエンブレム"
+    },
+    "slug": "randaru-emburemu",
+    "stats": {
+      "HP": {
+        "min": 302,
+        "max": 302
+      },
+      "SPR": {
+        "min": 7,
+        "max": 7
+      },
+      "ACCURACY": {
+        "min": 12,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    "type": "ACC",
+    "dataId": "AF_ACC_LW_JEDN_1",
+    "grows": {
+      "ARTIFACT_TRUST": {
+        "dataId": "ARTIFACT_TRUST",
+        "names": {
+          "en": "ARTIFACT_TRUST"
+        },
+        "curve": {
+          "MAX_LV": 1
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "神鹿の護り"
+          },
+          "dataId": "SK_ACC_LW_JEDN_1",
+          "effects": [
+            {
+              "type": "REDUCE_DAMAGE_GENERAL",
+              "calcType": "percent",
+              "turnType": "TURNS",
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            },
+            {
+              "type": "MISSILE_ATK",
+              "minValue": 10,
+              "maxValue": 25,
+              "calcType": "fixe",
+              "turn": 3,
+              "target": "self",
+              "timing": "SKILL_AFTER"
+            }
+          ],
+          "type": "skill",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "SKILL_DEFAULT",
+          "target": "self",
+          "cost": {
+            "type": "TP",
+            "value": 24
+          },
+          "count": 1,
+          "maxLevel": 20
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_acc_035",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_FINA",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF4_ROSA",
+      "JB_LW_ARC_FIRE",
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "tmr",
+      "unitId": "UN_LW_P_JEDN"
+    },
+    "releaseDate": "01/06/2021"
   },
   "AF_SWO_LW_MONT_2": {
     "names": {
@@ -66007,7 +66514,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -66606,7 +67114,8 @@
       "JB_LW_GUN_FIRE",
       "JB_LW_WGN_FIRE",
       "JB_FFT_MSTD",
-      "JB_FF7_BART"
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
     ],
     "equippableUnits": [],
     "materials": [
@@ -69691,6 +70200,59 @@
       "type": "Unknown"
     },
     "releaseDate": "01/01/1970"
+  },
+  "AF_GUN_LW_JEDN_2": {
+    "names": {
+      "en": "ジェーダン専用武器"
+    },
+    "slug": "j-dan-senyou-buki",
+    "stats": {
+      "HP": {
+        "min": 4,
+        "max": 69
+      },
+      "ATK": {
+        "min": 9,
+        "max": 168
+      },
+      "MAG": {
+        "min": 7,
+        "max": 126
+      }
+    },
+    "type": "GUN",
+    "dataId": "AF_GUN_LW_JEDN_2",
+    "grows": {
+      "ARTIFACT_50": {
+        "dataId": "ARTIFACT_50",
+        "names": {
+          "en": "ARTIFACT_50"
+        },
+        "curve": {
+          "MAX_LV": 30
+        }
+      }
+    },
+    "skills": [
+      []
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_gun_010",
+    "equippableJobs": [
+      "JB_LW_GUN_FIRE",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {}
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "01/06/2021"
   },
   "AF_ACC_LW_FRVA_1": {
     "names": {
