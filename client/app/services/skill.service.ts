@@ -20,6 +20,7 @@ export class SkillService {
     'dispel': 'x',
     'unknow': 'x',
     'decrease': 'x',
+    'hp': 'hp',
     undefined: 'x'
   };
 

@@ -65660,7 +65660,9 @@
           "effects": [
             {
               "type": "REDUCE_DAMAGE_GENERAL",
-              "calcType": "percent",
+              "minValue": 1000,
+              "maxValue": 2500,
+              "calcType": "hp",
               "turnType": "TURNS",
               "target": "self",
               "timing": "SKILL_AFTER"
