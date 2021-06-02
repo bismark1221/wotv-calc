@@ -18330,7 +18330,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -18404,7 +18405,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -18710,7 +18712,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19353,7 +19356,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19711,7 +19715,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -19769,6 +19774,554 @@
       }
     },
     "releaseDate": "01/01/1970"
+  },
+  "AF_LOT_LW_ROD_006": {
+    "names": {
+      "en": "Cypress Pile",
+      "fr": "Bâton de cyprès",
+      "de": "Zypressenstab",
+      "es": "Palo de ciprés",
+      "ko": "사이프러스 파일",
+      "zh": "柏木棒"
+    },
+    "slug": "cypress-pile",
+    "stats": {
+      "HP": {
+        "min": 9,
+        "max": 178
+      },
+      "ATK": {
+        "min": 1,
+        "max": 16
+      },
+      "MAG": {
+        "min": 8,
+        "max": 166
+      },
+      "ACCURACY": {
+        "min": 1,
+        "max": 12
+      },
+      "CRITIC_RATE": {
+        "min": 1,
+        "max": 12
+      }
+    },
+    "type": "ROD",
+    "dataId": "AF_LW_ROD_006",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "Vital",
+          "fr": "Vitalité",
+          "de": "Vital",
+          "es": "Vital",
+          "ko": "바이탈",
+          "zh": "活力"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_MAG_50": {
+        "dataId": "AFGROW_MAG_50",
+        "names": {
+          "en": "Magic",
+          "fr": "Magie",
+          "de": "Magie",
+          "es": "Mágico",
+          "ko": "매직",
+          "zh": "魔法"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -40,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -75,
+          "MAG": 0,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_AIM_50": {
+        "dataId": "AFGROW_AIM_50",
+        "names": {
+          "en": "Aim",
+          "fr": "Visée",
+          "de": "Zielen",
+          "es": "Certero",
+          "ko": "에임",
+          "zh": "瞄準"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -30,
+          "DEF": -75,
+          "MAG": -30,
+          "SPR": -75,
+          "ACCURACY": 0,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Cypress Pile (Magic Res Piercing)",
+            "fr": "Bâton de cyprès (Perforation rés. aux att. mag.)",
+            "de": "Zypressenstab (Magieresistenz-Durchbohren)",
+            "es": "Palo de ciprés (penetración de res. mágica)",
+            "ko": "사이프러스 파일(마법 저항력 관통)",
+            "zh": "柏木棒（魔法耐性貫通）"
+          },
+          "dataId": "SK_LW_ROD_006_2_1",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Cypress Pile (Magic Res Piercing)",
+            "fr": "Bâton de cyprès (Perforation rés. aux att. mag.)",
+            "de": "Zypressenstab (Magieresistenz-Durchbohren)",
+            "es": "Palo de ciprés (penetración de res. mágica)",
+            "ko": "사이프러스 파일(마법 저항력 관통)",
+            "zh": "柏木棒（魔法耐性貫通）"
+          },
+          "dataId": "SK_LW_ROD_006_2_2",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 3,
+              "maxValue": 3,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Cypress Pile (Magic Res Piercing)",
+            "fr": "Bâton de cyprès (Perforation rés. aux att. mag.)",
+            "de": "Zypressenstab (Magieresistenz-Durchbohren)",
+            "es": "Palo de ciprés (penetración de res. mágica)",
+            "ko": "사이프러스 파일(마법 저항력 관통)",
+            "zh": "柏木棒（魔法耐性貫通）"
+          },
+          "dataId": "SK_LW_ROD_006_2_3",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Cypress Pile (Magic Res Piercing)",
+            "fr": "Bâton de cyprès (Perforation rés. aux att. mag.)",
+            "de": "Zypressenstab (Magieresistenz-Durchbohren)",
+            "es": "Palo de ciprés (penetración de res. mágica)",
+            "ko": "사이프러스 파일(마법 저항력 관통)",
+            "zh": "柏木棒（魔法耐性貫通）"
+          },
+          "dataId": "SK_LW_ROD_006_2_4",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 10,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "names": {
+            "en": "Cypress Pile (Confusion)",
+            "fr": "Bâton de cyprès (Confusion)",
+            "de": "Zypressenstab (Konfus)",
+            "es": "Palo de ciprés (confusión)",
+            "ko": "사이프러스 파일(혼란 효과)",
+            "zh": "柏木棒（賦予混亂）"
+          },
+          "dataId": "SK_LW_ROD_006_1",
+          "effects": [
+            {
+              "type": "CONFUSION_ATK",
+              "calcType": "apply",
+              "rate": 25,
+              "turn": 3,
+              "fromImbue": true,
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        },
+        {
+          "names": {
+            "en": "Cypress Pile (Magic Res Piercing)",
+            "fr": "Bâton de cyprès (Perforation rés. aux att. mag.)",
+            "de": "Zypressenstab (Magieresistenz-Durchbohren)",
+            "es": "Palo de ciprés (penetración de res. mágica)",
+            "ko": "사이프러스 파일(마법 저항력 관통)",
+            "zh": "柏木棒（魔法耐性貫通）"
+          },
+          "dataId": "SK_LW_ROD_006_2_5",
+          "effects": [
+            {
+              "type": "RES_MAGIC_ATK_PENETRATION",
+              "minValue": 20,
+              "maxValue": 20,
+              "calcType": "fixe",
+              "target": "self"
+            }
+          ],
+          "type": "support",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "target": "self",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "MR",
+    "image": "lapswpn_rod_006",
+    "equippableJobs": [
+      "JB_LW_WHM_FIRE",
+      "JB_LW_BLM_FIRE",
+      "JB_LW_GRM_FIRE",
+      "JB_LW_TIM_FIRE",
+      "JB_FF14_YSTL",
+      "JB_LW_MST_FIRE",
+      "JB_LW_SAKR",
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_ROD_006": 1,
+        "IT_AF_MAT_SAND_03": 170,
+        "IT_AF_MAT_MYTHRIL": 5,
+        "IT_AF_MAT_WIND_01": 11,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_006": 3,
+        "IT_AF_MAT_SAND_03": 230,
+        "IT_AF_MAT_MYTHRIL": 15,
+        "IT_AF_MAT_WIND_01": 21,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_006": 7,
+        "IT_AF_MAT_SAND_03": 350,
+        "IT_AF_MAT_MYTHRIL": 35,
+        "IT_AF_MAT_WIND_01": 41,
+        "IT_AF_AW_STAFF": 255
+      },
+      {
+        "IT_AF_LW_ROD_006": 15,
+        "IT_AF_MAT_SAND_03": 630,
+        "IT_AF_MAT_MYTHRIL": 75,
+        "IT_AF_MAT_WIND_01": 81,
+        "IT_AF_AW_STAFF": 315
+      },
+      {
+        "IT_AF_LW_ROD_006": 31,
+        "IT_AF_MAT_SAND_03": 1250,
+        "IT_AF_MAT_MYTHRIL": 155,
+        "IT_AF_MAT_WIND_01": 161,
+        "IT_AF_AW_STAFF": 535
+      },
+      {
+        "IT_AF_LW_ROD_006": 63,
+        "IT_AF_MAT_SAND_03": 2570,
+        "IT_AF_MAT_MYTHRIL": 315,
+        "IT_AF_MAT_WIND_01": 323,
+        "IT_AF_AW_STAFF": 1125
+      }
+    ],
+    "acquisition": {
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
+    },
+    "releaseDate": "02/06/2021"
   },
   "AF_LOT_LW_ROD_007": {
     "names": {
@@ -20220,7 +20773,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -20767,7 +21321,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26355,7 +26910,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -26665,7 +27221,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27038,7 +27595,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27423,7 +27981,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27574,7 +28133,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -27909,7 +28469,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28280,7 +28841,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -28663,7 +29225,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29050,7 +29613,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29416,7 +29980,8 @@
       "JB_LW_SAKR",
       "JB_LW_PSI_FIRE",
       "JB_FF10_YUNA",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -29649,7 +30214,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -30352,7 +30918,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31091,7 +31658,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -31842,7 +32410,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32753,7 +33322,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -32943,7 +33513,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33079,7 +33650,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -33908,7 +34480,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -34934,7 +35507,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35033,7 +35607,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -35133,7 +35708,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36043,7 +36619,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36171,7 +36748,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36299,7 +36877,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36427,7 +37006,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36596,7 +37176,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36758,7 +37339,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -36888,7 +37470,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37018,7 +37601,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37148,7 +37732,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37246,7 +37831,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37344,7 +37930,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37530,7 +38117,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37704,7 +38292,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -37862,7 +38451,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38022,7 +38612,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38184,7 +38775,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38333,7 +38925,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38482,7 +39075,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38631,7 +39225,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38748,7 +39343,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -38915,7 +39511,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39032,7 +39629,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39297,7 +39895,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39393,7 +39992,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39542,7 +40142,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -39901,7 +40502,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40065,7 +40667,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40208,7 +40811,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40606,7 +41210,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40837,7 +41442,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -40995,7 +41601,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41239,7 +41846,8 @@
       "JB_LW_BEA_FIRE",
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41625,7 +42233,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41765,7 +42374,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -41948,7 +42558,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42096,7 +42707,8 @@
       "JB_LW_BEA_FIRE",
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42323,7 +42935,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42493,7 +43106,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -42658,7 +43272,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -43477,7 +44092,8 @@
       "JB_LW_SAKR",
       "JB_LW_PSI_FIRE",
       "JB_FF10_YUNA",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -43972,7 +44588,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44156,7 +44773,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44334,7 +44952,9 @@
       "JB_LW_MURM_M",
       "JB_LW_AYKA_M",
       "JB_LW_FDRC_M",
+      "JB_LW_SDLX_M",
       "JB_FF10_ARON",
+      "JB_LW_VNLA_M",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_HLNA_01_M"
@@ -44457,7 +45077,8 @@
       "JB_LW_SAKR",
       "JB_LW_PSI_FIRE",
       "JB_FF10_YUNA",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44629,7 +45250,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -44847,7 +45469,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45037,7 +45660,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45204,7 +45828,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45762,7 +46387,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -45901,7 +46527,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46166,7 +46793,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46266,7 +46894,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46412,7 +47041,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46582,7 +47212,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46748,7 +47379,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -46909,7 +47541,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47078,7 +47711,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47239,7 +47873,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47395,7 +48030,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47561,7 +48197,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47715,7 +48352,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -47876,7 +48514,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48028,7 +48667,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -48247,85 +48887,20 @@
     "rarity": "UR",
     "image": "lapswpn_acc_033",
     "equippableJobs": [
-      "JB_LW_WAR",
-      "JB_LW_PLD",
-      "JB_LW_KNT",
-      "JB_LW_SWN",
-      "JB_LW_HUN",
-      "JB_LW_MNK",
-      "JB_LW_LAN",
-      "JB_LW_CLR",
-      "JB_LW_SAM",
-      "JB_LW_DRG",
+      "JB_LW_CLR_FIRE",
       "JB_LW_BLM_FIRE",
-      "JB_LW_THI",
-      "JB_LW_NIN",
-      "JB_LW_GUN",
       "JB_LW_GRM_FIRE",
-      "JB_LW_MGK_FIRE",
       "JB_LW_RDM_FIRE",
-      "JB_LW_TIM",
-      "JB_LW_WHM",
-      "JB_LW_GLMS",
+      "JB_LW_TIM_FIRE",
+      "JB_LW_WHM_FIRE",
       "JB_FF14_YSTL",
-      "JB_FF14_TNCR",
-      "JB_LW_WGN",
-      "JB_LW_VIK",
       "JB_LW_FINA",
-      "JB_FFT_RAMZ",
-      "JB_FFT_GFGR",
-      "JB_FFT_ORND",
-      "JB_LW_RAIN",
-      "JB_LW_ASS",
-      "JB_FF1_WROL",
-      "JB_LW_MST_FIRE",
-      "JB_FFT_AGRA",
-      "JB_FFT_DELT",
-      "JB_FFT_MSTD",
-      "JB_LW_CAL",
-      "JB_LW_STRN",
-      "JB_LW_GRSR",
-      "JB_LW_LSWL",
-      "JB_LW_MKN",
-      "JB_FF4_CECL",
-      "JB_FF4_ROSA",
-      "JB_FF4_KAIN",
-      "JB_LW_DEAN",
-      "JB_LW_ARC",
+      "JB_LW_CAL_FIRE",
+      "JB_LW_MKN_FIRE",
+      "JB_LW_MMC_FIRE",
       "JB_LW_SAKR",
-      "JB_LW_MMC",
-      "JB_LW_BEA",
-      "JB_LW_MSW",
-      "JB_LW_PSI",
-      "JB_LW_LIB",
-      "JB_LW_WIZ",
-      "JB_FF10_TIDU",
-      "JB_FF10_YUNA",
-      "JB_LW_MONT_M",
-      "JB_LW_ROBB_M",
-      "JB_LW_OOOO_M",
-      "JB_LW_SIMR_M",
-      "JB_LW_ORDR_M",
-      "JB_LW_ELDE_M",
-      "JB_LW_AILN_M",
-      "JB_LW_BYLO_M",
-      "JB_LW_RART_M",
-      "JB_LW_ZIZA_M",
-      "JB_LW_ETRE_M",
-      "JB_LW_ZZAN_M",
-      "JB_LW_MDNA_M",
-      "JB_LW_PHBE_M",
-      "JB_LW_YERM_M",
-      "JB_LW_NASR_M",
-      "JB_LW_RYEL_M",
-      "JB_LW_SIRM_M",
-      "JB_LW_MURM_M",
-      "JB_LW_AYKA_M",
-      "JB_LW_FDRC_M",
-      "JB_FF10_ARON",
-      "JB_NIER_N2TB",
-      "JB_NIER_N9TS",
-      "JB_LW_HLNA_01_M"
+      "JB_FF4_ROSA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49002,7 +49577,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -49076,7 +49652,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -50442,7 +51019,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51274,7 +51852,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51573,7 +52152,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -51900,7 +52480,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52402,7 +52983,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -52771,7 +53353,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53006,7 +53589,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -53709,7 +54293,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -55338,7 +55923,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -57133,7 +57719,8 @@
       "JB_FF10_YUNA",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59096,7 +59683,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -59478,7 +60066,8 @@
       "JB_FF10_ARON",
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -60834,7 +61423,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -62320,7 +62910,8 @@
       "JB_FF14_YSTL",
       "JB_LW_MST_FIRE",
       "JB_LW_SAKR",
-      "JB_FF10_YUNA"
+      "JB_FF10_YUNA",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -63073,7 +63664,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -63824,7 +64416,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -66838,7 +67431,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -67578,7 +68172,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [
@@ -67816,7 +68411,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [

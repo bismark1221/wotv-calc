@@ -6097,6 +6097,30 @@
     },
     "type": "compo_job"
   },
+  "IT_JBEX_SSWORD": {
+    "dataId": "IT_JBEX_SSWORD",
+    "names": {
+      "en": "Dagger-Branded Tablet",
+      "fr": "Stèle pour dagues",
+      "de": "Dolch-Symboltafel",
+      "es": "Losa de dagas",
+      "ko": "단검의 낙인석",
+      "zh": "短劍之焦印石"
+    },
+    "type": "compo_job"
+  },
+  "IT_JBEX_KUNAI": {
+    "dataId": "IT_JBEX_KUNAI",
+    "names": {
+      "en": "Ninja Blade-Branded Tablet",
+      "fr": "Stèle pour lames ninja",
+      "de": "Shinobigatana-Symboltafel",
+      "es": "Losa de hojas ninja",
+      "ko": "닌자도의 낙인석",
+      "zh": "忍刀之焦印石"
+    },
+    "type": "compo_job"
+  },
   "IT_UN_AW_FIRE": {
     "dataId": "IT_UN_AW_FIRE",
     "names": {
@@ -12018,6 +12042,19 @@
     "type": "recipe",
     "icon": "AF_LW_ROD_005"
   },
+  "IT_AF_LW_ROD_006": {
+    "dataId": "IT_AF_LW_ROD_006",
+    "names": {
+      "en": "Cypress Pile Crafting Recipe",
+      "fr": "Recette d'artisanat : Bâton de cyprès",
+      "de": "[Anleitung] Zypressenstab",
+      "es": "Receta: palo de ciprés",
+      "ko": "사이프러스 파일 제작법",
+      "zh": "柏木棒的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ROD_006"
+  },
   "IT_AF_LW_MAC_001": {
     "dataId": "IT_AF_LW_MAC_001",
     "names": {
@@ -13945,6 +13982,19 @@
     "type": "medal",
     "icon": "IT_EC_SUMMON_02"
   },
+  "IT_EC_SUMMON_06_02_A": {
+    "dataId": "IT_EC_SUMMON_06_02_A",
+    "names": {
+      "en": "June Summon Medal A",
+      "fr": "Médaille d'invocation A [Juin]",
+      "de": "Juni-Beschwörungsmedaille A",
+      "es": "Medalla de invocación de junio (A)",
+      "ko": "[6월] 소환 메달 A",
+      "zh": "【6月】召喚獎牌A"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_02"
+  },
   "IT_EC_SUMMON_1st_GL1": {
     "dataId": "IT_EC_SUMMON_1st_GL1",
     "names": {
@@ -14504,6 +14554,71 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_05_GL_16": {
+    "dataId": "IT_US_SE_JB_05_GL_16",
+    "names": {
+      "en": "[Rose Festival] Select Spinel x70 Summon Ticket",
+      "fr": "[Festival des roses] Ticket sélectionneur de 70 spinelles",
+      "de": "[Rosenfestival] „Auswählbarer Spinell x70“-Beschwörungsticket",
+      "es": "[Festival de la rosa] Tícket seleccionador de 70 espinelas",
+      "ko": "[장미 축제 기념] 스피넬×70 선택 소환 티켓",
+      "zh": "【玫瑰慶典紀念】尖晶石×70選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_04_GL_11": {
+    "dataId": "IT_US_SE_JB_04_GL_11",
+    "names": {
+      "en": "[Rose Festival] Select Citrine x30 Summon Ticket",
+      "fr": "[Festival des roses] Ticket sélectionneur de 30 citrines",
+      "de": "[Rosenfestival] „Auswählbarer Citrin x30“-Beschwörungsticket",
+      "es": "[Festival de la rosa] Tícket seleccionador de 30 citrinos",
+      "ko": "[장미 축제 기념] 시트린×30 선택 소환 티켓",
+      "zh": "【玫瑰慶典紀念】黃水晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_03_GL_10": {
+    "dataId": "IT_US_SE_JB_03_GL_10",
+    "names": {
+      "en": "[Rose Festival] Select Charoite x30 Summon Ticket",
+      "fr": "[Festival des roses] Ticket sélectionneur de 30 charoïtes",
+      "de": "[Rosenfestival] „Auswählbarer Charoit x30“-Beschwörungsticket",
+      "es": "[Festival de la rosa] Tícket seleccionador de 30 charoítas",
+      "ko": "[장미 축제 기념] 차로아이트×30 선택 소환 티켓",
+      "zh": "【玫瑰慶典紀念】紫龍晶×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_02_GL_08": {
+    "dataId": "IT_US_SE_JB_02_GL_08",
+    "names": {
+      "en": "[Rose Festival] Select Azurite x30 Summon Ticket",
+      "fr": "[Festival des roses] Ticket sélectionneur de 30 azurites",
+      "de": "[Rosenfestival] „Auswählbarer Azurit x30“-Beschwörungsticket",
+      "es": "[Festival de la rosa] Tícket seleccionador de 30 azuritas",
+      "ko": "[장미 축제 기념] 아즈라이트×30 선택 소환 티켓",
+      "zh": "【玫瑰慶典紀念】藍銅礦×30選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_JB_01_GL_08": {
+    "dataId": "IT_US_SE_JB_01_GL_08",
+    "names": {
+      "en": "[Rose Festival] Select Jadeite x15 Summon Ticket",
+      "fr": "[Festival des roses] Ticket sélectionneur de 15 jades",
+      "de": "[Rosenfestival] „Auswählbarer Jadeit x15“-Beschwörungsticket",
+      "es": "[Festival de la rosa] Tícket seleccionador de 15 jadeítas",
+      "ko": "[장미 축제 기념] 제이다이트×15 선택 소환 티켓",
+      "zh": "【玫瑰慶典紀念】翡翠硬玉×15選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_COM_GL_04": {
     "dataId": "IT_US_SE_PI_COM_GL_04",
     "names": {
@@ -14820,7 +14935,7 @@
     "dataId": "IT_EC_FF1_GL1",
     "names": {
       "en": "FFI Reissue Login Medal",
-      "fr": "Médaille de connexion FFI [réédition]",
+      "fr": "Médaille de connexion (réédition collaboration FFI)",
       "de": "FFI-Anmeldemedaille (Wiederholung)",
       "es": "Medalla de acceso de FFI de vuelta",
       "ko": "FFI 콜라보 재등장 출석 메달",
@@ -19064,6 +19179,18 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_ROSEFES": {
+    "dataId": "IT_VPI_LW_ROSEFES",
+    "names": {
+      "en": "\"Maidens of the Rose\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Les demoiselles aux roses",
+      "de": "„Die Rosenmaiden“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Las chicas de las rosas»",
+      "ko": " '장미꽃 아가씨들'의 조각",
+      "zh": "薔薇的少女們的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -19930,6 +20057,19 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_GL_SE_VPI_29": {
+    "dataId": "IT_US_GL_SE_VPI_29",
+    "names": {
+      "en": "Select Vision Card Shard x25 Summon Ticket",
+      "fr": "Ticket sélectionneur de 25 fragments d'atout-vision",
+      "de": "„Auswählbares Visionskartenfragment x25“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 25 fragmentos de carta de visión",
+      "ko": "비전 카드의 조각×25 선택 소환 티켓",
+      "zh": "幻兵卡碎片×25選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_PI_GL_21": {
     "dataId": "IT_US_SE_PI_GL_21",
     "names": {
@@ -19952,6 +20092,19 @@
       "es": "[Celebración 1.er aniversario] Tícket seleccionador de 40 fragmentos de unidad UR",
       "ko": "[출시 1주년 기념] UR 유닛의 조각 × 40 선택 소환 티켓",
       "zh": "【1週年紀念】UR兵員碎片×40選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_SE_PI_GL_24": {
+    "dataId": "IT_US_SE_PI_GL_24",
+    "names": {
+      "en": "Select Unit Shard x40 Summon Ticket",
+      "fr": "Ticket sélectionneur de 40 fragments d'unité",
+      "de": "„Auswählbares Einheitenfragment x40“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 40 fragmentos de unidad",
+      "ko": "유닛의 조각×40 선택 소환 티켓",
+      "zh": "兵員碎片×40選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
@@ -20354,6 +20507,19 @@
       "de": "„Auswählbare Symboltafel x300“-Beschwörungsticket",
       "es": "Tícket seleccionador de 300 losas de armas",
       "ko": "낙인석 × 300 선택 소환 티켓",
+      "zh": "焦印石×300選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_JBEX_AF_5": {
+    "dataId": "IT_US_GL_SE_JBEX_AF_5",
+    "names": {
+      "en": "Select Branded Tablet x300 Summon Ticket",
+      "fr": "Ticket sélectionneur de 300 stèles",
+      "de": "„Auswählbare Symboltafel x300“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 300 losas de armas",
+      "ko": "낙인석×300 선택 소환 티켓",
       "zh": "焦印石×300選擇召喚券"
     },
     "type": "tickets",

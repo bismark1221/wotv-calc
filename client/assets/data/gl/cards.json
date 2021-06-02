@@ -10308,7 +10308,8 @@
               "JB_FF14_YSTL",
               "JB_LW_MST_FIRE",
               "JB_LW_SAKR",
-              "JB_FF10_YUNA"
+              "JB_FF10_YUNA",
+              "JB_LW_WIZ"
             ]
           }
         ]
@@ -10373,7 +10374,8 @@
               "JB_FF14_YSTL",
               "JB_LW_MST_FIRE",
               "JB_LW_SAKR",
-              "JB_FF10_YUNA"
+              "JB_FF10_YUNA",
+              "JB_LW_WIZ"
             ]
           }
         ]
@@ -11522,7 +11524,8 @@
               "JB_FF14_YSTL",
               "JB_LW_MST_FIRE",
               "JB_LW_SAKR",
-              "JB_FF10_YUNA"
+              "JB_FF10_YUNA",
+              "JB_LW_WIZ"
             ]
           }
         ]
@@ -11589,7 +11592,8 @@
           {
             "type": "unit",
             "items": [
-              "UN_LW_P_HLNA"
+              "UN_LW_P_HLNA",
+              "UN_LW_P_HLNA_01"
             ]
           }
         ]
@@ -11671,7 +11675,8 @@
               "JB_FF14_YSTL",
               "JB_LW_MST_FIRE",
               "JB_LW_SAKR",
-              "JB_FF10_YUNA"
+              "JB_FF10_YUNA",
+              "JB_LW_WIZ"
             ]
           }
         ]
@@ -16797,6 +16802,408 @@
               "UN_LW_P_MONT",
               "UN_LW_P_MONT_01",
               "UN_LW_P_MACR"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_ROSEFES": {
+    "dataId": "VC_LW_ROSEFES",
+    "names": {
+      "en": "Maidens of the Rose",
+      "fr": "Les demoiselles aux roses",
+      "de": "Die Rosenmaiden",
+      "es": "Las chicas de las rosas",
+      "ko": "장미꽃 아가씨들",
+      "zh": "薔薇的少女們"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 326
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 38,
+        "max": 150
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {
+        "min": 6,
+        "max": 20
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsrosefes",
+    "releaseDate": "02/06/2021",
+    "slug": "maidens-of-the-rose",
+    "partyBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 15,
+              "maxValue": 25,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 5,
+              "maxValue": 10,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GS",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 1,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GS_AW",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LUCK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            },
+            {
+              "type": "RES_SLASH_ATK_PENETRATION",
+              "minValue": 4,
+              "maxValue": 4,
+              "calcType": "fixe",
+              "condition": "DARK_ELEMENT",
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GSMAX",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GS_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 0,
+              "maxValue": 0,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GS_AW_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "DEX",
+              "minValue": 35,
+              "maxValue": 35,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "selfSide"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_GSMAX_2",
+          "type": "party",
+          "mainSkill": false,
+          "names": {},
+          "target": "selfSide",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 10,
+              "maxValue": 20,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_P",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 1,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_PAW",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "ATK",
+              "minValue": 5,
+              "maxValue": 5,
+              "calcType": "percent",
+              "condition": "DARK_ELEMENT",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_PMAX",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "dark"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LIGHT_RES",
+              "minValue": 2,
+              "maxValue": 5,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_P_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 99
+        },
+        "awake": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LIGHT_RES",
+              "minValue": 1,
+              "maxValue": 3,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 2,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_PAW_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 4
+        },
+        "lvmax": {
+          "unlockStar": null,
+          "effects": [
+            {
+              "type": "LIGHT_RES",
+              "minValue": 2,
+              "maxValue": 2,
+              "calcType": "resistance",
+              "target": "self"
+            },
+            {
+              "type": "AGI",
+              "minValue": 1,
+              "maxValue": 1,
+              "calcType": "percent",
+              "increaseMax": true,
+              "target": "self"
+            }
+          ],
+          "dataId": "SK_VC_LW_ROSEFES_PMAX_2",
+          "type": "support",
+          "mainSkill": false,
+          "names": {},
+          "target": "self",
+          "maxLevel": 1
+        },
+        "cond": [
+          {
+            "type": "unit",
+            "items": [
+              "UN_LW_P_VNLA",
+              "UN_LW_P_VNLA_01",
+              "UN_LW_P_SDLX"
             ]
           }
         ]

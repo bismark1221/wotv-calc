@@ -22606,9 +22606,9 @@
   },
   "AF_LOT_LW_ROD_006": {
     "names": {
-      "en": "サイプレスパイル"
+      "en": "サイプレスパイル - Cypress Pile"
     },
-    "slug": "saipuresu-pairu",
+    "slug": "cypress-pile",
     "stats": {
       "HP": {
         "min": 9,
@@ -23067,7 +23067,14 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     },
     "releaseDate": "01/02/2021"
   },
@@ -70427,7 +70434,8 @@
       "JB_NIER_N2TB",
       "JB_NIER_N9TS",
       "JB_LW_MONT_01",
-      "JB_LW_LIB_FIRE"
+      "JB_LW_LIB_FIRE",
+      "JB_LW_WIZ"
     ],
     "equippableUnits": [],
     "materials": [

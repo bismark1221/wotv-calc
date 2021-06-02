@@ -24,6 +24,21 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '02/06',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_HLNA_01'},
+          {type: 'card', dataId: 'VC_LW_ROSEFES'},
+          {type: 'equipment', dataId: 'AF_LW_ROD_006'}
+        ]
+      },
+      {
+        date: '',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_VNLA'},
+          {type: 'unit', dataId: 'UN_LW_P_SDLX'}
+        ]
+      },
+      {
         date: '26/05',
         items: [
           {type: 'card', dataId: 'VC_LW_CMLO'},
@@ -57,24 +72,6 @@ export class HomeComponent {
           {type: 'equipment', dataId: 'AF_LW_FTW_001'},
           {type: 'equipment', dataId: 'AF_LW_ARM_005'},
           {type: 'equipment', dataId: 'AF_LW_ROD_007'}
-        ]
-      },
-      {
-        date: '21/05',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_PNIX'},
-          {type: 'card', dataId: 'VC_LW_PNIX'},
-          {type: 'card', dataId: 'VC_LW_LILS2'},
-          {type: 'equipment', dataId: 'AF_LW_ARM_028'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'esper', dataId: 'UN_LW_S_ODIN'},
-          {type: 'unit', dataId: 'UN_LW_P_YERM'},
-          {type: 'unit', dataId: 'UN_LW_P_NASR'},
-          {type: 'unit', dataId: 'UN_LW_P_ETRE'}
         ]
       }
     ],

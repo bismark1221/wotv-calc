@@ -28048,6 +28048,232 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_LW_MKN_ICE_S_1_INIT": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_MKN_ICE_S_1_INIT",
+    "type": "skill",
+    "names": {
+      "en": "Blizzard Blade",
+      "fr": "Lame Glace",
+      "de": "Eis-Klinge",
+      "es": "Hoja Hielo",
+      "ko": "블리자드 검",
+      "zh": "暴雪劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 8,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 21,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_LW_MKN_ICE_M_1": {
+    "effects": [
+      {
+        "type": "WIND_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_MKN_ICE_M_1",
+    "type": "skill",
+    "names": {
+      "en": "Blizzaga Blade",
+      "fr": "Lame Glace X",
+      "de": "Eisga-Klinge",
+      "es": "Hoja Hielo++",
+      "ko": "블리자가 검",
+      "zh": "大暴雪劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_LW_MKN_S_3": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 60,
+        "maxValue": 100,
+        "calcType": "percent",
+        "turn": 1,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MKN_S_3",
+    "type": "skill",
+    "names": {
+      "en": "Drain Evocation",
+      "fr": "Saignée rituelle",
+      "de": "Entzugsanrufung",
+      "es": "Evocación de drenaje",
+      "ko": "드레인 이보크",
+      "zh": "吸血喚動"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 5,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -40,
+      "maxValue": -14,
+      "type": "magic",
+      "effType": "ABSORB",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_MKN_S_2": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 10,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MKN_S_2",
+    "type": "skill",
+    "names": {
+      "en": "Hazard Spell",
+      "fr": "Sort dangereux",
+      "de": "Risikozauber",
+      "es": "Hechizo peligro",
+      "ko": "해저드 스펠",
+      "zh": "災厄咒"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 12
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_LW_MKN_R_1": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "percent",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MKN_R_1",
+    "type": "counter",
+    "names": {
+      "en": "Magic Commutation",
+      "fr": "Conversion magique",
+      "de": "Magiekommutation",
+      "es": "Conmutación mágica",
+      "ko": "마동전환",
+      "zh": "魔動轉換"
+    },
+    "target": "self",
+    "maxLevel": 20,
+    "based": "physic",
+    "counter": {
+      "minValue": 10,
+      "maxValue": 30,
+      "reactDamage": "MAGIC",
+      "calcType": "percent"
+    }
+  },
   "SK_LW_MGK_SOIL_P_1": {
     "effects": [
       {
@@ -37753,37 +37979,6 @@
     "target": "self",
     "maxLevel": 20
   },
-  "SK_LW_MKN_R_1": {
-    "effects": [
-      {
-        "type": "AP",
-        "minValue": 5,
-        "maxValue": 15,
-        "calcType": "percent",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LW_MKN_R_1",
-    "type": "counter",
-    "names": {
-      "en": "Magic Commutation",
-      "fr": "Conversion magique",
-      "de": "Magiekommutation",
-      "es": "Conmutación mágica",
-      "ko": "마동전환",
-      "zh": "魔動轉換"
-    },
-    "target": "self",
-    "maxLevel": 20,
-    "based": "physic",
-    "counter": {
-      "minValue": 10,
-      "maxValue": 30,
-      "reactDamage": "MAGIC",
-      "calcType": "percent"
-    }
-  },
   "SK_LW_MKN_WIND_S_4": {
     "effects": [
       {
@@ -37818,44 +38013,6 @@
       "l": 2,
       "s": 1
     },
-    "based": "magic"
-  },
-  "SK_LW_MKN_S_2": {
-    "effects": [
-      {
-        "type": "HP_COST",
-        "value": 10,
-        "calcType": "percent",
-        "timing": "SKILL_BEFORE"
-      },
-      {
-        "type": "MAG",
-        "minValue": 30,
-        "maxValue": 50,
-        "calcType": "percent",
-        "turn": 3,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LW_MKN_S_2",
-    "type": "skill",
-    "names": {
-      "en": "Hazard Spell",
-      "fr": "Sort dangereux",
-      "de": "Risikozauber",
-      "es": "Hechizo peligro",
-      "ko": "해저드 스펠",
-      "zh": "災厄咒"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 12
-    },
-    "count": 2,
-    "maxLevel": 20,
     "based": "magic"
   },
   "SK_LW_MKN_WIND_M_1": {
