@@ -8,6 +8,7 @@ import { ToolService } from './tool.service';
 import { ItemService } from './item.service';
 import { UnitService } from './unit.service';
 import { OtherUnitService } from './otherunit.service';
+import { SkillService } from './skill.service';
 
 import { Quest } from '../entities/quest';
 
@@ -26,7 +27,8 @@ export class QuestService {
     private toolService: ToolService,
     private itemService: ItemService,
     private unitService: UnitService,
-    private otherUnitService: OtherUnitService
+    private otherUnitService: OtherUnitService,
+    private skillService: SkillService
   ) {}
 
   private getRaw() {
@@ -434,7 +436,7 @@ export class QuestService {
     return html;
   }
 
-  async formatCondition(condition, quest) {
+  async formatWinLooseCondition(condition, quest) {
     let html = '';
     let countCond = 0;
 
@@ -478,7 +480,7 @@ export class QuestService {
 
         case 'POSITION' :
           if (cond.condition.side === 1) {
-            html += 'Enemy manage to go to ';
+            html += 'An enemy manage to go to ';
           } else {
             html += 'An ally manage to go to ';
           }
@@ -490,13 +492,81 @@ export class QuestService {
           html += positions.join(' or ');
         break;
 
-        /*case 'SPECIFIC_UNIT_NOT_DEAD' :
-          unit = await this.unitService.getUnit(mission.value);
-          if (!unit) {
-            unit = await this.otherUnitService.getUnit(mission.value);
+        default :
+          console.log('Condition not managed ' + cond.type);
+        break;
+      }
+
+      countCond++;
+    }
+
+    return html;
+  }
+
+/*
+
+
+
+
+    19: 'COUNTDEAD'
+*/
+
+  async formatEntryCondition(condition, quest) {
+    let html = '';
+    let countCond = 0;
+
+    for (const cond of condition) {
+      if (countCond > 0 && cond.type !== 'ALIVE') {
+        html += ' and ';
+      }
+
+      switch (cond.type) {
+        case 'ONEDEAD' :
+          html += 'At least 1 ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+        break;
+
+        case 'ALLDEAD' :
+          html += 'All ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+        break;
+
+        case 'ALIVE' :
+          // Just used for turns so don't need to manage
+        break;
+
+        case 'STATCOND' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' HP under ' + cond.condition.hp + '%';
+        break;
+
+        case 'TURNCOUNT' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' played more than ' + cond.condition.turn + ' turns';
+        break;
+
+        case 'POSITION' :
+          if (cond.condition.tag === '') {
+            html += 'An enemy manage to go to ';
+          } else {
+            html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' manage to go to ';
           }
-          html = (unit ? unit.getName(this.translateService) : '???') + ' must survive the mission';
-        break;*/
+
+          const positions = [];
+          for (const pos of cond.condition.pos) {
+            positions.push('(' + (pos.x + 1) + ', ' + (pos.y + 1) + ')');
+          }
+          html += positions.join(' or ');
+        break;
+
+        case 'CAST' :
+          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' cast ' + await this.skillService.getSkillName(cond.condition.skill);
+        break;
+
+        case 'COUNTDEAD' :
+          if (cond.condition.side === 1) {
+            html += cond.condition.count + ' enemies defeated';
+          } else {
+            html += cond.condition.count + ' allies defeated';
+          }
+        break;
+
         default :
           console.log('Condition not managed ' + cond.type);
         break;

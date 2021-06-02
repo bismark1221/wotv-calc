@@ -89,6 +89,17 @@ export class SkillService {
     return this[(forcedVersion ? forcedVersion : this.navService.getVersion()) + '_skills'].find(skill => skill.dataId === id);
   }
 
+  async getSkillName(id) {
+    await this.getSkills();
+
+    const searchedSkill = this[this.navService.getVersion() + '_skills'].find(skill => skill.dataId === id);
+    if (searchedSkill) {
+      return searchedSkill.getName(this.translateService);
+    }
+
+    return '???';
+  }
+
   private i(s: any) {
       return (('' + s).toLowerCase() || '' + s).replace(this.sre, '');
   }

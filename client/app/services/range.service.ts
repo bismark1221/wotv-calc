@@ -60,7 +60,7 @@ export class RangeService {
     let countLine = 0;
 
     for (let i = middle; i >= middle - range.l; i--) {
-      if (i !== middle && (!range.m || countLine > range.m)) {
+      if (i !== middle && (!range.m || countLine > range.m) && i >= 0) {
         skillTable[i][middle] = fullAOE ? 'AR' : 'R';
         skillTable[(middle + countLine)][middle] = 'R';
       } else {
@@ -340,7 +340,7 @@ export class RangeService {
       if (!skill.range || (skill.range.s !== 11 && skill.range.s !== 13)) {
         if (!skill.range && skill.target === 'target') {
           skillTable[maxLine][middle] = 'T';
-        } else {
+        } else if (maxLine >= 0) {
           skillTable[maxLine][middle] = 'TAR';
         }
       } else if (skill.range.s === 13) {

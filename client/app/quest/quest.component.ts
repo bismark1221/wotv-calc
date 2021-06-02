@@ -148,7 +148,7 @@ export class QuestComponent implements OnInit {
       const formattedWinCond = [];
       if (this.quest.winCond) {
         for (const winCond of this.quest.winCond) {
-          formattedWinCond.push(await this.questService.formatCondition(winCond, this.quest));
+          formattedWinCond.push(await this.questService.formatWinLooseCondition(winCond, this.quest));
         }
       }
       this.quest.formattedWinCond = formattedWinCond.join(' or ');
@@ -156,7 +156,7 @@ export class QuestComponent implements OnInit {
       const formattedLooseCond = [];
       if (this.quest.looseCond) {
         for (const looseCond of this.quest.looseCond) {
-          formattedLooseCond.push(await this.questService.formatCondition(looseCond, this.quest));
+          formattedLooseCond.push(await this.questService.formatWinLooseCondition(looseCond, this.quest));
         }
       }
       this.quest.formattedLooseCond = formattedLooseCond.join(' or ');
@@ -188,12 +188,14 @@ export class QuestComponent implements OnInit {
         for (const itemId of Object.keys(rawDrop.items)) {
           if (itemId !== '') {
             const formattedItem = await this.itemService.formatItemToShow(await this.itemService.getItem(itemId));
-            for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
-              formattedItem.drop = {
-                num: itemDropNum,
-                value: rawDrop.items[itemId][itemDropNum]
-              };
-              formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+            if (formattedItem) {
+              for (const itemDropNum of Object.keys(rawDrop.items[itemId])) {
+                formattedItem.drop = {
+                  num: itemDropNum,
+                  value: rawDrop.items[itemId][itemDropNum]
+                };
+                formattedDropList.push(JSON.parse(JSON.stringify(formattedItem)));
+              }
             }
           }
         }
@@ -269,8 +271,6 @@ export class QuestComponent implements OnInit {
 
     formattedEnemy.calculateBaseStats(true);
     formattedEnemy.calculateTotalStats();
-
-    // console.log(formattedEnemy)
 
     if (enemy.minLevel) {
       const statsToRange = [
@@ -374,6 +374,16 @@ export class QuestComponent implements OnInit {
     this.getAvailableStatTypes(formattedEnemy);
 
     // @TODO Managed INITIAL_AP !!! RANGE !!!
+
+    if (this.quest[type][index].entryCond && this.quest[type][index].entryCond.length > 0) {
+      const formattedEntryCond = [];
+      for (const entryCond of this.quest[type][index].entryCond) {
+        formattedEntryCond.push(await this.questService.formatEntryCondition(entryCond, this.quest));
+      }
+
+      formattedEnemy.formattedEntryCond = formattedEntryCond;
+    }
+
 
     this.isCollapsedEnemy[index] = true;
 
@@ -603,11 +613,14 @@ export class QuestComponent implements OnInit {
 
     if (enemyFounded) {
       let countNode = 0;
-      for (let i = x; i <= x + size; i++) {
+      for (let i = x; i <= x + (size !== 13 ? size : 0); i++) {
         for (let j = y; j <= y + size; j++) {
           this.checkIfTileExist(i, j);
           this.quest.grid[i][j].enemy = enemyNumber;
-          this.quest.grid[i][j].class = nodeClasses[size][countNode];
+
+          if (nodeClasses[size]) {
+            this.quest.grid[i][j].class = nodeClasses[size][countNode];
+          }
           countNode++;
         }
       }
