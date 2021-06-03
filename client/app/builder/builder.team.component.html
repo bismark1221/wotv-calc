@@ -104,11 +104,11 @@
             </div>
           </div>
 
-          <div class="limitDiv" *ngIf="unit.limit">
+          <div class="limitDiv" *ngIf="unit.formattedLimit">
             <div>
               Limit Level
             </div>
-            <ng-select placeholder="Select a limit level" class="select-limit-level select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [(ngModel)]="unit.limit.level" [clearable]="false" [searchable]="false">
+            <ng-select placeholder="Select a limit level" class="select-limit-level select-left-builder" [items]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]" [(ngModel)]="unit.formattedLimit.level" [clearable]="false" [searchable]="false">
               <ng-template ng-label-tmp let-item="item">
                 {{ item }}
               </ng-template>

@@ -363,16 +363,18 @@ export class QuestComponent implements OnInit {
     }
 
     if (formattedEnemy.limit) {
-      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.limit));
-      formattedSkill.name = this.nameService.getName(formattedSkill);
+      const formattedSkill = await this.skillService.getSkill(formattedEnemy.limit);
+      if (formattedSkill) {
+        formattedSkill.name = this.nameService.getName(formattedSkill);
 
-      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+        formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
-      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+        formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
 
-      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+        this.rangeService.formatRange(formattedEnemy, formattedSkill);
 
-      formattedEnemy.skills.push(formattedSkill);
+        formattedEnemy.skills.push(formattedSkill);
+      }
     }
 
     this.applyStatsForJob(formattedEnemy);

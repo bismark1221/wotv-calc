@@ -1800,7 +1800,7 @@ export class SkillService {
     }
 
     if (!exist && unit.limit) {
-      if (unit.limit.dataId === skillId) {
+      if (unit.limit === skillId) {
         exist = true;
       }
     }

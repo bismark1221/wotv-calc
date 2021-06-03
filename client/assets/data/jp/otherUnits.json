@@ -104,39 +104,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "mont-leonis-1",
-    "limit": {
-      "names": {
-        "en": "デスティニークロス"
-      },
-      "effects": [],
-      "dataId": "SK_LB_LW_TU_MONT",
-      "type": "limit",
-      "target": "ennemySide",
-      "cost": {
-        "type": "AP",
-        "value": 12
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "aoe": {
-        "s": 0,
-        "l": 1,
-        "h": 0
-      },
-      "damage": {
-        "minValue": 400,
-        "maxValue": 420,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {}
-      }
-    },
+    "limit": "SK_LB_LW_TU_MONT",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -662,52 +630,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "macherie-hourne-1",
-    "limit": {
-      "names": {
-        "en": "聖光双撃"
-      },
-      "effects": [
-        {
-          "type": "ALL_ATTACKS_RES",
-          "minValue": 20,
-          "maxValue": 45,
-          "calcType": "resistance",
-          "turn": 1,
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_MACR",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
-      "combo": {
-        "num": 2,
-        "rate": 59
-      },
-      "damage": {
-        "minValue": 78,
-        "maxValue": 113,
-        "type": "strike",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MACR",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -20352,53 +20275,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "gilgamesh-1",
-    "limit": {
-      "names": {
-        "en": "弌閃"
-      },
-      "effects": [
-        {
-          "type": "SLOW_ATK",
-          "minValue": 30,
-          "maxValue": 50,
-          "calcType": "apply",
-          "rate": 30,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_GLMS",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 0,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_GLMS",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -39222,48 +39099,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "ramza-1",
-    "limit": {
-      "names": {
-        "en": "アルテマ"
-      },
-      "effects": [],
-      "dataId": "SK_LB_FFT_RAMZ",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 4,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 0,
-        "l": 1,
-        "h": 1
-      },
-      "hit": 100,
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      },
-      "elem": [
-        "neutral"
-      ]
-    },
+    "limit": "SK_LB_FFT_RAMZ",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -50321,53 +50157,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "gilgamesh-1",
-    "limit": {
-      "names": {
-        "en": "弌閃"
-      },
-      "effects": [
-        {
-          "type": "SLOW_ATK",
-          "minValue": 30,
-          "maxValue": 50,
-          "calcType": "apply",
-          "rate": 30,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_GLMS",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 0,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_GLMS",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -50526,56 +50316,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "yerma-1",
-    "limit": {
-      "names": {
-        "en": "飛びつき大斬斧"
-      },
-      "effects": [
-        {
-          "type": "ATTACK_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "fixe",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "ATTACK_RES",
-          "minValue": 18,
-          "maxValue": 38,
-          "calcType": "fixe",
-          "turn": 3,
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_YERM",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 75,
-        "maxValue": 110,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_YERM",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -50734,48 +50475,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "frederika-1",
-    "limit": {
-      "names": {
-        "en": "蝶舞蜂刺"
-      },
-      "effects": [
-        {
-          "type": "CT",
-          "minValue": 10,
-          "maxValue": 25,
-          "calcType": "decrease",
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_FDRC",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 2,
-        "l": 4,
-        "s": 1,
-        "line": 1
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "missile",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_FDRC",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -50942,54 +50642,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "mediena-1",
-    "limit": {
-      "names": {
-        "en": "コスモプリューム"
-      },
-      "effects": [
-        {
-          "type": "ICE_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_MDNA",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MDNA",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -51160,44 +50813,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "mont-leonis-1",
-    "limit": {
-      "names": {
-        "en": "デスティニークロス"
-      },
-      "effects": [],
-      "dataId": "SK_LB_LW_MONT",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "aoe": {
-        "s": 0,
-        "l": 1,
-        "h": 0
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MONT",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -51359,40 +50975,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "engelbert-1",
-    "limit": {
-      "names": {
-        "en": "堅忍不抜"
-      },
-      "effects": [],
-      "dataId": "SK_LB_LW_ENBT",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 38
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 1,
-        "s": 0
-      },
-      "based": "physic",
-      "increaseDamageOnDecreaseHp": 100,
-      "damage": {
-        "minValue": 75,
-        "maxValue": 110,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 10,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_ENBT",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -51554,60 +51137,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "lucia-1",
-    "limit": {
-      "names": {
-        "en": "サディスティックダンス"
-      },
-      "effects": [
-        {
-          "type": "DISABLE_ATK",
-          "calcType": "apply",
-          "rate": 30,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "IMMOBILIZE_ATK",
-          "calcType": "apply",
-          "rate": 30,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_LUCA",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 2,
-        "l": 4,
-        "s": 1,
-        "line": 1
-      },
-      "based": "physic",
-      "combo": {
-        "num": 2,
-        "rate": 59
-      },
-      "damage": {
-        "minValue": 78,
-        "maxValue": 113,
-        "type": "missile",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_LUCA",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -51774,54 +51304,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "orlandeau-1",
-    "limit": {
-      "names": {
-        "en": "全剣技「雷神」"
-      },
-      "effects": [
-        {
-          "type": "HASTE_ATK",
-          "minValue": 20,
-          "maxValue": 42,
-          "calcType": "apply",
-          "turn": 3,
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_FFT_ORND",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 58
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_FFT_ORND",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -52318,53 +51801,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "gilgamesh-1",
-    "limit": {
-      "names": {
-        "en": "弌閃"
-      },
-      "effects": [
-        {
-          "type": "SLOW_ATK",
-          "minValue": 30,
-          "maxValue": 50,
-          "calcType": "apply",
-          "rate": 30,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_GLMS",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 0,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_GLMS",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -65276,54 +64713,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "veru-rikku-1",
-    "limit": {
-      "names": {
-        "en": "創剣造破"
-      },
-      "effects": [
-        {
-          "type": "DISABLE_ATK",
-          "calcType": "apply",
-          "rate": 67,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "DEFENSE_PENETRATION",
-          "minValue": 20,
-          "maxValue": 40,
-          "calcType": "fixe",
-          "target": "self",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_VLRC",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_VLRC",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -78020,44 +77410,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "mont-leonis-1",
-    "limit": {
-      "names": {
-        "en": "デスティニークロス"
-      },
-      "effects": [],
-      "dataId": "SK_LB_LW_MONT",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "aoe": {
-        "s": 0,
-        "l": 1,
-        "h": 0
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MONT",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -78514,38 +77867,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "sterne-leonis-1",
-    "limit": {
-      "names": {
-        "en": "フェイタルファング"
-      },
-      "effects": [],
-      "dataId": "SK_LB_LW_STRN",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "increaseDamageOnDecreaseHp": 100,
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_STRN",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -79282,54 +78604,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "mediena-1",
-    "limit": {
-      "names": {
-        "en": "コスモプリューム"
-      },
-      "effects": [
-        {
-          "type": "ICE_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_MDNA",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MDNA",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -79969,49 +79244,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "aileen-1",
-    "limit": {
-      "names": {
-        "en": "ドリルインパクト"
-      },
-      "effects": [
-        {
-          "type": "EARTH_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_AILN",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 46
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "pierce",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "2": 10,
-          "3": 15,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_AILN",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -80868,58 +80101,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "ayaka-1",
-    "limit": {
-      "names": {
-        "en": "エンジェリックグレイス"
-      },
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 280,
-          "maxValue": 310,
-          "calcType": "unknow",
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "DISPEL",
-          "ailments": [
-            "STOP"
-          ],
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "STOP_RES",
-          "minValue": 10,
-          "maxValue": 25,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_AYKA",
-      "type": "limit",
-      "target": "selfSide",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 2,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      }
-    },
+    "limit": "SK_LB_LW_AYKA",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -81098,41 +80280,7 @@
     "realMaxLevel": 99,
     "type": "ally",
     "slug": "oelde-leonis-1",
-    "limit": {
-      "names": {
-        "en": "リオニスウォール"
-      },
-      "effects": [
-        {
-          "type": "REDUCE_DAMAGE_GENERAL",
-          "minValue": 30,
-          "maxValue": 50,
-          "calcType": "percent",
-          "turn": 3,
-          "turnType": "COUNT",
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "PROVOKE",
-          "minValue": 4,
-          "maxValue": 6,
-          "calcType": "fixe",
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_ELDE",
-      "type": "limit",
-      "target": "self",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "based": "physic"
-    },
+    "limit": "SK_LB_LW_ELDE",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -81491,48 +80639,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "miranda-1",
-    "limit": {
-      "names": {
-        "en": "紅嵐"
-      },
-      "effects": [
-        {
-          "type": "CONFUSION_ATK",
-          "calcType": "apply",
-          "rate": 67,
-          "turn": 3,
-          "target": "target",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_MRND",
-      "type": "limit",
-      "target": "target",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "based": "magic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 70,
-        "maxValue": 105,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_MRND",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -81860,58 +80967,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "ayaka-1",
-    "limit": {
-      "names": {
-        "en": "エンジェリックグレイス"
-      },
-      "effects": [
-        {
-          "type": "HP",
-          "minValue": 280,
-          "maxValue": 310,
-          "calcType": "unknow",
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "DISPEL",
-          "ailments": [
-            "STOP"
-          ],
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "STOP_RES",
-          "minValue": 10,
-          "maxValue": 25,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "selfSide",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_AYKA",
-      "type": "limit",
-      "target": "selfSide",
-      "cost": {
-        "type": "AP",
-        "value": 69
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 2,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "aoe": {
-        "s": 1,
-        "l": 2,
-        "h": 1
-      }
-    },
+    "limit": "SK_LB_LW_AYKA",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -82240,49 +81296,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "kilphe-1",
-    "limit": {
-      "names": {
-        "en": "魔杖集戟"
-      },
-      "effects": [
-        {
-          "type": "MAGIC_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_QILF",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 46
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 2,
-        "s": 0
-      },
-      "based": "magic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "magic",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_QILF",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -82767,41 +81781,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "oelde-leonis-1",
-    "limit": {
-      "names": {
-        "en": "リオニスウォール"
-      },
-      "effects": [
-        {
-          "type": "REDUCE_DAMAGE_GENERAL",
-          "minValue": 30,
-          "maxValue": 50,
-          "calcType": "percent",
-          "turn": 3,
-          "turnType": "COUNT",
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "PROVOKE",
-          "minValue": 4,
-          "maxValue": 6,
-          "calcType": "fixe",
-          "target": "self",
-          "timing": "SKILL_AFTER"
-        }
-      ],
-      "dataId": "SK_LB_LW_ELDE",
-      "type": "limit",
-      "target": "self",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "based": "physic"
-    },
+    "limit": "SK_LB_LW_ELDE",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -82962,49 +81942,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "aileen-1",
-    "limit": {
-      "names": {
-        "en": "ドリルインパクト"
-      },
-      "effects": [
-        {
-          "type": "EARTH_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_AILN",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 46
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "pierce",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "2": 10,
-          "3": 15,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_AILN",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -83168,51 +82106,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "lasswell-1",
-    "limit": {
-      "names": {
-        "en": "雲外蒼天"
-      },
-      "effects": [
-        {
-          "type": "DEFENSE_PENETRATION",
-          "minValue": 20,
-          "maxValue": 40,
-          "calcType": "fixe",
-          "target": "self",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_LSWL",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 43
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "physic",
-      "aoe": {
-        "s": 0,
-        "l": 1,
-        "h": 1
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "type": 1
-        }
-      }
-    },
+    "limit": "SK_LB_LW_LSWL",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -83374,55 +82268,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "glaciela-wezette-1",
-    "limit": {
-      "names": {
-        "en": "ヴァルキリードライブ"
-      },
-      "effects": [
-        {
-          "type": "STOP_CHAIN_INCREASE_DAMAGE",
-          "value": 200,
-          "timing": "SKILL_BEFORE"
-        },
-        {
-          "type": "MAX_DAMAGE",
-          "minValue": 5000,
-          "maxValue": 10000,
-          "calcType": "fixe",
-          "target": "self",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_GRSR",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 38
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 2,
-        "s": 0,
-        "line": 1
-      },
-      "based": "physic",
-      "pierce": 1,
-      "damage": {
-        "minValue": 70,
-        "maxValue": 105,
-        "type": "pierce",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 20,
-          "2": 10,
-          "3": 15,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_GRSR",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -83586,53 +82432,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "rain-1",
-    "limit": {
-      "names": {
-        "en": "シャイニングノヴァ"
-      },
-      "effects": [
-        {
-          "type": "FIRE_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_RAIN",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "combo": {
-        "num": 2,
-        "rate": 59
-      },
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "2": 10,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_RAIN",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -83961,49 +82761,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "howlet-1",
-    "limit": {
-      "names": {
-        "en": "ステラ・アルテ"
-      },
-      "effects": [
-        {
-          "type": "WIND_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_HWLT",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 1,
-        "l": 3,
-        "s": 1
-      },
-      "based": "magic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "slash",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 25,
-          "2": 10,
-          "3": 10,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_HWLT",
     "attack": {
       "names": {
         "en": "通常攻撃"
@@ -84162,58 +82920,7 @@
     "realMaxLevel": 99,
     "type": "enemy",
     "slug": "riri-shu-mizugi-1",
-    "limit": {
-      "names": {
-        "en": "ビーチ・アターック！"
-      },
-      "effects": [
-        {
-          "type": "IMMOBILIZE_ATK",
-          "calcType": "apply",
-          "rate": 67,
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_AFTER"
-        },
-        {
-          "type": "MISSILE_RES",
-          "minValue": -18,
-          "maxValue": -38,
-          "calcType": "resistance",
-          "turn": 3,
-          "target": "all",
-          "timing": "SKILL_BEFORE"
-        }
-      ],
-      "dataId": "SK_LB_LW_LILS",
-      "type": "limit",
-      "target": "all",
-      "cost": {
-        "type": "AP",
-        "value": 49
-      },
-      "count": 1,
-      "maxLevel": 20,
-      "range": {
-        "h": 5,
-        "l": 4,
-        "mh": 8,
-        "s": 1,
-        "line": 2
-      },
-      "based": "physic",
-      "damage": {
-        "minValue": 65,
-        "maxValue": 100,
-        "type": "missile",
-        "effType": "DAMAGE",
-        "formula": {
-          "1": 15,
-          "3": 5,
-          "type": 0
-        }
-      }
-    },
+    "limit": "SK_LB_LW_LILS",
     "attack": {
       "names": {
         "en": "通常攻撃"

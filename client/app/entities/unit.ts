@@ -81,7 +81,7 @@ export class Unit {
   element = 'fire';
   image = 'ITEMcrst';
 
-  limit = new Skill();
+  limit = '';
   tmr = null;
   masterSkill = new Skill();
   totalBuffs = {
@@ -135,6 +135,7 @@ export class Unit {
   availableSupportNodes = [[], []];
   availableCounterNodes = [];
   percentStats = {};
+  formattedLimit;
 
   // Only for quests/enemies
   species = '';
@@ -1325,8 +1326,8 @@ export class Unit {
       job.level = 1;
     });
 
-    if (this.limit) {
-      this.limit.level = 1;
+    if (this.formattedLimit) {
+      this.formattedLimit.level = 1;
     }
 
     this.resetNodes();
@@ -1388,8 +1389,8 @@ export class Unit {
       }
     });
 
-    if (this.limit && formatHtml) {
-      this.limit = this.formatActiveSkill(this.limit, nameService, skillService, rangeService);
+    if (this.formattedLimit && formatHtml) {
+      this.formattedLimit = this.formatActiveSkill(this.formattedLimit, nameService, skillService, rangeService);
     }
 
     this.activatedSupport.forEach(supportNode => {

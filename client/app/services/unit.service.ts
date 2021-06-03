@@ -311,7 +311,7 @@ export class UnitService {
       equipments: [null, null, null],
       guild: this.guildService.getSavableData(unit.guild.data, false),
       masterRanks: this.masterRanksService.getSavableData(unit.masterRanks.data, false),
-      limitLv: unit.limit ? unit.limit.level : 0,
+      limitLv: unit.limit && unit.formattedLimit ? unit.formattedLimit.level : 0,
       user: user ? user.uid : null,
       customName: unit.customName ? unit.customName : ''
     };
@@ -393,7 +393,10 @@ export class UnitService {
     });
 
     if (this.unit.limit) {
-      this.unit.limit.level = 1;
+      this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit);
+      if (this.unit.formattedLimit) {
+        this.unit.formattedLimit.level = 1;
+      }
     }
 
     this.unit.guild = this.guildService.getGuildForBuilder(forceEmptyGuild);
@@ -461,8 +464,8 @@ export class UnitService {
         this.unit.subjob = unit.subjob;
       }
 
-      if (unit.limitLv) {
-        this.unit.limit.level = unit.limitLv;
+      if (unit.limitLv && this.unit.formattedLimit) {
+        this.unit.formattedLimit.level = unit.limitLv;
       }
 
       if (unit.activatedSupport[0] || unit.activatedSupport[1]) {

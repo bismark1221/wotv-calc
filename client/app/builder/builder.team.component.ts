@@ -639,8 +639,8 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
 
         unit.skillsForSim = skills;
 
-        if (unit.limit && unit.limit.damage) {
-          unit.skillsForSim.push(unit.limit);
+        if (unit.formattedLimit && unit.formattedLimit.damage) {
+          unit.skillsForSim.push(unit.formattedLimit);
         }
 
         if (unit.card) {

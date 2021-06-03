@@ -1,4 +1,2973 @@
 {
+  "SK_LB_LW_MONT": {
+    "effects": [],
+    "dataId": "SK_LB_LW_MONT",
+    "type": "limit",
+    "names": {
+      "en": "Destiny's Cross",
+      "fr": "Croix du destin",
+      "de": "Schicksalskreuz",
+      "es": "Cruz del destino",
+      "ko": "운명의 십자가",
+      "zh": "命運交錯"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_STRN": {
+    "effects": [],
+    "dataId": "SK_LB_LW_STRN",
+    "type": "limit",
+    "names": {
+      "en": "Fatal Fang",
+      "fr": "Croc mortel",
+      "de": "Tödlicher Fangzahn",
+      "es": "Colmillo fatal",
+      "ko": "페이털 팡",
+      "zh": "致命尖牙"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "increaseDamageOnDecreaseHp": 100,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_ELDE": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": 4,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_ELDE",
+    "type": "limit",
+    "names": {
+      "en": "Leonis Barrier",
+      "fr": "Barrière de Leonis",
+      "de": "Leonischer Wall",
+      "es": "Barrera de Leonis",
+      "ko": "레오니스의 장벽",
+      "zh": "雷歐尼斯之壁"
+    },
+    "target": "self",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LB_LW_ROBB": {
+    "effects": [
+      {
+        "type": "MOVE_UNIT",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": -2,
+        "maxValue": -2,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_ROBB",
+    "type": "limit",
+    "names": {
+      "en": "Majestic Prestige",
+      "fr": "Prestige majestueux",
+      "de": "Prestige",
+      "es": "Prestigio majestuoso",
+      "ko": "위풍늠연",
+      "zh": "威風凜然"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_ENBT": {
+    "effects": [],
+    "dataId": "SK_LB_LW_ENBT",
+    "type": "limit",
+    "names": {
+      "en": "Enduring Fortitude",
+      "fr": "Courage inébranlable",
+      "de": "Beständige Tapferkeit",
+      "es": "Fortaleza imperecedera",
+      "ko": "견인불발",
+      "zh": "堅韌不拔"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "increaseDamageOnDecreaseHp": 100,
+    "damage": {
+      "minValue": 75,
+      "maxValue": 110,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 10,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_ZIZA": {
+    "effects": [
+      {
+        "type": "HUMAN_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_ZIZA",
+    "type": "limit",
+    "names": {
+      "en": "Tiger Gnaw",
+      "fr": "Bouchée du tigre",
+      "de": "Tigerbiss",
+      "es": "Mordisco de tigre",
+      "ko": "호교",
+      "zh": "虎咬"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 75,
+      "maxValue": 110,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_AILN": {
+    "effects": [
+      {
+        "type": "EARTH_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_AILN",
+    "type": "limit",
+    "names": {
+      "en": "Drill Impact",
+      "fr": "Impact perforant",
+      "de": "Bohrwirkung",
+      "es": "Impacto taladrante",
+      "ko": "드릴 임팩트",
+      "zh": "鑽頭衝擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 46
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 10,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_MDNA": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_MDNA",
+    "type": "limit",
+    "names": {
+      "en": "Cosmo Plume",
+      "fr": "Plume cosmique",
+      "de": "Kosmofeder",
+      "es": "Pilar cósmico",
+      "ko": "코스모 플룸",
+      "zh": "宇宙羽流"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_AYKA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 280,
+        "maxValue": 310,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "STOP"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "STOP_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_AYKA",
+    "type": "limit",
+    "names": {
+      "en": "Angelic Grace",
+      "fr": "Grâce angélique",
+      "de": "Engelsgleiche Anmut",
+      "es": "Gracia angelical",
+      "ko": "천사의 은총",
+      "zh": "天使恩典"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_LB_LW_MACR": {
+    "effects": [
+      {
+        "type": "ALL_ATTACKS_RES",
+        "minValue": 20,
+        "maxValue": 45,
+        "calcType": "resistance",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_MACR",
+    "type": "limit",
+    "names": {
+      "en": "Radiant Twinstrike",
+      "fr": "Lumière éclatante",
+      "de": "Strahlender Doppelschlag",
+      "es": "Doblepuño radiante",
+      "ko": "성광쌍격",
+      "zh": "聖光雙擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 78,
+      "maxValue": 113,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_GLMS": {
+    "effects": [
+      {
+        "type": "SLOW_ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_GLMS",
+    "type": "limit",
+    "names": {
+      "en": "Flash",
+      "fr": "Flash",
+      "de": "Blitz",
+      "es": "Destello",
+      "ko": "일섬",
+      "zh": "弌閃"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_FDRC": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "decrease",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_FDRC",
+    "type": "limit",
+    "names": {
+      "en": "Butterfly Sting",
+      "fr": "Piqûre de papillon",
+      "de": "Stich des Schmetterlings",
+      "es": "Picadura de mariposa",
+      "ko": "접무봉자",
+      "zh": "蝶舞蜂刺"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_YERM": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATTACK_RES",
+        "minValue": 18,
+        "maxValue": 38,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_YERM",
+    "type": "limit",
+    "names": {
+      "en": "Soaring Axe Slash",
+      "fr": "Hache viking",
+      "de": "Rasender Axtschlitzer",
+      "es": "Hachazo elevado",
+      "ko": "거대 도끼 휘두르기",
+      "zh": "飛襲大斬斧"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 75,
+      "maxValue": 110,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_FFT_RAMZ": {
+    "effects": [],
+    "dataId": "SK_LB_FFT_RAMZ",
+    "type": "limit",
+    "names": {
+      "en": "Ultima",
+      "fr": "Ultima",
+      "de": "Ultima",
+      "es": "Artema",
+      "ko": "알테마",
+      "zh": "究極"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LB_FFT_ORND": {
+    "effects": [
+      {
+        "type": "HASTE_ATK",
+        "minValue": 20,
+        "maxValue": 42,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FFT_ORND",
+    "type": "limit",
+    "names": {
+      "en": "Swordplay: Thunder God",
+      "fr": "Tech. d'épée : Dieu-foudre",
+      "de": "Schwertmeister: Donnergott",
+      "es": "Esgrima: Dios del trueno",
+      "ko": "뇌신의 검기",
+      "zh": "全劍技「雷神」"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_WHIS": {
+    "effects": [
+      {
+        "type": "BRAVERY_FIGHT",
+        "minValue": -20,
+        "maxValue": -42,
+        "calcType": "fixe",
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_WHIS",
+    "type": "limit",
+    "names": {
+      "en": "White Wave",
+      "fr": "Onde blanche",
+      "de": "Weiße Welle",
+      "es": "Ola blanca",
+      "ko": "하얀 파동",
+      "zh": "白色波動"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_KTON": {
+    "effects": [
+      {
+        "type": "STOP_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 30,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_KTON",
+    "type": "limit",
+    "names": {
+      "en": "Saiga Shadowbind",
+      "fr": "Entrave d'ombre de Saiga",
+      "de": "Saiga-Schattenfessel",
+      "es": "Lazo umbrío de Saiga",
+      "ko": "사이가류 그림자 속박",
+      "zh": "齋賀流影縛"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_MRND": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_MRND",
+    "type": "limit",
+    "names": {
+      "en": "Crimson Storm",
+      "fr": "Tempête pourpre",
+      "de": "Purpurner Sturm",
+      "es": "Tormenta carmesí",
+      "ko": "홍람",
+      "zh": "紅嵐"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 70,
+      "maxValue": 105,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_LUCA": {
+    "effects": [
+      {
+        "type": "DISABLE_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "IMMOBILIZE_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_LUCA",
+    "type": "limit",
+    "names": {
+      "en": "Sadistic Dance",
+      "fr": "Danse sadique",
+      "de": "Sadistischer Tanz",
+      "es": "Baile sádico",
+      "ko": "새디스틱 댄스",
+      "zh": "殘虐之舞"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 78,
+      "maxValue": 113,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_VKTR": {
+    "effects": [
+      {
+        "type": "CHARM_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_VKTR",
+    "type": "limit",
+    "names": {
+      "en": "Enchanting Trap",
+      "fr": "Doux piège",
+      "de": "Süße Falle",
+      "es": "Trampa encantadora",
+      "ko": "감미로운 덫",
+      "zh": "甜美陷阱"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 5,
+      "l": 3,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 5,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_RAIN": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_RAIN",
+    "type": "limit",
+    "names": {
+      "en": "Shining Nova",
+      "fr": "Nova étincelante",
+      "de": "Novaglanz",
+      "es": "Nova deslumbrante",
+      "ko": "샛별의 광휘",
+      "zh": "閃光新星"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_FRVA": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_FRVA",
+    "type": "limit",
+    "names": {
+      "en": "Ice Prison",
+      "fr": "Prison de glace",
+      "de": "Eisgefängnis",
+      "es": "Prisión helada",
+      "ko": "얼음 감옥",
+      "zh": "寒冰牢獄"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 46
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_VNLA": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_VNLA",
+    "type": "limit",
+    "names": {
+      "en": "Dark Art: Hidden in Haze",
+      "fr": "Art de l'ombre : Nuit de brouillard",
+      "de": "Dunkle Künste: Schemenversteck",
+      "es": "Arte oscura: neblina oculta",
+      "ko": "암기: 농은",
+      "zh": "暗技·朧隱"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 0
+    },
+    "based": "physic",
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 68,
+      "maxValue": 103,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 30,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FF1_WROL": {
+    "effects": [
+      {
+        "type": "PROTECT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "rate": 100,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SHELL_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "rate": 100,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF1_WROL",
+    "type": "limit",
+    "names": {
+      "en": "Crystal Braver",
+      "fr": "Bravoure de cristal",
+      "de": "Heros des Kristalls",
+      "es": "Héroe del cristal",
+      "ko": "크리스탈 브레이버",
+      "zh": "水晶勇者"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 10,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_QILF": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_QILF",
+    "type": "limit",
+    "names": {
+      "en": "Stave Collector",
+      "fr": "Collectionneuse de bâtons",
+      "de": "Stabarrangement",
+      "es": "Coleccionista de bastones",
+      "ko": "마장집극",
+      "zh": "魔杖集戟"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 46
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_ORDR": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -15,
+        "maxValue": -35,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_ORDR",
+    "type": "limit",
+    "names": {
+      "en": "Oldoan Bomber",
+      "fr": "Bomboldoa",
+      "de": "Oldoischer Knaller",
+      "es": "Bombardero de Oldoa",
+      "ko": "오르도안 봄버",
+      "zh": "奧爾多轟炸"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_FFT_AGRA_01": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FFT_AGRA_01",
+    "type": "limit",
+    "names": {
+      "en": "Candescent Hew",
+      "fr": "Entaille céleste",
+      "de": "Heilige Zerschlagung",
+      "es": "Tala incandescente",
+      "ko": "성광집황파",
+      "zh": "聖光集煌破"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 10,
+      "w": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FFT_DELT_01": {
+    "effects": [
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FFT_DELT_01",
+    "type": "limit",
+    "names": {
+      "en": "Three-Stage Hallowed Bolt of Truth",
+      "fr": "Éclair inimitable en 3 coups - véritable",
+      "de": "Wahrhafter Dreistufenblitz",
+      "es": "Rayo sacro de la verdad en tres pasos",
+      "ko": "진 번개 무쌍 삼단 ",
+      "zh": "真·閃電無雙三段"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_IRDL": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 200,
+        "maxValue": 400,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "allyNotSelf",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CT",
+        "minValue": 200,
+        "maxValue": 400,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_IRDL",
+    "type": "limit",
+    "names": {
+      "en": "Ildyra's Theorem",
+      "fr": "Théorème d'Ildyra",
+      "de": "Ildyras Theorem",
+      "es": "Teorema de Ildira",
+      "ko": "일디라의 정리",
+      "zh": "伊爾迪拉定理"
+    },
+    "target": "allyNotSelf",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "maths": [
+      {
+        "type": "UNIT_LEVEL",
+        "formula": "RATIO",
+        "condition": 3,
+        "value": 200,
+        "dst": "EFFECT"
+      }
+    ]
+  },
+  "SK_LB_LW_STRN_01": {
+    "effects": [],
+    "dataId": "SK_LB_LW_STRN_01",
+    "type": "limit",
+    "names": {
+      "en": "Destructive Fang",
+      "fr": "Croc destructeur",
+      "de": "Zerstörerischer Reißer",
+      "es": "Colmillo destructor",
+      "ko": "디스트럭션 팡",
+      "zh": "破滅之牙"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "pool": "HP",
+      "effType": "ABSORB",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_LSWL": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_LSWL",
+    "type": "limit",
+    "names": {
+      "en": "Azure Sky",
+      "fr": "Ciel azur",
+      "de": "Wolkenbeben",
+      "es": "Cielo azul",
+      "ko": "운외창천",
+      "zh": "雲外蒼天"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_GRSR": {
+    "effects": [
+      {
+        "type": "STOP_CHAIN_INCREASE_DAMAGE",
+        "value": 200,
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAX_DAMAGE",
+        "minValue": 5000,
+        "maxValue": 10000,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_GRSR",
+    "type": "limit",
+    "names": {
+      "en": "Valkyrie Drive",
+      "fr": "Offensive de Valkyrie",
+      "de": "Walkürendynamik",
+      "es": "Impulso de valquiria",
+      "ko": "발키리 드라이브",
+      "zh": "女武神疾驅"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 38
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": 70,
+      "maxValue": 105,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 10,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_RYER_01": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_RYER_01",
+    "type": "limit",
+    "names": {
+      "en": "Animal Pumpkin",
+      "fr": "Spiritrouille",
+      "de": "Wilder Kürbis",
+      "es": "Calabaza animal",
+      "ko": "애니멀 펌프킨",
+      "zh": "動物南瓜"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "maths": [
+      {
+        "type": "TARGET_LEVEL",
+        "formula": "RATIO",
+        "condition": 3,
+        "value": 75,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_RIRY_01": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_RIRY_01",
+    "type": "limit",
+    "names": {
+      "en": "Creeping Terror",
+      "fr": "Terreur malsaine",
+      "de": "Schleichende Furcht",
+      "es": "Terror insidioso",
+      "ko": "기어 나오는 공포",
+      "zh": "沿地而出的恐怖"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_HWLT": {
+    "effects": [
+      {
+        "type": "WIND_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_HWLT",
+    "type": "limit",
+    "names": {
+      "en": "Stella Artis",
+      "fr": "Stella Artis",
+      "de": "Stella Artis",
+      "es": "Stella Artis",
+      "ko": "스텔라 알테",
+      "zh": "星光藝術"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_SCAL": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_SCAL",
+    "type": "limit",
+    "names": {
+      "en": "Divine Thunder Summon",
+      "fr": "Invocation de la foudre divine",
+      "de": "Blitzanrufung",
+      "es": "Invocación del rayo divino",
+      "ko": "천신소뢰",
+      "zh": "天迅召雷"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FF04_CECL": {
+    "effects": [
+      {
+        "type": "STUN_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 1,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF04_CECL",
+    "type": "limit",
+    "names": {
+      "en": "Sacred Rage",
+      "fr": "Colère sacrée",
+      "de": "Heilige Rage",
+      "es": "Furia sacra",
+      "ko": "거룩한 분노",
+      "zh": "聖潔之怒"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 10,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FF04_ROSA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 280,
+        "maxValue": 310,
+        "calcType": "unknow",
+        "target": "allyNotSelf",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AP",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "allyNotSelf",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HP",
+        "minValue": 280,
+        "maxValue": 310,
+        "calcType": "unknow",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF04_ROSA",
+    "type": "limit",
+    "names": {
+      "en": "Miracle of Two Moons",
+      "fr": "Miracle des deux lunes",
+      "de": "Wunder zweier Monde",
+      "es": "Milagro de las dos lunas",
+      "ko": "두 개의 달의 기적",
+      "zh": "雙月奇跡"
+    },
+    "target": "allyNotSelf",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_LB_FF04_KAIN": {
+    "effects": [
+      {
+        "type": "SLOW_ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_FF04_KAIN",
+    "type": "limit",
+    "names": {
+      "en": "Dragon's Bane",
+      "fr": "Fléau draconique",
+      "de": "Drachenfluch",
+      "es": "Matadragones",
+      "ko": "드래곤 베인",
+      "zh": "龍禍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 48
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 0
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_RAMD_01": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_RAMD_01",
+    "type": "limit",
+    "names": {
+      "en": "Holy Night's Judgment",
+      "fr": "Jugement de la nuit hivernale",
+      "de": "Richtspruch der Heiligen Nacht",
+      "es": "Juicio de la noche sagrada",
+      "ko": "한겨울 밤의 심판",
+      "zh": "聖夜制裁"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 63
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 0
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "damage": {
+      "minValue": 75,
+      "maxValue": 110,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_MACR_01": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_MACR_01",
+    "type": "limit",
+    "names": {
+      "en": "Holy Night's Gift",
+      "fr": "Cadeau de la nuit hivernale",
+      "de": "Gabe der Heiligen Nacht",
+      "es": "Regalo de la noche sagrada",
+      "ko": "겨울밤의 선물",
+      "zh": "聖夜贈禮"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10,
+      "w": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 68,
+      "maxValue": 103,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 5,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_LATH": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_LATH",
+    "type": "limit",
+    "names": {
+      "en": "Speed Break Shot",
+      "fr": "Tir brise-vitesse",
+      "de": "Tempobruchschuss",
+      "es": "Tiro rompevelocidad",
+      "ko": "스피드 브레이크 샷",
+      "zh": "高速破壞射擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 10,
+      "w": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_DEAN": {
+    "effects": [],
+    "dataId": "SK_LB_LW_DEAN",
+    "type": "limit",
+    "names": {
+      "en": "Death Scythe",
+      "fr": "Faux de la mort",
+      "de": "Todessichel",
+      "es": "Guadaña letal",
+      "ko": "죽음의 낫",
+      "zh": "死神鐮刀"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "maths": [
+      {
+        "type": "MODIFY_ABSORB",
+        "formula": "PERCENT",
+        "value": -50,
+        "dst": "ABSORB"
+      }
+    ],
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "ABSORB",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_NIVL": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -15,
+        "maxValue": -35,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_NIVL",
+    "type": "limit",
+    "names": {
+      "en": "Spider Rain",
+      "fr": "Pluie arachnéenne",
+      "de": "Spinnenregen",
+      "es": "Lluvia arácnida",
+      "ko": "거미비",
+      "zh": "蜘蛛雨"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_SAKR": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 35,
+        "maxValue": 35,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_SAKR",
+    "type": "limit",
+    "names": {
+      "en": "Eternal Pain",
+      "fr": "Douleur éternelle",
+      "de": "Ewiger Schmerz",
+      "es": "Dolor eterno",
+      "ko": "영원한 고통의 굴레",
+      "zh": "永久劇痛"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "combo": {
+      "num": 3,
+      "rate": 73
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_RARD": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_RARD",
+    "type": "limit",
+    "names": {
+      "en": "Chasm Render",
+      "fr": "Poings du volcan infernal",
+      "de": "Herabdonnernde Faust",
+      "es": "Derritesisma",
+      "ko": "부악강신권",
+      "zh": "浮嶽剛迅拳"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_VNLA_01": {
+    "effects": [
+      {
+        "type": "EARTH_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_VNLA_01",
+    "type": "limit",
+    "names": {
+      "en": "Snowball Fight",
+      "fr": "Bataille de boules de neige",
+      "de": "Schneeballschlacht in Winternacht",
+      "es": "Pelea de bolas de nieve",
+      "ko": "겨울밤의 눈싸움",
+      "zh": "聖夜雪仗"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_LW_VKTR_01": {
+    "effects": [
+      {
+        "type": "BLIND_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": -2,
+        "maxValue": -2,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_VKTR_01",
+    "type": "limit",
+    "names": {
+      "en": "Winter's Reward",
+      "fr": "Récompense hivernale",
+      "de": "Belohnung der heiligen Nacht",
+      "es": "Recompensa invernal",
+      "ko": "겨울밤의 포상",
+      "zh": "聖夜的獎勵"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_GABL": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": -10,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_GABL",
+    "type": "limit",
+    "names": {
+      "en": "Concentrated Chi Lancer",
+      "fr": "Concentration de Chi",
+      "de": "Fokusperforation",
+      "es": "Lance de chi concentrado",
+      "ko": "집기천공",
+      "zh": "集氣穿孔"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "pierce": 1,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_ELSR": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_ELSR",
+    "type": "limit",
+    "names": {
+      "en": "Goodnight Rumble",
+      "fr": "Grondement nocturne",
+      "de": "Gute-Nacht-Koller",
+      "es": "Ruido nocturno",
+      "ko": "굿나잇 럼블",
+      "zh": "晚安轟鳴"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
+  "SK_LB_FF10_TIDU": {
+    "effects": [],
+    "dataId": "SK_LB_FF10_TIDU",
+    "type": "limit",
+    "names": {
+      "en": "Blitz Ace",
+      "fr": "Champion de blitz",
+      "de": "Blitzballgott",
+      "es": "As del blitzbol",
+      "ko": "에이스 오브 더 블리츠",
+      "zh": "水鬥球王牌"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 4,
+      "rate": 85
+    },
+    "damage": {
+      "minValue": 70,
+      "maxValue": 105,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FF10_YUNA": {
+    "effects": [],
+    "dataId": "SK_LB_FF10_YUNA",
+    "type": "limit",
+    "names": {
+      "en": "Energy Ray",
+      "fr": "Hurlements",
+      "de": "Laserstrahl",
+      "es": "Rayo devastador",
+      "ko": "슈팅 레이",
+      "zh": "射擊光線"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 0
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 3,
+      "l": 1,
+      "h": 1,
+      "w": 2
+    },
+    "hit": 100,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_FF10_ARON": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_FF10_ARON",
+    "type": "limit",
+    "names": {
+      "en": "Tornado",
+      "fr": "Tornade",
+      "de": "Zephyr",
+      "es": "Tornado",
+      "ko": "진풍",
+      "zh": "陣風"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 2
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LB_NIER_N2TB": {
+    "effects": [
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_NIER_N2TB",
+    "type": "limit",
+    "names": {
+      "en": "YoRHa Annihilation Dance",
+      "fr": "Danse de la ruine de YoRHa",
+      "de": "YoRHa-Vernichtungstanz",
+      "es": "Danza mortal de YoRHa",
+      "ko": "요르하식 섬멸난무",
+      "zh": "寄葉式·殲滅亂舞"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 25,
+        "2": 10,
+        "3": 10,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_NIER_N9TS": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_NIER_N9TS",
+    "type": "limit",
+    "names": {
+      "en": "Neural Hacking",
+      "fr": "Piratage neural",
+      "de": "Neuro-Hacken",
+      "es": "Hackeo neuronal",
+      "ko": "셀프 해킹",
+      "zh": "自動·駭入"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 43
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 5,
+        "3": 15,
+        "type": 0
+      }
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_LB_LW_MONT_01": {
+    "effects": [
+      {
+        "type": "BERSERK_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LB_LW_MONT_01",
+    "type": "limit",
+    "names": {
+      "en": "King of Leonis",
+      "fr": "Roi de Leonis",
+      "de": "König von Leonis",
+      "es": "Rey de Leonis",
+      "ko": "레오니스의 왕",
+      "zh": "雷歐尼斯之王"
+    },
+    "target": "target",
+    "cost": {
+      "type": "AP",
+      "value": 49
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 10,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_RYEL": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_RYEL",
+    "type": "limit",
+    "names": {
+      "en": "Gift of Knowledge",
+      "fr": "Don du savoir",
+      "de": "Wissen ist Macht",
+      "es": "Don del conocimiento",
+      "ko": "지혜로운 선물",
+      "zh": "智慧之賜"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 58
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_HLNA_01": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LB_LW_HLNA_01",
+    "type": "limit",
+    "names": {
+      "en": "Tenebral Rose",
+      "fr": "Rose des ténèbres",
+      "de": "Schattenrose",
+      "es": "Rosa sombría",
+      "ko": "그림자 장미",
+      "zh": "暗影薔薇"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 69
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    }
+  },
+  "SK_LB_LW_TU_MONT": {
+    "effects": [],
+    "dataId": "SK_LB_LW_TU_MONT",
+    "type": "limit",
+    "names": {
+      "en": "Destiny's Cross",
+      "fr": "Croix du destin",
+      "de": "Schicksalskreuz",
+      "es": "Cruz del destino",
+      "ko": "운명의 십자가",
+      "zh": "命運交錯"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "damage": {
+      "minValue": 400,
+      "maxValue": 420,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
   "SK_LW_WAR_M_1": {
     "effects": [
       {
@@ -278,44 +3247,6 @@
         "3": 10,
         "type": 0
       }
-    }
-  },
-  "SK_LB_LW_TU_MONT": {
-    "effects": [],
-    "dataId": "SK_LB_LW_TU_MONT",
-    "type": "limit",
-    "names": {
-      "en": "Destiny's Cross",
-      "fr": "Croix du destin",
-      "de": "Schicksalskreuz",
-      "es": "Cruz del destino",
-      "ko": "운명의 십자가",
-      "zh": "命運交錯"
-    },
-    "target": "ennemySide",
-    "cost": {
-      "type": "AP",
-      "value": 12
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 0
-    },
-    "damage": {
-      "minValue": 400,
-      "maxValue": 420,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
     }
   },
   "SK_TU_USE_RING": {
@@ -14041,50 +16972,6 @@
       "h": 0
     }
   },
-  "SK_LB_LW_ZIZA": {
-    "effects": [
-      {
-        "type": "HUMAN_KILLER",
-        "minValue": 50,
-        "maxValue": 50,
-        "calcType": "unknow",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_ZIZA",
-    "type": "limit",
-    "names": {
-      "en": "Tiger Gnaw",
-      "fr": "Bouchée du tigre",
-      "de": "Tigerbiss",
-      "es": "Mordisco de tigre",
-      "ko": "호교",
-      "zh": "虎咬"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 38
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 75,
-      "maxValue": 110,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
-  },
   "SK_MA_LW_ZIZA": {
     "effects": [
       {
@@ -15262,58 +18149,6 @@
       }
     }
   },
-  "SK_LB_LW_GLMS": {
-    "effects": [
-      {
-        "type": "SLOW_ATK",
-        "minValue": 30,
-        "maxValue": 50,
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_GLMS",
-    "type": "limit",
-    "names": {
-      "en": "Flash",
-      "fr": "Flash",
-      "de": "Blitz",
-      "es": "Destello",
-      "ko": "일섬",
-      "zh": "弌閃"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 69
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 2,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
-  },
   "SK_BTL_HP_100-99900_U_PA": {
     "effects": [
       {
@@ -16042,43 +18877,6 @@
     "count": 3,
     "maxLevel": 20,
     "based": "physic"
-  },
-  "SK_LB_LW_STRN_01": {
-    "effects": [],
-    "dataId": "SK_LB_LW_STRN_01",
-    "type": "limit",
-    "names": {
-      "en": "Destructive Fang",
-      "fr": "Croc destructeur",
-      "de": "Zerstörerischer Reißer",
-      "es": "Colmillo destructor",
-      "ko": "디스트럭션 팡",
-      "zh": "破滅之牙"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "slash",
-      "pool": "HP",
-      "effType": "ABSORB",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
   },
   "SK_LW_GRM_WATR_M_3": {
     "effects": [
@@ -26171,53 +28969,6 @@
       }
     }
   },
-  "SK_LB_FFT_RAMZ": {
-    "effects": [],
-    "dataId": "SK_LB_FFT_RAMZ",
-    "type": "limit",
-    "names": {
-      "en": "Ultima",
-      "fr": "Ultima",
-      "de": "Ultima",
-      "es": "Artema",
-      "ko": "알테마",
-      "zh": "究極"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 4,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 1
-    },
-    "hit": 100,
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "2": 10,
-        "3": 10,
-        "type": 0
-      }
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
   "SK_BTL_RES_DEBUFF_1_100_U": {
     "effects": [
       {
@@ -26386,65 +29137,6 @@
       }
     }
   },
-  "SK_LB_LW_LUCA": {
-    "effects": [
-      {
-        "type": "DISABLE_ATK",
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "IMMOBILIZE_ATK",
-        "calcType": "apply",
-        "rate": 30,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_LUCA",
-    "type": "limit",
-    "names": {
-      "en": "Sadistic Dance",
-      "fr": "Danse sadique",
-      "de": "Sadistischer Tanz",
-      "es": "Baile sádico",
-      "ko": "새디스틱 댄스",
-      "zh": "殘虐之舞"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 4,
-      "s": 1,
-      "line": 1
-    },
-    "based": "physic",
-    "combo": {
-      "num": 2,
-      "rate": 59
-    },
-    "damage": {
-      "minValue": 78,
-      "maxValue": 113,
-      "type": "missile",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "3": 5,
-        "type": 0
-      }
-    }
-  },
   "SK_BTL_KILLER_MAN_1-100_U": {
     "effects": [
       {
@@ -26491,53 +29183,6 @@
     },
     "target": "self",
     "maxLevel": 100
-  },
-  "SK_LB_LW_FDRC": {
-    "effects": [
-      {
-        "type": "CT",
-        "minValue": 10,
-        "maxValue": 25,
-        "calcType": "decrease",
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_FDRC",
-    "type": "limit",
-    "names": {
-      "en": "Butterfly Sting",
-      "fr": "Piqûre de papillon",
-      "de": "Stich des Schmetterlings",
-      "es": "Picadura de mariposa",
-      "ko": "접무봉자",
-      "zh": "蝶舞蜂刺"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 4,
-      "s": 1,
-      "line": 1
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "missile",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "3": 5,
-        "type": 0
-      }
-    }
   },
   "SK_BTL_KILLER_THUNDER_1-100_U": {
     "effects": [
@@ -26717,59 +29362,6 @@
       "ice"
     ]
   },
-  "SK_LB_LW_MDNA": {
-    "effects": [
-      {
-        "type": "ICE_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_MDNA",
-    "type": "limit",
-    "names": {
-      "en": "Cosmo Plume",
-      "fr": "Plume cosmique",
-      "de": "Kosmofeder",
-      "es": "Pilar cósmico",
-      "ko": "코스모 플룸",
-      "zh": "宇宙羽流"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 69
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    }
-  },
   "SK_BTL_RES_FIRE_1_80_U": {
     "effects": [
       {
@@ -26846,45 +29438,6 @@
       "s": 1,
       "l": 2,
       "h": 1
-    }
-  },
-  "SK_LB_LW_ENBT": {
-    "effects": [],
-    "dataId": "SK_LB_LW_ENBT",
-    "type": "limit",
-    "names": {
-      "en": "Enduring Fortitude",
-      "fr": "Courage inébranlable",
-      "de": "Beständige Tapferkeit",
-      "es": "Fortaleza imperecedera",
-      "ko": "견인불발",
-      "zh": "堅韌不拔"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 38
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "increaseDamageOnDecreaseHp": 100,
-    "damage": {
-      "minValue": 75,
-      "maxValue": 110,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 10,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
     }
   },
   "SK_BTL_RES_WIND_1_80_U": {
@@ -27233,53 +29786,6 @@
     "time": {
       "minValue": 160,
       "maxValue": 360
-    }
-  },
-  "SK_LB_LW_MRND": {
-    "effects": [
-      {
-        "type": "CONFUSION_ATK",
-        "calcType": "apply",
-        "rate": 67,
-        "turn": 3,
-        "target": "target",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_MRND",
-    "type": "limit",
-    "names": {
-      "en": "Crimson Storm",
-      "fr": "Tempête pourpre",
-      "de": "Purpurner Sturm",
-      "es": "Tormenta carmesí",
-      "ko": "홍람",
-      "zh": "紅嵐"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 69
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 70,
-      "maxValue": 105,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "2": 10,
-        "3": 10,
-        "type": 0
-      }
     }
   },
   "SK_ARW_LW_KTON_ARENA": {
@@ -27884,65 +30390,6 @@
     },
     "elem": [
       "neutral"
-    ]
-  },
-  "SK_LB_LW_IRDL": {
-    "effects": [
-      {
-        "type": "CT",
-        "minValue": 200,
-        "maxValue": 400,
-        "calcType": "fixe",
-        "turn": 1,
-        "target": "allyNotSelf",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "CT",
-        "minValue": 200,
-        "maxValue": 400,
-        "calcType": "fixe",
-        "turn": 1,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_IRDL",
-    "type": "limit",
-    "names": {
-      "en": "Ildyra's Theorem",
-      "fr": "Théorème d'Ildyra",
-      "de": "Ildyras Theorem",
-      "es": "Teorema de Ildira",
-      "ko": "일디라의 정리",
-      "zh": "伊爾迪拉定理"
-    },
-    "target": "allyNotSelf",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 1
-    },
-    "maths": [
-      {
-        "type": "UNIT_LEVEL",
-        "formula": "RATIO",
-        "condition": 3,
-        "value": 200,
-        "dst": "EFFECT"
-      }
     ]
   },
   "SK_LW_WGN_S_1_INIT": {
@@ -35102,49 +37549,6 @@
       }
     }
   },
-  "SK_LB_LW_MONT": {
-    "effects": [],
-    "dataId": "SK_LB_LW_MONT",
-    "type": "limit",
-    "names": {
-      "en": "Destiny's Cross",
-      "fr": "Croix du destin",
-      "de": "Schicksalskreuz",
-      "es": "Cruz del destino",
-      "ko": "운명의 십자가",
-      "zh": "命運交錯"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 0
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "2": 10,
-        "3": 10,
-        "type": 0
-      }
-    }
-  },
   "SK_MA_LW_VNLA": {
     "effects": [
       {
@@ -35396,58 +37800,6 @@
     "damage": {
       "minValue": 35,
       "maxValue": 70,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "2": 30,
-        "type": 0
-      }
-    }
-  },
-  "SK_LB_LW_VNLA": {
-    "effects": [
-      {
-        "type": "POISON_ATK",
-        "minValue": 15,
-        "maxValue": 25,
-        "calcType": "unknow",
-        "rate": 67,
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_VNLA",
-    "type": "limit",
-    "names": {
-      "en": "Dark Art: Hidden in Haze",
-      "fr": "Art de l'ombre : Nuit de brouillard",
-      "de": "Dunkle Künste: Schemenversteck",
-      "es": "Arte oscura: neblina oculta",
-      "ko": "암기: 농은",
-      "zh": "暗技·朧隱"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 4,
-      "s": 0
-    },
-    "based": "physic",
-    "combo": {
-      "num": 3,
-      "rate": 77
-    },
-    "damage": {
-      "minValue": 68,
-      "maxValue": 103,
       "type": "slash",
       "effType": "DAMAGE",
       "formula": {
@@ -35732,58 +38084,6 @@
     "target": "self",
     "maxLevel": 20
   },
-  "SK_LB_LW_RAIN": {
-    "effects": [
-      {
-        "type": "FIRE_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_RAIN",
-    "type": "limit",
-    "names": {
-      "en": "Shining Nova",
-      "fr": "Nova étincelante",
-      "de": "Novaglanz",
-      "es": "Nova deslumbrante",
-      "ko": "샛별의 광휘",
-      "zh": "閃光新星"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "combo": {
-      "num": 2,
-      "rate": 59
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    }
-  },
   "SK_MA_LW_RAIN": {
     "effects": [
       {
@@ -35900,109 +38200,6 @@
     },
     "target": "self",
     "maxLevel": 80
-  },
-  "SK_LB_LW_VKTR": {
-    "effects": [
-      {
-        "type": "CHARM_ATK",
-        "calcType": "apply",
-        "rate": 67,
-        "turn": 3,
-        "target": "target",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_VKTR",
-    "type": "limit",
-    "names": {
-      "en": "Enchanting Trap",
-      "fr": "Doux piège",
-      "de": "Süße Falle",
-      "es": "Trampa encantadora",
-      "ko": "감미로운 덫",
-      "zh": "甜美陷阱"
-    },
-    "target": "target",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "based": "physic",
-    "aoe": {
-      "s": 5,
-      "l": 3,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "pierce",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 5,
-        "3": 15,
-        "type": 0
-      }
-    }
-  },
-  "SK_LB_LW_AYKA": {
-    "effects": [
-      {
-        "type": "HP",
-        "minValue": 280,
-        "maxValue": 310,
-        "calcType": "unknow",
-        "target": "selfSide",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "DISPEL",
-        "ailments": [
-          "STOP"
-        ],
-        "target": "selfSide",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "STOP_RES",
-        "minValue": 10,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "selfSide",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_AYKA",
-    "type": "limit",
-    "names": {
-      "en": "Angelic Grace",
-      "fr": "Grâce angélique",
-      "de": "Engelsgleiche Anmut",
-      "es": "Gracia angelical",
-      "ko": "천사의 은총",
-      "zh": "天使恩典"
-    },
-    "target": "selfSide",
-    "cost": {
-      "type": "AP",
-      "value": 69
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    }
   },
   "SK_LW_WHM_S_4_3": {
     "effects": [
@@ -36323,142 +38520,6 @@
       "maxValue": 320
     }
   },
-  "SK_LB_LW_QILF": {
-    "effects": [
-      {
-        "type": "MAGIC_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_QILF",
-    "type": "limit",
-    "names": {
-      "en": "Stave Collector",
-      "fr": "Collectionneuse de bâtons",
-      "de": "Stabarrangement",
-      "es": "Coleccionista de bastones",
-      "ko": "마장집극",
-      "zh": "魔杖集戟"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 46
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 2,
-      "s": 0
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    }
-  },
-  "SK_LB_LW_ELDE": {
-    "effects": [
-      {
-        "type": "REDUCE_DAMAGE_GENERAL",
-        "minValue": 30,
-        "maxValue": 50,
-        "calcType": "percent",
-        "turn": 3,
-        "turnType": "COUNT",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "PROVOKE",
-        "minValue": 4,
-        "maxValue": 6,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_ELDE",
-    "type": "limit",
-    "names": {
-      "en": "Leonis Barrier",
-      "fr": "Barrière de Leonis",
-      "de": "Leonischer Wall",
-      "es": "Barrera de Leonis",
-      "ko": "레오니스의 장벽",
-      "zh": "雷歐尼斯之壁"
-    },
-    "target": "self",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "based": "physic"
-  },
-  "SK_LB_LW_AILN": {
-    "effects": [
-      {
-        "type": "EARTH_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_AILN",
-    "type": "limit",
-    "names": {
-      "en": "Drill Impact",
-      "fr": "Impact perforant",
-      "de": "Bohrwirkung",
-      "es": "Impacto taladrante",
-      "ko": "드릴 임팩트",
-      "zh": "鑽頭衝擊"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 46
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "pierce",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "2": 10,
-        "3": 15,
-        "type": 0
-      }
-    }
-  },
   "SK_LW_LSWL_M_1": {
     "effects": [
       {
@@ -36697,56 +38758,6 @@
     "damage": {
       "minValue": -5,
       "maxValue": 21,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
-  },
-  "SK_LB_LW_LSWL": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 20,
-        "maxValue": 40,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_LSWL",
-    "type": "limit",
-    "names": {
-      "en": "Azure Sky",
-      "fr": "Ciel azur",
-      "de": "Wolkenbeben",
-      "es": "Cielo azul",
-      "ko": "운외창천",
-      "zh": "雲外蒼天"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 1
-    },
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
       "type": "slash",
       "effType": "DAMAGE",
       "formula": {
@@ -37081,60 +39092,6 @@
     "damage": {
       "minValue": -5,
       "maxValue": 21,
-      "type": "pierce",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "2": 10,
-        "3": 15,
-        "type": 0
-      }
-    }
-  },
-  "SK_LB_LW_GRSR": {
-    "effects": [
-      {
-        "type": "STOP_CHAIN_INCREASE_DAMAGE",
-        "value": 200,
-        "timing": "SKILL_BEFORE"
-      },
-      {
-        "type": "MAX_DAMAGE",
-        "minValue": 5000,
-        "maxValue": 10000,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_GRSR",
-    "type": "limit",
-    "names": {
-      "en": "Valkyrie Drive",
-      "fr": "Offensive de Valkyrie",
-      "de": "Walkürendynamik",
-      "es": "Impulso de valquiria",
-      "ko": "발키리 드라이브",
-      "zh": "女武神疾驅"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 38
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 2,
-      "s": 0,
-      "line": 1
-    },
-    "based": "physic",
-    "pierce": 1,
-    "damage": {
-      "minValue": 70,
-      "maxValue": 105,
       "type": "pierce",
       "effType": "DAMAGE",
       "formula": {
@@ -37573,68 +39530,6 @@
     },
     "target": "self",
     "maxLevel": 1
-  },
-  "SK_LB_LW_RYER_01": {
-    "effects": [
-      {
-        "type": "MASS_DISPEL",
-        "calcType": "buffs",
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      },
-      {
-        "type": "DISPEL",
-        "ailments": [
-          "HASTE"
-        ],
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_RYER_01",
-    "type": "limit",
-    "names": {
-      "en": "Animal Pumpkin",
-      "fr": "Spiritrouille",
-      "de": "Wilder Kürbis",
-      "es": "Calabaza animal",
-      "ko": "애니멀 펌프킨",
-      "zh": "動物南瓜"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "maths": [
-      {
-        "type": "TARGET_LEVEL",
-        "formula": "RATIO",
-        "condition": 3,
-        "value": 75,
-        "dst": "DAMAGE"
-      }
-    ],
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    }
   },
   "SK_LW_GRM_WIND_M_2_INIT": {
     "effects": [
@@ -38115,54 +40010,6 @@
       }
     }
   },
-  "SK_LB_LW_HWLT": {
-    "effects": [
-      {
-        "type": "WIND_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "resistance",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_BEFORE"
-      }
-    ],
-    "dataId": "SK_LB_LW_HWLT",
-    "type": "limit",
-    "names": {
-      "en": "Stella Artis",
-      "fr": "Stella Artis",
-      "de": "Stella Artis",
-      "es": "Stella Artis",
-      "ko": "스텔라 알테",
-      "zh": "星光藝術"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 49
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "damage": {
-      "minValue": 65,
-      "maxValue": 100,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 25,
-        "2": 10,
-        "3": 10,
-        "type": 0
-      }
-    }
-  },
   "SK_LW_MKN_M_3": {
     "effects": [
       {
@@ -38241,61 +40088,6 @@
     },
     "target": "self",
     "maxLevel": 1
-  },
-  "SK_LB_LW_YERM": {
-    "effects": [
-      {
-        "type": "ATTACK_RES",
-        "minValue": -18,
-        "maxValue": -38,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "ATTACK_RES",
-        "minValue": 18,
-        "maxValue": 38,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LB_LW_YERM",
-    "type": "limit",
-    "names": {
-      "en": "Soaring Axe Slash",
-      "fr": "Hache viking",
-      "de": "Rasender Axtschlitzer",
-      "es": "Hachazo elevado",
-      "ko": "거대 도끼 휘두르기",
-      "zh": "飛襲大斬斧"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 43
-    },
-    "count": 1,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 3,
-      "s": 1
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": 75,
-      "maxValue": 110,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
   },
   "SK_ACC_LW_MONT_ARENA": {
     "effects": [

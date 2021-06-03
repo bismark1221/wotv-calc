@@ -231,32 +231,38 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.limit) {
-        this.unit.limit.name = this.nameService.getName(this.unit.limit);
-        this.unit.limit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.limit);
+        this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit);
+        if (this.unit.formattedLimit) {
+          this.unit.formattedLimit.name = this.nameService.getName(this.unit.formattedLimit);
+          this.unit.formattedLimit.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedLimit);
 
-        this.unit.limit.basedHtml = this.unit.limit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.limit.based.toLowerCase() + '.png\' />' : '';
+          this.unit.formattedLimit.basedHtml = this.unit.formattedLimit.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedLimit.based.toLowerCase() + '.png\' />' : '';
 
-        this.unit.limit.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.limit);
+          this.unit.formattedLimit.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.formattedLimit);
 
-        this.unit.limit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.limit, this.unit.limit.damage);
+          this.unit.formattedLimit.damageHtml = this.skillService.formatDamage(this.unit, this.unit.formattedLimit, this.unit.formattedLimit.damage);
 
-        this.rangeService.formatRange(this.unit, this.unit.limit);
+          this.rangeService.formatRange(this.unit, this.unit.formattedLimit);
 
-        this.unit.limit.upgrades = [];
-        this.unit.limit = this.addUpgrade(this.unit.limit);
+          this.unit.formattedLimit.upgrades = [];
+          this.unit.formattedLimit = this.addUpgrade(this.unit.formattedLimit);
+        }
       }
 
       if (this.unit.attack) {
-        this.unit.attack.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.attack);
-        this.unit.attack.basedHtml = this.unit.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.attack.based.toLowerCase() + '.png\' />' : '';
+        this.unit.formattedAttack = this.unit.attack;
+        if (this.unit.formattedAttack) {
+          this.unit.formattedAttack.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedAttack);
+          this.unit.formattedAttack.basedHtml = this.unit.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedAttack.based.toLowerCase() + '.png\' />' : '';
 
-        this.unit.attack.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.attack);
+          this.unit.formattedAttack.effectsHtml = this.skillService.formatEffects(this.unit, this.unit.formattedAttack);
 
-        this.unit.attack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.attack, this.unit.attack.damage);
+          this.unit.formattedAttack.damageHtml = this.skillService.formatDamage(this.unit, this.unit.formattedAttack, this.unit.formattedAttack.damage);
 
-        this.rangeService.formatRange(this.unit, this.unit.attack);
-        this.unit.attack.upgrades = [];
-        this.unit.attack = this.addUpgrade(this.unit.attack);
+          this.rangeService.formatRange(this.unit, this.unit.formattedAttack);
+          this.unit.formattedAttack.upgrades = [];
+          this.unit.formattedAttack = this.addUpgrade(this.unit.formattedAttack);
+        }
       }
 
       if (this.unit.tmr) {
@@ -370,9 +376,9 @@ export class UnitComponent implements OnInit {
       });
     }
 
-    if (name === '' && this.unit.limit) {
-      if (this.unit.limit.dataId === upgradeSkillId) {
-        name = this.nameService.getName(this.unit.limit);
+    if (name === '' && this.unit.limit && this.unit.formattedLimit) {
+      if (this.unit.limit === upgradeSkillId) {
+        name = this.nameService.getName(this.unit.formattedLimit);
       }
     }
 

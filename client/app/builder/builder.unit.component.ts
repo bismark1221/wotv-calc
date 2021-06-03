@@ -538,7 +538,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
   }
 
   updateLimitLevel(level) {
-    this.unit.limit.level = level;
+    this.unit.formattedLimit.level = level;
     this.unitService.getActiveSkills();
     this.updateActiveSkillsForSim();
   }
@@ -596,8 +596,8 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
     this.unit.skillsForSim = skills;
 
-    if (this.unit.limit && this.unit.limit.damage) {
-      this.unit.skillsForSim.push(this.unit.limit);
+    if (this.unit.formattedLimit && this.unit.formattedLimit.damage) {
+      this.unit.skillsForSim.push(this.unit.formattedLimit);
     }
 
     if (this.unit.card) {

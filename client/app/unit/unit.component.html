@@ -800,7 +800,7 @@
           </tbody>
         </table>
 
-        <table class="skillsTable">
+        <table class="skillsTable" *ngIf="unit.formattedAttack">
           <tbody>
             <tr>
               <th class="sub"></th>
@@ -812,56 +812,56 @@
             <tr>
               <td class="skillNameTd">Basic Attack</td>
               <td>
-                <span *ngIf="unit.attack.based"><img title="{{ unit.attack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.attack.based + '.png'}}" /></span>
+                <span *ngIf="unit.formattedAttack.based"><img title="{{ unit.formattedAttack.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + unit.formattedAttack.based + '.png'}}" /></span>
               </td>
               <td class="skillEffectTd">
-                <div *ngIf="unit.attack.upgradeHtml !== ''">
-                  {{ unit.attack.upgradeHtml }}
+                <div *ngIf="unit.formattedAttack.upgradeHtml !== ''">
+                  {{ unit.formattedAttack.upgradeHtml }}
                 </div>
-                <div *ngFor="let effect of unit.attack.effectsHtml.before">
+                <div *ngFor="let effect of unit.formattedAttack.effectsHtml.before">
                   {{ effect }}
                 </div>
 
-                <div *ngIf="unit.attack.damageHtml && unit.attack.damageHtml.value">
+                <div *ngIf="unit.formattedAttack.damageHtml && unit.formattedAttack.damageHtml.value">
                   <ng-template #tip_damage>
-                    <div *ngIf="unit.attack.based === 'physic'">
-                      {{ (100 + (unit.attack.damage.formula.type === 1 && unit.attack.damage.formula[1] > 0 ? unit.attack.damage.formula[1] : 0)) + '% ATK' }}
+                    <div *ngIf="unit.formattedAttack.based === 'physic'">
+                      {{ (100 + (unit.formattedAttack.damage.formula.type === 1 && unit.formattedAttack.damage.formula[1] > 0 ? unit.formattedAttack.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
-                    <div *ngIf="unit.attack.based === 'magic'">
-                      {{ (100 + (unit.attack.damage.formula.type === 1 && unit.attack.damage.formula[1] > 0 ? unit.attack.damage.formula[1] : 0)) + '% MAG' }}
+                    <div *ngIf="unit.formattedAttack.based === 'magic'">
+                      {{ (100 + (unit.formattedAttack.damage.formula.type === 1 && unit.formattedAttack.damage.formula[1] > 0 ? unit.formattedAttack.damage.formula[1] : 0)) + '% MAG' }}
                     </div>
-                    <div *ngIf="unit.attack.based === 'hybrid'">
-                      {{ (100 + (unit.attack.damage.formula.type === 1 && unit.attack.damage.formula[1] > 0 ? unit.attack.damage.formula[1] : 0)) + '% ATK' }}
+                    <div *ngIf="unit.formattedAttack.based === 'hybrid'">
+                      {{ (100 + (unit.formattedAttack.damage.formula.type === 1 && unit.formattedAttack.damage.formula[1] > 0 ? unit.formattedAttack.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
 
-                    <div *ngIf="unit.attack.damage.formula.type === 0 && unit.attack.damage.formula[1] > 0">
-                      {{ unit.attack.damage.formula[1] }}% DEX
+                    <div *ngIf="unit.formattedAttack.damage.formula.type === 0 && unit.formattedAttack.damage.formula[1] > 0">
+                      {{ unit.formattedAttack.damage.formula[1] }}% DEX
                     </div>
-                    <div *ngIf="unit.attack.damage.formula.type === 0 && unit.attack.damage.formula[2] > 0">
-                      {{ unit.attack.damage.formula[2] }}% AGI
+                    <div *ngIf="unit.formattedAttack.damage.formula.type === 0 && unit.formattedAttack.damage.formula[2] > 0">
+                      {{ unit.formattedAttack.damage.formula[2] }}% AGI
                     </div>
-                    <div *ngIf="unit.attack.damage.formula.type === 0 && unit.attack.damage.formula[3] > 0">
-                      {{ unit.attack.damage.formula[3] }}% LUCK
+                    <div *ngIf="unit.formattedAttack.damage.formula.type === 0 && unit.formattedAttack.damage.formula[3] > 0">
+                      {{ unit.formattedAttack.damage.formula[3] }}% LUCK
                     </div>
                   </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ unit.attack.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.attack.damageHtml.type.image }}.png" />&nbsp; {{ unit.attack.damageHtml.effType }} {{ unit.attack.damageHtml.pool }} {{ unit.attack.damageHtml.value }}
-                  <div [innerHTML]="unit.attack.damageHtml.others | safeHtml"></div>
+                  <img [ngbTooltip]="tip_damage" title="{{ unit.formattedAttack.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.formattedAttack.damageHtml.type.image }}.png" />&nbsp; {{ unit.formattedAttack.damageHtml.effType }} {{ unit.formattedAttack.damageHtml.pool }} {{ unit.formattedAttack.damageHtml.value }}
+                  <div [innerHTML]="unit.formattedAttack.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of unit.attack.effectsHtml.after">
+                <div *ngFor="let effect of unit.formattedAttack.effectsHtml.after">
                   {{ effect }}
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="unit.attack.skillTableHtml"></div></ng-template>
+                <ng-template #tip_table><div [innerHTML]="unit.formattedAttack.skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                  <div class="divSkillTableHtml" [innerHTML]="unit.attack.skillTableHtml"></div>
+                  <div class="divSkillTableHtml" [innerHTML]="unit.formattedAttack.skillTableHtml"></div>
                 </div>
               </td>
-              <td><span *ngIf="unit.attack.combo">{{ unit.attack.combo.num }}</span></td>
+              <td><span *ngIf="unit.formattedAttack.combo">{{ unit.formattedAttack.combo.num }}</span></td>
             </tr>
 
-            <tr *ngFor="let upgradedSkill of unit.attack.upgrades">
+            <tr *ngFor="let upgradedSkill of unit.formattedAttack.upgrades">
               <td>Upgrade</td>
               <td>
                 <span *ngIf="upgradedSkill.based"><img title="{{ upgradedSkill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + upgradedSkill.based + '.png'}}" /></span>
@@ -1094,79 +1094,79 @@
           </tbody>
         </table>
 
-        <table class="skillsTable" *ngIf="unit.limit">
+        <table class="skillsTable" *ngIf="unit.formattedLimit">
           <tbody>
             <tr>
-              <th [attr.colspan]="unit.limit.based ? '6' : '5'">Limit Burst</th>
+              <th [attr.colspan]="unit.formattedLimit.based ? '6' : '5'">Limit Burst</th>
             </tr>
             <tr>
               <th class="sub limitNameTd">Name</th>
-              <th class="sub" [attr.colspan]="unit.limit.based ? '2' : '1'">Effects</th>
+              <th class="sub" [attr.colspan]="unit.formattedLimit.based ? '2' : '1'">Effects</th>
               <th class="sub rangeTd">Range</th>
               <th class="sub skillHitTd">Hits</th>
               <th class="sub skillCostTd">Cost</th>
             </tr>
             <tr>
-              <td>{{ unit.limit.name }}</td>
-              <td class="limitBased" *ngIf="unit.limit.based">
-                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.limit.based + '.png' }}" />
-                <div *ngIf="unit.limit.time && unit.limit.time.minValue">
+              <td>{{ unit.formattedLimit.name }}</td>
+              <td class="limitBased" *ngIf="unit.formattedLimit.based">
+                <img class='atkBasedImg' src="{{ 'assets/atkBased/' + unit.formattedLimit.based + '.png' }}" />
+                <div *ngIf="unit.formattedLimit.time && unit.formattedLimit.time.minValue">
                   <ng-template #tip_time>
                     <div>
-                      Min time: {{ unit.limit.time.minValue }}<br />
-                      Max time: {{ unit.limit.time.maxValue }}
+                      Min time: {{ unit.formattedLimit.time.minValue }}<br />
+                      Max time: {{ unit.formattedLimit.time.maxValue }}
                     </div>
                   </ng-template>
                   <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
                 </div>
               </td>
-              <td [className]="unit.limit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
-                <div *ngIf="unit.limit.upgradeHtml !== ''">
-                  {{ unit.limit.upgradeHtml }}
+              <td [className]="unit.formattedLimit.based ? 'skillEffectTdAndNoBorderLeft' : 'skillEffectTd'">
+                <div *ngIf="unit.formattedLimit.upgradeHtml !== ''">
+                  {{ unit.formattedLimit.upgradeHtml }}
                 </div>
 
-                <div *ngFor="let effect of unit.limit.effectsHtml.before">
+                <div *ngFor="let effect of unit.formattedLimit.effectsHtml.before">
                   {{ effect }}
                 </div>
 
-                <div *ngIf="unit.limit.damageHtml && unit.limit.damageHtml.value">
+                <div *ngIf="unit.formattedLimit.damageHtml && unit.formattedLimit.damageHtml.value">
                   <ng-template #tip_damage>
-                    <div *ngIf="unit.limit.based === 'physic'">
-                      {{ (100 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] : 0)) + '% ATK' }}
+                    <div *ngIf="unit.formattedLimit.based === 'physic'">
+                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
-                    <div *ngIf="unit.limit.based === 'magic'">
-                      {{ (100 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] : 0)) + '% MAG' }}
+                    <div *ngIf="unit.formattedLimit.based === 'magic'">
+                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% MAG' }}
                     </div>
-                    <div *ngIf="unit.limit.based === 'hybrid'">
-                      {{ (100 + (unit.limit.damage.formula.type === 1 && unit.limit.damage.formula[1] > 0 ? unit.limit.damage.formula[1] : 0)) + '% ATK' }}
+                    <div *ngIf="unit.formattedLimit.based === 'hybrid'">
+                      {{ (100 + (unit.formattedLimit.damage.formula.type === 1 && unit.formattedLimit.damage.formula[1] > 0 ? unit.formattedLimit.damage.formula[1] : 0)) + '% ATK' }}
                     </div>
 
-                    <div *ngIf="unit.limit.damage.formula.type === 0 && unit.limit.damage.formula[1] > 0">
-                      {{ unit.limit.damage.formula[1] }}% DEX
+                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[1] > 0">
+                      {{ unit.formattedLimit.damage.formula[1] }}% DEX
                     </div>
-                    <div *ngIf="unit.limit.damage.formula.type === 0 && unit.limit.damage.formula[2] > 0">
-                      {{ unit.limit.damage.formula[2] }}% AGI
+                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[2] > 0">
+                      {{ unit.formattedLimit.damage.formula[2] }}% AGI
                     </div>
-                    <div *ngIf="unit.limit.damage.formula.type === 0 && unit.limit.damage.formula[3] > 0">
-                      {{ unit.limit.damage.formula[3] }}% LUCK
+                    <div *ngIf="unit.formattedLimit.damage.formula.type === 0 && unit.formattedLimit.damage.formula[3] > 0">
+                      {{ unit.formattedLimit.damage.formula[3] }}% LUCK
                     </div>
                   </ng-template>
-                  <img [ngbTooltip]="tip_damage" title="{{ unit.limit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.limit.damageHtml.type.image }}.png" />&nbsp; {{ unit.limit.damageHtml.effType }} {{ unit.limit.damageHtml.pool }} {{ unit.limit.damageHtml.value }}
-                  <div [innerHTML]="unit.limit.damageHtml.others | safeHtml"></div>
+                  <img [ngbTooltip]="tip_damage" title="{{ unit.formattedLimit.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ unit.formattedLimit.damageHtml.type.image }}.png" />&nbsp; {{ unit.formattedLimit.damageHtml.effType }} {{ unit.formattedLimit.damageHtml.pool }} {{ unit.formattedLimit.damageHtml.value }}
+                  <div [innerHTML]="unit.formattedLimit.damageHtml.others | safeHtml"></div>
                 </div>
 
-                <div *ngFor="let effect of unit.limit.effectsHtml.after">
+                <div *ngFor="let effect of unit.formattedLimit.effectsHtml.after">
                   {{ effect }}
                 </div>
               </td>
               <td>
-                <ng-template #tip_table><div [innerHTML]="unit.limit.skillTableHtml"></div></ng-template>
+                <ng-template #tip_table><div [innerHTML]="unit.formattedLimit.skillTableHtml"></div></ng-template>
                 <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
-                  <div class="divSkillTableHtml" [innerHTML]="unit.limit.skillTableHtml"></div>
+                  <div class="divSkillTableHtml" [innerHTML]="unit.formattedLimit.skillTableHtml"></div>
                 </div>
               </td>
-              <td><span *ngIf="unit.limit.combo">{{ unit.limit.combo.num }}</span></td>
-              <td><span *ngIf="unit.limit.cost">{{ unit.limit.cost.value }} {{ unit.limit.cost.type }}</span></td>
+              <td><span *ngIf="unit.formattedLimit.combo">{{ unit.formattedLimit.combo.num }}</span></td>
+              <td><span *ngIf="unit.formattedLimit.cost">{{ unit.formattedLimit.cost.value }} {{ unit.formattedLimit.cost.type }}</span></td>
             </tr>
           </tbody>
         </table>

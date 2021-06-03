@@ -4605,15 +4605,9 @@ export class JsonService {
 
   private getLB(unit, lbId) {
     if (lbId) {
-      const limit = {
-        names: {},
-        effects: [],
-        dataId: lbId,
-        type: 'limit'
-      };
-      this.updateSkill(unit, limit, lbId);
+      this.addSkill(lbId, unit);
 
-      unit.limit = limit;
+      unit.limit = lbId;
     }
   }
 
