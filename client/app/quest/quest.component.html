@@ -140,21 +140,199 @@
         <th>Job</th>
         <th>Level</th>
       </tr>
-      <tr *ngFor="let ally of quest.formattedAllies; let j = index">
-        <td>A{{ j + 1 }}</td>
-        <td>
-          <img src="assets/units/{{ally.image}}_m.png" class="enemyImg" />{{ ally.name }}
-        </td>
-        <td>
-          <img src="assets/elements/{{ ally.element }}.png" class="elementImg" />
-        </td>
-        <td>
-          <div class="job" *ngIf="ally.job" title="{{ ally.job.name }}">
-            <img src="{{'assets/jobs/' + ally.job.image + '.png'}}" />
-          </div>
-        </td>
-        <td>{{ ally.level }}</td>
-      </tr>
+      <tbody *ngFor="let ally of quest.formattedAllies; let j = index">
+        <tr (click)="isCollapsedAlly[j] = !isCollapsedAlly[j]" [attr.aria-expanded]="!isCollapsedAlly[j]" class="enemyLine">
+          <td>
+            <div class="collapseBlock">
+              <i class="fas fa-chevron-up" *ngIf="!isCollapsedAlly[j]" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down" *ngIf="isCollapsedAlly[j]" aria-hidden="true"></i>
+            </div>
+            A{{ j + 1 }}
+          </td>
+          <td>
+            <img src="assets/units/{{ally.image}}_m.png" class="enemyImg" />{{ ally.name }}
+          </td>
+          <td>
+            <img src="assets/elements/{{ ally.element }}.png" class="elementImg" />
+          </td>
+          <td>
+            <div class="job" *ngIf="ally.job" title="{{ ally.job.name }}">
+              <img src="{{'assets/jobs/' + ally.job.image + '.png'}}" />
+            </div>
+          </td>
+          <td>{{ ally.level }}</td>
+        </tr>
+        <tr [ngbCollapse]="isCollapsedAlly[j]">
+          <td colspan="99" class="enemyDetailCol">
+            <table>
+              <tr>
+                <th class="sub" *ngIf="ally.hasMaxLevel"></th>
+                <th class="sub">HP</th>
+                <th class="sub">TP</th>
+                <th class="sub">AP</th>
+                <th class="sub">ATK</th>
+                <th class="sub">DEF</th>
+                <th class="sub">MAG</th>
+                <th class="sub">SPR</th>
+                <th class="sub">DEX</th>
+                <th class="sub">AGI</th>
+                <th class="sub">LUCK</th>
+                <th class="sub">MOVE</th>
+                <th class="sub">JUMP</th>
+              </tr>
+              <tr *ngIf="!ally.hasMaxLevel">
+                <td>{{ ally.stats.HP.total }}</td>
+                <td>{{ ally.stats.TP.total }}</td>
+                <td>{{ ally.stats.AP.total }}</td>
+                <td>{{ ally.stats.ATK.total }}</td>
+                <td>{{ ally.stats.DEF.total }}</td>
+                <td>{{ ally.stats.MAG.total }}</td>
+                <td>{{ ally.stats.SPR.total }}</td>
+                <td>{{ ally.stats.DEX.total }}</td>
+                <td>{{ ally.stats.AGI.total }}</td>
+                <td>{{ ally.stats.LUCK.total }}</td>
+                <td>{{ ally.stats.MOVE.total }}</td>
+                <td>{{ ally.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="ally.hasMaxLevel">
+                <td>MIN</td>
+                <td>{{ ally.stats.HP.minTotal }}</td>
+                <td>{{ ally.stats.TP.minTotal }}</td>
+                <td>{{ ally.stats.AP.minTotal }}</td>
+                <td>{{ ally.stats.ATK.minTotal }}</td>
+                <td>{{ ally.stats.DEF.minTotal }}</td>
+                <td>{{ ally.stats.MAG.minTotal }}</td>
+                <td>{{ ally.stats.SPR.minTotal }}</td>
+                <td>{{ ally.stats.DEX.minTotal }}</td>
+                <td>{{ ally.stats.AGI.minTotal }}</td>
+                <td>{{ ally.stats.LUCK.minTotal }}</td>
+                <td rowspan="2">{{ ally.stats.MOVE.total }}</td>
+                <td rowspan="2">{{ ally.stats.JUMP.total }}</td>
+              </tr>
+              <tr *ngIf="ally.hasMaxLevel">
+                <td>MAX</td>
+                <td>{{ ally.stats.HP.maxTotal }}</td>
+                <td>{{ ally.stats.TP.maxTotal }}</td>
+                <td>{{ ally.stats.AP.maxTotal }}</td>
+                <td>{{ ally.stats.ATK.maxTotal }}</td>
+                <td>{{ ally.stats.DEF.maxTotal }}</td>
+                <td>{{ ally.stats.MAG.maxTotal }}</td>
+                <td>{{ ally.stats.SPR.maxTotal }}</td>
+                <td>{{ ally.stats.DEX.maxTotal }}</td>
+                <td>{{ ally.stats.AGI.maxTotal }}</td>
+                <td>{{ ally.stats.LUCK.maxTotal }}</td>
+              </tr>
+            </table>
+            <table>
+              <tbody *ngFor="let line of ally.hasStats">
+                <tr>
+                  <th class="sub" *ngFor="let stat of line">
+                    <img class="elementImg" src="{{ statImage[stat] }}" />
+                  </th>
+                </tr>
+                <tr>
+                  <td class="heightResTd" *ngFor="let stat of line">
+                    <span>{{ ally.stats[stat].total }} %</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody *ngIf="ally.otherStats.length > 0">
+                <tr>
+                  <th class="sub" colspan="99">OTHERS</th>
+                </tr>
+                <tr *ngFor="let otherStat of ally.otherStats">
+                  <td class="heightResTd" colspan="99">{{ otherStat }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <th colspan="9">
+                    Skills
+                  </th>
+                </tr>
+                <tr>
+                  <th class="sub skillTypeTd">Type</th>
+                  <th class="sub skillNameTd">Name</th>
+                  <th class="sub">Effects</th>
+                  <th class="sub rangeTd">Range</th>
+                  <th class="sub skillCastTd">Casts</th>
+                  <th class="sub skillHitTd">Hits</th>
+                  <th class="sub skillCostTd">Cost</th>
+                </tr>
+                <tr *ngFor="let skill of ally.skills">
+                  <td>
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <div *ngIf="skill.time && skill.time.minValue">
+                      <ng-template #tip_time>
+                        <div>
+                          Min time: {{ skill.time.minValue }}<br />
+                          Max time: {{ skill.time.maxValue }}
+                        </div>
+                      </ng-template>
+                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                    </div>
+                  </td>
+                  <td>{{ skill.name }}</td>
+                  <td class="skillEffectTd">
+                    <div>{{ skill.counterHtml }}</div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.before">
+                      {{ effect }}
+                    </div>
+
+                    <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                      <ng-template #tip_damage>
+                        <div *ngIf="skill.based === 'physic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+                        <div *ngIf="skill.based === 'magic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                        </div>
+                        <div *ngIf="skill.based === 'hybrid'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                          {{ skill.damage.formula[1] }}% DEX
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                          {{ skill.damage.formula[2] }}% AGI
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                          {{ skill.damage.formula[3] }}% LUCK
+                        </div>
+                      </ng-template>
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                    </div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.after">
+                      {{ effect }}
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="skill.type != 'support'">
+                      <ng-template #tip_table>
+                        <div [innerHTML]="skill.skillTableHtml"></div>
+                      </ng-template>
+                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                        <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>{{ skill.count }}</td>
+                  <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+                  <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <table class="enemyTable" *ngIf="quest.formattedEnemies?.length > 0">
@@ -425,10 +603,188 @@
         <th class="idCol">ID</th>
         <th class="nameCol">Name</th>
       </tr>
-      <tr *ngFor="let object of quest.formattedObjects; let j = index">
-        <td>O{{ j + 1 }}</td>
-        <td><img src="assets/units/{{object.image}}_m.png" class="enemyImg" />{{ object.name }}</td>
-      </tr>
+      <tbody *ngFor="let object of quest.formattedObjects; let j = index">
+        <tr (click)="isCollapsedObject[j] = !isCollapsedObject[j]" [attr.aria-expanded]="!isCollapsedObject[j]" class="enemyLine">
+          <td>
+            <div class="collapseBlock">
+              <i class="fas fa-chevron-up" *ngIf="!isCollapsedObject[j]" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down" *ngIf="isCollapsedObject[j]" aria-hidden="true"></i>
+            </div>
+            O{{ j + 1 }}
+          </td>
+          <td><img src="assets/units/{{object.image}}_m.png" class="enemyImg" />{{ object.name }}</td>
+        </tr>
+        <tr [ngbCollapse]="isCollapsedObject[j]">
+          <td colspan="99" class="enemyDetailCol">
+            <table>
+              <tr>
+                <th class="sub" *ngIf="object.hasMaxLevel"></th>
+                <th class="sub">HP</th>
+                <th class="sub">TP</th>
+                <th class="sub">AP</th>
+                <th class="sub">ATK</th>
+                <th class="sub">DEF</th>
+                <th class="sub">MAG</th>
+                <th class="sub">SPR</th>
+                <th class="sub">DEX</th>
+                <th class="sub">AGI</th>
+                <th class="sub">LUCK</th>
+                <th class="sub">MOVE</th>
+                <th class="sub">JUMP</th>
+              </tr>
+              <tr *ngIf="!object.hasMaxLevel">
+                <td>{{ object.stats.HP ? object.stats.HP.total : '' }}</td>
+                <td>{{ object.stats.TP ? object.stats.TP.total : '' }}</td>
+                <td>{{ object.stats.AP ? object.stats.AP.total : '' }}</td>
+                <td>{{ object.stats.ATK ? object.stats.ATK.total : '' }}</td>
+                <td>{{ object.stats.DEF ? object.stats.DEF.total : '' }}</td>
+                <td>{{ object.stats.MAG ? object.stats.MAG.total : '' }}</td>
+                <td>{{ object.stats.SPR ? object.stats.SPR.total : '' }}</td>
+                <td>{{ object.stats.DEX ? object.stats.DEX.total : '' }}</td>
+                <td>{{ object.stats.AGI ? object.stats.AGI.total : '' }}</td>
+                <td>{{ object.stats.LUCK ? object.stats.LUCK.total : '' }}</td>
+                <td>{{ object.stats.MOVE ? object.stats.MOVE.total : '' }}</td>
+                <td>{{ object.stats.JUMP ? object.stats.JUMP.total : '' }}</td>
+              </tr>
+              <tr *ngIf="object.hasMaxLevel">
+                <td>MIN</td>
+                <td>{{ object.stats.HP ? object.stats.HP.minTotal : '' }}</td>
+                <td>{{ object.stats.TP ? object.stats.TP.minTotal : '' }}</td>
+                <td>{{ object.stats.AP ? object.stats.AP.minTotal : '' }}</td>
+                <td>{{ object.stats.ATK ? object.stats.ATK.minTotal : '' }}</td>
+                <td>{{ object.stats.DEF ? object.stats.DEF.minTotal : '' }}</td>
+                <td>{{ object.stats.MAG ? object.stats.MAG.minTotal : '' }}</td>
+                <td>{{ object.stats.SPR ? object.stats.SPR.minTotal : '' }}</td>
+                <td>{{ object.stats.DEX ? object.stats.DEX.minTotal : '' }}</td>
+                <td>{{ object.stats.AGI ? object.stats.AGI.minTotal : '' }}</td>
+                <td>{{ object.stats.LUCK ? object.stats.LUCK.minTotal : '' }}</td>
+                <td rowspan="2">{{ object.stats.MOVE ? object.stats.MOVE.total : '' }}</td>
+                <td rowspan="2">{{ object.stats.JUMP ? object.stats.JUMP.total : '' }}</td>
+              </tr>
+              <tr *ngIf="object.hasMaxLevel">
+                <td>MAX</td>
+                <td>{{ object.stats.HP ? object.stats.HP.maxTotal : '' }}</td>
+                <td>{{ object.stats.TP ? object.stats.TP.maxTotal : '' }}</td>
+                <td>{{ object.stats.AP ? object.stats.AP.maxTotal : '' }}</td>
+                <td>{{ object.stats.ATK ? object.stats.ATK.maxTotal : '' }}</td>
+                <td>{{ object.stats.DEF ? object.stats.DEF.maxTotal : '' }}</td>
+                <td>{{ object.stats.MAG ? object.stats.MAG.maxTotal : '' }}</td>
+                <td>{{ object.stats.SPR ? object.stats.SPR.maxTotal : '' }}</td>
+                <td>{{ object.stats.DEX ? object.stats.DEX.maxTotal : '' }}</td>
+                <td>{{ object.stats.AGI ? object.stats.AGI.maxTotal : '' }}</td>
+                <td>{{ object.stats.LUCK ? object.stats.LUCK.maxTotal : '' }}</td>
+              </tr>
+            </table>
+            <table>
+              <tbody *ngFor="let line of object.hasStats">
+                <tr>
+                  <th class="sub" *ngFor="let stat of line">
+                    <img class="elementImg" src="{{ statImage[stat] }}" />
+                  </th>
+                </tr>
+                <tr>
+                  <td class="heightResTd" *ngFor="let stat of line">
+                    <span>{{ object.stats[stat].total }} %</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody *ngIf="object.otherStats.length > 0">
+                <tr>
+                  <th class="sub" colspan="99">OTHERS</th>
+                </tr>
+                <tr *ngFor="let otherStat of object.otherStats">
+                  <td class="heightResTd" colspan="99">{{ otherStat }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <th colspan="9">
+                    Skills
+                  </th>
+                </tr>
+                <tr>
+                  <th class="sub skillTypeTd">Type</th>
+                  <th class="sub skillNameTd">Name</th>
+                  <th class="sub">Effects</th>
+                  <th class="sub rangeTd">Range</th>
+                  <th class="sub skillCastTd">Casts</th>
+                  <th class="sub skillHitTd">Hits</th>
+                  <th class="sub skillCostTd">Cost</th>
+                </tr>
+                <tr *ngFor="let skill of object.skills">
+                  <td>
+                    <img class="skilImg" title="skill type" src="assets/skill-type/{{ skill.type }}.png" />
+
+                    <span *ngIf="skill.based"><img title="{{ skill.based }}" class='atkBasedImg' src="{{'assets/atkBased/' + skill.based + '.png'}}" /></span>
+                    <div *ngIf="skill.time && skill.time.minValue">
+                      <ng-template #tip_time>
+                        <div>
+                          Min time: {{ skill.time.minValue }}<br />
+                          Max time: {{ skill.time.maxValue }}
+                        </div>
+                      </ng-template>
+                      <img class='timeImg' src="{{'assets/icons/time.png'}}" [ngbTooltip]="tip_time"/>
+                    </div>
+                  </td>
+                  <td>{{ skill.name }}</td>
+                  <td class="skillEffectTd">
+                    <div>{{ skill.counterHtml }}</div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.before">
+                      {{ effect }}
+                    </div>
+
+                    <div *ngIf="skill.damageHtml && skill.damageHtml.value">
+                      <ng-template #tip_damage>
+                        <div *ngIf="skill.based === 'physic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+                        <div *ngIf="skill.based === 'magic'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% MAG' }}
+                        </div>
+                        <div *ngIf="skill.based === 'hybrid'">
+                          {{ (100 + (skill.damage.formula.type === 1 && skill.damage.formula[1] > 0 ? skill.damage.formula[1] : 0)) + '% ATK' }}
+                        </div>
+
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[1] > 0">
+                          {{ skill.damage.formula[1] }}% DEX
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[2] > 0">
+                          {{ skill.damage.formula[2] }}% AGI
+                        </div>
+                        <div *ngIf="skill.damage.formula.type === 0 && skill.damage.formula[3] > 0">
+                          {{ skill.damage.formula[3] }}% LUCK
+                        </div>
+                      </ng-template>
+                      <img [ngbTooltip]="tip_damage" title="{{ skill.damageHtml.type.title }}" class="damageSkillImg" src="assets/damage/{{ skill.damageHtml.type.image }}.png" *ngIf="skill.damageHtml.type.image"/>&nbsp; {{ skill.damageHtml.effType }} {{ skill.damageHtml.pool }} {{ skill.damageHtml.value }}
+                      <div [innerHTML]="skill.damageHtml.others | safeHtml"></div>
+                    </div>
+
+                    <div *ngFor="let effect of skill.effectsHtml.after">
+                      {{ effect }}
+                    </div>
+                  </td>
+                  <td>
+                    <div *ngIf="skill.type != 'support'">
+                      <ng-template #tip_table>
+                        <div [innerHTML]="skill.skillTableHtml"></div>
+                      </ng-template>
+                      <div [ngbTooltip]="tip_table" triggers="click" [autoClose]="true">
+                        <div class="divSkillTableHtml" [innerHTML]="skill.skillTableHtml"></div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>{{ skill.count }}</td>
+                  <td><span *ngIf="skill.combo">{{ skill.combo.num }}</span></td>
+                  <td><span *ngIf="skill.cost">{{ skill.cost.value }} {{ skill.cost.type }}</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <table class="chestTable" *ngIf="quest.formattedSwitchs?.length > 0">

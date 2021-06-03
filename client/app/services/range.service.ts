@@ -14,7 +14,9 @@ export class RangeService {
 
       for (let j = middle - countLine; j <= middle; j++) { // up-left
         if (!range.m || (countCol < range.l - range.m )) {
-          skillTable[i][j] = 'R';
+          if (i >= 0) {
+            skillTable[i][j] = 'R';
+          }
         }
 
         countCol++;
@@ -23,7 +25,9 @@ export class RangeService {
       countCol = 0;
       for (let j = middle + 1; j <= middle + countLine; j++) { // up-right
         if (!range.m || (countCol >= ((countLine) - (range.l - range.m)))) {
-          skillTable[i][j] = 'R';
+          if (i >= 0) {
+            skillTable[i][j] = 'R';
+          }
         }
 
         countCol++;
@@ -33,7 +37,9 @@ export class RangeService {
         countCol = 0;
         for (let j = middle - range.l + countLine; j <= middle; j++) { // down-left
           if (!range.m || (countCol < range.l - range.m )) {
-            skillTable[middle + countLine][j] = 'R';
+            if (middle + countLine <= skillTable.length - 1) {
+              skillTable[middle + countLine][j] = 'R';
+            }
           }
 
           countCol++;
@@ -42,7 +48,9 @@ export class RangeService {
         countCol = 0;
         for (let j = middle + 1; j <= middle + range.l - countLine; j++) { // down-right
           if (!range.m || (countCol >= ((range.l - countLine) - (range.l - range.m)))) {
-            skillTable[middle + countLine][j] = 'R';
+            if (middle + countLine <= skillTable.length - 1) {
+              skillTable[middle + countLine][j] = 'R';
+            }
           }
 
           countCol++;
@@ -244,11 +252,13 @@ export class RangeService {
 
     for (let i = maxLine; i >= maxLine - aoe.l; i--) {
       for (let j = 0; j <= aoe.l; j++) {
-        skillTable[i][middle - j] = skillTable[i][middle - j] === 'N' || skillTable[i][middle - j] === 'A' ? 'A' : 'AR';
-        skillTable[i][middle + j] = skillTable[i][middle + j] === 'N' || skillTable[i][middle + j] === 'A' ? 'A' : 'AR';
+        if (i >= 0) {
+          skillTable[i][middle - j] = skillTable[i][middle - j] === 'N' || skillTable[i][middle - j] === 'A' ? 'A' : 'AR';
+          skillTable[i][middle + j] = skillTable[i][middle + j] === 'N' || skillTable[i][middle + j] === 'A' ? 'A' : 'AR';
 
-        skillTable[(maxLine + countLine)][middle - j] = skillTable[i][middle - j] === 'N' || skillTable[i][middle - j] === 'A' ? 'A' : 'AR';
-        skillTable[(maxLine + countLine)][middle + j] = skillTable[i][middle + j] === 'N' || skillTable[i][middle + j] === 'A' ? 'A' : 'AR';
+          skillTable[(maxLine + countLine)][middle - j] = skillTable[i][middle - j] === 'N' || skillTable[i][middle - j] === 'A' ? 'A' : 'AR';
+          skillTable[(maxLine + countLine)][middle + j] = skillTable[i][middle + j] === 'N' || skillTable[i][middle + j] === 'A' ? 'A' : 'AR';
+        }
       }
 
       countLine++;

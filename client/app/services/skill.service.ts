@@ -204,7 +204,7 @@ export class SkillService {
         value = ' (' + minValue + this.getDamageCalc(effect) + this.getDamageMaxValue(effect, maxReduceValueFromMath) + ')';
       } else {
         if (effect.minValue !== effect.maxValue) {
-          const valueForLevel = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / (skill.maxLevel - 1) * (skill.level - 1)));
+          const valueForLevel = Math.floor(effect.minValue + ((effect.maxValue - effect.minValue) / ((skill.maxLevel > 1 ? skill.maxLevel : 2) - 1) * ((skill.level > 1 ? skill.level : 2) - 1)));
           value = ' (' + (100 + valueForLevel) + this.getDamageCalc(effect) + ')';
         } else {
           value = ' (' + minValue + this.getDamageCalc(effect) + ')';

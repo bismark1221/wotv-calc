@@ -24,6 +24,8 @@ export class QuestComponent implements OnInit {
   enemies = [];
   isCollapsedEnemy = {};
   isCollapsedChest = {};
+  isCollapsedAlly = {};
+  isCollapsedObject = {};
   statImage = {
     FIRE_RES : 'assets/elements/fire.png',
     ICE_RES : 'assets/elements/ice.png',
@@ -108,6 +110,7 @@ export class QuestComponent implements OnInit {
       let i = 0;
       for (const enemy of this.quest.enemies) {
         this.quest.formattedEnemies.push(await this.formatEnemyOrAlly(enemy, i, 'enemies'));
+        this.isCollapsedEnemy[i] = true;
 
         if (this.quest.formattedEnemies[i].size > 0) {
           this.changeEnemySizeInGrid(i, this.quest.formattedEnemies[i].size);
@@ -120,13 +123,15 @@ export class QuestComponent implements OnInit {
       i = 0;
       for (const ally of this.quest.allies) {
         this.quest.formattedAllies.push(await this.formatEnemyOrAlly(ally, i, 'allies'));
+        this.isCollapsedAlly[i] = true;
         i++;
       }
 
       this.quest.formattedObjects = [];
       i = 0;
       for (const object of this.quest.objects) {
-        this.quest.formattedObjects.push(await this.formatOtherItem(object));
+        this.quest.formattedObjects.push(await this.formatEnemyOrAlly(object, i, 'objects'));
+        this.isCollapsedObject[i] = true;
         i++;
       }
 
@@ -378,15 +383,11 @@ export class QuestComponent implements OnInit {
     if (this.quest[type][index].entryCond && this.quest[type][index].entryCond.length > 0) {
       const formattedEntryCond = [];
       for (const entryCond of this.quest[type][index].entryCond) {
-        console.log(await this.questService.formatEntryCondition(entryCond, this.quest));
         formattedEntryCond.push(await this.questService.formatEntryCondition(entryCond, this.quest));
       }
 
       formattedEnemy.formattedEntryCond = formattedEntryCond;
     }
-
-
-    this.isCollapsedEnemy[index] = true;
 
     return formattedEnemy;
   }
