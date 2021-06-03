@@ -195,32 +195,7 @@
           }
         },
         "slug": "chocolate-flan",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_ATK"
       }
     ],
     "bonus": {
@@ -452,32 +427,7 @@
           }
         },
         "slug": "white-marshmallow",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_01_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_01_ATK"
       }
     ],
     "bonus": {
@@ -688,34 +638,7 @@
           }
         },
         "slug": "death-machine",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_WRMC_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "missile",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 4,
-            "l": 4,
-            "mh": 1,
-            "s": 1,
-            "line": 2
-          },
-          "based": "physic"
-        }
+        "attack": "SK_WRMC_ATK"
       }
     ],
     "bonus": {
@@ -938,32 +861,7 @@
           }
         },
         "slug": "ifrit",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_IFRT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_IFRT_ATK"
       },
       {
         "dataId": "UN_LW_E_CACT_03",
@@ -1173,32 +1071,7 @@
           }
         },
         "slug": "gold-cactuar",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CACT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 0,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CACT_ATK"
       }
     ],
     "bonus": {
@@ -1415,32 +1288,7 @@
           }
         },
         "slug": "behemoth-king",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_BHMT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 0,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_BHMT_ATK"
       },
       {
         "dataId": "UN_LW_E_TNBR_RAID",
@@ -1662,32 +1510,7 @@
           }
         },
         "slug": "tonberry",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_TNBR_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_TNBR_ATK"
       }
     ],
     "bonus": {
@@ -1931,32 +1754,7 @@
           }
         },
         "slug": "forgiven-dissonance",
-        "attack": {
-          "names": {
-            "en": "通常攻撃スキル"
-          },
-          "effects": [],
-          "dataId": "SK_FF14BOSS_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_FF14BOSS_ATK"
       }
     ],
     "bonus": {
@@ -2203,32 +2001,7 @@
           }
         },
         "slug": "two-headed-dragon",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_THDG_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_THDG_ATK"
       },
       {
         "dataId": "UN_LW_E_CSLI_02",
@@ -2468,32 +2241,7 @@
           }
         },
         "slug": "flan-princess",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_02_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_02_ATK"
       }
     ],
     "bonus": {
@@ -2713,32 +2461,7 @@
           }
         },
         "slug": "siren",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_SIRE_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_SIRE_ATK"
       },
       {
         "dataId": "UN_LW_E_CACT_03_RAID",
@@ -2954,32 +2677,7 @@
           }
         },
         "slug": "gold-cactuar",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CACT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 0,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CACT_ATK"
       }
     ],
     "bonus": {
@@ -3196,32 +2894,7 @@
           }
         },
         "slug": "golem",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_GLEM_ATK_R",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_GLEM_ATK_R"
       },
       {
         "dataId": "UN_LW_E_TNBR_RAID2",
@@ -3425,32 +3098,7 @@
           }
         },
         "slug": "tonberry",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_TNBR_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_TNBR_ATK"
       }
     ],
     "bonus": {
@@ -3698,32 +3346,7 @@
           }
         },
         "slug": "diabolos",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_DABL_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_DABL_ATK"
       },
       {
         "dataId": "UN_LW_E_CSLI_02_R",
@@ -3957,32 +3580,7 @@
           }
         },
         "slug": "flan-princess",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_02_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_02_ATK"
       }
     ],
     "bonus": {
@@ -4221,32 +3819,7 @@
           }
         },
         "slug": "hor-purin",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_03_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_03_ATK"
       },
       {
         "dataId": "UN_LW_E_CACT_03_R_01",
@@ -4456,32 +4029,7 @@
           }
         },
         "slug": "gorudo-saboten",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CACT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 0,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CACT_ATK"
       }
     ],
     "bonus": {
@@ -4758,32 +4306,7 @@
           }
         },
         "slug": "glacial",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_GCAL_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "pierce",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_GCAL_ATK"
       },
       {
         "dataId": "UN_LW_E_DRGN_RAID_01",
@@ -4981,32 +4504,7 @@
           }
         },
         "slug": "mini-dragon",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_DRGN_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "all",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_DRGN_ATK"
       }
     ],
     "bonus": {
@@ -5285,32 +4783,7 @@
           }
         },
         "slug": "red-giant",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_IGNT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_IGNT_ATK"
       },
       {
         "dataId": "UN_LW_E_CSLI_R",
@@ -5517,32 +4990,7 @@
           }
         },
         "slug": "choko-purin",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CSLI_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "ennemySide",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_CSLI_ATK"
       }
     ],
     "bonus": {
@@ -5810,32 +5258,7 @@
           }
         },
         "slug": "carbuncle",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_CBCL_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "magic",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 2,
-            "s": 1
-          },
-          "based": "magic"
-        }
+        "attack": "SK_CBCL_ATK"
       },
       {
         "dataId": "UN_LW_E_KRKN_RAID",
@@ -6036,32 +5459,7 @@
           }
         },
         "slug": "kraken",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_KRKN_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "strike",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 2,
-            "l": 2,
-            "s": 1
-          },
-          "based": "physic"
-        }
+        "attack": "SK_KRKN_ATK"
       }
     ],
     "bonus": {
@@ -6345,32 +5743,7 @@
           }
         },
         "slug": "rivaiasan",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_LVAT_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_LVAT_ATK"
       },
       {
         "dataId": "UN_LW_E_DMCM_RAID",
@@ -6583,32 +5956,7 @@
           }
         },
         "slug": "debiru-kimaira",
-        "attack": {
-          "names": {
-            "en": "通常攻撃"
-          },
-          "effects": [],
-          "dataId": "SK_DMCM_ATK",
-          "damage": {
-            "minValue": -30,
-            "maxValue": -30,
-            "type": "slash",
-            "effType": "DAMAGE",
-            "formula": {}
-          },
-          "elem": [
-            "neutral"
-          ],
-          "type": "skill",
-          "target": "all",
-          "maxLevel": 20,
-          "range": {
-            "h": 1,
-            "l": 1,
-            "s": 0
-          },
-          "based": "physic"
-        }
+        "attack": "SK_DMCM_ATK"
       }
     ],
     "bonus": {

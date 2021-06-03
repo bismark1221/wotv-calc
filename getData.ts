@@ -4613,38 +4613,16 @@ export class JsonService {
 
   private getAttackSkill(unit, attackId) {
     if (attackId) {
-      const attack = {
-        names: {},
-        effects: [],
-        dataId: attackId,
-        damage: {
-          minValue: 0,
-          maxValue: 0
-        },
-        elem: [],
-        type: 'skill'
-      };
-
-      let modifiedAttack = false;
+      this[this.version].skills[attackId].elem = [0];
+      this[this.version].skills[attackId].slot = 1;
       if (!this[this.version].skills[attackId].eff_val) {
-        this[this.version].skills[attackId].eff_val = 1;
-        this[this.version].skills[attackId].eff_val1 = 1;
-        modifiedAttack = true;
+        this[this.version].skills[attackId].eff_val = 0;
+        this[this.version].skills[attackId].eff_val1 = 0;
       }
 
-      this.updateSkill(unit, attack, attackId);
+      this.addSkill(attackId, unit);
 
-      if (modifiedAttack) {
-        attack.damage.minValue = 0;
-        attack.damage.maxValue = 0;
-        attack.elem = ['neutral'];
-      }
-
-      if (attack.elem.length === 0) {
-        attack.elem = ['neutral'];
-      }
-
-      unit.attack = attack;
+      unit.attack = attackId;
     }
   }
 

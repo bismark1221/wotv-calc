@@ -37,6 +37,32 @@
       }
     }
   },
+  "SK_LW_WAR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_WAR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_STRN": {
     "effects": [],
     "dataId": "SK_LB_LW_STRN",
@@ -68,6 +94,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_SWN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_SWN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_ELDE": {
     "effects": [
@@ -103,6 +155,34 @@
     "count": 1,
     "maxLevel": 20,
     "based": "physic"
+  },
+  "SK_LW_LAN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_LAN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_ROBB": {
     "effects": [
@@ -149,6 +229,32 @@
       }
     }
   },
+  "SK_LW_SAM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_SAM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_ENBT": {
     "effects": [],
     "dataId": "SK_LB_LW_ENBT",
@@ -182,6 +288,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_PLD_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_PLD_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_ZIZA": {
     "effects": [
@@ -221,6 +353,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_MNK_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MNK_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_AILN": {
     "effects": [
@@ -313,6 +471,32 @@
       }
     }
   },
+  "SK_LW_BLM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_BLM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_AYKA": {
     "effects": [
       {
@@ -365,6 +549,32 @@
       "h": 1
     }
   },
+  "SK_LW_WHM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_WHM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_MACR": {
     "effects": [
       {
@@ -410,6 +620,301 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_CLR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_CLR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_GRM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_GRM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_KNT_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_KNT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_DRG_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_DRG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_GUN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_GUN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_THI_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_THI_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_HUN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_HUN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_TIM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_TIM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_FINA_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_FINA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_MGK_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MGK_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_RDM_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_RDM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_GLMS": {
     "effects": [
@@ -458,6 +963,84 @@
       }
     }
   },
+  "SK_LW_GLMS_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_GLMS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_YSTL_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_YSTL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_TNCR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_TNCR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_FDRC": {
     "effects": [
       {
@@ -499,6 +1082,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_NIN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_NIN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_YERM": {
     "effects": [
@@ -549,6 +1158,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_VIK_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_VIK_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_RAMD_01": {
     "effects": [
@@ -685,6 +1320,58 @@
       "neutral"
     ]
   },
+  "SK_FFT_RAMZ_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_RAMZ_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_FFT_GFGR_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_GFGR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FFT_ORND": {
     "effects": [
       {
@@ -732,6 +1419,32 @@
         "type": 0
       }
     }
+  },
+  "SK_FFT_ORND_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_ORND_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_WHIS": {
     "effects": [
@@ -914,6 +1627,34 @@
       }
     }
   },
+  "SK_LW_WGN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_WGN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_VKTR": {
     "effects": [
       {
@@ -1002,6 +1743,32 @@
       }
     }
   },
+  "SK_LW_ASS_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_ASS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_RAIN": {
     "effects": [
       {
@@ -1048,6 +1815,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_RAIN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_RAIN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_FF1_WROL": {
     "effects": [
@@ -1112,6 +1905,32 @@
       }
     }
   },
+  "SK_FF1_WROL_ATK": {
+    "effects": [],
+    "dataId": "SK_FF1_WROL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_QILF": {
     "effects": [
       {
@@ -1154,6 +1973,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_MST_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MST_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_ORDR": {
     "effects": [
@@ -1239,6 +2084,32 @@
       }
     }
   },
+  "SK_FFT_AGRA_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_AGRA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FFT_DELT_01": {
     "effects": [
       {
@@ -1285,6 +2156,60 @@
         "type": 0
       }
     }
+  },
+  "SK_FFT_DELT_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_DELT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_FFT_MSTD_ATK": {
+    "effects": [],
+    "dataId": "SK_FFT_MSTD_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_IRDL": {
     "effects": [
@@ -1340,6 +2265,32 @@
       }
     ]
   },
+  "SK_LW_CAL_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_CAL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_STRN_01": {
     "effects": [],
     "dataId": "SK_LB_LW_STRN_01",
@@ -1371,6 +2322,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_STRN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_STRN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_GRSR": {
     "effects": [
@@ -1421,6 +2398,34 @@
       }
     }
   },
+  "SK_LW_GRSR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_GRSR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_LSWL": {
     "effects": [
       {
@@ -1465,6 +2470,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_LSWL_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_LSWL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_SCAL": {
     "effects": [
@@ -1614,6 +2645,32 @@
       }
     }
   },
+  "SK_LW_MKN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MKN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_LATH": {
     "effects": [
       {
@@ -1704,6 +2761,32 @@
       }
     }
   },
+  "SK_FF4_CECL_ATK": {
+    "effects": [],
+    "dataId": "SK_FF4_CECL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FF04_ROSA": {
     "effects": [
       {
@@ -1749,6 +2832,35 @@
       "l": 1,
       "h": 1
     }
+  },
+  "SK_FF4_ROSA_ATK": {
+    "effects": [],
+    "dataId": "SK_FF4_ROSA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_FF04_KAIN": {
     "effects": [
@@ -1797,6 +2909,34 @@
       }
     }
   },
+  "SK_FF4_KAIN_ATK": {
+    "effects": [],
+    "dataId": "SK_FF4_KAIN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_KTON_01": {
     "effects": [
       {
@@ -1843,6 +2983,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_MMC_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MMC_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_NIVL": {
     "effects": [
@@ -1893,6 +3059,35 @@
       }
     }
   },
+  "SK_LW_ARC_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_ARC_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 4,
+      "m": 2,
+      "mh": 8,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_SAKR": {
     "effects": [
       {
@@ -1942,6 +3137,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_SAKR_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_SAKR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_RYER_01": {
     "effects": [
@@ -2040,6 +3261,32 @@
         "type": 1
       }
     }
+  },
+  "SK_LW_BEA_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_BEA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_RIRY_01": {
     "effects": [
@@ -2143,6 +3390,33 @@
       }
     }
   },
+  "SK_LW_PSI_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_PSI_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1,
+      "line": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_ELSR": {
     "effects": [
       {
@@ -2189,6 +3463,32 @@
       }
     }
   },
+  "SK_LW_MSW_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MSW_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FF10_TIDU": {
     "effects": [],
     "dataId": "SK_LB_FF10_TIDU",
@@ -2225,6 +3525,32 @@
         "type": 0
       }
     }
+  },
+  "SK_FF10_TIDU_ATK": {
+    "effects": [],
+    "dataId": "SK_FF10_TIDU_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_FF10_YUNA": {
     "effects": [],
@@ -2264,6 +3590,32 @@
         "type": 0
       }
     }
+  },
+  "SK_FF10_YUNA_ATK": {
+    "effects": [],
+    "dataId": "SK_FF10_YUNA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_FF10_ARON": {
     "effects": [
@@ -2309,6 +3661,32 @@
         "1": 20,
         "type": 1
       }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_FF10_ARON_ATK": {
+    "effects": [],
+    "dataId": "SK_FF10_ARON_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
     },
     "elem": [
       "neutral"
@@ -2460,6 +3838,32 @@
       }
     }
   },
+  "SK_NIER_N2TB_ATK": {
+    "effects": [],
+    "dataId": "SK_NIER_N2TB_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_NIER_N9TS": {
     "effects": [
       {
@@ -2505,6 +3909,34 @@
       "lightning"
     ]
   },
+  "SK_NIER_N9TS_ATK": {
+    "effects": [],
+    "dataId": "SK_NIER_N9TS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_MONT_01": {
     "effects": [
       {
@@ -2546,6 +3978,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_MONT_01_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MONT_01_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_RYEL": {
     "effects": [
@@ -2595,6 +4053,33 @@
       }
     }
   },
+  "SK_LW_LIB_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_LIB_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_HLNA_01": {
     "effects": [
       {
@@ -2642,6 +4127,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_WIZ_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_WIZ_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_THLA_01": {
     "effects": [
@@ -2748,6 +4259,32 @@
       }
     }
   },
+  "SK_LW_DEAN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_DEAN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_MORE": {
     "effects": [
       {
@@ -2795,6 +4332,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_MURG_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_MURG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_CRLT": {
     "effects": [
@@ -2872,6 +4435,32 @@
         "type": 0
       }
     }
+  },
+  "SK_LW_CRLT_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_CRLT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_VLRC": {
     "effects": [
@@ -2967,6 +4556,32 @@
       }
     }
   },
+  "SK_FF7_CLUD_ATK": {
+    "effects": [],
+    "dataId": "SK_FF7_CLUD_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FF7_TIFA": {
     "effects": [
       {
@@ -3006,6 +4621,32 @@
         "type": 1
       }
     }
+  },
+  "SK_FF7_TIFA_ATK": {
+    "effects": [],
+    "dataId": "SK_FF7_TIFA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_FF7_AERT": {
     "effects": [
@@ -3051,6 +4692,32 @@
       "h": 1
     }
   },
+  "SK_FF7_AERT_ATK": {
+    "effects": [],
+    "dataId": "SK_FF7_AERT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_FF7_BART": {
     "effects": [
       {
@@ -3095,6 +4762,34 @@
         "type": 0
       }
     }
+  },
+  "SK_FF7_BART_ATK": {
+    "effects": [],
+    "dataId": "SK_FF7_BART_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "m": 1,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LB_LW_GRSR_01": {
     "effects": [
@@ -3153,6 +4848,32 @@
       }
     }
   },
+  "SK_LW_GRSR_01_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_GRSR_01_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_JEDN": {
     "effects": [
       {
@@ -3196,6 +4917,86 @@
       }
     }
   },
+  "SK_LW_JEDN_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_JEDN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_CLR_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_CLR_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_SWN_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_SWN_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LB_LW_TU_MONT": {
     "effects": [],
     "dataId": "SK_LB_LW_TU_MONT",
@@ -3228,6 +5029,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_LW_WAR_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_WAR_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LW_WAR_M_1": {
     "effects": [
@@ -3509,6 +5336,32 @@
     "target": "self",
     "maxLevel": 999
   },
+  "SK_BOMB_ATK": {
+    "effects": [],
+    "dataId": "SK_BOMB_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_BTL_HP_1-999_D": {
     "effects": [
       {
@@ -3562,6 +5415,32 @@
     },
     "target": "self",
     "maxLevel": 999
+  },
+  "SK_LW_BLM_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_BLM_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LW_BLM_ICE_S_1": {
     "effects": [],
@@ -3823,6 +5702,32 @@
     "target": "self",
     "maxLevel": 999
   },
+  "SK_ZUUU_ATK": {
+    "effects": [],
+    "dataId": "SK_ZUUU_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_BTL_MOVE_1-20_U": {
     "effects": [
       {
@@ -3928,9 +5833,9 @@
     "target": "self",
     "maxLevel": 999
   },
-  "SK_ZUUU_ATK": {
+  "SK_BHMT_ATK": {
     "effects": [],
-    "dataId": "SK_ZUUU_ATK",
+    "dataId": "SK_BHMT_ATK",
     "type": "skill",
     "names": {
       "en": "通常攻撃"
@@ -3946,10 +5851,13 @@
     "damage": {
       "minValue": -30,
       "maxValue": -30,
-      "type": "pierce",
+      "type": "strike",
       "effType": "DAMAGE",
       "formula": {}
-    }
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_TU_BHMT_M_01": {
     "effects": [],
@@ -4018,6 +5926,32 @@
     },
     "target": "self",
     "maxLevel": 999
+  },
+  "SK_WOLF_ATK": {
+    "effects": [],
+    "dataId": "SK_WOLF_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LW_SWN_M_1": {
     "effects": [],
@@ -4151,6 +6085,58 @@
       "type": "all",
       "pool": "HP",
       "effType": "ABSORB",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_CACT_ATK": {
+    "effects": [],
+    "dataId": "SK_CACT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_GLSP_ATK": {
+    "effects": [],
+    "dataId": "SK_GLSP_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
       "formula": {}
     },
     "elem": [
@@ -4319,6 +6305,32 @@
       "s": 1
     },
     "based": "physic"
+  },
+  "SK_OGRE_ATK": {
+    "effects": [],
+    "dataId": "SK_OGRE_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_OGRE_M_01": {
     "effects": [],
@@ -4826,6 +6838,33 @@
     "target": "self",
     "maxLevel": 15
   },
+  "SK_ELEM_ATK": {
+    "effects": [],
+    "dataId": "SK_ELEM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1,
+      "line": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_ELEM_R_01": {
     "effects": [],
     "dataId": "SK_ELEM_R_01",
@@ -5044,6 +7083,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_SKEL_ATK": {
+    "effects": [],
+    "dataId": "SK_SKEL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_SKEL_M_01": {
     "effects": [
@@ -6502,6 +8567,32 @@
     "target": "self",
     "maxLevel": 20
   },
+  "SK_MABR_ATK": {
+    "effects": [],
+    "dataId": "SK_MABR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_MABR_M_01": {
     "effects": [
       {
@@ -6874,6 +8965,32 @@
     },
     "elem": [
       "ice"
+    ]
+  },
+  "SK_SLIM_ATK": {
+    "effects": [],
+    "dataId": "SK_SLIM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_SLIM_M_01": {
@@ -7250,6 +9367,32 @@
     },
     "elem": [
       "lightning"
+    ]
+  },
+  "SK_ARMN_ATK": {
+    "effects": [],
+    "dataId": "SK_ARMN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_ARMN_M_01": {
@@ -9048,6 +11191,32 @@
     },
     "target": "self",
     "maxLevel": 15
+  },
+  "SK_LW_E_VIK_ATK": {
+    "effects": [],
+    "dataId": "SK_LW_E_VIK_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LW_E_VIK_P_1": {
     "effects": [
@@ -10925,6 +13094,32 @@
     },
     "elem": [
       "fire"
+    ]
+  },
+  "SK_IGNT_ATK": {
+    "effects": [],
+    "dataId": "SK_IGNT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_IGNT_M_01": {
@@ -17311,6 +19506,32 @@
       "calcType": "percent"
     }
   },
+  "SK_LAMA_ATK": {
+    "effects": [],
+    "dataId": "SK_LAMA_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LAMA_M_03": {
     "effects": [
       {
@@ -17411,6 +19632,32 @@
     "count": 5,
     "maxLevel": 20,
     "based": "physic"
+  },
+  "SK_OCHU_ATK": {
+    "effects": [],
+    "dataId": "SK_OCHU_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_OCHU_M_01": {
     "effects": [
@@ -17598,6 +19845,32 @@
     },
     "elem": [
       "earth"
+    ]
+  },
+  "SK_SNAK_ATK": {
+    "effects": [],
+    "dataId": "SK_SNAK_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_SNAK_M_01": {
@@ -17852,6 +20125,33 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_MRGE_ATK": {
+    "effects": [],
+    "dataId": "SK_MRGE_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_MRGE_M01": {
     "effects": [
@@ -18145,6 +20445,32 @@
     },
     "target": "self",
     "maxLevel": 100
+  },
+  "SK_MRGE_S1_ATK": {
+    "effects": [],
+    "dataId": "SK_MRGE_S1_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_MRGE_S1_M01": {
     "effects": [
@@ -18494,6 +20820,32 @@
       }
     ]
   },
+  "SK_MRGE_S2_ATK": {
+    "effects": [],
+    "dataId": "SK_MRGE_S2_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_MRGE_S2_M01": {
     "effects": [
       {
@@ -18676,6 +21028,32 @@
       "formula": {}
     }
   },
+  "SK_MRGE_S3_ATK": {
+    "effects": [],
+    "dataId": "SK_MRGE_S3_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_MRGE_S3_M01": {
     "effects": [
       {
@@ -18857,6 +21235,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_MRGE_S4_ATK": {
+    "effects": [],
+    "dataId": "SK_MRGE_S4_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_MRGE_S4_M01": {
     "effects": [
@@ -19252,6 +21656,32 @@
     },
     "elem": [
       "fire"
+    ]
+  },
+  "SK_DRGN_ATK": {
+    "effects": [],
+    "dataId": "SK_DRGN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_DRGN_M_01": {
@@ -20131,6 +22561,34 @@
     },
     "target": "self",
     "maxLevel": 20
+  },
+  "SK_SHGN_ATK": {
+    "effects": [],
+    "dataId": "SK_SHGN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_SHGN_M_01": {
     "effects": [
@@ -21318,6 +23776,32 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_MDFY_ATK": {
+    "effects": [],
+    "dataId": "SK_MDFY_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_MDFY_M_01": {
     "effects": [
       {
@@ -21630,6 +24114,32 @@
       "lightning"
     ]
   },
+  "SK_CORL_ATK": {
+    "effects": [],
+    "dataId": "SK_CORL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_CORL_M_01": {
     "effects": [
       {
@@ -21863,6 +24373,37 @@
       "formula": {}
     }
   },
+  "SK_CHCB_ATK": {
+    "effects": [],
+    "dataId": "SK_CHCB_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "knockback": {
+      "rate": 50,
+      "value": 1,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_CHCB_M_01": {
     "effects": [
       {
@@ -21926,6 +24467,37 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_CHCB1_ATK": {
+    "effects": [],
+    "dataId": "SK_CHCB1_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "knockback": {
+      "rate": 50,
+      "value": 1,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_CHCB1_M_02": {
     "effects": [],
@@ -22056,6 +24628,33 @@
       "h": 1
     }
   },
+  "SK_SWPR_ATK": {
+    "effects": [],
+    "dataId": "SK_SWPR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_SWPR_M_2": {
     "effects": [],
     "dataId": "SK_SWPR_M_2",
@@ -22144,6 +24743,38 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_SCOC_ATK": {
+    "effects": [],
+    "dataId": "SK_SCOC_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "combo": {
+      "num": 2,
+      "rate": 59
+    },
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_SCOC_M_1": {
     "effects": [
@@ -22538,6 +25169,32 @@
     },
     "elem": [
       "earth"
+    ]
+  },
+  "SK_THDG_ATK": {
+    "effects": [],
+    "dataId": "SK_THDG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_THDG_M_01": {
@@ -22939,6 +25596,32 @@
     "target": "self",
     "maxLevel": 50
   },
+  "SK_DMNW_ATK": {
+    "effects": [],
+    "dataId": "SK_DMNW_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_DMNW_M_1": {
     "effects": [
       {
@@ -23218,6 +25901,32 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_GLBZ_ATK": {
+    "effects": [],
+    "dataId": "SK_GLBZ_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_GLBZ_M_1": {
     "effects": [
       {
@@ -23469,6 +26178,32 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_DFDZ_ATK": {
+    "effects": [],
+    "dataId": "SK_DFDZ_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_DFDZ_M_1": {
     "effects": [],
     "dataId": "SK_DFDZ_M_1",
@@ -23598,6 +26333,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_DKFN_ATK": {
+    "effects": [],
+    "dataId": "SK_DKFN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_DKFN_M_1": {
     "effects": [],
@@ -23744,6 +26505,43 @@
       "l": 2,
       "h": 1
     }
+  },
+  "SK_YNLS_ATK_01": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "unknow",
+        "rate": 25,
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_YNLS_ATK_01",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃（裁き用）"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_YNLS_M_1": {
     "effects": [
@@ -24097,6 +26895,32 @@
         "type": 1
       }
     }
+  },
+  "SK_TNBR_ATK": {
+    "effects": [],
+    "dataId": "SK_TNBR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_TNBR_M_01": {
     "effects": [],
@@ -24572,6 +27396,32 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_PNIX_ATK": {
+    "effects": [],
+    "dataId": "SK_PNIX_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_PNIX_M_02": {
     "effects": [
       {
@@ -24736,6 +27586,32 @@
     "count": 1,
     "maxLevel": 20,
     "based": "magic"
+  },
+  "SK_MRLT_ATK": {
+    "effects": [],
+    "dataId": "SK_MRLT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_MRLT_M_01": {
     "effects": [
@@ -24996,6 +27872,58 @@
       }
     }
   },
+  "SK_LW_KNT_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_KNT_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_KRKN_ATK": {
+    "effects": [],
+    "dataId": "SK_KRKN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_KRKN_M_01": {
     "effects": [],
     "dataId": "SK_KRKN_M_01",
@@ -25156,6 +28084,33 @@
       "formula": {}
     }
   },
+  "SK_SCPN_ATK": {
+    "effects": [],
+    "dataId": "SK_SCPN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_SCPN_M_1": {
     "effects": [
       {
@@ -25314,6 +28269,34 @@
     "count": 20,
     "maxLevel": 20,
     "based": "physic"
+  },
+  "SK_WRMC_ATK": {
+    "effects": [],
+    "dataId": "SK_WRMC_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 4,
+      "l": 4,
+      "mh": 1,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_WRMC_M_01": {
     "effects": [
@@ -25622,6 +28605,43 @@
         "type": 0
       }
     }
+  },
+  "SK_CCLI_ATK": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "unknow",
+        "rate": 30,
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CCLI_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_CCLI_M_01": {
     "effects": [
@@ -26467,6 +29487,32 @@
       }
     }
   },
+  "SK_FF14BOSS_ATK": {
+    "effects": [],
+    "dataId": "SK_FF14BOSS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃スキル"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_FF14BOSS_M_01": {
     "effects": [],
     "dataId": "SK_FF14BOSS_M_01",
@@ -26566,9 +29612,9 @@
       "light"
     ]
   },
-  "SK_LW_HUN_ATK": {
+  "SK_LW_HUN_ATK_100": {
     "effects": [],
-    "dataId": "SK_LW_HUN_ATK",
+    "dataId": "SK_LW_HUN_ATK_100",
     "type": "skill",
     "names": {
       "en": "通常攻撃"
@@ -26585,8 +29631,8 @@
     },
     "based": "physic",
     "damage": {
-      "minValue": -30,
-      "maxValue": -30,
+      "minValue": 0,
+      "maxValue": 0,
       "type": "missile",
       "effType": "DAMAGE",
       "formula": {}
@@ -26748,6 +29794,43 @@
     "target": "self",
     "maxLevel": 20
   },
+  "SK_YNLS_ATK": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_YNLS_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 5,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_YNLS_M_2": {
     "effects": [
       {
@@ -26839,6 +29922,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_MCLF_ATK": {
+    "effects": [],
+    "dataId": "SK_MCLF_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_MCLF_M_1": {
     "effects": [
@@ -26993,6 +30102,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_ADAM_ATK": {
+    "effects": [],
+    "dataId": "SK_ADAM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_ADAM_M_1": {
     "effects": [],
@@ -29070,57 +32205,6 @@
       "maxValue": 320
     }
   },
-  "SK_LW_BEA_S_4": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": -20,
-        "maxValue": -39,
-        "calcType": "percent",
-        "turn": 3,
-        "increaseMax": true,
-        "target": "all",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_LW_BEA_S_4",
-    "type": "skill",
-    "names": {
-      "en": "心砕き"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 18
-    },
-    "count": 4,
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 2,
-      "s": 1
-    },
-    "based": "physic",
-    "maths": [
-      {
-        "type": "COUNT_DAMAGE_RECEIVED",
-        "formula": "COUNT",
-        "condition": 5,
-        "value": -40,
-        "dst": "EFFECT"
-      }
-    ],
-    "damage": {
-      "minValue": 40,
-      "maxValue": 70,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 20,
-        "type": 1
-      }
-    }
-  },
   "SK_GMK_ATK_CANN_1": {
     "effects": [],
     "dataId": "SK_GMK_ATK_CANN_1",
@@ -29239,6 +32323,32 @@
         "type": 0
       }
     }
+  },
+  "SK_TYPN_ATK": {
+    "effects": [],
+    "dataId": "SK_TYPN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_TYPN_M_01": {
     "effects": [],
@@ -29428,6 +32538,32 @@
       "calcType": "percent"
     }
   },
+  "SK_SHIV_ATK": {
+    "effects": [],
+    "dataId": "SK_SHIV_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_SHIV_M_01": {
     "effects": [],
     "dataId": "SK_SHIV_M_01",
@@ -29593,6 +32729,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_FNRR_ATK": {
+    "effects": [],
+    "dataId": "SK_FNRR_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_FNRR_M_01": {
     "effects": [],
@@ -29793,6 +32955,32 @@
     "target": "self",
     "maxLevel": 80
   },
+  "SK_IFRT_ATK": {
+    "effects": [],
+    "dataId": "SK_IFRT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_IFRT_M_01": {
     "effects": [],
     "dataId": "SK_IFRT_M_01",
@@ -29939,6 +33127,32 @@
     },
     "target": "self",
     "maxLevel": 100
+  },
+  "SK_CSLI_ATK": {
+    "effects": [],
+    "dataId": "SK_CSLI_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_CSLI_M_01": {
     "effects": [],
@@ -30346,6 +33560,32 @@
     },
     "target": "self",
     "maxLevel": 100
+  },
+  "SK_CBCL_ATK": {
+    "effects": [],
+    "dataId": "SK_CBCL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_CBCL_M_03": {
     "effects": [
@@ -31573,6 +34813,32 @@
     "target": "self",
     "maxLevel": 100
   },
+  "SK_CSLI_01_ATK": {
+    "effects": [],
+    "dataId": "SK_CSLI_01_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_CSLI_01_M_01": {
     "effects": [],
     "dataId": "SK_CSLI_01_M_01",
@@ -31927,6 +35193,32 @@
       "light"
     ]
   },
+  "SK_CSLI_02_ATK": {
+    "effects": [],
+    "dataId": "SK_CSLI_02_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_CSLI_02_M_01_RA": {
     "effects": [],
     "dataId": "SK_CSLI_02_M_01_RA",
@@ -32079,6 +35371,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_SIRE_ATK": {
+    "effects": [],
+    "dataId": "SK_SIRE_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_SIRE_M_01_RA": {
     "effects": [],
@@ -32238,6 +35556,32 @@
       "formula": {},
       "fixedDamage": true
     }
+  },
+  "SK_GLEM_ATK_R": {
+    "effects": [],
+    "dataId": "SK_GLEM_ATK_R",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_GLEM_M_01_R": {
     "effects": [],
@@ -32415,6 +35759,32 @@
     },
     "elem": [
       "ice"
+    ]
+  },
+  "SK_DABL_ATK": {
+    "effects": [],
+    "dataId": "SK_DABL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_DABL_M_02_R": {
@@ -32625,6 +35995,32 @@
     "target": "self",
     "maxLevel": 80
   },
+  "SK_CSLI_03_ATK": {
+    "effects": [],
+    "dataId": "SK_CSLI_03_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_CSLI_03_M_01": {
     "effects": [],
     "dataId": "SK_CSLI_03_M_01",
@@ -32757,6 +36153,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_GCAL_ATK": {
+    "effects": [],
+    "dataId": "SK_GCAL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_GCAL_M_01_R": {
     "effects": [
@@ -33317,6 +36739,32 @@
       "water"
     ]
   },
+  "SK_LVAT_ATK": {
+    "effects": [],
+    "dataId": "SK_LVAT_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LVAT_M_01_R": {
     "effects": [],
     "dataId": "SK_LVAT_M_01_R",
@@ -33494,6 +36942,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_DMCM_ATK": {
+    "effects": [],
+    "dataId": "SK_DMCM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_DMCM_M_01": {
     "effects": [
@@ -34261,6 +37735,34 @@
       }
     }
   },
+  "SK_LW_GUN_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_GUN_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "m": 2,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LW_BLM_SOIL_M_5": {
     "effects": [],
     "dataId": "SK_LW_BLM_SOIL_M_5",
@@ -34759,6 +38261,37 @@
       "water"
     ]
   },
+  "SK_GLEM_ATK": {
+    "effects": [],
+    "dataId": "SK_GLEM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "knockback": {
+      "rate": 100,
+      "value": 1,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_GLEM_M_02": {
     "effects": [],
     "dataId": "SK_GLEM_M_02",
@@ -34901,6 +38434,32 @@
       }
     }
   },
+  "SK_TITN_ATK": {
+    "effects": [],
+    "dataId": "SK_TITN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_TITN_M_01": {
     "effects": [
       {
@@ -35022,6 +38581,32 @@
       "h": 2
     }
   },
+  "SK_BLMN_ATK": {
+    "effects": [],
+    "dataId": "SK_BLMN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_BLMN_M_01": {
     "effects": [],
     "dataId": "SK_BLMN_M_01",
@@ -35128,6 +38713,32 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_RAMU_ATK": {
+    "effects": [],
+    "dataId": "SK_RAMU_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_RAMU_M_01": {
     "effects": [],
@@ -35272,6 +38883,32 @@
     },
     "elem": [
       "lightning"
+    ]
+  },
+  "SK_ICDG_ATK": {
+    "effects": [],
+    "dataId": "SK_ICDG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_ICDG_M_01": {
@@ -36180,6 +39817,32 @@
     },
     "based": "physic"
   },
+  "SK_AGON_ATK": {
+    "effects": [],
+    "dataId": "SK_AGON_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_AGON_M_01": {
     "effects": [],
     "dataId": "SK_AGON_M_01",
@@ -36703,55 +40366,6 @@
       "calcType": "percent"
     }
   },
-  "SK_LW_BLM_ATK": {
-    "effects": [],
-    "dataId": "SK_LW_BLM_ATK",
-    "type": "skill",
-    "names": {
-      "en": "通常攻撃"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "strike",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_IGNT_ATK": {
-    "effects": [],
-    "dataId": "SK_IGNT_ATK",
-    "type": "skill",
-    "names": {
-      "en": "通常攻撃"
-    },
-    "target": "all",
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "slash",
-      "effType": "DAMAGE",
-      "formula": {}
-    }
-  },
   "SK_BTL_RES_OTWATER_1_80_U": {
     "effects": [
       {
@@ -36912,6 +40526,32 @@
       "l": 2,
       "h": 1
     }
+  },
+  "SK_ODIN_ATK": {
+    "effects": [],
+    "dataId": "SK_ODIN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_ODIN_M_01": {
     "effects": [],
@@ -37103,6 +40743,32 @@
     },
     "target": "self",
     "maxLevel": 100
+  },
+  "SK_TSLP_ATK": {
+    "effects": [],
+    "dataId": "SK_TSLP_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_TSLP_M_01": {
     "effects": [],
@@ -37351,6 +41017,32 @@
     },
     "elem": [
       "water"
+    ]
+  },
+  "SK_BAHM_ATK": {
+    "effects": [],
+    "dataId": "SK_BAHM_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
     ]
   },
   "SK_BAHM_M_01": {
@@ -37644,6 +41336,32 @@
     },
     "target": "self",
     "maxLevel": 80
+  },
+  "SK_OMEG_ATK": {
+    "effects": [],
+    "dataId": "SK_OMEG_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_OMEG_M_01": {
     "effects": [
@@ -38172,6 +41890,37 @@
     "maxLevel": 20,
     "based": "magic"
   },
+  "SK_BHMT_ATK_01": {
+    "effects": [],
+    "dataId": "SK_BHMT_ATK_01",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "knockback": {
+      "rate": 100,
+      "value": 2,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_BHMT_M_01": {
     "effects": [],
     "dataId": "SK_BHMT_M_01",
@@ -38349,6 +42098,32 @@
     },
     "target": "self",
     "maxLevel": 50
+  },
+  "SK_CHCB2_ATK": {
+    "effects": [],
+    "dataId": "SK_CHCB2_ATK",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_CHCB2_M_01": {
     "effects": [],
@@ -38721,6 +42496,34 @@
       "formula": {}
     }
   },
+  "SK_LW_LAN_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_LAN_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LW_KNT_S_2": {
     "effects": [],
     "dataId": "SK_LW_KNT_S_2",
@@ -38893,6 +42696,32 @@
       "water"
     ]
   },
+  "SK_LW_MNK_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_MNK_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LW_WHM_M_2": {
     "effects": [
       {
@@ -39009,6 +42838,32 @@
       "maxValue": 360
     }
   },
+  "SK_LW_NIN_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_NIN_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_LW_NIN_ICE_M_1": {
     "effects": [],
     "dataId": "SK_LW_NIN_ICE_M_1",
@@ -39079,6 +42934,32 @@
     },
     "target": "self",
     "maxLevel": 100
+  },
+  "SK_LW_WHM_ATK_100": {
+    "effects": [],
+    "dataId": "SK_LW_WHM_ATK_100",
+    "type": "skill",
+    "names": {
+      "en": "通常攻撃"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 0,
+      "maxValue": 0,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
   },
   "SK_LW_WHM_BGN_M_5": {
     "effects": [

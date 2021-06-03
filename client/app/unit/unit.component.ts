@@ -250,7 +250,7 @@ export class UnitComponent implements OnInit {
       }
 
       if (this.unit.attack) {
-        this.unit.formattedAttack = this.unit.attack;
+        this.unit.formattedAttack = await this.skillService.getSkill(this.unit.attack);
         if (this.unit.formattedAttack) {
           this.unit.formattedAttack.upgradeHtml = this.skillService.formatUpgrade(this.unit, this.unit.formattedAttack);
           this.unit.formattedAttack.basedHtml = this.unit.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + this.unit.formattedAttack.based.toLowerCase() + '.png\' />' : '';

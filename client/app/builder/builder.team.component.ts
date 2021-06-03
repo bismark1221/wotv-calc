@@ -626,7 +626,7 @@ export class BuilderTeamComponent implements OnInit, AfterViewInit {
     this.team.units.forEach((unit, unitIndex) => {
       if (unit) {
         const skills = [
-          unit.attack
+          unit.formattedAttack
         ];
 
         this.teamService.getActiveSkills(unitIndex);

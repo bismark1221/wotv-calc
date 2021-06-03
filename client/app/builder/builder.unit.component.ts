@@ -585,7 +585,7 @@ export class BuilderUnitComponent implements OnInit, AfterViewInit {
 
   updateActiveSkillsForSim() {
     const skills = [
-      this.unit.attack
+      this.unit.formattedAttack
     ];
 
     this.unit.activeSkills.forEach(skill => {

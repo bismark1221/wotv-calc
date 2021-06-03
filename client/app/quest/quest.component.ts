@@ -317,16 +317,18 @@ export class QuestComponent implements OnInit {
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
-      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.attack));
-      formattedSkill.name = this.nameService.getName(formattedSkill);
+      const formattedSkill = await this.skillService.getSkill(formattedEnemy.attack);
+      if (formattedSkill) {
+        formattedSkill.name = this.nameService.getName(formattedSkill);
 
-      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+        formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
-      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+        formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
 
-      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+        this.rangeService.formatRange(formattedEnemy, formattedSkill);
 
-      formattedEnemy.skills.push(formattedSkill);
+        formattedEnemy.skills.push(formattedSkill);
+      }
     }
 
     for (const rawSkill of this.quest[type][index].skills) {

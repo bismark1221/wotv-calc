@@ -104,13 +104,16 @@ export class RaidComponent implements OnInit {
         }
 
         if (boss.attack) {
-          boss.attack.basedHtml = boss.attack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.attack.based.toLowerCase() + '.png\' />' : '';
+          boss.formattedAttack = await this.skillService.getSkill(boss.attack);
+          if (boss.formattedAttack) {
+            boss.formattedAttack.basedHtml = boss.formattedAttack.based ? '<img class=\'atkBasedImg\' src=\'assets/atkBased/' + boss.formattedAttack.based.toLowerCase() + '.png\' />' : '';
 
-          boss.attack.effectsHtml = this.skillService.formatEffects(boss, boss.attack);
+            boss.formattedAttack.effectsHtml = this.skillService.formatEffects(boss, boss.formattedAttack);
 
-          boss.attack.damageHtml = this.skillService.formatDamage(boss, boss.attack, boss.attack.damage);
+            boss.formattedAttack.damageHtml = this.skillService.formatDamage(boss, boss.formattedAttack, boss.formattedAttack.damage);
 
-          this.rangeService.formatRange(boss, boss.attack);
+            this.rangeService.formatRange(boss, boss.formattedAttack);
+          }
         }
       }
 

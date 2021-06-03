@@ -136,6 +136,7 @@ export class Unit {
   availableCounterNodes = [];
   percentStats = {};
   formattedLimit;
+  formattedAttack;
 
   // Only for quests/enemies
   species = '';

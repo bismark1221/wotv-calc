@@ -1806,7 +1806,7 @@ export class SkillService {
     }
 
     if (!exist && unit.attack) {
-      if (unit.attack.dataId === skillId) {
+      if (unit.attack === skillId) {
         exist = true;
       }
     }

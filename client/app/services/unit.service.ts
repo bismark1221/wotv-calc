@@ -392,6 +392,10 @@ export class UnitService {
       }
     });
 
+    if (this.unit.attack) {
+      this.unit.formattedAttack = await this.skillService.getSkill(this.unit.attack);
+    }
+
     if (this.unit.limit) {
       this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit);
       if (this.unit.formattedLimit) {

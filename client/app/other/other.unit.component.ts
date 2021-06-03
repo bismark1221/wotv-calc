@@ -188,16 +188,18 @@ export class OtherUnitComponent implements OnInit {
     formattedEnemy.skills = [];
 
     if (formattedEnemy.attack) {
-      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.attack));
-      formattedSkill.name = this.nameService.getName(formattedSkill);
+      const formattedSkill = await this.skillService.getSkill(formattedEnemy.attack);
+      if (formattedSkill) {
+        formattedSkill.name = this.nameService.getName(formattedSkill);
 
-      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+        formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
-      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+        formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
 
-      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+        this.rangeService.formatRange(formattedEnemy, formattedSkill);
 
-      formattedEnemy.skills.push(formattedSkill);
+        formattedEnemy.skills.push(formattedSkill);
+      }
     }
 
     for (const rawSkill of enemy.skills) {
@@ -234,16 +236,18 @@ export class OtherUnitComponent implements OnInit {
     }
 
     if (formattedEnemy.limit) {
-      const formattedSkill = JSON.parse(JSON.stringify(formattedEnemy.limit));
-      formattedSkill.name = this.nameService.getName(formattedSkill);
+      const formattedSkill = await this.skillService.getSkill(formattedEnemy.limit);
+      if (formattedSkill) {
+        formattedSkill.name = this.nameService.getName(formattedSkill);
 
-      formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
+        formattedSkill.effectsHtml = this.skillService.formatEffects(formattedEnemy, formattedSkill);
 
-      formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
+        formattedSkill.damageHtml = this.skillService.formatDamage(formattedEnemy, formattedSkill, formattedSkill.damage);
 
-      this.rangeService.formatRange(formattedEnemy, formattedSkill);
+        this.rangeService.formatRange(formattedEnemy, formattedSkill);
 
-      formattedEnemy.skills.push(formattedSkill);
+        formattedEnemy.skills.push(formattedSkill);
+      }
     }
 
     this.applyStatsForJob(formattedEnemy);
