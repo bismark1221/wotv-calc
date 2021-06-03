@@ -378,6 +378,7 @@ export class QuestComponent implements OnInit {
     if (this.quest[type][index].entryCond && this.quest[type][index].entryCond.length > 0) {
       const formattedEntryCond = [];
       for (const entryCond of this.quest[type][index].entryCond) {
+        console.log(await this.questService.formatEntryCondition(entryCond, this.quest));
         formattedEntryCond.push(await this.questService.formatEntryCondition(entryCond, this.quest));
       }
 

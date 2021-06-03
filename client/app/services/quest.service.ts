@@ -503,17 +503,10 @@ export class QuestService {
     return html;
   }
 
-/*
-
-
-
-
-    19: 'COUNTDEAD'
-*/
-
   async formatEntryCondition(condition, quest) {
     let html = '';
     let countCond = 0;
+    let IDs = [];
 
     for (const cond of condition) {
       if (countCond > 0 && cond.type !== 'ALIVE') {
@@ -522,11 +515,13 @@ export class QuestService {
 
       switch (cond.type) {
         case 'ONEDEAD' :
-          html += 'At least 1 ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest);
+          html += (IDs.length > 1 ? 'At least 1 of ' : '') + (IDs.length > 0 ? IDs.join(', ') : '???') + ' is defeated';
         break;
 
         case 'ALLDEAD' :
-          html += 'All ' + await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' defeated';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest);
+          html += (IDs.length > 0 ? IDs.join(', ') : '???') + (IDs.length > 1 ? ' are defeated' : ' is defeated');
         break;
 
         case 'ALIVE' :
@@ -534,18 +529,21 @@ export class QuestService {
         break;
 
         case 'STATCOND' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' HP under ' + cond.condition.hp + '%';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
+          html += (IDs !== '' ? IDs : '???') + ' HP under ' + cond.condition.hp + '%';
         break;
 
         case 'TURNCOUNT' :
-          html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' played more than ' + cond.condition.turn + ' turns';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
+          html += (IDs !== '' ? IDs : '???') + ' played more than ' + cond.condition.turn + ' turns';
         break;
 
         case 'POSITION' :
           if (cond.condition.tag === '') {
             html += 'An enemy manage to go to ';
           } else {
-            html += await this.getNameOfEnemy(this.getUnitIdFromTag(cond.condition.tag, quest)) + ' manage to go to ';
+            IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
+            html += (IDs !== '' ? IDs : '???') + ' manage to go to ';
           }
 
           const positions = [];
@@ -600,5 +598,24 @@ export class QuestService {
     }
 
     return null;
+  }
+
+  getIDsFromTag(tag, quest) {
+    const tagTables = ['enemies', 'allies', 'objects', 'chests', 'switchs'];
+    const IDs = [];
+
+    for (const tagTable of tagTables) {
+      if (quest[tagTable]) {
+        let i = 1;
+        for (const enemy of quest[tagTable]) {
+          if (enemy.tag === tag) {
+            IDs.push(tagTable[0].toUpperCase() + i);
+          }
+          i++;
+        }
+      }
+    }
+
+    return IDs;
   }
 }
