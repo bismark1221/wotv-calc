@@ -529,21 +529,21 @@ export class QuestService {
         break;
 
         case 'STATCOND' :
-          IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
-          html += (IDs !== '' ? IDs : '???') + ' HP under ' + cond.condition.hp + '%';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest);
+          html += (IDs.length > 0 ? IDs.join(', ') : '???') + ' HP under ' + cond.condition.hp + '%';
         break;
 
         case 'TURNCOUNT' :
-          IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
-          html += (IDs !== '' ? IDs : '???') + ' played more than ' + cond.condition.turn + ' turns';
+          IDs = this.getIDsFromTag(cond.condition.tag, quest);
+          html += (IDs.length > 0 ? IDs.join(', ') : '???') + ' played more than ' + cond.condition.turn + ' turns';
         break;
 
         case 'POSITION' :
           if (cond.condition.tag === '') {
             html += 'An enemy manage to go to ';
           } else {
-            IDs = this.getIDsFromTag(cond.condition.tag, quest).join(', ');
-            html += (IDs !== '' ? IDs : '???') + ' manage to go to ';
+            IDs = this.getIDsFromTag(cond.condition.tag, quest);
+            html += (IDs.length > 0 ? IDs.join(', ') : '???') + ' manage to go to ';
           }
 
           const positions = [];
