@@ -847,6 +847,8 @@ export class SimulatorService {
   }
 
   calculateDamageForConditions(unit, dataSimulator) {
+    dataSimulator.result.conditions = [];
+
     dataSimulator.conditions.forEach(condition => {
       if (condition.type === 'damage') {
         dataSimulator.result.conditions.push({
