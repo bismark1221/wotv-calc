@@ -4652,7 +4652,7 @@ export class JsonService {
       names: {},
       rarity: '',
       cost: esper.cost,
-      skills: [],
+      skill: esper.atkskl,
       stats: {},
       SPs : [],
       element: this.elements[esper.elem[0]],
@@ -4663,9 +4663,7 @@ export class JsonService {
       }
     };
 
-    this[this.version].wotvEspers[dataId].skills = [
-      this.OLDaddSkill(this[this.version].wotvEspers[dataId], {slot: 1, value: esper.atkskl})
-    ];
+    this.addSkill(esper.atkskl, esper);
     this.getUnitImage(this[this.version].wotvEspers[dataId]);
 
     await this.getNames(this[this.version].wotvEspers[dataId], 'unit');

@@ -6,78 +6,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "FIRE_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_FIRE",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_IFRT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "地獄の火炎"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_IFRT",
     "stats": {
       "HP": [
         {
@@ -1759,78 +1688,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "EARTH_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_SOIL",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_GLEM",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "フラグメンタルロック"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "earth"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_GLEM",
     "stats": {
       "HP": [
         {
@@ -3510,78 +3368,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "WATER_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_WATR",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_SIRE",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ルナティックボイス"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "water"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_SIRE",
     "stats": {
       "HP": [
         {
@@ -5260,78 +5047,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "ICE_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_ICE",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_SHIV",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ダイアモンドダスト"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "ice"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_SHIV",
     "stats": {
       "HP": [
         {
@@ -7013,78 +6729,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "LIGHTNING_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_THUN",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_RAMU",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "裁きの雷"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "lightning"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_RAMU",
     "stats": {
       "HP": [
         {
@@ -8766,58 +8411,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "TEAM",
-            "type": "CRITIC_RATE",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "fixe",
-            "dataId": "BUFF_WTH_NONE",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_ODIN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "斬鉄剣"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "physic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "slash",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "neutral"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_ODIN",
     "stats": {
       "HP": [
         {
@@ -10481,68 +10075,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "WIND_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_WIND",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "EVADE",
-            "minValue": 15,
-            "maxValue": 15,
-            "calcType": "fixe",
-            "dataId": "BUFF_WTH_WIND02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_TSLP",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "四天の風"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "wind"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_TSLP",
     "stats": {
       "HP": [
         {
@@ -12224,61 +11757,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "BLIND_ATK",
-            "minValue": 20,
-            "maxValue": 50,
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "SILENCE_ATK",
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_THDG",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ときはなつ"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "physic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "all",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "light"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_THDG",
     "stats": {
       "HP": [
         {
@@ -13950,69 +13429,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "FIRE_RES",
-            "minValue": -30,
-            "maxValue": -30,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_FIRE03",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 40,
-            "maxValue": 40,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE04",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_WRMC",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "かくこうげき"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 4,
-          "l": 4,
-          "s": 1,
-          "line": 2
-        },
-        "based": "physic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "missile",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_WRMC",
     "stats": {
       "HP": [
         {
@@ -15690,78 +15107,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "DARK_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_DARK",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_DABL",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "闇よりの使者"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "dark"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_DABL",
     "stats": {
       "HP": [
         {
@@ -17435,88 +16781,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "PARALYZE_ATK",
-            "minValue": 60,
-            "maxValue": 80,
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "ICE_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_ICE",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_FNRR",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ミスティックロアー"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "ice"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_FNRR",
     "stats": {
       "HP": [
         {
@@ -19198,86 +18463,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "IMMOBILIZE_ATK",
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "EARTH_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_SOIL",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SOIL02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_TITN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "大地の怒り"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "physic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "earth"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_TITN",
     "stats": {
       "HP": [
         {
@@ -20563,53 +19749,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "PARALYZE_ATK",
-            "minValue": 60,
-            "maxValue": 80,
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_AGON",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "超電磁大爆発"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "all",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "lightning"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_AGON",
     "stats": {
       "HP": [
         {
@@ -21896,64 +21036,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "ENNEMIES",
-            "type": "DARK_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_DARK03",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 40,
-            "maxValue": 40,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK04",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_DMNW",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "土崩激突"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 5,
-          "l": 3,
-          "s": 10,
-          "w": 2
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "neutral"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_DMNW",
     "stats": {
       "HP": [
         {
@@ -23230,128 +22313,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "SLOW_ATK",
-            "minValue": 30,
-            "maxValue": 50,
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "WATER_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_WATR03",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR04_NOT_WATER",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR04_NOT_WATER",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR04_WATER",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WATR04_WATER",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_LVAT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "大海嘯"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 2,
-          "s": 10,
-          "w": 2
-        },
-        "based": "magic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "water"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_LVAT",
     "stats": {
       "HP": [
         {
@@ -24636,126 +23598,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "STUN_ATK",
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 1,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "WIND_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_WIND",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WIND03_NOT_WIND",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "water",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WIND03_NOT_WIND",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "water",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WIND03_WIND",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "wind"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_WIND03_WIND",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "wind"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_TYPN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "おおあらし"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 10,
-          "w": 1
-        },
-        "based": "magic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "wind"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_TYPN",
     "stats": {
       "HP": [
         {
@@ -26044,72 +24887,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_NONE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_NONE02",
-            "clock": 40,
-            "timing": "WEATHER"
-          }
-        ],
-        "dataId": "SK_SMN_BAHM",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "メガフレア"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "combo": {
-          "num": 2,
-          "rate": 50
-        },
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "neutral"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_BAHM",
     "stats": {
       "HP": [
         {
@@ -27777,127 +26555,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "PARALYZE_ATK",
-            "minValue": 60,
-            "maxValue": 80,
-            "calcType": "apply",
-            "rate": 67,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "DARK_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_DARK03",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK05_NOT_DARK",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "water",
-              "light"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK05_NOT_DARK",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "water",
-              "light"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK05_DARK",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_DARK05_DARK",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "dark"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_OMEG",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "波動砲"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 0
-        },
-        "based": "magic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "dark"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_OMEG",
     "stats": {
       "HP": [
         {
@@ -29563,122 +28221,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 50,
-            "maxValue": 60,
-            "calcType": "percent",
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "REGEN_ATK",
-            "minValue": 5,
-            "maxValue": 10,
-            "calcType": "percent",
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "FIRE_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_FIRE",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "HEAL_POWER",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE05_FIRE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "HEAL_POWER",
-            "minValue": 40,
-            "maxValue": 40,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_FIRE05_FIRE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "fire"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_PNIX",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "転生の炎"
-        },
-        "target": "selfSide",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        }
-      }
-    ],
+    "skill": "SK_SMN_PNIX",
     "stats": {
       "HP": [
         {
@@ -31358,121 +29901,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "REFLECT",
-            "value": 3,
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_BEFORE"
-          },
-          {
-            "type": "HEAL_POWER",
-            "minValue": 10,
-            "maxValue": 40,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "LIGHT_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_SHIN",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SHIN03_NOT_SHIN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "fire",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SHIN03_NOT_SHIN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "lightning",
-              "fire",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SHIN03_SHIN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "light"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_SHIN03_SHIN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "light"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_CBCL",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ルビーの光"
-        },
-        "target": "selfSide",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        }
-      }
-    ],
+    "skill": "SK_SMN_CBCL",
     "stats": {
       "HP": [
         {
@@ -33136,126 +31565,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "HEAL_POWER",
-            "minValue": -40,
-            "maxValue": -60,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "ICE_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_ICE",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE03_NOT_ICE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "wind",
-              "earth",
-              "lightning",
-              "fire",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE03_NOT_ICE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "wind",
-              "earth",
-              "lightning",
-              "fire",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE03_ICE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "ice"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_ICE03_ICE",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "ice"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_ICDG",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "竜の雪嵐"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 3,
-          "s": 13
-        },
-        "based": "magic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "ice"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_ICDG",
     "stats": {
       "HP": [
         {
@@ -34934,126 +33244,7 @@
     },
     "rarity": "UR",
     "cost": 40,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "MISSILE_RES",
-            "minValue": -28,
-            "maxValue": -38,
-            "calcType": "resistance",
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "side": "ENNEMIES",
-            "type": "LIGHTNING_RES",
-            "minValue": -50,
-            "maxValue": -50,
-            "calcType": "resistance",
-            "dataId": "BUFF_WTH_THUN",
-            "clock": 40,
-            "timing": "WEATHER"
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN03_NOT_THUN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "fire",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN03_NOT_THUN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "water",
-              "ice",
-              "wind",
-              "earth",
-              "fire",
-              "light",
-              "dark"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "ATK",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN03_THUN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "lightning"
-            ]
-          },
-          {
-            "side": "TEAM",
-            "type": "MAG",
-            "minValue": 100,
-            "maxValue": 100,
-            "calcType": "percent",
-            "dataId": "BUFF_WTH_THUN03_THUN",
-            "clock": 40,
-            "timing": "WEATHER",
-            "elements": [
-              "lightning"
-            ]
-          }
-        ],
-        "dataId": "SK_SMN_FF7_SCPN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "テイルレーザー"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 5,
-          "s": 1
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 135,
-          "maxValue": 175,
-          "type": "missile",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "lightning"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_FF7_SCPN",
     "stats": {
       "HP": [
         {
@@ -36733,48 +34924,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_IGNT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "なぎ払い"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 0,
-          "l": 1,
-          "s": 10,
-          "w": 2
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "knockback": {
-          "rate": 100,
-          "value": 1,
-          "dir": 0
-        },
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "slash",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "light"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_IGNT",
     "stats": {
       "HP": [
         {
@@ -38447,42 +36597,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_BHMT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "あばれまわる"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "physic",
-        "aoe": {
-          "s": 2,
-          "l": 2,
-          "h": 0
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "dark"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_BHMT",
     "stats": {
       "HP": [
         {
@@ -40155,79 +38270,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "POISON_ATK",
-            "minValue": 5,
-            "maxValue": 15,
-            "calcType": "unknow",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "BLIND_ATK",
-            "minValue": 20,
-            "maxValue": 50,
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "SLEEP_ATK",
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "CONFUSION_ATK",
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "SILENCE_ATK",
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_MABR",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "くさい息"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1
-        },
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 0
-        }
-      }
-    ],
+    "skill": "SK_SMN_MABR",
     "stats": {
       "HP": [
         {
@@ -41908,62 +39951,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 90,
-            "maxValue": 120,
-            "calcType": "unknow",
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "EVADE",
-            "minValue": 10,
-            "maxValue": 25,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "CRITIC_RATE",
-            "minValue": 10,
-            "maxValue": 25,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_MOGL",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "Xmasモーグリダンス"
-        },
-        "target": "selfSide",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 4,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 2
-        }
-      }
-    ],
+    "skill": "SK_SMN_MOGL",
     "stats": {
       "HP": [
         {
@@ -43644,59 +41632,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "MALES_KILLER",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "unknow",
-            "timing": "SKILL_BEFORE"
-          },
-          {
-            "type": "CONFUSION_ATK",
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_LAMA",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "魅惑のしっぽ"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 10,
-          "w": 1
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_LAMA",
     "stats": {
       "HP": [
         {
@@ -45378,47 +43314,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_OCHU",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "集束・種子大砲"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 3,
-          "l": 3,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "earth"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_OCHU",
     "stats": {
       "HP": [
         {
@@ -47100,47 +44996,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_CHCB_01",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "チョコメテオ"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 5,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "light"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_CHCB_01",
     "stats": {
       "HP": [
         {
@@ -48421,58 +46277,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "PARALYZE_ATK",
-            "minValue": 60,
-            "maxValue": 80,
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_MDFY",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "マインドブラスト"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 0
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 50,
-          "maxValue": 85,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "water"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_MDFY",
     "stats": {
       "HP": [
         {
@@ -49759,53 +47564,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "DOOM_ATK",
-            "minValue": 4,
-            "maxValue": 4,
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 5,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_BLMN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "死月の嘲笑"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 70,
-          "maxValue": 105,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "dark"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_BLMN",
     "stats": {
       "HP": [
         {
@@ -51082,74 +48841,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 25,
-            "maxValue": 40,
-            "calcType": "percent",
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "DEF",
-            "minValue": 6,
-            "maxValue": 10,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "AGI",
-            "minValue": 12,
-            "maxValue": 20,
-            "calcType": "percent",
-            "turn": 3,
-            "increaseMax": true,
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          },
-          {
-            "type": "DISPEL",
-            "ailments": [
-              "POISON",
-              "BLIND",
-              "PARALYZE",
-              "CONFUSION",
-              "STUN"
-            ],
-            "target": "selfSide",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_CHCB_02",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "チョコボの癒し"
-        },
-        "target": "selfSide",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1
-        },
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        }
-      }
-    ],
+    "skill": "SK_SMN_CHCB_02",
     "stats": {
       "HP": [
         {
@@ -52436,48 +50128,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_TNBR",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "みんなのうらみ"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 1,
-          "s": 0
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "maths": [
-          {
-            "type": "DEAD_UNITS",
-            "formula": "FIX",
-            "condition": 5,
-            "value": 200,
-            "dst": "DAMAGE"
-          }
-        ],
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "all",
-          "effType": "DAMAGE",
-          "formula": {}
-        }
-      }
-    ],
+    "skill": "SK_SMN_TNBR",
     "stats": {
       "HP": [
         {
@@ -54156,56 +51807,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "STOP_ATK",
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 30,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_GCAL",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "フローズンハリケーン"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 2,
-          "l": 3,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 50,
-          "maxValue": 85,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "ice"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_GCAL",
     "stats": {
       "HP": [
         {
@@ -55492,56 +53094,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "SLASH_ATK",
-            "minValue": -30,
-            "maxValue": -50,
-            "calcType": "fixe",
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_MRLT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "火焔三連"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 1,
-          "s": 0
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "combo": {
-          "num": 3,
-          "rate": 77
-        },
-        "damage": {
-          "minValue": 40,
-          "maxValue": 75,
-          "type": "slash",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_MRLT",
     "stats": {
       "HP": [
         {
@@ -56828,53 +54381,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "PARALYZE_ATK",
-            "minValue": 60,
-            "maxValue": 80,
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "target",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_CORL",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "ブラスター"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 35,
-          "maxValue": 70,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "lightning"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_CORL",
     "stats": {
       "HP": [
         {
@@ -58556,59 +56063,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "BLIND_ATK",
-            "minValue": 20,
-            "maxValue": 50,
-            "calcType": "apply",
-            "rate": 30,
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_KRKN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "スミ"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1,
-          "line": 2
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 30,
-          "maxValue": 65,
-          "type": "all",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "water"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_KRKN",
     "stats": {
       "HP": [
         {
@@ -60290,57 +57745,7 @@
     },
     "rarity": "MR",
     "cost": 30,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "ALL_ELEMENTS_RES",
-            "minValue": -5,
-            "maxValue": -15,
-            "calcType": "resistance",
-            "turn": 3,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_DMCM",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "魔なる空間"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1
-        },
-        "based": "magic",
-        "aoe": {
-          "s": 1,
-          "l": 2,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 35,
-          "maxValue": 70,
-          "type": "magic",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "dark"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_DMCM",
     "stats": {
       "HP": [
         {
@@ -62010,43 +59415,7 @@
     },
     "rarity": "SR",
     "cost": 20,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_CACT",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "針千本"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 2,
-          "s": 1
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 1000,
-          "maxValue": 1000,
-          "type": "all",
-          "effType": "DAMAGE",
-          "formula": {},
-          "fixedDamage": true
-        },
-        "elem": [
-          "earth"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_CACT",
     "stats": {
       "HP": [
         {
@@ -63711,53 +61080,7 @@
     },
     "rarity": "SR",
     "cost": 20,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [
-          {
-            "type": "BRAVERY_FIGHT",
-            "minValue": -20,
-            "maxValue": -20,
-            "calcType": "fixe",
-            "rate": 30,
-            "target": "all",
-            "timing": "SKILL_AFTER"
-          }
-        ],
-        "dataId": "SK_SMN_ARMN",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "にらみ"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1,
-          "line": 1
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": -5,
-          "maxValue": 17,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "ice"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_ARMN",
     "stats": {
       "HP": [
         {
@@ -65443,47 +62766,7 @@
     },
     "rarity": "SR",
     "cost": 20,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_ZUUU",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "大旋風"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "physic",
-        "aoe": {
-          "s": 0,
-          "l": 1,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "knockback": {
-          "rate": 100,
-          "value": 1,
-          "dir": 0
-        },
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "slash",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "wind"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_ZUUU",
     "stats": {
       "HP": [
         {
@@ -67175,43 +64458,7 @@
     },
     "rarity": "SR",
     "cost": 20,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_OGRE",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "なげつける"
-        },
-        "target": "all",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "range": {
-          "h": 1,
-          "l": 3,
-          "s": 1,
-          "line": 1
-        },
-        "based": "physic",
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 65,
-          "maxValue": 100,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "lightning"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_OGRE",
     "stats": {
       "HP": [
         {
@@ -68899,42 +66146,7 @@
     },
     "rarity": "SR",
     "cost": 20,
-    "skills": [
-      {
-        "unlockStar": null,
-        "effects": [],
-        "dataId": "SK_SMN_BOMB",
-        "type": "esper",
-        "mainSkill": false,
-        "names": {
-          "en": "自爆"
-        },
-        "target": "target",
-        "cost": {
-          "type": "TP"
-        },
-        "count": 1,
-        "maxLevel": 20,
-        "based": "physic",
-        "aoe": {
-          "s": 1,
-          "l": 3,
-          "h": 1
-        },
-        "hit": 100,
-        "crt_hit": -15,
-        "damage": {
-          "minValue": 200,
-          "maxValue": 230,
-          "type": "strike",
-          "effType": "DAMAGE",
-          "formula": {}
-        },
-        "elem": [
-          "fire"
-        ]
-      }
-    ],
+    "skill": "SK_SMN_BOMB",
     "stats": {
       "HP": [
         {
