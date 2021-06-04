@@ -238,7 +238,7 @@
             <tr>
               <th>Master Ability</th>
             </tr>
-            <tr *ngFor="let masterSkill of unit.masterSkill">
+            <tr *ngFor="let masterSkill of unit.formattedMasterSkill">
               <td>
                 <div *ngIf="masterSkill.upgradeHtml !== ''">
                   {{ masterSkill.upgradeHtml }}

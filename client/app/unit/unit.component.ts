@@ -216,18 +216,24 @@ export class UnitComponent implements OnInit {
 
       this.skillService.sort(this.unit.skills);
 
+      this.unit.formattedMasterSkill = [];
       if (this.unit.masterSkill.length > 0) {
-        this.unit.masterSkill.forEach(masterSkill => {
-          masterSkill.name = this.nameService.getName(masterSkill);
-          masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);
+        for (const masterSkillId of this.unit.masterSkill) {
+          const masterSkill = await this.skillService.getSkill(masterSkillId);
+          if (masterSkill) {
+            masterSkill.name = this.nameService.getName(masterSkill);
+            masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);
 
-          masterSkill.effects.forEach(effect => {
-            effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
-          });
+            masterSkill.effects.forEach(effect => {
+              effect.formatHtml = this.skillService.formatEffect(this.unit, masterSkill, effect);
+            });
 
-          masterSkill.upgrades = [];
-          masterSkill = this.addUpgrade(masterSkill);
-        });
+            masterSkill.upgrades = [];
+            masterSkill = this.addUpgrade(masterSkill);
+
+            this.unit.formattedMasterSkill.push(masterSkill);
+          }
+        }
       }
 
       if (this.unit.limit) {
@@ -369,7 +375,7 @@ export class UnitComponent implements OnInit {
     });
 
     if (name === '' && this.unit.masterSkill.length > 0) {
-      this.unit.masterSkill.forEach(masterSkill => {
+      this.unit.formattedMasterSkill.forEach(masterSkill => {
         if (masterSkill.dataId === upgradeSkillId) {
           name = this.nameService.getName(masterSkill);
         }

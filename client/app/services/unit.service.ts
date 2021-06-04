@@ -376,13 +376,19 @@ export class UnitService {
     ];
     this.unit.activatedCounter = '0';
 
+    this.unit.formattedMasterSkill = [];
     this.unit.masterSkillLevel = [-1];
-    let i = 0;
-    this.unit.masterSkill.forEach(skill => {
-      this.unit.masterSkillLevel.push(i);
-      i++;
-    });
     this.unit.masterSkillActivated = -1;
+    let i = 0;
+    for (const masterSkillId of this.unit.masterSkill) {
+      const masterSkill = await this.skillService.getSkill(masterSkillId);
+      if (masterSkill) {
+        this.unit.formattedMasterSkill.push(masterSkill);
+        this.unit.masterSkillLevel.push(i);
+        i++;
+      }
+    }
+
     this.unit.equipments = [];
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {

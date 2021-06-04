@@ -1793,7 +1793,7 @@ export class SkillService {
 
     if (!exist && unit.masterSkill.length > 0) {
       unit.masterSkill.forEach(masterSkill => {
-        if (masterSkill.dataId === skillId) {
+        if (masterSkill === skillId) {
           exist = true;
         }
       });

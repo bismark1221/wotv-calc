@@ -73,6 +73,36 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_MONT": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MONT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_STRN": {
     "effects": [],
     "dataId": "SK_LB_LW_STRN",
@@ -140,6 +170,29 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_STRN": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_STRN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_ELDE": {
     "effects": [
@@ -213,6 +266,38 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_ELDE": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ELDE",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_ROBB": {
     "effects": [
@@ -295,6 +380,36 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_ROBB": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ROBB",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_ENBT": {
     "effects": [],
     "dataId": "SK_LB_LW_ENBT",
@@ -364,6 +479,29 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_ENBT": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ENBT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_ZIZA": {
     "effects": [
@@ -440,6 +578,36 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_ZIZA": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ZIZA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_AILN": {
     "effects": [
       {
@@ -487,6 +655,37 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_AILN": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "TP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_AILN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_MDNA": {
     "effects": [
@@ -571,6 +770,30 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_MDNA": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MDNA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_AYKA": {
     "effects": [
@@ -660,6 +883,37 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_AYKA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "STOP_RES",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_AYKA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_MACR": {
     "effects": [
       {
@@ -742,6 +996,38 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_MACR": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MACR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_GRM_ATK": {
     "effects": [],
     "dataId": "SK_LW_GRM_ATK",
@@ -773,6 +1059,38 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_HLNA": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_HLNA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_KNT_ATK": {
     "effects": [],
     "dataId": "SK_LW_KNT_ATK",
@@ -803,6 +1121,92 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_LILS": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_LILS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_RAMD": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RAMD",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_OOOO": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_OOOO",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LW_DRG_ATK": {
     "effects": [],
@@ -837,6 +1241,37 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_LRNZ": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_LRNZ",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_GUN_ATK": {
     "effects": [],
     "dataId": "SK_LW_GUN_ATK",
@@ -870,6 +1305,44 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_RIRY": {
+    "effects": [
+      {
+        "type": "DEX",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "RANGE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RIRY",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_THI_ATK": {
     "effects": [],
     "dataId": "SK_LW_THI_ATK",
@@ -900,6 +1373,36 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_VSTR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VSTR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LW_HUN_ATK": {
     "effects": [],
@@ -935,6 +1438,107 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_CLEY": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "INITIAL_AP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_CLEY",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_KADI": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_KADI",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_MRLK": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MRLK",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_TIM_ATK": {
     "effects": [],
     "dataId": "SK_LW_TIM_ATK",
@@ -965,6 +1569,127 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_MGRT": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MGRT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_PRAY": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_PRAY",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SZRT": {
+    "effects": [
+      {
+        "type": "DEX",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 35,
+        "maxValue": 35,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SZRT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LW_FINA_ATK": {
     "effects": [],
@@ -1000,6 +1725,69 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_FINA": {
+    "effects": [
+      {
+        "type": "DEX",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_FINA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_BYLO": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "LUCK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_BYLO",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_MGK_ATK": {
     "effects": [],
     "dataId": "SK_LW_MGK_ATK",
@@ -1029,6 +1817,304 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_RYER": {
+    "effects": [
+      {
+        "type": "LIGHT_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "rate": 200,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RYER",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SCIA": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "DEX",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SCIA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_VRID": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 45,
+        "maxValue": 45,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VRID",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_NAIA": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -250,
+        "maxValue": -250,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_NAIA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SRJS": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "LUCK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SRJS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_UNII": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_UNII",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SEVR": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SEVR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_VADM": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VADM",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LW_RDM_ATK": {
     "effects": [],
@@ -1060,6 +2146,230 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_MURM": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MURM",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_PHBE": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_PHBE",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_RART": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "AQUATIC_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RART",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_MICE": {
+    "effects": [
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -750,
+        "maxValue": -750,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "PLANT_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MICE",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_MIIA": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "FAIRY_KILLER",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MIIA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_ZZAN": {
+    "effects": [
+      {
+        "type": "DEX",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "JUMP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ZZAN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_GLMS": {
     "effects": [
@@ -1144,6 +2454,82 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_GLMS": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_GLMS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_GLMS_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 1000,
+        "maxValue": 1000,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_GLMS_2",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_YSTL_ATK": {
     "effects": [],
     "dataId": "SK_LW_YSTL_ATK",
@@ -1175,6 +2561,44 @@
       "neutral"
     ]
   },
+  "SK_MA_FF14_YSTL": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF14_YSTL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_TNCR_ATK": {
     "effects": [],
     "dataId": "SK_LW_TNCR_ATK",
@@ -1205,6 +2629,75 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FF14_TNCR": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF14_TNCR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_FF14_TNCR_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF14_TNCR_2",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_FDRC": {
     "effects": [
@@ -1253,6 +2746,29 @@
       }
     }
   },
+  "SK_MA_LW_FDRC": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_FDRC",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LW_NIN_ATK": {
     "effects": [],
     "dataId": "SK_LW_NIN_ATK",
@@ -1283,6 +2799,37 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_SDLX": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SDLX",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_YERM": {
     "effects": [
@@ -1370,6 +2917,97 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_YERM": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_YERM",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_P_NASR": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_NASR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_P_ETRE": {
+    "effects": [
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_ETRE",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_FFT_RAMZ": {
     "effects": [],
     "dataId": "SK_LB_FFT_RAMZ",
@@ -1448,6 +3086,37 @@
       "neutral"
     ]
   },
+  "SK_MA_FFT_RAMZ": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_RAMZ",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_FFT_GFGR_ATK": {
     "effects": [],
     "dataId": "SK_FFT_GFGR_ATK",
@@ -1478,6 +3147,36 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FFT_GFGR": {
+    "effects": [
+      {
+        "type": "INITIAL_AP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_GFGR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FFT_ORND": {
     "effects": [
@@ -1563,6 +3262,36 @@
       "neutral"
     ]
   },
+  "SK_MA_FFT_ORND": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_ORND",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_WHIS": {
     "effects": [
       {
@@ -1607,6 +3336,64 @@
         "type": 1
       }
     }
+  },
+  "SK_MA_LW_P_WHIS": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_WHIS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_KTON": {
     "effects": [
@@ -1658,6 +3445,29 @@
       }
     }
   },
+  "SK_MA_LW_P_KTON": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_KTON",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_MRND": {
     "effects": [
       {
@@ -1704,6 +3514,76 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_MRND": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MRND",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_DRND": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_DRND",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_LUCA": {
     "effects": [
@@ -1797,6 +3677,71 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_P_LUCA": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "rate": 200,
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "EARTH_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_LUCA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_P_ADLD": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEX",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_ADLD",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_VKTR": {
     "effects": [
       {
@@ -1842,6 +3787,67 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_VKTR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -200,
+        "maxValue": -200,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VKTR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_THLA": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_THLA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_RAIN": {
     "effects": [
@@ -1926,6 +3932,29 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_RAIN": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RAIN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_FRVA": {
     "effects": [
       {
@@ -1978,6 +4007,37 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_FRVA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_FRVA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_VNLA": {
     "effects": [
@@ -2061,6 +4121,98 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_VNLA": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VNLA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_DRIO": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_DRIO",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_TREL": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_TREL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FF1_WROL": {
     "effects": [
@@ -2161,6 +4313,37 @@
       "neutral"
     ]
   },
+  "SK_MA_FF1_WROL": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF1_WROL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_QILF": {
     "effects": [
       {
@@ -2240,6 +4423,68 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_QILF": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -200,
+        "maxValue": -200,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_QILF",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SIMR": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SIMR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_ORDR": {
     "effects": [
       {
@@ -2285,6 +4530,87 @@
         "type": 1
       }
     }
+  },
+  "SK_MA_LW_ORDR": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ORDR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_LVES": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_LVES",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FFT_AGRA_01": {
     "effects": [
@@ -2364,6 +4690,29 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FFT_AGRA": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_AGRA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FFT_DELT_01": {
     "effects": [
@@ -2448,6 +4797,30 @@
       "neutral"
     ]
   },
+  "SK_MA_FFT_DELT": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_DELT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_FFT_MSTD_ATK": {
     "effects": [],
     "dataId": "SK_FFT_MSTD_ATK",
@@ -2480,6 +4853,54 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FFT_MSTD": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "IMMOBILIZE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "DISABLE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "BLIND_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FFT_MSTD",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_IRDL": {
     "effects": [
@@ -2571,6 +4992,36 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_IRDL": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_IRDL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_STRN_01": {
     "effects": [],
     "dataId": "SK_LB_LW_STRN_01",
@@ -2638,6 +5089,36 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_STRN_01": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_STRN_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_LSWL": {
     "effects": [
@@ -2719,6 +5200,36 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_LSWL": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_LSWL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_GRSR": {
     "effects": [
@@ -2807,6 +5318,60 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_GRSR": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_GRSR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_RRIR": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RRIR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_RYER_01": {
     "effects": [
       {
@@ -2868,6 +5433,46 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_RYER_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WIND_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WIND_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WIND_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RYER_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_RIRY_01": {
     "effects": [
@@ -2954,6 +5559,46 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_RIRY_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "EARTH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "RES_SLASH_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RIRY_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_HWLT": {
     "effects": [
       {
@@ -3001,6 +5646,37 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_HWLT": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_HWLT",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_SCAL": {
     "effects": [
@@ -3059,6 +5735,98 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_SCAL": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -200,
+        "maxValue": -200,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SCAL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_MRAL": {
+    "effects": [
+      {
+        "type": "PROVOKE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "AOE_RES",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MRAL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_CHEL": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -250,
+        "maxValue": -250,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_CHEL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FF04_CECL": {
     "effects": [
@@ -3137,6 +5905,29 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FF4_CECL": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF4_CECL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_FF04_ROSA": {
     "effects": [
@@ -3223,6 +6014,37 @@
       "neutral"
     ]
   },
+  "SK_MA_FF4_ROSA": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF4_ROSA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_FF04_KAIN": {
     "effects": [
       {
@@ -3308,6 +6130,36 @@
       "neutral"
     ]
   },
+  "SK_MA_FF4_KAIN": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF4_KAIN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_RAMD_01": {
     "effects": [
       {
@@ -3358,6 +6210,85 @@
         "type": 1
       }
     }
+  },
+  "SK_MA_LW_P_RAMD_01": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_RAMD_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_GL_MA_LW_P_RAMD_01_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WATER_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WATER_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GL_MA_LW_P_RAMD_01_2",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_MACR_01": {
     "effects": [
@@ -3411,6 +6342,92 @@
       }
     }
   },
+  "SK_MA_LW_P_MACR_01": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_P_MACR_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_GL_MA_LW_P_MACR_01_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "FIRE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "FIRE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "FIRE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "ICE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GL_MA_LW_P_MACR_01_2",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_LATH": {
     "effects": [
       {
@@ -3463,6 +6480,76 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_LATH": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "rate": 200,
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ICE_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_LATH",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_TITU": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_TITU",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
   },
   "SK_LB_LW_DEAN": {
     "effects": [],
@@ -3547,6 +6634,54 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_DEAN": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "DARK_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DARK_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "DARK_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_DEAN",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_NIVL": {
     "effects": [
@@ -3636,6 +6771,67 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_NIVL": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_NIVL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_RVAL": {
+    "effects": [
+      {
+        "type": "HEAL_POWER",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RVAL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
   "SK_LB_LW_SAKR": {
     "effects": [
       {
@@ -3722,6 +6918,93 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_SAKR": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SAKR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_ALIM": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHTNING_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHTNING_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "ATTACK_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ALIM",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_RARD": {
     "effects": [
       {
@@ -3799,6 +7082,94 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_RARD": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "FIRE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "FIRE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "FIRE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RARD",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_ELSI": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ELSI",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_VNLA_01": {
     "effects": [
       {
@@ -3844,6 +7215,47 @@
         "type": 1
       }
     }
+  },
+  "SK_MA_LW_VNLA_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "EARTH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VNLA_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_VKTR_01": {
     "effects": [
@@ -3911,6 +7323,94 @@
         "type": 0
       }
     }
+  },
+  "SK_MA_LW_VKTR_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WATER_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WATER_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_VKTR_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_CRIS": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WATER_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "condition": "WATER_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_CRIS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_GABL": {
     "effects": [
@@ -4002,6 +7502,47 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_GABL": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "DARK_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DARK_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "DARK_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_GABL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_ELSR": {
     "effects": [
       {
@@ -4084,6 +7625,60 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_ELSR": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_ELSR",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_FF10_TIDU": {
     "effects": [],
     "dataId": "SK_LB_FF10_TIDU",
@@ -4156,6 +7751,46 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FF10_TIDU": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WATER_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WATER_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF10_TIDU",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_FF10_YUNA": {
     "effects": [],
@@ -4231,6 +7866,46 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_FF10_YUNA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF10_YUNA",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_FF10_ARON": {
     "effects": [
@@ -4317,6 +7992,46 @@
       "neutral"
     ]
   },
+  "SK_MA_FF10_ARON": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "ICE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "ICE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_FF10_ARON",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_NIER_N2TB": {
     "effects": [
       {
@@ -4395,6 +8110,46 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_NIER_N2TB": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "WIND_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "WIND_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "WIND_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_NIER_N2TB",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_NIER_N9TS": {
     "effects": [
@@ -4479,6 +8234,46 @@
       "neutral"
     ]
   },
+  "SK_MA_NIER_N9TS": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHTNING_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "LIGHTNING_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_NIER_N9TS",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_MONT_01": {
     "effects": [
       {
@@ -4556,6 +8351,46 @@
     "elem": [
       "neutral"
     ]
+  },
+  "SK_MA_LW_MONT_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "FIRE_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "FIRE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "FIRE_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "AOE_RES",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_MONT_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
   },
   "SK_LB_LW_RYEL": {
     "effects": [
@@ -4642,6 +8477,101 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_RYEL": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "EARTH_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "EARTH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "EARTH_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_RYEL",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_MA_LW_SIRM": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "LIGHTNING_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "condition": "LIGHTNING_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_SIRM",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LB_LW_HLNA_01": {
     "effects": [
       {
@@ -4726,6 +8656,54 @@
       "neutral"
     ]
   },
+  "SK_MA_LW_HLNA_01": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "condition": "DARK_ELEMENT",
+        "increaseMax": true,
+        "target": "selfSide"
+      },
+      {
+        "type": "DARK_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "condition": "DARK_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MA_LW_HLNA_01",
+    "type": "masterSkill",
+    "names": {
+      "en": "Master Ability",
+      "fr": "Aptitude maître",
+      "de": "Meisterfähigkeit",
+      "es": "Habilidad maestra",
+      "ko": "마스터 어빌리티",
+      "zh": "專精能力"
+    },
+    "target": "selfSide",
+    "maxLevel": 1
+  },
   "SK_LW_CLR_ATK_100": {
     "effects": [],
     "dataId": "SK_LW_CLR_ATK_100",
@@ -4786,6 +8764,2414 @@
     },
     "elem": [
       "neutral"
+    ]
+  },
+  "SK_SMN_IFRT": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "FIRE_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_FIRE",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_IFRT",
+    "type": "esper",
+    "names": {
+      "en": "Hellfire",
+      "fr": "Flammes de l'enfer",
+      "de": "Inferno",
+      "es": "Fuego infernal",
+      "ko": "지옥의 화염",
+      "zh": "地獄火焰"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_SMN_GLEM": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "EARTH_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_SOIL",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SOIL02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SOIL02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_GLEM",
+    "type": "esper",
+    "names": {
+      "en": "Fragmental Rock",
+      "fr": "Rocher à fragmentation",
+      "de": "Brechfelsen",
+      "es": "Roca de fragmentación",
+      "ko": "쇄설암",
+      "zh": "碎屑岩"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_SMN_SIRE": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "WATER_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_WATR",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_SIRE",
+    "type": "esper",
+    "names": {
+      "en": "Lunatic Voice",
+      "fr": "Voix ensorcelante",
+      "de": "Sirenengesang",
+      "es": "Voz lunática",
+      "ko": "광기의 노래",
+      "zh": "狂迷之聲"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "water"
+    ]
+  },
+  "SK_SMN_IGNT": {
+    "effects": [],
+    "dataId": "SK_SMN_IGNT",
+    "type": "esper",
+    "names": {
+      "en": "Reaper",
+      "fr": "Faucheur",
+      "de": "Niedermähen",
+      "es": "Segador",
+      "ko": "휩쓸기",
+      "zh": "掃蕩"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 0,
+      "l": 1,
+      "s": 10,
+      "w": 2
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "knockback": {
+      "rate": 100,
+      "value": 1,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "light"
+    ]
+  },
+  "SK_SMN_BHMT": {
+    "effects": [],
+    "dataId": "SK_SMN_BHMT",
+    "type": "esper",
+    "names": {
+      "en": "Rampage",
+      "fr": "Rage",
+      "de": "Raserei",
+      "es": "Arrebato",
+      "ko": "날뛰기",
+      "zh": "橫衝直撞"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 2,
+      "l": 2,
+      "h": 0
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_SMN_MABR": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "unknow",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "BLIND_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_MABR",
+    "type": "esper",
+    "names": {
+      "en": "Smelly Breath",
+      "fr": "Haleine fétide",
+      "de": "Mundgeruch",
+      "es": "Halitosis",
+      "ko": "역한 입냄새",
+      "zh": "臭氣"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    }
+  },
+  "SK_SMN_CACT": {
+    "effects": [],
+    "dataId": "SK_SMN_CACT",
+    "type": "esper",
+    "names": {
+      "en": "1,000 Needles",
+      "fr": "1 000 épines",
+      "de": "1.000 Nadeln",
+      "es": "Mil espinas",
+      "ko": "바늘 1,000개",
+      "zh": "千針刺"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 1000,
+      "maxValue": 1000,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {},
+      "fixedDamage": true
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_SMN_ARMN": {
+    "effects": [
+      {
+        "type": "BRAVERY_FIGHT",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "rate": 30,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_ARMN",
+    "type": "esper",
+    "names": {
+      "en": "Gaze",
+      "fr": "Mauvais œil",
+      "de": "Böser Blick",
+      "es": "Mirada fija",
+      "ko": "노려보기",
+      "zh": "凝視"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": -5,
+      "maxValue": 17,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_SMN_ZUUU": {
+    "effects": [],
+    "dataId": "SK_SMN_ZUUU",
+    "type": "esper",
+    "names": {
+      "en": "Great Whirlwind",
+      "fr": "Grand tourbillon",
+      "de": "Sturmböe",
+      "es": "Gran torbellino",
+      "ko": "대선풍",
+      "zh": "大旋風"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "knockback": {
+      "rate": 100,
+      "value": 1,
+      "dir": 0
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "wind"
+    ]
+  },
+  "SK_SMN_OGRE": {
+    "effects": [],
+    "dataId": "SK_SMN_OGRE",
+    "type": "esper",
+    "names": {
+      "en": "Hurl",
+      "fr": "Projection violente",
+      "de": "Bewerfen",
+      "es": "Lanzar",
+      "ko": "내던지기",
+      "zh": "投擲"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1,
+      "line": 1
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_SMN_BOMB": {
+    "effects": [],
+    "dataId": "SK_SMN_BOMB",
+    "type": "esper",
+    "names": {
+      "en": "Self-Destruct",
+      "fr": "Auto-destruction",
+      "de": "Selbstzerstörung",
+      "es": "Kamikaze",
+      "ko": "자폭",
+      "zh": "自爆"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 3,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 200,
+      "maxValue": 230,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_SMN_SHIV": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "ICE_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_ICE",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_SHIV",
+    "type": "esper",
+    "names": {
+      "en": "Diamond Dust",
+      "fr": "Poussière de diamant",
+      "de": "Diamantstaub",
+      "es": "Polvo de diamantes",
+      "ko": "다이아몬드 더스트",
+      "zh": "鑽石星塵"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_SMN_RAMU": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "LIGHTNING_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_THUN",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_THUN02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_THUN02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_RAMU",
+    "type": "esper",
+    "names": {
+      "en": "Judgment Bolt",
+      "fr": "Foudre du jugement",
+      "de": "Ionenschlag",
+      "es": "Rayos de justicia",
+      "ko": "심판의 벼락",
+      "zh": "審判之雷"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_SMN_ODIN": {
+    "effects": [
+      {
+        "side": "TEAM",
+        "type": "CRITIC_RATE",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "dataId": "BUFF_WTH_NONE",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_ODIN",
+    "type": "esper",
+    "names": {
+      "en": "Zantetsuken",
+      "fr": "Zantetsuken",
+      "de": "Zantetsuken",
+      "es": "Sable justiciero",
+      "ko": "참철검",
+      "zh": "斬鐵劍"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_SMN_LAMA": {
+    "effects": [
+      {
+        "type": "ICE_KILLER",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "unknow",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_LAMA",
+    "type": "esper",
+    "names": {
+      "en": "Bewitching Tail",
+      "fr": "Queue ensorceleuse",
+      "de": "Verhexender Schweif",
+      "es": "Cola hechizante",
+      "ko": "매혹의 꼬리",
+      "zh": "魅惑之尾"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 10,
+      "w": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_SMN_TSLP": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "WIND_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_WIND",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "EVADE",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "dataId": "BUFF_WTH_WIND02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_TSLP",
+    "type": "esper",
+    "names": {
+      "en": "Heavenswind",
+      "fr": "Vent céleste",
+      "de": "Vierfältige Winde",
+      "es": "Viento celestial",
+      "ko": "사천의 바람",
+      "zh": "四天之風"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "wind"
+    ]
+  },
+  "SK_SMN_OCHU": {
+    "effects": [],
+    "dataId": "SK_SMN_OCHU",
+    "type": "esper",
+    "names": {
+      "en": "Focused Seed Cannon",
+      "fr": "Canon à graines",
+      "de": "Konzentrierte Samenkanone",
+      "es": "Cañon de semilla orientado",
+      "ko": "집속: 씨앗 대포",
+      "zh": "集束·種子大砲"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 3,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_SMN_THDG": {
+    "effects": [
+      {
+        "type": "BLIND_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_THDG",
+    "type": "esper",
+    "names": {
+      "en": "Unleash",
+      "fr": "Déchaînement",
+      "de": "Entfesseln",
+      "es": "Despliegue",
+      "ko": "내뿜기",
+      "zh": "釋放"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "light"
+    ]
+  },
+  "SK_SMN_WRMC": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "FIRE_RES",
+        "minValue": -30,
+        "maxValue": -30,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_FIRE03",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE04",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_WRMC",
+    "type": "esper",
+    "names": {
+      "en": "Nuke",
+      "fr": "Nucléo-attaque",
+      "de": "Nuklearangriff",
+      "es": "Ataque nuclear",
+      "ko": "핵 공격",
+      "zh": "核攻擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 4,
+      "l": 4,
+      "s": 1,
+      "line": 2
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "missile",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_SMN_DABL": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "DARK_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_DARK",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_DABL",
+    "type": "esper",
+    "names": {
+      "en": "Dark Messenger",
+      "fr": "Messager des ténèbres",
+      "de": "Dunkler Bote",
+      "es": "Emisario de la noche",
+      "ko": "어둠의 사자",
+      "zh": "來自黑暗的使者"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_SMN_CHCB_01": {
+    "effects": [],
+    "dataId": "SK_SMN_CHCB_01",
+    "type": "esper",
+    "names": {
+      "en": "Choco Meteor",
+      "fr": "Choco-météore",
+      "de": "Choco-Meteo",
+      "es": "ChocoMeteo",
+      "ko": "초코 메테오",
+      "zh": "陸行鳥隕石"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 5,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "light"
+    ]
+  },
+  "SK_SMN_MDFY": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_MDFY",
+    "type": "esper",
+    "names": {
+      "en": "Mind Blast",
+      "fr": "Psychochoc",
+      "de": "Geistesmarter",
+      "es": "Descarga mental",
+      "ko": "정신파괴",
+      "zh": "精神衝擊"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 0
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 50,
+      "maxValue": 85,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "water"
+    ]
+  },
+  "SK_SMN_FNRR": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "ICE_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_ICE",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_ICE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_FNRR",
+    "type": "esper",
+    "names": {
+      "en": "Mystic Roar",
+      "fr": "Hurlement mystique",
+      "de": "Mystisches Heulen",
+      "es": "Rugido místico",
+      "ko": "신비한 포효",
+      "zh": "神秘傳說"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_SMN_TITN": {
+    "effects": [
+      {
+        "type": "IMMOBILIZE_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "EARTH_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_SOIL",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SOIL02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SOIL02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_TITN",
+    "type": "esper",
+    "names": {
+      "en": "Gaia's Wrath",
+      "fr": "Colère de Gaïa",
+      "de": "Gaias Zorn",
+      "es": "Ira de la tierra",
+      "ko": "대지의 분노",
+      "zh": "大地之怒"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "physic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "earth"
+    ]
+  },
+  "SK_SMN_BLMN": {
+    "effects": [
+      {
+        "type": "DOOM_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 5,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_BLMN",
+    "type": "esper",
+    "names": {
+      "en": "Moon of Death's Sneer",
+      "fr": "Mépris de la lune mortelle",
+      "de": "Hohn des Todesmondes",
+      "es": "Luna mortífera burlesca",
+      "ko": "조소하는 죽음의 달",
+      "zh": "死月嘲笑"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 70,
+      "maxValue": 105,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_SMN_AGON": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_AGON",
+    "type": "esper",
+    "names": {
+      "en": "Electromagnetic Explosion",
+      "fr": "Explosion électromagnétique",
+      "de": "Elektromagnetische Explosion",
+      "es": "Explosión electromagnética",
+      "ko": "초전자 대폭발",
+      "zh": "超電磁大爆破"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
+    ]
+  },
+  "SK_SMN_CHCB_02": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 40,
+        "calcType": "percent",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 6,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 12,
+        "maxValue": 20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "POISON",
+          "BLIND",
+          "PARALYZE",
+          "CONFUSION",
+          "STUN"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_CHCB_02",
+    "type": "esper",
+    "names": {
+      "en": "Chocobo's Healing",
+      "fr": "Apaisement de chocobo",
+      "de": "Chocobo-Erholung",
+      "es": "ChocoCura",
+      "ko": "초코보의 치유",
+      "zh": "陸行鳥治癒"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_SMN_DMNW": {
+    "effects": [
+      {
+        "side": "ENNEMIES",
+        "type": "DARK_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_DARK03",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK04",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_DMNW",
+    "type": "esper",
+    "names": {
+      "en": "Landslide Crash",
+      "fr": "Collision tellurique",
+      "de": "Erdrutschkollision",
+      "es": "Choque derrumbador",
+      "ko": "토붕격돌",
+      "zh": "土崩激突"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 3,
+      "s": 10,
+      "w": 2
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_SMN_MOGL": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_MOGL",
+    "type": "esper",
+    "names": {
+      "en": "Winter Moogle Dance",
+      "fr": "Danse hivernale de Mog",
+      "de": "Mogrys Wintertanz",
+      "es": "Baile moguri invernal",
+      "ko": "한겨울맞이 모그리 댄스",
+      "zh": "冬日莫古利舞"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    }
+  },
+  "SK_SMN_TNBR": {
+    "effects": [],
+    "dataId": "SK_SMN_TNBR",
+    "type": "esper",
+    "names": {
+      "en": "Everyone's Grudge",
+      "fr": "Rancune commune",
+      "de": "Kollektivhass",
+      "es": "Rencor de la raza",
+      "ko": "모두의 원한",
+      "zh": "萬眾的怨恨"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "maths": [
+      {
+        "type": "DEAD_UNITS",
+        "formula": "FIX",
+        "condition": 5,
+        "value": 200,
+        "dst": "DAMAGE"
+      }
+    ],
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_SMN_LVAT": {
+    "effects": [
+      {
+        "type": "SLOW_ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "WATER_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_WATR03",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR04_NOT_WATER",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR04_NOT_WATER",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR04_WATER",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WATR04_WATER",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_LVAT",
+    "type": "esper",
+    "names": {
+      "en": "Tsunami",
+      "fr": "Tsunami",
+      "de": "Sturzflut",
+      "es": "Tsunami",
+      "ko": "대해일",
+      "zh": "大海嘯"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 10,
+      "w": 2
+    },
+    "based": "magic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "water"
+    ]
+  },
+  "SK_SMN_GCAL": {
+    "effects": [
+      {
+        "type": "STOP_ATK",
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 30,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_GCAL",
+    "type": "esper",
+    "names": {
+      "en": "Frozen Hurricane",
+      "fr": "Ouragan gelé",
+      "de": "Eisiger Sturmwind",
+      "es": "Huracán gélido",
+      "ko": "얼음 폭풍",
+      "zh": "冰凍颶風"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 50,
+      "maxValue": 85,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "ice"
+    ]
+  },
+  "SK_SMN_TYPN": {
+    "effects": [
+      {
+        "type": "STUN_ATK",
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 1,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "WIND_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_WIND",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WIND03_NOT_WIND",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "water",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WIND03_NOT_WIND",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "water",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WIND03_WIND",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "wind"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_WIND03_WIND",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "wind"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_TYPN",
+    "type": "esper",
+    "names": {
+      "en": "Great Storm",
+      "fr": "Tempête",
+      "de": "Gewittersturm",
+      "es": "Gran tormenta",
+      "ko": "대폭풍",
+      "zh": "狂風暴雨"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 10,
+      "w": 1
+    },
+    "based": "magic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "wind"
+    ]
+  },
+  "SK_SMN_MRLT": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": -30,
+        "maxValue": -50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_MRLT",
+    "type": "esper",
+    "names": {
+      "en": "Tri-Blaze",
+      "fr": "Flamme triple",
+      "de": "Flammende Dreifaltigkeit",
+      "es": "Llamarada triple",
+      "ko": "화염 삼연격",
+      "zh": "火焰三連"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "hit": 100,
+    "crt_hit": -15,
+    "combo": {
+      "num": 3,
+      "rate": 77
+    },
+    "damage": {
+      "minValue": 40,
+      "maxValue": 75,
+      "type": "slash",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "fire"
+    ]
+  },
+  "SK_SMN_BAHM": {
+    "effects": [
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_NONE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_NONE02",
+        "clock": 40,
+        "timing": "WEATHER"
+      }
+    ],
+    "dataId": "SK_SMN_BAHM",
+    "type": "esper",
+    "names": {
+      "en": "Megaflare",
+      "fr": "MégaBrasier",
+      "de": "Megaflamme",
+      "es": "Megafulgor",
+      "ko": "메가플레어",
+      "zh": "百萬核爆"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 2
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "combo": {
+      "num": 2,
+      "rate": 50
+    },
+    "damage": {
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_SMN_OMEG": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 67,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "DARK_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_DARK03",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK05_NOT_DARK",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "water",
+          "light"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK05_NOT_DARK",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "water",
+          "light"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK05_DARK",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_DARK05_DARK",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "dark"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_OMEG",
+    "type": "esper",
+    "names": {
+      "en": "Wave Cannon",
+      "fr": "Canon à ondes",
+      "de": "Wellenkanone",
+      "es": "Cañón de ondas",
+      "ko": "파동포",
+      "zh": "波動炮"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 0
+    },
+    "based": "magic",
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 135,
+      "maxValue": 175,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "dark"
+    ]
+  },
+  "SK_SMN_PNIX": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 50,
+        "maxValue": 60,
+        "calcType": "percent",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "REGEN_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "FIRE_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_FIRE",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "HEAL_POWER",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE05_NOT_FIRE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "light",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE05_FIRE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "HEAL_POWER",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_FIRE05_FIRE",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "fire"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_PNIX",
+    "type": "esper",
+    "names": {
+      "en": "Flames of Rebirth",
+      "fr": "Feu résurrecteur",
+      "de": "Flammen der Wiedergeburt",
+      "es": "Llamas del renacer",
+      "ko": "윤회의 불꽃",
+      "zh": "轉生之炎"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_SMN_CORL": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 30,
+        "turn": 3,
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SMN_CORL",
+    "type": "esper",
+    "names": {
+      "en": "Blaster",
+      "fr": "Rayons",
+      "de": "Blaster",
+      "es": "Electroplasma",
+      "ko": "블래스터",
+      "zh": "衝擊波"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "hit": 100,
+    "crt_hit": -15,
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "lightning"
     ]
   },
   "SK_LB_LW_TU_MONT": {
@@ -18099,40 +24485,6 @@
     "target": "self",
     "maxLevel": 1
   },
-  "SK_MA_LW_SRJS": {
-    "effects": [
-      {
-        "type": "AGI",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "LUCK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_SRJS",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_HUN_M_2": {
     "effects": [
       {
@@ -18276,63 +24628,6 @@
         "type": 0
       }
     }
-  },
-  "SK_MA_LW_UNII": {
-    "effects": [
-      {
-        "type": "HP",
-        "minValue": 30,
-        "maxValue": 30,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "SLASH_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "PIERCE_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "STRIKE_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MISSILE_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_UNII",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_BLM_WATR_M_5": {
     "effects": [],
@@ -18568,62 +24863,6 @@
     "elem": [
       "neutral"
     ]
-  },
-  "SK_MA_LW_SEVR": {
-    "effects": [
-      {
-        "type": "SLASH_RES",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "PIERCE_RES",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "STRIKE_RES",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MISSILE_RES",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MAGIC_RES",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_SEVR",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_KNT_M_2": {
     "effects": [
@@ -19299,38 +25538,6 @@
       "h": 0
     }
   },
-  "SK_MA_LW_ZIZA": {
-    "effects": [
-      {
-        "type": "EVADE",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "STRIKE_ATK",
-        "minValue": 5,
-        "maxValue": 5,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_ZIZA",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_MNK_S_2_INIT": {
     "effects": [
       {
@@ -19402,38 +25609,6 @@
         "type": 1
       }
     }
-  },
-  "SK_MA_LW_VSTR": {
-    "effects": [
-      {
-        "type": "MAGIC_RES",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "EVADE",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_VSTR",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_THI_S_3": {
     "effects": [
@@ -20747,38 +26922,6 @@
     "target": "self",
     "maxLevel": 20
   },
-  "SK_MA_LW_VKTR": {
-    "effects": [
-      {
-        "type": "PIERCE_ATK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "NON_ATTACK_ACTIVATION_TIME",
-        "minValue": -200,
-        "maxValue": -200,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_VKTR",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_BTL_HATE_1-100_U_PA": {
     "effects": [
       {
@@ -20801,38 +26944,6 @@
     },
     "target": "self",
     "maxLevel": 100
-  },
-  "SK_MA_LW_STRN_01": {
-    "effects": [
-      {
-        "type": "DEFENSE_PENETRATION",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "SLASH_ATK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_STRN_01",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_STRN_P_1": {
     "effects": [
@@ -30555,41 +36666,6 @@
     },
     "target": "self",
     "maxLevel": 20
-  },
-  "SK_MA_LW_P_LUCA": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "percent",
-        "rate": 200,
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "EARTH_KILLER",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_P_LUCA",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_GMK_ATK_CANN_1": {
     "effects": [],
@@ -41670,39 +47746,6 @@
       }
     }
   },
-  "SK_MA_LW_VNLA": {
-    "effects": [
-      {
-        "type": "EVADE",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "ATK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_VNLA",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_ASS_M_4": {
     "effects": [
       {
@@ -42204,30 +48247,6 @@
     },
     "target": "self",
     "maxLevel": 20
-  },
-  "SK_MA_LW_RAIN": {
-    "effects": [
-      {
-        "type": "SPR",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_RAIN",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_BTL_RES_FIRE_1_80_D_KISO": {
     "effects": [
@@ -44177,39 +50196,6 @@
       }
     }
   },
-  "SK_MA_LW_HWLT": {
-    "effects": [
-      {
-        "type": "SPIRIT_PENETRATION",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MAG",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_HWLT",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_ACC_LW_MONT_ARENA": {
     "effects": [
       {
@@ -44366,71 +50352,6 @@
         "type": 0
       }
     }
-  },
-  "SK_MA_LW_LRNZ": {
-    "effects": [
-      {
-        "type": "HP",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "DEF",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_LRNZ",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
-  "SK_MA_LW_DRIO": {
-    "effects": [
-      {
-        "type": "DEF",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "SPR",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_DRIO",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_MGK_WIND_S_1_INIT": {
     "effects": [
@@ -44695,46 +50616,6 @@
       }
     }
   },
-  "SK_MA_LW_TITU": {
-    "effects": [
-      {
-        "type": "PIERCE_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MISSILE_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "AP_CONSUMPTION",
-        "minValue": 25,
-        "maxValue": 25,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_TITU",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_VIK_S_1": {
     "effects": [
       {
@@ -44945,39 +50826,6 @@
     "maxLevel": 20,
     "based": "physic"
   },
-  "SK_MA_LW_GRSR": {
-    "effects": [
-      {
-        "type": "ATK",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "SLASH_RES",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "resistance",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_GRSR",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_GRSR_P_1": {
     "effects": [
       {
@@ -45153,40 +51001,6 @@
     "target": "self",
     "maxLevel": 100
   },
-  "SK_MA_LW_MIIA": {
-    "effects": [
-      {
-        "type": "ACQUIRED_AP",
-        "minValue": 100,
-        "maxValue": 100,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "FAIRY_KILLER",
-        "minValue": 50,
-        "maxValue": 50,
-        "calcType": "fixe",
-        "rate": 200,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_MIIA",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
-  },
   "SK_LW_MGK_M_1_TW": {
     "effects": [
       {
@@ -45258,39 +51072,6 @@
     },
     "target": "self",
     "maxLevel": 100
-  },
-  "SK_MA_LW_RVAL": {
-    "effects": [
-      {
-        "type": "HEAL_POWER",
-        "minValue": 30,
-        "maxValue": 30,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      },
-      {
-        "type": "MAG",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "percent",
-        "increaseMax": true,
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_MA_LW_RVAL",
-    "type": "master",
-    "names": {
-      "en": "Master Ability",
-      "fr": "Aptitude maître",
-      "de": "Meisterfähigkeit",
-      "es": "Habilidad maestra",
-      "ko": "마스터 어빌리티",
-      "zh": "專精能力"
-    },
-    "target": "self",
-    "maxLevel": 1
   },
   "SK_LW_BLM_SOIL_M_5": {
     "effects": [],

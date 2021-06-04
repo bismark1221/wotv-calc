@@ -558,38 +558,7 @@
     "limit": "SK_LB_LW_MACR",
     "attack": "SK_LW_CLR_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "TP",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "AGI",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_MACR",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_MACR"
     ]
   },
   "UN_LW_TU_ZUUU": {
@@ -1027,37 +996,7 @@
     "slug": "schuzelt-1",
     "attack": "SK_LW_SWN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "DEX",
-            "minValue": 15,
-            "maxValue": 15,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "CRITIC_RATE",
-            "minValue": 35,
-            "maxValue": 35,
-            "calcType": "fixe",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_SZRT",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_SZRT"
     ]
   },
   "UN_LW_E_CACT_01": {
@@ -48282,36 +48221,7 @@
     "limit": "SK_LB_LW_MONT",
     "attack": "SK_LW_WAR_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "DEF",
-            "minValue": 15,
-            "maxValue": 15,
-            "calcType": "fixe",
-            "target": "self"
-          },
-          {
-            "type": "JUMP",
-            "minValue": 1,
-            "maxValue": 1,
-            "calcType": "fixe",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_MONT",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_MONT"
     ]
   },
   "UN_LW_BGN_RAMD": {
@@ -48428,37 +48338,7 @@
     "slug": "ramada-1",
     "attack": "SK_LW_LAN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "TP",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "PIERCE_ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "fixe",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_RAMD",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_RAMD"
     ]
   },
   "UN_LW_BGN_TH_00_WAR": {
@@ -48687,29 +48567,7 @@
     "limit": "SK_LB_LW_STRN",
     "attack": "SK_LW_SWN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "CRITIC_DAMAGE",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "fixe",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_STRN",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_STRN"
     ]
   },
   "UN_LW_BGN_LILS": {
@@ -48826,30 +48684,7 @@
     "slug": "lilyth-1",
     "attack": "SK_LW_KNT_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_LILS",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_LILS"
     ]
   },
   "UN_LW_BGN_BYLO": {
@@ -48966,38 +48801,7 @@
     "slug": "baelo-1",
     "attack": "SK_LW_KNT_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "AGI",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "LUCK",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_BYLO",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_BYLO"
     ]
   },
   "UN_LW_BGN_TH_00_KNT": {
@@ -49448,30 +49252,7 @@
     "limit": "SK_LB_LW_MDNA",
     "attack": "SK_LW_BLM_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "MAG",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_MDNA",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_MDNA"
     ]
   },
   "UN_LW_BGN_MICE": {
@@ -49588,38 +49369,7 @@
     "slug": "miche-1",
     "attack": "SK_LW_BLM_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "NON_ATTACK_ACTIVATION_TIME",
-            "minValue": -750,
-            "maxValue": -750,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          },
-          {
-            "type": "PLANT_KILLER",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_MICE",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_MICE"
     ]
   },
   "UN_LW_BGN_SEVR": {
@@ -49736,57 +49486,7 @@
     "slug": "severo-1",
     "attack": "SK_LW_BLM_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "SLASH_RES",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "resistance",
-            "target": "self"
-          },
-          {
-            "type": "PIERCE_RES",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "resistance",
-            "target": "self"
-          },
-          {
-            "type": "STRIKE_RES",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "resistance",
-            "target": "self"
-          },
-          {
-            "type": "MISSILE_RES",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "resistance",
-            "target": "self"
-          },
-          {
-            "type": "MAGIC_RES",
-            "minValue": 25,
-            "maxValue": 25,
-            "calcType": "resistance",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_SEVR",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_SEVR"
     ]
   },
   "UN_LW_BGN_TH_00_MNK": {
@@ -50015,37 +49715,7 @@
     "limit": "SK_LB_LW_AILN",
     "attack": "SK_LW_LAN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "PIERCE_ATK",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "fixe",
-            "target": "self"
-          },
-          {
-            "type": "TP",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_AILN",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_AILN"
     ]
   },
   "UN_LW_BGN_MACR": {
@@ -50387,38 +50057,7 @@
     "slug": "learte-1",
     "attack": "SK_LW_HUN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "ACCURACY",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          },
-          {
-            "type": "AQUATIC_KILLER",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_RART",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_RART"
     ]
   },
   "UN_LW_BGN_KTON": {
@@ -50757,37 +50396,7 @@
     "limit": "SK_LB_LW_AYKA",
     "attack": "SK_LW_WHM_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "STOP_RES",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "resistance",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_AYKA",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_AYKA"
     ]
   },
   "UN_GM_CRYSTAL": {
@@ -50926,38 +50535,7 @@
     "limit": "SK_LB_LW_ELDE",
     "attack": "SK_LW_LAN_ATK_100",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "HP",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "ATK",
-            "minValue": 20,
-            "maxValue": 20,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_ELDE",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_ELDE"
     ]
   },
   "UN_LW_E_BHMT_01_WAVE": {
@@ -54955,38 +54533,7 @@
     "slug": "learte-1",
     "attack": "SK_LW_HUN_ATK",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "ACCURACY",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          },
-          {
-            "type": "AQUATIC_KILLER",
-            "minValue": 50,
-            "maxValue": 50,
-            "calcType": "fixe",
-            "rate": 200,
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_RART",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_RART"
     ]
   },
   "UN_LW_E_SO_00_SAM": {
@@ -56638,37 +56185,7 @@
     "slug": "seymore-1",
     "attack": "SK_LW_SAM_ATK",
     "masterSkill": [
-      {
-        "names": {
-          "en": "Master Ability",
-          "fr": "Aptitude maître",
-          "de": "Meisterfähigkeit",
-          "es": "Habilidad maestra",
-          "ko": "마스터 어빌리티",
-          "zh": "專精能力"
-        },
-        "effects": [
-          {
-            "type": "ATK",
-            "minValue": 10,
-            "maxValue": 10,
-            "calcType": "percent",
-            "increaseMax": true,
-            "target": "self"
-          },
-          {
-            "type": "ACCURACY",
-            "minValue": 30,
-            "maxValue": 30,
-            "calcType": "fixe",
-            "target": "self"
-          }
-        ],
-        "dataId": "SK_MA_LW_SIMR",
-        "type": "masterSkill",
-        "target": "self",
-        "maxLevel": 1
-      }
+      "SK_MA_LW_SIMR"
     ]
   },
   "UN_LW_E_ZZAN_TO": {

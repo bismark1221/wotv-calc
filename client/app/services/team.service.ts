@@ -334,7 +334,7 @@ export class TeamService {
   }
 
   addMasterAbility(unitPos, friendPos) {
-    const masterSkill = this.team.units[friendPos].masterSkill[this.team.units[friendPos].masterSkill.length - 1];
+    const masterSkill = this.team.units[friendPos].formattedMasterSkill[this.team.units[friendPos].masterSkill.length - 1];
     const effects = [];
 
     masterSkill.effects.forEach(effect => {

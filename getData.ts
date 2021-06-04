@@ -1068,7 +1068,7 @@ export class JsonService {
     'counter',
     'esper',
     'limit',
-    'master',
+    'masterSkill',
     'party',
     'ex_buff'
   ];
@@ -4632,26 +4632,14 @@ export class JsonService {
         unit.masterSkill = [];
 
         skillId.forEach(id => {
-          const masterSkill = {
-            names: {},
-            effects: [],
-            dataId: id,
-            type: 'masterSkill'
-          };
-          this.updateSkill(unit, masterSkill, id);
+          this.addSkill(id, unit);
 
-          unit.masterSkill.push(masterSkill);
+          unit.masterSkill.push(id);
         });
       } else {
-        const masterSkill = {
-          names: {},
-          effects: [],
-          dataId: skillId,
-          type: 'masterSkill'
-        };
-        this.updateSkill(unit, masterSkill, skillId);
+        this.addSkill(skillId, unit);
 
-        unit.masterSkill =  [masterSkill];
+        unit.masterSkill =  [skillId];
       }
     }
   }

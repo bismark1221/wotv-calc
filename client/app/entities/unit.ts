@@ -83,7 +83,7 @@ export class Unit {
 
   limit = '';
   tmr = null;
-  masterSkill = new Skill();
+  masterSkill = '';
   totalBuffs = {
     HP: 0,
     TP: 0,
@@ -137,6 +137,7 @@ export class Unit {
   percentStats = {};
   formattedLimit;
   formattedAttack;
+  formattedMasterSkill = [];
 
   // Only for quests/enemies
   species = '';
@@ -597,7 +598,7 @@ export class Unit {
 
   private calculateMasterSkillStats() {
     if (this.masterSkillActivated >= 0) {
-      const masterSkill = this.masterSkill[this.masterSkillActivated];
+      const masterSkill = this.formattedMasterSkill[this.masterSkillActivated];
       masterSkill.effects.forEach(effect => {
         if (effect.calcType === 'percent' || effect.calcType === 'fixe' || effect.calcType === 'resistance') {
           let calc = 'fixe';
