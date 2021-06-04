@@ -39,7 +39,8 @@ export class SimulatorService {
     'fairy',
     'undead',
     'stone',
-    'metal'
+    'metal',
+    'arcana'
   ];
 
   constructor(
@@ -596,7 +597,7 @@ export class SimulatorService {
     // console.log(damage);
 
     if (dataSimulator.unit.selectedSkill.based === 'magic') {
-      damage = Math.floor(damage * (0.5 + ((dataSimulator.unit.faith + dataSimulator.realStats.target.faith) / 100)));
+      damage = Math.floor(damage * ((dataSimulator.unit.faith + dataSimulator.realStats.target.faith) / 100));
     } else if (dataSimulator.unit.selectedSkill.based === 'physic') {
       damage = Math.floor(damage * (0.5 + (dataSimulator.unit.brave / 100)));
     } else if (dataSimulator.unit.selectedSkill.based === 'hybrid') {

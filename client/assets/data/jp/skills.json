@@ -8225,7 +8225,7 @@
   "SK_LW_SAM_M_4": {
     "effects": [
       {
-        "type": "MACHINA_KILLER",
+        "type": "MACHINE_KILLER",
         "minValue": 25,
         "maxValue": 25,
         "calcType": "unknow",
@@ -10979,7 +10979,7 @@
   "SK_LW_WHM_M_6": {
     "effects": [
       {
-        "type": "REAPER_KILLER",
+        "type": "UNDEAD_KILLER",
         "minValue": 25,
         "maxValue": 25,
         "calcType": "unknow",
@@ -32205,6 +32205,57 @@
       "maxValue": 320
     }
   },
+  "SK_LW_BEA_S_4": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_BEA_S_4",
+    "type": "skill",
+    "names": {
+      "en": "心砕き"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 18
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "physic",
+    "maths": [
+      {
+        "type": "COUNT_DAMAGE_RECEIVED",
+        "formula": "COUNT",
+        "condition": 5,
+        "value": -40,
+        "dst": "EFFECT"
+      }
+    ],
+    "damage": {
+      "minValue": 40,
+      "maxValue": 70,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "type": 1
+      }
+    }
+  },
   "SK_GMK_ATK_CANN_1": {
     "effects": [],
     "dataId": "SK_GMK_ATK_CANN_1",
@@ -45945,7 +45996,7 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "type": "ESPER_KILLER",
+        "type": "NETHERBEAST_KILLER",
         "minValue": 10,
         "maxValue": 30,
         "calcType": "fixe",

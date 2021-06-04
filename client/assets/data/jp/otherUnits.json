@@ -37230,16 +37230,16 @@
     "slug": "girudo-hei",
     "attack": "SK_LW_PSI_ATK"
   },
-  "UN_LW_E_RARD": {
-    "dataId": "UN_LW_E_RARD",
+  "UN_LW_E_LMIG": {
+    "dataId": "UN_LW_E_LMIG",
     "names": {
-      "en": "ラルドー - Rhaldor"
+      "en": "ラメイガ"
     },
     "rarity": "UR",
     "jobs": [
-      "JB_LW_BEA_FIRE",
-      "JB_LW_PLD_FIRE",
-      "JB_LW_THI_FIRE"
+      "JB_LW_BEA",
+      "JB_LW_PLD_DARK",
+      "JB_LW_THI_DARK"
     ],
     "exJobs": [],
     "stats": {
@@ -37289,18 +37289,15 @@
       "CRITIC_AVOID": {},
       "EVADE": {},
       "FIRE_RES": {},
-      "ICE_RES": {
-        "min": 20,
-        "max": 20
-      },
+      "ICE_RES": {},
       "EARTH_RES": {},
       "WIND_RES": {},
       "LIGHTNING_RES": {},
-      "WATER_RES": {
+      "WATER_RES": {},
+      "LIGHT_RES": {
         "min": -10,
         "max": -10
       },
-      "LIGHT_RES": {},
       "DARK_RES": {},
       "SLASH_RES": {
         "min": 5,
@@ -37360,43 +37357,43 @@
       },
       "MAX_LV": {}
     },
-    "element": "fire",
-    "image": "lapsrard",
+    "element": "dark",
+    "image": "lapslmig",
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "rhaldor-1",
+    "slug": "rame-iga",
     "attack": "SK_LW_BEA_ATK"
   },
-  "UN_LW_E_MDNA": {
-    "dataId": "UN_LW_E_MDNA",
+  "UN_LW_E_LMID": {
+    "dataId": "UN_LW_E_LMID",
     "names": {
-      "en": "メディエナ - Mediena"
+      "en": "ルメイド"
     },
-    "rarity": "UR",
+    "rarity": "MR",
     "jobs": [
       "JB_LW_BLM_ICE",
-      "JB_LW_GRM_ICE",
-      "JB_LW_NIN_ICE"
+      "JB_LW_MST_ICE",
+      "JB_LW_TIM_ICE"
     ],
     "exJobs": [],
     "stats": {
       "HP": {
-        "min": 232,
-        "max": 744
+        "min": 272,
+        "max": 910
       },
       "TP": {
         "min": 63,
         "max": 99
       },
       "AP": {
-        "min": 75,
-        "max": 93
+        "min": 77,
+        "max": 94
       },
       "ATK": {
-        "min": 34,
-        "max": 57
+        "min": 33,
+        "max": 56
       },
       "DEF": {
         "min": 0,
@@ -37407,20 +37404,20 @@
         "max": 0
       },
       "MAG": {
-        "min": 90,
-        "max": 152
+        "min": 81,
+        "max": 136
       },
       "DEX": {
-        "min": 65,
-        "max": 97
+        "min": 71,
+        "max": 106
       },
       "AGI": {
-        "min": 30,
-        "max": 35
+        "min": 32,
+        "max": 37
       },
       "LUCK": {
-        "min": 65,
-        "max": 91
+        "min": 64,
+        "max": 90
       },
       "INITIAL_AP": {},
       "ACCURACY": {},
@@ -37428,57 +37425,57 @@
       "CRITIC_AVOID": {},
       "EVADE": {},
       "FIRE_RES": {
-        "min": -10,
-        "max": -10
+        "min": -15,
+        "max": -15
       },
       "ICE_RES": {},
       "EARTH_RES": {},
       "WIND_RES": {
-        "min": 20,
-        "max": 20
+        "min": 15,
+        "max": 15
       },
       "LIGHTNING_RES": {},
       "WATER_RES": {},
       "LIGHT_RES": {},
       "DARK_RES": {},
       "SLASH_RES": {
-        "min": -20,
-        "max": -20
+        "min": -5,
+        "max": -5
       },
       "PIERCE_RES": {
-        "min": -20,
-        "max": -20
+        "min": -5,
+        "max": -5
       },
       "STRIKE_RES": {
-        "min": -20,
-        "max": -20
+        "min": -15,
+        "max": -15
       },
       "MISSILE_RES": {
-        "min": -20,
-        "max": -20
+        "min": -10,
+        "max": -10
       },
       "MAGIC_RES": {
-        "min": 25,
-        "max": 25
+        "min": 20,
+        "max": 20
       },
       "POISON_RES": {},
       "BLIND_RES": {},
       "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
+      "SILENCE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PARALYZE_RES": {
+        "min": 50,
+        "max": 50
+      },
       "CONFUSION_RES": {
         "min": 50,
         "max": 50
       },
       "PETRIFY_RES": {},
-      "TOAD_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "CHARM_RES": {
-        "min": 15,
-        "max": 15
-      },
+      "TOAD_RES": {},
+      "CHARM_RES": {},
       "SLOW_RES": {},
       "STOP_RES": {},
       "IMMOBILIZE_RES": {},
@@ -37500,12 +37497,12 @@
       "MAX_LV": {}
     },
     "element": "ice",
-    "image": "lapsmdna",
+    "image": "lapslmid",
     "species": "human",
     "size": 0,
     "realMaxLevel": 99,
     "type": "enemy",
-    "slug": "mediena-1",
+    "slug": "rumeido",
     "attack": "SK_LW_BLM_ATK"
   },
   "UN_LW_E_ZKAL": {
@@ -38256,6 +38253,145 @@
     "type": "enemy",
     "slug": "galzahk",
     "attack": "SK_LW_WHM_ATK"
+  },
+  "UN_LW_E_RARD": {
+    "dataId": "UN_LW_E_RARD",
+    "names": {
+      "en": "ラルドー - Rhaldor"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_BEA_FIRE",
+      "JB_LW_PLD_FIRE",
+      "JB_LW_THI_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 294,
+        "max": 1233
+      },
+      "TP": {
+        "min": 57,
+        "max": 90
+      },
+      "AP": {
+        "min": 79,
+        "max": 96
+      },
+      "ATK": {
+        "min": 92,
+        "max": 155
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 30,
+        "max": 50
+      },
+      "DEX": {
+        "min": 71,
+        "max": 106
+      },
+      "AGI": {
+        "min": 30,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 65,
+        "max": 92
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "PIERCE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "STRIKE_RES": {
+        "min": 0,
+        "max": 0
+      },
+      "MISSILE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "fire",
+    "image": "lapsrard",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "ally",
+    "slug": "rhaldor-1",
+    "attack": "SK_LW_BEA_ATK"
   },
   "UN_LW_E_NIVL": {
     "dataId": "UN_LW_E_NIVL",
@@ -39849,6 +39985,145 @@
     "type": "enemy",
     "slug": "chocolate-flan",
     "attack": "SK_CSLI_ATK"
+  },
+  "UN_LW_E_MDNA": {
+    "dataId": "UN_LW_E_MDNA",
+    "names": {
+      "en": "メディエナ - Mediena"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_BLM_ICE",
+      "JB_LW_GRM_ICE",
+      "JB_LW_NIN_ICE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 232,
+        "max": 744
+      },
+      "TP": {
+        "min": 63,
+        "max": 99
+      },
+      "AP": {
+        "min": 75,
+        "max": 93
+      },
+      "ATK": {
+        "min": 34,
+        "max": 57
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 90,
+        "max": 152
+      },
+      "DEX": {
+        "min": 65,
+        "max": 97
+      },
+      "AGI": {
+        "min": 30,
+        "max": 35
+      },
+      "LUCK": {
+        "min": 65,
+        "max": 91
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "PIERCE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "STRIKE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "MISSILE_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "MAGIC_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "CHARM_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "ice",
+    "image": "lapsmdna",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "mediena-1",
+    "attack": "SK_LW_BLM_ATK"
   },
   "UN_LW_E_FDRC": {
     "dataId": "UN_LW_E_FDRC",

@@ -8499,7 +8499,7 @@
   "SK_LW_SAM_M_4": {
     "effects": [
       {
-        "type": "MACHINA_KILLER",
+        "type": "MACHINE_KILLER",
         "minValue": 25,
         "maxValue": 25,
         "calcType": "unknow",
@@ -11645,7 +11645,7 @@
   "SK_LW_WHM_M_6": {
     "effects": [
       {
-        "type": "REAPER_KILLER",
+        "type": "UNDEAD_KILLER",
         "minValue": 25,
         "maxValue": 25,
         "calcType": "unknow",
@@ -45604,7 +45604,7 @@
         "timing": "SKILL_AFTER"
       },
       {
-        "type": "ESPER_KILLER",
+        "type": "NETHERBEAST_KILLER",
         "minValue": 10,
         "maxValue": 30,
         "calcType": "fixe",
