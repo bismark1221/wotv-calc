@@ -104,10 +104,12 @@
           <th colspan="10">Stats</th>
         </tr>
         <tr>
-          <th class="sub" *ngFor="let type of card.statsType">{{ type }}</th>
+          <th class="sub" *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
+            {{ type }}
+          </th>
         </tr>
         <tr>
-          <td *ngFor="let type of card.statsType">
+          <td *ngFor="let type of card.statsType" [ngClass]="{'hideStat': card.stats[type].total == 0}">
             {{ card.stats[type].total }}
           </td>
         </tr>

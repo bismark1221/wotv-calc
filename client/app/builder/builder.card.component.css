@@ -312,3 +312,7 @@
   display: inline-block;
   width: 60px;
 }
+
+.hideStat {
+  display: none;
+}

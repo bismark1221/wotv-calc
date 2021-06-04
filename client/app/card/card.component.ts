@@ -54,40 +54,48 @@ export class CardComponent implements OnInit {
 
   private async formatCard() {
     if (this.card) {
-      const lang = this.translateService.currentLang;
       const skills = ['classic', 'awake', 'lvmax'];
       const buffTypes = ['unitBuffs', 'partyBuffs'];
 
       this.card.name = this.nameService.getName(this.card);
       this.card.limited = this.cardService.isLimited(this.card.dataId);
 
-      skills.forEach(skillType => {
-        buffTypes.forEach(buffType => {
-          this.card[buffType].forEach(buff => {
-            if (buff[skillType]) {
-              if (buff[skillType].type !== 'buff' && buff[skillType].type !== 'support' && buff[skillType].type !== 'party') {
-                buff[skillType].name = this.nameService.getName(buff[skillType]);
+      for (const buffType of buffTypes) {
+        this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)] = [];
+        for (const buffIds of this.card[buffType]) {
+          const buffs = {};
+          for (const skillType of skills) {
+            if (buffIds[skillType]) {
+              const buff = await this.skillService.getSkill(buffIds[skillType]);
+              if (buff) {
+                if (buff.type !== 'buff' && buff.type !== 'support' && buff.type !== 'party') {
+                  buff.name = this.nameService.getName(buff);
 
-                buff[skillType].effectsHtml = this.skillService.formatEffects(this.card, buff[skillType]);
+                  buff.effectsHtml = this.skillService.formatEffects(this.card, buff);
 
-                buff[skillType].damageHtml = this.skillService.formatDamage(this.card, buff[skillType], buff[skillType].damage);
+                  buff.damageHtml = this.skillService.formatDamage(this.card, buff, buff.damage);
 
-                if (buff[skillType].counter) {
-                  buff[skillType].counterHtml = this.skillService.formatCounter(this.card, buff[skillType], buff[skillType].counter);
+                  if (buff.counter) {
+                    buff.counterHtml = this.skillService.formatCounter(this.card, buff, buff.counter);
+                  }
+
+                  this.rangeService.formatRange(this.card, buff);
+                } else {
+                  buff.effects.forEach(effect => {
+                    effect.formatHtml = this.skillService.formatEffect(this.card, buff, effect, false);
+                  });
                 }
 
-                this.rangeService.formatRange(this.card, buff[skillType]);
-              } else {
-                buff[skillType].effects.forEach(effect => {
-                  effect.formatHtml = this.skillService.formatEffect(this.card, buff[skillType], effect, false);
-                });
+                buffs[skillType] = buff;
               }
             }
-          });
-        });
-      });
+          }
+          this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].push(buffs);
+        }
+      }
 
       for (const buffType of buffTypes) {
+        let i = 0;
         for (const buff of this.card[buffType]) {
           if (buff.cond) {
             for (const cond of buff.cond) {
@@ -111,7 +119,9 @@ export class CardComponent implements OnInit {
                 }
               }
             }
+            this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][i].cond = buff.cond;
           }
+          i++;
         }
       }
     }

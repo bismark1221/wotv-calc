@@ -2180,15 +2180,15 @@ export class JsonService {
   ];
 
   async getLastAssets() {
-    await this.getItemAssets();
-    await this.getCardAssets();
-    await this.getEquipmentAssets();
-    await this.getJobAssets();
-    await this.getUnitAssets();
-    await this.getTitleAssets();
-    this.getGrids();
-    this.getMaps();
-    this.getLocales();
+    // await this.getItemAssets();
+    // await this.getCardAssets();
+    // await this.getEquipmentAssets();
+    // await this.getJobAssets();
+    // await this.getUnitAssets();
+    // await this.getTitleAssets();
+    // this.getGrids();
+    // this.getMaps();
+    // this.getLocales();
   }
 
   async getItemAssets() {
@@ -3764,11 +3764,23 @@ export class JsonService {
       visionCard.partyBuffs = [];
       rawVisionCard.card_buffs.forEach(dataBuff => {
         const buff = {
-          classic: dataBuff.card_skill ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.card_skill}) : null,
-          awake: dataBuff.add_card_skill_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_awake}) : null,
-          lvmax: dataBuff.add_card_skill_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_card_skill_buff_lvmax}) : null,
+          classic: dataBuff.card_skill,
+          awake: dataBuff.add_card_skill_buff_awake,
+          lvmax: dataBuff.add_card_skill_buff_lvmax,
           cond : dataBuff.cnds_iname ? this.addCardCond(dataBuff.cnds_iname) : []
         };
+
+        if (dataBuff.card_skill) {
+          this.addSkill(dataBuff.card_skill, visionCard);
+        }
+
+        if (dataBuff.add_card_skill_buff_awake) {
+          this.addSkill(dataBuff.add_card_skill_buff_awake, visionCard);
+        }
+
+        if (dataBuff.add_card_skill_buff_lvmax) {
+          this.addSkill(dataBuff.add_card_skill_buff_lvmax, visionCard);
+        }
 
         visionCard.partyBuffs.push(buff);
       });
@@ -3778,11 +3790,23 @@ export class JsonService {
       visionCard.unitBuffs = [];
       rawVisionCard.self_buffs.forEach(dataBuff => {
         const buff = {
-          classic: dataBuff.self_buff ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.self_buff}) : null,
-          awake: dataBuff.add_self_buff_awake ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_awake}) : null,
-          lvmax: dataBuff.add_self_buff_lvmax ? this.OLDaddSkill(visionCard, {slot: 0, value: dataBuff.add_self_buff_lvmax}) : null,
+          classic: dataBuff.self_buff,
+          awake: dataBuff.add_self_buff_awake,
+          lvmax: dataBuff.add_self_buff_lvmax,
           cond : dataBuff.buff_cond ? this.addCardCond(dataBuff.buff_cond) : []
         };
+
+        if (dataBuff.self_buff) {
+          this.addSkill(dataBuff.self_buff, visionCard);
+        }
+
+        if (dataBuff.add_self_buff_awake) {
+          this.addSkill(dataBuff.add_self_buff_awake, visionCard);
+        }
+
+        if (dataBuff.add_self_buff_lvmax) {
+          this.addSkill(dataBuff.add_self_buff_lvmax, visionCard);
+        }
 
         visionCard.unitBuffs.push(buff);
       });
@@ -5632,28 +5656,28 @@ export class JsonService {
 
       if (map.enemy) {
         for (const enemy of map.enemy) {
-          this.checkIfTileExist(quest, enemy);
+          //this.checkIfTileExist(quest, enemy);
 
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
-            quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
+            //quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
             await this.addOtherUnit(enemy, false, 'ally');
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
-              quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
+              //quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'chest');
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
-              quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
+              //quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'switch');
             } else if (enemy.iname.split('_')[1] === 'GM') {
-              quest.grid[enemy.x][enemy.y].object = quest.objects.length;
+              //quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'object');
             } else {
               if (!enemy.hasBody) {
-                quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
+                //quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               }
               quest.enemies.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, false, 'enemy');
@@ -5665,14 +5689,14 @@ export class JsonService {
       if (map.arena) {
         map.arena.forEach((arena, arenaIndex) => {
           this.checkIfTileExist(quest, arena);
-          quest.grid[arena.x][arena.y].enemy = arenaIndex;
+          //quest.grid[arena.x][arena.y].enemy = arenaIndex;
         });
       }
 
       if (map.party) {
         map.party.forEach((party, partyIndex) => {
           this.checkIfTileExist(quest, party);
-          quest.grid[party.x][party.y].party = partyIndex;
+          //quest.grid[party.x][party.y].party = partyIndex;
         });
       }
 

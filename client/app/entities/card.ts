@@ -32,6 +32,8 @@ export class Card {
   tableLevels;
   statsType;
   skills;
+  formattedUnitBuffs;
+  formattedPartyBuffs;
 
 
   constructFromJson(card: Card, translateService: TranslateService): void {
@@ -137,7 +139,7 @@ export class Card {
 
     this.skills = [];
 
-    this.unitBuffs.forEach(buff => {
+    this.formattedUnitBuffs.forEach(buff => {
       if (buff.classic.type === 'support') {
         buff.classic.effects.forEach(effect => {
           if (!buffs.self[effect.type]) {
@@ -196,7 +198,7 @@ export class Card {
       }
     });
 
-    this.partyBuffs.forEach(buff => {
+    this.formattedPartyBuffs.forEach(buff => {
       buff.classic.effects.forEach(effect => {
         if (!buffs.party[effect.type]) {
           buffs.party[effect.type] = [];

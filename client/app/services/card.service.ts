@@ -120,7 +120,7 @@ export class CardService {
 
   async getCardsForListing(filters = null, sort = 'rarity', order = 'asc') {
     await this.getCards();
-    const cards = this.filterCards(this[this.navService.getVersion() + '_cards'], filters);
+    const cards = await this.filterCards(this[this.navService.getVersion() + '_cards'], filters);
 
     switch (sort) {
       case 'rarity' :
@@ -153,11 +153,11 @@ export class CardService {
     return costs.sort((a, b) => b - a);
   }
 
-  filterCards(cards, filters) {
+  async filterCards(cards, filters) {
     if (filters) {
       const filteredCards = [];
 
-      cards.forEach(card => {
+      for (const card of cards) {
         if ((filters.rarity.length === 0 || filters.rarity.indexOf(card.rarity) !== -1)
           && (filters.cost.length === 0 || filters.cost.indexOf(card.cost) !== -1)
           && (!filters.limited || filters.limited.length === 0 || filters.limited.indexOf(this.isLimited(card.dataId)) !== -1)
@@ -167,24 +167,25 @@ export class CardService {
             needToAddCard = true;
           } else {
             if (filters.element && filters.element.length > 0) {
-              card.partyBuffs.forEach(buff => {
-                if (buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
+              for (const buff of card.partyBuffs) {
+                if (buff && buff.cond && buff.cond.length > 0 && buff.cond[0].type === 'elem') {
                   filters.element.forEach(elem => {
                     if (buff.cond[0].items.indexOf(elem) !== -1) {
                       needToAddCard = true;
                     }
                   });
                 }
-              });
+              }
             }
 
             if (filters.onlyActiveSkill && (!filters.element || filters.element.length === 0 || needToAddCard)) {
               needToAddCard = false;
-              card.unitBuffs.forEach(buff => {
-                if (buff.classic && buff.classic.type === 'skill') {
+              for (const buffId of card.unitBuffs) {
+                const buff = await this.skillService.getSkill(buffId.classic);
+                if (buff && buff.type === 'skill') {
                   needToAddCard = true;
                 }
-              });
+              }
             }
           }
 
@@ -192,7 +193,7 @@ export class CardService {
             filteredCards.push(card);
           }
         }
-      });
+      }
 
       return filteredCards;
     } else {
@@ -266,6 +267,35 @@ export class CardService {
     this.card.star = 0;
     this.card.level = 1;
     this.card.statsType = this.card.getAvailableStats();
+
+    const skills = ['classic', 'awake', 'lvmax'];
+    const buffTypes = ['unitBuffs', 'partyBuffs'];
+
+    for (const buffType of buffTypes) {
+      this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)] = [];
+      for (const buffIds of this.card[buffType]) {
+        const buffs = {};
+        for (const skillType of skills) {
+          if (buffIds[skillType]) {
+            const buff = await this.skillService.getSkill(buffIds[skillType]);
+            if (buff) {
+              buffs[skillType] = buff;
+            }
+          }
+        }
+        this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)].push(buffs);
+      }
+    }
+
+    for (const buffType of buffTypes) {
+      let i = 0;
+      for (const buff of this.card[buffType]) {
+        if (buff.cond) {
+          this.card['formatted' + buffType[0].toUpperCase() + buffType.slice(1, buffType.length)][i].cond = buff.cond;
+        }
+        i++;
+      }
+    }
 
     const existingCard = this.initiateSavedCard(customData);
 
