@@ -219,7 +219,7 @@ export class UnitComponent implements OnInit {
       this.unit.formattedMasterSkill = [];
       if (this.unit.masterSkill.length > 0) {
         for (const masterSkillId of this.unit.masterSkill) {
-          const masterSkill = await this.skillService.getSkill(masterSkillId);
+          let masterSkill = await this.skillService.getSkill(masterSkillId);
           if (masterSkill) {
             masterSkill.name = this.nameService.getName(masterSkill);
             masterSkill.upgradeHtml = this.skillService.formatUpgrade(this.unit, masterSkill);

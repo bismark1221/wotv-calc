@@ -11,7 +11,7 @@ export class Esper {
   };
   name = 'New Esper';
 
-  skills: Skill[] = [new Skill()];
+  skill = new Skill();
   stats = {
     'HP': {},
     'TP': {},
@@ -85,7 +85,7 @@ export class Esper {
     this.dataId = esper.dataId;
     this.rarity = esper.rarity;
     this.names = esper.names;
-    this.skills = esper.skills;
+    this.skill = esper.skill;
     this.stats = esper.stats;
     this.element = esper.element;
     this.image = esper.image;

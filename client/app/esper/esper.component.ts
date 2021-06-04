@@ -31,8 +31,8 @@ export class EsperComponent implements OnInit {
     private navService: NavService,
     private nameService: NameService
   ) {
-    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      this.formatEsper();
+    this.translateService.onLangChange.subscribe(async (event: LangChangeEvent) => {
+      await this.formatEsper();
     });
   }
 
@@ -42,7 +42,7 @@ export class EsperComponent implements OnInit {
       if (!this.esper) {
         this.router.navigate([this.navService.getRoute('/esper-not-found')]);
       } else {
-        this.formatEsper();
+        await this.formatEsper();
 
         this.navService.setTitle(this.esper.name);
       }
@@ -62,26 +62,27 @@ export class EsperComponent implements OnInit {
     });
   }
 
-  private formatEsper() {
+  private async formatEsper() {
     if (this.esper) {
       const lang = this.translateService.currentLang;
       this.esper.name = this.nameService.getName(this.esper);
       this.esper.limited = this.esperService.isLimited(this.esper.dataId);
 
-      this.esper.skills.forEach(skill => {
-        skill.name = this.nameService.getName(skill);
-        skill.effectsHtml = this.skillService.formatEffects(this.esper, skill);
+      this.esper.formattedSkill = await this.skillService.getSkill(this.esper.skill);
+      if (this.esper.formattedSkill) {
+        this.esper.formattedSkill.name = this.nameService.getName(this.esper.formattedSkill);
+        this.esper.formattedSkill.effectsHtml = this.skillService.formatEffects(this.esper, this.esper.formattedSkill);
 
-        if (skill.damage) {
-          skill.damageHtml = this.skillService.formatDamage(this.esper, skill, skill.damage);
+        if (this.esper.formattedSkill.damage) {
+          this.esper.formattedSkill.damageHtml = this.skillService.formatDamage(this.esper, this.esper.formattedSkill, this.esper.formattedSkill.damage);
         }
 
-        if (skill.counter) {
-          skill.counterHtml = this.skillService.formatCounter(this.esper, skill, skill.counter);
+        if (this.esper.formattedSkill.counter) {
+          this.esper.formattedSkill.counterHtml = this.skillService.formatCounter(this.esper, this.esper.formattedSkill, this.esper.formattedSkill.counter);
         }
 
-        this.rangeService.formatRange(this.esper, skill);
-      });
+        this.rangeService.formatRange(this.esper, this.esper.formattedSkill);
+      }
 
       this.esper.maxSP = 0;
       this.esper.SPs.forEach(awake => {
