@@ -4152,12 +4152,7 @@ export class JsonService {
     }
 
     skill.count = dataSkill.count;
-
-    if (skill.grow) {
-      skill.maxLevel = this[this.version].grows[skill.grow].curve[0].lv;
-    } else {
-      skill.maxLevel = dataSkill.cap;
-    }
+    skill.maxLevel = dataSkill.cap;
 
     if (dataSkill.range_h || dataSkill.range_l || dataSkill.range_m || dataSkill.range_mh || dataSkill.range_s || dataSkill.range_w || dataSkill.line) {
       skill.range = {
@@ -4980,14 +4975,18 @@ export class JsonService {
         this[this.version].equipments[dataId]['skl' + i].forEach(skillId => {
           if (typeof(skillsPos[skillId]) !== 'number') {
             const skill = {
-              names: {},
               dataId: skillId,
-              effects: [],
-              type: this.slots[this[this.version].skills[skillId].slot === 1 ? 1 : 3],
               upgrade: [i],
-              grow: this[this.version].skills[skillId].grow
+              grow: this[this.version].skills[skillId].grow,
+              maxLevel: this[this.version].grows[this[this.version].skills[skillId].grow].curve[0].lv
             };
-            this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
+
+            if (!this[this.version].skills[skillId].slot) {
+              this[this.version].skills[skillId].slot = 3;
+            }
+
+            this.addSkill(skillId, this[this.version].wotvEquipments[rType]);
+            //this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
             skills.push(skill);
             skillsPos[skillId] = countSkill;
             countSkill++;

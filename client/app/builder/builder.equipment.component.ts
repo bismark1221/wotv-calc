@@ -96,7 +96,19 @@ export class BuilderEquipmentComponent implements OnInit, AfterViewInit {
   }
 
   private async getEquipments() {
-    this.equipments = this.formatEquipments(await this.equipmentService.getEquipmentsForListing());
+    const types = await this.equipmentService.getAcquisitionTypes();
+    const acquisitionTypes = types.acquisitionTypes;
+    const filters = {
+      acquisition: []
+    };
+
+    acquisitionTypes.forEach(type => {
+      if (type !== 'Unknown') {
+        filters.acquisition.push(type);
+      }
+    });
+
+    this.equipments = this.formatEquipments(await this.equipmentService.getEquipmentsForListing(filters));
     this.updateFilteredEquipments();
     this.translateEquipments();
 

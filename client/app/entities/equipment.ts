@@ -39,6 +39,7 @@ export class Equipment {
   upgrade;
   tableLevel;
   activeSkill;
+  formattedSkills;
 
   constructFromJson(equipment: Equipment, translateService: TranslateService): void {
     this.dataId = equipment.dataId;
@@ -72,7 +73,7 @@ export class Equipment {
     this.statsTypes = Object.keys(this.stats);
 
     this.passiveSkills = [];
-    this.skills.forEach(equipmentLvl => {
+    this.formattedSkills.forEach(equipmentLvl => {
       equipmentLvl.forEach(skill => {
         skill.name = nameService.getName(skill);
         skill.effectsHtml = skillService.formatEffects(this, skill);
@@ -138,7 +139,7 @@ export class Equipment {
   }
 
   changeUpgrade(skillService, rangeService) {
-    this.skill = this.skills[this.upgrade];
+    this.skill = this.formattedSkills[this.upgrade];
 
     if (this.skill && this.skill[0] && this.skill[0].type === 'skill') {
       this.skill[0].tableLevel = [];

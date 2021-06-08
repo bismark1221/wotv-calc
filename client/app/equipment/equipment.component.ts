@@ -95,13 +95,13 @@ export class EquipmentComponent implements OnInit {
       this.equipment.effectTypes = [];
       this.equipment.passiveSkills = [];
 
-      this.equipment.skills.forEach(equipmentLvl => {
+      for (const equipmentLvl of this.equipment.formattedSkills) {
         this.equipment.countSkills.push(i);
 
         this.sortSkills(equipmentLvl);
 
-        equipmentLvl.forEach(skill => {
-          skill.name = this.nameService.getName(skill);
+        for (const skill of equipmentLvl) {
+         skill.name = this.nameService.getName(skill);
 
           skill.effectsHtml = this.skillService.formatEquipmentEffects(this.equipment, skill);
 
@@ -129,9 +129,9 @@ export class EquipmentComponent implements OnInit {
 
             this.equipment.passiveSkills.push(skill);
           }
-        });
+        }
         i++;
-      });
+      }
 
       if (this.equipment.acquisition.type === 'tmr') {
         const unit = await this.getUnit(this.equipment.acquisition.unitId);

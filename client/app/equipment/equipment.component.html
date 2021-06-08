@@ -188,7 +188,7 @@
           </tr>
           <tr *ngFor="let effectType of equipment.effectTypes">
             <td *ngFor="let i of equipment.countSkills">
-              <div *ngFor="let skill of equipment.skills[i]">
+              <div *ngFor="let skill of equipment.formattedSkills[i]">
                 <div *ngIf="skill.mainEffect === effectType">
                   <div *ngFor="let effect of skill.effectsHtml.before">
                     <span [innerHTML]="effect"></span>

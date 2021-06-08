@@ -96,20 +96,20 @@
           </tbody>
         </table>
 
-        <table class="tmrSkillTable" *ngIf="unit.formattedTmr.skills[0] && unit.formattedTmr.skills[0][0]">
+        <table class="tmrSkillTable" *ngIf="unit.formattedTmr.formattedSkills && unit.formattedTmr.formattedSkills[0]">
           <tr>
-            <th [attr.colspan]="unit.formattedTmr.skills[0][0].type === 'skill' ? '7' : '2'">TMR Skill</th>
+            <th colspan="7">TMR Skill</th>
           </tr>
-          <tr>
-            <th class="sub">Type</th>
-            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">name</th>
-            <th class="sub">Effects</th>
-            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Range</th>
-            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Casts</th>
-            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Hits</th>
-            <th class="sub" *ngIf="unit.formattedTmr.skills[0][0].type === 'skill'">Cost</th>
-          </tr>
-          <tbody *ngFor="let skill of unit.formattedTmr.skills[0]">
+          <tbody *ngFor="let skill of unit.formattedTmr.formattedSkills">
+            <tr>
+              <th class="sub">Type</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">name</th>
+              <th class="sub" [attr.colspan]="skill.type === 'skill' ? '1' : '6'">Effects</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Range</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Casts</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Hits</th>
+              <th class="sub" *ngIf="skill.type === 'skill'">Cost</th>
+            </tr>
             <tr *ngIf="skill.type === 'skill'">
               <td class="tmrTypeTd">
                 <img class="skilImg" src="{{'assets/skill-type/' + skill.type + '.png'}}" />

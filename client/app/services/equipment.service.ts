@@ -352,7 +352,30 @@ export class EquipmentService {
   async getEquipmentBySlug(slug: string) {
     await this.getEquipments();
 
-    return this[this.navService.getVersion() + '_equipments'].find(equipment => equipment.slug === slug);
+    const equipment = this[this.navService.getVersion() + '_equipments'].find(searchedEquipment => searchedEquipment.slug === slug);
+
+    if (equipment) {
+      await this.formatSkills(equipment);
+    }
+
+    return equipment;
+  }
+
+  async formatSkills(equipment) {
+    equipment.formattedSkills = [];
+    for (const equipmentLvl of equipment.skills) {
+      const formattedSkills = [];
+      for (const skillData of equipmentLvl) {
+        const formattedSkill = await this.skillService.getSkill(skillData.dataId);
+        formattedSkill.upgrade = skillData.upgrade;
+        formattedSkill.grow = skillData.grow;
+        formattedSkill.maxLevel = skillData.maxLevel;
+
+        formattedSkills.push(formattedSkill);
+      }
+
+      equipment.formattedSkills.push(formattedSkills);
+    }
   }
 
   async getEquipment(id: string) {
@@ -429,8 +452,11 @@ export class EquipmentService {
     this.equipment.name = this.equipment.getName(this.translateService);
     this.equipment.upgrade = 0;
     this.equipment.level = 1;
-    if (this.equipment.skills[0] && this.equipment.skills[0][0] && this.equipment.skills[0][0].type === 'skill') {
-      this.equipment.skills[0][0].level = 1;
+
+    await this.formatSkills(this.equipment);
+
+    if (this.equipment.formattedSkills[0] && this.equipment.formattedSkills[0][0] && this.equipment.formattedSkills[0][0].type === 'skill') {
+      this.equipment.formattedSkills[0][0].level = 1;
     }
     this.equipment.growIds = Object.keys(this.equipment.grows);
     this.equipment.grow = this.equipment.growIds[0];
@@ -469,7 +495,7 @@ export class EquipmentService {
       });
 
       Object.keys(equipment.skill).forEach(skillId => {
-        this.equipment.skills.forEach(skill => {
+        this.equipment.formattedSkills.forEach(skill => {
           skill.forEach(subSkill => {
             if (subSkill.dataId === skillId) {
               subSkill.level = equipment.skill[skillId];

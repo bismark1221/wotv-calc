@@ -27646,6 +27646,8638 @@
     "target": "self",
     "maxLevel": 30
   },
+  "SK_LW_SWO_007_1": {
+    "effects": [
+      {
+        "type": "METAL_KILLER",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_007_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_SWO_007_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_1": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_1",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_2": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_2",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_3": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_3",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_4_R": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_4_R",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_5_R": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 12,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_5_R",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+12"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_4_SR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_4_SR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_5_SR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_5_SR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+13"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_003_1": {
+    "effects": [
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 4,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_003_1",
+    "type": "support",
+    "names": {
+      "en": "眠りの剣"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_003_5": {
+    "effects": [
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 4,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_003_5",
+    "type": "support",
+    "names": {
+      "en": "眠りの剣"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_4_SSR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_4_SSR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_5_SSR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_004_1": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_004_1",
+    "type": "support",
+    "names": {
+      "en": "アイスブランド"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_004_5": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_004_5",
+    "type": "support",
+    "names": {
+      "en": "アイスブランド"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_005_1": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_005_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_SWO_005_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_005_5": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_005_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_SWO_005_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_006_1": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_006_1",
+    "type": "support",
+    "names": {
+      "en": "サンゴの剣"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SWO_006_5": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SWO_006_5",
+    "type": "support",
+    "names": {
+      "en": "サンゴの剣"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_SWO_002_2": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_SWO_002_2",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_SWO_002_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_SWO_002_3": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_SWO_002_3",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_SWO_002_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_SWO_002_4": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_SWO_002_4",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_SWO_002_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_SWO_002_5": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ICE_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_SWO_002_5",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_SWO_002_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_SWO_001_2": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_SWO_001_2",
+    "type": "support",
+    "names": {
+      "en": "SK_FF10_SWO_001_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_SWO_001_3": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_SWO_001_3",
+    "type": "support",
+    "names": {
+      "en": "SK_FF10_SWO_001_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_SWO_001_4": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_SWO_001_4",
+    "type": "support",
+    "names": {
+      "en": "SK_FF10_SWO_001_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_SWO_001_5": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "WATER_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_SWO_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_FF10_SWO_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF1_SWO_000_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_1",
+    "type": "support",
+    "names": {
+      "en": "ソードオブライト(光属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF1_SWO_000_5": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF1_SWO_000_5",
+    "type": "support",
+    "names": {
+      "en": "ソードオブライト(光属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_1": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_1",
+    "type": "support",
+    "names": {
+      "en": "防御貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_2": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_2",
+    "type": "support",
+    "names": {
+      "en": "防御貫通率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_3": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_3",
+    "type": "support",
+    "names": {
+      "en": "防御貫通率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_4": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_4",
+    "type": "support",
+    "names": {
+      "en": "防御貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEDEF_5": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEDEF_5",
+    "type": "support",
+    "names": {
+      "en": "防御貫通率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_1": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_1",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_2": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_2",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_3": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_3",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_4_N_SSR": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_5_SSR": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BSW_011_1": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -10,
+        "maxValue": -10,
+        "calcType": "fixe",
+        "rate": 25,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BSW_011_1",
+    "type": "support",
+    "names": {
+      "en": "クリムゾンセイバー"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BSW_011_3": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -15,
+        "maxValue": -15,
+        "calcType": "fixe",
+        "rate": 25,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BSW_011_3",
+    "type": "support",
+    "names": {
+      "en": "クリムゾンセイバー"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BSW_011_5": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "rate": 25,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BSW_011_5",
+    "type": "support",
+    "names": {
+      "en": "クリムゾンセイバー"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_BSW_000_1": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_BSW_000_1",
+    "type": "support",
+    "names": {
+      "en": "陽炎(氷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_BSW_000_5": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_BSW_000_5",
+    "type": "support",
+    "names": {
+      "en": "陽炎(氷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF7_BSW_000_1": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF7_BSW_000_1",
+    "type": "support",
+    "names": {
+      "en": "バスターソード(雷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF7_BSW_000_5": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF7_BSW_000_5",
+    "type": "support",
+    "names": {
+      "en": "バスターソード(雷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_KAT_008_1": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_KAT_008_1",
+    "type": "support",
+    "names": {
+      "en": "紫電(氷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_KAT_008_5": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_KAT_008_5",
+    "type": "support",
+    "names": {
+      "en": "紫電(氷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_4_UR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_4_UR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SLASH_5_UR": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SLASH_5_UR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃力+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_KAT_000_1": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_KAT_000_1",
+    "type": "support",
+    "names": {
+      "en": "白の契約"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_KAT_000_2": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_KAT_000_2",
+    "type": "support",
+    "names": {
+      "en": "白の契約"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_KAT_000_3": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_KAT_000_3",
+    "type": "support",
+    "names": {
+      "en": "白の契約"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_KAT_000_4": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_KAT_000_4",
+    "type": "support",
+    "names": {
+      "en": "白の契約"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_KAT_000_5": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_KAT_000_5",
+    "type": "support",
+    "names": {
+      "en": "白の契約"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_1": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_1",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_2": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_2",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_3": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_3",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_4_R": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_4_R",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_5_R": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 12,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_5_R",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+12"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_4_SR": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_4_SR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_5_SR": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_5_SR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+13"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_4_SSR": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_4_SSR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_BLOW_5_SSR": {
+    "effects": [
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_BLOW_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃力+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_1": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_1",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_2": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_2",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_3": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_3",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_4_R": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_4_R",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_5_R": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 12,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_5_R",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+12"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_4_SR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_4_SR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_5_SR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_5_SR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+13"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_4_SSR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_4_SSR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_5_SSR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AF_ICE_PA_1": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AF_ICE_PA_1",
+    "type": "support",
+    "names": {
+      "en": "氷属性アビリティ攻撃UPパッシブ"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AF_ICE_PA_5": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AF_ICE_PA_5",
+    "type": "support",
+    "names": {
+      "en": "氷属性アビリティ攻撃UPパッシブ"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPE_006_1": {
+    "effects": [
+      {
+        "type": "DRAGON_KILLER",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPE_006_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_SPE_006_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPE_006_5": {
+    "effects": [
+      {
+        "type": "DRAGON_KILLER",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPE_006_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_SPE_006_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_4_UR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_4_UR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SPEAR_5_UR": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SPEAR_5_UR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃力+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_SPE_000_1": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_SPE_000_1",
+    "type": "support",
+    "names": {
+      "en": "黒の倨傲"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_SPE_000_5": {
+    "effects": [
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_SPE_000_5",
+    "type": "support",
+    "names": {
+      "en": "黒の倨傲"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_1": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_1",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_2": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_2",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_3": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_3",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_4_R": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_4_R",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_5_R": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 12,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_5_R",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+12"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_4_SR": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_4_SR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_5_SR": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_5_SR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+13"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_4_SSR": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_4_SSR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_SHOOT_5_SSR": {
+    "effects": [
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_SHOOT_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃力+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_1": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_1",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_2": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_2",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_3": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_3",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_4_UR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_4_UR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_5_UR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_5_UR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_4_R": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_4_R",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_5_R": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 12,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_5_R",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+12"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_004_5": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_ROD_004_5",
+    "type": "skill",
+    "names": {
+      "en": "ケアルラ"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 31
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 120,
+      "maxValue": 320
+    }
+  },
+  "SK_LW_MAGIC_4_SR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_4_SR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_5_SR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_5_SR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+13"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_4_SSR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_4_SSR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAGIC_5_SSR": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_MAGIC_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃力+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_019_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 5,
+        "maxValue": 12,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_019_1",
+    "type": "support",
+    "names": {
+      "en": "プルナスラーミナ（光、雷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_019_5": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 12,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "LIGHTNING_ATK",
+        "minValue": 12,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_019_5",
+    "type": "support",
+    "names": {
+      "en": "プルナスラーミナ（光、雷属性攻撃UP)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_ROD_000_1": {
+    "effects": [
+      {
+        "type": "EVOCATION_GAUGE_BOOST",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_ROD_000_1",
+    "type": "support",
+    "names": {
+      "en": "マギステルロッド（召喚ゲージ獲得量アップ)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_ROD_000_5": {
+    "effects": [
+      {
+        "type": "EVOCATION_GAUGE_BOOST",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_ROD_000_5",
+    "type": "support",
+    "names": {
+      "en": "マギステルロッド（召喚ゲージ獲得量アップ)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_1": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_1",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（混乱付与）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_2_1": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_2_1",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（魔法耐性貫通）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_2_2": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_2_2",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（魔法耐性貫通）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_2_3": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_2_3",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（魔法耐性貫通）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_2_4": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_2_4",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（魔法耐性貫通）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ROD_006_2_5": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ROD_006_2_5",
+    "type": "support",
+    "names": {
+      "en": "サイプレスパイル（魔法耐性貫通）"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_1": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_1",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_2": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_2",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_3": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_3",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_4_N_SSR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_5_SSR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_1": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_1",
+    "type": "support",
+    "names": {
+      "en": "命中率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_2": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_2",
+    "type": "support",
+    "names": {
+      "en": "命中率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_3": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_3",
+    "type": "support",
+    "names": {
+      "en": "命中率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_4_UR": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_4_UR",
+    "type": "support",
+    "names": {
+      "en": "命中率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_5_UR": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_5_UR",
+    "type": "support",
+    "names": {
+      "en": "命中率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_MAC_009_5": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_MAC_009_5",
+    "type": "skill",
+    "names": {
+      "en": "ケアルダ"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 17
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_DF_SLASH_5_N_R": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_5_N_R",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_1": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_1",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_2": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_2",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_3": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_3",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_4_N_SSR": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_5_SR": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_5_SR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SINGL_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SINGL_1",
+    "type": "support",
+    "names": {
+      "en": "単体攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SINGL_2": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SINGL_2",
+    "type": "support",
+    "names": {
+      "en": "単体攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SINGL_3": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SINGL_3",
+    "type": "support",
+    "names": {
+      "en": "単体攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_4_UR": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_4_UR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SINGL_4_UR": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SINGL_4_UR",
+    "type": "support",
+    "names": {
+      "en": "単体攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_BLOW_5_UR": {
+    "effects": [
+      {
+        "type": "STRIKE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_BLOW_5_UR",
+    "type": "support",
+    "names": {
+      "en": "打撃攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SINGL_5_UR": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SINGL_5_UR",
+    "type": "support",
+    "names": {
+      "en": "単体攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARM_028_1": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARM_028_1",
+    "type": "support",
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARM_028_2": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARM_028_2",
+    "type": "support",
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARM_028_3": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARM_028_3",
+    "type": "support",
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARM_028_4": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARM_028_4",
+    "type": "support",
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARM_028_5": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARM_028_5",
+    "type": "support",
+    "names": {
+      "en": "ブリガンダイン"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_4_UR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_4_UR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_5_UR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_5_UR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_1": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_1",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_2": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_2",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_3": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_3",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_4_N_SSR": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_5_SSR": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_5_N_R": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_5_N_R",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_5_SR": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_5_SR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_4_UR": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_4_UR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SLASH_5_UR": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SLASH_5_UR",
+    "type": "support",
+    "names": {
+      "en": "斬撃攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_1": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_1",
+    "type": "support",
+    "names": {
+      "en": "回避率+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_2": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_2",
+    "type": "support",
+    "names": {
+      "en": "回避率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_3": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_3",
+    "type": "support",
+    "names": {
+      "en": "回避率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_4_N_SSR": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "回避率+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_5_N_R": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_5_N_R",
+    "type": "support",
+    "names": {
+      "en": "回避率+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_5_SR": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_5_SR",
+    "type": "support",
+    "names": {
+      "en": "回避率+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_5_SSR": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "回避率+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_4_N_SSR": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_4_N_SSR",
+    "type": "support",
+    "names": {
+      "en": "命中率+8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HIT_5_SSR": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HIT_5_SSR",
+    "type": "support",
+    "names": {
+      "en": "命中率+15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_5_N_R": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_5_N_R",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_MAGIC_5_SR": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_MAGIC_5_SR",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性+7"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_4_UR": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_4_UR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SHOOT_5_UR": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SHOOT_5_UR",
+    "type": "support",
+    "names": {
+      "en": "射撃攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_015_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_015_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_015_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_015_2": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 6,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_015_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_015_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_015_3": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 9,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_015_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_015_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_015_4": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 12,
+        "maxValue": 20,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_015_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_015_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_015_5": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_015_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_015_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_016_1": {
+    "effects": [
+      {
+        "type": "LIGHT_RES",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_016_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_016_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLT_016_5": {
+    "effects": [
+      {
+        "type": "LIGHT_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLT_016_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLT_016_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_4_UR": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_4_UR",
+    "type": "support",
+    "names": {
+      "en": "回避率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AVOID_5_UR": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AVOID_5_UR",
+    "type": "support",
+    "names": {
+      "en": "回避率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_001_1": {
+    "effects": [
+      {
+        "type": "POISON_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_001_5": {
+    "effects": [
+      {
+        "type": "POISON_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_002_1": {
+    "effects": [
+      {
+        "type": "BRAVERY",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_002_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_002_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_002_5": {
+    "effects": [
+      {
+        "type": "BRAVERY",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_002_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_002_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_003_1": {
+    "effects": [
+      {
+        "type": "SILENCE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_003_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_003_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_003_5": {
+    "effects": [
+      {
+        "type": "SILENCE_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_003_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_003_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_004_1": {
+    "effects": [
+      {
+        "type": "PARALYZE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_004_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_004_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_004_5": {
+    "effects": [
+      {
+        "type": "PARALYZE_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_004_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_004_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_FTW_001_1": {
+    "effects": [
+      {
+        "type": "IMMOBILIZE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_FTW_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_FTW_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_FTW_001_5": {
+    "effects": [
+      {
+        "type": "IMMOBILIZE_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_FTW_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_FTW_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AP_GET_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AP_GET_1",
+    "type": "support",
+    "names": {
+      "en": "AP獲得量+5%"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AP_GET_2": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AP_GET_2",
+    "type": "support",
+    "names": {
+      "en": "AP獲得量+7%"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AP_GET_3": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AP_GET_3",
+    "type": "support",
+    "names": {
+      "en": "AP獲得量+10%"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AP_GET_4_UR": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AP_GET_4_UR",
+    "type": "support",
+    "names": {
+      "en": "AP獲得量+15%"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_AP_GET_5_UR": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_AP_GET_5_UR",
+    "type": "support",
+    "names": {
+      "en": "AP獲得量+30%"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_005_1": {
+    "effects": [
+      {
+        "type": "ALL_ELEMENTS_RES",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_005_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_005_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_005_5": {
+    "effects": [
+      {
+        "type": "ALL_ELEMENTS_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_005_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_005_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_ACC_001_1": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_ACC_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_ACC_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FFT_ACC_001_5": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FFT_ACC_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_FFT_ACC_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_006_1": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_006_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_006_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_006_2": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_006_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_006_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_006_3": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_006_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_006_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_006_4": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_006_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_006_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_006_5": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_006_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_006_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_001_1": {
+    "effects": [
+      {
+        "type": "STOP_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "SLOW_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_001_5": {
+    "effects": [
+      {
+        "type": "STOP_RES",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "SLOW_RES",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_007_1": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "WATER_RES",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_007_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_007_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_007_5": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "WATER_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_007_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_007_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_005_1": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "LIGHT_RES",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "POISON_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "DOOM_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_005_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_005_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_005_5": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "LIGHT_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "POISON_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "DOOM_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_005_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_005_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_009_1": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "FIRE_RES",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "IMMOBILIZE_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_009_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_009_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_RNG_009_5": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "FIRE_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "IMMOBILIZE_RES",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_RNG_009_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_RNG_009_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF14_HLM_001_1": {
+    "effects": [
+      {
+        "type": "DISABLE_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF14_HLM_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_FF14_HLM_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF14_HLM_001_5": {
+    "effects": [
+      {
+        "type": "DISABLE_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF14_HLM_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_FF14_HLM_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SPEAR_1": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SPEAR_1",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃耐性+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SPEAR_2": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SPEAR_2",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃耐性+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SPEAR_3": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SPEAR_3",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃耐性+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SPEAR_4_UR": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SPEAR_4_UR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃耐性+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DF_SPEAR_5_UR": {
+    "effects": [
+      {
+        "type": "PIERCE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DF_SPEAR_5_UR",
+    "type": "support",
+    "names": {
+      "en": "刺突攻撃耐性+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_002_1": {
+    "effects": [
+      {
+        "type": "SILENCE_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_002_1",
+    "type": "support",
+    "names": {
+      "en": "ソウルオブサマサ"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_002_5": {
+    "effects": [
+      {
+        "type": "SILENCE_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_002_5",
+    "type": "support",
+    "names": {
+      "en": "ソウルオブサマサ"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMAGIC_1": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMAGIC_1",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性貫通率+1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMAGIC_2": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMAGIC_2",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMAGIC_3": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMAGIC_3",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性貫通率+4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMAGIC_4": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMAGIC_4",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性貫通率+6"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMAGIC_5": {
+    "effects": [
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMAGIC_5",
+    "type": "support",
+    "names": {
+      "en": "魔法攻撃耐性貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLK_001_1": {
+    "effects": [
+      {
+        "type": "CONFUSION_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLK_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLK_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CLK_001_5": {
+    "effects": [
+      {
+        "type": "CONFUSION_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CLK_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_CLK_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_1_S": {
+    "effects": [
+      {
+        "type": "DISABLE_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_1_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_1_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_5_S": {
+    "effects": [
+      {
+        "type": "DISABLE_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_5_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_5_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_1": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_2": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_3": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_4": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ARW_001_5": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ARW_001_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ARW_001_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_ACCE_001_1": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_ACCE_001_1",
+    "type": "support",
+    "names": {
+      "en": "ティーダのネックレス(クリティカルダメージアップ)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_FF10_ACCE_001_5": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FF10_ACCE_001_5",
+    "type": "support",
+    "names": {
+      "en": "ティーダのネックレス(クリティカルダメージアップ)"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_ACC_000_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 1,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_ACC_000_1",
+    "type": "support",
+    "names": {
+      "en": "ポッド153"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_NIER_ACC_000_5": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 5,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NIER_ACC_000_5",
+    "type": "support",
+    "names": {
+      "en": "ポッド153"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_1_S": {
+    "effects": [
+      {
+        "type": "STUN_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_1_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_1_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_5_S": {
+    "effects": [
+      {
+        "type": "STUN_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_5_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_5_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_3": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_4": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_5": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_039_1": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_039_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_039_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_039_5": {
+    "effects": [
+      {
+        "type": "BLIND_RES",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_039_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_039_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_1": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_1",
+    "type": "support",
+    "names": {
+      "en": "精神貫通率+2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_2": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_2",
+    "type": "support",
+    "names": {
+      "en": "精神貫通率+3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_3": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_3",
+    "type": "support",
+    "names": {
+      "en": "精神貫通率+5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_4": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_4",
+    "type": "support",
+    "names": {
+      "en": "精神貫通率+10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_PIERCEMDEF_5": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_PIERCEMDEF_5",
+    "type": "support",
+    "names": {
+      "en": "精神貫通率+20"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HAT_017_1": {
+    "effects": [
+      {
+        "type": "POISON_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PARALYZE_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PETRIFY_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "CONFUSION_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "SLEEP_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HAT_017_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_HAT_017_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_HAT_017_5": {
+    "effects": [
+      {
+        "type": "POISON_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PARALYZE_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PETRIFY_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "CONFUSION_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "SLEEP_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_HAT_017_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_HAT_017_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_038_1": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "turn": 2,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_038_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_038_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_038_2": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "percent",
+        "turn": 2,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_038_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_038_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_038_3": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "turn": 2,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_038_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_038_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_038_4": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "percent",
+        "turn": 2,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_038_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_038_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_038_5": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "percent",
+        "turn": 2,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_038_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_038_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CRI_1": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 3,
+        "maxValue": 8,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CRI_1",
+    "type": "support",
+    "names": {
+      "en": "汎用クリティカルダメージアップ3～8"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_CRI_5": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_CRI_5",
+    "type": "support",
+    "names": {
+      "en": "汎用クリティカルダメージアップ10～15"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DEFPIERCE_1": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DEFPIERCE_1",
+    "type": "support",
+    "names": {
+      "en": "汎用防御貫通1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DEFPIERCE_2": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DEFPIERCE_2",
+    "type": "support",
+    "names": {
+      "en": "汎用防御貫通2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DEFPIERCE_3": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DEFPIERCE_3",
+    "type": "support",
+    "names": {
+      "en": "汎用防御貫通3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DEFPIERCE_4": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DEFPIERCE_4",
+    "type": "support",
+    "names": {
+      "en": "汎用防御貫通5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_DEFPIERCE_5": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_DEFPIERCE_5",
+    "type": "support",
+    "names": {
+      "en": "汎用防御貫通10"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_042_1": {
+    "effects": [
+      {
+        "type": "PROVOKE",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "LUCK",
+        "minValue": 35,
+        "maxValue": 77,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "MOVE",
+        "minValue": -1,
+        "maxValue": -1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_042_1",
+    "type": "support",
+    "names": {
+      "en": "プロデューサーのネクタイ"
+    },
+    "target": "self",
+    "maxLevel": 30
+  },
+  "SK_SWO_LW_LILS_1_1": {
+    "effects": [
+      {
+        "type": "FIRE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_LILS_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_LILS_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_BSW_LW_SZRT_1_1": {
+    "effects": [
+      {
+        "type": "DOOM_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 5,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BSW_LW_SZRT_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BSW_LW_SZRT_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_KAT_LW_OOOO_1_1": {
+    "effects": [
+      {
+        "type": "HUMAN_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_KAT_LW_OOOO_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_KAT_LW_OOOO_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FIS_LW_MRLK_1_1": {
+    "effects": [
+      {
+        "type": "STONE_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_FIS_LW_MRLK_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_FIS_LW_MRLK_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_SPE_LW_RAMD_1_1": {
+    "effects": [
+      {
+        "type": "SLEEP_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SPE_LW_RAMD_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SPE_LW_RAMD_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_SPE_LW_LRNZ_1_1": {
+    "effects": [
+      {
+        "type": "DRAGON_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SPE_LW_LRNZ_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SPE_LW_LRNZ_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_DAG_LW_VSTR_1_1": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_DAG_LW_VSTR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_DAG_LW_VSTR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_BOW_LW_CLEY_1_1": {
+    "effects": [
+      {
+        "type": "ICE_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BOW_LW_CLEY_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BOW_LW_CLEY_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_GUN_LW_RIRY_1_1": {
+    "effects": [
+      {
+        "type": "BLIND_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GUN_LW_RIRY_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_GUN_LW_RIRY_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ROD_LW_HLNA_1_1": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_HLNA_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_HLNA_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ROD_LW_MGRT_1_1": {
+    "effects": [
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "ATTACK_ACTIVATION_TIME",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_MGRT_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_MGRT_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ROD_LW_PRAY_1_1": {
+    "effects": [
+      {
+        "type": "DISABLE_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_PRAY_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_PRAY_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_MAC_LW_KADI_1_1": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_MAC_LW_KADI_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_MAC_LW_KADI_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_BOW_LW_FINA_1_1": {
+    "effects": [
+      {
+        "type": "CHARM_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BOW_LW_FINA_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BOW_LW_FINA_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_NKN_LW_SDLX_1_1": {
+    "effects": [
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 80,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_NKN_LW_SDLX_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_NKN_LW_SDLX_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_SHI_LW_ENBT_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 25,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "ATK",
+        "minValue": 55,
+        "maxValue": 75,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SHI_LW_ENBT_1_1",
+    "type": "skill",
+    "names": {
+      "en": "忠義の猛攻"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_LW_STRN_1_1": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 20,
+        "maxValue": 35,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_STRN_1_1",
+    "type": "skill",
+    "names": {
+      "en": "ウォールオブフィールド"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_LW_ROBB_1_1": {
+    "effects": [
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CT",
+        "minValue": 250,
+        "maxValue": 500,
+        "calcType": "fixe",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_ROBB_1_1",
+    "type": "skill",
+    "names": {
+      "en": "慧眼の刃"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 42
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ARM_LW_BYLO_1_1": {
+    "effects": [
+      {
+        "type": "SLEEP_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_BYLO_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_BYLO_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_VRID_1_1": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_VRID_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_VRID_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_NAIA_1_1": {
+    "effects": [
+      {
+        "type": "WATER_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_NAIA_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_NAIA_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_SEVR_1_1": {
+    "effects": [
+      {
+        "type": "LIGHTNING_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_CLT_LW_SEVR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_CLT_LW_SEVR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_SRJS_1_1": {
+    "effects": [
+      {
+        "type": "FIRE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_SRJS_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_SRJS_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_HAT_LW_AILN_1_1": {
+    "effects": [
+      {
+        "type": "STONE_KILLER",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "rate": 200,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MACHINE_KILLER",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "rate": 200,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "rate": 200,
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HP",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HAT_LW_AILN_1_1",
+    "type": "skill",
+    "names": {
+      "en": "アナリシス"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_HAT_LW_MDNA_1_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HAT_LW_MDNA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "ルナヴァーヴ"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 36
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_ARM_LW_UNII_1_1": {
+    "effects": [
+      {
+        "type": "SLOW_RES",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_UNII_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_UNII_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_VADM_1_1": {
+    "effects": [
+      {
+        "type": "EARTH_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_VADM_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_VADM_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_PHBE_1_1": {
+    "effects": [
+      {
+        "type": "LIGHT_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_PHBE_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_PHBE_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_FTW_LW_AYKA_1_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 5,
+        "maxValue": 20,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "TURNS",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "POISON",
+          "BLIND",
+          "SLEEP",
+          "SILENCE",
+          "PARALYZE",
+          "CONFUSION",
+          "PETRIFY",
+          "GRADUAL_PETRIFY",
+          "FROSTBITE"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_FTW_LW_AYKA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "ピュリファイ"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 42
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_LW_MACR_1_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MACR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "騎士への祝福"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 42
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CLK_LW_ELDE_1_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 20,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLK_LW_ELDE_1_1",
+    "type": "skill",
+    "names": {
+      "en": "王の号令"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_LW_ZIZA_1_1": {
+    "effects": [
+      {
+        "type": "AUTO_RESTORE_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_ZIZA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "活性孔"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 12
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_FDRC_1_1": {
+    "effects": [
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "DISABLE",
+          "IMMOBILIZE",
+          "STOP"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_FDRC_1_1",
+    "type": "skill",
+    "names": {
+      "en": "トライプロテクション"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 18
+    },
+    "count": 2,
+    "maxLevel": 1,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    }
+  },
+  "SK_ARM_LW_SCIA_1_1": {
+    "effects": [
+      {
+        "type": "ICE_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_SCIA_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_SCIA_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_MURM_1_1": {
+    "effects": [
+      {
+        "type": "WIND_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_MURM_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_MURM_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_RYER_1_1": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_LW_RYER_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_LW_RYER_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_MONT_1_1": {
+    "effects": [
+      {
+        "type": "AGI",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MONT_1_1",
+    "type": "skill",
+    "names": {
+      "en": "掛け声"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 16
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 2,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_HLM_LW_GLMS_1_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 150,
+        "maxValue": 150,
+        "calcType": "percent",
+        "turn": 1,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CT",
+        "minValue": 250,
+        "maxValue": 500,
+        "calcType": "fixe",
+        "rate": 15,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HLM_LW_GLMS_1_1",
+    "type": "skill",
+    "names": {
+      "en": "咒力疾走"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_FF14_TNCR_1_1": {
+    "effects": [
+      {
+        "type": "LIGHT_RES",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ARM_FF14_TNCR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ARM_FF14_TNCR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ROD_FF14_YSTL_1_1": {
+    "effects": [
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_FF14_YSTL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_FF14_YSTL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_BLT_LW_YERM_1_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 30,
+        "maxValue": 60,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_BLT_LW_YERM_1_1",
+    "type": "skill",
+    "names": {
+      "en": "湧血の沸騰"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_SWO_LW_NASR_1_1": {
+    "effects": [
+      {
+        "type": "IMMOBILIZE_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 5,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_NASR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_NASR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_RAMD_01_1_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_RAMD_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "イグザルテーション"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_MACR_01_1": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "target",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MACR_01_1",
+    "type": "skill",
+    "names": {
+      "en": "クリスマスハーモニー"
+    },
+    "target": "target",
+    "cost": {
+      "type": "TP",
+      "value": 36
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_HAT_LW_WHIS_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 25,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DEF",
+        "minValue": 15,
+        "maxValue": 45,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 15,
+        "maxValue": 45,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HAT_LW_WHIS_1_1",
+    "type": "skill",
+    "names": {
+      "en": "虚心の献羽"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 4,
+      "s": 1
+    }
+  },
+  "SK_HAT_LW_WHIS_1_2": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "STRIKE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "PIERCE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      },
+      {
+        "type": "MAGIC_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_HAT_LW_WHIS_1_2",
+    "type": "support",
+    "names": {
+      "en": "SK_HAT_LW_WHIS_1_2"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARW_LW_KTON_1_1": {
+    "effects": [
+      {
+        "type": "PROVOKE",
+        "minValue": -6,
+        "maxValue": -8,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARW_LW_KTON_1_1",
+    "type": "skill",
+    "names": {
+      "en": "早駆の術"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_FFT_RAMZ_1_1": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_FFT_RAMZ_1_1",
+    "type": "skill",
+    "names": {
+      "en": "TPたくす"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    }
+  },
+  "SK_SWO_FFT_GFGR_1_1": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_FFT_GFGR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_FFT_GFGR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_FFT_ORND_1_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 15,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FFT_ORND_1_1",
+    "type": "skill",
+    "names": {
+      "en": "雷神塵地の型"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_CLT_LW_MRND_1_1": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLASH_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_MRND_1_1",
+    "type": "skill",
+    "names": {
+      "en": "繊麗の鼓舞"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_AXE_LW_DRND_1_1": {
+    "effects": [
+      {
+        "type": "BLIND_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_AXE_LW_DRND_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_AXE_LW_DRND_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_LUCA_1_1": {
+    "effects": [
+      {
+        "type": "RANGE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_LUCA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "リミッターオフ"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_SWO_LW_ADLD_1_1": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_ADLD_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_ADLD_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_VKTR_1_1": {
+    "effects": [
+      {
+        "type": "PIERCE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_VKTR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "妖竜の瞳"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_THLA_1_1": {
+    "effects": [
+      {
+        "type": "HUMAN_KILLER",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self",
+        "buffOnCondition": "ON_MAGIC_ATTACK"
+      }
+    ],
+    "dataId": "SK_ACC_LW_THLA_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ACC_LW_THLA_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_VNLA_1_1": {
+    "effects": [
+      {
+        "type": "MALES_KILLER",
+        "minValue": 15,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "rate": 200,
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": -6,
+        "maxValue": -6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_VNLA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "偽りの夜帳"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_SWO_LW_DRIO_1_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_DRIO_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_DRIO_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_RAIN_1_1": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_RAIN_1_1",
+    "type": "skill",
+    "names": {
+      "en": "守護者の闘気"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 42
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 2
+    }
+  },
+  "SK_ACC_FF1_WROL_1_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "TP_AUTO_RESTORE",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF1_WROL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "ディバインライト"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_QILF_1_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 15,
+        "maxValue": 45,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AOE_RES",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_QILF_1_1",
+    "type": "skill",
+    "names": {
+      "en": "背反する矜持"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_KAT_LW_SIMR_1_1": {
+    "effects": [
+      {
+        "type": "SLOW_ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_KAT_LW_SIMR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_KAT_LW_SIMR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_ORDR_1_1": {
+    "effects": [
+      {
+        "type": "AUTO_RESTORE_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_ORDR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "受け継がれし暴威"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_SWO_LW_LVES_1_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_JP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_LVES_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_LVES_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_FFT_AGRA_1_1": {
+    "effects": [
+      {
+        "type": "PROTECT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SHELL_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FFT_AGRA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "聖近衛騎士団の誇り"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_FFT_DELT_1_1": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_FFT_DELT_1_1",
+    "type": "skill",
+    "names": {
+      "en": "APたくす"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "AP",
+      "value": 20
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    }
+  },
+  "SK_GUN_FFT_MSTD_1_1": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": -40,
+        "maxValue": -40,
+        "calcType": "fixe",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GUN_FFT_MSTD_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_GUN_FFT_MSTD_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_IRDL_1_1": {
+    "effects": [
+      {
+        "type": "SWITCH_POS",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "QUICKEN_ATK",
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_IRDL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "瞬速転移法"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 5,
+      "l": 2,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 120,
+      "maxValue": 200
+    }
+  },
+  "SK_ARM_LW_STRN_01_1_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 20,
+        "maxValue": 35,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_STRN_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "尽き果てぬ憎悪"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_LW_GRSR_1_1": {
+    "effects": [
+      {
+        "type": "AP",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_GRSR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "戦乙女の息吹"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_BOW_LW_RRIR_1_1": {
+    "effects": [
+      {
+        "type": "DOOM_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "apply",
+        "rate": 15,
+        "turn": 5,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BOW_LW_RRIR_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BOW_LW_RRIR_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_LSWL_1_1": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_LSWL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "静かなる闘志"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_SCAL_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 20,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAG",
+        "minValue": 50,
+        "maxValue": 80,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_SCAL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "魔脈励起"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    }
+  },
+  "SK_SWO_LW_MRAL_1_1": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": -25,
+        "maxValue": -25,
+        "calcType": "fixe",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_MRAL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_MRAL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_HWLT_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 20,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "PHYSIC_EVADE",
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_HWLT_1_1",
+    "type": "skill",
+    "names": {
+      "en": "鮮血のルーン"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_LILS_01_1_1": {
+    "effects": [
+      {
+        "type": "RANGE",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 1,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_LILS_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "シューティングサマーアイ"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_ROD_LW_CHEL_1_1": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_CHEL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_CHEL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_GUN_LW_LATH_2_1": {
+    "effects": [
+      {
+        "type": "STUN_ATK",
+        "calcType": "apply",
+        "rate": 20,
+        "turn": 1,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GUN_LW_LATH_2_1",
+    "type": "support",
+    "names": {
+      "en": "SK_GUN_LW_LATH_2_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_SWO_LW_TITU_1_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": -40,
+        "maxValue": -40,
+        "calcType": "percent",
+        "rate": 15,
+        "turn": 3,
+        "fromImbue": true,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_TITU_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_TITU_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_FF4_CECL_1_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 30,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "BRAVERY_FIGHT",
+        "minValue": 4,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF4_CECL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "聖騎士の激励"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 36
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_ACC_FF4_ROSA_1_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF4_ROSA_1_1",
+    "type": "skill",
+    "names": {
+      "en": "優美なる射手"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_HLM_FF4_KAIN_1_1": {
+    "effects": [
+      {
+        "type": "HASTE_ATK",
+        "minValue": 20,
+        "maxValue": 42,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HLM_FF4_KAIN_1_1",
+    "type": "skill",
+    "names": {
+      "en": "プライドオブドラグーン"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_KTON_01_1_1": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "SILENCE",
+          "CHARM",
+          "IMMOBILIZE"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_KTON_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "夏華不惑の術"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_LW_NIVL_1_1": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_NIVL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "相伝の幻惑術"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 30
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_ROD_LW_RVAL_1_1": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_RVAL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_RVAL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_CLT_LW_SAKR_1_1": {
+    "effects": [
+      {
+        "type": "NON_ATTACK_ACTIVATION_TIME",
+        "minValue": -150,
+        "maxValue": -350,
+        "calcType": "fixe",
+        "turn": 4,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATTACK_ACTIVATION_TIME",
+        "minValue": -150,
+        "maxValue": -350,
+        "calcType": "fixe",
+        "turn": 4,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_SAKR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "連迅"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_SPE_LW_ALIM_1_1": {
+    "effects": [
+      {
+        "type": "DEFENSE_PENETRATION",
+        "minValue": 15,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SPE_LW_ALIM_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SPE_LW_ALIM_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_RYER_01_1_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 50,
+        "maxValue": 80,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": -25,
+        "maxValue": -10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -25,
+        "maxValue": -10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_RYER_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "フルムーン・スタイル"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 26
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_RARD_1_1": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_RARD_1_1",
+    "type": "skill",
+    "names": {
+      "en": "過動戦闘術"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ROD_LW_ELSI_1_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_JP",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_ELSI_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_ELSI_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_RIRY_01_1_1": {
+    "effects": [
+      {
+        "type": "RERAISE",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "percent",
+        "rate": 200,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_RIRY_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "屍人変化"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 32
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_GUN_LW_CRIS_1_1": {
+    "effects": [
+      {
+        "type": "PROVOKE",
+        "minValue": -6,
+        "maxValue": -6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_GUN_LW_CRIS_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_GUN_LW_CRIS_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_GABL_1_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_GABL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "憤怒の波動"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_ELSR_1_1": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_ELSR_1_1",
+    "type": "skill",
+    "names": {
+      "en": "ウェイクアップインパクト"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_FF10_TIDU_1": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF10_TIDU_1",
+    "type": "skill",
+    "names": {
+      "en": "ウォーミングアップ"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_CLT_FF10_YUNA_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROTECT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SHELL_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "apply",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_FF10_YUNA_1",
+    "type": "skill",
+    "names": {
+      "en": "笑顔の練習"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CLT_FF10_ARON_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 30,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "CONFUSION"
+        ],
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "PETRIFY"
+        ],
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_FF10_ARON_1",
+    "type": "skill",
+    "names": {
+      "en": "貫通"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_VNLA_01_1": {
+    "effects": [
+      {
+        "type": "MOVE",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 30,
+        "maxValue": 70,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_VNLA_01_1",
+    "type": "skill",
+    "names": {
+      "en": "聖夜のいたずら"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_VKTR_01_1": {
+    "effects": [
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "allyNotSelf",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "JUMP",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_VKTR_01_1",
+    "type": "skill",
+    "names": {
+      "en": "聖夜のランデブー"
+    },
+    "target": "allyNotSelf",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 1,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    }
+  },
+  "SK_ACC_NIER_N2TB_1": {
+    "effects": [
+      {
+        "type": "ACQUIRED_AP",
+        "minValue": 40,
+        "maxValue": 80,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_NIER_N2TB_1",
+    "type": "skill",
+    "names": {
+      "en": "オーバークロック"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_CLT_NIER_N9TS_1": {
+    "effects": [
+      {
+        "type": "REGEN_ATK",
+        "minValue": 5,
+        "maxValue": 10,
+        "calcType": "percent",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "SLEEP",
+          "CONFUSION",
+          "CHARM"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_NIER_N9TS_1",
+    "type": "skill",
+    "names": {
+      "en": "キュアフィールド"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_LW_MONT_01_1": {
+    "effects": [
+      {
+        "type": "AOE_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MONT_01_1",
+    "type": "skill",
+    "names": {
+      "en": "獅子の激励"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CLT_LW_RYEL_1_1": {
+    "effects": [
+      {
+        "type": "LUCK",
+        "minValue": 15,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "BLIND",
+          "STOP"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_RYEL_1_1",
+    "type": "skill",
+    "names": {
+      "en": "平和への願い"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_SWO_LW_SIRM_1_1": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_SWO_LW_SIRM_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SWO_LW_SIRM_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_HLNA_01_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 15,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_HLNA_01_1",
+    "type": "skill",
+    "names": {
+      "en": "失われぬ友の護り"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 36
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_CLT_LW_THLA_01_1_1": {
+    "effects": [
+      {
+        "type": "HP_COST",
+        "value": 20,
+        "calcType": "percent",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "MAGIC_EVADE",
+        "calcType": "apply",
+        "rate": 200,
+        "turn": 1,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_THLA_01_1_1",
+    "type": "skill",
+    "names": {
+      "en": "愛の奇跡"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 1
+  },
+  "SK_ARM_LW_CMLO_1_1": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_CMLO_1_1",
+    "type": "skill",
+    "names": {
+      "en": "竜狩りの威光"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_HLM_LW_DEAN_1_1": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_HLM_LW_DEAN_1_1",
+    "type": "skill",
+    "names": {
+      "en": "プリベントマジック"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 20
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_LW_MORE_1_1": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "SLEEP",
+          "SLOW",
+          "BERSERK"
+        ],
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "FAITH_FIGHT",
+        "minValue": 2,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_MORE_1_1",
+    "type": "skill",
+    "names": {
+      "en": "スターリーヴェール"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 34
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_BOW_LW_CWEL_1_1": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": -40,
+        "maxValue": -40,
+        "calcType": "fixe",
+        "rate": 20,
+        "turn": 3,
+        "fromImbue": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BOW_LW_CWEL_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_BOW_LW_CWEL_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_AXE_LW_MURG_1_1": {
+    "effects": [
+      {
+        "type": "INITIAL_AP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_AXE_LW_MURG_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_AXE_LW_MURG_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_SHI_LW_CRLT_1_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 15,
+        "maxValue": 35,
+        "calcType": "percent",
+        "turn": 3,
+        "turnType": "COUNT",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AP",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_SHI_LW_CRLT_1_1",
+    "type": "skill",
+    "names": {
+      "en": "グランシェルトの護り"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ARM_LW_VLRC_1_1": {
+    "effects": [
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "BRAVERY_FIGHT",
+        "minValue": 4,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ARM_LW_VLRC_1_1",
+    "type": "skill",
+    "names": {
+      "en": "鍛剣の黙想"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 2,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ROD_LW_LMRE_1_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_ROD_LW_LMRE_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_ROD_LW_LMRE_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_GRGS_1_1": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_GRGS_1_1",
+    "type": "skill",
+    "names": {
+      "en": "凶魔の咆哮"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_ACC_FF7_CLUD_1": {
+    "effects": [
+      {
+        "type": "AP_CONSUMPTION",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF7_CLUD_1",
+    "type": "skill",
+    "names": {
+      "en": "アバランチとの絆"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
+  "SK_ACC_FF7_TIFA_1": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "STRIKE_ATK",
+        "minValue": 15,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "condition": "WIND_ELEMENT",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_FF7_TIFA_1",
+    "type": "skill",
+    "names": {
+      "en": "ザンガン流精神統一"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 32
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_CLT_FF7_AERT_1": {
+    "effects": [
+      {
+        "type": "ATTACK_RES",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_FF7_AERT_1",
+    "type": "skill",
+    "names": {
+      "en": "花の護り"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CLT_FF7_BART_1": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_FF7_BART_1",
+    "type": "skill",
+    "names": {
+      "en": "アンガーブースト"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 20
+  },
+  "SK_CLT_LW_GRSR_01_1": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "RES_MAGIC_ATK_PENETRATION",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CLT_LW_GRSR_01_1",
+    "type": "skill",
+    "names": {
+      "en": "狼姫の号令"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 28
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "SK_SPE_LW_VERN_1_1": {
+    "effects": [
+      {
+        "type": "GRANT_BUFF",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "apply",
+        "rate": 200,
+        "target": "self"
+      },
+      {
+        "type": "ACCURACY",
+        "minValue": 30,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 1,
+        "fromImbue": true,
+        "target": "self",
+        "buffOnCondition": "ON_CRITICAL"
+      }
+    ],
+    "dataId": "SK_SPE_LW_VERN_1_1",
+    "type": "support",
+    "names": {
+      "en": "SK_SPE_LW_VERN_1_1"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_ACC_LW_JEDN_1": {
+    "effects": [
+      {
+        "type": "REDUCE_DAMAGE_GENERAL",
+        "minValue": 1000,
+        "maxValue": 2500,
+        "calcType": "hp",
+        "turnType": "TURNS",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MISSILE_ATK",
+        "minValue": 10,
+        "maxValue": 25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_ACC_LW_JEDN_1",
+    "type": "skill",
+    "names": {
+      "en": "神鹿の護り"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 1,
+    "maxLevel": 20
+  },
   "SK_LB_LW_TU_MONT": {
     "effects": [],
     "dataId": "SK_LB_LW_TU_MONT",
@@ -47509,24 +56141,6 @@
     "target": "self",
     "maxLevel": 50
   },
-  "SK_LW_PIERCEMDEF_5": {
-    "effects": [
-      {
-        "type": "SPIRIT_PENETRATION",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEMDEF_5",
-    "type": "support",
-    "names": {
-      "en": "精神貫通率+20"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
   "SK_LW_RDM_SOIL_M_1_INIT": {
     "effects": [],
     "dataId": "SK_LW_RDM_SOIL_M_1_INIT",
@@ -47978,24 +56592,6 @@
     },
     "target": "self",
     "maxLevel": 1
-  },
-  "SK_LW_HIT_5_UR": {
-    "effects": [
-      {
-        "type": "ACCURACY",
-        "minValue": 20,
-        "maxValue": 20,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_HIT_5_UR",
-    "type": "support",
-    "names": {
-      "en": "命中率+20"
-    },
-    "target": "self",
-    "maxLevel": 50
   },
   "SK_DMNW_ATK": {
     "effects": [],
@@ -57408,24 +66004,6 @@
       "fire"
     ]
   },
-  "SK_LW_HIT_3": {
-    "effects": [
-      {
-        "type": "ACCURACY",
-        "minValue": 5,
-        "maxValue": 5,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_HIT_3",
-    "type": "support",
-    "names": {
-      "en": "命中率+5"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
   "SK_BTL_INV_SPDDOWN": {
     "effects": [
       {
@@ -59736,24 +68314,6 @@
     "target": "self",
     "maxLevel": 80
   },
-  "SK_LW_AVOID_5_UR": {
-    "effects": [
-      {
-        "type": "EVADE",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_AVOID_5_UR",
-    "type": "support",
-    "names": {
-      "en": "回避率+10"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
   "SK_LW_MST_M_1": {
     "effects": [],
     "dataId": "SK_LW_MST_M_1",
@@ -59923,24 +68483,6 @@
       "reactDamage": "ALL",
       "calcType": "percent"
     }
-  },
-  "SK_LW_PIERCEMAGIC_5": {
-    "effects": [
-      {
-        "type": "RES_MAGIC_ATK_PENETRATION",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_PIERCEMAGIC_5",
-    "type": "support",
-    "names": {
-      "en": "魔法攻撃耐性貫通率+10"
-    },
-    "target": "self",
-    "maxLevel": 50
   },
   "SK_LW_MGK_DARK_M_4": {
     "effects": [
@@ -64503,24 +73045,6 @@
     "target": "self",
     "maxLevel": 80
   },
-  "SK_LW_SPEAR_5_SSR": {
-    "effects": [
-      {
-        "type": "PIERCE_ATK",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_SPEAR_5_SSR",
-    "type": "support",
-    "names": {
-      "en": "刺突攻撃力+15"
-    },
-    "target": "self",
-    "maxLevel": 50
-  },
   "SK_CHCB2_ATK": {
     "effects": [],
     "dataId": "SK_CHCB2_ATK",
@@ -64834,24 +73358,6 @@
     },
     "count": 1,
     "maxLevel": 20
-  },
-  "SK_LW_MAGIC_4_UR": {
-    "effects": [
-      {
-        "type": "MAGIC_ATK",
-        "minValue": 10,
-        "maxValue": 10,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_MAGIC_4_UR",
-    "type": "support",
-    "names": {
-      "en": "魔法攻撃力+10"
-    },
-    "target": "self",
-    "maxLevel": 50
   },
   "SK_CSLI_01_M_02": {
     "effects": [],
@@ -65692,73 +74198,6 @@
     },
     "target": "self",
     "maxLevel": 80
-  },
-  "SK_ARW_LW_KTON_1_1": {
-    "effects": [
-      {
-        "type": "PROVOKE",
-        "minValue": -6,
-        "maxValue": -8,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "MOVE",
-        "minValue": 1,
-        "maxValue": 1,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      },
-      {
-        "type": "JUMP",
-        "minValue": 1,
-        "maxValue": 1,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_ARW_LW_KTON_1_1",
-    "type": "skill",
-    "names": {
-      "en": "早駆の術"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 24
-    },
-    "count": 1,
-    "maxLevel": 20
-  },
-  "SK_ACC_LW_ZIZA_1_1": {
-    "effects": [
-      {
-        "type": "AUTO_RESTORE_ATK",
-        "minValue": 10,
-        "maxValue": 25,
-        "calcType": "percent",
-        "turn": 3,
-        "target": "self",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_ACC_LW_ZIZA_1_1",
-    "type": "skill",
-    "names": {
-      "en": "活性孔"
-    },
-    "target": "self",
-    "cost": {
-      "type": "TP",
-      "value": 12
-    },
-    "count": 1,
-    "maxLevel": 20
   },
   "SK_BTL_RES_BLOW_1_80_D_KISO": {
     "effects": [
@@ -68210,24 +76649,6 @@
       "l": 1,
       "h": 1
     }
-  },
-  "SK_LW_HIT_5_SSR": {
-    "effects": [
-      {
-        "type": "ACCURACY",
-        "minValue": 15,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_LW_HIT_5_SSR",
-    "type": "support",
-    "names": {
-      "en": "命中率+15"
-    },
-    "target": "self",
-    "maxLevel": 50
   },
   "SK_IGNT_M_01_B_R": {
     "effects": [

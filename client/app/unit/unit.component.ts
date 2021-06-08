@@ -277,12 +277,15 @@ export class UnitComponent implements OnInit {
         this.unit.formattedTmr.name = this.nameService.getName(this.unit.formattedTmr);
         this.unit.formattedTmr.statsTypes = Object.keys(this.unit.formattedTmr.stats);
 
-        this.unit.formattedTmr.skills[0].forEach(skill => {
+        this.unit.formattedTmr.formattedSkills = [];
+        for (const skillData of this.unit.formattedTmr.skills[0]) {
+          const skill = await this.skillService.getSkill(skillData.dataId);
           skill.name = this.nameService.getName(skill);
           skill.damageHtml = this.skillService.formatDamage(this.unit, skill, skill.damage);
           this.rangeService.formatRange(this.unit, skill);
           skill.effectsHtml = this.skillService.formatEffects(this.unit, skill);
-        });
+          this.unit.formattedTmr.formattedSkills.push(skill);
+        }
       }
 
       this.unit.jobsStats = [];
