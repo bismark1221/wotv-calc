@@ -192,6 +192,15 @@ export class EsperService {
     this.esper.constructFromJson(JSON.parse(JSON.stringify(await this.getEsper(esperId))), this.translateService);
     this.esper.name = this.esper.getName(this.translateService);
 
+    for (const nodeId of Object.keys(this.esper.board.nodes)) {
+      const node = this.esper.board.nodes[nodeId];
+      this.esper.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
+      if (this.esper.board.nodes[nodeId].skill) {
+        this.esper.board.nodes[nodeId].skill.sp = node.sp;
+        this.esper.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
+      }
+    }
+
     this.esper.star = 1;
     this.esper.level = 1;
     this.esper.maxSPs = 0;
@@ -209,7 +218,7 @@ export class EsperService {
     }
 
     this.esper.updateEsperBuffs();
-    this.esper.grid = this.gridService.generateEsperGrid(this.esper, 1000);
+    this.esper.grid = await this.gridService.generateEsperGrid(this.esper, 1000);
 
     return this.esper;
   }

@@ -3927,8 +3927,12 @@ export class JsonService {
   }
 
   private addSkill(skillId, item) {
-    if (!this[this.version].wotvSkills[skillId] && this[this.version].skills[skillId]) {
-      const rawSkill = this[this.version].skills[skillId];
+    if (!this[this.version].wotvSkills[skillId] && (this[this.version].skills[skillId] || this[this.version].buffs[skillId])) {
+      let rawSkill = this[this.version].skills[skillId];
+      if (!rawSkill) {
+        rawSkill = this[this.version].buffs[skillId];
+        rawSkill.slot = 0;
+      }
 
       if (!this.slots[rawSkill.slot]) {
         console.log('Unknown slot -- ' + item.dataId + ' -- ' + skillId + ' -- ' + rawSkill.slot);
@@ -4722,9 +4726,11 @@ export class JsonService {
       this[this.version].espersBoards[esper.dataId].panels.forEach(item => {
         esper.board.nodes[item.panel_id] = {
           dataId: item.value,
-          type: 'buff',
-          skill: this.OLDaddSkill(esper, item)
+          sp: item.sp,
+          unlockStar: item.unlock_value + 1
         };
+
+        this.addSkill(item.value, esper);
       });
 
       this[this.version].espersBoards[esper.dataId].lines.forEach(line => {

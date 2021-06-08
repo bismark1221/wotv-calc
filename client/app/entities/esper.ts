@@ -212,7 +212,7 @@ export class Esper {
   private calculateTotalBuffs() {
     Object.keys(this.board.nodes).forEach(nodeId => {
       const node = this.board.nodes[nodeId];
-      if (node.type === 'buff' && node.level) {
+      if (node.skill.type === 'buff' && node.level) {
         node.skill.effects.forEach(effect => {
           if (effect.calcType === 'percent' || effect.calcType === 'fixe' ||  effect.calcType === 'resistance') {
             this.updateBuff(effect.type, effect.minValue, effect.calcType === 'percent' ? 'percent' : 'board');

@@ -1147,12 +1147,12 @@ export class GridService {
     private nameService: NameService
   ) {}
 
-  generateEsperGrid(esper, size) {
+  async generateEsperGrid(esper, size) {
     const nodesForGrid = [];
 
-    this.gridNodes.forEach(node => {
+    for (const node of this.gridNodes) {
       if (esper.board.nodes[node.toString()]) {
-        const buff = esper.board.nodes[node.toString()].skill;
+        const buff = await this.skillService.getSkill(esper.board.nodes[node.toString()].dataId);
 
         nodesForGrid[node] = {
           type: 'text',
@@ -1167,7 +1167,7 @@ export class GridService {
           type: 'hidden'
         };
       }
-    });
+    }
 
     let linesHtml = '';
     esper.board.lines.forEach(line => {
