@@ -1186,12 +1186,14 @@
               <td colspan="6"><img class="unitImg" src="{{'assets/units/' + unit.image + '.png'}}" /></td>
             </tr>
             <tr>
-              <th class="sub" colspan="3">Rarity</th>
-              <th class="sub" colspan="3">Element</th>
+              <th class="sub" colspan="2">Rarity</th>
+              <th class="sub" colspan="2">Element</th>
+              <th class="sub" colspan="2">Limited</th>
             </tr>
             <tr>
-              <td colspan="3"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" /></td>
-              <td colspan="3"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" /></td>
+              <td colspan="2"><img class="rarityImg" src="{{'assets/rarity/' + unit.rarity + '.png'}}" /></td>
+              <td colspan="2"><img class="rarityImg" src="{{'assets/elements/' + unit.element + '.png'}}" /></td>
+              <td colspan="2" class="bigText">{{ unit.limited ? "Yes" : "No" }}</td>
             </tr>
             <tr>
               <th class="sub" colspan="2">Move</th>

@@ -270,7 +270,42 @@ export class UnitService {
   async getUnitBySlug(slug) {
     await this.getUnits();
 
-    return this[this.navService.getVersion() + '_units'].find(unit => unit.slug === slug);
+    const unit = this[this.navService.getVersion() + '_units'].find(searchedUnit => searchedUnit.slug === slug);
+
+    if (unit) {
+      await this.formatSkills(unit);
+    }
+
+    return unit;
+  }
+
+  async formatSkills(unit) {
+    for (const nodeId of Object.keys(unit.board.nodes)) {
+      const node = unit.board.nodes[nodeId];
+      if (node.dataId) {
+        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
+      }
+
+      if (unit.board.nodes[nodeId].skill) {
+        if (unit.board.nodes[nodeId].skill.type === 'buff' || unit.board.nodes[nodeId].skill.type === 'ex_buff') {
+          unit.board.nodes[nodeId].skill = JSON.parse(JSON.stringify(unit.board.nodes[nodeId].skill));
+        }
+
+        unit.board.nodes[nodeId].skill.unlockStar = node.unlockStar;
+        unit.board.nodes[nodeId].skill.unlockJob = node.unlockJob;
+        unit.board.nodes[nodeId].skill.jobLevel = node.jobLevel;
+        unit.board.nodes[nodeId].skill.jp = node.jp;
+        unit.board.nodes[nodeId].skill.mainSkill = node.mainSkill;
+      }
+    }
+
+    if (unit.replacedSkills) {
+      for (const replace of Object.keys(unit.replacedSkills)) {
+        for (const upgrade of unit.replacedSkills[replace]) {
+          upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill);
+        }
+      }
+    }
   }
 
   isLimited(id) {
@@ -349,6 +384,9 @@ export class UnitService {
     this.unit = new Unit();
     this.unit.constructFromJson(JSON.parse(JSON.stringify(await this.getUnit(unitId, forcedVersion))), this.translateService);
     this.unit.name = this.unit.getName(this.translateService);
+
+    await this.formatSkills(this.unit);
+
     this.unit.formatUpgrades();
 
     this.unit.jobsData = [];
@@ -448,7 +486,7 @@ export class UnitService {
           this.unit.board.nodes[nodeId].level = unit.nodes[nodeId];
           this.unit.board.nodes[nodeId].activated = true;
 
-          if (this.unit.replacedSkills[this.unit.board.nodes[nodeId].dataId]) {
+          if (this.unit.replacedSkills && this.unit.replacedSkills[this.unit.board.nodes[nodeId].dataId]) {
             this.unit.replacedSkills[this.unit.board.nodes[nodeId].dataId].forEach(upgrade => {
               const newSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
 

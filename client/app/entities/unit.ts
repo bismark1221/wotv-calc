@@ -1213,7 +1213,7 @@ export class Unit {
       }
     }
 
-    if (this.replacedSkills[node.dataId]) {
+    if (this.replacedSkills && this.replacedSkills[node.dataId]) {
       if (node.level === 0) {
         this.replacedSkills[node.dataId].forEach(upgrade => {
           if (!upgrade.oldSkillData) {
@@ -1241,19 +1241,21 @@ export class Unit {
         });
       } else {
         this.replacedSkills[node.dataId].forEach(upgrade => {
-          const newSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
+          if (upgrade.newSkill) {
+            const newSkill = JSON.parse(JSON.stringify(upgrade.newSkill));
 
-          Object.keys(this.board.nodes).forEach(oldNodeId => {
-            if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
-              const oldSkill = this.board.nodes[oldNodeId].skill;
-              newSkill.level = this.board.nodes[oldNodeId].level;
-              newSkill.jobLevel = oldSkill.jobLevel;
-              newSkill.unlockJob = oldSkill.unlockJob;
-              newSkill.unlockStar = oldSkill.unlockStar;
+            Object.keys(this.board.nodes).forEach(oldNodeId => {
+              if (this.board.nodes[oldNodeId].dataId === upgrade.oldSkill) {
+                const oldSkill = this.board.nodes[oldNodeId].skill;
+                newSkill.level = this.board.nodes[oldNodeId].level;
+                newSkill.jobLevel = oldSkill.jobLevel;
+                newSkill.unlockJob = oldSkill.unlockJob;
+                newSkill.unlockStar = oldSkill.unlockStar;
 
-              this.board.nodes[oldNodeId].skill = newSkill;
-            }
-          });
+                this.board.nodes[oldNodeId].skill = newSkill;
+              }
+            });
+          }
         });
       }
     }
@@ -1677,14 +1679,16 @@ export class Unit {
   }
 
   formatUpgrades() {
-    Object.keys(this.replacedSkills).forEach(upgradeId => {
-      this.replacedSkills[upgradeId].forEach(upgrade => {
-        const oldSkillData = this.getSkillById(upgrade.oldSkill);
-        if (oldSkillData) {
-          upgrade.oldSkillData = JSON.parse(JSON.stringify(oldSkillData.skill));
-        }
+    if (this.replacedSkills) {
+      Object.keys(this.replacedSkills).forEach(upgradeId => {
+        this.replacedSkills[upgradeId].forEach(upgrade => {
+          const oldSkillData = this.getSkillById(upgrade.oldSkill);
+          if (oldSkillData) {
+            upgrade.oldSkillData = JSON.parse(JSON.stringify(oldSkillData.skill));
+          }
+        });
       });
-    });
+    }
   }
 
   getSkillById(skillId) {

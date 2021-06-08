@@ -2180,15 +2180,15 @@ export class JsonService {
   ];
 
   async getLastAssets() {
-    // await this.getItemAssets();
-    // await this.getCardAssets();
-    // await this.getEquipmentAssets();
-    // await this.getJobAssets();
-    // await this.getUnitAssets();
-    // await this.getTitleAssets();
-    // this.getGrids();
-    // this.getMaps();
-    // this.getLocales();
+    await this.getItemAssets();
+    await this.getCardAssets();
+    await this.getEquipmentAssets();
+    await this.getJobAssets();
+    await this.getUnitAssets();
+    await this.getTitleAssets();
+    this.getGrids();
+    this.getMaps();
+    this.getLocales();
   }
 
   async getItemAssets() {
@@ -3515,7 +3515,6 @@ export class JsonService {
         nodes: {},
         lines: []
       },
-      replacedSkills : {},
       tmr: null,
       releaseDate: ''
     };
@@ -3715,12 +3714,30 @@ export class JsonService {
   private getSkillsAndBuffs(unit) {
     if (this[this.version].boards[unit.dataId]) {
       this[this.version].boards[unit.dataId].panels.forEach(item => {
-
         unit.board.nodes[item.panel_id] = {
           dataId: item.value,
           type: item.panel_effect_type === 1 ? 'skill' : 'buff',
-          skill: this.OLDaddSkill(unit, item)
+          unlockStar: item.unlock_value + 1,
+          unlockJob: item.get_job,
+          jobLevel: item.need_level,
+          jp: item.jp,
+          mainSkill: this[this.version].skills[item.value] && this[this.version].skills[item.value].slot === 1
         };
+
+        this.addSkill(item.value, unit);
+
+        if (item.ival) {
+          unit.board.nodes[item.panel_id].skill = {
+            effects: [
+              {
+                type: "INCREASE_UNIT_LEVEL",
+                value: item.ival,
+                calcType: "fixe"
+              }
+            ],
+            type: "buff"
+          };
+        }
       });
 
       this[this.version].boards[unit.dataId].lines.forEach(line => {
@@ -3730,32 +3747,25 @@ export class JsonService {
 
     let OldUpgrades = [];
 
-    while (Object.keys(unit.replacedSkills).length > OldUpgrades.length) {
-      OldUpgrades = Object.keys(unit.replacedSkills);
+    if (unit.replacedSkills) {
+      while (Object.keys(unit.replacedSkills).length > OldUpgrades.length) {
+        OldUpgrades = Object.keys(unit.replacedSkills);
 
-      Object.keys(unit.replacedSkills).forEach(replace => {
-        unit.replacedSkills[replace].forEach(upgrade => {
-          if (!upgrade.newSkill.dataId) {
-            let previousSkillType = 'skill';
-            Object.keys(unit.board.nodes).forEach(nodeId => {
-              if (unit.board.nodes[nodeId].dataId === upgrade.oldSkill) {
-                previousSkillType = unit.board.nodes[nodeId].type;
-              }
-            });
-
-            const fakePanelSkill = {
-              value: upgrade.newSkill,
-              slot: this.slots.indexOf(previousSkillType)
-            };
-
+        Object.keys(unit.replacedSkills).forEach(replace => {
+          unit.replacedSkills[replace].forEach(upgrade => {
             if (!this[this.version].skills[upgrade.newSkill].slot) {
+              let previousSkillType = 'skill';
+              if (this[this.version].wotvSkills[upgrade.oldSkill]) {
+                previousSkillType = this[this.version].wotvSkills[upgrade.oldSkill].type;
+              }
+
               this[this.version].skills[upgrade.newSkill].slot = this.slots.indexOf(previousSkillType);
             }
 
-            upgrade.newSkill = this.OLDaddSkill(unit, fakePanelSkill);
-          }
+            this.addSkill(upgrade.newSkill, unit);
+          });
         });
-      });
+      }
     }
   }
 
@@ -3895,37 +3905,6 @@ export class JsonService {
     }
   }
 
-  private OLDaddSkill(unit, panelSkill) {
-    const skill = {
-      unlockStar: panelSkill.unlock_value + 1,
-      unlockJob: panelSkill.get_job,
-      jobLevel: panelSkill.need_level,
-      jp: panelSkill.jp,
-      sp: panelSkill.sp,
-      effects: [],
-      dataId: panelSkill.value,
-      type: this.slots[(this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot ? this[this.version].skills[panelSkill.value].slot : 0)],
-      mainSkill: this[this.version].skills[panelSkill.value] && this[this.version].skills[panelSkill.value].slot === 1,
-      increaseUnitLevel: panelSkill.ival
-    };
-
-    if (panelSkill.ival) {
-      skill.effects.push({
-        type: 'INCREASE_UNIT_LEVEL',
-        value: panelSkill.ival,
-        calcType: 'fixe'
-      });
-    }
-
-    this.updateSkill(unit, skill, panelSkill.value);
-
-    if (skill.type !== 'buff' && this[this.version].skills[panelSkill.value].wth) {
-      this.addWeather(unit, skill, this[this.version].skills[panelSkill.value].wth.id);
-    }
-
-    return skill;
-  }
-
   private addSkill(skillId, item) {
     if (!this[this.version].wotvSkills[skillId] && (this[this.version].skills[skillId] || this[this.version].buffs[skillId])) {
       let rawSkill = this[this.version].skills[skillId];
@@ -3951,6 +3930,30 @@ export class JsonService {
       }
 
       this[this.version].wotvSkills[skillId] = skill;
+    }
+
+    if (this[this.version].skills[skillId] || this[this.version].buffs[skillId]) {
+      let rawSkill = this[this.version].skills[skillId];
+      if (!rawSkill) {
+        rawSkill = this[this.version].buffs[skillId];
+      }
+
+      if (rawSkill.replace) {
+        if (!item.replacedSkills) {
+          item.replacedSkills = {};
+        }
+
+        if (!item.replacedSkills[skillId]) {
+          item.replacedSkills[skillId] = [];
+        }
+
+        rawSkill.replace.forEach(change => {
+          item.replacedSkills[skillId].push({
+            oldSkill: change.skill_base,
+            newSkill: change.skill_after
+          });
+        });
+      }
     }
   }
 
@@ -4321,23 +4324,6 @@ export class JsonService {
         calcType: 'unknow',
         target: this.targetTypes[dataSkill.target],
           timing: 'SKILL_AFTER'
-      });
-    }
-
-    if (dataSkill.replace) {
-      if (!unit.replacedSkills) {
-        unit.replacedSkills = {};
-      }
-
-      if (!unit.replacedSkills[skillId]) {
-        unit.replacedSkills[skillId] = [];
-      }
-
-      dataSkill.replace.forEach(change => {
-        unit.replacedSkills[skillId].push({
-          oldSkill: change.skill_base,
-          newSkill: change.skill_after
-        });
       });
     }
 

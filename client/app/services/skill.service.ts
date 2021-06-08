@@ -1763,20 +1763,19 @@ export class SkillService {
       const replacedSkills = unit.replacedSkills[skill.dataId];
       html = 'Upgrade skill' + (replacedSkills.length > 1 ? 's' : '') + ' : ';
 
+      const skillNames = [];
       replacedSkills.forEach((replacedSkill, skillIndex) => {
         if (this.isSkillExistForUnit(unit, replacedSkill.oldSkill)) {
-          if (skillIndex !== 0) {
-            html += ', ';
-          }
-
           const name = this.nameService.getName(replacedSkill.newSkill);
           if (name === '通常攻撃') {
-            html += 'Basic attack';
+            skillNames.push('Basic attack');
           } else {
-            html += name;
+            skillNames.push(name);
           }
         }
       });
+
+      html += skillNames.join(', ');
     }
 
     return html;
