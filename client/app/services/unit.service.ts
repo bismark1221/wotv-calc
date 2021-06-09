@@ -432,8 +432,6 @@ export class UnitService {
     this.unit.equipments = [];
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
-      console.log(this.unit)
-      console.log(nodeId)
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
         this.unit.board.nodes[nodeId].activated = true;
         this.unit.board.nodes[nodeId].level = 1;
