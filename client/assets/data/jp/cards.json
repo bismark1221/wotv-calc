@@ -6029,6 +6029,118 @@
       }
     ]
   },
+  "VC_LW_JEDN": {
+    "dataId": "VC_LW_JEDN",
+    "names": {
+      "en": "大いなる牡鹿"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 47,
+        "max": 367
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {},
+      "MAG": {
+        "min": 35,
+        "max": 135
+      },
+      "DEX": {
+        "min": 12,
+        "max": 47
+      },
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsjedn",
+    "releaseDate": "09/06/2021",
+    "slug": "ooinaru-oshika",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_JEDN_GS",
+        "awake": "SK_VC_LW_JEDN_GS_AW",
+        "lvmax": "SK_VC_LW_JEDN_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_JEDN_GS_2",
+        "awake": "SK_VC_LW_JEDN_GS_AW_2",
+        "lvmax": "SK_VC_LW_JEDN_GSMAX_2",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_JEDN_P",
+        "awake": "SK_VC_LW_JEDN_PAW",
+        "lvmax": "SK_VC_LW_JEDN_PMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {
@@ -10189,6 +10301,116 @@
             "type": "elem",
             "items": [
               "dark"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "VC_LW_IGEN": {
+    "dataId": "VC_LW_IGEN",
+    "names": {
+      "en": "森閑のぬくもり"
+    },
+    "cost": 50,
+    "rarity": "MR",
+    "stats": {
+      "HP": {
+        "min": 38,
+        "max": 301
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {
+        "min": 26,
+        "max": 105
+      },
+      "DEF": {},
+      "SPR": {},
+      "MAG": {},
+      "DEX": {},
+      "AGI": {
+        "min": 1,
+        "max": 3
+      },
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapsigen",
+    "releaseDate": "09/06/2021",
+    "slug": "shinkan-no-nukumori",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_IGEN_GS",
+        "awake": "SK_VC_LW_IGEN_GSAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_IGEN_GS_2",
+        "awake": "SK_VC_LW_IGEN_GSAW_2",
+        "lvmax": "SK_VC_LW_IGEN_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_IGEN_P",
+        "awake": "SK_VC_LW_IGEN_PAW",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "ice"
             ]
           }
         ]

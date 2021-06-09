@@ -27133,6 +27133,301 @@
     },
     "releaseDate": "14/04/2021"
   },
+  "AF_LOT_LW_CLT_019": {
+    "names": {
+      "en": "ダイヤのコート"
+    },
+    "slug": "daiya-no-koto",
+    "stats": {
+      "HP": {
+        "min": 31,
+        "max": 620
+      },
+      "DEF": {
+        "min": 1,
+        "max": 18
+      },
+      "SPR": {
+        "min": 0,
+        "max": 8
+      },
+      "CRITIC_AVOID": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    "type": "CLOTH",
+    "dataId": "AF_LW_CLT_019",
+    "grows": {
+      "AFGROW_VIT_50": {
+        "dataId": "AFGROW_VIT_50",
+        "names": {
+          "en": "ヴァイタル"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": 0,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -20,
+          "DEF": -75,
+          "MAG": -20,
+          "SPR": -75,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_SLD_50": {
+        "dataId": "AFGROW_SLD_50",
+        "names": {
+          "en": "シールド"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": 0,
+          "MAG": -50,
+          "SPR": -50,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      },
+      "AFGROW_BAR_50": {
+        "dataId": "AFGROW_BAR_50",
+        "names": {
+          "en": "バリア"
+        },
+        "curve": {
+          "MAX_LV": 50,
+          "HP": -30,
+          "TP": 0,
+          "AP": 0,
+          "ATK": -50,
+          "DEF": -50,
+          "MAG": -50,
+          "SPR": 0,
+          "ACCURACY": -75,
+          "DEX": 0,
+          "AGI": 0,
+          "EVADE": -75,
+          "CRITIC_RATE": -75,
+          "CRITIC_AVOID": 0
+        }
+      }
+    },
+    "skills": [
+      [],
+      [
+        {
+          "dataId": "SK_LW_CLT_019_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_AP_GET_1",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_CLT_019_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_AP_GET_2",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_CLT_019_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_AP_GET_3",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_CLT_019_4",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_AP_GET_4_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ],
+      [
+        {
+          "dataId": "SK_LW_CLT_019_5",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        },
+        {
+          "dataId": "SK_LW_AP_GET_5_UR",
+          "upgrade": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "grow": "ARTIFACT_50",
+          "maxLevel": 30
+        }
+      ]
+    ],
+    "rarity": "UR",
+    "image": "lapswpn_clt_019",
+    "equippableJobs": [
+      "JB_LW_HUN_FIRE",
+      "JB_LW_GUN_FIRE",
+      "JB_LW_FINA",
+      "JB_LW_WGN_FIRE",
+      "JB_FFT_MSTD",
+      "JB_FF4_ROSA",
+      "JB_LW_ARC_FIRE",
+      "JB_FF7_BART",
+      "JB_LW_JEDN"
+    ],
+    "equippableUnits": [],
+    "materials": [
+      {
+        "IT_AF_LW_CLT_019": 1,
+        "IT_AF_MAT_YARN_01": 30,
+        "IT_AF_MAT_YARN_02": 235,
+        "IT_AF_MAT_BOMB": 10,
+        "IT_AF_MAT_LESS_02": 16,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_019": 3,
+        "IT_AF_MAT_YARN_01": 90,
+        "IT_AF_MAT_YARN_02": 335,
+        "IT_AF_MAT_BOMB": 30,
+        "IT_AF_MAT_LESS_02": 36,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_019": 7,
+        "IT_AF_MAT_YARN_01": 210,
+        "IT_AF_MAT_YARN_02": 535,
+        "IT_AF_MAT_BOMB": 70,
+        "IT_AF_MAT_LESS_02": 76,
+        "IT_AF_AW_ARMOR": 375
+      },
+      {
+        "IT_AF_LW_CLT_019": 15,
+        "IT_AF_MAT_YARN_01": 450,
+        "IT_AF_MAT_YARN_02": 985,
+        "IT_AF_MAT_BOMB": 150,
+        "IT_AF_MAT_LESS_02": 156,
+        "IT_AF_AW_ARMOR": 475
+      },
+      {
+        "IT_AF_LW_CLT_019": 31,
+        "IT_AF_MAT_YARN_01": 930,
+        "IT_AF_MAT_YARN_02": 1955,
+        "IT_AF_MAT_BOMB": 310,
+        "IT_AF_MAT_LESS_02": 316,
+        "IT_AF_AW_ARMOR": 825
+      },
+      {
+        "IT_AF_LW_CLT_019": 63,
+        "IT_AF_MAT_YARN_01": 1890,
+        "IT_AF_MAT_YARN_02": 3995,
+        "IT_AF_MAT_BOMB": 630,
+        "IT_AF_MAT_LESS_02": 638,
+        "IT_AF_AW_ARMOR": 1725
+      }
+    ],
+    "acquisition": {
+      "type": "Unknown"
+    },
+    "releaseDate": "09/06/2021"
+  },
   "AF_LW_RNG_001": {
     "names": {
       "en": "ラインストーンリング - Rhinestone Ring"

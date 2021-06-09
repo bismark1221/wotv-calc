@@ -59760,6 +59760,38 @@
       ]
     },
     {
+      "iname": "JB_LW_VKTR_M",
+      "mdl": "DRG",
+      "cc_icon": "DRG_EC",
+      "origin": "JB_LW_DRG_EX_M",
+      "equips": [
+        10,
+        18,
+        20,
+        22
+      ],
+      "type": 1,
+      "role": 1,
+      "move": 3,
+      "jump": 4,
+      "lvtbl_main": "JBLV_LW_VKTR_EXM",
+      "lvtbl_sub": "JBLV_LW_VKTR_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 2311,
+          "ap": 2311,
+          "atk": 4263,
+          "mag": 812,
+          "dex": 3045,
+          "spd": 2300,
+          "luk": 3060,
+          "iniap": -82
+        }
+      ]
+    },
+    {
       "iname": "JB_LW_BLM_EX_M",
       "mdl": "BLM",
       "cc_icon": "BLM_EC",
@@ -61504,6 +61536,38 @@
       ]
     },
     {
+      "iname": "JB_LW_RIRY_M",
+      "mdl": "GUN",
+      "cc_icon": "GUN_EC",
+      "origin": "JB_LW_GUN_EX_M",
+      "equips": [
+        14,
+        19,
+        21,
+        22
+      ],
+      "type": 1,
+      "role": 3,
+      "move": 3,
+      "jump": 1,
+      "lvtbl_main": "JBLV_LW_RIRY_EXM",
+      "lvtbl_sub": "JBLV_LW_RIRY_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 2311,
+          "ap": 2311,
+          "atk": 3045,
+          "mag": 1522,
+          "dex": 4263,
+          "spd": 4200,
+          "luk": 2346,
+          "iniap": -82
+        }
+      ]
+    },
+    {
       "iname": "JB_LW_HLNA_01_M",
       "mdl": "WIZ",
       "cc_icon": "WIZ_EC",
@@ -62613,6 +62677,38 @@
       "jump": 3,
       "lvtbl_main": "JBLV_LW_KTON_EXM",
       "lvtbl_sub": "JBLV_LW_KTON_EXM",
+      "sub_rate": 50,
+      "ranks": [
+        {
+          "hp": 6450,
+          "mp": 804,
+          "ap": 804,
+          "atk": 3451,
+          "mag": 1522,
+          "dex": 3451,
+          "spd": 4700,
+          "luk": 3468,
+          "iniap": -82
+        }
+      ]
+    },
+    {
+      "iname": "JB_LW_SDLX_M",
+      "mdl": "NIN",
+      "cc_icon": "NIN_EC",
+      "origin": "JB_LW_NIN_EX_M",
+      "equips": [
+        6,
+        19,
+        21,
+        22
+      ],
+      "type": 1,
+      "role": 2,
+      "move": 4,
+      "jump": 3,
+      "lvtbl_main": "JBLV_LW_SDLX_EXM",
+      "lvtbl_sub": "JBLV_LW_SDLX_EXM",
       "sub_rate": 50,
       "ranks": [
         {

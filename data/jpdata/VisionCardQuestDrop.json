@@ -241,6 +241,12 @@
       ]
     },
     {
+      "iname": "IT_VPI_LW_JEDN",
+      "questlist": [
+        "QE_VC_LW_JEDN"
+      ]
+    },
+    {
       "iname": "IT_VPI_LW_IGNT",
       "questlist": [
         "QE_VC_LW_IGNT"
@@ -432,6 +438,13 @@
       "questlist": [
         "QE_EV_VC_DMCM_1",
         "QE_EV_VC_DMCM_2"
+      ]
+    },
+    {
+      "iname": "IT_VPI_LW_IGEN",
+      "questlist": [
+        "QE_EV_VC_IGEN_1",
+        "QE_EV_VC_IGEN_2"
       ]
     },
     {
@@ -647,7 +660,8 @@
         "QE_VC_LW_MORE",
         "QE_VC_LW_MONT",
         "QE_VC_LW_LSWL",
-        "QE_VC_LW_RAIN"
+        "QE_VC_LW_RAIN",
+        "QE_VC_LW_JEDN"
       ]
     },
     {
@@ -661,6 +675,8 @@
         "QE_EV_VC_KRKN_2",
         "QE_EV_VC_DMCM_1",
         "QE_EV_VC_DMCM_2",
+        "QE_EV_VC_IGEN_1",
+        "QE_EV_VC_IGEN_2",
         "QE_EV_ART_SCR_01",
         "QE_EV_ART_SCR_02",
         "QE_EV_ART_SCR_03",
@@ -757,7 +773,8 @@
         "QE_VC_LW_MORE",
         "QE_VC_LW_MONT",
         "QE_VC_LW_LSWL",
-        "QE_VC_LW_RAIN"
+        "QE_VC_LW_RAIN",
+        "QE_VC_LW_JEDN"
       ]
     },
     {
@@ -770,6 +787,8 @@
         "QE_EV_VC_KRKN_2",
         "QE_EV_VC_DMCM_1",
         "QE_EV_VC_DMCM_2",
+        "QE_EV_VC_IGEN_1",
+        "QE_EV_VC_IGEN_2",
         "QE_EV_ART_SCR_01",
         "QE_EV_ART_SCR_02",
         "QE_EV_ART_SCR_03",
@@ -866,7 +885,8 @@
         "QE_VC_LW_MORE",
         "QE_VC_LW_MONT",
         "QE_VC_LW_LSWL",
-        "QE_VC_LW_RAIN"
+        "QE_VC_LW_RAIN",
+        "QE_VC_LW_JEDN"
       ]
     },
     {
@@ -962,7 +982,8 @@
         "QE_VC_LW_MORE",
         "QE_VC_LW_MONT",
         "QE_VC_LW_LSWL",
-        "QE_VC_LW_RAIN"
+        "QE_VC_LW_RAIN",
+        "QE_VC_LW_JEDN"
       ]
     }
   ]

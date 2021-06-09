@@ -5370,6 +5370,35 @@ export class JsonService {
         this.jp.wotvUnits[unitId] = this.gl.wotvUnits[unitId];
         const tmrId = this.jp.wotvUnits[unitId].tmr;
         this.jp.wotvEquipments[tmrId] = this.gl.wotvEquipments[tmrId];
+
+        const skillToAdd = [];
+        if (this.jp.wotvUnits[unitId].limit) {
+          skillToAdd.push(this.jp.wotvUnits[unitId].limit);
+        }
+
+        skillToAdd.push(this.jp.wotvUnits[unitId].attack);
+
+        this.jp.wotvUnits[unitId].masterSkill.forEach(skillId => {
+          skillToAdd.push(skillId);
+        });
+
+        if (this.jp.wotvUnits[unitId].replacedSkills) {
+          Object.keys(this.jp.wotvUnits[unitId].replacedSkills).forEach(upgradeId => {
+            this.jp.wotvUnits[unitId].replacedSkills[upgradeId].forEach(upgrade => {
+              skillToAdd.push(upgrade.newSkill);
+            });
+          });
+        }
+
+        Object.keys(this.jp.wotvUnits[unitId].board.nodes).forEach(nodeId => {
+          skillToAdd.push(this.jp.wotvUnits[unitId].board.nodes[nodeId].dataId);
+        });
+
+        skillToAdd.forEach(skillId => {
+          if (!this.jp.wotvSkills[skillId] && this.gl.wotvSkills[skillId]) {
+            this.jp.wotvSkills[skillId] = this.gl.wotvSkills[skillId];
+          }
+        });
       });
     }
 

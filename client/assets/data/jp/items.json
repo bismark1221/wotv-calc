@@ -7532,6 +7532,13 @@
     },
     "type": "compo_equipment"
   },
+  "IT_AF_MAT_YARN_02": {
+    "dataId": "IT_AF_MAT_YARN_02",
+    "names": {
+      "en": "不思議な糸"
+    },
+    "type": "compo_equipment"
+  },
   "IT_AF_MAT_WATER_03": {
     "dataId": "IT_AF_MAT_WATER_03",
     "names": {
@@ -8473,6 +8480,14 @@
     "type": "recipe",
     "icon": "AF_LW_GUN_011"
   },
+  "IT_AF_LW_CLT_019": {
+    "dataId": "IT_AF_LW_CLT_019",
+    "names": {
+      "en": "ダイヤのコートのクラフトレシピ"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_CLT_019"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -8745,6 +8760,14 @@
     "dataId": "IT_EC_RAID_17",
     "names": {
       "en": "リバイバルレイドメダル"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_13"
+  },
+  "IT_EC_RAID_18": {
+    "dataId": "IT_EC_RAID_18",
+    "names": {
+      "en": "【6月】レイドメダル"
     },
     "type": "medal",
     "icon": "IT_EC_RAID_13"
@@ -9179,6 +9202,14 @@
     "dataId": "IT_EC_SUMMON_06_02_b",
     "names": {
       "en": "【6月】ビジョン召喚メダルA"
+    },
+    "type": "medal",
+    "icon": "IT_EC_SUMMON_04"
+  },
+  "IT_EC_SUMMON_06_02_c": {
+    "dataId": "IT_EC_SUMMON_06_02_c",
+    "names": {
+      "en": "【6月】ビジョン召喚メダルB"
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_04"
@@ -10300,6 +10331,14 @@
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"
   },
+  "IT_US_SE_JB_EM_05_03": {
+    "dataId": "IT_US_SE_JB_EM_05_03",
+    "names": {
+      "en": "属性の輝石・緋×200選択召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
   "IT_US_SE_JB_EM_04_01": {
     "dataId": "IT_US_SE_JB_EM_04_01",
     "names": {
@@ -10488,6 +10527,14 @@
     "dataId": "IT_US_G_PU_JEDN",
     "names": {
       "en": "【ジェーダン・ランダル】ピックアップ召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_G_PU_01"
+  },
+  "IT_US_G_PU_VC_JEDN": {
+    "dataId": "IT_US_G_PU_VC_JEDN",
+    "names": {
+      "en": "【大いなる牡鹿】ピックアップ召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_G_PU_01"
@@ -12856,6 +12903,13 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_JEDN": {
+    "dataId": "IT_VPI_LW_JEDN",
+    "names": {
+      "en": "大いなる牡鹿の欠片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VPI_LW_IGNT": {
     "dataId": "IT_VPI_LW_IGNT",
     "names": {
@@ -13147,6 +13201,13 @@
     "dataId": "IT_VPI_LW_DMCM",
     "names": {
       "en": "怪魔合獣　デビルキマイラの欠片"
+    },
+    "type": "vc_shard"
+  },
+  "IT_VPI_LW_IGEN": {
+    "dataId": "IT_VPI_LW_IGEN",
+    "names": {
+      "en": "森閑のぬくもりの欠片"
     },
     "type": "vc_shard"
   },

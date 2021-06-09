@@ -500,16 +500,16 @@
         "en": "ライリュウ - Rairyuu"
       },
       "stats": {
-        "HP": 1410,
-        "TP": 115,
-        "AP": 99,
-        "ATK": 252,
+        "HP": 2146,
+        "TP": 120,
+        "AP": 104,
+        "ATK": 447,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 101,
-        "DEX": 199,
+        "MAG": 153,
+        "DEX": 338,
         "AGI": 64,
-        "LUCK": 156,
+        "LUCK": 195,
         "LIGHT_RES": -15,
         "SLASH_RES": -15,
         "PIERCE_RES": 15,
@@ -520,8 +520,10 @@
         "DISABLE_RES": 50,
         "MOVE": 3,
         "JUMP": 1,
-        "INITIAL_AP": 19,
+        "INITIAL_AP": 20,
         "CRITIC_RATE": 8,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "CRITIC_DAMAGE": 15,
         "RANGE": 1
       },
@@ -1421,16 +1423,16 @@
         "en": "シャドウリンクス - Shadowlynx"
       },
       "stats": {
-        "HP": 1449,
-        "TP": 91,
-        "AP": 85,
-        "ATK": 383,
+        "HP": 2206,
+        "TP": 95,
+        "AP": 89,
+        "ATK": 628,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 45,
-        "DEX": 179,
-        "AGI": 64,
-        "LUCK": 201,
+        "MAG": 82,
+        "DEX": 226,
+        "AGI": 66,
+        "LUCK": 263,
         "LIGHT_RES": -15,
         "STRIKE_RES": 10,
         "MISSILE_RES": -15,
@@ -1440,8 +1442,10 @@
         "DISABLE_RES": -25,
         "MOVE": 4,
         "JUMP": 3,
-        "INITIAL_AP": 15,
+        "INITIAL_AP": 16,
         "CRITIC_RATE": 9,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "EVADE": 15
       },
       "image": "lapssdlx"
@@ -1911,16 +1915,16 @@
         "en": "ヴィクトラ - Viktora"
       },
       "stats": {
-        "HP": 2259,
-        "TP": 126,
-        "AP": 119,
-        "ATK": 383,
+        "HP": 3523,
+        "TP": 132,
+        "AP": 125,
+        "ATK": 514,
         "DEF": 0,
         "SPR": 0,
-        "MAG": 69,
-        "DEX": 188,
+        "MAG": 91,
+        "DEX": 228,
         "AGI": 62,
-        "LUCK": 205,
+        "LUCK": 242,
         "FIRE_RES": -10,
         "WIND_RES": 20,
         "PIERCE_RES": 10,
@@ -1932,8 +1936,10 @@
         "IMMOBILIZE_RES": 50,
         "MOVE": 3,
         "JUMP": 4,
-        "INITIAL_AP": 21,
+        "INITIAL_AP": 22,
         "CRITIC_RATE": 14,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
         "PIERCE_ATK": 10,
         "NON_ATTACK_ACTIVATION_TIME": -200,
         "ATTACK_ACTIVATION_TIME": -200
@@ -3600,7 +3606,7 @@
     },
     {
       "names": {
-        "en": "ヘレナ（黒衣の魔女）"
+        "en": "ヘレナ（黒衣の魔女） - Helena (Black-Robed Witch)"
       },
       "stats": {
         "HP": 3484,
@@ -4187,6 +4193,40 @@
         "DEFENSE_PENETRATION": 20
       },
       "image": "lapsvern"
+    },
+    {
+      "names": {
+        "en": "ジェーダン・ランダル"
+      },
+      "stats": {
+        "HP": 3088,
+        "TP": 152,
+        "AP": 154,
+        "ATK": 104,
+        "DEF": 0,
+        "SPR": 0,
+        "MAG": 444,
+        "DEX": 322,
+        "AGI": 66,
+        "LUCK": 215,
+        "DARK_RES": -10,
+        "PIERCE_RES": -5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 30,
+        "MAGIC_RES": 10,
+        "POISON_RES": 50,
+        "TOAD_RES": 50,
+        "SLOW_RES": 10,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 33,
+        "CRITIC_RATE": 11,
+        "INCREASE_UNIT_LEVEL": 0,
+        "MAX_DAMAGE": 2000,
+        "LIGHT_ATK": 15,
+        "AP_CONSUMPTION": 20
+      },
+      "image": "lapsjedn"
     },
     {
       "names": {

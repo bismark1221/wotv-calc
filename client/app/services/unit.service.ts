@@ -279,11 +279,11 @@ export class UnitService {
     return unit;
   }
 
-  async formatSkills(unit) {
+  async formatSkills(unit, forcedVersion = null) {
     for (const nodeId of Object.keys(unit.board.nodes)) {
       const node = unit.board.nodes[nodeId];
       if (node.dataId) {
-        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId);
+        unit.board.nodes[nodeId].skill = await this.skillService.getSkill(node.dataId, forcedVersion);
       }
 
       if (unit.board.nodes[nodeId].skill) {
@@ -302,7 +302,9 @@ export class UnitService {
     if (unit.replacedSkills) {
       for (const replace of Object.keys(unit.replacedSkills)) {
         for (const upgrade of unit.replacedSkills[replace]) {
-          upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill);
+          if (typeof upgrade.newSkill === 'string') {
+            upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill, forcedVersion);
+          }
         }
       }
     }
@@ -385,7 +387,7 @@ export class UnitService {
     this.unit.constructFromJson(JSON.parse(JSON.stringify(await this.getUnit(unitId, forcedVersion))), this.translateService);
     this.unit.name = this.unit.getName(this.translateService);
 
-    await this.formatSkills(this.unit);
+    await this.formatSkills(this.unit, forcedVersion);
 
     this.unit.formatUpgrades();
 
@@ -419,7 +421,7 @@ export class UnitService {
     this.unit.masterSkillActivated = -1;
     let i = 0;
     for (const masterSkillId of this.unit.masterSkill) {
-      const masterSkill = await this.skillService.getSkill(masterSkillId);
+      const masterSkill = await this.skillService.getSkill(masterSkillId, forcedVersion);
       if (masterSkill) {
         this.unit.formattedMasterSkill.push(masterSkill);
         this.unit.masterSkillLevel.push(i);
@@ -430,6 +432,8 @@ export class UnitService {
     this.unit.equipments = [];
 
     Object.keys(this.unit.board.nodes).forEach(nodeId => {
+      console.log(this.unit)
+      console.log(nodeId)
       if (this.unit.board.nodes[nodeId].skill.unlockStar === null) {
         this.unit.board.nodes[nodeId].activated = true;
         this.unit.board.nodes[nodeId].level = 1;
@@ -437,11 +441,11 @@ export class UnitService {
     });
 
     if (this.unit.attack) {
-      this.unit.formattedAttack = await this.skillService.getSkill(this.unit.attack);
+      this.unit.formattedAttack = await this.skillService.getSkill(this.unit.attack, forcedVersion);
     }
 
     if (this.unit.limit) {
-      this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit);
+      this.unit.formattedLimit = await this.skillService.getSkill(this.unit.limit, forcedVersion);
       if (this.unit.formattedLimit) {
         this.unit.formattedLimit.level = 1;
       }
