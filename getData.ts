@@ -4978,7 +4978,6 @@ export class JsonService {
             }
 
             this.addSkill(skillId, this[this.version].wotvEquipments[rType]);
-            //this.updateSkill(this[this.version].wotvEquipments[rType], skill, skillId);
             skills.push(skill);
             skillsPos[skillId] = countSkill;
             countSkill++;
@@ -5676,28 +5675,28 @@ export class JsonService {
 
       if (map.enemy) {
         for (const enemy of map.enemy) {
-          //this.checkIfTileExist(quest, enemy);
+          this.checkIfTileExist(quest, enemy);
 
           if (enemy.side === 0 && enemy.iname.split('_')[1] !== 'GM') {
-            //quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
+            quest.grid[enemy.x][enemy.y].ally = quest.allies.length;
             quest.allies.push(this.formatEnemyForQuest(enemy));
             await this.addOtherUnit(enemy, false, 'ally');
           } else {
             if (enemy.iname === 'UN_GM_TREASURE') {
-              //quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
+              quest.grid[enemy.x][enemy.y].chest = quest.chests.length;
               quest.chests.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'chest');
             } else if (enemy.iname === 'UN_GM_SWITCH' || enemy.iname === 'UN_GM_SWITCH_01' || enemy.iname === 'UN_GM_SWITCH_02' || enemy.iname === 'UN_GM_SWITCH_03') {
-              //quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
+              quest.grid[enemy.x][enemy.y].switch = quest.switchs.length;
               quest.switchs.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'switch');
             } else if (enemy.iname.split('_')[1] === 'GM') {
-              //quest.grid[enemy.x][enemy.y].object = quest.objects.length;
+              quest.grid[enemy.x][enemy.y].object = quest.objects.length;
               quest.objects.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, true, 'object');
             } else {
               if (!enemy.hasBody) {
-                //quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
+                quest.grid[enemy.x][enemy.y].enemy = quest.enemies.length;
               }
               quest.enemies.push(this.formatEnemyForQuest(enemy));
               await this.addOtherUnit(enemy, false, 'enemy');
@@ -5709,14 +5708,14 @@ export class JsonService {
       if (map.arena) {
         map.arena.forEach((arena, arenaIndex) => {
           this.checkIfTileExist(quest, arena);
-          //quest.grid[arena.x][arena.y].enemy = arenaIndex;
+          quest.grid[arena.x][arena.y].enemy = arenaIndex;
         });
       }
 
       if (map.party) {
         map.party.forEach((party, partyIndex) => {
           this.checkIfTileExist(quest, party);
-          //quest.grid[party.x][party.y].party = partyIndex;
+          quest.grid[party.x][party.y].party = partyIndex;
         });
       }
 
