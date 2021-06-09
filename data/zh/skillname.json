@@ -5921,6 +5921,34 @@
             "value": "雙攻擊"
         },
         {
+            "key": "SK_CBCL_ATK",
+            "value": "普通攻擊"
+        },
+        {
+            "key": "SK_CBCL_M_01",
+            "value": "強放逐"
+        },
+        {
+            "key": "SK_CBCL_M_02",
+            "value": "中療傷"
+        },
+        {
+            "key": "SK_CBCL_M_03",
+            "value": "混亂"
+        },
+        {
+            "key": "SK_CBCL_M_04",
+            "value": "紅寶石耀光"
+        },
+        {
+            "key": "SK_CBCL_M_05",
+            "value": "紅寶石之光"
+        },
+        {
+            "key": "SK_CBCL_M_06",
+            "value": "模式轉換"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "普通攻擊"
         },
@@ -6797,6 +6825,10 @@
             "value": "衝擊波"
         },
         {
+            "key": "SK_SMN_CBCL",
+            "value": "紅寶石之光"
+        },
+        {
             "key": "SK_UN_BD_EC_HP_200",
             "value": "提升HP上限"
         },
@@ -6927,6 +6959,26 @@
         {
             "key": "SK_LW_EC_LAN_C_04B",
             "value": "天地讃衝"
+        },
+        {
+            "key": "SK_LW_EC_LAN_A_03",
+            "value": "兇槍飛翔"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05",
+            "value": "銳利槍擊強化"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05B",
+            "value": "銳利槍擊·靜寂"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06",
+            "value": "黃泉餽贈強化"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06B",
+            "value": "黃泉餽贈·破戒"
         },
         {
             "key": "SK_LW_EC_SWN_A_01",
@@ -7147,6 +7199,26 @@
         {
             "key": "SK_LW_EC_BLM_C_02B",
             "value": "黑魔導秘術"
+        },
+        {
+            "key": "SK_LW_EC_BLM_A_02",
+            "value": "魔淵之沼"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03",
+            "value": "蛙變強化"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03B",
+            "value": "蛙變【閉塞】"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04",
+            "value": "毒化強化"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04B",
+            "value": "毒化【閉塞】"
         },
         {
             "key": "SK_LW_EC_TIM_A_01",
@@ -7407,6 +7479,26 @@
         {
             "key": "SK_LW_EC_ASS_C_02B",
             "value": "破鎧吸刃"
+        },
+        {
+            "key": "SK_LW_EC_CLR_A_01",
+            "value": "過量射線"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01",
+            "value": "反制災禍強化"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01B",
+            "value": "災禍之壁"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02",
+            "value": "提升精神Lv1強化"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02B",
+            "value": "堅毅之心"
         },
         {
             "key": "SK_US_POTION",
@@ -8202,6 +8294,34 @@
         },
         {
             "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_2",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_3",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_4",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5_S",
             "value": ""
         },
         {
@@ -9973,6 +10093,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CBCL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -11130,6 +11262,18 @@
         },
         {
             "key": "SK_VC_LW_ROSEFES_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX_2",
             "value": ""
         },
         {
@@ -12587,6 +12731,22 @@
         {
             "key": "SK_VC_LW_ROSEFES_PMAX_2",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PVA",
+            "value": "紅寶石治癒"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",

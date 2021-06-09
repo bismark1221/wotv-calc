@@ -2613,6 +2613,22 @@
             "value": ""
         },
         {
+            "key": "BUFF_CBCL_M_02",
+            "value": ""
+        },
+        {
+            "key": "BUFF_CBCL_M_03",
+            "value": ""
+        },
+        {
+            "key": "BUFF_CBCL_M_04",
+            "value": ""
+        },
+        {
+            "key": "BUFF_CBCL_M_06",
+            "value": ""
+        },
+        {
             "key": "BUFF_SNAK_M_01",
             "value": ""
         },
@@ -3153,6 +3169,10 @@
             "value": ""
         },
         {
+            "key": "BUFF_SMN_CBCL",
+            "value": ""
+        },
+        {
             "key": "BUFF_UN_BD_EC_HP_200",
             "value": ""
         },
@@ -3230,6 +3250,26 @@
         },
         {
             "key": "BUFF_LW_EC_LAN_C_03B",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_LAN_A_02",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_LAN_C_03B_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_LAN_C_03B_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_LAN_C_04B_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_LAN_C_04B_2",
             "value": ""
         },
         {
@@ -3350,6 +3390,26 @@
         },
         {
             "key": "BUFF_LW_EC_BLM_C_02B",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_BLM_A_02",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_BLM_C_03B_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_BLM_C_03B_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_BLM_C_04B_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_BLM_C_04B_2",
             "value": ""
         },
         {
@@ -3502,6 +3562,30 @@
         },
         {
             "key": "BUFF_LW_EC_ASS_C_02B",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_A_01_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_A_01_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_C_01B_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_C_01B_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_C_01B_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_EC_CLR_C_02B",
             "value": ""
         },
         {
@@ -5053,6 +5137,18 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_LW_CBCL_GS",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -6210,6 +6306,18 @@
         },
         {
             "key": "BUFF_VC_LW_ROSEFES_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_GSMAX_2",
             "value": ""
         },
         {
@@ -7657,6 +7765,22 @@
             "value": ""
         },
         {
+            "key": "BUFF_VC_LW_CBCL_P",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_PAW",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "BUFF_VC_LW_CBCL_PVA",
+            "value": ""
+        },
+        {
             "key": "BUFF_VC_LW_CACT_P",
             "value": ""
         },
@@ -7834,6 +7958,34 @@
         },
         {
             "key": "BUFF_LW_RNG_003_5_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_1",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_2",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_3",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_4",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_5",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_1_S",
+            "value": ""
+        },
+        {
+            "key": "BUFF_LW_ACC_003_5_S",
             "value": ""
         },
         {
@@ -13101,6 +13253,38 @@
             "value": "光屬性特效+10%"
         },
         {
+            "key": "BUFF_DABL_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_DABL_35",
+            "value": "暴擊率+4"
+        },
+        {
+            "key": "BUFF_DABL_36",
+            "value": "暴擊率+5"
+        },
+        {
+            "key": "BUFF_DABL_37",
+            "value": "斬擊耐性+5%"
+        },
+        {
+            "key": "BUFF_DABL_38",
+            "value": "暗屬性能力攻擊UP+4%"
+        },
+        {
+            "key": "BUFF_DABL_39",
+            "value": "暗屬性能力攻擊UP+5%"
+        },
+        {
+            "key": "BUFF_DABL_40",
+            "value": "暗屬性能力攻擊UP+6%"
+        },
+        {
+            "key": "BUFF_DABL_41",
+            "value": "暗屬性能力攻擊UP+10%"
+        },
+        {
             "key": "BUFF_CHCB_01_01",
             "value": "命中率+3"
         },
@@ -15473,6 +15657,170 @@
             "value": "射擊攻擊UP+5%"
         },
         {
+            "key": "BUFF_CBCL_01",
+            "value": "命中率+3"
+        },
+        {
+            "key": "BUFF_CBCL_02",
+            "value": "惡魔特效+2%"
+        },
+        {
+            "key": "BUFF_CBCL_03",
+            "value": "閃避率+3"
+        },
+        {
+            "key": "BUFF_CBCL_04",
+            "value": "暗屬性特效+2%"
+        },
+        {
+            "key": "BUFF_CBCL_05",
+            "value": "TPUP+2%"
+        },
+        {
+            "key": "BUFF_CBCL_06",
+            "value": "召喚魔法Lv2"
+        },
+        {
+            "key": "BUFF_CBCL_07",
+            "value": "召喚魔法Lv4"
+        },
+        {
+            "key": "BUFF_CBCL_08",
+            "value": "命中率+4"
+        },
+        {
+            "key": "BUFF_CBCL_09",
+            "value": "射擊耐性+3%"
+        },
+        {
+            "key": "BUFF_CBCL_10",
+            "value": "射擊耐性+3%"
+        },
+        {
+            "key": "BUFF_CBCL_11",
+            "value": "惡魔特效+3%"
+        },
+        {
+            "key": "BUFF_CBCL_12",
+            "value": "閃避率+4"
+        },
+        {
+            "key": "BUFF_CBCL_13",
+            "value": "魔法攻擊UP+3%"
+        },
+        {
+            "key": "BUFF_CBCL_14",
+            "value": "魔法攻擊UP+3%"
+        },
+        {
+            "key": "BUFF_CBCL_15",
+            "value": "暗屬性特效+3%"
+        },
+        {
+            "key": "BUFF_CBCL_16",
+            "value": "TPUP+5%"
+        },
+        {
+            "key": "BUFF_CBCL_17",
+            "value": "暗耐性+3%"
+        },
+        {
+            "key": "BUFF_CBCL_18",
+            "value": "暗耐性+3%"
+        },
+        {
+            "key": "BUFF_CBCL_19",
+            "value": "召喚魔法Lv7"
+        },
+        {
+            "key": "BUFF_CBCL_20",
+            "value": "射擊耐性+5%"
+        },
+        {
+            "key": "BUFF_CBCL_21",
+            "value": "射擊耐性+4%"
+        },
+        {
+            "key": "BUFF_CBCL_22",
+            "value": "惡魔特效+4%"
+        },
+        {
+            "key": "BUFF_CBCL_23",
+            "value": "惡魔特效+6%"
+        },
+        {
+            "key": "BUFF_CBCL_24",
+            "value": "魔法攻擊UP+5%"
+        },
+        {
+            "key": "BUFF_CBCL_25",
+            "value": "魔法攻擊UP+4%"
+        },
+        {
+            "key": "BUFF_CBCL_26",
+            "value": "暗屬性特效+6%"
+        },
+        {
+            "key": "BUFF_CBCL_27",
+            "value": "暗屬性特效+4%"
+        },
+        {
+            "key": "BUFF_CBCL_28",
+            "value": "暗耐性+5%"
+        },
+        {
+            "key": "BUFF_CBCL_29",
+            "value": "暗耐性+4%"
+        },
+        {
+            "key": "BUFF_CBCL_30",
+            "value": "召喚魔法Lv10"
+        },
+        {
+            "key": "BUFF_CBCL_31",
+            "value": "召喚魔法Lv15"
+        },
+        {
+            "key": "BUFF_CBCL_32",
+            "value": "惡魔特效+10%"
+        },
+        {
+            "key": "BUFF_CBCL_33",
+            "value": "暗屬性特效+10%"
+        },
+        {
+            "key": "BUFF_CBCL_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_CBCL_35",
+            "value": "暴擊閃避率+4"
+        },
+        {
+            "key": "BUFF_CBCL_36",
+            "value": "暴擊閃避率+5"
+        },
+        {
+            "key": "BUFF_CBCL_37",
+            "value": "射擊耐性+5%"
+        },
+        {
+            "key": "BUFF_CBCL_38",
+            "value": "光屬性能力攻擊UP+4%"
+        },
+        {
+            "key": "BUFF_CBCL_39",
+            "value": "光屬性能力攻擊UP+5%"
+        },
+        {
+            "key": "BUFF_CBCL_40",
+            "value": "光屬性能力攻擊UP+6%"
+        },
+        {
+            "key": "BUFF_CBCL_41",
+            "value": "光屬性能力攻擊UP+10%"
+        },
+        {
             "key": "BUFF_ARMN_01",
             "value": "射擊攻擊UP+3%"
         },
@@ -16031,6 +16379,38 @@
         {
             "key": "BUFF_BOMB_33",
             "value": "攻擊UP+6%"
+        },
+        {
+            "key": "BUFF_BOMB_34",
+            "value": "召喚魔法Lv20"
+        },
+        {
+            "key": "BUFF_BOMB_35",
+            "value": "暴擊傷害+4%"
+        },
+        {
+            "key": "BUFF_BOMB_36",
+            "value": "暴擊傷害+5%"
+        },
+        {
+            "key": "BUFF_BOMB_37",
+            "value": "暴擊傷害+6%"
+        },
+        {
+            "key": "BUFF_BOMB_38",
+            "value": "HPUP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_39",
+            "value": "HPUP+2%"
+        },
+        {
+            "key": "BUFF_BOMB_40",
+            "value": "HPUP+3%"
+        },
+        {
+            "key": "BUFF_BOMB_41",
+            "value": "HPUP+8%"
         },
         {
             "key": "BUFF_MRE_FIRE_HP_1",

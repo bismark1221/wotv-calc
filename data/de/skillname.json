@@ -5921,6 +5921,34 @@
             "value": "Doppelattacke"
         },
         {
+            "key": "SK_CBCL_ATK",
+            "value": "Normaler Angriff"
+        },
+        {
+            "key": "SK_CBCL_M_01",
+            "value": "Verbannga"
+        },
+        {
+            "key": "SK_CBCL_M_02",
+            "value": "Vitra"
+        },
+        {
+            "key": "SK_CBCL_M_03",
+            "value": "Konfus"
+        },
+        {
+            "key": "SK_CBCL_M_04",
+            "value": "Rubingefunkel"
+        },
+        {
+            "key": "SK_CBCL_M_05",
+            "value": "Rubinglanz"
+        },
+        {
+            "key": "SK_CBCL_M_06",
+            "value": "Metamorphose"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Normaler Angriff"
         },
@@ -6797,6 +6825,10 @@
             "value": "Blaster"
         },
         {
+            "key": "SK_SMN_CBCL",
+            "value": "Rubinglanz"
+        },
+        {
             "key": "SK_UN_BD_EC_HP_200",
             "value": "LP-Maximum erhöht"
         },
@@ -6927,6 +6959,26 @@
         {
             "key": "SK_LW_EC_LAN_C_04B",
             "value": "Kosmosdynamik"
+        },
+        {
+            "key": "SK_LW_EC_LAN_A_03",
+            "value": "Fatalspeersturz"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05",
+            "value": "Scharfer Speer (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05B",
+            "value": "Scharfer Speer: Ruhigstellen"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06",
+            "value": "Vernichtung (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06B",
+            "value": "Vernichtung: Fall"
         },
         {
             "key": "SK_LW_EC_SWN_A_01",
@@ -7147,6 +7199,26 @@
         {
             "key": "SK_LW_EC_BLM_C_02B",
             "value": "Erzzauber der Schwarzmagie"
+        },
+        {
+            "key": "SK_LW_EC_BLM_A_02",
+            "value": "Fluchseliger Morast"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03",
+            "value": "Frosch (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03B",
+            "value": "Frosch [Obstruktion]"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04",
+            "value": "Bio (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04B",
+            "value": "Bio [Obstruktion]"
         },
         {
             "key": "SK_LW_EC_TIM_A_01",
@@ -7407,6 +7479,26 @@
         {
             "key": "SK_LW_EC_ASS_C_02B",
             "value": "Succubus-Spalter"
+        },
+        {
+            "key": "SK_LW_EC_CLR_A_01",
+            "value": "Phantomstrahl"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01",
+            "value": "Unheilabwehr (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01B",
+            "value": "Unheilwall"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02",
+            "value": "PSY-Erhöhung Stufe 1 (verstärkt)"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02B",
+            "value": "Unerschrockenes Herz"
         },
         {
             "key": "SK_US_POTION",
@@ -8202,6 +8294,34 @@
         },
         {
             "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_2",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_3",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_4",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5_S",
             "value": ""
         },
         {
@@ -9973,6 +10093,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CBCL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -11130,6 +11262,18 @@
         },
         {
             "key": "SK_VC_LW_ROSEFES_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX_2",
             "value": ""
         },
         {
@@ -12587,6 +12731,22 @@
         {
             "key": "SK_VC_LW_ROSEFES_PMAX_2",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PVA",
+            "value": "Heilrubin"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",

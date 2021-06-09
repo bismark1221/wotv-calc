@@ -13590,7 +13590,14 @@
       }
     ],
     "acquisition": {
-      "type": "Unknown"
+      "type": {
+        "en": "General Shop",
+        "fr": "Boutique ordinaire",
+        "es": "Tienda normal",
+        "de": "Hauptladen",
+        "ko": "일반 상점",
+        "zh": "普通商店"
+      }
     },
     "releaseDate": "16/12/2020"
   },
@@ -33748,9 +33755,9 @@
   },
   "AF_LOT_LW_ACC_036": {
     "names": {
-      "en": "チョコプリンイヤリング"
+      "en": "チョコプリンイヤリング - Chocolate Flan Earrings"
     },
-    "slug": "choko-purin-iyaringu",
+    "slug": "chocolate-flan-earrings",
     "stats": {
       "HP": {
         "min": 30,

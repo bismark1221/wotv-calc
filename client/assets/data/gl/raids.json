@@ -4271,5 +4271,531 @@
       "cards": []
     },
     "slug": "glacial"
+  },
+  "RAID_GL_12": {
+    "dataId": "RAID_GL_12",
+    "names": {
+      "en": "Red Giant",
+      "fr": "Géant mutant",
+      "de": "Wolframator",
+      "es": "Gigante",
+      "ko": "울프라마이타",
+      "zh": "惡狼鐵兵"
+    },
+    "bosses": [
+      {
+        "dataId": "UN_LW_E_IGNT_01_R",
+        "names": {
+          "en": "Red Giant",
+          "fr": "Géant mutant",
+          "de": "Wolframator",
+          "es": "Gigante",
+          "ko": "울프라마이타",
+          "zh": "惡狼鐵兵"
+        },
+        "stats": {
+          "HP": {
+            "min": 1200,
+            "max": 120000
+          },
+          "TP": {
+            "min": 100,
+            "max": 364
+          },
+          "AP": {
+            "min": 60,
+            "max": 372
+          },
+          "ATK": {
+            "min": 120,
+            "max": 750
+          },
+          "DEF": {
+            "min": 0,
+            "max": 20
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 50,
+            "max": 150
+          },
+          "DEX": {
+            "min": 104,
+            "max": 298
+          },
+          "AGI": {
+            "min": 28,
+            "max": 86
+          },
+          "LUCK": {
+            "min": 96,
+            "max": 260
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {},
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {},
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "SLASH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "PIERCE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "STRIKE_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "MISSILE_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "MAGIC_RES": {
+            "min": -25,
+            "max": -25
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {},
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "FROSTBITE_RES": {},
+          "STUN_RES": {},
+          "MOVE": {
+            "min": 5,
+            "max": 5
+          },
+          "JUMP": {
+            "min": 4,
+            "max": 4
+          },
+          "MAX_LV": {}
+        },
+        "species": "demon",
+        "element": "light",
+        "image": "lapsignt",
+        "skills": {
+          "SK_IGNT_M_01_R": {
+            "dataId": "SK_IGNT_M_01_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 60
+          },
+          "SK_IGNT_M_02_R": {
+            "dataId": "SK_IGNT_M_02_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_IGNT_M_03_R": {
+            "dataId": "SK_IGNT_M_03_R",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 100
+          },
+          "SK_BTL_DF_1-80_U": {
+            "dataId": "SK_BTL_DF_1-80_U",
+            "rate": 100,
+            "minLevel": 31,
+            "maxLevel": 100
+          },
+          "SK_BTL_MDF_1-80_U": {
+            "dataId": "SK_BTL_MDF_1-80_U",
+            "rate": 100,
+            "minLevel": 31,
+            "maxLevel": 100
+          },
+          "SK_IGNT_M_01_B_R": {
+            "dataId": "SK_IGNT_M_01_B_R",
+            "rate": 100,
+            "minLevel": 61,
+            "maxLevel": 100
+          },
+          "SK_BTL_STR_SLASH_1_100_U": {
+            "dataId": "SK_BTL_STR_SLASH_1_100_U",
+            "rate": 100,
+            "minLevel": 61,
+            "maxLevel": 100
+          }
+        },
+        "slug": "red-giant",
+        "attack": "SK_IGNT_ATK"
+      },
+      {
+        "dataId": "UN_LW_E_CSLI_R",
+        "names": {
+          "en": "Chocolate Flan",
+          "fr": "Chocoflan",
+          "de": "Schokopudding",
+          "es": "Flan de chocolate",
+          "ko": "초코 푸딩",
+          "zh": "巧克力布丁"
+        },
+        "stats": {
+          "HP": {
+            "min": 7000,
+            "max": 80000
+          },
+          "TP": {
+            "min": 100,
+            "max": 342
+          },
+          "AP": {
+            "min": 59,
+            "max": 264
+          },
+          "ATK": {
+            "min": 100,
+            "max": 580
+          },
+          "DEF": {
+            "min": 0,
+            "max": 0
+          },
+          "SPR": {
+            "min": 0,
+            "max": 0
+          },
+          "MAG": {
+            "min": 100,
+            "max": 530
+          },
+          "DEX": {
+            "min": 93,
+            "max": 292
+          },
+          "AGI": {
+            "min": 33,
+            "max": 75
+          },
+          "LUCK": {
+            "min": 92,
+            "max": 223
+          },
+          "INITIAL_AP": {},
+          "ACCURACY": {},
+          "CRITIC_RATE": {},
+          "CRITIC_AVOID": {},
+          "EVADE": {},
+          "FIRE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "ICE_RES": {},
+          "EARTH_RES": {},
+          "WIND_RES": {},
+          "LIGHTNING_RES": {
+            "min": -10,
+            "max": -10
+          },
+          "WATER_RES": {},
+          "LIGHT_RES": {},
+          "DARK_RES": {},
+          "SLASH_RES": {
+            "min": 10,
+            "max": 10
+          },
+          "PIERCE_RES": {
+            "min": 20,
+            "max": 20
+          },
+          "STRIKE_RES": {
+            "min": 25,
+            "max": 25
+          },
+          "MISSILE_RES": {
+            "min": -15,
+            "max": -15
+          },
+          "MAGIC_RES": {
+            "min": 15,
+            "max": 15
+          },
+          "POISON_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BLIND_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLEEP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SILENCE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PARALYZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CONFUSION_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "PETRIFY_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "TOAD_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "CHARM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "SLOW_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "STOP_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "IMMOBILIZE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DISABLE_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "BERSERK_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "DOOM_RES": {
+            "min": 999,
+            "max": 999
+          },
+          "FROSTBITE_RES": {},
+          "STUN_RES": {},
+          "MOVE": {
+            "min": 4,
+            "max": 4
+          },
+          "JUMP": {
+            "min": 1,
+            "max": 1
+          },
+          "MAX_LV": {}
+        },
+        "species": "aquatic",
+        "element": "water",
+        "image": "lapscsli",
+        "skills": {
+          "SK_CSLI_M_01": {
+            "dataId": "SK_CSLI_M_01",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_HIT_1_999_U": {
+            "dataId": "SK_BTL_HIT_1_999_U",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_HPDOWN": {
+            "dataId": "SK_BTL_INV_HPDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_SPDDOWN": {
+            "dataId": "SK_BTL_INV_SPDDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_BTL_INV_CTDOWN": {
+            "dataId": "SK_BTL_INV_CTDOWN",
+            "rate": 100,
+            "minLevel": 1,
+            "maxLevel": 10
+          },
+          "SK_CSLI_M_02": {
+            "dataId": "SK_CSLI_M_02",
+            "rate": 100,
+            "minLevel": 4,
+            "maxLevel": 10
+          },
+          "SK_CSLI_M_03": {
+            "dataId": "SK_CSLI_M_03",
+            "rate": 20,
+            "minLevel": 7,
+            "maxLevel": 10
+          }
+        },
+        "slug": "chocolate-flan",
+        "attack": "SK_CSLI_ATK"
+      }
+    ],
+    "bonus": {
+      "units": [
+        {
+          "unitId": "UN_LW_P_HLNA_01",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_FDRC",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_VNLA",
+          "value": 50
+        },
+        {
+          "unitId": "UN_LW_P_AYKA",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_MACR",
+          "value": 30
+        },
+        {
+          "unitId": "UN_LW_P_SDLX",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_RAMD",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_MURM",
+          "value": 20
+        },
+        {
+          "unitId": "UN_LW_P_MICE",
+          "value": 20
+        }
+      ],
+      "cards": [
+        {
+          "cardId": "VC_LW_CBCL",
+          "value": 50
+        },
+        {
+          "cardId": "VC_LW_ROSEFES",
+          "value": 50
+        },
+        {
+          "cardId": "VC_LW_HLNA",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_LUCA",
+          "value": 30
+        },
+        {
+          "cardId": "VC_LW_BLMN",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_FIGHT",
+          "value": 20
+        },
+        {
+          "cardId": "VC_LW_PROPOSE",
+          "value": 20
+        }
+      ]
+    },
+    "slug": "red-giant"
   }
 }

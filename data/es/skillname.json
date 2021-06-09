@@ -5921,6 +5921,34 @@
             "value": "Golpe doble"
         },
         {
+            "key": "SK_CBCL_ATK",
+            "value": "Ataque normal"
+        },
+        {
+            "key": "SK_CBCL_M_01",
+            "value": "Tenue++"
+        },
+        {
+            "key": "SK_CBCL_M_02",
+            "value": "Cura+"
+        },
+        {
+            "key": "SK_CBCL_M_03",
+            "value": "Confu"
+        },
+        {
+            "key": "SK_CBCL_M_04",
+            "value": "Brillo de rubí"
+        },
+        {
+            "key": "SK_CBCL_M_05",
+            "value": "Resplandor de rubí"
+        },
+        {
+            "key": "SK_CBCL_M_06",
+            "value": "Cambio de modo"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Ataque normal"
         },
@@ -6797,6 +6825,10 @@
             "value": "Electroplasma"
         },
         {
+            "key": "SK_SMN_CBCL",
+            "value": "Resplandor de rubí"
+        },
+        {
             "key": "SK_UN_BD_EC_HP_200",
             "value": "VIT máx.↑"
         },
@@ -6927,6 +6959,26 @@
         {
             "key": "SK_LW_EC_LAN_C_04B",
             "value": "Gloria universal"
+        },
+        {
+            "key": "SK_LW_EC_LAN_A_03",
+            "value": "Salto funesto"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05",
+            "value": "Mejorar Lanza afilada"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05B",
+            "value": "Lanza afilada silenciosa"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06",
+            "value": "Mejorar Arrasar"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06B",
+            "value": "Arrasar: aniquilación"
         },
         {
             "key": "SK_LW_EC_SWN_A_01",
@@ -7147,6 +7199,26 @@
         {
             "key": "SK_LW_EC_BLM_C_02B",
             "value": "Magia negra arcana"
+        },
+        {
+            "key": "SK_LW_EC_BLM_A_02",
+            "value": "Pantano abismal"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03",
+            "value": "Mejorar Rana"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03B",
+            "value": "Rana [obstructor]"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04",
+            "value": "Mejorar Bio"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04B",
+            "value": "Bio [obstructor]"
         },
         {
             "key": "SK_LW_EC_TIM_A_01",
@@ -7407,6 +7479,26 @@
         {
             "key": "SK_LW_EC_ASS_C_02B",
             "value": "Drenaarmadura"
+        },
+        {
+            "key": "SK_LW_EC_CLR_A_01",
+            "value": "Rayo sagrado"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01",
+            "value": "Mejorar Guardia calamitosa"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01B",
+            "value": "Fortaleza calamitosa"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02",
+            "value": "Mejorar ESP↑ nv. 1"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02B",
+            "value": "Corazón valeroso"
         },
         {
             "key": "SK_US_POTION",
@@ -8202,6 +8294,34 @@
         },
         {
             "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_2",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_3",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_4",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5_S",
             "value": ""
         },
         {
@@ -9973,6 +10093,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CBCL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -11130,6 +11262,18 @@
         },
         {
             "key": "SK_VC_LW_ROSEFES_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX_2",
             "value": ""
         },
         {
@@ -12587,6 +12731,22 @@
         {
             "key": "SK_VC_LW_ROSEFES_PMAX_2",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PVA",
+            "value": "Sanación de rubí"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",

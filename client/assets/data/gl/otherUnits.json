@@ -20278,6 +20278,821 @@
     "slug": "rubeus-soldier",
     "attack": "SK_LW_MGK_ATK"
   },
+  "UN_LW_E_DRGN": {
+    "dataId": "UN_LW_E_DRGN",
+    "names": {
+      "en": "Mini Dragon",
+      "fr": "Mini dragon",
+      "de": "Minidrache",
+      "es": "Minidragón",
+      "ko": "미니 드래곤",
+      "zh": "迷你龍"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 241,
+        "max": 5218
+      },
+      "TP": {
+        "min": 60,
+        "max": 150
+      },
+      "AP": {
+        "min": 72,
+        "max": 144
+      },
+      "ATK": {
+        "min": 56,
+        "max": 154
+      },
+      "DEF": {
+        "min": 20,
+        "max": 20
+      },
+      "SPR": {
+        "min": 20,
+        "max": 20
+      },
+      "MAG": {
+        "min": 28,
+        "max": 92
+      },
+      "DEX": {
+        "min": 104,
+        "max": 243
+      },
+      "AGI": {
+        "min": 19,
+        "max": 71
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 229
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsdrgn",
+    "species": "dragon",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "mini-dragon",
+    "attack": "SK_DRGN_ATK"
+  },
+  "UN_GM_TSUBO_01": {
+    "dataId": "UN_GM_TSUBO_01",
+    "names": {
+      "en": "Ice Pot",
+      "fr": "Jarre de glace",
+      "de": "Eisgefäß",
+      "es": "Tarro de hielo",
+      "ko": "얼음 항아리",
+      "zh": "冰壺"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {},
+    "element": null,
+    "image": "gmckipot",
+    "species": "",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "object",
+    "slug": "ice-pot"
+  },
+  "UN_LW_E_SO_02_RDM": {
+    "dataId": "UN_LW_E_SO_02_RDM",
+    "names": {
+      "en": "Wezette Soldier",
+      "fr": "Soldat de Wezett",
+      "de": "Wezettischer Soldat",
+      "es": "Soldado de Wezette",
+      "ko": "웨젯 병사",
+      "zh": "維澤特士兵"
+    },
+    "jobs": [
+      "JB_LW_RDM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 133,
+        "max": 1570
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 41,
+        "max": 66
+      },
+      "ATK": {
+        "min": 46,
+        "max": 137
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 47
+      },
+      "DEX": {
+        "min": 75,
+        "max": 185
+      },
+      "AGI": {
+        "min": 19,
+        "max": 39
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 216
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso02",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "wezette-soldier",
+    "attack": "SK_LW_RDM_ATK"
+  },
+  "UN_LW_E_SO_05_SAM": {
+    "dataId": "UN_LW_E_SO_05_SAM",
+    "names": {
+      "en": "«Rubeus» Soldier",
+      "fr": "Soldat de « Rubeus »",
+      "de": "„Rubeus“-Soldat",
+      "es": "Soldado de Rubeus",
+      "ko": " '홍련' 병사",
+      "zh": "「紅蓮」兵"
+    },
+    "jobs": [
+      "JB_LW_SAM_FIRE"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 133,
+        "max": 1570
+      },
+      "TP": {
+        "min": 35,
+        "max": 64
+      },
+      "AP": {
+        "min": 41,
+        "max": 66
+      },
+      "ATK": {
+        "min": 52,
+        "max": 163
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 19,
+        "max": 47
+      },
+      "DEX": {
+        "min": 88,
+        "max": 211
+      },
+      "AGI": {
+        "min": 22,
+        "max": 46
+      },
+      "LUCK": {
+        "min": 85,
+        "max": 209
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {},
+      "MISSILE_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": null,
+    "image": "lapsso05",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "rubeus-soldier",
+    "attack": "SK_LW_SAM_ATK"
+  },
+  "UN_LW_E_MRND": {
+    "dataId": "UN_LW_E_MRND",
+    "names": {
+      "en": "Miranda",
+      "fr": "Miranda",
+      "de": "Miranda",
+      "es": "Miranda",
+      "ko": "미란다",
+      "zh": "米蘭達"
+    },
+    "rarity": "UR",
+    "jobs": [
+      "JB_LW_RDM_WATR",
+      "JB_LW_TIM_WATER",
+      "JB_LW_PLD_WATER"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 263,
+        "max": 950
+      },
+      "TP": {
+        "min": 62,
+        "max": 97
+      },
+      "AP": {
+        "min": 75,
+        "max": 92
+      },
+      "ATK": {
+        "min": 71,
+        "max": 119
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 78,
+        "max": 131
+      },
+      "DEX": {
+        "min": 63,
+        "max": 93
+      },
+      "AGI": {
+        "min": 29,
+        "max": 34
+      },
+      "LUCK": {
+        "min": 67,
+        "max": 95
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {},
+      "STRIKE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MISSILE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapsmrnd",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "miranda-1",
+    "attack": "SK_LW_RDM_ATK"
+  },
+  "UN_LW_E_KADI": {
+    "dataId": "UN_LW_E_KADI",
+    "names": {
+      "en": "Cadia",
+      "fr": "Cadia",
+      "de": "Cadia",
+      "es": "Cadia",
+      "ko": "카디아",
+      "zh": "卡迪婭"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_CLR_WIND",
+      "JB_LW_WHM_WIND",
+      "JB_LW_MGK_WIND"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 178,
+        "max": 646
+      },
+      "TP": {
+        "min": 53,
+        "max": 83
+      },
+      "AP": {
+        "min": 60,
+        "max": 75
+      },
+      "ATK": {
+        "min": 27,
+        "max": 45
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 67,
+        "max": 113
+      },
+      "DEX": {
+        "min": 55,
+        "max": 91
+      },
+      "AGI": {
+        "min": 25,
+        "max": 30
+      },
+      "LUCK": {
+        "min": 54,
+        "max": 86
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "EARTH_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "PIERCE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "STRIKE_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "MISSILE_RES": {
+        "min": 0,
+        "max": 0
+      },
+      "MAGIC_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "CHARM_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "wind",
+    "image": "lapskadi",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "cadia-1",
+    "attack": "SK_LW_CLR_ATK"
+  },
+  "UN_LW_E_MRLK": {
+    "dataId": "UN_LW_E_MRLK",
+    "names": {
+      "en": "Meriluke",
+      "fr": "Marie-Luke",
+      "de": "Meriluuk",
+      "es": "Meriluke",
+      "ko": "메릴루크",
+      "zh": "梅麗露可"
+    },
+    "rarity": "MR",
+    "jobs": [
+      "JB_LW_MNK_THUN",
+      "JB_LW_KNT_THUN",
+      "JB_LW_GRM_THUN"
+    ],
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 233,
+        "max": 873
+      },
+      "TP": {
+        "min": 48,
+        "max": 75
+      },
+      "AP": {
+        "min": 57,
+        "max": 71
+      },
+      "ATK": {
+        "min": 67,
+        "max": 113
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 27,
+        "max": 45
+      },
+      "DEX": {
+        "min": 54,
+        "max": 90
+      },
+      "AGI": {
+        "min": 26,
+        "max": 32
+      },
+      "LUCK": {
+        "min": 56,
+        "max": 89
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "PIERCE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "STRIKE_RES": {
+        "min": 5,
+        "max": 5
+      },
+      "MISSILE_RES": {},
+      "MAGIC_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "POISON_RES": {},
+      "BLIND_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "SLOW_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {
+        "min": 50,
+        "max": 50
+      },
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 3,
+        "max": 3,
+        "ex": null
+      },
+      "JUMP": {
+        "min": 2,
+        "max": 2,
+        "ex": null
+      },
+      "MAX_LV": {}
+    },
+    "element": "lightning",
+    "image": "lapsmrlk",
+    "species": "human",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "meriluke-1",
+    "attack": "SK_LW_MNK_ATK"
+  },
   "UN_LW_E_ARMN_02": {
     "dataId": "UN_LW_E_ARMN_02",
     "names": {
@@ -21733,252 +22548,6 @@
     "type": "enemy",
     "slug": "bandit",
     "attack": "SK_LW_RDM_ATK"
-  },
-  "UN_LW_E_SO_02_RDM": {
-    "dataId": "UN_LW_E_SO_02_RDM",
-    "names": {
-      "en": "Wezette Soldier",
-      "fr": "Soldat de Wezett",
-      "de": "Wezettischer Soldat",
-      "es": "Soldado de Wezette",
-      "ko": "웨젯 병사",
-      "zh": "維澤特士兵"
-    },
-    "jobs": [
-      "JB_LW_RDM_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 133,
-        "max": 1570
-      },
-      "TP": {
-        "min": 35,
-        "max": 64
-      },
-      "AP": {
-        "min": 41,
-        "max": 66
-      },
-      "ATK": {
-        "min": 46,
-        "max": 137
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 19,
-        "max": 47
-      },
-      "DEX": {
-        "min": 75,
-        "max": 185
-      },
-      "AGI": {
-        "min": 19,
-        "max": 39
-      },
-      "LUCK": {
-        "min": 92,
-        "max": 216
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "PIERCE_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "STRIKE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "MISSILE_RES": {},
-      "MAGIC_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso02",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "wezette-soldier",
-    "attack": "SK_LW_RDM_ATK"
-  },
-  "UN_LW_E_SO_05_SAM": {
-    "dataId": "UN_LW_E_SO_05_SAM",
-    "names": {
-      "en": "«Rubeus» Soldier",
-      "fr": "Soldat de « Rubeus »",
-      "de": "„Rubeus“-Soldat",
-      "es": "Soldado de Rubeus",
-      "ko": " '홍련' 병사",
-      "zh": "「紅蓮」兵"
-    },
-    "jobs": [
-      "JB_LW_SAM_FIRE"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 133,
-        "max": 1570
-      },
-      "TP": {
-        "min": 35,
-        "max": 64
-      },
-      "AP": {
-        "min": 41,
-        "max": 66
-      },
-      "ATK": {
-        "min": 52,
-        "max": 163
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 19,
-        "max": 47
-      },
-      "DEX": {
-        "min": 88,
-        "max": 211
-      },
-      "AGI": {
-        "min": 22,
-        "max": 46
-      },
-      "LUCK": {
-        "min": 85,
-        "max": 209
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {},
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {},
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "MAGIC_RES": {
-        "min": -25,
-        "max": -25
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 1,
-        "max": 1,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": null,
-    "image": "lapsso05",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "rubeus-soldier",
-    "attack": "SK_LW_SAM_ATK"
   },
   "UN_LW_BGN_ZUUU_02": {
     "dataId": "UN_LW_BGN_ZUUU_02",
@@ -43206,6 +43775,191 @@
     "slug": "coeurl",
     "attack": "SK_CORL_ATK"
   },
+  "UN_LW_E_CBCL_SIREN": {
+    "dataId": "UN_LW_E_CBCL_SIREN",
+    "names": {
+      "en": "Carbuncle",
+      "fr": "Carbuncle",
+      "de": "Karfunkel",
+      "es": "Rubí",
+      "ko": "카벙클",
+      "zh": "卡邦庫爾"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1000,
+        "max": 20000
+      },
+      "TP": {
+        "min": 120,
+        "max": 500
+      },
+      "AP": {
+        "min": 120,
+        "max": 500
+      },
+      "ATK": {
+        "min": 103,
+        "max": 320
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 110,
+        "max": 702
+      },
+      "DEX": {
+        "min": 107,
+        "max": 312
+      },
+      "AGI": {
+        "min": 27,
+        "max": 98
+      },
+      "LUCK": {
+        "min": 94,
+        "max": 282
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "ICE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "EARTH_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WIND_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "LIGHTNING_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "WATER_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "LIGHT_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "DARK_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "SLASH_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "PIERCE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "STRIKE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "MISSILE_RES": {
+        "min": -5,
+        "max": -5
+      },
+      "MAGIC_RES": {
+        "min": -20,
+        "max": -20
+      },
+      "POISON_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BLIND_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLEEP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CONFUSION_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "PETRIFY_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "TOAD_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "CHARM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "SLOW_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "STOP_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "BERSERK_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "DOOM_RES": {
+        "min": 100,
+        "max": 100
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapscbcl",
+    "species": "netherBeast",
+    "size": 0,
+    "realMaxLevel": 99,
+    "type": "enemy",
+    "slug": "carbuncle",
+    "attack": "SK_CBCL_ATK"
+  },
   "UN_LW_E_CSLI": {
     "dataId": "UN_LW_E_CSLI",
     "names": {
@@ -48105,6 +48859,346 @@
     "type": "enemy",
     "slug": "mini-dragon",
     "attack": "SK_DRGN_ATK"
+  },
+  "UN_LW_E_IGNT_01_R": {
+    "dataId": "UN_LW_E_IGNT_01_R",
+    "names": {
+      "en": "Red Giant",
+      "fr": "Géant mutant",
+      "de": "Wolframator",
+      "es": "Gigante",
+      "ko": "울프라마이타",
+      "zh": "惡狼鐵兵"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 1200,
+        "max": 120000
+      },
+      "TP": {
+        "min": 100,
+        "max": 364
+      },
+      "AP": {
+        "min": 60,
+        "max": 372
+      },
+      "ATK": {
+        "min": 120,
+        "max": 750
+      },
+      "DEF": {
+        "min": 0,
+        "max": 20
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 50,
+        "max": 150
+      },
+      "DEX": {
+        "min": 104,
+        "max": 298
+      },
+      "AGI": {
+        "min": 28,
+        "max": 86
+      },
+      "LUCK": {
+        "min": 96,
+        "max": 260
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "MAGIC_RES": {
+        "min": -25,
+        "max": -25
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 5,
+        "max": 5
+      },
+      "JUMP": {
+        "min": 4,
+        "max": 4
+      },
+      "MAX_LV": {}
+    },
+    "element": "light",
+    "image": "lapsignt_01",
+    "species": "demon",
+    "size": 1,
+    "realMaxLevel": 100,
+    "type": "enemy",
+    "slug": "red-giant",
+    "attack": "SK_IGNT_ATK"
+  },
+  "UN_LW_E_CSLI_R": {
+    "dataId": "UN_LW_E_CSLI_R",
+    "names": {
+      "en": "Chocolate Flan",
+      "fr": "Chocoflan",
+      "de": "Schokopudding",
+      "es": "Flan de chocolate",
+      "ko": "초코 푸딩",
+      "zh": "巧克力布丁"
+    },
+    "rarity": "N",
+    "exJobs": [],
+    "stats": {
+      "HP": {
+        "min": 7000,
+        "max": 80000
+      },
+      "TP": {
+        "min": 100,
+        "max": 342
+      },
+      "AP": {
+        "min": 59,
+        "max": 264
+      },
+      "ATK": {
+        "min": 100,
+        "max": 580
+      },
+      "DEF": {
+        "min": 0,
+        "max": 0
+      },
+      "SPR": {
+        "min": 0,
+        "max": 0
+      },
+      "MAG": {
+        "min": 100,
+        "max": 530
+      },
+      "DEX": {
+        "min": 93,
+        "max": 292
+      },
+      "AGI": {
+        "min": 33,
+        "max": 75
+      },
+      "LUCK": {
+        "min": 92,
+        "max": 223
+      },
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {
+        "min": -10,
+        "max": -10
+      },
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {
+        "min": 10,
+        "max": 10
+      },
+      "PIERCE_RES": {
+        "min": 20,
+        "max": 20
+      },
+      "STRIKE_RES": {
+        "min": 25,
+        "max": 25
+      },
+      "MISSILE_RES": {
+        "min": -15,
+        "max": -15
+      },
+      "MAGIC_RES": {
+        "min": 15,
+        "max": 15
+      },
+      "POISON_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BLIND_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLEEP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SILENCE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PARALYZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CONFUSION_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "PETRIFY_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "TOAD_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "CHARM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "SLOW_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "STOP_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "IMMOBILIZE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DISABLE_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "BERSERK_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "DOOM_RES": {
+        "min": 999,
+        "max": 999
+      },
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {
+        "min": 4,
+        "max": 4
+      },
+      "JUMP": {
+        "min": 1,
+        "max": 1
+      },
+      "MAX_LV": {}
+    },
+    "element": "water",
+    "image": "lapscsli",
+    "species": "aquatic",
+    "size": 1,
+    "realMaxLevel": 10,
+    "type": "enemy",
+    "slug": "chocolate-flan",
+    "attack": "SK_CSLI_ATK"
   },
   "UN_LW_BGN_MONT": {
     "dataId": "UN_LW_BGN_MONT",
@@ -55631,144 +56725,6 @@
     "slug": "dario-hourne-1",
     "attack": "SK_LW_MGK_ATK"
   },
-  "UN_LW_E_MRND": {
-    "dataId": "UN_LW_E_MRND",
-    "names": {
-      "en": "Miranda",
-      "fr": "Miranda",
-      "de": "Miranda",
-      "es": "Miranda",
-      "ko": "미란다",
-      "zh": "米蘭達"
-    },
-    "rarity": "UR",
-    "jobs": [
-      "JB_LW_RDM_WATR",
-      "JB_LW_TIM_WATER",
-      "JB_LW_PLD_WATER"
-    ],
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 263,
-        "max": 950
-      },
-      "TP": {
-        "min": 62,
-        "max": 97
-      },
-      "AP": {
-        "min": 75,
-        "max": 92
-      },
-      "ATK": {
-        "min": 71,
-        "max": 119
-      },
-      "DEF": {
-        "min": 0,
-        "max": 0
-      },
-      "SPR": {
-        "min": 0,
-        "max": 0
-      },
-      "MAG": {
-        "min": 78,
-        "max": 131
-      },
-      "DEX": {
-        "min": 63,
-        "max": 93
-      },
-      "AGI": {
-        "min": 29,
-        "max": 34
-      },
-      "LUCK": {
-        "min": 67,
-        "max": 95
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {
-        "min": 20,
-        "max": 20
-      },
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "PIERCE_RES": {},
-      "STRIKE_RES": {
-        "min": -5,
-        "max": -5
-      },
-      "MISSILE_RES": {
-        "min": -15,
-        "max": -15
-      },
-      "MAGIC_RES": {},
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "SLOW_RES": {},
-      "STOP_RES": {
-        "min": 50,
-        "max": 50
-      },
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3,
-        "ex": null
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2,
-        "ex": null
-      },
-      "MAX_LV": {}
-    },
-    "element": "water",
-    "image": "lapsmrnd",
-    "species": "human",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "miranda-1",
-    "attack": "SK_LW_RDM_ATK"
-  },
   "UN_LW_E_TITU": {
     "dataId": "UN_LW_E_TITU",
     "names": {
@@ -56734,125 +57690,6 @@
     "type": "enemy",
     "slug": "glaciela-wezette-1",
     "attack": "SK_LW_GRSR_ATK"
-  },
-  "UN_LW_E_DRGN": {
-    "dataId": "UN_LW_E_DRGN",
-    "names": {
-      "en": "Mini Dragon",
-      "fr": "Mini dragon",
-      "de": "Minidrache",
-      "es": "Minidragón",
-      "ko": "미니 드래곤",
-      "zh": "迷你龍"
-    },
-    "rarity": "N",
-    "exJobs": [],
-    "stats": {
-      "HP": {
-        "min": 241,
-        "max": 5218
-      },
-      "TP": {
-        "min": 60,
-        "max": 150
-      },
-      "AP": {
-        "min": 72,
-        "max": 144
-      },
-      "ATK": {
-        "min": 56,
-        "max": 154
-      },
-      "DEF": {
-        "min": 20,
-        "max": 20
-      },
-      "SPR": {
-        "min": 20,
-        "max": 20
-      },
-      "MAG": {
-        "min": 28,
-        "max": 92
-      },
-      "DEX": {
-        "min": 104,
-        "max": 243
-      },
-      "AGI": {
-        "min": 19,
-        "max": 71
-      },
-      "LUCK": {
-        "min": 96,
-        "max": 229
-      },
-      "INITIAL_AP": {},
-      "ACCURACY": {},
-      "CRITIC_RATE": {},
-      "CRITIC_AVOID": {},
-      "EVADE": {},
-      "FIRE_RES": {
-        "min": 10,
-        "max": 10
-      },
-      "ICE_RES": {},
-      "EARTH_RES": {},
-      "WIND_RES": {},
-      "LIGHTNING_RES": {
-        "min": -10,
-        "max": -10
-      },
-      "WATER_RES": {},
-      "LIGHT_RES": {},
-      "DARK_RES": {},
-      "SLASH_RES": {},
-      "PIERCE_RES": {
-        "min": -5,
-        "max": -5
-      },
-      "STRIKE_RES": {},
-      "MISSILE_RES": {},
-      "MAGIC_RES": {
-        "min": 15,
-        "max": 15
-      },
-      "POISON_RES": {},
-      "BLIND_RES": {},
-      "SLEEP_RES": {},
-      "SILENCE_RES": {},
-      "PARALYZE_RES": {},
-      "CONFUSION_RES": {},
-      "PETRIFY_RES": {},
-      "TOAD_RES": {},
-      "CHARM_RES": {},
-      "SLOW_RES": {},
-      "STOP_RES": {},
-      "IMMOBILIZE_RES": {},
-      "DISABLE_RES": {},
-      "BERSERK_RES": {},
-      "DOOM_RES": {},
-      "FROSTBITE_RES": {},
-      "STUN_RES": {},
-      "MOVE": {
-        "min": 3,
-        "max": 3
-      },
-      "JUMP": {
-        "min": 2,
-        "max": 2
-      },
-      "MAX_LV": {}
-    },
-    "element": "water",
-    "image": "lapsdrgn",
-    "species": "dragon",
-    "size": 0,
-    "realMaxLevel": 99,
-    "type": "enemy",
-    "slug": "mini-dragon",
-    "attack": "SK_DRGN_ATK"
   },
   "UN_LW_E_MIIA": {
     "dataId": "UN_LW_E_MIIA",

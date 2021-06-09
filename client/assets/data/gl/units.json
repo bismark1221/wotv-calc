@@ -8785,47 +8785,59 @@
       "JB_LW_MNK_SHINE",
       "JB_LW_BLM_SHINE"
     ],
-    "exJobs": [],
+    "exJobs": [
+      "JB_LW_MACR_M"
+    ],
     "stats": {
       "HP": {
         "min": 205,
-        "max": 943
+        "max": 943,
+        "ex": 1188
       },
       "TP": {
         "min": 63,
-        "max": 99
+        "max": 99,
+        "ex": 103
       },
       "AP": {
         "min": 76,
-        "max": 93
+        "max": 93,
+        "ex": 97
       },
       "ATK": {
         "min": 40,
-        "max": 68
+        "max": 68,
+        "ex": 176
       },
       "DEF": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "SPR": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "MAG": {
         "min": 77,
-        "max": 130
+        "max": 130,
+        "ex": 202
       },
       "DEX": {
         "min": 63,
-        "max": 94
+        "max": 94,
+        "ex": 112
       },
       "AGI": {
         "min": 29,
-        "max": 34
+        "max": 34,
+        "ex": 34
       },
       "LUCK": {
         "min": 53,
-        "max": 75
+        "max": 75,
+        "ex": 98
       },
       "INITIAL_AP": {},
       "ACCURACY": {},
@@ -8841,45 +8853,54 @@
       "LIGHT_RES": {},
       "DARK_RES": {
         "min": -10,
-        "max": -10
+        "max": -10,
+        "ex": -10
       },
       "SLASH_RES": {
         "min": -10,
-        "max": -10
+        "max": -10,
+        "ex": -10
       },
       "PIERCE_RES": {
         "min": -10,
-        "max": -10
+        "max": -10,
+        "ex": -10
       },
       "STRIKE_RES": {
         "min": 15,
-        "max": 15
+        "max": 15,
+        "ex": 15
       },
       "MISSILE_RES": {
         "min": -10,
-        "max": -10
+        "max": -10,
+        "ex": -10
       },
       "MAGIC_RES": {
         "min": 10,
-        "max": 10
+        "max": 10,
+        "ex": 10
       },
       "POISON_RES": {},
       "BLIND_RES": {
         "min": 50,
-        "max": 50
+        "max": 50,
+        "ex": 50
       },
       "SLEEP_RES": {},
       "SILENCE_RES": {},
       "PARALYZE_RES": {},
       "CONFUSION_RES": {
         "min": 50,
-        "max": 50
+        "max": 50,
+        "ex": 50
       },
       "PETRIFY_RES": {},
       "TOAD_RES": {},
       "CHARM_RES": {
         "min": 15,
-        "max": 15
+        "max": 15,
+        "ex": 15
       },
       "SLOW_RES": {},
       "STOP_RES": {},
@@ -8892,12 +8913,12 @@
       "MOVE": {
         "min": 3,
         "max": 3,
-        "ex": null
+        "ex": 3
       },
       "JUMP": {
         "min": 1,
         "max": 1,
-        "ex": null
+        "ex": 1
       },
       "MAX_LV": {}
     },
@@ -9410,6 +9431,242 @@
           "unlockJob": 2,
           "jobLevel": 7,
           "jp": 225
+        },
+        "61": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "62": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "63": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "88": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "89": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "90": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 750,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "91": {
+          "dataId": "SK_LW_EC_CLR_C_01",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "92": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "93": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500
+        },
+        "125": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "126": {
+          "dataId": "SK_UN_BD_EC_DL_2000",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500,
+          "mainSkill": false
+        },
+        "127": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "128": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "167": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "168": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "169": {
+          "dataId": "SK_UN_BD_EC_MA_30",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": false
+        },
+        "170": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "216": {
+          "dataId": "SK_LW_EC_CLR_C_02",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "217": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_04",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250
+        },
+        "270": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "271": {
+          "dataId": "SK_LW_EC_CLR_A_01",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": true
         }
       },
       "lines": [
@@ -9472,7 +9729,28 @@
         124,
         152,
         128,
-        154
+        154,
+        209,
+        156,
+        239,
+        211,
+        238,
+        212,
+        301,
+        244,
+        340,
+        307,
+        306,
+        417,
+        344,
+        461,
+        421,
+        550,
+        463,
+        552,
+        600,
+        702,
+        869
       ]
     },
     "tmr": "AF_ACC_LW_MACR_1",
@@ -9482,7 +9760,21 @@
     "attack": "SK_LW_CLR_ATK",
     "masterSkill": [
       "SK_MA_LW_MACR"
-    ]
+    ],
+    "replacedSkills": {
+      "SK_LW_EC_CLR_C_01": [
+        {
+          "oldSkill": "SK_LW_CLR_M_3",
+          "newSkill": "SK_LW_EC_CLR_C_01B"
+        }
+      ],
+      "SK_LW_EC_CLR_C_02": [
+        {
+          "oldSkill": "SK_LW_CLR_P_1",
+          "newSkill": "SK_LW_EC_CLR_C_02B"
+        }
+      ]
+    }
   },
   "UN_LW_P_HLNA": {
     "dataId": "UN_LW_P_HLNA",
@@ -10939,47 +11231,59 @@
       "JB_LW_MGK_WATR",
       "JB_LW_THI_WATER"
     ],
-    "exJobs": [],
+    "exJobs": [
+      "JB_LW_RAMD_M"
+    ],
     "stats": {
       "HP": {
         "min": 217,
-        "max": 833
+        "max": 833,
+        "ex": 1244
       },
       "TP": {
         "min": 47,
-        "max": 73
+        "max": 73,
+        "ex": 76
       },
       "AP": {
         "min": 55,
-        "max": 68
+        "max": 68,
+        "ex": 71
       },
       "ATK": {
         "min": 58,
-        "max": 96
+        "max": 96,
+        "ex": 206
       },
       "DEF": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "SPR": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "MAG": {
         "min": 30,
-        "max": 51
+        "max": 51,
+        "ex": 91
       },
       "DEX": {
         "min": 57,
-        "max": 94
+        "max": 94,
+        "ex": 117
       },
       "AGI": {
         "min": 25,
-        "max": 30
+        "max": 30,
+        "ex": 30
       },
       "LUCK": {
         "min": 65,
-        "max": 102
+        "max": 102,
+        "ex": 112
       },
       "INITIAL_AP": {},
       "ACCURACY": {},
@@ -10988,35 +11292,41 @@
       "EVADE": {},
       "FIRE_RES": {
         "min": 15,
-        "max": 15
+        "max": 15,
+        "ex": 15
       },
       "ICE_RES": {},
       "EARTH_RES": {},
       "WIND_RES": {},
       "LIGHTNING_RES": {
         "min": -15,
-        "max": -15
+        "max": -15,
+        "ex": -15
       },
       "WATER_RES": {},
       "LIGHT_RES": {},
       "DARK_RES": {},
       "SLASH_RES": {
         "min": 15,
-        "max": 15
+        "max": 15,
+        "ex": 15
       },
       "PIERCE_RES": {},
       "STRIKE_RES": {
         "min": -15,
-        "max": -15
+        "max": -15,
+        "ex": -15
       },
       "MISSILE_RES": {},
       "MAGIC_RES": {
         "min": -5,
-        "max": -5
+        "max": -5,
+        "ex": -5
       },
       "POISON_RES": {
         "min": -25,
-        "max": -25
+        "max": -25,
+        "ex": -25
       },
       "BLIND_RES": {},
       "SLEEP_RES": {},
@@ -11025,12 +11335,14 @@
       "CONFUSION_RES": {},
       "PETRIFY_RES": {
         "min": 50,
-        "max": 50
+        "max": 50,
+        "ex": 50
       },
       "TOAD_RES": {},
       "CHARM_RES": {
         "min": 10,
-        "max": 10
+        "max": 10,
+        "ex": 10
       },
       "SLOW_RES": {},
       "STOP_RES": {},
@@ -11039,19 +11351,20 @@
       "BERSERK_RES": {},
       "DOOM_RES": {
         "min": 50,
-        "max": 50
+        "max": 50,
+        "ex": 50
       },
       "FROSTBITE_RES": {},
       "STUN_RES": {},
       "MOVE": {
         "min": 3,
         "max": 3,
-        "ex": null
+        "ex": 3
       },
       "JUMP": {
         "min": 1,
         "max": 1,
-        "ex": null
+        "ex": 1
       },
       "MAX_LV": {}
     },
@@ -11564,6 +11877,242 @@
           "unlockJob": 2,
           "jobLevel": 7,
           "jp": 225
+        },
+        "61": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "62": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "63": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "88": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "89": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "90": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 750,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "91": {
+          "dataId": "SK_LW_EC_LAN_C_05",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "92": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "93": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500
+        },
+        "125": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "126": {
+          "dataId": "SK_UN_BD_EC_DL_2000",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500,
+          "mainSkill": false
+        },
+        "127": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "128": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "167": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "168": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "169": {
+          "dataId": "SK_UN_BD_EC_HP_200",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": false
+        },
+        "170": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "216": {
+          "dataId": "SK_LW_EC_LAN_C_06",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "217": {
+          "dataId": "BUFF_UN_BD_BUFF_AT_04",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250
+        },
+        "270": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "271": {
+          "dataId": "SK_LW_EC_LAN_A_03",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": true
         }
       },
       "lines": [
@@ -11626,7 +12175,28 @@
         124,
         152,
         128,
-        154
+        154,
+        209,
+        156,
+        239,
+        211,
+        238,
+        212,
+        301,
+        244,
+        340,
+        307,
+        306,
+        417,
+        344,
+        461,
+        421,
+        550,
+        463,
+        552,
+        600,
+        702,
+        869
       ]
     },
     "tmr": "AF_SPE_LW_RAMD_1",
@@ -11635,7 +12205,21 @@
     "attack": "SK_LW_LAN_ATK",
     "masterSkill": [
       "SK_MA_LW_RAMD"
-    ]
+    ],
+    "replacedSkills": {
+      "SK_LW_EC_LAN_C_05": [
+        {
+          "oldSkill": "SK_LW_LAN_S_2_INIT",
+          "newSkill": "SK_LW_EC_LAN_C_05B"
+        }
+      ],
+      "SK_LW_EC_LAN_C_06": [
+        {
+          "oldSkill": "SK_LW_LAN_S_3",
+          "newSkill": "SK_LW_EC_LAN_C_06B"
+        }
+      ]
+    }
   },
   "UN_LW_P_OOOO": {
     "dataId": "UN_LW_P_OOOO",
@@ -29558,47 +30142,59 @@
       "JB_LW_THI_FIRE",
       "JB_LW_HUN_FIRE"
     ],
-    "exJobs": [],
+    "exJobs": [
+      "JB_LW_MICE_M"
+    ],
     "stats": {
       "HP": {
         "min": 131,
-        "max": 432
+        "max": 432,
+        "ex": 929
       },
       "TP": {
         "min": 34,
-        "max": 53
+        "max": 53,
+        "ex": 55
       },
       "AP": {
         "min": 41,
-        "max": 50
+        "max": 50,
+        "ex": 52
       },
       "ATK": {
         "min": 19,
-        "max": 32
+        "max": 32,
+        "ex": 83
       },
       "DEF": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "SPR": {
         "min": 0,
-        "max": 0
+        "max": 0,
+        "ex": 0
       },
       "MAG": {
         "min": 49,
-        "max": 83
+        "max": 83,
+        "ex": 204
       },
       "DEX": {
         "min": 47,
-        "max": 91
+        "max": 91,
+        "ex": 122
       },
       "AGI": {
         "min": 21,
-        "max": 24
+        "max": 24,
+        "ex": 24
       },
       "LUCK": {
         "min": 46,
-        "max": 84
+        "max": 84,
+        "ex": 101
       },
       "INITIAL_AP": {},
       "ACCURACY": {},
@@ -29608,32 +30204,38 @@
       "FIRE_RES": {},
       "ICE_RES": {
         "min": 5,
-        "max": 5
+        "max": 5,
+        "ex": 5
       },
       "EARTH_RES": {},
       "WIND_RES": {},
       "LIGHTNING_RES": {},
       "WATER_RES": {
         "min": -20,
-        "max": -20
+        "max": -20,
+        "ex": -20
       },
       "LIGHT_RES": {},
       "DARK_RES": {},
       "SLASH_RES": {
         "min": -25,
-        "max": -25
+        "max": -25,
+        "ex": -25
       },
       "PIERCE_RES": {
         "min": -25,
-        "max": -25
+        "max": -25,
+        "ex": -25
       },
       "STRIKE_RES": {
         "min": -25,
-        "max": -25
+        "max": -25,
+        "ex": -25
       },
       "MISSILE_RES": {
         "min": -25,
-        "max": -25
+        "max": -25,
+        "ex": -25
       },
       "MAGIC_RES": {},
       "POISON_RES": {},
@@ -29646,7 +30248,8 @@
       "TOAD_RES": {},
       "CHARM_RES": {
         "min": -5,
-        "max": -5
+        "max": -5,
+        "ex": -5
       },
       "SLOW_RES": {},
       "STOP_RES": {},
@@ -29659,12 +30262,12 @@
       "MOVE": {
         "min": 3,
         "max": 3,
-        "ex": null
+        "ex": 3
       },
       "JUMP": {
         "min": 1,
         "max": 1,
-        "ex": null
+        "ex": 1
       },
       "MAX_LV": {}
     },
@@ -30179,6 +30782,242 @@
           "unlockJob": 2,
           "jobLevel": 7,
           "jp": 184
+        },
+        "61": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "62": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "63": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "88": {
+          "dataId": "BUFF_UN_BD_BUFF_AP_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "89": {
+          "dataId": "BUFF_UN_BD_BUFF_DX_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 1500
+        },
+        "90": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 16,
+          "jp": 750,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 1,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "91": {
+          "dataId": "SK_LW_EC_BLM_C_03",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "92": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "93": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_02",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500
+        },
+        "125": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1350,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 2,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "126": {
+          "dataId": "SK_UN_BD_EC_DL_2000",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 19,
+          "jp": 1500,
+          "mainSkill": false
+        },
+        "127": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "128": {
+          "dataId": "BUFF_UN_BD_BUFF_SD_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "167": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2000,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 3,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "168": {
+          "dataId": "BUFF_UN_BD_BUFF_LK_03",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 2500
+        },
+        "169": {
+          "dataId": "SK_UN_BD_EC_LK_30",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": false
+        },
+        "170": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "216": {
+          "dataId": "SK_LW_EC_BLM_C_04",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 22,
+          "jp": 3250,
+          "mainSkill": false
+        },
+        "217": {
+          "dataId": "BUFF_UN_BD_BUFF_MA_04",
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250
+        },
+        "270": {
+          "type": "buff",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 3250,
+          "skill": {
+            "effects": [
+              {
+                "type": "INCREASE_UNIT_LEVEL",
+                "value": 5,
+                "calcType": "fixe"
+              }
+            ],
+            "type": "buff"
+          }
+        },
+        "271": {
+          "dataId": "SK_LW_EC_BLM_A_02",
+          "type": "skill",
+          "unlockStar": 6,
+          "unlockJob": 1,
+          "jobLevel": 25,
+          "jp": 5000,
+          "mainSkill": true
         }
       },
       "lines": [
@@ -30241,7 +31080,28 @@
         124,
         152,
         128,
-        154
+        154,
+        209,
+        156,
+        239,
+        211,
+        238,
+        212,
+        301,
+        244,
+        340,
+        307,
+        306,
+        417,
+        344,
+        461,
+        421,
+        550,
+        463,
+        552,
+        600,
+        702,
+        869
       ]
     },
     "tmr": "AF_HAT_LW_MICE_1",
@@ -30250,7 +31110,21 @@
     "attack": "SK_LW_BLM_ATK",
     "masterSkill": [
       "SK_MA_LW_MICE"
-    ]
+    ],
+    "replacedSkills": {
+      "SK_LW_EC_BLM_C_03": [
+        {
+          "oldSkill": "SK_LW_BLM_M_3",
+          "newSkill": "SK_LW_EC_BLM_C_03B"
+        }
+      ],
+      "SK_LW_EC_BLM_C_04": [
+        {
+          "oldSkill": "SK_LW_BLM_M_1_INIT",
+          "newSkill": "SK_LW_EC_BLM_C_04B"
+        }
+      ]
+    }
   },
   "UN_LW_P_MIIA": {
     "dataId": "UN_LW_P_MIIA",

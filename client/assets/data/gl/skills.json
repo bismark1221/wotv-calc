@@ -10464,6 +10464,201 @@
       "s": 0
     }
   },
+  "SK_LW_EC_CLR_C_01": {
+    "effects": [],
+    "dataId": "SK_LW_EC_CLR_C_01",
+    "type": "ex_buff",
+    "names": {
+      "en": "Calamity Guard Enhancement",
+      "fr": "Améliorer Anti-fléau",
+      "de": "Unheilabwehr (verstärkt)",
+      "es": "Mejorar Guardia calamitosa",
+      "ko": "재앙 방어 강화",
+      "zh": "反制災禍強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_CLR_C_02": {
+    "effects": [],
+    "dataId": "SK_LW_EC_CLR_C_02",
+    "type": "ex_buff",
+    "names": {
+      "en": "SPR Up Lv. 1 Enhancement",
+      "fr": "Améliorer PSY ↑ Niv. 1",
+      "de": "PSY-Erhöhung Stufe 1 (verstärkt)",
+      "es": "Mejorar ESP↑ nv. 1",
+      "ko": "정신력 증가 Lv.1 강화",
+      "zh": "提升精神Lv1強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_CLR_A_01": {
+    "effects": [
+      {
+        "type": "SPIRIT_PENETRATION",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_CLR_A_01",
+    "type": "skill",
+    "names": {
+      "en": "Hallowed Ray",
+      "fr": "Rayon sacré",
+      "de": "Phantomstrahl",
+      "es": "Rayo sagrado",
+      "ko": "오버레이",
+      "zh": "過量射線"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 26
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "hit": 100,
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "light"
+    ]
+  },
+  "SK_LW_EC_CLR_C_01B": {
+    "effects": [
+      {
+        "type": "NULLIFY",
+        "ailments": [
+          "POISON",
+          "BLIND",
+          "SLEEP",
+          "SILENCE",
+          "PARALYZE",
+          "CONFUSION",
+          "SLOW",
+          "BERSERK"
+        ],
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "HEAL_POWER",
+        "minValue": 10,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_CLR_C_01B",
+    "type": "skill",
+    "names": {
+      "en": "Calamity Stronghold",
+      "fr": "Immunisé",
+      "de": "Unheilwall",
+      "es": "Fortaleza calamitosa",
+      "ko": "재앙 장벽",
+      "zh": "災禍之壁"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 17
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_LW_EC_CLR_C_02B": {
+    "effects": [
+      {
+        "type": "SPR",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_EC_CLR_C_02B",
+    "type": "support",
+    "names": {
+      "en": "Dauntless Heart",
+      "fr": "Cœur intrépide",
+      "de": "Unerschrockenes Herz",
+      "es": "Corazón valeroso",
+      "ko": "굳건한 마음",
+      "zh": "堅毅之心"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
   "SK_LW_GRM_ATK": {
     "effects": [],
     "dataId": "SK_LW_GRM_ATK",
@@ -12101,6 +12296,201 @@
     "count": 2,
     "maxLevel": 20,
     "based": "physic"
+  },
+  "SK_LW_EC_LAN_C_05": {
+    "effects": [],
+    "dataId": "SK_LW_EC_LAN_C_05",
+    "type": "ex_buff",
+    "names": {
+      "en": "Sharp Spear Enhancement",
+      "fr": "Améliorer Lance aiguisée",
+      "de": "Scharfer Speer (verstärkt)",
+      "es": "Mejorar Lanza afilada",
+      "ko": "샤프 스피어 강화",
+      "zh": "銳利槍擊強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_LAN_C_06": {
+    "effects": [],
+    "dataId": "SK_LW_EC_LAN_C_06",
+    "type": "ex_buff",
+    "names": {
+      "en": "Obliterate Enhancement",
+      "fr": "Améliorer Dévastation",
+      "de": "Vernichtung (verstärkt)",
+      "es": "Mejorar Arrasar",
+      "ko": "황천 보내기 강화",
+      "zh": "黃泉餽贈強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_LAN_A_03": {
+    "effects": [
+      {
+        "type": "MASS_DISPEL",
+        "calcType": "buffs",
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "DISPEL",
+        "ailments": [
+          "HASTE"
+        ],
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_LW_EC_LAN_A_03",
+    "type": "skill",
+    "names": {
+      "en": "Dreadspear Dive",
+      "fr": "Lance de l'effroi",
+      "de": "Fatalspeersturz",
+      "es": "Salto funesto",
+      "ko": "흉창 비상",
+      "zh": "兇槍飛翔"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 22
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 6,
+      "mh": 5,
+      "s": 0,
+      "line": 2
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 10,
+        "3": 15,
+        "type": 0
+      }
+    }
+  },
+  "SK_LW_EC_LAN_C_05B": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 38,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 20,
+        "maxValue": 38,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PROVOKE",
+        "minValue": -2,
+        "maxValue": -4,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_LAN_C_05B",
+    "type": "skill",
+    "names": {
+      "en": "Sharp Spear: Tranquil",
+      "fr": "Lance aiguisée : silencieuse",
+      "de": "Scharfer Speer: Ruhigstellen",
+      "es": "Lanza afilada silenciosa",
+      "ko": "샤프 스피어: 정숙",
+      "zh": "銳利槍擊·靜寂"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 31
+    },
+    "count": 2,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_LW_EC_LAN_C_06B": {
+    "effects": [
+      {
+        "type": "DOOM_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 5,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "PARALYZE_ATK",
+        "minValue": 60,
+        "maxValue": 80,
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_LAN_C_06B",
+    "type": "skill",
+    "names": {
+      "en": "Obliterate: Annihilation",
+      "fr": "Dévastation : anéantissement",
+      "de": "Vernichtung: Fall",
+      "es": "Arrasar: aniquilación",
+      "ko": "황천 보내기: 파계",
+      "zh": "黃泉餽贈·破戒"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 10
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 0,
+      "line": 1
+    },
+    "based": "physic",
+    "pierce": 1,
+    "damage": {
+      "minValue": 35,
+      "maxValue": 70,
+      "type": "pierce",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 20,
+        "2": 10,
+        "3": 15,
+        "type": 0
+      }
+    }
   },
   "SK_MA_LW_OOOO": {
     "effects": [
@@ -19276,6 +19666,254 @@
       }
     }
   },
+  "SK_LW_EC_BLM_C_03": {
+    "effects": [],
+    "dataId": "SK_LW_EC_BLM_C_03",
+    "type": "ex_buff",
+    "names": {
+      "en": "Toad Enhancement",
+      "fr": "Améliorer Crapaud",
+      "de": "Frosch (verstärkt)",
+      "es": "Mejorar Rana",
+      "ko": "토드 강화",
+      "zh": "蛙變強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_LW_EC_BLM_C_04": {
+    "effects": [],
+    "dataId": "SK_LW_EC_BLM_C_04",
+    "type": "ex_buff",
+    "names": {
+      "en": "Bio Enhancement",
+      "fr": "Améliorer Toxine",
+      "de": "Bio (verstärkt)",
+      "es": "Mejorar Bio",
+      "ko": "바이오 강화",
+      "zh": "毒化強化"
+    },
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_UN_BD_EC_LK_30": {
+    "effects": [
+      {
+        "type": "LUCK",
+        "minValue": 5,
+        "maxValue": 30,
+        "calcType": "fixe",
+        "target": "self",
+        "timing": "QUEST_START"
+      }
+    ],
+    "dataId": "SK_UN_BD_EC_LK_30",
+    "type": "ex_buff",
+    "names": {
+      "en": "Luck Up",
+      "fr": "Chance ↑",
+      "de": "GLK erhöht",
+      "es": "Suerte↑",
+      "ko": "행운 증가",
+      "zh": "提升運氣"
+    },
+    "target": "self",
+    "maxLevel": 20
+  },
+  "SK_LW_EC_BLM_A_02": {
+    "effects": [
+      {
+        "type": "CT",
+        "minValue": 50,
+        "maxValue": 50,
+        "calcType": "decrease",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_BLM_A_02",
+    "type": "skill",
+    "names": {
+      "en": "Abyssal Mire",
+      "fr": "Bourbier sans fond",
+      "de": "Fluchseliger Morast",
+      "es": "Pantano abismal",
+      "ko": "마력의 수렁",
+      "zh": "魔淵之沼"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 3,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "time": {
+      "minValue": 120,
+      "maxValue": 200
+    },
+    "hit": 100,
+    "damage": {
+      "minValue": 15,
+      "maxValue": 41,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_LW_EC_BLM_C_03B": {
+    "effects": [
+      {
+        "type": "TOAD_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "AGI",
+        "minValue": -10,
+        "maxValue": -25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_BLM_C_03B",
+    "type": "skill",
+    "names": {
+      "en": "Toad [Occluder]",
+      "fr": "Crapaud [Obstruction]",
+      "de": "Frosch [Obstruktion]",
+      "es": "Rana [obstructor]",
+      "ko": "토드[폐색]",
+      "zh": "蛙變【閉塞】"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 15
+    },
+    "count": 4,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 6,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
+  },
+  "SK_LW_EC_BLM_C_04B": {
+    "effects": [
+      {
+        "type": "POISON_ATK",
+        "minValue": 5,
+        "maxValue": 15,
+        "calcType": "unknow",
+        "rate": 50,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "ATK",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "MAG",
+        "minValue": -20,
+        "maxValue": -39,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_LW_EC_BLM_C_04B",
+    "type": "skill",
+    "names": {
+      "en": "Bio [Occluder]",
+      "fr": "Toxine [Obstruction]",
+      "de": "Bio [Obstruktion]",
+      "es": "Bio [obstructor]",
+      "ko": "바이오[폐색]",
+      "zh": "毒化【閉塞】"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    },
+    "damage": {
+      "minValue": 15,
+      "maxValue": 41,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {
+        "1": 15,
+        "2": 10,
+        "3": 5,
+        "type": 0
+      }
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
   "SK_MA_LW_MIIA": {
     "effects": [
       {
@@ -21872,30 +22510,6 @@
     },
     "target": "self",
     "maxLevel": 1
-  },
-  "SK_UN_BD_EC_LK_30": {
-    "effects": [
-      {
-        "type": "LUCK",
-        "minValue": 5,
-        "maxValue": 30,
-        "calcType": "fixe",
-        "target": "self",
-        "timing": "QUEST_START"
-      }
-    ],
-    "dataId": "SK_UN_BD_EC_LK_30",
-    "type": "ex_buff",
-    "names": {
-      "en": "Luck Up",
-      "fr": "Chance ↑",
-      "de": "GLK erhöht",
-      "es": "Suerte↑",
-      "ko": "행운 증가",
-      "zh": "提升運氣"
-    },
-    "target": "self",
-    "maxLevel": 20
   },
   "SK_LW_EC_NIN_A_02_DARK": {
     "effects": [
@@ -60526,6 +61140,162 @@
     "pierce": null,
     "ctbreak": null
   },
+  "BUFF_BOMB_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_35": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_36": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_37": {
+    "effects": [
+      {
+        "type": "CRITIC_DAMAGE",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_38": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_39": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_40": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_BOMB_41": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 8,
+        "maxValue": 8,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_BOMB_41",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "SK_SMN_SHIV": {
     "effects": [
       {
@@ -67276,6 +68046,158 @@
       }
     ],
     "dataId": "BUFF_DABL_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_35": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_36": {
+    "effects": [
+      {
+        "type": "CRITIC_RATE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_37": {
+    "effects": [
+      {
+        "type": "SLASH_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_38": {
+    "effects": [
+      {
+        "type": "DARK_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_39": {
+    "effects": [
+      {
+        "type": "DARK_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_40": {
+    "effects": [
+      {
+        "type": "DARK_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_DABL_41": {
+    "effects": [
+      {
+        "type": "DARK_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_DABL_41",
     "type": "buff",
     "count": null,
     "maxLevel": null,
@@ -80668,6 +81590,913 @@
     "pierce": null,
     "ctbreak": null
   },
+  "SK_SMN_CBCL": {
+    "effects": [
+      {
+        "type": "REFLECT",
+        "value": 3,
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_BEFORE"
+      },
+      {
+        "type": "HEAL_POWER",
+        "minValue": 10,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "side": "ENNEMIES",
+        "type": "LIGHT_RES",
+        "minValue": -50,
+        "maxValue": -50,
+        "calcType": "resistance",
+        "dataId": "BUFF_WTH_SHIN",
+        "clock": 40,
+        "timing": "WEATHER"
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SHIN03_NOT_SHIN",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "fire",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 20,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SHIN03_NOT_SHIN",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "water",
+          "ice",
+          "wind",
+          "earth",
+          "lightning",
+          "fire",
+          "dark"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "ATK",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SHIN03_SHIN",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "light"
+        ]
+      },
+      {
+        "side": "TEAM",
+        "type": "MAG",
+        "minValue": 100,
+        "maxValue": 100,
+        "calcType": "percent",
+        "dataId": "BUFF_WTH_SHIN03_SHIN",
+        "clock": 40,
+        "timing": "WEATHER",
+        "elements": [
+          "light"
+        ]
+      }
+    ],
+    "dataId": "SK_SMN_CBCL",
+    "type": "esper",
+    "names": {
+      "en": "Ruby Light",
+      "fr": "Éclat du rubis",
+      "de": "Rubinglanz",
+      "es": "Resplandor de rubí",
+      "ko": "루비의 빛",
+      "zh": "紅寶石之光"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP"
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
+  "BUFF_CBCL_01": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_01",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_02": {
+    "effects": [
+      {
+        "type": "DEMON_KILLER",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_02",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_03": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_03",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_04": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_04",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_05": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_05",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_06": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 1,
+        "maxValue": 1,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_06",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_07": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_07",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_08": {
+    "effects": [
+      {
+        "type": "ACCURACY",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_08",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_09": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_09",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_10": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_10",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_11": {
+    "effects": [
+      {
+        "type": "DEMON_KILLER",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_11",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_12": {
+    "effects": [
+      {
+        "type": "EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_12",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_13": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_13",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_14": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_14",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_15": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_15",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_16": {
+    "effects": [
+      {
+        "type": "TP",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "percent",
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_16",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_17": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_17",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_18": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_18",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_19": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_19",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_20": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_20",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_21": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_21",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_22": {
+    "effects": [
+      {
+        "type": "DEMON_KILLER",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_22",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_23": {
+    "effects": [
+      {
+        "type": "DEMON_KILLER",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_23",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_24": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_24",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_25": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_25",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_26": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_26",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_27": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_27",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_28": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_28",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_29": {
+    "effects": [
+      {
+        "type": "DARK_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_29",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_30": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 3,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_30",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_31": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_31",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_32": {
+    "effects": [
+      {
+        "type": "DEMON_KILLER",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_32",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_33": {
+    "effects": [
+      {
+        "type": "DARK_KILLER",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "rate": 200,
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_33",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_34": {
+    "effects": [
+      {
+        "type": "EVOCATION_MAGIC",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_34",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_35": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_35",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_36": {
+    "effects": [
+      {
+        "type": "CRITIC_EVADE",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_36",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_37": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_37",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_38": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_38",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_39": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 5,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_39",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_40": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 6,
+        "maxValue": 6,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_40",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
+  "BUFF_CBCL_41": {
+    "effects": [
+      {
+        "type": "LIGHT_ATK",
+        "minValue": 10,
+        "maxValue": 10,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "BUFF_CBCL_41",
+    "type": "buff",
+    "count": null,
+    "maxLevel": null,
+    "hit": null,
+    "crt_hit": null,
+    "pierce": null,
+    "ctbreak": null
+  },
   "SK_VC_LW_GLEM_GS": {
     "effects": [
       {
@@ -91082,6 +92911,265 @@
     "names": {},
     "target": "self",
     "maxLevel": 1
+  },
+  "SK_VC_LW_CBCL_GS": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 6,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 2,
+        "maxValue": 4,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GS",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_CBCL_GS_AW": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 1,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 1,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GS_AW",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_CBCL_GSMAX": {
+    "effects": [
+      {
+        "type": "MISSILE_RES",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "resistance",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      },
+      {
+        "type": "SPR",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GSMAX",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_CBCL_GS_2": {
+    "effects": [
+      {
+        "type": "DEF_DEBUFF_RES",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GS_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_CBCL_GS_AW_2": {
+    "effects": [
+      {
+        "type": "DEF_DEBUFF_RES",
+        "minValue": 0,
+        "maxValue": 0,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GS_AW_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_CBCL_GSMAX_2": {
+    "effects": [
+      {
+        "type": "DEF_DEBUFF_RES",
+        "minValue": 40,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "selfSide"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_GSMAX_2",
+    "type": "party",
+    "names": {},
+    "target": "selfSide",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_CBCL_P": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 2,
+        "maxValue": 5,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "self"
+      },
+      {
+        "type": "EVADE",
+        "minValue": -5,
+        "maxValue": -5,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_P",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 99
+  },
+  "SK_VC_LW_CBCL_PAW": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 1,
+        "maxValue": 3,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_PAW",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 4
+  },
+  "SK_VC_LW_CBCL_PMAX": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "condition": "LIGHT_ELEMENT",
+        "increaseMax": true,
+        "target": "self"
+      },
+      {
+        "type": "DEF",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "fixe",
+        "condition": "LIGHT_ELEMENT",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_PMAX",
+    "type": "support",
+    "names": {},
+    "target": "self",
+    "maxLevel": 1
+  },
+  "SK_VC_LW_CBCL_PVA": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 180,
+        "maxValue": 210,
+        "calcType": "unknow",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "CT",
+        "minValue": 100,
+        "maxValue": 280,
+        "calcType": "fixe",
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_VC_LW_CBCL_PVA",
+    "type": "skill",
+    "names": {
+      "en": "Ruby Rejuvenation",
+      "fr": "Rubis de la guérison",
+      "de": "Heilrubin",
+      "es": "Sanación de rubí",
+      "ko": "루비의 치유",
+      "zh": "紅寶石治癒"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 2,
+    "maxLevel": 99,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "time": {
+      "minValue": 160,
+      "maxValue": 360
+    }
   },
   "SK_VC_LW_IGNT_GS": {
     "effects": [
@@ -105767,6 +107855,177 @@
     "target": "self",
     "maxLevel": 50
   },
+  "SK_LW_ACC_003_1_S": {
+    "effects": [
+      {
+        "type": "STUN_RES",
+        "minValue": 4,
+        "maxValue": 12,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_1_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_1_S",
+      "fr": "SK_LW_ACC_003_1_S",
+      "de": "SK_LW_ACC_003_1_S",
+      "es": "SK_LW_ACC_003_1_S",
+      "ko": "SK_LW_ACC_003_1_S",
+      "zh": "SK_LW_ACC_003_1_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_5_S": {
+    "effects": [
+      {
+        "type": "STUN_RES",
+        "minValue": 12,
+        "maxValue": 25,
+        "calcType": "resistance",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_5_S",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_5_S",
+      "fr": "SK_LW_ACC_003_5_S",
+      "de": "SK_LW_ACC_003_5_S",
+      "es": "SK_LW_ACC_003_5_S",
+      "ko": "SK_LW_ACC_003_5_S",
+      "zh": "SK_LW_ACC_003_5_S"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_1": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 2,
+        "maxValue": 2,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_1",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_1",
+      "fr": "SK_LW_ACC_003_1",
+      "de": "SK_LW_ACC_003_1",
+      "es": "SK_LW_ACC_003_1",
+      "ko": "SK_LW_ACC_003_1",
+      "zh": "SK_LW_ACC_003_1"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_2": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 4,
+        "maxValue": 4,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_2",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_2",
+      "fr": "SK_LW_ACC_003_2",
+      "de": "SK_LW_ACC_003_2",
+      "es": "SK_LW_ACC_003_2",
+      "ko": "SK_LW_ACC_003_2",
+      "zh": "SK_LW_ACC_003_2"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_3": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 7,
+        "maxValue": 7,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_3",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_3",
+      "fr": "SK_LW_ACC_003_3",
+      "de": "SK_LW_ACC_003_3",
+      "es": "SK_LW_ACC_003_3",
+      "ko": "SK_LW_ACC_003_3",
+      "zh": "SK_LW_ACC_003_3"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_4": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 13,
+        "maxValue": 13,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_4",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_4",
+      "fr": "SK_LW_ACC_003_4",
+      "de": "SK_LW_ACC_003_4",
+      "es": "SK_LW_ACC_003_4",
+      "ko": "SK_LW_ACC_003_4",
+      "zh": "SK_LW_ACC_003_4"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
+  "SK_LW_ACC_003_5": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 25,
+        "maxValue": 25,
+        "calcType": "percent",
+        "turn": 3,
+        "increaseMax": true,
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_LW_ACC_003_5",
+    "type": "support",
+    "names": {
+      "en": "SK_LW_ACC_003_5",
+      "fr": "SK_LW_ACC_003_5",
+      "de": "SK_LW_ACC_003_5",
+      "es": "SK_LW_ACC_003_5",
+      "ko": "SK_LW_ACC_003_5",
+      "zh": "SK_LW_ACC_003_5"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
   "SK_LW_SWO_005_1": {
     "effects": [
       {
@@ -114793,6 +117052,147 @@
       "fire"
     ]
   },
+  "SK_DRGN_ATK": {
+    "effects": [],
+    "dataId": "SK_DRGN_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "ennemySide",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 0
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "all",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_DRGN_M_01": {
+    "effects": [
+      {
+        "type": "SILENCE_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "ennemySide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_DRGN_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Pressurize",
+      "fr": "Pressuriser",
+      "de": "Druck",
+      "es": "Presurizar",
+      "ko": "누르기",
+      "zh": "重壓"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 12
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 1,
+      "s": 1
+    },
+    "based": "physic",
+    "damage": {
+      "minValue": -5,
+      "maxValue": 10,
+      "type": "strike",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_DRGN_M_02": {
+    "effects": [],
+    "dataId": "SK_DRGN_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Blaze",
+      "fr": "Flambée",
+      "de": "Feuersbrunst",
+      "es": "Llamarada",
+      "ko": "불길",
+      "zh": "冰焰"
+    },
+    "target": "ennemySide",
+    "cost": {
+      "type": "AP",
+      "value": 10
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": 10,
+      "maxValue": 40,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    }
+  },
+  "SK_DRGN_M_03": {
+    "effects": [
+      {
+        "type": "MAGIC_ATK",
+        "minValue": 10,
+        "maxValue": 15,
+        "calcType": "fixe",
+        "turn": 3,
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_DRGN_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Roar",
+      "fr": "Cri de guerre",
+      "de": "Gebrüll",
+      "es": "Rugido",
+      "ko": "우렁찬 외침",
+      "zh": "吼聲"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 18
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    }
+  },
   "SK_BTL_RES_WATER_1_80_D": {
     "effects": [
       {
@@ -114934,56 +117334,6 @@
     },
     "target": "self",
     "maxLevel": 100
-  },
-  "SK_LW_RDM_ICE_M_1_INIT": {
-    "effects": [],
-    "dataId": "SK_LW_RDM_ICE_M_1_INIT",
-    "type": "skill",
-    "names": {
-      "en": "Blizzara",
-      "fr": "Glace +",
-      "de": "Eisra",
-      "es": "Hielo+",
-      "ko": "블리자라",
-      "zh": "中暴雪"
-    },
-    "target": "all",
-    "cost": {
-      "type": "AP",
-      "value": 15
-    },
-    "count": 4,
-    "maxLevel": 20,
-    "range": {
-      "h": 2,
-      "l": 3,
-      "s": 1
-    },
-    "based": "magic",
-    "aoe": {
-      "s": 0,
-      "l": 1,
-      "h": 1
-    },
-    "time": {
-      "minValue": 120,
-      "maxValue": 280
-    },
-    "damage": {
-      "minValue": 15,
-      "maxValue": 41,
-      "type": "magic",
-      "effType": "DAMAGE",
-      "formula": {
-        "1": 15,
-        "2": 10,
-        "3": 5,
-        "type": 0
-      }
-    },
-    "elem": [
-      "ice"
-    ]
   },
   "SK_BTL_RES_MAGIC_1_80_D": {
     "effects": [
@@ -126117,6 +128467,323 @@
       "formula": {}
     }
   },
+  "SK_CBCL_ATK": {
+    "effects": [],
+    "dataId": "SK_CBCL_ATK",
+    "type": "skill",
+    "names": {
+      "en": "Normal Attack",
+      "fr": "Attaque normale",
+      "de": "Normaler Angriff",
+      "es": "Ataque normal",
+      "ko": "일반 공격",
+      "zh": "普通攻擊"
+    },
+    "target": "all",
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 2,
+      "s": 1
+    },
+    "based": "magic",
+    "damage": {
+      "minValue": -30,
+      "maxValue": -30,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_CBCL_M_01": {
+    "effects": [],
+    "dataId": "SK_CBCL_M_01",
+    "type": "skill",
+    "names": {
+      "en": "Banishga",
+      "fr": "Bannissement X",
+      "de": "Verbannga",
+      "es": "Tenue++",
+      "ko": "배니시가",
+      "zh": "強放逐"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 24
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 4,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "light"
+    ]
+  },
+  "SK_CBCL_M_02": {
+    "effects": [
+      {
+        "type": "HP",
+        "minValue": 90,
+        "maxValue": 120,
+        "calcType": "unknow",
+        "target": "selfSide",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CBCL_M_02",
+    "type": "skill",
+    "names": {
+      "en": "Cura",
+      "fr": "Soin +",
+      "de": "Vitra",
+      "es": "Cura+",
+      "ko": "케알라",
+      "zh": "中療傷"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 24
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CBCL_M_03": {
+    "effects": [
+      {
+        "type": "CONFUSION_ATK",
+        "calcType": "apply",
+        "rate": 25,
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CBCL_M_03",
+    "type": "skill",
+    "names": {
+      "en": "Confuse",
+      "fr": "Confusion",
+      "de": "Konfus",
+      "es": "Confu",
+      "ko": "컨퓨",
+      "zh": "混亂"
+    },
+    "target": "all",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 2,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 0,
+      "l": 1,
+      "h": 1
+    }
+  },
+  "SK_CBCL_M_04": {
+    "effects": [
+      {
+        "type": "MAGIC_RES",
+        "minValue": -18,
+        "maxValue": -38,
+        "calcType": "resistance",
+        "turn": 3,
+        "target": "all",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_CBCL_M_04",
+    "type": "skill",
+    "names": {
+      "en": "Ruby Glimmer",
+      "fr": "Rubis chatoyant",
+      "de": "Rubingefunkel",
+      "es": "Brillo de rubí",
+      "ko": "루비의 반짝임",
+      "zh": "紅寶石耀光"
+    },
+    "target": "all",
+    "cost": {
+      "type": "AP",
+      "value": 30
+    },
+    "count": 5,
+    "maxLevel": 20,
+    "range": {
+      "h": 1,
+      "l": 3,
+      "s": 1
+    },
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 2,
+      "h": 1
+    },
+    "damage": {
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "magic",
+      "effType": "DAMAGE",
+      "formula": {}
+    },
+    "elem": [
+      "neutral"
+    ]
+  },
+  "SK_CBCL_M_05": {
+    "effects": [
+      {
+        "type": "REFLECT",
+        "value": 1,
+        "turn": 5,
+        "target": "selfSide",
+        "timing": "SKILL_BEFORE"
+      }
+    ],
+    "dataId": "SK_CBCL_M_05",
+    "type": "skill",
+    "names": {
+      "en": "Ruby Light",
+      "fr": "Éclat du rubis",
+      "de": "Rubinglanz",
+      "es": "Resplandor de rubí",
+      "ko": "루비의 빛",
+      "zh": "紅寶石之光"
+    },
+    "target": "selfSide",
+    "cost": {
+      "type": "TP",
+      "value": 50
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic",
+    "aoe": {
+      "s": 1,
+      "l": 3,
+      "h": 2
+    }
+  },
+  "SK_CBCL_M_06": {
+    "effects": [
+      {
+        "type": "MAG",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 10,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -50,
+        "maxValue": -30,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "REFLECT",
+        "calcType": "dispel",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_CBCL_M_06",
+    "type": "skill",
+    "names": {
+      "en": "Mode Change",
+      "fr": "Mode change",
+      "de": "Metamorphose",
+      "es": "Cambio de modo",
+      "ko": "모드 변경",
+      "zh": "模式轉換"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 50
+    },
+    "count": 1,
+    "maxLevel": 20,
+    "based": "magic"
+  },
+  "SK_BTL_HEALP_1_50_U": {
+    "effects": [
+      {
+        "type": "HEAL_POWER",
+        "minValue": 1,
+        "maxValue": 50,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_HEALP_1_50_U",
+    "type": "support",
+    "names": {
+      "en": "Healing Power 1-50 Up",
+      "fr": "Compétences de soin ↑ 1 - 50",
+      "de": "Heilkraft erhöht (1 bis 50)",
+      "es": "Potencia de curación 1-50↑",
+      "ko": "치유력 1-50 증가",
+      "zh": "提升治癒力1-50"
+    },
+    "target": "self",
+    "maxLevel": 50
+  },
   "SK_CSLI_01_ATK": {
     "effects": [],
     "dataId": "SK_CSLI_01_ATK",
@@ -127396,108 +130063,120 @@
       "ice"
     ]
   },
-  "SK_DRGN_ATK": {
-    "effects": [],
-    "dataId": "SK_DRGN_ATK",
-    "type": "skill",
-    "names": {
-      "en": "Normal Attack",
-      "fr": "Attaque normale",
-      "de": "Normaler Angriff",
-      "es": "Ataque normal",
-      "ko": "일반 공격",
-      "zh": "普通攻擊"
-    },
-    "target": "ennemySide",
-    "maxLevel": 20,
-    "range": {
-      "h": 1,
-      "l": 1,
-      "s": 0
-    },
-    "based": "physic",
-    "damage": {
-      "minValue": -30,
-      "maxValue": -30,
-      "type": "all",
-      "effType": "DAMAGE",
-      "formula": {}
-    },
-    "elem": [
-      "neutral"
-    ]
-  },
-  "SK_DRGN_M_01": {
+  "SK_IGNT_M_01_R": {
     "effects": [
       {
-        "type": "SILENCE_ATK",
-        "calcType": "apply",
-        "rate": 25,
-        "turn": 3,
-        "target": "ennemySide",
+        "type": "ATK",
+        "minValue": 20,
+        "maxValue": 50,
+        "calcType": "percent",
+        "turn": 10,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 10,
+        "maxValue": 20,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -10,
+        "maxValue": -10,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
         "timing": "SKILL_AFTER"
       }
     ],
-    "dataId": "SK_DRGN_M_01",
+    "dataId": "SK_IGNT_M_01_R",
     "type": "skill",
     "names": {
-      "en": "Pressurize",
-      "fr": "Pressuriser",
-      "de": "Druck",
-      "es": "Presurizar",
-      "ko": "누르기",
-      "zh": "重壓"
+      "en": "Iron Berserker",
+      "fr": "Berserker en fer",
+      "de": "Eiserner Berserker",
+      "es": "Locura férrea",
+      "ko": "철의 광전사",
+      "zh": "鋼鐵狂戰士"
     },
-    "target": "ennemySide",
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "based": "physic"
+  },
+  "SK_IGNT_M_02_R": {
+    "effects": [],
+    "dataId": "SK_IGNT_M_02_R",
+    "type": "skill",
+    "names": {
+      "en": "Power Wave",
+      "fr": "Onde puissante",
+      "de": "Kraftwelle",
+      "es": "Onda de energía",
+      "ko": "파워 웨이브",
+      "zh": "力量波"
+    },
+    "target": "all",
     "cost": {
       "type": "AP",
-      "value": 12
+      "value": 11
     },
     "count": 20,
     "maxLevel": 20,
     "range": {
-      "h": 1,
-      "l": 1,
-      "s": 1
+      "h": 3,
+      "l": 4,
+      "s": 1,
+      "line": 1
     },
     "based": "physic",
     "damage": {
-      "minValue": -5,
-      "maxValue": 10,
-      "type": "strike",
+      "minValue": 30,
+      "maxValue": 65,
+      "type": "slash",
       "effType": "DAMAGE",
       "formula": {}
     }
   },
-  "SK_DRGN_M_02": {
+  "SK_IGNT_M_03_R": {
     "effects": [],
-    "dataId": "SK_DRGN_M_02",
+    "dataId": "SK_IGNT_M_03_R",
     "type": "skill",
     "names": {
-      "en": "Blaze",
-      "fr": "Flambée",
-      "de": "Feuersbrunst",
-      "es": "Llamarada",
-      "ko": "불길",
-      "zh": "冰焰"
+      "en": "Reaper",
+      "fr": "Faucheur",
+      "de": "Niedermähen",
+      "es": "Segador",
+      "ko": "휩쓸기",
+      "zh": "掃蕩"
     },
-    "target": "ennemySide",
+    "target": "all",
     "cost": {
       "type": "AP",
-      "value": 10
+      "value": 19
     },
     "count": 20,
     "maxLevel": 20,
     "range": {
       "h": 2,
-      "l": 4,
-      "s": 1
+      "l": 1,
+      "s": 10,
+      "w": 2
     },
-    "based": "magic",
+    "based": "physic",
     "damage": {
-      "minValue": 10,
-      "maxValue": 40,
-      "type": "magic",
+      "minValue": 65,
+      "maxValue": 100,
+      "type": "slash",
       "effType": "DAMAGE",
       "formula": {}
     }
@@ -128701,64 +131380,6 @@
     "target": "self",
     "maxLevel": 100
   },
-  "SK_DRGN_M_03": {
-    "effects": [
-      {
-        "type": "MAGIC_ATK",
-        "minValue": 10,
-        "maxValue": 15,
-        "calcType": "fixe",
-        "turn": 3,
-        "target": "selfSide",
-        "timing": "SKILL_AFTER"
-      }
-    ],
-    "dataId": "SK_DRGN_M_03",
-    "type": "skill",
-    "names": {
-      "en": "Roar",
-      "fr": "Cri de guerre",
-      "de": "Gebrüll",
-      "es": "Rugido",
-      "ko": "우렁찬 외침",
-      "zh": "吼聲"
-    },
-    "target": "selfSide",
-    "cost": {
-      "type": "TP",
-      "value": 18
-    },
-    "count": 20,
-    "maxLevel": 20,
-    "aoe": {
-      "s": 1,
-      "l": 2,
-      "h": 1
-    }
-  },
-  "SK_BTL_PIERCE_SOIL_1-100_U": {
-    "effects": [
-      {
-        "type": "RES_EARTH_ATK_PENETRATION",
-        "minValue": 1,
-        "maxValue": 100,
-        "calcType": "fixe",
-        "target": "self"
-      }
-    ],
-    "dataId": "SK_BTL_PIERCE_SOIL_1-100_U",
-    "type": "support",
-    "names": {
-      "en": "Earth Res Piercing 1-100 Up",
-      "fr": "Perforation de la Rés à la terre ↑ 1 - 100",
-      "de": "Erdresistenz-Durchbohrrate erhöht (1 bis 100)",
-      "es": "Penetración de res. tierra 1-100↑",
-      "ko": "땅속성 저항력 관통률 1-100 증가",
-      "zh": "提升土屬性耐性貫通1-100"
-    },
-    "target": "self",
-    "maxLevel": 100
-  },
   "SK_LW_MGK_M_1_TW": {
     "effects": [
       {
@@ -128827,6 +131448,29 @@
       "es": "Penetración de res. viento 1-100↑",
       "ko": "바람속성 저항력 관통률 1-100 증가",
       "zh": "提升風屬性耐性貫通1-100"
+    },
+    "target": "self",
+    "maxLevel": 100
+  },
+  "SK_BTL_PIERCE_SOIL_1-100_U": {
+    "effects": [
+      {
+        "type": "RES_EARTH_ATK_PENETRATION",
+        "minValue": 1,
+        "maxValue": 100,
+        "calcType": "fixe",
+        "target": "self"
+      }
+    ],
+    "dataId": "SK_BTL_PIERCE_SOIL_1-100_U",
+    "type": "support",
+    "names": {
+      "en": "Earth Res Piercing 1-100 Up",
+      "fr": "Perforation de la Rés à la terre ↑ 1 - 100",
+      "de": "Erdresistenz-Durchbohrrate erhöht (1 bis 100)",
+      "es": "Penetración de res. tierra 1-100↑",
+      "ko": "땅속성 저항력 관통률 1-100 증가",
+      "zh": "提升土屬性耐性貫通1-100"
     },
     "target": "self",
     "maxLevel": 100
@@ -128905,5 +131549,55 @@
       "effType": "DAMAGE",
       "formula": {}
     }
+  },
+  "SK_IGNT_M_01_B_R": {
+    "effects": [
+      {
+        "type": "ATK",
+        "minValue": 50,
+        "maxValue": 500,
+        "calcType": "percent",
+        "turn": 10,
+        "increaseMax": true,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "DEF",
+        "minValue": 20,
+        "maxValue": 40,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      },
+      {
+        "type": "SPR",
+        "minValue": -20,
+        "maxValue": -20,
+        "calcType": "fixe",
+        "turn": 10,
+        "target": "self",
+        "timing": "SKILL_AFTER"
+      }
+    ],
+    "dataId": "SK_IGNT_M_01_B_R",
+    "type": "skill",
+    "names": {
+      "en": "Iron Berserker",
+      "fr": "Berserker en fer",
+      "de": "Eiserner Berserker",
+      "es": "Locura férrea",
+      "ko": "철의 광전사",
+      "zh": "鋼鐵狂戰士"
+    },
+    "target": "self",
+    "cost": {
+      "type": "TP",
+      "value": 14
+    },
+    "count": 20,
+    "maxLevel": 20,
+    "based": "physic"
   }
 }

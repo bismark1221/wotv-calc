@@ -6219,6 +6219,135 @@
       }
     ]
   },
+  "VC_LW_CBCL": {
+    "dataId": "VC_LW_CBCL",
+    "names": {
+      "en": "Ruby Guardian, Carbuncle",
+      "fr": "Carbuncle, le Gardien du rubis",
+      "de": "Karfunkel, Zauberhafter Rubinwächter",
+      "es": "Rubí, el Guardián Cristalino",
+      "ko": "요마홍옥-카벙클",
+      "zh": "妖魔紅玉　卡邦庫爾"
+    },
+    "cost": 70,
+    "rarity": "UR",
+    "stats": {
+      "HP": {
+        "min": 42,
+        "max": 327
+      },
+      "TP": {},
+      "AP": {},
+      "ATK": {},
+      "DEF": {},
+      "SPR": {
+        "min": 1,
+        "max": 2
+      },
+      "MAG": {
+        "min": 42,
+        "max": 164
+      },
+      "DEX": {},
+      "AGI": {},
+      "LUCK": {},
+      "INITIAL_AP": {},
+      "ACCURACY": {},
+      "CRITIC_RATE": {},
+      "CRITIC_AVOID": {},
+      "EVADE": {},
+      "FIRE_RES": {},
+      "ICE_RES": {},
+      "EARTH_RES": {},
+      "WIND_RES": {},
+      "LIGHTNING_RES": {},
+      "WATER_RES": {},
+      "LIGHT_RES": {},
+      "DARK_RES": {},
+      "SLASH_RES": {},
+      "PIERCE_RES": {},
+      "STRIKE_RES": {},
+      "MISSILE_RES": {},
+      "MAGIC_RES": {},
+      "POISON_RES": {},
+      "BLIND_RES": {},
+      "SLEEP_RES": {},
+      "SILENCE_RES": {},
+      "PARALYZE_RES": {},
+      "CONFUSION_RES": {},
+      "PETRIFY_RES": {},
+      "TOAD_RES": {},
+      "CHARM_RES": {},
+      "SLOW_RES": {},
+      "STOP_RES": {},
+      "IMMOBILIZE_RES": {},
+      "DISABLE_RES": {},
+      "BERSERK_RES": {},
+      "DOOM_RES": {},
+      "FROSTBITE_RES": {},
+      "STUN_RES": {},
+      "MOVE": {},
+      "JUMP": {}
+    },
+    "image": "lapscbcl",
+    "releaseDate": "09/06/2021",
+    "slug": "ruby-guardian-carbuncle",
+    "partyBuffs": [
+      {
+        "classic": "SK_VC_LW_CBCL_GS",
+        "awake": "SK_VC_LW_CBCL_GS_AW",
+        "lvmax": "SK_VC_LW_CBCL_GSMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_CBCL_GS_2",
+        "awake": "SK_VC_LW_CBCL_GS_AW_2",
+        "lvmax": "SK_VC_LW_CBCL_GSMAX_2",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      }
+    ],
+    "unitBuffs": [
+      {
+        "classic": "SK_VC_LW_CBCL_P",
+        "awake": "SK_VC_LW_CBCL_PAW",
+        "lvmax": "SK_VC_LW_CBCL_PMAX",
+        "cond": [
+          {
+            "type": "elem",
+            "items": [
+              "light"
+            ]
+          }
+        ]
+      },
+      {
+        "classic": "SK_VC_LW_CBCL_PVA",
+        "cond": [
+          {
+            "type": "mainJob",
+            "items": [
+              "JB_LW_CLR_FIRE",
+              "JB_LW_CAL_FIRE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "VC_LW_IGNT": {
     "dataId": "VC_LW_IGNT",
     "names": {

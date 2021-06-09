@@ -6121,6 +6121,18 @@
     },
     "type": "compo_job"
   },
+  "IT_JBEX_MACE": {
+    "dataId": "IT_JBEX_MACE",
+    "names": {
+      "en": "Mace-Branded Tablet",
+      "fr": "Stèle pour masses",
+      "de": "Kolben-Symboltafel",
+      "es": "Losa de mazas",
+      "ko": "메이스의 낙인석",
+      "zh": "權杖之焦印石"
+    },
+    "type": "compo_job"
+  },
   "IT_UN_AW_FIRE": {
     "dataId": "IT_UN_AW_FIRE",
     "names": {
@@ -10731,6 +10743,30 @@
     },
     "type": "compo_esper_awake"
   },
+  "IT_SB_AW_CBCL_R2": {
+    "dataId": "IT_SB_AW_CBCL_R2",
+    "names": {
+      "en": "Carbuncle's Awakening Stone  (2★)",
+      "fr": "Pierre d'éveil de Carbuncle (2★)",
+      "de": "Karfunkels Erweckungsstein (2★)",
+      "es": "Piedra del despertar de Rubí (2★)",
+      "ko": "카벙클의 각성석(★2)",
+      "zh": "卡邦庫爾的獸醒石（★2）"
+    },
+    "type": "compo_esper_awake"
+  },
+  "IT_SB_AW_CBCL_R3": {
+    "dataId": "IT_SB_AW_CBCL_R3",
+    "names": {
+      "en": "Carbuncle's Awakening Stone  (3★)",
+      "fr": "Pierre d'éveil de Carbuncle (3★)",
+      "de": "Karfunkels Erweckungsstein (3★)",
+      "es": "Piedra del despertar de Rubí (3★)",
+      "ko": "카벙클의 각성석(★3)",
+      "zh": "卡邦庫爾的獸醒石（★3）"
+    },
+    "type": "compo_esper_awake"
+  },
   "IT_TICKET_STORY": {
     "dataId": "IT_TICKET_STORY",
     "names": {
@@ -11545,6 +11581,18 @@
       "es": "Mineral de mitrilo",
       "ko": "미스릴 광석",
       "zh": "秘銀礦"
+    },
+    "type": "compo_equipment"
+  },
+  "IT_AF_MAT_JELLY": {
+    "dataId": "IT_AF_MAT_JELLY",
+    "names": {
+      "en": "Vibrant Jelly",
+      "fr": "Gelée colorée",
+      "de": "Farbenfrohe Götterspeise",
+      "es": "Gelatina vibrante",
+      "ko": "알록달록한 젤리",
+      "zh": "彩色凝膠"
     },
     "type": "compo_equipment"
   },
@@ -12874,6 +12922,19 @@
     "type": "recipe",
     "icon": "AF_LW_ARM_028"
   },
+  "IT_AF_LW_ACC_036": {
+    "dataId": "IT_AF_LW_ACC_036",
+    "names": {
+      "en": "Chocolate Flan Earrings Crafting Recipe",
+      "fr": "Recette d'artisanat : Boucles d'oreilles de Chocoflan",
+      "de": "[Anleitung] Schokopudding-Ohrringe",
+      "es": "Receta: pendientes de flan de chocolate",
+      "ko": "초코 푸딩 귀걸이 제작법",
+      "zh": "巧克力布丁耳環的製作配方"
+    },
+    "type": "recipe",
+    "icon": "AF_LW_ACC_036"
+  },
   "IT_AF_SUP_HP": {
     "dataId": "IT_AF_SUP_HP",
     "names": {
@@ -14007,6 +14068,19 @@
     },
     "type": "medal",
     "icon": "IT_EC_SUMMON_1st_GL1"
+  },
+  "IT_EC_CF_GL1": {
+    "dataId": "IT_EC_CF_GL1",
+    "names": {
+      "en": "Chocolate Festival 2021 Medal",
+      "fr": "Médaille du festival du chocolat 2021",
+      "de": "Schoko-Festival-Medaille 2021",
+      "es": "Medalla del festival del chocolate 2021",
+      "ko": "2021 초콜릿 축제 메달",
+      "zh": "2021巧克力慶典獎牌"
+    },
+    "type": "medal",
+    "icon": "IT_EC_CF_GL1"
   },
   "IT_US_SE_PI_21": {
     "dataId": "IT_US_SE_PI_21",
@@ -19191,6 +19265,18 @@
     },
     "type": "vc_shard"
   },
+  "IT_VPI_LW_CBCL": {
+    "dataId": "IT_VPI_LW_CBCL",
+    "names": {
+      "en": "\"Ruby Guardian, Carbuncle\" Vision Card Shard",
+      "fr": "Fragment de l'atout-vision : Carbuncle, le Gardien du rubis",
+      "de": "„Karfunkel, Zauberhafter Rubinwächter“-Visionskartenfragment",
+      "es": "Fragmento de la carta de visión «Rubí, el Guardián Cristalino»",
+      "ko": " '요마홍옥-카벙클'의 조각",
+      "zh": "妖魔紅玉　卡邦庫爾的碎片"
+    },
+    "type": "vc_shard"
+  },
   "IT_VC_EXP_01": {
     "dataId": "IT_VC_EXP_01",
     "names": {
@@ -19576,6 +19662,19 @@
     },
     "type": "medal"
   },
+  "IT_EC_RAID_14": {
+    "dataId": "IT_EC_RAID_14",
+    "names": {
+      "en": "June Raid Medal",
+      "fr": "Médaille du raid de juin",
+      "de": "Juni-Kraftprobenmedaille",
+      "es": "Medalla de asalto de junio",
+      "ko": "[6월] 레이드 메달",
+      "zh": "【6月】共鬥獎牌"
+    },
+    "type": "medal",
+    "icon": "IT_EC_RAID_02"
+  },
   "IT_US_GL_SE_SB_EXP_1": {
     "dataId": "IT_US_GL_SE_SB_EXP_1",
     "names": {
@@ -19689,6 +19788,19 @@
       "es": "Tícket seleccionador de 500 magicitas elementales (XL)",
       "ko": "속성 마석(특) × 500 선택 소환 티켓 ",
       "zh": "屬性魔石（極）×500選擇召喚券"
+    },
+    "type": "tickets",
+    "icon": "IT_US_SE_ITEM_TICKET"
+  },
+  "IT_US_GL_SE_SB_EXP_10": {
+    "dataId": "IT_US_GL_SE_SB_EXP_10",
+    "names": {
+      "en": "Select Element Magicite (XL) x60 Summon Ticket",
+      "fr": "Ticket sélectionneur de 60 magilithes élémentaires (XL)",
+      "de": "„Auswählbarer Elementmaginit (XL) x60“-Beschwörungsticket",
+      "es": "Tícket seleccionador de 60 magicitas elementales (XL)",
+      "ko": "속성 마석(특)×60 선택 소환 티켓 ",
+      "zh": "屬性魔石（極）×60選擇召喚券"
     },
     "type": "tickets",
     "icon": "IT_US_SE_ITEM_TICKET"

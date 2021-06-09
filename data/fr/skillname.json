@@ -5921,6 +5921,34 @@
             "value": "Double attaque"
         },
         {
+            "key": "SK_CBCL_ATK",
+            "value": "Attaque normale"
+        },
+        {
+            "key": "SK_CBCL_M_01",
+            "value": "Bannissement X"
+        },
+        {
+            "key": "SK_CBCL_M_02",
+            "value": "Soin +"
+        },
+        {
+            "key": "SK_CBCL_M_03",
+            "value": "Confusion"
+        },
+        {
+            "key": "SK_CBCL_M_04",
+            "value": "Rubis chatoyant"
+        },
+        {
+            "key": "SK_CBCL_M_05",
+            "value": "Éclat du rubis"
+        },
+        {
+            "key": "SK_CBCL_M_06",
+            "value": "Mode change"
+        },
+        {
             "key": "SK_LW_E_VIK_ATK",
             "value": "Attaque normale"
         },
@@ -6797,6 +6825,10 @@
             "value": "Rayons"
         },
         {
+            "key": "SK_SMN_CBCL",
+            "value": "Éclat du rubis"
+        },
+        {
             "key": "SK_UN_BD_EC_HP_200",
             "value": "PV max ↑"
         },
@@ -6927,6 +6959,26 @@
         {
             "key": "SK_LW_EC_LAN_C_04B",
             "value": "Gloire universelle"
+        },
+        {
+            "key": "SK_LW_EC_LAN_A_03",
+            "value": "Lance de l'effroi"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05",
+            "value": "Améliorer Lance aiguisée"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_05B",
+            "value": "Lance aiguisée : silencieuse"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06",
+            "value": "Améliorer Dévastation"
+        },
+        {
+            "key": "SK_LW_EC_LAN_C_06B",
+            "value": "Dévastation : anéantissement"
         },
         {
             "key": "SK_LW_EC_SWN_A_01",
@@ -7147,6 +7199,26 @@
         {
             "key": "SK_LW_EC_BLM_C_02B",
             "value": "Art de la magie noire"
+        },
+        {
+            "key": "SK_LW_EC_BLM_A_02",
+            "value": "Bourbier sans fond"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03",
+            "value": "Améliorer Crapaud"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_03B",
+            "value": "Crapaud [Obstruction]"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04",
+            "value": "Améliorer Toxine"
+        },
+        {
+            "key": "SK_LW_EC_BLM_C_04B",
+            "value": "Toxine [Obstruction]"
         },
         {
             "key": "SK_LW_EC_TIM_A_01",
@@ -7407,6 +7479,26 @@
         {
             "key": "SK_LW_EC_ASS_C_02B",
             "value": "Couperet vampirique"
+        },
+        {
+            "key": "SK_LW_EC_CLR_A_01",
+            "value": "Rayon sacré"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01",
+            "value": "Améliorer Anti-fléau"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_01B",
+            "value": "Immunisé"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02",
+            "value": "Améliorer PSY ↑ Niv. 1"
+        },
+        {
+            "key": "SK_LW_EC_CLR_C_02B",
+            "value": "Cœur intrépide"
         },
         {
             "key": "SK_US_POTION",
@@ -8202,6 +8294,34 @@
         },
         {
             "key": "SK_LW_RNG_004_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_2",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_3",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_4",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_1_S",
+            "value": ""
+        },
+        {
+            "key": "SK_LW_ACC_003_5_S",
             "value": ""
         },
         {
@@ -9973,6 +10093,18 @@
             "value": ""
         },
         {
+            "key": "SK_VC_LW_CBCL_GS",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX",
+            "value": ""
+        },
+        {
             "key": "SK_VC_LW_GLEM_GS_2",
             "value": ""
         },
@@ -11130,6 +11262,18 @@
         },
         {
             "key": "SK_VC_LW_ROSEFES_GSMAX_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GS_AW_2",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_GSMAX_2",
             "value": ""
         },
         {
@@ -12587,6 +12731,22 @@
         {
             "key": "SK_VC_LW_ROSEFES_PMAX_2",
             "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_P",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PAW",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PMAX",
+            "value": ""
+        },
+        {
+            "key": "SK_VC_LW_CBCL_PVA",
+            "value": "Rubis de la guérison"
         },
         {
             "key": "SK_BTL_HP_100-99900_U",
