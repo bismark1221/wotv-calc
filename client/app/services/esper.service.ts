@@ -152,7 +152,12 @@ export class EsperService {
   async getEsperBySlug(slug) {
     await this.getEspers();
 
-    return this[this.navService.getVersion() + '_espers'].find(esper => esper.slug === slug);
+    let esper = this[this.navService.getVersion() + '_espers'].find(esper => esper.slug === slug);
+    if (esper) {
+      esper = JSON.parse(JSON.stringify(esper));
+    }
+
+    return esper;
   }
 
   getLocalStorage() {
@@ -190,6 +195,7 @@ export class EsperService {
   async selectEsperForBuilder(esperId, customData = null) {
     this.esper = new Esper();
     this.esper.constructFromJson(JSON.parse(JSON.stringify(await this.getEsper(esperId))), this.translateService);
+
     this.esper.name = this.esper.getName(this.translateService);
 
     for (const nodeId of Object.keys(this.esper.board.nodes)) {
