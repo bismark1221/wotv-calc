@@ -304,10 +304,25 @@ export class UnitService {
         for (const upgrade of unit.replacedSkills[replace]) {
           if (typeof upgrade.newSkill === 'string') {
             upgrade.newSkill = await this.skillService.getSkill(upgrade.newSkill, forcedVersion);
+            const oldSkill = this.getSkillByIdFromBoard(unit, upgrade.oldSkill);
+            if (oldSkill) {
+              upgrade.newSkill.mainSkill = oldSkill.mainSkill;
+            }
           }
         }
       }
     }
+  }
+
+  getSkillByIdFromBoard(unit, skillId) {
+    for (const nodeId of Object.keys(unit.board.nodes)) {
+      const node = unit.board.nodes[nodeId];
+      if (node.skill && node.dataId === skillId) {
+        return node.skill;
+      }
+    }
+
+    return null;
   }
 
   isLimited(id) {

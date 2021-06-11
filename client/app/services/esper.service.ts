@@ -152,7 +152,7 @@ export class EsperService {
   async getEsperBySlug(slug) {
     await this.getEspers();
 
-    let esper = this[this.navService.getVersion() + '_espers'].find(esper => esper.slug === slug);
+    let esper = this[this.navService.getVersion() + '_espers'].find(searchedEsper => searchedEsper.slug === slug);
     if (esper) {
       esper = JSON.parse(JSON.stringify(esper));
     }
