@@ -1303,6 +1303,10 @@ export class Unit {
     });
 
     this.maxNodes();
+
+    this.updateMaxLevel();
+    this.level = this.maxLevel;
+
     this.changeLevel();
   }
 
