@@ -54,6 +54,14 @@
           <td colspan="3">{{ buff }}</td>
         </tr>
       </tbody>
+      <tbody *ngIf="quest.lastRelease">
+        <tr>
+          <th colspan="3" class="sub">Last release</th>
+        </tr>
+        <tr>
+          <td colspan="3">{{ quest.lastRelease.start }} - {{ quest.lastRelease.end }}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 

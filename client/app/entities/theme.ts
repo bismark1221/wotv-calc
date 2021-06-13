@@ -33,7 +33,7 @@ export const themes = {
       '--hex-counter-activated': '#2649ff',
 
       '--body-background': 'var(--white)',
-      '--body-color': '#212529',
+      '--body-color': '#101112',
 
       '--cross-close': '#000',
 

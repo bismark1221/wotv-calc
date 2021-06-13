@@ -175,6 +175,9 @@ export class QuestService {
       case 'name' :
         this.sortByName(quests, order);
       break;
+      case 'lastRelease' :
+        this.toolService.sortByLastRelease(quests, order);
+      break;
       default :
         console.log('not managed sort');
       break;

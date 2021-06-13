@@ -61,7 +61,8 @@ export class JsonService {
     oldUnits: {},
     oldCards: {},
     oldEspers: {},
-    oldEquipments: {}
+    oldEquipments: {},
+    events: {}
   };
 
   jp = {
@@ -119,7 +120,8 @@ export class JsonService {
     oldUnits: {},
     oldCards: {},
     oldEspers: {},
-    oldEquipments: {}
+    oldEquipments: {},
+    events: {}
   };
 
   jpRomaji = {};
@@ -1487,6 +1489,15 @@ export class JsonService {
       });
   }
 
+  private GLEvents() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/data/Events.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
 
   /* JP */
   private JPUnits() {
@@ -1637,6 +1648,15 @@ export class JsonService {
 
   private JPSkillExc() {
     return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/SkillExc.json'), 'utf8')
+      .then(data => {
+        return data;
+      }).catch(function(error) {
+        return '{"items": []}';
+      });
+  }
+
+  private JPEvents() {
+    return this.fs.readFile(this.path.resolve(__dirname, 'data/jpdata/Events.json'), 'utf8')
       .then(data => {
         return data;
       }).catch(function(error) {
@@ -3209,7 +3229,9 @@ export class JsonService {
         this.JP_OldUnits(),
         this.JP_OldEspers(),
         this.JP_OldCards(),
-        this.JP_OldEquipments()
+        this.JP_OldEquipments(),
+        this.GLEvents(),
+        this.JPEvents()
       ]).then(async responsesRound2 => {
         this.gl.oldUnits = JSON.parse(responsesRound2[0]);
         this.gl.oldEspers = JSON.parse(responsesRound2[1]);
@@ -3219,6 +3241,9 @@ export class JsonService {
         this.jp.oldEspers = JSON.parse(responsesRound2[5]);
         this.jp.oldCards = JSON.parse(responsesRound2[6]);
         this.jp.oldEquipments = JSON.parse(responsesRound2[7]);
+
+        this.gl.events = this.formatJson(JSON.parse(responsesRound2[8]));
+        this.jp.events = this.formatJson(JSON.parse(responsesRound2[9]));
 
         await this.formatJsons();
 
@@ -5455,6 +5480,19 @@ export class JsonService {
 
       if (!this.questType[quest.type]) {
         console.log('Quest type not found -- ' + questId + ' -- type : ' + quest.type);
+      }
+
+      if (this[this.version].events[quest.sect] && this[this.version].events[quest.sect].start && this[this.version].events[quest.sect].end) {
+        const start = this[this.version].events[quest.sect].start;
+        const end = this[this.version].events[quest.sect].end;
+
+        const splittedStart = start.split(' ')[0].split('/');
+        const splittedEnd = end.split(' ')[0].split('/');
+
+        formattedQuest.lastRelease = {
+          start: [splittedStart[2], splittedStart[1], splittedStart[0]].join('/'),
+          end: [splittedEnd[2], splittedEnd[1], splittedEnd[0]].join('/')
+        };
       }
 
       await this.getNames(formattedQuest, 'questTitle', true, 'quest');

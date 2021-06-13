@@ -31,6 +31,8 @@ export class Quest {
   winCond = [];
   looseCond = [];
 
+  lastRelease = null;
+
   constructFromJson(quest, translateService) {
     this.dataId = quest.dataId;
     this.names = quest.names;
@@ -57,6 +59,8 @@ export class Quest {
     this.drops = quest.drops;
     this.winCond = quest.winCond;
     this.looseCond = quest.looseCond;
+
+    this.lastRelease = quest.lastRelease;
   }
 
   getName(translateService): string {

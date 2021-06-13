@@ -83,6 +83,37 @@ export class ToolService {
     return items;
   }
 
+  sortByLastRelease(items, order = 'asc') {
+    const rarityOrder = ['UR', 'MR', 'SR', 'R', 'N'];
+
+    items.sort((a: any, b: any) => {
+      const splittedDateA = a.lastRelease ? a.lastRelease.start.split('/') : order === 'asc' ? '01/01/3000'.split('/') : '01/01/1970'.split('/');
+      const splittedDateB = b.lastRelease ? b.lastRelease.start.split('/') : order === 'asc' ? '01/01/3000'.split('/') : '01/01/1970'.split('/');
+
+      const x = new Date(splittedDateA[2], splittedDateA[1] - 1, splittedDateA[0]);
+      const y = new Date(splittedDateB[2], splittedDateB[1] - 1, splittedDateB[0]);
+
+      if (x > y) {
+        return (order === 'asc' ? 1 : -1);
+      } else if (y > x) {
+        return (order === 'asc' ? -1 : 1);
+      } else {
+        if (rarityOrder.indexOf(a.rarity) < rarityOrder.indexOf(b.rarity)) {
+          return -1;
+        } else if (rarityOrder.indexOf(a.rarity) > rarityOrder.indexOf(b.rarity)) {
+          return 1;
+        } else {
+          const nameA = this.reduceString(a.getName(this.translateService));
+          const nameB = this.reduceString(b.getName(this.translateService));
+
+          return nameA.localeCompare(nameB, 'ja');
+        }
+      }
+    });
+
+    return items;
+  }
+
   equal(a, b) {
     if (a && b && typeof a === 'object' && typeof b === 'object') {
       let length, i, keys;
