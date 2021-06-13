@@ -269,4 +269,13 @@ export class UnitsComponent implements OnInit {
     this.collapsed[section] = !this.collapsed[section];
     sessionStorage.setItem('unitsCollapsed', JSON.stringify(this.collapsed));
   }
+
+  async unselectAllJobs() {
+    this.filters.job = [];
+
+    sessionStorage.setItem('unitsFilters', JSON.stringify(this.filters));
+    this.filterChecked();
+
+    await this.getUnits();
+  }
 }

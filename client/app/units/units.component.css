@@ -185,3 +185,8 @@
 .select-sort {
   width: 140px;
 }
+
+.unselectAllJobsLink {
+  cursor: pointer;
+  text-decoration: underline;
+}
