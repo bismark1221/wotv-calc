@@ -162,9 +162,9 @@ export class OtherFarmCalculatorComponent implements OnInit {
         return 1;
       } else {
         for (const item of this.selectedItems) {
-          if (!a.items[item.dataId]) {
+          if (!a.items[item.dataId] || !a.items[item.dataId].drop) {
             return 1;
-          } else if (!b.items[item.dataId]) {
+          } else if (!b.items[item.dataId] || !b.items[item.dataId].drop) {
             return -1;
           } else if (a.items[item.dataId].drop.value > b.items[item.dataId].drop.value) {
             return -1;
