@@ -3640,7 +3640,7 @@
     },
     {
       "names": {
-        "en": "サリア（バレンタイン）"
+        "en": "サリア（バレンタイン） - Salire (Sweetheart)"
       },
       "stats": {
         "HP": 2989,
@@ -4227,6 +4227,40 @@
         "AP_CONSUMPTION": 20
       },
       "image": "lapsjedn"
+    },
+    {
+      "names": {
+        "en": "ヴァルーシュ"
+      },
+      "stats": {
+        "HP": 3768,
+        "TP": 128,
+        "AP": 141,
+        "ATK": 88,
+        "DEF": 0,
+        "SPR": 7,
+        "MAG": 523,
+        "DEX": 262,
+        "AGI": 64,
+        "LUCK": 214,
+        "ICE_RES": -10,
+        "EARTH_RES": 20,
+        "SLASH_RES": 15,
+        "PIERCE_RES": 5,
+        "STRIKE_RES": -5,
+        "MISSILE_RES": 5,
+        "SILENCE_RES": 10,
+        "SLOW_RES": 50,
+        "BERSERK_RES": 50,
+        "MOVE": 3,
+        "JUMP": 1,
+        "INITIAL_AP": 27,
+        "INCREASE_UNIT_LEVEL": 0,
+        "CRITIC_RATE": 8,
+        "MAX_DAMAGE": 2000,
+        "WIND_ATK": 15
+      },
+      "image": "lapsvluc"
     },
     {
       "names": {

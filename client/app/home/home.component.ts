@@ -24,6 +24,14 @@ export class HomeComponent {
   updated = {
     GL: [
       {
+        date: '16/06',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_THLA_01'},
+          {type: 'unit', dataId: 'UN_FF1_P_WROL'},
+          {type: 'equipment', dataId: 'AF_FF1_SWO_000'}
+        ]
+      },
+      {
         date: '09/06',
         items: [
           {type: 'esper', dataId: 'UN_LW_S_CBCL'},
@@ -55,29 +63,16 @@ export class HomeComponent {
           {type: 'unit', dataId: 'UN_LW_P_VNLA'},
           {type: 'unit', dataId: 'UN_LW_P_SDLX'}
         ]
-      },
-      {
-        date: '26/05',
-        items: [
-          {type: 'card', dataId: 'VC_LW_CMLO'},
-          {type: 'card', dataId: 'VC_LW_CORL'},
-          {type: 'esper', dataId: 'UN_LW_S_CORL'},
-          {type: 'equipment', dataId: 'AF_LW_RNG_009'}
-        ]
-      },
-      {
-        date: '',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_AYKA'},
-          {type: 'unit', dataId: 'UN_LW_P_MURM'},
-          {type: 'unit', dataId: 'UN_LW_P_FDRC'},
-          {type: 'esper', dataId: 'UN_LW_S_RAMU'},
-          {type: 'esper', dataId: 'UN_LW_S_IGNT'},
-          {type: 'esper', dataId: 'UN_LW_S_ARMN_01'}
-        ]
       }
     ],
     JP: [
+      {
+        date: '15/06',
+        items: [
+          {type: 'unit', dataId: 'UN_LW_P_VLUC'},
+          {type: 'equipment', dataId: 'AF_LW_KAT_011'}
+        ]
+      },
       {
         date: '09/06',
         items: [
@@ -99,17 +94,6 @@ export class HomeComponent {
         items: [
           {type: 'unit', dataId: 'UN_LW_P_JEDN'},
           {type: 'equipment', dataId: 'AF_LW_GUN_011'}
-        ]
-      },
-      {
-        date: '24/05',
-        items: [
-          {type: 'unit', dataId: 'UN_LW_P_VERN'},
-          {type: 'card', dataId: 'VC_LW_RAIN'},
-          {type: 'esper', dataId: 'UN_LW_S_TNBR'},
-          {type: 'unit', dataId: 'UN_LW_P_STRN_01'},
-          {type: 'unit', dataId: 'UN_LW_P_HLNA'},
-          {type: 'unit', dataId: 'UN_LW_P_VADM'}
         ]
       }
     ]
